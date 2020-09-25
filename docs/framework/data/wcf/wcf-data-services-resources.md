@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, learn more
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
-ms.openlocfilehash: 9b0534c2d11b723458b52e219ba1ce2de4b3c550
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52de0dc16ea2363c48ed48291883352b02f2015c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90541530"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202153"
 ---
 # <a name="wcf-data-services-resources"></a>Ресурсы служб данных WCF
+
 Вводные разделы WCF Data Services можно найти в следующих расположениях. Во многих из них также есть ссылки на связанные разделы, содержащие более подробные сведения.  
   
  [Обзор](wcf-data-services-overview.md)  
@@ -27,6 +28,7 @@ ms.locfileid: "90541530"
  Содержит термины, используемые в WCF Data Services и документации OData.  
   
 ## <a name="external-resources"></a>Внешние ресурсы  
+
  Следующие внешние ресурсы предоставляют дополнительные сведения и поддержку для создания WCF Data Services приложений, предоставляющих и использующих веб-каналы OData.  
   
  [Форум WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)  
@@ -53,6 +55,6 @@ ms.locfileid: "90541530"
  [Модель отношений сущностей: к единому представлению данных](https://dl.acm.org/doi/10.1145/320434.320440) с помощью Питер-Шан Чен, Массачусетс института технологий  
  Описывает базис для реляционной модели, реализуемой WCF Data Services. Написанная в 1976 году, эта книга является одной из наиболее часто цитируемых в области компьютеров.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Начало работы](getting-started-with-wcf-data-services.md)

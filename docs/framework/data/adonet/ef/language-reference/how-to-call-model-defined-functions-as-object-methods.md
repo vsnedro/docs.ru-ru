@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 33bae8a8-4ed8-4a1f-85d1-c62ff288cc61
-ms.openlocfilehash: f53577b9cee640a4a13bd61f60bdbaa695130576
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5e5ae2fd838a34d7f665b23a14db2a599367e801
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542520"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91197798"
 ---
 # <a name="how-to-call-model-defined-functions-as-object-methods"></a>Практическое руководство. Вызов определенных моделью функций как методов объектов
+
 В данном разделе описывается, как вызвать определяемую в модели функцию в качестве метода для объекта <xref:System.Data.Objects.ObjectContext> или в качестве статического метода для пользовательского класса. *Определяемая моделью функция* — это функция, определенная в концептуальной модели. В данном разделе показываются процедуры вызова этих функций напрямую, а не с помощью запросов LINQ to Entities. Сведения о вызове функций, определяемых моделью, в запросах LINQ to Entities см. в разделе [как вызывать определяемые моделью функции в запросах](how-to-call-model-defined-functions-in-queries.md).  
   
  Если определяемая в модели функция вызвается как метод <xref:System.Data.Objects.ObjectContext> или как статический метод для пользовательского класса, в первую очередь необходимо сопоставить метод с определямой в модели функцией с <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. Если метод определяется для класса <xref:System.Data.Objects.ObjectContext>, то следует использовать свойство <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> для предоставления поставщика LINQ, однако, если статический метод определяется для пользовательского класса, то следует использовать свойство <xref:System.Linq.IQueryable.Provider%2A> для предоставления поставщика LINQ. Дополнительные сведения см. в примерах, приведенных после указанных ниже процедур.  
@@ -44,6 +45,7 @@ ms.locfileid: "90542520"
 2. Вызовите метод в качестве члена статического метода из пользовательского класса  
   
 ## <a name="example"></a>Пример  
+
  **Вызов определяемой в модели функции в качестве метода объекта ObjectContext**  
   
  В приведенном ниже примере показано, как вызвать определяемую в модели функцию в качестве метода для объекта <xref:System.Data.Objects.ObjectContext>. В примере используется [модель AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).  
@@ -53,35 +55,41 @@ ms.locfileid: "90542520"
  [!code-xml[DP L2E Methods on ObjectContext#4](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#4)]  
 
 ## <a name="example"></a>Пример  
+
  Следующий код добавляет метод к классу `AdventureWorksEntities`, который сопоставляется с функцией концептуальной модели, описанной выше.  
   
  [!code-csharp[DP L2E Methods on ObjectContext#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#2)]
  [!code-vb[DP L2E Methods on ObjectContext#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/class1.vb#2)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде вызывается описанный выше метод для отображения дохода для указанного продукта:  
   
  [!code-csharp[DP L2E Methods on ObjectContext#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#3)]
  [!code-vb[DP L2E Methods on ObjectContext#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/module1.vb#3)]  
   
 ## <a name="example"></a>Пример  
+
  В приведенном ниже примере показано, как вызвать определяемую в модели функцию, возвращающую коллекцию (как объект <xref:System.Linq.IQueryable%601>). Рассмотрите описанную ниже функцию концептуальной модели, возвращающую подробные сведения `SalesOrderDetails` для указанного идентификатора продукта.  
   
  [!code-xml[DP L2E Methods on ObjectContext#7](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#7)]  
   
 ## <a name="example"></a>Пример  
+
  Следующий код добавляет метод к классу `AdventureWorksEntities`, который сопоставляется с функцией концептуальной модели, описанной выше.  
   
  [!code-csharp[DP L2E Methods on ObjectContext#8](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#8)]
  [!code-vb[DP L2E Methods on ObjectContext#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/class1.vb#8)]  
   
 ## <a name="example"></a>Пример  
+
  Следующий код вызывает метод. Обратите внимание, что возвращаемый запрос <xref:System.Linq.IQueryable%601> дорабатывается для возвращения линейных итогов для каждого `SalesOrderDetail`.  
   
  [!code-csharp[DP L2E Methods on ObjectContext#9](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#9)]
  [!code-vb[DP L2E Methods on ObjectContext#9](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/module1.vb#9)]  
   
 ## <a name="example"></a>Пример  
+
  **Вызов определяемой в модели функции в качестве статического метода из пользовательского класса**  
   
  В следующем примере показано, как вызвать определяемую в модели функцию в качестве статического метода из пользовательского класса. В примере используется [модель AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).  
@@ -94,18 +102,20 @@ ms.locfileid: "90542520"
  [!code-xml[DP L2E Methods on ObjectContext#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#1)]
   
 ## <a name="example"></a>Пример  
+
  Следующий код добавляет к приложению класс, содержащий статический метод, который сопоставляется с функцией концептуальной модели, описанной выше.  
   
  [!code-csharp[DP L2E Methods on ObjectContext#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#5)]
  [!code-vb[DP L2E Methods on ObjectContext#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/class1.vb#5)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде вызывается описанный выше метод для отображения дохода для коллекции SalesOrderDetail:  
   
  [!code-csharp[DP L2E Methods on ObjectContext#6](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs/program.cs#6)]
  [!code-vb[DP L2E Methods on ObjectContext#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e methods on objectcontext/vb/module1.vb#6)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

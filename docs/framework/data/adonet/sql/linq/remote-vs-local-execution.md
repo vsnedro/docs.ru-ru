@@ -1,22 +1,24 @@
 ---
-title: Сравнение удаленного и локальное выполнение
+title: Удаленное и локальное выполнение
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-ms.openlocfilehash: a21d5bbffdb1a78d3062929a1ca384a750af59a7
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: c99e726902192fc8324e77441b80aa4519c55ddc
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781167"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91196953"
 ---
-# <a name="remote-vs-local-execution"></a>Сравнение удаленного и локальное выполнение
+# <a name="remote-vs-local-execution"></a>Удаленное и локальное выполнение
+
 Запросы можно выполнять либо удаленно (то есть ядро базы данных выполняет запрос в базе данных) или локально ([!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] выполняет запрос в локальном кэше).  
   
 ## <a name="remote-execution"></a>Удаленное выполнение  
- Рассмотрим следующий запрос:  
+
+ Обратите внимание на следующий запрос:  
   
  [!code-csharp[DLinqQueryConcepts#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#7)]
  [!code-vb[DLinqQueryConcepts#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#7)]  
@@ -27,7 +29,8 @@ ms.locfileid: "70781167"
   
 - Запросы, выполняемые ядром базы данных зачастую более эффективны благодаря индексам базы данных.  
   
-## <a name="local-execution"></a>локальное выполнение  
+## <a name="local-execution"></a>Локальное выполнение  
+
  В других случаях бывает необходимо иметь полный набор связанных записей в локальном кэше. Для этой цели класс <xref:System.Data.Linq.EntitySet%601> предоставляет метод <xref:System.Data.Linq.EntitySet%601.Load%2A> для явной загрузки всех членов класса <xref:System.Data.Linq.EntitySet%601>.  
   
  Если класс <xref:System.Data.Linq.EntitySet%601> уже загружен, последующие запросы выполняются локально. Этот метод полезен с двух точек зрения.  
@@ -42,11 +45,13 @@ ms.locfileid: "70781167"
  [!code-vb[DLinqQueryConcepts#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#8)]  
   
 ## <a name="comparison"></a>Сравнение  
- Эти две возможности предоставляют мощное сочетание параметров: удаленное выполнение для больших коллекций и локальное выполнение для малых коллекций или в тех случаях, когда требуется вся коллекция. Удаленное выполнение реализуется с помощью интерфейса <xref:System.Linq.IQueryable>, а локальное выполнение - посредством хранящейся в памяти коллекции <xref:System.Collections.Generic.IEnumerable%601>. Чтобы принудительно выполнить локальное выполнение ( <xref:System.Collections.Generic.IEnumerable%601>то есть), см. статью [Преобразование типа в универсальный интерфейс IEnumerable](convert-a-type-to-a-generic-ienumerable.md).  
+
+ Эти две возможности предоставляют мощное сочетание параметров: удаленное выполнение для больших коллекций и локальное выполнение для малых коллекций или в тех случаях, когда требуется вся коллекция. Удаленное выполнение реализуется с помощью интерфейса <xref:System.Linq.IQueryable>, а локальное выполнение - посредством хранящейся в памяти коллекции <xref:System.Collections.Generic.IEnumerable%601>. Чтобы принудительно выполнить локальное выполнение (то есть <xref:System.Collections.Generic.IEnumerable%601> ), см. статью [Преобразование типа в универсальный интерфейс IEnumerable](convert-a-type-to-a-generic-ienumerable.md).  
   
 ### <a name="queries-against-unordered-sets"></a>Запросы к неупорядоченным наборам  
- Обратите внимание на важное различие между локальной коллекцией <xref:System.Collections.Generic.List%601> , реализующей интерфейс, и коллекцией, которая предоставляет удаленные запросы к *неупорядоченным наборам* в реляционной базе данных. Для методов <xref:System.Collections.Generic.List%601>, например при использовании значений индексов, требуется семантика списка, которая, как правило, не реализуется посредством удаленного запроса к неупорядоченному набору. По этой причине подобные методы неявно загружают класс <xref:System.Data.Linq.EntitySet%601>, чтобы получить возможность локального выполнения.  
+
+ Обратите внимание на важное различие между локальной коллекцией, реализующей интерфейс, <xref:System.Collections.Generic.List%601> и коллекцией, которая предоставляет удаленные запросы к *неупорядоченным наборам* в реляционной базе данных. Для методов <xref:System.Collections.Generic.List%601>, например при использовании значений индексов, требуется семантика списка, которая, как правило, не реализуется посредством удаленного запроса к неупорядоченному набору. По этой причине подобные методы неявно загружают класс <xref:System.Data.Linq.EntitySet%601>, чтобы получить возможность локального выполнения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные принципы запросов](query-concepts.md)

@@ -2,14 +2,15 @@
 title: <certificate> для <identity>;
 ms.date: 03/30/2017
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
-ms.openlocfilehash: 1cfd207afc72cc71359d9d262e30b0696ba63d2b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 24c39b5efaee7f8db12088d272efeb3783efab04
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850014"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198864"
 ---
 # <a name="certificate-for-identity"></a>\<certificate> для \<identity>;
+
 Задает сертификат X.509, используемый для проверки сервера при подключении к клиенту.  
   
 Дополнительные сведения о задании значения элемента см. в разделе [удостоверение службы и проверка подлинности](../../../wcf/feature-details/service-identity-and-authentication.md).  
@@ -28,15 +29,17 @@ ms.locfileid: "70850014"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |encodedValue|Кодировка Base64 сертификата.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -46,6 +49,7 @@ ms.locfileid: "70850014"
 |[\<identity>](identity.md)|Задает удостоверение службы, подлинность которой должна быть проверена клиентом.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде задается кодированное представление сертификата, используемого для проверки сервера при подключении к клиенту.  
   
 ```xml  
@@ -54,7 +58,7 @@ ms.locfileid: "70850014"
 </identity>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>

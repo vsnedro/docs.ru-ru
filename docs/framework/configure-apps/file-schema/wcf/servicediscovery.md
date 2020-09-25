@@ -2,14 +2,15 @@
 title: <serviceDiscovery>
 ms.date: 03/30/2017
 ms.assetid: a3c68a4a-fc95-43c5-aacb-785936c0cf39
-ms.openlocfilehash: 7ac067e84f2a4d2724e3d8f2d0af9b220fd15538
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b38496b77d80fcb66b1b48485a9eef6abfd72299
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399660"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198825"
 ---
 # \<serviceDiscovery>
+
 Указывает возможность обнаружения конечных точек службы.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -41,9 +42,11 @@ ms.locfileid: "70399660"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -59,10 +62,12 @@ ms.locfileid: "70399660"
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Указывает элемент поведения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  При добавлении к конфигурации поведения службы этот элемент конфигурации делает все конечные точки этой службы обнаруживаемыми. Можно дополнительно настроить функции обнаружения таких конечных точек с помощью [\<discoveryEndpoint>](discoveryendpoint.md) [\<announcementEndpoint>](announcementendpoint.md) дочерних элементов или. Используйте [\<announcementEndpoint>](announcementendpoint.md) раздел для настройки объявлений, указав конфигурацию конечной точки, которая будет использоваться для отправки объявлений службы (в сети, Hello и offline/Bye). Используйте [\<discoveryEndpoint>](discoveryendpoint.md) раздел, чтобы вручную указать конечную точку для прослушивания сообщений обнаружения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере конфигурации указано, что объект CalculatorService является обнаруживаемым. Дополнительно также указана конечная точка, используемая для объявления.  
   
 ```xml  
@@ -86,6 +91,6 @@ ms.locfileid: "70399660"
 </behaviors>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>

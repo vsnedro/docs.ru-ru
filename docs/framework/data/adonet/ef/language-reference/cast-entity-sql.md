@@ -2,14 +2,15 @@
 title: CAST (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 07b6d750-dfd4-48a9-b86c-3badcbba6f70
-ms.openlocfilehash: b7778d6a2e0b0dd15b2911f2d1cee36208e13328
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 5591f1947963dde45d34ad2342485af476765709
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73738517"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198019"
 ---
 # <a name="cast-entity-sql"></a>CAST (Entity SQL)
+
 Преобразует выражение одного типа данных в другой.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,6 +20,7 @@ CAST ( expression AS data_type )
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `expression`  
  Любое допустимое выражение, которое можно преобразовать в `data_type`.  
   
@@ -26,9 +28,11 @@ CAST ( expression AS data_type )
  Целевой тип данных, предоставляемый системой. Это должен быть (скалярный) тип-примитив. Какой тип `data_type` будет использован, зависит от области запроса. Если запрос выполняется с командой <xref:System.Data.EntityClient.EntityCommand>, то типом данных будет тип, определенный в концептуальной модели. Для получения дополнительной информации см. [CSDL Specification](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec). Если запрос выполняется командой <xref:System.Data.Objects.ObjectQuery%601>, то этим типом данных будет тип CLR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает значение такого же типа, что и аргумент `data_type`.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
+
  Выражение приведения имеет аналогичную семантику выражения Transact-SQL CONVERT. Выражение явного приведения используется для преобразования значения одного типа в значение другого типа.  
   
 ```csharp
@@ -51,6 +55,7 @@ CAST( e as T )
 > Операция CAST может выполняться только над типами-примитивами и типами элементов перечисления.  
   
 ## <a name="example"></a>Пример  
+
  В следующем запросе [!INCLUDE[esql](../../../../../../includes/esql-md.md)] оператор CAST используется для явного приведения выражения одного типа данных к другому. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
 1. Выполните процедуру, описанную в разделе [инструкции. выполнение запроса, возвращающего тип PrimitiveType результаты](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
@@ -59,6 +64,6 @@ CAST( e as T )
   
  [!code-csharp[DP EntityServices Concepts 2#CAST](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#cast)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
