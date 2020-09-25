@@ -3,14 +3,15 @@ title: <certificateValidation>
 ms.date: 03/30/2017
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
 author: BrucePerlerMS
-ms.openlocfilehash: c2d1a5d36cb5616ef06eedc093dd70a68a164a81
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 583fef7eb364c39890b3f9304770b383c1ea6d2a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252136"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183511"
 ---
 # \<certificateValidation>
+
 Управляет параметрами, которые обработчики маркеров используют для проверки сертификатов. Эти параметры переопределяются, если для определенного обработчика настроен собственный проверяющий элемент управления.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,15 +34,16 @@ ms.locfileid: "70252136"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|certificateValidationMode|<xref:System.ServiceModel.Security.X509CertificateValidationMode>Значение типа, указывающее режим проверки, используемый для сертификата X. 509. Значение по умолчанию — "PeerOrChainTrust". Чтобы указать настраиваемый проверяющий элемент управления, установите для этого атрибута значение "Custom" и укажите проверяющий элемент управления с помощью [\<certificateValidator>](certificatevalidator.md) элемента. Необязательный параметр.|  
-|revocationMode|<xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>Значение типа, указывающее режим отзыва, используемый для сертификата X. 509. Значение по умолчанию — "Online". Необязательный параметр.|  
-|trustedStoreLocation|<xref:System.Security.Cryptography.X509Certificates.StoreLocation>Значение типа, указывающее хранилище сертификатов X. 509. Значение по умолчанию — LocalMachine. Необязательный параметр.|  
+|certificateValidationMode|<xref:System.ServiceModel.Security.X509CertificateValidationMode>Значение типа, указывающее режим проверки, используемый для сертификата X. 509. Значение по умолчанию — "PeerOrChainTrust". Чтобы указать настраиваемый проверяющий элемент управления, установите для этого атрибута значение "Custom" и укажите проверяющий элемент управления с помощью [\<certificateValidator>](certificatevalidator.md) элемента. Необязательный элемент.|  
+|revocationMode|<xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>Значение типа, указывающее режим отзыва, используемый для сертификата X. 509. Значение по умолчанию — "Online". Необязательный элемент.|  
+|trustedStoreLocation|<xref:System.Security.Cryptography.X509Certificates.StoreLocation>Значение типа, указывающее хранилище сертификатов X. 509. Значение по умолчанию — LocalMachine. Необязательный элемент.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -56,7 +58,8 @@ ms.locfileid: "70252136"
 |[\<identityConfiguration>](identityconfiguration.md)|Задает параметры удостоверений уровня службы.|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Предоставляет конфигурацию для коллекции обработчиков маркеров безопасности.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<certificateValidation>`Элемент можно указать на уровне службы в `<identityConfiguration>` элементе или на уровне коллекции обработчика маркеров безопасности под `<securityTokenHandlerConfiguration>` элементом. Параметры коллекции обработчиков маркеров переопределяют указанные в службе. Некоторые обработчики маркеров позволяют указать параметры проверки сертификата в конфигурации. Параметры отдельных обработчиков маркеров переопределяют те, которые указаны как на уровне службы, так и в коллекции обработчиков маркеров безопасности.  
   
 ## <a name="example"></a>Пример  

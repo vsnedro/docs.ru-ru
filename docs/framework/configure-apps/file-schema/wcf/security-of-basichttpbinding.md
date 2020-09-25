@@ -2,14 +2,15 @@
 title: <security> из <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 6432708d-5465-4bd9-bfc2-466742db99cb
-ms.openlocfilehash: c8e4f2d000a155eecd2a6c7faaaf4af525b24ca3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6144e5448526d7f2a7c89693f70f71a7f26c4a22
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738714"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183667"
 ---
 # <a name="security-of-basichttpbinding"></a>\<security> из \<basicHttpBinding>
+
 Определяет возможности безопасности для [\<basicHttpBinding>](basichttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,19 +33,20 @@ ms.locfileid: "73738714"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Необязательный параметр. Задает тип используемого механизма обеспечения безопасности. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.BasicHttpSecurityMode>.|  
+|mode|Необязательный элемент. Задает тип используемого механизма обеспечения безопасности. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.BasicHttpSecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|None|— Сообщения не защищаются во время перемещения.|  
+|Отсутствуют|— Сообщения не защищаются во время перемещения.|  
 |Транспорт|Безопасность обеспечивается с помощью транспорта HTTPS. Сообщения SOAP защищаются при помощи HTTPS. Служба проходит проверку подлинности для клиента с использованием сертификата X.509. Проверка подлинности клиента осуществляется с помощью предоставленного ClientCredentialType. См [\<transport>](transport-of-basichttpbinding.md) . раздел.|  
 |Сообщение|Безопасность обеспечивается с помощью средств безопасности сообщений SOAP. По умолчанию текст сообщений шифруется и подписывается. Для этой привязки система требует, чтобы клиенту был предоставлен сертификат сервера с использованием внештатного канала. Единственным допустимым значением `ClientCredentialType` для данной привязки является `Certificate`.|  
 |TransportWithMessageCredential|Целостность, конфиденциальность и проверка подлинности сервера обеспечиваются с помощью средств безопасности транспорта. Проверка подлинности клиента осуществляется при помощи механизма безопасности сообщений SOAP. Данный режим может использоваться, когда проверка подлинности клиента осуществляется с помощью имени пользователя/пароля и существует развернутый канал HTTP с обеспечением безопасности при передаче сообщений.|  
@@ -63,10 +65,11 @@ ms.locfileid: "73738714"
 |-------------|-----------------|  
 |binding|Элемент Binding объекта [\<basicHttpBinding>](basichttpbinding.md) .|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  По умолчанию сообщение SOAP не защищено и проверка подлинности клиента не выполняется. Данный элемент позволяет настроить дополнительные параметры безопасности для элемента `basicHttpBinding`.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.BasicHttpBinding.Security%2A>
 - <xref:System.ServiceModel.Configuration.BasicHttpBindingElement.Security%2A>

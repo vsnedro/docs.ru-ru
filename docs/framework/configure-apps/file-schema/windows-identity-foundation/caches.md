@@ -3,14 +3,15 @@ title: <caches>
 ms.date: 03/30/2017
 ms.assetid: 4651091b-3a20-40d8-b293-4408c0710143
 author: BrucePerlerMS
-ms.openlocfilehash: 80f435b52fd7657c5cd44538028d6080beffe0b5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 791c5be8aa48db2b17a42a216ad2bf5e7b5a4bc1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252164"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189881"
 ---
 # \<caches>
+
 Регистрирует кэши, используемые для маркеров сеансов и определения воспроизведения маркеров.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,9 +31,11 @@ ms.locfileid: "70252164"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Нет  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -49,12 +52,14 @@ ms.locfileid: "70252164"
 |[\<identityConfiguration>](identityconfiguration.md)|Задает параметры удостоверений уровня службы.|  
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Предоставляет конфигурацию для коллекции обработчиков маркеров безопасности.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<caches>`Элемент можно указать на уровне службы в `<identityConfiguration>` элементе или на уровне коллекции обработчика маркеров безопасности под `<securityTokenHandlerConfiguration>` элементом. Параметры коллекции обработчиков маркеров переопределяют указанные в службе.  
   
  `<caches>`Элемент представлен <xref:System.IdentityModel.Configuration.IdentityModelCachesElement> классом. Настроенные кэши представлены <xref:System.IdentityModel.Configuration.IdentityModelCaches> классом.  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде XML показана конфигурация пользовательского кэша для хранения маркеров безопасности сеанса ( <xref:System.IdentityModel.Tokens.SessionSecurityToken> ). Конфигурация берется из `ClaimsAwareWebFarm` примера.  
   
 ```xml  

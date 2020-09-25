@@ -2,14 +2,15 @@
 title: <add> из <allowAccounts>
 ms.date: 03/30/2017
 ms.assetid: 763c7b1f-e7b0-4d99-a42c-4506fcb8da00
-ms.openlocfilehash: 02654b8ab198a2b161b3044c1f3aa452761a6a4c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cd4b9fd02eee2de1d0e8be185ffb69c0eae1cd58
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398379"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181730"
 ---
 # <a name="add-of-allowaccounts"></a>\<add> из \<allowAccounts>
+
 Указывает учетную запись пользователя для процессов, на которых размещаются службы WCF, и им предоставляется доступ к службе общего доступа.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,15 +28,17 @@ ms.locfileid: "70398379"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |securityIdentifier|Строка, задающая уникальный идентификатор, который используется для идентификации учетной записи пользователя. Значениями по умолчанию являются LocalSystem, Administrators, NS, LS и IIS_USRS.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -45,6 +48,7 @@ ms.locfileid: "70398379"
 |[\<allowAccounts>](allowaccounts.md)|Коллекция элементов конфигурации, которая содержит `securityIdentifier` атрибут для указания учетных записей пользователей для процессов, размещающий службы WCF, и которым предоставляется доступ к службе общего доступа.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере конфигурации к данной коллекции добавляется пять идентификаторов по умолчанию для учетных записей пользователей.  
   
 ```xml  
@@ -62,7 +66,7 @@ ms.locfileid: "70398379"
 </allowAccounts>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>
 - <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>

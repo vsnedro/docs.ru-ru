@@ -5,17 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 429c9d09-92ac-46ec-829a-fbff0a9575a2
-ms.openlocfilehash: 5e37a04ff731a99664d636e0d4175f99214c2646
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 21bf7662094d5bc8948a1ce6378c454713cacc62
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174515"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183121"
 ---
 # <a name="provider-statistics-for-sql-server"></a>Статистика поставщика для SQL Server
+
 Начиная с .NET Framework 2.0, поставщик данных .NET Framework для SQL Server поддерживает получение статистики во время выполнения. Для включения статистики задайте для свойства <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> объекта <xref:System.Data.SqlClient.SqlConnection> значение `True` после создания допустимого объекта подключения. После включения статистики ее можно просмотреть как "моментальный снимок во времени". Для этого нужно извлечь ссылку <xref:System.Collections.IDictionary> с помощью метода <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> объекта <xref:System.Data.SqlClient.SqlConnection>. Выполните перечисление списка в виде набора записей пар "имя-значение" в словаре. Эти пары "имя-значение" не упорядочены. В любой момент можно вызвать метод <xref:System.Data.SqlClient.SqlConnection.ResetStatistics%2A> объекта <xref:System.Data.SqlClient.SqlConnection>, чтобы сбросить счетчики. Если сбор статистики не включен, исключение не создается. Кроме того, если <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> вызывается без вызова метода <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> перед этим, то полученные значения являются начальными значениями для каждой записи. Если вы включите статистику, запустите приложение на некоторое время, а затем отключите статистику, то полученные значения будут отражать значения, собранные до момента отключения статистики. Все статистические значения собираются отдельно для каждого подключения.  
   
 ## <a name="statistical-values-available"></a>Доступные статистические значения  
+
  В настоящее время доступны 18 различных элементов от поставщика Microsoft SQL Server. Доступ ко множеству элементов производится через свойство **Count** ссылки интерфейса <xref:System.Collections.IDictionary>, возвращенной <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. Для всех счетчиков статистики поставщика используется тип среды CLR <xref:System.Int64> (**long** в C# и Visual Basic) с внутренним представлением длиной 64 бита. Максимальное значение типа данных **int64**, определенное полем **int64.MaxValue**, равно ((2^63)-1)). Если значения для счетчиков достигли этого максимального значения, они больше не должны считаться точными. Это означает, что **int64.MaxValue**-1((2^63)-2) по существу является максимальным действительным значением любого статистического показателя.  
   
 > [!NOTE]
@@ -45,6 +47,7 @@ ms.locfileid: "79174515"
 |`UnpreparedExecs`|Возвращает число неподготовленных инструкций, выполненных через подключение после начала использования приложением поставщика и включения статистики.|  
   
 ### <a name="retrieving-a-value"></a>Получение значения  
+
  В следующем консольном приложении показано, как включить статистику для подключения, получить четыре отдельных статистических значения и записать их в окно консоли.  
   
 > [!NOTE]
@@ -201,6 +204,7 @@ namespace CS_Stats_Console_GetValue
 ```  
   
 ### <a name="retrieving-all-values"></a>Получение всех значений  
+
  В следующем консольном приложении показано, как включить статистику для подключения, получить все доступные статистические значения с помощью перечислителя и записать их в окно консоли.  
   
 > [!NOTE]

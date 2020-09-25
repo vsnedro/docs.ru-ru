@@ -2,14 +2,15 @@
 title: Интеграция среды CLR и SQL Server
 ms.date: 03/30/2017
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
-ms.openlocfilehash: 12ae15d72644e314aa694f8d169bc8f45fa284a2
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: d9fe0f03c88584607c6bc38fcbcff3f9424fd40c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452348"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183030"
 ---
 # <a name="sql-server-common-language-runtime-integration"></a>Интеграция среды CLR и SQL Server
+
 В версии SQL Server 2005 появилась поддержка интеграции сервера со средой CLR инфраструктуры .NET Framework для Microsoft Windows. Это означает, что хранимые процедуры, триггеры, определяемые пользователем типы, определяемые пользователем функции, определяемые пользователем агрегатные функции и возвращающие табличные значение потоковые функции теперь можно разрабатывать с использованием любого языка .NET Framework, включая Microsoft Visual Basic .NET и Microsoft Visual C#. Пространство имен <xref:Microsoft.SqlServer.Server> содержит ряд новых API-интерфейсов, что позволяет обеспечить взаимодействие управляемого кода со средой Microsoft SQL Server.  
   
  В настоящем разделе приведено описание средств и особенностей функционирования, которые появляются в результате интеграции SQL Server со средой CLR, а также внутрипроцессные модули SQL Server, предназначенные для поддержки технологии ADO.NET.  
@@ -21,13 +22,14 @@ ms.locfileid: "77452348"
 1. [Основные понятия о программировании интеграции со средой CLR](/sql/relational-databases/clr-integration/common-language-runtime-clr-integration-programming-concepts)  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Знакомство с интеграцией CLR в SQL Server](introduction-to-sql-server-clr-integration.md)  
  Предоставляет вводные сведения об интеграции SQL Server со средой CLR. Приводятся ссылки на дополнительные разделы.  
   
  [Определяемые пользователем функции среды CLR](clr-user-defined-functions.md)  
  Описывает реализацию и использование различных типов функций CLR: возвращающих табличное значение, скалярных и определяемых пользователем агрегатных функций.  
   
- [Определяемые пользователем типы в CLR](clr-user-defined-types.md)  
+ [Определяемые пользователем типы CLR](clr-user-defined-types.md)  
  Показывает, как реализовать и использовать определяемые пользователем типы данных CLR. Приводятся ссылки на дополнительные разделы.  
   
  [Хранимые процедуры CLR](clr-stored-procedures.md)  
@@ -36,8 +38,8 @@ ms.locfileid: "77452348"
  [Триггеры CLR](clr-triggers.md)  
  Показывает, как реализовать и использовать триггеры CLR. Приводятся ссылки на дополнительные разделы.  
   
- [Подключение контекста](the-context-connection.md)  
- Описывает контекстное соединение.  
+ [Контекстное соединение](the-context-connection.md)  
+ Сведения о контекстном подключении.  
   
  [Внутрипроцессное поведение ADO.NET в SQL Server](sql-server-in-process-specific-behavior-of-adonet.md)  
  Описывает внутрипроцессные модули SQL Server, предназначенные для поддержки технологии ADO.NET, и контекстное соединение. Приводятся ссылки на дополнительные разделы.  

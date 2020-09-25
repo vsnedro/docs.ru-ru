@@ -3,14 +3,15 @@ title: <add>
 ms.date: 03/30/2017
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: BrucePerlerMS
-ms.openlocfilehash: 7c2b6bdc62da63905d7ff33a9984808e7b7d114f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2f37019fa0787f5c5553dbd3debc173ec0a047ee
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544544"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189960"
 ---
 # \<add>
+
 Добавляет указанный обработчик маркеров безопасности в коллекцию обработчиков маркеров.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ ms.locfileid: "90544544"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -58,7 +60,8 @@ ms.locfileid: "90544544"
 |-------------|-----------------|  
 |[\<securityTokenHandlers>](securitytokenhandlers.md)|Указывает коллекцию обработчиков маркеров безопасности, зарегистрированных в конечной точке.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<add>`Элемент может принимать один дочерний элемент, указывающий конфигурацию для обработчика маркеров. Это зависит от того, поддерживает ли эта функция класс обработчика, на который ссылается `type` атрибут `<add>` элемента. Классы обработчиков маркеров, которые предоставляют эту функцию, должны предоставлять конструктор, принимающий <xref:System.Xml.XmlElement> объект.  
 
 ```csharp  
@@ -78,6 +81,7 @@ public class CustomTokenHandler : Microsoft.IdentityModel.Tokens.SecurityTokenHa
  Параметры, заданные для обработчика, переопределяют эквивалентные параметры, заданные в коллекции обработчика маркеров в [\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md) элементе, и те, которые указаны на уровне службы в [\<identityConfiguration>](identityconfiguration.md) элементе.  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде XML показано использование `<add>` `<remove>` элементов и для замены обработчика токена сеанса по умолчанию обработчиком пользовательского маркера сеанса. XML взят из `ClaimsAwareWebFarm` примера.  
   
 ```xml  

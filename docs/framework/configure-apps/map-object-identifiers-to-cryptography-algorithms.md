@@ -9,14 +9,15 @@ helpviewer_keywords:
 - mapping object identifiers
 - cryptography, mapping object identifiers
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
-ms.openlocfilehash: e22510014071455b83ba28cd82690b5ecdce9bc9
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 5416ddbb766dfde56fa28a3853ed448cc73f25a2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85142008"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189387"
 ---
 # <a name="mapping-object-identifiers-to-cryptography-algorithms"></a>Отображение идентификаторов объектов на криптографические алгоритмы
+
 Цифровые подписи гарантируют, что данные не были изменены при отправке из одной программы в другую. Обычно цифровая подпись вычислена путем применения математической функции к хэшу подписываемых данных. При форматировании хэш-значения для подписи некоторые алгоритмы цифровых подписей добавляют в операцию форматирования идентификатор объекта ASN. 1 (OID). OID определяет алгоритм, который использовался для вычисления хэша. Вы можете сопоставлять алгоритмы с идентификаторами объектов, чтобы расширить механизм криптографии для использования пользовательских алгоритмов. В следующем примере показано, как сопоставлять идентификатор объекта с новым алгоритмом хэширования.  
   
 ```xml  
@@ -44,4 +45,4 @@ ms.locfileid: "85142008"
 ## <a name="see-also"></a>См. также раздел
 
 - [Настройка криптографических классов](configure-cryptography-classes.md)
-- [Службы шифрования](../../standard/security/cryptographic-services.md)
+- [службы шифрования](../../standard/security/cryptographic-services.md)

@@ -3,14 +3,15 @@ title: Уведомления запросов в SQL Server
 description: Узнайте, как использовать уведомления о запросах для уведомления приложений об изменении данных в SQL Server базе данных, например для обновления отображения приложений.
 ms.date: 03/30/2017
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
-ms.openlocfilehash: 43b496db74f7e6fc9bc9f17d946bf34398b32312
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8001f75d7e278a965b6e8e00e4b9af7b770a8bb5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543989"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183095"
 ---
 # <a name="query-notifications-in-sql-server"></a>Уведомления запросов в SQL Server
+
 С помощью уведомлений о запросах, построенных на основе инфраструктуры компонента Service Broker, приложения могут получать извещения об изменениях данных. Эта функция особенно полезна для приложений, которые предоставляют кэш данных из базы данных (например, для веб-приложений), и которым требуются уведомления об изменении исходных данных.  
   
  Существует три способа реализации уведомлений о запросах с помощью ADO.NET:  
@@ -29,7 +30,7 @@ ms.locfileid: "90543989"
   
  **Документация по SQL Server**  
   
-- [Использование уведомлений запросов](/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
+- [Использование уведомлений о запросах](/previous-versions/sql/sql-server-2008-r2/ms175110(v=sql.105))  
   
 - [Создание запроса для уведомления](/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   
@@ -40,6 +41,7 @@ ms.locfileid: "90543989"
 - [Руководство разработчика (компонент Service Broker)](/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Включение уведомлений о запросах](enabling-query-notifications.md)  
  Описание использования уведомлений о запросах, включая требования для их включения и использования.  
   
@@ -52,7 +54,8 @@ ms.locfileid: "90543989"
  [Выполнение SqlCommand с помощью SqlNotificationRequest](sqlcommand-execution-with-a-sqlnotificationrequest.md)  
  Демонстрирует настройку объекта <xref:System.Data.SqlClient.SqlCommand> для работы с уведомлением запроса.  
   
-## <a name="reference"></a>Справочник  
+## <a name="reference"></a>Справка  
+
  <xref:System.Data.Sql.SqlNotificationRequest>  
  Описание класса <xref:System.Data.Sql.SqlNotificationRequest> и всех его членов.  
   
@@ -62,7 +65,7 @@ ms.locfileid: "90543989"
  <xref:System.Web.Caching.SqlCacheDependency>  
  Описание класса <xref:System.Web.Caching.SqlCacheDependency> и всех его членов.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [SQL Server и ADO.NET](index.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

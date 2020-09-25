@@ -6,17 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 29efe5e5-897b-46c2-a35f-e599a273acc8
-ms.openlocfilehash: 40001422e665a7dda3fb938c8d57860909525404
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 7e1d78b581fcb3c4b2265f1d04cf2aba83faa28a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141995"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91182887"
 ---
 # <a name="implementing-an-explicit-transaction-using-committabletransaction"></a>Реализация явной транзакции с помощью класса CommittableTransaction
+
 Класс <xref:System.Transactions.CommittableTransaction> позволяет приложениям использовать транзакцию явным образом вместо неявного использования с помощью класса <xref:System.Transactions.TransactionScope>. Он полезен при создании приложений, которым требуется использовать одну и ту же транзакцию в нескольких вызовах функций или нескольких вызовах потоков. В отличие от класса <xref:System.Transactions.TransactionScope> для фиксации или прерывания транзакции модуль записи приложения должен специально вызывать методы <xref:System.Transactions.CommittableTransaction.Commit%2A> и <xref:System.Transactions.Transaction.Rollback%2A>.  
   
 ## <a name="overview-of-the-committabletransaction-class"></a>Общие сведения о классе CommittableTransaction  
+
  Класс <xref:System.Transactions.CommittableTransaction> наследуется от класса <xref:System.Transactions.Transaction>, поэтому он предоставляет все функциональные возможности последнего. Особенно полезным является метод <xref:System.Transactions.Transaction.Rollback%2A> класса <xref:System.Transactions.Transaction>, который также можно использовать для отката объекта <xref:System.Transactions.CommittableTransaction>.  
   
  Класс <xref:System.Transactions.Transaction> аналогичен классу <xref:System.Transactions.CommittableTransaction>, но не предоставляет метод `Commit`. Это позволяет передавать объект транзакции (или его клоны) другим методам (возможно, в других потоках), управляя временем фиксации транзакции. Вызываемый код способен выполнять зачисление и голосовать за фиксацию или откат транзакции, но только создатель объекта <xref:System.Transactions.CommittableTransaction> может ее зафиксировать.  
@@ -28,6 +30,7 @@ ms.locfileid: "85141995"
 - Объект <xref:System.Transactions.CommittableTransaction> нельзя использовать повторно. После фиксации или отката объекта <xref:System.Transactions.CommittableTransaction> его нельзя повторно использовать в транзакции. Таким образом, его нельзя задать в качестве контекста текущей внешней транзакции.  
   
 ## <a name="creating-a-committabletransaction"></a>Создание объекта CommittableTransaction  
+
  В следующем примере создается и фиксируется новый объект <xref:System.Transactions.CommittableTransaction>.  
   
  [!code-csharp[Tx_CommittableTx#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
@@ -40,6 +43,7 @@ ms.locfileid: "85141995"
  Объект <xref:System.Transactions.CommittableTransaction> может использоваться внешними вызовами функций и потоками. Однако при этом разработчику приложения необходимо самостоятельно обеспечить обработку исключений и явный вызов метода <xref:System.Transactions.Transaction.Rollback%28System.Exception%29> в случае сбоев.  
   
 ## <a name="asynchronous-commit"></a>Асинхронная фиксация  
+
  Класс <xref:System.Transactions.CommittableTransaction> также предоставляет механизм для асинхронной фиксации транзакций. Фиксация транзакции может занять значительное время, поскольку она может включать несколько операций доступа к базе данных и возможны задержки в сети. Во избежание взаимоблокировок в высокопроизводительных приложениях можно использовать механизм асинхронной фиксации для завершения операций транзакции как можно скорее и выполнения операции фиксации в качестве фоновой задачи. Это можно сделать с помощью методов <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> и <xref:System.Transactions.CommittableTransaction.EndCommit%2A> класса <xref:System.Transactions.CommittableTransaction>.  
   
  Можно вызвать метод <xref:System.Transactions.CommittableTransaction.BeginCommit%2A>, чтобы передать задачу фиксации потоку из пула потоков. Кроме того, можно вызвать метод <xref:System.Transactions.CommittableTransaction.EndCommit%2A>, чтобы определить, была ли выполнена фиксация транзакции. Если фиксацию транзакции по какой-либо причине выполнить не удалось, метод <xref:System.Transactions.CommittableTransaction.EndCommit%2A> вызывает исключение. Если на момент вызова метода <xref:System.Transactions.CommittableTransaction.EndCommit%2A> транзакция не зафиксирована, вызов блокируется до фиксации или отката транзакции.  

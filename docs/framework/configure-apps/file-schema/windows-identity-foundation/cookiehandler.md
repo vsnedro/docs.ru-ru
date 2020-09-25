@@ -3,14 +3,15 @@ title: <cookieHandler>
 ms.date: 03/30/2017
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
 author: BrucePerlerMS
-ms.openlocfilehash: 853dc9817d080e59ac7a792576eda862bd0b1f1d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5f5b432830a61adab324b2b6cd2ebe6eeccca7f0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252030"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189842"
 ---
 # \<cookieHandler>
+
 Настраивает <xref:System.IdentityModel.Services.CookieHandler> , что <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) использует для чтения и записи файлов cookie.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -38,6 +39,7 @@ ms.locfileid: "70252030"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -65,7 +67,8 @@ ms.locfileid: "70252030"
 |-------------|-----------------|  
 |[\<federationConfiguration>](federationconfiguration.md)|Содержит параметры, которые настраивают свойства <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (всфам) и <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Компонент <xref:System.IdentityModel.Services.CookieHandler> отвечает за чтение и запись необработанных файлов cookie на уровне протокола HTTP. Можно настроить либо <xref:System.IdentityModel.Services.ChunkedCookieHandler> пользовательский обработчик файлов cookie, производный от <xref:System.IdentityModel.Services.CookieHandler> класса.  
   
  Чтобы настроить обработчик фрагментированных файлов cookie, установите для атрибута mode значение "фрагментированный" или "по умолчанию". Размер фрагмента по умолчанию составляет 2000 байт, но при необходимости можно указать другой размер блока, включив `<chunkedCookieHandler>` дочерний элемент.  
@@ -75,6 +78,7 @@ ms.locfileid: "70252030"
  `<cookieHandler>`Элемент представлен <xref:System.IdentityModel.Services.CookieHandlerElement> классом. Обработчик файлов cookie, указанный в конфигурации, доступен из <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> свойства <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> объекта, установленного для <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> Свойства.  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде XML показан `<cookieHandler>` элемент. В этом примере, поскольку `mode` атрибут не задан, SAM будет использовать обработчик файлов cookie по умолчанию. Это экземпляр <xref:System.IdentityModel.Services.ChunkedCookieHandler> класса. Так как `<chunkedCookieHandler>` дочерний элемент не указан, будет использоваться размер фрагмента данных по умолчанию. Протокол HTTPS не будет требоваться, поскольку `requireSsl` задан атрибут `false` .  
   
 > [!WARNING]
@@ -84,7 +88,7 @@ ms.locfileid: "70252030"
 <cookieHandler requireSsl="false" />  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IdentityModel.Services.CookieHandler>
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>

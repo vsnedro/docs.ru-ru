@@ -5,14 +5,15 @@ helpviewer_keywords:
 - supportPortability element
 - <supportPortability> element
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
-ms.openlocfilehash: 99fa51238040f21d998a8c6c2aef7c13d288104a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 05ce6943b9456d4fd380ea8d6cf354d197b92f96
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551589"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183953"
 ---
 # <a name="supportportability-element"></a>Элемент \<supportPortability>
+
 Указывает, что приложение может ссылаться на ту же сборку в двух различных реализациях .NET Framework, отключая поведение по умолчанию, которое рассматривает сборки как эквивалент для переносимости приложения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -56,7 +57,7 @@ ms.locfileid: "90551589"
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
 |`assemblyBinding`|Содержит сведения о перенаправлении версии сборки и о расположениях сборок.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
 Начиная с .NET Framework 4, поддержка предоставляется автоматически для приложений, которые могут использовать любую из двух реализаций .NET Framework, например либо реализацию .NET Framework, либо .NET Framework для реализации Silverlight. Две реализации конкретной .NET Framework сборки считаются эквивалентными связывателем сборки. В нескольких сценариях эта функция переносимости приложений вызывает проблемы. В этих сценариях `<supportPortability>` элемент можно использовать для отключения функции.  
   
@@ -80,7 +81,7 @@ ms.locfileid: "90551589"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [-appconfig (параметры компилятора C#)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
 - [Общие сведения об унификации сборок платформы .NET Framework](/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

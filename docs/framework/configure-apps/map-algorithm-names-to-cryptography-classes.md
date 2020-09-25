@@ -8,14 +8,15 @@ helpviewer_keywords:
 - cryptographic algorithms
 - names [.NET Framework], algorithm mapping
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-ms.openlocfilehash: 5a1d7acdd34182dd82f4dce66d136c4ef4de6e95
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: b67db612496e56a341dab2e5fc4b52c954ff02b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105349"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183394"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>Отображение имен алгоритмов на криптографические классы
+
 Существует четыре способа, с помощью которых разработчик может создать криптографический объект, используя Windows SDK:  
   
 - Создайте объект с помощью оператора **New** .  
@@ -33,6 +34,7 @@ ms.locfileid: "85105349"
  Если не имеет значения, какой алгоритм хэширования используется, разработчик может вызвать <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> метод, который возвращает объект, реализующий преобразование хэширования.  
   
 ## <a name="mapping-algorithm-names-in-configuration-files"></a>Сопоставление имен алгоритмов в файлах конфигурации  
+
  По умолчанию среда выполнения возвращает <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> объект для всех четырех сценариев. Однако администратор компьютера может изменить тип объекта, возвращаемый методами в двух последних сценариях. Для этого необходимо связать понятное имя алгоритма с классом, который вы хотите использовать в файле конфигурации компьютера (Machine.config).  
   
  В следующем примере показано, как настроить среду выполнения таким образом, чтобы **система System. Security. Cryptography. SHA1. Create**, **System. Security. CryptoConfig. CREATEFROMNAME ("SHA1")** и **System. Security. Cryptography. HashAlgorithm. Create** возвращали `MySHA1HashClass` объект.  
@@ -70,5 +72,5 @@ ms.locfileid: "85105349"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Службы шифрования](../../standard/security/cryptographic-services.md)
+- [службы шифрования](../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](configure-cryptography-classes.md)

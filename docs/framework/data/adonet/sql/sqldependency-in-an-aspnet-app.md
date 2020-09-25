@@ -5,23 +5,26 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ff226ce3-f6b5-47a1-8d22-dc78b67e07f5
-ms.openlocfilehash: 2ec9415f63151443d5008fbce471fabeb89cdb91
-ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.openlocfilehash: 7c982550533cb6d8547ab2ce78ad2e814d07857f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89656175"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91184798"
 ---
 # <a name="sqldependency-in-an-aspnet-application"></a>SqlDependency в приложении ASP.NET
+
 В приведенном в этом разделе примере показано, как применять <xref:System.Data.SqlClient.SqlDependency> косвенно, используя объект <xref:System.Web.Caching.SqlCacheDependency> ASP.NET. Объект <xref:System.Web.Caching.SqlCacheDependency> использует <xref:System.Data.SqlClient.SqlDependency> для прослушивания уведомлений и корректного обновления кэша.  
   
 > [!NOTE]
 > В примере кода предполагается, что вы включили уведомления о запросах, выполняя скрипты, [включив уведомления о запросах](enabling-query-notifications.md).  
   
 ## <a name="about-the-sample-application"></a>О примере приложения  
+
  В примере приложения используется одна веб-страница ASP.NET для вывода сведений о продуктах из базы данных **AdventureWorks** SQL Server в элемент управления <xref:System.Web.UI.WebControls.GridView>. При загрузке страницы код записывает текущее время в элемент управления <xref:System.Web.UI.WebControls.Label>. Затем он определяет объект <xref:System.Web.Caching.SqlCacheDependency> и задает свойства объекта <xref:System.Web.Caching.Cache> для сохранения данных кэша до трех минут. Затем код подключается к базе данных и получает данные. При загрузке страницы и работе приложения ASP.NET будет получать данные из кэша, которые можно проверить, отметив, что время на странице не меняется. Если наблюдаемые данные изменяются, ASP.NET делает недействительным кэш и повторно заполняет элемент управления `GridView` новыми данными, обновляя время в элементе управления `Label`.  
   
 ## <a name="creating-the-sample-application"></a>Создание примера приложения  
+
  Чтобы создать и запустить пример приложения, выполните следующие действия:  
   
 1. Создание нового веб-сайта ASP.NET.  
@@ -53,6 +56,7 @@ ms.locfileid: "89656175"
      [!code-vb[DataWorks SqlDependency.AspNet#2](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlDependency.AspNet/VB/Default.aspx.vb#2)]  
   
 ### <a name="testing-the-application"></a>Тестирование приложения  
+
  Приложение кэширует данные, отображаемые в веб-форме, и обновляет их каждые три минуты, если нет действий. Если в базе данных происходит изменение, кэш обновляется немедленно. Запустите приложение из Visual Studio, чтобы загрузить страницу в браузер. Отображаемое время обновления кэша указывает, когда кэш был обновлен последний раз. Подождите три минуты, а затем обновите страницу, в результате чего произойдет событие обратной передачи. Обратите внимание, что время, отображаемое на странице, изменилось. Если обновить страницу меньше чем через три минуты, время, отображаемое на странице, останется прежним.  
   
  Теперь обновите данные в базе данных, используя команду Transact-SQL UPDATE, и обновите страницу. Отображаемое время теперь указывает, что кэш был обновлен с учетом новых данных из базы данных. Обратите внимание, что хотя кэш обновляется, время на странице не изменяется, пока не произойдет событие обратной передачи.  

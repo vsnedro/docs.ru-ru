@@ -2,14 +2,15 @@
 title: Разрешение перегрузки функций (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 9c648054-3808-4a69-9d3e-98e6a4f9c5ca
-ms.openlocfilehash: 1aeebc501487a6fc443df00c24beb2bc6aa5fc49
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: d37cd9342d1fb3b60d5a2c05d373fb7e71f54b1f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70250923"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189400"
 ---
 # <a name="function-overload-resolution-entity-sql"></a>Разрешение перегрузки функций (Entity SQL)
+
 В данном разделе описывается, каким образом разрешаются функции [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
  С одним именем можно определить более одной функции при условии, что эти функции имеют уникальные сигнатуры.  
@@ -30,7 +31,7 @@ ms.locfileid: "70250923"
   
  Что касается определяемых пользователем функций, то приоритет имеет определение для встроенной функции запроса, даже если существует функция, определенная в модели, с сигнатурой, которая больше подходит для пользовательской функции.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

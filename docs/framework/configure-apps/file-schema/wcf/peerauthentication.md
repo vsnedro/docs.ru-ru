@@ -2,14 +2,15 @@
 title: <peerAuthentication>
 ms.date: 03/30/2017
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
-ms.openlocfilehash: 6f0ae05d3397e8fd981037dc58be1f80a661b5c5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a88a3c0bbbd36d2372520f70b3c5692757b35ade
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90536006"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181561"
 ---
 # \<peerAuthentication>
+
 Задает параметры проверки подлинности для сертификата однорангового узла, используемого одноранговым узлом.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ ms.locfileid: "90536006"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -43,6 +45,7 @@ ms.locfileid: "90536006"
 |`trustedStoreLocation`|Необязательное перечисление. Указывает расположение доверенного хранилища, в котором система безопасности WCF проверяет сертификат однорангового узла. Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.StoreLocation>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -51,10 +54,11 @@ ms.locfileid: "90536006"
 |-------------|-----------------|  
 |[\<peer>](peer-of-servicecredentials.md)|Задает текущие учетные данные для однорангового узла.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Элемент `<authentication>` соответствует классу <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>. Этот элемент задает модуль проверки, который вызывается во время проверки подлинности «от соседа к соседу» в сетке. Когда новый одноранговый узел пытается установить соединение с соседним узлом, он передает свои учетные данные в отвечающий одноранговый узел. Для проверки учетных данных удаленной стороны вызывается проверяющий элемент управления отвечающего узла. Как только в сетке устанавливается одноранговое соединение, оба одноранговых узла выполняют взаимную проверку подлинности. Это означает, что вызываются проверяющие элементы управления на обоих концах.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>

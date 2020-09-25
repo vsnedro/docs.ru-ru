@@ -2,17 +2,18 @@
 title: Указание отношений между элементами без вложенности
 ms.date: 03/30/2017
 ms.assetid: e31325da-7691-4d33-acf4-99fccca67006
-ms.openlocfilehash: bee427c6cdf76792773ea827c8772b276ff29c31
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6684e992242d5c695f3c237f70de61b4dae1c48f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150822"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183407"
 ---
 # <a name="specify-relations-between-elements-with-no-nesting"></a>Указание отношений между элементами без вложенности
-Если элементы не вложены, какие-либо неявные связи не создаются. Однако можно четко указать отношения между элементами, которые не вложены, используя аннотацию **msdata:Relationship.**  
+
+Если элементы не вложены, какие-либо неявные связи не создаются. Однако можно явно указать связи между элементами, которые не вложены с помощью аннотации **msdata: relationship** .  
   
- В следующем примере показана схема XML, в которой аннотация **msdata:Relationship** указана между элементами **Заказа** и **OrderDetail,** которые не вложены. Аннотация **msdata:Relationship** указана как элемент ребенка **элемента Schema.**  
+ В следующем примере показана схема XML, в которой заметка **msdata: relationship** задается между элементами **Order** и **OrderDetail** , которые не являются вложенными. Аннотация **msdata: relationship** указывается как дочерний элемент элемента **Schema** .  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""
@@ -53,7 +54,7 @@ ms.locfileid: "79150822"
 </xs:schema>  
 ```  
   
- Процесс определения схемы XML Schema (XSD) создает <xref:System.Data.DataSet> таблицы с **order** и **OrderDetail** и отношения, указанные между этими двумя таблицами, как показано ниже.  
+ В процессе сопоставления схемы языка определения схемы XML (XSD) создаются <xref:System.Data.DataSet> таблицы **Order** и **OrderDetail** и связь, указанная между этими двумя таблицами, как показано ниже.  
   
 ```text  
 RelationName: OrdOrderDetailRelation  

@@ -5,17 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
-ms.openlocfilehash: acb94efd8b6b6b66d0cc84309c2d68ad692b08d3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 20a573da0221704451f10138cb854523d5a17f17
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174502"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183056"
 ---
 # <a name="specifying-xml-values-as-parameters"></a>Указание значений XML как параметров
+
 Если запрос требует параметров, значения которых представляет XML-строка, разработчики могут передать это значение с помощью экземпляра типа данных **SqlXml**. Это не составляет никакой сложности, поскольку XML-столбцы в SQL Server принимают значения параметров точно так же, как другие типы данных.  
   
 ## <a name="example"></a>Пример  
+
  Следующее приложение командной строки создает новую таблицу в базе данных **AdventureWorks**. Новая таблица содержит столбец с именем **SalesID** и XML-столбец с именем **SalesInfo**.  
   
 > [!NOTE]
@@ -162,5 +164,5 @@ class Class1
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.SqlTypes.SqlXml>
-- [Данные XML в сервере S'L](xml-data-in-sql-server.md)
+- [XML-данные в SQL Server](xml-data-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

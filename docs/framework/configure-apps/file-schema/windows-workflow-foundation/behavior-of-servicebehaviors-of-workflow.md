@@ -1,16 +1,17 @@
 ---
-title: <behavior>из <serviceBehaviors> рабочего процесса
+title: <behavior> из <serviceBehaviors> рабочего процесса
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
-ms.openlocfilehash: 071cff8e9f6ec3fa0546a07d19160869d8b43f60
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 14c528746963a3078e0ab377d095414d2fca0dbe
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79152324"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189621"
 ---
-# <a name="behavior-of-servicebehaviors-of-workflow"></a>\<behavior>из \<serviceBehaviors> рабочего процесса
+# <a name="behavior-of-servicebehaviors-of-workflow"></a>\<behavior> из \<serviceBehaviors> рабочего процесса
+
 Элемент **Behavior** содержит коллекцию параметров для поведения службы. Каждое поведение индексируется по **имени**. Службы могут ссылаться на каждое поведение с помощью этого имени, используя атрибут **behaviorConfiguration** [\<endpoint>](../wcf/endpoint-element.md) элемента. Это позволяет конечным точкам иметь общие конфигурации поведений без переопределения параметров.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -52,6 +53,7 @@ ms.locfileid: "79152324"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
