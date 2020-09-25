@@ -9,60 +9,66 @@ helpviewer_keywords:
 - bypasslist element
 - <bypasslist> element
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-ms.openlocfilehash: 42b6ddf4c3d09bcf8ef0ada105cefedccc63b505
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 58cdcf046b2a5a292493c5704739b22aa4ec4f17
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504632"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178415"
 ---
-# <a name="bypasslist-element-network-settings"></a><span data-ttu-id="0a640-103">Элемент \<bypasslist> (параметры сети)</span><span class="sxs-lookup"><span data-stu-id="0a640-103">\<bypasslist> Element (Network Settings)</span></span>
-<span data-ttu-id="0a640-104">Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="0a640-104">Provides a set of regular expressions that describe addresses that do not use a proxy.</span></span>  
+# <a name="bypasslist-element-network-settings"></a><span data-ttu-id="84f0d-103">Элемент \<bypasslist> (параметры сети)</span><span class="sxs-lookup"><span data-stu-id="84f0d-103">\<bypasslist> Element (Network Settings)</span></span>
+
+<span data-ttu-id="84f0d-104">Предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="84f0d-104">Provides a set of regular expressions that describe addresses that do not use a proxy.</span></span>  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<bypasslist>**
 
-## <a name="syntax"></a><span data-ttu-id="0a640-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="0a640-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="84f0d-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="84f0d-105">Syntax</span></span>  
   
 ```xml  
 <bypasslist>
 </bypasslist>  
 ```  
   
-## <a name="attributes-and-elements"></a><span data-ttu-id="0a640-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="0a640-106">Attributes and Elements</span></span>  
- <span data-ttu-id="0a640-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="0a640-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
+## <a name="attributes-and-elements"></a><span data-ttu-id="84f0d-106">Атрибуты и элементы</span><span class="sxs-lookup"><span data-stu-id="84f0d-106">Attributes and Elements</span></span>  
+
+ <span data-ttu-id="84f0d-107">В следующих разделах описаны атрибуты, дочерние и родительские элементы.</span><span class="sxs-lookup"><span data-stu-id="84f0d-107">The following sections describe attributes, child elements, and parent elements.</span></span>  
   
-### <a name="attributes"></a><span data-ttu-id="0a640-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="0a640-108">Attributes</span></span>  
- <span data-ttu-id="0a640-109">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="0a640-109">None.</span></span>  
+### <a name="attributes"></a><span data-ttu-id="84f0d-108">Атрибуты</span><span class="sxs-lookup"><span data-stu-id="84f0d-108">Attributes</span></span>  
+
+ <span data-ttu-id="84f0d-109">Отсутствует.</span><span class="sxs-lookup"><span data-stu-id="84f0d-109">None.</span></span>  
   
-### <a name="child-elements"></a><span data-ttu-id="0a640-110">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="0a640-110">Child Elements</span></span>  
+### <a name="child-elements"></a><span data-ttu-id="84f0d-110">Дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="84f0d-110">Child Elements</span></span>  
   
-|<span data-ttu-id="0a640-111">**Элемент**</span><span class="sxs-lookup"><span data-stu-id="0a640-111">**Element**</span></span>|<span data-ttu-id="0a640-112">**Описание**</span><span class="sxs-lookup"><span data-stu-id="0a640-112">**Description**</span></span>|  
+|<span data-ttu-id="84f0d-111">**Элемент**</span><span class="sxs-lookup"><span data-stu-id="84f0d-111">**Element**</span></span>|<span data-ttu-id="84f0d-112">**Описание**</span><span class="sxs-lookup"><span data-stu-id="84f0d-112">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="0a640-113">добавление</span><span class="sxs-lookup"><span data-stu-id="0a640-113">add</span></span>](add-element-for-bypasslist-network-settings.md)|<span data-ttu-id="0a640-114">Добавление в список обхода прокси IP-адреса или DNS-имени.</span><span class="sxs-lookup"><span data-stu-id="0a640-114">Adds an IP address or DNS name to the proxy bypass list.</span></span>|  
-|[<span data-ttu-id="0a640-115">открытым</span><span class="sxs-lookup"><span data-stu-id="0a640-115">clear</span></span>](clear-element-for-bypasslist-network-settings.md)|<span data-ttu-id="0a640-116">Очищает список обхода.</span><span class="sxs-lookup"><span data-stu-id="0a640-116">Clears the bypass list.</span></span>|  
-|[<span data-ttu-id="0a640-117">remove</span><span class="sxs-lookup"><span data-stu-id="0a640-117">remove</span></span>](remove-element-for-bypasslist-network-settings.md)|<span data-ttu-id="0a640-118">Удаляет IP-адрес или DNS-имя из списка обхода прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="0a640-118">Removes an IP address or DNS name from the proxy bypass list.</span></span>|  
+|[<span data-ttu-id="84f0d-113">add</span><span class="sxs-lookup"><span data-stu-id="84f0d-113">add</span></span>](add-element-for-bypasslist-network-settings.md)|<span data-ttu-id="84f0d-114">Добавление в список обхода прокси IP-адреса или DNS-имени.</span><span class="sxs-lookup"><span data-stu-id="84f0d-114">Adds an IP address or DNS name to the proxy bypass list.</span></span>|  
+|[<span data-ttu-id="84f0d-115">пусто</span><span class="sxs-lookup"><span data-stu-id="84f0d-115">clear</span></span>](clear-element-for-bypasslist-network-settings.md)|<span data-ttu-id="84f0d-116">Очищает список обхода.</span><span class="sxs-lookup"><span data-stu-id="84f0d-116">Clears the bypass list.</span></span>|  
+|[<span data-ttu-id="84f0d-117">remove</span><span class="sxs-lookup"><span data-stu-id="84f0d-117">remove</span></span>](remove-element-for-bypasslist-network-settings.md)|<span data-ttu-id="84f0d-118">Удаляет IP-адрес или DNS-имя из списка обхода прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="84f0d-118">Removes an IP address or DNS name from the proxy bypass list.</span></span>|  
   
-### <a name="parent-elements"></a><span data-ttu-id="0a640-119">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="0a640-119">Parent Elements</span></span>  
+### <a name="parent-elements"></a><span data-ttu-id="84f0d-119">Родительские элементы</span><span class="sxs-lookup"><span data-stu-id="84f0d-119">Parent Elements</span></span>  
   
-|<span data-ttu-id="0a640-120">**Элемент**</span><span class="sxs-lookup"><span data-stu-id="0a640-120">**Element**</span></span>|<span data-ttu-id="0a640-121">**Описание**</span><span class="sxs-lookup"><span data-stu-id="0a640-121">**Description**</span></span>|  
+|<span data-ttu-id="84f0d-120">**Элемент**</span><span class="sxs-lookup"><span data-stu-id="84f0d-120">**Element**</span></span>|<span data-ttu-id="84f0d-121">**Описание**</span><span class="sxs-lookup"><span data-stu-id="84f0d-121">**Description**</span></span>|  
 |-----------------|---------------------|  
-|[<span data-ttu-id="0a640-122">defaultProxy</span><span class="sxs-lookup"><span data-stu-id="0a640-122">defaultProxy</span></span>](defaultproxy-element-network-settings.md)|<span data-ttu-id="0a640-123">Настраивает прокси-сервер протокола передачи гипертекста (HTTP).</span><span class="sxs-lookup"><span data-stu-id="0a640-123">Configures the Hypertext Transfer Protocol (HTTP) proxy server.</span></span>|  
+|[<span data-ttu-id="84f0d-122">defaultProxy</span><span class="sxs-lookup"><span data-stu-id="84f0d-122">defaultProxy</span></span>](defaultproxy-element-network-settings.md)|<span data-ttu-id="84f0d-123">Настраивает прокси-сервер протокола передачи гипертекста (HTTP).</span><span class="sxs-lookup"><span data-stu-id="84f0d-123">Configures the Hypertext Transfer Protocol (HTTP) proxy server.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="0a640-124">Примечания</span><span class="sxs-lookup"><span data-stu-id="0a640-124">Remarks</span></span>  
- <span data-ttu-id="0a640-125">Список обхода содержит регулярные выражения, описывающие URI, которые <xref:System.Net.WebRequest> обращаются к экземплярам напрямую, а не через прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="0a640-125">The bypass list contains regular expressions that describe URIs that <xref:System.Net.WebRequest> instances access directly instead of through the proxy server.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="84f0d-124">Remarks</span><span class="sxs-lookup"><span data-stu-id="84f0d-124">Remarks</span></span>  
+
+ <span data-ttu-id="84f0d-125">Список обхода содержит регулярные выражения, описывающие URI, которые <xref:System.Net.WebRequest> обращаются к экземплярам напрямую, а не через прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="84f0d-125">The bypass list contains regular expressions that describe URIs that <xref:System.Net.WebRequest> instances access directly instead of through the proxy server.</span></span>  
   
- <span data-ttu-id="0a640-126">При указании регулярного выражения для этого элемента следует соблюдать осторожность.</span><span class="sxs-lookup"><span data-stu-id="0a640-126">You should use caution when specifying a regular expression for this element.</span></span> <span data-ttu-id="0a640-127">Регулярное выражение "[a-z] + \\ . contoso \\ . com" соответствует любому узлу в домене contoso.com, но также соответствует любому узлу в домене contoso.com.cpandl.com.</span><span class="sxs-lookup"><span data-stu-id="0a640-127">The regular expression "[a-z]+\\.contoso\\.com" matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain.</span></span> <span data-ttu-id="0a640-128">Чтобы сопоставить только узел в домене contoso.com, используйте привязку ("$"): "[a-z] + \\ . contoso \\ . com $".</span><span class="sxs-lookup"><span data-stu-id="0a640-128">To match only a host in the contoso.com domain, use an anchor ("$"): "[a-z]+\\.contoso\\.com$".</span></span>  
+ <span data-ttu-id="84f0d-126">При указании регулярного выражения для этого элемента следует соблюдать осторожность.</span><span class="sxs-lookup"><span data-stu-id="84f0d-126">You should use caution when specifying a regular expression for this element.</span></span> <span data-ttu-id="84f0d-127">Регулярное выражение "[a-z] + \\ . contoso \\ . com" соответствует любому узлу в домене contoso.com, но также соответствует любому узлу в домене contoso.com.cpandl.com.</span><span class="sxs-lookup"><span data-stu-id="84f0d-127">The regular expression "[a-z]+\\.contoso\\.com" matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain.</span></span> <span data-ttu-id="84f0d-128">Чтобы сопоставить только узел в домене contoso.com, используйте привязку ("$"): "[a-z] + \\ . contoso \\ . com $".</span><span class="sxs-lookup"><span data-stu-id="84f0d-128">To match only a host in the contoso.com domain, use an anchor ("$"): "[a-z]+\\.contoso\\.com$".</span></span>  
   
- <span data-ttu-id="0a640-129">Дополнительные сведения о регулярных выражениях см. в разделе. [.NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).</span><span class="sxs-lookup"><span data-stu-id="0a640-129">For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).</span></span>  
+ <span data-ttu-id="84f0d-129">Дополнительные сведения о регулярных выражениях см. в разделе. [.NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).</span><span class="sxs-lookup"><span data-stu-id="84f0d-129">For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).</span></span>  
   
-## <a name="configuration-files"></a><span data-ttu-id="0a640-130">Файлы конфигурации</span><span class="sxs-lookup"><span data-stu-id="0a640-130">Configuration Files</span></span>  
- <span data-ttu-id="0a640-131">Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).</span><span class="sxs-lookup"><span data-stu-id="0a640-131">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
+## <a name="configuration-files"></a><span data-ttu-id="84f0d-130">Файлы конфигурации</span><span class="sxs-lookup"><span data-stu-id="84f0d-130">Configuration Files</span></span>  
+
+ <span data-ttu-id="84f0d-131">Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).</span><span class="sxs-lookup"><span data-stu-id="84f0d-131">This element can be used in the application configuration file or the machine configuration file (Machine.config).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="0a640-132">Пример</span><span class="sxs-lookup"><span data-stu-id="0a640-132">Example</span></span>  
- <span data-ttu-id="0a640-133">В следующем примере в список обхода добавляется два адреса.</span><span class="sxs-lookup"><span data-stu-id="0a640-133">The following example adds two addresses to the bypass list.</span></span> <span data-ttu-id="0a640-134">Первый обход прокси-сервера для всех серверов в домене contoso.com; во втором случае прокси-сервер обходится для всех серверов, IP-адреса которых начинаются с 192,168.</span><span class="sxs-lookup"><span data-stu-id="0a640-134">The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.</span></span>  
+## <a name="example"></a><span data-ttu-id="84f0d-132">Пример</span><span class="sxs-lookup"><span data-stu-id="84f0d-132">Example</span></span>  
+
+ <span data-ttu-id="84f0d-133">В следующем примере в список обхода добавляется два адреса.</span><span class="sxs-lookup"><span data-stu-id="84f0d-133">The following example adds two addresses to the bypass list.</span></span> <span data-ttu-id="84f0d-134">Первый обход прокси-сервера для всех серверов в домене contoso.com; во втором случае прокси-сервер обходится для всех серверов, IP-адреса которых начинаются с 192,168.</span><span class="sxs-lookup"><span data-stu-id="84f0d-134">The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.</span></span>  
   
 ```xml  
 <configuration>  
@@ -77,7 +83,7 @@ ms.locfileid: "84504632"
 </configuration>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="0a640-135">См. также</span><span class="sxs-lookup"><span data-stu-id="0a640-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="84f0d-135">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="84f0d-135">See also</span></span>
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [<span data-ttu-id="0a640-136">Схема параметров сети</span><span class="sxs-lookup"><span data-stu-id="0a640-136">Network Settings Schema</span></span>](index.md)
+- [<span data-ttu-id="84f0d-136">Схема параметров сети</span><span class="sxs-lookup"><span data-stu-id="84f0d-136">Network Settings Schema</span></span>](index.md)
