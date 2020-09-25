@@ -5,22 +5,24 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2d45cf41-d8ae-4409-af3e-a96a7e476d85
-ms.openlocfilehash: e5135aca49a63aafa3330832c54f2d28d31d60d0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 42843ec40f4f7271526e341dc53bdbc2ef11db38
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151355"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198734"
 ---
 # <a name="creating-a-datatable-from-a-dataview"></a>Создание таблицы данных из объекта DataView
-После получения данных из источника данных и заполнения данными таблицы <xref:System.Data.DataTable> можно по желанию отсортировать, отфильтровать или другим образом ограничить возвращаемые данные, не извлекая их повторно. Сделать это позволяет класс <xref:System.Data.DataView>. Кроме того, если вам нужно <xref:System.Data.DataTable> создать <xref:System.Data.DataView>новый из, вы можете использовать <xref:System.Data.DataView.ToTable%2A> метод, чтобы скопировать все строки <xref:System.Data.DataTable>и столбцы, или подмножество данных в новый . Метод <xref:System.Data.DataView.ToTable%2A> имеет перегруженные формы для выполнения следующих действий.  
+
+После получения данных из источника данных и заполнения данными таблицы <xref:System.Data.DataTable> можно по желанию отсортировать, отфильтровать или другим образом ограничить возвращаемые данные, не извлекая их повторно. Сделать это позволяет класс <xref:System.Data.DataView>. Кроме того, если необходимо создать новый объект <xref:System.Data.DataTable> из <xref:System.Data.DataView> , можно использовать <xref:System.Data.DataView.ToTable%2A> метод, чтобы скопировать все строки и столбцы или подмножество данных в новый <xref:System.Data.DataTable> . Метод <xref:System.Data.DataView.ToTable%2A> имеет перегруженные формы для выполнения следующих действий.  
   
 - Создание таблицы <xref:System.Data.DataTable>, содержащей столбцы, которые являются подмножеством столбцов в представлении <xref:System.Data.DataView>.  
   
-- <xref:System.Data.DataTable> Создайте, который включает в <xref:System.Data.DataView>себя только различные строки из , аналогично ключевому слову DISTINCT в Transact-S'L.  
+- Создание <xref:System.Data.DataTable> , включающее в себя только уникальные строки из <xref:System.Data.DataView> , аналогично ключевому слову DISTINCT в TRANSACT-SQL.  
   
 ## <a name="example"></a>Пример  
- Следующий пример приложения <xref:System.Data.DataTable> консоли создает данные из таблицы **Person.Contact** в выборочной базе данных **AdventureWorks.** Далее пример создает отсортированную и отфильтрованную <xref:System.Data.DataView> на основе <xref:System.Data.DataTable>. После отображения <xref:System.Data.DataTable> содержимого <xref:System.Data.DataView>и, пример <xref:System.Data.DataTable> создает <xref:System.Data.DataView> новый <xref:System.Data.DataView.ToTable%2A> из вызова метода, выбирая только подмножество доступных столбцов. Наконец, пример отображает содержимое новой таблицы <xref:System.Data.DataTable>.  
+
+ В следующем примере консольного приложения создается объект <xref:System.Data.DataTable> , содержащий данные из таблицы **Person. Contact** в образце базы данных **AdventureWorks** . Далее в примере создается Сортировка и фильтрация на <xref:System.Data.DataView> основе <xref:System.Data.DataTable> . После отображения содержимого <xref:System.Data.DataTable> и <xref:System.Data.DataView> , в примере создается новый объект <xref:System.Data.DataTable> из, <xref:System.Data.DataView> вызывая <xref:System.Data.DataView.ToTable%2A> метод, выбирая только подмножество доступных столбцов. Наконец, пример отображает содержимое новой таблицы <xref:System.Data.DataTable>.  
   
 ```vb  
 Private Sub DemonstrateDataView()  

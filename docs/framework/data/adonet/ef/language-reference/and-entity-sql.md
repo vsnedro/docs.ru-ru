@@ -1,15 +1,16 @@
 ---
-title: '&amp;&amp;(И) (Сущность СЗЛ)'
+title: '&amp;&amp; ПЕРЕТАСКИВАНИ (Entity SQL)'
 ms.date: 03/30/2017
 ms.assetid: e7d24213-471d-4807-b85e-570375df89b5
-ms.openlocfilehash: eccad616de287a39c42e986cea84dc22feec7f70
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 86ff43f8ed20c5696d15e21284394c3cb63200e3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150519"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198045"
 ---
-# <a name="ampamp-and-entity-sql"></a>&amp;&amp;(И) (Сущность СЗЛ)
+# <a name="ampamp-and-entity-sql"></a>&amp;&amp; ПЕРЕТАСКИВАНИ (Entity SQL)
+
 Возвращает значение `true` если оба выражения `true`; в противном случае возвращает значение `false` или `NULL`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -18,17 +19,19 @@ ms.locfileid: "79150519"
 boolean_expression AND boolean_expression
 ```
 
-или диспетчер конфигурации служб  
+or  
 
 ```csharp
 boolean_expression && boolean_expression  
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `boolean_expression`  
  Любое допустимое выражение, возвращающее значение типа Boolean.  
   
 ## <a name="remarks"></a>Remarks  
+
  Два амперсанда (&&) действуют так же, как оператор AND.  
   
  В следующей таблице указаны возможные входные значения и возвращаемые типы.  
@@ -40,6 +43,7 @@ boolean_expression && boolean_expression
 |`NULL`|NULL|FALSE|NULL|  
   
 ## <a name="example"></a>Пример  
+
  Следующий запрос Entity SQL демонстрирует, как использовать оператор AND. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
 1. Выполните процедуру из статьи [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: eecf9d78-60e3-4fdc-8de0-e56c13a89414
-ms.openlocfilehash: 335137eeef02e590539c6d83e46cb39901a1e03f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 75c9bcf0e0b6180030825b4d1e7dd9e1f9686712
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286925"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198643"
 ---
 # <a name="creating-a-datatable"></a>Создание таблицы данных
+
 Объект <xref:System.Data.DataTable>, который представляет одну таблицу находящихся в памяти реляционных данных, может создаваться и использоваться независимо или использоваться другими объектами .NET Framework, чаще всего как член <xref:System.Data.DataSet>.  
   
  Объект **DataTable** можно создать с помощью соответствующего конструктора **DataTable** . Его можно добавить в **набор данных** с помощью метода **Add** , чтобы добавить его в коллекцию **Tables** объекта **DataTable** .  
@@ -50,7 +51,7 @@ DataSet customers = new DataSet();
 DataTable customersTable = customers.Tables.Add("CustomersTable");  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.DataTable>
 - <xref:System.Data.DataTableCollection>

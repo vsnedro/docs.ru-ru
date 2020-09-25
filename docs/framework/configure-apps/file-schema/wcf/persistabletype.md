@@ -2,14 +2,15 @@
 title: <persistableType>
 ms.date: 03/30/2017
 ms.assetid: e5425fe6-523a-4076-aab4-2c2515b1d830
-ms.openlocfilehash: 328caaefe0cc24da45b460cab0a672dc8a6ccce1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6425b21fe50865beb7bb2876ea478b415fbe3944
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855067"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181522"
 ---
 # \<persistableType>
+
 Задает все восстанавливаемые типы.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,19 +35,22 @@ ms.locfileid: "70855067"
 ```  
   
 ## <a name="type"></a>Type  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |идентификатор|Обязательный атрибут, содержащий строку, которая задает уникальный идентификатор для восстанавливаемого типа.|  
 |name|Необязательный атрибут, содержащий строку, которая задает имя восстанавливаемого типа.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -55,7 +59,7 @@ ms.locfileid: "70855067"
 |-------------|-----------------|  
 |[\<persistableTypes>](persistabletypes.md)|Коллекция элементов `persistableType`.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ComPersistableTypeElementCollection>
 - <xref:System.ServiceModel.Configuration.ComPersistableTypeElement>
