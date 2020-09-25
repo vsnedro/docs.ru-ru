@@ -2,14 +2,15 @@
 title: Элемент <message> для <wsFederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
-ms.openlocfilehash: 8e0903dd1313e68e2de65730e129079199ebe2f2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ea320b1d97e742d4f90ec55502f3bd429803283d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738979"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204896"
 ---
 # <a name="message-element-of-wsfederationhttpbinding"></a>Элемент \<message> для \<wsFederationHttpBinding>
+
 Определяет параметры безопасности на уровне сообщений для [\<wsFederationHttpBinding>](wsfederationhttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -81,15 +82,16 @@ ms.locfileid: "73738979"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Допустимые значения этого атрибута см. в таблице «Атрибут algorithmSuite». Значение по умолчанию — `Basic256`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).|  
-|issuedKeyType|Задает тип выдаваемого ключа. Допустимые значения.<br /><br /> -SymmetricKey<br />-PublicKey<br /><br /> Значение по умолчанию — `SymmetricKey`. Это атрибут типа <xref:System.IdentityModel.Tokens.SecurityKeyType>.|  
-|issuedTokenType|Строка, содержащая универсальный код ресурса (URI), который задает тип выдаваемых маркеров. Значение по умолчанию — `null`.|  
+|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Допустимые значения этого атрибута см. в таблице «Атрибут algorithmSuite». Значение по умолчанию — `Basic256`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).|  
+|issuedKeyType|Задает тип выдаваемого ключа. Допустимые значения.<br /><br /> -SymmetricKey<br />-PublicKey<br /><br /> Значение по умолчанию — `SymmetricKey`. Это атрибут типа <xref:System.IdentityModel.Tokens.SecurityKeyType>.|  
+|issuedTokenType|Строка, содержащая универсальный код ресурса (URI), который задает тип выдаваемых маркеров. Значение по умолчанию — `null`.|  
 |negotiateServiceCredential|Логическое значение, которое определяет, должен ли проводиться обмен учетными данными службы в рамках процесса согласования, или допустимо использование внештатного канала. Значением по умолчанию является `true`, означающее, что учетные данные службы согласуются.|  
   
 ## <a name="algorithmsuite-attribute"></a>Атрибут algorithmSuite  
@@ -128,7 +130,7 @@ ms.locfileid: "73738979"
 |-------------|-----------------|  
 |[\<security>](security-of-wsfederationhttpbinding.md)|Определяет параметры безопасности для привязки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>

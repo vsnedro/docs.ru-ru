@@ -2,14 +2,15 @@
 title: <msmqTransportSecurity>
 ms.date: 03/30/2017
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-ms.openlocfilehash: 5899c609b3cf52c4a275ba6fb10c5826fcf37f1e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9d28f3f08e9c3984c055567df03f2839709a1522
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153013"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204649"
 ---
 # \<msmqTransportSecurity>
+
 Задает параметры безопасности транспорта MSMQ для пользовательской привязки.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,11 +32,12 @@ ms.locfileid: "79153013"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`msmqAuthenticationMode`|Задает способ проверки подлинности сообщения транспортом MSMQ. Если задано значение `None`, атрибуту `msmqProtectionLevel` также должно быть присвоено значение `None`.<br /><br /> Допустимые значения.<br /><br /> -None — без проверки подлинности.<br />— Windows: механизм проверки подлинности использует Active Directory, чтобы получить сертификат X. 509 для идентификатора безопасности, связанного с сообщением. Затем это используется для проверки ACL очереди, чтобы убедиться в наличии у пользователя разрешений для записи в очередь.<br />-Certificate: канал получает сертификат из хранилища сертификатов.<br /><br /> Значение по умолчанию - Windows. Это атрибут типа <xref:System.ServiceModel.MsmqAuthenticationMode>.|  
 |`msmqEncryptionAlgorithm`|Задает алгоритм, который будет использоваться для шифрования сообщений при их передаче между диспетчерами очередей сообщений. Допустимые значения.<br /><br /> - RC4Stream<br />— AES<br /><br /> Значение по умолчанию - RC4Stream. Это атрибут типа <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.|  
@@ -43,6 +45,7 @@ ms.locfileid: "79153013"
 |`msmqSecureHashAlgorithm`|Задает алгоритм, который должен использоваться при вычислении хэш-кода как части сигнатур. Допустимые значения.<br /><br /> -MD5<br />-SHA1<br />-SHA256<br />-SHA512<br /><br /> Значение по умолчанию - SHA1. Это атрибут типа <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.<br>Из-за проблем с MD5 и SHA1 Корпорация Майкрософт рекомендует использовать SHA256 или более высокий уровень.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,10 +55,11 @@ ms.locfileid: "79153013"
 |[\<msmqIntegration>](msmqintegration.md)|Задает параметры, необходимые для взаимодействия с отправителем или получателем очереди сообщений (MSMQ).|  
 |[\<msmqTransport>](msmqtransport.md)|Задает свойства обмена данными в очереди для службы Windows Communication Foundation (WCF), использующей собственный протокол MSMQ.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Дополнительные сведения о безопасности транспорта см. в разделе [Безопасность транспорта](../../../wcf/feature-details/transport-security.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>

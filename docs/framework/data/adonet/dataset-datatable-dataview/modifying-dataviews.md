@@ -5,19 +5,20 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
-ms.openlocfilehash: 3e811410ea9fdd4be0cbd84b895483f69f58b0d0
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 8e3a3f92fe8ecc94a041fbcb1540bae18a41dbef
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786054"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203687"
 ---
 # <a name="modifying-dataviews"></a>Изменение объектов DataView
+
 Объект <xref:System.Data.DataView> можно использовать, чтобы добавлять, удалять или изменять строки данных в базовой таблице. Возможность использования **DataView** для изменения данных в базовой таблице контролируется путем установки одного из трех логических свойств **DataView**. А именно: <xref:System.Data.DataView.AllowNew%2A>, <xref:System.Data.DataView.AllowEdit%2A> и <xref:System.Data.DataView.AllowDelete%2A>. По умолчанию для них задано **значение true** .  
   
- Если **AllowNew** имеет **значение true**, <xref:System.Data.DataView.AddNew%2A> можно использовать метод объекта **DataView** для создания нового <xref:System.Data.DataRowView>объекта. Обратите внимание, что новая строка фактически не добавляется в <xref:System.Data.DataTable> базовую <xref:System.Data.DataRowView.EndEdit%2A> строку до тех пор, пока не будет вызван метод **DataRowView** . При вызове метода DataRowView новая строка отбрасывается. <xref:System.Data.DataRowView.CancelEdit%2A> Обратите внимание, что в каждый момент времени можно изменять только один **DataRowView** . При вызове метода **AddNew** или **BeginEdit** для **DataRowView** в случае существования ожидающей строки **EndEdit** вызывается неявно для ожидающей строки. При вызове **EndEdit** изменения применяются к базовой **таблице** данных и затем могут быть зафиксированы или отклонены с помощью методов **AcceptChanges** или **RejectChanges** объекта **DataTable**, **DataSet**или  **Объект DataRow** . Если **AllowNew** имеет **значение false**, то при вызове метода **AddNew** объекта **DataRowView**выдается исключение.  
+ Если **AllowNew** имеет **значение true**, можно использовать <xref:System.Data.DataView.AddNew%2A> метод объекта **DataView** для создания нового объекта <xref:System.Data.DataRowView> . Обратите внимание, что новая строка фактически не добавляется в базовую строку <xref:System.Data.DataTable> до тех пор, пока <xref:System.Data.DataRowView.EndEdit%2A> не будет вызван метод **DataRowView** . При <xref:System.Data.DataRowView.CancelEdit%2A> вызове метода **DataRowView** новая строка отбрасывается. Обратите внимание, что в каждый момент времени можно изменять только один **DataRowView** . При вызове метода **AddNew** или **BeginEdit** для **DataRowView** в случае существования ожидающей строки **EndEdit** вызывается неявно для ожидающей строки. При вызове **EndEdit** изменения применяются к базовой **таблице** данных и затем могут быть зафиксированы или отклонены с помощью методов **AcceptChanges** или **RejectChanges** объекта **DataTable**, **DataSet**или **DataRow** . Если **AllowNew** имеет **значение false**, то при вызове метода **AddNew** объекта **DataRowView**выдается исключение.  
   
- Если **AllowEdit** имеет **значение true**, можно изменить содержимое **DataRow** через **DataRowView**. Вы можете подтвердить изменения в базовой строке с помощью **DataRowView. EndEdit** или отклонить изменения с помощью **DataRowView. CancelEdit**. Отметим, что одновременно можно изменять только одну строку. При вызове методов **AddNew** или **BeginEdit** для **DataRowView** при наличии ожидающей строки **EndEdit** вызывается неявно для ожидающей строки. При вызове **EndEdit** предлагаемые изменения помещаются в **текущую** версию строки базового объекта **DataRow** и затем могут быть зафиксированы или отклонены с помощью методов **AcceptChanges** или **RejectChanges** класса  **Объект DataTable**, **DataSet**или **DataRow** . Если **AllowEdit** имеет **значение false**, при попытке изменить значение в **объекте DataView**возникает исключение.  
+ Если **AllowEdit** имеет **значение true**, можно изменить содержимое **DataRow** через **DataRowView**. Вы можете подтвердить изменения в базовой строке с помощью **DataRowView. EndEdit** или отклонить изменения с помощью **DataRowView. CancelEdit**. Отметим, что одновременно можно изменять только одну строку. При вызове методов **AddNew** или **BeginEdit** для **DataRowView** при наличии ожидающей строки **EndEdit** вызывается неявно для ожидающей строки. При вызове **EndEdit** предлагаемые изменения помещаются в **текущую** версию строки базового объекта **DataRow** и затем могут быть зафиксированы или отклонены с помощью методов **AcceptChanges** или **RejectChanges** объекта **DataTable**, **DataSet**или **DataRow** . Если **AllowEdit** имеет **значение false**, при попытке изменить значение в **объекте DataView**возникает исключение.  
   
  При редактировании существующего **DataRowView** события базовой **таблицы DataTable** по-прежнему будут создаваться с предложенными изменениями. Обратите внимание, что при вызове **EndEdit** или **CancelEdit** в базовой **DataRow**ожидающие изменения будут применены или отменены независимо от того, вызывается ли **EndEdit** или **CancelEdit** в **DataRowView**.  
   
@@ -51,7 +52,7 @@ newDRV["CompanyName"] = "ABC Products";
 newDRV.EndEdit();  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.DataTable>
 - <xref:System.Data.DataView>

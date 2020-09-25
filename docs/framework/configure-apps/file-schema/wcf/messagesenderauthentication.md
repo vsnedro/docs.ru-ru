@@ -2,14 +2,15 @@
 title: <messageSenderAuthentication>
 ms.date: 03/30/2017
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
-ms.openlocfilehash: 035f3c95fc876f0d451e6b2146e754cfe0959a85
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e7888d01838312aa51397ca39133edb9318fac80
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546989"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204779"
 ---
 # \<messageSenderAuthentication>
+
 Задает параметры проверки подлинности для однорангового сертификата, используемого отправителем сообщения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ ms.locfileid: "90546989"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -43,6 +45,7 @@ ms.locfileid: "90546989"
 |`trustedStoreLocation`|Необязательное перечисление. Указывает расположение доверенного хранилища, в котором система безопасности WCF проверяет сертификат однорангового узла. Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.StoreLocation>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -51,10 +54,11 @@ ms.locfileid: "90546989"
 |-------------|-----------------|  
 |[\<peer>](peer-of-servicecredentials.md)|Задает текущие учетные данные для однорангового узла.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот элемент должен быть настроен, если выбрана проверка подлинности сообщения. Для выходных каналов каждое сообщение подписывается с помощью сертификата, предоставленного [\<certificate>](certificate-element.md) . Во всех сообщениях перед доставкой приложению проверяются учетные данные сообщения с помощью модуля проверки, заданного атрибутом `customCertificateValidatorType` этого элемента. Модуль проверки может принять или отклонить учетные данные.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>

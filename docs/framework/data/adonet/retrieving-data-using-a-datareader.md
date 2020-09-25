@@ -6,15 +6,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
-ms.openlocfilehash: 6e5161cc325bf0379bb9241b99c473c539ad1081
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 96cc6444b6e4dc2806abffd456d0c2f7533f0009
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286602"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204376"
 ---
 # <a name="retrieve-data-using-a-datareader"></a>Извлечение данных с помощью объекта DataReader
-Чтобы получить данные с помощью **DataReader**, создайте экземпляр объекта **Command** , а затем создайте объект **DataReader** , вызвав **Command. ExecuteReader** , чтобы получить строки из источника данных. **DataReader** предоставляет небуферизованный поток данных, позволяющий процедурной логике эффективно обрабатывать результаты из источника данных. **DataReader** является хорошим выбором при извлечении больших объемов данных, поскольку данные не кэшируются в памяти.
+
+Чтобы получить данные с помощью **DataReader**, создайте экземпляр объекта **Command** , а затем создайте объект **DataReader** , вызвав **Command.Exeкутереадер** для получения строк из источника данных. **DataReader** предоставляет небуферизованный поток данных, позволяющий процедурной логике эффективно обрабатывать результаты из источника данных. **DataReader** является хорошим выбором при извлечении больших объемов данных, поскольку данные не кэшируются в памяти.
 
 В следующем примере показано использование **DataReader**, где `reader` представляет допустимый DataReader и `command` представляет допустимый объект команды.  
 
@@ -34,6 +35,7 @@ reader = command.ExecuteReader()
  [!code-vb[DataWorks SqlClient.HasRows#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.HasRows/VB/source.vb#1)]  
   
 ## <a name="closing-the-datareader"></a>Закрытие DataReader  
+
  Всегда вызывайте метод **Close** после завершения использования объекта **DataReader** .  
   
  Если **команда** содержит выходные параметры или возвращаемые значения, эти значения недоступны до закрытия **DataReader** .  
@@ -44,18 +46,21 @@ reader = command.ExecuteReader()
 > Не вызывайте **Close** или **Dispose** для **соединения**, **DataReader**или любого другого управляемого объекта в методе **Finalize** вашего класса. В методе завершения следует только освобождать неуправляемые ресурсы, которыми ваш класс непосредственно владеет. Если ваш класс не владеет какими-либо неуправляемыми ресурсами, не включайте метод **Finalize** в определение класса. Дополнительные сведения см. в разделе [сборка мусора](../../../standard/garbage-collection/index.md).  
   
 ## <a name="retrieving-multiple-result-sets-using-nextresult"></a>Получение нескольких результирующих наборов с помощью Некстресулт  
+
  Если **DataReader** возвращает несколько результирующих наборов, вызовите метод **некстресулт** для последовательного прохода по результирующим наборам. В следующем примере показан объект <xref:System.Data.SqlClient.SqlDataReader>, обрабатывающий результаты двух инструкций SELECT с помощью метода <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.  
   
  [!code-csharp[DataWorks SqlClient.NextResult#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.NextResult/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.NextResult#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.NextResult/VB/source.vb#1)]  
   
 ## <a name="getting-schema-information-from-the-datareader"></a>Получение сведений о схеме из DataReader  
+
  Когда **DataReader** открыт, можно получить сведения о схеме текущего результирующего набора с помощью метода **GetSchemaTable** . **GetSchemaTable** возвращает <xref:System.Data.DataTable> объект, заполненный строками и столбцами, содержащими сведения о схеме для текущего результирующего набора. Объект **DataTable** содержит по одной строке для каждого столбца результирующего набора. Каждый столбец таблицы схемы сопоставляется со свойством столбцов, возвращаемых строками результирующего набора, где **ColumnName** является именем свойства, а значение столбца — значением свойства. В следующем примере записывается информация о схеме для **DataReader**.  
   
  [!code-csharp[DataWorks SqlClient.GetSchemaTable#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.GetSchemaTable/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.GetSchemaTable#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.GetSchemaTable/VB/source.vb#1)]  
   
 ## <a name="working-with-ole-db-chapters"></a>Работа с OLE DB главами  
+
  Иерархические наборы строк или главы (тип OLE DB **DBTYPE_HCHAPTER**, тип ADO **адчаптер**) можно получить с помощью <xref:System.Data.OleDb.OleDbDataReader> . Если запрос, включающий главу, возвращается в виде объекта **DataReader**, то эта глава возвращается в виде столбца в объекте **DataReader** и предоставляется как объект **DataReader** .  
   
  **Набор данных** ADO.NET также можно использовать для представления иерархических наборов строк с помощью связей типа «родители-потомки» между таблицами. Дополнительные сведения см. в разделе [наборы данных, DataTables и DataSets](./dataset-datatable-dataview/index.md).  
@@ -135,6 +140,7 @@ using (OleDbConnection connection = new OleDbConnection(
 ```  
   
 ## <a name="returning-results-with-oracle-ref-cursors"></a>Возврат результатов с КУРСОРами Oracle REF  
+
  Поставщик данных .NET Framework для Oracle поддерживает использование параметров Oracle REF CURSOR для возвращения результата запроса. Параметр Oracle REF CURSOR возвращается в виде объекта <xref:System.Data.OracleClient.OracleDataReader>.  
   
  <xref:System.Data.OracleClient.OracleDataReader>Объект, представляющий курсор Oracle ref, можно получить с помощью <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> метода. Можно также указать <xref:System.Data.OracleClient.OracleCommand> , возвращающий один или несколько курсоров Oracle ref в качестве **SelectCommand** для, <xref:System.Data.OracleClient.OracleDataAdapter> используемого для заполнения <xref:System.Data.DataSet> .  
@@ -258,7 +264,7 @@ adapter.Fill(ds);
 > [!NOTE]
 > Чтобы избежать **переполнения**, рекомендуется также выполнять преобразование из типа номера Oracle в допустимый тип .NET Framework перед сохранением значения в <xref:System.Data.DataRow> . Можно использовать событие, <xref:System.Data.Common.DataAdapter.FillError> чтобы определить, произошло ли исключение **OverflowException** . Дополнительные сведения о <xref:System.Data.Common.DataAdapter.FillError> событии см. в разделе [Обработка событий DataAdapter](handling-dataadapter-events.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)
 - [Команды и параметры](commands-and-parameters.md)

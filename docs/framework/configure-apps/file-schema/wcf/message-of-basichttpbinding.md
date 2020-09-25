@@ -2,14 +2,15 @@
 title: <message> из <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.openlocfilehash: 748a734af8cf6767ce47cfffce9aec3ef627cb44
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8b1e889efc53d0132368111037399ea8872008b1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736741"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204870"
 ---
 # <a name="message-of-basichttpbinding"></a>\<message> из \<basicHttpBinding>
+
 Определяет параметры безопасности на уровне сообщений для [\<basicHttpBinding>](basichttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,14 +29,15 @@ ms.locfileid: "73736741"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Этот атрибут имеет тип <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, который задает алгоритмы и размеры ключей. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> Значение по умолчанию — `Basic256`.|  
-|clientCredentialType|Задает тип учетных данных, используемых при проверке подлинности клиента с помощью безопасности на уровне сообщений. Значение по умолчанию — `UserName`.|  
+|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Этот атрибут имеет тип <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, который задает алгоритмы и размеры ключей. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> Значение по умолчанию — `Basic256`.|  
+|clientCredentialType|Задает тип учетных данных, используемых при проверке подлинности клиента с помощью безопасности на уровне сообщений. Значение по умолчанию — `UserName`.|  
   
 ## <a name="clientcredentialtype-attribute"></a>Атрибут clientCredentialType  
   
@@ -45,6 +47,7 @@ ms.locfileid: "73736741"
 |Сертификат|Требует, чтобы при подключении к серверу проверка подлинности клиента проводилась с помощью сертификата. Учетные данные клиента в этом случае необходимо указать с помощью [\<clientCredentials>](clientcredentials.md) и [\<clientCertificate>](clientcertificate-of-servicecredentials.md) . Кроме того, при использовании режима безопасности сообщений клиенту должен быть предоставлен сертификат службы. Учетные данные службы в этом случае необходимо указать с помощью <xref:System.ServiceModel.Description.ClientCredentials> класса или `ClientCredentials` элемента Behavior и указав сертификат службы с помощью [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) .|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -54,6 +57,7 @@ ms.locfileid: "73736741"
 |[\<security>](security-of-basichttpbinding.md)|Определяет возможности безопасности для [\<basicHttpBinding>](basichttpbinding.md) .|  
   
 ## <a name="example"></a>Пример  
+
  В образце демонстрируется реализация приложения, которое использует basicHttpBinding и безопасность сообщений. В следующем примере конфигурации для службы в определении конечной точки задаются привязка basicHttpBinding и ссылки на конфигурацию привязки с именем `Binding1`. Сертификат, используемый службой для своей проверки подлинности при подключении к клиенту, установлен в разделе `behaviors` файла конфигурации в элементе `serviceCredentials`. Режим проверки, применяемый к сертификату, который клиент использует для своей проверки подлинности при подключении к службе, также установлен в разделе `behaviors` в элементе `clientCertificate`.  
   
  Та же привязка и данные безопасности задаются в файле конфигурации клиента.  
@@ -120,7 +124,7 @@ ms.locfileid: "73736741"
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.BasicHttpMessageSecurity>
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>

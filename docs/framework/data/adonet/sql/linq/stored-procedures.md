@@ -2,29 +2,31 @@
 title: Хранимые процедуры
 ms.date: 03/30/2017
 ms.assetid: 4d23dd7a-a85f-44ff-a717-af7d0950c0fc
-ms.openlocfilehash: 80ea105eef33ebb2a0e52d91a631258400ea3dff
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 57420d95ec27af3b572940202fb6bc288c6888da
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792488"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203518"
 ---
 # <a name="stored-procedures"></a>Хранимые процедуры
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]использует методы в объектной модели для представления хранимых процедур в базе данных. Чтобы задать методы в качестве хранимых процедур, следует применить атрибут <xref:System.Data.Linq.Mapping.FunctionAttribute> и, где необходимо, атрибут <xref:System.Data.Linq.Mapping.ParameterAttribute>. Дополнительные сведения см. [в разделе Объектная модель LINQ to SQL](the-linq-to-sql-object-model.md).  
+
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] использует методы в объектной модели для представления хранимых процедур в базе данных. Чтобы задать методы в качестве хранимых процедур, следует применить атрибут <xref:System.Data.Linq.Mapping.FunctionAttribute> и, где необходимо, атрибут <xref:System.Data.Linq.Mapping.ParameterAttribute>. Дополнительные сведения см. [в разделе Объектная модель LINQ to SQL](the-linq-to-sql-object-model.md).  
   
  Разработчики, использующие Visual Studio, обычно используют реляционный конструктор объектов для отображения хранимых процедур. В темах данного раздела показано формирование и вызов этих методов в приложении при самостоятельном написании кода.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Возврат наборов строк](how-to-return-rowsets.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Практическое руководство. Как возвращать наборы строк](how-to-return-rowsets.md)  
  Содержит сведения о возвращении строк данных и об использовании входного параметра.  
   
- [Практическое руководство. Использование хранимых процедур, принимающих параметры](how-to-use-stored-procedures-that-take-parameters.md)  
+ [Практическое руководство. Как использовать хранимые процедуры, которые принимают параметры](how-to-use-stored-procedures-that-take-parameters.md)  
  Содержит сведения об использовании входных и выходных параметров.  
   
- [Практическое руководство. Использование хранимых процедур, сопоставленных с несколькими результирующими формами](how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md)  
+ [Практическое руководство. Как использовать хранимые процедуры, сопоставленные с несколькими результирующими формами](how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md)  
  Содержит сведения о предоставлении возвратов нескольких фигур в одной хранимой процедуре.  
   
- [Практическое руководство. Использование хранимых процедур, сопоставленных с последовательной фигурой результатов](how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md)  
+ [Практическое руководство. Как использовать хранимые процедуры, сопоставленные с последовательными результирующими формами](how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md)  
  Содержит сведения о предоставлении нескольких фигур при наличии известной возвращаемой последовательности.  
   
  [Настройка операций за счет хранимых процедур](customizing-operations-by-using-stored-procedures.md)  
@@ -33,12 +35,13 @@ ms.locfileid: "70792488"
  [Настройка операций за счет исключительного использования хранимых процедур](customizing-operations-by-using-stored-procedures-exclusively.md)  
  Содержит описание использования только хранимых процедур для выполнения операций вставки, обновления и удаления.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Руководство по программированию](programming-guide.md)  
  Содержит сведения о создании и использовании объектной модели [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Пошаговое руководство: Использование только хранимых процедур (Visual Basic)](walkthrough-using-only-stored-procedures-visual-basic.md)  
+ [Пошаговое руководство. Применение только хранимых процедур (Visual Basic)](walkthrough-using-only-stored-procedures-visual-basic.md)  
  Содержит процедуры, в которых показано использование хранимых процедур в Visual Basic.  
   
- [Пошаговое руководство: Использование только хранимых процедурC#()](walkthrough-using-only-stored-procedures-csharp.md)  
+ [Пошаговое руководство. Применение только хранимых процедур (C#)](walkthrough-using-only-stored-procedures-csharp.md)  
  Содержит процедуры, в которых показано использование хранимых процедур в C#.

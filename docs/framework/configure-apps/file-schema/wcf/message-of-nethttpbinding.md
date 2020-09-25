@@ -2,14 +2,15 @@
 title: <message> из <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
-ms.openlocfilehash: 62b1793d18ddc8edc1f55b02137c4e0a9f7327d2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b37d6b1bd8f5372c230acbc2ada299415b2e40b3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738957"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204857"
 ---
 # <a name="message-of-nethttpbinding"></a>\<message> из \<netHttpBinding>
+
 Определяет параметры безопасности на уровне сообщений для [\<netHttpBinding>](nethttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,14 +29,15 @@ ms.locfileid: "73738957"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Этот атрибут имеет тип <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, который задает алгоритмы и размеры ключей. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> Значение по умолчанию — `Basic256`.|  
-|clientCredentialType|Задает тип учетных данных, используемых при проверке подлинности клиента с помощью безопасности на уровне сообщений. Значение по умолчанию — `UserName`.|  
+|algorithmSuite|Задает алгоритмы шифрования сообщений и ключей. Этот атрибут имеет тип <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>, который задает алгоритмы и размеры ключей. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> Значение по умолчанию — `Basic256`.|  
+|clientCredentialType|Задает тип учетных данных, используемых при проверке подлинности клиента с помощью безопасности на уровне сообщений. Значение по умолчанию — `UserName`.|  
   
 ## <a name="clientcredentialtype-attribute"></a>Атрибут clientCredentialType  
   
@@ -45,6 +47,7 @@ ms.locfileid: "73738957"
 |Сертификат|Требует, чтобы при подключении к серверу проверка подлинности клиента проводилась с помощью сертификата. Учетные данные клиента в этом случае необходимо указать с помощью <`clientCredentials`> и <`clientCertificate`>. Кроме того, при использовании режима безопасности сообщений клиенту должен быть предоставлен сертификат службы. Учетные данные службы в этом случае необходимо указать с помощью <xref:System.ServiceModel.Description.ClientCredentials> класса или `ClientCredentials` элемента Behavior, указав сертификат службы с помощью \<serviceCertificate> элемента serviceCredentials.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -54,6 +57,7 @@ ms.locfileid: "73738957"
 |<`security`> элемент <`netHttpBinding`>|Определяет возможности безопасности для `netHttpBinding` элемента> <.|  
   
 ## <a name="example"></a>Пример  
+
  В образце демонстрируется реализация приложения, которое использует basicHttpBinding и безопасность сообщений. В следующем примере конфигурации для службы в определении конечной точки задаются привязка basicHttpBinding и ссылки на конфигурацию привязки с именем `Binding1`. Сертификат, используемый службой для своей проверки подлинности при подключении к клиенту, установлен в разделе `behaviors` файла конфигурации в элементе `serviceCredentials`. Режим проверки, применяемый к сертификату, который клиент использует для своей проверки подлинности при подключении к службе, также установлен в разделе `behaviors` в элементе `clientCertificate`.  
   
  Та же привязка и данные безопасности задаются в файле конфигурации клиента.  
@@ -120,7 +124,7 @@ ms.locfileid: "73738957"
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Защита служб и клиентов](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Привязки](../../../wcf/bindings.md)

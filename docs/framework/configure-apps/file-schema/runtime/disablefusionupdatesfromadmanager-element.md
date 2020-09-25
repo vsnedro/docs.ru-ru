@@ -5,14 +5,15 @@ helpviewer_keywords:
 - disableFusionUpdatesFromADManager element
 - <disableFusionUpdatesFromADManager> element
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
-ms.openlocfilehash: 4e7375fddaa98b45766b29d911d555f773edcafa
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c3971379b358ae16fc463df2b8d6288cf8881391
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73117442"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91205039"
 ---
 # <a name="disablefusionupdatesfromadmanager-element"></a>Элемент \<disableFusionUpdatesFromADManager>
+
 Указывает, отключено ли поведение по умолчанию, которое разрешает хост-приложению среды выполнения переопределять параметры конфигурации для домена приложения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,11 +27,12 @@ ms.locfileid: "73117442"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |Включено|Обязательный атрибут.<br /><br /> Указывает, отключена ли возможность по умолчанию переопределять параметры Fusion.|  
   
@@ -42,6 +44,7 @@ ms.locfileid: "73117442"
 |1|Отключить возможность переопределения параметров Fusion. Это позволяет вернуться к поведению более ранних версий .NET Framework.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -51,7 +54,8 @@ ms.locfileid: "73117442"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Начиная с .NET Framework 4, поведение по умолчанию заключается в том, чтобы разрешить <xref:System.AppDomainManager> объекту переопределять параметры конфигурации с помощью <xref:System.AppDomainSetup.ConfigurationFile%2A> свойства или <xref:System.AppDomainSetup.SetConfigurationBytes%2A> метода <xref:System.AppDomainSetup> объекта, который передается в вашу реализацию <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> метода, в подкласс <xref:System.AppDomainManager> . Для домена приложения по умолчанию измененные параметры переопределяют параметры, заданные в файле конфигурации приложения. Для других доменов приложений они переопределяют параметры конфигурации, переданные в <xref:System.AppDomainManager.CreateDomain%2A?displayProperty=nameWithType> <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> метод или.  
   
  Можно либо передать новые сведения о конфигурации, либо передать значение null ( `Nothing` в Visual Basic), чтобы исключить переданные конфигурации.  
@@ -63,6 +67,7 @@ ms.locfileid: "73117442"
  В качестве альтернативы использованию `<disableFusionUpdatesFromADManager>` элемента можно отключить поведение по умолчанию, создав параметр реестра или задав переменную среды. В реестре создайте значение DWORD с именем `COMPLUS_disableFusionUpdatesFromADManager` в разделе `HKCU\Software\Microsoft\.NETFramework` или `HKLM\Software\Microsoft\.NETFramework` и установите значение 1. В командной строке задайте для переменной среды значение `COMPLUS_disableFusionUpdatesFromADManager` 1.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как отключить возможность переопределения параметров Fusion с помощью `<disableFusionUpdatesFromADManager>` элемента.  
   
 ```xml  
@@ -73,7 +78,7 @@ ms.locfileid: "73117442"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

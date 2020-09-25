@@ -2,14 +2,15 @@
 title: <localIssuer>
 ms.date: 03/30/2017
 ms.assetid: 26bdd0df-0e7d-4b9e-bbeb-f28c53769385
-ms.openlocfilehash: 055b7b49d1f775d49ac20de18c18ca0433716a23
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e08d2c0b42cfd8e302223915f0256f8cb2d1468b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397867"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204961"
 ---
 # \<localIssuer>
+
 Указывает адрес и привязку локального издателя, используемого для получения маркера безопасности.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,11 +31,12 @@ ms.locfileid: "70397867"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описываются атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |address|Обязательная строка. Указывает универсальный код ресурса (URI) локального издателя.|  
 |binding|Необязательная строка. Одна из привязок, предоставляемых системой. Список см. в разделе [привязки, предоставляемые системой](../../../wcf/system-provided-bindings.md).|  
@@ -53,10 +55,12 @@ ms.locfileid: "70397867"
 |-------------|-----------------|  
 |[\<issuedToken>](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  При получении маркера от службы маркеров безопасности (STS) в клиентском приложении должны быть заданы адрес и привязка для установления соединения с STS. Если <xref:System.ServiceModel.WSFederationHttpBinding> компонент не предоставляет URL-адрес для службы маркеров безопасности или если адресом издателя Федеративной привязки является `http://schemas.microsoft.com/2005/12/ServiceModel/Addressing/Anonymous` или `null` , канал Windows Communication Foundation клиента (WCF) использует значения, заданные параметром, `address` и, `binding` чтобы взаимодействовать с STS для получения выданного маркера. Дополнительные сведения о настройке локального издателя см. в разделе [как настроить локальный издатель](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере устанавливаются атрибуты `address`, `binding` и `bindingConfiguration` элемента `localIssuer`.  
   
 ```xml  
@@ -78,7 +82,7 @@ ms.locfileid: "70397867"
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement>

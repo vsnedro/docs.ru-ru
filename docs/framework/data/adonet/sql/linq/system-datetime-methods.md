@@ -2,17 +2,19 @@
 title: Методы System.DateTime
 ms.date: 03/30/2017
 ms.assetid: 4f80700c-e83f-4ab6-af0f-1c9a606e1133
-ms.openlocfilehash: fba695975645ecb86a06b17f0664fdf37f8866a0
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: e3bffb1f47c19ccf7ea59151cd3545a15d59f1f2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792419"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203492"
 ---
 # <a name="systemdatetime-methods"></a>Методы System.DateTime
+
 Следующие методы, операторы и свойства с поддержкой LINQ to SQL доступны для использования в запросах LINQ to SQL. Если метод, оператор или свойство не поддерживаются, LINQ to SQL не может преобразовать этот элемент для выполнения в SQL Server. Эти элементы можно использовать в коде, но их значения необходимо вычислить перед преобразованием запроса в Transact-SQL или после получения результатов из базы данных.  
   
 ## <a name="supported-systemdatetime-members"></a>Поддерживаемые элементы System.DateTime  
+
  После сопоставления в модели объектов или во внешнем файле сопоставления LINQ to SQL позволяет использовать следующие элементы <xref:System.DateTime?displayProperty=nameWithType> в запросах LINQ to SQL.  
   
 |Поддерживаемые методы <xref:System.DateTime>|Поддерживаемые операторы <xref:System.DateTime>|Поддерживаемые свойства <xref:System.DateTime>|  
@@ -32,6 +34,7 @@ ms.locfileid: "70792419"
 |||<xref:System.DateTime.Year%2A>|  
   
 ## <a name="members-not-supported-by-linq-to-sql"></a>Элементы, не поддерживаемые в LINQ to SQL  
+
  Следующие элементы не поддерживаются в запросах LINQ to SQL.  
   
 |||  
@@ -47,6 +50,7 @@ ms.locfileid: "70792419"
 |<xref:System.DateTime.FromOADate%2A>|<xref:System.DateTime.GetDateTimeFormats%2A>|  
   
 ## <a name="method-translation-example"></a>Пример преобразования методов  
+
  Все методы, поддерживаемые LINQ to SQL, преобразуются в Transact-SQL перед отправкой в SQL Server. Например, рассмотрим следующий шаблон.  
   
  `(dateTime1 – dateTime2).{Days, Hours, Milliseconds, Minutes, Months, Seconds, Years}`  
@@ -56,6 +60,7 @@ ms.locfileid: "70792419"
  `DATEDIFF({DatePart}, @dateTime1, @dateTime2)`  
   
 ## <a name="sqlmethods-date-and-time-methods"></a>Методы даты и времени класса SQLMethods  
+
  Помимо методов, содержащихся в структуре <xref:System.DateTime>, LINQ to SQL поддерживает методы для работы с датой и временем из класса <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType>, перечисленные в следующей таблице.  
   
 ||||  
@@ -64,7 +69,7 @@ ms.locfileid: "70792419"
 |<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond%2A>|  
 |<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth%2A>|<xref:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear%2A>|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные принципы запросов](query-concepts.md)
 - [Создание модели объектов](creating-the-object-model.md)

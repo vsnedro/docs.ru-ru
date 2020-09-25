@@ -2,14 +2,15 @@
 title: <mtomMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: 7865d171-cd1e-430a-8421-39cc13541d1b
-ms.openlocfilehash: cffde19c8fd06836eaaedb5c4fc8687b97ae0afe
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 76b83381849b8519c1b758ef52c6d5c3f682f9b7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556184"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204636"
 ---
 # \<mtomMessageEncoding>
+
 Определяет метод шифрования и управления версиями сообщений для сообщений, использующих механизм оптимизации передачи сообщений SOAP (MTOM).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ ms.locfileid: "90556184"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -54,7 +56,8 @@ ms.locfileid: "90556184"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Кодирование — это процесс преобразования сообщения в последовательность байтов. Декодирование представляет собой обратный процесс. В Windows Communication Foundation (WCF) имеется три типа кодирования для сообщений SOAP: Text, Binary и MTOM.  
   
  Элемент `MtomMessageEncoding` указывает кодировку символов, управление версиями сообщений и другие параметры для сообщений, использующих кодировку MTOM. MTOM - это эффективный способ передачи двоичных данных в сообщениях WCF. Кодировщик MTOM пытается сохранить баланс между эффективностью и совместимостью. При кодировке MTOM большая часть XML-кода передается в текстовой форме, однако выполняется оптимизация больших блоков двоичных данных путем передачи их в исходном виде, без преобразования их в базовый формат base64.  
@@ -68,7 +71,7 @@ ms.locfileid: "90556184"
                      textEncoding="utf-8" />
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

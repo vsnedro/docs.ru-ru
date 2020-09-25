@@ -3,20 +3,22 @@ title: Команды и параметры
 description: Узнайте, как использовать объекты команд для каждого поставщика данных .NET Framework для выполнения команд и возврата результатов из источника данных.
 ms.date: 03/30/2017
 ms.assetid: b623f810-d871-49a5-b0f5-078cc3c34db6
-ms.openlocfilehash: c0baec4d6c3984cb50178c3aa7f9ed3878055bb6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: fb7b86dc3c826805e0e1dcec4764be2e484ec40b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287146"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203830"
 ---
 # <a name="commands-and-parameters"></a>Команды и параметры
+
 После установки соединения с источником данных при помощи объекта <xref:System.Data.Common.DbCommand> можно выполнять команды и возвращать результаты из источника данных. Команду можно создать с помощью одного из используемых конструкторов команд для поставщика данных .NET Framework. Конструкторы могут принимать необязательные аргументы, например инструкцию SQL для выполнения в источнике данных, объект <xref:System.Data.Common.DbConnection> или объект <xref:System.Data.Common.DbTransaction>. Эти объекты также можно настроить как свойства команды. При помощи метода <xref:System.Data.Common.DbConnection.CreateCommand%2A> объекта `DbConnection` также можно создать команду для конкретного соединения. Инструкцию SQL, выполняемую командой, можно настроить с помощью свойства <xref:System.Data.Common.DbCommand.CommandText%2A>.  
   
  У каждого поставщика данных .NET Framework, имеющегося в платформе .NET Framework, есть объект `Command`. Поставщик данных .NET Framework для OLE DB содержит объект <xref:System.Data.OleDb.OleDbCommand>, поставщик данных .NET Framework для SQL Server - объект <xref:System.Data.SqlClient.SqlCommand>, поставщик данных .NET Framework для ODBC - объект <xref:System.Data.Odbc.OdbcCommand>, а поставщик данных .NET Framework для Oracle - объект <xref:System.Data.OracleClient.OracleCommand>.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Исполнение команды](executing-a-command.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Выполнение команды](executing-a-command.md)  
  Описание объекта ADO.NET `Command` и его использования для выполнения запросов и команд в источнике данных.  
   
  [Настройка параметров и типы данных параметров](configuring-parameters-and-parameter-data-types.md)  
@@ -31,7 +33,7 @@ ms.locfileid: "84287146"
  [Использование команд для изменения данных](using-commands-to-modify-data.md)  
  Описывается использование поставщика данных для выполнения хранимых процедур или инструкций языка описания данных DDL.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)
 - [Наборы данных, таблицы данных и объекты DataView](./dataset-datatable-dataview/index.md)

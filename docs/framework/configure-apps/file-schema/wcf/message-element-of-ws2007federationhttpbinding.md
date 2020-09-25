@@ -2,14 +2,15 @@
 title: Элемент <message> для <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 52cd941d-e230-4c82-8b29-333a7d20eca8
-ms.openlocfilehash: dde763687dbc62d6fb342a21a4c614208f28d7e8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d71bce5e94568bdad3c52226fa1029a1dd87bfd9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73739001"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204922"
 ---
 # <a name="message-element-of-ws2007federationhttpbinding"></a>Элемент \<message> для \<ws2007FederationHttpBinding>
+
 Определяет параметры безопасности на уровне сообщений для [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) элемента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -81,6 +82,7 @@ ms.locfileid: "73739001"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -89,7 +91,7 @@ ms.locfileid: "73739001"
 |---------------|-----------------|  
 |`algorithmSuite`|Необязательный элемент. Задает алгоритмы шифрования сообщений, сигнатуры и ключей. Алгоритмы и размеры ключей определяются классом <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> В следующей таблице приводятся возможные значения. Значение по умолчанию - Basic256.|  
 |`issuedKeyType`|Задает тип выдаваемого ключа. Допустимые значения.<br /><br /> -SymmetricKey<br />-PublicKey<br />-Беареркэй<br /><br /> Значение по умолчанию - SymmetricKey. Это атрибут типа <xref:System.IdentityModel.Tokens.SecurityKeyType>.|  
-|`issuedTokenType`|Универсальный код ресурса (URI), который задает тип выдаваемых маркеров. Значение по умолчанию — `null`.|  
+|`issuedTokenType`|Универсальный код ресурса (URI), который задает тип выдаваемых маркеров. Значение по умолчанию — `null`.|  
 |`negotiateServiceCredential`|Значение, которое определяет, должен ли проводиться обмен учетными данными службы в рамках процесса согласования, или эти данные доступны вне диапазона. Значением по умолчанию является `true`, означающее, что учетные данные службы согласуются.|  
   
 ## <a name="algorithmsuite-attribute"></a>Атрибут algorithmSuite  
@@ -128,7 +130,7 @@ ms.locfileid: "73739001"
 |-------------|-----------------|  
 |[\<security>](security-element-of-ws2007federationhttpbinding.md)|Определяет параметры безопасности для привязки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>

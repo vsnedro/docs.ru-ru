@@ -2,14 +2,15 @@
 title: <net.pipe>
 ms.date: 03/30/2017
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
-ms.openlocfilehash: dd984b2ab89060451b1b2d02c324e803766908ce
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d070b822cefeef3c281d5b0e47411f4c624dd83f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397718"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204610"
 ---
 # \<net.pipe>
+
 Задает параметры конфигурации для службы активации именованных каналов, которая управляет временем существования соединения для именованного канала, а также обрабатывает запросы на активацию, которые поступают по именованным каналам.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -42,14 +43,16 @@ ms.locfileid: "70397718"
 ```  
   
 ## <a name="type"></a>Type  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`maxPendingAccepts`|Целое число, которое определяет максимальное количество одновременных необработанных принимающих потоков в конечной точке для общей службы. Значение по умолчанию — 2|  
 |`maxPendingConnections`|Целое число, задающее максимальное количество соединений, которые могут ожидать распределения. Значение по умолчанию — 100.|  
@@ -67,6 +70,6 @@ ms.locfileid: "70397718"
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Содержит параметры конфигурации для процесса прослушивателя SMSvcHost.exe.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Activation.Configuration.NetPipeSection>

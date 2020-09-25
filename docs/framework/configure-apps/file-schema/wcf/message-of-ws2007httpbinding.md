@@ -2,14 +2,15 @@
 title: <message> из <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
-ms.openlocfilehash: 3396f74f76d790759f4c32de2907607486701b1a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 0979bd1c74061bb13a240bb46e1a37cd7ea1129c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738944"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204844"
 ---
 # <a name="message-of-ws2007httpbinding"></a>\<message> из \<ws2007HttpBinding>
+
 Определяет параметры безопасности на уровне сообщений для [\<ws2007HttpBinding>](ws2007httpbinding.md) элемента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -37,19 +38,21 @@ ms.locfileid: "73738944"
 ```  
   
 ## <a name="type"></a>Type  
+
  <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`algorithmSuite`|Задает алгоритмы шифрования сообщений и ключей. Алгоритмы и размеры ключей определяются классом <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>. Эти алгоритмы соответствуют алгоритмам, заданным в спецификации языка политики безопасности (WS-SecurityPolicy).<br /><br /> Значение по умолчанию - Basic256.|  
-|`clientCredentialType`|Необязательный параметр. Задает тип учетных данных, используемых при проверке подлинности клиента с помощью режима безопасности, может принимать значения `Message` или `TransportWithMessageCredentials`. См. значения перечисления в следующей таблице. По умолчанию используется Windows.<br /><br /> Это атрибут типа <xref:System.ServiceModel.MessageCredentialType>.|  
-|`establishSecurityContext`|Значение, которое определяет, будет ли защищенный канал устанавливать защищенную сессию. Защищенная сессия перед тем, как обмениваться сообщениями приложения, устанавливает маркер контекста безопасности (SCT). После установки этого маркера защищенный канал предлагает вышестоящим каналам интерфейс <xref:System.ServiceModel.Channels.ISession>. Дополнительные сведения об использовании безопасных сеансов см. [в разделе как создать безопасный сеанс](../../../wcf/feature-details/how-to-create-a-secure-session.md).<br /><br /> Значение по умолчанию — `true`.|  
-|`negotiateServiceCredential`|Необязательный параметр. Значение, которое определяет, предоставляются учетные данные службы клиенту по внештатному каналу, или же клиент получает их от службы в процессе согласования. Подобное согласование происходит перед обычным обменом сообщениями.<br /><br /> Если `clientCredentialType` атрибут равен None, username или Certificate, установка этого атрибута `false` подразумевает, что сертификат службы доступен на клиенте с использованием аппаратного контроллера управления и что клиент должен указать сертификат службы (с помощью [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) ) в [\<serviceCredentials>](servicecredentials.md) поведении службы. Данный режим несовместим со стеками SOAP, которые реализуют WS-Trust и WS-SecureConversation.<br /><br /> Если атрибут `ClientCredentialType` имеет значение `Windows`, то установка для данного атрибута значения `false` задает проверку подлинности на основе Kerberos. Это означает, что клиент и служба должны относиться к одному домену Kerberos. Данный режим совместим со стеками SOAP, которые реализуют профиль маркера Kerberos (который определен в OASIS WSS TC), а также WS-Trust и WS-SecureConversation.<br /><br /> Когда данный атрибут равен `true`, то в этом случае выполняется согласование .NET SOAP, при котором обмен <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.Spnego%2A> производится посредством сообщений SOAP.<br /><br /> Значение по умолчанию — `true`.|  
+|`clientCredentialType`|Необязательный элемент. Задает тип учетных данных, используемых при проверке подлинности клиента с помощью режима безопасности, может принимать значения `Message` или `TransportWithMessageCredentials`. См. значения перечисления в следующей таблице. По умолчанию используется Windows.<br /><br /> Это атрибут типа <xref:System.ServiceModel.MessageCredentialType>.|  
+|`establishSecurityContext`|Значение, которое определяет, будет ли защищенный канал устанавливать защищенную сессию. Защищенная сессия перед тем, как обмениваться сообщениями приложения, устанавливает маркер контекста безопасности (SCT). После установки этого маркера защищенный канал предлагает вышестоящим каналам интерфейс <xref:System.ServiceModel.Channels.ISession>. Дополнительные сведения об использовании безопасных сеансов см. [в разделе как создать безопасный сеанс](../../../wcf/feature-details/how-to-create-a-secure-session.md).<br /><br /> Значение по умолчанию — `true`.|  
+|`negotiateServiceCredential`|Необязательный элемент. Значение, которое определяет, предоставляются учетные данные службы клиенту по внештатному каналу, или же клиент получает их от службы в процессе согласования. Подобное согласование происходит перед обычным обменом сообщениями.<br /><br /> Если `clientCredentialType` атрибут равен None, username или Certificate, установка этого атрибута `false` подразумевает, что сертификат службы доступен на клиенте с использованием аппаратного контроллера управления и что клиент должен указать сертификат службы (с помощью [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) ) в [\<serviceCredentials>](servicecredentials.md) поведении службы. Данный режим несовместим со стеками SOAP, которые реализуют WS-Trust и WS-SecureConversation.<br /><br /> Если атрибут `ClientCredentialType` имеет значение `Windows`, то установка для данного атрибута значения `false` задает проверку подлинности на основе Kerberos. Это означает, что клиент и служба должны относиться к одному домену Kerberos. Данный режим совместим со стеками SOAP, которые реализуют профиль маркера Kerberos (который определен в OASIS WSS TC), а также WS-Trust и WS-SecureConversation.<br /><br /> Когда данный атрибут равен `true`, то в этом случае выполняется согласование .NET SOAP, при котором обмен <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenTypes.Spnego%2A> производится посредством сообщений SOAP.<br /><br /> Значение по умолчанию — `true`.|  
   
 ## <a name="algorithmsuite-attribute"></a>Атрибут algorithmSuite  
   
@@ -83,6 +86,7 @@ ms.locfileid: "73738944"
 |`Windows`|Атрибут позволяет проводить обмен сообщениями SOAP, если выполнена проверка подлинности с помощью учетных данных `Windows`. Если атрибут `negotiateServiceCredential` имеет значение `true`, то происходит согласование SSPI, или используется Kerberos (совместимый стандарт).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -91,7 +95,7 @@ ms.locfileid: "73738944"
 |-------------|-----------------|  
 |[\<security>](security-of-ws2007httpbinding.md)|Определяет параметры безопасности для [\<ws2007HttpBinding>](ws2007httpbinding.md) .|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>

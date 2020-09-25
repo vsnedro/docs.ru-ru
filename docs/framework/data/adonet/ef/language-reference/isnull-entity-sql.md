@@ -2,14 +2,15 @@
 title: ISNULL (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: dc7a0173-3664-4c90-a57b-5cbb0a8ed7ee
-ms.openlocfilehash: b3fc2484e80b637ed5841375985f7bae476bbbf7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3360ad4ca7306a8cc1b7d6948204f825ff9a93c6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150204"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203622"
 ---
 # <a name="isnull-entity-sql"></a>ISNULL (Entity SQL)
+
 Определяет, имеет ли выражение запроса значение null.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,6 +20,7 @@ expression IS [ NOT ] NULL
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `expression`  
  Любое допустимое выражение запроса. Не может быть коллекцией, содержать элементы коллекции или тип записи со свойствами типа коллекции.  
   
@@ -26,9 +28,11 @@ expression IS [ NOT ] NULL
  Логически инвертирует результат EDM.Boolean для IS NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Значение `true`, если выражение `expression` возвращает значение NULL, либо значение `false` - в противном случае.  
   
 ## <a name="remarks"></a>Remarks  
+
  Ключевое слово `IS NULL` позволяет определить, имеет ли элемент внешнего соединения значение NULL.  
   
 ```sql  
@@ -46,7 +50,7 @@ select c from LOB.Customer as c where c.DOB is not null
   
  В следующей таблице показан эффект применения оператора `IS NULL` в различных конструкциях. Все исключения формируются на стороне клиента перед вызовом поставщика.  
   
-|Модель|Поведение|  
+|Шаблон|Поведение|  
 |-------------|--------------|  
 |null IS NULL|Возвращает `true`.|  
 |TREAT (null AS EntityType) IS NULL|Возвращает `true`.|  
@@ -57,7 +61,8 @@ select c from LOB.Customer as c where c.DOB is not null
 |RowType IS NULL|Вызывает ошибку.|  
   
 ## <a name="example"></a>Пример  
- В [!INCLUDE[esql](../../../../../../includes/esql-md.md)] следующем запросе используется оператор IS NOT NULL для определения того, является ли выражение запроса недействительным. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
+
+ Следующий [!INCLUDE[esql](../../../../../../includes/esql-md.md)] запрос использует оператор is not null, чтобы определить, имеет ли выражение запроса значение, не равное NULL. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
 1. Выполните процедуру из статьи [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   

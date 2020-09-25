@@ -2,14 +2,15 @@
 title: GROUP BY (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139
-ms.openlocfilehash: 711fbdc2d51177037cf349150c3431de14b11974
-ms.sourcegitcommit: 8a0fe8a2227af612f8b8941bdb8b19d6268748e7
+ms.openlocfilehash: 281d5d2df389f0952f0552747fa12b67b14d470c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71833784"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204493"
 ---
 # <a name="group-by-entity-sql"></a>GROUP BY (Entity SQL)
+
 Определяет группы, в которые должны быть помещены объекты, возвращаемые выражением запроса ([SELECT](select-entity-sql.md)).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,11 +20,13 @@ ms.locfileid: "71833784"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `aliasedExpression`  
  Любое допустимое выражение запроса, в котором выполняется группирование. Аргумент`expression` может быть свойством или нестатистическим выражением, ссылающимся на свойство, которое возвращается предложением FROM. Каждое выражение в предложении GROUP BY должно иметь тип, который может быть проверен на равенство. Такими типами обычно являются скалярные примитивы - числа, строки и даты. Операция GROUP BY не может быть выполнена по коллекциям.  
   
-## <a name="remarks"></a>Примечания  
- Если в предложение SELECT включены агрегатные функции \<список выбора >, GROUP BY вычисляет сводное значение для каждой группы. Если задано предложение GROUP BY, то каждое имя свойства во всех нестатистических выражениях в списке выбора должно быть включено в список GROUP BY либо выражение GROUP BY должно точно соответствовать выражению списка выбора.  
+## <a name="remarks"></a>Remarks  
+
+ Если в предложение SELECT включены агрегатные функции \<select list> , GROUP BY вычисляет сводное значение для каждой группы. Если задано предложение GROUP BY, то каждое имя свойства во всех нестатистических выражениях в списке выбора должно быть включено в список GROUP BY либо выражение GROUP BY должно точно соответствовать выражению списка выбора.  
   
 > [!NOTE]
 > Если предложение ORDER BY не задано, то группы, возвращаемые предложением GROUP BY, не упорядочиваются. Рекомендуется всегда пользоваться предложением ORDER BY, чтобы данные были представлены в определенном порядке.  
@@ -60,6 +63,7 @@ GROUP BY 1   -- BAD, a constant is not allowed
  Пример использования GROUP BY см. в статье [HAVING](having-entity-sql.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем запросе Entity SQL оператор GROUP BY задает группы, в которые помещаются объекты, возвращаемые запросом. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
 1. Выполните процедуру, описанную в разделе [инструкции. выполнение запроса, возвращающего тип PrimitiveType результаты](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
@@ -68,7 +72,7 @@ GROUP BY 1   -- BAD, a constant is not allowed
   
  [!code-sql[DP EntityServices Concepts#GROUPBY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#groupby)]  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Выражения запросов](query-expressions-entity-sql.md)

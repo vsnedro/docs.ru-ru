@@ -2,17 +2,18 @@
 title: Статистические функции (SqlClient для Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 03303f01-b591-4efc-9875-f9c608edff0b
-ms.openlocfilehash: 1fad25f2229b4fa810cf82a96dcb8c50a9de3070
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1c32ccfe18c67c9baeb7df0f981c9129b3bbc8bb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150653"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204519"
 ---
 # <a name="aggregate-functions-sqlclient-for-entity-framework"></a>Статистические функции (SqlClient для Entity Framework)
+
 Поставщик данных .NET Framework для SQL Server (SqlClient) предоставляет агрегатные функции. Агрегатные функции выполняют вычисления на наборе входных значений и возвращают значение. Эти функции находятся в пространстве имен SqlServer, которое доступно при использовании SqlClient. Свойство пространства имен поставщика позволяет платформе Entity Framework узнать, какой префикс используется поставщиком для конкретных конструкций, таких как типы или функции.  
   
- Ниже приведены агрегированные функции SqlClient.  
+ Ниже приведены агрегатные функции SqlClient.  
 
 ## <a name="avgexpression"></a>AVG (выражение)
 
@@ -20,9 +21,9 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Ан `Int32` `Int64`, `Double`, `Decimal`и .
+`Int32`,, `Int64` `Double` И `Decimal` .
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Тип параметра `expression`.
 
@@ -30,17 +31,17 @@ ms.locfileid: "79150653"
 
 [!code-sql[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_avg)]
 
-## <a name="checksum_aggcollection"></a>CHECKSUM_AGG (сбор)
+## <a name="checksum_aggcollection"></a>CHECKSUM_AGG (коллекция)
 
  Возвращает контрольную сумму значений в коллекции. Значения NULL пропускаются.
 
  **Аргументы**
 
- Коллекция ().`Int32`
+ Коллекция ( `Int32` ).
 
- **Значение возврата**
+ **Возвращаемое значение**
 
- `Int32`.
+ Объект `Int32`.
 
  **Пример**
 
@@ -52,16 +53,16 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция\<T>, где T является одним из следующих типов:
+Коллекция \<T> , где T — один из следующих типов:
 
 |   |   |   |   |
 |---|---|---|---|
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`|`Guid`(не возвращенв в сервере S'L 2000)|
+|`Time`|`String`|`Binary`|`Guid` (не возвращается в SQL Server 2000)|
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Int32`.
+Объект `Int32`.
 
 **Пример**
 
@@ -73,16 +74,16 @@ ms.locfileid: "79150653"
 
  **Аргументы**
 
- Коллекция (T), где T является одним из следующих типов:
+ Коллекция (T), где T — один из следующих типов:
 
  |   |   |   |   |
 |---|---|---|---|
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
-|`Time`|`String`|`Binary`|`Guid`(не возвращенв в сервере S'L 2000)|
+|`Time`|`String`|`Binary`|`Guid` (не возвращается в SQL Server 2000)|
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Int64`.
+Объект `Int64`.
 
 **Пример**
 
@@ -94,14 +95,14 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция (T), где T является одним из следующих типов:
+Коллекция (T), где T — один из следующих типов:
 
 |   |   |   |   |
 |---|---|---|---|
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`||
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Тип параметра `expression`.
 
@@ -115,14 +116,14 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция (T), где T является одним из следующих типов:
+Коллекция (T), где T — один из следующих типов:
 
 |   |   |   |   |
 |---|---|---|---|
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
 |`Time`|`String`|`Binary`||
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Тип параметра `expression`.
 
@@ -136,11 +137,11 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция ().`Double`
+Коллекция ( `Double` ).
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -152,11 +153,11 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция ().`Double`
+Коллекция ( `Double` ).
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -168,9 +169,9 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция (T), где T является одним `Int32`из `Int64` `Double`следующих типов: , , `Decimal`.
+Коллекция (T), где T — один из следующих типов: `Int32` , `Int64` , `Double` , `Decimal` .
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Тип параметра `expression`.
 
@@ -184,11 +185,11 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция ().`Double`
+Коллекция ( `Double` ).
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -200,11 +201,11 @@ ms.locfileid: "79150653"
 
 **Аргументы**
 
-Коллекция ().`Double`
+Коллекция ( `Double` ).
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 

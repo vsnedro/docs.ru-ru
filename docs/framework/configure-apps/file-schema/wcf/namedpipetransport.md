@@ -2,14 +2,15 @@
 title: <namedPipeTransport>
 ms.date: 03/30/2017
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
-ms.openlocfilehash: 00631ad88d771ed8f45638f28c84df05917fd3a0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4582066098feaf50b33b083de56bcb8c3e04df0f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736585"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204623"
 ---
 # \<namedPipeTransport>
+
 Задает транспорт, принуждающий канал передавать сообщения с использованием именованных каналов, когда он включается в пользовательскую привязку.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -40,9 +41,11 @@ ms.locfileid: "73736585"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
 В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
 Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -60,7 +63,7 @@ ms.locfileid: "73736585"
 |maxPendingConnections|Возвращает или задает максимальное число подключений, ожидающих распределения в службе.|  
 |maxReceivedMessageSize|Возвращает и задает максимально допустимый размер сообщения (в байтах), который может быть получен.|  
 |transferMode|Возвращает или задает значение, указывающее, следует ли помещать сообщения в буфер или передавать их потоком с использованием транспорта, ориентированного на подключение.|  
-|[\<connectionPoolSettings>окна\<namedPipeTransport>](connectionpoolsettings.md)|Задает дополнительные параметры пула подключений для привязки именованного канала.|  
+|[\<connectionPoolSettings> из \<namedPipeTransport>](connectionpoolsettings.md)|Задает дополнительные параметры пула подключений для привязки именованного канала.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -68,12 +71,13 @@ ms.locfileid: "73736585"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
 Этот транспорт использует универсальные коды ресурсов (URI) вида net.pipe://hostname/path. Другие элементы универсального кода ресурса (URI) не обязательны.  
   
 Элемент `namedPipeTransport` является отправной точкой для создания пользовательской привязки, реализующей именованные каналы транспорта HTTPS. Этот транспорт используется для взаимодействия служб WCF на компьютере.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.NamedPipeTransportElement>
 - <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>

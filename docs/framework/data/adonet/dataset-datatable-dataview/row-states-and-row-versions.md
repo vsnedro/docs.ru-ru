@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-ms.openlocfilehash: 70596d6acb62fa01092e5e55dd3b6c84eb162b5d
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 1b80ae78fad22989f99fb1e992d4978a192e0c66
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784329"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204532"
 ---
 # <a name="row-states-and-row-versions"></a>Состояния и версии строк
+
 ADO.NET управляет строками таблиц с помощью состояний и версий строк. Состояние строки указывает на статус строки, а версии строк хранят значения изменения строки, включая текущее, исходное и применяемое по умолчанию значения. Например, после внесения изменения в столбец строки эта строка будет иметь состояние `Modified` и две версии: `Current`, содержащую текущие значения, и `Original`, содержащую значения этой строки до изменения столбца.  
   
  Каждый объект <xref:System.Data.DataRow> имеет свойство <xref:System.Data.DataRow.RowState%2A>, которое отображает текущее состояние строки. В следующей таблице кратко описано каждое из значений перечисления `RowState`.  
@@ -94,9 +95,9 @@ foreach (DataRow delRow in delRows)
 }  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Управление данными в DataTable](manipulating-data-in-a-datatable.md)
+- [Управление данными в таблице данных](manipulating-data-in-a-datatable.md)
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
 - [Объекты DataAdapter и DataReader](../dataadapters-and-datareaders.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

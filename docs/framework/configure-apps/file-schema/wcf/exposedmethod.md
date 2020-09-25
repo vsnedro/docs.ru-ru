@@ -2,14 +2,15 @@
 title: <exposedMethod>
 ms.date: 03/30/2017
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
-ms.openlocfilehash: 46f2872fb289c2793c356ea179deb3ce52e6d65e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2947f0de6a88f39463e58a3b39bda52588fe4baa
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855306"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203908"
 ---
 # \<exposedMethod>
+
 Представляет метод COM+, предоставляемый, когда интерфейс компонента COM+ предоставляется как веб-служба.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ ms.locfileid: "70855306"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -41,6 +43,7 @@ ms.locfileid: "70855306"
 |name|Строка, которая содержит метод COM+, предоставляемый, когда интерфейс компонента COM+ предоставляется как веб-служба.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -49,14 +52,15 @@ ms.locfileid: "70855306"
 |-------------|-----------------|  
 |[\<exposedMethods>](exposedmethods.md)|Коллекция [\<exposedMethod>](exposedmethod.md) элементов.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Средство конфигурации интеграции COM+ (ComSvcConfig.exe) может применяться для добавления определенных методов COM-интерфейса для использования в созданном контракте службы.  
   
  Например, для добавления в созданный контракт службы трех именованных методов из COM-интерфейса `IFinances` компонента `ItemOrders`.Financial можно использовать приведенную ниже команду.  
   
  `ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFinances.{TransferFunds,AddFunds,RemoveFunds} /hosting:complus`  
   
- При запуске файла ComSvcConfig. exe он создает следующий контракт службы, в котором перечислены упомянутые выше методы в качестве [\<exposedMethod>](exposedmethod.md) элементов.  
+ При запуске ComSvcConfig.exe также создается следующий контракт службы, в котором перечислены упомянутые выше методы как [\<exposedMethod>](exposedmethod.md) элементы.  
   
 ```xml  
 <comContract contractType="{C551FBA9-E3AA-4272-8C2A-84BD8D290AC7}"
@@ -70,7 +74,7 @@ ms.locfileid: "70855306"
   
  Во время инициализации службы среда выполнения пытается создать контракт службы, отражая и добавляя только методы, входящие в список [\<exposedMethod>](exposedmethod.md) элементов. Для каждого метода интерфейса, который не включен в контракт службы, создается трассировка.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ComMethodElementCollection>
 - <xref:System.ServiceModel.Configuration.ComMethodElement>
