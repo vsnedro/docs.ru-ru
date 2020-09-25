@@ -2,14 +2,15 @@
 title: Терминология платформы Entity Framework
 ms.date: 03/30/2017
 ms.assetid: fa2a1bd1-6118-487b-8673-eebc66b92945
-ms.openlocfilehash: ea889cfbc04e06e3308e31c6e282d8f2359ddeb9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: dbe03de44b8ae2a857b923cd9dc74c42ea18f4e8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556542"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91200944"
 ---
 # <a name="entity-framework-terminology"></a>Терминология платформы Entity Framework
+
 В этом разделе определяются термины, часто упоминаемые в документации по Entity Framework. Даны ссылки на соответствующие разделы, содержащие дополнительные сведения.  
   
 |Термин|Определение|  
@@ -75,7 +76,7 @@ ms.locfileid: "90556542"
 |одна таблица на иерархию|Метод моделирования иерархии типов в базе данных, согласно которому атрибуты всех типов в иерархии помещаются в одну таблицу.|  
 |одна таблица на тип|Метод моделирования иерархии типов в базе данных, согласно которому для моделирования разных типов используются разные таблицы, связанные отношением «один к одному».|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ADO.NET Entity Framework](index.md)
 - [Общие сведения об Entity Framework](overview.md)
