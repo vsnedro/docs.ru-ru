@@ -5,17 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
-ms.openlocfilehash: 25419f8a810b52103e6b862cfe2fe6ab5a1fd981
-ms.sourcegitcommit: ad800f019ac976cb669e635fb0ea49db740e6890
+ms.openlocfilehash: 1c65389c8c5664f86f3f0c04829a2422908d72d1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73040093"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202296"
 ---
 # <a name="generating-strongly-typed-datasets"></a>Создание строго типизированных наборов данных
-Учитывая схему XML, которая соответствует стандарту языка определения схемы XML (XSD), можно создать строго типизированную <xref:System.Data.DataSet> с помощью средства XSD. exe, поставляемого с пакетом средств разработки программного обеспечения (SDK) для Windows.  
+
+Учитывая схему XML, которая соответствует стандарту языка определения схемы XML (XSD), можно создать строго типизированную <xref:System.Data.DataSet> программу с помощью средства XSD.exe, предоставляемого пакетом средств разработки программного обеспечения (SDK) для Windows.  
   
- (Чтобы создать XSD из таблиц базы данных, см. статью <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with DataSets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)).  
+ (Чтобы создать схему XSD из таблиц базы данных, см <xref:System.Data.DataSet.WriteXmlSchema%2A> . статью или [Работа с DataSets в Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)).  
   
  В следующем коде показан синтаксис для создания **набора данных** с помощью этого средства.  
   
@@ -23,7 +24,7 @@ ms.locfileid: "73040093"
 xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace  
 ```  
   
- В этом синтаксисе директива `/d` указывает средству создать **набор данных**, а `/l:` указывает инструменту, какой язык следует использовать (например, C# или Visual Basic .NET). Необязательная директива `/eld` указывает, что можно использовать LINQ to DataSet для запроса к созданному **набору данных.** Данный параметр используется при указании параметра `/d`. Дополнительные сведения см. в разделе [запросы к типизированным наборам данных](../querying-typed-datasets.md). Необязательная директива `/n:` указывает, что средство также создает пространство имен для **набора данных** с именем **кссдсчема. Namespace**. Выходом команды является файл XSDSchemaFileName.cs, который можно скомпилировать и использовать в приложении ADO.NET. Созданный код можно скомпилировать в виде библиотеки или модуля.  
+ В этом синтаксисе `/d` директива указывает средству создать **набор данных**, а указывает, `/l:` какой язык следует использовать (например, C# или Visual Basic .NET). Необязательная `/eld` директива указывает, что можно использовать LINQ to DataSet для запроса к созданному **набору данных.** Данный параметр используется при указании параметра `/d`. Дополнительные сведения см. в разделе [запросы к типизированным наборам данных](../querying-typed-datasets.md). Необязательная `/n:` директива указывает средству создавать пространство имен для **набора данных** с именем **кссдсчема. Namespace**. Выходом команды является файл XSDSchemaFileName.cs, который можно скомпилировать и использовать в приложении ADO.NET. Созданный код можно скомпилировать в виде библиотеки или модуля.  
   
  В следующем коде показан синтаксис для компиляции созданного кода в виде библиотеки с помощью компилятора C# (csc.exe).  
   
@@ -94,7 +95,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataSet>

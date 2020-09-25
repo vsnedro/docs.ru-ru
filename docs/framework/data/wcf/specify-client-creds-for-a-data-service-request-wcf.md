@@ -7,41 +7,47 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, customizing requests
 ms.assetid: 1632f9af-e45f-4363-9222-03823daa8e28
-ms.openlocfilehash: c445f0d6117abfd1ac7a5153f8f80d55051a3f5a
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: fd69d5f7eddf713612000b0ad677e7ada378553e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75900934"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91180664"
 ---
 # <a name="how-to-specify-client-credentials-for-a-data-service-request-wcf-data-services"></a>Как указать учетные данные клиента для запроса службы данных (службы WCF Data Services)
+
 По умолчанию клиентская библиотека не предоставляет учетные данные при отправке запроса в службу OData. Тем не менее можно задать отправку учетных данных для проверки подлинности запросов службе данных, указав <xref:System.Net.NetworkCredential> для свойства <xref:System.Data.Services.Client.DataServiceContext.Credentials%2A> в контексте <xref:System.Data.Services.Client.DataServiceContext>. Дополнительные сведения см. в разделе [Securing WCF Data Services](securing-wcf-data-services.md). В примере в этом разделе показано, как явно указать учетные данные, используемые клиентом WCF Data Services при запросе данных из службы данных.  
   
  Пример в этом разделе использует образец службы данных Northwind и автоматически сформированные клиентские классы службы данных. Эта служба и классы данных клиента создаются при завершении [краткого руководства по WCF Data Services](quickstart-wcf-data-services.md). Вы также можете использовать [учебную службу данных Northwind](https://services.odata.org/Northwind/Northwind.svc/) , опубликованную на веб-сайте OData. Этот образец службы данных доступен только для чтения, и попытка сохранить изменения возвращает ошибку. Образцы служб данных на веб-сайте OData допускают анонимную проверку подлинности.  
   
 ## <a name="example"></a>Пример  
- Следующий пример относится к странице кода программной части для файла XAML (XAML), который является основной страницей приложения Windows Presentation Framework. В этом примере отображается экземпляр `LoginWindow`, получающий учетные данные у пользователя и использующий их при составлении запроса к службе данных.  
+
+ Следующий пример взят из страницы с выделенным кодом для файла на языке XAML, который является основной страницей WPF-приложения. В этом примере отображается экземпляр `LoginWindow`, получающий учетные данные у пользователя и использующий их при составлении запроса к службе данных.  
   
  [!code-csharp[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/clientcredentials.xaml.cs#clientcredentials)]  
  [!code-vb[Astoria Northwind Client#ClientCredentials](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/clientcredentials.xaml.vb#clientcredentials)]
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен код на языке XAML, который определяет основную страницу в WPF-приложении.  
   
  [!code-xaml[Astoria Northwind Client#ClientCredentialsXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/clientcredentials.xaml#clientcredentialsxaml)]  
   
 ## <a name="example"></a>Пример  
+
  Следующий пример взят из страницы с выделенным кодом для окна, которое используется для получения учетных данных проверки подлинности у пользователя, прежде чем отправить запрос службе данных.  
   
  [!code-csharp[Astoria Northwind Client#ClientCredentialsLogin](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/clientcredentialslogin.xaml.cs#clientcredentialslogin)]  
  [!code-vb[Astoria Northwind Client#ClientCredentialsLogin](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/clientcredentialslogin.xaml.vb#clientcredentialslogin)]
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен код на языке XAML, который определяет имя входа в WPF-приложении.  
   
  [!code-xaml[Astoria Northwind Client#ClientCredentialsLoginXaml](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/clientcredentialslogin.xaml#clientcredentialsloginxaml)]  
   
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
+## <a name="net-framework-security"></a>Безопасность .NET Framework  
+
  В отношении примера в этом разделе следует учитывать следующие рекомендации по безопасности.  
   
 - Чтобы убедиться, что учетные данные, предоставленные в этом образце, работоспособны, служба данных Northwind должна использовать схему проверки подлинности, отличную от анонимного доступа. В противном случае веб-узел, на котором размещена служба данных, не запросит учетные данные.  
@@ -52,7 +58,7 @@ ms.locfileid: "75900934"
   
  Дополнительные сведения см. в разделе [Securing WCF Data Services](securing-wcf-data-services.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Защита служб WCF Data Services](securing-wcf-data-services.md)
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)

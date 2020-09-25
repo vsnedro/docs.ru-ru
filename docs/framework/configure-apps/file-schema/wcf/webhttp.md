@@ -2,14 +2,15 @@
 title: <webHttp>
 ms.date: 03/30/2017
 ms.assetid: 1f9d0754-d41e-44ce-a298-e51cb3096c64
-ms.openlocfilehash: 00644d248e6fb85d7cf712620e6ac74405e6b0c3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 716d960e2d5f896976c22a60d419d9b165b36178
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399166"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202465"
 ---
 # \<webHttp>
+
 Данный элемент задает <xref:System.ServiceModel.Description.WebHttpBehavior> на конечной точке в конфигурации. Такое поведение при использовании в сочетании со [\<webHttpBinding>](webhttpbinding.md) стандартной привязкой позволяет использовать модель веб-программирования для службы Windows Communication Foundation (WCF).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,11 +27,12 @@ ms.locfileid: "70399166"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |automaticFormatSelectionEnabled|Если это свойство имеет значение `true`, то инфраструктура WCF определяет лучший формат для использования. Автоматический выбор формата отключен по умолчанию в целях обратной совместимости. Автоматический выбор формата можно включить программно или через конфигурацию.|  
 |defaultBodyStyle|Задает стиль по умолчанию для текста возвращаемых сообщений. Дополнительные сведения см. в разделе <xref:System.ServiceModel.Web.WebMessageBodyStyle> и [веб-форматирование WCF](../../../wcf/feature-details/wcf-web-http-formatting.md).|  
@@ -39,6 +41,7 @@ ms.locfileid: "70399166"
 |helpEnabled|Возвращает или задает значение, определяющее, будет ли включена страница справки.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -47,7 +50,7 @@ ms.locfileid: "70399166"
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Задает набор поведений конечной точки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.WebHttpElement>
 - <xref:System.ServiceModel.Description.WebHttpBehavior>

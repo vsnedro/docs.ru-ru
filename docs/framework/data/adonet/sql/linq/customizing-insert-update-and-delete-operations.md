@@ -2,14 +2,15 @@
 title: Настройка операций вставки, обновления и удаления
 ms.date: 03/30/2017
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
-ms.openlocfilehash: ed3de95a8224f0b4d8f3d5d913274417a6879942
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 4b846d1e1f737cec85ecda75df5e3f66982def62
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70247611"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177349"
 ---
 # <a name="customizing-insert-update-and-delete-operations"></a>Настройка операций вставки, обновления и удаления
+
 По умолчанию [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] создает динамический SQL для выполнения операций чтения, обновления и удаления. Однако на практике обычно приходится настраивать приложение в соответствии с собственными бизнес-требованиями.  
   
 > [!NOTE]
@@ -17,8 +18,9 @@ ms.locfileid: "70247611"
   
  В данном разделе описываются методы, представляемые [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], для настройки операций вставки, чтения, обновления и удаления в приложении.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Настройка операций: обзор](customizing-operations-overview.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Настройка операций: Обзор](customizing-operations-overview.md)  
  Содержит описание различных методов, представленных в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], для настройки операций вставки, чтения, обновления и удаления в приложении.  
   
  [Операции вставки, обновления и удаления](insert-update-and-delete-operations.md)  

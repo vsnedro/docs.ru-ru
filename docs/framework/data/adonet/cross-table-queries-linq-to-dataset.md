@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6819a16f-8656-41af-a54d-dfec0cb66366
-ms.openlocfilehash: b62f5fbb6b964ed70f6bf7fc08b62a74a7c06c45
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a209cfe4142ad8ebdbce1d715a76ac27300f4e19
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554727"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202400"
 ---
 # <a name="cross-table-queries-linq-to-dataset"></a>Запросы между таблицами (LINQ to DataSet)
+
 В дополнение к запросам к одной таблице можно также выполнять запросы между таблицами в LINQ to DataSet. Это делается с помощью *объединения*. Соединение представляет собой взаимосвязь объектов одного источника данных с объектами, использующими общий атрибут, например идентификатор продукта или контактного лица, в другом источнике данных. В объектно-ориентированном программировании связи между объектами относительно просты для навигации, поскольку каждый объект имеет член, ссылающийся на другой объект. Однако в таблицах внешних баз данных перемещение по связям не столь однозначно. Таблицы баз данных не содержат встроенных связей. В таких случаях для соединения элементов из разных источников может использоваться операция объединения. Например, если две таблицы содержат данные о продуктах и о продажах, нужно использовать операцию соединения для сопоставления данных о продажах и о продуктах, относящихся к одному и тому же заказу на продажу.  
   
  Платформа, интегрированная с LINQ, предоставляет два оператора Join: <xref:System.Linq.Enumerable.Join%2A> и <xref:System.Linq.Enumerable.GroupJoin%2A> . Эти операторы выполняют *эквивалентные объединения*: то есть объединения, которые соответствуют двум источникам данных, только если их ключи равны. (Напротив, Transact-SQL поддерживает операторы Join, отличные от `equals` , например `less than` оператор).  
@@ -24,12 +25,13 @@ ms.locfileid: "90554727"
  Дополнительные сведения о объединениях см. в разделе [операции JOIN](/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120)).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере выполняется традиционное соединение таблиц `SalesOrderHeader` и `SalesOrderDetail` из образца базы данных AdventureWorks для получения заказов, сделанных через Интернет начиная с августа.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Join](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#join)]
  [!code-vb[DP LINQ to DataSet Examples#Join](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#join)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Запросы к DataSet](querying-datasets-linq-to-dataset.md)
 - [Запросы к одной таблице](single-table-queries-linq-to-dataset.md)
