@@ -2,16 +2,18 @@
 title: Переменные (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 3eed222a-f8f6-46b6-9cd5-220cc0e4e5d8
-ms.openlocfilehash: 88ee41bc08711cf84b8b2e273c9ac0f4267d1d34
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: af6d586a22f14a04bfc7ec339d0aa8e9ba7c66c7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149821"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181002"
 ---
 # <a name="variables-entity-sql"></a>Переменные (Entity SQL)
+
 ## <a name="variable"></a>Переменная  
- Выражение переменной – это ссылка на именованное выражение, определенное в текущей области. Переменная ссылка должна [!INCLUDE[esql](../../../../../../includes/esql-md.md)] быть действительным идентификатором, как это определено в [идентификаторах.](identifiers-entity-sql.md)  
+
+ Выражение переменной – это ссылка на именованное выражение, определенное в текущей области. Ссылка на переменную должна быть допустимым [!INCLUDE[esql](../../../../../../includes/esql-md.md)] идентификатором, как определено в [идентификаторах](identifiers-entity-sql.md).  
   
  В следующем примере показано применение переменной в выражении. Символ `c` в предложении FROM является определением переменной. Использование символа `c` в предложении SELECT представляет ссылку на переменную.  
   

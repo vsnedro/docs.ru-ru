@@ -2,14 +2,15 @@
 title: WHERE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
-ms.openlocfilehash: b551d15d7de2cf07afc7455b7fd0a0faf6436ccf
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 1907b8786622d3c8019c75916f997c830cc07cfb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319181"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91180963"
 ---
 # <a name="where-entity-sql"></a>WHERE (Entity SQL)
+
 Предложение WHERE применяется непосредственно после предложения [from](from-entity-sql.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,10 +20,12 @@ ms.locfileid: "72319181"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `expression`  
  Тип Boolean.  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Remarks  
+
  В предложении WHERE есть та же семантика, которая описана для Transact-SQL. Она ограничивает набор объектов, полученный выражением запроса, выбирая из исходной коллекции только те элементы, которые соответствуют условию.  
   
 ```sql  
@@ -33,7 +36,7 @@ select c from cs as c where e
   
  Предложение WHERE применяется непосредственно после предложения FROM, до выполнения любого группирования, упорядочения или проекции. Все имена элементов, определенные в предложении FROM, доступны в выражении предложения WHERE.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Выражения запросов](query-expressions-entity-sql.md)

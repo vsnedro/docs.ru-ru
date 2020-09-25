@@ -2,14 +2,15 @@
 title: Сведения о развертывании (Entity Framework)
 ms.date: 03/30/2017
 ms.assetid: 3a847a22-4eb8-4565-b18b-453bbca070db
-ms.openlocfilehash: bdc7a6211681c78d81ba750844611b35e779abd2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 034fb48050fb0e6a9aabf6c183f8721f0a7115e4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542696"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181132"
 ---
 # <a name="deployment-considerations-entity-framework"></a>Сведения о развертывании (Entity Framework)
+
 В этом разделе представлены сведения о развертывании приложений, использующих для доступа к данным платформу ADO.NET Entity Framework. Дополнительные сведения о Entity Framework см. в разделе [Начало работы](getting-started.md).  
   
  Платформа Entity Framework предоставляет набор средств, интегрирующихся в среду Visual Studio и облегчающих разработку в ней. Дополнительные сведения см. в разделе [ADO.NET EDM Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)). В этом разделе не описано использование специальных технологий для развертывания приложений, созданных на базе Entity Framework.  
@@ -28,7 +29,7 @@ ms.locfileid: "90542696"
   
 - Поскольку Entity Framework является компонентом платформы .NET Framework, она может распространяться вместе с приложением в соответствии с условиями лицензионного соглашения для платформы .NET Framework.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ADO.NET Entity Framework](index.md)
 - [Вопросы разработки и развертывания](development-and-deployment-considerations.md)

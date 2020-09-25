@@ -5,15 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8b1f9070-d032-48c7-b030-bd8fbb2ca59a
-ms.openlocfilehash: 5ede6e2cd52ad55f8c35a42d137044dd1ceea400
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 8673b7fbc2e4238f7047698376c53af991de9f1b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70785957"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91181171"
 ---
 # <a name="row-error-information"></a>Сведения об ошибках строк
-Чтобы не отвечать на ошибки строки при изменении значений в таблице <xref:System.Data.DataTable>, можно добавить сведения об ошибке в строку для последующего использования. Для этой цели объект <xref:System.Data.DataRow> предоставляет свойство <xref:System.Data.DataRow.RowError%2A> для каждой строки. Добавление данных в свойство **роверрор** объекта **DataRow** устанавливает <xref:System.Data.DataRow.HasErrors%2A> для свойства **DataRow** **значение true**. Если **DataRow** является частью **DataTable**, а **DataRow. HasErrors** имеет **значение true**, свойство **DataTable. HasErrors** также имеет **значение true**. Это относится и к **набору данных** , к которому принадлежит **DataTable** . При проверке на наличие ошибок можно проверить свойство **HasErrors** , чтобы определить, были ли добавлены сведения об ошибках в какие бы то ни было строки. Если параметр **HasErrors** имеет **значение true**, <xref:System.Data.DataTable.GetErrors%2A> можно использовать метод объекта **DataTable** для возвращения и проверки только строк с ошибками, как показано в следующем примере.  
+
+Чтобы не отвечать на ошибки строки при изменении значений в таблице <xref:System.Data.DataTable>, можно добавить сведения об ошибке в строку для последующего использования. Для этой цели объект <xref:System.Data.DataRow> предоставляет свойство <xref:System.Data.DataRow.RowError%2A> для каждой строки. Добавление данных в свойство **роверрор** объекта **DataRow** устанавливает <xref:System.Data.DataRow.HasErrors%2A> для свойства **DataRow** **значение true**. Если **DataRow** является частью **DataTable**, а **DataRow. HasErrors** имеет **значение true**, свойство **DataTable. HasErrors** также имеет **значение true**. Это относится и к **набору данных** , к которому принадлежит **DataTable** . При проверке на наличие ошибок можно проверить свойство **HasErrors** , чтобы определить, были ли добавлены сведения об ошибках в какие бы то ни было строки. Если параметр **HasErrors** имеет **значение true**, можно использовать <xref:System.Data.DataTable.GetErrors%2A> метод объекта **DataTable** для возвращения и проверки только строк с ошибками, как показано в следующем примере.  
   
 ```vb  
 Dim workTable As DataTable = New DataTable("Customers")  
@@ -77,10 +78,10 @@ protected static void OnRowChanged(
 }  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataRow>
 - <xref:System.Data.DataTable>
-- [Управление данными в DataTable](manipulating-data-in-a-datatable.md)
+- [Управление данными в таблице данных](manipulating-data-in-a-datatable.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)
