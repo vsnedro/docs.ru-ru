@@ -2,27 +2,29 @@
 title: Управление данными в таблице данных
 ms.date: 03/30/2017
 ms.assetid: 5cb86d48-a987-4af4-80e0-8cc2c8373d62
-ms.openlocfilehash: 421680a4f39dd68c09dfe20e62f2eec86259b9f0
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 3f98832b4aa9361346d06830f2f004fa374222ee
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786154"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201334"
 ---
 # <a name="manipulating-data-in-a-datatable"></a>Управление данными в таблице данных
+
 После создания объекта <xref:System.Data.DataTable> в объекте <xref:System.Data.DataSet> можно выполнять такие же действия, как и при использовании таблицы в базе данных. Можно добавлять, просматривать, изменять и удалять данные в таблице. Можно отслеживать ошибки и события; кроме того, можно запрашивать находящиеся в таблице данные. При изменении данных в **DataTable**можно также проверить, являются ли изменения точными, и определить, следует ли программно принимать или отклонять эти изменения.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Добавление данных в DataTable](adding-data-to-a-datatable.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Добавление данных в таблицу данных](adding-data-to-a-datatable.md)  
  Рассказывает, как создавать новые строки и добавлять их в таблицу.  
   
- [Просмотр данных в DataTable](viewing-data-in-a-datatable.md)  
+ [Просмотр данных в таблице данных](viewing-data-in-a-datatable.md)  
  Описывает, как получать доступ к данным в строке, включая исходную и текущую версии данных.  
   
  [Метод Load](the-load-method.md)  
  Описывает использование метода **Load** для заполнения **таблицы DataTable** строками.  
   
- [Редактирование DataTable](datatable-edits.md)  
+ [Редактирование таблиц данных](datatable-edits.md)  
  Рассказывает, как изменять данные в строке, в том числе приостанавливать внесение изменений в строку, пока предложенные изменения не будут проверены и приняты.  
   
  [Состояния и версии строк](row-states-and-row-versions.md)  
@@ -37,8 +39,8 @@ ms.locfileid: "70786154"
  [AcceptChanges и RejectChanges](acceptchanges-and-rejectchanges.md)  
  Объясняет, как принимать или отклонять внесенные в строку изменения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [DataTables](datatables.md)
-- [Обработка событий DataTable](handling-datatable-events.md)
+- [Обработка событий таблиц данных](handling-datatable-events.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

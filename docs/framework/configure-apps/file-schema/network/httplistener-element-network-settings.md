@@ -2,14 +2,15 @@
 title: Элемент <httpListener> (параметры сети)
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-ms.openlocfilehash: 0054be3d2002e4ea5247f25d8094386ac7242422
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 78526559164939667eab8848bc5fd2af6749d474
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088380"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195445"
 ---
 # <a name="httplistener-element-network-settings"></a>Элемент \<httpListener> (параметры сети)
+
 Настраивает параметры, используемые <xref:System.Net.HttpListener> классом.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ ms.locfileid: "74088380"
 ## <a name="type"></a>Type  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -37,6 +39,7 @@ ms.locfileid: "74088380"
 |унескаперекуестурл|Логическое значение, указывающее, использует ли <xref:System.Net.HttpListener> экземпляр необработанный неэкранированный универсальный код ресурса (URI) вместо преобразованного URI.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -45,7 +48,8 @@ ms.locfileid: "74088380"
 |-----------------|---------------------|  
 |[параметры](settings-element-network-settings.md)|Настраивает основные параметры сети для пространства имен <xref:System.Net>.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Атрибут **унескаперекуестурл** указывает <xref:System.Net.HttpListener> , использует ли необработанный неэкранированный универсальный код ресурса (URI) вместо преобразованного универсального кода ресурса (URI), в котором преобразовываются все значения в кодировке% и выполняются другие действия нормализации.  
   
  Когда <xref:System.Net.HttpListener> экземпляр получает запрос через `http.sys` службу, он создает экземпляр строки URI, предоставленной `http.sys` , и предоставляет его в качестве <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> Свойства.  
@@ -82,10 +86,10 @@ ms.locfileid: "74088380"
   
  Поэтому `http.sys` предоставляет два раздела реестра для изменения процесса:  
   
-|Ключ реестра|Значение по умолчанию|Описание|  
+|Раздел реестра .|Значение по умолчанию|Описание|  
 |------------------|-------------------|-----------------|  
 |EnableNonUTF8|1|Если значение равно нулю, `http.sys` принимает только URL-адреса в кодировке UTF-8.<br /><br /> Если значение не равно нулю, `http.sys` в запросах также принимается URL-адреса в кодировке ANSI или в кодировке DBCS.|  
-|FavorUTF8|1|Если не равен нулю, `http.sys` всегда пытается декодировать URL-адрес как UTF-8. Если преобразование завершается неудачно и EnableNonUTF8 не равно нулю, то HTTP. sys пытается декодировать его как ANSI или DBCS.<br /><br /> Если ноль (и EnableNonUTF8 не равен нулю), `http.sys` попытается декодировать его как ANSI или DBCS; если это не удается, то пытается выполнить преобразование UTF-8.|  
+|FavorUTF8|1|Если ненулевое значение, `http.sys` всегда пытается декодировать URL-адрес как UTF-8. Если преобразование завершается неудачно и EnableNonUTF8 не равно нулю, Http.sys попытается декодировать его как ANSI или DBCS.<br /><br /> Если ноль (и EnableNonUTF8 не равен нулю), `http.sys` попытается декодировать его как ANSI или DBCS; если это не удается, то пытается выполнить преобразование UTF-8.|  
   
  Когда <xref:System.Net.HttpListener> получает запрос, он использует преобразованный универсальный код ресурса (URI) из в `http.sys` качестве входных данных <xref:System.Net.HttpListenerRequest.Url%2A> Свойства.  
   
@@ -114,6 +118,7 @@ ms.locfileid: "74088380"
  <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A>Свойство можно использовать для получения текущего значения атрибута **унескаперекуестурл** из применимых файлов конфигурации.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как настроить <xref:System.Net.HttpListener> класс при получении запроса на использование необработанного универсального кода ресурса (URI) вместо преобразованного универсального кода ресурса (URI) в `http.sys` качестве входных данных для <xref:System.Net.HttpListenerRequest.Url%2A> Свойства.  
   
 ```xml  
@@ -137,7 +142,7 @@ ms.locfileid: "74088380"
 |Файл проверки||  
 |Может быть пустым||  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>

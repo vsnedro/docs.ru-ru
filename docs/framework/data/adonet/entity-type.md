@@ -2,14 +2,15 @@
 title: тип сущности
 ms.date: 03/30/2017
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
-ms.openlocfilehash: 1dafce5f7f95ba6f391c8742944f40a9afa7dcf8
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 3f99667a06d8aa439232802d4909290dfe9db97c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73737805"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194782"
 ---
 # <a name="entity-type"></a>тип сущности
+
 *Тип сущности* является фундаментальным стандартным блоком для описания структуры данных с помощью EDM (EDM). В концептуальной модели тип сущности представляет структуру основных концептуальных элементов верхнего уровня, таких как клиенты или заказы. Тип сущности - это шаблон для экземпляров типов сущностей. Каждый шаблон содержит следующие сведения.  
   
 - Уникальное имя. (Обязательно).  
@@ -18,13 +19,14 @@ ms.locfileid: "73737805"
   
 - Данные в виде [свойств](property.md). (Необязательно.)  
   
-- [Свойства навигации](navigation-property.md) , позволяющие переходить с одного [конца](association-end.md) [ассоциации](association-type.md) на другой конец. (Необязательный параметр).  
+- [Свойства навигации](navigation-property.md) , позволяющие переходить с одного [конца](association-end.md) [ассоциации](association-type.md) на другой конец. (необязательно)  
   
  В приложении экземпляр типа сущности представляет определенный объект (например, определенного клиента или заказ). Каждый экземпляр типа сущности должен иметь уникальный [ключ сущности](entity-key.md) в [наборе сущностей](entity-set.md).  
   
  Два экземпляра типа сущности считаются равными, только если они являются экземплярами одного типа и значения их ключей сущности равны.  
   
 ## <a name="example"></a>Пример  
+
  На приведенной ниже схеме показана концептуальная модель с тремя типами сущностей: `Book`, `Publisher` и `Author`.  
   
  ![Пример модели с тремя типами сущностей](./media/entity-type/example-model-three-entity-types.gif)  
@@ -35,8 +37,8 @@ ms.locfileid: "73737805"
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
-- [Сущностная модель данных](entity-data-model.md)
-- [facet](facet.md)
+- [EDM (модель данных с использованием сущностей)](entity-data-model.md)
+- [устанавливают](facet.md)

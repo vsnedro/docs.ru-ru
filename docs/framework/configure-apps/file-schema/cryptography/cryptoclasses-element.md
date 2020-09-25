@@ -8,14 +8,15 @@ helpviewer_keywords:
 - <cryptoClasses> element
 - cryptoClasses element
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
-ms.openlocfilehash: c93fadf51297d59ab499e25de283700364903049
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 89b96edcf1da20698cd203e78fa27e644fa69cc3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155250"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201828"
 ---
 # <a name="cryptoclasses-element"></a>Элемент \<cryptoClasses>
+
 Содержит список криптографических классов, сопоставленных с понятным именем в [\<nameEntry>](nameentry-element.md) элементе.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -32,9 +33,11 @@ ms.locfileid: "79155250"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -53,6 +56,7 @@ ms.locfileid: "79155250"
 |`mscorlib`|Содержит `cryptographySettings` элемент.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать **\<cryptoClass>** элемент для ссылки на криптографический класс и для настройки среды выполнения. Затем можно передать строку "RSA" в <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> метод и использовать <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> метод для возврата `MyCryptoRSAClass` объекта.  
   
 ```xml  
@@ -80,7 +84,7 @@ ms.locfileid: "79155250"
 
 - <xref:System.Security.Cryptography>
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров криптографии](index.md)
-- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
+- [Схема параметров шифрования](index.md)
+- [службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [System. Security. Cryptography. CryptoConfig. CreateFromName](xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)

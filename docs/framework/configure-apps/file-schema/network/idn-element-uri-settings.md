@@ -2,12 +2,12 @@
 title: Элемент <idn> (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
-ms.openlocfilehash: 533b2562f6e5c8d6c2bf452e56dff9a8bf8ab376
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f45922ecd5f7476362aab5348d91415d8e31c53f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71698164"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195406"
 ---
 # <a name="idn-element-uri-settings"></a>Элемент \<idn> (параметры URI)
 
@@ -26,6 +26,7 @@ ms.locfileid: "71698164"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,15 +43,15 @@ ms.locfileid: "71698164"
 
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[URI](uri-element-uri-settings.md)|Содержит параметры, определяющие, как .NET Framework обрабатывает веб-адреса, выраженные с помощью универсальных идентификаторов ресурсов (URI).|  
+|[uri](uri-element-uri-settings.md)|Содержит параметры, определяющие, как .NET Framework обрабатывает веб-адреса, выраженные с помощью универсальных идентификаторов ресурсов (URI).|  
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Существующий <xref:System.Uri> класс был расширен в .NET Framework 3,5. 3,0 с пакетом обновления 1 (SP1) и 2,0 с пакетом обновления 1 (SP1) с поддержкой международных идентификаторов ресурсов (IRI) и международных доменных имен (IDN). Текущие пользователи не увидят каких бы то ни было изменений в работе .NET Framework 2,0, если они специально не включают поддержку IRI и IDN. Это обеспечивает совместимость приложений с предыдущими версиями платформы .NET Framework.
 
 Чтобы включить поддержку IRI, требуются следующие два изменения:
 
-1. Добавьте следующую строку в файл Machine. config в каталоге .NET Framework 2,0:
+1. Добавьте следующую строку в файл machine.config в каталоге .NET Framework 2,0:
   
     ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
@@ -91,7 +92,7 @@ ms.locfileid: "71698164"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

@@ -2,14 +2,15 @@
 title: <add> из <filters>
 ms.date: 03/30/2017
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
-ms.openlocfilehash: 280c516b17a133930bc4b6621a8c9bc7f4781085
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c1de0605bc8afc502a85d9b2917b975ee45a3d26
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850561"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201659"
 ---
 # <a name="add-of-filters"></a>\<add> из \<filters>
+
 Фильтр XPath, задающий тип сообщений для записи в журнал.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,15 +29,17 @@ ms.locfileid: "70850561"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |фильтр|Строка, задающая запрос к документу XML, определенный в виде выражения XPath 1.0. Для получения дополнительной информации см. <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -45,7 +48,8 @@ ms.locfileid: "70850561"
 |-------------|-----------------|  
 |[\<filters>](filters.md)|Содержит коллекцию фильтров XPath, используемых для контроля типов регистрируемых сообщений.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Фильтры применяются только на транспортном уровне, когда параметр `logMessagesAtTransportLevel` имеет значение `true`. Фильтры не влияют на ведение журнала сообщений уровня службы и неправильно сформированных сообщений.  
   
  Для добавления нового фильтра в коллекцию используется ключевое слово `add`. Если в файле конфигурации определены один или несколько фильтров, в журнал записываются только сообщения, соответствующие хотя бы одному из фильтров. Если фильтры не заданы, в журнал записываются все сообщения.  
@@ -55,6 +59,7 @@ ms.locfileid: "70850561"
  В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как настроить фильтр для записи только сообщений с разделом заголовка SOAP.  
   
 ```xml  
@@ -71,7 +76,7 @@ ms.locfileid: "70850561"
 </messageLogging>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
