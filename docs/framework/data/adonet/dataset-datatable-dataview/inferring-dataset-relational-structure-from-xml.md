@@ -2,14 +2,15 @@
 title: Определение реляционной структуры набора данных из XML
 ms.date: 03/30/2017
 ms.assetid: cd2f41c6-6785-420e-aa43-3ceb0bdccdce
-ms.openlocfilehash: 1c8325d7ed52fea7397a7b5aa8744bdfa90b2c6e
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: fca50491120346dea3e09c82324225f2114380fc
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70785320"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177583"
 ---
 # <a name="inferring-dataset-relational-structure-from-xml"></a>Определение реляционной структуры набора данных из XML
+
 Реляционная структура (или схема) набора данных <xref:System.Data.DataSet> состоит из таблиц, столбцов, ограничений и связей. При загрузке <xref:System.Data.DataSet> из кода XML схема может быть определена заранее или создана, либо явно, либо с помощью вывода, на основании загружаемого кода XML. Дополнительные сведения о загрузке схемы и содержимого <xref:System.Data.DataSet> из XML-кода см. в разделе [Загрузка набора данных из XML](loading-a-dataset-from-xml.md) и [Загрузка данных схемы набора данных из XML](loading-dataset-schema-information-from-xml.md).  
   
  Если схема <xref:System.Data.DataSet> создается из XML, предпочтительным методом является явное указание схемы с помощью языка определения схемы XML (XSD) (как описано в разделе [наследование реляционной структуры набора данных из схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)) или XML-Data Reduced (XDR). Если в коде XML отсутствуют схемы XSD или XDR , то схема <xref:System.Data.DataSet> может быть выведена на основании структуры элементов и атрибутов XML.  
@@ -18,8 +19,9 @@ ms.locfileid: "70785320"
   
  Не все атрибуты, присутствующие в XML-документе, должны быть включены в процесс вывода. Атрибуты с уточнением в виде пространств имен могут включать метаданные, которые являются значимыми для XML-документа, но не для схемы <xref:System.Data.DataSet>. Используя <xref:System.Data.DataSet.InferXmlSchema%2A>, можно указывать пространства имен, которые не должны учитываться в процессе вывода. Дополнительные сведения см. [в разделе Загрузка данных схемы набора данных из XML](loading-dataset-schema-information-from-xml.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Общие сведения о процессе определения схемы DataSet](summary-of-the-dataset-schema-inference-process.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Общие сведения о процессе определения схемы набора данных](summary-of-the-dataset-schema-inference-process.md)  
  Предоставляет высокоуровневую сводку правил для вывода схемы <xref:System.Data.DataSet> с использованием кода XML.  
   
  [Определение таблиц](inferring-tables.md)  
@@ -37,16 +39,17 @@ ms.locfileid: "70785320"
  [Ограничения определения](inference-limitations.md)  
  Обсуждает ограничения вывода схемы.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Использование XML в наборах данных](using-xml-in-a-dataset.md)  
  Описывает, как объект <xref:System.Data.DataSet> взаимодействует с XML-данными.  
   
- [Наследование реляционной структуры DataSet от схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
+ [Наследование реляционной структуры набора данных от схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
  Описывает реляционную структуру (или схему) набора данных <xref:System.Data.DataSet>, которая создается с помощью схемы XSD.  
   
  [Общие сведения об ADO.NET](../ado-net-overview.md)  
  Описывает архитектуру, компоненты ADO.NET и способы их использования для доступа к существующим источникам данных и управления данными приложения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

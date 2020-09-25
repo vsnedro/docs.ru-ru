@@ -3,21 +3,23 @@ title: Объекты DataAdapter и DataReader
 description: Сведения о ADO.NET DataReader, который извлекает данные из базы данных, и DataAdapter, который извлекает данные из источника данных и заполняет набор данных.
 ms.date: 03/30/2017
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
-ms.openlocfilehash: 17463d65266baa53521bed9603c8abd96923277b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2584f8b382dd90f2f8b4554663dc545b9ccceb62
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286977"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177609"
 ---
 # <a name="dataadapters-and-datareaders"></a>Объекты DataAdapter и DataReader
+
 ADO.NET **DataReader** можно использовать для получения однопроходного потока данных из базы данных только для чтения. Результаты возвращаются при выполнении запроса и хранятся в сетевом буфере на клиенте, пока они не будут запрошены с помощью метода **Read** объекта **DataReader**. Использование **DataReader** может увеличить производительность приложения, извлекая данные сразу после их доступности и (по умолчанию) сохраняя в памяти только одну строку за раз, уменьшая нагрузку на систему.  
   
  Класс <xref:System.Data.Common.DataAdapter> используется для получения данных из источника данных и заполнения таблиц в <xref:System.Data.DataSet>. Класс `DataAdapter` позволяет также решить задачу по возврату изменений, сделанных в объекте `DataSet`, обратно в источник данных. В классе `DataAdapter` используется объект `Connection` поставщика данных .NET Framework для подключения к источнику данных, а также используются объекты `Command` для получения из него данных и решения задачи по записи изменений в источник данных.  
   
  Каждый поставщик данных .NET Framework, входящий в состав .NET Framework, включает объекты <xref:System.Data.Common.DbDataReader> и <xref:System.Data.Common.DbDataAdapter>: поставщик данных .NET Framework для OLE DB - объекты <xref:System.Data.OleDb.OleDbDataReader> и <xref:System.Data.OleDb.OleDbDataAdapter>, поставщик данных .NET Framework для SQL Server - объекты <xref:System.Data.SqlClient.SqlDataReader> и <xref:System.Data.SqlClient.SqlDataAdapter>, поставщик данных .NET Framework для ODBC - объекты <xref:System.Data.Odbc.OdbcDataReader> и <xref:System.Data.Odbc.OdbcDataAdapter>, а поставщик данных .NET Framework для Oracle - объекты <xref:System.Data.OracleClient.OracleDataReader> и <xref:System.Data.OracleClient.OracleDataAdapter>.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Извлечение данных с помощью объекта DataReader](retrieving-data-using-a-datareader.md)  
  Описывает объект **datareader** ADO.NET и способ его использования для возврата потока результатов из источника данных.  
   
@@ -45,7 +47,7 @@ ADO.NET **DataReader** можно использовать для получен
  [Выполнение пакетных операций с использованием объектов DataAdapters](performing-batch-operations-using-dataadapters.md)  
  Показывает, как повысить производительность приложения путем уменьшения количества циклов обмена данными с SQL Server в ходе применения обновлений из `DataSet`.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Подключение к источнику данных](connecting-to-a-data-source.md)
 - [Команды и параметры](commands-and-parameters.md)

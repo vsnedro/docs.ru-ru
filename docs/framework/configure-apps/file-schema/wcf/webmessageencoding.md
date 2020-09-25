@@ -2,14 +2,15 @@
 title: <webMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
-ms.openlocfilehash: 1cdce48f51b25732c256d3c867f1bba801ec4d8c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b250b64e1f073e00e4047ab6931a00d0b93b55b5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545458"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177882"
 ---
 # \<webMessageEncoding>
+
 Обеспечивает чтение и запись сообщений в виде обычного текста XML, сообщений в кодировке JSON (нотация объектов JavaScript), а также необработанного двоичного содержимого, используемого в привязке Windows Communication Foundation (WCF).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ ms.locfileid: "90545458"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -50,7 +52,8 @@ ms.locfileid: "90545458"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Кодирование — это процесс преобразования сообщения в последовательность байтов. Декодирование представляет собой обратный процесс. Эти процессы требуют определения кодировки символов.  
   
  Элемент `webMessageEncoding` работает путем делегирования набору внутренних кодировщиков обработки кодировок XML (в формате обычного текста), JSON и двоичных данных. Делегирование выполняется с помощью составного кодировщика сообщений.  
@@ -72,7 +75,7 @@ ms.locfileid: "90545458"
                     textEncoding="utf-8" />
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.WebMessageEncodingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

@@ -2,14 +2,15 @@
 title: Сопоставление типов данных
 ms.date: 03/30/2017
 ms.assetid: d4afab94-ada6-4c77-a73c-41f17bae6b5a
-ms.openlocfilehash: 065a9dcb5e03c784c5dec9ffbe6a3153aead9e3c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52e64714a17448cd94723bdc216d8ea069fc5eef
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554714"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177752"
 ---
 # <a name="data-type-mappings-in-adonet"></a>Сопоставления типов данных в ADO.NET
+
 Платформа .NET Framework основана на общей системе типов, в которой определяются способы объявления, использования типов и управления ими во время выполнения. Система типов состоит из типов-значений и типов-ссылок, производных от базового типа <xref:System.Object>. При работе с источником данных не указанный явным образом тип данных выводится из поставщика данных. Например, объект <xref:System.Data.DataSet> не зависит ни от одного конкретного источника данных. Получение данных в `DataSet` осуществляется из источника данных, а изменения передаются для сохранения в источнике данных с использованием `DataAdapter`. Это означает, что при `DataAdapter` заполнении <xref:System.Data.DataTable> в `DataSet` со значениями из источника данных результирующие типы данных столбцов в `DataTable` являются .NET Framework типами, а не типами, характерными для .NET Frameworkного поставщика данных, используемого для подключения к источнику данных.  
   
  Аналогично, когда объект `DataReader` возвращает значение из источника данных, полученное значение сохраняется в локальной переменной, имеющей тип .NET Framework. Как для операций, так `Fill` `DataAdapter` и для `Get` методов `DataReader` , тип .NET Framework выводится из значения, возвращаемого поставщиком данных .NET Framework.  
@@ -20,6 +21,7 @@ ms.locfileid: "90554714"
 > Значения NULL для типов данных поставщика данных .NET Framework представлены в `DBNull.Value` .  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Сопоставления типов данных SQL Server](sql-server-data-type-mappings.md)  
  Выводит список сопоставлений выводимых типов данных и методов доступа к данным для объекта <xref:System.Data.SqlClient>.  
   
@@ -35,7 +37,7 @@ ms.locfileid: "90554714"
  [Числа с плавающей запятой](floating-point-numbers.md)  
  Описывает проблемы, с которыми разработчики часто сталкиваются при работе с числами с плавающей запятой.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных SQL Server и ADO.NET](./sql/sql-server-data-types.md)
 - [Настройка параметров и типы данных параметров](configuring-parameters-and-parameter-data-types.md)

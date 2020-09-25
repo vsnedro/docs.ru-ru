@@ -2,14 +2,15 @@
 title: <transport> из <netNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d
-ms.openlocfilehash: d40178e59b89c2912123e1927e9e960f6d880871
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 81c52405478d4c1ab5c65aab73f7feff61b879d0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73735957"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178025"
 ---
 # <a name="transport-of-netnamedpipebinding"></a>\<transport> из \<netNamedPipeBinding>
+
 Определяет параметры безопасности транспорта для именованного канала.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,15 +34,17 @@ ms.locfileid: "73735957"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |protectionLevel|Определяет уровень защиты именованного канала. Подпись сообщений уменьшает риск подделки сообщения сторонними лицами при его передаче. Шифрование обеспечивает конфиденциальность на уровне данных во время транспортировки. Допустимые значения.<br /><br /> -None: защита отсутствует.<br />-Sign: сообщения подписываются.<br />-EncryptAndSign: сообщения шифруются и подписываются.<br /><br /> Значение по умолчанию - EncryptAndSign.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -50,7 +53,7 @@ ms.locfileid: "73735957"
 |-------------|-----------------|  
 |[\<security>](security-of-netnamedpipebinding.md)|Определяет параметры безопасности для привязки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.NamedPipeTransportSecurity>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>

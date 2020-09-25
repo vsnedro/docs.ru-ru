@@ -2,45 +2,47 @@
 title: Запрос к базе данных
 ms.date: 03/30/2017
 ms.assetid: eefb8b0c-ff07-4e86-a3d3-567479523fe9
-ms.openlocfilehash: 6ca402600d43eb84c31c499d3f93aca95d4ea1d9
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: b4ce48ee3d49769a353bf7371140b1f5a645f34e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75634318"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91184883"
 ---
 # <a name="querying-the-database"></a>Запрос к базе данных
+
 В этой группе разделов описывается, как разрабатывать и выполнять запросы в проектах [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Запрос информации](how-to-query-for-information.md)  
- Краткое описание того, как [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] запросы в основном совпадают с запросами LINQ.  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Практическое руководство. Как обращаться с запросами о сведениях](how-to-query-for-information.md)  
+ Краткое описание того, как [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] запросы LINQ в основном совпадают.  
   
- [Практическое руководство. Получение сведений как доступных только для чтения](how-to-retrieve-information-as-read-only.md)  
+ [Практическое руководство. Как получать информацию в режиме только для чтения](how-to-retrieve-information-as-read-only.md)  
  Описывается, как увеличить производительность запроса, если не планируется изменять данные.  
   
- [Практическое руководство. Управление объемом получаемых взаимосвязанных данных](how-to-control-how-much-related-data-is-retrieved.md)  
+ [Практическое руководство. Как управлять объемом получаемых взаимосвязанных данных](how-to-control-how-much-related-data-is-retrieved.md)  
  Описывается, как определять, какие связанные данные извлекаются вместе с основными целевыми данными.  
   
- [Практическое руководство. Фильтрация связанных данных](how-to-filter-related-data.md)  
+ [Практическое руководство. Как фильтровать взаимосвязанные данные](how-to-filter-related-data.md)  
  Описывается, как извлекать данные с помощью вложенных запросов.  
   
- [Практическое руководство. Выключение отложенной загрузки](how-to-turn-off-deferred-loading.md)  
+ [Практическое руководство. Как отключить отложенную загрузку](how-to-turn-off-deferred-loading.md)  
  Описывается, как отключить отложенную загрузку.  
   
- [Практическое руководство. Непосредственное выполнение запросов SQL](how-to-directly-execute-sql-queries.md)  
+ [Практическое руководство. Как прямо выполнять запросы SQL](how-to-directly-execute-sql-queries.md)  
  Описывается, как отправлять запросы с помощью языка SQL.  
   
- [Практическое руководство. Хранение и повторное использование запросов](how-to-store-and-reuse-queries.md)  
+ [Практическое руководство. Как хранить и повторно использовать запросы](how-to-store-and-reuse-queries.md)  
  Описывается, как, скомпилировав запрос один раз, использовать его несколько раз с различными параметрами.  
   
- [Практическое руководство. Обработка составных ключей в запросах](how-to-handle-composite-keys-in-queries.md)  
+ [Практическое руководство. Как обрабатывать составные ключи в запросах](how-to-handle-composite-keys-in-queries.md)  
  Описывается, как включить несколько столбцов в запрос, оператор которого принимает только один аргумент.  
   
- [Практическое руководство. Извлечение нескольких объектов одновременно](how-to-retrieve-many-objects-at-once.md)  
+ [Практическое руководство. Как получить несколько объектов одновременно](how-to-retrieve-many-objects-at-once.md)  
  Описание использования <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A>.  
   
- [Практическое руководство. Фильтрация на уровне DataContext](how-to-filter-at-the-datacontext-level.md)  
+ [Практическое руководство. Как фильтровать данные на уровне DataContext](how-to-filter-at-the-datacontext-level.md)  
  Описывается другое использование метода <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A>.  
   
  [Примеры запросов](query-examples.md)  

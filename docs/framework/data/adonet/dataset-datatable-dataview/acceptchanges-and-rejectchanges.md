@@ -5,17 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e2d1a6fe-31f9-4b83-9728-06c406a3394e
-ms.openlocfilehash: c537fa808fc6ba4c740e71bfd70fe9cd1f3bd31a
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: e29d2404d6d593b9a5b905206af3cdd3bc1a3e51
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70785574"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177596"
 ---
 # <a name="acceptchanges-and-rejectchanges"></a>AcceptChanges и RejectChanges
-После проверки точности изменений <xref:System.Data.DataTable>, внесенных в данные в, можно принять изменения <xref:System.Data.DataRow> <xref:System.Data.DataRow.AcceptChanges%2A> с помощью метода, <xref:System.Data.DataTable>или <xref:System.Data.DataSet>, который будет устанавливать **текущие** значения строк в значение  **Исходные** значения и задаст свойству **RowState** значение **без изменений**. При принятии или отклонении изменений удаляется любая **роверрор** информация, а свойству **HasErrors** присваивается **значение false**. Принятие или отклонение изменений также может затрагивать обновление данных в источнике данных. Дополнительные сведения см. в разделе [Обновление источников данных с помощью DataAdapter](../updating-data-sources-with-dataadapters.md).  
+
+После проверки точности изменений, внесенных в данные в <xref:System.Data.DataTable> , можно принять изменения с помощью <xref:System.Data.DataRow.AcceptChanges%2A> метода <xref:System.Data.DataRow> , <xref:System.Data.DataTable> или <xref:System.Data.DataSet> , который установит **текущие** значения строк в качестве **исходных** значений, и установит для свойства **RowState** значение **без изменений**. При принятии или отклонении изменений удаляется любая **роверрор** информация, а свойству **HasErrors** присваивается **значение false**. Принятие или отклонение изменений также может затрагивать обновление данных в источнике данных. Дополнительные сведения см. в разделе [Обновление источников данных с помощью DataAdapter](../updating-data-sources-with-dataadapters.md).  
   
- Если в **DataTable**существуют ограничения внешнего ключа, изменения, принятые или Отклоненные с помощью **AcceptChanges** и **RejectChanges** , распространяются на дочерние строки **DataRow** в соответствии **с ForeignKeyConstraint. Акцептрежектруле**. Дополнительные сведения см. в разделе [ограничения DataTable](datatable-constraints.md).  
+ Если в **DataTable**существуют ограничения внешнего ключа, изменения, принятые или Отклоненные с помощью **AcceptChanges** и **RejectChanges** , распространяются на дочерние строки **DataRow** в соответствии с объектом **ForeignKeyConstraint. акцептрежектруле**. Дополнительные сведения см. в разделе [ограничения DataTable](datatable-constraints.md).  
   
  В следующем примере происходит проверка на наличие строк с ошибками, по возможности устраняются ошибки и отклоняются строки, в которых ошибка не может быть устранена. Обратите внимание, что для разрешенных ошибок значение **роверрор** сбрасывается в пустую строку, в результате чего свойство **HasErrors** устанавливается в значение **false**. Если все строки с ошибками были разрешены или отклонены, вызывается метод **AcceptChanges** , чтобы принять все изменения для всей **таблицы DataTable**.  
   
@@ -56,10 +57,10 @@ if (workTable.HasErrors)
 workTable.AcceptChanges();  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Data.DataRow>
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataTable>
-- [Управление данными в DataTable](manipulating-data-in-a-datatable.md)
+- [Управление данными в таблице данных](manipulating-data-in-a-datatable.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

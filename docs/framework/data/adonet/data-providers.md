@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
-ms.openlocfilehash: 2be58251c767c937e817edf1ba19309f0c62ac33
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b61fede9144e554ee68f0b41adac36209adb7288
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554740"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177807"
 ---
 # <a name="net-framework-data-providers"></a>Поставщики данных .NET Framework
+
 Поставщик данных .NET Framework используется для подключения к базе данных, исполнения команд и получения результатов. Эти результаты обрабатываются непосредственно, помещаются в <xref:System.Data.DataSet> , чтобы по мере необходимости они были доступны для пользователей вместе с данными из нескольких источников, либо распределяются между уровнями. .NET Framework поставщики данных являются облегченными, создавая минимальный уровень между источником данных и кодом, повышая производительность без ущерба для функциональности.  
   
  В следующей таблице перечислены поставщики данных, которые включены в .NET Framework.  
@@ -28,6 +29,7 @@ ms.locfileid: "90554740"
 |Поставщик данных .NET Framework для SQL Server Compact 4,0.|Предоставляет доступ к данным для Microsoft SQL Server Compact 4,0. Использует пространство имен [System.Data.SqlServerCe](/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) .|  
   
 ## <a name="core-objects-of-net-framework-data-providers"></a>Основные объекты поставщиков данных .NET Framework  
+
  В следующей таблице приведены четыре основных объекта, которые составляют поставщик данных .NET Framework.  
   
 |Объект|Описание|  
@@ -50,6 +52,7 @@ ms.locfileid: "90554740"
 |`ClientPermission`|Для .NET Framework атрибуты управления доступом к коду поставщика данных. Базовым классом для всех объектов `ClientPermission` является <xref:System.Data.Common.DBDataPermission> .|  
   
 ## <a name="net-framework-data-provider-for-sql-server-sqlclient"></a>Поставщик данных .NET Framework для SQL Server (SqlClient)  
+
  Поставщик данных .NET Framework для SQL Server (SqlClient) использует собственный протокол для взаимодействия с SQL Server. Он является легковесным и хорошо работает, поскольку он оптимизирован для прямого доступа к SQL Server без добавления OLE DB или уровня ODBC. На следующем рисунке отличие .NET Framework поставщика данных для SQL Server с .NET Frameworkным поставщиком данных для OLE DB. Поставщик данных .NET Framework для OLE DB взаимодействует с OLE DBным источником данных через компонент службы OLE DB, который предоставляет службы пулов соединений и транзакций, а также поставщик OLE DB для источника данных.  
   
 > [!NOTE]
@@ -73,6 +76,7 @@ using System.Data.SqlClient;
 ```  
   
 ## <a name="net-framework-data-provider-for-ole-db"></a>Поставщик данных .NET Framework для OLE DB  
+
  Поставщик данных .NET Framework для OLE DB (OleDb) использует собственные OLE DB через COM-взаимодействие для обеспечения доступа к данным. Поставщик данных .NET Framework для OLE DB поддерживает как локальные, так и распределенные транзакции. Для распределенных транзакций поставщик данных .NET Framework для OLE DB по умолчанию автоматически закрепляется в транзакции и получает сведения о транзакциях из служб компонентов Windows. Дополнительные сведения см. в разделе [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  В следующей таблице показаны поставщики, которые были протестированы с помощью ADO.NET.  
@@ -101,6 +105,7 @@ using System.Data.OleDb;
 ```  
   
 ## <a name="net-framework-data-provider-for-odbc"></a>Поставщик данных .NET Framework для ODBC  
+
  Поставщик данных .NET Framework для ODBC (ODBC) использует собственный диспетчер драйверов ODBC (DM) для обеспечения доступа к данным. Поставщик данных ODBC поддерживает как локальные, так и распределенные транзакции. Для распределенных транзакций поставщик данных ODBC по умолчанию автоматически задействуется в транзакции и получает сведения о транзакциях из служб компонентов Windows. Дополнительные сведения см. в разделе [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  В следующей таблице приведены драйверы ODBC, протестированные с помощью ADO.NET.  
@@ -127,6 +132,7 @@ using System.Data.Odbc;
 > Поставщик данных .NET Framework для ODBC требует наличия MDAC 2,6 или более поздней версии, и рекомендуется использовать MDAC 2,8 SP1. Загрузить MDAC 2,8 с пакетом обновления 1 (SP1) можно в [центре загрузки Майкрософт](https://www.microsoft.com/download/details.aspx?id=5793).
   
 ## <a name="net-framework-data-provider-for-oracle"></a>Поставщик данных .NET Framework для Oracle  
+
  Поставщик данных .NET Framework для Oracle (OracleClient) обеспечивает доступ к источникам данных Oracle через клиентское по Oracle Software Connectivity. Поставщик данных поддерживает клиентское ПО Oracle версии 8.1.7 или более поздней версии. Поставщик данных поддерживает как локальные, так и распределенные транзакции. Дополнительные сведения см. в разделе [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  Для работы поставщика данных .NET Framework для Oracle требуется клиентское программное обеспечение Oracle (версия 8.1.7 или более поздняя) в системе, прежде чем можно будет подключиться к источнику данных Oracle.  
@@ -146,6 +152,7 @@ using System.Data.OracleClient;
 ```  
   
 ## <a name="choosing-a-net-framework-data-provider"></a>Выбор поставщика данных платформы .NET Framework  
+
  В зависимости от структуры и источника данных для приложения выбранный поставщик данных .NET Framework может повысить производительность, возможности и целостность приложения. В следующей таблице описаны преимущества и ограничения каждого поставщика данных .NET Framework.  
   
 |Поставщик|Примечания|  
@@ -156,9 +163,10 @@ using System.Data.OracleClient;
 |Поставщик данных .NET Framework для Oracle|Рекомендуется для приложений среднего уровня и одноуровневых приложений, использующих источники данных Oracle.|  
   
 ## <a name="entityclient-provider"></a>EntityClient - поставщик  
+
  Поставщик EntityClient используется для доступа к данным на основе модели EDM (Entity Data Model). В отличие от других поставщиков данных .NET этот поставщик не взаимодействует с источником данных непосредственно. Вместо этого для взаимодействия с соответствующим поставщиком данных используется язык Entity SQL. Дополнительные сведения см. [в разделе Поставщик EntityClient для Entity Framework](./ef/entityclient-provider-for-the-entity-framework.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об ADO.NET](ado-net-overview.md)
 - [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)

@@ -2,19 +2,21 @@
 title: Справочник
 ms.date: 03/30/2017
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-ms.openlocfilehash: 55754ef7bb06a1ceac7d4c12098847f4db16e928
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 05ff05d165ad902eba0e984089ab1dde7f24fca7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553562"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91184863"
 ---
 # <a name="reference"></a>Справочник
+
 В этом разделе содержатся справочные сведения для разработчиков [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  Кроме того, рекомендуется искать конкретные проблемы в Документация Майкрософт, особенно для участия в [форуме по LINQ](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), где вы можете обсуждать более сложные темы подробно с экспертами. Вы также можете изучить технический документ с подробным описанием технологии [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], дополненный примерами кода Visual Basic и C#. Дополнительные сведения см. в разделе [LINQ to SQL: интегрированный в язык .NET запрос для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Типы данных и функции](data-types-and-functions.md)  
  Описывает, как конструкции среды CLR имеют соответствующие выражения в SQL, где [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] явно предоставлено преобразование в подсистеме преобразования.  
   
@@ -36,7 +38,8 @@ ms.locfileid: "90553562"
  [Трансляция стандартных операторов запросов](standard-query-operator-translation.md)  
  Описывает [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] , как преобразует стандартные операторы запросов в команды SQL.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [LINQ to SQL](index.md)  
  Предоставляет портал для тем [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   

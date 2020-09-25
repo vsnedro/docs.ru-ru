@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f21e6aba-b76d-46ad-a83e-2ad8e0af1e12
-ms.openlocfilehash: 74b6787162b48f83a48127257dc8e23e31a859b7
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1264d678b4823149498150f13d8783a82890f6a0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286990"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177719"
 ---
 # <a name="dataadapter-parameters"></a>Параметры DataAdapter
+
 Класс <xref:System.Data.Common.DbDataAdapter> имеет четыре свойства, которые служат для получения данных из источника данных и обновления данных в нем: свойство <xref:System.Data.Common.DbDataAdapter.SelectCommand%2A> возвращает данные из источника данных, а свойства <xref:System.Data.Common.DbDataAdapter.InsertCommand%2A>, <xref:System.Data.Common.DbDataAdapter.UpdateCommand%2A> и <xref:System.Data.Common.DbDataAdapter.DeleteCommand%2A> используются для управления изменениями в источнике данных. Свойство `SelectCommand` должно быть установлено до вызова метода `Fill` объекта `DataAdapter`. Свойства `InsertCommand`, `UpdateCommand` или `DeleteCommand` должны быть установлены до вызова метода `Update` объекта `DataAdapter` в зависимости от того, какие изменения были сделаны в данных в <xref:System.Data.DataTable>. Например, если добавлены строки, свойство `InsertCommand` должно быть установлено перед вызовом метода `Update`. Если метод `Update` обрабатывает вставленную, обновленную или удаленную строку, `DataAdapter` использует соответствующее свойство `Command` для обработки действия. Текущие данные об измененной строке передаются в объект `Command` через коллекцию `Parameters`.  
   
  При обновлении строки в источнике данных вызывается инструкция UPDATE, которая использует уникальный идентификатор для идентификации строки в обновляемой таблице. Уникальным идентификатором обычно является значение поля первичного ключа. Инструкция UPDATE использует параметры, содержащие и уникальный идентификатор, и столбцы и обновляемые значения, как показано в следующей инструкции Transact-SQL.  
@@ -43,6 +44,7 @@ parameter.SourceVersion = DataRowVersion.Original
 > Как для операций, так `Fill` `DataAdapter` и для `Get` методов `DataReader` , тип .NET Framework выводится из типа, возвращаемого поставщиком данных .NET Framework. Выводимые типы .NET Framework и методы доступа для типов данных Microsoft SQL Server, OLE DB и ODBC описаны в разделе [сопоставления типов данных в ADO.NET](data-type-mappings-in-ado-net.md).  
   
 ## <a name="parametersourcecolumn-parametersourceversion"></a>Parameter.SourceColumn, Parameter.SourceVersion  
+
  `SourceColumn` и `SourceVersion` могут быть посланы как аргументы в конструктор `Parameter` или установлены как свойства существующих `Parameter`. `SourceColumn` является именем <xref:System.Data.DataColumn> из <xref:System.Data.DataRow>, где значение `Parameter` будет получено. `SourceVersion` задает версию `DataRow`, которую `DataAdapter` использует для получения значения.  
   
  В следующей таблице показаны значения перечисления <xref:System.Data.DataRowVersion>, доступные для использования с `SourceVersion`.  
@@ -57,12 +59,14 @@ parameter.SourceVersion = DataRowVersion.Original
  В примере кода для `SqlClient` в следующем разделе определяется параметр для <xref:System.Data.Common.DbDataAdapter.UpdateCommand%2A>, в котором столбец `CustomerID` используется как `SourceColumn` для двух параметров: `@CustomerID` (`SET CustomerID = @CustomerID`) и `@OldCustomerID` (`WHERE CustomerID = @OldCustomerID`). `@CustomerID`Параметр используется для обновления столбца **CustomerID** до текущего значения в `DataRow` . В результате `CustomerID` `SourceColumn` используется элемент with с `SourceVersion` `Current` . `@OldCustomerID`Параметр используется для обнаружения текущей строки в источнике данных. Так как в версии `Original` строки найдено значение, совпадающее со значением столбца, используется тот же `SourceColumn` (`CustomerID`) с `SourceVersion` для `Original`.  
   
 ## <a name="working-with-sqlclient-parameters"></a>Работа с параметрами SqlClient  
+
  Следующий пример демонстрирует, как создать <xref:System.Data.SqlClient.SqlDataAdapter> и установить <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> в <xref:System.Data.MissingSchemaAction.AddWithKey>, чтобы получить из базы данных дополнительные сведения о схеме. Устанавливаются свойства <xref:System.Data.SqlClient.SqlDataAdapter.SelectCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A> и <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A>, и соответствующие им объекты <xref:System.Data.SqlClient.SqlParameter> добавляются в коллекцию <xref:System.Data.SqlClient.SqlCommand.Parameters%2A>. Метод возвращает объект `SqlDataAdapter`.  
   
  [!code-csharp[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter.SqlDataAdapter Example/CS/source.cs#1)]
  [!code-vb[Classic WebData SqlDataAdapter.SqlDataAdapter Example#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataAdapter.SqlDataAdapter Example/VB/source.vb#1)]  
   
 ## <a name="oledb-parameter-placeholders"></a>Местозаполнители параметров OleDb  
+
  Для объектов <xref:System.Data.OleDb.OleDbDataAdapter> и <xref:System.Data.Odbc.OdbcDataAdapter> для идентификации параметров необходимо использовать в качестве местозаполнителей вопросительные знаки (?).  
   
 ```vb  
@@ -165,7 +169,7 @@ adapter.Fill(customers, "Customers");
 > [!NOTE]
 > Если для параметра не указано имя параметра, то параметру присваивается добавочное имя по умолчанию параметра*N* *,* начиная с "параметр1". Рекомендуется избегать использования параметра*N* в соглашении об именовании при указании имени параметра, так как указываемое имя может конфликтовать с существующим именем параметра по умолчанию в `ParameterCollection` . Если указанное имя уже существует, вызывается исключение.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)
 - [Команды и параметры](commands-and-parameters.md)
