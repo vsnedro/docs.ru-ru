@@ -2,17 +2,18 @@
 title: UNION (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: df98a4db-b00d-4c8b-bd74-0d285f27e1df
-ms.openlocfilehash: a5a20beb0ab55dcbaf2dbbb75801b50ab9ef6722
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 9c4106d26fb73219d7b5f0c6763736aaf9163d4b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319220"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91200983"
 ---
-# <a name="union-entity-sql"></a><span data-ttu-id="099f1-102">UNION (Entity SQL)</span><span class="sxs-lookup"><span data-stu-id="099f1-102">UNION (Entity SQL)</span></span>
-<span data-ttu-id="099f1-103">Сводит результаты двух или более запросов в одну коллекцию.</span><span class="sxs-lookup"><span data-stu-id="099f1-103">Combines the results of two or more queries into a single collection.</span></span>  
+# <a name="union-entity-sql"></a><span data-ttu-id="ea713-102">UNION (Entity SQL)</span><span class="sxs-lookup"><span data-stu-id="ea713-102">UNION (Entity SQL)</span></span>
+
+<span data-ttu-id="ea713-103">Сводит результаты двух или более запросов в одну коллекцию.</span><span class="sxs-lookup"><span data-stu-id="ea713-103">Combines the results of two or more queries into a single collection.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="099f1-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="099f1-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="ea713-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ea713-104">Syntax</span></span>  
   
 ```sql  
 expression  
@@ -20,31 +21,35 @@ UNION [ ALL ]
 expression  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="099f1-105">Аргументы</span><span class="sxs-lookup"><span data-stu-id="099f1-105">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="ea713-105">Аргументы</span><span class="sxs-lookup"><span data-stu-id="ea713-105">Arguments</span></span>  
+
  `expression`  
- <span data-ttu-id="099f1-106">Любое допустимое выражение запроса, возвращающее коллекцию для объединения с данной коллекцией. Все выражения должны быть одного типа с параметром `expression`либо базового или производного типа для типа этого параметра.</span><span class="sxs-lookup"><span data-stu-id="099f1-106">Any valid query expression that returns a collection to combine with the collection All expressions must be of the same type or of a common base or derived type as `expression`.</span></span>  
+ <span data-ttu-id="ea713-106">Любое допустимое выражение запроса, возвращающее коллекцию для объединения с данной коллекцией. Все выражения должны быть одного типа с параметром `expression`либо базового или производного типа для типа этого параметра.</span><span class="sxs-lookup"><span data-stu-id="ea713-106">Any valid query expression that returns a collection to combine with the collection All expressions must be of the same type or of a common base or derived type as `expression`.</span></span>  
   
- <span data-ttu-id="099f1-107">UNION</span><span class="sxs-lookup"><span data-stu-id="099f1-107">UNION</span></span>  
- <span data-ttu-id="099f1-108">Указывает на то, что несколько коллекций следует объединить и возвратить в виде единой коллекции.</span><span class="sxs-lookup"><span data-stu-id="099f1-108">Specifies that multiple collections are to be combined and returned as a single collection.</span></span>  
+ <span data-ttu-id="ea713-107">UNION</span><span class="sxs-lookup"><span data-stu-id="ea713-107">UNION</span></span>  
+ <span data-ttu-id="ea713-108">Указывает на то, что несколько коллекций следует объединить и возвратить в виде единой коллекции.</span><span class="sxs-lookup"><span data-stu-id="ea713-108">Specifies that multiple collections are to be combined and returned as a single collection.</span></span>  
   
- <span data-ttu-id="099f1-109">ALL</span><span class="sxs-lookup"><span data-stu-id="099f1-109">ALL</span></span>  
- <span data-ttu-id="099f1-110">Указывает на то, что несколько коллекций следует объединить и возвратить в виде единой коллекции, включая повторения.</span><span class="sxs-lookup"><span data-stu-id="099f1-110">Specifies that multiple collections are to be combined and returned as a single collection, including duplicates.</span></span> <span data-ttu-id="099f1-111">Если этот аргумент не указан, то повторения удаляются из итоговой коллекции.</span><span class="sxs-lookup"><span data-stu-id="099f1-111">If not specified, duplicates are removed from the result collection.</span></span>  
+ <span data-ttu-id="ea713-109">ALL</span><span class="sxs-lookup"><span data-stu-id="ea713-109">ALL</span></span>  
+ <span data-ttu-id="ea713-110">Указывает на то, что несколько коллекций следует объединить и возвратить в виде единой коллекции, включая повторения.</span><span class="sxs-lookup"><span data-stu-id="ea713-110">Specifies that multiple collections are to be combined and returned as a single collection, including duplicates.</span></span> <span data-ttu-id="ea713-111">Если этот аргумент не указан, то повторения удаляются из итоговой коллекции.</span><span class="sxs-lookup"><span data-stu-id="ea713-111">If not specified, duplicates are removed from the result collection.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="099f1-112">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="099f1-112">Return Value</span></span>  
- <span data-ttu-id="099f1-113">Коллекция того же типа, что и параметр `expression`, или же базового или производного типа для типа этого параметра.</span><span class="sxs-lookup"><span data-stu-id="099f1-113">A collection of the same type or of a common base or derived type as `expression`.</span></span>  
+## <a name="return-value"></a><span data-ttu-id="ea713-112">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="ea713-112">Return Value</span></span>  
+
+ <span data-ttu-id="ea713-113">Коллекция того же типа, что и параметр `expression`, или же базового или производного типа для типа этого параметра.</span><span class="sxs-lookup"><span data-stu-id="ea713-113">A collection of the same type or of a common base or derived type as `expression`.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="099f1-114">Заметки</span><span class="sxs-lookup"><span data-stu-id="099f1-114">Remarks</span></span>  
- <span data-ttu-id="099f1-115">UNION - это один из операторов работы с наборами [!INCLUDE[esql](../../../../../../includes/esql-md.md)] .</span><span class="sxs-lookup"><span data-stu-id="099f1-115">UNION is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators.</span></span> <span data-ttu-id="099f1-116">Все операторы работы с наборами [!INCLUDE[esql](../../../../../../includes/esql-md.md)] выполняются слева направо.</span><span class="sxs-lookup"><span data-stu-id="099f1-116">All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right.</span></span> <span data-ttu-id="099f1-117">Сведения о приоритетах для операторов установки [!INCLUDE[esql](../../../../../../includes/esql-md.md)] см. в разделе [except](except-entity-sql.md).</span><span class="sxs-lookup"><span data-stu-id="099f1-117">For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](except-entity-sql.md).</span></span>  
+## <a name="remarks"></a><span data-ttu-id="ea713-114">Remarks</span><span class="sxs-lookup"><span data-stu-id="ea713-114">Remarks</span></span>  
+
+ <span data-ttu-id="ea713-115">UNION - это один из операторов работы с наборами [!INCLUDE[esql](../../../../../../includes/esql-md.md)] .</span><span class="sxs-lookup"><span data-stu-id="ea713-115">UNION is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators.</span></span> <span data-ttu-id="ea713-116">Все операторы работы с наборами [!INCLUDE[esql](../../../../../../includes/esql-md.md)] выполняются слева направо.</span><span class="sxs-lookup"><span data-stu-id="ea713-116">All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right.</span></span> <span data-ttu-id="ea713-117">Сведения о приоритетах для [!INCLUDE[esql](../../../../../../includes/esql-md.md)] операторов набора см. в разделе [except](except-entity-sql.md).</span><span class="sxs-lookup"><span data-stu-id="ea713-117">For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](except-entity-sql.md).</span></span>  
   
-## <a name="example"></a><span data-ttu-id="099f1-118">Пример</span><span class="sxs-lookup"><span data-stu-id="099f1-118">Example</span></span>  
- <span data-ttu-id="099f1-119">В следующем запросе Entity SQL оператор UNION ALL используется, чтобы объединить результаты двух запросов в единую коллекцию.</span><span class="sxs-lookup"><span data-stu-id="099f1-119">The following Entity SQL query uses the UNION ALL operator to combine the results of two queries into a single collection.</span></span> <span data-ttu-id="099f1-120">Запрос основан на модели AdventureWorks Sales.</span><span class="sxs-lookup"><span data-stu-id="099f1-120">The query is based on the AdventureWorks Sales Model.</span></span> <span data-ttu-id="099f1-121">Для компиляции и запуска этого запроса выполните следующие шаги.</span><span class="sxs-lookup"><span data-stu-id="099f1-121">To compile and run this query, follow these steps:</span></span>  
+## <a name="example"></a><span data-ttu-id="ea713-118">Пример</span><span class="sxs-lookup"><span data-stu-id="ea713-118">Example</span></span>  
+
+ <span data-ttu-id="ea713-119">В следующем запросе Entity SQL оператор UNION ALL используется, чтобы объединить результаты двух запросов в единую коллекцию.</span><span class="sxs-lookup"><span data-stu-id="ea713-119">The following Entity SQL query uses the UNION ALL operator to combine the results of two queries into a single collection.</span></span> <span data-ttu-id="ea713-120">Запрос основан на модели AdventureWorks Sales.</span><span class="sxs-lookup"><span data-stu-id="ea713-120">The query is based on the AdventureWorks Sales Model.</span></span> <span data-ttu-id="ea713-121">Для компиляции и запуска этого запроса выполните следующие шаги.</span><span class="sxs-lookup"><span data-stu-id="ea713-121">To compile and run this query, follow these steps:</span></span>  
   
-1. <span data-ttu-id="099f1-122">Выполните процедуру из статьи [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).</span><span class="sxs-lookup"><span data-stu-id="099f1-122">Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).</span></span>  
+1. <span data-ttu-id="ea713-122">Выполните процедуру из статьи [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).</span><span class="sxs-lookup"><span data-stu-id="ea713-122">Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).</span></span>  
   
-2. <span data-ttu-id="099f1-123">Передайте следующий запрос в качестве аргумента методу `ExecuteStructuralTypeQuery` :</span><span class="sxs-lookup"><span data-stu-id="099f1-123">Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:</span></span>  
+2. <span data-ttu-id="ea713-123">Передайте следующий запрос в качестве аргумента методу `ExecuteStructuralTypeQuery` :</span><span class="sxs-lookup"><span data-stu-id="ea713-123">Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:</span></span>  
   
  [!code-sql[DP EntityServices Concepts#UNION](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#union)]  
   
-## <a name="see-also"></a><span data-ttu-id="099f1-124">См. также</span><span class="sxs-lookup"><span data-stu-id="099f1-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea713-124">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="ea713-124">See also</span></span>
 
-- [<span data-ttu-id="099f1-125">Справочник по Entity SQL</span><span class="sxs-lookup"><span data-stu-id="099f1-125">Entity SQL Reference</span></span>](entity-sql-reference.md)
+- [<span data-ttu-id="ea713-125">Справочник по Entity SQL</span><span class="sxs-lookup"><span data-stu-id="ea713-125">Entity SQL Reference</span></span>](entity-sql-reference.md)
