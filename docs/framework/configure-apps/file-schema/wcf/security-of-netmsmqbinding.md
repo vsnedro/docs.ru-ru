@@ -2,14 +2,15 @@
 title: <security> из <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-ms.openlocfilehash: 7877fd59aff581eee5b62a1ca224dbf51c956069
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 32b066fdf4d8edbbd36fdff7b14bdec87ddc970d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738678"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170081"
 ---
 # <a name="security-of-netmsmqbinding"></a>\<security> из \<netMsmqBinding>
+
 Определяет параметры безопасности для привязки MSMQ. Он указывает, включена ли поддержка транспорта или безопасности SOAP и, если поддержка включена, указывает используемые уровни защиты и режим проверки подлинности.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,11 +34,12 @@ ms.locfileid: "73738678"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |mode|Задает тип безопасности, который контролирует целостность, конфиденциальность и проверку подлинности. Допустимые значения.<br /><br /> -None: отключает безопасность.<br />-Transport: защита и проверка подлинности предоставляются транспортом. Это значение связано с безопасностью сообщений между двумя диспетчерами очереди. Между приложением и диспетчером очереди безопасность сообщений не обеспечивается. Существующие Msmq-приложения функционально равноценны такому режиму безопасности.<br />-Message: определяет безопасность конечного приложения. Безопасность на транспортном уровне не предоставляется. Такие параметры аналогичны параметрам безопасности, предоставляемой другими стандартными привязками.<br />Оба: обеспечивают безопасность на уровне транспорта и сообщений протокола SOAP. На обоих уровнях требуются одни и те же учетные данные.<br /><br /> Значение по умолчанию - Transport. Это атрибут типа <xref:System.ServiceModel.NetMsmqSecurityMode>.|  
   
@@ -52,9 +54,9 @@ ms.locfileid: "73738678"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|binding|Элемент binding элемента[\<netMsmqBinding>](netmsmqbinding.md)|  
+|binding|Элемент binding элемента [\<netMsmqBinding>](netmsmqbinding.md)|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
 - <xref:System.ServiceModel.NetMsmqBinding.Security%2A>

@@ -5,14 +5,15 @@ helpviewer_keywords:
 - appDomainResourceMonitoring element
 - <appDomainResourceMonitoring> element
 ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
-ms.openlocfilehash: 3c6092b6c34bb13c0ad0e66df2d3b7e65ac3de7e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9ecf2e382b5d483377df871835793219b3f74760
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154380"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170276"
 ---
 # <a name="appdomainresourcemonitoring-element"></a>Элемент \<appDomainResourceMonitoring>
+
 Указывает среде собирать статистику для всех доменов приложений в процессе за весь период его существования.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ ms.locfileid: "79154380"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -43,6 +45,7 @@ ms.locfileid: "79154380"
 |`false`|Статистика по мониторингу ресурсов домена приложений не собирается.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,7 +55,8 @@ ms.locfileid: "79154380"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Мониторинг ресурсов домена приложений доступен через класс домена управляемого приложения, интерфейс размещения [ICLRAppDomainResourceMonitor](../../../unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) и трассировку событий для Windows (ETW). При включении мониторинга статистика собирается для всех доменов приложений в процессе в течение жизненного цикла процесса.  
   
  Чтобы включить мониторинг из управляемого кода, используйте <xref:System.AppDomain.MonitoringIsEnabled%2A> свойство.  
@@ -60,6 +64,7 @@ ms.locfileid: "79154380"
  Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как включить отслеживание ресурсов домена приложения.  
   
 ```xml  
@@ -70,7 +75,7 @@ ms.locfileid: "79154380"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [Схема параметров среды выполнения](index.md)

@@ -2,14 +2,15 @@
 title: <parameter>
 ms.date: 03/30/2017
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
-ms.openlocfilehash: 07fa410109a7bd2fa315132c4737301698bb3a93
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2ef674dc8601bc9afaf6b547265988bb8a99f943
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400114"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170172"
 ---
 # \<parameter>
+
 Указывает общий параметр, если объявленный тип является общим типом.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,13 +29,14 @@ ms.locfileid: "70400114"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|индекс|Если объявленный тип является общим типом, указывает общий параметр, который возвращает известный тип.|  
+|index|Если объявленный тип является общим типом, указывает общий параметр, который возвращает известный тип.|  
 |тип|Строка, которая описывает известный тип, используемый для сериализации и десериализации.|  
   
 ## <a name="index-attribute"></a>Атрибут index  
@@ -45,6 +47,7 @@ ms.locfileid: "70400114"
 |"1"|Второй параметр в общем типе. Например, у <xref:System.Collections.Generic.Dictionary%602> есть два параметра. Если известный тип возвращается вторым параметром, атрибуту index присваивается значение 1.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -53,14 +56,15 @@ ms.locfileid: "70400114"
 |-------------|-----------------|  
 |[\<knownType>](knowntype.md)|Указывает известный тип, который может возвращаться полем или свойством объявленного типа.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Дополнительные сведения об известных типах см. в статье о [известных типах контрактов данных](../../../wcf/feature-details/data-contract-known-types.md) и <xref:System.Runtime.Serialization.DataContractSerializer> .  
   
  [\<dataContractSerializer>](datacontractserializer-element.md)Пример использования этого элемента см. в разделе.  
   
  У данного элемента конфигурации не может одновременно быть оба атрибута. Если заданы оба атрибута, возникает исключение <xref:System.Configuration.ConfigurationErrorsException>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Известные типы контрактов данных](../../../wcf/feature-details/data-contract-known-types.md)

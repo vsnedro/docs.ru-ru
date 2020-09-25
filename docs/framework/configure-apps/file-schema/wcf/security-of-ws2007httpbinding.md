@@ -2,14 +2,15 @@
 title: <security> из <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-ms.openlocfilehash: e88f55f3651d1ccd55631dce13a0349ac2772624
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 48b49bf69f791f90ed5b2eea8e6d412438cd9519
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736387"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91169847"
 ---
 # <a name="security-of-ws2007httpbinding"></a>\<security> из \<ws2007HttpBinding>
+
 Представляет параметры безопасности, используемые с [\<ws2007HttpBinding>](ws2007httpbinding.md) элементом.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -39,13 +40,14 @@ ms.locfileid: "73736387"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`mode`|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
+|`mode`|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут Mode  
   
@@ -69,10 +71,11 @@ ms.locfileid: "73736387"
 |-------------|-----------------|  
 |[\<ws2007HttpBinding>](ws2007httpbinding.md)|Привязка безопасности для приложений транспорта HTTP.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот элемент предназначен для взаимодействия со службами, реализующими спецификации WS-*. Безопасность транспорта для этой привязки обеспечивается посредством протокола SSL по протоколам HTTP или HTTPS.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.WSHttpBinding.Security%2A>
