@@ -2,14 +2,15 @@
 title: <clear> элемента <claimTypeRequirements>
 ms.date: 03/30/2017
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
-ms.openlocfilehash: 01f101f7d0dd5da6a834a4ffb2c7e09df0e23cd8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: aa94a012da11bcec6fb5fe270ad9f3574f88e6d7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400524"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172909"
 ---
 # <a name="clear-of-claimtyperequirements-element"></a>\<clear> элемента \<claimTypeRequirements>
+
 Указывает, что все типы утверждений в федеративных учетных данных должны быть удалены. Это обеспечивает запуск пустой коллекции.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,13 +32,16 @@ ms.locfileid: "70400524"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет.  
+
+ Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -45,7 +49,7 @@ ms.locfileid: "70400524"
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-for-message.md)|Задает коллекцию обязательных типов утверждений. Каждый элемент имеет тип <xref:System.ServiceModel.Configuration.ClaimTypeElement>.<br /><br /> В федеративном сценарии службы предъявляют требования к входящим учетным данным. Например, входящие учетные данные должны обладать определенным набором типов утверждений. Каждый элемент в этой коллекции задает типы обязательных и необязательных утверждений, которые могут появляться в федеративных учетных данных.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
 - <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>

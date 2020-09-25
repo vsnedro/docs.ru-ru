@@ -1,5 +1,5 @@
 ---
-title: <filter>Элемент для <add> для<sharedListeners>
+title: <filter> Элемент для <add> для <sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add/filter
@@ -10,14 +10,15 @@ helpviewer_keywords:
 - filters, trace listeners
 - trace listeners, filters
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
-ms.openlocfilehash: 6fb52cdfa5792ab6059b60d8dbb91c107cd666ca
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e140148a342e31d6ade7def8849d8a7738301704
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153457"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173930"
 ---
-# <a name="filter-element-for-add-for-sharedlisteners"></a>\<filter>Элемент для \<add> для\<sharedListeners>
+# <a name="filter-element-for-add-for-sharedlisteners"></a>\<filter> Элемент для \<add> для \<sharedListeners>
+
 Добавляет фильтр к прослушивателю в коллекции `sharedListeners`.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ ms.locfileid: "79153457"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -44,6 +46,7 @@ ms.locfileid: "79153457"
 |**initializeData**|Необязательный атрибут.<br /><br /> Строка, передаваемая конструктору для указанного класса.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -55,12 +58,14 @@ ms.locfileid: "79153457"
 |`sharedListeners`|Коллекция прослушивателей, на которые может ссылаться любой источник или элемент трассировки.|  
 |`add`|Добавляет прослушиватель в коллекцию **шаредлистенерс** .|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Если прослушиватель определен в элементе элемента `<add>` `<sharedListeners>` , то фильтр для этого прослушивателя должен быть определен в `<filter>` элементе, который является дочерним по отношению к `<add>` элементу.  
   
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать `<filter>` элемент для добавления фильтра в прослушиватель трассировки `console` в `sharedListeners` коллекции.  
   
 ```xml  
@@ -85,7 +90,7 @@ ms.locfileid: "79153457"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.TraceFilter>
 - <xref:System.Diagnostics.TraceListener>

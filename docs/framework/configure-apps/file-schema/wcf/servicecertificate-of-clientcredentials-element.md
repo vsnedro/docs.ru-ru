@@ -2,14 +2,15 @@
 title: <serviceCertificate> элемента <clientCredentials>
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 4c7489a171bdd5cb4b747ca99f1b7ff6dd65517b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 502452c664f2dcb0856f72e25ff8b1517f432919
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399684"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172896"
 ---
 # <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate> элемента \<clientCredentials>
+
 Задает сертификат для использования при проверке подлинности службы для клиента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,9 +28,11 @@ ms.locfileid: "70399684"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -46,12 +49,13 @@ ms.locfileid: "70399684"
 |-------------|-----------------|  
 |[\<clientCredentials>](clientcredentials.md)|Задает учетные данные, используемые клиентом для подтверждения своей подлинности при подключении к службе.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот элемент конфигурации содержит параметры, используемые клиентом для проверки сертификата, представленного службой с помощью проверки подлинности SSL. Он также содержит сертификат для службы, который явно задан в клиенте для шифрования сообщений для службы с помощью безопасности сообщений.  
   
  Атрибуты `serviceCertificate` элемента идентичны атрибутам объекта [\<clientCertificate>](clientcertificate-of-clientcredentials-element.md) .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>

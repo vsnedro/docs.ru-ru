@@ -2,14 +2,15 @@
 title: <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
-ms.openlocfilehash: 90a34a4a52b4c7a2e67d733fecba132818cac4fc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 63368355027856118546bc70183b41864eddb0e6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399661"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172883"
 ---
 # \<serviceCredentials>
+
 Задает учетные данные, используемые при проверке подлинности службы, а также параметры, относящиеся к проверке учетных данных клиента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -41,11 +42,12 @@ ms.locfileid: "70399661"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`type`|Строка, задающая тип данного элемента конфигурации.|  
   
@@ -67,7 +69,7 @@ ms.locfileid: "70399661"
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Указывает элемент поведения.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials>

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - trace sources
 - <sources> element
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
-ms.openlocfilehash: 2a76816ee73f516b3c7544877a77531acaa8e09c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 670fb359f892d83feac56c849361c4b980d9a922
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153273"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173813"
 ---
 # <a name="sources-element"></a>Элемент \<sources>
+
 Указывает источники трассировки, инициирующие сообщения трассировки.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -32,9 +33,11 @@ ms.locfileid: "79153273"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -50,10 +53,12 @@ ms.locfileid: "79153273"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
   
-## <a name="remarks"></a>Примечания  
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+## <a name="remarks"></a>Remarks  
+
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как с помощью `<sources>` элемента добавить источник трассировки `mySource` и задать уровень для коммутатора источника с именем `sourceSwitch` . Добавляется прослушиватель трассировки консоли, который записывает данные трассировки на консоль.  
   
 ```xml  
@@ -79,7 +84,7 @@ ms.locfileid: "79153273"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.TraceListener>
 - <xref:System.Diagnostics.DefaultTraceListener>

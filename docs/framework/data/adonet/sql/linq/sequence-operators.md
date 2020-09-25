@@ -2,14 +2,15 @@
 title: Операторы последовательности
 ms.date: 03/30/2017
 ms.assetid: 4d332d32-3806-4451-b7af-25af269194ae
-ms.openlocfilehash: 4feca030d3c398f4286fe9d126cae884afe7945b
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a2394ed57335431fe0246f66219392af5cc0e6b1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792679"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173449"
 ---
 # <a name="sequence-operators"></a>Операторы последовательности
+
 В целом, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] не поддерживает операторы последовательности, имеющие одно или несколько следующих свойств.  
   
 - Принимают лямбда-выражение с параметром индекса.  
@@ -43,8 +44,9 @@ ms.locfileid: "70792679"
 |<xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType>|  
   
 ## <a name="differences-from-net"></a>Отличия от платформы .NET  
+
  Все поддерживаемые операторы последовательности правильно работают в среде (CLR), за исключением `Average`. `Average` возвращает значение, тип которого совпадает с усредняемым типом, тогда как в CLR оператор `Average` всегда возвращает тип <xref:System.Double> или <xref:System.Decimal>. Если исходный аргумент явно приведен к типу double / decimal или селектор приводится к типу double / decimal, в конечном коде SQL также будет присутствовать подобное преобразование и будет получен ожидаемый результат.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных и функции](data-types-and-functions.md)

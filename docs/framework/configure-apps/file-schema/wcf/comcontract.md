@@ -2,14 +2,15 @@
 title: <comContract>
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: b499294af71ba230dcf985d4af1d013b1ca260cf
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 35596f32bf0e0de9081bc0d4c33fb370c7ab708b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850031"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173787"
 ---
 # \<comContract>
+
 Указывает контракт службы интеграции COM+.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -45,11 +46,12 @@ ms.locfileid: "70850031"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |contract|Строка, содержащая тип контракта.|  
 |name|Строка, содержащая имя контракта.|  
@@ -70,7 +72,8 @@ ms.locfileid: "70850031"
 |-------------|-----------------|  
 |comContracts|Содержит коллекцию элементов `comContract`.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Контракты службы интеграции COM+ в настоящее время ограничены `http://tempuri.org` пространством имен, а имя контракта является производным от поддерживающего COM-интерфейса. Однако можно указать альтернативы, используя раздел `comContracts`, а также элемент `comContract` в файле конфигурации. Например, для указания пространства имен, имени контракта и подлежащих включению пользовательских типов, а также других параметров контракта службы можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -90,7 +93,7 @@ ms.locfileid: "70850031"
   
  После инициализации службы указанные пространства имен и имена контрактов применяются к созданным описаниям служб.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>

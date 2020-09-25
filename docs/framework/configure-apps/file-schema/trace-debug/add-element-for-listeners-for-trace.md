@@ -1,5 +1,5 @@
 ---
-title: <add>Элемент для <listeners> для<trace>
+title: <add> Элемент для <listeners> для <trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add
@@ -8,14 +8,15 @@ helpviewer_keywords:
 - <add> element for <listeners>
 - add element for <listeners>
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-ms.openlocfilehash: c64673908dc9afe67d97c08f93e5b9d9533bd34d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: da5c0ccae08a32c324a1633b5a7ff7592efa6e2d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153676"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174047"
 ---
-# <a name="add-element-for-listeners-for-trace"></a>\<add>Элемент для \<listeners> для\<trace>
+# <a name="add-element-for-listeners-for-trace"></a>\<add> Элемент для \<listeners> для \<trace>
+
 Добавляет прослушиватель в коллекцию **Listeners** .  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -33,6 +34,7 @@ ms.locfileid: "79153676"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -58,7 +60,8 @@ ms.locfileid: "79153676"
 |`system.diagnostics`|Задает корневой элемент для раздела конфигурации ASP.NET.|  
 |`trace`|Содержит прослушиватели, которые собирают, хранят и маршрутизируют сообщения трассировки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  <xref:System.Diagnostics.Debug>Классы и <xref:System.Diagnostics.Trace> совместно используют одну и ту же коллекцию **Listeners** . При добавлении объекта прослушивателя в коллекцию в одном из этих классов другой класс использует тот же прослушиватель. Классы прослушивателей являются производными от <xref:System.Diagnostics.TraceListener> .  
   
  Если `name` атрибут прослушивателя трассировки не указан, то <xref:System.Diagnostics.TraceListener.Name%2A> для прослушивателя трассировки по умолчанию используется пустая строка (""). Если у приложения есть только один прослушиватель, можно добавить его без указания имени и удалить его, указав в качестве имени пустую строку. Однако если приложение имеет более одного прослушивателя, необходимо указать уникальные имена для каждого прослушивателя трассировки, что позволяет определять отдельные прослушиватели трассировки в <xref:System.Diagnostics.Debug.Listeners%2A> коллекциях и управлять ими <xref:System.Diagnostics.Trace.Listeners%2A> .  
@@ -83,7 +86,8 @@ ms.locfileid: "79153676"
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|Имя файла, <xref:System.Diagnostics.XmlWriterTraceListener> в который производится запись.|  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать **\<add>** элементы для добавления прослушивателей `MyListener` и `MyEventListener` в коллекцию **Listeners** . `MyListener`создает файл с именем `MyListener.log` и записывает выходные данные в файл. `MyEventListener`создает запись в журнале событий.  
+
+ В следующем примере показано, как использовать **\<add>** элементы для добавления прослушивателей `MyListener` и `MyEventListener` в коллекцию **Listeners** . `MyListener` создает файл с именем `MyListener.log` и записывает выходные данные в файл. `MyEventListener` создает запись в журнале событий.  
   
 ```xml  
 <configuration>  
@@ -101,7 +105,7 @@ ms.locfileid: "79153676"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>

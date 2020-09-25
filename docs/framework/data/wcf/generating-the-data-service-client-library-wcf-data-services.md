@@ -6,14 +6,15 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - Add Service Reference dialog box
 ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
-ms.openlocfilehash: a6a388f837d00d63a39212843c3fa88b28482b26
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 050a791736e90b5daf46fd272197ca21a220afb0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545811"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172623"
 ---
 # <a name="generating-the-data-service-client-library-wcf-data-services"></a>Создание библиотеки клиентов службы данных (службы данных WCF)
+
 Служба данных, которая реализует Open Data Protocol (OData), может возвращать документ метаданных службы, описывающий модель данных, предоставляемую веб-каналом OData. Дополнительные сведения см. в разделе "документ метаданных службы" статьи [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) . Можно использовать диалоговое окно **Добавление ссылки на службу** в Visual Studio, чтобы добавить ссылку на службу на основе OData. При использовании этого средства для добавления ссылки на метаданные, возвращенные веб-каналом OData в клиентском проекте, выполняются следующие действия.  
   
 - Запрашивает документ с метаданными службы из службы данных и интерпретирует возвращенные метаданные.  
@@ -32,6 +33,7 @@ ms.locfileid: "90545811"
  Классы службы данных клиента также можно создать с помощью средства [DataSvcUtil.exe](wcf-data-service-client-utility-datasvcutil-exe.md) из командной строки. Дополнительные сведения см. [в разделе как вручную создавать классы службы данных клиента](how-to-manually-generate-client-data-service-classes-wcf-data-services.md).  
   
 ## <a name="client-data-type-mapping"></a>Сопоставление клиентских типов данных  
+
  При использовании диалогового окна **Добавление ссылки на службу** в Visual Studio или `DataSvcUtil.exe` средства для создания клиентских классов данных, основанных на канале OData, типы данных .NET Framework сопоставляются с типами-примитивами из модели данных следующим образом:  
   
 |Тип модели данных|Тип данных платформы .NET|  
@@ -52,7 +54,7 @@ ms.locfileid: "90545811"
   
  Дополнительные сведения см. в разделе примитивные типы данных статьи [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) .
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)
 - [Краткое руководство](quickstart-wcf-data-services.md)

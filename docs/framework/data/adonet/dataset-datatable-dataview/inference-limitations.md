@@ -2,14 +2,15 @@
 title: Ограничения определения
 ms.date: 03/30/2017
 ms.assetid: 78517994-5d57-44f8-9d20-38812977de09
-ms.openlocfilehash: 10347abc5b01edb4ec6fbf97221d44f4bfb88f54
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9d8191be137661200e1a6b84d68328c1202880ca
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784578"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172779"
 ---
 # <a name="inference-limitations"></a>Ограничения определения
+
 Процесс вывода схемы <xref:System.Data.DataSet> из XML-кода может приводиться в различных схемах в зависимости от XML-элементов в каждом документе. Например, рассмотрим следующие XML-документы.  
   
  Document1:  
@@ -31,9 +32,9 @@ ms.locfileid: "70784578"
   
  Для "document1" процесс вывода создает **набор данных** с именем "documentElement" и таблицу с именем "Element1", так как "Element1" является повторяющимся элементом.  
   
- **Объекте** DocumentElement  
+ **Набор данных:** DocumentElement  
   
- **Таблица** Element1  
+ **Таблица:** Element1  
   
 |Element1_Text|  
 |--------------------|  
@@ -42,9 +43,9 @@ ms.locfileid: "70784578"
   
  Однако для "Document2" процесс вывода создает **набор данных** с именем "невдатасет" и таблицу с именем "documentElement". Element1 выводится в виде столбца, потому что не имеет атрибутов и дочерних элементов.  
   
- **Объекте** невдатасет  
+ **Набор данных:** невдатасет  
   
- **Таблица** DocumentElement  
+ **Таблица:** DocumentElement  
   
 |Element1|  
 |--------------|  
@@ -54,11 +55,11 @@ ms.locfileid: "70784578"
   
  Чтобы избежать расхождений, которые могут возникнуть при формировании схемы из XML-документа, рекомендуется явно указать схему с помощью языка определения схемы XML (XSD) или сокращенных данных XML (XDR) при загрузке **набора данных** из XML. Дополнительные сведения о явном указании схемы **набора данных** с XML-схемой см. [в разделе Наследование реляционной структуры набора данных из схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Определение реляционной структуры DataSet из XML](inferring-dataset-relational-structure-from-xml.md)
-- [Загрузка DataSet из XML](loading-a-dataset-from-xml.md)
-- [Загрузка сведений о схеме DataSet из XML](loading-dataset-schema-information-from-xml.md)
+- [Определение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md)
+- [Загрузка набора данных из XML](loading-a-dataset-from-xml.md)
+- [Загрузка сведений о схеме набора данных из XML](loading-dataset-schema-information-from-xml.md)
 - [Использование XML в наборах данных](using-xml-in-a-dataset.md)
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

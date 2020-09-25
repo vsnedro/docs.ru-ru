@@ -9,12 +9,12 @@ helpviewer_keywords:
 - <requiredRuntime> element
 - container tags, <requiredRuntime> element
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-ms.openlocfilehash: fe96673b95f48cb75d36662a680bf56a59363f9f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 19fa1561ca3acd845918d952379c5227121465b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71697487"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174073"
 ---
 # <a name="requiredruntime-element"></a>Элемент \<requiredRuntime>
 
@@ -38,7 +38,7 @@ safemode="true|false"/>
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`version`|Необязательный атрибут.<br /><br /> Строковое значение, указывающее версию .NET Framework, которую поддерживает это приложение. Строковое значение должно соответствовать имени каталога, обнаруженному в корне установки .NET Framework. Содержимое строкового значения не анализируется.|
 |`safemode`|Необязательный атрибут.<br /><br /> Указывает, будет ли код запуска среды выполнения выполнять поиск в реестре для определения версии среды выполнения.|
@@ -61,7 +61,8 @@ safemode="true|false"/>
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`startup`|Содержит `<requiredRuntime>` элемент.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
+
  Приложения, созданные для поддержки только версии 1,0 среды выполнения, должны использовать `<requiredRuntime>` элемент. Приложения, созданные с помощью версии 1,1 или более поздней версии среды выполнения, должны использовать `<supportedRuntime>` элемент.
 
 > [!NOTE]
@@ -84,7 +85,7 @@ safemode="true|false"/>
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров запуска](index.md)
 - [Схема файла конфигурации](../index.md)

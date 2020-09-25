@@ -2,14 +2,15 @@
 title: ORDER BY (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: c0b61572-ecee-41eb-9d7f-74132ec8a26c
-ms.openlocfilehash: 1233971b172079aa48227d0ec520068afbdf0952
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5e1c418a7f2bd40a42b259fb3784794b13098d7f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150073"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173683"
 ---
 # <a name="order-by-entity-sql"></a>ORDER BY (Entity SQL)
+
 Указывает порядок сортировки для объектов, возвращаемых инструкцией SELECT.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,6 +27,7 @@ ms.locfileid: "79150073"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `order_by_expression`  
  Любое допустимое выражение запроса, задающее свойство, по которому выполняется сортировка. Может быть указано несколько выражений сортировки. Последовательность выражений сортировки в предложении ORDER BY определяет порядок сортировки результирующего набора.  
   
@@ -45,6 +47,7 @@ ms.locfileid: "79150073"
  Пропускает первые `n` элементов.  
   
 ## <a name="remarks"></a>Remarks  
+
  Предложение ORDER BY логически применяется к результату предложения SELECT. Предложение ORDER BY может ссылаться на элементы списка выбора по их псевдонимам. Предложение ORDER BY может также ссылаться на другие переменные, находящиеся в области видимости. Однако если предложение SELECT указано с модификатором DISTINCT, то предложение ORDER BY может ссылаться только на псевдонимы из предложения SELECT.  
   
  `SELECT c AS c1 FROM cs AS c ORDER BY c1.e1, c.e2`  
@@ -53,7 +56,7 @@ ms.locfileid: "79150073"
   
  Если код проходит по упорядоченному набору, отличному от проекции верхнего уровня, то сохранение порядка в выходных данных не гарантируется.  
 
-В следующем примере заказ гарантированно сохраняется:
+В следующем примере гарантируется сохранение порядка:
 
 ```sql  
 SELECT C1.FirstName, C1.LastName  
@@ -61,7 +64,7 @@ SELECT C1.FirstName, C1.LastName
         ORDER BY C1.LastName  
 ```  
 
-В следующем запросе заказ вложенного запроса игнорируется:  
+В следующем запросе не учитывается порядок вложенных запросов:  
 
 ```sql  
 SELECT C2.FirstName, C2.LastName  
@@ -79,6 +82,7 @@ ORDER BY ...
 ```  
   
 ## <a name="restricted-keywords"></a>Служебные ключевые слова  
+
  Следующие ключевые слова при использовании в предложении `ORDER BY` необходимо заключать в кавычки.  
   
 - CROSS  
@@ -100,9 +104,10 @@ ORDER BY ...
 - Значение  
   
 ## <a name="ordering-nested-queries"></a>Упорядочение вложенных запросов  
+
  Платформа Entity Framework позволяет разместить вложенное выражение в любом месте запроса. Порядок вложенного запроса не сохраняется.  
 
-Следующий запрос закажет результаты по фамилии:  
+Следующий запрос упорядочивает результаты по фамилии:  
 
 ```sql  
 SELECT C1.FirstName, C1.LastName  
@@ -110,7 +115,7 @@ SELECT C1.FirstName, C1.LastName
         ORDER BY C1.LastName  
 ```  
 
-В следующем запросе заказ вложенного запроса игнорируется:  
+В следующем запросе не учитывается порядок вложенных запросов:  
 
 ```sql  
 SELECT C2.FirstName, C2.LastName  
@@ -120,6 +125,7 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем запросе [!INCLUDE[esql](../../../../../../includes/esql-md.md)] оператор ORDER BY задает порядок сортировки для объектов, возвращаемых инструкцией SELECT. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
 1. Выполните процедуру из статьи [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
@@ -132,6 +138,6 @@ SELECT C2.FirstName, C2.LastName
 
 - [Выражения запросов](query-expressions-entity-sql.md)
 - [Справочник по Entity SQL](entity-sql-reference.md)
-- [Пропустить](skip-entity-sql.md)
-- [Предел](limit-entity-sql.md)
+- [SKIP](skip-entity-sql.md)
+- [Размер](limit-entity-sql.md)
 - [Вверх](top-entity-sql.md)

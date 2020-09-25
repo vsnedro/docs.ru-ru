@@ -2,14 +2,15 @@
 title: <udpAnnouncementEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 5b3fa9c5-f372-4df9-a9d6-1e426063b721
-ms.openlocfilehash: 8dabf8845126705d082d080b643688ed62883f39
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 67503b1bc3c6282ff5018adc20acbb89de49ba50
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854913"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173761"
 ---
 # \<udpAnnouncementEndpoint>
+
 Этот элемент конфигурации определяет стандартную конечную точку, используемую службами для отправки сообщений с объявлениями по привязке UDP. Имеет фиксированный контракт и поддерживает две версии обнаружения. Кроме того, она имеет фиксированную привязку UDP и значение адреса по умолчанию, как определено в спецификациях WS-Discovery (WS-Discovery от апреля 2005 или WS-Discovery версии 1.1). Можно задать многопоточный адрес, который будет использовать для отправки и получения сообщений объявлений.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,11 +34,12 @@ ms.locfileid: "70854913"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |discoveryVersion|Строка, указывающая одну из двух версий протокола WS-Discovery. Допустимые значения: WSDiscovery11 и WSDiscoveryApril2005. Это значение имеет тип <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion>.|  
 |maxAnnouncementDelay|Значение «Timespan», указывающее максимальную задержку, в течение которой протокол Discovery не будет отправлять сообщение Hello. Перед отправкой сообщения ожидают произвольное время в диапазоне от 0 до значения этого атрибута. Этот атрибут используется для назначения короткой произвольной задержки для предотвращения перегрузки сети, когда сеть становится недоступной, а все службы входят в сеть одновременно.|  
@@ -57,6 +59,7 @@ ms.locfileid: "70854913"
 |[\<standardEndpoints>](standardendpoints.md)|Коллекция стандартных конечных точек, одно или несколько свойств которых (адрес, привязка, контракт) являются фиксированными.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано прослушивание клиентом сообщений с объявлением по многоадресному протоколу UDP с адресом многоадресной рассылки по умолчанию, а также с указанным адресом многоадресной рассылки UDP.  
   
 ```xml  
@@ -81,6 +84,6 @@ ms.locfileid: "70854913"
 </standardEndpoints>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>

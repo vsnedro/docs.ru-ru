@@ -8,14 +8,15 @@ helpviewer_keywords:
 - requestCaching element
 - <requestCaching> element
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-ms.openlocfilehash: afee69eb894518b1c88483e34a1d64d452019244
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3eb32b7ae643efdb19892410b669c1e7ff80e0ad
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74802131"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174164"
 ---
 # <a name="requestcaching-element-network-settings"></a>Элемент \<requestCaching> (параметры сети)
+
 Управляет механизмом кэширования для сетевых запросов.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -36,15 +37,16 @@ ms.locfileid: "74802131"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|`isPrivateCache`|Указывает, обеспечивает ли кэш изоляцию между данными разных пользователей. Значение по умолчанию — `true`. Это значение должно быть `false` для приложений среднего уровня.|  
+|`isPrivateCache`|Указывает, обеспечивает ли кэш изоляцию между данными разных пользователей. Значение по умолчанию — `true`. Это значение должно быть `false` для приложений среднего уровня.|  
 |`disableAllCaching`|Указывает, что кэширование отключено для всех веб-ответов и не может быть переопределено программным способом.|  
-|`defaultPolicyLevel`|Одно из значений в перечислении <xref:System.Net.Cache.RequestCacheLevel>. Значение по умолчанию — `BypassCache`.|  
+|`defaultPolicyLevel`|Одно из значений в перечислении <xref:System.Net.Cache.RequestCacheLevel>. Значение по умолчанию — `BypassCache`.|  
 |`unspecifiedMaximumAge`|Задает время по умолчанию, по истечении которого содержимое помечается как просроченное.|  
   
 ## <a name="policylevel-attribute"></a>Атрибут Полицилевел  
@@ -65,7 +67,7 @@ ms.locfileid: "74802131"
 |Элемент|Описание|  
 |-------------|-----------------|  
 |[дефаулсттпкачеполици](defaulthttpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование HTTP и описывает политику кэширования по умолчанию.|  
-|[\<defaultFtpCachePolicy>Элемент (параметры сети)](defaultftpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование FTP и описывает политику кэширования по умолчанию.|  
+|[Элемент \<defaultFtpCachePolicy> (параметры сети)](defaultftpcachepolicy-element-network-settings.md)|Необязательный элемент.<br /><br /> Описывает, активно ли кэширование FTP и описывает политику кэширования по умолчанию.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -74,6 +76,7 @@ ms.locfileid: "74802131"
 |[system.net](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как отключить все кэширование.  
   
 ```xml  
@@ -86,7 +89,7 @@ ms.locfileid: "74802131"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.Cache?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)

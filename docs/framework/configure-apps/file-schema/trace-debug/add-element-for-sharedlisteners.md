@@ -8,15 +8,16 @@ helpviewer_keywords:
 - <add> element for <sharedListeners>
 - add element for <sharedListeners>
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-ms.openlocfilehash: 5588892ec75a791eda1eb043936c0af95e79354e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f0ede5f9dc19e9589afc888e7fcd01785bc1840c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153611"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174034"
 ---
 # <a name="add-element-for-sharedlisteners"></a>Элемент \<add> для \<sharedListeners>
-Добавляет прослушиватель в коллекцию `sharedListeners`. `sharedListeners`— Это коллекция прослушивателей, [\<source>](source-element.md) на которые [\<trace>](trace-element.md) могут ссылаться любые или.  По умолчанию прослушиватели в `sharedListeners` коллекции не помещаются в `Listeners` коллекцию. Они должны быть добавлены по имени в [\<source>](source-element.md) или [\<trace>](trace-element.md) . Невозможно получить прослушиватели в `sharedListeners` коллекции в коде во время выполнения.  
+
+Добавляет прослушиватель в коллекцию `sharedListeners`. `sharedListeners` — Это коллекция прослушивателей, [\<source>](source-element.md) на которые [\<trace>](trace-element.md) могут ссылаться любые или.  По умолчанию прослушиватели в `sharedListeners` коллекции не помещаются в `Listeners` коллекцию. Они должны быть добавлены по имени в [\<source>](source-element.md) или [\<trace>](trace-element.md) . Невозможно получить прослушиватели в `sharedListeners` коллекции в коде во время выполнения.  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
@@ -34,6 +35,7 @@ ms.locfileid: "79153611"
 ```
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -59,7 +61,8 @@ ms.locfileid: "79153611"
 |`system.diagnostics`|Задает прослушиватели трассировки, собирающие, хранящие и маршрутизирующие сообщения, а также уровень, на котором установлен ключ трассировки.|  
 |`sharedListeners`|Коллекция прослушивателей, на которые может ссылаться любой источник или элемент трассировки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Классы прослушивателей, поставляемые с .NET Framework, являются производными от <xref:System.Diagnostics.TraceListener> класса. Значение `name` атрибута используется для добавления общего прослушивателя в `Listeners` коллекцию либо для трассировки, либо для источника трассировки. Значение `initializeData` атрибута зависит от типа создаваемого прослушивателя. Не все прослушиватели трассировки нуждаются в указании `initializeData` .  
   
 > [!NOTE]
@@ -77,10 +80,12 @@ ms.locfileid: "79153611"
 |<xref:System.Diagnostics.XmlWriterTraceListener>|Имя файла, <xref:System.Diagnostics.XmlWriterTraceListener> в который производится запись.|  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано, как использовать `<add>` элементы для добавления в <xref:System.Diagnostics.TextWriterTraceListener> `textListener` `sharedListeners` коллекцию.   `textListener`добавляется по имени в `Listeners` коллекцию для источника трассировки `TraceSourceApp` . `textListener`Прослушиватель записывает выходные данные трассировки в файл myListener. log.  
+
+ В следующем примере показано, как использовать `<add>` элементы для добавления в <xref:System.Diagnostics.TextWriterTraceListener> `textListener` `sharedListeners` коллекцию.   `textListener` добавляется по имени в `Listeners` коллекцию для источника трассировки `TraceSourceApp` . `textListener`Прослушиватель записывает выходные данные трассировки в файл myListener. log.  
   
 ```xml  
 <configuration>  
@@ -108,7 +113,7 @@ ms.locfileid: "79153611"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>
