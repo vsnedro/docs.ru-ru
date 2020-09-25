@@ -10,14 +10,15 @@ helpviewer_keywords:
 - add element, webRequestModules
 - <add> element, webRequestModules
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-ms.openlocfilehash: f4edce948033478aab59a2aff61abadc55a327ce
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8d792b967d967540469dca7c090e0f905ecb2e6b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155028"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201763"
 ---
 # <a name="add-element-for-webrequestmodules-network-settings"></a>Элемент \<add> для webRequestModules (параметры сети)
+
 Добавляет пользовательский модуль веб-запросов в приложение.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -35,16 +36,18 @@ ms.locfileid: "79155028"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Описание**|  
+|**Attribute**|**Описание**|  
 |-------------------|---------------------|  
 |`prefix`|Префикс URI для запросов, обрабатываемых этим модулем веб-запросов.|  
 |`type`|Полное имя типа (обозначенное <xref:System.Type.FullName%2A> свойством) и имя сборки (обозначенное <xref:System.Reflection.Assembly.FullName%2A> свойством), разделенные запятыми, которые реализуют этот модуль веб-запросов.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -53,7 +56,8 @@ ms.locfileid: "79155028"
 |-----------------|---------------------|  
 |[webRequestModules](webrequestmodules-element-network-settings.md)|Указывает модули, используемые для запроса сведений от сетевых узлов.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `prefix`Атрибут определяет префикс URI, который использует указанный модуль веб-запросов. Модули веб-запросов обычно регистрируются для работы с конкретным протоколом, например HTTP или FTP, но могут быть зарегистрированы, чтобы обрабатывать запросы к определенному серверу или пути на сервере.  
   
  Модуль веб-запросов создается, когда в метод передается соответствующий префикс URI <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> .  
@@ -63,9 +67,11 @@ ms.locfileid: "79155028"
  Значением `type` атрибута должно быть допустимое имя типа и соответствующее имя сборки, разделенные запятыми.
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере регистрируется пользовательский модуль веб-запросов для HTTP. Необходимо заменить значения для Version и PublicKeyToken правильными значениями для указанного модуля.  
   
 ```xml  
@@ -81,7 +87,7 @@ ms.locfileid: "79155028"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.WebRequest>
 - [Схема параметров сети](index.md)

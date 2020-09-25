@@ -8,14 +8,15 @@ helpviewer_keywords:
 - authenticationModules element
 - <authenticationModules> element
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-ms.openlocfilehash: b502cc4a0958f074018d4b0ce6b3fb118b811c2f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 154a73a5fe3fa9e2b6b1c9e5c462b76bdc1ba640
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154976"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201750"
 ---
 # <a name="authenticationmodules-element-network-settings"></a>Элемент \<authenticationModules> (параметры сети)
+
 Указывает модули, используемые для проверки подлинности сетевых запросов.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -30,17 +31,19 @@ ms.locfileid: "79154976"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[добавление](add-element-for-authenticationmodules-network-settings.md)|Добавляет модуль проверки подлинности в приложение.|  
-|[открытым](clear-element-for-authenticationmodules-network-settings.md)|Удаляет из приложения все модули проверки подлинности.|  
+|[add](add-element-for-authenticationmodules-network-settings.md)|Добавляет модуль проверки подлинности в приложение.|  
+|[пусто](clear-element-for-authenticationmodules-network-settings.md)|Удаляет из приложения все модули проверки подлинности.|  
 |[remove](remove-element-for-authenticationmodules-network-settings.md)|Удаляет модуль проверки подлинности из приложения.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -49,13 +52,16 @@ ms.locfileid: "79154976"
 |-----------------|---------------------|  
 |[system.net](system-net-element-network-settings.md)|Содержит параметры сети, определяющие способ подключения .NET Framework к Интернету.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `authenticationModule`Элемент указывает модули проверки подлинности, которые выполняют процесс проверки подлинности с сервером. Модуль проверки подлинности должен реализовывать <xref:System.Net.IAuthenticationModule> интерфейс.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере включается модуль проверки подлинности. Необходимо заменить значения для Version и PublicKeyToken правильными значениями для указанного модуля.  
   
 ```xml  
@@ -69,7 +75,7 @@ ms.locfileid: "79154976"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>

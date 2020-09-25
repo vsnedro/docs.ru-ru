@@ -8,14 +8,15 @@ helpviewer_keywords:
 - <nameEntry> element
 - nameEntry element
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
-ms.openlocfilehash: a339638587f8b544bbc1b0073553f6232ce09694
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4341b1fcd3762e5aa55f0ba988f7f49d4b5cacd6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71699777"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201776"
 ---
 # <a name="nameentry-element"></a>Элемент \<nameEntry>
+
 Сопоставляет имя класса с понятным именем алгоритма, что позволяет одному классу иметь несколько понятных имен.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -31,6 +32,7 @@ ms.locfileid: "71699777"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -41,6 +43,7 @@ ms.locfileid: "71699777"
 |**class**|Обязательный атрибут.<br /><br /> Задает значение для атрибута **Name** в [\<cryptoClass>](cryptoclass-element.md) элементе.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -50,10 +53,12 @@ ms.locfileid: "71699777"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`system.web`|Задает корневой элемент для раздела конфигурации ASP.NET.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Атрибут **Name** может быть именем одного из абстрактных классов, найденных в <xref:System.Security.Cryptography> пространстве имен. При вызове метода **CREATE** для абстрактного криптографического класса имя абстрактного класса передается в <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> метод. **CreateFromName** возвращает экземпляр типа, указанного атрибутом **класса** . Если атрибут **Name** имеет короткое имя, например RSA, это имя можно использовать при вызове метода **CreateFromName** .  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать **\<nameEntry>** элемент для ссылки на криптографический класс и настройки среды выполнения. Затем можно передать строку "RSA" в <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> метод и использовать <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> метод для возврата `MyCryptoRSAClass` объекта.  
   
 ```xml  
@@ -78,6 +83,6 @@ ms.locfileid: "71699777"
 ## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров криптографии](index.md)
-- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
+- [Схема параметров шифрования](index.md)
+- [службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)

@@ -8,14 +8,15 @@ helpviewer_keywords:
 - filter element for <add> for <listeners> for <trace>
 - <filter> element for <add> for <listeners> for <trace>
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
-ms.openlocfilehash: b6c2c2bf7fe953a75f9d8129039ef33b4d8a3f56
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d856fc742bc2dca51095ce0866dcbfdaadadf64d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153470"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176114"
 ---
 # <a name="filter-element-for-add-for-listeners-for-trace"></a>\<filter>Элемент для \<add> для \<listeners>\<trace>
+
 Добавляет фильтр в прослушиватель в `Listeners` коллекции для трассировки.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ ms.locfileid: "79153470"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -44,6 +46,7 @@ ms.locfileid: "79153470"
 |`initializeData`|Необязательный атрибут.<br /><br /> Строка, передаваемая конструктору для указанного класса фильтра.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -56,12 +59,14 @@ ms.locfileid: "79153470"
 |`listeners`|Содержит прослушиватели, собирающие, сохраняющие и направляющие сообщения. Прослушиватели направляют выходные данные трассировки в соответствующий целевой объект.|  
 |`add`|Добавляет прослушиватель в коллекцию `Listeners`.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `<filter>`Элемент должен содержаться в `<add>` элементе для прослушивателя трассировки, который указывает тип прослушивателя, а не только имя прослушивателя, определенного в [\<sharedListeners>](sharedlisteners-element.md) . Если прослушиватель определен в [\<sharedListeners>](sharedlisteners-element.md) , то фильтр для этого прослушивателя должен быть определен в этом элементе.  
   
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как с помощью `<filter>` элемента добавить фильтр в прослушиватель `console` в `Listeners` коллекции для трассировки, указав уровень события фильтра в качестве `Error` .  
   
 ```xml  
@@ -81,7 +86,7 @@ ms.locfileid: "79153470"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.TraceListener>

@@ -2,14 +2,15 @@
 title: <netTcpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-ms.openlocfilehash: 88b3da6c81d771db255f6c0a4e86984c9ba294fe
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: bb6094b962c0f1199f0a16eb7d0821a95eba4c77
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546156"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195039"
 ---
 # \<netTcpContextBinding>
+
 Задает контекст для <xref:System.ServiceModel.NetTcpBinding>, который требует, чтобы уровень защиты был подписан. Механизмом contextExchangeMechanism для привязки NetTcpContextBinding является SOAPHeader.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -62,6 +63,7 @@ ms.locfileid: "90546156"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -81,7 +83,7 @@ ms.locfileid: "90546156"
 |portSharingEnabled|Логическое значение, определяющее, включено ли совместное использование порта TCP для этого подключения. Если атрибут имеет значение `false`, для каждой привязки используется собственный порт. Этот параметр действителен только для служб, так как он не затрагивает клиенты.|  
 |receiveTimeout|Значение <xref:System.TimeSpan>, которое задает длительность времени ожидания для завершения операции получения. Это значение должно быть больше или равно <xref:System.TimeSpan.Zero>. Значение по умолчанию - 00:10:00.|  
 |sendTimeout|Значение <xref:System.TimeSpan>, которое задает длительность времени ожидания для завершения операции отправки. Это значение должно быть больше или равно <xref:System.TimeSpan.Zero>. Значение по умолчанию - 00:01:00.|  
-|transactionFlow|Логическое значение, определяющее, поддерживает ли привязка потоковые спецификации WS-Transactions. Значение по умолчанию — `false`.|  
+|transactionFlow|Логическое значение, определяющее, поддерживает ли привязка потоковые спецификации WS-Transactions. Значение по умолчанию — `false`.|  
 |transactionProtocol|Указывает протокол транзакций, используемый с данной привязкой. Допустимы следующие значения:<br /><br /> -OleTransactions<br />-WSAtomicTransactionOctober2004<br /><br /> Значение по умолчанию - OleTransactions. Это атрибут типа <xref:System.ServiceModel.TransactionProtocol>.|  
 |transferMode|Значение <xref:System.ServiceModel.TransferMode>, которое указывает, следует ли помещать сообщения в буфер или передавать их потоком по запросу или отклику.|  
   
@@ -99,7 +101,7 @@ ms.locfileid: "90546156"
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|Этот элемент содержит коллекцию стандартных и пользовательских привязок.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.NetTcpBinding>
 - <xref:System.ServiceModel.NetTcpContextBinding>

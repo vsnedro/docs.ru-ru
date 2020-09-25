@@ -10,14 +10,15 @@ helpviewer_keywords:
 - <remove> element, webRequestModules
 - <webRequestModules>, remove element
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
-ms.openlocfilehash: afa1aef8ea71f43a136987ec5b6e1925c6d9fb40
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 65e8b1f2088015b86d4f981f07875d236a11a617
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154729"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176192"
 ---
 # <a name="remove-element-for-webrequestmodules-network-settings"></a>Элемент \<remove> для webRequestModules (параметры сети)
+
 Удаляет пользовательский модуль веб-запросов из приложения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,15 +35,17 @@ ms.locfileid: "79154729"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|**Attribute (XElement Dynamic Property)** (Attribute (динамическое свойство XElement))|**Описание**|  
+|**Attribute**|**Описание**|  
 |-------------------|---------------------|  
 |`prefix`|Префикс URI для запросов, обрабатываемых этим модулем веб-запросов.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -51,12 +54,14 @@ ms.locfileid: "79154729"
 |-----------------|---------------------|  
 |[webRequestModules](webrequestmodules-element-network-settings.md)|Указывает модули, используемые для запроса сведений от сетевых узлов.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `remove`Элемент удаляет зарегистрированный модуль веб-запросов для указанного префикса URI.  
   
  Значение `prefix` атрибута должно быть начальными символами допустимого универсального кода ресурса (URI), например " `http` " или " `http://www.contoso.com` ".  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
@@ -77,7 +82,7 @@ ms.locfileid: "79154729"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.WebRequest>
 - [Схема параметров сети](index.md)

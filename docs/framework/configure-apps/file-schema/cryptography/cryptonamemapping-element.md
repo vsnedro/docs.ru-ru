@@ -8,14 +8,15 @@ helpviewer_keywords:
 - <cryptoNameMapping> element
 - cryptoNameMapping element
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
-ms.openlocfilehash: d31c5cd52ffe0e2a6eb5784735e76436d216444b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9ffae33a3c8a06d6cfcabf5a58b7d72baeda79c5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155223"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201802"
 ---
 # <a name="cryptonamemapping-element"></a>Элемент \<cryptoNameMapping>
+
 Содержит сопоставления классов с понятными именами.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -31,9 +32,11 @@ ms.locfileid: "79155223"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -53,6 +56,7 @@ ms.locfileid: "79155223"
 |`mscorlib`|Содержит \<cryptographySettings> элемент.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать **\<cryptoNameMapping>** элемент для ссылки на криптографический класс и настройки среды выполнения. Затем можно передать строку "RSA" в <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> метод и использовать <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> метод для возврата `MyCryptoRSAClass` объекта.  
   
 ```xml  
@@ -77,6 +81,6 @@ ms.locfileid: "79155223"
 ## <a name="see-also"></a>См. также
 
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров криптографии](index.md)
-- [Службы шифрования](../../../../standard/security/cryptographic-services.md)
+- [Схема параметров шифрования](index.md)
+- [службы шифрования](../../../../standard/security/cryptographic-services.md)
 - [Настройка криптографических классов](../../configure-cryptography-classes.md)

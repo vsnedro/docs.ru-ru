@@ -2,14 +2,15 @@
 title: <add> из <knownCertificates>
 ms.date: 03/30/2017
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
-ms.openlocfilehash: 29b067e6ec20992084f9ab3bab087222bdd56da2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 453593918de15613edb801cca8a16c9dbf71aa90
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400623"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176088"
 ---
 # <a name="add-of-knowncertificates"></a>\<add> из \<knownCertificates>
+
 Добавляет сертификат X.509 в коллекцию известных сертификатов.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,11 +35,12 @@ ms.locfileid: "70400623"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |findValue|Строка. Значение, которое нужно найти.|  
 |storeLocation|Перечисление. Одно из двух местоположений хранилища, где следует проводить поиск.|  
@@ -70,6 +72,7 @@ ms.locfileid: "70400623"
 |Перечисление|К числу значений относятся следующие: AddressBook, AuthRoot, CertificateAuthority, Disallowed, My, Root, TrustedPeople и TrustedPublisher.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -78,7 +81,8 @@ ms.locfileid: "70400623"
 |-------------|-----------------|  
 |[\<knownCertificates>](knowncertificates.md)|Представляет коллекцию сертификатов X.509, предоставленную службой STS для проверки маркеров безопасности.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  В сценарии с выданным маркером имеется три этапа. На первом этапе клиент, пытающийся получить доступ к службе, ссылается на *службу маркеров безопасности*. Затем служба маркеров безопасности проводит проверку подлинности клиента и выдает клиенту маркер, обычно на языке Security Assertions Markup Language (SAML). После этого клиент возвращается к службе с этим маркером. Служба проверяет наличие в маркере данных, позволяющих проверить подлинность маркера и, соответственно, самого клиента. Для проверки подлинности маркера сертификат, используемый службой маркеров безопасности, должен быть известен службе.  
   
  [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)Элемент является репозиторием для всех таких сертификатов службы безопасных маркеров. Чтобы добавить сертификаты, используйте [\<knownCertificates>](knowncertificates.md) . Вставьте [ \<add> \<knownCertificates> элемент element](add-of-knowncertificates.md) для каждого сертификата, как показано в следующем примере.  
@@ -99,6 +103,7 @@ ms.locfileid: "70400623"
  Чтобы просмотреть условия, необходимые для проверки подлинности клиента в Федеративной службе, а также дополнительные сведения об использовании этого элемента конфигурации, см. раздел [как настроить учетные данные на служба федерации](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md). Дополнительные сведения о федеративных сценариях см. в разделе [Федерация и выданные токены](../../../wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере демонстрируется добавление сертификата в хранилище сертификатов службы STS.  
   
 ```xml  
@@ -118,7 +123,7 @@ ms.locfileid: "70400623"
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
