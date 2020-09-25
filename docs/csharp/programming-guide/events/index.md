@@ -7,19 +7,21 @@ helpviewer_keywords:
 - C# language, events
 - events [C#]
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-ms.openlocfilehash: 86ded81de4b9191c50b993c08b0e87712ff69020
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 14c18006e393dece5d32d30c2a727d797515c779
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545497"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91167461"
 ---
 # <a name="events-c-programming-guide"></a>События (Руководство по программированию в C#)
+
 События позволяют [классу](../../language-reference/keywords/class.md) или объекту уведомлять другие классы или объекты о возникновении каких-либо ситуаций. Класс, отправляющий (или *порождающий*) событие, называется *издателем* , а классы, принимающие (или *обрабатывающие*) событие, называются *подписчиками*.  
   
 В типичном веб-приложении или приложении Windows Forms на C# вы подписываетесь на события, вызываемые элементами управления, такими как кнопки и списки. Вы можете использовать интегрированную среду разработки (IDE) Visual C#, чтобы просмотреть события, публикуемые элементом управления, и выбрать те из них, которые необходимо обрабатывать. IDE позволяет автоматически добавлять пустой метод обработчика событий и код для подписки на событие. Дополнительные сведения см. в разделе [Практическое руководство. Подписка и отмена подписки на события](./how-to-subscribe-to-and-unsubscribe-from-events.md).
   
 ## <a name="events-overview"></a>Общие сведения о событиях  
+
  События имеют следующие свойства:  
   
 - Издатель определяет, когда возникает событие; подписчики определяют, какое действие выполняется в ответ на событие.  
@@ -35,6 +37,7 @@ ms.locfileid: "90545497"
 - В библиотеке классов .NET события основываются на делегате <xref:System.EventHandler> и базовом классе <xref:System.EventArgs>.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  Дополнительные сведения можно найти в разделе  
   
 - [Практическое руководство. Подписка и отмена подписки на события](./how-to-subscribe-to-and-unsubscribe-from-events.md)
@@ -52,6 +55,7 @@ ms.locfileid: "90545497"
 Дополнительные сведения см. в разделе [События](~/_csharplang/spec/classes.md#events) в [Спецификации языка C#](/dotnet/csharp/language-reference/language-specification/introduction). Спецификация языка является предписывающим источником информации о синтаксисе и использовании языка C#.
   
 ## <a name="featured-book-chapters"></a>Главы в популярных книгах  
+
  [Делегаты, события и лямбда-выражения](/previous-versions/visualstudio/visual-studio-2008/ff518994(v=orm.10)) в [справочном руководстве по C# 3.0, третье издание. Более 250 решений для программистов на C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff518995(v=orm.10))  
   
  [Делегаты и события](/previous-versions/visualstudio/visual-studio-2008/ff652490(v=orm.10)) в [изучении C# 3.0. Овладение основными понятиями C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff652493(v=orm.10))  
