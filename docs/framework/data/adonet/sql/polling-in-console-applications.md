@@ -5,20 +5,22 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
-ms.openlocfilehash: 0cefca33bde94855a2bb20a6404dfd4e75a954c2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 35275206e0486c35f262116fa1deb06b9f285723
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174528"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183134"
 ---
-# <a name="polling-in-console-applications"></a><span data-ttu-id="fcb82-102">Выполнение опросов в консольных приложениях</span><span class="sxs-lookup"><span data-stu-id="fcb82-102">Polling in Console Applications</span></span>
-<span data-ttu-id="fcb82-103">Асинхронные операции в ADO.NET позволяют инициировать длительные операции с базами данных в одном потоке, одновременно выполняя другие задачи в другом.</span><span class="sxs-lookup"><span data-stu-id="fcb82-103">Asynchronous operations in ADO.NET allow you to initiate time-consuming database operations on one thread while performing other tasks on another thread.</span></span> <span data-ttu-id="fcb82-104">Однако в большинстве сценариев, в конечном счете, вы достигнете точки, при которой вам нужно будет остановить работу приложения до завершения операции с базой данных.</span><span class="sxs-lookup"><span data-stu-id="fcb82-104">In most scenarios, however, you will eventually reach a point where your application should not continue until the database operation is complete.</span></span> <span data-ttu-id="fcb82-105">В таких случаях полезно выполнить опрос асинхронной операции, чтобы определить, завершена ли операция.</span><span class="sxs-lookup"><span data-stu-id="fcb82-105">For such cases, it is useful to poll the asynchronous operation to determine whether the operation has completed or not.</span></span>  
+# <a name="polling-in-console-applications"></a><span data-ttu-id="a4027-102">Выполнение опросов в консольных приложениях</span><span class="sxs-lookup"><span data-stu-id="a4027-102">Polling in Console Applications</span></span>
+
+<span data-ttu-id="a4027-103">Асинхронные операции в ADO.NET позволяют инициировать длительные операции с базами данных в одном потоке, одновременно выполняя другие задачи в другом.</span><span class="sxs-lookup"><span data-stu-id="a4027-103">Asynchronous operations in ADO.NET allow you to initiate time-consuming database operations on one thread while performing other tasks on another thread.</span></span> <span data-ttu-id="a4027-104">Однако в большинстве сценариев, в конечном счете, вы достигнете точки, при которой вам нужно будет остановить работу приложения до завершения операции с базой данных.</span><span class="sxs-lookup"><span data-stu-id="a4027-104">In most scenarios, however, you will eventually reach a point where your application should not continue until the database operation is complete.</span></span> <span data-ttu-id="a4027-105">В таких случаях полезно выполнить опрос асинхронной операции, чтобы определить, завершена ли операция.</span><span class="sxs-lookup"><span data-stu-id="a4027-105">For such cases, it is useful to poll the asynchronous operation to determine whether the operation has completed or not.</span></span>  
   
- <span data-ttu-id="fcb82-106">Чтобы узнать, завершилась ли операция, можно использовать свойство <xref:System.IAsyncResult.IsCompleted%2A>.</span><span class="sxs-lookup"><span data-stu-id="fcb82-106">You can use the <xref:System.IAsyncResult.IsCompleted%2A> property to find out whether or not the operation has completed.</span></span>  
+ <span data-ttu-id="a4027-106">Чтобы узнать, завершилась ли операция, можно использовать свойство <xref:System.IAsyncResult.IsCompleted%2A>.</span><span class="sxs-lookup"><span data-stu-id="a4027-106">You can use the <xref:System.IAsyncResult.IsCompleted%2A> property to find out whether or not the operation has completed.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="fcb82-107">Пример</span><span class="sxs-lookup"><span data-stu-id="fcb82-107">Example</span></span>  
- <span data-ttu-id="fcb82-108">В следующем приложении командной строки происходит асинхронное обновление данных в образце базы данных **AdventureWorks**.</span><span class="sxs-lookup"><span data-stu-id="fcb82-108">The following console application updates data within the **AdventureWorks** sample database, doing its work asynchronously.</span></span> <span data-ttu-id="fcb82-109">Чтобы эмулировать длительный процесс, в этом примере в текст команды вставляется инструкция WAITFOR.</span><span class="sxs-lookup"><span data-stu-id="fcb82-109">In order to emulate a long-running process, this example inserts a WAITFOR statement in the command text.</span></span> <span data-ttu-id="fcb82-110">Обычно вам не нужно пытаться сделать выполнение команд медленнее, но в этом случае это упрощает демонстрацию асинхронного поведения.</span><span class="sxs-lookup"><span data-stu-id="fcb82-110">Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.</span></span>  
+## <a name="example"></a><span data-ttu-id="a4027-107">Пример</span><span class="sxs-lookup"><span data-stu-id="a4027-107">Example</span></span>  
+
+ <span data-ttu-id="a4027-108">В следующем приложении командной строки происходит асинхронное обновление данных в образце базы данных **AdventureWorks**.</span><span class="sxs-lookup"><span data-stu-id="a4027-108">The following console application updates data within the **AdventureWorks** sample database, doing its work asynchronously.</span></span> <span data-ttu-id="a4027-109">Чтобы эмулировать длительный процесс, в этом примере в текст команды вставляется инструкция WAITFOR.</span><span class="sxs-lookup"><span data-stu-id="a4027-109">In order to emulate a long-running process, this example inserts a WAITFOR statement in the command text.</span></span> <span data-ttu-id="a4027-110">Обычно вам не нужно пытаться сделать выполнение команд медленнее, но в этом случае это упрощает демонстрацию асинхронного поведения.</span><span class="sxs-lookup"><span data-stu-id="a4027-110">Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.</span></span>  
   
 ```vb  
 Imports System  
@@ -190,7 +192,7 @@ class Class1
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="fcb82-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="fcb82-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a4027-111">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a4027-111">See also</span></span>
 
-- [<span data-ttu-id="fcb82-112">Асинхронные операции</span><span class="sxs-lookup"><span data-stu-id="fcb82-112">Asynchronous Operations</span></span>](asynchronous-operations.md)
-- [<span data-ttu-id="fcb82-113">Общие сведения об ADO.NET</span><span class="sxs-lookup"><span data-stu-id="fcb82-113">ADO.NET Overview</span></span>](../ado-net-overview.md)
+- [<span data-ttu-id="a4027-112">Асинхронные операции</span><span class="sxs-lookup"><span data-stu-id="a4027-112">Asynchronous Operations</span></span>](asynchronous-operations.md)
+- [<span data-ttu-id="a4027-113">Общие сведения об ADO.NET</span><span class="sxs-lookup"><span data-stu-id="a4027-113">ADO.NET Overview</span></span>](../ado-net-overview.md)
