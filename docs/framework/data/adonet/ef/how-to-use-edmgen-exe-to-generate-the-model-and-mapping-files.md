@@ -2,38 +2,39 @@
 title: Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления
 ms.date: 03/30/2017
 ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
-ms.openlocfilehash: 6b41ce971f14938c7bb04a174dbf6029c564c788
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8837afd05eec0eaf8ef3e909d46b280e8ae05da7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546580"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91198188"
 ---
-# <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a><span data-ttu-id="9810c-102">Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления</span><span class="sxs-lookup"><span data-stu-id="9810c-102">How to: Use EdmGen.exe to Generate the Model and Mapping Files</span></span>
-<span data-ttu-id="9810c-103">В этом разделе показано, как с помощью средства «Генератор модели EDM» (EdmGen.exe) на основе базы данных School формируются следующие файлы:</span><span class="sxs-lookup"><span data-stu-id="9810c-103">This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the following files based on the School database:</span></span>  
+# <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a><span data-ttu-id="468ff-102">Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления</span><span class="sxs-lookup"><span data-stu-id="468ff-102">How to: Use EdmGen.exe to Generate the Model and Mapping Files</span></span>
+
+<span data-ttu-id="468ff-103">В этом разделе показано, как с помощью средства «Генератор модели EDM» (EdmGen.exe) на основе базы данных School формируются следующие файлы:</span><span class="sxs-lookup"><span data-stu-id="468ff-103">This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the following files based on the School database:</span></span>  
   
-- <span data-ttu-id="9810c-104">Концептуальная модель (CSDL-файл).</span><span class="sxs-lookup"><span data-stu-id="9810c-104">A conceptual model (a .csdl file).</span></span>  
+- <span data-ttu-id="468ff-104">Концептуальная модель (CSDL-файл).</span><span class="sxs-lookup"><span data-stu-id="468ff-104">A conceptual model (a .csdl file).</span></span>  
   
-- <span data-ttu-id="9810c-105">Модель хранения (SSDL-файл).</span><span class="sxs-lookup"><span data-stu-id="9810c-105">A storage model (a .ssdl file).</span></span>  
+- <span data-ttu-id="468ff-105">Модель хранения (SSDL-файл).</span><span class="sxs-lookup"><span data-stu-id="468ff-105">A storage model (a .ssdl file).</span></span>  
   
-- <span data-ttu-id="9810c-106">Сопоставление между концептуальной моделью и моделью хранения (MSL-файл).</span><span class="sxs-lookup"><span data-stu-id="9810c-106">Mapping between the conceptual and storage models (a .msl file).</span></span>  
+- <span data-ttu-id="468ff-106">Сопоставление между концептуальной моделью и моделью хранения (MSL-файл).</span><span class="sxs-lookup"><span data-stu-id="468ff-106">Mapping between the conceptual and storage models (a .msl file).</span></span>  
   
-- <span data-ttu-id="9810c-107">Код уровня объекта в Visual Basic или C#.</span><span class="sxs-lookup"><span data-stu-id="9810c-107">Object-layer code in Visual Basic or C#.</span></span>  
+- <span data-ttu-id="468ff-107">Код уровня объекта в Visual Basic или C#.</span><span class="sxs-lookup"><span data-stu-id="468ff-107">Object-layer code in Visual Basic or C#.</span></span>  
   
-- <span data-ttu-id="9810c-108">Просмотр файлов.</span><span class="sxs-lookup"><span data-stu-id="9810c-108">View files.</span></span>  
+- <span data-ttu-id="468ff-108">Просмотр файлов.</span><span class="sxs-lookup"><span data-stu-id="468ff-108">View files.</span></span>  
   
- <span data-ttu-id="9810c-109">Средство EdmGen.exe использует ключ /mode:FullGeneration для создания перечисленных выше файлов.</span><span class="sxs-lookup"><span data-stu-id="9810c-109">The EdmGen.exe tool uses /mode:FullGeneration to generate the files listed above.</span></span> <span data-ttu-id="9810c-110">Дополнительные сведения о EdmGen.exe командах см. в разделе [генератор EDM (EdmGen.exe)](edm-generator-edmgen-exe.md).</span><span class="sxs-lookup"><span data-stu-id="9810c-110">For more information about EdmGen.exe commands, see [EDM Generator (EdmGen.exe)](edm-generator-edmgen-exe.md).</span></span>  
+ <span data-ttu-id="468ff-109">Средство EdmGen.exe использует ключ /mode:FullGeneration для создания перечисленных выше файлов.</span><span class="sxs-lookup"><span data-stu-id="468ff-109">The EdmGen.exe tool uses /mode:FullGeneration to generate the files listed above.</span></span> <span data-ttu-id="468ff-110">Дополнительные сведения о EdmGen.exe командах см. в разделе [генератор EDM (EdmGen.exe)](edm-generator-edmgen-exe.md).</span><span class="sxs-lookup"><span data-stu-id="468ff-110">For more information about EdmGen.exe commands, see [EDM Generator (EdmGen.exe)](edm-generator-edmgen-exe.md).</span></span>  
   
- <span data-ttu-id="9810c-111">Если для создания файлов модели и сопоставления используется EdmGen.exe, по-прежнему необходимо настроить проект Visual Studio для использования Entity Framework.</span><span class="sxs-lookup"><span data-stu-id="9810c-111">If you use EdmGen.exe to generate the model and mapping files, you still need to configure your Visual Studio project to use the Entity Framework.</span></span> <span data-ttu-id="9810c-112">Дополнительные сведения см. [в разделе как вручную настроить проект Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="9810c-112">For more information, see [How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).</span></span>  
+ <span data-ttu-id="468ff-111">Если для создания файлов модели и сопоставления используется EdmGen.exe, по-прежнему необходимо настроить проект Visual Studio для использования Entity Framework.</span><span class="sxs-lookup"><span data-stu-id="468ff-111">If you use EdmGen.exe to generate the model and mapping files, you still need to configure your Visual Studio project to use the Entity Framework.</span></span> <span data-ttu-id="468ff-112">Дополнительные сведения см. [в разделе как вручную настроить проект Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="468ff-112">For more information, see [How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="9810c-113">Концептуальная модель, созданная с помощью средства EdmGen.exe, включает все объекты базы данных.</span><span class="sxs-lookup"><span data-stu-id="9810c-113">A conceptual model generated by EdmGen.exe includes all the objects in the database.</span></span> <span data-ttu-id="9810c-114">При необходимости создания концептуальной модели, включающей только определенные объекты, следует использовать мастер моделей EDM.</span><span class="sxs-lookup"><span data-stu-id="9810c-114">If you want to generate a conceptual model that includes only specific objects, use the Entity Data Model Wizard.</span></span> <span data-ttu-id="9810c-115">Дополнительные сведения см. в разделе [инструкции. Использование мастера EDM](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="9810c-115">For more information, see [How to: Use the Entity Data Model Wizard](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).</span></span>  
+> <span data-ttu-id="468ff-113">Концептуальная модель, созданная с помощью средства EdmGen.exe, включает все объекты базы данных.</span><span class="sxs-lookup"><span data-stu-id="468ff-113">A conceptual model generated by EdmGen.exe includes all the objects in the database.</span></span> <span data-ttu-id="468ff-114">При необходимости создания концептуальной модели, включающей только определенные объекты, следует использовать мастер моделей EDM.</span><span class="sxs-lookup"><span data-stu-id="468ff-114">If you want to generate a conceptual model that includes only specific objects, use the Entity Data Model Wizard.</span></span> <span data-ttu-id="468ff-115">Дополнительные сведения см. в разделе [инструкции. Использование мастера EDM](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="468ff-115">For more information, see [How to: Use the Entity Data Model Wizard](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).</span></span>  
   
-### <a name="to-generate-the-school-model-for-a-visual-basic-project-using-edmgenexe"></a><span data-ttu-id="9810c-116">Создание модели School для проекта Visual Basic с помощью программы EdmGen.exe</span><span class="sxs-lookup"><span data-stu-id="9810c-116">To generate the School model for a Visual Basic project using EdmGen.exe</span></span>  
+### <a name="to-generate-the-school-model-for-a-visual-basic-project-using-edmgenexe"></a><span data-ttu-id="468ff-116">Создание модели School для проекта Visual Basic с помощью программы EdmGen.exe</span><span class="sxs-lookup"><span data-stu-id="468ff-116">To generate the School model for a Visual Basic project using EdmGen.exe</span></span>  
   
-1. <span data-ttu-id="9810c-117">Создайте базу данных School.</span><span class="sxs-lookup"><span data-stu-id="9810c-117">Create the School database.</span></span> <span data-ttu-id="9810c-118">Дополнительные сведения см. [в разделе Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="9810c-118">For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span></span>  
+1. <span data-ttu-id="468ff-117">Создайте базу данных School.</span><span class="sxs-lookup"><span data-stu-id="468ff-117">Create the School database.</span></span> <span data-ttu-id="468ff-118">Дополнительные сведения см. [в разделе Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="468ff-118">For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span></span>  
   
-2. <span data-ttu-id="9810c-119">Выполните в командной строке следующую команду (введя ее без разрывов строк):</span><span class="sxs-lookup"><span data-stu-id="9810c-119">At the command prompt, execute the following command without line breaks:</span></span>  
+2. <span data-ttu-id="468ff-119">Выполните в командной строке следующую команду (введя ее без разрывов строк):</span><span class="sxs-lookup"><span data-stu-id="468ff-119">At the command prompt, execute the following command without line breaks:</span></span>  
   
     ```console  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration
@@ -41,11 +42,11 @@ ms.locfileid: "90546580"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:VB  
     ```  
   
-### <a name="to-generate-the-school-model-for-a-c-project-using-edmgenexe"></a><span data-ttu-id="9810c-120">Создание модели School для проекта C# с помощью программы EdmGen.exe</span><span class="sxs-lookup"><span data-stu-id="9810c-120">To generate the School model for a C# project using EdmGen.exe</span></span>  
+### <a name="to-generate-the-school-model-for-a-c-project-using-edmgenexe"></a><span data-ttu-id="468ff-120">Создание модели School для проекта C# с помощью программы EdmGen.exe</span><span class="sxs-lookup"><span data-stu-id="468ff-120">To generate the School model for a C# project using EdmGen.exe</span></span>  
   
-1. <span data-ttu-id="9810c-121">Создайте базу данных School.</span><span class="sxs-lookup"><span data-stu-id="9810c-121">Create the School database.</span></span> <span data-ttu-id="9810c-122">Дополнительные сведения см. [в разделе Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="9810c-122">For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span></span>  
+1. <span data-ttu-id="468ff-121">Создайте базу данных School.</span><span class="sxs-lookup"><span data-stu-id="468ff-121">Create the School database.</span></span> <span data-ttu-id="468ff-122">Дополнительные сведения см. [в разделе Создание образца базы данных School](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span><span class="sxs-lookup"><span data-stu-id="468ff-122">For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).</span></span>  
   
-2. <span data-ttu-id="9810c-123">Выполните в командной строке следующую команду (введя ее без разрывов строк):</span><span class="sxs-lookup"><span data-stu-id="9810c-123">At the command prompt, execute the following command without line breaks:</span></span>  
+2. <span data-ttu-id="468ff-123">Выполните в командной строке следующую команду (введя ее без разрывов строк):</span><span class="sxs-lookup"><span data-stu-id="468ff-123">At the command prompt, execute the following command without line breaks:</span></span>  
   
     ```console  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration
@@ -53,10 +54,10 @@ ms.locfileid: "90546580"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:CSharp  
     ```  
   
-## <a name="see-also"></a><span data-ttu-id="9810c-124">См. также</span><span class="sxs-lookup"><span data-stu-id="9810c-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="468ff-124">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="468ff-124">See also</span></span>
 
-- [<span data-ttu-id="9810c-125">Моделирование и сопоставление</span><span class="sxs-lookup"><span data-stu-id="9810c-125">Modeling and Mapping</span></span>](modeling-and-mapping.md)
-- <span data-ttu-id="9810c-126">[Практическое руководство. Настройка проекта Entity Framework вручную](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="9810c-126">[How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))</span></span>
-- <span data-ttu-id="9810c-127">[Практическое руководство. Предварительное создание представлений для повышения производительности запросов](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="9810c-127">[How to: Pre-Generate Views to Improve Query Performance](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))</span></span>
-- <span data-ttu-id="9810c-128">[Средства EDM ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="9810c-128">[ADO.NET Entity Data Model Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span></span>
-- [<span data-ttu-id="9810c-129">Практическое руководство. Использование EdmGen.exe для проверки файлов модели и сопоставления</span><span class="sxs-lookup"><span data-stu-id="9810c-129">How to: Use EdmGen.exe to Validate Model and Mapping Files</span></span>](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
+- [<span data-ttu-id="468ff-125">Моделирование и сопоставление</span><span class="sxs-lookup"><span data-stu-id="468ff-125">Modeling and Mapping</span></span>](modeling-and-mapping.md)
+- <span data-ttu-id="468ff-126">[Практическое руководство. Настройка проекта Entity Framework вручную](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="468ff-126">[How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))</span></span>
+- <span data-ttu-id="468ff-127">[Практическое руководство. Предварительное создание представлений для повышения производительности запросов](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="468ff-127">[How to: Pre-Generate Views to Improve Query Performance](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))</span></span>
+- <span data-ttu-id="468ff-128">[Средства EDM ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span><span class="sxs-lookup"><span data-stu-id="468ff-128">[ADO.NET Entity Data Model Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))</span></span>
+- [<span data-ttu-id="468ff-129">Практическое руководство. Использование EdmGen.exe для проверки файлов модели и сопоставления</span><span class="sxs-lookup"><span data-stu-id="468ff-129">How to: Use EdmGen.exe to Validate Model and Mapping Files</span></span>](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
