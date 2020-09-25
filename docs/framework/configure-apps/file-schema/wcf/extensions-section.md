@@ -2,14 +2,15 @@
 title: Раздел <extensions>
 ms.date: 03/30/2017
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
-ms.openlocfilehash: 35621acaf96a80ffa3ffe4a3c6605143c48995a5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f3eb5d446291dfa6b7c8e0f1ee2b6a5cf53c2162
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855352"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185786"
 ---
 # <a name="extensions-section"></a>Раздел \<extensions>
+
 Данный раздел конфигурации содержит коллекцию расширений, которые позволяют пользователю создавать пользовательские привязки, поведения и другие возможности расширений.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,9 +35,11 @@ ms.locfileid: "70855352"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  

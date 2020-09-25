@@ -2,14 +2,15 @@
 title: OFTYPE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 6d259ca7-bbf0-40f8-a154-181d25c0d67e
-ms.openlocfilehash: 375fe9ce52ae290c175e42276b6b526766f6699c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b5600b4cee23945fe60142b370feb35ac1a2efa1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90547516"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91175685"
 ---
 # <a name="oftype-entity-sql"></a>OFTYPE (Entity SQL)
+
 Возвращает коллекцию объектов из выражения запроса, которое относится к заданному типу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,6 +20,7 @@ OFTYPE ( expression, [ONLY] test_type )
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `expression`  
  Любое допустимое выражение запроса, возвращающее коллекцию объектов.  
   
@@ -26,9 +28,11 @@ OFTYPE ( expression, [ONLY] test_type )
  Тип, по которому проверяется каждый объект, возвращаемый `expression` . Для типа должно быть указано пространство имен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Коллекция объектов, которые имеют тип `test_type`, базовый тип или тип, производный от `test_type`. Если задан параметр ONLY, возвращаются только экземпляры `test_type` или пустая коллекция.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Выражение `OFTYPE` задает выражение с определением типа, которое применяется для проверки типа по отношению к каждому элементу коллекции.  Выражение `OFTYPE` позволяет получить новую коллекцию указанного типа, содержащую только те элементы, которые были эквивалентны либо этому типу, либо его подтипу.  
   
  Выражение `OFTYPE` представляет собой сокращение следующего выражения запроса.  
@@ -60,10 +64,11 @@ OfType(executives, NamespaceName.Manager)
 |OFTYPE(Collection(RowType), RowType)|Активизирует исключение|  
   
 ## <a name="example"></a>Пример  
+
  В следующем запросе [!INCLUDE[esql](../../../../../../includes/esql-md.md)] оператор OFTYPE возвращает коллекцию объектов OnsiteCourse из коллекции объектов Course. Запрос основан на [модели School](/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)).  
   
  [!code-sql[DP EntityServices Concepts#OFTYPE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#oftype)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по Entity SQL](entity-sql-reference.md)

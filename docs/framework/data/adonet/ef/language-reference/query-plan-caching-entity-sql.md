@@ -2,17 +2,19 @@
 title: Кэширование плана запроса (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 90b0c685-5ef2-461b-98b4-c3c0a2b253c7
-ms.openlocfilehash: a0e84f40aed2cff146e4e203cca73a9110de0e2f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 51c5de8365819065f8e505468f37a47370ec502f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149990"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91175555"
 ---
 # <a name="query-plan-caching-entity-sql"></a>Кэширование плана запроса (Entity SQL)
+
 При каждой попытке выполнения запроса конвейер запросов обращается в кэш планов запросов, чтобы определить, что конкретный запрос уже скомпилирован и доступен. Если это так, то кэшированный план используется повторно вместо построения нового плана. Если совпадение в кэше планов запросов не обнаружено, запрос компилируется и кэшируется. Запрос идентифицируется его текстом [!INCLUDE[esql](../../../../../../includes/esql-md.md)] и коллекцией параметров (имен и типов). Все текстовые сравнения выполняются с учетом регистра.  
   
-## <a name="configuration"></a>Конфигурация  
+## <a name="configuration"></a>Параметр Configuration  
+
  Кэширование планов запросов можно настроить с помощью <xref:System.Data.EntityClient.EntityCommand>.  
   
  Чтобы включить или выключить кэширование планов запросов с помощью свойства <xref:System.Data.EntityClient.EntityCommand.EnablePlanCaching%2A?displayProperty=nameWithType>, назначьте этому свойству значение `true` или `false`. Отключение кэширования планов для отдельных динамических запросов, которые вряд ли будут использованы повторно, повышает производительность.  
@@ -20,6 +22,7 @@ ms.locfileid: "79149990"
  Можно включить кэширование планов запросов с помощью <xref:System.Data.Objects.ObjectQuery.EnablePlanCaching%2A>.  
   
 ## <a name="recommended-practice"></a>Рекомендации  
+
  Как правило, следует избегать динамических запросов. Динамический запрос в следующем примере уязвим для атак путем внедрения кода SQL, так как входные данные пользователя принимаются напрямую без проверки.  
   
  ```csharp

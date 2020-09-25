@@ -2,14 +2,15 @@
 title: <host>
 ms.date: 03/30/2017
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
-ms.openlocfilehash: b764bc21e9c4555b39c3d096212b6e6bcabb62ff
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 524226cbb826486def18c1b3b66c5b4a3c456dec
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855209"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185682"
 ---
 # \<host>
+
 Задает параметры узла службы.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,12 +32,15 @@ ms.locfileid: "70855209"
 ```  
   
 ## <a name="type"></a>Type  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -52,7 +56,7 @@ ms.locfileid: "70855209"
 |-------------|-----------------|  
 |[\<service>](service.md)|Задает параметры для службы Windows Communication Foundation (WCF).|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>

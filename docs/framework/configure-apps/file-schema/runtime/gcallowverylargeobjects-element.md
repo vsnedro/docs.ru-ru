@@ -5,14 +5,15 @@ helpviewer_keywords:
 - gcAllowVeryLargeObjects element
 - <gcAllowVeryLargeObjects> element
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-ms.openlocfilehash: 8b2f39a0867228474afdee788474fda11f14ca82
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 78a42596aae6c3ea0d94ac759d11ed52d0ace539
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154131"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178233"
 ---
 # <a name="gcallowverylargeobjects-element"></a>Элемент \<gcAllowVeryLargeObjects>
+
 На 64 разрядных платформах позволяет использовать массивы, размер которых превышает 2 гигабайта (ГБ).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ ms.locfileid: "79154131"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -43,6 +45,7 @@ ms.locfileid: "79154131"
 |`true`|Массивы объемом более 2 ГБ включены на 64-разрядных платформах.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,7 +55,8 @@ ms.locfileid: "79154131"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Использование этого элемента в файле конфигурации приложения позволяет использовать массивы размером более 2 ГБ, но не изменяет другие ограничения на размер объекта или размер массива:  
   
 - Максимальное число элементов в массиве — <xref:System.UInt32.MaxValue?displayProperty=nameWithType> .  
@@ -65,6 +69,7 @@ ms.locfileid: "79154131"
 > Перед включением этой функции убедитесь, что приложение не включает в себя ненадежный код, который предполагает, что размер всех массивов меньше 2 ГБ. Например, ненадежный код, использующий массивы как буферы, может быть уязвим для переполнения буфера, если он написан на основе предположения, что массивы не будут превышать 2 ГБ.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как включить эту функцию для приложения.  
   
 ```xml  
@@ -79,7 +84,7 @@ ms.locfileid: "79154131"
 
 .NET Framework 4,5 и более поздних версий
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

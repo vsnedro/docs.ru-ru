@@ -2,22 +2,25 @@
 title: Литералы NULL и вывод типов (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: edd56afb-af1b-4e7d-b210-cb8998143426
-ms.openlocfilehash: bb2d9184e17ee2a9916a731eb20eefa105a73753
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 5797c9f55b1a1c89cc27787af6f9ad7bfffc5767
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70249823"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185071"
 ---
 # <a name="null-literals-and-type-inference-entity-sql"></a>Литералы NULL и вывод типов (Entity SQL)
-Литералы NULL совместимы с любым типом в системе типов языка [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. Однако для правильного вывода типа литерала NULL накладывает некоторые ограничения на то, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] где можно использовать литерал null.  
+
+Литералы NULL совместимы с любым типом в системе типов языка [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. Однако для правильного вывода типа литерала NULL накладывает [!INCLUDE[esql](../../../../../../includes/esql-md.md)] некоторые ограничения на то, где можно использовать литерал null.  
   
 ## <a name="typed-nulls"></a>Типизированные значения NULL  
+
  Типизированные значения NULL могут использоваться где угодно. Для типизированных значений NULL не требуется логический вывод типа, поскольку тип уже известен. Например, с помощью следующей конструкции языка [!INCLUDE[esql](../../../../../../includes/esql-md.md)] можно создать значение NULL типа Int16:  
   
  `(cast(null as Int16))`  
   
-## <a name="free-floating-null-literals"></a>Свободные литералы NULL  
+## <a name="free-floating-null-literals"></a>Свободные литералы NULL   
+
  Свободные литералы NULL используются в следующих ситуациях.  
   
 - Как аргумент выражений CAST и TREAT. Это предпочтительный способ создания типизированного выражения NULL.  
@@ -40,6 +43,6 @@ ms.locfileid: "70249823"
   
  Ни в каких других ситуациях свободные литералы NULL использоваться не могут. Например, их нельзя использовать в качестве аргументов конструктора строки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

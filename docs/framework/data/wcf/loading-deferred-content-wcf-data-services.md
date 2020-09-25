@@ -9,27 +9,29 @@ helpviewer_keywords:
 - WCF Data Services, deferred content
 - WCF Data Services, loading data
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
-ms.openlocfilehash: 811118755c4688bd0ea8cb9ba37b2101ab6c52cf
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: 6eff454bf4f79f7fe215828956ffe79d0c1f6757
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568944"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194327"
 ---
 # <a name="loading-deferred-content-wcf-data-services"></a>Загрузка отложенного содержимого (службы данных WCF)
+
 По умолчанию WCF Data Services ограничивает объем данных, возвращаемых запросом. Однако при необходимости из службы данных можно явно загрузить дополнительные данные, включая связанные сущности, разбитые на страницы данные ответа и потоки двоичных данных. Этот раздел описывает загрузку такого отложенного содержимого в приложении.  
   
 ## <a name="related-entities"></a>Связанные сущности  
+
  При выполнении запроса возвращаются только сущности в адресованном наборе сущностей. Например, когда запрос к службе данных Northwind возвращает сущности `Customers`, по умолчанию возврат связанных сущностей `Orders` не происходит, несмотря на наличие связи между сущностями `Customers` и `Orders`. Кроме того, если в службе данных включена подкачка, необходимо явно загружать последующие страницы данных из службы. Существует два способа загрузки связанных сущностей.  
   
-- **Упреждающая загрузка**. можно использовать параметр запроса `$expand`, чтобы запросить возвращение сущностей, связанных ассоциацией, с набором сущностей, запрошенных запросом. Для добавления параметра <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> в запрос, отправляемый службе данных, используйте метод <xref:System.Data.Services.Client.DataServiceQuery%601> класса `$expand`. Несколько связанных наборов сущностей можно запросить, разделяя их запятыми, как показывает следующий пример. Все сущности, запрашиваемые в запросе, возвращаются в одном ответе. Следующий пример возвращает сущности `Order_Details` и `Customers` вместе с набором сущностей `Orders`:  
+- **Упреждающая загрузка**. можно использовать `$expand` параметр запроса, чтобы запросить возвращение сущностей, связанных ассоциацией, с набором сущностей, запрашиваемым запросом. Для добавления параметра <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> в запрос, отправляемый службе данных, используйте метод <xref:System.Data.Services.Client.DataServiceQuery%601> класса `$expand`. Несколько связанных наборов сущностей можно запросить, разделяя их запятыми, как показывает следующий пример. Все сущности, запрашиваемые в запросе, возвращаются в одном ответе. Следующий пример возвращает сущности `Order_Details` и `Customers` вместе с набором сущностей `Orders`:  
   
      [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#expandorderdetailsspecific)]
      [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#expandorderdetailsspecific)]  
   
-     WCF Data Services ограничивается 12 количеством наборов сущностей, которые могут быть добавлены в один запрос с помощью параметра запроса `$expand`.  
+     WCF Data Services ограничивает число наборов сущностей, которые можно включать в один запрос, с помощью `$expand` параметра запроса.  
   
-- **Явная загрузка**. для явной загрузки связанных сущностей можно вызвать метод <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> в экземпляре <xref:System.Data.Services.Client.DataServiceContext>. При каждом вызове метода <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> создается отдельный запрос к службе данных. Следующий пример явно загружает сущности `Order_Details` для сущности `Orders`:  
+- **Явная загрузка**. <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> <xref:System.Data.Services.Client.DataServiceContext> для явной загрузки связанных сущностей можно вызвать метод для экземпляра. При каждом вызове метода <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> создается отдельный запрос к службе данных. Следующий пример явно загружает сущности `Order_Details` для сущности `Orders`:  
   
      [!code-csharp[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadrelatedorderdetailsspecific)]
      [!code-vb[Astoria Northwind Client#LoadRelatedOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#loadrelatedorderdetailsspecific)]  
@@ -37,6 +39,7 @@ ms.locfileid: "74568944"
  При выборе параметра помните, что придется соблюдать баланс между числом запросов к службе данных и объемом данных, возвращаемых в одном ответе. Активная загрузка используется, если приложению требуются связанные объекты и необходимо избежать дополнительной задержки, связанной с дополнительными запросами для явного извлечения данных. Однако в тех случаях, когда приложению требуются только данные для конкретных связанных экземпляров сущности, рассмотрите возможность их явной загрузки путем вызова метода <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A>. Дополнительные сведения см. [в разделе инструкции. Загрузка связанных сущностей](how-to-load-related-entities-wcf-data-services.md).  
   
 ## <a name="paged-content"></a>Содержимое, разбитое на страницы  
+
  Если в службе данных включена подкачка страниц, число сущностей в канале, возвращаемом службой данных, ограничено настройками службы данных. Пределы подкачки можно задавать отдельно для каждого набора сущностей. Дополнительные сведения см. [в разделе Настройка службы данных](configuring-the-data-service-wcf-data-services.md). Если включена подкачка страниц, то последняя запись в канале содержит ссылку на следующую страницу данных. Эта ссылка содержится в объекте <xref:System.Data.Services.Client.DataServiceQueryContinuation%601>. Получить URI для следующей страницы можно, вызвав метод <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> объекта <xref:System.Data.Services.Client.QueryOperationResponse%601>, возвращенного при выполнении запроса <xref:System.Data.Services.Client.DataServiceQuery%601>. Возвращенный объект <xref:System.Data.Services.Client.DataServiceQueryContinuation%601> можно затем использовать для загрузки следующей страницы результатов. Перед вызовом метода <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> результат запроса надо перечислить. Рассмотрите возможность применения цикла `do…while`, чтобы сначала перечислить результат запроса, а потом проверить следующее значение ссылки на `non-null`. Если метод <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> возвращает `null` (`Nothing` в Visual Basic), дополнительные страницы результата для исходного запроса отсутствуют. Следующий пример показывает цикл `do…while`, который загружает разбитые на страницы данные клиентов из образца службы данных Northwind.  
   
  [!code-csharp[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadnextlink)]
@@ -55,9 +58,10 @@ ms.locfileid: "74568944"
  Дополнительные сведения см. [в разделе как загружать выгруженные результаты](how-to-load-paged-results-wcf-data-services.md).  
   
 ## <a name="binary-data-streams"></a>Потоки двоичных данных  
- WCF Data Services позволяет обращаться к данным больших двоичных объектов (BLOB) как к потоку данных. Преобразование в поток откладывает загрузку двоичных данных до момента, когда они понадобятся, а клиент имеет возможность обработать их более эффективно. Чтобы можно было воспользоваться этой функцией, в службе данных должен быть реализован поставщик <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md). Если потоки включены, типы сущностей возвращаются без связанных двоичных данных. В этом случае необходимо использовать метод <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> класса <xref:System.Data.Services.Client.DataServiceContext>, чтобы получить доступ к потоку данных для двоичных данных из службы. Аналогично можно использовать метод <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> для добавления или изменения двоичных данных сущности в виде потока. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).  
+
+ WCF Data Services позволяет обращаться к данным больших двоичных объектов (BLOB) как к потоку данных. Преобразование в поток откладывает загрузку двоичных данных до момента, когда они понадобятся, а клиент имеет возможность обработать их более эффективно. Чтобы можно было воспользоваться этой функцией, в службе данных должен быть реализован поставщик <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md). Если потоки включены, типы сущностей возвращаются без связанных двоичных данных. В этом случае необходимо использовать <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> метод <xref:System.Data.Services.Client.DataServiceContext> класса для доступа к потоку данных для двоичных данных из службы. Аналогично можно использовать метод <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> для добавления или изменения двоичных данных сущности в виде потока. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)
 - [Выполнение запросов к службе данных](querying-the-data-service-wcf-data-services.md)

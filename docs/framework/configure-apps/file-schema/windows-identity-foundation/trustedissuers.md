@@ -3,14 +3,15 @@ title: <trustedIssuers>
 ms.date: 03/30/2017
 ms.assetid: d818c917-07b4-40db-9801-8676561859fd
 author: BrucePerlerMS
-ms.openlocfilehash: 50fc7194823fb0c5c426fb54ffd50b17c3714ed9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 08cddd19f40f039f86e100cc7ee6a78633502eb2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70251759"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185565"
 ---
 # \<trustedIssuers>
+
 Настраивает список сертификатов доверенных издателей, используемых в реестре имен поставщиков на основе конфигурации ( <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> ).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -42,9 +43,11 @@ ms.locfileid: "70251759"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Нет  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -59,14 +62,16 @@ ms.locfileid: "70251759"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<issuerNameRegistry>](issuernameregistry.md)|Настраивает реестр имен издателя. **Важно.**  `type`Атрибут `<issuerNameRegistry>` элемента должен ссылаться на <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> класс, `<trustedIssuers>` чтобы элемент был допустимым.|  
+|[\<issuerNameRegistry>](issuernameregistry.md)|Настраивает реестр имен издателя. **Важно.**  `type` Атрибут `<issuerNameRegistry>` элемента должен ссылаться на <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> класс, `<trustedIssuers>` чтобы элемент был допустимым.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Windows Identity Foundation (WIF) предоставляет единую реализацию класса из <xref:System.IdentityModel.Tokens.IssuerNameRegistry> Box, <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> класса. В реестре имени издателя конфигурации хранится список доверенных издателей, которые загружаются из конфигурации. Список всех имен издателей связывается с сертификатом X. 509, который необходим для проверки подписи маркеров, созданных издателем. Список сертификатов доверенных издателей указывается в `<trustedIssuers>` элементе. Каждый элемент в списке связывает назначенное имя издателя с сертификатом X. 509, который необходим для проверки подписи маркеров, созданных этим издателем. Доверенные сертификаты указываются с помощью формы отпечатка сертификата в кодировке ASN. 1 и добавляются в коллекцию с помощью `<add>` элемента. Можно удалить или удалить издателей (сертификаты) из списка с помощью `<clear>` `<remove>` элементов и.  
   
  `type`Атрибут `<issuerNameRegistry>` элемента должен ссылаться на <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> класс, `<trustedIssuers>` чтобы элемент был допустимым.  
   
 ## <a name="example"></a>Пример  
+
  В следующем коде XML показано, как указать реестр имен поставщиков на основе конфигурации.  
   
 ```xml  
@@ -77,7 +82,7 @@ ms.locfileid: "70251759"
 </issuerNameRegistry>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>
 - <xref:System.IdentityModel.Tokens.IssuerNameRegistry>

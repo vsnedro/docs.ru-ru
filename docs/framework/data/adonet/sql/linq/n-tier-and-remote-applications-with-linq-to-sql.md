@@ -2,14 +2,15 @@
 title: N-уровневые и удаленные приложения и LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: 854a1cdd-53cb-45f5-83ca-63962a9b3598
-ms.openlocfilehash: 295be0157c260c05a2e4a7dbbfcd7e5cecbc85de
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 70f6a6ee91761196b62b34f6dde73d11dbe6b39d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548004"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91200606"
 ---
 # <a name="n-tier-and-remote-applications-with-linq-to-sql"></a>N-уровневые и удаленные приложения и LINQ to SQL
+
 Существует возможность создания многоуровневых приложений, использующих [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Как правило, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] контекст данных, классы сущностей и логика создания запросов расположены на среднем уровне в качестве уровня доступа к данным (DAL). Бизнес-логика и непостоянные данные могут быть полностью реализованы в разделяемых классах, методах сущностей, контексте данных либо в отдельных классах.
 
  Уровень клиента или представления вызывает методы в удаленном интерфейсе среднего уровня; DAL в этом интерфейсе выполнит запросы или хранимые процедуры, сопоставленные методам <xref:System.Data.Linq.DataContext>. Обычно средний уровень возвращает данные клиентам в виде XML-представлений сущностей или прокси-объектов.
@@ -19,6 +20,7 @@ ms.locfileid: "90548004"
  В приложениях ASP.NET <xref:System.Web.UI.WebControls.LinqDataSource> управляет большей частью данного сложного процесса. Дополнительные сведения см. в статье [Общие сведения о серверном веб-элементе управления LinqDataSource](/previous-versions/aspnet/bb547113(v=vs.100)).
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
+
  Дополнительные сведения о развертывании многоуровневого приложения, использующего [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], см. в следующих разделах.
 
 - [N-уровневое использование LINQ to SQL с ASP.NET](linq-to-sql-n-tier-with-aspnet.md)
@@ -31,6 +33,6 @@ ms.locfileid: "90548004"
 
  Дополнительные сведения о n-уровневых приложениях, использующих наборы данных ADO.NET, см. [в разделе Работа с наборами данных в n-уровневых приложениях](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основные сведения](background-information.md)

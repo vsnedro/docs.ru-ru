@@ -2,15 +2,16 @@
 title: Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных
 ms.date: 03/30/2017
 ms.assetid: 3d0d1a4b-9104-434f-ac04-6c01ab5716b5
-ms.openlocfilehash: b44c3193e1b9e2e52e086111eab0ab0b0cae5c97
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a2b28b0dcb2e2858c7328854650667f51e83166a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70786072"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185292"
 ---
 # <a name="mapping-xml-schema-xsd-constraints-to-dataset-constraints"></a>Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных
-Язык XSD позволяет задавать ограничения применительно к элементам и атрибутам, которые он определяет. При сопоставлении схемы XML с реляционной схемой <xref:System.Data.DataSet>в ограничения XML-схемы сопоставляются с соответствующими реляционными ограничениями для таблиц и столбцов в **наборе данных**.  
+
+Язык XSD позволяет задавать ограничения применительно к элементам и атрибутам, которые он определяет. При сопоставлении схемы XML с реляционной схемой в <xref:System.Data.DataSet> ограничения XML-схемы сопоставляются с соответствующими реляционными ограничениями для таблиц и столбцов в **наборе данных**.  
   
  В этом разделе рассматривается сопоставление следующих ограничений схемы XML:  
   
@@ -26,23 +27,25 @@ ms.locfileid: "70786072"
   
  Процесс сопоставления преобразует эти ограничения схемы в соответствующие ограничения для таблиц, созданных в **наборе данных**.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Сопоставление уникальных ограничений схемы XML (XSD) с ограничениями DataSet](map-unique-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Сопоставление уникальных ограничений XML-схемы (XSD) с ограничениями набора данных](map-unique-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений UNIQUE в **наборе данных**.  
   
- [Сопоставление ключевых ограничений схемы XML (XSD) с ограничениями DataSet](map-key-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+ [Сопоставление ключевых ограничений XML-схемы (XSD) с ограничениями набора данных](map-key-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений ключа (ограничения UNIQUE, в которых значения NULL не допускаются) в **наборе данных**.  
   
- [Сопоставление ограничений схемы XML (XSD) keyref с ограничениями DataSet](map-keyref-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+ [Сопоставление ограничений XML-схемы (XSD) keyref с ограничениями набора данных](map-keyref-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений keyref (FOREIGN KEY) в **наборе данных**.  
   
-## <a name="related-sections"></a>Связанные разделы  
- [Наследование реляционной структуры DataSet от схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
+## <a name="related-sections"></a>См. также  
+
+ [Наследование реляционной структуры набора данных от схемы XML (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
  Описывает реляционную структуру или схему **набора данных** , созданного из схемы XSD.  
   
- [Создание отношений DataSet из схемы XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
+ [Создание отношений наборов данных из схемы XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
  Описывает элементы XML-схемы, используемые для создания связей между столбцами таблицы в **наборе данных**.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)
