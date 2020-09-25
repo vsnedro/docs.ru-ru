@@ -2,14 +2,15 @@
 title: <dynamicEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 929f223d-176d-4205-9505-234ddb6dbff4
-ms.openlocfilehash: da57ca3ba3bc0036727a749f1cab9ec3657a4fda
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6f9cb127deb5651ed27a0ef5802512fb5b6c7b54
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855340"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190102"
 ---
 # \<dynamicEndpoint>
+
 Этот элемент конфигурации определяет стандартную конечную точку, содержащую сведения, позволяющие приложению работать в качестве клиентской программы, которая может найти адрес конечной точки динамически во время выполнения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -45,9 +46,11 @@ ms.locfileid: "70855340"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -62,7 +65,7 @@ ms.locfileid: "70855340"
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|Коллекция стандартных конечных точек, одно или несколько свойств которых (адрес, привязка, контракт) являются фиксированными.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.DynamicEndpoint>
 - <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>

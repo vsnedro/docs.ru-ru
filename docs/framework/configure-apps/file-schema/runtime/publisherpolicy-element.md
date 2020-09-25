@@ -10,14 +10,15 @@ helpviewer_keywords:
 - container tags, <publisherPolicy> element
 - <publisherPolicy> element
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-ms.openlocfilehash: 89fa8a991cc7d0352eb0a13cdfd3a6063ea468e7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bd6ab1123ef3f84f7e8a06b25ce48aed37e4bef7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73115846"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195263"
 ---
 # <a name="publisherpolicy-element"></a>Элемент \<publisherPolicy>
+
 Указывает, применяет ли среда выполнения политику издателя.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,11 +34,12 @@ ms.locfileid: "73115846"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`apply`|Указывает, следует ли применять политику издателя.|  
   
@@ -61,7 +63,8 @@ ms.locfileid: "73115846"
 |`dependentAssembly`|Инкапсулирует политику привязки и расположение каждой сборки. `<dependentAssembly>`Для каждой сборки используется один элемент.|  
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Когда поставщик компонента выпускает новую версию сборки, поставщик может включить политику издателя, чтобы приложения, использующие старую версию, теперь использовали новую версию. Чтобы указать, следует ли применять политику издателя для определенной сборки, поставьте **\<publisherPolicy>** элемент в **\<dependentAssembly>** элемент.  
   
  Значение по умолчанию для атрибута **Apply** — **Да**. Присвоение атрибуту **Apply** значения **No** переопределяет любые предыдущие параметры **Yes** для сборки.  
@@ -69,6 +72,7 @@ ms.locfileid: "73115846"
  Чтобы приложение явно игнорировало политику издателя с помощью [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) элемента в файле конфигурации приложения, требуется разрешение. Разрешение предоставляется путем установки <xref:System.Security.Permissions.SecurityPermissionFlag> флага для <xref:System.Security.Permissions.SecurityPermission> . Дополнительные сведения см. в статье [разрешение безопасности перенаправления привязки сборок](../../assembly-binding-redirection-security-permission.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере отключается политика издателя для сборки `myAssembly` .  
   
 ```xml  
@@ -86,7 +90,7 @@ ms.locfileid: "73115846"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

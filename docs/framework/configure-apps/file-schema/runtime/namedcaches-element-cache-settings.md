@@ -6,14 +6,15 @@ helpviewer_keywords:
 - caching [.NET Framework], configuration
 - <namedCaches> element
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-ms.openlocfilehash: e0640ca18d386141f3c03135019eb4fe959b5bf8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ad76c01bba859934be399d73262bd974309efe98
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153962"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91192403"
 ---
 # <a name="namedcaches-element-cache-settings"></a>Элемент \<namedCaches> (параметры кэша)
+
 Задает коллекцию параметров конфигурации для именованных <xref:System.Runtime.Caching.MemoryCache> экземпляров. <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A>Свойство ссылается на коллекцию параметров конфигурации из одного или нескольких `namedCaches` элементов файла конфигурации.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,14 +31,16 @@ ms.locfileid: "79153962"
 ```  
   
 ## <a name="type"></a>Type  
+
  `None`  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`cacheMemoryLimitMegabytes`|Целочисленное значение, указывающее максимально допустимый размер (в мегабайтах), <xref:System.Runtime.Caching.MemoryCache> до которого может увеличиваться экземпляр. Значение по умолчанию — 0. Это означает, что по умолчанию используется эвристика автоподбора размера <xref:System.Runtime.Caching.MemoryCache> класса.|  
 |`name`|Имя кэша.|  
@@ -60,14 +63,16 @@ ms.locfileid: "79153962"
 |[\<memoryCache>](memorycache-element-cache-settings.md)|Определяет элемент, используемый для настройки кэша, который основан на классе <xref:System.Runtime.Caching.MemoryCache> .|  
 |[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Содержит типы, позволяющие реализовать кэширование вывода в приложениях, встроенных в .NET Framework.|  
   
-## <a name="remarks"></a>Примечания  
- Раздел конфигурации кэша памяти файла Web. config может содержать `add` `remove` атрибуты, и `clear` для `namedCaches` коллекции. Каждая `namedCaches` запись уникально идентифицируется `name` атрибутом.  
+## <a name="remarks"></a>Remarks  
+
+ Раздел конфигурации кэша памяти файла Web.config может содержать `add` `remove` атрибуты, и `clear` для `namedCaches` коллекции. Каждая `namedCaches` запись уникально идентифицируется `name` атрибутом.  
   
  Экземпляры записей кэша памяти можно получить, обратившись к сведениям в файлах конфигурации приложения. По умолчанию в файле конфигурации содержится запись только для экземпляра кэша по умолчанию. Экземпляром кэша по умолчанию является экземпляр, который возвращается из <xref:System.Runtime.Caching.MemoryCache.Default%2A> Свойства.  
   
  Если для атрибута name задано значение Default, то элемент использует экземпляр кэша памяти по умолчанию.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как задать имя кэша в качестве имени записи кэша по умолчанию, задав `name` для атрибута значение Default.  
   
  Атрибутам `cacheMemoryLimitMegabytes` и `physicalMemoryPercentage` присваивается нулевое значение. Установка этих атрибутов равным нулю означает, что используется эвристический подход автоподбора размера <xref:System.Runtime.Caching.MemoryCache> класса. Реализация кэша сравнивает текущую загрузку памяти с абсолютными и процентными ограничениями памяти каждые две минуты.  
@@ -89,6 +94,6 @@ ms.locfileid: "79153962"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [\<memoryCache>Элемент (параметры кэша)](memorycache-element-cache-settings.md)
+- [\<memoryCache> Элемент (параметры кэша)](memorycache-element-cache-settings.md)

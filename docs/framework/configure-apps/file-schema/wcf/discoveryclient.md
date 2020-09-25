@@ -2,14 +2,15 @@
 title: <discoveryClient>
 ms.date: 03/30/2017
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
-ms.openlocfilehash: 71305720cad0206ec3dabb1863e2f1cd72eb85f0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: af9cf127652f1e12ae57948f9b4a6a26285af793
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73739033"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91192260"
 ---
 # \<discoveryClient>
+
 Элемент конфигурации для создания пользовательской привязки, которая позволяет клиентскому приложению автоматически выполнять поиск обнаруживаемой службы и определять ее адрес во время выполнения.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -39,11 +40,12 @@ ms.locfileid: "73739033"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |discoveryEndpoint|Строка, содержащая имя конечной точки обнаружения, которая позволяет клиентскому приложению выполнять автоматический поиск необходимой службы и находить ее адрес во время выполнения.|  
   
@@ -59,7 +61,7 @@ ms.locfileid: "73739033"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
 - <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement>

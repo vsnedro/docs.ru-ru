@@ -2,14 +2,15 @@
 title: <discoveryClientSettings>
 ms.date: 03/30/2017
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
-ms.openlocfilehash: 929c5d170bfc27160e3e15b8bd2f9f26e0ed8975
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6e3f273af807eb362f005fef63246013ecc88581
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855410"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91192247"
 ---
 # \<discoveryClientSettings>
+
 Содержит параметры, необходимые приложению для участия в процессе обнаружения служб в качестве клиента.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -47,11 +48,12 @@ ms.locfileid: "70855410"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |discoveryEndpoint|Строка, содержащая имя конечной точки обнаружения, которая позволяет клиентскому приложению выполнять автоматический поиск необходимой службы и находить ее адрес во время выполнения.|  
   
@@ -67,7 +69,7 @@ ms.locfileid: "70855410"
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|Определяет стандартную конечную точку, сведения которой позволяют приложению работать в качестве клиентской программы, динамически ищущей адрес конечной точки во время выполнения.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
 - <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>

@@ -7,14 +7,15 @@ helpviewer_keywords:
 - listeners element for <source>
 - <listeners> element for <source>
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
-ms.openlocfilehash: 0eee325e01b41a15a19e4f40f479596f9d70f73b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b7144b0a7004ba32b21cbc98513df574a5a9e1d9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153416"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195185"
 ---
 # <a name="listeners-element-for-source"></a>Элемент \<listeners> для \<source>
+
 Добавляет или удаляет прослушиватели в <xref:System.Diagnostics.TraceSource.Listeners%2A> коллекции для <xref:System.Diagnostics.TraceSource> . Прослушиватель направляет выходные данные трассировки в соответствующий целевой объект, например журнал, окно или текстовый файл.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -34,9 +35,11 @@ ms.locfileid: "79153416"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -56,12 +59,14 @@ ms.locfileid: "79153416"
 |`sources`|Содержит источники трассировки, которые инициируют сообщения трассировки.|  
 |`source`|Содержит источник трассировки, который инициирует сообщения трассировки.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
- Этот элемент можно использовать в файле конфигурации компьютера (Machine. config) и в файле конфигурации приложения.  
+
+ Этот элемент можно использовать в файле конфигурации компьютера (Machine.config) и файле конфигурации приложения.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать `<listeners>` элемент для добавления прослушивателя трассировки консоли в `mySource` источник и для удаления прослушивателя трассировки по умолчанию.  
   
 ```xml  
@@ -87,7 +92,7 @@ ms.locfileid: "79153416"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.TraceListener>
 - [Схема параметров трассировки и отладки](index.md)

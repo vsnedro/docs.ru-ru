@@ -7,14 +7,15 @@ helpviewer_keywords:
 - DataContractSerializer
 - KnownTypes
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.openlocfilehash: e24dae47171f741af064ca2eaa822928690acf6e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2a994a8ba97d4c65fdaba5a85e779dd9935e3074
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400454"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195040"
 ---
 # \<dataContractSerializer>
+
 Содержит данные конфигурации для <xref:System.Runtime.Serialization.DataContractSerializer>. Этот элемент присутствует в двух разных иерархиях. Одна из них указана в следующем разделе «Иерархия схемы», а другая - в разделе «Примечания».  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ ms.locfileid: "70400454"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -42,6 +44,7 @@ ms.locfileid: "70400454"
 |maxItemsInObjectGraph|Целое число, указывающее максимальное количество элементов для сериализации или десериализации. Этот атрибут имеет значение 65 536.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -51,7 +54,8 @@ ms.locfileid: "70400454"
 |[\<behavior>](behavior-of-servicebehaviors.md)|Коллекция параметров для поведения службы.|  
 |[\<system.runtime.serialization>](system-runtime-serialization.md)|Представляет корневой элемент для раздела пространства имен <xref:System.Runtime.Serialization> и содержит элементы для установки параметров <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Как указано в статье Введение в этот раздел, это вторая иерархия, в которой \<X509Extension> происходит элемент.  
   
  [\<system.runtime.serialization>](system-runtime-serialization.md)  
@@ -60,7 +64,7 @@ ms.locfileid: "70400454"
   
  Дополнительные сведения об известных типах см. в разделе <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>

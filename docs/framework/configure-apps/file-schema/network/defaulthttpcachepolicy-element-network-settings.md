@@ -8,14 +8,15 @@ helpviewer_keywords:
 - defaultHttpCachePolicy element
 - <defaultHttpCachePolicy> element
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-ms.openlocfilehash: c5029a7d1e53c28d0abb232efdc3e0bd2c9658d4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4120c57fbb65da1c124414cbe9cfba7ae64388f8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088420"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190323"
 ---
 # <a name="defaulthttpcachepolicy-element-network-settings"></a>Элемент \<defaultHttpCachePolicy> (параметры сети)
+
 Описывает, активно ли кэширование HTTP и описывает политику кэширования по умолчанию.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -35,18 +36,20 @@ ms.locfileid: "74088420"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`maximumAge`|Указывает максимальный интервал времени, по истечении которого кэшированный объект помечается как истекший.|  
 |`maximumStale`|Указывает максимальное время после истечения срока действия вычисленного объекта до пометки времени, когда кэшированный объект помечается как истекший.|  
 |`minimumFresh`|Указывает минимальное время, в течение которого кэшированный объект будет считаться актуальным.|  
-|`policyLevel`|Указывает, является ли политика кэширования автоматическим, или же кэш будет пропущен. Значение по умолчанию — `BypassCache`.|  
+|`policyLevel`|Указывает, является ли политика кэширования автоматическим, или же кэш будет пропущен. Значение по умолчанию — `BypassCache`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -55,15 +58,18 @@ ms.locfileid: "74088420"
 |-------------|-----------------|  
 |[requestCaching](requestcaching-element-network-settings.md)|Управляет механизмом кэширования для сетевых запросов.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Значение `policyLevel` атрибута может быть `BypassCache` или `Default` .  
   
  Значения для `maximumAge` элементов, `maximumStale` и `minimumFresh` являются либо явным временным интервалом с форматом *d*.* чч*:*мм*:*СС* (дни, часы, минуты и секунды), константы `minValue` или `maxValue` (при необходимости).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как задать минимальное новое время в 6 часов, максимальное время существования, равное двум дням, и максимальное устаревшее время, равное четырем часам.  
   
 ```xml  
@@ -80,7 +86,7 @@ ms.locfileid: "74088420"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>

@@ -2,14 +2,15 @@
 title: Элемент <uri> (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
-ms.openlocfilehash: a492baf9951466383ca0277a2927b8554e5bb332
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2f22d70407d10dbb38f0cb8d3a8ac74ff3fe8763
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71697442"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190206"
 ---
 # <a name="uri-element-uri-settings"></a>Элемент \<uri> (параметры URI)
+
 Содержит параметры, определяющие, как .NET Framework обрабатывает веб-адреса, выраженные с помощью универсальных идентификаторов ресурсов (URI).  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -23,9 +24,11 @@ ms.locfileid: "71697442"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
+
  Отсутствует.  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -42,12 +45,14 @@ ms.locfileid: "71697442"
 |-----------------|---------------------|  
 |[Конфигурация](../configuration-element.md)|Содержит параметры для всех пространств имен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `uri`Элемент содержит параметры для элементов <xref:System.Uri> класса, используемых классами в <xref:System.Net> пространстве имен. Параметры настраивают поддержку для IRI и IDN.  
   
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
+
  В следующем примере показана конфигурация, используемая <xref:System.Uri> классом для поддержки синтаксического анализа IRI и имен IDN. В этом примере также очищаются все параметры схемы, а затем добавляется поддержка не экранирования процентов для пути, закодированного для схемы HTTP.  
   
 ### <a name="code"></a>Код  

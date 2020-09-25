@@ -5,14 +5,15 @@ helpviewer_keywords:
 - loadFromRemoteSources element
 - <loadFromRemoteSources> element
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-ms.openlocfilehash: 48da852bd1e209aed5ed5e75d8e510027a96d6d7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 568c0c814dcc57be0f5be435bb7750c970ffec19
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558013"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91192455"
 ---
 # <a name="loadfromremotesources-element"></a>Элемент \<loadFromRemoteSources>
+
 Указывает, должны ли сборки, загруженные из удаленных источников, предоставлять полное доверие в .NET Framework 4 и более поздних версий.
   
 > [!NOTE]
@@ -30,6 +31,7 @@ ms.locfileid: "90558013"
 ```  
   
 ## <a name="attributes-and-elements"></a>Элементы и атрибуты
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -46,6 +48,7 @@ ms.locfileid: "90558013"
 |`true`|Предоставление полного доверия приложениям из удаленных источников.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -55,7 +58,7 @@ ms.locfileid: "90558013"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
   
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 В .NET Framework 3,5 и более ранних версиях при загрузке сборки из удаленного расположения код в сборке выполняется в режиме частичного доверия с набором разрешений, зависящим от зоны, из которой она загружена. Например, если загрузить сборку с веб-сайта, она загружается в зону Интернета и предоставляет набор разрешений Интернета. Иными словами, он выполняется в песочнице Интернета.
 
@@ -113,7 +116,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 </configuration>  
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Более Неявное использование политики CAS: Лоадфромремотесаурцес](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
 - [Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
