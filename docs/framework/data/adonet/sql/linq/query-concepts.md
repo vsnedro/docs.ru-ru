@@ -2,19 +2,21 @@
 title: Основные принципы запросов
 ms.date: 03/30/2017
 ms.assetid: 9a125749-ccb5-49d5-999d-d2db7171d74d
-ms.openlocfilehash: 1e3e4d0e66442443094a6182b0d06a35a5057a83
-ms.sourcegitcommit: 7bc6887ab658550baa78f1520ea735838249345e
+ms.openlocfilehash: e8eb909b47f34f9ef8d8fd71bd071843ea4dd898
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75634356"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91184917"
 ---
 # <a name="query-concepts"></a>Основные принципы запросов
-В этом разделе описаны основные понятия, связанные с проектированием запросов LINQ в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
+
+В этом разделе описываются основные понятия, связанные с проектированием запросов LINQ в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] .  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Запросы LINQ to SQL](linq-to-sql-queries.md)  
- Относится к общим темам LINQ и описывает элементы, относящиеся к [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
+ Относится к общим темам LINQ и описывает элементы, относящиеся к [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] .  
   
  [Выполнение запросов в связях](querying-across-relationships.md)  
  Объясняется, как использовать связи в объектной модели [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
@@ -25,7 +27,8 @@ ms.locfileid: "75634356"
  [Отложенная и немедленная загрузка](deferred-versus-immediate-loading.md)  
  Описывается, как указать время загрузки связанных объектов.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
+
  [Руководство по программированию](programming-guide.md)  
  Содержатся ссылки на разделы, в которых описывается технология [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   

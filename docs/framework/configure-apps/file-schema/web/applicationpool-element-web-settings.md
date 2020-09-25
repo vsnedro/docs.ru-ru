@@ -5,14 +5,15 @@ helpviewer_keywords:
 - applicationPool element
 - <applicationPool> element
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
-ms.openlocfilehash: ca474cdcaeaac7b1c32efa5c58f4b5bb5b7f7895
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 963b25e57ae8c2cc59dcc3e50ae2a52cc04f54a8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557246"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185643"
 ---
 # <a name="applicationpool-element-web-settings"></a>Элемент \<applicationPool> (веб-параметры)
+
 Указывает параметры конфигурации, используемые ASP.NET для управления поведением на уровне процесса, когда приложение ASP.NET работает в интегрированном режиме в IIS 7,0 или более поздней версии.  
   
 > [!IMPORTANT]
@@ -44,6 +45,7 @@ ms.locfileid: "90557246"
 |`requestQueueLimit`|Указывает максимальное количество запросов, которые могут быть поставлены в очередь для ASP.NET в одном процессе. Если два или более ASP.NET приложений работают в одном пуле приложений, этот параметр подлежит совокупному набору запросов, выполняемых в любом приложении в пуле приложений.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -52,7 +54,7 @@ ms.locfileid: "90557246"
 |-------------|-----------------|  
 |[\<system.web>](system-web-element-web-settings.md)|Содержит сведения о взаимодействии ASP.NET с ведущим приложением.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
 При запуске IIS 7,0 или более поздней версии в интегрированном режиме это сочетание элементов позволяет настроить, как ASP.NET управляет потоками и помещает запросы в очередь, когда приложение размещается в пуле приложений IIS. При запуске IIS 6 или IIS 7,0 в классическом режиме или в режиме ISAPI эти параметры игнорируются.  
   
@@ -97,6 +99,6 @@ ms.locfileid: "90557246"
 |Файл проверки||  
 |Может быть пустым||  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [\<system.web> Элемент (веб-параметры)](system-web-element-web-settings.md)

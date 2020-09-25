@@ -8,14 +8,15 @@ helpviewer_keywords:
 - <webProxyScript> element
 - webProxyScript element
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
-ms.openlocfilehash: dbad888cd0537f63c09840ac1053f924db9ea9bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e36b470b1ec348085b13a58630b0ac6833e43946
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74089061"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178311"
 ---
 # <a name="webproxyscript-element-network-settings"></a>Элемент \<webProxyScript> (параметры сети)
+
 Настраивает характеристики сценария, используемого для обнаружения веб-прокси.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -32,15 +33,17 @@ ms.locfileid: "74089061"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`downloadTimeout`|Указывает максимальное время загрузки скрипта в часах, минутах и секундах. Значение по умолчанию — одна минута.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -49,11 +52,12 @@ ms.locfileid: "74089061"
 |-------------|-----------------|  
 |[параметры](settings-element-network-settings.md)|Настраивает основные параметры сети для пространства имен <xref:System.Net>.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
+
  Этот элемент может использоваться в файле конфигурации приложения или в файле конфигурации компьютера (Machine.config).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Схема параметров сети](index.md)
