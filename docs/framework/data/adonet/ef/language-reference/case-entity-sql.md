@@ -2,14 +2,15 @@
 title: CASE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 26a47873-e87d-4ba2-9e2c-3787c21efe89
-ms.openlocfilehash: 58b21d3be8e13a0a2204a4fd6d355f734207c509
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 65efedd36401db402a32748afaebff0f2af9f2a7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150471"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91185227"
 ---
 # <a name="case-entity-sql"></a>CASE (Entity SQL)
+
 Вычисляет набор выражений типа `Boolean` для определения результата.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,6 +26,7 @@ END
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `n`  
  Заполнитель, который показывает, что можно использовать несколько предложений WHEN `Boolean_expression` THEN `result_expression` .  
   
@@ -38,19 +40,22 @@ END
  Выражение типа `Boolean` , вычисляемое при использовании поискового формата оператора CASE. `Boolean_expression` - любое допустимое выражение типа `Boolean` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает тип с наивысшим приоритетом из набора типов в выражении `result_expression` и необязательном выражении `else_result_expression`.  
   
 ## <a name="remarks"></a>Remarks  
- Выражение [!INCLUDE[esql](../../../../../../includes/esql-md.md)] случая напоминает выражение корпуса «Трансакт-СЗЛ». Выражение CASE применяется для выполнения ряда проверок условий в целях определения того, вычисление какого выражения приведет к получению приемлемого результата. В этой форме выражение CASE применяется к ряду, состоящему из одного или нескольких выражений типа `Boolean` , для определения правильного результирующего выражения.  
+
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)]Выражение CASE напоминает выражение CASE языка Transact-SQL. Выражение CASE применяется для выполнения ряда проверок условий в целях определения того, вычисление какого выражения приведет к получению приемлемого результата. В этой форме выражение CASE применяется к ряду, состоящему из одного или нескольких выражений типа `Boolean` , для определения правильного результирующего выражения.  
   
  Функция CASE находит значение `Boolean_expression` для каждого предложения WHEN в указанном порядке и возвращает значение `result_expression` первого выражения `Boolean_expression` , которое определяется как `true`. Остальные выражения оцениваться не будут. Если ни одно выражение `Boolean_expression` не вычисляется в `true`, компонент Database Engine возвращает выражение `else_result_expression` , если указано предложение ELSE, или значение NULL, если предложение ELSE не указано.  
   
  Инструкция CASE не может возвращать мультинабор.  
   
 ## <a name="example"></a>Пример  
+
  Следующий запрос Entity SQL с помощью выражения CASE оценивает набор выражений типа `Boolean` , чтобы определить результат. Запрос основан на модели AdventureWorks Sales. Для компиляции и запуска этого запроса выполните следующие шаги.  
   
-1. Следуйте процедуре в [Как: Выполнить запрос, который возвращает результаты PrimitiveType](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Выполните процедуру, описанную в разделе [инструкции. выполнение запроса, возвращающего тип PrimitiveType результаты](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
 2. Передайте следующий запрос в качестве аргумента методу `ExecutePrimitiveTypeQuery` :  
   
@@ -58,6 +63,6 @@ END
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Затем](then-entity-sql.md)
-- [Выберите](select-entity-sql.md)
+- [THEN](then-entity-sql.md)
+- [SELECT](select-entity-sql.md)
 - [Справочник по Entity SQL](entity-sql-reference.md)
