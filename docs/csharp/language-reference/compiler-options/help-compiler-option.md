@@ -13,14 +13,15 @@ helpviewer_keywords:
 - /help compiler option [C#]
 - -? compiler option [C#]
 ms.assetid: 8d53f6ba-5c3b-4183-976e-9c0f26fd3680
-ms.openlocfilehash: 7e51f8848bbd0b57ac083dccb6813e3f39fd9a74
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c8d6c868db03ba58a7e7a6c3795eaca4a3b4fba2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125687"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91188386"
 ---
 # <a name="-help---c-compiler-options"></a>-help, -? (параметры компилятора C#)
+
 Этот параметр отправляет список параметров компилятора и краткое описание каждого параметра в stdout.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,6 +32,7 @@ ms.locfileid: "89125687"
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Если этот параметр включен при компиляции, выходной файл не создается и компиляция не выполняется.  
   
  Этот параметр компилятора недоступен в Visual Studio и не может быть изменен программным способом.  

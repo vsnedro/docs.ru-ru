@@ -5,12 +5,12 @@ author: mgroves
 ms.technology: csharp-fundamentals
 ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
-ms.openlocfilehash: 24cb7d35a89fda78511dc4ba725b69c5d601a008
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4e2c0126d0920df18271f8889d8e117cd374d979
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75937475"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174190"
 ---
 # <a name="use-attributes-in-c"></a>Использование атрибутов в C\#
 
@@ -21,6 +21,7 @@ ms.locfileid: "75937475"
 В этом руководстве мы покажем вам, как можно добавить атрибуты в код, как создавать и применять собственные атрибуты, а также использовать некоторые встроенные атрибуты .NET Core.
 
 ## <a name="prerequisites"></a>Предварительные требования
+
 Компьютер должен быть настроен для выполнения .NET Core. Инструкции по установке см. на странице [скачиваемых файлов .NET Core](https://dotnet.microsoft.com/download).
 Это приложение можно запустить в ОС Windows, Ubuntu Linux, macOS или в контейнере Docker.
 Вам потребуется редактор кода, но вы можете выбрать любой привычный для вас. В примерах ниже используется кроссплатформенный редактор [Visual Studio Code](https://code.visualstudio.com/) с открытым исходным кодом. Вы можете заменить его на любое другое средство, с которым вам удобно работать.

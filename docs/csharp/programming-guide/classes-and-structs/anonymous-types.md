@@ -6,12 +6,12 @@ helpviewer_keywords:
 - anonymous types [C#]
 - C# Language, anonymous types
 ms.assetid: 59c9d7a4-3b0e-475e-b620-0ab86c088e9b
-ms.openlocfilehash: ccdee1a86ab0c292721e69346cb7cedb03d4c28b
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: f60c1ea4f3f029ec3b81a4197a711523ec372df9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474505"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91186163"
 ---
 # <a name="anonymous-types-c-programming-guide"></a>Анонимные типы (Руководство по программированию в C#)
 
@@ -48,6 +48,7 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 ```  
   
 ## <a name="remarks"></a>Примечания  
+
  Анонимные типы являются типами [class](../../language-reference/keywords/class.md), прямыми производными от типа [object](../../language-reference/builtin-types/reference-types.md), и не могут быть приведены ни к какому иному типу, кроме [object](../../language-reference/builtin-types/reference-types.md). Компилятор назначает имя для каждого анонимного типа, несмотря на то что для вашего приложения он недоступен. С точки зрения среды CLR анонимный тип не отличается от других ссылочных типов.  
   
  Если два или несколько инициализаторов анонимных объектов в сборке указывают на последовательность свойств, идущих в том же порядке и имеющих те же типы и имена, компилятор обрабатывает объекты как экземпляры одного типа. Они используют одни и те же сведения типа, созданные компилятором.  

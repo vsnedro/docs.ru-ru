@@ -3,14 +3,15 @@ title: Фильтрация данных (C#)
 description: Фильтрация, также известная как выборка, позволяет ограничивать результаты на основе условия. Узнайте о методах стандартных операторов запросов в LINQ в C#, которые выполняют фильтрацию.
 ms.date: 07/20/2015
 ms.assetid: fbaece0d-0f23-47f7-89c5-f3ea8db692b6
-ms.openlocfilehash: f9f6d691da73b566e5135f6692c87ba3a8978005
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 51bf9f930ba67ba07c7c0f357910d5e36014138d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103927"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91186046"
 ---
 # <a name="filtering-data-c"></a>Фильтрация данных (C#)
+
 Фильтрация — это операция по ограничению значений в результирующем наборе только элементами, соответствующими указанному условию. Это также называется выборкой.  
   
  На следующем рисунке показаны результаты операции фильтрации последовательности символов. Предикат для операции фильтрации указывает, что символ должен быть "A".  
@@ -27,6 +28,7 @@ ms.locfileid: "87103927"
 |Where|Выбирает значения, основанные на функции предиката.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|  
   
 ## <a name="query-expression-syntax-example"></a>Пример синтаксиса выражения запроса  
+
  В следующем примере для выбора из массива строк, имеющих определенную длину, используется предложение `where`.  
   
 ```csharp  

@@ -8,14 +8,15 @@ helpviewer_keywords:
 - queries [LINQ in C#], writing
 - writing LINQ queries
 ms.assetid: 2962a610-419a-4276-9ec8-4b7f2af0c081
-ms.openlocfilehash: cfd2917d330a9229338790c35911502be5cd9391
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: bdf91f6f52a68309cfcd276b222083c8cb67a0cc
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559152"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176244"
 ---
 # <a name="walkthrough-writing-queries-in-c-linq"></a>Пошаговое руководство. Написание запросов на C# (LINQ)
+
 В этом пошаговом руководстве описываются возможности C#, предназначенные для написания выражений запросов LINQ.  
   
 ## <a name="create-a-c-project"></a>Создание проекта C#  
@@ -40,6 +41,7 @@ ms.locfileid: "90559152"
 5. Обратите внимание, что проект содержит ссылку на библиотеку System.Core.dll и директиву `using` для пространства имен <xref:System.Linq?displayProperty=nameWithType>.  
   
 ## <a name="create-an-in-memory-data-source"></a>Создание источника данных в памяти  
+
  Источником данных для запросов является простой список объектов `Student`. Каждая запись `Student` включает имя, фамилию и массив целых чисел, соответствующих их баллам за проведенные в классе тесты. Скопируйте этот код в проект. Обратите внимание на следующие характеристики.  
   
 - Класс `Student` состоит из автоматически внедренных свойств.  
@@ -173,6 +175,7 @@ ms.locfileid: "90559152"
      [!code-csharp[csLINQGettingStarted#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#21)]  
   
 ## <a name="next-steps"></a>Следующие шаги  
+
  Ознакомившись с основными аспектами работы с запросами в C#, вы будете готовы прочитать документацию и примеры по интересующему вас типу поставщика LINQ:  
   
  [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  

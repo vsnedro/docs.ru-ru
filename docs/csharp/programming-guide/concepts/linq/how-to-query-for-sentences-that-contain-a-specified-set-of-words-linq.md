@@ -3,14 +3,15 @@ title: Как запросить предложения с указанным н
 description: Узнайте, как использовать LINQ в C# для поиска в текстовом файле предложений, содержащих совпадения для каждого набора слов, который может быть заполнен во время выполнения.
 ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
-ms.openlocfilehash: daf86d6641b82fb77ca237e8a190b4f60b9dea4d
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 7c5979fc42b6446948ae974e599807b5cb8db04a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465654"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176283"
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-c"></a>Как запросить предложения с указанным набором слов (LINQ) (C#)
+
 В этом примере показан поиск предложений, содержащих совпадения для каждого из указанного набора слов в текстовом файле. Хотя массив терминов для поиска в этом примере жестко закодирован, его можно заполнять динамически во время выполнения. В этом примере запрос возвращает предложения, которые содержат слова "Historically", "data" и "integrated".  
   
 ## <a name="example"></a>Пример  
@@ -68,6 +69,7 @@ Historically, the world of data and the world of objects have not been well inte
  В вызове <xref:System.String.Split%2A> знаки пунктуации используются как разделители для того, чтобы удалить их из строки. Если этого не сделать, то, например, можно получить строку "Historically," которая не будет совпадать с "Historically" в массиве `wordsToMatch`. В зависимости от знаков препинания в исходном тексте может потребоваться использовать дополнительные разделители.  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
 Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
 
 ## <a name="see-also"></a>См. также

@@ -3,19 +3,21 @@ title: Использование вариативности в универса
 description: Узнайте об использовании ковариации и контрвариантности в универсальных делегатах Func и Action для формирования более гибкого кода.
 ms.date: 07/20/2015
 ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae
-ms.openlocfilehash: d7174b0f734d10ab69d0936cb5ca4aa2f4fafdf7
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 613470d7870aa6a917d19904a92e56f0e61f1ed9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105704"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176348"
 ---
 # <a name="using-variance-for-func-and-action-generic-delegates-c"></a>Использование вариативности в универсальных методах-делегатах Func и Action (C#)
+
 Эти примеры показывают, как обеспечить возможность многократного использования методов и сделать код более гибким, используя ковариацию и контравариацию в универсальных методах-делегатах `Func` и `Action`.  
   
  Дополнительные сведения о ковариации и контравариации см. в разделе [Вариативность в делегатах (C#)](./variance-in-delegates.md).  
   
 ## <a name="using-delegates-with-covariant-type-parameters"></a>Использование методов-делегатов с параметрами ковариантного типа  
+
  Следующий пример иллюстрирует преимущества поддержки ковариации в универсальных методах-делегатах `Func`. Метод `FindByTitle` принимает параметр типа `String` и возвращает объект типа `Employee`. При этом данный метод можно назначить методу-делегату `Func<String, Person>`, поскольку `Employee` наследует `Person`.  
   
 ```csharp  
@@ -50,6 +52,7 @@ class Program
 ```  
   
 ## <a name="using-delegates-with-contravariant-type-parameters"></a>Использование методов-делегатов с параметрами контравариантного типа  
+
  Следующий пример иллюстрирует преимущества поддержки контравариации в универсальных методах-делегатах `Action`. Метод `AddToContacts` принимает параметр типа `Person`. При этом данный метод можно назначить методу-делегату `Action<Employee>`, поскольку `Employee` наследует `Person`.  
   
 ```csharp  
