@@ -9,56 +9,59 @@ helpviewer_keywords:
 - /define compiler option [Visual Basic]
 - define compiler option [Visual Basic]
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
-ms.openlocfilehash: d0d1b03d9ab98f28a0112198f1ecc1e928d6d4a7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cb56e727479fd249cb0d7e5e7c3c50d5b68b3a72
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408716"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072019"
 ---
-# <a name="-define-visual-basic"></a><span data-ttu-id="5f717-102">-define (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="5f717-102">-define (Visual Basic)</span></span>
-<span data-ttu-id="5f717-103">Задает константы условной компиляции.</span><span class="sxs-lookup"><span data-stu-id="5f717-103">Defines conditional compiler constants.</span></span>  
+# <a name="-define-visual-basic"></a><span data-ttu-id="484c7-102">-define (Visual Basic)</span><span class="sxs-lookup"><span data-stu-id="484c7-102">-define (Visual Basic)</span></span>
+
+<span data-ttu-id="484c7-103">Задает константы условной компиляции.</span><span class="sxs-lookup"><span data-stu-id="484c7-103">Defines conditional compiler constants.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5f717-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5f717-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="484c7-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="484c7-104">Syntax</span></span>  
   
 ```console  
 -define:["]symbol[=value][,symbol[=value]]["]  
 ```
 
-<span data-ttu-id="5f717-105">or</span><span class="sxs-lookup"><span data-stu-id="5f717-105">or</span></span>
+<span data-ttu-id="484c7-105">or</span><span class="sxs-lookup"><span data-stu-id="484c7-105">or</span></span>
 
 ```console  
 -d:["]symbol[=value][,symbol[=value]]["]  
 ```  
   
-## <a name="arguments"></a><span data-ttu-id="5f717-106">Аргументы</span><span class="sxs-lookup"><span data-stu-id="5f717-106">Arguments</span></span>  
+## <a name="arguments"></a><span data-ttu-id="484c7-106">Аргументы</span><span class="sxs-lookup"><span data-stu-id="484c7-106">Arguments</span></span>  
   
-|<span data-ttu-id="5f717-107">Термин</span><span class="sxs-lookup"><span data-stu-id="5f717-107">Term</span></span>|<span data-ttu-id="5f717-108">Определение</span><span class="sxs-lookup"><span data-stu-id="5f717-108">Definition</span></span>|  
+|<span data-ttu-id="484c7-107">Термин</span><span class="sxs-lookup"><span data-stu-id="484c7-107">Term</span></span>|<span data-ttu-id="484c7-108">Определение</span><span class="sxs-lookup"><span data-stu-id="484c7-108">Definition</span></span>|  
 |---|---|  
-|`symbol`|<span data-ttu-id="5f717-109">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5f717-109">Required.</span></span> <span data-ttu-id="5f717-110">Определяемый символ.</span><span class="sxs-lookup"><span data-stu-id="5f717-110">The symbol to define.</span></span>|  
-|`value`|<span data-ttu-id="5f717-111">Необязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="5f717-111">Optional.</span></span> <span data-ttu-id="5f717-112">Значение, которому назначается `symbol`.</span><span class="sxs-lookup"><span data-stu-id="5f717-112">The value to assign `symbol`.</span></span> <span data-ttu-id="5f717-113">Если `value` является строкой, его необходимо заключить в последовательности из обратной косой черты и кавычки (\\"), а не просто в кавычки.</span><span class="sxs-lookup"><span data-stu-id="5f717-113">If `value` is a string, it must be surrounded by backslash/quotation-mark sequences (\\") instead of quotation marks.</span></span> <span data-ttu-id="5f717-114">Если значение не задано, считается, что используется значение True.</span><span class="sxs-lookup"><span data-stu-id="5f717-114">If no value is specified, then it is taken to be True.</span></span>|  
+|`symbol`|<span data-ttu-id="484c7-109">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="484c7-109">Required.</span></span> <span data-ttu-id="484c7-110">Определяемый символ.</span><span class="sxs-lookup"><span data-stu-id="484c7-110">The symbol to define.</span></span>|  
+|`value`|<span data-ttu-id="484c7-111">Необязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="484c7-111">Optional.</span></span> <span data-ttu-id="484c7-112">Значение, которому назначается `symbol`.</span><span class="sxs-lookup"><span data-stu-id="484c7-112">The value to assign `symbol`.</span></span> <span data-ttu-id="484c7-113">Если `value` является строкой, его необходимо заключить в последовательности из обратной косой черты и кавычки (\\"), а не просто в кавычки.</span><span class="sxs-lookup"><span data-stu-id="484c7-113">If `value` is a string, it must be surrounded by backslash/quotation-mark sequences (\\") instead of quotation marks.</span></span> <span data-ttu-id="484c7-114">Если значение не задано, считается, что используется значение True.</span><span class="sxs-lookup"><span data-stu-id="484c7-114">If no value is specified, then it is taken to be True.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="5f717-115">Примечания</span><span class="sxs-lookup"><span data-stu-id="5f717-115">Remarks</span></span>  
- <span data-ttu-id="5f717-116">Влияние параметра `-define` похоже на использование директивы препроцессора `#Const` в исходном файле, за исключением того, что определенные с помощью `-define` константы являются общими и применяются ко всем файлам в проекте.</span><span class="sxs-lookup"><span data-stu-id="5f717-116">The `-define` option has an effect similar to using a `#Const` preprocessor directive in your source file, except that constants defined with `-define` are public and apply to all files in the project.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="484c7-115">Примечания</span><span class="sxs-lookup"><span data-stu-id="484c7-115">Remarks</span></span>  
+
+ <span data-ttu-id="484c7-116">Влияние параметра `-define` похоже на использование директивы препроцессора `#Const` в исходном файле, за исключением того, что определенные с помощью `-define` константы являются общими и применяются ко всем файлам в проекте.</span><span class="sxs-lookup"><span data-stu-id="484c7-116">The `-define` option has an effect similar to using a `#Const` preprocessor directive in your source file, except that constants defined with `-define` are public and apply to all files in the project.</span></span>  
   
- <span data-ttu-id="5f717-117">Вы можете использовать символы, созданные этим параметром с помощью директивы `#If`...`Then`...`#Else`, для условной компиляции исходных файлов.</span><span class="sxs-lookup"><span data-stu-id="5f717-117">You can use symbols created by this option with the `#If`...`Then`...`#Else` directive to compile source files conditionally.</span></span>  
+ <span data-ttu-id="484c7-117">Вы можете использовать символы, созданные этим параметром с помощью директивы `#If`...`Then`...`#Else`, для условной компиляции исходных файлов.</span><span class="sxs-lookup"><span data-stu-id="484c7-117">You can use symbols created by this option with the `#If`...`Then`...`#Else` directive to compile source files conditionally.</span></span>  
   
- <span data-ttu-id="5f717-118">`-d` является краткой формой `-define`.</span><span class="sxs-lookup"><span data-stu-id="5f717-118">`-d` is the short form of `-define`.</span></span>  
+ <span data-ttu-id="484c7-118">`-d` является краткой формой `-define`.</span><span class="sxs-lookup"><span data-stu-id="484c7-118">`-d` is the short form of `-define`.</span></span>  
   
- <span data-ttu-id="5f717-119">Вы можете определить несколько символов с помощью `-define`, разделяя их определения запятой.</span><span class="sxs-lookup"><span data-stu-id="5f717-119">You can define multiple symbols with `-define` by using a comma to separate symbol definitions.</span></span>  
+ <span data-ttu-id="484c7-119">Вы можете определить несколько символов с помощью `-define`, разделяя их определения запятой.</span><span class="sxs-lookup"><span data-stu-id="484c7-119">You can define multiple symbols with `-define` by using a comma to separate symbol definitions.</span></span>  
   
-|<span data-ttu-id="5f717-120">Задание параметра -define в интегрированной среде разработки Visual Studio</span><span class="sxs-lookup"><span data-stu-id="5f717-120">To set -define in the Visual Studio integrated development environment</span></span>|  
+|<span data-ttu-id="484c7-120">Задание параметра -define в интегрированной среде разработки Visual Studio</span><span class="sxs-lookup"><span data-stu-id="484c7-120">To set -define in the Visual Studio integrated development environment</span></span>|  
 |---|  
-|<span data-ttu-id="5f717-121">1.  Выберите проект в **Обозревателе решений**.</span><span class="sxs-lookup"><span data-stu-id="5f717-121">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="5f717-122">В меню **Проект** выберите пункт **Свойства**.</span><span class="sxs-lookup"><span data-stu-id="5f717-122">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="5f717-123">2.  Откройте вкладку **Компиляция**.</span><span class="sxs-lookup"><span data-stu-id="5f717-123">2.  Click the **Compile** tab.</span></span><br /><span data-ttu-id="5f717-124">3.  Нажмите кнопку **Дополнительно**.</span><span class="sxs-lookup"><span data-stu-id="5f717-124">3.  Click **Advanced**.</span></span><br /><span data-ttu-id="5f717-125">4.  Измените значение в поле **Настраиваемые константы**.</span><span class="sxs-lookup"><span data-stu-id="5f717-125">4.  Modify the value in the **Custom Constants** box.</span></span>|  
+|<span data-ttu-id="484c7-121">1.  Выберите проект в **Обозревателе решений**.</span><span class="sxs-lookup"><span data-stu-id="484c7-121">1.  Have a project selected in **Solution Explorer**.</span></span> <span data-ttu-id="484c7-122">В меню **Проект** выберите пункт **Свойства**.</span><span class="sxs-lookup"><span data-stu-id="484c7-122">On the **Project** menu, click **Properties**.</span></span> <br /><span data-ttu-id="484c7-123">2.  Откройте вкладку **Компиляция**.</span><span class="sxs-lookup"><span data-stu-id="484c7-123">2.  Click the **Compile** tab.</span></span><br /><span data-ttu-id="484c7-124">3.  Нажмите кнопку **Дополнительно**.</span><span class="sxs-lookup"><span data-stu-id="484c7-124">3.  Click **Advanced**.</span></span><br /><span data-ttu-id="484c7-125">4.  Измените значение в поле **Настраиваемые константы**.</span><span class="sxs-lookup"><span data-stu-id="484c7-125">4.  Modify the value in the **Custom Constants** box.</span></span>|  
   
-## <a name="example"></a><span data-ttu-id="5f717-126">Пример</span><span class="sxs-lookup"><span data-stu-id="5f717-126">Example</span></span>  
- <span data-ttu-id="5f717-127">В следующем примере кода определяются и используются две константы условной компиляции.</span><span class="sxs-lookup"><span data-stu-id="5f717-127">The following code defines and then uses two conditional compiler constants.</span></span>  
+## <a name="example"></a><span data-ttu-id="484c7-126">Пример</span><span class="sxs-lookup"><span data-stu-id="484c7-126">Example</span></span>  
+
+ <span data-ttu-id="484c7-127">В следующем примере кода определяются и используются две константы условной компиляции.</span><span class="sxs-lookup"><span data-stu-id="484c7-127">The following code defines and then uses two conditional compiler constants.</span></span>  
   
  [!code-vb[VbVbalrCompiler#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#45)]  
   
-## <a name="see-also"></a><span data-ttu-id="5f717-128">См. также</span><span class="sxs-lookup"><span data-stu-id="5f717-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="484c7-128">См. также</span><span class="sxs-lookup"><span data-stu-id="484c7-128">See also</span></span>
 
-- [<span data-ttu-id="5f717-129">Компилятор Visual Basic с интерфейсом командной строки</span><span class="sxs-lookup"><span data-stu-id="5f717-129">Visual Basic Command-Line Compiler</span></span>](index.md)
-- [<span data-ttu-id="5f717-130">Директивы #If...Then...#Else</span><span class="sxs-lookup"><span data-stu-id="5f717-130">#If...Then...#Else Directives</span></span>](../../language-reference/directives/if-then-else-directives.md)
-- [<span data-ttu-id="5f717-131">Директива #Const</span><span class="sxs-lookup"><span data-stu-id="5f717-131">#Const Directive</span></span>](../../language-reference/directives/const-directive.md)
-- [<span data-ttu-id="5f717-132">Примеры командных строк компиляции</span><span class="sxs-lookup"><span data-stu-id="5f717-132">Sample Compilation Command Lines</span></span>](sample-compilation-command-lines.md)
+- [<span data-ttu-id="484c7-129">Компилятор Visual Basic с интерфейсом командной строки</span><span class="sxs-lookup"><span data-stu-id="484c7-129">Visual Basic Command-Line Compiler</span></span>](index.md)
+- [<span data-ttu-id="484c7-130">Директивы #If...Then...#Else</span><span class="sxs-lookup"><span data-stu-id="484c7-130">#If...Then...#Else Directives</span></span>](../../language-reference/directives/if-then-else-directives.md)
+- [<span data-ttu-id="484c7-131">Директива #Const</span><span class="sxs-lookup"><span data-stu-id="484c7-131">#Const Directive</span></span>](../../language-reference/directives/const-directive.md)
+- [<span data-ttu-id="484c7-132">Примеры командных строк компиляции</span><span class="sxs-lookup"><span data-stu-id="484c7-132">Sample Compilation Command Lines</span></span>](sample-compilation-command-lines.md)
