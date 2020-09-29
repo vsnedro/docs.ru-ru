@@ -6,14 +6,15 @@ helpviewer_keywords:
 - addmodule compiler option [Visual Basic]
 - -addmodule compiler option [Visual Basic]
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
-ms.openlocfilehash: 9e8146497d63d949f138d6cd08c9ea8c7b03c651
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2db122acc03056a9cb6f355119d4c4e6da6ed175
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414315"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91097791"
 ---
 # <a name="-addmodule"></a>-addmodule
+
 Дает компилятору указание сделать всю информацию о типах из указанных файлов доступной компилируемому проекту.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,10 +24,12 @@ ms.locfileid: "84414315"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `fileList`  
  Обязательный. Разделенный запятыми список файлов, содержащих метаданные, но не содержащих манифесты сборки. Имена файлов, содержащие пробелы, должны быть заключены в кавычки (" ").  
   
 ## <a name="remarks"></a>Примечания  
+
  Файлы, перечисленные в параметре `fileList`, должны быть созданы с использованием параметра `-target:module` или параметра, эквивалентного `-target:module`, в другом компиляторе.  
   
  Все модули, добавленные с помощью `-addmodule`, во время выполнения должны находиться в том же каталоге, что и выходной файл. То есть во время компиляции можно указать модуль в любом каталоге, но во время выполнения он должен находиться в каталоге приложения. В противном случае возникает ошибка <xref:System.TypeLoadException>.  
@@ -39,6 +42,7 @@ ms.locfileid: "84414315"
 > Параметр `-addmodule` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код создает модуль.  
   
  [!code-vb[VbVbalrCompiler#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionStrictOff.vb#47)]  

@@ -6,14 +6,15 @@ helpviewer_keywords:
 - /platform compiler option [Visual Basic]
 - -platform compiler option [Visual Basic]
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
-ms.openlocfilehash: a6226b73d5d5d4d48a71afe39e8a546019d4c0bc
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 488a1da6b25bcb4b42f0d355c6faee542046d0f5
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74352348"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098895"
 ---
 # <a name="-platform-visual-basic"></a>-platform (Visual Basic)
+
 Указывает, на какой версии платформы среды CLR может запускаться выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ ms.locfileid: "74352348"
 |`anycpu32bitpreferred`|Компилирует сбору для запуска на любой платформе. Приложение будет выполняться как 32-разрядное приложение в 32-разрядных и 64-разрядных версиях Windows. Этот флаг действителен только для исполняемых файлов (с расширением EXE). Для него требуется платформа .NET Framework 4.5.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Используйте параметр `-platform`, чтобы указать процессор назначения для выходного файла.  
   
  В целом, сборки .NET Framework, написанные на Visual Basic, будут работать одинаково вне зависимости от платформы. Тем не менее, в некоторых случаях поведение программ на разных платформах может различаться. Вот эти случаи:  
@@ -75,6 +77,7 @@ ms.locfileid: "74352348"
      Дополнительные сведения см. в разделе [Страница приложения в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано использование параметра компилятора `-platform`.  
   
 ```console

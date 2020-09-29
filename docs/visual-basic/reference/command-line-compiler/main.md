@@ -6,14 +6,15 @@ helpviewer_keywords:
 - /main compiler option [Visual Basic]
 - -main compiler option [Visual Basic]
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-ms.openlocfilehash: 5530da4c784346df4a1088998b8d2027feee08e3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fb317b3c555d151e132122c476ce19bdeceb1321
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403165"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91065623"
 ---
 # <a name="-main"></a>-main
+
 Задает класс или модуль, содержащий процедуру `Sub Main`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,10 +24,12 @@ ms.locfileid: "84403165"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `location`  
  Обязательный. Имя класса или модуля, который содержит процедуру `Sub Main` для вызова при запуске программы. Может иметь формат **-main:module** или **-main:namespace.module**.  
   
 ## <a name="remarks"></a>Примечания  
+
  Используйте этот параметр при создании исполняемого файла или исполняемой программы Windows. Если параметр **-main** опущен, компилятор ищет допустимый общедоступный объект `Sub Main` во всех открытых классах и модулях.  
   
  Описание разных форм процедуры `Main` см. в статье [о процедуре Main в Visual Basic](../../programming-guide/program-structure/main-procedure.md).  
@@ -46,6 +49,7 @@ ms.locfileid: "84403165"
 4. Измените значение в поле **Автоматически запускаемый объект**.  
   
 ## <a name="example"></a>Пример  
+
  В следующем код запускается компиляция `T2.vb` и `T3.vb`, а также указано, что процедура `Sub Main` находится в классе `Test2`.  
   
 ```console

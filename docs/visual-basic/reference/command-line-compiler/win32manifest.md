@@ -6,14 +6,15 @@ helpviewer_keywords:
 - win32manifest compiler option [Visual Basic]
 - -win32manifest compiler option [Visual Basic]
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
-ms.openlocfilehash: 6f77649365f8ca7b163cd55854aa9960d88f2984
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f8329ce2e7597f802d75ec85a580f1a3bd5cfc97
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414263"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098882"
 ---
 # <a name="-win32manifest-visual-basic"></a>-win32manifest (Visual Basic)
+
 Определяет пользовательский файл манифеста приложения Win32 для внедрения в переносимый исполняемый файл проекта (PE-файл).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "84414263"
 |`fileName`|Путь к пользовательскому файлу манифеста.|  
   
 ## <a name="remarks"></a>Примечания  
+
  По умолчанию компилятор Visual Basic внедряет манифест приложения, определяющий запрошенный уровень выполнения "asInvoker". Он создает манифест в той же папке, в которой создан исполняемый файл; при использовании Visual Studio обычно это папка bin\Debug или bin\Release. Если вы хотите предоставить пользовательский манифест, например, чтобы задать запрошенный уровень выполнения highestAvailable или requireAdministrator, используйте этот параметр, чтобы указать имя файла.  
   
 > [!NOTE]
@@ -47,6 +49,7 @@ ms.locfileid: "84414263"
  Манифест приложения можно предоставить во время пользовательского этапа после сборки или в составе файла ресурсов Win32 с помощью параметра `-nowin32manifest`. Этот же параметр можно использовать, если вы хотите, чтобы ваше приложение требовало виртуализации файлов или реестров в Windows Vista. В этом случае компилятор не будет создавать и внедрять манифест по умолчанию в PE-файл.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показан манифест по умолчанию, который компилятор Visual C# вставляет в PE.  
   
 > [!NOTE]

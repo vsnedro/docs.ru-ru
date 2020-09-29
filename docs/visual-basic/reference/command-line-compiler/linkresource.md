@@ -9,14 +9,15 @@ helpviewer_keywords:
 - linkres compiler option [Visual Basic]
 - -linkres compiler option [Visual Basic]
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
-ms.openlocfilehash: 43ebb61efa26ed11af573e2c4e73a6fd71ac0902
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8c4f753f94aedaf0a4f997a3f9b99fb3f417abf8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403204"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91065688"
 ---
 # <a name="-linkresource-visual-basic"></a>-linkresource (Visual Basic)
+
 Создает ссылку на управляемый ресурс.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,6 +33,7 @@ or
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Обязательный. Файл ресурсов, связываемый со сборкой. Если имя файла содержит пробел, заключите его в кавычки (" ").  
   
@@ -39,6 +41,7 @@ or
  Необязательный элемент. Логическое имя ресурса. Имя, которое используется для загрузки ресурса. По умолчанию используется имя файла. При необходимости в манифесте сборки можно указать, является ли файл общедоступным или частным, например: `-linkres:filename.res,myname.res,public`. По умолчанию `filename` в сборке является общедоступным.  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметр `-linkresource` не подразумевает внедрение файла ресурсов в выходной файл; для этого используйте параметр `-resource`.  
   
  Для параметра `-linkresource` требуется один из параметров `-target`, кроме `-target:module`.  
@@ -53,6 +56,7 @@ or
 > Параметр `-linkresource` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `in.vb` и обращается к файлу ресурсов `rf.resource`.  
   
 ```console  

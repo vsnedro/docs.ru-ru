@@ -9,14 +9,15 @@ helpviewer_keywords:
 - keycontainer compiler option [C#]
 - -keycontainer compiler option [C#]
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
-ms.openlocfilehash: 8b11380683159b7792149558a5dd432707ba3818
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 93ee5cd755a4fd6918d2a5825b63151a201a8f6a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125505"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152472"
 ---
 # <a name="-keycontainer-c-compiler-options"></a>-keycontainer (параметры компилятора C#)
+
 Задает имя контейнера криптографического ключа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89125505"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `string`  
  Имя контейнера ключа строгого имени.  
   
 ## <a name="remarks"></a>Remarks  
+
  Когда используется параметр **-keycontainer**, компилятор создает совместно используемый компонент. Компилятор вставляет открытый ключ из указанного контейнера в манифест сборки, после чего подписывает финальную сборку закрытым ключом. Чтобы создать файл ключа, в командной строке введите `sn -k file`. Команда `sn -i` устанавливает пару ключей в контейнер. Этот параметр не поддерживается, когда компилятор работает на CoreCLR. Чтобы подписать сборку при компиляции на CoreCLR, используйте параметр [-keyfile](keyfile-compiler-option.md).
   
  При компиляции с параметром [-target:module](./target-module-compiler-option.md) имя файла ключа сохраняется в модуле и включается в сборку при компиляции этого модуля с параметром [-addmodule](./addmodule-compiler-option.md).  

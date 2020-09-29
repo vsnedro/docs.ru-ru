@@ -6,14 +6,15 @@ helpviewer_keywords:
 - -win32icon compiler option [Visual Basic]
 - /win32icon compiler option [Visual Basic]
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
-ms.openlocfilehash: 52ef0b991554c800dba4320b0c64c81ddd1b0ff4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c6d5e054063592db5777a76fe19da79337ed5034
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414289"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91084961"
 ---
 # <a name="-win32icon"></a>-win32icon
+
 Внедряет ICO-файл в выходной файл. Этот ICO-файл представляет выходной файл в **проводнике**.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "84414289"
 |`filename`|ICO-файл, который требуется добавить в выходной файл. Если имя файла содержит пробел, заключите это имя в кавычки (" ").|  
   
 ## <a name="remarks"></a>Примечания  
+
  Вы можете создать ICO-файл с помощью компилятора ресурсов Microsoft Windows (RC). Компилятор ресурсов вызывается при компиляции программы Visual C++. При этом ICO-файл создается из RC-файла. Параметры `-win32icon` и `-win32resource` являются взаимоисключающими.  
   
  Чтобы создать ссылку на файл ресурсов .NET Framework, см. раздел [-linkresource (Visual Basic)](linkresource.md). Чтобы присоединить файл ресурсов .NET, см. раздел [-resource (Visual Basic)](resource.md). См. сведения об импорте RES-файла в разделе [-win32resource](win32resource.md).  
@@ -38,6 +40,7 @@ ms.locfileid: "84414289"
 |1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Перейдите на вкладку **Приложение** .<br />3.  Измените значение в поле **Значок**.|  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `In.vb` и присоединяет ICO-файл `Rf.ico`.  
   
 ```console

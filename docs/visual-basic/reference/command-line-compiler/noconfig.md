@@ -6,14 +6,15 @@ helpviewer_keywords:
 - -noconfig compiler option [Visual Basic]
 - /noconfig compiler option [Visual Basic]
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
-ms.openlocfilehash: ee7cd1b8039a8d9312a8b058cc85c41ca536ed2b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d7fc73aa24e3d2e323170f38f0f5d689f9c3abaf
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401944"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91065558"
 ---
 # <a name="-noconfig"></a>-noconfig
+
 Указывает, что компилятор не должен автоматически ссылаться на часто используемые сборки .NET Framework и импортировать пространства имен `System` и `Microsoft.VisualBasic`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,6 +24,7 @@ ms.locfileid: "84401944"
 ```  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметр `-noconfig` указывает компилятору не выполнять сборку с использованием файла Vbc.rsp, который располагается в том же каталоге, что и файл Vbc.exe. Файл Vbc.rsp ссылается на часто используемые сборки .NET Framework и импортирует пространства имен `System` и `Microsoft.VisualBasic`. Компилятор неявно ссылается на сборку System.dll, если не указан параметр `-nostdlib`. Параметр `-nostdlib` указывает компилятору не выполнять сборку с использованием файла Vbc.rsp и не ссылаться на сборку System.dll автоматически.  
   
 > [!NOTE]

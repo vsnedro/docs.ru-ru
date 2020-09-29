@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /filealign compiler option [Visual Basic]
 - filealign compiler option [Visual Basic]
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-ms.openlocfilehash: 3877757185030b0dba914a79d8c760fb8033ae5f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 809b7ad005b6bb5f127f84425b5d2beb980df471
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408651"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91058135"
 ---
 # <a name="-filealign"></a>-filealign
+
 Задает выравнивание размеров выходного файла.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "84408651"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `number`  
  Обязательный. Значение, которое определяет выравнивание разделов в выходном файле. Допустимые значения: 512, 1024, 2048, 4096 и 8192. Эти значения указаны в байтах.  
   
 ## <a name="remarks"></a>Примечания  
+
  Можно использовать параметр `-filealign`, чтобы определить выравнивание разделов в выходном файле. Разделы — это блоки непрерывной памяти в PE-файле, содержащем код или данные. Параметр `-filealign` позволяет компилировать приложение с нестандартным выравниванием. Большинству разработчиков не нужно использовать этот параметр.  
   
  Каждый раздел выравнивается по границе, кратной значению `-filealign`. Фиксированный размер по умолчанию не предусмотрен. Если не указать `-filealign`, компилятор выбирает значение по умолчанию во время компиляции.  

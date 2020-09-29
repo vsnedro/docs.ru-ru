@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -addmodule compiler option [C#]
 - addmodule compiler option [C#]
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
-ms.openlocfilehash: bcc615d52aec0a09ebf3913b3ece71f2cbfcbda9
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ec72fc76b3d550029b1286f64b8f86e69e721468
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89126129"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91150574"
 ---
 # <a name="-addmodule-c-compiler-options"></a>-addmodule (параметры компилятора C#)
+
 Установка этого параметра приводит к добавлению модуля, созданного с помощью параметра target:module для текущей компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89126129"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `file`, `file2`  
  Выходной файл, содержащий метаданные. В данный файл не может входить манифест сборки. Чтобы импортировать несколько файлов, разделите их имена запятыми или точками с запятой.  
   
 ## <a name="remarks"></a>Remarks  
+
  Все модули, добавленные с помощью **-addmodule**, во время выполнения должны находиться в том же каталоге, что и выходной файл. То есть во время компиляции можно указать модуль в любом каталоге, но во время выполнения он должен находиться в каталоге приложения. Если во время выполнения модуль отсутствует в каталоге приложения, возникнет <xref:System.TypeLoadException>.  
   
  `file` не может содержать сборку. Например, если выходной файл был создан с помощью [-target:module](./target-module-compiler-option.md), для импорта его метаданных можно использовать **-addmodule**.  
@@ -39,6 +42,7 @@ ms.locfileid: "89126129"
  Этот параметр компилятора недоступен в Visual Studio; проект не может ссылаться на модуль. Кроме того, этот параметр компилятора нельзя изменить программным способом.  
   
 ## <a name="example"></a>Пример  
+
  Скомпилируйте исходный файл `input.cs` и добавьте метаданные из `metad1.netmodule` и `metad2.netmodule`, чтобы создать `out.exe`.  
   
 ```console  

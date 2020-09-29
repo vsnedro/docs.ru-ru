@@ -6,14 +6,15 @@ helpviewer_keywords:
 - keycontainer compiler option [Visual Basic]
 - /keycontainer compiler option [Visual Basic]
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-ms.openlocfilehash: 575b337c262fbb36a9e118aa293916c296cc2db3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 243583e55dcf278f951b813cca8384246d2d6db9
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408566"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085234"
 ---
 # <a name="-keycontainer"></a>-keycontainer
+
 Указывает имя контейнера для пары ключей, чтобы задать для сборки строгое имя.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "84408566"
 |`container`|Обязательный. Файл контейнера, содержащий ключ. Если имя файла содержит пробел, заключите это имя в кавычки (" ").|  
   
 ## <a name="remarks"></a>Примечания  
+
  Компилятор создает компонент, который можно сделать общим, вставляя в манифест сборки открытый ключ и подписывая окончательную сборку закрытым ключом. Чтобы создать файл ключа, в командной строке введите `sn -k file`. Параметр `-i` устанавливает пару ключей в контейнер. Дополнительные сведения см. в статье [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md).  
   
  При компиляции с параметром `-target:module` имя файла ключа сохраняется в модуле и включается в сборку, создаваемую при компиляции с параметром [-addmodule](addmodule.md).  
@@ -43,6 +45,7 @@ ms.locfileid: "84408566"
 > Параметр `-keycontainer` недоступен в среде разработки Visual Studio. Он доступен только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует исходный файл `Input.vb` и определяет контейнер ключей.  
   
 ```console  

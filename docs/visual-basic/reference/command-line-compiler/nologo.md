@@ -7,14 +7,15 @@ helpviewer_keywords:
 - nologo compiler option [Visual Basic]
 - /nologo compiler option [Visual Basic]
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
-ms.openlocfilehash: d1307603ebc06b4eb4c3786f1cd2fb432c0cf636
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5557d681c5e6901592936efd35b3c552d43e39b0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360466"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91097674"
 ---
 # <a name="-nologo-visual-basic"></a>-nologo (Visual Basic)
+
 Отключает отображение баннера авторских прав и информационных сообщений во время компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,12 +25,14 @@ ms.locfileid: "84360466"
 ```  
   
 ## <a name="remarks"></a>Примечания  
+
  При указании `-nologo` компилятор не отображает баннер авторских прав. По умолчанию `-nologo` не действует.  
   
 > [!NOTE]
 > Параметр `-nologo` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `T2.vb` и не отображает баннер авторских прав.  
   
 ```console

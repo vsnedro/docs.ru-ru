@@ -6,14 +6,15 @@ helpviewer_keywords:
 - keyfile compiler option [Visual Basic]
 - -keyfile compiler option [Visual Basic]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.openlocfilehash: 3f476f6b6db1a788002a938eb5ae4bbbed7a5dae
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c81486243195f7d022bd474ef6db20d069b3a018
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408579"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085156"
 ---
 # <a name="-keyfile"></a>-keyfile
+
 Указывает файл, содержащий ключ или пару ключей, чтобы задать для сборки строгое имя.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,10 +24,12 @@ ms.locfileid: "84408579"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `file`  
  Обязательный. Файл, который содержит ключ. Если имя файла содержит пробел, заключите это имя в кавычки (" ").  
   
 ## <a name="remarks"></a>Примечания  
+
  Компилятор вставляет открытый ключ в манифест сборки, а затем подписывает окончательную сборку закрытым ключом. Чтобы создать файл ключа, в командной строке введите `sn -k file`. Дополнительные сведения см. в статье [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md).  
   
  При компиляции с параметром `-target:module` имя файла ключа сохраняется в модуле и включается в сборку, создаваемую при компиляции с параметром [-addmodule](addmodule.md).  

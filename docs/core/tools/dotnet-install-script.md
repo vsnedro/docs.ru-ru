@@ -1,13 +1,13 @@
 ---
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET Core и общей среды выполнения
-ms.date: 04/30/2020
-ms.openlocfilehash: 8f27b8a7794e84e6e2b288d6cc2ec33ffcb7600f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 09/22/2020
+ms.openlocfilehash: 35161edd2a4862e064373d75f1e19396983f3a64
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538046"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91078207"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -185,7 +185,6 @@ dotnet-install.sh --help
   Представляет определенную версию сборки. Допустимые значения:
 
   - `latest` — последняя сборка в канале (используется с параметром `-Channel`).
-  - `coherent` — последняя согласованная сборка в канале. Использует последние сочетания стабильных пакетов. (Используется с параметрами `-Channel` имени ветви.)
   - Версия из трех частей в формате X.Y.Z, который представляет определенную версию сборки. Заменяет параметр `-Channel`. Например, `2.0.0-preview2-006120`.
 
   Если не указано, `-Version` по умолчанию принимает значение `latest`.

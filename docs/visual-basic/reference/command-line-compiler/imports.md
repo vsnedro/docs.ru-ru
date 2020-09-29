@@ -6,14 +6,15 @@ helpviewer_keywords:
 - imports compiler option [Visual Basic]
 - -imports compiler option [Visual Basic]
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
-ms.openlocfilehash: cc9fc222843bdfe8e49d2d291dc36ff3e0c63fc2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 69781dff1474e42ae5f735fdefd694c6447636b5
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408599"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085260"
 ---
 # <a name="-imports-visual-basic"></a>-imports (Visual Basic)
+
 Импортирует пространства имен из указанной сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "84408599"
 |`namespaceList`|Обязательный. Разделенный запятыми список пространств имен для импорта.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметр `-imports` импортирует любое пространство имен, определенное в текущем наборе исходных файлов или любой связанной сборке.  
   
  Элементы в пространстве имен, заданном с помощью `-imports`, доступны для всех файлов исходного кода в компиляции. Используйте [оператор Imports (пространство имен и тип .NET)](../../language-reference/statements/imports-statement-net-namespace-and-type.md), чтобы использовать пространство имен в одном файле исходного кода.  
@@ -38,6 +40,7 @@ ms.locfileid: "84408599"
 |1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Перейдите на вкладку **Ссылки**.<br />3.  Введите имя пространства имен в поле рядом с кнопкой **Добавить пользовательский импорт**.<br />4.  Нажмите кнопку **Добавить пользовательский импорт**.|  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилируется, когда указан параметр `-imports:system.globalization`. В противном случае для успешной компиляции требуется, чтобы инструкция `Imports System.Globalization` была включена в начало файла исходного кода или чтобы свойство было полностью определено как `System.Globalization.CultureInfo.CurrentCulture.Name`.
 
 ```vb

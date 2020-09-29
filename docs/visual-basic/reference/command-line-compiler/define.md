@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /define compiler option [Visual Basic]
 - define compiler option [Visual Basic]
 ms.assetid: f735c57d-1cf9-4f2f-a26f-0de630fd4077
-ms.openlocfilehash: d0d1b03d9ab98f28a0112198f1ecc1e928d6d4a7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cb56e727479fd249cb0d7e5e7c3c50d5b68b3a72
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408716"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91072019"
 ---
 # <a name="-define-visual-basic"></a>-define (Visual Basic)
+
 Задает константы условной компиляции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ or
 |`value`|Необязательный элемент. Значение, которому назначается `symbol`. Если `value` является строкой, его необходимо заключить в последовательности из обратной косой черты и кавычки (\\"), а не просто в кавычки. Если значение не задано, считается, что используется значение True.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Влияние параметра `-define` похоже на использование директивы препроцессора `#Const` в исходном файле, за исключением того, что определенные с помощью `-define` константы являются общими и применяются ко всем файлам в проекте.  
   
  Вы можете использовать символы, созданные этим параметром с помощью директивы `#If`...`Then`...`#Else`, для условной компиляции исходных файлов.  
@@ -52,6 +54,7 @@ or
 |1.  Выберите проект в **Обозревателе решений**. В меню **Проект** выберите пункт **Свойства**. <br />2.  Откройте вкладку **Компиляция**.<br />3.  Нажмите кнопку **Дополнительно**.<br />4.  Измените значение в поле **Настраиваемые константы**.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода определяются и используются две константы условной компиляции.  
   
  [!code-vb[VbVbalrCompiler#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#45)]  

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -lib compiler option [C#]
 - /lib compiler option [C#]
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
-ms.openlocfilehash: e53c54dc446d9fea87a9b7a336a38ffaa31704e9
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 9478501ea98ec1b9d3ec2761bc4ebf3f6bef656c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125453"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152446"
 ---
 # <a name="-lib-c-compiler-options"></a>-lib (параметры компилятора C#)
+
 Параметр **-lib** указывает расположение сборок, на которые ссылается параметр [-reference (параметры компилятора C#)](./reference-compiler-option.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,6 +27,7 @@ ms.locfileid: "89125453"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `dir1`  
  Каталог, в котором компилятор должен искать сборку, если она отсутствует в текущем рабочем каталоге (каталоге, из которого был вызван компилятор) и системном каталоге среды CLR.  
   
@@ -33,6 +35,7 @@ ms.locfileid: "89125453"
  Один или несколько дополнительных каталогов для поиска связанных сборок. Имена дополнительных каталогов разделяются запятыми без пробелов.  
   
 ## <a name="remarks"></a>Remarks  
+
  Компилятор выполняет поиск связанных сборок, для которых не указано полное имя, в следующем порядке:  
   
 1. Текущая рабочая папка. Это папка, из которой был вызван компилятор.  
@@ -62,6 +65,7 @@ ms.locfileid: "89125453"
  Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   
 ## <a name="example"></a>Пример  
+
  Выполните компиляцию файла t2.cs для создания EXE-файла. Компилятор выполнит поиск ссылок на сборку в рабочем каталоге и корневом каталоге диска С.  
   
 ```console  

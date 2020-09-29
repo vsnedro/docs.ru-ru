@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -win32resource compiler option [Visual Basic]
 - win32resource compiler option [Visual Basic]
 ms.assetid: e226946d-19ce-4cc9-91f5-aed24f77aa2b
-ms.openlocfilehash: bcbc690690993a094bc5360d0c13bddebf8cd615
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d146f5967058b05795026cd7726ed5eda7ba3153
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414250"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91095412"
 ---
 # <a name="-win32resource"></a>-win32resource
+
 Вставляет файл ресурсов Win32 в выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "84414250"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Имя файла ресурсов, который требуется добавить в выходной файл. Если имя файла содержит пробел, заключите имя файла в кавычки (" ").  
   
 ## <a name="remarks"></a>Примечания  
+
  Вы можете создать файл ресурсов Win32 с помощью компилятора ресурсов Microsoft Windows (RC).  
   
  Ресурс Win32 может содержать сведения о версии или точечный рисунок (значок), который помогает идентифицировать приложение в **проводнике**. Если параметр `-win32resource` не задан, компилятор создаст сведения о версии на основе версии сборки. Параметры `-win32resource` и `-win32icon` являются взаимоисключающими.  
@@ -40,6 +43,7 @@ ms.locfileid: "84414250"
 > Параметр `-win32resource` недоступен в среде разработки Visual Studio. Его можно использовать только при компиляции из командной строки.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `In.vb` и присоединяет файл ресурсов Win32 `Rf.res`:  
   
 ```console  

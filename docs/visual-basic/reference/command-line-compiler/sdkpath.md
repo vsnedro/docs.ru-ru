@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /sdkpath compiler option [Visual Basic]
 - sdkpath compiler option [Visual Basic]
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
-ms.openlocfilehash: 85aba17b330af1b25b39f462844bc1a4856a448a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 18bf22861c1cbc3a37ef917b421491c2d01efba8
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403113"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085117"
 ---
 # <a name="-sdkpath"></a>-sdkpath
+
 Задает расположение библиотек mscorlib.dll и Microsoft.VisualBasic.dll.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "84403113"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `path`  
  Каталог, содержащий версии библиотек mscorlib.dll и Microsoft.VisualBasic.dll, которые следует использовать для компиляции. Этот путь является не проверенным до его загрузки. Если имя каталога содержит пробел, заключите это имя в кавычки (" ").  
   
 ## <a name="remarks"></a>Примечания  
+
  Этот параметр указывает компилятору Visual Basic, что нужно загрузить файлы mscorlib.dll и Microsoft.VisualBasic.dll из нестандартного расположения. Параметр `-sdkpath` предназначен для использования с параметром [-netcf](netcf.md). .NET Compact Framework использует разные версии этих библиотек поддержки, чтобы исключить использование типов и языковых компонентов, отсутствующих на устройствах.  
   
 > [!NOTE]
@@ -38,6 +41,7 @@ ms.locfileid: "84403113"
  С помощью параметра `-vbruntime` можно указать, что компилятор должен выполнять компиляцию без обращения к библиотеке времени выполнения Visual Basic. Дополнительные сведения см. в описании параметра [-vbruntime](vbruntime.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода выполняется компиляция `Myfile.vb` в .NET Compact Framework с использованием версий библиотек Mscorlib.dll и Microsoft.VisualBasic.dll, которые находятся в каталоге установки .NET Compact Framework по умолчанию на диске C. Как правило, следует использовать самую последнюю версию .NET Compact Framework.  
   
 ```console

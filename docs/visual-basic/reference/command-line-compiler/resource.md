@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -res compiler option [Visual Basic]
 - resource compiler option [Visual Basic]
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
-ms.openlocfilehash: cf9fe8dae0d35df694891633a6e3cf950bfb7376
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 726f3dd179aedb39b578c8580c9632182af2d5e0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363621"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085130"
 ---
 # <a name="-resource-visual-basic"></a>-resource (Visual Basic)
+
 Внедряет управляемый ресурс в сборку.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ or
 |`identifier`|Необязательный элемент. Логическое имя ресурса, которое используется для его загрузки. По умолчанию используется имя файла. При необходимости в манифесте сборки можно указать, является ли ресурс общедоступным или частным, например так: `-res:filename.res, myname.res, public`.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Используйте `-linkresource`, чтобы связать ресурс со сборкой без размещения файла ресурсов в выходном файле.  
   
  Если `filename` — файл ресурса .NET Framework, созданный генератором файлов ресурсов ([Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md)) или в среде разработки, то к нему можно обращаться с помощью элементов пространства имен <xref:System.Resources> (дополнительные сведения см. в статье о классе <xref:System.Resources.ResourceManager>). Для доступа ко всем остальным ресурсам во время выполнения используйте следующие методы: <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> и <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>.  
@@ -48,6 +50,7 @@ or
  Дополнительные сведения о настройке `-resource` в интегрированной среде разработки Visual Studio см. в статье [об управлении ресурсами приложения в .NET](/visualstudio/ide/managing-application-resources-dotnet).  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `In.vb` и присоединяет файл ресурсов `Rf.resource`.  
   
 ```console

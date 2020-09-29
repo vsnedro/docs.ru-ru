@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.date: 10/10/2018
-ms.openlocfilehash: 94f3db14046ad5d63975d0ca44425abed5d52062
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: f125a6a8d9287cb515478a10c2679c07817ae9a6
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281541"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91087366"
 ---
 # <a name="whats-new-in-net-core-21"></a>Новые возможности .NET Core 2.1
 
@@ -131,6 +131,7 @@ dotnet tool install -g dotnetsay
 Если используется пакет SDK 2.0 для .NET Core, автономные приложения публикуются с помощью среды выполнения .NET Core 2.0.0, если в свойстве `RuntimeFrameworkVersion` не указана другая версия. Такое поведение позволяет не устанавливать это свойство, когда нужно выбрать более позднюю версию среды выполнения для автономного приложения. Для перехода к новой версии проще всего опубликовать приложение с пакетом SDK для .NET Core 2.1 (версия 2.1.300).
 
 Дополнительные сведения см. в статье [Обновление версии среды выполнения автономного развертывания](../deploying/runtime-patch-selection.md).
+
 ## <a name="windows-compatibility-pack"></a>Пакет обеспечения совместимости с Windows
 
 При переносе существующего кода с платформы .NET Framework на .NET Core вы можете использовать [пакет обеспечения совместимости с Windows](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). Он предоставляет доступ к 20 000 дополнительных интерфейсов API, которые не поддерживаются в .NET Core. Сюда входят такие API-интерфейсы, как пространство имен <xref:System.Drawing?displayProperty=nameWithType>, класс <xref:System.Diagnostics.EventLog>, инструментарий WMI, счетчики производительности, службы Windows, типы и члены реестра Windows.

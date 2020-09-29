@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -keyfile compiler option [C#]
 - keyfile compiler option [C#]
 ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
-ms.openlocfilehash: a97fc00201be1cf8043fc353b20ef447468a06bf
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5af40da18895d47933cb809d710e31a40f14513b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125492"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152433"
 ---
 # <a name="-keyfile-c-compiler-options"></a>-keyfile (параметры компилятора C#)
+
 Задает имя файла, содержащего криптографический ключ.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,6 +33,7 @@ ms.locfileid: "89125492"
 |`file`|Имя файла, содержащего ключ строгого имени.|  
   
 ## <a name="remarks"></a>Remarks  
+
  При использовании этого параметра компилятор вставляет открытый ключ из указанного файла в манифест сборки и затем подписывает окончательную сборку закрытым ключом. Чтобы создать файл ключа, введите в командной строке sn -k `file`.  
   
  При компиляции с параметром **-target:module** имя файла ключа сохраняется в модуле и включается в сборку, создаваемую при компиляции с параметром [-addmodule](./addmodule-compiler-option.md).  

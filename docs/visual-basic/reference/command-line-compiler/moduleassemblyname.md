@@ -6,14 +6,15 @@ helpviewer_keywords:
 - /moduleassemblyname compiler option [Visual Basic]
 - -moduleassemblyname compiler option [Visual Basic]
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
-ms.openlocfilehash: 99f2b9d65f3c2a128e026666c5efb384e22643f9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9fb9287f9472d4b33eff4cb601aff5eed370b2c0
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403152"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91065571"
 ---
 # <a name="-moduleassemblyname"></a>-moduleassemblyname
+
 Задает имя сборки, частью которой будет этот модуль.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "84403152"
 |`assembly_name`|Имя сборки, частью которой будет этот модуль.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Компилятор обрабатывает параметр `-moduleassemblyname` только в том случае, если был указан параметр `-target:module`. В результате компилятор создает модуль. Модуль, созданный компилятором, действителен только для сборки, указанной с помощью параметра `-moduleassemblyname`. Если разместить модуль в другой сборке, возникнут ошибки во время выполнения.  
   
  Параметр `-moduleassemblyname` требуется только в том случае, если выполняются следующие условия:  

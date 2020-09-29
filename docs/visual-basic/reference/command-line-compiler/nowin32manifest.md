@@ -6,14 +6,15 @@ helpviewer_keywords:
 - nowin32manifest compiler option [Visual Basic]
 - -nowin32manifest compiler option [Visual Basic]
 ms.assetid: c0528aae-83b3-4425-99f0-19448e9843e3
-ms.openlocfilehash: d9323cd541eaf611551de90e58a181f6915fad89
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8fd902e1317c7c767303bcaa30cdc56cff712558
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397458"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91097622"
 ---
 # <a name="-nowin32manifest-visual-basic"></a>-nowin32manifest (Visual Basic)
+
 Указывает компилятору не внедрять манифест приложения в исполняемый файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,6 +24,7 @@ ms.locfileid: "84397458"
 ```  
   
 ## <a name="remarks"></a>Примечания  
+
  При использовании этого параметра приложение будет подлежать виртуализации в Windows Vista, если манифест приложения не будет предоставлен в файле ресурсов Win32 или на более поздних этапах сборки. Дополнительные сведения о виртуализации см. в статье [ClickOnce Deployment on Windows Vista](/visualstudio/deployment/clickonce-deployment-on-windows-vista) (Развертывание ClickOnce в Windows Vista).  
   
  Дополнительные сведения о создании манифестов см. в разделе [-win32manifest (Visual Basic)](win32manifest.md).  

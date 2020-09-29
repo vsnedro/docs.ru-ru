@@ -8,14 +8,15 @@ helpviewer_keywords:
 - /optioninfer compiler option [Visual Basic]
 - optioninfer compiler option [Visual Basic]
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
-ms.openlocfilehash: 524660fca7c56fa490cc85169898bf2bf6d1a16e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3edb1f74ab63497aeda0d72847bce92ad315a1a5
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400582"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098921"
 ---
 # <a name="-optioninfer"></a>-optioninfer
+
 Включает использование локального определения типов в различных объявлениях.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ ms.locfileid: "84400582"
 > Можно использовать параметр `-noconfig`, чтобы сохранить внутренние значения компилятора по умолчанию вместо использования значений, заданных в vbc.rsp. Значение компилятора по умолчанию для этого параметра — `-optioninfer-`.  
   
 ## <a name="remarks"></a>Примечания  
+
  Если файл исходного кода содержит [оператор Option Infer](../../language-reference/statements/option-infer-statement.md), этот оператор переопределяет параметр компилятора командной строки `-optioninfer`.  
   
 ### <a name="to-set--optioninfer-in-the-visual-studio-ide"></a>Порядок задания параметра -optioninfer в среде Visual Studio IDE  
@@ -43,6 +45,7 @@ ms.locfileid: "84400582"
 2. На вкладке **Компиляция** измените значение в поле **Option infer**.  
   
 ## <a name="example"></a>Пример  
+
  Следующий код компилирует `test.vb` с включенным локальным определением типов.  
   
 ```console
