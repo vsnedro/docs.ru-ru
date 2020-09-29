@@ -3,19 +3,20 @@ title: Разделение файла на несколько файлов с �
 description: Узнайте, как разделить файл на несколько файлов с помощью групп. Изучите пример кода и ознакомьтесь с дополнительными ресурсами.
 ms.date: 07/20/2015
 ms.assetid: 8179b91c-d778-4e57-884f-77fe5a8e4e40
-ms.openlocfilehash: 1db16a48db257069eca83127c0b1fed7e49f19d6
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: b7be01be0f1539eb6ed4f4857af2625672319493
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87301064"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203934"
 ---
-# <a name="how-to-split-a-file-into-many-files-by-using-groups-linq-c"></a><span data-ttu-id="4cfbb-104">Разделение файла на несколько файлов с помощью групп (LINQ) (C#)</span><span class="sxs-lookup"><span data-stu-id="4cfbb-104">How to split a file into many files by using groups (LINQ) (C#)</span></span>
-<span data-ttu-id="4cfbb-105">В этом примере показан один из способов объединения содержимого двух файлов и последующего создания набора новых файлов, данные в котором будут организованы иначе.</span><span class="sxs-lookup"><span data-stu-id="4cfbb-105">This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.</span></span>  
+# <a name="how-to-split-a-file-into-many-files-by-using-groups-linq-c"></a><span data-ttu-id="a6923-104">Разделение файла на несколько файлов с помощью групп (LINQ) (C#)</span><span class="sxs-lookup"><span data-stu-id="a6923-104">How to split a file into many files by using groups (LINQ) (C#)</span></span>
+
+<span data-ttu-id="a6923-105">В этом примере показан один из способов объединения содержимого двух файлов и последующего создания набора новых файлов, данные в котором будут организованы иначе.</span><span class="sxs-lookup"><span data-stu-id="a6923-105">This example shows one way to merge the contents of two files and then create a set of new files that organize the data in a new way.</span></span>  
   
-### <a name="to-create-the-data-files"></a><span data-ttu-id="4cfbb-106">Создание файлов данных</span><span class="sxs-lookup"><span data-stu-id="4cfbb-106">To create the data files</span></span>  
+### <a name="to-create-the-data-files"></a><span data-ttu-id="a6923-106">Создание файлов данных</span><span class="sxs-lookup"><span data-stu-id="a6923-106">To create the data files</span></span>  
   
-1. <span data-ttu-id="4cfbb-107">Скопируйте эти имена в текстовый файл с именем names1.txt и сохраните его в папке проекта:</span><span class="sxs-lookup"><span data-stu-id="4cfbb-107">Copy these names into a text file that is named names1.txt and save it in your project folder:</span></span>  
+1. <span data-ttu-id="a6923-107">Скопируйте эти имена в текстовый файл с именем names1.txt и сохраните его в папке проекта:</span><span class="sxs-lookup"><span data-stu-id="a6923-107">Copy these names into a text file that is named names1.txt and save it in your project folder:</span></span>  
   
     ```text  
     Bankov, Peter  
@@ -30,7 +31,7 @@ ms.locfileid: "87301064"
     Garcia, Debra  
     ```  
   
-2. <span data-ttu-id="4cfbb-108">Скопируйте эти имена в текстовый файл с именем names2.txt и сохраните его в папке проекта. Обратите внимание на то, что имена этих двух файлов похожи.</span><span class="sxs-lookup"><span data-stu-id="4cfbb-108">Copy these names into a text file that is named names2.txt and save it in your project folder: Note that the two files have some names in common.</span></span>  
+2. <span data-ttu-id="a6923-108">Скопируйте эти имена в текстовый файл с именем names2.txt и сохраните его в папке проекта. Обратите внимание на то, что имена этих двух файлов похожи.</span><span class="sxs-lookup"><span data-stu-id="a6923-108">Copy these names into a text file that is named names2.txt and save it in your project folder: Note that the two files have some names in common.</span></span>  
   
     ```text  
     Liu, Jinghao  
@@ -45,7 +46,7 @@ ms.locfileid: "87301064"
     El Yassir, Mehdi  
     ```  
   
-## <a name="example"></a><span data-ttu-id="4cfbb-109">Пример</span><span class="sxs-lookup"><span data-stu-id="4cfbb-109">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="a6923-109">Пример</span><span class="sxs-lookup"><span data-stu-id="a6923-109">Example</span></span>  
   
 ```csharp  
 class SplitWithGroups  
@@ -123,13 +124,13 @@ class SplitWithGroups
  */  
 ```  
   
- <span data-ttu-id="4cfbb-110">Программа записывает отдельный файл для каждой группы в ту же папку, где находятся файлы данных.</span><span class="sxs-lookup"><span data-stu-id="4cfbb-110">The program writes a separate file for each group in the same folder as the data files.</span></span>  
+ <span data-ttu-id="a6923-110">Программа записывает отдельный файл для каждой группы в ту же папку, где находятся файлы данных.</span><span class="sxs-lookup"><span data-stu-id="a6923-110">The program writes a separate file for each group in the same folder as the data files.</span></span>  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="4cfbb-111">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="4cfbb-111">Compiling the Code</span></span>
+## <a name="compiling-the-code"></a><span data-ttu-id="a6923-111">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="a6923-111">Compiling the Code</span></span>
 
-<span data-ttu-id="4cfbb-112">Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.</span><span class="sxs-lookup"><span data-stu-id="4cfbb-112">Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.</span></span>
+<span data-ttu-id="a6923-112">Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.</span><span class="sxs-lookup"><span data-stu-id="a6923-112">Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="4cfbb-113">См. также</span><span class="sxs-lookup"><span data-stu-id="4cfbb-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6923-113">См. также</span><span class="sxs-lookup"><span data-stu-id="a6923-113">See also</span></span>
 
-- [<span data-ttu-id="4cfbb-114">LINQ и строки (C#)</span><span class="sxs-lookup"><span data-stu-id="4cfbb-114">LINQ and Strings (C#)</span></span>](./linq-and-strings.md)
-- [<span data-ttu-id="4cfbb-115">LINQ и каталоги файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="4cfbb-115">LINQ and File Directories (C#)</span></span>](./linq-and-file-directories.md)
+- [<span data-ttu-id="a6923-114">LINQ и строки (C#)</span><span class="sxs-lookup"><span data-stu-id="a6923-114">LINQ and Strings (C#)</span></span>](./linq-and-strings.md)
+- [<span data-ttu-id="a6923-115">LINQ и каталоги файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="a6923-115">LINQ and File Directories (C#)</span></span>](./linq-and-file-directories.md)
