@@ -3,14 +3,15 @@ title: Операции, использующие квантификаторы (
 description: Узнайте об операциях квантификатора. Эти операции возвращают логическое значение, которое указывает, удовлетворяют ли условию некоторые или все элементы в последовательности.
 ms.date: 07/20/2015
 ms.assetid: 84ac2ac2-7a63-4581-bc4c-14e34be1493b
-ms.openlocfilehash: ce06f887d3ad7b10cbdedf9e33072df2c0819ef1
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: ffefe1715fd8a074692967e825e0f55673bb2b27
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87299153"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202543"
 ---
 # <a name="quantifier-operations-c"></a>Операции, использующие квантификаторы (C#)
+
 Квантификаторы возвращают значение <xref:System.Boolean>, которое указывает, удовлетворяют ли условию некоторые или все элементы в последовательности.  
   
  На приведенном ниже рисунке показаны два различных квантификатора, примененные к двум разным исходным последовательностям. Первая операция проверяет, является ли один или несколько элементов буквой "А"; результатом является `true`. Вторая операция проверяет, являются ли все элементы буквой "А"; результатом является `true`.  
@@ -30,16 +31,19 @@ ms.locfileid: "87299153"
 ## <a name="query-expression-syntax-examples"></a>Примеры синтаксиса выражений запросов  
   
 ### <a name="all"></a>Все  
+
 В следующем примере используется `All` для проверки того, что все строки имеют определенную длину.
   
 [!code-csharp[All](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#All)]  
   
 ### <a name="any"></a>Любой  
+
 В следующем примере используется `Any` для проверки того, что все строки начинаются o.  
   
 [!code-csharp[Any](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Any)]  
   
 ### <a name="contains"></a>Содержит  
+
 В следующем примере используется `Contains` для проверки того, что массив имеет указанный элемент.  
   
 [!code-csharp[Contains](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Contains)]  

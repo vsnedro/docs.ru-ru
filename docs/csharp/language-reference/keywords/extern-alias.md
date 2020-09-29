@@ -9,14 +9,15 @@ helpviewer_keywords:
 - aliases [C#], extern keyword
 - aliases, extern keyword
 ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
-ms.openlocfilehash: 301ae06ec02fa6f09257dc87383bc2ec7f589b6d
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5ecafa5a989bc183d7f52ac3d4b4d50a81b36014
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89139012"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203349"
 ---
 # <a name="extern-alias-c-reference"></a>Псевдоним extern (Справочник по C#)
+
 Иногда может потребоваться сослаться на две версии сборок, которые имеют одинаковые полные имена типов. Например, если необходимо использовать две или более версии сборки в одном приложении. Используя внешний псевдоним сборки, пространства имен для каждой сборки можно перенести внутрь пространств имен корневого уровня с именованием по псевдониму, что позволяет использовать их в одном файле.  
   
 > [!NOTE]
@@ -61,6 +62,7 @@ using Class1V2 = GridV2::Namespace.Class1;
 ```
 
 ## <a name="c-language-specification"></a>Спецификация языка C#  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>См. также

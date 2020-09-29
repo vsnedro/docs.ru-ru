@@ -9,14 +9,15 @@ helpviewer_keywords:
 - out compiler option [C#]
 - -out compiler option [C#]
 ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
-ms.openlocfilehash: d1b79879639e1cbdc3dc040977d9fcd0c3a73602
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 409760ee0b147065a2128c62c304fb5d70cfcf42
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125024"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193885"
 ---
 # <a name="-out-c-compiler-options"></a>-out (параметры компилятора C#)
+
 Параметр **-out** задает имя выходного файла.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89125024"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Имя выходного файла, создаваемого компилятором.  
   
 ## <a name="remarks"></a>Remarks  
+
  В командной строке можно указать несколько выходных файлов для компиляции. После параметра компилятора **-out** нужно указать один или несколько файлов исходного кода. Все указанные файлы исходного кода будут скомпилированы в выходной файл, заданный параметром **-out**.  
   
  Укажите полное имя и расширение файла, который требуется создать.  
@@ -59,6 +62,7 @@ ms.locfileid: "89125024"
      Установка этого параметра компилятора программным способом: свойство <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A> доступно только для чтения и определяется сочетанием типа проекта (исполняемый файл, библиотека и т. д.) и именем сборки. Чтобы задать имя выходного файла, необходимо изменить одно из этих свойств или одновременно оба свойства.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция `t.cs` и создание выходного файла `t.exe`, а также построение `t2.cs` и создание выходного файла модуля `mymodule.netmodule`:  
   
 ```console  

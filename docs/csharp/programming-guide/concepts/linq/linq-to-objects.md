@@ -3,12 +3,12 @@ title: LINQ to Objects (C#)
 description: Узнайте о LINQ to Objects в C#, когда используются запросы LINQ с любой коллекцией IEnumerable или IEnumerable<T> без промежуточного поставщика LINQ или API LINQ.
 ms.date: 07/20/2015
 ms.assetid: c5c2c178-3529-4f6c-b3df-2d5267af7f22
-ms.openlocfilehash: f8e65f129dc002d9615b01e3a3a123514754b886
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 575708f14487670a4371d470dcdcf650b03c3175
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557010"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91202530"
 ---
 # <a name="linq-to-objects-c"></a>LINQ to Objects (C#)
 
@@ -29,6 +29,7 @@ ms.locfileid: "90557010"
  Целью этого раздела является демонстрация подхода LINQ с помощью нескольких примеров. Он не претендует на исчерпывающий характер.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [LINQ и строки (C#)](./linq-and-strings.md)  
  Использование LINQ для запроса и преобразования строк и коллекций строк. Ссылки на статьи, демонстрирующие эти принципы.  
   

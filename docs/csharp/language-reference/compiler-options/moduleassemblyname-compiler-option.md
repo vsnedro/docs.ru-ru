@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /moduleassemblyname compiler option [C#]
 - .moduleassemblyname compiler option [C#]
 ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
-ms.openlocfilehash: d669a1687abe496b921d5670b9149b0e933b2d95
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 9131db17d767c76fe6a57f5d5353474153e0c269
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125258"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194093"
 ---
 # <a name="-moduleassemblyname-c-compiler-option"></a>-moduleassemblyname (параметры компилятора C#)
+
 Указывает сборку, к неоткрытым типам которой может обращаться .netmodule.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89125258"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `assembly_name`  
  Имя сборки, к неоткрытым типам которой может обращаться .netmodule.  
   
 ## <a name="remarks"></a>Remarks  
+
  Параметр **-moduleassemblyname** нужно использовать при сборке модуля NETMODULE и выполнении следующий условий:  
   
 - .netmodule требуется доступ к неоткрытым типам в существующей сборке.  
@@ -47,6 +50,7 @@ ms.locfileid: "89125258"
  Этот параметр компилятора недоступен в Visual Studio и не может быть изменен программным способом.  
   
 ## <a name="example"></a>Пример  
+
  В этом примере выполняется построение сборки частного типа, которой предоставляется дружественный доступ к сборке csman_an_assembly.  
   
 ```csharp  
@@ -67,6 +71,7 @@ class An_Internal_Class
 ```  
   
 ## <a name="example"></a>Пример  
+
  Этот пример строит .netmodule, который обращается к неоткрытому типу в сборке moduleassemblyname_1.dll. Мы знаем, что модуль NETMODULE будет встроен в сборку csman_an_assembly, поэтому можем задать **-moduleassemblyname**, чтобы позволить NETMODULE обращаться к неоткрытым типам в сборке, которой предоставлен доступ к дружественной сборке csman_an_assembly.  
   
 ```csharp  
@@ -81,6 +86,7 @@ class B {
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода выполнено построение сборки csman_an_assembly со ссылками на ранее построенную сборку и .netmodule.  
   
 ```csharp  

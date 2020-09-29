@@ -12,14 +12,15 @@ helpviewer_keywords:
 - res compiler option [C#]
 - resource compiler option [C#]
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
-ms.openlocfilehash: 1e2de095b460b684fb06faf46731283a1304906e
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 6f90ce6c1590784cefbd5f15ca8a36941aad77ed
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465693"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193781"
 ---
 # <a name="-resource-c-compiler-options"></a>-resource (параметры компилятора C#)
+
 Внедряет указанный ресурс в выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "89465693"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Файл ресурсов .NET, который требуется внедрить в выходной файл.  
   
@@ -39,6 +41,7 @@ ms.locfileid: "89465693"
  Доступность ресурса: "public" (открытый) или "private" (закрытый). Значение по умолчанию: public.  
   
 ## <a name="remarks"></a>Remarks  
+
  Используйте [-linkresource](./linkresource-compiler-option.md), чтобы связать ресурс со сборкой и не добавлять файл ресурсов в выходной файл.  
   
  По умолчанию ресурсы в сборке открыты, если они создавались с помощью компилятора C#. Чтобы сделать ресурс закрытым, укажите параметр `private` в качестве модификатора доступа. Уровни доступности, отличные от `public` или `private`, не допускаются.  
@@ -62,6 +65,7 @@ ms.locfileid: "89465693"
  Дополнительные сведения об установке этого параметра компилятора программным путем см. в разделе <xref:VSLangProj80.FileProperties2.BuildAction%2A>.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция `in.cs` и привязка файла ресурсов `rf.resource`:  
   
 ```console  

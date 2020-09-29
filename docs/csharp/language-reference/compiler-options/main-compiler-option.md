@@ -9,12 +9,12 @@ helpviewer_keywords:
 - main compiler option [C#]
 - /main compiler option [C#]
 ms.assetid: 975cf4d5-36ac-4530-826c-4aad0c7f2049
-ms.openlocfilehash: 61e63de8082a335b448ffee1ae35170d3a1cf6b4
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c27898de2a7cc2f3c01c51f8de1122e81b2233b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125271"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194119"
 ---
 # <a name="-main-c-compiler-options"></a>-main (параметры компилятора C#)
 
@@ -27,6 +27,7 @@ ms.locfileid: "89125271"
 ```
 
 ## <a name="arguments"></a>Аргументы
+
  `class`  
  Тип, содержащий метод **Main**.  
  Указанное имя класса должно быть полным; оно должно включать полное пространство имен, содержащее ключевое слово class, за которым следует имя класса. Например, если метод `Main` находится в классе `Program` в пространстве имен `MyApplication.Core`, необходимо указать параметр компилятора `-main:MyApplication.Core.Program`.

@@ -10,14 +10,15 @@ helpviewer_keywords:
 - -win32res compiler option [C#]
 - win32res compiler option [C#]
 ms.assetid: 3c33f750-6948-4c7e-a27e-bef98f77255b
-ms.openlocfilehash: c220c78a6d2c3109402a20f0de40fe9665d6c730
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 442c788595a01db9c0a1196d9e13b2a98963a38c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89140819"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204350"
 ---
 # <a name="-win32res-c-compiler-options"></a>-win32res (параметры компилятора C#)
+
 Параметр **-win32res** вставляет ресурс Win32 в выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -27,10 +28,12 @@ ms.locfileid: "89140819"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Файл ресурсов, который требуется добавить в выходной файл.  
   
 ## <a name="remarks"></a>Remarks  
+
  Файл ресурсов Win32 можно создать с помощью [компилятора ресурсов](resource-compiler-option.md). Компилятор ресурсов вызывается при компиляции программы Visual C++; RES-файл создается из RC-файла.  
   
  Ресурс Win32 может содержать сведения о версии или точечный рисунок (значок) для упрощения идентификации приложения в проводнике. Если параметр **-win32res** не задан, компилятор будет создавать сведения о версии на основе версии сборки.  
@@ -46,6 +49,7 @@ ms.locfileid: "89140819"
 3. Чтобы выбрать файл в поле со списком, нажмите кнопку **Файл ресурсов**.  
   
 ## <a name="example"></a>Пример  
+
  Скомпилируйте `in.cs` и присоедините файл ресурсов Win32 `rf.res`, чтобы создать `in.exe`:  
   
 ```console  

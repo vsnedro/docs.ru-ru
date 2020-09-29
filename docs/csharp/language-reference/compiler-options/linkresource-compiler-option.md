@@ -12,14 +12,15 @@ helpviewer_keywords:
 - -linkresource compiler option [C#]
 - linkresource compiler option [C#]
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-ms.openlocfilehash: cd1150f3fa0dd0eca4e9352ce3809e73a15126c7
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 4efa0cbf286b40ad971bad66a7acce15e553eb39
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89466109"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194106"
 ---
 # <a name="-linkresource-c-compiler-options"></a>-linkresource (параметры компилятора C#)
+
 Создает в выходном файле ссылку на ресурс .NET. Файл ресурсов не добавляется в выходной файл. Этот параметр отличается от параметра [-resource](./resource-compiler-option.md), который внедряет файл ресурсов в выходной файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "89466109"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Файл ресурсов .NET, ссылку на который необходимо создать из сборки.  
   
@@ -39,6 +41,7 @@ ms.locfileid: "89466109"
  Доступность ресурса: "public" (открытый) или "private" (закрытый). Значение по умолчанию: public.  
   
 ## <a name="remarks"></a>Remarks  
+
  По умолчанию связанные ресурсы в сборке открыты, если они создавались с помощью компилятора C#. Чтобы сделать ресурс закрытым, укажите параметр `private` в качестве модификатора доступа. Модификаторы, отличные от `public` или `private`, не допускаются.  
   
  Параметр **-linkresource** требует один из параметров [-target](./target-compiler-option.md), отличный от **-target:module**.  
@@ -52,6 +55,7 @@ ms.locfileid: "89466109"
  Этот параметр компилятора недоступен в Visual Studio и не может быть изменен программным способом.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция `in.cs` и создание ссылки на файл ресурсов `rf.resource`:  
   
 ```console  
@@ -59,6 +63,7 @@ csc -linkresource:rf.resource in.cs
 ```  
   
 ## <a name="example"></a>Пример  
+
  Скомпилируйте `A.cs` в библиотеку DLL, создайте ссылку на машинную библиотеку N.dll и поместите выходные данные в глобальный кэш сборок (GAC). В этом примере оба файла A.dll и N.dll будут расположены в глобальном кэше сборок.  
   
 ```console  
@@ -67,6 +72,7 @@ gacutil -i A.dll
 ```  
   
 ## <a name="example"></a>Пример  
+
  В этом примере выполняются те же действия, что и в предыдущем примере, но с использованием параметров компоновщика сборок.  
   
 ```console  

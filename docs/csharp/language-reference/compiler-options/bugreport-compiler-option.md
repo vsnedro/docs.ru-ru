@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -bugreport compiler option [C#]
 - bugreport compiler option [C#]
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
-ms.openlocfilehash: 2c358b2dda400f6077ffb5ba1dfc8e6e1127fa52
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 2afab44eec0c7bcc9809b458be0348093cb6dd07
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125999"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91196823"
 ---
 # <a name="-bugreport-c-compiler-options"></a>-bugreport (параметры компилятора C#)
+
 Указывает, что отладочную информацию следует поместить в файл для последующего анализа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89125999"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `file`  
  Имя файла, который будет содержать отчет об ошибках.  
   
 ## <a name="remarks"></a>Remarks  
+
  Параметр **-bugreport** указывает, что в `file` нужно поместить следующую информацию:  
   
 - Копия всех файлов исходного кода, включенных в компиляцию.  

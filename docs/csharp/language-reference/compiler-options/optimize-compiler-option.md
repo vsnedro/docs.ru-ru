@@ -13,14 +13,15 @@ helpviewer_keywords:
 - compiler optimization [C#]
 - o compiler option [C#]
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
-ms.openlocfilehash: 6fd268414c4e54e7b4865733480f8917389015d0
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 1862794e4d823e38ce19780300a0b04f4e57dc44
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125037"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193989"
 ---
 # <a name="-optimize-c-compiler-options"></a>-optimize (параметры компилятора C#)
+
 Параметр **-optimize** включает или отключает оптимизацию кода компилятором, чтобы сделать код более быстрым, коротким и эффективным.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -30,6 +31,7 @@ ms.locfileid: "89125037"
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Кроме того, параметр **-optimize** включает оптимизацию кода во время выполнения в общеязыковой среде выполнения (CLR).  
   
  По умолчанию оптимизация отключена. Чтобы включить оптимизацию, укажите **-optimize+**.  
@@ -51,6 +53,7 @@ ms.locfileid: "89125037"
  Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.CSharpProjectConfigurationProperties3.Optimize%2A>.  
   
 ## <a name="example"></a>Пример  
+
  Скомпилируйте `t2.cs` и включите выполняемую компилятором оптимизацию:  
   
 ```console  

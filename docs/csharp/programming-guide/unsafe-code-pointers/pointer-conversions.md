@@ -5,14 +5,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - pointers [C#], conversions
 ms.assetid: f0e87502-477a-4ede-a31f-7a3e262e46fb
-ms.openlocfilehash: c39be5cb52964abbea5bc5636c6fa74d8411a331
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 7a37c4e9f6333c00c7842df0fdaf353df516974d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87382091"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91205078"
 ---
 # <a name="pointer-conversions-c-programming-guide"></a>Преобразования указателей (Руководство по программированию на C#)
+
 В следующей таблице приведены предопределенные неявные преобразования указателей. Неявные преобразования могут выполняться во многих ситуациях, включая вызов методов и операторы назначения.  
   
 ## <a name="implicit-pointer-conversions"></a>Неявные преобразования указателей  
@@ -33,6 +34,7 @@ ms.locfileid: "87382091"
 |Любой тип указателя|sbyte, byte, short, ushort, int, uint, long или ulong|  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере указатель на `int` преобразуется в указатель на `byte`. Обратите внимание, что указатель указывает на наименьший адресуемый байт переменной. При последовательном увеличении результата до размера `int` (4 байта) можно отобразить оставшиеся байты переменной.  
   
  [!code-csharp[csProgGuidePointers#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers2.cs#3)]  

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - recurse compiler option [C#]
 - -recurse compiler option [C#]
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
-ms.openlocfilehash: 3edd7e23358bc0569dae6204d519209df1ade290
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 9e84ff95f7f0addac1c2c2d79af0ab53572da27f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89124829"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193807"
 ---
 # <a name="-recurse-c-compiler-options"></a>-recurse (параметры компилятора C#)
+
 Параметр -recurse позволяет компилировать файлы исходного кода во всех вложенных каталогах заданного каталога (dir) или каталога проекта.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,6 +27,7 @@ ms.locfileid: "89124829"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  Среда `dir` (необязательно)  
  Каталог, с которого будет начинаться поиск. Если этот параметр не задан, поиск начинается с каталога проекта.  
   
@@ -33,6 +35,7 @@ ms.locfileid: "89124829"
  Файлы для поиска. Поддерживаются подстановочные знаки.  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметр **-recurse** позволяет компилировать файлы исходного кода во всех вложенных каталогах заданного каталога (`dir`) или каталога проекта.  
   
  Чтобы скомпилировать все соответствующие файлы в каталоге проекта, не задавая параметр **-recurse**, можно использовать подстановочные знаки в именах файлов.  
@@ -40,6 +43,7 @@ ms.locfileid: "89124829"
  Этот параметр компилятора недоступен в Visual Studio и не может быть изменен программным способом.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция всех файлов C# в текущем каталоге:  
   
 ```console  

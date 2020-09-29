@@ -6,19 +6,21 @@ helpviewer_keywords:
 - static constructors [C#]
 - constructors [C#], static
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
-ms.openlocfilehash: 1bb494ded34065bb76b72db40375555ca1eb6953
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 07b3e54c9ffeb1abacaf5ddd04d2058697e653e4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90541855"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203973"
 ---
 # <a name="static-constructors-c-programming-guide"></a>Статические конструкторы (Руководство по программированию в C#)
+
 Статический конструктор используется для инициализации любых [статических](../../language-reference/keywords/static.md) данных или для выполнения определенного действия, которое требуется выполнить только один раз. Он вызывается автоматически перед созданием первого экземпляра или ссылкой на какие-либо статические члены.  
   
  [!code-csharp[csProgGuideObjects#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#14)]  
 
 ## <a name="remarks"></a>Примечания
+
 Статические конструкторы обладают следующими свойствами.  
   
 - Статический конструктор не принимает модификаторы доступа и не имеет параметров.  
@@ -52,11 +54,13 @@ ms.locfileid: "90541855"
 - Статические конструкторы очень удобны для применения в среде выполнения проверок параметра типа, которые невозможно проверить с помощью ограничений во время компиляции (ограничения параметров типа).
 
 ## <a name="example"></a>Пример
+
  В этом примере класс `Bus` имеет статический конструктор. При создании первого экземпляра класса `Bus` (`bus1`) для инициализации класса вызывается статический конструктор. В выходных данных этого примера можно увидеть, что статический конструктор выполняется только один раз, несмотря на то, что создается два экземпляра класса `Bus`. Кроме того, этот конструктор вызывается до выполнения конструктора экземпляра.  
   
  [!code-csharp[csProgGuideObjects#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#15)]
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
+
 Дополнительные сведения см. в разделе [Статические конструктор](~/_csharplang/spec/classes.md#static-constructors) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
   
 ## <a name="see-also"></a>См. также

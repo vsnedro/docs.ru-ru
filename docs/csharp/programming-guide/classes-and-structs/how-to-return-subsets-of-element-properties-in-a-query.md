@@ -5,14 +5,15 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [C#], for subsets of element properties
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
-ms.openlocfilehash: 882d94bc82527c14bd6c038f4bf574c2211b9089
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 0ef68921b9d45e58024b37d559ee8291d8744af8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864375"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204025"
 ---
 # <a name="how-to-return-subsets-of-element-properties-in-a-query-c-programming-guide"></a>Практическое руководство. Возвращение поднаборов свойств элементов в запросе (руководство по программированию на C#)
+
 Используйте анонимный тип в выражении запроса, если выполняются оба следующих условия:  
   
 - требуется возвращать только некоторые свойства каждого исходного элемента;  
@@ -26,6 +27,7 @@ select student.ID;
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать анонимный тип для возвращения только конкретного набора свойств каждого исходного элемента, соответствующего указанному условию.  
   
  [!code-csharp[csProgGuideLINQ#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#31)]  

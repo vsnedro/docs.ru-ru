@@ -3,14 +3,15 @@ title: Операции над множествами (C#)
 description: Сведения об операциях над множествами и методах стандартных операторов запроса, которые выполняют такие операции в LINQ при программировании на C#.
 ms.date: 07/20/2015
 ms.assetid: 7c589367-ef8f-4161-9050-642c47e6bf63
-ms.openlocfilehash: ab2608b267113ad5d47a33e64cd9a5e21496f668
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 8679f804adaaeada390206e3e1dd2a0711a2cbf6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302377"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91195614"
 ---
 # <a name="set-operations-c"></a>Операции над множествами (C#)
+
 Операции над множествами в LINQ — это операции запросов, результирующие наборы которых основываются на наличии или отсутствии эквивалентных элементов в одной или другой коллекции (или наборе).  
   
  Методы стандартных операторов запросов, которые выполняют операции над множествами, перечислены в следующем разделе.  
@@ -27,6 +28,7 @@ ms.locfileid: "87302377"
 ## <a name="comparison-of-set-operations"></a>Сравнение операций над множествами  
   
 ### <a name="distinct"></a>Distinct  
+
  В следующем примере показано поведение метода <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> применительно к последовательности символов. Возвращаемая последовательность содержит уникальные элементы из входной последовательности.  
   
  ![График, демонстрирующий поведение Distinct&#40;&#41;.](./media/set-operations/distinct-method-behavior.png)  
@@ -34,6 +36,7 @@ ms.locfileid: "87302377"
  [!code-csharp-interactive[Distinct](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#1)]
   
 ### <a name="except"></a>Исключения  
+
  В следующем примере показано поведение <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. Возвращаемая последовательность содержит только те элементы из первой входной последовательности, которых нет во второй.  
   
  ![График, отображающий действие Except&#40;&#41;.](./media/set-operations/except-behavior-graphic.png "Демонстрирует поведение Except.")  
@@ -41,6 +44,7 @@ ms.locfileid: "87302377"
 [!code-csharp-interactive[Except](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#2)]
 
 ### <a name="intersect"></a>Пересечение  
+
  В следующем примере показано поведение <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. Возвращаемая последовательность содержит элементы, общие для обеих входных последовательностей.  
   
  ![График, отображающий пересечение двух последовательностей.](./media/set-operations/intersection-two-sequences.png)  
@@ -48,6 +52,7 @@ ms.locfileid: "87302377"
 [!code-csharp-interactive[Intersect](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#3)]
 
 ### <a name="union"></a>Объединение  
+
  В следующем примере показана операция объединения двух последовательностей символов. Возвращаемая последовательность содержит уникальные элементы из обеих входных последовательностей.  
   
  ![График, показывающий объединение двух последовательностей.](./media/set-operations/union-operation-two-sequences.png)  

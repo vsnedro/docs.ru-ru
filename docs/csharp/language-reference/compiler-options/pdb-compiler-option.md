@@ -9,14 +9,15 @@ helpviewer_keywords:
 - pdb compiler option [C#]
 - /pdb compiler option [C#]
 ms.assetid: e9d0f96a-5b75-45d6-9765-92538dd5f823
-ms.openlocfilehash: 0dcafd0fd260488922c74a2330b312e80467e779
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ced1ee1f4f079830a032a628da96a389ba27da90
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89124920"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193859"
 ---
 # <a name="-pdb-c-compiler-options"></a>-pdb (параметры компилятора C#)
+
 Параметр компилятора **-pdb** задает имя и расположение файла отладочных символов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89124920"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Имя и расположение файла отладочных символов.  
   
 ## <a name="remarks"></a>Remarks  
+
  Если указан параметр [-debug (параметры компилятора C#)](./debug-compiler-option.md), компилятор создаст в каталоге с выходным файлом (EXE или DLL) PDB-файл с тем же именем.  
   
  С помощью параметра **-pdb** можно задать имя PDB-файла, отличающееся от используемого по умолчанию.  
@@ -37,6 +40,7 @@ ms.locfileid: "89124920"
  Этот параметр компилятора нельзя задать в среде разработки Visual Studio или изменить программными средствами.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция файла `t.cs` и создание файла tt.pdb:  
   
 ```console  

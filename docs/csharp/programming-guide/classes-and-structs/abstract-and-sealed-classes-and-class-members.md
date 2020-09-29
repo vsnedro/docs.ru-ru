@@ -8,19 +8,21 @@ helpviewer_keywords:
 - C# language, abstract classes
 - C# language, sealed
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-ms.openlocfilehash: 391a8ccbb1fbe6626d1cd5a4b6fcfd9ace3506e6
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: ccbc6734d4e9bafe059dd45bfdf82af7c84438a2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474492"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204038"
 ---
 # <a name="abstract-and-sealed-classes-and-class-members-c-programming-guide"></a>Абстрактные и запечатанные классы и члены классов (Руководство по программированию на C#)
+
 Ключевое слово [abstract](../../language-reference/keywords/abstract.md) позволяет создавать классы и члены [классов](../../language-reference/keywords/class.md), которые являются неполными и должны быть реализованы в производном классе.  
   
  Ключевое слово [sealed](../../language-reference/keywords/sealed.md) позволяет предотвратить наследование класса или определенных членов класса, помеченных ранее как [virtual](../../language-reference/keywords/virtual.md).  
   
 ## <a name="abstract-classes-and-class-members"></a>Абстрактные классы и члены классов  
+
  Классы могут быть объявлены абстрактными путем помещения ключевого слова `abstract` перед определением класса. Пример:  
   
  [!code-csharp[csProgGuideInheritance#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#13)]  
@@ -38,6 +40,7 @@ ms.locfileid: "86474492"
  Если метод `virtual` объявляется как `abstract`, он все равно считается виртуальным по отношению к любому классу, наследующему от абстрактного класса. Класс, наследующий абстрактный метод, не может получать доступ к исходной реализации метода (так, в предыдущем примере `DoWork` для класса F не может вызывать `DoWork` для класса D). Таким образом, абстрактный класс может принудительно задавать необходимость предоставлять новые реализации виртуальных методов в производных классах.  
   
 ## <a name="sealed-classes-and-class-members"></a>Запечатанные классы и члены классов  
+
  Классы могут быть объявлены как [запечатанные](../../language-reference/keywords/sealed.md) путем помещения ключевого слова `sealed` перед определением класса. Пример:  
   
  [!code-csharp[csProgGuideInheritance#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#16)]  

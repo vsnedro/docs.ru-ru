@@ -8,14 +8,15 @@ helpviewer_keywords:
 - response files, specifying for compilation [C#]
 - '@ compiler option'
 ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
-ms.openlocfilehash: 89a057cba6e0d23c15fc9b652e5bfbc89b6ecbaa
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 8f7e222e194fc4ba96159ecd792765f64b4d1c57
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89128651"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91193759"
 ---
 # <a name="-c-compiler-options"></a>@ (параметры компилятора C#)
+
 С помощью параметра @ можно указать файл, содержащий параметры компилятора и файлы исходного кода, которые требуется компилировать.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,10 +26,12 @@ ms.locfileid: "89128651"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `response_file`  
  Файл, содержащий параметры компилятора и файлы исходного кода, которые требуется компилировать.  
   
 ## <a name="remarks"></a>Remarks  
+
  Параметры компилятора и файлы исходного кода будут обрабатываться компилятором таким образом, как если бы они были указаны в командной строке.  
   
  Чтобы задать несколько файлов ответов для компиляции, используйте соответствующее число параметров файла ответов. Пример:  
@@ -48,6 +51,7 @@ ms.locfileid: "89128651"
  Этот параметр компилятора нельзя задать в среде разработки Visual Studio или изменить программными средствами.  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведено несколько строк из образца файла ответов:  
   
 ```console  
