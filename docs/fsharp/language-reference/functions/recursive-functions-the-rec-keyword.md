@@ -2,12 +2,12 @@
 title: Рекурсивные функции. Ключевое слово rec
 description: 'Узнайте, как ключевое слово F # REC используется с ключевым словом let для определения рекурсивной функции.'
 ms.date: 08/12/2020
-ms.openlocfilehash: 389357bd13cef39b1d07972c1a3167320b61612b
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 1ab00ff9400129e531fd7320861b3d9625cad08c
+ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558716"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91438077"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>Рекурсивные функции. Ключевое слово rec
 
@@ -36,7 +36,7 @@ and function2-nameparameter-list =
 В следующем примере показана рекурсивная функция, которая выполняет вычисление *n*-<sup>го</sup> числа Фибоначчи с помощью математического определения.
 
 ```fsharp
-let fib n =
+let rec fib n =
     match n with
     | 0 | 1 -> 1
     | n -> fib (n-1) + fib (n-2)
