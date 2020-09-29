@@ -7,15 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - '#endregion directive [C#]'
 ms.assetid: 16099660-91b2-49e5-9646-77f9ef069526
-ms.openlocfilehash: 5bf95d499dc61c74a2474d47deb76ada21763538
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 1b173c7c3af4e6bbfc8a57a2c06c4ad035dcedde
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89138154"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168586"
 ---
-# <a name="endregion-c-reference"></a><span data-ttu-id="1ccdd-103">#endregion (справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="1ccdd-103">#endregion (C# Reference)</span></span>
-<span data-ttu-id="1ccdd-104">`#endregion` отмечает конец блока [#region](./preprocessor-region.md).</span><span class="sxs-lookup"><span data-stu-id="1ccdd-104">`#endregion` marks the end of a [#region](./preprocessor-region.md) block.</span></span> <span data-ttu-id="1ccdd-105">Пример:</span><span class="sxs-lookup"><span data-stu-id="1ccdd-105">For example:</span></span>  
+# <a name="endregion-c-reference"></a><span data-ttu-id="85e6d-103">#endregion (справочник по C#)</span><span class="sxs-lookup"><span data-stu-id="85e6d-103">#endregion (C# Reference)</span></span>
+
+<span data-ttu-id="85e6d-104">`#endregion` отмечает конец блока [#region](./preprocessor-region.md).</span><span class="sxs-lookup"><span data-stu-id="85e6d-104">`#endregion` marks the end of a [#region](./preprocessor-region.md) block.</span></span> <span data-ttu-id="85e6d-105">Пример:</span><span class="sxs-lookup"><span data-stu-id="85e6d-105">For example:</span></span>  
   
 ```csharp
 #region MyClass definition  
@@ -28,8 +29,8 @@ class MyClass
 #endregion  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="1ccdd-106">См. также</span><span class="sxs-lookup"><span data-stu-id="1ccdd-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85e6d-106">См. также</span><span class="sxs-lookup"><span data-stu-id="85e6d-106">See also</span></span>
 
-- [<span data-ttu-id="1ccdd-107">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="1ccdd-107">C# Reference</span></span>](../index.md)
-- [<span data-ttu-id="1ccdd-108">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="1ccdd-108">C# Programming Guide</span></span>](../../programming-guide/index.md)
-- [<span data-ttu-id="1ccdd-109">Директивы препроцессора C#</span><span class="sxs-lookup"><span data-stu-id="1ccdd-109">C# Preprocessor Directives</span></span>](./index.md)
+- [<span data-ttu-id="85e6d-107">Справочник по C#</span><span class="sxs-lookup"><span data-stu-id="85e6d-107">C# Reference</span></span>](../index.md)
+- [<span data-ttu-id="85e6d-108">Руководство по программированию на C#</span><span class="sxs-lookup"><span data-stu-id="85e6d-108">C# Programming Guide</span></span>](../../programming-guide/index.md)
+- [<span data-ttu-id="85e6d-109">Директивы препроцессора C#</span><span class="sxs-lookup"><span data-stu-id="85e6d-109">C# Preprocessor Directives</span></span>](./index.md)

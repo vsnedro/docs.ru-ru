@@ -3,17 +3,18 @@ title: Как запросить файлы с указанными атрибу
 description: Узнайте, как использовать LINQ в C# для поиска файлов с указанным расширением имени файла в дереве каталогов и как обнаружить самый новый или самый старый файл.
 ms.date: 07/20/2015
 ms.assetid: 560e3879-b0b3-4549-ad02-0a53aff2f83c
-ms.openlocfilehash: 9820b96e19d805b792e18ff242e64dfb6cf4a606
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 01a3482d8ea4c95b60dd9434320f175f0498c3e8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104497"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165316"
 ---
-# <a name="how-to-query-for-files-with-a-specified-attribute-or-name-c"></a><span data-ttu-id="e2219-103">Как запросить файлы с указанными атрибутами или именем (C#)</span><span class="sxs-lookup"><span data-stu-id="e2219-103">How to query for files with a specified attribute or name (C#)</span></span>
-<span data-ttu-id="e2219-104">В этом примере показано, как обнаружить все файлы с указанным расширением (например, TXT) в заданном дереве каталогов.</span><span class="sxs-lookup"><span data-stu-id="e2219-104">This example shows how to find all files that have a specified file name extension (for example ".txt") in a specified directory tree.</span></span> <span data-ttu-id="e2219-105">Кроме того, он показывает, как обнаружить самый новый или самый старый файл в дереве, используя время создания.</span><span class="sxs-lookup"><span data-stu-id="e2219-105">It also shows how to return either the newest or oldest file in the tree based on the creation time.</span></span>  
+# <a name="how-to-query-for-files-with-a-specified-attribute-or-name-c"></a><span data-ttu-id="e92f3-103">Как запросить файлы с указанными атрибутами или именем (C#)</span><span class="sxs-lookup"><span data-stu-id="e92f3-103">How to query for files with a specified attribute or name (C#)</span></span>
+
+<span data-ttu-id="e92f3-104">В этом примере показано, как обнаружить все файлы с указанным расширением (например, TXT) в заданном дереве каталогов.</span><span class="sxs-lookup"><span data-stu-id="e92f3-104">This example shows how to find all files that have a specified file name extension (for example ".txt") in a specified directory tree.</span></span> <span data-ttu-id="e92f3-105">Кроме того, он показывает, как обнаружить самый новый или самый старый файл в дереве, используя время создания.</span><span class="sxs-lookup"><span data-stu-id="e92f3-105">It also shows how to return either the newest or oldest file in the tree based on the creation time.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="e2219-106">Пример</span><span class="sxs-lookup"><span data-stu-id="e2219-106">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="e92f3-106">Пример</span><span class="sxs-lookup"><span data-stu-id="e92f3-106">Example</span></span>  
   
 ```csharp  
 class FindFileByExtension  
@@ -64,10 +65,11 @@ class FindFileByExtension
 }  
 ```  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="e2219-107">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="e2219-107">Compiling the Code</span></span>  
-  <span data-ttu-id="e2219-108">Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.</span><span class="sxs-lookup"><span data-stu-id="e2219-108">Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="e2219-109">См. также</span><span class="sxs-lookup"><span data-stu-id="e2219-109">See also</span></span>
+## <a name="compiling-the-code"></a><span data-ttu-id="e92f3-107">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="e92f3-107">Compiling the Code</span></span>  
 
-- [<span data-ttu-id="e2219-110">LINQ to Objects (C#)</span><span class="sxs-lookup"><span data-stu-id="e2219-110">LINQ to Objects (C#)</span></span>](./linq-to-objects.md)
-- [<span data-ttu-id="e2219-111">LINQ и каталоги файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="e2219-111">LINQ and File Directories (C#)</span></span>](./linq-and-file-directories.md)
+  <span data-ttu-id="e92f3-108">Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.</span><span class="sxs-lookup"><span data-stu-id="e92f3-108">Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.</span></span>
+  
+## <a name="see-also"></a><span data-ttu-id="e92f3-109">См. также</span><span class="sxs-lookup"><span data-stu-id="e92f3-109">See also</span></span>
+
+- [<span data-ttu-id="e92f3-110">LINQ to Objects (C#)</span><span class="sxs-lookup"><span data-stu-id="e92f3-110">LINQ to Objects (C#)</span></span>](./linq-to-objects.md)
+- [<span data-ttu-id="e92f3-111">LINQ и каталоги файлов (C#)</span><span class="sxs-lookup"><span data-stu-id="e92f3-111">LINQ and File Directories (C#)</span></span>](./linq-and-file-directories.md)
