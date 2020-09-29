@@ -4,12 +4,12 @@ description: Разработка современных веб-приложен
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
-ms.openlocfilehash: 8497892b88c313cde0a604ad3967507300e5154a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ca86388b9f5dfe5e63ead1b5f84486ba2181af57
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539247"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91169080"
 ---
 # <a name="test-aspnet-core-mvc-apps"></a>Тестирование приложений MVC ASP.NET Core
 
@@ -149,7 +149,7 @@ public IActionResult GetImage(int id)
 
 ## <a name="integration-testing-aspnet-core-apps"></a>Интеграционное тестирование приложений ASP.NET Core
 
-Большая часть интеграционных тестов в приложениях ASP.NET Core должны работать со службами и другими типами реализации, определенными в проекте инфраструктуры. Например, вы могли бы [проверить, что EF Core успешно обновился и получил ожидаемые данные](https://docs.microsoft.com/ef/core/miscellaneous/testing/) из ваших классов доступа к данным, находящихся в проекте инфраструктуры. Лучший способ проверить, правильно ли работает проект ASP.NET Core MVC, — с помощью функциональных тестов, выполняемых при работе приложения на тестовом узле.
+Большая часть интеграционных тестов в приложениях ASP.NET Core должны работать со службами и другими типами реализации, определенными в проекте инфраструктуры. Например, вы могли бы [проверить, что EF Core успешно обновился и получил ожидаемые данные](/ef/core/miscellaneous/testing/) из ваших классов доступа к данным, находящихся в проекте инфраструктуры. Лучший способ проверить, правильно ли работает проект ASP.NET Core MVC, — с помощью функциональных тестов, выполняемых при работе приложения на тестовом узле.
 
 ## <a name="functional-testing-aspnet-core-apps"></a>Функциональное тестирование приложений ASP.NET Core
 

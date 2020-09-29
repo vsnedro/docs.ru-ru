@@ -4,12 +4,12 @@ description: Служба "Сетка событий Azure" — это бесс
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
-ms.openlocfilehash: 408e1b9cd1b1e5316c7c6a17bb1b0c76a38f9e11
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: 30937bafd8069eb4508dce18351964103421373a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135715"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171888"
 ---
 # <a name="event-grid"></a>Сетка событий Azure
 
@@ -31,7 +31,7 @@ ms.locfileid: "82135715"
 
 ![Автоматизация операций](./media/ops-automation.png)
 
-Служба "Сетка событий" позволяет ускорить автоматизацию и упростить принудительное применение политик, уведомляя [службу автоматизации Azure](https://docs.microsoft.com/azure/automation) о готовности инфраструктуры к работе.
+Служба "Сетка событий" позволяет ускорить автоматизацию и упростить принудительное применение политик, уведомляя [службу автоматизации Azure](/azure/automation) о готовности инфраструктуры к работе.
 
 ### <a name="application-integration"></a>Интеграция приложений
 
@@ -47,11 +47,11 @@ ms.locfileid: "82135715"
 
 ## <a name="event-grid-vs-other-azure-messaging-services"></a>Сравнение Сетки событий и других служб сообщений Azure
 
-Azure предусматривает несколько служб сообщений, в том числе [Центры событий](https://docs.microsoft.com/azure/event-hubs) и [Служебную шину](https://docs.microsoft.com/azure/service-bus-messaging). Каждая из них предназначена для определенного набора вариантов использования. На схеме ниже показан общий обзор различий между этими службами.
+Azure предусматривает несколько служб сообщений, в том числе [Центры событий](/azure/event-hubs) и [Служебную шину](/azure/service-bus-messaging). Каждая из них предназначена для определенного набора вариантов использования. На схеме ниже показан общий обзор различий между этими службами.
 
 ![Сравнение служб сообщений Azure](./media/azure-messaging-services.png)
 
-Более подробные сведения см. в статье о [сравнении служб сообщений](https://docs.microsoft.com/azure/event-grid/compare-messaging-services).
+Более подробные сведения см. в статье о [сравнении служб сообщений](/azure/event-grid/compare-messaging-services).
 
 ## <a name="performance-targets"></a>Цели анализа производительности
 
@@ -110,34 +110,34 @@ Azure предусматривает несколько служб сообще�
 | | Microsoft.Resources.ResourceDeleteFailure | Возникает при неудачном удалении ресурса. |
 | | Microsoft.Resources.ResourceDeleteCancel | Возникает при отмене удаления ресурса. Это событие происходит при отмене развертывания шаблона. |
 
-Дополнительные сведения о схеме событий службы "Сетка событий Azure" см. [здесь](https://docs.microsoft.com/azure/event-grid/event-schema).
+Дополнительные сведения о схеме событий службы "Сетка событий Azure" см. [здесь](/azure/event-grid/event-schema).
 
 Сетка событий доступна из приложений всех типов, даже если они работают локально.
 
 ## <a name="conclusion"></a>Заключение
 
-В этой статье вы узнали о бессерверной платформе Azure, на которой сочетаются Функции Azure, Logic Apps и служба "Сетка событий". Эти ресурсы можно использовать для сборки приложения с полностью бессерверной архитектурой или гибридного решения, взаимодействующего с другими облачными ресурсами и локальными серверами. В сочетании с бессерверной платформой данных, такой как [SQL Azure](https://docs.microsoft.com/azure/sql-database) или [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), можно создавать полностью управляемые и полностью облачные приложения.
+В этой статье вы узнали о бессерверной платформе Azure, на которой сочетаются Функции Azure, Logic Apps и служба "Сетка событий". Эти ресурсы можно использовать для сборки приложения с полностью бессерверной архитектурой или гибридного решения, взаимодействующего с другими облачными ресурсами и локальными серверами. В сочетании с бессерверной платформой данных, такой как [SQL Azure](/azure/sql-database) или [Cosmos DB](/azure/cosmos-db/introduction), можно создавать полностью управляемые и полностью облачные приложения.
 
 ## <a name="recommended-resources"></a>Рекомендуемые ресурсы
 
-- [Обзор планов Службы приложений Azure](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
-- [Application Insights](https://docs.microsoft.com/azure/application-insights)
-- [Аналитика Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)
+- [Обзор планов Службы приложений Azure](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
+- [Application Insights](/azure/application-insights)
+- [Аналитика Application Insights](/azure/application-insights/app-insights-analytics)
 - [Общие сведения Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102) (Перенос приложения в облако с помощью бессерверных Функций Azure)
-- [Сетка событий Azure](https://docs.microsoft.com/azure/event-grid/overview)
-- [Схема событий службы "Сетка событий Azure"](https://docs.microsoft.com/azure/event-grid/event-schema)
-- [Центры событий Azure](https://docs.microsoft.com/azure/event-hubs)
-- [Документация по Функциям Azure](https://docs.microsoft.com/azure/azure-functions)
-- [Основные понятия. Триггеры и привязки в функциях Azure](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
-- [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
-- [Служебная шина Azure](https://docs.microsoft.com/azure/service-bus-messaging)
-- [хранилище таблиц Azure](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-- [Подключение к локальным источникам данных с помощью локального шлюза данных Azure](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
-- [Создание первой функции на портале Azure](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
-- [Создание первой функции с помощью Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
-- [Создание первой функции с помощью Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
-- [Поддерживаемые языки функций](https://docs.microsoft.com/azure/azure-functions/supported-languages)
-- [Мониторинг Функций Azure](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
+- [Сетка событий Azure](/azure/event-grid/overview)
+- [Схема событий службы "Сетка событий Azure"](/azure/event-grid/event-schema)
+- [Центры событий Azure](/azure/event-hubs)
+- [Документация по Функциям Azure](/azure/azure-functions)
+- [Основные понятия. Триггеры и привязки в функциях Azure](/azure/azure-functions/functions-triggers-bindings)
+- [Azure Logic Apps](/azure/logic-apps)
+- [Служебная шина Azure](/azure/service-bus-messaging)
+- [хранилище таблиц Azure](/azure/cosmos-db/table-storage-overview)
+- [Подключение к локальным источникам данных с помощью локального шлюза данных Azure](/azure/analysis-services/analysis-services-gateway)
+- [Создание первой функции на портале Azure](/azure/azure-functions/functions-create-first-azure-function)
+- [Создание первой функции с помощью Azure CLI](/azure/azure-functions/functions-create-first-azure-function-azure-cli)
+- [Создание первой функции с помощью Visual Studio](/azure/azure-functions/functions-create-your-first-function-visual-studio)
+- [Поддерживаемые языки функций](/azure/azure-functions/supported-languages)
+- [Мониторинг Функций Azure](/azure/azure-functions/functions-monitoring)
 
 >[!div class="step-by-step"]
 >[Назад](logic-apps.md)

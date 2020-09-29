@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - '#define directive [C#]'
 ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01
-ms.openlocfilehash: a37f883a249ec74b66769ee40b84b20e8568c451
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 961c20c091a4a6d7da421d94500abd41d2d60a5b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89132343"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160506"
 ---
 # <a name="define-c-reference"></a>#define (Справочник по C#)
+
 `#define` позволяет определить символ. При использовании символа в качестве выражения, которое передается директиве [#if](./preprocessor-if.md), выражение будет иметь значение `true`, как показано в следующем примере:  
 
  ```csharp

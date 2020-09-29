@@ -9,14 +9,15 @@ helpviewer_keywords:
 - win32manifest compiler option [C#]
 - -win32manifest compiler option [C#]
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
-ms.openlocfilehash: 4ce4033323eb938caff1d769198ca69782b470ab
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 1d2eefdab433f67e1cba5f709a2db8ec6b9a5dc7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89140832"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171316"
 ---
 # <a name="-win32manifest-c-compiler-options"></a>-win32manifest (параметры компилятора C#)
+
 Параметр **-win32manifest** позволяет указать пользовательский файл манифеста приложения win32manifest для внедрения в переносимый исполняемый файл проекта (PE-файл).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,10 +27,12 @@ ms.locfileid: "89140832"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `filename`  
  Имя и расположение пользовательского файла манифеста.  
   
 ## <a name="remarks"></a>Remarks  
+
  По умолчанию компилятор Visual C# внедряет манифест приложения, определяющий запрошенный уровень выполнения "asInvoker". Он создает манифест в той же папке, в которой создан исполняемый файл, обычно в папке bin\Debug или bin\Release при использовании Visual Studio. Если необходимо предоставить пользовательский манифест, например, чтобы задать уровень выполнения highestAvailable or requireAdministrator, используйте этот параметр, чтобы указать имя файла.  
   
 > [!NOTE]
@@ -48,6 +51,7 @@ ms.locfileid: "89140832"
  Манифест приложения можно предоставить во время пользовательского действия, выполняемого после сборки, или в составе файла ресурсов Win32 с помощью параметра [-nowin32manifest (параметры компилятора C#)](./nowin32manifest-compiler-option.md). Этот же параметр можно использовать, если вы хотите, чтобы ваше приложение требовало виртуализации файлов или реестров в Windows Vista. В этом случае компилятор не будет создавать и внедрять манифест по умолчанию в переносимый исполняемый файл (PE).  
   
 ## <a name="example"></a>Пример  
+
  В приведенном ниже примере показан манифест по умолчанию, который компилятор Visual C# вставляет в PE.  
   
 > [!NOTE]

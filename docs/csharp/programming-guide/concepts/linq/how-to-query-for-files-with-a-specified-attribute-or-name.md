@@ -3,14 +3,15 @@ title: Как запросить файлы с указанными атрибу
 description: Узнайте, как использовать LINQ в C# для поиска файлов с указанным расширением имени файла в дереве каталогов и как обнаружить самый новый или самый старый файл.
 ms.date: 07/20/2015
 ms.assetid: 560e3879-b0b3-4549-ad02-0a53aff2f83c
-ms.openlocfilehash: 9820b96e19d805b792e18ff242e64dfb6cf4a606
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 01a3482d8ea4c95b60dd9434320f175f0498c3e8
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104497"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165316"
 ---
 # <a name="how-to-query-for-files-with-a-specified-attribute-or-name-c"></a>Как запросить файлы с указанными атрибутами или именем (C#)
+
 В этом примере показано, как обнаружить все файлы с указанным расширением (например, TXT) в заданном дереве каталогов. Кроме того, он показывает, как обнаружить самый новый или самый старый файл в дереве, используя время создания.  
   
 ## <a name="example"></a>Пример  
@@ -65,6 +66,7 @@ class FindFileByExtension
 ```  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
   Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.
   
 ## <a name="see-also"></a>См. также

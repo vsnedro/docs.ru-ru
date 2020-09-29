@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - '#pragma directive [C#]'
 ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673
-ms.openlocfilehash: 97d7a786c83a8be21f7fd38873061dba0f9278ae
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 2788c2589bee149676c5cb2b4212ec7a060a47af
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89137959"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168521"
 ---
 # <a name="pragma-c-reference"></a>#pragma (Справочник по C#)
+
 Директива `#pragma` предоставляет компилятору специальные инструкции для компиляции файла, в котором она появляется. Компилятор должен поддерживать эти инструкции. Другими словами, директиву `#pragma` нельзя использовать для создания настраиваемых инструкций предварительной обработки. Компилятор Microsoft C# поддерживает следующие две инструкции `#pragma`:  
   
  [#pragma warning](./preprocessor-pragma-warning.md)  
@@ -28,6 +29,7 @@ ms.locfileid: "89137959"
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pragma-name`  
  Имя распознанной директивы pragma.  
   

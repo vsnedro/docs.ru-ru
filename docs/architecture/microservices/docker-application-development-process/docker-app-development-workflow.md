@@ -2,12 +2,12 @@
 title: Рабочий процесс разработки для приложений Docker
 description: Сведения о рабочем процессе для разработки приложений Docker. Начнем по шагам, рассмотрим подробности оптимизации файлов Dockerfile и закончим на упрощенном рабочем процессе, доступном при использовании Visual Studio.
 ms.date: 01/30/2020
-ms.openlocfilehash: d32134a10fb9b56e874bbc6218ca2c4d822adb90
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 04b59a6c30b4fb8f34fe1d0e5cd5328ac77ecb4e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90678853"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172558"
 ---
 # <a name="development-workflow-for-docker-apps"></a>Рабочий процесс разработки для приложений Docker
 
@@ -557,7 +557,7 @@ docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 
 ## <a name="using-powershell-commands-in-a-dockerfile-to-set-up-windows-containers"></a>Использование команд PowerShell в DockerFile для настройки контейнеров Windows
 
-[Контейнеры Windows](https://docs.microsoft.com/virtualization/windowscontainers/about/index) позволяют преобразовывать существующие приложения Windows в образы Docker и развертывать их с помощью тех же средств, что и остальную часть экосистемы Docker. Чтобы использовать контейнеры Windows, выполните команды PowerShell в Dockerfile, как показано в следующем примере:
+[Контейнеры Windows](/virtualization/windowscontainers/about/index) позволяют преобразовывать существующие приложения Windows в образы Docker и развертывать их с помощью тех же средств, что и остальную часть экосистемы Docker. Чтобы использовать контейнеры Windows, выполните команды PowerShell в Dockerfile, как показано в следующем примере:
 
 ```dockerfile
 FROM mcr.microsoft.com/windows/servercore

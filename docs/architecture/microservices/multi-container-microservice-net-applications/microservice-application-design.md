@@ -2,12 +2,12 @@
 title: Разработка приложения на основе микрослужб
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Понимание преимуществ и недостатков приложения на основе микрослужб для принятия взвешенного решения.
 ms.date: 10/02/2018
-ms.openlocfilehash: 619440c02c1a82e05adb2cec9ddba933cd3e0a65
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 11aa6327a8d870a1ff6356b88695b693c27f99a9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76965767"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172343"
 ---
 # <a name="design-a-microservice-oriented-application"></a>Проектирование ориентированного на микрослужбы приложения
 
@@ -158,7 +158,7 @@ ms.locfileid: "76965767"
 
 - Простая CRUD, однослойная, одноуровневая архитектура.
 
-- [Классическая многоуровневая архитектура](https://docs.microsoft.com/previous-versions/msp-n-p/ee658109(v=pandp.10)).
+- [Классическая многоуровневая архитектура](/previous-versions/msp-n-p/ee658109(v=pandp.10)).
 
 - [Многоуровневая архитектура с предметно-ориентированным проектированием](https://devblogs.microsoft.com/cesardelatorre/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 

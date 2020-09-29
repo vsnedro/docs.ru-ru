@@ -2,12 +2,12 @@
 title: Модернизация жизненного цикла приложений с помощью конвейеров непрерывной интеграции и непрерывного развертывания и средств DevOps в облаке
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Модернизация жизненного цикла приложений с помощью конвейеров непрерывной интеграции и непрерывного развертывания и средств DevOps в облаке
 ms.date: 04/30/2018
-ms.openlocfilehash: afb7bae7780a766329ca604d192b2d7353e32bf5
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 98ebd29b8ab81c8fff6da546942825133f06f4de
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739165"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172057"
 ---
 # <a name="modernize-your-apps-lifecycle-with-cicd-pipelines-and-devops-tools-in-the-cloud"></a>Модернизация жизненного цикла приложений с помощью конвейеров непрерывной интеграции и непрерывного развертывания и средств DevOps в облаке
 
@@ -17,9 +17,9 @@ ms.locfileid: "81739165"
 
 Azure DevOps Services поддерживает непрерывную интеграцию и развертывание многоконтейнерных приложений в различных средах с помощью официальных задач развертывания:
 
-- [развертывание в решении "Веб-приложения Azure для контейнеров"](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-docker-webapp?tabs=dotnet-core);
+- [развертывание в решении "Веб-приложения Azure для контейнеров"](/azure/devops/pipelines/apps/cd/deploy-docker-webapp?tabs=dotnet-core);
 
-- [развертывание в Службе Azure Kubernetes](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?tabs=dotnet-core).
+- [развертывание в Службе Azure Kubernetes](/azure/devops/pipelines/apps/cd/deploy-aks?tabs=dotnet-core).
 
 Но вы также можете выполнить развертывание в [Docker Swarm](https://blog.jcorioland.io/archives/2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services.html) или DC/OS с помощью задач Azure DevOps Services на основе скриптов.
 

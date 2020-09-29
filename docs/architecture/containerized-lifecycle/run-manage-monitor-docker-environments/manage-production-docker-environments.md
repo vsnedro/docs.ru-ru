@@ -2,12 +2,12 @@
 title: Управление рабочими средами Docker
 description: Сведения о ключевых аспектах управления рабочей средой на базе контейнеров.
 ms.date: 08/06/2020
-ms.openlocfilehash: 11880a523d6ff79c9646fd1e174f380779d00dcc
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: dbc5f541478410060420f95f32e4ff5291354075
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87914936"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160649"
 ---
 # <a name="manage-production-docker-environments"></a>Управление рабочими средами Docker
 
@@ -25,10 +25,10 @@ ms.locfileid: "87914936"
 
 | Средства управления | Описание: | Связанные оркестраторы |
 |------------------|-------------|-----------------------|
-| [Azure Monitor для контейнеров](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview) | Выделенное средство управления Kubernetes в Azure | Службы Azure Kubernetes (AKS) |
+| [Azure Monitor для контейнеров](/azure/monitoring/monitoring-container-insights-overview) | Выделенное средство управления Kubernetes в Azure | Службы Azure Kubernetes (AKS) |
 | [Пользовательский веб-интерфейс Kubernetes (панель мониторинга)](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) | Средство управления Kubernetes, позволяющее отслеживать локальный кластер Kubernetes и управлять им | Служба Azure Kubernetes (AKS)<br/>Локальные средства Kubernetes |
-| [Портал Azure для Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal)<br/>[Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) | Классическая и интернет-версия для управления кластерами Service Fabric в Azure, локальной среде, локальном развертывании и других облаках | Azure Service Fabric |
-| [Мониторинг контейнеров (Azure Monitor)](https://docs.microsoft.com/azure/azure-monitor/insights/containers) | Решение для общего отслеживания контейнеров и управления ими. Позволяет управлять кластерами Kubernetes через [Azure Monitor для контейнеров](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview). | Azure Service Fabric<br/>Служба Azure Kubernetes (AKS)<br/>Mesosphere DC/OS и другие. |
+| [Портал Azure для Service Fabric](/azure/service-fabric/service-fabric-cluster-creation-via-portal)<br/>[Azure Service Fabric Explorer](/azure/service-fabric/service-fabric-visualizing-your-cluster) | Классическая и интернет-версия для управления кластерами Service Fabric в Azure, локальной среде, локальном развертывании и других облаках | Azure Service Fabric |
+| [Мониторинг контейнеров (Azure Monitor)](/azure/azure-monitor/insights/containers) | Решение для общего отслеживания контейнеров и управления ими. Позволяет управлять кластерами Kubernetes через [Azure Monitor для контейнеров](/azure/monitoring/monitoring-container-insights-overview). | Azure Service Fabric<br/>Служба Azure Kubernetes (AKS)<br/>Mesosphere DC/OS и другие. |
 
 ## <a name="azure-service-fabric"></a>Azure Service Fabric
 
@@ -36,9 +36,9 @@ ms.locfileid: "87914936"
 
 Ниже приведены средства управления Service Fabric:
 
-- [Портал Azure для Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal) служит для выполнения операций с кластером (создание/изменение/удаление) или настройки его инфраструктуры (виртуальных машин, подсистемы балансировки нагрузки, сетевого взаимодействия и т. д.)
+- [Портал Azure для Service Fabric](/azure/service-fabric/service-fabric-cluster-creation-via-portal) служит для выполнения операций с кластером (создание/изменение/удаление) или настройки его инфраструктуры (виртуальных машин, подсистемы балансировки нагрузки, сетевого взаимодействия и т. д.)
 
-- [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) — это многоплатформенное средство, представленное классическим приложением и пользовательским веб-интерфейсом, которое предоставляет определенные ценные сведения о кластере Service Fabric и позволяет выполнять с ним определенные операции на уровне узлов и виртуальных машин, а также на уровне служб и приложений.
+- [Azure Service Fabric Explorer](/azure/service-fabric/service-fabric-visualizing-your-cluster) — это многоплатформенное средство, представленное классическим приложением и пользовательским веб-интерфейсом, которое предоставляет определенные ценные сведения о кластере Service Fabric и позволяет выполнять с ним определенные операции на уровне узлов и виртуальных машин, а также на уровне служб и приложений.
 
 >[!div class="step-by-step"]
 >[Назад](run-microservices-based-applications-in-production.md)

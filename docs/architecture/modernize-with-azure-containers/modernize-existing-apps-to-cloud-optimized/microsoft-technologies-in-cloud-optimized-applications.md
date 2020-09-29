@@ -2,12 +2,12 @@
 title: Технологии Майкрософт в приложениях, оптимизированных для облака
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Технологии Майкрософт в приложениях, оптимизированных для облака
 ms.date: 04/28/2018
-ms.openlocfilehash: c5222ba13258f9c8a40ca3b9ce240aeb9f41da63
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.openlocfilehash: b257497835638dd65c894998e95bd7e9d784b7bf
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79546514"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172018"
 ---
 # <a name="microsoft-technologies-in-cloud-optimized-applications"></a>Технологии Майкрософт в приложениях, оптимизированных для облака
 
@@ -15,7 +15,7 @@ ms.locfileid: "79546514"
 
 - **Облачная инфраструктура**. Это инфраструктура, которая включает в себя платформу вычислительных ресурсов, операционную систему, сеть и хранилище. Microsoft Azure размещается на этом уровне.
 
-- **Среда выполнения**. Это уровень среды для работы приложения. Если вы используете контейнеры, на этом уровне обычно размещается [модуль Docker](https://docs.docker.com/engine/), работающий на узлах Linux или Windows. ([Контейнеры Windows](https://docs.microsoft.com/virtualization/windowscontainers/about/) поддерживаются начиная с Windows Server 2016. Это лучший вариант для имеющихся приложений .NET Framework, работающих в Windows.)
+- **Среда выполнения**. Это уровень среды для работы приложения. Если вы используете контейнеры, на этом уровне обычно размещается [модуль Docker](https://docs.docker.com/engine/), работающий на узлах Linux или Windows. ([Контейнеры Windows](/virtualization/windowscontainers/about/) поддерживаются начиная с Windows Server 2016. Это лучший вариант для имеющихся приложений .NET Framework, работающих в Windows.)
 
 - **Управляемое облако**. Выбор управляемого облака позволяет избежать расходов и сложностей, связанных с управлением базовой инфраструктурой, виртуальными машинами, исправлениями ОС и конфигурацией сети, а также с их поддержкой. Если вы решите выполнить миграцию, используя инфраструктуру как услугу, вы будете нести ответственность за все эти задачи и связанные затраты. В управляемом облаке вы отвечаете только за разрабатываемые приложения и службы. Поставщик облачных служб обычно управляет всем остальным. К примерам управляемых облачных служб в Azure относятся [База данных SQL Azure](https://azure.microsoft.com/services/sql-database), [кэш Azure для Redis](https://azure.microsoft.com/services/cache/), [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/), [служба хранилища Azure,](https://azure.microsoft.com/services/storage/)[База данных Azure для MySQL](https://azure.microsoft.com/services/mysql/), [База данных Azure для PostgreSQL](https://azure.microsoft.com/services/postgresql/), [Azure Active Directory](https://azure.microsoft.com/services/active-directory/), а также службы вычислений, такие как [масштабируемые наборы виртуальных машин](https://azure.microsoft.com/services/virtual-machine-scale-sets/), [Служба приложений Azure](https://azure.microsoft.com/services/app-service/) и [Служба Azure Kubernetes](https://azure.microsoft.com/services/container-service/).
 

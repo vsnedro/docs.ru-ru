@@ -6,14 +6,15 @@ helpviewer_keywords:
 - examples [C#], COM classes
 - COM, exposing Visual C# objects to
 ms.assetid: 6504dea9-ad1c-4993-a794-830fec5270af
-ms.openlocfilehash: d49d391f5ea7717e0c36782be65cfb2ae154b843
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9274fef15e4fcfd4a268e4f245581966ad6ab750
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542800"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170367"
 ---
 # <a name="example-com-class-c-programming-guide"></a>Пример COM-класса (Руководство по программированию на C#)
+
 Далее приведен пример класса, который можно предоставить в качестве COM-объекта. После помещения этого кода в CS-файл и добавления в проект свойства **Регистрация для COM-взаимодействия** необходимо присвоить значение **Истина**. Дополнительные сведения см. в разделе [Практическое руководство. Register a Component for COM Interop](/previous-versions/visualstudio/visual-studio-2010/w29wacsy(v=vs.100)) (Практическое руководство. Регистрация компонента для COM-взаимодействия).
   
  Предоставление объектов Visual C# для COM требует объявления интерфейса класса, интерфейса событий (если необходимо) и самого класса. Члены класса должны соответствовать указанным ниже правилам, чтобы стать доступными для COM.  
@@ -35,6 +36,7 @@ ms.locfileid: "90542800"
  Класс реализует интерфейс класса; он может реализовывать несколько интерфейсов, но первой реализацией будет интерфейс класса по умолчанию. Реализуйте методы и свойства, доступные модели COM здесь. Они должны быть помечены как открытые и соответствовать объявлениям в интерфейсе класса. Кроме того, объявите здесь события, инициируемые классом. Они должны быть помечены как открытые и соответствовать объявлениям в интерфейсе событий.  
   
 ## <a name="example"></a>Пример  
+
  [!code-csharp[csProgGuideInterop#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/ExampleCOM.cs#8)]  
   
 ## <a name="see-also"></a>См. также

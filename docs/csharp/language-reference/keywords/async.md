@@ -9,12 +9,12 @@ helpviewer_keywords:
 - async method [C#]
 - async [C#]
 ms.assetid: 16f14f09-b2ce-42c7-a875-e4eca5d50674
-ms.openlocfilehash: 5a70389c9c423300fad03123cfc4738dfe10e481
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 78079d9940ea5363215411acea6b9ca269ff3ae1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118524"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160545"
 ---
 # <a name="async-c-reference"></a>async (справочник по C#)
 
@@ -40,6 +40,7 @@ string contents = await httpClient.GetStringAsync(requestUrl);
  Ключевое слово `async` — это контекстно-зависимо ключевое слово, которое является ключевым словом, когда оно изменяет метод, лямбда-выражение или анонимный метод. Во всех других контекстах он интерпретируется как идентификатор.
 
 ## <a name="example"></a>Пример
+
 В следующем примере показана структура и поток управления между обработчиком асинхронных событий `StartButton_Click` и асинхронным методом `ExampleMethodAsync`. В результате выполнения этого асинхронного метода возвращается число символов на веб-странице. Код подходит для приложения Windows Presentation Foundation (WPF) или приложения для Магазина Windows Presentation Foundation (WPF), которые создаются в Visual Studio; см. комментарии к коду для настройки приложения.
 
 Этот код можно выполнить в Visual Studio как приложение Windows Presentation Foundation (WPF) или приложение Магазина Windows. Вам понадобятся элементы управления типа "Кнопка" (`StartButton`) и "Текстовое поле" (`ResultsTextBox`). Не забудьте задать имена и обработчик, чтобы получить код следующего вида:
@@ -68,6 +69,7 @@ string contents = await httpClient.GetStringAsync(requestUrl);
 > Дополнительные сведения о задачах и коде, который выполняется во время ожидания задачи, см. в разделе [Асинхронное программирование с использованием ключевых слов async и await](../../programming-guide/concepts/async/index.md). Полный пример консоли, в котором используются похожие элементы, см. в разделе [Обработка асинхронных задач по мере их завершения (C#)](../../programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md).
 
 ## <a name="return-types"></a>Типы возвращаемых значений
+
 Асинхронные методы могут иметь следующие типы возвращаемых значений:
 
 - <xref:System.Threading.Tasks.Task>

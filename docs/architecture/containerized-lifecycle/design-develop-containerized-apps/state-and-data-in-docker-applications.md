@@ -2,12 +2,12 @@
 title: Состояние и данные в приложениях Docker
 description: Сведения о доступной возможности для сохранения состояния в контейнерных приложениях.
 ms.date: 08/06/2020
-ms.openlocfilehash: dc9a1a3eccb77e9fd67e69fd3295f3db1edf5e66
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: d55519e9340ec06588c2dae3e7363d03f263ce39
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915322"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163470"
 ---
 # <a name="state-and-data-in-docker-applications"></a>Состояние и данные в приложениях Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "87915322"
 
 - [Служба хранилища Azure](https://azure.microsoft.com/documentation/services/storage/), предоставляющая геораспределенное хранилище для долгосрочного хранения данных контейнеров.
 
-- Удаленные реляционные базы данных, например [База данных SQL Azure](https://azure.microsoft.com/services/sql-database/), базы данных NoSQL, такие как [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), или службы кэша, такие как [Redis](https://redis.io/).
+- Удаленные реляционные базы данных, например [База данных SQL Azure](https://azure.microsoft.com/services/sql-database/), базы данных NoSQL, такие как [Azure Cosmos DB](/azure/cosmos-db/introduction), или службы кэша, такие как [Redis](https://redis.io/).
 
 Из контейнера Docker:
 

@@ -2,12 +2,12 @@
 title: Что такое Docker?
 description: Чтобы лучше понять принцип работы Docker, можно воспользоваться простой аналогией.
 ms.date: 08/06/2020
-ms.openlocfilehash: 73b6032465583861169a8ac2bed81585027f42ec
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: b23a8719170deca706ee44d10337c340d72605fb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915059"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165927"
 ---
 # <a name="what-is-docker"></a>Что такое Docker?
 
@@ -29,7 +29,7 @@ Docker предоставляет версию [Docker Community Edition (CE)](h
 
 - **Контейнеры Hyper-V** увеличивают изоляцию, обеспеченную контейнерами Windows Server, запуская каждый контейнер в оптимизированной виртуальной машине. В этой конфигурации ядро узла контейнера не используется совместно с контейнерами Hyper-V, что улучшает изоляцию.
 
-Образы для этих контейнеров создаются и работают одинаково. Различие заключается лишь в том, что для создания контейнера из образа с контейнером Hyper-V нужен дополнительный параметр. Дополнительные сведения см. в разделе [Контейнеры Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container).
+Образы для этих контейнеров создаются и работают одинаково. Различие заключается лишь в том, что для создания контейнера из образа с контейнером Hyper-V нужен дополнительный параметр. Дополнительные сведения см. в разделе [Контейнеры Hyper-V](/virtualization/windowscontainers/manage-containers/hyperv-container).
 
 ## <a name="comparing-docker-containers-with-virtual-machines"></a>Сравнение контейнеров Docker с виртуальными машинами
 

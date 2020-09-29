@@ -2,12 +2,12 @@
 title: Обзор пошаговых руководств и технических описаний по началу работы
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Обзор пошаговых руководств и технических описаний по началу работы
 ms.date: 04/28/2018
-ms.openlocfilehash: 4db6d449d27dcd4316d61305c8c2a8c2aa0bc65b
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 98d33b13d2b28bfe1c35894df45e525cff0520c1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89516129"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172148"
 ---
 # <a name="walkthroughs-and-technical-get-started-overview"></a>Обзор пошаговых руководств и технических описаний по началу работы
 
@@ -190,7 +190,7 @@ ms.locfileid: "89516129"
 
 ### <a name="overview"></a>Обзор
 
-[Служба "Экземпляры контейнеров Azure" (ACI)](https://docs.microsoft.com/azure/container-instances/) предоставляет самый быстрый способ использовать среду разработки, тестирования и промежуточного хранения контейнеров, где можно развернуть отдельные экземпляры контейнеров.
+[Служба "Экземпляры контейнеров Azure" (ACI)](/azure/container-instances/) предоставляет самый быстрый способ использовать среду разработки, тестирования и промежуточного хранения контейнеров, где можно развернуть отдельные экземпляры контейнеров.
 
 ### <a name="goals"></a>Цели
 

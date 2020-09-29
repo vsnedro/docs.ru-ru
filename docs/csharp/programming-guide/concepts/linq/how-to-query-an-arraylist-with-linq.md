@@ -3,14 +3,15 @@ title: Выполнение запроса к ArrayList с помощью LINQ (
 description: В этом примере выполнение запроса к ArrayList в C# осуществляется с помощью LINQ. Необходимо объявить тип переменной диапазона, чтобы отразить тип объектов в коллекции.
 ms.date: 07/20/2015
 ms.assetid: 2bfb471c-6e9a-4e60-bd83-4a1778abde11
-ms.openlocfilehash: 5c251e17de062a4578f06fc1a40ea3ede9f3ab67
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 278c05cfc864ee4f53e1215a2acb739efd87f8b1
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104609"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91154006"
 ---
 # <a name="how-to-query-an-arraylist-with-linq-c"></a>Выполнение запроса к ArrayList с помощью LINQ (C#)
+
 При использовании LINQ для запросов к неуниверсальным коллекциям <xref:System.Collections.IEnumerable>, таким как <xref:System.Collections.ArrayList>, необходимо явно объявить тип переменной диапазона, чтобы отразить конкретный тип объектов в коллекции. Например, если у вас есть список <xref:System.Collections.ArrayList> объектов `Student`, [предложение from](../../../language-reference/keywords/from-clause.md) должно иметь следующий вид:  
   
 ```csharp
@@ -23,6 +24,7 @@ var query = from Student s in arrList
  Использование явным образом типизированной переменной диапазона в выражении запроса эквивалентно вызову метода <xref:System.Linq.Enumerable.Cast%2A>. Если выполнить приведение не удается, <xref:System.Linq.Enumerable.Cast%2A> создает исключение. Методы <xref:System.Linq.Enumerable.Cast%2A> и <xref:System.Linq.Enumerable.OfType%2A> стандартного оператора запроса используются для работы с неуниверсальными типами <xref:System.Collections.IEnumerable>. Дополнительные сведения см. в разделе [Связи типов в операциях запроса LINQ](./type-relationships-in-linq-query-operations.md).  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показан простой запрос к объекту <xref:System.Collections.ArrayList>. Обратите внимание на то, что в этом примере инициализаторы объектов используются, когда код вызывает метод <xref:System.Collections.ArrayList.Add%2A>, но это не обязательно.  
   
 ```csharp  

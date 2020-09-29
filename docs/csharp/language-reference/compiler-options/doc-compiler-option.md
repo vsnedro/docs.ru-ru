@@ -13,14 +13,15 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: 366bad1029904b3571be0a76d827ff0213d776bb
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: b1d7fbbe98aaad16454fdd71c161f2a17a2f4f2e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125752"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173260"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc (параметры компилятора C#)
+
 Параметр **-doc** позволяет поместить комментарии документации в XML-файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -30,10 +31,12 @@ ms.locfileid: "89125752"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `file`  
  Выходной XML-файл, который заполняется комментариями из файлов исходного кода, участвующих в компиляции.  
   
 ## <a name="remarks"></a>Remarks  
+
  Комментарии документации могут быть обработаны и добавлены в XML-файл, если они предшествуют объектам файлов исходного кода, перечисленным ниже.  
   
 - Такие определяемые пользователем типы, как [класс](../keywords/class.md), [делегат](../builtin-types/reference-types.md#the-delegate-type) или [интерфейс](../keywords/interface.md).  

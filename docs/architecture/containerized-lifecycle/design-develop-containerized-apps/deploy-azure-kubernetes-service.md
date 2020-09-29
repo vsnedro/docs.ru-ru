@@ -2,16 +2,16 @@
 title: Управление микрослужбами и многоконтейнерными приложениями для обеспечения высокого уровня масштабируемости и доступности
 description: Сведения о развертывании приложения с помощью службы Azure Kubernetes.
 ms.date: 08/06/2020
-ms.openlocfilehash: b4deb9906e0fece7fb611b6988df576e8b07fe46
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: ba9887c0a4837c16a60ebeb006416c0fa8c105e0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916137"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163600"
 ---
 # <a name="deploy-to-azure-kubernetes-service-aks"></a>Развертывание в службе Azure Kubernetes (AKS)
 
-Вы можете взаимодействовать с AKS, используя предпочитаемую клиентскую операционную систему (Windows, macOS или Linux) с установленным интерфейсом командной строки Azure (Azure CLI). Дополнительные сведения см. в разделах [Документация по Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) и [Руководство по установке](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) для доступных сред.
+Вы можете взаимодействовать с AKS, используя предпочитаемую клиентскую операционную систему (Windows, macOS или Linux) с установленным интерфейсом командной строки Azure (Azure CLI). Дополнительные сведения см. в разделах [Документация по Azure CLI](/cli/azure/?view=azure-cli-latest) и [Руководство по установке](/cli/azure/install-azure-cli?view=azure-cli-latest) для доступных сред.
 
 ## <a name="create-the-aks-environment-in-azure"></a>Создание среды AKS в Azure
 

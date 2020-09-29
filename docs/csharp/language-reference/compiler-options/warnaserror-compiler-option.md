@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -warnaserror compiler option [C#]
 - warnaserror compiler option [C#]
 ms.assetid: 04680ec3-08d6-4e2e-a274-38310e10e33c
-ms.openlocfilehash: 3ccd4546402dbc8e5d9245af6411ba2d831d4959
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 9c3b307668968865b401aedc04c79f95d4f32513
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127247"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171342"
 ---
 # <a name="-warnaserror-c-compiler-options"></a>-warnaserror (параметры компилятора C#)
+
 Параметр **-warnaserror+** предписывает обрабатывать все предупреждения как ошибки  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,6 +27,7 @@ ms.locfileid: "89127247"
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Все сообщения, которые до этого получали статус предупреждений, будут возвращаться как ошибки, в результате чего процесс построения прерывается без создания выходных файлов.  
   
  По умолчанию действует параметр **-warnaserror-**, при котором наличие предупреждений не препятствует созданию выходного файла. Если задан параметр **-warnaserror** или эквивалентный ему **-warnaserror+**, все предупреждения обрабатываются как ошибки.  
@@ -45,6 +47,7 @@ ms.locfileid: "89127247"
  Сведения об установке этого параметра компилятора программными средствами см. в разделе <xref:VSLangProj80.CSharpProjectConfigurationProperties3.TreatWarningsAsErrors>.  
   
 ## <a name="example"></a>Пример  
+
  Компиляция файла `in.cs` без отображения предупреждений:  
   
 ```console  

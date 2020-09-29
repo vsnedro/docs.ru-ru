@@ -8,14 +8,15 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: 14722d66a65eb5f96118acf017dc877e657b2dd9
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c66f4ff578e9864ebaf2b89ec03ce95f3cb2ba91
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89134579"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168742"
 ---
 # <a name="internal-c-reference"></a>internal (Справочник по C#)
+
 Ключевое слово `internal` является [модификатором доступа](./access-modifiers.md) для типов и членов типов.
   
  > Эта страница содержит доступ `internal`. Ключевое слово `internal` также является частью модификатора доступа [`protected internal`](./protected-internal.md).
@@ -39,6 +40,7 @@ public class BaseClass
  Будет ошибкой ссылаться на тип или член с внутренним доступом из-за пределов сборки, в которой он определен.  
   
 ## <a name="example"></a>Пример  
+
  Этот пример содержит два файла, `Assembly1.cs` и `Assembly1_a.cs`. Первый файл содержит внутренний базовый класс `BaseClass`. Во втором файле попытка создать экземпляр `BaseClass` приведет к ошибке.  
   
 ```csharp  
@@ -63,6 +65,7 @@ class TestAccess
 ```  
   
 ## <a name="example"></a>Пример  
+
  В этом примере используйте те же файлы, которые использовались в примере 1, однако измените уровень доступности `BaseClass` на `public`. Кроме того, измените уровень доступности члена `intM` на `internal`. В этом случае можно создать экземпляр класса, но нельзя получить доступ к внутреннему члену.  
   
 ```csharp  

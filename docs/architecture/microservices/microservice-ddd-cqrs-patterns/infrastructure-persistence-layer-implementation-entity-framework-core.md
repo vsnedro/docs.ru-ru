@@ -2,12 +2,12 @@
 title: Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Сведения о реализации уровня сохраняемости инфраструктуры с помощью Entity Framework Core.
 ms.date: 01/30/2020
-ms.openlocfilehash: f9d97319d378b6fd3eb681fd2873e5fbeead787f
-ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
+ms.openlocfilehash: 878d4d64e92ca92fd2393d60d496f1c5671e7029
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100980"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172356"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 
@@ -367,7 +367,7 @@ EF Core поддерживает алгоритм [HiLo](https://stackoverflow.c
 
 ### <a name="use-shadow-properties-in-ef-core-hidden-at-the-infrastructure-level"></a>Использование теневых свойств в EF Core, скрытых на уровне инфраструктуры
 
-Теневые свойства в EF Core — это свойства, которые не существуют в вашей модели классов сущностей. Значения и состояния этих свойств сохраняются только в классе [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) на уровне инфраструктуры.
+Теневые свойства в EF Core — это свойства, которые не существуют в вашей модели классов сущностей. Значения и состояния этих свойств сохраняются только в классе [ChangeTracker](/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) на уровне инфраструктуры.
 
 ## <a name="implement-the-query-specification-pattern"></a>Реализация шаблона спецификации запроса
 

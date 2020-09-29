@@ -8,17 +8,19 @@ helpviewer_keywords:
 - files [C#]
 - creating folders [C#]
 ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
-ms.openlocfilehash: f5641dc765b1a2d62adb76babe3f111730d4550b
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 4d60b8c6c0f9d4ea66125374327f5e1ad2098694
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302689"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91167448"
 ---
 # <a name="how-to-create-a-file-or-folder-c-programming-guide"></a>Руководство по программированию на C#. Создание файла или папки
+
 Вы можете программно создать на компьютере папку, вложенную папку и файл во вложенной папке, а затем записать данные в этот файл.  
   
 ## <a name="example"></a>Пример  
+
  [!code-csharp[csFilesandFolders#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#10)]  
   
  Если папка уже существует, <xref:System.IO.Directory.CreateDirectory%2A> не выполняет никаких действий и исключение не возникает. Но <xref:System.IO.File.Create%2A?displayProperty=nameWithType> заменяет существующий файл новым. Для того чтобы этого избежать, в примере используется оператор `if`-`else`.  
@@ -64,6 +66,7 @@ ms.locfileid: "87302689"
 - Имя папки состоит из одного двоеточия ":" (класс <xref:System.IO.PathTooLongException>).  
   
 ## <a name="net-security"></a>Безопасность .NET  
+
  Экземпляр класса <xref:System.Security.SecurityException> может быть порожден как исключение в ситуации частичного доверия.  
   
  Если у вас нет разрешения на создание папки, код в приведенном примере породит как исключение экземпляр класса <xref:System.UnauthorizedAccessException>.  

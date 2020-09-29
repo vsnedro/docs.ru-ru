@@ -2,12 +2,12 @@
 title: Состояние и данные в приложениях Docker
 description: Управление состоянием и данными в приложениях Docker. Экземпляры микрослужбы являются невосстановимыми, но к ДАННЫМ ЭТО НЕ ОТНОСИТСЯ. Рассмотрим, как решить эту задачу с помощью микрослужб.
 ms.date: 09/20/2018
-ms.openlocfilehash: 1157ea3c4ca8fc389769308cc0a1141b5f92bb88
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 10271d41dcd0574cd212663c2ee22ae06c2c1269
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72771430"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152628"
 ---
 # <a name="state-and-data-in-docker-applications"></a>Состояние и данные в приложениях Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "72771430"
 
 - [Служба хранилища Azure](https://azure.microsoft.com/documentation/services/storage/), предоставляющая геораспределенное хранилище для долгосрочного хранения данных контейнеров.
 
-- Удаленные реляционные базы данных, например [базы данных SQL Azure](https://azure.microsoft.com/services/sql-database/) или базы данных NoSQL, такие как [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction), или службы кэша, такие как [Redis](https://redis.io/).
+- Удаленные реляционные базы данных, например [базы данных SQL Azure](https://azure.microsoft.com/services/sql-database/) или базы данных NoSQL, такие как [Azure Cosmos DB](/azure/cosmos-db/introduction), или службы кэша, такие как [Redis](https://redis.io/).
 
 Из контейнера Docker:
 

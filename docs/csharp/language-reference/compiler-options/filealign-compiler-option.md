@@ -17,14 +17,15 @@ helpviewer_keywords:
 - -alignment compiler option [C#]
 - section alignment [C#]
 ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
-ms.openlocfilehash: d4abe6c3825de211d737f402a745c8953adca4b8
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 4b61217a3d6812ea3ab036f82d49bba05c20629e
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125713"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173247"
 ---
 # <a name="-filealign-c-compiler-options"></a>-filealign (параметры компилятора C#)
+
 Параметр **-filealign** позволяет указать размер разделов в выходном файле.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ ms.locfileid: "89125713"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `number`  
  Значение, которое задает размер разделов в выходном файле. Допустимые значения: 512, 1024, 2048, 4096 и 8192. Эти значения указаны в байтах.  
   
 ## <a name="remarks"></a>Примечания  
+
  Каждый раздел выравнивается по границе, кратной значению **-filealign**. Фиксированный размер по умолчанию не предусмотрен. Если значение **-filealign** не указано, среда CLR выбирает значение по умолчанию во время компиляции.  
   
  Указанный размер раздела влияет на размер выходного файла. Изменение размера раздела может применяться для программ, выполняющихся на небольших устройствах.  

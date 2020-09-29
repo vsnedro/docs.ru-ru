@@ -12,14 +12,15 @@ helpviewer_keywords:
 - /d compiler option [C#]
 - d compiler option [C#]
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
-ms.openlocfilehash: 3b7a1c6e92d2c60ce289f29044774c3aa42ca84f
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 74c9a23cd1b3a691063c2976a593c9b3a63ca618
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125882"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173273"
 ---
 # <a name="-define-c-compiler-options"></a>-define (параметры компилятора C#)
+
 Параметр **-define** определяет `name` как символ во всех файлах исходного кода программы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,10 +30,12 @@ ms.locfileid: "89125882"
 ```  
   
 ## <a name="arguments"></a>Аргументы  
+
  `name`, `name2`  
  Имя одного или нескольких символов, которые требуется определить.  
   
 ## <a name="remarks"></a>Remarks  
+
  Параметр компилятора **-define** действует так же, как директива препроцессора [#define](../preprocessor-directives/preprocessor-define.md), однако, в отличие от нее, применяется ко всем файлам проекта. Символ остается определенным в файле исходного кода до тех пор, пока определение не будет отменено с помощью директивы [#undef](../preprocessor-directives/preprocessor-undef.md) в файле исходного кода. При использовании параметра -define директива `#undef` в одном файле не действует для других файлов исходного кода в проекте.  
   
  Вы можете использовать символы, созданные этим параметром, с директивами [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md) и [#endif](../preprocessor-directives/preprocessor-endif.md) для условной компиляции исходных файлов.  

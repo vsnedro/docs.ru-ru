@@ -3,14 +3,15 @@ description: -target:winmdobj (параметры компилятора C#)
 title: -target:winmdobj (параметры компилятора C#)
 ms.date: 07/20/2015
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f
-ms.openlocfilehash: 66a4bddb34832705ad4779829e561afd9442be8f
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: a13e2da02698209a514e716d65c1df3508cf1508
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89139090"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171407"
 ---
 # <a name="-targetwinmdobj-c-compiler-options"></a>-target:winmdobj (параметры компилятора C#)
+
 Если используется параметр компилятора **-target:winmdobj**, компилятор создает промежуточный WINMDOBJ-файл, который можно преобразовать в двоичный WINMD-файл среды выполнения Windows. Затем WINMD-файл можно использовать в программах на языках JavaScript и C++ в дополнение к программам, использующим управляемые языки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -20,6 +21,7 @@ ms.locfileid: "89139090"
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Параметр **winmdobj** сигнализирует компилятору, что необходим промежуточный модуль. В результате Visual Studio компилирует библиотеку классов C# в виде WINMDOBJ-файла. Затем WINMDOBJ-файл можно обработать с помощью инструмента экспорта <xref:Microsoft.Build.Tasks.WinMDExp> для создания файла метаданных Windows (WINCMD-файл). WINMD-файл содержит код из исходной библиотеки и метаданные WinMD, используемые JavaScript, C++ и средой выполнения Windows.  
   
  Выходные данные файла, скомпилированного с помощью параметра **-target:winmdobj**, предназначены только для использования в качестве входных данных инструментом экспорта WimMDExp (на WINMDOBJ-файл нет прямой ссылки).  
@@ -41,6 +43,7 @@ ms.locfileid: "89139090"
  Дополнительные сведения об установке этого параметра компилятора программным путем см. в разделе <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## <a name="example"></a>Пример  
+
  Следующая команда компилирует `filename.cs` в промежуточный WINMDOBJ-файл.  
   
 ```console  

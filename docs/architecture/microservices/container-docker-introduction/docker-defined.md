@@ -2,12 +2,12 @@
 title: Что такое Docker?
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Что такое Docker?
 ms.date: 08/31/2018
-ms.openlocfilehash: a53845d3bbcf24f3eaeb98b9e08b6f35a023c30e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7d4b419f46f32fa4acdeb1ac7d5e0c2b2c199fc5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75337708"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172408"
 ---
 # <a name="what-is-docker"></a>Что такое Docker?
 
@@ -29,7 +29,7 @@ Docker предоставляет версию [Docker Community Edition (CE)](h
 
 - Контейнеры Hyper-V увеличивают изоляцию, обеспеченную контейнерами Windows Server, запуская каждый контейнер в оптимизированной виртуальной машине. В этой конфигурации ядро узла контейнера не используется совместно с контейнерами Hyper-V, что улучшает изоляцию.
 
-Образы для этих контейнеров создаются и работают одинаково. Различие заключается лишь в том, что для создания контейнера из образа с контейнером Hyper-V нужен дополнительный параметр. Дополнительные сведения см. в разделе [Контейнеры Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container).
+Образы для этих контейнеров создаются и работают одинаково. Различие заключается лишь в том, что для создания контейнера из образа с контейнером Hyper-V нужен дополнительный параметр. Дополнительные сведения см. в разделе [Контейнеры Hyper-V](/virtualization/windowscontainers/manage-containers/hyperv-container).
 
 ## <a name="comparing-docker-containers-with-virtual-machines"></a>Сравнение контейнеров Docker с виртуальными машинами
 

@@ -3,14 +3,15 @@ title: Операции создания (C#)
 description: Создание — это формирование новой последовательности значений. Узнайте о методах стандартных операторов запросов в LINQ в C#, которые выполняют создание.
 ms.date: 07/20/2015
 ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
-ms.openlocfilehash: 90b7913d60ced82c854f514d3644425f6ddd2571
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 07cb7dfc1cb5f06cc6e7800ec1e5e2dac015045b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103637"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165277"
 ---
 # <a name="generation-operations-c"></a>Операции создания (C#)
+
 Под созданием понимается формирование новых последовательностей значений.  
   
  В следующем разделе перечислены методы стандартных операторов запроса, которые выполняют создание.  

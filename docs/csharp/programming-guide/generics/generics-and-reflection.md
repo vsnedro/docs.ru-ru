@@ -6,14 +6,15 @@ helpviewer_keywords:
 - generics [C#], reflection
 - reflection [C#], generic types
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
-ms.openlocfilehash: 6e4387fe7e78cd0e970531ae42f323efa8f181db
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 5439412231ab1bf9ed523d6786af67984ab2d0c3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87299309"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91172974"
 ---
 # <a name="generics-and-reflection-c-programming-guide"></a>Универсальные типы и отражение (Руководство по программированию в C#)
+
 Поскольку среда CLR имеет доступ к данным универсальных типов во время выполнения, вы можете использовать отражение для получения сведений об универсальных типах точно так же, как и для неуниверсальных типов. Дополнительные сведения см. в разделе [Универсальные типы во время выполнения](./generics-in-the-run-time.md).  
   
  В .NET Framework 2.0 в класс <xref:System.Type> было добавлено несколько новых элементов для поддержки данных времени выполнения для универсальных типов. Дополнительные сведения о том, как использовать эти методы и свойства, см. в документации по этим классам. Пространство имен <xref:System.Reflection.Emit> также содержит новые члены, которые поддерживают универсальные типы. См. практическое руководство по [ Определение универсального типа с порождаемым отражением](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)  

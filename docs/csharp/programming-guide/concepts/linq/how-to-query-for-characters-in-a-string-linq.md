@@ -3,17 +3,19 @@ title: Запрос символов в строке (LINQ) (C#)
 description: В LINQ вы можете запрашивать строку как последовательность символов. В этом примере C# запрашивается строка, чтобы определить количество содержащихся в ней цифр.
 ms.date: 07/20/2015
 ms.assetid: 727a1be7-dbec-4ab8-b414-bc2d56feb6ff
-ms.openlocfilehash: 3512be7c30843fcd8e881eab59761706a84a3ac8
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 73288924d057e720a744b853998a52437b9db481
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104551"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91153941"
 ---
 # <a name="how-to-query-for-characters-in-a-string-linq-c"></a>Запрос символов в строке (LINQ) (C#)
+
 Поскольку класс <xref:System.String> реализует универсальный интерфейс <xref:System.Collections.Generic.IEnumerable%601>, любая строка может запрашиваться как последовательность символов. Однако это не слишком распространенный пример использования LINQ. Для сложных операций сопоставления шаблонов используйте класс <xref:System.Text.RegularExpressions.Regex>.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере запрашивается строка, чтобы определить количество содержащихся в ней цифр. Обратите внимание, что запрос "используется повторно" после первоначального выполнения. Это становится возможным, поскольку сам запрос не хранит фактические результаты.  
   
 ```csharp  
@@ -56,6 +58,7 @@ class QueryAString
 ```  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  Создайте проект консольного приложения C# с директивами `using` для пространств имен System.Linq и System.IO.  
   
 ## <a name="see-also"></a>См. также

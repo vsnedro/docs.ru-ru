@@ -2,12 +2,12 @@
 title: Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 description: Узнайте, как использовать интерфейс IHttpClientFactory, доступный в .NET Core, начиная с версии 2.1, для создания экземпляров `HttpClient`, чтобы облегчить их применение в ваших приложениях.
 ms.date: 08/31/2020
-ms.openlocfilehash: c54965a9bbb700cfb1f14150773c2df45d109c39
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: ae093ef960b2540bf4916bf72ad3bec51fa33ebe
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90678820"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152576"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 
@@ -23,7 +23,7 @@ ms.locfileid: "90678820"
 
 Кроме того, разработчики сталкиваются с проблемами при использовании общего экземпляра `HttpClient` в длительно выполняющихся процессах. Если экземпляр HttpClient создается в единичном виде или как статический объект, он не может обрабатывать изменения DNS, как описывается в этой [проблеме](https://github.com/dotnet/runtime/issues/18348) в репозитории GitHub dotnet/среды выполнения.
 
-Тем не менее эта проблема связана не с самим объектом `HttpClient`, а с [конструктором по умолчанию для HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor?view=netcore-3.1#System_Net_Http_HttpClient__ctor), поскольку он создает новый конкретный экземпляр <xref:System.Net.Http.HttpMessageHandler>, который является источником описываемых выше проблем, связанных с *нехваткой сокетов* и изменениями DNS.
+Тем не менее эта проблема связана не с самим объектом `HttpClient`, а с [конструктором по умолчанию для HttpClient](/dotnet/api/system.net.http.httpclient.-ctor?view=netcore-3.1#System_Net_Http_HttpClient__ctor), поскольку он создает новый конкретный экземпляр <xref:System.Net.Http.HttpMessageHandler>, который является источником описываемых выше проблем, связанных с *нехваткой сокетов* и изменениями DNS.
 
 Чтобы решить указанные выше проблемы и обеспечить возможность управления экземплярами `HttpClient`, в .NET Core 2.1 был представлен интерфейс <xref:System.Net.Http.IHttpClientFactory>, который можно использовать для настройки и создания экземпляров `HttpClient` в приложении путем внедрения зависимостей. Также этот интерфейс предоставляет расширения для ПО промежуточного слоя на основе Polly, что позволяет использовать преимущества делегирования обработчиков в HttpClient.
 

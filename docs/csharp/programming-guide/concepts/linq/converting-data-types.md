@@ -3,14 +3,15 @@ title: Преобразование типов данных (C#)
 description: Методы преобразования изменяют тип входных объектов. Ознакомьтесь с операциями преобразования в запросах LINQ в C#, такими как Enumerable.AsEnumerable и Enumerable.OfType.
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-ms.openlocfilehash: 3291690f9aaee945ca7feb04ebbc676db2612894
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: f9e3b354fd6eeba6564067550ea3821e4946d92f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105486"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91159141"
 ---
 # <a name="converting-data-types-c"></a>Преобразование типов данных (C#)
+
 Методы преобразования изменяют тип входных объектов.
 
  Операции преобразования в запросах LINQ удобны в различных ситуациях. Ниже приводятся некоторые примеры.
@@ -22,6 +23,7 @@ ms.locfileid: "87105486"
 - Методы <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> и <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType> можно использовать для принудительного немедленного выполнения запроса, не дожидаясь, пока этот запрос будет перечислен.
 
 ## <a name="methods"></a>Методы
+
  В следующей таблице перечислены методы стандартных операторов запросов, выполняющие преобразование типов данных.
 
  Методы преобразования в этой таблице, имена которых начинаются с "As", изменяют статический тип исходной коллекции, но не выполняют перечисление. Методы, имена которых начинаются с "To", перечисляют исходную коллекцию и помещают элементы в соответствующий тип коллекции.

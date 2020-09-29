@@ -7,14 +7,15 @@ helpviewer_keywords:
 - generic types [LINQ]
 - generics [LINQ]
 ms.assetid: 660e3799-25ca-462c-8c4a-8bce04fbb031
-ms.openlocfilehash: 98054a4a21704293faa1194dac342bc48aef138d
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: a71957eabea788fb06195df1ef026390947f013d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87165645"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170471"
 ---
 # <a name="linq-and-generic-types-c"></a>LINQ и универсальные типы (C#)
+
 Запросы LINQ основаны на универсальных типах, которые впервые появились в .NET Framework 2.0. Для того чтобы приступить к написанию запросов, не требуется глубокое знание универсальных типов. Тем не менее необходимо понимание двух основных принципов.  
   
 1. При создании экземпляра универсального класса коллекции, такого как <xref:System.Collections.Generic.List%601>, замените "T" типом объектов, которые будут храниться в списке. Например, список строк выражается как `List<string>`, а список объектов `Customer` — как `List<Customer>`. Универсальный список является строго типизированным и предоставляет ряд преимуществ по сравнению с коллекциями, которые хранят свои элементы как <xref:System.Object>. При попытке добавить `Customer` в `List<string>` будет выдана ошибка во время компиляции. Универсальные коллекции просты в использовании, поскольку нет необходимости выполнять приведение типов во время выполнения.  
@@ -24,6 +25,7 @@ ms.locfileid: "87165645"
  Дополнительные сведения об универсальных классах см. в разделе [Универсальные шаблоны](../../generics/index.md).  
   
 ## <a name="ienumerablet-variables-in-linq-queries"></a>Переменные IEnumerable<T\> в запросах LINQ  
+
  Переменные запроса LINQ типизированы как <xref:System.Collections.Generic.IEnumerable%601> или производный тип, например <xref:System.Linq.IQueryable%601>. Если появляется переменная запроса, которая типизируется как `IEnumerable<Customer>`, это просто означает, что запрос при выполнении выведет последовательность из нуля или более объектов `Customer`.  
   
  [!code-csharp[csLINQGettingStarted#34](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#34)]  
@@ -31,6 +33,7 @@ ms.locfileid: "87165645"
  Дополнительные сведения см. в разделе [Связи типов в операциях запроса LINQ](./type-relationships-in-linq-query-operations.md).  
   
 ## <a name="letting-the-compiler-handle-generic-type-declarations"></a>Передача обработки объявлений универсальных типов компилятору  
+
  При желании можно отказаться от обычного синтаксиса универсальных типов, используя ключевое слово [var](../../../language-reference/keywords/var.md). Ключевое слово `var` дает компилятору указание вывести тип переменной запроса путем поиска в источнике данных, указанном в предложении `from`. В следующем примере создается тот же скомпилированный код, что и в предыдущем примере:  
   
  [!code-csharp[csLINQGettingStarted#35](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#35)]  
