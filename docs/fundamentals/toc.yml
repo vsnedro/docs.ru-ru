@@ -929,6 +929,8 @@ items:
                         href: code-analysis/quality-rules/ca2249.md
               - name: Правила стиля кода
                 href: /visualstudio/ide/editorconfig-language-conventions
+          - name: Анализатор совместимости платформ
+            href: ../standard/analyzers/platform-compat-analyzer.md
           - name: Анализатор API
             href: ../standard/analyzers/api-analyzer.md
           - name: Анализатор переносимости
