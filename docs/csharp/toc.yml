@@ -5,7 +5,7 @@
     - name: Обзор
       displayName: get started
       href: getting-started/index.md
-    - name: Основы работы с языком C# и .NET.
+    - name: Основы работы с языком C# и .NET
       href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
 - name: Учебники
   items:
@@ -56,7 +56,7 @@
       href: tutorials/upgrade-to-nullable-references.md
     - name: Создание и использование асинхронных потоков
       href: tutorials/generate-consume-asynchronous-stream.md
-    - name: Расширение возможностей данных с помощью сопоставления шаблонов
+    - name: Создание алгоритмов на основе данных с сопоставлением шаблонов
       href: tutorials/pattern-matching.md
     - name: Консольное приложение
       href: tutorials/console-teleprompter.md
