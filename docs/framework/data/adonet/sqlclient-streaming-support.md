@@ -2,12 +2,12 @@
 title: Поддержка потоковой передачи SqlClient
 ms.date: 03/30/2017
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.openlocfilehash: 9dc7ee573bd011bd18d6c4b8bbd2d147b1fe907f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a396e3e172c63b0b71b085d4694184c42cc42f3e
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70791408"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91609249"
 ---
 # <a name="sqlclient-streaming-support"></a>Поддержка потоковой передачи SqlClient
 
@@ -20,11 +20,11 @@ ms.locfileid: "70791408"
 > [!WARNING]
 > Асинхронные вызовы не поддерживаются, если в приложении также используется ключевое слово строки соединения `Context Connection`.
 >
-> Элементы, добавленные для поддержки потоков, используются для получения данных из запросов и передачи параметров в запросы и хранимые процедуры. Функциональные возможности потоковой передачи данных позволяют решать задачи в основных сценариях OLTP и в сценариях переноса данных, а также применимы в средах переноса данных на территории предприятия и за его пределами.
+> Элементы, добавленные для поддержки потоков, используются для получения данных из запросов и передачи параметров в запросы и хранимые процедуры. Функция потоковой передачи решает основные сценарии миграции данных OLTP и миграций, которая применяется к локальным и локальным средам миграции данных.
 
 ## <a name="streaming-support-from-sql-server"></a>Поддержка потоковой передачи из SQL Server
 
-Поддержка потоковой передачи из SQL Server вводит новые функциональные <xref:System.Data.Common.DbDataReader> возможности в и <xref:System.Data.SqlClient.SqlDataReader> в классах для получения <xref:System.IO.Stream>объектов <xref:System.Xml.XmlReader>, и <xref:System.IO.TextReader> и реагирования на них. Эти классы используются для получения данных из запросов. В результате поддержка потоковой передачи из SQL Server устраняет сценарии OLTP и применяется к локальным и локальным средам.
+Поддержка потоковой передачи из SQL Server вводит новые функциональные возможности в <xref:System.Data.Common.DbDataReader> и в <xref:System.Data.SqlClient.SqlDataReader> классах для получения <xref:System.IO.Stream> <xref:System.Xml.XmlReader> объектов, и <xref:System.IO.TextReader> и реагирования на них. Эти классы используются для получения данных из запросов. В результате поддержка потоковой передачи из SQL Server устраняет сценарии OLTP и применяется к локальным и локальным средам.
 
 Следующие члены были добавлены в <xref:System.Data.SqlClient.SqlDataReader> , чтобы включить поддержку потоковой передачи из SQL Server:
 
@@ -50,13 +50,13 @@ ms.locfileid: "70791408"
 
 ## <a name="streaming-support-to-sql-server"></a>Поддержка потоковой передачи для SQL Server
 
-Поддержка потоковой передачи в SQL Server вводит новые функциональные <xref:System.Data.SqlClient.SqlParameter> возможности класса, чтобы он мог принимать и <xref:System.Xml.XmlReader>реагировать <xref:System.IO.Stream>на объекты <xref:System.IO.TextReader> , и. <xref:System.Data.SqlClient.SqlParameter> используется для передачи параметров в запросы и хранимые процедуры.
+Поддержка потоковой передачи в SQL Server вводит новые функциональные возможности <xref:System.Data.SqlClient.SqlParameter> класса, чтобы он мог принимать и реагировать на <xref:System.Xml.XmlReader> <xref:System.IO.Stream> объекты, и <xref:System.IO.TextReader> . <xref:System.Data.SqlClient.SqlParameter> используется для передачи параметров в запросы и хранимые процедуры.
 
 Удаление объекта <xref:System.Data.SqlClient.SqlCommand> или вызов <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> должны приводить к отмене любой потоковой операции. Если приложение передает <xref:System.Threading.CancellationToken>, отмена не гарантируется.
 
 Следующие типы <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> могут принимать объект <xref:System.Data.SqlClient.SqlParameter.Value%2A> из <xref:System.IO.Stream>:
 
-- **Binary**
+- **Двоичный**
 
 - **VarBinary**
 
@@ -68,9 +68,9 @@ ms.locfileid: "70791408"
 
 - **NVarChar**
 
-- **XML**
+- **Xml**
 
-Тип **XML** <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> примет значение <xref:System.Data.SqlClient.SqlParameter.Value%2A> .<xref:System.Xml.XmlReader>
+Тип **XML** примет <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> значение <xref:System.Data.SqlClient.SqlParameter.Value%2A> <xref:System.Xml.XmlReader> .
 
 <xref:System.Data.SqlClient.SqlParameter.SqlValue%2A> может принимать значения типа <xref:System.Xml.XmlReader>, <xref:System.IO.TextReader> и <xref:System.IO.Stream>.
 
@@ -522,6 +522,6 @@ namespace StreamingFromServerToAnother {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)
