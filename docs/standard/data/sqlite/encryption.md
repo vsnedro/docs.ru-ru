@@ -1,13 +1,13 @@
 ---
 title: Шифрование
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Узнайте, как зашифровать файл базы данных.
-ms.openlocfilehash: ccdd4b6b8642b3cde1c2667c9ca432a9b0ef21f2
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 1b33e1510a269aba87caba2cd39faab33791aa55
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75450486"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203414"
 ---
 # <a name="encryption"></a>Шифрование
 
@@ -37,13 +37,16 @@ Install-Package SQLitePCLRaw.bundle_e_sqlcipher
 
 ## <a name="specify-the-key"></a>Выбор ключа
 
-Чтобы включить шифрование, укажите ключ с помощью ключевого слова строки подключения `Password`. Используйте <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder>, чтобы добавить или обновить значение из входных данных пользователя и избежать атак путем внедрения строки подключения.
+Чтобы включить шифрование в новой базе данных, укажите ключ с помощью ключевого слова строки подключения `Password`. Используйте <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder>, чтобы добавить или обновить значение из входных данных пользователя и избежать атак путем внедрения строки подключения.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
+> [!TIP]
+> Метод шифрования и расшифровки существующих баз данных зависит от используемого решения. Например, предположим, что вам нужно использовать функцию `sqlcipher_export()` в SQLCipher. Дополнительные сведения см. в документации по решению.
+
 ## <a name="rekeying-the-database"></a>Смена ключей базы данных
 
-Если вам нужно изменить ключ шифрования базы данных, выдайте инструкцию `PRAGMA rekey`. Чтобы расшифровать базу данных, укажите `NULL`.
+Если вам нужно изменить ключ зашифрованной базы данных, выдайте инструкцию `PRAGMA rekey`.
 
 К сожалению, SQLite не поддерживает параметры в инструкциях `PRAGMA`. Вместо этого используйте функцию `quote()`, чтобы предотвратить внедрение кода SQL.
 

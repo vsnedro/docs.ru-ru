@@ -2,12 +2,12 @@
 title: Критические изменения в области шифрования
 description: Список критических изменений в области шифрования в .NET Core.
 ms.date: 04/22/2020
-ms.openlocfilehash: 621a3dad28b67ee33056dce3df0379efaeb90776
-ms.sourcegitcommit: a69d548f90a03e105ee6701236c38390ecd9ccd1
+ms.openlocfilehash: 667d983fc6f2592c2169f97d328cd7947c8bcc81
+ms.sourcegitcommit: 1274a1a4a4c7e2eaf56b38da76ef7cec789726ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90065112"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91406155"
 ---
 # <a name="cryptography-breaking-changes"></a>Критические изменения в области шифрования
 
@@ -15,6 +15,7 @@ ms.locfileid: "90065112"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Blazor WebAssembly не поддерживает интерфейсы API System.Security.Cryptography](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly) | 5,0 |
 | [Класс System.Security.Cryptography.Oid функционально доступен только для инициализации](#systemsecuritycryptographyoid-is-functionally-init-only) | 5,0 |
 | [Синтаксис BEGIN TRUSTED CERTIFICATE больше не поддерживается в Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |
 | [Для EnvelopedCms по умолчанию используется шифрование AES-256](#envelopedcms-defaults-to-aes-256-encryption) | 3.0 |
@@ -24,6 +25,10 @@ ms.locfileid: "90065112"
 | [Логический параметр SignedCms.ComputeSignature учитывается](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE[Cryptography APIs not supported on Blazor WebAssembly](~/includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
+
+***
 
 [!INCLUDE [cryptography-oid-init-only](../../../includes/core-changes/cryptography/5.0/cryptography-oid-init-only.md)]
 

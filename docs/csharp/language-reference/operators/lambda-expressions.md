@@ -1,7 +1,7 @@
 ---
 title: Лямбда-выражения — Справочник по C#
 description: Узнайте о лямбда-выражениях. Существуют лямбда-выражения, в которых в качестве тела используется выражение, а также лямбда-операторы, в которых в качестве тела используется блок операторов.
-ms.date: 07/29/2019
+ms.date: 09/25/2020
 helpviewer_keywords:
 - lambda expressions [C#]
 - outer variables [C#]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: 7f80c1a5d9136609935b25b5cce3792e80b9ac94
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a3a753ccea45193c57f31453d7318c14f4898864
+ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90536448"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91247713"
 ---
 # <a name="lambda-expressions-c-reference"></a>Лямбда-выражения (Справочник по C#)
 
@@ -50,33 +50,17 @@ ms.locfileid: "90536448"
   
 ## <a name="expression-lambdas"></a>Выражения-лямбды
 
-Лямбда-выражение с выражением с правой стороны оператора `=>` называется *выражением лямбда*. Выражения-лямбды широко используются при конструировании [деревьев выражений](../../programming-guide/concepts/expression-trees/index.md). Выражения-лямбды возвращают результат выражения и принимают следующую основную форму.
+Лямбда-выражение с выражением с правой стороны оператора `=>` называется *выражением лямбда*. Выражения-лямбды возвращают результат выражения и принимают следующую основную форму.
 
 ```csharp
 (input-parameters) => expression
 ```
 
-Если лямбда-выражение имеет только один входной параметр, скобки можно не ставить; во всех остальных случаях они обязательны.
-
-Нулевое количество входных параметры задается пустыми скобками:  
-
-[!code-csharp[zero parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ZeroParameters)]
-
-Два и более входных параметра разделяются запятыми и заключаются в скобки:
-
-[!code-csharp[two parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#TwoParameters)]
-
-Иногда компилятору не удается определить входные типы. Вы можете указать типы данных в явном виде, как показано в следующем примере:
-
-[!code-csharp[explicitly typed parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ExplicitlyTypedParameters)]
-
-Для входных параметров все типы нужно задать либо в явном, либо в неявном виде. В противном случае компилятор выдает ошибку [CS0748](../../misc/cs0748.md).
-
-Текст выражения лямбды может состоять из вызова метода. Но при создании деревьев выражений, которые вычисляются вне контекста поддержки общеязыковой среды выполнения .NET, например в SQL Server, вызовы методов не следует использовать в лямбда-выражениях. Эти методы не имеют смысла вне контекста среды CLR .NET.
+Текст выражения лямбды может состоять из вызова метода. Но при создании [деревьев выражений](../../programming-guide/concepts/expression-trees/index.md), которые вычисляются вне контекста поддержки общеязыковой среды выполнения .NET, например в SQL Server, вызовы методов не следует использовать в лямбда-выражениях. Эти методы не имеют смысла вне контекста среды CLR .NET.
 
 ## <a name="statement-lambdas"></a>Лямбды операторов
 
-Лямбда оператора напоминает выражение-лямбду, за исключением того, что оператор (или операторы) заключается в фигурные скобки:
+Лямбда-инструкция напоминает лямбда-выражение, за исключением того, что инструкции заключаются в фигурные скобки:
 
 ```csharp  
 (input-parameters) => { <sequence-of-statements> }
@@ -84,10 +68,39 @@ ms.locfileid: "90536448"
 
 Тело лямбды оператора может состоять из любого количества операторов; однако на практике обычно используется не более двух-трех.
 
-[!code-csharp-interactive[statement lambda](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#StatementLambda)]
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatementLambda":::
 
-Лямбды операторов нельзя использовать для создания деревьев выражений.
-  
+Лямбда-инструкции нельзя использовать для создания деревьев выражений.
+
+## <a name="input-parameters-of-a-lambda-expression"></a>Входные параметры лямбда-выражения
+
+Входные параметры лямбда-выражения заключаются в круглые скобки. Нулевое количество входных параметры задается пустыми скобками:  
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetZeroParameters":::
+
+Если лямбда-выражение имеет только один входной параметр, круглые скобки необязательны:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetOneParameter":::
+
+Два и более входных параметра разделяются запятыми:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetTwoParameters":::
+
+Иногда компилятор не может вывести типы входных параметров. Вы можете указать типы данных в явном виде, как показано в следующем примере:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
+
+Для входных параметров все типы нужно задать либо в явном, либо в неявном виде. В противном случае компилятор выдает ошибку [CS0748](../../misc/cs0748.md).
+
+Начиная с C# 9.0, вы можете использовать [пустые переменные](../../discards.md), чтобы указать два или более входных параметра лямбда-выражения, которые не используются в выражении:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
+
+Параметры пустой переменной лямбда-выражения полезны, если вы используете лямбда-выражение для [указания обработчика событий](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+
+> [!NOTE]
+> Если только один входной параметр имеет имя `_`, для обеспечения обратной совместимости `_` рассматривается как имя этого параметра в лямбда-выражении.
+
 ## <a name="async-lambdas"></a>Асинхронные лямбда-выражения
 
 С помощью ключевых слов [async](../keywords/async.md) и [await](await.md) можно легко создавать лямбда-выражения и операторы, включающие асинхронную обработку. Например, в следующем примере Windows Forms содержится обработчик событий, который вызывает асинхронный метод `ExampleMethodAsync`и ожидает его.
@@ -218,15 +231,22 @@ customers.Where(c => c.City == "London");
 
 - Лямбда-выражение не может содержать операторы [goto](../keywords/goto.md), [break](../keywords/break.md) или [continue](../keywords/continue.md), если целевой объект этого оператора перехода находится за пределами блока лямбда-выражения. Если целевой объект находится внутри блока, использование оператора перехода за пределами лямбда-выражения также будет ошибкой.
 
+Начиная с C# 9.0, вы можете применять модификатор `static` к лямбда-выражению для предотвращения непреднамеренного сохранения локальных переменных или состояния экземпляров лямбда-выражением:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
+
+Статическое лямбда-выражение не может сохранять локальные переменные или состояние экземпляров из охватывающих областей, но может ссылаться на статические элементы и определения констант.
+
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
 Дополнительные сведения см. в разделе [Выражения анонимных функций](~/_csharplang/spec/expressions.md#anonymous-function-expressions) в [спецификации языка C#](~/_csharplang/spec/introduction.md).
 
-## <a name="featured-book-chapter"></a>Важная глава книги
+Дополнительные сведения о функциях, добавленных в C# 9.0, см. в следующих заметках о функциях:
 
-[Делегаты, события и лямбда-выражения](/previous-versions/visualstudio/visual-studio-2008/ff518994(v=orm.10)) в [справочном руководстве по C# 3.0, третье издание. Более 250 решений для программистов на C# 3.0](/previous-versions/visualstudio/visual-studio-2008/ff518995(v=orm.10))  
-  
-## <a name="see-also"></a>См. также
+- [Параметры удаления лямбда-выражения](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+- [Статические анонимные функции](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+
+## <a name="see-also"></a>См. также раздел
 
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)

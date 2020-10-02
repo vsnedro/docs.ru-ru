@@ -1,16 +1,16 @@
 ---
 description: Справочник по C#. Оператор delegate
 title: Справочник по C#. Оператор delegate
-ms.date: 07/18/2019
+ms.date: 09/25/2020
 helpviewer_keywords:
 - delegate [C#]
 - anonymous method [C#]
-ms.openlocfilehash: 1dfaaf40c0f5a19534adef3be7e3c917bc95c4a8
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: db2bf673db12e4a10741a26112820726a4b8aaee
+ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89122255"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91247661"
 ---
 # <a name="delegate-operator-c-reference"></a>Справочник по C#. Оператор delegate
 
@@ -30,6 +30,18 @@ ms.locfileid: "89122255"
 [!code-csharp-interactive[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
 
 Это единственная функция анонимных методов, которая не поддерживается лямбда-выражениями. Во всех остальных случаях лямбда-выражение является предпочтительным способом написания встроенного кода.
+
+Начиная с C# 9.0, можно использовать [отмены](../../discards.md), чтобы указать два или более входных параметра анонимного метода, которые не используются методом:
+
+:::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
+
+Если только один параметр имеет имя `_`, для обеспечения обратной совместимости `_` рассматривается как имя этого параметра в анонимном методе.
+
+Кроме того, начиная с C# 9.0 можно использовать модификатор `static` в объявлении анонимного метода:
+
+:::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetStatic" :::
+
+Статический анонимный метод не может записывать локальные переменные или состояние экземпляра из охватывающих областей.
 
 Вы также можете использовать ключевое слово `delegate` для объявления [типа делегата](../builtin-types/reference-types.md#the-delegate-type).
 

@@ -1,39 +1,41 @@
 ---
-title: Обзор пакета SDK для проекта .NET Core
+title: Обзор пакета SDK для проекта .NET
 titleSuffix: ''
-description: Сведения о пакетах SDK для проектов .NET Core.
-ms.date: 02/02/2020
+description: Сведения о пакетах SDK для проектов .NET.
+ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 873c06007307c5892c4828f987486b4dd98dc9ae
-ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
+ms.openlocfilehash: 6b6651f674f09d5d0d18ddb873096037ad3b2ba5
+ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88187918"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91247581"
 ---
-# <a name="net-core-project-sdks"></a>Пакеты SDK для проектов .NET Core
+# <a name="net-project-sdks"></a>Пакеты SDK для проектов .NET
 
-Проекты .NET Core связаны с пакетом средств разработки программного обеспечения (SDK). Каждый *пакет SDK для проекта* является набором [целевых объектов](/visualstudio/msbuild/msbuild-targets) MSBuild и связанных [задач](/visualstudio/msbuild/msbuild-tasks), которые отвечают за компиляцию, упаковку и публикацию кода. Проект, который ссылается на пакет SDK для проекта, иногда называется *проектом в стиле пакета SDK*.
+Проекты .NET Core и NET 5.0 и более поздних версий связаны с пакетом средств разработки программного обеспечения (SDK). Каждый *пакет SDK для проекта* является набором [целевых объектов](/visualstudio/msbuild/msbuild-targets) MSBuild и связанных [задач](/visualstudio/msbuild/msbuild-tasks), которые отвечают за компиляцию, упаковку и публикацию кода. Проект, который ссылается на пакет SDK для проекта, иногда называется *проектом в стиле пакета SDK*.
 
 ## <a name="available-sdks"></a>Доступные пакеты SDK
 
-Для .NET Core доступны следующие пакеты SDK:
+Доступны следующие пакеты SDK:
 
 | ID | Описание | Репозиторий|
 | - | - | - |
-| `Microsoft.NET.Sdk` | Пакет SDK для .NET Core | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | [Веб-пакет SDK](/aspnet/core/razor-pages/web-sdk) для .NET Core | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Razor` | [Пакет SDK для Razor](/aspnet/core/razor-pages/sdk) в .NET Core |
-| `Microsoft.NET.Sdk.Worker` | Пакет SDK для службы рабочей роли в .NET Core |
-| `Microsoft.NET.Sdk.WindowsDesktop` | Пакет SDK для WinForms и WPF в .NET Core |
+| `Microsoft.NET.Sdk` | Пакет SDK для .NET | <https://github.com/dotnet/sdk> |
+| `Microsoft.NET.Sdk.Web` | [Веб-пакет SDK](/aspnet/core/razor-pages/web-sdk) для .NET | <https://github.com/dotnet/sdk> |
+| `Microsoft.NET.Sdk.Razor` | [Пакет SDK Razor](/aspnet/core/razor-pages/sdk) для .NET |
+| `Microsoft.NET.Sdk.Worker` | Пакет SDK для службы рабочей роли в .NET |
+| `Microsoft.NET.Sdk.WindowsDesktop` | Пакет SDK для WinForms и WPF\* | <https://github.com/dotnet/winforms> и <https://github.com/dotnet/wpf> |
 
-Пакет SDK для .NET Core является базовым пакетом SDK для .NET Core. Другие пакеты SDK ссылаются на пакет SDK для .NET Core, а проекты, связанные с другими пакетами SDK, имеют все доступные им свойства пакета SDK для .NET Core. Например, веб-пакет SDK зависит от пакета SDK для .NET Core и пакета SDK для Razor.
+Пакет SDK для .NET является базовым пакетом SDK для .NET. Другие пакеты SDK ссылаются на пакет SDK для .NET, а проекты, связанные с другими пакетами SDK, имеют все доступные им свойства пакета SDK для .NET. Например, веб-пакет SDK зависит от пакета SDK для .NET и пакета SDK для Razor.
 
 Можно также создать собственный пакет SDK и распространять его с помощью NuGet.
 
+\* Начиная с .NET 5.0, в проектах Windows Forms и Windows Presentation Foundation (WPF) необходимо указывать пакет SDK для .NET (`Microsoft.NET.Sdk`), а не `Microsoft.NET.Sdk.WindowsDesktop`. Если для параметра `TargetFramework` в таких проектах установить значение `net5.0-windows`, а для параметра `UseWPF` или `UseWindowsForms` — значение `true`, импорт пакета SDK для Windows Desktop будет выполняться автоматически. Если проект предназначен для .NET 5.0 или более поздней версии и в нем указан пакет SDK `Microsoft.NET.Sdk.WindowsDesktop`, при сборке отобразится предупреждение NETSDK1137.
+
 ## <a name="project-files"></a>Файлы проекта
 
-В основе проектов .NET Core лежит формат [MSBuild](/visualstudio/msbuild/msbuild). Файлы проекта с такими расширениями, как *CPROJ* для проектов C# и *FPROJ* для проектов F#, имеют формат XML. Корневым элементом файла проекта MSBuild является элемент [Project](/visualstudio/msbuild/project-element-msbuild). Элемент `Project` имеет необязательный атрибут `Sdk`, указывающий, какой пакет SDK (и версию) следует использовать. Чтобы использовать средства .NET Core и выполнить сборку кода, задайте в качестве значения атрибута `Sdk` один из идентификаторов, указанных в таблице[Доступные пакеты SDK](#available-sdks).
+В основе проектов .NET лежит формат [MSBuild](/visualstudio/msbuild/msbuild). Файлы проекта с такими расширениями, как *CPROJ* для проектов C# и *FPROJ* для проектов F#, имеют формат XML. Корневым элементом файла проекта MSBuild является элемент [Project](/visualstudio/msbuild/project-element-msbuild). Элемент `Project` имеет необязательный атрибут `Sdk`, указывающий, какой пакет SDK (и версию) следует использовать. Чтобы использовать средства .NET и выполнить сборку кода, задайте в качестве значения атрибута `Sdk` один из идентификаторов, указанных в таблице[Доступные пакеты SDK](#available-sdks).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -58,7 +60,7 @@ ms.locfileid: "88187918"
 </Project>
 ```
 
-Указание пакета SDK одним из этих способов значительно упрощает файлы проекта для .NET Core. На этапе оценки проекта MSBuild добавляет неявные директивы импорта для `Sdk.props` в начале и для `Sdk.targets` в конце файла проекта.
+Указание пакета SDK одним из этих способов значительно упрощает файлы проекта для .NET. На этапе оценки проекта MSBuild добавляет неявные директивы импорта для `Sdk.props` в начале и для `Sdk.targets` в конце файла проекта.
 
 ```xml
 <Project>
@@ -85,7 +87,7 @@ ms.locfileid: "88187918"
 
 В пакете SDK определены стандартные включения и исключения для элементов компиляции, внедренных ресурсов и элементов `None`. В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Это позволяет уменьшить файлы проекта и без труда понимать их, а при необходимости даже вносить правки вручную.
 
-В следующей таблице показано, какие элементы и [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)) включены и исключены в пакете SDK для .NET Core:
+В следующей таблице показано, какие элементы и [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)) включены в пакет SDK для .NET и исключены из него:
 
 | Элемент           | Стандартная маска включения                              | Стандартная маска исключения                                                  | Стандартная маска удаления              |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
@@ -132,11 +134,11 @@ ms.locfileid: "88187918"
 
 ## <a name="customize-the-build"></a>Настройка сборки
 
-Существует несколько способов [настройки сборки](/visualstudio/msbuild/customize-your-build). Может потребоваться переопределить свойство, передав его в качестве аргумента в команду [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) или [dotnet](../tools/index.md). Можно также добавить свойство в файл проекта или в файл *Directory.Build.props*. Список полезных свойств для проектов .NET Core см. в статье [Свойства MSBuild для проектов пакета SDK для .NET Core](msbuild-props.md).
+Существует несколько способов [настройки сборки](/visualstudio/msbuild/customize-your-build). Может потребоваться переопределить свойство, передав его в качестве аргумента в команду [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) или [dotnet](../tools/index.md). Можно также добавить свойство в файл проекта или в файл *Directory.Build.props*. Список полезных свойств для проектов .NET см. в статье [Справочник по MSBuild для проектов пакета SDK для .NET](msbuild-props.md).
 
 ### <a name="custom-targets"></a>Пользовательские целевые объекты
 
-В проектах .NET Core доступна возможность упаковки пользовательских целевых объектов и свойства MSBuild для использования в проектах, применяющих этот пакет. Используйте этот тип расширяемости, если нужно выполнить следующие задачи:
+В проектах .NET доступна возможность упаковки пользовательских целевых объектов MSBuild и свойств для использования в проектах, применяющих этот пакет. Используйте этот тип расширяемости, если нужно выполнить следующие задачи:
 
 - расширить процесс сборки;
 - получить доступ к артефактам процесса сборки, таким как созданные файлы;

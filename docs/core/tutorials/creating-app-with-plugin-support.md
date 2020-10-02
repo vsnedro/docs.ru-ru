@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение .NET Cor
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 10/16/2019
-ms.openlocfilehash: eae792ddaa6655bfdcd932d3cb695f9dafa68130
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ce7ac826feaf4542307abefde6d40a319d78e423
+ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240848"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91247596"
 ---
 # <a name="create-a-net-core-application-with-plugins"></a>Создание приложения .NET Core с подключаемыми модулями
 
@@ -109,7 +109,7 @@ namespace AppWithPlugin
 
 Этот интерфейс `ICommand` является интерфейсом, который будут реализовывать все подключаемые модули.
 
-Теперь, когда интерфейс `ICommand` определен, в проект приложения можно добавить другие элементы. Добавьте ссылку из проекта `AppWithPlugin` на проект `PluginBase` с командой `dotnet add AppWithPlugin\AppWithPlugin.csproj reference PluginBase\PluginBase.csproj` из корневой папки.
+Теперь, когда интерфейс `ICommand` определен, в проект приложения можно добавить другие элементы. Добавьте ссылку из проекта `AppWithPlugin` на проект `PluginBase` с командой `dotnet add AppWithPlugin/AppWithPlugin.csproj reference PluginBase/PluginBase.csproj` из корневой папки.
 
 Замените комментарий `// Load commands from plugins` на следующий фрагмент кода, чтобы он мог загрузить подключаемые модули из указанных путей к файлам:
 
@@ -261,7 +261,7 @@ static Assembly LoadPlugin(string relativePath)
 
 Аналогично, элемент `<ExcludeAssets>runtime</ExcludeAssets>` также важен, если `PluginBase` ссылается на другие пакеты. Этот параметр действует так же, как `<Private>false</Private>`, но используется в ссылках на пакеты, которые могут содержать проект `PluginBase` или одну из его зависимостей.
 
-Теперь, когда проект `HelloPlugin` завершен, нужно обновить проект `AppWithPlugin`, чтобы знать, где находится подключаемый модуль `HelloPlugin`. После комментария `// Paths to plugins to load` добавьте `@"HelloPlugin\bin\Debug\netcoreapp3.0\HelloPlugin.dll"` как элемент массива `pluginPaths`.
+Теперь, когда проект `HelloPlugin` завершен, нужно обновить проект `AppWithPlugin`, чтобы знать, где находится подключаемый модуль `HelloPlugin`. После комментария `// Paths to plugins to load` добавьте `@"HelloPlugin\bin\Debug\netcoreapp3.0\HelloPlugin.dll"` (этот путь зависит от используемой версии .NET Core) как элемент массива `pluginPaths`.
 
 ## <a name="plugin-with-library-dependencies"></a>Подключаемый модуль с зависимостями библиотек
 

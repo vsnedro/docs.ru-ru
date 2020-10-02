@@ -2,12 +2,12 @@
 title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
 ms.date: 06/08/2020
-ms.openlocfilehash: f49974e1b918424ae5b5d7f3969f52c371e37154
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 6ae8f6637319cd2c8c24f3e673fb6094f36b9f2f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359172"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91180458"
 ---
 # <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio-code"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio Code
 
@@ -120,7 +120,7 @@ ms.locfileid: "89359172"
    Test Run Successful.
    Total tests: 3
         Passed: 3
-   Total time: 5.1116 Seconds
+    Total time: 5.1116 Seconds
    ```
 
 ## <a name="handle-test-failures"></a>Обработка сбоев теста
@@ -150,14 +150,14 @@ ms.locfileid: "89359172"
      Error Message:
       Assert.IsFalse failed. Expected for 'Error': false; Actual: True
      Stack Trace:
-     at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper()
-       in C:\Projects\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
+        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\
+   Projects\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
 
    Test Run Failed.
    Total tests: 3
         Passed: 2
         Failed: 1
-   Total time: 1.7825 Seconds
+    Total time: 1.7825 Seconds
    ```
 
 1. Удалите строку "Error", которую вы добавили на шаге 1. Еще раз запустите тест. Теперь тесты будут пройдены.
@@ -173,6 +173,12 @@ ms.locfileid: "89359172"
    ```
 
    Все тесты будут пройдены.
+
+## <a name="debug-tests"></a>Отладка тестов
+
+Если в качестве IDE вы используете Visual Studio Code, то можете следовать инструкциям из руководства по [отладке консольного приложения .NET Core с помощью Visual Studio Code](debugging-with-visual-studio-code.md), чтобы выполнить отладку кода с применением проекта модульного теста. Вместо запуска проекта приложения *ShowCase* , откройте *StringLibraryTest/UnitTest1.cs* и выберите элемент **Выполнить все тесты** между строками 7 и 8. Если вы не можете найти его, нажмите клавиши <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>P</kbd>, чтобы открыть палитру команд, и введите команду **перезагрузки окна**.
+
+Visual Studio Code запускает тестовый проект с присоединенным отладчиком. Выполнение будет прервано в любой точке останова, добавленной в тестовый проект или базовый код библиотеки.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

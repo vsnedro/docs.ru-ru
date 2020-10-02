@@ -1,22 +1,22 @@
 ---
 title: Свойства MSBuild для Microsoft.NET.Sdk
-description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET Core.
+description: Справочник по свойствам и элементам MSBuild, распознаваемым пакетом SDK для .NET.
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: c1093a0acd5b75ae6478767d690966a30fe84a31
-ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.openlocfilehash: ac5d082acae582352680782deadb71a86f977f3b
+ms.sourcegitcommit: 2e4adc490c1d2a705a0592b295d606b10b9f51f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89656266"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91354457"
 ---
-# <a name="msbuild-reference-for-net-core-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET Core
+# <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
-Эта страница содержит справочные сведения о свойствах и элементах MSBuild, которые вы можете использовать для настройки проектов .NET Core.
+Эта страница содержит справочные сведения о свойствах и элементах MSBuild, которые вы можете использовать для настройки проектов .NET.
 
 > [!NOTE]
-> Работа над этой страницей еще не завершена, поэтому здесь приведены лишь некоторые полезные свойства MSBuild для пакета SDK для .NET Core. Список стандартных свойств см. в статье [Общие свойства MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
+> Работа над этой страницей еще не завершена, поэтому здесь приведены лишь некоторые полезные свойства MSBuild для пакета SDK для .NET. Список стандартных свойств см. в статье [Общие свойства MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
 
 ## <a name="framework-properties"></a>Свойства платформы
 
@@ -123,7 +123,7 @@ ms.locfileid: "89656266"
 
 ### <a name="useapphost"></a>UseAppHost
 
-Свойство `UseAppHost` было представлено в пакете SDK для .NET Core.версии 2.1.400. Оно контролирует создание собственного исполняемого файла для развертывания. Этот файл требуется для автономных развертываний.
+Свойство `UseAppHost` было представлено в пакете SDK для .NET версии 2.1.400. Оно контролирует создание собственного исполняемого файла для развертывания. Этот файл требуется для автономных развертываний.
 
 В .NET Core 3.0 и более поздних версиях зависимый от платформы исполняемый файл создается по умолчанию. Задайте свойству `UseAppHost` значение `false`, чтобы отключить создание исполняемого файла.
 
@@ -133,7 +133,7 @@ ms.locfileid: "89656266"
 </PropertyGroup>
 ```
 
-Дополнительные сведения о развертывании см. в статье [Развертывание приложений .NET Core](../deploying/index.md).
+Дополнительные сведения см. в статье о [развертывании приложений .NET](../deploying/index.md).
 
 ## <a name="compile-properties"></a>Свойства компиляции
 
@@ -147,7 +147,7 @@ ms.locfileid: "89656266"
 > [!NOTE]
 > Если для `EmbeddedResource` элемента заданы метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого файла ресурсов будет создаваться на основе таких метаданных.
 
-По умолчанию для нового проекта .NET Core этому свойству задается значение `true`. Если задано значение `false` и для элемента `EmbeddedResource` в файле проекта не указаны метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого ресурса будет основано на имени корневого пространства имен проекта и относительном пути к файлу *.resx*. Дополнительные сведения об определение имени файла манифеста см. [здесь](../resources/manifest-file-names.md).
+По умолчанию для нового проекта .NET этому свойству задается значение `true`. Если задано значение `false` и для элемента `EmbeddedResource` в файле проекта не указаны метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого ресурса будет основано на имени корневого пространства имен проекта и относительном пути к файлу *.resx*. Дополнительные сведения об определение имени файла манифеста см. [здесь](../resources/manifest-file-names.md).
 
 ```xml
 <PropertyGroup>
@@ -190,7 +190,7 @@ ms.locfileid: "89656266"
 
 ### <a name="analysismode"></a>AnalysisMode
 
-Начиная с .NET 5.0 RC2 пакет SDK для .NET поставляется со всеми [правилами качества кода "CA"](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). По умолчанию в качестве предупреждений сборки включены только [некоторые правила](../../fundamentals/productivity/code-analysis.md#enabled-rules). Свойство `AnalysisMode` позволяет настроить набор правил, включенных по умолчанию. Можно либо переключиться на более агрессивный (неявный) режим анализа, либо более консервативный (явный) режим анализа. Например, если вы хотите включить все правила по умолчанию как предупреждения сборки, установите значение `AllEnabledByDefault`.
+Начиная с .NET 5.0 RC2 пакет SDK для .NET поставляется со всеми [правилами качества кода "CA"](../../fundamentals/code-analysis/quality-rules/index.md). По умолчанию в качестве предупреждений сборки включены только [некоторые правила](../../fundamentals/code-analysis/overview.md#enabled-rules). Свойство `AnalysisMode` позволяет настроить набор правил, включенных по умолчанию. Можно либо переключиться на более агрессивный (неявный) режим анализа, либо более консервативный (явный) режим анализа. Например, если вы хотите включить все правила по умолчанию как предупреждения сборки, установите значение `AllEnabledByDefault`.
 
 ```xml
 <PropertyGroup>
@@ -203,12 +203,12 @@ ms.locfileid: "89656266"
 | Значение | Значение |
 |-|-|
 | `Default` | Режим по умолчанию, при котором определенные правила включаются в виде предупреждений сборки, некоторые правила включаются в качестве предложений интегрированной среды разработки Visual Studio, а остальные отключаются. |
-| `AllEnabledByDefault` | Агрессивный или неявный режим означает, что все правила по умолчанию включены как предупреждения сборки. Вы можете выборочно [отказаться](../../fundamentals/productivity/configure-code-analysis-rules.md) от отдельных правил, чтобы отключить их. |
-| `AllDisabledByDefault` | Консервативный или явный режим означает, что все правила по умолчанию отключены. Можно выборочно [принять](../../fundamentals/productivity/configure-code-analysis-rules.md) отдельные правила, чтобы включить их. |
+| `AllEnabledByDefault` | Агрессивный или неявный режим означает, что все правила по умолчанию включены как предупреждения сборки. Вы можете выборочно [отказаться](../../fundamentals/code-analysis/configuration-options.md) от отдельных правил, чтобы отключить их. |
+| `AllDisabledByDefault` | Консервативный или явный режим означает, что все правила по умолчанию отключены. Можно выборочно [принять](../../fundamentals/code-analysis/configuration-options.md) отдельные правила, чтобы включить их. |
 
 ### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
 
-Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа качества кода (CAxxxx) как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа качества кода .NET](../../fundamentals/productivity/code-analysis.md#code-quality-analysis) также обрабатываются как ошибки. Если вы не хотите, чтобы предупреждения качества кода обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
+Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа качества кода (CAxxxx) как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа качества кода .NET](../../fundamentals/code-analysis/overview.md#code-quality-analysis) также обрабатываются как ошибки. Если вы не хотите, чтобы предупреждения качества кода обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
 
 ```xml
 <PropertyGroup>
@@ -218,7 +218,7 @@ ms.locfileid: "89656266"
 
 ### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
 
-Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ качества кода .NET](../../fundamentals/productivity/code-analysis.md#code-quality-analysis). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение `true`. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
+Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ качества кода .NET](../../fundamentals/code-analysis/overview.md#code-quality-analysis). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение `true`. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
 
 ```xml
 <PropertyGroup>
@@ -231,7 +231,7 @@ ms.locfileid: "89656266"
 
 ### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
 
-[Анализ стиля кода .NET](../../fundamentals/productivity/code-analysis.md#code-style-analysis) по умолчанию отключен при сборке для всех проектов .NET. Можно включить анализ стиля кода для проектов .NET, задав для свойства `EnforceCodeStyleInBuild` значение `true`.
+[Анализ стиля кода .NET](../../fundamentals/code-analysis/overview.md#code-style-analysis) по умолчанию отключен при сборке для всех проектов .NET. Можно включить анализ стиля кода для проектов .NET, задав для свойства `EnforceCodeStyleInBuild` значение `true`.
 
 ```xml
 <PropertyGroup>
@@ -239,11 +239,11 @@ ms.locfileid: "89656266"
 </PropertyGroup>
 ```
 
-Все правила стиля кода, которые [настроены](../../fundamentals/productivity/code-analysis.md#code-style-analysis) как предупреждения или ошибки, будут выполняться при нарушениях сборки и отчета.
+Все правила стиля кода, которые [настроены](../../fundamentals/code-analysis/overview.md#code-style-analysis) как предупреждения или ошибки, будут выполняться при нарушениях сборки и отчета.
 
 ## <a name="run-time-configuration-properties"></a>Свойства конфигурации среды выполнения
 
-Вы можете настроить некоторые варианты поведения среды выполнения, указав свойства MSBuild в файле проекта приложения. Сведения о других способах настройки поведения среды выполнения см. в разделе [Параметры конфигурации среды выполнения .NET Core](../run-time-config/index.md).
+Вы можете настроить некоторые варианты поведения среды выполнения, указав свойства MSBuild в файле проекта приложения. Сведения о других способах настройки поведения среды выполнения см. в статье о [параметрах конфигурации среды выполнения](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)

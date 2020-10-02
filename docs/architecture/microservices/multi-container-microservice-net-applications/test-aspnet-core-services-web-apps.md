@@ -2,12 +2,12 @@
 title: Тестирование служб и веб-приложений ASP.NET Core
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Архитектура тестирования служб и веб-приложений ASP.NET Core в контейнерах.
 ms.date: 08/07/2020
-ms.openlocfilehash: a27b3b8d392c5e1a7d1961307e6de95659cd823e
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: f76f502adf8321c9015cc6cfd0e12214a7576b5c
+ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90872458"
 ---
 # <a name="testing-aspnet-core-services-and-web-apps"></a>Тестирование служб и веб-приложений ASP.NET Core
 
@@ -140,7 +140,7 @@ public class PrimeWebDefaultRequestShould
 
 3. **функциональные и интеграционные тесты приложений**, ориентированные на интеграцию микрослужб, с тестовыми случаями, которые воздействуют на несколько микрослужб (содержатся в проекте **Application.FunctionalTests**);
 
-Модульные и интеграционные тесты микрослужб содержатся в папке tests, а тесты приложений и нагрузочные тесты содержатся в папке test в папке решения, как показано на рис. 6-25.
+Модульные и интеграционные тесты помещены в папку тестов в проекте микрослужб. Но управление тестами приложений и нагрузочными тестами отдельно осуществляется в корневой папке, как показано на рисунке 6-25.
 
 ![Снимок экрана VS, на котором стрелками показаны некоторые тестовые проекты в решении.](./media/test-aspnet-core-services-web-apps/eshoponcontainers-test-folder-structure.png)
 

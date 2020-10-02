@@ -3,18 +3,18 @@ title: Телеметрия пакета SDK для .NET Core
 description: Сведения о функциях телеметрии пакета SDK для .NET Core, позволяющих собирать сведения об использовании для анализа, а также о собираемых данных и способе отключения этих функций.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.openlocfilehash: 01376cabc4f59f64c59a78dcff061fb6ec11e3c3
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: bad6de138b9c35bcd8c5556df82103f959508b52
+ms.sourcegitcommit: d04388f94dbcd756ffd608536c869aee3242cdb0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359237"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206358"
 ---
 # <a name="net-core-sdk-telemetry"></a>Телеметрия пакета SDK для .NET Core
 
 [Пакет SDK для .NET Core](index.md) включает функцию телеметрии, которая собирает данные об использовании и сведения об исключениях при сбоях .NET Core CLI. .NET Core CLI поставляется с пакетом SDK для .NET Core и представляет собой набор команд, позволяющих создавать, тестировать и публиковать приложения .NET Core. Команде разработчиков .NET важно знать, как используются эти средства, чтобы их можно было улучшить. Сведения об ошибках помогают команде решать проблемы и устранять ошибки.
 
-Данные собираются анонимно и публикуются в сводной форме по [лицензии Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/).
+Данные публикуются в сводной форме по [лицензии Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/).
 
 ## <a name="scope"></a>Область
 
@@ -41,7 +41,7 @@ ms.locfileid: "89359237"
 ```console
 Telemetry
 ---------
-The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+The .NET Core tools collect usage data in order to help us improve your experience. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
@@ -68,7 +68,7 @@ Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemet
 | >= 2.0        | Аргументы и параметры команды: собираются только известные аргументы и параметры (но не произвольные строки). См. раздел о [собираемых параметрах](#collected-options). Хэшируется после версии 2.1.300. |
 | >= 2.0         | выполняется ли пакет SDK в контейнере; |
 | >= 2.0         | Целевые платформы (из события `TargetFramework`), хэшируются начиная с версии 2.1. |
-| >= 2.0         | Хэшированный MAC-адрес: криптографически (SHA256) анонимный и уникальный идентификатор компьютера. |
+| >= 2.0         | Адрес управления доступом к среде передачи данных (MAC-адрес) с хэшированием (SHA256). |
 | >= 2.0         | хэшированный текущий рабочий каталог. |
 | >= 2.0         | Отчет об успешном выполнении установки с хэшированным именем EXE-файла установщика. |
 | >= 2.1.300     | Версия ядра. |

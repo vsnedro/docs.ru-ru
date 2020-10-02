@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 049f0636b1c2c2df33461714aea5a11810ef00ad
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 04d0120622697d1e0c84fc169dfc50951cb8aa3c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359198"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177297"
 ---
 # <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
 
@@ -186,6 +186,12 @@ ms.locfileid: "89359198"
    > ![Контекстное меню проекта StringLibrary с командой сборки](./media/testing-library-with-visual-studio/build-library-context-menu.png)
 
 1. Выполните модульные тесты, выбрав в строке меню **Тест** > **Выполнить все тесты**. Все тесты будут пройдены.
+
+## <a name="debug-tests"></a>Отладка тестов
+
+Если в качестве IDE вы используете Visual Studio, то можете следовать инструкциям из [руководства по отладке консольного приложения .NET Core с помощью Visual Studio](debugging-with-visual-studio.md), чтобы выполнить отладку кода с применением проекта модульного теста. Вместо запуска проекта приложения *ShowCase* щелкните правой кнопкой проект **StringLibraryTests** и выберите элемент **Отладка тестов** в контекстном меню.
+
+Visual Studio запускает тестовый проект с присоединенным отладчиком. Выполнение будет прервано в любой точке останова, добавленной в тестовый проект или базовый код библиотеки.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

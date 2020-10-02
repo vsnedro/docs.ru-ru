@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd7860a5dfff1eb595625665382689733cffc94a
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 4a7616d2ffaabab5279342ebc1082c93a174a52d
+ms.sourcegitcommit: 1274a1a4a4c7e2eaf56b38da76ef7cec789726ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90721277"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91406181"
 ---
 ### <a name="ca1416-platform-compatibility"></a>CA1416. Совместимость платформ
 
@@ -20,7 +20,7 @@ ms.locfileid: "90721277"
 
 #### <a name="examples"></a>Примеры
 
-- Метод <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> поддерживается только в Windows (он дополнен `[SupportedOSPlatform("windows")]`). Следующий код выдаст предупреждение CA1416 во время сборки, если проект [предназначен](../../../../docs/standard/frameworks.md) для `net5.0` (но не для `net5.0-windows`). Действия, которые можно предпринять, чтобы избежать предупреждения, см. в разделе [Рекомендуемое действие](#recommended-action).
+- Метод <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> поддерживается только в Windows и декорируется `[SupportedOSPlatform("windows")]`. Следующий код выдаст предупреждение CA1416 во время сборки, если проект [предназначен](../../../../docs/standard/frameworks.md) для `net5.0` (но не для `net5.0-windows`). Действия, которые можно предпринять, чтобы избежать предупреждения, см. в разделе [Рекомендуемое действие](#recommended-action).
 
   ```csharp
   public void PlayCMajor()
@@ -29,7 +29,7 @@ ms.locfileid: "90721277"
   }
   ```
 
-- Метод <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> не поддерживается в браузере (он дополнен `[UnsupportedOSPlatform("browser")]`). Следующий код выдаст предупреждение CA1416 во время сборки, если проект использует пакет SDK Blazor WebAssembly (`<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">`) или включает `browser` в качестве поддерживаемой платформы (`<SupportedPlatform Include="browser" />`) в файле проекта.
+- Метод <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> не поддерживается в браузере и декорируется `[UnsupportedOSPlatform("browser")]`. Следующий код выдаст предупреждение CA1416 во время сборки, если проект поддерживает платформу браузера.
 
   ```csharp
   public void CreateImage()
@@ -37,6 +37,17 @@ ms.locfileid: "90721277"
       Image newImage = Image.FromFile("SampImag.jpg");
   }
   ```
+
+  > [!TIP]
+  >
+  > - Проекты Blazor WebAssembly и проекты библиотеки классов Razor включают поддержку браузера автоматически.
+  > - Чтобы вручную добавить браузер в качестве поддерживаемой платформы для проекта, добавьте следующую запись в файл проекта:
+  >
+  >  ```xml
+  >  <ItemGroup>
+  >    <SupportedPlatform Include="browser" />
+  >  </ItemGroup>
+  >  ```
 
 #### <a name="version-introduced"></a>Представленная версия
 
@@ -68,7 +79,7 @@ public void PlayCMajor()
 }
 ```
 
-Вы также можете отметить API как зависящий от платформы. В этом случае проверку требований будут выполнять вызывающие объекты. Можно отметить определенные методы или типы или всю сборку.
+Если вы создаете библиотеку, вы можете пометить API как зависящий от платформы. В этом случае проверку требований будут выполнять вызывающие объекты. Можно отметить определенные методы или типы или всю сборку.
 
 ```csharp
 [SupportedOSPlatform("windows")]
