@@ -7,12 +7,12 @@ helpviewer_keywords:
 - performance counters
 - performance monitoring, counters
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
-ms.openlocfilehash: 1b5ca6484f45dcee33009d8b8c12a43fa41f63de
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c5ee2fae9167dd508332d8e97a589a8ddb0394ac
+ms.sourcegitcommit: d66641bc7c14ad7d02300316e9e7e84a875a0a72
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554453"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "91712626"
 ---
 # <a name="performance-counters-in-the-net-framework"></a>Счетчики производительности в .NET Framework
 
@@ -131,7 +131,7 @@ ms.locfileid: "90554453"
 |**Получено датаграмм**|Совокупное общее число пакетов датаграмм, полученных всеми объектами <xref:System.Net.Sockets.Socket> в <xref:System.AppDomain> с момента запуска процесса.|  
 |**Отправлено датаграмм**|Совокупное общее число пакетов датаграмм, отправленных всеми объектами <xref:System.Net.Sockets.Socket> в <xref:System.AppDomain> с момента запуска процесса.|  
 |**Среднее время существования HttpWebRequest**|Среднее время выполнения для всех объектов <xref:System.Net.HttpWebRequest>, завершившихся за последний интервал в <xref:System.AppDomain> с момента запуска процесса.|  
-|**Среднее время HttpWebRequest в очереди**|Среднее время в очереди для всех объектов <xref:System.Net.HttpWebRequest>, покинувших очередь за последний интервал в <xref:System.AppDomain> с момента запуска процесса.|  
+|**Среднее время очереди HttpWebRequest**|Среднее время в очереди для всех объектов <xref:System.Net.HttpWebRequest>, покинувших очередь за последний интервал в <xref:System.AppDomain> с момента запуска процесса.|  
 |**Создано запросов HttpWebRequest/сек**|Число объектов <xref:System.Net.HttpWebRequest>, созданных в <xref:System.AppDomain> (в секунду).|  
 |**Помещено запросов HttpWebRequest в очередь/сек**|Число объектов <xref:System.Net.HttpWebRequest>, которые были добавлены в очередь в <xref:System.AppDomain> (в секунду).|  
 |**Прервано запросов HttpWebRequest/сек**|Число объектов <xref:System.Net.HttpWebRequest>, в которых приложение вызывало метод <xref:System.Net.HttpWebRequest.Abort%2A> в <xref:System.AppDomain> (в секунду).|  
@@ -171,9 +171,9 @@ ms.locfileid: "90554453"
   
 - **Среднее время существования HttpWebRequest**  
   
-- **Среднее время HttpWebRequest в очереди**  
+- **Среднее время очереди HttpWebRequest**  
   
- Для счетчика **Среднее время существования HttpWebRequest** время существования большинства объектов <xref:System.Net.HttpWebRequest> всегда начинается со времени создания объекта и заканчивается временем закрытия ответного потока приложением. Существует два редких сценария:  
+ Для счетчика **среднего времени существования HttpWebRequest** время существования большинства <xref:System.Net.HttpWebRequest> объектов всегда начинается с момента создания объекта до тех пор, пока приложение не закроет поток ответа. Существует два редких сценария:  
   
 - если приложение никогда не вызывает методы <xref:System.Net.HttpWebRequest.GetResponse%2A> или <xref:System.Net.HttpWebRequest.BeginGetResponse%2A>, время существования объектов <xref:System.Net.HttpWebRequest> не учитывается;  
   
