@@ -5,12 +5,12 @@ ms.date: 02/21/2020
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
-ms.openlocfilehash: 2f340805200a14e0e145ffe1bf20f8059df63555
-ms.sourcegitcommit: d9470d8b2278b33108332c05224d86049cb9484b
+ms.openlocfilehash: 74a7a5b941596ba9fffc62ef87a01763937d88c0
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81608053"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91608781"
 ---
 # <a name="deploy-a-model-to-azure-functions"></a>Развертывание модели в Функциях Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "81608053"
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздняя версия либо Visual Studio 2017 версии 15.6 или более поздняя версия с установленными рабочими нагрузками "Кроссплатформенная разработка .NET Core" и "Разработка для Azure".
 - [Средства Функций Azure](/azure/azure-functions/functions-develop-vs#check-your-tools-version).
-- PowerShell.
+- PowerShell
 - Предварительно обученная модель. Используйте [учебник по анализу тональности ML.NET](../tutorials/sentiment-analysis.md), чтобы создать собственную модель, или скачайте эту [предварительно обученную модель машинного обучения для анализа тональности](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## <a name="azure-functions-sample-overview"></a>Обзор примера для Функций Azure

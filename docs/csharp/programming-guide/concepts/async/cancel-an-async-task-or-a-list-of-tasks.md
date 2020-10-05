@@ -4,12 +4,12 @@ description: Узнайте, как использовать токены отм
 ms.date: 08/19/2020
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
-ms.openlocfilehash: 30bef5d1a5082fbd3757377dbedb8f9b9d17e218
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: 84cd1bb413d20b6c13be8415c13c72b57873b1cf
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053097"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654709"
 ---
 # <a name="cancel-a-list-of-tasks-c"></a>Отмена списка задач (C#)
 
@@ -159,14 +159,14 @@ foreach (string url in s_urlList)
 static async Task<int> ProcessUrlAsync(string url, HttpClient client, CancellationToken token)
 {
     HttpResponseMessage response = await client.GetAsync(url, token);
-    byte[] content = await response.Content.ReadAsByteArrayAsync(token);
+    byte[] content = await response.Content.ReadAsByteArrayAsync();
     Console.WriteLine($"{url,-60} {content.Length,10:#,#}");
 
     return content.Length;
 }
 ```
 
-Для любого заданного URL-адреса метод будет использовать экземпляр `client`, предоставленный для получения ответа в качестве `byte[]`. <xref:System.Threading.CancellationToken> экземпляр передается в методы <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> и <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. `token` используется для регистрации запрошенной отмены. Длина возвращается после того, как URL-адрес и длина записываются в консоль.
+Для любого заданного URL-адреса метод будет использовать экземпляр `client`, предоставленный для получения ответа в качестве `byte[]`. <xref:System.Threading.CancellationToken> экземпляр передается в методы <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> и <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync?displayProperty=nameWithType>. `token` используется для регистрации запрошенной отмены. Длина возвращается после того, как URL-адрес и длина записываются в консоль.
 
 ### <a name="example-application-output"></a>Пример выходных данных приложения
 
