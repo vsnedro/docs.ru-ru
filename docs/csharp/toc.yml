@@ -36,6 +36,8 @@
               href: tutorials/intro-to-csharp/arrays-and-collections.md
             - name: Общие сведения о классах
               href: tutorials/intro-to-csharp/introduction-to-classes.md
+            - name: Объектно-ориентированное программирование
+              href: tutorials/intro-to-csharp/object-oriented-programming.md
     - name: "Обзор C#\_6"
       href: tutorials/exploration/csharp-6.yml
     - name: Интерполяция строк. Интерактивное руководство
@@ -491,8 +493,6 @@
               href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
             - name: Среда разработки Visual Studio и поддержка средств для LINQ
               href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
-        - name: Объектно-ориентированное программирование
-          href: programming-guide/concepts/object-oriented-programming.md
         - name: Отражение
           href: programming-guide/concepts/reflection.md
         - name: Сериализация (C#)
