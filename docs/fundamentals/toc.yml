@@ -1028,6 +1028,8 @@ items:
         href: ../core/deploying/runtime-patch-selection.md
       - name: Развертывание и выполнение в виде отдельного файла
         href: ../core/deploying/single-file.md
+      - name: ReadyToRun
+        href: ../core/deploying/ready-to-run.md
       - name: Обрезка автономных развертываний
         items:
           - name: Общие сведения и инструкции
