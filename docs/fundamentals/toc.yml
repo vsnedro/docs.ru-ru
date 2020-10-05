@@ -366,6 +366,8 @@ items:
             items:
               - name: Общие параметры
                 href: code-analysis/configuration-options.md
+              - name: Файлы конфигурации.
+                href: code-analysis/configuration-files.md
               - name: Правила качества кода
                 items:
                   - name: Параметры правила
@@ -1318,9 +1320,17 @@ items:
       - name: Универсальный узел
         href: ../core/extensions/generic-host.md
       - name: Ведение журнала
-        href: /aspnet/core/fundamentals/logging
+        items:
+          - name: Обзор
+            href: ../core/extensions/logging.md
+          - name: Поставщики ведения журнала
+            href: ../core/extensions/logging-providers.md
+          - name: Реализация пользовательского поставщика ведения журнала
+            href: ../core/extensions/custom-logging-provider.md
+          - name: Ведение журнала с высокой производительностью
+            href: ../core/extensions/high-performance-logging.md
       - name: Шаблон параметров
-        href: /aspnet/core/fundamentals/configuration/options
+        href: ../core/extensions/options.md
   - name: Доступ к данным
     items:
       - name: LINQ
