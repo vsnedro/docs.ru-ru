@@ -2,12 +2,12 @@
 title: Публикация приложений
 description: Дополнительные сведения о публикации приложения .NET Core. .NET Core может публиковать приложения для конкретной платформы или кроссплатформенные приложения. Приложение можно опубликовать как автономное или как зависимое от среды. Каждый режим влияет на то, как пользователь запускает приложение.
 ms.date: 04/01/2020
-ms.openlocfilehash: ece5e46162fd4a8de0b996ba239e89cceca4dbca
-ms.sourcegitcommit: ef86c24c418439b8bb5e3e7d64bbdbe5e11c3e9c
+ms.openlocfilehash: 27206065c899e41a44685f72cfb35ae57986aa4c
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88720115"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654676"
 ---
 # <a name="net-core-application-publishing-overview"></a>Общие сведения о публикации приложений .NET Core
 
@@ -149,6 +149,34 @@ dotnet publish -r osx-x64
 
 ```dotnet
 dotnet publish -r win-x64
+```
+
+## <a name="publish-with-readytorun-images"></a>Публикация с использованием образов ReadyToRun
+
+Публикация с использованием образов ReadyToRun помогает оптимизировать время запуска приложения, хотя размер приложения при этом будет увеличен. Дополнительные сведения о публикации с использованием ReadyToRun см. [здесь](ready-to-run.md).
+
+### <a name="advantages"></a>Преимущества
+
+- **Оптимизированное времени запуска**\
+Приложение будет тратить меньше времени на выполнение JIT.
+
+### <a name="disadvantages"></a>Недостатки
+
+- **Больший размер**\
+Приложение будет занимать больше места на диске.
+
+### <a name="examples"></a>Примеры
+
+Опубликуйте автономное приложение с помощью ReadyToRun. Создается 64-разрядный исполняемый файл macOS.
+
+```dotnet
+dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=true
+```
+
+Опубликуйте автономное приложение с помощью ReadyToRun. Создается 64-разрядный исполняемый файл Windows.
+
+```dotnet
+dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
 ```
 
 ## <a name="see-also"></a>См. также
