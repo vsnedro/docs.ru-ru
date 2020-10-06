@@ -1,21 +1,20 @@
 ---
-title: Элемент <performanceCounter> (параметры сети)
+title: Элемент <performanceCounters> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/performanceCounters
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#performanceCounters
 helpviewer_keywords:
-- performanceCounter element
-- <performanceCounter> element
+- performanceCounters element
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
-ms.openlocfilehash: 4859f3a9e6de4f1bf8a56212bfe01f94d66f5650
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 584bdafbbd60303401cbc6ad96b8654fe11c7077
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190245"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91756264"
 ---
-# <a name="performancecounter-element-network-settings"></a>Элемент \<performanceCounter> (параметры сети)
+# <a name="performancecounters-element-network-settings"></a>Элемент \<performanceCounters> (параметры сети)
 
 Включает или отключает счетчики производительности сети.  
 
@@ -40,7 +39,7 @@ ms.locfileid: "91190245"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`enabled`|Указывает, включены ли счетчики производительности сети. Значение по умолчанию — `false`.|  
+|`enabled`|Указывает, включены ли счетчики производительности сети. Значение по умолчанию — `false`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
@@ -62,7 +61,7 @@ ms.locfileid: "91190245"
   
  <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>Свойство можно использовать для получения текущего значения атрибута **Enabled** из применимых файлов конфигурации.  
   
-## <a name="example"></a>Пример  
+## <a name="example"></a>Например, .  
 
  В следующем примере показано, как настроить <xref:System.Net> и связанные пространства имен для включения сетевых счетчиков производительности.  
   
