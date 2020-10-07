@@ -185,7 +185,7 @@ void New3(ref String ar);
 |------------------------|-----------------|  
 |**ELEMENT_TYPE_SZARRAY** **\<** *type* **>**|<xref:System.Runtime.InteropServices.UnmanagedType> **.SafeArray(** *тип* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Тип предоставляется в сигнатуре. Ранг всегда равен 1, а нижняя граница всегда — 0. Размер всегда известен во время выполнения.|  
 |**ELEMENT_TYPE_ARRAY** **\<** *type* **>** **\<** *rank* **>** [ **\<** *bounds* **>** ]|**UnmanagedType.SafeArray(** *тип* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Тип, ранг и границы предоставляются в сигнатуре. Размер всегда известен во время выполнения.|  
-|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=nameWithType>** >**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *тип* **)**<br /><br /> Тип, ранг, границы и размер всегда известны во время выполнения.|  
+|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=nameWithType>**>**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *тип* **)**<br /><br /> Тип, ранг, границы и размер всегда известны во время выполнения.|  
   
  В OLE-автоматизации существует ограничение в отношении массивов структур, которые содержат LPSTR или LPWSTR.  Таким образом, поля **String** должны маршалироваться как **UnmanagedType.BSTR**. В противном случае будет создаваться исключение.  
   
