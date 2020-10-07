@@ -9,12 +9,12 @@ helpviewer_keywords:
 - WCF Data Services, client library
 - data binding, WCF Data Services
 ms.assetid: b32e1d49-c214-4cb1-867e-88fbb3d08c8d
-ms.openlocfilehash: f2cb1004ef6316bc67189c4e00930f6086cf0dad
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 178d77c225144497982487afa00f4493e17d1744
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152927"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805217"
 ---
 # <a name="binding-data-to-controls-wcf-data-services"></a>Привязка данных к элементам управления (службы данных WCF)
 
@@ -36,7 +36,7 @@ ms.locfileid: "91152927"
   
 ## <a name="binding-data-to-windows-presentation-foundation-elements"></a>Привязка данных к элементам Windows Presentation Foundation  
 
- Поскольку класс <xref:System.Data.Services.Client.DataServiceCollection%601> является наследником класса <xref:System.Collections.ObjectModel.ObservableCollection%601>, привязывать объекты к компоненту или элементу управления в приложении Windows Presentation Foundation (WPF) можно так же, как и при использовании для привязки класса <xref:System.Collections.ObjectModel.ObservableCollection%601>. Дополнительные сведения см. в разделе [Привязка данных (Windows Presentation Foundation)](../../../desktop-wpf/data/data-binding-overview.md). Одним из способов привязки данных службы данных к элементам управления WPF является задание значения свойства `DataContext` элемента, равного экземпляру класса <xref:System.Data.Services.Client.DataServiceCollection%601>, который содержит результат выполнения запроса. В этом случае используйте свойство <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> для задания источника объектов для элемента управления. Используйте свойство <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A> для задания отображаемого свойства привязанного объекта. Если элемент привязывается к связанному объекту, возвращаемому свойством навигации, включите путь в привязку, определенную для свойства <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. Данный путь задается относительно корневого объекта, заданного свойством <xref:System.Windows.FrameworkElement.DataContext%2A> родительского элемента управления. В следующем примере задается свойство <xref:System.Windows.FrameworkElement.DataContext%2A> элемента <xref:System.Windows.Controls.StackPanel> для привязки родительского элемента управления к коллекции клиентских объектов <xref:System.Data.Services.Client.DataServiceCollection%601>.  
+ Поскольку класс <xref:System.Data.Services.Client.DataServiceCollection%601> является наследником класса <xref:System.Collections.ObjectModel.ObservableCollection%601>, привязывать объекты к компоненту или элементу управления в приложении Windows Presentation Foundation (WPF) можно так же, как и при использовании для привязки класса <xref:System.Collections.ObjectModel.ObservableCollection%601>. Дополнительные сведения см. в разделе [Привязка данных (Windows Presentation Foundation)](/dotnet/desktop/wpf/data/data-binding-overview). Одним из способов привязки данных службы данных к элементам управления WPF является задание значения свойства `DataContext` элемента, равного экземпляру класса <xref:System.Data.Services.Client.DataServiceCollection%601>, который содержит результат выполнения запроса. В этом случае используйте свойство <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> для задания источника объектов для элемента управления. Используйте свойство <xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A> для задания отображаемого свойства привязанного объекта. Если элемент привязывается к связанному объекту, возвращаемому свойством навигации, включите путь в привязку, определенную для свойства <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. Данный путь задается относительно корневого объекта, заданного свойством <xref:System.Windows.FrameworkElement.DataContext%2A> родительского элемента управления. В следующем примере задается свойство <xref:System.Windows.FrameworkElement.DataContext%2A> элемента <xref:System.Windows.Controls.StackPanel> для привязки родительского элемента управления к коллекции клиентских объектов <xref:System.Data.Services.Client.DataServiceCollection%601>.  
   
  [!code-csharp[Astoria Northwind Client#MasterDetailBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderscustom.xaml.cs#masterdetailbinding)]
  [!code-csharp[Astoria Northwind Client#MasterDetailBinding](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/customerorderswpf.xaml.cs#masterdetailbinding)]
@@ -120,7 +120,7 @@ ms.locfileid: "91152927"
   
  Дополнительные сведения см. [в разделе Обновление службы данных](updating-the-data-service-wcf-data-services.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Создание клиентских классов служб данных вручную](how-to-manually-generate-client-data-service-classes-wcf-data-services.md)
 - [Практическое руководство. Добавление ссылки на службу данных](how-to-add-a-data-service-reference-wcf-data-services.md)
