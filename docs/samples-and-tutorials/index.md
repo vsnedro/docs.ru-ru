@@ -4,12 +4,12 @@ description: Сведения о примерах и руководствах д
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/19/2020
-ms.openlocfilehash: 7e477683834b46439626e03e6ff411fabc52672d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 00718491df00e5747ba6e0043b70dc1019dd906b
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557194"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805015"
 ---
 # <a name="net-samples-and-tutorials"></a>Примеры и руководства .NET
 
@@ -99,7 +99,7 @@ ms.locfileid: "90557194"
 
 **[Запуск приложений ASP.NET MVC в контейнерах Windows](/aspnet/mvc/overview/deployment/docker-aspnetmvc)**
 
-В этом руководстве показано, как развернуть существующее приложение ASP.NET MVC в контейнер Windows Docker. [Готовый пример](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) доступен в репозитории dotnet/samples на сайте GitHub.
+В этом руководстве показано, как развернуть существующее приложение ASP.NET MVC в контейнер Windows Docker.
 
 ## <a name="view-and-download-samples"></a>Просмотр и скачивание примеров
 
