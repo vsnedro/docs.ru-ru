@@ -1,99 +1,99 @@
 - name: Схема параметров сети
   href: index.md
   items:
-    - name: Элемент <system.Net> (параметры сети)
+    - name: элемент <system.Net> (параметры сети)
       href: system-net-element-network-settings.md
       items:
-        - name: Элемент <authenticationModules> (параметры сети)
+        - name: Элемент <authenticationModules>
           href: authenticationmodules-element-network-settings.md
           items:
-            - name: Элемент <add> для authenticationModules (параметры сети)
+            - name: <add> элемент для authenticationModules
               href: add-element-for-authenticationmodules-network-settings.md
-            - name: Элемент <remove> для authenticationModules (параметры сети)
+            - name: <remove> элемент для authenticationModules
               href: remove-element-for-authenticationmodules-network-settings.md
-            - name: Элемент <clear> для authenticationModules (параметры сети)
+            - name: <clear> элемент для authenticationModules
               href: clear-element-for-authenticationmodules-network-settings.md
-        - name: Элемент <connectionManagement> (параметры сети)
+        - name: Элемент <connectionManagement>
           href: connectionmanagement-element-network-settings.md
           items:
-            - name: Элемент <add> для connectionManagement (параметры сети)
+            - name: <add> элемент для connectionManagement
               href: add-element-for-connectionmanagement-network-settings.md
-            - name: Элемент <clear> для connectionManagement (параметры сети)
+            - name: <clear> элемент для connectionManagement
               href: clear-element-for-connectionmanagement-network-settings.md
-            - name: Элемент <remove> для connectionManagement (параметры сети)
+            - name: <remove> элемент для connectionManagement
               href: remove-element-for-connectionmanagement-network-settings.md
-        - name: Элемент <defaultProxy> (параметры сети)
+        - name: <defaultProxy> - элемент
           href: defaultproxy-element-network-settings.md
           items:
-            - name: Элемент <bypasslist> (параметры сети)
+            - name: <bypasslist> - элемент
               href: bypasslist-element-network-settings.md
               items:
-                - name: Элемент <add> для bypasslist (параметры сети)
+                - name: <add> элемент для bypasslist
                   href: add-element-for-bypasslist-network-settings.md
-                - name: Элемент <clear> для bypasslist (параметры сети)
+                - name: <clear> элемент для bypasslist
                   href: clear-element-for-bypasslist-network-settings.md
-                - name: Элемент <remove> для bypasslist (параметры сети)
+                - name: <remove> элемент для bypasslist
                   href: remove-element-for-bypasslist-network-settings.md
-            - name: Элемент <module> (параметры сети)
+            - name: <module> - элемент
               href: module-element-network-settings.md
-            - name: Элемент <proxy> (параметры сети)
+            - name: <proxy> - элемент
               href: proxy-element-network-settings.md
-        - name: Элемент <mailSettings> (параметры сети)
+        - name: <mailSettings> - элемент
           href: mailsettings-element-network-settings.md
           items:
-            - name: Элемент <smtp> (параметры сети)
+            - name: <smtp> - элемент
               href: smtp-element-network-settings.md
               items:
-                - name: Элемент <specifiedPickupDirectory> (параметры сети)
+                - name: <specifiedPickupDirectory> - элемент
                   href: specifiedpickupdirectory-element-network-settings.md
-                - name: Элемент <network> (параметры сети)
+                - name: <network> - элемент
                   href: network-element-network-settings.md
-        - name: Элемент <requestCaching> (параметры сети)
+        - name: <requestCaching> - элемент
           href: requestcaching-element-network-settings.md
           items:
-            - name: Элемент <defaultHttpCachePolicy> (параметры сети)
+            - name: <defaultHttpCachePolicy> - элемент
               href: defaulthttpcachepolicy-element-network-settings.md
-            - name: Элемент <defaultFtpCachePolicy> (параметры сети)
+            - name: <defaultFtpCachePolicy> - элемент
               href: defaultftpcachepolicy-element-network-settings.md
-        - name: Элемент <settings> (параметры сети)
+        - name: <settings> - элемент
           href: settings-element-network-settings.md
           items:
-            - name: Элемент <httpWebRequest> (параметры сети)
+            - name: <httpWebRequest> - элемент
               href: httpwebrequest-element-network-settings.md
-            - name: Элемент <ipv6> (параметры сети)
+            - name: <ipv6> - элемент
               href: ipv6-element-network-settings.md
-            - name: Элемент <performanceCounter> (параметры сети)
+            - name: <performanceCounter> - элемент
               href: performancecounter-element-network-settings.md
-            - name: Элемент <servicePointManager> (параметры сети)
+            - name: <servicePointManager> - элемент
               href: servicepointmanager-element-network-settings.md
-            - name: Элемент <socket> (параметры сети)
+            - name: <socket> - элемент
               href: socket-element-network-settings.md
-            - name: Элемент <webProxyScript> (параметры сети)
+            - name: <webProxyScript> - элемент
               href: webproxyscript-element-network-settings.md
-            - name: Элемент <httpListener> (параметры сети)
+            - name: <httpListener> - элемент
               href: httplistener-element-network-settings.md
-        - name: Элемент <webRequestModules> (параметры сети)
+        - name: Элемент <webRequestModules>
           href: webrequestmodules-element-network-settings.md
           items:
-            - name: Элемент <add> для webRequestModules (параметры сети)
+            - name: <add> элемент для webRequestModules
               href: add-element-for-webrequestmodules-network-settings.md
-            - name: Элемент <remove> для webRequestModules (параметры сети)
+            - name: <remove> элемент для webRequestModules
               href: remove-element-for-webrequestmodules-network-settings.md
-            - name: Элемент <clear> для webRequestModules (параметры сети)
+            - name: <clear> элемент для webRequestModules
               href: clear-element-for-webrequestmodules-network-settings.md
     - name: Элемент <uri> (параметры URI)
       href: uri-element-uri-settings.md
       items:
-        - name: Элемент <idn> (параметры URI)
+        - name: <idn> - элемент
           href: idn-element-uri-settings.md
-        - name: Элемент <iriParsing> (параметры URI)
+        - name: <iriParsing> - элемент
           href: iriparsing-element-uri-settings.md
-        - name: Элемент <schemeSettings> (параметры URI)
+        - name: Элемент <schemeSettings>
           href: schemesettings-element-uri-settings.md
           items:
-            - name: Элемент <add> для schemeSettings (параметры URI)
+            - name: <add> элемент для schemeSettings
               href: add-element-for-schemesettings-uri-settings.md
-            - name: Элемент <clear> для schemeSettings (параметры URI)
+            - name: <clear> элемент для schemeSettings
               href: clear-element-for-schemesettings-uri-settings.md
-            - name: Элемент <remove> для schemeSettings (параметры URI)
+            - name: <remove> элемент для schemeSettings
               href: remove-element-for-schemesettings-uri-settings.md
