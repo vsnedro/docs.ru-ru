@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - what's new [.NET Framework]
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
-ms.openlocfilehash: 15350f93ffabb10136af1b9a4d12d5301e661b29
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1e9657c60ef2ff0ef30ae1607a0e7f2cedd01187
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551716"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91756082"
 ---
 # <a name="whats-new-in-net-framework"></a>Новые возможности .NET Framework
 
@@ -1431,7 +1431,7 @@ WPF включает [пакет NuGet](https://www.nuget.org/packages/Microsoft
 
     Протокол HTTP/2 также поддерживается и включен по умолчанию для приложений универсальной платформы Windows (UWP) для Windows 10, использующих API <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>.
 
-    Чтобы обеспечить способ использования компонента [PUSH_PROMISE](https://http2.github.io/http2-spec/#PUSH_PROMISE) в приложениях ASP.NET, в класс <xref:System.Web.HttpResponse> добавлен новый метод с двумя перегрузками, <xref:System.Web.HttpResponse.PushPromise%28System.String%29> и <xref:System.Web.HttpResponse.PushPromise%28System.String%2CSystem.String%2CSystem.Collections.Specialized.NameValueCollection%29>.
+    Чтобы обеспечить способ использования компонента [PUSH_PROMISE](https://httpwg.github.io/http2-spec/#PUSH_PROMISE) в приложениях ASP.NET, в класс <xref:System.Web.HttpResponse> добавлен новый метод с двумя перегрузками, <xref:System.Web.HttpResponse.PushPromise%28System.String%29> и <xref:System.Web.HttpResponse.PushPromise%28System.String%2CSystem.String%2CSystem.Collections.Specialized.NameValueCollection%29>.
 
     > [!NOTE]
     > Хотя ASP.NET Core поддерживает HTTP/2, поддержка функции PUSH PROMISE пока не добавлена.

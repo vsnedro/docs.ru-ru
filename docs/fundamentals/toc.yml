@@ -49,16 +49,12 @@ items:
             href: ../core/install/localized-intellisense.md
   - name: "Обзор (неделя\_1)"
     items:
-      - name: Обзор .NET
-        href: ../standard/tour.md
+      - name: Введение в .NET
+        href: ../core/introduction.md
       - name: Архитектурные компоненты .NET
         href: ../standard/components.md
       - name: Библиотеки классов .NET
         href: ../standard/class-libraries.md
-      - name: Введение в .NET Core
-        href: ../core/introduction.md
-      - name: Обзор .NET Core
-        href: ../core/about.md
       - name: Обзор .NET Standard
         href: ../standard/net-standard.md
       - name: Глоссарий по .NET
