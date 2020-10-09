@@ -2,12 +2,12 @@
 title: Критические изменения MSBuild
 description: В этой статье приведен список критических изменений в MSBuild для .NET Core.
 ms.date: 02/10/2020
-ms.openlocfilehash: 7493516dff68b8bd45740c9877ebf21886e667ff
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: b57c70d21e061c59f26b11a025d4d05ce3b8ca99
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679341"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654745"
 ---
 # <a name="msbuild-breaking-changes"></a>Критические изменения MSBuild
 
@@ -15,11 +15,16 @@ ms.locfileid: "90679341"
 
 | Критическое изменение | Представленная версия |
 | - | - |
+| [Символ препроцессора NETCOREAPP3_1 не определен при ориентации на .NET 5](#netcoreapp3_1-preprocessor-symbol-is-not-defined-when-targeting-net-5) | 5.0 |
 | [Изменение поведения PublishDepsFilePath](#publishdepsfilepath-behavior-change) | 5.0 |
 | [Файлы Directory.Packages.props импортируются по умолчанию](#directorypackagesprops-files-is-imported-by-default) | 5.0 |
 | [Изменение имен файлов манифеста ресурса](#resource-manifest-file-name-change) | 3.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [netcoreapp3_1-preprocessor-symbol-not-defined](../../../includes/core-changes/msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md)]
+
+***
 
 [!INCLUDE [publishdepsfilepath-behavior-change](../../../includes/core-changes/msbuild/5.0/publishdepsfilepath-behavior-change.md)]
 

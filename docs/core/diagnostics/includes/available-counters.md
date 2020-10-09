@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f561550d57e98a515fa3bdf56eea1dc1759b4e69
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: 4ffef401c07dbb27db7c0225acdc6817d95bfe11
+ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024975"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451600"
 ---
 ## <a name="available-counters"></a>Доступные счетчики
 
@@ -18,7 +18,7 @@ ms.locfileid: "88024975"
 |--|--|
 | :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | Процент времени в сборке мусора с момента последнего сборки мусора |
 | :::no-loc text="Allocation Rate"::: (`alloc-rate`) | Скорость выделения в байтах |
-| :::no-loc text="CPU Usage"::: (`cpu-usage`) | Процент использования ЦП |
+| :::no-loc text="CPU Usage"::: (`cpu-usage`) | Процент использования ЦП процессом |
 | :::no-loc text="Exception Count"::: (`exception-count`) | Количество произошедших исключений |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | Количество байтов, которое должно быть выделено на основе <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
 | :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | Количество сборок мусора для поколения 0 |
@@ -28,6 +28,8 @@ ms.locfileid: "88024975"
 | :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | Количество сборок мусора для поколения 2 |
 | :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | Количество байтов для сборки мусора поколения 2 |
 | :::no-loc text="LOH Size"::: (`loh-size`) | Количество байтов для сборки мусора поколения 3 |
+| :::no-loc text="POH Size"::: (`poh-size`) | Количество байтов для кучи закрепленных объектов (доступно в .NET 5 и более поздних версиях) |
+| :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | Фрагментация кучи сборки мусора (доступно в .NET 5 и более поздних версиях) |
 | :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | Значение, указывающее, сколько раз возникало состязание при попытке установить блокировку монитора на основе <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> |
 | :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | Количество активных в данных момент экземпляров <xref:System.Threading.Timer> на основе <xref:System.Threading.Timer.ActiveCount?displayProperty=nameWithType> |
 | :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`) | Количество экземпляров <xref:System.Reflection.Assembly>, загруженных в процесс в определенный момент времени |
@@ -35,6 +37,8 @@ ms.locfileid: "88024975"
 | :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`) | Количество рабочих элементов, находящихся в настоящее время в очереди на обработку в <xref:System.Threading.ThreadPool> |
 | :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | Текущее количество потоков пула потоков в <xref:System.Threading.ThreadPool> на основе <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> |
 | :::no-loc text="Working Set"::: (`working-set`) | Объем физической памяти, сопоставленной контексту процесса, в определенный момент времени на основе <xref:System.Environment.WorkingSet?displayProperty=nameWithType> |
+| :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | Общий размер IL, скомпилированных JIT-компилятором, в байтах (доступно в .NET 5 и более поздних версиях) |
+| :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | Общее число методов, скомпилированных JIT-компилятором (доступно в .NET 5 и более поздних версиях) |
 
 ### <a name="microsoftaspnetcorehosting-counters"></a>Счетчики "Microsoft.AspNetCore.Hosting"
 

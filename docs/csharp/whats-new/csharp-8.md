@@ -2,12 +2,12 @@
 title: Новые возможности в C# 8.0. Руководство по языку C#
 description: Обзор новых функций, доступных в C# 8.0.
 ms.date: 04/07/2020
-ms.openlocfilehash: eee395c33585028cd81861045f05f7790d8db949
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 43b9c69c649b83d4cf78ef4c7d131ce900a49d11
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414894"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654872"
 ---
 # <a name="whats-new-in-c-80"></a>Новые возможности C# 8.0
 
@@ -322,7 +322,7 @@ static int WriteLinesToFile(IEnumerable<string> lines)
 
 ## <a name="static-local-functions"></a>Статические локальные функции
 
-Теперь вы можете добавить модификатор `static` для локальных функций, чтобы убедиться, что локальная функция не захватывает (не ссылается на) какие-либо переменные из области видимости. Это приводит к возникновению ошибки `CS8421`: "A static local function can't contain a reference to \<variable>" (Статическая локальная функция не может содержать ссылку на \<variable>).
+Теперь вы можете добавить модификатор `static` в [локальные функции](../programming-guide/classes-and-structs/local-functions.md), чтобы убедиться, что локальная функция не сохраняет (не ссылается на) какие-либо переменные из включающей области. Это приводит к возникновению ошибки `CS8421`: "A static local function can't contain a reference to \<variable>" (Статическая локальная функция не может содержать ссылку на \<variable>).
 
 Рассмотрим следующий код. Локальная функция `LocalFunction` обращается к переменной `y`, объявленной в области видимости (метод `M`). Таким образом `LocalFunction` не может объявляться с помощью модификатора `static`:
 

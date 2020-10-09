@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: ac2b4193849c56002c5bba35932f2882b987a0d6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 60b511adecf37855de91f45245fc55911ba281dc
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537500"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654775"
 ---
 # <a name="whats-new-in-net-core-30"></a>Новые возможности .NET Core 3.0
 
@@ -27,7 +27,13 @@ ms.locfileid: "90537500"
 
 ## <a name="language-improvements-c-80"></a>Улучшения C# 8.0
 
-В этот выпуск также входит версия C# 8.0, в которой появились [ссылочные типы, допускающие значение NULL](../../csharp/tutorials/nullable-reference-types.md), [асинхронные потоки](../../csharp/tutorials/generate-consume-asynchronous-stream.md) и [другие возможности](../../csharp/tutorials/pattern-matching.md). Дополнительные сведения о функциях C# 8.0 см. в разделе [Новые возможности C# 8.0](../../csharp/whats-new/csharp-8.md).
+В этот выпуск также входит версия C# 8.0, в которой появились [ссылочные типы, допускающие значение NULL](../../csharp/language-reference/builtin-types/nullable-reference-types.md), асинхронные потоки и другие шаблоны. Дополнительные сведения о функциях C# 8.0 см. в разделе [Новые возможности C# 8.0](../../csharp/whats-new/csharp-8.md).
+
+Учебники по функциям языка C# 8.0:
+
+- [Учебник. Четкое выражение проектного замысла с помощью ссылочных типов, допускающих и не допускающих значение null](../../csharp/tutorials/nullable-reference-types.md)
+- [Учебник. Создание и использование асинхронных потоков с использованием C# 8.0 и .NET Core 3.0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
+- [Учебник. Использование сопоставления шаблонов для создания управляемых типами и управляемых данными алгоритмов](../../csharp/tutorials/pattern-matching.md)
 
 Добавлены улучшения языка для поддержки следующих функций API:
 
@@ -205,6 +211,8 @@ dotnet publish -r <rid> -c Release
 - можно использовать Windows x64 для компиляции образов Windows ARM32, ARM64 и x86;
 - можно использовать Windows x86 для компиляции образов Windows ARM32;
 - можно использовать Linux x64 для компиляции образов Linux ARM32 и ARM64.
+
+Дополнительные сведения см. в статье о [ReadyToRun](../deploying/ready-to-run.md).
 
 ## <a name="runtimesdk"></a>Среда выполнения и пакет SDK
 

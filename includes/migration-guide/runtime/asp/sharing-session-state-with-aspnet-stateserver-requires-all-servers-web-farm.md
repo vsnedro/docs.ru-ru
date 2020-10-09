@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 76425ca03c98cd6a23b8366257f9e0d53b486edb
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: e450c53008e7562e37518fdfd6872ff9b63b6ac3
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89497455"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91609142"
 ---
-### <a name="sharing-session-state-with-aspnet-stateserver-requires-all-servers-in-the-web-farm-to-use-the-same-net-framework-version"></a>Для совместного доступа к состоянию сеанса с Asp.Net StateServer все серверы на веб-ферме должны использовать одинаковую версию .NET Framework
+### <a name="sharing-session-state-with-aspnet-stateserver-requires-all-servers-in-the-web-farm-to-use-the-same-net-framework-version"></a>Для совместного доступа к состоянию сеанса с ASP.NET StateServer все серверы на веб-ферме должны использовать одинаковую версию .NET Framework
 
 #### <a name="details"></a>Подробнее
 

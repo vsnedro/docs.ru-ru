@@ -3,12 +3,12 @@ title: Параметры конфигурации компиляции
 description: Сведения о параметрах времени выполнения, определяющих, как JIT-компилятор работает для приложений .NET Core.
 ms.date: 11/27/2019
 ms.topic: reference
-ms.openlocfilehash: cfcf9b5fc8d11a4ae35ab9b152f32133cd6930bf
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: e5f9e1245b749864787fb808527d022665197edf
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762010"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654846"
 ---
 # <a name="run-time-configuration-options-for-compilation"></a>Параметры конфигурации времени выполнения для компиляции
 
@@ -135,7 +135,7 @@ ms.locfileid: "83762010"
 ## <a name="readytorun"></a>ReadyToRun
 
 - Указывает, использует ли среда выполнения .NET Core предварительно скомпилированный код для образов с доступными данными ReadyToRun. При отключении этого параметра среда выполнения будет принудительно выполнять JIT-компиляцию платформенного кода.
-- Дополнительные сведения см. в разделе о [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
+- Дополнительные сведения см. в статье о [ReadyToRun](../deploying/ready-to-run.md).
 - Если этот параметр не задан, .NET использует данные ReadyToRun, когда они доступны. Это эквивалентно присвоению значения `1`.
 
 | | Имя параметра | Значения |

@@ -1,25 +1,29 @@
 ---
 description: Модификатор static. Справочник по C#
 title: Модификатор static. Справочник по C#
-ms.date: 04/22/2020
+ms.date: 09/25/2020
 f1_keywords:
 - static
 - static_CSharpKeyword
 helpviewer_keywords:
 - static keyword [C#]
 ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
-ms.openlocfilehash: f42636d1bbdf4342297f46f50ec6dfc2a70eacad
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 239163fc2f91ccbfe8b1c111a358db87d36a8308
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89142067"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654643"
 ---
 # <a name="static-c-reference"></a>static (Справочник по C#)
 
 На этой странице приводятся сведения о ключевом слове модификатора `static`. Ключевое слово `static` также является частью директивы [`using static`](using-static.md).
 
 Модификатор `static` используется для объявления статического члена, принадлежащего собственно типу, а не конкретному объекту. Модификатор `static` можно использовать для объявления классов `static`. В классах, интерфейсах и структурах вы можете добавить модификатор `static` к полям, методам, свойствам, операторам, событиям и конструкторам. Модификатор `static` запрещено использовать с индексаторами или методами завершения. Дополнительные сведения см. в статье [Статические классы и члены статических классов](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
+
+Начиная с C# 8.0 можно добавить модификатор `static` в [локальную функцию](../../programming-guide/classes-and-structs/local-functions.md). Статическая локальная функция не может сохранять локальные переменные или состояние экземпляра.
+
+Начиная с C# 9.0 можно добавить модификатор `static` в [лямбда-выражение](../operators/lambda-expressions.md) или [анонимный метод](../operators/delegate-operator.md). Статическое лямбда-выражение или анонимный метод не могут сохранять локальные переменные или состояние экземпляра.
 
 ## <a name="example---static-class"></a>Пример: статический класс
 

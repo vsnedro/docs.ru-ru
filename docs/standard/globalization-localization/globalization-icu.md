@@ -10,12 +10,12 @@ helpviewer_keywords:
 - application development [.NET Framework], globalization
 - culture, globalization
 - icu, icu on windows, ms-icu
-ms.openlocfilehash: 6ea848d4a60069e6702b9d60fd90a55f572fb043
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 60533fbb215ffe8baba7e2d200faa1c4937294b9
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842515"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654885"
 ---
 # <a name="net-globalization-and-icu"></a>Глобализация .NET и ICU
 
@@ -152,3 +152,21 @@ install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /
 ```
 LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
 ```
+
+## <a name="icu-on-webassembly"></a>ICU в WebAssembly
+
+Доступна версия ICU, специально предназначенная для рабочих нагрузок WebAssembly. Она обеспечивает совместимость глобализации с профилями рабочих столов. Чтобы уменьшить размер файла данных ICU с 24 МБ до 1,4 МБ (или около 0,3 МБ при сжатии с помощью Brotli), к этой рабочей нагрузке применяется ряд ограничений.
+
+Не поддерживаются следующие API:
+
+- <xref:System.Globalization.CultureInfo.EnglishName?displayProperty=nameWithType>
+- <xref:System.Globalization.CultureInfo.NativeName?displayProperty=nameWithType>
+- <xref:System.Globalization.DateTimeFormatInfo.NativeCalendarName?displayProperty=nameWithType>
+- <xref:System.Globalization.RegionInfo.NativeName?displayProperty=nameWithType>
+
+Следующие API поддерживаются с ограничениями:
+
+- <xref:System.String.Normalize(System.Text.NormalizationForm)?displayProperty=nameWithType> и <xref:System.String.IsNormalized(System.Text.NormalizationForm)?displayProperty=nameWithType> не поддерживают редко используемые формы <xref:System.Text.NormalizationForm.FormKC> и <xref:System.Text.NormalizationForm.FormKD>.
+- <xref:System.Globalization.RegionInfo.CurrencyNativeName?displayProperty=nameWithType> возвращает то же значение, что и <xref:System.Globalization.RegionInfo.CurrencyEnglishName?displayProperty=nameWithType>.
+
+Кроме того, список поддерживаемых языковых стандартов можно найти в [репозитории dotnet/icu](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54).

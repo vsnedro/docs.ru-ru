@@ -4,12 +4,12 @@ description: Узнайте, как анализатор .NET API помогае
 author: oliag
 ms.date: 02/20/2020
 ms.technology: dotnet-standard
-ms.openlocfilehash: 8da4b2add206daa431124a7d24efc2676cbcaa69
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: f1268d5f208e19f1b69ed487370fb4c96723a204
+ms.sourcegitcommit: 1274a1a4a4c7e2eaf56b38da76ef7cec789726ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598098"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91406249"
 ---
 # <a name="net-api-analyzer"></a>Анализатор .NET API
 
@@ -85,6 +85,9 @@ ms.locfileid: "89598098"
 
 ## <a name="discover-cross-platform-issues"></a>Обнаружение проблем с межплатформенным взаимодействием
 
+> [!NOTE]
+> В .NET 5.0 в качестве замены этой функции предлагается [Анализатор совместимости платформ](platform-compat-analyzer.md). Анализатор совместимости платформ включен в пакет SDK для .NET (не требуется устанавливать его отдельно) и включен по умолчанию.
+
 Помимо устаревших API-интерфейсов анализатор определяет все API-интерфейсы, не поддерживающие кроссплатформенность. Например, <xref:System.Console.WindowWidth?displayProperty=nameWithType> работает только в Windows, но не в Linux или macOS. Идентификатор диагностики отображается в окне **Список ошибок**. Чтобы скрыть это предупреждение, щелкните его правой кнопкой мыши и выберите пункт **Быстрые действия и рефакторинг**. В отличие от ситуации с устареванием, когда у вас есть два варианта (продолжать использование конкретного устаревшего элемента, скрыв предупреждение, или отказаться от его использования), здесь вы можете сразу отключить все предупреждения о тех платформах, для которых не предназначено ваше приложение. Для этого откройте файл проекта, добавьте в него свойство `PlatformCompatIgnore` и перечислите в нем все платформы, которые следует игнорировать. Допустимые значения: `Linux`, `macOS` и (или) `Windows`.
 
 ```xml
@@ -129,3 +132,4 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 
 - Запись блога [Знакомство с API анализатора](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/).
 - Демонстрационное видео [об анализаторе API](https://youtu.be/eeBEahYXGd0) на YouTube.
+- [Анализатор совместимости платформ](platform-compat-analyzer.md)
