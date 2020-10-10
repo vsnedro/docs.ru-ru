@@ -9,12 +9,12 @@ helpviewer_keywords:
 - out-of-band releases
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 ms.topic: conceptual
-ms.openlocfilehash: c6404df5d4f0be381bc0a9c1924fcf82cf078306
-ms.sourcegitcommit: 70d6a7e4f7187cbfa332f0f8be76566f7828cfcd
+ms.openlocfilehash: 55cb37cc2c9184eeb55ee0aab39e97f4a3f7b7d8
+ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075479"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91877643"
 ---
 # <a name="additional-class-libraries-and-apis"></a>Дополнительные библиотеки классов и интерфейсы API
 
@@ -24,25 +24,25 @@ ms.locfileid: "88075479"
 
 Чтобы улучшить разработку на разных платформах и впервые добавить новые функции, некоторые .NET Framework функции были выпущены с использованием аппаратного контроллера управления (OOB).
 
-| Проект | Описание |  
-| ------- | ----------- |  
+| Проект | Описание |
+| ------- | ----------- |
 | <xref:System.Collections.Immutable> | Предоставляет потокобезопасные коллекции, содержимое которых никогда не меняется. |
 | <xref:System.Net.Http.WinHttpHandler> | Предоставляет обработчик сообщений для <xref:System.Net.Http.HttpClient> на основе интерфейса WinHTTP ОС Windows. |
 | <xref:System.Numerics> | Представляет собой библиотеку векторных типов, которые могут использовать преимущества аппаратного ускорения SIMD.|
-| <xref:System.Threading.Tasks.Dataflow> | Библиотека потоков данных TPL предоставляет компоненты потока данных, позволяющие повысить надежность приложений с поддержкой параллелизма. |  
+| <xref:System.Threading.Tasks.Dataflow> | Библиотека потоков данных TPL предоставляет компоненты потока данных, позволяющие повысить надежность приложений с поддержкой параллелизма. |
 
 ## <a name="platform-specific-libraries"></a>Библиотеки для конкретных платформ
 
 Некоторые библиотеки предназначены для конкретных платформ. Например, <xref:System.Text.CodePagesEncodingProvider> класс делает кодировки кодовых страниц доступными для приложений UWP, разработанных с помощью .NET Framework.
-  
-| Проект | Описание |  
-| ------- | ----------- |  
-| <xref:System.Text.CodePagesEncodingProvider> | Расширяет <xref:System.Text.EncodingProvider> класс, чтобы сделать кодировки кодовых страниц доступными для приложений, предназначенных для универсальная платформа Windows. |  
-  
-## <a name="private-apis"></a>Частные интерфейсы API  
 
-Эти API поддерживают инфраструктуру продукта и не предназначены для использования непосредственно из кода.  
-  
+| Проект | Описание |
+| ------- | ----------- |
+| <xref:System.Text.CodePagesEncodingProvider> | Расширяет <xref:System.Text.EncodingProvider> класс, чтобы сделать кодировки кодовых страниц доступными для приложений, предназначенных для универсальная платформа Windows. |
+
+## <a name="private-apis"></a>Частные интерфейсы API
+
+Эти API поддерживают инфраструктуру продукта и не предназначены для использования непосредственно из кода.
+
 * [Свойство Microsoft. SqlServer. Server. Смиордерпроперти. Item](microsoft.sqlserver.server.smiorderproperty.item.md)
 * [Метод System. Exception. Препфорремотинг](system.exception.prepforremoting.md)
 * [Свойство System. Data. SqlTypes. SqlChars. Stream](system.data.sqltypes.sqlchars.stream.md)
@@ -82,16 +82,19 @@ ms.locfileid: "88075479"
 * [System .NET. ServicePoint. m \_ коннектионграуплист, поле](m_connectiongrouplist.md)
 * [System .NET. ServicePointManager. Клосеконнектионграупс, метод](system.net.servicepointmanager.closeconnectiongroups.md)
 * [Поле System .NET. ServicePointManager. s \_ сервицепоинттабле](s_servicepointtable.md)
-* [Поле System .NET. Тлсстреам. m_Worker](system.net.tlsstream.m_worker.md)
+* [System.Net.TlsStream.m_Worker поле](system.net.tlsstream.m_worker.md)
 * [Класс System .NET. Унсафенклнативемесодс](system.net.unsafenclnativemethods.md)
 * [System .NET. Вебхеадерколлектион. Аддинтернал, метод](system.net.webheadercollection.addinternal.md)
 * [Метод System. ServiceModel. Channels. Message. Бодитостринг](system.servicemodel.channels.message.bodytostring.md)
 * [Метод System. ServiceModel. Channels. Message. Вритестарсеадерс](system.servicemodel.channels.message.writestartheaders.md)
 * [Класс System. Web. Compilation. Контролбуилдеринтерцептор](controlbuilderinterceptor-class.md)
+* [Метод System. Windows. Controls. Гридвиевхеадерровпресентер. Финдхеадербиколумн](system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md)
+* [Метод System. Windows. Controls. Гридвиевхеадерровпресентер. Макепарентитемсконтролготфокус](system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md)
+* [Метод System. Windows. Controls. Гридвиевхеадерровпресентер. Препарехеадердраг](system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md)
 * [System. Windows. Diagnostics. Висуалдиагностикс. s \_ исдебугжерчеккдисабледфортестпурпосес, поле](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [Класс System. Windows. Forms. Design. DataMemberFieldEditor](datamemberfieldeditor-class.md)
 * [Класс System. Windows. Forms. Design. DataMemberListEditor](datamemberlisteditor-class.md)
-* [МетодSystem.Xml.XmlReader. Креатесклреадер](system.xml.xmlreader.createsqlreader.md)
+* [ МетодSystem.Xml.XmlReader. Креатесклреадер](system.xml.xmlreader.createsqlreader.md)
 * [ADODB. Интерфейс подключения](adodb.connection.md)
 * [ADODB. Перечисление Евентреасон](adodb.eventreasonenum.md)
 * [ADODB. Перечисление Евентстатус](adodb.eventstatusenum.md)
@@ -103,7 +106,7 @@ ms.locfileid: "88075479"
 * [стдоле. Ипиктуредисп. Handle, свойство](stdole.ipicturedisp.handle.md)
 * [стдоле. Интерфейс Стдфонт](stdole.stdfont.md)
 * [стдоле. Интерфейс Стдпиктуре](stdole.stdpicture.md)
-  
-## <a name="see-also"></a>Дополнительно
+
+## <a name="see-also"></a>См. также
 
 * [.NET Framework и внештатные выпуски](../get-started/the-net-framework-and-out-of-band-releases.md)
