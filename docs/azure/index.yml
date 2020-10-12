@@ -8,12 +8,12 @@ metadata:
   ms.topic: hub-page
   ms.prod: azure-dotnet
   ms.date: 08/12/2020
-  ms.openlocfilehash: 041b2124dde5ea5a1d6c04947fe14b1f72f6dacc
-  ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
+  ms.openlocfilehash: 0708f2429f9943e14a5d0b843d6c6f0e6b2232bc
+  ms.sourcegitcommit: a6bd4cad438fe479cbd112eae10f2cd449f06e40
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/13/2020
-  ms.locfileid: "88187937"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "91844555"
 highlightedContent:
   items:
   - itemType: overview
@@ -115,21 +115,21 @@ conceptualContent:
     - itemType: quickstart
       text: Выполнение запросов к Azure PostgreSQL с помощью .NET
       url: /azure/postgresql/connect-csharp
+    - itemType: concept
+      text: Использование шаблона репозитория с Azure Cosmos DB
+      url: https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-repository-net-sdk-v-1-0-4/
+    - itemType: tutorial
+      text: Подключение и отправка запросов к Базе данных Azure для PostgreSQL
+      url: /azure/postgresql/connect-csharp
     - itemType: learn
-      text: Разработка и настройка приложения ASP.NET, обращающегося к базе данных SQL Azure
-      url: /learn/modules/develop-app-that-queries-azure-sql/
+      text: Хранение и извлечение реляционных данных с помощью Entity Framework Core
+      url: /learn/modules/persist-data-ef-core/
     - itemType: learn
-      text: Создание приложения .NET Core для Azure Cosmos DB в Visual Studio Code
+      text: Создание приложения .NET Core с использованием Azure Cosmos DB в Visual Studio Code
       url: /learn/modules/build-cosmos-db-app-with-vscode/
     - itemType: learn
       text: Хранение данных приложения в хранилище больших двоичных объектов Azure
       url: /learn/modules/store-app-data-with-azure-blob-storage/
-    - itemType: learn
-      text: Хранение и извлечение реляционных данных с помощью Entity Framework Core
-      url: /learn/modules/persist-data-ef-core/
-    - itemType: tutorial
-      text: Подключение и отправка запросов к Базе данных Azure для PostgreSQL
-      url: /azure/postgresql/connect-csharp
   - title: Проверка подлинности и безопасность
     links:
     - itemType: overview
