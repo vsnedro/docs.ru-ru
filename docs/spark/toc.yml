@@ -25,24 +25,46 @@
       href: tutorials/ml-sentiment-analysis.md
 - name: Практические руководства
   items:
+    - name: Подключение к данным
+      items:
+        - name: Служба хранилища Azure
+          href: how-to-guides/connect-to-azure-storage.md
+        - name: Центры событий
+          href: how-to-guides/connect-to-event-hub.md
+        - name: MongoDB
+          href: how-to-guides/connect-to-mongo-db.md
+        - name: "SQL\_Server"
+          href: how-to-guides/connect-to-sql-server.md
+    - name: Сборка приложений
+      items:
+        - name: Ubuntu
+          href: how-to-guides/ubuntu-instructions.md
+        - name: Windows
+          href: how-to-guides/windows-instructions.md
+    - name: Отправка удаленных заданий
+      items:
+        - name: Отправка заданий в Azure Synapse Analytics
+          href: /azure/synapse-analytics/spark/spark-dotnet
+        - name: Отправка заданий в Databricks
+          href: how-to-guides/databricks-deploy-methods.md
+        - name: Отправка заданий в HDInsight
+          href: how-to-guides/hdinsight-deploy-methods.md
+    - name: Определяемые пользователем функции (UDF)
+      items:
+        - name: Руководство по UDF
+          href: how-to-guides/udf-guide.md
+        - name: Функции UDF Java в .NET
+          href: how-to-guides/java-udf-from-dotnet.md
+        - name: Функции UDF в .NET Interactive
+          href: how-to-guides/dotnet-interactive-udf-issue.md
+        - name: Развертывание двоичных файлов рабочей роли и UDF
+          href: how-to-guides/deploy-worker-udf-binaries.md
+    - name: Использование записных книжек Jupyter
+      href: how-to-guides/dotnet-spark-jupyter-notebooks.md
     - name: Руководство по трансляции
       href: how-to-guides/broadcast-guide.md
-    - name: Руководство по UDF
-      href: how-to-guides/udf-guide.md
     - name: Отладка приложения
       href: how-to-guides/debug.md
-    - name: Отправка заданий в Azure Synapse Analytics
-      href: /azure/synapse-analytics/spark/spark-dotnet
-    - name: Отправка заданий в HDInsight
-      href: how-to-guides/hdinsight-deploy-methods.md
-    - name: Отправка заданий в Databricks
-      href: how-to-guides/databricks-deploy-methods.md
-    - name: Развертывание двоичных файлов рабочей роли и UDF
-      href: how-to-guides/deploy-worker-udf-binaries.md
-    - name: Сборка приложения в Ubuntu
-      href: how-to-guides/ubuntu-instructions.md
-    - name: Сборка приложения в Windows
-      href: how-to-guides/windows-instructions.md
     - name: Установка интерактивных записных книжек в Azure HDInsight
       href: how-to-guides/hdinsight-notebook-installation.md
 - name: Справочник
@@ -53,7 +75,7 @@
   items:
     - name: Обзор ресурсов
       href: resources/index.md
-    - name: GitHub
+    - name: .NET для Apache Spark (GitHub)
       href: 'https://github.com/dotnet/spark'
     - name: Stack Overflow
       href: 'https://stackoverflow.com/questions/tagged/.net-spark'
