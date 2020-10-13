@@ -3,14 +3,14 @@ title: Учебник по выполнению пакетной обработ�
 description: Узнайте, как выполнять пакетную обработку с помощью .NET для Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: dbc3ab5cc4bd7f438e9f3f8e5d36c764d785ce4b
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 666292fa2e9cecbd4e0aacd291f1008810eb257e
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618289"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955399"
 ---
 # <a name="tutorial-do-batch-processing-with-net-for-apache-spark"></a>Учебник. Выполнение пакетной обработки с помощью .NET для Apache Spark
 
@@ -25,8 +25,6 @@ ms.locfileid: "85618289"
 > * создать и выполнить приложение .NET для Apache Spark;
 > * считывать данные в DataFrame и подготовить их для анализа;
 > * обрабатывать данные с помощью Spark SQL.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 

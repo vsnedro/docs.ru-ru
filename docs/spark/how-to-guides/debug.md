@@ -1,21 +1,19 @@
 ---
 title: Отладка приложения .NET для Apache Spark в Windows
 description: Узнайте, как отлаживать приложения .NET для Apache Spark в Windows.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 249b4bccbf1378d8ef8c824f39151c33fb9f875a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 43531e6b2f9a79658f89b804dfa2bb97d6e9645b
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557155"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91954988"
 ---
 # <a name="debug-a-net-for-apache-spark-application"></a>Отладка приложения .NET для Apache Spark
 
 Это практическое руководство содержит сведения о том, как отлаживать приложения .NET для Apache Spark в Windows.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="debug-your-application"></a>Отладка приложения
 

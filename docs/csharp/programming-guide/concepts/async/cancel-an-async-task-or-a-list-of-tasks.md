@@ -4,12 +4,12 @@ description: Узнайте, как использовать токены отм
 ms.date: 08/19/2020
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
-ms.openlocfilehash: 84cd1bb413d20b6c13be8415c13c72b57873b1cf
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.openlocfilehash: 79c9db53674182489c89d657786bf39e8bb44b21
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654709"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805256"
 ---
 # <a name="cancel-a-list-of-tasks-c"></a>Отмена списка задач (C#)
 
@@ -115,7 +115,7 @@ static async Task Main()
 }
 ```
 
-Обновленный метод `Main` теперь считается [асинхронным методом main](../../../whats-new/csharp-7-1.md#async-main), который позволяет использовать асинхронную точку входа в исполняемом файле. Он записывает в консоль несколько сообщений с инструкциями, а затем объявляет экземпляр <xref:System.Threading.Tasks.Task> с именем `cancelTask`, который будет считывать нажатия клавиш в консоли. Если нажата клавиша <kbd>ВВОД</kbd>, выполняется вызов <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType>. Это приведет к отмене сигнала. Затем переменная `sumPageSizesTask` назначается методом `SumPageSizesAsync`. Затем обе задачи передаются в <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, что будет продолжено после завершения любой из этих задач.
+Обновленный метод `Main` теперь считается [асинхронным методом main](../../../whats-new/csharp-7.md#async-main), который позволяет использовать асинхронную точку входа в исполняемом файле. Он записывает в консоль несколько сообщений с инструкциями, а затем объявляет экземпляр <xref:System.Threading.Tasks.Task> с именем `cancelTask`, который будет считывать нажатия клавиш в консоли. Если нажата клавиша <kbd>ВВОД</kbd>, выполняется вызов <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType>. Это приведет к отмене сигнала. Затем переменная `sumPageSizesTask` назначается методом `SumPageSizesAsync`. Затем обе задачи передаются в <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, что будет продолжено после завершения любой из этих задач.
 
 ## <a name="create-the-asynchronous-sum-page-sizes-method"></a>Создание метода асинхронного суммирования размеров страниц
 

@@ -3,12 +3,12 @@ title: История языка C# (руководство по C#)
 description: На что был похож этот язык в ранних версиях и во что он превратился сейчас?
 author: erikdietrich
 ms.date: 04/08/2020
-ms.openlocfilehash: b5c320e4c55803547fa44793a46e4a3da65bd0cb
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 349f2cfbe0fc93060eb6927ee8c3528c16b99aca
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063475"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805093"
 ---
 # <a name="the-history-of-c"></a>История языка C\#
 
@@ -19,11 +19,11 @@ ms.locfileid: "88063475"
 
 Для использования средств сборки C# требуется последний основной выпуск версии языка по умолчанию. Основные выпуски, описанные в других статьях этого раздела, могут чередоваться с дополнительными выпусками. Чтобы использовать новые возможности доработанного выпуска, [настройте версию языка компилятора](../language-reference/configure-language-version.md), выбрав необходимую. После C# 7.0 было три дополнительных выпуска:
 
-- [C# 7.3](csharp-7-3.md).
+- C# 7.3.
   - Версия C# 7.3 появилась в [Visual Studio 2017 версии 15.7](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) и [пакете SDK для .NET Core 2.1](../../core/whats-new/dotnet-core-2-1.md).
-- [C# 7.2](csharp-7-2.md).
+- C# 7.2.
   - Версия C# 7.2 появилась в [Visual Studio 2017 версии 15.5](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) и [пакете SDK для .NET Core 2.0](../../core/whats-new/dotnet-core-2-0.md).
-- [C# 7.1](csharp-7-1.md).
+- C# 7.1.
   - Версия C# 7.1 появилась в [Visual Studio 2017 версии 15.3](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) и [пакете SDK для .NET Core 2.0](../../core/whats-new/dotnet-core-2-0.md).
 
 ## <a name="c-version-10"></a>C# версии 1.0
@@ -157,7 +157,7 @@ C# версии 3.0 был выпущен в конце 2007 года вмест
 C# версии 7.0 был выпущен вместе с Visual Studio 2017. В этой версии получили развитие некоторые функции из версии C# 6.0, однако компилятор в виде службы отсутствует. Ниже приведены некоторые из новых функций:
 
 - [Переменные Out](./csharp-7.md#out-variables)
-- [Кортежи и деконструкция](./csharp-7.md#tuples)
+- [Кортежи и деконструкция](./csharp-7.md#tuples-and-discards)
 - [Сопоставление шаблонов](./csharp-7.md#pattern-matching)
 - [Локальные функции](./csharp-7.md#local-functions)
 - [Расширенные элементы, воплощающие выражение](./csharp-7.md#more-expression-bodied-members)
@@ -165,7 +165,7 @@ C# версии 7.0 был выпущен вместе с Visual Studio 2017. 
 
 Другие возможности:
 
-- [Операции удаления](./csharp-7.md#discards)
+- [Операции удаления](./csharp-7.md#tuples-and-discards)
 - [Двоичные литералы и цифровые разделители](./csharp-7.md#numeric-literal-syntax-improvements)
 - [Выражения throw](./csharp-7.md#throw-expressions)
 
@@ -179,30 +179,30 @@ C# начали выпускать *доработанные выпуски* с 
 
 Новые языковые функции в этом выпуске
 
-- [Метод `async` `Main`](./csharp-7-1.md#async-main)
+- [Метод `async` `Main`](./csharp-7.md#async-main)
   - Точка входа для приложения может иметь модификатор `async`.
-- [Литеральные выражения `default`](./csharp-7-1.md#default-literal-expressions)
+- [Литеральные выражения `default`](./csharp-7.md#default-literal-expressions)
   - Литеральные выражения по умолчанию можно использовать в выражениях значения по умолчанию, если можно вывести тип целевого объекта.
-- [Выводимые имена элементов кортежа](./csharp-7-1.md#inferred-tuple-element-names)
+- [Выводимые имена элементов кортежа](./csharp-7.md#tuples-and-discards)
   - Имена элементов кортежа часто можно вывести из инициализации кортежа.
-- [Сопоставление шаблонов в параметрах универсального типа](./csharp-7-1.md#pattern-matching-on-generic-type-parameters)
+- [Сопоставление шаблонов в параметрах универсального типа](./csharp-7.md#pattern-matching)
   - Выражения сопоставления шаблонов можно использовать с переменными, тип которых является параметром универсального типа.
 
-Наконец, у компилятора есть два параметра `-refout` и `-refonly`, которые управляют [созданием базовой сборки](./csharp-7-1.md#reference-assembly-generation).
+Наконец, у компилятора есть два параметра `-refout` и `-refonly`, которые управляют [созданием базовой сборки](./csharp-7.md#reference-assembly-generation).
 
 ## <a name="c-version-72"></a>C# версии 7.2
 
 В C# 7.2 добавлено несколько небольших языковых функций:
 
-- [Методы написания безопасного и эффективного кода](./csharp-7-2.md#safe-efficient-code-enhancements)
+- [Методы написания безопасного и эффективного кода](./csharp-7.md#enabling-more-efficient-safe-code)
   - Ряд улучшений синтаксиса, обеспечивающих работу с типами значений с использованием семантики ссылок.
-- [Неконечные именованные аргументы](./csharp-7-2.md#non-trailing-named-arguments)
+- [Неконечные именованные аргументы](./csharp-7.md#non-trailing-named-arguments)
   - После именованных аргументов могут следовать позиционные аргументы.
-- [Начальные символы подчеркивания в числовых литералах](./csharp-7-2.md#leading-underscores-in-numeric-literals)
+- [Начальные символы подчеркивания в числовых литералах](./csharp-7.md#numeric-literal-syntax-improvements)
   - Перед любыми печатными знаками в числовых литералах теперь могут использоваться начальные знаки подчеркивания.
-- [Модификатор доступа `private protected`](./csharp-7-2.md#private-protected-access-modifier)
+- [Модификатор доступа `private protected`](./csharp-7.md#private-protected-access-modifier)
   - Модификатор доступа `private protected` разрешает доступ для производных классов в одной сборке.
-- [Условные выражения`ref`](./csharp-7-2.md#conditional-ref-expressions)
+- [Условные выражения`ref`](./csharp-7.md#conditional-ref-expressions)
   - Результат условного выражения `?:` теперь может быть ссылкой.
 
 ## <a name="c-version-73"></a>C# версии 7.3
@@ -211,24 +211,24 @@ C# начали выпускать *доработанные выпуски* с 
 
 В ту группу, которая отвечает за повышение производительности безопасного кода, входят следующие новые возможности:
 
-- [доступ к полям фиксированной ширины без закрепления;](csharp-7-3.md#indexing-fixed-fields-does-not-require-pinning)
-- [возможность переназначать локальные переменные `ref`;](csharp-7-3.md#ref-local-variables-may-be-reassigned)
-- [возможность использовать инициализаторы для массивов `stackalloc`;](csharp-7-3.md#stackalloc-arrays-support-initializers)
-- [возможность использовать инструкции `fixed` с любым типом, который поддерживает шаблон;](csharp-7-3.md#more-types-support-the-fixed-statement)
-- [возможность использовать дополнительные универсальные ограничения.](csharp-7-3.md#enhanced-generic-constraints)
+- [доступ к полям фиксированной ширины без закрепления;](csharp-7.md#indexing-fixed-fields-does-not-require-pinning)
+- [возможность переназначать локальные переменные `ref`;](csharp-7.md#enabling-more-efficient-safe-code)
+- [возможность использовать инициализаторы для массивов `stackalloc`;](csharp-7.md#stackalloc-arrays-support-initializers)
+- [возможность использовать инструкции `fixed` с любым типом, который поддерживает шаблон;](csharp-7.md#more-types-support-the-fixed-statement)
+- [возможность использовать дополнительные универсальные ограничения.](csharp-7.md#enhanced-generic-constraints)
 
 Для существующих функций предоставлены следующие улучшения:
 
-- [возможность проверить `==` и `!=` с типами кортежа;](csharp-7-3.md#tuples-support--and-)
-- [больше мест для использования переменных выражений;](csharp-7-3.md#extend-expression-variables-in-initializers)
-- [возможность подключить атрибуты к резервному полю автоматически реализуемых свойств;](csharp-7-3.md#attach-attributes-to-the-backing-fields-for-auto-implemented-properties)
-- [улучшенное разрешение методов, аргументы которых отличаются модификатором `in`;](csharp-7-3.md#in-method-overload-resolution-tiebreaker)
-- [стало меньше неоднозначных вариантов при разрешении перегрузок.](csharp-7-3.md#improved-overload-candidates)
+- возможность проверить `==` и `!=` с типами кортежа;
+- больше мест для использование переменных выражений;
+- возможность подключить атрибуты к резервному полю автоматически реализуемых свойств;
+- улучшенное разрешение методов, аргументы которых отличаются модификатором `in`;
+- стало меньше неоднозначных вариантов при разрешении перегрузок.
 
 Новые параметры компилятора:
 
-- [`-publicsign` позволяет включить подписывание сборок как программного обеспечения с открытым кодом;](csharp-7-3.md#public-or-open-source-signing)
-- [`-pathmap` позволяет предоставить сопоставление для исходных каталогов.](csharp-7-3.md#pathmap)
+- `-publicsign` позволяет включить подписывание сборок как программного обеспечения с открытым кодом;
+- `-pathmap` позволяет предоставить сопоставление для исходных каталогов.
 
 ## <a name="c-version-80"></a>C# версии 8.0
 

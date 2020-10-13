@@ -1,26 +1,26 @@
 ---
 title: Развертывание рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark
 description: Узнайте, как развернуть рабочую роль и двоичные файлы пользовательских функций .NET для Apache Spark.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 672a32c430bd702167a294d2b895ac1ac90bf67e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 001798bfda628ce979570bcd89e7c5553347b275
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617721"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91954962"
 ---
 # <a name="deploy-net-for-apache-spark-worker-and-user-defined-function-binaries"></a>Развертывание рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark
 
 В этом руководстве приводятся общие инструкции по развертыванию рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark. Вы узнаете, какие переменные среды следует настроить, а также ознакомитесь с некоторыми часто используемыми параметрами для запуска приложений с помощью `spark-submit`.
 
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
-
 ## <a name="configurations"></a>Конфигурации
+
 В конфигурациях приводятся общие переменные среды и параметры для развертывания рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark.
 
 ### <a name="environment-variables"></a>Переменные среды
+
 При развертывании рабочих ролей и создании пользовательских функций может потребоваться задать ряд стандартных переменных среды.
 
 | Переменная среды         | Описание

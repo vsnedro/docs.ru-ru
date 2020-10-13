@@ -13,12 +13,12 @@ helpviewer_keywords:
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: 20c1d9786eaa184088500cf1b37d33afc421b5e7
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: d8fae870bb3a6fdda735a028dc1da20213a68a31
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89142028"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91756043"
 ---
 # <a name="switch-c-reference"></a>switch (справочник по C#)
 
@@ -87,7 +87,7 @@ switch (caseSwitch)
 
 Каждая метка case указывает на шаблон для сравнения с выражением сопоставления (переменная `caseSwitch` в предыдущем примере). Если они совпадают, управление передается разделу switch, который содержит **первую** соответствующую метку case. Если с выражением соответствия не совпадает ни один шаблон метки case, управление передается разделу с меткой case `default` при условии, что такой раздел существует. Если метки case `default` нет, никакие операторы ни в одном из разделов switch не выполняются, а оператор `switch` теряет управление.
 
-Дополнительные сведения об операторе `switch` и сопоставлении шаблонов см. в разделе [Сопоставление шаблонов с оператором `switch`](#pattern-matching with-the-switch-statement).
+Дополнительные сведения об операторе `switch` и сопоставлении шаблонов см. в разделе [Сопоставление шаблонов с оператором `switch`](#pattern-matching-with-the-switch-statement).
 
 Так как C# 6 поддерживает только шаблон констант и не допускает повтор постоянных значений, метки case определяют взаимоисключающие значения. При этом выражению сопоставления может соответствовать только один шаблон. В связи с этим порядок отображения операторов `case` не имеет значения.
 

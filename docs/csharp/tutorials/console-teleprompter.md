@@ -4,12 +4,12 @@ description: Это руководство раскроет для вас нек
 ms.date: 03/06/2017
 ms.technology: csharp-fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-ms.openlocfilehash: dbe64fe0a01ddab9e7a3ad0a9118b3fe59fba8aa
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 4c32b08c3e7eeaedce687ea5bc572e6a7bee0d3e
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656987"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91804898"
 ---
 # <a name="console-app"></a>Консольное приложение
 
@@ -187,7 +187,7 @@ ShowTeleprompter().Wait();
 Здесь, в методе `Main`, код синхронно ожидает завершения. Всегда, когда это возможно, следует использовать оператор `await` вместо синхронного ожидания. Но в методе `Main` консольного приложения запрещено использовать оператор `await`. В противном случае приложение завершит работу раньше, чем выполнит все свои задачи.
 
 > [!NOTE]
-> При использовании C# 7.1 или более поздней версии консольные приложения можно создавать с помощью [`async``Main` метода](../whats-new/csharp-7-1.md#async-main).
+> При использовании C# 7.1 или более поздней версии консольные приложения можно создавать с помощью [`async``Main` метода](../whats-new/csharp-7.md#async-main).
 
 Теперь следует создать второй асинхронный метод, который позволяет считывать данные ввода из консоли и реагировать на клавиши "<" (меньше), ">" (больше) и "X" или "x". Для выполнения этой задачи добавьте приведенный ниже метод.
 

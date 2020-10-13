@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: 60b511adecf37855de91f45245fc55911ba281dc
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.openlocfilehash: 8ba64a6e3bee4a5d27a07ab4ad4ef3a3f0749778
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654775"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91804636"
 ---
 # <a name="whats-new-in-net-core-30"></a>Новые возможности .NET Core 3.0
 
@@ -307,7 +307,7 @@ dotnet new winforms
 
 Visual Studio 2019 добавляет шаблоны **Новый проект** для .NET Core 3.0 Windows Forms и WPF.
 
-Дополнительные сведения о переносе существующего приложения .NET Framework см. в разделах [Перенос проектов WPF](../../desktop-wpf/migration/convert-project-from-net-framework.md) и [Перенос проектов Windows Forms](../porting/winforms.md).
+Дополнительные сведения о переносе существующего приложения .NET Framework см. в разделах [Перенос проектов WPF](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) и [Перенос проектов Windows Forms](../porting/winforms.md).
 
 #### <a name="winforms-high-dpi"></a>Высокое разрешение для WinForms
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - compiling satellite assemblies
 - re-signing assemblies
 ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
-ms.openlocfilehash: 3e515028919518cb93cdbec3417eef061a512832
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 95f6303976eff35c5eb17b9e3af205f4b38957bc
+ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558417"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91877552"
 ---
 # <a name="creating-satellite-assemblies-for-desktop-apps"></a>Создание вспомогательных сборок для приложений для настольных систем
 
@@ -95,13 +95,8 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
 
 2. Чтобы указать, что язык и региональные параметры по умолчанию для приложения — английский (en), необходимо добавить в файл AssemblyInfo приложения или в главный файл исходного кода, которые будут скомпилированы в основную сборку приложения, следующий атрибут <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType>.
 
-    ```csharp
-    [assembly: NeutralResourcesLanguageAttribute("en")]
-    ```
-
-    ```vb
-    <Assembly: NeutralResourcesLanguageAttribute("en")>
-    ```
+    [!code-csharp[Conceptual.Resources.Locating#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
+    [!code-vb[Conceptual.Resources.Locating#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
   
 3. Добавьте поддержку дополнительных языков и региональных параметров (en-US, fr-FR и ru-RU) в приложение следующим образом.  
   
@@ -125,7 +120,7 @@ al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dl
 5. Скомпилируйте следующий исходный код и ресурсы для языка и региональных параметров по умолчанию в основную сборку приложения:
 
     > [!IMPORTANT]
-    > При использовании командной строки, а не Visual Studio, для создания примера, необходимо изменить вызов конструктора класса <xref:System.Resources.ResourceManager> на следующий: `ResourceManager rm = new ResourceManager("Greetings", typeof(Example).Assembly);`
+    > При использовании командной строки, а не Visual Studio, для создания примера, необходимо изменить вызов конструктора класса <xref:System.Resources.ResourceManager> на следующий: `ResourceManager rm = new ResourceManager("Greeting", typeof(Example).Assembly);`
 
     [!code-csharp[Conceptual.Resources.Locating#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/program.cs#1)]
     [!code-vb[Conceptual.Resources.Locating#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/module1.vb#1)]

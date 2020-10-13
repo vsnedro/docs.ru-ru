@@ -1,21 +1,19 @@
 ---
 title: Создайте определяемые пользователем функции (UDF) в .NET для Apache Spark
 description: Узнайте, как реализовать определяемые пользователем функции (UDF) в .NET для приложений Apache Spark.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 97afda8ed17d3719c534d72ad3ad026745a70922
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 769bcf0a912d27e191dad82138648d1aefb3c3b6
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620928"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955040"
 ---
 # <a name="create-user-defined-functions-udf-in-net-for-apache-spark"></a>Создайте определяемые пользователем функции (UDF) в .NET для Apache Spark
 
 Из этой статьи вы узнаете, как использовать определяемые пользователем функции (UDF) в .NET для Apache Spark. [Определяемые пользователем функции (UDF)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) — это функция Spark, которая позволяет использовать пользовательские функции для расширения встроенных функций системы. Определяемые пользователем функции преобразуют значения из одной строки в таблице, получая одно соответствующее выходное значение для каждой строки на основе логики, определенной в UDF.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="define-udfs"></a>Указание определяемых пользователем функций
 

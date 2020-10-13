@@ -1,15 +1,15 @@
 ---
 title: Развертывание приложения .NET для Apache Spark в Azure HDInsight
 description: Узнайте, как развернуть приложение .NET для Apache Spark в HDInsight.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 9a4ca80463de41a50d103c696b2108d0cef023fc
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8ef1429d265c87347bb8771dc01b319fcb9e84d0
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548381"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955374"
 ---
 # <a name="tutorial-deploy-a-net-for-apache-spark-application-to-azure-hdinsight"></a>Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight
 
@@ -24,8 +24,6 @@ ms.locfileid: "90548381"
 > * Опубликовать приложение .NET для Apache Spark.
 > * Создать и запустить действие скрипта HDInsight.
 > * Запустить приложение .NET для Apache Spark в кластере HDInsight.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Предварительные требования
 

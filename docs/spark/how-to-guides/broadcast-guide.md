@@ -1,23 +1,21 @@
 ---
 title: Использование широковещательных переменных в .NET для Apache Spark
 description: Сведения об использовании широковещательных переменных в .NET для приложений Apache Spark.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: d86b160855cc4d3f3a6502f5606d4766b7c06aa0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3cf2215f59ce28878f44138386c01597ec852905
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617860"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955027"
 ---
 # <a name="use-broadcast-variables-in-net-for-apache-spark"></a>Использование широковещательных переменных в .NET для Apache Spark
 
 Из этой статьи вы узнаете, как использовать широковещательные переменные в .NET для Apache Spark. Механизм [широковещательных переменных в Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) обеспечивает совместное использование исполнителями переменных, которые предназначены исключительно для чтения. При таком подходе доступные только для чтения широковещательные переменные кэшируются на каждом компьютере, что позволяет не передавать их копии вместе с задачами. Применение широковещательных переменных позволяет эффективно передавать на каждый узел крупные наборы входных данных.
 
 Поскольку при использовании широковещательных переменных данные передаются только один раз, это позволяет добиться лучшей производительности по сравнению с локальными переменными, которые передаются исполнителям вместе с каждой задачей. Более подробные сведения о широковещательных переменных и причинах их применения см. в [официальной документации](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables).
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="create-broadcast-variables"></a>Создание широковещательных переменных
 
