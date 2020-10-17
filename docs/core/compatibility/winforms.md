@@ -2,12 +2,12 @@
 title: Критические изменения в Windows Forms
 description: Список критических изменений в Windows Forms для .NET Core и .NET 5.
 ms.date: 09/08/2020
-ms.openlocfilehash: 3e7d077d07203d9c231ae4a7805e593c5432c135
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 2311faab026bf1dfde348e231937eff73ec46172
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679008"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91804869"
 ---
 # <a name="breaking-changes-in-windows-forms"></a>Критические изменения в Windows Forms
 
@@ -17,6 +17,7 @@ ms.locfileid: "90679008"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Элемент DataGridView больше не сбрасывает шрифты для настраиваемых стилей ячеек](#datagridview-no-longer-resets-fonts-for-customized-cell-styles) | 5.0 |
 | [Свойству OutputType задано значение WinExe для приложений WPF и WinForms](#outputtype-set-to-winexe-for-wpf-and-winforms-apps) | 5.0 |
 | [API, связанные с DataGridView, теперь вызывают исключение InvalidOperationException](#datagridview-related-apis-now-throw-invalidoperationexception) | 5.0 |
 | [В приложениях WinForms и WPF используется Microsoft.NET.Sdk](#winforms-and-wpf-apps-use-microsoftnetsdk) | 5.0 |
@@ -39,6 +40,10 @@ ms.locfileid: "90679008"
 | [Параметр совместимости UseLegacyImages не поддерживается](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [datagridview-doesnt-reset-custom-font-settings](../../../includes/core-changes/windowsforms/5.0/datagridview-doesnt-reset-custom-font-settings.md)]
+
+***
 
 [!INCLUDE [automatically-infer-winexe-output-type](../../../includes/core-changes/windowsforms/5.0/automatically-infer-winexe-output-type.md)]
 

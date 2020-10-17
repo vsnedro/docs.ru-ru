@@ -155,6 +155,12 @@ items:
             href: ../core/sdk.md
           - name: Сообщения об ошибках
             items:
+              - name: NETSDK1005 и NETSDK1047
+                href: ../core/tools/sdk-errors/netsdk1005.md
+              - name: NETSDK1059
+                href: ../core/tools/sdk-errors/netsdk1059.md
+              - name: NETSDK1073
+                href: ../core/tools/sdk-errors/netsdk1073.md
               - name: NETSDK1145
                 href: ../core/tools/sdk-errors/netsdk1145.md
       - name: Интерфейс командной строки .NET Core
@@ -1497,44 +1503,42 @@ items:
             href: ../standard/attributes/retrieving-information-stored-in-attributes.md
       - name: Выбор между анонимными типами и кортежами
         href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-  - name: Расширения Майкрософт
+  - name: Внедрение зависимостей
     items:
-      - name: Параметр Configuration
-        items:
-          - name: Обзор
-            href: ../core/extensions/configuration.md
-            displayName: 'configuration,config,configuration sources,config sources'
-          - name: Поставщики конфигурации
-            href: ../core/extensions/configuration-providers.md
-            displayName: 'configuration providers,config providers'
-          - name: Реализация пользовательского поставщика конфигурации
-            href: ../core/extensions/custom-configuration-provider.md
-            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
-      - name: Внедрение зависимостей
-        items:
-          - name: Обзор
-            href: ../core/extensions/dependency-injection.md
-            displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
-          - name: Использование внедрения зависимостей
-            href: ../core/extensions/dependency-injection-usage.md
-            displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
-          - name: Рекомендации по внедрению зависимостей
-            href: ../core/extensions/dependency-injection-guidelines.md
-            displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
-      - name: Универсальный узел
-        href: ../core/extensions/generic-host.md
-      - name: Ведение журнала
-        items:
-          - name: Обзор
-            href: ../core/extensions/logging.md
-          - name: Поставщики ведения журнала
-            href: ../core/extensions/logging-providers.md
-          - name: Реализация пользовательского поставщика ведения журнала
-            href: ../core/extensions/custom-logging-provider.md
-          - name: Ведение журнала с высокой производительностью
-            href: ../core/extensions/high-performance-logging.md
+      - name: Обзор
+        href: ../core/extensions/dependency-injection.md
+        displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
+      - name: Использование внедрения зависимостей
+        href: ../core/extensions/dependency-injection-usage.md
+        displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
+      - name: Рекомендации по внедрению зависимостей
+        href: ../core/extensions/dependency-injection-guidelines.md
+        displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
+  - name: Параметр Configuration
+    items:
+      - name: Обзор
+        href: ../core/extensions/configuration.md
+        displayName: 'configuration,config,configuration sources,config sources'
+      - name: Поставщики конфигурации
+        href: ../core/extensions/configuration-providers.md
+        displayName: 'configuration providers,config providers'
+      - name: Реализация пользовательского поставщика конфигурации
+        href: ../core/extensions/custom-configuration-provider.md
+        displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
       - name: Шаблон параметров
         href: ../core/extensions/options.md
+  - name: Ведение журнала
+    items:
+      - name: Обзор
+        href: ../core/extensions/logging.md
+      - name: Поставщики ведения журнала
+        href: ../core/extensions/logging-providers.md
+      - name: Реализация пользовательского поставщика ведения журнала
+        href: ../core/extensions/custom-logging-provider.md
+      - name: Ведение журнала с высокой производительностью
+        href: ../core/extensions/high-performance-logging.md
+  - name: HostBuilder (универсальный узел)
+    href: ../core/extensions/generic-host.md
   - name: Доступ к данным
     items:
       - name: LINQ
@@ -1543,6 +1547,77 @@ items:
         href: ../standard/data/xml/
       - name: Microsoft.Data.Sqlite
         href: ../standard/data/sqlite/
+  - name: Файловый и потоковый ввод-вывод
+    items:
+      - name: Обзор
+        href: ../standard/io/index.md
+      - name: Форматы путей к файлам в системах Windows
+        href: ../standard/io/file-path-formats.md
+      - name: Распространенные задачи ввода-вывода
+        href: ../standard/io/common-i-o-tasks.md
+        items:
+          - name: Практическое руководство. Копирование каталогов
+            href: ../standard/io/how-to-copy-directories.md
+          - name: Практическое руководство. Перечисление каталогов и файлов
+            href: ../standard/io/how-to-enumerate-directories-and-files.md
+          - name: Практическое руководство. Считывание данных из нового файла и запись в этот файл
+            href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
+          - name: Практическое руководство. Открытие файла журнала и добавление в него данных
+            href: ../standard/io/how-to-open-and-append-to-a-log-file.md
+          - name: Практическое руководство. Запись текста в файл
+            href: ../standard/io/how-to-write-text-to-a-file.md
+          - name: Практическое руководство. Чтение текста из файла
+            href: ../standard/io/how-to-read-text-from-a-file.md
+          - name: Практическое руководство. Считывание символов из строки
+            href: ../standard/io/how-to-read-characters-from-a-string.md
+          - name: Практическое руководство. Запись символов в строку
+            href: ../standard/io/how-to-write-characters-to-a-string.md
+          - name: Практическое руководство. Добавление или удаление записей списка управления доступом
+            href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
+          - name: Практическое руководство. Сжатие и извлечение файлов
+            href: ../standard/io/how-to-compress-and-extract-files.md
+          - name: Составление потоков
+            href: ../standard/io/composing-streams.md
+          - name: Практическое руководство. Преобразование между потоками .NET Framework и потоками среды выполнения Windows
+            href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+      - name: Асинхронный файловый ввод-вывод
+        href: ../standard/io/asynchronous-file-i-o.md
+      - name: Обработка ошибок ввода-вывода
+        href: ../standard/io/handling-io-errors.md
+      - name: Изолированное хранилище
+        href: ../standard/io/isolated-storage.md
+        items:
+          - name: Типы изоляции
+            href: ../standard/io/types-of-isolation.md
+          - name: Практическое руководство. Получение хранилищ для изолированного хранения
+            href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
+          - name: Практическое руководство. Перечисление хранилищ для изолированного хранения
+            href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
+          - name: Практическое руководство. Удаление хранилищ из изолированного хранения
+            href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
+          - name: Практическое руководство. Предупреждение нехватки места при изолированном хранении
+            href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+          - name: Практическое руководство. Создание файлов и каталогов в изолированном хранилище
+            href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
+          - name: Практическое руководство. Поиск существующих файлов и каталогов в изолированном хранилище
+            href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+          - name: Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище
+            href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
+          - name: Практическое руководство. Удаление файлов и каталогов из изолированного хранилища
+            href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
+      - name: Каналы
+        href: ../standard/io/pipe-operations.md
+        items:
+          - name: Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
+            href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+          - name: Практическое руководство. Использование именованных каналов для сетевого взаимодействия между процессами
+            href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
+      - name: Конвейеры
+        href: ../standard/io/pipelines.md
+      - name: Работа с буферами
+        href: ../standard/io/buffers.md
+      - name: Сопоставленные в памяти файлы
+        href: ../standard/io/memory-mapped-files.md
   - name: 'Параллельная обработка, параллелизм и асинхронное программирование'
     items:
       - name: Обзор
@@ -1792,77 +1867,6 @@ items:
                 href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
               - name: Инструмент определения схемы XML (Xsd.exe)
                 href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-  - name: Файловый и потоковый ввод-вывод
-    items:
-      - name: Обзор
-        href: ../standard/io/index.md
-      - name: Форматы путей к файлам в системах Windows
-        href: ../standard/io/file-path-formats.md
-      - name: Распространенные задачи ввода-вывода
-        href: ../standard/io/common-i-o-tasks.md
-        items:
-          - name: Практическое руководство. Копирование каталогов
-            href: ../standard/io/how-to-copy-directories.md
-          - name: Практическое руководство. Перечисление каталогов и файлов
-            href: ../standard/io/how-to-enumerate-directories-and-files.md
-          - name: Практическое руководство. Считывание данных из нового файла и запись в этот файл
-            href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-          - name: Практическое руководство. Открытие файла журнала и добавление в него данных
-            href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-          - name: Практическое руководство. Запись текста в файл
-            href: ../standard/io/how-to-write-text-to-a-file.md
-          - name: Практическое руководство. Чтение текста из файла
-            href: ../standard/io/how-to-read-text-from-a-file.md
-          - name: Практическое руководство. Считывание символов из строки
-            href: ../standard/io/how-to-read-characters-from-a-string.md
-          - name: Практическое руководство. Запись символов в строку
-            href: ../standard/io/how-to-write-characters-to-a-string.md
-          - name: Практическое руководство. Добавление или удаление записей списка управления доступом
-            href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-          - name: Практическое руководство. Сжатие и извлечение файлов
-            href: ../standard/io/how-to-compress-and-extract-files.md
-          - name: Составление потоков
-            href: ../standard/io/composing-streams.md
-          - name: Практическое руководство. Преобразование между потоками .NET Framework и потоками среды выполнения Windows
-            href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
-      - name: Асинхронный файловый ввод-вывод
-        href: ../standard/io/asynchronous-file-i-o.md
-      - name: Обработка ошибок ввода-вывода
-        href: ../standard/io/handling-io-errors.md
-      - name: Изолированное хранилище
-        href: ../standard/io/isolated-storage.md
-        items:
-          - name: Типы изоляции
-            href: ../standard/io/types-of-isolation.md
-          - name: Практическое руководство. Получение хранилищ для изолированного хранения
-            href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-          - name: Практическое руководство. Перечисление хранилищ для изолированного хранения
-            href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-          - name: Практическое руководство. Удаление хранилищ из изолированного хранения
-            href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-          - name: Практическое руководство. Предупреждение нехватки места при изолированном хранении
-            href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-          - name: Практическое руководство. Создание файлов и каталогов в изолированном хранилище
-            href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-          - name: Практическое руководство. Поиск существующих файлов и каталогов в изолированном хранилище
-            href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-          - name: Практическое руководство. Считывание из файлов и запись в файлы в изолированном хранилище
-            href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-          - name: Практическое руководство. Удаление файлов и каталогов из изолированного хранилища
-            href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
-      - name: Каналы
-        href: ../standard/io/pipe-operations.md
-        items:
-          - name: Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
-            href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-          - name: Практическое руководство. Использование именованных каналов для сетевого взаимодействия между процессами
-            href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
-      - name: Конвейеры
-        href: ../standard/io/pipelines.md
-      - name: Работа с буферами
-        href: ../standard/io/buffers.md
-      - name: Сопоставленные в памяти файлы
-        href: ../standard/io/memory-mapped-files.md
   - name: Модульное тестирование
     displayName: 'xUnit,NUnit,MSTest,unit testing,testing'
     items:
@@ -2158,5 +2162,5 @@ items:
             href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
           - name: Перенос проектов C++/CLI
             href: ../core/porting/cpp-cli.md
-      - name: Выбор между .NET Core и .NET Framework для серверных приложений
+      - name: "Выбор между .NET\_5 и .NET\_Framework для серверных приложений"
         href: ../standard/choosing-core-framework-server.md

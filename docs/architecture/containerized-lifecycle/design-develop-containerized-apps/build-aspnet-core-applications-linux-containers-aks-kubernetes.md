@@ -2,12 +2,12 @@
 title: Сборка приложений ASP.NET Core, развернутых как контейнеры Linux в кластерах AKS/Kubernetes
 description: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 ms.date: 08/06/2020
-ms.openlocfilehash: 4b04e5d56c73918c665ad6e2825205870aac9606
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 8b3141d79eeb252ec3721d57293bed0e335b41d3
+ms.sourcegitcommit: a6bd4cad438fe479cbd112eae10f2cd449f06e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916441"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91844567"
 ---
 # <a name="build-aspnet-core-applications-deployed-as-linux-containers-into-an-akskubernetes-orchestrator"></a>Сборка приложений ASP.NET Core, развернутых как контейнеры Linux в оркестраторе AKS/Kubernetes
 
@@ -198,6 +198,9 @@ docker images
 ```powershell
 az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku basic --admin-enabled
 ```
+
+> [!NOTE]
+> Имя реестра контейнеров (например, `exploredocker`) должно быть уникальным в пределах Azure и содержать от 5 до 50 буквенно-цифровых знаков. Дополнительные сведения см. в разделе [Создание реестра контейнеров](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry).
 
 ### <a name="create-the-image-in-release-mode"></a>Создание образа в режиме выпуска
 

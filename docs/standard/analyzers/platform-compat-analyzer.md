@@ -3,12 +3,12 @@ title: Анализатор совместимости платформ
 description: Анализатор Roslyn, который помогает обнаруживать проблемы совместимости платформ в кросс-платформенных приложениях и библиотеках.
 author: buyaa-n
 ms.date: 09/17/2020
-ms.openlocfilehash: 4e842e5bbe90dd5006d9b27d0365f908b6441997
-ms.sourcegitcommit: 1274a1a4a4c7e2eaf56b38da76ef7cec789726ef
+ms.openlocfilehash: 44c2c2d9674b13f314a057f847df2d4d474cc2be
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91406591"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805302"
 ---
 # <a name="platform-compatibility-analyzer"></a>Анализатор совместимости платформ
 
@@ -25,7 +25,7 @@ ms.locfileid: "91406591"
 
 ## <a name="prerequisites"></a>предварительные требования
 
-Анализатор совместимости платформ является одним из анализаторов качества кода Roslyn. Начиная с .NET 5.0 эти анализаторы входят в состав [пакета SDK .NET](../../fundamentals/productivity/code-analysis.md). Анализатор совместимости платформ включен по умолчанию только для проектов, ориентированных на `net5.0` или более поздней версии. Но вы можете [включить](/visualstudio/code-quality/ca1416.md#configurability) его для проектов, ориентированных на другие платформы.
+Анализатор совместимости платформ является одним из анализаторов качества кода Roslyn. Начиная с .NET 5.0 эти анализаторы входят в состав [пакета SDK .NET](../../fundamentals/code-analysis/overview.md). Анализатор совместимости платформ включен по умолчанию только для проектов, ориентированных на `net5.0` или более поздней версии. Но вы можете [включить](/visualstudio/code-quality/ca1416.md#configurability) его для проектов, ориентированных на другие платформы.
 
 ## <a name="how-the-analyzer-determines-platform-dependency"></a>Как анализатор определяет зависимость платформы
 
@@ -70,7 +70,7 @@ ms.locfileid: "91406591"
     ```
 
   - **Список "Только неподдерживаемые".** Если самая ранняя версия для каждой платформы ОС задана атрибутом `[UnsupportedOSPlatform]`, API считается таким, который не поддерживается только указанными платформами и поддерживается всеми другими. Список может включать атрибут `[SupportedOSPlatform]` с такой же платформой, но более поздней версии, что означает поддержку API начиная с такой версии.
-  
+
     ```csharp
     // The API was unsupported on Windows until version 10.0.19041.0.
     // The API is considered supported everywhere else without constraints.
@@ -81,14 +81,14 @@ ms.locfileid: "91406591"
 
   - **Список "Несогласованные".** Если самая ранняя версия для некоторых платформ указана как `[SupportedOSPlatform]`, но для других платформ — как `[UnsupportedOSPlatform]`, она считается несогласованной, что не поддерживается в анализаторе.
   - Если самые ранние версии `[SupportedOSPlatform]` и атрибуты `[UnsupportedOSPlatform]` равны, анализатор считает, что платформа входит в **список только поддерживаемых**.
-- Атрибуты платформы могут применяться к типам, элементам (методам, полям, свойствам и событиями) и сборкам с разными именами и (или) версиями платформ.
+- Атрибуты платформы могут применяться к типам, элементам (методам, полям, свойствам и событиями) и сборкам с разными именами или версиями платформ.
   - Атрибуты, применяемые к целевой платформе `target` верхнего уровня, также применяются ко всем ее элементам и типам.
   - Атрибуты дочернего уровня применяются только в том случае, если они соответствуют правилу "Дочерние аннотации могут ограничивать поддержку платформ, но не могут расширять ее".
-    - Если родительский элемент включает список **Только поддерживаемые**, атрибуты дочернего элемента не смогут добавить поддержку новой платформы, так как это приведет к расширению поддержки родительского элемента. Поддержку новой платформы можно добавить только к самому родительскому элементу. Но он может включать атрибут `Supported` для такой же платформы более поздних версий, поскольку это сужает поддержку. Кроме того, он может включать атрибут `Unsupported` с такой же платформой, так как это также сужает поддержку в родительском элементе.
-    - Если родительский элемент включает список **Только неподдерживаемые**, атрибуты дочернего элемента могут добавить поддержку новой платформы, так как это сужает поддержку в родительском элементе. Но он не может включать атрибут `Supported` для такой же платформы, которая задана родительским элементом, ведь это приведет к расширению поддержки последнего. Поддержку одной платформы можно добавить только на уровне родительского элемента, на котором применяется исходный атрибут `Unsupported`.
+    - Если родительский элемент включает список **Только поддерживаемые**, атрибуты дочернего элемента не могут добавить поддержку новой платформы, так как это приведет к расширению поддержки родительского элемента. Поддержку новой платформы можно добавить только к самому родительскому элементу. Но дочерний элемент может включать атрибут `Supported` для такой же платформы более поздних версий, поскольку это сужает поддержку. Кроме того, дочерний элемент может иметь атрибут `Unsupported` с той же платформой, что также сужает поддержку родительского элемента.
+    - Если родительский элемент включает список **Только неподдерживаемые**, атрибуты дочернего элемента могут добавить поддержку новой платформы, так как это сужает поддержку родительского элемента. Но он не может иметь атрибут `Supported` для той же платформы, что и родительский элемент, так как это расширяет поддержку родительского элемента. Поддержку одной платформы можно добавить только в родительском элементе, на котором был применен исходный атрибут `Unsupported`.
   - Если `[SupportedOSPlatform("platformVersion")]` применяется более одного раза для API с одинаковым именем `platform`, анализатор будет обрабатывать только атрибут с минимальной версией.
   - Если `[UnsupportedOSPlatform("platformVersion")]` применяется более двух раз для API с одинаковым именем `platform`, анализатор будет обрабатывать только два атрибута с минимальными версиями.
-  
+
   > [!NOTE]
   > Поддержка API, который изначально поддерживался, но больше не поддерживается в поздней версии, не будет возобновлена в еще более поздних версиях.
 
@@ -123,7 +123,7 @@ ms.locfileid: "91406591"
       // warns: 'SupportedOnWindowsAndLinuxOnly' is supported on 'Linux'
       SupportedOnWindowsAndLinuxOnly();
 
-      // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is supported on 'windows' 8.0 and later  
+      // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is supported on 'windows' 8.0 and later
       // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is unsupported on 'windows' 10.0.19041.0 and later
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
@@ -133,7 +133,7 @@ ms.locfileid: "91406591"
   }
 
   // an API not supported on android but supported on all other.
-  [UnsupportedOSPlatform("android")]  
+  [UnsupportedOSPlatform("android")]
   public void DoesNotWorkOnAndroid() { }
 
   // an API was unsupported on Windows until version 8.0.
@@ -154,11 +154,11 @@ ms.locfileid: "91406591"
   {
       DoesNotWorkOnAndroid(); // warns 'DoesNotWorkOnAndroid' is unsupported on 'android'
 
-      // warns:'StartedWindowsSupportFromVersion8' is unsupported on 'windows'  
+      // warns:'StartedWindowsSupportFromVersion8' is unsupported on 'windows'
       // warns:'StartedWindowsSupportFromVersion8' is supported on 'windows' 8.0 and later
       StartedWindowsSupportFromVersion8();
 
-      // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is unsupported on 'windows'  
+      // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is unsupported on 'windows'
       // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is supported on 'windows' 8.0 and later
       // even there were 3 diagnostics found analyzer warn only for the first 2.
       StartedWindowsSupportFrom8UnsupportedFrom10();
@@ -175,9 +175,9 @@ ms.locfileid: "91406591"
 
 - **Утверждение места вызова с помощью проверки платформы.** Если вы не хотите применять дополнительную инструкцию `if` во время выполнения, используйте <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Пример.](#assert-the-call-site-with-platform-check)
 
-- **Удаление кода.** Обычно это нежелательно, так как в таком случае теряется точность, если с вашим кодом работают пользователи Windows. В случаях с доступностью кросс-платформенной альтернативы чаще оптимальнее использовать ее, а не API, зависимые от платформы.
+- **Удаление кода.** Обычно это нежелательно, так как в таком случае теряется точность, если с вашим кодом работают пользователи Windows. В случаях с доступностью кроссплатформенной альтернативы чаще оптимальнее использовать ее, а не API, зависимые от платформы.
 
-- **Блокировать предупреждение.** Вы также можете заблокировать предупреждение с помощью файла editor.config или инструкции `#pragma warning disable ca1416`. Но прибегайте к этому варианту только в исключительных случаях при использовании API, зависящих от платформы.
+- **Блокировать предупреждение.** Вы также можете заблокировать предупреждение с помощью записи EditorConfig или инструкции `#pragma warning disable ca1416`. Но прибегайте к этому варианту только в исключительных случаях при использовании API, зависящих от платформы.
 
 ### <a name="guard-platform-specific-apis-with-guard-methods"></a>Предложение условий для API, зависящих от платформы, с помощью методов условий
 
@@ -231,7 +231,7 @@ ms.locfileid: "91406591"
   }
   ```
 
-- Если вам необходимо предложить условие для кода, который ориентирован на netstandard или netcoreapp, в которых новые API <xref:System.OperatingSystem> недоступны, вы можете использовать API <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType>, который обрабатывается анализатором. Но он менее производителен, чем API, добавленные в <xref:System.OperatingSystem>. Если платформа не поддерживается в структуре <xref:System.Runtime.InteropServices.OSPlatform>, вы можете использовать метод <xref:System.Runtime.InteropServices.OSPlatform.Create%2A?displayProperty=nameWithType> который также обрабатывается анализатором.
+- Если вам необходимо предложить условие для кода, который ориентирован на `netstandard` или `netcoreapp`, в которых новые API <xref:System.OperatingSystem> недоступны, вы можете использовать API <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType>, который обрабатывается анализатором. Но он менее производителен, чем API, добавленные в <xref:System.OperatingSystem>. Если платформа не поддерживается в структуре <xref:System.Runtime.InteropServices.OSPlatform>, можно вызвать <xref:System.Runtime.InteropServices.OSPlatform.Create(System.String)?displayProperty=nameWithType> и передать имя платформы, которое также учитывает анализатор.
 
   ```csharp
   public void CallingSupportedOnlyApis()
@@ -316,7 +316,7 @@ ms.locfileid: "91406591"
   }
 
   // an API not supported on Android but supported on all other.
-  [UnsupportedOSPlatform("android")]  
+  [UnsupportedOSPlatform("android")]
   public void DoesNotWorkOnAndroid() { }
 
   // an API was unsupported on Windows until version 8.0.
@@ -381,5 +381,5 @@ ms.locfileid: "91406591"
 - [Имена целевых платформ в .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
 - [Создание аннотаций для API, зависящих от платформ, и обнаружение использования этой функции](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-checks/platform-checks.md)
 - [Создание аннотаций для API как неподдерживаемых на конкретных платформах](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-exclusion/platform-exclusion.md)
-- [CA1416: анализатор совместимости платформ](/visualstudio/code-quality/ca1416)
+- [CA1416: анализатор совместимости платформ](../../fundamentals/code-analysis/quality-rules/ca1416.md)
 - [Анализатор .NET API](../../standard/analyzers/api-analyzer.md)

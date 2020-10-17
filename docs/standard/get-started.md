@@ -1,41 +1,61 @@
 ---
-title: Начало работы с .NET
-description: Здесь представлен список различных статей по началу работы с .NET как с точки зрения языка, так и с точки зрения платформы.
-author: cartermp
-ms.date: 01/21/2020
+title: Руководства по началу работы с .NET
+description: Выберите учебник для изучения разработки приложений .NET или одного из языков программирования .NET.
+author: tdykstra
+ms.date: 09/30/2020
 ms.technology: dotnet-standard
-ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
-ms.openlocfilehash: f1d5854d8bddea21bbb8a0a7fa032c9fbd15f3d5
-ms.sourcegitcommit: 2ff49dcf9ddf107d139b4055534681052febad62
+ms.openlocfilehash: da98bda4a6a2d637a8a899c9d7315d5cbfcb18fa
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80438176"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91755880"
 ---
-# <a name="get-started"></a>Начало работы
+# <a name="tutorials-for-getting-started-with-net"></a>Руководства по началу работы с .NET
 
-К работе с .NET можно приступить разными способами. Так как .NET — довольно большая платформа, в этой документации содержится много статей, показывающих начало работы с ней с различных точек зрения.
+Следующие пошаговые учебники применимы к Windows, Linux и macOS, если явно не указано иное.
 
-## <a name="get-started-using-net-languages"></a>Приступая к работе с языками .NET
+## <a name="tutorials-for-creating-apps"></a>Учебники по созданию приложений
 
-Ниже приводится список учебных руководств по работе с C#, Visual Basic и F#.
+* Создание консольного приложения
+  * [с использованием Visual Studio Code](../core/tutorials/with-visual-studio-code.md)
+  * [с использованием Visual Studio](../core/tutorials/with-visual-studio.md) (Windows)
+  * [с использованием Visual Studio для Mac](../core/tutorials/with-visual-studio-mac.md) (macOS)
+* Создание веб-приложения
+  * [с веб-интерфейсом на стороне сервера](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+  * [с веб-интерфейсом на стороне клиента](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro)
+* [Создание веб-API](/aspnet/core/tutorials/first-web-api)
+* [Создание веб-приложения с удаленным вызовом процедур](/aspnet/core/tutorials/grpc/grpc-start)
+* [Создание веб-приложения реального времени](/aspnet/core/tutorials/signalr)
+* [Создание бессерверной функции в облаке](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
+* [Создание мобильного приложения для Android и iOS](https://dotnet.microsoft.com/learn/xamarin/hello-world-tutorial/intro) (Windows)
+* Создание классического приложения Windows
+  * [WPF](/visualstudio/get-started/csharp/tutorial-wpf)
+  * [Windows Forms](/visualstudio/ide/create-csharp-winform-visual-studio)
+  * [Универсальная платформа Windows (UWP)](/visualstudio/get-started/csharp/tutorial-uwp)
+* [Создание игры с помощью Unity](https://dotnet.microsoft.com/learn/games/unity-tutorial/intro)
+* [Создание службы Windows](/aspnet/core/host-and-deploy/windows-service)
 
-* [Приступая к работе в C#](../csharp/getting-started/index.md)
-* [Руководства по C#](../csharp/tutorials/index.md)
-* [Руководства по началу работы с F#](../fsharp/get-started/index.md)
+## <a name="tutorials-for-creating-class-libraries"></a>Учебники по созданию библиотек классов
+
+* Создание библиотеки классов
+  * [с использованием Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md)
+  * [с использованием Visual Studio](../core/tutorials/library-with-visual-studio.md) (Windows)
+  * [с использованием Visual Studio для Mac](../core/tutorials/library-with-visual-studio-mac.md) (macOS)
+
+## <a name="resources-for-learning-net-languages"></a>Ресурсы для изучения языков .NET
+
+* [Начало работы с C#](../csharp/getting-started/index.md)
+* [Начало работы с F#](../fsharp/get-started/index.md)
 * [Начало работы с Visual Basic](../visual-basic/getting-started/index.md)
 
-## <a name="get-started-using-net-core"></a>Начало работы с .NET Core
+## <a name="other-get-started-resources"></a>Другие ресурсы для начала работы
 
-Руководства по работе с .NET Core:
+Следующие ресурсы предназначены для начала разработки приложений .NET, которые не являются пошаговыми руководствами:
 
-* [Начало работы с .NET Core](../core/get-started.md)
-* [Учебники по .NET Core](../core/tutorials/index.md)
+* [Интернет вещей.](https://dotnet.microsoft.com/apps/iot)
+* [Машинное обучение](../machine-learning/index.yml)
 
-## <a name="get-started-using-net-standard"></a>Начало работы с .NET Standard
+## <a name="next-steps"></a>Дальнейшие действия
 
-Вводное руководство см. в разделе [Создание библиотеки .NET Standard в Visual Studio](../core/tutorials/library-with-visual-studio.md).
-
-## <a name="get-started-using-net-core-on-docker"></a>Начало работы с .NET Core в Docker
-
-В разделе [Общие сведения о .NET и Docker](../core/docker/introduction.md) показано, как можно использовать .NET Core в контейнерах Windows Docker.
+Дополнительные сведения о .NET см. в статье [Ведение в .NET](../core/introduction.md).

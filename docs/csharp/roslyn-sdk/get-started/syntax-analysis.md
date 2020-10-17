@@ -3,12 +3,12 @@ title: Начало работы с функциями синтаксическ�
 description: Введение в обходы, отправка запросов и прохождение деревьев синтаксиса.
 ms.date: 02/05/2018
 ms.custom: mvc
-ms.openlocfilehash: 22d1303c9daa2ae35cf130b0c857cd7a5efdbe76
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b9dd909a83877755dc1ebafd58aae892e460b93
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240523"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91756160"
 ---
 # <a name="get-started-with-syntax-analysis"></a>Начало работы с функциями синтаксического анализа
 
@@ -51,7 +51,7 @@ namespace HelloWorld
 
 Ниже перечислены четыре основных стандартных блока деревьев синтаксиса.
 
-* Класс <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, экземпляр которого представляет дерево синтаксического анализа целиком. <xref:Microsoft.CodeAnalysis.SyntaxTree> является абстрактным классом с производными, соответствующими конкретному языку. Для синтаксического анализа текста на языке C# или Visual Basic используются методы синтаксического анализа класса <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree?displayProperty=nameWithType> (или <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicSyntaxTree?displayProperty=nameWithType>).
+* Класс <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, экземпляр которого представляет дерево синтаксического анализа целиком. <xref:Microsoft.CodeAnalysis.SyntaxTree> является абстрактным классом с производными, соответствующими конкретному языку. Для синтаксического анализа текста на языке C# (или Visual Basic) используются методы синтаксического анализа класса <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree?displayProperty=nameWithType> (или <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicSyntaxTree?displayProperty=nameWithType>).
 * Класс <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType>, экземпляры которого представляют такие синтаксические конструкции, как объявления, инструкции, предложения и выражения.
 * Структура <xref:Microsoft.CodeAnalysis.SyntaxToken?displayProperty=nameWithType>, которая представляет отдельные ключевые слова, идентификаторы, операторы или знаки препинания.
 * И, наконец, структура <xref:Microsoft.CodeAnalysis.SyntaxTrivia?displayProperty=nameWithType>, которая представляет малозначимые с точки зрения синтаксиса элементы сведений, такие как пробелы между токенами, директивы предварительной обработки и комментарии.

@@ -2,12 +2,12 @@
 title: Новые возможности в C# 9.0. Руководство по языку C#
 description: Обзор новых функций, доступных в C# 9.0.
 ms.date: 09/04/2020
-ms.openlocfilehash: c165ca764d93b74aac21028ed3e55e80f2a23ee0
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.openlocfilehash: 0ac3b410cd9ba886ee55aede952700f145f1b31b
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654911"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955171"
 ---
 # <a name="whats-new-in-c-90"></a>Новые возможности C# 9.0
 
@@ -232,7 +232,7 @@ if (e is not null)
 
 Кроме того, можно использовать пустые переменные в качестве параметров для лямбда-выражений. Это удобное изменение позволяет избежать присвоения имени аргументу, а компилятор может избежать его использования. Для любого аргумента используется символ `_`. Дополнительные сведения см. в разделе [Входные параметры лямбда-выражения](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) статьи о [лямбда-выражениях](../language-reference/operators/lambda-expressions.md).
 
-Наконец, теперь можно применять атрибуты к локальным функциям. Например, к локальным функциям можно применить заметки атрибутов, допускающих значение null.
+Наконец, теперь можно применять атрибуты к [локальным функциям](../programming-guide/classes-and-structs/local-functions.md). Например, к локальным функциям можно применить [заметки атрибутов, допускающих значение null](../language-reference/attributes/nullable-analysis.md).
 
 ## <a name="support-for-code-generators"></a>Поддержка генераторов кода
 

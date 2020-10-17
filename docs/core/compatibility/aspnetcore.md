@@ -2,15 +2,15 @@
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
 description: В этой статье приведен список критических изменений в ASP.NET Core.
-ms.date: 09/29/2020
+ms.date: 10/06/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 0c7ed795868ad4a03dd52e2e23014a3d0f220c86
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 37a366e30f7dc25a5da430de777755b8c9f6dd38
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91609334"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91804950"
 ---
 # <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
 
@@ -41,6 +41,7 @@ ASP.NET Core предоставляет функции разработки ве
 - [Blazor. Функция ProtectedBrowserStorage перемещена на общую платформу](#blazor-protectedbrowserstorage-feature-moved-to-shared-framework)
 - [Blazor. Открытые поля только для чтения RenderTreeFrame стали свойствами](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
 - [Blazor. Изменена целевая платформа для пакетов NuGet](#blazor-target-framework-of-nuget-packages-changed)
+- [Blazor. Обновлен список поддерживаемых веб-браузеров](#blazor-updated-browser-support)
 - [Кэширование. Удалено свойство CompactOnMemoryPressure](#caching-compactonmemorypressure-property-removed)
 - [Кэширование. Microsoft.Extensions.Caching.SqlServer использует новый пакет SqlClient](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Кэширование. Типы ResponseCaching pubternal теперь стали внутренними](#caching-responsecaching-pubternal-types-changed-to-internal)
@@ -122,7 +123,7 @@ ASP.NET Core предоставляет функции разработки ве
 
 ***
 
-[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
+[!INCLUDE[Serialization: BinaryFormatter serialization obsolete](~/includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 
 ***
 
@@ -143,6 +144,10 @@ ASP.NET Core предоставляет функции разработки ве
 ***
 
 [!INCLUDE[Blazor: Target framework of NuGet packages changed](~/includes/core-changes/aspnetcore/5.0/blazor-packages-target-framework-changed.md)]
+
+***
+
+[!INCLUDE[Blazor: Updated browser support](~/includes/core-changes/aspnetcore/5.0/blazor-browser-support-updated.md)]
 
 ***
 

@@ -4,12 +4,12 @@ description: В этом расширенном руководстве соде�
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc
-ms.openlocfilehash: 54cf9d812999cae837483b48cdedd89d9dc40fc9
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: bd575b226a2ff61e938719b064ff5ede0cf66013
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249133"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805184"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>Учебник. Четкое выражение проектного замысла с помощью ссылочных типов, допускающих и не допускающих значение null
 
@@ -221,3 +221,6 @@ namespace NullableIntroduction
 Дополнительные сведения о переводе существующего приложения на использование допускающих значение NULL ссылочных типов:
 > [!div class="nextstepaction"]
 > [Перевод приложения на использование ссылочных типов, допускающих значение NULL](upgrade-to-nullable-references.md)
+
+Узнайте, как использовать ссылочный тип, допускающий значение NULL, при использовании Entity Framework:
+> [Основы Entity Framework Core. Работа со ссылочными типами, допускающими значение NULL](/ef/core/miscellaneous/nullable-reference-types)

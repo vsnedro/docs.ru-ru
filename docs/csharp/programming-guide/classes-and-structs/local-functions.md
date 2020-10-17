@@ -1,15 +1,15 @@
 ---
 title: Руководство по программированию на C#. Локальные функции
 description: Локальные функции в C# — это частные методы, которые вложены в другой член и могут быть вызваны из их содержащего члена.
-ms.date: 10/02/2020
+ms.date: 10/09/2020
 helpviewer_keywords:
 - local functions [C#]
-ms.openlocfilehash: a91995757048c8c54253d7f4b923d5194f69bc7b
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+ms.openlocfilehash: a2d389c8b1c687dc4885004fcdc33e0ed7ada977
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654924"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955685"
 ---
 # <a name="local-functions-c-programming-guide"></a>Локальные функции (руководство по программированию на C#)
 
@@ -50,11 +50,15 @@ ms.locfileid: "91654924"
 
 В отличие от определения метода, определение локальной функции не может содержать модификатор доступа к элементу. Поскольку все локальные функции являются частными, при использовании модификатора доступа (например, ключевого слова `private`) возникает ошибка компилятора CS0106, "Модификатор "private" недопустим для этого элемента".
 
-Кроме того, к локальной функции, а также ее параметрам и параметрам типа, нельзя применять атрибуты.
-
 В следующем примере определяется локальная функция `AppendPathSeparator`, которая является частной для метода `GetText`:
 
-[!code-csharp[LocalFunctionExample](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions1.cs)]  
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
+
+Начиная с C# 9.0 можно применять атрибуты к локальной функции, ее параметрам и параметрам типа, как показано в следующем примере:
+
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="WithAttributes" :::
+
+В предыдущем примере используется [специальный атрибут](../../language-reference/attributes/nullable-analysis.md) для помощи компилятору в статическом анализе в контексте, допускающем значение NULL.
 
 ## <a name="local-functions-and-exceptions"></a>Локальные функции и исключения
 
@@ -62,21 +66,21 @@ ms.locfileid: "91654924"
 
 В следующем примере определяется метод `OddSequence`, который перечисляет нечетные числа в заданном диапазоне. Поскольку он передает в метод перечислителя `OddSequence` число больше 100, этот метод вызывает исключение <xref:System.ArgumentOutOfRangeException>. Как видно из выходных данных этого примера, исключение обрабатывается только в момент перебора чисел, а не при извлечении перечислителя.
 
-[!code-csharp[LocalFunctionIterator1](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-iterator1.cs)]
+:::code language="csharp" source="snippets/local-functions/IteratorWithoutLocal.cs" :::
 
-Вместо этого исключение может быть вызвано при выполнении проверки до того, как будет извлечен итератор, путем возврата итератора из локальной функции, как показано в следующем примере.
+Если поместить логику итератора в локальную функцию, при получении перечислителя вызываются исключения проверки аргументов, как показано в следующем примере:
 
-[!code-csharp[LocalFunctionIterator2](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-iterator2.cs)]
+:::code language="csharp" source="snippets/local-functions/IteratorWithLocal.cs" :::
 
-Локальные функции можно использовать аналогичным образом для обработки исключений вне асинхронной операции. Как правило, при возникновении исключения в асинхронном методе требуется проверить внутренние исключения в <xref:System.AggregateException>. Локальная функция реализует моментальный сбой кода, синхронно обеспечивая вызов исключения и наблюдение за ним.
+Аналогичным образом можно использовать локальные функции с асинхронными операциями. Исключения вызываются в области асинхронного метода при ожидании соответствующей задачи. Локальная функция реализует моментальный сбой кода, синхронно обеспечивая вызов исключения и наблюдение за ним.
 
-В следующем примере асинхронный метод `GetMultipleAsync` выполняет приостановку на указанное число секунд, возвращая значение, представляющее собой произведение случайного множителя на это число секунд. Максимальная задержка составляет 5 с. Результат <xref:System.ArgumentOutOfRangeException> возвращается в том случае, если значение больше 5. Как видно из следующего примера, исключение, которое возникает при передаче в метод `GetMultipleAsync` значения 6, инкапсулируется в <xref:System.AggregateException> после того, как начинается выполнение метода `GetMultipleAsync`.
+В следующем примере асинхронный метод `GetMultipleAsync` выполняет приостановку на указанное число секунд, возвращая значение, представляющее собой произведение случайного множителя на это число секунд. Максимальная задержка составляет 5 с. Результат <xref:System.ArgumentOutOfRangeException> возвращается в том случае, если значение больше 5. Как видно из следующего примера, исключение, которое возникает при передаче в метод `GetMultipleAsync` значения 6, наблюдается только при ожидании задачи.
 
-[!code-csharp[LocalFunctionAsync](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async1.cs)]
+:::code language="csharp" source="snippets/local-functions/AsyncWithoutLocal.cs" :::
 
-Как и в случае с итератором метода, можно выполнить рефакторинг кода из этого примера таким образом, чтобы реализовать проверку перед вызовом асинхронного метода. Как видно из результатов следующего примера, <xref:System.ArgumentOutOfRangeException> не инкапсулируется в <xref:System.AggregateException>.
+Как и в случае с итератором метода, можно выполнить рефакторинг предыдущего примера и разместить код асинхронной операции в локальной функции. Как показано в выходных данных следующего примера, <xref:System.ArgumentOutOfRangeException> вызывается сразу же после вызова метода `GetMultiple`.
 
-[!code-csharp[LocalFunctionAsync](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async2.cs)]
+:::code language="csharp" source="snippets/local-functions/AsyncWithLocal.cs" :::
 
 ## <a name="local-functions-vs-lambda-expressions"></a>Локальные функции или лямбда-выражения
 
@@ -84,11 +88,11 @@ ms.locfileid: "91654924"
 
 Рассмотрим различия в реализации алгоритма вычисления факториала с использованием локальной функции и лямбда-выражения. В первой версии используется локальная функция:
 
-[!code-csharp[LocalFunctionFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#37_LocalFunctionFactorial "Recursive factorial using local function")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="FactorialWithLocal" :::
 
 Сравните эту реализацию с версией, в которой используются лямбда-выражения:
 
-[!code-csharp[26_LambdaFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="FactorialWithLambda" :::
 
 Локальные функции имеют имена. Лямбда-выражения — это анонимные методы, назначаемые переменным типов `Func` или `Action`. При объявлении локальной функции типы аргументов и тип возвращаемого значения являются частью объявления функции. Типы аргументов и тип возвращаемого значения не являются частью основной части лямбда-выражения — это часть объявления типа переменной лямбда-выражения. Знание этих двух различий поможет в создании более понятного кода.
 
@@ -115,16 +119,16 @@ int M()
 
 Рассмотрим следующий асинхронный пример:
 
-[!code-csharp[TaskLambdaExample](../../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#36_TaskLambdaExample "Task returning method with lambda expression")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="AsyncWithLambda" :::
 
 Замыкание для этого лямбда-выражения содержит переменные `address`, `index` и `name`. При использовании локальных функций объект, который реализует замыкание, может иметь тип `struct`. Этот тип структуры будет передан в локальную функцию посредством ссылки. Эта разница в реализации позволяет избежать распределения.
 
-Создание экземпляра, необходимое для лямбда-выражений, означает выделение дополнительной памяти, что в критически важном коде может ухудшить производительность. Локальные функции не создают этой перегрузки. В приведенном выше примере в версии с локальной функцией используется на 2 меньше операции выделения памяти по сравнению с версией на основе лямбда-выражения.
+Создание экземпляра, необходимое для лямбда-выражений, означает выделение дополнительной памяти, что в критически важном коде может ухудшить производительность. Локальные функции не создают этой перегрузки. В приведенном выше примере в версии с локальной функцией используется на две операции выделения памяти меньше по сравнению с версией на основе лямбда-выражения.
 
 > [!NOTE]
 > В эквивалентном этому методе на основе локальной функции также используется класс для замыкания. Реализация замыкания для локальной функции в формате `class` или `struct` зависит от особенностей реализации. Локальная функция может использовать `struct`, тогда как в лямбда-выражениях всегда используется `class`.
 
-[!code-csharp[TaskLocalFunctionExample](../../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="AsyncWithLocal" :::
 
 Еще одно преимущество локальных функций, которое не показано в этом примере, заключается в том, что они могут быть реализованы в качестве итераторов с использованием синтаксиса `yield return` для создания последовательности значений. В лямбда-выражениях не допускается использование оператора `yield return`.
 

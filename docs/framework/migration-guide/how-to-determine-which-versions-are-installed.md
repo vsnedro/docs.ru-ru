@@ -9,12 +9,12 @@ helpviewer_keywords:
 - versions, determining for .NET Framework
 - .NET Framework, determining version
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-ms.openlocfilehash: accc85f04514822233bc5df3a76eb99775fee529
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: faeb2c14b9c1d93b558c67a42c223702178407c0
+ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553744"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91955594"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>Практическое руководство. Определение установленных версий платформы .NET Framework
 
@@ -85,13 +85,13 @@ ms.locfileid: "90553744"
 
 01. В меню **Пуск** выберите **Выполнить**, введите *regedit* и нажмите кнопку **ОК**.
 
-    Для запуска программы regedit необходимы учетные данные администратора.
+   (Для запуска программы regedit необходимы учетные данные администратора.)
 
 01. В редакторе реестра откройте следующий подраздел: **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. Если подраздел **Full** отсутствует, платформа .NET Framework 4.5 или более поздней версии не установлена.
 
 01. Проверьте значение REG_DWORD с именем **Release**. Если оно имеется, платформа .NET Framework 4.5 или более поздней версии установлена. Это значение соответствует определенной версии .NET Framework. Например, на приведенном ниже рисунке значение параметра **Release** равно 528040, что является разделом выпуска для .NET Framework 4.8.
 
-    ![Запись реестра для .NET Framework 4.5](./media/clr-installdir.png "Запись реестра для .NET Framework 4.5")
+   ![Запись реестра для .NET Framework 4.5](./media/clr-installdir.png )
 
 ### <a name="use-powershell-to-check-for-a-minimum-version"></a>Использование PowerShell для проверки минимальной версии
 
@@ -112,10 +112,17 @@ ms.locfileid: "90553744"
 
 01. Проверьте значение REG_DWORD **Release**, чтобы определить установленную версию. Для обеспечения совместимости с последующими версиями значение должно быть больше или равно значению, указанному в [таблице версий .NET Framework](#version_table).
 
-В следующем примере проверяется значение **Release** в реестре для поиска установленной версии .NET Framework 4.5 или более поздних.
+В следующем примере проверяется значение **Release** в реестре для поиска установленных версий .NET Framework 4.5–4.8.
 
-[!code-csharp[ListVersions#5](../../../samples/snippets/csharp/framework/migration-guide/versions-installed3.cs)]
-[!code-vb[ListVersions#5](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed3.vb)]
+:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
+
+:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="2":::
+
+Этот пример выводит данные, подобные следующим:
+
+```output
+.NET Framework Version: 4.6.1
+```
 
 В этом примере применяются рекомендации для проверки версии:
 
@@ -163,10 +170,21 @@ ms.locfileid: "90553744"
 > [!IMPORTANT]
 > Если вы используете 32-разрядное приложение в 64-разрядной версии Windows, пути реестра будут отличаться от указанных ранее. 64-разрядный реестр доступен в подразделе **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** . Например, подразделом реестра для .NET Framework 3.5 является **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
 
-В следующем примере ищутся установленные версии .NET Framework 1–4:
+В следующем примере ищутся установленные версии .NET Framework 1–4:
 
-[!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed1.cs)]
-[!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
+:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="1":::
+
+:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="1":::
+
+В этом примере отобразятся выходные данные, аналогичные следующим:
+
+```output
+v2.0.50727  2.0.50727.4927  SP2
+v3.0  3.0.30729.4926  SP2
+v3.5  3.5.30729.4926  SP1
+v4.0
+  Client  4.0.0.0
+```
 
 ## <a name="find-clr-versions"></a>Поиск версий CLR
 
@@ -188,25 +206,36 @@ ms.locfileid: "90553744"
 
   > [!IMPORTANT]
   > Для .NET Framework 4.5 и более поздних версий не следует использовать свойство <xref:System.Environment.Version%2A?displayProperty=nameWithType> для определения версии среды CLR. Вместо этого выполните запрос к реестру, как описано в разделе [Обнаружение .NET Framework 4.5 и более поздних версий](#detect-net-framework-45-and-later-versions).
-  
-  01. Выполните запрос к свойству <xref:System.Environment.Version?displayProperty=nameWithType>, чтобы получить объект <xref:System.Version>.
-  
-      Возвращенный объект `System.Version` указывает версию среды выполнения, в которой в настоящее время выполняется код. Он не содержит версий сборок или других версий среды выполнения, которые установлены на компьютере.
-  
-      Для платформы .NET Framework версий 4, 4.5, 4.5.1 и 4.5.2 возвращаемый объект <xref:System.Version> имеет строковое представление 4.0.30319.*xxxxx*, где *xxxxx* меньше 42000. Для .NET Framework 4.6 и более поздних версий оно имеет форму 4.0.30319.42000.
-  
-  01. Получив объект **Version**, выполните к нему запрос:
-  
-      - Чтобы получить идентификатор основного выпуска (например, *4* в случае версии 4.0), используйте свойство <xref:System.Version.Major%2A?displayProperty=nameWithType>.
-  
-      - Чтобы получить идентификатор дополнительной версии (например, *0* в случае версии 4.0), используйте свойство <xref:System.Version.Minor%2A?displayProperty=nameWithType>.
-  
-      - Чтобы получить всю строку версии (например, *4.0.30319.18010*), используйте метод <xref:System.Version.ToString%2A?displayProperty=nameWithType>. Он возвращает одно значение, соответствующее версии среды выполнения, в которой выполняется код. Он не возвращает версий сборок или других версий среды выполнения, которые установлены на компьютере.
+
+  1. Выполните запрос к свойству <xref:System.Environment.Version?displayProperty=nameWithType>, чтобы получить объект <xref:System.Version>.
+
+     Возвращенный объект `System.Version` указывает версию среды выполнения, в которой в настоящее время выполняется код. Он не содержит версий сборок или других версий среды выполнения, которые установлены на компьютере.
+
+     Для платформы .NET Framework версий 4, 4.5, 4.5.1 и 4.5.2 возвращаемый объект <xref:System.Version> имеет строковое представление 4.0.30319.*xxxxx*, где *xxxxx* меньше 42000. Для .NET Framework 4.6 и более поздних версий оно имеет форму 4.0.30319.42000.
+
+  1. Получив объект **Version**, выполните к нему запрос:
+
+     - Чтобы получить идентификатор основного выпуска (например, *4* в случае версии 4.0), используйте свойство <xref:System.Version.Major%2A?displayProperty=nameWithType>.
+
+     - Чтобы получить идентификатор дополнительной версии (например, *0* в случае версии 4.0), используйте свойство <xref:System.Version.Minor%2A?displayProperty=nameWithType>.
+
+     - Чтобы получить всю строку версии (например, *4.0.30319.18010*), используйте метод <xref:System.Version.ToString%2A?displayProperty=nameWithType>. Он возвращает одно значение, соответствующее версии среды выполнения, в которой выполняется код. Он не возвращает версий сборок или других версий среды выполнения, которые установлены на компьютере.
 
   В следующем примере свойство <xref:System.Environment.Version%2A?displayProperty=nameWithType> используется для получения сведений о версии среды CLR:
-  
-  [!code-csharp[ListVersions](../../../samples/snippets/csharp/framework/migration-guide/versions-installed2.cs)]
-  [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed2.vb)]
+
+  ```csharp
+  Console.WriteLine($"Version: {Environment.Version}");
+  ```
+
+  ```vb
+  Console.WriteLine($"Version: {Environment.Version}")
+  ```
+
+  В этом примере отобразятся выходные данные, аналогичные следующим:
+
+  ```output
+  Version: 4.0.30319.18010
+  ```
 
 ## <a name="see-also"></a>См. также
 
