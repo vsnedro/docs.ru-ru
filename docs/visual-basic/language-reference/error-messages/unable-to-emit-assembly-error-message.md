@@ -7,30 +7,30 @@ f1_keywords:
 helpviewer_keywords:
 - BC30145
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
-ms.openlocfilehash: 5776755a57fbc2b0086b1c9b6cfbb2f2b7eb03fa
-ms.sourcegitcommit: 5a28f8eb071fcc09b045b0c4ae4b96898673192e
+ms.openlocfilehash: c088f273c100b1a7eefcf74047865093f378e970
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73197272"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92161664"
 ---
-# <a name="unable-to-emit-assembly-error-message"></a>Не удалось выпустить сборку: \<сообщение об ошибке >
+# <a name="bc30145-unable-to-emit-assembly-error-message"></a>BC30145: не удалось выпустить сборку: \<error message>
 
-Компилятор Visual Basic вызывает компоновщик сборок (*Al. exe*, также известный как ALink) для создания сборки с манифестом, а компоновщик сообщает об ошибке на этапе эмиссии создания сборки.
+Компилятор Visual Basic вызывает компоновщик сборок (*Al.exe*, также известный как ALink) для создания сборки с манифестом, а компоновщик сообщает об ошибке на этапе эмиссии создания сборки.
 
 **Идентификатор ошибки:** BC30145
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-1. Изучите сообщение об ошибке в кавычках и ознакомьтесь с разделом [Al. exe](../../../framework/tools/al-exe-assembly-linker.md) для получения дополнительных пояснений и советов.
+1. Изучите сообщение об ошибке в кавычках и ознакомьтесь с разделом [Al.exe](../../../framework/tools/al-exe-assembly-linker.md) для получения дополнительных пояснений и рекомендаций.
 
-2. Попробуйте подписать сборку вручную, используя либо [Al. exe](../../../framework/tools/al-exe-assembly-linker.md) , либо [Sn. exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md).
+2. Попробуйте подписать сборку вручную, используя [Al.exe](../../../framework/tools/al-exe-assembly-linker.md) или [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md).
 
 3. Если ошибка не устранена, соберите сведения об условиях ее возникновения и уведомите службу технической поддержки Майкрософт.
 
 ### <a name="to-sign-the-assembly-manually"></a>Подпись сборки вручную
 
-1. Используйте [Sn. exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md)) для создания файла пары открытого и закрытого ключей.
+1. Используйте [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md)) для создания файла пары открытого и закрытого ключей.
 
    Этот файл имеет расширение *SNK* .
 
@@ -61,7 +61,7 @@ ms.locfileid: "73197272"
 
 ## <a name="see-also"></a>См. также
 
-- [Al. exe](../../../framework/tools/al-exe-assembly-linker.md)
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md)
 - [Практическое руководство. Создание пары открытого и закрытого ключей](../../../standard/assembly/create-public-private-key-pair.md)
 - [Обращайтесь к нам](/visualstudio/ide/feedback-options)

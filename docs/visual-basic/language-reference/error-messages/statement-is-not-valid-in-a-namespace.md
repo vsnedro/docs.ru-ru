@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30001
 ms.assetid: 43c1b509-15f9-4e91-bcad-90bcb5f6f191
-ms.openlocfilehash: f1887e0cf71ee79f3fd0a991cd3038bcc910588c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5307b7354d3c6b91ea2a1993f5f84384784a61e5
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90870673"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92159694"
 ---
-# <a name="statement-is-not-valid-in-a-namespace"></a>Недопустимый оператор для пространства имен
+# <a name="bc30001-statement-is-not-valid-in-a-namespace"></a>BC30001: оператор недопустим в пространстве имен
 
-Инструкция не может присутствовать на уровне пространства имен. На уровне пространства имен разрешаются только объявления модулей, интерфейсов, классов, делегатов, перечислений и структур.  
-  
- **Идентификатор ошибки:** BC30001  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Переместите оператор в расположение внутри модуля, класса, интерфейса, структуры, перечисления или определения делегата.  
-  
+Инструкция не может присутствовать на уровне пространства имен. На уровне пространства имен разрешаются только объявления модулей, интерфейсов, классов, делегатов, перечислений и структур.
+
+ **Идентификатор ошибки:** BC30001
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Переместите оператор в расположение внутри модуля, класса, интерфейса, структуры, перечисления или определения делегата.
+
 ## <a name="see-also"></a>См. также
 
 - [Область видимости в Visual Basic](../../programming-guide/language-features/declared-elements/scope.md)

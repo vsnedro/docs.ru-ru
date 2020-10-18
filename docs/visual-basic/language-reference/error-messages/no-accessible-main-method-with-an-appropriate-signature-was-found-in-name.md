@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30737
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
-ms.openlocfilehash: 6958e778701066760aa74e3b4d566800b7527b76
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e1f95484a153bdcac9543508b7f2708dc6b7d942
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871477"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160045"
 ---
-# <a name="no-accessible-main-method-with-an-appropriate-signature-was-found-in-name"></a>В \<name> не найдено доступного метода Main с подходящей подписью
+# <a name="bc30737-no-accessible-main-method-with-an-appropriate-signature-was-found-in-name"></a>BC30737: в "" не найден доступный метод "Main" с подходящей сигнатурой. \<name>
 
-Приложения командной строки должны иметь `Sub Main` определенные. `Main` должен быть объявлен как `Public Shared` , если он определен в классе, или как, `Public` если он определен в модуле.  
-  
- **Идентификатор ошибки:** BC30737  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Определите `Public Sub Main` процедуру для проекта. Объявите его как `Shared` If и только в том случае, если оно определено внутри класса.  
-  
+Приложения командной строки должны иметь `Sub Main` определенные. `Main` должен быть объявлен как `Public Shared` , если он определен в классе, или как, `Public` если он определен в модуле.
+
+ **Идентификатор ошибки:** BC30737
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Определите `Public Sub Main` процедуру для проекта. Объявите его как `Shared` If и только в том случае, если оно определено внутри класса.
+
 ## <a name="see-also"></a>См. также
 
 - [Структура программы Visual Basic](../../programming-guide/program-structure/structure-of-a-visual-basic-program.md)

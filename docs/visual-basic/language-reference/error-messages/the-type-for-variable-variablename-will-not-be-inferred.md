@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: 1ad7b9d0a610842dd6c50ee198f5bb5fa3eb68cf
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 3e76ffea283de2843fc5586179074c01a053ece8
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90870482"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92161287"
 ---
-# <a name="the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>Тип для переменной \<variablename> не будет определен, так как она привязана к полю во включающей области
+# <a name="bc42110-the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>BC42110: тип для переменной " \<variablename> " не будет определен, так как он привязан к полю во внешней области видимости
 
 Тип для переменной " \<variablename> " не будет определен, так как он привязан к полю во внешней области видимости. Либо измените имя " \<variablename> ", либо используйте полное имя (например, "Me. variablename" или "MyBase. variablename").
 
@@ -43,7 +43,7 @@ End Class
 
 **Идентификатор ошибки:** BC42110
 
-### <a name="to-address-this-warning"></a>Устранение предупреждения
+## <a name="to-address-this-warning"></a>Устранение предупреждения
 
 - Сделайте переменную управления циклом локальной, изменив ее имя на идентификатор, который не является именем поля класса.
 

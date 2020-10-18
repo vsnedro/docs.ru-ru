@@ -8,14 +8,14 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: 4500a177c7a4729fe5131af1b007fd38e77afe07
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 090ec6f3bbf56350fda2ab15c974b0bc6b15e3d3
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397341"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162522"
 ---
-# <a name="latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>Разрешение перегружаемой функции с поздним связыванием не может быть применено к \<procedurename>, так как типом экземпляра, к которому осуществляется доступ, является интерфейс
+# <a name="bc30933-latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>BC30933: разрешение перегрузки с поздней привязывания не может применяться к " \<procedurename> ", так как доступ к экземпляру является типом интерфейса
 
 Компилятор пытается разрешить ссылку на Перегруженное свойство или процедуру, но ссылка завершается ошибкой, поскольку аргумент имеет тип `Object` , а ссылающийся объект имеет тип данных интерфейса. `Object`Аргумент заставляет компилятор разрешить ссылку с поздней привязкой.
 
@@ -66,8 +66,8 @@ refer.s1(CType(o1, Double))
 
 Каждая из приведенных выше строк кода явным образом приводит `Object` переменную `o1` к одному из типов параметров, определенных для перегрузок.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перегрузка процедур](../../programming-guide/language-features/procedures/procedure-overloading.md)
-- [Разрешение перегрузки](../../programming-guide/language-features/procedures/overload-resolution.md)
+- [Overload Resolution](../../programming-guide/language-features/procedures/overload-resolution.md)
 - [CType Function](../functions/ctype-function.md)

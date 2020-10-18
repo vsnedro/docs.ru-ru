@@ -7,33 +7,33 @@ f1_keywords:
 helpviewer_keywords:
 - BC40031
 ms.assetid: e2b885dc-cbf9-49ff-bbbe-531657ea99f7
-ms.openlocfilehash: 33b60b2212d25737330dc93d7ba2715e4d5865b7
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 43fff3f12295f3837148b0a349887e8405126819
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873711"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160240"
 ---
-# <a name="name-membername-is-not-cls-compliant"></a>Имя \<membername> не является CLS-совместимым
+# <a name="bc40031-name-membername-is-not-cls-compliant"></a>BC40031: имя несовместимо \<membername> с CLS
 
-Сборка помечается как, `<CLSCompliant(True)>` но предоставляет член с именем, которое начинается с символа подчеркивания ( `_` ).  
-  
- Программный элемент может содержать один или несколько символов подчеркивания, но для соответствия [языковым независимостьм и зависимым от языка компонентам](../../../standard/language-independence-and-language-independent-components.md) (CLS) он не должен начинаться с символа подчеркивания. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).  
-  
- При применении атрибута <xref:System.CLSCompliantAttribute> к программному элементу вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.  
-  
- Если вы не применяете <xref:System.CLSCompliantAttribute> к элементу, он считается несовместимым.  
-  
- По умолчанию данное сообщение является предупреждением. Сведения о сокрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
-  
- **Идентификатор ошибки:** BC40031  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Если вы управляете исходным кодом, измените его имя так, чтобы оно не начиналось с символа подчеркивания.  
-  
-- Если требуется, чтобы имя элемента оставалось без изменений, удалите <xref:System.CLSCompliantAttribute> из его определения или пометьте как `<CLSCompliant(False)>` . Вы по-прежнему можете пометить сборку как `<CLSCompliant(True)>` .  
-  
+Сборка помечается как, `<CLSCompliant(True)>` но предоставляет член с именем, которое начинается с символа подчеркивания ( `_` ).
+
+ Программный элемент может содержать один или несколько символов подчеркивания, но для соответствия [языковым независимостьм и Language-Independent компонентам](../../../standard/language-independence-and-language-independent-components.md) (CLS) он не должен начинаться с символа подчеркивания. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+
+ При применении атрибута <xref:System.CLSCompliantAttribute> к программному элементу вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.
+
+ Если вы не применяете <xref:System.CLSCompliantAttribute> к элементу, он считается несовместимым.
+
+ По умолчанию данное сообщение является предупреждением. Сведения о сокрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).
+
+ **Идентификатор ошибки:** BC40031
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Если вы управляете исходным кодом, измените его имя так, чтобы оно не начиналось с символа подчеркивания.
+
+- Если требуется, чтобы имя элемента оставалось без изменений, удалите <xref:System.CLSCompliantAttribute> из его определения или пометьте как `<CLSCompliant(False)>` . Вы по-прежнему можете пометить сборку как `<CLSCompliant(True)>` .
+
 ## <a name="see-also"></a>См. также
 
 - [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)
