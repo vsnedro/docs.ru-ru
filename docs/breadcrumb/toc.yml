@@ -317,6 +317,10 @@ items:
               - name: Начало работы
                 tocHref: /dotnet/csharp/getting-started/
                 topicHref: /dotnet/csharp/getting-started/index
+                items:
+                  - name: Обзор языка C#
+                    tocHref: /dotnet/csharp/tour-of-csharp/
+                    topicHref: /dotnet/csharp/tour-of-csharp/index
               - name: Учебники
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index

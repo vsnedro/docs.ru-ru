@@ -7,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - BC30205
 ms.assetid: 53c7f825-a737-4b76-a1fa-f67745b8bd40
-ms.openlocfilehash: 9141400afc651629df381e0a655e2d7b9da2e45d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 36883989fe5aa0b5c70aa9ab1f7c991fab99e778
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874424"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163133"
 ---
-# <a name="end-of-statement-expected"></a><span data-ttu-id="75cea-102">Ожидается окончание оператора</span><span class="sxs-lookup"><span data-stu-id="75cea-102">End of statement expected</span></span>
+# <a name="bc30205-end-of-statement-expected"></a><span data-ttu-id="f688a-102">BC30205: Ожидается конец оператора</span><span class="sxs-lookup"><span data-stu-id="f688a-102">BC30205: End of statement expected</span></span>
 
-<span data-ttu-id="75cea-103">Инструкция является синтаксически завершенной, но дополнительный программный элемент следует за элементом, который завершает инструкцию.</span><span class="sxs-lookup"><span data-stu-id="75cea-103">The statement is syntactically complete, but an additional programming element follows the element that completes the statement.</span></span> <span data-ttu-id="75cea-104">В конце каждой инструкции требуется признак конца строки.</span><span class="sxs-lookup"><span data-stu-id="75cea-104">A line terminator is required at the end of every statement.</span></span>
-  
- <span data-ttu-id="75cea-105">Признак конца строки делит символы Visual Basic исходного файла на строки.</span><span class="sxs-lookup"><span data-stu-id="75cea-105">A line terminator divides the characters of a Visual Basic source file into lines.</span></span> <span data-ttu-id="75cea-106">Примерами признаков конца строки являются символ возврата каретки в Юникоде (&HD), символ перевода строки в Юникоде (&HA) и символ возврата каретки в Юникоде, за которым следует символ перевода строки в Юникоде.</span><span class="sxs-lookup"><span data-stu-id="75cea-106">Examples of line terminators are the Unicode carriage return character (&HD), the Unicode linefeed character (&HA), and the Unicode carriage return character followed by the Unicode linefeed character.</span></span> <span data-ttu-id="75cea-107">Дополнительные сведения о знаках конца строки см. в разделе [Спецификация языка Visual Basic](~/_vblang/spec/lexical-grammar.md#line-terminators).</span><span class="sxs-lookup"><span data-stu-id="75cea-107">For more information about line terminators, see the [Visual Basic Language Specification](~/_vblang/spec/lexical-grammar.md#line-terminators).</span></span>
-  
- <span data-ttu-id="75cea-108">**Идентификатор ошибки:** BC30205</span><span class="sxs-lookup"><span data-stu-id="75cea-108">**Error ID:** BC30205</span></span>
-  
-## <a name="to-correct-this-error"></a><span data-ttu-id="75cea-109">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="75cea-109">To correct this error</span></span>
-  
-1. <span data-ttu-id="75cea-110">Убедитесь, что две разные инструкции случайно были помещены в одну и ту же строку.</span><span class="sxs-lookup"><span data-stu-id="75cea-110">Check to see if two different statements have inadvertently been put on the same line.</span></span>
-  
-2. <span data-ttu-id="75cea-111">Вставьте признак конца строки после элемента, который завершает инструкцию.</span><span class="sxs-lookup"><span data-stu-id="75cea-111">Insert a line terminator after the element that completes the statement.</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="75cea-112">См. также</span><span class="sxs-lookup"><span data-stu-id="75cea-112">See also</span></span>
+<span data-ttu-id="f688a-103">Инструкция является синтаксически завершенной, но дополнительный программный элемент следует за элементом, который завершает инструкцию.</span><span class="sxs-lookup"><span data-stu-id="f688a-103">The statement is syntactically complete, but an additional programming element follows the element that completes the statement.</span></span> <span data-ttu-id="f688a-104">В конце каждой инструкции требуется признак конца строки.</span><span class="sxs-lookup"><span data-stu-id="f688a-104">A line terminator is required at the end of every statement.</span></span>
 
-- [<span data-ttu-id="75cea-113">Практическое руководство. Разбиение и объединение инструкций в коде</span><span class="sxs-lookup"><span data-stu-id="75cea-113">How to: Break and Combine Statements in Code</span></span>](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
-- [<span data-ttu-id="75cea-114">Операторы</span><span class="sxs-lookup"><span data-stu-id="75cea-114">Statements</span></span>](../../programming-guide/language-features/statements.md)
+ <span data-ttu-id="f688a-105">Признак конца строки делит символы Visual Basic исходного файла на строки.</span><span class="sxs-lookup"><span data-stu-id="f688a-105">A line terminator divides the characters of a Visual Basic source file into lines.</span></span> <span data-ttu-id="f688a-106">Примерами признаков конца строки являются символ возврата каретки в Юникоде (&HD), символ перевода строки в Юникоде (&HA) и символ возврата каретки в Юникоде, за которым следует символ перевода строки в Юникоде.</span><span class="sxs-lookup"><span data-stu-id="f688a-106">Examples of line terminators are the Unicode carriage return character (&HD), the Unicode linefeed character (&HA), and the Unicode carriage return character followed by the Unicode linefeed character.</span></span> <span data-ttu-id="f688a-107">Дополнительные сведения о знаках конца строки см. в разделе [Спецификация языка Visual Basic](~/_vblang/spec/lexical-grammar.md#line-terminators).</span><span class="sxs-lookup"><span data-stu-id="f688a-107">For more information about line terminators, see the [Visual Basic Language Specification](~/_vblang/spec/lexical-grammar.md#line-terminators).</span></span>
+
+ <span data-ttu-id="f688a-108">**Идентификатор ошибки:** BC30205</span><span class="sxs-lookup"><span data-stu-id="f688a-108">**Error ID:** BC30205</span></span>
+
+## <a name="to-correct-this-error"></a><span data-ttu-id="f688a-109">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="f688a-109">To correct this error</span></span>
+
+1. <span data-ttu-id="f688a-110">Убедитесь, что две разные инструкции случайно были помещены в одну и ту же строку.</span><span class="sxs-lookup"><span data-stu-id="f688a-110">Check to see if two different statements have inadvertently been put on the same line.</span></span>
+
+2. <span data-ttu-id="f688a-111">Вставьте признак конца строки после элемента, который завершает инструкцию.</span><span class="sxs-lookup"><span data-stu-id="f688a-111">Insert a line terminator after the element that completes the statement.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f688a-112">См. также</span><span class="sxs-lookup"><span data-stu-id="f688a-112">See also</span></span>
+
+- [<span data-ttu-id="f688a-113">Практическое руководство. Разбиение и объединение инструкций в коде</span><span class="sxs-lookup"><span data-stu-id="f688a-113">How to: Break and Combine Statements in Code</span></span>](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [<span data-ttu-id="f688a-114">Операторы</span><span class="sxs-lookup"><span data-stu-id="f688a-114">Statements</span></span>](../../programming-guide/language-features/statements.md)

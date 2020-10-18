@@ -4,21 +4,21 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrDIR_IllegalCall
 ms.assetid: 7b5d149f-be91-4ac3-8262-86a360894e7d
-ms.openlocfilehash: 1064a44f7c266b9dcce05dfddedef6bb1e919999
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 7f8191b0ef5452fcf6f3a20c3e0f28ca84ef9c4a
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874453"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163432"
 ---
-# <a name="dir-function-must-first-be-called-with-a-pathname-argument"></a><span data-ttu-id="a36aa-102">Функция Dir должна первый раз вызываться с аргументом PathName</span><span class="sxs-lookup"><span data-stu-id="a36aa-102">'Dir' function must first be called with a 'PathName' argument</span></span>
+# <a name="dir-function-must-first-be-called-with-a-pathname-argument"></a><span data-ttu-id="548a3-102">Функция Dir должна первый раз вызываться с аргументом PathName</span><span class="sxs-lookup"><span data-stu-id="548a3-102">'Dir' function must first be called with a 'PathName' argument</span></span>
 
-<span data-ttu-id="a36aa-103">Начальный вызов `Dir` функции не включает `PathName` аргумент.</span><span class="sxs-lookup"><span data-stu-id="a36aa-103">An initial call to the `Dir` function does not include the `PathName` argument.</span></span> <span data-ttu-id="a36aa-104">Первый вызов `Dir` должен включать `PathName` , но последующие вызовы `Dir` не обязательно должны включать параметры для получения следующего элемента.</span><span class="sxs-lookup"><span data-stu-id="a36aa-104">The first call to `Dir` must include a `PathName`, but subsequent calls to `Dir` do not need to include parameters to retrieve the next item.</span></span>  
-  
-## <a name="to-correct-this-error"></a><span data-ttu-id="a36aa-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="a36aa-105">To correct this error</span></span>  
-  
-1. <span data-ttu-id="a36aa-106">Укажите `PathName` аргумент в вызове функции.</span><span class="sxs-lookup"><span data-stu-id="a36aa-106">Supply a `PathName` argument in the function call.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="a36aa-107">См. также</span><span class="sxs-lookup"><span data-stu-id="a36aa-107">See also</span></span>
+<span data-ttu-id="548a3-103">Начальный вызов `Dir` функции не включает `PathName` аргумент.</span><span class="sxs-lookup"><span data-stu-id="548a3-103">An initial call to the `Dir` function does not include the `PathName` argument.</span></span> <span data-ttu-id="548a3-104">Первый вызов `Dir` должен включать `PathName` , но последующие вызовы `Dir` не обязательно должны включать параметры для получения следующего элемента.</span><span class="sxs-lookup"><span data-stu-id="548a3-104">The first call to `Dir` must include a `PathName`, but subsequent calls to `Dir` do not need to include parameters to retrieve the next item.</span></span>
+
+## <a name="to-correct-this-error"></a><span data-ttu-id="548a3-105">Исправление ошибки</span><span class="sxs-lookup"><span data-stu-id="548a3-105">To correct this error</span></span>
+
+- <span data-ttu-id="548a3-106">Укажите `PathName` аргумент в вызове функции.</span><span class="sxs-lookup"><span data-stu-id="548a3-106">Supply a `PathName` argument in the function call.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="548a3-107">См. также</span><span class="sxs-lookup"><span data-stu-id="548a3-107">See also</span></span>
 
 - <xref:Microsoft.VisualBasic.FileSystem.Dir%2A>
