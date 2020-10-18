@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30686
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
-ms.openlocfilehash: f76163d58f3f11d3ca946525a1604abc3ebba68d
-ms.sourcegitcommit: d7c298f6c2e3aab0c7498bfafc0a0a94ea1fe23e
+ms.openlocfilehash: b7c4c9c75de1b3777f34a70470b89f323a5699f9
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72250372"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162067"
 ---
-# <a name="default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>Неоднозначность доступа к свойству по умолчанию между унаследованными членами интерфейса "\<defaultpropertyname >" интерфейса "\<interfacename1 >" и "\<defaultpropertyname >" интерфейса "\<interfacename2 >"
+# <a name="bc30686-default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>BC30686: неоднозначность доступа к свойству по умолчанию между унаследованными членами интерфейса "" \<defaultpropertyname> интерфейса "" \<interfacename1> и " \<defaultpropertyname> " интерфейса " \<interfacename2> "
 
 Интерфейс наследует от двух интерфейсов, каждый из которых объявляет свойство по умолчанию с тем же именем. Компилятор не может разрешить доступ к этому свойству по умолчанию без уточнения. Это показано в следующем примере.
 
@@ -42,7 +42,7 @@ End Class
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
-- Избегайте наследования членов с одинаковыми именами. В предыдущем примере, если `testObj` не требуется ни один из членов, скажем, `Iface2`, объявите его следующим образом:
+- Избегайте наследования членов с одинаковыми именами. В предыдущем примере, если не `testObj` требуется ни один из членов, скажем, `Iface2` , объявить его следующим образом:
 
   ```vb
   Dim testObj As Iface1

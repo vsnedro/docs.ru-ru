@@ -7,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - BC30014
 ms.assetid: 5215585e-2efa-485a-9efe-9833a1cc83a0
-ms.openlocfilehash: 06af269508db6a2b258251272fdc18ef20eb1c0f
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 142c142afe0d9be0ecd4d8a0340f0f1957b20470
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874441"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162782"
 ---
-# <a name="elseif-must-be-preceded-by-a-matching-if-or-elseif"></a>Оператору #ElseIf должен предшествовать соответствующий оператор #If или #ElseIf
+# <a name="bc30014-elseif-must-be-preceded-by-a-matching-if-or-elseif"></a>BC30014: оператору "#ElseIf" должен предшествовать соответствующий оператор "#If" или "#ElseIf"
 
-`#ElseIf` является директивой условной компиляции. `#ElseIf`Оператору должно предшествовать соответствующее `#If` `#ElseIf` предложение или.  
-  
- **Идентификатор ошибки:** BC30014  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-1. Убедитесь, что предыдущий `#If` или `#ElseIf` не был отделен от него `#ElseIf` промежуточным блоком условной компиляции или неправильно размещен `#End If` .  
-  
-2. Если `#ElseIf` перед `#Else` директивой стоит либо удалить, `#Else` либо изменить ее на `#ElseIf` .  
-  
-3. Если все остальное в порядке, добавьте директиву `#If` в начало блока условной компиляции.  
-  
+`#ElseIf` является директивой условной компиляции. `#ElseIf`Оператору должно предшествовать соответствующее `#If` `#ElseIf` предложение или.
+
+ **Идентификатор ошибки:** BC30014
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+1. Убедитесь, что предыдущий `#If` или `#ElseIf` не был отделен от него `#ElseIf` промежуточным блоком условной компиляции или неправильно размещен `#End If` .
+
+2. Если `#ElseIf` перед `#Else` директивой стоит либо удалить, `#Else` либо изменить ее на `#ElseIf` .
+
+3. Если все остальное в порядке, добавьте директиву `#If` в начало блока условной компиляции.
+
 ## <a name="see-also"></a>См. также
 
 - [Директивы #If...Then...#Else](../directives/if-then-else-directives.md)

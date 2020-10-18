@@ -7,31 +7,31 @@ f1_keywords:
 helpviewer_keywords:
 - BC30996
 ms.assetid: 6e183fe0-8888-43ed-a062-01571079455f
-ms.openlocfilehash: 2c5a65443dc16a600e25fcf6dfd11c4597b3a086
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: cbe77bab3e4f8bf2094c70c1c16d95ee897c729e
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873956"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163016"
 ---
-# <a name="initializer-expected"></a>Ожидается инициализатор
+# <a name="bc30996-initializer-expected"></a>BC30996: требуется инициализатор
 
-Предпринята попытка объявить экземпляр класса с помощью инициализатора объекта, в котором список инициализации пуст, как показано в следующем примере.  
-  
- `' Not valid.`  
-  
- `' Dim aStudent As New Student With {}`  
-  
- В списке инициализаторов должно быть инициализировано по крайней мере одно поле или свойство, как показано в следующем примере.  
-  
- `Dim aStudent As New Student With {.year = "Senior"}`  
-  
- **Идентификатор ошибки:** BC30996  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-1. Инициализируйте по крайней мере одно поле или свойство в инициализаторе или не используйте инициализатор объекта.  
-  
+Предпринята попытка объявить экземпляр класса с помощью инициализатора объекта, в котором список инициализации пуст, как показано в следующем примере.
+
+ `' Not valid.`
+
+ `' Dim aStudent As New Student With {}`
+
+ В списке инициализаторов должно быть инициализировано по крайней мере одно поле или свойство, как показано в следующем примере.
+
+ `Dim aStudent As New Student With {.year = "Senior"}`
+
+ **Идентификатор ошибки:** BC30996
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Инициализируйте по крайней мере одно поле или свойство в инициализаторе или не используйте инициализатор объекта.
+
 ## <a name="see-also"></a>См. также
 
 - [Инициализаторы объектов: именованные и анонимные типы](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)

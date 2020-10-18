@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - BC30561
 ms.assetid: 761091f7-1018-4299-b481-3966a4a2c126
-ms.openlocfilehash: fe67dc70c18297319225c3d2ae97f1ce949603d6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 73cc604f1e3a06687ca93779a01e698512be198b
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871531"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160188"
 ---
-# <a name="name1-is-ambiguous-imported-from-the-namespaces-or-types-name2"></a>\<name1> является неоднозначным, поскольку импортировано из пространств имен или типов \<name2>
+# <a name="bc30561-name1-is-ambiguous-imported-from-the-namespaces-or-types-name2"></a>BC30561: " \<name1> " является неоднозначным, импортированным из пространств имен или типов " \<name2> "
 
-Вы указали неоднозначное имя, которое конфликтует с другим именем. Компилятор Visual Basic не имеет правил разрешения конфликтов; необходимо самостоятельно устранить неоднозначность имен.  
-  
- **Идентификатор ошибки:** BC30561  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-1. Неоднозначное имя путем удаления импортируемых пространств имен.  
-  
-2. Укажите полное имя.  
-  
+Вы указали неоднозначное имя, которое конфликтует с другим именем. Компилятор Visual Basic не имеет правил разрешения конфликтов; необходимо самостоятельно устранить неоднозначность имен.
+
+ **Идентификатор ошибки:** BC30561
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Неоднозначное имя путем удаления импортируемых пространств имен.
+
+- Укажите полное имя.
+
 ## <a name="see-also"></a>См. также
 
 - [Оператор Imports (пространство имен .NET и тип)](../statements/imports-statement-net-namespace-and-type.md)

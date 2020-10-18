@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30766
 ms.assetid: 13918600-6087-40d7-8134-32aa9d3bfda4
-ms.openlocfilehash: 5e0f6dd2da404ed988af15fadadd8ecd4a491189
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1c57e1aaea2eb52133d37b782f8fa0ddd96943a9
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874062"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163406"
 ---
-# <a name="functionname-is-not-declared-smart-devicevisual-basic-compiler-error"></a>" \<functionname> " не объявлен (Ошибка компилятора Smart Device/Visual Basic)
+# <a name="bc30766-functionname-is-not-declared-smart-devicevisual-basic-compiler-error"></a>BC30766: " \<functionname> " не объявлен (Ошибка компилятора Smart Device/Visual Basic)
 
-<`functionname`> не объявлен. Функциональные возможности файлового ввода-вывода обычно предоставляются пространством имен `Microsoft.VisualBasic` , однако целевая платформа .NET Compact Framework его не поддерживает.  
-  
- **Идентификатор ошибки:** BC30766  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Выполните операции с файлами с помощью функций, определенных в пространстве имен `System.IO` .  
-  
+<`functionname`> не объявлен. Функциональные возможности файлового ввода-вывода обычно предоставляются пространством имен `Microsoft.VisualBasic` , однако целевая платформа .NET Compact Framework его не поддерживает.
+
+ **Идентификатор ошибки:** BC30766
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Выполните операции с файлами с помощью функций, определенных в пространстве имен `System.IO` .
+
 ## <a name="see-also"></a>См. также
 
 - <xref:System.IO>

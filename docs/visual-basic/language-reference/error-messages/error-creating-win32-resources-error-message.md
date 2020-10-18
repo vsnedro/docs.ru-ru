@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - BC30136
 ms.assetid: 05a813e4-9d65-4ce8-be8f-7ca20bbba2af
-ms.openlocfilehash: 8c6bd3ea76721d6bd45cb3a93de0dfb113b85082
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5df0cd5588a1cabcc980bf5794fafc0fb899bd87
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874394"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163393"
 ---
-# <a name="error-creating-win32-resources-error-message"></a>Ошибка при создании ресурсов Win32: \<error message>
+# <a name="bc30136-error-creating-win32-resources-error-message"></a>BC30136: ошибка при создании ресурсов Win32: \<error message>
 
-Компилятор Visual Basic вызывает компоновщик сборок (Al.exe, также известный как ALink) для создания сборки с манифестом. Компоновщик сообщил об ошибке при создании ресурса, обрабатываемого в памяти. Причиной может быть проблема со средой или нехватка памяти на компьютере.  
-  
- **Идентификатор ошибки:** BC30136  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-1. Изучите сообщение об ошибке в кавычках и ознакомьтесь с разделом [Al.exe](../../../framework/tools/al-exe-assembly-linker.md). для получения дополнительных пояснений и рекомендаций.  
-  
-2. Если ошибка не устранена, соберите сведения об условиях ее возникновения и уведомите службу технической поддержки Майкрософт.  
-  
+Компилятор Visual Basic вызывает компоновщик сборок (Al.exe, также известный как ALink) для создания сборки с манифестом. Компоновщик сообщил об ошибке при создании ресурса, обрабатываемого в памяти. Причиной может быть проблема со средой или нехватка памяти на компьютере.
+
+ **Идентификатор ошибки:** BC30136
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+1. Изучите сообщение об ошибке в кавычках и ознакомьтесь с разделом [Al.exe](../../../framework/tools/al-exe-assembly-linker.md). для получения дополнительных пояснений и рекомендаций.
+
+2. Если ошибка не устранена, соберите сведения об условиях ее возникновения и уведомите службу технической поддержки Майкрософт.
+
 ## <a name="see-also"></a>См. также
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)

@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30043
 ms.assetid: 7973aa82-a681-440c-9bca-242627d7ba86
-ms.openlocfilehash: af436b8fd57ff0d2747c766a64af175760931009
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ad39ade294b362b20f2dfb93455445bf41d056cd
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873906"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163328"
 ---
-# <a name="keyword-is-valid-only-within-an-instance-method"></a>\<keyword> разрешено использовать только в методе экземпляра
+# <a name="bc30043-keyword-is-valid-only-within-an-instance-method"></a>BC30043: " \<keyword> " является допустимым только в пределах метода экземпляра
 
-`Me` `MyClass` Ключевые слова, и `MyBase` относятся к конкретным экземплярам класса. Их нельзя использовать в общей `Function` или `Sub` процедурной среде.  
-  
- **Идентификатор ошибки:** BC30043  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Удалите ключевое слово из процедуры или удалите `Shared` ключевое слово из объявления процедуры.  
-  
+`Me` `MyClass` Ключевые слова, и `MyBase` относятся к конкретным экземплярам класса. Их нельзя использовать в общей `Function` или `Sub` процедурной среде.
+
+*Идентификатор ошибки:** BC30043
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Удалите ключевое слово из процедуры или удалите `Shared` ключевое слово из объявления процедуры.
+
 ## <a name="see-also"></a>См. также
 
 - [Присваивание объектных переменных](../../programming-guide/language-features/variables/object-variable-assignment.md)

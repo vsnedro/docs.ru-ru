@@ -2,12 +2,12 @@
 title: Задание пользовательского алгоритма шифрования
 ms.date: 03/30/2017
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
-ms.openlocfilehash: 673d177a665e265d77f0221e0a00f4b814c8795c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3b4690071ac148966601a1c0f50edfd5a9fd52fc
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79186478"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163237"
 ---
 # <a name="specifying-a-custom-crypto-algorithm"></a>Задание пользовательского алгоритма шифрования
 WCF позволяет указывать пользовательский алгоритм шифрования для использования при шифровании данных или вычислении цифровых подписей. Для этого выполните следующие действия.  
@@ -97,7 +97,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
            <cryptoClasses>  
               <cryptoClass SHA256CSP="System.Security.Cryptography.SHA256CryptoServiceProvider, System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
            </cryptoClasses>  
-           <nameEntry name="http://constoso.com/CustomAlgorithms/CustomHashAlgorithm"  
+           <nameEntry name="http://contoso.com/CustomAlgorithms/CustomHashAlgorithm"  
               class="SHA256CSP" />  
            </cryptoNameMapping>  
         </cryptographySettings>  
@@ -105,14 +105,14 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
 </configuration>  
 ```  
   
- Раздел под <`cryptoClasses`> элемент создает отображение между SHA256CryptoServiceProvider и псевдонимом "SHA256CSP". Элемент `nameEntry` <> создает отображение между псевдонимом "SHA256CSP" и указанным URL. `http://constoso.com/CustomAlgorithms/CustomHashAlgorithm`  
+ В разделе `cryptoClasses` элемента> <создается сопоставление между SHA256CryptoServiceProvider и псевдонимом «SHA256CSP». `nameEntry`Элемент> <создает сопоставление между псевдонимом "SHA256CSP" и указанным URL-адресом `http://contoso.com/CustomAlgorithms/CustomHashAlgorithm` .  
   
  Для регистрации пользовательского алгоритма в коде используйте метод <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])>. Этот метод создает и оба сопоставления. В следующем примере показано, как вызвать этот метод.  
   
 ```csharp
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the
 // SHA256CryptoServiceProvider hash algorithm object.  
-CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.com/CustomAlgorithms/CustomHashAlgorithm");  
+CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://contoso.com/CustomAlgorithms/CustomHashAlgorithm");  
 ```  
   
 ## <a name="configure-the-binding"></a>Настройка привязки  
@@ -123,11 +123,11 @@ WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Message.AlgorithmSuite = new MyCustomAlgorithmSuite();  
 ```  
   
- Для полного примера кода [см. Cryptographic Agility в примере Безопасности WCF.](../samples/cryptographic-agility-in-wcf-security.md)  
+ Полный пример кода см. в разделе [гибкость криптографии в WCF Security](../samples/cryptographic-agility-in-wcf-security.md) .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Securing Services and Clients](../feature-details/securing-services-and-clients.md)
+- [Защита служб и клиентов](../feature-details/securing-services-and-clients.md)
 - [Защита служб](../securing-services.md)
 - [Обзор безопасности](../feature-details/security-overview.md)
-- [Концепции безопасности](../feature-details/security-concepts.md)
+- [Основные понятия безопасности](../feature-details/security-concepts.md)

@@ -7,33 +7,33 @@ f1_keywords:
 helpviewer_keywords:
 - BC40039
 ms.assetid: c5bd5914-ae71-416a-8bed-f76f644f78be
-ms.openlocfilehash: 4e29a27841021b0cf68af01f4535e60eeb38b9a8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 48e020cb74641279a4f402e47034514d78dfc4fc
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871517"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160214"
 ---
-# <a name="name-namespacename-in-the-root-namespace-fullnamespacename-is-not-cls-compliant"></a>Имя \<namespacename> в корневом пространстве имен \<fullnamespacename> не является CLS-совместимым
+# <a name="bc40039-name-namespacename-in-the-root-namespace-fullnamespacename-is-not-cls-compliant"></a>BC40039: имя \<namespacename> в корневом пространстве имен несовместимо с \<fullnamespacename> CLS
 
-Сборка помечена как `<CLSCompliant(True)>` , но элемент имени корневого пространства имен начинается с символа подчеркивания ( `_` ).  
-  
- Программный элемент может содержать один или несколько символов подчеркивания, но для соответствия [языковым независимостьм и зависимым от языка компонентам](../../../standard/language-independence-and-language-independent-components.md) (CLS) он не должен начинаться с символа подчеркивания. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).  
-  
- При применении атрибута <xref:System.CLSCompliantAttribute> к программному элементу вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.  
-  
- Если вы не применяете <xref:System.CLSCompliantAttribute> к элементу, он считается несовместимым.  
-  
- По умолчанию данное сообщение является предупреждением. Сведения о сокрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
-  
- **Идентификатор ошибки:** BC40039  
-  
-## <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Если требуется совместимость с CLS, измените имя корневого пространства имен так, чтобы ни один из его элементов не начинался с символа подчеркивания.  
-  
-- Если требуется, чтобы имя пространства имен оставалось без изменений, удалите <xref:System.CLSCompliantAttribute> из сборки или пометьте его как `<CLSCompliant(False)>` .  
-  
+Сборка помечена как `<CLSCompliant(True)>` , но элемент имени корневого пространства имен начинается с символа подчеркивания ( `_` ).
+
+ Программный элемент может содержать один или несколько символов подчеркивания, но для соответствия [языковым независимостьм и Language-Independent компонентам](../../../standard/language-independence-and-language-independent-components.md) (CLS) он не должен начинаться с символа подчеркивания. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+
+ При применении атрибута <xref:System.CLSCompliantAttribute> к программному элементу вы задаете для параметра `isCompliant` атрибута значение `True` или `False` , чтобы указать совместимость или несовместимость. Для этого параметра нет значения по умолчанию, и вы должны предоставить значение.
+
+ Если вы не применяете <xref:System.CLSCompliantAttribute> к элементу, он считается несовместимым.
+
+ По умолчанию данное сообщение является предупреждением. Сведения о сокрытии предупреждений или обработке предупреждений как ошибок см. в разделе [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).
+
+ **Идентификатор ошибки:** BC40039
+
+## <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Если требуется совместимость с CLS, измените имя корневого пространства имен так, чтобы ни один из его элементов не начинался с символа подчеркивания.
+
+- Если требуется, чтобы имя пространства имен оставалось без изменений, удалите <xref:System.CLSCompliantAttribute> из сборки или пометьте его как `<CLSCompliant(False)>` .
+
 ## <a name="see-also"></a>См. также
 
 - [Оператор Namespace](../statements/namespace-statement.md)

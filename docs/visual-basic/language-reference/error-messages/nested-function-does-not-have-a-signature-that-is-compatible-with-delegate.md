@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC36532
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
-ms.openlocfilehash: 28d07f01c0fd467cb68d73749988273eee95edf4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0dde340164f1ba80d0e1d9fbb5d17ba6da0a5bc4
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409430"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160058"
 ---
-# <a name="nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>Вложенная функция не имеет сигнатуры, совместимой с делегатом "\<delegatename>"
+# <a name="bc36532-nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>BC36532: вложенная функция не имеет сигнатуры, совместимой с делегатом " \<delegatename> "
 
 Лямбда-выражение было назначено делегату с несовместимой сигнатурой. Например, в следующем коде делегат `Del` имеет два целочисленных параметра.
 
@@ -36,7 +36,7 @@ Delegate Function Del(ByVal p As Integer, ByVal q As Integer) As Integer
 
 Измените либо определение делегата, либо назначенное лямбда-выражение, чтобы сигнатуры были совместимыми.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Неявное преобразование делегата](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Лямбда-выражения](../../programming-guide/language-features/procedures/lambda-expressions.md)

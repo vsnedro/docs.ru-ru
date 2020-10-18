@@ -4,16 +4,16 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID91
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
-ms.openlocfilehash: 0264a4235a056c93edb703ec2ef70e7124e0df4e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5eff7622ce2a35cf2846c5141cede98ea033d708
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873633"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92159889"
 ---
 # <a name="object-variable-or-with-block-variable-not-set"></a>Не задана переменная объекта или переменная блока With
 
-Указана недопустимая объектная переменная.   Эта ошибка может возникать по нескольким причинам:
+Указана недопустимая объектная переменная. Эта ошибка может возникать по нескольким причинам:
 
 - Переменная объявлена без указания типа. Если переменная объявлена без указания типа, по умолчанию используется тип `Object` .
 
@@ -31,7 +31,7 @@ ms.locfileid: "90873633"
 - Попытка получить доступ к коду в `With...End With` блоке до инициализации блока.   `With...End With`Блок необходимо инициализировать, выполнив `With` точку входа оператора.
 
 > [!NOTE]
-> В более ранних версиях Visual Basic или VBA эта ошибка также была активирована путем присвоения значения переменной без использования `Set` ключевого слова ( `x = "name"` вместо `Set x = "name"` ). `Set`Ключевое слово больше не является допустимым в Visual Basic .NET.
+> В более ранних версиях Visual Basic или VBA эта ошибка была также вызвана путем присвоения значения переменной без использования `Set` ключевого слова ( `x = "name"` вместо `Set x = "name"` ). `Set`Ключевое слово больше не является допустимым в Visual Basic .NET.
 
 ## <a name="to-correct-this-error"></a>Исправление ошибки
 
