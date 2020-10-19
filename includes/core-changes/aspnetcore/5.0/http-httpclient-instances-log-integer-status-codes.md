@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 44d33fb28e66e590e4604c6dd2c73616e4c5e943
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.openlocfilehash: f1556fac0e8aa79c87cd5e74c1b603582ff5db1b
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728306"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160554"
 ---
 ### <a name="http-httpclient-instances-created-by-ihttpclientfactory-log-integer-status-codes"></a>HTTP. Экземпляры HttpClient, созданные с помощью целочисленных кодов состояния журнала IHttpClientFactory
 
@@ -18,7 +18,7 @@ ms.locfileid: "82728306"
 
 Ведение журнала использует текстовые описания кодов состояния HTTP. Рассмотрим следующее сообщение журнала:
 
-```
+```output
 Received HTTP response after 56.0044ms - OK
 End processing HTTP request after 70.0862ms - OK
 ```
@@ -27,7 +27,7 @@ End processing HTTP request after 70.0862ms - OK
 
 Ведение журнала использует целочисленные значения кодов состояния HTTP. Рассмотрим следующее сообщение журнала:
 
-```
+```output
 Received HTTP response after 56.0044ms - 200
 End processing HTTP request after 70.0862ms - 200
 ```
@@ -63,12 +63,7 @@ End processing HTTP request after 70.0862ms - 200
         // Other service registrations go first. Code omitted for brevity.
 
         // Place the following after all AddHttpClient registrations.
-        var descriptors = services.Where(
-            s => s.ServiceType == typeof(IHttpMessageHandlerBuilderFilter));
-        foreach (var descriptor in descriptors)
-        {
-            services.Remove(descriptor);
-        }
+        services.RemoveAll<IHttpMessageHandlerBuilderFilter>();
 
         services.AddSingleton<IHttpMessageHandlerBuilderFilter,
                               MyLoggingHttpMessageHandlerBuilderFilter>();

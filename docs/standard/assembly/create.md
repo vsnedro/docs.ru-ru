@@ -3,17 +3,17 @@ title: Создание сборок
 description: Узнайте как создать однофайловую или многофайловую сборку с помощью интегрированной среды разработки, например Visual Studio, либо с помощью компиляторов и средств, доступных в пакете Windows SDK.
 ms.date: 08/19/2019
 helpviewer_keywords:
-- assemblies [.NET Framework], multifile
+- assemblies [.NET], multifile
 - single-file assemblies
-- assemblies [.NET Framework], creating
+- assemblies [.NET], creating
 - multifile assemblies
 ms.assetid: 54832ee9-dca8-4c8b-913c-c0b9d265e9a4
-ms.openlocfilehash: 3e17d6a066d937a161135b8b03c3f9258f3586b0
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: e1b08e40ae3b4c377cec52cb1ebf6db643af6429
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378512"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160585"
 ---
 # <a name="create-assemblies"></a>Создание сборок
 
