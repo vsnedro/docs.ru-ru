@@ -153,9 +153,9 @@
         - name: Универсальные типы
           href: programming-guide/language-features/data-types/generic-types.md
           items:
-            - name: 'Практическое руководство. Определение класса, реализующего одинаковую функциональность для разных типов данных'
+            - name: 'Определение класса, реализующего одинаковую функциональность для разных типов'
               href: programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md
-            - name: Практическое руководство. Использование универсального класса
+            - name: Использование универсального класса
               href: programming-guide/language-features/data-types/how-to-use-a-generic-class.md
         - name: Универсальные процедуры
           href: programming-guide/language-features/data-types/generic-procedures.md
@@ -875,14 +875,18 @@
         - name: XML-литерал инструкции обработки
           href: language-reference/xml-literals/xml-processing-instruction-literal.md
     - name: Сообщения об ошибках
-      href: language-reference/error-messages/index.md
       items:
+        - name: Обзор
+          displayName: 'error messages, compiler errors'
+          href: language-reference/error-messages/index.md
+        - name: BC30663
+          href: language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
+        - name: BC32500
+          href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
         - name: 'Оператору #ElseIf должен предшествовать соответствующий оператор #If или #ElseIf'
           href: language-reference/error-messages/elseif-must-be-preceded-by-a-matching-if-or-elseif.md
         - name: 'Операторы #Region и #End Region недопустимы в телах методов/многострочных лямбда-операторах'
           href: language-reference/error-messages/region-and-end-region-are-not-valid-within-method-bodies-multiline-lambdas.md
-        - name: <attribute> не может быть применен из-за неверного формата GUID <number>
-          href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
         - name: '<classname> несовместимо с CLS, так как интерфейс <interfacename>, который он реализует, несовместим с CLS'
           href: language-reference/error-messages/classname-is-not-cls-compliant-because-the-interface-is-not-cls-compliant.md
         - name: <elementname> является устаревшим (Предупреждение Visual Basic)
@@ -949,8 +953,6 @@
           href: language-reference/error-messages/bc31043.md
         - name: '''As Any'' не поддерживается в операторах Declare'
           href: language-reference/error-messages/bc30828.md
-        - name: Атрибут <attributename> не может применяться многократно
-          href: language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
         - name: Ошибка автоматизации
           href: language-reference/error-messages/automation-error.md
         - name: 'Неверное значение контрольной суммы, не шестнадцатеричные цифры или нечетное число шестнадцатеричных цифр'
@@ -1409,7 +1411,7 @@
               href: reference/command-line-compiler/win32manifest.md
             - name: '-win32resource'
               href: reference/command-line-compiler/win32resource.md
-        - name: 'Параметры компилятора, упорядоченные по категориям'
+        - name: Параметры компилятора по категориям
           href: reference/command-line-compiler/compiler-options-listed-by-category.md
     - name: Справочная информация по .NET Framework
       href: reference/net-framework-reference-information.md
