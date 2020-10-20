@@ -3,12 +3,12 @@ title: Обеспечение безопасности веб-приложени
 description: Безопасность микрослужб и веб-приложений .NET — узнайте о способах проверки подлинности в веб-приложениях ASP.NET Core.
 author: mjrousos
 ms.date: 08/07/2020
-ms.openlocfilehash: 1dcdb5d2987360ac583fa700a387d977f498d1d9
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 01797189ce946c39bc7b8cafdff1e69ff9760e4e
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608094"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160676"
 ---
 # <a name="make-secure-net-microservices-and-web-applications"></a>Обеспечение безопасности микрослужб и веб-приложений .NET
 
@@ -77,7 +77,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 ```
 
 > [!IMPORTANT]
-> Для правильной работы Identity строки в приведенном выше коде **ДОЛЖНЫ ИСПОЛЬЗОВАТЬСЯ В ТАКОМ ЖЕ ПОРЯДКЕ**.
+> Для правильной работы Identity строки в приведенном выше коде **должны находиться в таком же порядке**.
 
 Использование удостоверения ASP.NET Core обеспечивает несколько сценариев.
 
