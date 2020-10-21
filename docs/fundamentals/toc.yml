@@ -1867,8 +1867,8 @@ items:
                 href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
               - name: Инструмент определения схемы XML (Xsd.exe)
                 href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-  - name: Модульное тестирование
-    displayName: 'xUnit,NUnit,MSTest,unit testing,testing'
+  - name: Тестирование
+    displayName: 'xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test'
     items:
       - name: Обзор
         href: ../core/testing/index.md
