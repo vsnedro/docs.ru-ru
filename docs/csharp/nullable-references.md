@@ -3,12 +3,12 @@ title: Ссылочные типы, допускающие значение null
 description: В этой статье представлен обзор ссылочных типов, допускающих значение NULL, добавленных в C# 8.0. Вы узнаете, как эта функция обеспечивает безопасность от исключений, связанных со ссылочными типами, допускающими значение NULL, в новых и существующих проектах.
 ms.technology: csharp-null-safety
 ms.date: 04/21/2020
-ms.openlocfilehash: 6d068760805a21e41712a4f70735bef41ce2052f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9c253d02c287d7a113536ac148b352486d450cc2
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84446676"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160884"
 ---
 # <a name="nullable-reference-types"></a>Ссылочные типы, допускающие значение null
 
@@ -124,6 +124,84 @@ name!.Length;
 ## <a name="attributes-describe-apis"></a>Атрибуты для описания API
 
 Атрибуты добавляются в API, которые предоставляют компилятору дополнительные сведения о том, когда аргументы или возвращаемые значения могут или не могут иметь значение NULL. Дополнительные сведения об этих атрибутах см. в статье справочника по языку, где рассматриваются [атрибуты, допускающие значение NUL](language-reference/attributes/nullable-analysis.md). Эти атрибуты добавляются в библиотеки .NET в текущих и будущих выпусках. Сначала обновляются наиболее часто используемые API.
+
+## <a name="known-pitfalls"></a>Известные ошибки
+
+С массивами и структурами, содержащими ссылочные типы, связаны известные ошибки при использовании функции ссылочных типов, допускающих значения NULL.
+
+### <a name="structs"></a>Структуры
+
+Структуре, которая содержит ссылочные типы, не допускающие значения NULL, может быть присвоено значение `default` без предупреждения. Рассмотрим следующий пример.
+
+```csharp
+using System;
+
+#nullable enable
+
+public struct Student
+{
+    public string FirstName;
+    public string? MiddleName;
+    public string LastName;
+}
+
+public static class Program
+{
+    public static void PrintStudent(Student student)
+    {
+        Console.WriteLine($"First name: {student.FirstName.ToUpper()}");
+        Console.WriteLine($"Middle name: {student.MiddleName.ToUpper()}");
+        Console.WriteLine($"Last name: {student.LastName.ToUpper()}");
+    }
+
+    public static void Main() => PrintStudent(default);
+}
+```
+
+В предыдущем примере в `PrintStudent(default)` не возвращается предупреждение, хотя ссылочные типы `FirstName` и `LastName`, не допускающие значения NULL, имеют значение NULL.
+
+Еще один более распространенный случай связан с работой с универсальными структурами. Рассмотрим следующий пример.
+
+```csharp
+#nullable enable
+
+public struct Foo<T>
+{
+    public T Bar { get; set; }
+}
+
+public static class Program
+{
+    public static void Main()
+    {
+        string s = default(Foo<string>).Bar;
+    }
+}
+```
+
+В предыдущем примере свойство `Bar` во время выполнения будет иметь значение `null` и присваивается строке, не допускающей значения NULL. При этом предупреждения не возвращаются.
+
+### <a name="arrays"></a>Массивы
+
+При использовании ссылочных типов, допускающих значения NULL, также могут возникать известные ошибки, связанные с массивами. Рассмотрим следующий пример, в котором не выдаются предупреждения:
+
+```csharp
+using System;
+
+#nullable enable
+
+public static class Program
+{
+    public static void Main()
+    {
+        string[] values = new string[10];
+        string s = values[0];
+        Console.WriteLine(s.ToUpper());
+    }
+}
+```
+
+В предыдущем примере объявление массива показывает, что он содержит строки, не допускающие значения NULL, а все элементы инициализируются с использованием значения NULL. После этого переменной `s` присваивается значение NULL (первый элемент массива). Наконец, переменная `s` разыменовывается, в результате чего во время выполнения возникает исключение.
 
 ## <a name="see-also"></a>См. также
 

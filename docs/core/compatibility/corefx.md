@@ -2,12 +2,12 @@
 title: Критические изменения в библиотеке базовых классов
 description: В этой статье приведен список критических изменений в основных библиотеках .NET.
 ms.date: 07/27/2020
-ms.openlocfilehash: d4deef295479b1f32bd72a69369a11c7375835f4
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 3ecf0e81a3adef097aafb760dc44498d7263f0b6
+ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955566"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92050573"
 ---
 # <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
 
@@ -17,6 +17,7 @@ ms.locfileid: "91955566"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
+| [Значение FrameworkDescription изменено с .NET Core на .NET](#frameworkdescriptions-value-is-net-instead-of-net-core) | 5.0 |
 | [Изменения в поведении API, связанные со сборкой, для формата публикации с одним файлом](#assembly-related-api-behavior-changes-for-single-file-publishing-format) | 5.0 |
 | [Порядок тегов в действии Activity.Tags обращен](#order-of-tags-in-activitytags-is-reversed) | 5.0 |
 | [В RC1 изменились имена параметров](#parameter-names-changed-in-rc1) | 5.0 |
@@ -57,6 +58,10 @@ ms.locfileid: "91955566"
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## <a name="net-50"></a>.NET 5.0
+
+[!INCLUDE [frameworkdescription-returns-net-not-net-core](../../../includes/core-changes/corefx/5.0/frameworkdescription-returns-net-not-net-core.md)]
+
+***
 
 [!INCLUDE [assembly-api-behavior-changes-for-single-file-publish](../../../includes/core-changes/corefx/5.0/assembly-api-behavior-changes-for-single-file-publish.md)]
 

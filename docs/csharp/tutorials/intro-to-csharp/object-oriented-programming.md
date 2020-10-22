@@ -2,12 +2,12 @@
 title: Объектно ориентированное программирование (C#)
 description: C# обеспечивает полную поддержку объектно ориентированного программирования, включая абстракцию, инкапсуляцию, наследование и полиморфизм.
 ms.date: 09/30/2020
-ms.openlocfilehash: 8a8dc8dc6d40c539b988ea203654d994e88c357a
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 6e0155621be544b01453b8c107debb3a9b6c38f9
+ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91614665"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997662"
 ---
 # <a name="object-oriented-programming-c"></a>Объектно-ориентированное программирование (C#)
 
@@ -162,7 +162,7 @@ public void MakeWithdrawal(decimal amount, DateTime date, string note)
 
 :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" ID="RefactoredMakeWithdrawal":::
 
-Добавленный метод предполагает, что его можно вызывать только из производных классов. Это объявление предотвращает вызов метода другими клиентами. А ключевое слово `virtual` означает, что производные классы могут изменять поведение. Тип возвращаемого значения — `Transaction?`. Аннотация `?` указывает, что метод может возвращать `null`. Добавьте следующую реализацию в `LineOfCreditAccount`, чтобы списывать комиссию при превышении лимита на вывод средств.
+Добавленный метод `protected` предполагает, что его можно вызывать только из производных классов. Это объявление предотвращает вызов метода другими клиентами. А ключевое слово `virtual` означает, что производные классы могут изменять поведение. Тип возвращаемого значения — `Transaction?`. Аннотация `?` указывает, что метод может возвращать `null`. Добавьте следующую реализацию в `LineOfCreditAccount`, чтобы списывать комиссию при превышении лимита на вывод средств.
 
 :::code language="csharp" source="./snippets/object-oriented-programming/LineOfCreditAccount.cs" ID="AddOverdraftFee":::
 

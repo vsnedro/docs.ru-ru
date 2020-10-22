@@ -1,25 +1,25 @@
 ---
-title: Неподдерживаемые API в .NET Core
+title: Неподдерживаемые API в .NET Core и .NET версии 5 и более поздних
 titleSuffix: ''
-description: Узнайте, какие API-интерфейсы из .NET Framework всегда вызывают исключение в .NET Core.
-ms.date: 12/23/2019
-ms.openlocfilehash: 94f334d7e4b7daf407f489ba274172ced9eefa81
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+description: Узнайте, какие интерфейсы API .NET всегда вызывают исключение в .NET Core и .NET 5.0 и более поздних версиях.
+ms.date: 10/13/2020
+ms.openlocfilehash: 0164ebff51de82d548a02f9fde754c1052a9c2b5
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414439"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92159343"
 ---
-# <a name="apis-that-always-throw-exceptions-on-net-core"></a>API, которые всегда создают исключения в .NET Core
+# <a name="apis-that-always-throw-exceptions-on-net-core-and-net-5"></a>API, которые всегда создают исключения в .NET Core и .NET версии 5 и более поздних
 
-Следующие API всегда будут вызывать исключение <xref:System.PlatformNotSupportedException> в .NET Core на всех платформах или на их подмножестве.
+Следующие API всегда будут вызывать исключение <xref:System.PlatformNotSupportedException> в .NET версии 5.0 и более поздних (включая все версии .NET Core) на всех платформах или на их подмножестве.
 
-В этой статье затронутые члены API упорядочиваются по пространствам имен.
+В этой статье затронутые API упорядочиваются по пространствам имен.
 
 > [!NOTE]
 >
-> - Эта статья все еще находится в процессе написания. Это не полный список API-интерфейсов, создающих исключения в .NET Core.
-> - В этой статье не рассматриваются явные реализации интерфейса для двоичной сериализации, которые вызываются в .NET Core. Дополнительные сведения см. в разделе [Двоичная сериализация в .NET Core](../../standard/serialization/binary-serialization.md#net-core).
+> - Эта статья все еще находится в процессе написания. Это не полный список API-интерфейсов, создающих исключения в .NET версии 5 и более поздних.
+> - В этой статье не рассматриваются явные реализации интерфейса для двоичной сериализации, которые вызываются в .NET версии 5 и более поздних. Дополнительные сведения см. в разделе [Двоичная сериализация в .NET Core](../../standard/serialization/binary-serialization.md#net-core).
 
 ## <a name="system"></a>Система
 

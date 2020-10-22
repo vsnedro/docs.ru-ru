@@ -1,7 +1,7 @@
 ---
 title: Как сериализировать и десериализировать JSON с помощью C# для .NET
-description: Эта статья содержит сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода.
-ms.date: 05/13/2020
+description: Сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода.
+ms.date: 10/09/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 72ba79784d3eb1beb43eab8db0a448a7e3b18eb6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0fda248b7d2e5a7cfa748447d0265565cb160b7e
+ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557844"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997772"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
-Эта статья содержит сведения об использовании пространства имен <xref:System.Text.Json> для сериализации и десериализации в нотации объектов JavaScript (JSON) и из нее. Если вы переносите существующий код из `Newtonsoft.Json`, ознакомьтесь со статьей [Переход с Newtonsoft.Json на System.Text.Json`System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
+Эта статья содержит сведения об использовании пространства имен <xref:System.Text.Json?displayProperty=fullName> для сериализации и десериализации в нотации объектов JavaScript (JSON) и из нее. Если вы переносите существующий код из `Newtonsoft.Json`, ознакомьтесь со статьей [Переход с Newtonsoft.Json на System.Text.Json`System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 В направлениях и образце кода библиотека используется напрямую, а не с помощью платформы, например [ASP.NET Core](/aspnet/core/).
 
@@ -62,9 +62,12 @@ using System.Text.Json.Serialization;
 
 ### <a name="serialization-example"></a>Пример сериализации
 
-Ниже приведен пример класса, который содержит коллекции и вложенный класс:
+Ниже приведен пример класса, который содержит свойства типа коллекции и определяемый пользователем тип:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
+
+> [!TIP]
+> POCO означает [традиционный объект среды CLR](https://en.wikipedia.org/wiki/Plain_old_CLR_object). POCO — это тип .NET, который не зависит от каких-либо типов платформы, например посредством наследования или атрибутов.
 
 Выходные данные JSON из сериализации экземпляра предыдущего типа выглядят следующим образом. Выходные данные JSON по умолчанию сокращены:
 
@@ -72,7 +75,7 @@ using System.Text.Json.Serialization;
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
 ```
 
-В следующем примере показан тот же формат JSON (т. е. структурированный с пробелами и отступами):
+В следующем примере показан тот же объект JSON, но с форматированием (т. е. структурированный с пробелами и отступами):
 
 ```json
 {
@@ -123,7 +126,7 @@ using System.Text.Json.Serialization;
 К поддерживаемым типам относятся:
 
 * Примитивы .NET, которые сопоставляются с примитивами JavaScript, например числовыми типами, строками и логическими значениями.
-* Определяемые пользователем [объекты POCO (традиционные объекты среды CLR)](https://stackoverflow.com/questions/250001/poco-definition).
+* Определяемые пользователем [объекты POCO (традиционные объекты среды CLR)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * Одномерные массивы и массивы массивов (`ArrayName[][]`).
 * `Dictionary<string,TValue>` где `TValue` — это `object`, `JsonElement` или POCO.
 * Коллекции из следующих пространств имен.
@@ -137,7 +140,7 @@ using System.Text.Json.Serialization;
 
 Чтобы выполнить десериализацию из строки или файла, вызовите метод <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
 
-В следующем примере показано считывание JSON из строки и создание экземпляра класса `WeatherForecast`, показанного ранее для [примера сериализации](#serialization-example):
+В следующем примере показано считывание JSON из строки и создание экземпляра класса `WeatherForecastWithPOCOs`, показанного ранее для [примера сериализации](#serialization-example):
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
 
@@ -159,9 +162,13 @@ using System.Text.Json.Serialization;
 
 ## <a name="deserialization-behavior"></a>Поведение десериализации
 
+При десериализации JSON применяются следующие правила поведения:
+
 * По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](#case-insensitive-property-matching).
 * Если JSON содержит значение для свойства, доступного только для чтения, значение игнорируется, а исключение не создается.
-* Десериализация в ссылочные типы без конструктора, не имеющего параметров, не поддерживается.
+* Конструкторы для десериализации:
+  - В .NET Core 3.0 и 3.1 для десериализации используется конструктор без параметров, который может быть открытым, внутренним или закрытым.
+  - В .NET 5.0 и более поздних версиях сериализатор не учитывает конструкторы, которые не являются открытыми. Тем не менее, если конструктор без параметров недоступен, можно использовать параметризованные конструкторы.
 * Десериализация в неизменяемые объекты или свойства только для чтения не поддерживается.
 * По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](#enums-as-strings).
 * Поля не поддерживаются.

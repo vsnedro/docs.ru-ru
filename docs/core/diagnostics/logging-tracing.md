@@ -1,13 +1,13 @@
 ---
 title: Ведение журнала и трассировка (.NET Core)
 description: Общие сведения о ведении журнала и трассировке в .NET Core.
-ms.date: 08/05/2019
-ms.openlocfilehash: 392b88c9ea3c31c919a605ac0a5c886f7d63f79a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 10/12/2020
+ms.openlocfilehash: 33c78ecc839b552267ad43dd00b7d627e756a939
+ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75714414"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997704"
 ---
 # <a name="net-core-logging-and-tracing"></a>Ведение журнала и трассировка в .NET Core
 
@@ -78,10 +78,10 @@ ms.locfileid: "75714414"
 
 На основе интерфейса <xref:Microsoft.Extensions.Logging.ILogger> был создан единый интерфейс ведения журналов, который позволяет добавлять средства ведения журнала через внедрение зависимостей.
 
-Например, `ASP.NET` предоставляет поддержку большого числа встроенных и сторонних платформ, что позволяет вам правильно выбрать нужный вариант для своего приложения.
+Например, .NET предоставляет поддержку большого числа встроенных и сторонних платформ, что позволяет вам правильно выбрать нужный вариант для своего приложения:
 
-- [Встроенные поставщики ведения журналов ASP.NET](/aspnet/core/fundamentals/logging/#built-in-logging-providers)
-- [Сторонние поставщики ведения журналов для ASP.NET](/aspnet/core/fundamentals/logging/#third-party-logging-providers)
+- [Встроенные поставщики ведения журналов .NET](../extensions/logging-providers.md#built-in-logging-providers)
+- [Сторонние поставщики ведения журналов для .NET](../extensions/logging-providers.md#third-party-logging-providers)
 
 ## <a name="logging-related-references"></a>Справочные материалы по ведению журналов
 
@@ -89,7 +89,7 @@ ms.locfileid: "75714414"
 
 - [Практическое руководство. Добавление операторов трассировки в код приложения](../../framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
 
-- Статья [о ведении журналов в ASP.NET](/aspnet/core/fundamentals/logging) содержит обзор поддерживаемых технологий ведения журналов.
+- Статья [о ведении журналов в .NET](../extensions/logging.md) содержит обзор поддерживаемых технологий ведения журналов.
 
 - [Интерполяция строк в C#](../../csharp/language-reference/tokens/interpolated.md) помогает упростить создание кода для ведения журналов.
 

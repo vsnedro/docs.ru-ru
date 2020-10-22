@@ -9,12 +9,12 @@ helpviewer_keywords:
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: cf4449618c2b57f21855354f2250d41a403b4d57
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 9523ba99f877fde7207042ecb8d28548168a68cb
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381649"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162730"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>Руководство по программированию на C#. Как определить равенства значений для типа
 
@@ -32,9 +32,9 @@ ms.locfileid: "87381649"
   
 5. Любое значение, отличное от NULL, не равно NULL. Однако среда CLR проверяет наличие значений NULL для всех вызовов методов и выдает исключение `NullReferenceException`, если ссылка `this` будет равна NULL. Поэтому `x.Equals(y)` выдает исключение, когда `x` имеет значение NULL. Это нарушает правила 1 или 2 в зависимости от аргумента для `Equals`.
 
- Любая определяемая вами структура имеет заданную по умолчанию реализацию равенства значений, которая наследуется от переопределения <xref:System.ValueType?displayProperty=nameWithType> метода <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Эта реализация использует отражение для проверки всех полей и свойств в типе. Хотя эта реализация возвращает верный результат, она отличается невысокой скоростью по сравнению с пользовательской реализацией, которую можно написать специально для конкретного типа.  
+Любая определяемая вами структура имеет заданную по умолчанию реализацию равенства значений, которая наследуется от переопределения <xref:System.ValueType?displayProperty=nameWithType> метода <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Эта реализация использует отражение для проверки всех полей и свойств в типе. Хотя эта реализация возвращает верный результат, она отличается невысокой скоростью по сравнению с пользовательской реализацией, которую можно написать специально для конкретного типа.  
   
- Детали реализации равенства значений для классов и структур различаются. Однако для реализации равенства как для классов, так и для структур, необходимо выполнить одни и те же базовые действия.  
+Детали реализации равенства значений для классов и структур различаются. Однако для реализации равенства как для классов, так и для структур, необходимо выполнить одни и те же базовые действия.  
   
 1. Переопределите [виртуальный](../../language-reference/keywords/virtual.md) метод <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. В большинстве случаев пользовательская реализация `bool Equals( object obj )` должна вызывать относящийся к конкретному типу метод `Equals`, который является реализацией интерфейса <xref:System.IEquatable%601?displayProperty=nameWithType>. (См. шаг 2.)  
   
@@ -45,29 +45,30 @@ ms.locfileid: "87381649"
 4. Переопределите <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> таким образом, чтобы два объекта с равными значениями создавали одинаковый хэш-код.  
   
 5. Необязательные: Для поддержки определений "больше" и "меньше" реализуйте для типа интерфейс <xref:System.IComparable%601>, а также перегрузите операторы [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) и [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-).  
-  
- В первом из приведенных ниже примеров показана реализация класса. Во втором примере показана реализация структуры.  
 
-## <a name="example"></a>Пример
+> [!NOTE]
+> Начиная с версии C# 9.0 можно использовать записи для получения семантики равенства значений без ненужного стандартного кода.
 
- В следующем примере показана реализация равенства значений в классе (ссылочный тип).  
-  
- [!code-csharp[csProgGuideStatements#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#19)]  
-  
- В классах (ссылочных типах) реализация по умолчанию обоих методов <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> выполняет проверку равенства ссылок, а не значений. Когда разработчик переопределяет виртуальный метод, его задача заключается в том, чтобы реализовать семантику равенства значений.  
-  
- К объектам класса можно применять операторы `==` и `!=`, даже если они не были перегружены в классе. Однако по умолчанию они служат для проверки равенства ссылок. При перегрузке в классе метода `Equals` необходимо перегрузить операторы `==` и `!=`, но это необязательно.  
+## <a name="class-example"></a>Пример класса
 
-## <a name="example"></a>Пример
+В следующем примере показана реализация равенства значений в классе (ссылочный тип).
 
- В следующем примере показана реализация равенства значений в структуре (тип значения).  
+[!code-csharp[csProgGuideStatements#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#19)]
+
+В классах (ссылочных типах) реализация по умолчанию обоих методов <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> выполняет проверку равенства ссылок, а не значений. Когда разработчик переопределяет виртуальный метод, его задача заключается в том, чтобы реализовать семантику равенства значений.
+
+К объектам класса можно применять операторы `==` и `!=`, даже если они не были перегружены в классе. Однако по умолчанию они служат для проверки равенства ссылок. При перегрузке в классе метода `Equals` необходимо перегрузить операторы `==` и `!=`, но это необязательно.
+
+## <a name="struct-example"></a>Пример структуры
+
+В следующем примере показана реализация равенства значений в структуре (тип значения).
+
+[!code-csharp[csProgGuideStatements#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#20)]
   
- [!code-csharp[csProgGuideStatements#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#20)]  
+Для структур реализация по умолчанию <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (представляет собой переопределенную версию в <xref:System.ValueType?displayProperty=nameWithType>) выполняет проверку равенства значений посредством отражения, сравнивая значения каждого поля в типе. Когда разработчик переопределяет виртуальный метод `Equals` в структуре, его задача состоит в том, чтобы найти более эффективный способ проверки равенства значений и, если это возможно, реализовать сравнение только на основании части полей или свойств структуры.
   
- Для структур реализация по умолчанию <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (представляет собой переопределенную версию в <xref:System.ValueType?displayProperty=nameWithType>) выполняет проверку равенства значений посредством отражения, сравнивая значения каждого поля в типе. Когда разработчик переопределяет виртуальный метод `Equals` в структуре, его задача состоит в том, чтобы найти более эффективный способ проверки равенства значений и, если это возможно, реализовать сравнение только на основании части полей или свойств структуры.  
-  
- Операторы [==](../../language-reference/operators/equality-operators.md#equality-operator-) и [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) нельзя применять к структурам, если только они не были явным образом перегружены для конкретной структуры.  
-  
+Операторы [==](../../language-reference/operators/equality-operators.md#equality-operator-) и [!=](../../language-reference/operators/equality-operators.md#inequality-operator-) нельзя применять к структурам, если только они не были явным образом перегружены для конкретной структуры.
+
 ## <a name="see-also"></a>См. также
 
 - [Сравнения на равенство](equality-comparisons.md)

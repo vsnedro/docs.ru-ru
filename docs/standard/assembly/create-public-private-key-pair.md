@@ -5,7 +5,7 @@ ms.date: 08/20/2019
 helpviewer_keywords:
 - key pairs for strong-named assemblies
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - cryptographic key pairs
 - snk files (key pair files)
 - public-private key pairs
@@ -16,12 +16,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 675871170e7fd4171f0fe09b04d1dbb8906beda4
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c42e98a7e27ded9a21445fae35ade843e834076a
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378554"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163497"
 ---
 # <a name="how-to-create-a-public-private-key-pair"></a>Практическое руководство. Создание пары открытого и закрытого ключей
 
@@ -34,7 +34,7 @@ ms.locfileid: "83378554"
 
 Чтобы создать пару ключей, в командной строке введите следующую команду:
 
-**sn –k** \<*имя файла*>
+**sn –k** \<*file name*>
 
 В этой команде *имя файла* — это имя выходного файла, содержащего пару ключей.
 

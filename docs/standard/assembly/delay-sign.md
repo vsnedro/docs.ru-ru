@@ -5,7 +5,7 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - deferring assembly signing
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - strong-named assemblies, delaying assembly signing
 - partial assembly signing
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
@@ -13,12 +13,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 7b5c8c8463fdc573782fa457bf5671c72a7e25f7
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 704ddbec3ddd179622fdc7289036247763449256
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378506"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162899"
 ---
 # <a name="delay-sign-an-assembly"></a>Отложенная подпись сборки
 
@@ -63,7 +63,7 @@ ms.locfileid: "83378506"
    sn –Vr myAssembly.dll
    ```
 
-   Чтобы отключить проверку на платформах, где нельзя запустить средства для работы со строгими именами, такими как микропроцессоры Advanced RISC Machine (ARM), используйте параметр **–Vk** для создания файла реестра. Импортируйте файл реестра в реестр на компьютере, где нужно отключить проверку. В следующем примере создается файл реестра для `myAssembly.dll`.
+   Чтобы отключить проверку на платформах, где нельзя запустить средства для работы со строгими именами, такие как микропроцессоры Advanced RISC Machine (ARM), используйте параметр **–Vk** для создания файла реестра. Импортируйте файл реестра в реестр на компьютере, где нужно отключить проверку. В следующем примере создается файл реестра для `myAssembly.dll`.
 
    ```console
    sn –Vk myRegFile.reg myAssembly.dll
