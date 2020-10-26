@@ -149,9 +149,13 @@ items:
         href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: Средства и диагностика
     items:
+      - name: Обзор
+        displayName: 'diagnostics,tools,tooling,productivity,instrumentation'
+        href: tools-and-productivity.md
       - name: Пакет SDK для .NET Core
         items:
           - name: Обзор
+            displayName: '.net sdk,software development kit,software dev kit,tool'
             href: ../core/sdk.md
           - name: Сообщения об ошибках
             items:
@@ -166,6 +170,7 @@ items:
       - name: Интерфейс командной строки .NET Core
         items:
           - name: Обзор
+            displayName: '.net cli,command-line interface,cli,tool'
             href: ../core/tools/index.md
           - name: Справочник
             items:
@@ -255,23 +260,6 @@ items:
                     href: ../core/tools/dotnet-list-package.md
                   - name: dotnet remove package
                     href: ../core/tools/dotnet-remove-package.md
-          - name: Глобальные и локальные средства
-            items:
-              - name: Управление средствами
-                href: ../core/tools/global-tools.md
-              - name: Устранение неполадок в средствах
-                href: ../core/tools/troubleshoot-usage-issues.md
-              - name: Создание средств для интерфейса командной строки
-                items:
-                  - name: 1. Создание средства
-                    displayName: 'tools, tutorials, cli'
-                    href: ../core/tools/global-tools-how-to-create.md
-                  - name: 2. Использование глобального средства
-                    displayName: 'tools, tutorials, cli'
-                    href: ../core/tools/global-tools-how-to-use.md
-                  - name: 3. Использование локального средства
-                    href: ../core/tools/local-tools-how-to-use.md
-                    displayName: 'tools, tutorials, cli'
           - name: Обзор global.json
             href: ../core/tools/global-json.md
           - name: Телеметрия
@@ -297,6 +285,17 @@ items:
               - name: 3. Создание пакета шаблонов
                 href: ../core/tutorials/cli-templates-create-template-pack.md
                 displayName: 'tutorials, cli'
+      - name: интегрированные среды разработки;
+        items:
+          - name: Visual Studio
+            displayName: 'ide,integrated development environment,vs'
+            href: /visualstudio/windows/
+          - name: Visual Studio для Mac
+            displayName: 'ide,integrated development environment,vs for mac,macOS,Mac'
+            href: /visualstudio/mac/
+          - name: Visual Studio Code
+            displayName: 'ide,integrated development environment,code,vs code,oss ide,'
+            href: 'https://code.visualstudio.com/docs'
       - name: MSBuild и файлы проекта
         items:
           - name: Пакеты SDK для проектов
@@ -317,21 +316,43 @@ items:
             href: ../core/tools/csproj.md
           - name: Управление зависимостями
             href: ../core/tools/dependencies.md
-      - name: Дополнительные инструменты .NET Core
+      - name: Глобальные и локальные средства
+        items:
+          - name: Управление средствами
+            displayName: 'global tool,local tool'
+            href: ../core/tools/global-tools.md
+          - name: Устранение неполадок в средствах
+            displayName: 'global tool troubleshooting,local tool troubleshooting,'
+            href: ../core/tools/troubleshoot-usage-issues.md
+          - name: Создание средств для интерфейса командной строки
+            items:
+              - name: 1. Создание средства
+                displayName: 'tools,tutorials,cli,create global tool,create local tool'
+                href: ../core/tools/global-tools-how-to-create.md
+              - name: 2. Использование глобального средства
+                displayName: 'tools,tutorials,cli,understand global tool'
+                href: ../core/tools/global-tools-how-to-use.md
+              - name: 3. Использование локального средства
+                href: ../core/tools/local-tools-how-to-use.md
+                displayName: 'tools,tutorials,cli,local tool'
+      - name: Дополнительные средства
         items:
           - name: Обзор
             href: ../core/additional-tools/index.md
-          - name: Средство удаления .NET Core
+          - name: "Средство удаления\_.NET"
             href: ../core/additional-tools/uninstall-tool.md
-          - name: Поставщик WCF Web Service Reference
+          - name: "WCF Web Service Reference\_Provider"
             href: ../core/additional-tools/wcf-web-service-reference-guide.md
-          - name: dotnet-svcutil
+          - name: "Служебная программа для\_WCF"
+            displayName: dotnet-svcutil
             href: ../core/additional-tools/dotnet-svcutil-guide.md
-          - name: dotnet-svcutil.xmlserializer
+          - name: "Сериализатор XML для служб\_WCF"
+            displayName: dotnet-svcutil.xmlserializer
             href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-          - name: Генератор сериализации XML
+          - name: "Средство создания сериализатора\_XML"
+            displayName: 'sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer'
             href: ../core/additional-tools/xml-serializer-generator.md
-      - name: Диагностические средства
+      - name: Диагностика и инструментирование
         items:
           - name: Обзор
             href: ../core/diagnostics/index.md
