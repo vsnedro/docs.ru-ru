@@ -1,17 +1,19 @@
 ---
 title: направляющая установки .NET Framework
 description: Сведения об установке платформы .NET Framework в Windows.
-ms.date: 08/03/2017
-ms.openlocfilehash: b14be7a429138069545ede835025dff33b4f3919
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 10/21/2020
+ms.openlocfilehash: 9a12c3a39d1089b28ff7b657967d4a72128596f3
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75716367"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471934"
 ---
 # <a name="installation-guide"></a>Руководство по установке
 
 .NET Framework можно установить в разных версиях Windows.
+
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
 ## <a name="supported-windows-versions"></a>Поддерживаемые версии Windows
 
@@ -25,9 +27,9 @@ ms.locfileid: "75716367"
 
 - [Windows XP и Windows Server 2003](on-windows-xp.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Скачивание .NET Framework](https://dotnet.microsoft.com/download)
+- [Загрузить .NET Framework](https://dotnet.microsoft.com/download)
 - [Устранение неполадок с заблокированными установками и удалениями .NET Framework](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Установка .NET Framework для разработчиков](guide-for-developers.md)
 - [Развертывание .NET Framework для разработчиков](../deployment/deployment-guide-for-developers.md)

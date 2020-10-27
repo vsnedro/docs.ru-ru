@@ -7,10 +7,8 @@ items:
     items:
       - name: Обзор
         href: get-started/index.md
-      - name: .NET Framework и внештатные выпуски
+      - name: Внештатные выпуски
         href: get-started/the-net-framework-and-out-of-band-releases.md
-      - name: .NET Core и открытый исходный код
-        href: get-started/net-core-and-open-source.md
       - name: Требования к системе
         href: get-started/system-requirements.md
   - name: Руководство по установке
