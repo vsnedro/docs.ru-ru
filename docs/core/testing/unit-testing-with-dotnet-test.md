@@ -3,13 +3,13 @@ title: Модульное тестирование кода C# в .NET Core с �
 description: Сведения о концепциях модульного тестирования в C# и .NET Core в рамках пошаговой процедуры по созданию примера решения с помощью команды dotnet test и xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: feff4cabbd10064ef4acca12d4f960f2a40a2b12
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.date: 10/21/2020
+ms.openlocfilehash: e1972858be00e8a884efbd66b618ddb9ab77e9ba
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656388"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471541"
 ---
 # <a name="unit-testing-c-in-net-core-using-dotnet-test-and-xunit"></a>Модульное тестирование C# в .NET Core с использованием dotnet test и xUnit
 
@@ -39,16 +39,16 @@ ms.locfileid: "88656388"
   dotnet new sln -o unit-testing-using-dotnet-test
   ```
 
-  Команда [`dotnet new sln`](../tools/dotnet-new.md) создает новое решение в каталоге *unit-testing-using-dotnet-test*.
-* Теперь перейдите в папку *unit-testing-using-dotnet-test*.
+  Команда [`dotnet new sln`](../tools/dotnet-new.md) создает новое решение в каталоге *unit-testing-using-dotnet-test* .
+* Теперь перейдите в папку *unit-testing-using-dotnet-test* .
 * Выполните следующую команду:
 
   ```dotnetcli
   dotnet new classlib -o PrimeService
   ```
 
-   Команда [`dotnet new classlib`](../tools/dotnet-new.md) создает новый проект библиотеки классов в папке *PrimeService*. Новая библиотека классов будет содержать код для тестирования.
-* Переименуйте *Class1.cs* в *PrimeService.cs*.
+   Команда [`dotnet new classlib`](../tools/dotnet-new.md) создает новый проект библиотеки классов в папке *PrimeService* . Новая библиотека классов будет содержать код для тестирования.
+* Переименуйте *Class1.cs* в *PrimeService.cs* .
 * Замените код файла *PrimeService.cs* на код, приведенный ниже.
   
   ```csharp
@@ -72,20 +72,20 @@ ms.locfileid: "88656388"
 
 <!-- preceding code shows an english bias. Message makes no sense outside english -->
 
-* Выполните приведенную ниже команду в каталоге *unit-testing-using-dotnet-test*, чтобы добавить в решение проект библиотеки классов.
+* Выполните приведенную ниже команду в каталоге *unit-testing-using-dotnet-test* , чтобы добавить в решение проект библиотеки классов.
 
   ```dotnetcli
   dotnet sln add ./PrimeService/PrimeService.csproj
   ```
 
-* Создайте проект *PrimeService.Tests*, выполнив следующую команду
+* Создайте проект *PrimeService.Tests* , выполнив следующую команду
 
   ```dotnetcli
   dotnet new xunit -o PrimeService.Tests
   ```
 
 * Предыдущая команда позволяет:
-  * Создает проект *PrimeService.Tests* в каталоге *PrimeService.Tests*. В тестовом проекте используется библиотека тестов [xUnit](https://xunit.net/).
+  * Создает проект *PrimeService.Tests* в каталоге *PrimeService.Tests* . В тестовом проекте используется библиотека тестов [xUnit](https://xunit.net/).
   * Настраивает средство выполнения тестов, добавляя следующие элементы `<PackageReference />` в файл проекта:
     * Microsoft.NET.Test.Sdk
     * xunit
@@ -122,16 +122,16 @@ dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeServi
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
-Выполните инструкции по замене кода в файле *PrimeService.cs*, предложенные в предыдущем разделе.
+Выполните инструкции по замене кода в файле *PrimeService.cs* , предложенные в предыдущем разделе.
 
 ## <a name="create-a-test"></a>Создание теста
 
 Разработка на основе тестирования (TDD) обычно подразумевает написание теста до реализации целевого кода. В этом руководстве используется подход TDD. Метод `IsPrime` является вызываемым, но он пока не реализован. Тестовый вызов `IsPrime` завершается ошибкой. При использовании TDD мы создаем тест, который ожидаемо завершается ошибкой. Затем мы обновляем целевой код, чтобы пройти только созданный тест. Этот подход повторяется циклически: сначала вы создаете тест, который не выполняется, а затем обновляете целевой код, чтобы выполнить тест.
 
-Обновите проект *PrimeService.Tests*.
+Обновите проект *PrimeService.Tests* .
 
-* Удалите *PrimeService.Tests/UnitTest1.cs*.
-* Создайте файл *PrimeService.Tests/PrimeService_IsPrimeShould.cs*.
+* Удалите *PrimeService.Tests/UnitTest1.cs* .
+* Создайте файл *PrimeService.Tests/PrimeService_IsPrimeShould.cs* .
 * Замените код файла *PrimeService_IsPrimeShould.cs* кодом, приведенным ниже.
 
 ```csharp
@@ -142,17 +142,11 @@ namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould
     {
-        private readonly PrimeService _primeService;
-
-        public PrimeService_IsPrimeShould()
-        {
-            _primeService = new PrimeService();
-        }
-
         [Fact]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var result = _primeService.IsPrime(1);
+            var primeService = new PrimeService();
+            bool result = primeService.IsPrime(1);
 
             Assert.False(result, "1 should not be prime");
         }
@@ -182,7 +176,8 @@ public bool IsPrime(int candidate)
 Добавьте проверку простых чисел для 0 и -1. Можно скопировать предыдущий тест и изменить в нем код, чтобы использовать 0 и -1:
 
 ```csharp
-var result = _primeService.IsPrime(1);
+var primeService = new PrimeService();
+bool result = primeService.IsPrime(1);
 
 Assert.False(result, "1 should not be prime");
 ```
@@ -198,7 +193,8 @@ Assert.False(result, "1 should not be prime");
 [Fact]
 public void IsPrime_InputIs1_ReturnFalse()
 {
-    var result = _primeService.IsPrime(1);
+    var primeService = new PrimeService();
+    bool result = primeService.IsPrime(1);
 
     Assert.False(result, "1 should not be prime");
 }

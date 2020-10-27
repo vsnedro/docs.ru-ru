@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - char data type [C#]
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
-ms.openlocfilehash: 636e032ac22b48ebc471780ffa85148bf952cdd2
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 1cb40759b81a1fcedcf5962b57d79cf3a64df561
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465095"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471880"
 ---
 # <a name="char-c-reference"></a>char (Справочник по C#)
 
@@ -37,7 +37,7 @@ ms.locfileid: "89465095"
 - escape-последовательность Юникода, то есть символы `\u`, за которыми следует шестнадцатеричное представление кода символа из четырех символов;
 - шестнадцатеричная escape-последовательность, то есть символы `\x`, за которыми следует шестнадцатеричное представление кода символа.
 
-[!code-csharp-interactive[char literals](snippets/CharType.cs#Literals)]
+[!code-csharp-interactive[char literals](snippets/shared/CharType.cs#Literals)]
 
 Как показано в предыдущем примере, можно также привести значение кода символа к соответствующему значению `char`.
 

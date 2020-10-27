@@ -1,15 +1,17 @@
 ---
 title: Подключение .NET для Apache Spark к Центрам событий Azure
 description: Узнайте, как подключиться к Центру событий Azure из локального экземпляра .NET для Apache Spark.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 4de4836ba2b63429e29ae819afac09c7a3998480
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: c8fd10992e63674032af4148e0673a5330d9086c
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91954975"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223969"
 ---
 # <a name="connect-net-for-apache-spark-to-azure-event-hubs"></a>Подключение .NET для Apache Spark к Центрам событий Azure
 

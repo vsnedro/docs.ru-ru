@@ -1,15 +1,17 @@
 ---
 title: Подключение .NET для Apache Spark к SQL Server
 description: Узнайте, как подключиться к экземпляру SQL Server из приложения .NET для Apache Spark.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 773e743a67c066438cb86d983ebfa34f73692c2d
-ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
+ms.openlocfilehash: b20710000d8717b5df238aa9a782371fbe586037
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878042"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224031"
 ---
 # <a name="connect-net-for-apache-spark-to-sql-server"></a>Подключение .NET для Apache Spark к SQL Server
 
@@ -27,7 +29,7 @@ ms.locfileid: "91878042"
 
     ![Включение протокола TCP/IP в SQL Server](./media/connect-external-sources/SqlServerTCPIP.png)
 
-    Также обратите внимание на значение параметра **Прослушивать все** на изображенной выше вкладке в разделе **Протокол**.
+    Также обратите внимание на значение параметра **Прослушивать все** на изображенной выше вкладке в разделе **Протокол** .
 
 5. Настройте для порта TCP/IP значение 1433 для всех необходимых IP-адресов, если для параметра `Listen All` установлено значение `No`. В противном случае задайте для порта TCP значение IPAll.
 
@@ -37,15 +39,15 @@ ms.locfileid: "91878042"
 
 1. Используйте драйвер Microsoft JDBC для SQL Server, чтобы обеспечить подключение к базе данных из вашего приложения (скачайте с [официального веб-сайта](https://docs.microsoft.com/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)).
 2. Настройте следующие параметры конфигурации для подключения к экземпляру и базе данных SQL Server из приложения:
-    1. **connection_url**: это URL-адрес, используемый для подключения к экземпляру или базе данных SQL Server, который имеет следующий формат:
+    1. **connection_url** : это URL-адрес, используемый для подключения к экземпляру или базе данных SQL Server, который имеет следующий формат:
 
         ```
         jdbc:sqlserver://<SQL_server_IP_address>:1433;instanceName=<instance_name>;databaseName=<database_name>;
         ```
 
-    2. **dbtable**: имя таблицы, к которой осуществляется доступ.
-    3. **user**: учетная запись пользователя, настроенная на шаге 1 настройки SQL Server.
-    4. **password**: пароль пользователя, настроенный на шаге 1 настройки SQL Server.
+    2. **dbtable** : имя таблицы, к которой осуществляется доступ.
+    3. **user** : учетная запись пользователя, настроенная на шаге 1 настройки SQL Server.
+    4. **password** : пароль пользователя, настроенный на шаге 1 настройки SQL Server.
 3. Используйте приведенную выше конфигурацию в коде приложения для чтения данных из таблицы, как показано ниже.
 
     ```csharp

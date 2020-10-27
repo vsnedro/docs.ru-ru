@@ -11,16 +11,16 @@ helpviewer_keywords:
 - enumeration type [C#]
 - bit flags [C#]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
-ms.openlocfilehash: 617c5ec037ad7a47b43cca2c13da4a77aa682997
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 930efdbdc6a20ea301331c1ce6fc664da43bfc5f
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739090"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471854"
 ---
 # <a name="enumeration-types-c-reference"></a>Типы перечислений (справочник по C#)
 
-*Тип перечисления* (или *тип enum*) — это [тип значения](value-types.md), определенный набором именованных констант применяемого [целочисленного типа](integral-numeric-types.md). Чтобы определить тип перечисления, используйте ключевое слово `enum` и укажите имена *элементов перечисления*:
+*Тип перечисления*  (или *тип enum* ) — это [тип значения](value-types.md), определенный набором именованных констант применяемого [целочисленного типа](integral-numeric-types.md). Чтобы определить тип перечисления, используйте ключевое слово `enum` и укажите имена *элементов перечисления* :
 
 ```csharp
 enum Season
@@ -54,7 +54,7 @@ enum ErrorCode : ushort
 
 Если вам необходимо, чтобы тип перечисления представлял комбинацию вариантов выбора, определите элементы перечисления для этих вариантов так, чтобы отдельный выбор был битовым полем. То есть связанные значения этих элементов перечисления должны быть степенями двух. Затем вы можете использовать [побитовые логические операторы `|` или `&`](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators), чтобы комбинировать варианты выбора или пересекать комбинации вариантов выбора соответственно. Чтобы указать, что тип перечисления объявляет битовые поля, примените к нему атрибут [Flags](xref:System.FlagsAttribute). Как показано в следующем примере, вы можете включить некоторые типичные комбинации в определение типа перечисления.
 
-[!code-csharp[enum flags](snippets/EnumType.cs#Flags)]
+[!code-csharp[enum flags](snippets/shared/EnumType.cs#Flags)]
 
 Дополнительные сведения и примеры см. на странице справочника по API <xref:System.FlagsAttribute?displayProperty=nameWithType> и в разделе о [неисключительных элементах и атрибутах Flags](/dotnet/api/system.enum#non-exclusive-members-and-the-flags-attribute) страницы справочника по API <xref:System.Enum?displayProperty=nameWithType>.
 
@@ -68,7 +68,7 @@ enum ErrorCode : ushort
 
 Для любого типа перечисления существуют явные преобразования между типом перечисления и его базовым целочисленным типом. Если вы [привели](../operators/type-testing-and-cast.md#cast-expression) значение перечисления к его базовому типу, то результатом будет связанное целочисленное значение элемента перечисления.
 
-[!code-csharp[enum conversions](snippets/EnumType.cs#Conversions)]
+[!code-csharp[enum conversions](snippets/shared/EnumType.cs#Conversions)]
 
 Используйте метод <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType>, чтобы определить, содержит ли тип перечисления элемент перечисления с определенным связанным значением.
 
