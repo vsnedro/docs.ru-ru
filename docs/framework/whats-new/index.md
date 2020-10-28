@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - what's new [.NET Framework]
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
-ms.openlocfilehash: 6bbadd05187946cfdc601f9c026d685609251193
-ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
+ms.openlocfilehash: 13346836b6cc1c9db4a1b6fd93a11615c2a843c0
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92471947"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687568"
 ---
 # <a name="whats-new-in-net-framework"></a>Новые возможности .NET Framework
 
@@ -1855,7 +1855,7 @@ WPF включает [пакет NuGet](https://www.nuget.org/packages/Microsoft
 
   - Можно изменить целевую платформу библиотеки классов Магазина Windows или Магазина Windows Phone, такой как переносимая библиотека классов.
 
-  Дополнительные сведения об этих изменениях см. в разделе [Переносимая библиотека классов](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
+  Дополнительные сведения об этих изменениях см. в разделе [Переносимая библиотека классов](../cross-platform/portable-class-library.md).
 
 - Набор содержимого .NET Framework теперь включает документацию для .NET Native. Это технология предварительной компиляции для сборки и развертывания приложений Windows. .NET Native компилирует приложения напрямую в машинный код, а не в промежуточный язык (IL), что повышает производительность. Подробные сведения см. в разделе [Компиляция приложений с помощью .NET Native](../net-native/index.md).
 
@@ -2125,13 +2125,12 @@ WPF включает [пакет NuGet](https://www.nuget.org/packages/Microsoft
 
 ### <a name="portable-class-libraries"></a>Переносимые библиотеки классов <a name="portable"></a>
 
-Проект "Переносимая библиотека классов" для Visual Studio 2012 (и более поздних версий) позволяет писать и собирать управляемые сборки, работающие на нескольких платформах .NET Framework. Используя проект "Переносимая библиотека классов", вы можете создавать приложения для конкретных платформ (например, для Windows Phone или .NET для приложений Магазина Windows 8.x). Доступные типы и члены в проекте автоматически ограничиваются типами и членами, общими для этих платформ. Дополнительные сведения см. в статье [Переносимая библиотека классов](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md).
+Проект "Переносимая библиотека классов" для Visual Studio 2012 (и более поздних версий) позволяет писать и собирать управляемые сборки, работающие на нескольких платформах .NET Framework. Используя проект "Переносимая библиотека классов", вы можете создавать приложения для конкретных платформ (например, для Windows Phone или .NET для приложений Магазина Windows 8.x). Доступные типы и члены в проекте автоматически ограничиваются типами и членами, общими для этих платформ. Дополнительные сведения см. в статье [Переносимая библиотека классов](../cross-platform/portable-class-library.md).
 
 ## <a name="see-also"></a>См. также
 
 - [.NET Framework и отдельные выпуски](../get-started/the-net-framework-and-out-of-band-releases.md)
 - [Улучшения специальных возможностей в .NET Framework](whats-new-in-accessibility.md)
-- [Новые возможности Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
 - [Новые возможности Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)
 - [ASP.NET](/aspnet)
 - [Новые возможности C++ в Visual Studio](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

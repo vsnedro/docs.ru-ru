@@ -725,24 +725,20 @@ items:
         href: misc/using-libraries-from-partially-trusted-code.md
       - name: Использование метода Assert
         href: misc/using-the-assert-method.md
-  - name: Создание консольных приложений
-    href: ../standard/building-console-apps.md
-  - name: Прием событий в приложениях веб-форм
-    href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
-  - name: Анализатор кода .NET Framework
-    href: ../standard/analyzers/framework-analyzer.md
+  - name: Анализ кода
+    href: code-analyzers.md
   - name: Разработка для нескольких платформ
     items:
       - name: Обзор
-        href: ../standard/cross-platform/index.md
+        href: cross-platform/index.md
         displayName: cross platform
       - name: Переносимая библиотека классов
-        href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+        href: cross-platform/portable-class-library.md
       - name: Использование переносимой библиотеки классов с MVVM
-        href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+        href: cross-platform/using-portable-class-library-with-model-view-view-model.md
       - name: 'Ресурсы приложений для библиотек, предназначенных для нескольких платформ'
-        href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+        href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
       - name: Поддержка приложений для Microsoft Store и среды выполнения Windows в .NET Framework
-        href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+        href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
       - name: Передача URI в среду выполнения Windows
-        href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md
+        href: cross-platform/passing-a-uri-to-the-windows-runtime.md
