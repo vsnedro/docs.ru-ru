@@ -2,12 +2,12 @@
 title: Добавление ссылки на службу в проект переносного вложенного набора
 ms.date: 03/30/2017
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
-ms.openlocfilehash: 8bedfb44523b4f67845d40fadfaa72d64622ba26
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: e9a0d3fbc75a8c64af892f74acedfc41dc115da3
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77449482"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687703"
 ---
 # <a name="add-service-reference-in-a-portable-subset-project"></a>Добавление ссылки на службу в проект переносного вложенного набора
 
@@ -44,7 +44,7 @@ ms.locfileid: "77449482"
   
 14. Свойство <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> не поддерживается в проектах переносимого подмножества.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [Обращение к службам с помощью клиента WCF](accessing-services-using-a-wcf-client.md)
-- [Переносимая библиотека классов](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)
+- [Обращение к службам с использованием клиента WCF](accessing-services-using-a-wcf-client.md)
+- [Переносимая библиотека классов](../cross-platform/portable-class-library.md)
