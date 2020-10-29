@@ -1524,6 +1524,8 @@ items:
             href: ../standard/attributes/retrieving-information-stored-in-attributes.md
       - name: Выбор между анонимными типами и кортежами
         href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
+      - name: Основы консольных приложений
+        href: ../standard/building-console-apps.md
   - name: Внедрение зависимостей
     items:
       - name: Обзор
