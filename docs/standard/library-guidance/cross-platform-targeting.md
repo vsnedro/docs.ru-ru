@@ -2,12 +2,12 @@
 title: Кроссплатформенное нацеливание для библиотек .NET
 description: Рекомендации по созданию кроссплатформенных библиотек .NET.
 ms.date: 08/12/2019
-ms.openlocfilehash: 61adff3759984554bb83531b4f9d8a49e29c929c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6309e300861ab286dcaba3256267b3459e6e0d10
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "76731459"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223343"
 ---
 # <a name="cross-platform-targeting"></a>Кроссплатформенное нацеливание
 
@@ -15,7 +15,7 @@ ms.locfileid: "76731459"
 
 ## <a name="net-standard"></a>.NET Standard
 
-Добавить в библиотеку .NET. кроссплатформенную поддержку лучше всего с помощью .NET Standard. [.NET Standard](../net-standard.md) — это спецификация API-интерфейсов .NET, которые доступны во всех реализациях .NET. Нацеливание на .NET Standard позволяет создавать библиотеки, которые могут использовать API-интерфейсы определенной версии .NET Standard, т. е. такие библиотеки могут использоваться на всех платформах, на которых реализуется определенная версия .NET Standard.
+Добавить в библиотеку .NET. кроссплатформенную поддержку лучше всего с помощью .NET Standard. [.NET Standard](../net-standard.md) — это спецификация API-интерфейсов .NET, которые доступны во всех реализациях .NET. Нацеливание на .NET Standard позволяет создавать библиотеки, которые могут использовать API-интерфейсы определенной версии .NET Standard, т. е. такие библиотеки могут использоваться на всех платформах, на которых реализуется определенная версия .NET Standard.
 
 ![.NET Standard](./media/cross-platform-targeting/platforms-netstandard.png ".NET Standard")
 

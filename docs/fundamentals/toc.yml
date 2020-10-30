@@ -1560,6 +1560,8 @@ items:
         href: ../core/extensions/custom-logging-provider.md
       - name: Ведение журнала с высокой производительностью
         href: ../core/extensions/high-performance-logging.md
+      - name: Форматирование журнала консоли
+        href: ../core/extensions/console-log-formatter.md
   - name: HostBuilder (универсальный узел)
     href: ../core/extensions/generic-host.md
   - name: Доступ к данным

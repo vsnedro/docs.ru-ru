@@ -4,12 +4,12 @@ description: Описание ключевых компонентов архит
 author: cartermp
 ms.date: 10/05/2020
 ms.technology: dotnet-standard
-ms.openlocfilehash: 0cdd2485e81626ffc9d17380427c29fee0f82083
-ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
+ms.openlocfilehash: 316063dbcfba5c92b4a9c6a17051e0a7fc178a3a
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050257"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224398"
 ---
 # <a name="net-architectural-components"></a>Архитектурные компоненты .NET
 
@@ -89,7 +89,7 @@ UWP представляет собой реализацию .NET, котора�
 Вы можете использовать широкий набор средств и компонентов инфраструктуры, которые работают в каждой реализации платформы .NET. К этим средствам и компонентам относятся:
 
 - языки .NET и соответствующие компиляторы;
-- систему проектов .NET (на основе файлов *CSPROJ*, *VBPROJ* и *FSPROJ*);
+- систему проектов .NET (на основе файлов *CSPROJ* , *VBPROJ* и *FSPROJ* );
 - [MSBuild](/visualstudio/msbuild/msbuild), обработчик для сборки проектов;
 - [NuGet](/nuget/), диспетчер пакетов корпорации Майкрософт для .NET;
 - инструменты для управления сборкой с открытым исходным кодом, например [CAKE](https://cakebuild.net/) и [FAKE](https://fake.build/).
@@ -107,14 +107,14 @@ UWP представляет собой реализацию .NET, котора�
 Следующие официальные документы Ecma доступны для [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) и [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)):
 
 - **Стандарт языка C# (версия 5.0)** : [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **Common Language Infrastructure**: Доступно в форматах [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) и [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip).
-- **Сведения, полученные из файла XML раздела IV**: Доступно в форматах [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) и [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip).
+- **Common Language Infrastructure** : Доступно в форматах [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) и [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip).
+- **Сведения, полученные из файла XML раздела IV** : Доступно в форматах [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) и [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip).
 
 Официальные документы ISO/IEC доступны на странице [общедоступных стандартов](https://standards.iso.org/ittf/PubliclyAvailableStandards/) ISO/IEC. Эти ссылки указываются непосредственно на этой странице:
 
 - **Информационные технологии — языки программирования — C#** : [ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
-- **Информационные технологии — Common Language Infrastructure (CLI), разделы I–VI**: [ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)
-- **Информационные технологии — Common Language Infrastructure (CLI) — технический отчет о данных, полученных из файла XML раздела IV**: [ISO/IEC TR 23272:2011](https://standards.iso.org/ittf/PubliclyAvailableStandards/c057955_ISO_IEC_TR_23272_2011.zip)
+- **Информационные технологии — Common Language Infrastructure (CLI), разделы I–VI** : [ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)
+- **Информационные технологии — Common Language Infrastructure (CLI) — технический отчет о данных, полученных из файла XML раздела IV** : [ISO/IEC TR 23272:2011](https://standards.iso.org/ittf/PubliclyAvailableStandards/c057955_ISO_IEC_TR_23272_2011.zip)
 
 ## <a name="see-also"></a>См. также
 

@@ -5,12 +5,12 @@ ms.date: 10/05/2020
 ms.technology: dotnet-standard
 ms.custom: updateeachrelease
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-ms.openlocfilehash: a4a59fea3ab1a6bc93a12e3f0aa13dea726d8121
-ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
+ms.openlocfilehash: a4736e46eb7c25b64278bed8f2c2457002936b81
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050405"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224162"
 ---
 # <a name="net-standard"></a>.NET Standard
 
@@ -60,7 +60,7 @@ ms.locfileid: "92050405"
 
 ### <a name="official-artifacts"></a>Официальные артефакты
 
-Официальная спецификация — это набор *CS-файлов*, которые определяют API, входящие в стандарт. [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) в [репозиторий dotnet/standard](https://github.com/dotnet/standard) определяет стандартные API-интерфейсы .NET.
+Официальная спецификация — это набор *CS-файлов* , которые определяют API, входящие в стандарт. [ref directory](https://github.com/dotnet/standard/tree/master/src/netstandard/ref) в [репозиторий dotnet/standard](https://github.com/dotnet/standard) определяет стандартные API-интерфейсы .NET.
 
 Метапакет [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) ([источник](https://github.com/dotnet/standard/blob/master/src/netstandard/pkg/NETStandard.Library.dependencies.props)) описывает набор библиотек, определяющих (частично) одну версию .NET Standard.или несколько.
 

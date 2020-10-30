@@ -5,12 +5,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/01/2020
-ms.openlocfilehash: 70297cfe15732716b9ceacae091abe3c8957fb61
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 4a4c8e2806fee663b5f6aa255a6f24250a072a85
+ms.sourcegitcommit: 532b03d5bbab764d63356193b04cd2281bc01239
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495477"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "92526611"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -143,7 +143,7 @@ dotnet new -h|--help
 
 - **`--type <TYPE>`**
 
-  Фильтрует шаблоны по доступным типам. Предопределенные значения: `project`, `item` и `other`.
+  Фильтрует шаблоны по доступным типам. Предопределенные значения: `project` и `item`.
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
@@ -152,7 +152,7 @@ dotnet new -h|--help
   Если вы не указываете параметр в этой опции, команда перечисляет установленные шаблоны и подробные сведения о них.
 
   > [!NOTE]
-  > Чтобы удалить шаблон с помощью `PATH`, вам необходимо указать полный путь. Например, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* будет работать, а *./GarciaSoftware.ConsoleTemplate.CSharp* — нет.
+  > Чтобы удалить шаблон с помощью `PATH`, вам необходимо указать полный путь. Например, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* будет работать, а *./GarciaSoftware.ConsoleTemplate.CSharp*  — нет.
   > Путь к шаблону не должен содержать конечную косую черту закрытия каталога.
 
 - **`--update-apply`**
@@ -190,11 +190,11 @@ dotnet new -h|--help
 
   Если указано — во время создания проекта не выполняется неявное восстановление. Доступно начиная с пакета SDK для .NET Core 2.2.
 
-***
+**_
 
 ### <a name="classlib"></a>classlib
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значения: `netcoreapp<version>` для создания библиотеки классов .NET Core или `netstandard<version>` для создания стандартной библиотеки классов .NET. Значение по умолчанию — `netstandard2.0`.
 
@@ -208,11 +208,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значение по умолчанию — `netcoreapp3.1`. Доступно, начиная с пакета SDK для .NET Core 3.1.
 
@@ -226,11 +226,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="winforms-winformslib"></a><a name="winforms"></a> winforms, winformslib
 
-- **`--langVersion <VERSION_NUMBER>`**
+- _ *`--langVersion <VERSION_NUMBER>`**
 
   Задает свойство `LangVersion` в созданном файле проекта. Например, вам требуется `--langVersion 7.3`, чтобы использовать C# 7.3.
 
@@ -240,11 +240,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="worker-grpc"></a><a name="web-others"></a> worker, grpc
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значение по умолчанию — `netcoreapp3.1`. Доступно, начиная с пакета SDK для .NET Core 3.1.
 
@@ -256,11 +256,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="mstest-xunit"></a><a name="test"></a>тmstest, xunit
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Параметр доступен, начиная с пакета SDK для .NET Core 3.0.
 
@@ -279,11 +279,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="nunit"></a>nunit
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md).
 
@@ -304,11 +304,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="page"></a>страница
 
-- **`-na|--namespace <NAMESPACE_NAME>`**
+- _ *`-na|--namespace <NAMESPACE_NAME>`**
 
   Пространство имен для сформированного кода. Значение по умолчанию — `MyApp.Namespace`.
 
@@ -316,19 +316,19 @@ dotnet new -h|--help
 
   Создает страницу без PageModel.
 
-***
+**_
 
 ### <a name="viewimports-proto"></a><a name="namespace"></a> viewimports, proto
 
-- **`-na|--namespace <NAMESPACE_NAME>`**
+- _ *`-na|--namespace <NAMESPACE_NAME>`**
 
   Пространство имен для сформированного кода. Значение по умолчанию — `MyApp.Namespace`.
 
-***
+**_
 
 ### <a name="blazorserver"></a>blazorserver
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -395,11 +395,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="web"></a>web
 
-- **`--exclude-launch-settings`**
+- _ *`--exclude-launch-settings`**
 
   Исключает файл *launchSettings.json* из создаваемого шаблона.
 
@@ -423,11 +423,11 @@ dotnet new -h|--help
 
   Отключает протокол HTTPS.
 
-***
+**_
 
 ### <a name="mvc-webapp"></a><a name="web-options"></a> mvc, webapp
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -513,11 +513,11 @@ dotnet new -h|--help
 
   Определяет, настроен ли проект для использования [компиляции среды выполнения Razor](/aspnet/core/mvc/views/view-compilation#runtime-compilation) в отладочных сборках. Параметр доступен начиная с пакета SDK для .NET Core 3.1.201.
 
-***
+**_
 
 ### <a name="angular-react"></a><a name="spa"></a> angular, react
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Доступно, начиная с пакета SDK для .NET Core 3.0.
   
@@ -554,11 +554,11 @@ dotnet new -h|--help
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
 
-***
+**_
 
 ### <a name="reactredux"></a>reactredux
 
-- **`--exclude-launch-settings`**
+- _ *`--exclude-launch-settings`**
 
   Исключает файл *launchSettings.json* из создаваемого шаблона.
 
@@ -582,11 +582,11 @@ dotnet new -h|--help
 
   Отключает протокол HTTPS.
 
-***
+**_
 
 ### <a name="razorclasslib"></a>razorclasslib
 
-- **`--no-restore`**
+- _ *`--no-restore`**
 
   Во время создания проекта не выполняется неявное восстановление.
 
@@ -594,11 +594,11 @@ dotnet new -h|--help
 
   Поддерживает добавление традиционных страниц Razor и представлений в дополнение к компонентам этой библиотеки. Доступно, начиная с пакета SDK для .NET Core 3.0.
 
-***
+**_
   
 ### <a name="webapi"></a>webapi
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -663,13 +663,13 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-***
+**_
 
 ### <a name="globaljson"></a>globaljson
 
-- **`--sdk-version <VERSION_NUMBER>`**
+- _ *`--sdk-version <VERSION_NUMBER>`**
 
-  Задает версию пакета SDK для .NET Core, используемую в файле *global.json*.
+  Задает версию пакета SDK для .NET Core, используемую в файле *global.json* .
 
 ***
 
@@ -711,13 +711,13 @@ dotnet new -h|--help
   dotnet new spa -l
   ```
 
-- Список всех шаблонов, соответствующих подстроке *we*. Точное совпадение не найдено, поэтому сравнение подстрок выполняется по короткому имени и столбцам имен.
+- Список всех шаблонов, соответствующих подстроке *we* . Точное совпадение не найдено, поэтому сравнение подстрок выполняется по короткому имени и столбцам имен.
 
   ```dotnetcli
   dotnet new we -l
   ```
 
-- Попытайтесь вызвать шаблон, соответствующий *ng*. Если точное совпадение не найдено, выведите шаблоны с частичным совпадением.
+- Попытайтесь вызвать шаблон, соответствующий *ng* . Если точное совпадение не найдено, выведите шаблоны с частичным совпадением.
 
   ```dotnetcli
   dotnet new ng

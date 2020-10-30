@@ -3,12 +3,12 @@ title: Анализ зависимостей для переноса кода в
 description: Научитесь анализировать внешние зависимости, чтобы перенести свой проект из .NET Framework в .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: 2aa09e551a99358d3a6961fafcfc0aa8dbd976b1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 430da45052e3953ab49f182b1773fc6d74bd2221
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79397923"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223606"
 ---
 # <a name="analyze-your-dependencies-to-port-code-to-net-core"></a>Анализ зависимостей для переноса кода в .NET Core
 
@@ -43,9 +43,9 @@ ms.locfileid: "79397923"
 Проще всего просматривать папки пакета NuGet с помощью инструмента [Обозреватель пакетов NuGet](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer). После установки выполните следующие действия, чтобы увидеть имена папок:
 
 1. Откройте обозреватель пакетов NuGet.
-2. Щелкните **Открыть пакет из веб-канала**.
+2. Щелкните **Открыть пакет из веб-канала** .
 3. Выполните поиск по имени пакета.
-4. Выберите имя пакета в результатах поиска и нажмите кнопку **Открыть**.
+4. Выберите имя пакета в результатах поиска и нажмите кнопку **Открыть** .
 5. Разверните папку *lib* в правой части окна и просмотрите имена папок.
 
 Найдите папку с именами, используя один из следующих шаблонов: `netstandardX.Y` или `netcoreappX.Y`.

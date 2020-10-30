@@ -1,7 +1,7 @@
 ---
-description: Сведения о типе структуры в C#
 title: Типы структур — справочник по C#
-ms.date: 04/21/2020
+description: Сведения о типе структуры в C#
+ms.date: 10/23/2020
 f1_keywords:
 - struct_CSharpKeyword
 helpviewer_keywords:
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 7f3940ce487b9e382150234f317cf1dba34bb060
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: daf332dae483d75ef27e78dad5ee912734ccdb5f
+ms.sourcegitcommit: 532b03d5bbab764d63356193b04cd2281bc01239
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89132733"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "92526600"
 ---
 # <a name="structure-types-c-reference"></a>Типы структур (справочник по C#)
 
 *Тип структуры*  представляет собой [тип значения](value-types.md), который может инкапсулировать данные и связанные функции. Для определения типа структуры используется ключевое слово `struct`:
 
-[!code-csharp[struct example](snippets/StructType.cs#StructExample)]
+[!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
-Типы структуры имеют *семантики значений*. То есть переменная типа структуры содержит экземпляр этого типа. По умолчанию значения переменных копируются при назначении, передаче аргумента в метод и возврате результата метода. В случае переменной типа структуры копируется экземпляр типа. Дополнительные сведения см. в разделе [Типы значений](value-types.md).
+Типы структуры имеют *семантики значений* . То есть переменная типа структуры содержит экземпляр этого типа. По умолчанию значения переменных копируются при назначении, передаче аргумента в метод и возврате результата метода. В случае переменной типа структуры копируется экземпляр типа. Дополнительные сведения см. в разделе [Типы значений](value-types.md).
 
-Как правило, типы структуры используются для проектирования небольших ориентированных на данные типов, которые предоставляют минимум поведения или не предоставляют его вовсе. Например, платформа .NET использует типы структуры для представления числа (как [целого](integral-numeric-types.md), так и [вещественного](floating-point-numeric-types.md)), [логического значения](bool.md), [символа Юникода](char.md), [экземпляра времени](xref:System.DateTime). Если вы сконцентрированы на поведении типа, рекомендуется определить [класс](../keywords/class.md). Типы классов имеют *семантики ссылок*. То есть переменная типа класса содержит ссылку на экземпляр этого типа, а не сам экземпляр.
+Как правило, типы структуры используются для проектирования небольших ориентированных на данные типов, которые предоставляют минимум поведения или не предоставляют его вовсе. Например, платформа .NET использует типы структуры для представления числа (как [целого](integral-numeric-types.md), так и [вещественного](floating-point-numeric-types.md)), [логического значения](bool.md), [символа Юникода](char.md), [экземпляра времени](xref:System.DateTime). Если вы сконцентрированы на поведении типа, рекомендуется определить [класс](../keywords/class.md). Типы классов имеют *семантики ссылок* . То есть переменная типа класса содержит ссылку на экземпляр этого типа, а не сам экземпляр.
 
 Поскольку типы структуры имеют семантику значений, рекомендуется определять *неизменяемые* типы структуры.
 
@@ -32,12 +32,12 @@ ms.locfileid: "89132733"
 
 Начиная с C# версии 7.2, чтобы объявить, что тип структуры является неизменяемым, используйте модификатор `readonly`:
 
-[!code-csharp[readonly struct](snippets/StructType.cs#ReadonlyStruct)]
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 Все элементы данных структуры `readonly` должны быть доступны только для чтения:
 
 - Любое объявление поля должно иметь [`readonly` модификатор](../keywords/readonly.md).
-- Все свойства, включая автоматические реализованные, должны быть доступны только для чтения.
+- Все свойства, включая автоматические реализованные, должны быть доступны только для чтения. В C# 9.0 и более поздних версий свойство может иметь [метод доступа `init`](../../whats-new/csharp-9.md#init-only-setters).
 
 Это гарантирует, что ни один из элементов структуры `readonly` не изменит состояние структуры. В C# 8.0 и более поздних версиях это означает, что другие члены экземпляра, кроме конструкторов, неявно [`readonly`](#readonly-instance-members).
 
@@ -54,20 +54,24 @@ ms.locfileid: "89132733"
 
 - Методы.
 
-  [!code-csharp[readonly method](snippets/StructType.cs#ReadonlyMethod)]
+  [!code-csharp[readonly method](snippets/shared/StructType.cs#ReadonlyMethod)]
 
   Можно также применить модификатор `readonly` к методам, переопределяющим методы, объявленные в <xref:System.Object?displayProperty=nameWithType>.
 
-  [!code-csharp[readonly override](snippets/StructType.cs#ReadonlyOverride)]
+  [!code-csharp[readonly override](snippets/shared/StructType.cs#ReadonlyOverride)]
 
 - Свойства и индексаторы.
 
-  [!code-csharp[readonly property get](snippets/StructType.cs#ReadonlyProperty)]
+  [!code-csharp[readonly property get](snippets/shared/StructType.cs#ReadonlyProperty)]
 
   Если необходимо применить модификатор `readonly` к методам доступа свойства или индексатора, примените его в объявлении свойства или индексатора.
 
   > [!NOTE]
   > Компилятор объявляет метод доступа `get` [автоматически реализуемого свойства](../../programming-guide/classes-and-structs/auto-implemented-properties.md) как `readonly` независимо от наличия модификатора `readonly` в объявлении свойства.
+
+  В C# 9.0 и более поздних версий вы можете применить модификатор `readonly` к свойству или индексатору с помощью метода доступа `init`:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
 Модификатор `readonly` не применяется к статическим членам типа структуры.
 
@@ -95,7 +99,7 @@ ms.locfileid: "89132733"
 
 Если все поля экземпляров типа структуры доступны, можно также создать его экземпляр без оператора `new`. В этом случае необходимо инициализировать все поля экземпляров перед первым использованием экземпляра. Следующий пример показывает, как это сделать:
 
-[!code-csharp[without new](snippets/StructType.cs#WithoutNew)]
+[!code-csharp[without new](snippets/shared/StructType.cs#WithoutNew)]
 
 В случае [встроенных типов значения](value-types.md#built-in-value-types) используйте соответствующие литералы, чтобы указать значение типа.
 
@@ -118,11 +122,11 @@ ms.locfileid: "89132733"
 
 Как правило, тип структуры `ref` определяется, если требуется тип, который также содержит члены данных типов структуры `ref`:
 
-[!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
+[!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
 
 Чтобы объявить структуру `ref` как [`readonly`](#readonly-struct), объедините модификаторы `readonly` и `ref` в объявлении типа (модификатор `readonly` должен предшествовать модификатору `ref`):
 
-[!code-csharp[readonly ref struct](snippets/StructType.cs#ReadonlyRef)]
+[!code-csharp[readonly ref struct](snippets/shared/StructType.cs#ReadonlyRef)]
 
 В .NET примерами структуры `ref` являются <xref:System.Span%601?displayProperty=nameWithType> и <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
 

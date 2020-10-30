@@ -13,12 +13,12 @@ helpviewer_keywords:
 - runtime, attributes
 - extending metadata
 ms.assetid: 30386922-1e00-4602-9ebf-526b271a8b87
-ms.openlocfilehash: 5678e904afae4d348fbb56b189c95cd59b8e7a4d
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 9a83c0e8ee3476f43ccc2e88c21ccbbc0661bd19
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162847"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889222"
 ---
 # <a name="extend-metadata-using-attributes"></a>Расширение метаданных с помощью атрибутов
 
@@ -33,7 +33,7 @@ ms.locfileid: "92162847"
 |[Применение атрибутов](applying-attributes.md)|Описание порядка применения атрибута к элементу кода.|
 |[Написание настраиваемых атрибутов](writing-custom-attributes.md)|Описание разработки пользовательских классов атрибутов.|
 |[Извлечение информации, сохраненной в атрибуте](retrieving-information-stored-in-attributes.md)|Описание порядка получения настраиваемых атрибутов для кода, загруженного в контекст выполнения.|
-|[Метаданные и компоненты с самоописанием](../metadata-and-self-describing-components.md)|Общие сведения о метаданных и описание их реализации в переносимом исполняемом файле (PE) платформы .NET Framework.|
+|[Метаданные и компоненты с самоописанием](../metadata-and-self-describing-components.md)|Общие сведения о метаданных и описание их реализации в переносимом исполняемом файле (PE) .NET.|
 |[Практическое руководство. Загрузка сборок в контекст, предназначенный только для отражения](../../framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)|Описание способов получения сведений настраиваемых атрибутов в контексте, предназначенном только для отражения.|
 
 ## <a name="reference"></a>Справочник

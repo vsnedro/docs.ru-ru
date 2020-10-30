@@ -2,12 +2,12 @@
 title: Новые возможности .NET Core 2.0
 description: Дополнительные сведения о новых возможностях .NET Core.
 ms.date: 08/13/2017
-ms.openlocfilehash: 115b3adc72b6798c6a7bac9cc18044a8822808a6
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bdca38d1584107727fe8e20b80ab2337f4cb05f1
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79397845"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223714"
 ---
 # <a name="whats-new-in-net-core-20"></a>Новые возможности .NET Core 2.0
 
@@ -72,7 +72,7 @@ ms.locfileid: "79397845"
 
 1. Введите команду `dotnet new console -lang vb`.
 
-   Команда создает файл проекта с расширением `.vbproj`, а также файл исходного кода Visual Basic *Program.vb*. Этот файл содержит исходный код для записи строки Hello World! в окно консоли.
+   Команда создает файл проекта с расширением `.vbproj`, а также файл исходного кода Visual Basic *Program.vb* . Этот файл содержит исходный код для записи строки Hello World! в окно консоли.
 
 1. Введите команду `dotnet run`. [.NET Core CLI](../tools/index.md) автоматически компилирует и выполняет приложение, которое выводит сообщение "Hello World!" в окне консоли.
 
@@ -110,7 +110,7 @@ ms.locfileid: "79397845"
 
 Библиотеки классов .NET Standard 2.0 также могут ссылаться на библиотеки классов .NET Framework, при условии, что они вызывают API-интерфейсы, которые есть в .NET Standard 2.0. Повторная компиляция библиотек .NET Framework не требуется.
 
-Список интерфейсов API, добавленных в .NET Standard с момента выхода последней версии, .NET Standard 1.6, см. в сравнительном документе [.NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
+Список интерфейсов API, добавленных в .NET Standard с момента выхода последней версии, .NET Standard 1.6, см. в сравнительном документе [.NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
 
 ### <a name="expanded-surface-area"></a>Увеличение количества компонентов
 
@@ -130,7 +130,7 @@ ms.locfileid: "79397845"
 
 Если установлен пакет SDK для .NET Core 2.0, можно изменить целевую платформу проектов .NET Core 1.x на .NET Core 2.0, а библиотек .NET Standard 1.x — на .NET Standard 2.0.
 
-Чтобы изменить целевую платформу проекта в Visual Studio, в диалоговом окне свойств проекта откройте вкладку **Приложение** и измените значение **целевой платформы** на **.NET Core 2.0** или **.NET Standard 2.0**. Ее также можно изменить, щелкнув проект правой кнопкой мыши и выбрав пункты **Изменить \*CSPROJ-файл**. Дополнительные сведения см. в разделе [Инструментарий](#tooling) выше.
+Чтобы изменить целевую платформу проекта в Visual Studio, в диалоговом окне свойств проекта откройте вкладку **Приложение** и измените значение **целевой платформы** на **.NET Core 2.0** или **.NET Standard 2.0** . Ее также можно изменить, щелкнув проект правой кнопкой мыши и выбрав пункты **Изменить \*CSPROJ-файл** . Дополнительные сведения см. в разделе [Инструментарий](#tooling) выше.
 
 ### <a name="live-unit-testing-support-for-net-core"></a>Поддержка динамического модульного тестирования для .NET Core
 

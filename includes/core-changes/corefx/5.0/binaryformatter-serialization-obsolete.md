@@ -1,25 +1,23 @@
 ---
-ms.openlocfilehash: 7cb146d19486618a4cee9976abe2220ea4b72790
-ms.sourcegitcommit: d337df55f83325918cbbd095eb573400bea49064
+ms.openlocfilehash: 43bd1481ca6c3d3444afda2e2a2c67e7236b4402
+ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88204094"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434921"
 ---
 ### <a name="binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps"></a>Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET
 
-Методы `Serialize` и `Deserialize` в <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, <xref:System.Runtime.Serialization.Formatter> и <xref:System.Runtime.Serialization.IFormatter> теперь считаются устаревшими. Кроме того, сериализация <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> по умолчанию запрещена для приложений ASP.NET.
+Методы `Serialize` и `Deserialize` в <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, <xref:System.Runtime.Serialization.Formatter> и <xref:System.Runtime.Serialization.IFormatter> теперь считаются устаревшими и приводят к созданию предупреждения. Кроме того, сериализация <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> по умолчанию запрещена для приложений ASP.NET.
 
 #### <a name="change-description"></a>Описание изменений
 
-Из-за [уязвимостей системы безопасности](../../../../docs/standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) в <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> следующие методы считаются устаревшими. Кроме того, в приложениях ASP.NET Core 5.0 и более поздних версий они вызовут исключение <xref:System.NotSupportedException>, если только веб-приложение не включило повторно функциональные возможности <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>.
+Из-за [уязвимостей системы безопасности](../../../../docs/standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) в <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> следующие методы считаются устаревшими и во время компиляции приводят к созданию предупреждения с идентификатором `SYSLIB0011`. Кроме того, в приложениях ASP.NET Core 5.0 и более поздних версий они вызовут исключение <xref:System.NotSupportedException>, если только веб-приложение не включило повторно функциональные возможности <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>.
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
 
-Эти методы объявлены устаревшими в рамках мер по отказу от использования <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> в экосистеме .NET.
-
-Следующие методы сериализации также считаются устаревшими, но изменений в их поведении не произошло:
+Следующие методы сериализации также считаются устаревшими и приводят к созданию предупреждения `SYSLIB0011`, но изменений в их поведении не произошло:
 
 - <xref:System.Runtime.Serialization.Formatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
@@ -29,6 +27,10 @@ ms.locfileid: "88204094"
 #### <a name="version-introduced"></a>Представленная версия
 
 5.0, предварительная версия 8
+
+#### <a name="reason-for-change"></a>Причина изменения
+
+Эти методы объявлены устаревшими в рамках мер по отказу от использования <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> в экосистеме .NET.
 
 #### <a name="recommended-action"></a>Рекомендованное действие
 
@@ -58,7 +60,7 @@ ms.locfileid: "88204094"
   </PropertyGroup>
   ```
 
-  В этом случае предупреждение будет отключено во всех файлах с кодом в проекте. Подавление SYSLIB0011 не приводит к отключению предупреждений, вызванных использованием других устаревших API.
+  В этом случае предупреждение будет отключено во всех файлах с кодом в проекте. Подавление `SYSLIB0011` не приводит к отключению предупреждений, вызванных использованием других устаревших API.
 
 - Чтобы продолжить использование <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> в приложениях ASP.NET, можно повторно включить их в файле проекта. Но делать это настоятельно не рекомендуется. Дополнительные сведения см. в статье [Руководство по безопасности BinaryFormatter](../../../../docs/standard/serialization/binaryformatter-security-guide.md).
 

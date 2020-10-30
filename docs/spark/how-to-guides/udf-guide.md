@@ -1,15 +1,17 @@
 ---
 title: Создайте определяемые пользователем функции (UDF) в .NET для Apache Spark
 description: Узнайте, как реализовать определяемые пользователем функции (UDF) в .NET для приложений Apache Spark.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 769bcf0a912d27e191dad82138648d1aefb3c3b6
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 50e631b0c561ebdf081d4c1b7d16bf25abb322e5
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955040"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224186"
 ---
 # <a name="create-user-defined-functions-udf-in-net-for-apache-spark"></a>Создайте определяемые пользователем функции (UDF) в .NET для Apache Spark
 
@@ -184,6 +186,12 @@ public class C
 
 * Значения NULL в определяемых пользователем функциях могут вызывать исключения. За их обработку отвечает разработчик.
 * Функции UDF не используют оптимизации, предоставляемые встроенными функциями Spark, поэтому рекомендуется по возможности использовать встроенные функции.
+
+## <a name="faqs"></a>Частые вопросы
+
+**Почему возникает ошибка `System.NotImplementedException: The method or operation is not implemented.` или `System.InvalidCastException: Unable to cast object of type 'System.Collections.Hashtable' to type 'System.Collections.Generic.IDictionary` при попытке вызвать определяемую пользователем функцию с использованием типа `ArrayType`, `MapType`, `ArrayList` или `HashTable` в качестве аргумента или типа возвращаемого значения?**  
+`ArrayType` и `MapType` поддерживаются только в [версии 1.0 и более поздних](https://github.com/dotnet/spark/releases/tag/v1.0.0), поэтому в .NET для Apache Spark при попытке передать эти типы в определяемую пользователем функцию в качестве аргументов или в качестве типа возвращаемого значения возникает эта ошибка.
+Типы `ArrayList` и `HashTable` не поддерживаются в качестве типов возвращаемых значений для определяемой пользователем функции, поскольку они не являются универсальными коллекциями и, соответственно, в Spark нельзя передать определения типов их элементов.
 
 ## <a name="next-steps"></a>Следующие шаги
 

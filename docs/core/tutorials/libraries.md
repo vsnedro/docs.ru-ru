@@ -4,18 +4,18 @@ description: Узнайте, как создавать библиотеки дл
 author: cartermp
 ms.topic: how-to
 ms.date: 05/01/2017
-ms.openlocfilehash: 7aadaf7bf7819d52a57c3a137beff46d924d8cb0
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: e98ce9e08c8d92bb4c89348e21cece60de811848
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396204"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223700"
 ---
 # <a name="develop-libraries-with-the-net-core-cli"></a>Разработка библиотек с помощью .NET Core CLI
 
 В этой статье показано, как создавать библиотеки для .NET с помощью .NET Core CLI. CLI предоставляет эффективный и низкоуровневый интерфейс, работающий в любых поддерживаемых операционных системах. Вы по-прежнему можете создавать библиотеки с помощью Visual Studio. Если вы предпочитаете такой способ, обратитесь к [руководству по Visual Studio](library-with-visual-studio.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
 На компьютере должны быть установлены [пакет SDK и интерфейс CLI для .NET Core ](https://dotnet.microsoft.com/download).
 
@@ -29,11 +29,11 @@ ms.locfileid: "83396204"
 | 4.6                    | .NET Framework 4.6 Targeting Pack                      |
 | 4.5.2                  | .NET Framework 4.5.2 Developer Pack                    |
 | 4.5.1                  | .NET Framework 4.5.1 Developer Pack                    |
-| 4,5                    | Пакет средств разработки программного обеспечения Windows для Windows 8         |
-| 4.0                    | Пакет SDK для Windows 7 и .NET Framework 4         |
+| 4.5                    | Пакет средств разработки программного обеспечения Windows для Windows 8         |
+| 4,0                    | Пакет SDK для Windows 7 и .NET Framework 4         |
 | 2.0, 3.0 и 3.5      | Среда выполнения .NET Framework 3.5 с пакетом обновления 1 (SP1) (либо версия для Windows 8 или более поздняя) |
 
-## <a name="how-to-target-the-net-standard"></a>Нацеливание на .NET Standard
+## <a name="how-to-target-net-standard"></a>Нацеливание на .NET Standard
 
 Если вы незнакомы с платформой .NET Standard, дополнительные сведения см. в [этом разделе](../../standard/net-standard.md).
 
@@ -78,7 +78,7 @@ ms.locfileid: "83396204"
 | .NET Framework 3.0     | `net30`  |
 | .NET Framework 3,5     | `net35`  |
 | .NET Framework 4.0     | `net40`  |
-| .NET Framework 4.5     | `net45`  |
+| .NET Framework 4,5     | `net45`  |
 | .NET Framework 4.5.1   | `net451` |
 | .NET Framework 4.5.2   | `net452` |
 | .NET Framework 4.6     | `net46`  |
@@ -295,9 +295,9 @@ let doWork data = async {
 
 Подобные сценарии использования предполагают, что интерфейсы API, к которым осуществляется доступ, должны иметь разную структуру для C# и F#.  Стандартным подходом к решению этой задачи является факторинг всей логики библиотеки в базовом проекте и определение в проектах C# и F# уровней API, которые вызывают этот базовый проект.  Далее в этом разделе будут использоваться следующие имена:
 
-* **AwesomeLibrary.Core** — базовый проект, содержащий всю логику библиотеки;
-* **AwesomeLibrary.CSharp** — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке C#
-* **AwesomeLibrary.FSharp** — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке F#
+* **AwesomeLibrary.Core**  — базовый проект, содержащий всю логику библиотеки;
+* **AwesomeLibrary.CSharp**  — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке C#
+* **AwesomeLibrary.FSharp**  — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке F#
 
 Чтобы получить ту же структуру каталогов, что и в этом руководстве, выполните следующие команды в окне терминала:
 

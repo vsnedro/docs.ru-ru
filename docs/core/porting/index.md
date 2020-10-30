@@ -3,12 +3,12 @@ title: Перенос кода из .NET Framework в .NET Core
 description: Общие сведения о процессе переноса и инструментах, которые могут оказаться полезными при переносе проектов .NET Framework в .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: 74fe4519e41a07bc78a4dc346f8d1b52b5c7d092
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c206e56e095d1ca068fa2aa6f60e891895f7f999
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502773"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888578"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Общие сведения о переносе кода в .NET Core из .NET Framework
 
@@ -55,7 +55,7 @@ ms.locfileid: "84502773"
 
    В .NET Core используется более простой (и другой) [формат файла проекта](../tools/csproj.md), чем в .NET Framework. Чтобы продолжить, потребуется преобразовать файлы проекта в этот формат. Этот стиль проекта позволяет также ориентироваться на .NET Framework, что и так необходимо.
 
-   Можно попытаться перенести за одну операцию более мелкие решения или отдельные проекты в формат файла проекта .NET Core с помощью средства [dotnet try-convert](https://github.com/dotnet/try-convert). Нет гарантии, что `dotnet try-convert` будет поддерживать все проекты. Кроме того, оно может вызвать незначительные изменения в ожидаемом поведении. Используйте это средство в качестве _начальной точки_, которая автоматизирует соответствующие основные процессы. Это не гарантированное решение для миграции проекта, поскольку существует множество различий в целевых объектах, используемых проектами в стиле пакета SDK, по сравнению с файлами проектов в старом стиле.
+   Можно попытаться перенести за одну операцию более мелкие решения или отдельные проекты в формат файла проекта .NET Core с помощью средства [dotnet try-convert](https://github.com/dotnet/try-convert). Нет гарантии, что `dotnet try-convert` будет поддерживать все проекты. Кроме того, оно может вызвать незначительные изменения в ожидаемом поведении. Используйте это средство в качестве _начальной точки_ , которая автоматизирует соответствующие основные процессы. Это не гарантированное решение для миграции проекта, поскольку существует множество различий в целевых объектах, используемых проектами в стиле пакета SDK, по сравнению с файлами проектов в старом стиле.
 
 1. Перенацельте все переносимые проекты на .NET Framework 4.7.2 и более поздней версии.
 
@@ -113,5 +113,10 @@ ms.locfileid: "84502773"
 
 > [!div class="nextstepaction"]
 > [Анализ зависимостей](third-party-deps.md)
-> [Упаковка пакета NuGet](../deploying/creating-nuget-packages.md)
-> [Миграция ASP.NET в ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+> [Создание пакета NuGet](../deploying/creating-nuget-packages.md)
+
+## <a name="see-also"></a>См. также раздел
+
+- [Миграция с ASP.NET на ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+- [Перенос приложений WPF на платформу .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [Перенос приложений Windows Forms в .NET Core](winforms.md)
