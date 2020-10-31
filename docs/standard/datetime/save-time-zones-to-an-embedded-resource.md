@@ -6,16 +6,16 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], saving
-- time zone objects [.NET Framework], serializing
-- time zone objects [.NET Framework], saving
+- time zones [.NET], saving
+- time zone objects [.NET], serializing
+- time zone objects [.NET], saving
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-ms.openlocfilehash: c8084cb8edff64b9d598f4fd0a62a362491c7aa7
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 3d355003b3e6309644fa1ccaf779b2e63b0523d2
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281249"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063408"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>Практическое руководство. Сохранение часовых поясов во внедренном ресурсе
 
@@ -23,9 +23,9 @@ ms.locfileid: "84281249"
 
 Как правило, сериализация <xref:System.TimeZoneInfo> объекта происходит отдельно от приложения, поддерживающего часовой пояс. В зависимости от хранилища данных, используемого для хранения сериализованных <xref:System.TimeZoneInfo> объектов, данные часового пояса могут быть сериализованы как часть программы установки или установки (например, когда данные хранятся в ключе реестра) или как часть служебной программы, выполняемой перед компиляцией окончательного приложения (например, когда сериализованные данные хранятся в файле ресурсов .NET XML (RESX)).
 
-Помимо файла ресурсов, компилируемого с приложением, для сведений о часовом поясе можно использовать несколько других хранилищ данных. В число этих требований входят следующие:
+Помимо файла ресурсов, компилируемого с приложением, для сведений о часовом поясе можно использовать несколько других хранилищ данных. В их числе можно назвать следующие:
 
-- Реестр. Обратите внимание, что приложение должно использовать подразделы собственного ключа приложения для хранения пользовательских данных часового пояса вместо использования подразделов HKEY_LOCAL_MACHINE \Софтваре\микрософт\виндовс Nt\currentversion\time Zones Zones.
+- Реестр. Обратите внимание, что приложение должно использовать подразделы собственного ключа приложения для хранения пользовательских данных часового пояса вместо использования подразделов HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
 
 - Файлы конфигурации.
 
@@ -47,15 +47,15 @@ ms.locfileid: "84281249"
 
 5. Передайте сериализованную строку часового пояса в <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> метод.
 
-6. Вызовите метод <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> .
+6. Вызовите метод <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType>.
 
-7. Вызовите метод <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> .
+7. Вызовите метод <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType>.
 
 8. Закройте <xref:System.IO.StreamWriter> объект, вызвав его <xref:System.IO.StreamWriter.Close%2A> метод.
 
 9. Добавьте созданный RESX файл в проект приложения Visual Studio.
 
-10. С помощью окна **Свойства** в Visual Studio убедитесь, что для свойства **действие сборки** RESX-файла задано значение **внедренный ресурс**.
+10. С помощью окна **Свойства** в Visual Studio убедитесь, что для свойства **действие сборки** RESX-файла задано значение **внедренный ресурс** .
 
 ## <a name="example"></a>Пример
 
@@ -68,21 +68,21 @@ ms.locfileid: "84281249"
 
 Поскольку <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> метод добавляет полные данные заголовка в файл ресурсов XML .NET, он не может использоваться для добавления ресурсов в существующий файл. Этот пример обрабатывает это путем проверки файла Сериализедтимезонес. resx и (если он существует), сохраняя все ресурсы, кроме двух сериализованных часовых поясов, в универсальный <xref:System.Collections.Generic.Dictionary%602> объект. После этого существующий файл удаляется, а существующие ресурсы добавляются в новый файл Сериализедтимезонес. resx. Сериализованные данные часового пояса также добавляются в этот файл.
 
-Поля ключа (или **имени**) ресурсов не должны содержать пробелы. <xref:System.String.Replace%28System.String%2CSystem.String%29>Метод вызывается для удаления всех внедренных пробелов в идентификаторах часовых поясов до их назначения в файл ресурсов.
+Поля ключа (или **имени** ) ресурсов не должны содержать пробелы. <xref:System.String.Replace%28System.String%2CSystem.String%29>Метод вызывается для удаления всех внедренных пробелов в идентификаторах часовых поясов до их назначения в файл ресурсов.
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
 Для этого примера требуются:
 
-- Ссылка на библиотеку System. Windows. Forms. dll и System. Core. dll будет добавлена в проект.
+- Для добавления в проект ссылки на System.Windows.Forms.dll и System.Core.dll.
 
 - Для импорта следующих пространств имен:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
 - [Общие сведения о часовых поясах](time-zone-overview.md)
-- [Практическое руководство. Восстановление часовых поясов из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md)
+- [Как восстановить Часовые пояса из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md)

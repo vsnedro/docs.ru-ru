@@ -7,14 +7,14 @@ dev_langs:
 - vb
 helpviewer_keywords:
 - instantiating time zone objects
-- time zone objects [.NET Framework], instantiation
+- time zone objects [.NET], instantiation
 ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
-ms.openlocfilehash: e8d50419dc21a1748a88c96c200806d0558f0e5a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 34606c0e227d7826cd6188f42fc2fb23f17105ca
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84276886"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063655"
 ---
 # <a name="how-to-instantiate-a-timezoneinfo-object"></a>Практическое руководство. Создание экземпляра объекта TimeZoneInfo
 
@@ -41,8 +41,8 @@ ms.locfileid: "84276886"
 
 Если приложение зависит от наличия часового пояса, необходимо сначала вызвать метод <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> для извлечения сведений о часовом поясе из реестра. Если вызов метода завершится сбоем, обработчик исключений должен создать новый экземпляр часового пояса или повторно создать его путем десериализации сериализованного объекта <xref:System.TimeZoneInfo> . Пример см. [в разделе руководство. Восстановление часовых поясов из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
 - [Поиск часового пояса, заданного в локальной системе](finding-the-time-zones-on-local-system.md)
-- [Практическое руководство. Доступ к предварительно определенным объектам UTC и объектам местных часовых поясов](access-utc-and-local.md)
+- [Как получить доступ к стандартным объектам времени в формате UTC и местному часовому поясу](access-utc-and-local.md)

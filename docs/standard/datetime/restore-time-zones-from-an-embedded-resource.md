@@ -6,15 +6,15 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], deserializing
-- time zones [.NET Framework], restoring
+- time zones [.NET], deserializing
+- time zones [.NET], restoring
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
-ms.openlocfilehash: b1cece13c88b3a49c9c4c90045a07dd009d4282d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1dd3dff2441ac5e21f3ebf97d58919a7c65d42c5
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281327"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063434"
 ---
 # <a name="how-to-restore-time-zones-from-an-embedded-resource"></a>Практическое руководство. Восстановление часовых поясов из внедренного ресурса
 
@@ -26,7 +26,7 @@ ms.locfileid: "84281327"
 
 2. Создайте экземпляр <xref:System.Resources.ResourceManager> объекта, передав полное имя внедренного файла ресурсов и ссылку на сборку, содержащую файл ресурсов.
 
-   Если не удается определить полное имя внедренного файла ресурсов, используйте для проверки манифеста сборки [Ildasm. exe (ДИЗАССЕМБЛЕР IL)](../../framework/tools/ildasm-exe-il-disassembler.md) . `.mresource`Запись идентифицирует ресурс. В этом примере полное имя ресурса — `SerializeTimeZoneData.SerializedTimeZones` .
+   Если не удается определить полное имя внедренного файла ресурсов, используйте [Ildasm.exe (IL-файл)](../../framework/tools/ildasm-exe-il-disassembler.md) для проверки манифеста сборки. `.mresource`Запись идентифицирует ресурс. В этом примере полное имя ресурса — `SerializeTimeZoneData.SerializedTimeZones` .
 
    Если файл ресурсов внедрен в ту же сборку, которая содержит код создания экземпляра часового пояса, можно получить ссылку на него, вызвав `static` `Shared` метод (в Visual Basic) <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> .
 
@@ -49,15 +49,15 @@ ms.locfileid: "84281327"
 
 Для этого примера требуются:
 
-- Ссылка на библиотеку System. Windows. Forms. dll и System. Core. dll будет добавлена в проект.
+- Для добавления в проект ссылки на System.Windows.Forms.dll и System.Core.dll.
 
 - Для импорта следующих пространств имен:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
 - [Общие сведения о часовых поясах](time-zone-overview.md)
-- [Практическое руководство. Сохранение часовых поясов во внедренном ресурсе](save-time-zones-to-an-embedded-resource.md)
+- [Как сохранять Часовые пояса во внедренном ресурсе](save-time-zones-to-an-embedded-resource.md)

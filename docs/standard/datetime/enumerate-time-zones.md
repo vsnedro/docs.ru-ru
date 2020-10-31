@@ -6,15 +6,15 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], enumerating
-- enumerating time zones [.NET Framework]
+- time zones [.NET], enumerating
+- enumerating time zones [.NET]
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
-ms.openlocfilehash: 8f1cc9d58bc0f169d458854eac6568caaa4481c7
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a51e9d0c51968d57e0d79dd80d8619ab11cdbf93
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286136"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063772"
 ---
 # <a name="how-to-enumerate-time-zones-present-on-a-computer"></a>Практическое руководство. Перечисление присутствующих на компьютере часовых поясов
 
@@ -25,7 +25,7 @@ ms.locfileid: "84286136"
 
 ### <a name="to-enumerate-the-time-zones-present-on-the-local-system"></a>Перечисление часовых поясов, присутствующих в локальной системе
 
-1. Вызовите метод <xref:System.TimeZoneInfo.GetSystemTimeZones%2A?displayProperty=nameWithType> . Метод возвращает универсальную <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> коллекцию <xref:System.TimeZoneInfo> объектов. Записи в коллекции сортируются по их <xref:System.TimeZoneInfo.DisplayName%2A> свойству. Например:
+1. Вызовите метод <xref:System.TimeZoneInfo.GetSystemTimeZones%2A?displayProperty=nameWithType>. Метод возвращает универсальную <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> коллекцию <xref:System.TimeZoneInfo> объектов. Записи в коллекции сортируются по их <xref:System.TimeZoneInfo.DisplayName%2A> свойству. Пример:
 
    [!code-csharp[System.TimeZone2.Concepts#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#1)]
    [!code-vb[System.TimeZone2.Concepts#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#1)]
@@ -37,7 +37,7 @@ ms.locfileid: "84286136"
 
 ### <a name="to-present-the-user-with-a-list-of-time-zones-present-on-the-local-system"></a>Предоставление пользователю списка часовых поясов, имеющихся в локальной системе
 
-1. Вызовите метод <xref:System.TimeZoneInfo.GetSystemTimeZones%2A?displayProperty=nameWithType> . Метод возвращает универсальную <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> коллекцию <xref:System.TimeZoneInfo> объектов.
+1. Вызовите метод <xref:System.TimeZoneInfo.GetSystemTimeZones%2A?displayProperty=nameWithType>. Метод возвращает универсальную <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> коллекцию <xref:System.TimeZoneInfo> объектов.
 
 2. Назначьте коллекцию, возвращенную в шаге 1, `DataSource` свойству элемента управления Windows Forms или ASP.NET List.
 
@@ -63,12 +63,12 @@ ms.locfileid: "84286136"
 
 - Для импорта следующих пространств имен:
 
-  <xref:System>(в коде C#)
+  <xref:System> (в коде C#)
 
   <xref:System.Collections.ObjectModel>
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
-- [Практическое руководство. Сохранение часовых поясов во внедренном ресурсе](save-time-zones-to-an-embedded-resource.md)
-- [Практическое руководство. Восстановление часовых поясов из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md)
+- [Как сохранять Часовые пояса во внедренном ресурсе](save-time-zones-to-an-embedded-resource.md)
+- [Как восстановить Часовые пояса из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md)

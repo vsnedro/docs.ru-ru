@@ -6,20 +6,20 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- times [.NET Framework], arithmetic operations
-- dates [.NET Framework], arithmetic operations
-- time zones [.NET Framework], arithmetic operations
-- arithmetic operations [.NET Framework], dates and times
-- dates [.NET Framework], comparing
+- times [.NET], arithmetic operations
+- dates [.NET], arithmetic operations
+- time zones [.NET], arithmetic operations
+- arithmetic operations [.NET], dates and times
+- dates [.NET], comparing
 - DateTime structure, arithmetic operations
 - DateTimeOffset structure, arithmetic operations
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-ms.openlocfilehash: c212397f99bd09195f298d7d704c879705b14f02
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 8350454c0570bcf0ba82fa5d83639da0433c785c
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281548"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063564"
 ---
 # <a name="performing-arithmetic-operations-with-dates-and-times"></a>Выполнение арифметических операций с датами и временем
 
@@ -34,7 +34,7 @@ ms.locfileid: "84281548"
 
 Метод <xref:System.DateTime.CompareTo%28System.DateTime%29> показывает, что местное время раньше (меньше) времени в поясе UTC, а операция вычитания свидетельствует о том, что разница между временем в поясе UTC и местным временем для систем в тихоокеанском стандартном часовом поясе США составляет семь часов. Но поскольку эти два значения предоставляют различные представления одного момента времени, в этом случае ясно, что интервал времени полностью связан со смещением местного часового пояса от времени в формате UTC.
 
-Более того, <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> свойство не влияет на результаты, возвращаемые <xref:System.DateTime.Kind> методами сравнения и арифметическими операциями (так как сравнение двух идентичных точек во времени указывает), хотя это может повлиять на интерпретацию этих результатов. Например:
+Более того, <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> свойство не влияет на результаты, возвращаемые <xref:System.DateTime.Kind> методами сравнения и арифметическими операциями (так как сравнение двух идентичных точек во времени указывает), хотя это может повлиять на интерпретацию этих результатов. Пример:
 
 - Результат выполнения любой арифметической операции с двумя значениями даты и времени, <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> свойства которых равны значению <xref:System.DateTimeKind> фактического интервала времени между двумя значениями. Аналогичным образом результат сравнения двух таких значений даты и времени будет точно отражать соотношение между временами.
 
@@ -68,7 +68,7 @@ ms.locfileid: "84281548"
 
 ## <a name="arithmetic-operations-with-times-in-time-zones"></a>Арифметические операции со временем в часовых поясах
 
-<xref:System.TimeZoneInfo>Класс включает ряд методов преобразования, которые автоматически применяют корректировки при преобразовании времени из одного часового пояса в другой. В число этих требований входят следующие:
+<xref:System.TimeZoneInfo>Класс включает ряд методов преобразования, которые автоматически применяют корректировки при преобразовании времени из одного часового пояса в другой. В их числе можно назвать следующие:
 
 - <xref:System.TimeZoneInfo.ConvertTime%2A>Методы и <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> , которые преобразуют время между любыми двумя часовыми поясами.
 
@@ -83,7 +83,7 @@ ms.locfileid: "84281548"
 [!code-csharp[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual5.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual5.vb#5)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
 - [Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем](use-time-zones-in-arithmetic.md)

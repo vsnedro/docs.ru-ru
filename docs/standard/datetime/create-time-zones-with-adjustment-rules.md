@@ -6,16 +6,16 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], creating
-- time zones [.NET Framework], and adjustment rules
-- adjustment rule [.NET Framework]
+- time zones [.NET], creating
+- time zones [.NET], and adjustment rules
+- adjustment rule [.NET]
 ms.assetid: c52ef192-13a9-435f-8015-3b12eae8c47c
-ms.openlocfilehash: b7e938581dfde3f1566aa2506302292686c2fc5c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 28ab7c8ceabcfd64a6797cf5a85869c469963983
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278172"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063824"
 ---
 # <a name="how-to-create-time-zones-with-adjustment-rules"></a>Практическое руководство. Создание часовых поясов с правилами коррекции
 
@@ -89,8 +89,8 @@ ms.locfileid: "84278172"
   [!code-csharp[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#6)]
   [!code-vb[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#6)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Даты, время и часовые пояса](index.md)
 - [Общие сведения о часовых поясах](time-zone-overview.md)
-- [Практическое руководство. Создание часовых поясов без правил коррекции](create-time-zones-without-adjustment-rules.md)
+- [Руководство. Создание часовых поясов без правил коррекции](create-time-zones-without-adjustment-rules.md)
