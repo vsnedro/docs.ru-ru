@@ -9,20 +9,20 @@ dev_langs:
 - cpp
 helpviewer_keywords:
 - Remove method
-- strings [.NET Framework], capacities
+- strings [.NET], capacities
 - StringBuilder object
 - Replace method
 - AppendFormat method
 - Append method
 - Insert method
-- strings [.NET Framework], StringBuilder object
+- strings [.NET], StringBuilder object
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-ms.openlocfilehash: 83d4b9327b55c511e2a46486e519e3cd0c77b1a3
-ms.sourcegitcommit: 1eae045421d9ea2bfc82aaccfa5b1ff1b8c9e0e4
+ms.openlocfilehash: 1005da650c624b2b8f6616c163082ff95d7dc007
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84803227"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888962"
 ---
 # <a name="using-the-stringbuilder-class-in-net"></a>Использование класса StringBuilder в .NET
 Объект <xref:System.String> является неизменяемым. Каждый раз при использовании одного из методов в классе <xref:System.String?displayProperty=nameWithType> вы создаете объект строки в памяти, для которого требуется выделение нового пространства. В случаях, когда необходимо выполнять повторяющиеся изменения строки, издержки, связанные с созданием объекта <xref:System.String>, могут оказаться значительными. Чтобы изменять строку без создания нового объекта, можно использовать класс <xref:System.Text.StringBuilder?displayProperty=nameWithType>. Например, использование класса <xref:System.Text.StringBuilder> может повысить производительность при соединении большого количества строк в цикле.  
@@ -54,23 +54,23 @@ ms.locfileid: "84803227"
  [!code-csharp[Conceptual.StringBuilder#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#3)]
  [!code-vb[Conceptual.StringBuilder#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#3)]  
   
- Метод <xref:System.Text.StringBuilder.EnsureCapacity%2A> можно использовать для проверки емкости текущего объекта **StringBuilder**. Если емкость больше переданного значения, изменения не вносятся; однако если емкость меньше переданного значения, текущая емкость изменяется для соответствия переданному значению.  
+ Метод <xref:System.Text.StringBuilder.EnsureCapacity%2A> можно использовать для проверки емкости текущего объекта **StringBuilder** . Если емкость больше переданного значения, изменения не вносятся; однако если емкость меньше переданного значения, текущая емкость изменяется для соответствия переданному значению.  
   
- Можно также просмотреть или задать свойство <xref:System.Text.StringBuilder.Length%2A>. Если вы задали для свойства **Length** значение больше значения свойства **Capacity**, значение свойства **Capacity** будет автоматически изменено на то же самое значение, что и у свойства **Length**. Если задать для свойства **Length** значение меньше длины строки в текущем объекте **StringBuilder**, строка будет укорочена.  
+ Можно также просмотреть или задать свойство <xref:System.Text.StringBuilder.Length%2A>. Если вы задали для свойства **Length** значение больше значения свойства **Capacity** , значение свойства **Capacity** будет автоматически изменено на то же самое значение, что и у свойства **Length** . Если задать для свойства **Length** значение меньше длины строки в текущем объекте **StringBuilder** , строка будет укорочена.  
   
 ## <a name="modifying-the-stringbuilder-string"></a>Изменение строки StringBuilder  
- В следующей таблице перечислены методы, которые можно использовать для изменения содержимого объекта **StringBuilder**.  
+ В следующей таблице перечислены методы, которые можно использовать для изменения содержимого объекта **StringBuilder** .  
   
 |Имя метода|Использовать|  
 |-----------------|---------|  
-|<xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType>|Добавляет сведения в конец текущего объекта **StringBuilder**.|  
+|<xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType>|Добавляет сведения в конец текущего объекта **StringBuilder** .|  
 |<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|Заменяет отформатированным текстом описатель формата, переданный в строке.|  
-|<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Вставляет строку или объект в указанный индекс текущего объекта **StringBuilder**.|  
-|<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Удаляет указанное количество символов из текущего объекта **StringBuilder**.|  
+|<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Вставляет строку или объект в указанный индекс текущего объекта **StringBuilder** .|  
+|<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Удаляет указанное количество символов из текущего объекта **StringBuilder** .|  
 |<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Замещает все вхождения указанного символа или строки в текущем **StringBuilder** на другой указанный символ или строку.|  
   
 ### <a name="append"></a>Добавить  
- Метод **Append** позволяет добавить текст или строковое представление объекта к концу строки, представленной текущим объектом **StringBuilder**. Следующий пример инициализирует **StringBuilder** с текстом Hello World, а затем добавляет текст в конец объекта. Пространство выделяется автоматически при необходимости.  
+ Метод **Append** позволяет добавить текст или строковое представление объекта к концу строки, представленной текущим объектом **StringBuilder** . Следующий пример инициализирует **StringBuilder** с текстом Hello World, а затем добавляет текст в конец объекта. Пространство выделяется автоматически при необходимости.  
   
  [!code-cpp[Conceptual.StringBuilder#4](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#4)]
  [!code-csharp[Conceptual.StringBuilder#4](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#4)]
@@ -91,7 +91,7 @@ ms.locfileid: "84803227"
  [!code-vb[Conceptual.StringBuilder#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#6)]  
   
 ### <a name="remove"></a>Удалить  
- Вы можете использовать метод **Remove**, чтобы удалить указанное количество символов из текущего объекта <xref:System.Text.StringBuilder>, начиная с указанного индекса (с отсчетом с нуля). В следующем примере метод **Remove** используется для сокращения объекта <xref:System.Text.StringBuilder>.  
+ Вы можете использовать метод **Remove** , чтобы удалить указанное количество символов из текущего объекта <xref:System.Text.StringBuilder>, начиная с указанного индекса (с отсчетом с нуля). В следующем примере метод **Remove** используется для сокращения объекта <xref:System.Text.StringBuilder>.  
   
  [!code-cpp[Conceptual.StringBuilder#7](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#7)]
  [!code-csharp[Conceptual.StringBuilder#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#7)]

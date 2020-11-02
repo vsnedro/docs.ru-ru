@@ -3,19 +3,19 @@ title: Уточнение типов .NET для COM-взаимодействи�
 description: В этой статье приводятся рекомендации по предоставлению типов в сборке .NET приложениям COM для COM-взаимодействия.
 ms.date: 03/30/2017
 helpviewer_keywords:
-- exposing .NET Framework components to COM
+- exposing .NET components to COM
 - COM interop, qualifying .NET types
 - qualifying .NET types for interoperation
 - interoperation with unmanaged code, qualifying .NET types
-- interoperation with unmanaged code, exposing .NET Framework components
+- interoperation with unmanaged code, exposing .NET components
 - COM interop, exposing COM components
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
-ms.openlocfilehash: 5e8d604c8152d37475bf93e3b5687f24cfebfa02
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 3fa9f0d5d8dd4d532fc510a1d946eddf32016748
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84285967"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93187766"
 ---
 # <a name="qualifying-net-types-for-com-interoperation"></a>Уточнение типов .NET для COM-взаимодействия
 Если вы планируете предоставлять типы в сборке COM-приложениям, во время разработки необходимо учитывать требования COM-взаимодействия. Управляемые типы (класс, интерфейс, структура и перечисление) легко интегрируются с COM-типами, если следовать приведенным ниже рекомендациям:  

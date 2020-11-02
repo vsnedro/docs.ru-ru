@@ -3,19 +3,20 @@ title: EventWaitHandle
 ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
-- threading [.NET Framework], EventWaitHandle class
+- threading [.NET], EventWaitHandle class
 - EventWaitHandle class
-- event wait handles [.NET Framework]
-- threading [.NET Framework], cross-process synchronization
+- event wait handles [.NET]
+- threading [.NET], cross-process synchronization
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
-ms.openlocfilehash: 80c90254978495a58d228c4302eda84d6165c800
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d8c4745af9c5336d013dc0ca7ef1030b208c8b68
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73138077"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188345"
 ---
 # <a name="eventwaithandle"></a>EventWaitHandle
+
 Класс <xref:System.Threading.EventWaitHandle> позволяет потокам взаимодействовать друг с другом, передавая и ожидая передачи сигналов. Дескрипторы ожидания событий (часто их называют просто "события") — это дескрипторы ожидания, которые можно создавать для освобождения одного или нескольких потоков в состоянии ожидания. Созданное событие (дескриптор ожидания) затем сбрасывается вручную или автоматически. Класс <xref:System.Threading.EventWaitHandle> может представлять любой локальный дескриптор ожидания событий (локальное событие) или именованный системный дескриптор ожидания событий (именованное событие), который доступен для всех процессов.  
   
 > [!NOTE]

@@ -5,16 +5,16 @@ ms.date: 08/20/2019
 helpviewer_keywords:
 - informational versions
 - version numbers, assemblies
-- assemblies [.NET Framework], versioning
+- assemblies [.NET], versioning
 - resolving assembly binding requests
 - versioning, assemblies
 ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
-ms.openlocfilehash: fdffbcc0bbafed62228cba35e8f85fbec7f7fbab
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c94e0c74b8beed29537b53d7476715e2cacb7b80
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380074"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687638"
 ---
 # <a name="assembly-versioning"></a>Управление версиями сборок
 
@@ -51,7 +51,7 @@ ms.locfileid: "83380074"
 
 Каждая сборка имеет номер версии, являющийся частью ее удостоверения. Следовательно, две сборки, имеющие разные номера версий, рассматриваются средой выполнения как совершенно разные сборки. Этот номер версии физически представляется в виде строки из четырех частей следующего формата:  
   
-\<*основной номер версии*>.\<*дополнительный номер версии*>.\<*номер сборки*>.\<*номер редакции*>  
+\<*major version*>.\<*minor version*>.\<*build number*>.\<*revision*>  
   
 Например, в версии "1.5.1254.0" число "1" представляет основную версию, "5" — младший номер версии, "1254" — номер построения, а "0" — номер редакции.  
   

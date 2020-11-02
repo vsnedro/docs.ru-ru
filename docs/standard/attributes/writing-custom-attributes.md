@@ -10,19 +10,19 @@ dev_langs:
 helpviewer_keywords:
 - multiple attribute instances
 - AttributeTargets enumeration
-- attributes [.NET Framework], custom
+- attributes [.NET], custom
 - AllowMultiple property
 - custom attributes
 - AttributeUsageAttribute class, custom attributes
 - Inherited property
 - attribute classes, declaring
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
-ms.openlocfilehash: f047e18531b46f0c89be9a6feaa9aa50341205e3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 670f34083834b35d26e6018372948022eec17d47
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550929"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889196"
 ---
 # <a name="writing-custom-attributes"></a>Написание настраиваемых атрибутов
 Чтобы создавать собственные атрибуты, совсем не обязательно в совершенстве овладевать множеством новых понятий. Если вы знакомы с объектно-ориентированным программированием и знаете, как создавать классы, вы уже обладаете почти всеми нужными знаниями. Настраиваемые атрибуты, в сущности, представляют собой традиционные классы, прямо или косвенно наследующие от <xref:System.Attribute?displayProperty=nameWithType>. Подобно традиционным классам настраиваемые атрибуты содержат методы, хранящие и извлекающие данные.  
@@ -104,7 +104,7 @@ ms.locfileid: "90550929"
   
 - Классы атрибутов должны объявляться как открытые классы.  
   
-- В соответствии с соглашением имя класса атрибута должно завершаться словом **Attribute**. Это условие не обязательно, но рекомендуется для повышения удобства чтения. При применении атрибута использование слова Attribute является необязательным.  
+- В соответствии с соглашением имя класса атрибута должно завершаться словом **Attribute** . Это условие не обязательно, но рекомендуется для повышения удобства чтения. При применении атрибута использование слова Attribute является необязательным.  
   
 - Все классы атрибутов должны прямо или косвенно наследовать от класса <xref:System.Attribute?displayProperty=nameWithType>.  
   

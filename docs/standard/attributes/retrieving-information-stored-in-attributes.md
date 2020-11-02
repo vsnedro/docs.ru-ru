@@ -10,14 +10,14 @@ dev_langs:
 helpviewer_keywords:
 - retrieving attributes
 - multiple attribute instances
-- attributes [.NET Framework], retrieving
+- attributes [.NET], retrieving
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
-ms.openlocfilehash: cf147a0ae6833039247c4c0878996973cc3db545
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 710f3e3d1051bad4a61e59e330204d622b9fd683
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84661865"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889209"
 ---
 # <a name="retrieving-information-stored-in-attributes"></a>Извлечение информации, сохраненной в атрибуте
 Извлечение пользовательских атрибутов не представляет никакой сложности. Сначала объявите экземпляр атрибута, который вам нужно получить. Затем вызовите метод <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=nameWithType>, чтобы инициализировать новый атрибут тем значением, которое вы хотите получить. После инициализации нового атрибута обращайтесь к его свойствам, чтобы получить значения.  
@@ -59,7 +59,7 @@ The attribute was not found.
   
 <a name="cpconretrievingmultipleinstancesofattributeappliedtosamescope"></a>
 ## <a name="retrieving-multiple-instances-of-an-attribute-applied-to-the-same-scope"></a>Извлечение нескольких экземпляров атрибута, применяемых к одной области  
- В предыдущем примере класс и искомый атрибут передаются в <xref:System.Attribute.GetCustomAttribute%2A>. Такой код будет работать правильно только в том случае, если на уровне класса применяется только один экземпляр нужного атрибута. Если же на одном уровне класса применяются несколько экземпляров атрибута, метод **GetCustomAttribute** не сможет извлечь все данные. Если несколько экземпляров одного атрибута применяются к одной области, вы можете поместить все экземпляры этого атрибута в массив с помощью <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>. Например, если на уровне класса применяются два вхождения `DeveloperAttribute`, метод `GetAttribute` можно изменить так, чтобы отобразить сведения из обоих атрибутов. Как вы помните, несколько атрибутов можно применить на одном уровне только в том случае, если в определении атрибута в <xref:System.AttributeUsageAttribute> свойство **AllowMultiple** имеет значение **true**.  
+ В предыдущем примере класс и искомый атрибут передаются в <xref:System.Attribute.GetCustomAttribute%2A>. Такой код будет работать правильно только в том случае, если на уровне класса применяется только один экземпляр нужного атрибута. Если же на одном уровне класса применяются несколько экземпляров атрибута, метод **GetCustomAttribute** не сможет извлечь все данные. Если несколько экземпляров одного атрибута применяются к одной области, вы можете поместить все экземпляры этого атрибута в массив с помощью <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>. Например, если на уровне класса применяются два вхождения `DeveloperAttribute`, метод `GetAttribute` можно изменить так, чтобы отобразить сведения из обоих атрибутов. Как вы помните, несколько атрибутов можно применить на одном уровне только в том случае, если в определении атрибута в <xref:System.AttributeUsageAttribute> свойство **AllowMultiple** имеет значение **true** .  
   
  В следующем примере кода показано, как использовать метод **GetCustomAttributes** для создания массива, который ссылается на все экземпляры `DeveloperAttribute` в любом заданном классе. Создав массив, метод выводит в консоль значения всех атрибутов.  
   
@@ -71,7 +71,7 @@ The attribute was not found.
   
 <a name="cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes"></a>
 ## <a name="retrieving-multiple-instances-of-an-attribute-applied-to-different-scopes"></a>Извлечение нескольких экземпляров атрибута, применяемых к разным областям  
- Методы <xref:System.Attribute.GetCustomAttributes%2A> и <xref:System.Attribute.GetCustomAttribute%2A> не выполняют поиск по всему классу, чтобы вернуть все экземпляры атрибута в этом классе. Вместо этого они проверяют только один заданный метод или член за один вызов. Если у вас есть класс, в котором к каждому члену применен один и тот же атрибут, и вы хотите извлечь значения всех атрибутов, примененных к этим членам, к каждому методу и члену нужно обращаться по отдельности с помощью методов **GetCustomAttributes** и  **GetCustomAttribute**.  
+ Методы <xref:System.Attribute.GetCustomAttributes%2A> и <xref:System.Attribute.GetCustomAttribute%2A> не выполняют поиск по всему классу, чтобы вернуть все экземпляры атрибута в этом классе. Вместо этого они проверяют только один заданный метод или член за один вызов. Если у вас есть класс, в котором к каждому члену применен один и тот же атрибут, и вы хотите извлечь значения всех атрибутов, примененных к этим членам, к каждому методу и члену нужно обращаться по отдельности с помощью методов **GetCustomAttributes** и  **GetCustomAttribute** .  
   
  Следующий пример кода принимает класс в качестве параметра и выполняет в нем поиск атрибута `DeveloperAttribute` (определенного ранее) на уровне класса и в каждом отдельном методе этого класса.  
   
@@ -81,7 +81,7 @@ The attribute was not found.
   
  Если на уровне методов и на уровне класса не обнаружен ни один экземпляр `DeveloperAttribute`, метод `GetAttribute` извещает пользователя о том, что атрибуты не найдены, а затем отображает имя метода и класса, в котором он искал атрибут. Если атрибут успешно найден, метод выводит в консоль поля `Name`, `Level` и `Reviewed`.  
   
- Вы можете использовать члены класса <xref:System.Type>, чтобы получить отдельные методы и члены переданного класса. Этот пример первым делом опрашивает объект **Type**, чтобы получить данные об атрибуте на уровне класса. После этого он выполняет <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>, чтобы поместить экземпляры всех методов в массив объектов <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> и получить данные об атрибуте на уровне методов. Вы также можете использовать метод <xref:System.Type.GetProperties%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне свойств, или метод <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне конструктора.  
+ Вы можете использовать члены класса <xref:System.Type>, чтобы получить отдельные методы и члены переданного класса. Этот пример первым делом опрашивает объект **Type** , чтобы получить данные об атрибуте на уровне класса. После этого он выполняет <xref:System.Type.GetMethods%2A?displayProperty=nameWithType>, чтобы поместить экземпляры всех методов в массив объектов <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> и получить данные об атрибуте на уровне методов. Вы также можете использовать метод <xref:System.Type.GetProperties%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне свойств, или метод <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType>, чтобы найти атрибуты на уровне конструктора.  
   
 ## <a name="see-also"></a>См. также
 

@@ -7,15 +7,15 @@ dev_langs:
 - vb
 - cpp
 helpviewer_keywords:
-- assemblies [.NET Framework], attributes
-- attributes [.NET Framework], applying
+- assemblies [.NET], attributes
+- attributes [.NET], applying
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-ms.openlocfilehash: 76591de6a4305b21b89d348f9ffe53f4e67e7334
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 24fe58ddf48e40b422652baa4c5bba86eea6b84f
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162834"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889235"
 ---
 # <a name="apply-attributes"></a>Применение атрибутов
 
@@ -33,11 +33,11 @@ ms.locfileid: "92162834"
 
  При компиляции кода атрибут передается в метаданные и становится доступным для среды CLR, а также пользовательских средств и приложений через службы отражения среды выполнения.
 
- Как правило, все имена атрибутов заканчиваются словом Attribute. В то же время несколько языков, предназначенных для среды выполнения, таких как Visual Basic и C#, не требуют указывать полное имя атрибута. Например, если вам нужно инициализировать <xref:System.ObsoleteAttribute?displayProperty=nameWithType>, достаточно указать имя **Obsolete**.
+ Как правило, все имена атрибутов заканчиваются словом Attribute. В то же время несколько языков, предназначенных для среды выполнения, таких как Visual Basic и C#, не требуют указывать полное имя атрибута. Например, если вам нужно инициализировать <xref:System.ObsoleteAttribute?displayProperty=nameWithType>, достаточно указать имя **Obsolete** .
 
 ## <a name="apply-an-attribute-to-a-method"></a>Применение атрибута к методу
 
- В следующем примере кода показано, как использовать атрибут **System.ObsoleteAttribute**, помечающий код как устаревший. Строка `"Will be removed in next version"` передается атрибуту. Атрибут вызывает предупреждение компилятора, которое отображает переданную строку при вызове кода, описываемого этим атрибутом.
+ В следующем примере кода показано, как использовать атрибут **System.ObsoleteAttribute** , помечающий код как устаревший. Строка `"Will be removed in next version"` передается атрибуту. Атрибут вызывает предупреждение компилятора, которое отображает переданную строку при вызове кода, описываемого этим атрибутом.
 
  [!code-cpp[Conceptual.Attributes.Usage#3](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source1.cpp#3)]
  [!code-csharp[Conceptual.Attributes.Usage#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source1.cs#3)]
@@ -45,7 +45,7 @@ ms.locfileid: "92162834"
 
 ## <a name="apply-attributes-at-the-assembly-level"></a>Применение атрибутов на уровне сборки
 
- Если необходимо применять атрибут на уровне сборки, используйте ключевое слово `assembly` (`Assembly` в Visual Basic). В следующем коде показан атрибут **AssemblyTitleAttribute**, применяемый на уровне сборки.
+ Если необходимо применять атрибут на уровне сборки, используйте ключевое слово `assembly` (`Assembly` в Visual Basic). В следующем коде показан атрибут **AssemblyTitleAttribute** , применяемый на уровне сборки.
 
  [!code-cpp[Conceptual.Attributes.Usage#2](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source1.cpp#2)]
  [!code-csharp[Conceptual.Attributes.Usage#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source1.cs#2)]

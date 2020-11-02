@@ -7,15 +7,15 @@ dev_langs:
 - vb
 helpviewer_keywords:
 - constructs, miscellaneous
-- .NET Framework regular expressions, miscellaneous constructs
+- .NET regular expressions, miscellaneous constructs
 - regular expressions, miscellaneous constructs
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-ms.openlocfilehash: 8ca888074aa757a1bfba786a7bec5928b75b1da2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f7800dee67513f885339fad67c7a999cc06cca36
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290413"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889274"
 ---
 # <a name="miscellaneous-constructs-in-regular-expressions"></a>Другие конструкции в регулярных выражениях
 Регулярные выражения в .NET поддерживают три различные языковые конструкции. Одна позволяет включать или отключать определенные параметры соответствия в середине шаблона регулярного выражения. Оставшиеся две позволяют включать комментарии в регулярное выражение.  

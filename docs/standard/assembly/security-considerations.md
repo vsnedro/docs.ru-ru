@@ -3,32 +3,33 @@ title: Вопросы безопасности сборок
 description: При создании сборки .NET можно указать разрешения, которые требуются для ее выполнения. В этой статье описаны сборки со строгими именами и средства подписывания.
 ms.date: 08/20/2019
 helpviewer_keywords:
-- assemblies [.NET Framework], security
+- assemblies [.NET], security
 - signcodes
-- names [.NET Framework], assemblies
+- names [.NET], assemblies
 - strong-named assemblies, security considerations
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - granting permissions, assemblies
-- assemblies [.NET Framework], strong-named
-- names [.NET Framework], strong names
-- permissions [.NET Framework], assemblies
-- security [.NET Framework], assemblies
+- assemblies [.NET], strong-named
+- names [.NET], strong names
+- permissions [.NET], assemblies
+- security [.NET], assemblies
 - integrity with assemblies
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
-ms.openlocfilehash: d0b822f725444248d1037c21ffea9afe1cebb7e2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 91ea206abf80da275651854b9f13aa0116b7a1c5
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290023"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687269"
 ---
 # <a name="assembly-security-considerations"></a>Вопросы безопасности сборок
+
 При создании сборки можно указать набор разрешений, который требуется для ее выполнения. От свидетельства зависит, предоставляются ли сборке определенные разрешения.  
   
  Существует два различных способа использования свидетельств.  
   
-- Входное свидетельство объединяется со свидетельством, собранным загрузчиком для создания окончательного набора свидетельств, используемых для разрешения политики. К методам, использующим такую модель, относятся **Assembly.Load**, **Assembly.LoadFrom** и **Activator.CreateInstance**.  
+- Входное свидетельство объединяется со свидетельством, собранным загрузчиком для создания окончательного набора свидетельств, используемых для разрешения политики. К методам, использующим такую модель, относятся **Assembly.Load** , **Assembly.LoadFrom** и **Activator.CreateInstance** .  
   
 - В качестве окончательного набора свидетельств для разрешения политики используется неизмененное входное свидетельство. К методам, использующим такую модель, относятся **Assembly.Load(byte[])** и **AppDomain.DefineDynamicAssembly()** .  
   

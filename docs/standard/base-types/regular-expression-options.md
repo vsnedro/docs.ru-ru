@@ -9,16 +9,16 @@ dev_langs:
 helpviewer_keywords:
 - regular expressions, options
 - constructs, options
-- .NET Framework regular expressions, options
+- .NET regular expressions, options
 - inline option constructs
 - options parameter
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-ms.openlocfilehash: 268e05c2212539b030ccc3c7195f618bb3afa707
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 5687d1e5a11e69cc9ecf2bd34067329cc52955d2
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662879"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92889001"
 ---
 # <a name="regular-expression-options"></a>Параметры регулярных выражений
 
@@ -267,7 +267,7 @@ ms.locfileid: "84662879"
 
 - Пробел не допускается в последовательности символов, предоставляющей языковой элемент. Пример:
 
-  - Языковой элемент `(?:`*subexpression*`)` представляет незахватываемую группу, а часть `(?:` элемента не может включать пробелы. Шаблон `(? :`*часть выражения*`)` вызывает исключение <xref:System.ArgumentException> во время выполнения, так как механизм регулярных выражений не может проанализировать шаблон, а шаблону `( ?:`*часть выражения*`)` не удается сопоставить *часть выражения*.
+  - Языковой элемент `(?:`*subexpression*`)` представляет незахватываемую группу, а часть `(?:` элемента не может включать пробелы. Шаблон `(? :`*часть выражения*`)` вызывает исключение <xref:System.ArgumentException> во время выполнения, так как механизм регулярных выражений не может проанализировать шаблон, а шаблону `( ?:`*часть выражения*`)` не удается сопоставить *часть выражения* .
 
   - Языковой элемент `\p{`*name*`}`, представляющий категорию Юникода или именованный блок, не может содержать пробелы в части `\p{` элемента. Если все-таки добавить пробел, элемент вызовет исключение <xref:System.ArgumentException> во время выполнения.
 
