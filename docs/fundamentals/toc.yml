@@ -1734,10 +1734,9 @@ items:
                     href: ../standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md
                   - name: Пошаговое руководство. Повышение эффективности с помощью BatchBlock и BatchedJoinBlock
                     href: ../standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md
-              - name: Использование библиотеки параллельных задач с другими асинхронными шаблонами
-                href: ../standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md
+              - name: Использование TPL с другими асинхронными моделями
                 items:
-                  - name: Библиотека параллельных задач и традиционное асинхронное программирование .NET Framework
+                  - name: TPL и традиционное асинхронное программирование .NET
                     href: ../standard/parallel-programming/tpl-and-traditional-async-programming.md
                   - name: Практическое руководство. Создание задачи-оболочки для шаблонов EAP
                     href: ../standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md
