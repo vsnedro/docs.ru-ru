@@ -9,16 +9,17 @@ helpviewer_keywords:
 - data streams, writing characters to string
 - writing characters to strings
 - streams, writing characters to strings
-- I/O [.NET Framework], writing characters to strings
+- I/O [.NET], writing characters to strings
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
-ms.openlocfilehash: 04fc21c452258a88292a886d952353ac55573121
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5b0e20b911237739c143576d9a7be660f5da58c0
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288255"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93189229"
 ---
 # <a name="how-to-write-characters-to-a-string"></a>Практическое руководство. Запись символов в строку
+
 Следующий пример кода демонстрирует синхронную или асинхронную запись символов из массива символов в строку.  
   
 ## <a name="example-write-characters-synchronously-in-a-console-app"></a>Пример. Синхронная запись символов в консольном приложении  

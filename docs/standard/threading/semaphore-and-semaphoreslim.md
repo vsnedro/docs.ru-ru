@@ -6,19 +6,20 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - counting semaphores
 - semaphores
-- threading [.NET Framework], cross-process synchronization
+- threading [.NET], cross-process synchronization
 - Semaphore class, about Semaphore class
 - SemaphoreSlim class, about SemaphoreSlim class
-- threading [.NET Framework], Semaphore class
+- threading [.NET], Semaphore class
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-ms.openlocfilehash: 21f0d7e3fb446a7b750c45cfe8ef3f087a77888a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b9c13ace086b4df08108a844aea78e5d550e6958
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600455"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188943"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>Классы Semaphore и SemaphoreSlim
+
 <xref:System.Threading.Semaphore?displayProperty=nameWithType> Класс представляет собой именованный (общесистемный) или локальный семафор. Он является тонкой оболочкой вокруг объекта семафора Win32. Семафоры Win32 являются семафорами счета, которые могут быть использованы для управления доступом к пулу ресурсов.  
   
  <xref:System.Threading.SemaphoreSlim> Класс представляет упрощенный, быстрый семафор, который можно использовать для ожидания внутри одного процесса, когда предполагается, что времена ожидания будут очень короткими. <xref:System.Threading.SemaphoreSlim>использует максимально примитивы синхронизации, предоставляемые общеязыковой среды выполнения (CLR). Тем не менее, он также предоставляет неактивно инициализированные дескрипторы ожидания на основе ядра при необходимости поддержки ожидания для нескольких семафоров. <xref:System.Threading.SemaphoreSlim>также поддерживает использование токенов отмены, но не поддерживает именованные семафоры или использование дескриптора ожидания для синхронизации.  

@@ -3,18 +3,18 @@ title: Управляемые и неуправляемые потоки в Wind
 ms.date: 10/24/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:
-- threading [.NET Framework], unmanaged
-- threading [.NET Framework], managed
+- threading [.NET], unmanaged
+- threading [.NET], managed
 - threading [.NET], managed
 - threads and fibers [.NET]
 - managed threading
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-ms.openlocfilehash: de823297540d5ce3740a26614dbb9a82881decf3
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 7b2eca1275aba5139bd19662674cd76d95e92fd0
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924387"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93189164"
 ---
 # <a name="managed-and-unmanaged-threading-in-windows"></a>Управляемые и неуправляемые потоки в Windows
 
@@ -52,7 +52,7 @@ ms.locfileid: "86924387"
  Если состояние подразделения не задано до запуска потока, этот поток инициализируется в качестве многопотокового подразделения (MTA). Поток метода завершения и все потоки, управляемые <xref:System.Threading.ThreadPool> , являются многопотоковыми подразделениями.  
   
 > [!IMPORTANT]
-> Для кода запуска приложения единственный способ управления состоянием подразделения заключается в применении <xref:System.MTAThreadAttribute> или <xref:System.STAThreadAttribute> к процедуре точки входа. В .NET Framework 1.0 и 1.1 свойство <xref:System.Threading.Thread.ApartmentState%2A> можно задать в качестве первой строки кода. В .NET Framework 2.0 это запрещено.  
+> Для кода запуска приложения единственный способ управления состоянием подразделения заключается в применении <xref:System.MTAThreadAttribute> или <xref:System.STAThreadAttribute> к процедуре точки входа.
   
  Управляемые объекты, предоставляемые интерфейсу COM, работают так, как если бы они агрегировали упаковщик в режиме свободного потока. Другими словами, их можно вызвать из любого подразделения COM в режиме свободного потока. В таком режиме не работают только управляемые объекты, производные от <xref:System.EnterpriseServices.ServicedComponent> или <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
   
