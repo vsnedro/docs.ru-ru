@@ -17,12 +17,12 @@ helpviewer_keywords:
 - decryption
 - data [.NET], encryption
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
-ms.openlocfilehash: 263a07ddf357734e819fffdd41cdff60657adf15
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: d3fe7ef3ddbc6e75a248101829b11a8abcb3c15a
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557064"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282058"
 ---
 # <a name="how-to-use-data-protection"></a>Практическое руководство. Использование защиты данных
 
@@ -35,7 +35,7 @@ ms.locfileid: "87557064"
   
 Используйте класс <xref:System.Security.Cryptography.ProtectedData> для шифрования копии массива байтов. Эта функция доступна в .NET Framework, .NET Core и .NET 5.  Можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы только той же учетной записью, либо можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы любой учетной записью на компьютере.  Подробное описание параметров <xref:System.Security.Cryptography.ProtectedData> см. в разделе, посвященном перечислению <xref:System.Security.Cryptography.DataProtectionScope>.  
   
-### <a name="to-encrypt-data-to-a-file-or-stream-using-data-protection"></a>Шифрование данных в файл или поток при помощи функции защиты данных  
+## <a name="encrypt-data-to-a-file-or-stream-using-data-protection"></a>Шифрование данных в файл или поток с помощью защиты данных  
   
 1. Создайте случайную энтропию.  
   

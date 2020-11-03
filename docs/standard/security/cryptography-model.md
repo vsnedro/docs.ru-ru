@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cryptography [.NET], model
 - encryption [.NET], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: 0b3e07238bf0932572c222f7b947cfa7ae0221a9
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: a157a9a76f87a2a56c616b76c933e6d8d6415b03
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556999"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281588"
 ---
 # <a name="net-cryptography-model"></a>Модель шифрования .NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "87556999"
 
 Система криптографии .NET реализует расширяемый шаблон наследования производного класса. Иерархия имеет представленный ниже вид.
 
-- Класс типа алгоритма, например <xref:System.Security.Cryptography.SymmetricAlgorithm> , <xref:System.Security.Cryptography.AsymmetricAlgorithm> или <xref:System.Security.Cryptography.HashAlgorithm> . Этот уровень является абстрактным.
+- Класс типа алгоритма, например <xref:System.Security.Cryptography.SymmetricAlgorithm> ,  <xref:System.Security.Cryptography.AsymmetricAlgorithm> или <xref:System.Security.Cryptography.HashAlgorithm> . Этот уровень является абстрактным.
 
 - Класс алгоритма, наследующий от класса типа алгоритма, например <xref:System.Security.Cryptography.Aes>, <xref:System.Security.Cryptography.RSA> или <xref:System.Security.Cryptography.ECDiffieHellman>. Этот уровень является абстрактным.
 
@@ -37,13 +37,13 @@ ms.locfileid: "87556999"
 
 В качестве примера различных реализаций, доступных для алгоритма, рассмотрим симметричные алгоритмы. Основой для всех симметричных алгоритмов является <xref:System.Security.Cryptography.SymmetricAlgorithm> , которая наследуется <xref:System.Security.Cryptography.Aes> , <xref:System.Security.Cryptography.TripleDES> и другие, которые больше не рекомендуются.
 
-<xref:System.Security.Cryptography.Aes>наследуется <xref:System.Security.Cryptography.AesCryptoServiceProvider> , <xref:System.Security.Cryptography.AesCng> и <xref:System.Security.Cryptography.AesManaged> .
+<xref:System.Security.Cryptography.Aes> наследуется <xref:System.Security.Cryptography.AesCryptoServiceProvider> , <xref:System.Security.Cryptography.AesCng> и <xref:System.Security.Cryptography.AesManaged> .
 
 В .NET Framework в Windows:
 
-* `*CryptoServiceProvider`классы алгоритмов, такие как <xref:System.Security.Cryptography.AesCryptoServiceProvider> , являются оболочками для реализации алгоритма с помощью API шифрования Windows (CAPI).
-* `*Cng`классы алгоритмов, такие как, <xref:System.Security.Cryptography.ECDiffieHellmanCng> являются оболочками для реализации Windows криптографии следующего поколения (CNG).
-* `*Managed`классы, такие как <xref:System.Security.Cryptography.AesManaged> , полностью записываются в управляемом коде. `*Managed`реализации не сертифицированы Федеральным стандартом обработки информации (FIPS) и могут быть медленнее, чем `*CryptoServiceProvider` классы- `*Cng` оболочки.
+* `*CryptoServiceProvider` классы алгоритмов, такие как <xref:System.Security.Cryptography.AesCryptoServiceProvider> , являются оболочками для реализации алгоритма с помощью API шифрования Windows (CAPI).
+* `*Cng` классы алгоритмов, такие как <xref:System.Security.Cryptography.ECDiffieHellmanCng> , являются оболочками для реализации Windows криптографии следующего поколения (CNG).
+* `*Managed` классы, такие как <xref:System.Security.Cryptography.AesManaged> , полностью записываются в управляемом коде. `*Managed` реализации не сертифицированы Федеральным стандартом обработки информации (FIPS) и могут быть медленнее, чем `*CryptoServiceProvider` классы- `*Cng` оболочки.
 
 В .NET Core и .NET 5 и более поздних версиях все классы реализации ( `*CryptoServiceProvider` , `*Managed` и `*Cng` ) являются оболочками для алгоритмов операционной системы (ОС). Если алгоритмы ОС сертифицированы по стандарту FIPS, .NET использует алгоритмы, сертифицированные FIPS. Дополнительные сведения см. в статье [кросс-платформенное шифрование](cross-platform-cryptography.md).
 
