@@ -3,12 +3,12 @@ title: Перенос кода из .NET Framework в .NET Core
 description: Общие сведения о процессе переноса и инструментах, которые могут оказаться полезными при переносе проектов .NET Framework в .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: c206e56e095d1ca068fa2aa6f60e891895f7f999
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 00d6bb513a6bd8ee511b69c07272f605c39e5619
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92888578"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063245"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Общие сведения о переносе кода в .NET Core из .NET Framework
 
