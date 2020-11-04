@@ -46,6 +46,8 @@
               href: tutorials/intro-to-csharp/introduction-to-classes.md
             - name: Объектно-ориентированное программирование
               href: tutorials/intro-to-csharp/object-oriented-programming.md
+    - name: Подробнее об инструкциях верхнего уровня
+      href: tutorials/exploration/top-level-statements.md
     - name: "Обзор C#\_6"
       href: tutorials/exploration/csharp-6.yml
     - name: Интерполяция строк. Интерактивное руководство
