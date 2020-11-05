@@ -6,18 +6,17 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- .NET Framework, and TAP
-- asynchronous design patterns, .NET Framework
-- TAP, .NET Framework support for
-- Task-based Asynchronous Pattern, .NET Framework support for
-- .NET Framework, asynchronous design patterns
+- asynchronous design patterns, .NET
+- TAP, .NET support for
+- Task-based Asynchronous Pattern, .NET support for
+- .NET, asynchronous design patterns
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
-ms.openlocfilehash: 1f2f44b6b92f66f95816778c6dc8e893f1291abe
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 8bac9d265211d2f266db634d4bcebb87c2debd9a
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289372"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888780"
 ---
 # <a name="implementing-the-task-based-asynchronous-pattern"></a>Реализация асинхронного шаблона, основанного на задачах
 Можно реализовать асинхронную модель на основе задач (TAP) тремя способами: с помощью компиляторов C# и Visual Basic в Visual Studio, вручную или путем сочетания этих методов. Каждый метод подробно обсуждается в следующих разделах. Модель TAP можно применять для создания асинхронных операций, связанных с операциями ввода-вывода и ограниченных по скорости вычислений. В разделе [Рабочие нагрузки](#workloads) рассматриваются операции каждого типа.
@@ -34,7 +33,7 @@ ms.locfileid: "84289372"
 [!code-vb[Conceptual.TAP_Patterns#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#1)]
 
 ### <a name="hybrid-approach"></a>Гибридный подход
- Может оказаться полезным реализовать шаблон TAР вручную, но делегировать основную логику для реализации компилятору. Например, может использовать гибридный подход, когда требуется проверить аргументы за пределами асинхронного метода, созданного компилятором, для того, чтобы исключения могли переходить к непосредственному вызывающему объекту метода, а не предоставлялись через объект <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>:
+ Может оказаться полезным реализовать шаблон TAР вручную, но делегировать основную логику для реализации компилятору. Например, можно использовать гибридный подход, когда требуется проверить аргументы за пределами асинхронного метода, созданного компилятором, для того, чтобы исключения могли переходить к непосредственному вызывающему объекту метода, а не предоставлялись через объект <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>.
 
  [!code-csharp[Conceptual.TAP_Patterns#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#2)]
  [!code-vb[Conceptual.TAP_Patterns#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#2)]
@@ -49,9 +48,9 @@ ms.locfileid: "84289372"
 
 Задачи ограниченных по скорости вычислений можно создать одним из следующих способов:
 
-- В платформе .NET Framework 4 используйте метод <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>, который принимает делегат (обыкновенно <xref:System.Action%601> или <xref:System.Func%601>) для асинхронного выполнения. Если предоставить делегат <xref:System.Action%601>, этот метод возвращает объект <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, представляющий асинхронное выполнение этого делегата. Если предоставить делегат <xref:System.Func%601>, этот метод возвращает объект <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Перегрузки метода <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> принимают маркер отмены (<xref:System.Threading.CancellationToken>), параметры создания задач (<xref:System.Threading.Tasks.TaskCreationOptions>) и планировщик заданий (<xref:System.Threading.Tasks.TaskScheduler>), которые обеспечивают точное управление планированием и выполнением задачи. Экземпляр фабрики, предназначенный для текущего планировщика задач доступен как статическое свойство (<xref:System.Threading.Tasks.Task.Factory%2A>) из класса <xref:System.Threading.Tasks.Task>; Например: `Task.Factory.StartNew(…)`.
+- В .NET Framework 4.5 и более поздних версий (включая .NET Core и .NET 5 и более поздние версии) используйте статический метод <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> в качестве псевдонима для <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>. Вы можете использовать <xref:System.Threading.Tasks.Task.Run%2A> для простого запуска ограниченных по скорости вычислений задач, предназначенных для пула потоков. Это предпочтительный механизм для запуска задачи, ограниченной по скорости вычислений. Используйте `StartNew` непосредственно, только когда требуется более точный контроль над задачей.
 
-- В .NET Framework 4.5 и более поздних версиях (включая .NET Core и .NET Standard) используйте статический метод <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> в качестве псевдонима для <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>. Вы можете использовать <xref:System.Threading.Tasks.Task.Run%2A> для простого запуска ограниченных по скорости вычислений задач, предназначенных для пула потоков. В .NET Framework 4.5 и более поздних версиях этот механизм является предпочтительным для запуска задачи, ограниченной по скорости вычислений. Используйте `StartNew` непосредственно, только когда требуется более точный контроль над задачей.
+- В .NET Framework 4 используйте метод <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>, который принимает делегат (обыкновенно <xref:System.Action%601> или <xref:System.Func%601>) для асинхронного выполнения. Если предоставить делегат <xref:System.Action%601>, этот метод возвращает объект <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, представляющий асинхронное выполнение этого делегата. Если предоставить делегат <xref:System.Func%601>, этот метод возвращает объект <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Перегрузки метода <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> принимают маркер отмены (<xref:System.Threading.CancellationToken>), параметры создания задач (<xref:System.Threading.Tasks.TaskCreationOptions>) и планировщик заданий (<xref:System.Threading.Tasks.TaskScheduler>), которые обеспечивают точное управление планированием и выполнением задачи. Экземпляр фабрики, предназначенный для текущего планировщика задач доступен как статическое свойство (<xref:System.Threading.Tasks.Task.Factory%2A>) из класса <xref:System.Threading.Tasks.Task>; Например: `Task.Factory.StartNew(…)`.
 
 - Используйте конструкторы типа `Task` или метод `Start`, если требуется создать и запланировать задачу отдельно. Открытые методы должны возвращать только задачи, которые уже были начаты.
 
@@ -82,7 +81,7 @@ ms.locfileid: "84289372"
 [!code-csharp[Conceptual.TAP_Patterns#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#4)]
 [!code-vb[Conceptual.TAP_Patterns#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#4)]
 
-Начиная с .NET Framework 4.5 метод <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> предоставляется для этой цели, и можно использовать его внутри другого асинхронного метода, например для реализации асинхронного цикла опроса:
+Метод <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> предоставляется для этой цели, и можно использовать его внутри другого асинхронного метода, например для реализации асинхронного цикла опроса.
 
 [!code-csharp[Conceptual.TAP_Patterns#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#5)]
 [!code-vb[Conceptual.TAP_Patterns#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#5)]

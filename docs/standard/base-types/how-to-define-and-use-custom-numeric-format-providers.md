@@ -6,24 +6,25 @@ dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- numeric format strings [.NET Framework]
-- formatting [.NET Framework], numbers
-- number formatting [.NET Framework]
+- numeric format strings [.NET]
+- formatting [.NET], numbers
+- number formatting [.NET]
 - custom numeric format strings
-- numbers [.NET Framework], custom numeric format strings
+- numbers [.NET], custom numeric format strings
 - displaying date and time data
-- format providers [.NET Framework]
+- format providers [.NET]
 - custom format strings
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-ms.openlocfilehash: d12899fff7d9e6cb63728ba0b160b70fa2a41a1a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 38c1890684bd89b2bc4719637209569f01bd17a2
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290517"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888486"
 ---
 # <a name="how-to-define-and-use-custom-numeric-format-providers"></a>Практическое руководство. Определение и использование поставщиков настраиваемых числовых форматов
-.NET Framework обеспечивает расширенный контроль над строковым представлением числовых значений. Эта платформа поддерживает указанные далее возможности для настройки форматов числовых значений.  
+
+.NET обеспечивает расширенный контроль над строковым представлением числовых значений. Эта платформа поддерживает указанные далее возможности для настройки форматов числовых значений.  
   
 - Строки стандартных числовых форматов, которые предоставляют стандартный набор форматов для преобразования чисел в их строковое представление. Вы можете использовать их с любым методом числового форматирования, например <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> с параметром `format`. Дополнительные сведения см. в статье [Строки стандартных числовых форматов](standard-numeric-format-strings.md).  
   
@@ -31,9 +32,9 @@ ms.locfileid: "84290517"
   
 - Настраиваемые объекты <xref:System.Globalization.CultureInfo> и <xref:System.Globalization.NumberFormatInfo>, которые определяют символы и шаблоны форматирования для отображения строковых представлений числовых значений. Вы можете использовать их с любым методом числового форматирования, например <xref:System.Int32.ToString%2A> с параметром `provider`. Как правило, параметр `provider` используется для указания форматирования, зависящего от языка и региональных параметров.  
   
- В некоторых случаях (например, когда приложению необходимо отобразить отформатированный номер учетной записи, идентификационный номер или почтовый индекс) эти три метода неприменимы. Также .NET Framework позволяет определить объект форматирования, который не является объектом <xref:System.Globalization.CultureInfo> или <xref:System.Globalization.NumberFormatInfo>, для определения порядка форматирования числовых значений. Этот раздел содержит пошаговые инструкции по реализации таких объектов и пример форматирования телефонных номеров.  
+ В некоторых случаях (например, когда приложению необходимо отобразить отформатированный номер учетной записи, идентификационный номер или почтовый индекс) эти три метода неприменимы. Кроме того, .NET позволяет определить объект форматирования, который не является объектом <xref:System.Globalization.CultureInfo> или <xref:System.Globalization.NumberFormatInfo>, для определения порядка форматирования числовых значений. Этот раздел содержит пошаговые инструкции по реализации таких объектов и пример форматирования телефонных номеров.  
   
-### <a name="to-define-a-custom-format-provider"></a>Определение поставщика пользовательского формата  
+## <a name="define-a-custom-format-provider"></a>Определение поставщика пользовательского формата  
   
 1. Определите класс, реализующий интерфейсы <xref:System.IFormatProvider> и <xref:System.ICustomFormatter>.  
   
@@ -55,13 +56,14 @@ ms.locfileid: "84290517"
   
     4. Верните строковое представление параметра `arg`.  
   
-### <a name="to-use-a-custom-numeric-formatting-object"></a>Использование объекта настраиваемого числового форматирования  
+## <a name="use-a-custom-numeric-formatting-object"></a>Использование объекта настраиваемого числового форматирования  
   
 1. Создайте новый экземпляр класса настраиваемого форматирования.  
   
 2. Вызовите метод форматирования <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, передав ему объект пользовательского форматирования, описатель форматирования (или <xref:System.String.Empty?displayProperty=nameWithType>, если описатель не используется) и числовое значение для форматирования.  
   
-## <a name="example"></a>Пример  
+## <a name="example"></a>Пример
+
  В следующем примере определяется поставщик настраиваемого числового формата с именем `TelephoneFormatter`, который преобразует число, представляющее номер телефона в США, в формат NANP или E.123. Метод обрабатывает два описателя формата "N" (вывод в формате NANP) и "I" (вывод в международном формате E.123).  
   
  [!code-csharp[Formatting.HowTo.NumericValue#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.NumericValue/cs/Telephone1.cs#1)]

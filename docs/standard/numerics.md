@@ -11,12 +11,12 @@ helpviewer_keywords:
 - numerics
 - BigInteger
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-ms.openlocfilehash: 3b95a322377e82249a0375af589df74c658fcbf4
-ms.sourcegitcommit: 1cb64b53eb1f253e6a3f53ca9510ef0be1fd06fe
+ms.openlocfilehash: 0fdf1b3ec1141dd637f817115bd1d2351c8af7a0
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82507420"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687738"
 ---
 # <a name="numerics-in-net"></a>Числовые значения в .NET
 
@@ -88,10 +88,11 @@ ms.locfileid: "82507420"
 - Тип <xref:System.Numerics.Quaternion>, который представляет вектор, используемый для кодирования трехмерных физических вращений.
 
 - Тип <xref:System.Numerics.Vector%601>, который представляет вектор указанного числового типа и реализует широкий набор операторов, оптимизированных для поддержки SIMD. <xref:System.Numerics.Vector%601> имеет фиксированное число экземпляров, но его значение <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> зависит от характеристик ЦП на компьютере, на котором выполняется код.
+
   > [!NOTE]
-  > Тип <xref:System.Numerics.Vector%601> не входит в .NET Framework. Чтобы получить доступ к этому типу, необходимо установить пакет NuGet [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors).
+  > Тип <xref:System.Numerics.Vector%601> входит в состав .NET Core и .NET 5 и более поздних версий, но не .NET Framework. Чтобы получить доступ к этому типу при использовании .NET Framework, необходимо установить пакет NuGet [System.Numerics.Vectors](https://www.nuget.org/packages/System.Numerics.Vectors).
   
-Типы с поддержкой SIMD реализованы так, что их можно использовать на оборудовании и (или) с JIT-компиляторами, которые не поддерживают SIMD. Чтобы получить преимущество от использования инструкций SIMD, необходимо запустить 64-разрядное приложение в среде выполнения с компилятором RyuJIT. Он входит в состав .NET Core и .NET Framework 4.6 и более поздних версий. Он добавляет поддержку SIMD при нацеливании на 64-разрядные процессоры.
+Типы с поддержкой SIMD реализованы так, что их можно использовать на оборудовании и (или) с JIT-компиляторами, которые не поддерживают SIMD. Чтобы получить преимущество от использования инструкций SIMD, необходимо запустить 64-разрядное приложение в среде выполнения с компилятором RyuJIT. Он входит в состав .NET Core и .NET Framework 4.6 и более поздних версий. Он добавляет поддержку SIMD при нацеливании на 64-разрядные процессоры.
 
 Дополнительные сведения см. в разделе [Использование числовых типов с ускорением SIMD](simd.md).
 

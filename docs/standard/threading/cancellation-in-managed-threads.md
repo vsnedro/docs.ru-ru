@@ -9,17 +9,18 @@ dev_langs:
 helpviewer_keywords:
 - cancellation in .NET, overview
 ms.assetid: eea11fe5-d8b0-4314-bb5d-8a58166fb1c3
-ms.openlocfilehash: 9af4a64e50eff65023d5ed5bda868af2f8323a96
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 09c39202f1564ac544fdf30a07952990b309b661
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662840"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188475"
 ---
 # <a name="cancellation-in-managed-threads"></a>Отмена в управляемых потоках
-В .NET Framework 4 введена новая универсальная модель совместной отмены асинхронных или долго выполняющихся синхронных операций. Эта модель построена на простом объекте, называемом токеном отмены. Объект, который вызывает одну или несколько отменяемых операций, например, путем создания новых потоков или задач, передает этот токен в каждую операцию. Операция, в свою очередь, передает копии этого токена в другие операции. Некоторое время спустя объект, создавший токен, может использовать его для запроса остановки выполнения операции. Запрос на отмену может создавать только запрашивающий объект, и каждый прослушиватель должен обнаружить этот запрос, чтобы правильно и своевременно отреагировать на него.  
+
+Начиная с .NET Framework 4, в .NET введена новая универсальная модель совместной отмены асинхронных или долго выполняющихся синхронных операций. Эта модель построена на простом объекте, называемом токеном отмены. Объект, который вызывает одну или несколько отменяемых операций, например, путем создания новых потоков или задач, передает этот токен в каждую операцию. Операция, в свою очередь, передает копии этого токена в другие операции. Некоторое время спустя объект, создавший токен, может использовать его для запроса остановки выполнения операции. Запрос на отмену может создавать только запрашивающий объект, и каждый прослушиватель должен обнаружить этот запрос, чтобы правильно и своевременно отреагировать на него.  
   
- Общая схема реализации модели совместной отмены выглядит следующим образом:  
+Общая схема реализации модели совместной отмены выглядит следующим образом:  
   
 - Создается экземпляр объекта <xref:System.Threading.CancellationTokenSource>, который управляет уведомлениями об отмене и передает их отдельным токенам отмены.  
   
@@ -36,7 +37,7 @@ ms.locfileid: "84662840"
   
  ![CancellationTokenSource и токены отмены](media/vs-cancellationtoken.png "VS_CancellationToken")  
   
- Новая модель отмены упрощает создание приложений и библиотек, поддерживающих отмену. Она также поддерживает перечисленные ниже возможности.  
+ Модель совместной отмены упрощает создание приложений и библиотек, поддерживающих отмену. Она также поддерживает перечисленные ниже возможности.  
   
 - Отмена является совместной и не осуществляется принудительно на прослушивателе. Прослушиватель сам определяет порядок корректного завершения в ответ на запрос отмены.  
   
@@ -59,19 +60,19 @@ ms.locfileid: "84662840"
 |<xref:System.Threading.CancellationToken>|Простой тип значения, передаваемый одному или нескольким прослушивателям, обычно в виде параметра метода. Прослушиватели отслеживают значение свойства `IsCancellationRequested` токена посредством опроса, обратного вызова или дескриптора ожидания.|  
 |<xref:System.OperationCanceledException>|Перегрузки конструктора этого исключения принимают <xref:System.Threading.CancellationToken> в качестве параметра. Прослушиватели могут также создавать это исключение для проверки источника отмены и уведомления остальных прослушивателей об ответе на запрос отмены.|  
   
- Новая модель отмены интегрирована в несколько типов .NET Framework. Наиболее важные из них — <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> и <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType>. Мы рекомендуем использовать именно эту новую модель отмены в коде всех новых библиотек и приложений.  
+ Модель отмены интегрирована в несколько типов .NET. Наиболее важные из них — <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> и <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType>. Мы рекомендуем использовать именно эту модель совместной отмены в коде всех новых библиотек и приложений.  
   
 ## <a name="code-example"></a>Пример кода  
  В примере ниже запрашивающий объект создает объект <xref:System.Threading.CancellationTokenSource>, а затем передает его свойство <xref:System.Threading.CancellationTokenSource.Token%2A> в отменяемую операцию. Операция, получающая запрос, отслеживает значение свойства <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> токена путем опроса. Когда свойство принимает значение `true`, прослушиватель может завершить операцию любым приемлемым способом. В этом примере просто выполняется выход из метода. Во многих случаях этого достаточно.  
   
 > [!NOTE]
-> В этом примере метод <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> используется для демонстрации совместимости новой инфраструктуры отмены с устаревшими интерфейсами API. Пример, в котором используется новый предпочтительный тип <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, см. в разделе [Руководство. Отмена задачи и ее дочерних элементов](../parallel-programming/how-to-cancel-a-task-and-its-children.md).  
+> В этом примере метод <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> используется для демонстрации совместимости инфраструктуры совместной отмены с устаревшими интерфейсами API. Пример, в котором используется предпочтительный тип <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, см. в статье [Руководство. Отмена задачи и ее дочерних элементов](../parallel-programming/how-to-cancel-a-task-and-its-children.md).  
   
  [!code-csharp[Cancellation#1](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex1.cs#1)]
  [!code-vb[Cancellation#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex1.vb#1)]  
   
 ## <a name="operation-cancellation-versus-object-cancellation"></a>Отмена операции и отмена объекта  
- В рамках новой инфраструктуры отмены осуществляется отмена операций, а не объектов. Запрос на отмену означает, что операция должна быть остановлена как можно скорее после выполнения всех необходимых очисток. Один токен отмены должен относиться к одной отменяемой операции, однако эта операция может быть реализована в программе. После того как свойство <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> токена примет значение `true`, для него невозможно будет восстановить значение `false`. Поэтому токены отмены нельзя использовать повторно после отмены.  
+ В рамках инфраструктуры совместной отмены осуществляется отмена операций, а не объектов. Запрос на отмену означает, что операция должна быть остановлена как можно скорее после выполнения всех необходимых очисток. Один токен отмены должен относиться к одной отменяемой операции, однако эта операция может быть реализована в программе. После того как свойство <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> токена примет значение `true`, для него невозможно будет восстановить значение `false`. Поэтому токены отмены нельзя использовать повторно после отмены.  
   
  Если вам необходим механизм отмены объектов, его можно построить на основе механизма отмены операций путем вызова метода <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType>, как показано в примере ниже.  
   
@@ -121,7 +122,7 @@ ms.locfileid: "84662840"
  [!code-csharp[Cancellation#5](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex9.cs#5)]
  [!code-vb[Cancellation#5](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex9.vb#5)]  
   
- В новом коде, предназначенном для .NET Framework 4, классы <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> и <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> обеспечивают поддержку новой инфраструктуры отмены в методах `Wait`. Вы можете передать этому методу <xref:System.Threading.CancellationToken>, и тогда это событие активируется и создает исключение <xref:System.OperationCanceledException>, когда поступает запрос на отмену.  
+Классы <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> и <xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType> обеспечивают поддержку инфраструктуры отмены в методах `Wait`. Вы можете передать этому методу <xref:System.Threading.CancellationToken>, и тогда это событие активируется и создает исключение <xref:System.OperationCanceledException>, когда поступает запрос на отмену.  
   
  [!code-csharp[Cancellation#6](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#6)]
  [!code-vb[Cancellation#6](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#6)]  
@@ -141,7 +142,7 @@ ms.locfileid: "84662840"
   
 - Если код библиотеки предоставляет отменяемые операции, он также должен предоставить общие методы, принимающие внешний токен отмены, чтобы пользовательский код мог запрашивать отмену.  
   
-- Если код библиотеки вызывает пользовательский код, он должен уметь обрабатывать исключение OperationCanceledException(externalToken) как *совместную отмену*, а не только как исключение сбоя.  
+- Если код библиотеки вызывает пользовательский код, он должен уметь обрабатывать исключение OperationCanceledException(externalToken) как *совместную отмену* , а не только как исключение сбоя.  
   
 - Пользовательские делегаты должны пытаться своевременно отвечать на запросы отмены от кода библиотеки.  
   

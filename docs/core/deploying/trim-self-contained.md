@@ -4,12 +4,12 @@ description: Сведения об обрезке автономных прил�
 author: jamshedd
 ms.author: jamshedd
 ms.date: 04/03/2020
-ms.openlocfilehash: 1ebcac51331407069e26b49e40bb6e071cefb752
-ms.sourcegitcommit: 261e0c98a111357692b3b63c596edf0cacf72991
+ms.openlocfilehash: bf38ffe4d47986ae78c6cf2b2e5ecb292411ba6c
+ms.sourcegitcommit: 6d09ae36acba0b0e2ba47999f8f1a725795462a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90770459"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92925289"
 ---
 # <a name="trim-self-contained-deployments-and-executables"></a>Обрезка автономных развертываний и исполняемых файлов
 
@@ -36,6 +36,39 @@ ms.locfileid: "90770459"
 <ItemGroup>
     <TrimmerRootAssembly Include="System.Security" />
 </ItemGroup>
+```
+
+### <a name="support-for-ssl-certificates"></a>Поддержка SSL-сертификатов
+
+Если ваше приложение, например приложение ASP.NET Core, загружает SSL-сертификаты, следует предотвратить обрезку сборок, которые помогают при загрузке SSL-сертификатов.
+
+Для ASP.NET Core 3.1 файл проекта можно обновить, включив следующее.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>...</PropertyGroup>
+  <!--Include the following for .aspnetcore 3.1-->
+  <ItemGroup>
+    <TrimmerRootAssembly Include="System.Net" />
+    <TrimmerRootAssembly Include="System.Net.Security" />
+    <TrimmerRootAssembly Include="System.Security" />
+  </ItemGroup>
+  ...
+</Project>
+```
+
+При использовании .NET 5.0 можно обновить файл проекта, включив следующее.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Web">
+ <PropertyGroup>...</PropertyGroup>
+ <!--Include the following for .net 5.0-->
+ <ItemGroup>
+    <TrimmerRootAssembly Include="System.Net.Security" />
+    <TrimmerRootAssembly Include="System.Security" />
+  </ItemGroup>
+  ...
+</Project>
 ```
 
 ## <a name="trim-your-app---cli"></a>Обрезка приложения с помощью CLI
@@ -87,7 +120,7 @@ Visual Studio создает многократно используемые п
     - В качестве значения параметра **Целевая среда выполнения** укажите платформу, на которую будет выполнена публикация.
     - Выберите **Обрезать неиспользуемые сборки (в предварительной версии)** .
 
-    Нажмите кнопку **Сохранить**, чтобы сохранить параметры и вернуться в диалоговое окно **Публикация**.
+    Нажмите кнопку **Сохранить** , чтобы сохранить параметры и вернуться в диалоговое окно **Публикация**.
 
     :::image type="content" source="media/trim-self-contained/visual-studio-publish-properties.png" alt-text="Диалоговое окно параметров профиля с выделенными параметрами для режима развертывания, целевой среды выполнения и обрезки неиспользуемых сборок.":::
 

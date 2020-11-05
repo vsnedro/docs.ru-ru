@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 703452492eb47c5720fdaad23a3e699585233419
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 787b0a04c5bf312ad3f3e7834664e70dae9678e0
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602816"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93136120"
 ---
 
 ### <a name="install-the-sdk"></a>Установка пакета SDK
@@ -17,13 +17,13 @@ sudo dnf install dotnet-sdk-2.0
 
 ### <a name="install-the-runtime"></a>Установка среды выполнения
 
-Среда выполнения .NET Core позволяет запускать приложения, созданные с помощью версии .NET Core без поддержки среды выполнения. Приведенные ниже команды позволяют установить среду выполнения ASP.NET Core, которая больше всего совместима с .NET Core. В терминале выполните приведенные ниже команды.
+Среда выполнения .NET Core позволяет запускать приложения, созданные с помощью версии .NET Core без поддержки среды выполнения. Приведенные ниже команды позволяют установить среду выполнения ASP.NET Core, которая больше всего совместима с .NET Core. В терминале выполните приведенные ниже команды.
 
 ```bash
 sudo dnf install aspnetcore-runtime-2.0
 ```
 
-В качестве альтернативы среде выполнения ASP.NET Core вы можете установить среду выполнения .NET Core без поддержки ASP.NET Core. Для этого в приведенной выше команде замените `aspnetcore-runtime-2.0` на `dotnet-runtime-2.0`.
+В качестве альтернативы среде выполнения ASP.NET Core вы можете установить среду выполнения .NET Core без поддержки ASP.NET Core. Для этого в приведенной выше команде замените `aspnetcore-runtime-2.0` на `dotnet-runtime-2.0`.
 
 ```bash
 sudo dnf install dotnet-runtime-2.0

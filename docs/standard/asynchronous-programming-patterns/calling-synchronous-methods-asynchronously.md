@@ -16,21 +16,21 @@ helpviewer_keywords:
 - WaitHandle class, code examples
 - asynchronous programming, status polling
 - polling asynchronous operation status
-- delegates [.NET Framework], asynchronous
+- delegates [.NET], asynchronous
 - synchronous calling in asynchronous manner
 - waiting for asynchronous calls
-- status information [.NET Framework], asynchronous operations
+- status information [.NET], asynchronous operations
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
-ms.openlocfilehash: ff2d30c00e7b6becb0c3ff910d825c2e9d6f78e3
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: d518e5f64096fde5c9b14222dc4fe0634e6bb7b1
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662645"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888897"
 ---
 # <a name="calling-synchronous-methods-asynchronously"></a>Асинхронный вызов синхронных методов
 
-В .NET Framework можно асинхронно вызывать любой метод. Для этого необходимо определить делегат с той же сигнатурой, что и у вызываемого метода. Среда CLR автоматически определяет для этого делегата методы `BeginInvoke` и `EndInvoke` с нужными сигнатурами.
+В .NET можно асинхронно вызывать любой метод. Для этого необходимо определить делегат с той же сигнатурой, что и у вызываемого метода. Среда CLR автоматически определяет для этого делегата методы `BeginInvoke` и `EndInvoke` с нужными сигнатурами.
 
 > [!NOTE]
 > Асинхронные вызовы делегатов, в частности методы `BeginInvoke` и `EndInvoke` , не поддерживаются в платформе .NET Compact Framework.

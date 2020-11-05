@@ -3,19 +3,19 @@ title: Реализация метода DisposeAsync
 description: Узнайте, как реализовать методы DisposeAsync и DisposeAsyncCore для выполнения асинхронной очистки ресурсов.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 10/26/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
 helpviewer_keywords:
 - DisposeAsync method
 - garbage collection, DisposeAsync method
-ms.openlocfilehash: 6ddfd860571d883e20fdb18985fe2bc2d9477dec
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 5aa82c507c22a4795f39267ac8f435599fb9cd92
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720287"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687725"
 ---
 # <a name="implement-a-disposeasync-method"></a>Реализация метода DisposeAsync
 
@@ -102,9 +102,34 @@ public async ValueTask DisposeAsync()
 
 ## <a name="stacked-usings"></a>Стекированные объявления using
 
-Когда вы создаете и используете несколько объектов, реализующих <xref:System.IAsyncDisposable>, стекирование операторов `using` в ошибочных условиях может предотвратить вызовы <xref:System.IAsyncDisposable.DisposeAsync>. Чтобы предотвратить потенциальную проблему, вы должны избегать стекирования и придерживаться следующего примера шаблона:
+Когда вы создаете и используете несколько объектов, реализующих <xref:System.IAsyncDisposable>, стекирование операторов `await using` с помощью <xref:System.Threading.Tasks.ValueTask.ConfigureAwait%2A> в ошибочных условиях может предотвратить вызовы <xref:System.IAsyncDisposable.DisposeAsync>. Чтобы метод <xref:System.IAsyncDisposable.DisposeAsync> вызывался всегда, следует избегать стекирования. В приведенных ниже трех примерах кода показаны допустимые шаблоны.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+### <a name="acceptable-pattern-one"></a>Допустимый шаблон 1
+
+:::code language="csharp" id="one" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+В предыдущем примере каждая асинхронная операция очистки явно ограничена блоком `await using`. Внешняя область определяется скобками. Так как `objOne` заключает `objTwo` в скобки, сначала удаляется `objTwo`, а затем `objOne`. У обоих экземпляров `IAsyncDisposable` методы <xref:System.IAsyncDisposable.DisposeAsync> имеют оператор await, благодаря чему выполняется асинхронная операция очистки. Вызовы вложены, а не стекированы.
+
+### <a name="acceptable-pattern-two"></a>Допустимый шаблон 2
+
+:::code language="csharp" id="two" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+В предыдущем примере каждая асинхронная операция очистки явно ограничена блоком `await using`. В конце каждого блока метод <xref:System.IAsyncDisposable.DisposeAsync> соответствующего экземпляра `IAsyncDisposable` имеет оператор await, благодаря чему выполняется асинхронная операция очистки. Вызовы являются последовательными, а не стекированы. В этом сценарии сначала удаляется `objOne`, а затем `objTwo`.
+
+### <a name="acceptable-pattern-three"></a>Допустимый шаблон 3
+
+:::code language="csharp" id="three" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+В предыдущем примере каждая асинхронная операция очистки явно ограничена телом содержащего метода. В конце внешнего блока экземпляры `IAsyncDisposable` выполняют асинхронные операции очистки. При этом они выполняются в порядке, обратном тому, в котором они были объявлены. Это означает, что `objTwo` удаляется перед `objOne`.
+
+### <a name="unacceptable-pattern"></a>Недопустимый шаблон
+
+Если в конструкторе `AnotherAsyncDisposable` возникает исключение, то `objOne` не удаляется надлежащим образом.
+
+:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+> [!TIP]
+> Избегайте такого шаблона, так как он может привести к непредвиденному поведению.
 
 ## <a name="see-also"></a>См. также
 

@@ -5,12 +5,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - PLINQ queries, how to iterate directories
 ms.assetid: 354e8ce3-35c4-431c-99ca-7661d1f3901b
-ms.openlocfilehash: abf31ea69af6a85140efb783959a9a586ef6a59e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5033cc24fce5fc17a950e4797de1ef4071e2b98a
+ms.sourcegitcommit: 6d09ae36acba0b0e2ba47999f8f1a725795462a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278003"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92925380"
 ---
 # <a name="how-to-iterate-file-directories-with-plinq"></a>Практическое руководство. Перебор каталогов с файлами с помощью PLINQ
 
@@ -35,7 +35,7 @@ ms.locfileid: "84278003"
   
  Если используется <xref:System.IO.Directory.GetFiles%2A>, следите за наличием нужных разрешений для всех каталогов в дереве. В противном случае создается исключение и результаты не возвращаются. При использовании <xref:System.IO.Directory.EnumerateDirectories%2A> в запросе PLINQ довольно трудно обрабатывать исключения ввода-вывода настолько мягко, чтобы можно было продолжить работу. Если код должен обрабатывать исключения с ошибками ввода-вывода или несанкционированного доступа, то мы рекомендуем применить другой подход, описанный в статье [Практическое руководство. Перебор каталогов с файлами с помощью параллельного класса](how-to-iterate-file-directories-with-the-parallel-class.md).  
   
- Если есть риск задержки при операциях ввода-вывода (например, при обращении к файлу по сети), попробуйте один из асинхронных подходов, которые описаны в статье [Библиотека параллельных задач и традиционное асинхронное программирование .NET Framework](tpl-and-traditional-async-programming.md) и [в этой записи блога](https://devblogs.microsoft.com/pfxteam/parallel-extensions-and-io/).  
+ Если есть риск задержки при операциях ввода-вывода (например, при обращении к файлу по сети), попробуйте один из асинхронных подходов, которые описаны в статье [TPL и традиционное асинхронное программирование .NET](tpl-and-traditional-async-programming.md) и в [этой записи блога](https://devblogs.microsoft.com/pfxteam/parallel-extensions-and-io/).  
   
 ## <a name="see-also"></a>См. также
 

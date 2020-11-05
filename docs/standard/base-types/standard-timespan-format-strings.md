@@ -12,18 +12,18 @@ helpviewer_keywords:
 - standard time interval format strings
 - standard format strings, time intervals
 - format specifiers, time intervals
-- time intervals [.NET Framework], formatting
-- time [.NET Framework], formatting
-- formatting [.NET Framework], time
+- time intervals [.NET], formatting
+- time [.NET], formatting
+- formatting [.NET], time
 - standard TimeSpan format strings
-- formatting [.NET Framework], time intervals
+- formatting [.NET], time intervals
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-ms.openlocfilehash: 31e4158d42d794e830d9acfe666729846c43a1ee
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 99529d480ca32cb8be1e2013ca4551534e10026b
+ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768122"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92888949"
 ---
 # <a name="standard-timespan-format-strings"></a>Строки стандартного формата TimeSpan
 
@@ -50,7 +50,7 @@ ms.locfileid: "84768122"
 ## <a name="the-constant-c-format-specifier"></a>Описатель постоянного ("c") формата.  
  Описатель формата "c" возвращает строковое представление значения <xref:System.TimeSpan> в следующем виде:  
   
- [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
+ [-][ *d*.] *hh* : *mm* : *ss* [. *fffffff* ]  
   
  Элементы в квадратных скобках ([и]) являются необязательными. Точка (.) и двоеточие (:) являются литеральными символами. В следующей таблице описываются остальные элементы.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "84768122"
 |*ss*|Количество секунд в диапазоне от "0" до "59".|  
 |*fffffff*|Необязательная доля секунды.  Это значение может входит в диапазон от "0000001» (от одной десятимиллионной секунды) до "9999999" (до 9 999 999 десятимиллионных секунды).|  
   
- В отличие от описателей формата "g" и "G" описатель формата "c" не учитывает язык и региональные параметры. Он создает строковое представление значения <xref:System.TimeSpan>, которое является инвариантным и общим для всех предыдущих версий платформы .NET Framework до выхода .NET Framework 4. c — это строка формата <xref:System.TimeSpan> по умолчанию. Метод <xref:System.TimeSpan.ToString?displayProperty=nameWithType> форматирует значение временного интервала с помощью строки формата c.  
+ В отличие от описателей формата "g" и "G" описатель формата "c" не учитывает язык и региональные параметры. Он создает строковое представление значения <xref:System.TimeSpan>, которое является инвариантным и общим для версий .NET Framework до версии 4. c — это строка формата <xref:System.TimeSpan> по умолчанию. Метод <xref:System.TimeSpan.ToString?displayProperty=nameWithType> форматирует значение временного интервала с помощью строки формата c.  
   
 > [!NOTE]
 > <xref:System.TimeSpan> также поддерживает строки стандартного формата "t" и "T", которые идентичны поведению строки стандартного формата "c".  
@@ -76,7 +76,7 @@ ms.locfileid: "84768122"
 ## <a name="the-general-short-g-format-specifier"></a>Описатель общего короткого ("g") формата  
  Описатель формата "g" <xref:System.TimeSpan> возвращает строковое представление значения <xref:System.TimeSpan> в компактной форме, включая только необходимые элементы. Представление имеет следующую форму:  
   
- [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
+ [-][ *d* :] *h* : *mm* : *ss* [. *FFFFFFF* ]  
   
  Элементы в квадратных скобках ([и]) являются необязательными. Двоеточие (:) является литеральным символом. В следующей таблице описываются остальные элементы.  
   
@@ -100,7 +100,7 @@ ms.locfileid: "84768122"
 ## <a name="the-general-long-g-format-specifier"></a>Описатель общего длинного ("G") формата  
  Описатель формата "G" <xref:System.TimeSpan> возвращает строковое представление значения <xref:System.TimeSpan> в длинной форме, которая всегда включает и дни, и доли секунд. Строка, которая является результатом описателя стандартного формата "G" имеет следующий вид:  
   
- [-]*d*:*hh*:*mm*:*ss*.*fffffff*  
+ [-] *d* : *hh* : *mm* : *ss*. *fffffff*  
   
  Элементы в квадратных скобках ([и]) являются необязательными. Двоеточие (:) является литеральным символом. В следующей таблице описываются остальные элементы.  
   

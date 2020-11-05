@@ -2,16 +2,16 @@
 title: Маршалинг типов — .NET
 description: Из этой статьи вы узнаете, как платформа .NET маршалирует ваши типы данных в собственное представление.
 ms.date: 01/18/2019
-ms.openlocfilehash: 91b8f3d6cb53fd7a0adea7ea9669e7459e81445f
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: bedaf49a5f7c5274f5e1bc7774490fec73651259
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706270"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188397"
 ---
 # <a name="type-marshaling"></a>Маршалинг типов
 
-**Маршалинг** — это процесс преобразования типов при переходе от управляемого кода к машинному.
+**Маршалинг**  — это процесс преобразования типов при переходе от управляемого кода к машинному.
 
 Необходимость в маршалинге вызвана различием типов в управляемом и неуправляемом коде. Например, в управляемом коде имеется `String`, а в неуправляемом строки могут иметь различный формат: Юникод, отличный от Юникода, с конечным символом NULL, ASCII и т. д. По умолчанию подсистема P/Invoke пытается выбрать правильное решение в зависимости от реакции на событие по умолчанию, описанной в этой статье. Однако в ситуациях, когда требуется дополнительный контроль, можно применить атрибут [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute), чтобы указать ожидаемый тип на стороне неуправляемого кода. Например, если строку нужно передать в виде строки ANSI с конечным символом NULL, это можно сделать следующим образом:
 
@@ -87,7 +87,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 | `bool`    | `VARIANT_BOOL`                 |
 | `StringBuilder` | `LPWSTR`                 |
 | `string`  | `BSTR`                         |
-| Тип делегатов | `_Delegate*` в .NET Framework. Не разрешены в .NET Core. |
+| Тип делегатов | `_Delegate*` в .NET Framework. Не разрешены в .NET Core и .NET 5 и более поздних версий. |
 | `System.Drawing.Color` | `OLECOLOR`        |
 | Массив .NET | `SAFEARRAY`                   |
 | `string[]` | `SAFEARRAY``BSTR`        |

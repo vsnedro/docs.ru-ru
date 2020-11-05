@@ -4,18 +4,19 @@ ms.date: 03/30/2017
 ms.technology: dotnet-standard
 helpviewer_keywords:
 - wait handles
-- threading [.NET Framework], Mutex class
+- threading [.NET], Mutex class
 - Mutex class, about Mutex class
-- threading [.NET Framework], cross-process synchronization
+- threading [.NET], cross-process synchronization
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
-ms.openlocfilehash: f9267bdd19a14995851f2689651c001815812912
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: ba31fff03cfffda7cf2a40a3a82b2222e8951035
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291179"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188995"
 ---
 # <a name="mutexes"></a>Mutexes
+
 Объект <xref:System.Threading.Mutex> можно использовать для получения монопольного доступа к ресурсу. Класс <xref:System.Threading.Mutex> использует больше системных ресурсов, чем класс <xref:System.Threading.Monitor>, но он может маршалироваться между доменами приложений, использоваться с несколькими ожиданиями и синхронизировать потоки в нескольких процессах. Сравнение механизмов управляемой синхронизации см. в разделе [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md).  
   
  Примеры кода см. в справочной документации по конструкторам <xref:System.Threading.Mutex.%23ctor%2A>.  
@@ -30,10 +31,7 @@ ms.locfileid: "84291179"
  Если поток владеет <xref:System.Threading.Mutex>, он может указывать этот же <xref:System.Threading.Mutex> в повторных запросах ожидания, не прерывая выполнение. Но в этом случае, чтобы отказаться от владения, потребуется освободить <xref:System.Threading.Mutex> столько же раз, сколько он был вызван.  
   
 ## <a name="abandoned-mutexes"></a>Брошенные мьютексы  
- Если поток завершается без освобождения <xref:System.Threading.Mutex>, мьютекс считается отмененным. Это часто указывает на серьезную ошибку программирования, поскольку ресурс, защищаемый мьютексом, может остаться в несогласованном состоянии. На платформе .NET Framework версии 2.0 в такой ситуации создается исключение <xref:System.Threading.AbandonedMutexException> в следующем потоке, который завладеет этим мьютексом.  
-  
-> [!NOTE]
-> На платформе .NET Framework версий 1.0 и 1.1 отмененный объект <xref:System.Threading.Mutex> переходит в сигнальное состояние, а владение переходит к следующему ожидающему потоку. Если отсутствуют потоки в состоянии ожидания, <xref:System.Threading.Mutex> остается в сигнальном состоянии. Исключение не возникает.  
+ Если поток завершается без освобождения <xref:System.Threading.Mutex>, мьютекс считается отмененным. Это часто указывает на серьезную ошибку программирования, поскольку ресурс, защищаемый мьютексом, может остаться в несогласованном состоянии. Исключение <xref:System.Threading.AbandonedMutexException> создается в следующем потоке, который завладеет этим мьютексом.
   
  В случае системного мьютекса брошенный мьютекс может указывать на то, что работа приложения была внезапно прекращена (например, с помощью диспетчера задач Windows).  
   
@@ -43,7 +41,8 @@ ms.locfileid: "84291179"
  Локальный мьютекс существует только в вашем процессе. Его может использовать любой поток в вашем процессе, имеющий ссылку на локальный объект <xref:System.Threading.Mutex>. Каждый объект <xref:System.Threading.Mutex> является отдельным локальным мьютексом.  
   
 ### <a name="access-control-security-for-system-mutexes"></a>Безопасность управления доступом для системных мьютексов  
- Платформа .NET Framework версии 2.0 позволяет запрашивать и настраивать безопасность управления доступом Windows для именованных системных объектов. Системные мьютексы рекомендуется защищать с момента создания, поскольку системные объекты глобальны, а значит, могут быть заблокированы не вашим кодом.  
+
+Платформа .NET позволяет запрашивать и настраивать безопасность управления доступом Windows для именованных системных объектов. Системные мьютексы рекомендуется защищать с момента создания, поскольку системные объекты глобальны, а значит, могут быть заблокированы не вашим кодом.  
   
  Сведения о защите и управлении доступом для мьютексов вы найдете в описаниях классов <xref:System.Security.AccessControl.MutexSecurity> и <xref:System.Security.AccessControl.MutexAccessRule>, перечисления <xref:System.Security.AccessControl.MutexRights>, методов <xref:System.Threading.Mutex.GetAccessControl%2A>, <xref:System.Threading.Mutex.SetAccessControl%2A> и <xref:System.Threading.Mutex.OpenExisting%2A> класса <xref:System.Threading.Mutex> и описании конструктора <xref:System.Threading.Mutex.%23ctor%28System.Boolean%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.MutexSecurity%29>.  
   

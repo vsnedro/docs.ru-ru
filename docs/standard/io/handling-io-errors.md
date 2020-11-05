@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 45f3951b727d3b615d8384541ff169e8840acab0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bd7112b3052f246a01e4a36d6d425b37cb6174dd
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599806"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188046"
 ---
 # <a name="handling-io-errors-in-net"></a>Обработка ошибок ввода-вывода в .NET
 
@@ -46,7 +46,7 @@ ms.locfileid: "84599806"
 
 По причине зависимости от операционной системы иногда идентичные условия (например, отсутствие указанного каталога) могут создавать в методах ввода-вывода любое исключение из класса ввода-вывода. Это означает, что при вызове интерфейсов API ввода-вывода ваш код должн быть готов обработать все такие исключения или большую их часть, как показано в следующей таблице:
 
-| Тип исключения | .NET Core | .NET Framework |
+| Тип исключения | .NET Core и .NET 5 или более поздней версии | .NET Framework |
 |---|---|---|
 | <xref:System.IO.IOException> | Да | Да |
 | <xref:System.IO.FileNotFoundException> | Да | Да |

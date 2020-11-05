@@ -8,12 +8,12 @@ helpviewer_keywords:
 - threading [.NET], synchronizing threads
 - managed threading
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-ms.openlocfilehash: 4d528c54816961caa251ce054abf2c6cf07e9d01
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 63ee85f3d8bab865ce34566ec381d23676b27991
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84769110"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188592"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>Синхронизация данных для многопоточности
 
@@ -25,7 +25,7 @@ ms.locfileid: "84769110"
   
 - Синхронизация вручную. Вы можете использовать объекты синхронизации, предоставляемые библиотекой классов .NET. См. статью [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md), в которой обсуждается класс <xref:System.Threading.Monitor>.  
   
-- Синхронизированные контексты. Для приложений .NET Framework и Xamarin вы можете использовать <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> для реализации простой автоматической синхронизации для объектов <xref:System.ContextBoundObject>.  
+- Синхронизированные контексты. Для приложений .NET Framework и Xamarin вы можете использовать <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> для реализации простой автоматической синхронизации объектов <xref:System.ContextBoundObject>.  
   
 - Классы коллекции в пространстве имен <xref:System.Collections.Concurrent?displayProperty=nameWithType>. Эти классы предоставляют встроенные синхронизированные операции добавления и удаления. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](../collections/thread-safe/index.md).  
   
@@ -62,7 +62,7 @@ ms.locfileid: "84769110"
 ### <a name="compiler-support"></a>Поддержка компилятора  
  Visual Basic и C# поддерживают ключевое слово языка для блокировки объекта с помощью <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> и <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>. Visual Basic поддерживает оператор [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md), а C# поддерживает оператор [lock](../../csharp/language-reference/keywords/lock-statement.md).  
   
- В обоих случаях, если в коде блока возникает исключение, блокировка, введенная оператором **lock** или **SyncLock**, автоматически снимается. Компиляторы C# и Visual Basic выдают блок **try**/**finally** с **Monitor.Enter** в начале оператора try и **Monitor.Exit** в блоке **finally**. Если исключение возникает в блоке **lock** или **SyncLock**, запускается обработчик **finally**, позволяющий выполнить очистку.  
+ В обоих случаях, если в коде блока возникает исключение, блокировка, введенная оператором **lock** или **SyncLock** , автоматически снимается. Компиляторы C# и Visual Basic выдают блок **try**/**finally** с **Monitor.Enter** в начале оператора try и **Monitor.Exit** в блоке **finally**. Если исключение возникает в блоке **lock** или **SyncLock** , запускается обработчик **finally** , позволяющий выполнить очистку.  
   
 ## <a name="synchronized-context"></a>Синхронизированные контексты  
 

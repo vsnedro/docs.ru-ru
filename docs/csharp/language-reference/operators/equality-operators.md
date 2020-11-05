@@ -1,7 +1,7 @@
 ---
 title: Операторы равенства. Справочник по C#
 description: Из этой статьи вы узнаете об операторах сравнения на равенство и типах равенства в C#.
-ms.date: 06/26/2019
+ms.date: 10/30/2020
 author: pkulikov
 f1_keywords:
 - ==_CSharpKeyword
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - inequality operator [C#]
 - not equals operator [C#]
 - '!= operator [C#]'
-ms.openlocfilehash: 33215e2440b14fb888a6f0df5c220c891ebed0e2
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 39461157c33fea0effb5c8808ded1c9981900e17
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063219"
 ---
 # <a name="equality-operators-c-reference"></a>Операторы равенства (справочник по C#)
 
@@ -47,11 +47,19 @@ ms.locfileid: "88063098"
 
 ### <a name="reference-types-equality"></a>Равенство ссылочных типов
 
-По умолчанию два операнда ссылочного типа являются равными, если они ссылаются на один и тот же объект:
+По умолчанию два операнда ссылочного типа, отличные от записи, являются равными, если они ссылаются на один и тот же объект.
 
 [!code-csharp[reference type equality](snippets/shared/EqualityOperators.cs#ReferenceTypesEquality)]
 
 Как показано в примере, определяемые пользователем ссылочные типы поддерживают оператор `==` по умолчанию. Однако ссылочный тип может перегружать оператор `==`. Если ссылочный тип перегружает оператор `==`, воспользуйтесь методом <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType>, чтобы проверить, что две ссылки этого типа указывают на один и тот же объект.
+
+### <a name="record-types-equality"></a>Равенство типов записей
+
+[Типы записей](../../whats-new/csharp-9.md#record-types), доступные в C# 9.0 и более поздних версий, поддерживают операторы `==` и `!=`, которые по умолчанию обеспечивают семантику равенства значений. То есть два операнда записи равны, когда оба они равны `null` или равны соответствующие значения всех полей и автоматически реализуемых свойств.
+
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
+
+Как показано в предыдущем примере, в случае с элементами ссылочного типа, отличными от записей, сравниваются их ссылочные значения, а не экземпляры, на которые они ссылаются.
 
 ### <a name="string-equality"></a>Равенство строк
 
@@ -85,9 +93,17 @@ ms.locfileid: "88063098"
 
 Определяемый пользователем тип может [перегружать](operator-overloading.md) операторы `==` и `!=`. Если тип перегружает один из двух операторов, он должен также перегружать и другой.
 
+Тип записи не может перегружать операторы `==` и `!=` явным образом. Если необходимо изменить поведение операторов `==` и `!=` для типа записи `T`, реализуйте метод <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> со следующей сигнатурой.
+
+```csharp
+public virtual bool Equals(T? other);
+```
+
 ## <a name="c-language-specification"></a>Спецификация языка C#
 
 Дополнительные сведения см. в разделе [Операторы отношения и проверки типа](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) в статье по [спецификации языка C#](~/_csharplang/spec/introduction.md).
+
+Дополнительные сведения о равенстве типов записей см. в разделе [Элементы равенства](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) [предложения функции записей](~/_csharplang/proposals/csharp-9.0/records.md).
 
 ## <a name="see-also"></a>См. также
 

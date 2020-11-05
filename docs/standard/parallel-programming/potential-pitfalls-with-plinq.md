@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, pitfalls
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
-ms.openlocfilehash: b4d58734fba4b834d5f5819a6bf19da0b7b7e8db
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 012ac4078c1e2f17d6eef88ee295b11161a0e24a
+ms.sourcegitcommit: 6d09ae36acba0b0e2ba47999f8f1a725795462a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84285317"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92925276"
 ---
 # <a name="potential-pitfalls-with-plinq"></a>Потенциальные ошибки, связанные с PLINQ
 
@@ -62,7 +62,7 @@ a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
 
 ## <a name="limit-calls-to-thread-safe-methods"></a>Ограничение вызовов потокобезопасных методов
 
-Большинство статических методов на платформе .NET Framework безопасны для потоков и могут вызываться из нескольких потоков одновременно. Но даже в этих случаях соответствующая синхронизация может значительно замедлить запрос.
+Большинство статических методов в .NET потокобезопасны и могут вызываться из нескольких потоков одновременно. Но даже в этих случаях соответствующая синхронизация может значительно замедлить запрос.
 
 > [!NOTE]
 > Вы можете проверить это самостоятельно, добавив в запросы несколько вызовов <xref:System.Console.WriteLine%2A>. Несмотря на то, что этот метод часто приводится в демонстрационных примерах, его не следует использовать в запросах PLINQ.

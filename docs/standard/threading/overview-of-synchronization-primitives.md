@@ -8,12 +8,12 @@ helpviewer_keywords:
 - threading [.NET],synchronizing threads
 - managed threading
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
-ms.openlocfilehash: 7347c9b40f150febc6a163ae3aa3267123ea0e9d
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: d5ae0fe5813952742950582a4282cd1c6ab6a870
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739373"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93188982"
 ---
 # <a name="overview-of-synchronization-primitives"></a>Общие сведения о примитивах синхронизации
 
@@ -32,13 +32,13 @@ ms.locfileid: "81739373"
 - <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType>, который является производным от <xref:System.Threading.EventWaitHandle> и при получении сигнала автоматически сбрасывается в сигнальное состояние после освобождения одиночного потока в состоянии ожидания.
 - <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, который является производным от <xref:System.Threading.EventWaitHandle> и при получении сигнала остается в сигнальном состоянии до вызова метода <xref:System.Threading.EventWaitHandle.Reset%2A>.
 
-Так как <xref:System.Threading.WaitHandle> наследует <xref:System.MarshalByRefObject?displayProperty=nameWithType>, в .NET Framework эти типы можно использовать для синхронизации действий потоков за пределами доменов приложений.
+Так как <xref:System.Threading.WaitHandle> наследует <xref:System.MarshalByRefObject?displayProperty=nameWithType>, в .NET Framework эти типы можно использовать для синхронизации действий потоков за пределами доменов приложений.
 
-В .NET Framework и .NET Core некоторые из этих типов могут быть именованными дескрипторами синхронизации системы, которые видны в операционной системе и могут использоваться для синхронизации между процессами:
+В .NET Framework, .NET Core и .NET 5 или более поздней версии некоторые из этих типов могут быть именованными дескрипторами синхронизации системы, которые видны в операционной системе и могут использоваться для синхронизации между процессами.
 
-- <xref:System.Threading.Mutex> (.NET Framework и .NET Core);
-- <xref:System.Threading.Semaphore> (.NET Framework и .NET Core в Windows);
-- <xref:System.Threading.EventWaitHandle> (.NET Framework и .NET Core в Windows).
+- <xref:System.Threading.Mutex>
+- <xref:System.Threading.Semaphore> (в Windows)
+- <xref:System.Threading.EventWaitHandle> (в Windows)
 
 Дополнительные сведения см. в справочной документации по API <xref:System.Threading.WaitHandle>.
 

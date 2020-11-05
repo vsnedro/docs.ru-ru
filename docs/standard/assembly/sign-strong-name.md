@@ -5,19 +5,19 @@ ms.date: 08/20/2019
 helpviewer_keywords:
 - strong-named assemblies, signing with strong names
 - signing assemblies
-- assemblies [.NET Framework], signing
-- assemblies [.NET Framework], strong-named
+- assemblies [.NET], signing
+- assemblies [.NET], strong-named
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
 dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: d4888a12ac0494ca34eac3553a5374c3517fee38
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5192f7f372b9ef7927930c3599aebc6fca9f1f0f
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378618"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687651"
 ---
 # <a name="how-to-sign-an-assembly-with-a-strong-name"></a>Практическое руководство. Подписывание сборки строгим именем
 
@@ -28,7 +28,7 @@ ms.locfileid: "83378618"
   
 - С использованием **Подписывание** в диалоговом окне **Свойства** проекта в Visual Studio. Это самый простой и удобный способ подписать сборку строгим именем.  
   
-- С использованием [компоновщика сборок (Al.exe)](../../framework/tools/al-exe-assembly-linker.md), который связывает модуль кода .NET Framework (*NETMODULE*-файл) с файлом ключа.  
+- С использованием [компоновщика сборок (Al.exe)](../../framework/tools/al-exe-assembly-linker.md), который связывает модуль кода .NET Framework ( *NETMODULE* -файл) с файлом ключа.  
   
 - С использованием атрибутов сборки, позволяющих вставить в код данные строгого имени. Можно использовать либо <xref:System.Reflection.AssemblyKeyFileAttribute> , либо <xref:System.Reflection.AssemblyKeyNameAttribute> в зависимости от того, где находится используемый файл ключа.  
   
@@ -38,13 +38,13 @@ ms.locfileid: "83378618"
   
 ## <a name="create-and-sign-an-assembly-with-a-strong-name-by-using-visual-studio"></a>Создание и подпись сборки строгим именем с помощью Visual Studio  
   
-1. В **обозревателе решений**откройте контекстное меню проекта и выберите **Свойства**.  
+1. В **обозревателе решений** откройте контекстное меню проекта и выберите **Свойства**.  
   
 2. Перейдите на вкладку **Подписывание** .  
   
 3. Выберите поле **Подписать сборку** .  
   
-4. В поле **Выберите файл ключа строгого имени** нажмите кнопку **Обзор**, после чего выберите файл ключа. Чтобы создать файл ключа, выберите **Создать** и введите его имя в диалоговом окне **Создание ключа строгого имени**.  
+4. В поле **Выберите файл ключа строгого имени** нажмите кнопку **Обзор** , после чего выберите файл ключа. Чтобы создать файл ключа, выберите **Создать** и введите его имя в диалоговом окне **Создание ключа строгого имени**.  
   
 > [!NOTE]
 > Чтобы [отложить подпись сборки](delay-sign.md), выберите файл открытого ключа.  
@@ -53,13 +53,13 @@ ms.locfileid: "83378618"
   
 В [командной строке разработчика для Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md) введите следующую команду:  
 
-**al** **/out:** \<*assemblyName*>  *\<moduleName>* **/keyfile:** \<*keyfileName*>  
+**al** **/out:** \<*assemblyName*> *\<moduleName>* **/keyfile:** \<*keyfileName*>  
 
 Где:  
 
-- *assemblyName* — это имя строго подписанной сборки (файл *DLL* или *EXE*), которая будет создана компоновщиком сборок.  
+- *assemblyName* — это имя строго подписанной сборки (файл *DLL* или *EXE* ), которая будет создана компоновщиком сборок.  
   
-- *moduleName* — это имя модуля кода .NET Framework (*NETMODULE*-файла), который содержит один или несколько типов. *NETMODULE*-файл можно создать путем компиляции кода с параметром `/target:module` в C# или Visual Basic.
+- *moduleName* — это имя модуля кода .NET Framework ( *NETMODULE* -файла), который содержит один или несколько типов. *NETMODULE* -файл можно создать путем компиляции кода с параметром `/target:module` в C# или Visual Basic.
   
 - *keyfileName* — это имя контейнера или файла, содержащего пару ключей. Компоновщик сборок интерпретирует относительный путь с точки зрения текущего каталога.  
 
@@ -80,7 +80,7 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
    > [!NOTE]
    > Компиляторы C# и Visual Basic выдают предупреждения (CS1699 и BC41008, соответственно), если в исходном коде встречается <xref:System.Reflection.AssemblyKeyFileAttribute> или <xref:System.Reflection.AssemblyKeyNameAttribute> . Эти предупреждения можно игнорировать.  
 
-В следующем примере кода используется атрибут <xref:System.Reflection.AssemblyKeyFileAttribute> с файлом ключа *keyfile.snk*, который находится в том же каталоге, где компилируется сборка.  
+В следующем примере кода используется атрибут <xref:System.Reflection.AssemblyKeyFileAttribute> с файлом ключа *keyfile.snk* , который находится в том же каталоге, где компилируется сборка.  
 
 ```cpp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")];

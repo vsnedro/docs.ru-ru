@@ -9,12 +9,12 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, introduction to
 ms.assetid: eaa720d8-8999-4eb7-8df5-3c19ca61cad0
-ms.openlocfilehash: 9dbc4fde3f72d01aee91978ed5cb0baf0895de26
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 37414c7963a3803518b41a5c6d262740313e2b37
+ms.sourcegitcommit: 6d09ae36acba0b0e2ba47999f8f1a725795462a2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662463"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92925354"
 ---
 # <a name="introduction-to-plinq"></a>Введение в PLINQ
 
@@ -109,7 +109,7 @@ Parallel LINQ (PLINQ) является параллельной реализац
 
 ## <a name="cancellation"></a>Отмена
 
-PLINQ интегрирован с типами отмены в .NET Framework 4. (Дополнительные сведения см. в разделе [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md).) Это значит, что в отличие от последовательных запросов LINQ to Objects запросы PLINQ можно отменять. Чтобы создать запрос PLINQ с возможностью отмены, примените в запросе оператор <xref:System.Linq.ParallelEnumerable.WithCancellation%2A> и предоставьте ему экземпляр <xref:System.Threading.CancellationToken> в качестве аргумента. Когда свойство <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> для маркера примет значение TRUE, PLINQ заметит это и остановит обработку всех потоков, а затем создаст исключение <xref:System.OperationCanceledException>.
+PLINQ интегрирован с типами отмены в .NET. (Дополнительные сведения см. в разделе [Отмена в управляемых потоках](../threading/cancellation-in-managed-threads.md).) Это значит, что в отличие от последовательных запросов LINQ to Objects запросы PLINQ можно отменять. Чтобы создать запрос PLINQ с возможностью отмены, примените в запросе оператор <xref:System.Linq.ParallelEnumerable.WithCancellation%2A> и предоставьте ему экземпляр <xref:System.Threading.CancellationToken> в качестве аргумента. Когда свойство <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> для маркера примет значение TRUE, PLINQ заметит это и остановит обработку всех потоков, а затем создаст исключение <xref:System.OperationCanceledException>.
 
 Существует вероятность, что запрос PLINQ продолжит обработку некоторых элементов после того, как будет задан маркер отмены.
 
