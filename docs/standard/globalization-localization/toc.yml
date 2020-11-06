@@ -12,16 +12,15 @@
     - name: Операции со строками без учета языка и региональных параметров
       href: culture-insensitive-string-operations.md
       items:
-        - name: 'Выполнение строковых операций, не зависящих от языка и региональных параметров'
+        - name: Обзор
           href: performing-culture-insensitive-string-operations.md
-          items:
-            - name: Сравнения строк
-              href: performing-culture-insensitive-string-comparisons.md
-            - name: Изменения регистра
-              href: performing-culture-insensitive-case-changes.md
-            - name: Строковые операции в коллекциях
-              href: performing-culture-insensitive-string-operations-in-collections.md
-            - name: Строковые операции в массивах
-              href: performing-culture-insensitive-string-operations-in-arrays.md
+        - name: Сравнения строк
+          href: performing-culture-insensitive-string-comparisons.md
+        - name: Изменения регистра
+          href: performing-culture-insensitive-case-changes.md
+        - name: Строковые операции в коллекциях
+          href: performing-culture-insensitive-string-operations-in-collections.md
+        - name: Строковые операции в массивах
+          href: performing-culture-insensitive-string-operations-in-arrays.md
     - name: Рекомендации по разработке международных приложений
       href: best-practices-for-developing-world-ready-apps.md
