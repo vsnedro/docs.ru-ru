@@ -3,12 +3,12 @@ title: Неподдерживаемые API в .NET Core и .NET версии 
 titleSuffix: ''
 description: Узнайте, какие интерфейсы API .NET всегда вызывают исключение в .NET Core и .NET 5.0 и более поздних версиях.
 ms.date: 10/13/2020
-ms.openlocfilehash: 0164ebff51de82d548a02f9fde754c1052a9c2b5
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 51d73557a48910d9cb1c4d3cdced34dfe4d849d8
+ms.sourcegitcommit: 6bef8abde346c59771a35f4f76bf037ff61c5ba3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92159343"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94329785"
 ---
 # <a name="apis-that-always-throw-exceptions-on-net-core-and-net-5"></a>API, которые всегда создают исключения в .NET Core и .NET версии 5 и более поздних
 
@@ -223,7 +223,7 @@ ms.locfileid: "92159343"
 
 | Участник | Платформы, которые вызывают исключение |
 | - | - |
-| <xref:System.Security.Claims.ClaimsPrincipal.%23ctor> | Все |
+| <xref:System.Security.Claims.ClaimsPrincipal.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | Все |
 | <xref:System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | Все |
 | <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Runtime.Serialization.SerializationInfo)> | Все |
 | <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | Все |

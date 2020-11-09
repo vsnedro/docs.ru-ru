@@ -2,12 +2,12 @@
 title: Команда dotnet
 description: Узнайте о команде dotnet (универсальном драйвере для CLI .NET Core) и о том, как ее использовать.
 ms.date: 02/13/2020
-ms.openlocfilehash: 4476dcf36455e0dc1b89712409818cf7e0352f2c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4e182e1b8dff725c479297f7f1587ceaccf2942f
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537669"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281627"
 ---
 # <a name="dotnet-command"></a>Команда dotnet
 
@@ -262,7 +262,7 @@ dotnet myapp.dll
 
   Указывает расположение сред выполнения .NET Core, если оно отличается от задаваемого по умолчанию. В ОС Windows по умолчанию используется расположение `C:\Program Files\dotnet`. В ОС Linux и macOS по умолчанию используется расположение `/usr/share/dotnet`. Эта переменная среды используется только при запуске приложений с помощью созданных исполняемых файлов (apphost). При запуске 32-разрядного исполняемого файла в 64-разрядной ОС вместо нее используется `DOTNET_ROOT(x86)`.
 
-- `DOTNET_PACKAGES`
+- `NUGET_PACKAGES`
 
   Папка глобальных пакетов. Если значение не задано, то по умолчанию в Unix используется `~/.nuget/packages`, а в Windows — `%userprofile%\.nuget\packages`.
 
