@@ -4,12 +4,12 @@ description: Узнайте, как F# Interactive (dotnet fsi) использ�
 ms.date: 10/31/2020
 f1_keywords:
 - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
-ms.openlocfilehash: ba9111efccceca03fda43ff11c3f111610541595
-ms.sourcegitcommit: ffd4d5e824db6c5f0c3521c0e802fd9e8f0edcbe
+ms.openlocfilehash: 89570a54ecebe625a1612e4b97b01c3693e4707c
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342687"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400870"
 ---
 # <a name="interactive-programming-with-f"></a>Интерактивное программирование с помощью F\#
 
@@ -204,7 +204,7 @@ from
 fsi
 ```
 
-Обратите внимание, что для доступа к одним аргументам также можно использовать `System.Environment.GetCommandLineArgs()`.
+Кроме того, для доступа к одним и тем же аргументам вы можете использовать `System.Environment.GetCommandLineArgs()`.
 
 ## <a name="f-interactive-directive-reference"></a>Справочник по директивам F# Interactive
 
