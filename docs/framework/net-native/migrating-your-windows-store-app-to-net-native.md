@@ -2,12 +2,12 @@
 title: Миграция приложения для магазина Windows в машинный код .NET
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: cef985200efaf2ed7488d5e99394a5f01cc38594
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ee17e50590a80d8973197b46910d5e22296c265f
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556932"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440898"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Перенос приложения из Магазина Windows в .NET Native
 
@@ -208,7 +208,9 @@ ms.locfileid: "90556932"
 - Заголовок `SetCookie2` в ответах игнорируется как устаревший.
 
 <a name="Interop"></a>
+
 ### <a name="interop-differences"></a>Различия взаимодействия
+
  **Устаревшие интерфейсы API**
 
  Не рекомендуется использовать несколько редко применяемых API-интерфейсов для взаимодействия с управляемым кодом. При использовании с .NET Native эти API-интерфейсы могут вызывать <xref:System.NotImplementedException> <xref:System.PlatformNotSupportedException> исключение или или привести к ошибке компилятора. В приложениях .NET для магазина Windows эти API-интерфейсы отмечены как устаревшие, хотя их вызов создает предупреждение компилятора, а не ошибку компилятора.
@@ -661,9 +663,9 @@ Visual Basic в настоящее время не поддерживается 
 
 Включение .NET Native в библиотеке модульных тестов для проекта приложений Магазина Windows не поддерживается и приводит к сбою сборки проекта.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Начало работы](getting-started-with-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Общие сведения о приложениях .NET для Магазина Windows](/previous-versions/windows/apps/br230302(v=vs.140))
-- [Поддержка платформы .NET Framework для приложений магазина Windows и среды выполнения Windows](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [Поддержка платформы .NET Framework для приложений магазина Windows и среды выполнения Windows](../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
