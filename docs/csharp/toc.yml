@@ -48,6 +48,8 @@
               href: tutorials/intro-to-csharp/object-oriented-programming.md
     - name: Подробнее об инструкциях верхнего уровня
       href: tutorials/exploration/top-level-statements.md
+    - name: Поиск закономерностей в объектах
+      href: tutorials/exploration/patterns-objects.md
     - name: "Обзор C#\_6"
       href: tutorials/exploration/csharp-6.yml
     - name: Интерполяция строк. Интерактивное руководство
@@ -224,7 +226,7 @@
     - name: Индекс статьи
       displayName: how to's
       href: how-to/index.md
-    - name: Синтаксический анализ строк с помощью `String.Split`
+    - name: Разделение строк на подстроки
       href: how-to/parse-strings-using-split.md
     - name: Объединение строк
       href: how-to/concatenate-multiple-strings.md
@@ -234,7 +236,7 @@
       href: how-to/modify-string-contents.md
     - name: Сравнение строк
       href: how-to/compare-strings.md
-    - name: 'Безопасное приведение с помощью сопоставления шаблонов, операторы is и as'
+    - name: 'Безопасное приведение с помощью сопоставления шаблонов, а также операторов as и is'
       href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: Пакет SDK для платформы компилятора .NET (API-интерфейсы Roslyn)
   items:
