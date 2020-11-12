@@ -1,0 +1,26 @@
+- name: Документация по библиотекам .NET для Интернета вещей
+  href: index.yml
+- name: Обзор
+  href: intro.md
+- name: "Краткое руководство (Sense\_HAT)"
+  href: quickstarts/sensehat.md
+- name: Учебники
+  expanded: true
+  items:
+    - name: Сигнал светодиодного индикатора
+      href: tutorials/blink-led.md
+    - name: Считывание с датчика условий окружающей среды
+      href: tutorials/temp-sensor.md
+    - name: Отображение текста на ЖК-дисплее
+      href: tutorials/lcd-display.md
+    - name: Считывание значений с аналогово-цифрового преобразователя
+      href: tutorials/adc.md
+- name: Практические руководства
+  expanded: true
+  items:
+    - name: Развертывание
+      href: deployment.md
+    - name: Отладка
+      href: debugging.md
+- name: Справочник по интерфейсам API
+  href: /dotnet/api?view=iot-dotnet-1.1
