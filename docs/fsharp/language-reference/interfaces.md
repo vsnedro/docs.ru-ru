@@ -2,12 +2,12 @@
 title: Интерфейсы
 description: 'Узнайте, как интерфейсы F # определяют наборы связанных элементов, реализуемых другими классами.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 36272b52fcff83e8e8a54ccc4e6ecd1252a91819
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 0cef2932045dae401f5aa069107815543457ca4a
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558131"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557055"
 ---
 # <a name="interfaces"></a>Интерфейсы
 
@@ -41,7 +41,7 @@ let class-name (argument-list) =
     member-list
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объявления интерфейсов похожи на объявления классов, за исключением того, что ни один член не реализован. Вместо этого все члены являются абстрактными, как указано ключевым словом `abstract` . Не предоставляется тело метода для абстрактных методов. Однако можно предоставить реализацию по умолчанию, включив отдельное определение члена в качестве метода вместе с `default` ключевым словом. Это эквивалентно созданию виртуального метода в базовом классе на других языках .NET. Такой виртуальный метод можно переопределить в классах, реализующих интерфейс.
 
@@ -100,6 +100,67 @@ type INumeric2 =
 Интерфейсы могут наследовать от одного или нескольких базовых интерфейсов.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2805.fs)]
+
+## <a name="implementing-interfaces-with-default-implementations"></a>Реализация интерфейсов с реализациями по умолчанию
+
+C# поддерживает определение интерфейсов с реализациями по умолчанию следующим образом:
+
+```csharp
+using System;
+
+namespace CSharp
+{
+    public interface MyDim
+    {
+        public int Z => 0;
+    }
+}
+```
+
+Они напрямую используются в F #:
+
+```fsharp
+open CSharp
+
+// You can implement the interface via a class
+type MyType() =
+    member _.M() = ()
+
+    interface MyDim
+
+let md = MyType() :> MyDim
+printfn $"DIM from C#: %d{md.Z}"
+
+// You can also implement it via an object expression
+let md' = { new MyDim }
+printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
+```
+
+Можно переопределить реализацию по умолчанию с помощью `override` , например переопределив любой виртуальный член.
+
+Все члены интерфейса, у которых нет реализации по умолчанию, по-прежнему должны быть явно реализованы.
+
+## <a name="implementing-the-same-interface-at-different-generic-instantiations"></a>Реализация того же интерфейса в различных универсальных экземплярах
+
+F # поддерживает реализацию того же интерфейса в различных универсальных экземплярах, таких как:
+
+```fsharp
+type IA<'T> =
+    abstract member Get : unit -> 'T
+
+type MyClass() =
+    interface IA<int> with
+        member x.Get() = 1
+    interface IA<string> with
+        member x.Get() = "hello"
+
+let mc = MyClass()
+let iaInt = mc :> IA<int>
+let iaString = mc :> IA<string>
+
+iaInt.Get() // 1
+iaString.Get() // "hello"
+```
 
 ## <a name="see-also"></a>См. также
 

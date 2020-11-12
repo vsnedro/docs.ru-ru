@@ -2,16 +2,18 @@
 title: 'Новые возможности в F # 5,0-F # Guide'
 description: 'Ознакомьтесь с обзором новых функций, доступных в F # 5,0.'
 ms.date: 11/06/2020
-ms.openlocfilehash: 0c4c9f42c63a1dc8c90213c43edbadd4061c132d
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 51d6dd2457ee9966a86d0d9ac686f2af15772999
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94445846"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557146"
 ---
 # <a name="whats-new-in-f-50"></a>Новые возможности F # 5,0
 
 В f # 5,0 добавлено несколько улучшений языка F # и F# Interactive. Он выпущен с **.NET 5**.
+
+Последнюю версию пакета SDK для .NET можно скачать на [странице загрузки .NET](https://dotnet.microsoft.com/download).
 
 ## <a name="get-started"></a>Начало работы
 
@@ -149,7 +151,6 @@ nameof op_Addition // "op_Addition"
 Для получения имени параметра типа требуется немного другой синтаксис:
 
 ```fsharp
-
 type C<'TType> =
     member _.TypeName = nameof<'TType>
 ```
@@ -228,16 +229,16 @@ F # 5,0 предоставляет поддержку среза с фиксир
 Чтобы проиллюстрировать это, рассмотрим следующий трехмерный массив:
 
 *z = 0*
-|кс\и|0|1|
-|---|-|-|
-|**0**|0|1|
-|**1**|2|3|
+| кс\и   | 0 | 1 |
+|-------|---|---|
+| **0** | 0 | 1 |
+| **1** | 2 | 3 |
 
 *z = 1*
-|кс\и|0|1|
-|---|-|-|
-|**0**|4|5|
-|**1**|6|7|
+| кс\и   | 0 | 1 |
+|-------|---|---|
+| **0** | 4 | 5 |
+| **1** | 6 | 7 |
 
 Что делать, если вы хотите извлечь срез `[| 4; 5 |]` из массива? Теперь это очень просто!
 
@@ -258,6 +259,23 @@ for z in 0..dim-1 do
 // Now let's get the [4;5] slice!
 m.[*, 0, 1]
 ```
+
+## <a name="f-quotations-improvements"></a>Усовершенствования в кавычках F #
+
+[Цитаты кода](../language-reference/code-quotations.md) F # теперь имеют возможность хранить сведения об ограничениях типов. Рассмотрим следующий пример.
+
+```fsharp
+open FSharp.Linq.RuntimeHelpers
+
+let eval q = LeafExpressionConverter.EvaluateQuotation q
+
+let inline negate x = -x
+// val inline negate: x: ^a ->  ^a when  ^a : (static member ( ~- ) :  ^a ->  ^a)
+
+<@ negate 1.0 @>  |> eval
+```
+
+Ограничение, созданное `inline` функцией, сохраняется в коде кутоатион. `negate`Теперь можно вычислить форму куотатед функции.
 
 ## <a name="applicative-computation-expressions"></a>Выражения вычисления аппликативе
 
