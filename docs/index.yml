@@ -11,12 +11,12 @@ metadata:
   author: BillWagner
   ms.author: wiwagn
   ms.date: 10/9/2020
-  ms.openlocfilehash: 0a173d85f5e7969831a2ace6aa860b6fde8cf579
-  ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+  ms.openlocfilehash: 65e2dbf0613a9bdd63bd8695f06b8c931e28268d
+  ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93064188"
+  ms.lasthandoff: 11/10/2020
+  ms.locfileid: "94441051"
 highlightedContent:
   items:
   - title: Скачать .NET
@@ -228,14 +228,14 @@ additionalContent:
         text: .NET для Apache Spark
     - title: Интернет вещей (IoT)
       links:
-      - url: https://channel9.msdn.com/Shows/On-NET/IoT-support-for-NET-Core
-        text: 'На платформе .NET: Сведения о поддержке технологий Интернета вещей в .NET Core'
-      - url: /archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
-        text: Кроссплатформенное программирование решений на основе технологий Интернета вещей с использованием .NET Core 3.0
-      - url: https://github.com/dotnet/iot
-        text: Библиотеки технологий Интернета вещей .NET Core
-      - url: https://www.nuget.org/packages/System.Device.Gpio
-        text: Пакет NuGet System.Device.Gpio
+      - url: /dotnet/iot/
+        text: Библиотеки .NET для Интернета вещей
+      - url: /dotnet/iot/quickstarts/sensehat
+        text: Начало работы за 5 минут
+      - url: /dotnet/iot/tutorials/blink-led
+        text: Сигнал светодиодного индикатора
+      - url: https://aka.ms/IoTNet101
+        text: Серия видео .NET IoT 101 (Основы Интернета вещей для .NET)
   - title: Справочники по языку и API
     summary: Поиск в справочной документации по API и языку .NET.
     items:

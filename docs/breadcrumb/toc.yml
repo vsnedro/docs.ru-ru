@@ -578,3 +578,6 @@ items:
               - name: Azure для разработчиков .NET
                 tocHref: /dotnet/azure/
                 topicHref: /dotnet/azure/index
+          - name: Библиотеки .NET для Интернета вещей
+            tocHref: /dotnet/iot/
+            topicHref: /dotnet/iot/index
