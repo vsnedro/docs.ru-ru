@@ -9,26 +9,26 @@ dev_langs:
 helpviewer_keywords:
 - strings [.NET], examples
 ms.assetid: 121d1eae-251b-44c0-8818-57da04b8215e
-ms.openlocfilehash: cc04f0c874b732668b4813f8325bd7060927f22a
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 659f01cc1d7ae03e12e83329e4fd2446b7512475
+ms.sourcegitcommit: ffd4d5e824db6c5f0c3521c0e802fd9e8f0edcbe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92889131"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93342622"
 ---
-# <a name="how-to-perform-basic-string-manipulations-in-net"></a><span data-ttu-id="be57d-103">Практическое руководство. Выполнение базовых операций со строками в .NET</span><span class="sxs-lookup"><span data-stu-id="be57d-103">How to: Perform Basic String Manipulations in .NET</span></span>
+# <a name="how-to-perform-basic-string-manipulations-in-net"></a><span data-ttu-id="80590-103">Практическое руководство. Выполнение базовых операций со строками в .NET</span><span class="sxs-lookup"><span data-stu-id="80590-103">How to: Perform Basic String Manipulations in .NET</span></span>
 
-<span data-ttu-id="be57d-104">В следующем примере некоторые методы, описанные в руководстве по [базовым операциям со строками](basic-string-operations.md), используются для создания класса, который выполняет обработку строк так же, как это происходит в реальном приложении.</span><span class="sxs-lookup"><span data-stu-id="be57d-104">The following example uses some of the methods discussed in the [Basic String Operations](basic-string-operations.md) topics to construct a class that performs string manipulations in a manner that might be found in a real-world application.</span></span> <span data-ttu-id="be57d-105">Класс `MailToData` хранит имя и адрес человека в отдельных свойствах и предоставляет способ объединения полей `City`, `State` и `Zip` в одну строку для отображения пользователю.</span><span class="sxs-lookup"><span data-stu-id="be57d-105">The `MailToData` class stores the name and address of an individual in separate properties and provides a way to combine the `City`, `State`, and `Zip` fields into a single string for display to the user.</span></span> <span data-ttu-id="be57d-106">Более того, данный класс позволяет пользователю вводить сведения о городе, области и почтовом индексе в одну строку. Приложение автоматически анализирует эту строку и вводит необходимые сведения в соответствующее свойство.</span><span class="sxs-lookup"><span data-stu-id="be57d-106">Furthermore, the class allows the user to enter the city, state, and ZIP Code information as a single string; the application automatically parses the single string and enters the proper information into the corresponding property.</span></span>  
-  
-<span data-ttu-id="be57d-107">В этом упрощенном примере используется консольное приложение с интерфейсом командной строки.</span><span class="sxs-lookup"><span data-stu-id="be57d-107">For simplicity, this example uses a console application with a command-line interface.</span></span>  
-  
-## <a name="example"></a><span data-ttu-id="be57d-108">Пример</span><span class="sxs-lookup"><span data-stu-id="be57d-108">Example</span></span>  
+<span data-ttu-id="80590-104">В следующем примере некоторые методы, описанные в руководстве по [базовым операциям со строками](basic-string-operations.md), используются для создания класса, который выполняет обработку строк так же, как это происходит в реальном приложении.</span><span class="sxs-lookup"><span data-stu-id="80590-104">The following example uses some of the methods discussed in the [Basic String Operations](basic-string-operations.md) topics to construct a class that performs string manipulations in a manner that might be found in a real-world application.</span></span> <span data-ttu-id="80590-105">Класс `MailToData` хранит имя и адрес человека в отдельных свойствах и предоставляет способ объединения полей `City`, `State` и `Zip` в одну строку для отображения пользователю.</span><span class="sxs-lookup"><span data-stu-id="80590-105">The `MailToData` class stores the name and address of an individual in separate properties and provides a way to combine the `City`, `State`, and `Zip` fields into a single string for display to the user.</span></span> <span data-ttu-id="80590-106">Кроме того, при использовании этого класса пользователь может указать город, область и почтовый индекс в виде одной строки.</span><span class="sxs-lookup"><span data-stu-id="80590-106">Furthermore, the class allows the user to enter the city, state, and zip code information as a single string.</span></span> <span data-ttu-id="80590-107">Приложение автоматически анализирует одну строку и вводит соответствующие сведения в соответствующее свойство.</span><span class="sxs-lookup"><span data-stu-id="80590-107">The application automatically parses the single string and enters the proper information into the corresponding property.</span></span>
+
+<span data-ttu-id="80590-108">В этом упрощенном примере используется консольное приложение с интерфейсом командной строки.</span><span class="sxs-lookup"><span data-stu-id="80590-108">For simplicity, this example uses a console application with a command-line interface.</span></span>
+
+## <a name="example"></a><span data-ttu-id="80590-109">Пример</span><span class="sxs-lookup"><span data-stu-id="80590-109">Example</span></span>
 
 [!code-csharp[Conceptual.String.BasicOps#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/basicops.cs#1)]
-[!code-vb[Conceptual.String.BasicOps#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/basicops.vb#1)]  
-  
-<span data-ttu-id="be57d-109">При выполнении предыдущего кода пользователю предлагается ввести его имя и адрес.</span><span class="sxs-lookup"><span data-stu-id="be57d-109">When the preceding code is executed, the user is asked to enter their name and address.</span></span> <span data-ttu-id="be57d-110">Приложение размещает сведения в соответствующих свойствах и отображает их для пользователя, создавая одну строку, в которой представлены сведения о городе, области и почтовом индексе.</span><span class="sxs-lookup"><span data-stu-id="be57d-110">The application places the information in the appropriate properties and displays the information back to the user, creating a single string that displays the city, state, and ZIP Code information.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="be57d-111">См. также</span><span class="sxs-lookup"><span data-stu-id="be57d-111">See also</span></span>
+[!code-vb[Conceptual.String.BasicOps#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/basicops.vb#1)]
 
-- [<span data-ttu-id="be57d-112">Базовые операции со строками в .NET Framework</span><span class="sxs-lookup"><span data-stu-id="be57d-112">Basic String Operations</span></span>](basic-string-operations.md)
+<span data-ttu-id="80590-110">При выполнении предыдущего кода пользователю предлагается ввести его имя и адрес.</span><span class="sxs-lookup"><span data-stu-id="80590-110">When the preceding code is executed, the user is asked to enter their name and address.</span></span> <span data-ttu-id="80590-111">Приложение размещает сведения в соответствующих свойствах и отображает их для пользователя, создавая одну строку, в которой представлены сведения о городе, области и почтовом индексе.</span><span class="sxs-lookup"><span data-stu-id="80590-111">The application places the information in the appropriate properties and displays the information back to the user, creating a single string that displays the city, state, and zip code information.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="80590-112">См. также</span><span class="sxs-lookup"><span data-stu-id="80590-112">See also</span></span>
+
+- [<span data-ttu-id="80590-113">Базовые операции со строками в .NET Framework</span><span class="sxs-lookup"><span data-stu-id="80590-113">Basic String Operations</span></span>](basic-string-operations.md)
