@@ -1,7 +1,7 @@
 ---
 title: Строки стандартных форматов даты и времени
 description: Узнайте, как использовать строку стандартного формата даты и времени для определения текстового представления значения даты и времени в .NET.
-ms.date: 03/30/2017
+ms.date: 11/05/2020
 ms.technology: dotnet-standard
 dev_langs:
 - csharp
@@ -14,35 +14,35 @@ helpviewer_keywords:
 - custom date and time format strings
 - formatting [.NET], time
 - date and time strings
-ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-ms.openlocfilehash: 36aaef2676383263b2009fd283f1671ef970f20e
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.custom: contperfq2
+ms.openlocfilehash: dc294322317560344a6e3cdba1dbe2cce4f6a3fd
+ms.sourcegitcommit: 6bef8abde346c59771a35f4f76bf037ff61c5ba3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92888637"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94329759"
 ---
 # <a name="standard-date-and-time-format-strings"></a>Строки стандартных форматов даты и времени
 
-Строка стандартного формата даты и времени использует один описатель формата для определения текстового представления значения даты и времени. Любая строка формата даты и времени, содержащая более одного символа, включая пробелы, интерпретируется как строка настраиваемого формата даты и времени. Дополнительные сведения см. в статье [Строки настраиваемых форматов даты и времени](custom-date-and-time-format-strings.md). Строку стандартного или пользовательского формата можно использовать двумя способами:
+Строка стандартного формата даты и времени использует один символ в качестве описателя формата для определения текстового представления <xref:System.DateTime> или значения <xref:System.DateTimeOffset>. Любая строка формата даты и времени, содержащая более одной буквы, включая пробелы, интерпретируется как строка [пользовательского формата даты и времени](custom-date-and-time-format-strings.md). Строку стандартного или пользовательского формата можно использовать двумя способами:
 
 - Для определения строки, являющейся результатом операции форматирования.
 
 - Для определения текстового представления значения даты и времени, которое можно преобразовать в значение <xref:System.DateTime> или <xref:System.DateTimeOffset> с помощью операции синтаксического анализа.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования**  — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
-
-Строки стандартного формата даты и времени могут использоваться как со значением <xref:System.DateTime>, так и со значением <xref:System.DateTimeOffset>.
+> Вы можете загрузить **служебную программу форматирования**  — приложение Windows Forms для .NET, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 [!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)]
 
-<a name="table"></a> В следующей таблице описаны спецификаторы стандартных форматов даты и времени. Если не указано иное, то описатель стандартного формата даты и времени выдает одинаковое строковое представление независимо от того, используется ли он со значением <xref:System.DateTime> или со значением <xref:System.DateTimeOffset>. Дополнительные сведения об использовании стандартных строк формата даты и времени см. в подразделе [Примечания](#Notes).
+## <a name="table-of-format-specifiers"></a>Таблица описателей формата
+
+<a name="table"></a> В следующей таблице описаны спецификаторы стандартных форматов даты и времени. Если не указано иное, то описатель стандартного формата даты и времени выдает одинаковое строковое представление независимо от того, используется ли он со значением <xref:System.DateTime> или со значением <xref:System.DateTimeOffset>. Дополнительные сведения об использовании стандартных строк формата даты и времени см. в разделе [Параметры панели управления](#control-panel-settings) и [Панель свойств DateTimeFormatInfo](#datetimeformatinfo-properties).
 
 |Описатель формата|Описание|Примеры|
 |----------------------|-----------------|--------------|
-|"d"|Короткий шаблон даты.<br /><br /> Дополнительные сведения см. в подразделе [Описатель короткого формата даты (d)](#ShortDate).|2009-06-15T13:45:30 -> 6/15/2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> 2009/06/15 (ja-JP)|
-|"D"|Полный шаблон даты.<br /><br /> Дополнительные сведения см. в подразделе [Описатель полного формата даты (D)](#LongDate).|2009-06-15T13:45:30 -> Monday, June 15, 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15 июня 2009 г. (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> Montag, 15. Juni 2009 (de-DE)|
+|"d"|Короткий шаблон даты.<br /><br /> Дополнительные сведения см. в подразделе [Описатель краткого формата даты ("d")](#ShortDate).|2009-06-15T13:45:30 -> 6/15/2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> 2009/06/15 (ja-JP)|
+|"D"|Полный шаблон даты.<br /><br /> Дополнительные сведения см. в подразделе [Описатель полного формата даты ("D")](#LongDate).|2009-06-15T13:45:30 -> Monday, June 15, 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15 июня 2009 г. (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> Montag, 15. Juni 2009 (de-DE)|
 |"f"|Полный шаблон даты и времени (короткий шаблон времени).<br /><br /> Дополнительная информация: [Описатель полного формата даты и краткого формата времени ("f")](#FullDateShortTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45 μμ (el-GR)|
 |"F"|Полный шаблон даты и времени (полный шаблон времени).<br /><br /> Дополнительная информация: [Описатель полного формата даты и полного формата времени ("F")](#FullDateLongTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45:30 μμ (el-GR)|
 |"g"|Общий шаблон даты и времени (короткий шаблон времени).<br /><br /> Дополнительная информация: [Описатель общего формата даты и краткого формата времени ("g")](#GeneralDateShortTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45 (zh-CN)|
@@ -51,7 +51,7 @@ ms.locfileid: "92888637"
 |"O", "o"|Шаблон обратного преобразования даты и времени.<br /><br /> Дополнительная информация: [Описатель формата обратного преобразования ("O", "o")](#Roundtrip).|Значения <xref:System.DateTime>:<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) --> 2009-06-15T13:45:30.0000000Z<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Unspecified) --> 2009-06-15T13:45:30.0000000<br /><br /> Значения <xref:System.DateTimeOffset>:<br /><br /> 2009-06-15T13:45:30-07:00 --> 2009-06-15T13:45:30.0000000-07:00|
 |"R", "r"|Шаблон RFC1123.<br /><br /> Дополнительная информация: [Описатель формата RFC1123 ("R", "r")](#RFC1123).|2009-06-15T13:45:30 -> Mon, 15 Jun 2009 20:45:30 GMT|
 |"s"|Сортируемый шаблон времени и даты.<br /><br /> Дополнительная информация: [Описатель сортируемого формата ("s")](#Sortable).|2009-06-15T13:45:30 (DateTimeKind.Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) -> 2009-06-15T13:45:30|
-|"t"|Короткий шаблон времени.<br /><br /> Дополнительная информация: [Описатель короткого формата времени ("t")](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
+|"t"|Короткий шаблон времени.<br /><br /> Дополнительная информация: [Описатель краткого формата времени ("t")](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
 |"T"|Полный шаблон времени.<br /><br /> Дополнительная информация: [Описатель полного формата времени ("T")](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
 |"u"|Универсальный сортируемый шаблон времени и даты.<br /><br /> Дополнительная информация: [Описатель универсального сортируемого формата ("u")](#UniversalSortable).|Со значением <xref:System.DateTime>: 2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z<br /><br /> Со значением <xref:System.DateTimeOffset>: 2009-06-15T13:45:30 -> 2009-06-15 20:45:30Z|
 |"U"|Универсальный полный шаблон даты и времени.<br /><br /> Дополнительная информация: [Описатель универсального полного формата ("U")](#UniversalFull).|2009-06-15T13:45:30 -> Monday, June 15, 2009 8:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 20:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 8:45:30 μμ (el-GR)|
@@ -98,9 +98,16 @@ ms.locfileid: "92888637"
 
 В следующих разделах представлены описатели стандартных форматов для значений <xref:System.DateTime> и <xref:System.DateTimeOffset>.
 
+## <a name="date-formats"></a>Форматы даты
+
+Эта группа содержит следующие форматы:
+
+- [Описатель краткого формата даты ("d")](#the-short-date-d-format-specifier).
+- [Описатель полного формата даты ("D")](#the-long-date-d-format-specifier).
+
 <a name="ShortDate"></a>
 
-## <a name="the-short-date-d-format-specifier"></a>Описатель короткого формата даты ("d")
+### <a name="the-short-date-d-format-specifier"></a>Описатель короткого формата даты ("d")
 
 Описатель стандартного формата "d" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A?displayProperty=nameWithType> для конкретного языка и региональных параметров. Например, строкой настраиваемого формата, возвращаемой свойством <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> для инвариантного языка и региональных параметров, будет строка "ММ/дд/гггг".
 
@@ -120,7 +127,7 @@ ms.locfileid: "92888637"
 
 <a name="LongDate"></a>
 
-## <a name="the-long-date-d-format-specifier"></a>Описатель полного формата даты ("D")
+### <a name="the-long-date-d-format-specifier"></a>Описатель полного формата даты ("D")
 
 Описатель стандартного формата "D" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "дддд, дд мммм гггг".
 
@@ -139,9 +146,23 @@ ms.locfileid: "92888637"
 
 [К таблице](#table)
 
+## <a name="date-and-time-formats"></a>Форматы даты и времени
+
+Эта группа содержит следующие форматы:
+
+- [Описатель полного формата даты и краткого формата времени ("f")](#the-full-date-short-time-f-format-specifier).
+- [Описатель полного формата даты и полного формата времени ("F")](#the-full-date-long-time-f-format-specifier).
+- [Описатель общего формата даты и краткого формата времени ("g")](#the-general-date-short-time-g-format-specifier).
+- [Описатель общего формата даты и полного формата времени ("G")](#the-general-date-long-time-g-format-specifier).
+- [Описатель формата обратного преобразования ("O", "o")](#the-round-trip-o-o-format-specifier).
+- [Описатель формата RFC1123 ("R", "r")](#the-rfc1123-r-r-format-specifier).
+- [Описатель сортируемого формата ("s")](#the-sortable-s-format-specifier).
+- [Описатель универсального сортируемого формата ("u")](#the-universal-sortable-u-format-specifier).
+- [Описатель универсального полного формата ("U")](#the-universal-full-u-format-specifier).
+
 <a name="FullDateShortTime"></a>
 
-## <a name="the-full-date-short-time-f-format-specifier"></a>Описатель полного формата даты и краткого формата времени ("f")
+### <a name="the-full-date-short-time-f-format-specifier"></a>Описатель полного формата даты и краткого формата времени ("f")
 
 Описатель стандартного формата "f" представляет сочетание полного формата даты ("D") и короткого формата времени ("t"), разделенных пробелом.
 
@@ -166,7 +187,7 @@ ms.locfileid: "92888637"
 
 <a name="FullDateLongTime"></a>
 
-## <a name="the-full-date-long-time-f-format-specifier"></a>Описатель полного формата даты и полного формата времени ("F")
+### <a name="the-full-date-long-time-f-format-specifier"></a>Описатель полного формата даты и полного формата времени ("F")
 
 Описатель стандартного формата "F" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "дддд, дд мммм гггг чч:мм:сс".
 
@@ -190,7 +211,7 @@ ms.locfileid: "92888637"
 
 <a name="GeneralDateShortTime"></a>
 
-## <a name="the-general-date-short-time-g-format-specifier"></a>Описатель общего формата даты и краткого формата времени ("g")
+### <a name="the-general-date-short-time-g-format-specifier"></a>Описатель общего формата даты и краткого формата времени ("g")
 
 Описатель стандартного формата "g" представляет сочетание краткого формата даты ("d") и краткого формата времени ("t"), разделенных пробелом.
 
@@ -214,7 +235,7 @@ ms.locfileid: "92888637"
 
 <a name="GeneralDateLongTime"></a>
 
-## <a name="the-general-date-long-time-g-format-specifier"></a>Описатель общего формата даты и полного формата времени ("G")
+### <a name="the-general-date-long-time-g-format-specifier"></a>Описатель общего формата даты и полного формата времени ("G")
 
 Описатель стандартного формата "G" представляет сочетание краткого формата даты ("d") и полного формата времени ("T"), разделенных пробелом.
 
@@ -236,29 +257,9 @@ ms.locfileid: "92888637"
 
 [К таблице](#table)
 
-<a name="MonthDay"></a>
-
-## <a name="the-month-m-m-format-specifier"></a>Описатель формата месяца ("M", "m")
-
-Описатель стандартного формата "M" или "m" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "мммм дд".
-
-В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки.
-
-|Свойство.|Описание|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>|Определяет общий формат результирующей строки.|
-|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>|Определяет переведенные названия месяцев, которые могут входить в результирующую строку.|
-
-В следующем примере описатель формата "m" используется для отображения значения даты и времени.
-
-[!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
-[!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]
-
-[К таблице](#table)
-
 <a name="Roundtrip"></a>
 
-## <a name="the-round-trip-o-o-format-specifier"></a>Описатель формата обратного преобразования ("O", "o")
+### <a name="the-round-trip-o-o-format-specifier"></a>Описатель формата обратного преобразования ("O", "o")
 
 Описатель формата обратного преобразования ("O", "o") представляет строку настраиваемого формата даты и времени, используя шаблон, который сохраняет данные о часовом поясе и возвращает строковое значение, соответствующее стандарту ISO 8601. Для значений <xref:System.DateTime> этот спецификатор формата предназначен для сохранения значений даты и времени вместе со свойством <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> в тексте. Форматированная строка может быть преобразована обратно с помощью метода <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> или <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>, если параметр `styles` имеет значение <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>.
 
@@ -290,7 +291,7 @@ ms.locfileid: "92888637"
 
 <a name="RFC1123"></a>
 
-## <a name="the-rfc1123-r-r-format-specifier"></a>Описатель формата RFC1123 ("R", "r")
+### <a name="the-rfc1123-r-r-format-specifier"></a>Описатель формата RFC1123 ("R", "r")
 
 Описатель стандартного формата "R" или "r" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=nameWithType>. Шаблон отражает определенный стандарт. Свойство предназначено только для чтения. Таким образом, оно не изменяется в зависимости от используемых региональных параметров или предоставленного поставщика формата. Строкой пользовательского формата является "ддд, дд ммм гггг чч':'мм':'сс 'GMT'". Когда используется этот спецификатор стандартного формата, операция форматирования или разбора всегда использует инвариантные региональные параметры.
 
@@ -313,7 +314,7 @@ ms.locfileid: "92888637"
 
 <a name="Sortable"></a>
 
-## <a name="the-sortable-s-format-specifier"></a>Описатель сортируемого формата ("s")
+### <a name="the-sortable-s-format-specifier"></a>Описатель сортируемого формата ("s")
 
 Описатель стандартного формата "s" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A?displayProperty=nameWithType>. Шаблон отражает определенный стандарт (ISO 8601). Свойство предназначено только для чтения. Таким образом, оно не изменяется в зависимости от используемых региональных параметров или предоставленного поставщика формата. Строкой пользовательского формата является "гггг'-'мм'-'дд'T'чч':'мм':'сс".
 
@@ -328,53 +329,9 @@ ms.locfileid: "92888637"
 
 [К таблице](#table)
 
-<a name="ShortTime"></a>
-
-## <a name="the-short-time-t-format-specifier"></a>Описатель короткого формата времени ("t")
-
-Описатель стандартного формата "t" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "чч:мм".
-
-Форматирование результирующей строки определяется сведениями о форматировании в указанном объекте <xref:System.Globalization.DateTimeFormatInfo>. В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки. Описатель настраиваемого формата, возвращаемый свойством <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> некоторых языков и региональных параметров, может использовать не все свойства.
-
-|Свойство.|Описание|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>|Определяет формат компонента времени результирующей строки.|
-|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Определяет строку, разделяющую компоненты времени — часы, минуты и секунды.|
-|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Определяет строку, указывающую на время в интервале от полуночи до полудня в 12-часовом формате указания времени.|
-|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Определяет строку, указывающую на время в интервале от полудня до полуночи в 12-часовом формате указания времени.|
-
-В следующем примере описатель формата "t" используется для отображения значения даты и времени.
-
-[!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
-[!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]
-
-[К таблице](#table)
-
-<a name="LongTime"></a>
-
-## <a name="the-long-time-t-format-specifier"></a>Описатель полного формата времени ("T")
-
-Описатель стандартного формата "T" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> для конкретного языка и региональных параметров. Например, строкой пользовательского формата для инвариантных региональных параметров является "чч:мм:сс".
-
-В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки. Описатель настраиваемого формата, возвращаемый свойством <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> некоторых языков и региональных параметров, может использовать не все свойства.
-
-|Свойство.|Описание|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>|Определяет формат компонента времени результирующей строки.|
-|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Определяет строку, разделяющую компоненты времени — часы, минуты и секунды.|
-|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Определяет строку, указывающую на время в интервале от полуночи до полудня в 12-часовом формате указания времени.|
-|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Определяет строку, указывающую на время в интервале от полудня до полуночи в 12-часовом формате указания времени.|
-
-В следующем примере описатель формата "T" используется для отображения значения даты и времени.
-
-[!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
-[!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]
-
-[К таблице](#table)
-
 <a name="UniversalSortable"></a>
 
-## <a name="the-universal-sortable-u-format-specifier"></a>Описатель универсального сортируемого формата ("u")
+### <a name="the-universal-sortable-u-format-specifier"></a>Описатель универсального сортируемого формата ("u")
 
 Описатель стандартного формата "u" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A?displayProperty=nameWithType>. Шаблон отражает определенный стандарт. Свойство предназначено только для чтения. Таким образом, оно не изменяется в зависимости от используемых региональных параметров или предоставленного поставщика формата. Строкой пользовательского формата является "гггг'-'мм'-'дд чч':'мм':'сс'Z'". Когда используется этот спецификатор стандартного формата, операция форматирования или разбора всегда использует инвариантные региональные параметры.
 
@@ -389,7 +346,7 @@ ms.locfileid: "92888637"
 
 <a name="UniversalFull"></a>
 
-## <a name="the-universal-full-u-format-specifier"></a>Описатель универсального полного формата ("U")
+### <a name="the-universal-full-u-format-specifier"></a>Описатель универсального полного формата ("U")
 
 Описатель стандартного формата "U" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A?displayProperty=nameWithType> для конкретного языка и региональных параметров. Этот шаблон совпадает с шаблоном "F". Тем не менее, значение <xref:System.DateTime> автоматически преобразуется в формат UTC до форматирования.
 
@@ -413,9 +370,87 @@ ms.locfileid: "92888637"
 
 [К таблице](#table)
 
+## <a name="time-formats"></a>Форматы времени
+
+Эта группа содержит следующие форматы:
+
+- [Описатель краткого формата времени ("t")](#the-short-time-t-format-specifier).
+- [Описатель полного формата времени ("T")](#the-long-time-t-format-specifier).
+
+<a name="ShortTime"></a>
+
+### <a name="the-short-time-t-format-specifier"></a>Описатель короткого формата времени ("t")
+
+Описатель стандартного формата "t" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "чч:мм".
+
+Форматирование результирующей строки определяется сведениями о форматировании в указанном объекте <xref:System.Globalization.DateTimeFormatInfo>. В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки. Описатель настраиваемого формата, возвращаемый свойством <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> некоторых языков и региональных параметров, может использовать не все свойства.
+
+|Свойство.|Описание|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>|Определяет формат компонента времени результирующей строки.|
+|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Определяет строку, разделяющую компоненты времени — часы, минуты и секунды.|
+|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Определяет строку, указывающую на время в интервале от полуночи до полудня в 12-часовом формате указания времени.|
+|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Определяет строку, указывающую на время в интервале от полудня до полуночи в 12-часовом формате указания времени.|
+
+В следующем примере описатель формата "t" используется для отображения значения даты и времени.
+
+[!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
+[!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]
+
+[К таблице](#table)
+
+<a name="LongTime"></a>
+
+### <a name="the-long-time-t-format-specifier"></a>Описатель полного формата времени ("T")
+
+Описатель стандартного формата "T" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> для конкретного языка и региональных параметров. Например, строкой пользовательского формата для инвариантных региональных параметров является "чч:мм:сс".
+
+В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки. Описатель настраиваемого формата, возвращаемый свойством <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> некоторых языков и региональных параметров, может использовать не все свойства.
+
+|Свойство.|Описание|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>|Определяет формат компонента времени результирующей строки.|
+|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Определяет строку, разделяющую компоненты времени — часы, минуты и секунды.|
+|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Определяет строку, указывающую на время в интервале от полуночи до полудня в 12-часовом формате указания времени.|
+|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Определяет строку, указывающую на время в интервале от полудня до полуночи в 12-часовом формате указания времени.|
+
+В следующем примере описатель формата "T" используется для отображения значения даты и времени.
+
+[!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
+[!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]
+
+[К таблице](#table)
+
+## <a name="partial-date-formats"></a>Частичные форматы даты
+
+Эта группа содержит следующие форматы:
+
+- [Описатель формата месяца ("M", "m")](#the-month-m-m-format-specifier).
+- [Описатель формата месяца года ("Y", "y")](#the-year-month-y-y-format-specifier).
+
+<a name="MonthDay"></a>
+
+### <a name="the-month-m-m-format-specifier"></a>Описатель формата месяца ("M", "m")
+
+Описатель стандартного формата "M" или "m" представляет строку настраиваемого формата даты и времени, определяемую текущим свойством <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A?displayProperty=nameWithType>. Например, строкой пользовательского формата для инвариантных региональных параметров является "мммм дд".
+
+В следующей таблице представлены свойства объекта <xref:System.Globalization.DateTimeFormatInfo>, обеспечивающие управление форматированием возвращаемой строки.
+
+|Свойство.|Описание|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>|Определяет общий формат результирующей строки.|
+|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>|Определяет переведенные названия месяцев, которые могут входить в результирующую строку.|
+
+В следующем примере описатель формата "m" используется для отображения значения даты и времени.
+
+[!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
+[!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]
+
+[К таблице](#table)
+
 <a name="YearMonth"></a>
 
-## <a name="the-year-month-y-y-format-specifier"></a>Описатель формата месяца года ("Y", "y")
+### <a name="the-year-month-y-y-format-specifier"></a>Описатель формата "год–месяц" ("Y", "y")
 
 Описатель стандартного формата "Y", "y" представляет строку настраиваемого формата даты и времени, определяемую свойством <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A?displayProperty=nameWithType> для конкретного языка и региональных параметров. Например, строкой пользовательского формата для инвариантных региональных параметров является "гггг мммм".
 
@@ -435,15 +470,13 @@ ms.locfileid: "92888637"
 
 <a name="Notes"></a>
 
-## <a name="notes"></a>Примечания
+## <a name="control-panel-settings"></a>Параметры панели управления
 
-### <a name="control-panel-settings"></a>Настройки панели управления
-
-Параметры элемента панели управления **Язык и региональные стандарты** влияют на выходную строку, получаемую в результате операции форматирования. Эти параметры используются для инициализации объекта <xref:System.Globalization.DateTimeFormatInfo>, связанного с текущими региональными параметрами потока, который предоставляет значения, используемые для управления форматированием. Результирующие строки будут различаться на компьютерах с разными параметрами.
+Параметры элемента панели управления **Язык и региональные стандарты** в Windows влияют на выходную строку, что получается в результате операции форматирования. Эти параметры используются для инициализации объекта <xref:System.Globalization.DateTimeFormatInfo>, связанного с текущими региональными параметрами потока, который предоставляет значения, используемые для управления форматированием. Результирующие строки будут различаться на компьютерах с разными параметрами.
 
 Кроме того, если конструктор <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> используется для создания нового экземпляра объекта <xref:System.Globalization.CultureInfo> , представляющего язык и региональные параметры, аналогичные текущему языку и региональным параметрам системы, то все настройки, заданные в разделе **Язык и региональные стандарты** панели управления, будут применяться к новому объекту <xref:System.Globalization.CultureInfo> . Можно воспользоваться конструктором <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> для создания объекта <xref:System.Globalization.CultureInfo> , который не отражает настройки системы.
 
-### <a name="datetimeformatinfo-properties"></a>Свойства DateTimeFormatInfo
+## <a name="datetimeformatinfo-properties"></a>Свойства DateTimeFormatInfo
 
 На форматирование влияют свойства текущего объекта <xref:System.Globalization.DateTimeFormatInfo>, которые задаются либо неявно, языком и региональными параметрами текущего потока, либо явно, параметром <xref:System.IFormatProvider> метода, который вызывает форматирование. Для параметра <xref:System.IFormatProvider> приложение должно указать объект <xref:System.Globalization.CultureInfo>, представляющий региональные параметры, или объект <xref:System.Globalization.DateTimeFormatInfo>, представляющий соглашения о форматировании даты и времени для конкретных региональных параметров. Многие спецификаторы стандартных форматов даты и времени являются псевдонимами для шаблонов форматирования, которые определены свойствами текущего объекта <xref:System.Globalization.DateTimeFormatInfo>. Приложение может изменить результат, полученный некоторыми спецификаторами стандартных форматов даты и времени, изменив соответствующие шаблоны форматирования соответствующего свойства <xref:System.Globalization.DateTimeFormatInfo>.
 

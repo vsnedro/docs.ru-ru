@@ -6,12 +6,12 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: aa63e7d23641ad71b135f15236e29399a535784f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e77a56b2be33555bc02157c8e643ac655b083bc3
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398257"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282202"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Пошаговое руководство. Фильтрация вывода My.Application.Log (Visual Basic)
 
@@ -138,7 +138,7 @@ ms.locfileid: "84398257"
 9. Измените значение атрибута `value` снова на "Информация".
 
     > [!NOTE]
-    > Параметр переключателя `DefaultSwitch` контролирует только `My.Application.Log`. На поведение классов <xref:System.Diagnostics.Trace?displayProperty=nameWithType> и <xref:System.Diagnostics.Debug?displayProperty=nameWithType> .NET Framework он не влияет.
+    > Параметр переключателя `DefaultSwitch` контролирует только `My.Application.Log`. На поведение классов <xref:System.Diagnostics.Trace?displayProperty=nameWithType> и <xref:System.Diagnostics.Debug?displayProperty=nameWithType> .NET он не влияет.
 
 ## <a name="individual-filtering-for-myapplicationlog-listeners"></a>Отдельная фильтрация прослушивателей My.Application.Log
 

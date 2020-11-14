@@ -10,12 +10,12 @@ helpviewer_keywords:
 - application development [.NET], globalization
 - culture, globalization
 - icu, icu on windows, ms-icu
-ms.openlocfilehash: 87d0103e90d46ae83b23c9cc05e9efcaa51c831f
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: e0ca78871d1ddf851148096c8c6cfd10076763ab
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063993"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400883"
 ---
 # <a name="net-globalization-and-icu"></a>Глобализация .NET и ICU
 
@@ -33,34 +33,34 @@ ms.locfileid: "93063993"
 
 ## <a name="icu-on-windows"></a>ICU в Windows
 
-В состав ОС Windows 10 с майским обновлением 2019 г. и более поздних версий включена библиотека [ICU. dll](/windows/win32/intl/international-components-for-unicode--icu-), а .NET 5.0 и более поздних версий компоненты ICU используются по умолчанию. При работе в Windows платформа .NET 5.0 и более поздних версий попробуйте загрузить `icu.dll` и, если она доступна, используйте ее для реализации глобализации.  Если эта библиотека отсутствует или не загружена (например, при работе в более старых версиях Windows), платформа .NET 5.0 и более поздних версий переходит на реализации на основе NLS.
+В состав ОС Windows 10 с майским обновлением 2019 г. и более поздних версий включена библиотека [ICU. dll](/windows/win32/intl/international-components-for-unicode--icu-), а .NET 5.0 и более поздних версий компоненты ICU используются по умолчанию. При работе в Windows, NET 5.0 и более поздних версий попробуйте загрузить `icu.dll` и, если она доступна, используйте ее для реализации глобализации. Если библиотека ICU отсутствует или не загружена (например, при работе в более старых версиях Windows), платформа .NET 5.0 и более поздних версий переходит на реализации на основе NLS.
 
 > [!NOTE]
 > Даже при использовании ICU элементы `CurrentCulture`, `CurrentUICulture` и `CurrentRegion` по-прежнему используют API операционной системы Windows, чтобы применить параметры пользователя.
 
-### <a name="using-nls-instead-of-icu"></a>Использование NLS вместо ICU
+### <a name="use-nls-instead-of-icu"></a>Использование NLS вместо ICU
 
 Использование ICU вместо NLS может привести к различиям в работе некоторых операций, связанных с глобализацией. Чтобы вернуться к использованию NLS, разработчик может отказаться от реализации ICU. Приложения могут включать режим NLS одним из следующих способов:
 
 - В файле проекта:
 
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
+  </ItemGroup>
+  ```
 
 - В файле `runtimeconfig.json`:
 
-```json
-{
-  "runtimeOptions": {
-     "configProperties": {
-       "System.Globalization.UseNls": true
-      }
+  ```json
+  {
+    "runtimeOptions": {
+       "configProperties": {
+         "System.Globalization.UseNls": true
+        }
+    }
   }
-}
-```
+  ```
 
 - Путем присвоения переменной среды `DOTNET_SYSTEM_GLOBALIZATION_USENLS` значения `true` или `1`.
 
@@ -71,35 +71,35 @@ ms.locfileid: "93063993"
 
 ## <a name="app-local-icu"></a>ICU с параметром app-local
 
-Каждый выпуск ICU включает исправления ошибок, а также обновленные данные репозитория данных общего языкового стандарта (CLDR), которые описывают языки мира. Использование разных версий ICU может незначительно повлиять на работу приложения, когда дело доходит до операций, связанных с глобализацией.  Чтобы помочь разработчикам приложений обеспечить согласованность всех развертываний, в .NET 5.0 и более поздних версиях приложения в Windows и Unix могут использовать собственную копию ICU.
+Каждый выпуск ICU включает исправления ошибок, а также обновленные данные репозитория данных общего языкового стандарта (CLDR), которые описывают языки мира. Использование разных версий ICU может незначительно повлиять на работу приложения, когда дело доходит до операций, связанных с глобализацией. Чтобы помочь разработчикам приложений обеспечить согласованность всех развертываний, в .NET 5.0 и более поздних версиях приложения в Windows и Unix могут использовать собственную копию ICU.
 
 Приложения могут применить режим реализации ICU с параметром app-local одним из следующих способов.
 
 - В файле проекта:
 
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="<suffix>:<version> or <version>" />
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="<suffix>:<version> or <version>" />
+  </ItemGroup>
+  ```
 
 - В файле `runtimeconfig.json`:
 
-```json
-{
-  "runtimeOptions": {
-     "configProperties": {
-       "System.Globalization.AppLocalIcu": "<suffix>:<version> or <version>"
-      }
+  ```json
+  {
+    "runtimeOptions": {
+       "configProperties": {
+         "System.Globalization.AppLocalIcu": "<suffix>:<version> or <version>"
+       }
+    }
   }
-}
-```
+  ```
 
 - Путем присвоения переменной среды `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` значения `<suffix>:<version>` или `<version>`.
 
-`<suffix>`. Необязательный суффикс длиной менее 36 символов в соответствии с публичными соглашениями об упаковке ICU. При создании настраиваемых ICU можно указать, чтобы имена библиотек и имена экспортированных символов содержали суффикс (например, `libicuucmyapp`, где `myapp` является суффиксом).
+  `<suffix>`: Необязательный суффикс длиной менее 36 символов в соответствии с публичными соглашениями об упаковке ICU. При создании настраиваемых ICU можно указать, чтобы имена библиотек и имена экспортированных символов содержали суффикс (например, `libicuucmyapp`, где `myapp` является суффиксом).
 
-`<version>`. Допустимая версия ICU (например, 67.1). Эта версия используется для загрузки двоичных файлов и получения экспортированных символов.
+  `<version>`. Допустимая версия ICU (например, 67.1). Эта версия используется для загрузки двоичных файлов и получения экспортированных символов.
 
 Чтобы загрузить ICU, когда задан параметр app-local, .NET использует метод <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=nameWithType>, который проверяет несколько путей. Сначала метод пытается найти библиотеку в свойстве `NATIVE_DLL_SEARCH_DIRECTORIES`, которое создается узлом .NET на основе файла `deps.json` для приложения. Дополнительные сведения см. в разделе [Проверка по умолчанию](../../core/dependency-loading/default-probing.md).
 
@@ -120,7 +120,7 @@ ms.locfileid: "93063993"
 
 ### <a name="macos-behavior"></a>Поведение в macOS
 
-`macOS` разрешает зависимые динамические библиотеки из команд загрузки, указанных в файле `match-o`, по-другому, чем загрузчик Linux. В загрузчике Linux .NET пробует использовать `libicudata`, `libicuuc` и `libicui18n` (в этом порядке) для обеспечения соответствия графу зависимостей ICU. Однако в macOS это не работает. При создании ICU в macOS вы по умолчанию получаете динамическую библиотеку с помощью этих команд загрузки в `libicuuc`. Например:
+`macOS` разрешает зависимые динамические библиотеки из команд загрузки, указанных в файле `match-o`, по-другому, чем загрузчик Linux. В загрузчике Linux .NET пробует использовать `libicudata`, `libicuuc` и `libicui18n` (в этом порядке) для обеспечения соответствия графу зависимостей ICU. Однако в macOS это не работает. При создании ICU в macOS вы по умолчанию получаете динамическую библиотеку с помощью этих команд загрузки в `libicuuc`. Фрагмент кода приведен ниже.
 
 ```sh
 ~/ % otool -L /Users/santifdezm/repos/icu-build/icu/install/lib/libicuuc.67.1.dylib
@@ -139,19 +139,19 @@ ms.locfileid: "93063993"
 
   Выполните следующие команды:
 
-```bash
-install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicuuc.67.1.dylib
-install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicui18n.67.1.dylib
-install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /path/to/libicui18n.67.1.dylib
-```
+  ```bash
+  install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicuuc.67.1.dylib
+  install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicui18n.67.1.dylib
+  install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /path/to/libicui18n.67.1.dylib
+  ```
 
 - Исправление ICU таким образом, чтобы создавались имена установки с помощью `@loader_path`
 
   Перед выполнением автонастройки (`./runConfigureICU`) измените [эти строки](https://github.com/unicode-org/icu/blob/ef91cc3673d69a5e00407cda94f39fcda3131451/icu4c/source/config/mh-darwin#L32-L37) на следующие:
 
-```
-LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
-```
+  ```
+  LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
+  ```
 
 ## <a name="icu-on-webassembly"></a>ICU в WebAssembly
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - XML serialization, configuration
 - <system.xml.serialization> element
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
-ms.openlocfilehash: f69e80592e9321de64421b977a63b83d8be2ad9e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6291799aadc429e943996f2256d773ac36dd370f
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289490"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282387"
 ---
 # <a name="systemxmlserialization-element"></a>Элемент \<system.xml.serialization>
 
@@ -41,7 +41,7 @@ ms.locfileid: "84289490"
 |Элемент|Описание|
 |-------------|-----------------|
 |[\<dateTimeSerialization> Элемент](datetimeserialization-element.md)|Определяет режим сериализации объектов <xref:System.DateTime>.|
-|[\<schemaImporterExtensions> Элемент](schemaimporterextensions-element.md)|Содержит типы, которые использует <xref:System.Xml.Serialization.XmlSchemaImporter> для сопоставления типов XSD с типами .NET Framework.|
+|[\<schemaImporterExtensions> Элемент](schemaimporterextensions-element.md)|Содержит типы, которые <xref:System.Xml.Serialization.XmlSchemaImporter> использует для сопоставления типов XSD с типами .NET.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
@@ -51,7 +51,7 @@ ms.locfileid: "84289490"
 
 ## <a name="example"></a>Пример
 
-В следующем примере кода показан способ указания режима сериализации объекта <xref:System.DateTime> и добавление типов, используемых <xref:System.Xml.Serialization.XmlSchemaImporter> при сопоставлении типов XSD с типами .NET Framework.
+В следующем примере кода показан способ указания режима сериализации объекта <xref:System.DateTime> и добавление типов, используемых <xref:System.Xml.Serialization.XmlSchemaImporter> при сопоставлении типов XSD с типами .NET.
 
 ```xml
 <system.xml.serialization>

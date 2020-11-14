@@ -1,21 +1,22 @@
 ---
 title: Элемент <schemaImporterExtensions>
-description: Элемент <schemaImporterExtensions> содержит типы, которые XmlSchemaImporter использует для сопоставления типов XSD с типами .NET Framework.
+description: Элемент <schemaImporterExtensions> содержит типы, которые XmlSchemaImporter использует для сопоставления типов XSD с типами .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - XML serialization, configuration
 - schemaImporterExtensions element
 - <schemaImporterExtensions> element
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
-ms.openlocfilehash: c46c5cb6e01463723f0f2ce3873fb4a6ec0b4e60
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 35626618a8dd7c63a7008d10bc3568484836a488
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84278406"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282277"
 ---
 # <a name="schemaimporterextensions-element"></a>Элемент \<schemaImporterExtensions>
-Содержит типы, которые использует <xref:System.Xml.Serialization.XmlSchemaImporter> для сопоставления типов XSD с типами .NET Framework. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../framework/configure-apps/file-schema/index.md).  
+
+Содержит типы, которые <xref:System.Xml.Serialization.XmlSchemaImporter> использует для сопоставления типов XSD с типами .NET. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../framework/configure-apps/file-schema/index.md).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,7 +39,7 @@ ms.locfileid: "84278406"
 |[\<system.xml.serialization> Элемент](system-xml-serialization-element.md)|Элемент верхнего уровня для управления XML-сериализацией.|  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано, как добавлять типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter> при сопоставлении типов XSD с типами .NET Framework.  
+ В следующем примере кода показано, как добавлять типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter> при сопоставлении типов XSD с типами .NET.  
   
 ```xml  
 <system.xml.serialization>  

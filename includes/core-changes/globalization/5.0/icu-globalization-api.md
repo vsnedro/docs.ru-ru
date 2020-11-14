@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 18718ebc934e0175c20411055b8c0a90ef6b175f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 02b5dc181abe384c1a5f47c042e475f67a0afe1c
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539487"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400809"
 ---
 ### <a name="globalization-apis-use-icu-libraries-on-windows"></a>API-интерфейсы глобализации, которые используют библиотеки ICU в Windows
 
@@ -12,14 +12,51 @@ ms.locfileid: "90539487"
 
 #### <a name="change-description"></a>Описание изменений
 
-Ранее в библиотеках .NET для поддержки глобализации использовались API-интерфейсы [NLS (многоязыковая поддержка)](/windows/win32/intl/national-language-support). Например, функции NLS применялись для получения данных о языке и региональных параметрах, таких как шаблоны формата, правила сравнения строк, а также для изменения капитализации строк.
+В .NET Core 1.0–3.1 и .NET Framework 4 и более поздних версий библиотеки .NET используют для функции глобализации в Windows API [Многоязыковой поддержки (NLS)](/windows/win32/intl/national-language-support). Например, функции NLS применялись для сравнения строк, получения данных о языке и региональных параметрах, а также для изменения капитализации строк в соответствии с необходимыми языком и региональными параметрами.
 
-Начиная с .NET 5.0, для приложений в среде Windows 10 с обновлением за май 2019 года или более поздней версии библиотеки .NET используют API-интерфейсы глобализации [ICU](http://site.icu-project.org/home). В Windows 10 с обновлением за май 2019 года и более поздних версий входит библиотека ICU. Если среда выполнения .NET не может загрузить ICU, вместо нее используется NLS.
+Начиная с .NET 5.0, для приложений в среде Windows 10 с обновлением за май 2019 года или более поздней версии библиотеки .NET по умолчанию используют API-интерфейсы глобализации [ICU](http://site.icu-project.org/home).
 
-Это изменение внесено по следующим двум причинам:
+> [!NOTE]
+> В Windows 10 с обновлением за май 2019 года и более поздних версий входит библиотека ICU. Если среда выполнения .NET не может загрузить ICU, вместо нее используется NLS.
 
-- Приложения получают одинаковые стандарты глобализации на разных платформах, включая Linux, macOS и Windows.
-- Приложения могут управлять параметрами глобализации с помощью пользовательских библиотек ICU.
+#### <a name="behavioral-differences"></a>Различия в поведении
+
+Вы можете заметить изменения в приложении, даже если не догадываетесь, что используете средства глобализации. В этом разделе перечислено несколько из возможных изменений поведения.
+
+##### <a name="stringindexof"></a>String.IndexOf
+
+Рассмотрим следующий код, который вызывает <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType>, чтобы найти в строке индекс символа новой строки.
+
+```csharp
+string s = "Hello\r\nworld!";
+int idx = s.IndexOf("\n");
+Console.WriteLine(idx);
+```
+
+- В предыдущих версиях .NET для Windows фрагмент кода выводит `6`.
+- В .NET 5.0 и более поздних версиях на Windows 19H1 и более поздних версий фрагмент кода выводит `-1`.
+
+Чтобы исправить этот код, выполняя порядковый поиск вместо поиска с учетом языка и региональных параметров, вызовите перегрузку <xref:System.String.IndexOf(System.String,System.StringComparison)> и передайте в нее в качестве аргумента <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
+
+Вы можете запустить правила анализа кода [CA1307: использование StringComparison, чтобы ясно указать намерение](../../../../docs/fundamentals/code-analysis/quality-rules/ca1307.md) и [CA1309: использование StringComparison по порядковым номерам](../../../../docs/fundamentals/code-analysis/quality-rules/ca1309.md), чтобы найти эти точки вызова в коде.
+
+Дополнительные сведения см. в статье [Изменения поведения при сравнении строк в .NET 5+](../../../../docs/standard/base-types/string-comparison-net-5-plus.md).
+
+##### <a name="currency-symbol"></a>Символ валют
+
+Рассмотрим следующий код, который форматирует строку с помощью указателя формата валюты `C`. Для языка и региональных параметров текущего потока заданы настройки только для языка, а не страны.
+
+```csharp
+System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");
+string text = string.Format("{0:C}", 100);
+```
+
+- В предыдущих версиях .NET для Windows значение text равно `"100,00 €"`.
+- В .NET 5.0 и более поздних версиях в Windows 19H1 и более поздних версий значение text равно `"100,00 ¤"`, и вместо евро в нем используется международный символ валюты. В ICU валюта является свойством страны или региона, а не языка.
+
+#### <a name="reason-for-change"></a>Причина изменения
+
+Это изменение введено для унификации поведения глобализации .NET во всех поддерживаемых операционных системах. Благодаря ему приложения смогут объединять собственные библиотеки глобализации и не зависеть от встроенных библиотек операционных систем.
 
 #### <a name="version-introduced"></a>Представленная версия
 
@@ -31,13 +68,19 @@ ms.locfileid: "90539487"
 
 #### <a name="category"></a>Категория
 
-Глобализация
+- Библиотеки Core .NET
+- Глобализация
 
 #### <a name="affected-apis"></a>Затронутые API
 
 - <xref:System.Span%601?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>
 - Почти все типы в пространстве имен <xref:System.Globalization?displayProperty=fullName>
+- <xref:System.Array.Sort%2A?displayProperty=fullName> (при сортировке массива строк)
+- <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (если элементы списка являются строками)
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (если ключи являются строками)
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (если ключи являются строками)
+- <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (если набор содержит строки)
 
 <!--
 
@@ -46,5 +89,10 @@ ms.locfileid: "90539487"
 - ``T:System.Span`1``
 - `T:System.String`
 - `N:System.Globalization`
+- `Overload:System.Array.Sort`
+- ``M:System.Collections.Generic.List`1.Sort``
+- ``T:System.Collections.Generic.SortedDictionary`2``
+- ``T:System.Collections.Generic.SortedList`2``
+- ``T:System.Collections.Generic.SortedSet`1``
 
 -->

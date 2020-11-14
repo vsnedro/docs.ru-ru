@@ -2,12 +2,12 @@
 title: Установка локализованных файлов IntelliSense
 description: Узнайте, как настроить на компьютере разработки использование локализованных файлов IntelliSense для проектов .NET 5+ (включая .NET Core) в Visual Studio.
 ms.date: 11/06/2020
-ms.openlocfilehash: 121439199f0de6d29a18ea55031976680fc1f833
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 45eeae12ca79179cacb3d48fca28118de70e0a4f
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439824"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94506770"
 ---
 # <a name="how-to-install-localized-intellisense-files-for-net"></a>Установка локализованных файлов IntelliSense для .NET
 
@@ -16,7 +16,7 @@ ms.locfileid: "94439824"
 - Установка локализованной версии файлов.
 - Изменение установки Visual Studio для использования другого языка.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Prerequisites
 
 - [Пакет SDK для .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии, например [пакет SDK для .NET 5](https://dotnet.microsoft.com/download/dotnet/5.0).
 - [Visual Studio 2019 версии 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздней версии.
@@ -37,13 +37,13 @@ ms.locfileid: "94439824"
    1. Перейдите в папку установки .NET. Ее расположение по умолчанию: *%ProgramFiles%\dotnet\packs*.
    1. Выберите пакет SDK, для которого необходимо установить IntelliSense, и перейдите по соответствующему пути. Можно выбрать один из следующих параметров.
 
-      | Тип пакета SDK              | Путь                               |
+      | Тип пакета SDK              | путь                               |
       |-----------------------|------------------------------------|
       | .NET версии 5 или выше и .NET Core | *Microsoft.NETCore.App.Ref*        |
       | Классические приложения       | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard         | *NETStandard.Library.Ref*          |
 
-   1. Перейдите к версии, для которой необходимо установить локализованные файлы IntelliSense. Например, *3.1.0*.
+   1. Перейдите к версии, для которой необходимо установить локализованные файлы IntelliSense. Например, *5.0.0*.
    1. Откройте папку *ref*.
    1. Откройте папку моникера. Например: *net5.0*.
 

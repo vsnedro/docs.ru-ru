@@ -1,22 +1,23 @@
 ---
 title: Элемент <add> для <schemaImporterExtensions>
-description: Элемент <add> добавляет типы, используемые классом XmlSchemaImporter для сопоставления типов XSD с типами .NET Framework.
+description: Элемент <add> добавляет типы, используемые классом XmlSchemaImporter для сопоставления типов XSD с типами .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - XML serialization, configuration
 - <add> element for <schemaImporterExtensions> element
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
-ms.openlocfilehash: 6fd8113ad39a22c927035fca574151ae8f002685
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 38d8ebd6e973632b23865ad60e007d9aa21e7da6
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84288333"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282005"
 ---
 # <a name="add-element-for-schemaimporterextensions"></a>Элемент \<add> для \<schemaImporterExtensions>
-Добавляет типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter>, для сопоставления типов XSD с типами платформы .NET Framework. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../framework/configure-apps/file-schema/index.md).  
+
+Добавляет типы, используемые <xref:System.Xml.Serialization.XmlSchemaImporter>, для сопоставления типов XSD с типами .NET. Дополнительные сведения о файлах конфигурации см. в разделе [Схема файла конфигурации](../../framework/configure-apps/file-schema/index.md).  
   
- \<configuration>  
+\<configuration>  
 \<system.xml.serialization>  
 \<schemaImporterExtensions>  
 \<add>  

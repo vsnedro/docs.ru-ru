@@ -4,12 +4,12 @@ description: В этой статье перечислены новые возм
 ms.custom: updateeachrelease
 ms.date: 04/12/2018
 ms.technology: dotnet-standard
-ms.openlocfilehash: 28d6a3546e08bbc3a7d4a26f08ba9cc5e16a901b
-ms.sourcegitcommit: 2ff49dcf9ddf107d139b4055534681052febad62
+ms.openlocfilehash: 419988901923b890aaf0a540d155775214e62c52
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80438205"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282102"
 ---
 # <a name="whats-new-in-net-standard"></a>Новые возможности .NET Standard
 
@@ -35,7 +35,7 @@ ms.locfileid: "80438205"
 
 ### <a name="a-vastly-expanded-set-of-apis"></a>Значительно расширенный набор интерфейсов API
 
-Вплоть до версии 1.6 спецификация .NET Standard содержала сравнительно небольшой набор API-интерфейсов. Среди прочего, в их числе не было многих API, которые часто используются на платформах .NET Framework и Xamarin. Это усложняет разработку, так как разработчикам приходится искать подходящие средства для замены знакомых API при разработке приложений и библиотек для нескольких реализаций .NET. В .NET Standard 2.0 это ограничение устранено: в стандарт добавлены более 20 000 интерфейсов API, недоступных в предыдущей версии .NET Standard 1.6. Список интерфейсов API, добавленных в .NET Standard 2.0, см. в [документе сравнения возможностей .NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
+Вплоть до версии 1.6 спецификация .NET Standard содержала сравнительно небольшой набор API-интерфейсов. Среди прочего, в их числе не было многих API, которые часто используются на платформах .NET Framework и Xamarin. Это усложняет разработку, так как разработчикам приходится искать подходящие средства для замены знакомых API при разработке приложений и библиотек для нескольких реализаций .NET. В .NET Standard 2.0 это ограничение устранено: в стандарт добавлены более 20 000 интерфейсов API, недоступных в предыдущей версии .NET Standard 1.6. Список интерфейсов API, добавленных в .NET Standard 2.0, см. в [документе сравнения возможностей .NET Standard 2.0 и 1.6](https://raw.githubusercontent.com/dotnet/standard/master/docs/versions/netstandard2.0_diff.md).
 
 Вот лишь некоторые возможности, добавленные в пространство имен <xref:System> .NET Standard 2.0:
 
@@ -53,7 +53,7 @@ ms.locfileid: "80438205"
 
 ### <a name="support-for-net-framework-libraries"></a>Поддержка библиотек .NET Framework
 
-Практически все библиотеки предназначены для .NET Framework, а не .NET Standard. Но при этом большая часть вызовов в этих библиотеках направлена к интерфейсам API .NET Standard 2.0. Начиная с .NET Standard 2.0 библиотеки .NET Framework доступны из библиотек .NET Standard через [оболочку совместимости](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#assembly-unification). Этот уровень совместимости прозрачен для разработчиков, то есть от них не требуется никаких действий, чтобы пользоваться библиотеками .NET Framework.
+Многие библиотеки предназначены для .NET Framework, а не для .NET Standard. Но при этом большая часть вызовов в этих библиотеках направлена к интерфейсам API .NET Standard 2.0. Начиная с .NET Standard 2.0 библиотеки .NET Framework доступны из библиотек .NET Standard через [оболочку совместимости](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#assembly-unification). Этот уровень совместимости прозрачен для разработчиков, то есть от них не требуется никаких действий, чтобы пользоваться библиотеками .NET Framework.
 
 Действует только одно требование: API, вызываемые библиотекой классов .NET Framework, должны быть включены в .NET Standard 2.0.
 
@@ -65,7 +65,7 @@ ms.locfileid: "80438205"
 
 С момента выхода .NET Core 2.0 и .NET Standard 2.0 поддержка средств для создания библиотек .NET Standard включена в Visual Studio 2017 и [.NET Core CLI](../../core/tools/index.md).
 
-Если у вас установлен Visual Studio с рабочей нагрузкой **для кроссплатформенной разработки .NET Core**, вы можете создать проект библиотеки .NET Standard 2.0 с помощью шаблона проекта, как показано на рисунке ниже.
+Если у вас установлен Visual Studio с рабочей нагрузкой **для кроссплатформенной разработки .NET Core** , вы можете создать проект библиотеки .NET Standard 2.0 с помощью шаблона проекта, как показано на рисунке ниже.
 
 <!-- markdownlint-disable MD025 -->
 

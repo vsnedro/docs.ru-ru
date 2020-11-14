@@ -3,12 +3,12 @@ title: Инструмент создания XML-сериализатора (Sge
 description: Инструмент создания сериализатора XML создает сборку сериализации XML для типов в сборке, чтобы повысить производительность XmlSerializer при запуске.
 ms.date: 03/30/2017
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
-ms.openlocfilehash: b6d9406ca6a69f7bdff3129b55c89dd5d1589d3f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 80295a9a54b6f9b1970fb65dacdee43b2e938070
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84288944"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282356"
 ---
 # <a name="xml-serializer-generator-tool-sgenexe"></a>Инструмент создания XML-сериализатора (Sgen.exe)
 
@@ -23,7 +23,7 @@ sgen [options]
 ```
   
 > [!TIP]
-> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные устанавливаются с помощью программы SDKVars.bat, которая находится в каталоге \<SDK>\v2.0\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
+> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные среды устанавливаются с помощью программы SDKVars.bat, расположенной в каталоге \<SDK>\\\<version>\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
   
 ## <a name="parameters"></a>Параметры  
   

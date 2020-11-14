@@ -3,12 +3,12 @@ title: XML Schema Definition Tool (Xsd.exe)
 description: Инструмент создания XML-сериализатора создает сборку XML-сериализации для типов в указанной сборке, улучшающую производительность XmlSerializer при запуске.
 ms.date: 03/30/2017
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
-ms.openlocfilehash: 0275ecfebd427feb104013024654d4a0bc98748a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c8ae3e05f2d775cbc4c44ce27e7474d1fcfc06a3
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84288983"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281758"
 ---
 # <a name="xml-schema-definition-tool-xsdexe"></a>XML Schema Definition Tool (Xsd.exe)
 
@@ -32,7 +32,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 ```
   
 > [!TIP]
-> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные устанавливаются с помощью программы SDKVars.bat, которая находится в каталоге \<SDK>\v2.0\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
+> Для нормальной работы инструментов .NET Framework необходимо правильно настроить переменные среды `Path`, `Include` и `Lib`. Эти переменные среды устанавливаются с помощью программы SDKVars.bat, расположенной в каталоге \<SDK>\\\<version>\Bin. Программу SDKVars.bat следует выполнять в каждой командной оболочке.
 
 ## <a name="argument"></a>Аргумент
 
@@ -105,7 +105,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 </xsd>
 ```
 
-Если предыдущий XML содержится в файле с именем GenerateSchemas.xml, используйте параметр `/parameters`, введя следующий текст в командной строке и нажав клавишу **ВВОД**:
+Если предыдущий XML содержится в файле с именем GenerateSchemas.xml, используйте параметр `/parameters`, введя следующий текст в командной строке и нажав клавишу **ВВОД** :
 
 ```console
  xsd /p:GenerateSchemas.xml

@@ -1,6 +1,6 @@
 ---
-title: Анализ строк с помощью метода String.Split (руководство по языку C#)
-description: Метод Split возвращает массив строк, разбитых по набору разделителей. Это простой и удобный способ анализа строк.
+title: Разделение строк с помощью метода String.Split (руководство по C#)
+description: Метод Split возвращает массив строк, разбитых по набору разделителей. Это простой способ извлечения подстрок из строки.
 ms.date: 01/03/2018
 helpviewer_keywords:
 - splitting strings [C#]
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - parse strings
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
-ms.openlocfilehash: 7c5d8fa462775c6f3a9981693129997dda6c2286
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 5361a3c60905edd19b180c5ddb14064a85f64337
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324137"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400504"
 ---
-# <a name="how-to-parse-strings-using-stringsplit-in-c"></a>Анализ строк с помощью метода String.Split в C\#
+# <a name="how-to-separate-strings-using-stringsplit-in-c"></a>Разделение строк с помощью метода String.Split на C\#
 
 Метод <xref:System.String.Split%2A?displayProperty=nameWithType> создает массив подстрок, разбивая входную строку по одному или нескольким разделителям. Этот метод зачастую является самым простым способом разделить строку по границам слов. Он также используется для разбиения строк по другим конкретным символам или строкам.
 
@@ -50,6 +50,7 @@ ms.locfileid: "85324137"
 
 ## <a name="see-also"></a>См. также
 
+- [Извлечение элементов из строки](../../standard/base-types/divide-up-strings.md)
 - [Руководство по программированию на C#](../programming-guide/index.md)
 - [Строки](../programming-guide/strings/index.md)
 - [Регулярные выражения .NET](../../standard/base-types/regular-expressions.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 909d979d46b30939e304af071de65d230febd92d
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: d8bd5bcf78db534bd722972db01253cbd13a7a06
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380127"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282400"
 ---
 # <a name="json-serialization-and-deserialization-marshalling-and-unmarshalling-in-net---overview"></a>Сериализация и десериализация JSON (маршалинг и демаршалинг) в .NET — обзор
 
@@ -27,8 +27,9 @@ ms.locfileid: "83380127"
 
 ## <a name="how-to-get-the-library"></a>Получение библиотеки
 
-* Библиотека входит в состав общей платформы [.NET Core 3.0](https://aka.ms/netcore3download).
-* Для других целевых платформ установите пакет NuGet [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). Пакет поддерживает:
+* Библиотека входит в состав общей платформы для .NET Core 3.0 и более поздних версий.
+* Для более ранних версий платформы установите пакет NuGet [System.Text.Json](https://www.nuget.org/packages/System.Text.Json). Пакет поддерживает:
+
   * .NET Standard 2.0 и более поздних версий
   * .NET Framework 4.7.2 и более поздних версий
   * .NET Core 2.0, 2.1 и 2.2

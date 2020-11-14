@@ -6,18 +6,18 @@ helpviewer_keywords:
 - registry [Visual Basic], writing to
 - registry [Visual Basic], reading
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
-ms.openlocfilehash: bb400ef89edaa4eb743aee3a7f2cc5b9dfec4534
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fe0714f25cd41ca9ce4eabf135c82d1dbb1fe524
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360063"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282222"
 ---
 # <a name="reading-from-and-writing-to-the-registry-visual-basic"></a>Чтение данных из реестра и запись в реестр (Visual Basic)
 
 В этом разделе описываются задачи и приводятся основные разделы, связанные с реестром.  
   
- При программировании в Visual Basic можно получить доступ к реестру с помощью функций, предоставляемых Visual Basic, или классов платформы .NET Framework для работы с реестром. Реестр содержит данные, исходящие как от операционной системы, так и от приложений, установленных на компьютере. Работа с реестром может привести к нарушению безопасности, допуская несанкционированный доступ к системным ресурсам или защищенной информации.  
+ При программировании в Visual Basic можно получить доступ к реестру с помощью функций, предоставляемых Visual Basic, или классов .NET для работы с реестром. Реестр содержит данные, исходящие как от операционной системы, так и от приложений, установленных на компьютере. Работа с реестром может привести к нарушению безопасности, допуская несанкционированный доступ к системным ресурсам или защищенной информации.  
   
 ## <a name="in-this-section"></a>Содержание  
 
@@ -31,7 +31,7 @@ ms.locfileid: "84360063"
  Описывает использование метода `DeleteSubKey` свойства `My.Computer.Registry.CurrentUser` для удаления раздела реестра.  
   
  [Чтение реестра и запись в него с использованием пространства имен Microsoft.Win32](reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
- Описывает использование классов `Registry` и `RegistryKey` платформы .NET Framework для доступа к реестру.  
+ Описывает использование классов `Registry` и `RegistryKey` в .NET для доступа к реестру.  
   
  [Безопасность и реестр](security-and-the-registry.md)  
  Описывает вопросы безопасности, связанные с реестром.  

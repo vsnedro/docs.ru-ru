@@ -1,37 +1,49 @@
 ---
 title: Как написать настраиваемые преобразователи для сериализации JSON — .NET
+description: Узнайте, как создать настраиваемые преобразователи для классов сериализации JSON, предоставляемых в пространстве имен System.Text.Json.
 ms.date: 01/10/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
 - JSON serialization
 - serializing objects
 - serialization
 - objects, serializing
 - converters
-ms.openlocfilehash: e0b769d7bb6b336d226cd48de1932524c4d7e74d
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: ba6b61232ccf7ed493fe5809e5c0b8ba21091d3d
+ms.sourcegitcommit: 6bef8abde346c59771a35f4f76bf037ff61c5ba3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811071"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94329811"
 ---
 # <a name="how-to-write-custom-converters-for-json-serialization-marshalling-in-net"></a>Как написать настраиваемые преобразователи для сериализации JSON (маршалинг) в .NET
 
 В этой статье показано, как создать настраиваемые преобразователи для классов сериализации JSON, предоставляемых в пространстве имен <xref:System.Text.Json>. Общие сведения о `System.Text.Json` см. в статье [Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET](system-text-json-how-to.md).
 
-*Преобразователь* — это класс, который преобразует объект или значение в формат JSON и обратно. Пространство имен `System.Text.Json` содержит встроенные преобразователи для большинства примитивных типов, которые сопоставляются с примитивами JavaScript. Вы можете создавать настраиваемые преобразователи для следующих целей:
+*Преобразователь*  — это класс, который преобразует объект или значение в формат JSON и обратно. Пространство имен `System.Text.Json` содержит встроенные преобразователи для большинства примитивных типов, которые сопоставляются с примитивами JavaScript. Вы можете создавать настраиваемые преобразователи для следующих целей:
 
 * Чтобы переопределить поведение встроенного преобразователя, используемое по умолчанию. Например, может потребоваться, чтобы значения `DateTime` были представлены в формате дд.мм.гггг вместо формата ISO 8601-1:2019 по умолчанию.
 * Для поддержки настраиваемого типа значения. Например, структуры `PhoneNumber`.
 
 Вы также можете создать настраиваемые преобразователи для настройки или расширения `System.Text.Json` с функциональностью, не входящей в текущий выпуск. Далее в этой статье описываются следующие сценарии:
 
+::: zone pivot="dotnet-5-0"
+
+* [Десериализация выводимых типов в свойства объекта](#deserialize-inferred-types-to-object-properties).
+* [Поддержка полиморфной десериализации](#support-polymorphic-deserialization).
+* [Поддержка кругового пути для Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
 * [Десериализация выводимых типов в свойства объекта](#deserialize-inferred-types-to-object-properties).
 * [Поддержка словаря с ключом, не являющимся строкой](#support-dictionary-with-non-string-key).
 * [Поддержка полиморфной десериализации](#support-polymorphic-deserialization).
 * [Поддержка кругового пути для Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
 
 ## <a name="custom-converter-patterns"></a>Шаблоны настраиваемых преобразователей
 
@@ -177,10 +189,20 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 В следующих разделах приведены примеры преобразователей, в которых рассматриваются распространенные сценарии, необрабатываемые встроенными функциями.
 
+::: zone pivot="dotnet-5-0"
+
+* [Десериализация выводимых типов в свойства объекта](#deserialize-inferred-types-to-object-properties).
+* [Поддержка полиморфной десериализации](#support-polymorphic-deserialization).
+* [Поддержка кругового пути для Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
 * [Десериализация выводимых типов в свойства объекта](#deserialize-inferred-types-to-object-properties).
 * [Поддержка словаря с ключом, не являющимся строкой](#support-dictionary-with-non-string-key).
 * [Поддержка полиморфной десериализации](#support-polymorphic-deserialization).
 * [Поддержка кругового пути для Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
 
 ### <a name="deserialize-inferred-types-to-object-properties"></a>Десериализация выводимых типов в свойства объекта
 
@@ -221,6 +243,8 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 В [папке модульного теста](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) в пространстве имен `System.Text.Json.Serialization` содержится больше примеров настраиваемых преобразователей, обрабатывающих десериализацию свойств `object`.
 
+::: zone pivot="dotnet-core-3-1"
+
 ### <a name="support-dictionary-with-non-string-key"></a>Поддержка словаря с ключом, не являющимся строкой
 
 Встроенная поддержка коллекций словарей предназначена для `Dictionary<string, TValue>`. То есть ключ должен быть строкой. Для поддержки словаря с целым числом или другим типом в качестве ключа нужен настраиваемый преобразователь.
@@ -252,6 +276,7 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
 В [папке модульного теста](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) в пространстве имен `System.Text.Json.Serialization` содержится больше примеров настраиваемых преобразователей, обрабатывающих словари с ключом, не являющимся строкой.
+::: zone-end
 
 ### <a name="support-polymorphic-deserialization"></a>Поддержка полиморфной десериализации
 
@@ -307,6 +332,29 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 В следующем коде регистрируется преобразователь.
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs?name=SnippetRegister)]
+
+## <a name="handle-null-values"></a>Обработка значений NULL
+
+По умолчанию сериализатор обрабатывает значения NULL следующим образом:
+
+* Для ссылочных типов и типов `Nullable<T>`:
+
+  * Не передает `null` в пользовательские преобразователи для сериализации.
+  * Не передает `JsonTokenType.Null` в пользовательские преобразователи для десериализации.
+  * Возвращает экземпляр `null` при десериализации.
+  * Записывает `null` непосредственно с помощью модуля записи при сериализации.
+
+* Для типов значений, не допускающих значения NULL:
+
+  * Передает `JsonTokenType.Null` в пользовательские преобразователи для десериализации. (Если пользовательский преобразователь недоступен, внутренний преобразователь для типа выдает исключение `JsonException`.)
+
+Это поведение обработки значений NULL в основном предназначено для оптимизации производительности путем пропуска дополнительного вызова преобразователя. Кроме того, оно позволяет избежать принудительного выполнения преобразователей для типов, допускающих значение null, для проверки `null` в начале каждого переопределения метода `Read` и `Write`.
+
+::: zone pivot="dotnet-5-0"
+Чтобы разрешить пользовательскому преобразователю обработку `null` для ссылочного типа или типа значения, переопределите <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType>, чтобы возвратить `true`, как показано в следующем примере:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="19":::
+::: zone-end
 
 ## <a name="other-custom-converter-samples"></a>Другие примеры настраиваемых преобразователей
 

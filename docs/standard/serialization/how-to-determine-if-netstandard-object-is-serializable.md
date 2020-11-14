@@ -8,16 +8,16 @@ dev_langs:
 helpviewer_keywords:
 - serializing objects
 - objects, serializing steps
-ms.openlocfilehash: a425d44ac3b58a568bd51e638f28a2b76ced9dec
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 9f7ab8a824b9687f68382a5edc342536289c5d09
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223993"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282320"
 ---
 # <a name="how-to-determine-if-a-net-standard-object-is-serializable"></a>Как определить сериализуемость объекта .NET Standard
 
-.NET Standard — это спецификация, определяющая типы и элементы, которые должны присутствовать в конкретных реализациях .NET, соответствующих этой версии стандарта. Однако .NET Standard не определяет, является ли тип сериализуемым. Типы, определенные в библиотеке .NET Standard, не помечаются атрибутом <xref:System.SerializableAttribute>. Но вместо этого некоторые реализации .NET, например .NET Framework и .NET Core, могут беспрепятственно определять, является ли конкретный тип сериализуемым.
+.NET Standard — это спецификация, определяющая типы и элементы, которые должны присутствовать в конкретных реализациях .NET, соответствующих этой версии стандарта. Однако .NET Standard не определяет, является ли тип сериализуемым. Типы, определенные в библиотеке .NET Standard, не помечаются атрибутом <xref:System.SerializableAttribute>. Но вместо этого некоторые реализации .NET, например .NET Framework и .NET Core, могут легко определять, является ли конкретный тип сериализуемым.
 
 Если вы разработали библиотеку, предназначенную для .NET Standard, ваша библиотека может использоваться в любой реализации .NET, поддерживающей .NET Standard. Это означает, что вы не можете заранее знать, является ли конкретный тип сериализуемым. Вы сможете определить, является ли он сериализуемым, только во время выполнения.
 

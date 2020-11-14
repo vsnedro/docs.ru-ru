@@ -1,21 +1,22 @@
 ---
 title: Как сериализировать и десериализировать JSON с помощью C# для .NET
-description: Сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. В ней приведен также пример кода.
-ms.date: 10/09/2020
+description: Сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. Содержит пример кода.
+ms.date: 11/05/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
 - JSON serialization
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 0fda248b7d2e5a7cfa748447d0265565cb160b7e
-ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
+ms.openlocfilehash: 2c1358b2b63a92cb50b853043adbfaae23ccd897
+ms.sourcegitcommit: 6bef8abde346c59771a35f4f76bf037ff61c5ba3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91997772"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94329876"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -38,7 +39,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 ```
 
-Атрибуты из пространства имен <xref:System.Runtime.Serialization> в настоящее время не поддерживаются в `System.Text.Json`.
+Атрибуты из пространства имен <xref:System.Runtime.Serialization> не поддерживаются в `System.Text.Json`.
 
 ## <a name="how-to-write-net-objects-to-json-serialize"></a>Как записать объекты .NET в JSON (сериализация)
 
@@ -115,15 +116,44 @@ using System.Text.Json.Serialization;
 Сериализация в UTF-8 происходит примерно на 5-10 % быстрее, чем при использовании строковых методов. Разница заключается в том, что байты (например, UTF-8) не нужно преобразовывать в строки (UTF-16).
 
 ## <a name="serialization-behavior"></a>Поведение сериализации
+::: zone pivot="dotnet-5-0"
 
-* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства для исключения](#exclude-properties-from-serialization).
+* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](#ignore-properties).
+* [Кодировщик по умолчанию](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) экранирует символы, не относящиеся к ASCII, символы, учитывающие HTML, в пределах диапазона ASCII и символы, которые должны быть экранированы в соответствии со [спецификацией JSON RFC 8259](https://tools.ietf.org/html/rfc8259#section-7).
+* По умолчанию JSON сокращается. Вы можете [структурировать JSON](#serialize-to-formatted-json).
+* По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](#customize-json-names-and-values).
+* По умолчанию обнаруживаются циклические ссылки и создаются исключения. Вы можете [сохранять ссылки и обрабатывать циклические ссылки](#preserve-references-and-handle-circular-references).
+* По умолчанию [поля](../../csharp/programming-guide/classes-and-structs/fields.md) игнорируются. Вы можете [включить поля](#include-fields).
+
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](#ignore-properties).
 * [Кодировщик по умолчанию](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) экранирует символы, не относящиеся к ASCII, символы, учитывающие HTML, в пределах диапазона ASCII и символы, которые должны быть экранированы в соответствии со [спецификацией JSON RFC 8259](https://tools.ietf.org/html/rfc8259#section-7).
 * По умолчанию JSON сокращается. Вы можете [структурировать JSON](#serialize-to-formatted-json).
 * По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](#customize-json-names-and-values).
 * Обнаруживаются циклические ссылки и создаются исключения.
-* В настоящее время [поля](../../csharp/programming-guide/classes-and-structs/fields.md) исключаются.
+* [Поля](../../csharp/programming-guide/classes-and-structs/fields.md) игнорируются.
+::: zone-end
 
 К поддерживаемым типам относятся:
+::: zone pivot="dotnet-5-0"
+
+* Примитивы .NET, которые сопоставляются с примитивами JavaScript, например числовыми типами, строками и логическими значениями.
+* Определяемые пользователем [объекты POCO (традиционные объекты среды CLR)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* Одномерные массивы и массивы массивов (`T[][]`).
+* Коллекции и словари из следующих пространств имен.
+  * <xref:System.Collections>
+  * <xref:System.Collections.Generic>
+  * <xref:System.Collections.Immutable>
+  * <xref:System.Collections.Concurrent>
+  * <xref:System.Collections.Specialized>
+  * <xref:System.Collections.ObjectModel>
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
 
 * Примитивы .NET, которые сопоставляются с примитивами JavaScript, например числовыми типами, строками и логическими значениями.
 * Определяемые пользователем [объекты POCO (традиционные объекты среды CLR)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
@@ -133,6 +163,10 @@ using System.Text.Json.Serialization;
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
+  * <xref:System.Collections.Concurrent>
+  * <xref:System.Collections.Specialized>
+  * <xref:System.Collections.ObjectModel>
+::: zone-end
 
 Для обработки дополнительных типов или для обеспечения функциональности, которая не поддерживается встроенными преобразователями, можно [реализовать пользовательские преобразователи](system-text-json-converters-how-to.md).
 
@@ -164,16 +198,33 @@ using System.Text.Json.Serialization;
 
 При десериализации JSON применяются следующие правила поведения:
 
+::: zone pivot="dotnet-5-0"
+
 * По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](#case-insensitive-property-matching).
 * Если JSON содержит значение для свойства, доступного только для чтения, значение игнорируется, а исключение не создается.
-* Конструкторы для десериализации:
-  - В .NET Core 3.0 и 3.1 для десериализации используется конструктор без параметров, который может быть открытым, внутренним или закрытым.
-  - В .NET 5.0 и более поздних версиях сериализатор не учитывает конструкторы, которые не являются открытыми. Тем не менее, если конструктор без параметров недоступен, можно использовать параметризованные конструкторы.
+* Сериализатор не учитывает конструкторы, которые не являются открытыми.
+* Поддерживается десериализация в неизменяемые объекты или свойства "только для чтения". См. статью [Неизменяемые типы и записи](#immutable-types-and-records).
+* По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](#enums-as-strings).
+* По умолчанию поля игнорируются. Вы можете [включить поля](#include-fields).
+* По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](#allow-comments-and-trailing-commas).
+* Максимальная глубина [по умолчанию](xref:System.Text.Json.JsonReaderOptions.MaxDepth) равна 64.
+
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](#case-insensitive-property-matching). Приложения ASP.NET Core [указывают учет регистра по умолчанию](#web-defaults-for-jsonserializeroptions).
+* Если JSON содержит значение для свойства, доступного только для чтения, значение игнорируется, а исключение не создается.
+* Для десериализации используется конструктор без параметров, который может быть общедоступным, внутренним или частным.
 * Десериализация в неизменяемые объекты или свойства только для чтения не поддерживается.
 * По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](#enums-as-strings).
 * Поля не поддерживаются.
 * По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](#allow-comments-and-trailing-commas).
 * Максимальная глубина [по умолчанию](xref:System.Text.Json.JsonReaderOptions.MaxDepth) равна 64.
+
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+::: zone-end
 
 Для обеспечения функциональности, которая не поддерживается встроенными преобразователями, можно [реализовать пользовательские преобразователи](system-text-json-converters-how-to.md).
 
@@ -194,6 +245,20 @@ using System.Text.Json.Serialization;
   "Summary": "Hot"
 }
 ```
+
+## <a name="include-fields"></a>Включение полей
+
+::: zone pivot="dotnet-5-0"
+Используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> или атрибут [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) для включения поля при сериализации или десериализации, как показано ниже:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31":::
+
+Чтобы пропустить поля, предназначенные только для чтения, используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType>.
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Поля не поддерживаются в System.Text.Json в .NET Core 3.1. Эта функция может быть предоставлена [пользовательскими преобразователями](system-text-json-converters-how-to.md).
+::: zone-end
 
 ## <a name="customize-json-names-and-values"></a>Настройка имен и значений JSON
 
@@ -339,15 +404,26 @@ using System.Text.Json.Serialization;
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs?name=SnippetDeserialize)]
 
-## <a name="exclude-properties-from-serialization"></a>Исключение свойства из сериализации
+## <a name="ignore-properties"></a>Игнорирование свойств
 
-По умолчанию все открытые свойства сериализуются. Если вы не хотите, чтобы некоторые из них отображались в выходных данных JSON, у вас есть несколько вариантов. В этом разделе объясняется, как выполнить исключение:
+По умолчанию все открытые свойства сериализуются. Если вы не хотите, чтобы некоторые из них отображались в выходных данных JSON, у вас есть несколько вариантов. В этом разделе объясняется, как выполнить игнорирование:
 
-* [отдельных свойств](#exclude-individual-properties);
-* [всех свойств только для чтения](#exclude-all-read-only-properties);
-* [всех свойств со значением NULL](#exclude-all-null-value-properties).
+::: zone pivot="dotnet-5-0"
 
-### <a name="exclude-individual-properties"></a>Исключение отдельных свойств
+* [отдельных свойств](#ignore-individual-properties);
+* [всех свойств только для чтения](#ignore-all-read-only-properties);
+* [всех свойств со значением NULL](#ignore-all-null-value-properties).
+* [всех свойств значений по умолчанию](#ignore-all-default-value-properties);
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* [отдельных свойств](#ignore-individual-properties);
+* [всех свойств только для чтения](#ignore-all-read-only-properties);
+* [всех свойств со значением NULL](#ignore-all-null-value-properties).
+::: zone-end
+
+### <a name="ignore-individual-properties"></a>Игнорирование индивидуальных свойств
 
 Чтобы игнорировать отдельные свойства, используйте атрибут [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute).
 
@@ -362,9 +438,22 @@ using System.Text.Json.Serialization;
 }
 ```
 
-### <a name="exclude-all-read-only-properties"></a>Исключение всех свойств только для чтения
+::: zone pivot="dotnet-5-0"
+Можно указать условное исключение, задав свойство `Condition` атрибута [ [JsonIgnore] ](xref:System.Text.Json.Serialization.JsonIgnoreAttribute). Перечисление <xref:System.Text.Json.Serialization.JsonIgnoreCondition> предоставляет следующие возможности:
 
-Свойство доступно только для чтения, если оно содержит открытый метод получения, но не является общим методом задания. Чтобы исключить все свойства только для чтения, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> значение `true`, как показано в следующем примере:
+* `Always` — свойство всегда игнорируется. Если свойство `Condition` не указано, предполагается этот параметр.
+* `Never` — свойство всегда сериализуется и десериализуется, независимо от глобальных параметров `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties` и `IgnoreReadOnlyFields`.
+* `WhenWritingDefault` — свойство не учитывается при сериализации, если оно является ссылочным типом `null` или типом значения `default`.
+* `WhenWritingNull` — свойство не учитывается при сериализации, если оно является ссылочным типом `null`.
+
+В следующем примере показано использование свойства `Condition` атрибута [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute):
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
+::: zone-end
+
+### <a name="ignore-all-read-only-properties"></a>Игнорирование всех свойств "только для чтения"
+
+Свойство доступно только для чтения, если оно содержит открытый метод получения, но не является общим методом задания. Чтобы игнорировать при сериализации все свойства "только для чтения", задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> значение `true`, как показано ниже:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeExcludeReadOnlyProperties.cs?name=SnippetSerialize)]
 
@@ -382,9 +471,21 @@ using System.Text.Json.Serialization;
 
 Этот параметр применяется только к сериализации. Во время десериализации свойства, доступные только для чтения, по умолчанию игнорируются.
 
-### <a name="exclude-all-null-value-properties"></a>Исключение всех свойств со значением NULL
+::: zone pivot="dotnet-5-0"
+Этот параметр применяется только к свойствам. Чтобы пропустить при [сериализации полей](#include-fields) поля, предназначенные только для чтения, используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType>.
+::: zone-end
 
-Чтобы исключить все свойства со значением NULL, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> значение `true`, как показано в следующем примере:
+### <a name="ignore-all-null-value-properties"></a>Игнорировать все свойства со значением NULL
+
+::: zone pivot="dotnet-5-0"
+Чтобы игнорировать все свойства со значением NULL, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> значение <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, как показано в следующем примере:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="28":::
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Чтобы игнорировать при сериализации все свойства со значением NULL, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> значение `true`, как показано в следующем примере:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs?name=SnippetSerialize)]
 
@@ -403,7 +504,21 @@ using System.Text.Json.Serialization;
 }
 ```
 
-Этот параметр применяется к сериализации и десериализации. Сведения об его влиянии на десериализацию см. в разделе [Игнорирование значений NULL при десериализации](#ignore-null-when-deserializing).
+::: zone-end
+
+### <a name="ignore-all-default-value-properties"></a>Игнорирование всех свойств со значениями по умолчанию
+
+::: zone pivot="dotnet-5-0"
+Чтобы предотвратить сериализацию значений по умолчанию в свойствах типа значения, присвойте свойству <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> значение <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, как показано ниже:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="28":::
+::: zone-end
+
+Параметр `WhenWritingDefault` также предотвращает сериализацию свойств ссылочного типа со значением NULL.
+
+::: zone pivot="dotnet-core-3-1"
+Для .NET Core 3.1. не существует встроенного способа предотвращения сериализации свойств с типом значения "по умолчанию" в System.Text.Json.
+::: zone-end
 
 ## <a name="customize-character-encoding"></a>Настройка кодировки символов
 
@@ -640,7 +755,7 @@ using System.Text.Json.Serialization;
 }
 ```
 
-При десериализации кода JSON, показанного в указанном типе, свойства `DatesAvailable` и `SummaryWords` никуда не переходят и будут потеряны. Чтобы записать дополнительные данные, такие как эти свойства, примените атрибут [JsonExtensionData](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) к свойству типа `Dictionary<string,object>` или `Dictionary<string,JsonElement>`:
+При десериализации кода JSON, показанного в указанном типе, свойства `DatesAvailable` и `SummaryWords` никуда не переходят и будут потеряны. Для записи дополнительных данных, таких как эти свойства, примените атрибут [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) к свойству типа `Dictionary<string,object>` или `Dictionary<string,JsonElement>`:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithExtensionData)]
 
@@ -677,33 +792,138 @@ using System.Text.Json.Serialization;
 
 Обратите внимание, что имя свойства `ExtensionData` не отображается в коде JSON. Такое поведение позволяет JSON выполнить круговой путь без потери дополнительных данных, которые в противном случае не будут десериализованы.
 
-## <a name="ignore-null-when-deserializing"></a>Игнорирование значений NULL при десериализации
+## <a name="preserve-references-and-handle-circular-references"></a>Сохранение ссылок и обработка циклических ссылок
 
-По умолчанию, если свойство в JSON имеет значение NULL, соответствующему свойству в целевом объекте присваивается значение NULL. В некоторых сценариях целевое свойство может иметь значение по умолчанию, и вам не будет нужно, чтобы значение NULL переопределяло значение по умолчанию.
+::: zone pivot="dotnet-5-0"
 
-Например, следующий код представляет целевой объект:
+Для сохранения ссылок и обработки циклических ссылок задайте для свойства <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> значение <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. Этот параметр приводит к следующему поведению:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
+* При сериализации:
 
-Предположим, что следующий код JSON десериализуется:
+  При написании сложных типов сериализатор также записывает свойства метаданных (`$id`, `$values`, а также `$ref`).
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": null
-}
-```
+* При десериализации:
 
-После десериализации свойство `Summary` объекта `WeatherForecastWithDefault` будет иметь значение NULL.
+  Ожидаются метаданные (не обязательно), и десериализатор пытается их распознать.
 
-Чтобы изменить это поведение, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> значение `true`, как показано в следующем примере:
+В следующем коде показано использование параметра `Preserve`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeIgnoreNull.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
 
-При использовании этого параметра свойство `Summary` объекта `WeatherForecastWithDefault` принимает значение по умолчанию No summary после десериализации.
+Эту функцию нельзя использовать для сохранения типов значений или неизменяемых типов. При десериализации экземпляр неизменяемого типа создается после считывания всех полезных данных. Поэтому для того же экземпляра невозможно будет выполнить десериализацию, если в полезных данных JSON появляется ссылка на него.
 
-Значения NULL в JSON пропускаются только в том случае, если они являются допустимыми. Значения NULL для типов значений, не допускающих значения NULL, вызывают исключения.
+Для типов значений, неизменяемых типов и массивов ссылочные метаданные не сериализуются. Если при десериализации было найдено `$ref` или `$id`, создается исключение. Однако типы значений игнорируют `$id` (и `$values` для коллекций), чтобы позволить десериализацию полезных данных, сериализованных с помощью Newtonsoft.Json.  Newtonsoft.Json выполняет сериализацию метаданных для таких типов.
+
+Для определения равенства объектов System.Text.Json использует свойство <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A?displayProperty=nameWithType>, которое при сравнении двух экземпляров объекта использует эквивалентность ссылок (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>), а не эквивалентность значений (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>).
+
+Больше о сериализации и десериализации ссылок см. в статье <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>.
+
+Класс <xref:System.Text.Json.Serialization.ReferenceResolver> определяет поведение сохранения ссылок при сериализации и десериализации. Создайте производный класс, чтобы указать настраиваемое поведение. Пример см. в статье [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+System.Text.Json в .NET Core 3.1 поддерживает сериализацию только по значению и вызывает исключение для циклических ссылок.
+::: zone-end
+
+## <a name="allow-or-write-numbers-in-quotes"></a>Разрешение или запись чисел в кавычках
+
+::: zone pivot="dotnet-5-0"
+
+Некоторые сериализаторы кодируют числа в виде строк JSON (заключены в кавычки). Например: `{"DegreesCelsius":"23"}` вместо `{"DegreesCelsius":23}`. Для сериализации или принятия чисел в кавычках во всех входных данных графа объектов задайте свойство <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType>, как показано ниже:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27-28":::
+
+Если вы используете System.Text.Json косвенно через ASP.NET Core, тогда заключенные в кавычки числа будут разрешены при десериализации, поскольку ASP.NET Core определяет [стандартные параметры веб-приложений](xref:System.Text.Json.JsonSerializerDefaults.Web).
+
+Чтобы разрешить или записать заключенные в кавычки числа для конкретных свойств, полей или типов, используйте атрибут [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+System.Text.Json в .NET Core 3.1 не поддерживает сериализацию или десериализацию чисел, заключенных в кавычки. Дополнительные сведения см. в разделе [Разрешение или запись чисел в кавычках](system-text-json-migrate-from-newtonsoft-how-to.md#allow-or-write-numbers-in-quotes).
+::: zone-end
+
+## <a name="immutable-types-and-records"></a>Неизменяемые типы и записи
+
+::: zone pivot="dotnet-5-0"
+System.Text.Json может использовать параметризованный конструктор, позволяющий десериализовать неизменяемый класс или структуру. Если для класса существует только параметризованный конструктор, тогда будет использован этот конструктор. Для структуры или класса с несколькими конструкторами укажите необходимый, применив атрибут [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A). Если атрибут не используется, тогда всегда применяется общедоступный конструктор без параметров. Атрибут используется только с общедоступными конструкторами. В следующем примере используется атрибут `[JsonConstructor]`.
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="13":::
+
+Записи в C# 9 поддерживаются, как показано в примере:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
+
+Подробнее о неизменяемых типах, чьи методы задания не являются общедоступными, см. в разделе о [методах доступа к свойствам, не являющимся общедоступными](#non-public-property-accessors).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+`JsonConstructorAttribute` и поддержка записи C# 9 недоступны в .NET Core 3.1.
+::: zone-end
+
+## <a name="non-public-property-accessors"></a>Методы доступа к свойствам, не являющимся общедоступными
+
+::: zone pivot="dotnet-5-0"
+Для включения метода доступа к свойству, не являющемуся общедоступным, используйте атрибут [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute), как показано ниже:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="12,15":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Методы доступа к свойству, не являющемуся общедоступным, не поддерживаются в .NET Core 3.1. Дополнительные сведения см. в статье [о переходе с Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
+::: zone-end
+
+## <a name="copy-jsonserializeroptions"></a>Копирование JsonSerializerOptions
+
+::: zone pivot="dotnet-5-0"
+Существует [конструктор JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)), который позволяет создавать новый экземпляр с параметрами, использованными для существующего экземпляра:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Конструктор `JsonSerializerOptions`, который принимает существующий экземпляр, недоступен в .NET Core 3.1.
+::: zone-end
+
+## <a name="web-defaults-for-jsonserializeroptions"></a>Стандартные параметры веб-приложений для JsonSerializerOptions
+
+::: zone pivot="dotnet-5-0"
+Ниже приведены параметры с различными значениями по умолчанию для веб-приложений:
+
+* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
+* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
+* <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
+
+Существует [конструктор JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)?view=net-5.0&preserve-view=true), который позволяет создавать новый экземпляр со стандартными параметрами, которые ASP.NET Core использует для веб-приложений, как показано ниже:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="24":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Ниже приведены параметры с различными значениями по умолчанию для веб-приложений:
+
+* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
+* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
+
+Конструктор `JsonSerializerOptions`, указывающий набор значений по умолчанию, недоступен в .NET Core 3.1.
+::: zone-end
+
+## <a name="httpclient-and-httpcontent-extension-methods"></a>Методы расширения HttpClient и HttpContent
+
+::: zone pivot="dotnet-5-0"
+
+Сериализация и десериализация полезных данных JSON из сети являются обычными операциями. Методы расширения в [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) и [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) позволяют выполнять эти операции в одной строке кода. Эти методы расширения используют [стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+
+В следующем примере демонстрируется применение <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> и <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
+
+Для System.Text.Json существуют также методы расширения на [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Методы расширения на `HttpClient` и `HttpContent` недоступны в System.Text.Json для .NET Core 3.1.
+::: zone-end
 
 ## <a name="utf8jsonreader-utf8jsonwriter-and-jsondocument"></a>Utf8JsonReader, Utf8JsonWriter и JsonDocument
 
