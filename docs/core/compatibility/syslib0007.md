@@ -3,12 +3,12 @@ title: Предупреждение SYSLIB0007
 description: Сведения об устаревших элементах, которые приводят к появлению предупреждения во время компиляции SYSLIB0007.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: d5410a3b3d33515e2ee6f578cad2f4deaec9c25d
-ms.sourcegitcommit: dfcbc096ad7908cd58a5f0aeabd2256f05266bac
+ms.openlocfilehash: 4c0feac1d673e3462a4f2db470825b15cf1b1706
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92333126"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439946"
 ---
 # <a name="syslib0007-default-implementations-of-cryptography-algorithms-not-supported"></a>SYSLIB0007. Реализации алгоритмов шифрования по умолчанию не поддерживаются
 
@@ -20,7 +20,7 @@ ms.locfileid: "92333126"
 - <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=fullName>
 
-## <a name="workaround"></a>Обходной путь
+## <a name="workarounds"></a>Обходные пути
 
 - Рекомендуется заменить вызовы к устаревшим API вызовами методов фабрики для конкретных алгоритмов, например <xref:System.Security.Cryptography.Aes.Create?displayProperty=nameWithType>. Таким образом, вы будете полностью контролировать алгоритмы, для которых создаются экземпляры.
 
@@ -33,6 +33,8 @@ ms.locfileid: "92333126"
   | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | Алгоритм HMACSHA1 не рекомендуется к применению для большинства современных приложений. По возможности рекомендуется использовать более надежный алгоритм. Дополнительные сведения вы можете получить у своего консультанта по вопросам безопасности. |
   | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | Алгоритм HMACSHA1 не рекомендуется к применению для большинства современных приложений. По возможности рекомендуется использовать более надежный алгоритм. Дополнительные сведения вы можете получить у своего консультанта по вопросам безопасности. |
   | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.Aes.Create?displayProperty=nameWithType> |
+
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
 
 ## <a name="see-also"></a>См. также
 

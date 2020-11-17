@@ -1,19 +1,21 @@
 ---
 title: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 description: Общий обзор процесса разработки и развертывания контейнерных приложений с помощью Docker, а также платформы и средств Microsoft.
-ms.date: 07/30/2020
-ms.openlocfilehash: c506a3423ac4511f23452192e361e88dce6efec4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 11/10/2020
+ms.openlocfilehash: cf20ea97ec252649cdb14add40ead67b6319520a
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160701"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94506666"
 ---
 # <a name="containerized-docker-application-lifecycle-with-microsoft-platform-and-tools"></a>Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 
 ![Обложка книги](./media/devops-book-cover-large-we.png)
 
 **ВЫПУСК 3.1** — обновлен до ASP.NET Core 3.1
+
+Обновления книги и вклад сообщества см. в [журнале изменений](https://aka.ms/DockerLifecycleEbookChangelog).
 
 В этом руководстве приводится общее описание процесса разработки и развертывания контейнерных приложений ASP.NET Core с помощью Docker с использованием платформы и средств Майкрософт. В этом руководстве представлено общее описание Azure DevOps для реализации конвейеров CI/CD, а также реестра контейнеров Azure (ACR) и Службы Azure Kubernetes (AKS) для развертывания.
 
@@ -37,7 +39,7 @@ ms.locfileid: "91160701"
 
 > **Боб Рассел (Bob Russell)** , специалист по решениям в корпорации Майкрософт
 >
-> [**Octal Publishing, Inc.** ](http://www.octalpub.com/)
+> [**Octal Publishing, Inc.**](http://www.octalpub.com/)
 
 Редакционная колонка:
 

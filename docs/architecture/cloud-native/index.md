@@ -2,19 +2,21 @@
 title: Разработка ориентированных на облако приложений .NET для Azure
 description: Руководство по созданию ориентированных на облако приложений, использующих контейнеры, микрослужбы и бессерверные функции Azure.
 author: ardalis
-ms.date: 05/13/2020
-ms.openlocfilehash: 172097b4915deb2d6f0b06441d7c4ca389bbca25
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.date: 11/10/2020
+ms.openlocfilehash: 673bfef27c3767f68b1c30d4383cee010ba377f0
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051510"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94506653"
 ---
 # <a name="architecting-cloud-native-net-applications-for-azure"></a>Разработка ориентированных на облако приложений .NET для Azure
 
 ![изображение обложки](./media/cover.png)
 
-**Выпуск v.1.0**
+**Выпуск 1.0**
+
+Обновления книги и вклад сообщества см. в [журнале изменений](https://aka.ms/cn-ebook-changelog).
 
 ИЗДАТЕЛЬ
 
@@ -62,7 +64,7 @@ Mac и macOS являются товарными знаками Apple Inc.
 
 > **Майра Вензел (Maira Wenzel)** , менеджер программ, команда .NET, корпорация Майкрософт
 
-## <a name="version"></a>Version
+## <a name="version"></a>Версия
 
 Руководство содержит сведения о версии **.NET Core 3.1** и множество дополнений, связанных с тем же "поколением" технологий (то есть, технологий Azure и сторонних производителей), к которому относится выпуск .NET Core 3.1.
 

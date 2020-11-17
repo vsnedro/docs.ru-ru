@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - .NET Framework, development guide
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
-ms.openlocfilehash: 73b930efa893fd2b481c4c130754154a0d10d5b4
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ef3fe36ce0c53821fb79fd7689ec6f7176af3e2f
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90547888"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440859"
 ---
 # <a name="net-framework-development-guide"></a>Руководство по разработке для .NET Framework
 
@@ -52,7 +52,7 @@ ms.locfileid: "90547888"
  [Отладка, трассировка и профилирование](./debug-trace-profile/index.md)  
  Здесь приводится описание способов тестирования, оптимизации и профилирования приложений .NET Framework и среды приложения. Информация, содержащаяся в этом разделе, предназначена как для администраторов, так и для разработчиков.  
   
- [Разработка для нескольких платформ с помощью .NET Framework](../standard/cross-platform/index.md)  
+ [Разработка для нескольких платформ с помощью .NET Framework](./cross-platform/index.md)  
  Здесь поясняется, как можно использовать платформу .NET Framework для создания сборок, которые могут совместно использоваться несколькими платформами и устройствами, такими как телефоны, настольные системы и интернет-устройства.  
   
  [Развертывание](./deployment/index.md)  
@@ -62,10 +62,12 @@ ms.locfileid: "90547888"
  Здесь приводятся сведения о кэшировании, отложенной инициализации, надежности и событиях трассировки событий Windows.  
 
 ## <a name="reference"></a>Справочник  
+
  [Библиотека классов .NET Framework](../../api/index.md?view=netframework-4.7)  
  Предоставляет синтаксис, примеры кода и сведения об использовании для каждого класса, содержащегося в пространствах имен .NET Framework.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Начало работы](./get-started/index.md)  
  Здесь содержится комплексный обзор платформы .NET Framework и ссылки на дополнительные ресурсы.  
   

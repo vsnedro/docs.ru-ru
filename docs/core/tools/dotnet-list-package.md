@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet add package
 description: Команду dotnet list package удобно использовать для получения списка ссылок на пакеты для проекта или решения.
-ms.date: 02/14/2020
-ms.openlocfilehash: 7157e56860936d10aa322854a589ae89e2bc0826
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.date: 11/11/2020
+ms.openlocfilehash: ecb83e5485c9fb49a454a35091e1a7b753b1f291
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164753"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94556892"
 ---
 # <a name="dotnet-list-package"></a>dotnet list package
 
@@ -24,7 +24,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
-    [--outdated] [--source <SOURCE>]
+    [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
 
 dotnet list package -h|--help
 ```
@@ -118,6 +118,10 @@ Project 'HelloPlugin' has the following package references
 - **`-s|--source <SOURCE>`**
 
   Источники NuGet, используемые при поиске более новых версий пакетов. Требует указать параметр `--outdated` или `--deprecated`.
+
+- **`-v|--verbosity <LEVEL>`**
+
+  Задает уровень детализации MSBuild. Допустимые значения: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` и `diag[nostic]`. Значение по умолчанию — `minimal`.
 
 ## <a name="examples"></a>Примеры
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - text files produced by MSIL Disassembler
 - disassembling file for MSIL Assembler input
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
-ms.openlocfilehash: 6f2611488e7f653783cab833ad47131978bf74aa
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: e94e80d0342f68098a08e184b6bf3f48c14e817b
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166841"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440885"
 ---
 # <a name="ildasmexe-il-disassembler"></a>Ildasm.exe (дизассемблер IL)
 
@@ -52,7 +52,7 @@ ildasm [options] [PEfilename] [options]
 |**/linenum**|Включает ссылки на строки исходного файла.|
 |**/nobar**|Подавляет вывод всплывающего окна с индикатором хода выполнения дизассемблирования.|
 |**/noca**|Подавляет вывод настраиваемых атрибутов.|
-|**/project**|Отображает метаданные в представлении для управляемого кода, а не так, как их представляет среда выполнения Windows в машинном коде. Если параметр `PEfilename` не является файлом метаданных Windows (*WINMD*-файлом), этот параметр не учитывается. См. раздел [Поддержка приложений для Магазина Windows и среды выполнения Windows в .NET Framework](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
+|**/project**|Отображает метаданные в представлении для управляемого кода, а не так, как их представляет среда выполнения Windows в машинном коде. Если параметр `PEfilename` не является файлом метаданных Windows (*WINMD*-файлом), этот параметр не учитывается. См. раздел [Поддержка приложений для Магазина Windows и среды выполнения Windows в .NET Framework](../cross-platform/support-for-windows-store-apps-and-windows-runtime.md).|
 |**/pubonly**|Дизассемблирует только открытые типы и члены. Эквивалентен **/visibility:PUB**.|
 |**/quoteallnames**|Заключает все имена в одинарные кавычки.|
 |**/raweh**|Отображает предложения обработки исключений в исходном виде.|

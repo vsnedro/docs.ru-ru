@@ -2,12 +2,12 @@
 title: Сборка приложений ASP.NET Core, развернутых как контейнеры Linux в кластерах AKS/Kubernetes
 description: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 ms.date: 08/06/2020
-ms.openlocfilehash: 8b3141d79eeb252ec3721d57293bed0e335b41d3
-ms.sourcegitcommit: a6bd4cad438fe479cbd112eae10f2cd449f06e40
+ms.openlocfilehash: 831d2372131e20788d0f48190eb8c600aa02485c
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91844567"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440833"
 ---
 # <a name="build-aspnet-core-applications-deployed-as-linux-containers-into-an-akskubernetes-orchestrator"></a>Сборка приложений ASP.NET Core, развернутых как контейнеры Linux в оркестраторе AKS/Kubernetes
 
@@ -200,7 +200,7 @@ az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku 
 ```
 
 > [!NOTE]
-> Имя реестра контейнеров (например, `exploredocker`) должно быть уникальным в пределах Azure и содержать от 5 до 50 буквенно-цифровых знаков. Дополнительные сведения см. в разделе [Создание реестра контейнеров](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry).
+> Имя реестра контейнеров (например, `exploredocker`) должно быть уникальным в пределах Azure и содержать от 5 до 50 буквенно-цифровых знаков. Дополнительные сведения см. в разделе [Создание реестра контейнеров](/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry).
 
 ### <a name="create-the-image-in-release-mode"></a>Создание образа в режиме выпуска
 
@@ -369,7 +369,7 @@ spec:
 > Предыдущие файлы `.yml` включают только порты `HTTP` с помощью параметра `ASPNETCORE_URLS`, чтобы избежать проблем с отсутствующим сертификатом в примере приложения.
 
 > [!TIP]
-> Сведения о том, как создать кластер AKS для этого примера, см. в разделе [**Развертывание в службе Azure Kubernetes (AKS)** ](deploy-azure-kubernetes-service.md) этого руководства.
+> Сведения о том, как создать кластер AKS для этого примера, см. в разделе [**Развертывание в службе Azure Kubernetes (AKS)**](deploy-azure-kubernetes-service.md) этого руководства.
 
 Теперь почти все готово для развертывания с помощью **kubectl**, но сначала нужно получить учетные данные из кластера AKS с помощью следующей команды:
 

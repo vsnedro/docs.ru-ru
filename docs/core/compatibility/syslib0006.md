@@ -3,12 +3,12 @@ title: Предупреждение SYSLIB0006
 description: Сведения об устаревших элементах, которые приводят к появлению предупреждения во время компиляции SYSLIB0006.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 45d2d8ec6ad99996f8b8f46d0c2e0ac2e02cf450
-ms.sourcegitcommit: dfcbc096ad7908cd58a5f0aeabd2256f05266bac
+ms.openlocfilehash: 222b669a8a0260713e85721e6031144bb7bda5cc
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92333145"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440664"
 ---
 # <a name="syslib0006-threadabort-is-not-supported"></a>SYSLIB0006. Thread.Abort не поддерживается
 
@@ -17,7 +17,7 @@ ms.locfileid: "92333145"
 - <xref:System.Threading.Thread.Abort?displayProperty=nameWithType>
 - <xref:System.Threading.Thread.Abort(System.Object)?displayProperty=nameWithType>
 
-## <a name="workaround"></a>Обходной путь
+## <a name="workarounds"></a>Обходные пути
 
 Используйте <xref:System.Threading.CancellationToken>, чтобы прервать обработку единицы работы вместо вызова <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. В следующем примере демонстрируется применение <xref:System.Threading.CancellationToken>.
 
@@ -35,6 +35,8 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
     }
 }
 ```
+
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
 
 ## <a name="see-also"></a>См. также
 

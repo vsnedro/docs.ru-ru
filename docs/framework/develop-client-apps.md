@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Visual C#, creating applications
 - client/server applications, Windows applications
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
-ms.openlocfilehash: 33d0ca2918e4e3b00e2b09f7a47c538bbe903dba
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e8d3a95b58cd2cabc41be31b7a4b66b1a79317d6
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90547913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439434"
 ---
 # <a name="develop-client-applications-with-net-framework"></a>Разработка клиентских приложений с использованием .NET Framework
 
@@ -39,7 +39,7 @@ ms.locfileid: "90547913"
 [.NET API для приложений UWP](../../api/index.md?view=dotnet-uwp-10.0)\
 Справочник по типам .NET, которые поддерживают приложения UWP.
   
-[Разработка для множества платформ](../standard/cross-platform/index.md)\
+[Разработка для множества платформ](./cross-platform/index.md)\
 Описание методов, которыми можно использовать .NET Framework для разных типов клиентских приложений.
 
 [Начало работы с веб-страницами ASP.NET](https://dotnet.microsoft.com/apps/aspnet/web-apps)\
