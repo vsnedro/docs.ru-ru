@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: 'Ознакомьтесь с рекомендациями по форматированию кода F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: 401c0688cd7d0a945dc469f1ab5841b21e1d4ab4
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: af98be75f21cbc594ff9cf779561d49e4965845a
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359289"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688258"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -642,21 +642,17 @@ let daysOfWeek' includeWeekend =
 
 ## <a name="formatting-if-expressions"></a>Форматирование выражений if
 
-Отступы условий зависят от размеров выражений, составляющих их. Если `cond` `e1` и `e2` короткие, просто запишите их на одной строке:
+Отступы условий зависят от размера и сложности выражений, которые их составляют.
+Просто запишите их на одной строке, когда:
+
+- `cond``e1`и `e2` являются короткими
+- `e1` и `e2` не являются `if/then/else` самими выражениями.
 
 ```fsharp
 if cond then e1 else e2
 ```
 
-Значение `cond` , если `e1` или `e2` больше, но не несколько строк:
-
-```fsharp
-if cond
-then e1
-else e2
-```
-
-Если любое из выражений имеет несколько строк:
+Если любое из выражений является многострочным или `if/then/else` выражением.
 
 ```fsharp
 if cond then
@@ -665,13 +661,26 @@ else
     e2
 ```
 
-Несколько условий с `elif` и `else` располагаются с отступом в той же области, что и `if` :
+Несколько условий с `elif` и `else` располагаются с отступом в той же области, что и `if` при соблюдении правил из выражений одной строки `if/then/else` .
 
 ```fsharp
 if cond1 then e1
 elif cond2 then e2
 elif cond3 then e3
 else e4
+```
+
+Если любое из условий или выражений является многострочным, все `if/then/else` выражение будет иметь несколько строк:
+
+```fsharp
+if cond1 then
+    e1
+elif cond2 then
+    e2
+elif cond3 then
+    e3
+else
+    e4
 ```
 
 ### <a name="pattern-matching-constructs"></a>Конструкции сопоставления шаблонов
@@ -879,6 +888,41 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
+```
+
+### <a name="formatting-constructors-static-members-and-member-invocations"></a>Конструкторы форматирования, статические члены и вызовы членов
+
+Если выражение является коротким, разделяйте аргументы пробелами и оставляйте их в одной строке.
+
+```fsharp
+let person = new Person(a1, a2)
+
+let myRegexMatch = Regex.Match(input, regex)
+
+let untypedRes = checker.ParseFile(file, source, opts)
+```
+
+Если выражение является длинным, используйте символы новой строки и отступа для одной области, а не отступа до квадратной скобки.
+
+```fsharp
+let person =
+    new Person(
+        argument1,
+        argument2
+    )
+
+let myRegexMatch =
+    Regex.Match(
+        "my longer input string with some interesting content in it",
+        "myRegexPattern"
+    )
+
+let untypedRes =
+    checker.ParseFile(
+        fileName,
+        sourceText,
+        parsingOptionsWithDefines
+    )
 ```
 
 ## <a name="formatting-attributes"></a>Атрибуты форматирования

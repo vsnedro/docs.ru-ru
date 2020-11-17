@@ -1,13 +1,13 @@
 ---
 title: Сопоставление шаблонов
 description: 'Узнайте, как шаблоны используются в F # для сравнения данных с логическими структурами, разложения данных на составляющие части или извлечения информации из данных.'
-ms.date: 08/15/2020
-ms.openlocfilehash: 6d284b941824bc15a8e872a4e28e22c0e159191d
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.date: 11/12/2020
+ms.openlocfilehash: e167712b082b7f587e41a78edcaf0a0db9c7294b
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811513"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687809"
 ---
 # <a name="pattern-matching"></a>Сопоставление шаблонов
 
@@ -47,6 +47,7 @@ match expression with
 |Шаблон вместе с аннотацией типа|*шаблон* : *тип*|`a : int`|
 |Шаблон проверки типа|:? *введите* [как *идентификатор* ]|`:? System.DateTime as dt`|
 |Шаблон NULL|null|`null`|
+|Шаблон NameOf|*NameOf expr*|`nameof str`|
 
 ## <a name="constant-patterns"></a>Шаблоны констант
 
@@ -139,7 +140,7 @@ match shape with
 
 ## <a name="cons-pattern"></a>Шаблон «против»
 
-Шаблон недостатков используется для разбиения списка на первый элемент, *заголовок*и список, содержащий остальные элементы, *хвост*.
+Шаблон недостатков используется для разбиения списка на первый элемент, *заголовок* и список, содержащий остальные элементы, *хвост*.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4809.fs)]
 
@@ -215,7 +216,23 @@ let m (a: A) =
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4817.fs)]
 
-## <a name="see-also"></a>См. также
+## <a name="nameof-pattern"></a>Шаблон NameOf
+
+`nameof`Шаблон соответствует строке, если его значение равно выражению, которое следует за `nameof` ключевым словом. Например:
+
+```fsharp
+let f (str: string) =
+    match str with
+    | nameof str -> "It's 'str'!"
+    | _ -> "It is not 'str'!"
+
+f "str" // matches
+f "asdf" // does not match
+```
+
+Сведения о [`nameof`](nameof.md) том, что можно сделать, см. в операторе.
+
+## <a name="see-also"></a>См. также:
 
 - [Выражения match](match-expressions.md)
 - [Активные шаблоны](active-patterns.md)
