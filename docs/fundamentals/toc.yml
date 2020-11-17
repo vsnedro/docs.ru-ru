@@ -43,7 +43,7 @@ items:
             href: ../core/install/templates.md
           - name: Проблемы с подтверждением подлинности в macOS
             href: ../core/install/macos-notarization-issues.md
-          - name: Проверка версий .NET Core
+          - name: Проверка версий .NET
             href: ../core/install/how-to-detect-installed-versions.md
           - name: Установка локализованной версии IntelliSense
             href: ../core/install/localized-intellisense.md
@@ -1412,6 +1412,8 @@ items:
             href: ../standard/attributes/retrieving-information-stored-in-attributes.md
   - name: Библиотеки среды выполнения.
     items:
+      - name: Обзор
+        href: ../standard/runtime-libraries-overview.md
       - name: 'Форматирование чисел, дат и других типов'
         items:
           - name: Обзор
@@ -1446,7 +1448,7 @@ items:
                 href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
               - name: 'Отображение дат в календарях, отличных от григорианского'
                 href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-      - name: Строки
+      - name: Работа со строками
         items:
           - name: Кодировка символов в .NET
             href: ../standard/base-types/character-encoding-introduction.md
@@ -1481,109 +1483,71 @@ items:
                 href: ../standard/base-types/stringbuilder.md
               - name: Практическое руководство. Выполнение базовых операций со строками
                 href: ../standard/base-types/basic-manipulations.md
-          - name: Регулярные выражения в .NET
+          - name: Анализ (преобразование) строк
             items:
               - name: Обзор
-                href: ../standard/base-types/regular-expressions.md
-                displayName: regular expressions
-              - name: Справочник по языку
-                items:
-                  - name: Обзор
-                    href: ../standard/base-types/regular-expression-language-quick-reference.md
-                  - name: Escape-символы
-                    href: ../standard/base-types/character-escapes-in-regular-expressions.md
-                  - name: Категории знаков
-                    href: ../standard/base-types/character-classes-in-regular-expressions.md
-                  - name: Привязки
-                    href: ../standard/base-types/anchors-in-regular-expressions.md
-                  - name: Конструкции группирования
-                    href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
-                  - name: Квантификаторы
-                    href: ../standard/base-types/quantifiers-in-regular-expressions.md
-                  - name: Конструкции обратных ссылок
-                    href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
-                  - name: Конструкции изменения
-                    href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
-                  - name: Подстановки
-                    href: ../standard/base-types/substitutions-in-regular-expressions.md
-                  - name: Параметры регулярных выражений
-                    href: ../standard/base-types/regular-expression-options.md
-                  - name: Прочие конструкции
-                    href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-              - name: Рекомендации по использованию регулярных выражений
-                href: ../standard/base-types/best-practices.md
-              - name: Объектная модель регулярных выражений
-                href: ../standard/base-types/the-regular-expression-object-model.md
-              - name: Поведение регулярных выражений
-                items:
-                  - name: Обзор
-                    href: ../standard/base-types/details-of-regular-expression-behavior.md
-                  - name: Поиск с возвратом
-                    href: ../standard/base-types/backtracking-in-regular-expressions.md
-                  - name: Компиляция и повторное использование
-                    href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-                  - name: Потокобезопасность
-                    href: ../standard/base-types/thread-safety-in-regular-expressions.md
-              - name: Примеры
-                items:
-                  - name: Поиск HREF
-                    href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
-                  - name: Изменение форматов даты
-                    href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-                  - name: Извлечение протокола и номера порта из URL-адреса
-                    href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
-                  - name: Исключение недопустимых символов из строки
-                    href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
-                  - name: Проверка строк на соответствие формату электронной почты
-                    href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-      - name: Анализ (преобразование) строк
+                href: ../standard/base-types/parsing-strings.md
+              - name: Анализ числовых строк
+                href: ../standard/base-types/parsing-numeric.md
+              - name: Анализ строк даты и времени
+                href: ../standard/base-types/parsing-datetime.md
+              - name: Анализ других строк
+                href: ../standard/base-types/parsing-other.md
+      - name: Регулярные выражения
         items:
           - name: Обзор
-            href: ../standard/base-types/parsing-strings.md
-          - name: Анализ числовых строк
-            href: ../standard/base-types/parsing-numeric.md
-          - name: Анализ строк даты и времени
-            href: ../standard/base-types/parsing-datetime.md
-          - name: Анализ других строк
-            href: ../standard/base-types/parsing-other.md
-      - name: Внедрение зависимостей
-        items:
-          - name: Обзор
-            href: ../core/extensions/dependency-injection.md
-            displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
-          - name: Использование внедрения зависимостей
-            href: ../core/extensions/dependency-injection-usage.md
-            displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
-          - name: Рекомендации по внедрению зависимостей
-            href: ../core/extensions/dependency-injection-guidelines.md
-            displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
-      - name: Параметр Configuration
-        items:
-          - name: Обзор
-            href: ../core/extensions/configuration.md
-            displayName: 'configuration,config,configuration sources,config sources'
-          - name: Поставщики конфигурации
-            href: ../core/extensions/configuration-providers.md
-            displayName: 'configuration providers,config providers'
-          - name: Реализация пользовательского поставщика конфигурации
-            href: ../core/extensions/custom-configuration-provider.md
-            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
-          - name: Шаблон параметров
-            href: ../core/extensions/options.md
-      - name: Ведение журнала
-        items:
-          - name: Обзор
-            href: ../core/extensions/logging.md
-          - name: Поставщики ведения журнала
-            href: ../core/extensions/logging-providers.md
-          - name: Реализация пользовательского поставщика ведения журнала
-            href: ../core/extensions/custom-logging-provider.md
-          - name: Ведение журнала с высокой производительностью
-            href: ../core/extensions/high-performance-logging.md
-          - name: Форматирование журнала консоли
-            href: ../core/extensions/console-log-formatter.md
-      - name: HostBuilder (универсальный узел)
-        href: ../core/extensions/generic-host.md
+            href: ../standard/base-types/regular-expressions.md
+            displayName: regular expressions
+          - name: Справочник по языку
+            items:
+              - name: Обзор
+                href: ../standard/base-types/regular-expression-language-quick-reference.md
+              - name: Escape-символы
+                href: ../standard/base-types/character-escapes-in-regular-expressions.md
+              - name: Категории знаков
+                href: ../standard/base-types/character-classes-in-regular-expressions.md
+              - name: Привязки
+                href: ../standard/base-types/anchors-in-regular-expressions.md
+              - name: Конструкции группирования
+                href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+              - name: Квантификаторы
+                href: ../standard/base-types/quantifiers-in-regular-expressions.md
+              - name: Конструкции обратных ссылок
+                href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+              - name: Конструкции изменения
+                href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+              - name: Подстановки
+                href: ../standard/base-types/substitutions-in-regular-expressions.md
+              - name: Параметры регулярных выражений
+                href: ../standard/base-types/regular-expression-options.md
+              - name: Прочие конструкции
+                href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+          - name: Рекомендации по использованию регулярных выражений
+            href: ../standard/base-types/best-practices.md
+          - name: Объектная модель регулярных выражений
+            href: ../standard/base-types/the-regular-expression-object-model.md
+          - name: Поведение регулярных выражений
+            items:
+              - name: Обзор
+                href: ../standard/base-types/details-of-regular-expression-behavior.md
+              - name: Поиск с возвратом
+                href: ../standard/base-types/backtracking-in-regular-expressions.md
+              - name: Компиляция и повторное использование
+                href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+              - name: Потокобезопасность
+                href: ../standard/base-types/thread-safety-in-regular-expressions.md
+          - name: Примеры
+            items:
+              - name: Поиск HREF
+                href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+              - name: Изменение форматов даты
+                href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+              - name: Извлечение протокола и номера порта из URL-адреса
+                href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+              - name: Исключение недопустимых символов из строки
+                href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+              - name: Проверка строк на соответствие формату электронной почты
+                href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
       - name: Сериализация
         items:
           - name: Обзор
@@ -1753,6 +1717,44 @@ items:
             href: ../standard/io/memory-mapped-files.md
       - name: Класс System.Console
         href: ../standard/building-console-apps.md
+      - name: Внедрение зависимостей
+        items:
+          - name: Обзор
+            href: ../core/extensions/dependency-injection.md
+            displayName: 'dependency injection,di,ioc,ioc container,dependency container,inversion of control'
+          - name: Использование внедрения зависимостей
+            href: ../core/extensions/dependency-injection-usage.md
+            displayName: 'use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control'
+          - name: Рекомендации по внедрению зависимостей
+            href: ../core/extensions/dependency-injection-guidelines.md
+            displayName: 'dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control'
+      - name: Параметр Configuration
+        items:
+          - name: Обзор
+            href: ../core/extensions/configuration.md
+            displayName: 'configuration,config,configuration sources,config sources'
+          - name: Поставщики конфигурации
+            href: ../core/extensions/configuration-providers.md
+            displayName: 'configuration providers,config providers'
+          - name: Реализация пользовательского поставщика конфигурации
+            href: ../core/extensions/custom-configuration-provider.md
+            displayName: 'custom configuration,custom config,custom configuration provider,custom config provider'
+          - name: Шаблон параметров
+            href: ../core/extensions/options.md
+      - name: Ведение журнала
+        items:
+          - name: Обзор
+            href: ../core/extensions/logging.md
+          - name: Поставщики ведения журнала
+            href: ../core/extensions/logging-providers.md
+          - name: Реализация пользовательского поставщика ведения журнала
+            href: ../core/extensions/custom-logging-provider.md
+          - name: Ведение журнала с высокой производительностью
+            href: ../core/extensions/high-performance-logging.md
+          - name: Форматирование журнала консоли
+            href: ../core/extensions/console-log-formatter.md
+      - name: HostBuilder (универсальный узел)
+        href: ../core/extensions/generic-host.md
   - name: Доступ к данным
     items:
       - name: LINQ
