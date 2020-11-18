@@ -1,7 +1,6 @@
 ---
 title: Даты, время и часовые пояса
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - time zone objects [.NET]
 - date and time data [.NET]
@@ -9,12 +8,12 @@ helpviewer_keywords:
 - times [.NET], time zones
 - time [.NET], time zones
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
-ms.openlocfilehash: 1200f7edc3ac40a67ecfa2f554c5c721877e755a
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: b9dbbfa30c3398a984432fb0ecb8d0052c425f51
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063681"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817904"
 ---
 # <a name="dates-times-and-time-zones"></a>Даты, время и часовые пояса
 
@@ -34,7 +33,7 @@ ms.locfileid: "93063681"
 
 Этот раздел документации содержит сведения, необходимые для работы с часовыми поясами и создания приложений, поддерживающих часовые пояса и способных преобразовывать дату и время из одного часового пояса в другой.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>Содержимое раздела
 
 [Общие сведения о часовых поясах](time-zone-overview.md) Описание терминологии, основных понятий и вопросов, связанных с созданием приложений, поддерживающих часовые пояса.
 

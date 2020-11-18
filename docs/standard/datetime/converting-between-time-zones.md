@@ -2,7 +2,6 @@
 title: Преобразование времени из одного часового пояса в другой
 description: Узнайте, как преобразовать время между двумя часовыми поясами в .NET. Также научитесь преобразовывать значения DateTimeOffset с ограниченным часовым поясом.
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - converting times
 - local time conversions
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
-ms.openlocfilehash: 3539b3c2b71be331bdea3161b7e8ba6da407cbab
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: b42b4c07b9b5f376c34a70d7400218c50296f324
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063837"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818034"
 ---
 # <a name="converting-times-between-time-zones"></a>Преобразование времени из одного часового пояса в другой
 
@@ -119,7 +118,7 @@ ms.locfileid: "93063837"
 [!code-csharp[System.DateTimeOffset.Conceptual.OffsetConversions#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.OffsetConversions/cs/timeconversions2.cs#2)]
 [!code-vb[System.DateTimeOffset.Conceptual.OffsetConversions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.OffsetConversions/vb/TimeConversions2.vb#2)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.TimeZoneInfo>
 - [Даты, время и часовые пояса](index.md)

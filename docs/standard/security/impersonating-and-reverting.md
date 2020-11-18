@@ -1,7 +1,6 @@
 ---
 title: Олицетворение и возвращение
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - security [.NET], impersonating Windows accounts
 - impersonating Windows accounts
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
-ms.openlocfilehash: 7eecc7d6cb3fa4cc1c1bd971d36f9d3ca47a7144
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 90f43510eb0e71fb324012fa00ac08f9ee3292ac
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555684"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820063"
 ---
 # <a name="impersonating-and-reverting"></a>Олицетворение и возвращение
 
@@ -64,7 +63,7 @@ ms.locfileid: "87555684"
   
  Обратите внимание, что ни **олицетворение** , ни **Отмена** изменений не изменяет объект **Principal** ( <xref:System.Security.Principal.IPrincipal> ), связанный с текущим контекстом вызова. Вместо этого при олицетворении и возврате изменяется маркер, связанный с текущим процессом операционной системы.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Security.Principal.WindowsIdentity>
 - <xref:System.Security.Principal.WindowsImpersonationContext>

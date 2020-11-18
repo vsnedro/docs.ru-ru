@@ -2,7 +2,6 @@
 title: Именование ресурсов
 description: Ознакомьтесь с рекомендациями по именованию ресурсов в .NET, которые похожи на рекомендации по именованию свойств.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - names [.NET Framework], localized resources
 - localization, naming guidelines
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - global applications, naming guidelines
 - international applications, naming guidelines
 ms.assetid: 8b0e97f3-7877-44fd-bc76-e05d36d5d79c
-ms.openlocfilehash: 765337bcf9fad4f9a8c9272a15b5c77d02770471
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: c01e041edbf30813c477e579867abb9099ce0528
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768252"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820856"
 ---
 # <a name="naming-resources"></a>Именование ресурсов
 Так как на локализуемые ресурсы можно ссылаться через определенные объекты, как если бы они были свойствами, рекомендации по именованию ресурсов похожи на правила свойств.
@@ -24,7 +23,7 @@ ms.locfileid: "84768252"
 
  ✔️ предоставлять описательные, а не короткие идентификаторы.
 
- ❌НЕ используйте ключевые слова, относящиеся к языку, для основных языков CLR.
+ ❌ НЕ используйте ключевые слова, относящиеся к языку, для основных языков CLR.
 
  ✔️ использовать в качестве имен ресурсов только буквы, цифры и символы подчеркивания.
 
@@ -39,7 +38,7 @@ ms.locfileid: "84768252"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

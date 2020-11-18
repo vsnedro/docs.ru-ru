@@ -2,7 +2,6 @@
 title: Правила именования
 description: В этом обзоре прочитайте о соглашениях об именовании, используемых при разработке платформ. Перейдите к статьям, описывающим регистр букв, общее именование и другие рекомендации.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - names [.NET Framework], about naming guidelines
 - naming guidelines [.NET Framework]
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - names [.NET Framework]
 - format naming guidelines [.NET Framework]
 ms.assetid: fc076d66-9b5f-42d3-aa65-61d970c794a3
-ms.openlocfilehash: fbcf5ef5eb02a5e45b5c981b4247ffe1c9c2631b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e82b6941d3ea0243f4ae16bc9d42ea8d1f1fccfb
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84447151"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820882"
 ---
 # <a name="naming-guidelines"></a>Правила именования
 В соответствии с единообразным набором соглашений об именовании в разработке платформы может быть основная составляющая удобства использования платформы. Он позволяет использовать платформу многими разработчиками в широко разделенных проектах. Помимо согласованности форм, имена элементов платформы должны быть легко понятны и должны передавать функцию каждого элемента.  
@@ -39,6 +38,6 @@ ms.locfileid: "84447151"
   
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию платформы](index.md)

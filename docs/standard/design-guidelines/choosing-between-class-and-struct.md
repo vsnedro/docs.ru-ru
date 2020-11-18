@@ -2,7 +2,6 @@
 title: Выбор между классом и структурой
 description: Узнайте, как определить, следует ли проектировать тип как класс или спроектировать тип как структуру. Узнайте, как ссылочные типы и типы значений отличаются в .NET.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - class library design guidelines [.NET Framework], structures
 - class library design guidelines [.NET Framework], classes
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - classes [.NET Framework], vs. structures
 - type design guidelines, classes
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
-ms.openlocfilehash: 9d757e77292c1226fbe2328cce082033ae8f7003
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: b1f3d36f4a9b6e44451a8534ca79fb674071a955
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662606"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94821480"
 ---
 # <a name="choosing-between-class-and-struct"></a>Выбор между классом и структурой
 Одним из основных решений по проектированию каждого разработчика инфраструктуры является необходимость разрабатывать тип как класс (ссылочный тип) или как структура (тип значения). Чтобы сделать это, важно понимать различия в поведении ссылочных типов и типов значений.
@@ -37,7 +36,7 @@ ms.locfileid: "84662606"
 
  ✔️ Рассмотрите возможность определения структуры вместо класса, если экземпляры типа небольшие и часто используются кратковременно или обычно внедряются в другие объекты.
 
- ❌НЕ следует определять структуру, если тип имеет не все приведенные ниже характеристики.
+ ❌ НЕ следует определять структуру, если тип имеет не все приведенные ниже характеристики.
 
 - Он логически представляет одно значение, аналогично примитивным типам ( `int` , `double` и т. д.).
 
@@ -53,7 +52,7 @@ ms.locfileid: "84662606"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

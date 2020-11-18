@@ -1,7 +1,6 @@
 ---
 title: Практическое руководство. Доступ к предварительно определенным объектам UTC и объектам местных часовых поясов
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - time zones [.NET], retrieving
 - time zones [.NET], UTC
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-ms.openlocfilehash: 598cd631fab1ddc115bc6153580351b1dc14d5bf
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: b92ac812ed0bd0e80bb3a6ab03b52746eb15db97
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063889"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818112"
 ---
 # <a name="how-to-access-the-predefined-utc-and-local-time-zone-objects"></a>Практическое руководство. Доступ к предварительно определенным объектам UTC и объектам местных часовых поясов
 
@@ -51,7 +50,7 @@ ms.locfileid: "93063889"
 
 - , Что <xref:System> пространство имен должно быть импортировано с помощью `using` оператора (требуется в коде C#).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Даты, время и часовые пояса](index.md)
 - [Поиск часового пояса, заданного в локальной системе](finding-the-time-zones-on-local-system.md)

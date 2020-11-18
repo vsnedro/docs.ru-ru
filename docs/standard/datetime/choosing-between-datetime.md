@@ -2,7 +2,6 @@
 title: Сравнение значений DateTime, DateTimeOffset, TimeSpan и TimeZoneInfo
 description: Сведения о различиях между типами DateTime, DateTimeOffset, TimeSpan и TimeZoneInfo для представления сведений о дате и времени в .NET.
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - time zones [.NET], type options
 - DateTime structure
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
-ms.openlocfilehash: 5d6173642e88165bb52d5d9cfc85c8889ce763a5
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: 23c846dfd634e476b60ffd867519a60a0ae6b6cf
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063876"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818099"
 ---
 # <a name="choose-between-datetime-datetimeoffset-timespan-and-timezoneinfo"></a>Выбор между типами DateTime, DateTimeOffset, TimeSpan и TimeZoneInfo
 
@@ -119,6 +118,6 @@ ms.locfileid: "93063876"
 
 Чтобы воспользоваться преимуществами поддержки часовых поясов в .NET, необходимо знание часового пояса, к которому принадлежит значение даты и времени при создании экземпляра объекта даты и времени. Часовой пояс часто неизвестен, особенно в веб-или сетевых приложениях.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Даты, время и часовые пояса](index.md)

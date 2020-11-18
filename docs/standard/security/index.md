@@ -2,25 +2,24 @@
 title: Безопасность в .NET
 description: Сведения о безопасности в .NET. Используйте ссылки, описывающие основные понятия безопасности, безопасность на основе ролей, модель шифрования и рекомендации по безопасному кодированию.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - .NET, security
 - security [.NET], about security
 - application development [.NET], security
 - security [.NET]
 ms.assetid: 9a9621d7-8883-4a4f-a874-65e8e09e20a6
-ms.openlocfilehash: 783cb8274d1fafe85d58758a36fae5d671f656f8
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: aee3fc66916a4bb6e7a4e3c496eb9b38356ad6e7
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557116"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819985"
 ---
 # <a name="security-in-net"></a>Безопасность в .NET
 
 Среда CLR и .NET предоставляют множество полезных классов и служб, которые позволяют разработчикам писать безопасный код, использовать шифрование и реализовывать безопасность на основе ролей.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>Содержимое раздела
 
 - [Основные понятия безопасности](key-security-concepts.md)  
 Обзор функций безопасности среды CLR.

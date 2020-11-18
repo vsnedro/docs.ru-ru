@@ -1,23 +1,22 @@
 ---
 title: Массивы
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - class library design guidelines [.NET Framework], arrays
 - arrays [.NET Framework], usage guidelines
 - empty arrays
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-ms.openlocfilehash: 30277507050091de6b1e9293401d61ac5e351a1f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: c3545c609b6544e6528bbae08889d0ef20473802
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280625"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94821610"
 ---
 # <a name="arrays"></a>Массивы
 ✔️ предпочитаете использовать коллекции через массивы в общедоступных API. Раздел [Collections](guidelines-for-collections.md) содержит сведения о выборе между коллекциями и массивами.
 
- ❌Не используйте поля массива, доступного только для чтения. Само поле доступно только для чтения и не может быть изменено, но элементы массива могут быть изменены.
+ ❌ Не используйте поля массива, доступного только для чтения. Само поле доступно только для чтения и не может быть изменено, но элементы массива могут быть изменены.
 
  ✔️ Рассмотрите возможность использования немассивных массивов вместо многомерных массивов.
 
@@ -27,7 +26,7 @@ ms.locfileid: "84280625"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - <xref:System.Array>
 - [Рекомендации по проектированию платформы](index.md)

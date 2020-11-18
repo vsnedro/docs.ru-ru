@@ -1,7 +1,6 @@
 ---
 title: Практическое руководство. Сохранение часовых поясов во внедренном ресурсе
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-ms.openlocfilehash: 3d355003b3e6309644fa1ccaf779b2e63b0523d2
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: 23f86076b2858404f3dbc900d8c40a6509abe8db
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063408"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817605"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>Практическое руководство. Сохранение часовых поясов во внедренном ресурсе
 
@@ -55,7 +54,7 @@ ms.locfileid: "93063408"
 
 9. Добавьте созданный RESX файл в проект приложения Visual Studio.
 
-10. С помощью окна **Свойства** в Visual Studio убедитесь, что для свойства **действие сборки** RESX-файла задано значение **внедренный ресурс** .
+10. С помощью окна **Свойства** в Visual Studio убедитесь, что для свойства **действие сборки** RESX-файла задано значение **внедренный ресурс**.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +67,7 @@ ms.locfileid: "93063408"
 
 Поскольку <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> метод добавляет полные данные заголовка в файл ресурсов XML .NET, он не может использоваться для добавления ресурсов в существующий файл. Этот пример обрабатывает это путем проверки файла Сериализедтимезонес. resx и (если он существует), сохраняя все ресурсы, кроме двух сериализованных часовых поясов, в универсальный <xref:System.Collections.Generic.Dictionary%602> объект. После этого существующий файл удаляется, а существующие ресурсы добавляются в новый файл Сериализедтимезонес. resx. Сериализованные данные часового пояса также добавляются в этот файл.
 
-Поля ключа (или **имени** ) ресурсов не должны содержать пробелы. <xref:System.String.Replace%28System.String%2CSystem.String%29>Метод вызывается для удаления всех внедренных пробелов в идентификаторах часовых поясов до их назначения в файл ресурсов.
+Поля ключа (или **имени**) ресурсов не должны содержать пробелы. <xref:System.String.Replace%28System.String%2CSystem.String%29>Метод вызывается для удаления всех внедренных пробелов в идентификаторах часовых поясов до их назначения в файл ресурсов.
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
@@ -81,7 +80,7 @@ ms.locfileid: "93063408"
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Даты, время и часовые пояса](index.md)
 - [Общие сведения о часовых поясах](time-zone-overview.md)

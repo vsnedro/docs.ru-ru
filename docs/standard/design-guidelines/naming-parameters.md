@@ -2,17 +2,16 @@
 title: Именование параметров
 description: Ознакомьтесь с рекомендациями по именованию параметров. Например, используйте описательные имена параметров & Camel, & рассмотрите возможность именования на основе значения, а не типа.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - parameters, names
 - names [.NET Framework], parameters
 ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
-ms.openlocfilehash: 54f37c4d6a0f9a6931fa69d612bf0e45bf1f2ce7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b62cfbd58f671745054c557041e5d60af345c8d3
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583522"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820843"
 ---
 # <a name="naming-parameters"></a>Именование параметров
 Помимо очевидной причины удобочитаемости, важно следовать рекомендациям по именам параметров, так как параметры отображаются в документации и в конструкторе, когда визуальные средства проектирования предоставляют функции IntelliSense и просмотра классов.
@@ -30,13 +29,13 @@ ms.locfileid: "84583522"
 
  ✔️ Рассмотрите осмысленные имена для параметров перегрузки оператора, если это складывает значительное значение.
 
- ❌НЕ используйте аббревиатуры или числовые индексы для имен параметров перегрузки оператора.
+ ❌ НЕ используйте аббревиатуры или числовые индексы для имен параметров перегрузки оператора.
 
  *Части © 2005, 2009 Корпорация Майкрософт. Все права защищены.*
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

@@ -1,7 +1,6 @@
 ---
 title: Поиск часового пояса, заданного в локальной системе
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - time zones [.NET], local
 - time zones [.NET], finding local system time zones
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - UTC times, finding local system time zones
 - time zones [.NET], UTC
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
-ms.openlocfilehash: c968c7891a4fc9b77ed6224a9fc5f8f6d8f5d80b
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: 02467e10494e72c83ad9521228f6c4151c4a6bd1
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063694"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817943"
 ---
 # <a name="finding-the-time-zones-defined-on-a-local-system"></a>Поиск часового пояса, заданного в локальной системе
 
@@ -35,7 +34,7 @@ ms.locfileid: "93063694"
 
 Идентификатор часового пояса — это важнейшее поле, которое уникально идентифицирует часовой пояс. Несмотря на то что большинство ключей являются относительно короткими, идентификатор часового пояса относительно длинный. В большинстве случаев его значение соответствует свойству <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=nameWithType>, которое используется для предоставления имени стандартному времени часового пояса. Однако существуют исключения. Лучшим способом убедиться, что предоставлен действительный идентификатор, является выполнение перечисления доступных в системе часовых поясов и отслеживание связанных с ними идентификаторов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Даты, время и часовые пояса](index.md)
 - [Как получить доступ к стандартным объектам времени в формате UTC и местному часовому поясу](access-utc-and-local.md)
