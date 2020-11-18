@@ -2,7 +2,6 @@
 title: Практическое руководство. Использование защиты данных
 description: Узнайте, как использовать защиту данных путем доступа к API защиты данных (DPAPI) в .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -17,58 +16,58 @@ helpviewer_keywords:
 - decryption
 - data [.NET], encryption
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
-ms.openlocfilehash: d3fe7ef3ddbc6e75a248101829b11a8abcb3c15a
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: ed1b18e2c6456b53559e8fb7e989f148fefd35c7
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282058"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820102"
 ---
-# <a name="how-to-use-data-protection"></a><span data-ttu-id="1b5f2-103">Практическое руководство. Использование защиты данных</span><span class="sxs-lookup"><span data-stu-id="1b5f2-103">How to: Use Data Protection</span></span>
+# <a name="how-to-use-data-protection"></a><span data-ttu-id="d0b22-103">Практическое руководство. Использование защиты данных</span><span class="sxs-lookup"><span data-stu-id="d0b22-103">How to: Use Data Protection</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1b5f2-104">Эта статья относится к Windows.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-104">This article applies to Windows.</span></span>
+> <span data-ttu-id="d0b22-104">Эта статья относится к Windows.</span><span class="sxs-lookup"><span data-stu-id="d0b22-104">This article applies to Windows.</span></span>
 >
-> <span data-ttu-id="1b5f2-105">Дополнительные сведения о ASP.NET Core см. в разделе [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).</span><span class="sxs-lookup"><span data-stu-id="1b5f2-105">For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).</span></span>
+> <span data-ttu-id="d0b22-105">Дополнительные сведения о ASP.NET Core см. в разделе [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).</span><span class="sxs-lookup"><span data-stu-id="d0b22-105">For information about ASP.NET Core, see [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction).</span></span>
 
-<span data-ttu-id="1b5f2-106">.NET предоставляет доступ к API защиты данных (DPAPI), который позволяет шифровать данные с помощью информации из текущей учетной записи пользователя или компьютера.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-106">.NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.</span></span>  <span data-ttu-id="1b5f2-107">Использование API защиты данных позволяет упростить сложную задачу явного создания и хранения криптографического ключа.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-107">When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.</span></span>  
+<span data-ttu-id="d0b22-106">.NET предоставляет доступ к API защиты данных (DPAPI), который позволяет шифровать данные с помощью информации из текущей учетной записи пользователя или компьютера.</span><span class="sxs-lookup"><span data-stu-id="d0b22-106">.NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.</span></span>  <span data-ttu-id="d0b22-107">Использование API защиты данных позволяет упростить сложную задачу явного создания и хранения криптографического ключа.</span><span class="sxs-lookup"><span data-stu-id="d0b22-107">When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.</span></span>  
   
-<span data-ttu-id="1b5f2-108">Используйте класс <xref:System.Security.Cryptography.ProtectedData> для шифрования копии массива байтов.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-108">Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes.</span></span> <span data-ttu-id="1b5f2-109">Эта функция доступна в .NET Framework, .NET Core и .NET 5.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-109">This functionality is available in .NET Framework, .NET Core, and .NET 5.</span></span>  <span data-ttu-id="1b5f2-110">Можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы только той же учетной записью, либо можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы любой учетной записью на компьютере.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-110">You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.</span></span>  <span data-ttu-id="1b5f2-111">Подробное описание параметров <xref:System.Security.Cryptography.ProtectedData> см. в разделе, посвященном перечислению <xref:System.Security.Cryptography.DataProtectionScope>.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-111">See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.</span></span>  
+<span data-ttu-id="d0b22-108">Используйте класс <xref:System.Security.Cryptography.ProtectedData> для шифрования копии массива байтов.</span><span class="sxs-lookup"><span data-stu-id="d0b22-108">Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes.</span></span> <span data-ttu-id="d0b22-109">Эта функция доступна в .NET Framework, .NET Core и .NET 5.</span><span class="sxs-lookup"><span data-stu-id="d0b22-109">This functionality is available in .NET Framework, .NET Core, and .NET 5.</span></span>  <span data-ttu-id="d0b22-110">Можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы только той же учетной записью, либо можно указать, что данные, зашифрованные текущей учетной записью пользователя, могут быть расшифрованы любой учетной записью на компьютере.</span><span class="sxs-lookup"><span data-stu-id="d0b22-110">You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.</span></span>  <span data-ttu-id="d0b22-111">Подробное описание параметров <xref:System.Security.Cryptography.ProtectedData> см. в разделе, посвященном перечислению <xref:System.Security.Cryptography.DataProtectionScope>.</span><span class="sxs-lookup"><span data-stu-id="d0b22-111">See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.</span></span>  
   
-## <a name="encrypt-data-to-a-file-or-stream-using-data-protection"></a><span data-ttu-id="1b5f2-112">Шифрование данных в файл или поток с помощью защиты данных</span><span class="sxs-lookup"><span data-stu-id="1b5f2-112">Encrypt data to a file or stream using data protection</span></span>  
+## <a name="encrypt-data-to-a-file-or-stream-using-data-protection"></a><span data-ttu-id="d0b22-112">Шифрование данных в файл или поток с помощью защиты данных</span><span class="sxs-lookup"><span data-stu-id="d0b22-112">Encrypt data to a file or stream using data protection</span></span>  
   
-1. <span data-ttu-id="1b5f2-113">Создайте случайную энтропию.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-113">Create random entropy.</span></span>  
+1. <span data-ttu-id="d0b22-113">Создайте случайную энтропию.</span><span class="sxs-lookup"><span data-stu-id="d0b22-113">Create random entropy.</span></span>  
   
-2. <span data-ttu-id="1b5f2-114">Вызовите статический метод <xref:System.Security.Cryptography.ProtectedData.Protect%2A> во время передачи массива байтов для шифрования, энтропии и области защиты данных.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-114">Call the static <xref:System.Security.Cryptography.ProtectedData.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.</span></span>  
+2. <span data-ttu-id="d0b22-114">Вызовите статический метод <xref:System.Security.Cryptography.ProtectedData.Protect%2A> во время передачи массива байтов для шифрования, энтропии и области защиты данных.</span><span class="sxs-lookup"><span data-stu-id="d0b22-114">Call the static <xref:System.Security.Cryptography.ProtectedData.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.</span></span>  
   
-3. <span data-ttu-id="1b5f2-115">Запишите зашифрованные данные в файл или поток.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-115">Write the encrypted data to a file or stream.</span></span>  
+3. <span data-ttu-id="d0b22-115">Запишите зашифрованные данные в файл или поток.</span><span class="sxs-lookup"><span data-stu-id="d0b22-115">Write the encrypted data to a file or stream.</span></span>  
   
-### <a name="to-decrypt-data-from-a-file-or-stream-using-data-protection"></a><span data-ttu-id="1b5f2-116">Расшифровка данных из файла или потока при помощи функции защиты данных</span><span class="sxs-lookup"><span data-stu-id="1b5f2-116">To decrypt data from a file or stream using data protection</span></span>  
+### <a name="to-decrypt-data-from-a-file-or-stream-using-data-protection"></a><span data-ttu-id="d0b22-116">Расшифровка данных из файла или потока при помощи функции защиты данных</span><span class="sxs-lookup"><span data-stu-id="d0b22-116">To decrypt data from a file or stream using data protection</span></span>  
   
-1. <span data-ttu-id="1b5f2-117">Считайте зашифрованные данные из файла или потока.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-117">Read the encrypted data from a file or stream.</span></span>  
+1. <span data-ttu-id="d0b22-117">Считайте зашифрованные данные из файла или потока.</span><span class="sxs-lookup"><span data-stu-id="d0b22-117">Read the encrypted data from a file or stream.</span></span>  
   
-2. <span data-ttu-id="1b5f2-118">Вызовите статический метод <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> во время передачи массива байтов для расшифровки и области защиты данных.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-118">Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method while passing an array of bytes to decrypt and the data protection scope.</span></span>  
+2. <span data-ttu-id="d0b22-118">Вызовите статический метод <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> во время передачи массива байтов для расшифровки и области защиты данных.</span><span class="sxs-lookup"><span data-stu-id="d0b22-118">Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method while passing an array of bytes to decrypt and the data protection scope.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="1b5f2-119">Пример</span><span class="sxs-lookup"><span data-stu-id="1b5f2-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d0b22-119">Пример</span><span class="sxs-lookup"><span data-stu-id="d0b22-119">Example</span></span>
 
-<span data-ttu-id="1b5f2-120">В следующем примере кода показаны два вида шифрования и расшифровки.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-120">The following code example demonstrates two forms of encryption and decryption.</span></span>  <span data-ttu-id="1b5f2-121">Сначала пример кода выполняет шифрование и расшифровку массива байтов в памяти.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-121">First, the code example encrypts and then decrypts an in-memory array of bytes.</span></span>  <span data-ttu-id="1b5f2-122">Далее этот пример кода шифрует копию массива байтов, сохраняет его в файл, загружает данные обратно из файла и затем расшифровывает эти данные.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-122">Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.</span></span>  <span data-ttu-id="1b5f2-123">В примере отображаются исходные данные, зашифрованные данные и расшифрованные данные.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-123">The example displays the original data, the encrypted data, and the decrypted data.</span></span>
+<span data-ttu-id="d0b22-120">В следующем примере кода показаны два вида шифрования и расшифровки.</span><span class="sxs-lookup"><span data-stu-id="d0b22-120">The following code example demonstrates two forms of encryption and decryption.</span></span>  <span data-ttu-id="d0b22-121">Сначала пример кода выполняет шифрование и расшифровку массива байтов в памяти.</span><span class="sxs-lookup"><span data-stu-id="d0b22-121">First, the code example encrypts and then decrypts an in-memory array of bytes.</span></span>  <span data-ttu-id="d0b22-122">Далее этот пример кода шифрует копию массива байтов, сохраняет его в файл, загружает данные обратно из файла и затем расшифровывает эти данные.</span><span class="sxs-lookup"><span data-stu-id="d0b22-122">Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.</span></span>  <span data-ttu-id="d0b22-123">В примере отображаются исходные данные, зашифрованные данные и расшифрованные данные.</span><span class="sxs-lookup"><span data-stu-id="d0b22-123">The example displays the original data, the encrypted data, and the decrypted data.</span></span>
 
 [!code-csharp[DPAPI-HowTO#1](../../../samples/snippets/csharp/VS_Snippets_CLR/DPAPI-HowTO/cs/sample.cs#1)]
 [!code-vb[DPAPI-HowTO#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DPAPI-HowTO/vb/sample.vb#1)]  
   
-## <a name="compiling-the-code"></a><span data-ttu-id="1b5f2-124">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="1b5f2-124">Compiling the Code</span></span>  
+## <a name="compiling-the-code"></a><span data-ttu-id="d0b22-124">Компиляция кода</span><span class="sxs-lookup"><span data-stu-id="d0b22-124">Compiling the Code</span></span>  
 
-<span data-ttu-id="1b5f2-125">Этот пример компилируется и выполняется только при нацеливании на .NET Framework и выполняется в Windows.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-125">This example compiles and runs only when targeting .NET Framework and running on Windows.</span></span>
+<span data-ttu-id="d0b22-125">Этот пример компилируется и выполняется только при нацеливании на .NET Framework и выполняется в Windows.</span><span class="sxs-lookup"><span data-stu-id="d0b22-125">This example compiles and runs only when targeting .NET Framework and running on Windows.</span></span>
 
-- <span data-ttu-id="1b5f2-126">Включите ссылку на `System.Security.dll`.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-126">Include a reference to `System.Security.dll`.</span></span>  
+- <span data-ttu-id="d0b22-126">Включите ссылку на `System.Security.dll`.</span><span class="sxs-lookup"><span data-stu-id="d0b22-126">Include a reference to `System.Security.dll`.</span></span>  
   
-- <span data-ttu-id="1b5f2-127">Включите пространство имен <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography> и <xref:System.Text>.</span><span class="sxs-lookup"><span data-stu-id="1b5f2-127">Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.</span></span>  
+- <span data-ttu-id="d0b22-127">Включите пространство имен <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography> и <xref:System.Text>.</span><span class="sxs-lookup"><span data-stu-id="d0b22-127">Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1b5f2-128">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="1b5f2-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d0b22-128">См. также статью</span><span class="sxs-lookup"><span data-stu-id="d0b22-128">See also</span></span>
 
-- [<span data-ttu-id="1b5f2-129">Модель криптографии</span><span class="sxs-lookup"><span data-stu-id="1b5f2-129">Cryptography Model</span></span>](cryptography-model.md)
-- [<span data-ttu-id="1b5f2-130">службы шифрования</span><span class="sxs-lookup"><span data-stu-id="1b5f2-130">Cryptographic Services</span></span>](cryptographic-services.md)
-- [<span data-ttu-id="1b5f2-131">Кросс-платформенная криптография</span><span class="sxs-lookup"><span data-stu-id="1b5f2-131">Cross-Platform Cryptography</span></span>](cross-platform-cryptography.md)
+- [<span data-ttu-id="d0b22-129">Модель криптографии</span><span class="sxs-lookup"><span data-stu-id="d0b22-129">Cryptography Model</span></span>](cryptography-model.md)
+- [<span data-ttu-id="d0b22-130">службы шифрования</span><span class="sxs-lookup"><span data-stu-id="d0b22-130">Cryptographic Services</span></span>](cryptographic-services.md)
+- [<span data-ttu-id="d0b22-131">Кросс-платформенная криптография</span><span class="sxs-lookup"><span data-stu-id="d0b22-131">Cross-Platform Cryptography</span></span>](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.ProtectedMemory>
 - <xref:System.Security.Cryptography.ProtectedData>
-- [<span data-ttu-id="1b5f2-132">ASP.NET Core Защита данных</span><span class="sxs-lookup"><span data-stu-id="1b5f2-132">ASP.NET Core Data Protection</span></span>](/aspnet/core/security/data-protection/introduction)
+- [<span data-ttu-id="d0b22-132">ASP.NET Core Защита данных</span><span class="sxs-lookup"><span data-stu-id="d0b22-132">ASP.NET Core Data Protection</span></span>](/aspnet/core/security/data-protection/introduction)
