@@ -1,7 +1,6 @@
 ---
 title: Основные понятия безопасности
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - permissions [.NET]
 - security [.NET], about security
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-ms.openlocfilehash: 5dedf6df8e6cf2cf886e68cc132a44abfb201c49
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a9f0703217b55c90c4e98503402d3fbf60a45ea7
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554401"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831069"
 ---
 # <a name="key-security-concepts"></a>Основные понятия безопасности
 
@@ -75,6 +74,6 @@ ms.locfileid: "90554401"
 
 Авторизация — это процесс определения, разрешено ли участнику выполнять запрошенное действие. Авторизация происходит после проверки подлинности и использует сведения об удостоверении и ролях участника, чтобы определить, к каким ресурсам имеет доступ этот участник. Для реализации авторизации можно использовать безопасность на основе ролей в .NET.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Безопасность ASP.NET Core](/aspnet/core/security/)

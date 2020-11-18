@@ -2,19 +2,18 @@
 title: Имена сборок и библиотек DLL
 description: Ознакомьтесь с рекомендациями по именованию сборок и библиотек динамической компоновки (DLL). Сборка может охватывать один или несколько файлов, но обычно она сопоставляется один к одному с библиотекой DLL.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - names [.NET Framework], DLLs
 - names [.NET Framework], assemblies
 - assemblies [.NET Framework], names
 - DLLs, names
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
-ms.openlocfilehash: de7ce3ee774d4598521d7156d0d660c3fe30154c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2d1484889eb7db537de970c31109f26a6d61ad8d
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594482"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830055"
 ---
 # <a name="names-of-assemblies-and-dlls"></a>Имена сборок и библиотек DLL
 Сборка — это единица развертывания и идентификации для программ управляемого кода. Хотя сборки могут охватывать один или несколько файлов, обычно сборка сопоставляет один к одному с библиотекой DLL. Поэтому в этом разделе описываются только соглашения об именовании библиотек DLL, которые затем можно сопоставить с соглашениями об именовании сборок.
@@ -27,7 +26,7 @@ ms.locfileid: "84594482"
 
  `<Company>.<Component>.dll`
 
- где `<Component>` содержит одно или несколько предложений, разделенных точкой. Пример.
+ где `<Component>` содержит одно или несколько предложений, разделенных точкой. Пример:
 
  `Litware.Controls.dll`.
 
@@ -35,7 +34,7 @@ ms.locfileid: "84594482"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

@@ -2,7 +2,6 @@
 title: Создание ключей для шифрования и расшифровки
 description: Узнайте, как создавать симметричные и асимметричные ключи для шифрования и расшифровки в .NET и управлять ими.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - asymmetric keys [.NET]
 - cryptography [.NET], keys
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
-ms.openlocfilehash: 7ce19dc465fb1fac22545398e0724e6b76dd7098
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: aa95204a90f2aee684cdd20095d1816e890a0306
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556947"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831082"
 ---
 # <a name="generating-keys-for-encryption-and-decryption"></a>Создание ключей для шифрования и расшифровки
 Создание ключей и управление ими — это важная часть процесса шифрования. Симметричные алгоритмы требуют создания ключа и вектора инициализации (IV). Ключ следует хранить в тайне от любого, кто не должен расшифровывать ваши данные. Вектор инициализации может не быть секретным, но должен изменяться для каждого сеанса. Асимметричные алгоритмы требуют создания открытого ключа и закрытого ключа. Открытый ключ можно предоставлять кому угодно, а закрытый ключ должен быть известен только той стороне, которая будет расшифровывать данные, зашифрованные при помощи открытого ключа. В этом разделе описывается создание ключей и управление ими для симметричных и асимметричных алгоритмов.  
@@ -92,7 +91,7 @@ RSA rsa = RSA.Create();
 RSAParameters rsaKeyInfo = rsa.ExportParameters(false);  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Шифрование данных](encrypting-data.md)
 - [Расшифровка данных](decrypting-data.md)

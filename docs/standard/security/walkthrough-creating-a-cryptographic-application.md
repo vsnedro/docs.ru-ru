@@ -2,7 +2,6 @@
 title: Пошаговое руководство. Создание криптографического приложения
 description: Пошаговое руководство по созданию криптографического приложения. Сведения о шифровании и расшифровке содержимого в Windows Forms приложении.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - cryptography [NET], cryptographic application example
 - cryptography [NET], application example
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
-ms.openlocfilehash: 16a887f23c584daa83106ae61c497bcae8dc4dd2
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 70218d60abb336cdb35fc2e89e62a50b6bd79c67
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557194"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830562"
 ---
 # <a name="walkthrough-creating-a-cryptographic-application"></a>Пошаговое руководство. Создание криптографического приложения
 
@@ -225,7 +224,7 @@ ms.locfileid: "87557194"
   
 2. Нажмите кнопку `Decrypt File` и выберите только что зашифрованный файл. Эта операция будет успешной, так как имеется полная пара ключей для расшифровки.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Криптографическая модель](cryptography-model.md) — описывает, как криптография реализуется в библиотеке базовых классов.
 - [службы шифрования](cryptographic-services.md)

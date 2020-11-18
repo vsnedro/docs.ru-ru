@@ -2,7 +2,6 @@
 title: Обеспечение целостности данных с помощью хэш-кодов
 description: Узнайте, как обеспечить целостность данных с помощью хэш-кодов в .NET. Хэш-код является численным значением фиксированной длины, которое однозначно идентифицирует данные.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - encryption [.NET], hash
 - hash
 ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
-ms.openlocfilehash: 3205e37f283cb205f5edfc5948a9cb9f7256f752
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 085a0ea387e3415e6e916bcdf9055ffaa6753fef
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556960"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831095"
 ---
 # <a name="ensuring-data-integrity-with-hash-codes"></a>Обеспечение целостности данных с помощью хэш-кодов
 Хэш-код является численным значением фиксированной длины, которое однозначно идентифицирует данные. Хэш-коды представляют большие объемы данных в виде намного меньших по объему числовых значений, поэтому они используются с цифровыми подписями. Хэш-код можно подписать более эффективно, чем значение большего размера. Хэш-коды также могут использоваться для проверки целостности данных, пересылаемых по незащищенным каналам. Хэш-код полученных данных можно сравнить с хэш-кодом этих же данных, вычисленным перед их передачей, и на основании этого определить, подвергались ли данные изменениям.  
@@ -59,7 +58,7 @@ The hash codes match.
 The hash codes do not match.  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)
