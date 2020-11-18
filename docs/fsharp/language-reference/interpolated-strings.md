@@ -2,12 +2,12 @@
 title: Интерполированные строки
 description: 'Сведения о интерполяции строк, специальную форму строки, которая позволяет внедрять выражения F # непосредственно внутри них.'
 ms.date: 11/12/2020
-ms.openlocfilehash: a49d4e743306fd9bdabb1e019ec4e6c77e0e1f5a
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 8c552b44cea7d6c51ec333b6bdd4d407c6f10da7
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688636"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94829691"
 ---
 # <a name="interpolated-strings"></a>Интерполированные строки
 
@@ -72,7 +72,7 @@ printfn $"""Name: {"Phillip"}, Age: %d{age}"""
 
 ## <a name="aligning-expressions-in-interpolated-strings"></a>Выровняйте выражения в строках с интерполяцией
 
-Можно выровняйте выражения по левому краю или по правому краю в строках с интерполяцией `|` и определить, сколько пробелов. Следующая интерполяция строки выровняйте левое и правое выражения влево и вправо, соответственно, на 7 пробелов.
+Можно выровняйте выражения по левому краю или по правому краю в строках с интерполяцией `|` и определить, сколько пробелов. Следующая интерполяция строки выровняйте левое и правое выражения влево и вправо соответственно по семи пробелам.
 
 ```fsharp
 printfn $"""|{"Left",-7}|{"Right",7}|"""
@@ -89,7 +89,7 @@ printfn $"The speed of light is {speedOfLight:N3} km/s."
 // "The speed of light is 299,792.458 km/s."
 ```
 
-Кроме того, интерполяция строки также может быть типечеккед в виде с <xref:System.FormattableString> помощью аннотации типа:
+Кроме того, интерполяция строки также может быть помечена как тип с <xref:System.FormattableString> помощью аннотации типа:
 
 ```fsharp
 let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableString

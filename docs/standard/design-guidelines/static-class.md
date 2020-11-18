@@ -1,7 +1,6 @@
 ---
 title: Разработка статичных классов
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - type design guidelines, static classes
 - class library design guidelines [.NET Framework], classes
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - classes [.NET Framework], design guidelines
 - type design guidelines, classes
 ms.assetid: d67c14d8-c4dd-443f-affb-4ccae677c9b6
-ms.openlocfilehash: c906502ed071e8515f101996ec42a04772f72b12
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: efa5ca6e7b5e7b7d03cbe1d55471a388f3faab37
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291933"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94828664"
 ---
 # <a name="static-class-design"></a>Разработка статичных классов
 Статический класс определяется как класс, который содержит только статические члены (конечно же, помимо членов экземпляров, наследуемых от <xref:System.Object?displayProperty=nameWithType> и, возможно, закрытого конструктора). Некоторые языки предоставляют встроенную поддержку статических классов. В C# 2,0 и более поздних версиях, когда класс объявлен как статический, он является запечатанным, абстрактным, а члены экземпляров не могут быть переопределены или объявлены.
@@ -26,9 +25,9 @@ ms.locfileid: "84291933"
 
  Статические классы должны использоваться только в качестве вспомогательных классов для объектно-ориентированного ядра платформы.
 
- ❌НЕ следует рассматривать статические классы как различные контейнеры.
+ ❌ НЕ следует рассматривать статические классы как различные контейнеры.
 
- ❌НЕ объявляйте и не переопределяйте члены экземпляров в статических классах.
+ ❌ НЕ объявляйте и не переопределяйте члены экземпляров в статических классах.
 
  ✔️ объявить статические классы как запечатанные, абстрактные и добавьте конструктор закрытого экземпляра, если ваш язык программирования не имеет встроенной поддержки статических классов.
 
@@ -36,7 +35,7 @@ ms.locfileid: "84291933"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

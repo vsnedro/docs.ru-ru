@@ -1,19 +1,18 @@
 ---
 title: Правила разработки типов
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - type design guidelines
 - type design guidelines, about type design guidelines
 - class library design guidelines [.NET Framework], type design guidelines
 - types [.NET Framework], design guidelines
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-ms.openlocfilehash: 17bd300277a039818a3d563c8f2d5f99eb2fc68d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 56b4cb6e93cd44c42fbc2921c9ecfd947c304b3b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289568"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94828547"
 ---
 # <a name="type-design-guidelines"></a>Правила разработки типов
 С точки зрения среды CLR существует только две категории типов — ссылочные типы и типы значений, но в целях обсуждения структуры платформы мы разделены на несколько логических групп, каждый из которых имеет собственные собственные правила проектирования.
@@ -37,6 +36,6 @@ ms.locfileid: "84289568"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Рекомендации по проектированию платформы](index.md)
