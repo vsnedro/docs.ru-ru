@@ -2,20 +2,18 @@
 title: Поддержка SqlClient LocalDB
 ms.date: 03/30/2017
 ms.assetid: cf796898-5575-46f2-ae6e-21e5aa8c4123
-ms.openlocfilehash: 841c455605b0b32668d26cab16a6207dc1c0f716
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 55ab1346de6f5c14f15d01344a984c18edf30e02
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203427"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824484"
 ---
 # <a name="sqlclient-support-for-localdb"></a>Поддержка SqlClient LocalDB
 
-Начиная с названия кода Denali в SQL Server, будет доступна облегченная версия SQL Server, называемая LocalDB. В этом разделе обсуждаются способы подключения к базе данных в LocalDB.  
+В этой статье описывается, как подключиться к базе данных LocalDB. LocalDB — это упрощенная версия SQL Server.
   
-## <a name="remarks"></a>Remarks  
-
- Дополнительные сведения о LocalDB, включая способы его установки и настройки, см. в электронной документации на SQL Server.  
+## <a name="remarks"></a>Комментарии
   
  Чтобы получить сводные сведения о возможностях работы с LocalDB, выполните следующие действия.  
   
@@ -31,7 +29,7 @@ ms.locfileid: "91203427"
   
  `User Instance=True` не допускается при подключении к базе данных LocalDB.  
   
- Базу данных LocalDB можно скачать из [пакета дополнительных компонентов Microsoft SQL Server 2012](https://www.microsoft.com/download/en/details.aspx?id=29065). Если необходимо изменение данных в экземпляре LocalDB с помощью программы sqlcmd.exe, то необходимо пользоваться версией sqlcmd из SQL Server 2012. Эту программу можно также получить из пакета дополнительных компонентов SQL Server 2012.  
+Сведения об установке LocalDB см. в разделе [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
   
 ## <a name="programmatically-create-a-named-instance"></a>Создание именованного экземпляра программным путем  
 
@@ -59,7 +57,7 @@ ms.locfileid: "91203427"
   
 - Используйте ключевое слово строки подключения `AttachDBFilename`, чтобы указать MDF-файл.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
-- [SQL Server функций и ADO.NET](sql-server-features-and-adonet.md)
+- [Возможности SQL Server и ADO.NET](sql-server-features-and-adonet.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

@@ -2,7 +2,6 @@
 title: Объекты Principal и Identity
 description: Ознакомьтесь с объектами Identity, которые представляют пользователей в .NET. Также ознакомьтесь с основными объектами, которые инкапсулируют объект Identity & роли.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - WindowsIdentity objects
 - GenericIdentity objects
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - security [.NET], principals
 - WindowsPrincipal objects
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
-ms.openlocfilehash: 79caeed6ed64a07238e398af1e12f51640b88b62
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: cfda506fc29e9a86e97b3c99faf2d4155c894f03
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555258"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824243"
 ---
 # <a name="principal-and-identity-objects"></a>Объекты Principal и Identity
 
@@ -49,7 +48,7 @@ Identity — объект инкапсулирует сведения о про�
   
 При передаче объекта **Principal** через домены приложений, но в рамках одного процесса (и, следовательно, на том же компьютере), инфраструктура удаленного взаимодействия копирует ссылку на объект **Principal**, связанный с контекстом вызывающей функции, в вызываемую функцию.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Практическое руководство. Создание объекта WindowsPrincipal](how-to-create-a-windowsprincipal-object.md)
 - [Практическое руководство. Создание объектов GenericPrincipal и GenericIdentity](how-to-create-genericprincipal-and-genericidentity-objects.md)

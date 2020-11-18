@@ -1,7 +1,6 @@
 ---
 title: Безопасность на основе ролей
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - role-based security, about role-based security
 - user authentication, principals
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - authentication [.NET], principals
 - role-based security, principals
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
-ms.openlocfilehash: ed6c33be5a5da066e238c160da8bff8d25cb68fc
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: a03cda3aac06cc247818ccea5c61c673225d7929
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555683"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824139"
 ---
 # <a name="role-based-security"></a>Безопасность на основе ролей
 
@@ -30,7 +29,7 @@ ms.locfileid: "87555683"
   
  Прежде чем читать этот раздел, убедитесь, что вы понимаете материал, представленный в [разделе Основные понятия безопасности](key-security-concepts.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
   
 - [Объекты Principal и Identity](principal-and-identity-objects.md)
 - [Основные понятия безопасности](key-security-concepts.md)

@@ -1,7 +1,6 @@
 ---
 title: Работа с календарями
 ms.date: 04/01/2019
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - international applications [.NET], calendars
 - culture, calendars
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
-ms.openlocfilehash: d15bafd097c72515a33bed7dd85d88aef54246ba
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: c30af36b3426c4abbdf9c55f6c9062a5d8fc8c23
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280898"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824256"
 ---
 # <a name="work-with-calendars"></a>Работа с календарями
 
@@ -58,7 +57,7 @@ ms.locfileid: "84280898"
 
 Календарь можно использовать одним из двух способов:
 
-- Как календарь, используемый для конкретных языка и региональных параметров. Каждый объект <xref:System.Globalization.CultureInfo> имеет текущий календарь, то есть календарь, который объект использует в настоящий момент. Строковое представление значений даты и времени автоматически отражает используемые язык и региональные параметры и текущий календарь. Обычно текущий календарь является календарем по умолчанию для языка и региональных параметров. <xref:System.Globalization.CultureInfo>объекты также имеют дополнительные календари, в том числе дополнительные календари, которые может использовать язык и региональные параметры.
+- Как календарь, используемый для конкретных языка и региональных параметров. Каждый объект <xref:System.Globalization.CultureInfo> имеет текущий календарь, то есть календарь, который объект использует в настоящий момент. Строковое представление значений даты и времени автоматически отражает используемые язык и региональные параметры и текущий календарь. Обычно текущий календарь является календарем по умолчанию для языка и региональных параметров. <xref:System.Globalization.CultureInfo> объекты также имеют дополнительные календари, в том числе дополнительные календари, которые может использовать язык и региональные параметры.
 
 - Как самостоятельный календарь, не зависящий от конкретных языка и региональных параметров. В таком случае методы <xref:System.Globalization.Calendar> используются для выражения дат и значений календаря.
 
@@ -187,9 +186,9 @@ ms.locfileid: "84280898"
 
   - <xref:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)>Метод <xref:System.Globalization.JapaneseCalendar> <xref:System.Globalization.JapaneseLunisolarCalendar> класса или.
 
-  - <xref:System.DateTime> <xref:System.DateTimeOffset> Метод синтаксического анализа или, например <xref:System.DateTime.Parse%2A> ,, <xref:System.DateTime.TryParse%2A> <xref:System.DateTime.ParseExact%2A> или <xref:System.DateTime.TryParseExact%2A> , который включает строку для синтаксического анализа и, при необходимости, аргумент, <xref:System.Globalization.DateTimeStyles> Если текущий язык и региональные параметры являются японскими ("ja-JP"), а календарь этого языка и региональных параметров — <xref:System.Globalization.JapaneseCalendar> . Анализируемая строка должна включать эру.
+  - <xref:System.DateTime> <xref:System.DateTimeOffset> Метод анализа или, например,, <xref:System.DateTime.Parse%2A> <xref:System.DateTime.TryParse%2A> <xref:System.DateTime.ParseExact%2A> или <xref:System.DateTime.TryParseExact%2A> , который включает строку для синтаксического анализа и (необязательно <xref:System.Globalization.DateTimeStyles> ) аргумент, если текущий язык и региональные параметры Japanese-Japan ("ja-JP"), а этот календарь языка и региональных параметров — <xref:System.Globalization.JapaneseCalendar> . Анализируемая строка должна включать эру.
 
-  - <xref:System.DateTime> <xref:System.DateTimeOffset> Метод синтаксического анализа или, включающий `provider` параметр типа <xref:System.IFormatProvider> . `provider`должен быть либо <xref:System.Globalization.CultureInfo> объектом, представляющим язык и региональные параметры ("ja-JP"), текущий календарь которых имеет значение, <xref:System.Globalization.JapaneseCalendar> либо <xref:System.Globalization.DateTimeFormatInfo> объект, <xref:System.Globalization.DateTimeFormatInfo.Calendar> свойство которого имеет значение <xref:System.Globalization.JapaneseCalendar> . Анализируемая строка должна включать эру.
+  - <xref:System.DateTime> <xref:System.DateTimeOffset> Метод синтаксического анализа или, включающий `provider` параметр типа <xref:System.IFormatProvider> . `provider` должен быть либо <xref:System.Globalization.CultureInfo> объектом, представляющим язык и региональные параметры Japanese-Japan ("ja-JP"), текущий календарь которых имеет значение, <xref:System.Globalization.JapaneseCalendar> либо <xref:System.Globalization.DateTimeFormatInfo> объект, <xref:System.Globalization.DateTimeFormatInfo.Calendar> свойство которого имеет значение <xref:System.Globalization.JapaneseCalendar> . Анализируемая строка должна включать эру.
 
   В следующем примере используются три из этих методов для создания экземпляра даты и времени в эпоху Меижи, которая началась 8 сентября 1868 и заканчивается 29 июля 1912.
 
@@ -216,7 +215,7 @@ ms.locfileid: "84280898"
 
 Если нежелательные проверки диапазона нежелательно, можно восстановить строгие проверки диапазона несколькими способами в зависимости от версии .NET, в которой выполняется приложение:
 
-- **.NET Core:** Добавьте следующий код в файл конфигурации *. netcore. Runtime. JSON* :
+- **.NET Core:** Добавьте следующий элемент в *.netcore.runtime.js* в файле конфигурации:
 
   ```json
   "runtimeOptions": {
@@ -226,7 +225,7 @@ ms.locfileid: "84280898"
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** В файле *app. config* задайте следующий параметр AppContext:
+- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -241,10 +240,10 @@ ms.locfileid: "84280898"
 
    |  |  |
    |--|--|
-   | **Клавиша** | **HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . нетфрамеворк\аппконтекст** |
-   | **имя**; | Switch. System. Globalization. Енфорцежапанесирайеарранжес |
-   | **Type** | REG_SZ |
-   | **Значение** | Да |
+   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Имя** | Switch.SysTEM. Globalization. Енфорцежапанесирайеарранжес |
+   | **Тип** | REG_SZ |
+   | **Значение** | верно |
 
 Если включена поддержка оптимистических проверок диапазона, в предыдущем примере создается исключение <xref:System.ArgumentOutOfRangeException> и отображаются следующие выходные данные:
 
@@ -276,7 +275,7 @@ Parameter name: year
 [!code-csharp[Conceptual.Calendars#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings3.cs#10)]
 [!code-vb[Conceptual.Calendars#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings3.vb#10)]
 
-В японских календарях первый год эры называется Ганнен (元年). Например, вместо эры 1 первый год эры Хэйсэй можно описать как эру Ганнен. .NET использует это соглашение в операциях форматирования для дат и времени, отформатированных со следующими стандартными или настраиваемыми строками формата даты и времени, когда они используются с <xref:System.Globalization.CultureInfo> объектом, представляющим язык и региональные параметры ("ja-JP") с <xref:System.Globalization.JapaneseCalendar> классом:
+В японских календарях первый год эры называется Ганнен (元年). Например, вместо эры 1 первый год эры Хэйсэй можно описать как эру Ганнен. .NET использует это соглашение в операциях форматирования для дат и времени, отформатированных со следующими стандартными или настраиваемыми строками формата даты и времени, когда они используются с <xref:System.Globalization.CultureInfo> объектом, представляющим язык и региональные параметры Japanese-Japan ("ja-JP") с <xref:System.Globalization.JapaneseCalendar> классом:
 
 - [Шаблон длинной даты](../base-types/standard-date-and-time-format-strings.md#LongDate), обозначенный строкой стандартного формата даты и времени "D".
 - [Шаблон полной даты длинного времени](../base-types/standard-date-and-time-format-strings.md#FullDateLongTime), обозначенный строкой стандартного формата даты и времени "F".
@@ -291,7 +290,7 @@ Parameter name: year
 
 Если это поведение нежелательно в операциях форматирования, можно восстановить предыдущее поведение, которое всегда представляет первый год эры как "1", а не "Ганнен", выполнив следующие действия в зависимости от версии .NET:
 
-- **.NET Core:** Добавьте следующий код в файл конфигурации *. netcore. Runtime. JSON* :
+- **.NET Core:** Добавьте следующий элемент в *.netcore.runtime.js* в файле конфигурации:
 
   ```json
   "runtimeOptions": {
@@ -301,7 +300,7 @@ Parameter name: year
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** В файле *app. config* задайте следующий параметр AppContext:
+- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -316,10 +315,10 @@ Parameter name: year
 
    |  |  |
    |--|--|
-   | **Клавиша** | **HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . нетфрамеворк\аппконтекст** |
-   | **имя**; | Switch. System. Globalization. Форматжапанесефирстеарасанумбер |
-   | **Type** | REG_SZ |
-   | **Значение** | Да |
+   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Имя** | Switch.SysTEM. Globalization. Форматжапанесефирстеарасанумбер |
+   | **Тип** | REG_SZ |
+   | **Значение** | верно |
 
 Если поддержка ганнен в операциях форматирования отключена, в предыдущем примере выводятся следующие выходные данные:
 
@@ -329,7 +328,7 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 
 Платформа .NET также была обновлена так, что операции синтаксического анализа даты и времени поддерживают строки, содержащие год, представленный как "1" или Ганнен. Хотя это делать не нужно, можно восстановить предыдущее поведение, чтобы распознать только "1" в качестве первого года эры. Это можно сделать следующим образом в зависимости от версии .NET:
 
-- **.NET Core:** Добавьте следующий код в файл конфигурации *. netcore. Runtime. JSON* :
+- **.NET Core:** Добавьте следующий элемент в *.netcore.runtime.js* в файле конфигурации:
 
   ```json
   "runtimeOptions": {
@@ -339,7 +338,7 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** В файле *app. config* задайте следующий параметр AppContext:
+- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -354,12 +353,12 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
 
    |  |  |
    |--|--|
-   | **Клавиша** | **HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . нетфрамеворк\аппконтекст** |
-   | **имя**; | Switch. System. Globalization. Енфорцелегацижапанеседатепарсинг |
-   | **Type** | REG_SZ |
-   | **Значение** | Да |
+   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Имя** | Switch.SysTEM. Globalization. Енфорцелегацижапанеседатепарсинг |
+   | **Тип** | REG_SZ |
+   | **Значение** | верно |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Пошаговое руководство. Отображение дат в календарях, отличных от григорианского](../base-types/how-to-display-dates-in-non-gregorian-calendars.md)
 - [Пример: служебная программа диапазона календарных недель](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)

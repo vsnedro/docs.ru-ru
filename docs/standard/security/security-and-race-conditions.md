@@ -2,7 +2,6 @@
 title: Безопасность и конфликты
 'description:': Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - secure coding, race conditions
 - code security, race conditions
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
-ms.openlocfilehash: a667bf69ba72cbe203bd2603c4c6b7a1e58a6d43
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 870dc0ac956bad045cb87b9c0968b4a8e9733812
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555114"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824126"
 ---
 # <a name="security-and-race-conditions"></a>Безопасность и конфликты
 
@@ -47,7 +46,7 @@ void Dispose()
 }  
 ```  
   
-Так как эта реализация **Dispose** не синхронизирована, можно `Cleanup` вызвать сначала один поток, а затем — `_myObj` **значение NULL**для второго потока. Является ли это нарушением безопасности, зависит от того, что происходит при `Cleanup` выполнении кода. Основной проблемой с несинхронизированными реализациями **Dispose** является использование таких дескрипторов ресурсов, как файлы. Неправильное удаление может привести к тому, что не будет использован некорректный маркер, что часто приводит к уязвимостям безопасности.  
+Так как эта реализация **Dispose** не синхронизирована, можно `Cleanup` вызвать сначала один поток, а затем — `_myObj` **значение NULL** для второго потока. Является ли это нарушением безопасности, зависит от того, что происходит при `Cleanup` выполнении кода. Основной проблемой с несинхронизированными реализациями **Dispose** является использование таких дескрипторов ресурсов, как файлы. Неправильное удаление может привести к тому, что не будет использован некорректный маркер, что часто приводит к уязвимостям безопасности.  
   
 ## <a name="race-conditions-in-constructors"></a>Состояния гонки в конструкторах
 
@@ -108,7 +107,7 @@ void DoOtherWork()
 
 Состояния гонки могут также возникать в объекте, который ссылается на статический или неуправляемый ресурс, который затем освобождается в методе завершения. Если несколько объектов совместно используют ресурс, который управляется в методе завершения класса, объекты должны синхронизировать весь доступ к этому ресурсу.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Правила написания безопасного кода](secure-coding-guidelines.md)
 - [Безопасность ASP.NET Core](/aspnet/core/security/)

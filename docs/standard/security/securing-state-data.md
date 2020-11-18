@@ -2,19 +2,18 @@
 title: Обеспечение безопасности данных
 description: Объявите данные о состоянии как закрытые или внутренние переменные, чтобы ограничить доступ к ним. Доступ к таким данным по-прежнему можно получить с помощью отражения, сериализации и отладки.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - security [.NET], state data
 - code security, state data
 - secure coding, state data
 - state data security
 ms.assetid: 12671309-2877-43fe-a3df-6863507e712d
-ms.openlocfilehash: 73bd0ace28e5b9661cc86d6749ceef9aa4c9ac92
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 849ed993befaceda1b04becbb7fb2530c5c62a77
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557129"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824165"
 ---
 # <a name="securing-state-data"></a>Обеспечение безопасности данных
 
@@ -28,7 +27,7 @@ ms.locfileid: "87557129"
   
  Убедитесь, что ни один из ваших собственных методов или свойств не предоставляет непреднамеренно эти значения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 - [Правила написания безопасного кода](secure-coding-guidelines.md)
 - [Безопасность ASP.NET Core](/aspnet/core/security/)
