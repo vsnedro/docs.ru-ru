@@ -46,6 +46,8 @@
               href: tutorials/intro-to-csharp/introduction-to-classes.md
             - name: Объектно-ориентированное программирование
               href: tutorials/intro-to-csharp/object-oriented-programming.md
+    - name: Подробнее о типах записей
+      href: tutorials/exploration/records.md
     - name: Подробнее об инструкциях верхнего уровня
       href: tutorials/exploration/top-level-statements.md
     - name: Поиск закономерностей в объектах
