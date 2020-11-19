@@ -2,7 +2,6 @@
 title: Глобализация и локализация приложений .NET
 description: Узнайте, как разрабатывать приложения для использования во всем мире. Прочтите о глобализации, проверке локализируемости и возможностях локализации в .NET.
 ms.date: 06/08/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - international applications [.NET]
 - globalization [.NET], encoding
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - application development [.NET], globalization
 - multilingual application development
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
-ms.openlocfilehash: a3894b7bf9b8aa013b346c169d21c6db270fe987
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 670a159844cfeb475b26c1d1aa85e7f09a95c21f
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600793"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94829860"
 ---
 # <a name="globalizing-and-localizing-net-applications"></a>Глобализация и локализация приложений .NET
 

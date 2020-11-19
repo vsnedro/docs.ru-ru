@@ -4,12 +4,12 @@ description: В этой статье приводится краткий обз
 author: IEvangelist
 ms.author: dapine
 ms.date: 10/19/2020
-ms.openlocfilehash: 36e88cc059447a98931593e0535c70cbc92a2cf4
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 137a8f4e3bc9e3be529d5034c233d283cf158b31
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223480"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824861"
 ---
 # <a name="testing-in-net"></a>Тестирование в .NET
 
@@ -43,7 +43,7 @@ ms.locfileid: "92223480"
 
 ### <a name="xunit"></a>xUnit
 
-[xUnit](https://xunit.net) — это бесплатное средство модульного тестирования для .NET с открытым кодом и широкой поддержкой сообщества. Это новейшая технология для модульного тестирования приложений .NET, созданная первым разработчиком NUnit v2. xUnit.net поддерживает ReSharper, CodeRush, TestDriven.NET и [Xamarin](/apps/xamarin). Это проект [.NET Foundation](https://dotnetfoundation.org), поэтому он работает в соответствии с их правилами поведения.
+[xUnit](https://xunit.net) — это бесплатное средство модульного тестирования для .NET с открытым кодом и широкой поддержкой сообщества. Это новейшая технология для модульного тестирования приложений .NET, созданная первым разработчиком NUnit v2. xUnit.net поддерживает ReSharper, CodeRush, TestDriven.NET и [Xamarin](https://dotnet.microsoft.com/apps/xamarin). Это проект [.NET Foundation](https://dotnetfoundation.org), поэтому он работает в соответствии с их правилами поведения.
 
 Дополнительные сведения см. в следующих ресурсах:
 
