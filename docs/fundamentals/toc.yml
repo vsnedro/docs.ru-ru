@@ -372,6 +372,8 @@ items:
             href: ../core/diagnostics/debug-linux-dumps.md
           - name: Счетчики событий
             href: ../core/diagnostics/event-counters.md
+          - name: Каналы событий
+            href: ../core/diagnostics/eventpipe.md
           - name: Ведение журнала и трассировка
             href: ../core/diagnostics/logging-tracing.md
           - name: Сбор диагностики в контейнерах
