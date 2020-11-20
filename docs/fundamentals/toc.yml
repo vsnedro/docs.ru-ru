@@ -376,6 +376,26 @@ items:
             href: ../core/diagnostics/eventpipe.md
           - name: Ведение журнала и трассировка
             href: ../core/diagnostics/logging-tracing.md
+          - name: События среды выполнения
+            items:
+              - name: Обзор
+                href: ../fundamentals/diagnostics/runtime-events.md
+              - name: События состязания
+                href: ../fundamentals/diagnostics/runtime-contention-events.md
+              - name: События исключений
+                href: ../fundamentals/diagnostics/runtime-exception-events.md
+              - name: События сборки мусора
+                href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+              - name: События взаимодействия
+                href: ../fundamentals/diagnostics/runtime-interop-events.md
+              - name: События загрузчика и модуля привязки
+                href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+              - name: События методов
+                href: ../fundamentals/diagnostics/runtime-method-events.md
+              - name: События ThreadPool
+                href: ../fundamentals/diagnostics/runtime-thread-events.md
+              - name: События системы типов
+                href: ../fundamentals/diagnostics/runtime-type-events.md
           - name: Сбор диагностики в контейнерах
             href: ../core/diagnostics/diagnostics-in-containers.md
           - name: Глобальные средства .NET Core CLI
@@ -1592,8 +1612,6 @@ items:
                 href: ../standard/serialization/how-to-chunk-serialized-data.md
               - name: Практическое руководство. Определение сериализуемости объекта .NET Standard
                 href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-              - name: Пример
-                href: ../standard/serialization/basic-serialization-technology-sample.md
           - name: Сериализация XML и SOAP
             items:
               - name: Обзор
