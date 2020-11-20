@@ -1,19 +1,19 @@
 ---
-title: Установка .NET Core в CentOS — .NET Core
-description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в CentOS.
+title: Установка .NET в CentOS — .NET
+description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
-ms.openlocfilehash: 7937502067e1717fd7f5c973c64ad33ae2a443a0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/10/2020
+ms.openlocfilehash: b2ed62d024c6f0d78a4ec64693f1dafeabd8f47b
+ms.sourcegitcommit: c38bf879a2611ff46aacdd529b9f2725f93e18a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538622"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94594636"
 ---
-# <a name="install-net-core-sdk-or-net-core-runtime-on-centos"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в CentOS
+# <a name="install-the-net-sdk-or-the-net-runtime-on-centos"></a>Установка пакета SDK для .NET или среды выполнения .NET в CentOS
 
-.NET Core поддерживается в CentOS. В этой статье описано, как установить .NET Core в CentOS.
+.NET поддерживается в CentOS. В этой статье описано, как установить .NET в CentOS.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -21,18 +21,18 @@ ms.locfileid: "90538622"
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core в CentOS 7 и CentOS 8. Эти версии поддерживаются до того же времени, что и версия [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или CentOS.
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET в CentOS 7 и CentOS 8. Эти версии поддерживаются до того же времени, что и версия [.NET](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или CentOS.
 
-- Значок ✔️ означает, что версия CentOS или .NET Core поддерживается.
-- Значок ❌ означает, что версия CentOS или версия .NET Core в таком выпуске CentOS не поддерживается.
-- Если значок ✔️ стоит как напротив версии CentOS, так и напротив версии .NET Core, это значит, что такое сочетание ОС и .NET поддерживается.
+- Значок ✔️ означает, что версия CentOS или .NET поддерживается.
+- Значок ❌ означает, что версия CentOS или версия .NET в таком выпуске CentOS не поддерживается.
+- Если значок ✔️ стоит как напротив версии CentOS, так и напротив версии .NET, это значит, что такое сочетание ОС и .NET поддерживается.
 
-| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | Предварительная версия .NET 5 (только установка вручную) |
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
+| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-Следующие версии .NET Core больше не поддерживаются (но остаются доступными для скачивания):
+Следующие версии .NET больше не поддерживаются. (но остаются доступными для скачивания):
 
 - 3.0
 - 2.2
@@ -46,9 +46,16 @@ ms.locfileid: "90538622"
 
 ## <a name="centos-8-"></a>CentOS 8 ✔️
 
-.NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для CentOS 8.
+> [!TIP]
+> .NET 5.0 пока недоступна в репозиториях в пакете по умолчанию, однако .NET Core 3.1 доступна. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. Следующие действия приведены для .NET 5.0.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-prod.rpm
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## <a name="centos-7-"></a>CentOS 7 ✔️
 
@@ -58,11 +65,11 @@ ms.locfileid: "90538622"
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
+[!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
 
 ## <a name="troubleshoot-the-package-manager"></a>Устранение неполадок диспетчера пакетов
 
-В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET Core.
+В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET.
 
 ### <a name="unable-to-find-package"></a>Не удалось найти пакет
 
@@ -90,4 +97,4 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

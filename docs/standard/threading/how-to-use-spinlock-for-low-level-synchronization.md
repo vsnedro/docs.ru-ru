@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - SpinLock, how to use
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
-ms.openlocfilehash: 3fb19c2b36d97710685cac4ecd10f47a119814ce
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 8f81df527f83183804132ce09ae713fbbcf6f3ce
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93189190"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634250"
 ---
 # <a name="how-to-use-spinlock-for-low-level-synchronization"></a>Практическое руководство. SpinLock и низкоуровневая синхронизация
 
@@ -26,7 +26,7 @@ ms.locfileid: "93189190"
   
  Этот пример использует класс <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>, который требует синхронизации пользователей для многопоточного доступа. Есть также возможность использовать <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>, который не требует блокировок пользователя.  
   
- Обратите внимание на использование `false` в вызове <xref:System.Threading.SpinLock.Exit%2A?displayProperty=nameWithType>. Это обеспечивает оптимальную производительность. Укажите `true` в архитектурах IA64, чтобы воспользоваться барьером памяти, который очищает буферы записи, обеспечивая таким образом блокировку для завершения работы других потоков.  
+ Обратите внимание на использование `false` в вызове <xref:System.Threading.SpinLock.Exit%2A?displayProperty=nameWithType>. Это обеспечивает оптимальную производительность. Укажите `true` в архитектурах IA64, чтобы воспользоваться барьером памяти, который очищает буферы записи, обеспечивая таким образом доступность блокировки для других потоков.
   
 ## <a name="see-also"></a>См. также раздел
 

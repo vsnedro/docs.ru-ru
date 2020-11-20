@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet tool uninstall
-description: Команда dotnet tool uninstall удаляет указанное средство .NET Core с компьютера.
+description: Команда dotnet tool uninstall удаляет указанное средство .NET с компьютера.
 ms.date: 02/14/2020
-ms.openlocfilehash: 0416f91019a49e17f1be14a1d928ad1fafaa736c
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 34dffde8f9c930327c6b42d1d89bb4f511959fb2
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463313"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634094"
 ---
 # <a name="dotnet-tool-uninstall"></a>dotnet tool uninstall
 
@@ -15,7 +15,7 @@ ms.locfileid: "81463313"
 
 ## <a name="name"></a>name
 
-`dotnet tool uninstall` — удаляет указанное [средство .NET Core](global-tools.md) с компьютера.
+`dotnet tool uninstall` — удаляет указанное [средство .NET](global-tools.md) с компьютера.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -31,7 +31,7 @@ dotnet tool uninstall -h|--help
 
 ## <a name="description"></a>Описание
 
-Команда `dotnet tool uninstall` позволяет удалить средства .NET Core с компьютера. Чтобы использовать команду, необходимо указать один из следующих параметров:
+Команда `dotnet tool uninstall` позволяет удалить средства .NET с компьютера. Чтобы использовать команду, необходимо указать один из следующих параметров:
 
 * Чтобы удалить глобальное средство, установленное в расположении по умолчанию, используйте параметр `--global`.
 * Чтобы удалить глобальное средство, установленное в пользовательском расположении, используйте параметр `--tool-path`.
@@ -43,7 +43,7 @@ dotnet tool uninstall -h|--help
 
 - **`PACKAGE_NAME`**
 
-  Имя или идентификатор пакета NuGet, который содержит удаляемое средство .NET Core. Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).
+  Имя или идентификатор пакета NuGet, который содержит удаляемое средство .NET. Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).
 
 ## <a name="options"></a>Параметры
 
@@ -79,6 +79,6 @@ dotnet tool uninstall -h|--help
 
 ## <a name="see-also"></a>См. также
 
-- [Средства .NET Core](global-tools.md)
-- [Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core](global-tools-how-to-use.md)
-- [Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core](local-tools-how-to-use.md)
+- [Средства .NET](global-tools.md)
+- [Учебник. Установка и использование глобального средства .NET с помощью интерфейса командной строки .NET](global-tools-how-to-use.md)
+- [Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET](local-tools-how-to-use.md)

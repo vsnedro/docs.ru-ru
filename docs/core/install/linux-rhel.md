@@ -1,40 +1,40 @@
 ---
-title: Установка .NET Core в RHEL — .NET Core
-description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в RHEL.
+title: Установка .NET в RHEL — .NET
+description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в RHEL.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
-ms.openlocfilehash: 9e4d0ab86355329b898a82f135b9eeb839eab1cb
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.date: 11/10/2020
+ms.openlocfilehash: cb03f84cf84557d467f0a067b8d5629a843ec7e3
+ms.sourcegitcommit: c38bf879a2611ff46aacdd529b9f2725f93e18a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619456"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94594582"
 ---
-# <a name="install-net-core-sdk-or-net-core-runtime-on-rhel"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в RHEL
+# <a name="install-the-net-sdk-or-the-net-runtime-on-rhel"></a>Установка пакета SDK для .NET или среды выполнения .NET в RHEL
 
-.NET Core поддерживается в RHEL. В этой статье описано, как установить .NET Core в RHEL.
+.NET поддерживается в RHEL. В этой статье описано, как установить .NET в RHEL.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## <a name="register-your-red-hat-subscription"></a>Регистрация подписки Red Hat
 
-Чтобы установить .NET Core из Red Hat на RHEL, сначала нужно зарегистрироваться с помощью диспетчера подписки Red Hat. Если это еще не сделано в вашей системе либо вы точно не уверены, ознакомьтесь с [документацией по продукту Red Hat для .NET Core](https://access.redhat.com/documentation/net_core/).
+Чтобы установить .NET из Red Hat в RHEL, сначала нужно зарегистрироваться с помощью диспетчера подписки Red Hat. Если это еще не сделано в вашей системе либо вы точно не уверены, ознакомьтесь с [документацией по продукту Red Hat для .NET](https://access.redhat.com/documentation/net/5.0/).
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core в RHEL 7 и RHEL 8. Эти версии поддерживаются до того же времени, что и версия [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или RHEL.
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET в RHEL 7 и RHEL 8. Эти версии поддерживаются до того же времени, что и версия [.NET](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или RHEL.
 
-- Значок ✔️ означает, что версия RHEL или .NET Core поддерживается.
-- Значок ❌ означает, что версия RHEL или версия .NET Core в таком выпуске RHEL не поддерживается.
-- Если значок ✔️ стоит как напротив версии RHEL, так и напротив версии .NET Core, это значит, что такое сочетание ОС и .NET поддерживается.
+- Значок ✔️ означает, что версия RHEL или .NET поддерживается.
+- Значок ❌ означает, что версия RHEL или версия .NET в таком выпуске RHEL не поддерживается.
+- Если значок ✔️ стоит как напротив версии RHEL, так и напротив версии .NET, это значит, что такое сочетание ОС и .NET поддерживается.
 
-| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | Предварительная версия .NET 5 (только установка вручную) |
+| RHEL                     | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ✔️ [7](#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
+| ✔️ [8](#rhel-8-)        | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](#rhel-7--net-50) | ✔️ 2.1        | ✔️ [3.1](#rhel-7--net-core-31)        | ✔️ [5.0](#rhel-7--net-50) |
 
-Следующие версии .NET Core больше не поддерживаются (но остаются доступными для скачивания):
+Следующие версии .NET больше не поддерживаются. (но остаются доступными для скачивания):
 
 - 3.0
 - 2.2
@@ -42,15 +42,34 @@ ms.locfileid: "85619456"
 
 ## <a name="how-to-install-other-versions"></a>Установка других версий
 
-Сведения об установке других выпусков .NET Core см. в [документации по Red Hat для .NET Core](https://access.redhat.com/documentation/net_core/).
+Сведения об установке других выпусков .NET см. в [документации по Red Hat для .NET](https://access.redhat.com/documentation/net/5.0/).
 
 ## <a name="rhel-8-"></a>RHEL 8 ✔️
 
-Платформа .NET Core включена в репозитории AppStream для RHEL 8.
+> [!TIP]
+> .NET 5.0 пока недоступна в репозиториях AppStream, однако .NET Core 3.1 доступна. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. Следующие действия приведены для .NET 5.0.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
-## <a name="rhel-7-"></a>RHEL 7 ✔️
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/8/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+
+## <a name="rhel-7--net-50"></a>RHEL 7 ✔️ .NET 5.0
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-yum.md)]
+
+## <a name="rhel-7--net-core-31"></a>RHEL 7 ✔️ .NET Core 3.1
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -62,7 +81,7 @@ sudo yum install scl-utils
 
 ### <a name="install-the-sdk"></a>Установка пакета SDK
 
-Пакет SDK для .NET Core позволяет разрабатывать приложения с помощью .NET Core. При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Чтобы установить пакет SDK для .NET Core, выполните следующие команды:
+Пакет SDK для .NET Core позволяет разрабатывать приложения с помощью .NET Core. При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Чтобы установить пакет SDK для .NET Core, выполните следующие команды:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
@@ -112,4 +131,4 @@ source scl_source enable rh-dotnet31-aspnetcore-runtime-3.1
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

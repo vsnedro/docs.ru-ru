@@ -10,12 +10,12 @@ helpviewer_keywords:
 - application development [.NET], globalization
 - culture, globalization
 - icu, icu on windows, ms-icu
-ms.openlocfilehash: e0ca78871d1ddf851148096c8c6cfd10076763ab
-ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
+ms.openlocfilehash: ca579e837b801de237859963ede0e5a9a4bfbcbf
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400883"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439473"
 ---
 # <a name="net-globalization-and-icu"></a>Глобализация .NET и ICU
 
@@ -37,6 +37,29 @@ ms.locfileid: "93400883"
 
 > [!NOTE]
 > Даже при использовании ICU элементы `CurrentCulture`, `CurrentUICulture` и `CurrentRegion` по-прежнему используют API операционной системы Windows, чтобы применить параметры пользователя.
+
+### <a name="behavioral-differences"></a>Различия в поведении
+
+После обновления приложения до .NET 5 вы можете заметить изменения в приложении, даже если не догадываетесь, что используете средства глобализации. В этом разделе описано одно из возможных изменений поведения.
+
+##### <a name="stringindexof"></a>String.IndexOf
+
+Рассмотрим следующий код, который вызывает <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType>, чтобы найти в строке индекс символа новой строки.
+
+```csharp
+string s = "Hello\r\nworld!";
+int idx = s.IndexOf("\n");
+Console.WriteLine(idx);
+```
+
+- В предыдущих версиях .NET для Windows фрагмент кода выводит `6`.
+- В .NET 5.0 и более поздних версиях в ОС Windows 10 с майским обновлением 2019 г. и более поздних версий фрагмент кода выводит `-1`.
+
+Чтобы исправить этот код, выполняя порядковый поиск вместо поиска с учетом языка и региональных параметров, вызовите перегрузку <xref:System.String.IndexOf(System.String,System.StringComparison)> и передайте в нее в качестве аргумента <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
+
+Вы можете запустить правила анализа кода [CA1307: использование StringComparison, чтобы ясно указать намерение](../../../docs/fundamentals/code-analysis/quality-rules/ca1307.md) и [CA1309: использование StringComparison по порядковым номерам](../../../docs/fundamentals/code-analysis/quality-rules/ca1309.md), чтобы найти эти точки вызова в коде.
+
+Дополнительные сведения см. в статье [Изменения поведения при сравнении строк в .NET 5+](../base-types/string-comparison-net-5-plus.md).
 
 ### <a name="use-nls-instead-of-icu"></a>Использование NLS вместо ICU
 

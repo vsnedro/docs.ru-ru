@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet pack
-description: Команда dotnet pack создает пакеты NuGet для проекта .NET Core.
+description: Команда dotnet pack создает пакеты NuGet для проекта .NET.
 ms.date: 04/28/2020
-ms.openlocfilehash: 409b946d93cf73fec38941740a446c3ee3402490
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4312ea64a75fa89eae58cdb41a6dc3463cdd215c
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537837"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634237"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -188,4 +188,4 @@ dotnet pack -h|--help
   
   - [Упаковка с помощью NUSPEC](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Улучшенные точки расширения для создания настраиваемого пакета](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Глобальные свойства](/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+  - [Глобальные свойства](/visualstudio/msbuild/msbuild-properties#global-properties)

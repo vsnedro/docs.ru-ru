@@ -9,12 +9,12 @@ helpviewer_keywords:
 - versions, determining for .NET Framework
 - .NET Framework, determining version
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-ms.openlocfilehash: faeb2c14b9c1d93b558c67a42c223702178407c0
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 79c60c8dbc29d8985f3cfb2ffc2436539155c555
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955594"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440149"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>Практическое руководство. Определение установленных версий платформы .NET Framework
 
@@ -64,9 +64,7 @@ ms.locfileid: "91955594"
 
 ### <a name="minimum-version"></a>Минимальная версия
 
-Чтобы определить наличие *минимально* необходимой версии .NET Framework, используйте меньшее значение REG_DWORD **Release** для этой версии из предыдущей таблицы.
-
-Например, если приложение работает в .NET Framework 4.8 или более поздней версии, проверьте, является ли значение REG_DWORD **Release** *большим или равным* 528040.
+Чтобы определить, присутствует ли *минимальная* версия .NET Framework, проверьте значение **Release** REG_DWORD, которое больше или равно соответствующему значению, указанному в следующей таблице. Например, если приложение работает в .NET Framework 4.8 или более поздней версии, проверьте, является ли значение REG_DWORD **Release** *большим или равным* 528040.
 
 | Версия платформы .NET Framework | Минимальное значение |
 | ---------------------- | ------------- |

@@ -2,12 +2,12 @@
 title: Команда dotnet store
 description: Команда dotnet store сохраняет указанные сборки в хранилище пакетов среды выполнения.
 ms.date: 02/14/2020
-ms.openlocfilehash: 2f28a9bc287a87f600bda385c579e8070cbaa5ab
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 8efb11c6bf648bc7787d5627e02b180abb8a0afd
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463383"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634341"
 ---
 # <a name="dotnet-store"></a>dotnet store
 
@@ -51,7 +51,7 @@ dotnet store -h|--help
 
 - **`--framework-version <FRAMEWORK_VERSION>`**
 
-  Указывает версию пакета SDK для .NET Core. Этот параметр позволяет выбрать определенную версию платформы, отличную от версии, заданной с помощью параметра `-f|--framework`.
+  Указывает версию пакета SDK для .NET. Этот параметр позволяет выбрать определенную версию платформы, отличную от версии, заданной с помощью параметра `-f|--framework`.
 
 - **`-h|--help`**
 
@@ -59,7 +59,7 @@ dotnet store -h|--help
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Определяет путь к хранилищу пакетов среды выполнения. Если значение не указано, по умолчанию используется подкаталог *store* каталога установки .NET Core в профиле пользователя.
+  Определяет путь к хранилищу пакетов среды выполнения. Если значение не указано, по умолчанию используется подкаталог *store* каталога установки .NET в профиле пользователя.
 
 - **`--skip-optimization`**
 

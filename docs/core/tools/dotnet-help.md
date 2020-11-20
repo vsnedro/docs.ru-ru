@@ -2,12 +2,12 @@
 title: Команда dotnet help
 description: Команда dotnet help выводит более подробную документацию из Интернета для указанной команды.
 ms.date: 02/14/2020
-ms.openlocfilehash: a59e74a318118b6fd39d1895df02d76daa6fc9e1
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: d583142edabb24df972bdf9a06dbfe04688f9d97
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463688"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634472"
 ---
 # <a name="dotnet-help-reference"></a>Справочник по команде dotnet help
 
@@ -31,7 +31,7 @@ dotnet help <COMMAND_NAME> [-h|--help]
 
 - **`COMMAND_NAME`**
 
-  Имя команды интерфейса командной строки .NET Core. Список допустимых команд интерфейса командной строки см. в разделе [Команды CLI](index.md#cli-commands).
+  Имя команды интерфейса командной строки .NET. Список допустимых команд интерфейса командной строки см. в разделе [Команды CLI](index.md#cli-commands).
 
 ## <a name="options"></a>Параметры
 

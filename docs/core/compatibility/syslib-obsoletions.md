@@ -2,12 +2,12 @@
 title: Устаревшие компоненты в .NET 5 и более поздних версий
 description: Сведения об API-интерфейсах, которые помечены как устаревшие в .NET 5.0 и более поздних версий и приводят к созданию предупреждений компилятора SYSLIB.
 ms.date: 10/20/2020
-ms.openlocfilehash: 13f5fb10cfe693ed621b3f45fc22e024875890c8
-ms.sourcegitcommit: dfcbc096ad7908cd58a5f0aeabd2256f05266bac
+ms.openlocfilehash: aa5716ba8fe46c7c4ae2faafe7cc963551eecef7
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92333139"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440768"
 ---
 # <a name="obsolete-features-in-net-5"></a>Устаревшие компоненты в .NET 5 и более поздних версий
 
@@ -61,9 +61,14 @@ ms.locfileid: "92333139"
    <TargetFramework>net5.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB0001 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
+   <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->
+   <NoWarn>$(NoWarn);SYSLIB0002</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+   <!-- Alternatively, you can suppress multiple warnings by using a semicolon-delimited list -->
+   <NoWarn>$(NoWarn);SYSLIB0001;SYSLIB0002;SYSLIB0003</NoWarn>
   </PropertyGroup>
 </Project>
 ```
 
 > [!NOTE]
-> Таким образом отключается только конкретное предупреждение об устаревшем элементе. Любые другие предупреждения, в том числе и об устаревших элементах, не отключаются.
+> Таким образом, отключается только конкретное предупреждение об устаревшем элементе. Любые другие предупреждения, в том числе и об устаревших элементах с другими идентификаторами диагностики, не отключаются.

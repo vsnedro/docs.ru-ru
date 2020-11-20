@@ -1,17 +1,17 @@
 ---
-title: Установка .NET Core в macOS
-description: Сведения о версиях macOS, в которых возможна установка .NET Core.
+title: Установка .NET в macOS
+description: Сведения о версиях macOS, в которых возможна установка .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/25/2020
-ms.openlocfilehash: f946759a57bf2eedd296ecbd55fd3a5a7560638d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/10/2020
+ms.openlocfilehash: 983c5d2c04b87759b898f449bc092161b03c8ace
+ms.sourcegitcommit: c38bf879a2611ff46aacdd529b9f2725f93e18a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538370"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94594460"
 ---
-# <a name="install-net-core-on-macos"></a>Установка .NET Core в macOS
+# <a name="install-net-on-macos"></a>Установка .NET в macOS
 
 > [!div class="op_single_selector"]
 >
@@ -19,30 +19,30 @@ ms.locfileid: "90538370"
 > - [Установка в macOS](macos.md)
 > - [Установка на Linux](linux.md)
 
-В этой статье вы узнаете, как установить .NET Core в macOS. .NET Core состоит из среды выполнения и пакета SDK. Среда выполнения используется для запуска приложения .NET Core и может не включаться в состав приложения. Пакет SDK используется для создания приложений и библиотек .NET Core. Среда выполнения .NET Core всегда устанавливается вместе с пакетом SDK.
+В этой статье вы узнаете, как установить .NET в macOS. .NET состоит из среды выполнения и пакета SDK. Среда выполнения используется для запуска приложения .NET и может не включаться в состав приложения. Пакет SDK используется для создания приложений и библиотек .NET. Среда выполнения .NET всегда устанавливается вместе с пакетом SDK.
 
-.NET Core 3.1 является последней версией.
+.NET 5.0 является последней версией.
 
 > [!div class="button"]
 > [Загрузить .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="supported-releases"></a>Поддерживаемые выпуски
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core и версий macOS, в которых они поддерживаются. Эти версии будут поддерживаться до [окончания срока поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET и версий macOS, в которых они поддерживаются. Эти версии будут поддерживаться до [окончания срока поддержки .NET](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 - Значок ✔️ означает, что версия .NET Core поддерживается.
 - Значок ❌️ означает, что версия .NET Core не поддерживается.
 
-| Операционная система          | .NET Core 2.1 | .NET Core 3.1 | Предварительная версия .NET 5 |
+| Операционная система          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |---------------------------|---------------|---------------|----------------|
-| macOS 10.15 "Catalina"    | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0, предварительная версия ([заметки о выпуске][release-notes-50]) |
-| macOS 10.14 "Mojave"      | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0, предварительная версия ([заметки о выпуске][release-notes-50]) |
-| macOS 10.13 "High Sierra" | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0, предварительная версия ([заметки о выпуске][release-notes-50]) |
-| macOS 10.12 "Sierra"      | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ❌ 3.1 ([заметки о выпуске][release-notes-31]) | ❌ 5.0, предварительная версия ([заметки о выпуске][release-notes-50]) |
+| macOS 10.15 "Catalina"    | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0 ([заметки о выпуске][release-notes-50]) |
+| macOS 10.14 "Mojave"      | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0 ([заметки о выпуске][release-notes-50]) |
+| macOS 10.13 "High Sierra" | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ✔️ 3.1 ([заметки о выпуске][release-notes-31]) | ✔️ 5.0 ([заметки о выпуске][release-notes-50]) |
+| macOS 10.12 "Sierra"      | ✔️ 2.1 ([заметки о выпуске][release-notes-21]) | ❌ 3.1 ([заметки о выпуске][release-notes-31]) | ❌ 5.0 ([заметки о выпуске][release-notes-50]) |
 
 ## <a name="unsupported-releases"></a>Неподдерживаемые выпуски
 
-Следующие версии .NET Core больше ❌ не поддерживаются (но остаются доступными для скачивания):
+Следующие версии .NET больше не поддерживаются (❌). (но остаются доступными для скачивания):
 
 - 3.0 ([заметки о выпуске][release-notes-30])
 - 2.2 ([заметки о выпуске][release-notes-22])
@@ -50,51 +50,49 @@ ms.locfileid: "90538370"
 
 ## <a name="runtime-information"></a>Сведения о среде выполнения
 
-Среда выполнения используется для запуска приложений, созданных с помощью .NET Core. При публикации приложения автор может включить среду выполнения в его состав. В противном случае устанавливать среду выполнения будет пользователь.
+Среда выполнения используется для запуска приложений, созданных с помощью .NET. При публикации приложения автор может включить среду выполнения в его состав. В противном случае устанавливать среду выполнения будет пользователь.
 
 В macOS можно установить три различные версии среды выполнения:
 
 *Среда выполнения ASP.NET Core*\
-Используется для запуска приложений ASP.NET Core. Включает среду выполнения .NET Core.
+Используется для запуска приложений ASP.NET Core. Включает среду выполнения .NET.
 
-*Среда выполнения .NET Core*\
-Простейшая среда выполнения, в состав которой не входят какие-либо другие среды выполнения. Чтобы обеспечить максимальный уровень совместимости с приложениями .NET Core, настоятельно рекомендуется устанавливать *среду выполнения ASP.NET Core*.
+*Среда выполнения .NET*\
+Простейшая среда выполнения, в состав которой не входят какие-либо другие среды выполнения. Чтобы обеспечить максимальный уровень совместимости с приложениями .NET, настоятельно рекомендуется устанавливать *среду выполнения ASP.NET Core*.
 
 > [!div class="button"]
-> [Скачать среду выполнения .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+> [Загрузка среды выполнения .NET](https://dotnet.microsoft.com/download/dotnet-core)
 
 ## <a name="sdk-information"></a>Сведения о пакете SDK
 
-Пакет SDK используется для создания и публикации приложений и библиотек .NET Core. При установке пакета SDK также устанавливаются обе [среды выполнения](#runtime-information): ASP.NET Core и .NET Core.
-
-> [!div class="button"]
-> [Скачать пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+Пакет SDK используется для создания и публикации приложений и библиотек .NET. При установке пакета SDK также устанавливаются обе [среды выполнения](#runtime-information): ASP.NET Core и .NET.
 
 ## <a name="dependencies"></a>Зависимости
 
-Платформа .NET Core поддерживается в следующих выпусках macOS:
+Платформа .NET поддерживается в следующих выпусках macOS:
 
 > [!NOTE]
 > Символ `+` представляет минимальную версию.
 
-| Версия .NET Core | macOS                 | Архитектуры |     |
+| Версия .NET Core | macOS                 | Архитектуры | Дополнительные сведения    |
 | ----------------- | --------------------- | --------------| --- |
+| 5,0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
 | 3.1               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |
 | 3.0               | High Sierra (10.13+)  | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
 | 2.2               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
 | 2.1               | Sierra (10.12+)       | X64 | [Дополнительные сведения](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
 
-Начиная с macOS Catalina (версия 10.15) все программное обеспечение, созданное после 1 июня 2019 года и распространяемое с идентификатором разработчика, должно быть заверено. Это требование относится к среде выполнения .NET Core, пакету SDK для .NET Core и программному обеспечению, созданному с помощью .NET Core.
+Начиная с macOS Catalina (версия 10.15) все программное обеспечение, созданное после 1 июня 2019 года и распространяемое с идентификатором разработчика, должно быть заверено. Это требование относится к среде выполнения .NET, пакету SDK для .NET и программному обеспечению, созданному с помощью .NET.
 
-Установщики для .NET Core (среда выполнения и пакет SDK) версии 3.1, 3.0 и 2.1 были заверены с 18 февраля 2020 г. Более ранние версии не заверены. При запуске незаверенного приложения появится ошибка, аналогичная следующей:
+Среда выполнения и установщики пакета SDK для .NET версии 5.0 и .NET Core 3.1, 3.0 и 2.1 были заверены с 18 февраля 2020 г. Более ранние версии не заверены. При запуске незаверенного приложения появится ошибка, аналогичная следующей:
 
 ![Оповещение о заверении macOS Catalina](media/dependencies/macos-notarized-pkg-warning.png)
 
-Дополнительные сведения о том, как принудительное заверение влияет на .NET Core (и ваши приложения .NET Core), см. в разделе [Работа с заверением macOS Catalina](macos-notarization-issues.md).
+Дополнительные сведения о том, как принудительное заверение влияет на .NET (и ваши приложения .NET), см. в разделе [Работа с заверением macOS Catalina](macos-notarization-issues.md).
 
 ## <a name="libgdiplus"></a>libgdiplus
 
-Приложения .NET Core, которые используют сборку *System.Drawing.Common*, требуют установки libgdiplus.
+Приложения .NET, которые используют сборку *System.Drawing.Common*, требуют установки libgdiplus.
 
 Легко получить libgdiplus можно с помощью диспетчера пакетов [Homebrew ("brew")](https://brew.sh/) для macOS. После установки *brew* установите libgdiplus, выполнив следующие команды в окне терминала (аналог командной строки):
 
@@ -105,31 +103,31 @@ brew install mono-libgdiplus
 
 ## <a name="install-with-an-installer"></a>Установка с помощью установщика
 
-В macOS есть автономные установщики, которые можно использовать для установки пакета SDK для .NET Core 3.1:
+В macOS есть автономные установщики, которые можно использовать для установки пакета SDK для .NET 5.0:
 
-- [Процессоры x64 (64-разрядные)](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [Процессоры x64 (64-разрядные)](https://dotnet.microsoft.com/download/dotnet-core/5.0)
 
 ## <a name="download-and-manually-install"></a>Скачивание и установка вручную
 
 <!-- Note, this content is taken from includes/linux-install-manual.md but changed for macOS. Any fixes should be applied there too, though content may be different -->
 
-В качестве альтернативы установщикам macOS для .NET Core можно скачать и вручную установить пакет SDK и среду выполнения. Ручная установка как правило выполняется в рамках тестирования непрерывной интеграции. В большинстве случаев разработчикам и пользователям рекомендуется использовать [установщик](https://dotnet.microsoft.com/download/dotnet-core).
+В качестве альтернативы установщикам macOS для .NET можно скачать и вручную установить пакет SDK и среду выполнения. Ручная установка как правило выполняется в рамках тестирования непрерывной интеграции. В большинстве случаев разработчикам и пользователям рекомендуется использовать [установщик](https://dotnet.microsoft.com/download/dotnet-core).
 
-При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Сначала скачайте **двоичный** выпуск пакета SDK или среды выполнения с одного из следующих сайтов:
+При установке пакета SDK для .NET не нужно устанавливать соответствующую среду выполнения. Сначала скачайте **двоичный** выпуск пакета SDK или среды выполнения с одного из следующих сайтов:
 
-- ✔️ [Предварительные версии скачиваемых файлов .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+- ✔️ [Скачиваемые файлы для .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 - ✔️ [Скачиваемые файлы .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - ✔️ [Скачиваемые файлы .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 - [Все скачиваемые файлы для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
 
-Извлеките скачанный файл и используйте команду `export`, чтобы задать переменные, используемые .NET Core, а затем проверьте включение .NET Core в переменную PATH.
+Извлеките скачанный файл и используйте команду `export`, чтобы задать переменные, используемые .NET, а затем проверьте включение .NET в переменную PATH.
 
-Чтобы извлечь среду выполнения и сделать команды .NET Core CLI доступными в терминале, сначала скачайте двоичный выпуск .NET Core. Затем откройте терминал и выполните следующие команды в каталоге с сохраненным файлом. Имя файла архива может отличаться в зависимости от скачанных файлов.
+Чтобы извлечь среду выполнения и сделать команды .NET CLI доступными в терминале, сначала скачайте двоичный выпуск .NET. Затем откройте терминал и выполните следующие команды в каталоге с сохраненным файлом. Имя файла архива может отличаться в зависимости от скачанных файлов.
 
 **Извлеките среду выполнения, используя следующую команду**:
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-3.1.5-osx-x64.tar.gz -C "$HOME/dotnet"
+mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-osx-x64.tar.gz -C "$HOME/dotnet"
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
@@ -137,13 +135,13 @@ export PATH=$PATH:$HOME/dotnet
 **Извлеките пакет SDK, используя следующую команду**:
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-3.1.301-osx-x64.tar.gz -C "$HOME/dotnet"
+mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-osx-x64.tar.gz -C "$HOME/dotnet"
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
 
 > [!TIP]
-> Приведенные выше команды `export` сделают команды .NET Core CLI доступными только для сеанса терминала, в котором производился запуск.
+> Приведенные выше команды `export` сделают команды .NET CLI доступными только для сеанса терминала, в котором производился запуск.
 >
 > Вы можете изменить профиль оболочки, чтобы добавить команды окончательно. Существует несколько различных оболочек, доступных для Linux, и каждая из них имеет свой профиль. Пример:
 >
@@ -159,40 +157,46 @@ export PATH=$PATH:$HOME/dotnet
 
 ## <a name="install-with-visual-studio-for-mac"></a>Установка с помощью Visual Studio для Mac
 
-Visual Studio для Mac устанавливает пакет SDK для .NET Core, если выбрана рабочая нагрузка **.NET Core**. Чтобы приступить к разработке в .NET Core на macOS, ознакомьтесь со статьей [Установка Visual Studio 2019 для Mac](/visualstudio/mac/installation). В последнем выпуске .NET Core 3.1 необходимо использовать Visual Studio для Mac 8.4.
+Visual Studio для Mac устанавливает пакет SDK для .NET, если выбрана рабочая нагрузка **.NET**. Чтобы приступить к разработке в .NET на macOS, ознакомьтесь со статьей [Установка Visual Studio 2019 для Mac](/visualstudio/mac/installation).
 
-[![Visual Studio 2019 для Mac с компонентом рабочей нагрузки .NET Core в macOS](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
+| Версия пакета SDK для .NET      | Версия Visual Studio                      |
+| --------------------- | ------------------------------------------ |
+| 5,0                   | Visual Studio 2019 для Mac версии 8.8 или более поздней. |
+| 3.1                   | Visual Studio 2019 для Mac версии 8.4 или более поздней. |
+| 2.1                   | Visual Studio 2019 для Mac версии 8.0 или более поздней. |
+
+[![Visual Studio 2019 для Mac с компонентом рабочей нагрузки .NET в macOS](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
 
 ## <a name="install-alongside-visual-studio-code"></a>Установка вместе с Visual Studio Code
 
 Visual Studio Code — это эффективный и облегченный редактор исходного кода, который работает на компьютере. Visual Studio Code доступен для Windows, macOS и Linux.
 
-Хотя Visual Studio Code не поставляется с автоматическим установщиком .NET Core, таким как Visual Studio, добавление поддержки .NET Core не вызывает затруднений.
+Хотя Visual Studio Code не поставляется с автоматическим установщиком .NET, таким как Visual Studio, добавление поддержки .NET не вызывает затруднений.
 
 01. [Скачайте и установите Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Скачайте и установите пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+01. [Скачайте и установите пакет SDK для .NET](https://dotnet.microsoft.com/download/dotnet-core).
 01. [Установите расширение C# из Marketplace для Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## <a name="install-with-bash-automation"></a>Установка с помощью функции автоматизации Bash
 
 [Сценарии dotnet-install](../tools/dotnet-install-script.md) используются для автоматизации установок среды выполнения и их осуществления без прав администратора. Вы можете скачать сценарий со [страницы справочника по сценариям dotnet-install](../tools/dotnet-install-script.md).
 
-Этот сценарий по умолчанию устанавливает последнюю версию [с долгосрочной поддержкой (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), которой сейчас является .NET Core 3.1. Вы можете выбрать конкретный выпуск, указав параметр `current`. Включите параметр `runtime` для установки среды выполнения. В противном случае сценарий устанавливает пакет [SDK](./windows.md).
+Этот сценарий по умолчанию устанавливает последнюю версию [с долгосрочной поддержкой (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), которой сейчас является .NET 3.1. Вы можете выбрать конкретный выпуск, указав параметр `current`. Включите параметр `runtime` для установки среды выполнения. В противном случае сценарий устанавливает пакет [SDK](./windows.md).
 
 ```bash
-./dotnet-install.sh --channel 3.1 --runtime aspnetcore
+./dotnet-install.sh --channel 5.0 --runtime aspnetcore
 ```
 
 > [!NOTE]
-> Приведенная выше команда устанавливает среду выполнения ASP.NET Core для максимальной совместимости. Среда выполнения ASP.NET Core также включает в себя стандартную среду выполнения .NET Core.
+> Приведенная выше команда устанавливает среду выполнения ASP.NET Core для максимальной совместимости. Среда выполнения ASP.NET Core также включает в себя стандартную среду выполнения .NET.
 
 ## <a name="docker"></a>Docker
 
 Контейнеры обеспечивают простой способ изоляции приложения от остальной части основной системы. Контейнеры на одном компьютере совместно использую только ядро, а также используют ресурсы, которые передаются в приложение.
 
-.NET Core можно выполнять в контейнере Docker. Официальные образы Docker для .NET Core публикуются в реестре контейнеров Microsoft (MCR) и доступ к ним можно получить в [репозитории Microsoft .NET Core Docker Hub](https://hub.docker.com/_/microsoft-dotnet-core/). Каждый репозиторий содержит рабочие образы для разных сочетаний .NET (пакета SDK или среды выполнения) и операционной системы.
+.NET можно выполнять в контейнере Docker. Официальные образы Docker для .NET публикуются в реестре контейнеров Microsoft (MCR), и доступ к ним можно получить в [репозитории Microsoft .NET Core Docker Hub](https://hub.docker.com/_/microsoft-dotnet/). Каждый репозиторий содержит рабочие образы для разных сочетаний .NET (пакета SDK или среды выполнения) и операционной системы.
 
-Корпорация Майкрософт предоставляет образы, которые предназначены для конкретных сценариев. Например [репозиторий ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) содержит образы, которые предназначены для запуска приложений ASP.NET Core в рабочей среде.
+Корпорация Майкрософт предоставляет образы, которые предназначены для конкретных сценариев. Например [репозиторий ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-aspnet) содержит образы, которые предназначены для запуска приложений ASP.NET Core в рабочей среде.
 
 Дополнительные сведения об использовании .NET Core в контейнере Docker см. в статьях [Введение в .NET и Docker](../docker/introduction.md) и [Примеры](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
 

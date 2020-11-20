@@ -4,12 +4,12 @@ description: Устойчивые функции Azure расширяют сре
 author: cecilphillip
 ms.author: cephilli
 ms.date: 06/26/2018
-ms.openlocfilehash: 1498b5a19bc92b7db16f7422a35ac3afffb82b60
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c3ee628b5c2239cd13395fda7714b38b06efa058
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171797"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557159"
 ---
 # <a name="durable-azure-functions"></a>Устойчивые функции Azure
 

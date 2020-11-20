@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 68b55eb40d86ac3c92853acbb17ad622704b1336
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: 8315b4f86dddfbb68534bc9ad3ad74907daa03d0
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93136100"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94507067"
 ---
 
 ### <a name="install-the-sdk"></a>Установка пакета SDK
 
-Пакет SDK для .NET Core позволяет разрабатывать приложения с помощью .NET Core. При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Чтобы установить пакет SDK для .NET Core, выполните следующие команды:
+Пакет SDK для .NET Core позволяет разрабатывать приложения с помощью .NET Core. При установке пакета SDK для .NET Core не нужно устанавливать соответствующую среду выполнения. Чтобы установить пакет SDK для .NET Core, выполните приведенные ниже команды.
 
 ```bash
 sudo dnf install dotnet-sdk-3.0

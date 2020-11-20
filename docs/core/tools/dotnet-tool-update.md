@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet tool update
-description: Команда dotnet tool update обновляет указанное средство .NET Core на вашем компьютере.
+description: Команда dotnet tool update обновляет указанное средство .NET на вашем компьютере.
 ms.date: 07/08/2020
-ms.openlocfilehash: a212fbb40af68019c1bc9a63963d960292be6b08
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 18b153e53a6dbcb32e50ae4a7d06a1c2f53d1eb5
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308875"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634081"
 ---
 # <a name="dotnet-tool-update"></a>dotnet tool update
 
@@ -15,7 +15,7 @@ ms.locfileid: "86308875"
 
 ## <a name="name"></a>name
 
-`dotnet tool update` обновляет указанное [средство .NET Core](global-tools.md) на компьютер.
+`dotnet tool update` обновляет указанное [средство .NET](global-tools.md) на компьютере.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -44,7 +44,7 @@ dotnet tool update -h|--help
 
 ## <a name="description"></a>Описание
 
-Команда `dotnet tool update` предоставляет способ обновления средства .NET Core на компьютере до последней стабильной версии пакета. Команда удаляет и повторно устанавливает средство, эффективно обновляя его. Чтобы использовать команду, необходимо указать один из следующих параметров:
+Команда `dotnet tool update` предоставляет способ обновления средства .NET на компьютере до последней стабильной версии пакета. Команда удаляет и повторно устанавливает средство, эффективно обновляя его. Чтобы использовать команду, необходимо указать один из следующих параметров:
 
 * Чтобы обновить глобальное средство, установленное в расположении по умолчанию, используйте параметр `--global`
 * Чтобы обновить глобальное средство, установленное в пользовательском расположении, используйте параметр `--tool-path`.
@@ -56,7 +56,7 @@ dotnet tool update -h|--help
 
 - **`PACKAGE_ID`**
 
-  Имя или идентификатор пакета NuGet, который содержит глобальное средство .NET Core, которое вы хотите обновить. Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).
+  Имя или идентификатор пакета NuGet, который содержит глобальное средство .NET, которое вы хотите обновить. Найти имя пакета можно с помощью команды [dotnet tool list](dotnet-tool-list.md).
 
 ## <a name="options"></a>Параметры
 
@@ -144,7 +144,7 @@ dotnet tool update -h|--help
 
 ## <a name="see-also"></a>См. также
 
-- [Средства .NET Core](global-tools.md)
+- [Средства .NET](global-tools.md)
 - [Семантическое управление версиями](https://semver.org)
-- [Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core](global-tools-how-to-use.md)
-- [Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core](local-tools-how-to-use.md)
+- [Учебник. Установка и использование глобального средства .NET с помощью интерфейса командной строки .NET](global-tools-how-to-use.md)
+- [Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET](local-tools-how-to-use.md)

@@ -2,12 +2,12 @@
 title: Команда dotnet restore
 description: Вы узнаете, как восстановить зависимости и связанные с проектом средства при помощи команды dotnet restore.
 ms.date: 02/27/2020
-ms.openlocfilehash: 7b456e28505a07c03936c9006c8631848fd4672c
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: dcb68d6c690f2e12b61cfdfa6dc288bd474721c1
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925480"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634407"
 ---
 # <a name="dotnet-restore"></a>dotnet restore
 
@@ -46,7 +46,7 @@ dotnet restore -h|--help
 
 ### <a name="specify-feeds"></a>Указание каналов
 
-Для восстановления зависимостей NuGet требуются каналы, где находятся пакеты. Каналы обычно предоставляются посредством файла конфигурации *nuget.config*. Файл конфигурации по умолчанию предоставляется при установке пакета SDK для .NET Core. Чтобы указать дополнительные каналы, выполните одно из следующих действий.
+Для восстановления зависимостей NuGet требуются каналы, где находятся пакеты. Каналы обычно предоставляются посредством файла конфигурации *nuget.config*. Файл конфигурации по умолчанию предоставляется при установке пакета SDK для .NET. Чтобы указать дополнительные каналы, выполните одно из следующих действий.
 
 - Создайте собственный файл *nuget.config* в каталоге проекта. Дополнительные сведения см. в статье [Распространенные конфигурации NuGet](/nuget/consume-packages/configuring-nuget-behavior) и разделе [Различия nuget.config](#nugetconfig-differences) далее в этой статье.
 - Используйте команды `dotnet nuget`, такие как [`dotnet nuget add source`](dotnet-nuget-add-source.md).
@@ -71,11 +71,11 @@ dotnet restore -h|--help
 
 - [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
 
-  Перенаправления привязок не работают с элементами `<PackageReference>`, а .NET Core поддерживает только элементы `<PackageReference>` для пакетов NuGet.
+  Перенаправления привязок не работают с элементами `<PackageReference>`, а .NET поддерживает только элементы `<PackageReference>` для пакетов NuGet.
 
 - [solution](/nuget/schema/nuget-config-file#solution-section)
 
-  Этот параметр относится только к Visual Studio и не применяется к .NET Core. .NET Core не использует файл `packages.config`. Вместо этого он использует элементы `<PackageReference>` для пакетов NuGet.
+  Этот параметр относится только к Visual Studio и не применяется к .NET. .NET не использует файл `packages.config`. Вместо этого он использует элементы `<PackageReference>` для пакетов NuGet.
 
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 

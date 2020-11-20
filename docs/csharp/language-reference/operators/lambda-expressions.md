@@ -9,12 +9,12 @@ helpviewer_keywords:
 - expression lambda [C#]
 - expressions [C#], lambda
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
-ms.openlocfilehash: a3a753ccea45193c57f31453d7318c14f4898864
-ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
+ms.openlocfilehash: 51bf44af5ec3478f2b2557b047df270c0c22990d
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91247713"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94556846"
 ---
 # <a name="lambda-expressions-c-reference"></a>Лямбда-выражения (Справочник по C#)
 
@@ -56,7 +56,7 @@ ms.locfileid: "91247713"
 (input-parameters) => expression
 ```
 
-Текст выражения лямбды может состоять из вызова метода. Но при создании [деревьев выражений](../../programming-guide/concepts/expression-trees/index.md), которые вычисляются вне контекста поддержки общеязыковой среды выполнения .NET, например в SQL Server, вызовы методов не следует использовать в лямбда-выражениях. Эти методы не имеют смысла вне контекста среды CLR .NET.
+Текст выражения лямбды может состоять из вызова метода. Но при создании [деревьев выражений](../../programming-guide/concepts/expression-trees/index.md), которые вычисляются вне контекста поддержки общеязыковой среды выполнения (CRL) .NET, например в SQL Server, вызовы методов не следует использовать в лямбда-выражениях. Эти методы не имеют смысла вне контекста среды CLR .NET.
 
 ## <a name="statement-lambdas"></a>Лямбды операторов
 

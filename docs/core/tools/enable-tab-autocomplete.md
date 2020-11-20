@@ -1,24 +1,24 @@
 ---
 title: Включение автодополнения клавишей TAB
-description: В этой статье объясняется, как включить автодополнение клавишей TAB для .NET Core CLI в средах PowerShell, Bash и zsh.
+description: В этой статье объясняется, как включить заполнение клавишей TAB для .NET CLI в средах PowerShell, Bash и zsh.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 11/03/2019
-ms.openlocfilehash: cd46305b8cd82825671a3a1568e8b93de1bbab26
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 31bf5e74644680fc30ca5b79972fbed6367363e1
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062812"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634016"
 ---
-# <a name="how-to-enable-tab-completion-for-the-net-core-cli"></a>Включение автодополнения клавишей TAB для .NET Core CLI
+# <a name="how-to-enable-tab-completion-for-the-net-cli"></a>Включение заполнения клавишей TAB для .NET CLI
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий
 
 В этой статье описывается, как включить автодополнение нажатием клавиши TAB для трех оболочек: PowerShell, Bash и zsh. Сведения о том, как настроить заполнение нажатием клавиши TAB в других оболочках, см. в соответствующей документации.
 
-После настройки заполнение нажатием клавиши TAB для .NET Core CLI можно активировать, введя в командной строке `dotnet` и нажав клавишу TAB. Текущая командная строка будет передана команде `dotnet complete`, а оболочка обработает результаты. Вы можете проверить результаты без активации автодополнения клавишей TAB, передав что-либо непосредственно команде `dotnet complete`. Пример:
+После настройки автодополнение можно активировать нажатием клавиши TAB для .NET CLI, введя в командной строке `dotnet` и нажав клавишу TAB. Текущая командная строка будет передана команде `dotnet complete`, а оболочка обработает результаты. Вы можете проверить результаты без активации автодополнения клавишей TAB, передав что-либо непосредственно команде `dotnet complete`. Пример:
 
 ```console
 > dotnet complete "dotnet a"
@@ -29,7 +29,7 @@ migrate
 pack
 ```
 
-Если команда не сработала, убедитесь, что установлен пакет SDK для .NET Core 2.0 или более поздней версии. Если он установлен, но команда все равно не работает, проверьте, что команда `dotnet` разрешается как минимум в версию пакета SDK для .NET Core 2.0. Воспользуйтесь командой `dotnet --version`, чтобы узнать, к которой версии `dotnet` указывает текущий путь. Дополнительные сведения см. в статье [Выбор версии .NET Core для использования](../versions/selection.md).
+Если команда не сработала, убедитесь, что установлен пакет SDK для .NET Core 2.0 или более поздней версии. Если он установлен, но команда все равно не работает, проверьте, что команда `dotnet` разрешается как минимум в версию пакета SDK для .NET Core 2.0. Воспользуйтесь командой `dotnet --version`, чтобы узнать, к которой версии `dotnet` указывает текущий путь. Дополнительные сведения см. в статье [Выбор версии .NET для использования](../versions/selection.md).
 
 ### <a name="examples"></a>Примеры
 
@@ -45,7 +45,7 @@ pack
 
 ## <a name="powershell"></a>PowerShell
 
-Чтобы добавить автодополнение клавишей TAB для .NET Core CLI в **PowerShell**, создайте или измените профиль, хранящийся в переменной `$PROFILE`. Дополнительные сведения см. в разделах [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) (Как создать свой профиль) и [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy) (Профили и политика выполнения).
+Чтобы добавить автодополнение клавишей TAB для .NET CLI в **PowerShell**, создайте или измените профиль, хранящийся в переменной `$PROFILE`. Дополнительные сведения см. в разделах [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) (Как создать свой профиль) и [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy) (Профили и политика выполнения).
 
 Добавьте в свой профиль представленный ниже код:
 
@@ -61,7 +61,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 
 ## <a name="bash"></a>bash
 
-Чтобы добавить автодополнение клавишей TAB для .NET Core CLI в **bash**, добавьте в свой файл `.bashrc` представленный ниже код:
+Чтобы добавить автодополнение клавишей TAB для .NET CLI в **bash**, добавьте в свой файл `.bashrc` представленный ниже код:
 
 ```bash
 # bash parameter completion for the dotnet CLI
@@ -84,7 +84,7 @@ complete -f -F _dotnet_bash_complete dotnet
 
 ## <a name="zsh"></a>zsh
 
-Чтобы добавить автодополнение клавишей TAB для .NET Core CLI в **zsh**, добавьте в свой файл `.zshrc` представленный ниже код:
+Чтобы добавить автодополнение клавишей TAB для .NET CLI в **zsh**, добавьте в свой файл `.zshrc` представленный ниже код:
 
 ```zsh
 # zsh parameter completion for the dotnet CLI

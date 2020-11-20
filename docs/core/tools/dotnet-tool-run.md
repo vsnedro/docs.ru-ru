@@ -2,12 +2,12 @@
 title: Команда dotnet tool run
 description: Команда dotnet tool run вызывает локальное средство.
 ms.date: 02/14/2020
-ms.openlocfilehash: f79c239363e8b3abbd55c54dd1912443e6777fb7
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 116ecb61748a0ca70ed385b279b11b939748f4a8
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463329"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634159"
 ---
 # <a name="dotnet-tool-run"></a>dotnet tool run
 
@@ -49,5 +49,5 @@ dotnet tool run -h|--help
 
 ## <a name="see-also"></a>См. также
 
-- [Средства .NET Core](global-tools.md)
-- [Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core](local-tools-how-to-use.md)
+- [Средства .NET](global-tools.md)
+- [Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET](local-tools-how-to-use.md)

@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet publish
-description: Команда dotnet publish публикует решение или проект .NET Core в каталоге.
-ms.date: 02/24/2020
-ms.openlocfilehash: 2c33f99ce652dadc6e0c1a4c5e9e78fff9f54254
-ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
+description: Команда dotnet publish публикует решение или проект .NET в каталоге.
+ms.date: 11/11/2020
+ms.openlocfilehash: 9b5d00816e2f4f9557280175e4b016fe79af0673
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91654898"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634433"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -41,11 +41,11 @@ dotnet publish -h|--help
 - Файл *.runtimeconfig.json*, определяющий общую среду выполнения, которую ожидает приложение, а также другие параметры конфигурации для среды выполнения (например, тип сборки мусора).
 - Зависимости приложения, которые копируются из кэша NuGet в выходную папку.
 
-Выходные данные команды `dotnet publish` готовы к развертыванию в размещающей системе (например, на сервере, ПК, Mac, ноутбуке) для выполнения. Это единственный официальный способ подготовить приложение к развертыванию. В зависимости от указанного в проекте типа развертывания размещающая система может как иметь, так и не иметь общую среду выполнения .NET Core. Дополнительные сведения см. в статье [Публикация приложений .NET Core с помощью .NET Core CLI](../deploying/deploy-with-cli.md).
+Выходные данные команды `dotnet publish` готовы к развертыванию в размещающей системе (например, на сервере, ПК, Mac, ноутбуке) для выполнения. Это единственный официальный способ подготовить приложение к развертыванию. В зависимости от указанного в проекте типа развертывания размещающая система может как иметь, так и не иметь общую среду выполнения .NET. Дополнительные сведения см. в статье [Публикация приложений .NET с помощью .NET CLI](../deploying/deploy-with-cli.md).
 
 ### <a name="implicit-restore"></a>Неявное восстановление
 
-[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+[!INCLUDE[dotnet restore note](../../../includes/dotnet-restore-note.md)]
 
 ### <a name="msbuild"></a>MSBuild
 
@@ -165,7 +165,7 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 - **`--self-contained [true|false]`**
 
-  Публикует среду выполнения .NET Core вместе с приложением, что позволяет не устанавливать ее на конечном компьютере. Значение по умолчанию — `true`, если указан идентификатор среды выполнения и проект является исполняемым проектом (а не проектом библиотеки). Дополнительные сведения см. в разделах [Публикация приложения .NET Core](../deploying/index.md) и [Публикация приложений .NET Core с помощью .NET Core CLI](../deploying/deploy-with-cli.md).
+  Публикует среду выполнения .NET вместе с приложением, что позволяет не устанавливать ее на конечном компьютере. Значение по умолчанию — `true`, если указан идентификатор среды выполнения и проект является исполняемым проектом (а не проектом библиотеки). Дополнительные сведения см. в разделах [Публикация приложения .NET](../deploying/index.md) и [Публикация приложений .NET с помощью .NET CLI](../deploying/deploy-with-cli.md).
 
   Если этот параметр используется без указания `true` или `false`, по умолчанию применяется `true`. В этом случае не помещайте аргумент решения или проекта сразу после `--self-contained`, поскольку здесь ожидается `true` или `false`.
 
@@ -175,7 +175,7 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Публикует приложение для данной среды выполнения. Список идентификаторов сред выполнения (RID) см. в [каталоге RID](../rid-catalog.md). Дополнительные сведения см. в разделах [Публикация приложения .NET Core](../deploying/index.md) и [Публикация приложений .NET Core с помощью .NET Core CLI](../deploying/deploy-with-cli.md).
+  Публикует приложение для данной среды выполнения. Список идентификаторов сред выполнения (RID) см. в [каталоге RID](../rid-catalog.md). Дополнительные сведения см. в разделах [Публикация приложения .NET](../deploying/index.md) и [Публикация приложений .NET с помощью .NET CLI](../deploying/deploy-with-cli.md).
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -231,8 +231,8 @@ dotnet publish -p:PublishProfile=FolderProfile
 
 ## <a name="see-also"></a>См. также
 
-- [Общие сведения о публикации приложений .NET Core](../deploying/index.md)
-- [Публикация приложений .NET Core с помощью .NET Core CLI](../deploying/deploy-with-cli.md)
+- [Общие сведения о публикации приложений .NET](../deploying/index.md)
+- [Публикация приложений .NET с помощью интерфейса командной строки](../deploying/deploy-with-cli.md)
 - [Целевые платформы](../../standard/frameworks.md)
 - [Каталог идентификаторов сред выполнения (RID)](../rid-catalog.md)
 - [Работа с заверением macOS Catalina](../install/macos-notarization-issues.md)

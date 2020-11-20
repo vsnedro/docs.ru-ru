@@ -1,19 +1,19 @@
 ---
-title: Установка .NET Core в Fedora — .NET Core
-description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в Fedora.
+title: Установка .NET в Fedora — .NET
+description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
-ms.openlocfilehash: 89a55ad2e9fd66d277d0c3eb6a07bd402574bd0a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/10/2020
+ms.openlocfilehash: 9e96773e30fb8ee395e37dca7a4794cd42359bb2
+ms.sourcegitcommit: c38bf879a2611ff46aacdd529b9f2725f93e18a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538518"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94594621"
 ---
-# <a name="install-net-core-sdk-or-net-core-runtime-on-fedora"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Fedora
+# <a name="install-the-net-sdk-or-the-net-runtime-on-fedora"></a>Установка пакета SDK для .NET или среды выполнения .NET в Fedora
 
-.NET Core поддерживается в Fedora. В этой статье описано, как установить .NET Core в Fedora. Если поддержка какой-либо версии Fedora прекращается, то .NET Core также перестает поддерживать ее. Но с помощью этих инструкций вы сможете запустить .NET Core даже в неподдерживаемых версиях.
+.NET поддерживается в Fedora. В этой статье описано, как установить .NET в Fedora. Если поддержка какой-либо версии Fedora прекращается, то .NET также перестает поддерживать ее. Но с помощью этих инструкций вы сможете запустить .NET даже в неподдерживаемых версиях.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -21,22 +21,23 @@ ms.locfileid: "90538518"
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core и версий Fedora, в которых они поддерживаются. Эти версии поддерживаются до того же времени, что и версия [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или [Fedora](https://fedoraproject.org/wiki/End_of_life).
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET и версий Fedora, в которых они поддерживаются. Эти версии поддерживаются до того же времени, что и версия [.NET](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или [Fedora](https://fedoraproject.org/wiki/End_of_life).
 
-- Значок ✔️ означает, что версия Fedora или .NET Core поддерживается.
-- Значок ❌ означает, что версия Fedora или версия .NET Core в таком выпуске Fedora не поддерживается.
-- Если значок ✔️ стоит как напротив версии Fedora, так и напротив версии .NET Core, это значит, что такое сочетание ОС и .NET поддерживается.
+- Значок ✔️ означает, что версия Fedora или .NET поддерживается.
+- Значок ❌ означает, что версия Fedora или версия .NET в таком выпуске Fedora не поддерживается.
+- Если значок ✔️ стоит как напротив версии Fedora, так и напротив версии .NET, это значит, что такое сочетание ОС и .NET поддерживается.
 
-| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | Предварительная версия .NET 5 (только установка вручную) |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [32](linux-fedora.md#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ✔️ [31](linux-fedora.md#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ❌ [30](linux-fedora.md#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 (предварительная версия) |
-| ❌ [29](linux-fedora.md#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 (предварительная версия) |
-| ❌ [28](linux-fedora.md#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 (предварительная версия) |
-| ❌ [27](linux-fedora.md#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 (предварительная версия) |
+| Fedora               | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+|----------------------|---------------|---------------|----------|
+| ✔️ [33](#fedora-33-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [32](#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [31](#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [30](#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [29](#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [28](#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [27](#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
 
-Следующие версии .NET Core больше не поддерживаются, но остаются доступными для скачивания:
+Следующие версии .NET больше не поддерживаются. (но остаются доступными для скачивания):
 
 - 3.0
 - 2.2
@@ -46,13 +47,37 @@ ms.locfileid: "90538518"
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
+## <a name="fedora-33-"></a>Fedora 33 ✔️
+
+> [!TIP]
+> .NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для Fedora 33. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. .NET 5.0 еще не предоставляется в репозиториях пакетов по умолчанию.
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+
 ## <a name="fedora-32-"></a>Fedora 32 ✔️
 
-.NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для Fedora 32.
+> [!TIP]
+> .NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для Fedora 32. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. .NET 5.0 еще не предоставляется в репозиториях пакетов по умолчанию.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
-## <a name="fedora-31-"></a>Fedora 31 ✔️
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+
+## <a name="fedora-31-"></a>Fedora 31 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -145,4 +170,4 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

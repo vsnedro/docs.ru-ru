@@ -4,12 +4,12 @@ description: Сведения о деконструкции кортежей и 
 ms.technology: csharp-fundamentals
 ms.date: 11/23/2017
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: 8defd75a7cdff3490d2b0a6097ec2a898576e113
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 96168b729ae3ec11d7a38444b8c100bdbff4efbf
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174170"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439707"
 ---
 # <a name="deconstructing-tuples-and-other-types"></a>Деконструкция кортежей и других типов
 
@@ -76,7 +76,7 @@ C# не предоставляет встроенную поддержку дл�
 В следующем примере показана перегрузка метода `Deconstruct` для возвращения различных сочетаний свойств объекта `Person`. Отдельные перегрузки возвращают следующие значения:
 
 - Имя и фамилия.
-- Имя, фамилия и отчество.
+- Имя, отчество, фамилия.
 - Имя, фамилия, название города и название штата.
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]

@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet tool install
-description: Команда dotnet tool install устанавливает указанное средство .NET Core на компьютер.
+description: Команда dotnet tool install устанавливает указанное средство .NET на компьютер.
 ms.date: 02/14/2020
-ms.openlocfilehash: 067f90124833da537370a36934ff212aba7577f3
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 1dd870a8f91e557a2f59919682616aa8817fc070
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83702811"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634328"
 ---
 # <a name="dotnet-tool-install"></a>dotnet tool install
 
@@ -15,7 +15,7 @@ ms.locfileid: "83702811"
 
 ## <a name="name"></a>name
 
-`dotnet tool install` устанавливает указанное [средство .NET Core](global-tools.md) на компьютер.
+`dotnet tool install` устанавливает указанное [средство .NET](global-tools.md) на компьютер.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -40,7 +40,7 @@ dotnet tool install -h|--help
 
 ## <a name="description"></a>Описание
 
-Команда `dotnet tool install` предоставляет способ установки средств .NET Core на компьютере. Чтобы использовать команду, укажите один из следующих параметров установки:
+Команда `dotnet tool install` предоставляет способ установки средств .NET на компьютере. Чтобы использовать команду, укажите один из следующих параметров установки:
 
 * Чтобы установить глобальный инструмент в расположение по умолчанию, используйте параметр `--global`.
 * Чтобы установить глобальный инструмент в расположение, указанное пользователем, используйте параметр `--tool-path`.
@@ -67,7 +67,7 @@ dotnet new tool-manifest
 
 - **`PACKAGE_NAME`**
 
-  Имя или идентификатор пакета NuGet, который содержит устанавливаемое средство .NET Core.
+  Имя или идентификатор пакета NuGet, который содержит устанавливаемое средство .NET.
 
 ## <a name="options"></a>Параметры
 
@@ -81,7 +81,7 @@ dotnet new tool-manifest
 
 - **`framework <FRAMEWORK>`**
 
-  Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для установки средства. По умолчанию пакет SDK для .NET Core пытается выбрать наиболее подходящую версию .NET Framework.
+  Указывает [требуемую версию .NET Framework](../../standard/frameworks.md) для установки средства. По умолчанию пакет SDK для .NET пытается выбрать наиболее подходящую версию .NET Framework.
 
 - **`-g|--global`**
 
@@ -127,6 +127,6 @@ dotnet new tool-manifest
 
 ## <a name="see-also"></a>См. также
 
-- [Средства .NET Core](global-tools.md)
-- [Учебник. Установка и использование глобального средства .NET Core с помощью интерфейса командной строки .NET Core](global-tools-how-to-use.md)
-- [Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core](local-tools-how-to-use.md)
+- [Средства .NET](global-tools.md)
+- [Учебник. Установка и использование глобального средства .NET с помощью интерфейса командной строки .NET](global-tools-how-to-use.md)
+- [Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET](local-tools-how-to-use.md)

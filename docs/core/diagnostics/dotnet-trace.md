@@ -2,12 +2,12 @@
 title: Программа dotnet-trace — .NET Core
 description: Установка и использование программы командной строки dotnet-trace.
 ms.date: 11/21/2019
-ms.openlocfilehash: 25178a0e59ce9edb69d15ee761c1b9e56aa5eb3a
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: d4175ccad785b21f860044a4fd5d691624ec495e
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517312"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94507232"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -66,6 +66,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
+    [-- <command>] (for target applications running .NET 5.0 or later)
 ```
 
 ### <a name="options"></a>Параметры
@@ -111,6 +112,13 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - `Provider[,Provider]`
   - `Provider` имеет формат `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`;
   - `KeyValueArgs` имеет формат `[key1=value1][;key2=value2]`.
+
+- **`-- <command>` (только для целевых приложений, использующих .NET 5.0)**
+
+  После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0. Это может быть полезно при диагностике проблем, происходящих на ранних этапах процесса, таких как проблема с производительностью при запуске или ошибки загрузчика и модуля привязки.
+
+  > [!NOTE]
+  > При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении. Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.
 
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 
@@ -185,6 +193,42 @@ dotnet-trace list-profiles [-h|--help]
   ```
 
 - Чтобы остановить сбор, нажмите клавишу `<Enter>`. `dotnet-trace` завершит запись событий в файл *trace.nettrace*.
+
+## <a name="launch-a-child-application-and-collect-a-trace-from-its-startup-using-dotnet-trace"></a>Запуск дочернего приложения и получение трассировки от запуска с помощью dotnet-trace
+
+Примечание. Это работает только для приложений, использующих .NET 5.0 или более поздней версии.
+
+Иногда бывает полезно получить трассировку процесса от запуска. Для приложений, использующих .NET 5.0 или более поздней версии, это можно сделать с помощью dotnet-trace.
+
+Это приведет к запуску `hello.exe` с `arg1` и `arg2` в качестве аргументов командной строки и сбору трассировки при запуске среды выполнения:
+
+```console
+dotnet-trace collect -- hello.exe arg1 arg2
+```
+
+Приведенная выше команда создает выходные данные наподобие следующих:
+
+```console
+No profile or providers specified, defaulting to trace profile 'cpu-sampling'
+
+Provider Name                           Keywords            Level               Enabled By
+Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profile
+Microsoft-Windows-DotNETRuntime         0x00000014C14FCCBD  Informational(4)    --profile
+
+Process        : E:\temp\gcperfsim\bin\Debug\net5.0\gcperfsim.exe
+Output File    : E:\temp\gcperfsim\trace.nettrace
+
+
+[00:00:00:05]   Recording trace 122.244  (KB)
+Press <Enter> or <Ctrl+C> to exit...
+```
+
+Вы можете отключить сбор данных трассировки, нажав клавишу `<Enter>` или `<Ctrl + C>`. Это также приведет к выходу из `hello.exe`.
+
+> [!NOTE]
+> При запуске `hello.exe` с помощью dotnet-trace выполняется перенаправление входных и выходных данных, и вы не сможете взаимодействовать со стандартным stdin/stdout.
+> Выход из средства с помощью клавиш CTRL+C или SIGTERM приведет к безопасному завершению работы средства и дочернего процесса.
+> Если дочерний процесс завершает работу до средства, средство также завершит работу, а трассировка будет доступна для безопасного просмотра.
 
 ## <a name="view-the-trace-captured-from-dotnet-trace"></a>Просмотр трассировки, собранной с помощью dotnet-trace
 

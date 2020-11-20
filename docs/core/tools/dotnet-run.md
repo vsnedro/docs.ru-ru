@@ -2,12 +2,12 @@
 title: Команда dotnet run
 description: Команда dotnet run — это удобное средство для запуска приложения из исходного кода.
 ms.date: 02/19/2020
-ms.openlocfilehash: 77282fd8615ef01b7867c1bf0f741c834b6ddb30
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: c80f290c75e3bac65ae73fe8edada53db4ce86f8
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82102776"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634420"
 ---
 # <a name="dotnet-run"></a>dotnet run
 
@@ -43,7 +43,7 @@ dotnet run -h|--help
 dotnet myapp.dll
 ```
 
-Дополнительные сведения о драйвере `dotnet` см. в разделе [Средства интерфейса командной строки (CLI) .NET Core](index.md).
+Дополнительные сведения о драйвере `dotnet` см. в разделе [Средства интерфейса командной строки (CLI) .NET](index.md).
 
 Для запуска приложения команда `dotnet run` разрешает зависимости приложения, выходящие за пределы общей среды выполнения, из кэша NuGet. Из-за использования кэшированных зависимостей не рекомендуется применять команду `dotnet run` для запуска приложений в рабочей среде. Вместо этого [создайте развертывание](../deploying/index.md) с помощью команды [`dotnet publish`](dotnet-publish.md) и разверните опубликованные выходные данные.
 
@@ -129,7 +129,7 @@ dotnet myapp.dll
   dotnet run --configuration Release -- --help
   ```
 
-- Восстановление зависимостей и средств для проекта в текущем каталоге с выводом минимального объема выходных данных и последующим запуском проекта (пакет SDK для .NET Core 2.0 и более поздних версий).
+- Восстановление зависимостей и средств для проекта в текущем каталоге с выводом минимального объема выходных данных и последующим запуском проекта.
 
   ```dotnetcli
   dotnet run --verbosity m

@@ -2,12 +2,12 @@
 title: Ведение журнала и трассировка (.NET Core)
 description: Общие сведения о ведении журнала и трассировке в .NET Core.
 ms.date: 10/12/2020
-ms.openlocfilehash: 33c78ecc839b552267ad43dd00b7d627e756a939
-ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
+ms.openlocfilehash: e3f809dab64d66d8b4ba16ca55fc426309614715
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91997704"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94439928"
 ---
 # <a name="net-core-logging-and-tracing"></a>Ведение журнала и трассировка в .NET Core
 
@@ -53,11 +53,12 @@ ms.locfileid: "91997704"
   - EventSource является основным корневым API для трассировки в .NET Core.
   - Доступен во всех стандартных версиях .NET Standard.
   - Поддерживает трассировку только сериализуемых объектов.
-  - Сохраняет данные в подключенные [прослушиватели событий](xref:System.Diagnostics.Tracing.EventListener).
-  - .NET Core предоставляет следующие прослушиватели:
+  - Можно использовать в процессе через любые экземпляры [EventListener](xref:System.Diagnostics.Tracing.EventListener), настроенные для использования EventSource.
+  - Можно использовать вне процесса через:
     - EventPipe из .NET Core на всех платформах.
     - [Трассировка событий Windows (ETW).](/windows/win32/etw/event-tracing-portal)
     - [Платформа трассировки LTTng для Linux.](https://lttng.org/)
+      - Пошаговое руководство. [Сбор трассировки LTTng с помощью PerfCollect](trace-perfcollect-lttng.md).
 
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
   - Предоставляется в составе .NET Core и в отдельном [пакете NuGet](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) для .NET Framework.

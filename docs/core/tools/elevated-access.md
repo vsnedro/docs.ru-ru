@@ -3,12 +3,12 @@ title: Повышенные права доступа для команд dotnet
 description: Рекомендации по использованию команд dotnet, которым требуются повышенные права доступа.
 author: wli3
 ms.date: 06/26/2019
-ms.openlocfilehash: f99e0b257772e0a73d4945f1129997d1d3308ed2
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: b34a4d631ec0e5ef641e1ffbc91e081d25645157
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805791"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634055"
 ---
 # <a name="elevated-access-for-dotnet-commands"></a>Повышенные права доступа для команд dotnet
 
@@ -26,7 +26,7 @@ ms.locfileid: "80805791"
 
 ## <a name="global-tool-installation"></a>Установка глобального средства
 
-Ниже описывается рекомендованный способ установки, запуска и удаления средств .NET Core, для выполнения которых требуется повышенный уровень прав.
+Ниже описывается рекомендованный способ установки, запуска и удаления средств .NET, для выполнения которых требуется повышенный уровень прав.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -108,4 +108,4 @@ dotnet tool uninstall PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools"
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор глобальных средств .NET Core](global-tools.md)
+- [Общие сведения о средствах .NET](global-tools.md)

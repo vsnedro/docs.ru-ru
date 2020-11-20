@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet add package
 description: Команду dotnet add package удобно использовать для добавления ссылки на пакет NuGet в проект.
-ms.date: 02/14/2020
-ms.openlocfilehash: 1bdda241c1301b926ba2fd322f969407038b7b62
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/11/2020
+ms.openlocfilehash: 10373b3b69c669323674b192d54cd277a5828f24
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538072"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94556879"
 ---
 # <a name="dotnet-add-package"></a>dotnet add package
 
@@ -23,7 +23,7 @@ ms.locfileid: "90538072"
 dotnet add [<PROJECT>] package <PACKAGE_NAME>
     [-f|--framework <FRAMEWORK>] [--interactive]
     [-n|--no-restore] [--package-directory <PACKAGE_DIRECTORY>]
-    [-s|--source <SOURCE>] [-v|--version <VERSION>]
+    [--prerelease] [-s|--source <SOURCE>] [-v|--version <VERSION>]
 
 dotnet add package -h|--help
 ```
@@ -88,6 +88,10 @@ info : PackageReference for package 'Newtonsoft.Json' version '12.0.1' added to 
 - **`--package-directory <PACKAGE_DIRECTORY>`**
 
   Каталог, в который нужно восстановить пакеты. Расположение по умолчанию для восстановления пакетов — `%userprofile%\.nuget\packages` в Windows и `~/.nuget/packages` в macOS и Linux. Дополнительные сведения см. в статье [Управление папкой установки глобальных пакетов, кэшем и временными папками](/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+
+- **`--prerelease`**
+
+  Разрешает установку пакетов предварительного выпуска.
 
 - **`-s|--source <SOURCE>`**
 

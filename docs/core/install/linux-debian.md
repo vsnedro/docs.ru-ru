@@ -1,19 +1,19 @@
 ---
-title: Установка .NET Core в Debian (.NET Core)
-description: Здесь приводятся различные способы установки пакета SDK для .NET Core и среды выполнения .NET Core в Debian.
+title: Установка .NET в Debian — .NET
+description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
-ms.openlocfilehash: d0f7d4092ec420d031d0874a56b9e2148afdb865
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 11/10/2020
+ms.openlocfilehash: 6dad4e1779600b22b8301e03ffb8fb2c16786ead
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538556"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94506996"
 ---
-# <a name="install-net-core-sdk-or-net-core-runtime-on-debian"></a>Установка пакета SDK для .NET Core или среды выполнения .NET Core в Debian
+# <a name="install-the-net-sdk-or-the-net-runtime-on-debian"></a>Установка пакета SDK для .NET или среды выполнения .NET в Debian
 
-В этой статье описано, как установить .NET Core в Debian. Если поддержка какой-либо версии Debian прекращается, то .NET Core также перестает поддерживать ее. Но с помощью этих инструкций вы сможете запустить .NET Core даже в неподдерживаемых версиях.
+В этой статье описано, как установить .NET в Debian. Если поддержка какой-либо версии Debian прекращается, то .NET также перестает поддерживать ее. Но с помощью этих инструкций вы сможете запустить .NET даже в неподдерживаемых версиях.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -21,19 +21,19 @@ ms.locfileid: "90538556"
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
-В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET Core и версий Debian, в которых они поддерживаются. Эти версии поддерживаются до того же времени, что и версия [.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или [Debian](https://wiki.debian.org/DebianReleases).
+В приведенной ниже таблице содержится список поддерживаемых сейчас выпусков .NET и версий Debian, в которых они поддерживаются. Эти версии поддерживаются до того же времени, что и версия [.NET](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) или [Debian](https://wiki.debian.org/DebianReleases).
 
-- Значок ✔️ означает, что версия Debian или .NET Core поддерживается.
-- Значок ❌ означает, что версия Debian или версия .NET Core в таком выпуске Debian не поддерживается.
-- Если значок ✔️ стоит как напротив версии Debian, так и напротив версии .NET Core, это значит, что такое сочетание ОС и .NET поддерживается.
+- Значок ✔️ означает, что версия Debian или .NET поддерживается.
+- Значок ❌ означает, что версия Debian или версия .NET в таком выпуске Debian не поддерживается.
+- Если значок ✔️ стоит как напротив версии Debian, так и напротив версии .NET, это значит, что такое сочетание ОС и .NET поддерживается.
 
-| Debian                   | .NET Core 2.1 | .NET Core 3.1 | Предварительная версия .NET 5 (только установка вручную) |
+| Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [10](#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ✔️ [9](#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 (предварительная версия) |
-| ❌ [8](#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 (предварительная версия) |
+| ✔️ [10](#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [9](#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [8](#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
 
-Следующие версии .NET Core больше не поддерживаются, (но остаются доступными для скачивания):
+Следующие версии .NET больше не поддерживаются. (но остаются доступными для скачивания):
 
 - 3.0
 - 2.2
@@ -52,7 +52,7 @@ wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## <a name="debian-9-"></a>Debian 9 ✔️
 
@@ -67,7 +67,7 @@ sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## <a name="debian-8-"></a>Debian 8 ❌
 
@@ -88,7 +88,7 @@ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 ## <a name="apt-update-sdk-or-runtime"></a>Обновление пакета SDK или среды выполнения с помощью APT
 
-Если для .NET Core доступен новый выпуск исправлений, можете выполнить обновление с помощью APT и следующих команд:
+Если для .NET доступен новый выпуск исправлений, можете выполнить обновление с помощью APT и следующих команд:
 
 ```bash
 sudo apt-get update
@@ -97,7 +97,7 @@ sudo apt-get upgrade
 
 ## <a name="apt-troubleshooting"></a>Устранение неполадок с APT
 
-В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании APT для установки .NET Core.
+В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании APT для установки .NET.
 
 ### <a name="unable-to-find-package"></a>Не удалось найти пакет
 
@@ -162,4 +162,4 @@ sudo apt-get update; \
 
 ## <a name="next-steps"></a>Следующие шаги
 
-- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET Core в Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

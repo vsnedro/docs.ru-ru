@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: 6805564ccd8a8b4911c7c687d97a06df2910c015
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: a5666cfe4c09b2b88d77b256fac922154c7d6bd7
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281614"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634387"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -69,7 +69,7 @@ dotnet test -h|--help
 
 - **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
-  Путь к каталогу для поиска дополнительных адаптеров теста. Проверяются только *DLL* -файлы с суффиксом `.TestAdapter.dll`. Если не указано, выполняется поиск по каталогу тестового *DLL*.
+  Путь к каталогу для поиска дополнительных адаптеров теста. Проверяются только *DLL*-файлы с суффиксом `.TestAdapter.dll`. Если не указано, выполняется поиск по каталогу тестового *DLL*.
 
 - **`--blame`**
 
@@ -81,7 +81,7 @@ dotnet test -h|--help
   
   Данные для дампа исключений в управляемом коде будут собираться в .NET 5.0 и более поздних версий автоматически. Этот параметр создаст дамп для TestHost или любого дочернего процесса, который также выполнялся в .NET 5.0 и завершился сбоем. Аварийное завершение в машинном коде не приведет к созданию дампа. Этот параметр работает в Windows, macOS и Linux.
   
-  Аварийные дампы в машинном коде или при использовании .NET Core 3.1 или более ранних версий можно собирать только в Windows с помощью Procdump. Каталог, содержащий файлы *procdump.exe* и *procdump64.exe* , должен быть включен в переменную среды PATH или PROCDUMP_PATH. [Скачать средства.](/sysinternals/downloads/procdump) Подразумевает `--blame`.
+  Аварийные дампы в машинном коде или при использовании .NET Core 3.1 или более ранних версий можно собирать только в Windows с помощью Procdump. Каталог, содержащий файлы *procdump.exe* и *procdump64.exe*, должен быть включен в переменную среды PATH или PROCDUMP_PATH. [Скачать средства.](/sysinternals/downloads/procdump) Подразумевает `--blame`.
   
   Чтобы собрать аварийный дамп из собственного приложения, запущенного в NET 5.0 или более поздней версии, можно принудительно использовать Procdump, задав для переменной среды `VSTEST_DUMP_FORCEPROCDUMP` значение `1`.
 
@@ -122,7 +122,7 @@ dotnet test -h|--help
   
   Чтобы получить объем протестированного кода на любой платформе, поддерживаемой .NET Core, установите [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) и используйте параметр `--collect:"XPlat Code Coverage"`.
 
-  В Windows объем протестированного кода можно получить с помощью параметра `--collect "Code Coverage"`. Этот параметр создает файл *COVERAGE* , который можно открыть в Visual Studio 2019 Enterprise. Дополнительные сведения см. в статьях [Использование объема протестированного кода](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) и [Настройка анализа объема протестированного кода](/visualstudio/test/customizing-code-coverage-analysis).
+  В Windows объем протестированного кода можно получить с помощью параметра `--collect "Code Coverage"`. Этот параметр создает файл *COVERAGE*, который можно открыть в Visual Studio 2019 Enterprise. Дополнительные сведения см. в статьях [Использование объема протестированного кода](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) и [Настройка анализа объема протестированного кода](/visualstudio/test/customizing-code-coverage-analysis).
 
 - **`-d|--diag <LOG_FILE>`**
 
@@ -130,7 +130,7 @@ dotnet test -h|--help
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Определяет принудительное использование `dotnet` или тестового узла .NET Framework для двоичных файлов теста. Этот параметр определяет только используемый тип узла. Реальная используемая версия платформы определяется в файле *runtimeconfig.json* тестового проекта. Если этот параметр не указан, для определения типа узла используется [атрибут сборки TargetFramework](/dotnet/api/system.runtime.versioning.targetframeworkattribute). Если этот атрибут удален из *DLL* , используется узел .NET Framework.
+  Определяет принудительное использование `dotnet` или тестового узла .NET Framework для двоичных файлов теста. Этот параметр определяет только используемый тип узла. Реальная используемая версия платформы определяется в файле *runtimeconfig.json* тестового проекта. Если этот параметр не указан, для определения типа узла используется [атрибут сборки TargetFramework](/dotnet/api/system.runtime.versioning.targetframeworkattribute). Если этот атрибут удален из *DLL*, используется узел .NET Framework.
 
 - **`--filter <EXPRESSION>`**
 
@@ -280,5 +280,5 @@ dotnet test -h|--help
 ## <a name="see-also"></a>См. также
 
 - [Платформы и целевые объекты](../../standard/frameworks.md)
-- [Каталог идентификаторов сред выполнения (RID) в .NET Core](../rid-catalog.md)
+- [Каталог идентификаторов сред выполнения (RID) .NET](../rid-catalog.md)
 - [Передача аргументов runsettings через командную строку](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

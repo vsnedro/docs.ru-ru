@@ -1,16 +1,16 @@
 ---
-title: Учебник. Установка и использование локальных средств .NET Core
+title: Учебник. Установка и использование локальных средств .NET
 description: Узнайте, как устанавливать и использовать средство .NET в качестве локального.
 ms.topic: tutorial
 ms.date: 02/12/2020
-ms.openlocfilehash: 555497a71d54713e62e54f8f293afdf74ead1743
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 2cb25443706293b66325d43136afcd3fd886294d
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062681"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94633885"
 ---
-# <a name="tutorial-install-and-use-a-net-core-local-tool-using-the-net-core-cli"></a>Учебник. Установка и использование локального средства .NET Core с помощью интерфейса командной строки .NET Core
+# <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий
 
@@ -201,7 +201,7 @@ dotnet tool uninstall dotnetsay
 
 ## <a name="troubleshoot"></a>Устранение неполадок
 
-Если при выполнении учебника появляется сообщение об ошибке, см. статью [Устранение неполадок при использовании средства .NET Core](troubleshoot-usage-issues.md).
+Если при выполнении учебника появляется сообщение об ошибке, см. статью [Устранение неполадок при использовании средства .NET](troubleshoot-usage-issues.md).
 
 ## <a name="see-also"></a>См. также
 
