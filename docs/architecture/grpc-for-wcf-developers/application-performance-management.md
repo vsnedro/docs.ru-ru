@@ -2,12 +2,12 @@
 title: Управление производительностью приложений — gRPC для разработчиков WCF
 description: Ведение журнала, метрики и трассировка для ASP.NET Core gRPC приложений.
 ms.date: 09/02/2019
-ms.openlocfilehash: bccb5ba92e2dc8fa2def4dc192b0ca58b332861a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8a13d1c4df95768e55c90ac491150bfc78ec2bab
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165914"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982346"
 ---
 # <a name="application-performance-management"></a>Управление производительностью приложений
 
@@ -155,7 +155,7 @@ public class Startup
 
 Пакет ОпентраЦинг является уровнем абстракции, и поэтому он требует реализации, характерной для серверной части. Реализации API ОпентраЦинг доступны для следующих серверных интерфейсов с открытым исходным кодом.
 
-| Имя | Пакет | Веб-сайт |
+| Имя | Пакет | веб-сайт; |
 | ---- | ------- | -------- |
 | Jaeger | [Jaeger](https://www.nuget.org/packages/Jaeger/) | [jaegertracing.io](https://jaegertracing.io) |
 | Эластичная APM | [Эластичный. APM. Неткореалл](https://www.nuget.org/packages/Elastic.Apm.NetCoreAll/) | [elastic.co/products/apm](https://www.elastic.co/products/apm) |

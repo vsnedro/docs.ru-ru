@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
-ms.openlocfilehash: 2ed2a88b91f06bb02c72d3e310ae09d58637205f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2dda65f605ea9de616f01d6e52eb4e0e5def4db7
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197473"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982522"
 ---
 # <a name="handling-null-values"></a>Обработка значений NULL
 
@@ -94,7 +94,7 @@ WHERE TerritoryID IN (1, 2, 3)
   
  Кроме того, следующие правила применяются к экземпляру назначений NULL `DataRow.["columnName"]`:  
   
-1. Используемое по умолчанию значение *default* является `DbNull.Value` для всех столбцов, за исключением строго типизированных нулевых столбцов с допустимыми строго типизированными значениями NULL.  
+1. Значение *по умолчанию* — `DbNull.Value` для всех, за исключением строго типизированных столбцов со значением NULL, где он является соответствующим строго типизированным значением NULL.  
   
 2. Значения NULL никогда не записываются во время сериализации в XML-файлы (как в xsi:nil).  
   
@@ -151,7 +151,7 @@ String.Equals instance method:
   Two empty strings=True
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных SQL Server и ADO.NET](sql-server-data-types.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)
