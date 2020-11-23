@@ -414,6 +414,8 @@ items:
                 href: ../core/diagnostics/dotnet-sos.md
           - name: Учебники по диагностике .NET Core
             items:
+              - name: Сбор трассировки производительности в Linux с помощью PerfCollect
+                href: ../core/diagnostics/trace-perfcollect-lttng.md
               - name: Получение метрик производительности с помощью EventCounters
                 href: ../core/diagnostics/event-counter-perf.md
               - name: Отладка утечек памяти
