@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1b0306b7-622b-4b57-8edc-3c713bb147ae
 topic_type:
 - apiref
-ms.openlocfilehash: ebdff88e9fdf499b809d56c4c29a906dbef9ec40
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: f8334cb44042e21c086bc05c723e99b0c079fa2c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008980"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677067"
 ---
 # <a name="cormanifestresourceflags-enumeration"></a>Перечисление CorManifestResourceFlags
+
 Указывает видимость ресурсов, закодированных в манифесте сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +37,7 @@ typedef enum CorManifestResourceFlags {
 } CorManifestResourceFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -45,12 +46,13 @@ typedef enum CorManifestResourceFlags {
 |`mrPrivate`|Ресурсы являются частными.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

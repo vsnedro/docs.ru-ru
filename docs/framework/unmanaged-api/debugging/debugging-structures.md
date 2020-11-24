@@ -6,18 +6,19 @@ helpviewer_keywords:
 - debugging structures [.NET Framework]
 - structures [.NET Framework debugging]
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
-ms.openlocfilehash: a18094fb2621478dbdb4bbf672df436234112ed0
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: bf84f8ddb1e86da3b9d0e4326584e61304640558
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793757"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676274"
 ---
 # <a name="debugging-structures"></a>Структуры отладки
 
 В этом разделе описаны неуправляемые структуры, которые использует API отладки.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
+
  [Структура CLRDATA_ADDRESS_RANGE](clrdata-address-range-structure.md) Определяет диапазон адресов.
 
  [Структура CLRDATA_IL_ADDRESS_MAP](clrdata-il-address-map-structure.md) Определяет IL для сопоставления адресов
@@ -68,11 +69,11 @@ ms.locfileid: "76793757"
 
  [Структура дакпрежитдата](dacprejitdata-structure.md) Определяет основные сведения о конкретном инструментированном методе профилирования.
 
- [Структура StackTrace_SimpleContext](stacktrace-simplecontext-structure.md) Предоставляет простой контекст, который можно использовать вместо полной структуры `CONTEXT`.
+ [Структура StackTrace_SimpleContext](stacktrace-simplecontext-structure.md) Предоставляет простой контекст, который можно использовать вместо полной `CONTEXT` структуры.
 
 ## <a name="related-sections"></a>Связанные разделы
 
- [Коклассы отладки](debugging-coclasses.md)
+ [Компонентные классы отладки](debugging-coclasses.md)
 
  [Интерфейсы отладки](debugging-interfaces.md)
 

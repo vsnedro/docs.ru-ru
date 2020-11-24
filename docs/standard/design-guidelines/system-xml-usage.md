@@ -2,14 +2,15 @@
 title: Использование System.Xml
 ms.date: 10/22/2008
 ms.assetid: 82302f0d-a621-4c6f-b57d-999bd61f21a6
-ms.openlocfilehash: a01799bd130de0222d4d66dee4955375c1a1911f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 46282afa6548c731b04c40d8de91a1fed997c57c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828599"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677574"
 ---
 # <a name="systemxml-usage"></a>Использование System.Xml
+
 В этом разделе рассказывается об использовании нескольких типов, находящихся в <xref:System.Xml?displayProperty=nameWithType> пространствах имен, которые могут использоваться для представления XML-данных.
 
  ❌ НЕ используйте <xref:System.Xml.XmlNode> или <xref:System.Xml.XmlDocument> для представления XML-данных. Используйте <xref:System.Xml.XPath.IXPathNavigable> вместо этого экземпляры, <xref:System.Xml.XmlReader> , <xref:System.Xml.XmlWriter> или подтипы <xref:System.Xml.Linq.XNode> . `XmlNode` и `XmlDocument` не предназначены для предоставления открытым API.
@@ -24,7 +25,7 @@ ms.locfileid: "94828599"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по использованию](usage-guidelines.md)

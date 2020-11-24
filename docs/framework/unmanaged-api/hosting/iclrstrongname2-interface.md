@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
 topic_type:
 - apiref
-ms.openlocfilehash: 9715369f4cf1b2a7078be14a2fc597f735ab6fd3
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: df570f32d694ec21e9642e75b4965e169afaccfc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763167"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677652"
 ---
 # <a name="iclrstrongname2-interface"></a>Интерфейс ICLRStrongName2
+
 Предоставляет возможность создания строгих имен с помощью группы SHA-2 алгоритмов безопасных хэширования (SHA-256, SHA-384 и SHA-512).  
   
 ## <a name="methods"></a>Методы  
@@ -34,10 +35,11 @@ ms.locfileid: "83763167"
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3b93bcff-62a4-47b2-babc-6bcf4216119a
 topic_type:
 - apiref
-ms.openlocfilehash: 42f7020212dd2db793b7c7d20a15c129157e7261
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 4c088b7e1096f8b4cad11a3e27b4045e233989ae
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860768"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676222"
 ---
-# <a name="_efn_getmanagedobjectfieldinfo-function"></a>\_ЕФН\_Жетманажедобжектфиелдинфо, функция
+# <a name="_efn_getmanagedobjectfieldinfo-function"></a>\_ЕФН \_ жетманажедобжектфиелдинфо, функция
+
 Возвращает смещение от начала объекта до поля и значение поля, используя предоставленный указатель объекта и имя поля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `Client`  
  окне Указатель на клиент отладки.  
   
@@ -52,12 +54,14 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
  `pOffset`  
  заполняет Смещение от `objAddr` до поля. Этот параметр может быть нулевым.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Если смещение равно 0, смещение не записывается.  
   
  Если в текущем потоке нет управляемого кода, функция возвращает HRESULT SOS_E_NOMANAGEDCODE со значением устройства 0x82 и кодом ошибки 0x1000.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** SOS_Stacktrace. h  

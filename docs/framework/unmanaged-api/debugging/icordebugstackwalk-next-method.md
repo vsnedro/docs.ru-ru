@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 189c36be-028c-4fba-a002-5edfb8fcd07f
 topic_type:
 - apiref
-ms.openlocfilehash: b89e968e9b12943c8192af3b280f8bd321a02110
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 497dda473e6510cfa31405b2066c63b1a70dd5e9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378788"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677327"
 ---
 # <a name="icordebugstackwalknext-method"></a>Метод ICorDebugStackWalk::Next
+
 Перемещает объект [икордебугстакквалк](icordebugstackwalk-interface.md) в следующий кадр.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,9 +33,10 @@ HRESULT Next();
 ```  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Среда выполнения успешно развернута до следующего кадра (см. примечания).|  
 |E_FAIL|`ICorDebugStackWalk`Объект не может быть расширен.|  
@@ -44,9 +46,11 @@ HRESULT Next();
 ## <a name="exceptions"></a>Исключения  
   
 ## <a name="remarks"></a>Remarks  
+
  `Next`Метод перемещает `ICorDebugStackWalk` объект в вызывающий кадр только в том случае, если среда выполнения может очистить текущий кадр. В противном случае объект переходит к следующему кадру, который среда выполнения может очистить.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -55,7 +59,7 @@ HRESULT Next();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugStackWalk](icordebugstackwalk-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

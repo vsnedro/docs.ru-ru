@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5eaf3b4a-92b7-4d5b-97e0-1e83721e0052
 topic_type:
 - apiref
-ms.openlocfilehash: 3b47d1559300a462ccda42bc88da43f66c1043ec
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 369335deb67d74ee3cb9fa407533e40716aa3a3a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491307"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676870"
 ---
 # <a name="imetadataimportgeteventprops-method"></a>Метод IMetaDataImport::GetEventProps
+
 Возвращает сведения о метаданных для события, представленного указанным маркером события, включая объявляющий тип, методы добавления и удаления для делегатов, а также любые флаги и другие связанные данные.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -46,6 +47,7 @@ HRESULT GetEventProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ev`  
  окне Токен метаданных события, представляющий событие, для которого необходимо получить метаданные.  
   
@@ -83,15 +85,16 @@ HRESULT GetEventProps (
  заполняет Число токенов, возвращаемых в `rmdOtherMethod` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cf064bac-9a9f-41c5-9e1d-108ff7af3afe
 topic_type:
 - apiref
-ms.openlocfilehash: 7babd0a90b9882acb03b6360753f55c57a399b9e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 3c03497f48b8199da545d796637e5f8a5c532362
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005639"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675703"
 ---
 # <a name="imetadataemitdefineevent-method"></a>Метод IMetaDataEmit::DefineEvent
+
 Создает определение для события с указанной сигнатурой метаданных и получает маркер для этого определения события.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,6 +43,7 @@ HRESULT DefineEvent (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `td`  
  окне Токен для целевого класса или интерфейса. Это либо токен, `mdTypeDef` либо `mdTypeDefNil` .  
   
@@ -70,15 +72,16 @@ HRESULT DefineEvent (
  заполняет Маркер метаданных, назначенный событию.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

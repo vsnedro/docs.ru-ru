@@ -6,14 +6,15 @@ helpviewer_keywords:
 - unsealed classes
 - inheritance, classes
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
-ms.openlocfilehash: b2e14b435aa567f231230da34307014210d46ccb
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 9e380f533cfc290e952281c6a04f19978fa92aa3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828521"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677509"
 ---
 # <a name="unsealed-classes"></a>Незапечатанные классы
+
 Запечатанные классы не могут наследоваться от, и они препятствуют расширяемости. В отличие от этого, классы, которые могут быть унаследованы от, называются незапечатанными классами.
 
  ✔️ Рассмотрите возможность использования незапечатанных классов без добавленных виртуальных или защищенных членов в качестве отличного способа предоставления недорогого, но очень удобного расширения для платформы.
@@ -26,7 +27,7 @@ ms.locfileid: "94828521"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Разработка с обеспечением расширяемости](designing-for-extensibility.md)

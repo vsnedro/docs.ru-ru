@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5604d21f-e6b7-490e-b469-42122a7568e1
 topic_type:
 - apiref
-ms.openlocfilehash: 157e6bc6cb9603fa9558ad6d39f0b086849fc7b0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0fc84a15d3250d5103c1dbc6486960f0ea780a2b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499900"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676820"
 ---
 # <a name="icorprofilercallbackremotingserverreceivingmessage-method"></a>Метод ICorProfilerCallback::RemotingServerReceivingMessage
+
 Уведомляет профилировщик о том, что процесс получил удаленный вызов метода или запрос на активацию.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT RemotingClientSendingMessage(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCookie`  
  окне Значение, которое будет соответствовать значению, указанному в параметре [ICorProfilerCallback:: RemotingClientSendingMessage](icorprofilercallback-remotingclientsendingmessage-method.md) в следующих условиях:  
   
@@ -48,10 +50,12 @@ HRESULT RemotingClientSendingMessage(
  `fIsAsync`  
  окне Значение, равное, `true` Если вызов является асинхронным; в противном случае — `false` .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Если запрос сообщения является асинхронным, запрос может обслуживаться любым произвольным потоком.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -60,6 +64,6 @@ HRESULT RemotingClientSendingMessage(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

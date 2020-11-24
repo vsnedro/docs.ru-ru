@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 43257761-8cb1-4eaf-8fb5-1f3980cb66cd
 topic_type:
 - apiref
-ms.openlocfilehash: db2137146ded5200e05bbf88e23ae599f3eb7dec
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 3fa94094ad066496cc8a1fc4dd2ccb0ee16b5aac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615453"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675845"
 ---
 # <a name="isymunmanagedreaderreplacesymbolstore-method"></a>Метод ISymUnmanagedReader::ReplaceSymbolStore
+
 Заменяет имеющееся хранилище символов разностным хранилищем символов. Этот метод аналогичен методу [UpdateSymbolStore](isymunmanagedreader-updatesymbolstore-method.md) , за исключением того, что данная Дельта действует как полная замена, а не как обновление.  
   
 > [!NOTE]
@@ -37,6 +38,7 @@ HRESULT ReplaceSymbolStore (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `filename`  
  окне Имя файла, содержащего хранилище символов.  
   
@@ -44,11 +46,13 @@ HRESULT ReplaceSymbolStore (
  окне Файловый поток, используемый в качестве альтернативы `filename` параметру.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

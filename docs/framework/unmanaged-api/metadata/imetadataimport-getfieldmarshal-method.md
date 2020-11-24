@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
 topic_type:
 - apiref
-ms.openlocfilehash: a031cdb875b5eb046428d4d235d3093caddb7a6a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 35f73135dbeea1c79d15e0a9e9367c5d533487ce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491294"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676869"
 ---
 # <a name="imetadataimportgetfieldmarshal-method"></a>Метод IMetaDataImport::GetFieldMarshal
+
 Возвращает указатель на собственный неуправляемый тип поля, представленного заданным токеном метаданных поля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetFieldMarshal (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tk`  
  окне Токен метаданных, представляющий поле, для которого необходимо получить сведения о маршалинге взаимодействия.  
   
@@ -46,15 +48,16 @@ HRESULT GetFieldMarshal (
  заполняет Размер в байтах для `ppvNativeType` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

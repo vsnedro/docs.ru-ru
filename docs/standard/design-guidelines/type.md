@@ -7,14 +7,15 @@ helpviewer_keywords:
 - class library design guidelines [.NET Framework], type design guidelines
 - types [.NET Framework], design guidelines
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-ms.openlocfilehash: 56b4cb6e93cd44c42fbc2921c9ecfd947c304b3b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a20744f76433ff12456967e4d41d9a13b6f5d46c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828547"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677535"
 ---
 # <a name="type-design-guidelines"></a>Правила разработки типов
+
 С точки зрения среды CLR существует только две категории типов — ссылочные типы и типы значений, но в целях обсуждения структуры платформы мы разделены на несколько логических групп, каждый из которых имеет собственные собственные правила проектирования.
 
  Классы являются общими вариантами ссылочных типов. Они составляют большую часть типов в большинстве платформ. Классы заменяют популярность до обширного набора объектно-ориентированных функций, которые они поддерживают, и их общей применимости. Базовые классы и абстрактные классы — это специальные логические группы, связанные с расширяемостью.
@@ -31,11 +32,12 @@ ms.locfileid: "94828547"
 
  ✔️ гарантировать, что каждый тип является четко определенным набором связанных элементов, а не только случайным набором несвязанных функций.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
+
  [Выбор между](choosing-between-class-and-struct.md) [абстрактным](abstract-class.md) классом класса и структурой конструктор [статических классов](static-class.md) [конструктор](interface.md) [структуры](struct.md) [перечисление](enum.md) структур [вложенных типов](nested-types.md) *© 2005, 2009 Корпорация Майкрософт. Все права защищены.*
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)

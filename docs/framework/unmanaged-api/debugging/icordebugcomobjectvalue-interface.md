@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 505a7f6c-d92b-42b4-b539-433f5102ea9b
 topic_type:
 - apiref
-ms.openlocfilehash: 528db447df4d71d67441b05ad29e6a900c59afbb
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 40df1416e68c86efe6d404119cb37277fe21ac56
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82892824"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677548"
 ---
 # <a name="icordebugcomobjectvalue-interface"></a>Интерфейс ICorDebugComObjectValue Interface
+
 Предоставляет методы для получения сведений, связанных с вызываемой оболочкой времени выполнения (RCW).  
   
 ## <a name="methods"></a>Методы  
@@ -31,10 +32,12 @@ ms.locfileid: "82892824"
 |[Метод GetCachedInterfacePointers](icordebugcomobjectvalue-getcachedinterfacepointers-method.md)|Возвращает необработанные указатели интерфейса, кэшированные в текущей RCW.|  
 |[Метод GetCachedInterfaceTypes](icordebugcomobjectvalue-getcachedinterfacetypes-method.md)|Предоставляет перечислитель для типов интерфейса, к которым был применен регистр текущего объекта или использован в качестве.|  
   
-## <a name="remarks"></a>Remarks  
- Чтобы проверить, представляет ли экземпляр интерфейса "ICorDebugValue" RCW, отладчик вызывает метод `QueryInterface` "ICorDebugValue" с. `IID_ICorDebugComObjectValue`  
+## <a name="remarks"></a>Комментарии  
+
+ Чтобы проверить, представляет ли экземпляр интерфейса "ICorDebugValue" RCW, отладчик вызывает метод `QueryInterface` "ICorDebugValue" с `IID_ICorDebugComObjectValue` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

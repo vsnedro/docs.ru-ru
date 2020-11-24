@@ -6,21 +6,23 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-ms.openlocfilehash: c4b9cdc2bc90096ab7c3b041bd8aa2742b48c35c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a3dd81ceaab2ba467d4c8ca091c1c2219040a273
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179166"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676300"
 ---
 # <a name="debugging-interfaces"></a>Интерфейсы отладки
+
 В этом разделе описываются неуправляемые интерфейсы отладки, управляющие отладкой программы, выполняемой в среде CLR.  
   
 ## <a name="in-this-section"></a>в этом разделе  
- [Интерфейс ICLRDataEnumMemoryРегионы](iclrdataenummemoryregions-interface.md)\
+
+ [Интерфейс Иклрдатаенуммеморирегионс](iclrdataenummemoryregions-interface.md)\
  Предоставляет метод, выполняющий перечисление областей памяти, заданной вызовами.  
   
- [Интерфейс ICLRDataEnumMemoryCallback](iclrdataenummemoryregionscallback-interface.md)\
+ [Интерфейс Иклрдатаенуммеморирегионскаллбакк](iclrdataenummemoryregionscallback-interface.md)\
  Предоставляет метод обратного вызова для метода `EnumMemoryRegions`, сообщающий отладчику результат попытки перечисления заданной области памяти.  
   
  [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)\
@@ -29,16 +31,16 @@ ms.locfileid: "79179166"
  [Интерфейс ICLRDataTarget2](iclrdatatarget2-interface.md)\
  Подкласс `ICLRDataTarget`, используемый уровнем служб доступа к данным с целью управления областями виртуальной памяти в целевом процессе.  
   
- [Интерфейс ICLRDataTarget3](iclrdatatarget3-interface.md)\
- Подкласс [ICLRDataTarget2,](iclrdatatarget2-interface.md) предоставляющий доступ к информации об исключениях.  
+ [Интерфейс метод iclrdatatarget3](iclrdatatarget3-interface.md)\
+ Подкласс [ICLRDataTarget2](iclrdatatarget2-interface.md) , предоставляющий доступ к сведениям об исключениях.  
   
  [Интерфейс ICLRDebugging](iclrdebugging-interface.md)\
  Предоставляет методы, обрабатывающие загрузку и выгрузку модулей для отладки.  
   
- [Интерфейс ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md)\
- Включает метод [ProvideLibrary Method,](iclrdebugginglibraryprovider-providelibrary-method.md) который получает интерфейс обратного вызова поставщика библиотек, который позволяет находить и загружать библиотеки отладки по требованию для общего времени выполнения.  
+ [Интерфейс Иклрдебуггинглибрарипровидер](iclrdebugginglibraryprovider-interface.md)\
+ Включает метод [метода ProvideLibrary](iclrdebugginglibraryprovider-providelibrary-method.md) , который получает интерфейс обратного вызова поставщика библиотеки, который позволяет находить и загружать библиотеки отладки, относящиеся к конкретной версии среды CLR, по запросу.  
   
- [Интерфейс ICLRMetadataLocator](iclrmetadatalocator-interface.md)\
+ [Интерфейс Иклрметадаталокатор](iclrmetadatalocator-interface.md)\
  Интерфейс, используемый уровнем служб доступа к данным для определения местонахождения метаданных сборок в целевом процессе.  
   
  [Интерфейс ICorDebug](icordebug-interface.md)\
@@ -51,15 +53,15 @@ ms.locfileid: "79179166"
  Предоставляет методы для работы с массивами, указателями, указателями функций и типами ByRef. Этот интерфейс является расширением интерфейса `ICorDebugAppDomain`.  
   
  [Интерфейс ICorDebugAppDomain3](icordebugappdomain3-interface.md)\
- Предоставляет методы работы с типами Runtime Windows в домене приложения. Этот интерфейс является расширением интерфейса `ICorDebugAppDomain` и `ICorDebugAppDomain2`.  
+ Предоставляет методы для работы с типами среда выполнения Windows в домене приложения. Этот интерфейс является расширением интерфейса `ICorDebugAppDomain` и `ICorDebugAppDomain2`.  
   
  [Интерфейс ICorDebugAppDomain4](icordebugappdomain4-interface.md)\
- Логически расширяет интерфейс [ICorDebugAppDomain,](icordebugappdomain-interface.md) чтобы получить управляемый объект из вызываемой обертки COM.  
+ Логически расширяет интерфейс [ICorDebugAppDomain](icordebugappdomain-interface.md) для получения управляемого объекта из вызываемой оболочки COM.  
   
- [Интерфейс ICorDebugAppDomainEnum](icordebugappdomainenum-interface.md)\
+ [Интерфейс Икордебугаппдомаиненум](icordebugappdomainenum-interface.md)\
  Предоставляет метод, возвращающий заданное число значений `ICorDebugAppDomain`, начиная со следующего расположения в перечислении.  
   
- [Интерфейс ICorDebugArrayValueValue](icordebugarrayvalue-interface.md)\
+ [Интерфейс ICorDebugArrayValue](icordebugarrayvalue-interface.md)\
  Подкласс интерфейса `ICorDebugHeapValue`, представляющий одномерный или многомерный массив.  
   
  [Интерфейс ICorDebugAssembly](icordebugassembly-interface.md)\
@@ -69,18 +71,18 @@ ms.locfileid: "79179166"
  Представляет сборку. Этот интерфейс является расширением интерфейса `ICorDebugAssembly`.  
   
  [Интерфейс ICorDebugAssembly3](icordebugassembly3-interface.md)\
- Логически расширяет интерфейс [ICorDebugAssembly,](icordebugassembly-interface.md) чтобы обеспечить поддержку контейнерных сборок и содержащихся в них сборок. **Доступен только в .NET Native.**  
+ Логически расширяет интерфейс [ICorDebugAssembly](icordebugassembly-interface.md) , чтобы обеспечить поддержку для сборок контейнеров и содержащихся в них сборок. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugAssemblyEnum](icordebugassemblyenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugAssembly`.  
   
- [Интерфейс ICorDebugBlockingObjectEnum](icordebugblockingobjectenum-interface.md)\
- Предоставляет список для списка структур [CorDebugBlockingObject.](cordebugblockingobject-structure.md)  
+ [Интерфейс Икордебугблоккингобжектенум](icordebugblockingobjectenum-interface.md)\
+ Предоставляет перечислитель для списка структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) .  
   
- [Интерфейс ICorDebugBoxValue](icordebugboxvalue-interface.md)\
+ [Интерфейс Икордебугбоксвалуе](icordebugboxvalue-interface.md)\
  Подкласс интерфейса `ICorDebugHeapValue`, представляющий упакованное значение объектов класса.  
   
- [Интерфейс ICorDebugBreakpoint](icordebugbreakpoint-interface.md)\
+ [Интерфейс Икордебугбреакпоинт](icordebugbreakpoint-interface.md)\
  Представляет точку останова в функции или контрольную точку для значения.  
   
  [Интерфейс ICorDebugBreakpointEnum](icordebugbreakpointenum-interface.md)\
@@ -89,7 +91,7 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugChain](icordebugchain-interface.md)\
  Представляет сегмент физического или логического стека вызовов.  
   
- [Интерфейс ICorDebugChainEnum](icordebugchainenum-interface.md)\
+ [Интерфейс Икордебугчаиненум](icordebugchainenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugChain`.  
   
  [Интерфейс ICorDebugClass](icordebugclass-interface.md)\
@@ -105,18 +107,18 @@ ms.locfileid: "79179166"
  Предоставляет методы, расширяющие возможности интерфейса `ICorDebugCode`.  
   
  [Интерфейс ICorDebugCode3](icordebugcode3-interface.md)\
- Предоставляет метод, который расширяет [ICorDebugCode](icordebugcode-interface1.md) и [ICorDebugCode2](icordebugcode2-interface.md) для предоставления информации о управляемой стоимости возврата.  
+ Предоставляет метод, расширяющий интерфейс [ICorDebugCode](icordebugcode-interface1.md) и [ICorDebugCode2](icordebugcode2-interface.md) для предоставления сведений об управляемом возвращаемом значении.  
   
  [Интерфейс ICorDebugCode4](icordebugcode4-interface.md)\
- Предоставляет метод, позволяющий отладчику перечислять локальные переменные и аргументы в функции.  
+ Предоставляет метод, позволяющий отладчику перечислить локальные переменные и аргументы в функции.  
   
- [Интерфейс ICorDebugCodeEnum](icordebugcodeenum-interface.md)\
+ [Интерфейс Икордебугкодинум](icordebugcodeenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugCode`.  
   
- [Интерфейс ICorDebugComObjectValue](icordebugcomobjectvalue-interface.md)\
+ [Интерфейс Икордебугкомобжектвалуе](icordebugcomobjectvalue-interface.md)\
  Предоставляет методы для получения кэшированных объектов интерфейса.  
   
- [Интерфейс ICorDebugContext](icordebugcontext-interface.md)\
+ [Интерфейс Икордебугконтекст](icordebugcontext-interface.md)\
  Представляет объект контекста. Этот интерфейс еще не реализован.  
   
  [Интерфейс ICorDebugController](icordebugcontroller-interface.md)\
@@ -125,26 +127,26 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugDataTarget](icordebugdatatarget-interface.md)\
  Предоставляет интерфейс обратного вызова, обеспечивающий доступ к конкретному целевому процессу.  
   
- [Интерфейс ICorDebugDataTarget2](icordebugdatatarget2-interface.md)\
- Логически расширяет интерфейс [ICorDebugDataTarget.](icordebugdatatarget-interface.md) **Доступен только в .NET Native.**  
+ [Интерфейс метод icordebugdatatarget2](icordebugdatatarget2-interface.md)\
+ Логически расширяет интерфейс [ICorDebugDataTarget](icordebugdatatarget-interface.md) . **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugDataTarget3](icordebugdatatarget3-interface.md)\
- Логически расширяет интерфейс [ICorDebugDataTarget,](icordebugdatatarget-interface.md) чтобы предоставить информацию о загруженных модулях. **Доступен только в .NET Native.**  
+ Логически расширяет интерфейс [ICorDebugDataTarget](icordebugdatatarget-interface.md) , чтобы предоставить сведения о загруженных модулях. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugDebugEvent](icordebugdebugevent-interface.md)\
  Определяет базовый интерфейс, из которого возникают все события отладки `ICorDebug`. **Доступен только в .NET Native.**  
   
- [ICorDebugEditAndcontinueerrorinfo Интерфейс](icordebugeditandcontinueerrorinfo-interface.md)\
- Устаревшее. Не следует использовать данный интерфейс.  
+ [Интерфейс Икордебужедитандконтинуирроринфо](icordebugeditandcontinueerrorinfo-interface.md)\
+ Является устаревшей. Не следует использовать данный интерфейс.  
   
- [Интерфейс ICorDebugEditAndcontinueSnapshot](icordebugeditandcontinuesnapshot-interface.md)\
- Устаревшее. Не следует использовать данный интерфейс.  
+ [Интерфейс метод icordebugeditandcontinuesnapshot](icordebugeditandcontinuesnapshot-interface.md)\
+ Является устаревшей. Не следует использовать данный интерфейс.  
   
  [Интерфейс ICorDebugEnum](icordebugenum-interface1.md)\
  Служит абстрактным базовым интерфейсом для перечислителей отладки.  
   
  [Интерфейс ICorDebugErrorInfoEnum](icordebugerrorinfoenum-interface.md)\
- Устаревшее. Не следует использовать данный интерфейс.  
+ Является устаревшей. Не следует использовать данный интерфейс.  
   
  [Интерфейс ICorDebugEval](icordebugeval-interface.md)\
  Предоставляет методы, позволяющие отладчику выполнять код в контексте отлаживаемого кода.  
@@ -152,14 +154,14 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugEval2](icordebugeval2-interface.md)\
  Расширяет интерфейс `ICorDebugEval` для предоставления поддержки универсальных типов.  
   
- [ICorDebugИзедебугВент Интерфейс](icordebugexceptiondebugevent-interface.md)\
- Расширяет интерфейс [ICorDebugDebugEvent](icordebugdebugevent-interface.md) для поддержки событий исключений. **Доступен только в .NET Native.**  
+ [Интерфейс Икордебужексцептиондебужевент](icordebugexceptiondebugevent-interface.md)\
+ Расширяет интерфейс [ICorDebugDebugEvent](icordebugdebugevent-interface.md) для поддержки событий исключения. **Доступен только в .NET Native.**  
   
- [Интерфейс ICorDebugExceptionObjectstackStackEnum интерфейс](icordebugexceptionobjectcallstackenum-interface.md)\
+ [Интерфейс ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md)\
  Предоставляет перечислитель для сведений стека вызовов, встроенных в объект исключения.  
   
- [Интерфейс ICorDebugExceptionValueValueValue](icordebugexceptionobjectvalue-interface.md)\
- Расширяет интерфейс [ICorDebugObjectValue,](icordebugobjectvalue-interface.md) чтобы предоставить информацию о стеках из управляемого объекта исключения.  
+ [Интерфейс ICorDebugExceptionObjectValue](icordebugexceptionobjectvalue-interface.md)\
+ Расширяет интерфейс [ICorDebugObjectValue](icordebugobjectvalue-interface.md) для предоставления сведений о трассировке стека из управляемого объекта исключения.  
   
  [Интерфейс ICorDebugFrame](icordebugframe-interface.md)\
  Представляет кадр текущего стека.  
@@ -174,9 +176,9 @@ ms.locfileid: "79179166"
  Локально расширяет интерфейс `ICorDebugFunction` для предоставления поддержки отладки в пошаговом режиме "Только мой код".  
   
  [Интерфейс ICorDebugFunction3](icordebugfunction3-interface.md)\
- Логически расширяет интерфейс [ICorDebugFunction,](icordebugfunction-interface1.md) чтобы обеспечить доступ к коду из запроса ReJIT.  
+ Логически расширяет интерфейс [ICorDebugFunction](icordebugfunction-interface1.md) , чтобы предоставить доступ к коду из запроса ReJIT.  
   
- [Интерфейс ICorDebugФункцияBreakpoint](icordebugfunctionbreakpoint-interface.md)\
+ [Интерфейс ICorDebugFunctionBreakpoint](icordebugfunctionbreakpoint-interface.md)\
  Расширяет интерфейс `ICorDebugBreakpoint` для поддержки точек останова в функциях.  
   
  [Интерфейс ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md)\
@@ -191,10 +193,10 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugHandleValue](icordebughandlevalue-interface.md)\
  Подкласс интерфейса `ICorDebugReferenceValue`, представляющий значение ссылки, для которого отладчик создал дескриптор сборки мусора.  
   
- [Интерфейс ICorDebugHeapEnum](icordebugheapenum-interface.md)\
+ [Интерфейс Икордебугхеапенум](icordebugheapenum-interface.md)\
  Предоставляет перечислитель для объектов в управляемой куче.  
   
- [Интерфейс ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md)\
+ [Интерфейс Икордебугхеапсегментенум](icordebugheapsegmentenum-interface.md)\
  Предоставляет перечислитель для областей памяти управляемой кучи.  
   
  [Интерфейс ICorDebugHeapValue](icordebugheapvalue-interface.md)\
@@ -206,11 +208,11 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugHeapValue3](icordebugheapvalue3-interface.md)\
  Предоставляет свойства блокировки монитора объектов.  
   
- [Интерфейс ICorDebugILCode](icordebugilcode-interface.md)\
+ [Интерфейс Икордебугилкоде](icordebugilcode-interface.md)\
  Представляет сегмент кода промежуточного языка.  
   
  [Интерфейс ICorDebugILCode2](icordebugilcode2-interface.md)\
- Логически расширяет интерфейс [ICorDebugILCode,](icordebugilcode-interface.md) чтобы обеспечить методы, которые возвращают токен для локальной переменной подписи функции, и что карта инструментальный промежуточный язык профайлера (IL) компенсируется оригинальным методом IL смещения.  
+ Логически расширяет интерфейс [икордебугилкоде](icordebugilcode-interface.md) , чтобы предоставить методы, которые возвращают маркер для сигнатуры локальной переменной функции и сопоставляют смещенные промежуточные языки (IL) профилировщика с исходными смещениями Il метода.  
   
  [Интерфейс ICorDebugILFrame](icordebugilframe-interface.md)\
  Предоставляет кадр стека кода MSIL.  
@@ -231,52 +233,52 @@ ms.locfileid: "79179166"
  Задает типы кадров для отладчика.  
   
  [Интерфейс ICorDebugInternalFrame2](icordebuginternalframe2-interface.md)\
- Предоставляет информацию о внутренних кадрах, включая адрес стека и положение по отношению к объектам [ICorDebugFrame.](icordebugframe-interface.md)  
+ Предоставляет сведения о внутренних кадрах, включая адрес стека и расположение по отношению к объектам [ICorDebugFrame](icordebugframe-interface.md) .  
   
- [ICorDebugLoadedModule Интерфейс](icordebugloadedmodule-interface.md)\
+ [Интерфейс Икордебуглоадедмодуле](icordebugloadedmodule-interface.md)\
  Предоставляет сведения о загруженном модуле. **Доступен только в .NET Native.**  
   
- [ICorDebugManagedCallback Интерфейс](icordebugmanagedcallback-interface.md)\
+ [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)\
  Предоставляет методы для обработки обратных вызовов отладчика.  
   
- [ICorDebugManagedCallback2 Интерфейс](icordebugmanagedcallback2-interface.md)\
+ [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)\
  Предоставляет методы для поддержки обработки исключений отладчика и управляемых помощников по отладке (MDA). Интерфейс `ICorDebugManagedCallback2` является логическим расширением интерфейса `ICorDebugManagedCallback`.  
   
- [ICorDebugManagedCallback3 Интерфейс](icordebugmanagedcallback3-interface.md)\
+ [Интерфейс ICorDebugManagedCallback3](icordebugmanagedcallback3-interface.md)\
  Предоставляет метод обратного вызова, указывающий, что создано включенное пользовательское уведомление отладчика.  
   
  [Интерфейс ICorDebugMDA](icordebugmda-interface.md)\
  Представляет сообщение управляемого помощника по отладке (MDA).  
   
- [Интерфейс ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)\
+ [Интерфейс Икордебугмеморибуффер](icordebugmemorybuffer-interface.md)\
  Представляет буфер в памяти. **Доступен только в .NET Native.**  
   
- [ICorDebugMergedAssemblyЗапись интерфейса](icordebugmergedassemblyrecord-interface.md)\
+ [Интерфейс Икордебугмержедассемблирекорд](icordebugmergedassemblyrecord-interface.md)\
  Предоставляет сведения о сборке после слияния. **Доступен только в .NET Native.**  
   
- [Интерфейс ICorDebugMetaDataLocator](icordebugmetadatalocator-interface.md)\
+ [Интерфейс Икордебугметадаталокатор](icordebugmetadatalocator-interface.md)\
  Предоставляет сведения о метаданных для отладчика.  
   
- [Интерфейс ICorDebugМодуль](icordebugmodule-interface.md)\
+ [Интерфейс ICorDebugModule](icordebugmodule-interface.md)\
  Представляет модуль среды CLR, который является либо исполняемым файлом, либо библиотекой динамической компоновки (DLL).  
   
  [Интерфейс ICorDebugModule2](icordebugmodule2-interface.md)\
  Служит логическим расширением интерфейса `ICorDebugModule`.  
   
- [Интерфейс ICorDebugModule3](icordebugmodule3-interface.md)\
+ [Интерфейс метод icordebugmodule3](icordebugmodule3-interface.md)\
  Создает средство чтения символов для динамического модуля.  
   
- [Интерфейс ICorDebugModule](icordebugmodulebreakpoint-interface.md)\
+ [Интерфейс Икордебугмодулебреакпоинт](icordebugmodulebreakpoint-interface.md)\
  Расширяет интерфейс `ICorDebugBreakpoint` для предоставления доступа к указанным модулям.  
   
- [ICorDebugModuleDebugEvent Интерфейс](icordebugmoduledebugevent-interface.md)\
+ [Интерфейс Икордебугмодуледебужевент](icordebugmoduledebugevent-interface.md)\
  Расширяет интерфейс [ICorDebugDebugEvent](icordebugdebugevent-interface.md) для поддержки событий уровня модуля. **Доступен только в .NET Native.**  
   
- [Интерфейс ICorDebugModuleEnum](icordebugmoduleenum-interface.md)\
+ [Интерфейс Икордебугмодулинум](icordebugmoduleenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugModule`.  
   
- [ICorDebugMutableDataTarget Интерфейс](icordebugmutabledatatarget-interface.md)\
- Расширяет интерфейс [ICorDebugDataTarget](icordebugdatatarget-interface.md) для поддержки немых целей данных.  
+ [Интерфейс Икордебугмутабледататаржет](icordebugmutabledatatarget-interface.md)\
+ Расширяет интерфейс [ICorDebugDataTarget](icordebugdatatarget-interface.md) для поддержки целевых объектов данных.  
   
  [Интерфейс ICorDebugNativeFrame](icordebugnativeframe-interface.md)\
  Специализированная реализация интерфейса `ICorDebugFrame`, используемая для кадров машинного кода.  
@@ -284,7 +286,7 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugNativeFrame2](icordebugnativeframe2-interface.md)\
  Предоставляет методы, проверяющие для кадров наличие взаимоотношений типа "дочерний-родительский".  
   
- [Интерфейс ICorDebugObjectEnum](icordebugobjectenum-interface.md)\
+ [Интерфейс Икордебугобжектенум](icordebugobjectenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов объектов по их относительным виртуальным адресам (RVA).  
   
  [Интерфейс ICorDebugObjectValue](icordebugobjectvalue-interface.md)\
@@ -303,24 +305,24 @@ ms.locfileid: "79179166"
  Управляет пользовательскими уведомлениями отладчика.
 
  [Интерфейс ICorDebugProcess4](icordebugprocess4-interface.md)\
- Обеспечивает поддержку вне контроля выполнения процесса.
+ Обеспечивает поддержку управления выполнением в процессе.
   
- [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)\
- Расширяет интерфейс [ICorDebugProcess](icordebugprocess-interface.md) для поддержки доступа к управляемой куче, предоставления информации о сборе мусора управляемых объектов и определения того, загружает ли отладчик изображения из локального кэша изображений приложения.  
+ [Интерфейс метод ICorDebugProcess5](icordebugprocess5-interface.md)\
+ Расширяет интерфейс [ICorDebugProcess](icordebugprocess-interface.md) для поддержки доступа к управляемой куче, предоставляет сведения о сборке мусора управляемых объектов и определяет, загружает ли отладчик изображения из локального кэша образов в машинном код.  
   
  [Интерфейс ICorDebugProcess6](icordebugprocess6-interface.md)\
- Логически расширяет интерфейс [ICorDebugProcess,](icordebugprocess-interface.md) чтобы включить такие функции, как декодирование управляемых событий отладки, которые закодированы в событиях отладки родных исключений и расставании виртуального модуля. **Доступен только в .NET Native.**  
+ Логически расширяет интерфейс [ICorDebugProcess](icordebugprocess-interface.md) , позволяя выполнять такие функции, как декодирование управляемых событий отладки, которые кодируются в событиях отладки машинного кода и разбиении виртуального модуля. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugProcess7](icordebugprocess7-interface.md)\
  Предоставляет метод, который настраивает отладчик для обработки обновлений находящихся в памяти метаданных в целевом процессе.  
   
  [Интерфейс ICorDebugProcess8](icordebugprocess8-interface.md)\
- Логически расширяет интерфейс [ICorDebugProcess,](icordebugprocess-interface.md) чтобы включить или отключить определенные типы обратных вызовов [iCorDebugManagedCallback2.](icordebugmanagedcallback2-interface.md)  
+ Логически расширяет интерфейс [ICorDebugProcess](icordebugprocess-interface.md) , чтобы включать или отключать определенные типы обратных вызовов исключений [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) .  
   
- [Интерфейс ICorDebugProcessEnum](icordebugprocessenum-interface.md)\
+ [Интерфейс Икордебугпроцессенум](icordebugprocessenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugProcess`.  
   
- [ICorDebugСправкаИнтерфейс](icordebugreferencevalue-interface.md)\
+ [Интерфейс ICorDebugReferenceValue](icordebugreferencevalue-interface.md)\
  Подкласс интерфейса `ICorDebugValue`, поддерживающего ссылочные типы.  
   
  [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)\
@@ -329,19 +331,19 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)\
  Расширяет возможности интерфейса `ICorDebugRegisterSet` для аппаратных платформ, количество регистров которых превышает 64.  
   
- [ICorDebugУдаленный интерфейс](icordebugremote-interface.md)\
+ [Интерфейс метод icordebugremote](icordebugremote-interface.md)\
  Позволяет запускать или подключать управляемый отладчик к удаленному целевому процессу.  
   
  [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)\
  Предоставляет методы, позволяющие отлаживать приложения на основе Silverlight в среде CLR.  
   
- [Интерфейс ICorDebugRuntimeUnwindableFrame](icordebugruntimeunwindableframe-interface.md)\
+ [Интерфейс Икордебугрунтимеунвиндаблефраме](icordebugruntimeunwindableframe-interface.md)\
  Предоставляет поддержку для неуправляемых методов, которым требуется среда CLR для раскручивания кадра.  
   
- [Интерфейс ICorDebugStackWalk](icordebugstackwalk-interface.md)\
+ [Интерфейс Икордебугстакквалк](icordebugstackwalk-interface.md)\
  Обеспечивает методы для получения управляемых методов или кадров в стеке потока.  
   
- [Интерфейс ICorDebugStaticfieldSymbol](icordebugstaticfieldsymbol-interface.md)\
+ [Интерфейс Икордебугстатикфиелдсимбол](icordebugstaticfieldsymbol-interface.md)\
  Представляет сведения символа отладки для статического поля. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugStepper](icordebugstepper-interface.md)\
@@ -350,17 +352,17 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugStepper2](icordebugstepper2-interface1.md)\
  Предоставляет поддержку отладки "Только мой код".  
   
- [Интерфейс ICorDebugStepperEnum](icordebugstepperenum-interface.md)\
+ [Интерфейс Икордебугстепперенум](icordebugstepperenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugStepper`.  
   
  [Интерфейс ICorDebugStringValue](icordebugstringvalue-interface.md)\
  Подкласс `ICorDebugHeapValue`, применяемый к строковым значениям.  
   
- [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)\
+ [Интерфейс метод icordebugsymbolprovider](icordebugsymbolprovider-interface.md)\
  Предоставляет методы, которые могут использоваться для получения сведений об отладочных символах. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugSymbolProvider2](icordebugsymbolprovider2-interface.md)\
- Логически расширяет интерфейс [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) для получения дополнительной информации о символе отладки. **Доступен только в .NET Native.**  
+ Логически расширяет интерфейс [метод icordebugsymbolprovider](icordebugsymbolprovider-interface.md) для получения дополнительных сведений об отладочных символах. **Доступен только в .NET Native.**  
   
  [Интерфейс ICorDebugThread](icordebugthread-interface.md)\
  Представляет поток в процессе. Время существования экземпляра `ICorDebugThread` равно времени существования потока, который он представляет.  
@@ -369,12 +371,12 @@ ms.locfileid: "79179166"
  Служит логическим расширением интерфейса `ICorDebugThread`.  
   
  [Интерфейс ICorDebugThread3](icordebugthread3-interface.md)\
- Обеспечивает точку входа в [ICorDebugStackWalk](icordebugstackwalk-interface.md) и соответствующие интерфейсы.  
+ Предоставляет точку входа для [икордебугстакквалк](icordebugstackwalk-interface.md) и соответствующих интерфейсов.  
   
  [Интерфейс ICorDebugThread4](icordebugthread4-interface.md)\
  Предоставляет сведения о блокировке потока.  
   
- [Интерфейс ICorDebugThreadEnum](icordebugthreadenum-interface1.md)\
+ [Интерфейс Икордебугсреаденум](icordebugthreadenum-interface1.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugThread`.  
   
  [Интерфейс ICorDebugType](icordebugtype-interface.md)\
@@ -386,7 +388,7 @@ ms.locfileid: "79179166"
  [Интерфейс ICorDebugTypeEnum](icordebugtypeenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugType`.  
   
- [ICorDebugUnmanagedCallback Интерфейс](icordebugunmanagedcallback-interface.md)\
+ [Интерфейс Икордебугунманажедкаллбакк](icordebugunmanagedcallback-interface.md)\
  Предоставляет уведомление о событиях машинного кода, которые не связаны непосредственно со средой CLR.  
   
  [ICorDebugValue](icordebugvalue-interface.md)\
@@ -396,7 +398,7 @@ ms.locfileid: "79179166"
  Расширяет интерфейс `ICorDebugValue` для предоставления поддержки интерфейса `ICorDebugType`.  
   
  [Интерфейс ICorDebugValue3](icordebugvalue3-interface.md)\
- Расширяет интерфейсы "ICorDebugValue" и "ICorDebugValue2", чтобы обеспечить поддержку массивов, превышают 2 ГБ.  
+ Расширяет интерфейсы "ICorDebugValue" и "ICorDebugValue2", чтобы обеспечить поддержку массивов, размер которых превышает 2 ГБ.  
   
  [ICorDebugValueBreakpoint](icordebugvaluebreakpoint-interface.md)\
  Расширяет интерфейс `ICorDebugBreakpoint` для обеспечения доступа к указанным значениям.  
@@ -404,11 +406,11 @@ ms.locfileid: "79179166"
  [ICorDebugValueEnum](icordebugvalueenum-interface.md)\
  Реализует методы `ICorDebugEnum` и выполняет перечисление массивов `ICorDebugValue`.  
   
- [ICorDebug ПеременныйДомашний Интерфейс](icordebugvariablehome-interface.md)\
+ [Интерфейс ICorDebugVariableHome](icordebugvariablehome-interface.md)\
  Представляет локальную переменную или аргумент функции.  
   
- [Интерфейс ICorDebug VariableHomeEnum](icordebugvariablehomeenum-interface.md)\
- Обеспечивает перечисление локальных переменных и аргументов в функции.  
+ [Интерфейс ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)\
+ Предоставляет перечислитель для локальных переменных и аргументов в функции.  
   
  [Интерфейс ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)\
  Извлекает сведения символа отладки для статического поля. **Доступен только в .NET Native.**  
@@ -434,23 +436,24 @@ ms.locfileid: "79179166"
  [Интерфейс ICorPublishProcessEnum](icorpublishprocessenum-interface.md)\
  Предоставляет методы, выполняющие перебор коллекции объектов `ICorPublishProcess`.  
 
- [Интерфейс ISOSDacИнтерфейс](isosdacinterface-interface.md)\
- Предоставляет вспомогательные методы `SOS`для доступа к данным из .
+ [Интерфейс ИсосдаЦинтерфаце](isosdacinterface-interface.md)\
+ Предоставляет вспомогательные методы для доступа к данным из `SOS` .
 
- [Интерфейс IXCLRDataMethodDefinition](ixclrdatamethoddefinition-interface.md)\
- Предоставляет методы запроса информации об определении метода.
+ [Интерфейс Иксклрдатамесоддефинитион](ixclrdatamethoddefinition-interface.md)\
+ Предоставляет методы для запроса сведений об определении метода.
 
- [Интерфейс IXCLRDataMethodInstance](ixclrdatamethodinstance-interface.md)\
- Предоставляет методы запроса информации о экземпляре метода.
+ [Интерфейс Иксклрдатамесодинстанце](ixclrdatamethodinstance-interface.md)\
+ Предоставляет методы для запроса сведений об экземпляре метода.
 
- [Интерфейс IXCLRDataModule](ixclrdatamodule-interface.md)\
- Предоставляет методы запроса информации о загруженном модуле.
+ [Интерфейс Иксклрдатамодуле](ixclrdatamodule-interface.md)\
+ Предоставляет методы для запроса сведений о загруженном модуле.
 
- [Интерфейс IXCLRDataProcess](ixclrdataprocess-interface.md)\
- Предоставляет методы запроса информации о процессе.
+ [Интерфейс Иксклрдатапроцесс](ixclrdataprocess-interface.md)\
+ Предоставляет методы для запроса сведений о процессе.
   
-## <a name="related-sections"></a>См. также  
- [Дебагинг coclasses](debugging-coclasses.md)\
+## <a name="related-sections"></a>Связанные разделы  
+
+ [Коклассы отладки](debugging-coclasses.md)\
  [Отладка глобальных статических функций](debugging-global-static-functions.md)\
- [Отладка цифр](debugging-enumerations.md)\
+ [Перечисления отладки](debugging-enumerations.md)\
  [Структуры отладки](debugging-structures.md)\

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4a17d723-86b9-4f27-bd0d-b70c3259011c
 topic_type:
 - apiref
-ms.openlocfilehash: ccc787aa1c820a486d9a513055c9c9834b90bd1a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 6670d985eed4c55550b23d3f4110ee20f3b75661
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615440"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675832"
 ---
 # <a name="isymunmanagedreaderupdatesymbolstore-method"></a>Метод ISymUnmanagedReader::UpdateSymbolStore
+
 Обновляет существующее хранилище символов разностным хранилищем символов. Этот метод используется в сценариях "изменить и продолжить" для обновления хранилища символов в соответствии с разностью с исходным переносимым исполняемым файлом (PE).  
   
 > [!NOTE]
@@ -37,6 +38,7 @@ HRESULT UpdateSymbolStore (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `filename`  
  окне Имя файла, содержащего хранилище символов.  
   
@@ -44,11 +46,13 @@ HRESULT UpdateSymbolStore (
  окне Файловый поток, используемый в качестве альтернативы `filename` параметру.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

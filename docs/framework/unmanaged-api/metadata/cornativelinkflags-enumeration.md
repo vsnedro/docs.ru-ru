@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070
 topic_type:
 - apiref
-ms.openlocfilehash: 9211af4726617598f3dd8772383cade6368e6c08
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: ef9b177bee0651b6b8ea994610315ce93524e8e2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007628"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676937"
 ---
 # <a name="cornativelinkflags-enumeration"></a>Перечисление CorNativeLinkFlags
+
 Предоставляет значения флагов, используемые компоновщиком при связывании машинного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +37,7 @@ typedef enum
 } CorNativeLinkFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -46,14 +47,15 @@ typedef enum
 |`nlfMaxValue`|Не используется.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

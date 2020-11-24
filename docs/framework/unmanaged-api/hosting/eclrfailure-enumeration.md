@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 37b95cce-9bfb-4ecf-a00b-33dcba782c67
 topic_type:
 - apiref
-ms.openlocfilehash: fa2b5052a1d569487f0c6c72699ff9ab571beefc
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d2794b53ed17640413928b3af0d1ed3656e25f22
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504398"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675767"
 ---
 # <a name="eclrfailure-enumeration"></a>Перечисление EClrFailure
+
 Описывает набор сбоев, для которых узел может задавать действия политики.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,7 +39,7 @@ typedef enum {
 } EClrFailure;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -50,19 +51,21 @@ typedef enum {
 |`FAIL_AccessViolation`|Предпринята попытка чтения или записи в защищенную память. Не поддерживается в .NET Framework 4.|  
 |`FAIL_CodeContract`|Ошибка контракта кода. См. раздел [контракты кода](../../debug-trace-profile/code-contracts.md).|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Список значений [еполициактион](epolicyaction-enumeration.md) , которые узел может использовать для указания действий политики для условий сбоя, см. в описании метода [ICLRPolicyManager:: сетактиононфаилуре](iclrpolicymanager-setactiononfailure-method.md) . Дополнительные сведения о критических и некритических областях кода см. в разделе [еклроператион](eclroperation-enumeration.md).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRPolicyManager](iclrpolicymanager-interface.md)
 - [Метод SetActionOnFailure](iclrpolicymanager-setactiononfailure-method.md)
