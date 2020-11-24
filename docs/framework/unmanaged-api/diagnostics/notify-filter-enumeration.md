@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
 topic_type:
 - apiref
-ms.openlocfilehash: b20e18d5f4314a0ab1442ac7bd5c6514e4db85d5
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 365bc0dc73b04d3afd171c40f336432f77552b6d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609486"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690958"
 ---
 # <a name="notify_filter-enumeration"></a>Перечисление NOTIFY_FILTER
+
 Определяет обратные вызовы для функций отладчика. Дополнительные сведения см. в описании метода [INotifySource2:: сетнотифифилтер](inotifysource2-setnotifyfilter-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,7 +40,7 @@ enum tagNOTIFY_FILTER
 };  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -52,8 +53,9 @@ enum tagNOTIFY_FILTER
 |`NOTIFY_FILTER_NONE`|Указывает, что методы уведомления вызывать не нужно.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)

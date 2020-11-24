@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
 topic_type:
 - apiref
-ms.openlocfilehash: b1327e13006ca4b3f9074c1348b1817c9a1b3728
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5ecc42950775a620796a1c775e5f088f461a12c3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503956"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690829"
 ---
 # <a name="iclrtask-interface"></a>Интерфейс ICLRTask
+
 Предоставляет методы, позволяющие основному приложению выполнять запросы среды CLR или предоставлять в среду CLR уведомление о связанной задаче.  
   
 ## <a name="methods"></a>Методы  
@@ -40,21 +41,23 @@ ms.locfileid: "84503956"
 |[Метод SwitchOut](iclrtask-switchout-method.md)|Уведомляет среду CLR о том, что задача, представленная текущим `ICLRTask` экземпляром, больше не находится в рабочем состоянии.|  
 |[Метод YieldTask](iclrtask-yieldtask-method.md)|Запрашивает доступность процессорного времени средой CLR для выполнения других задач. Среда CLR не гарантирует, что задача будет переведена в состояние, в котором она может подать время на обработку.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `ICLRTask`Представляет собой представление задачи для среды CLR. В любой момент во время выполнения кода задача может быть описана как выполняется или ожидает выполнения. Узел вызывает метод, `ICLRTask::SwitchIn` чтобы уведомить среду CLR о том, что задача, которую `ICLRTask` представляет текущий экземпляр, теперь находится в рабочем состоянии. После вызова `ICLRTask::SwitchIn` узел может запланировать задачу в любом потоке операционной системы, за исключением случаев, когда среда выполнения требует сходство потоков, как указано вызовами методов [IHostTaskManager:: BeginThreadAffinity](ihosttaskmanager-beginthreadaffinity-method.md) и [IHostTaskManager:: EndThreadAffinity](ihosttaskmanager-endthreadaffinity-method.md) . Спустя некоторое время операционная система может решить удалить задачу из потока и перевести ее в неработающее состояние. Например, это может произойти, если задача блокирует примитивы синхронизации или ожидает завершения операций ввода-вывода. Узел вызывает [Переключение](iclrtask-switchout-method.md) , чтобы УВЕДОМИТЬ среду CLR о том, что задача, представленная текущим `ICLRTask` экземпляром, больше не находится в рабочем состоянии.  
   
  Обычно задача завершается в конце выполнения кода. В это время узел вызывает `ICLRTask::ExitTask` для уничтожения связанного `ICLRTask` . Однако задачи можно также перезапускать с помощью вызова метода `ICLRTask::Reset` , который позволяет `ICLRTask` повторно использовать экземпляр. Такой подход предотвращает издержки на многократное создание и уничтожение экземпляров.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)
 - [Интерфейс IHostTask](ihosttask-interface.md)

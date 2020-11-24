@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
 topic_type:
 - apiref
-ms.openlocfilehash: dc76274d3b0acbbe0b03eb141d2b3e6ff9063afb
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 5a037695892252042d7827165595f7bad0feba56
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421128"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95693168"
 ---
 # <a name="icorpublishprocessgetdisplayname-method"></a>Метод ICorPublishProcess::GetDisplayName
+
 Возвращает полный путь к исполняемому файлу для процесса, на который ссылается этот [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetDisplayName (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  [in] Размер массива `szName`.  
   
@@ -47,6 +49,7 @@ HRESULT GetDisplayName (
  заполняет Массив для хранения имени исполняемого файла, включая полный путь к нему. Имя заканчивается нулем.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
@@ -55,6 +58,6 @@ HRESULT GetDisplayName (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)

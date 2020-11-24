@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 678f89f9-cce7-46d1-af87-5e989abaa93c
 topic_type:
 - apiref
-ms.openlocfilehash: a7a8d96548704f223f05826af79a4e227bdfab06
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: fd4ad536d7d3df2b8f91f206459122cf083c8b9c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379833"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95691140"
 ---
 # <a name="icordebugthread2-interface"></a>Интерфейс ICorDebugThread2
+
 Служит логическим расширением интерфейса ICorDebugThread.  
   
 ## <a name="methods"></a>Методы  
@@ -34,12 +35,13 @@ ms.locfileid: "83379833"
 |[Метод GetVolatileOSThreadID](icordebugthread2-getvolatileosthreadid-method.md)|Возвращает идентификатор потока операционной системы для этого `ICorDebugThread2` .|  
 |[Метод InterceptCurrentException](icordebugthread2-interceptcurrentexception-method.md)|Позволяет отладчику перехватывать текущее исключение в потоке.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -48,6 +50,6 @@ ms.locfileid: "83379833"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

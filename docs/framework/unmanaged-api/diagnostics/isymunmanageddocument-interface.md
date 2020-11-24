@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5c26b366-6e81-467c-9dd0-02dd26fee0a3
 topic_type:
 - apiref
-ms.openlocfilehash: a8ff6d3a925773e58e0713a87b167420c246f85b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 83c683e1f60f13f7cee4ddc6fe5af5a94e36eb93
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615570"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95692180"
 ---
 # <a name="isymunmanageddocument-interface"></a>Интерфейс ISymUnmanagedDocument
+
 Представляет документ, на который ссылается хранилище символов. Документ определяется по универсальному указателю ресурсов (URL-адрес) и GUID типа документа. Документ можно разместить независимо от того, как он хранится, используя URL-адрес и GUID типа документа. Вы можете сохранить источник документа в хранилище символов и получить его через этот интерфейс.  
   
 ## <a name="methods"></a>Методы  
@@ -39,6 +40,6 @@ ms.locfileid: "83615570"
 |[Метод GetURL](isymunmanageddocument-geturl-method.md)|Возвращает URL-адрес для этого документа.|  
 |[Метод HasEmbeddedSource](isymunmanageddocument-hasembeddedsource-method.md)|Возвращает `true` , если документ имеет исходный код, внедренный в отладочные символы; в противном случае возвращает `false` .|  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

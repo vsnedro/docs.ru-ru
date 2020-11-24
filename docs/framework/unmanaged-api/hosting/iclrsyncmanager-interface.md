@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
 topic_type:
 - apiref
-ms.openlocfilehash: b0b9c0b7d178557806a9ab2893bff2d34dc408ff
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5bfab21a36becf943b1813f266cf70c4b5e5b1d2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557740"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690997"
 ---
 # <a name="iclrsyncmanager-interface"></a>Интерфейс ICLRSyncManager
+
 Определяет методы, позволяющие узлу получать сведения о запрошенных задачах и обнаруживать взаимоблокировки в своей реализации синхронизации.  
   
 ## <a name="methods"></a>Методы  
@@ -34,6 +35,7 @@ ms.locfileid: "90557740"
 |[Метод GetRWLockOwnerNext](iclrsyncmanager-getrwlockownernext-method.md)|Возвращает следующую задачу, ожидающую текущую блокировку модуля чтения-записи.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
@@ -42,7 +44,7 @@ ms.locfileid: "90557740"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Threading.Thread>
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
