@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7dd14854-b756-4401-b167-88ca576dc8f0
 topic_type:
 - apiref
-ms.openlocfilehash: 17757df566ba8d141e7adec00dcc1f75959d0e00
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 096a460f9d6581ebdd00f8487af68f652524d52f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84005633"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95681669"
 ---
 # <a name="imetadataemitdefinecustomattribute-method"></a>Метод IMetaDataEmit::DefineCustomAttribute
+
 Создает определение для настраиваемого атрибута с указанной подписью метаданных, присоединяемого к указанному объекту и получает маркер для этого определения настраиваемого атрибута.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT DefineCustomAttribute (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tkObj`  
  окне Токен для элемента владельца.  
   
@@ -51,18 +53,19 @@ HRESULT DefineCustomAttribute (
  окне Число байтов в `pCustomAttribute` .  
   
  `pcv`  
- заполняет `mdCustomAttribute`Назначенный маркер.  
+ заполняет `mdCustomAttribute` Назначенный маркер.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

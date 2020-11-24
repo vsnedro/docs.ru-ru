@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
 topic_type:
 - apiref
-ms.openlocfilehash: 7b8f2845589a8372f62c95ef1a82eae3ed602c1f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5a3c820b52ae9376d769ea9956edc0b8553a1f88
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500836"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95682176"
 ---
 # <a name="cor_prf_misc-enumeration"></a>Перечисление COR_PRF_MISC
+
 Содержит постоянные значения, которые указывают специальные идентификаторы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,7 +35,7 @@ typedef enum {
 } COR_PRF_MISC;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -43,6 +44,7 @@ typedef enum {
 |`PROFILER_GLOBAL_MODULE`|Идентификатор модуля по умолчанию для глобальных объектов, которые не принадлежат модулю.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -51,6 +53,6 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления профилирования](profiling-enumerations.md)

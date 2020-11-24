@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2868dfec-c992-4606-88bb-a8e0b6b18271
 topic_type:
 - apiref
-ms.openlocfilehash: 5ef5d9ae3da4dff13a461162f0ba3466d3d8192c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8823f3cc016072d3f20100c29532459da5e97492
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501265"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95682395"
 ---
 # <a name="imetadatainfogetfilemapping-method"></a>Метод IMetaDataInfo::GetFileMapping
+
 Возвращает область памяти сопоставленного файла и тип сопоставления.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetFileMapping (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppvData`  
  заполняет Указатель на начало сопоставленного файла.  
   
@@ -53,7 +55,8 @@ HRESULT GetFileMapping (
 |`E_INVALIDARG`|Значение NULL передано в качестве значения аргумента.|  
 |`COR_E_NOTSUPPORTED`|Реализация CLR не может предоставить сведения о области памяти. Это может происходить по следующим причинам:<br /><br /> — Область метаданных была открыта с помощью `ofWrite` `ofCopyMemory` флага или.<br />— Область метаданных была открыта без `ofReadOnly` флага.<br />— Метод [IMetaDataDispenser:: OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) использовался для открытия только части файла с метаданными.<br />— Файл не является переносимым исполняемым файлом (PE). **Примечание.**  Эти условия зависят от реализации CLR и, скорее всего, будут ослаблены в будущих версиях среды CLR.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Память, `ppvData` на которую указывает указатель, допустима, только если базовая область метаданных открыта.  
   
  Чтобы этот метод работал, при сопоставлении метаданных файла на диске с памятью путем вызова метода [IMetaDataDispenser:: OpenScope](imetadatadispenser-openscope-method.md) необходимо указать `ofReadOnly` флаг и не указывать `ofWrite` `ofCopyMemory` флаг или.  
@@ -63,15 +66,16 @@ HRESULT GetFileMapping (
  Передача значения NULL для любого из трех параметров не поддерживается. Метод возвращает значение `E_INVALIDARG` , и ни один из выходных данных не заполнен. Пропуск типа сопоставления или размера региона может привести к аварийному завершению программы.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataInfo](imetadatainfo-interface.md)
 - [Перечисление CorFileMapping](corfilemapping-enumeration.md)
