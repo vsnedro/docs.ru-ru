@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: 190908c675b96b8ea2d81fb0203aa16a80d6a8b4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: deb14d291bfd511e8f3534f3c5e32787c259c5e8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501408"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673115"
 ---
 # <a name="ihosttaskmanager-interface"></a>Интерфейс IHostTaskManager
+
 Предоставляет методы, позволяющие среде CLR работать с задачами через основное приложение, а не использовать стандартные функции потоков или волоконно-оптической операционной системы.  
   
 ## <a name="methods"></a>Методы  
@@ -47,19 +48,21 @@ ms.locfileid: "84501408"
 |[Метод Sleep](ihosttaskmanager-sleep-method.md)|Уведомляет узел о том, что текущая задача переходит в спящий режим.|  
 |[Метод SwitchToTask](ihosttaskmanager-switchtotask-method.md)|Уведомляет узел о том, что необходимо отключить текущую задачу.|  
   
-## <a name="remarks"></a>Примечания  
- `IHostTaskManager`позволяет среде CLR создавать задачи и управлять ими, чтобы обеспечить обработчики для узла на выполнение действий при передаче управления из управляемого кода в неуправляемый и наоборот, а также для указания определенных действий, которые узел может и не может принимать во время выполнения кода.  
+## <a name="remarks"></a>Комментарии  
+
+ `IHostTaskManager` позволяет среде CLR создавать задачи и управлять ими, чтобы обеспечить обработчики для узла на выполнение действий при передаче управления из управляемого кода в неуправляемый и наоборот, а также для указания определенных действий, которые узел может и не может принимать во время выполнения кода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

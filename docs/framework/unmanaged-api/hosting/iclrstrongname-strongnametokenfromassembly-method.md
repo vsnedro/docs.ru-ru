@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
 topic_type:
 - apiref
-ms.openlocfilehash: e71fcf80b51edc318bbc7d81bb277c614184ee55
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 90a7e60e35e1fc555681102ffa62967eb5ac01fc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762517"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671542"
 ---
 # <a name="iclrstrongnamestrongnametokenfromassembly-method"></a>Метод ICLRStrongName::StrongNameTokenFromAssembly
+
 Создает маркер строгого имени из указанного файла сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT StrongNameTokenFromAssembly (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszFilePath`  
  окне Путь к переносимому исполняемому файлу (PE) для сборки.  
   
@@ -46,23 +48,26 @@ HRESULT StrongNameTokenFromAssembly (
  заполняет Размер (в байтах) маркера строгого имени.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+
+ `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
 ## <a name="remarks"></a>Комментарии  
+
  Маркер строгого имени — это сокращенная форма открытого ключа. Маркер представляет собой 64-разрядный хэш, созданный из открытого ключа, используемого для подписания сборки. Токен является частью строгого имени сборки и может быть считан из метаданных сборки.  
   
  После создания маркера следует вызвать метод [метод iclrstrongname:: StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) , чтобы освободить выделенную память.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameTokenFromAssemblyEx](iclrstrongname-strongnametokenfromassemblyex-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

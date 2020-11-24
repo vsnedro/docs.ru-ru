@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 50cbe557-2322-41aa-8e0d-f967602eaa0f
 topic_type:
 - apiref
-ms.openlocfilehash: 7e60dd9535809ca13f3bbe6ac76f5ea1209df734
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 65943ac169106a95feaff7d44017444e65764b60
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501185"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672543"
 ---
 # <a name="imetadatatablesgettableinfo-method"></a>Метод IMetaDataTables::GetTableInfo
+
 Возвращает имя, размер строки, число строк, число столбцов и индекс ключевого столбца указанной таблицы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT GetTableInfo (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ixTbl`  
  окне Идентификатор таблицы, свойства которой должны быть возвращены.  
   
@@ -58,15 +60,16 @@ HRESULT GetTableInfo (
  заполняет Указатель на указатель на имя таблицы.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

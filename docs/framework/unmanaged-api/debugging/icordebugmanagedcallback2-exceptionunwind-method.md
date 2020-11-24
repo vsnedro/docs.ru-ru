@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: aaf5938d-179c-4eaa-8d35-8523a4fadded
 topic_type:
 - apiref
-ms.openlocfilehash: 8f66369d3ac5ddcfe38fe579cac728eb3a250165
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a15391b63012fec3d0e6a0aa67540c3d2541944c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205628"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671321"
 ---
 # <a name="icordebugmanagedcallback2exceptionunwind-method"></a>Метод ICorDebugManagedCallback2::ExceptionUnwind
+
 Предоставляет уведомление о состоянии во время процесса очистки исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT ExceptionUnwind (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, содержащий поток, в котором было создано исключение.  
   
@@ -49,12 +51,14 @@ HRESULT ExceptionUnwind (
  `dwFlags`  
  окне Значение перечисления [кордебужексцептионфлагс](cordebugexceptionflags-enumeration.md) , которое указывает дополнительные сведения об исключении.  
   
-## <a name="remarks"></a>Remarks  
- `ExceptionUnwind`вызывается в различных точках на этапе очистки процесса обработки исключений. `ExceptionUnwind`может вызываться более одного раза при очистке одного исключения.  
+## <a name="remarks"></a>Комментарии  
+
+ `ExceptionUnwind` вызывается в различных точках на этапе очистки процесса обработки исключений. `ExceptionUnwind` может вызываться более одного раза при очистке одного исключения.  
   
  Если `dwEventType` = DEBUG_EXCEPTION_INTERCEPTED, указатель инструкции будет находиться в конечном кадре потока в точке следования до (это может быть несколько инструкций до) инструкции, вызвавшей исключение.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -63,7 +67,7 @@ HRESULT ExceptionUnwind (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

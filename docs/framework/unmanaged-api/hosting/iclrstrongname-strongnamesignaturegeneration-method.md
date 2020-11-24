@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4cdb1284-947a-4ed4-94c1-c5ff5cdfce56
 topic_type:
 - apiref
-ms.openlocfilehash: a8c9eab719f6a4f233490e544f67cf779ea10b20
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 9fc517b081a1df48d943d03a9c3ce223a428bde7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671633"
 ---
 # <a name="iclrstrongnamestrongnamesignaturegeneration-method"></a>Метод ICLRStrongName::StrongNameSignatureGeneration
+
 Создает подпись строгого имени для указанной сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT StrongNameSignatureGeneration (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszFilePath`  
  окне Путь к файлу, содержащему манифест сборки, для которой будет создана подпись строгого имени.  
   
@@ -66,23 +68,26 @@ HRESULT StrongNameSignatureGeneration (
  заполняет Размер возвращенной сигнатуры в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+
+ `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
 ## <a name="remarks"></a>Комментарии  
+
  Укажите значение NULL для `wszFilePath` , чтобы вычислить размер подписи без создания подписи.  
   
  Подпись может храниться непосредственно в файле или возвращаться вызывающему объекту.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameSignatureGenerationEx](iclrstrongname-strongnamesignaturegenerationex-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 - FormatFromRawValue function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: e7f3e4eef4a7e378529c2097a8fe1a753a98c961
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e678aca5baf82c07ec9fc5c85cef22630af5ab0a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553718"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672335"
 ---
 # <a name="formatfromrawvalue-function"></a>Функция FormatFromRawValue
+
 Преобразует одно значение необработанных данных о производительности в указанный формат или делает это для двух значений, если преобразование формата зависит от времени.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -82,7 +83,7 @@ int FormatFromRawValue (
 | `PDH_INVALID_ARGUMENT` | 0xC0000BBD | Обязательный аргумент отсутствует или неверен. |
 | `PDH_INVALID_HANDLE` | 0xC0000BBC | Этот маркер не является допустимым объектом PDH. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта функция заключает в оболочку вызов функции [форматфромраввалуе](/previous-versions/ms231047(v=vs.85)) .
 
@@ -94,6 +95,6 @@ int FormatFromRawValue (
 
  **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [WMI и счетчики производительности (справочник по неуправляемым API)](index.md)

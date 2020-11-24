@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
 topic_type:
 - apiref
-ms.openlocfilehash: fb18b7b5ac73a1f270af6fae95a23e04b17ca5f1
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 9ba50616b25f9c7c592f19947c82a890ae6b5a4a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763076"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671685"
 ---
 # <a name="iclrstrongnamestrongnamekeygenex-method"></a>Метод ICLRStrongName::StrongNameKeyGenEx
+
 Создает новую пару открытого и закрытого ключей с указанным размером ключа для использования строгого имени.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,8 +39,9 @@ HRESULT StrongNameKeyGenEx (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszKeyContainer`  
- окне Запрошенное имя контейнера ключей. `wszKeyContainer`значение должно быть непустой строкой или null для создания временного имени.  
+ окне Запрошенное имя контейнера ключей. `wszKeyContainer` значение должно быть непустой строкой или null для создания временного имени.  
   
  `dwFlags`  
  окне Значение типа, указывающее, следует ли оставлять зарегистрированный ключ. Поддерживаются следующие значения.  
@@ -58,23 +60,26 @@ HRESULT StrongNameKeyGenEx (
  заполняет Размер (в байтах) `ppbKeyBlob` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+
+ `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
 ## <a name="remarks"></a>Комментарии  
+
  Для подписывания сборки строгим именем в .NET Framework версиях 1,0 и 1,1 требуется a `dwKeySize` из 1024 бит. в версии 2,0 добавлена поддержка для 2048-разрядных ключей.  
   
  После извлечения ключа необходимо вызвать метод [метод iclrstrongname:: StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) , чтобы освободить выделенную память.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameKeyGen](iclrstrongname-strongnamekeygen-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

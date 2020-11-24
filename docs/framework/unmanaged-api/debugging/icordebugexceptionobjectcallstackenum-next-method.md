@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3328a2c0-1e48-4a54-802a-9b474cf82c21
 topic_type:
 - apiref
-ms.openlocfilehash: 6fce9f61e222d0fc1763495de162a94a7fc22689
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 17d5367564ec1ec98efc264ad9a5794c0d04a947
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975983"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672140"
 ---
 # <a name="icordebugexceptionobjectcallstackenumnext-method"></a>Метод ICorDebugExceptionObjectCallStackEnum::Next
+
 Возвращает указанное число экземпляров [кордебужексцептионобжектстаккфраме](cordebugexceptionobjectstackframe-structure.md) , содержащих сведения из стека вызовов объекта исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT Next(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  окне Число извлекаемых экземпляров [кордебужексцептионобжектстаккфраме](cordebugexceptionobjectstackframe-structure.md) .  
   
@@ -48,6 +50,7 @@ HRESULT Next(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

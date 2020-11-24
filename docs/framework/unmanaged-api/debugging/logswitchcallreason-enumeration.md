@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
 topic_type:
 - apiref
-ms.openlocfilehash: 4d29bb3886ffb51e1dfb9654f4d70ef7c568fd43
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: dfb34595530a47b74762610f5824b68ea00a8a69
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420712"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671959"
 ---
 # <a name="logswitchcallreason-enumeration"></a>Перечисление LogSwitchCallReason
+
 Указывает операцию, выполненную на переключателе отладки и трассировки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,7 +35,7 @@ typedef enum LogSwitchCallReason {
 } LogSwitchCallReason;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -43,6 +44,7 @@ typedef enum LogSwitchCallReason {
 |`SWITCH_DELETE`|Удален параметр отладки/трассировки.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -51,6 +53,6 @@ typedef enum LogSwitchCallReason {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

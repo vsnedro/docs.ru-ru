@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 52c543ab-9ef5-4ee7-b836-c0ffc35cd45b
 topic_type:
 - apiref
-ms.openlocfilehash: da6efae38cd70a68feea56b12e86be23fde7f0cb
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 0e029aa848a6630ae00c834dd2b924dc4ebce537
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762192"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671776"
 ---
 # <a name="iclrruntimeinfoloaderrorstring-method"></a>Метод ICLRRuntimeInfo::LoadErrorString
+
 Преобразует значение HRESULT в соответствующее сообщение об ошибке для указанного языка и региональных параметров.  
   
  Этот метод заменяет следующие функции:  
@@ -42,6 +43,7 @@ HRESULT LoadErrorString(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `iResourceID`  
  окне Значение HRESULT для преобразования.  
   
@@ -55,24 +57,26 @@ HRESULT LoadErrorString(
  окне Идентификатор языка и региональных параметров. Чтобы использовать язык и региональные параметры по умолчанию, необходимо указать значение-1.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_POINTER|Параметр `pcchBuffer` имеет значение NULL.|  
-|E_INVALIDARG|Параметр `pwzBuffer` имеет значение NULL.|  
+|E_POINTER|Параметр `pcchBuffer` имеет значение null.|  
+|E_INVALIDARG|Параметр `pwzBuffer` имеет значение null.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

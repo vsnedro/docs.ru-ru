@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 02c596d7-00b0-4e2c-856b-5425158fcefd
 topic_type:
 - apiref
-ms.openlocfilehash: 3db37576f5da7b26e7bd9d3343f8bb8b97f2ba82
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 501a4543940437bfe2a6cb0952aed8184107150c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895234"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672166"
 ---
 # <a name="icordebugappdomaingetname-method"></a>Метод ICorDebugAppDomain::GetName
+
 Возвращает имя домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,19 +38,22 @@ HRESULT GetName (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  [in] Размер массива `szName`. Присвойте этому параметру значение 0, чтобы перевести этот метод в режим запроса.  
   
  `pcchName`  
- заполняет Указатель на размер имени или числа символов, фактически возвращаемых в `szName`. В режиме запроса это значение позволяет вызывающему объекту понять, насколько большой размер буфера выделяется для имени.  
+ заполняет Указатель на размер имени или числа символов, фактически возвращаемых в `szName` . В режиме запроса это значение позволяет вызывающему объекту понять, насколько большой размер буфера выделяется для имени.  
   
  `szName`  
  заполняет Массив, в котором хранится имя домена приложения.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладчик вызывает `GetName` метод один раз, чтобы получить размер буфера, необходимого для имени. Отладчик выделяет буфер, а затем вызывает метод еще раз для заполнения буфера. Первый вызов для получения размера имени называется *режимом запроса*.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

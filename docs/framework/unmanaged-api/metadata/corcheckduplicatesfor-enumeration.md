@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
 topic_type:
 - apiref
-ms.openlocfilehash: 2985c419b25b8bf76df8fee0f0f37ba9ebee3df7
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4acdfd6df410f229a002fa191ef24766748a1262
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007909"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672361"
 ---
 # <a name="corcheckduplicatesfor-enumeration"></a>Перечисление CorCheckDuplicatesFor
+
 Указывает маркеры метаданных, которые будут проверяться на наличие дубликатов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -64,7 +65,7 @@ typedef enum CorCheckDuplicatesFor {
 } CorCheckDuplicatesFor;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -97,12 +98,13 @@ typedef enum CorCheckDuplicatesFor {
 |`MDDupDefault`|Проверьте наличие дубликатов `mdMemberRef` `mdTypeRef` `mdSignature` токенов,,, `mdTypeSpec` и `mdMethodSpec` .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

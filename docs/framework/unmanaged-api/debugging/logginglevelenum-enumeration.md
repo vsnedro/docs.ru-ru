@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
 topic_type:
 - apiref
-ms.openlocfilehash: 62ea982f30a6a73648d9bf36722c0b5a49a68896
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 389edbeb746fbeaf60d88bf9ee2a3a0731822e55
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420751"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672023"
 ---
 # <a name="logginglevelenum-enumeration"></a>Перечисление LoggingLevelEnum
+
 Указывает уровень важности описательного сообщения, записанного в журнале событий при регистрации события управляемым потоком.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -44,7 +45,7 @@ typedef enum LoggingLevelEnum {
 } LoggingLevelEnum;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -63,9 +64,11 @@ typedef enum LoggingLevelEnum {
 |`LPanicLevel`|Сообщение имеет уровень тревоги.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Среда CLR вызывает метод [ICorDebugManagedCallback:: LogMessage](icordebugmanagedcallback-logmessage-method.md) , чтобы уведомить отладчик о том, что управляемый поток зарегистрировал событие. Среда CLR передает значение `LoggingLevelEnum` перечисления, чтобы указать степень серьезности сообщения, которое управляемый поток записал в журнал событий.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -74,7 +77,7 @@ typedef enum LoggingLevelEnum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Diagnostics.EventLog>
 - [Перечисления отладки](debugging-enumerations.md)

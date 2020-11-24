@@ -14,30 +14,32 @@ helpviewer_keywords:
 ms.assetid: 66df494d-1a2f-4441-8ee6-cfed0217b4e6
 topic_type:
 - apiref
-ms.openlocfilehash: 016ded7b1393d6e03faa029ab5be661bf4ff4efd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 27839dda657a6bedf3cc65bb843caaaaa63006d4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131673"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672426"
 ---
 # <a name="iinstallreferenceitem-interface"></a>Интерфейс IInstallReferenceItem
+
 Представляет элемент, установленный в глобальном кэше сборок.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetReference](iinstallreferenceitem-getreference-method.md)|Возвращает указатель на структуру `FUSION_INSTALL_REFERENCE`, представленную этим `IInstallReferenceItem`ом.|  
+|[Метод GetReference](iinstallreferenceitem-getreference-method.md)|Возвращает указатель на `FUSION_INSTALL_REFERENCE` структуру, представленную этим объектом `IInstallReferenceItem` .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)
 - [Структура FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md)

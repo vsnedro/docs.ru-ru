@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
 topic_type:
 - apiref
-ms.openlocfilehash: 41e7b8193ce3288d526db8d7d8c289b0a053ee4e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8ecaa003084064be1071a85aa726c38d773ec0b4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84489760"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95672582"
 ---
 # <a name="imetadatatablesgetstring-method"></a>Метод IMetaDataTables::GetString
+
 Возвращает строку по указанному индексу из столбца таблицы в области текущей ссылки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetString (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ixString`  
  окне Индекс, с которого начинается поиск следующего значения.  
   
@@ -42,15 +44,16 @@ HRESULT GetString (
  заполняет Указатель на указатель на возвращаемое строковое значение.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

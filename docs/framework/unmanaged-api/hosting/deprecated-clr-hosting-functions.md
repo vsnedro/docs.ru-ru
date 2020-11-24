@@ -7,24 +7,26 @@ helpviewer_keywords:
 - .NET Framework 2.0, hosting global static functions
 - hosting global static functions [.NET Framework], version 2.0
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-ms.openlocfilehash: 083d0ff285abb4a99ad05c791bc504ff7f282c6a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9e19502672973f292991b72c7ea9b4fdc17f5707
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504372"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673128"
 ---
 # <a name="deprecated-clr-hosting-functions"></a>Устаревшие функции размещения CLR
+
 В этом разделе описаны неуправляемые глобальные статические функции, которые использовались в предыдущих версиях API размещения.  
   
  За исключением функций инфраструктуры ( `_Cor*` функций), которые используются только .NET Framework, эти функции являются устаревшими в .NET Framework 4.  
   
 ## <a name="activation-functions"></a>Функции активации  
+
  [Функция ClrCreateManagedInstance](clrcreatemanagedinstance-function.md)  
  Не рекомендуется. Создает экземпляр указанного управляемого типа.  
   
  [Функция CoInitializeCor](coinitializecor-function.md)  
- Устаревшее. Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md).  
+ Является устаревшей. Чтобы инициализировать среду CLR, используйте либо [CorBindToRuntimeEx](corbindtoruntimeex-function.md) , либо [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md).  
   
  [Функция CoInitializeEE](coinitializeee-function.md)  
  Не рекомендуется. Гарантирует, что подсистема выполнения среды CLR загружается в процесс. Используйте вместо этого метод [ICLRRuntimeHost:: Start](iclrruntimehost-start-method.md) .  
@@ -57,6 +59,7 @@ ms.locfileid: "84504372"
  Не рекомендуется. Возвращает сведения о версии и каталоге о среде CLR, запрошенной приложением.  
   
 ## <a name="clr-version-functions"></a>Функции версий среды CLR  
+
  Функции в этом разделе возвращают версию среды CLR. они не активируют среду CLR.  
   
  [Функция GetCORVersion](getcorversion-function.md)  
@@ -78,6 +81,7 @@ ms.locfileid: "84504372"
  Не рекомендуется. Позволяет узлу определить версию среды CLR, которая будет использоваться в процессе перед явной инициализацией среды CLR.  
   
 ## <a name="hosting-functions"></a>Функции размещения  
+
  [Функция CallFunctionShim](callfunctionshim-function.md)  
  Не рекомендуется. Вызывает функцию с указанным именем и параметрами в указанной библиотеке.  
   
@@ -94,10 +98,10 @@ ms.locfileid: "84504372"
  Не рекомендуется. Помечает выполняющийся в данный момент поток пула потоков для выполнения управляемого кода. Начиная с версии .NET Framework 2,0 эта функция не действует. Он не является обязательным и может быть удален из кода.  
   
  [Функция CoUninitializeCor](couninitializecor-function.md)  
- Устаревшее. Среду CLR нельзя выгрузить из процесса.  
+ Является устаревшей. Среду CLR нельзя выгрузить из процесса.  
   
  [Функция CoUninitializeEE](couninitializeee-function.md)  
- Устаревшее.  
+ Является устаревшей.  
   
  [Функция CreateDebuggingInterfaceFromVersion](createdebugginginterfacefromversion-function.md)  
  Не рекомендуется. Создает объект [ICorDebug](../debugging/icordebug-interface.md) на основе указанных сведений о версии.  
@@ -139,6 +143,7 @@ ms.locfileid: "84504372"
  Не рекомендуется. Указывает на функцию, которая уведомляет узел о том, что дескриптор ожидания имеет сигнал или время ожидания истекло.  
   
 ## <a name="infrastructure-functions"></a>Функции инфраструктуры  
+
  Функции в этом разделе предназначены для использования только .NET Framework.  
   
  [Функция _CorDllMain](cordllmain-function.md)  
@@ -156,6 +161,6 @@ ms.locfileid: "84504372"
  [Функция _CorValidateImage](corvalidateimage-function.md)  
  Проверяет образы управляемого модуля и уведомляет загрузчик операционной системы после их загрузки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции размещения платформы .NET Framework 4](net-framework-4-hosting-global-static-functions.md)

@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6325a782-6862-4346-8e20-d922ca246169
 topic_type:
 - apiref
-ms.openlocfilehash: 732a75a8efeb888501d6b90bb3b3bedf720f1b60
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: a8993a36c082e251231872881653c55e133e8a8a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420673"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671906"
 ---
 # <a name="shutdowndbgtransportmanager-function"></a>Функция ShutdownDbgTransportManager
+
 Завершает работу диспетчера транспорта для подключения к удаленному целевому компьютеру.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,10 +34,11 @@ void InitDbgTransportManager ();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
- **Библиотека:** mscordbi_macx86. dll  
+ **Библиотека:** mscordbi_macx86.dll  
   
  **.NET Framework версии:** 3,5 SP1

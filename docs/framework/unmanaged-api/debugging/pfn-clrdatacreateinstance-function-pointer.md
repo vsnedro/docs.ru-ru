@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5c66ac57-d751-4de5-af9f-26ceb949af8b
 topic_type:
 - apiref
-ms.openlocfilehash: 34aae3cd913465bc3167d6c5eee9873d212fa4ac
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 68a5b8bb1568f10699653479357b02b2e847cc02
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420697"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671971"
 ---
 # <a name="pfn_clrdatacreateinstance-function-pointer"></a>Указатель функции PFN_CLRDataCreateInstance
+
 Указывает на функцию, которая создает объект интерфейса для указанного целевого элемента.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `iid`  
  окне Идентификатор интерфейса, для которого создается экземпляр.  
   
@@ -45,9 +47,11 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
  заполняет Указатель на адрес возвращенного объекта интерфейса.  
   
 ## <a name="remarks"></a>Комментарии  
+
  `ICLRDataTarget`Объект реализуется модулем записи приложения отладки. Реализация зависит от типа представляемого целевого элемента. Целевой элемент может быть процессом, дампом памяти, удаленным компьютером и т. д.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl  
@@ -56,6 +60,6 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции отладки](debugging-global-static-functions.md)

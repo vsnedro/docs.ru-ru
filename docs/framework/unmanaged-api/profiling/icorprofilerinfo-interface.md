@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: cc8ab6f0c8115da4d74280023dc692b66846ed94
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a029784a28036e531670ad373893b4256c5864c4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497755"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671191"
 ---
 # <a name="icorprofilerinfo-interface"></a>Интерфейс ICorProfilerInfo
+
 Предоставляет методы для использования профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах.  
   
 > [!NOTE]
@@ -65,7 +66,8 @@ ms.locfileid: "84497755"
 |[Метод SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md)|Заменяет тело указанной функции в указанном модуле.|  
 |[Метод SetILInstrumentedCodeMap](icorprofilerinfo-setilinstrumentedcodemap-method.md)|Указывает, каким способом смещений исходной схемы MSIL указанной функции к новым смещениям MSIL-кода, измененного профилировщиком функции.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Профилировщик вызывает метод в `ICorProfilerInfo` интерфейсе, чтобы взаимодействовать со средой CLR для управления мониторингом событий и сведениями о запросах.  
   
  Методы `ICorProfilerInfo` интерфейса реализуются средой CLR с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в разделе CorError. h.  
@@ -73,6 +75,7 @@ ms.locfileid: "84497755"
  Среда CLR передается через реализацию метода [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md)в профилировщике, `ICorProfilerInfo` интерфейс к каждому профилировщику кода во время инициализации. Профилировщик кода может затем вызывать методы `ICorProfilerInfo` интерфейса для получения сведений об управляемом коде, выполняемом под управлением среды CLR.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -81,7 +84,7 @@ ms.locfileid: "84497755"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)
