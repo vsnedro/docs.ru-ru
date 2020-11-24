@@ -1,17 +1,16 @@
 ---
 title: Создание новых атрибутов для элементов в модели DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
-ms.openlocfilehash: 79a3390933256ed862d35c90db0aab2177cdfc41
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 1cb37e47bedf955ea2c6f9faad628df2175fb703
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75711016"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826031"
 ---
 # <a name="creating-new-attributes-for-elements-in-the-dom"></a>Создание новых атрибутов для элементов в модели DOM
 

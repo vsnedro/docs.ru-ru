@@ -2,7 +2,6 @@
 title: Асинхронная модель программирования (APM)
 description: Сведения о модели асинхронного программирования (APM) в .NET. Сведения о том, как начать и завершить асинхронную операцию.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - ending asynchronous operations
 - starting asynchronous operations
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - stopping asynchronous operations
 - asynchronous programming, beginning operations
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
-ms.openlocfilehash: 5ab5d15d24aac80ef4a31c039f7af9dacce4a8d8
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 7b976cf48214fb623563b09aab8a991a5a05d3ca
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84769188"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824445"
 ---
 # <a name="asynchronous-programming-model-apm"></a>Асинхронная модель программирования (APM)
 Асинхронная операция, использующая шаблон разработки <xref:System.IAsyncResult>, реализуется в виде двух методов с именами `BeginOperationName` и `EndOperationName`, которые соответственно начинают и завершают асинхронную операцию *OperationName*. Например, класс <xref:System.IO.FileStream> предоставляет методы <xref:System.IO.FileStream.BeginRead%2A> и <xref:System.IO.FileStream.EndRead%2A> для асинхронного считывания байтов из файла. Эти методы реализуют асинхронную версию метода <xref:System.IO.FileStream.Read%2A> .  

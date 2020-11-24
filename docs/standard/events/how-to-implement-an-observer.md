@@ -2,7 +2,6 @@
 title: Практическое руководство. Реализация наблюдателя
 description: Реализация наблюдателя в .NET. Конструктивный шаблон наблюдателя подразумевает разделение ролей наблюдателя, который регистрируется для получения уведомлений, и поставщика.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - observers [.NET], observer design pattern
 - observer design pattern [.NET], implementing observers
 ms.assetid: 8ecfa9f5-b500-473d-bcf0-5652ffb1e53d
-ms.openlocfilehash: 71df673b580f711ad692454d12beea991810f508
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: bfd595cec8e499b760f75f614bd0a61b031eb207
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93064214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94828339"
 ---
 # <a name="how-to-implement-an-observer"></a>Практическое руководство. Реализация наблюдателя
 Шаблон разработки наблюдателя подразумевает разделение ролей наблюдателя, который регистрируется для получения уведомлений, и поставщика, который отслеживает данные и отправляет уведомления одному или нескольким наблюдателям. В этой статье объясняется, как создать наблюдатель. Создание поставщика рассматривается в связанной статье [Практическое руководство. Реализация поставщика](how-to-implement-a-provider.md).  

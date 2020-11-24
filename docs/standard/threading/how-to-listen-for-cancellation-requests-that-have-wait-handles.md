@@ -1,19 +1,18 @@
 ---
 title: Практическое руководство. Прослушивание запросов на отмену, содержащих дескрипторы ожидания
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - cancellation, waiting with wait handles
 ms.assetid: 6e2aa49b-fc84-4bcf-962b-17db98b7edcb
-ms.openlocfilehash: e44b10b88bef61edcf3f547f56b4020740530e26
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: ec5bc796532381b3e21e4dddc037a927b7e68833
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279547"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826447"
 ---
 # <a name="how-to-listen-for-cancellation-requests-that-have-wait-handles"></a>Практическое руководство. Прослушивание запросов на отмену, содержащих дескрипторы ожидания
 Если метод блокируется на время ожидания сигнала события, он не может проверить значение токена отмены и своевременно отреагировать на него. Первый пример демонстрирует, как эту проблему можно решить для таких событий, как <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, которые не реализуют поддержку унифицированной инфраструктуры отмены. Второй пример демонстрирует более простой подход с применением <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>, который поддерживает унифицированную отмену.  

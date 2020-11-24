@@ -2,7 +2,6 @@
 title: Привязки в регулярных выражениях .NET
 description: Узнайте, как использовать привязки в шаблонах регулярных выражений.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -16,12 +15,12 @@ helpviewer_keywords:
 - .NET regular expressions, anchors
 - .NET regular expressions, atomic zero-width assertions
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
-ms.openlocfilehash: a6330eebbc69b9a3877a99a4373810d5a124c570
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 5f40270baa70c2b72d768cf0f5c4f8305f8bae7a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92889170"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825277"
 ---
 # <a name="anchors-in-regular-expressions"></a>Привязки в регулярных выражениях
 Привязки (или атомарные утверждения нулевой ширины) указывают положение в строке, где должно быть найдено соответствие. При использовании привязки в выражении поиска обработчик регулярных выражений не проходит по строке и не потребляет символы; он ищет соответствия только в заданном местоположении. Например, `^` указывает, что соответствие должно начаться в начале строки. Таким образом, регулярное выражение `^http:` находит соответствие для http, только если этот элемент находится в начале строки. В таблице ниже перечислены привязки, поддерживаемые регулярными выражениями в .NET.  

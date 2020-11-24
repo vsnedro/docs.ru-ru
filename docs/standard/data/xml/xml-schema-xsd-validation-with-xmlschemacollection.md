@@ -1,17 +1,16 @@
 ---
 title: Проверка по XML-схеме (XSD) с помощью XmlSchemaCollection
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: ad0b5717-3d32-41ad-a4d7-072c3e492b82
-ms.openlocfilehash: 2ff8a8b85c3bfa594bd958a9a3688380885e0426
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 08eeb8440f89e488685e474bed607002f8ab6386
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290309"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824588"
 ---
 # <a name="xml-schema-xsd-validation-with-xmlschemacollection"></a>Проверка по XML-схеме (XSD) с помощью XmlSchemaCollection
 Объект <xref:System.Xml.Schema.XmlSchemaCollection> можно использовать для проверки XML-документа по схемам на языке XSD. Объект <xref:System.Xml.Schema.XmlSchemaCollection> повышает производительность за счет сохранения схем в коллекции, чтобы они не загружались в память при каждой проверке. Если схема существует в коллекции схем, для ее поиска в коллекции используется атрибут `schemaLocation`.  

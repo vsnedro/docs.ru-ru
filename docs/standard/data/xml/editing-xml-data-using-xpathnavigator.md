@@ -1,14 +1,13 @@
 ---
 title: Изменение XML-данных с помощью XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: b1f91616-3115-4264-9821-c66589d11d11
-ms.openlocfilehash: 11395c52e399068e5242a1e041ebd9ed94bc2881
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 812e8dbd0fce70459e9dd38c8b3889e1c1a88074
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292076"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826011"
 ---
 # <a name="editing-xml-data-using-xpathnavigator"></a>Изменение XML-данных с помощью XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет методы для вставки, изменения и удаления узлов и значений из XML-документа, содержащегося в объекте <xref:System.Xml.XmlDocument>. Чтобы использовать любой из этих методов для вставки, изменения или удаления узлов и значений, объект <xref:System.Xml.XPath.XPathNavigator> должен быть доступен для изменения, то есть, его свойство <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> должно иметь значение true.  

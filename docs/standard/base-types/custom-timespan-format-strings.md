@@ -2,7 +2,6 @@
 title: Строки пользовательского формата TimeSpan
 description: Общие сведения о строках пользовательского формата TimeSpan в .NET. Строка пользовательского формата состоит из одного описателя формата TimeSpan или нескольких и любого числа литеральных символов.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - formatting [.NET], time
 - custom TimeSpan format strings
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
-ms.openlocfilehash: b760e7ab7f39d4e4682d5d4c3a6421b9843e1d59
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: e8447e580ac85e1ebbc33f8c8334b7c5cfeb334b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92888689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824367"
 ---
 # <a name="custom-timespan-format-strings"></a>Строки пользовательского формата TimeSpan
 
@@ -66,7 +65,7 @@ ms.locfileid: "92888689"
 |"FFFFF"|Стотысячные доли секунды в интервале времени. Любые нули в конце дробной части не учитываются.<br /><br /> Дополнительная информация: [Настраиваемый описатель формата "FFFFF"](#F5_Specifier).|`TimeSpan.Parse("00:00:06.329179")`.<br /><br /> `FFFFF`. 32917<br /><br /> `TimeSpan.Parse("0:0:3.100009")`.<br /><br /> `ss\.FFFFF`. 03.1|
 |"FFFFFF"|Миллионные доли секунды в интервале времени. Любые нули в конце дробной части не отображаются.<br /><br /> Дополнительная информация: [Настраиваемый описатель формата "FFFFFF"](#F6_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`.<br /><br /> `FFFFFF`. 329179<br /><br /> `TimeSpan.Parse("0:0:3.1000009")`.<br /><br /> `ss\.FFFFFF`. 03.1|
 |"FFFFFFF"|Десятимиллионные доли секунды в интервале времени. Любые нули в конце дробной части или семь нулей не отображаются.<br /><br /> Дополнительная информация: [Настраиваемый описатель формата "FFFFFFF"](#F7_Specifier).|`TimeSpan.Parse("00:00:06.3291791")`.<br /><br /> `FFFFFF`. 3291791<br /><br /> `TimeSpan.Parse("0:0:3.1900000")`.<br /><br /> `ss\.FFFFFF`. 03.19|
-|' *строка* '|Буквенный разделитель строк.<br /><br /> Дополнительная информация: [Остальные символы](#other-characters).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh':'mm':'ss` --> "14:32:17"|
+|'*строка*'|Буквенный разделитель строк.<br /><br /> Дополнительная информация: [Остальные символы](#other-characters).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh':'mm':'ss` --> "14:32:17"|
 |&#92;|Escape-символ.<br /><br /> Дополнительная информация: [Остальные символы](#other-characters).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 |Любой другой знак|Любой другой символ, не являющийся escape-символом, интерпретируется как описатель настраиваемого формата.<br /><br /> Дополнительные сведения: [Остальные символы](#other-characters).|`new TimeSpan(14, 32, 17):`<br /><br /> `hh\:mm\:ss` --> "14:32:17"|
 

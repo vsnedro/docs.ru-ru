@@ -2,7 +2,6 @@
 title: Практическое руководство. использование блока try/catch для перехвата исключений
 description: Включайте в блок try операторы, которые могут создавать исключение. Помещайте операторы для обработки исключений в один блок catch или несколько.
 ms.date: 02/06/2019
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - try/catch blocks
 - catch blocks
 ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
-ms.openlocfilehash: 60ed213ea777fe35873fd1e67555b7506e3ca587
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: cfe5b2b304cdb9efe7f0d91059fe1c279b4fa2dd
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768915"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94828014"
 ---
 # <a name="how-to-use-the-trycatch-block-to-catch-exceptions"></a>Использование блока try/catch для перехвата исключений
 

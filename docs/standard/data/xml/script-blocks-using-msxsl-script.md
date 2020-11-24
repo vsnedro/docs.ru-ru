@@ -1,17 +1,16 @@
 ---
 title: Блоки скриптов с использованием msxsl:script
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
-ms.openlocfilehash: e65308f097e81d844cb04b1ebd5cbcdd8a3aadad
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 3cb65142243d1f910ffd0fb85750ba62786d79f0
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291998"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824704"
 ---
 # <a name="script-blocks-using-msxslscript"></a>Блоки скриптов с использованием msxsl:script
 Класс <xref:System.Xml.Xsl.XslCompiledTransform> поддерживает внедренные скрипты с помощью элемента `msxsl:script`. После загрузки таблицы стилей все определенные функции компилируются в MSIL с помощью модели CodeDOM и выполняются во время выполнения. Сборка, создаваемая из блока внедренного скрипта, располагается отдельно от сборки, создаваемой для таблицы стилей.  

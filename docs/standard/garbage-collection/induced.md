@@ -1,16 +1,15 @@
 ---
 title: Индуцированные коллекции
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - garbage collection, forced
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
-ms.openlocfilehash: 36dff45587c6c28ba17fd7389dc3863893ff8f61
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 637ba9b3b73d685ee2263315a08f982d862efb35
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286045"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94827728"
 ---
 # <a name="induced-collections"></a>Индуцированные коллекции
 В большинстве случаев сборщик мусора может определить самое подходящее время для выполнения сборки мусора, поэтому следует дать ему возможность работать независимо. В очень редких случаях принудительная сборка мусора может улучшить производительность приложения. В этих случаях вы можете принудительно запустить сборку мусора с помощью метода <xref:System.GC.Collect%2A?displayProperty=nameWithType>.  

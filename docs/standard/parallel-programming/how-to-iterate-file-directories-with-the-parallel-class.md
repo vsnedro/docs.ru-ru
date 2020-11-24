@@ -1,19 +1,18 @@
 ---
 title: Практическое руководство. Перебор каталогов с файлами с помощью параллельного класса
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - parallel loops, how to iterate directories
 ms.assetid: 555e9f48-f53d-4774-9bcf-3e965c732ec5
-ms.openlocfilehash: fa67e3b94bc7b2f9afac749e50204138e9a041f0
-ms.sourcegitcommit: 6d09ae36acba0b0e2ba47999f8f1a725795462a2
+ms.openlocfilehash: e29769a0dc40e88a53b0a3f063f79c8c89edbce6
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92925263"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825706"
 ---
 # <a name="how-to-iterate-file-directories-with-the-parallel-class"></a>Практическое руководство. Перебор каталогов с файлами с помощью параллельного класса
 Во многих случаях итерацию файла можно легко параллелизовать. В статье [Практическое руководство. Перебор каталогов с файлами с помощью PLINQ](how-to-iterate-file-directories-with-plinq.md) демонстрируется самый простой способ, позволяющий выполнить эту задачу во многих сценариях. Но с ним могут возникнуть трудности, если код должен поддерживать много разных исключений, которые могут возникнуть при доступе к файловой системе. В примере ниже представлен один из подходов к решению этой проблемы. Он применяет итерацию на основе стека для просмотра всех файлов и папок в указанном каталоге и позволяет перехватывать и обрабатывать разные исключения в пользовательском коде. Разумеется, за вами остается конкретный механизм обработки исключений.  

@@ -2,19 +2,18 @@
 title: Практическое руководство. Возврат значения из задачи
 description: Узнайте, как использовать тип System.Threading.Tasks.Task<TResult> для возврата значения из свойства Result в .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - tasks, how to return a value
 ms.assetid: c4bc0f44-eba2-4e96-9e03-1cc787461e61
-ms.openlocfilehash: 051cef7cac654e4369ec1486884876004370ba0b
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: c7a4a683545c9ef0448d9cdce769aae79215aecf
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84767979"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825615"
 ---
 # <a name="how-to-return-a-value-from-a-task"></a>Практическое руководство. Возврат значения из задачи
 В этом примере показано, как использовать тип <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> для возврата значения из свойства <xref:System.Threading.Tasks.Task%601.Result%2A>. Здесь требуется, чтобы каталог C:\Users\Public\Pictures\Sample Pictures\ существовал и содержал файлы.  

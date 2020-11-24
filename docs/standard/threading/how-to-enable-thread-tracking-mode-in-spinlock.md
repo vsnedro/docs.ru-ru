@@ -1,19 +1,18 @@
 ---
 title: Практическое руководство. Включение режима отслеживания потоков в SpinLock
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - SpinLock, how to enable thread-tracking
 ms.assetid: 62ee2e68-0bdd-4869-afc9-f0a57a11ae01
-ms.openlocfilehash: 1a46655530948bb8732362dbd6d86ead495b0998
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 83aebc45cdeaa2330c49ef6e90dcbedcd36de6b5
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279534"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826460"
 ---
 # <a name="how-to-enable-thread-tracking-mode-in-spinlock"></a>Практическое руководство. Включение режима отслеживания потоков в SpinLock
 <xref:System.Threading.SpinLock?displayProperty=nameWithType> реализует низкоуровневую взаимоисключающую блокировку, которая применима для сценариев с очень коротким временем ожидания. <xref:System.Threading.SpinLock> не допускает повторный вход. После входа потока в блокировку он обязан правильно завершить блокировку, прежде чем входить в нее повторно. Как правило, любая попытка повторно войти в блокировку приводит к взаимоблокировке, что иногда очень трудно подвергается отладке. Для помощи разработчикам <xref:System.Threading.SpinLock?displayProperty=nameWithType> поддерживает режим отслеживания потоков, в котором создается исключение, когда поток пытается повторно войти в уже открытую блокировку. Это позволяет быстрее найти точку, в которой неправильно выполнен выход из блокировки. Чтобы включить режим отслеживания потоков, используйте конструктор <xref:System.Threading.SpinLock>, который принимает на вход логический параметр, в котором следует передать значение `true`. Завершив все этапы разработки и тестирования, обязательно отключите режим отслеживания потоков, чтобы он не влиял на производительность.  

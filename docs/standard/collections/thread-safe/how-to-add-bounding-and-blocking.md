@@ -1,16 +1,15 @@
 ---
 title: Практическое руководство. Добавление функций границы и блокировки в коллекцию
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - thread-safe collections, custom blocking collections
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
-ms.openlocfilehash: 57a01726e897f4ddbf8df5ede53609c198012d80
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 52ba264c5a0fc9cfffb00ee30b50f6b89dc1e660
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287878"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825043"
 ---
 # <a name="how-to-add-bounding-and-blocking-functionality-to-a-collection"></a>Практическое руководство. Добавление функций границы и блокировки в коллекцию
 В этом примере показано, как добавлять функциональные возможности границ и блокировок в пользовательский класс коллекции путем реализации интерфейса <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=nameWithType> в классе и последующего использования экземпляра класса в качестве механизма внутреннего хранения для объекта класса <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType>. Дополнительные сведения о границах и блокировках см. в разделе [Общие сведения о коллекции BlockingCollection](blockingcollection-overview.md).  

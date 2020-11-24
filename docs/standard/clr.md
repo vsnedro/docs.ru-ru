@@ -3,7 +3,6 @@ title: Обзор среды CLR — .NET
 titleSuffix: ''
 description: Приступая к работе со средой CLR, средой выполнения .NET. Среда CLR выполняет код и предоставляет службы для упрощения процесса разработки.
 ms.date: 10/22/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - compiling source code, runtime functionality
 - code, execution
@@ -18,12 +17,12 @@ helpviewer_keywords:
 - code, runtime functionality
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ms.custom: updateeachrelease
-ms.openlocfilehash: 39543a511e8f405d9205df2697bcf4fd1194bd7a
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: 917649475271c288516f9eb0913a0959601427af
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687517"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94823879"
 ---
 # <a name="common-language-runtime-clr-overview"></a>Обзор среды CLR
 

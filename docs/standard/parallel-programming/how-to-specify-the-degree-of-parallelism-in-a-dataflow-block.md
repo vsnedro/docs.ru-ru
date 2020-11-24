@@ -1,7 +1,6 @@
 ---
 title: Практическое руководство. Указание степени параллелизма в блоке потока данных
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, specifying parallelism
 ms.assetid: e4088541-ee05-40db-95f5-147cfe62fde7
-ms.openlocfilehash: 75302c98177a92b921996944f2862298fc612f31
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: bd77afd3e2d8ba71541ce8159a9faf3dea3aa3fe
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288112"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826870"
 ---
 # <a name="how-to-specify-the-degree-of-parallelism-in-a-dataflow-block"></a>Практическое руководство. Указание степени параллелизма в блоке потока данных
 В этом документе описывается, как задать свойство <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A?displayProperty=nameWithType>, чтобы позволить блоку выполнения потока данных обрабатывать более одного сообщения единовременно. Это удобно при наличии блока потока данных, который выполняет длительное вычисление и может получить выгоду от обработки сообщений параллельным образом. В этом примере используется класс <xref:System.Threading.Tasks.Dataflow.ActionBlock%601?displayProperty=nameWithType> для параллельного выполнения нескольких операций потока данных; однако можно задать максимальную степень параллелизма в любом из предопределенных типов блоков выполнения, предоставляемых библиотекой потоков данных: <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType>.

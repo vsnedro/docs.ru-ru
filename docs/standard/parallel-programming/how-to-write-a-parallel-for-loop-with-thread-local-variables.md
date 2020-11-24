@@ -2,19 +2,18 @@
 title: Практическое руководство. Написание цикла Parallel.For с локальными переменными потока
 description: Ознакомьтесь с примером написания цикла Parallel.For в .NET, использующего локальные переменные потока для хранения и получения состояния каждой отдельной задачи цикла.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - parallel for loops, how to use local state
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-ms.openlocfilehash: 9cff507757aab2e5676df2fabb02a237a2172c17
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1e2dd0d554cdece23ac6d0e6b255ad70533236dc
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599793"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826662"
 ---
 # <a name="how-to-write-a-parallelfor-loop-with-thread-local-variables"></a>Практическое руководство. Написание цикла Parallel.For с локальными переменными потока
 В этом примере показано, как использовать локальные переменные потока для хранения и получения состояния каждой отдельной задачи, создаваемой циклом <xref:System.Threading.Tasks.Parallel.For%2A>. Благодаря локальным переменным потока вы можете избежать дополнительной нагрузки при синхронизации большого количества доступов к общему состоянию. Вместо записи в общий ресурс при каждой итерации вы вычисляете и сохраняете значение до тех пор, пока не будут выполнены все итерации для задачи. После этого вы можете однократно записать итоговый результат в общий ресурс или передать его в другой метод.  

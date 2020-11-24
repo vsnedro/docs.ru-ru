@@ -2,18 +2,17 @@
 title: Проверка по XML-схеме (XSD) с помощью XmlSchemaSet
 description: Сведения о том, как проверить XML-документы на соответствие схеме языка определения схемы XML (XSD) с помощью класса XmlSchemaSet в .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 ms.assetid: 359b10eb-ec05-4cc6-ac96-c2b060afc4de
-ms.openlocfilehash: 5963ba1b382740b1774c944b74c6a54b13db4f76
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9e1d4b7e8c805436c32d2ae7b340ee251741f4a1
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554519"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824575"
 ---
 # <a name="xml-schema-xsd-validation-with-xmlschemaset"></a>Проверка по XML-схеме (XSD) с помощью XmlSchemaSet
 

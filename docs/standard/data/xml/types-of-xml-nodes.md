@@ -1,14 +1,13 @@
 ---
 title: Типы XML-узлов
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
-ms.openlocfilehash: 5e11d61e16659ac1a8ca1b0b2c0d493ffdad5621
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 97458fc26b3c63dd6d7882c180192aef63109e1a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282068"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824601"
 ---
 # <a name="types-of-xml-nodes"></a>Типы XML-узлов
 Когда XML-документ считывается в память в виде дерева узлов, типы для узлов выбираются во время их создания. В модели XML DOM существует несколько типов узлов, определяемых консорциумом W3C и приведенных в разделе «1.1.1. Структурная модель DOM». В следующей таблице перечислены типы узлов, объекты, назначаемые каждому типу узла, и дано краткое описание типов.  
