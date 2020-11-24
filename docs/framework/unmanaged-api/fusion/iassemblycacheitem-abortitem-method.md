@@ -15,29 +15,31 @@ helpviewer_keywords:
 ms.assetid: be9f47f1-f532-4603-a192-a73cb7a0c4b2
 topic_type:
 - apiref
-ms.openlocfilehash: 876b02be60041242ec26f7ea25e4a9c836f7c936
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8fff7c2c30d49de5fb7c14c2b094bc214d4992cd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134492"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95670684"
 ---
-# <a name="iassemblycacheitemabortitem-method"></a><span data-ttu-id="732e6-102">Метод IAssemblyCacheItem::AbortItem</span><span class="sxs-lookup"><span data-stu-id="732e6-102">IAssemblyCacheItem::AbortItem Method</span></span>
-<span data-ttu-id="732e6-103">Позволяет сборке в глобальном кэше сборок выполнять операции очистки до ее освобождения.</span><span class="sxs-lookup"><span data-stu-id="732e6-103">Allows the assembly in the global assembly cache to perform cleanup operations before it is released.</span></span>  
+# <a name="iassemblycacheitemabortitem-method"></a><span data-ttu-id="419c8-102">Метод IAssemblyCacheItem::AbortItem</span><span class="sxs-lookup"><span data-stu-id="419c8-102">IAssemblyCacheItem::AbortItem Method</span></span>
+
+<span data-ttu-id="419c8-103">Позволяет сборке в глобальном кэше сборок выполнять операции очистки до ее освобождения.</span><span class="sxs-lookup"><span data-stu-id="419c8-103">Allows the assembly in the global assembly cache to perform cleanup operations before it is released.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="732e6-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="732e6-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="419c8-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="419c8-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT AbortItem ();  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="732e6-105">Требования</span><span class="sxs-lookup"><span data-stu-id="732e6-105">Requirements</span></span>  
- <span data-ttu-id="732e6-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="732e6-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="732e6-107">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="732e6-107">**Header:** Fusion.h</span></span>  
-  
- <span data-ttu-id="732e6-108">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="732e6-108">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="732e6-109">См. также</span><span class="sxs-lookup"><span data-stu-id="732e6-109">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="419c8-105">Требования</span><span class="sxs-lookup"><span data-stu-id="419c8-105">Requirements</span></span>  
 
-- [<span data-ttu-id="732e6-110">Интерфейс IAssemblyCacheItem</span><span class="sxs-lookup"><span data-stu-id="732e6-110">IAssemblyCacheItem Interface</span></span>](iassemblycacheitem-interface.md)
+ <span data-ttu-id="419c8-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="419c8-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="419c8-107">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="419c8-107">**Header:** Fusion.h</span></span>  
+  
+ <span data-ttu-id="419c8-108">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="419c8-108">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="419c8-109">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="419c8-109">See also</span></span>
+
+- [<span data-ttu-id="419c8-110">Интерфейс IAssemblyCacheItem</span><span class="sxs-lookup"><span data-stu-id="419c8-110">IAssemblyCacheItem Interface</span></span>](iassemblycacheitem-interface.md)
