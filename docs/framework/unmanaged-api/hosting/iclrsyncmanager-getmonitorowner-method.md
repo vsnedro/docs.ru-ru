@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 840983a4-396d-47b4-86a0-d35f9b437cdb
 topic_type:
 - apiref
-ms.openlocfilehash: 77debe047f5b379237022f44ef8f9d96718b227d
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: a2cb82d8071518af4d4bc3276871f3846a5a5693
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762504"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687090"
 ---
 # <a name="iclrsyncmanagergetmonitorowner-method"></a>Метод ICLRSyncManager::GetMonitorOwner
+
 Возвращает экземпляр [IHostTask](ihosttask-interface.md) , которому принадлежит монитор, идентифицируемый указанным файлом cookie.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetMonitorOwner (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cookie`  
  окне Файл cookie, связанный с монитором.  
   
@@ -43,9 +45,9 @@ HRESULT GetMonitorOwner (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`GetMonitorOwner`успешно возвращено.|  
+|S_OK|`GetMonitorOwner` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -53,23 +55,25 @@ HRESULT GetMonitorOwner (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Узел обычно вызывается `GetMonitorOwner` как часть механизма обнаружения взаимоблокировки. Файл cookie связывается с монитором при его создании с помощью вызова [метод ihostsyncmanager:: CreateMonitorEvent](ihostsyncmanager-createmonitorevent-method.md).  
   
 > [!NOTE]
 > Вызов для освобождения события, лежащего в основе монитора, может блокироваться, но не будет взаимоблокировками, если вызов этого метода в настоящее время действует на файл cookie, связанный с этим монитором. Другие задачи также могут блокироваться при попытке получить этот монитор.  
   
- `GetMonitorOwner`всегда возвращает значение немедленно и может вызываться в любое время после вызова `CreateMonitorEvent` . Узлу не нужно ждать, пока задача ожидает события.  
+ `GetMonitorOwner` всегда возвращает значение немедленно и может вызываться в любое время после вызова `CreateMonitorEvent` . Узлу не нужно ждать, пока задача ожидает события.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

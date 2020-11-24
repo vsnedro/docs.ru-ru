@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b2a8240b-07fe-4859-bb2b-7d3adbfa0a9f
 topic_type:
 - apiref
-ms.openlocfilehash: fcebe65b7f39dd2849946e445a694ad5e9b1a65d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 901546c80c3bee32afddfa8e8cffbd2b679bc43b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500485"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685400"
 ---
 # <a name="icorprofilercallbackappdomaincreationstarted-method"></a>Метод ICorProfilerCallback::AppDomainCreationStarted
+
 Уведомляет профилировщик о создании домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,10 +39,12 @@ HRESULT AppDomainCreationStarted(
 
   \[в] определяет создаваемый домен.
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Идентификатор не является допустимым для запроса информации до вызова метода [ICorProfilerCallback:: аппдомаинкреатионфинишед](icorprofilercallback-appdomaincreationfinished-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -50,6 +53,6 @@ HRESULT AppDomainCreationStarted(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

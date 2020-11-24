@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 0339af16-ee1d-48ec-837d-a79d9a9c89f8
 topic_type:
 - apiref
-ms.openlocfilehash: 256c362ae0aea51fea16ce799db243b105dee81a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: ec64f9bec0ee9b63796958b17c7f10b87692f1d0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616246"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686154"
 ---
 # <a name="ehostbindingpolicymodifyflags-enumeration"></a>Перечисление EHostBindingPolicyModifyFlags
+
 Позволяет узлу указать тип перенаправления, которое должна выполнять среда CLR при применении изменений политики из исходной сборки к целевой сборке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,7 +36,7 @@ typedef enum _hostBindingPolicyModifyFlags {
 } EHostBindingPolicyModifyFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -45,18 +46,20 @@ typedef enum _hostBindingPolicyModifyFlags {
 |`HOST_BINDING_POLICY_MODIFY_REMOVE`|Указывает, что среда CLR заменит значения политики целевой сборки значениями из исходной сборки.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Метод [ICLRHostBindingPolicyManager:: ModifyApplicationPolicy](iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md) принимает параметр типа `EHostBindingPolicyModifyFlags` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)
 - [Размещение перечислений](hosting-enumerations.md)

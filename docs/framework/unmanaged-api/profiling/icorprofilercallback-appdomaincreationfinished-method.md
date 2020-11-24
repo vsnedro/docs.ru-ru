@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type:
 - apiref
-ms.openlocfilehash: 76f56971223154d3ed966c272081049adf30de54
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 688b9975cc68463de066e5225c6ab1e04cbb5337
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500498"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685385"
 ---
 # <a name="icorprofilercallbackappdomaincreationfinished-method"></a>Метод ICorProfilerCallback::AppDomainCreationFinished
+
 Уведомляет профилировщик о том, что домен приложения создан.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -43,12 +44,14 @@ HRESULT AppDomainCreationFinished(
 
   \[в] значение HRESULT, указывающее, успешно ли создана область приложения.
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Идентификатор приложения не является допустимым для запроса информации до `AppDomainCreationFinished` вызова метода.  
   
  Некоторые части загрузки домена приложения могут продолжаться после `AppDomainCreationFinished` обратного вызова. Ошибка HRESULT в `hrStatus` указывает на сбой. Однако значение HRESULT в случае успеха в `hrStatus` указывает, что первая часть создания домена приложения успешно выполнена.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -57,6 +60,6 @@ HRESULT AppDomainCreationFinished(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

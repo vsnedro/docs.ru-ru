@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: d231044e-2b53-4836-93f9-8117ff0e5c3a
 topic_type:
 - apiref
-ms.openlocfilehash: 63b07dda2293d3e05bd3c8fcdc45f20a498ea54c
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: bccd44e1bead4feadf67929dc104557715904577
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616311"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686479"
 ---
 # <a name="eclrunhandledexception-enumeration"></a>Перечисление EClrUnhandledException
+
 Описывает доступные параметры для управления исключениями, которые не обрабатываются в пользовательском коде.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,7 +34,7 @@ typedef enum {
 } EClrUnhandledException;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -41,18 +42,20 @@ typedef enum {
 |`eHostDeterminedPolicy`|Указывает, что среда CLR не обрабатывает необработанные исключения и позволяет узлу определить дальнейшие действия.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Чтобы указать, что среда CLR работает как более ранние версии, используйте `eHostDeterminedPolicy` член.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Перечисление EClrOperation](eclroperation-enumeration.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type:
 - apiref
-ms.openlocfilehash: 48ac09e1862ae58e79707235e891f72920de1251
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 94495ca0ea75bd41996d430159474c707a3e68b2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500563"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685426"
 ---
 # <a name="iclrprofilingattachprofiler-method"></a>Метод ICLRProfiling::AttachProfiler
+
 Подключает указанный профилировщик к указанному процессу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -64,9 +65,10 @@ HRESULT AttachProfiler(
   \[in] размер (в байтах) данных, на которые `pvClientData` указывает.
 
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие значения HRESULT.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Указанный профилировщик успешно подключен к целевому процессу.|  
 |CORPROF_E_PROFILER_ALREADY_ACTIVE|Уже существует активный профилировщик или профилировщик, подключенный к целевому процессу.|  
@@ -81,12 +83,14 @@ HRESULT AttachProfiler(
 |E_FAIL|Произошел другой, не указанный сбой.|  
 |Другие коды ошибок|Если метод [ICorProfilerCallback3:: InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) профилировщика ВОЗВРАЩАЕТ значение HRESULT, которое указывает на сбой, `AttachProfiler` ВОЗВРАЩАЕТ то же значение HRESULT. В этом случае E_NOTIMPL преобразуется в CORPROF_E_PROFILER_NOT_ATTACHABLE.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
   
 ## <a name="memory-management"></a>Управление памятью  
+
  В соответствии с соглашениями COM объект, вызывающий метод `AttachProfiler` (например, код триггера, созданный разработчиком профилировщика), отвечает за выделение и освобождение памяти для данных, на которые указывает параметр `pvClientData`. Когда среда CLR выполняет вызов `AttachProfiler`, создается копия памяти, на которую указывает `pvClientData`, которая затем передается в целевой процесс. Когда среда CLR в целевом процессе получает собственную копию блока `pvClientData`, она передает этот блок в профилировщик с помощью метода `InitializeForAttach`, а затем освобождает свою копию блока `pvClientData` в целевом процессе.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -95,7 +99,7 @@ HRESULT AttachProfiler(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)

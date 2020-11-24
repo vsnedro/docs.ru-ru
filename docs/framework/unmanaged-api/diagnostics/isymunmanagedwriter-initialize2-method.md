@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 93de56b6-4ae8-4cca-acdc-25a434623509
 topic_type:
 - apiref
-ms.openlocfilehash: 869d7d36ac24bfeee5b2361dd569945ad77eaf7f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 93a96a5da3342f4beff611de1d448dc199dd39dd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610071"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687134"
 ---
 # <a name="isymunmanagedwriterinitialize2-method"></a>Метод ISymUnmanagedWriter::Initialize2
+
 Задает интерфейс передатчика метаданных, с которым будет связан этот модуль записи, и задает имя выходного файла, в который будут записываться отладочные символы. Этот метод также позволяет задать конечное расположение файла базы данных программы (PDB).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT Initialize2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `emitter`  
  окне Указатель на интерфейс передатчика метаданных.  
   
@@ -47,18 +49,20 @@ HRESULT Initialize2(
  окне Если указан, средство записи символов создает символы в заданном, а не в <xref:System.Runtime.InteropServices.ComTypes.IStream> файле, указанном в `filename` параметре. Параметр `pIStream` не обязателен.  
   
  `fFullBuild`  
- [входные] `true` значение, если это полная перестроение; `false`если это инкрементная компиляция.  
+ [входные] `true` значение, если это полная перестроение; `false` если это инкрементная компиляция.  
   
  `finalfilename`  
  окне Указатель на объект `WCHAR` , который является строкой пути к окончательному расположению PDB-файла.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Метод Initialize](isymunmanagedwriter-initialize-method.md)

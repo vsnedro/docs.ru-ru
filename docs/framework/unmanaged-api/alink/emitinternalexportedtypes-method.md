@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb
 topic_type:
 - apiref
-ms.openlocfilehash: d4b7064b0339825c29e4001bc35c4a604098468a
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: faf1438f56cd49b235ffbb18a0154e3e20c202b9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446495"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684971"
 ---
 # <a name="emitinternalexportedtypes-method"></a>Метод EmitInternalExportedTypes
+
 Выдает типы, добавленные в сборку. Вызовите этот метод после добавления известных внутренних типов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,19 @@ HRESULT EmitInternalExportedTypes(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

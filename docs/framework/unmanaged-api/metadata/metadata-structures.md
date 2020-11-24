@@ -6,17 +6,19 @@ helpviewer_keywords:
 - unmanaged structures [.NET Framework], metadata
 - metadata structures [.NET Framework]
 ms.assetid: 3eeaec36-5e1a-4a62-9de3-ea3942f67d04
-ms.openlocfilehash: fbb9727523aa175f10a05b3ba4f54ac64b790f8e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 591699e2d3e58f7efc1c72d2c47f2f956198fcf0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84489552"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685478"
 ---
 # <a name="metadata-structures"></a>Структуры метаданных
+
 В этом разделе описаны неуправляемые структуры, которые использует API метаданных.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  ASSEMBLYMETADATA  
  Хранит метаданные сборки для дальнейшего использования.  
   
@@ -33,6 +35,7 @@ ms.locfileid: "84489552"
  Содержит сведения об операционной системе   
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Интерфейсы метаданных](metadata-interfaces.md)  
   
  [Глобальные статические функции метаданных](metadata-global-static-functions.md)  

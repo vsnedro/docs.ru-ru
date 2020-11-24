@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0451d752-1e5c-4c9a-8bad-6cd35b7ba3df
 topic_type:
 - apiref
-ms.openlocfilehash: 387f5f01f2d2589c0b34e50b69398e1feb0e77e0
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 3005db62bba4089c669a00f62e3c1e62f9e1dae9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008252"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685712"
 ---
 # <a name="iceegentruncatesection-method"></a>Метод ICeeGen::TruncateSection
+
 Усекает указанный раздел кода на заданную длину.  
   
  Этот метод устарел и не должен использоваться.  
@@ -37,24 +38,27 @@ HRESULT TruncateSection (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `section`  
  окне Раздел для усечения.  
   
  `len`  
  окне Длина усечения раздела в байтах.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Вызывайте `TruncateSection` только при наличии особых требований к разделам, которые не обрабатываются другими методами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

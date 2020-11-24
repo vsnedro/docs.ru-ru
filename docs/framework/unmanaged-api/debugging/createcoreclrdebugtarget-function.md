@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1cf4ca8e-d9bb-4633-9adf-5e24315bf87a
 topic_type:
 - apiref
-ms.openlocfilehash: 2271611b5cbbfe487e5798be0429ed94c227a67f
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: f0188facf0b7d33e6e1ecc12921a139165f777a1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860882"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686635"
 ---
 # <a name="createcoreclrdebugtarget-function"></a>Функция CreateCoreClrDebugTarget
+
 Создает подключение к прокси-серверу отладчика, запущенному на удаленном компьютере, и возвращает объект [ICoreClrDebugTarget](icoreclrdebugtarget-interface.md) , который можно использовать для запроса выполняющихся процессов и загрузки сред выполнения на удаленном компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT CreateCoreClrDebugTarget (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwAddress`  
  [in] IPv4-адрес удаленного целевого компьютера.  
   
@@ -43,6 +45,7 @@ HRESULT CreateCoreClrDebugTarget (
  заполняет Указатель на указатель на объект [ICoreClrDebugTarget](icoreclrdebugtarget-interface.md) , который будет создан.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK  
  Количество сред CLR в процессе успешно определено, и соответствующие массивы дескрипторов и путей заполнены должным образом.  
   
@@ -53,10 +56,11 @@ HRESULT CreateCoreClrDebugTarget (
  Прочие сбои.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
- **Библиотека:** mscordbi_macx86. dll  
+ **Библиотека:** mscordbi_macx86.dll  
   
  **.NET Framework версии:** 3,5 SP1
