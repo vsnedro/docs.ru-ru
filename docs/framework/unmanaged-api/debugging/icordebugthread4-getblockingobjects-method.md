@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a7e6c54e-7be9-4e52-bbb4-95f52458e8e4
 topic_type:
 - apiref
-ms.openlocfilehash: 366b5124cc66a4e9a1c3bd4e77f604f15ba8d8a8
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: eb8692aebe7b702b5778b3f13e496d81dcd45784
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379673"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678551"
 ---
 # <a name="icordebugthread4getblockingobjects-method"></a>Метод ICorDebugThread4::GetBlockingObjects
+
 Предоставляет упорядоченное перечисление структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) , которые предоставляют сведения о блокировке потока.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,10 +34,12 @@ HRESULT GetBlockingObjects (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppBlockingObjectEnum`  
  заполняет Указатель на упорядоченное перечисление структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Первый элемент в возвращенном перечислении соответствует первой структуре, блокирующей поток. Второй элемент соответствует блокирующему элементу, который обнаруживается при выполнении асинхронного вызова процедуры (APC) при блокировке в первом и т. д.  
   
  Перечисление допустимо только в течение текущего синхронизированного состояния.  
@@ -48,6 +51,7 @@ HRESULT GetBlockingObjects (
  Если поток заблокирован и ошибка не может быть определена, метод возвращает значение HRESULT, указывающее на ошибку; в противном случае возвращается S_OK.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -56,7 +60,7 @@ HRESULT GetBlockingObjects (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugThread4](icordebugthread4-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

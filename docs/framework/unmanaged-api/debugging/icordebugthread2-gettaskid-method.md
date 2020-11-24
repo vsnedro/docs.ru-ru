@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6ba3c6ee-4ba1-4c98-bf1e-8531acd3da09
 topic_type:
 - apiref
-ms.openlocfilehash: 841af546cc3586529fe290c69e686438f634b90d
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 9b17a179745af65bde05527bd0157f3ce06c12c6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83377786"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678679"
 ---
 # <a name="icordebugthread2gettaskid-method"></a>Метод ICorDebugThread2::GetTaskID
+
 Возвращает идентификатор задачи, выполняющейся в этом потоке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetTaskID (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pTaskId`  
  заполняет Указатель на идентификатор задачи, выполняемой в потоке, представленном этим объектом ICorDebugThread2.  
   
-## <a name="remarks"></a>Remarks  
- Задача может выполняться только в потоке, если поток связан с соединением. `GetTaskID`Возвращает ноль в `pTaskId` , если поток не связан с соединением.  
+## <a name="remarks"></a>Комментарии  
+
+ Задача может выполняться только в потоке, если поток связан с соединением. `GetTaskID` Возвращает ноль в `pTaskId` , если поток не связан с соединением.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

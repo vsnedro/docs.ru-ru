@@ -2,14 +2,15 @@
 title: Метод ICorDebugVirtualUnwinder::GetContext
 ms.date: 03/30/2017
 ms.assetid: fe502a76-3068-47e5-a0a0-85ccb72dfac3
-ms.openlocfilehash: e203db78b40bf4305316046cfcd679f3d10d1876
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: a5a1afa47e52eff7c930698a3354a03d8c62259f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396438"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679459"
 ---
 # <a name="icordebugvirtualunwindergetcontext-method"></a>Метод ICorDebugVirtualUnwinder::GetContext
+
 Получает текущий контекст этого средства очистки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,6 +25,7 @@ HRESULT GetContext(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `contextFlags`  
  [in] Флаги, указывающие, какие части контекста следует возвращать (определенные в заголовке WinNt.h).  
   
@@ -37,9 +39,11 @@ HRESULT GetContext(
  [out] Байтовый массив, содержащий текущий контекст этого средства очистки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Любое ошибочное значение HRESULT , полученное процессом mscordbi, считается неустранимым и приводит к возврату интерфейсами API ICorDebug значения `CORDBG_E_DATA_TARGET_ERROR`.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Начальное значение аргумента задается `contextBuf` в буфере контекста, возвращаемом путем вызова метода [икордебугстакквалк:: oncontext](icordebugstackwalk-getcontext-method.md) .  
   
 > [!NOTE]
@@ -48,6 +52,7 @@ HRESULT GetContext(
  Поскольку очистка может восстановить только подмножество регистров, например только неизменяемые регистры, контекст может не соответствовать в точности состоянию регистра во время фактического вызова метода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -56,7 +61,7 @@ HRESULT GetContext(
   
  **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
 topic_type:
 - apiref
-ms.openlocfilehash: c2e8aaa2774e3e2699a73c40804391ca245047b1
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: d8375948be5820aaf6e879b82bcfde6471cccf3f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976594"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679901"
 ---
 # <a name="icordebugcontrollersetallthreadsdebugstate-method"></a>Метод ICorDebugController::SetAllThreadsDebugState
+
 Задает состояние отладки всех управляемых потоков в процессе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT SetAllThreadsDebugState (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `state`  
  окне Значение перечисления "Кордебугсреадстате", указывающее состояние потока для отладки.  
   
  `pExceptThisThread`  
  окне Указатель на объект "ICorDebugThread", представляющий поток, исключаемый из параметра состояния отладки. Если это значение равно null, ни один поток не исключен.  
   
-## <a name="remarks"></a>Remarks  
- Метод может влиять на потоки, которые не видны через [метод енумератесреадс](icordebugcontroller-enumeratethreads-method.md), поэтому потоки, которые были приостановлены с `SetAllThreadsDebugState` помощью метода, необходимо возобновить с `SetAllThreadsDebugState` помощью метода. `SetAllThreadsDebugState`  
+## <a name="remarks"></a>Комментарии  
+
+ `SetAllThreadsDebugState`Метод может влиять на потоки, которые не видны через [метод енумератесреадс](icordebugcontroller-enumeratethreads-method.md), поэтому потоки, которые были приостановлены с помощью метода, `SetAllThreadsDebugState` необходимо возобновить с помощью `SetAllThreadsDebugState` метода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

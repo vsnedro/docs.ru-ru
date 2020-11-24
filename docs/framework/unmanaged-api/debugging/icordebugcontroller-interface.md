@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: dbb1c4dc-269a-459b-ab1d-6c70788782ce
 topic_type:
 - apiref
-ms.openlocfilehash: e494bbb24e8f2245593e7945625e72e70ae1dde5
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 1ca9e55a2183ca4293d30607496b588cbf21d6dd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82892772"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679953"
 ---
 # <a name="icordebugcontroller-interface"></a>Интерфейс ICorDebugController
 
@@ -40,13 +40,15 @@ ms.locfileid: "82892772"
 |[Метод Stop](icordebugcontroller-stop-method.md)|Выполняет совместную работу во всех потоках, где выполняется управляемый код в процессе.|  
 |[Метод Terminate](icordebugcontroller-terminate-method.md)|Завершает процесс с указанным кодом выхода.|  
   
-## <a name="remarks"></a>Remarks  
- Если `ICorDebugController` управляет процессом, область включает все потоки процесса. Если `ICorDebugController` управляет доменом приложения, область включает только потоки этого конкретного домена приложения.  
+## <a name="remarks"></a>Комментарии  
+
+ Если `ICorDebugController` управляет процессом, область включает все потоки процесса. Если управляет `ICorDebugController` доменом приложения, область включает только потоки этого конкретного домена приложения.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

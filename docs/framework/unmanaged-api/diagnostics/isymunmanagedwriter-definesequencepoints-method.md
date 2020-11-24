@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 64202baf-be6b-40ba-8162-8cc6c0c9b8e1
 topic_type:
 - apiref
-ms.openlocfilehash: 8889c412f414f38d1d18d33ec297e82fd052280d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: af8beb1ec627b93faeb7329a03579319ca3880ed
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614803"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678328"
 ---
 # <a name="isymunmanagedwriterdefinesequencepoints-method"></a>Метод ISymUnmanagedWriter::DefineSequencePoints
+
 Определяет группу точек следования в текущем методе. Каждая начальная строка и начальный столбец определяют начало инструкции в методе. Каждая конечная строка и конечный столбец определяют конец оператора в методе. Массивы должны быть отсортированы в порядке возрастания смещений. Смещение всегда измеряется от начала метода в байтах.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT DefineSequencePoints(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `document`  
  окне Объект документа, для которого определяются точки следования.  
   
@@ -55,17 +57,19 @@ HRESULT DefineSequencePoints(
  окне Начальные номера столбцов точек следования.  
   
  `endLines`  
- окне Номера конечных строк точек следования. Этот параметр необязателен.  
+ окне Номера конечных строк точек следования. Это необязательный параметр.  
   
  `endColumns`  
- окне Конечные номера столбцов точек следования. Этот параметр необязателен.  
+ окне Конечные номера столбцов точек следования. Это необязательный параметр.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

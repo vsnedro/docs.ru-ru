@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: fde7e21d-1169-4bed-a34d-792e69652bf9
 topic_type:
 - apiref
-ms.openlocfilehash: 3f6cea68a4379f8769ccbdbc6911cc5c425d3369
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: af4124aed823a0a2475a181efe3fa68e1fae0bfe
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614881"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678393"
 ---
 # <a name="isymunmanagedreadersymbolsearchinfo-interface"></a>Интерфейс ISymUnmanagedReaderSymbolSearchInfo
+
 Предоставляет методы, которые получают сведения о поиске символов. Получите этот интерфейс, вызвав `QueryInterface` для объекта, который реализует интерфейс [ISymUnmanagedReader](isymunmanagedreader-interface.md) .  
   
 ## <a name="methods"></a>Методы  
@@ -32,8 +33,9 @@ ms.locfileid: "83614881"
 |[Метод GetSymbolSearchInfoCount](isymunmanagedreadersymbolsearchinfo-getsymbolsearchinfocount-method.md)|Возвращает число сведений о поиске символов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

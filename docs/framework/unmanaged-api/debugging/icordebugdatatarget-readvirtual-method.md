@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
 topic_type:
 - apiref
-ms.openlocfilehash: 36a18d92f05db55957bba55de84490c0da1a1f86
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 8fb0cfc72867653eaff65f3183dacf9191604290
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976516"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679732"
 ---
 # <a name="icordebugdatatargetreadvirtual-method"></a>Метод ICorDebugDataTarget::ReadVirtual
+
 Возвращает блок непрерывной памяти, начиная с указанного адреса, и возвращает его в указанном буфере.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT ReadVirtual(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `address`  
  окне Начальный адрес запрошенной памяти.  
   
@@ -47,12 +49,14 @@ HRESULT ReadVirtual(
  окне Число байтов, получаемых с целевого адреса.  
   
  `pBytesRead`  
- заполняет Число байтов, фактически считанных из целевого адреса. Это может быть меньше, `bytesRequested`чем.  
+ заполняет Число байтов, фактически считанных из целевого адреса. Это может быть меньше `bytesRequested` , чем.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если можно считать первый байт (с указанным начальным адресом), вызов должен вернуть результат (для поддержки эффективного чтения структур данных с самоописывающей длиной, например со строками, завершающимися нулем).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

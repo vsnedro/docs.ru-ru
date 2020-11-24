@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4
 topic_type:
 - apiref
-ms.openlocfilehash: 8e4f745440936a39e22faf60d10a05a0bb110606
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 6a0c33799b2b2aaa48e3b18b7b4bb37643508bd4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975957"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678887"
 ---
 # <a name="icordebugexceptionobjectvalue-interface"></a>Интерфейс ICorDebugExceptionObjectValue
+
 Расширяет интерфейс "ICorDebugObjectValue" для предоставления сведений о трассировке стека из управляемого объекта исключения.  
   
 ## <a name="methods"></a>Методы  
@@ -30,10 +31,12 @@ ms.locfileid: "82975957"
 |------------|-----------------|  
 |[Метод EnumerateExceptionCallStack](icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md)|Возвращает перечислитель для стека вызовов, внедренного в объект исключения.|  
   
-## <a name="remarks"></a>Remarks  
- Вызов метода `QueryInterface` будет выполнен для управляемых объектов, производных от <xref:System.Exception?displayProperty=nameWithType>.  
+## <a name="remarks"></a>Комментарии  
+
+ Вызов метода `QueryInterface` будет выполнен для управляемых объектов, производных от <xref:System.Exception?displayProperty=nameWithType> .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type:
 - apiref
-ms.openlocfilehash: dbe4129cf4160a1a9b31bc6f418095ea4b392d57
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d3816c8a3b6204b053505aa888eb28d696f8990b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617000"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677852"
 ---
 # <a name="iclrerrorreportingmanager-interface"></a>Интерфейс ICLRErrorReportingManager
+
 Предоставляет методы, позволяющие основному приложению настраивать пользовательские дампы стека для отчетов об ошибках.  
   
 ## <a name="methods"></a>Методы  
@@ -33,21 +34,23 @@ ms.locfileid: "83617000"
 |[Метод GetBucketParametersForCurrentException](iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|Возвращает контейнер Watson для текущего исключения в вызывающем потоке.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  `BeginCustomDump`Метод задает конфигурацию пользовательского дампа стека. `EndCustomDump`Метод очищает конфигурацию дампа пользовательского стека и освобождает любое связанное состояние. Он должен вызываться после завершения пользовательского дампа.  
   
 > [!IMPORTANT]
 > Сбой вызова `EndCustomDump` приводит к утечке памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление ECustomDumpItemKind](ecustomdumpitemkind-enumeration.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

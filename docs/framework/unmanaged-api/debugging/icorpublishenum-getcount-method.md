@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d228f684-2be3-4029-93ae-31fe02213c1f
 topic_type:
 - apiref
-ms.openlocfilehash: 7ed4236187fab1c1e81be9ddcdff1f1852e38f70
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: a23d61da2913d8732c3860a44eb58ffadab48315
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421193"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677938"
 ---
 # <a name="icorpublishenumgetcount-method"></a>Метод ICorPublishEnum::GetCount
+
 Возвращает число элементов в перечислении.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetCount (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pcelt`  
  заполняет Указатель на число элементов в перечислении.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
@@ -46,6 +49,6 @@ HRESULT GetCount (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorPublishEnum](icorpublishenum-interface.md)

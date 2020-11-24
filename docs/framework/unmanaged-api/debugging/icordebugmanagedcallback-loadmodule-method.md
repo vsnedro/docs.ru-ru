@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 66ec04e9-87cb-42ce-9720-81522abb5d5a
 topic_type:
 - apiref
-ms.openlocfilehash: cd4a16bc8b48f147ed03555b51eee5f42a445bc6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 698a5cb88884febc4dfb3b916c00df20c1a77819
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212706"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679654"
 ---
 # <a name="icordebugmanagedcallbackloadmodule-method"></a>Метод ICorDebugManagedCallback::LoadModule
+
 Уведомляет отладчик о том, что модуль среды CLR успешно загружен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT LoadModule (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, в который был загружен модуль.  
   
  `pModule`  
  окне Указатель на объект ICorDebugModule, представляющий модуль CLR.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `LoadModule`Обратный вызов предоставляет подходящее время для проверки метаданных модуля, установки флагов JIT-компилятора или включения или отключения обратных вызовов при загрузке класса для модуля.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,7 +57,7 @@ HRESULT LoadModule (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод UnloadModule](icordebugmanagedcallback-unloadmodule-method.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

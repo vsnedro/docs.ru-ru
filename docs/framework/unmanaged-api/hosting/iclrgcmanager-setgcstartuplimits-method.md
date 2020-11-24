@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1c8d9959-95b5-4131-be4a-556d97774014
 topic_type:
 - apiref
-ms.openlocfilehash: 0dce86a12ed3e93983ee62620fa0ddf7dfbc48f5
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 169d344975762b97f89e8dc32d72f2b9c95fea11
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616948"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678185"
 ---
 # <a name="iclrgcmanagersetgcstartuplimits-method"></a>Метод ICLRGCManager::SetGCStartupLimits
+
 Задает размер сегмента сборки мусора и максимальный размер поколения 0 для системы сборки мусора.  
   
 > [!IMPORTANT]
@@ -38,6 +39,7 @@ HRESULT SetGCStartupLimits (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `SegmentSize`  
  окне Указанный размер сегмента сборки мусора.  
   
@@ -50,9 +52,9 @@ HRESULT SetGCStartupLimits (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`SetGCStartupLimits`успешно возвращено.|  
+|S_OK|`SetGCStartupLimits` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -60,18 +62,20 @@ HRESULT SetGCStartupLimits (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Значения, которые `SetGCStartupLimits` задаются, можно указать только один раз. Последующие вызовы метода `SetGCStartupLimits` игнорируются.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)
 - [Сборка мусора](../../../standard/garbage-collection/index.md)

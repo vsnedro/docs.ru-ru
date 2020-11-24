@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: eed63d31-d977-4c7d-9443-f9d37a2a7d81
 topic_type:
 - apiref
-ms.openlocfilehash: 3c4f673d88594e86004c6d51a4d58a0ac4642875
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 6b67ba9d022d94f51d7cc6a4645855f6b6ac3e19
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615947"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679327"
 ---
 # <a name="iclrassemblyidentitymanagergetreferencedassembliesfromfile-method"></a>Метод ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile
+
 Возвращает экземпляр [ICLRReferenceAssemblyEnum](iclrreferenceassemblyenum-interface.md) , содержащий список сборок, на которые ссылается сборка по указанному пути к файлу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetReferencedAssembliesFromFile (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzFilePath`  
  окне Путь к сборке, которую необходимо вычислить.  
   
@@ -51,7 +53,7 @@ HRESULT GetReferencedAssembliesFromFile (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -61,18 +63,20 @@ HRESULT GetReferencedAssembliesFromFile (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Вызывающий объект может исключить набор известных ссылок на сборки из возвращенного списка. Этот набор определяется `pExcludeAssembliesList` параметром.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

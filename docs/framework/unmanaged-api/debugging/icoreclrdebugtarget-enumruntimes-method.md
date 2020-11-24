@@ -17,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: 316df866-442d-40cc-b049-45e8adcb65d1
 topic_type:
 - apiref
-ms.openlocfilehash: fc8269d4cc22ab53569edaa48c27b4a01970dcc7
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 093f49508e8e96a4003f1aab8eed59e2fd196ba9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83397173"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679277"
 ---
 # <a name="icoreclrdebugtargetenumruntimes-method"></a>Метод ICoreClrDebugTarget::EnumRuntimes
+
 Перечисляет среды CLR в указанном процессе, который выполняется на удаленном компьютере.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT EnumRuntimes (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwInternalProcessID`  
  [in] Внутренний идентификатор процесса, для которого требуется перечислить среды выполнения. Это будет `m_dwInternalID` из соответствующего [CoreClrDebugProcInfo](coreclrdebugprocinfo-structure.md).  
   
@@ -48,6 +50,7 @@ HRESULT EnumRuntimes (
  заполняет Массив структур [кореклрдебугрунтимеинфо](coreclrdebugruntimeinfo-structure.md) , представляющих среды выполнения, загруженные в удаленном целевом процессе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK  
  Успешно.  
   
@@ -60,18 +63,20 @@ HRESULT EnumRuntimes (
  E_FAIL (или другие коды возврата E_)  
  Прочие сбои.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Чтобы освободить память, выделенную этим методом, вызовите метод [ICoreClrDebugTarget:: FreeMemory](icoreclrdebugtarget-freememory-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Кореклрремотедебуггингинтерфацес. h  
   
- **Библиотека:** mscordbi_macx86. dll  
+ **Библиотека:** mscordbi_macx86.dll  
   
  **.NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICoreClrDebugTarget](icoreclrdebugtarget-interface.md)

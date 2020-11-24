@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a8e3dd32-6a44-4371-9a74-f417b11998c8
 topic_type:
 - apiref
-ms.openlocfilehash: c695aa80ea3bf90a29ce7c5d11eda7fae5fe7b2d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: c5e36443295395997303cb94202f534a83d086f4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614816"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95677873"
 ---
 # <a name="isymunmanagedwriterdefineparameter-method"></a>Метод ISymUnmanagedWriter::DefineParameter
+
 Определяет один параметр в текущем методе. Тип параметра берется из расположения параметра (Sequence) в сигнатуре метода.  
   
  Если в метаданных для данного метода определены параметры, их не нужно определять повторно с помощью этого метода. Прежде чем проверять хранилище символов, средства чтения символов должны проверить обычные метаданные для параметров.  
@@ -41,6 +42,7 @@ HRESULT DefineParameter(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `name`  
  окне Имя параметра.  
   
@@ -63,11 +65,13 @@ HRESULT DefineParameter(
  окне Третий адрес для спецификации параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

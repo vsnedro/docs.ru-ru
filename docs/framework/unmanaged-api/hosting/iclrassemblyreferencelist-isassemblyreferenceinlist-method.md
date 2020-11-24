@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8a570813-21be-407e-92a6-7ae8de3bc728
 topic_type:
 - apiref
-ms.openlocfilehash: 0632a7f5feee87c386d9488a6c989413af68a47f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f74e0f111ff7869d0bfed61d420f3788f65876dc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615895"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679160"
 ---
 # <a name="iclrassemblyreferencelistisassemblyreferenceinlist-method"></a>Метод ICLRAssemblyReferenceList::IsAssemblyReferenceInList
+
 Возвращает значение, указывающее, ссылается ли заданный указатель на сборку в списке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,27 +35,29 @@ HRESULT IsAssemblyReferenceInList (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pName`  
  окне Указатель интерфейса на сборку, для которой необходимо выполнить поиск. Допустимые значения имеют тип `IAssemblyName` или `IReferenceIdentity` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Строка появится в списке.|  
 |S_FALSE|Строка не отображается в списке.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не будет использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
 topic_type:
 - apiref
-ms.openlocfilehash: cb2b69c5e6dfed4e0cb4e4e324c4ec6ad664f3e7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 6eebabc3a08027eab4ac55c1e46dd75b1f75bd21
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212754"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679706"
 ---
 # <a name="icordebugmanagedcallback-interface"></a>Интерфейс ICorDebugManagedCallback
+
 Предоставляет методы для обработки обратных вызовов отладчика.  
   
 ## <a name="methods"></a>Методы  
@@ -55,7 +56,8 @@ ms.locfileid: "83212754"
 |[Метод UnloadModule](icordebugmanagedcallback-unloadmodule-method.md)|Уведомляет отладчик о выгрузке модуля CLR (DLL).|  
 |[Метод UpdateModuleSymbols](icordebugmanagedcallback-updatemodulesymbols-method.md)|Уведомляет отладчик о том, что символы для модуля CLR были изменены.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Все обратные вызовы сериализуются, вызываются в том же потоке и вызываются с процессом в состоянии SYNCHRONIZED.  
   
  Каждая реализация обратного вызова должна вызывать [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) для возобновления выполнения. Если `ICorDebugController::Continue` метод не вызывается до возврата обратного вызова, процесс будет остановлен, а обратные вызовы событий не будут выполняться до `ICorDebugController::Continue` вызова метода.  
@@ -66,6 +68,7 @@ ms.locfileid: "83212754"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -74,7 +77,7 @@ ms.locfileid: "83212754"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebug](icordebug-interface.md)
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

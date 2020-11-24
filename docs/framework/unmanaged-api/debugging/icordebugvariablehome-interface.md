@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type:
 - apiref
-ms.openlocfilehash: caf6a24207be98be9afb10be2bd027b51405fa3b
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 089e68278113dfdf509ed848f424ad32baa145ed
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396540"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679550"
 ---
 # <a name="icordebugvariablehome-interface"></a>Интерфейс ICorDebugVariableHome
+
 Представляет локальную переменную или аргумент функции.  
   
 ## <a name="methods"></a>Методы  
@@ -39,6 +40,7 @@ ms.locfileid: "83396540"
 |[Метод GetSlotIndex](icordebugvariablehome-getslotindex-method.md)|Возвращает управляемый индекс в виде слота локальной переменной.|  
   
 ## <a name="example"></a>Пример  
+
  В следующем фрагменте кода используется объект [ICorDebugCode4](icordebugcode4-interface.md) с именем `pCode4` .  
   
 ```cpp  
@@ -81,6 +83,7 @@ for (int i = 0; i < celtFetched; i++)
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -89,7 +92,7 @@ for (int i = 0; i < celtFetched; i++)
   
  **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Интерфейс ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)

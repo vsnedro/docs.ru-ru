@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 954bd386-2076-4d00-9d46-38c728aa9cab
 topic_type:
 - apiref
-ms.openlocfilehash: d388f366671f50c3dcb3bd9d387300dd1bbb168f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 9ac3b2ae349a696ba0cea1bad3e3484bb1c113fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615908"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679251"
 ---
 # <a name="iclrassemblyidentitymanagerisstronglynamed-method"></a>Метод ICLRAssemblyIdentityManager::IsStronglyNamed
+
 Возвращает значение, указывающее, является ли указанная сборка строго именованной.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ RESULT IsStronglyNamed (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzAssemblyIdentity`  
  окне Непрозрачные канонические данные идентификации сборки для оценки.  
   
@@ -43,7 +45,7 @@ RESULT IsStronglyNamed (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -53,14 +55,15 @@ RESULT IsStronglyNamed (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
