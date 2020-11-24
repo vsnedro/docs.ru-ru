@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c698b86e-ace7-4b21-9549-f52d6a034959
 topic_type:
 - apiref
-ms.openlocfilehash: 4ba3f31ae6d6b67d7beaa2f709bf6174b721136d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: a918b5c2334683348adc6a7382527faedb52d7b6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609525"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683541"
 ---
 # <a name="isymunmanagedwritersetmethodsourcerange-method"></a>Метод ISymUnmanagedWriter::SetMethodSourceRange
+
 Указывает истинные начало и конец метода в исходном файле. Этот метод используется для указания экстента метода независимо от точек следования, которые существуют в методе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT SetMethodSourceRange(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `startDoc`  
  окне Указатель на документ, содержащий начальную точку.  
   
@@ -57,11 +59,13 @@ HRESULT SetMethodSourceRange(
  окне Номер конечного столбца.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

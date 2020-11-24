@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a2995ff-5f02-4b49-84dc-3a5f9cfd7d55
 topic_type:
 - apiref
-ms.openlocfilehash: 50ffb33456f942a71089f9bc44daa07f6b77ab21
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 490648ab8883b1dba257b82c0d0fa3c8e4783814
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805300"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684165"
 ---
 # <a name="idebuggerthreadcontrolreleaseallruntimethreads-method"></a>Метод IDebuggerThreadControl::ReleaseAllRuntimeThreads
+
 Уведомляет узел о том, что службы отладки собирается освободить все заблокированные потоки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,17 +33,19 @@ HRESULT ReleaseAllRuntimeThreads ( );
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  `ReleaseAllRuntimeThreads`Метод никогда не будет вызываться в потоке среды выполнения. Если в узле заблокирован поток среды выполнения, он должен освободить его сейчас.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IDebuggerThreadControl](idebuggerthreadcontrol-interface.md)

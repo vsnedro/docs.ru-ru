@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 9afd0e04-a403-41e2-9528-a6dcbcdcbd4d
 topic_type:
 - apiref
-ms.openlocfilehash: e5fd1730bbe5b6f2905691dce41a7f503227534a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5e0df443e691292817ff37900fbc87204a8325ab
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179072"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684503"
 ---
 # <a name="icordebugappdomain3getcachedwinrttypes-method"></a>Метод ICorDebugAppDomain3::GetCachedWinRTTypes
-Получает регистратор для всех кэшированных типов Выполнения Windows.  
+
+Возвращает перечислитель для всех кэшированных среда выполнения Windowsных типов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,17 +35,19 @@ HRESULT GetCachedWinRTTypes (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppGuidToTypeEnum`  
- (ваут) Указатель на объект интерфейса [ICorbugDeGuidToTypeEnum,](icordebugguidtotypeenum-interface.md) который может перечислять управляемые представления типов Windows Runtime, загруженные в настоящее время в домене приложения.  
+ заполняет Указатель на объект интерфейса [ICorDebugGuidToTypeEnum](icordebugguidtotypeenum-interface.md) , который может перечислить управляемые представления среда выполнения Windows типов, загруженных в домен приложения в данный момент.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** Время выполнения Windows  
+
+ **Платформы:** среда выполнения Windows  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: d941102b-2679-4c49-b15e-c0fc9c53e11f
 topic_type:
 - apiref
-ms.openlocfilehash: 2b1addc752c7238116e072c6e957d2b277ceb1e3
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 44c5228f7ee467abd02a9ec09590d0352fc82036
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449400"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684763"
 ---
 # <a name="freewin32resblob-method"></a>Метод FreeWin32ResBlob
+
 Освобождает большой двоичный объект ресурсов Win32 и связанные ресурсы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,16 +34,19 @@ HRESULT FreeWin32ResBlob(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppResBlob`  
  Большой двоичный объект ресурса, который необходимо освободить. Этот метод присваивает указатель большого двоичного объекта значению NULL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

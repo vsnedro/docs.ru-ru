@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0da962a3-ce55-44dd-ab7a-14ad7105af4a
 topic_type:
 - apiref
-ms.openlocfilehash: 22d570711c293dd8c0cc6fefd198dd46d6489bea
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 69b2338e6992c386a3cd34a632d69b73a67f14fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803539"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683008"
 ---
 # <a name="ihostsemaphorewait-method"></a>Метод IHostSemaphore::Wait
+
 Приводит к тому, что текущий экземпляр [IHostSemaphore](ihostsemaphore-interface.md) ожидает его признания или истечения указанного периода времени.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT Wait (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwMilliseconds`  
  окне Число миллисекунд ожидания перед возвратом, если текущий `IHostSemaphore` экземпляр не принадлежит.  
   
@@ -43,9 +45,9 @@ HRESULT Wait (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`Wait`успешно возвращено.|  
+|S_OK|`Wait` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -54,15 +56,16 @@ HRESULT Wait (
 |HOST_E_DEADLOCK|Узел обнаружил взаимоблокировку в течение интервала ожидания и выбрал текущий экземпляр в `IHostSemaphore` качестве жертвы взаимоблокировки.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostAutoEvent](ihostautoevent-interface.md)

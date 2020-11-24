@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 67985a22-88a2-4c54-8d99-4bcde9d6213e
 topic_type:
 - apiref
-ms.openlocfilehash: 63719d0c6e13768e9dc7ed80e52e2a293e32a8a1
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 554bd32ae965b21a88a09577749bbd7975f5ec7e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74449342"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684750"
 ---
 # <a name="getalinkmessagedll-function"></a>Функция GetALinkMessageDll
+
 Находит и загружает библиотеку DLL сообщений. Возвращает 0, если не удалось обнаружить или загрузить библиотеку DLL сообщений. DLL сообщения должна быть либо в подкаталоге, имя которого является ИДЕНТИФИКАТОРом языка, либо в текущем каталоге.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,10 +33,11 @@ HINSTANCE WINAPI GetALinkMessageDll();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ALink. h  
   
- **Библиотека**: ALink. dll  
+ **Библиотека**: alink.dll  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Al.exe (компоновщик сборок)](../../tools/al-exe-assembly-linker.md)

@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 348c7c8c-8578-46ae-97cf-480d6015c3c6
 topic_type:
 - apiref
-ms.openlocfilehash: 5ef100680328e9ad6261bb9188d7509efa9ab479
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3197c650b4f167e7a5043270797d2c4a62413d8e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108864"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683203"
 ---
 # <a name="createassemblycache-function"></a>Функция CreateAssemblyCache
+
 Возвращает указатель на новый экземпляр [IAssemblyCache](iassemblycache-interface.md) , представляющий глобальный кэш сборок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,22 +37,24 @@ HRESULT CreateAssemblyCache (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppAsmCache`  
- заполняет Возвращаемый указатель `IAssemblyCache`.  
+ заполняет Возвращаемый `IAssemblyCache` указатель.  
   
  `dwReserved`  
- окне Зарезервировано для будущего расширения. значение `dwReserved` должно быть равно 0 (нулю).  
+ окне Зарезервировано для будущего расширения. `dwReserved` значение должно быть равно 0 (нулю).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyCache](iassemblycache-interface.md)
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)

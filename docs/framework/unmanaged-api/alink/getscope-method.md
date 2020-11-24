@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
 topic_type:
 - apiref
-ms.openlocfilehash: 078168ae8860f18ff6f811dcc972e3eb3c857e1d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: fd5ae6ef40cb171c33132df0f640acbef96d69b5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447205"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684682"
 ---
 # <a name="getscope-method"></a>Метод GetScope
+
 Возвращает область импорта.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetScope(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Уникальный идентификатор сборки для импорта.  
   
@@ -49,12 +51,14 @@ HRESULT GetScope(
  Получает интерфейс [интерфейса IMetaDataImport](../metadata/imetadataimport-interface.md) для области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

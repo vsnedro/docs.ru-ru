@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4bae06f7-94d7-4ba8-b250-648b2da78674
 topic_type:
 - apiref
-ms.openlocfilehash: 6a53b9b1b061c2ca07a469abc78c07ed9e710069
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8451f100f9e1b8d68045050d1b584ae44c29195d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500095"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684074"
 ---
 # <a name="icorprofilercallback-interface"></a>Интерфейс ICorProfilerCallback
+
 Предоставляет методы, которые используются средой CLR для уведомления профилировщика кода при возникновении событий, на которые подписан профилировщик.  
   
 ## <a name="methods"></a>Методы  
@@ -46,8 +47,8 @@ ms.locfileid: "84500095"
 |[Метод ExceptionCatcherLeave](icorprofilercallback-exceptioncatcherleave-method.md)|Уведомляет профилировщик о том, что управление передается из соответствующего `catch` блока.|  
 |[Метод ExceptionCLRCatcherExecute](icorprofilercallback-exceptionclrcatcherexecute-method.md)|Устарело в .NET Framework версии 2,0.|  
 |[Метод ExceptionCLRCatcherFound](icorprofilercallback-exceptionclrcatcherfound-method.md)|Устарело в .NET Framework 2,0.|  
-|[Метод ExceptionOSHandlerEnter](icorprofilercallback-exceptionoshandlerenter-method.md)|Не реализовано. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
-|[Метод ExceptionOSHandlerLeave](icorprofilercallback-exceptionoshandlerleave-method.md)|Не реализовано. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
+|[Метод ExceptionOSHandlerEnter](icorprofilercallback-exceptionoshandlerenter-method.md)|Не реализован. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
+|[Метод ExceptionOSHandlerLeave](icorprofilercallback-exceptionoshandlerleave-method.md)|Не реализован. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
 |[Метод ExceptionSearchCatcherFound](icorprofilercallback-exceptionsearchcatcherfound-method.md)|Уведомляет профилировщик о том, что на фазе поиска исключений обнаружен обработчик для созданного исключения.|  
 |[Метод ExceptionSearchFilterEnter](icorprofilercallback-exceptionsearchfilterenter-method.md)|Уведомляет профилировщик о выполнении пользовательского фильтра.|  
 |[Метод ExceptionSearchFilterLeave](icorprofilercallback-exceptionsearchfilterleave-method.md)|Уведомляет профилировщик о завершении выполнения фильтра пользователем.|  
@@ -60,8 +61,8 @@ ms.locfileid: "84500095"
 |[Метод ExceptionUnwindFunctionLeave](icorprofilercallback-exceptionunwindfunctionleave-method.md)|Уведомляет профилировщик о том, что фаза очистки в обработке исключений завершила очистку функции.|  
 |[Метод FunctionUnloadStarted](icorprofilercallback-functionunloadstarted-method.md)|Уведомляет профилировщик о запуске среды выполнения для выгрузки функции.|  
 |[Метод Initialize](icorprofilercallback-initialize-method.md)|Вызывается для инициализации профилировщика при запуске нового приложения CLR.|  
-|[Метод JITCachedFunctionSearchFinished](icorprofilercallback-jitcachedfunctionsearchfinished-method.md)|Уведомляет профилировщик о завершении поиска для функции, которая была скомпилирована ранее с помощью NGen. exe.|  
-|[Метод JITCachedFunctionSearchStarted](icorprofilercallback-jitcachedfunctionsearchstarted-method.md)|Уведомляет профилировщик о начале поиска для функции, которая была скомпилирована ранее с помощью NGen. exe.|  
+|[Метод JITCachedFunctionSearchFinished](icorprofilercallback-jitcachedfunctionsearchfinished-method.md)|Уведомляет профилировщик о завершении поиска для функции, которая была скомпилирована ранее с помощью NGen.exe.|  
+|[Метод JITCachedFunctionSearchStarted](icorprofilercallback-jitcachedfunctionsearchstarted-method.md)|Уведомляет профилировщик о начале поиска для функции, которая была скомпилирована ранее с помощью NGen.exe.|  
 |[Метод JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)|Уведомляет профилировщик о завершении компиляции функции JIT-компилятором.|  
 |[Метод JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md)|Уведомляет профилировщик о том, что JIT-компилятор начал компиляцию функции.|  
 |[Метод JITFunctionPitched](icorprofilercallback-jitfunctionpitched-method.md)|Уведомляет профилировщик о том, что функция, скомпилированная JIT-компилятором, была удалена из памяти.|  
@@ -98,7 +99,8 @@ ms.locfileid: "84500095"
 |[Метод ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md)|Уведомляет профилировщик о том, что поток был уничтожен.|  
 |[Метод UnmanagedToManagedTransition](icorprofilercallback-unmanagedtomanagedtransition-method.md)|Уведомляет профилировщик о том, что произошел переход из неуправляемого кода в управляемый код.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Среда CLR вызывает метод в `ICorProfilerCallback` интерфейсе (или [ICorProfilerCallback2](icorprofilercallback2-interface.md)) для уведомления профилировщика при возникновении события, на которое подписан профилировщик. Это основной интерфейс обратного вызова, с помощью которого среда CLR взаимодействует с профилировщиком кода.  
   
  Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для .NET Framework версии 2,0 или более поздней профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
@@ -109,6 +111,7 @@ ms.locfileid: "84500095"
 > Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы класса `ICorProfilerCallback` . Если он предназначен для .NET Framework версии 2,0 или более поздней, COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -117,7 +120,7 @@ ms.locfileid: "84500095"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

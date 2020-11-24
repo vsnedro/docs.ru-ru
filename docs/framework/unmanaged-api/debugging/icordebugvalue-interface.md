@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b2f7007f-c446-4b18-aed1-a25cff8aee31
 topic_type:
 - apiref
-ms.openlocfilehash: b8d2e49031e59db0527de3c848d7d390095797bf
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 7d3c35ed6cda637e3b885afe089ddfa590d51076
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396791"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683619"
 ---
 # <a name="icordebugvalue-interface"></a>Интерфейс ICorDebugValue
+
 Представляет значение в отлаживаемом процессе. Значением может быть значение Read или Write.  
   
 ## <a name="methods"></a>Методы  
@@ -33,7 +34,8 @@ ms.locfileid: "83396791"
 |[Метод GetSize](icordebugvalue-getsize-method.md)|Возвращает размер данного объекта в байтах `ICorDebugValue` .|  
 |[Метод GetType](icordebugvalue-gettype-method.md)|Возвращает тип примитива этого `ICorDebugValue` объекта.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  В общем случае владение объектом значения передается при его возврате. Получатель отвечает за удаление ссылки из объекта после завершения работы с объектом.  
   
  В зависимости от того, откуда было получено значение, оно может остаться недействительным после возобновления процесса. Поэтому в общем случае значение не должно удерживаться в вызове метода [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) .  
@@ -42,6 +44,7 @@ ms.locfileid: "83396791"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -50,7 +53,7 @@ ms.locfileid: "83396791"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugValue3](icordebugvalue3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

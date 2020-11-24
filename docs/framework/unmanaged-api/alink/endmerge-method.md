@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1d03bb15-a2c8-4a04-8fc6-b126c89c3778
 topic_type:
 - apiref
-ms.openlocfilehash: cacf7eab1e53f590ad46fd98ed2f5dcbd14cd30a
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ed4ac7b12caa0dd78b79554258de62b8752553e0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74434404"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684932"
 ---
 # <a name="endmerge-method"></a>Метод EndMerge
+
 Указывает, что все пользовательские атрибуты были объединены в область действия Emit.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,19 @@ HRESULT EndMerge(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

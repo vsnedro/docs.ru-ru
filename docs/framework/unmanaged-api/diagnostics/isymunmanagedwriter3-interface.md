@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a034c21e-e371-4360-b470-29e88288948f
 topic_type:
 - apiref
-ms.openlocfilehash: 006045ce101884119f676e4f6324815eb21a10a4
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: dfc2e39a6a39e7386bd7358d422d5c6978ec42ec
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614660"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683294"
 ---
 # <a name="isymunmanagedwriter3-interface"></a>Интерфейс ISymUnmanagedWriter3
+
 Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных. Этот интерфейс расширяет интерфейс [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) .  
   
 ## <a name="methods"></a>Методы  
@@ -32,9 +33,10 @@ ms.locfileid: "83614660"
 |[Метод OpenMethod2](isymunmanagedwriter3-openmethod2-method.md)|Открывает метод и предоставляет его фактическое смещение раздела в изображении.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 36997e04-f9f6-4254-a041-6767ac6c51d9
 topic_type:
 - apiref
-ms.openlocfilehash: ff3103a46390c880a56ff443bfe20744f2ba0bfd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 03f6c97b4a5bbbdc0aeaf7b3f07277e66d7d0e9a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74430688"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684516"
 ---
 # <a name="getwin32resblob-method"></a>Метод GetWin32ResBlob
+
 Извлекает BLOB-объект ресурса Win32. Вызовите этот метод после установки параметров сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetWin32ResBlob(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
@@ -57,12 +59,14 @@ HRESULT GetWin32ResBlob(
  Получает размер большого двоичного объекта.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

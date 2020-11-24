@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
 topic_type:
 - apiref
-ms.openlocfilehash: f2b78b35db6306c82e389955c4824875bcf25334
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 6318890dd6f0259d8d6a7675380684a129c14c8b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447227"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684683"
 ---
 # <a name="getresolutionscope-method"></a>Метод GetResolutionScope
+
 Извлекает область заданного типа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetResolutionScope(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
@@ -49,12 +51,14 @@ HRESULT GetResolutionScope(
  Получает ссылку на сборку или модуль.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

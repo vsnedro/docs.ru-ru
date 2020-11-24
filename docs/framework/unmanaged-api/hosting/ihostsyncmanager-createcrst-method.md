@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ac278cc8-2540-4a6c-b5c6-b90c3970b4f4
 topic_type:
 - apiref
-ms.openlocfilehash: 3566907544c72da2735e155d9088fe09fea4a728
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 27861a9258916f4c188d981c44833e5be4c507f2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803479"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95682888"
 ---
 # <a name="ihostsyncmanagercreatecrst-method"></a>Метод IHostSyncManager::CreateCrst
+
 Создает объект критической секции для синхронизации.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,14 +35,15 @@ HRESULT CreateCrst (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppCrst`  
  заполняет Указатель на адрес экземпляра [IHostCrst](ihostcrst-interface.md) , реализуемого узлом, или значение null, если не удалось создать критический раздел.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`CreateCrst`успешно возвращено.|  
+|S_OK|`CreateCrst` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -49,23 +51,25 @@ HRESULT CreateCrst (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной критической секции.|  
   
-## <a name="remarks"></a>Замечания  
- Объекты критических секций обеспечивают синхронизацию, аналогичную той, которая предоставляется объектом Mutex, за исключением того, что критические разделы могут использоваться только потоками одного процесса. `CreateCrst`отражает функцию Win32 `InitializeCriticalSection` .  
+## <a name="remarks"></a>Комментарии  
+
+ Объекты критических секций обеспечивают синхронизацию, аналогичную той, которая предоставляется объектом Mutex, за исключением того, что критические разделы могут использоваться только потоками одного процесса. `CreateCrst` отражает функцию Win32 `InitializeCriticalSection` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostCrst](ihostcrst-interface.md)
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)
 - [Интерфейс IHostSemaphore](ihostsemaphore-interface.md)
-- [Mutexes](../../../standard/threading/mutexes.md)
+- [Мьютексы](../../../standard/threading/mutexes.md)
 - [Классы Semaphore и SemaphoreSlim](../../../standard/threading/semaphore-and-semaphoreslim.md)

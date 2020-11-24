@@ -2,14 +2,15 @@
 title: Метод ICorDebugAppDomain4::GetObjectForCCW
 ms.date: 03/30/2017
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33
-ms.openlocfilehash: a175a6b6c91c284348580e1d9dc9ef0c5f5fc5df
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: f3e64def16fb2817244ef7669ff4bb7fef0bd07c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895121"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684452"
 ---
 # <a name="icordebugappdomain4getobjectforccw-method"></a>Метод ICorDebugAppDomain4::GetObjectForCCW
+
 Возвращает управляемый объект из вызываемой оболочки COMr (CCW).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,6 +23,7 @@ HRESULT GetObjectForCCW(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ccwPointer`  
  [in] Указатель вызываемой оболочки COM (CCW).  
   
@@ -31,6 +33,7 @@ HRESULT GetObjectForCCW(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

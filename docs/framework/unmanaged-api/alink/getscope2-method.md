@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: 49435665-6f5a-4acd-9034-8c9244a04a63
 topic_type:
 - apiref
-ms.openlocfilehash: 40df78cdf99c2e0f53be9664f3f5c6386b6c6f93
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e8c6fd7dca13afe7504e447caca9a217c8136c27
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179394"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684529"
 ---
 # <a name="getscope2-method"></a>Метод GetScope2
-Получает область импорта.  
+
+Возвращает область импорта.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,23 +37,26 @@ HRESULT GetScope2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор целевой сборки.  
   
  `FileToken`  
- Идентификатор файла, из которого импортировать.  
+ Идентификатор файла, из которого необходимо выполнить импорт.  
   
  `dwScope`  
- Нулевой объем импорта.  
+ Отсчитываемая от нуля область для импорта.  
   
  `ppImportScope`  
- Получает указатель на интерфейс [интерфейсi IMetaDataImport2](../metadata/imetadataimport2-interface.md) для указанного объема.  
+ Получает указатель на интерфейс интерфейса [IMetaDataImport2](../metadata/imetadataimport2-interface.md) для указанной области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает S_OK, если метод успешно.  
+
+ Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
- Требуетa alink.h.  
+
+ Требуется ALink. h.  
   
 ## <a name="see-also"></a>См. также раздел
 

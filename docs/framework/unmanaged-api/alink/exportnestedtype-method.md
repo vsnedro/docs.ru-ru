@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: dec7df60-4d30-47c8-99db-72e0419e5f76
 topic_type:
 - apiref
-ms.openlocfilehash: 9ca2167e66ac3aa5bcc0e92ff357eed18d366c67
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 69c99e2facfcb9077c3fc4131186ba3882c7cef6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179416"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684841"
 ---
 # <a name="exportnestedtype-method"></a>Метод ExportNestedType
-Определяет вложенные типы как экспортируемые. [Метод ExportType](exporttype-method.md) также может экспортировать вложенные типы, но этот метод быстрее.  
+
+Указывает вложенные типы как экспортируемые. [Метод ExportType](exporttype-method.md) также может экспортировать вложенные типы, но этот метод выполняется быстрее.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,32 +41,35 @@ HRESULT ExportNestedType(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
- Идентификатор сборки для экспорта с.  
+ Идентификатор сборки, из которой производится экспорт.  
   
  `FileToken`  
- Файл токен или сборка файла, определяющий тип, который будет экспортироваться.  
+ Маркер файла или сборка файла, определяющая тип, который должен быть сделан экспортируемым.  
   
  `TypeToken`  
- Введите токен типа, который будет экспортироваться.  
+ Токен типа, который должен быть доступен для экспорта.  
   
  `ParentType`  
  Токен родительского типа.  
   
  `pszTypename`  
- Полностью квалифицированное название типа для экспорта.  
+ Полное имя типа для экспорта.  
   
  `dwFlags`  
- `ComType`флаги, `tdPublic` `tdNested`такие как или . Это значение может быть передано [методу DefineExportedType.](../metadata/imetadataassemblyemit-defineexportedtype-method.md)  
+ `ComType` Флаги, такие как `tdPublic` или `tdNested` . Это значение может быть передано [методу дефиникспортедтипе](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
  `pType`  
  Получает токен для экспортируемого типа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает S_OK, если метод успешно.  
+
+ Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
- Требуетa alink.h  
+
+ Требуется ALink. h  
   
 ## <a name="see-also"></a>См. также раздел
 

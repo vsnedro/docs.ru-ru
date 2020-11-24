@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
 topic_type:
 - apiref
-ms.openlocfilehash: 6a5b3f1e9bf1444feb73949ef7133fbd9ae35134
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 445c833d10631341ef7ad579eaff8ddd96be3428
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446475"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95684854"
 ---
 # <a name="enumcustomattributes-method"></a>Метод EnumCustomAttributes
+
 Извлекает настраиваемые атрибуты уровня сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,28 +39,31 @@ HRESULT EnumCustomAttributes(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hEnum`  
  Маркер перечислителя.  
   
  `tkType`  
- Тип атрибутов для перечисления. Используйте `mdTokenNill` для всех атрибутов.  
+ Тип атрибутов для перечисления. Используется `mdTokenNill` для всех атрибутов.  
   
  `rCustomValues`  
  Получает маркеры настраиваемых атрибутов.  
   
  `cMax`  
- Задает размер массива `rCustomValues`.  
+ Задает размер `rCustomValues` массива.  
   
  `pcCustomValues`  
  При необходимости получает число значений токена.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

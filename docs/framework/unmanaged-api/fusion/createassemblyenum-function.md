@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3
 topic_type:
 - apiref
-ms.openlocfilehash: 0e54027806cef07fad4740c3bf5226fd26c72570
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b7e3696121475885f5061bd96eb6905d7ccae734
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108781"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683177"
 ---
 # <a name="createassemblyenum-function"></a>Функция CreateAssemblyEnum
+
 Возвращает указатель на экземпляр [IAssemblyEnum](iassemblyenum-interface.md) , который может перечислить объекты в сборке с указанным [IAssemblyName](iassemblyname-interface.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,34 +40,37 @@ HRESULT CreateAssemblyEnum (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pEnum`  
- заполняет Указатель на место в памяти, содержащее запрошенный указатель `IAssemblyEnum`.  
+ заполняет Указатель на место в памяти, содержащее запрошенный `IAssemblyEnum` указатель.  
   
  `pUnkReserved`  
  окне Зарезервировано для будущего расширения. `pUnkReserved` должен быть пустой ссылкой.  
   
  `pName`  
- окне `IAssemblyName` запрошенной сборки. Это имя используется для фильтрации перечисления. Для перечисления всех сборок в глобальном кэше сборок может быть задано значение null.  
+ окне Объект `IAssemblyName` запрошенной сборки. Это имя используется для фильтрации перечисления. Для перечисления всех сборок в глобальном кэше сборок может быть задано значение null.  
   
  `dwFlags`  
- окне Флаги для изменения поведения перечислителя. Этот параметр содержит ровно один бит из перечисления [ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md) .  
+ окне Флаги для изменения поведения перечислителя. Этот параметр содержит ровно один бит от перечисления [ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md) .  
   
  `pvReserved`  
  окне Зарезервировано для будущего расширения. `pvReserved` должен быть пустой ссылкой.  
   
-## <a name="remarks"></a>Заметки  
- Параметр `dwFlags` содержит ровно один бит из перечисления `ASM_CACHE_FLAGS`.  
+## <a name="remarks"></a>Комментарии  
+
+ `dwFlags`Параметр содержит ровно один бит из `ASM_CACHE_FLAGS` перечисления.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyEnum](iassemblyenum-interface.md)
 - [Интерфейс IAssemblyName](iassemblyname-interface.md)
