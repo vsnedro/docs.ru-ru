@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
 topic_type:
 - apiref
-ms.openlocfilehash: a0f5316900dedc6c8983f9e670f60767ed783a40
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2d6ca18ce48f69d8c94b465efac2b9fe0e10f070
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493998"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685309"
 ---
-# <a name="stacksnapshotcallback-function"></a><span data-ttu-id="72a3a-102">Функция StackSnapshotCallback</span><span class="sxs-lookup"><span data-stu-id="72a3a-102">StackSnapshotCallback Function</span></span>
-<span data-ttu-id="72a3a-103">Предоставляет профилировщику сведения о каждом управляемом кадре и каждом запуске неуправляемых кадров в стеке во время прохода стека, который инициируется методом [ICorProfilerInfo2::D остаккснапшот](icorprofilerinfo2-dostacksnapshot-method.md) .</span><span class="sxs-lookup"><span data-stu-id="72a3a-103">Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.</span></span>  
+# <a name="stacksnapshotcallback-function"></a><span data-ttu-id="7f2b7-102">Функция StackSnapshotCallback</span><span class="sxs-lookup"><span data-stu-id="7f2b7-102">StackSnapshotCallback Function</span></span>
+
+<span data-ttu-id="7f2b7-103">Предоставляет профилировщику сведения о каждом управляемом кадре и каждом запуске неуправляемых кадров в стеке во время прохода стека, который инициируется методом [ICorProfilerInfo2::D остаккснапшот](icorprofilerinfo2-dostacksnapshot-method.md) .</span><span class="sxs-lookup"><span data-stu-id="7f2b7-103">Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="72a3a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="72a3a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="7f2b7-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7f2b7-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT __stdcall StackSnapshotCallback (  
@@ -37,42 +38,45 @@ HRESULT __stdcall StackSnapshotCallback (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="72a3a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="72a3a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="7f2b7-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="7f2b7-105">Parameters</span></span>  
+
  `funcId`  
- <span data-ttu-id="72a3a-106">окне Если это значение равно нулю, этот обратный вызов предназначен для запуска неуправляемых кадров; в противном случае это идентификатор управляемой функции, и этот обратный вызов предназначен для управляемого фрейма.</span><span class="sxs-lookup"><span data-stu-id="72a3a-106">[in] If this value is zero, this callback is for a run of unmanaged frames; otherwise, it is the identifier of a managed function and this callback is for a managed frame.</span></span>  
+ <span data-ttu-id="7f2b7-106">окне Если это значение равно нулю, этот обратный вызов предназначен для запуска неуправляемых кадров; в противном случае это идентификатор управляемой функции, и этот обратный вызов предназначен для управляемого фрейма.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-106">[in] If this value is zero, this callback is for a run of unmanaged frames; otherwise, it is the identifier of a managed function and this callback is for a managed frame.</span></span>  
   
  `ip`  
- <span data-ttu-id="72a3a-107">окне Значение указателя инструкций машинного кода в кадре.</span><span class="sxs-lookup"><span data-stu-id="72a3a-107">[in] The value of the native code instruction pointer in the frame.</span></span>  
+ <span data-ttu-id="7f2b7-107">окне Значение указателя инструкций машинного кода в кадре.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-107">[in] The value of the native code instruction pointer in the frame.</span></span>  
   
  `frameInfo`  
- <span data-ttu-id="72a3a-108">окне `COR_PRF_FRAME_INFO`Значение, которое ссылается на сведения о кадре стека.</span><span class="sxs-lookup"><span data-stu-id="72a3a-108">[in] A `COR_PRF_FRAME_INFO` value that references information about the stack frame.</span></span> <span data-ttu-id="72a3a-109">Это значение допустимо для использования только во время этого обратного вызова.</span><span class="sxs-lookup"><span data-stu-id="72a3a-109">This value is valid for use only during this callback.</span></span>  
+ <span data-ttu-id="7f2b7-108">окне `COR_PRF_FRAME_INFO` Значение, которое ссылается на сведения о кадре стека.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-108">[in] A `COR_PRF_FRAME_INFO` value that references information about the stack frame.</span></span> <span data-ttu-id="7f2b7-109">Это значение допустимо для использования только во время этого обратного вызова.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-109">This value is valid for use only during this callback.</span></span>  
   
  `contextSize`  
- <span data-ttu-id="72a3a-110">окне Размер `CONTEXT` структуры, на которую ссылается `context` параметр.</span><span class="sxs-lookup"><span data-stu-id="72a3a-110">[in] The size of the `CONTEXT` structure, which is referenced by the `context` parameter.</span></span>  
+ <span data-ttu-id="7f2b7-110">окне Размер `CONTEXT` структуры, на которую ссылается `context` параметр.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-110">[in] The size of the `CONTEXT` structure, which is referenced by the `context` parameter.</span></span>  
   
  `context`  
- <span data-ttu-id="72a3a-111">окне Указатель на `CONTEXT` структуру Win32, которая представляет состояние ЦП для данного кадра.</span><span class="sxs-lookup"><span data-stu-id="72a3a-111">[in] A pointer to a Win32 `CONTEXT` structure that represents the state of the CPU for this frame.</span></span>  
+ <span data-ttu-id="7f2b7-111">окне Указатель на `CONTEXT` структуру Win32, которая представляет состояние ЦП для данного кадра.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-111">[in] A pointer to a Win32 `CONTEXT` structure that represents the state of the CPU for this frame.</span></span>  
   
- <span data-ttu-id="72a3a-112">`context`Параметр допустим только в том случае, если был передан флаг COR_PRF_SNAPSHOT_CONTEXT `ICorProfilerInfo2::DoStackSnapshot` .</span><span class="sxs-lookup"><span data-stu-id="72a3a-112">The `context` parameter is valid only if the COR_PRF_SNAPSHOT_CONTEXT flag was passed in `ICorProfilerInfo2::DoStackSnapshot`.</span></span>  
+ <span data-ttu-id="7f2b7-112">`context`Параметр допустим только в том случае, если был передан флаг COR_PRF_SNAPSHOT_CONTEXT `ICorProfilerInfo2::DoStackSnapshot` .</span><span class="sxs-lookup"><span data-stu-id="7f2b7-112">The `context` parameter is valid only if the COR_PRF_SNAPSHOT_CONTEXT flag was passed in `ICorProfilerInfo2::DoStackSnapshot`.</span></span>  
   
  `clientData`  
- <span data-ttu-id="72a3a-113">окне Указатель на данные клиента, которые передаются непосредственно через `ICorProfilerInfo2::DoStackSnapshot` .</span><span class="sxs-lookup"><span data-stu-id="72a3a-113">[in] A pointer to the client data, which is passed straight through from `ICorProfilerInfo2::DoStackSnapshot`.</span></span>  
+ <span data-ttu-id="7f2b7-113">окне Указатель на данные клиента, которые передаются непосредственно через `ICorProfilerInfo2::DoStackSnapshot` .</span><span class="sxs-lookup"><span data-stu-id="7f2b7-113">[in] A pointer to the client data, which is passed straight through from `ICorProfilerInfo2::DoStackSnapshot`.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="72a3a-114">Примечания</span><span class="sxs-lookup"><span data-stu-id="72a3a-114">Remarks</span></span>  
- <span data-ttu-id="72a3a-115">`StackSnapshotCallback`Функция реализуется модулем записи профилировщика.</span><span class="sxs-lookup"><span data-stu-id="72a3a-115">The `StackSnapshotCallback` function is implemented by the profiler writer.</span></span> <span data-ttu-id="72a3a-116">Необходимо ограничить сложность работы, выполненной в `StackSnapshotCallback` .</span><span class="sxs-lookup"><span data-stu-id="72a3a-116">You must limit the complexity of work done in `StackSnapshotCallback`.</span></span> <span data-ttu-id="72a3a-117">Например, при использовании `ICorProfilerInfo2::DoStackSnapshot` в асинхронном режиме целевой поток может удерживать блокировки.</span><span class="sxs-lookup"><span data-stu-id="72a3a-117">For example, when using `ICorProfilerInfo2::DoStackSnapshot` in an asynchronous manner, the target thread may be holding locks.</span></span> <span data-ttu-id="72a3a-118">Если код внутри `StackSnapshotCallback` требует одних и тех же блокировок, может возникнуть взаимоблокировка.</span><span class="sxs-lookup"><span data-stu-id="72a3a-118">If code within `StackSnapshotCallback` requires the same locks, a deadlock could ensue.</span></span>  
-  
- <span data-ttu-id="72a3a-119">`ICorProfilerInfo2::DoStackSnapshot`Метод вызывает `StackSnapshotCallback` функцию один раз для каждого управляемого кадра или один раз для каждого запуска неуправляемых кадров.</span><span class="sxs-lookup"><span data-stu-id="72a3a-119">The `ICorProfilerInfo2::DoStackSnapshot` method calls the `StackSnapshotCallback` function once per managed frame or once per run of unmanaged frames.</span></span> <span data-ttu-id="72a3a-120">Если `StackSnapshotCallback` вызывается для запуска неуправляемых кадров, профилировщик может использовать контекст Register (на который ссылается `context` параметр) для выполнения собственного анализа неуправляемого стека.</span><span class="sxs-lookup"><span data-stu-id="72a3a-120">If `StackSnapshotCallback` is called for a run of unmanaged frames, the profiler may use the register context (referenced by the `context` parameter) to perform its own unmanaged stack walk.</span></span> <span data-ttu-id="72a3a-121">В этом случае `CONTEXT` Структура Win32 представляет состояние ЦП для последнего отправленного кадра в рамках выполнения неуправляемых кадров.</span><span class="sxs-lookup"><span data-stu-id="72a3a-121">In this case, the Win32 `CONTEXT` structure represents the CPU state for the most recently pushed frame within the run of unmanaged frames.</span></span> <span data-ttu-id="72a3a-122">Несмотря на то `CONTEXT` , что структура Win32 включает значения для всех регистров, следует полагаться только на значения регистра указателя стека, регистра указателя кадра, регистра указателя инструкций и неизменяемых (то есть сохраненных) целочисленных регистров.</span><span class="sxs-lookup"><span data-stu-id="72a3a-122">Although the Win32 `CONTEXT` structure includes values for all registers, you should rely only on the values of the stack pointer register, frame pointer register, instruction pointer register, and the nonvolatile (that is, preserved) integer registers.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="72a3a-123">Требования</span><span class="sxs-lookup"><span data-stu-id="72a3a-123">Requirements</span></span>  
- <span data-ttu-id="72a3a-124">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="72a3a-124">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="72a3a-125">**Заголовок:** CorProf. idl</span><span class="sxs-lookup"><span data-stu-id="72a3a-125">**Header:** CorProf.idl</span></span>  
-  
- <span data-ttu-id="72a3a-126">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="72a3a-126">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="72a3a-127">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="72a3a-127">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="72a3a-128">См. также</span><span class="sxs-lookup"><span data-stu-id="72a3a-128">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="7f2b7-114">Комментарии</span><span class="sxs-lookup"><span data-stu-id="7f2b7-114">Remarks</span></span>  
 
-- [<span data-ttu-id="72a3a-129">Метод DoStackSnapshot</span><span class="sxs-lookup"><span data-stu-id="72a3a-129">DoStackSnapshot Method</span></span>](icorprofilerinfo2-dostacksnapshot-method.md)
-- [<span data-ttu-id="72a3a-130">Глобальные статические функции профилирования</span><span class="sxs-lookup"><span data-stu-id="72a3a-130">Profiling Global Static Functions</span></span>](profiling-global-static-functions.md)
+ <span data-ttu-id="7f2b7-115">`StackSnapshotCallback`Функция реализуется модулем записи профилировщика.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-115">The `StackSnapshotCallback` function is implemented by the profiler writer.</span></span> <span data-ttu-id="7f2b7-116">Необходимо ограничить сложность работы, выполненной в `StackSnapshotCallback` .</span><span class="sxs-lookup"><span data-stu-id="7f2b7-116">You must limit the complexity of work done in `StackSnapshotCallback`.</span></span> <span data-ttu-id="7f2b7-117">Например, при использовании `ICorProfilerInfo2::DoStackSnapshot` в асинхронном режиме целевой поток может удерживать блокировки.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-117">For example, when using `ICorProfilerInfo2::DoStackSnapshot` in an asynchronous manner, the target thread may be holding locks.</span></span> <span data-ttu-id="7f2b7-118">Если код внутри `StackSnapshotCallback` требует одних и тех же блокировок, может возникнуть взаимоблокировка.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-118">If code within `StackSnapshotCallback` requires the same locks, a deadlock could ensue.</span></span>  
+  
+ <span data-ttu-id="7f2b7-119">`ICorProfilerInfo2::DoStackSnapshot`Метод вызывает `StackSnapshotCallback` функцию один раз для каждого управляемого кадра или один раз для каждого запуска неуправляемых кадров.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-119">The `ICorProfilerInfo2::DoStackSnapshot` method calls the `StackSnapshotCallback` function once per managed frame or once per run of unmanaged frames.</span></span> <span data-ttu-id="7f2b7-120">Если `StackSnapshotCallback` вызывается для запуска неуправляемых кадров, профилировщик может использовать контекст Register (на который ссылается `context` параметр) для выполнения собственного анализа неуправляемого стека.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-120">If `StackSnapshotCallback` is called for a run of unmanaged frames, the profiler may use the register context (referenced by the `context` parameter) to perform its own unmanaged stack walk.</span></span> <span data-ttu-id="7f2b7-121">В этом случае `CONTEXT` Структура Win32 представляет состояние ЦП для последнего отправленного кадра в рамках выполнения неуправляемых кадров.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-121">In this case, the Win32 `CONTEXT` structure represents the CPU state for the most recently pushed frame within the run of unmanaged frames.</span></span> <span data-ttu-id="7f2b7-122">Несмотря на то `CONTEXT` , что структура Win32 включает значения для всех регистров, следует полагаться только на значения регистра указателя стека, регистра указателя кадра, регистра указателя инструкций и неизменяемых (то есть сохраненных) целочисленных регистров.</span><span class="sxs-lookup"><span data-stu-id="7f2b7-122">Although the Win32 `CONTEXT` structure includes values for all registers, you should rely only on the values of the stack pointer register, frame pointer register, instruction pointer register, and the nonvolatile (that is, preserved) integer registers.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="7f2b7-123">Требования</span><span class="sxs-lookup"><span data-stu-id="7f2b7-123">Requirements</span></span>  
+
+ <span data-ttu-id="7f2b7-124">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7f2b7-124">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="7f2b7-125">**Заголовок:** CorProf. idl</span><span class="sxs-lookup"><span data-stu-id="7f2b7-125">**Header:** CorProf.idl</span></span>  
+  
+ <span data-ttu-id="7f2b7-126">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="7f2b7-126">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="7f2b7-127">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7f2b7-127">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7f2b7-128">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="7f2b7-128">See also</span></span>
+
+- [<span data-ttu-id="7f2b7-129">Метод DoStackSnapshot</span><span class="sxs-lookup"><span data-stu-id="7f2b7-129">DoStackSnapshot Method</span></span>](icorprofilerinfo2-dostacksnapshot-method.md)
+- [<span data-ttu-id="7f2b7-130">Глобальные статические функции профилирования</span><span class="sxs-lookup"><span data-stu-id="7f2b7-130">Profiling Global Static Functions</span></span>](profiling-global-static-functions.md)
