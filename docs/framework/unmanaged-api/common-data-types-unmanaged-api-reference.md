@@ -2,21 +2,22 @@
 title: Общие типы данных (справочник по неуправляемым интерфейсам API)
 ms.date: 03/30/2017
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb
-ms.openlocfilehash: 86f3886b96d0156ec2f0431369c7a54954cd4cad
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 5c00ff6d0947b5d847a9622dce02bd310491818c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132449"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673986"
 ---
 # <a name="common-data-types-unmanaged-api-reference"></a>Общие типы данных (справочник по неуправляемым интерфейсам API)
+
 В этом разделе перечислены простые типы данных, которые используются неуправляемыми API для платформы .NET Framework, определенными инструкциями C/C++ `typedef`. Эти типы данных, как правило, являются псевдонимами примитивных типов данных языка программирования C/C++. Как правило, значения этих типов данных непрозрачны, т. е. возвращаются конкретной функцией или методом таким образом, что могут быть переданы в другие функции или методы без изменений.  
   
 |Тип данных|Определение|Определен в|Описание|  
 |---------------|----------------|----------------|-----------------|  
 |AppDomainID|`typedef UINT_PTR AppDomainID;`|corprof.h|Идентификатор домена приложения.|  
 |AssemblyID|`typedef UINT_PTR AssemblyID;`|corprof.h|Идентификатор сборки.|  
-|ClassID|`typedef UINT_PTR ClassID;`|corprof.h|Идентификатор управляемого класса.|  
+|ClassID:|`typedef UINT_PTR ClassID;`|corprof.h|Идентификатор управляемого класса.|  
 |CLRDATA_ADDRESS|`typedef ULONG64 CLRDATA_ADDRESS;`|клрдата. h|64-разрядный адрес памяти.|
 |CLRDATA_ENUM|`typedef ULONG64 CLRDATA_ADDRESS;`|Недоступно|64-разрядный адрес памяти.|
 |CONNID|`typedef DWORD CONNID;`|cordebug.h, mscoree.h|Идентификатор подключения для потока, подключенного к экземпляру Microsoft SQL Server.|  
@@ -39,6 +40,6 @@ ms.locfileid: "73132449"
 |TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|Идентификатор экземпляра [ICLRTask](./hosting/iclrtask-interface.md) .|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|Идентификатор управляемого потока.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по неуправляемым API](index.md)

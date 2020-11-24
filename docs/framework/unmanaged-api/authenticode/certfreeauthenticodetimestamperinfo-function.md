@@ -8,14 +8,15 @@ api_location:
 api_type:
 - DLLExport
 ms.assetid: 3eb14c49-68c2-4516-ac89-e5bd7473831c
-ms.openlocfilehash: 4f0806e0273b111e3398fb8f2884231b96cf1116
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 1ef71b14faf66c179030dff2a7d953e27463c1f7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73099772"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674168"
 ---
 # <a name="certfreeauthenticodetimestamperinfo-function"></a>Функция CertFreeAuthenticodeTimestamperInfo
+
 Освобождает ресурсы, выделенные для структуры [AXL_AUTHENTICODE_TIMESTAMPER_INFO](axl-authenticode-timestamper-info-structure.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -27,12 +28,14 @@ HRESULT CertFreeAuthenticodeTimestamperInfo (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pTimestamperInfo`  
  [в, из] Информация об отметке времени выпуска. См. структуру [AXL_AUTHENTICODE_TIMESTAMPER_INFO](axl-authenticode-timestamper-info-structure.md) .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  `S_OK`, если функция выполняется успешно. В противном случае возвращается код ошибки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Authenticode](index.md)

@@ -14,34 +14,36 @@ helpviewer_keywords:
 ms.assetid: e72f2550-bdec-4a20-a2f4-2e14847266c1
 topic_type:
 - apiref
-ms.openlocfilehash: 5114f74e80da925c7a153b9e481c54067152eaec
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 1e6c42d8e74d2d3e7925c657c67832f662416e64
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108203"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673877"
 ---
 # <a name="idefinitionappid-interface"></a>Интерфейс IDefinitionAppId
+
 Представляет уникальный идентификатор для кода, определяющего приложение в текущей области.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|`IDefinitionAppId::get_Codebase`|Возвращает отформатированную строку, которая представляет код в этом `IDefinitionAppId`ном объекте.|  
+|`IDefinitionAppId::get_Codebase`|Возвращает отформатированную строку, которая представляет код в этом `IDefinitionAppId` объекте.|  
 |`IDefinitionAppId::put_Codebase`|Задает код этого `IDefinitionAppId` объекта в указанном форматированном строковом значении.|  
 |`IDefinitionAppId::EnumAppPath`|Возвращает указатель интерфейса на объект [иенумдефинитионидентити](ienumdefinitionidentity-interface.md) , содержащий сборки в текущем пути приложения.|  
 |`IDefinitionAppId::SetAppPath`|Задает путь приложения для сборки в текущей области к значению, на которое ссылается указанный объект [идефинитионидентити](idefinitionidentity-interface.md) .|  
-|`IDefinitionAppId::get_SubscriptionId`|Возвращает указатель на строковое представление идентификатора маркера для подписки на этот объект `IDefinitionAppId`.|  
-|`IDefinitionAppId::put_SubscriptionId`|Задает идентификатор маркера для подписки на этот объект `IDefinitionAppId` в указанное строковое значение.|  
+|`IDefinitionAppId::get_SubscriptionId`|Возвращает указатель на строковое представление идентификатора маркера для подписки на этот `IDefinitionAppId` объект.|  
+|`IDefinitionAppId::put_SubscriptionId`|Устанавливает идентификатор маркера для подписки на этот `IDefinitionAppId` объект в указанном строковом значении.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 036db5e7-8211-4645-9a34-03d1a89be955
 topic_type:
 - apiref
-ms.openlocfilehash: 24fe8fd65b36e133b767cd07c8602aa1ea7b9dfc
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 36021333c1efb61e23c16782d8ad721de62c2643
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493114"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674345"
 ---
 # <a name="imetadataemit2getdeltasavesize-method"></a>Метод IMetaDataEmit2::GetDeltaSaveSize
+
 Возвращает значение, указывающее на изменение размера метаданных, полученное в результате текущего сеанса "изменить и продолжить".  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetDeltaSaveSize (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `fSave`  
  окне Одно из значений [корсавесизе](corsavesize-enumeration.md) , указывающее требуемый уровень точности. Для .NET Framework версии 2,0 этот параметр игнорируется.  
   
@@ -42,15 +44,16 @@ HRESULT GetDeltaSaveSize (
  заполняет Изменение размера метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

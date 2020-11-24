@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 72fa83a1-8997-41d7-b355-ab177a24a303
 topic_type:
 - apiref
-ms.openlocfilehash: 08dc0f0891d960cb7b402b30455e606aaff7bcea
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 84c53f0666d0e04b898e28c1d8e146eab566ca1b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616012"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674701"
 ---
 # <a name="iclrappdomainresourcemonitor-interface"></a>Интерфейс ICLRAppDomainResourceMonitor
+
 Предоставляет методы для проверки использования памяти и ЦП домена приложения.  
   
 ## <a name="methods"></a>Методы  
@@ -33,6 +34,7 @@ ms.locfileid: "83616012"
 |[Метод GetCurrentCpuTime](iclrappdomainresourcemonitor-getcurrentcputime-method.md)|Возвращает общее время процессора, которое использовалось всеми потоками во время выполнения в текущем домене приложения, так как был создан домен приложения.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  `ICLRAppDomainResourceMonitor`Интерфейс предоставляет функциональные возможности, аналогичные следующим управляемым свойствам:  
   
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
@@ -46,17 +48,18 @@ ms.locfileid: "83616012"
 - <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType>  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
-- [\<Элемент> Аппдомаинресаурцемониторинг](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
+- [\<appDomainResourceMonitoring> Элемент](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
 - [Мониторинг ресурсов домена приложения](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
 - [Интерфейсы размещения](hosting-interfaces.md)
 - [Размещение](index.md)

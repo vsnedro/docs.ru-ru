@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type:
 - apiref
-ms.openlocfilehash: 3b2322f708afed08172f87e843c225aa9c60d9d3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 1b3ebcabc66ee7ca29245bb02d958be311bc65fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616610"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673700"
 ---
 # <a name="_cordllmain-function"></a>\_Функция Кордллмаин
 
@@ -36,6 +36,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hInst`  
  окне Экземпляр загруженного модуля.  
   
@@ -46,9 +47,11 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
  [in] Не используется.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает значение `true` для успешного выполнения и `false` при возникновении ошибки.  
   
 ## <a name="remarks"></a>Комментарии  
+
  Эта функция вызывается загрузчиком операционной системы для сборок DLL. Для исполняемых сборок загрузчик вызывает функцию [ \_ корексемаин](corexemain-function.md) .  
   
  Загрузчик операционной системы вызывает этот метод независимо от точки входа, указанной в файле DLL.  
@@ -63,10 +66,10 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

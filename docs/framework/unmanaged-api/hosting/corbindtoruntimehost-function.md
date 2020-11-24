@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type:
 - apiref
-ms.openlocfilehash: 9d1c7f4f5b881f7f55539602c152b557a7950472
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 7ba35823ccb670ad0201d1950687dc83cc9ba64a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504411"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673752"
 ---
 # <a name="corbindtoruntimehost-function"></a>Функция CorBindToRuntimeHost
+
 Позволяет узлам загружать в процесс указанную версию среды CLR.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -42,6 +43,7 @@ HRESULT CorBindToRuntimeHost (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwszVersion`  
  окне Строка, описывающая версию среды CLR, которую требуется загрузить.  
   
@@ -72,21 +74,22 @@ HRESULT CorBindToRuntimeHost (
  окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
- окне `IID`Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
+ окне `IID` Запрашиваемый интерфейс. Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
   
  `ppv`  
  заполняет Указатель интерфейса на версию загруженной среды выполнения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. idl  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)

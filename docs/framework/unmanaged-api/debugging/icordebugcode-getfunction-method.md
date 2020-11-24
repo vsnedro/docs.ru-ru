@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c568b737-fdb2-4816-accd-051f5ab760f1
 topic_type:
 - apiref
-ms.openlocfilehash: 9f785eafa8925324e3bd269ca08a3b1367b74c44
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 99972c5840645c95b7b349daf2d8ea7173d0cc03
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893591"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674732"
 ---
 # <a name="icordebugcodegetfunction-method"></a>Метод ICorDebugCode::GetFunction
+
 Возвращает "ICorDebugFunction", связанный с этим "ICorDebugCode".  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetFunction (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppFunction`  
  заполняет Указатель на адрес функции.  
   
-## <a name="remarks"></a>Remarks  
- `ICorDebugCode`и `ICorDebugFunction` поддерживают связь «один к одному».  
+## <a name="remarks"></a>Комментарии  
+
+ `ICorDebugCode` и `ICorDebugFunction` поддерживают связь «один к одному».  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

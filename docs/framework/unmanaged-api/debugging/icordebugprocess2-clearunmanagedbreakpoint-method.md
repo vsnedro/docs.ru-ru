@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 12ed0fff-7f0e-4d7a-bb70-b3376371f36c
 topic_type:
 - apiref
-ms.openlocfilehash: 2b228383c3b393fe43f60d39e59cca37af36233f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a713fd006f1e9ad8fe7109651c2cda5025da3566
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212496"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673947"
 ---
 # <a name="icordebugprocess2clearunmanagedbreakpoint-method"></a>Метод ICorDebugProcess2::ClearUnmanagedBreakpoint
+
 Удаляет ранее установленную точку останова по указанному адресу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT ClearUnmanagedBreakpoint (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `address`  
- окне `CORDB_ADDRESS`Значение типа, указывающее адрес, по которому была задана точка останова.  
+ окне `CORDB_ADDRESS` Значение типа, указывающее адрес, по которому была задана точка останова.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Указанная точка останова была ранее задана предыдущим вызовом метода [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md).  
   
  `ClearUnmanagedBreakpoint`Метод может быть вызван во время выполнения отлаживаемого процесса.  
@@ -45,6 +48,7 @@ HRESULT ClearUnmanagedBreakpoint (
  `ClearUnmanagedBreakpoint`Метод возвращает код ошибки, если отладчик присоединен в режиме «только управляемый» или если в указанном адресе не существует точки останова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

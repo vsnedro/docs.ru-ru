@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
 topic_type:
 - apiref
-ms.openlocfilehash: e62f9fd6b8421ea131eff0e6b36523718589c921
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 28fdd5340aee0fcd9875dd983c8c7649b5491c04
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615834"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674714"
 ---
 # <a name="iclrcontrolsetappdomainmanagertype-method"></a>Метод ICLRControl::SetAppDomainManagerType
+
 Задает тип, производный от <xref:System.AppDomainManager> типа для диспетчеров доменов приложений.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SetAppDomainManagerType (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzAppDomainManagerAssembly`  
  окне Имя сборки, в которой реализован запрошенный тип, производный от <xref:System.AppDomainManager> .  
   
@@ -43,7 +45,7 @@ HRESULT SetAppDomainManagerType (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -53,15 +55,16 @@ HRESULT SetAppDomainManagerType (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс IHostControl](ihostcontrol-interface.md)

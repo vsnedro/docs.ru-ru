@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7137e3d1-1dad-48d8-8c37-16ac816534d3
 topic_type:
 - apiref
-ms.openlocfilehash: 59a497d203d241bbc6e0f884007d4a401c112073
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 20eac75a1f1d13b6a30267d56ff66024725e6f33
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893650"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674779"
 ---
 # <a name="icordebugcodegetcode-method"></a>Метод ICorDebugCode::GetCode
+
 Возвращает весь код для указанной функции, отформатированный для дизассемблирования. Этот метод не рекомендуется к использованию в .NET Framework версии 2,0. Вместо этого используйте [ICorDebugCode2:: жеткодечункс](icordebugcode2-getcodechunks-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT GetCode (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `startOffset`  
  окне Смещение начала функции.  
   
@@ -54,10 +56,12 @@ HRESULT GetCode (
  `pcBufferSize`  
  заполняет Число возвращаемых байтов.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если код функции делится на несколько блоков, они объединяются в порядке возрастания смещения в машинном коде. Границы инструкций не проверяются.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

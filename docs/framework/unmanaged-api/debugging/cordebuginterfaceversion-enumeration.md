@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90
 topic_type:
 - apiref
-ms.openlocfilehash: ae65c60440a90959006cd8db94dda479e80613d4
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 939400fcc40edd62532d459d6ed626dbdc4f41fc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795811"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675312"
 ---
 # <a name="cordebuginterfaceversion-enumeration"></a>Перечисление CorDebugInterfaceVersion
+
 Указывает интерфейс, версию платформы .NET Framework или версию платформы .NET Framework, в которой был представлен интерфейс.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -130,17 +131,18 @@ typedef enum CorDebugInterfaceVersion {
 } CorDebugInterfaceVersion;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
+
  В следующей таблице каждое значение перечисления сопоставляется с соответствующим интерфейсом. Кроме того, в таблице указана первая версия платформы .NET Framework, в которой поддерживался интерфейс.  
   
-|Участник|Что определяет|Версия платформы .NET Framework|  
+|Член|Что определяет|Версия платформы .NET Framework|  
 |------------|---------------|----------------------------|  
 |`CorDebugInvalidVersion`|Недопустимая версия платформы .NET Framework.|-|  
 |`CorDebugVersion_1_0`|Версия платформы .NET Framework (включая все пакеты обновления) — 1.0.|1.0|  
 |`CorDebugVersion_1_1`|Версия платформы .NET Framework (включая все пакеты обновления) — 1.1.|1.1|  
 |`CorDebugVersion_2_0`|Версия платформы .NET Framework (включая все пакеты обновления) — 2.0.|2.0|  
 |`CorDebugVersion_4_0`|Версия платформы .NET Framework (включая все пакеты обновления) — 4.|4|  
-|`CorDebugVersion_4_5`|Версия платформы .NET Framework (включая все пакеты обновления) — 4.5.|4.5.|  
+|`CorDebugVersion_4_5`|Версия платформы .NET Framework (включая все пакеты обновления) — 4.5.|4,5|  
 |`ver_ICorDebugManagedCallback`|[ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)|1.0|  
 |`ver_ICorDebugUnmanagedCallback`|[ICorDebugUnmanagedCallback](icordebugunmanagedcallback-interface.md)|1.0|  
 |`ver_ICorDebug`|[ICorDebug](icordebug-interface.md)|1.0|  
@@ -213,16 +215,18 @@ typedef enum CorDebugInterfaceVersion {
 |`ver_ICorDebugHeapValue3`|[Интерфейс ICorDebugHeapValue3](icordebugheapvalue3-interface.md)|4|  
 |`ver_ICorDebugBlockingObjectEnum`|[Интерфейс ICorDebugBlockingObjectEnum](icordebugblockingobjectenum-interface.md)|4|  
 |`ver_ICorDebugValue3`|[ICorDebugValue3](icordebugvalue3-interface.md)|4|  
-|`ver_ICorDebugComObjectValue`|[ICorDebugComObjectValue](icordebugcomobjectvalue-interface.md)|4.5.|  
-|`ver_ICorDebugAppDomain3`|[ICorDebugAppDomain3](icordebugappdomain3-interface.md)|4.5.|  
-|`ver_ICorDebugCode3`|[ICorDebugCode3](icordebugcode3-interface.md)|4.5.|  
-|`ver_ICorDebugILFrame3`|[ICorDebugILFrame3](icordebugilframe3-interface.md)|4.5.|  
+|`ver_ICorDebugComObjectValue`|[ICorDebugComObjectValue](icordebugcomobjectvalue-interface.md)|4,5|  
+|`ver_ICorDebugAppDomain3`|[ICorDebugAppDomain3](icordebugappdomain3-interface.md)|4,5|  
+|`ver_ICorDebugCode3`|[ICorDebugCode3](icordebugcode3-interface.md)|4,5|  
+|`ver_ICorDebugILFrame3`|[ICorDebugILFrame3](icordebugilframe3-interface.md)|4,5|  
 |`CorDebugLatestVersion`|Версия платформы .NET Framework (включая все пакеты обновления) — самая последняя.|-|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладчик может использовать `CorDebugInterfaceVersion` перечисление в функции [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) для указания самой высокой версии .NET Framework, поддерживаемой отладчиком.  
   
 ## <a name="interface-names"></a>Имена интерфейсов  
+
  Число в конце каждого имени интерфейсов в API отладки (например, "3" в `ICorDebugThread3`) обозначает версию интерфейса, а не платформы .NET Framework. Все имена интерфейсов в API отладки, кроме интерфейсов, появившихся в платформе .NET Framework версии 1, включают номера версий. Любые совпадения между номерами версий интерфейсов и номерами версий платформы .NET Framework являются случайными.  
   
 - Интерфейсы, представленные в платформе .NET Framework версии 1.0, не включают цифры, потому что все они имеют версию 1.  
@@ -233,9 +237,10 @@ typedef enum CorDebugInterfaceVersion {
   
 - Платформы .NET Framework версий 3.0 и 3.5 используют существующие интерфейсы платформы .NET Framework версии 2.0 и не вводят никаких новых интерфейсов.  
   
-- В .NET Framework 4 введены разные версии интерфейса. Например, и `ICorDebugThread3`, и `ICorDebugThread4` отображаются как третья и четвертая версии интерфейса `ICorDebugThread`. В .NET Framework 4 также введена первая версия `ICorDebugStackWalk` интерфейса и вторая версия `ICorDebugNativeFrame` интерфейса (`ICorDebugNativeFrame2`).  
+- В .NET Framework 4 введены разные версии интерфейса. Например, и `ICorDebugThread3`, и `ICorDebugThread4` отображаются как третья и четвертая версии интерфейса `ICorDebugThread`. В .NET Framework 4 также введена первая версия `ICorDebugStackWalk` интерфейса и вторая версия `ICorDebugNativeFrame` интерфейса ( `ICorDebugNativeFrame2` ).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
 topic_type:
 - apiref
-ms.openlocfilehash: 8b7dcdcc6d9d0106af1bb83ee591cff76239b416
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d319382b577844a804c3e4562676491a15de5f63
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504443"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95673791"
 ---
 # <a name="corbindtoruntimebycfg-function"></a>Функция CorBindToRuntimeByCfg
+
 Загружает среду CLR в процесс с использованием сведений о версии, считываемых из XML-файла.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -40,6 +41,7 @@ HRESULT CorBindToRuntimeByCfg (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCfgStream`  
  окне Указатель на `IStream` объект, считывающий XML-файл.  
   
@@ -53,24 +55,26 @@ HRESULT CorBindToRuntimeByCfg (
  окне Объект `CLSID` coclass, реализующий интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) или [ICLRRuntimeHost](iclrruntimehost-interface.md) . Поддерживаемые значения: CLSID_CorRuntimeHost или CLSID_CLRRuntimeHost.  
   
  `riid`  
- окне `IID`Либо `ICorRuntimeHost` интерфейса, либо `ICLRRuntimeHost` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
+ окне `IID` Либо `ICorRuntimeHost` интерфейса, либо `ICLRRuntimeHost` . Поддерживаемые значения: IID_ICorRuntimeHost или IID_ICLRRuntimeHost.  
   
  `ppv`  
  заполняет Указатель на адрес возвращенного интерфейса.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Формат XML-файла моделируется после стандартного файла конфигурации приложения. Дополнительные сведения о XML-файлах см. в разделе [Схема файла конфигурации](../../configure-apps/file-schema/index.md).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)

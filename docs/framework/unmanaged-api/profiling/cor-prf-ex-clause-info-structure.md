@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
 topic_type:
 - apiref
-ms.openlocfilehash: 5c764031f709eefe61022d0662f37bc5d3f3e281
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e8dd9f21803021975f4651ba3e6e5f4d3da0ea82
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501005"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675000"
 ---
 # <a name="cor_prf_ex_clause_info-structure"></a>Структура COR_PRF_EX_CLAUSE_INFO
+
 Хранит сведения об определенном экземпляре исключительного предложения и связанном с ним кадре.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,7 +36,7 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 } COR_PRF_EX_CLAUSE_INFO;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -44,7 +45,8 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 |`framePointer`|Указатель на логический кадр для обработчика предложения, например содержимое регистра x86 EBP.|  
 |`shadowStackPointer`|Указатель на теневой стек. Это значение является содержимым регистра BSP и применяется только к версии IA64.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  При получении уведомления об исключении можно использовать [ICorProfilerInfo2:: GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md) для получения сведений о собственном адресе и кадре для предложения исключения ( `catch` / `finally` /Filter), которое должно быть запущено или только что было запущено.  
   
  Выполнение предложения исключения включает следующие обратные вызовы из среды CLR:  
@@ -62,6 +64,7 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 - [ICorProfilerCallback:: Ексцептионсеарчфилтерлеаве](icorprofilercallback-exceptionsearchfilterleave-method.md)  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -70,6 +73,6 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Структуры профилирования](profiling-structures.md)
