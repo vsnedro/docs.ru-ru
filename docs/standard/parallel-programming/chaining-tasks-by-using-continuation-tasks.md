@@ -2,19 +2,18 @@
 title: Создание цепочки задач с помощью задач продолжения
 description: Сведения о создании цепочки задач с помощью задач продолжения в .NET. Задача продолжения — это асинхронная задача, вызываемая другой задачей.
 ms.date: 07/20/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - tasks, continuations
 ms.assetid: 0b45e9a2-de28-46ce-8212-1817280ed42d
-ms.openlocfilehash: d42d244e644bf3ee1f45b25a71d60bbb2ef8e590
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: c7afbc1bb22a1743aed8e4ebd0a06c4f3fb57e86
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063839"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830614"
 ---
 # <a name="chaining-tasks-using-continuation-tasks"></a>Создание цепочки задач с помощью задач продолжения
 

@@ -1,17 +1,16 @@
 ---
 title: Сравнение объектов с помощью XmlNameTable
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8d94e041-d340-4ddf-9a2c-d7319e3f4f86
-ms.openlocfilehash: 0dd68e8c9beadf26f858a4a5100e2824bbbd4a19
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1e47bee50f7fa51df82bb37ed3049765f8f360d2
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292037"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830081"
 ---
 # <a name="object-comparison-using-xmlnametable"></a>Сравнение объектов с помощью XmlNameTable
 При создании **XmlDocuments** создается таблица имен специально для этого документа. Когда XML загружается в документ или создаются новые элементы и атрибуты, все имена элементов и атрибутов помещаются в **XmlNameTable**. Также объект **XmlDocument** можно создать с помощью существующего объекта **NameTable** из другого документа. Если **XmlDocuments** создается с помощью конструктора, который принимает параметр **XmlNameTable**, этот документ получает доступ к именам узлов, пространствам имен и префиксам, хранящимся в объекте **XmlNameTable**. Независимо от того, насколько таблица имен загружена именами, после сохранения их в таблице эти имена можно быстро сравнить, используя сравнение объектов вместо сравнения строк. Еще вы можете добавлять строки в таблицу имен с помощью <xref:System.Xml.NameTable.Add%2A>. Следующий пример кода демонстрирует создание таблицы имен и добавление к ней строки **MyString**. После этого на основе этой таблицы создается объект **XmlDocument**, и к существующей таблице имен добавляются имена элементов и атрибутов из файла **Myfile.xml**.  

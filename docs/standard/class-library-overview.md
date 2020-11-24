@@ -2,7 +2,6 @@
 title: Обзор библиотеки классов .NET
 description: Дополнительные сведения о библиотеке классов .NET. Интерфейсы API .NET содержат классы, интерфейсы, делегаты и типы значений, которые обеспечивают доступ к функциям системы.
 ms.date: 02/08/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - classes [.NET], library overview
 - .NET, library overview
@@ -36,12 +35,12 @@ helpviewer_keywords:
 - integer value type
 - base types, class library
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
-ms.openlocfilehash: 95dcbea6e0b3f2cd91bd6955a11ede7c9731caca
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: 44a46db4fa7ebf6dd5802cc07e7d18744c72ad68
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687519"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831264"
 ---
 # <a name="net-class-library-overview"></a>Обзор библиотеки классов .NET
 
@@ -69,7 +68,7 @@ ms.locfileid: "92687519"
   
  Такая схема именования упрощает разработчикам библиотек задачу расширения .NET с целью создания иерархических групп типов и присвоения им согласованных между собой и понятных имен. Она также позволяет однозначно идентифицировать типы по их полным именам (то есть по пространству имен и имени типа), что предотвращает конфликты имен типов. Ожидается, при именовании пространств имен разработчики библиотек будут руководствоваться следующим соглашением:  
   
- *CompanyName*. *TechnologyName*  
+ *CompanyName*.*TechnologyName*  
   
  Например, пространство имен `Microsoft.Word` соответствует этому правилу.  
   

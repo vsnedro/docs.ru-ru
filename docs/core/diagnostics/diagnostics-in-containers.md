@@ -2,12 +2,12 @@
 title: Сбор диагностики в контейнерах
 description: Из этой статьи вы узнаете, как использовать средства диагностики .NET Core в контейнерах Docker.
 ms.date: 09/01/2020
-ms.openlocfilehash: e57f3696433bbf6f35b2e3e5d1e72ae8b1e3eeb3
-ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
+ms.openlocfilehash: cf4bbdf75e943f093a2202f91303a2eea7125487
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91450839"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94916213"
 ---
 # <a name="collect-diagnostics-in-containers"></a>Сбор диагностики в контейнерах
 
@@ -15,7 +15,7 @@ ms.locfileid: "91450839"
 
 ## <a name="using-net-core-cli-tools-in-a-container"></a>Использование средств .NET Core CLI в контейнере
 
-**Область применения средств: ✔**️ пакет SDK для .NET Core 3.0 и более поздних версий
+**Область применения средств: ✔** ️ пакет SDK для .NET Core 3.0 и более поздних версий
 
 Глобальные средства диагностики .NET Core CLI ([`dotnet-counters`](dotnet-counters.md), [`dotnet-dump`](dotnet-dump.md), [`dotnet-gcdump`](dotnet-gcdump.md), и [`dotnet-trace`](dotnet-trace.md)) предназначены для самых разных сред и должны работать непосредственно в контейнерах Docker. Поэтому эти средства предпочтительны при сборе диагностических сведений для сценариев работы с .NET Core 3.0 или более поздней версии (либо 3.1 или более поздней версии для `dotnet-gcdump`) в контейнерах.
 
@@ -23,17 +23,17 @@ ms.locfileid: "91450839"
 
 ```dockerfile
 # In build stage
-# Install desired .NET CLI diagnostics tools
-RUN dotnet tool install --tool-path /tools dotnet-trace
-RUN dotnet tool install --tool-path /tools dotnet-counters
-RUN dotnet tool install --tool-path /tools dotnet-dump
+# Install desired .NET CLI diagnostics tools
+RUN dotnet tool install --tool-path /tools dotnet-trace
+RUN dotnet tool install --tool-path /tools dotnet-counters
+RUN dotnet tool install --tool-path /tools dotnet-dump
 
 ...
 
 # In final stage
-# Copy diagnostics tools
-WORKDIR /tools
-COPY --from=build /tools .
+# Copy diagnostics tools
+WORKDIR /tools
+COPY --from=build /tools .
 ```
 
 В качестве альтернативы пакет SDK для .NET Core можно установить в контейнере, если это необходимо для установки средств CLI. Учитывайте, что при установке пакета SDK для .NET Core среда выполнения .NET Core будет переустановлена. Поэтому обязательно установите версию пакета SDK, соответствующую среде выполнения в контейнере.
@@ -47,9 +47,9 @@ COPY --from=build /tools .
 
 ## <a name="using-perfcollect-in-a-container"></a>Использование `PerfCollect` в контейнере
 
-**Область применения: ✔**️ .NET Core 2.1 и более поздних версий
+**Область применения: ✔** ️ .NET Core 2.1 и более поздних версий
 
-Скрипт [`PerfCollect`](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/linux-performance-tracing.md) используется для сбора трассировок производительности. Это рекомендуемое средство сбора трассировок при использовании версий, предшествующих .NET Core 3.0. При использовании `PerfCollect` в контейнере учитывайте следующие требования:
+Скрипт [`PerfCollect`](./trace-perfcollect-lttng.md) используется для сбора трассировок производительности. Это рекомендуемое средство сбора трассировок при использовании версий, предшествующих .NET Core 3.0. При использовании `PerfCollect` в контейнере учитывайте следующие требования:
 
 1. Для `PerfCollect` требуется [возможность `SYS_ADMIN`](https://man7.org/linux/man-pages/man7/capabilities.7.html) (чтобы запустить средство `perf`). Поэтому убедитесь, что контейнер [запущен с этой возможностью](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 2. Для `PerfCollect` требуется, чтобы некоторые переменные среды были установлены до начала профилирования приложения. Их можно задать либо в [Dockerfile](https://docs.docker.com/engine/reference/builder/#env), либо при [запуске контейнера](https://docs.docker.com/engine/reference/run/#env-environment-variables). Так как эти переменные не должны задаваться в обычных рабочих средах, как правило, они добавляются при запуске контейнера для профилирования. Две переменные, которые требуются PerfCollect:
@@ -66,7 +66,7 @@ COPY --from=build /tools .
 
 ## <a name="using-createdump-in-a-container"></a>Использование `createdump` в контейнере
 
-**Область применения: ✔**️ .NET Core 2.1 и более поздних версий
+**Область применения: ✔** ️ .NET Core 2.1 и более поздних версий
 
 Как альтернативу `dotnet-dump` можно использовать [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) для создания основных дампов в Linux, содержащих как нативные, так и управляемые данные. Средство `createdump` устанавливается вместе со средой выполнения .NET Core. Его можно найти рядом с libcoreclr.so (обычно в папке /usr/share/dotnet/shared/Microsoft.NETCore.App/[версия]). Это средство работает в контейнере так же, как и в неконтейнерных средах Linux. Но есть одно исключение: для работы средства требуется [возможность `SYS_PTRACE`](https://man7.org/linux/man-pages/man7/capabilities.7.html). Поэтому контейнер Docker нужно [запускать с этой возможностью](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 

@@ -2,7 +2,6 @@
 title: Практическое руководство. считывание данных из нового файла и запись в этот файл
 description: Сведения о том, как выполнять чтение и запись в созданном файле данных в .NET с помощью классов System.IO.BinaryReader и System.IO.BinaryWriter.
 ms.date: 01/21/2019
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,18 +13,18 @@ helpviewer_keywords:
 - I/O [.NET], writing data
 - BinaryWriter class, examples
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
-ms.openlocfilehash: 236d50260efa66f21db6d0abba6cc5c258a74d8d
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 940d720edfde93f8707a4fd7040e5dd3618a2680
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188735"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830718"
 ---
 # <a name="how-to-read-and-write-to-a-newly-created-data-file"></a>Практическое руководство. считывание данных из нового файла и запись в этот файл
 
 Классы <xref:System.IO.BinaryWriter?displayProperty=nameWithType> и <xref:System.IO.BinaryReader?displayProperty=nameWithType> используются для записи и чтения данных вместо строк символов. Следующий пример показывает, как создать пустой файловый поток, записать в него данные, а затем считать их.
 
-В этом примере создается файл данных *Test.data* в текущем каталоге, создаются связанные с ним объекты <xref:System.IO.BinaryWriter> и <xref:System.IO.BinaryReader>, а затем применяется объект <xref:System.IO.BinaryWriter> для записи целых чисел от 0 до 10 в *Test.data* . По завершении этих действий указатель файла остается в конце файла. Затем объект <xref:System.IO.BinaryReader> возвращает указатель файла в начало и считывает его содержимое.  
+В этом примере создается файл данных *Test.data* в текущем каталоге, создаются связанные с ним объекты <xref:System.IO.BinaryWriter> и <xref:System.IO.BinaryReader>, а затем применяется объект <xref:System.IO.BinaryWriter> для записи целых чисел от 0 до 10 в *Test.data*. По завершении этих действий указатель файла остается в конце файла. Затем объект <xref:System.IO.BinaryReader> возвращает указатель файла в начало и считывает его содержимое.  
   
 > [!NOTE]
 > Если *Test.data* уже существует в текущем каталоге, создается исключение <xref:System.IO.IOException>. Используйте параметр файлового режима <xref:System.IO.FileMode.Create?displayProperty=nameWithType> вместо <xref:System.IO.FileMode.CreateNew?displayProperty=nameWithType>, чтобы всегда создавать новый файл без появления исключения.  

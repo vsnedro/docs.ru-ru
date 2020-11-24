@@ -2,7 +2,6 @@
 title: Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
 description: Узнайте, как использовать анонимные каналы для локального взаимодействия между процессами на локальном компьютере в .NET. Анонимные каналы требуют меньше ресурсов, чем именованные.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - one-way communication [.NET]
 - local computer communication [.NET], pipes
 ms.assetid: e7773c77-c646-4a01-8a96-a003d59fc4c9
-ms.openlocfilehash: c9d223d975dc7ab251717a66de0bc845845dc9d7
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: ba2604680b8f69a9ad5909db51d04ddef81c8c13
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93189359"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94829756"
 ---
 # <a name="how-to-use-anonymous-pipes-for-local-interprocess-communication"></a>Практическое руководство. Использование анонимных каналов для локального взаимодействия между процессами
 

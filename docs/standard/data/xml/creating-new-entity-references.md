@@ -1,14 +1,13 @@
 ---
 title: Создание новых ссылок на сущности
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54
-ms.openlocfilehash: 7c94d121d00c169f0d74bc9b12c8710fb6055250
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5d1411b38ee79705cad3375aea1b95265c1ab61a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84283355"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94829327"
 ---
 # <a name="creating-new-entity-references"></a>Создание новых ссылок на сущности
 Метод **CreateEntityReference** создает новый узел **XmlEntityReference**. Модель DOM определяет, было ли уже декларировано имя сущности, на которую указывает ссылка. Если было, то дочерние узлы узла **XmlEntityReference** копируются из узла декларации сущности. Если совпадающая декларация сущности отсутствует, пустой текстовый узел прикрепляется как единственный дочерний узел узла ссылки на сущность. Так как дочерние узлы узла **XmlEntityReference** являются копиями других узлов, они доступны только для чтения и не могут быть изменены.  

@@ -1,14 +1,13 @@
 ---
 title: Поддержка пространств имен в модели DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
-ms.openlocfilehash: 6fefce961c2ff91530a9110f5563fd921a7838a3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b71817bf8a1b2eb585ccb3b21fb361c651c2bfe9
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288801"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830159"
 ---
 # <a name="namespace-support-in-the-dom"></a>Поддержка пространств имен в модели DOM
 Модель XML DOM полностью построена на пространствах имен. Поддерживаются только XML-документы, где определены пространства имен. По спецификации W3C приложения DOM, реализующие уровень 1, могут не учитывать пространства имен, а возможности уровня 2 модели DOM учитывают пространства имен. Однако в модели XML DOM все функции учитывают пространства имен, независимо о того, соответствует ли метод рекомендации для уровня 1 или уровня 2 модели DOM.  

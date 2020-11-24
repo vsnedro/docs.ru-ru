@@ -2,7 +2,6 @@
 title: Форматы путей к файлам в системах Windows
 description: В этой статье содержатся сведения о форматах путей к файлам в системах Windows, таких как традиционные пути DOS, пути к устройствам DOS и пути в формате UNC.
 ms.date: 06/06/2019
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - I/O, long paths
 - long paths
 - path formats, Windows
-ms.openlocfilehash: e24772ee9c9d22786c9cfece43017f8526434601
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 378fe56bcd54469bc82d762868636daec6eb286e
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831173"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Форматы путей к файлам в системах Windows
 

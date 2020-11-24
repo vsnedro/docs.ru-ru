@@ -4,13 +4,15 @@ description: Узнайте, как реализовать методы расш
 ms.date: 07/20/2015
 helpviewer_keywords:
 - extension methods [C#], implementing and calling
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
-ms.openlocfilehash: de4cc423e1823351305a23f331b082aa66add1a6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d344489e88ddc2c8cac51afeb5bbc76bc7b42913
+ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190440"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95099078"
 ---
 # <a name="how-to-implement-and-call-a-custom-extension-method-c-programming-guide"></a>Практическое руководство. Реализация и вызов пользовательского метода расширения (руководство по программированию на C#)
 

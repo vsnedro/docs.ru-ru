@@ -2,7 +2,6 @@
 title: Преобразование типов в .NET
 description: Сведения о преобразовании типов в .NET, которое создает значение в новом типе, эквивалентное значению старого типа, однако может не сохранять удостоверение оригинала.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -25,12 +24,12 @@ helpviewer_keywords:
 - Implicit operator
 - data types [.NET], converting
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
-ms.openlocfilehash: 4f7e4400aa15532b04fd4e39219775af34068685
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: 8e1ea153ccd65de967a34e79d4a26c96e678c4ad
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687534"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831030"
 ---
 # <a name="type-conversion-in-net"></a>Преобразование типов в .NET
 

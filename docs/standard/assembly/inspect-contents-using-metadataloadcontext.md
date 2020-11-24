@@ -3,13 +3,12 @@ title: Практическое руководство. Проверка сод�
 description: Сведения об использовании MetadataLoadContext, API, позволяющее загружать сборки .NET для целей проверки.
 author: MSDN-WhiteKnight
 ms.date: 03/10/2020
-ms.technology: dotnet-standard
-ms.openlocfilehash: 7f90149a98632ea57e8d241a0ccdf4b50264ac5c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 7205230986aa852813a651d2fcb7c5ef88ab18fe
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552028"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831355"
 ---
 # <a name="how-to-inspect-assembly-contents-using-metadataloadcontext"></a>Практическое руководство. Проверка содержимого сборки с помощью MetadataLoadContext
 

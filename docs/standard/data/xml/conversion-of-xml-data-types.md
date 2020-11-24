@@ -1,17 +1,16 @@
 ---
 title: Преобразование типов XML-данных
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-ms.openlocfilehash: d8b60428bc129958355ce5b285662847e9e712c3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d7ee7447ab7a8be1bad0d087dba5fc2afaa878e8
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282419"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830978"
 ---
 # <a name="conversion-of-xml-data-types"></a>Преобразование типов XML-данных
 Большая часть методов класса **XmlConvert** используются для преобразования данных в строки и строго типизированные форматы. Методы не зависят от языковых стандартов. Это означает, что при преобразовании они не принимают во внимание параметры языковых стандартов.  

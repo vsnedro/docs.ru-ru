@@ -1,14 +1,13 @@
 ---
 title: Обработка XML-данных с использованием модели DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 56b6e9c7-ed82-4a65-a647-7be32c83bcc8
-ms.openlocfilehash: 242554cc948ef16972ffd26d5464dae2727ed339
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2608008f33eb8bc0dd0a9b5fe96e619df6138b51
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290841"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830913"
 ---
 # <a name="process-xml-data-using-the-dom-model"></a>Обработка XML-данных с использованием модели DOM
 Модель DOM рассматривает XML-данные как стандартный набор объектов и используется для обработки XML-данных в памяти. Пространство имен `System.Xml` обеспечивает программное представление XML-документов, фрагментов, узлов и наборов узлов. Оно основывается на рекомендациях базовой модели DOM уровня 1 и модели DOM уровня 2 консорциума W3C.  

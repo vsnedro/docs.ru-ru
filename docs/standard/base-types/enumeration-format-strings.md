@@ -2,7 +2,6 @@
 title: Строки форматов перечисления
 description: Создавайте строки формата перечисления с помощью метода Enum.ToString в .NET. Форматируйте числовые, шестнадцатеричные или строковые значения членов перечислений.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - enumeration format strings
 - formatting [.NET], enumeration
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
-ms.openlocfilehash: e4d8ca27d99c211653269b2477be8f5632b78229
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 02a12c36e47a82c15c01e578333e1c4465bab142
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92888663"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94829626"
 ---
 # <a name="enumeration-format-strings"></a>Строки форматов перечисления
 
@@ -26,7 +25,7 @@ ms.locfileid: "92888663"
 
 ## <a name="g-or-g"></a>G или g
 
-Отображает перечисление в виде строкового значения, если это возможно. В противном случае отображает целочисленное значение текущего экземпляра. Если для перечисления задан атрибут **Flags** , строковые значения всех допустимых записей объединяются с запятой в качестве разделителя. Если атрибут **Flags** не задан, в виде числовой записи отображается недопустимое значение. В следующем примере показан описатель формата G.
+Отображает перечисление в виде строкового значения, если это возможно. В противном случае отображает целочисленное значение текущего экземпляра. Если для перечисления задан атрибут **Flags**, строковые значения всех допустимых записей объединяются с запятой в качестве разделителя. Если атрибут **Flags** не задан, в виде числовой записи отображается недопустимое значение. В следующем примере показан описатель формата G.
 
 [!code-csharp[Formatting.Enum#1](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.Enum/cs/enum1.cs#1)]
 [!code-vb[Formatting.Enum#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Enum/vb/enum1.vb#1)]

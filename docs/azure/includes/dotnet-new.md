@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6a5e4a09cceb9fbc39764d76daa300aad148bf15
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 723691aac68ef8d36051073e8c954199396d4e0a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482750"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94884962"
 ---
 | Имя | Пакет | Docs | Источник |
 | ---- | ------- | ---- | ------ |
@@ -42,7 +42,7 @@ ms.locfileid: "94482750"
 | ClientRuntime — Azure | NuGet [3.3.19](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure/3.3.19) |  | GitHub [3.3.19](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mgmtcommon/ClientRuntime.Azure) |
 | ClientRuntime — проверка подлинности Azure | NuGet [2.4.1](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1) |  | GitHub [2.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.Authentication_2.4.1/sdk/mgmtcommon/Auth/Az.Auth/Az.Authentication) |
 | ClientRuntime — платформа тестирования Azure | NuGet [1.7.7](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Azure.TestFramework/1.7.7) |  | GitHub [1.7.7](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Rest.ClientRuntime.Azure.TestFramework_1.7.7/sdk/mgmtcommon/TestFramework/ClientRuntime.Azure.TestFramework) |
-| ClientRuntime — ETW | NuGet [2.1.3](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Etw/2.1.3) |  | GitHub [2.1.3](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mgmtcommon/ClientRuntime.Etw) |
+| ClientRuntime — трассировка событий Windows | NuGet [2.1.3](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Etw/2.1.3) |  | GitHub [2.1.3](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mgmtcommon/ClientRuntime.Etw) |
 | ClientRuntime — Log4Net | NuGet [2.1.4](https://www.nuget.org/packages/Microsoft.Rest.ClientRuntime.Log4Net/2.1.4) |  | GitHub [2.1.4](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/mgmtcommon/ClientRuntime.Log4Net) |
 | Когнитивный поиск | NuGet [11.1.1](https://www.nuget.org/packages/Azure.Search.Documents/11.1.1)<br>NuGet [11.2.0-beta.1](https://www.nuget.org/packages/Azure.Search.Documents/11.2.0-beta.1) | [docs](/dotnet/api/overview/azure/Search.Documents-readme-pre/) | GitHub [11.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.1.1/sdk/search/Azure.Search.Documents/)<br>GitHub [11.2.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.2.0-beta.1/sdk/search/Azure.Search.Documents/) |
 | Статистические функции для коммерческого использования | NuGet [1.5.3](https://www.nuget.org/packages/Microsoft.Azure.Commerce.UsageAggregates/1.5.3) |  |  |
@@ -382,7 +382,7 @@ ms.locfileid: "94482750"
 | Центры событий — обработчик событий | NuGet [5.2.0](https://www.nuget.org/packages/Azure.Messaging.EventHubs.Processor/5.2.0)<br>NuGet [5.3.0-beta.3](https://www.nuget.org/packages/Azure.Messaging.EventHubs.Processor/5.3.0-beta.3) | [docs](/dotnet/api/overview/azure/Messaging.EventHubs.Processor-readme-pre/) | GitHub [5.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventHubs.Processor_5.2.0/sdk/eventhub/Azure.Messaging.EventHubs.Processor/)<br>GitHub [5.3.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventHubs.Processor_5.3.0-beta.3/sdk/eventhub/Azure.Messaging.EventHubs.Processor/) |
 | Центры событий — обработчик событий | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.EventHubs.Processor/4.3.1) |  | GitHub [4.3.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventHubs.Processor_4.3.1/sdk/eventhub/Microsoft.Azure.EventHubs.Processor/) |
 | Концентраторы событий — процессор Service Fabric | NuGet [0.5.4](https://www.nuget.org/packages/Microsoft.Azure.EventHubs.ServiceFabricProcessor/0.5.4) |  | GitHub [0.5.4](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.EventHubs.ServiceFabricProcessor_0.5.4/sdk/eventhub/Microsoft.Azure.EventHubs.ServiceFabricProcessor/) |
-| Расширения — Azure | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.0.0)<br>NuGet [1.1.0-beta.1](https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.1.0-beta.1) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Extensions.Azure_1.0.0/sdk/core/Microsoft.Extensions.Azure/)<br>GitHub [1.1.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Extensions.Azure_1.1.0-beta.1/sdk/core/Microsoft.Extensions.Azure/) |
+| Расширения — Azure | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.0.0)<br>NuGet [1.1.0-beta.1](https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.1.0-beta.1) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Extensions.Azure_1.0.0/sdk/core/Microsoft.Extensions.Azure/) |
 | Расширения — кэширование Cosmos | NuGet [1.0.0-preview5](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.0.0-preview5) |  | GitHub [1.0.0-preview5](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
 | Распознаватель документов | NuGet [3.0.0](https://www.nuget.org/packages/Azure.AI.FormRecognizer/3.0.0) | [docs](/dotnet/api/overview/azure/AI.FormRecognizer-readme/) | GitHub [3.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.FormRecognizer_3.0.0/sdk/formrecognizer/Azure.AI.FormRecognizer/) |
 | Распознаватель документов | NuGet [0.8.0-preview](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.FormRecognizer/0.8.0-preview) |  | GitHub [0.8.0-preview](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/cognitiveservices/FormRecognizer) |
@@ -466,7 +466,7 @@ ms.locfileid: "94482750"
 | Wastorage V120 | NuGet [4.0.0](https://www.nuget.org/packages/wastorage.v120/4.0.0) |  |  |
 | Wastorage V140 | NuGet [4.0.0](https://www.nuget.org/packages/wastorage.v140/4.0.0) |  |  |
 | Интернет — поставщик кэша вывода Redis | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisOutputCacheProvider/3.0.1) |  | GitHub [3.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisOutputCacheProvider-3.0.1/src/OutputCacheProvider) |
-| Интернет — поставщик состояния сеансов Redis | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
+| Интернет — Поставщик состояния сеансов Redis | NuGet [4.0.1](https://www.nuget.org/packages/Microsoft.Web.RedisSessionStateProvider/4.0.1) |  | GitHub [4.0.1](https://github.com/Azure/aspnet-redis-providers/tree/NuGet-Release/RedisSessionStateProvider-4.0.1/src/RedisSessionStateProvider) |
 | Поиск в Интернете | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.WebSearch/2.0.0) |  |  |
 | Веб-задания | NuGet [0.3.2-beta](https://www.nuget.org/packages/Microsoft.Azure.Jobs/0.3.2-beta) |  | GitHub [0.3.2-beta](https://github.com/Azure/azure-webjobs-sdk) |
 | Веб-задания | NuGet [3.0.23](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.23) |  | GitHub [3.0.23](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |

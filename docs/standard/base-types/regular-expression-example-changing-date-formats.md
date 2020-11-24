@@ -1,7 +1,6 @@
 ---
 title: Пример регулярного выражения. Изменение форматов даты
 ms.date: 06/30/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - regular expressions [.NET], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: 5fcc75a5-09d7-45ae-a4c0-9ad6085ac83d
-ms.openlocfilehash: b5eca8c294349fada9cfb1cb3ed8e2012edd8bda
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 51d2b773cc3149ddbf7d98409fd7b6947b379745
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92889417"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830302"
 ---
 # <a name="regular-expression-example-changing-date-formats"></a>Пример регулярного выражения. Изменение форматов даты
-В следующем примере кода метод <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> используется для замены дат в формате *мм*/*дд*/*гг* на даты в формате *дд*-*мм*-*гг* .  
+В следующем примере кода метод <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> используется для замены дат в формате *мм*/*дд*/*гг* на даты в формате *дд*-*мм*-*гг*.  
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
