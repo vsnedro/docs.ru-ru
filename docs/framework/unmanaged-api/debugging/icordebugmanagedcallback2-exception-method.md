@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 78b0f14f-2fae-4e63-8412-4df119ee8468
 topic_type:
 - apiref
-ms.openlocfilehash: 612b63ba9aa3504cab5196932293946d486955ce
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: c5be9231bcd5aaddfa0cf1b0051f8e1184faef04
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210206"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687636"
 ---
 # <a name="icordebugmanagedcallback2exception-method"></a>Метод ICorDebugManagedCallback2::Exception
+
 Уведомляет отладчик о запуске поиска обработчика исключений.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT Exception (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, содержащий поток, в котором было создано исключение.  
   
@@ -57,7 +59,8 @@ HRESULT Exception (
  `dwFlags`  
  окне Значение перечисления [кордебужексцептионфлагс](cordebugexceptionflags-enumeration.md) , которое указывает дополнительные сведения об исключении  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `Exception`Обратный вызов вызывается в различных точках на этапе поиска процесса обработки исключений. То есть он может быть вызван более одного раза при очистке исключения.  
   
  Обрабатываемое исключение может быть получено из объекта ICorDebugThread, на который ссылается `pThread` параметр.  
@@ -72,6 +75,7 @@ HRESULT Exception (
 |DEBUG_EXCEPTION_UNHANDLED|NULL|Не определено.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -80,7 +84,7 @@ HRESULT Exception (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

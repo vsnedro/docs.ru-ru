@@ -6,17 +6,19 @@ helpviewer_keywords:
 - fusion enumerations [.NET Framework]
 - enumerations [.NET Framework fusion]
 ms.assetid: 5817b4bc-b0ba-4b2f-a11c-a03dd8cb8f84
-ms.openlocfilehash: 9a030d1f0ec6cc4fd7ca526574caa4c281e2573e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c014d6fcf8ac34ebc82b43214a358039d8c28907
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108505"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688761"
 ---
 # <a name="fusion-enumerations"></a>Перечисления Fusion
+
 В этом разделе описаны неуправляемые перечисления, используемые API Fusion.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Перечисление ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md)  
  Указывает источник сборки, представленной [IAssemblyCacheItem](iassemblycacheitem-interface.md) в глобальном кэше сборок.  
   
@@ -33,10 +35,11 @@ ms.locfileid: "73108505"
  Указывает эквивалентность двух удостоверений сборки, как определено функцией [компареассемблидентити](compareassemblyidentity-function.md) .  
   
  [Перечисление CREATE_ASM_NAME_OBJ_FLAGS](create-asm-name-obj-flags-enumeration.md)  
- Задает атрибуты объекта `IAssemblyName`, когда он создается функцией [креатеассемблинамеобжект](createassemblynameobject-function.md) .  
+ Задает атрибуты `IAssemblyName` объекта при создании с помощью функции [креатеассемблинамеобжект](createassemblynameobject-function.md) .  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Интерфейсы Fusion](fusion-interfaces.md)  
+
+ [Fusion-интерфейсы](fusion-interfaces.md)  
   
  [Глобальные статические функции Fusion](fusion-global-static-functions.md)  
   

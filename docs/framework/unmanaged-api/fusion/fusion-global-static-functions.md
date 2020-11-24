@@ -6,17 +6,19 @@ helpviewer_keywords:
 - fusion global static functions [.NET Framework]
 - global static functions [.NET Framework fusion]
 ms.assetid: 229b2188-9168-4b44-a987-e1f515494688
-ms.openlocfilehash: ff94ed23f3e39888b4f7e255feece99898f8aa74
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 691fd50e05cadd3f82196fc6ba5df9bb84a66faa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108273"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688748"
 ---
 # <a name="fusion-global-static-functions"></a>Глобальные статические функции Fusion
+
 В этом разделе описаны неуправляемые глобальные статические функции, используемые API Fusion.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Функция ClearDownloadCache](cleardownloadcache-function.md)  
  Очищает глобальный кэш сборок скачанных сборок.  
   
@@ -24,7 +26,7 @@ ms.locfileid: "73108273"
  Сравнивает два идентификатора сборки, чтобы определить, являются ли они эквивалентными.  
   
  [Функция CreateApplicationContext](createapplicationcontext-function.md)  
- Только внутренние. (Эта функция поддерживает инфраструктуру .NET Framework и не предназначена для непосредственного использования в коде.)  
+ Только для внутреннего использования. (Эта функция поддерживает инфраструктуру .NET Framework и не предназначена для непосредственного использования в коде.)  
   
  [Функция CreateAssemblyCache](createassemblycache-function.md)  
  Возвращает указатель на новый экземпляр [IAssemblyCache](iassemblycache-interface.md) , представляющий глобальный кэш сборок.  
@@ -45,7 +47,7 @@ ms.locfileid: "73108273"
  Возвращает указатель на экземпляр [иаппидаусорити](iappidauthority-interface.md) , который управляет ключами для удостоверений приложений и ссылок.  
   
  [Функция GetAssemblyIdentityFromFile](getassemblyidentityfromfile-function.md)  
- Возвращает указатель на объект `IUnknown` с указанным `IID` в сборке по указанному пути к файлу.  
+ Возвращает указатель на `IUnknown` объект с указанным `IID` в сборке по указанному пути к файлу.  
   
  [Функция GetCachePath](getcachepath-function.md)  
  Возвращает путь к кэшированной сборке с использованием указанных флагов.  
@@ -66,7 +68,8 @@ ms.locfileid: "73108273"
  Возвращает отображаемое имя после применения политики для сборки.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Интерфейсы Fusion](fusion-interfaces.md)  
+
+ [Fusion-интерфейсы](fusion-interfaces.md)  
   
  [Перечисления Fusion](fusion-enumerations.md)  
   

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a8ecd8c8-9627-4356-9c6f-bd05e24637c0
 topic_type:
 - apiref
-ms.openlocfilehash: 3de85626be6ae8e4769ac261f4de1479461417ec
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 0adb9e58ca2c6b5b430a0413fa11ba59d79a0539
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893529"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688111"
 ---
 # <a name="icordebugcodegetiltonativemapping-method"></a>Метод ICorDebugCode::GetILToNativeMapping
+
 Возвращает массив экземпляров "COR_DEBUG_IL_TO_NATIVE_MAP", которые представляют сопоставления из смещений MSIL к собственным смещениям.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetILToNativeMapping (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cMap`  
  [in] Размер массива `map`.  
   
@@ -48,10 +50,12 @@ HRESULT GetILToNativeMapping (
   
  Порядок для массива возвращаемых элементов отсутствует.  
   
-## <a name="remarks"></a>Remarks  
- `GetILToNativeMapping` Метод возвращает значимые результаты только в том случае, если этот экземпляр "ICorDebugCode" представляет машинный код, который был скомпилирован из кода MSIL в JIT-режиме.  
+## <a name="remarks"></a>Комментарии  
+
+ `GetILToNativeMapping`Метод возвращает значимые результаты только в том случае, если этот экземпляр "ICorDebugCode" представляет машинный код, который был скомпилирован из кода MSIL в JIT-режиме.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

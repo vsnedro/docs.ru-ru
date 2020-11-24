@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4657443f-dd12-431b-a648-175c23f13c83
 topic_type:
 - apiref
-ms.openlocfilehash: a74d32478bc88ee634fa5ff9b61ac2059bc8e302
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: dcaa5adc41a9e451b123b088dd900f01d9161689
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379720"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688280"
 ---
 # <a name="icordebugthreadcreatestepper-method"></a>Метод ICorDebugThread::CreateStepper
+
 Создает объект ICorDebugStepper, позволяющий выполнять пошаговую отладку активной рамки этого ICorDebugThread.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,15 +35,18 @@ HRESULT CreateStepper (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppStepper`  
  заполняет Указатель на адрес `ICorDebugStepper` объекта, который допускает пошаговое выполнение активного кадра этого потока.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Активным кадром может быть неуправляемый код.  
   
  `ICorDebugStepper`Для выполнения фактического пошагового шага необходимо использовать интерфейс.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

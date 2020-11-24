@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 66a89acf-8c32-44c0-8787-960c99c7b3ec
 topic_type:
 - apiref
-ms.openlocfilehash: 80979f0424469bb1d4771ad6507bb8c9d5364ab4
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9dae3f1403d33aaf3cfb87d17856640548a90b4d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108609"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688980"
 ---
 # <a name="createhistoryreader-function"></a>Функция CreateHistoryReader
+
 Создает средство чтения журнала для указанного файла.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT CreateHistoryReader (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wzFilePath`  
  окне Путь к файлу.  
   
@@ -41,20 +43,22 @@ HRESULT CreateHistoryReader (
  заполняет При успешном завершении содержит указатель на средство чтения журнала.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает стандартные коды ошибок COM, определенные в файле WinError. h, а также значения, описанные в следующей таблице.  
   
 |Код возврата|Описание|  
 |-----------------|-----------------|  
 |S_OK|Указывает, что метод успешно завершен.|  
-|E_INVALIDARG|Указывает, что для `wzFilePath` или `ppHistoryReader` задана пустая ссылка.|  
+|E_INVALIDARG|Указывает, что `wzFilePath` или `ppHistoryReader` задана пустая ссылка.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Библиотека:** Fusion. dll  
+ **Библиотека:** Fusion.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)

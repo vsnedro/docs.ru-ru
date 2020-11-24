@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: be7ae711-1217-4a44-be40-166e29641b77
 topic_type:
 - apiref
-ms.openlocfilehash: 140e67417f4fad552f972a93bc8c620b440b2370
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 98273a5d4602c023863758045bdb2a6a502ba7a7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895171"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687233"
 ---
 # <a name="icordebugappdomain-interface"></a>Интерфейс ICorDebugAppDomain
 
@@ -40,12 +40,13 @@ ms.locfileid: "82895171"
 |[Метод GetProcess](icordebugappdomain-getprocess-method.md)|Возвращает процесс, содержащий домен приложения.|  
 |[Метод IsAttached](icordebugappdomain-isattached-method.md)|Определяет, присоединен ли отладчик к домену приложения.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

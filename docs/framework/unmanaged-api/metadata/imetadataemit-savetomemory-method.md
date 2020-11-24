@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d5237628-2675-45ed-a39e-65c0731b6a56
 topic_type:
 - apiref
-ms.openlocfilehash: ccf82531eb1f78bcfc6762d10d53ffee59f30ad8
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 1cd5e34d6afefab2fda7e20d4bf73b373ad42787
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003965"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688605"
 ---
 # <a name="imetadataemitsavetomemory-method"></a>Метод IMetaDataEmit::SaveToMemory
+
 Сохраняет все метаданные в текущей области в указанную область памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SaveToMemory (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbData`  
  заполняет Адрес, с которого начинается запись метаданных.  
   
@@ -42,15 +44,16 @@ HRESULT SaveToMemory (
  окне Размер выделенной памяти в байтах.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

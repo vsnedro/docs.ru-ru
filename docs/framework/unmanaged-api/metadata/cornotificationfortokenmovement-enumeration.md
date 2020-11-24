@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
 topic_type:
 - apiref
-ms.openlocfilehash: e8065a5492884a4b7f5d662737e4beddc6fca5b3
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 0f9cb8db35a1669cead6f9f26c9a89e063628dd8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007602"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687675"
 ---
 # <a name="cornotificationfortokenmovement-enumeration"></a>Перечисление CorNotificationForTokenMovement
+
 Указывает уведомления, которые будут отправляться клиенту API метаданных при выполнении сопоставления маркеров.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -59,7 +60,7 @@ typedef enum CorNotificationForTokenMovement {
 } CorNotificationForTokenMovement;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -87,16 +88,18 @@ typedef enum CorNotificationForTokenMovement {
 |`MDNotifyExportedType`|Уведомлять при `mdExportedType` перемещении маркера.|  
 |`MDNotifyResource`|Уведомлять при `mdManifestResource` перемещении маркера.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Маркер может быть повторно сопоставлен (т. е. перемещен) во время слияния метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

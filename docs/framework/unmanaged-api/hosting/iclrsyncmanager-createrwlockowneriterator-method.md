@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b5535b87-9439-424e-b9b3-7d6fafb9819e
 topic_type:
 - apiref
-ms.openlocfilehash: f8fde4905c41dffde90c6361b5a8cdffa15deb4a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2b6a2082d27fca4c78dcb15a13cfd87e8066e388
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503969"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687220"
 ---
 # <a name="iclrsyncmanagercreaterwlockowneriterator-method"></a>Метод ICLRSyncManager::CreateRWLockOwnerIterator
+
 Запрашивает, что среда CLR создает итератор для узла, который будет использоваться для определения набора задач, ожидающих блокировки чтения и записи.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT CreateRWLockOwnerIterator (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cookie`  
  окне Файл cookie, связанный с требуемой блокировкой чтения и записи.  
   
@@ -43,17 +45,18 @@ HRESULT CreateRWLockOwnerIterator (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`CreateRWLockOwnerIterator`успешно возвращено.|  
+|S_OK|`CreateRWLockOwnerIterator` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
-|HOST_E_INVALIDOPERATION|`CreateRWLockOwnerIterator`был вызван в потоке, который в настоящий момент выполняет управляемый код.|  
+|HOST_E_INVALIDOPERATION|`CreateRWLockOwnerIterator` был вызван в потоке, который в настоящий момент выполняет управляемый код.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Узлы обычно вызывают `CreateRWLockOwnerIterator` методы, `DeleteRWLockOwnerIterator` и `GetRWLockOwnerNext` во время обнаружения взаимоблокировки. Узел отвечает за обеспечение допустимости блокировки чтения и записи, так как среда CLR не пытается сохранить блокировку чтения-записи в активном состоянии. Для обеспечения допустимости блокировки на узле доступны несколько стратегий.  
   
 - Узел может блокировать вызовы освобождения для блокировки чтения-записи (например, [IHostSemaphore:: ReleaseSemaphore](ihostsemaphore-releasesemaphore-method.md)), гарантируя, что этот блок не вызывает взаимоблокировку.  
@@ -61,18 +64,19 @@ HRESULT CreateRWLockOwnerIterator (
 - Узел может блокировать выход из режима ожидания объекта события, связанного с блокировкой чтения и записи, еще раз гарантируя, что этот блок не вызывает взаимоблокировку.  
   
 > [!NOTE]
-> `CreateRWLockOwnerIterator`метод должен вызываться только для потоков, выполняющих в данный момент неуправляемый код.  
+> `CreateRWLockOwnerIterator` метод должен вызываться только для потоков, выполняющих в данный момент неуправляемый код.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

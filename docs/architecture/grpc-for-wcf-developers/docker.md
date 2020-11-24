@@ -2,12 +2,12 @@
 title: DOCKER-gRPC для разработчиков WCF
 description: Создание образов DOCKER для ASP.NET Core приложений gRPC
 ms.date: 09/02/2019
-ms.openlocfilehash: 379750edfa1a9fc282e43ffa83e5695425f31a26
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a680d0918868829042e521506fa8c1a1628bf5c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152719"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688449"
 ---
 # <a name="create-docker-images"></a>Создание образов DOCKER
 
@@ -22,8 +22,8 @@ ms.locfileid: "91152719"
 
 | Изображение | Описание |
 | ----- | ----------- |
-| [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/) | Для создания приложений с помощью `docker build` . Не для использования в рабочей среде. |
-| [mcr.microsoft.com/dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) | Содержит зависимости среды выполнения и ASP.NET Core. Для рабочей среды. |
+| [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/) | Для создания приложений с помощью `docker build` . Не для использования в рабочей среде. |
+| [mcr.microsoft.com/dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) | Содержит зависимости среды выполнения и ASP.NET Core. Для рабочей среды. |
 
 Для каждого образа существует четыре варианта, основанные на разных дистрибутивах Linux, различающихся по тегам.
 
@@ -45,7 +45,7 @@ ms.locfileid: "91152719"
 
 ```dockerfile
 # Application build steps
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:3.0 as builder
 
 WORKDIR /src
 
@@ -56,7 +56,7 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o /published src/StockData/StockData.csproj
 
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:3.0
 
 # Uncomment the line below if running with HTTPS
 # ENV ASPNETCORE_URLS=https://+:443
@@ -95,7 +95,7 @@ Dockerfile состоит из двух частей: первый исполь�
 
 ```dockerfile
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:3.0
 
 ENV ASPNETCORE_URLS=https://+:443
 ```

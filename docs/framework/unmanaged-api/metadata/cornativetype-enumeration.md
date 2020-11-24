@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890
 topic_type:
 - apiref
-ms.openlocfilehash: dd97c479f12e7bdb015b39a802b398ca2b0bcd3f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 95bbb0cc2f223cfa96e1314ed28f46016c81a2fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007641"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687701"
 ---
 # <a name="cornativetype-enumeration"></a>Перечисление CorNativeType
+
 Содержит значения, описывающие собственные неуправляемые типы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -85,12 +86,12 @@ typedef enum CorNativeType {
 } CorNativeType;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`NATIVE_TYPE_END`|Устаревшее.|  
-|`NATIVE_TYPE_VOID`|Устаревшее.|  
+|`NATIVE_TYPE_END`|Является устаревшей.|  
+|`NATIVE_TYPE_VOID`|Является устаревшей.|  
 |`NATIVE_TYPE_BOOLEAN`|4-байтовое логическое значение, где TRUE — ненулевое, а FALSE — ноль.|  
 |`NATIVE_TYPE_I1`|8-разрядное целое значение со знаком.|  
 |`NATIVE_TYPE_U1`|8-разрядное целочисленное значение без знака.|  
@@ -102,18 +103,18 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_U8`|64-разрядное целочисленное значение без знака.|  
 |`NATIVE_TYPE_R4`|4-байтовое числовое значение с плавающей запятой.|  
 |`NATIVE_TYPE_R8`|8-байтовое числовое значение с плавающей запятой.|  
-|`NATIVE_TYPE_SYSCHAR`|Устаревшее.|  
-|`NATIVE_TYPE_VARIANT`|Устаревшее.|  
+|`NATIVE_TYPE_SYSCHAR`|Является устаревшей.|  
+|`NATIVE_TYPE_VARIANT`|Является устаревшей.|  
 |`NATIVE_TYPE_CURRENCY`|Числовой COM-тип, соответствующий управляемому <xref:System.Decimal> типу.|  
-|`NATIVE_TYPE_PTR`|Устаревшее.|  
-|`NATIVE_TYPE_DECIMAL`|Устаревшее.|  
-|`NATIVE_TYPE_DATE`|Устаревшее.|  
+|`NATIVE_TYPE_PTR`|Является устаревшей.|  
+|`NATIVE_TYPE_DECIMAL`|Является устаревшей.|  
+|`NATIVE_TYPE_DATE`|Является устаревшей.|  
 |`NATIVE_TYPE_BSTR`|COM-взаимодействие.|  
 |`NATIVE_TYPE_LPSTR`|Строковое значение LPSTR.|  
 |`NATIVE_TYPE_LPWSTR`|Строковое значение LPWSTR.|  
 |`NATIVE_TYPE_LPTSTR`|Строковое значение LPTSTR.|  
 |`NATIVE_TYPE_FIXEDSYSSTRING`|Фиксированное, определяемое системой строковое значение.|  
-|`NATIVE_TYPE_OBJECTREF`|Устаревшее.|  
+|`NATIVE_TYPE_OBJECTREF`|Является устаревшей.|  
 |`NATIVE_TYPE_IUNKNOWN`|COM-взаимодействие.|  
 |`NATIVE_TYPE_IDISPATCH`|COM-взаимодействие.|  
 |`NATIVE_TYPE_STRUCT`|Значение собственной структуры.|  
@@ -122,7 +123,7 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_FIXEDARRAY`|Значение массива фиксированной длины.|  
 |`NATIVE_TYPE_INT`|Собственное 16-разрядное целое число со знаком.|  
 |`NATIVE_TYPE_UINT`|Собственное 16-битовое целочисленное значение без знака.|  
-|`NATIVE_TYPE_NESTEDSTRUCT`|Устаревшее.<br /><br /> Используйте NATIVE_TYPE_STRUCT.|  
+|`NATIVE_TYPE_NESTEDSTRUCT`|Является устаревшей.<br /><br /> Используйте NATIVE_TYPE_STRUCT.|  
 |`NATIVE_TYPE_BYVALSTR`|COM-взаимодействие.|  
 |`NATIVE_TYPE_ANSIBSTR`|COM-взаимодействие.|  
 |`NATIVE_TYPE_TBSTR`|COM-взаимодействие.<br /><br /> Выберите BSTR или АНСИБСТР в зависимости от платформы.|  
@@ -138,13 +139,14 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_MAX`|Недопустимое значение.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.InteropServices.UnmanagedType>
 - [Перечисления метаданных](metadata-enumerations.md)

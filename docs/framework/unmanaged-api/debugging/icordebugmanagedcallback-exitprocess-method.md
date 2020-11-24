@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 63a7d47a-0d54-4e29-9767-9f09feaa38b7
 topic_type:
 - apiref
-ms.openlocfilehash: 7a49bd6626518179c9b5ef008fca28d304537cc8
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 67f3e63b58e08a4b9ccfbd555e6edcdef0d00d90
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205262"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688979"
 ---
 # <a name="icordebugmanagedcallbackexitprocess-method"></a>Метод ICorDebugManagedCallback::ExitProcess
+
 Уведомляет отладчик о завершении процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT ExitProcess (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pProcess`  
  окне Указатель на объект ICorDebugProcess, представляющий процесс.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Невозможно продолжить выполнение `ExitProcess` события. Это событие может вызываться асинхронно для других событий, пока процесс остановлен. Это может произойти, если процесс завершается при остановке, обычно из-за некоторой внешней силы.  
   
  Если общеязыковая среда выполнения (CLR) уже передает управляемый обратный вызов, это событие будет отложено до тех пор, пока этот обратный вызов не вернется.  
@@ -45,6 +48,7 @@ HRESULT ExitProcess (
  `ExitProcess`Событие является единственным событием Exit/unload, которое гарантированно вызывается при завершении работы.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,6 +57,6 @@ HRESULT ExitProcess (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)
