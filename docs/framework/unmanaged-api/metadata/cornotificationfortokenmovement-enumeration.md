@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 1edd1670-976a-4fc8-bef7-7c41e60ad989
 topic_type:
 - apiref
-ms.openlocfilehash: e8065a5492884a4b7f5d662737e4beddc6fca5b3
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 0f9cb8db35a1669cead6f9f26c9a89e063628dd8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007602"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687675"
 ---
-# <a name="cornotificationfortokenmovement-enumeration"></a><span data-ttu-id="e6476-102">Перечисление CorNotificationForTokenMovement</span><span class="sxs-lookup"><span data-stu-id="e6476-102">CorNotificationForTokenMovement Enumeration</span></span>
-<span data-ttu-id="e6476-103">Указывает уведомления, которые будут отправляться клиенту API метаданных при выполнении сопоставления маркеров.</span><span class="sxs-lookup"><span data-stu-id="e6476-103">Specifies the notifications that will be sent to the metadata API client when a token remap occurs.</span></span>  
+# <a name="cornotificationfortokenmovement-enumeration"></a><span data-ttu-id="a560c-102">Перечисление CorNotificationForTokenMovement</span><span class="sxs-lookup"><span data-stu-id="a560c-102">CorNotificationForTokenMovement Enumeration</span></span>
+
+<span data-ttu-id="a560c-103">Указывает уведомления, которые будут отправляться клиенту API метаданных при выполнении сопоставления маркеров.</span><span class="sxs-lookup"><span data-stu-id="a560c-103">Specifies the notifications that will be sent to the metadata API client when a token remap occurs.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e6476-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e6476-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a560c-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a560c-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorNotificationForTokenMovement {  
@@ -59,44 +60,46 @@ typedef enum CorNotificationForTokenMovement {
 } CorNotificationForTokenMovement;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="e6476-105">Участники</span><span class="sxs-lookup"><span data-stu-id="e6476-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="a560c-105">Члены</span><span class="sxs-lookup"><span data-stu-id="a560c-105">Members</span></span>  
   
-|<span data-ttu-id="e6476-106">Член</span><span class="sxs-lookup"><span data-stu-id="e6476-106">Member</span></span>|<span data-ttu-id="e6476-107">Описание</span><span class="sxs-lookup"><span data-stu-id="e6476-107">Description</span></span>|  
+|<span data-ttu-id="a560c-106">Член</span><span class="sxs-lookup"><span data-stu-id="a560c-106">Member</span></span>|<span data-ttu-id="a560c-107">Описание</span><span class="sxs-lookup"><span data-stu-id="a560c-107">Description</span></span>|  
 |------------|-----------------|  
-|`MDNotifyDefault`|<span data-ttu-id="e6476-108">Уведомлять при `mdTypeRef` `mdMethodDef` `mdMemberRef` `mdFieldDef` перемещении токенов,, или.</span><span class="sxs-lookup"><span data-stu-id="e6476-108">Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move.</span></span>|  
-|`MDNotifyAll`|<span data-ttu-id="e6476-109">Уведомлять при перемещении токена.</span><span class="sxs-lookup"><span data-stu-id="e6476-109">Notify when any token moves.</span></span>|  
-|`MDNotifyNone`|<span data-ttu-id="e6476-110">Не уведомлять при перемещении токенов.</span><span class="sxs-lookup"><span data-stu-id="e6476-110">Do not notify when tokens move.</span></span>|  
-|`MDNotifyMethodDef`|<span data-ttu-id="e6476-111">Уведомлять при `mdMethodDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-111">Notify when an `mdMethodDef` token moves.</span></span>|  
-|`MDNotifyMemberRef`|<span data-ttu-id="e6476-112">Уведомлять при `mdMemberRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-112">Notify when an `mdMemberRef` token moves.</span></span>|  
-|`MDNotifyFieldDef`|<span data-ttu-id="e6476-113">Уведомлять при `mdFieldDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-113">Notify when an `mdFieldDef` token moves.</span></span>|  
-|`MDNotifyTypeRef`|<span data-ttu-id="e6476-114">Уведомлять при `mdTypeRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-114">Notify when an `mdTypeRef` token moves.</span></span>|  
-|`MDNotifyTypeDef`|<span data-ttu-id="e6476-115">Уведомлять при `mdTypeDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-115">Notify when an `mdTypeDef` token moves.</span></span>|  
-|`MDNotifyParamDef`|<span data-ttu-id="e6476-116">Уведомлять при `mdParamDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-116">Notify when an `mdParamDef` token moves.</span></span>|  
-|`MDNotifyInterfaceImpl`|<span data-ttu-id="e6476-117">Уведомлять при `mdInterfaceImpl` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-117">Notify when an `mdInterfaceImpl` token moves.</span></span>|  
-|`MDNotifyProperty`|<span data-ttu-id="e6476-118">Уведомлять при `mdProperty` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-118">Notify when an `mdProperty` token moves.</span></span>|  
-|`MDNotifyEvent`|<span data-ttu-id="e6476-119">Уведомлять при `mdEvent` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-119">Notify when an `mdEvent` token moves.</span></span>|  
-|`MDNotifySignature`|<span data-ttu-id="e6476-120">Уведомлять при `mdSignature` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-120">Notify when an `mdSignature` token moves.</span></span>|  
-|`MDNotifyTypeSpec`|<span data-ttu-id="e6476-121">Уведомлять при `mdTypeSpec` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-121">Notify when an `mdTypeSpec` token moves.</span></span>|  
-|`MDNotifyCustomAttribute`|<span data-ttu-id="e6476-122">Уведомлять при `mdCustomAttribute` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-122">Notify when an `mdCustomAttribute` token moves.</span></span>|  
-|`MDNotifySecurityValue`|<span data-ttu-id="e6476-123">Уведомлять при `mdSecurityValue` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-123">Notify when an `mdSecurityValue` token moves.</span></span>|  
-|`MDNotifyPermission`|<span data-ttu-id="e6476-124">Уведомлять при `mdPermission` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-124">Notify when an `mdPermission` token moves.</span></span>|  
-|`MDNotifyModuleRef`|<span data-ttu-id="e6476-125">Уведомлять при `mdModuleRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-125">Notify when an `mdModuleRef` token moves.</span></span>|  
-|`MDNotifyNameSpace`|<span data-ttu-id="e6476-126">Уведомлять при `mdNameSpace` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-126">Notify when an `mdNameSpace` token moves.</span></span>|  
-|`MDNotifyAssemblyRef`|<span data-ttu-id="e6476-127">Уведомлять при `mdAssemblyRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-127">Notify when an `mdAssemblyRef` token moves.</span></span>|  
-|`MDNotifyFile`|<span data-ttu-id="e6476-128">Уведомлять при `mdFile` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-128">Notify when an `mdFile` token moves.</span></span>|  
-|`MDNotifyExportedType`|<span data-ttu-id="e6476-129">Уведомлять при `mdExportedType` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-129">Notify when an `mdExportedType` token moves.</span></span>|  
-|`MDNotifyResource`|<span data-ttu-id="e6476-130">Уведомлять при `mdManifestResource` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="e6476-130">Notify when an `mdManifestResource` token moves.</span></span>|  
+|`MDNotifyDefault`|<span data-ttu-id="a560c-108">Уведомлять при `mdTypeRef` `mdMethodDef` `mdMemberRef` `mdFieldDef` перемещении токенов,, или.</span><span class="sxs-lookup"><span data-stu-id="a560c-108">Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move.</span></span>|  
+|`MDNotifyAll`|<span data-ttu-id="a560c-109">Уведомлять при перемещении токена.</span><span class="sxs-lookup"><span data-stu-id="a560c-109">Notify when any token moves.</span></span>|  
+|`MDNotifyNone`|<span data-ttu-id="a560c-110">Не уведомлять при перемещении токенов.</span><span class="sxs-lookup"><span data-stu-id="a560c-110">Do not notify when tokens move.</span></span>|  
+|`MDNotifyMethodDef`|<span data-ttu-id="a560c-111">Уведомлять при `mdMethodDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-111">Notify when an `mdMethodDef` token moves.</span></span>|  
+|`MDNotifyMemberRef`|<span data-ttu-id="a560c-112">Уведомлять при `mdMemberRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-112">Notify when an `mdMemberRef` token moves.</span></span>|  
+|`MDNotifyFieldDef`|<span data-ttu-id="a560c-113">Уведомлять при `mdFieldDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-113">Notify when an `mdFieldDef` token moves.</span></span>|  
+|`MDNotifyTypeRef`|<span data-ttu-id="a560c-114">Уведомлять при `mdTypeRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-114">Notify when an `mdTypeRef` token moves.</span></span>|  
+|`MDNotifyTypeDef`|<span data-ttu-id="a560c-115">Уведомлять при `mdTypeDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-115">Notify when an `mdTypeDef` token moves.</span></span>|  
+|`MDNotifyParamDef`|<span data-ttu-id="a560c-116">Уведомлять при `mdParamDef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-116">Notify when an `mdParamDef` token moves.</span></span>|  
+|`MDNotifyInterfaceImpl`|<span data-ttu-id="a560c-117">Уведомлять при `mdInterfaceImpl` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-117">Notify when an `mdInterfaceImpl` token moves.</span></span>|  
+|`MDNotifyProperty`|<span data-ttu-id="a560c-118">Уведомлять при `mdProperty` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-118">Notify when an `mdProperty` token moves.</span></span>|  
+|`MDNotifyEvent`|<span data-ttu-id="a560c-119">Уведомлять при `mdEvent` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-119">Notify when an `mdEvent` token moves.</span></span>|  
+|`MDNotifySignature`|<span data-ttu-id="a560c-120">Уведомлять при `mdSignature` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-120">Notify when an `mdSignature` token moves.</span></span>|  
+|`MDNotifyTypeSpec`|<span data-ttu-id="a560c-121">Уведомлять при `mdTypeSpec` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-121">Notify when an `mdTypeSpec` token moves.</span></span>|  
+|`MDNotifyCustomAttribute`|<span data-ttu-id="a560c-122">Уведомлять при `mdCustomAttribute` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-122">Notify when an `mdCustomAttribute` token moves.</span></span>|  
+|`MDNotifySecurityValue`|<span data-ttu-id="a560c-123">Уведомлять при `mdSecurityValue` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-123">Notify when an `mdSecurityValue` token moves.</span></span>|  
+|`MDNotifyPermission`|<span data-ttu-id="a560c-124">Уведомлять при `mdPermission` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-124">Notify when an `mdPermission` token moves.</span></span>|  
+|`MDNotifyModuleRef`|<span data-ttu-id="a560c-125">Уведомлять при `mdModuleRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-125">Notify when an `mdModuleRef` token moves.</span></span>|  
+|`MDNotifyNameSpace`|<span data-ttu-id="a560c-126">Уведомлять при `mdNameSpace` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-126">Notify when an `mdNameSpace` token moves.</span></span>|  
+|`MDNotifyAssemblyRef`|<span data-ttu-id="a560c-127">Уведомлять при `mdAssemblyRef` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-127">Notify when an `mdAssemblyRef` token moves.</span></span>|  
+|`MDNotifyFile`|<span data-ttu-id="a560c-128">Уведомлять при `mdFile` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-128">Notify when an `mdFile` token moves.</span></span>|  
+|`MDNotifyExportedType`|<span data-ttu-id="a560c-129">Уведомлять при `mdExportedType` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-129">Notify when an `mdExportedType` token moves.</span></span>|  
+|`MDNotifyResource`|<span data-ttu-id="a560c-130">Уведомлять при `mdManifestResource` перемещении маркера.</span><span class="sxs-lookup"><span data-stu-id="a560c-130">Notify when an `mdManifestResource` token moves.</span></span>|  
   
-## <a name="remarks"></a><span data-ttu-id="e6476-131">Примечания</span><span class="sxs-lookup"><span data-stu-id="e6476-131">Remarks</span></span>  
- <span data-ttu-id="e6476-132">Маркер может быть повторно сопоставлен (т. е. перемещен) во время слияния метаданных.</span><span class="sxs-lookup"><span data-stu-id="e6476-132">A token may be re-mapped (that is, moved) during a metadata merge.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="e6476-133">Требования</span><span class="sxs-lookup"><span data-stu-id="e6476-133">Requirements</span></span>  
- <span data-ttu-id="e6476-134">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e6476-134">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="e6476-135">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="e6476-135">**Header:** CorHdr.h</span></span>  
-  
- <span data-ttu-id="e6476-136">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e6476-136">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="e6476-137">См. также статью</span><span class="sxs-lookup"><span data-stu-id="e6476-137">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="a560c-131">Комментарии</span><span class="sxs-lookup"><span data-stu-id="a560c-131">Remarks</span></span>  
 
-- [<span data-ttu-id="e6476-138">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="e6476-138">Metadata Enumerations</span></span>](metadata-enumerations.md)
+ <span data-ttu-id="a560c-132">Маркер может быть повторно сопоставлен (т. е. перемещен) во время слияния метаданных.</span><span class="sxs-lookup"><span data-stu-id="a560c-132">A token may be re-mapped (that is, moved) during a metadata merge.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="a560c-133">Требования</span><span class="sxs-lookup"><span data-stu-id="a560c-133">Requirements</span></span>  
+
+ <span data-ttu-id="a560c-134">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a560c-134">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="a560c-135">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="a560c-135">**Header:** CorHdr.h</span></span>  
+  
+ <span data-ttu-id="a560c-136">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a560c-136">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="a560c-137">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a560c-137">See also</span></span>
+
+- [<span data-ttu-id="a560c-138">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="a560c-138">Metadata Enumerations</span></span>](metadata-enumerations.md)

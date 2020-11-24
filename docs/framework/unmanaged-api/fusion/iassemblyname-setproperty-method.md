@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 496c3add-f60b-4073-943f-d1bcf33330cb
 topic_type:
 - apiref
-ms.openlocfilehash: ffa1fa2f5e141728a56f1b598a1aae9602b2ac86
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 04b3e73e2166efb2ec0821d21da3da4c53b0ca4b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108218"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688657"
 ---
-# <a name="iassemblynamesetproperty-method"></a><span data-ttu-id="7f2fb-102">Метод IAssemblyName::SetProperty</span><span class="sxs-lookup"><span data-stu-id="7f2fb-102">IAssemblyName::SetProperty Method</span></span>
-<span data-ttu-id="7f2fb-103">Задает значение свойства, на которое ссылается указанный идентификатор свойства.</span><span class="sxs-lookup"><span data-stu-id="7f2fb-103">Sets the value of the property referenced by the specified property identifier.</span></span>  
+# <a name="iassemblynamesetproperty-method"></a><span data-ttu-id="6d777-102">Метод IAssemblyName::SetProperty</span><span class="sxs-lookup"><span data-stu-id="6d777-102">IAssemblyName::SetProperty Method</span></span>
+
+<span data-ttu-id="6d777-103">Задает значение свойства, на которое ссылается указанный идентификатор свойства.</span><span class="sxs-lookup"><span data-stu-id="6d777-103">Sets the value of the property referenced by the specified property identifier.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7f2fb-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7f2fb-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6d777-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6d777-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetProperty (  
@@ -35,23 +36,25 @@ HRESULT SetProperty (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="7f2fb-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="7f2fb-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="6d777-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="6d777-105">Parameters</span></span>  
+
  `PropertyId`  
- <span data-ttu-id="7f2fb-106">окне Уникальный идентификатор свойства, значение которого будет задано.</span><span class="sxs-lookup"><span data-stu-id="7f2fb-106">[in] The unique identifier of the property whose value will be set.</span></span>  
+ <span data-ttu-id="6d777-106">окне Уникальный идентификатор свойства, значение которого будет задано.</span><span class="sxs-lookup"><span data-stu-id="6d777-106">[in] The unique identifier of the property whose value will be set.</span></span>  
   
  `pvProperty`  
- <span data-ttu-id="7f2fb-107">окне Значение, для которого задается свойство, на которое ссылается `PropertyId`.</span><span class="sxs-lookup"><span data-stu-id="7f2fb-107">[in] The value to which to set the property referenced by `PropertyId`.</span></span>  
+ <span data-ttu-id="6d777-107">окне Значение, для которого задается свойство, на которое ссылается `PropertyId` .</span><span class="sxs-lookup"><span data-stu-id="6d777-107">[in] The value to which to set the property referenced by `PropertyId`.</span></span>  
   
  `cbProperty`  
- <span data-ttu-id="7f2fb-108">окне Размер `pvProperty`в байтах.</span><span class="sxs-lookup"><span data-stu-id="7f2fb-108">[in] The size, in bytes, of `pvProperty`.</span></span>  
+ <span data-ttu-id="6d777-108">окне Размер (в байтах) `pvProperty` .</span><span class="sxs-lookup"><span data-stu-id="6d777-108">[in] The size, in bytes, of `pvProperty`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="7f2fb-109">Требования</span><span class="sxs-lookup"><span data-stu-id="7f2fb-109">Requirements</span></span>  
- <span data-ttu-id="7f2fb-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7f2fb-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="7f2fb-111">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="7f2fb-111">**Header:** Fusion.h</span></span>  
-  
- <span data-ttu-id="7f2fb-112">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7f2fb-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="7f2fb-113">См. также</span><span class="sxs-lookup"><span data-stu-id="7f2fb-113">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="6d777-109">Требования</span><span class="sxs-lookup"><span data-stu-id="6d777-109">Requirements</span></span>  
 
-- [<span data-ttu-id="7f2fb-114">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="7f2fb-114">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
+ <span data-ttu-id="6d777-110">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6d777-110">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="6d777-111">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="6d777-111">**Header:** Fusion.h</span></span>  
+  
+ <span data-ttu-id="6d777-112">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6d777-112">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="6d777-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6d777-113">See also</span></span>
+
+- [<span data-ttu-id="6d777-114">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="6d777-114">IAssemblyName Interface</span></span>](iassemblyname-interface.md)

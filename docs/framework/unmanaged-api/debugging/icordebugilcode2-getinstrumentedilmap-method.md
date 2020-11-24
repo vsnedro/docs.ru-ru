@@ -12,19 +12,20 @@ api_type:
 ms.assetid: 7a4e3085-8f95-40ef-a4be-7d6146f47ce2
 topic_type:
 - apiref
-ms.openlocfilehash: c6fdb7040620bb7a5b6aea6e0dc41e08d6f346d0
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 097502f4321531922d6c4385e2eccbf32f66f026
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210362"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688358"
 ---
-# <a name="icordebugilcode2getinstrumentedilmap-method"></a><span data-ttu-id="7e14c-102">Метод ICorDebugILCode2::GetInstrumentedILMap</span><span class="sxs-lookup"><span data-stu-id="7e14c-102">ICorDebugILCode2::GetInstrumentedILMap Method</span></span>
-<span data-ttu-id="7e14c-103">[Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]</span><span class="sxs-lookup"><span data-stu-id="7e14c-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
+# <a name="icordebugilcode2getinstrumentedilmap-method"></a><span data-ttu-id="4e583-102">Метод ICorDebugILCode2::GetInstrumentedILMap</span><span class="sxs-lookup"><span data-stu-id="4e583-102">ICorDebugILCode2::GetInstrumentedILMap Method</span></span>
+
+<span data-ttu-id="4e583-103">[Поддерживается в .NET Framework 4.5.2 и более поздних версиях.]</span><span class="sxs-lookup"><span data-stu-id="4e583-103">[Supported in the .NET Framework 4.5.2 and later versions]</span></span>  
   
- <span data-ttu-id="7e14c-104">Возвращает сопоставление смещений инструментированного профилировщиком промежуточного языка со смещениями промежуточного языка исходного метода для этого экземпляра.</span><span class="sxs-lookup"><span data-stu-id="7e14c-104">Returns a map from profiler-instrumented intermediate language (IL) offsets to original method IL offsets for this instance.</span></span>  
+ <span data-ttu-id="4e583-104">Возвращает сопоставление смещений инструментированного профилировщиком промежуточного языка со смещениями промежуточного языка исходного метода для этого экземпляра.</span><span class="sxs-lookup"><span data-stu-id="4e583-104">Returns a map from profiler-instrumented intermediate language (IL) offsets to original method IL offsets for this instance.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7e14c-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7e14c-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="4e583-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="4e583-105">Syntax</span></span>  
   
 ```cpp
 HRESULT GetInstrumentedILMap(  
@@ -34,34 +35,37 @@ HRESULT GetInstrumentedILMap(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="7e14c-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="7e14c-106">Parameters</span></span>  
- <span data-ttu-id="7e14c-107">cMap</span><span class="sxs-lookup"><span data-stu-id="7e14c-107">cMap</span></span>  
- <span data-ttu-id="7e14c-108">[в] Емкость хранилища массива `map`.</span><span class="sxs-lookup"><span data-stu-id="7e14c-108">[in] The storage capacity of the `map` array.</span></span> <span data-ttu-id="7e14c-109">Дополнительные сведения см. в разделе «Примечания».</span><span class="sxs-lookup"><span data-stu-id="7e14c-109">See the Remarks section for more information.</span></span>  
-  
- <span data-ttu-id="7e14c-110">pcMap</span><span class="sxs-lookup"><span data-stu-id="7e14c-110">pcMap</span></span>  
- <span data-ttu-id="7e14c-111">[из] Количество значений COR_IL_MAP, записанных в массив сопоставлений.</span><span class="sxs-lookup"><span data-stu-id="7e14c-111">[out] The number of COR_IL_MAP values written to the map array.</span></span>  
-  
- <span data-ttu-id="7e14c-112">карта</span><span class="sxs-lookup"><span data-stu-id="7e14c-112">map</span></span>  
- <span data-ttu-id="7e14c-113">[из] Массив значений COR_IL_MAP, предоставляющий информацию о сопоставлениях промежуточного языка, инструментированного профилировщиком, и промежуточного языка исходного метода.</span><span class="sxs-lookup"><span data-stu-id="7e14c-113">[out] An array of COR_IL_MAP values that provide information on mappings from profiler-instrumented IL to the IL of the original method.</span></span>  
-  
-## <a name="remarks"></a><span data-ttu-id="7e14c-114">Remarks</span><span class="sxs-lookup"><span data-stu-id="7e14c-114">Remarks</span></span>  
- <span data-ttu-id="7e14c-115">Если профилировщик задает сопоставление путем вызова метода [ICorProfilerInfo:: сетилинструментедкодемап](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md) , отладчик может вызвать этот метод, чтобы получить сопоставление и использовать внутреннее сопоставление при вычислении смещений Il для трассировок стека и времени существования переменных.</span><span class="sxs-lookup"><span data-stu-id="7e14c-115">If the profiler sets the mapping by calling the [ICorProfilerInfo::SetILInstrumentedCodeMap](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md) method, the debugger can call this method to retrieve the mapping and to use the mapping internally when calculating IL offsets for stack traces and variable lifetimes.</span></span>  
-  
- <span data-ttu-id="7e14c-116">Если значение `cMap` равно 0 и `pcMap` не равно**null**, то параметру присваивается `pcMap` число доступных COR_IL_MAP значений.</span><span class="sxs-lookup"><span data-stu-id="7e14c-116">If `cMap` is 0 and `pcMap` is non-**null**, `pcMap` is set to the number of available COR_IL_MAP values.</span></span> <span data-ttu-id="7e14c-117">Если значение `cMap` не равно 0, оно обозначает емкость хранилища массива `map`.</span><span class="sxs-lookup"><span data-stu-id="7e14c-117">If `cMap` is non-zero, it represents the storage capacity of the `map` array.</span></span> <span data-ttu-id="7e14c-118">Когда метод возвращает значение, `map` содержит максимум `cMap` элементов и `pcMap` задается числом COR_IL_MAP значений, фактически записанных в `map` массив.</span><span class="sxs-lookup"><span data-stu-id="7e14c-118">When the method returns, `map` contains a maximum of `cMap` items, and `pcMap` is set to the number of COR_IL_MAP values actually written to the `map` array.</span></span>  
-  
- <span data-ttu-id="7e14c-119">Если промежуточный язык не инструментирован или профилировщик не предоставил сопоставление, этот метод возвращает значение `S_OK` и присваивает `pcMap` значение 0.</span><span class="sxs-lookup"><span data-stu-id="7e14c-119">If the IL hasn't been instrumented or the mapping wasn't provided by a profiler, this method returns `S_OK` and sets `pcMap` to 0.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="7e14c-120">Требования</span><span class="sxs-lookup"><span data-stu-id="7e14c-120">Requirements</span></span>  
- <span data-ttu-id="7e14c-121">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7e14c-121">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="7e14c-122">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="7e14c-122">**Header:** CorDebug.idl, CorDebug.h</span></span>  
-  
- <span data-ttu-id="7e14c-123">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="7e14c-123">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="7e14c-124">**.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7e14c-124">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="7e14c-125">См. также</span><span class="sxs-lookup"><span data-stu-id="7e14c-125">See also</span></span>
+## <a name="parameters"></a><span data-ttu-id="4e583-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="4e583-106">Parameters</span></span>  
 
-- [<span data-ttu-id="7e14c-126">ICorProfilerInfo::SetILInstrumentedCodeMap</span><span class="sxs-lookup"><span data-stu-id="7e14c-126">ICorProfilerInfo::SetILInstrumentedCodeMap</span></span>](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md)
-- [<span data-ttu-id="7e14c-127">Интерфейс ICorDebugILCode2</span><span class="sxs-lookup"><span data-stu-id="7e14c-127">ICorDebugILCode2 Interface</span></span>](icordebugilcode2-interface.md)
-- [<span data-ttu-id="7e14c-128">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="7e14c-128">Debugging Interfaces</span></span>](debugging-interfaces.md)
+ <span data-ttu-id="4e583-107">cMap</span><span class="sxs-lookup"><span data-stu-id="4e583-107">cMap</span></span>  
+ <span data-ttu-id="4e583-108">[в] Емкость хранилища массива `map`.</span><span class="sxs-lookup"><span data-stu-id="4e583-108">[in] The storage capacity of the `map` array.</span></span> <span data-ttu-id="4e583-109">Дополнительные сведения см. в разделе "Примечания".</span><span class="sxs-lookup"><span data-stu-id="4e583-109">See the Remarks section for more information.</span></span>  
+  
+ <span data-ttu-id="4e583-110">pcMap</span><span class="sxs-lookup"><span data-stu-id="4e583-110">pcMap</span></span>  
+ <span data-ttu-id="4e583-111">[из] Количество значений COR_IL_MAP, записанных в массив сопоставлений.</span><span class="sxs-lookup"><span data-stu-id="4e583-111">[out] The number of COR_IL_MAP values written to the map array.</span></span>  
+  
+ <span data-ttu-id="4e583-112">карта</span><span class="sxs-lookup"><span data-stu-id="4e583-112">map</span></span>  
+ <span data-ttu-id="4e583-113">[из] Массив значений COR_IL_MAP, предоставляющий информацию о сопоставлениях промежуточного языка, инструментированного профилировщиком, и промежуточного языка исходного метода.</span><span class="sxs-lookup"><span data-stu-id="4e583-113">[out] An array of COR_IL_MAP values that provide information on mappings from profiler-instrumented IL to the IL of the original method.</span></span>  
+  
+## <a name="remarks"></a><span data-ttu-id="4e583-114">Комментарии</span><span class="sxs-lookup"><span data-stu-id="4e583-114">Remarks</span></span>  
+
+ <span data-ttu-id="4e583-115">Если профилировщик задает сопоставление путем вызова метода [ICorProfilerInfo:: сетилинструментедкодемап](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md) , отладчик может вызвать этот метод, чтобы получить сопоставление и использовать внутреннее сопоставление при вычислении смещений Il для трассировок стека и времени существования переменных.</span><span class="sxs-lookup"><span data-stu-id="4e583-115">If the profiler sets the mapping by calling the [ICorProfilerInfo::SetILInstrumentedCodeMap](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md) method, the debugger can call this method to retrieve the mapping and to use the mapping internally when calculating IL offsets for stack traces and variable lifetimes.</span></span>  
+  
+ <span data-ttu-id="4e583-116">Если значение `cMap` равно 0 и `pcMap` не равно **null**, то параметру присваивается `pcMap` число доступных COR_IL_MAP значений.</span><span class="sxs-lookup"><span data-stu-id="4e583-116">If `cMap` is 0 and `pcMap` is non-**null**, `pcMap` is set to the number of available COR_IL_MAP values.</span></span> <span data-ttu-id="4e583-117">Если значение `cMap` не равно 0, оно обозначает емкость хранилища массива `map`.</span><span class="sxs-lookup"><span data-stu-id="4e583-117">If `cMap` is non-zero, it represents the storage capacity of the `map` array.</span></span> <span data-ttu-id="4e583-118">Когда метод возвращает значение, `map` содержит максимум `cMap` элементов и `pcMap` задается числом COR_IL_MAP значений, фактически записанных в `map` массив.</span><span class="sxs-lookup"><span data-stu-id="4e583-118">When the method returns, `map` contains a maximum of `cMap` items, and `pcMap` is set to the number of COR_IL_MAP values actually written to the `map` array.</span></span>  
+  
+ <span data-ttu-id="4e583-119">Если промежуточный язык не инструментирован или профилировщик не предоставил сопоставление, этот метод возвращает значение `S_OK` и присваивает `pcMap` значение 0.</span><span class="sxs-lookup"><span data-stu-id="4e583-119">If the IL hasn't been instrumented or the mapping wasn't provided by a profiler, this method returns `S_OK` and sets `pcMap` to 0.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="4e583-120">Требования</span><span class="sxs-lookup"><span data-stu-id="4e583-120">Requirements</span></span>  
+
+ <span data-ttu-id="4e583-121">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="4e583-121">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="4e583-122">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="4e583-122">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+  
+ <span data-ttu-id="4e583-123">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="4e583-123">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="4e583-124">**.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4e583-124">**.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="4e583-125">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="4e583-125">See also</span></span>
+
+- [<span data-ttu-id="4e583-126">ICorProfilerInfo::SetILInstrumentedCodeMap</span><span class="sxs-lookup"><span data-stu-id="4e583-126">ICorProfilerInfo::SetILInstrumentedCodeMap</span></span>](../profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md)
+- [<span data-ttu-id="4e583-127">Интерфейс ICorDebugILCode2</span><span class="sxs-lookup"><span data-stu-id="4e583-127">ICorDebugILCode2 Interface</span></span>](icordebugilcode2-interface.md)
+- [<span data-ttu-id="4e583-128">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="4e583-128">Debugging Interfaces</span></span>](debugging-interfaces.md)
