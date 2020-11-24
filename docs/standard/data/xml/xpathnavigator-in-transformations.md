@@ -1,17 +1,16 @@
 ---
 title: XPathNavigator в преобразованиях
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 118f97d1-7110-4d1b-b0bd-4143252c0bb0
-ms.openlocfilehash: 59fb399d80e1d4d33d1a3c659d2ff74a37fd367d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b28a2d4991e2e4b14027460c0f3c97145862da2a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282822"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818379"
 ---
 # <a name="xpathnavigator-in-transformations"></a>XPathNavigator в преобразованиях
 Класс <xref:System.Xml.XPath.XPathNavigator> обеспечивает случайный доступ только для чтения и предназначен для использования в качестве входа в языке XSLT. Он реализован в <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlDataDocument> и <xref:System.Xml.XmlDocument>. Класс <xref:System.Xml.XPath.XPathNavigator> основан на модели данных консорциума World Wide Web Consortium (W3C), описанной в разделе 5 рекомендаций по языку XPath.  

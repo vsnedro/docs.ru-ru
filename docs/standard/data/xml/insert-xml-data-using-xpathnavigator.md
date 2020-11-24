@@ -1,18 +1,17 @@
 ---
 title: Вставка XML-данных с помощью XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 ms.assetid: 2ed8c28b-b88d-4be7-9c87-92df01f0821f
-ms.openlocfilehash: 1dbe1a709f7c1b527a1754ab943a0a10ff52c6e8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1a0fa96c0fc4db1ab005961728e81b6940cd00e6
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289191"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822716"
 ---
 # <a name="insert-xml-data-using-xpathnavigator"></a>Вставка XML-данных с помощью XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет набор методов для вставки в XML-документ одноуровневых узлов, дочерних узлов и узлов атрибутов. Для использования этих методов необходимо сделать редактируемым объект <xref:System.Xml.XPath.XPathNavigator>, то есть установить для свойства <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> значение `true`.  

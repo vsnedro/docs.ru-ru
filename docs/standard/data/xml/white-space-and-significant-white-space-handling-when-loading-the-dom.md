@@ -1,14 +1,13 @@
 ---
 title: Обработка незначительных и значительных пробелов при загрузке DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 1b141a0a-50d8-4ebd-83cd-a84449bb22b2
-ms.openlocfilehash: 520d965737b82fda082aa44029f2a4042d948deb
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: dbb0962dc47ff5847ac78ed4f6252bf8ab9674aa
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281781"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818483"
 ---
 # <a name="white-space-and-significant-white-space-handling-when-loading-the-dom"></a>Обработка незначительных и значительных пробелов при загрузке DOM
 При загрузке документа можно установить параметр, требующий сохранять пробелы и создавать узлы **XmlWhitespace** в дереве документа. Чтобы создавать узлы пробелов, задайте для свойства **PreserveWhitespace** значение true. Если свойство имеет значение **false**, используемое по умолчанию, то узлы пробелов не создаются. Узлы существенных пробелов сохраняются всегда, и узлы **XmlSignificantWhitespace** всегда создаются в памяти для представления этих данных, независимо от значения флага **PreserveWhitespace**.  

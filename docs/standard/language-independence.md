@@ -1,18 +1,17 @@
 ---
 title: Независимость от языка и независимые от языка компоненты
 description: Сведения о том, как можно вести разработку на одном из множества языков, поддерживаемых в .NET, например C#, C++/CLI, F#, IronPython, VB, Visual COBOL и PowerShell.
-ms.date: 07/22/2016
 dev_langs:
 - csharp
 - vb
-ms.technology: dotnet-standard
+ms.date: 07/22/2016
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
-ms.openlocfilehash: 524f8dc9838d7c438e8155da683c4fa5b01f36a3
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 259db1b9d33dd3b068f4d4fa18d2118db34bf0b0
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819088"
 ---
 # <a name="language-independence-and-language-independent-components"></a>Независимость от языка и независимые от языка компоненты
 
@@ -2042,9 +2041,9 @@ End Class
 
 Событие определяется именем и типом. Тип события является делегатом, который используется для обозначения события. Например, событие `DbConnection.StateChange` имеет тип `StateChangeEventHandler`. Помимо события также определяются три метода с именами, производными от имени события, которые обеспечивают реализацию события и имеют в метаданных сборки атрибут `SpecialName`:
 
-* Метод добавления обработчика событий с именем `add`_*EventName*. Например, метод подписки для события `DbConnection.StateChange` называется `add_StateChange`.
+* Метод добавления обработчика событий с именем `add`_ *EventName*. Например, метод подписки для события `DbConnection.StateChange` называется `add_StateChange`.
 
-* Метод удаления обработчика событий с именем `remove`_*EventName*. Например, метод удаления для события `DbConnection.StateChange` называется `remove_StateChange`.
+* Метод удаления обработчика событий с именем `remove`_ *EventName*. Например, метод удаления для события `DbConnection.StateChange` называется `remove_StateChange`.
 
 * Метод, который указывает, что возникло событие, с именем `raise`\_*EventName*.
 

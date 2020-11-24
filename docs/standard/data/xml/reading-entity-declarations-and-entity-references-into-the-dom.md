@@ -1,14 +1,13 @@
 ---
 title: Считывание объявлений сущностей и ссылок на сущности в DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 86dba977-5cc4-4567-964f-027ffabc47b2
-ms.openlocfilehash: 41d88de9ee988a29c54c6e2c6c437963b9f79cf8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 01a90ac467bec5576005c16355617c03b6d38389
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289880"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818717"
 ---
 # <a name="reading-entity-declarations-and-entity-references-into-the-dom"></a>Считывание объявлений сущностей и ссылок на сущности в DOM
 Сущность является декларацией, определяющей имя, которое будет использоваться в XML-документе вместо содержимого или разметки. Сущность состоит из двух частей. Во-первых, в декларации сущности необходимо связать имя с заменяющим его содержимым. Декларация сущности создается с помощью синтаксиса `<!ENTITY name "value">` определения DTD или схемы XML. Во-вторых, определенное в декларации сущности имя впоследствии используется в XML-документе. При использовании в XML-документе оно называется ссылкой на сущность. Например, следующая декларация сущности определяет сущность с именем `publisher`, связанную с содержимым «Microsoft Press».  

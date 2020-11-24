@@ -1,17 +1,16 @@
 ---
 title: Неупорядоченное извлечение узлов по имени или индексу
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2038a90b-92af-4a0a-baaa-08e688d95194
-ms.openlocfilehash: 6847f3c5d233b720f8f4c41cfc52ac663e5e810f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e0b3b167dc43710e97a5f67fb0eb54c4742e1572
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288632"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819335"
 ---
 # <a name="unordered-node-retrieval-by-name-or-index"></a>Неупорядоченное извлечение узлов по имени или индексу
 Класс **XmlNamedNodeMap** описан в спецификации консорциума W3C как NamedNodeMap. Он нужен для обработки неупорядоченного набора узлов с возможностью ссылаться на узлы по их именам и индексам. Единственный способ доступа к классу **XmlNamedNodeMap** — возврат **XmlNamedNodeMap** через метод или свойство. Есть три метода или свойства, возвращающих класс **XmlNamedNodeMap**:  

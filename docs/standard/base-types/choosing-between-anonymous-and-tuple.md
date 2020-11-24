@@ -4,13 +4,12 @@ description: Сведения о том, как сделать выбор меж
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.technology: dotnet-standard
-ms.openlocfilehash: 9c186133a639faf187c89d872856d860a20f5a2d
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: f8465b2f22ecfafd739355ddd35635e2eee49232
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174222"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94823203"
 ---
 # <a name="choosing-between-anonymous-and-tuple-types"></a>Выбор между анонимными типами и кортежами
 

@@ -1,17 +1,16 @@
 ---
 title: Вычисление выражения XPath с помощью класса XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2913ccf3-f932-4363-8028-9e2d22ce6093
-ms.openlocfilehash: b6e18fe02a828ae307ac7ade15650d3303f2600c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7ee487012453c7edfef4f071e0cfc843efff0c4f
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287809"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818626"
 ---
 # <a name="evaluate-xpath-expressions-using-xpathnavigator"></a>Вычисление выражения XPath с помощью класса XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> содержит метод <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> для вычисления выражения Xpath. Метод <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> принимает выражение XPath, вычисляет его и возвращает соответствующий стандарту W3C тип XPath Boolean, Number, String или Node Set, основанный на результате вычисления выражения XPath.  

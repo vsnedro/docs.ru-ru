@@ -1,16 +1,15 @@
 ---
 title: SpinLock
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - synchronization primitives, SpinLock
 ms.assetid: f9af93bb-7a0d-4ba5-afe8-74f48b6b6958
-ms.openlocfilehash: a5202be5e3055702954ad7a1565999ad2496eaea
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 071bde6e8b32d5712256e24c83d713cd63f2bffb
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291127"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819010"
 ---
 # <a name="spinlock"></a>SpinLock
 Структура <xref:System.Threading.SpinLock> — это примитив низкоуровневой синхронизации со взаимоисключающей блокировкой, которая выполняет цикл ожидания, пока не получит блокировку. На многоядерных компьютерах, если предполагается короткое время ожидания и минимальный риск состязаний, <xref:System.Threading.SpinLock> может выполняться быстрее, чем другие виды блокировок. Но мы рекомендуем использовать <xref:System.Threading.SpinLock> только в том случае, если в ходе профилирования подтверждается существенное ухудшение производительности при работе с методом <xref:System.Threading.Monitor?displayProperty=nameWithType> и методами <xref:System.Threading.Interlocked>.  

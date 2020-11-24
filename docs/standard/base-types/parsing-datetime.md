@@ -2,7 +2,6 @@
 title: Преобразование строк в формат даты и времени
 description: Ознакомьтесь с методами анализа строк, представляющих даты и время, и научитесь создавать строки в формате даты и времени из отдельных строк даты и строк времени.
 ms.date: 02/15/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - base types, parsing strings
 - DateTime object
 - time strings
-ms.openlocfilehash: f6ac4672a81db7047069f726f7eb1b920a82b3db
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 557955b5c47695dea686527fd99653ef2efe19bb
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92889040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94821929"
 ---
 # <a name="parse-date-and-time-strings-in-net"></a>Синтаксический анализ строк даты и времени в .NET
 
@@ -53,7 +52,7 @@ ms.locfileid: "92889040"
 Ниже приведен пример использования метода <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> для преобразования `string` в <xref:System.DateTime>. В этом примере используются язык и региональные параметры, связанные с текущим потоком. Если класс <xref:System.Globalization.CultureInfo>, связанный с текущим значением языка и региональных параметров, не может выполнить синтаксический анализ исходной строки, создается исключение <xref:System.FormatException>.
 
 > [!TIP]
-> Все примеры C# в этой статье выполняются в браузере. Нажмите кнопку **Выполнить** , чтобы просмотреть выходные данные. Вы можете поэкспериментировать, изменяя их значения.
+> Все примеры C# в этой статье выполняются в браузере. Нажмите кнопку **Выполнить**, чтобы просмотреть выходные данные. Вы можете поэкспериментировать, изменяя их значения.
 
 > [!NOTE]
 > Эти примеры для [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/how-to/conversions) и [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/how-to/conversions) см. в репозитории с документацией GitHub.

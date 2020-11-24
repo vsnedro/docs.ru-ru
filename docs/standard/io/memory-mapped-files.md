@@ -2,7 +2,6 @@
 title: Сопоставленные в памяти файлы
 description: Вы можете ознакомиться с отображенными в памяти файлами в .NET, которые хранят содержимое файлов в виртуальной памяти, и разрешить приложениям изменять этот файл путем непосредственной записи в память.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - memory-mapped files
 - inter-process communication
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-ms.openlocfilehash: e6f9a760d7673eecf161b1d84d890cc14d09235e
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: dc0da9842df7b0a827293c42d80ccdd418a043b2
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93189021"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819205"
 ---
 # <a name="memory-mapped-files"></a>Сопоставленные в памяти файлы
 

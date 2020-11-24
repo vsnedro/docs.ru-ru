@@ -1,14 +1,13 @@
 ---
 title: Модель объектов схемы XML (SOM)
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: a897a599-ffd1-43f9-8807-e58c8a7194cd
-ms.openlocfilehash: 1de9fdf9950ba3ae356779ca802afb71f24a345e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b64e5bb88d5754447d8f75577f3c51f2aa467bb5
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290322"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818405"
 ---
 # <a name="xml-schema-object-model-som"></a>Модель объектов схемы XML (SOM)
 Схема XML - это мощное и сложное средство создания и проверки структуры в совместимых XML-документах. Схема, так же как и моделирование данных в реляционной базе данных, позволяет определять структуру XML-документов путем указания элементов, которые могут использоваться в документах, а также структуры и типов, которых эти элементы должны придерживаться, чтобы быть допустимыми с точки зрения этой конкретной схемы.  

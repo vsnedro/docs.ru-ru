@@ -2,18 +2,17 @@
 title: Синхронизация данных для многопоточности
 description: Узнайте, как синхронизировать данные для многопоточности в .NET. Выберите стратегии, такие как синхронизированные области кода, синхронизация вручную или синхронизированные контексты.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - synchronization, threads
 - threading [.NET], synchronizing threads
 - managed threading
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-ms.openlocfilehash: 63ee85f3d8bab865ce34566ec381d23676b27991
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 188090a968b49bd77279d35dc41f00e808299938
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188592"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819647"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>Синхронизация данных для многопоточности
 
@@ -62,7 +61,7 @@ ms.locfileid: "93188592"
 ### <a name="compiler-support"></a>Поддержка компилятора  
  Visual Basic и C# поддерживают ключевое слово языка для блокировки объекта с помощью <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> и <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>. Visual Basic поддерживает оператор [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md), а C# поддерживает оператор [lock](../../csharp/language-reference/keywords/lock-statement.md).  
   
- В обоих случаях, если в коде блока возникает исключение, блокировка, введенная оператором **lock** или **SyncLock** , автоматически снимается. Компиляторы C# и Visual Basic выдают блок **try**/**finally** с **Monitor.Enter** в начале оператора try и **Monitor.Exit** в блоке **finally**. Если исключение возникает в блоке **lock** или **SyncLock** , запускается обработчик **finally** , позволяющий выполнить очистку.  
+ В обоих случаях, если в коде блока возникает исключение, блокировка, введенная оператором **lock** или **SyncLock**, автоматически снимается. Компиляторы C# и Visual Basic выдают блок **try**/**finally** с **Monitor.Enter** в начале оператора try и **Monitor.Exit** в блоке **finally**. Если исключение возникает в блоке **lock** или **SyncLock**, запускается обработчик **finally**, позволяющий выполнить очистку.  
   
 ## <a name="synchronized-context"></a>Синхронизированные контексты  
 

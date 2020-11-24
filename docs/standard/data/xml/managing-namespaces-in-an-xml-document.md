@@ -2,14 +2,13 @@
 title: Управление пространствами имен в XML-документе
 description: Узнайте, как управлять пространствами имен в XML-документе. Пространства имен XML связывают имена элементов и атрибутов в XML-документе с пользовательскими и стандартными URI.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
-ms.openlocfilehash: 500c477eaa98b2858573e1012c62db4bc6c68137
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ab9dceed66e65ea74d0996071ab3a17057e43fc3
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548095"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822624"
 ---
 # <a name="managing-namespaces-in-an-xml-document"></a>Управление пространствами имен в XML-документе
 Пространства имен XML связывают имена элементов и атрибутов в XML-документе с пользовательскими и стандартными URI. Для создания этих связей определяются префиксы для URI пространства имен, с помощью которых затем квалифицируются имена элементов и атрибутов в XML-данных. Пространства имен предотвращают конфликты имен элементов и атрибутов, а также позволяют обрабатывать и проверять элементы и атрибуты с одним и тем же именем.  

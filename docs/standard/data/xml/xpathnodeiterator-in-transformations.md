@@ -1,17 +1,16 @@
 ---
 title: XPathNodeIterator в преобразованиях
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2bc6ddc6-674a-4f75-b264-abc35e4e5857
-ms.openlocfilehash: 88b8f4acbb9fa92d71659ee006ee544275353954
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: cd8320071f1de15d503c94c138c02cab5742685c
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282757"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818437"
 ---
 # <a name="xpathnodeiterator-in-transformations"></a>XPathNodeIterator в преобразованиях
 Класс <xref:System.Xml.XPath.XPathNodeIterator> обеспечивает методы перебора набора узлов, созданного в результате выполнения запроса XPath или в результате преобразования фрагмента результирующего дерева в набор узлов с помощью метода node-set. Класс <xref:System.Xml.XPath.XPathNodeIterator> дает возможность перебирать узлы внутри этого набора узлов. По получении набора узлов класс <xref:System.Xml.XPath.XPathNodeIterator> предоставляет однопроходные курсоры только для чтения к выделенному набору узлов. Набор узлов создается в порядке расположения узлов в документе, поэтому вызов этого метода приводит к переходу на следующий узел документа. Класс <xref:System.Xml.XPath.XPathNodeIterator> не выполняет построение дерева узлов для всех узлов набора. Вместо этого он предоставляет окно данных размером в один узел, в котором при переходе от одного элемента дерева к другому отображается базовый узел, на который указывает итератор. Методы и свойства класса <xref:System.Xml.XPath.XPathNodeIterator> дают возможность получать сведения из текущего узла. Список доступных методов и свойств см. здесь: <xref:System.Windows.Forms.ToolBar>.  

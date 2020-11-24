@@ -2,17 +2,16 @@
 title: Запросы XPath и пространства имен
 description: Сведения о запросах XPath и пространствах имен. Запросы XPath учитывают наличие пространств имен в XML-документе и могут использовать префиксы пространств имен для дополнения имен элементов и атрибутов.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
-ms.openlocfilehash: e8533d372a747432201dfbc4d879ecd3fbceaf8e
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: a97ff5afef23c361b1f675d2f07f43b3bc5df299
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84769253"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818392"
 ---
 # <a name="xpath-queries-and-namespaces"></a>Запросы XPath и пространства имен
 Запросы XPath учитывают наличие пространств имен в XML-документе и могут использовать префиксы пространств имен для дополнения имен элементов и атрибутов. Добавление префикса пространства имен к именам элементов и атрибутов ограничивает набор узлов, возвращаемых запросом XPath, лишь теми узлами, которые принадлежат к определенному пространству имен.  

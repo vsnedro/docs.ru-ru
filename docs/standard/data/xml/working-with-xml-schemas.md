@@ -1,14 +1,13 @@
 ---
 title: Работа с XML-схемами
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: bbbcc70c-bf9a-4f6a-af72-1bab5384a187
-ms.openlocfilehash: f239d67d959c1f7a0bfebfaaaa49de9cf9c9a111
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: adad77eaefd85abf111a25180b7289af997a7222
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818418"
 ---
 # <a name="working-with-xml-schemas"></a>Работа с XML-схемами
 Чтобы определить структуру XML-документа, связи его элементов, типы данных, ограничения на содержимое, используется определение типа документа (DTD) или схема XSD. XML-документ имеет правильный формат, если он соответствует всем синтаксическим требованиям Рекомендации консорциума W3C по языку XML 1.0. Однако документ считается допустимым только в том случае, если он одновременно имеет правильный формат и соответствует ограничениям, заданным определением DTD или схемой. Следовательно, хотя все допустимые XML-документы имеют правильный формат, не все XML-документы правильного формата, являются допустимыми.  

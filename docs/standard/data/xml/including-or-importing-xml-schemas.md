@@ -1,18 +1,17 @@
 ---
 title: Включение или импорт XML-схем
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
-ms.openlocfilehash: f6c2829d45db147c81592c00710f04168b40679e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f382165ca8e2b972c47a080244a3d0054b5eb604
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287705"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822741"
 ---
 # <a name="including-or-importing-xml-schemas"></a>Включение или импорт XML-схем
 Схема XML может содержать элементы `<xs:import />`, `<xs:include />` и `<xs:redefine />`. Эти элементы схемы ссылаются на другие схемы XML, которые можно использовать в дополнение к структуре схемы, их включающей или импортирующей. Классы <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> и <xref:System.Xml.Schema.XmlSchemaRedefine> сопоставляются с этими элементами в API модели SOM.  

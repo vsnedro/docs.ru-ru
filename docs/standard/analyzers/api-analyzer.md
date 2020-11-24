@@ -3,13 +3,12 @@ title: Анализатор .NET API
 description: Узнайте, как анализатор .NET API помогает выявлять устаревшие интерфейсы API и проблемы с совместимостью платформ.
 author: oliag
 ms.date: 02/20/2020
-ms.technology: dotnet-standard
-ms.openlocfilehash: a689ae347efbc8c2dd933b2f6920ac6cc06cda7d
-ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
+ms.openlocfilehash: 47ef2368692aee56ebd3db7803cbde7368d38049
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91756199"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819608"
 ---
 # <a name="net-api-analyzer"></a>Анализатор .NET API
 

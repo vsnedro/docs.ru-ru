@@ -1,14 +1,13 @@
 ---
 title: Поддержка функции msxsl:node-set()
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
-ms.openlocfilehash: 30652d8cbaac333cc1cb35954742b16dc7c4764b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 26ae3014af93377dc106b5638ba194bd38e3dc9e
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818548"
 ---
 # <a name="support-for-the-msxslnode-set-function"></a>Поддержка функции msxsl:node-set()
 Функция `msxsl:node-set` позволяет преобразовать фрагмент дерева результатов в набор узлов. Получаемый в результате набор узлов всегда содержит один узел, который является корневым узлом дерева.  

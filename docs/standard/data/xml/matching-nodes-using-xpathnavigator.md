@@ -1,17 +1,16 @@
 ---
 title: Соответствие узлов с помощью XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: e6848c47-ee5d-401a-89a5-50b5eed40f30
-ms.openlocfilehash: 47b0ba7e705ad602825dcca3f24c207362174a4c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e7e9d63ed4b24eb0e594c464038590aa9dc99910
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289126"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822533"
 ---
 # <a name="matching-nodes-using-xpathnavigator"></a>Соответствие узлов с помощью XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> содержит метод <xref:System.Xml.XPath.XPathNavigator.Matches%2A> для проверки совпадения узла и выражения XPath. Метод <xref:System.Xml.XPath.XPathNavigator.Matches%2A> принимает в качестве входного аргумента выражение XPath и возвращает значение типа <xref:System.Boolean>, указывающее, совпадает ли текущий узел с заданным выражением XPath или скомпилированным объектом <xref:System.Xml.XPath.XPathExpression>.  

@@ -2,19 +2,18 @@
 title: Основные и фоновые потоки
 description: Вы можете определить или изменить то, является ли поток фоновым или основным, с помощью свойства Thread.IsBackground в .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - threading [.NET], foreground
 - threading [.NET], background
 - foreground threads
 - background threads
 ms.assetid: cfe0d632-dd35-47e0-91ad-f742a444005e
-ms.openlocfilehash: 3b468d2de382719496d5dfaf4c704d43f3e748c3
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 9f0ea1d53eb2f96b8a56cacc089cf90eb2f079a0
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188072"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819907"
 ---
 # <a name="foreground-and-background-threads"></a>Основные и фоновые потоки
 

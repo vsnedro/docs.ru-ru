@@ -1,19 +1,18 @@
 ---
 title: Присоединенные и отсоединенные дочерние задачи
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - tasks, child tasks
 ms.assetid: c95788bf-90a6-4e96-b7bc-58e36a228cc5
-ms.openlocfilehash: c8a5d2c1ccb8bb2d272c2582cd416cdfd75506d8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e5d27aff02d0afd1c288e5d18e52be4745132a70
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84285694"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817527"
 ---
 # <a name="attached-and-detached-child-tasks"></a>Присоединенные и отсоединенные дочерние задачи
 *Дочерняя задача* (или *вложенная задача*) — это экземпляр <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, создаваемый в пользовательском делегате другой задачи, которая называется *родительской задачей*. Дочерняя задача может быть отсоединенной или присоединенной. *Отсоединенная дочерняя задача* — это задача, которая выполняется независимо от своего родительского объекта. *Присоединенная дочерняя задача* — это вложенная задача, созданная с параметром <xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent?displayProperty=nameWithType>, родительский объект которой не запрещает ее присоединение явно или по умолчанию. Задача может создавать любое количество присоединенных и отсоединенных дочерних задач, ограничиваемое только системными ресурсами.  

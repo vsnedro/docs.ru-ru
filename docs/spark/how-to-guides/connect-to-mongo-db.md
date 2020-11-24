@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 928cc8e3559e13af66268f3d1b3766cf2df9041f
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 945e494e8a027d438bf4659d989da6033a13f6f0
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223982"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687607"
 ---
 # <a name="connect-net-for-apache-spark-to-mongodb"></a>Подключение .NET для Apache Spark к MongoDB
 
@@ -43,17 +43,17 @@ ms.locfileid: "92223982"
 ## <a name="configure-your-net-for-apache-spark-application"></a>Настройка приложения .NET для Apache Spark
 
 1. Задайте следующие переменные, чтобы настроить приложение для взаимодействия с экземпляром MongoDB и чтения из коллекции.
-    1. **authURI** : "Строка подключения, разрешающая приложению подключаться к требуемому экземпляру MongoDB". Формат строки подключения:
+    1. **authURI**: "Строка подключения, разрешающая приложению подключаться к требуемому экземпляру MongoDB". Формат строки подключения:
 
         ```
         "mongodb+srv://<username>:<password>@<cluster_address>/<database>.<collection>"
         ```
 
-    2. **username** : имя пользователя учетной записи, созданной на шаге 1 предыдущего раздела.
-    3. **password** : пароль учетной записи пользователя.
-    4. **cluster_address** : имя узла/адрес кластера MongoDB
-    5. **database** : база данных MongoDB, к которой необходимо подключиться
-    6. **collection** : коллекция MongoDB, которую необходимо прочитать. (Здесь используется стандартный пример файла [`people.json`](https://github.com/apache/spark/blob/master/examples/src/main/resources/people.json), поставляемого в комплекте каждой установки Apache Spark.)
+    2. **username**: имя пользователя учетной записи, созданной на шаге 1 предыдущего раздела.
+    3. **password**: пароль учетной записи пользователя.
+    4. **cluster_address**: имя узла/адрес кластера MongoDB
+    5. **database**: база данных MongoDB, к которой необходимо подключиться
+    6. **collection**: коллекция MongoDB, которую необходимо прочитать. (Здесь используется стандартный пример файла [`people.json`](https://github.com/apache/spark/blob/master/examples/src/main/resources/people.json), поставляемого в комплекте каждой установки Apache Spark.)
 
 2. Используйте формат `com.mongodb.spark.sql.DefaultSource` (`spark.Read()`), как показано ниже в простом фрагменте кода:
 
@@ -82,7 +82,7 @@ ms.locfileid: "92223982"
 Чтобы запустить приложение .NET для Apache Spark, определите модуль `mongo-spark-connector` как часть определения сборки в проекте Spark, используя `libraryDependency` в `build.sbt` для проектов sbt. Для сред Spark, таких как `spark-submit` (или `spark-shell`), следует использовать параметр командной строки `--packages` следующим образом:
 
 ```bash
-spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<version>.jar yourApp.exe
+spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar yourApp.exe
 ```
 
 > [!NOTE]

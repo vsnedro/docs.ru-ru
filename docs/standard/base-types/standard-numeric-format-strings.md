@@ -2,7 +2,6 @@
 title: Строки стандартных числовых форматов
 description: В этой статье описывается, как использовать строки стандартных числовых форматов для форматирования стандартных числовых типов в текстовые представления в .NET.
 ms.date: 06/10/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -17,12 +16,12 @@ helpviewer_keywords:
 - standard numeric format strings
 - formatting numbers [.NET]
 - format specifiers, standard numeric format strings
-ms.openlocfilehash: e5e1aa16d8df3d0cfce6dac00c91ca8e99e16e3d
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: b8537e8dcfdd45ed8da18b8b82aae5e9fc0cd96e
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92888975"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818769"
 ---
 # <a name="standard-numeric-format-strings"></a>Строки стандартных числовых форматов
 
@@ -48,7 +47,7 @@ ms.locfileid: "92888975"
 - [Интерполированные строки](../../csharp/language-reference/tokens/interpolated.md) в C# и Visual Basic, которые предоставляют упрощенный синтаксис по сравнению со строками составного формата.
 
 > [!TIP]
-> Вы можете загрузить **служебную программу форматирования**  — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
+> Вы можете загрузить **служебную программу форматирования** — приложение Windows Forms для .NET Core, позволяющее применять строки формата к значениям даты и времени и числовым значениям и отображающее результирующую строку. Исходный код доступен для [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) и [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 <a name="table"></a> В следующей таблице приведены описатели стандартного числового формата и примеры выходных данных, формируемых каждым описателем формата. Дополнительные сведения о использовании строк стандартных числовых форматов см. в разделе [Примечания](#NotesStandardFormatting). Обширную демонстрацию их использования см. в разделе [Пример](#example).
 

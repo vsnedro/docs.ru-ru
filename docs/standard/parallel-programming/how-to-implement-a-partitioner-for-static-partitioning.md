@@ -1,16 +1,15 @@
 ---
 title: Практическое руководство. Реализация разделителя для статического секционирования
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - tasks, how to create a static partitioner
 ms.assetid: f4410508-cac6-4ba7-bef1-c5e68b2794f3
-ms.openlocfilehash: 22d2cf788d4726488512703356a75f84efd04250
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1593f1bc3c17f162b20f8bd9f645d51393f2198c
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278510"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817137"
 ---
 # <a name="how-to-implement-a-partitioner-for-static-partitioning"></a>Практическое руководство. Реализация разделителя для статического секционирования
 Следующий пример демонстрирует реализацию простого пользовательского разделителя для PLINQ, который выполняет статическое секционирование. Поскольку этот разделитель не поддерживает динамические секции, его нельзя использовать в <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>. Эта конкретная реализация разделителя может работать быстрее, чем стандартный разделитель по диапазонам для таких источников данных, в которых требуется большое время на обработку каждого элемента.  

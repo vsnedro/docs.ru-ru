@@ -1,14 +1,13 @@
 ---
 title: Выбор, вычисление и отбор XML-данных с помощью XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 46e059f8-4dc8-4185-9236-784be95228ed
-ms.openlocfilehash: 1418e768db2f5f860ec40cf4e1351b4ec4a14a08
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 249b99a627f3bbcc1723f104a80cb61552404877
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282211"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822468"
 ---
 # <a name="selecting-evaluating-and-matching-xml-data-using-xpathnavigator"></a>Выбор, вычисление и отбор XML-данных с помощью XPathNavigator
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет методы для выбора узлов в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> с помощью запроса XPath, проверки и анализа результатов выражения XPath и определения соответствия узла в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> данному выражению XPath. Эти и другие основные понятия, связанные с выбором, оценкой и сопоставлением узлов в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument>, описаны в следующих разделах.  

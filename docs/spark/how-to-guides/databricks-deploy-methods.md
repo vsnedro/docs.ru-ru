@@ -4,12 +4,12 @@ description: Узнайте, как отправить задание .NET дл�
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: fd04f78c47b34ca07042a4e60e2214f5f1ecac55
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 4d37383ccb3c9b311e0fbd0ada195ac20113e505
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955001"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688206"
 ---
 # <a name="submit-a-net-for-apache-spark-job-to-databricks"></a>Отправка задания .NET для Apache Spark в Databricks
 
@@ -22,7 +22,7 @@ ms.locfileid: "91955001"
 1. Перейдите в рабочую область Databricks и создайте задание. Выберите название задания, а затем нажмите **Настройка spark-submit**. Вставьте следующие параметры в конфигурацию задания и щелкните **Подтвердить**.
 
     ```
-    ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
+    ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
     ```
 
     > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "91955001"
 
 1. Перейдите в кластер Databricks и в меню слева выберите **Задания**, а затем **Указание файла JAR**.
 
-2. Отправьте соответствующий файл `microsoft-spark-<spark-version>-<spark-dotnet-version>.jar`.
+2. Отправьте соответствующий файл `microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar`.
 
 3. Измените следующие параметры, чтобы вместо `<your-app-name>` указать правильное имя опубликованного исполняемого файла.
 

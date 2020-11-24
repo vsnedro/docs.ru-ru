@@ -1,14 +1,13 @@
 ---
 title: Преобразования XSLT
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 202f8820-224c-494f-b61e-cd127eac6e03
-ms.openlocfilehash: 92d0af1519260d458d3954beaef38e698142367a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b87768b402f92e0e59279aab0f0062e510fda2e6
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288307"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818197"
 ---
 # <a name="xslt-transformations"></a>Преобразования XSLT
 Язык XSLT позволяет преобразовать содержимое исходного XML-документа в другой документ, отличный по формату или структуре. Например, с помощью XSLT можно преобразовать XML в HTML для использования на веб-узле или преобразовать в документ, в котором будут только поля, необходимые приложению. Этот процесс преобразования описывается в [документации консорциума W3C по преобразованиям XSLT версии 1.0](https://www.w3.org/TR/xslt-10/).  

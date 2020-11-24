@@ -2,19 +2,18 @@
 title: Основы управляемых потоков
 description: См. ссылки на другие статьи об управляемых потоках, охватывающие такие темы, как исключения, синхронизация данных, основные и фоновые потоки, локальное хранилище и многое другое.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - multiple threads
 - threading [.NET], multiple threads
 - threading [.NET], about threading
 - managed threading
 ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
-ms.openlocfilehash: ca3073cca9887265b4bacb4f8dfeb01203f82621
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 16785b1c21c5810e55429f6756dcf591c90d8499
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93189138"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819673"
 ---
 # <a name="managed-threading-basics"></a>Основы управляемых потоков
 
@@ -48,7 +47,7 @@ ms.locfileid: "93189138"
 ## <a name="reference"></a>Справочник
 
  <xref:System.Threading.Thread>  
- Справочная документация по классу **Thread** , который представляет управляемый поток вне зависимости от того, был ли он получен из неуправляемого кода или создан в управляемом приложении.  
+ Справочная документация по классу **Thread**, который представляет управляемый поток вне зависимости от того, был ли он получен из неуправляемого кода или создан в управляемом приложении.  
   
  <xref:System.ComponentModel.BackgroundWorker>  
  Описание безопасного подхода к многопоточности при работе с объектами пользовательского интерфейса.  
