@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a6bf5a04-e03e-44f0-917a-96f6a6d3cc96
 topic_type:
 - apiref
-ms.openlocfilehash: 5e5510ec098b2c1aa3b768830b812328287fd31a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 62055a98197f5f8bd4cfc02e99891b83ef6341e9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503033"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95680304"
 ---
 # <a name="icorprofilerinfogetappdomaininfo-method"></a>Метод ICorProfilerInfo::GetAppDomainInfo
+
 Принимает идентификатор домена приложения. Возвращает имя домена приложения и идентификатор процесса, который его содержит.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetAppDomainInfo(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `appDomainId`  
  [in] Идентификатор домена приложения.  
   
@@ -53,12 +55,14 @@ HRESULT GetAppDomainInfo(
  `pProcessId`  
  [out] Указатель на идентификатор процесса, который содержит этот домен приложения.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  После возврата этого метода необходимо убедиться, что буфер `szName` был достаточно велик, чтобы вместить в себя полное имя домена приложения. Для этого сравните значение, на которое указывает параметр `pcchName`, со значением параметра `cchName`. Если параметр `pcchName` указывает на значение, превышающее значение `cchName`, выделите буфер `szName` большего размера, обновите параметр `cchName`, задав новый, больший размер, и вызовите метод `GetAppDomainInfo` снова.  
   
  Кроме того, сначала можно вызвать метод `GetAppDomainInfo` с буфером `szName` нулевой длины для получения правильного размера буфера. Затем можно задать размер буфера равным значению, возвращенному в параметре `pcchName`, и вызвать метод `GetAppDomainInfo` снова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -67,7 +71,7 @@ HRESULT GetAppDomainInfo(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

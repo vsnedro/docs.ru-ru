@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a4ae0d1f-ade9-4b0a-a122-93ed11a5e6b3
 topic_type:
 - apiref
-ms.openlocfilehash: 9dd89abb332853b966aa81dc506099b7af6ca3b2
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 1bffef31702aa051d9ca865b18a67ac90c00cd00
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804940"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95680666"
 ---
 # <a name="ihostcontrol-interface"></a>Интерфейс IHostControl
+
 Предоставляет методы для настройки загрузки сборок и для определения того, какие интерфейсы размещения поддерживает узел.  
   
 ## <a name="methods"></a>Методы  
@@ -32,15 +33,16 @@ ms.locfileid: "83804940"
 |[Метод SetAppDomainManager](ihostcontrol-setappdomainmanager-method.md)|Уведомляет узел о том, что домен приложения создан.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.AppDomainManager>
 - [Интерфейс ICLRRuntimeHost](iclrruntimehost-interface.md)

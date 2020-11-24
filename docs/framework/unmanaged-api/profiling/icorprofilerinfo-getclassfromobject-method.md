@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b97493fb-713e-49d5-a73e-5688b2ad0700
 topic_type:
 - apiref
-ms.openlocfilehash: 613267549329d2f48dcd18ae341e47538e414ac0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5a7edc6045969861679d1b80c0563e99f48932cf
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84498535"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95680253"
 ---
 # <a name="icorprofilerinfogetclassfromobject-method"></a>Метод ICorProfilerInfo::GetClassFromObject
+
 Возвращает `ClassID` объект объекта, учитывая его свойство `ObjectID` .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,19 @@ HRESULT GetClassFromObject(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `objectId`  
  окне Идентификатор объекта, для которого необходимо получить объект `ClassID` .  
   
  `pClassId`  
  заполняет Указатель на возвращаемый объект `ClassID` .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Значение NULL `pClassId` указывает, что `objectId` имеет тип, который выгружается.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -52,6 +56,6 @@ HRESULT GetClassFromObject(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

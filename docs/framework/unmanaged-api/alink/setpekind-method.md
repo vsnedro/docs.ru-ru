@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type:
 - apiref
-ms.openlocfilehash: 5a8442b1f0869e1592a05dfeeb0f5e6d583f3ea8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: be8a11cbf70e2c6f19ace67648b124515c1fb3c3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179392"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95680044"
 ---
 # <a name="setpekind-method"></a>Метод SetPEKind
-Определяет портативный исполняемый тип, либо машинно-специфический, либо машинно-агностик.  
+
+Определяет тип переносимого исполняемого файла, который зависит от компьютера или компьютера.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,23 +37,26 @@ HRESULT SetPEKind(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
  `FileToken`  
- Токен файла, для которого должен быть установлен тип PE. Может быть `AssemblyID` NULL, если не указывается несвязанный нетмодуль.  
+ Токен файла, для которого задается тип PE. Может иметь значение NULL `AssemblyID` , если не указывает на непривязанный netmodule.  
   
  `dwPEKind`  
- Тип PE, как указано [в CorPEKind Enumeration](../metadata/corpekind-enumeration.md).  
+ Тип PE, как указано в [перечислении CorPEKind](../metadata/corpekind-enumeration.md).  
   
  `dwMachine`  
- Архитектура целевой машины, как указано в заголовке NT.  
+ Архитектура целевого компьютера, как указано в заголовке NT.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- Возвращает S_OK, если метод успешно.  
+
+ Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
- Требуетa alink.h.  
+
+ Требуется ALink. h.  
   
 ## <a name="see-also"></a>См. также раздел
 

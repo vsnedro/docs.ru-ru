@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type:
 - apiref
-ms.openlocfilehash: 9a1440be7011130b16d7112ae15026eb74856190
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a34b907514376927d8a1aa66b136916108b704d8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501603"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95681149"
 ---
 # <a name="ihostassemblymanagergetnonhoststoreassemblies-method"></a>Метод IHostAssemblyManager::GetNonHostStoreAssemblies
+
 Возвращает указатель интерфейса на объект [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) , представляющий список сборок, которые должны загружаться хостом в среде CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,14 +35,15 @@ HRESULT GetNonHostStoreAssemblies (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppReferenceList`  
  заполняет Указатель на адрес объекта `ICLRAssemblyReferenceList` , содержащий список ссылок на сборки, которые узел загружает в среду CLR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`GetNonHostStoreAssemblies`успешно возвращено.|  
+|S_OK|`GetNonHostStoreAssemblies` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -49,7 +51,8 @@ HRESULT GetNonHostStoreAssemblies (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания списка ссылок для запрошенного объекта `ICLRAssemblyReferenceList` .|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Среда CLR разрешает ссылки с помощью следующего набора рекомендаций:  
   
 - Во первых, он обращается к списку ссылок на сборки, возвращаемых `GetNonHostStoreAssemblies` .  
@@ -66,15 +69,16 @@ HRESULT GetNonHostStoreAssemblies (
 > После инициализации среда CLR вызывает `GetNonHostStoreAssemblies` только один раз. Метод не вызывается снова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
 topic_type:
 - apiref
-ms.openlocfilehash: 23d68e8e4bbd87779e3b49f0c40f5a5ab9f5124f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e7ef3f300c8cfa0c275d15913e171abe09385eea
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617221"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95681214"
 ---
 # <a name="getcorversion-function"></a>Функция GetCORVersion
+
 Возвращает номер версии общеязыковой среды выполнения (CLR), которая выполняется в текущем процессе.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -38,6 +39,7 @@ HRESULT GetCORVersion (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbuffer`  
  Указатель на буфер, в котором среда CLR возвращает строку, указывающую версию среды выполнения, которая в данный момент загружена в процесс. Возвращаемая строка принимает ту же форму, что и строки, переданные в [CorBindToRuntimeEx](corbindtoruntimeex-function.md), например "v 1.0.1216". Если среда выполнения еще не загружена в процесс, функция возвращает соответствующие сведения о каталоге для последней версии среды выполнения, установленной на компьютере.  
   
@@ -48,14 +50,15 @@ HRESULT GetCORVersion (
  Указатель на число символов, фактически возвращаемых в `pbuffer` . Если `pbuffer` является пустым указателем, среда выполнения возвращает E_POINTER. Если число символов превышает длину `pbuffer` , среда выполнения возвращает ERROR_INSUFFICIENT_BUFFER.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)
