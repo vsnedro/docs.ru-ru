@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e28e51d3-8f73-494f-bcd4-48bac239fbe1
 topic_type:
 - apiref
-ms.openlocfilehash: cab25738c9f4727fe3970cc1db15c38e68b08de6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: d605ac36c17a815bf546819e331830f51142cfcd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212923"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690425"
 ---
 # <a name="icordebugframegetchain-method"></a>Метод ICorDebugFrame::GetChain
+
 Возвращает указатель на цепочку, частью которой является этот кадр.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetChain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppChain`  
  заполняет Указатель на адрес объекта ICorDebugChain, который представляет цепочку, содержащую этот кадр.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6ddb0631-4569-41b3-93e4-50fdfaa486dc
 topic_type:
 - apiref
-ms.openlocfilehash: 60fbccabd21fb8bee118689a524efa9031bb2124
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 64e6b9a1942e9a69e43de3d2f09564814328ec08
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614998"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689619"
 ---
 # <a name="isymunmanagedreadergetmethodbyversion-method"></a>Метод ISymUnmanagedReader::GetMethodByVersion
+
 Возвращает метод чтения символов по заданному маркеру метода и номеру версии для редактирования и копирования. Номера версий начинаются с 1 и увеличиваются каждый раз при изменении метода в результате операции редактирования и копирования.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetMethodByVersion (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `token`  
  окне Токен метода.  
   
@@ -45,11 +47,13 @@ HRESULT GetMethodByVersion (
  заполняет Указатель на возвращаемый интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

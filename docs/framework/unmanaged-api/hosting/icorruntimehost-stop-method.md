@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 46a0d450-b516-4bef-8b71-8d3bf265cbed
 topic_type:
 - apiref
-ms.openlocfilehash: 4117c1297f02032fda80520a7709833217ec94b1
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 9342233317535ebecbcddea48b9029b81868eb0c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762699"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690152"
 ---
 # <a name="icorruntimehoststop-method"></a>Метод ICorRuntimeHost::Stop
+
 Останавливает выполнение кода в среде выполнения для текущего процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,7 +34,7 @@ HRESULT Stop ();
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -41,20 +42,22 @@ HRESULT Stop ();
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Как правило, вызов метода не требуется `Stop` , поскольку код прекращает выполнение при завершении процесса.  
   
 > [!NOTE]
 > После вызова `Stop` Среда CLR не может быть инициализирована в том же процессе.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

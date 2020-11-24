@@ -3,63 +3,63 @@ title: Настройка служб WCF в коде
 description: Узнайте, как можно настроить службы WCF с помощью кода, а не файлов конфигурации для самостоятельно размещенных и веб-служб.
 ms.date: 03/30/2017
 ms.assetid: 193c725d-134f-4d31-a8f8-4e575233bff6
-ms.openlocfilehash: d28115236a4582fe251adf1537b9e8b3e996d611
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 975eafea5a153287f5ccc71b9aa342c12391004e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245418"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689983"
 ---
 # <a name="configuring-wcf-services-in-code"></a>Настройка служб WCF в коде
-Windows Communication Foundation (WCF) позволяет разработчикам настраивать службы с помощью файлов конфигурации или кода.  Файлы конфигурации используются, если необходимо настроить службу после ее развертывания. При использовании файлов конфигурации ИТ-работнику требуется только обновить файл конфигурации без необходимости выполнять повторную компиляцию. Файлы конфигурации, однако, могут быть сложными и требовать больших усилий при обслуживании. Отсутствует поддержка отладки файлов конфигурации, и ссылки на элементы конфигурации осуществляются по именам, что усложняет работу и способствует совершению ошибок при создании файлов конфигурации. WCF также позволяет настраивать службы в коде. В более ранних версиях WCF (4,0 и более ранних версий) Настройка служб в коде была непростой в собственных сценариях, <xref:System.ServiceModel.ServiceHost> класс позволял вам настраивать конечные точки и поведения до вызова ServiceHost. Open. Однако в сценариях с размещением в Интернете нет прямого доступа к классу <xref:System.ServiceModel.ServiceHost>. Чтобы настроить службу, размещенную в сети, приходилось создавать класс `System.ServiceModel.ServiceHostFactory`, который создавал <xref:System.ServiceModel.Activation.ServiceHostFactory> и выполнял необходимые настройки. Начиная с .NET 4,5, WCF предоставляет более простой способ настройки автономных и размещенных в Интернете служб в коде.  
-  
-## <a name="the-configure-method"></a>Метод Configure  
- Просто определите открытый статический метод с именем `Configure` со следующей сигнатурой в классе реализации службы.  
-  
-```csharp  
-public static void Configure(ServiceConfiguration config)  
-```  
-  
- Метод принимает экземпляр <xref:System.ServiceModel.ServiceConfiguration>, что позволяет разработчикам добавлять конечные точки и расширения функциональности. Этот метод вызывается WCF перед открытием узла службы. Если он задан, то никакие параметры конфигурации службы, определенные в файле app.config или web.config, не учитываются.  
-  
- В следующем фрагменте кода показано, как определить метод `Configure` и добавить конечную точку службы, поведение конечной точки и расширения функциональности служб.  
-  
-```csharp  
-public class Service1 : IService1  
-    {  
-        public static void Configure(ServiceConfiguration config)  
-        {  
-            ServiceEndpoint se = new ServiceEndpoint(new ContractDescription("IService1"), new BasicHttpBinding(), new EndpointAddress("basic"));  
-            se.Behaviors.Add(new MyEndpointBehavior());  
-            config.AddServiceEndpoint(se);  
-  
-            config.Description.Behaviors.Add(new ServiceMetadataBehavior { HttpGetEnabled = true });  
-            config.Description.Behaviors.Add(new ServiceDebugBehavior { IncludeExceptionDetailInFaults = true });  
-        }  
-  
-        public string GetData(int value)  
-        {  
+Windows Communication Foundation (WCF) позволяет разработчикам настраивать службы с помощью файлов конфигурации или кода.  Файлы конфигурации используются, если необходимо настроить службу после ее развертывания. При использовании файлов конфигурации ИТ-работнику требуется только обновить файл конфигурации без необходимости выполнять повторную компиляцию. Файлы конфигурации, однако, могут быть сложными и требовать больших усилий при обслуживании. Отсутствует поддержка отладки файлов конфигурации, и ссылки на элементы конфигурации осуществляются по именам, что усложняет работу и способствует совершению ошибок при создании файлов конфигурации. WCF также позволяет настраивать службы в коде. В более ранних версиях WCF (4,0 и более ранних версий) Настройка служб в коде была непростой в собственных сценариях, <xref:System.ServiceModel.ServiceHost> класс позволял вам настраивать конечные точки и поведения до вызова ServiceHost. Open. Однако в сценариях с размещением в Интернете нет прямого доступа к классу <xref:System.ServiceModel.ServiceHost>. Чтобы настроить службу, размещенную в сети, приходилось создавать класс `System.ServiceModel.ServiceHostFactory`, который создавал <xref:System.ServiceModel.Activation.ServiceHostFactory> и выполнял необходимые настройки. Начиная с .NET Framework 4,5, WCF предоставляет более простой способ настройки как автономных, так и размещенных в Интернете служб в коде.
+
+## <a name="the-configure-method"></a>Метод Configure
+ Просто определите открытый статический метод с именем `Configure` со следующей сигнатурой в классе реализации службы.
+
+```csharp
+public static void Configure(ServiceConfiguration config)
+```
+
+ Метод принимает экземпляр <xref:System.ServiceModel.ServiceConfiguration>, что позволяет разработчикам добавлять конечные точки и расширения функциональности. Этот метод вызывается WCF перед открытием узла службы. Если он задан, то никакие параметры конфигурации службы, определенные в файле app.config или web.config, не учитываются.
+
+ В следующем фрагменте кода показано, как определить метод `Configure` и добавить конечную точку службы, поведение конечной точки и расширения функциональности служб.
+
+```csharp
+public class Service1 : IService1
+    {
+        public static void Configure(ServiceConfiguration config)
+        {
+            ServiceEndpoint se = new ServiceEndpoint(new ContractDescription("IService1"), new BasicHttpBinding(), new EndpointAddress("basic"));
+            se.Behaviors.Add(new MyEndpointBehavior());
+            config.AddServiceEndpoint(se);
+
+            config.Description.Behaviors.Add(new ServiceMetadataBehavior { HttpGetEnabled = true });
+            config.Description.Behaviors.Add(new ServiceDebugBehavior { IncludeExceptionDetailInFaults = true });
+        }
+
+        public string GetData(int value)
+        {
             return $"You entered: {value}";
-        }  
-  
-        public CompositeType GetDataUsingDataContract(CompositeType composite)  
-        {  
-            if (composite == null)  
-            {  
-                throw new ArgumentNullException("composite");  
-            }  
-            if (composite.BoolValue)  
-            {  
-                composite.StringValue += "Suffix";  
-            }  
-            return composite;  
-        }  
-    }  
-```  
-  
- Чтобы включить для службы протокол (например, HTTPS), следует явно добавить конечную точку, использующую протокол, или автоматически добавить конечные точки с помощью привязки ServiceConfiguration.EnableProtocol, которая добавляет конечную точку для каждого базового адреса, совместимого с использованием определенного протокола и каждого контракта службы. В следующем примере кода показывается, как использовать метод ServiceConfiguration.EnableProtocol:  
-  
-```csharp  
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            if (composite == null)
+            {
+                throw new ArgumentNullException("composite");
+            }
+            if (composite.BoolValue)
+            {
+                composite.StringValue += "Suffix";
+            }
+            return composite;
+        }
+    }
+```
+
+ Чтобы включить для службы протокол (например, HTTPS), следует явно добавить конечную точку, использующую протокол, или автоматически добавить конечные точки с помощью привязки ServiceConfiguration.EnableProtocol, которая добавляет конечную точку для каждого базового адреса, совместимого с использованием определенного протокола и каждого контракта службы. В следующем примере кода показывается, как использовать метод ServiceConfiguration.EnableProtocol:
+
+```csharp
 public class Service1 : IService1
 {
     public string GetData(int value);
@@ -76,10 +76,10 @@ public class Service1 : IService1
        config.AddServiceEndpoint(typeof(IService1), new BasicHttpBinding(),"basic");
     }
 }
-```  
-  
- Параметры в `protocolMappings` разделе <> используются только в том случае, если конечные точки приложения не добавляются в <xref:System.ServiceModel.ServiceConfiguration> программный. При необходимости можно загрузить конфигурацию службы из файла конфигурации приложения по умолчанию, вызвав <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> , а затем изменив параметры. Класс <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> также позволяет загрузить конфигурацию из централизованной конфигурации. В следующем примере кода показано, как это реализовать.  
-  
+```
+
+ Параметры в `protocolMappings` разделе <> используются только в том случае, если конечные точки приложения не добавляются в <xref:System.ServiceModel.ServiceConfiguration> программный. При необходимости можно загрузить конфигурацию службы из файла конфигурации приложения по умолчанию, вызвав <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> , а затем изменив параметры. Класс <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> также позволяет загрузить конфигурацию из централизованной конфигурации. В следующем примере кода показано, как это реализовать.
+
 ```csharp
 public class Service1 : IService1
 {
@@ -88,13 +88,13 @@ public class Service1 : IService1
     {
           config.LoadFromConfiguration(ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = @"c:\sharedConfig\MyConfig.config" }, ConfigurationUserLevel.None));
     }
-}  
-```  
-  
+}
+```
+
 > [!IMPORTANT]
-> Обратите внимание, что не <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> учитывает `host` параметры <> в `service` теге <> <`system.serviceModel`>. По сути, <`host`> — это конфигурация узла, а не конфигурация службы, которая загружается перед выполнением метода Configure.  
-  
-## <a name="see-also"></a>См. также
+> Обратите внимание, что не <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> учитывает `host` параметры <> в `service` теге <> <`system.serviceModel`>. По сути, <`host`> — это конфигурация узла, а не конфигурация службы, которая загружается перед выполнением метода Configure.
+
+## <a name="see-also"></a>См. также раздел
 
 - [Настройка служб с использованием файлов конфигурации](configuring-services-using-configuration-files.md)
 - [Настройка поведений клиентов](configuring-client-behaviors.md)

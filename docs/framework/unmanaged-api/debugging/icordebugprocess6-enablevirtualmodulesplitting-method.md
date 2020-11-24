@@ -2,14 +2,15 @@
 title: Метод ICorDebugProcess6::EnableVirtualModuleSplitting
 ms.date: 03/30/2017
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
-ms.openlocfilehash: ac61ffc553191aa70bdf5c04822a25b1074c2099
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 56795c6879d95253383c26c92e060f252a018914
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209374"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690217"
 ---
 # <a name="icordebugprocess6enablevirtualmodulesplitting-method"></a>Метод ICorDebugProcess6::EnableVirtualModuleSplitting
+
 Позволяет включить или отключить разделение виртуальных модулей.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -21,10 +22,12 @@ HRESULT EnableVirtualModuleSplitting(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `enableSplitting`  
  `true`, чтобы включить разделение виртуальных модулей; `false`, чтобы отключить его.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Разделение виртуальных [модулей заставляет препроцессор](icordebug-interface.md) распознать модули, Объединенные в ходе процесса сборки, и представлять их как группу отдельных модулей, а не один большой модуль. Это изменяет поведение различных методов [ICorDebug](icordebug-interface.md) , описанных ниже.  
   
 > [!NOTE]
@@ -33,6 +36,7 @@ HRESULT EnableVirtualModuleSplitting(
  Этот метод может быть вызван, и значение `enableSplitting` может быть изменено, в любое время. Он не вызывает функциональных изменений с отслеживанием состояния в объекте [ICorDebug](icordebug-interface.md) , кроме изменения поведения методов, перечисленных в разделе [разделение виртуального модуля, и раздела API неуправляемой отладки](#APIs) в момент их вызова. Применение виртуальных модулей приводит к ухудшению производительности при вызове этих методов. Кроме того, для правильной реализации интерфейсов [API интерфейса](../metadata/imetadataimport-interface.md) пользователя может потребоваться значительное кэширование в памяти, и эти кэши могут храниться даже после выключения разделения виртуальных модулей.  
   
 ## <a name="terminology"></a>Терминология  
+
  При описании разделения виртуальных модулей используются следующие термины:  
   
  контейнерные модули или контейнеры  
@@ -44,12 +48,14 @@ HRESULT EnableVirtualModuleSplitting(
  обычные модули  
  Модули, которые не были объединены во время построения. Они не являются ни вложенными, ни контейнерными модулями.  
   
- Контейнерные модули и вложенные модули представляются объектами интерфейса ICorDebugModule. Однако поведение интерфейса немного различается в каждом случае, так как \< раздел> x-ref to, описанный в разделе.  
+ Контейнерные модули и вложенные модули представляются объектами интерфейса ICorDebugModule. Однако поведение интерфейса немного различается в каждом случае, как \<x-ref to section> описано в разделе.  
   
 ## <a name="modules-and-assemblies"></a>Модули и сборки  
+
  Сборки с несколькими модулями не поддерживаются для сценариев объединения сборок, поэтому существует однозначное соответствие между модулем и сборкой. Каждый объект ICorDebugModule, независимо от того, представляет он контейнерный или вложенный модуль, имеет соответствующий объект ICorDebugAssembly. Метод [ICorDebugModule:: Assembly](icordebugmodule-getassembly-method.md) преобразует из модуля в сборку. Для отображения в другом направлении метод [ICorDebugAssembly:: енумератемодулес](icordebugassembly-enumeratemodules-method.md) перечисляет только 1 модуль. Так как сборка и модуль образуют в данном случае тесно связанную пару, термины «сборка и модуль» становятся в значительной степени взаимозаменяемыми.  
   
 ## <a name="behavioral-differences"></a>Различия в поведении  
+
  Контейнерные модули имеют следующие режимы поведения и характеристики:  
   
 - Их метаданные для всех составных вложенных модулей объединяются друг с другом.  
@@ -81,6 +87,7 @@ HRESULT EnableVirtualModuleSplitting(
 - Метод ICorDebugAssembly3.GetContainerAssembly возвращает составной модуль.  
   
 ## <a name="interfaces-retrieved-from-modules"></a>Интерфейсы, извлеченные из модулей  
+
  Из модулей можно создать или извлечь различные интерфейсы. Ниже перечислены некоторые из них.  
   
 - Объект ICorDebugClass, возвращаемый методом [ICorDebugModule:: жетклассфромтокен](icordebugmodule-getclassfromtoken-method.md) .  
@@ -90,7 +97,9 @@ HRESULT EnableVirtualModuleSplitting(
  Эти объекты всегда кэшируются в [ICorDebug](icordebug-interface.md), и они будут иметь одинаковое удостоверение указателя независимо от того, были ли они созданы или запрошены из модуля контейнера или из подмодуля. Вложенный модуль обеспечивает отфильтрованное представление этих кэшированных объектов, но не отдельный кэш со своими собственными копиями.  
   
 <a name="APIs"></a>
+
 ## <a name="virtual-module-splitting-and-the-unmanaged-debugging-apis"></a>Разделение виртуальных модулей и неуправляемые интерфейсы API отладки  
+
  В следующей таблице показано, как разделение виртуальных модулей влияет на поведение других методов в неуправляемом интерфейсе API отладки.  
   
 |Метод|`enableSplitting` = `true`|`enableSplitting` = `false`|  
@@ -102,6 +111,7 @@ HRESULT EnableVirtualModuleSplitting(
 |[ICorDebugCode::-Code](icordebugcode-getcode-method.md) (при ссылке только на код IL)|Возвращает IL-код, который будет действителен в образе сборки перед слиянием. В частности, любыми правильными встроенными токенами метаданных будут TypeRef или MemberRef, когда типы, на которые выполняется ссылка, не определены в виртуальном модуле, содержащем IL-код. Эти токены TypeRef или MemberRef можно искать в объекте [IMetaDataImport](../metadata/imetadataimport-interface.md) для соответствующего виртуального объекта ICorDebugModule.|Возвращает IL-код в образе сборки после слияния.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -110,7 +120,7 @@ HRESULT EnableVirtualModuleSplitting(
   
  **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugProcess6](icordebugprocess6-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dd9e9204-a80d-44f3-8192-779224b35056
 topic_type:
 - apiref
-ms.openlocfilehash: 558b6e4c6ac369e33be3d45b7241e8b11db8bfae
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 94c84d876e19ec2ff7baba5a5a7420eec68d58c6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83760398"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95690113"
 ---
 # <a name="icorruntimehostunloaddomain-method"></a>Метод ICorRuntimeHost::UnloadDomain
+
 Выгружает указанный домен приложения из текущего процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,12 +35,13 @@ HRESULT UnloadDomain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель типа <xref:System._AppDomain?displayProperty=nameWithType> , представляющий домен для выгрузки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -47,15 +49,16 @@ HRESULT UnloadDomain (
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **Версия .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

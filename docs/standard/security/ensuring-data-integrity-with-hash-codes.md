@@ -14,14 +14,15 @@ helpviewer_keywords:
 - encryption [.NET], hash
 - hash
 ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
-ms.openlocfilehash: 085a0ea387e3415e6e916bcdf9055ffaa6753fef
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7f5e1d54efa3a5ccf28f2e0863a9bc9ccb80f894
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831095"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689749"
 ---
 # <a name="ensuring-data-integrity-with-hash-codes"></a>Обеспечение целостности данных с помощью хэш-кодов
+
 Хэш-код является численным значением фиксированной длины, которое однозначно идентифицирует данные. Хэш-коды представляют большие объемы данных в виде намного меньших по объему числовых значений, поэтому они используются с цифровыми подписями. Хэш-код можно подписать более эффективно, чем значение большего размера. Хэш-коды также могут использоваться для проверки целостности данных, пересылаемых по незащищенным каналам. Хэш-код полученных данных можно сравнить с хэш-кодом этих же данных, вычисленным перед их передачей, и на основании этого определить, подвергались ли данные изменениям.  
   
 В этом разделе описываются способы создания и проверки хэш-кодов с помощью классов пространства имен <xref:System.Security.Cryptography>.  
@@ -58,7 +59,7 @@ The hash codes match.
 The hash codes do not match.  
 ```  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

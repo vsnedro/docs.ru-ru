@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0b284b18-0084-4b3a-912a-5ebe9f29c88b
 topic_type:
 - apiref
-ms.openlocfilehash: 612463bca18c23fac0b086adde2d208a0fbc5ae5
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: ba53ff30f0b6d0ae7fed7db422b7c0a242204a2c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008174"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689437"
 ---
 # <a name="imetadataassemblyemitdefineassemblyref-method"></a>Метод IMetaDataAssemblyEmit::DefineAssemblyRef
+
 Создает структуру `AssemblyRef`, содержащую метаданные для сборки, на которую ссылается данная сборка, и возвращает связанный токен метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -41,6 +42,7 @@ HRESULT DefineAssemblyRef (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbPublicKeyOrToken`  
  окне Открытый ключ издателя сборки, на которую указывает ссылка. Вспомогательную функцию [StrongNameTokenFromAssembly](../strong-naming/strongnametokenfromassembly-function.md) можно использовать, чтобы получить хэш открытого ключа для передачи в качестве этого параметра.  
   
@@ -54,7 +56,7 @@ HRESULT DefineAssemblyRef (
  окне Экземпляр ASSEMBLYMETADATA, содержащий сведения о версии, платформе и языковой стандарте сборки, на которую указывает ссылка.  
   
  `pbHashValue`  
- окне Хэш-данные, связанные с упоминаемой сборкой. Необязательный параметр.  
+ окне Хэш-данные, связанные с упоминаемой сборкой. Необязательный элемент.  
   
  `cbHashValue`  
  окне Размер в байтах для `pbHashValue` .  
@@ -65,20 +67,22 @@ HRESULT DefineAssemblyRef (
  `pmdar`  
  заполняет Указатель на возвращаемый `AssemblyRef` маркер метаданных.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `AssemblyRef`Для каждой сборки, на которую ссылается эта сборка, должна быть определена одна структура метаданных.  
   
  Во время выполнения сведения о сборке, на которую указывает ссылка, передаются распознавателю сборок с указанием, что они представляют "как встроенные" сведения. Затем сопоставитель сборок применяет политику.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
