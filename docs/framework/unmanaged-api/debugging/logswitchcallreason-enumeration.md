@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
 topic_type:
 - apiref
-ms.openlocfilehash: 4d29bb3886ffb51e1dfb9654f4d70ef7c568fd43
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: dfb34595530a47b74762610f5824b68ea00a8a69
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420712"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671959"
 ---
-# <a name="logswitchcallreason-enumeration"></a><span data-ttu-id="b1dcd-102">Перечисление LogSwitchCallReason</span><span class="sxs-lookup"><span data-stu-id="b1dcd-102">LogSwitchCallReason Enumeration</span></span>
-<span data-ttu-id="b1dcd-103">Указывает операцию, выполненную на переключателе отладки и трассировки.</span><span class="sxs-lookup"><span data-stu-id="b1dcd-103">Indicates the operation that was performed on a debugging/tracing switch.</span></span>  
+# <a name="logswitchcallreason-enumeration"></a><span data-ttu-id="739fc-102">Перечисление LogSwitchCallReason</span><span class="sxs-lookup"><span data-stu-id="739fc-102">LogSwitchCallReason Enumeration</span></span>
+
+<span data-ttu-id="739fc-103">Указывает операцию, выполненную на переключателе отладки и трассировки.</span><span class="sxs-lookup"><span data-stu-id="739fc-103">Indicates the operation that was performed on a debugging/tracing switch.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b1dcd-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b1dcd-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="739fc-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="739fc-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum LogSwitchCallReason {  
@@ -34,23 +35,24 @@ typedef enum LogSwitchCallReason {
 } LogSwitchCallReason;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="b1dcd-105">Участники</span><span class="sxs-lookup"><span data-stu-id="b1dcd-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="739fc-105">Члены</span><span class="sxs-lookup"><span data-stu-id="739fc-105">Members</span></span>  
   
-|<span data-ttu-id="b1dcd-106">Член</span><span class="sxs-lookup"><span data-stu-id="b1dcd-106">Member</span></span>|<span data-ttu-id="b1dcd-107">Описание</span><span class="sxs-lookup"><span data-stu-id="b1dcd-107">Description</span></span>|  
+|<span data-ttu-id="739fc-106">Член</span><span class="sxs-lookup"><span data-stu-id="739fc-106">Member</span></span>|<span data-ttu-id="739fc-107">Описание</span><span class="sxs-lookup"><span data-stu-id="739fc-107">Description</span></span>|  
 |------------|-----------------|  
-|`SWITCH_CREATE`|<span data-ttu-id="b1dcd-108">Был создан переключатель отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="b1dcd-108">A debugging/tracing switch was created.</span></span>|  
-|`SWITCH_MODIFY`|<span data-ttu-id="b1dcd-109">Изменен параметр отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="b1dcd-109">A debugging/tracing switch was modified.</span></span>|  
-|`SWITCH_DELETE`|<span data-ttu-id="b1dcd-110">Удален параметр отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="b1dcd-110">A debugging/tracing switch was deleted.</span></span>|  
+|`SWITCH_CREATE`|<span data-ttu-id="739fc-108">Был создан переключатель отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="739fc-108">A debugging/tracing switch was created.</span></span>|  
+|`SWITCH_MODIFY`|<span data-ttu-id="739fc-109">Изменен параметр отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="739fc-109">A debugging/tracing switch was modified.</span></span>|  
+|`SWITCH_DELETE`|<span data-ttu-id="739fc-110">Удален параметр отладки/трассировки.</span><span class="sxs-lookup"><span data-stu-id="739fc-110">A debugging/tracing switch was deleted.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="b1dcd-111">Требования</span><span class="sxs-lookup"><span data-stu-id="b1dcd-111">Requirements</span></span>  
- <span data-ttu-id="b1dcd-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b1dcd-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="b1dcd-113">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="b1dcd-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
-  
- <span data-ttu-id="b1dcd-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b1dcd-114">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="b1dcd-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b1dcd-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="b1dcd-116">См. также статью</span><span class="sxs-lookup"><span data-stu-id="b1dcd-116">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="739fc-111">Требования</span><span class="sxs-lookup"><span data-stu-id="739fc-111">Requirements</span></span>  
 
-- [<span data-ttu-id="b1dcd-117">Перечисления отладки</span><span class="sxs-lookup"><span data-stu-id="b1dcd-117">Debugging Enumerations</span></span>](debugging-enumerations.md)
+ <span data-ttu-id="739fc-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="739fc-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="739fc-113">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="739fc-113">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+  
+ <span data-ttu-id="739fc-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="739fc-114">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="739fc-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="739fc-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="739fc-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="739fc-116">See also</span></span>
+
+- [<span data-ttu-id="739fc-117">Перечисления отладки</span><span class="sxs-lookup"><span data-stu-id="739fc-117">Debugging Enumerations</span></span>](debugging-enumerations.md)
