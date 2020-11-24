@@ -14,20 +14,21 @@ helpviewer_keywords:
 ms.assetid: e7b8f6b4-95bc-4ba5-b9eb-f5590a7326a4
 topic_type:
 - apiref
-ms.openlocfilehash: d19d7ed2262db6d3c6e7f15db0e96da52f86db4a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0bf17e7c9d8ff16dc8f07e4a386f599284828f40
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500862"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95682254"
 ---
-# <a name="cor_prf_jit_cache-enumeration"></a><span data-ttu-id="6c805-102">Перечисление COR_PRF_JIT_CACHE</span><span class="sxs-lookup"><span data-stu-id="6c805-102">COR_PRF_JIT_CACHE Enumeration</span></span>
-<span data-ttu-id="6c805-103">Указывает результат кэшированной функции поиска.</span><span class="sxs-lookup"><span data-stu-id="6c805-103">Indicates the result of a cached function search.</span></span>  
+# <a name="cor_prf_jit_cache-enumeration"></a><span data-ttu-id="9268f-102">Перечисление COR_PRF_JIT_CACHE</span><span class="sxs-lookup"><span data-stu-id="9268f-102">COR_PRF_JIT_CACHE Enumeration</span></span>
+
+<span data-ttu-id="9268f-103">Указывает результат кэшированной функции поиска.</span><span class="sxs-lookup"><span data-stu-id="9268f-103">Indicates the result of a cached function search.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="6c805-104">`COR_PRF_CACHED_FUNCTION_FOUND`имеет нулевое значение, поэтому `COR_PRF_JIT_CACHE` не может использоваться в качестве логического суррогата.</span><span class="sxs-lookup"><span data-stu-id="6c805-104">`COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.</span></span>  
+> <span data-ttu-id="9268f-104">`COR_PRF_CACHED_FUNCTION_FOUND` имеет нулевое значение, поэтому `COR_PRF_JIT_CACHE` не может использоваться в качестве логического суррогата.</span><span class="sxs-lookup"><span data-stu-id="9268f-104">`COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="6c805-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6c805-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9268f-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9268f-105">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -36,22 +37,23 @@ typedef enum {
 } COR_PRF_JIT_CACHE;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="6c805-106">Участники</span><span class="sxs-lookup"><span data-stu-id="6c805-106">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="9268f-106">Члены</span><span class="sxs-lookup"><span data-stu-id="9268f-106">Members</span></span>  
   
-|<span data-ttu-id="6c805-107">Член</span><span class="sxs-lookup"><span data-stu-id="6c805-107">Member</span></span>|<span data-ttu-id="6c805-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6c805-108">Description</span></span>|  
+|<span data-ttu-id="9268f-107">Член</span><span class="sxs-lookup"><span data-stu-id="9268f-107">Member</span></span>|<span data-ttu-id="9268f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9268f-108">Description</span></span>|  
 |------------|-----------------|  
-|`COR_PRF_FUNCTION_FOUND`|<span data-ttu-id="6c805-109">Поиск обнаружил функцию.</span><span class="sxs-lookup"><span data-stu-id="6c805-109">The search found the function.</span></span>|  
-|`COR_PRF_FUNCTION_NOT_FOUND`|<span data-ttu-id="6c805-110">Поиск не нашел функцию.</span><span class="sxs-lookup"><span data-stu-id="6c805-110">The search did not find the function.</span></span>|  
+|`COR_PRF_FUNCTION_FOUND`|<span data-ttu-id="9268f-109">Поиск обнаружил функцию.</span><span class="sxs-lookup"><span data-stu-id="9268f-109">The search found the function.</span></span>|  
+|`COR_PRF_FUNCTION_NOT_FOUND`|<span data-ttu-id="9268f-110">Поиск не нашел функцию.</span><span class="sxs-lookup"><span data-stu-id="9268f-110">The search did not find the function.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="6c805-111">Требования</span><span class="sxs-lookup"><span data-stu-id="6c805-111">Requirements</span></span>  
- <span data-ttu-id="6c805-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6c805-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="6c805-113">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="6c805-113">**Header:** CorProf.idl, CorProf.h</span></span>  
-  
- <span data-ttu-id="6c805-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="6c805-114">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="6c805-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6c805-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="6c805-116">См. также</span><span class="sxs-lookup"><span data-stu-id="6c805-116">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="9268f-111">Требования</span><span class="sxs-lookup"><span data-stu-id="9268f-111">Requirements</span></span>  
 
-- [<span data-ttu-id="6c805-117">Перечисления профилирования</span><span class="sxs-lookup"><span data-stu-id="6c805-117">Profiling Enumerations</span></span>](profiling-enumerations.md)
+ <span data-ttu-id="9268f-112">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="9268f-112">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="9268f-113">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="9268f-113">**Header:** CorProf.idl, CorProf.h</span></span>  
+  
+ <span data-ttu-id="9268f-114">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="9268f-114">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="9268f-115">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9268f-115">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="9268f-116">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="9268f-116">See also</span></span>
+
+- [<span data-ttu-id="9268f-117">Перечисления профилирования</span><span class="sxs-lookup"><span data-stu-id="9268f-117">Profiling Enumerations</span></span>](profiling-enumerations.md)
