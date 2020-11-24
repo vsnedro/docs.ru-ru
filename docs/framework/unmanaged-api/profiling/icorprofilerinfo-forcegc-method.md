@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0da1ef80-d242-4636-87d0-43e0470b342a
 topic_type:
 - apiref
-ms.openlocfilehash: 9bc6619f3ef383c7bf60a310a87f056cfc43cddf
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 75f2db5e5489f02dcae3db0c3e6af19c922e0745
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84498678"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95669202"
 ---
 # <a name="icorprofilerinfoforcegc-method"></a>Метод ICorProfilerInfo::ForceGC
+
 Принудительное выполнение сборки мусора в среде CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,10 +32,12 @@ ms.locfileid: "84498678"
 HRESULT ForceGC();  
 ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  `ForceGC`Метод должен вызываться только из потока, который никогда не выполнял управляемый код и не имеет обратных вызовов профилировщика в стеке. Наиболее удобной реализацией является создание отдельного потока в профилировщике, который вызывает `ForceGC` при получении сигнала.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -43,6 +46,6 @@ HRESULT ForceGC();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 36ba4f15-78e5-4e52-b3b8-6341f710c696
 topic_type:
 - apiref
-ms.openlocfilehash: 5b2309fabc1c00110c5108ca2f36e857b3c62dcd
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9785f8e5458d58830852957c139428ad262aa325
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502929"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95671152"
 ---
 # <a name="icorprofilerinfosetfunctionrejit-method"></a>Метод ICorProfilerInfo::SetFunctionReJIT
+
 Не реализовано. Не используйте.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,6 +34,7 @@ HRESULT SetFunctionReJIT(
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -41,6 +43,6 @@ HRESULT SetFunctionReJIT(
   
  **Версия .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

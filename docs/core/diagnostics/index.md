@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: d78b73e53637927ecb877dd69054f75a1f5ac91f
-ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
+ms.openlocfilehash: 3274b72363a3df1dbe1bb29492eedcb134a4f9f2
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91437998"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982313"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -62,6 +62,10 @@ ms.locfileid: "91437998"
 
 [dotnet-sos](dotnet-sos.md) используется для установки [расширения отладки SOS](../../framework/tools/sos-dll-sos-debugging-extension.md) в Linux или MacOS (или в Windows при использовании старых средств отладки).
 
+### <a name="perfcollect"></a>PerfCollect
+
+[PerfCollect](trace-perfcollect-lttng.md) — это скрипт bash, который можно использовать для сбора трассировок с помощью `perf` и `LTTng` для подробного анализа производительности приложений .NET, выполняющихся в дистрибутивах Linux.
+
 ## <a name="net-core-diagnostics-tutorials"></a>Учебники по диагностике .NET Core
 
 ### <a name="debug-a-memory-leak"></a>Отладка утечек памяти
@@ -75,3 +79,7 @@ ms.locfileid: "91437998"
 ### <a name="debug-deadlock"></a>Отладка взаимоблокировки
 
 В [руководстве по отладке взаимоблокировки](debug-deadlock.md) показано, как использовать средство [dotnet-dump](dotnet-dump.md) для изучения потоков и блокировок.
+
+### <a name="measure-performance-using-eventcounters"></a>Измерение производительности с помощью EventCounters
+
+[Учебник. Измерение производительности с помощью EventCounters в .NET](event-counter-perf.md) демонстрирует, как использовать API <xref:System.Diagnostics.Tracing.EventCounter> для измерения производительности в приложении .NET.
