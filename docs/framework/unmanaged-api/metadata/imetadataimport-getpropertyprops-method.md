@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
 topic_type:
 - apiref
-ms.openlocfilehash: cac5aaa7ed13b6a48b36ad550da8b73d0deb2ee7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: aded23e190de18d76bb2b9e2ffbae51cf2325419
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729230"
 ---
-# <a name="imetadataimportgetpropertyprops-method"></a><span data-ttu-id="60a53-102">Метод IMetaDataImport::GetPropertyProps</span><span class="sxs-lookup"><span data-stu-id="60a53-102">IMetaDataImport::GetPropertyProps Method</span></span>
-<span data-ttu-id="60a53-103">Возвращает метаданные для свойства, представленного указанным токеном.</span><span class="sxs-lookup"><span data-stu-id="60a53-103">Gets the metadata for the property represented by the specified token.</span></span>  
+# <a name="imetadataimportgetpropertyprops-method"></a><span data-ttu-id="b66ae-102">Метод IMetaDataImport::GetPropertyProps</span><span class="sxs-lookup"><span data-stu-id="b66ae-102">IMetaDataImport::GetPropertyProps Method</span></span>
+
+<span data-ttu-id="b66ae-103">Возвращает метаданные для свойства, представленного указанным токеном.</span><span class="sxs-lookup"><span data-stu-id="b66ae-103">Gets the metadata for the property represented by the specified token.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="60a53-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="60a53-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="b66ae-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b66ae-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetPropertyProps (  
@@ -48,65 +49,67 @@ HRESULT GetPropertyProps (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="60a53-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="60a53-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="b66ae-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="b66ae-105">Parameters</span></span>  
+
  `prop`  
- <span data-ttu-id="60a53-106">окне Токен, представляющий свойство, для которого необходимо вернуть метаданные.</span><span class="sxs-lookup"><span data-stu-id="60a53-106">[in] A token that represents the property to return metadata for.</span></span>  
+ <span data-ttu-id="b66ae-106">окне Токен, представляющий свойство, для которого необходимо вернуть метаданные.</span><span class="sxs-lookup"><span data-stu-id="b66ae-106">[in] A token that represents the property to return metadata for.</span></span>  
   
  `pClass`  
- <span data-ttu-id="60a53-107">заполняет Указатель на маркер TypeDef, представляющий тип, реализующий свойство.</span><span class="sxs-lookup"><span data-stu-id="60a53-107">[out] A pointer to the TypeDef token that represents the type that implements the property.</span></span>  
+ <span data-ttu-id="b66ae-107">заполняет Указатель на маркер TypeDef, представляющий тип, реализующий свойство.</span><span class="sxs-lookup"><span data-stu-id="b66ae-107">[out] A pointer to the TypeDef token that represents the type that implements the property.</span></span>  
   
  `szProperty`  
- <span data-ttu-id="60a53-108">заполняет Буфер для хранения имени свойства.</span><span class="sxs-lookup"><span data-stu-id="60a53-108">[out] A buffer to hold the property name.</span></span>  
+ <span data-ttu-id="b66ae-108">заполняет Буфер для хранения имени свойства.</span><span class="sxs-lookup"><span data-stu-id="b66ae-108">[out] A buffer to hold the property name.</span></span>  
   
  `cchProperty`  
- <span data-ttu-id="60a53-109">окне Размер в расширенных символах `szProperty` .</span><span class="sxs-lookup"><span data-stu-id="60a53-109">[in] The size in wide characters of `szProperty`.</span></span>  
+ <span data-ttu-id="b66ae-109">окне Размер в расширенных символах `szProperty` .</span><span class="sxs-lookup"><span data-stu-id="b66ae-109">[in] The size in wide characters of `szProperty`.</span></span>  
   
  `pchProperty`  
- <span data-ttu-id="60a53-110">заполняет Число расширенных символов, возвращаемых в `szProperty` .</span><span class="sxs-lookup"><span data-stu-id="60a53-110">[out] The number of wide characters returned in `szProperty`.</span></span>  
+ <span data-ttu-id="b66ae-110">заполняет Число расширенных символов, возвращаемых в `szProperty` .</span><span class="sxs-lookup"><span data-stu-id="b66ae-110">[out] The number of wide characters returned in `szProperty`.</span></span>  
   
  `pdwPropFlags`  
- <span data-ttu-id="60a53-111">заполняет Указатель на любые флаги атрибутов, применяемые к свойству.</span><span class="sxs-lookup"><span data-stu-id="60a53-111">[out] A pointer to any attribute flags applied to the property.</span></span> <span data-ttu-id="60a53-112">Это значение является битовой маской из перечисления [CorPropertyAttr](corpropertyattr-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="60a53-112">This value is a bitmask from the [CorPropertyAttr](corpropertyattr-enumeration.md) enumeration.</span></span>  
+ <span data-ttu-id="b66ae-111">заполняет Указатель на любые флаги атрибутов, применяемые к свойству.</span><span class="sxs-lookup"><span data-stu-id="b66ae-111">[out] A pointer to any attribute flags applied to the property.</span></span> <span data-ttu-id="b66ae-112">Это значение является битовой маской из перечисления [CorPropertyAttr](corpropertyattr-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="b66ae-112">This value is a bitmask from the [CorPropertyAttr](corpropertyattr-enumeration.md) enumeration.</span></span>  
   
  `ppvSig`  
- <span data-ttu-id="60a53-113">заполняет Указатель на сигнатуру метаданных свойства.</span><span class="sxs-lookup"><span data-stu-id="60a53-113">[out] A pointer to the metadata signature of the property.</span></span>  
+ <span data-ttu-id="b66ae-113">заполняет Указатель на сигнатуру метаданных свойства.</span><span class="sxs-lookup"><span data-stu-id="b66ae-113">[out] A pointer to the metadata signature of the property.</span></span>  
   
  `pbSig`  
- <span data-ttu-id="60a53-114">заполняет Число байтов, возвращенных в `ppvSig` .</span><span class="sxs-lookup"><span data-stu-id="60a53-114">[out] The number of bytes returned in `ppvSig`.</span></span>  
+ <span data-ttu-id="b66ae-114">заполняет Число байтов, возвращенных в `ppvSig` .</span><span class="sxs-lookup"><span data-stu-id="b66ae-114">[out] The number of bytes returned in `ppvSig`.</span></span>  
   
  `pdwCPlusTypeFlag`  
- <span data-ttu-id="60a53-115">заполняет Флаг, указывающий тип константы, которая является значением свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="60a53-115">[out] A flag specifying the type of the constant that is the default value of the property.</span></span> <span data-ttu-id="60a53-116">Это значение из перечисления Корелементтипе.</span><span class="sxs-lookup"><span data-stu-id="60a53-116">This value is from the CorElementType enumeration.</span></span>  
+ <span data-ttu-id="b66ae-115">заполняет Флаг, указывающий тип константы, которая является значением свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b66ae-115">[out] A flag specifying the type of the constant that is the default value of the property.</span></span> <span data-ttu-id="b66ae-116">Это значение из перечисления Корелементтипе.</span><span class="sxs-lookup"><span data-stu-id="b66ae-116">This value is from the CorElementType enumeration.</span></span>  
   
  `ppDefaultValue`  
- <span data-ttu-id="60a53-117">заполняет Указатель на байты, в которых хранится значение по умолчанию для этого свойства.</span><span class="sxs-lookup"><span data-stu-id="60a53-117">[out] A pointer to the bytes that store the default value for this property.</span></span>  
+ <span data-ttu-id="b66ae-117">заполняет Указатель на байты, в которых хранится значение по умолчанию для этого свойства.</span><span class="sxs-lookup"><span data-stu-id="b66ae-117">[out] A pointer to the bytes that store the default value for this property.</span></span>  
   
  `pcchDefaultValue`  
- <span data-ttu-id="60a53-118">заполняет Размер в расширенных символах `ppDefaultValue` , если `pdwCPlusTypeFlag` имеет ELEMENT_TYPE_STRING; в противном случае это значение не является значимым.</span><span class="sxs-lookup"><span data-stu-id="60a53-118">[out] The size in wide characters of `ppDefaultValue`, if `pdwCPlusTypeFlag` is ELEMENT_TYPE_STRING; otherwise, this value is not relevant.</span></span> <span data-ttu-id="60a53-119">В этом случае длина `ppDefaultValue` выводится из типа, заданного параметром `pdwCPlusTypeFlag` .</span><span class="sxs-lookup"><span data-stu-id="60a53-119">In that case, the length of `ppDefaultValue` is inferred from the type that is specified by `pdwCPlusTypeFlag`.</span></span>  
+ <span data-ttu-id="b66ae-118">заполняет Размер в расширенных символах `ppDefaultValue` , если `pdwCPlusTypeFlag` имеет ELEMENT_TYPE_STRING; в противном случае это значение не является значимым.</span><span class="sxs-lookup"><span data-stu-id="b66ae-118">[out] The size in wide characters of `ppDefaultValue`, if `pdwCPlusTypeFlag` is ELEMENT_TYPE_STRING; otherwise, this value is not relevant.</span></span> <span data-ttu-id="b66ae-119">В этом случае длина `ppDefaultValue` выводится из типа, заданного параметром `pdwCPlusTypeFlag` .</span><span class="sxs-lookup"><span data-stu-id="b66ae-119">In that case, the length of `ppDefaultValue` is inferred from the type that is specified by `pdwCPlusTypeFlag`.</span></span>  
   
  `pmdSetter`  
- <span data-ttu-id="60a53-120">заполняет Указатель на токен MethodDef, представляющий метод доступа set для свойства.</span><span class="sxs-lookup"><span data-stu-id="60a53-120">[out] A pointer to the MethodDef token that represents the set accessor method for the property.</span></span>  
+ <span data-ttu-id="b66ae-120">заполняет Указатель на токен MethodDef, представляющий метод доступа set для свойства.</span><span class="sxs-lookup"><span data-stu-id="b66ae-120">[out] A pointer to the MethodDef token that represents the set accessor method for the property.</span></span>  
   
  `pmdGetter`  
- <span data-ttu-id="60a53-121">заполняет Указатель на токен MethodDef, представляющий метод доступа get для свойства.</span><span class="sxs-lookup"><span data-stu-id="60a53-121">[out] A pointer to the MethodDef token that represents the get accessor method for the property.</span></span>  
+ <span data-ttu-id="b66ae-121">заполняет Указатель на токен MethodDef, представляющий метод доступа get для свойства.</span><span class="sxs-lookup"><span data-stu-id="b66ae-121">[out] A pointer to the MethodDef token that represents the get accessor method for the property.</span></span>  
   
  `rmdOtherMethod`  
- <span data-ttu-id="60a53-122">заполняет Массив токенов MethodDef, которые представляют другие методы, связанные со свойством.</span><span class="sxs-lookup"><span data-stu-id="60a53-122">[out] An array of MethodDef tokens that represent other methods associated with the property.</span></span>  
+ <span data-ttu-id="b66ae-122">заполняет Массив токенов MethodDef, которые представляют другие методы, связанные со свойством.</span><span class="sxs-lookup"><span data-stu-id="b66ae-122">[out] An array of MethodDef tokens that represent other methods associated with the property.</span></span>  
   
  `cMax`  
- <span data-ttu-id="60a53-123">[in] Максимальный размер массива `rmdOtherMethod`.</span><span class="sxs-lookup"><span data-stu-id="60a53-123">[in] The maximum size of the `rmdOtherMethod` array.</span></span> <span data-ttu-id="60a53-124">Если массив не является достаточно большим, чтобы вместить все методы, они пропускаются без предупреждения.</span><span class="sxs-lookup"><span data-stu-id="60a53-124">If you do not provide an array large enough to hold all the methods, they are skipped without warning.</span></span>  
+ <span data-ttu-id="b66ae-123">[in] Максимальный размер массива `rmdOtherMethod`.</span><span class="sxs-lookup"><span data-stu-id="b66ae-123">[in] The maximum size of the `rmdOtherMethod` array.</span></span> <span data-ttu-id="b66ae-124">Если массив не является достаточно большим, чтобы вместить все методы, они пропускаются без предупреждения.</span><span class="sxs-lookup"><span data-stu-id="b66ae-124">If you do not provide an array large enough to hold all the methods, they are skipped without warning.</span></span>  
   
  `pcOtherMethod`  
- <span data-ttu-id="60a53-125">заполняет Число токенов MethodDef, возвращаемых в `rmdOtherMethod` .</span><span class="sxs-lookup"><span data-stu-id="60a53-125">[out] The number of MethodDef tokens returned in `rmdOtherMethod`.</span></span>  
+ <span data-ttu-id="b66ae-125">заполняет Число токенов MethodDef, возвращаемых в `rmdOtherMethod` .</span><span class="sxs-lookup"><span data-stu-id="b66ae-125">[out] The number of MethodDef tokens returned in `rmdOtherMethod`.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="60a53-126">Требования</span><span class="sxs-lookup"><span data-stu-id="60a53-126">Requirements</span></span>  
- <span data-ttu-id="60a53-127">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="60a53-127">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="60a53-128">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="60a53-128">**Header:** Cor.h</span></span>  
-  
- <span data-ttu-id="60a53-129">**Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="60a53-129">**Library:** Included as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="60a53-130">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="60a53-130">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="60a53-131">См. также</span><span class="sxs-lookup"><span data-stu-id="60a53-131">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="b66ae-126">Требования</span><span class="sxs-lookup"><span data-stu-id="b66ae-126">Requirements</span></span>  
 
-- [<span data-ttu-id="60a53-132">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="60a53-132">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
-- [<span data-ttu-id="60a53-133">Интерфейс IMetaDataImport2</span><span class="sxs-lookup"><span data-stu-id="60a53-133">IMetaDataImport2 Interface</span></span>](imetadataimport2-interface.md)
+ <span data-ttu-id="b66ae-127">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b66ae-127">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="b66ae-128">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="b66ae-128">**Header:** Cor.h</span></span>  
+  
+ <span data-ttu-id="b66ae-129">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="b66ae-129">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="b66ae-130">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b66ae-130">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="b66ae-131">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="b66ae-131">See also</span></span>
+
+- [<span data-ttu-id="b66ae-132">Интерфейс IMetaDataImport</span><span class="sxs-lookup"><span data-stu-id="b66ae-132">IMetaDataImport Interface</span></span>](imetadataimport-interface.md)
+- [<span data-ttu-id="b66ae-133">Интерфейс IMetaDataImport2</span><span class="sxs-lookup"><span data-stu-id="b66ae-133">IMetaDataImport2 Interface</span></span>](imetadataimport2-interface.md)

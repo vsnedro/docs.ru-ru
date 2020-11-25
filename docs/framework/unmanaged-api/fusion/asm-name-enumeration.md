@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: c8b65b19-d777-428f-bc0c-0d84c78a37bc
 topic_type:
 - apiref
-ms.openlocfilehash: fb77fe470829570d5abe291249eb7ef9023e6b14
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 64a34cdf92df345041cb94e9069bcc4d489e3cf5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178311"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728645"
 ---
-# <a name="asm_name-enumeration"></a><span data-ttu-id="119cb-102">Перечисление ASM_NAME</span><span class="sxs-lookup"><span data-stu-id="119cb-102">ASM_NAME Enumeration</span></span>
-<span data-ttu-id="119cb-103">Указывает версию, сборку, культуру, подпись и так далее сборку, свойства которой будут извлечены или установлены методами [IAssemblyName.](iassemblyname-interface.md)</span><span class="sxs-lookup"><span data-stu-id="119cb-103">Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](iassemblyname-interface.md) methods.</span></span>  
+# <a name="asm_name-enumeration"></a><span data-ttu-id="74cd5-102">Перечисление ASM_NAME</span><span class="sxs-lookup"><span data-stu-id="74cd5-102">ASM_NAME Enumeration</span></span>
+
+<span data-ttu-id="74cd5-103">Указывает версию, сборку, язык и региональные параметры, сигнатуру и т. д. для сборки, свойства которой будут извлечены или заданы методами [IAssemblyName](iassemblyname-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="74cd5-103">Indicates the version, build, culture, signature, and so on, of the assembly whose properties will be retrieved or set by [IAssemblyName](iassemblyname-interface.md) methods.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="119cb-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="119cb-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="74cd5-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="74cd5-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -62,16 +63,17 @@ typedef enum {
 } ASM_NAME;  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="119cb-105">Требования</span><span class="sxs-lookup"><span data-stu-id="119cb-105">Requirements</span></span>  
- <span data-ttu-id="119cb-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="119cb-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="119cb-107">**Заголовок:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="119cb-107">**Header:** Fusion.h</span></span>  
-  
- <span data-ttu-id="119cb-108">**Библиотека:** Включено в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="119cb-108">**Library:** Included as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="119cb-109">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="119cb-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="119cb-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="119cb-110">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="74cd5-105">Требования</span><span class="sxs-lookup"><span data-stu-id="74cd5-105">Requirements</span></span>  
 
-- [<span data-ttu-id="119cb-111">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="119cb-111">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
-- [<span data-ttu-id="119cb-112">Перечисления Fusion</span><span class="sxs-lookup"><span data-stu-id="119cb-112">Fusion Enumerations</span></span>](fusion-enumerations.md)
+ <span data-ttu-id="74cd5-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="74cd5-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="74cd5-107">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="74cd5-107">**Header:** Fusion.h</span></span>  
+  
+ <span data-ttu-id="74cd5-108">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="74cd5-108">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="74cd5-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="74cd5-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="74cd5-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="74cd5-110">See also</span></span>
+
+- [<span data-ttu-id="74cd5-111">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="74cd5-111">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
+- [<span data-ttu-id="74cd5-112">Перечисления Fusion</span><span class="sxs-lookup"><span data-stu-id="74cd5-112">Fusion Enumerations</span></span>](fusion-enumerations.md)
