@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 25ca7623-5a55-4f09-b44a-36b03d142278
 topic_type:
 - apiref
-ms.openlocfilehash: 944941c2356cae93ecc85f1714b4b29aefcb50ad
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 32224431051b958a3f01ffeb15cdb6db1dae2657
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008408"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722106"
 ---
 # <a name="imetadataassemblyimportgetexportedtypeprops-method"></a>Метод IMetaDataAssemblyImport::GetExportedTypeProps
+
 Возвращает набор свойств экспортированного типа с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,8 +41,9 @@ HRESULT GetExportedTypeProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `mdct`  
- окне `mdExportedType`Токен метаданных, представляющий экспортированный тип.  
+ окне `mdExportedType` Токен метаданных, представляющий экспортированный тип.  
   
  `szName`  
  заполняет Имя экспортированного типа.  
@@ -50,7 +52,7 @@ HRESULT GetExportedTypeProps (
  окне Размер (в расширенных символах) `szName` .  
   
  `pchName`  
- заполняет Число расширенных символов, фактически возвращаемых в`szName`  
+ заполняет Число расширенных символов, фактически возвращаемых в `szName`  
   
  `ptkImplementation`  
  заполняет `mdFile` `mdAssemblyRef` Маркер метаданных, или `mdExportedType` , который содержит или разрешает доступ к свойствам экспортированного типа.  
@@ -62,14 +64,15 @@ HRESULT GetExportedTypeProps (
  заполняет Указатель на флаги, описывающие метаданные, применяемые к экспортируемому типу. Значение Flags может быть одним или несколькими [кортипеаттр](cortypeattr-enumeration.md) значениями.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

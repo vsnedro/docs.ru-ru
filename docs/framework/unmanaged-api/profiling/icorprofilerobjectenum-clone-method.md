@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b0b2facd-5991-4f4c-932d-c4937f45cef9
 topic_type:
 - apiref
-ms.openlocfilehash: a2a54c32c0713b4b69d8f2a0272687cbe9420610
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: df1d5881bccdb357b16c7f02cd090388e0f66273
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494778"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722808"
 ---
 # <a name="icorprofilerobjectenumclone-method"></a>Метод ICorProfilerObjectEnum::Clone
+
 Получает указатель интерфейса на копию этого интерфейса [ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,10 +34,12 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppEnum`  
  заполняет Указатель на указатель интерфейса, который, в свою очередь, указывает на копию этого `ICorProfilerObjectEnum` интерфейса. Копия хранит собственное состояние перечисления отдельно от этого экземпляра. Однако начальная позиции курсора копии будет совпадать с текущей позицией курсора этого перечислителя.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -45,6 +48,6 @@ HRESULT Clone (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)

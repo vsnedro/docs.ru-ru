@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
 topic_type:
 - apiref
-ms.openlocfilehash: afc818dfe625bfc329ceb1660539eb119702a90d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 17396d3038578c16b74c3717174dc0fa4dc17631
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500680"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722847"
 ---
 # <a name="functionidmapper-function"></a>Функция FunctionIDMapper
+
 Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в обратных вызовах [FunctionEnter2](functionenter2-function.md), [FunctionLeave2](functionleave2-function.md)и [FunctionTailcall2](functiontailcall2-function.md) для этой функции. `FunctionIDMapper` также позволяет профилировщику указать, желает ли он получать обратные вызовы для этой функции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -44,9 +45,11 @@ UINT_PTR __stdcall FunctionIDMapper (
   \[out] указатель на значение, которое задает профилировщик `true` , если он хочет получить `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` обратные вызовы, и, в противном случае присваивает этому параметру значение `false` .
 
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Профилировщик возвращает значение, которое использует подсистема выполнения в качестве альтернативного идентификатора функции. Это возвращаемое значение не может быть значением null, если указатель `pbHookFunction` возвращает значение `false`. В противном случае возвращаемое значение null приведет к непредсказуемым результатам, включая, возможно, остановку процесса.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `FunctionIDMapper`Функция является обратным вызовом. Он реализуется профилировщиком для повторного сопоставления идентификатора функции с другим идентификатором, который более удобен для профилировщика. `FunctionIDMapper`Возвращает альтернативный идентификатор, используемый для любой заданной функции. Затем подсистема выполнения обрабатывает запрос профилировщика, передавая этот альтернативный идентификатор, помимо традиционного идентификатора функции, обратно в профилировщик в `clientData` параметре `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` обработчиков, и, чтобы найти функцию, для которой вызывается обработчик.  
   
  Для указания реализации функции можно использовать метод [ICorProfilerInfo:: SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md) `FunctionIDMapper` . Метод можно вызвать `ICorProfilerInfo::SetFunctionIDMapper` только один раз, и это рекомендуется сделать в обратном вызове [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) .  
@@ -56,6 +59,7 @@ UINT_PTR __stdcall FunctionIDMapper (
  Профилировщики должны быть нечувствительными к случаям, когда несколько потоков профилированного приложения вызывают один и тот же метод или функцию одновременно. В таких случаях профилировщик может получить несколько `FunctionIDMapper` обратных вызовов для одного и того же `FunctionID` . Профилировщик должен быть уверенным в том, чтобы возвращать те же значения из этого обратного вызова, когда он вызывается несколько раз с одним и тем же `FunctionID` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -64,7 +68,7 @@ UINT_PTR __stdcall FunctionIDMapper (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [Функция FunctionIDMapper2](functionidmapper2-function.md)

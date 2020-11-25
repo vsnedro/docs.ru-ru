@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 26fb69f8-1467-4711-bd24-cb117c63938f
 topic_type:
 - apiref
-ms.openlocfilehash: 0a36af5b411673081e74aa243ec8e0f8f876f238
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 1fb701a40abe2dc6e51443837c07ee5ba05ddfbe
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860472"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723653"
 ---
 # <a name="iclrdatatarget2freevirtual-method"></a>Метод ICLRDataTarget2::FreeVirtual
+
 Вызывается службами доступа к данным среды CLR для освобождения памяти, которая была ранее выделена в адресном пространстве целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT FreeVirtual(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `addr`  
  окне `CLRDATA_ADDRESS` Значение, указывающее начальный адрес памяти для высвобождения.  
   
@@ -45,12 +47,14 @@ HRESULT FreeVirtual(
  `typeFlags`  
  окне Флаги, управляющие освобождением памяти. См. раздел `VirtualFree` функция Win32.  
   
-## <a name="remarks"></a>Примечания  
- `FreeVirtual` Метод служит логической оболочкой для функции Win32 `VirtualFree` .  
+## <a name="remarks"></a>Комментарии  
+
+ `FreeVirtual`Метод служит логической оболочкой для `VirtualFree` функции Win32.  
   
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

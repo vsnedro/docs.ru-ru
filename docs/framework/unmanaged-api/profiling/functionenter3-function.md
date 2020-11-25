@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ef782c53-dae7-4990-b4ad-fddb1e690d4e
 topic_type:
 - apiref
-ms.openlocfilehash: b435e1a3504dd623421f977ffc48264f8b0dcb5a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 98a821eabb393d8b5042647e6ef6ffce7ab10783
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500706"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722886"
 ---
 # <a name="functionenter3-function"></a>Функция FunctionEnter3
+
 Уведомляет профилировщик о передаче управления в функцию.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +37,8 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
 
   \[in] идентификатор функции, для которой передается элемент управления.
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `FunctionEnter3`Функция обратного вызова уведомляет профилировщик о вызове функций, но не поддерживает проверку аргументов. Чтобы зарегистрировать реализацию этой функции, используйте [метод ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) .  
   
  `FunctionEnter3`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec(naked)` атрибут класса хранения.  
@@ -48,6 +50,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
 - При выходе необходимо восстановить стек, выключив все параметры, которые были переданы его вызывающим.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -56,7 +59,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [FunctionLeave3](functionleave3-function.md)
 - [FunctionTailcall3](functiontailcall3-function.md)

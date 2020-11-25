@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 18e89f45-e068-426a-be16-9f53a4346860
 topic_type:
 - apiref
-ms.openlocfilehash: 836e4843ead940bc9f76ff6bdd0433e21e400afd
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 13636da9c3e8ac4aa9e8dc1fa02b2e33afef4717
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500641"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722262"
 ---
 # <a name="functionleave-function"></a>Функция FunctionLeave
+
 Уведомляет профилировщик о том, что функция собирается вернуть вызывающему объекту.  
   
 > [!NOTE]
@@ -41,7 +42,8 @@ void __stdcall FunctionLeave (
 
   \[in] Идентификатор возвращаемой функции.
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `FunctionLeave`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec` `naked` атрибут класса хранения ().  
   
  Подсистема выполнения не сохраняет никакие регистры перед вызовом этой функции.  
@@ -55,6 +57,7 @@ void __stdcall FunctionLeave (
  Кроме того, `FunctionLeave` функция не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -63,7 +66,7 @@ void __stdcall FunctionLeave (
   
  **.NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

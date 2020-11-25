@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 57163b0d-c8a7-44af-9078-e7a895d29f9a
 topic_type:
 - apiref
-ms.openlocfilehash: b985ada09e0e1914c5e60da61a45398fc6098b33
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 0680c47e4390e876c5df99ee7eb200e7d187f0ac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976284"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722197"
 ---
 # <a name="icordebugevalgetthread-method"></a>Метод ICorDebugEval::GetThread
+
 Возвращает поток, в котором выполняется эта оценка или она будет выполнена.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetThread (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppThread`  
  заполняет Указатель на адрес объекта ICorDebugThread, представляющего поток.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

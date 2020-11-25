@@ -6,19 +6,21 @@ helpviewer_keywords:
 - profiling global static functions [.NET Framework]
 - unmanaged global static functions [.NET Framework], profiling
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
-ms.openlocfilehash: 20ee2a9e045d839aa8ac043e035c438986b987ef
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 1b0ad42e6b34e99212e112f6a594b0a36b6715e1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76860870"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723081"
 ---
 # <a name="profiling-global-static-functions"></a>Глобальные статические функции профилирования
+
 В этом разделе описываются неуправляемые функции API, используемые API профилирования.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
   
 ## <a name="net-framework-version-1-profiling-functions"></a>.NET Framework функции профилирования версии 1  
+
  [Функция FunctionEnter](functionenter-function.md)  
  Уведомляет профилировщик о передаче управления в функцию. Не рекомендуется использовать в .NET Framework 2,0.  
   
@@ -29,6 +31,7 @@ ms.locfileid: "76860870"
  Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail. Не рекомендуется использовать в .NET Framework 2,0.  
   
 ## <a name="net-framework-version-2-profiling-functions"></a>Функции профилирования .NET Framework версии 2  
+
  [Функция FunctionIDMapper](functionidmapper-function.md)  
  Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в обратных вызовах [FunctionEnter2](functionenter2-function.md), [FunctionLeave2](functionleave2-function.md)и [FunctionTailcall2](functiontailcall2-function.md) для этой функции. Также позволяет профилировщику указать, требуется ли получать обратные вызовы для этой функции.  
   
@@ -45,10 +48,11 @@ ms.locfileid: "76860870"
  Предоставляет профилировщику сведения о каждом управляемом кадре и каждом запуске неуправляемых кадров в стеке во время прохода стека, который инициируется методом [ICorProfilerInfo2::D остаккснапшот](icorprofilerinfo2-dostacksnapshot-method.md) .  
   
 ## <a name="net-framework-version-4-profiling-functions"></a>Функции профилирования .NET Framework версии 4  
+
  [Функция FunctionIDMapper2](functionidmapper2-function.md)  
  Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в ответных вызовах [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md), [FunctionTailcall3](functiontailcall3-function.md)или[FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)и [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) для этой функции. Также позволяет профилировщику указывать, хотят ли они получать обратные вызовы для этой функции.  
   
- `FunctionIDMapper2` расширяет функцию [FunctionIDMapper](functionidmapper-function.md) с помощью параметра `clientData`, который профилировщики могут использовать для устранения неоднозначности между средами выполнения.  
+ `FunctionIDMapper2` расширяет функцию [FunctionIDMapper](functionidmapper-function.md) с помощью `clientData` параметра, который профилировщики могут использовать для устранения неоднозначности между средами выполнения.  
   
  [Функция FunctionEnter3](functionenter3-function.md)  
  Уведомляет профилировщик о передаче управления в функцию.  
@@ -69,9 +73,10 @@ ms.locfileid: "76860870"
  Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail, и предоставляет маркер, который можно передать в [ICorProfilerInfo3:: GetFunctionTailcall3Info](icorprofilerinfo3-getfunctiontailcall3info-method.md) для получения кадра стека.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Общие сведения о профилировании](profiling-overview.md)  
   
- [Интерфейсы профилирования](profiling-interfaces.md)  
+ [Профилирующие интерфейсы](profiling-interfaces.md)  
   
  [Перечисления профилирования](profiling-enumerations.md)  
   

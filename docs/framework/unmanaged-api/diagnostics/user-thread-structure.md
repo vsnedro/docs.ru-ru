@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a57c7d71-c4b0-41f9-a964-0c5ee84a3124
 topic_type:
 - apiref
-ms.openlocfilehash: 5144feab742bc5dac36563d701d81a699d0bb2f3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 409651aa69e957418ad46f61e1bd57add0eb10a6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609447"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722899"
 ---
 # <a name="user_thread-structure"></a>Структура USER_THREAD
+
 Предоставляет сведения отладчику о потоке. Дополнительные сведения см. в описании метода [INotifySource2:: сетнотифифилтер](inotifysource2-setnotifyfilter-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,7 +36,7 @@ typedef struct tagUSER_THREAD
 } USER_THREAD;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -44,9 +45,10 @@ typedef struct tagUSER_THREAD
 |`dwTid`|Идентификатор потока.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Метод SetNotifyFilter](inotifysource2-setnotifyfilter-method.md)
 - [Структуры хранилища символов диагностики](diagnostics-symbol-store-structures.md)

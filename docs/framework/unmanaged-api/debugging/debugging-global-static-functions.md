@@ -6,17 +6,19 @@ helpviewer_keywords:
 - debugging global static functions [.NET Framework]
 - unmanaged global static functions [.NET Framework], debugging
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
-ms.openlocfilehash: c20d8719b63cb40074dc740506ae4a3c0fc3a251
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 04906322e311b580abddeca7744cf3e75d471e05
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76793783"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722990"
 ---
 # <a name="debugging-global-static-functions"></a>Глобальные статические функции отладки
+
 В этом разделе описываются неуправляемые глобальные статистические функции, которые используют API отладки.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Функция _EFN_GetManagedExcepStack](efn-getmanagedexcepstack-function.md)  
  Учитывая адрес объекта управляемого исключения, возвращает строковую версию трассировки стека, содержащейся внутри.  
   
@@ -36,7 +38,8 @@ ms.locfileid: "76793783"
  Указывает на функцию, вызываемую службами доступа к данным среды CLR, чтобы создать указанный объект интерфейса для заданного целевого процесса.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Коклассы отладки](debugging-coclasses.md)  
+
+ [Компонентные классы отладки](debugging-coclasses.md)  
   
  [Интерфейсы отладки](debugging-interfaces.md)  
   

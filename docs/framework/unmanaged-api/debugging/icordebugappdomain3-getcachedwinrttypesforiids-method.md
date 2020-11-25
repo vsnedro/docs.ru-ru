@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 23682ca0-1bcf-48e6-996e-69f7ba337682
 topic_type:
 - apiref
-ms.openlocfilehash: f8e92ec4f813e8810273a1514298d0739a3d2406
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2aff86fb63b87869ed13028bd7344afe11363f51
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179062"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723185"
 ---
 # <a name="icordebugappdomain3getcachedwinrttypesforiids-method"></a>Метод ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs
-Получает регистратор для кэшированных типов Windows Runtime в домене приложения на основе идентификаторов интерфейса.  
+
+Возвращает перечислитель для кэшированных среда выполнения Windowsных типов в домене приложения на основе их идентификаторов интерфейсов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,26 +37,29 @@ HRESULT GetCachedWinRTTypesForIIDs (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cReqTypes`  
- (в) Количество требуемых типов.  
+ окне Число обязательных типов.  
   
  `iidsToResolve`  
- (в) Указатель массива, содержащего идентификаторы интерфейса, соответствующие управляемым представлениям типов Windows Runtime, которые должны быть извлечены.  
+ окне Указатель на массив, содержащий идентификаторы интерфейса, соответствующие управляемым представлениям возвращаемых типов среда выполнения Windows.  
   
  `ppTypesEnum`  
- (ваут) Указатель на адрес объекта интерфейса "ICorDebugTypeEnum", позволяющий перечислять извлеченные кэшированные управляемые представления извлеченных типов Windows `iidsToResolve`Runtime на основе идентификаторов интерфейса.  
+ заполняет Указатель на адрес объекта "ICorDebugTypeEnum" интерфейса, который позволяет перечислить кэшированные управляемые представления возвращаемых типов среда выполнения Windows на основе идентификаторов интерфейса в `iidsToResolve` .  
   
-## <a name="remarks"></a>Remarks  
- Если метод не может получить информацию для конкретного идентификатора интерфейса, соответствующая запись в `ELEMENT_TYPE_END` коллекции "ICorDebugTypeEnum" будет иметь тип для ошибок из-за проблем с поиском данных или `ELEMENT_TYPE_VOID` для неизвестных идентификаторов интерфейса.  
+## <a name="remarks"></a>Комментарии  
+
+ Если методу не удается получить сведения для определенного идентификатора интерфейса, соответствующая запись в коллекции "ICorDebugTypeEnum" будет иметь тип `ELEMENT_TYPE_END` для ошибок из-за проблем, связанных с получением данных, или `ELEMENT_TYPE_VOID` для неизвестных идентификаторов интерфейса.  
   
 ## <a name="requirements"></a>Требования  
- **Платформы:** Время выполнения Windows  
+
+ **Платформы:** среда выполнения Windows  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

@@ -15,18 +15,19 @@ helpviewer_keywords:
 ms.assetid: fffe5616-0896-4426-ab5e-21869b514883
 topic_type:
 - apiref
-ms.openlocfilehash: 44bb98f54debb129f951cc388fea81ca0f17b20c
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: cf9c9d11c4725908fcf7ff4a0c91882b70a80190
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895310"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723380"
 ---
 # <a name="icordebugterminate-method"></a>Метод ICorDebug::Terminate
+
 Завершает `ICorDebug` объект.  
   
 > [!NOTE]
-> `Terminate`не следует вызывать, пока не получен обратный вызов [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
+> `Terminate` не следует вызывать, пока не получен обратный вызов [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,9 +36,11 @@ HRESULT Terminate ();
 ```  
   
 ## <a name="remarks"></a>Remarks  
- `Terminate`должен вызываться, `ICorDebug` когда объект больше не нужен.  
+
+ `Terminate` должен вызываться, когда `ICorDebug` объект больше не нужен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

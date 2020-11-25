@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
 topic_type:
 - apiref
-ms.openlocfilehash: 20b73549d30fe210e4d44902d2f459ea9c682360
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 6d3985919ea7e766db7d07e4ed81484851156ca5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860493"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723674"
 ---
 # <a name="iclrdatatarget2allocvirtual-method"></a>Метод ICLRDataTarget2::AllocVirtual
+
 Вызывается службами доступа к данным среды CLR для выделения памяти в адресном пространстве этого целевого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,8 +39,9 @@ HRESULT AllocVirtual(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `addr`  
- окне Значение `CLRDATA_ADDRESS` типа, указывающее запрошенный начальный адрес выделяемой памяти.  
+ окне `CLRDATA_ADDRESS` Значение типа, указывающее запрошенный начальный адрес выделяемой памяти.  
   
  `size`  
  окне Размер выделяемой памяти в байтах.  
@@ -53,12 +55,14 @@ HRESULT AllocVirtual(
  `virt`  
  заполняет Указатель на `CLRDATA_ADDRESS` значение, указывающее фактический начальный адрес выделенной памяти.  
   
-## <a name="remarks"></a>Примечания  
- `AllocVirtual` Метод служит логической оболочкой для функции Win32 `VirtualAlloc` .  
+## <a name="remarks"></a>Комментарии  
+
+ `AllocVirtual`Метод служит логической оболочкой для `VirtualAlloc` функции Win32.  
   
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

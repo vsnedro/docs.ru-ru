@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: e9226e6e-ca2c-428e-bb38-0c099210f507
 topic_type:
 - apiref
-ms.openlocfilehash: 38603fb53b9cd6548595437b05c1e99ef208d940
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 37b6bcb48681704e3db47f81a51a9d21f00dfb37
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895097"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723198"
 ---
 # <a name="icordebugappdomainenum-interface"></a>Интерфейс ICorDebugAppDomainEnum
 
-Предоставляет `Next` метод, возвращающий указанное число `ICorDebugAppDomainEnum` значений, начиная с следующего расположения в перечислении. Этот интерфейс является подклассом "ICorDebugEnum".  
+Предоставляет `Next` метод, возвращающий указанное число значений, `ICorDebugAppDomainEnum` начиная с следующего расположения в перечислении. Этот интерфейс является подклассом "ICorDebugEnum".  
   
 ## <a name="methods"></a>Методы  
   
@@ -31,12 +31,13 @@ ms.locfileid: "82895097"
 |------------|-----------------|  
 |[Метод Next](icordebugappdomainenum-next-method.md)|Возвращает указанное число доменов приложений из коллекции, начиная с текущей позиции курсора.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

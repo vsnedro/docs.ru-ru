@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3b48fd47-7397-4e2c-8bec-8157aa08978c
 topic_type:
 - apiref
-ms.openlocfilehash: a2c2512abc28f0140fc261c5136c7e1255db96de
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: f5495c170abf3e991a6e28016687f8ae77f0b423
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009219"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722028"
 ---
 # <a name="imetadataemit-interface"></a>Интерфейс IMetaDataEmit
+
 Предоставляет методы для создания, изменения и сохранения метаданных сборки в области, определенной в данный момент. Метаданные могут храниться в памяти или сохраняться на диск.  
   
 ## <a name="methods"></a>Методы  
@@ -79,15 +80,16 @@ ms.locfileid: "84009219"
 |[Метод TranslateSigWithScope](imetadataemit-translatesigwithscope-method.md)|Импортирует сборку в текущую область и получает новую сигнатуру метаданных для Объединенной области.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

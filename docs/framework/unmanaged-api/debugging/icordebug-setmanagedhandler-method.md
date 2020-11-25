@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type:
 - apiref
-ms.openlocfilehash: a197d260c55d24f906da7d7f2768bb7ba1ad751f
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 97a4a464d3dfb7b333f44ac4206bd880fd171e16
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895343"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723419"
 ---
 # <a name="icordebugsetmanagedhandler-method"></a>Метод ICorDebug::SetManagedHandler
+
 Указывает объект обработчика событий для управляемых событий.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,15 +35,18 @@ HRESULT SetManagedHandler (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCallback`  
  окне Указатель на объект [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) , который является объектом обработчика событий.  
   
-## <a name="remarks"></a>Remarks  
- `SetManagedHandler`должен вызываться во время создания.  
+## <a name="remarks"></a>Комментарии  
+
+ `SetManagedHandler` должен вызываться во время создания.  
   
  Если `ICorDebugManagedCallback` реализация не содержит достаточных интерфейсов для работы с событиями отладки для отлаживаемого приложения, `SetManagedHandler` возвращает значение HRESULT E_NOINTERFACE.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

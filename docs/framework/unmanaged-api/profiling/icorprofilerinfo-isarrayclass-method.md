@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7f230961-23a6-4d56-ad2d-7a876d65705f
 topic_type:
 - apiref
-ms.openlocfilehash: 2a3f5bb0c54935e524cc955a5e11aac75b0c0923
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2608f91a7c5baa935e48fbe58ad4d14aaaad1f0d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497560"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722509"
 ---
 # <a name="icorprofilerinfoisarrayclass-method"></a>Метод ICorProfilerInfo::IsArrayClass
+
 Определяет, является ли указанный класс классом массива.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT IsArrayClass(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор анализируемого класса.  
   
@@ -48,10 +50,12 @@ HRESULT IsArrayClass(
  `pcRank`  
  заполняет Указатель на целое число, указывающее ранг (то есть количество измерений) массива.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Если указанный класс является классом массива, `IsArrayClass` метод возвращает S_OK HRESULT и значения для любых выходных параметров, отличных от NULL. В противном случае возвращается S_FALSE.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -60,6 +64,6 @@ HRESULT IsArrayClass(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fb90cb7f-af88-45e8-a99f-80a0bbddb08b
 topic_type:
 - apiref
-ms.openlocfilehash: d2d16ab0a29fadd3a64d906a64fc46c422e01c45
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: deb3a28ffb73754b4c03496a6a72325418f1a4fc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610045"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722912"
 ---
 # <a name="isymunmanagedwriteropenmethod-method"></a>Метод ISymUnmanagedWriter::OpenMethod
+
 Открывает метод, в который порождается символьная информация. Данный метод преобразуется в текущий метод для вызовов для определения точек следования, параметров и лексических областей. Существует неявная лексическая область вокруг всего метода. Повторное открытие метода, который ранее был закрыт, стирает все ранее определенные символы для этого метода. Одновременно может быть только один метод открытия.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,16 +34,19 @@ HRESULT OpenMethod(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `method`  
  окне Токен метаданных для открываемого метода.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Метод CloseMethod](isymunmanagedwriter-closemethod-method.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 154b2460-59ce-4874-a9f2-1b3353486ac5
 topic_type:
 - apiref
-ms.openlocfilehash: 0cf7b15392c90694db659f6faff6feecbef65466
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4ef3992d840f539ca07c411c2d740fa32b14edbc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008341"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722951"
 ---
 # <a name="iceegengetsectioncreate-method"></a>Метод ICeeGen::GetSectionCreate
+
 Создает и получает раздел кода, используя указанные значения имени и флага.  
   
  Этот метод устарел и не должен использоваться.  
@@ -38,6 +39,7 @@ HRESULT GetSectionCreate (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `name`  
  окне Указатель на строку, указывающую имя создаваемого раздела.  
   
@@ -47,18 +49,20 @@ HRESULT GetSectionCreate (
  `section`  
  заполняет Указатель на только что созданный раздел кода.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Вызывайте `GetSectionCreate` только при наличии особых требований к разделам, которые не обрабатываются другими методами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

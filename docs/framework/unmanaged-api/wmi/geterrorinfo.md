@@ -14,14 +14,15 @@ helpviewer_keywords:
 - GetErrorInfo function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 9a80c0b5522113e704336cda29362a0406077931
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5da4eaa459c515689b822e4cb537380245e800e1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553679"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722769"
 ---
 # <a name="geterrorinfo-function"></a>Функция GetErrorInfo
+
 Получает сведения об ошибках из предыдущего вызова функции.  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -36,17 +37,18 @@ IErrorInfo* GetErrorInfo();
 
 Указатель на объект [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) при успешном вызове функции или в `null` случае сбоя.
   
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта функция заключает в оболочку вызов метода [икомсреадингинфо:: жетерроринфо](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) .
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** WMINet_Utils. def  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [WMI и счетчики производительности (справочник по неуправляемым API)](index.md)

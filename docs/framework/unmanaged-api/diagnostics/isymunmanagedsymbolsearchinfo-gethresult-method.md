@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6999dc3d-65d7-4bf6-bb0a-6efc0fc72588
 topic_type:
 - apiref
-ms.openlocfilehash: 9dcd8282adf200932e86c950bee0b073780ce02d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: a931c15b1c4a9f099d11c43edd324cfcc2793090
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615310"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722275"
 ---
 # <a name="isymunmanagedsymbolsearchinfogethresult-method"></a>Метод ISymUnmanagedSymbolSearchInfo::GetHRESULT
+
 Возвращает значение HRESULT.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,15 +34,18 @@ HRESULT GetHRESULT(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phr`  
  заполняет Указатель на значение HRESULT.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 94249397-861b-4294-a538-cf01466a66d3
 topic_type:
 - apiref
-ms.openlocfilehash: 6b2700b2f12e312f06640a06e5ec82fbc58f2ca9
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: dee5108439610b67c3397cebcd8ee5f84d4eacea
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860461"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723640"
 ---
 # <a name="iclrdatatarget2-interface"></a>Интерфейс ICLRDataTarget2
+
 Подкласс [ICLRDataTarget](iclrdatatarget-interface.md) , используемый уровнем служб доступа к данным для управления областями виртуальной памяти в целевом процессе.  
   
 ## <a name="methods"></a>Методы  
@@ -31,10 +32,12 @@ ms.locfileid: "82860461"
 |[Метод AllocVirtual](iclrdatatarget2-allocvirtual-method.md)|Выделяет память в адресном пространстве целевого процесса.|  
 |[Метод FreeVirtual](iclrdatatarget2-freevirtual-method.md)|Освобождает память, которая была ранее выделена в адресном пространстве целевого процесса.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Клиент API (то есть отладчик) должен реализовывать этот интерфейс для определенного целевого процесса по мере необходимости. Например, реализация активного процесса будет отличаться от реализации дампа памяти. Целевой объект может не поддерживать изменение областей его памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

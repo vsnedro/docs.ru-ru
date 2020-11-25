@@ -1,6 +1,6 @@
 ---
-title: Функция GetMethodOrigin (Неуправляемая справка API)
-description: Функция GetMethodOrigin определяет класс, в котором объявляется метод.
+title: Функция Жетмесодоригин (Справочник по неуправляемым API)
+description: Функция Жетмесодоригин определяет класс, в котором объявлен метод.
 ms.date: 11/06/2017
 api_name:
 - GetMethodOrigin
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - GetMethodOrigin function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 5b4609b6649be875aea7dfcf52ba36b1e98ab7bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 434392ffb4d9124e319bcd9c42fdd340d3fec5b4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176803"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722782"
 ---
 # <a name="getmethodorigin-function"></a>Функция GetMethodOrigin
+
 Определяет класс, в котором объявлен метод.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -40,41 +41,42 @@ HRESULT GetMethodOrigin (
 ## <a name="parameters"></a>Параметры
 
 `vFunc`  
-(в) Этот параметр не используется.
+окне Этот параметр не используется.
 
 `ptr`  
-(в) Указатель на экземпляр [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+окне Указатель на экземпляр [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `wszMethodName`  
-(в) Имя метода для объекта, владеющий классом.
+окне Имя метода для объекта, класс-владелец которого запрашивается.
 
 `pstrClassName`  
-(ваут) Получает название класса, которому принадлежит метод.
+заполняет Получает имя класса, владеющего методом.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | Указанный метод не найден. |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Один или несколько параметров недействительны. |
-|`WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Один или несколько параметров недопустимы. |
+|`WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция завершает вызов методом [IWbemClassObject::GetMethodOrigin.](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod)
+Эта функция заключает в оболочку вызов метода [ивбемклассобжект:: жетмесодоригин](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) .
 
-Поскольку класс может наследовать методы из одного или нескольких базовых классов, разработчики часто хотят определить класс, в котором определен данный метод.
+Поскольку класс может наследовать методы от одного или нескольких базовых классов, разработчики часто хотят определить класс, в котором определен определенный метод.
 
-Параметр `pstrClassName` не должен указывать на допустимый `BSTR` перед `out` вызовом функции, поскольку это параметр; этот указатель не разбирается после возврата функции.
+`pstrClassName`Параметр не должен указывать на допустимый `BSTR` до вызова функции, так как это `out` параметр; Этот указатель не освобождается после возвращения функции.
 
 ## <a name="requirements"></a>Требования  
+
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

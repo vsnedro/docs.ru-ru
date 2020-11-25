@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fdab0ade-7f56-4fa2-b3ef-f7a1d2852bba
 topic_type:
 - apiref
-ms.openlocfilehash: 3630e25b6c24edaa366f1b0fae088e760e851fa4
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 1713623fa575bea6df649106b37212f7aeaee6db
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895409"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723471"
 ---
 # <a name="icordebugdebugactiveprocess-method"></a>Метод ICorDebug::DebugActiveProcess
+
 Присоединяет отладчик к существующему процессу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,19 +37,22 @@ HRESULT DebugActiveProcess (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `id`  
  окне Идентификатор процесса, к которому должен быть присоединен отладчик.  
   
  `win32Attach`  
- окне Логическое значение, равное, `true` если отладчик должен вести себя в качестве отладчика Win32 для процесса и передать неуправляемые обратные вызовы. в противном случае — `false`.  
+ окне Логическое значение, которое устанавливается в, `true` Если отладчик должен вести себя в качестве отладчика Win32 для процесса и отправляют неуправляемые обратные вызовы. в противном случае — `false` .  
   
  `ppProcess`  
  заполняет Указатель на адрес объекта "ICorDebugProcess", который представляет процесс, к которому присоединен отладчик.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладка взаимодействия не поддерживается на платформах Win9x и на платформе, отличной от x86, например на платформах на основе IA-64 и AMD64.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

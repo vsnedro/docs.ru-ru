@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
 topic_type:
 - apiref
-ms.openlocfilehash: b7b15261d825c1bd5f217c4cecd82ed36a716d0e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 9d14ec33128596a148ca3509a49c8c97fafe82d6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008265"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723107"
 ---
 # <a name="iceegengetstring-method"></a>Метод ICeeGen::GetString
+
 Возвращает строку, хранящуюся по указанному относительному виртуальному адресу.  
   
  Этот метод устарел и не должен использоваться.  
@@ -37,6 +38,7 @@ HRESULT GetString (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `RVA`  
  окне Относительный виртуальный адрес возвращаемой строки.  
   
@@ -44,14 +46,15 @@ HRESULT GetString (
  заполняет Возвращаемая строка.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

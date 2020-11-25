@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ca7723db-7c07-4cdd-bd92-fba34928b623
 topic_type:
 - apiref
-ms.openlocfilehash: 354df02b27e87550ba602fe102352455c227441b
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 195c7e1e7c61fd6ac8a21226b52e3782d2f7e421
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82859690"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723497"
 ---
 # <a name="icordebugcanlaunchorattach-method"></a>Метод ICorDebug::CanLaunchOrAttach
+
 Возвращает значение HRESULT, указывающее, возможен ли запуск нового процесса или присоединение к указанному существующему процессу в контексте текущего компьютера и конфигурации среды выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,13 +36,15 @@ HRESULT CanLaunchOrAttach (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwProcessId`  
  окне Идентификатор существующего процесса.  
   
  `win32DebuggingEnabled`  
- окне `true` Если вы планируете запустить отладку Win32 или присоединиться с включенной отладкой Win32, передавайте значение. в противном `false`случае передайте.  
+ окне `true` Если вы планируете запустить отладку Win32 или присоединиться с включенной отладкой Win32, войдите в. в противном случае передайте `false` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если службы отладки определяют, что можно запустить новый процесс или присоединиться к заданному процессу, учитывая сведения о текущем компьютере и конфигурации среды выполнения. Возможные значения HRESULT:  
   
 - S_OK  
@@ -52,12 +55,14 @@ HRESULT CanLaunchOrAttach (
   
 - CORDBG_E_KERNEL_DEBUGGER_ENABLED  
   
-## <a name="remarks"></a>Примечания  
- Этот метод является исключительно информационным. Интерфейс не будет останавливаться при запуске или присоединении к процессу, независимо от значения, возвращаемого `CanLaunchOrAttach`.  
+## <a name="remarks"></a>Комментарии  
+
+ Этот метод является исключительно информационным. Интерфейс не будет останавливаться при запуске или присоединении к процессу, независимо от значения, возвращаемого `CanLaunchOrAttach` .  
   
- Если планируется запуск с включенной отладкой Win32 или подключение с включенной отладкой `true` Win32 `win32DebuggingEnabled`, передайте. Значение HRESULT, возвращаемое, `CanLaunchOrAttach` может отличаться при использовании этого параметра.  
+ Если планируется запуск с включенной отладкой Win32 или подключение с включенной отладкой Win32, передайте `true` `win32DebuggingEnabled` . Значение HRESULT, возвращаемое, `CanLaunchOrAttach` может отличаться при использовании этого параметра.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

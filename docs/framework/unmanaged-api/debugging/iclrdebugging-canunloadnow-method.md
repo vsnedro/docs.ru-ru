@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62e0630c-8cb7-45d2-b622-5a472abfd8cf
 topic_type:
 - apiref
-ms.openlocfilehash: 16d15101534b88d7da4093dab73b48b5c09a192c
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: e89d936c528ea7482487a8629dbd882f6f67483e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860401"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723575"
 ---
 # <a name="iclrdebuggingcanunloadnow-method"></a>Метод ICLRDebugging::CanUnloadNow
+
 Определяет, используется ли по-прежнему Библиотека, предоставленная интерфейсом [иклрдебуггинглибрарипровидер](iclrdebugginglibraryprovider-interface.md) , или она может быть выгружена.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,24 +33,28 @@ HRESULT CanUnloadNow(HMODULE hModule);
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hmodule`  
  окне Базовый адрес модуля в целевом процессе.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|Модуль, на который указывает ссылка `hmodule` , может быть выгружен.|  
-|S_FALSE|Модуль, на который ссылается `hmodule` , по-прежнему используется.|  
+|S_OK|Модуль, на который указывает ссылка, `hmodule` может быть выгружен.|  
+|S_FALSE|Модуль, на который ссылается, по `hmodule` -прежнему используется.|  
 |COR_E_NOT_CLR|Указанный модуль не является модулем CLR.|  
   
 ## <a name="exceptions"></a>Исключения  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Этот метод проверяет, освобождаются ли все экземпляры `ICorDebug*` интерфейсов, и пока нет потоков в вызове метода [ICLRDebugging:: OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

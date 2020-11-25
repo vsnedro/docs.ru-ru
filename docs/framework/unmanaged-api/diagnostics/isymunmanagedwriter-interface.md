@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
 topic_type:
 - apiref
-ms.openlocfilehash: 8f0bbd26bde562df5482d167c9d2775e01426f55
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: fddfd2a163f6e6513b648ee0b724c0b5bd54c81a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610058"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722938"
 ---
 # <a name="isymunmanagedwriter-interface"></a>Интерфейс ISymUnmanagedWriter
+
 Представляет средство записи символов и предоставляет методы для определения документов, точек следования, лексических областей и переменных.  
   
 ## <a name="methods"></a>Методы  
@@ -54,9 +55,10 @@ ms.locfileid: "83610058"
 |[Метод UsingNamespace](isymunmanagedwriter-usingnamespace-method.md)|Указывает, что данное полное имя пространства имен используется в открытой лексической области.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)
