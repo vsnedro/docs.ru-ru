@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dc9a0a6c-d592-4fb7-86ed-62684da3b0e1
 topic_type:
 - apiref
-ms.openlocfilehash: c75c55b64ff20728bc5695d0ddfe1b4f6deda4a6
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 3a355822710394e9351f10be78dea283e2e9907c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860652"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703595"
 ---
 # <a name="iclrdatatargetgetcurrentthreadid-method"></a>Метод ICLRDataTarget::GetCurrentThreadID
+
 Возвращает идентификатор операционной системы для текущего потока.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetCurrentThreadID (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadID`  
  заполняет Указатель на идентификатор операционной системы текущего потока для целевого процесса.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Если текущего потока для целевого процесса нет, `GetCurrentThreadID` метод может завершиться ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

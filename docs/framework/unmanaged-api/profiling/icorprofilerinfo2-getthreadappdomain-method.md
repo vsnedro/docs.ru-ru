@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4a11b264-8540-4732-aa35-bc2d95b95b8e
 topic_type:
 - apiref
-ms.openlocfilehash: 70535f8bcee95c2596c43617eb5893e2d92a355b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 010b2dff27ac17906e16fe58729facc7a217b43f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496785"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703763"
 ---
 # <a name="icorprofilerinfo2getthreadappdomain-method"></a>Метод ICorProfilerInfo2::GetThreadAppDomain
+
 Возвращает идентификатор домена приложения, в котором указанный поток в настоящий момент исполняет код.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT GetThreadAppDomain(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadId`  
  окне Идентификатор, указывающий поток.  
   
@@ -41,6 +43,7 @@ HRESULT GetThreadAppDomain(
  заполняет Указатель на идентификатор домена приложения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -49,7 +52,7 @@ HRESULT GetThreadAppDomain(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

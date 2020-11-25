@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type:
 - apiref
-ms.openlocfilehash: 5c0fb023dd355f3a9c1ed846913f86b354592ed5
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 35b7bff5d4d778a429ddc1dcd0206e6e8970ee4f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860606"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703503"
 ---
 # <a name="iclrdatatargetgetthreadcontext-method"></a>Метод ICLRDataTarget::GetThreadContext
+
 Возвращает текущий контекст выполнения для данного потока в целевом процессе. Этот метод вызывается службами доступа к данным среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetThreadContext (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadID`  
  окне Идентификатор операционной системы потока в целевом процессе.  
   
@@ -50,12 +52,14 @@ HRESULT GetThreadContext (
  `context`  
  заполняет Указатель на буфер, в который будет помещен контекст.  
   
- Данные в `context` буфере должны быть в формате структуры Win32 `CONTEXT` . Контекст задает зависящие от процессора данные регистров, поэтому определение структуры Win32 `CONTEXT` зависит от архитектуры процессора. Описание структуры Win32 `CONTEXT` см. в файле заголовка WinNT. h.  
+ Данные в `context` буфере должны быть в формате `CONTEXT` структуры Win32. Контекст задает зависящие от процессора данные регистров, поэтому определение `CONTEXT` структуры Win32 зависит от архитектуры процессора. Описание структуры Win32 см. в файле заголовка WinNT. h `CONTEXT` .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
 topic_type:
 - apiref
-ms.openlocfilehash: 3626998c456e23fb922ae45a68bedb0e45a7ccba
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d335beecc12e0c1c895e42888ad7172f78062ff7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490436"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95702544"
 ---
 # <a name="imetadataimport2getpekind-method"></a>Метод IMetaDataImport2::GetPEKind
+
 Возвращает значение, определяющее природу кода в переносимом исполняемом (PE) файле (обычно это DLL или EXE-файл), который определен в текущей области метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,13 +36,15 @@ HRESULT GetPEKind (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pdwPEKind`  
  заполняет Указатель на значение перечисления [CorPEKind](corpekind-enumeration.md) , ОПИСЫВАЮЩее PE-файл.  
   
  `pdwMachine`  
  заполняет Указатель на значение, идентифицирующее архитектуру компьютера. Возможные значения см. в следующем разделе.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Значение, на которое ссылается `pdwMachine` параметр, может быть одним из следующих.  
   
 |Значение|Архитектура компьютера|  
@@ -51,15 +54,16 @@ HRESULT GetPEKind (
 |IMAGE_FILE_MACHINE_AMD64<br /><br /> 0x8664|X64|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)

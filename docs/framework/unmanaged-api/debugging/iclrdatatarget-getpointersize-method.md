@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 51d9f4a4-81a7-4527-8537-5212bdb05c70
 topic_type:
 - apiref
-ms.openlocfilehash: e6c4d5f8cc911198add176cab9c4b9b89128068e
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 077aa50465d99c9098f26e67b3852feb0d399142
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860622"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703529"
 ---
 # <a name="iclrdatatargetgetpointersize-method"></a>Метод ICLRDataTarget::GetPointerSize
+
 Возвращает размер (в байтах) типа указателя, используемого целевым процессом. Этот метод вызывается службами доступа к данным среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetPointerSize (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pointerSize`  
  заполняет Указатель на целочисленное значение, указывающее размер (в байтах) указателя на целевой процесс.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

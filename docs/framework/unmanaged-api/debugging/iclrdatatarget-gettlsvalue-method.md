@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0d8a7730-edc9-4728-898f-41b219cf5a28
 topic_type:
 - apiref
-ms.openlocfilehash: 141dc8632812ab4a2ce82864cde56337025baa28
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: f6066774961b3fba2c466e156296907efc2e53df
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860583"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703412"
 ---
 # <a name="iclrdatatargetgettlsvalue-method"></a>Метод ICLRDataTarget::GetTLSValue
+
 Возвращает значение из локального хранилища потока (TLS) указанного потока в целевом процессе. Этот метод вызывается службами доступа к данным среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetTLSValue (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadID`  
  окне Идентификатор операционной системы потока в целевом процессе.  
   
@@ -45,10 +47,12 @@ HRESULT GetTLSValue (
  `value`  
  заполняет Указатель на `CLRDATA_ADDRESS` значение, указывающее значение, возвращаемое из заданного расположения TLS.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Этот метод реализуется модулем записи отладчика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

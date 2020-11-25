@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 249f9892-b5a9-41e1-b329-28a925904df6
 topic_type:
 - apiref
-ms.openlocfilehash: cb7e21e0c6aad5ebb328ae5d1a993716f96e8d47
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e1cd3ef78d303aaa325699e1bcdec95f077fef21
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500576"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703984"
 ---
 # <a name="functiontailcall2-function"></a>Функция FunctionTailcall2
+
 Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail и предоставляет сведения о кадре стека.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -50,7 +51,8 @@ void __stdcall FunctionTailcall2 (
 
   Профилировщик должен рассматривать это как непрозрачный маркер, который можно передать обратно в подсистему выполнения метода [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) .
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Целевая функция вызова с префиксом tail будет использовать текущий кадр стека и будет возвращаться непосредственно вызывающему объекту функции, которая выполнила вызов с префиксом tail. Это означает, что обратный вызов [FunctionLeave2](functionleave2-function.md) не будет выдаваться для функции, которая является целевым объектом для вызова с префиксом tail.  
   
  Значение `func` параметра не является допустимым после `FunctionTailcall2` возврата функции, так как оно может измениться или быть уничтожено.  
@@ -68,6 +70,7 @@ void __stdcall FunctionTailcall2 (
  Кроме того, `FunctionTailcall2` функция не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -76,7 +79,7 @@ void __stdcall FunctionTailcall2 (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: eedb9125-1ef1-4000-abfc-7de86e5a1f17
 topic_type:
 - apiref
-ms.openlocfilehash: 4f710ef9741869a2b4fd8473ed3ecf379cfcc56d
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 131f5d951e524ef48f2cfe1e3e88ef80ac21c452
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445586"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703685"
 ---
 # <a name="setassemblyfile2-method"></a>Метод SetAssemblyFile2
+
 Задает имя параметров и для новой сборки. Не вызывайте этот метод при создании несвязанных модулей.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT SetAssemblyFile2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pszFilename`  
  Имя файла манифеста.  
   
@@ -49,12 +51,14 @@ HRESULT SetAssemblyFile2(
  Получает уникальный идентификатор для создаваемой сборки.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

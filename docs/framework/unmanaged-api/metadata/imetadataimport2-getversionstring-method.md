@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 308183ee-fd44-4432-9d86-ef00d181b49b
 topic_type:
 - apiref
-ms.openlocfilehash: 84cf5ac9eab5749d3bdc63670fe5c31bfb62abcd
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3e62b1177c0161883ad03086723cc43b71292df5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490411"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95702567"
 ---
 # <a name="imetadataimport2getversionstring-method"></a>Метод IMetaDataImport2::GetVersionString
+
 Возвращает номер версии среды выполнения, которая использовалась для построения сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetVersionString (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzBuf`  
  заполняет Массив для хранения строки, указывающей версию.  
   
@@ -45,19 +47,21 @@ HRESULT GetVersionString (
  `pccBufSize`  
  заполняет Число расширенных символов, включая знак завершения null, возвращаемый в `pwzBuf` массиве.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetVersionString`Метод получает встроенную версию текущей области метаданных. Если область не была сохранена, она не будет иметь встроенной версии и будет возвращена пустая строка.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)

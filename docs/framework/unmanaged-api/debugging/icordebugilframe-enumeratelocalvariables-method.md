@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a67fa1b-2419-4cd0-aad4-6f46a0719b4b
 topic_type:
 - apiref
-ms.openlocfilehash: ad1a91e42f582ce96906da5cbf00ca89acb18499
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 968ceec53aade3d04c500c8247d397ffb71382c1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210300"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703204"
 ---
 # <a name="icordebugilframeenumeratelocalvariables-method"></a>Метод ICorDebugILFrame::EnumerateLocalVariables
+
 Возвращает перечислитель для локальных переменных в этом кадре.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT EnumerateLocalVariables(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppValueEnum`  
  [из] Указатель на адрес объекта ICorDebugValueEnum, который является перечислителем для локальных переменных в этом кадре.  
   
-## <a name="remarks"></a>Remarks  
- `EnumerateLocalVariables`Возвращает перечислитель, который может перечислить локальные переменные, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список не может включать все локальные переменные в выполняемой функции, так как некоторые из них могут быть неактивными.  
+## <a name="remarks"></a>Комментарии  
+
+ `EnumerateLocalVariables` Возвращает перечислитель, который может перечислить локальные переменные, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список не может включать все локальные переменные в выполняемой функции, так как некоторые из них могут быть неактивными.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 00ac81e2-a774-422a-bd88-54a4b3c99f73
 topic_type:
 - apiref
-ms.openlocfilehash: 3945b1dea62dc0616d669356faf60f0d09cfb084
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9b0bc59b67b5d4b2184733f22616433bf33be616
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210310"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703230"
 ---
 # <a name="icordebugilframeenumeratearguments-method"></a>Метод ICorDebugILFrame::EnumerateArguments
+
 Возвращает перечислитель для аргументов в этом кадре.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT EnumerateArguments (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppValueEnum`  
  заполняет Указатель на адрес объекта ICorDebugValueEnum, который является перечислителем для аргументов в этом кадре.  
   
-## <a name="remarks"></a>Remarks  
- `EnumerateArguments`Возвращает перечислитель, который может перечислить аргументы, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список будет содержать аргументы [vararg](/cpp/windows/vararg) (то есть переменное число аргументов), а также аргументы, которые не являются аргументами `vararg` .  
+## <a name="remarks"></a>Комментарии  
+
+ `EnumerateArguments` Возвращает перечислитель, который может перечислить аргументы, доступные в кадре вызова, представленном этим объектом ICorDebugILFrame. Список будет содержать аргументы [vararg](/cpp/windows/vararg) (то есть переменное число аргументов), а также аргументы, которые не являются аргументами `vararg` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

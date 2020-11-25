@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: d39b2b87-ba53-4771-ae53-952a68452511
 topic_type:
 - apiref
-ms.openlocfilehash: fe9e87618291218a41e52f80198ce9068c9c56e2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a845ecfde6583d625d2a8f165443344ff9e40d05
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490402"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95702555"
 ---
 # <a name="imetadataimport2-interface"></a>Интерфейс IMetaDataImport2
+
 Расширяет интерфейс [IMetaDataImport](imetadataimport-interface.md) для обеспечения возможности работы с универсальными типами.  
   
 ## <a name="methods"></a>Методы  
@@ -38,15 +39,16 @@ ms.locfileid: "84490402"
 |[Метод GetVersionString](imetadataimport2-getversionstring-method.md)|Возвращает номер версии среды выполнения, которая использовалась для построения сборки.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Reflection.PortableExecutableKinds>
 - [Интерфейсы метаданных](metadata-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: be3f5985-b1e4-4036-8602-c16e8508d4af
 topic_type:
 - apiref
-ms.openlocfilehash: 1c9d9647084aa729817eeeb17ee3f5cd320c0d29
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e81816ce2194c2c1862cb997ad2c6e5baf301231
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491253"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704010"
 ---
 # <a name="imetadataimportgetinterfaceimplprops-method"></a>Метод IMetaDataImport::GetInterfaceImplProps
+
 Возвращает указатель на маркеры метаданных для <xref:System.Type> , который реализует указанный метод, и для интерфейса, объявляющего этот метод.
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetInterfaceImplProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `iiImpl`  
  окне Токен метаданных, представляющий метод, для которого необходимо вернуть маркеры класса и интерфейса.  
   
@@ -45,7 +47,7 @@ HRESULT GetInterfaceImplProps (
  `ptkIface`  
  заполняет Токен метаданных, представляющий интерфейс, определяющий реализованный метод.  
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Получить значение для можно `iImpl` путем вызова метода [енуминтерфацеимплс](imetadataimport-enuminterfaceimpls-method.md) .
 
@@ -70,18 +72,19 @@ HRESULT GetInterfaceImplProps (
 - 3 младших байта содержат номер строки или RID.
 - Верхний байт содержит тип токена — 0x09 для `mdtInterfaceImpl` .
 
-`GetInterfaceImplProps`Возвращает информацию, удерживаемую в строке, токен которой вы задаете в `iImpl` аргументе.
+`GetInterfaceImplProps` Возвращает информацию, удерживаемую в строке, токен которой вы задаете в `iImpl` аргументе.
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

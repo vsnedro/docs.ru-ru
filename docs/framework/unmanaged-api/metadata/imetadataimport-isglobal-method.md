@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 44cf6908-f555-4ae8-b2cf-24bd974bf2fe
 topic_type:
 - apiref
-ms.openlocfilehash: d477976952d2c1875a620d1397fd43e5c5e2836f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0d76abf8a9c923089f367ab4e1786ac8cc92622d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503475"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95702983"
 ---
 # <a name="imetadataimportisglobal-method"></a>Метод IMetaDataImport::IsGlobal
+
 Возвращает значение, указывающее на наличие глобальной области у поля, метода или типа, представленного заданным токеном метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT IsGlobal (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pd`  
  окне Токен метаданных, представляющий тип, поле или метод.  
   
@@ -42,15 +44,16 @@ HRESULT IsGlobal (
  [out] 1, если объект имеет глобальную область видимости; в противном случае — 0 (ноль).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

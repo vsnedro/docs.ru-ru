@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e2fd423-f643-4c27-ba5f-41b5ebc3b416
 topic_type:
 - apiref
-ms.openlocfilehash: d715f5842bb7f75da5311d34bf7d4596f0801a92
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: d17179dbeb9564b16c0c95a43502a53a67d3b9b8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210284"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703168"
 ---
 # <a name="icordebugilframegetargument-method"></a>Метод ICorDebugILFrame::GetArgument
+
 Возвращает значение указанного аргумента в кадре стека MSIL.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT GetArgument (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwIndex`  
  окне Индекс аргумента в этом кадре стека MSIL.  
   
  `ppValue`  
  [из] Указатель на адрес объекта ICorDebugValue, представляющего извлеченное значение.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `GetArgument`Метод можно использовать либо в кадре стека MSIL, либо в кадре JIT-компиляции.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

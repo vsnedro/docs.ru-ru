@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fc663e76-e23f-49a8-bdd5-52cdf1a3b2b3
 topic_type:
 - apiref
-ms.openlocfilehash: e1dd6addd9053ffb6cf2ce23408673d8fca17cb5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ff84bdfb8bbd5331fb94eed766f09137adf9e62c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496845"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703847"
 ---
 # <a name="icorprofilerinfo2getstaticfieldinfo-method"></a>Метод ICorProfilerInfo2::GetStaticFieldInfo
+
 Возвращает значение, указывающее тип статического объекта, который применяется к указанному полю.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetStaticFieldInfo (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор класса, в котором определено статическое поле.  
   
@@ -44,12 +46,14 @@ HRESULT GetStaticFieldInfo (
  `pFieldInfo`  
  заполняет Указатель на значение перечисления [COR_PRF_STATIC_TYPE](cor-prf-static-type-enumeration.md) , указывающее, является ли указанное поле статическим, и, если это так, тип статического, применяемого к полю.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Эти сведения можно использовать для определения функции, вызываемой для получения адреса статического поля.  
   
  Код профилировщика должен по-прежнему проверять метаданные для статического поля, чтобы убедиться, что он действительно имеет адрес. Статические литералы (константы) существуют только в метаданных и не имеют адреса.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -58,7 +62,7 @@ HRESULT GetStaticFieldInfo (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)
