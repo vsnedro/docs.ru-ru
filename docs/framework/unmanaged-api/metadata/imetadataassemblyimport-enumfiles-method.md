@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f0d721e2-b946-426d-8e20-9124bd04e4cb
 topic_type:
 - apiref
-ms.openlocfilehash: ed8bafd67b5d55a5116111b7721fbdc31c52aca6
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: f9af770f3bdca98f6b3d06d8b0fe6c92745f73e9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009102"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731632"
 ---
 # <a name="imetadataassemblyimportenumfiles-method"></a>Метод IMetaDataAssemblyImport::EnumFiles
+
 Перечисляет файлы, на которые ссылается текущий манифест сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT EnumFiles (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель. При первом вызове этого метода это значение должно быть нулевым.  
   
@@ -53,18 +55,19 @@ HRESULT EnumFiles (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumFiles`успешно возвращено.|  
+|`S_OK`|`EnumFiles` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTokens` имеет значение 0.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

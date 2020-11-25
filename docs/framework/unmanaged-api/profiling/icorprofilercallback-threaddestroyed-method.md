@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4c2b66fd-0595-40a3-8931-f9c4fff97ac8
 topic_type:
 - apiref
-ms.openlocfilehash: c63b91c39ded58ed208f6920c2bfaeba410c093c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0cef868861155d553aba42fe28c3f1f1b86763b0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499861"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731973"
 ---
 # <a name="icorprofilercallbackthreaddestroyed-method"></a>Метод ICorProfilerCallback::ThreadDestroyed
+
 Уведомляет профилировщик о том, что поток был уничтожен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,13 +34,16 @@ HRESULT ThreadDestroyed(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadId`  
  окне Идентификатор уничтоженного потока.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `threadId`Значение больше не является допустимым во время этого вызова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -48,7 +52,7 @@ HRESULT ThreadDestroyed(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ThreadCreated](icorprofilercallback-threadcreated-method.md)

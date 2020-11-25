@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
 topic_type:
 - apiref
-ms.openlocfilehash: 182a82300183046ccb4a93a79af0dd8f23848c20
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2d6f34d88dd79fe350f1c018e3afa55e5b180c46
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503183"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732012"
 ---
 # <a name="icorprofilercallbackthreadassignedtoosthread-method"></a>Метод ICorProfilerCallback::ThreadAssignedToOSThread
+
 Уведомляет профилировщик о том, что управляемый поток реализуется с помощью определенного потока операционной системы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,19 @@ HRESULT ThreadAssignedToOSThread(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `managedThreadId`  
  окне Идентификатор управляемого потока.  
   
  `osThreadId`  
  окне Идентификатор потока операционной системы.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `ThreadAssignedToOSThread`Обратный вызов существует, чтобы профилировщик мог поддерживать точное сопоставление по волокнам потоков операционной системы с управляемыми потоками.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -52,6 +56,6 @@ HRESULT ThreadAssignedToOSThread(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4db97cf9-e4c1-4233-8efa-cbdc0e14a8e4
 topic_type:
 - apiref
-ms.openlocfilehash: d2693a94f02214df6d7265b26e3d70d91adcf8a7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a2bf0335f8d75c7dbd1a651afdb54da8c7be2460
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503839"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731633"
 ---
 # <a name="imetadataassemblyimportfindassembliesbyname-method"></a>Метод IMetaDataAssemblyImport::FindAssembliesByName
+
 Возвращает массив сборок с указанным `szAssemblyName` параметром, используя стандартные правила, используемые средой CLR для разрешения ссылок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT FindAssembliesByName (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szAppBase`  
  окне Корневой каталог, в котором выполняется поиск данной сборки. Если это значение равно `null` , `FindAssembliesByName` будет искать сборку только в глобальном кэше сборок.  
   
@@ -61,24 +63,26 @@ HRESULT FindAssembliesByName (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`FindAssembliesByName`успешно возвращено.|  
+|`S_OK`|`FindAssembliesByName` успешно возвращено.|  
 |`S_FALSE`|Нет сборок.|  
   
-## <a name="remarks"></a>Примечания  
- При наличии имени сборки `FindAssembliesByName` метод находит сборку, следуя стандартным правилам разрешения ссылок на сборки. (Дополнительные сведения см. [в разделе Обнаружение сборок в среде выполнения](../../deployment/how-the-runtime-locates-assemblies.md).) `FindAssembliesByName`позволяет вызывающему объекту настраивать различные аспекты контекста сопоставителя сборок, такие как базовый и частный путь поиска приложения.  
+## <a name="remarks"></a>Комментарии  
+
+ При наличии имени сборки `FindAssembliesByName` метод находит сборку, следуя стандартным правилам разрешения ссылок на сборки. (Дополнительные сведения см. [в разделе Обнаружение сборок в среде выполнения](../../deployment/how-the-runtime-locates-assemblies.md).) `FindAssembliesByName` позволяет вызывающему объекту настраивать различные аспекты контекста сопоставителя сборок, такие как базовый и частный путь поиска приложения.  
   
  `FindAssembliesByName`Метод требует инициализации среды CLR в процессе для вызова логики разрешения сборки. Поэтому необходимо вызвать [CoInitialize](../hosting/coinitializeee-function.md) (передав COINITEE_DEFAULT) перед вызовом `FindAssembliesByName` , а затем выполнить вызов [каунинитиализекор](../hosting/couninitializecor-function.md).  
   
- `FindAssembliesByName`Возвращает указатель [IMetaDataImport](imetadataimport-interface.md) на файл, содержащий манифест сборки для переданного имени сборки. Если заданное имя сборки не указано полностью (например, если оно не включает версию), может возвращаться несколько сборок.  
+ `FindAssembliesByName` Возвращает указатель [IMetaDataImport](imetadataimport-interface.md) на файл, содержащий манифест сборки для переданного имени сборки. Если заданное имя сборки не указано полностью (например, если оно не включает версию), может возвращаться несколько сборок.  
   
- `FindAssembliesByName`обычно используется компилятором, который пытается найти ссылочную сборку во время компиляции.  
+ `FindAssembliesByName` обычно используется компилятором, который пытается найти ссылочную сборку во время компиляции.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   

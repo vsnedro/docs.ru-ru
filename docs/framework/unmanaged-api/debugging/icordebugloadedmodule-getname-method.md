@@ -2,14 +2,15 @@
 title: Метод ICorDebugLoadedModule::GetName
 ms.date: 03/30/2017
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e
-ms.openlocfilehash: 4a0c4e99f23dc949b0bbaa8bbda35cff1537cf3c
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: c18af45184f5a9485e13b9d4789bff2c570834cc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209868"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731856"
 ---
 # <a name="icordebugloadedmodulegetname-method"></a>Метод ICorDebugLoadedModule::GetName
+
 Получает имя загруженного модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,6 +25,7 @@ HRESULT GetName(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  [in] Число символов в буфере `szName`.  
   
@@ -33,12 +35,13 @@ HRESULT GetName(
  `szName`  
  [out] Массив символов, содержащий имя загруженного модуля.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -47,7 +50,7 @@ HRESULT GetName(
   
  **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugLoadedModule](icordebugloadedmodule-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

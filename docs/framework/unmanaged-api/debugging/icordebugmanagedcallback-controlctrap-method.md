@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0500854e-2121-43d9-a028-64312da35258
 topic_type:
 - apiref
-ms.openlocfilehash: 33a68d11a8d17e46533b4f83bbf87aafe171e612
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 0c38269ea4d730d8f3f9ba5d2c5d8f0edf6d7d45
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212403"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731843"
 ---
 # <a name="icordebugmanagedcallbackcontrolctrap-method"></a>Метод ICorDebugManagedCallback::ControlCTrap
+
 Уведомляет отладчик о том, что в отлаживаемом процессе выполняется перехват CTRL + C.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,20 +35,23 @@ HRESULT ControlCTrap (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pProcess`  
  окне Указатель на объект ICorDebugProcess, представляющий процесс, в котором выполняется перехват CTRL + C.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Отладчик будет выполнять обработку ловушек CTRL + C.|  
 |S_FALSE|Отладчик не будет выполнять обработку ловушек CTRL + C.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Все домены приложений в рамках процесса останавливаются для этого обратного вызова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -56,6 +60,6 @@ HRESULT ControlCTrap (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

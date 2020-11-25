@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 973dbcc5-bce8-43a7-9a66-d9a1db7cc5b7
 topic_type:
 - apiref
-ms.openlocfilehash: a4b530afd615f68c5455d1926bfc616d15a819aa
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f5a63de0c5871454de132473d4a5d0d2b21741ad
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494528"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731427"
 ---
 # <a name="icorprofilerobjectenumreset-method"></a>Метод ICorProfilerObjectEnum::Reset
+
 Перемещает курсор перечислителя в начальную позицию последовательности.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,6 +33,7 @@ HRESULT Reset ();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -40,6 +42,6 @@ HRESULT Reset ();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)
