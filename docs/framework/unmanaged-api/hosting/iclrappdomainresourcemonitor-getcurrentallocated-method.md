@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7bab209c-efd4-44c2-af30-61abab0ae2fc
 topic_type:
 - apiref
-ms.openlocfilehash: 685d303b31b8f8c20cbbdb8aec6fc127650aa32a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d3bd948dfe4a5cf97e3e3e430f551e7bc6404690
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616051"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95700799"
 ---
 # <a name="iclrappdomainresourcemonitorgetcurrentallocated-method"></a>Метод ICLRAppDomainResourceMonitor::GetCurrentAllocated
+
 Возвращает общий размер (в байтах) всех выделений памяти, сделанных доменом приложения с момента его создания, без вычитания памяти, которая была собрана сборщиком мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,6 +34,7 @@ HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwAppDomainId`  
  окне ИДЕНТИФИКАТОР запрошенного домена приложения.  
   
@@ -40,26 +42,29 @@ HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,
  заполняет Указатель на общий размер всех выделений памяти.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
 |COR_E_APPDOMAINUNLOADED|Домен приложения был выгружен или не существует.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Этот метод является неуправляемым эквивалентом управляемого <xref:System.AppDomain.MonitoringTotalAllocatedMemorySize%2A?displayProperty=nameWithType> Свойства.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAppDomainResourceMonitor](iclrappdomainresourcemonitor-interface.md)
 - [Мониторинг ресурсов домена приложения](../../../standard/garbage-collection/app-domain-resource-monitoring.md)

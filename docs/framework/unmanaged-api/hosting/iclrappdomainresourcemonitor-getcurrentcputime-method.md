@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
 topic_type:
 - apiref
-ms.openlocfilehash: b411190ff36410c1d293f1e48b31975be8a13aee
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: a0b966e85bedcbef622aba2f6b181b98e0950e01
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616038"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95700682"
 ---
 # <a name="iclrappdomainresourcemonitorgetcurrentcputime-method"></a>Метод ICLRAppDomainResourceMonitor::GetCurrentCpuTime
+
 Возвращает общее время процессора, которое использовалось всеми потоками во время выполнения в текущем домене приложения, так как был создан домен приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,6 +34,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwAppDomainId`  
  окне ИДЕНТИФИКАТОР запрошенного домена приложения.  
   
@@ -41,25 +43,27 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
 |COR_E_APPDOMAINUNLOADED|Домен приложения был выгружен или не существует.|  
 |E_FAIL|Отслеживание ресурсов домена приложений не включено.<br /><br /> -или-<br /><br /> Все остальные сбои.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Этот метод является неуправляемым эквивалентом управляемого <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> Свойства.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAppDomainResourceMonitor](iclrappdomainresourcemonitor-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

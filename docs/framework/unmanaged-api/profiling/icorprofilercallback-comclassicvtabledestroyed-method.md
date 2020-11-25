@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 29da20ca-bf39-4356-8099-d9c3ac3423a9
 topic_type:
 - apiref
-ms.openlocfilehash: 708981155589d491a3b1819adb611a28072dd1bf
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: aa02b4def015d5badfd0003e08bea5289fe58e17
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500327"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95700188"
 ---
 # <a name="icorprofilercallbackcomclassicvtabledestroyed-method"></a>Метод ICorProfilerCallback::COMClassicVTableDestroyed
+
 Уведомляет профилировщик о том, что виртуальная таблица COM-взаимодействия удалена.  
   
 > [!NOTE]
@@ -51,12 +52,14 @@ HRESULT COMClassicVTableDestroyed(
 
   \[in] указатель на начало таблицы vtable.
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Профилировщик не должен блокировать реализацию этого метода, так как стек может не находиться в состоянии, допускающем сборку мусора, поэтому невозможно включить вытесненную сборку мусора. Если профилировщик блокируется здесь и выполняется сборка мусора, среда выполнения блокируется до тех пор, пока этот обратный вызов не вернет значение.  
   
  Реализация этого метода профилировщиком не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -65,7 +68,7 @@ HRESULT COMClassicVTableDestroyed(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод COMClassicVTableCreated](icorprofilercallback-comclassicvtablecreated-method.md)
