@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dd2afb38-675b-4c3c-a9f3-8ab3b133eb02
 topic_type:
 - apiref
-ms.openlocfilehash: 38042876cf4397418d2e6e6ed2bfbeb2df2d62d8
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 33d56354a560949b2f451df9ef82d4f433951195
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762296"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95715567"
 ---
 # <a name="icorruntimehostcurrentdomain-method"></a>Метод ICorRuntimeHost::CurrentDomain
+
 Возвращает указатель интерфейса типа <xref:System.AppDomain?displayProperty=nameWithType> , который представляет домен, загруженный в текущем потоке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,12 +35,13 @@ HRESULT CurrentDomain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  заполняет Указатель типа <xref:System.AppDomain?displayProperty=nameWithType> , представляющий текущий домен приложения потока. Этот указатель типизирован `IUnknown` , поэтому вызывающие объекты должны, как правило, вызывать `QueryInterface` для получения указателя типа <xref:System._AppDomain> .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -47,15 +49,16 @@ HRESULT CurrentDomain (
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

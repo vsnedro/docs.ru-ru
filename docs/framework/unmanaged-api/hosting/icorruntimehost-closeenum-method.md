@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f7ce7e8c-0a3e-4587-a180-063e2b85940e
 topic_type:
 - apiref
-ms.openlocfilehash: a5a86df3ac1f50ca624490ad80a6fed903433436
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: d3748621474373fee8248496d48414ff67c699d6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762374"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95715701"
 ---
 # <a name="icorruntimehostcloseenum-method"></a>Метод ICorRuntimeHost::CloseEnum
+
 Сбрасывает перечислитель домена обратно в начало списка доменов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,12 +35,13 @@ HRESULT CloseEnum (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hEnum`  
  окне Перечислитель для сброса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -47,15 +49,16 @@ HRESULT CloseEnum (
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция CorBindToRuntimeEx](corbindtoruntimeex-function.md)
 - [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1ea194f0-a331-4855-a2ce-37393b8e5f84
 topic_type:
 - apiref
-ms.openlocfilehash: f6873de1a864489d144a671b1a9e1349eaf77d15
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9761eb5085a77279c4d07d39946a5ad1453ecaaf
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503189"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717277"
 ---
 # <a name="icorprofilercallbackshutdown-method"></a>Метод ICorProfilerCallback::Shutdown
+
 Уведомляет профилировщик о том, что приложение завершает работу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,7 +32,8 @@ ms.locfileid: "84503189"
 HRESULT Shutdown();  
 ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Код профилировщика не может безопасно вызывать методы интерфейса [ICorProfilerInfo](icorprofilerinfo-interface.md) после `Shutdown` вызова метода. Все вызовы `ICorProfilerInfo` методов приводят к неопределенному поведению после `Shutdown` возврата метода. Некоторые неизменяемые события по-прежнему могут возникать после завершения работы. Профилировщик должен немедленно возвращаться к моменту, когда это происходит.  
   
  `Shutdown`Метод будет вызываться только в том случае, если управляемое приложение, профилирование которого запускается как управляемый код (т. е. исходный кадр в стеке процессов является управляемым). Если приложение запущено в виде неуправляемого кода, но позднее перейдет в управляемый код, то создание экземпляра среды CLR `Shutdown` не будет вызвано. В таких случаях профилировщик должен включать в свою библиотеку `DllMain` подпрограммы, которая использует значение DLL_PROCESS_DETACH для высвобождения любых ресурсов и выполнения очистки данных, таких как сброс трассировок на диск и т. д.  
@@ -39,6 +41,7 @@ HRESULT Shutdown();
  Как правило, профилировщик должен справляться с непредвиденным завершением работы. Например, процесс может быть остановлен `TerminateProcess` методом Win32's (объявлен в винбасе. h). В других случаях среда CLR остановит определенные управляемые потоки (фоновые потоки), не создавая для них сообщения с неупорядоченным уничтожением.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -47,7 +50,7 @@ HRESULT Shutdown();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод Initialize](icorprofilercallback-initialize-method.md)

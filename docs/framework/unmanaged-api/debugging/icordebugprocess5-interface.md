@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba
 topic_type:
 - apiref
-ms.openlocfilehash: 1953a3e0492e4cfcdaea761b68ea22cf5a4a8ed7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: cef69ac7e3572b67dd676ce8408e4210d93accf0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205521"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717582"
 ---
 # <a name="icordebugprocess5-interface"></a>Интерфейс ICorDebugProcess5
+
 Расширяет интерфейс ICorDebugProcess для поддержки доступа к управляемой куче, предоставляет сведения о сборке мусора управляемых объектов и определяет, загружает ли отладчик изображения из локального кэша образов в машинном код.  
   
 ## <a name="methods"></a>Методы  
@@ -41,13 +42,15 @@ ms.locfileid: "83205521"
 |[Метод GetTypeID](icordebugprocess5-gettypeid-method.md)|Возвращает идентификатор типа для объекта по указанному адресу.|  
 |[Метод GetTypeLayout](icordebugprocess5-gettypelayout-method.md)|Возвращает сведения о макете объекта в памяти на основе его идентификатора типа.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Этот интерфейс логически расширяет интерфейсы ICorDebugProcess, ICorDebugProcess2 и [ICorDebugProcess3](icordebugprocess3-interface.md) .  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленный вызов на другом компьютере или другом процессе.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -56,7 +59,7 @@ ms.locfileid: "83205521"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

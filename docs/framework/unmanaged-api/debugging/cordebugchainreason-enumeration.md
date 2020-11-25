@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
 topic_type:
 - apiref
-ms.openlocfilehash: 2f53e3e938f62e714bf421ee7ba0cbf0a47b9f8e
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 6185c5dda69a0cf7e9847ddc021448612a426b19
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132283"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95716061"
 ---
 # <a name="cordebugchainreason-enumeration"></a>Перечисление CorDebugChainReason
+
 Указывает причину или причины запуска цепочки вызовов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -62,18 +63,20 @@ typedef enum CorDebugChainReason {
 |`CHAIN_CONTEXT_SWITCH`|Не используется.|  
 |`CHAIN_FUNC_EVAL`|Цепочка была инициирована оценкой функции.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
+
  Используйте метод [ICorDebugChain::-Reason](icordebugchain-getreason-method.md) , чтобы определить причины инициации цепочки вызовов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

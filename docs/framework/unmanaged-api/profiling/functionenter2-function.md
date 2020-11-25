@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type:
 - apiref
-ms.openlocfilehash: 8c88e97f8187ac347f4ff39890c8d87ee80c8f9e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e8466970a1c137276e842b37f0305fdfd9169be6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500719"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717280"
 ---
 # <a name="functionenter2-function"></a>Функция FunctionEnter2
+
 Уведомляет профилировщик о передаче управления в функцию и предоставляет сведения о кадре стека и аргументах функции. Эта функция заменяет функцию [FunctionEnter](functionenter-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -57,7 +58,8 @@ void __stdcall FunctionEnter2 (
 
   Чтобы получить доступ к сведениям об аргументах, `COR_PRF_ENABLE_FUNCTION_ARGS` необходимо установить флаг. Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий.
 
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Значения `func` `argumentInfo` параметров и недопустимы после `FunctionEnter2` возврата функции, так как значения могут измениться или быть уничтожены.  
   
  `FunctionEnter2`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec` `naked` атрибут класса хранения ().  
@@ -73,6 +75,7 @@ void __stdcall FunctionEnter2 (
  Кроме того, `FunctionEnter2` функция не должна вызывать управляемый код или каким-либо образом приводит к выделению управляемой памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -81,7 +84,7 @@ void __stdcall FunctionEnter2 (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция FunctionLeave2](functionleave2-function.md)
 - [Функция FunctionTailcall2](functiontailcall2-function.md)
