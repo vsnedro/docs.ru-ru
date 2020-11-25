@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 542c7c65-dd56-4651-b76f-5db2465e4a15
 topic_type:
 - apiref
-ms.openlocfilehash: 876ae07a432bfa36a7d9f43ae6c32ec03d7d3289
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 4e240743894e0a7076e593b55966307d304ebd28
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496598"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731193"
 ---
-# <a name="icorprofilerinfo3getfunctionenter3info-method"></a><span data-ttu-id="08ba4-102">Метод ICorProfilerInfo3::GetFunctionEnter3Info</span><span class="sxs-lookup"><span data-stu-id="08ba4-102">ICorProfilerInfo3::GetFunctionEnter3Info Method</span></span>
-<span data-ttu-id="08ba4-103">Предоставляет кадр стека и сведения о аргументах функции, о которой сообщается профилировщику функцией [FunctionEnter3WithInfo](functionenter3withinfo-function.md) .</span><span class="sxs-lookup"><span data-stu-id="08ba4-103">Provides the stack frame and argument information of the function that is being reported to the profiler by the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) function.</span></span> <span data-ttu-id="08ba4-104">Этот метод может быть вызван только во время обратного вызова `FunctionEnter3WithInfo`.</span><span class="sxs-lookup"><span data-stu-id="08ba4-104">This method can be called only during the `FunctionEnter3WithInfo` callback.</span></span>  
+# <a name="icorprofilerinfo3getfunctionenter3info-method"></a><span data-ttu-id="fc9b6-102">Метод ICorProfilerInfo3::GetFunctionEnter3Info</span><span class="sxs-lookup"><span data-stu-id="fc9b6-102">ICorProfilerInfo3::GetFunctionEnter3Info Method</span></span>
+
+<span data-ttu-id="fc9b6-103">Предоставляет кадр стека и сведения о аргументах функции, о которой сообщается профилировщику функцией [FunctionEnter3WithInfo](functionenter3withinfo-function.md) .</span><span class="sxs-lookup"><span data-stu-id="fc9b6-103">Provides the stack frame and argument information of the function that is being reported to the profiler by the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) function.</span></span> <span data-ttu-id="fc9b6-104">Этот метод может быть вызван только во время обратного вызова `FunctionEnter3WithInfo`.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-104">This method can be called only during the `FunctionEnter3WithInfo` callback.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="08ba4-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="08ba4-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="fc9b6-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="fc9b6-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetFunctionEnter3Info(  
@@ -37,39 +38,42 @@ HRESULT GetFunctionEnter3Info(
                   COR_PRF_FUNCTION_ARGUMENT_INFO *pArgumentInfo);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="08ba4-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="08ba4-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="fc9b6-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="fc9b6-106">Parameters</span></span>  
+
  `functionId`  
- <span data-ttu-id="08ba4-107">[in] `FunctionID` функции, которая вводится.</span><span class="sxs-lookup"><span data-stu-id="08ba4-107">[in] The `FunctionID` of the function that is being entered.</span></span>  
+ <span data-ttu-id="fc9b6-107">[in] `FunctionID` функции, которая вводится.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-107">[in] The `FunctionID` of the function that is being entered.</span></span>  
   
  `eltInfo`  
- <span data-ttu-id="08ba4-108">[in] Непрозрачный дескриптор, представляющий сведения об указанном кадре стека.</span><span class="sxs-lookup"><span data-stu-id="08ba4-108">[in] An opaque handle that represents information about a given stack frame.</span></span> <span data-ttu-id="08ba4-109">Профилировщик должен предоставить те же данные `eltInfo` , что и функция [FunctionEnter3WithInfo](functionenter3withinfo-function.md) .</span><span class="sxs-lookup"><span data-stu-id="08ba4-109">The profiler should provide the same `eltInfo` that it was given by the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) function.</span></span>  
+ <span data-ttu-id="fc9b6-108">[in] Непрозрачный дескриптор, представляющий сведения об указанном кадре стека.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-108">[in] An opaque handle that represents information about a given stack frame.</span></span> <span data-ttu-id="fc9b6-109">Профилировщик должен предоставить те же данные `eltInfo` , что и функция [FunctionEnter3WithInfo](functionenter3withinfo-function.md) .</span><span class="sxs-lookup"><span data-stu-id="fc9b6-109">The profiler should provide the same `eltInfo` that it was given by the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) function.</span></span>  
   
  `pFrameInfo`  
- <span data-ttu-id="08ba4-110">[out] Непрозрачный дескриптор, представляющий универсальные сведения об указанном кадре стека.</span><span class="sxs-lookup"><span data-stu-id="08ba4-110">[out] An opaque handle that represents generics information about a given stack frame.</span></span> <span data-ttu-id="08ba4-111">Этот дескриптор допустим только во время обратного вызова `FunctionEnter3WithInfo`, в котором профилировщик вызывал метод `GetFunctionEnter3Info`.</span><span class="sxs-lookup"><span data-stu-id="08ba4-111">This handle is valid only during the `FunctionEnter3WithInfo` callback in which the profiler called the `GetFunctionEnter3Info` method.</span></span>  
+ <span data-ttu-id="fc9b6-110">[out] Непрозрачный дескриптор, представляющий универсальные сведения об указанном кадре стека.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-110">[out] An opaque handle that represents generics information about a given stack frame.</span></span> <span data-ttu-id="fc9b6-111">Этот дескриптор допустим только во время обратного вызова `FunctionEnter3WithInfo`, в котором профилировщик вызывал метод `GetFunctionEnter3Info`.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-111">This handle is valid only during the `FunctionEnter3WithInfo` callback in which the profiler called the `GetFunctionEnter3Info` method.</span></span>  
   
  `pcbArgumentInfo`  
- <span data-ttu-id="08ba4-112">[вход, выход] Указатель на общий размер (в байтах) структуры [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) (плюс все дополнительные структуры [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) для диапазонов аргументов, на которые указывает параметр `pArgumentInfo` ).</span><span class="sxs-lookup"><span data-stu-id="08ba4-112">[in, out] A pointer to the total size, in bytes, of the [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) structure (plus any additional [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) structures for the argument ranges pointed to by `pArgumentInfo`).</span></span> <span data-ttu-id="08ba4-113">Если указанный размер недостаточен, то возвращается значение ERROR_INSUFFICIENT_BUFFER, и ожидаемый размер сохраняется в `pcbArgumentInfo`.</span><span class="sxs-lookup"><span data-stu-id="08ba4-113">If the specified size is not enough, ERROR_INSUFFICIENT_BUFFER is returned and the expected size is stored in `pcbArgumentInfo`.</span></span> <span data-ttu-id="08ba4-114">Чтобы вызвать `GetFunctionEnter3Info` только для получения ожидаемого значения для `*pcbArgumentInfo`, установите `*pcbArgumentInfo`= 0 и `pArgumentInfo`= NULL.</span><span class="sxs-lookup"><span data-stu-id="08ba4-114">To call `GetFunctionEnter3Info` just to retrieve the expected value for `*pcbArgumentInfo`, set `*pcbArgumentInfo`=0 and `pArgumentInfo`=NULL.</span></span>  
+ <span data-ttu-id="fc9b6-112">[вход, выход] Указатель на общий размер (в байтах) структуры [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) (плюс все дополнительные структуры [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) для диапазонов аргументов, на которые указывает параметр `pArgumentInfo` ).</span><span class="sxs-lookup"><span data-stu-id="fc9b6-112">[in, out] A pointer to the total size, in bytes, of the [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) structure (plus any additional [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) structures for the argument ranges pointed to by `pArgumentInfo`).</span></span> <span data-ttu-id="fc9b6-113">Если указанный размер недостаточен, то возвращается значение ERROR_INSUFFICIENT_BUFFER, и ожидаемый размер сохраняется в `pcbArgumentInfo`.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-113">If the specified size is not enough, ERROR_INSUFFICIENT_BUFFER is returned and the expected size is stored in `pcbArgumentInfo`.</span></span> <span data-ttu-id="fc9b6-114">Чтобы вызвать `GetFunctionEnter3Info` только для получения ожидаемого значения для `*pcbArgumentInfo`, установите `*pcbArgumentInfo`= 0 и `pArgumentInfo`= NULL.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-114">To call `GetFunctionEnter3Info` just to retrieve the expected value for `*pcbArgumentInfo`, set `*pcbArgumentInfo`=0 and `pArgumentInfo`=NULL.</span></span>  
   
  `pArgumentInfo`  
- <span data-ttu-id="08ba4-115">заполняет Указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) , описывающую расположения аргументов функции в памяти в порядке слева направо.</span><span class="sxs-lookup"><span data-stu-id="08ba4-115">[out] A pointer to a [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) structure that describes the locations of the function's arguments in memory, in left-to-right order.</span></span>  
+ <span data-ttu-id="fc9b6-115">заполняет Указатель на структуру [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) , описывающую расположения аргументов функции в памяти в порядке слева направо.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-115">[out] A pointer to a [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) structure that describes the locations of the function's arguments in memory, in left-to-right order.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="08ba4-116">Примечания</span><span class="sxs-lookup"><span data-stu-id="08ba4-116">Remarks</span></span>  
- <span data-ttu-id="08ba4-117">Профилировщик должен выделить достаточно места для структуры `COR_PRF_FUNCTION_ARGUMENT_INFO` проверяемой функции, и должен указать размер в параметре `pcbArgumentInfo`.</span><span class="sxs-lookup"><span data-stu-id="08ba4-117">The profiler must allocate sufficient space for the `COR_PRF_FUNCTION_ARGUMENT_INFO` structure of the function that is being inspected, and must indicate the size in the `pcbArgumentInfo` parameter.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="08ba4-118">Требования</span><span class="sxs-lookup"><span data-stu-id="08ba4-118">Requirements</span></span>  
- <span data-ttu-id="08ba4-119">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="08ba4-119">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="08ba4-120">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="08ba4-120">**Header:** CorProf.idl, CorProf.h</span></span>  
-  
- <span data-ttu-id="08ba4-121">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="08ba4-121">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="08ba4-122">**.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="08ba4-122">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="08ba4-123">См. также</span><span class="sxs-lookup"><span data-stu-id="08ba4-123">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="fc9b6-116">Комментарии</span><span class="sxs-lookup"><span data-stu-id="fc9b6-116">Remarks</span></span>  
 
-- [<span data-ttu-id="08ba4-124">FunctionEnter3WithInfo</span><span class="sxs-lookup"><span data-stu-id="08ba4-124">FunctionEnter3WithInfo</span></span>](functionenter3withinfo-function.md)
-- [<span data-ttu-id="08ba4-125">FunctionLeave3WithInfo</span><span class="sxs-lookup"><span data-stu-id="08ba4-125">FunctionLeave3WithInfo</span></span>](functionleave3withinfo-function.md)
-- [<span data-ttu-id="08ba4-126">FunctionTailcall3WithInfo</span><span class="sxs-lookup"><span data-stu-id="08ba4-126">FunctionTailcall3WithInfo</span></span>](functiontailcall3withinfo-function.md)
-- [<span data-ttu-id="08ba4-127">Интерфейс ICorProfilerInfo3</span><span class="sxs-lookup"><span data-stu-id="08ba4-127">ICorProfilerInfo3 Interface</span></span>](icorprofilerinfo3-interface.md)
-- [<span data-ttu-id="08ba4-128">Профилирующие интерфейсы</span><span class="sxs-lookup"><span data-stu-id="08ba4-128">Profiling Interfaces</span></span>](profiling-interfaces.md)
-- [<span data-ttu-id="08ba4-129">Профилирование</span><span class="sxs-lookup"><span data-stu-id="08ba4-129">Profiling</span></span>](index.md)
+ <span data-ttu-id="fc9b6-117">Профилировщик должен выделить достаточно места для структуры `COR_PRF_FUNCTION_ARGUMENT_INFO` проверяемой функции, и должен указать размер в параметре `pcbArgumentInfo`.</span><span class="sxs-lookup"><span data-stu-id="fc9b6-117">The profiler must allocate sufficient space for the `COR_PRF_FUNCTION_ARGUMENT_INFO` structure of the function that is being inspected, and must indicate the size in the `pcbArgumentInfo` parameter.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="fc9b6-118">Требования</span><span class="sxs-lookup"><span data-stu-id="fc9b6-118">Requirements</span></span>  
+
+ <span data-ttu-id="fc9b6-119">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="fc9b6-119">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="fc9b6-120">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="fc9b6-120">**Header:** CorProf.idl, CorProf.h</span></span>  
+  
+ <span data-ttu-id="fc9b6-121">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="fc9b6-121">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="fc9b6-122">**.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="fc9b6-122">**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="fc9b6-123">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="fc9b6-123">See also</span></span>
+
+- [<span data-ttu-id="fc9b6-124">FunctionEnter3WithInfo</span><span class="sxs-lookup"><span data-stu-id="fc9b6-124">FunctionEnter3WithInfo</span></span>](functionenter3withinfo-function.md)
+- [<span data-ttu-id="fc9b6-125">FunctionLeave3WithInfo</span><span class="sxs-lookup"><span data-stu-id="fc9b6-125">FunctionLeave3WithInfo</span></span>](functionleave3withinfo-function.md)
+- [<span data-ttu-id="fc9b6-126">FunctionTailcall3WithInfo</span><span class="sxs-lookup"><span data-stu-id="fc9b6-126">FunctionTailcall3WithInfo</span></span>](functiontailcall3withinfo-function.md)
+- [<span data-ttu-id="fc9b6-127">Интерфейс ICorProfilerInfo3</span><span class="sxs-lookup"><span data-stu-id="fc9b6-127">ICorProfilerInfo3 Interface</span></span>](icorprofilerinfo3-interface.md)
+- [<span data-ttu-id="fc9b6-128">Профилирующие интерфейсы</span><span class="sxs-lookup"><span data-stu-id="fc9b6-128">Profiling Interfaces</span></span>](profiling-interfaces.md)
+- [<span data-ttu-id="fc9b6-129">Профилирование</span><span class="sxs-lookup"><span data-stu-id="fc9b6-129">Profiling</span></span>](index.md)

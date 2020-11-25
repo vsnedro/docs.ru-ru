@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
 topic_type:
 - apiref
-ms.openlocfilehash: 7ca4d7fe32b71401c16e64314bd8b4a9eb0f7766
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fea06a3e6d06aeff56ba7e20e8e64f0a6feb5e69
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178335"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731063"
 ---
-# <a name="asm_cmp_flags-enumeration"></a><span data-ttu-id="2ef8a-102">Перечисление ASM_CMP_FLAGS</span><span class="sxs-lookup"><span data-stu-id="2ef8a-102">ASM_CMP_FLAGS Enumeration</span></span>
-<span data-ttu-id="2ef8a-103">Указывает версию, сборку, культуру, подпись и так далее, двух сборок, которые должны быть сравнены методом [IAssemblyName::IsEqual.](iassemblyname-isequal-method.md)</span><span class="sxs-lookup"><span data-stu-id="2ef8a-103">Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](iassemblyname-isequal-method.md) method.</span></span>  
+# <a name="asm_cmp_flags-enumeration"></a><span data-ttu-id="365fe-102">Перечисление ASM_CMP_FLAGS</span><span class="sxs-lookup"><span data-stu-id="365fe-102">ASM_CMP_FLAGS Enumeration</span></span>
+
+<span data-ttu-id="365fe-103">Указывает версию, сборку, язык и региональные параметры, сигнатуру и т. д. для двух сборок, сравниваемых методом [IAssemblyName:: Equals](iassemblyname-isequal-method.md) .</span><span class="sxs-lookup"><span data-stu-id="365fe-103">Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](iassemblyname-isequal-method.md) method.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="2ef8a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2ef8a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="365fe-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="365fe-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum {  
@@ -65,16 +66,17 @@ typedef enum {
 } ASM_CMP_FLAGS;  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="2ef8a-105">Требования</span><span class="sxs-lookup"><span data-stu-id="2ef8a-105">Requirements</span></span>  
- <span data-ttu-id="2ef8a-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="2ef8a-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="2ef8a-107">**Заголовок:** Fusion.h</span><span class="sxs-lookup"><span data-stu-id="2ef8a-107">**Header:** Fusion.h</span></span>  
-  
- <span data-ttu-id="2ef8a-108">**Библиотека:** Включено в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="2ef8a-108">**Library:** Included as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="2ef8a-109">**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2ef8a-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="2ef8a-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="2ef8a-110">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="365fe-105">Требования</span><span class="sxs-lookup"><span data-stu-id="365fe-105">Requirements</span></span>  
 
-- [<span data-ttu-id="2ef8a-111">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="2ef8a-111">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
-- [<span data-ttu-id="2ef8a-112">Перечисления Fusion</span><span class="sxs-lookup"><span data-stu-id="2ef8a-112">Fusion Enumerations</span></span>](fusion-enumerations.md)
+ <span data-ttu-id="365fe-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="365fe-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="365fe-107">**Заголовок:** Fusion. h</span><span class="sxs-lookup"><span data-stu-id="365fe-107">**Header:** Fusion.h</span></span>  
+  
+ <span data-ttu-id="365fe-108">**Библиотека:** Включается в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="365fe-108">**Library:** Included as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="365fe-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="365fe-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="365fe-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="365fe-110">See also</span></span>
+
+- [<span data-ttu-id="365fe-111">Интерфейс IAssemblyName</span><span class="sxs-lookup"><span data-stu-id="365fe-111">IAssemblyName Interface</span></span>](iassemblyname-interface.md)
+- [<span data-ttu-id="365fe-112">Перечисления Fusion</span><span class="sxs-lookup"><span data-stu-id="365fe-112">Fusion Enumerations</span></span>](fusion-enumerations.md)

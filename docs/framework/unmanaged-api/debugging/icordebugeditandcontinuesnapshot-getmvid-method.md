@@ -15,16 +15,17 @@ helpviewer_keywords:
 ms.assetid: d7e916a6-1c39-4676-972d-da3d8546044b
 topic_type:
 - apiref
-ms.openlocfilehash: 6ebe07fc7cd963cbe9cae3cd8c3f7c0580dad5fc
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: bf052a3ba19367a741dd38ba4b3781c792fd9ff7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788813"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731115"
 ---
-# <a name="icordebugeditandcontinuesnapshotgetmvid-method"></a><span data-ttu-id="46948-102">Метод ICorDebugEditAndContinueSnapshot::GetMvid</span><span class="sxs-lookup"><span data-stu-id="46948-102">ICorDebugEditAndContinueSnapshot::GetMvid Method</span></span>
-<span data-ttu-id="46948-103">`GetMvid` устарел.</span><span class="sxs-lookup"><span data-stu-id="46948-103">`GetMvid` is obsolete.</span></span> <span data-ttu-id="46948-104">Не вызывайте этот метод.</span><span class="sxs-lookup"><span data-stu-id="46948-104">Do not call this method.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="46948-105">См. также:</span><span class="sxs-lookup"><span data-stu-id="46948-105">See also</span></span>
+# <a name="icordebugeditandcontinuesnapshotgetmvid-method"></a><span data-ttu-id="29bad-102">Метод ICorDebugEditAndContinueSnapshot::GetMvid</span><span class="sxs-lookup"><span data-stu-id="29bad-102">ICorDebugEditAndContinueSnapshot::GetMvid Method</span></span>
 
-- [<span data-ttu-id="46948-106">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="46948-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
+<span data-ttu-id="29bad-103">`GetMvid` устарел.</span><span class="sxs-lookup"><span data-stu-id="29bad-103">`GetMvid` is obsolete.</span></span> <span data-ttu-id="29bad-104">Этот метод не следует вызывать.</span><span class="sxs-lookup"><span data-stu-id="29bad-104">Do not call this method.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="29bad-105">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="29bad-105">See also</span></span>
+
+- [<span data-ttu-id="29bad-106">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="29bad-106">Debugging Interfaces</span></span>](debugging-interfaces.md)

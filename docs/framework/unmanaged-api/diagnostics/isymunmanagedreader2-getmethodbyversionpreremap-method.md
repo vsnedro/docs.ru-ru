@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 0d144ed4-bdb0-4cac-960c-cb90f4dca173
 topic_type:
 - apiref
-ms.openlocfilehash: b12ecfdaf7c90589ce2e96b39f7437444cb91b09
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 5484242562deaf463b7435ad4e54735a7abee45e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615427"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730491"
 ---
-# <a name="isymunmanagedreader2getmethodbyversionpreremap-method"></a><span data-ttu-id="5d171-102">Метод ISymUnmanagedReader2::GetMethodByVersionPreRemap</span><span class="sxs-lookup"><span data-stu-id="5d171-102">ISymUnmanagedReader2::GetMethodByVersionPreRemap Method</span></span>
-<span data-ttu-id="5d171-103">Возвращает метод чтения символов по заданному маркеру метода и номеру версии "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="5d171-103">Gets a symbol reader method, given a method token and an edit-and-continue version number.</span></span> <span data-ttu-id="5d171-104">Номера версий начинаются с 1 и увеличиваются каждый раз при изменении метода в результате операции "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="5d171-104">Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-continue operation.</span></span>  
+# <a name="isymunmanagedreader2getmethodbyversionpreremap-method"></a><span data-ttu-id="a6c0a-102">Метод ISymUnmanagedReader2::GetMethodByVersionPreRemap</span><span class="sxs-lookup"><span data-stu-id="a6c0a-102">ISymUnmanagedReader2::GetMethodByVersionPreRemap Method</span></span>
+
+<span data-ttu-id="a6c0a-103">Возвращает метод чтения символов по заданному маркеру метода и номеру версии "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="a6c0a-103">Gets a symbol reader method, given a method token and an edit-and-continue version number.</span></span> <span data-ttu-id="a6c0a-104">Номера версий начинаются с 1 и увеличиваются каждый раз при изменении метода в результате операции "изменить и продолжить".</span><span class="sxs-lookup"><span data-stu-id="a6c0a-104">Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-continue operation.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5d171-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5d171-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="a6c0a-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a6c0a-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetMethodByVersionPreRemap(  
@@ -34,22 +35,25 @@ HRESULT GetMethodByVersionPreRemap(
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="5d171-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="5d171-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="a6c0a-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="a6c0a-106">Parameters</span></span>  
+
  `token`  
- <span data-ttu-id="5d171-107">окне Токен метаданных метода.</span><span class="sxs-lookup"><span data-stu-id="5d171-107">[in] The method metadata token.</span></span>  
+ <span data-ttu-id="a6c0a-107">окне Токен метаданных метода.</span><span class="sxs-lookup"><span data-stu-id="a6c0a-107">[in] The method metadata token.</span></span>  
   
  `version`  
- <span data-ttu-id="5d171-108">окне Версия метода.</span><span class="sxs-lookup"><span data-stu-id="5d171-108">[in] The method version.</span></span>  
+ <span data-ttu-id="a6c0a-108">окне Версия метода.</span><span class="sxs-lookup"><span data-stu-id="a6c0a-108">[in] The method version.</span></span>  
   
  `pRetVal`  
- <span data-ttu-id="5d171-109">заполняет Указатель на возвращаемый интерфейс [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="5d171-109">[out] A pointer to the returned [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) interface.</span></span>  
+ <span data-ttu-id="a6c0a-109">заполняет Указатель на возвращаемый интерфейс [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) .</span><span class="sxs-lookup"><span data-stu-id="a6c0a-109">[out] A pointer to the returned [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) interface.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="5d171-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="5d171-110">Return Value</span></span>  
- <span data-ttu-id="5d171-111">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="5d171-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="5d171-112">Требования</span><span class="sxs-lookup"><span data-stu-id="5d171-112">Requirements</span></span>  
- <span data-ttu-id="5d171-113">**Заголовок:** Корсим. idl.</span><span class="sxs-lookup"><span data-stu-id="5d171-113">**Header:** CorSym.idl.</span></span> <span data-ttu-id="5d171-114">Корсим. h</span><span class="sxs-lookup"><span data-stu-id="5d171-114">CorSym.h</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="5d171-115">См. также статью</span><span class="sxs-lookup"><span data-stu-id="5d171-115">See also</span></span>
+## <a name="return-value"></a><span data-ttu-id="a6c0a-110">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="a6c0a-110">Return Value</span></span>  
 
-- [<span data-ttu-id="5d171-116">Интерфейс ISymUnmanagedReader2</span><span class="sxs-lookup"><span data-stu-id="5d171-116">ISymUnmanagedReader2 Interface</span></span>](isymunmanagedreader2-interface.md)
+ <span data-ttu-id="a6c0a-111">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="a6c0a-111">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="a6c0a-112">Требования</span><span class="sxs-lookup"><span data-stu-id="a6c0a-112">Requirements</span></span>  
+
+ <span data-ttu-id="a6c0a-113">**Заголовок:** Корсим. idl.</span><span class="sxs-lookup"><span data-stu-id="a6c0a-113">**Header:** CorSym.idl.</span></span> <span data-ttu-id="a6c0a-114">Корсим. h</span><span class="sxs-lookup"><span data-stu-id="a6c0a-114">CorSym.h</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="a6c0a-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a6c0a-115">See also</span></span>
+
+- [<span data-ttu-id="a6c0a-116">Интерфейс ISymUnmanagedReader2</span><span class="sxs-lookup"><span data-stu-id="a6c0a-116">ISymUnmanagedReader2 Interface</span></span>](isymunmanagedreader2-interface.md)

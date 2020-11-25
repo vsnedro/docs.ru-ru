@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 26abe7ee-e578-4228-affa-01bed0dfce1b
 topic_type:
 - apiref
-ms.openlocfilehash: cdf7f269217390d59e6731ac75cf56b44c77ae9a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 1178b2088a98b11fbd7b8ca7ead32160ab22dc93
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73196303"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730101"
 ---
-# <a name="icordebugchaingetcontext-method"></a><span data-ttu-id="ad841-102">Метод ICorDebugChain::GetContext</span><span class="sxs-lookup"><span data-stu-id="ad841-102">ICorDebugChain::GetContext Method</span></span>
-<span data-ttu-id="ad841-103">Этот метод не реализован в текущей версии .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="ad841-103">This method is not implemented in the current version of the .NET Framework.</span></span>  
+# <a name="icordebugchaingetcontext-method"></a><span data-ttu-id="fe180-102">Метод ICorDebugChain::GetContext</span><span class="sxs-lookup"><span data-stu-id="fe180-102">ICorDebugChain::GetContext Method</span></span>
+
+<span data-ttu-id="fe180-103">Этот метод не реализован в текущей версии .NET Framework.</span><span class="sxs-lookup"><span data-stu-id="fe180-103">This method is not implemented in the current version of the .NET Framework.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="ad841-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="ad841-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="fe180-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="fe180-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetContext (  

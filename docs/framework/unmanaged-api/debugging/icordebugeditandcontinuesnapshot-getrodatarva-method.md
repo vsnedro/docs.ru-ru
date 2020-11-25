@@ -15,16 +15,17 @@ helpviewer_keywords:
 ms.assetid: efc32294-292b-419a-9d6e-24251322a85a
 topic_type:
 - apiref
-ms.openlocfilehash: e88a0ffbc167dfefb8efe39f6b5787548bc9460c
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 5c4befabbc8a45da3180dd1f0519396917f672b8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783170"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730894"
 ---
-# <a name="icordebugeditandcontinuesnapshotgetrodatarva-method"></a><span data-ttu-id="230e2-102">Метод ICorDebugEditAndContinueSnapshot::GetRoDataRVA</span><span class="sxs-lookup"><span data-stu-id="230e2-102">ICorDebugEditAndContinueSnapshot::GetRoDataRVA Method</span></span>
-<span data-ttu-id="230e2-103">`GetRoDataRVA` устарел.</span><span class="sxs-lookup"><span data-stu-id="230e2-103">`GetRoDataRVA` is obsolete.</span></span> <span data-ttu-id="230e2-104">Не вызывайте этот метод.</span><span class="sxs-lookup"><span data-stu-id="230e2-104">Do not call this method.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="230e2-105">См. также:</span><span class="sxs-lookup"><span data-stu-id="230e2-105">See also</span></span>
+# <a name="icordebugeditandcontinuesnapshotgetrodatarva-method"></a><span data-ttu-id="49d9d-102">Метод ICorDebugEditAndContinueSnapshot::GetRoDataRVA</span><span class="sxs-lookup"><span data-stu-id="49d9d-102">ICorDebugEditAndContinueSnapshot::GetRoDataRVA Method</span></span>
 
-- [<span data-ttu-id="230e2-106">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="230e2-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
+<span data-ttu-id="49d9d-103">`GetRoDataRVA` устарел.</span><span class="sxs-lookup"><span data-stu-id="49d9d-103">`GetRoDataRVA` is obsolete.</span></span> <span data-ttu-id="49d9d-104">Этот метод не следует вызывать.</span><span class="sxs-lookup"><span data-stu-id="49d9d-104">Do not call this method.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="49d9d-105">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="49d9d-105">See also</span></span>
+
+- [<span data-ttu-id="49d9d-106">Интерфейсы отладки</span><span class="sxs-lookup"><span data-stu-id="49d9d-106">Debugging Interfaces</span></span>](debugging-interfaces.md)
