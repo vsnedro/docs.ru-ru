@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e5912ed8-e4ce-438b-8ea3-d9e4c288d109
 topic_type:
 - apiref
-ms.openlocfilehash: 514488c6e0d2e89de0d8ee483def485ec9f3ef25
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: a8b2377c48331ff9f0e69876c51fb78c7190f694
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009110"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708898"
 ---
 # <a name="imetadataassemblyimportenumexportedtypes-method"></a>Метод IMetaDataAssemblyImport::EnumExportedTypes
+
 Перечисляет экспортированные типы, на которые ссылается манифест сборки в текущей области метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT EnumExportedTypes (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель. Это значение должно быть null, если `EnumExportedTypes` метод вызывается в первый раз.  
   
@@ -53,18 +55,19 @@ HRESULT EnumExportedTypes (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumExportedTypes`успешно возвращено.|  
+|`S_OK`|`EnumExportedTypes` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае `pcTokens` имеет значение 0.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

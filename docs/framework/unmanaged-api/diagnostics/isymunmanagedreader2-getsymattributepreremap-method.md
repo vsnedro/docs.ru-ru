@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type:
 - apiref
-ms.openlocfilehash: e6248aba1c41b2815f2806942d419da869ed94b4
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 812c0d08930efff9140c6e897d3f93c4909e8464
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614920"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709093"
 ---
 # <a name="isymunmanagedreader2getsymattributepreremap-method"></a>Метод ISymUnmanagedReader2::GetSymAttributePreRemap
+
 Возвращает настраиваемый атрибут на основе его имени. В отличие от пользовательских атрибутов метаданных эти атрибуты хранятся в хранилище символов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetSymAttributePreRemap(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `parent`  
  окне Маркер метаданных родителя.  
   
@@ -54,11 +56,13 @@ HRESULT GetSymAttributePreRemap(
  заполняет Указатель на буфер, который получает байты атрибута.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8c6d2089-4dbb-4715-b9e9-2a4491c8c9ce
 topic_type:
 - apiref
-ms.openlocfilehash: d5109043a8601d7997f52e88ea472644f1b9ca03
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: cfa6df7a812559f05a4c57381a5007c9c90238e1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83208789"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709665"
 ---
 # <a name="icordebugmodule2setjmcstatus-method"></a>Метод ICorDebugModule2::SetJMCStatus
+
 Устанавливает состояние Только мой код (JMC) всех методов всех классов данного ICorDebugModule2 в указанное значение, за исключением тех, `pTokens` которые в массиве задаются в противоположном значении.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT SetJMCStatus (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `bIsJustMycode`  
  окне Задайте значение `true` , если код должен быть отлажен; в противном случае — значение `false` .  
   
@@ -45,7 +47,8 @@ HRESULT SetJMCStatus (
  `pTokens`  
  окне Массив `mdToken` значений, каждый из которых ссылается на метод, для которого в качестве его состояния JMC задано значение! `bIsJustMycode` .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Состояние JMC каждого метода, указанного в `pTokens` массиве, устанавливается равным противоположному `bIsJustMycode` значению. Состояние всех остальных методов этого модуля задается равным `bIsJustMycode` значению.  
   
  `SetJMCStatus`Метод удаляет все предыдущие параметры JMC в этом модуле.  
@@ -53,6 +56,7 @@ HRESULT SetJMCStatus (
  `SetJMCStatus`Метод возвращает S_OK HRESULT, если все функции заданы успешно. Он возвращает CORDBG_E_FUNCTION_NOT_DEBUGGABLE HRESULT, если некоторые функции, которые помечены, `true` не могут быть отлажены.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6bafd75a-e2d0-4aea-aed1-074374d5dff6
 topic_type:
 - apiref
-ms.openlocfilehash: 687f33c364f9730a554a41ade1ca2b78e33ffdc5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e2f54e11906cd4ba1440e220530f2ca5b9de769f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84489729"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708560"
 ---
 # <a name="imetadatavalidatevalidatorinit-method"></a>Метод IMetaDataValidate::ValidatorInit
+
 Устанавливает флаг, который указывает тип модуля в текущей области метаданных, и регистрирует указанный метод обратного вызова для ошибок проверки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT ValidatorInit (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwModule`  
  окне Значение перечисления [корвалидатормодулетипе](corvalidatormoduletype-enumeration.md) , указывающее тип модуля в текущей области метаданных.  
   
@@ -42,14 +44,15 @@ HRESULT ValidatorInit (
  окне Указатель на экземпляр [IUnknown](/cpp/atl/iunknown) , который служит функцией обратного вызова функции для ошибок проверки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataValidate](imetadatavalidate-interface.md)

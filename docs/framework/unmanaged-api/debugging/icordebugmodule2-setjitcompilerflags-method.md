@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
 topic_type:
 - apiref
-ms.openlocfilehash: f73919634ba15dfd16694676d1389875fc2d79bc
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 11ff430c426c93f1c2a5c0582495e089a33995fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210193"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709808"
 ---
 # <a name="icordebugmodule2setjitcompilerflags-method"></a>Метод ICorDebugModule2::SetJITCompilerFlags
+
 Задает флаги, управляющие JIT-компиляцией этого ICorDebugModule2.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT SetJITCompilerFlags (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwFlags`  
  окне Побитовое сочетание значений перечисления [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если `dwFlags` значение недопустимо, `SetJITCompilerFlags` метод завершится ошибкой.  
   
  `SetJITCompilerFlags`Метод может быть вызван только в обратном вызове [ICorDebugManagedCallback:: LoadModule](icordebugmanagedcallback-loadmodule-method.md) для этого модуля. Попытки вызвать его после `ICorDebugManagedCallback::LoadModule` доставки обратного вызова завершатся ошибкой.  
@@ -45,6 +48,7 @@ HRESULT SetJITCompilerFlags (
  "Изменить и продолжить" не поддерживается на платформах 64-разрядных или Win9x. Поэтому при вызове `SetJITCompilerFlags` метода для любой из этих двух платформ с флагом CORDEBUG_JIT_ENABLE_ENC, установленным в `dwFlags` , `SetJITCompilerFlags` метод и все методы, относящиеся к Edit и Continue, такие как [ICorDebugModule2:: ApplyChanges](icordebugmodule2-applychanges-method.md), завершатся ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

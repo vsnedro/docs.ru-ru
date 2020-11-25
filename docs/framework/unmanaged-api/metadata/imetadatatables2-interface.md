@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: c788bb7c-0212-4b6d-b840-22e8c8829028
 topic_type:
 - apiref
-ms.openlocfilehash: e81055163e5cbd64ecfbb412704e43e7663ccd45
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ecec104b57a1503bf813a7bb6715ea5c855fb008
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501083"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708716"
 ---
 # <a name="imetadatatables2-interface"></a>Интерфейс IMetaDataTables2
+
 Расширяет [IMetaDataTables](imetadatatables-interface.md) , чтобы включить методы для работы с потоками метаданных.  
   
 ## <a name="methods"></a>Методы  
@@ -32,15 +33,16 @@ ms.locfileid: "84501083"
 |[Метод GetMetaDataStreamInfo](imetadatatables2-getmetadatastreaminfo-method.md)|Возвращает имя, размер и содержимое потока метаданных по указанному индексу.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейсы метаданных](metadata-interfaces.md)

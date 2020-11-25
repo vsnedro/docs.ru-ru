@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5eefe716-5025-4a4c-970c-c823cdc7bb87
 topic_type:
 - apiref
-ms.openlocfilehash: 4517f266bbb500223214a6a8fe5881e8b29566c3
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 98c01993a85ed07d961902d8a098a96df4702c76
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83206888"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709834"
 ---
 # <a name="icordebugmoduleisdynamic-method"></a>Метод ICorDebugModule::IsDynamic
+
 Возвращает значение, указывающее, является ли этот модуль динамическим.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT IsDynamic(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pDynamic`  
  [out] `true` значение, если этот модуль является динамическим; в противном случае — `false` .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Динамический модуль может добавлять новые классы и удалять существующие классы даже после загрузки модуля. Обратные вызовы [ICorDebugManagedCallback:: loadClass](icordebugmanagedcallback-loadclass-method.md) и [ICorDebugManagedCallback:: унлоадкласс](icordebugmanagedcallback-unloadclass-method.md) информируют отладчик о добавлении или удалении класса.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

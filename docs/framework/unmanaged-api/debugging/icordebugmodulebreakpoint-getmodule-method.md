@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ffd5d9ec-4564-4200-b625-b306eec0ebd7
 topic_type:
 - apiref
-ms.openlocfilehash: 714819504099ea978ed31d471b4ceb9fc17a6552
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: b6363ef901d5297862ca46e685bb783aaaeb4123
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212299"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709626"
 ---
 # <a name="icordebugmodulebreakpointgetmodule-method"></a>Метод ICorDebugModuleBreakpoint::GetModule
+
 Возвращает указатель интерфейса на "ICorDebugModule", ссылающийся на модуль, в котором задана эта точка останова.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetModule (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppModule`  
  заполняет Указатель на адрес `ICorDebugModule` интерфейса, который ссылается на модуль, в котором задана точка останова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,4 +49,4 @@ HRESULT GetModule (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

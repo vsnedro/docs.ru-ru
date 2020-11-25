@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 99f693f3-d3b9-4fd8-9d09-b8efd03f7b67
 topic_type:
 - apiref
-ms.openlocfilehash: 53576ca938074fb7e5974a96bb53a84cb6ed67ab
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: c9c0598f8e7b3e8654124f50663c912f3cd61659
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213599"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709312"
 ---
 # <a name="icordebugnativeframegetip-method"></a>Метод ICorDebugNativeFrame::GetIP
+
 Возвращает расположение смещения машинного кода, в котором в данный момент установлен указатель инструкции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetIP (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pnOffset`  
  заполняет Указатель на положение смещения в машинном коде.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если кадр стека, представленный этим «ICorDebugNativeFrame», активен, то смещение — это адрес следующей инструкции, которая будет выполнена. Если этот кадр стека неактивен, то смещение является адресом следующей инструкции, которая будет выполнена при повторной активации кадра стека.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -49,4 +53,4 @@ HRESULT GetIP (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

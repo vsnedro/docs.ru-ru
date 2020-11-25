@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 5b58c87f-3f72-40df-9b9a-291076931cc3
 topic_type:
 - apiref
-ms.openlocfilehash: fcdd4a3f07b4499fd2388b5d165c409da9150466
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c97cc0c1d4c022583d0823abeff998e2ed5f719e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176933"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95710978"
 ---
 # <a name="strongnamegetpublickey-function"></a>Функция StrongNameGetPublicKey
-Получает открытый ключ из пары закрытого и открытого ключей. Ключевая пара может поставляться либо в качестве ключевого имени контейнера в рамках криптографического поставщика услуг (CSP), либо в виде сырой коллекции байтов.  
+
+Получает открытый ключ из пары закрытого и открытого ключей. Пара ключей может быть задана как имя контейнера ключей в поставщике служб шифрования (CSP) или как необработанная коллекция байтов.  
   
- Эта функция была амортизирована. Вместо этого используйте метод [ICLRStrongName::StrongNameGetPublicKey.](../hosting/iclrstrongname-strongnamegetpublickey-method.md)  
+ Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: StrongNameGetPublicKey](../hosting/iclrstrongname-strongnamegetpublickey-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,41 +41,45 @@ BOOLEAN StrongNameGetPublicKey (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szKeyContainer`  
- (в) Название ключевого контейнера, содержащего публичную/частную ключевую пару. Если `pbKeyBlob` он `szKeyContainer` недействителен, необходимо указать действительный контейнер в рамках CSP. В этом `StrongNameGetPublicKey` случае извлекает открытый ключ из пары ключей, хранящейся в контейнере.  
+ окне Имя контейнера ключей, содержащего пару открытого и закрытого ключей. Если `pbKeyBlob` значение равно null, `szKeyContainer` необходимо указать допустимый контейнер в CSP. В этом случае `StrongNameGetPublicKey` извлекает открытый ключ из пары ключей, хранящейся в контейнере.  
   
- Если `pbKeyBlob` он не является нулевым, то предполагается, что ключевая пара содержится в ключевом бинарном большом объекте (BLOB).  
+ Если значение не равно `pbKeyBlob` null, предполагается, что пара ключей содержится в большом двоичном объекте Key (BLOB).  
   
- Ключи должны быть 1024-разрядные ривест-Шамир-Адлеман (RSA) подписания ключей. В настоящее время никакие другие типы ключей не поддерживаются.  
+ Ключи должны состоять из 1024-разрядных ключей подписывания Ривест-Шамир-Адельман (RSA). В настоящее время не поддерживаются никакие другие типы ключей.  
   
  `pbKeyBlob`  
- (в) Указатель на публичную/частную ключевую пару. Эта пара находится в формате, `CryptExportKey` созданном функцией Win32. Если `pbKeyBlob` он недействителен, `szKeyContainer` то предполагается, что указанный ключевым контейнер омыт в паре ключа.  
+ окне Указатель на пару открытого и закрытого ключей. Эта пара имеет формат, созданный `CryptExportKey` функцией Win32. Если аргумент `pbKeyBlob` имеет значение null, предполагается, что контейнер ключей, заданный параметром, `szKeyContainer` содержит пару ключей.  
   
  `cbKeyBlob`  
- (в) Размер, в байтах, из `pbKeyBlob`.  
+ окне Размер (в байтах) `pbKeyBlob` .  
   
  `ppbPublicKeyBlob`  
- (ваут) Вернулся общественный ключ BLOB. Параметр `ppbPublicKeyBlob` выделяется общим временем выполнения языка и возвращается вызывающему. Звонящее должно освободить память с помощью функции [StrongNameFreeBuffer.](strongnamefreebuffer-function.md)  
+ заполняет Возвращенный большой двоичный объект открытого ключа. `ppbPublicKeyBlob`Параметр выделяется средой CLR и возвращается вызывающему объекту. Вызывающий объект должен освободить память с помощью функции [StrongNameFreeBuffer](strongnamefreebuffer-function.md) .  
   
  `pcbPublicKeyBlob`  
- (ваут) Размер возвращенного публичного ключа BLOB.  
+ заполняет Размер возвращенного большого двоичного объекта открытого ключа.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true`при успешном завершении; в `false`противном случае, .  
+
+ `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Remarks  
- Открытый ключ содержится в структуре [PublicKeyBlob.](publickeyblob-structure.md)  
+## <a name="remarks"></a>Комментарии  
+
+ Открытый ключ содержится в структуре [публиккэйблоб](publickeyblob-structure.md) .  
   
- Если `StrongNameGetPublicKey` функция не выполняется успешно, позвоните в функцию [StrongNameErrorInfo,](strongnameerrorinfo-function.md) чтобы получить последнюю сгенерированную ошибку.  
+ Если `StrongNameGetPublicKey` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** StrongName.h  
+ **Заголовок:** StrongName. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
 topic_type:
 - apiref
-ms.openlocfilehash: 99824e9a7fd759fb30bfa377156fc28eb934a2b4
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a6b1a7c9be821890a3f15d8c3297273607f5bedd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212234"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709704"
 ---
 # <a name="icordebugmodule2applychanges-method"></a>Метод ICorDebugModule2::ApplyChanges
+
 Применяет изменения в метаданных и изменения в коде промежуточного языка MSIL к выполняющемуся процессу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT ApplyChanges (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cbMetadata`  
  окне Размер (в байтах) разностных метаданных.  
   
@@ -51,8 +53,9 @@ HRESULT ApplyChanges (
  `pbIL`  
  окне Буфер, содержащий обновленный код MSIL.  
   
-## <a name="remarks"></a>Remarks  
- `pbMetadata`Параметр находится в особом формате разностных метаданных (в виде выходных данных [IMetaDataEmit2:: саведелтатомемори](../metadata/imetadataemit2-savedeltatomemory-method.md)). `pbMetadata`принимает предыдущие метаданные в качестве основы и описывает отдельные изменения, которые необходимо применить к этой базе.  
+## <a name="remarks"></a>Комментарии  
+
+ `pbMetadata`Параметр находится в особом формате разностных метаданных (в виде выходных данных [IMetaDataEmit2:: саведелтатомемори](../metadata/imetadataemit2-savedeltatomemory-method.md)). `pbMetadata` принимает предыдущие метаданные в качестве основы и описывает отдельные изменения, которые необходимо применить к этой базе.  
   
  В отличие от этого, `pbIL[` параметр] содержит новый код MSIL для обновленного метода и предназначен для полной замены предыдущего MSIL для этого метода.  
   
@@ -63,6 +66,7 @@ HRESULT ApplyChanges (
  В случае `ApplyChanges` сбоя метода сеанс отладки находится в недопустимом состоянии и должен быть перезапущен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

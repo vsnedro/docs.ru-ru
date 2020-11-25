@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 87ce7c5b-fd82-453e-bf55-c8a32150b183
 topic_type:
 - apiref
-ms.openlocfilehash: 4e5939e9e74899a33f28927c4fda09d0a8fb30a0
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 38a5c2da900530b6bf78f24e224714496ceaa62c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209738"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95710965"
 ---
 # <a name="icordebugmdagetflags-method"></a>Метод ICorDebugMDA::GetFlags
+
 Возвращает флаги, связанные с помощником по отладке управляемого кода (MDA), представленным [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetFlags (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pFlags`  
  окне Побитовое сочетание значений перечисления [кордебугмдафлагс](cordebugmdaflags-enumeration.md) , определяющих параметры флагов для этого MDA.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,7 +49,7 @@ HRESULT GetFlags (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugMDA](icordebugmda-interface.md)
 - [Диагностика ошибок посредством управляемых помощников по отладке](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

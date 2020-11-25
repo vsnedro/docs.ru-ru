@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 33a19f6e-1029-4d53-af64-19591c6e58ee
 topic_type:
 - apiref
-ms.openlocfilehash: 91f0a75f127afcff89c2b92bf3ed67466b205081
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 15485ac94ed9074baacc4fd2662a04bdcefcf1e7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213053"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95709327"
 ---
 # <a name="icordebugnativeframegetlocalmemoryregistervalue-method"></a>Метод ICorDebugNativeFrame::GetLocalMemoryRegisterValue
+
 Возвращает значение аргумента или локальной переменной, из которых младшее слово и верхнее слово хранятся в указанном регистре и расположении в памяти соответственно для этого кадра машинного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,8 +39,9 @@ HRESULT GetLocalMemoryRegisterValue (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `highWordAddress`  
- окне `CORDB_ADDRESS`Значение типа, указывающее место в памяти, содержащее верхнее слово значения.  
+ окне `CORDB_ADDRESS` Значение типа, указывающее место в памяти, содержащее верхнее слово значения.  
   
  `lowWordRegister`  
  окне Значение перечисления "CorDebugRegister", указывающее регистр, содержащий нижнее слово значения.  
@@ -48,12 +50,13 @@ HRESULT GetLocalMemoryRegisterValue (
  окне Целое число, указывающее размер подписи двоичных метаданных, на которую ссылается `pvSigBlob` параметр.  
   
  `pvSigBlob`  
- окне `PCCOR_SIGNATURE`Значение, которое указывает на сигнатуру двоичных метаданных для типа значения.  
+ окне `PCCOR_SIGNATURE` Значение, которое указывает на сигнатуру двоичных метаданных для типа значения.  
   
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, представляющего извлеченное значение, хранящееся в указанном регистре и расположении в памяти.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -62,4 +65,4 @@ HRESULT GetLocalMemoryRegisterValue (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

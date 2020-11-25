@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type:
 - apiref
-ms.openlocfilehash: d9269339e8e2ae8d00da701b015aa30cd51cbef3
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 63efb788d8bca84da94921371309704cc7b20ac4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213378"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95710445"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>Метод ICorDebugMetaDataLocator::GetMetaData
+
 Запрашивает у отладчика возврат полного пути к модулю, метаданные которого необходимы для завершения запрошенной отладчиком операции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,8 +41,9 @@ HRESULT GetMetaData(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszImagePath`  
- [in] Завершающаяся нулевым байтом строка, представляющая полный путь к файлу. Если полный путь недоступен, имя и расширение файла (*filename*.* расширение*).  
+ [in] Завершающаяся нулевым байтом строка, представляющая полный путь к файлу. Если полный путь недоступен, имя и расширение файла (*filename*.*расширение*).  
   
  `dwImageTimeStamp`  
  [in] Временная метка из заголовков PE-файла образа. Этот параметр потенциально может использоваться для поиска сервера символов ([SymSrv](/windows/desktop/debug/using-symsrv)).  
@@ -63,17 +65,20 @@ HRESULT GetMetaData(
  `ofReadOnly`Флаг из перечисления [коропенфлагс](../metadata/coropenflags-enumeration.md) используется для запроса доступа только для чтения к метаданным в этом файле.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода. Все остальные ошибочные значения HRESULT указывают, что файл не удается найти.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно. `wszPathBuffer` содержит полный путь к файлу и завершается нулевым байтом.|  
 |E_NOT_SUFFICIENT_BUFFER|Текущий размер `wszPathBuffer` недостаточен для хранения полного пути. В этом случае `pcchPathBuffer` содержит необходимое количество `WCHAR`, включая завершающий символ null, и `GetMetaData` вызывается второй раз с запрошенным размером буфера.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если `wszImagePath` содержит полный путь для модуля из дампа, он указывает путь с компьютера, на котором был создан дамп. Файл может не существовать в этом расположении, или по этому пути может храниться неправильный файл с тем же именем.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -82,7 +87,7 @@ HRESULT GetMetaData(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugThread4](icordebugthread4-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

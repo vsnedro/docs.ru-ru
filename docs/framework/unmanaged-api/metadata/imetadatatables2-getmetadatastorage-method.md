@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 667a6d1e-753d-4ea2-8fd8-a8337d1bb9cd
 topic_type:
 - apiref
-ms.openlocfilehash: 55fcde6c47705e515eb2d20f25ac870e257b92c0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 775b3919d1468f26fc3c374dd8ca143aa17853ce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501135"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708742"
 ---
 # <a name="imetadatatables2getmetadatastorage-method"></a>Метод IMetaDataTables2::GetMetaDataStorage
+
 Возвращает размер и содержимое метаданных, хранящихся в указанном разделе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetMetaDataStorage (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppvMd`  
  [вход, выход] Указатель на раздел метаданных.  
   
@@ -42,15 +44,16 @@ HRESULT GetMetaDataStorage (
  заполняет Размер потока метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
 topic_type:
 - apiref
-ms.openlocfilehash: 74111a175b0decbc1beef7c8df5ade59d31d845b
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: c46a3bc34ba7efa760e50416e9a6c39779727813
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009149"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708932"
 ---
 # <a name="imetadataassemblyemitsetmanifestresourceprops-method"></a>Метод IMetaDataAssemblyEmit::SetManifestResourceProps
+
 Изменяет указанную структуру метаданных `ManifestResource`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT SetManifestResourceProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `mr`  
  окне Токен, указывающий `ManifestResource` структуру метаданных для изменения.  
   
@@ -49,18 +51,20 @@ HRESULT SetManifestResourceProps (
  `dwResourceFlags`  
  окне Побитовое сочетание значений флагов, задающих атрибуты ресурса.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Чтобы создать `ManifestResource` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеманифестресаурце](imetadataassemblyemit-definemanifestresource-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
