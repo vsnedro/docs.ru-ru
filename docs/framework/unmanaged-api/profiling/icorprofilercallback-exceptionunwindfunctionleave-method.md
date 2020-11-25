@@ -15,39 +15,42 @@ helpviewer_keywords:
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
 topic_type:
 - apiref
-ms.openlocfilehash: 8694a2d19c3b98487b86da4273eb0c68fb9d9ace
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9f88a3fde7d7cb5941e3a7f44a7d94056a959ab8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500121"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733923"
 ---
-# <a name="icorprofilercallbackexceptionunwindfunctionleave-method"></a><span data-ttu-id="efcff-102">Метод ICorProfilerCallback::ExceptionUnwindFunctionLeave</span><span class="sxs-lookup"><span data-stu-id="efcff-102">ICorProfilerCallback::ExceptionUnwindFunctionLeave Method</span></span>
-<span data-ttu-id="efcff-103">Уведомляет профилировщик о том, что фаза очистки в обработке исключений завершила очистку функции.</span><span class="sxs-lookup"><span data-stu-id="efcff-103">Notifies the profiler that the unwind phase of exception handling has finished unwinding a function.</span></span>  
+# <a name="icorprofilercallbackexceptionunwindfunctionleave-method"></a><span data-ttu-id="6fd90-102">Метод ICorProfilerCallback::ExceptionUnwindFunctionLeave</span><span class="sxs-lookup"><span data-stu-id="6fd90-102">ICorProfilerCallback::ExceptionUnwindFunctionLeave Method</span></span>
+
+<span data-ttu-id="6fd90-103">Уведомляет профилировщик о том, что фаза очистки в обработке исключений завершила очистку функции.</span><span class="sxs-lookup"><span data-stu-id="6fd90-103">Notifies the profiler that the unwind phase of exception handling has finished unwinding a function.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="efcff-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="efcff-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6fd90-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6fd90-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT ExceptionUnwindFunctionLeave();  
 ```  
   
-## <a name="remarks"></a><span data-ttu-id="efcff-105">Примечания</span><span class="sxs-lookup"><span data-stu-id="efcff-105">Remarks</span></span>  
- <span data-ttu-id="efcff-106">При `ExceptionUnwindFunctionLeave` вызове метода экземпляр функции и его данные стека удаляются из стека.</span><span class="sxs-lookup"><span data-stu-id="efcff-106">When the `ExceptionUnwindFunctionLeave` method is called, the function instance and its stack data are removed from the stack.</span></span>  
-  
- <span data-ttu-id="efcff-107">Профилировщик не должен блокироваться во время этого вызова, так как стек может не находиться в состоянии, допускающем сборку мусора, поэтому невозможно включить вытесненную сборку мусора.</span><span class="sxs-lookup"><span data-stu-id="efcff-107">The profiler should not block during this call because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled.</span></span> <span data-ttu-id="efcff-108">Если профилировщик блокируется здесь и выполняется сборка мусора, среда выполнения будет блокироваться до тех пор, пока этот обратный вызов не вернет значение.</span><span class="sxs-lookup"><span data-stu-id="efcff-108">If the profiler blocks here and a garbage collection is attempted, the runtime will block until this callback returns.</span></span>  
-  
- <span data-ttu-id="efcff-109">Кроме того, во время этого вызова профилировщик не должен вызывать управляемый код или каким-либо образом вызывает выделение управляемой памяти.</span><span class="sxs-lookup"><span data-stu-id="efcff-109">Also, during this call, the profiler must not call into managed code or in any way cause a managed-memory allocation.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="efcff-110">Требования</span><span class="sxs-lookup"><span data-stu-id="efcff-110">Requirements</span></span>  
- <span data-ttu-id="efcff-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="efcff-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="efcff-112">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="efcff-112">**Header:** CorProf.idl, CorProf.h</span></span>  
-  
- <span data-ttu-id="efcff-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="efcff-113">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="efcff-114">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="efcff-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="efcff-115">См. также</span><span class="sxs-lookup"><span data-stu-id="efcff-115">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="6fd90-105">Remarks</span><span class="sxs-lookup"><span data-stu-id="6fd90-105">Remarks</span></span>  
 
-- [<span data-ttu-id="efcff-116">Интерфейс ICorProfilerCallback</span><span class="sxs-lookup"><span data-stu-id="efcff-116">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
-- [<span data-ttu-id="efcff-117">Метод ExceptionUnwindFunctionEnter</span><span class="sxs-lookup"><span data-stu-id="efcff-117">ExceptionUnwindFunctionEnter Method</span></span>](icorprofilercallback-exceptionunwindfunctionenter-method.md)
+ <span data-ttu-id="6fd90-106">При `ExceptionUnwindFunctionLeave` вызове метода экземпляр функции и его данные стека удаляются из стека.</span><span class="sxs-lookup"><span data-stu-id="6fd90-106">When the `ExceptionUnwindFunctionLeave` method is called, the function instance and its stack data are removed from the stack.</span></span>  
+  
+ <span data-ttu-id="6fd90-107">Профилировщик не должен блокироваться во время этого вызова, так как стек может не находиться в состоянии, допускающем сборку мусора, поэтому невозможно включить вытесненную сборку мусора.</span><span class="sxs-lookup"><span data-stu-id="6fd90-107">The profiler should not block during this call because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled.</span></span> <span data-ttu-id="6fd90-108">Если профилировщик блокируется здесь и выполняется сборка мусора, среда выполнения будет блокироваться до тех пор, пока этот обратный вызов не вернет значение.</span><span class="sxs-lookup"><span data-stu-id="6fd90-108">If the profiler blocks here and a garbage collection is attempted, the runtime will block until this callback returns.</span></span>  
+  
+ <span data-ttu-id="6fd90-109">Кроме того, во время этого вызова профилировщик не должен вызывать управляемый код или каким-либо образом вызывает выделение управляемой памяти.</span><span class="sxs-lookup"><span data-stu-id="6fd90-109">Also, during this call, the profiler must not call into managed code or in any way cause a managed-memory allocation.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="6fd90-110">Требования</span><span class="sxs-lookup"><span data-stu-id="6fd90-110">Requirements</span></span>  
+
+ <span data-ttu-id="6fd90-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6fd90-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="6fd90-112">**Заголовок:** CorProf.idl, CorProf.h</span><span class="sxs-lookup"><span data-stu-id="6fd90-112">**Header:** CorProf.idl, CorProf.h</span></span>  
+  
+ <span data-ttu-id="6fd90-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="6fd90-113">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="6fd90-114">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6fd90-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="6fd90-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6fd90-115">See also</span></span>
+
+- [<span data-ttu-id="6fd90-116">Интерфейс ICorProfilerCallback</span><span class="sxs-lookup"><span data-stu-id="6fd90-116">ICorProfilerCallback Interface</span></span>](icorprofilercallback-interface.md)
+- [<span data-ttu-id="6fd90-117">Метод ExceptionUnwindFunctionEnter</span><span class="sxs-lookup"><span data-stu-id="6fd90-117">ExceptionUnwindFunctionEnter Method</span></span>](icorprofilercallback-exceptionunwindfunctionenter-method.md)
