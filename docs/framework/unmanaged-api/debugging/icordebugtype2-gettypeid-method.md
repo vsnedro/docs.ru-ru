@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
 topic_type:
 - apiref
-ms.openlocfilehash: 1c11946bc5ea69a090091c014aba859935b48b36
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 2a4a0bfae6f9a1970f0d4aca8b37f8fc68194462
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396675"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725694"
 ---
 # <a name="icordebugtype2gettypeid-method"></a>Метод ICorDebugType2:: TypeID
+
 Возвращает [COR_TYPEID](cor-typeid-structure.md) для этого типа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetTypeID(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `id`  
  заполняет Указатель на [COR_TYPEID](cor-typeid-structure.md) для этого элемента ICorDebugType.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращается значение `S_OK` при успешном выполнении или код ошибки `HRESULT` при сбое. В `HRESULT` число этих кодов входят следующие.  
   
 |Код возврата|Описание|  
@@ -46,12 +49,14 @@ HRESULT GetTypeID(
 |`CORDBG_E_CLASS_NOT_LOADED`|Тип не был загружен.|  
 |`CORDBG_E_UNSUPPORTED`|Этот тип не поддерживается.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Этот метод предоставляет сопоставление из объекта ICorDebugType, представляющего тип, который может быть или не загружен в среду выполнения, в [COR_TYPEID](cor-typeid-structure.md), который служит в качестве непрозрачного маркера, определяющего тип, загруженный в среду выполнения.  
   
  Если тип, который представляет объект ICorDebugType, еще не загружен, этот метод возвращает `CORDBG_E_CLASS_NOT_LOADED` .  Если тип не поддерживается, он возвращает `CORDBG_E_UNSUPPORTED` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -60,6 +65,6 @@ HRESULT GetTypeID(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugType2](icordebugtype2-interface.md)

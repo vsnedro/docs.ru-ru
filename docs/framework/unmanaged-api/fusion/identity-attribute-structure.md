@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1ee7c434-9681-4fa8-badd-652cb1a9742b
 topic_type:
 - apiref
-ms.openlocfilehash: 8b7edf1cc642228c4a79c855b51727264f31741c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: da4b1d6f2a7079ef33859fce29c9555ac06fcfc2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73107985"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725655"
 ---
 # <a name="identity_attribute-structure"></a>Структура IDENTITY_ATTRIBUTE
+
 Содержит сведения об атрибутах метаданных для экземпляра [идефинитионидентити](idefinitionidentity-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,19 +43,21 @@ typedef struct _IDENTITY_ATTRIBUTE {
 |`pszName`|Указатель на строку символов, завершающуюся нулем, которая содержит имя атрибута.|  
 |`pszValue`|Указатель на строку символов, завершающуюся нулем, которая содержит значение атрибута.|  
   
-## <a name="remarks"></a>Заметки  
- Структура `IDENTITY_ATTRIBUTE` содержит три указателя на строки символов, заканчивающиеся символом NULL. Эти три строки описывают один атрибут.  
+## <a name="remarks"></a>Комментарии  
+
+ `IDENTITY_ATTRIBUTE`Структура содержит три указателя на строки символов, заканчивающиеся нулем. Эти три строки описывают один атрибут.  
   
- Экземпляр структуры `IDENTITY_ATTRIBUTE` связан с экземпляром структуры [IDENTITY_ATTRIBUTE_BLOB](identity-attribute-blob-structure.md) . Структура `IDENTITY_ATTRIBUTE` содержит фактические строки, а соответствующая структура `IDENTITY_ATTRIBUTE_BLOB` перечисляет смещения для трех строк, перечисленных в структуре `IDENTITY_ATTRIBUTE`.  
+ Экземпляр `IDENTITY_ATTRIBUTE` структуры связан с экземпляром структуры [IDENTITY_ATTRIBUTE_BLOB](identity-attribute-blob-structure.md) . `IDENTITY_ATTRIBUTE`Структура содержит фактические строки, а соответствующая `IDENTITY_ATTRIBUTE_BLOB` Структура перечисляет смещения для трех строк, перечисленных в `IDENTITY_ATTRIBUTE` структуре.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IDefinitionIdentity](idefinitionidentity-interface.md)
 - [Структура IDENTITY_ATTRIBUTE_BLOB](identity-attribute-blob-structure.md)

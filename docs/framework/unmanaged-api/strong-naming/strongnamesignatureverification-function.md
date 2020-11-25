@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 933758dd-231e-4382-8819-242c0a13a4b7
 topic_type:
 - apiref
-ms.openlocfilehash: 7dd61be008ba08ca2b28ae3e7e8ff6326f8a41d9
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c47d693f450b9cafcb4c8a388c8c38afcd2094e6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129237"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725720"
 ---
 # <a name="strongnamesignatureverification-function"></a>Функция StrongNameSignatureVerification
+
 Получает значение, указывающее, содержит ли находящийся по указанному пути манифест сборки подпись строгого имени, которая проверяется в соответствии с заданными флагами.  
   
  Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md) .  
@@ -37,11 +38,12 @@ BOOLEAN StrongNameSignatureVerification (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszFilePath`  
  окне Путь к переносимому исполняемому файлу (DLL или exe), для которого проверяется сборка.  
   
  `dwInFlags`  
- окне Флаги для изменения поведения проверки. Поддерживаются следующие значения:  
+ окне Флаги для изменения поведения проверки. Поддерживаются следующие значения.  
   
 - `SN_INFLAG_FORCE_VER` (0x00000001) — принудительная проверка, даже если необходимо переопределить параметры реестра.  
   
@@ -58,21 +60,23 @@ BOOLEAN StrongNameSignatureVerification (
  `pdwOutFlags`  
  заполняет Флаги, указывающие, была ли проверена подпись строгого имени. Поддерживается следующее значение:  
   
-- `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) — это значение равно `false`, чтобы указать, что проверка прошла из-за параметров реестра.  
+- `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) — это значение `false` указывает, что проверка прошла удачно из-за параметров реестра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true`, если проверка прошла успешно; в противном случае `false`.  
+
+ `true` значение, если проверка прошла успешно; в противном случае — `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** StrongName. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md)
 - [Метод StrongNameSignatureVerificationEx](../hosting/iclrstrongname-strongnamesignatureverificationex-method.md)

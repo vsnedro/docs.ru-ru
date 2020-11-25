@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
 topic_type:
 - apiref
-ms.openlocfilehash: 0b8e7dfbe377e60b548003af10fb11392b514030
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 3ddd78ea35d5709abb30af085b2212a09b28c2ef
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703454"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725564"
 ---
 # <a name="iclrpolicymanagersetactionontimeout-method"></a>Метод ICLRPolicyManager::SetActionOnTimeout
+
 Указывает действие политики, которое должна выполнять среда CLR при истечении времени ожидания указанной операции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SetActionOnTimeout (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `operation`  
  окне Одно из значений [еклроператион](eclroperation-enumeration.md) , указывающее операцию, для которой необходимо указать действие времени ожидания. Поддерживаются следующие значения.  
   
@@ -51,9 +53,9 @@ HRESULT SetActionOnTimeout (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`SetActionOnTimeout`успешно возвращено.|  
+|S_OK|`SetActionOnTimeout` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -62,26 +64,28 @@ HRESULT SetActionOnTimeout (
 |E_INVALIDARG|Не удается задать время ожидания для указанного `operation` или указано недопустимое значение для `operation` .|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Значение времени ожидания может быть либо временем ожидания по умолчанию, установленным средой CLR, либо значением, заданным узлом при вызове метода [ICLRPolicyManager:: setTimeout](iclrpolicymanager-settimeout-method.md) .  
   
- Не все значения действий политики могут быть указаны в качестве поведения времени ожидания для операций среды CLR. `SetActionOnTimeout`обычно используется только для эскалации поведения. Например, узел может указать, что прерывания потока должны быть преобразованы в грубые прерывания потока, но не могут указывать обратно. В следующей таблице описаны допустимые `action` значения для допустимых `operation` значений.  
+ Не все значения действий политики могут быть указаны в качестве поведения времени ожидания для операций среды CLR. `SetActionOnTimeout` обычно используется только для эскалации поведения. Например, узел может указать, что прерывания потока должны быть преобразованы в грубые прерывания потока, но не могут указывать обратно. В следующей таблице описаны допустимые `action` значения для допустимых `operation` значений.  
   
-|Значение для`operation`|Допустимые значения для`action`|  
+|Значение для `operation`|Допустимые значения для `action`|  
 |---------------------------|-------------------------------|  
 |OPR_ThreadRudeAbortInNonCriticalRegion<br /><br /> OPR_ThreadRudeAbortInCriticalRegion|-Ерудеабортсреад<br />-Еунлоадаппдомаин<br />-Ерудеунлоадаппдомаин<br />-Икситпроцесс<br />-Ефастекситпроцесс<br />-Ерудикситпроцесс<br />-Едисаблерунтиме|  
 |OPR_AppDomainUnload|-Еунлоадаппдомаин<br />-Ерудеунлоадаппдомаин<br />-Икситпроцесс<br />-Ефастекситпроцесс<br />-Ерудикситпроцесс<br />-Едисаблерунтиме|  
 |OPR_ProcessExit|-Икситпроцесс<br />-Ефастекситпроцесс<br />-Ерудикситпроцесс<br />-Едисаблерунтиме|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

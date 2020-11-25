@@ -12,14 +12,15 @@ f1_keywords:
 helpviewer_keywords:
 - EInitializeNewDomainFlags enumeration [.NET Framework hosting]
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-ms.openlocfilehash: 7ff10f84d8d270d31c5d560fb3c9bd3c81cf3e24
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8350b507609e63c060cda08514200d386c37a6b3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616233"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724329"
 ---
 # <a name="einitializenewdomainflags-enumeration"></a>Перечисление EInitializeNewDomainFlags
+
 Позволяет узлу предоставлять среде выполнения сведения об инициализации домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,7 +32,7 @@ typedef enum {
 } EInitializeNewDomainFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -39,18 +40,20 @@ typedef enum {
 |`eInitializeNewDomainFlags_NoSecurityChanges`|Информирует среду CLR о том, что узел не будет вносить изменения в состояние безопасности домена приложения в <xref:System.AppDomainManager.InitializeNewDomain%2A> методе.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Метод [иклрдомаинманажер:: SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md) принимает параметр типа `EInitializeNewDomainFlags` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Размещение перечислений](hosting-enumerations.md)
 - [Метод SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md)

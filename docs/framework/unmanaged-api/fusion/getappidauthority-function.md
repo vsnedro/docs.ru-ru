@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad
 topic_type:
 - apiref
-ms.openlocfilehash: 22a6af61251942f068676daaee2bdfa868e32a97
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 5e731ac1c652b8b4505073a3a10463ae0ce21ac0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134554"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724498"
 ---
 # <a name="getappidauthority-function"></a>Функция GetAppIdAuthority
+
 Возвращает указатель на экземпляр [иаппидаусорити](iappidauthority-interface.md) , который управляет ключами для удостоверений приложений и ссылок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,17 +35,19 @@ HRESULT GetAppIdAuthority (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppIAppIdAuthority`  
- заполняет Возвращаемый указатель `IAppIdAuthority`.  
+ заполняет Возвращаемый `IAppIdAuthority` указатель.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAppIdAuthority](iappidauthority-interface.md)
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)

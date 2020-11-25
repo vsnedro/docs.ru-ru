@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 38e72a06-dbed-473b-a59b-7e0b3ea4f2af
 topic_type:
 - apiref
-ms.openlocfilehash: 822396e28d000a5309738680fec502e1aeacd67c
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 6a8765bfd62a2e6543661804ab8d009ce19f8813
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616220"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724316"
 ---
 # <a name="ememoryavailable-enumeration"></a>Перечисление EMemoryAvailable
+
 Содержит значения, указывающие объем свободной физической памяти на компьютере. Эти значения логически сопоставляются с событиями для высокой и нехватки памяти, возвращаемой `CreateMemoryResourceNotification` функцией в Windows API.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,7 +35,7 @@ typedef enum {
 } EMemoryAvailable;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -43,17 +44,19 @@ typedef enum {
 |`eMemoryAvailableNeutral`|Доступная физическая память не является нейтральной.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Это значение передается узлом в среду CLR с помощью вызова метода [ICLRMemoryNotificationCallback:: OnMemoryNotification](iclrmemorynotificationcallback-onmemorynotification-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Размещение перечислений](hosting-enumerations.md)

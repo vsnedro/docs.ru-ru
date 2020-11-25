@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b96c5ef3-a9df-4c7c-9952-432d3272cb5c
 topic_type:
 - apiref
-ms.openlocfilehash: 74f17c77e74edb1226dda2d9ebaa9486e1769ce4
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: c495ce47b699d2e32d1f02e4afcf0444a9930c34
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762361"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723913"
 ---
 # <a name="icorruntimehostcreatedomain-method"></a>Метод ICorRuntimeHost::CreateDomain
+
 Создает домен приложения. Вызывающий объект получает указатель интерфейса типа <xref:System._AppDomain> на экземпляр типа <xref:System.AppDomain?displayProperty=nameWithType> .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT CreateDomain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzFriendlyName`  
  окне Необязательный параметр, используемый для присвоения понятного имени домену. Это понятное имя может отображаться в пользовательских интерфейсах, таких как отладчики, для обнаружения домена.  
   
@@ -47,7 +49,7 @@ HRESULT CreateDomain (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -55,15 +57,16 @@ HRESULT CreateDomain (
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

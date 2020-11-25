@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 300af43f-b3eb-4ce5-9ead-30dbfc5fbcc3
 topic_type:
 - apiref
-ms.openlocfilehash: d0f3f6206a215b0296f6e183f48d69d8d979a02d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b749223de90b751676cd82c740f55c0bfe976a71
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095824"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724654"
 ---
 # <a name="icordebugobjectvaluegetmanagedcopy-method"></a>Метод ICorDebugObjectValue::GetManagedCopy
-`GetManagedCopy` устарел. Не вызывайте этот метод.  
+
+`GetManagedCopy` устарел. Этот метод не следует вызывать.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,6 +35,7 @@ HRESULT GetManagedCopy (
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

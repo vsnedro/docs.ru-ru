@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f02e763-73f7-42cb-a41c-f78499d9482c
 topic_type:
 - apiref
-ms.openlocfilehash: 15c843fe138be55a3480f46e0ef8b37bcb445ad0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 4abcf9f4575b32dd125fd8a00783043900993c3e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497976"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724108"
 ---
 # <a name="icorprofilerinfogetobjectsize-method"></a>Метод ICorProfilerInfo::GetObjectSize
+
 Возвращает размер указанного объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,17 @@ HRESULT GetObjectSize(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `objectId`  
  окне Идентификатор объекта.  
   
  `pcSize`  
  заполняет Указатель на размер объекта в байтах.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
   
 > [!IMPORTANT]
-> Этот метод устарел. Он Возвращает COR_E_OVERFLOW для объектов размером более 4 ГБ на 64-разрядных платформах. Используйте вместо этого метод [метод icorprofilerinfo4:: GetObjectSize2](icorprofilerinfo4-getobjectsize2-method.md) .  
+> Этот метод устарел. Он Возвращает COR_E_OVERFLOW для объектов размером более 4 ГБ на 64-разрядных платформах. Используйте вместо этого метод  [метод icorprofilerinfo4:: GetObjectSize2](icorprofilerinfo4-getobjectsize2-method.md) .  
   
  Различные объекты одних и тех же типов часто имеют одинаковый размер. Однако некоторые типы, такие как массивы или строки, могут иметь разные размеры для каждого объекта.  
   
@@ -54,6 +56,7 @@ HRESULT GetObjectSize(
 - В 64-разрядной Windows выравнивание всегда равно 8 байтам.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -62,6 +65,6 @@ HRESULT GetObjectSize(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

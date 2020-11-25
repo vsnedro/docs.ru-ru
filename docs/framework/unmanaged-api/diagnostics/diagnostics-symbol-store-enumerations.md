@@ -7,17 +7,19 @@ helpviewer_keywords:
 - diagnostics symbol store enumerations [.NET Framework]
 - enumerations [.NET Framework debugging]
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
-ms.openlocfilehash: c1715341726c0ee33bfcaecc7e02b452db6a1fd7
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: b2a30bdb4af2dc9f4e9ed8741805bf3bc0495b65
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420569"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725213"
 ---
 # <a name="diagnostics-symbol-store-enumerations"></a>Перечисления хранилища символов диагностики
+
 В этом разделе описываются неуправляемые перечисления, используемые API хранилища диагностических символов.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Перечисление CorSymAddrKind](corsymaddrkind-enumeration.md)  
  Указывает тип адреса памяти.  
   
@@ -31,6 +33,7 @@ ms.locfileid: "83420569"
  Определяет обратные вызовы для функций отладчика.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)  
   
  [Структуры хранилища символов диагностики](diagnostics-symbol-store-structures.md)  

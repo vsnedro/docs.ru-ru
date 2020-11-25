@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 68661fbd-09cf-46dc-890b-e694f8a3880a
 topic_type:
 - apiref
-ms.openlocfilehash: 334520df749ba428e6480188cd0655bb734725a6
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 67af8f125b2be39138bac5d51148215f3a3acf86
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803309"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723874"
 ---
 # <a name="ihostsyncmanagercreatemanualevent-method"></a>Метод IHostSyncManager::CreateManualEvent
+
 Создает объект события ручного сброса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT CreateManualEvent (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `bInitialState`  
  [in] `true` , если объект получает сигнал; в противном случае — значение `false` .  
   
@@ -43,9 +45,9 @@ HRESULT CreateManualEvent (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`CreateManualEvent`успешно возвращено.|  
+|S_OK|`CreateManualEvent` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -53,19 +55,21 @@ HRESULT CreateManualEvent (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенного объекта события.|  
   
-## <a name="remarks"></a>Замечания  
- `CreateManualEvent`создает `IHostManualEvent` объект события ручного сброса, для которого требуется вызов метода [ихостмануалевент:: Reset](ihostmanualevent-reset-method.md) , чтобы установить несигнальное состояние. `CreateManualEvent`отражает функцию Win32 `CreateEvent` со значением, `true` указанным для `bManualReset` параметра.  
+## <a name="remarks"></a>Комментарии  
+
+ `CreateManualEvent` создает `IHostManualEvent` объект события ручного сброса, для которого требуется вызов метода [ихостмануалевент:: Reset](ihostmanualevent-reset-method.md) , чтобы установить несигнальное состояние. `CreateManualEvent` отражает функцию Win32 `CreateEvent` со значением, `true` указанным для `bManualReset` параметра.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostManualEvent](ihostmanualevent-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 10093e3d-26b6-4ad7-8ef3-bbf66243fc02
 topic_type:
 - apiref
-ms.openlocfilehash: 70514464f27d6123a4de1d5800ed016a39541287
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8e188f304908a8029a57bb059046205c35346f3d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207547"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724693"
 ---
 # <a name="icordebugobjectenumnext-method"></a>Метод ICorDebugObjectEnum::Next
+
 Возвращает относительные виртуальные адреса (RVA) указанного числа объектов из перечисления, начиная с текущей позиции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  [in] Количество объектов, которые должны быть получены.  
   
@@ -47,6 +49,7 @@ HRESULT Next (
  заполняет Указатель на число фактически возвращенных объектов. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -55,4 +58,4 @@ HRESULT Next (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

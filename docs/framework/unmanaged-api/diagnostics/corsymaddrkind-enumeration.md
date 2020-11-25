@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
 topic_type:
 - apiref
-ms.openlocfilehash: 5991b0abaedabe2337cd754c7bd19f96c5e9b685
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: f71d8956e8706cdc71b94b6e6e2e8210e5b9161e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420621"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725239"
 ---
 # <a name="corsymaddrkind-enumeration"></a>Перечисление CorSymAddrKind
+
 Указывает тип адреса памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,7 +43,7 @@ typedef enum CorSymAddrKind
 } CorSymAddrKind;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -58,8 +59,9 @@ typedef enum CorSymAddrKind
 |`ADDR_NATIVE_ISECTOFFSET`|Указывает, что первый адрес является разделом, а второй — смещением.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)

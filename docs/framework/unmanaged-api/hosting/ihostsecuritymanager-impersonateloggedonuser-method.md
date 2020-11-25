@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
 topic_type:
 - apiref
-ms.openlocfilehash: ada12a35691e0897a44f4f00e2e439fc08ef18af
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: dd1d1af8072ac11e37bd2eb1a47d76b12685cb31
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803910"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724784"
 ---
 # <a name="ihostsecuritymanagerimpersonateloggedonuser-method"></a>Метод IHostSecurityManager::ImpersonateLoggedOnUser
+
 Запрашивает выполнение кода с использованием учетных данных удостоверения текущего пользователя.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,35 +35,38 @@ HRESULT ImpersonateLoggedOnUser (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hToken`  
  окне Маркер, представляющий учетные данные пользователя, для которого необходимо выполнить олицетворение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`ImpersonateLoggedOnUser`успешно возвращено.|  
+|S_OK|`ImpersonateLoggedOnUser` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Комментарии  
+
  Вызов `LogonUser` или связанная функция Win32 для получения маркера учетных данных удостоверения текущего пользователя.  
   
  `HANDLE`Тип не совместим с COM, то есть его размер зависит от операционной системы и требует настраиваемого маршалирования. Таким же маркер предназначен только для использования внутри процесса между средой CLR и узлом.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

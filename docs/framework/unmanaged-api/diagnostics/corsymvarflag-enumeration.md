@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
 topic_type:
 - apiref
-ms.openlocfilehash: d41e048b67d4bc7159f6dd5266457651f1658290
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ed08d9f818f6fc180dbd655243488bf8a527ae11
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420595"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725291"
 ---
 # <a name="corsymvarflag-enumeration"></a>Перечисление CorSymVarFlag
+
 Указывает, создается ли переменная компилятором.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,15 +34,16 @@ typedef enum CorSymVarFlag
 } CorSymVarFlag;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
 |`VAR_IS_COMP_GEN`|Указывает, что заданная переменная создается компилятором.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)

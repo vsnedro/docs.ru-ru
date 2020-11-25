@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6734321c-c8a9-401f-a558-cad715ec4a77
 topic_type:
 - apiref
-ms.openlocfilehash: 07996a78d7f559de587c8a3eb2babfc06675169d
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: e89b425afb63de8ef496fe545873ce33e5ff828c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212650"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724017"
 ---
 # <a name="icordebugmanagedcallbackunloadassembly-method"></a>Метод ICorDebugManagedCallback::UnloadAssembly
+
 Уведомляет отладчик о том, что сборка среды CLR была выгружена.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT UnloadAssembly (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, содержащий сборку.  
   
  `pAssembly`  
  окне Указатель на объект ICorDebugAssembly, представляющий сборку.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Сборка не должна использоваться после этого обратного вызова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,7 +57,7 @@ HRESULT UnloadAssembly (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод LoadAssembly](icordebugmanagedcallback-loadassembly-method.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

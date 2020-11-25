@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 66a59b18-ce9a-41f4-b23b-4dd6753d6d36
 topic_type:
 - apiref
-ms.openlocfilehash: a7b71170f58ddfe0295da28b8c9fc73286b074e6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 6efd451c6895e8fef443e2e86afa6e98279c6493
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212273"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724004"
 ---
 # <a name="icordebugmanagedcallbackunloadclass-method"></a>Метод ICorDebugManagedCallback::UnloadClass
+
 Уведомляет отладчик о выгрузке класса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT UnloadClass (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, содержащий класс.  
   
  `c`  
  окне Указатель на объект ICorDebugClass, представляющий класс.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  После этого вызова не следует ссылаться на класс.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,7 +57,7 @@ HRESULT UnloadClass (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод LoadClass](icordebugmanagedcallback-loadclass-method.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

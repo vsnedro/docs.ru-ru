@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 2cee9108-a58d-48a8-b7d4-6beb6da3f4bb
 topic_type:
 - apiref
-ms.openlocfilehash: 62f9c6d70b789b52dcfe667b581552bb190a0a1d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 931cb06102227c9be75d3b44ba5bd336dbd0b9bb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129749"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724617"
 ---
 # <a name="icordebugobjectvaluesetfrommanagedcopy-method"></a>Метод ICorDebugObjectValue::SetFromManagedCopy
-`SetFromManagedCopy` устарел. Не вызывайте этот метод.  
+
+`SetFromManagedCopy` устарел. Этот метод не следует вызывать.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,6 +35,7 @@ HRESULT SetFromManagedCopy (
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

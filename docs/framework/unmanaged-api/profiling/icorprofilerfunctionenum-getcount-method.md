@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62ec65e3-3e9d-400b-ae61-d24b8963995b
 topic_type:
 - apiref
-ms.openlocfilehash: 137b1da853535985b2fd383d52f0bcfc48f728ed
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3ccf75523eb9362b8ef5c38d224a419502cb8b92
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503098"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724150"
 ---
 # <a name="icorprofilerfunctionenumgetcount-method"></a>Метод ICorProfilerFunctionEnum::GetCount
+
 Возвращает количество функций, загруженных приложением или принудительно загруженных профилировщиком.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,10 +33,12 @@ HRESULT GetCount([out] ULONG * pcelt);
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  заполняет Число загруженных функций.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -44,7 +47,7 @@ HRESULT GetCount([out] ULONG * pcelt);
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b3390319-6366-418c-ba80-b552ac4dfc1e
 topic_type:
 - apiref
-ms.openlocfilehash: 28b54026c8743f31a420e164944f60709e2e271b
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: ad220289b45078130a0a41e67373fd3384ae9682
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894371"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724420"
 ---
 # <a name="icordebugchaingetthread-method"></a>Метод ICorDebugChain::GetThread
+
 Возвращает физический поток, частью которого является эта цепочка вызовов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetThread (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppThread`  
  заполняет Указатель на объект ICorDebugThread, представляющий физический поток, частью которого является эта цепочка вызовов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e27a83b5-2698-4996-9032-1e0fed8b91ca
 topic_type:
 - apiref
-ms.openlocfilehash: e474cac6437413565a1ebddfa88c3e228fe59d41
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e676547d20dc9535241150d24b65e1fbaf9e89ab
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556353"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725109"
 ---
 # <a name="coropenflags-enumeration"></a>Перечисление CorOpenFlags
+
 Содержит значения флага, которые управляют поведением метаданных при открытии файлов манифеста.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -46,9 +47,9 @@ typedef enum CorOpenFlags
 } CorOpenFlags;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`ofRead`|Указывает, что файл следует открывать только для чтения.|  
 |`ofWrite`|Указывает, что файл следует открывать для записи.<br /><br /> При использовании флага `ofWrite` во время открытия файла .WINMD также следует передавать флаг `ofNoTransform`.|  
@@ -65,12 +66,13 @@ typedef enum CorOpenFlags
 |`ofReserved`|Зарезервировано для внутреннего использования.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

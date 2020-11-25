@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
 topic_type:
 - apiref
-ms.openlocfilehash: c0b6d53ce3be3aed6a577bf6e38a281928499848
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 585a9e39f529294841cd11389f03d763968a0f5e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009032"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723822"
 ---
 # <a name="imetadataassemblyimportgetmanifestresourceprops-method"></a>Метод IMetaDataAssemblyImport::GetManifestResourceProps
+
 Возвращает набор свойств ресурса манифеста с указанной сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,8 +41,9 @@ HRESULT GetManifestResourceProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `mdmr`  
- окне `mdManifestResource`Токен, представляющий ресурс, для которого необходимо получить свойства.  
+ окне `mdManifestResource` Токен, представляющий ресурс, для которого необходимо получить свойства.  
   
  `szName`  
  заполняет Имя ресурса.  
@@ -62,14 +64,15 @@ HRESULT GetManifestResourceProps (
  заполняет Указатель на флаги, описывающие метаданные, применяемые к ресурсу. Значение Flags является сочетанием одного или нескольких значений [корманифестресаурцефлагс](cormanifestresourceflags-enumeration.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

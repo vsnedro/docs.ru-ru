@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 748f1ab2-fbcb-4f55-89ec-8d23d81ebc80
 topic_type:
 - apiref
-ms.openlocfilehash: 038e2ec20e5fd01edf9835080e0f7a15ec862fd9
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 2fb7f11677870f7d53439f1867f167fabe70b22a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008941"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723861"
 ---
 # <a name="corvalidatormoduletype-enumeration"></a>Перечисление CorValidatorModuleType
+
 Указывает тип модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,7 +40,7 @@ typedef enum
 } CorValidatorModuleType;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -52,14 +53,15 @@ typedef enum
 |`ValidatorModuleTypeMax`|Максимальное значение `CorValidatorModuleType` перечисления.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

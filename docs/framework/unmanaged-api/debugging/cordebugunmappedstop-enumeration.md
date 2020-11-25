@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a684f7d7-d0c2-4690-b721-639e613f11f8
 topic_type:
 - apiref
-ms.openlocfilehash: 772f1f0dee260ad3752b2f89e5fbe0d6bc27b87b
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: e251bf67adcaf2bbd6565eda068d487eb0d70efd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795655"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725780"
 ---
 # <a name="cordebugunmappedstop-enumeration"></a>Перечисление CorDebugUnmappedStop
+
 Указывает тип несопоставимого кода, который может привести к прерыванию выполнения кода пошаговым средством.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,9 +39,9 @@ typedef enum CorDebugUnmappedStop {
 } CorDebugUnmappedStop;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`STOP_NONE`|Не останавливайте в любом типе несопоставленного кода.|  
 |`STOP_PROLOG`|Останавливает в коде пролога.|  
@@ -50,10 +51,12 @@ typedef enum CorDebugUnmappedStop {
 |`STOP_UNMANAGED`|Останавливает в неуправляемом коде. Это значение допустимо только при отладке взаимодействия.|  
 |`STOP_ALL`|Останавливаются во всех типах несопоставленного кода.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Используйте метод [ICorDebugStepper:: сетунмаппедстопмаск](icordebugstepper-setunmappedstopmask-method.md) , чтобы задать флаги, указывающие Несопоставленный код, в котором будет останавливаться средство Организации.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4c02ec37-cdf0-46b2-890e-235092741236
 topic_type:
 - apiref
-ms.openlocfilehash: a3018d8477d5abd7d03ad8675503624d2e44e8f4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ca3c7fe813f22d3beab3087414100b3d8e5814ac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504138"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725603"
 ---
 # <a name="iclroneventmanagerunregisteractiononevent-method"></a>Метод ICLROnEventManager::UnregisterActionOnEvent
+
 Отменяет регистрацию ранее зарегистрированного указателя обратного вызова для указанного события.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT UnregisterActionOnEvent (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `event`  
  окне Одно из значений [еклревент](eclrevent-enumeration.md) , указывающее событие, для которого отменяется регистрация указателя обратного вызова, описанного в `pAction` .  
   
@@ -43,9 +45,9 @@ HRESULT UnregisterActionOnEvent (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`UnregisterActionOnEvent`успешно возвращено.|  
+|S_OK|`UnregisterActionOnEvent` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -53,15 +55,16 @@ HRESULT UnregisterActionOnEvent (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EClrEvent](eclrevent-enumeration.md)
 - [Интерфейс IActionOnCLREvent](iactiononclrevent-interface.md)

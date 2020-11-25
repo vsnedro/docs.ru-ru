@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: dc437751-7093-44e2-bfdc-191d9ce3c192
 topic_type:
 - apiref
-ms.openlocfilehash: bd1e86b83c43af20604416f158ab9e74f399821b
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 90688132b98f8316a4b08988c08b2f7cc7ce0fd8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894971"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725057"
 ---
 # <a name="icordebugarrayvalue-interface"></a>Интерфейс ICorDebugArrayValue
 
@@ -38,13 +38,15 @@ ms.locfileid: "82894971"
 |[Метод GetRank](icordebugarrayvalue-getrank-method.md)|Получает число измерений в массиве.|  
 |[Метод HasBaseIndicies](icordebugarrayvalue-hasbaseindicies-method.md)|Определяет, имеет ли массив базовые индексы.|  
   
-## <a name="remarks"></a>Remarks  
- `ICorDebugArrayValue`поддерживает одномерный и многомерный массивы.  
+## <a name="remarks"></a>Комментарии  
+
+ `ICorDebugArrayValue` поддерживает одномерный и многомерный массивы.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

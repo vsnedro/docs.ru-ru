@@ -15,12 +15,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: e460264e2393858c028ba51aec4a4f2c01649994
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: a65fa9974165fa36e59a7fb83dca6dd902f7d8dc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860824"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724399"
 ---
 # <a name="dacpgetmoduleaddress-structure"></a>Структура DacpGetModuleAddress
 
@@ -39,7 +39,7 @@ struct DacpGetModuleAddress
 
 ## <a name="members"></a>Члены
 
-| Участник      | Описание                |
+| Член      | Описание                |
 | ----------- | -------------------------- |
 | `ModulePtr` | Указатель на модуль. |
 
@@ -49,11 +49,12 @@ struct DacpGetModuleAddress
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [Запрос](dacpgetmoduleaddress-request-method.md) | Выполняет запрос на заполнение структуры из заданной структуры среды выполнения. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше, где `CLRDATA_ADDRESS` — это 64-разрядное целое число без знака.
 
 ## <a name="requirements"></a>Требования
+
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  

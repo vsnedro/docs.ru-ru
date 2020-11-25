@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type:
 - apiref
-ms.openlocfilehash: 17c91200730431c4c6e230b8c1561ce7c4863868
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6d783e27c60db7381025f3b2382728e3996323ae
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008187"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725733"
 ---
 # <a name="imetadataassemblyemitdefineassembly-method"></a>Метод IMetaDataAssemblyEmit::DefineAssembly
+
 Создает `Assembly` структуру, содержащую метаданные для указанной сборки, и возвращает связанный маркер метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT DefineAssembly (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbPublicKey`  
  окне Открытый ключ, определяющий издателя сборки, или значение NULL, если сборка не имеет строгого имени.  
   
@@ -61,18 +63,20 @@ HRESULT DefineAssembly (
  `pmda`  
  заполняет Указатель на маркер метаданных.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `Assembly`В манифесте может быть определена только одна структура метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

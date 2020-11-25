@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a453f75a-c37b-4013-8f0e-35771fa5d792
 topic_type:
 - apiref
-ms.openlocfilehash: 82162a461fa1dd05e543deb0e23339abb65ce00a
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 8a685da03073a80a0ea931b92f6bee906e026377
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860684"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725278"
 ---
 # <a name="iclrdataenummemoryregions-interface"></a>Интерфейс ICLRDataEnumMemoryRegions
+
 Предоставляет метод, выполняющий перечисление областей памяти, заданной вызовами.  
   
 ## <a name="methods"></a>Методы  
@@ -31,6 +32,7 @@ ms.locfileid: "82860684"
 |[Метод EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md)|Перечисляет указанные области памяти.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Клрдата. idl, Клрдата. h  

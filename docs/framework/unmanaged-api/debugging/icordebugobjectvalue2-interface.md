@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f93cc2ec-0a12-4499-9bf6-405dc58c9a81
 topic_type:
 - apiref
-ms.openlocfilehash: a338116f6eae670cad785807ed580039fbd7fb78
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a166648252215e49b206aae1c3ab1e08985fde2d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207410"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724641"
 ---
 # <a name="icordebugobjectvalue2-interface"></a>Интерфейс ICorDebugObjectValue2
 
@@ -29,14 +29,15 @@ ms.locfileid: "83207410"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetVirtualMethodAndType](icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType`еще не реализовано.|  
+|[Метод GetVirtualMethodAndType](icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType` еще не реализовано.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -45,6 +46,6 @@ ms.locfileid: "83207410"
   
  **Версии .NET Framework:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

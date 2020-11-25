@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b132ef1-8d4b-4525-89b3-54123596c194
 topic_type:
 - apiref
-ms.openlocfilehash: 2bdbf373144e2fb49074cfd035e7b0ffe3c8c291
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 3be689e5c1474bcbfbca72a14a298762dc2e7a90
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212895"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724550"
 ---
 # <a name="icordebugprocessgetthreadcontext-method"></a>Метод ICorDebugProcess::GetThreadContext
+
 Возвращает контекст для данного потока в этом процессе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetThreadContext(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `threadID`  
  окне Идентификатор потока, для которого извлекается контекст.  
   
@@ -47,12 +49,14 @@ HRESULT GetThreadContext(
   
  Контекст указывает архитектуру процессора, на котором работает поток.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладчик должен вызывать этот метод вместо `GetThreadContext` метода Win32, так как поток может находиться в состоянии "перехвачено", в котором его контекст временно изменен. Этот метод следует использовать только в том случае, если поток находится в машинном коде. Используйте [ICorDebugRegisterSet](icordebugregisterset-interface.md) для потоков в управляемом коде.  
   
  Возвращаемые данные — это структура контекста для текущей платформы. Как и в случае с `GetThreadContext` методом Win32, вызывающий объект должен инициализировать `context` параметр перед вызовом этого метода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
