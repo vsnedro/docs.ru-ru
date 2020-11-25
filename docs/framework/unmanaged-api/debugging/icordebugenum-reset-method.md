@@ -15,31 +15,33 @@ helpviewer_keywords:
 ms.assetid: ab03dcb8-ceed-4f7a-abf8-9d31604bf90c
 topic_type:
 - apiref
-ms.openlocfilehash: c5870341b2e0fca632ccead3d09852ce289188b5
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 39c6371791e90e97cca9357c825f13fe45e6c211
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976328"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705895"
 ---
-# <a name="icordebugenumreset-method"></a><span data-ttu-id="a4b60-102">Метод ICorDebugEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="a4b60-102">ICorDebugEnum::Reset Method</span></span>
-<span data-ttu-id="a4b60-103">Перемещает курсор в начало перечисления.</span><span class="sxs-lookup"><span data-stu-id="a4b60-103">Moves the cursor to the beginning of the enumeration.</span></span>  
+# <a name="icordebugenumreset-method"></a><span data-ttu-id="2d031-102">Метод ICorDebugEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="2d031-102">ICorDebugEnum::Reset Method</span></span>
+
+<span data-ttu-id="2d031-103">Перемещает курсор в начало перечисления.</span><span class="sxs-lookup"><span data-stu-id="2d031-103">Moves the cursor to the beginning of the enumeration.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="a4b60-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="a4b60-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="2d031-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="2d031-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT Reset ();  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="a4b60-105">Требования</span><span class="sxs-lookup"><span data-stu-id="a4b60-105">Requirements</span></span>  
- <span data-ttu-id="a4b60-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a4b60-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="a4b60-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="a4b60-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
-  
- <span data-ttu-id="a4b60-108">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="a4b60-108">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="a4b60-109">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="a4b60-109">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="a4b60-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="a4b60-110">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="2d031-105">Требования</span><span class="sxs-lookup"><span data-stu-id="2d031-105">Requirements</span></span>  
 
-- [<span data-ttu-id="a4b60-111">Интерфейс ICorDebugEnum</span><span class="sxs-lookup"><span data-stu-id="a4b60-111">ICorDebugEnum Interface</span></span>](icordebugenum-interface1.md)
+ <span data-ttu-id="2d031-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="2d031-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="2d031-107">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="2d031-107">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+  
+ <span data-ttu-id="2d031-108">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="2d031-108">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="2d031-109">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="2d031-109">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="2d031-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="2d031-110">See also</span></span>
+
+- [<span data-ttu-id="2d031-111">Интерфейс ICorDebugEnum</span><span class="sxs-lookup"><span data-stu-id="2d031-111">ICorDebugEnum Interface</span></span>](icordebugenum-interface1.md)

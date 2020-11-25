@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 6b1fcd11-c7fb-4be2-8910-abc862d4caf4
 topic_type:
 - apiref
-ms.openlocfilehash: 649a9159f99afa64615c40c23a98a80318ae0d7f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: e9c9674bfe0e5a8006a4881e103b633ee8f2af1d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009175"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706060"
 ---
-# <a name="corserializationtype-enumeration"></a><span data-ttu-id="91733-102">Перечисление CorSerializationType</span><span class="sxs-lookup"><span data-stu-id="91733-102">CorSerializationType Enumeration</span></span>
-<span data-ttu-id="91733-103">Указывает способ сериализации объекта средой CLR.</span><span class="sxs-lookup"><span data-stu-id="91733-103">Specifies how an object is serialized by the common language runtime.</span></span>  
+# <a name="corserializationtype-enumeration"></a><span data-ttu-id="3db50-102">Перечисление CorSerializationType</span><span class="sxs-lookup"><span data-stu-id="3db50-102">CorSerializationType Enumeration</span></span>
+
+<span data-ttu-id="3db50-103">Указывает способ сериализации объекта средой CLR.</span><span class="sxs-lookup"><span data-stu-id="3db50-103">Specifies how an object is serialized by the common language runtime.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="91733-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="91733-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3db50-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3db50-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorSerializationType {  
@@ -53,38 +54,39 @@ typedef enum CorSerializationType {
 } CorSerializationType;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="91733-105">Участники</span><span class="sxs-lookup"><span data-stu-id="91733-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="3db50-105">Члены</span><span class="sxs-lookup"><span data-stu-id="3db50-105">Members</span></span>  
   
-|<span data-ttu-id="91733-106">Член</span><span class="sxs-lookup"><span data-stu-id="91733-106">Member</span></span>|<span data-ttu-id="91733-107">Описание</span><span class="sxs-lookup"><span data-stu-id="91733-107">Description</span></span>|  
+|<span data-ttu-id="3db50-106">Член</span><span class="sxs-lookup"><span data-stu-id="3db50-106">Member</span></span>|<span data-ttu-id="3db50-107">Описание</span><span class="sxs-lookup"><span data-stu-id="3db50-107">Description</span></span>|  
 |------------|-----------------|  
-|`SERIALIZATION_TYPE_UNDEFINED`|<span data-ttu-id="91733-108">Сериализация объекта не определена.</span><span class="sxs-lookup"><span data-stu-id="91733-108">Serialization of the object is undefined.</span></span>|  
-|`SERIALIZATION_TYPE_BOOLEAN`|<span data-ttu-id="91733-109">Объект сериализуется как логический тип</span><span class="sxs-lookup"><span data-stu-id="91733-109">Object is serialized as a Boolean type</span></span>|  
-|`SERIALIZATION_TYPE_CHAR`|<span data-ttu-id="91733-110">Объект сериализуется как символьный тип.</span><span class="sxs-lookup"><span data-stu-id="91733-110">Object is serialized as a character type.</span></span>|  
-|`SERIALIZATION_TYPE_I1`|<span data-ttu-id="91733-111">Объект сериализуется как целое число со знаком длиной 1 байт.</span><span class="sxs-lookup"><span data-stu-id="91733-111">Object is serialized as a signed 1-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_U1`|<span data-ttu-id="91733-112">Объект сериализуется как 1-байтовое целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="91733-112">Object is serialized as an unsigned 1-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_I2`|<span data-ttu-id="91733-113">Объект сериализуется как 2-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="91733-113">Object is serialized as a signed 2-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_U2`|<span data-ttu-id="91733-114">Объект сериализуется как целое число без знака (2 байта).</span><span class="sxs-lookup"><span data-stu-id="91733-114">Object is serialized as an unsigned 2-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_I4`|<span data-ttu-id="91733-115">Объект сериализуется как 4-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="91733-115">Object is serialized as a signed 4-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_U4`|<span data-ttu-id="91733-116">Объект сериализуется как 4-байтовое целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="91733-116">Object is serialized as an unsigned 4-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_I8`|<span data-ttu-id="91733-117">Объект сериализуется как 8-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="91733-117">Object is serialized as a signed 8-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_U8`|<span data-ttu-id="91733-118">Объект сериализуется как 8-байтное целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="91733-118">Object is serialized as an unsigned 8-byte integer.</span></span>|  
-|`SERIALIZATION_TYPE_R4`|<span data-ttu-id="91733-119">Объект сериализуется как 4-байтовое значение с плавающей запятой.</span><span class="sxs-lookup"><span data-stu-id="91733-119">Object is serialized as a 4-byte floating point.</span></span>|  
-|`SERIALIZATION_TYPE_R8`|<span data-ttu-id="91733-120">Объект сериализуется как 8-байтовое число с плавающей запятой.</span><span class="sxs-lookup"><span data-stu-id="91733-120">Object is serialized as an 8-byte floating point.</span></span>|  
-|`SERIALIZATION_TYPE_STRING`|<span data-ttu-id="91733-121">Объект сериализуется как тип System. String.</span><span class="sxs-lookup"><span data-stu-id="91733-121">Object is serialized as a System.String type.</span></span>|  
-|`SERIALIZATION_TYPE_SZARRAY`|<span data-ttu-id="91733-122">Объект сериализуется как одномерный массив с нулевой нижней границей.</span><span class="sxs-lookup"><span data-stu-id="91733-122">Object is serialized as a single-dimensional, zero lower-bound array.</span></span>|  
-|`SERIALIZATION_TYPE_TYPE`|<span data-ttu-id="91733-123">Объект сериализуется как универсальный тип.</span><span class="sxs-lookup"><span data-stu-id="91733-123">Object is serialized as a generic type.</span></span>|  
-|`SERIALIZATION_TYPE_TAGGED_OBJECT`|<span data-ttu-id="91733-124">Объект сериализуется как объект с тегами.</span><span class="sxs-lookup"><span data-stu-id="91733-124">Object is serialized as a tagged object.</span></span>|  
-|`SERIALIZATION_TYPE_FIELD`|<span data-ttu-id="91733-125">Объект сериализуется как поле.</span><span class="sxs-lookup"><span data-stu-id="91733-125">Object is serialized as a field.</span></span>|  
-|`SERIALIZATION_TYPE_PROPERTY`|<span data-ttu-id="91733-126">Объект сериализуется как свойство.</span><span class="sxs-lookup"><span data-stu-id="91733-126">Object is serialized as a property.</span></span>|  
-|`SERIALIZATION_TYPE_ENUM`|<span data-ttu-id="91733-127">Объект сериализуется как перечисление.</span><span class="sxs-lookup"><span data-stu-id="91733-127">Object is serialized as an enumeration.</span></span>|  
+|`SERIALIZATION_TYPE_UNDEFINED`|<span data-ttu-id="3db50-108">Сериализация объекта не определена.</span><span class="sxs-lookup"><span data-stu-id="3db50-108">Serialization of the object is undefined.</span></span>|  
+|`SERIALIZATION_TYPE_BOOLEAN`|<span data-ttu-id="3db50-109">Объект сериализуется как логический тип</span><span class="sxs-lookup"><span data-stu-id="3db50-109">Object is serialized as a Boolean type</span></span>|  
+|`SERIALIZATION_TYPE_CHAR`|<span data-ttu-id="3db50-110">Объект сериализуется как символьный тип.</span><span class="sxs-lookup"><span data-stu-id="3db50-110">Object is serialized as a character type.</span></span>|  
+|`SERIALIZATION_TYPE_I1`|<span data-ttu-id="3db50-111">Объект сериализуется как целое число со знаком длиной 1 байт.</span><span class="sxs-lookup"><span data-stu-id="3db50-111">Object is serialized as a signed 1-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_U1`|<span data-ttu-id="3db50-112">Объект сериализуется как 1-байтовое целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="3db50-112">Object is serialized as an unsigned 1-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_I2`|<span data-ttu-id="3db50-113">Объект сериализуется как 2-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="3db50-113">Object is serialized as a signed 2-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_U2`|<span data-ttu-id="3db50-114">Объект сериализуется как целое число без знака (2 байта).</span><span class="sxs-lookup"><span data-stu-id="3db50-114">Object is serialized as an unsigned 2-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_I4`|<span data-ttu-id="3db50-115">Объект сериализуется как 4-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="3db50-115">Object is serialized as a signed 4-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_U4`|<span data-ttu-id="3db50-116">Объект сериализуется как 4-байтовое целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="3db50-116">Object is serialized as an unsigned 4-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_I8`|<span data-ttu-id="3db50-117">Объект сериализуется как 8-байтовое целое число со знаком.</span><span class="sxs-lookup"><span data-stu-id="3db50-117">Object is serialized as a signed 8-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_U8`|<span data-ttu-id="3db50-118">Объект сериализуется как 8-байтное целое число без знака.</span><span class="sxs-lookup"><span data-stu-id="3db50-118">Object is serialized as an unsigned 8-byte integer.</span></span>|  
+|`SERIALIZATION_TYPE_R4`|<span data-ttu-id="3db50-119">Объект сериализуется как 4-байтовое значение с плавающей запятой.</span><span class="sxs-lookup"><span data-stu-id="3db50-119">Object is serialized as a 4-byte floating point.</span></span>|  
+|`SERIALIZATION_TYPE_R8`|<span data-ttu-id="3db50-120">Объект сериализуется как 8-байтовое число с плавающей запятой.</span><span class="sxs-lookup"><span data-stu-id="3db50-120">Object is serialized as an 8-byte floating point.</span></span>|  
+|`SERIALIZATION_TYPE_STRING`|<span data-ttu-id="3db50-121">Объект сериализуется как тип System. String.</span><span class="sxs-lookup"><span data-stu-id="3db50-121">Object is serialized as a System.String type.</span></span>|  
+|`SERIALIZATION_TYPE_SZARRAY`|<span data-ttu-id="3db50-122">Объект сериализуется как одномерный массив с нулевой нижней границей.</span><span class="sxs-lookup"><span data-stu-id="3db50-122">Object is serialized as a single-dimensional, zero lower-bound array.</span></span>|  
+|`SERIALIZATION_TYPE_TYPE`|<span data-ttu-id="3db50-123">Объект сериализуется как универсальный тип.</span><span class="sxs-lookup"><span data-stu-id="3db50-123">Object is serialized as a generic type.</span></span>|  
+|`SERIALIZATION_TYPE_TAGGED_OBJECT`|<span data-ttu-id="3db50-124">Объект сериализуется как объект с тегами.</span><span class="sxs-lookup"><span data-stu-id="3db50-124">Object is serialized as a tagged object.</span></span>|  
+|`SERIALIZATION_TYPE_FIELD`|<span data-ttu-id="3db50-125">Объект сериализуется как поле.</span><span class="sxs-lookup"><span data-stu-id="3db50-125">Object is serialized as a field.</span></span>|  
+|`SERIALIZATION_TYPE_PROPERTY`|<span data-ttu-id="3db50-126">Объект сериализуется как свойство.</span><span class="sxs-lookup"><span data-stu-id="3db50-126">Object is serialized as a property.</span></span>|  
+|`SERIALIZATION_TYPE_ENUM`|<span data-ttu-id="3db50-127">Объект сериализуется как перечисление.</span><span class="sxs-lookup"><span data-stu-id="3db50-127">Object is serialized as an enumeration.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="91733-128">Требования</span><span class="sxs-lookup"><span data-stu-id="91733-128">Requirements</span></span>  
- <span data-ttu-id="91733-129">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="91733-129">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="91733-130">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="91733-130">**Header:** CorHdr.h</span></span>  
-  
- <span data-ttu-id="91733-131">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="91733-131">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="91733-132">См. также статью</span><span class="sxs-lookup"><span data-stu-id="91733-132">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="3db50-128">Требования</span><span class="sxs-lookup"><span data-stu-id="3db50-128">Requirements</span></span>  
 
-- [<span data-ttu-id="91733-133">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="91733-133">Metadata Enumerations</span></span>](metadata-enumerations.md)
+ <span data-ttu-id="3db50-129">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3db50-129">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="3db50-130">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="3db50-130">**Header:** CorHdr.h</span></span>  
+  
+ <span data-ttu-id="3db50-131">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3db50-131">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="3db50-132">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="3db50-132">See also</span></span>
+
+- [<span data-ttu-id="3db50-133">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="3db50-133">Metadata Enumerations</span></span>](metadata-enumerations.md)

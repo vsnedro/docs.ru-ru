@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
 topic_type:
 - apiref
-ms.openlocfilehash: b6651f30e0df3a5ffc29d310b9067e76761dcf01
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: d76de80f87a8e5a63eac9f6a413f2efb0e394b0a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007537"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706129"
 ---
-# <a name="corpropertyattr-enumeration"></a><span data-ttu-id="45972-102">Перечисление CorPropertyAttr</span><span class="sxs-lookup"><span data-stu-id="45972-102">CorPropertyAttr Enumeration</span></span>
-<span data-ttu-id="45972-103">Содержит значения, описывающие метаданные свойства.</span><span class="sxs-lookup"><span data-stu-id="45972-103">Contains values that describe the metadata of a property.</span></span>  
+# <a name="corpropertyattr-enumeration"></a><span data-ttu-id="6b54a-102">Перечисление CorPropertyAttr</span><span class="sxs-lookup"><span data-stu-id="6b54a-102">CorPropertyAttr Enumeration</span></span>
+
+<span data-ttu-id="6b54a-103">Содержит значения, описывающие метаданные свойства.</span><span class="sxs-lookup"><span data-stu-id="6b54a-103">Contains values that describe the metadata of a property.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="45972-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="45972-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="6b54a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="6b54a-104">Syntax</span></span>  
   
 ```cpp  
 typedef enum CorPropertyAttr {  
@@ -38,23 +39,24 @@ typedef enum CorPropertyAttr {
 } CorPropertyAttr;  
 ```  
   
-## <a name="members"></a><span data-ttu-id="45972-105">Участники</span><span class="sxs-lookup"><span data-stu-id="45972-105">Members</span></span>  
+## <a name="members"></a><span data-ttu-id="6b54a-105">Члены</span><span class="sxs-lookup"><span data-stu-id="6b54a-105">Members</span></span>  
   
-|<span data-ttu-id="45972-106">Член</span><span class="sxs-lookup"><span data-stu-id="45972-106">Member</span></span>|<span data-ttu-id="45972-107">Описание</span><span class="sxs-lookup"><span data-stu-id="45972-107">Description</span></span>|  
+|<span data-ttu-id="6b54a-106">Член</span><span class="sxs-lookup"><span data-stu-id="6b54a-106">Member</span></span>|<span data-ttu-id="6b54a-107">Описание</span><span class="sxs-lookup"><span data-stu-id="6b54a-107">Description</span></span>|  
 |------------|-----------------|  
-|`prSpecialName`|<span data-ttu-id="45972-108">Указывает, что свойство является специальным, и что его имя описывает, как это делать.</span><span class="sxs-lookup"><span data-stu-id="45972-108">Specifies that the property is special, and that its name describes how.</span></span>|  
-|`prReservedMask`|<span data-ttu-id="45972-109">Зарезервировано для внутреннего использования средой CLR.</span><span class="sxs-lookup"><span data-stu-id="45972-109">Reserved for internal use by the common language runtime.</span></span>|  
-|`prRTSpecialName`|<span data-ttu-id="45972-110">Указывает, что внутренние API метаданных среды CLR должны проверять кодировку имени свойства.</span><span class="sxs-lookup"><span data-stu-id="45972-110">Specifies that the common language runtime metadata internal APIs should check the encoding of the property name.</span></span>|  
-|`prHasDefault`|<span data-ttu-id="45972-111">Указывает, что свойство имеет значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="45972-111">Specifies that the property has a default value.</span></span>|  
-|`prUnused`|<span data-ttu-id="45972-112">Не используется.</span><span class="sxs-lookup"><span data-stu-id="45972-112">Unused.</span></span>|  
+|`prSpecialName`|<span data-ttu-id="6b54a-108">Указывает, что свойство является специальным, и что его имя описывает, как это делать.</span><span class="sxs-lookup"><span data-stu-id="6b54a-108">Specifies that the property is special, and that its name describes how.</span></span>|  
+|`prReservedMask`|<span data-ttu-id="6b54a-109">Зарезервировано для внутреннего использования средой CLR.</span><span class="sxs-lookup"><span data-stu-id="6b54a-109">Reserved for internal use by the common language runtime.</span></span>|  
+|`prRTSpecialName`|<span data-ttu-id="6b54a-110">Указывает, что внутренние API метаданных среды CLR должны проверять кодировку имени свойства.</span><span class="sxs-lookup"><span data-stu-id="6b54a-110">Specifies that the common language runtime metadata internal APIs should check the encoding of the property name.</span></span>|  
+|`prHasDefault`|<span data-ttu-id="6b54a-111">Указывает, что свойство имеет значение по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="6b54a-111">Specifies that the property has a default value.</span></span>|  
+|`prUnused`|<span data-ttu-id="6b54a-112">Не используется.</span><span class="sxs-lookup"><span data-stu-id="6b54a-112">Unused.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="45972-113">Требования</span><span class="sxs-lookup"><span data-stu-id="45972-113">Requirements</span></span>  
- <span data-ttu-id="45972-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="45972-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="45972-115">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="45972-115">**Header:** CorHdr.h</span></span>  
-  
- <span data-ttu-id="45972-116">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="45972-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="45972-117">См. также статью</span><span class="sxs-lookup"><span data-stu-id="45972-117">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="6b54a-113">Требования</span><span class="sxs-lookup"><span data-stu-id="6b54a-113">Requirements</span></span>  
 
-- [<span data-ttu-id="45972-118">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="45972-118">Metadata Enumerations</span></span>](metadata-enumerations.md)
+ <span data-ttu-id="6b54a-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="6b54a-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="6b54a-115">**Заголовок:** Корхдр. h</span><span class="sxs-lookup"><span data-stu-id="6b54a-115">**Header:** CorHdr.h</span></span>  
+  
+ <span data-ttu-id="6b54a-116">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="6b54a-116">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="6b54a-117">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="6b54a-117">See also</span></span>
+
+- [<span data-ttu-id="6b54a-118">Перечисления метаданных</span><span class="sxs-lookup"><span data-stu-id="6b54a-118">Metadata Enumerations</span></span>](metadata-enumerations.md)
