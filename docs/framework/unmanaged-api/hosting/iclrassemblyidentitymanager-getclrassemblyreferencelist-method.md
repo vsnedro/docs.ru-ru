@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: cb5ffae5-287b-4a87-9ca8-7ce3ae0601b7
 topic_type:
 - apiref
-ms.openlocfilehash: 7f09cb2264b21fdfbc892069f2c2f0a963b131f8
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: cfc384a71ac7e91181bdec09f0d385bacbe31753
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615973"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95716672"
 ---
-# <a name="iclrassemblyidentitymanagergetclrassemblyreferencelist-method"></a><span data-ttu-id="c293d-102">Метод ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="c293d-102">ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList Method</span></span>
-<span data-ttu-id="c293d-103">Возвращает указатель интерфейса на экземпляр [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) из заданного списка частичных идентификаторов сборки.</span><span class="sxs-lookup"><span data-stu-id="c293d-103">Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) instance from the supplied list of partial assembly identities.</span></span>  
+# <a name="iclrassemblyidentitymanagergetclrassemblyreferencelist-method"></a><span data-ttu-id="46887-102">Метод ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="46887-102">ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList Method</span></span>
+
+<span data-ttu-id="46887-103">Возвращает указатель интерфейса на экземпляр [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) из заданного списка частичных идентификаторов сборки.</span><span class="sxs-lookup"><span data-stu-id="46887-103">Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) instance from the supplied list of partial assembly identities.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="c293d-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c293d-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="46887-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="46887-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT  GetCLRAssemblyReferenceList (  
@@ -35,37 +36,39 @@ HRESULT  GetCLRAssemblyReferenceList (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="c293d-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="c293d-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="46887-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="46887-105">Parameters</span></span>  
+
  `ppwzAssemblyReferences`  
- <span data-ttu-id="c293d-106">окне Массив строк с завершающим нулем в форме "имя, свойство = значение..." , задающих список частичных идентификаторов сборки.</span><span class="sxs-lookup"><span data-stu-id="c293d-106">[in] An array of null-terminated strings in the form "name, property=value..." that specify a list of partial assembly identities.</span></span>  
+ <span data-ttu-id="46887-106">окне Массив строк с завершающим нулем в форме "имя, свойство = значение..." , задающих список частичных идентификаторов сборки.</span><span class="sxs-lookup"><span data-stu-id="46887-106">[in] An array of null-terminated strings in the form "name, property=value..." that specify a list of partial assembly identities.</span></span>  
   
  `dwNumOfReferences`  
- <span data-ttu-id="c293d-107">окне Количество элементов в `ppwzAssemblyReferences` .</span><span class="sxs-lookup"><span data-stu-id="c293d-107">[in] The number of items in `ppwzAssemblyReferences`.</span></span>  
+ <span data-ttu-id="46887-107">окне Количество элементов в `ppwzAssemblyReferences` .</span><span class="sxs-lookup"><span data-stu-id="46887-107">[in] The number of items in `ppwzAssemblyReferences`.</span></span>  
   
  `ppReferenceList`  
- <span data-ttu-id="c293d-108">заполняет Указатель интерфейса на `ICLRAssemblyReferenceList` объект, содержащий данные удостоверения сборки для списка сборок, указанных в параметре `ppwzAssemblyReferences` .</span><span class="sxs-lookup"><span data-stu-id="c293d-108">[out] An interface pointer to an `ICLRAssemblyReferenceList` object that contains the assembly identity data for the list of assemblies specified in `ppwzAssemblyReferences`.</span></span>  
+ <span data-ttu-id="46887-108">заполняет Указатель интерфейса на `ICLRAssemblyReferenceList` объект, содержащий данные удостоверения сборки для списка сборок, указанных в параметре `ppwzAssemblyReferences` .</span><span class="sxs-lookup"><span data-stu-id="46887-108">[out] An interface pointer to an `ICLRAssemblyReferenceList` object that contains the assembly identity data for the list of assemblies specified in `ppwzAssemblyReferences`.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="c293d-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="c293d-109">Return Value</span></span>  
+## <a name="return-value"></a><span data-ttu-id="46887-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="46887-109">Return Value</span></span>  
   
-|<span data-ttu-id="c293d-110">HRESULT</span><span class="sxs-lookup"><span data-stu-id="c293d-110">HRESULT</span></span>|<span data-ttu-id="c293d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c293d-111">Description</span></span>|  
+|<span data-ttu-id="46887-110">HRESULT</span><span class="sxs-lookup"><span data-stu-id="46887-110">HRESULT</span></span>|<span data-ttu-id="46887-111">Описание:</span><span class="sxs-lookup"><span data-stu-id="46887-111">Description</span></span>|  
 |-------------|-----------------|  
-|<span data-ttu-id="c293d-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="c293d-112">S_OK</span></span>|<span data-ttu-id="c293d-113">Метод возвратился успешно.</span><span class="sxs-lookup"><span data-stu-id="c293d-113">The method returned successfully.</span></span>|  
-|<span data-ttu-id="c293d-114">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="c293d-114">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="c293d-115">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="c293d-115">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
-|<span data-ttu-id="c293d-116">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="c293d-116">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="c293d-117">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="c293d-117">The call timed out.</span></span>|  
-|<span data-ttu-id="c293d-118">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="c293d-118">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="c293d-119">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="c293d-119">The caller does not own the lock.</span></span>|  
-|<span data-ttu-id="c293d-120">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="c293d-120">HOST_E_ABANDONED</span></span>|<span data-ttu-id="c293d-121">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="c293d-121">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
-|<span data-ttu-id="c293d-122">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="c293d-122">E_FAIL</span></span>|<span data-ttu-id="c293d-123">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="c293d-123">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="c293d-124">Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="c293d-124">If a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="c293d-125">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="c293d-125">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
+|<span data-ttu-id="46887-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="46887-112">S_OK</span></span>|<span data-ttu-id="46887-113">Метод возвратился успешно.</span><span class="sxs-lookup"><span data-stu-id="46887-113">The method returned successfully.</span></span>|  
+|<span data-ttu-id="46887-114">HOST_E_CLRNOTAVAILABLE</span><span class="sxs-lookup"><span data-stu-id="46887-114">HOST_E_CLRNOTAVAILABLE</span></span>|<span data-ttu-id="46887-115">Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.</span><span class="sxs-lookup"><span data-stu-id="46887-115">The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.</span></span>|  
+|<span data-ttu-id="46887-116">HOST_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="46887-116">HOST_E_TIMEOUT</span></span>|<span data-ttu-id="46887-117">Время ожидания вызова истекло.</span><span class="sxs-lookup"><span data-stu-id="46887-117">The call timed out.</span></span>|  
+|<span data-ttu-id="46887-118">HOST_E_NOT_OWNER</span><span class="sxs-lookup"><span data-stu-id="46887-118">HOST_E_NOT_OWNER</span></span>|<span data-ttu-id="46887-119">Вызывающий объект не владеет блокировкой.</span><span class="sxs-lookup"><span data-stu-id="46887-119">The caller does not own the lock.</span></span>|  
+|<span data-ttu-id="46887-120">HOST_E_ABANDONED</span><span class="sxs-lookup"><span data-stu-id="46887-120">HOST_E_ABANDONED</span></span>|<span data-ttu-id="46887-121">Событие было отменено, пока заблокированный поток или волокно ожидают его.</span><span class="sxs-lookup"><span data-stu-id="46887-121">An event was canceled while a blocked thread or fiber was waiting on it.</span></span>|  
+|<span data-ttu-id="46887-122">E_FAIL</span><span class="sxs-lookup"><span data-stu-id="46887-122">E_FAIL</span></span>|<span data-ttu-id="46887-123">Произошла неизвестная фатальная ошибка.</span><span class="sxs-lookup"><span data-stu-id="46887-123">An unknown catastrophic failure occurred.</span></span> <span data-ttu-id="46887-124">Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе.</span><span class="sxs-lookup"><span data-stu-id="46887-124">If a method returns E_FAIL, the CLR is no longer usable within the process.</span></span> <span data-ttu-id="46887-125">Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.</span><span class="sxs-lookup"><span data-stu-id="46887-125">Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.</span></span>|  
   
-## <a name="requirements"></a><span data-ttu-id="c293d-126">Требования</span><span class="sxs-lookup"><span data-stu-id="c293d-126">Requirements</span></span>  
- <span data-ttu-id="c293d-127">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c293d-127">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="c293d-128">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="c293d-128">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="c293d-129">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="c293d-129">**Library:** Included as a resource in MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="c293d-130">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c293d-130">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="c293d-131">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="c293d-131">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="46887-126">Требования</span><span class="sxs-lookup"><span data-stu-id="46887-126">Requirements</span></span>  
 
-- [<span data-ttu-id="c293d-132">Интерфейс ICLRAssemblyIdentityManager</span><span class="sxs-lookup"><span data-stu-id="c293d-132">ICLRAssemblyIdentityManager Interface</span></span>](iclrassemblyidentitymanager-interface.md)
-- [<span data-ttu-id="c293d-133">Интерфейс ICLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="c293d-133">ICLRAssemblyReferenceList Interface</span></span>](iclrassemblyreferencelist-interface.md)
+ <span data-ttu-id="46887-127">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="46887-127">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="46887-128">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="46887-128">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="46887-129">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="46887-129">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="46887-130">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="46887-130">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="46887-131">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="46887-131">See also</span></span>
+
+- [<span data-ttu-id="46887-132">Интерфейс ICLRAssemblyIdentityManager</span><span class="sxs-lookup"><span data-stu-id="46887-132">ICLRAssemblyIdentityManager Interface</span></span>](iclrassemblyidentitymanager-interface.md)
+- [<span data-ttu-id="46887-133">Интерфейс ICLRAssemblyReferenceList</span><span class="sxs-lookup"><span data-stu-id="46887-133">ICLRAssemblyReferenceList Interface</span></span>](iclrassemblyreferencelist-interface.md)

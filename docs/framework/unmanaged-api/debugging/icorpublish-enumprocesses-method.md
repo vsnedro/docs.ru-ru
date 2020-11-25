@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
 topic_type:
 - apiref
-ms.openlocfilehash: 70255a89cee13abfe63b01351f8ffba51e54665a
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 297f672097dd6561a971608f368369c623532907
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396401"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95716919"
 ---
-# <a name="icorpublishenumprocesses-method"></a><span data-ttu-id="e729a-102">Метод ICorPublish::EnumProcesses</span><span class="sxs-lookup"><span data-stu-id="e729a-102">ICorPublish::EnumProcesses Method</span></span>
-<span data-ttu-id="e729a-103">Возвращает перечислитель для управляемых процессов, выполняющихся на этом компьютере.</span><span class="sxs-lookup"><span data-stu-id="e729a-103">Gets an enumerator for the managed processes running on this computer.</span></span>  
+# <a name="icorpublishenumprocesses-method"></a><span data-ttu-id="c6b5b-102">Метод ICorPublish::EnumProcesses</span><span class="sxs-lookup"><span data-stu-id="c6b5b-102">ICorPublish::EnumProcesses Method</span></span>
+
+<span data-ttu-id="c6b5b-103">Возвращает перечислитель для управляемых процессов, выполняющихся на этом компьютере.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-103">Gets an enumerator for the managed processes running on this computer.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e729a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e729a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="c6b5b-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="c6b5b-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT EnumProcesses (  
@@ -34,27 +35,30 @@ HRESULT EnumProcesses (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="e729a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="e729a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="c6b5b-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="c6b5b-105">Parameters</span></span>  
+
  `Type`  
- <span data-ttu-id="e729a-106">Значение перечисления [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) , указывающее тип получаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="e729a-106">A value of the [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved.</span></span> <span data-ttu-id="e729a-107">В текущей версии допускается только COR_PUB_MANAGEDONLY.</span><span class="sxs-lookup"><span data-stu-id="e729a-107">In the current version, only COR_PUB_MANAGEDONLY is valid.</span></span>  
+ <span data-ttu-id="c6b5b-106">Значение перечисления [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) , указывающее тип получаемого процесса.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-106">A value of the [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved.</span></span> <span data-ttu-id="c6b5b-107">В текущей версии допускается только COR_PUB_MANAGEDONLY.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-107">In the current version, only COR_PUB_MANAGEDONLY is valid.</span></span>  
   
  `ppIEnum`  
- <span data-ttu-id="e729a-108">Указатель на адрес экземпляра [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) , который является перечислителем процессов.</span><span class="sxs-lookup"><span data-stu-id="e729a-108">A pointer to the address of an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that is the enumerator of the processes.</span></span>  
+ <span data-ttu-id="c6b5b-108">Указатель на адрес экземпляра [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) , который является перечислителем процессов.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-108">A pointer to the address of an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that is the enumerator of the processes.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="e729a-109">Remarks</span><span class="sxs-lookup"><span data-stu-id="e729a-109">Remarks</span></span>  
- <span data-ttu-id="e729a-110">Коллекция процессов перечислителя основана на моментальном снимке процессов, выполняемых при `EnumProcesses` вызове метода.</span><span class="sxs-lookup"><span data-stu-id="e729a-110">The enumerator's collection of processes is based on a snapshot of the processes that are running when the `EnumProcesses` method is called.</span></span> <span data-ttu-id="e729a-111">Перечислитель не будет включать процессы, которые завершаются до или запуска после `EnumProcesses` вызова.</span><span class="sxs-lookup"><span data-stu-id="e729a-111">The enumerator will not include any processes that terminate before or start after `EnumProcesses` is called.</span></span>  
-  
- <span data-ttu-id="e729a-112">`EnumProcesses`Метод может быть вызван более одного раза в этом экземпляре [ICorPublish](icorpublish-interface.md) для создания новой актуальной коллекции процессов.</span><span class="sxs-lookup"><span data-stu-id="e729a-112">The `EnumProcesses` method may be called more than once on this [ICorPublish](icorpublish-interface.md) instance to create a new up-to-date collection of processes.</span></span> <span data-ttu-id="e729a-113">Последующие вызовы метода не будут затронуты существующими коллекциями `EnumProcesses` .</span><span class="sxs-lookup"><span data-stu-id="e729a-113">Existing collections will not be affected by subsequent calls of the `EnumProcesses` method.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="e729a-114">Требования</span><span class="sxs-lookup"><span data-stu-id="e729a-114">Requirements</span></span>  
- <span data-ttu-id="e729a-115">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e729a-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="e729a-116">**Заголовок:** Корпуб. idl, Корпуб. h</span><span class="sxs-lookup"><span data-stu-id="e729a-116">**Header:** CorPub.idl, CorPub.h</span></span>  
-  
- <span data-ttu-id="e729a-117">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e729a-117">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="e729a-118">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e729a-118">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="e729a-119">См. также статью</span><span class="sxs-lookup"><span data-stu-id="e729a-119">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="c6b5b-109">Комментарии</span><span class="sxs-lookup"><span data-stu-id="c6b5b-109">Remarks</span></span>  
 
-- [<span data-ttu-id="e729a-120">Интерфейс ICorPublish</span><span class="sxs-lookup"><span data-stu-id="e729a-120">ICorPublish Interface</span></span>](icorpublish-interface.md)
+ <span data-ttu-id="c6b5b-110">Коллекция процессов перечислителя основана на моментальном снимке процессов, выполняемых при `EnumProcesses` вызове метода.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-110">The enumerator's collection of processes is based on a snapshot of the processes that are running when the `EnumProcesses` method is called.</span></span> <span data-ttu-id="c6b5b-111">Перечислитель не будет включать процессы, которые завершаются до или запуска после `EnumProcesses` вызова.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-111">The enumerator will not include any processes that terminate before or start after `EnumProcesses` is called.</span></span>  
+  
+ <span data-ttu-id="c6b5b-112">`EnumProcesses`Метод может быть вызван более одного раза в этом экземпляре [ICorPublish](icorpublish-interface.md) для создания новой актуальной коллекции процессов.</span><span class="sxs-lookup"><span data-stu-id="c6b5b-112">The `EnumProcesses` method may be called more than once on this [ICorPublish](icorpublish-interface.md) instance to create a new up-to-date collection of processes.</span></span> <span data-ttu-id="c6b5b-113">Последующие вызовы метода не будут затронуты существующими коллекциями `EnumProcesses` .</span><span class="sxs-lookup"><span data-stu-id="c6b5b-113">Existing collections will not be affected by subsequent calls of the `EnumProcesses` method.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="c6b5b-114">Требования</span><span class="sxs-lookup"><span data-stu-id="c6b5b-114">Requirements</span></span>  
+
+ <span data-ttu-id="c6b5b-115">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="c6b5b-115">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="c6b5b-116">**Заголовок:** Корпуб. idl, Корпуб. h</span><span class="sxs-lookup"><span data-stu-id="c6b5b-116">**Header:** CorPub.idl, CorPub.h</span></span>  
+  
+ <span data-ttu-id="c6b5b-117">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="c6b5b-117">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="c6b5b-118">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="c6b5b-118">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="c6b5b-119">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="c6b5b-119">See also</span></span>
+
+- [<span data-ttu-id="c6b5b-120">Интерфейс ICorPublish</span><span class="sxs-lookup"><span data-stu-id="c6b5b-120">ICorPublish Interface</span></span>](icorpublish-interface.md)
