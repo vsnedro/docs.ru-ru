@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type:
 - apiref
-ms.openlocfilehash: 950fb3b9c51ae2c9470b5aadd31c877d7aa6b6f6
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 4604d78f66b872a30457c51bf65890caf613c4fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615063"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707637"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>Метод ISymUnmanagedReader::GetDocument
+
 Находит документ. Язык документа, поставщик и тип являются необязательными.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,27 +38,30 @@ HRESULT GetDocument (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `url`  
  окне URL-адрес, определяющий документ.  
   
  `language`  
- окне Язык документа. Этот параметр необязателен.  
+ окне Язык документа. Это необязательный параметр.  
   
  `languageVendor`  
- окне Удостоверение поставщика для языка документа. Этот параметр необязателен.  
+ окне Удостоверение поставщика для языка документа. Это необязательный параметр.  
   
  `documentType`  
- окне Тип документа. Этот параметр необязателен.  
+ окне Тип документа. Это необязательный параметр.  
   
  `pRetVal`  
  заполняет Указатель на возвращаемый интерфейс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a51f1f64-e084-44c5-830c-2222da5a6bbf
 topic_type:
 - apiref
-ms.openlocfilehash: c2cc541b2a78f16d5ca6b19405794faa825a9d72
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: fc38c167b47ea72c7bc7ad81074f9cb1a0d217d8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615037"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707572"
 ---
 # <a name="isymunmanagedreadergetdocumentversion-method"></a>Метод ISymUnmanagedReader::GetDocumentVersion
+
 Возвращает указанную версию указанного документа. Версия документа начинается с 1 и увеличивается каждый раз при обновлении документа с помощью метода [UpdateSymbolStore](isymunmanagedreader-updatesymbolstore-method.md) . Если `pbCurrent` параметр имеет значение `true` , это последняя версия документа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetDocumentVersion (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pDoc`  
  окне Указанный документ.  
   
@@ -45,11 +47,13 @@ HRESULT GetDocumentVersion (
  заполняет Указатель на переменную, которая получает, `true` если это последняя версия документа, или `false` если это не последняя версия.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

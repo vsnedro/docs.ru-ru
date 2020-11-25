@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3eb41151-a228-43e3-ba8f-e6dd3ceb8542
 topic_type:
 - apiref
-ms.openlocfilehash: 332d60418c744a9391c7c0afc20248c2239b090c
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 4436e4528c1dc486eb5c443c5a9467ac69a26c7d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441624"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706935"
 ---
 # <a name="isymunmanagedconstantgetsignature-method"></a>Метод ISymUnmanagedConstant::GetSignature
+
 Возвращает сигнатуру константы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetSignature(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cSig`  
  окне Длина буфера, `pcSig` на который указывает параметр.  
   
@@ -46,12 +48,14 @@ HRESULT GetSignature(
  заполняет Буфер, в котором хранится подпись.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedConstant](isymunmanagedconstant-interface.md)
 - [Метод GetName](isymunmanagedconstant-getname-method.md)

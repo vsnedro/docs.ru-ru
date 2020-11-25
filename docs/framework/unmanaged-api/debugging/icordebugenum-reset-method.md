@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ab03dcb8-ceed-4f7a-abf8-9d31604bf90c
 topic_type:
 - apiref
-ms.openlocfilehash: c5870341b2e0fca632ccead3d09852ce289188b5
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 39c6371791e90e97cca9357c825f13fe45e6c211
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976328"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705895"
 ---
 # <a name="icordebugenumreset-method"></a>Метод ICorDebugEnum::Reset
+
 Перемещает курсор в начало перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,6 +33,7 @@ HRESULT Reset ();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

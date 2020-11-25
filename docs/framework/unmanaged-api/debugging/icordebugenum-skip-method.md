@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e925d88a-67a5-4f76-88b8-09cedeed0232
 topic_type:
 - apiref
-ms.openlocfilehash: 64d9db09b3e604247ab6a26cdca9eca22adbaace
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: ae88336b9640b68b97522d252b3e8334c20ed9bc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976308"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705869"
 ---
 # <a name="icordebugenumskip-method"></a>Метод ICorDebugEnum::Skip
+
 Перемещает курсор вперед в перечислении на указанное число элементов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT Skip (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  окне Число элементов, по которым перемещается курсор.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

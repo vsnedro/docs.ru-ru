@@ -6,14 +6,15 @@ helpviewer_keywords:
 - .NET Framework 4, hosting interfaces
 - interfaces [.NET Framework hosting], version 4
 ms.assetid: f6af6116-f5b0-4bda-a276-fffdba70893d
-ms.openlocfilehash: a524c0b0e01fbde95ce2341874511960b3e5738e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 6ee3b8cdf348a5eade3903e2d26b4f9b93886305
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616857"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706818"
 ---
 # <a name="clr-hosting-interfaces-added-in-the-net-framework-4-and-45"></a>Интерфейсы размещения CLR, добавленные в версиях .NET Framework 4 и 4.5
+
 В этом разделе описываются интерфейсы, которые могут использоваться неуправляемыми узлами для интеграции среды CLR в .NET Framework 4, .NET Framework 4,5 и более поздних версий в свои приложения. Эти интерфейсы предоставляют основному приложению методы для настройки и загрузки среды выполнения в процесс.  
   
  Начиная с .NET Framework 4, все интерфейсы размещения имеют следующие характеристики.  
@@ -25,6 +26,7 @@ ms.locfileid: "83616857"
 - Нет моделей апартамента, агрегирования или активации реестра, использующих [функцию CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Интерфейс ICLRAppDomainResourceMonitor](iclrappdomainresourcemonitor-interface.md)  
  Предоставляет методы для проверки использования памяти и ЦП домена приложения.  
   
@@ -53,6 +55,7 @@ ms.locfileid: "83616857"
  Предоставляет все функциональные возможности [интерфейса ICLRTask](iclrtask-interface.md); Кроме того, предоставляет методы, которые позволяют задерживать прерывания потока в текущем потоке.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Устаревшие интерфейсы размещения CLR и CoClasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Описание интерфейсов размещения, поставляемых с .NET Framework версиями 1,0 и 1,1.  
   

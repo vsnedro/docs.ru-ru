@@ -6,14 +6,15 @@ helpviewer_keywords:
 - read-only fields
 - member design guidelines, fields
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
-ms.openlocfilehash: 6e58274f32ea129d3271c11e321bdbd454d2406a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4329ca9e74fa02411bd39755a432fc7d4858597d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821116"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706701"
 ---
 # <a name="field-design"></a>Разработка полей
+
 Принцип инкапсуляции является одним из наиболее важных концепций объектно-ориентированного проектирования. Этот принцип указывает, что данные, хранящиеся внутри объекта, должны быть доступны только для этого объекта.
 
  Чтобы интерпретировать принцип, можно сказать, что тип должен быть спроектирован таким образом, чтобы изменения полей этого типа (изменения имени или типа) могли выполняться без нарушения кода, отличного от элементов типа. Такая интерпретация немедленно подразумевает, что все поля должны быть частными.
@@ -40,7 +41,7 @@ ms.locfileid: "94821116"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию членов](member.md)
 - [Рекомендации по проектированию платформы](index.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 634ac28c-a5b7-4fc3-af84-256c24ca8177
 topic_type:
 - apiref
-ms.openlocfilehash: ba15440df79dded95a8afa9438657d064e167f36
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2ac645cbaaa45554568874653be016e4691bbd2f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495974"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707481"
 ---
 # <a name="icorprofilerinfo4getrejitids-method"></a>Метод ICorProfilerInfo4::GetReJITIDs
+
 Возвращает массив идентификаторов, которые определяют все все повторно скомпилированные версии указанной функции, которые все еще выделены. Сюда входят JIT-повторно скомпилированные версии функций, которые впоследствии были отменены, но еще не освобождены (например, если домен приложения, содержащий функцию, которая содержит возвращенные функции, все еще используется).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetReJITIDs (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `functionId`  
  окне Объект `FunctionID` экземпляра функции, для которого требуется перечислить версии.  
   
@@ -48,10 +50,12 @@ HRESULT GetReJITIDs (
  `reJitIds`  
  заполняет Выделенный вызывающим объектом массив, который будет содержать JIT-перекомпилированные идентификаторы для указанной функции.  
   
-## <a name="remarks"></a>Примечания  
- `GetReJITIDs`Перечисляет активные JIT-повторно скомпилированные идентификаторы для заданного экземпляра функции. Он следует той же схеме использования, что и другие `ICorProfilerInfo` функции, принимающие буферы, выделенные вызывающим объектом.  
+## <a name="remarks"></a>Комментарии  
+
+ `GetReJITIDs` Перечисляет активные JIT-повторно скомпилированные идентификаторы для заданного экземпляра функции. Он следует той же схеме использования, что и другие `ICorProfilerInfo` функции, принимающие буферы, выделенные вызывающим объектом.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -60,7 +64,7 @@ HRESULT GetReJITIDs (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo4](icorprofilerinfo4-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

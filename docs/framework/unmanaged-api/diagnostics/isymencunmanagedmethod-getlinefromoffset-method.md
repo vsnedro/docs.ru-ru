@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
 topic_type:
 - apiref
-ms.openlocfilehash: d9a7b18e90a3038c1ffb634ccc7315143875c809
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 196993df9058d3eb8167e0144255c5fe366c54f8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441920"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707364"
 ---
 # <a name="isymencunmanagedmethodgetlinefromoffset-method"></a>Метод ISymENCUnmanagedMethod::GetLineFromOffset
+
 Возвращает сведения о строке, связанные со смещением. Если параметр offset ( `dwOffset` ) не является точкой последовательности, этот метод получает сведения о строке, связанные с предыдущим смещением.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetLineFromOffset(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwOffset`  
  окне Значение типа `ULONG32` , содержащее смещение.  
   
@@ -57,11 +59,13 @@ HRESULT GetLineFromOffset(
  заполняет Указатель на объект `ULONG32` , который получает связанную точку последовательности.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

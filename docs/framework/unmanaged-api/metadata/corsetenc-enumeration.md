@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type:
 - apiref
-ms.openlocfilehash: 93a194ea72ab894544927cf96304397b7211b5ac
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: df945803f2d56d04ccc68f314eb55665579ed7fd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009162"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705986"
 ---
 # <a name="corsetenc-enumeration"></a>Перечисление CorSetENC
+
 Содержит значения, используемые для оказания влияния на поведение во время создания метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,12 +43,12 @@ typedef enum CorSetENC {
 } CorSetENC;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
-|`MDSetENCOn`|Устаревшее.|  
-|`MDSetENCOff`|Устаревшее.|  
+|`MDSetENCOn`|Является устаревшей.|  
+|`MDSetENCOff`|Является устаревшей.|  
 |`MDUpdateENC`|Указывает, что в то время как метаданные могут быть обновлены, токены перемещаться нельзя.|  
 |`MDUpdateFull`|Указывает, что токены можно перемещать во время обновлений.|  
 |`MDUpdateExtension`|Указывает, что обновления могут состоять только из добавлений. Маркеры не могут быть перемещены.|  
@@ -56,12 +57,13 @@ typedef enum CorSetENC {
 |`MDUpdateMask`|Включает `MDUpdateENC` , `MDUpdateFull` и `MDUpdateIncremental` .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

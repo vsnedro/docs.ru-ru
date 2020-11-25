@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0ea9d9af-8709-4a46-872b-f54d9e840088
 topic_type:
 - apiref
-ms.openlocfilehash: 48c50ac6be6d525676d85578e5a55a27104c180a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8eef973c4c054b704b7c3f798e5dc1aa455dda96
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615102"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707779"
 ---
 # <a name="isymunmanagednamespacegetnamespaces-method"></a>Метод ISymUnmanagedNamespace::GetNamespaces
+
 Возвращает дочерние элементы этого пространства имен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetNamespaces(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cNameSpaces`  
  окне Значение типа `ULONG32` , указывающее размер `namespaces` массива.  
   
@@ -46,11 +48,13 @@ HRESULT GetNamespaces(
  заполняет Указатель на буфер, содержащий пространства имен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

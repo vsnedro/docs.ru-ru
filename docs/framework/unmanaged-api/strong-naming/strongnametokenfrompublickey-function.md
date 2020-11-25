@@ -18,17 +18,18 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type:
 - apiref
-ms.openlocfilehash: 20be3114908ef78966eead05ae8ba6333a491404
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 89556cf0e1ef65c35278a526e10fc791063ea2c6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175061"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708352"
 ---
 # <a name="strongnametokenfrompublickey-function"></a>Функция StrongNameTokenFromPublicKey
-Получает маркер, представляющий открытый ключ. Сильный маркер имени — это укороченная форма клавиши общего пользования.  
+
+Получает маркер, представляющий открытый ключ. Маркер строгого имени — это сокращенная форма открытого ключа.  
   
- Эта функция была амортизирована. Вместо этого используйте метод [ICLRStrongName::StrongNameTokenFromPublicKey.](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)  
+ Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: StrongNameTokenFromPublicKey](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,34 +43,38 @@ BOOLEANStrongNameTokenFromPublicKey (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbPublicKeyBlob`  
- (в) Структура типа [PublicKeyBlob,](publickeyblob-structure.md) содержащая публичную часть ключевой пары, используемой для создания сильной подписи имен.  
+ окне Структура типа [публиккэйблоб](publickeyblob-structure.md) , содержащая открытую часть пары ключей, используемую для создания подписи строгого имени.  
   
  `cbPublicKeyBlob`  
- (в) Размер, в байтах, из `pbPublicKeyBlob`.  
+ окне Размер (в байтах) `pbPublicKeyBlob` .  
   
  `ppbStrongNameToken`  
- (ваут) Сильное имя маркер, соответствующий `pbPublicKeyBlob`ключу прошло в . Общее время выполнения языка выделяет память, в которой возвращается токен. Звонящее должно освободить эту память с помощью функции [StrongNameFreeBuffer.](strongnamefreebuffer-function.md)  
+ заполняет Маркер строгого имени, соответствующий переданному ключу `pbPublicKeyBlob` . Среда CLR выделяет память, в которую возвращается маркер. Вызывающий объект должен освободить эту память с помощью функции [StrongNameFreeBuffer](strongnamefreebuffer-function.md) .  
   
  `pcbStrongNameToken`  
- (ваут) Размер, в байтах, возвращенного сильного маркера имени.  
+ заполняет Размер возвращенного маркера строгого имени в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true`при успешном завершении; в `false`противном случае, .  
+
+ `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Remarks  
- Сильный маркер имени — это укороченная форма общедоступного ключа, используемого для экономии места при хранении ключевой информации в метаданных. В частности, сильные маркеры имен используются в ссылках на сборку для обозначения зависимой сборки.  
+## <a name="remarks"></a>Комментарии  
+
+ Маркер строгого имени — это сокращенная форма открытого ключа, используемая для экономии места при хранении ключевых сведений в метаданных. В частности, маркеры строгого имени используются в ссылках на сборки для ссылки на зависимую сборку.  
   
- Если `StrongNameTokenFromPublicKey` функция не выполняется успешно, позвоните в функцию [StrongNameErrorInfo,](strongnameerrorinfo-function.md) чтобы получить последнюю сгенерированную ошибку.  
+ Если `StrongNameTokenFromPublicKey` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** StrongName.h  
+ **Заголовок:** StrongName. h  
   
- **Библиотека:** Включено в качестве ресурса в mscoree.dll  
+ **Библиотека:** Включается в качестве ресурса в mscoree.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

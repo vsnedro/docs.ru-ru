@@ -1,6 +1,6 @@
 ---
-title: Функция клона (Неуправляемая ссылка API)
-description: Функция клона возвращает новый объект, который является полным клоном текущего.
+title: Clone, функция (ссылка на неуправляемый API)
+description: Функция Clone возвращает новый объект, являющийся полным клоном текущего.
 ms.date: 11/06/2017
 api_name:
 - Clone
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - Clone function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: cb4951a1f289417482bfa1287028cc66349a5938
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: aecbf750b42626629dcb5aef369978a2e2bd002a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176855"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708118"
 ---
 # <a name="clone-function"></a>Функция Clone
+
 Возвращает новый объект, который является полным клоном текущего объекта.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -39,37 +40,38 @@ HRESULT Clone (
 ## <a name="parameters"></a>Параметры
 
 `vFunc`  
-(в) Этот параметр не используется.
+окне Этот параметр не используется.
 
 `ptr`  
-(в) Указатель на экземпляр [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+окне Указатель на экземпляр [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `ppCopy`  
-(ваут) Новый объект, который является `ptr`полным одиноким . Этот аргумент `null` не может быть, если он получает копию текущего объекта.
+заполняет Новый объект, который является полным одиночным объектом `ptr` . Этот аргумент не может быть `null` , если он получает копию текущего объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
-| `WBEM_E_FAILED` | 0x80041001 | Произошел общий сбой. |
-| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `null`был указан в качестве параметра, и это не является законным в этом использовании. |
+| `WBEM_E_FAILED` | 0x80041001 | Общий сбой. |
+| `WBEM_E_INVALID_PARAMETER` | 0x80041008 | `null` был указан в качестве параметра и не является допустимым в этом использовании. |
 | `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Недостаточно памяти для клонирования объекта. |
-| `WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+| `WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция завершает вызов [методом IWbemClassObject::Clone.](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-clone)
+Эта функция заключает в оболочку вызов метода [ивбемклассобжект:: Clone](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-clone) .
 
-Клонированный объект — объект COM с числом ссылок 1.
+Клонированный объект представляет собой COM-объект со счетчиком ссылок, равным 1.
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

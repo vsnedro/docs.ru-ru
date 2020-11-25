@@ -7,17 +7,19 @@ helpviewer_keywords:
 - Tlbexp.exe
 - Type Library Exporter
 ms.assetid: 5c0a3d14-5f26-4267-94a9-82c30f8db09a
-ms.openlocfilehash: cbde2af9c8a03e6c41f571120027030713f1b8d5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9386918f3574720d90bda7e8da592fa0c91160e5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73104117"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708248"
 ---
 # <a name="tlbexp-helper-functions-unmanaged-api-reference"></a>Вспомогательные функции Tlbexp (справочник по неуправляемым API)
+
 [Средство экспорта библиотек типов](../../tools/tlbexp-exe-type-library-exporter.md) (Tlbexp.exe) загружает библиотеку динамической компоновки TlbRef.dll. Эта библиотека DLL имеет две вспомогательные функции и интерфейс, который использует средство экспорта в ходе преобразования сборки в библиотеку типов.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Функция GetTypeLibInfo](gettypelibinfo-function.md)  
  Предоставляет сведения о локализации и операционной системе для библиотеки типов.  
   

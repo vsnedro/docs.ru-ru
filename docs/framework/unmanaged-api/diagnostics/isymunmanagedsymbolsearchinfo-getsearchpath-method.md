@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b588d470-53c2-4492-be8c-957323eaca0b
 topic_type:
 - apiref
-ms.openlocfilehash: d9431a533a32fd15931072cfbabd10bbc0e6d4ad
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: eda8a7ff1d8b3031173bf5f73a8b8a8355e6a62c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610682"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705531"
 ---
 # <a name="isymunmanagedsymbolsearchinfogetsearchpath-method"></a>Метод ISymUnmanagedSymbolSearchInfo::GetSearchPath
+
 Возвращает путь поиска.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,15 +34,18 @@ HRESULT GetSearchPathLength(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pcchPath`  
  заполняет Указатель на объект `ULONG32` , который получает размер буфера (в символах), необходимый для хранения пути поиска.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md)

@@ -8,14 +8,15 @@ helpviewer_keywords:
 - assemblies [.NET Framework], names
 - DLLs, names
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
-ms.openlocfilehash: 2d1484889eb7db537de970c31109f26a6d61ad8d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 95a90ff66ffc9f2a5a3202d6877b1cc19149ff35
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830055"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706532"
 ---
 # <a name="names-of-assemblies-and-dlls"></a>Имена сборок и библиотек DLL
+
 Сборка — это единица развертывания и идентификации для программ управляемого кода. Хотя сборки могут охватывать один или несколько файлов, обычно сборка сопоставляет один к одному с библиотекой DLL. Поэтому в этом разделе описываются только соглашения об именовании библиотек DLL, которые затем можно сопоставить с соглашениями об именовании сборок.
 
  ✔️ выбрать имена для библиотек DLL сборки, которые предлагают большие фрагменты функциональности, такие как System. Data.
@@ -34,7 +35,7 @@ ms.locfileid: "94830055"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

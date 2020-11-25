@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type:
 - apiref
-ms.openlocfilehash: 4c630f5f7e3dc66ce44f10cd69fcd108226b0250
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e9f6ae9a0fcd6651395c54c2e44973e53668c1ac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554336"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708326"
 ---
 # <a name="gettypelibinfo-function"></a>Функция GetTypeLibInfo
+
 Возвращает сведения о указанной библиотеке типов, изучая ее структуру [тлибаттр](/windows/win32/api/oaidl/ns-oaidl-tlibattr) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetTypeLibInfo(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szFile`  
  окне Имя файла библиотеки типов.  
   
@@ -51,17 +53,19 @@ HRESULT GetTypeLibInfo(
  заполняет Флаг [Сискинд](/windows/win32/api/oaidl/ne-oaidl-syskind) , определяющий целевую операционную систему для библиотеки типов. Распространенные значения: SYS_WIN32 и SYS_WIN64.  
   
  `pTypeLibMajorVer`  
- заполняет Основной номер версии библиотеки типов. Например, для версии *x. y*основной номер версии — *x*.  
+ заполняет Основной номер версии библиотеки типов. Например, для версии *x. y* основной номер версии — *x*.  
   
  `pTypeLibMinorVer`  
- заполняет Дополнительный номер версии библиотеки типов. Например, для версии *x. y*дополнительный номер версии — *y*.  
+ заполняет Дополнительный номер версии библиотеки типов. Например, для версии *x. y* дополнительный номер версии — *y*.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetTypeLibInfo`Функция вызывается [Tlbexp.exe (программа экспорта библиотек типов)](../../tools/tlbexp-exe-type-library-exporter.md). Это средство создает библиотеку типов, описывающую типы в сборке среды CLR.  
   
  Если какой-либо из параметров имеет значение null, функция возвращает объект `HRESULT` `E_POINTER` . В противном случае возвращается значение `S_OK`.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Тлбреф. h  
@@ -70,7 +74,7 @@ HRESULT GetTypeLibInfo(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Вспомогательные функции Tlbexp](index.md)
 - [Функция Лоадтипелибекс](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

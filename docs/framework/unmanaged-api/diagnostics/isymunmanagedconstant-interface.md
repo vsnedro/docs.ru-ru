@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e11c9baa-4cf1-4bb4-a95f-b1908893b46c
 topic_type:
 - apiref
-ms.openlocfilehash: 58d81fd150684f254333c17374d06f7dd5b95823
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 0d0c1462bc1c19f47bfbdcfa9694988da9acd9d2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441418"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706870"
 ---
 # <a name="isymunmanagedconstant-interface"></a>Интерфейс ISymUnmanagedConstant
+
 Предоставляет доступ к неуправляемым константам.  
   
 ## <a name="methods"></a>Методы  
@@ -33,8 +34,9 @@ ms.locfileid: "83441418"
 |[Метод GetValue](isymunmanagedconstant-getvalue-method.md)| Возвращает значение константы.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

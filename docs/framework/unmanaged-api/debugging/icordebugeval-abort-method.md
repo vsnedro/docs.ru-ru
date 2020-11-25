@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7070b6d0-f2e0-44ff-b124-0944cd807e69
 topic_type:
 - apiref
-ms.openlocfilehash: 98a9b285323bc3ad94b4f555e72a4b3242519801
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 6e6ea5e42c5e1b1943a080ae02e1dbf6d702bebc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976295"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705856"
 ---
 # <a name="icordebugevalabort-method"></a>Метод ICorDebugEval::Abort
+
 Прерывает вычисление, которое данный объект ICorDebugEval сейчас выполняет.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,9 +33,11 @@ HRESULT Abort ();
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Если оценка является вложенной и не является самой последней, `Abort` метод может завершиться ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

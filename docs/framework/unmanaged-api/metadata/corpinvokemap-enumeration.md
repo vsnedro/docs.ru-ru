@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: 199a649b0481c2a740926636345eefbda6831ef2
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: da3ee54b1c3361149c11a9cfad8bdb07a5007ecf
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007550"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706142"
 ---
 # <a name="corpinvokemap-enumeration"></a>Перечисление CorPinvokeMap
+
 Задает параметры для вызова PInvoke.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -61,7 +62,7 @@ typedef enum  CorPinvokeMap {
 } CorPinvokeMap;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -89,12 +90,13 @@ typedef enum  CorPinvokeMap {
 |`pmMaxValue`|Зарезервировано.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)

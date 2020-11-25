@@ -9,14 +9,15 @@ helpviewer_keywords:
 - members [.NET Framework], type
 - class library design guidelines [.NET Framework], nested types
 ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
-ms.openlocfilehash: 1ac2f9f5e10149027b79cd67e5077ec6bc17f9c9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bc0aee32b5cc1d40afdd9cce8260d5b5341a687d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820817"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706402"
 ---
 # <a name="nested-types"></a>Вложенные типы
+
 Вложенный тип — это тип, определенный в области другого типа, который называется включающим типом. Вложенный тип имеет доступ ко всем элементам его включающего типа. Например, он имеет доступ к закрытым полям, определенным во включающем типе, и к защищенным полям, определенным во всех предков включающего типа.
 
  Как правило, вложенные типы следует использовать экономно. Для этого есть несколько причин. Некоторые разработчики не полностью знакомы с концепцией. Эти разработчики могут, например, столкнуться с проблемами синтаксиса объявления переменных вложенных типов. Вложенные типы также тесно связаны со своими включающими типами, поэтому они не подходят для универсальных типов.
@@ -43,7 +44,7 @@ ms.locfileid: "94820817"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

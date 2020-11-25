@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
 topic_type:
 - apiref
-ms.openlocfilehash: 878dba37728734a777d2f95226b60bfbe9aae16a
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 1e0cb52a6b9f03209256e5398415b4ec632fb5e5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805270"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705512"
 ---
 # <a name="idebuggerthreadcontrolstartblockingfordebugger-method"></a>Метод IDebuggerThreadControl::StartBlockingForDebugger
+
 Уведомляет узел о том, что служба отладки собирается начать блокирование всех потоков.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,21 +35,24 @@ HRESULT StartBlockingForDebugger (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwUnused`  
  [in] Зарезервирован для будущего использования.  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Комментарии  
+
  `StartBlockingForDebugger`Метод может быть вызван в потоке среды выполнения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IDebuggerThreadControl](idebuggerthreadcontrol-interface.md)

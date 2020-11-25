@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
 topic_type:
 - apiref
-ms.openlocfilehash: 5c12ca20deee06fcaca68365644fd9dff95379ff
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b90cc6fe99cf592f1b3fd117888462a957e4ce35
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73121161"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708430"
 ---
 # <a name="strongnamesignatureverificationfromimage-function"></a>Функция StrongNameSignatureVerificationFromImage
+
 Проверяет допустимость сборки, которая уже была сопоставлена с памятью, для связанного открытого ключа.  
   
  Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: стронгнамеверификатионфромимаже](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md) .  
@@ -38,6 +39,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbBase`  
  окне Относительный виртуальный адрес сопоставленного манифеста сборки.  
   
@@ -45,7 +47,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
  окне Размер сопоставленного изображения в байтах.  
   
  `dwInFlags`  
- окне Флаги, влияющие на поведение при проверке. Поддерживаются следующие значения:  
+ окне Флаги, влияющие на поведение при проверке. Поддерживаются следующие значения.  
   
 - `SN_INFLAG_FORCE_VER` (0x00000001) — принудительная проверка, даже если необходимо переопределить параметры реестра.  
   
@@ -62,24 +64,27 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
  `pdwOutFlags`  
  заполняет Флаг для дополнительных выходных данных. Поддерживается следующее значение:  
   
-- `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) — это значение равно `false`, чтобы указать, что проверка прошла из-за параметров реестра.  
+- `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) — это значение `false` указывает, что проверка прошла удачно из-за параметров реестра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true` при успешном завершении; в противном случае `false`.  
+
+ `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Заметки  
- Если функция `StrongNameSignatureVerificationFromImage` не завершается успешно, вызовите функцию [StrongNameErrorInfo](strongnameerrorinfo-function.md), чтобы получить последнюю созданную ошибку.  
+## <a name="remarks"></a>Комментарии  
+
+ Если `StrongNameSignatureVerificationFromImage` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** StrongName. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку Mscoree. dll  
+ **Библиотека:** Включается в качестве ресурса в mscoree.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameSignatureVerificationFromImage](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

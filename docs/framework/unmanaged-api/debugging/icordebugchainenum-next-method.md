@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6b791351-bcc5-4ddd-9cab-eff2f7dd5142
 topic_type:
 - apiref
-ms.openlocfilehash: 2d075820df534e08bdf4c2b75d36f6a60f979662
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 0f42020821ec71d1e59ae8097f22ee530e16a576
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894092"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706181"
 ---
 # <a name="icordebugchainenumnext-method"></a>Метод ICorDebugChainEnum::Next
+
 Возвращает указанное число экземпляров ICorDebugChain из перечисления, начиная с текущей позиции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,16 +38,18 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
- окне Число извлекаемых `ICorDebugChain` экземпляров.  
+ окне Число `ICorDebugChain` извлекаемых экземпляров.  
   
  `chains`  
  заполняет Массив указателей, каждый из которых указывает на `ICorDebugChain` объект, представляющий цепочку.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращенных `ICorDebugChain` экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
+ заполняет Указатель на число `ICorDebugChain` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

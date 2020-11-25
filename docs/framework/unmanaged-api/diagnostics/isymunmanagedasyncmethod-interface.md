@@ -2,14 +2,15 @@
 title: Интерфейс ISymUnmanagedAsyncMethod
 ms.date: 03/30/2017
 ms.assetid: f2de5224-fd91-45de-9e58-bc600c6d22f1
-ms.openlocfilehash: 448ed719331469dce8f15500f14d5c1b0707ecf7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 02b1866f2b9e89cdc8c8795f399ecc0c733c7202
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504456"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707169"
 ---
 # <a name="isymunmanagedasyncmethod-interface"></a>Интерфейс ISymUnmanagedAsyncMethod
+
 Этот интерфейс является дополнением к [интерфейсу метод isymunmanagedasyncmethodpropertieswriter](isymunmanagedasyncmethodpropertieswriter-interface.md)для чтения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,6 +20,7 @@ ms.locfileid: "84504456"
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Этот интерфейс содержит следующие методы:  
   
 |Метод|Описание|  
@@ -31,8 +33,9 @@ ms.locfileid: "84504456"
 |[Метод IsAsyncMethod](isymunmanagedasyncmethod-isasyncmethod-method.md)|Проверяет, имеет ли метод асинхронную информацию.<br /><br /> Если этот метод возвращает значение `FALSE` , то он недопустим для вызова любых других методов в этом интерфейсе. `E_UNEXPECTED`В этом случае они будут возвращаться.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
