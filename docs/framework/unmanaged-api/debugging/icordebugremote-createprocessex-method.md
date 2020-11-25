@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2689f04228c9ecbbbb18531a0aefd3c40e3072
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 37bf800f27754d1bf80aece962b7cbb85b1cbedc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83377981"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712187"
 ---
 # <a name="icordebugremotecreateprocessex-method"></a>Метод ICorDebugRemote::CreateProcessEx
+
 Запускает процесс на удаленном компьютере в отладчике.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -46,6 +47,7 @@ HRESULT CreateProcessEx (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pRemoteTarget`  
  окне Указатель на [интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md). Используется для определения удаленного компьютера, на котором будет запущен процесс.  
   
@@ -86,16 +88,19 @@ HRESULT CreateProcessEx (
  заполняет Указатель на адрес объекта "ICorDebugProcess Interface", который представляет процесс.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK  
  Процесс успешно запущен на удаленном компьютере и для отладки возвращен "Интерфейс ICorDebugProcess".  
   
  E_FAIL (или другие коды возврата E_)  
  Не удалось запустить процесс на удаленном компьютере и вернуть для отладки "Интерфейс ICorDebugProcess".  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладка в смешанном режиме не поддерживается в Silverlight.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug. idl  
@@ -104,7 +109,7 @@ HRESULT CreateProcessEx (
   
  **.NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

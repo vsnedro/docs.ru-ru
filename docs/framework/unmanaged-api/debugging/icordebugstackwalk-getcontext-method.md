@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 081d1c95-152b-4797-8552-18453eb7b14b
 topic_type:
 - apiref
-ms.openlocfilehash: 743b0c8016ca5c0401046166a770d857215429a3
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 927f2077b4bb71177c24816774d06643ebdaa922
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379219"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711966"
 ---
 # <a name="icordebugstackwalkgetcontext-method"></a>Метод ICorDebugStackWalk::GetContext
+
 Возвращает контекст для текущего кадра в объекте [икордебугстакквалк](icordebugstackwalk-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `contextFlags`  
  окне Флаги, указывающие запрошенное содержимое буфера контекста (определенного в WinNT. h).  
   
@@ -48,9 +50,10 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
  заполняет Буфер контекста.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Контекст для текущего кадра успешно возвращен.|  
 |E_FAIL|Не удалось вернуть контекст.|  
@@ -60,9 +63,11 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
 ## <a name="exceptions"></a>Исключения  
   
 ## <a name="remarks"></a>Remarks  
+
  Поскольку при очистке восстанавливаются только подмножество регистров, например непостоянные регистры, контекст может точно не соответствовать состоянию регистрации во время вызова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -71,7 +76,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

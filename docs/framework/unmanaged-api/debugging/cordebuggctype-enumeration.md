@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 880ca92a-42d4-42a5-9b9c-c2848eb39c6a
 topic_type:
 - apiref
-ms.openlocfilehash: 8dd070d2c895a94ac996be81e672bd67f59b83b7
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 6b3075613af0403527ecf67d574c0f5733a5cd8b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795902"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712616"
 ---
 # <a name="cordebuggctype-enumeration"></a>Перечисление CorDebugGCType
+
 Указывает, где выполняется сборщик мусора: на рабочей станции или на сервере.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,9 +36,9 @@ typedef enum CorDebugGCType {
   
 ## <a name="parameters"></a>Параметры  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Элементы  
   
-|Имя члена|Описание|  
+|Имя участника|Описание|  
 |-----------------|-----------------|  
 |`CorDebugWorkstationGC`|Сборщик мусора работает на рабочей станции.|  
 |`CorDebugServerGC`|Сборщик мусора работает на сервере.|  
@@ -45,6 +46,7 @@ typedef enum CorDebugGCType {
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

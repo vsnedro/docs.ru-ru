@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1b2bbf3f-943e-412e-b66c-e802431b055c
 topic_type:
 - apiref
-ms.openlocfilehash: 545fe1e1d9e641d2225ad92c11453558dc4b97d1
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3c96a9b601824cc4001568c4656f968fad70cf39
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491502"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711290"
 ---
 # <a name="imetadataimportfindtyperef-method"></a>Метод IMetaDataImport::FindTypeRef
+
 Возвращает указатель на маркер TypeRef для <xref:System.Type> ссылки, наданной в указанной области и имеющей указанное имя.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT FindTypeRef (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tkResolutionScope`  
  окне Токен ModuleRef, AssemblyRef или TypeRef, указывающий модуль, сборку или тип соответственно, в котором определена ссылка на тип.  
   
@@ -46,15 +48,16 @@ HRESULT FindTypeRef (
  заполняет Указатель на соответствующий токен TypeRef.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1ccda329-d752-4d89-abe8-511af3c3f4c9
 topic_type:
 - apiref
-ms.openlocfilehash: 068014732cee91147edaec29fa0f954a741d8b5c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0ba25c981cc389baf06ecca0db543d48ac60317b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491671"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711407"
 ---
 # <a name="imetadataimportfindmemberref-method"></a>Метод IMetaDataImport::FindMemberRef
+
 Возвращает указатель на токен MemberRef для ссылки на элемент, заключенный в заданный объект с <xref:System.Type> указанным именем и сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT FindMemberRef (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `td`  
  окне Токен TypeRef для класса или интерфейса, который заключает в себя ссылку на элемент для поиска. Если это значение равно `mdTokenNil` , поиск выполняется для глобальной переменной или ссылки на глобальную функцию.  
   
@@ -53,23 +55,25 @@ HRESULT FindMemberRef (
  `pmr`  
  заполняет Указатель на соответствующий токен MemberRef.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Элемент указывается с помощью включающего класса или интерфейса ( `td` ), его имени ( `szName` ) и (при необходимости) его сигнатуры ( `pvSigBlob` ).  
   
  Подпись, передаваемая в `FindMemberRef` , должна быть создана в текущей области, так как сигнатуры привязаны к определенной области. Сигнатура может внедрять маркер, идентифицирующий включающий класс или тип значения. Токен является индексом локальной таблицы TypeDef. Нельзя построить подпись времени выполнения вне контекста текущей области и использовать эту сигнатуру в качестве входных данных для `FindMemberRef` .  
   
- `FindMemberRef`находит только ссылки на элементы, которые были определены непосредственно в классе или интерфейсе; Он не находит унаследованные ссылки на члены.  
+ `FindMemberRef` находит только ссылки на элементы, которые были определены непосредственно в классе или интерфейсе; Он не находит унаследованные ссылки на члены.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

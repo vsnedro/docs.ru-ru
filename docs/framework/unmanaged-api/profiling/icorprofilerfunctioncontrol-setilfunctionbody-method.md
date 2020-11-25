@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type:
 - apiref
-ms.openlocfilehash: a6b24fd59a183a4a59b117663772417d55cc67db
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: fa82cd1e646777c9841c1b3d653134aa7ba7ed7c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503148"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712746"
 ---
 # <a name="icorprofilerfunctioncontrolsetilfunctionbody-method"></a>Метод ICorProfilerFunctionControl::SetILFunctionBody
+
 Заменяет тело метода на языке CIL.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT SetILFunctionBody(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cbNewILMethodHeader`  
  [in] Общий размер нового кода CIL, включая заголовок и все структуры после тела.  
   
@@ -41,16 +43,19 @@ HRESULT SetILFunctionBody(
  [in] Указатель на новый заголовок на языке CIL.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие специфичные результаты HRESULT.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Замена выполнена успешно.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  В отличие от метода [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) `SetILFunctionBody` метод управляет памятью, необходимой для нового тела CIL. Это означает, что тело CIL, предоставленное профилировщиком, не должно выделяться с помощью интерфейса [IMethodMalloc](imethodmalloc-interface.md) или выделено в определенном диапазоне. Его можно разместить в любой куче. Профилировщик может освободить память, используемую для его тела CIL после `SetILFunctionBody` возврата.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -59,6 +64,6 @@ HRESULT SetILFunctionBody(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerFunctionControl](icorprofilerfunctioncontrol-interface.md)

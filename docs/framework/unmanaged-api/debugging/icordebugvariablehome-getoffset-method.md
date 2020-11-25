@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f025c2e5-3f6c-4be8-9ffe-c8b214617dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 75a165e2fd517f36d779a934a5bdd9c41956411a
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: c5d491b66e4ec64dffa4e19dabff876c9c473036
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396768"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711797"
 ---
 # <a name="icordebugvariablehomegetoffset-method"></a>Метод ICorDebugVariableHome:: методом offset
+
 Возвращает смещение от базового регистра для переменной.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetOffset(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pOffset`  
  заполняет Смещение от базового регистра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Метод возвращает следующие значения:  
   
 |Значение|Описание|  
@@ -46,6 +49,7 @@ HRESULT GetOffset(
 |`E_FAIL`|Переменная не находится в расположении в памяти относительно регистра.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -54,6 +58,6 @@ HRESULT GetOffset(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugVariableHome](icordebugvariablehome-interface.md)

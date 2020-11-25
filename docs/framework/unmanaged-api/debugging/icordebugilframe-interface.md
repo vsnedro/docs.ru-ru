@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d5cf5056-da4d-4629-914d-afe42a5393df
 topic_type:
 - apiref
-ms.openlocfilehash: 1f1e42cd929d2d6282d282cf62dce00104b3a925
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 4f34fdf9a0eeb47e027cc874afee5bd04f5bd9bc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210245"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712395"
 ---
 # <a name="icordebugilframe-interface"></a>Интерфейс ICorDebugILFrame
 
@@ -35,17 +35,19 @@ ms.locfileid: "83210245"
 |[Метод GetArgument](icordebugilframe-getargument-method.md)|Возвращает значение указанного аргумента в этом кадре стека MSIL.|  
 |[Метод GetIP](icordebugilframe-getip-method.md)|Возвращает значение указателя инструкции и битовое значение сочетания, которое описывает, как было получено значение указателя инструкции.|  
 |[Метод GetLocalVariable](icordebugilframe-getlocalvariable-method.md)|Возвращает значение указанной локальной переменной в этом кадре стека MSIL.|  
-|[Метод GetStackDepth](icordebugilframe-getstackdepth-method.md)|Не реализовано.|  
-|[Метод GetStackValue](icordebugilframe-getstackvalue-method.md)|Не реализовано.|  
+|[Метод GetStackDepth](icordebugilframe-getstackdepth-method.md)|Не реализован.|  
+|[Метод GetStackValue](icordebugilframe-getstackvalue-method.md)|Не реализован.|  
 |[Метод SetIP](icordebugilframe-setip-method.md)|Устанавливает указатель инструкции на указанное положение смещения в коде MSIL.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `ICorDebugILFrame`Интерфейс является специализированным интерфейсом ICorDebugFrame. Он используется либо для кадров кода MSIL, либо для кадров, скомпилированных JIT. JIT-скомпилированные кадры реализуют `ICorDebugILFrame` интерфейс и интерфейс ICorDebugNativeFrame.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -54,6 +56,6 @@ ms.locfileid: "83210245"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

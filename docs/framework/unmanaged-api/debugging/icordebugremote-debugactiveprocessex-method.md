@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type:
 - apiref
-ms.openlocfilehash: b95e9f3a0d584511a2bcf156ed2c50a98f96d071
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c9847fd6122aa32c95aecd5643a62a6775ae38d3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379064"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712122"
 ---
 # <a name="icordebugremotedebugactiveprocessex-method"></a>Метод ICorDebugRemote::DebugActiveProcessEx
+
 Запускает процесс на удаленном компьютере в отладчике.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT DebugActiveProcessEx (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pRemoteTarget`  
  окне Указатель на [интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md). Этот параметр используется для определения компьютера, на котором выполняется процесс.  
   
@@ -50,16 +52,19 @@ HRESULT DebugActiveProcessEx (
  заполняет Указатель на адрес объекта "ICorDebugProcess", который представляет процесс, к которому присоединен отладчик.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK  
  Успешно присоединен к процессу на удаленном компьютере.  
   
  E_FAIL (или другие коды возврата E_)  
  Не удалось присоединиться к процессу на удаленном компьютере.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Отладка в смешанном режиме не поддерживается в Silverlight.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -68,7 +73,7 @@ HRESULT DebugActiveProcessEx (
   
  **.NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

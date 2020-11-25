@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 42145e8d-000f-4d0b-ae43-c08201190fa2
 topic_type:
 - apiref
-ms.openlocfilehash: 68261b165847a5c3ee29adbc4908451fb00c5443
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0a254587282dea43a3507fbbeca35bd7aa9604f3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492269"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711576"
 ---
 # <a name="imetadataimportenumfieldswithname-method"></a>Метод IMetaDataImport::EnumFieldsWithName
+
 Перечисляет токены FieldDef заданного типа с указанным именем.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT EnumFieldsWithName (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель.  
   
@@ -57,26 +59,28 @@ HRESULT EnumFieldsWithName (
  `pcTokens`  
  заполняет Фактическое число токенов FieldDef, возвращаемых в `rFields` .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  В отличие от [IMetaDataImport:: EnumFields](imetadataimport-enumfields-method.md), `EnumFieldsWithName` отменяет все маркеры полей, у которых нет указанного имени.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumFieldsWithName`успешно возвращено.|  
+|`S_OK`|`EnumFieldsWithName` успешно возвращено.|  
 |`S_FALSE`|Нет полей для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

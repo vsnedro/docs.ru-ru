@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 783dce92-8a98-43db-8f78-888d943dd5b2
 topic_type:
 - apiref
-ms.openlocfilehash: 4d2be9960f8935b754791a8badd4ea98b5d54912
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 30de1448a7d1452e1e9049411010e7f43d13eb70
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795915"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712642"
 ---
 # <a name="cordebugexceptionunwindcallbacktype-enumeration"></a>Перечисление CorDebugExceptionUnwindCallbackType
+
 Указывает событие, о котором сообщает обратный вызов во время фазы перемотки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,14 +34,15 @@ typedef enum CorDebugExceptionUnwindCallbackType {
 } CorDebugExceptionUnwindCallbackType;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`DEBUG_EXCEPTION_UNWIND_BEGIN`|Начало процесса очистки.|  
 |`DEBUG_EXCEPTION_INTERCEPTED`|Исключение перехвачено.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

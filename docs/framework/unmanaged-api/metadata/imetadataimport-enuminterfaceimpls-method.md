@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ba6e178f-128b-4e47-a13c-b4be73eb106c
 topic_type:
 - apiref
-ms.openlocfilehash: 910c40413075131765a37e00703ac892e3f39641
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0b040a2741a44b9d361dabc38c26b8934659003b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492243"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711524"
 ---
 # <a name="imetadataimportenuminterfaceimpls-method"></a>Метод IMetaDataImport::EnumInterfaceImpls
+
 Перечисляет все интерфейсы, реализованные указанным `TypeDef` .
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT EnumInterfaceImpls (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель.  
   
@@ -57,23 +59,24 @@ HRESULT EnumInterfaceImpls (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumInterfaceImpls`успешно возвращено.|  
+|`S_OK`|`EnumInterfaceImpls` успешно возвращено.|  
 |`S_FALSE`|Отсутствуют токены MethodDef для перечисления. В этом случае `pcImpls` значение равно нулю.|  
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Перечисление Возвращает коллекцию `mdInterfaceImpl` токенов для каждого интерфейса, реализованного с помощью указанного объекта `TypeDef` . Маркеры интерфейса возвращаются в том порядке, в котором были указаны интерфейсы (с помощью `DefineTypeDef` или `SetTypeDefProps` ). Свойства возвращаемых `mdInterfaceImpl` токенов можно запрашивать с помощью [жетинтерфацеимплпропс](imetadataimport-getinterfaceimplprops-method.md).
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

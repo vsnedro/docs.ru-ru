@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type:
 - apiref
-ms.openlocfilehash: 0443f58b79e60111756308cc4843daf86d1fc823
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 189a276b4228038ab1d70620ce3a4a0f4342b245
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795872"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712525"
 ---
 # <a name="cordebuggenerationtypes-enumeration"></a>Перечисление CorDebugGenerationTypes
+
 Указывает на создание области памяти в управляемой куче.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,9 +36,9 @@ typedef enum CorDebugGenerationTypes {
 } CorDebugRegionTypes;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Имя члена|Описание|  
+|Имя участника|Описание|  
 |-----------------|-----------------|  
 |`CorDebug_Gen0`|Поколение 0.|  
 |`CorDebug_Gen1`|Поколение 1.|  
@@ -47,6 +48,7 @@ typedef enum CorDebugGenerationTypes {
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

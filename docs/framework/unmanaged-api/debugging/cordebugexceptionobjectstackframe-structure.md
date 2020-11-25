@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
 topic_type:
 - apiref
-ms.openlocfilehash: 7eccaf984b187e463195bb3804f87bbb2c7ad47b
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 9b904596ed1cce4c4cf2676676508dfb3851e8ce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795928"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712681"
 ---
 # <a name="cordebugexceptionobjectstackframe-structure"></a>Структура CorDebugExceptionObjectStackFrame
+
 Представляет сведения о кадре стека из объекта исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,19 +36,21 @@ typedef struct CorDebugExceptionObjectStackFrame {
 } CorDebugExceptionObjectStackFrame;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`pModule`|Указатель на объект ICorDebugModule для текущего кадра.|  
 |`ip`|Значение указателя инструкций (EIP/RIP) для текущего кадра.|  
 |`methodDef`|Токен метода для текущего кадра.|  
 |`isLastForeignExceptionFrame`|Значение, указывающее, является ли кадр последним кадром во внешнем исключении.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Вызывающая сторона должна освободить указатель на объект ICorDebugModule, когда он больше не используется.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

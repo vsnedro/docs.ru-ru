@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: fe0ac7e7-c9e1-4ec1-9f4e-1c56d63d73ac
 topic_type:
 - apiref
-ms.openlocfilehash: ebbd8dc2b715541850ed3b3bc530c0dd28993e1d
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 53660a5b10858632dffc5b31c290e9cb98d634c4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378129"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712304"
 ---
 # <a name="icordebugregisterset2setregisters-method"></a>Метод ICorDebugRegisterSet2::SetRegisters
-`SetRegisters`не реализован в .NET Framework версии 2,0. Этот метод не следует вызывать.  
+
+`SetRegisters` не реализован в .NET Framework версии 2,0. Этот метод не следует вызывать.  
   
 > [!NOTE]
 > Используйте операции более высокого уровня, такие как [ICorDebugILFrame:: SetIP](icordebugilframe-setip-method.md) или [ICorDebugNativeFrame:: SetIP](icordebugnativeframe-setip-method.md).  
@@ -40,6 +41,7 @@ HRESULT SetRegisters (
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -48,7 +50,7 @@ HRESULT SetRegisters (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)
 - [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)

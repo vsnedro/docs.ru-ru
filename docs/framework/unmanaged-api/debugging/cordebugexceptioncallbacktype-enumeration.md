@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
 topic_type:
 - apiref
-ms.openlocfilehash: d5cdb8c6740970f6a7469be8c763961bf76d6ecc
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: cddcf66939a2ae7ab9e7f63a6fd61b72c56f6c7a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795945"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712733"
 ---
 # <a name="cordebugexceptioncallbacktype-enumeration"></a>Перечисление CorDebugExceptionCallbackType
+
 Указывает тип обратного вызова, сделанный из события [ICorDebugManagedCallback2:: Exception](icordebugmanagedcallback2-exception-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,9 +36,9 @@ typedef enum CorDebugExceptionCallbackType {
 } CorDebugExceptionCallbackType;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`DEBUG_EXCEPTION_FIRST_CHANCE`|Возникло исключение.|  
 |`DEBUG_EXCEPTION_USER_FIRST_CHANCE`|Процесс, виндуп исключение, вошел в пользовательский код.|  
@@ -45,6 +46,7 @@ typedef enum CorDebugExceptionCallbackType {
 |`DEBUG_EXCEPTION_UNHANDLED`|Исключение не было обработано.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

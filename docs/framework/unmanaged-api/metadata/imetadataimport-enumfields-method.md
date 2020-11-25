@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1d23247e-c58c-45db-afd8-83aa89cde18e
 topic_type:
 - apiref
-ms.openlocfilehash: 1ff2dd64dc4797bc485550c30f7204644a3adb47
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 74035e9551cb1d622b326e511c3884e1eadf057f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492282"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711602"
 ---
 # <a name="imetadataimportenumfields-method"></a>Метод IMetaDataImport::EnumFields
+
 Перечисляет токены FieldDef для типа, на который ссылается указанный токен TypeDef.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT EnumFields (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель.  
   
@@ -57,19 +59,20 @@ HRESULT EnumFields (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumFields`успешно возвращено.|  
+|`S_OK`|`EnumFields` успешно возвращено.|  
 |`S_FALSE`|Нет полей для перечисления. В этом случае значение `pcTokens` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

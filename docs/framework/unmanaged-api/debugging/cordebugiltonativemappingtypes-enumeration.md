@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
 topic_type:
 - apiref
-ms.openlocfilehash: 808fc70a308eff1b05aa49ea2bb89fe53377c973
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: ecb88195e3ecc7c540679a683005798247afe57f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795850"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712434"
 ---
 # <a name="cordebugiltonativemappingtypes-enumeration"></a>Перечисление CorDebugIlToNativeMappingTypes
+
 Указывает, соответствует ли определенный диапазон машинных инструкций, представленный экземпляром структуры COR_DEBUG_IL_TO_NATIVE_MAP, Специальному региону кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,15 +35,16 @@ typedef enum CorDebugIlToNativeMappingTypes {
 } CorDebugIlToNativeMappingTypes;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`NO_MAPPING`|Диапазон машинных инструкций не соответствует ни одной специальной области кода.|  
 |`PROLOG`|Диапазон машинных инструкций соответствует прологу.|  
 |`EPILOG`|Диапазон машинных инструкций соответствует заключительному фрагменту.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

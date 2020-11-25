@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa
 topic_type:
 - apiref
-ms.openlocfilehash: ef11aa48f679592126f736c2877c697f02cb5e62
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 276d36c511105087190cb7e9dfeaa6932efc67ff
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379245"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712109"
 ---
 # <a name="icordebugremote-interface"></a>Интерфейс ICorDebugRemote
+
 Позволяет запускать или подключать управляемый отладчик к удаленному целевому процессу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -63,10 +64,12 @@ interface ICorDebugRemote : IUnknown
 |[Метод ICorDebugRemote::CreateProcessEx](icordebugremote-createprocessex-method.md)|Создает процесс на удаленном компьютере для управляемой отладки.|  
 |[Метод ICorDebugRemote::DebugActiveProcessEx](icordebugremote-debugactiveprocessex-method.md)|Запускает процесс на удаленном компьютере в отладчике.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  В настоящее время эта функция поддерживается только для отладки целевого объекта приложения на основе Silverlight, который выполняется на удаленном компьютере Macintosh.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -75,7 +78,7 @@ interface ICorDebugRemote : IUnknown
   
  **.NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

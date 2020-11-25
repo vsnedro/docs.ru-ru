@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 94e02e31-67ea-4b00-8148-a46740a4571d
 topic_type:
 - apiref
-ms.openlocfilehash: 5e88652ff75223e30e6abc454f1e1af91494c7b2
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 9407dda7aab337f667cd5043b562d0eac94f0f04
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396694"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711927"
 ---
 # <a name="icordebugtype-interface"></a>Интерфейс ICorDebugType
+
 Представляет тип — базовый или сложный (то есть определяемый пользователем). Если тип универсален, интерфейс `ICorDebugType` представляет универсальный тип с экземплярами.  
   
 ## <a name="methods"></a>Методы  
@@ -36,8 +37,9 @@ ms.locfileid: "83396694"
 |[Метод GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md)|Возвращает указатель интерфейса на объект ICorDebugValue, содержащий значение статического поля, на которое ссылается заданный токен поля в указанном кадре стека.|  
 |[Метод GetType](icordebugtype-gettype-method.md)|Возвращает значение Корелементтипе, описывающее собственный тип среды CLR, <xref:System.Type> на который ссылается this `ICorDebugType` .|  
   
-## <a name="remarks"></a>Remarks  
- Если тип является универсальным, `ICorDebugClass` представляет тип, не являющийся экземпляром. `ICorDebugType`Интерфейс представляет экземпляр универсального типа. Например, таблица Hashtable \< K, V> будет представлена в `ICorDebugClass` , тогда как Hashtable \< Int32, String> будет представлена `ICorDebugType` .  
+## <a name="remarks"></a>Комментарии  
+
+ Если тип является универсальным, `ICorDebugClass` представляет тип, не являющийся экземпляром. `ICorDebugType`Интерфейс представляет экземпляр универсального типа. Например, таблица Hashtable будет \<K, V> представлена с помощью `ICorDebugClass` , тогда как Hashtable будет \<Int32, String> представлена `ICorDebugType` .  
   
  Типы, не являющиеся универсальными, представлены как, так `ICorDebugClass` и `ICorDebugType` . Последний интерфейс появился в .NET Framework версии 2,0 для обработки создания экземпляра типа.  
   
@@ -45,6 +47,7 @@ ms.locfileid: "83396694"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,6 +56,6 @@ ms.locfileid: "83396694"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

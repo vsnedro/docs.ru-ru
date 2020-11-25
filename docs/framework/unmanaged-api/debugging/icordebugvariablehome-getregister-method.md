@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a5eecd7b-b04c-4266-bff2-7c8771d519a8
 topic_type:
 - apiref
-ms.openlocfilehash: 6cf66774209bd07426872c29c15b2225421c2b4d
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 7f912f4b13620b567f5aa097604e98112d85f02d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396823"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711758"
 ---
 # <a name="icordebugvariablehomegetregister-method"></a>Метод ICorDebugVariableHome::
+
 Возвращает регистр, содержащий переменную с типом расположения `VLT_REGISTER` , и базовый регистр для переменной с типом расположения `VLT_REGISTER_RELATIVE` .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetRegister(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pRegister`  
  заполняет Значение перечисления CorDebugRegister, указывающее регистр для переменной с типом расположения `VLT_REGISTER` и базовый регистр для переменной с типом расположения `VLT_REGISTER_RELATIVE` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Метод возвращает следующие значения:  
   
 |Значение|Описание|  
@@ -46,6 +49,7 @@ HRESULT GetRegister(
 |`E_FAIL`|Переменная не находится в регистре или расположении, относительно регистра.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -54,7 +58,7 @@ HRESULT GetRegister(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление VariableLocationType](variablelocationtype-enumeration.md)
 - [Интерфейс ICorDebugVariableHome](icordebugvariablehome-interface.md)

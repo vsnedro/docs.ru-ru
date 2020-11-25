@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
 topic_type:
 - apiref
-ms.openlocfilehash: 320cfae93f8aae94f9315e8e20ed6cf7f9cced7c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b92e9ab714e2d8d2c66ed5546deba16352e8e390
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491320"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711147"
 ---
 # <a name="imetadataimportgetcustomattributeprops-method"></a>Метод IMetaDataImport::GetCustomAttributeProps
+
 Возвращает значение пользовательского атрибута по указанному токену метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetCustomAttributeProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cv`  
  [in] Токен метаданных, который представляет извлекаемый пользовательский атрибут.  
   
@@ -53,19 +55,21 @@ HRESULT GetCustomAttributeProps (
  `pcbSize`  
  [out, optional] Размер в байтах данных, возвращаемых в *`ppBlob`.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Пользовательский атрибут хранится в виде массива данных, в формате, который поддерживается подсистемой метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

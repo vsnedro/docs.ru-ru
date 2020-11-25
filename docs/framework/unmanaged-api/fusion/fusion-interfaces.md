@@ -6,17 +6,19 @@ helpviewer_keywords:
 - fusion interfaces [.NET Framework]
 - unmanaged interfaces [.NET Framework], fusion
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
-ms.openlocfilehash: 81c66825e69d9526abddfe06133426a2274ad08f
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 59e34a39bada1dcf5e66a0c5b92a7fcbfb41d884
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108196"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95711693"
 ---
 # <a name="fusion-interfaces"></a>Fusion-интерфейсы
+
 В этом разделе описываются неуправляемые интерфейсы, используемые API Fusion для доступа к свойствам ресурсов приложения и для размещения правильных версий этих ресурсов для приложения.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Интерфейс IAppIdAuthority](iappidauthority-interface.md)  
  Предоставляет методы, создающие и сравнивающие ключи для удостоверений приложений и ссылок.  
   
@@ -27,7 +29,7 @@ ms.locfileid: "73108196"
  Представляет отдельную сборку в глобальном кэше сборок.  
   
  [Интерфейс IAssemblyEnum](iassemblyenum-interface.md)  
- Представляет перечислитель для массива объектов `IAssemblyName`.  
+ Представляет перечислитель для массива `IAssemblyName` объектов.  
   
  [Интерфейс IAssemblyName](iassemblyname-interface.md)  
  Предоставляет методы для описания и работы с уникальным удостоверением сборки.  
@@ -39,13 +41,13 @@ ms.locfileid: "73108196"
  Представляет уникальную сигнатуру кода, определяющего приложение в текущей области.  
   
  [Интерфейс IEnumDefinitionIdentity](ienumdefinitionidentity-interface.md)  
- Служит в качестве перечислителя для коллекции объектов `IDefinitionIdentity`.  
+ Служит в качестве перечислителя для коллекции `IDefinitionIdentity` объектов.  
   
  [Интерфейс IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md)  
  Служит в качестве перечислителя для атрибутов объекта Code в текущей области.  
   
  [Интерфейс IEnumReferenceIdentity](ienumreferenceidentity-interface.md)  
- Служит перечислителем для коллекции объектов `IReferenceIdentity`.  
+ Служит в качестве перечислителя для коллекции `IReferenceIdentity` объектов.  
   
  [Интерфейс IIdentityAuthority](iidentityauthority-interface.md)  
  Управляет ключами удостоверений для объектов кода.  
@@ -62,12 +64,14 @@ ms.locfileid: "73108196"
  [Интерфейс IReferenceIdentity](ireferenceidentity-interface.md)  
  Представляет ссылку на уникальную сигнатуру объекта кода.  
   
-## <a name="reference"></a>Справочники  
+## <a name="reference"></a>Справочник  
+
  <xref:System.Reflection>  
   
  <xref:System.Reflection.Emit>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Глобальные статические функции Fusion](fusion-global-static-functions.md)  
   
  [Перечисления Fusion](fusion-enumerations.md)  
