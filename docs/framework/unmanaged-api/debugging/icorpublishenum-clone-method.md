@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9a26ea3-b8eb-4b8e-854f-9a2ca26b3b39
 topic_type:
 - apiref
-ms.openlocfilehash: 38f49e8fe632e9b38ede8815de6d8865278351f9
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 44ecba99999d04603477f411e68834548f6a7cda
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421206"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95693558"
 ---
 # <a name="icorpublishenumclone-method"></a>Метод ICorPublishEnum::Clone
+
 Создает копию этого объекта [ICorPublishEnum](icorpublishenum-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppEnum`  
  заполняет Указатель на адрес `ICorPublishEnum` объекта, который является копией этого `ICorPublishEnum` объекта.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
@@ -46,6 +49,6 @@ HRESULT Clone (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorPublishEnum](icorpublishenum-interface.md)
