@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: c1e744b8-a6fb-4d9c-a971-8babc875d8f0
 topic_type:
 - apiref
-ms.openlocfilehash: d2252f58af1a319d953fb320a99fad1cfec3dca0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6f6e531c99d341eba39939a184d2424256d9e155
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492724"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701878"
 ---
-# <a name="imetadataerroronerror-method"></a><span data-ttu-id="7b48f-102">Метод IMetaDataError::OnError</span><span class="sxs-lookup"><span data-stu-id="7b48f-102">IMetaDataError::OnError Method</span></span>
-<span data-ttu-id="7b48f-103">Предоставляет уведомление об ошибках, возникающих во время слияния метаданных.</span><span class="sxs-lookup"><span data-stu-id="7b48f-103">Provides notification of errors that occur during the metadata merge.</span></span>  
+# <a name="imetadataerroronerror-method"></a><span data-ttu-id="cfb20-102">Метод IMetaDataError::OnError</span><span class="sxs-lookup"><span data-stu-id="cfb20-102">IMetaDataError::OnError Method</span></span>
+
+<span data-ttu-id="cfb20-103">Предоставляет уведомление об ошибках, возникающих во время слияния метаданных.</span><span class="sxs-lookup"><span data-stu-id="cfb20-103">Provides notification of errors that occur during the metadata merge.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="7b48f-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="7b48f-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="cfb20-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="cfb20-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT OnError (  
@@ -34,22 +35,24 @@ HRESULT OnError (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="7b48f-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="7b48f-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="cfb20-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="cfb20-105">Parameters</span></span>  
+
  `hrError`  
- <span data-ttu-id="7b48f-106">окне Значение ошибки HRESULT, возвращаемое вызывающему методу.</span><span class="sxs-lookup"><span data-stu-id="7b48f-106">[in] The HRESULT error value returned to the calling method.</span></span>  
+ <span data-ttu-id="cfb20-106">окне Значение ошибки HRESULT, возвращаемое вызывающему методу.</span><span class="sxs-lookup"><span data-stu-id="cfb20-106">[in] The HRESULT error value returned to the calling method.</span></span>  
   
  `token`  
- <span data-ttu-id="7b48f-107">окне Токен метаданных объекта кода, который был объединен при возникновении ошибки.</span><span class="sxs-lookup"><span data-stu-id="7b48f-107">[in] The metadata token of the code object that was being merged when the error occurred.</span></span>  
+ <span data-ttu-id="cfb20-107">окне Токен метаданных объекта кода, который был объединен при возникновении ошибки.</span><span class="sxs-lookup"><span data-stu-id="cfb20-107">[in] The metadata token of the code object that was being merged when the error occurred.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="7b48f-108">Требования</span><span class="sxs-lookup"><span data-stu-id="7b48f-108">Requirements</span></span>  
- <span data-ttu-id="7b48f-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="7b48f-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="7b48f-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="7b48f-110">**Header:** Cor.h</span></span>  
-  
- <span data-ttu-id="7b48f-111">**Библиотека:** Используется в качестве ресурса в MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="7b48f-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="7b48f-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="7b48f-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="7b48f-113">См. также</span><span class="sxs-lookup"><span data-stu-id="7b48f-113">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="cfb20-108">Требования</span><span class="sxs-lookup"><span data-stu-id="cfb20-108">Requirements</span></span>  
 
-- [<span data-ttu-id="7b48f-114">Интерфейс IMetaDataError</span><span class="sxs-lookup"><span data-stu-id="7b48f-114">IMetaDataError Interface</span></span>](imetadataerror-interface.md)
+ <span data-ttu-id="cfb20-109">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="cfb20-109">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="cfb20-110">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="cfb20-110">**Header:** Cor.h</span></span>  
+  
+ <span data-ttu-id="cfb20-111">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="cfb20-111">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="cfb20-112">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="cfb20-112">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="cfb20-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="cfb20-113">See also</span></span>
+
+- [<span data-ttu-id="cfb20-114">Интерфейс IMetaDataError</span><span class="sxs-lookup"><span data-stu-id="cfb20-114">IMetaDataError Interface</span></span>](imetadataerror-interface.md)
