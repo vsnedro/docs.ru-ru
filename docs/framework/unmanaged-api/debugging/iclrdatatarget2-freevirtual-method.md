@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 26fb69f8-1467-4711-bd24-cb117c63938f
 topic_type:
 - apiref
-ms.openlocfilehash: 0a36af5b411673081e74aa243ec8e0f8f876f238
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 1fb701a40abe2dc6e51443837c07ee5ba05ddfbe
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860472"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723653"
 ---
-# <a name="iclrdatatarget2freevirtual-method"></a><span data-ttu-id="e63d0-102">Метод ICLRDataTarget2::FreeVirtual</span><span class="sxs-lookup"><span data-stu-id="e63d0-102">ICLRDataTarget2::FreeVirtual Method</span></span>
-<span data-ttu-id="e63d0-103">Вызывается службами доступа к данным среды CLR для освобождения памяти, которая была ранее выделена в адресном пространстве целевого процесса.</span><span class="sxs-lookup"><span data-stu-id="e63d0-103">Called by the common language runtime (CLR) data access services to free memory that was previously allocated in the address space of the target process.</span></span>  
+# <a name="iclrdatatarget2freevirtual-method"></a><span data-ttu-id="9693b-102">Метод ICLRDataTarget2::FreeVirtual</span><span class="sxs-lookup"><span data-stu-id="9693b-102">ICLRDataTarget2::FreeVirtual Method</span></span>
+
+<span data-ttu-id="9693b-103">Вызывается службами доступа к данным среды CLR для освобождения памяти, которая была ранее выделена в адресном пространстве целевого процесса.</span><span class="sxs-lookup"><span data-stu-id="9693b-103">Called by the common language runtime (CLR) data access services to free memory that was previously allocated in the address space of the target process.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="e63d0-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="e63d0-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="9693b-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9693b-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT FreeVirtual(  
@@ -35,31 +36,34 @@ HRESULT FreeVirtual(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="e63d0-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="e63d0-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="9693b-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="9693b-105">Parameters</span></span>  
+
  `addr`  
- <span data-ttu-id="e63d0-106">окне `CLRDATA_ADDRESS` Значение, указывающее начальный адрес памяти для высвобождения.</span><span class="sxs-lookup"><span data-stu-id="e63d0-106">[in] A `CLRDATA_ADDRESS` value that specifies the starting address of the memory to be freed.</span></span>  
+ <span data-ttu-id="9693b-106">окне `CLRDATA_ADDRESS` Значение, указывающее начальный адрес памяти для высвобождения.</span><span class="sxs-lookup"><span data-stu-id="9693b-106">[in] A `CLRDATA_ADDRESS` value that specifies the starting address of the memory to be freed.</span></span>  
   
  `size`  
- <span data-ttu-id="e63d0-107">окне Размер (в байтах) памяти, которая должна быть освобождена.</span><span class="sxs-lookup"><span data-stu-id="e63d0-107">[in] The size, in bytes, of the memory to be freed.</span></span>  
+ <span data-ttu-id="9693b-107">окне Размер (в байтах) памяти, которая должна быть освобождена.</span><span class="sxs-lookup"><span data-stu-id="9693b-107">[in] The size, in bytes, of the memory to be freed.</span></span>  
   
  `typeFlags`  
- <span data-ttu-id="e63d0-108">окне Флаги, управляющие освобождением памяти.</span><span class="sxs-lookup"><span data-stu-id="e63d0-108">[in] Flags that control the freeing of memory.</span></span> <span data-ttu-id="e63d0-109">См. раздел `VirtualFree` функция Win32.</span><span class="sxs-lookup"><span data-stu-id="e63d0-109">See the Win32 `VirtualFree` function.</span></span>  
+ <span data-ttu-id="9693b-108">окне Флаги, управляющие освобождением памяти.</span><span class="sxs-lookup"><span data-stu-id="9693b-108">[in] Flags that control the freeing of memory.</span></span> <span data-ttu-id="9693b-109">См. раздел `VirtualFree` функция Win32.</span><span class="sxs-lookup"><span data-stu-id="9693b-109">See the Win32 `VirtualFree` function.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="e63d0-110">Примечания</span><span class="sxs-lookup"><span data-stu-id="e63d0-110">Remarks</span></span>  
- <span data-ttu-id="e63d0-111">`FreeVirtual` Метод служит логической оболочкой для функции Win32 `VirtualFree` .</span><span class="sxs-lookup"><span data-stu-id="e63d0-111">The `FreeVirtual` method serves as a logical wrapper for the Win32 `VirtualFree` function.</span></span>  
-  
- <span data-ttu-id="e63d0-112">Этот метод реализуется модулем записи отладчика.</span><span class="sxs-lookup"><span data-stu-id="e63d0-112">This method is implemented by the writer of the debugging application.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="e63d0-113">Требования</span><span class="sxs-lookup"><span data-stu-id="e63d0-113">Requirements</span></span>  
- <span data-ttu-id="e63d0-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="e63d0-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="e63d0-115">**Заголовок:** Клрдата. idl, Клрдата. h</span><span class="sxs-lookup"><span data-stu-id="e63d0-115">**Header:** ClrData.idl, ClrData.h</span></span>  
-  
- <span data-ttu-id="e63d0-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="e63d0-116">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="e63d0-117">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="e63d0-117">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="e63d0-118">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="e63d0-118">See also</span></span>
+## <a name="remarks"></a><span data-ttu-id="9693b-110">Комментарии</span><span class="sxs-lookup"><span data-stu-id="9693b-110">Remarks</span></span>  
 
-- [<span data-ttu-id="e63d0-119">Интерфейс ICLRDataTarget2</span><span class="sxs-lookup"><span data-stu-id="e63d0-119">ICLRDataTarget2 Interface</span></span>](iclrdatatarget2-interface.md)
-- [<span data-ttu-id="e63d0-120">Метод AllocVirtual</span><span class="sxs-lookup"><span data-stu-id="e63d0-120">AllocVirtual Method</span></span>](iclrdatatarget2-allocvirtual-method.md)
+ <span data-ttu-id="9693b-111">`FreeVirtual`Метод служит логической оболочкой для `VirtualFree` функции Win32.</span><span class="sxs-lookup"><span data-stu-id="9693b-111">The `FreeVirtual` method serves as a logical wrapper for the Win32 `VirtualFree` function.</span></span>  
+  
+ <span data-ttu-id="9693b-112">Этот метод реализуется модулем записи отладчика.</span><span class="sxs-lookup"><span data-stu-id="9693b-112">This method is implemented by the writer of the debugging application.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="9693b-113">Требования</span><span class="sxs-lookup"><span data-stu-id="9693b-113">Requirements</span></span>  
+
+ <span data-ttu-id="9693b-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="9693b-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="9693b-115">**Заголовок:** Клрдата. idl, Клрдата. h</span><span class="sxs-lookup"><span data-stu-id="9693b-115">**Header:** ClrData.idl, ClrData.h</span></span>  
+  
+ <span data-ttu-id="9693b-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="9693b-116">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="9693b-117">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9693b-117">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="9693b-118">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="9693b-118">See also</span></span>
+
+- [<span data-ttu-id="9693b-119">Интерфейс ICLRDataTarget2</span><span class="sxs-lookup"><span data-stu-id="9693b-119">ICLRDataTarget2 Interface</span></span>](iclrdatatarget2-interface.md)
+- [<span data-ttu-id="9693b-120">Метод AllocVirtual</span><span class="sxs-lookup"><span data-stu-id="9693b-120">AllocVirtual Method</span></span>](iclrdatatarget2-allocvirtual-method.md)
