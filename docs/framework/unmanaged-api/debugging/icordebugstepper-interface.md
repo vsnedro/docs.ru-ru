@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 622fdfa37c93e406950e73941775828ae4b112fa
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 8b5bbb65034e5b715532397c9ecc650da9aee912
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379426"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95718297"
 ---
 # <a name="icordebugstepper-interface"></a>Интерфейс ICorDebugStepper
+
 Представляет предпринимаемый отладчиком шаг при выполнении кода, служащий идентификатором на промежутке между подачей команды и ее завершением, а также предоставляет возможность отмены шага.  
   
 ## <a name="methods"></a>Методы  
@@ -37,7 +38,8 @@ ms.locfileid: "83379426"
 |[Метод StepOut](icordebugstepper-stepout-method.md)|Приводит `ICorDebugStepper` к пошаговому вызову содержащего его потока и выполнению, когда текущий кадр возвращает управление вызывающему кадру.|  
 |[Метод StepRange](icordebugstepper-steprange-method.md)|Приводит `ICorDebugStepper` к пошаговому вызову содержащего его потока и возврату при достижении кода, находящегося за последним из указанных диапазонов.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `ICorDebugStepper`Интерфейс выполняет следующие задачи:  
   
 - Он выступает в качестве идентификатора между выдаваемыми командой Step и завершением этой команды.  
@@ -54,6 +56,7 @@ ms.locfileid: "83379426"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -62,6 +65,6 @@ ms.locfileid: "83379426"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

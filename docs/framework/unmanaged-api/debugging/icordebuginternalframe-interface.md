@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bb4772ca-0d54-4185-b738-7a6ffe9ea85a
 topic_type:
 - apiref
-ms.openlocfilehash: 332bc99795c0a4c896b60c61941a5a24b3f4accc
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: b7e738f06f9a9a06caedec2bdd0de4ab57f6d9b3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209960"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719727"
 ---
 # <a name="icordebuginternalframe-interface"></a>Интерфейс ICorDebugInternalFrame
 
@@ -31,12 +31,13 @@ ms.locfileid: "83209960"
 |------------|-----------------|  
 |[Метод GetFrameType](icordebuginternalframe-getframetype-method.md)|Возвращает тип этого внутреннего кадра.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -45,6 +46,6 @@ ms.locfileid: "83209960"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b3e7d0c2-3baa-4ef8-8e3f-b865cf252940
 topic_type:
 - apiref
-ms.openlocfilehash: 155354b335caf83c466c8d9d6711f36c7efc9298
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: dd915a82551f5bed688a28ab77f5d6cf4e38af0f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894810"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719259"
 ---
 # <a name="icordebugassemblyenumnext-method"></a>Метод ICorDebugAssemblyEnum::Next
+
 Возвращает указанное количество сборок из коллекции, начиная с текущего положения курсора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  окне Число извлекаемых сборок.  
   
@@ -47,6 +49,7 @@ HRESULT Next (
  заполняет Указатель на число фактически возвращенных сборок. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

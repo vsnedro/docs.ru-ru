@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6351fc92-b126-4af6-9bf3-0a8ce92845fc
 topic_type:
 - apiref
-ms.openlocfilehash: 7ba9f68e102696da107b5cb782c76cb55ed95ee6
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 99bce831405d722f1f1ca0ae56e60f95f2d905e8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441972"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719935"
 ---
 # <a name="inotifysource2setnotifyfilter-method"></a>Метод INotifySource2::SetNotifyFilter
+
 Назначает фильтр уведомлений для использования с этим источником.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT SetNotifyFilter
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `in_NotifyFilter`  
  окне Побитовое сочетание значений перечисления [NOTIFY_FILTER](notify-filter-enumeration.md) , которые указывают обратные вызовы для API отладчика.  
   
@@ -43,12 +45,14 @@ HRESULT SetNotifyFilter
  окне Указатель на структуру [USER_THREAD](user-thread-structure.md) , которая идентифицирует потоки для API отладчика.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс INotifySource2](inotifysource2-interface.md)
 - [Интерфейс INotifyConnection2](inotifyconnection2-interface.md)

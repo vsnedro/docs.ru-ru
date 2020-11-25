@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: cf30e27c-1f7e-43a2-ba1e-01e4137301db
 topic_type:
 - apiref
-ms.openlocfilehash: 9dbe0219f5932a9d212edaf5181b96335c47db0e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b64e58a79f3dbe0c91b0c0cefc4a9d918c700cf9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501018"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95718635"
 ---
 # <a name="cor_prf_code_info-structure"></a>Структура COR_PRF_CODE_INFO
+
 Представляет один непрерывный блок машинного кода, хранящийся в памяти.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,7 +34,7 @@ typedef struct _COR_PRF_CODE_INFO {
 } COR_PRF_CODE_INFO;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -41,6 +42,7 @@ typedef struct _COR_PRF_CODE_INFO {
 |`size`|Размер блока.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -49,6 +51,6 @@ typedef struct _COR_PRF_CODE_INFO {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Структуры профилирования](profiling-structures.md)

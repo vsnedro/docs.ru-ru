@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 5416de70-43f2-4cdf-a11f-d570759c9c0c
 topic_type:
 - apiref
-ms.openlocfilehash: ff15297eb479f7474c9f07123a29263fb4da3205
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: ce3f289ae914817071fad5274c45d1e5fae71a06
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893979"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717985"
 ---
 # <a name="icordebugclass2-interface"></a>Интерфейс ICorDebugClass2
 
@@ -32,12 +32,13 @@ ms.locfileid: "82893979"
 |[Метод GetParameterizedType](icordebugclass2-getparameterizedtype-method.md)|Возвращает объявление типа для этого класса.|  
 |[Метод SetJMCStatus](icordebugclass2-setjmcstatus-method.md)|Для каждого метода этого класса задает значение, указывающее, является ли метод определяемым пользователем кодом.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

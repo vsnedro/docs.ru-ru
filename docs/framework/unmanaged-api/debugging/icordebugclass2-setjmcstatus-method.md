@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 077e6c7f-f857-480c-bebb-76ee1de4e8fc
 topic_type:
 - apiref
-ms.openlocfilehash: 9fb2f960098e970b4d3d9f0be499f4d9fda6558e
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 1db2c9b5e65ae150f05242172f5ea16db433bbb5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893895"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717829"
 ---
 # <a name="icordebugclass2setjmcstatus-method"></a>Метод ICorDebugClass2::SetJMCStatus
+
 Для каждого метода класса задает значение, указывающее, является ли метод определяемым пользователем кодом.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,15 +35,18 @@ HRESULT SetJMCStatus (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `bIsJustMyCode`  
- окне Задайте значение `true` , чтобы указать, что метод является пользовательским кодом; в противном случае `false`задайте для значение.  
+ окне Задайте значение, чтобы `true` указать, что метод является определяемым пользователем кодом; в противном случае задайте для значение `false` .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Средство "только мой код" (JMC) пропускает код, не определенный пользователем. Определяемый пользователем код должен быть подмножеством отлаживаемого кода.  
   
- `SetJMCStatus`Возвращает значение HRESULT, равное S_FALSE, если не удается задать значение для какого бы то ни было метода, даже если оно успешно задает значение для всех остальных методов.  
+ `SetJMCStatus` Возвращает значение HRESULT, равное S_FALSE, если не удается задать значение для какого бы то ни было метода, даже если оно успешно задает значение для всех остальных методов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

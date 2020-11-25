@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cfe4b634-18bf-44b8-9773-d94fb7e8a480
 topic_type:
 - apiref
-ms.openlocfilehash: ca428d680df1710d8e74441d9945d4c3545b0482
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 27417c379411e242c48d6d9b0c99de833f7ede8a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73121147"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719272"
 ---
 # <a name="strongnamesignatureverificationex-function"></a>Функция StrongNameSignatureVerificationEx
+
 Получает значение, указывающее, содержит ли находящийся по указанному пути манифест сборки подпись строгого имени.  
   
  Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: StrongNameSignatureVerificationEx](../hosting/iclrstrongname-strongnamesignatureverificationex-method.md) .  
@@ -38,31 +39,35 @@ BOOLEAN StrongNameSignatureVerificationEx (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszFilePath`  
  окне Путь к переносимому исполняемому файлу (exe или DLL) для проверяемой сборки.  
   
  `fForceVerification`  
- [in] `true` выполнить проверку, даже если необходимо переопределить параметры реестра; в противном случае `false`.  
+ [входные] `true` для выполнения проверки, даже если необходимо переопределить параметры реестра; в противном случае — `false` .  
   
  `pfWasVerified`  
- [out] `true`, если подпись строгого имени была проверена; в противном случае `false`. `pfWasVerified` также имеет значение `false`, если проверка прошла успешно из-за параметров реестра.  
+ [out] `true` значение, если подпись строгого имени проверена; в противном случае — `false` . `pfWasVerified` также имеет значение, `false` Если проверка прошла успешно из-за параметров реестра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true`, если проверка прошла успешно; в противном случае `false`.  
+
+ `true` значение, если проверка прошла успешно; в противном случае — `false` .  
   
-## <a name="remarks"></a>Заметки  
- `StrongNameSignatureVerificationEx` предоставляет такую возможность, как функция [StrongNameSignatureVerification](strongnamesignatureverification-function.md) . Однако второй входной параметр и выходной параметр для `StrongNameSignatureVerificationEx` имеют тип `BOOLEAN` вместо `DWORD`.  
+## <a name="remarks"></a>Комментарии  
+
+ `StrongNameSignatureVerificationEx` предоставляет такую возможность, как функция [StrongNameSignatureVerification](strongnamesignatureverification-function.md) . Однако второй входной параметр и выходной параметр для `StrongNameSignatureVerificationEx` имеют тип, `BOOLEAN` а не `DWORD` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** StrongName. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку Mscoree. dll  
+ **Библиотека:** Включается в качестве ресурса в mscoree.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameSignatureVerificationEx](../hosting/iclrstrongname-strongnamesignatureverificationex-method.md)
 - [Метод StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md)

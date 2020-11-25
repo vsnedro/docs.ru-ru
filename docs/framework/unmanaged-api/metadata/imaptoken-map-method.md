@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
 topic_type:
 - apiref
-ms.openlocfilehash: 027694cee1b3e4d990796ba31300918f6d859679
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 51cca1ab61027090b0d22781dfd740038bc9372d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008200"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95718206"
 ---
 # <a name="imaptokenmap-method"></a>Метод IMapToken::Map
+
 Сопоставляет связь между сборками, используя подписи метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,24 +36,27 @@ HRESULT Map (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tkImp`  
  окне Токен метаданных, представляющий импортированный объект кода.  
   
  `tkEmit`  
  окне Токен метаданных, представляющий созданный объект кода.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Когда повторное отображение токена происходит во время слияния, исходный маркер ограничивается в импортированной (исходной) области метаданных, а новый маркер — в области исрожденных (целевых) метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMapToken](imaptoken-interface.md)

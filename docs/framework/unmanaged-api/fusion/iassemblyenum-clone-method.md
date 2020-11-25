@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0014bb66-590c-486c-9ade-f2133905cd99
 topic_type:
 - apiref
-ms.openlocfilehash: 34b5f3bd5908d3833a2223b078f8d796234641be
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: e1eef43858e4f38888f9f31e3076b092fbdd5633
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134453"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719909"
 ---
 # <a name="iassemblyenumclone-method"></a>Метод IAssemblyEnum::Clone
+
 Создает неполную копию этого объекта [IAssemblyEnum](iassemblyenum-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,18 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppEnum`  
  заполняет Указатель на копию.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyEnum](iassemblyenum-interface.md)
