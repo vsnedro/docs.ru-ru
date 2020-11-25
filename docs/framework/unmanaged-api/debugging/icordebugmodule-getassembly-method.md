@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 989762c4-3d15-4485-b8ee-69e0fa8ec895
 topic_type:
 - apiref
-ms.openlocfilehash: 86e2b28448caf2a872e44490e8ee4763b056ed44
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: e0ae11ee24a5e25fb439d5c502c4cda5bcb6a80e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83206966"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95710276"
 ---
-# <a name="icordebugmodulegetassembly-method"></a><span data-ttu-id="5b11a-102">Метод ICorDebugModule::GetAssembly</span><span class="sxs-lookup"><span data-stu-id="5b11a-102">ICorDebugModule::GetAssembly Method</span></span>
-<span data-ttu-id="5b11a-103">Возвращает содержащуюся сборку для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="5b11a-103">Gets the containing assembly for this module.</span></span>  
+# <a name="icordebugmodulegetassembly-method"></a><span data-ttu-id="4feeb-102">Метод ICorDebugModule::GetAssembly</span><span class="sxs-lookup"><span data-stu-id="4feeb-102">ICorDebugModule::GetAssembly Method</span></span>
+
+<span data-ttu-id="4feeb-103">Возвращает содержащуюся сборку для этого модуля.</span><span class="sxs-lookup"><span data-stu-id="4feeb-103">Gets the containing assembly for this module.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="5b11a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="5b11a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="4feeb-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="4feeb-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetAssembly(  
@@ -33,15 +34,17 @@ HRESULT GetAssembly(
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="5b11a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="5b11a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="4feeb-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="4feeb-105">Parameters</span></span>  
+
  `ppAssembly`  
- <span data-ttu-id="5b11a-106">заполняет Указатель на объект ICorDebugAssembly, представляющий сборку, содержащую этот модуль.</span><span class="sxs-lookup"><span data-stu-id="5b11a-106">[out] A pointer to an ICorDebugAssembly object that represents the assembly containing this module.</span></span>  
+ <span data-ttu-id="4feeb-106">заполняет Указатель на объект ICorDebugAssembly, представляющий сборку, содержащую этот модуль.</span><span class="sxs-lookup"><span data-stu-id="4feeb-106">[out] A pointer to an ICorDebugAssembly object that represents the assembly containing this module.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="5b11a-107">Требования</span><span class="sxs-lookup"><span data-stu-id="5b11a-107">Requirements</span></span>  
- <span data-ttu-id="5b11a-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="5b11a-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="4feeb-107">Требования</span><span class="sxs-lookup"><span data-stu-id="4feeb-107">Requirements</span></span>  
+
+ <span data-ttu-id="4feeb-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="4feeb-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="5b11a-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="5b11a-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="4feeb-109">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="4feeb-109">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="5b11a-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="5b11a-110">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="4feeb-110">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="4feeb-110">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="5b11a-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="5b11a-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="4feeb-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="4feeb-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
