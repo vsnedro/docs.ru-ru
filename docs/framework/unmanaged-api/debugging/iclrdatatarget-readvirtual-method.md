@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type:
 - apiref
-ms.openlocfilehash: e285df37d83ff73fe29fe293380a4053cb5a9eea
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 3455397345451cc0c39cc98a0ea4374eab8350a8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860552"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95703386"
 ---
-# <a name="iclrdatatargetreadvirtual-method"></a><span data-ttu-id="b600a-102">Метод ICLRDataTarget::ReadVirtual</span><span class="sxs-lookup"><span data-stu-id="b600a-102">ICLRDataTarget::ReadVirtual Method</span></span>
-<span data-ttu-id="b600a-103">Считывает данные из указанного адреса виртуальной памяти в указанный буфер.</span><span class="sxs-lookup"><span data-stu-id="b600a-103">Reads data from the specified virtual memory address into the specified buffer.</span></span>  
+# <a name="iclrdatatargetreadvirtual-method"></a><span data-ttu-id="d5e16-102">Метод ICLRDataTarget::ReadVirtual</span><span class="sxs-lookup"><span data-stu-id="d5e16-102">ICLRDataTarget::ReadVirtual Method</span></span>
+
+<span data-ttu-id="d5e16-103">Считывает данные из указанного адреса виртуальной памяти в указанный буфер.</span><span class="sxs-lookup"><span data-stu-id="d5e16-103">Reads data from the specified virtual memory address into the specified buffer.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b600a-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b600a-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d5e16-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d5e16-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT ReadVirtual (  
@@ -37,28 +38,30 @@ HRESULT ReadVirtual (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="b600a-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="b600a-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="d5e16-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="d5e16-105">Parameters</span></span>  
+
  `address`  
- <span data-ttu-id="b600a-106">окне CLRDATA_ADDRESS, в которой хранится адрес виртуальной памяти.</span><span class="sxs-lookup"><span data-stu-id="b600a-106">[in] A CLRDATA_ADDRESS that stores the virtual memory address.</span></span>  
+ <span data-ttu-id="d5e16-106">окне CLRDATA_ADDRESS, в которой хранится адрес виртуальной памяти.</span><span class="sxs-lookup"><span data-stu-id="d5e16-106">[in] A CLRDATA_ADDRESS that stores the virtual memory address.</span></span>  
   
  `buffer`  
- <span data-ttu-id="b600a-107">заполняет Указатель на буфер, который получает данные.</span><span class="sxs-lookup"><span data-stu-id="b600a-107">[out] A pointer to a buffer that receives the data.</span></span>  
+ <span data-ttu-id="d5e16-107">заполняет Указатель на буфер, который получает данные.</span><span class="sxs-lookup"><span data-stu-id="d5e16-107">[out] A pointer to a buffer that receives the data.</span></span>  
   
  `bytesRequested`  
- <span data-ttu-id="b600a-108">окне Длина буфера.</span><span class="sxs-lookup"><span data-stu-id="b600a-108">[in] The length of the buffer.</span></span>  
+ <span data-ttu-id="d5e16-108">окне Длина буфера.</span><span class="sxs-lookup"><span data-stu-id="d5e16-108">[in] The length of the buffer.</span></span>  
   
  `bytesRead`  
- <span data-ttu-id="b600a-109">заполняет Указатель на число возвращаемых байтов.</span><span class="sxs-lookup"><span data-stu-id="b600a-109">[out] A pointer to the number of bytes returned.</span></span>  
+ <span data-ttu-id="d5e16-109">заполняет Указатель на число возвращаемых байтов.</span><span class="sxs-lookup"><span data-stu-id="d5e16-109">[out] A pointer to the number of bytes returned.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="b600a-110">Требования</span><span class="sxs-lookup"><span data-stu-id="b600a-110">Requirements</span></span>  
- <span data-ttu-id="b600a-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b600a-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="b600a-112">**Заголовок:** Клрдата. idl, Клрдата. h</span><span class="sxs-lookup"><span data-stu-id="b600a-112">**Header:** ClrData.idl, ClrData.h</span></span>  
-  
- <span data-ttu-id="b600a-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="b600a-113">**Library:** CorGuids.lib</span></span>  
-  
- <span data-ttu-id="b600a-114">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b600a-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="b600a-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="b600a-115">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="d5e16-110">Требования</span><span class="sxs-lookup"><span data-stu-id="d5e16-110">Requirements</span></span>  
 
-- [<span data-ttu-id="b600a-116">Интерфейс ICLRDataTarget</span><span class="sxs-lookup"><span data-stu-id="b600a-116">ICLRDataTarget Interface</span></span>](iclrdatatarget-interface.md)
+ <span data-ttu-id="d5e16-111">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="d5e16-111">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="d5e16-112">**Заголовок:** Клрдата. idl, Клрдата. h</span><span class="sxs-lookup"><span data-stu-id="d5e16-112">**Header:** ClrData.idl, ClrData.h</span></span>  
+  
+ <span data-ttu-id="d5e16-113">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="d5e16-113">**Library:** CorGuids.lib</span></span>  
+  
+ <span data-ttu-id="d5e16-114">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d5e16-114">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="d5e16-115">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="d5e16-115">See also</span></span>
+
+- [<span data-ttu-id="d5e16-116">Интерфейс ICLRDataTarget</span><span class="sxs-lookup"><span data-stu-id="d5e16-116">ICLRDataTarget Interface</span></span>](iclrdatatarget-interface.md)
