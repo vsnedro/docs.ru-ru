@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type:
 - apiref
-ms.openlocfilehash: ab2121605f974fdf3f9053214a4d29d8b0dd72db
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 2996c219ccf4e975c45fb531807abc4a608bae73
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83211449"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95694780"
 ---
 # <a name="icordebugprocessistransitionstub-method"></a>Метод ICorDebugProcess::IsTransitionStub
+
 Возвращает значение, указывающее, находится ли адрес в заглушке, что приведет к переходу в управляемый код.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,18 +35,21 @@ HRESULT IsTransitionStub(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `address`  
- окне `CORDB_ADDRESS`Значение, указывающее рассматриваемый адрес.  
+ окне `CORDB_ADDRESS` Значение, указывающее рассматриваемый адрес.  
   
  `pbTransitionStub`  
  заполняет Указатель на логическое значение, равное, `true` если указанный адрес находится внутри заглушки, которая приведет к переходу в управляемый код; в противном случае `pbTransitionStub` — * `false` .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `IsTransitionStub`Метод может использоваться неуправляемым кодом пошагового выполнения, чтобы решить, когда следует возвращать контроль пошагового выполнения в управляемое средство Организации.  
   
  Вы также можете идентифицировать заглушки перехода, просмотрев информацию в переносимом исполняемом файле (PE).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 87c4fcb2-7703-4a2e-afb6-42973381b960
 topic_type:
 - apiref
-ms.openlocfilehash: 1bd2f537cfa6a27c24ba91ea7caa29dc9e71a74e
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 3ff4efe8b3e2932da7f65246bf4ad614a4dd86cd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396325"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95694416"
 ---
 # <a name="icorpublish-interface"></a>Интерфейс ICorPublish
+
 Служит общим интерфейсом для публикации сведений о процессах и сведениях о доменах приложений в этих процессах.  
   
 ## <a name="methods"></a>Методы  
@@ -32,6 +33,7 @@ ms.locfileid: "83396325"
 |[Метод GetProcess](icorpublish-getprocess-method.md)|Возвращает экземпляр [ICorPublishProcess](icorpublishprocess-interface.md) , представляющий процесс с указанным идентификатором.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
@@ -40,7 +42,7 @@ ms.locfileid: "83396325"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Кокласс CorpubPublish](corpubpublish-coclass.md)

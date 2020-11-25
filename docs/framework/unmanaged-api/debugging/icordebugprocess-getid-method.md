@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b0ba8453-fa7e-4c14-93e5-335409cd4a47
 topic_type:
 - apiref
-ms.openlocfilehash: 8cd40ffb60bf837a9aa3b0db34892350a05964d7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 65d9c3688f3a41312a17e6058f73596fc2503dd4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213287"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95694988"
 ---
 # <a name="icordebugprocessgetid-method"></a>Метод ICorDebugProcess::GetID
+
 Возвращает идентификатор операционной системы (ОС) процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,10 +33,12 @@ HRESULT GetID([out] DWORD *pdwProcessId);
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pdwProcessId`  
  заполняет Уникальный идентификатор процесса.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

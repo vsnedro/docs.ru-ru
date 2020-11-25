@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9ffb4498-7719-49d3-8890-df2c22248a0c
 topic_type:
 - apiref
-ms.openlocfilehash: 0594caf53a889d51ea78e2ee9d6fff4d30f7cff2
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9400c4fa3ddcefef923d7bcfaae80e2cef62dc7d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205290"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95695469"
 ---
 # <a name="icordebugobjectenum-interface"></a>Интерфейс ICorDebugObjectEnum
 
@@ -31,12 +31,13 @@ ms.locfileid: "83205290"
 |------------|-----------------|  
 |[Метод Next](icordebugobjectenum-next-method.md)|Возвращает RVA указанного числа объектов из перечисления, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -45,6 +46,6 @@ ms.locfileid: "83205290"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

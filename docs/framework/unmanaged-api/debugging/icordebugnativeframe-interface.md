@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 04819c58-7246-4b32-befb-680cf1dbc436
 topic_type:
 - apiref
-ms.openlocfilehash: dd87745a29514a2f9f05aa142baae4e05d4b4a7b
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 043dc0fdd5218d7bc6b80428d1eb891b3f01ee8c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83206602"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95695560"
 ---
 # <a name="icordebugnativeframe-interface"></a>Интерфейс ICorDebugNativeFrame
 
@@ -39,12 +39,13 @@ ms.locfileid: "83206602"
 |[Метод GetRegisterSet](icordebugnativeframe-getregisterset-method.md)|Возвращает указатель на объект [ICorDebugRegisterSet](icordebugregisterset-interface.md) , представляющий набор регистров для этого объекта `ICorDebugNativeFrame` .|  
 |[Метод SetIP](icordebugnativeframe-setip-method.md)|Задает указатель инструкции в указанном расположении смещения в машинном коде.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -53,6 +54,6 @@ ms.locfileid: "83206602"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

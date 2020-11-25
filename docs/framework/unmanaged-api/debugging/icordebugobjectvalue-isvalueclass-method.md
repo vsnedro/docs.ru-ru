@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 13d89a4a-5d9d-4a79-9600-5e2a98c3d166
 topic_type:
 - apiref
-ms.openlocfilehash: 13b100012215a7c2cee51ad5af39ec1447ab4e5b
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 7b637889986425767fd7e1166c73df3301075422
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207510"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95695287"
 ---
 # <a name="icordebugobjectvalueisvalueclass-method"></a>Метод ICorDebugObjectValue::IsValueClass
+
 Возвращает значение, указывающее, является ли значение этого объекта типом значения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT IsValueClass (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbIsValueClass`  
  заполняет Указатель на логическое значение, равное, `true` Если значение объекта, представленное этим "ICorDebugObjectValue", является типом значения, а не ссылочным типом; в противном случае `pbIsValueClass` — значение `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,4 +49,4 @@ HRESULT IsValueClass (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

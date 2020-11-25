@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 28e4b2f6-9589-445c-be24-24a3306795e7
 topic_type:
 - apiref
-ms.openlocfilehash: ccd2350589126109ff11da439a8b83abfc4b91fa
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a0abc7168ff7bffdbb835c1c1bc93de9df6e381c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210479"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95694871"
 ---
 # <a name="icordebugprocessreadmemory-method"></a>Метод ICorDebugProcess::ReadMemory
+
 Считывает указанную область памяти для этого процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,8 +37,9 @@ HRESULT ReadMemory(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `address`  
- окне `CORDB_ADDRESS`Значение типа, указывающее базовый адрес памяти для чтения.  
+ окне `CORDB_ADDRESS` Значение типа, указывающее базовый адрес памяти для чтения.  
   
  `size`  
  окне Число байтов, считываемых из памяти.  
@@ -48,7 +50,8 @@ HRESULT ReadMemory(
  `read`  
  заполняет Указатель на число байтов, передаваемых в указанный буфер.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `ReadMemory`Метод в основном предназначен для использования в отладке взаимодействия для проверки областей памяти, используемых неуправляемой частью отлаживаемого кода. Этот метод также можно использовать для считывания кода на языке MSIL и собственного JIT-скомпилированного кода.  
   
  Все управляемые точки останова будут удалены из данных, возвращаемых в `buffer` параметре. Никакие изменения для собственных точек останова, заданных [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md), не выполняются.  
@@ -56,6 +59,7 @@ HRESULT ReadMemory(
  Кэширование памяти процесса не выполняется.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

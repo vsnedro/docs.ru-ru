@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c96770b0-3e09-47bb-bd29-20353b043459
 topic_type:
 - apiref
-ms.openlocfilehash: 660bc13e8109994f59444c0adebbc97f54de0b43
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 745be25183f6b94e7a807c4230961d72e2836fe5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207594"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95695339"
 ---
 # <a name="icordebugobjectvaluegetfieldvalue-method"></a>Метод ICorDebugObjectValue::GetFieldValue
+
 Возвращает значение указанного поля указанного класса для данного значения объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,21 +37,24 @@ HRESULT GetFieldValue (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pClass`  
  окне Указатель на объект "ICorDebugClass", представляющий класс, для которого необходимо получить значение поля.  
   
  `fieldDef`  
- окне `mdFieldDef`Токен, ссылающийся на метаданные, описывающие поле.  
+ окне `mdFieldDef` Токен, ссылающийся на метаданные, описывающие поле.  
   
  `ppValue`  
  заполняет Указатель на объект "ICorDebugValue", представляющий значение указанного поля.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Класс, указанный в `pClass` параметре, должен находиться в иерархии класса значения объекта, а поле должно быть полем этого класса.  
   
- `GetFieldValue`Метод по-прежнему будет выполняться для универсальных объектов и универсальных классов. Например, если Мидиктионари \< V> наследуется из \< строки словаря, V>, а значение объекта имеет тип мидиктионари \< Int32>, передача `ICorDebugClass` объекта для словаря \< K, V> успешно получит поле \< строки словаря,> Int32.  
+ `GetFieldValue`Метод по-прежнему будет выполняться для универсальных объектов и универсальных классов. Например, если Мидиктионари \<V> наследуется от Dictionary \<string,V> , а значение объекта имеет тип мидиктионари \<int32> , передача `ICorDebugClass` объекта для словаря \<K,V> успешно получит поле Dictionary \<string,int32> .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -59,4 +63,4 @@ HRESULT GetFieldValue (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
