@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 287e5ede-b3a7-4ef8-a756-4fca3f285a82
 topic_type:
 - apiref
-ms.openlocfilehash: 71e2c7f6790f29872c051bb5cea50755068057e9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9f485728ddb050abf815bf8ba26c69be9c909785
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714982"
 ---
 # <a name="iclrruntimeinfo-interface"></a>Интерфейс ICLRRuntimeInfo
+
 Предоставляет методы, возвращающие сведения о конкретной среде CLR, включая версию, каталог и состояние загрузки. Этот интерфейс также предоставляет специальные функции среды выполнения без инициализации среды выполнения. Он включает метод [LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) , относительный во время выполнения, метод [GetProcAddress](iclrruntimeinfo-getprocaddress-method.md) для конкретного модуля среды выполнения и интерфейсы, предоставляемые средой выполнения, [через метод метода](iclrruntimeinfo-getinterface-method.md) WebMethod.  
   
 ## <a name="methods"></a>Методы  
@@ -42,15 +43,16 @@ ms.locfileid: "84504047"
 |[Метод SetDefaultStartupFlags](iclrruntimeinfo-setdefaultstartupflags-method.md)|Задает флаги запуска среды CLR и файл конфигурации узла.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы размещения](hosting-interfaces.md)
 - [Размещение](index.md)

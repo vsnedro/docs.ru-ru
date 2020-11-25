@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1f25b294-72b6-4882-a49b-6c9d364b6008
 topic_type:
 - apiref
-ms.openlocfilehash: 6256d052780b1c610e61267be2517954d722a42d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 858341d5b8b1b3ecbe9dd5bd39a38f9cfd0d08dc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610604"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714176"
 ---
 # <a name="isymunmanagedvariablegetaddressfield2-method"></a>Метод ISymUnmanagedVariable::GetAddressField2
+
 Получает второе поле адреса для этой переменной. Его значение зависит от типа адреса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,16 +34,19 @@ HRESULT GetAddressField2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pRetVal`  
  заполняет Указатель на объект `ULONG32` , который получает второе поле адреса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
 - [Метод GetAddressField1](isymunmanagedvariable-getaddressfield1-method.md)

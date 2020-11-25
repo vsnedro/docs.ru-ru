@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29c6fba5-4cea-417d-b484-7ed22ebff1c9
 topic_type:
 - apiref
-ms.openlocfilehash: 2a67f50fa1042e8d3957a9a0394507f260a328c6
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: c556fe247754b363ece0c5dc60750068276ddcc4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009019"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714761"
 ---
 # <a name="imetadataassemblyimport-interface"></a>Интерфейс IMetaDataAssemblyImport
+
 Предоставляет методы для доступа и изучения содержимого манифеста сборки.  
   
 ## <a name="methods"></a>Методы  
@@ -44,15 +45,16 @@ ms.locfileid: "84009019"
 |[Метод GetManifestResourceProps](imetadataassemblyimport-getmanifestresourceprops-method.md)|Возвращает параметры свойства указанного ресурса манифеста.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e
 topic_type:
 - apiref
-ms.openlocfilehash: 7b1fc70380fff3c551c56043f49c2deda507e366
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: e8ead998907d55b0bfbf82e5f6f4e7c504f657ec
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703840"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714163"
 ---
 # <a name="iclrhostprotectionmanager-interface"></a>Интерфейс ICLRHostProtectionManager
+
 Позволяет узлу блокировать выполнение конкретных управляемых классов, методов, свойств и полей в частично доверяемом коде.  
   
 ## <a name="methods"></a>Методы  
@@ -32,15 +33,16 @@ ms.locfileid: "83703840"
 |[Метод SetProtectedCategories](iclrhostprotectionmanager-setprotectedcategories-method.md)|Указывает категории управляемых типов и членов, выполнение которых должно быть заблокировано в частично доверенном коде.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EApiCategories](eapicategories-enumeration.md)
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)

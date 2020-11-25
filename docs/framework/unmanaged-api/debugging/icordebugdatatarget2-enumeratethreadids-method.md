@@ -2,14 +2,15 @@
 title: Метод ICorDebugDataTarget2::EnumerateThreadIDs
 ms.date: 03/30/2017
 ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11
-ms.openlocfilehash: 4a65b76f384cdad68cba75af524dbe672c309624
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 31a839076b34901ae1a8f3b43021f64f77629fc0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976490"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713851"
 ---
 # <a name="icordebugdatatarget2enumeratethreadids-method"></a>Метод ICorDebugDataTarget2::EnumerateThreadIDs
+
 Возвращает список идентификаторов активных потоков.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,6 +24,7 @@ HRESULT EnumerateThreadIDs(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  cThreadIDs  
  [входной] Максимальное число потоков, идентификаторы которых могут быть возвращены.  
   
@@ -32,12 +34,13 @@ HRESULT EnumerateThreadIDs(
  pThreadIDs  
  Массив идентификаторов потоков.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** См. раздел [требования к системе](../../get-started/system-requirements.md). **Заголовок:** CorDebug. idl, CorDebug. h  
   
  **Библиотека:** CorGuids.lib  
