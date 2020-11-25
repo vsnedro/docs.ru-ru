@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
 topic_type:
 - apiref
-ms.openlocfilehash: de41b5e0aaf835ee2d4e4f32696fe104d5830b57
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: a2deabc5f1c7ea0f42b6d8ec3944d984854ae571
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804448"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731284"
 ---
 # <a name="ihostmemorymanagervirtualalloc-method"></a>Метод IHostMemoryManager::VirtualAlloc
+
 Служит логической оболочкой для соответствующей функции Win32. Реализация Win32 `VirtualAlloc` резервирует или фиксирует область страниц в виртуальном адресном пространстве вызывающего процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT VirtualAlloc (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAddress`  
  окне Указатель на начальный адрес области для выделения.  
   
@@ -59,9 +61,9 @@ HRESULT VirtualAlloc (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`VirtualAlloc`успешно возвращено.|  
+|S_OK|`VirtualAlloc` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -69,20 +71,22 @@ HRESULT VirtualAlloc (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно памяти для завершения запроса на выделение|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Комментарии  
+
  Чтобы зарезервировать регион в адресном пространстве процесса, вызовите метод `VirtualAlloc` . `pAddress`Параметр содержит начальный адрес требуемого блока памяти. Обычно этот параметр имеет значение null. Операционная система хранит записи доступных диапазонов свободных адресов для вашего процесса. `pAddress`Значение NULL предписывает системе зарезервировать регион везде, где он видит. Кроме того, можно указать конкретный начальный адрес для блока памяти. В обоих случаях выходной параметр возвращается в `ppMem` виде указателя на выделенную память. Сама функция возвращает значение HRESULT.  
   
  Функция Win32 `VirtualAlloc` не имеет `ppMem` параметра и вместо нее возвращает указатель на выделенную память. Дополнительные сведения см. в документации по платформе Windows.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

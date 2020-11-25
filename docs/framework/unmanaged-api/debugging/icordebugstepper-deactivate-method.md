@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
 topic_type:
 - apiref
-ms.openlocfilehash: 760f69baf311cf320e9c358ba1c45c942934f1a5
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 0d7d5e7e6c9bc1a68feda85c5214f3ae95df9b97
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379395"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730595"
 ---
 # <a name="icordebugstepperdeactivate-method"></a>Метод ICorDebugStepper::Deactivate
+
 Заставляет этот объект ICorDebugStepper отменить последнюю полученную команду шага.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,9 +33,11 @@ HRESULT Deactivate ();
 ```  
   
 ## <a name="remarks"></a>Remarks  
+
  Новая команда пошагового выполнения может быть выдана после отмены последней полученной команды Step.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

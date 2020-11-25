@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 665f3cfc-cd6f-4880-906c-ea65ad384783
 topic_type:
 - apiref
-ms.openlocfilehash: 295d3d440529623f4569fd6c5f4debe7e4558990
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 942ee8234b79c6579acc009960f4571801fc3185
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499445"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730296"
 ---
 # <a name="icorprofilercallback4-interface"></a>Интерфейс ICorProfilerCallback4
+
 Предоставляет методы обратного вызова, используемые средой CLR для передачи информации в профилировщик.  
   
 ## <a name="methods"></a>Методы  
@@ -38,6 +39,7 @@ ms.locfileid: "84499445"
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -46,7 +48,7 @@ ms.locfileid: "84499445"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

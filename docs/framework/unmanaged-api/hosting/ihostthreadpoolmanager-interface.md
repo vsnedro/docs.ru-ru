@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type:
 - apiref
-ms.openlocfilehash: bac29b5950f1547c5c60ac716d40d2ef4b1a2cc2
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: b6625b0ef4dc3de4067514a0b39849c7a958d5c4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842485"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730764"
 ---
 # <a name="ihostthreadpoolmanager-interface"></a>Интерфейс IHostThreadPoolManager
+
 Предоставляет методы, позволяющие среде CLR настроить пул потоков и поместить рабочие элементы в очередь в пул потоков.  
   
 ## <a name="methods"></a>Методы  
@@ -35,19 +36,21 @@ ms.locfileid: "83842485"
 |[Метод SetMaxThreads](ihostthreadpoolmanager-setmaxthreads-method.md)|Задает максимальное число потоков, которые узел может поддерживать в пуле потоков.|  
 |[Метод SetMinThreads](ihostthreadpoolmanager-setminthreads-method.md)|Задает минимальное число бездействующих потоков, которые должны поддерживаться узлом в ожидаемых запросах.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Узел не требуется для настройки пула потоков с использованием значений, указанных в вызовах `SetMaxThreads` `SetMinThreads` методов и. В этом случае узел должен вернуть значение HRESULT E_NOTIMPL из этих методов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Threading>
 - <xref:System.Threading.ThreadPool>

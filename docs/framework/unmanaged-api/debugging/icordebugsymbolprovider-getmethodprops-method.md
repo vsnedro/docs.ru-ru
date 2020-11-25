@@ -2,14 +2,15 @@
 title: Метод ICorDebugSymbolProvider::GetMethodProps
 ms.date: 03/30/2017
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea
-ms.openlocfilehash: c9e73c4de7389405d9e4b643036709ff2dbb82e6
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5412b2f06445627c1240d6c8f4efb3ce6bbbec54
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379564"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730829"
 ---
 # <a name="icordebugsymbolprovidergetmethodprops-method"></a>Метод ICorDebugSymbolProvider::GetMethodProps
+
 Возвращает сведения о свойствах метода, такие как токен метаданных метода и сведения о его универсальных параметрах, для указанного относительного виртуального адреса (RVA) в этом методе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,6 +27,7 @@ HRESULT GetMethodProps(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `codeRVA`  
  [in] Относительный виртуальный адрес в методе, сведения о котором требуется извлечь.  
   
@@ -44,13 +46,15 @@ HRESULT GetMethodProps(
  `signature`  
  [out] Буфер, в котором хранятся сигнатуры TypeSpec для всех универсальных параметров.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Чтобы получить требуемый размер `signature` массива метода, присвойте `cbSignature` аргументу значение 0 и `signature` **значение NULL**. После возврата метода параметр `pcbSignature` будет содержать число байт, требуемое для массива `signature`.  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -59,7 +63,7 @@ HRESULT GetMethodProps(
   
  **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод GetTypeProps](icordebugsymbolprovider-gettypeprops-method.md)
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)

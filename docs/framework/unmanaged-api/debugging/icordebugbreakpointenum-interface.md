@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4c6f4f6e-52cc-402e-881b-7b8526544c90
 topic_type:
 - apiref
-ms.openlocfilehash: e391a02571481d75ce88ae3f3b2b6421705d661c
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 97e06a2f20dcc2bb3815b98ba29ff230e37ff29d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894702"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730166"
 ---
 # <a name="icordebugbreakpointenum-interface"></a>Интерфейс ICorDebugBreakpointEnum
 
@@ -31,12 +31,13 @@ ms.locfileid: "82894702"
 |------------|-----------------|  
 |[Метод Next](icordebugbreakpointenum-next-method.md)|Возвращает указанное количество `ICorDebugBreakpoint` экземпляров из перечисления, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: bd042f89-10b1-40ca-946e-46da082f5263
 topic_type:
 - apiref
-ms.openlocfilehash: e3cdb648397ca4f4aa2326e4f2349a5a14c3edcc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cde25a9507006c89ef6490c13ae82033f04c2931
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178294"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731037"
 ---
 # <a name="assemblycomparisonresult-enumeration"></a>Перечисление AssemblyComparisonResult
-Указывает эквивалентность двух идентификаторов сборки, определяемых функцией [CompareAssemblyIdentity.](compareassemblyidentity-function.md)  
+
+Указывает эквивалентность двух удостоверений сборки, как определено функцией [компареассемблидентити](compareassemblyidentity-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,29 +46,30 @@ typedef enum _tagAssemblyComparisonResult {
   
 ## <a name="members"></a>Члены  
   
-|Имя члена|Описание|  
+|Имя участника|Описание|  
 |-----------------|-----------------|  
-|`ACR_EquivalentFullMatch`|Означает, что все поля сборки в сравнении.|  
-|`ACR_EquivalentFXUnified`|Указывается, что сборки считаются эквивалентными на основе общей версии выполнения языка (CLR) унификации номеров сборочной версии в версии .NET Framework 2.0.|  
-|`ACR_EquivalentPartialFXUnified`|Указывает частичное совпадение сборок на основе объединения номеров сборочной версии CLR в .NET Framework 2.0.|  
+|`ACR_EquivalentFullMatch`|Указывает, что все поля сборки в совпадении сравнения.|  
+|`ACR_EquivalentFXUnified`|Указывает, что сборки считаются эквивалентными на основе унификации номеров версий сборки среды CLR в версии .NET Framework 2,0.|  
+|`ACR_EquivalentPartialFXUnified`|Указывает частичное совпадение сборок на основе унификации версий сборки CLR в .NET Framework 2,0.|  
 |`ACR_EquivalentPartialMatch`|Указывает частичное совпадение сборок.|  
-|`ACR_EquivalentPartialUnified`|Указывает частичное совпадение сборок на основе устаревшего объединения номеров версий.|  
-|`ACR_EquivalentPartialWeakNamed`|Указывает частичное совпадение просто названных сборок.|  
-|`ACR_EquivalentUnified`|Указывает, что сборки считаются эквивалентными на основе объединения номеров версий CLR в устаревших версиях рамочной программы .NET.|  
-|`ACR_EquivalentWeakNamed`|Указывает на совпадение между двумя просто названными сборками, номера версий которых были проигнорированы.|  
-|`ACR_NonEquivalent`|Указывает на то, что между двумя сборками не произошло совпадений.|  
-|`ACR_NonEquivalentPartialVersion`|Означает, что две сборки совпадают, за исключением их номеров версий, которые совпадают лишь частично.|  
-|`ACR_NonEquivalentVersion`|Означает, что две сборки совпадают, за исключением их номеров версий, которые не совпадают.|  
-|`ACR_Unknown`|Указывает на то, что причина неэквивалентности неизвестна.|  
+|`ACR_EquivalentPartialUnified`|Указывает частичное совпадение сборок на основе унификации устаревших номеров версий.|  
+|`ACR_EquivalentPartialWeakNamed`|Указывает частичное совпадение с простыми именованными сборками.|  
+|`ACR_EquivalentUnified`|Указывает, что сборки считаются эквивалентными на основе унификации версии CLR номеров версий в устаревших версиях .NET Framework.|  
+|`ACR_EquivalentWeakNamed`|Указывает соответствие между двумя простыми именованными сборками, Номера версий которых были пропущены.|  
+|`ACR_NonEquivalent`|Указывает, что между двумя сборками не произошло совпадений.|  
+|`ACR_NonEquivalentPartialVersion`|Указывает, что две сборки совпадают, за исключением номеров версий, которые соответствуют только частично.|  
+|`ACR_NonEquivalentVersion`|Указывает, что две сборки совпадают, за исключением номеров версий, которые не совпадают.|  
+|`ACR_Unknown`|Указывает, что причина неравенства неизвестна.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Fusion.h  
+ **Заголовок:** Fusion. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

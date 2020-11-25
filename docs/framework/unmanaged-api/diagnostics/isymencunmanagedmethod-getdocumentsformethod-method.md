@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bd6ccde5-d578-48d8-abed-b474fbd48d13
 topic_type:
 - apiref
-ms.openlocfilehash: 89be772ee3d8a6fc5acb74d5ebe6d3c691764f89
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: d9fe18225dc27e93d4e97940cba878e4d73b4ed2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441959"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730530"
 ---
 # <a name="isymencunmanagedmethodgetdocumentsformethod-method"></a>Метод ISymENCUnmanagedMethod::GetDocumentsForMethod
+
 Возвращает документы, в которых у этого метода есть строки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetDocumentsForMethod(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cDocs`  
  окне Длина буфера, на который указывает `pcDocs` .  
   
@@ -45,11 +47,13 @@ HRESULT GetDocumentsForMethod(
  окне Буфер, содержащий документы.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае — код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

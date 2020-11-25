@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2e6bbaea-79ba-448c-a0e3-7c90fc7c2939
 topic_type:
 - apiref
-ms.openlocfilehash: af90886390b59932d3ae146a70fc2901ec1c378d
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 14c89e808ea8e41bbee46a59a60bc1876f3800d2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894671"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730192"
 ---
 # <a name="icordebugbreakpointenumnext-method"></a>Метод ICorDebugBreakpointEnum::Next
+
 Возвращает указанное число экземпляров Икордебугбреакпоинт из перечисления, начиная с текущей позиции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,16 +38,18 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
- окне Число извлекаемых `ICorDebugBreakpoint` экземпляров.  
+ окне Число `ICorDebugBreakpoint` извлекаемых экземпляров.  
   
  `breakpoints`  
  заполняет Массив указателей, каждый из которых указывает на `ICorDebugBreakpoint` объект, представляющий точку останова.  
   
  `pceltFetched`  
- заполняет Указатель на число фактически возвращенных `ICorDebugBreakpoint` экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
+ заполняет Указатель на число `ICorDebugBreakpoint` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

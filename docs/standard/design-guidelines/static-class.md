@@ -9,14 +9,15 @@ helpviewer_keywords:
 - classes [.NET Framework], design guidelines
 - type design guidelines, classes
 ms.assetid: d67c14d8-c4dd-443f-affb-4ccae677c9b6
-ms.openlocfilehash: efa5ca6e7b5e7b7d03cbe1d55471a388f3faab37
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2ae541898435773ca51dbc425c09a533dbef4e9e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828664"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730920"
 ---
 # <a name="static-class-design"></a>Разработка статичных классов
+
 Статический класс определяется как класс, который содержит только статические члены (конечно же, помимо членов экземпляров, наследуемых от <xref:System.Object?displayProperty=nameWithType> и, возможно, закрытого конструктора). Некоторые языки предоставляют встроенную поддержку статических классов. В C# 2,0 и более поздних версиях, когда класс объявлен как статический, он является запечатанным, абстрактным, а члены экземпляров не могут быть переопределены или объявлены.
 
  Статические классы являются компромиссом между чисто объектно-ориентированной архитектурой и простотой. Они обычно используются для предоставления сочетаний клавиш для других операций (например <xref:System.IO.File?displayProperty=nameWithType> ,), владельцев методов расширения или функциональных возможностей, для которых полная объектно-ориентированная оболочка не гарантируется (например, <xref:System.Environment?displayProperty=nameWithType> ).
@@ -35,7 +36,7 @@ ms.locfileid: "94828664"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

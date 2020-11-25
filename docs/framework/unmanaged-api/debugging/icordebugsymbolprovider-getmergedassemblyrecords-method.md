@@ -2,14 +2,15 @@
 title: Метод ICorDebugSymbolProvider::GetMergedAssemblyRecords
 ms.date: 03/30/2017
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
-ms.openlocfilehash: b7d26fa80a7a8ebe7b4606b914c8cd09c52df1e4
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 10bbcf2e6a536eeb4ab8141c10c177a53faa1c95
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379622"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730881"
 ---
 # <a name="icordebugsymbolprovidergetmergedassemblyrecords-method"></a>Метод ICorDebugSymbolProvider::GetMergedAssemblyRecords
+
 Возвращает символьные записи для всех объединенных сборок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,6 +24,7 @@ HRESULT GetMergedAssemblyRecords(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cRequestedRecords`  
  [in] Количество запрошенных символьных записей.  
   
@@ -32,12 +34,13 @@ HRESULT GetMergedAssemblyRecords(
  `pRecords`  
  Указатель на массив объектов [икордебугмержедассемблирекорд](icordebugmergedassemblyrecord-interface.md) .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,7 +49,7 @@ HRESULT GetMergedAssemblyRecords(
   
  **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)
