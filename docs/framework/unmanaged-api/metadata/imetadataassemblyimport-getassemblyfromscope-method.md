@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
 topic_type:
 - apiref
-ms.openlocfilehash: adcaac02526c7d72ffb75ba6c7552632173032cf
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: dc40b4a7cf61f8d6141b8e3e57c5e13fe2261b35
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009045"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731570"
 ---
-# <a name="imetadataassemblyimportgetassemblyfromscope-method"></a><span data-ttu-id="b1b49-102">Метод IMetaDataAssemblyImport::GetAssemblyFromScope</span><span class="sxs-lookup"><span data-stu-id="b1b49-102">IMetaDataAssemblyImport::GetAssemblyFromScope Method</span></span>
-<span data-ttu-id="b1b49-103">Возвращает указатель на сборку в текущей области.</span><span class="sxs-lookup"><span data-stu-id="b1b49-103">Gets a pointer to the assembly in the current scope.</span></span>  
+# <a name="imetadataassemblyimportgetassemblyfromscope-method"></a><span data-ttu-id="3845b-102">Метод IMetaDataAssemblyImport::GetAssemblyFromScope</span><span class="sxs-lookup"><span data-stu-id="3845b-102">IMetaDataAssemblyImport::GetAssemblyFromScope Method</span></span>
+
+<span data-ttu-id="3845b-103">Возвращает указатель на сборку в текущей области.</span><span class="sxs-lookup"><span data-stu-id="3845b-103">Gets a pointer to the assembly in the current scope.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="b1b49-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="b1b49-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="3845b-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="3845b-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetAssemblyFromScope (  
@@ -33,19 +34,21 @@ HRESULT GetAssemblyFromScope (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="b1b49-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="b1b49-105">Parameters</span></span>  
- `ptkAssembly`  
- <span data-ttu-id="b1b49-106">заполняет Указатель на полученный `mdAssembly` токен, идентифицирующий сборку.</span><span class="sxs-lookup"><span data-stu-id="b1b49-106">[out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="b1b49-107">Требования</span><span class="sxs-lookup"><span data-stu-id="b1b49-107">Requirements</span></span>  
- <span data-ttu-id="b1b49-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="b1b49-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="b1b49-109">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="b1b49-109">**Header:** Cor.h</span></span>  
-  
- <span data-ttu-id="b1b49-110">**Библиотека:** Используется в качестве ресурса в MsCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="b1b49-110">**Library:** Used as a resource in MsCorEE.dll</span></span>  
-  
- <span data-ttu-id="b1b49-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="b1b49-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="b1b49-112">См. также статью</span><span class="sxs-lookup"><span data-stu-id="b1b49-112">See also</span></span>
+## <a name="parameters"></a><span data-ttu-id="3845b-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="3845b-105">Parameters</span></span>  
 
-- [<span data-ttu-id="b1b49-113">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="b1b49-113">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)
+ `ptkAssembly`  
+ <span data-ttu-id="3845b-106">заполняет Указатель на полученный `mdAssembly` токен, идентифицирующий сборку.</span><span class="sxs-lookup"><span data-stu-id="3845b-106">[out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="3845b-107">Требования</span><span class="sxs-lookup"><span data-stu-id="3845b-107">Requirements</span></span>  
+
+ <span data-ttu-id="3845b-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="3845b-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="3845b-109">**Заголовок:** COR. h</span><span class="sxs-lookup"><span data-stu-id="3845b-109">**Header:** Cor.h</span></span>  
+  
+ <span data-ttu-id="3845b-110">**Библиотека:** Используется в качестве ресурса в MsCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="3845b-110">**Library:** Used as a resource in MsCorEE.dll</span></span>  
+  
+ <span data-ttu-id="3845b-111">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="3845b-111">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="3845b-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="3845b-112">See also</span></span>
+
+- [<span data-ttu-id="3845b-113">Интерфейс IMetaDataAssemblyImport</span><span class="sxs-lookup"><span data-stu-id="3845b-113">IMetaDataAssemblyImport Interface</span></span>](imetadataassemblyimport-interface.md)
