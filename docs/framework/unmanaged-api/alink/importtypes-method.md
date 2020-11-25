@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 351d4b4c-c939-486d-9471-51914a55f471
 topic_type:
 - apiref
-ms.openlocfilehash: 76d2b163f959111923bffb1348890f6fbb29828e
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 762f78900add70238971978ceecda089d0c725ce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445677"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705115"
 ---
 # <a name="importtypes-method"></a>Метод ImportTypes
+
 Инициирует импорт типов из каждой области, импортированной с помощью [метода ImportFile](importfile-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT ImportTypes(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки, в которую необходимо выполнить импорт.  
   
@@ -57,12 +59,14 @@ HRESULT ImportTypes(
  При необходимости получает число типов в указанной области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

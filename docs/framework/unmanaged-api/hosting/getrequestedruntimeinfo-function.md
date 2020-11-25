@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
 topic_type:
 - apiref
-ms.openlocfilehash: 0efda458d51677fcd16140cd0f0a835b76c20173
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: b120b854e1787824808dd64d95b0fa78ba6c9fa2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617182"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705492"
 ---
 # <a name="getrequestedruntimeinfo-function"></a>Функция GetRequestedRuntimeInfo
+
 Возвращает сведения о версии и каталоге о среде CLR, запрашиваемой приложением.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -46,6 +47,7 @@ HRESULT GetRequestedRuntimeInfo (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pExe`  
  окне Имя приложения.  
   
@@ -80,6 +82,7 @@ HRESULT GetRequestedRuntimeInfo (
  заполняет Указатель на длину строки версии.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает коды стандартных ошибок модели COM, как определено в файле WinError. h, в дополнение к следующим значениям.  
   
 |Код возврата|Описание|  
@@ -88,6 +91,7 @@ HRESULT GetRequestedRuntimeInfo (
 |ERROR_INSUFFICIENT_BUFFER|Буфер каталога недостаточно велик для хранения пути к каталогу.<br /><br /> -или-<br /><br /> Буфер версии недостаточно велик для хранения строки версии.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  `GetRequestedRuntimeInfo`Метод возвращает сведения времени выполнения о версии, загруженной в процесс, что не обязательно является последней версией, установленной на компьютере.  
   
  В .NET Framework версии 2,0 можно получить сведения о последней установленной версии с помощью `GetRequestedRuntimeInfo` метода следующим образом.  
@@ -113,15 +117,16 @@ HRESULT GetRequestedRuntimeInfo (
 - RUNTIME_INFO_REQUEST_X86  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Функция GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)
 - [Функция GetVersionFromProcess](getversionfromprocess-function.md)

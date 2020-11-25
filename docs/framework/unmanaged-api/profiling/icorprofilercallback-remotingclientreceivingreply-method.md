@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 15cfc300-8231-4ecb-9a04-19851c3eb484
 topic_type:
 - apiref
-ms.openlocfilehash: 0a21924008bcbfa0894218f57aee559a564f8003
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 058c66af85da6c902e3d628e1b1479bb88c4fa85
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499978"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704855"
 ---
 # <a name="icorprofilercallbackremotingclientreceivingreply-method"></a>Метод ICorProfilerCallback::RemotingClientReceivingReply
+
 Уведомляет профилировщик о завершении серверной части удаленного вызова, а также о получении и обработке ответа клиентом.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT RemotingClientReceivingReply(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCookie`  
  окне Значение, которое будет соответствовать значению, указанному в параметре [ICorProfilerCallback:: RemotingServerSendingReply](icorprofilercallback-remotingserversendingreply-method.md) в следующих условиях:  
   
@@ -49,6 +51,7 @@ HRESULT RemotingClientReceivingReply(
  окне Значение, равное, `true` Если вызов является асинхронным; в противном случае — `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -57,6 +60,6 @@ HRESULT RemotingClientReceivingReply(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

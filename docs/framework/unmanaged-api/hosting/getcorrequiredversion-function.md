@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
 topic_type:
 - apiref
-ms.openlocfilehash: 6b9fd62102056a8d5f859ac913f4786f04c1df7e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 9590d19f4e5f5890af53a108492bd1b6d130fb72
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617247"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704504"
 ---
 # <a name="getcorrequiredversion-function"></a>Функция GetCORRequiredVersion
+
 Возвращает требуемый номер версии среды CLR.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -37,6 +38,7 @@ HRESULT GetCORRequiredVersion (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbuffer`  
  заполняет Буфер, содержащий строку, указывающую номер версии.  
   
@@ -47,14 +49,15 @@ HRESULT GetCORRequiredVersion (
  заполняет Число байтов, возвращенных в буфере.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

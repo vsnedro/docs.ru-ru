@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
 topic_type:
 - apiref
-ms.openlocfilehash: d3e25f271fc434785e25e7b226ad98f86b5f8dfc
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ab2f30c485a755d4788926c13c2608e55a716c5c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492789"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704270"
 ---
 # <a name="imetadataemit2savedelta-method"></a>Метод IMetaDataEmit2::SaveDelta
+
 Сохраняет изменения из текущего сеанса "изменить и продолжить" в указанный файл.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SaveDelta (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szFile`  
  окне Имя файла, в котором необходимо сохранить изменения.  
   
@@ -42,15 +44,16 @@ HRESULT SaveDelta (
  [in] Зарезервировано. Должен равняться нулю.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

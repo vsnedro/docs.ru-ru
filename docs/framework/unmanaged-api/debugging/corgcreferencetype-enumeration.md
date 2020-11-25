@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
 topic_type:
 - apiref
-ms.openlocfilehash: d156f103c3812c91da380e722a1c6c95d621df4c
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: e2903637faa11a3c0a62080cc6fafcf1fc668a56
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860915"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704998"
 ---
 # <a name="corgcreferencetype-enumeration"></a>Перечисление CorGCReferenceType
+
 Идентифицирует источник объекта, в котором должна быть выполнена сборка мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -48,7 +49,7 @@ typedef enum {
   
 ## <a name="members"></a>Члены  
   
-|Имя члена|Описание|  
+|Имя участника|Описание|  
 |-----------------|-----------------|  
 |`CorHandleStrong`|Дескриптор строгой ссылки из таблицы дескрипторов объектов.|  
 |`CorHandleStrongPinning`|Указатель на закрепленную строгую ссылку из таблицы обработчика объектов.|  
@@ -64,14 +65,16 @@ typedef enum {
 |`CorHandleWeakOnly`|Возвращать только слабые ссылки из таблицы Handle. Это значение используется только методом [метод ICorDebugProcess5:: EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) .|  
 |`CorHandleAll`|Возвращает все ссылки из таблицы Handle. Это значение используется только методом [метод ICorDebugProcess5:: EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) .|  
   
-## <a name="remarks"></a>Примечания  
- `CorGCReferenceType` Перечисление используется следующим образом:  
+## <a name="remarks"></a>Комментарии  
+
+ `CorGCReferenceType`Перечисление используется следующим образом:  
   
 - В качестве значения `type` поля структуры [COR_GC_REFERENCE](cor-gc-reference-structure.md) указывает источник ссылки или маркера.  
   
 - В качестве `types` аргумента метода [метод ICorDebugProcess5:: EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) указывает типы дескрипторов, включаемых в перечисление.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

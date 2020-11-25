@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e2501fc8-b2bc-4dcc-9205-e3acd5a53ffe
 topic_type:
 - apiref
-ms.openlocfilehash: b5af877c26c20bf64a27618bf24a7bce5b410419
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 553a82475f241fac3a56c1fb009e3ed56b2c14f8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007784"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704257"
 ---
 # <a name="imetadataemitsetpropertyprops-method"></a>Метод IMetaDataEmit::SetPropertyProps
+
 Задает функции, хранимые в метаданных для свойства, определенного при предыдущем вызове [метода DefineProperty](imetadataemit-defineproperty-method.md).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -41,6 +42,7 @@ HRESULT SetPropertyProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pr`  
  окне Токен изменяемого свойства  
   
@@ -66,15 +68,16 @@ HRESULT SetPropertyProps (
  окне Массив других методов, связанных со свойством. Завершите этот массив `mdTokenNil` токеном.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

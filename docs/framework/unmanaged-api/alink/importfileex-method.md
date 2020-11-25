@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad276f3f-b303-46ac-97e0-66a377adaa4f
 topic_type:
 - apiref
-ms.openlocfilehash: bee7db61beb9ed8c00cf584924be690a67d92eac
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 9e373f133830a5bc1f3cf7bdc8034cb67725d797
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446955"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705206"
 ---
 # <a name="importfileex-method"></a>Метод ImportFileEx
+
 Импортирует указанную сборку или непривязанный модуль.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT ImportFileEx(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pszFilename`  
  Полное имя файла, из которого необходимо выполнить импорт.  
   
@@ -61,12 +63,14 @@ HRESULT ImportFileEx(
  Получает число импортированных файлов и (или) областей.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

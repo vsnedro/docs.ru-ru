@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 02c789fd-16fc-48c6-9619-56e87e2a37ca
 topic_type:
 - apiref
-ms.openlocfilehash: 7e270dbfc63c03e77cb4b0694296e48c2035b8a6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 59149e79e926a0b9a3e549e013bf178e54ddf6fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445688"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705180"
 ---
 # <a name="importfileex2-method"></a>Метод ImportFileEx2
+
 Импортирует сборки и непривязанные модули. Этот метод похож на [Метод ImportFile](importfile-method.md), но работает даже в том случае, если импортируемый файл не существует на диске.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT ImportFileEx2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pszFilename`  
  Имя импортируемого файла.  
   
@@ -65,12 +67,14 @@ HRESULT ImportFileEx2(
  Получает число импортированных файлов и (или) областей.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

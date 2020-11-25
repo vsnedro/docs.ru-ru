@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a4de6805-e159-4280-99e5-3390c86166d0
 topic_type:
 - apiref
-ms.openlocfilehash: 354736061a2c50b7db16070c3d4ff9c2548d394d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ff1670472b34292cb216a1a8817243ced6a938af
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499952"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704842"
 ---
 # <a name="icorprofilercallbackremotingserverinvocationreturned-method"></a>Метод ICorProfilerCallback::RemotingServerInvocationReturned
+
 Уведомляет профилировщик о том, что процесс завершил вызов метода в ответ на запрос удаленного вызова метода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,6 +33,7 @@ HRESULT RemotingServerInvocationReturned();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -40,6 +42,6 @@ HRESULT RemotingServerInvocationReturned();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

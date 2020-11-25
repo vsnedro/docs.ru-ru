@@ -6,21 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - IALink3 interface
 ms.assetid: a96bf3cc-75a0-49c9-bf5e-4d7ad5dab716
-ms.openlocfilehash: b9d727348f9706ad0b2127feab466df299ec2314
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 1d2da9d1d4c6029c3763f652a8ef30aa612dc2ce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441792"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705258"
 ---
 # <a name="ialink3-interface"></a>Интерфейс IALink3
-Предоставляет единственный метод, `SetManifestFile`, который позволяет указать или сбросить файл манифеста, который будет использоваться компоновщиком при создании сборки.  
+
+Предоставляет единственный метод, `SetManifestFile` который позволяет указать или сбросить файл манифеста, который будет использоваться компоновщиком при создании сборки.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Метод SetManifestFile](setmanifestfile-method.md)  
  Позволяет указать или сбросить файл манифеста, который будет использоваться компоновщиком при создании сборки.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [API ALink](index.md)  
  Поддерживает создание сборок и несвязанных модулей .NET Framework.  
   

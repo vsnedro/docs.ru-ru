@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
 topic_type:
 - apiref
-ms.openlocfilehash: 3059d30f3969b4e19cee5a8d7a34c606f3849c05
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: df9dc1a36a9adcef3f93a9929565cef117e84d75
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008746"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704231"
 ---
 # <a name="imetadataemitsetrva-method"></a>Метод IMetaDataEmit::SetRVA
+
 Задает относительный виртуальный адрес указанного метода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SetRVA (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `md`  
  окне Токен для реализации целевого метода или метода.  
   
@@ -42,15 +44,16 @@ HRESULT SetRVA (
  окне Адрес кода или области данных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

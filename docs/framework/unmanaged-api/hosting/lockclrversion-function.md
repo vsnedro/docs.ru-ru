@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
 topic_type:
 - apiref
-ms.openlocfilehash: 09bcebfdcfea3d5728d404cdb6b5fb170a5432c3
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 2ff08ec8f194ccc9e968b3a7ee017afe788f4b03
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008499"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95704946"
 ---
 # <a name="lockclrversion-function"></a>Функция LockClrVersion
+
 Позволяет узлу определить, какая версия среды CLR будет использоваться в процессе перед явной инициализацией среды CLR.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -38,6 +39,7 @@ HRESULT LockClrVersion (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hostCallback`  
  окне Функция, вызываемая средой CLR при инициализации.  
   
@@ -48,6 +50,7 @@ HRESULT LockClrVersion (
  окне Функция, вызываемая узлом для информирования среды CLR о завершении инициализации.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает стандартные коды ошибок COM, как определено в файле WinError. h, а также следующие значения.  
   
 |Код возврата|Описание|  
@@ -55,8 +58,9 @@ HRESULT LockClrVersion (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|Один или несколько аргументов имеют значение null.|  
   
-## <a name="remarks"></a>Примечания  
- Узел вызывает `LockClrVersion` перед инициализацией среды CLR. `LockClrVersion`принимает три параметра, все из которых являются обратными вызовами типа [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). Этот тип определяется следующим образом.  
+## <a name="remarks"></a>Комментарии  
+
+ Узел вызывает `LockClrVersion` перед инициализацией среды CLR. `LockClrVersion` принимает три параметра, все из которых являются обратными вызовами типа [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). Этот тип определяется следующим образом.  
   
 ```cpp  
 typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();  
@@ -72,7 +76,7 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
     - Функция, заданная `pBeginHostSetup` параметром.  
   
-    - `CorBindToRuntimeEx`(или другую функцию инициализации среды выполнения).  
+    - `CorBindToRuntimeEx` (или другую функцию инициализации среды выполнения).  
   
     - [ICLRRuntimeHost:: SetHostControl](iclrruntimehost-sethostcontrol-method.md).  
   
@@ -83,14 +87,15 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
  Все вызовы из `pBeginHostSetup` в `pEndHostSetup` должны выполняться в одном потоке или Fiber с одним и тем же логическим стеком. Этот поток может отличаться от потока, в котором `hostCallback` вызывается.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

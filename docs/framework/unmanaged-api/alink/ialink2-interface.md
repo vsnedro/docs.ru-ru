@@ -6,17 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - IALink2 interface
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
-ms.openlocfilehash: 57998f8841ed952c8876fa6d36f090cf58866a8b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 53701a34e1466e03e91d99c27e5a2b345edf6556
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431369"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705271"
 ---
 # <a name="ialink2-interface"></a>Интерфейс IALink2
+
 Дополняет [интерфейс иалинк](ialink-interface.md) , объявляя методы, которые работают с более новыми интерфейсами метаданных, такими как [Интерфейс IMetaDataEmit2](../metadata/imetadataemit2-interface.md). Кроме того, IALink2 объявляет методы, которые обеспечивают дополнительную гибкость использования по сравнению с исходными интерфейсами Иалинк.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Метод AddFile2](addfile2-method.md)  
   
  [Метод EmitAssembly](emitassembly-method.md)  
@@ -39,7 +41,7 @@ ms.locfileid: "74431369"
   
  [Метод SetPEKind](setpekind-method.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [API ALink](index.md)
 - [Интерфейс IALink](ialink-interface.md)
