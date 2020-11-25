@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e48b5c64-049f-4f93-ad87-d07ae9cd5845
 topic_type:
 - apiref
-ms.openlocfilehash: 986ae69e7ebb8f607be5d37fab426bcc787abb26
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 25a1c29ab94a785304b83d5b1bcb2d7176742a68
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445638"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726022"
 ---
 # <a name="init-method"></a>Метод Init
+
 Подготавливает объекты, реализующие [интерфейс иалинк](ialink-interface.md) для использования.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT Init(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pDispenser`  
  Указатель [интерфейса IMetaDataDispenserEx](../metadata/imetadatadispenserex-interface.md) на распределитель метаданных.  
   
@@ -41,12 +43,14 @@ HRESULT Init(
  Указатель [интерфейса IMetaDataError](../metadata/imetadataerror-interface.md) на необязательный интерфейс обработки ошибок.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9be27b0c-1d99-4722-b0d4-40cf6753ce5c
 topic_type:
 - apiref
-ms.openlocfilehash: 13125f60f596cb8a80d9c42c51a979f632de494b
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 746fef3629e6573d7dfe47d5a3fcf9ee9a1d4250
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379755"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728047"
 ---
 # <a name="icordebugthreadgetdebugstate-method"></a>Метод ICorDebugThread::GetDebugState
+
 Возвращает текущее состояние отладки этого объекта ICorDebugThread.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetDebugState (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pState`  
  заполняет Указатель на побитовую комбинацию значений перечисления Кордебугсреадстате, описывающих текущее состояние отладки этого потока.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если процесс в данный момент остановлен, `pState` представляет состояние отладки, которое существовало для этого потока, если процесс был продолжен, а не фактическое текущее состояние этого потока.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

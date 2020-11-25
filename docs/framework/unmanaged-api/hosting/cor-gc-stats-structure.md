@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9
 topic_type:
 - apiref
-ms.openlocfilehash: 7a6553de31d4f9627809af7691218c39dc734c6f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 53a70c53a06ac55a2dab7c646018d63189ee0b36
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501668"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726227"
 ---
 # <a name="cor_gc_stats-structure"></a>Структура COR_GC_STATS
+
 Содержит статистические данные о механизме сборки мусора среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,7 +43,7 @@ typedef struct _COR_GC_STATS {
 } COR_GC_STATS;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -58,7 +59,8 @@ typedef struct _COR_GC_STATS {
 |`KBytesPromotedFromGen0`|Размер (в килобайтах) объектов, перешедших из поколения 0 в поколение.|  
 |`KBytesPromotedFromGen1`|Размер (в килобайтах) объектов, перешедших из поколения 1 в поколение 2.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Метод [иклргкманажер:: stats](iclrgcmanager-getstats-method.md) требует, чтобы `Flags` поле `COR_GC_STATS` структуры было установлено в одно или несколько значений перечисления [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) , чтобы указать, какую статистику следует задать.  
   
  Следующая таблица сопоставляет статистические данные, предоставленные этой структурой, с двумя значениями перечисления [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) `COR_GC_COUNTS` и `COR_GC_MEMORYUSAGE` .  
@@ -76,15 +78,16 @@ pCLRGCManager->GetStats(&GCStats);
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Гчост. idl  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Структуры размещения](hosting-structures.md)
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)

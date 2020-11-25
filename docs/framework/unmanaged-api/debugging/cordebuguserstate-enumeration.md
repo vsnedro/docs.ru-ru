@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
 topic_type:
 - apiref
-ms.openlocfilehash: d502b4098016fb14793bccd6feb641e92e3c2611
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 968874a46279b7eac651d45c3890429a326651b2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795642"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726955"
 ---
 # <a name="cordebuguserstate-enumeration"></a>Перечисление CorDebugUserState
+
 Указывает состояние пользователя потока.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,9 +41,9 @@ typedef enum CorDebugUserState {
 } CorDebugUserState;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Применение|Описание|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`USER_STOP_REQUESTED`|Запрошено завершение потока.|  
 |`USER_SUSPEND_REQUESTED`|Запрошена приостановка потока.|  
@@ -54,12 +55,14 @@ typedef enum CorDebugUserState {
 |`USER_UNSAFE_POINT`|Поток находится в ненадежной точке. Это значит, что поток находится в точке выполнения, где он может блокировать сборку мусора.<br /><br /> События отладки могут быть отправлены из ненадежных точек, но приостановка потока в незащищенной точке, скорее всего, вызовет взаимоблокировку до возобновления потока. Надежные и незащищенные точки определяются реализацией JIT и сборки мусора.|  
 |`USER_THREADPOOL`|Поток из пула потоков.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Пользовательское состояние потока — это состояние, которое поток имеет при его проверке отладчиком. Поток может иметь сочетание пользовательских состояний.  
   
  Чтобы получить состояние пользователя потока, используйте метод [ICorDebugThread:: жетусерстате](icordebugthread-getuserstate-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

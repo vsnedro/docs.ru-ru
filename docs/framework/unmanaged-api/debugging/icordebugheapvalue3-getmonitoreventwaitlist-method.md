@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 035a9035-ac66-4953-b48a-99652b42b7fe
 topic_type:
 - apiref
-ms.openlocfilehash: 923e9b0821788143fff59eafe10d1802583df7a6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 21bf0122039a720ff8a1d38d62e77c2560dcc435
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210427"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726539"
 ---
 # <a name="icordebugheapvalue3getmonitoreventwaitlist-method"></a>Метод ICorDebugHeapValue3::GetMonitorEventWaitList
+
 Предоставляет упорядоченный список потоков, поставленных в очередь на событие, связанное с блокировкой монитора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,15 @@ HRESULT GetMonitorEventWaitList (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppThreadEnum`  
  заполняет Перечислитель Икордебугсреаденум, предоставляющий упорядоченный список потоков.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Список не пуст.|  
 |S_FALSE|Список пуст.|  
@@ -48,6 +51,7 @@ HRESULT GetMonitorEventWaitList (
 ## <a name="exceptions"></a>Исключения  
   
 ## <a name="remarks"></a>Remarks  
+
  Первый поток в списке является первым потоком, который освобождается при следующем вызове метода <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=nameWithType> . Следующий поток в списке освобождается в следующем вызове и т. д.  
   
  Если список не пуст, этот метод возвращает S_OK. Если список пуст, метод возвращает S_FALSE; в этом случае перечисление по-прежнему является допустимым, хотя оно пустое.  
@@ -59,6 +63,7 @@ HRESULT GetMonitorEventWaitList (
  Если возникает ошибка, которая не может определить, какие потоки ожидают монитор, метод возвращает значение HRESULT, указывающее на сбой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -67,7 +72,7 @@ HRESULT GetMonitorEventWaitList (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

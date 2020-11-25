@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 920b6483-7064-4d64-8613-fcc38ccf9b1e
 topic_type:
 - apiref
-ms.openlocfilehash: 1fe44f8f84c079e920c8c82fb9d52d1980d3b852
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: fe4f3a7355339c9b5adbe5de062f0a5688d81c23
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497209"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727189"
 ---
 # <a name="icorprofilerinfo2enummodulefrozenobjects-method"></a>Метод ICorProfilerInfo2::EnumModuleFrozenObjects
+
 Возвращает перечислитель, позволяющий выполнять итерацию зафиксированных объектов в указанном модуле. Этот метод устарел.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT EnumModuleFrozenObjects(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `moduleID`  
  окне Идентификатор модуля, содержащего зафиксированные объекты для перечисления.  
   
@@ -41,6 +43,7 @@ HRESULT EnumModuleFrozenObjects(
  заполняет Указатель на адрес интерфейса [ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md) , который перечисляет зафиксированные объекты.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -49,7 +52,7 @@ HRESULT EnumModuleFrozenObjects(
   
  **.NET Framework версии:** 3,5, 3,0 sp1, 3,0, 2,0 SP1, 2,0  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

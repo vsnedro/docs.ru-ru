@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7a59f405-73e8-4434-8bcc-a9dc45ea08e6
 topic_type:
 - apiref
-ms.openlocfilehash: f6155eb777b5071ff522af4f27d5fb2d73aa25ef
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c5a43f6c277f582f9f14cefe5bfba6f5300c09d8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501837"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727358"
 ---
 # <a name="isymunmanagedbinder2-interface"></a>Интерфейс ISymUnmanagedBinder2
+
 Представляет связыватель символов для неуправляемого кода и расширяет интерфейс [ISymUnmanagedBinder](isymunmanagedbinder-interface.md) .  
   
 > [!IMPORTANT]
@@ -34,9 +35,10 @@ ms.locfileid: "84501837"
 |[Метод GetReaderForFile2](isymunmanagedbinder2-getreaderforfile2-method.md)|При наличии интерфейса метаданных и имени файла возвращает правильный интерфейс [ISymUnmanagedReader](isymunmanagedreader-interface.md) , который будет считывать символы отладки, связанные с модулем. Предоставляет более широкие возможности поиска, чем метод [ISymUnmanagedBinder:: getreaderforfile:](isymunmanagedbinder-getreaderforfile-method.md) .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedBinder](isymunmanagedbinder-interface.md)

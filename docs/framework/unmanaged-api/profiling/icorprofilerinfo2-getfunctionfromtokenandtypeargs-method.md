@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ce8f6aa6-4ebf-4a86-b429-4bbc8af41a8f
 topic_type:
 - apiref
-ms.openlocfilehash: 7f1276e1adeece086ca7b6791eb6e870faf4d010
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 17a6220598010c0bee9c3f0485860aa0b2dc5f3a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502877"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727111"
 ---
 # <a name="icorprofilerinfo2getfunctionfromtokenandtypeargs-method"></a>Метод ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs
+
 Возвращает объект `FunctionID` функции с помощью указанного маркера метаданных, содержащего класс, и `ClassID` значений любых аргументов типа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,11 +39,12 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `moduleID`  
  окне Идентификатор модуля, в котором находится функция.  
   
  `funcDef`  
- окне `mdMethodDef`Токен метаданных, ссылающийся на функцию.  
+ окне `mdMethodDef` Токен метаданных, ссылающийся на функцию.  
   
  `classId`  
  окне Идентификатор содержащего класса функции.  
@@ -56,7 +58,8 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
  `pFunctionID`  
  заполняет Указатель на объект `FunctionID` указанной функции.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Вызов `GetFunctionFromTokenAndTypeArgs` метода с `mdMethodRef` метаданными вместо `mdMethodDef` токена метаданных может иметь непредсказуемые результаты. Вызывающие объекты должны разрешить объект `mdMethodRef` в `mdMethodDef` при передаче.  
   
  Если функция еще не загружена, вызов `GetFunctionFromTokenAndTypeArgs` приведет к возникновению загрузки, что является опасной операцией во многих контекстах. Например, вызов этого метода во время загрузки модулей или типов может привести к бесконечному циклу, так как среда выполнения пытается циклически загружать вещи.  
@@ -64,6 +67,7 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
  Как правило, использование параметра `GetFunctionFromTokenAndTypeArgs` не рекомендуется. Если профилировщики заинтересованы в событиях для определенной функции, они должны хранить и для `ModuleID` `mdMethodDef` этой функции, а также использовать [ICorProfilerInfo2:: GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) для проверки того, является ли заданная `FunctionID` функция требуемой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -72,7 +76,7 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

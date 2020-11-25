@@ -14,12 +14,12 @@ helpviewer_keywords:
 - XML signing
 - signing XML
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
-ms.openlocfilehash: 3265417d806104f9c4de96cb98de2330d62d1e48
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2cb63fd91b1aeb51c762975103ea665e0d8539b1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820167"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726682"
 ---
 # <a name="how-to-sign-xml-documents-with-digital-signatures"></a>Практическое руководство. Подписание XML-документов с помощью цифровых подписей
 
@@ -95,6 +95,7 @@ ms.locfileid: "94820167"
      [!code-vb[HowToSignXMLDocumentRSA#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb/sample.vb#13)]  
   
 ## <a name="example"></a>Пример  
+
  В этом примере предполагается, что файл с именем `test.xml` существует в том же каталоге, что и скомпилированная программа.  Можно поместить следующий XML-код в файл с именем `test.xml` и использовать его вместе с данным примером.  
   
 ```xml  
@@ -123,7 +124,7 @@ ms.locfileid: "94820167"
   
 Не следует внедрять закрытый ключ непосредственно в исходный код.  Внедренные ключи можно легко считывать из сборки с помощью [Ildasm.exe (IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

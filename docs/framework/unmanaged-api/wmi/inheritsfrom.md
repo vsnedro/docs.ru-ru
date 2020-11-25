@@ -1,6 +1,6 @@
 ---
-title: Наследуетот функции (Неуправляемая ссылка API)
-description: Функция InheritsFrom определяет, является ли класс или экземпляр производным от определенного родительского класса.
+title: Функция раскрывшемся (Справочник по неуправляемым API)
+description: Функция раскрывшемся определяет, является ли класс или экземпляр производным от конкретного родительского класса.
 ms.date: 11/06/2017
 api_name:
 - InheritsFrom
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - InheritsFrom function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: c735c01c45beda8a1ba988a5c580e6b04ae46312
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3cfe3388dc808335e6d3daaf7ec949108e95f52e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174944"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726799"
 ---
 # <a name="inheritsfrom-function"></a>Функция InheritsFrom
+
 Определяет, является ли текущий класс или экземпляр производным от указанного родительского класса.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -39,34 +40,35 @@ HRESULT InheritsFrom (
 ## <a name="parameters"></a>Параметры
 
 `vFunc`  
-(в) Этот параметр не используется.
+окне Этот параметр не используется.
 
 `ptr`  
-(в) Указатель на экземпляр [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+окне Указатель на экземпляр [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `wszAncestor`  
-(в) Название класса. `wszAncestor`должны указать `LPCWSTR`на допустимый .
+окне Имя класса. `wszAncestor` должен указывать на допустимое значение `LPCWSTR` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
-| `WBEM_S_NO_ERROR` | 0 | Текущий объект наследует от `wszAncestor`.  |
-| `WBEM_S_FALSE` | 1 | Текущий объект не `wszAncestor`наследует от . |
-|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Параметр `wszAncestor` равен `null`. |
+| `WBEM_S_NO_ERROR` | 0 | Текущий объект наследует от `wszAncestor` .  |
+| `WBEM_S_FALSE` | 1 | Текущий объект не наследует от `wszAncestor` . |
+|`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `wszAncestor` имеет значение `null`. |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция обертывает вызов на [IWbemClassObject::НаследуетОт](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom) метода.
+Эта функция заключает в оболочку вызов метода [ивбемклассобжект:: раскрывшемся](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom) .
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

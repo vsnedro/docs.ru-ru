@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9c149303-14b1-4138-83d7-e8c3e0fcd332
 topic_type:
 - apiref
-ms.openlocfilehash: 6a378e3579ab9ea8d9534a408d0e456373616cad
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 0f1e6bbdf16c953b0dd22d9dfa44bc3585f1269e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213148"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726253"
 ---
 # <a name="icordebugfunctionbreakpoint-interface"></a>Интерфейс ICorDebugFunctionBreakpoint
 
@@ -32,12 +32,13 @@ ms.locfileid: "83213148"
 |[Метод GetFunction](icordebugfunctionbreakpoint-getfunction-method.md)|Возвращает указатель на интерфейс ICorDebugFunction, ссылающийся на функцию, в которой задана точка останова.|  
 |[Метод GetOffset](icordebugfunctionbreakpoint-getoffset-method.md)|Возвращает смещение точки останова внутри функции.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,6 +47,6 @@ ms.locfileid: "83213148"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

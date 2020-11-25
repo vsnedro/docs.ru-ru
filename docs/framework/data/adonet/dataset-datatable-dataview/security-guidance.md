@@ -3,12 +3,12 @@ title: Набор данных и руководство по безопасно
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: e9973df02ff478eedc932099fb8be0526a97b899
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: 8798c4542acc578c8f7f00c9b26cd01a0db20c42
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679459"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726071"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
@@ -18,7 +18,7 @@ ms.locfileid: "90679459"
 * .NET Core и более поздние версии
 * .NET 5.0 и более поздней версии
 
-Типы [DataSet](/dotnet/api/system.data.dataset) и [DataTable](/dotnet/api/system.data.datatable) являются устаревшими компонентами .NET, которые позволяют представлять наборы данных как управляемые объекты. Эти компоненты появились в .NET 1,0 как часть исходной [инфраструктуры ADO.NET](./index.md). Их цель — предоставить управляемое представление по реляционному набору данных, чтобы отказаться от того, является ли базовый источник данных XML, SQL или другой технологией.
+Типы [DataSet](/dotnet/api/system.data.dataset) и [DataTable](/dotnet/api/system.data.datatable) являются устаревшими компонентами .NET, которые позволяют представлять наборы данных как управляемые объекты. Эти компоненты появились в .NET Framework 1,0 как часть исходной [инфраструктуры ADO.NET](./index.md). Их цель — предоставить управляемое представление по реляционному набору данных, чтобы отказаться от того, является ли базовый источник данных XML, SQL или другой технологией.
 
 Дополнительные сведения о ADO.NET, включая более современные парадигмы представления данных, см. [в документации по ADO.NET](../index.md).
 
@@ -34,13 +34,9 @@ ms.locfileid: "90679459"
 
 Если входящие XML-данные содержат объект, тип которого отсутствует в этом списке:
 
-* Исключение создается со следующим сообщением и трассировкой стека.  
-Сообщение об ошибке:  
-System. InvalidOperationException: тип " \<Type Name\> , версия = \<n.n.n.n\> , Culture = \<culture\> , PublicKeyToken = \<token value\> " не допускается здесь. [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227)Дополнительные сведения см. в разделе.  
-Трассировка стека:  
-в System. Data. Типелимитер. Енсуретипеисалловед (тип Type, Типелимитер Каптуредлимитер)  
-в System. Data. DataColumn. Упдатеколумнтипе (тип Type, StorageType typeCode)  
-в System. Data. DataColumn. set_DataType (значение типа)  
+* Исключение создается со следующим сообщением и трассировкой стека.
+Сообщение об ошибке: System. InvalidOperationException: Type " \<Type Name\> , Version = \<n.n.n.n\> , Culture = \<culture\> , PublicKeyToken = \<token value\> " не допускается здесь. [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227)Дополнительные сведения см. в разделе.
+Трассировка стека: в System. Data. Типелимитер. Енсуретипеисалловед (тип Type, Типелимитер Каптуредлимитер) в System. Data. DataColumn. Упдатеколумнтипе (тип Type, StorageType typeCode) в System.Data.DataColumn.set_DataType (значение типа)
 
 * Операция десериализации завершается ошибкой.
 
@@ -278,7 +274,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 * Администратор должен настроить реестр.
 * Использование реестра является изменением на уровне компьютера и влияет на _все_ приложения, выполняющиеся на компьютере.
 
-| Type  |  Значение |
+| Тип  |  Значение |
 |---|---|
 | **Раздел реестра** | `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` |
 | **Имя значения** | `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation` |
@@ -293,7 +289,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 
 ## <a name="safety-with-regard-to-untrusted-input"></a>Безопасность в отношении ненадежных входных данных
 
-Хотя `DataSet` и `DataTable` накладывают ограничения по умолчанию на типы, которые могут присутствовать при ДЕСЕРИАЛИЗАЦИИ XML-полезных данных, __ `DataSet` и `DataTable` в общем случае ненадежны при заполнении недоверенными входными данными.__ Ниже приведен неисчерпывающий список способов, с помощью которых `DataSet` `DataTable` экземпляр или может считывать ненадежные входные данные.
+Хотя `DataSet` и `DataTable` накладывают ограничения по умолчанию на типы, которые могут присутствовать при ДЕСЕРИАЛИЗАЦИИ XML-полезных данных, __`DataSet` и `DataTable` в общем случае ненадежны при заполнении недоверенными входными данными.__ Ниже приведен неисчерпывающий список способов, с помощью которых `DataSet` `DataTable` экземпляр или может считывать ненадежные входные данные.
 
 * Объект `DataAdapter` ссылается на базу данных, а `DataAdapter.Fill` метод используется для заполнения `DataSet` с помощью содержимого запроса к базе данных.
 * `DataSet.ReadXml`Метод или `DataTable.ReadXml` используется для чтения XML-файла, содержащего сведения о столбцах и строках.
@@ -479,9 +475,9 @@ public class MyClass
 
 ## <a name="deserialize-a-dataset-or-datatable-via-binaryformatter"></a>Десериализация набора данных или DataTable через BinaryFormatter
 
-Разработчики никогда не должны использовать `BinaryFormatter` , `NetDataContractSerializer` , `SoapFormatter` или связанные ***ненадежные*** модули форматирования для десериализации `DataSet` `DataTable` экземпляра или из ненадежных полезных данных:
+Разработчики никогда не должны использовать `BinaryFormatter` , `NetDataContractSerializer` , `SoapFormatter` или связанные ***ненадежные** модули форматирования для десериализации `DataSet` экземпляра или `DataTable` из ненадежных полезных данных:
 
-* Это является уязвимым для полной атаки удаленного выполнения кода.
+_ Это является уязвимым для полной атаки удаленного выполнения кода.
 * Использование пользовательской функции недостаточно `SerializationBinder` для предотвращения такой атаки.
 
 ## <a name="safe-replacements"></a>Защищенные замены

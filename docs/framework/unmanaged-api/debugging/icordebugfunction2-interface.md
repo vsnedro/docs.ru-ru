@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2b936bef-9b75-48bf-859f-42e419c65f1c
 topic_type:
 - apiref
-ms.openlocfilehash: 611091d39da6d7f646457457f20ce1eaf37db361
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: d9e84a70d72db1338c80140ce3350774bfae4bca
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213209"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726279"
 ---
 # <a name="icordebugfunction2-interface"></a>Интерфейс ICorDebugFunction2
 
@@ -34,12 +34,13 @@ ms.locfileid: "83213209"
 |[Метод GetVersionNumber](icordebugfunction2-getversionnumber-method.md)|Возвращает версию функции "изменить и продолжить".|  
 |[Метод SetJMCStatus](icordebugfunction2-setjmcstatus-method.md)|Помечает эту функцию для Только мой код пошагового выполнения.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -48,6 +49,6 @@ ms.locfileid: "83213209"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

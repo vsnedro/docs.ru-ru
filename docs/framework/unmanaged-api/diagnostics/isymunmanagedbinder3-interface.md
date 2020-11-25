@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 37527a84-4b03-4f08-8135-94d898599089
 topic_type:
 - apiref
-ms.openlocfilehash: 5a26de2a8f5439b7c81560927c991d449e57b76c
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 0cb0b91f2dca8203c37599400b3b61f84eb7d282
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441595"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727319"
 ---
 # <a name="isymunmanagedbinder3-interface"></a>Интерфейс ISymUnmanagedBinder3
+
 Расширяет интерфейс связывателя символов. Получите этот интерфейс, вызвав метод `QueryInterface` для объекта, который реализует `ISymUnmanagedBinder` интерфейс.  
   
 > [!IMPORTANT]
@@ -34,9 +35,10 @@ ms.locfileid: "83441595"
 |[Метод GetReaderFromCallback](isymunmanagedbinder3-getreaderfromcallback-method.md)|Позволяет пользователю реализовать или предоставить через обратный вызов либо `IID_IDiaReadExeAtRVACallback` `IID_IDiaReadExeAtOffsetCallback` для получения сведений о каталоге отладки из памяти.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedBinder](isymunmanagedbinder-interface.md)

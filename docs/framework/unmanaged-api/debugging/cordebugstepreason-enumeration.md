@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: fe248069-b33c-48e1-a777-06ac9b239c54
 topic_type:
 - apiref
-ms.openlocfilehash: 288d7bfdf18be5cef032227c537032966fa68df4
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 50903b3737c0fc63eda2b1190e4c3d961ce3ae7b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795707"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726045"
 ---
 # <a name="cordebugstepreason-enumeration"></a>Перечисление CorDebugStepReason
+
 Указывает результат отдельного шага.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,9 +39,9 @@ typedef enum CorDebugStepReason {
 } CorDebugStepReason;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`STEP_NORMAL`|Пошаговое завершение нормального выполнения в одной и той же функции.|  
 |`STEP_RETURN`|Пошаговое продолжение обычно после возвращения функции.|  
@@ -51,6 +52,7 @@ typedef enum CorDebugStepReason {
 |`STEP_EXIT`|Поток завершил работу до завершения шага.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

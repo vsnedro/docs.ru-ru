@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 783faea9-8083-41c1-b04a-51a81ac4c8f3
 topic_type:
 - apiref
-ms.openlocfilehash: 6b7b6969c1f207decbf47217e98b7fee3aa9ce54
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 668b27932ea7a2bdc244e1ac0bb8e6891cbd4d17
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213248"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726305"
 ---
 # <a name="icordebugfunction-interface"></a>Интерфейс ICorDebugFunction
 
@@ -38,7 +38,8 @@ ms.locfileid: "83213248"
 |[Метод GetNativeCode](icordebugfunction-getnativecode-method.md)|Получает машинный код для этой функции.|  
 |[Метод GetToken](icordebugfunction-gettoken-method.md)|Возвращает маркер метаданных для этой функции.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `ICorDebugFunction`Интерфейс не представляет функцию с параметрами универсального типа. Например, `ICorDebugFunction` экземпляр будет представлять, `Func<T>` но не `Func<string>` . Вызовите метод [ICorDebugILFrame2:: енумератетипепараметерс](icordebugilframe2-enumeratetypeparameters-method.md) , чтобы получить параметры универсального типа.  
   
  Связь между маркером метаданных метода, `mdMethodDef` и `ICorDebugFunction` объектом метода зависит от того, разрешена ли функция "изменить и продолжить" для функции:  
@@ -51,6 +52,7 @@ ms.locfileid: "83213248"
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -59,6 +61,6 @@ ms.locfileid: "83213248"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

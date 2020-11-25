@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2b374116-0972-416a-8cf5-79213129be9a
 topic_type:
 - apiref
-ms.openlocfilehash: 7550caaa7cb4d7ed77dc36ecf0ce0e0cbc541db7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 067e5093cc3b141936eeec43e77e6e1a9475a8a6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497066"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727124"
 ---
 # <a name="icorprofilerinfo2getcontextstaticaddress-method"></a>Метод ICorProfilerInfo2::GetContextStaticAddress
+
 Возвращает адрес для указанного статического поля контекста, которое находится в области заданного контекста.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetContextStaticAddress(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор класса, содержащего запрошенное статическое поле контекста.  
   
@@ -48,7 +50,8 @@ HRESULT GetContextStaticAddress(
  `ppAddress`  
  заполняет Указатель на адрес статического поля в заданном контексте.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetContextStaticAddress`Метод может вернуть одно из следующих данных:  
   
 - CORPROF_E_DATAINCOMPLETE HRESULT, если заданному статическому полю не назначен адрес в указанном контексте.  
@@ -58,6 +61,7 @@ HRESULT GetContextStaticAddress(
  Перед завершением конструктора класса класса возвратит `GetContextStaticAddress` CORPROF_E_DATAINCOMPLETE для всех его статических полей, хотя некоторые статические поля уже могут быть инициализированы и корневыми объектами сборки мусора.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -66,7 +70,7 @@ HRESULT GetContextStaticAddress(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

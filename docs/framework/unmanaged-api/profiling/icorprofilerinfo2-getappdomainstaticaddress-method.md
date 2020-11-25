@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2a9e0ea7-a9e2-4817-b1c4-fcf15b215ea9
 topic_type:
 - apiref
-ms.openlocfilehash: 3dc5f04504cca632892c16d31c92a33935b356e0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 271f9f4fd0d85407aedf088ffb524fa6e0398e37
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497342"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727215"
 ---
 # <a name="icorprofilerinfo2getappdomainstaticaddress-method"></a>Метод ICorProfilerInfo2::GetAppDomainStaticAddress
+
 Возвращает адрес указанного поля статического домена приложения, которое находится в области заданного домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ RESULT GetAppDomainStaticAddress(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор класса, который содержит запрошенное статическое поле домена приложения.  
   
@@ -48,7 +50,8 @@ RESULT GetAppDomainStaticAddress(
  `ppAddress`  
  заполняет Указатель на адрес статического поля в пределах указанного домена приложения.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetAppDomainStaticAddress`Метод может вернуть одно из следующих данных:  
   
 - CORPROF_E_DATAINCOMPLETE HRESULT, если заданному статическому полю не назначен адрес в указанном контексте.  
@@ -58,6 +61,7 @@ RESULT GetAppDomainStaticAddress(
  Перед завершением конструктора класса класса возвратит `GetAppDomainStaticAddress` CORPROF_E_DATAINCOMPLETE для всех его статических полей, хотя некоторые статические поля уже могут быть инициализированы и корневыми объектами сборки мусора.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -66,7 +70,7 @@ RESULT GetAppDomainStaticAddress(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type:
 - apiref
-ms.openlocfilehash: f789105751ae2d498740ab60f326f9c0597483b2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 30a522fbf96aebaa96f33f4a1dc381683f183871
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73099200"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726422"
 ---
 # <a name="cor_pub_enumprocess-enumeration"></a>Перечисление COR_PUB_ENUMPROCESS
+
 Идентифицирует тип процесса для перечисления.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,22 +35,24 @@ typedef enum {
   
 ## <a name="members"></a>Члены  
   
-|Имя члена|Описание|  
+|Имя участника|Описание|  
 |-----------------|-----------------|  
 |`COR_PUB_MANAGEDONLY`|Управляемый процесс.|  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
+
  Текущая версия неуправляемого API отладки перечисляет только управляемые процессы.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корпуб. idl, Корпуб. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 638d77df-ff9c-40d9-88ee-930f5f87ada1
 topic_type:
 - apiref
-ms.openlocfilehash: e059cdddef7926c1359a83bc562146203724aa60
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: bcc1cb2755c4c0a2beb0829ce58b921f073f63d4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842125"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727787"
 ---
 # <a name="itypenamegettypearguments-method"></a>Метод ITypeName::GetTypeArguments
+
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,14 +37,15 @@ HRESULT GetTypeArguments (
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы размещения](hosting-interfaces.md)

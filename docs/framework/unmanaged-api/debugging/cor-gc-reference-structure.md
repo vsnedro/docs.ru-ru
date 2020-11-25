@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
 topic_type:
 - apiref
-ms.openlocfilehash: e22269b76c230f702f4712298fddcd0df1fde50d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bb4a8f7ff3ee54474804e3e5620dcce7c9f79fb5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179318"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726617"
 ---
 # <a name="cor_gc_reference-structure"></a>Структура COR_GC_REFERENCE
+
 Содержит сведения об объекте, в котором должна быть выполнена сборка мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,40 +38,42 @@ typedef struct _COR_GC_REFERENCE {
   
 ## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`domain`|Указатель на домен приложения, к которому принадлежит ручка или объект. Его значение `null`может быть .|  
-|`location`|Либо ICorDebugValue или интерфейс ICorDebugReferenceValue, который соответствует объекту, который будет собран мусором.|  
-|`type`|Значение [перечисления CorGCReferenceType,](corgcreferencetype-enumeration.md) которое указывает, откуда взялся корень. Дополнительные сведения см. в разделе «Примечания».|  
-|`extraData`|Дополнительные данные об объекте, который должен быть собран мусором. Эта информация зависит от источника объекта, `type` как указано на поле. Дополнительные сведения см. в разделе «Примечания».|  
+|`domain`|Указатель на домен приложения, которому принадлежит маркер или объект. Его значение может быть `null` .|  
+|`location`|Интерфейс ICorDebugValue или ICorDebugReferenceValue, соответствующий объекту, который должен быть собран сборщиком мусора.|  
+|`type`|Значение перечисления [CorGCReferenceType](corgcreferencetype-enumeration.md) , указывающее, откуда поступил корень. Дополнительные сведения см. в разделе "Примечания".|  
+|`extraData`|Дополнительные данные об объекте, который должен быть собран сборщиком мусора. Эти сведения зависят от источника объекта, как указано в `type` поле. Дополнительные сведения см. в разделе "Примечания".|  
   
-## <a name="remarks"></a>Remarks  
- Поле `type` представляет собой значение перечисления [CorGCReferenceType,](corgcreferencetype-enumeration.md) которое указывает, откуда пришла ссылка. Определенное `COR_GC_REFERENCE` значение может отражать любой из следующих видов управляемых объектов:  
+## <a name="remarks"></a>Комментарии  
+
+ `type`Поле является значением перечисления [CorGCReferenceType](corgcreferencetype-enumeration.md) , которое указывает, откуда поступила ссылка. Конкретное `COR_GC_REFERENCE` значение может отражать любой из следующих видов управляемых объектов:  
   
-- Объекты из всех`CorGCReferenceType.CorReferenceStack`управляемых стеков (). Это включает в себя живые ссылки в управляемом коде, а также объекты, созданные общим временем выполнения языка.  
+- Объекты из всех управляемых стеков ( `CorGCReferenceType.CorReferenceStack` ). Сюда входят динамические ссылки в управляемом коде, а также объекты, созданные средой CLR.  
   
-- Объекты из таблицы рукоятки ().`CorGCReferenceType.CorHandle*` Это включает в`HNDTYPE_STRONG` себя `HNDTYPE_REFCOUNT`сильные ссылки (и ) и статические переменные в модуле.  
+- Объекты из таблицы Handle ( `CorGCReferenceType.CorHandle*` ). Это включает в себя строгие ссылки ( `HNDTYPE_STRONG` и `HNDTYPE_REFCOUNT` ) и статические переменные в модуле.  
   
-- Объекты из очереди`CorGCReferenceType.CorReferenceFinalizer`finalizer (). Очередь finalizer корни объектов до завершения.  
+- Объекты из очереди метода завершения ( `CorGCReferenceType.CorReferenceFinalizer` ). Очередь метода завершения помещает объекты в корни до запуска метода завершения.  
   
- Поле `extraData` содержит дополнительные данные в зависимости от источника (или типа) ссылки. Возможны следующие значения:  
+ `extraData`Поле содержит дополнительные данные в зависимости от источника (или типа) ссылки. Возможны следующие значения:  
   
-- `DependentSource`. Если `type` это, `CorGCREferenceType.CorHandleStrongDependent`это поле является объектом, который, если жив, `COR_GC_REFERENCE.Location`корни объекта, который будет мусор собран на .  
+- `DependentSource`. Если `type` имеет значение `CorGCREferenceType.CorHandleStrongDependent` , то это поле является объектом, в котором в случае со сроком существования объект, который должен быть собран в мусор, находится в корне `COR_GC_REFERENCE.Location` .  
   
-- `RefCount`. Если `type` есть, `CorGCREferenceType.CorHandleStrongRefCount`это поле является эталоном ручки.  
+- `RefCount`. Если значение `type` равно `CorGCREferenceType.CorHandleStrongRefCount` , это поле представляет собой счетчик ссылок для маркера.  
   
-- `Size`. Если `type` есть, `CorGCREferenceType.CorHandleStrongSizedByref`это поле является последним размером дерева объекта, для которого сборщик мусора вычислил корни объекта. Обратите внимание, что этот расчет не обязательно актуален.  
+- `Size`. Если значение `type` равно `CorGCREferenceType.CorHandleStrongSizedByref` , это поле является последним размером дерева объектов, для которого сборщик мусора вычисляет корни объекта. Обратите внимание, что это вычисление не обязательно в актуальном состоянии.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 
 - [Структуры отладки](debugging-structures.md)
-- [Отладки](index.md)
+- [Отладка](index.md)

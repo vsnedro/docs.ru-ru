@@ -2,12 +2,12 @@
 title: Управление версиями среды выполнения пакета SDK для .NET Core
 description: В этой статье описано, как осуществляется управление версиями среды выполнения и пакета SDK для .NET Core.
 ms.date: 06/24/2020
-ms.openlocfilehash: 5e315f49227f3c2ea40652a30fabbf566bdfe495
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: baa3f94947699d21ce7426054359d91f7781b565
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619758"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726708"
 ---
 # <a name="overview-of-how-net-core-is-versioned"></a>Общие сведения об управлении версиями в .NET Core
 
@@ -113,4 +113,4 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 - [Упаковка дистрибутивов .NET Core](../distribution-packaging.md)
 - [Справочные материалы по жизненному циклу поддержки .NET Core](https://dotnet.microsoft.com/platform/support/policy)
 - [Привязка версий .NET Core 2+](https://github.com/dotnet/designs/issues/3)
-- [Образы Docker для .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/)
+- [Образы Docker для .NET Core](https://hub.docker.com/_/microsoft-dotnet/)

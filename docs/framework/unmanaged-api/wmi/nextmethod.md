@@ -1,6 +1,6 @@
 ---
-title: Функция NextMethod (Неуправляемая ссылка API)
-description: Функция NextMethod извлекает следующий метод в перечислении.
+title: Функция Некстмесод (Справочник по неуправляемым API)
+description: Функция Некстмесод извлекает следующий метод в перечислении.
 ms.date: 11/06/2017
 api_name:
 - NextMethod
@@ -14,15 +14,16 @@ helpviewer_keywords:
 - NextMethod function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 36acd6135110a8865bd8efdda628c352c01b4f26
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a0466aee47b0a6142870640c78b43f49e221ac2b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174931"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726773"
 ---
 # <a name="nextmethod-function"></a>Функция NextMethod
-Извлекает следующий метод в перечислении, который начинается с вызова [beginMethodEnumeration.](beginmethodenumeration.md)  
+
+Извлекает следующий метод в перечислении, который начинается с вызова [бегинмесоденумератион](beginmethodenumeration.md).  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -42,49 +43,50 @@ HRESULT NextMethod (
 ## <a name="parameters"></a>Параметры
 
 `vFunc`  
-(в) Этот параметр не используется.
+окне Этот параметр не используется.
 
 `ptr`  
-(в) Указатель на экземпляр [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+окне Указатель на экземпляр [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `lFlags`  
-[in] Зарезервировано. Этот параметр должен быть 0.
+[in] Зарезервировано. Этот параметр должен иметь значение 0.
 
 `pName`  
-(ваут) Указатель, который `null` указывает на до вызова. Когда функция возвращается, адрес `BSTR` нового, который содержит имя метода.
+заполняет Указатель, указывающий на `null` перед вызовом. Когда функция возвращает, адрес нового `BSTR` , который содержит имя метода.
 
 `ppSignatureIn`  
-(ваут) Указатель, который получает указатель на [IWbemClassObject,](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) содержащий `in` параметры для метода.
+заполняет Указатель, получающий указатель на объект [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) , содержащий `in` параметры для метода.
 
 `ppSignatureOut`  
-(ваут) Указатель, который получает указатель на [IWbemClassObject,](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) содержащий `out` параметры для метода.
+заполняет Указатель, получающий указатель на объект [ивбемклассобжект](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) , содержащий `out` параметры для метода.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
-| `WBEM_E_UNEXPECTED` | 0x8004101d | Не было никакого [`BeginEnumeration`](beginenumeration.md) вызова к функции. |
-| `WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+| `WBEM_E_UNEXPECTED` | 0x8004101d | Нет вызова [`BeginEnumeration`](beginenumeration.md) функции. |
+| `WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
 | `WBEM_S_NO_MORE_DATA` | 0x40005 | В перечислении больше нет свойств. |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция завершает вызов методом [IWbemClassObject::NextMethod.](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod)
+Эта функция заключает в оболочку вызов метода [ивбемклассобжект:: некстмесод](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) .
 
-Вызывающий абонент начинает последовательность перечисления, вызывая функцию [BeginMethodEnumeration,](beginmethodenumeration.md) а затем вызывает `WBEM_S_NO_MORE_DATA`функцию «NextMethod» до тех пор, пока функция не вернется. Дополнительно абонент завершает последовательность, позвонив [в EndMethodEnumeration.](endmethodenumeration.md) Звонящее может досрочно завершить перечисление, позвонив в [EndMethodEnumeration](endmethodenumeration.md) в любое время.
+Вызывающий объект начинает последовательность перечисления, вызывая функцию [бегинмесоденумератион](beginmethodenumeration.md) , а затем вызывает функцию [некстмесод] до тех пор, пока функция не вернет значение `WBEM_S_NO_MORE_DATA` . При необходимости вызывающий объект завершает последовательность путем вызова [ендмесоденумератион](endmethodenumeration.md). Вызывающий объект может завершить перечисление раньше, вызвав [ендмесоденумератион](endmethodenumeration.md) в любое время.
 
 ## <a name="example"></a>Пример
 
-На примере СЗ см. [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod)
+Пример для C++ см. в описании метода [ивбемклассобжект:: некстмесод](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) .
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

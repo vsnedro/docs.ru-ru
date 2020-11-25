@@ -1,6 +1,6 @@
 ---
-title: функция QualifierSet_EndEnumeration (неуправляемая справка API)
-description: Функция QualifierSet_EndEnumeration завершает перечисление.
+title: Функция QualifierSet_EndEnumeration (Справочник по неуправляемым интерфейсам API)
+description: Функция QualifierSet_EndEnumeration прерывает перечисление.
 ms.date: 11/06/2017
 api_name:
 - QualifierSet_EndEnumeration
@@ -14,15 +14,16 @@ helpviewer_keywords:
 - QualifierSet_EndEnumeration function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: c606580ff2e02c5659c14b134b1a17a65651952b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2739003fc9c1f93d379e4a59338cbef7a1a0f135
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176751"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726747"
 ---
 # <a name="qualifierset_endenumeration-function"></a>Функция QualifierSet_EndEnumeration
-Прекращает перечисление, начатое с вызова на [функцию QualifierSet_BeginEnumeration.](qualifierset-beginenumeration.md)  
+
+Завершает перечисление, начатое вызовом функции [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) .  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -38,31 +39,31 @@ HRESULT QualifierSet_EndEnumeration (
 ## <a name="parameters"></a>Параметры
 
 `vFunc`  
-(в) Этот параметр не используется.
+окне Этот параметр не используется.
 
-`ptr`(в) Указатель на экземпляр [IWbemqualifierSet.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset)
+`ptr` окне Указатель на экземпляр [ивбемкуалифиерсет](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующее значение, возвращенное этой функцией, определяется в файле заголовка *WbemCli.h* или вы можете определить его как константу в коде:
+Следующее значение, возвращаемое этой функцией, определено в файле заголовка *вбемкли. h* , или его можно определить как константу в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
-|`WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+|`WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция завершает вызов [iWbemqualifierSet::EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) метод.
+Эта функция заключает в оболочку вызов метода [ивбемкуалифиерсет:: EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) .
 
-Этот вызов рекомендуется, но не требуется. Он немедленно выпускает ресурсы, связанные с перечислением.
+Этот вызов рекомендуется, но не является обязательным. Он немедленно освобождает ресурсы, связанные с перечислением.
 
 ## <a name="requirements"></a>Требования  
 
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
-**Заголовок:** WMINet_Utils.idl  
+**Заголовок:** WMINet_Utils. idl  
   
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

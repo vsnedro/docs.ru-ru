@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type:
 - apiref
-ms.openlocfilehash: c6d21f40c260890c9c88dcdfccd7e31161024ba3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8f3c83a7a89553ba600f3e0e368eec0ddd0350e9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614868"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727613"
 ---
 # <a name="isymunmanagedscopegetchildren-method"></a>Метод ISymUnmanagedScope::GetChildren
+
 Возвращает дочерние элементы этой области.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetChildren(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cChildren`  
  окне Значение типа `ULONG32` , указывающее размер `children` массива.  
   
@@ -46,12 +48,14 @@ HRESULT GetChildren(
  заполняет Возвращаемый массив дочерних элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)
 - [Метод GetParent](isymunmanagedscope-getparent-method.md)

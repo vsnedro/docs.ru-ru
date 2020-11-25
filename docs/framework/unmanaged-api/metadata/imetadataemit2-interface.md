@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 866dc96b-bbfc-4c0f-80c2-38ce93072106
 topic_type:
 - apiref
-ms.openlocfilehash: 5a232f30da8812c6f3bd94647d74151312a8593b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b8ad159dace734c343297b256092162f17ab829b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726487"
 ---
 # <a name="imetadataemit2-interface"></a>Интерфейс IMetaDataEmit2
+
 Расширяет интерфейс [IMetaDataEmit](imetadataemit-interface.md) в основном, чтобы обеспечить возможность работы с универсальными типами.  
   
 ## <a name="methods"></a>Методы  
@@ -38,15 +39,16 @@ ms.locfileid: "84493047"
 |[Метод SetGenericParamProps](imetadataemit2-setgenericparamprops-method.md)|Задает значения свойств для определения универсального параметра, на которое ссылается указанный токен.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

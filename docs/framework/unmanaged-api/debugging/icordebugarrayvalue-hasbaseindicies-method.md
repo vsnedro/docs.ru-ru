@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: aa26df07-e0a6-4608-bdef-d4afafec89aa
 topic_type:
 - apiref
-ms.openlocfilehash: e6e8eb91bbc41faf0dcea010da9aa54995058653
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: a9d1faf5a834cb5d9be19f995aaa3eee1202171b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894979"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727449"
 ---
 # <a name="icordebugarrayvaluehasbaseindicies-method"></a>Метод ICorDebugArrayValue::HasBaseIndicies
+
 Возвращает значение, указывающее, имеют ли измерения данного массива базовый индекс, отличный от нуля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT HasBaseIndicies (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbHasBaseIndicies`  
- заполняет Указатель на логическое значение, равное `true` , если одно или несколько измерений этого `ICorDebugArrayValue` объекта имеют базовый индекс, отличный от нуля; в противном случае логическое значение `false`—.  
+ заполняет Указатель на логическое значение, равное, `true` Если одно или несколько измерений этого `ICorDebugArrayValue` объекта имеют базовый индекс ненулевого значения; в противном случае логическое значение равно `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

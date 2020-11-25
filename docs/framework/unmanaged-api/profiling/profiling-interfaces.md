@@ -6,17 +6,19 @@ helpviewer_keywords:
 - profiling interfaces [.NET Framework]
 - interfaces [.NET Framework profiling]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.openlocfilehash: f073794b4fdf89f289b70fed9967ee37b5f4e133
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: dd6999e9f9e16264bde3cf62ce3a888841347607
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494050"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727475"
 ---
 # <a name="profiling-interfaces"></a>Профилирующие интерфейсы
+
 В этом разделе описываются неуправляемые интерфейсы, позволяющие профилировать программу, выполняемую в среде CLR.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Интерфейс ICLRProfiling](iclrprofiling-interface.md)  
  Предоставляет метод [AttachProfiler](iclrprofiling-attachprofiler-method.md) , который позволяет профилировщику присоединяться к выполняющемуся процессу.  
   
@@ -81,7 +83,7 @@ ms.locfileid: "84494050"
  Предоставляет методы для последовательного перебора коллекции модулей, загруженных приложением или профилировщиком.  
   
  [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)  
- Предоставляет методы для последовательного прохода по коллекции замороженных объектов, созданных [Ngen. exe (генератор образов в машинном кодах)](../../tools/ngen-exe-native-image-generator.md).  
+ Предоставляет методы для последовательного прохода по коллекции замороженных объектов, созданных [Ngen.exe (генератор образов в машинном код)](../../tools/ngen-exe-native-image-generator.md).  
   
  [Интерфейс ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)  
  Предоставляет методы для последовательного перебора коллекции потоков в среде CLR.  
@@ -90,6 +92,7 @@ ms.locfileid: "84494050"
  Предоставляет метод [выделения](imethodmalloc-alloc-method.md) для выделения памяти для нового текста функции MSIL.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Общие сведения о профилировании](profiling-overview.md)  
   
  [Глобальные статические функции профилирования](profiling-global-static-functions.md)  

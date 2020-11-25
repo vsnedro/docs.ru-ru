@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 65063ad5-e0d9-4c01-8f8b-9a5950109fa6
 topic_type:
 - apiref
-ms.openlocfilehash: 8d9de753f1c44338a96e990def80643d591f2a8b
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: f2a85bafc3e2f25b2ed6116a46a9938d869dbaae
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007472"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726084"
 ---
 # <a name="imetadatadispenseropenscope-method"></a>Метод IMetaDataDispenser::OpenScope
+
 Открывает существующий файл на диске и сопоставляет его метаданные с памятью.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT OpenScope (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szScope`  
  окне Имя открываемого файла. Файл должен содержать метаданные среды CLR.  
   
@@ -51,7 +53,8 @@ HRESULT OpenScope (
  `ppIUnk`  
  заполняет Указатель на возвращаемый интерфейс.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Копию метаданных в памяти можно запросить с помощью методов из одного из интерфейсов "Импорт" или добавить к методам из одного из интерфейсов "выдачи".  
   
  Если целевой файл не содержит метаданные CLR, `OpenScope` метод завершится ошибкой.  
@@ -61,15 +64,16 @@ HRESULT OpenScope (
  В .NET Framework версии 2,0 области, открытые с параметром `dwOpenFlags` офреад, больше не являются общими. Используйте значение Офреадонли, чтобы разрешить общий доступ к области. При совместном использовании области запросы, использующие интерфейсы метаданных для чтения и записи, завершатся ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)
 - [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a3a36987-5666-4e2f-95b5-d0cb246502ec
 topic_type:
 - apiref
-ms.openlocfilehash: ac35b18ce8c45c95bb2fb8e820423470ca1b75bf
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a2bac05e7471a0df8d624bf5dfbe2aa58c25cf4c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497157"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727176"
 ---
 # <a name="icorprofilerinfo2getclasslayout-method"></a>Метод ICorProfilerInfo2::GetClassLayout
+
 Получает сведения о макете в памяти полей, определенных с помощью указанного класса. То есть этот метод получает смещения полей класса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetClassLayout(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classID`  
  [in] Идентификатор класса, для которого будет извлекаться макет.  
   
@@ -52,7 +54,8 @@ HRESULT GetClassLayout(
  `pulClassSize`  
  [out] Указатель на расположение, которое содержит размер класса в байтах.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Метод `GetClassLayout` возвращает только поля, определенные самим классом. Если в родительском классе этого класса также определены поля, профилировщик должен вызвать `GetClassLayout` в родительском классе, чтобы получить эти поля.  
   
  Если вы используете метод `GetClassLayout` со строковыми классами, метод завершится с ошибкой с кодом ошибки E_INVALIDARG. Чтобы получить сведения о макете строки, используйте [ICorProfilerInfo2:: GetStringLayout](icorprofilerinfo2-getstringlayout-method.md) . Метод `GetClassLayout` также не завершится с ошибкой при его вызове с классом массива.  
@@ -62,6 +65,7 @@ HRESULT GetClassLayout(
  Кроме того, сначала можно вызвать метод `GetClassLayout` с буфером `rFieldOffset` нулевой длины для получения правильного размера буфера. Затем можно задать размер буфера равным значению, возвращенному в параметре `pcFieldOffset`, и вызвать метод `GetClassLayout` снова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -70,7 +74,7 @@ HRESULT GetClassLayout(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

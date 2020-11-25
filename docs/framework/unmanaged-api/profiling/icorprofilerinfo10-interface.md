@@ -3,12 +3,12 @@ title: Интерфейс ICorProfilerInfo10
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 7e483bae9b7898e25c376fa92d0449fc49c6f9ee
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a99fa8410bbd0dedeaeb9e1713107a3dcc9ada6b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548690"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727228"
 ---
 # <a name="icorprofilerinfo10-interface"></a>Интерфейс ICorProfilerInfo10
 
@@ -26,10 +26,11 @@ ms.locfileid: "90548690"
 |[Метод ResumeRuntime](icorprofilerinfo10-resumeruntime-method.md)| Возобновляет работу среды выполнения без выполнения сборки мусора. |
 
 ## <a name="requirements"></a>Требования  
+
 **Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).  
 **Заголовок:** CorProf.idl, CorProf.h  
 **Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)

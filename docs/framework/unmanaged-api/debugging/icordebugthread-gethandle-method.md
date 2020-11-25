@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 172ef8c4-2ead-4cfc-bd2e-dee4fb7191cd
 topic_type:
 - apiref
-ms.openlocfilehash: 16aafa439fc81c3606f98ca2ba860316ec46e0db
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5debd09f3ca0b4562f62913f9530cc4fa6f9110b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379738"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728034"
 ---
 # <a name="icordebugthreadgethandle-method"></a>Метод ICorDebugThread::GetHandle
+
 Возвращает текущий маркер для активной части этого ICorDebugThread.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,15 +35,18 @@ HRESULT GetHandle (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phThreadHandle`  
  заполняет Указатель на ХСРЕАД, который является маркером активной части этого потока.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Этот маркер может измениться при выполнении процесса и может отличаться для разных частей потока.  
   
  Этот обработчик принадлежит API отладки. Отладчик должен дублировать его перед использованием.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

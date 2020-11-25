@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type:
 - apiref
-ms.openlocfilehash: c0bdd9e59f5794dbb0d447dc2cc6cb682bfdf09f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: a3a45a13073cf422064d28554a274e068db6f517
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008486"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727514"
 ---
 # <a name="lpoverlapped_completion_routine-function-pointer"></a>Указатель функции LPOVERLAPPED_COMPLETION_ROUTINE
+
 Указывает на функцию, которая уведомляет узел при завершении перекрытия (асинхронного) ввода-вывода на устройство.  
   
  Этот указатель функции является устаревшим в .NET Framework 4.  
@@ -37,6 +38,7 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwErrorCode`  
  окне Значение, которое является кодом ошибки, если устройство было закрыто; в противном случае это значение равно нулю.  
   
@@ -48,18 +50,20 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
  `lpOverlapped`  
  окне Указатель на структуру, содержащую сведения, используемые для завершения запроса ввода-вывода.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Функция, к которой `LPOVERLAPPED_COMPLETION_ROUTINE` points является функцией обратного вызова и должна быть реализована модулем записи размещающего приложения. Функция обратного вызова позволяет узлу обработать завершенный запрос ввода-вывода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorWks. dll  
+ **Библиотека:** MSCorWks.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

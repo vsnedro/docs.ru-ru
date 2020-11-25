@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 610e792d-98ef-411f-90b0-5b9a3813f547
 topic_type:
 - apiref
-ms.openlocfilehash: 15c421471704ffc085da2af6ac74350bd099fdb0
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 842b878fac1e2590eb6ea0b29ebee0d46e818474
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134362"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727930"
 ---
 # <a name="iassemblynamefinalize-method"></a>Метод IAssemblyName::Finalize
+
 Позволяет этому объекту [IAssemblyName](iassemblyname-interface.md) освобождать ресурсы и выполнять другие операции очистки перед вызовом деструктора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,12 +33,13 @@ HRESULT Finalize ();
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyName](iassemblyname-interface.md)

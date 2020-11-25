@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 06f3b504-085f-4142-934a-25381fe23d4c
 topic_type:
 - apiref
-ms.openlocfilehash: 2a36c9808f29c038e3185157078c235959baf13c
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 61544d0dfe876f35fdfbe5afa945fad0620c0eb5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132364"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726656"
 ---
 # <a name="cor_debug_il_to_native_map-structure"></a>Структура COR_DEBUG_IL_TO_NATIVE_MAP
+
 Содержит смещения, которые используются для сопоставления кода MSIL с машинным кодом.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -43,15 +44,16 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
 |`nativeEndOffset`|Смещение конца машинного кода.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl, CorDebug. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод GetILToNativeMapping](../profiling/icorprofilerinfo-getiltonativemapping-method.md)
 - [Метод GetILToNativeMapping](icordebugcode-getiltonativemapping-method.md)

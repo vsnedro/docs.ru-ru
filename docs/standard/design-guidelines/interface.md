@@ -6,14 +6,15 @@ helpviewer_keywords:
 - type design guidelines, interfaces
 - class library design guidelines [.NET Framework], interfaces
 ms.assetid: a016bd18-6710-4358-9438-9f190a295392
-ms.openlocfilehash: 9f8ff38d5825091d4d5d3716ed6025a8d04c592d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6f8cbb757ffb42f63903b212fee33cdcbba7ecb2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821012"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727683"
 ---
 # <a name="interface-design"></a>Разработка интерфейса
+
 Хотя большинство API-интерфейсов лучше моделировать с помощью классов и структур, существуют случаи, когда интерфейсы более подходят или являются единственным вариантом.
 
  Среда CLR не поддерживает множественное наследование (т. е. классы CLR не могут наследовать более чем от одного базового класса), но позволяют типам реализовать один или несколько интерфейсов в дополнение к наследованию от базового класса. Поэтому интерфейсы часто используются для достижения результата множественного наследования. Например, <xref:System.IDisposable> является интерфейсом, который позволяет типам поддерживать возможность уничтожения независимо от любых других иерархий наследования, в которых они хотят участвовать.
@@ -46,7 +47,7 @@ ms.locfileid: "94821012"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию типов](type.md)
 - [Рекомендации по проектированию платформы](index.md)

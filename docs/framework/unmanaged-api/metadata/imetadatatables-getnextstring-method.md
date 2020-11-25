@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9720428-c353-4f07-a7e8-899e106a1b37
 topic_type:
 - apiref
-ms.openlocfilehash: 6f4764f016360a2ec0ab054b7a89ccb3f86aeb43
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b79dbdd64ac171d1bc4cd30b96ee76b4a853afb6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490228"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727254"
 ---
 # <a name="imetadatatablesgetnextstring-method"></a>Метод IMetaDataTables::GetNextString
+
 Возвращает индекс следующей строки в текущем столбце таблицы.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetNextString (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ixString`  
  окне Значение индекса из столбца таблицы строк.  
   
@@ -42,15 +44,16 @@ HRESULT GetNextString (
  заполняет Указатель на индекс следующей строки в столбце.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)

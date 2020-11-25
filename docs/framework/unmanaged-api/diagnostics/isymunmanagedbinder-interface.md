@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab
 topic_type:
 - apiref
-ms.openlocfilehash: f4f925282d65cd9cbc8eb1c8825f358602de68ed
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 554e59484f00626726f7f024c69e93a5e6647130
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441699"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727384"
 ---
 # <a name="isymunmanagedbinder-interface"></a>Интерфейс ISymUnmanagedBinder
-Представляет связыватель символов для неуправляемого кода.  
+
+Представляет модуль привязки символов для неуправляемого кода.  
   
 > [!IMPORTANT]
 > При открытии файла базы данных программы (PDB) из ненадежного источника возникает угроза безопасности.  
@@ -35,9 +36,10 @@ ms.locfileid: "83441699"
 |[Метод GetReaderFromStream](isymunmanagedbinder-getreaderfromstream-method.md)|При наличии интерфейса метаданных и потока, содержащего хранилище символов, возвращает правильную структуру [ISymUnmanagedReader](isymunmanagedreader-interface.md) , которая будет считывать отладочные символы из заданного хранилища символов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedBinder2](isymunmanagedbinder2-interface.md)

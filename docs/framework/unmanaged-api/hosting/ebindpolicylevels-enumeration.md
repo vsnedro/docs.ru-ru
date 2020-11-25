@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
 topic_type:
 - apiref
-ms.openlocfilehash: 94d2ec12309249afbecdc4130f8fe20c927b0a9b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: a0992ca8ac4bfffef681c74de455a0eeb627a042
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616376"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726851"
 ---
 # <a name="ebindpolicylevels-enumeration"></a>Перечисление EBindPolicyLevels
+
 Предоставляет флаги для указания уровня применения или изменения политики сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,7 +40,7 @@ typedef enum {
 } EBindPolicyLevels;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -49,22 +50,24 @@ typedef enum {
 |`ePolicyLevelNone`|Указывает отсутствие флагов уровня политики.|  
 |`ePolicyLevelPublisher`|Указывает, что политика должна применяться на уровне издателя.|  
 |`ePolicyLevelRetargetable`|Указывает, что политика должна быть применима на уровнях переменных.|  
-|`ePolicyPortability`|Указывает, что политика должна поддерживать переносимость между реализациями сборки .NET Framework. См. раздел файл конфигурации [ \< тег supportportability>](../../configure-apps/file-schema/runtime/supportportability-element.md) .|  
+|`ePolicyPortability`|Указывает, что политика должна поддерживать переносимость между реализациями сборки .NET Framework. См [\<supportPortability>](../../configure-apps/file-schema/runtime/supportportability-element.md) . элемент файла конфигурации.|  
 |`ePolicyUnifiedToCLR`|Указывает, что политика должна быть унифицированной для среды CLR.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Это перечисление передается методам интерфейса [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) для указания изменений в политике приложения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Размещение перечислений](hosting-enumerations.md)

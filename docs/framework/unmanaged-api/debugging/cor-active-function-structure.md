@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ed86185f-2152-459c-961f-10c06d62e83f
 topic_type:
 - apiref
-ms.openlocfilehash: cbc272070e9eb6810b34ec1f3fdc9e944c624cd3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c50ba530d78296ebb956329b2f34b4f1e5cae94c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132382"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727423"
 ---
 # <a name="cor_active_function-structure"></a>Структура COR_ACTIVE_FUNCTION
+
 Содержит сведения о функциях, которые в данный момент активны в кадрах потока. Эта структура используется методом [ICorDebugThread2:: GetActiveFunctions](icordebugthread2-getactivefunctions-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,22 +41,23 @@ typedef struct  _COR_ACTIVE_FUNCTION {
   
 |Член|Описание|  
 |------------|-----------------|  
-|`pAppDomain`|Указатель на владельца домена приложения `ilOffset` поля.|  
-|`pModule`|Указатель на владельца модуля `ilOffset` поля.|  
-|`pFunction`|Указатель на владельца функции поля `ilOffset`.|  
+|`pAppDomain`|Указатель на владельца домена приложения для `ilOffset` поля.|  
+|`pModule`|Указатель на владельца `ilOffset` поля.|  
+|`pFunction`|Указатель на владельца функции `ilOffset` поля.|  
 |`ilOffset`|Смещение кадра на языке MSIL.|  
 |`flags`|Зарезервировано для будущего расширения.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

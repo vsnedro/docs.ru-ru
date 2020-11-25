@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a25a8f8b-5cfa-440d-9376-a1a1c3a9fc11
 topic_type:
 - apiref
-ms.openlocfilehash: 525fa2efa39909390d874fb97d9f11e647340ea9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ea4f6f129cf2919124b1bef1fd837f2b1e13760e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496949"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727059"
 ---
 # <a name="icorprofilerinfo2getrvastaticaddress-method"></a>Метод ICorProfilerInfo2::GetRVAStaticAddress
+
 Возвращает адрес указанного статического поля с относительным виртуальным адресом (RVA).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetRVAStaticAddress(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор класса, содержащего запрошенное статическое поле для параметра RVA.  
   
@@ -44,7 +46,8 @@ HRESULT GetRVAStaticAddress(
  `ppAddress`  
  заполняет Указатель на адрес поля static-RVA.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetRVAStaticAddress`Метод может вернуть одно из следующих данных:  
   
 - CORPROF_E_DATAINCOMPLETE HRESULT, если заданному статическому полю не назначен адрес в указанном контексте.  
@@ -54,6 +57,7 @@ HRESULT GetRVAStaticAddress(
  Перед завершением конструктора класса класса возвратит `GetRVAStaticAddress` CORPROF_E_DATAINCOMPLETE для всех его статических полей, хотя некоторые статические поля уже могут быть инициализированы и могут быть корневыми объектами сборки мусора.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -62,7 +66,7 @@ HRESULT GetRVAStaticAddress(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

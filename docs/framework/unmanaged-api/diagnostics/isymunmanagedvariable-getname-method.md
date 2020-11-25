@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
 topic_type:
 - apiref
-ms.openlocfilehash: b48d131fa99b65d38856d2b635bf59145db9157e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f9da3ca8684da3bbc87146b3b52effdc4f91393d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615245"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726890"
 ---
 # <a name="isymunmanagedvariablegetname-method"></a>Метод ISymUnmanagedVariable::GetName
+
 Возвращает имя этой переменной.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetName(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  окне Длина буфера, `pcchName` на который указывает параметр.  
   
@@ -46,11 +48,13 @@ HRESULT GetName(
  заполняет Буфер, в котором хранится имя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedVariable](isymunmanagedvariable-interface.md)
