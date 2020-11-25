@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: cdeda721-b214-4503-a291-c70b68b5f36b
 topic_type:
 - apiref
-ms.openlocfilehash: daf5319f5d57f44cb20ce9f28d3c7b84c7015ff6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 3794a3b308bd5c96a38337d8b81e61167e4dc988
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894907"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734053"
 ---
 # <a name="icordebugassemblygetname-method"></a>Метод ICorDebugAssembly::GetName
-Возвращает имя сборки, которую представляет этот `ICorDebugAssembly` экземпляр.  
+
+Возвращает имя сборки, которую `ICorDebugAssembly` представляет этот экземпляр.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -36,6 +37,7 @@ HRESULT GetName (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  [in] Размер массива `szName`.  
   
@@ -45,10 +47,12 @@ HRESULT GetName (
  `szName`  
  заполняет Массив, в котором хранится имя.  
   
-## <a name="remarks"></a>Remarks  
- `GetName` Метод возвращает полный путь и имя файла сборки.  
+## <a name="remarks"></a>Комментарии  
+
+ `GetName`Метод возвращает полный путь и имя файла сборки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

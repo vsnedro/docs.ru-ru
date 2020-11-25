@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
 topic_type:
 - apiref
-ms.openlocfilehash: 9829f57da911b43626516284e4858adc4139a3ca
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: c8d18b78cf0185271eae763892610d13f76e42ab
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762881"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734001"
 ---
 # <a name="iclrtaskmanagercreatetask-method"></a>Метод ICLRTaskManager::CreateTask
+
 Явно запрашивает создание новой задачи средой CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,12 +35,13 @@ HRESULT CreateTask (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pTask`  
  заполняет Указатель на адрес только что созданного файла [ICLRTask](iclrtask-interface.md)или значение null, если задачу не удалось создать.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -50,23 +52,25 @@ HRESULT CreateTask (
 |E_OUTOFMEMORY|Недостаточно памяти для выделения запрошенного ресурса.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  Среда CLR автоматически создает новую задачу при инициализации, когда пользовательский код создает поток с помощью типов в <xref:System.Threading> пространстве имен или увеличивается размер пула потоков. Он также создает задачи, когда неуправляемый код вызывает управляемую функцию.  
   
- `CreateTask`позволяет узлу выполнить явный запрос о том, что среда CLR создает новую задачу. Например, узел может вызвать этот метод для прединициализации структур данных.  
+ `CreateTask` позволяет узлу выполнить явный запрос о том, что среда CLR создает новую задачу. Например, узел может вызвать этот метод для прединициализации структур данных.  
   
 > [!IMPORTANT]
 > Новая задача возвращается в приостановленном состоянии и остается приостановленной до тех пор, пока узел явно не вызывает метод [IHostTask:: Start](ihosttask-start-method.md).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

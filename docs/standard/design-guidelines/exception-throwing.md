@@ -6,14 +6,15 @@ helpviewer_keywords:
 - explicitly throwing exceptions
 - throwing exceptions, design guidelines
 ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
-ms.openlocfilehash: 6f22878a9ddfb394f6705a335930ef2cc270895f
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: d41467b971e43ca9b22c59e3b64bdd45d16c740b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821272"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734404"
 ---
 # <a name="exception-throwing"></a>Создание исключений
+
 Рекомендации по генерации исключений, описанные в этом разделе, занимают хорошее определение значения сбоя при выполнении. Сбой выполнения происходит каждый раз, когда член не может сделать то, что он был разработан (что подразумевает имя члена). Например, если `OpenFile` метод не может вернуть открытый обработчик файла вызывающему объекту, это будет считаться ошибкой при выполнении.
 
  Большинство разработчиков хорошо знакомы с использованием исключений для ошибок использования, таких как деление на ноль или ссылки со значением NULL. В платформе исключения используются для всех условий ошибок, включая ошибки выполнения.
@@ -62,7 +63,7 @@ ms.locfileid: "94821272"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Правила разработки исключений](exceptions.md)

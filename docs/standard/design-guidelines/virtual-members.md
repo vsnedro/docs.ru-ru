@@ -6,14 +6,15 @@ helpviewer_keywords:
 - virtual members
 - members [.NET Framework], virtual
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
-ms.openlocfilehash: 22eb71ccfc1b9a3d359b0453e4ff47f3f41827f5
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7727ea7fcfdbbecf2e53ddd7a44b4cf907211f80
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828404"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734352"
 ---
 # <a name="virtual-members"></a>Виртуальные члены
+
 Виртуальные члены могут быть переопределены, тем самым изменяя поведение подкласса. Они очень похожи на обратные вызовы с точки зрения расширяемости, которые они предоставляют, но они лучше в плане производительности выполнения и потребления памяти. Кроме того, виртуальные члены более естественны в сценариях, требующих создания специального типа (специализации).
 
  Виртуальные члены работают лучше, чем обратные вызовы и события, но не работают лучше, чем методы, не являющиеся виртуальными.
@@ -36,7 +37,7 @@ ms.locfileid: "94828404"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Разработка с обеспечением расширяемости](designing-for-extensibility.md)

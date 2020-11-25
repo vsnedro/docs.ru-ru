@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ea52be06-0a16-4f57-afca-4287d72e76c4
 topic_type:
 - apiref
-ms.openlocfilehash: c9cb599dd27a809ed5245c9570cddb8110be8172
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: e8662535fb6f1aa812130d96e67678baa3c41a52
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894927"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734040"
 ---
 # <a name="icordebugassemblygetprocess-method"></a>Метод ICorDebugAssembly::GetProcess
+
 Возвращает указатель интерфейса на процесс, в котором выполняется данный экземпляр ICorDebugAssembly.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetProcess (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `ppProcess`  
  заполняет Указатель на интерфейс ICorDebugProcess, представляющий процесс.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
