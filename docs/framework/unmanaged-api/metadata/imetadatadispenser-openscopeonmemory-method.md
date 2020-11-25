@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 14218249-bdec-48ae-b5fc-9f57f7ca8501
 topic_type:
 - apiref
-ms.openlocfilehash: 69e5e05012d2b44a76a986591ec990f66bf8ae20
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 26293e38a275ca691c7d48dceb12c1e7dd316536
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007329"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713422"
 ---
 # <a name="imetadatadispenseropenscopeonmemory-method"></a>Метод IMetaDataDispenser::OpenScopeOnMemory
+
 Открывает область памяти, которая содержит существующие метаданные. Это значит, что этот метод открывает указанную область памяти, в которой существующие данные обрабатываются как метаданные.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT OpenScopeOnMemory (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pData`  
  окне Указатель, указывающий начальный адрес области памяти.  
   
@@ -55,7 +57,8 @@ HRESULT OpenScopeOnMemory (
  `ppIUnk`  
  заполняет Указатель на возвращаемый интерфейс.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Копию метаданных в памяти можно запросить с помощью методов из одного из интерфейсов "Импорт" или добавить к методам из одного из интерфейсов "выдачи".  
   
  `OpenScopeOnMemory`Метод аналогичен методу [IMetaDataDispenser:: OpenScope](imetadatadispenser-openscope-method.md) , за исключением того, что интересующие метаданные уже существуют в памяти, а не в файле на диске.  
@@ -63,15 +66,16 @@ HRESULT OpenScopeOnMemory (
  Если целевая область памяти не содержит метаданных среды CLR, `OpenScopeOnMemory` метод завершится ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)
 - [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)

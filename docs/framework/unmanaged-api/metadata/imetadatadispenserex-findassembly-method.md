@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
 topic_type:
 - apiref
-ms.openlocfilehash: 50aebb09924b93a622e5b7d84e65e41ee91f6018
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: c11a4498610c3e82590a0ff9be1247173e70be76
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006198"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713396"
 ---
 # <a name="imetadatadispenserexfindassembly-method"></a>Метод IMetaDataDispenserEx::FindAssembly
+
 Этот метод не реализован. При вызове возвращается E_NOTIMPL.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT FindAssembly(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szAppBase`  
  [in] Не используется.  
   
@@ -62,15 +64,16 @@ HRESULT FindAssembly(
  заполняет Число символов, фактически возвращаемых в `szName` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформа:** См. раздел [требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)
