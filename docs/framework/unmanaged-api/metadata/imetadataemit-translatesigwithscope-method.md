@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 47915d33-b7bf-409e-b484-4ee1df15de22
 topic_type:
 - apiref
-ms.openlocfilehash: 7ef6dbc46806febc6fba89b39a8b894377225c23
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 80d33da2eb2a7f0cfbe5dcb7279fff9973dada2e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003988"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95712928"
 ---
 # <a name="imetadataemittranslatesigwithscope-method"></a>Метод IMetaDataEmit::TranslateSigWithScope
+
 Импортирует сборку в текущую область и получает новую сигнатуру метаданных для Объединенной области.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -44,6 +45,7 @@ HRESULT TranslateSigWithScope (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAssemImport`  
  окне Интерфейс для импортируемой сборки (где определена сигнатура).  
   
@@ -78,15 +80,16 @@ HRESULT TranslateSigWithScope (
  заполняет Число фактических байтов в переведенной сигнатуре.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MSCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)
