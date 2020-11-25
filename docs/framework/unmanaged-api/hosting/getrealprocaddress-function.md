@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
 topic_type:
 - apiref
-ms.openlocfilehash: 6bbf8366054c58543444a4b710a687198f365e6e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d48106fca6008955409581ad9ac202aebe785cb4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617208"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733234"
 ---
 # <a name="getrealprocaddress-function"></a>Функция GetRealProcAddress
+
 Возвращает адрес указанной функции, которая экспортируется из последней установленной версии среды CLR.  
   
  Эта функция является устаревшей в .NET Framework 4.  
@@ -36,6 +37,7 @@ HRESULT GetRealProcAddress (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwszProcName`  
  окне Имя функции.  
   
@@ -43,6 +45,7 @@ HRESULT GetRealProcAddress (
  заполняет Расположение, которое получает указатель на адрес функции.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает коды стандартных ошибок модели COM, как определено в файле WinError. h, в дополнение к следующим значениям, определенным в CorError. h.  
   
 |Код возврата|Описание|  
@@ -52,14 +55,15 @@ HRESULT GetRealProcAddress (
 |CLR_E_SHIM_RUNTIMEEXPORT|Функция не экспортируется из среды выполнения.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** MSCorEE. dll  
+ **Библиотека:** MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -10,14 +10,15 @@ api_location:
 api_type:
 - COM
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-ms.openlocfilehash: 6732457220d795bbf8ae54277ef9f5c07cf96359
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6917900b7494550992dfa82f45ed0140f95e68cb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495363"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733624"
 ---
 # <a name="icorprofilerinfo7readinmemorysymbols"></a>ICorProfilerInfo7:: Реадинмеморисимболс
+
 [Поддерживается в .NET Framework 4.6.1 и более поздних версиях.]  
   
  Считывает байты из потока символов в памяти.  
@@ -35,6 +36,7 @@ HRESULT ReadInMemorySymbols(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `moduleId`  
  окне Идентификатор модуля, содержащего поток в памяти.  
   
@@ -51,17 +53,20 @@ HRESULT ReadInMemorySymbols(
  заполняет При возврате из метода содержит фактическое число считанных байтов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  `S_OK`значение, если было считано ненулевое число байтов.  
   
  `CORPROF_E_MODULE_IS_DYNAMIC`, если модуль был создан с помощью <xref:System.Reflection.Emit> .  
   
-## <a name="remarks"></a>Примечания  
- `ReadInMemorySymbols`Метод пытается выполнить чтение `countSymbolBytes` данных, начиная со смещения `symbolsReadOffset` в потоке в памяти. Данные копируются в `pSymbolBytes` , что должно иметь `countSymbolBytes` доступное место.     `pCountSymbolsBytesRead`содержит фактическое число считанных байтов, которое может быть меньше, чем `countSymbolBytes` при достижении конца потока.  
+## <a name="remarks"></a>Комментарии  
+
+ `ReadInMemorySymbols`Метод пытается выполнить чтение `countSymbolBytes` данных, начиная со смещения `symbolsReadOffset` в потоке в памяти. Данные копируются в `pSymbolBytes` , что должно иметь `countSymbolBytes` доступное место.     `pCountSymbolsBytesRead` содержит фактическое число считанных байтов, которое может быть меньше, чем `countSymbolBytes` при достижении конца потока.  
   
 > [!NOTE]
 > Текущая реализация не поддерживает отражение. Emit. Если модуль был создан с помощью отражения. Emit, метод возвращает значение `CORPROF_E_MODULE_IS_DYNAMIC` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -70,6 +75,6 @@ HRESULT ReadInMemorySymbols(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo7](icorprofilerinfo7-interface.md)

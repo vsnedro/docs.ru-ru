@@ -16,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
 - apiref
-ms.openlocfilehash: 60b7d77542a5065fb1e09a98e659cac17fb093e9
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 1b944034251b34350057866b2a52e63e934d72d4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860852"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733351"
 ---
 # <a name="createversionstringfrommodule-function"></a>Функция CreateVersionStringFromModule
+
 Создает строку версии из пути среды CLR в целевом процессе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT CreateVersionStringFromModule (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pidDebuggee`  
  [in] Идентификатор процесса, в котором загружается целевая среды CLR.  
   
@@ -56,6 +58,7 @@ HRESULT CreateVersionStringFromModule (
  [out] Длина строки версии, возвращенной `pBuffer`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK  
  Строка версии для целевой среды CLR успешно возвращена в `pBuffer`.  
   
@@ -71,16 +74,18 @@ HRESULT CreateVersionStringFromModule (
  E_FAIL (или другие коды возврата E_)  
  Параметр `pidDebuggee` не ссылается на допустимый процесс, или произошел другой сбой.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Эта функция принимает процесс CLR, который определяется параметром `pidDebuggee` и строкой пути, заданной параметром `szModuleName`. Строка версии возвращается в буфер, на который указывает `pBuffer`. Эта строка непрозрачна для пользователя функции, то есть сама строка версии не имеет внутреннего смысла. Он используется исключительно в контексте этой функции и [функции CreateDebuggingInterfaceFromVersion](createdebugginginterfacefromversion-function-for-silverlight.md).  
   
  Эта функция должна вызываться дважды. При первом вызове передайте значение null для обоих параметров `pBuffer` и `cchBuffer`. После этого размер буфера, необходимый для `pBuffer`, будет возвращен в `pdwLength`. Затем можно вызвать эту функцию во второй раз и передать буфер в `pBuffer` и его размер в `cchBuffer`.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** dbgshim. h  
   
- **Библиотека:** dbgshim. dll  
+ **Библиотека:** dbgshim.dll  
   
  **.NET Framework версии:** 3,5 SP1

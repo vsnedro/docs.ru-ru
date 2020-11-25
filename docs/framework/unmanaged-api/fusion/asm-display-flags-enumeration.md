@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: dbade6c9-9d26-4a79-9fd2-46108edd12d7
 topic_type:
 - apiref
-ms.openlocfilehash: ebaab57b647250823443b48d9e45921036372d5e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1eefd1ee5597ded269c56c05eec118b11294dd8a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176608"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732142"
 ---
 # <a name="asm_display_flags-enumeration"></a>Перечисление ASM_DISPLAY_FLAGS
-Отображает версию, сборку, культуру, подпись и так далее сборки, имя отображения которой будет получено методом [IAssemblyName::GetDisplayName.](iassemblyname-getdisplayname-method.md)  
+
+Указывает версию, сборку, язык и региональные параметры, сигнатуру и т. д. для сборки, отображаемое имя которого будет извлечено методом [IAssemblyName:: DisplayName](iassemblyname-getdisplayname-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,16 +51,18 @@ typedef enum {
 ```  
   
 ## <a name="remarks"></a>Remarks  
- `ASM_DISPLAYF_FULL`отражает любые изменения, внесенные в версию объекта [IAssemblyName.](iassemblyname-interface.md) Не думайте, что возвращенное значение неизменяемо.  
+
+ `ASM_DISPLAYF_FULL` отражает все изменения, внесенные в версию объекта [IAssemblyName](iassemblyname-interface.md) . Не считайте, что возвращаемое значение является неизменяемым.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Fusion.h  
+ **Заголовок:** Fusion. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

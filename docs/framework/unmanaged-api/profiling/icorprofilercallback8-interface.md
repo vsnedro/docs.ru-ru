@@ -8,31 +8,33 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 617b27923e96d9abc62ccbf158b076c6e45b20a8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 22a133d02bb69026190428905379323362943d40
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79175100"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732389"
 ---
 # <a name="icorprofilercallback8-interface"></a>Интерфейс ICorProfilerCallback8
-«Поддерживается в рамках .NET 4.7 и более поздних версиях»  
 
- Подкласс [ICorProfilerCallback7,](icorprofilercallback7-interface.md) который предоставляет методы обратного отработки, используемые общим временем выполнения языка, чтобы уведомить профайлера о том, что компиляция JIT динамического метода запущена и закончена.
+[Поддерживается в .NET Framework 4,7 и более поздних версиях]  
+
+ Подкласс [ICorProfilerCallback7](icorprofilercallback7-interface.md) , предоставляющий методы обратного вызова, используемые средой CLR для уведомления профилировщика о начале и завершении JIT-компиляции динамического метода.
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)|Уведомляет профайлера о том, что jIT начал компиляцию динамического метода.|  
-|[Метод DynamicMethodJITCompilationFinished](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)|Уведомляет профайлера о завершении компиляции динамического метода JIT.|  
+|[Метод DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)|Уведомляет профилировщик о запуске JIT-компиляции динамического метода.|  
+|[Метод DynamicMethodJITCompilationFinished](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)|Уведомляет профилировщик о завершении JIT-компиляции динамического метода.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## <a name="see-also"></a>См. также раздел
 

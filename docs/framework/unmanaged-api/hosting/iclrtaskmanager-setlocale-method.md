@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed16bb7f-4206-43a8-b9e9-c5737b69e3af
 topic_type:
 - apiref
-ms.openlocfilehash: 8f316d91aab4c3862a0ad45b41539a4b80791ab9
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 5f799c140705a5279c996b6bec90ab1f29bd42ef
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762796"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732441"
 ---
 # <a name="iclrtaskmanagersetlocale-method"></a>Метод ICLRTaskManager::SetLocale
+
 Уведомляет среду CLR о том, что узел изменил значение идентификатора локали (который сопоставляется с географическим языком и региональными параметрами) в текущей выполняемой задаче.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,12 +35,13 @@ HRESULT SetLocale (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `lcid`  
  окне Значение идентификатора локали, сопоставляемое с новым назначенным географическим языком и региональными параметрами.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -49,18 +51,20 @@ HRESULT SetLocale (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
- `SetLocale`Предоставляет узлу возможность выполнения любых механизмов, которые могут потребоваться для синхронизации языковых стандартов.  
+
+ `SetLocale` Предоставляет узлу возможность выполнения любых механизмов, которые могут потребоваться для синхронизации языковых стандартов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

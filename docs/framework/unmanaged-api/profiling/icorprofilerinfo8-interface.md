@@ -3,12 +3,12 @@ title: Интерфейс ICorProfilerInfo8
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 2cca915eda44d73aea7469e5f752c57309c2300d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: eedd16006781de517587e5138543b9b9eca3ff90
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495168"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733611"
 ---
 # <a name="icorprofilerinfo8-interface"></a>Интерфейс ICorProfilerInfo8
 
@@ -23,10 +23,11 @@ ms.locfileid: "84495168"
 |[Метод GetDynamicFunctionInfo](icorprofilerinfo8-getdynamicfunctioninfo-method.md)| Извлекает сведения о динамических методах. |
 
 ## <a name="requirements"></a>Требования  
+
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** CorProf.idl, CorProf.h  
 **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)

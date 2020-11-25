@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0
 topic_type:
 - apiref
-ms.openlocfilehash: 4bfad8b985a8ef059031464e99a8004842b276c0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 4b0de5f9759491f1303edc978b1548e91214daf8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445574"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733754"
 ---
 # <a name="setassemblyprops-method"></a>Метод SetAssemblyProps
+
 Назначает свойства уровня сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,11 +37,12 @@ HRESULT SetAssemblyProps(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `AssemblyID`  
  Идентификатор сборки.  
   
  `FileToken`  
- Файл, определяющий свойство. Может иметь значение NULL, если `AssemblyID` не указывает на непривязанный netmodule.  
+ Файл, определяющий свойство. Может иметь значение NULL `AssemblyID` , если не указывает на непривязанный netmodule.  
   
  `Option`  
  Указывает изменяемый параметр.  
@@ -49,12 +51,14 @@ HRESULT SetAssemblyProps(
  Новое значение параметра.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

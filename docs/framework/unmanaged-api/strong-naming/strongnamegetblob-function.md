@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 15d09166-be00-4696-913f-2c1fbc7ac2e1
 topic_type:
 - apiref
-ms.openlocfilehash: e99346ecca651346b46c220a5e427cbc7f4c4697
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8f5cb89294004dfb1f020627ceb1edb58735f72c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095016"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732285"
 ---
 # <a name="strongnamegetblob-function"></a>Функция StrongNameGetBlob
+
 Заполняет указанный буфер двоичным представлением исполняемого файла по указанному адресу.  
   
  Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: StrongNameGetBLob](../hosting/iclrstrongname-strongnamegetblob-method.md) .  
@@ -37,6 +38,7 @@ BOOLEAN StrongNameGetBlob (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `wszFilePath`  
  окне Допустимый путь к исполняемому файлу для загрузки.  
   
@@ -44,24 +46,27 @@ BOOLEAN StrongNameGetBlob (
  окне Буфер, в который загружается исполняемый файл.  
   
  `pcbBlob`  
- [вход, выход] Запрошенный максимальный размер `pbBlob`в байтах. При возврате фактический размер (в байтах) `pbBlob`.  
+ [вход, выход] Запрошенный максимальный размер (в байтах) `pbBlob` . При возврате фактический размер (в байтах) для `pbBlob` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `true` при успешном завершении; в противном случае `false`.  
+
+ `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Заметки  
- Если функция `StrongNameGetBlob` не завершается успешно, вызовите функцию [StrongNameErrorInfo](strongnameerrorinfo-function.md), чтобы получить последнюю созданную ошибку.  
+## <a name="remarks"></a>Комментарии  
+
+ Если `StrongNameGetBlob` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** StrongName. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameGetBlob](../hosting/iclrstrongname-strongnamegetblob-method.md)
 - [Метод StrongNameGetBlobFromImage](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md)

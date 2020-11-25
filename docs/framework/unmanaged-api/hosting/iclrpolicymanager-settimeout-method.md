@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 954404fd-d52d-4e68-b582-8692f3a5f608
 topic_type:
 - apiref
-ms.openlocfilehash: b3e66a1e04ca3f3031adf1f0f7f71d689ee76b04
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 459c5bc0699487b62d5dcf76f1044faf53ebab8b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703420"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732467"
 ---
 # <a name="iclrpolicymanagersettimeout-method"></a>Метод ICLRPolicyManager::SetTimeout
+
 Задает значение времени ожидания для указанной операции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SetTimeout (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `operation`  
  окне Одно из значений [еклроператион](eclroperation-enumeration.md) , указывающее на операцию среды CLR, для которой задается время ожидания. Поддерживаются следующие значения.  
   
@@ -51,9 +53,9 @@ HRESULT SetTimeout (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`SetTimeout`успешно возвращено.|  
+|S_OK|`SetTimeout` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -62,15 +64,16 @@ HRESULT SetTimeout (
 |E_INVALIDARG|Не удается задать время ожидания для указанного `operation` или указано недопустимое значение для `operation` .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b63a507a-ca97-4be0-8e4f-401cce2125f6
 topic_type:
 - apiref
-ms.openlocfilehash: 3a820381f1c4605d620d74a5915c3e08de69d9fb
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 31f26a40294857701b151cd2fce35b061da28238
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210115"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732532"
 ---
 # <a name="icordebugprocessenum-interface"></a>Интерфейс ICorDebugProcessEnum
+
 Реализует методы ICorDebugEnum и перечисляет ICorDebugProcess массивы.  
   
 ## <a name="methods"></a>Методы  
@@ -30,12 +31,13 @@ ms.locfileid: "83210115"
 |------------|-----------------|  
 |[Метод Next](icordebugprocessenum-next-method.md)|Возвращает указанное количество `ICorDebugProcess` экземпляров из перечисления, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -44,6 +46,6 @@ ms.locfileid: "83210115"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

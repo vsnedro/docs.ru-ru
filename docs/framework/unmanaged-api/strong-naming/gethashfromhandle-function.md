@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9e00337f-b307-4602-9bc3-965a8dbf02cd
 topic_type:
 - apiref
-ms.openlocfilehash: dc241324f5844610d7b86b7cb9668f84d4525395
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 904dcb707e704cfec2dba4e6587f7e3acaf7b538
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73140661"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732337"
 ---
 # <a name="gethashfromhandle-function"></a>Функция GetHashFromHandle
+
 Создает хэш содержимого файла с заданным дескриптором файла с помощью указанного хэш-алгоритма.  
   
  Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: GetHashFromHandle](../hosting/iclrstrongname-gethashfromhandle-method.md) .  
@@ -39,6 +40,7 @@ HRESULT GetHashFromHandle (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hFile`  
  окне Описатель файла для хэширования.  
   
@@ -49,21 +51,22 @@ HRESULT GetHashFromHandle (
  заполняет Возвращаемый буфер хэша.  
   
  `cchHash`  
- окне Запрошенный максимальный размер `pbHash`.  
+ окне Запрошенный максимальный размер `pbHash` .  
   
  `pchHash`  
- заполняет Размер возвращаемого `pbHash`в байтах.  
+ заполняет Размер возвращаемого объекта (в байтах) `pbHash` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** StrongName. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Метод GetHashFromHandle](../hosting/iclrstrongname-gethashfromhandle-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

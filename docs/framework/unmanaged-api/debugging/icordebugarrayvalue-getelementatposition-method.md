@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
 topic_type:
 - apiref
-ms.openlocfilehash: 5644c20ec5df2606c7258131573691997f424e50
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: a6e5ecee9a89da98a73dfb20935c5ec594d5958f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895012"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732935"
 ---
 # <a name="icordebugarrayvaluegetelementatposition-method"></a>Метод ICorDebugArrayValue::GetElementAtPosition
+
 Возвращает элемент в заданной позиции, рассматривая массив как одномерный массив с отсчетом от нуля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT GetElementAtPosition (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `nPosition`  
  окне Расположение извлекаемого элемента.  
   
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет значение элемента.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Компоновка многомерного массива соответствует стилю в C++ для макета массива.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -1,17 +1,17 @@
 ---
 title: Совместимость политики разграничения доступа кода и ее миграция
-description: Ознакомьтесь со сводкой и ссылками на раздел о совместимости и миграции политик управления доступом для кода в .NET 4.
+description: Ознакомьтесь со сводкой и ссылками на раздел о совместимости и миграции политик управления доступом для кода в .NET Framework 4.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - policy migration, compatibility
 - CLR policy migration
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-ms.openlocfilehash: e5affd9d16635fa28342b5b7390a083185975f2b
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 389976556175c0b6b300e75d01327d91f94f0db9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281736"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733390"
 ---
 # <a name="code-access-security-policy-compatibility-and-migration"></a>Совместимость политики разграничения доступа кода и ее миграция
 
@@ -27,7 +27,7 @@ ms.locfileid: "86281736"
 
 - Использование [ \<NetFx40_LegacySecurityPolicy> элемента конфигурации](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) для выбора устаревшей политики разграничения доступа кода.
 
-В этом разделе содержатся следующие подразделы.
+Этот раздел состоит из следующих подразделов.
 
 - [Явное использование](#explicit_use)
 
@@ -73,7 +73,7 @@ ms.locfileid: "86281736"
 
 Несколько перегруженных методов загрузки сборки вызывают ошибки из-за неявного использования политики разграничения доступа кода. Эти перегруженные методы принимают параметр <xref:System.Security.Policy.Evidence>, разрешающий политику разграничения доступа кода, и предоставляют сборке набор разрешений.
 
-Рассмотрим некоторые примеры. Устаревшие перегрузки — это перегрузки, принимающие в качестве параметра <xref:System.Security.Policy.Evidence>.
+Вот несколько примеров. Устаревшие перегрузки — это перегрузки, принимающие в качестве параметра <xref:System.Security.Policy.Evidence>.
 
 - <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType>
 

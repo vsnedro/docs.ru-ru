@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 03adaa9a-2beb-49b3-b2c4-6b4fc3f10715
 topic_type:
 - apiref
-ms.openlocfilehash: e6ab7c7af1cf9f30f6708c4e970db619ca071343
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: a426fca1b7ca4bfb9cbb30a221859f7c114db682
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762781"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732433"
 ---
 # <a name="iclrtaskmanagersetuilocale-method"></a>Метод ICLRTaskManager::SetUILocale
+
 Уведомляет среду CLR о том, что узел изменил языковой стандарт пользовательского интерфейса (UI) или язык и региональные параметры, в текущей выполняемой задаче.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,14 +35,15 @@ HRESULT SetUILocale (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `lcid`  
  окне Значение идентификатора локали, сопоставленное с вновь назначенным географическим языком и региональными параметрами пользовательского интерфейса.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`SetUILocale`успешно возвращено.|  
+|S_OK|`SetUILocale` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -49,18 +51,20 @@ HRESULT SetUILocale (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
- `SetUILocale`Предоставляет узлу возможность выполнять любые механизмы, необходимые для синхронизации языковых стандартов.  
+
+ `SetUILocale` Предоставляет узлу возможность выполнять любые механизмы, необходимые для синхронизации языковых стандартов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

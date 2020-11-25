@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Collections classes
 - collections [.NET]
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
-ms.openlocfilehash: 3b92f3aa8c21cc3d171e14100db190d88f2c0284
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7400d460c4d1ebf5c02d8313f33a5a63de1734d4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823853"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733520"
 ---
 # <a name="collections-and-data-structures"></a>Коллекции и структуры данных
 
@@ -26,6 +26,7 @@ ms.locfileid: "94823853"
 Начиная с .NET Framework 4, коллекции пространства имен <xref:System.Collections.Concurrent> предоставляют эффективные потокобезопасные операции для доступа к элементам коллекции из нескольких потоков. Неизменяемые классы коллекций в пространстве имен <xref:System.Collections.Immutable> ([пакет NuGet](https://www.nuget.org/packages/System.Collections.Immutable)) являются потокобезопасными, так как операции выполняются с копией исходной коллекции, а исходная коллекция неизменяемая.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
+
 ## <a name="common-collection-features"></a>Общие возможности коллекций
 
 Все коллекции предоставляют методы для добавления, удаления или поиска элементов в коллекции. Кроме того, все коллекции прямо или косвенно реализуют интерфейс <xref:System.Collections.ICollection> или интерфейс <xref:System.Collections.Generic.ICollection%601> с совместным использованием следующих функций.
@@ -57,6 +58,7 @@ ms.locfileid: "94823853"
     Для типов неуниверсальных коллекций в пространстве имен <xref:System.Collections> синхронизация обеспечивает определенную степень потокобезопасности. Обычно для выполнения синхронизации используются члены <xref:System.Collections.ICollection.SyncRoot%2A> и <xref:System.Collections.ICollection.IsSynchronized%2A>. Эти коллекции не являются потокобезопасными по умолчанию. Если требуется масштабируемый и эффективный многопотоковый доступ к коллекции, используйте один из классов в пространстве имен <xref:System.Collections.Concurrent> или рассмотрите возможность использования неизменяемой коллекции. Дополнительные сведения см. в разделе [Потокобезопасные коллекции](thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
+
 ## <a name="choose-a-collection"></a>Выбор коллекции
 
 Как правило, следует использовать универсальные коллекции. В следующей таблице описаны некоторые основные сценарии использования коллекций и классы коллекций, которые можно использовать для этих сценариев. Если вы не работали с универсальными коллекциями, сведения в этой таблице помогут выбрать универсальную коллекцию, лучше всего подходящую для решения ваших задач.
@@ -94,6 +96,7 @@ ms.locfileid: "94823853"
 Кроме того, `SortedSet<T>` имеет ту же сложность, что и `ImmutableSortedSet<T>`. Это обусловлено тем, что в обоих случаях используются двоичные деревья. Существенная разница заключается в том, что `ImmutableSortedSet<T>` использует неизменяемое двоичное дерево. Так как `ImmutableSortedSet<T>` также предлагает класс <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType>, который допускает изменения, обеспечивается как неизменяемость, так и производительность.
 
 <a name="BKMK_RelatedTopics"></a>
+
 ## <a name="related-topics"></a>См. также
 
 |Заголовок|Описание|
@@ -108,7 +111,9 @@ ms.locfileid: "94823853"
 |System.Collections.Immutable|Приводятся вводные сведения о неизменяемых коллекциях и ссылки на типы коллекций.|
 
 <a name="BKMK_Reference"></a>
+
 ## <a name="reference"></a>Справочник
+
 <xref:System.Array?displayProperty=nameWithType>
 <xref:System.Collections?displayProperty=nameWithType>
 <xref:System.Collections.Concurrent?displayProperty=nameWithType>

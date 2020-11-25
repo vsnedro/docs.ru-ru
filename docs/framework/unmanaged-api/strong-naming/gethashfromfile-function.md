@@ -14,17 +14,18 @@ helpviewer_keywords:
 ms.assetid: b3c526a4-8fb4-4ad6-b6af-42ce9c06492e
 topic_type:
 - apiref
-ms.openlocfilehash: ea2b70f37668587fb02513ab54da6c1915e2918d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ee9f9cd9a9f35c6c54497ad382bb6f9817d186bd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176985"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732376"
 ---
 # <a name="gethashfromfile-function"></a>Функция GetHashFromFile
+
 Создает хэш содержимого указанного файла.  
   
- Эта функция была амортизирована. Вместо этого используйте метод [ICLRStrongName::GetHashFromFile.](../hosting/iclrstrongname-gethashfromfile-method.md)  
+ Эта функция является устаревшей. Используйте вместо этого метод [метод iclrstrongname:: GetHashFromFile](../hosting/iclrstrongname-gethashfromfile-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,32 +40,35 @@ HRESULT GetHashFromFile (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `szFilePath`  
- (в) Название файла хэшу.  
+ окне Имя файла для хэширования.  
   
  `piHashAlg`  
- (в, вне) Алгоритм для использования при генерации хэша. Действительные алгоритмы определяются Win32 CryptoAPI. Если `piHashAlg` установлен до 0, используется алгоритм по умолчанию CALG_SHA-1.  
+ [вход, выход] Алгоритм, используемый при формировании хэша. Допустимыми являются алгоритмы, определяемые интерфейсом Win32 CryptoAPI. Если параметр `piHashAlg` имеет значение 0, используется алгоритм по умолчанию CALG_SHA-1.  
   
  `pbHash`  
- (ваут) Массив байта, содержащий генерируемый хэш.  
+ заполняет Массив байтов, содержащий созданный хэш.  
   
  `cchHash`  
- (в) Максимальный размер буфера, на который `pbHash` указывает.  
+ окне Максимальный размер буфера, `pbHash` на который указывает.  
   
  `pchHash`  
- (ваут) Размер, в байтах, `pbHash`возвращенного .  
+ заполняет Размер возвращаемого объекта (в байтах) `pbHash` .  
   
-## <a name="remarks"></a>Remarks  
- Эта функция такая же, как [GetHashFromFileW](gethashfromfilew-function.md), за исключением того, что спецификация имени файла ANSI вместо Unicode.  
+## <a name="remarks"></a>Комментарии  
+
+ Эта функция аналогична [GetHashFromFileW](gethashfromfilew-function.md), за исключением того, что спецификация имени файла является ANSI, а не Unicode.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** StrongName.h  
+ **Заголовок:** StrongName. h  
   
- **Библиотека:** Включено в качестве ресурса в MsCorEE.dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 
