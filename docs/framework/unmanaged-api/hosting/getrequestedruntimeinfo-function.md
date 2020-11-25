@@ -15,19 +15,20 @@ helpviewer_keywords:
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
 topic_type:
 - apiref
-ms.openlocfilehash: 0efda458d51677fcd16140cd0f0a835b76c20173
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: b120b854e1787824808dd64d95b0fa78ba6c9fa2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617182"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95705492"
 ---
-# <a name="getrequestedruntimeinfo-function"></a><span data-ttu-id="70f57-102">Функция GetRequestedRuntimeInfo</span><span class="sxs-lookup"><span data-stu-id="70f57-102">GetRequestedRuntimeInfo Function</span></span>
-<span data-ttu-id="70f57-103">Возвращает сведения о версии и каталоге о среде CLR, запрашиваемой приложением.</span><span class="sxs-lookup"><span data-stu-id="70f57-103">Gets version and directory information about the common language runtime (CLR) requested by an application.</span></span>  
+# <a name="getrequestedruntimeinfo-function"></a><span data-ttu-id="989e1-102">Функция GetRequestedRuntimeInfo</span><span class="sxs-lookup"><span data-stu-id="989e1-102">GetRequestedRuntimeInfo Function</span></span>
+
+<span data-ttu-id="989e1-103">Возвращает сведения о версии и каталоге о среде CLR, запрашиваемой приложением.</span><span class="sxs-lookup"><span data-stu-id="989e1-103">Gets version and directory information about the common language runtime (CLR) requested by an application.</span></span>  
   
- <span data-ttu-id="70f57-104">Эта функция является устаревшей в .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="70f57-104">This function has been deprecated in the .NET Framework 4.</span></span>  
+ <span data-ttu-id="989e1-104">Эта функция является устаревшей в .NET Framework 4.</span><span class="sxs-lookup"><span data-stu-id="989e1-104">This function has been deprecated in the .NET Framework 4.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="70f57-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="70f57-105">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="989e1-105">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="989e1-105">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetRequestedRuntimeInfo (  
@@ -45,84 +46,88 @@ HRESULT GetRequestedRuntimeInfo (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="70f57-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="70f57-106">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="989e1-106">Параметры</span><span class="sxs-lookup"><span data-stu-id="989e1-106">Parameters</span></span>  
+
  `pExe`  
- <span data-ttu-id="70f57-107">окне Имя приложения.</span><span class="sxs-lookup"><span data-stu-id="70f57-107">[in] The name of the application.</span></span>  
+ <span data-ttu-id="989e1-107">окне Имя приложения.</span><span class="sxs-lookup"><span data-stu-id="989e1-107">[in] The name of the application.</span></span>  
   
  `pwszVersion`  
- <span data-ttu-id="70f57-108">окне Строка, указывающая номер версии среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="70f57-108">[in] A string specifying the version number of the runtime.</span></span>  
+ <span data-ttu-id="989e1-108">окне Строка, указывающая номер версии среды выполнения.</span><span class="sxs-lookup"><span data-stu-id="989e1-108">[in] A string specifying the version number of the runtime.</span></span>  
   
  `pConfigurationFile`  
- <span data-ttu-id="70f57-109">окне Имя файла конфигурации, связанного с `pExe` .</span><span class="sxs-lookup"><span data-stu-id="70f57-109">[in] The name of the configuration file that is associated with `pExe`.</span></span>  
+ <span data-ttu-id="989e1-109">окне Имя файла конфигурации, связанного с `pExe` .</span><span class="sxs-lookup"><span data-stu-id="989e1-109">[in] The name of the configuration file that is associated with `pExe`.</span></span>  
   
  `startupFlags`  
- <span data-ttu-id="70f57-110">окне Одно или несколько значений перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="70f57-110">[in] One or more of the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration values.</span></span>  
+ <span data-ttu-id="989e1-110">окне Одно или несколько значений перечисления [STARTUP_FLAGS](startup-flags-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="989e1-110">[in] One or more of the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration values.</span></span>  
   
  `runtimeInfoFlags`  
- <span data-ttu-id="70f57-111">окне Одно или несколько значений перечисления [RUNTIME_INFO_FLAGS](runtime-info-flags-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="70f57-111">[in] One or more of the [RUNTIME_INFO_FLAGS](runtime-info-flags-enumeration.md) enumeration values.</span></span>  
+ <span data-ttu-id="989e1-111">окне Одно или несколько значений перечисления [RUNTIME_INFO_FLAGS](runtime-info-flags-enumeration.md) .</span><span class="sxs-lookup"><span data-stu-id="989e1-111">[in] One or more of the [RUNTIME_INFO_FLAGS](runtime-info-flags-enumeration.md) enumeration values.</span></span>  
   
  `pDirectory`  
- <span data-ttu-id="70f57-112">заполняет Буфер, содержащий путь к каталогу среды выполнения после успешного завершения.</span><span class="sxs-lookup"><span data-stu-id="70f57-112">[out] A buffer that contains the directory path to the runtime upon successful completion.</span></span>  
+ <span data-ttu-id="989e1-112">заполняет Буфер, содержащий путь к каталогу среды выполнения после успешного завершения.</span><span class="sxs-lookup"><span data-stu-id="989e1-112">[out] A buffer that contains the directory path to the runtime upon successful completion.</span></span>  
   
  `dwDirectory`  
- <span data-ttu-id="70f57-113">окне Длина буфера каталога.</span><span class="sxs-lookup"><span data-stu-id="70f57-113">[in] The length of the directory buffer.</span></span>  
+ <span data-ttu-id="989e1-113">окне Длина буфера каталога.</span><span class="sxs-lookup"><span data-stu-id="989e1-113">[in] The length of the directory buffer.</span></span>  
   
  `dwDirectoryLength`  
- <span data-ttu-id="70f57-114">заполняет Указатель на длину строки пути к каталогу.</span><span class="sxs-lookup"><span data-stu-id="70f57-114">[out] A pointer to the length of the directory path string.</span></span>  
+ <span data-ttu-id="989e1-114">заполняет Указатель на длину строки пути к каталогу.</span><span class="sxs-lookup"><span data-stu-id="989e1-114">[out] A pointer to the length of the directory path string.</span></span>  
   
  `pVersion`  
- <span data-ttu-id="70f57-115">заполняет Буфер, содержащий номер версии среды выполнения после успешного завершения.</span><span class="sxs-lookup"><span data-stu-id="70f57-115">[out] A buffer that contains the version number of the runtime upon successful completion.</span></span>  
+ <span data-ttu-id="989e1-115">заполняет Буфер, содержащий номер версии среды выполнения после успешного завершения.</span><span class="sxs-lookup"><span data-stu-id="989e1-115">[out] A buffer that contains the version number of the runtime upon successful completion.</span></span>  
   
  `cchBuffer`  
- <span data-ttu-id="70f57-116">окне Длина буфера строки версии.</span><span class="sxs-lookup"><span data-stu-id="70f57-116">[in] The length of the version string buffer.</span></span>  
+ <span data-ttu-id="989e1-116">окне Длина буфера строки версии.</span><span class="sxs-lookup"><span data-stu-id="989e1-116">[in] The length of the version string buffer.</span></span>  
   
  `dwlength`  
- <span data-ttu-id="70f57-117">заполняет Указатель на длину строки версии.</span><span class="sxs-lookup"><span data-stu-id="70f57-117">[out] A pointer to the length of the version string.</span></span>  
+ <span data-ttu-id="989e1-117">заполняет Указатель на длину строки версии.</span><span class="sxs-lookup"><span data-stu-id="989e1-117">[out] A pointer to the length of the version string.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="70f57-118">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="70f57-118">Return Value</span></span>  
- <span data-ttu-id="70f57-119">Этот метод возвращает коды стандартных ошибок модели COM, как определено в файле WinError. h, в дополнение к следующим значениям.</span><span class="sxs-lookup"><span data-stu-id="70f57-119">This method returns standard Component Object Model (COM) error codes, as defined in WinError.h, in addition to the following values.</span></span>  
-  
-|<span data-ttu-id="70f57-120">Код возврата</span><span class="sxs-lookup"><span data-stu-id="70f57-120">Return code</span></span>|<span data-ttu-id="70f57-121">Описание</span><span class="sxs-lookup"><span data-stu-id="70f57-121">Description</span></span>|  
-|-----------------|-----------------|  
-|<span data-ttu-id="70f57-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="70f57-122">S_OK</span></span>|<span data-ttu-id="70f57-123">Метод завершился успешно.</span><span class="sxs-lookup"><span data-stu-id="70f57-123">The method completed successfully.</span></span>|  
-|<span data-ttu-id="70f57-124">ERROR_INSUFFICIENT_BUFFER</span><span class="sxs-lookup"><span data-stu-id="70f57-124">ERROR_INSUFFICIENT_BUFFER</span></span>|<span data-ttu-id="70f57-125">Буфер каталога недостаточно велик для хранения пути к каталогу.</span><span class="sxs-lookup"><span data-stu-id="70f57-125">The directory buffer is not large enough to store the directory path.</span></span><br /><br /> <span data-ttu-id="70f57-126">-или-</span><span class="sxs-lookup"><span data-stu-id="70f57-126">- or -</span></span><br /><br /> <span data-ttu-id="70f57-127">Буфер версии недостаточно велик для хранения строки версии.</span><span class="sxs-lookup"><span data-stu-id="70f57-127">The version buffer is not large enough to store the version string.</span></span>|  
-  
-## <a name="remarks"></a><span data-ttu-id="70f57-128">Комментарии</span><span class="sxs-lookup"><span data-stu-id="70f57-128">Remarks</span></span>  
- <span data-ttu-id="70f57-129">`GetRequestedRuntimeInfo`Метод возвращает сведения времени выполнения о версии, загруженной в процесс, что не обязательно является последней версией, установленной на компьютере.</span><span class="sxs-lookup"><span data-stu-id="70f57-129">The `GetRequestedRuntimeInfo` method returns run-time information about the version loaded into the process, which is not necessarily the latest version installed on the computer.</span></span>  
-  
- <span data-ttu-id="70f57-130">В .NET Framework версии 2,0 можно получить сведения о последней установленной версии с помощью `GetRequestedRuntimeInfo` метода следующим образом.</span><span class="sxs-lookup"><span data-stu-id="70f57-130">In the .NET Framework version 2.0, you can get information about the latest installed version by using the `GetRequestedRuntimeInfo` method as follows:</span></span>  
-  
-- <span data-ttu-id="70f57-131">Укажите для `pExe` `pwszVersion` параметров, и `pConfigurationFile` значение null.</span><span class="sxs-lookup"><span data-stu-id="70f57-131">Specify the `pExe`, `pwszVersion`, and `pConfigurationFile` parameters as null.</span></span>  
-  
-- <span data-ttu-id="70f57-132">Укажите флаг RUNTIME_INFO_UPGRADE_VERSION в `RUNTIME_INFO_FLAGS` перечислениях для `runtimeInfoFlags` параметра.</span><span class="sxs-lookup"><span data-stu-id="70f57-132">Specify the RUNTIME_INFO_UPGRADE_VERSION flag in the `RUNTIME_INFO_FLAGS` enumerations for the `runtimeInfoFlags` parameter.</span></span>  
-  
- <span data-ttu-id="70f57-133">`GetRequestedRuntimeInfo`Метод не возвращает последнюю версию среды CLR в следующих случаях:</span><span class="sxs-lookup"><span data-stu-id="70f57-133">The `GetRequestedRuntimeInfo` method does not return the latest CLR version in the following circumstances:</span></span>  
-  
-- <span data-ttu-id="70f57-134">Существует файл конфигурации приложения, указывающий загрузку определенной версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="70f57-134">An application configuration file that specifies loading a particular CLR version exists.</span></span> <span data-ttu-id="70f57-135">Обратите внимание, что .NET Framework будет использовать файл конфигурации, даже если для параметра указано значение NULL `pConfigurationFile` .</span><span class="sxs-lookup"><span data-stu-id="70f57-135">Note that the .NET Framework will use the configuration file even if you specify null for the `pConfigurationFile` parameter.</span></span>  
-  
-- <span data-ttu-id="70f57-136">Метод [CorBindToRuntimeEx](corbindtoruntimeex-function.md) был вызван с указанием более ранней версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="70f57-136">The [CorBindToRuntimeEx](corbindtoruntimeex-function.md) method was called specifying an earlier CLR version.</span></span>  
-  
-- <span data-ttu-id="70f57-137">В настоящее время выполняется приложение, которое было скомпилировано для более ранней версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="70f57-137">An application that was compiled for an earlier CLR version is currently running.</span></span>  
-  
- <span data-ttu-id="70f57-138">Для `runtimeInfoFlags` параметра можно указать только одну из констант архитектуры `RUNTIME_INFO_FLAGS` перечисления в один момент времени:</span><span class="sxs-lookup"><span data-stu-id="70f57-138">For the `runtimeInfoFlags` parameter, you can specify only one of the architecture constants of the `RUNTIME_INFO_FLAGS` enumeration at a time:</span></span>  
-  
-- <span data-ttu-id="70f57-139">RUNTIME_INFO_REQUEST_IA64</span><span class="sxs-lookup"><span data-stu-id="70f57-139">RUNTIME_INFO_REQUEST_IA64</span></span>  
-  
-- <span data-ttu-id="70f57-140">RUNTIME_INFO_REQUEST_AMD64</span><span class="sxs-lookup"><span data-stu-id="70f57-140">RUNTIME_INFO_REQUEST_AMD64</span></span>  
-  
-- <span data-ttu-id="70f57-141">RUNTIME_INFO_REQUEST_X86</span><span class="sxs-lookup"><span data-stu-id="70f57-141">RUNTIME_INFO_REQUEST_X86</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="70f57-142">Требования</span><span class="sxs-lookup"><span data-stu-id="70f57-142">Requirements</span></span>  
- <span data-ttu-id="70f57-143">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="70f57-143">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="70f57-144">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="70f57-144">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="70f57-145">**Библиотека:** MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="70f57-145">**Library:** MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="70f57-146">**.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="70f57-146">**.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="70f57-147">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="70f57-147">See also</span></span>
+## <a name="return-value"></a><span data-ttu-id="989e1-118">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="989e1-118">Return Value</span></span>  
 
-- [<span data-ttu-id="70f57-148">Функция GetRequestedRuntimeVersion</span><span class="sxs-lookup"><span data-stu-id="70f57-148">GetRequestedRuntimeVersion Function</span></span>](getrequestedruntimeversion-function.md)
-- [<span data-ttu-id="70f57-149">Функция GetVersionFromProcess</span><span class="sxs-lookup"><span data-stu-id="70f57-149">GetVersionFromProcess Function</span></span>](getversionfromprocess-function.md)
-- [<span data-ttu-id="70f57-150">Устаревшие функции размещения CLR</span><span class="sxs-lookup"><span data-stu-id="70f57-150">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
+ <span data-ttu-id="989e1-119">Этот метод возвращает коды стандартных ошибок модели COM, как определено в файле WinError. h, в дополнение к следующим значениям.</span><span class="sxs-lookup"><span data-stu-id="989e1-119">This method returns standard Component Object Model (COM) error codes, as defined in WinError.h, in addition to the following values.</span></span>  
+  
+|<span data-ttu-id="989e1-120">Код возврата</span><span class="sxs-lookup"><span data-stu-id="989e1-120">Return code</span></span>|<span data-ttu-id="989e1-121">Описание</span><span class="sxs-lookup"><span data-stu-id="989e1-121">Description</span></span>|  
+|-----------------|-----------------|  
+|<span data-ttu-id="989e1-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="989e1-122">S_OK</span></span>|<span data-ttu-id="989e1-123">Метод завершился успешно.</span><span class="sxs-lookup"><span data-stu-id="989e1-123">The method completed successfully.</span></span>|  
+|<span data-ttu-id="989e1-124">ERROR_INSUFFICIENT_BUFFER</span><span class="sxs-lookup"><span data-stu-id="989e1-124">ERROR_INSUFFICIENT_BUFFER</span></span>|<span data-ttu-id="989e1-125">Буфер каталога недостаточно велик для хранения пути к каталогу.</span><span class="sxs-lookup"><span data-stu-id="989e1-125">The directory buffer is not large enough to store the directory path.</span></span><br /><br /> <span data-ttu-id="989e1-126">-или-</span><span class="sxs-lookup"><span data-stu-id="989e1-126">- or -</span></span><br /><br /> <span data-ttu-id="989e1-127">Буфер версии недостаточно велик для хранения строки версии.</span><span class="sxs-lookup"><span data-stu-id="989e1-127">The version buffer is not large enough to store the version string.</span></span>|  
+  
+## <a name="remarks"></a><span data-ttu-id="989e1-128">Комментарии</span><span class="sxs-lookup"><span data-stu-id="989e1-128">Remarks</span></span>  
+
+ <span data-ttu-id="989e1-129">`GetRequestedRuntimeInfo`Метод возвращает сведения времени выполнения о версии, загруженной в процесс, что не обязательно является последней версией, установленной на компьютере.</span><span class="sxs-lookup"><span data-stu-id="989e1-129">The `GetRequestedRuntimeInfo` method returns run-time information about the version loaded into the process, which is not necessarily the latest version installed on the computer.</span></span>  
+  
+ <span data-ttu-id="989e1-130">В .NET Framework версии 2,0 можно получить сведения о последней установленной версии с помощью `GetRequestedRuntimeInfo` метода следующим образом.</span><span class="sxs-lookup"><span data-stu-id="989e1-130">In the .NET Framework version 2.0, you can get information about the latest installed version by using the `GetRequestedRuntimeInfo` method as follows:</span></span>  
+  
+- <span data-ttu-id="989e1-131">Укажите для `pExe` `pwszVersion` параметров, и `pConfigurationFile` значение null.</span><span class="sxs-lookup"><span data-stu-id="989e1-131">Specify the `pExe`, `pwszVersion`, and `pConfigurationFile` parameters as null.</span></span>  
+  
+- <span data-ttu-id="989e1-132">Укажите флаг RUNTIME_INFO_UPGRADE_VERSION в `RUNTIME_INFO_FLAGS` перечислениях для `runtimeInfoFlags` параметра.</span><span class="sxs-lookup"><span data-stu-id="989e1-132">Specify the RUNTIME_INFO_UPGRADE_VERSION flag in the `RUNTIME_INFO_FLAGS` enumerations for the `runtimeInfoFlags` parameter.</span></span>  
+  
+ <span data-ttu-id="989e1-133">`GetRequestedRuntimeInfo`Метод не возвращает последнюю версию среды CLR в следующих случаях:</span><span class="sxs-lookup"><span data-stu-id="989e1-133">The `GetRequestedRuntimeInfo` method does not return the latest CLR version in the following circumstances:</span></span>  
+  
+- <span data-ttu-id="989e1-134">Существует файл конфигурации приложения, указывающий загрузку определенной версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="989e1-134">An application configuration file that specifies loading a particular CLR version exists.</span></span> <span data-ttu-id="989e1-135">Обратите внимание, что .NET Framework будет использовать файл конфигурации, даже если для параметра указано значение NULL `pConfigurationFile` .</span><span class="sxs-lookup"><span data-stu-id="989e1-135">Note that the .NET Framework will use the configuration file even if you specify null for the `pConfigurationFile` parameter.</span></span>  
+  
+- <span data-ttu-id="989e1-136">Метод [CorBindToRuntimeEx](corbindtoruntimeex-function.md) был вызван с указанием более ранней версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="989e1-136">The [CorBindToRuntimeEx](corbindtoruntimeex-function.md) method was called specifying an earlier CLR version.</span></span>  
+  
+- <span data-ttu-id="989e1-137">В настоящее время выполняется приложение, которое было скомпилировано для более ранней версии среды CLR.</span><span class="sxs-lookup"><span data-stu-id="989e1-137">An application that was compiled for an earlier CLR version is currently running.</span></span>  
+  
+ <span data-ttu-id="989e1-138">Для `runtimeInfoFlags` параметра можно указать только одну из констант архитектуры `RUNTIME_INFO_FLAGS` перечисления в один момент времени:</span><span class="sxs-lookup"><span data-stu-id="989e1-138">For the `runtimeInfoFlags` parameter, you can specify only one of the architecture constants of the `RUNTIME_INFO_FLAGS` enumeration at a time:</span></span>  
+  
+- <span data-ttu-id="989e1-139">RUNTIME_INFO_REQUEST_IA64</span><span class="sxs-lookup"><span data-stu-id="989e1-139">RUNTIME_INFO_REQUEST_IA64</span></span>  
+  
+- <span data-ttu-id="989e1-140">RUNTIME_INFO_REQUEST_AMD64</span><span class="sxs-lookup"><span data-stu-id="989e1-140">RUNTIME_INFO_REQUEST_AMD64</span></span>  
+  
+- <span data-ttu-id="989e1-141">RUNTIME_INFO_REQUEST_X86</span><span class="sxs-lookup"><span data-stu-id="989e1-141">RUNTIME_INFO_REQUEST_X86</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="989e1-142">Требования</span><span class="sxs-lookup"><span data-stu-id="989e1-142">Requirements</span></span>  
+
+ <span data-ttu-id="989e1-143">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="989e1-143">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="989e1-144">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="989e1-144">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="989e1-145">**Библиотека:** MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="989e1-145">**Library:** MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="989e1-146">**.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="989e1-146">**.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="989e1-147">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="989e1-147">See also</span></span>
+
+- [<span data-ttu-id="989e1-148">Функция GetRequestedRuntimeVersion</span><span class="sxs-lookup"><span data-stu-id="989e1-148">GetRequestedRuntimeVersion Function</span></span>](getrequestedruntimeversion-function.md)
+- [<span data-ttu-id="989e1-149">Функция GetVersionFromProcess</span><span class="sxs-lookup"><span data-stu-id="989e1-149">GetVersionFromProcess Function</span></span>](getversionfromprocess-function.md)
+- [<span data-ttu-id="989e1-150">Устаревшие функции размещения CLR</span><span class="sxs-lookup"><span data-stu-id="989e1-150">Deprecated CLR Hosting Functions</span></span>](deprecated-clr-hosting-functions.md)
