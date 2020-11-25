@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 190f424d-5e37-4163-a191-0895686e9476
 topic_type:
 - apiref
-ms.openlocfilehash: 70c03d34bdf9bd315994b2bfa09631efac2565ef
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ef25d55defee2fdcfc7d744e481060eb7a7782ef
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500225"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699889"
 ---
 # <a name="icorprofilercallbackexceptionsearchcatcherfound-method"></a>Метод ICorProfilerCallback::ExceptionSearchCatcherFound
+
 Уведомляет профилировщик о том, что на фазе поиска исключений обнаружен обработчик для созданного исключения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ RESULT ExceptionSearchCatcherFound(
   \[in] идентификатор функции, которая содержит обработчик исключений.
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -47,6 +49,6 @@ RESULT ExceptionSearchCatcherFound(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

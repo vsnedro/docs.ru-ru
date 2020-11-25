@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type:
 - apiref
-ms.openlocfilehash: 451cfecde7e14fad9d3fed3367112e1fb59796e5
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 38763e687c66dcb038a874c9c17cb0d67e547816
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615149"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699356"
 ---
 # <a name="isymunmanagedmethodgetsequencepoints-method"></a>Метод ISymUnmanagedMethod::GetSequencePoints
+
 Возвращает все точки следования в этом методе.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT GetSequencePoints(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cPoints`  
  окне Объект `ULONG32` , который получает размер `offsets` массивов,,,, `documents` `lines` `columns` `endLines` и `endColumns` .  
   
@@ -65,11 +67,13 @@ HRESULT GetSequencePoints(
  окне Массив столбцов в документах, в которых находятся конечные точки последовательности.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

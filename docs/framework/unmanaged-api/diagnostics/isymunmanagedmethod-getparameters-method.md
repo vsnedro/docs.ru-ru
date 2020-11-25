@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3a8074f1-facc-4a3f-bb9b-d6574fc2fc74
 topic_type:
 - apiref
-ms.openlocfilehash: 031e9d9434bc655ba8947a2bb6aba56a150e9002
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: c66fd810ae4976bc0b5e04572b899465cebe4bbb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614465"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699512"
 ---
 # <a name="isymunmanagedmethodgetparameters-method"></a>Метод ISymUnmanagedMethod::GetParameters
+
 Возвращает параметры для этого метода. Параметры возвращаются в том порядке, в котором они определены в сигнатуре метода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetParameters(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cParams`  
  [in] Размер массива `params`.  
   
@@ -46,11 +48,13 @@ HRESULT GetParameters(
  заполняет Указатель на буфер, который получает параметры.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

@@ -6,14 +6,15 @@ helpviewer_keywords:
 - parameters, names
 - names [.NET Framework], parameters
 ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
-ms.openlocfilehash: b62cfbd58f671745054c557041e5d60af345c8d3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 9f03eda511c2ef0c9565d270c52fd72bf54692d8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820843"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698355"
 ---
 # <a name="naming-parameters"></a>Именование параметров
+
 Помимо очевидной причины удобочитаемости, важно следовать рекомендациям по именам параметров, так как параметры отображаются в документации и в конструкторе, когда визуальные средства проектирования предоставляют функции IntelliSense и просмотра классов.
 
  ✔️ использовать Камелкасинг в именах параметров.
@@ -23,6 +24,7 @@ ms.locfileid: "94820843"
  ✔️ РЕКОМЕНДУЕТСЯ использовать имена на основе значения параметра, а не типа параметра.
 
 ### <a name="naming-operator-overload-parameters"></a>Именование параметров перегрузки оператора
+
  ✔️ использовать `left` и `right` для параметров перегрузки бинарного оператора, если нет смысла в отношении параметров.
 
  ✔️ использовать `value` для перегрузки имен параметров унарного оператора, если нет смысла в отношении параметров.
@@ -35,7 +37,7 @@ ms.locfileid: "94820843"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по именованию](naming-guidelines.md)

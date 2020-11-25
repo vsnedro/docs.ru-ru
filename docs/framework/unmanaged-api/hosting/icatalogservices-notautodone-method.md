@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 86a09871-33e4-412c-aeb8-4d18f924595b
 topic_type:
 - apiref
-ms.openlocfilehash: a7f92878678bc546be802652718236eab159fe21
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 878d11014856db2d5ae6f2eba7cde4b730e39996
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617026"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698446"
 ---
 # <a name="icatalogservicesnotautodone-method"></a>Метод ICatalogServices::NotAutodone
+
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,6 +32,6 @@ ms.locfileid: "83617026"
 HRESULT NotAutodone ( );  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы размещения](hosting-interfaces.md)

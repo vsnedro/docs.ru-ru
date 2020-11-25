@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
 topic_type:
 - apiref
-ms.openlocfilehash: 88e81779fc9c20c506f3b0aa11ac2da3958dfe86
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 25a90965dc5466b7cf1a07140705424cf2ba4cd9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616701"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699239"
 ---
 # <a name="cor_gc_thread_stats-structure"></a>Структура COR_GC_THREAD_STATS
+
 Содержит статистику по каждому потоку, относящуюся к сборке мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,7 +34,7 @@ typedef struct _COR_GC_THREAD_STATS {
 } COR_GC_THREAD_STATS;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -41,18 +42,20 @@ typedef struct _COR_GC_THREAD_STATS {
 |`Flags`|Число байтов, преобразованных в более высокое поколение при последней сборке мусора.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  [ICLRTask:: жетмемстатс](iclrtask-getmemstats-method.md) принимает выходной параметр типа `COR_GC_THREAD_STATS` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Гчост. idl  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Структуры размещения](hosting-structures.md)
 - [Интерфейс IHostTask](ihosttask-interface.md)

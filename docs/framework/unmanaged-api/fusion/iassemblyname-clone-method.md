@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
 topic_type:
 - apiref
-ms.openlocfilehash: 1236a574a85c01e3e1be5df9644bd04bbf0753ea
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ca528bdbd9662db373d1beeece803d6c43728f2d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134410"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698615"
 ---
 # <a name="iassemblynameclone-method"></a>Метод IAssemblyName::Clone
+
 Создает неполную копию этого объекта [IAssemblyName](iassemblyname-interface.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,16 +35,18 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pName`  
- заполняет Возвращенная копия объекта `IAssemblyName`.  
+ заполняет Возвращенная копия этого `IAssemblyName` объекта.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyName](iassemblyname-interface.md)

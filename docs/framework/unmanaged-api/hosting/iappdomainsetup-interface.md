@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c
 topic_type:
 - apiref
-ms.openlocfilehash: 1726f8929404e0dde979972d7830a6951dd71891
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d504101747995557ba526c88de451ebab7b3c556
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617065"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698563"
 ---
 # <a name="iappdomainsetup-interface"></a>Интерфейс IAppDomainSetup
+
 Предоставляет свойства, позволяющие узлу настроить <xref:System.AppDomain?displayProperty=nameWithType> тип перед вызовом метода [ICorRuntimeHost:: CreateDomainEx](icorruntimehost-createdomainex-method.md) для его создания.  
   
 ## <a name="properties"></a>Свойства  
@@ -40,20 +41,22 @@ ms.locfileid: "83617065"
 |<xref:System.AppDomainSetup.ShadowCopyFiles%2A>|Возвращает или задает строку, которая указывает, включено ли теневое копирование. Допустимые значения: "true" или "false".|  
   
 ## <a name="remarks"></a>Комментарии  
+
  `IAppDomainSetup`Интерфейс соответствует управляемому <xref:System.IAppDomainSetup> интерфейсу, который <xref:System.AppDomainSetup> реализуется типом. <xref:System.IAppDomainSetup?displayProperty=nameWithType>Подробные описания его свойств см. в разделе.  
   
- `IAppDomainSetup`представляет сведения о привязке сборки, которые можно добавить к <xref:System.AppDomain> экземпляру перед его созданием. Например, узел может установить <xref:System.AppDomainSetup.ApplicationBase%2A> свойство, чтобы установить корневой каталог, который проверяет среда CLR для управляемых сборок.  
+ `IAppDomainSetup` представляет сведения о привязке сборки, которые можно добавить к <xref:System.AppDomain> экземпляру перед его созданием. Например, узел может установить <xref:System.AppDomainSetup.ApplicationBase%2A> свойство, чтобы установить корневой каталог, который проверяет среда CLR для управляемых сборок.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>

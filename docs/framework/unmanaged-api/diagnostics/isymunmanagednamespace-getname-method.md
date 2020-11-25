@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 657bf91d-005a-4ea4-9298-04d1291c0bc3
 topic_type:
 - apiref
-ms.openlocfilehash: 84b2f1226c84713483499c7ff777838058cb0f95
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: eca1137fb607d64e8645de5b0afc7ca391eac763
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615115"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699265"
 ---
 # <a name="isymunmanagednamespacegetname-method"></a>Метод ISymUnmanagedNamespace::GetName
+
 Возвращает имя этого пространства имен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetName(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cchName`  
  окне Значение типа `ULONG32` , указывающее размер `szName` буфера.  
   
@@ -46,11 +48,13 @@ HRESULT GetName(
  заполняет Указатель на буфер, содержащий имя пространства имен.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

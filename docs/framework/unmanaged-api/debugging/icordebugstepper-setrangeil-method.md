@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a20c95f0-6da7-4b41-b27f-584211cebb92
 topic_type:
 - apiref
-ms.openlocfilehash: 7fadffaab6eee5beed513f339ea300acef5a1c6b
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5a27f155021661022b27022bbb252e00dfa67255
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378992"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698784"
 ---
 # <a name="icordebugsteppersetrangeil-method"></a>Метод ICorDebugStepper::SetRangeIL
+
 Задает значение, указывающее, будут ли вызовы метода [ICorDebugStepper:: степранже](icordebugstepper-steprange-method.md) передавать значения аргумента, которые относятся к машинному коду или по коду языка MSIL в методе, через который выполняется пошаговое выполнение.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT SetRangeIL (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `bIL`  
  окне Задайте значение, `true` чтобы указать, что диапазоны зависят от кода MSIL. Задайте значение, `false` чтобы указать, что диапазоны зависят от машинного кода. Значение по умолчанию — `true`.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

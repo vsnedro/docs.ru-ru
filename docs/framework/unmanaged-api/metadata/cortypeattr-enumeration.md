@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
 topic_type:
 - apiref
-ms.openlocfilehash: b6936081ca3dbadb4f802a6856fafb53f6cef3fa
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 50ce4e5e6125eae493bb62032d5c6bd8887c1afb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008967"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699096"
 ---
 # <a name="cortypeattr-enumeration"></a>Перечисление CorTypeAttr
+
 Содержит значения, указывающие тип метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -73,7 +74,7 @@ typedef enum CorTypeAttr {
 } CorTypeAttr;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -112,12 +113,13 @@ typedef enum CorTypeAttr {
 |`tdHasSecurity`|Указывает, что с типом связана безопасность.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Корхдр. h  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления метаданных](metadata-enumerations.md)
