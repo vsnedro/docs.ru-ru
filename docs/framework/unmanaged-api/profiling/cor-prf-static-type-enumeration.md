@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 441d7809-5b65-41a5-ba64-2910a8008315
 topic_type:
 - apiref
-ms.openlocfilehash: 80d72aefc736054afcee152c55e941c0f8f3c6a8
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2fbcbb6f6115ec48085b533dbf5611054a8235c5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500771"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696743"
 ---
 # <a name="cor_prf_static_type-enumeration"></a>Перечисление COR_PRF_STATIC_TYPE
+
 Указывает, является ли поле статическим и, если да, относящееся к этому полю статическое качество. Эти значения можно комбинировать с помощью побитовой операции OR, чтобы указать, что поле имеет несколько различных статических качеств.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,7 +37,7 @@ typedef enum {
 } COR_PRF_STATIC_TYPE;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -47,6 +48,7 @@ typedef enum {
 |`COR_PRF_FIELD_RVA_STATIC`|Поле является относительным виртуальным адресом (RVA) — статическим.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -55,6 +57,6 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления профилирования](profiling-enumerations.md)

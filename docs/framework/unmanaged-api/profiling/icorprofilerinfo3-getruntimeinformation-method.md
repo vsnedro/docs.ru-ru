@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
 topic_type:
 - apiref
-ms.openlocfilehash: b8e503af11fa1d02aac2ec83edde0ffbd562d8e5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: fdb2b1601e0164de19bcc1e8f60856346aeaacb1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496403"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698017"
 ---
 # <a name="icorprofilerinfo3getruntimeinformation-method"></a>Метод ICorProfilerInfo3::GetRuntimeInformation
+
 Предоставляет сведения о версии для профилирования среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -42,6 +43,7 @@ HRESULT GetRuntimeInformation(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pClrInstanceId`  
  заполняет Репрезентативный идентификатор выполняющегося экземпляра среды CLR в процессе. Это то же самое `ClrInstanceID` , что и отчеты о событиях запуска для трассировки событий Windows (ETW).  
   
@@ -69,10 +71,12 @@ HRESULT GetRuntimeInformation(
  `szVersionString`  
  заполняет Строка версии среды CLR.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Вы можете передать значение NULL для любого параметра. Однако `pcchVersionString` не может иметь значение null, если `szVersionString` не равно null.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -81,7 +85,7 @@ HRESULT GetRuntimeInformation(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

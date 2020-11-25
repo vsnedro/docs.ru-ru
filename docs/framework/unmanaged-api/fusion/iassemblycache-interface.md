@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 71ea170f-872d-4fc5-81b6-27da1dec9b19
 topic_type:
 - apiref
-ms.openlocfilehash: 5ed0075da1429c70900750f3f28e8ce36a41fb28
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: df4f0ba018b55202c22cb90b22b927a9c426c4ed
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134540"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696860"
 ---
 # <a name="iassemblycache-interface"></a>Интерфейс IAssemblyCache
+
 Представляет глобальный кэш сборок для использования технологией Fusion.  
   
 ## <a name="methods"></a>Методы  
@@ -35,13 +36,14 @@ ms.locfileid: "73134540"
 |[Метод UninstallAssembly](iassemblycache-uninstallassembly-method.md)|Удаляет указанную сборку из глобального кэша сборок.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)
 - [Глобальный кэш сборок](../../app-domains/gac.md)

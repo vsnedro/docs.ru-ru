@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
 topic_type:
 - apiref
-ms.openlocfilehash: fb9b5ee329b41a8b842b94d59bd61c8bcf5f0bf5
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: be797b1b3f288fd367d7f624e9cf33015dd114ac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895152"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698277"
 ---
 # <a name="icordebugappdomain2getfunctionpointertype-method"></a>Метод ICorDebugAppDomain2::GetFunctionPointerType
+
 Возвращает указатель на функцию с заданной сигнатурой.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetFunctionPointerType (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `nTypeArgs`  
  окне Число аргументов типа для функции.  
   
@@ -46,6 +48,7 @@ HRESULT GetFunctionPointerType (
  заполняет Указатель на адрес `ICorDebugType` объекта, который представляет указатель на функцию.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

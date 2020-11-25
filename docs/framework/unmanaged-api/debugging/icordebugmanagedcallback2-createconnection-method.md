@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
 topic_type:
 - apiref
-ms.openlocfilehash: 8e31f0a649fd1ca80d6557a0a7176549c67bf203
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5a4ebf65dfaaa487e87f3fd78e54c468c7e24a89
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501928"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95697250"
 ---
 # <a name="icordebugmanagedcallback2createconnection-method"></a>Метод ICorDebugManagedCallback2::CreateConnection
+
 Уведомляет отладчик о создании нового соединения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT CreateConnection (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pProcess`  
  окне Указатель на объект "ICorDebugProcess", представляющий процесс, в котором было создано соединение  
   
@@ -45,7 +47,8 @@ HRESULT CreateConnection (
  `pConnName`  
  окне Указатель на имя нового соединения.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `CreateConnection`Обратный вызов будет срабатывать в одном из следующих случаев.  
   
 - При присоединении отладчика к процессу, который содержит соединения. В этом случае среда выполнения создаст и отправит `CreateConnection` событие и событие [ICorDebugManagedCallback2:: чанжеконнектион](icordebugmanagedcallback2-changeconnection-method.md) для каждого соединения в процессе.  
@@ -53,6 +56,7 @@ HRESULT CreateConnection (
 - Когда узел вызывает [ICLRDebugManager:: бегинконнектион](../hosting/iclrdebugmanager-beginconnection-method.md) в [API размещения](../hosting/index.md).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -61,7 +65,7 @@ HRESULT CreateConnection (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

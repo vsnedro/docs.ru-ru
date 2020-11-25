@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 98b097ef-2276-4dd9-8551-b03c972e8179
 topic_type:
 - apiref
-ms.openlocfilehash: ccf48b6aea25bd602b55727c2e5958811702f6bf
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 34f996f4efe9c0db4c3f0f5277e30f53e91ec47f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762582"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696795"
 ---
 # <a name="iclrruntimeinfogetversionstring-method"></a>Метод ICLRRuntimeInfo::GetVersionString
+
 Возвращает сведения о версии среды CLR, связанные с заданным интерфейсом [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .  
   
  Этот метод заменяет следующие функции:  
@@ -40,8 +41,9 @@ HRESULT GetVersionString(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzBuffer`  
- заполняет Версия компиляции .NET Framework в формате "v*A*. *B*[.* X*] ". *A*, *B*и *X* — это десятичные числа, соответствующие основной версии, дополнительной версии и номеру сборки. *X* является необязательным. Если значение *X* отсутствует, конечная точка отсутствует.  
+ заполняет Версия компиляции .NET Framework в формате "v *A*. *B*[.*X*] ". *A*, *B* и *X* — это десятичные числа, соответствующие основной версии, дополнительной версии и номеру сборки. *X* является необязательным. Если значение *X* отсутствует, конечная точка отсутствует.  
   
 > [!NOTE]
 > Этот параметр должен соответствовать имени каталога для .NET Framework версии, как показано в разделе К:\виндовс\микрософт.нет\фрамеворк.  
@@ -52,23 +54,25 @@ HRESULT GetVersionString(
  [вход, выход] Указывает размер `pwzBuffer` во избежание переполнения буфера. Если `pwzBuffer` имеет значение `null` , функция `pchBuffer` возвращает требуемый размер, `pwzBuffer` чтобы разрешить предварительное выделение.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|`pwzBuffer` или `pchBuffer` равно null.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

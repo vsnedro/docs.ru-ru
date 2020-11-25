@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
 topic_type:
 - apiref
-ms.openlocfilehash: cc8b7a3174502471debf1d28725ed26c847eeb69
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b599a97f414491ff80000f99551a727b86ae13de
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500797"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696756"
 ---
 # <a name="cor_prf_runtime_type-enumeration"></a>Перечисление COR_PRF_RUNTIME_TYPE
+
 Содержит значения, указывающие версию среды CLR: Desktop или CoreCLR, которая используется в Silverlight.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,7 +35,7 @@ typedef enum
 } COR_PRF_RUNTIME_TYPE;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
 |Член|Описание|  
 |------------|-----------------|  
@@ -44,6 +45,7 @@ typedef enum
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -52,6 +54,6 @@ typedef enum
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления профилирования](profiling-enumerations.md)

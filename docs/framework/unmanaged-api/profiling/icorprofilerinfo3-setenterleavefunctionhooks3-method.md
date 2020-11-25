@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f0621465-b84f-40ab-a4e5-56a7abc776a7
 topic_type:
 - apiref
-ms.openlocfilehash: eb658d682ce589b7dfdcfc0228d0c657310e6f7a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a7272d55771620db129125ce543d12d19a0b4dfb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496273"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95697848"
 ---
 # <a name="icorprofilerinfo3setenterleavefunctionhooks3-method"></a>Метод ICorProfilerInfo3::SetEnterLeaveFunctionHooks3
+
 Задает реализованные профилировщиком функции, которые будут вызываться для функций [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md)и [FunctionTailcall3](functiontailcall3-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pFuncEnter3`  
  окне Указатель на реализацию, которая будет использоваться в качестве `FunctionEnter3` обратного вызова.  
   
@@ -44,14 +46,16 @@ HRESULT SetEnterLeaveFunctionHooks3(
  `pFuncTailcall3`  
  окне Указатель на реализацию, которая будет использоваться в качестве `FunctionTailcall3` обратного вызова.  
   
-## <a name="remarks"></a>Примечания  
- Обработчики [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md)и [FunctionTailcall3](functiontailcall3-function.md) не предоставляют кадры стека и проверку аргументов. Для доступа к этим сведениям `COR_PRF_ENABLE_FUNCTION_ARGS` необходимо `COR_PRF_ENABLE_FUNCTION_RETVAL` задать флаги, и (или) `COR_PRF_ENABLE_FRAME_INFO` . Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий, а затем использовать метод [ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) для регистрации реализации этой функции.  
+## <a name="remarks"></a>Комментарии  
+
+ Обработчики [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md)и [FunctionTailcall3](functiontailcall3-function.md) не предоставляют кадры стека и проверку аргументов. Для доступа к этим сведениям `COR_PRF_ENABLE_FUNCTION_ARGS` необходимо `COR_PRF_ENABLE_FUNCTION_RETVAL` задать флаги, и (или)  `COR_PRF_ENABLE_FRAME_INFO` . Профилировщик может использовать метод [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для установки флагов событий, а затем использовать метод [ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) для регистрации реализации этой функции.  
   
  В каждый момент времени активным может быть только один набор обратных вызовов, а последняя версия имеет приоритет. Таким образом, если профилировщик вызывает [метод SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md) и `SetEnterLeaveFunctionHooks3` метод, `SetEnterLeaveFunctionHooks3` используется.  
   
  `SetEnterLeaveFunctionHooks3`Метод может быть вызван только из обратного вызова [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) профилировщика.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -60,7 +64,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)
 - [FunctionEnter3](functionenter3-function.md)

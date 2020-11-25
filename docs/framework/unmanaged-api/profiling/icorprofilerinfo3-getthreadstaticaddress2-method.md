@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a9608861-ae64-4467-8a73-be05ad34beac
 topic_type:
 - apiref
-ms.openlocfilehash: a27e7ca156ca138078215a65486ac4b965c6a93d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d8f2788d63f27aac30cf239b410eecea31f09212
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496338"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95697887"
 ---
 # <a name="icorprofilerinfo3getthreadstaticaddress2-method"></a>Метод ICorProfilerInfo3::GetThreadStaticAddress2
+
 Возвращает адрес указанного поля статического потока, которое находится в области действия заданного потока и домена приложения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetThreadStaticAddress2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `classId`  
  окне Идентификатор класса, содержащего запрошенное статическое поле потока.  
   
@@ -52,7 +54,8 @@ HRESULT GetThreadStaticAddress2(
  `ppAddress`  
  заполняет Указатель на адрес статического поля, находящихся в указанном потоке.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `GetThreadStaticAddress2`Метод может вернуть одно из следующих данных:  
   
 - CORPROF_E_DATAINCOMPLETE HRESULT, если заданному статическому полю не назначен адрес в указанном контексте.  
@@ -64,6 +67,7 @@ HRESULT GetThreadStaticAddress2(
  Метод [ICorProfilerInfo2:: жетсреадстатикаддресс](icorprofilerinfo2-getthreadstaticaddress-method.md) аналогичен `GetThreadStaticAddress2` методу, но не принимает аргумент домена приложения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -72,7 +76,7 @@ HRESULT GetThreadStaticAddress2(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 33c1d269-c85e-4cb1-b0e6-1c510c8fb5fa
 topic_type:
 - apiref
-ms.openlocfilehash: ec08c786992996ec6f44038ff3c1596cada88484
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 230b904dd1cca1a1289713e3df7a709bd1c3a22b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127072"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696912"
 ---
 # <a name="iassemblycacheinstallassembly-method"></a>Метод IAssemblyCache::InstallAssembly
+
 Устанавливает указанную сборку в глобальный кэш сборок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,8 +37,9 @@ HRESULT InstallAssembly (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwFlags`  
- окне Флаги, определенные в Fusion. idl. Поддерживаются следующие значения:  
+ окне Флаги, определенные в Fusion. idl. Поддерживаются следующие значения.  
   
 - IASSEMBLYCACHE_INSTALL_FLAG_REFRESH (0x00000001)  
   
@@ -50,12 +52,13 @@ HRESULT InstallAssembly (
  окне Структура [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) , содержащая данные для установки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IAssemblyCache](iassemblycache-interface.md)

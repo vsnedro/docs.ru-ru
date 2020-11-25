@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd
 topic_type:
 - apiref
-ms.openlocfilehash: 1ff167121a5bb752c70edd2c5901133503326bea
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e5e850e2464c310697c1cd1797d2207958591907
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500810"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696873"
 ---
 # <a name="cor_prf_monitor-enumeration"></a>Перечисление COR_PRF_MONITOR
+
 Содержит значения, используемые для указания поведения, возможностей или событий, на которые желает подписаться профилировщик.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -97,7 +98,8 @@ typedef enum {
 } COR_PRF_MONITOR;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
+
  В следующих разделах перечислены `COR_PRF_MONITOR` члены перечисления по категориям. Категории:  
   
 - [Флаги не заданы](#None)  
@@ -111,6 +113,7 @@ typedef enum {
 - [Составные флаги](#Composite)  
   
 <a name="None"></a>
+
 ### <a name="no-flags-set"></a>Флаги не заданы  
   
 |Член|Описание|  
@@ -118,6 +121,7 @@ typedef enum {
 |`COR_PRF_MONITOR_NONE`|Флаги не установлены.|  
   
 <a name="Callback"></a>
+
 ### <a name="callback-flags"></a>Флаги обратного вызова  
   
 |Член|Описание|  
@@ -133,17 +137,18 @@ typedef enum {
 |`COR_PRF_MONITOR_ENTERLEAVE`|Управляет `FunctionEnter*` `FunctionLeave*` `FunctionTailCall*` [глобальными статическими функциями профилирования](profiling-global-static-functions.md), и.|  
 |`COR_PRF_MONITOR_EXCEPTIONS`|Управляет обратным вызовом [ExceptionThrown](icorprofilercallback-exceptionthrown-method.md) и `ExceptionSearch*` `ExceptionOSHandler*` `ExceptionUnwind*` `ExceptionCatcher*` обратными вызовами,, и в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
 |`COR_PRF_MONITOR_FUNCTION_UNLOADS`|Управляет обратным вызовом [FunctionUnloadStarted](icorprofilercallback-functionunloadstarted-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
-|`COR_PRF_MONITOR_GC`|Контролирует обратные вызовы [GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md), [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md), [MovedReferences](icorprofilercallback-movedreferences-method.md), [MovedReferences2](icorprofilercallback4-movedreferences2-method.md), [SurvivingReferences](icorprofilercallback2-survivingreferences-method.md) [, SurvivingReferences2](icorprofilercallback4-survivingreferences2-method.md) [, ObjectReferences,](icorprofilercallback-objectreferences-method.md) [обжектсаллокатедбикласс,](icorprofilercallback-objectsallocatedbyclass-method.md) [RootReferences](icorprofilercallback-rootreferences-method.md), [RootReferences2](icorprofilercallback2-rootreferences2-method.md), [хандлекреатед](icorprofilercallback2-handlecreated-method.md), [хандледестройед](icorprofilercallback2-handledestroyed-method.md)и [финализеаблеобжекткуеуед](icorprofilercallback2-finalizeableobjectqueued-method.md) в `ICorProfilerCallback*` интерфейсах. При `COR_PRF_MONITOR_GC` выделении параллельная сборка мусора отключена.|  
+|`COR_PRF_MONITOR_GC`|Контролирует обратные вызовы [GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md),   [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md),  [MovedReferences](icorprofilercallback-movedreferences-method.md), [MovedReferences2](icorprofilercallback4-movedreferences2-method.md),    [SurvivingReferences](icorprofilercallback2-survivingreferences-method.md)  [, SurvivingReferences2](icorprofilercallback4-survivingreferences2-method.md) [, ObjectReferences,](icorprofilercallback-objectreferences-method.md)   [обжектсаллокатедбикласс,](icorprofilercallback-objectsallocatedbyclass-method.md)  [RootReferences](icorprofilercallback-rootreferences-method.md), [RootReferences2](icorprofilercallback2-rootreferences2-method.md), [хандлекреатед](icorprofilercallback2-handlecreated-method.md),  [хандледестройед](icorprofilercallback2-handledestroyed-method.md)и [финализеаблеобжекткуеуед](icorprofilercallback2-finalizeableobjectqueued-method.md) в `ICorProfilerCallback*` интерфейсах. При `COR_PRF_MONITOR_GC` выделении параллельная сборка мусора отключена.|  
 |`COR_PRF_MONITOR_JIT_COMPILATION`|Управляет `JITCompilation*` обратными вызовами, [JITFunctionPitched](icorprofilercallback-jitfunctionpitched-method.md)и [Житинлининг](icorprofilercallback-jitinlining-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
-|`COR_PRF_MONITOR_MODULE_LOADS`|Управляет `ModuleLoad*` `ModuleUnload*` обратными вызовами, и [модулеаттачедтоассембли](icorprofilercallback-moduleattachedtoassembly-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
+|`COR_PRF_MONITOR_MODULE_LOADS`|Управляет `ModuleLoad*`  `ModuleUnload*` обратными вызовами, и [модулеаттачедтоассембли](icorprofilercallback-moduleattachedtoassembly-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
 |`COR_PRF_MONITOR_OBJECT_ALLOCATED`|Управляет обратным вызовом [ObjectAllocated](icorprofilercallback-objectallocated-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
 |`COR_PRF_MONITOR_REMOTING`|Управляет `Remoting*` обратными вызовами в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
 |`COR_PRF_MONITOR_REMOTING_ASYNC`|Определяет, будут ли обратные вызовы `Remoting*` отслеживать асинхронные события.|  
 |`COR_PRF_MONITOR_REMOTING_COOKIE`|Определяет, будут ли передаваться файлы cookie для обратных вызовов `Remoting*`.|  
 |`COR_PRF_MONITOR_SUSPENDS`|Управляет `RuntimeSuspend*` `RuntimeResume*` обратными вызовами,, [RuntimeThreadSuspended](icorprofilercallback-runtimethreadsuspended-method.md)и [RuntimeThreadResumed](icorprofilercallback-runtimethreadresumed-method.md) в интерфейсе [ICorProfilerCallback](icorprofilercallback-interface.md) .|  
-|`COR_PRF_MONITOR_THREADS`|Управляет обратными вызовами [ThreadCreated](icorprofilercallback-threadcreated-method.md), [ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md), [ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md)и [ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md) в интерфейсах [ICorProfilerCallback](icorprofilercallback-interface.md) и [ICorProfilerCallback2](icorprofilercallback2-interface.md) .|  
+|`COR_PRF_MONITOR_THREADS`|Управляет обратными вызовами [ThreadCreated](icorprofilercallback-threadcreated-method.md),  [ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md),  [ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md)и [ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md) в интерфейсах [ICorProfilerCallback](icorprofilercallback-interface.md) и [ICorProfilerCallback2](icorprofilercallback2-interface.md) .|  
   
 <a name="Feature"></a>
+
 ### <a name="feature-enabling-flags"></a>Флаги включения компонентов  
   
 |Член|Описание|  
@@ -158,6 +163,7 @@ typedef enum {
 |`COR_PRF_ENABLE_STACK_SNAPSHOT`|Разрешает вызовы метода [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) .|  
   
 <a name="Config"></a>
+
 ### <a name="configuration-flags"></a>Флаги конфигурации  
   
 |Член|Описание|  
@@ -169,6 +175,7 @@ typedef enum {
 |`COR_PRF_USE_PROFILE_IMAGES`|Вызывает поиск машинного образа для поиска образов, улучшенных профилировщиком. Если для данной сборки образов, улучшенных профилировщиком, не найдено, среда CLR возвращается к JIT для этой сборки. Если этот флаг и флаг `COR_PRF_DISABLE_ALL_NGEN_IMAGES` указаны, используется `COR_PRF_DISABLE_ALL_NGEN_IMAGES`.|  
   
 <a name="Composite"></a>
+
 ### <a name="composite-flags"></a>Составные флаги  
   
 |Член|Описание|  
@@ -179,10 +186,12 @@ typedef enum {
 |`COR_PRF_MONITOR_IMMUTABLE`|Представляет все флаги `COR_PRF_MONITOR`, которые могут быть установлены только во время инициализации. Попытка изменить какой-нибудь из этих флагов после инициализации вызовет значение `HRESULT`, указывающее на сбой.|  
 |`COR_PRF_REQUIRE_PROFILE_IMAGE`|Представляет все флаги `COR_PRF_MONITOR`, для которых необходимы улучшенные профилировщиком изображения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `COR_PRF_MONITOR`Значение используется с методами [ICorProfilerInfo:: GetEventMask](icorprofilerinfo-geteventmask-method.md) и [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для определения уведомлений о событиях, которые среда CLR делает в профилировщике.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -191,7 +200,7 @@ typedef enum {
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления профилирования](profiling-enumerations.md)
 - [Метод GetEventMask](icorprofilerinfo-geteventmask-method.md)

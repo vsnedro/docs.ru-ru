@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed71961e-ae9b-4dfc-9554-06637696d697
 topic_type:
 - apiref
-ms.openlocfilehash: 8b5a6f4447730ebc6e4b23d3cd06df85b2d7fee6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 1deadef7517772460adc96cd0dd630d85cb21c9f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895007"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698173"
 ---
 # <a name="icordebugarrayvaluegetelementtype-method"></a>Метод ICorDebugArrayValue::GetElementType
+
 Возвращает значение, указывающее простой тип элементов в массиве.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT GetElementType (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pType`  
  заполняет Указатель на значение перечисления Корелементтипе, указывающее тип.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
