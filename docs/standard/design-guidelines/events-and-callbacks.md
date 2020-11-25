@@ -7,14 +7,15 @@ helpviewer_keywords:
 - callback methods
 - callbacks
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
-ms.openlocfilehash: 82c1df01197e04d14436b6e5b3b2c6aaa249add2
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c63a88cb4e500504f993352a03478f40cad58400
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821233"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734741"
 ---
 # <a name="events-and-callbacks"></a>События и обратные вызовы
+
 Обратные вызовы — это точки расширения, позволяющие платформе выполнять обратный вызов пользовательского кода через делегат. Эти делегаты обычно передаются в платформу с помощью параметра метода.
 
  События являются особым случаем обратных вызовов, которые поддерживают удобный и последовательный синтаксис для предоставления делегата (обработчик события). Кроме того, завершение операторов и конструкторы Visual Studio предоставляют справку по использованию интерфейсов API на основе событий. (См. раздел [Конструирование событий](event.md).)
@@ -41,7 +42,7 @@ ms.locfileid: "94821233"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Разработка с обеспечением расширяемости](designing-for-extensibility.md)
 - [Рекомендации по проектированию платформы](index.md)
