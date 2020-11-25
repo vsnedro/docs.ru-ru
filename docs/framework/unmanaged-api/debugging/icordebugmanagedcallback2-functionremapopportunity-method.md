@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0d6471bc-ad9b-4b1d-a307-c10443918863
 topic_type:
 - apiref
-ms.openlocfilehash: d2fc59621cbb6752830c7a8392ce4e0c476ef9e7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 50fabec08a63d348b0a1934f029582ae1446519e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210063"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729061"
 ---
 # <a name="icordebugmanagedcallback2functionremapopportunity-method"></a>Метод ICorDebugManagedCallback2::FunctionRemapOpportunity
+
 Уведомляет отладчик о том, что выполнение кода достигло точки последовательности в более ранней версии измененной функции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT FunctionRemapOpportunity (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, содержащий измененную функцию.  
   
@@ -53,12 +55,14 @@ HRESULT FunctionRemapOpportunity (
  `oldILOffset`  
  окне Смещение указателя инструкции в старой версии функции на языке MSIL.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Этот обратный вызов дает отладчику возможность перенаправить указатель инструкции в соответствующую позицию в новой версии указанной функции, вызвав метод [ICorDebugILFrame2:: RemapFunction](icordebugilframe2-remapfunction-method.md) . Если отладчик не вызывает `RemapFunction` метод [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) , среда выполнения продолжит выполнение старого кода и запустит другой `FunctionRemapOpportunity` обратный вызов в следующей точке последовательности.  
   
  Этот обратный вызов будет вызываться для каждого кадра, который выполняет более старую версию данной функции до тех пор, пока отладчик не возвратит S_OK.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -67,7 +71,7 @@ HRESULT FunctionRemapOpportunity (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

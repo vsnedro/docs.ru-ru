@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5f28cc4e-7176-4e00-aa1f-58ae6ee52fe4
 topic_type:
 - apiref
-ms.openlocfilehash: 924d032c42dca95b253acea167d55dd6e2b811e5
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: ef043dd2308c4b76e975bd2ad1f68725579e8fc9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703334"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728918"
 ---
 # <a name="iclrruntimehostexecuteapplication-method"></a>Метод ICLRRuntimeHost::ExecuteApplication
+
 Используется в сценариях развертывания ClickOnce на основе манифеста для указания приложения, которое должно быть активировано в новом домене. Дополнительные сведения об этих сценариях см. в разделе [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT ExecuteApplication(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzAppFullName`  
  окне Полное имя приложения, определенное для <xref:System.ApplicationIdentity> .  
   
@@ -59,9 +61,9 @@ HRESULT ExecuteApplication(
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`ExecuteApplication`успешно возвращено.|  
+|S_OK|`ExecuteApplication` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -69,7 +71,8 @@ HRESULT ExecuteApplication(
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Комментарии  
- `ExecuteApplication`используется для активации приложений ClickOnce в только что созданном домене приложения.  
+
+ `ExecuteApplication` используется для активации приложений ClickOnce в только что созданном домене приложения.  
   
  `pReturnValue`Параметру OUTPUT задается значение, возвращаемое приложением. Если для задано значение null, то `pReturnValue` не `ExecuteApplication` завершается ошибкой, но не возвращает значение.  
   
@@ -77,15 +80,16 @@ HRESULT ExecuteApplication(
 > Не вызывайте метод [метода Start](iclrruntimehost-start-method.md) перед вызовом `ExecuteApplication` метода для активации приложения на основе манифеста. Если `Start` метод вызывается первым, `ExecuteApplication` вызов метода завершится ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.ActivationContext>
 - <xref:System.AppDomainManager>

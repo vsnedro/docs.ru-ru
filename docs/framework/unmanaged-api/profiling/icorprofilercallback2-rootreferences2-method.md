@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 55a2f907-d216-42eb-8f2f-e5d59c2eebd6
 topic_type:
 - apiref
-ms.openlocfilehash: 2ce58113f40c8eb67a89b6ab6c9bb8f755975bd5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9e53e7bcecd900bb6c71d0a822e9b63ff6726e58
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499757"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729524"
 ---
 # <a name="icorprofilercallback2rootreferences2-method"></a>Метод ICorProfilerCallback2::RootReferences2
+
 Уведомляет профилировщик о корневых ссылках после сборки мусора. Этот метод является расширением метода [ICorProfilerCallback:: RootReferences](icorprofilercallback-rootreferences-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT RootReferences2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cRootRefs`  
  окне Число элементов в `rootRefIds` `rootKinds` `rootFlags` массивах,, и `rootIds` .  
   
@@ -54,7 +56,8 @@ HRESULT RootReferences2(
   
  Если корневым типом является стек, то для функции, содержащей переменную, используется корневой идентификатор. Если этот корневой идентификатор равен 0, функция является неименованной функцией, которая является внутренней для среды CLR. Если корневой тип является обработчиком, корневой идентификатор — для обработчика сборки мусора. Для других корневых типов идентификатор является непрозрачным значением и должен игнорироваться.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `rootRefIds` `rootKinds` `rootFlags` Массивы,, и `rootIds` являются параллельными массивами. То есть,,, `rootRefIds[i]` `rootKinds[i]` `rootFlags[i]` и `rootIds[i]` имеют тот же корень.  
   
  Оба `RootReferences` `RootReferences2` метода и вызываются для уведомления профилировщика. Профилировщики, как правило, реализуют один метод или другой, но не оба, так как передаваемые сведения `RootReferences2` являются надмножеством переданного `RootReferences` .  
@@ -64,6 +67,7 @@ HRESULT RootReferences2(
  Идентификаторы объектов, возвращаемые, `RootReferences2` недопустимы во время обратного вызова, так как сборка мусора может находиться в процессе перемещения объектов из старых адресов в новые адреса. В связи с этим профилировщикам не следует пытаться проверять объекты во время вызова `RootReferences2`. При вызове [ICorProfilerCallback2:: GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md) все объекты были перемещены в новые расположения и могут быть безопасно проверены.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -72,7 +76,7 @@ HRESULT RootReferences2(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

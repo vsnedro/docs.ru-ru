@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: fce34531-2687-406d-9131-d6ad94f2ce0e
 topic_type:
 - apiref
-ms.openlocfilehash: b597d95b5b25e5ebf04fac48e4f3fda312a9594c
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 090b587ef509795609250914ce8883ad96d28c18
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976126"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729685"
 ---
 # <a name="icordebugeval2-interface"></a>Интерфейс ICorDebugEval2
 
@@ -35,14 +35,15 @@ ms.locfileid: "82976126"
 |[Метод NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md)|Создает новый объект параметризованного типа и вызывает метод конструктора объекта.|  
 |[Метод NewParameterizedObjectNoConstructor](icordebugeval2-newparameterizedobjectnoconstructor-method.md)|Создает новый объект параметризованного типа указанного класса без попытки вызова метода конструктора|  
 |[Метод NewStringWithLength](icordebugeval2-newstringwithlength-method.md)|Создает новую строку указанной длины с указанным содержимым.|  
-|[Метод RudeAbort](icordebugeval2-rudeabort-method.md)|Прерывает вычисление, `ICorDebugEval2` выполняемое в данный момент.|  
+|[Метод RudeAbort](icordebugeval2-rudeabort-method.md)|Прерывает вычисление, выполняемое `ICorDebugEval2` в данный момент.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

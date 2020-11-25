@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type:
 - apiref
-ms.openlocfilehash: 02e836601be72d54f561e077cd3c466470bafb25
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 41e13e20a1cf5a7000907b1cc7d8d2af5174ceba
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504099"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728981"
 ---
 # <a name="iclrpolicymanagersettimeoutandaction-method"></a>Метод ICLRPolicyManager::SetTimeoutAndAction
+
 Задает значение времени ожидания для указанной операции и указывает действие политики, которое должна выполнять среда CLR при выполнении операции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT SetTimeoutAndAction (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `operation`  
  окне Одно из значений [еклроператион](eclroperation-enumeration.md) , указывающее операцию, для которой необходимо задать время ожидания и политику `action` . Поддерживаются следующие значения.  
   
@@ -55,9 +57,9 @@ HRESULT SetTimeoutAndAction (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`SetTimeoutAndAction`успешно возвращено.|  
+|S_OK|`SetTimeoutAndAction` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -65,22 +67,24 @@ HRESULT SetTimeoutAndAction (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|Не удается задать время ожидания для указанного `operation` или указано недопустимое значение для `action` .|  
   
-## <a name="remarks"></a>Примечания  
- `SetTimeoutAndAction`Инкапсулирует возможности методов [ICLRPolicyManager:: setTimeout](iclrpolicymanager-settimeout-method.md) и [ICLRPolicyManager:: сетактиононтимеаут](iclrpolicymanager-setactionontimeout-method.md) , и их можно вызывать вместо последовательных вызовов этих двух методов.  
+## <a name="remarks"></a>Комментарии  
+
+ `SetTimeoutAndAction` Инкапсулирует возможности методов [ICLRPolicyManager:: setTimeout](iclrpolicymanager-settimeout-method.md) и [ICLRPolicyManager:: сетактиононтимеаут](iclrpolicymanager-setactionontimeout-method.md) , и их можно вызывать вместо последовательных вызовов этих двух методов.  
   
 > [!IMPORTANT]
 > Не все значения действий политики могут быть указаны в качестве поведения времени ожидания для операций среды CLR. Допустимые значения см. в подразделах "Примечания" для этих двух методов.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

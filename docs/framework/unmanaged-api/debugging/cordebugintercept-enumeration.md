@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
 topic_type:
 - apiref
-ms.openlocfilehash: 18a5e337b6026a20a95b1c29f3d7bda5187efc66
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 3d3d4af8e9ee073c0aefec418a3b53c4589adf0d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795883"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729113"
 ---
 # <a name="cordebugintercept-enumeration"></a>Перечисление CorDebugIntercept
+
 Указывает типы кода, которые могут быть перехвачены (то есть типы, для которых возможно пошаговое выполнение).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,9 +39,9 @@ typedef enum CorDebugIntercept {
 } CorDebugIntercept;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
 |`INTERCEPT_NONE`|Перехват кода невозможен.|  
 |`INTERCEPT_CLASS_INIT`|Допускается перехват конструктора.|  
@@ -50,10 +51,12 @@ typedef enum CorDebugIntercept {
 |`INTERCEPT_INTERCEPTION`|Не используется.|  
 |`INTERCEPT_ALL`|Возможен перехват любого кода.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Используйте метод [ICorDebugStepper:: сетинтерцептмаск](icordebugstepper-setinterceptmask-method.md) , чтобы установить типы кода, которые могут быть перехвачены.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
 topic_type:
 - apiref
-ms.openlocfilehash: 358ca84f32e1b233116605bf5486cc9a01b42e67
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: af3de5454ce3d4a763c216de6e8efdb39407457b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503511"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729139"
 ---
 # <a name="imetadataimportgetuserstring-method"></a>Метод IMetaDataImport::GetUserString
+
 Получает строку литералов, представленную указанным токеном метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetUserString (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `stk`  
  окне Токен строки, для которого возвращается связанная строка.  
   
@@ -50,15 +52,16 @@ HRESULT GetUserString (
  заполняет Размер в расширенных символах возвращаемого объекта `szString` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

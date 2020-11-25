@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
 topic_type:
 - apiref
-ms.openlocfilehash: 3433f5f69927afb501c2596571f138e3a69fabb6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 59f450117d1a52ce7b900d9d67330fc98281afa0
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894116"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728424"
 ---
 # <a name="icordebugclassgettoken-method"></a>Метод ICorDebugClass::GetToken
-Возвращает токен `TypeDef` метаданных, который ссылается на определение этого класса.  
+
+Возвращает `TypeDef` токен метаданных, который ссылается на определение этого класса.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,10 +35,12 @@ HRESULT GetToken (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pTypeDef`  
  заполняет Указатель на `mdTypeDef` маркер, который ссылается на определение этого класса.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

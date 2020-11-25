@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 99e8c8d7-a1c0-47c8-9dbd-03e0b2bcb4d5
 topic_type:
 - apiref
-ms.openlocfilehash: e8b778c0880040f5ffd639a445fd5663ce493219
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: bcd4c8ba4b81821ae7dd9deaf0f76a76d335aff8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379086"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728398"
 ---
 # <a name="icordebugreferencevalueisnull-method"></a>Метод ICorDebugReferenceValue::IsNull
+
 Возвращает значение, указывающее, является ли ICorDebugReferenceValue значением NULL, в этом случае параметр не `ICorDebugReferenceValue` указывает на объект.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,10 +35,12 @@ HRESULT IsNull (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pbNull`  
  заполняет Указатель на логическое значение, равное, `true` Если этот `ICorDebugReferenceValue` объект имеет значение NULL; в противном случае `pbNull` — `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

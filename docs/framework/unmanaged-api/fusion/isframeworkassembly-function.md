@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
 topic_type:
 - apiref
-ms.openlocfilehash: e30b6f2d2254d2d107c4c82a2c5664850ce6ec23
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 828c7660d6c006e700302d119ce4caf7d76e5d84
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123071"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728567"
 ---
 # <a name="isframeworkassembly-function"></a>Функция IsFrameworkAssembly
+
 Возвращает значение, указывающее, является ли указанная сборка управляемой.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT IsFrameworkAssembly (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzAssemblyReference`  
  окне Имя проверяемой сборки.  
   
@@ -48,16 +50,18 @@ HRESULT IsFrameworkAssembly (
  `pccSize`  
  [входной] Размер `pwzFrameworkAssemblyIdentity`.  
   
-## <a name="remarks"></a>Заметки  
- Параметр `pwzAssemblyReference` — это указатель на символьную строку, содержащую имя сборки.  
+## <a name="remarks"></a>Комментарии  
+
+ `pwzAssemblyReference`Параметр является указателем на символьную строку, содержащую имя сборки.  
   
- Если эта сборка является частью .NET Framework, параметр `pbIsFrameworkAssembly` будет содержать логическое значение `true`.  
+ Если эта сборка является частью .NET Framework, `pbIsFrameworkAssembly` параметр будет содержать логическое значение `true` .  
   
- Если именованная сборка не является частью .NET Framework или если параметр `pwzAssemblyReference` не имеет имени сборки, `pbIsFrameworkAssembly` будет содержать логическое значение `false`.  
+ Если именованная сборка не является частью .NET Framework или если `pwzAssemblyReference` параметр не имеет имени сборки, `pbIsFrameworkAssembly` то будет содержать логическое значение `false` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)

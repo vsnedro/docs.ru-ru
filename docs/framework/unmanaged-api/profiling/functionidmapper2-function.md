@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
 topic_type:
 - apiref
-ms.openlocfilehash: 65c5d2d4f288d927d79c233374edfec54c0b77ae
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 7aa90b92d129f1269d901f1cbb5c6a0750de9a90
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500654"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728541"
 ---
 # <a name="functionidmapper2-function"></a>Функция FunctionIDMapper2
+
 Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в ответных вызовах [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md), [FunctionTailcall3](functiontailcall3-function.md)или[FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)и [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) для этой функции. `FunctionIDMapper2` также позволяет профилировщику указать, желает ли он получать обратные вызовы для этой функции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -49,12 +50,15 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   \[out] указатель на значение, которое задает профилировщик `true` , если он хочет получить `FunctionEnter3` `FunctionLeave3` обратные вызовы,, и, `FunctionTailcall3` или `FunctionEnter3WithInfo` , `FunctionLeave3WithInfo` и, `FunctionTailcall3WithInfo` в противном случае, присваивает этому значению значение `false` .
 
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Профилировщик возвращает значение, которое использует подсистема выполнения в качестве альтернативного идентификатора функции. Это возвращаемое значение не может быть значением null, если указатель `pbHookFunction` возвращает значение `false`. В противном случае возвращаемое значение null приводит к непредсказуемым результатам, включая возможное прерывание процесса.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Этот метод расширяет функцию [FunctionIDMapper](functionidmapper-function.md) с помощью дополнительного параметра, который используется для передачи данных клиента. Эти данные клиента служат для однозначного определения среды выполнения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf. idl  
@@ -63,7 +67,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3::SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
 topic_type:
 - apiref
-ms.openlocfilehash: 04cb45cd021532b6cb3d74a195cbd62e1ab8d31d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d18b3a5c06ac0d3a86f7823f3b140c76c6c9a746
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615856"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728359"
 ---
 # <a name="iclrcontrolgetclrmanager-method"></a>Метод ICLRControl::GetCLRManager
+
 Возвращает указатель интерфейса на экземпляр любого из типов диспетчера, который узел может использовать для настройки среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,8 +36,9 @@ HRESULT GetCLRManager (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `riid`  
- окне `IID`Тип возвращаемого типа диспетчера. `IID`Поддерживаются следующие значения.  
+ окне `IID` Тип возвращаемого типа диспетчера. `IID`Поддерживаются следующие значения.  
   
 - IID_ICLRDebugManager: указывает, что `ppObject` будет иметь тип [ICLRDebugManager](iclrdebugmanager-interface.md).  
   
@@ -57,7 +59,7 @@ HRESULT GetCLRManager (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод возвратился успешно.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
@@ -68,15 +70,16 @@ HRESULT GetCLRManager (
 |E_NOINTERFACE|Тип интерфейса не поддерживается.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс IHostControl](ihostcontrol-interface.md)

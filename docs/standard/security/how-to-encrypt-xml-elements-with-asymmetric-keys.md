@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Advanced Encryption Standard algorithm
 - encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 7254079c12926dbe055ea58f045862afd17bab1e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 29fe7c229664b08c9e1563413525818f2e883198
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820271"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729347"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>Практическое руководство. Шифрование XML-элементов с помощью асимметричных ключей
 
@@ -112,6 +112,7 @@ ms.locfileid: "94820271"
      [!code-vb[HowToEncryptXMLElementAsymmetric#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#16)]  
   
 ## <a name="example"></a>Пример  
+
  В этом примере предполагается, что файл с именем `"test.xml"` существует в том же каталоге, что и скомпилированная программа.  Кроме того, предполагается, что `"test.xml"` содержит элемент `"creditcard"`.  Можно поместить следующий XML-код в файл с именем `test.xml` и использовать его вместе с данным примером.  
   
 ```xml  
@@ -142,7 +143,7 @@ ms.locfileid: "94820271"
   
 После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  Иногда криптографические ключи можно считывать из памяти отладчиком или с жесткого диска, если область памяти выгружается на диск.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

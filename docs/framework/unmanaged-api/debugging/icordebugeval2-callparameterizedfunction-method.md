@@ -15,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 72f54a45-dbe6-4bb4-8c99-e879a27368e5
 topic_type:
 - apiref
-ms.openlocfilehash: 72bcc2479f7b6f41b384fc2517f0b04694663398
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: c36dec80b6885b0ee56670b94dbd0b155a9710b4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976152"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729711"
 ---
 # <a name="icordebugeval2callparameterizedfunction-method"></a>Метод ICorDebugEval2::CallParameterizedFunction
-Настраивает вызов указанного ICorDebugFunction, который может быть вложен в класс, конструктор которого принимает <xref:System.Type> параметры или сам может принимать <xref:System.Type> параметры.  
+
+Настраивает вызов указанного ICorDebugFunction, который может быть вложен в класс, конструктор которого принимает <xref:System.Type> Параметры или сам может принимать <xref:System.Type> Параметры.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,6 +39,7 @@ HRESULT CallParameterizedFunction (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pFunction`  
  окне Указатель на `ICorDebugFunction` объект, представляющий вызываемую функцию.  
   
@@ -53,14 +55,16 @@ HRESULT CallParameterizedFunction (
  `ppArgs`  
  окне Массив указателей, каждый из которых указывает на объект ICorDebugValue, представляющий значение, передаваемое в аргументе функции.  
   
-## <a name="remarks"></a>Remarks  
- `CallParameterizedFunction`имеет вид [ICorDebugEval:: CallFunction](icordebugeval-callfunction-method.md) , за исключением того, что функция может находиться внутри класса с параметрами типа, может иметь параметры типа или и то, и другое. Аргументы типа должны быть даны сначала для класса, а затем для функции.  
+## <a name="remarks"></a>Комментарии  
+
+ `CallParameterizedFunction` имеет вид [ICorDebugEval:: CallFunction](icordebugeval-callfunction-method.md) , за исключением того, что функция может находиться внутри класса с параметрами типа, может иметь параметры типа или и то, и другое. Аргументы типа должны быть даны сначала для класса, а затем для функции.  
   
  Если функция находится в другом домене приложения, произойдет переход. Однако все аргументы типа и значения должны находиться в целевом домене приложения.  
   
- Вычисление функций может выполняться только в ограниченных сценариях. Если `CallParameterizedFunction` или `ICorDebugEval::CallFunction` завершается ошибкой, возвращаемое значение HRESULT будет указывать на наиболее общую возможную причину сбоя.  
+ Вычисление функций может выполняться только в ограниченных сценариях. Если `CallParameterizedFunction` или `ICorDebugEval::CallFunction` завершается ошибкой, ВОЗВРАЩАЕМОЕ значение HRESULT будет указывать на наиболее общую возможную причину сбоя.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

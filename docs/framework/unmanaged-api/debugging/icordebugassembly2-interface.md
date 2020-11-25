@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c0766e29-e573-4f9a-a928-167d1de5aa7e
 topic_type:
 - apiref
-ms.openlocfilehash: 23b38f86cd81fb0161e50b60b40bed0ba0b423b2
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 5add8f18a91f2ea1a2833ffa2cf3dc4bf3b644bd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894871"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728476"
 ---
 # <a name="icordebugassembly2-interface"></a>Интерфейс ICorDebugAssembly2
 
@@ -31,12 +31,13 @@ ms.locfileid: "82894871"
 |------------|-----------------|  
 |[Метод IsFullyTrusted](icordebugassembly2-isfullytrusted-method.md)|Возвращает значение, указывающее, предоставлено ли сборке полное доверие системой безопасности среды выполнения.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

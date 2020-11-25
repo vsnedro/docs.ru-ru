@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5
 topic_type:
 - apiref
-ms.openlocfilehash: 72caac0aafe7f9c5919057a6ad2565258aec6a50
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8d88222215eb31e1c63f3b26079517c4b088e81b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504086"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728840"
 ---
 # <a name="iclrruntimehost-interface"></a>Интерфейс ICLRRuntimeHost
+
 Предоставляет функциональные возможности, аналогичные интерфейсу [ICorRuntimeHost](icorruntimehost-interface.md) , предоставленному в .NET Framework версии 1, со следующими изменениями:  
   
 - Добавление метода [SetHostControl](iclrruntimehost-sethostcontrol-method.md) для задания интерфейса элемента управления ведущего приложения.  
@@ -42,22 +43,24 @@ ms.locfileid: "84504086"
 |[Метод Stop](iclrruntimehost-stop-method.md)|Останавливает выполнение кода средой выполнения.|  
 |[Метод UnloadAppDomain](iclrruntimehost-unloadappdomain-method.md)|Выгружает объект <xref:System.AppDomain> , соответствующий указанному числовому идентификатору.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Начиная с .NET Framework 4, используйте интерфейс [ICLRMetaHost](iclrmetahost-interface.md) для получения указателя на интерфейс [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) , а затем вызовите метод [ICLRRuntimeInfo::-interface](iclrruntimeinfo-getinterface-method.md) , чтобы получить указатель на `ICLRRuntimeHost` . В более ранних версиях .NET Framework узел получает указатель на `ICLRRuntimeHost` экземпляр, вызывая [CorBindToRuntimeEx](corbindtoruntimeex-function.md) или [корбиндтокуррентрунтиме](corbindtocurrentruntime-function.md). Чтобы реализовать реализации любой из технологий, предоставляемых в .NET Framework версии 2,0, необходимо использовать `ICLRRuntimeHost` вместо `ICorRuntimeHost` .  
   
 > [!IMPORTANT]
 > Не вызывайте метод [Start](iclrruntimehost-start-method.md) перед вызовом метода [ExecuteApplication](iclrruntimehost-executeapplication-method.md) для активации приложения на основе манифеста. Если `Start` метод вызывается первым, `ExecuteApplication` вызов метода завершится ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntimeEx](corbindtoruntimeex-function.md)

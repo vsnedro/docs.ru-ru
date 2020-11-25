@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
 topic_type:
 - apiref
-ms.openlocfilehash: 9bff594d0307153fb468b28c1535977f06997748
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c85bba9a5d913820b69cbc214275b733a53197ee
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499718"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729451"
 ---
 # <a name="icorprofilercallback3initializeforattach-method"></a>Метод ICorProfilerCallback3::InitializeForAttach
+
 Вызывается средой CLR, чтобы предоставить профилировщику возможность инициализировать свое состояние после операции присоединения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT InitializeForAttach(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCorProfilerInfoUnk`  
  [in] Указатель интерфейса для интерфейса `ICorProfilerInfo*`.  
   
@@ -44,10 +46,12 @@ HRESULT InitializeForAttach(
  `cbClientData`  
  [in] Размер в байтах данных, на которые указывает `pvClientData`.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Среда CLR вызывает `InitializeForAttach`, чтобы предоставить профилировщику возможность запрашивать обратные вызовы.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -56,7 +60,7 @@ HRESULT InitializeForAttach(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)

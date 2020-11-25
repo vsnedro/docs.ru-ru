@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type:
 - apiref
-ms.openlocfilehash: c2abf2813c6e1a9db4264bded32d9cb9c58a2bcb
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a16621f4c9b06f049239dc4e2335d70a167dd756
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491060"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729269"
 ---
 # <a name="imetadataimportgetparamprops-method"></a>Метод IMetaDataImport::GetParamProps
+
 Возвращает значения метаданных для параметра, на который ссылается указанный токен ParamDef.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -43,6 +44,7 @@ HRESULT GetParamProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tk`  
  окне Токен Парамдеф, представляющий параметр, для которого возвращаются метаданные.  
   
@@ -73,20 +75,21 @@ HRESULT GetParamProps (
  `pcchValue`  
  заполняет Размер `ppValue` в расширенных символах или нуль, если не содержит `ppValue` строку.  
   
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Значения последовательности в `pulSequence` аргументе начинаются с 1 для параметров. Возвращаемое значение имеет порядковый номер 0.
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -14,35 +14,37 @@ helpviewer_keywords:
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
 topic_type:
 - apiref
-ms.openlocfilehash: 6f20fb2e9e026253fb02b47dfcd63cf655acc4ee
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9aa7173d81d84d9080d90b0890769ffeaee6a738
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131649"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728619"
 ---
 # <a name="ireferenceappid-interface"></a>Интерфейс IReferenceAppId
+
 Представляет ссылку на уникальный идентификатор приложения в текущей области.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|`IReferenceAppId::get_CodeBase`|Возвращает указатель на строковое представление идентификатора кода для приложения, на которое ссылается эта `IReferenceAppId`.|  
-|`IReferenceAppId::put_CodeBase`|Задает идентификатор кода для приложения, на которое ссылается эта `IReferenceAppId`.|  
-|`IReferenceAppId::EnumAppPath`|Возвращает указатель интерфейса на экземпляр `IEnumReferenceIdentity`, содержащий экземпляры `IReferenceIdentity`, представляющие члены этого `IReferenceAppId`.|  
-|`IReferenceAppId::get_SubscriptionId`|Возвращает указатель на строковое представление идентификатора маркера для подписки на этот `IReferenceAppId`.|  
-|`IReferenceAppId::put_SubscriptionId`|Устанавливает идентификатор маркера для подписки на этот `IReferenceAppId` указанное строковое значение.|  
+|`IReferenceAppId::get_CodeBase`|Возвращает указатель на строковое представление идентификатора кода для приложения, на которое ссылается this `IReferenceAppId` .|  
+|`IReferenceAppId::put_CodeBase`|Задает идентификатор кода для приложения, на которое ссылается this `IReferenceAppId` .|  
+|`IReferenceAppId::EnumAppPath`|Возвращает указатель интерфейса на `IEnumReferenceIdentity` экземпляр `IReferenceIdentity` , содержащий экземпляры, представляющие члены этого объекта `IReferenceAppId` .|  
+|`IReferenceAppId::get_SubscriptionId`|Возвращает указатель на строковое представление идентификатора маркера для подписки на этот объект `IReferenceAppId` .|  
+|`IReferenceAppId::put_SubscriptionId`|Задает для идентификатора маркера подписки это `IReferenceAppId` значение в указанном строковом значении.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)
 - [Интерфейс IEnumReferenceIdentity](ienumreferenceidentity-interface.md)
 - [Интерфейс IReferenceIdentity](ireferenceidentity-interface.md)

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - X.509 certificates
 - certificates, X.509 certificates
 ms.assetid: 761f1c66-631c-47af-aa86-ad9c50cfa453
-ms.openlocfilehash: 5007404c1e6e872c169ce7ce71425f14d20d3a25
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a336997a8cb81f1838d9c5b1ec82bbb04326ed0c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820193"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729334"
 ---
 # <a name="how-to-encrypt-xml-elements-with-x509-certificates"></a>Практическое руководство. Шифрование XML-элементов с помощью сертификатов X.509
 
@@ -93,6 +93,7 @@ ms.locfileid: "94820193"
      [!code-vb[HowToEncryptXMLElementX509#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementX509/vb/sample.vb#11)]  
   
 ## <a name="example"></a>Пример  
+
  В этом примере предполагается, что файл с именем `"test.xml"` существует в том же каталоге, что и скомпилированная программа.  Кроме того, предполагается, что `"test.xml"` содержит элемент `"creditcard"`.  Можно поместить следующий XML-код в файл с именем `test.xml` и использовать его вместе с данным примером.  
   
 ```xml  
@@ -119,7 +120,7 @@ ms.locfileid: "94820193"
   
 Используемый в этом примере сертификат X.509 предназначен исключительно для тестирования.  Приложения должны использовать сертификат X. 509, созданный доверенным центром сертификации.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

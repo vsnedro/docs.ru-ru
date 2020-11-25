@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5c8840be-ffea-447f-9c8d-178f1eaf8d06
 topic_type:
 - apiref
-ms.openlocfilehash: 5e5bf097a4b1e366fff807595b22c4696a91cf43
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 9e907450b4ae985ee30d9958eec8baba797b495a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614556"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728606"
 ---
 # <a name="isymunmanagedencupdategetlocalvariables-method"></a>Метод ISymUnmanagedENCUpdate::GetLocalVariables
+
 Возвращает локальные переменные.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetLocalVariables(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `mdMethodToken`  
  окне Маркер метаданных метода.  
   
@@ -50,11 +52,13 @@ HRESULT GetLocalVariables(
  заполняет Указатель на объект `ULONG` , который получает размер `rgLocals` буфера, необходимого для хранения локальных переменных.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ISymUnmanagedENCUpdate](isymunmanagedencupdate-interface.md)

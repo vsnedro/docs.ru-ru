@@ -6,17 +6,19 @@ helpviewer_keywords:
 - structures [.NET Framework fusion]
 - unmanaged structures [.NET Framework], fusion
 ms.assetid: 3feb4fc5-a1e9-445d-929c-0a7490244114
-ms.openlocfilehash: d20a2eab2c7a9798c87a4431174d6f70f32149e7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0e901ab6c78333a430ca43b01c65bfb01ee1b08e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108137"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728340"
 ---
 # <a name="fusion-structures"></a>Структуры Fusion
+
 В этом разделе описываются неуправляемые структуры, используемые API Fusion.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Структура ASSEMBLY_INFO](assembly-info-structure.md)  
  Содержит сведения о сборке, зарегистрированной в глобальном кэше сборок.  
   
@@ -30,7 +32,8 @@ ms.locfileid: "73108137"
  Содержит сведения о смещении для связанной структуры [IDENTITY_ATTRIBUTE](identity-attribute-structure.md) .  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Интерфейсы Fusion](fusion-interfaces.md)  
+
+ [Fusion-интерфейсы](fusion-interfaces.md)  
   
  [Глобальные статические функции Fusion](fusion-global-static-functions.md)  
   

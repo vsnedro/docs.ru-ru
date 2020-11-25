@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: eb2860ef-06cb-4968-a6c3-6d048ecda2a4
 topic_type:
 - apiref
-ms.openlocfilehash: dc556dfb59e999ed9b7fc5f35c603dc26c35f314
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 015d0061e5be5bbc212243ca06f1d165abe4496a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378707"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729308"
 ---
 # <a name="icordebugthread3-interface"></a>Интерфейс ICorDebugThread3
+
 Предоставляет точку входа для [икордебугстакквалк](icordebugstackwalk-interface.md) и соответствующих интерфейсов.  
   
 ## <a name="methods"></a>Методы  
@@ -31,13 +32,15 @@ ms.locfileid: "83378707"
 |[Метод CreateStackWalk](icordebugthread3-createstackwalk-method.md)|Создает объект [икордебугстакквалк](icordebugstackwalk-interface.md) для потока, стек которого нужно очистить.|  
 |[Метод GetActiveInternalFrames](icordebugthread3-getactiveinternalframes-method.md)|Возвращает массив внутренних кадров (объектов[ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) ) в стеке.|  
   
-## <a name="remarks"></a>Remarks  
- `ICorDebugThread3`является логическим расширением для интерфейса ICorDebugThread.  
+## <a name="remarks"></a>Комментарии  
+
+ `ICorDebugThread3` является логическим расширением для интерфейса ICorDebugThread.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -46,7 +49,7 @@ ms.locfileid: "83378707"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

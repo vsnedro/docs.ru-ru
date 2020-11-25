@@ -16,15 +16,16 @@ helpviewer_keywords:
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
 topic_type:
 - apiref
-ms.openlocfilehash: 8f838d5c812842e2a637065b25182b6a12609231
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9a59e70257064220e8138f9d267a815fcdbf3929
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176556"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729035"
 ---
 # <a name="identity_attribute_blob-structure"></a>Структура IDENTITY_ATTRIBUTE_BLOB
-Содержит информацию об одном атрибуте в `DWORD`сборке и состоит из трех с. Каждый из них `DWORD` представляет собой `CurrentIntoBuffer` смещение в буфер символов, производимый методом [интерфейса IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md)  
+
+Содержит сведения об отдельном атрибуте в сборке и состоит из трех элементов `DWORD` . Каждое из них `DWORD` является смещением в символьном буфере, созданном `CurrentIntoBuffer` методом интерфейса [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md)  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,22 +39,23 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
   
 ## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`ofsNamespace`|Первое смещение в буфер символов. За этим смещением следует не пространство имен атрибута, а серия нулевых символов. Таким образом, он не используется.|  
-|`ofsName`|Второе смещение в буфер символов. Это место означает начало имени атрибута.|  
-|`ofsValue`|Третье смещение в буфер символов. Это место означает начало значения атрибута.|  
+|`ofsNamespace`|Первое смещение в символьном буфере. За этим смещением не следует пространство имен атрибута, а набор символов NULL. Поэтому он не используется.|  
+|`ofsName`|Второе смещение в символьном буфере. Это расположение отмечает начало имени атрибута.|  
+|`ofsValue`|Третье смещение в символьном буфере. Это расположение отмечает начало значения атрибута.|  
   
 ## <a name="sample"></a>Образец  
- Следующий пример иллюстрирует несколько основных шагов, `IDENTITY_ATTRIBUTE_BLOB` которые в конечном итоге приводят к заселенной структуре:  
+
+ В следующем примере показано несколько основных шагов, которые в итоге приводят к заполненной `IDENTITY_ATTRIBUTE_BLOB` структуре:  
   
-1. Получите [IReferenceIdentity](ireferenceidentity-interface.md) для сборки.  
+1. Получите [иреференцеидентити](ireferenceidentity-interface.md) для сборки.  
   
-2. Вызов `IReferenceIdentity::EnumAttributes` метода и получение [IEnumIDENTITY_ATTRIBUTE.](ienumidentity-attribute-interface.md)  
+2. Вызовите `IReferenceIdentity::EnumAttributes` метод и получите [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md).  
   
-3. Создайте буфер символов и `IDENTITY_ATTRIBUTE_BLOB` отбросьте его в качестве структуры.  
+3. Создайте символьный буфер и приведите его как `IDENTITY_ATTRIBUTE_BLOB` структуру.  
   
-4. Вызовите `CurrentIntoBuffer` метод `IEnumIDENTITY_ATTRIBUTE` интерфейса. Этот метод копирует `Namespace`атрибуты `Name` `Value` и в буфер символов. Три смещения к этим строкам `IDENTITY_ATTRIBUTE_BLOB` станут доступны в структуре.  
+4. Вызовите `CurrentIntoBuffer` метод `IEnumIDENTITY_ATTRIBUTE` интерфейса. Этот метод копирует атрибуты `Namespace` , `Name` и `Value` в буфер символов. Три смещения для этих строк станут доступными в `IDENTITY_ATTRIBUTE_BLOB` структуре.  
   
 ```cpp  
 // EnumAssemblyAttributes.cpp : main project file.  
@@ -219,26 +221,29 @@ Exit:
 }  
 ```  
   
-### <a name="to-run-the-sample"></a>Запуск образца  
- C:\\> EnumAssemblyAttributes.exe C: »WINDOWS»Microsoft.NET-Framework-v2.0.50727-System.dll  
+### <a name="to-run-the-sample"></a>Выполнение образца  
+
+ В. \\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll  
   
-### <a name="sample-output"></a>Пример выходных данных  
- Культура и нейтральная  
+### <a name="sample-output"></a>Пример полученных результатов  
+
+ Culture = Neutral  
   
- имя - Система  
+ имя = система  
   
- processorArchitecture - MSIL  
+ processorArchitecture = MSIL  
   
- PublicKeyToken - b77a5c561934e089  
+ PublicKeyToken = b77a5c561934e089»  
   
- Версия No 2.0.0.0.0  
+ Версия = 2.0.0.0  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** Изоляция.h  
+ **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

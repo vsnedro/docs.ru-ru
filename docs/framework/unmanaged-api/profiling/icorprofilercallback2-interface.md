@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4a261dba-450d-4f1f-8d98-865b58bfc992
 topic_type:
 - apiref
-ms.openlocfilehash: 3b0e60602d2f36552c3e0e85ec51205b4128486b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 597a3dfecd42e206c98974093fa2417eba570f6a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499770"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729469"
 ---
 # <a name="icorprofilercallback2-interface"></a>Интерфейс ICorProfilerCallback2
+
 Предоставляет методы, которые используются средой CLR для уведомления профилировщика кода при возникновении событий, на которые подписан профилировщик. `ICorProfilerCallback2`Интерфейс является расширением интерфейса [ICorProfilerCallback](icorprofilercallback-interface.md) . То есть он предоставляет новые обратные вызовы, представленные в .NET Framework версии 2,0.  
   
 > [!NOTE]
@@ -40,7 +41,8 @@ ms.locfileid: "84499770"
 |[Метод SurvivingReferences](icorprofilercallback2-survivingreferences-method.md)|Уведомляет профилировщик о ссылках на объекты, которые были сохранившиются при сборке мусора.|  
 |[Метод ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md)|Уведомляет профилировщик кода о том, что имя потока изменилось.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Среда CLR вызывает метод в `ICorProfilerCallback` интерфейсе (или `ICorProfilerCallback2` ) для уведомления профилировщика при возникновении события, на которое подписан профилировщик. Это основной интерфейс обратного вызова, с помощью которого среда CLR взаимодействует с профилировщиком кода.  
   
  Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для .NET Framework 2,0 и более поздних версий профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
@@ -51,6 +53,7 @@ ms.locfileid: "84499770"
 > Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы `ICorProfilerCallback` . Если он предназначен для .NET Framework версии 2,0 и более поздних, то COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -59,7 +62,7 @@ ms.locfileid: "84499770"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

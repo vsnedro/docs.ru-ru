@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
 topic_type:
 - apiref
-ms.openlocfilehash: 54748fdeaf911591c21f4495335e54c777878f04
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: acf449014f5bf5683d5488f8ed2ead963676fe6b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615843"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728346"
 ---
 # <a name="iclrcontrol-interface"></a>Интерфейс ICLRControl
+
 Предоставляет методы, позволяющие узлу получать ссылки и настраивать аспекты среды CLR.  
   
 ## <a name="methods"></a>Методы  
@@ -32,15 +33,16 @@ ms.locfileid: "83615843"
 |[Метод SetAppDomainManagerType](iclrcontrol-setappdomainmanagertype-method.md)|Задает тип, производный от <xref:System.AppDomainManager> типа для диспетчеров доменов приложений.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)

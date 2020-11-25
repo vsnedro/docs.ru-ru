@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
 topic_type:
 - apiref
-ms.openlocfilehash: 1904a98f254a988ce035847a4cdeede182aa07bf
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8cc28d9ccd40c65d225a96b269562c9d3dfa2124
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006380"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729893"
 ---
 # <a name="strongnamegetpublickeyex-method"></a>Метод StrongNameGetPublicKeyEx
+
 Получает открытый ключ из пары открытого и закрытого ключей и задает алгоритм хеширования и алгоритм подписи.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT StrongNameGetPublicKey (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pwzKeyContainer`  
  окне Имя контейнера ключей, содержащего пару открытого и закрытого ключей. Если `pbKeyBlob` параметр имеет значение null, `szKeyContainer` необходимо указать допустимый контейнер в поставщике служб шифрования (CSP). В этом случае `StrongNameGetPublicKeyEx` метод извлекает открытый ключ из пары ключей, хранящихся в контейнере.  
   
@@ -66,32 +68,36 @@ HRESULT StrongNameGetPublicKey (
  окне Зарезервировано для будущего использования; по умолчанию принимает значение null.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
- `S_OK`значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
+
+ `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Открытый ключ содержится в структуре [публиккэйблоб](../strong-naming/publickeyblob-structure.md) .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  В следующей таблице показан набор допустимых значений для `uHashAlgId` параметра.  
   
 |Имя|Значение|  
 |----------|-----------|  
-|Нет|0|  
+|None|0|  
 |SHA-1|0x8004|  
 |SHA-256|0x800c|  
 |SHA-384|0x800d|  
 |SHA-512|0x800e|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Метод StrongNameTokenFromPublicKey](iclrstrongname-strongnametokenfrompublickey-method.md)
 - [Структура PublicKeyBlob](../strong-naming/publickeyblob-structure.md)

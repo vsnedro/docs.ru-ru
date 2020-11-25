@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
 topic_type:
 - apiref
-ms.openlocfilehash: d4a254853256e1a1440f5588418b94e39eabcc9a
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: dd1608badf553650b05b7de98d9bbcd76b2f3edf
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894109"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728437"
 ---
 # <a name="icordebugclassgetstaticfieldvalue-method"></a>Метод ICorDebugClass::GetStaticFieldValue
+
 Возвращает значение указанного статического поля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetStaticFieldValue (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `fieldDef`  
  окне Токен поля `Def` , ссылающийся на извлекаемое поле.  
   
@@ -47,10 +49,12 @@ HRESULT GetStaticFieldValue (
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет значение статического поля.  
   
-## <a name="remarks"></a>Remarks  
- Для параметризованных типов значение статического поля задается относительно конкретного экземпляра. Поэтому, если конструктор класса принимает параметры типа <xref:System.Type>, вызовите метод [ICorDebugType:: GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) вместо. `ICorDebugClass::GetStaticFieldValue`  
+## <a name="remarks"></a>Комментарии  
+
+ Для параметризованных типов значение статического поля задается относительно конкретного экземпляра. Поэтому, если конструктор класса принимает параметры типа <xref:System.Type> , вызовите метод [ICorDebugType:: GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) вместо `ICorDebugClass::GetStaticFieldValue` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

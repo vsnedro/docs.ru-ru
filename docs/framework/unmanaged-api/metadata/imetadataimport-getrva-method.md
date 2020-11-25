@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ea422217-988b-4acd-b2db-c55357938275
 topic_type:
 - apiref
-ms.openlocfilehash: 58ab9ee9381fce4d7af1910df6c8d3bb813bcf13
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b4e7209c357f21a3f0de5770b483b673d5a5570b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490897"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729217"
 ---
 # <a name="imetadataimportgetrva-method"></a>Метод IMetaDataImport::GetRVA
+
 Возвращает относительный виртуальный адрес (RVA) и флаги реализации метода или поля, представленного указанным токеном.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetRVA (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tk`  
  окне Токен метаданных MethodDef или FieldDef, представляющий объект кода, для которого возвращается RVA. Если токен является FieldDef, поле должно быть глобальной переменной.  
   
@@ -46,15 +48,16 @@ HRESULT GetRVA (
  заполняет Указатель на флаги реализации для метода. Это значение является битовой маской из перечисления [кормесодимпл](cormethodimpl-enumeration.md) . Значение `pdwImplFlags` допустимо только в том случае `tk` , если является токеном MethodDef.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

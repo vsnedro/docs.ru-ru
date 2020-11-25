@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0bc96acb-6179-4328-a447-cda562ce9e98
 topic_type:
 - apiref
-ms.openlocfilehash: 4652e4b34d614ad3b7b852925fcc63309bdd1498
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 76b96dfd9d22c7e770671dcc01cb421430df729f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209465"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728190"
 ---
 # <a name="icordebugframeenumnext-method"></a>Метод ICorDebugFrameEnum::Next
+
 Возвращает указанное число экземпляров ICorDebugFrame, начиная с текущей позиции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  окне Число `ICorDebugFrame` извлекаемых экземпляров.  
   
@@ -47,6 +49,7 @@ HRESULT Next (
  заполняет Указатель на число `ICorDebugFrame` фактически возвращенных экземпляров. Это значение может быть равно NULL `celt` , если равно единице.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

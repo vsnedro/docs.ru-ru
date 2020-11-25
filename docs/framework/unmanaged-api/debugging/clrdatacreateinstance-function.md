@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
 topic_type:
 - apiref
-ms.openlocfilehash: c24963a6e56adfb9f763c6521027744db82cc357
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2ffc575cfcef1089a70ef3b6d38787a5b4c50443
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179365"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729828"
 ---
 # <a name="clrdatacreateinstance-function"></a>Функция CLRDataCreateInstance
+
 Создает объект интерфейса для указанного целевого элемента.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,26 +37,29 @@ HRESULT CLRDataCreateInstance (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `iid`  
- (в) Идентификатор интерфейса, который должен быть мгновенно.  
+ окне Идентификатор интерфейса, для которого создается экземпляр.  
   
  `target`  
- (в) Указатель на реализованный пользователем объект [ICLRDataTarget,](iclrdatatarget-interface.md) представляющий целевой элемент для создания объекта интерфейса.  
+ окне Указатель на реализуемый пользователем объект [ICLRDataTarget](iclrdatatarget-interface.md) , представляющий целевой элемент, для которого создается объект интерфейса.  
   
  `iface`  
- (ваут) Указатель на адрес возвращенного объекта интерфейса.  
+ заполняет Указатель на адрес возвращенного объекта интерфейса.  
   
-## <a name="remarks"></a>Remarks  
- Объект `ICLRDataTarget` реализован автором приложения отладки. Реализация зависит от типа представленного целевого элемента. Целевой элемент может быть процесс, свалка памяти, удаленной машины, и так далее.  
+## <a name="remarks"></a>Комментарии  
+
+ `ICLRDataTarget`Объект реализуется модулем записи приложения отладки. Реализация зависит от типа представляемого целевого элемента. Целевой элемент может быть процессом, дампом памяти, удаленным компьютером и т. д.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** ClrData.idl  
+ **Заголовок:** Клрдата. idl  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

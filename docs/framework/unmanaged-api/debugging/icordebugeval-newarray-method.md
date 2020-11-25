@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cc79a67d-5368-434d-a943-209db90491b9
 topic_type:
 - apiref
-ms.openlocfilehash: 496a6a7e01dec8aa90ba4e849c431ccd499ef53d
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: ef6cbe2cef3c52d9a4b47ff77e8aeb5159e89c76
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976204"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729763"
 ---
 # <a name="icordebugevalnewarray-method"></a>Метод ICorDebugEval::NewArray
+
 Выделяет новый массив указанного типа элемента и измерений.  
   
  Этот метод является устаревшим в .NET Framework версии 2,0. Вместо этого используйте [ICorDebugEval2:: NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) .  
@@ -40,6 +41,7 @@ HRESULT NewArray (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `elementType`  
  окне Значение перечисления Корелементтипе, указывающее тип элемента массива.  
   
@@ -55,10 +57,12 @@ HRESULT NewArray (
  `lowBounds`  
  [в] Необязательно. Нижняя граница каждого измерения массива. Если это значение пропущено, для каждого измерения предполагается Нижняя граница, равная нулю.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Массив всегда создается в домене приложения, в котором в данный момент выполняется поток.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -14,15 +14,16 @@ helpviewer_keywords:
 ms.assetid: 8263e75d-251b-4abc-8a1a-c62884142232
 topic_type:
 - apiref
-ms.openlocfilehash: 09c6431ec885c8b797dc9bb5f5c3ffe21890ccc7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f3872a2b03d3b22d695af1c104e9ae8ba8856990
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73107942"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729009"
 ---
 # <a name="ienumdefinitionidentity-interface"></a>Интерфейс IEnumDefinitionIdentity
-Служит в качестве перечислителя для коллекции объектов `IDefinitionIdentity`.  
+
+Служит в качестве перечислителя для коллекции `IDefinitionIdentity` объектов.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,19 +54,20 @@ IEnumDefinitionIdentity : IUnknown {
   
 |Метод|Описание|  
 |------------|-----------------|  
-|`IEnumDefinitionIdentity::Clone`|Возвращает указатель интерфейса на новый объект `IEnumDefinitionIdentity`, который содержит те же члены, что и этот `IEnumDefinitionIdentity`.|  
-|`IEnumDefinitionIdentity::Next`|Возвращает указанное число объектов `IDefinitionIdentity`, начиная с текущей позиции.|  
-|`IEnumDefinitionIdentity::Reset`|Перемещает указатель инструкции в начало этого `IEnumDefinitionIdentity`.|  
+|`IEnumDefinitionIdentity::Clone`|Возвращает указатель интерфейса на новый `IEnumDefinitionIdentity` объект, содержащий те же элементы, что и этот `IEnumDefinitionIdentity` .|  
+|`IEnumDefinitionIdentity::Next`|Возвращает указанное число `IDefinitionIdentity` объектов, начиная с текущей позиции.|  
+|`IEnumDefinitionIdentity::Reset`|Перемещает указатель инструкций в начало `IEnumDefinitionIdentity` .|  
 |`IEnumDefinitionIdentity::Skip`|Перемещает указатель инструкции вперед на указанное число элементов, начиная с текущей позиции.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Изоляция. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)
 - [Интерфейс IDefinitionIdentity](idefinitionidentity-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3930fd9b-2bc3-4b72-80a0-b6eeb94d60c6
 topic_type:
 - apiref
-ms.openlocfilehash: edcc0ebcadc1bd95574b0276bfd0e2d42e5474fd
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5165ef081aad849c11747807d8cc76b2df0a6c74
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379822"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729321"
 ---
 # <a name="icordebugthread-interface"></a>Интерфейс ICorDebugThread
+
 Представляет поток в процессе. Время существования экземпляра `ICorDebugThread` равно времени существования потока, который он представляет.  
   
 ## <a name="methods"></a>Методы  
@@ -45,12 +46,13 @@ ms.locfileid: "83379822"
 |[Метод GetUserState](icordebugthread-getuserstate-method.md)|Возвращает побитовое сочетание значений Кордебугусерстате, описывающих текущее состояние этого объекта `ICorDebugThread` .|  
 |[Метод SetDebugState](icordebugthread-setdebugstate-method.md)|Задает побитовое сочетание `CorDebugThreadState` значений, описывающих состояние отладки этого объекта `ICorDebugThread` .|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -59,6 +61,6 @@ ms.locfileid: "83379822"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

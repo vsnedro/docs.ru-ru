@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type:
 - apiref
-ms.openlocfilehash: 9d589bfc3093d03d87acb47ade0fc6c972bcd335
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 14274932461fa7a5278c9a09b421f50be098cb91
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976113"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729670"
 ---
 # <a name="icordebugeval2newparameterizedarray-method"></a>Метод ICorDebugEval2::NewParameterizedArray
+
 Выделяет новый массив указанного типа элемента и измерений.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT NewParameterizedArray(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pElementType`  
  окне Указатель на объект ICorDebugType, представляющий тип элемента, хранящегося в массиве.  
   
@@ -49,10 +51,12 @@ HRESULT NewParameterizedArray(
  `lowBounds`  
  [в] Необязательно. Нижняя граница каждого измерения массива. Если это значение пропущено, для каждого измерения предполагается Нижняя граница, равная нулю.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Элементы массива могут быть экземплярами универсального типа. Массив всегда создается в домене приложения, в котором в данный момент выполняется поток. В .NET Framework 2,0 значение `rank` должно быть равно 1.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

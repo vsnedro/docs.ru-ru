@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5f3c91c9-c035-454f-96cc-011cab1ea06b
 topic_type:
 - apiref
-ms.openlocfilehash: 5650a7e6e6cb0108f0d043914ea94debe2b703bf
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 12ce800cb83ef4f79710aa441b50be860526023c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213105"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728125"
 ---
 # <a name="icordebuggcreferenceenum-interface"></a>Интерфейс ICorDebugGCReferenceEnum
+
 Предоставляет перечислитель для объектов, для которых будет выполнена сборка мусора.  
   
 ## <a name="methods"></a>Методы  
@@ -30,7 +31,8 @@ ms.locfileid: "83213105"
 |------------|-----------------|  
 |[Метод Next](icordebuggcreferenceenum-next-method.md)|Возвращает указанное число экземпляров [COR_GC_REFERENCE](cor-gc-reference-structure.md) , содержащих сведения об объектах, которые будут собираться сборщиком мусора.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  `ICorDebugGCReferenceEnum`Интерфейс реализует интерфейс "ICorDebugEnum".  
   
  `ICorDebugGCReferenceEnum`Экземпляр заполняется [COR_GC_REFERENCE](cor-gc-reference-structure.md) экземплярами путем вызова метода [метод ICorDebugProcess5:: енумератегкреференцес](icordebugprocess5-enumerategcreferences-method.md) . [COR_GC_REFERENCE](cor-gc-reference-structure.md) объекты можно перечислить, вызвав метод [Икордебуггкреференце:: Next](icordebuggcreferenceenum-next-method.md) .  
@@ -44,6 +46,7 @@ ms.locfileid: "83213105"
 - Объекты из очереди метода завершения. Очередь метода завершения помещает объекты в корни до запуска метода завершения.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -52,6 +55,6 @@ ms.locfileid: "83213105"
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы отладки](debugging-interfaces.md)

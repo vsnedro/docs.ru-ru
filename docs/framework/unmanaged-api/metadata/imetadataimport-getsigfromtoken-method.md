@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ab894dc4-f7b6-4afc-bfcb-582a4b7e53a2
 topic_type:
 - apiref
-ms.openlocfilehash: d795f90c458b7fcf1a191b2763ac5f5bb55fb438
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 67abdfd8f8c67299eae757533f20df69392f25b8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490905"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729191"
 ---
 # <a name="imetadataimportgetsigfromtoken-method"></a>Метод IMetaDataImport::GetSigFromToken
+
 Возвращает двоичную подпись метаданных, связанную с указанным токеном.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetSigFromToken (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `mdSig`  
  окне Токен, для которого возвращается сигнатура двоичных метаданных.  
   
@@ -46,15 +48,16 @@ HRESULT GetSigFromToken (
  заполняет Размер в байтах двоичной подписи метаданных.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

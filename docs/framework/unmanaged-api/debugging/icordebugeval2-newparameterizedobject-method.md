@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3d705463-e640-4249-8036-4e8206d03cfe
 topic_type:
 - apiref
-ms.openlocfilehash: f6ede42ac90f65f934e285f879bcef62d13b65cb
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 8c91296bd4185fd98962d49f611a3cdcb5f0ad28
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976100"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729668"
 ---
 # <a name="icordebugeval2newparameterizedobject-method"></a>Метод ICorDebugEval2::NewParameterizedObject
+
 Создает новый объект параметризованного типа и вызывает метод конструктора объекта.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT NewParameterizedObject (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pConstructor`  
  окне Указатель на объект ICorDebugFunction, представляющий конструктор объекта, для которого создается экземпляр.  
   
@@ -53,10 +55,12 @@ HRESULT NewParameterizedObject (
  `ppArgs`  
  окне Массив указателей, каждый из которых указывает на объект ICorDebugValue, представляющий значение аргумента, передаваемое конструктору.  
   
-## <a name="remarks"></a>Remarks  
- Конструктор объекта может принимать <xref:System.Type> параметры.  
+## <a name="remarks"></a>Комментарии  
+
+ Конструктор объекта может принимать <xref:System.Type> Параметры.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

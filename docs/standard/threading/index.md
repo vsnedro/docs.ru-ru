@@ -6,12 +6,12 @@ helpviewer_keywords:
 - threading [.NET], about threading
 - managed threading
 ms.assetid: 7b46a7d9-c6f1-46d1-a947-ae97471bba87
-ms.openlocfilehash: 568b93fbfb6f757719d44a07b99ac18375ed539a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 28ba05c345d22b14512d280f3855934d727b3142
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826343"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728450"
 ---
 # <a name="managed-threading"></a>Управляемая поточность
 
@@ -21,6 +21,7 @@ ms.locfileid: "94826343"
 > Начиная с .NET Framework 4 многопоточное программирование значительно упростилось благодаря классам <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), классам параллельных коллекций из пространства имен <xref:System.Collections.Concurrent?displayProperty=nameWithType> и модели программирования, которая вместо потоков использует концепцию задач. Дополнительные сведения см. в разделе [Параллельное программирование](../parallel-programming/index.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Основы управляемых потоков](managed-threading-basics.md)  
  Обзор управляемых потоков и случаев использования нескольких потоков.  
   
@@ -34,6 +35,7 @@ ms.locfileid: "94826343"
  Описание управляемых классов, которые можно использовать для синхронизации действий потоков и данных объектов, доступных в разных потоках, а также обзор пула потоков.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.Threading>  
  Содержит классы для использования и синхронизации управляемых потоков.  
   
@@ -44,6 +46,7 @@ ms.locfileid: "94826343"
  Содержит классы для создания и планирования задач параллельной обработки.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Домены приложений](../../framework/app-domains/application-domains.md)  
  Общие сведения о доменах приложений и их использовании в Common Language Infrastructure.  
   

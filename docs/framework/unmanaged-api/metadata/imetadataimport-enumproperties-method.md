@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 60573ad7-8821-4721-a068-3f7a6d25926a
 topic_type:
 - apiref
-ms.openlocfilehash: 39343ffc88fc9b421b916e33e3e75e4e34fc233d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 24ee37a36e34c74258e1c750ba424640c0496f0a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503795"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728255"
 ---
 # <a name="imetadataimportenumproperties-method"></a>Метод IMetaDataImport::EnumProperties
+
 Перечисляет токены PropertyDef, представляющие свойства типа, на который ссылается указанный токен TypeDef.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT EnumProperties (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  [вход, выход] Указатель на перечислитель. При первом вызове этого метода это значение должно быть равно NULL.  
   
@@ -57,19 +59,20 @@ HRESULT EnumProperties (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumProperties`успешно возвращено.|  
+|`S_OK`|`EnumProperties` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcProperties` равно нулю.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

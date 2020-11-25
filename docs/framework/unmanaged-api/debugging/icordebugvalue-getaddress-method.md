@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
 topic_type:
 - apiref
-ms.openlocfilehash: 467ba53f90081f0c3499fb22acab96b5e380a3f4
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 47c0c4dfa78e85bcc83f0bb2a333955c8e8666fa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83395841"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728372"
 ---
 # <a name="icordebugvaluegetaddress-method"></a>Метод ICorDebugValue::GetAddress
+
 Возвращает адрес этого объекта "ICorDebugValue", который находится в процессе отладки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,16 @@ HRESULT GetAddress (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAddress`  
  заполняет Указатель на `CORDB_ADDRESS` объект, указывающий адрес этого объекта значения.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Если значение недоступно, возвращается 0 (нуль). Это может произойти, если значение не меньше частично в регистрах или хранится в обработчике сборщика мусора ( `GCHandle` ).  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -49,4 +53,4 @@ HRESULT GetAddress (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел

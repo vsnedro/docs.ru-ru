@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 38cd4e16-fbb2-471c-aa73-ac51a1931ad2
 topic_type:
 - apiref
-ms.openlocfilehash: 11ea6e468909ea42e38bdc7b76c60c460c98025e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9b42f0f7c8e2878ee3ec140344f51517a24247c4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503670"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729867"
 ---
 # <a name="imetadataimportfindfield-method"></a>Метод IMetaDataImport::FindField
+
 Возвращает указатель на токен FieldDef для поля, заключенного в заданный объект с <xref:System.Type> указанным именем и сигнатурой метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT FindField (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `td`  
  окне Маркер TypeDef для класса или интерфейса, который заключает поле для поиска. Если это значение равно `mdTokenNil` , поиск выполняется для глобальной переменной.  
   
@@ -53,23 +55,25 @@ HRESULT FindField (
  `pmb`  
  заполняет Указатель на соответствующий токен FieldDef.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Поле указывается с помощью включающего его класса или интерфейса ( `td` ), имени ( `szName` ) и (при необходимости) его сигнатуры ( `pvSigBlob` ).  
   
  Подпись, передаваемая в `FindField` , должна быть создана в текущей области, так как сигнатуры привязаны к определенной области. Сигнатура может внедрять маркер, идентифицирующий включающий класс или тип значения. (Токен является индексом локальной таблицы TypeDef). Нельзя построить подпись времени выполнения вне контекста текущей области и использовать эту сигнатуру в качестве входных данных для `FindField` .  
   
- `FindField`находит только поля, которые были определены непосредственно в классе или интерфейсе; наследуемые поля не находятся.  
+ `FindField` находит только поля, которые были определены непосредственно в классе или интерфейсе; наследуемые поля не находятся.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

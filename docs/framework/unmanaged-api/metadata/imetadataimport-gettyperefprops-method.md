@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
 topic_type:
 - apiref
-ms.openlocfilehash: 273922e00c3e5319d5a03652cc77b69f4479ea67
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5d98481d7934b4c96178aaa32fb0f9378eb359fc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503527"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729178"
 ---
 # <a name="imetadataimportgettyperefprops-method"></a>Метод IMetaDataImport::GetTypeRefProps
+
 Возвращает метаданные, связанные с <xref:System.Type> объектом, на который ссылается указанный токен TypeRef.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT GetTypeRefProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `tr`  
  окне Токен TypeRef, представляющий тип, для которого возвращаются метаданные.  
   
@@ -54,15 +56,16 @@ HRESULT GetTypeRefProps (
  заполняет Возвращаемый размер в расширенных символах `szName` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34fb03cc-2285-4a45-ac48-ad993b7a921a
 topic_type:
 - apiref
-ms.openlocfilehash: 807e1ee831a43a4ef1e7b0a269ee38131f24081e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 5d8bc54a94e1571ff8335c934407bbf235179ecc
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008124"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728294"
 ---
 # <a name="imetadataassemblyemit-interface"></a>Интерфейс IMetaDataAssemblyEmit
+
 Предоставляет методы, поддерживающие модель самоописания, которая используется средой CLR для разрешения и потребления ресурсов.  
   
 ## <a name="methods"></a>Методы  
@@ -42,15 +43,16 @@ ms.locfileid: "84008124"
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

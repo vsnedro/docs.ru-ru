@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
 topic_type:
 - apiref
-ms.openlocfilehash: cacdccf5c27cd1d115134d49e754b4ace2870b72
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 0cfc734e3c2d250bba045a926f5b178b6cbc1ba4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205163"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728203"
 ---
 # <a name="icordebugframegetstackrange-method"></a>Метод ICorDebugFrame::GetStackRange
+
 Возвращает диапазон абсолютных адресов этого кадра стека.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,16 +36,19 @@ HRESULT GetStackRange (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pStart`  
  заполняет Указатель на объект `CORDB_ADDRESS` , указывающий начальный адрес кадра стека, представленного этим `ICorDebugFrame` объектом.  
   
  `pEnd`  
  заполняет Указатель на объект `CORDB_ADDRESS` , указывающий конечный адрес кадра стека, представленного этим `ICorDebugFrame` объектом.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Диапазон адресов стека полезен для пиеЦинг вместе чередующихся трассировок стека, собранных из нескольких ядер отладки. Числовой диапазон не предоставляет сведений о содержимом кадра стека. Он имеет смысл только для сравнения расположений в кадрах стека.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
 topic_type:
 - apiref
-ms.openlocfilehash: cac5aaa7ed13b6a48b36ad550da8b73d0deb2ee7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: aded23e190de18d76bb2b9e2ffbae51cf2325419
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729230"
 ---
 # <a name="imetadataimportgetpropertyprops-method"></a>Метод IMetaDataImport::GetPropertyProps
+
 Возвращает метаданные для свойства, представленного указанным токеном.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -49,6 +50,7 @@ HRESULT GetPropertyProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `prop`  
  окне Токен, представляющий свойство, для которого необходимо вернуть метаданные.  
   
@@ -98,15 +100,16 @@ HRESULT GetPropertyProps (
  заполняет Число токенов MethodDef, возвращаемых в `rmdOtherMethod` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

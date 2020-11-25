@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e47e3655-efd5-4572-a1dc-50c69bf2a468
 topic_type:
 - apiref
-ms.openlocfilehash: 68bcdc33e34075cc5876ee721ef57282cdaa6e86
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 928ac05fbd3a19a17e7f37674b2a75f8bc799fc6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703683"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728879"
 ---
 # <a name="iclrruntimehostgetclrcontrol-method"></a>Метод ICLRRuntimeHost::GetCLRControl
+
 Возвращает указатель интерфейса типа [ICLRControl Interface](iclrcontrol-interface.md) , который может использоваться узлами для настройки аспектов среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,14 +35,15 @@ HRESULT GetCLRControl(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pCLRControl`  
  заполняет Указатель интерфейса типа [ICLRControl Interface](iclrcontrol-interface.md) , который позволяет узлам настраивать дополнительные аспекты среды CLR.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`GetCLRControl`успешно возвращено.|  
+|S_OK|`GetCLRControl` успешно возвращено.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
 |HOST_E_TIMEOUT|Время ожидания вызова истекло.|  
 |HOST_E_NOT_OWNER|Вызывающий объект не владеет блокировкой.|  
@@ -50,18 +52,20 @@ HRESULT GetCLRControl(
 |HOST_E_INVALIDOPERATION|Среда CLR уже запущена.|  
   
 ## <a name="remarks"></a>Комментарии  
- `ICLRControl`предоставляет метод [метода GetCLRManager](iclrcontrol-getclrmanager-method.md) , который позволяет узлу получить указатель интерфейса на один из типов диспетчера.  
+
+ `ICLRControl` предоставляет метод [метода GetCLRManager](iclrcontrol-getclrmanager-method.md) , который позволяет узлу получить указатель интерфейса на один из типов диспетчера.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс ICLRRuntimeHost](iclrruntimehost-interface.md)

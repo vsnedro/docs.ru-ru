@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
 topic_type:
 - apiref
-ms.openlocfilehash: b9185600d9d8b2a33830d86642727ac54b87a9cf
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: dd148d23d6e29f03052d3bbf1fcd5d02fb332a0a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73099653"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729854"
 ---
 # <a name="clr_debugging_process_flags-enumeration"></a>Перечисление CLR_DEBUGGING_PROCESS_FLAGS
+
 Предоставляет значения, используемые методом [ICLRDebugging:: OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,23 +40,25 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
 |Член|Описание|  
 |------------|-----------------|  
 |`CLR_DEBUGGING_MANAGED_EVENT_PENDING`|Эта среда выполнения имеет управляемое событие отладчика, не являющегося перехватываться, для отправки. Различия между событиями "перехват" и "не перехватывать" см. в разделе "Примечания".|  
-|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|Управляемое событие, которое является ожидающим, является запросом <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType>.|  
+|`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|Управляемое событие, которое является ожидающим, является <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType> запросом.|  
   
-## <a name="remarks"></a>Заметки  
- К событиям перехвата относятся процесс, домен приложения, сборка, модуль и уведомления о создании потоков, которые переводят отладчик в текущее состояние после его присоединения к процессу. События, не относящиеся к перехвату, которые обозначаются флагом `CLR_DEBUGGING_MANAGED_EVENT_PENDING`, включают все остальные события отладчика, такие как исключения и уведомления помощника по отладке управляемого кода (MDA).  
+## <a name="remarks"></a>Комментарии  
+
+ К событиям перехвата относятся процесс, домен приложения, сборка, модуль и уведомления о создании потоков, которые переводят отладчик в текущее состояние после его присоединения к процессу. События, не относящиеся к перехвату, которые обозначаются `CLR_DEBUGGING_MANAGED_EVENT_PENDING` флагом, включают все остальные события отладчика, такие как исключения и уведомления помощника по отладке управляемого кода (MDA).  
   
- Флаг `CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH` позволяет среде выполнения отличать незавершенное исключение и запрос на присоединение управляемого отладчика, который может быть отменен.  
+ `CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`Флаг позволяет среде выполнения отличать незавершенное исключение и запрос на присоединение управляемого отладчика, который может быть отменен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Метахост. idl, Метахост. h  
   
  **Библиотека:** CorGuids.lib  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Перечисления отладки](debugging-enumerations.md)
 - [Отладка](index.md)
