@@ -6,17 +6,19 @@ helpviewer_keywords:
 - enumerations [.NET Framework profiling]
 - unmanaged enumerations [.NET Framework], profiling
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
-ms.openlocfilehash: 1a9781fa1b4b608152faa7d5edc80bd4866f0c81
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 8956a09cf76aa54452e8c020239e650e55d8a0d1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868139"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701618"
 ---
 # <a name="profiling-enumerations"></a>Перечисления профилирования
+
 В этом разделе описываются неуправляемые перечисления, которые использует API профилирования.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Перечисление COR_PRF_CLAUSE_TYPE](cor-prf-clause-type-enumeration.md)  
  Указывает тип предложения исключения, код которого был только что введен или удален.  
   
@@ -69,9 +71,10 @@ ms.locfileid: "76868139"
  Указывает причину перехода из управляемого в неуправляемый код или наоборот.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Общие сведения о профилировании](profiling-overview.md)  
   
- [Интерфейсы профилирования](profiling-interfaces.md)  
+ [Профилирующие интерфейсы](profiling-interfaces.md)  
   
  [Глобальные статические функции профилирования](profiling-global-static-functions.md)  
   

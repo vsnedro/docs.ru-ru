@@ -7,14 +7,15 @@ helpviewer_keywords:
 - abstract types [.NET Framework]
 - types [.NET Framework], abstract
 ms.assetid: 0a632bc7-9b03-44ee-8842-c82f88672a45
-ms.openlocfilehash: 6acefa2d4a2aed8fca5d0b7db634d393baac6b58
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f5169cf730dc987526765c9538978901d424814b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821636"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701410"
 ---
 # <a name="abstractions-abstract-types-and-interfaces"></a>Абстракции (абстрактные типы и интерфейсы)
+
 Абстракция — это тип, описывающий контракт, но не предоставляющий полную реализацию контракта. Абстракции обычно реализуются как абстрактные классы или интерфейсы, и они поставляются с четко определенным набором справочной документации, описывающей необходимую семантику типов, реализующих контракт. Некоторые из наиболее важных абстракций в .NET Framework включают в себя <xref:System.IO.Stream> , <xref:System.Collections.Generic.IEnumerable%601> и <xref:System.Object> .
 
  Платформы можно расширять, реализуя конкретный тип, который поддерживает контракт абстракции и использует этот конкретный тип с API-интерфейсами платформы, которые потребляют (работает на) абстракцию.
@@ -35,7 +36,7 @@ ms.locfileid: "94821636"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Разработка с обеспечением расширяемости](designing-for-extensibility.md)

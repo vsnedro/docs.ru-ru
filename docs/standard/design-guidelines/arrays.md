@@ -6,14 +6,15 @@ helpviewer_keywords:
 - arrays [.NET Framework], usage guidelines
 - empty arrays
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-ms.openlocfilehash: c3545c609b6544e6528bbae08889d0ef20473802
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 11c1d23af4cf599ba632144634947520a1647ae7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821610"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701397"
 ---
 # <a name="arrays"></a>Массивы
+
 ✔️ предпочитаете использовать коллекции через массивы в общедоступных API. Раздел [Collections](guidelines-for-collections.md) содержит сведения о выборе между коллекциями и массивами.
 
  ❌ Не используйте поля массива, доступного только для чтения. Само поле доступно только для чтения и не может быть изменено, но элементы массива могут быть изменены.
@@ -26,7 +27,7 @@ ms.locfileid: "94821610"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Array>
 - [Рекомендации по проектированию платформы](index.md)

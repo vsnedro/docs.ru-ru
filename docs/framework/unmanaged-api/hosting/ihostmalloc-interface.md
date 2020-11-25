@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e3c6643b-6fc7-4a99-959d-4b7b4e63fdee
 topic_type:
 - apiref
-ms.openlocfilehash: 8f4e1cd7586df7d8e2a577d26f06eaed6b2c8bb7
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 2530c7fcd63f81b566d6623a533bd8e2af084047
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804601"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95702164"
 ---
 # <a name="ihostmalloc-interface"></a>Интерфейс IHostMalloc
+
 Предоставляет методы, позволяющие среде CLR запрашивать детализированные выделения из кучи через узел.  
   
 ## <a name="methods"></a>Методы  
@@ -32,19 +33,21 @@ ms.locfileid: "83804601"
 |[Метод DebugAlloc](ihostmalloc-debugalloc-method.md)|Запрашивает, что узел выделяет запрошенный объем памяти из кучи, и дополнительно следит за местом выделения памяти.|  
 |[Метод Free](ihostmalloc-free-method.md)|Освобождает память, выделенную с помощью `Alloc` метода.|  
   
-## <a name="remarks"></a>Замечания  
+## <a name="remarks"></a>Комментарии  
+
  Среда CLR получает указатель интерфейса на `IHostMalloc` экземпляр, вызывая метод [IHostMemoryManager:: CreateMalloc](ihostmemorymanager-createmalloc-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

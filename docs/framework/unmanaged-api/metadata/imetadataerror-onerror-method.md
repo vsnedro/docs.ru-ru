@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e744b8-a6fb-4d9c-a971-8babc875d8f0
 topic_type:
 - apiref
-ms.openlocfilehash: d2252f58af1a319d953fb320a99fad1cfec3dca0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6f6e531c99d341eba39939a184d2424256d9e155
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492724"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701878"
 ---
 # <a name="imetadataerroronerror-method"></a>Метод IMetaDataError::OnError
+
 Предоставляет уведомление об ошибках, возникающих во время слияния метаданных.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT OnError (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `hrError`  
  окне Значение ошибки HRESULT, возвращаемое вызывающему методу.  
   
@@ -42,14 +44,15 @@ HRESULT OnError (
  окне Токен метаданных объекта кода, который был объединен при возникновении ошибки.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataError](imetadataerror-interface.md)

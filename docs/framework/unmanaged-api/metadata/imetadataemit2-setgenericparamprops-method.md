@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cd93a48d-1fed-4706-bec6-a05dc3b64fbd
 topic_type:
 - apiref
-ms.openlocfilehash: 8feba8e67f3a90dd48fd957065a9c166c204b87c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8858e692d66f7b34a66334bd4e8b906dd12962ba
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492744"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701995"
 ---
 # <a name="imetadataemit2setgenericparamprops-method"></a>Метод IMetaDataEmit2::SetGenericParamProps
+
 Задает значения свойств для определения универсального параметра, на которое ссылается указанный токен.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -38,6 +39,7 @@ HRESULT SetGenericParamProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `gp`  
  окне Токен для определения универсального параметра, для которого задаются значения.  
   
@@ -54,15 +56,16 @@ HRESULT SetGenericParamProps (
  [в] Необязательно. Массив ограничений типа, заканчивающийся нулем. Элементы массива должны быть `mdTypeDef` `mdTypeRef` `mdTypeSpec` маркером метаданных, или.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

@@ -5,14 +5,15 @@ helpviewer_keywords:
 - abstractions [.NET Framework]
 - base classes, abstractions
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
-ms.openlocfilehash: 314fcd0e1e91d1fc869453dd442ecaa72f91955d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 9e49b79609a2d16a79a80727295d53bb36ec5943
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821597"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701319"
 ---
 # <a name="base-classes-for-implementing-abstractions"></a>Базовые классы для реализации абстракций
+
 Строго говоря, класс становится базовым классом, если другой класс является производным от него. Однако в этом разделе базовый класс является классом, предназначенным главным образом для предоставления общей абстракции или другим классам для повторного использования некоторой реализации по умолчанию, хотя наследование. Базовые классы обычно располагаются в середине иерархий наследования между абстракцией в корне иерархии и несколькими пользовательскими реализациями в нижней части.
 
  Они служат в качестве вспомогательных методов реализации для реализации абстракций. Например, одна из абстракций платформы для упорядоченных коллекций элементов — это <xref:System.Collections.Generic.IList%601> интерфейс. Реализация <xref:System.Collections.Generic.IList%601> не является тривиальной, и поэтому платформа предоставляет несколько базовых классов, таких как <xref:System.Collections.ObjectModel.Collection%601> и <xref:System.Collections.ObjectModel.KeyedCollection%602> , которые служат вспомогательными методами для реализации пользовательских коллекций.
@@ -31,7 +32,7 @@ ms.locfileid: "94821597"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Разработка с обеспечением расширяемости](designing-for-extensibility.md)

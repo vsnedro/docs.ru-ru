@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 50e04026-4d4a-47d9-96c1-f4677d6d938b
 topic_type:
 - apiref
-ms.openlocfilehash: 44439eda62f85c32893b73f17bd057195cf6b2e1
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d44ad493a786aaa35150515b7c254965490bd714
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503553"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701709"
 ---
 # <a name="imetadataimportgetnativecallconvfromsig-method"></a>Метод IMetaDataImport::GetNativeCallConvFromSig
+
 Возвращает собственное соглашение о вызовах для метода, представленного заданным указателем на подпись.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetNativeCallConvFromSig (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pvSig`  
  окне Указатель на сигнатуру метаданных метода, для которого возвращается соглашение о вызовах.  
   
@@ -46,15 +48,16 @@ HRESULT GetNativeCallConvFromSig (
  заполняет Указатель на собственное соглашение о вызовах.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.InteropServices.CallingConvention>
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)

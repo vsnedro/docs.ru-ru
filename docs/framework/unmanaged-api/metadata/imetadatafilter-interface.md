@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: ec0856ef-8c56-40ba-bf60-86e0ce8b337f
 topic_type:
 - apiref
-ms.openlocfilehash: 821936d20a421739e8eb3d5df228888df7f022e3
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2c22e45ca3d33b0a81ff0ecd90bf7574c45676bd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503800"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701852"
 ---
 # <a name="imetadatafilter-interface"></a>Интерфейс IMetaDataFilter
+
 Предоставляет методы для пометки и фильтрации лексем метаданных во избежание повторения действий, которые уже были выполнены.  
   
 ## <a name="methods"></a>Методы  
@@ -33,14 +34,15 @@ ms.locfileid: "84503800"
 |[Метод UnmarkAll](imetadatafilter-unmarkall-method.md)|Удаляет метки обработки из всех токенов в текущей области метаданных.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы метаданных](metadata-interfaces.md)

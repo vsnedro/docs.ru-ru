@@ -5,14 +5,15 @@ helpviewer_keywords:
 - attributes [.NET Framework], about
 - class library design guidelines [.NET Framework], attributes
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-ms.openlocfilehash: cc4752066124a0ea8081390bfb5f3791d21ec96d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c02c41244fa74b686277c2f3c3940405fe2d95ba
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821623"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701371"
 ---
 # <a name="attributes"></a>Атрибуты
+
 <xref:System.Attribute?displayProperty=nameWithType> является базовым классом, используемым для определения пользовательских атрибутов.
 
  Атрибуты — это заметки, которые могут быть добавлены к элементам программирования, таким как сборки, типы, члены и параметры. Они хранятся в метаданных сборки и доступны во время выполнения с помощью API-интерфейсов отражения. Например, платформа определяет объект <xref:System.ObsoleteAttribute> , который можно применить к типу или члену, чтобы указать, что тип или член является устаревшим.
@@ -47,7 +48,7 @@ ms.locfileid: "94821623"
 
  *Перепечатано с разрешения Pearson Education, Inc. из книги [Инфраструктура программных проектов. Соглашения, идиомы и шаблоны для многократно используемых библиотек .NET (2-е издание)](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619), авторы: Кржиштоф Цвалина (Krzysztof Cwalina) и Брэд Абрамс (Brad Abrams). Книга опубликована 22 октября 2008 г. издательством Addison-Wesley Professional в рамках серии, посвященной разработке для Microsoft Windows.*
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по проектированию платформы](index.md)
 - [Рекомендации по использованию](usage-guidelines.md)

@@ -17,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: 47dbaea4-8857-462e-93ba-fff880fc9e50
 topic_type:
 - apiref
-ms.openlocfilehash: 499e1fd859a66bb6992c6d02a46e38c514503bd8
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 3a9ef06f312126319875544caf272903b9f7c716
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205588"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701033"
 ---
 # <a name="icordebugprocess5gettypeid-method"></a>Метод ICorDebugProcess5::GetTypeID
+
 Преобразует адрес объекта в идентификатор [COR_TYPEID](cor-typeid-structure.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT GetTypeID(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `obj`  
  окне Адрес объекта.  
   
@@ -46,6 +48,7 @@ HRESULT GetTypeID(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -54,7 +57,7 @@ HRESULT GetTypeID(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)
