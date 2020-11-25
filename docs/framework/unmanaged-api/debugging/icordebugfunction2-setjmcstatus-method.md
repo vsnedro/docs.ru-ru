@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 22c27b01-2869-4214-b840-5921f7c874fc
 topic_type:
 - apiref
-ms.openlocfilehash: 7da12554ba1db9a467aa03c01bfb3b584125b129
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 55f219b5b834f365b87440e69bfa7d2c4e519235
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213196"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696100"
 ---
 # <a name="icordebugfunction2setjmcstatus-method"></a>Метод ICorDebugFunction2::SetJMCStatus
+
 Помечает функцию, представленную этим ICorDebugFunction2, для Только мой код пошагового выполнения.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT SetJMCStatus (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `bIsJustMyCode`  
  окне Установите значение, чтобы `true` пометить функцию как пользовательский код; в противном случае задайте для значение `false` .  
   
@@ -44,10 +46,12 @@ HRESULT SetJMCStatus (
 |`S_OK`|Функция была успешно помечена.|  
 |`CORDBG_E_FUNCTION_NOT_DEBUGGABLE`|Функция не может быть помечена как пользовательский код, так как ее отладка невозможна.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Только мой код пошаговое средство пропускает код, не являющийся пользовательским. Пользовательский код должен быть подмножеством отлаживаемого кода.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

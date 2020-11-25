@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: e4412dc2-c338-4cfb-94d8-f682095dd2b1
 topic_type:
 - apiref
-ms.openlocfilehash: 4a65a98ee04c3870dae2f49b3da2a8e72b1ffae4
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 1c94e03aa088d8f48eb7f7a418cebd0492319513
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795837"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696600"
 ---
 # <a name="cordebuginternalframetype-enumeration"></a>Перечисление CorDebugInternalFrameType
+
 Указывает тип кадра стека. Это перечисление используется методом [ICorDebugInternalFrame:: GetFrameType](icordebuginternalframe-getframetype-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -43,11 +44,11 @@ typedef enum CorDebugInternalFrameType {
 } CorDebugInternalFrameType;  
 ```  
   
-## <a name="members"></a>Участники  
+## <a name="members"></a>Члены  
   
-|Участник|Описание|  
+|Член|Описание|  
 |------------|-----------------|  
-|`STUBFRAME_NONE`|Значение NULL. `ICorDebugInternalFrame::GetFrameType` Метод никогда не возвращает это значение.|  
+|`STUBFRAME_NONE`|Значение Null. `ICorDebugInternalFrame::GetFrameType`Метод никогда не возвращает это значение.|  
 |`STUBFRAME_M2U`|Фрейм заглушки "управляемый-к-неуправляемый".|  
 |`STUBFRAME_U2M`|Неуправляемый фрейм заглушки.|  
 |`STUBFRAME_APPDOMAIN_TRANSITION`|Переход между доменами приложений.|  
@@ -60,6 +61,7 @@ typedef enum CorDebugInternalFrameType {
 |`STUBFRAME_JIT_COMPILATION`|Среда выполнения — это JIT-компиляция метода.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
