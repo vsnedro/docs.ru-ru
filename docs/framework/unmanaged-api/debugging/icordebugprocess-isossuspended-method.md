@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 83406cb2-5797-4402-872d-89c9516aefec
 topic_type:
 - apiref
-ms.openlocfilehash: 9452f238bd84c9c185ca8e007acac563474d29df
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: fffa61d8e406162251b0934a9846e5a813422798
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212065"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95724589"
 ---
-# <a name="icordebugprocessisossuspended-method"></a><span data-ttu-id="1ae5e-102">Метод ICorDebugProcess::IsOSSuspended</span><span class="sxs-lookup"><span data-stu-id="1ae5e-102">ICorDebugProcess::IsOSSuspended Method</span></span>
-<span data-ttu-id="1ae5e-103">Возвращает значение, указывающее, был ли заданный поток приостановлен в результате остановки этого процесса отладчиком.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-103">Gets a value that indicates whether the specified thread has been suspended as a result of the debugger stopping this process.</span></span>  
+# <a name="icordebugprocessisossuspended-method"></a><span data-ttu-id="cae9f-102">Метод ICorDebugProcess::IsOSSuspended</span><span class="sxs-lookup"><span data-stu-id="cae9f-102">ICorDebugProcess::IsOSSuspended Method</span></span>
+
+<span data-ttu-id="cae9f-103">Возвращает значение, указывающее, был ли заданный поток приостановлен в результате остановки этого процесса отладчиком.</span><span class="sxs-lookup"><span data-stu-id="cae9f-103">Gets a value that indicates whether the specified thread has been suspended as a result of the debugger stopping this process.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1ae5e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1ae5e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="cae9f-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="cae9f-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT IsOSSuspended(  
@@ -33,23 +34,26 @@ HRESULT IsOSSuspended(
     [out] BOOL  *pbSuspended);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="1ae5e-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="1ae5e-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="cae9f-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="cae9f-105">Parameters</span></span>  
+
  `threadID`  
- <span data-ttu-id="1ae5e-106">окне Идентификатор рассматриваемого потока.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-106">[in] The ID of thread in question.</span></span>  
+ <span data-ttu-id="cae9f-106">окне Идентификатор рассматриваемого потока.</span><span class="sxs-lookup"><span data-stu-id="cae9f-106">[in] The ID of thread in question.</span></span>  
   
  `pbSuspended`  
- <span data-ttu-id="1ae5e-107">заполняет Указатель на логическое значение, равное, `true` если указанный поток был приостановлен; в противном случае `pbSuspended` — \* `false` .</span><span class="sxs-lookup"><span data-stu-id="1ae5e-107">[out] A pointer to a Boolean value that is `true` if the specified thread has been suspended; otherwise \*`pbSuspended` is `false`.</span></span>  
+ <span data-ttu-id="cae9f-107">заполняет Указатель на логическое значение, равное, `true` если указанный поток был приостановлен; в противном случае `pbSuspended` — \* `false` .</span><span class="sxs-lookup"><span data-stu-id="cae9f-107">[out] A pointer to a Boolean value that is `true` if the specified thread has been suspended; otherwise \*`pbSuspended` is `false`.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="1ae5e-108">Remarks</span><span class="sxs-lookup"><span data-stu-id="1ae5e-108">Remarks</span></span>  
- <span data-ttu-id="1ae5e-109">Если указанный поток был приостановлен в результате остановки этого процесса отладчиком, счетчик приостановки Win32 указанного потока увеличивается на единицу.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-109">When the specified thread has been suspended as a result of the debugger stopping this process, the specified thread's Win32 suspend count is incremented by one.</span></span> <span data-ttu-id="1ae5e-110">Пользовательский интерфейс отладчика может захотеть использовать эту информацию при отображении счетчика приостановки операционной системы (ОС) для пользователя.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-110">The debugger user interface (UI) may want to take this information into account if it displays the operating system (OS) suspend count of the thread to the user.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="cae9f-108">Комментарии</span><span class="sxs-lookup"><span data-stu-id="cae9f-108">Remarks</span></span>  
+
+ <span data-ttu-id="cae9f-109">Если указанный поток был приостановлен в результате остановки этого процесса отладчиком, счетчик приостановки Win32 указанного потока увеличивается на единицу.</span><span class="sxs-lookup"><span data-stu-id="cae9f-109">When the specified thread has been suspended as a result of the debugger stopping this process, the specified thread's Win32 suspend count is incremented by one.</span></span> <span data-ttu-id="cae9f-110">Пользовательский интерфейс отладчика может захотеть использовать эту информацию при отображении счетчика приостановки операционной системы (ОС) для пользователя.</span><span class="sxs-lookup"><span data-stu-id="cae9f-110">The debugger user interface (UI) may want to take this information into account if it displays the operating system (OS) suspend count of the thread to the user.</span></span>  
   
- <span data-ttu-id="1ae5e-111">`IsOSSuspended`Метод имеет смысл только в контексте неуправляемой отладки.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-111">The `IsOSSuspended` method makes sense only in the context of unmanaged debugging.</span></span> <span data-ttu-id="1ae5e-112">Во время управляемой отладки потоки приостанавливаются совместно, а не с приостановленной ОС.</span><span class="sxs-lookup"><span data-stu-id="1ae5e-112">During managed debugging, threads are cooperatively suspended rather than OS-suspended.</span></span>  
+ <span data-ttu-id="cae9f-111">`IsOSSuspended`Метод имеет смысл только в контексте неуправляемой отладки.</span><span class="sxs-lookup"><span data-stu-id="cae9f-111">The `IsOSSuspended` method makes sense only in the context of unmanaged debugging.</span></span> <span data-ttu-id="cae9f-112">Во время управляемой отладки потоки приостанавливаются совместно, а не с приостановленной ОС.</span><span class="sxs-lookup"><span data-stu-id="cae9f-112">During managed debugging, threads are cooperatively suspended rather than OS-suspended.</span></span>  
   
-## <a name="requirements"></a><span data-ttu-id="1ae5e-113">Требования</span><span class="sxs-lookup"><span data-stu-id="1ae5e-113">Requirements</span></span>  
- <span data-ttu-id="1ae5e-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="1ae5e-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+## <a name="requirements"></a><span data-ttu-id="cae9f-113">Требования</span><span class="sxs-lookup"><span data-stu-id="cae9f-113">Requirements</span></span>  
+
+ <span data-ttu-id="cae9f-114">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="cae9f-114">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
   
- <span data-ttu-id="1ae5e-115">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="1ae5e-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
+ <span data-ttu-id="cae9f-115">**Заголовок:** CorDebug.idl, CorDebug.h</span><span class="sxs-lookup"><span data-stu-id="cae9f-115">**Header:** CorDebug.idl, CorDebug.h</span></span>  
   
- <span data-ttu-id="1ae5e-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="1ae5e-116">**Library:** CorGuids.lib</span></span>  
+ <span data-ttu-id="cae9f-116">**Библиотека:** CorGuids.lib</span><span class="sxs-lookup"><span data-stu-id="cae9f-116">**Library:** CorGuids.lib</span></span>  
   
- <span data-ttu-id="1ae5e-117">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1ae5e-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>
+ <span data-ttu-id="cae9f-117">**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="cae9f-117">**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]</span></span>

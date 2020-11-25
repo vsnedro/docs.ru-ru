@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
 topic_type:
 - apiref
-ms.openlocfilehash: d02b834b22ba7897e4939de88bc3c61c62ac2b0e
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 05df50d80c6b8962b3bdfe2708d5f9d30c58aaea
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762413"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95723926"
 ---
-# <a name="icorconfigurationsetdebuggerthreadcontrol-method"></a><span data-ttu-id="1115e-102">Метод ICorConfiguration::SetDebuggerThreadControl</span><span class="sxs-lookup"><span data-stu-id="1115e-102">ICorConfiguration::SetDebuggerThreadControl Method</span></span>
-<span data-ttu-id="1115e-103">Задает интерфейс обратного вызова, который службы отладки будут вызывать, так как потоки среды CLR блокируются и разблокируются для отладки.</span><span class="sxs-lookup"><span data-stu-id="1115e-103">Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.</span></span>  
+# <a name="icorconfigurationsetdebuggerthreadcontrol-method"></a><span data-ttu-id="211af-102">Метод ICorConfiguration::SetDebuggerThreadControl</span><span class="sxs-lookup"><span data-stu-id="211af-102">ICorConfiguration::SetDebuggerThreadControl Method</span></span>
+
+<span data-ttu-id="211af-103">Задает интерфейс обратного вызова, который службы отладки будут вызывать, так как потоки среды CLR блокируются и разблокируются для отладки.</span><span class="sxs-lookup"><span data-stu-id="211af-103">Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="1115e-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="1115e-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="211af-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="211af-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT SetDebuggerThreadControl (  
@@ -33,19 +34,21 @@ HRESULT SetDebuggerThreadControl (
 );  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="1115e-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="1115e-105">Parameters</span></span>  
- `pDebuggerThreadControl`  
- <span data-ttu-id="1115e-106">окне Указатель на объект [идебугжерсреадконтрол](idebuggerthreadcontrol-interface.md) , который уведомляет узел о блокировании и разблокировке потоков службами отладки.</span><span class="sxs-lookup"><span data-stu-id="1115e-106">[in] A pointer to an [IDebuggerThreadControl](idebuggerthreadcontrol-interface.md) object that notifies the host about the blocking and unblocking of threads by the debugging services.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="1115e-107">Требования</span><span class="sxs-lookup"><span data-stu-id="1115e-107">Requirements</span></span>  
- <span data-ttu-id="1115e-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="1115e-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="1115e-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="1115e-109">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="1115e-110">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="1115e-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="1115e-111">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="1115e-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="1115e-112">См. также</span><span class="sxs-lookup"><span data-stu-id="1115e-112">See also</span></span>
+## <a name="parameters"></a><span data-ttu-id="211af-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="211af-105">Parameters</span></span>  
 
-- [<span data-ttu-id="1115e-113">Интерфейс ICorConfiguration</span><span class="sxs-lookup"><span data-stu-id="1115e-113">ICorConfiguration Interface</span></span>](icorconfiguration-interface.md)
+ `pDebuggerThreadControl`  
+ <span data-ttu-id="211af-106">окне Указатель на объект [идебугжерсреадконтрол](idebuggerthreadcontrol-interface.md) , который уведомляет узел о блокировании и разблокировке потоков службами отладки.</span><span class="sxs-lookup"><span data-stu-id="211af-106">[in] A pointer to an [IDebuggerThreadControl](idebuggerthreadcontrol-interface.md) object that notifies the host about the blocking and unblocking of threads by the debugging services.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="211af-107">Требования</span><span class="sxs-lookup"><span data-stu-id="211af-107">Requirements</span></span>  
+
+ <span data-ttu-id="211af-108">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="211af-108">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="211af-109">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="211af-109">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="211af-110">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="211af-110">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="211af-111">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="211af-111">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="211af-112">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="211af-112">See also</span></span>
+
+- [<span data-ttu-id="211af-113">Интерфейс ICorConfiguration</span><span class="sxs-lookup"><span data-stu-id="211af-113">ICorConfiguration Interface</span></span>](icorconfiguration-interface.md)

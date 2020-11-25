@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 78c1ba28-a410-4360-805c-23a95408964a
 topic_type:
 - apiref
-ms.openlocfilehash: a3ec0af33f3f1201ce2f6b62291dfc67696fecab
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 791b92c30fc2bf3d506113620b59ba20015e077e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610448"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725824"
 ---
-# <a name="isymunmanagedvariablegetsignature-method"></a><span data-ttu-id="f08ac-102">Метод ISymUnmanagedVariable::GetSignature</span><span class="sxs-lookup"><span data-stu-id="f08ac-102">ISymUnmanagedVariable::GetSignature Method</span></span>
-<span data-ttu-id="f08ac-103">Возвращает сигнатуру этой переменной.</span><span class="sxs-lookup"><span data-stu-id="f08ac-103">Gets the signature of this variable.</span></span>  
+# <a name="isymunmanagedvariablegetsignature-method"></a><span data-ttu-id="61900-102">Метод ISymUnmanagedVariable::GetSignature</span><span class="sxs-lookup"><span data-stu-id="61900-102">ISymUnmanagedVariable::GetSignature Method</span></span>
+
+<span data-ttu-id="61900-103">Возвращает сигнатуру этой переменной.</span><span class="sxs-lookup"><span data-stu-id="61900-103">Gets the signature of this variable.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="f08ac-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="f08ac-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="61900-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="61900-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetSignature(  
@@ -35,22 +36,25 @@ HRESULT GetSignature(
         length_is(*pcSig)] BYTE sig[]);  
 ```  
   
-## <a name="parameters"></a><span data-ttu-id="f08ac-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="f08ac-105">Parameters</span></span>  
+## <a name="parameters"></a><span data-ttu-id="61900-105">Параметры</span><span class="sxs-lookup"><span data-stu-id="61900-105">Parameters</span></span>  
+
  `cSig`  
- <span data-ttu-id="f08ac-106">окне Длина буфера, на который указывает `sig` параметр.</span><span class="sxs-lookup"><span data-stu-id="f08ac-106">[in] The length of the buffer pointed to by the `sig` parameter.</span></span>  
+ <span data-ttu-id="61900-106">окне Длина буфера, на который указывает `sig` параметр.</span><span class="sxs-lookup"><span data-stu-id="61900-106">[in] The length of the buffer pointed to by the `sig` parameter.</span></span>  
   
  `pcSig`  
- <span data-ttu-id="f08ac-107">заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения подписи.</span><span class="sxs-lookup"><span data-stu-id="f08ac-107">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the signature.</span></span>  
+ <span data-ttu-id="61900-107">заполняет Указатель на объект `ULONG32` , который получает размер (в символах) буфера, необходимого для хранения подписи.</span><span class="sxs-lookup"><span data-stu-id="61900-107">[out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the signature.</span></span>  
   
  `sig`  
- <span data-ttu-id="f08ac-108">заполняет Буфер, в котором хранится подпись.</span><span class="sxs-lookup"><span data-stu-id="f08ac-108">[out] The buffer that stores the signature.</span></span>  
+ <span data-ttu-id="61900-108">заполняет Буфер, в котором хранится подпись.</span><span class="sxs-lookup"><span data-stu-id="61900-108">[out] The buffer that stores the signature.</span></span>  
   
-## <a name="return-value"></a><span data-ttu-id="f08ac-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="f08ac-109">Return Value</span></span>  
- <span data-ttu-id="f08ac-110">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="f08ac-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
-  
-## <a name="requirements"></a><span data-ttu-id="f08ac-111">Требования</span><span class="sxs-lookup"><span data-stu-id="f08ac-111">Requirements</span></span>  
- <span data-ttu-id="f08ac-112">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="f08ac-112">**Header:** CorSym.idl, CorSym.h</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="f08ac-113">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="f08ac-113">See also</span></span>
+## <a name="return-value"></a><span data-ttu-id="61900-109">Возвращаемое значение</span><span class="sxs-lookup"><span data-stu-id="61900-109">Return Value</span></span>  
 
-- [<span data-ttu-id="f08ac-114">Интерфейс ISymUnmanagedVariable</span><span class="sxs-lookup"><span data-stu-id="f08ac-114">ISymUnmanagedVariable Interface</span></span>](isymunmanagedvariable-interface.md)
+ <span data-ttu-id="61900-110">S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.</span><span class="sxs-lookup"><span data-stu-id="61900-110">S_OK if the method succeeds; otherwise, E_FAIL or some other error code.</span></span>  
+  
+## <a name="requirements"></a><span data-ttu-id="61900-111">Требования</span><span class="sxs-lookup"><span data-stu-id="61900-111">Requirements</span></span>  
+
+ <span data-ttu-id="61900-112">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="61900-112">**Header:** CorSym.idl, CorSym.h</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="61900-113">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="61900-113">See also</span></span>
+
+- [<span data-ttu-id="61900-114">Интерфейс ISymUnmanagedVariable</span><span class="sxs-lookup"><span data-stu-id="61900-114">ISymUnmanagedVariable Interface</span></span>](isymunmanagedvariable-interface.md)

@@ -14,33 +14,35 @@ helpviewer_keywords:
 ms.assetid: 3db7a220-cfe9-4810-8ca8-a094bb8e0f5b
 topic_type:
 - apiref
-ms.openlocfilehash: 1ee406c97fa4ccb7f87098cba2925568d8ce069f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 9256342ad3a91e6770d6fd19d9d2f94fab267d3e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615349"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725889"
 ---
-# <a name="isymunmanagedscope-interface"></a><span data-ttu-id="91bcf-102">Интерфейс ISymUnmanagedScope</span><span class="sxs-lookup"><span data-stu-id="91bcf-102">ISymUnmanagedScope Interface</span></span>
-<span data-ttu-id="91bcf-103">Представляет лексическую область внутри метода.</span><span class="sxs-lookup"><span data-stu-id="91bcf-103">Represents a lexical scope within a method.</span></span>  
-  
-## <a name="methods"></a><span data-ttu-id="91bcf-104">Методы</span><span class="sxs-lookup"><span data-stu-id="91bcf-104">Methods</span></span>  
-  
-|<span data-ttu-id="91bcf-105">Метод</span><span class="sxs-lookup"><span data-stu-id="91bcf-105">Method</span></span>|<span data-ttu-id="91bcf-106">Описание</span><span class="sxs-lookup"><span data-stu-id="91bcf-106">Description</span></span>|  
-|------------|-----------------|  
-|[<span data-ttu-id="91bcf-107">Метод GetChildren</span><span class="sxs-lookup"><span data-stu-id="91bcf-107">GetChildren Method</span></span>](isymunmanagedscope-getchildren-method.md)|<span data-ttu-id="91bcf-108">Возвращает дочерние элементы этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-108">Gets the children of this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-109">Метод GetEndOffset</span><span class="sxs-lookup"><span data-stu-id="91bcf-109">GetEndOffset Method</span></span>](isymunmanagedscope-getendoffset-method.md)|<span data-ttu-id="91bcf-110">Возвращает конечное смещение для данной области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-110">Gets the end offset for this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-111">Метод GetLocalCount</span><span class="sxs-lookup"><span data-stu-id="91bcf-111">GetLocalCount Method</span></span>](isymunmanagedscope-getlocalcount-method.md)|<span data-ttu-id="91bcf-112">Возвращает число локальных переменных, определенных в этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-112">Gets a count of the local variables defined within this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-113">Метод GetLocals</span><span class="sxs-lookup"><span data-stu-id="91bcf-113">GetLocals Method</span></span>](isymunmanagedscope-getlocals-method.md)|<span data-ttu-id="91bcf-114">Возвращает локальные переменные, определенные в этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-114">Gets the local variables defined within this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-115">Метод GetMethod</span><span class="sxs-lookup"><span data-stu-id="91bcf-115">GetMethod Method</span></span>](isymunmanagedscope-getmethod-method.md)|<span data-ttu-id="91bcf-116">Возвращает метод, содержащий эту область.</span><span class="sxs-lookup"><span data-stu-id="91bcf-116">Gets the method that contains this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-117">Метод GetNamespaces</span><span class="sxs-lookup"><span data-stu-id="91bcf-117">GetNamespaces Method</span></span>](isymunmanagedscope-getnamespaces-method.md)|<span data-ttu-id="91bcf-118">Возвращает пространства имен, используемые в этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-118">Gets the namespaces that are being used within this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-119">Метод GetParent</span><span class="sxs-lookup"><span data-stu-id="91bcf-119">GetParent Method</span></span>](isymunmanagedscope-getparent-method.md)|<span data-ttu-id="91bcf-120">Возвращает родительскую область этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-120">Gets the parent scope of this scope.</span></span>|  
-|[<span data-ttu-id="91bcf-121">Метод GetStartOffset</span><span class="sxs-lookup"><span data-stu-id="91bcf-121">GetStartOffset Method</span></span>](isymunmanagedscope-getstartoffset-method.md)|<span data-ttu-id="91bcf-122">Возвращает начальное смещение для этой области.</span><span class="sxs-lookup"><span data-stu-id="91bcf-122">Gets the start offset for this scope.</span></span>|  
-  
-## <a name="requirements"></a><span data-ttu-id="91bcf-123">Требования</span><span class="sxs-lookup"><span data-stu-id="91bcf-123">Requirements</span></span>  
- <span data-ttu-id="91bcf-124">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="91bcf-124">**Header:** CorSym.idl, CorSym.h</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="91bcf-125">См. также статью</span><span class="sxs-lookup"><span data-stu-id="91bcf-125">See also</span></span>
+# <a name="isymunmanagedscope-interface"></a><span data-ttu-id="db5bc-102">Интерфейс ISymUnmanagedScope</span><span class="sxs-lookup"><span data-stu-id="db5bc-102">ISymUnmanagedScope Interface</span></span>
 
-- [<span data-ttu-id="91bcf-126">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="91bcf-126">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
-- [<span data-ttu-id="91bcf-127">Интерфейс ISymUnmanagedScope2</span><span class="sxs-lookup"><span data-stu-id="91bcf-127">ISymUnmanagedScope2 Interface</span></span>](isymunmanagedscope2-interface.md)
+<span data-ttu-id="db5bc-103">Представляет лексическую область внутри метода.</span><span class="sxs-lookup"><span data-stu-id="db5bc-103">Represents a lexical scope within a method.</span></span>  
+  
+## <a name="methods"></a><span data-ttu-id="db5bc-104">Методы</span><span class="sxs-lookup"><span data-stu-id="db5bc-104">Methods</span></span>  
+  
+|<span data-ttu-id="db5bc-105">Метод</span><span class="sxs-lookup"><span data-stu-id="db5bc-105">Method</span></span>|<span data-ttu-id="db5bc-106">Описание</span><span class="sxs-lookup"><span data-stu-id="db5bc-106">Description</span></span>|  
+|------------|-----------------|  
+|[<span data-ttu-id="db5bc-107">Метод GetChildren</span><span class="sxs-lookup"><span data-stu-id="db5bc-107">GetChildren Method</span></span>](isymunmanagedscope-getchildren-method.md)|<span data-ttu-id="db5bc-108">Возвращает дочерние элементы этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-108">Gets the children of this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-109">Метод GetEndOffset</span><span class="sxs-lookup"><span data-stu-id="db5bc-109">GetEndOffset Method</span></span>](isymunmanagedscope-getendoffset-method.md)|<span data-ttu-id="db5bc-110">Возвращает конечное смещение для данной области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-110">Gets the end offset for this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-111">Метод GetLocalCount</span><span class="sxs-lookup"><span data-stu-id="db5bc-111">GetLocalCount Method</span></span>](isymunmanagedscope-getlocalcount-method.md)|<span data-ttu-id="db5bc-112">Возвращает число локальных переменных, определенных в этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-112">Gets a count of the local variables defined within this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-113">Метод GetLocals</span><span class="sxs-lookup"><span data-stu-id="db5bc-113">GetLocals Method</span></span>](isymunmanagedscope-getlocals-method.md)|<span data-ttu-id="db5bc-114">Возвращает локальные переменные, определенные в этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-114">Gets the local variables defined within this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-115">Метод GetMethod</span><span class="sxs-lookup"><span data-stu-id="db5bc-115">GetMethod Method</span></span>](isymunmanagedscope-getmethod-method.md)|<span data-ttu-id="db5bc-116">Возвращает метод, содержащий эту область.</span><span class="sxs-lookup"><span data-stu-id="db5bc-116">Gets the method that contains this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-117">Метод GetNamespaces</span><span class="sxs-lookup"><span data-stu-id="db5bc-117">GetNamespaces Method</span></span>](isymunmanagedscope-getnamespaces-method.md)|<span data-ttu-id="db5bc-118">Возвращает пространства имен, используемые в этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-118">Gets the namespaces that are being used within this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-119">Метод GetParent</span><span class="sxs-lookup"><span data-stu-id="db5bc-119">GetParent Method</span></span>](isymunmanagedscope-getparent-method.md)|<span data-ttu-id="db5bc-120">Возвращает родительскую область этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-120">Gets the parent scope of this scope.</span></span>|  
+|[<span data-ttu-id="db5bc-121">Метод GetStartOffset</span><span class="sxs-lookup"><span data-stu-id="db5bc-121">GetStartOffset Method</span></span>](isymunmanagedscope-getstartoffset-method.md)|<span data-ttu-id="db5bc-122">Возвращает начальное смещение для этой области.</span><span class="sxs-lookup"><span data-stu-id="db5bc-122">Gets the start offset for this scope.</span></span>|  
+  
+## <a name="requirements"></a><span data-ttu-id="db5bc-123">Требования</span><span class="sxs-lookup"><span data-stu-id="db5bc-123">Requirements</span></span>  
+
+ <span data-ttu-id="db5bc-124">**Заголовок:** Корсим. idl, Корсим. h</span><span class="sxs-lookup"><span data-stu-id="db5bc-124">**Header:** CorSym.idl, CorSym.h</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="db5bc-125">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="db5bc-125">See also</span></span>
+
+- [<span data-ttu-id="db5bc-126">Интерфейсы хранилища символов диагностики</span><span class="sxs-lookup"><span data-stu-id="db5bc-126">Diagnostics Symbol Store Interfaces</span></span>](diagnostics-symbol-store-interfaces.md)
+- [<span data-ttu-id="db5bc-127">Интерфейс ISymUnmanagedScope2</span><span class="sxs-lookup"><span data-stu-id="db5bc-127">ISymUnmanagedScope2 Interface</span></span>](isymunmanagedscope2-interface.md)

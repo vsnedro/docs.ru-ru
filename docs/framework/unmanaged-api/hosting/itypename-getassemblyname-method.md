@@ -15,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 97801d99-f5f1-4a30-882f-959827093fac
 topic_type:
 - apiref
-ms.openlocfilehash: 0c8f540e5d835b4874cc55b789804d0ce30f208d
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 256c0ccf7a39992ebb14adfd820729f8351e1990
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842209"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725122"
 ---
-# <a name="itypenamegetassemblyname-method"></a><span data-ttu-id="28d07-102">Метод ITypeName::GetAssemblyName</span><span class="sxs-lookup"><span data-stu-id="28d07-102">ITypeName::GetAssemblyName Method</span></span>
-<span data-ttu-id="28d07-103">Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.</span><span class="sxs-lookup"><span data-stu-id="28d07-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
+# <a name="itypenamegetassemblyname-method"></a><span data-ttu-id="d558d-102">Метод ITypeName::GetAssemblyName</span><span class="sxs-lookup"><span data-stu-id="d558d-102">ITypeName::GetAssemblyName Method</span></span>
+
+<span data-ttu-id="d558d-103">Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.</span><span class="sxs-lookup"><span data-stu-id="d558d-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="28d07-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="28d07-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="d558d-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="d558d-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT GetAssemblyName (  
@@ -33,15 +34,16 @@ HRESULT GetAssemblyName (
 );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="28d07-105">Требования</span><span class="sxs-lookup"><span data-stu-id="28d07-105">Requirements</span></span>  
- <span data-ttu-id="28d07-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="28d07-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="28d07-107">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="28d07-107">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="28d07-108">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="28d07-108">**Library:** Included as a resource in MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="28d07-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="28d07-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="28d07-110">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="28d07-110">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="d558d-105">Требования</span><span class="sxs-lookup"><span data-stu-id="d558d-105">Requirements</span></span>  
 
-- [<span data-ttu-id="28d07-111">Интерфейсы размещения</span><span class="sxs-lookup"><span data-stu-id="28d07-111">Hosting Interfaces</span></span>](hosting-interfaces.md)
+ <span data-ttu-id="d558d-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="d558d-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="d558d-107">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="d558d-107">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="d558d-108">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="d558d-108">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="d558d-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="d558d-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="d558d-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="d558d-110">See also</span></span>
+
+- [<span data-ttu-id="d558d-111">Интерфейсы размещения</span><span class="sxs-lookup"><span data-stu-id="d558d-111">Hosting Interfaces</span></span>](hosting-interfaces.md)
