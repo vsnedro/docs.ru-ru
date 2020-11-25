@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8edad30c-30ff-4bee-813c-75525a82fc93
 topic_type:
 - apiref
-ms.openlocfilehash: 1a56c3ebe4b1c528f9c6555bdfbf1270a438410d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e3031bf123ff9107b4cebc0723f1be0d423bdaec
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617117"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721755"
 ---
 # <a name="iapartmentcallbackdocallback-method"></a>Метод IApartmentCallback::DoCallback
+
 Выполняет указанную функцию в апартаменте.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT _stdcall DoCallback(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pFunc`  
  окне Указатель на функцию, которая должна быть выполнена в апартаменте.  
   
@@ -42,14 +44,15 @@ HRESULT _stdcall DoCallback(
  окне Указатель на аргумент функции.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IApartmentCallback](iapartmentcallback-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5e17a6fc-f335-4aae-9bb0-c3e1271a9426
 topic_type:
 - apiref
-ms.openlocfilehash: a23083777d0cd5965511f3689578a60220008420
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 673c32c86c808c36db6454b8a9f0d8e68f9b1258
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762234"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720637"
 ---
 # <a name="icorruntimehostgetdefaultdomain-method"></a>Метод ICorRuntimeHost::GetDefaultDomain
+
 Возвращает указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> , представляющий домен по умолчанию для текущего процесса.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,6 +35,7 @@ HRESULT GetDefaultDomain (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  заполняет Указатель интерфейса типа <xref:System._AppDomain?displayProperty=nameWithType> на <xref:System.AppDomain> экземпляр, представляющий домен приложения по умолчанию для процесса.  
   
@@ -41,7 +43,7 @@ HRESULT GetDefaultDomain (
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Операция выполнена успешно.|  
 |S_FALSE|Не удалось завершить операцию.|  
@@ -49,15 +51,16 @@ HRESULT GetDefaultDomain (
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

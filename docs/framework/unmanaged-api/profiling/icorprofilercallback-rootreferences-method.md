@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: dbdf853b-d1a4-4828-8ef7-53d121d8e6ae
 topic_type:
 - apiref
-ms.openlocfilehash: b587f30a01623c6e9806bcd9d01058a0880be239
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2d084ce0a785ba37c5b7dc937ed116cee74b7594
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499913"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720676"
 ---
 # <a name="icorprofilercallbackrootreferences-method"></a>Метод ICorProfilerCallback::RootReferences
+
 Уведомляет профилировщик о получении сведений о корневых ссылках после сборки мусора.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -34,13 +35,15 @@ HRESULT RootReferences(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `cRootRefs`  
  окне Число ссылок в `rootRefIds` массиве.  
   
  `rootRefIds`  
  окне Массив идентификаторов объектов, ссылающихся либо на статический объект, либо на объект в стеке.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  `RootReferences`Для уведомления профилировщика вызываются методы и [ICorProfilerCallback2:: RootReferences2](icorprofilercallback2-rootreferences2-method.md) . Профилировщики обычно реализуют один или другой, но не оба, так как передаваемые сведения `RootReferences2` являются надмножеством переданного `RootReferences` .  
   
  `rootRefIds`Массив может содержать пустой объект. Например, все ссылки на объекты, объявленные в стеке, рассматриваются сборщиком мусора как корни и всегда будут сообщать о них.  
@@ -48,6 +51,7 @@ HRESULT RootReferences(
  Идентификаторы объектов, возвращаемые, `RootReferences` недопустимы во время обратного вызова, так как сборка мусора может находиться в процессе перемещения объектов из старых адресов в новые адреса. Таким образом, профилировщики не должны пытаться проверять объекты во время `RootReferences` вызова. При вызове [ICorProfilerCallback2:: GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md) все объекты были перемещены в новые расположения и могут быть безопасно проверены.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -56,6 +60,6 @@ HRESULT RootReferences(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

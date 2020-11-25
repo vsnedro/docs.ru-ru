@@ -6,17 +6,19 @@ helpviewer_keywords:
 - unmanaged API reference [.NET Framework], diagnostics symbol store
 - native API reference [.NET Framework], diagnostics symbol store
 ms.assetid: ee1fbb7a-b0f9-482f-8cd0-6df37e6586a2
-ms.openlocfilehash: 044ed9caaf0633e84c783103a338891017fd1ac1
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: f53c9dfce6b2e962a355fedf805e612345b4f381
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442102"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720078"
 ---
 # <a name="diagnostics-symbol-store-unmanaged-api-reference"></a>Хранилище диагностических символов (ссылка неуправляемого API)
+
 API хранилища символов диагностики позволяет компилятору генерировать символьную информацию для использования отладчиком.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)  
  В этом разделе описываются неуправляемые интерфейсы, которые использует API хранилища символов диагностики.  
   

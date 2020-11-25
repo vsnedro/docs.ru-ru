@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41
 topic_type:
 - apiref
-ms.openlocfilehash: c68f43ce2f79ee6e4ec44ce4b2f0dbfb1c1185fa
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: af040c4a6c9b85930d2d9261f8587ba69eb204e5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433871"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721482"
 ---
 # <a name="getassemblyrefhash-method"></a>Метод GetAssemblyRefHash
+
 Извлекает хэш-объект хэша для данной сборки.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,6 +36,7 @@ HRESULT GetAssemblyRefHash(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `FileToken`  
  Идентификатор сборки, на которую будет ссылаться хэш.  
   
@@ -45,12 +47,14 @@ HRESULT GetAssemblyRefHash(
  Получает размер хэш-объекта хэша (в байтах).  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

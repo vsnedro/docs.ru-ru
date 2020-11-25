@@ -6,17 +6,19 @@ helpviewer_keywords:
 - enumerations [.NET Framework hosting]
 - hosting enumerations [.NET Framework]
 ms.assetid: e09131eb-1f7d-4f52-ae42-7393e9b62ef6
-ms.openlocfilehash: 8edace3191ee4477b19f199d5db6c891c993dcd5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 907b1343ddbfa28b97ac2210e28b99cd38aa6fd4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504307"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721833"
 ---
 # <a name="hosting-enumerations"></a>Размещение перечислений
+
 В этом разделе описаны неуправляемые перечисления, используемые API размещения.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Перечисление CLSID_RESOLUTION_FLAGS](clsid-resolution-flags-enumeration.md)  
  Содержит значения, которые указывают, как общеязыковая среда выполнения (CLR) должна разрешать `CLSID` .  
   
@@ -108,6 +110,7 @@ ms.locfileid: "84504307"
  Указывает действие, которое должен выполнить узел при выполнении операции, запрошенной блоками CLR.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Размещение коклассов](hosting-coclasses.md)  
   
  [Интерфейсы размещения](hosting-interfaces.md)  

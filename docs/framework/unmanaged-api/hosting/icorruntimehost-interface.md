@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
 topic_type:
 - apiref
-ms.openlocfilehash: 420f22a242a20f8bdf5d5b84f47a297a2f503db0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9fcb5e189af9f72de7635aad550a5e8ab5522dbd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546025"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720624"
 ---
 # <a name="icorruntimehost-interface"></a>Интерфейс ICorRuntimeHost
+
 Предоставляет методы, позволяющие основному приложению запускать и прекращать работу среды CLR, создавать и настраивать домены приложений, получать доступ к домену по умолчанию и перечислять все домены, выполняющиеся в процессе.  
   
  В .NET Framework версии 2,0 этот интерфейс заменен [ICLRRuntimeHost](iclrruntimehost-interface.md).  
@@ -39,18 +40,19 @@ ms.locfileid: "90546025"
 |[Метод CurrentDomain](icorruntimehost-currentdomain-method.md)|Возвращает указатель интерфейса типа <xref:System._AppDomain> , который представляет домен, загруженный в текущем потоке.|  
 |[Метод DeleteLogicalThreadState](icorruntimehost-deletelogicalthreadstate-method.md)|Не используется.|  
 |[Метод EnumDomains](icorruntimehost-enumdomains-method.md)|Возвращает перечислитель для доменов в текущем процессе.|  
-|[Метод GetConfiguration](icorruntimehost-getconfiguration-method.md)|Возвращает объект, позволяющий ведущему приложению указать конфигурацию обратного вызова среды CLR.|  
+|[Метод настройки](icorruntimehost-getconfiguration-method.md)|Возвращает объект, позволяющий ведущему приложению указать конфигурацию обратного вызова среды CLR.|  
 |[Метод GetDefaultDomain](icorruntimehost-getdefaultdomain-method.md)|Возвращает указатель интерфейса типа <xref:System._AppDomain> , представляющий домен по умолчанию для текущего процесса.|  
 |[Метод LocksHeldByLogicalThread](icorruntimehost-locksheldbylogicalthread-method.md)|Не используется.|  
 |[Метод MapFile](icorruntimehost-mapfile-method.md)|Сопоставляет указанный файл с памятью. Этот метод устарел.|  
 |[Метод NextDomain](icorruntimehost-nextdomain-method.md)|Возвращает указатель интерфейса на следующий домен в перечислении.|  
 |[Метод Start](icorruntimehost-start-method.md)|Запускает среду CLR.|  
-|[Метод завершения](icorruntimehost-stop-method.md)|Останавливает выполнение кода в среде выполнения для текущего процесса.|  
+|[Метод Stop](icorruntimehost-stop-method.md)|Останавливает выполнение кода в среде выполнения для текущего процесса.|  
 |[Метод SwitchInLogicalThreadState](icorruntimehost-switchinlogicalthreadstate-method.md)|Не используется.|  
 |[Метод SwitchOutLogicalThreadState](icorruntimehost-switchoutlogicalthreadstate-method.md)|Не используется.|  
 |[Метод UnloadDomain](icorruntimehost-unloaddomain-method.md)|Выгружает указанный домен приложения из текущего процесса.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
@@ -59,7 +61,7 @@ ms.locfileid: "90546025"
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.AppDomain>
 - [Размещение](index.md)

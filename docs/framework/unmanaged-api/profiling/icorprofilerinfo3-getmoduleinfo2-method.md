@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f1f6b8f3-dcfc-49e8-be76-ea50ea90d5a7
 topic_type:
 - apiref
-ms.openlocfilehash: d2b7e93866bf0aa79849925234a4d6e4cc9b5b52
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2213b674cce27c77156b8de1bbf20d2975e3e55c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502825"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721599"
 ---
 # <a name="icorprofilerinfo3getmoduleinfo2-method"></a>Метод ICorProfilerInfo3::GetModuleInfo2
+
 Возвращает имя файла модуля, идентификатор родительской сборки модуля и битовую маску, описывающую свойства модуля, по идентификатору модуля.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,6 +41,7 @@ HRESULT GetModuleInfo2(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `moduleId`  
  [in] Идентификатор модуля, для которого будут извлекаться сведения.  
   
@@ -61,7 +63,8 @@ HRESULT GetModuleInfo2(
  `pdwModuleFlags`  
  заполняет Битовая маска значений из перечисления [COR_PRF_MODULE_FLAGS](cor-prf-module-flags-enumeration.md) , определяющая свойства модуля.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Для динамических модулей параметр `szName` является именем метаданных модуля, а базовый адрес равен 0 (нулю). Имя метаданных — это значение в столбце Name таблицы Module в метаданных. Это также предоставляется в качестве <xref:System.Reflection.Module.ScopeName%2A?displayProperty=nameWithType> свойства управляемого кода, а также в качестве `szName` параметра метода [IMetaDataImport:: жетскопепропс](../metadata/imetadataimport-getscopeprops-method.md) для кода клиента неуправляемого метаданных.  
   
  Несмотря на то, что `GetModuleInfo2` метод может вызываться сразу после существования идентификатора модуля, идентификатор родительской сборки будет недоступен до тех пор, пока профилировщик не получит обратный вызов [ICorProfilerCallback:: модулеаттачедтоассембли](icorprofilercallback-moduleattachedtoassembly-method.md) .  
@@ -71,6 +74,7 @@ HRESULT GetModuleInfo2(
  Кроме того, сначала можно вызвать метод `GetModuleInfo2` с буфером `szName` нулевой длины для получения правильного размера буфера. Затем можно задать размер буфера равным значению, возвращенному в параметре `pcchName`, и вызвать метод `GetModuleInfo2` снова.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -79,7 +83,7 @@ HRESULT GetModuleInfo2(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

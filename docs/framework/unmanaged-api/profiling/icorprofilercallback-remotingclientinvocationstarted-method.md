@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 796b63f3-c809-47f1-89cc-b23ad8eb5e79
 topic_type:
 - apiref
-ms.openlocfilehash: 8a042e71690b5ae77c1e4cda7be394a163ab2774
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 22b9970556dd9d8b5070f38a7712462aa5a4aae2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503267"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720169"
 ---
 # <a name="icorprofilercallbackremotingclientinvocationstarted-method"></a>Метод ICorProfilerCallback::RemotingClientInvocationStarted
+
 Уведомляет профилировщик о начале удаленного вызова.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -31,12 +32,13 @@ ms.locfileid: "84503267"
 HRESULT RemotingClientInvocationStarted();  
 ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
+
  Это событие одинаково для синхронных и асинхронных вызовов.  
   
  Каждая из следующих пар обратных вызовов будет выполняться в одном потоке:  
   
-- `RemotingClientInvocationStarted`и [ICorProfilerCallback:: RemotingClientSendingMessage](icorprofilercallback-remotingclientsendingmessage-method.md)  
+- `RemotingClientInvocationStarted` и [ICorProfilerCallback:: RemotingClientSendingMessage](icorprofilercallback-remotingclientsendingmessage-method.md)  
   
 - [ICorProfilerCallback:: ремотингклиентрецеивингрепли](icorprofilercallback-remotingclientreceivingreply-method.md) и [ICorProfilerCallback:: ремотингклиентинвокатионфинишед](icorprofilercallback-remotingclientinvocationfinished-method.md)  
   
@@ -49,6 +51,7 @@ HRESULT RemotingClientInvocationStarted();
 - Профилировщик не получает точные уведомления о событиях асинхронного удаленного взаимодействия.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -57,6 +60,6 @@ HRESULT RemotingClientInvocationStarted();
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74847c35-7ca1-466a-b750-b25e7b03d100
 topic_type:
 - apiref
-ms.openlocfilehash: c4ea53502c58106190a8ca5d194039dc3600af75
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 97658d5418ac3c04abd423ffff86324acf0e99c8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83760437"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720552"
 ---
 # <a name="icorthreadpoolcordeletetimer-method"></a>Метод ICorThreadpool::CorDeleteTimer
+
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,14 +37,15 @@ HRESULT CorDeleteTimer (
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorThreadpool](icorthreadpool-interface.md)

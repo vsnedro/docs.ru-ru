@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: b5a22ebc-0582-49de-91f9-97a3d9789290
 topic_type:
 - apiref
-ms.openlocfilehash: b067ca72e030bce24a7efde5e3488a00024e9613
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 9332b3462ba389783a113d173e32850d40427ce2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762873"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720234"
 ---
 # <a name="iclrtask2-interface"></a>Интерфейс ICLRTask2
+
 Предоставляет все функциональные возможности интерфейса [ICLRTask](iclrtask-interface.md) ; Кроме того, предоставляет методы, которые позволяют задерживать прерывания потока в текущем потоке.  
   
 ## <a name="methods"></a>Методы  
@@ -32,6 +33,7 @@ ms.locfileid: "83762873"
 |[Метод EndPreventAsyncAbort](iclrtask2-endpreventasyncabort-method.md)|Разрешает новые или ожидающие запросы на прерывание потока в результате прерывания потока в текущем потоке.|  
   
 ## <a name="remarks"></a>Комментарии  
+
  `ICLRTask2`Интерфейс наследует `ICLRTask` интерфейс и добавляет методы, позволяющие узлу откладывать прерывания потока, чтобы защитить область кода, которая не должна завершаться ошибкой. Вызов `BeginPreventAsyncAbort` увеличивает счетчик прерывания задержки потока для текущего потока и вызывает метод `EndPreventAsyncAbort` декремента. Вызовы `BeginPreventAsyncAbort` и `EndPreventAsyncAbort` могут быть вложенными. Пока значение счетчика больше нуля, прерывания потока для текущего потока откладываются.  
   
  Если вызовы `BeginPreventAsyncAbort` и `EndPreventAsyncAbort` не являются парными, то можно достичь состояния, в котором прерывания потока не могут быть доставлены в текущий поток.  
@@ -43,15 +45,16 @@ ms.locfileid: "83762873"
  Сведения о членах, унаследованных от `ICLRTask` и о других применениях этого интерфейса, см. в разделе интерфейс [ICLRTask](iclrtask-interface.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

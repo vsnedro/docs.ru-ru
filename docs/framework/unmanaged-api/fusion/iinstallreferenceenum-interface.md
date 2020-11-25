@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
 topic_type:
 - apiref
-ms.openlocfilehash: d3f7c24b4bd373924c44dbc0490c890e7f1322bd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f56a9049cd4b503124abe9dd4866dc91779e268e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131737"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721068"
 ---
 # <a name="iinstallreferenceenum-interface"></a>Интерфейс IInstallReferenceEnum
+
 Представляет перечислитель для сборок, на которые имеются ссылки, установленных в глобальном кэше сборок.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -40,16 +41,17 @@ interface IInstallReferenceEnum : IUnknown {
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод GetNextInstallReferenceItem](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Возвращает указатель на следующее `IInstallReferenceItem`, содержащееся в этом `IInstallReferenceEnum`.|  
+|[Метод GetNextInstallReferenceItem](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Возвращает указатель на следующий объект, `IInstallReferenceItem` содержащийся в этом `IInstallReferenceEnum` .|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** Fusion. h  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Интерфейсы Fusion](fusion-interfaces.md)
+- [Fusion-интерфейсы](fusion-interfaces.md)
 - [Интерфейс IInstallReferenceItem](iinstallreferenceitem-interface.md)

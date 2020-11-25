@@ -1,6 +1,6 @@
 ---
-title: QualifierSet_Next функция (Неуправляемая справка API)
-description: Функция QualifierSet_Next получает следующий квалификатор в перечислении.
+title: Функция QualifierSet_Next (Справочник по неуправляемым интерфейсам API)
+description: Функция QualifierSet_Next извлекает следующий квалификатор в перечислении.
 ms.date: 11/06/2017
 api_name:
 - QualifierSet_Next
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - QualifierSet_Next function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: d3702426bc409d601ccfc6b7a8e93e8d9729c64e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 54d79a3dc081e9cdcb42153b6f7aa457557e3399
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174879"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721131"
 ---
 # <a name="qualifierset_next-function"></a>Функция QualifierSet_Next
+
 Получает следующий квалификатор в перечислении, начатом вызовом функции [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md).
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -41,44 +42,45 @@ HRESULT QualifierSet_Next (
 
 ## <a name="parameters"></a>Параметры
 
-`vFunc`(в) Этот параметр не используется.
+`vFunc` окне Этот параметр не используется.
 
-`ptr`(в) Указатель на экземпляр [IWbemqualifierSet.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset)
+`ptr` окне Указатель на экземпляр [ивбемкуалифиерсет](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) .
 
-`lFlags`(в) Защищены. Этот параметр должен быть 0.
+`lFlags` окне Процессу. Этот параметр должен иметь значение 0.
 
-`pstrName`(ваут) Название квалификатора. Если `null`этот параметр игнорируется; в `pstrName` противном случае, `BSTR` не должны указывать на действительный или утечка памяти происходит. Если не нулевые, функция `BSTR` всегда выделяет `WBEM_S_NO_ERROR`новый, когда он возвращается.
+`pstrName` заполняет Имя квалификатора. `null`Значение, если этот параметр не учитывается; в противном случае `pstrName` не должен указывать на допустимый `BSTR` или утечку памяти. Если значение не равно null, функция всегда выделяет новый `BSTR` при возврате `WBEM_S_NO_ERROR` .
 
-`pVal`(ваут) В случае успеха значение для квалификатора. Если функция выходит `VARIANT` из строя, указанная `pVal` не изменяется. Если этот `null`параметр, параметр игнорируется.
+`pVal` заполняет В случае успеха значение квалификатора. Если функция завершается ошибкой, то, на `VARIANT` которую указывает, `pVal` не изменяется. Если этот параметр имеет значение `null` , параметр игнорируется.
 
-`plFlavor`(ваут) Указатель на LONG, который получает квалификационный вкус. Если информация о вкусе не `null`желательна, этот параметр может быть.
+`plFlavor` заполняет Указатель на значение типа LONG, которое получает флаг квалификатора. Если сведения о разновидностях не нужны, этот параметр может иметь значение `null` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Недействительный параметр. |
-|`WBEM_E_UNEXPECTED` | 0x8004101d | Звонивший не звонил [QualifierSet_BeginEnumeration.](qualifierset-beginenumeration.md) |
-|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Недостаточно памяти доступно для начала нового перечисления. |
-| `WBEM_S_NO_MORE_DATA` | 0x40005 | В перечислении больше не осталось квалификаторов. |
-|`WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+|`WBEM_E_UNEXPECTED` | 0x8004101d | Вызывающий объект не вызывал [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md). |
+|`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Недостаточно памяти для начала нового перечисления. |
+| `WBEM_S_NO_MORE_DATA` | 0x40005 | В перечислении не осталось квалификаторов. |
+|`WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция завершает вызов [IWbemqualifierSet::Следующий](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-next) метод.
+Эта функция заключает в оболочку вызов метода [ивбемкуалифиерсет:: Next](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-next) .
 
-Вы называете функцию `QualifierSet_Next` повторно, чтобы перечислить все `WBEM_S_NO_MORE_DATA`квалификаторы до возвращения функции. Чтобы досрочно завершить перечисление, позвоните [в функцию QualifierSet_EndEnumeration.](qualifierset-endenumeration.md)
+Функция вызывается `QualifierSet_Next` повторно для перечисления всех квалификаторов до возвращения функции `WBEM_S_NO_MORE_DATA` . Чтобы завершить перечисление раньше, вызовите функцию [QualifierSet_EndEnumeration](qualifierset-endenumeration.md) .
 
-Порядок квалификаторов, возвращенных во время перечисления, не определен.
+Порядок квалификаторов, возвращаемых во время перечисления, не определен.
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

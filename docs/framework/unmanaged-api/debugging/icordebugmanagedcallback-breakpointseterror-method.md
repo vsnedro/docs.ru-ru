@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f2b773a4-c4d0-429c-9717-51d6e2ed86af
 topic_type:
 - apiref
-ms.openlocfilehash: 0fa25dd33223ad2a9521aed0917ce35a2a33fa2f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: cac8393408de626efe2360999e259780eac29f38
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213391"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721339"
 ---
 # <a name="icordebugmanagedcallbackbreakpointseterror-method"></a>Метод ICorDebugManagedCallback::BreakpointSetError
+
 Уведомляет отладчик о том, что среде CLR не удалось точно привязать точку останова, установленную до JIT-компиляции функции.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT BreakpointSetError (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, который содержит несвязанную точку останова.  
   
@@ -49,10 +51,12 @@ HRESULT BreakpointSetError (
  `dwError`  
  окне Целое число, указывающее на ошибку.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
+
  Заданная точка останова никогда не будет достигнута. Отладчик должен деактивироваться и повторно привязывать его.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -61,6 +65,6 @@ HRESULT BreakpointSetError (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

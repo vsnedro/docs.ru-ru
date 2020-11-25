@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9d7600e-a8f5-443a-96de-67d26e130f2d
 topic_type:
 - apiref
-ms.openlocfilehash: f81ef3f5959e279b3fbbd94d6c5e8a2d86a38e7f
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 9049cd42e9c10cdcff62b005094b56c9df9ce975
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442024"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720000"
 ---
 # <a name="inotifysink2onsynccallexit-method"></a>Метод INotifySink2::OnSyncCallExit
+
 Вызывается при выходе из вызова.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT OnSyncCallExit
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `in_CallID`  
  окне Идентификатор выходного вызова. См. раздел [структура CALL_ID](call-id-structure.md).  
   
@@ -47,12 +49,14 @@ HRESULT OnSyncCallExit
  заполняет Размер буфера вызова в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс INotifySink2](inotifysink2-interface.md)
 - [Интерфейс INotifySource2](inotifysource2-interface.md)

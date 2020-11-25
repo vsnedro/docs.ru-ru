@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 44bc0f56-32fa-491e-a62d-52fc96d48125
 topic_type:
 - apiref
-ms.openlocfilehash: f7dee16373fc67580130c57482a130ba02f50204
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9d319b6523b2c2a1bcc5cb6ea7a28efa67d898e8
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497469"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720953"
 ---
 # <a name="icorprofilerinfoseteventmask-method"></a>Метод ICorProfilerInfo::SetEventMask
+
 Определяет значение, указывающее типы событий, для которых профилировщик хочет получать уведомления от среды CLR.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,15 +34,17 @@ HRESULT SetEventMask(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `dwEvents`  
  [в] 4-байтовое значение, определяющее категории событий. Каждый бит управляет отдельной возможностью, поведением или типом события. Биты описаны в перечислении [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md) .  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Вместо этого метода следует вызвать метод [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) . Несмотря на то `SetEventMask` , что метод поддерживается, [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) предоставляет дополнительные функциональные возможности.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -50,7 +53,7 @@ HRESULT SetEventMask(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Метод SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)

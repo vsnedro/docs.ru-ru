@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9321903b-7dea-40d8-ba32-99016c00cc46
 topic_type:
 - apiref
-ms.openlocfilehash: 39767ea2603018d088aaefc5da32879aaf49fee6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 1e5b92d99d8ae52c88f1517f9c3d7db8e70598ac
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893489"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720806"
 ---
 # <a name="icordebugcode2-interface"></a>Интерфейс ICorDebugCode2
 
@@ -30,14 +30,15 @@ ms.locfileid: "82893489"
 |Метод|Описание|  
 |------------|-----------------|  
 |[Метод GetCodeChunks](icordebugcode2-getcodechunks-method.md)|Возвращает фрагменты кода, из которого состоит этот объект кода.|  
-|[Метод GetCompilerFlags](icordebugcode2-getcompilerflags-method.md)|Возвращает флаги, указывающие условия, при которых этот объект кода был либо JIT-скомпилирован, либо создан с помощью генератора образов в машинном коде (Ngen. exe).|  
+|[Метод GetCompilerFlags](icordebugcode2-getcompilerflags-method.md)|Возвращает флаги, указывающие условия, при которых этот объект кода был либо JIT-скомпилирован, либо создан с помощью генератора образов в машинном коде (Ngen.exe).|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  

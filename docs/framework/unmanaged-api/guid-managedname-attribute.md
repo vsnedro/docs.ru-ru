@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 11e18095-e444-47bc-aff6-b887ac5dc01e
 topic_type:
 - apiref
-ms.openlocfilehash: 9d30c8fe71a0dfff7de9bb2f43b325cbb8016a23
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0127b6894f1095521f1b24fc8c0424dc7db824b3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123041"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721053"
 ---
 # <a name="guid_managedname-attribute"></a>Атрибут GUID_ManagedName
+
 Определяет настраиваемый атрибут интерфейса, указывающий имя управляемого пространства имен для библиотеки COM.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,10 +34,12 @@ ms.locfileid: "73123041"
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `value`  
  Имя управляемого пространства имен для библиотеки.  
   
 ## <a name="definition"></a>Определение  
+
  `GUID_ManagedName` определяется в COR. h следующим образом:  
   
 ```cpp
@@ -44,15 +47,17 @@ ms.locfileid: "73123041"
 EXTERN_GUID(GUID_ManagedName, 0xf21f359, 0xab84, 0x41e8, 0x9a, 0x78, 0x36, 0xd1, 0x10, 0xe6, 0xd2, 0xf9);  
 ```  
   
-## <a name="remarks"></a>Заметки  
+## <a name="remarks"></a>Комментарии  
+
  Пользовательский атрибут интерфейса определяет метаданные для объекта в библиотеке типов.  
   
- Для получения управляемого имени из атрибута используйте <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData%2A?displayProperty=nameWithType> или <xref:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetCustData%2A?displayProperty=nameWithType>.  
+ Используйте <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData%2A?displayProperty=nameWithType> или <xref:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetCustData%2A?displayProperty=nameWithType> для получения управляемого имени из атрибута.  
   
- Дополнительные сведения см. в разделе [атрибуты интерфейса](/cpp/windows/attributes/interface-attributes) в справочной документации по визуальному C++ элементу.  
+ Дополнительные сведения см. в разделе [атрибуты интерфейса](/cpp/windows/attributes/interface-attributes) в справочной документации по Visual C++.  
   
 ## <a name="example"></a>Пример  
- В следующем примере показано определение библиотеки с помощью атрибута `GUID_ManagedName`.  
+
+ В следующем примере показано определение библиотеки с помощью `GUID_ManagedName` атрибута.  
   
 ```idl
 [  
@@ -66,4 +71,5 @@ library Microsoft_VisualStudio_CommandBars
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** COR. h

@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
 topic_type:
 - apiref
-ms.openlocfilehash: 4218faf1c324175424ab20305224f7f2fa51bb7a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 12b7b53c408388c21d7508f6591ead5ccf55936b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494219"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721183"
 ---
 # <a name="icorprofilerthreadenumskip-method"></a>Метод ICorProfilerThreadEnum::Skip
+
 Перемещает курсор перечислителя из текущей позиции, пропуская указанное число элементов.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,21 +34,25 @@ HRESULT Skip (    [in] ULONG celt
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `celt`  
  окне Число пропущенных элементов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
-|S_OK|`celt`элементы пропущены.|  
+|S_OK|`celt` элементы пропущены.|  
 |S_FALSE|`celt`Пропущено меньше элементов, что означает, что больше нет элементов.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Новая позиции курсора перечислителя — (Текущая позиции) + `celt` .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -56,7 +61,7 @@ HRESULT Skip (    [in] ULONG celt
   
  **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

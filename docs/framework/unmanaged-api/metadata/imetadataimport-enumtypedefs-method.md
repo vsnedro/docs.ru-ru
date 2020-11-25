@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e508711-da92-4381-aaf8-6803075cdaa2
 topic_type:
 - apiref
-ms.openlocfilehash: cdfd4e10236d546af2555b125d44233172849a21
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 4545f5f8d78e588c655a72340210a785b0feb619
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503735"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720416"
 ---
 # <a name="imetadataimportenumtypedefs-method"></a>Метод IMetaDataImport::EnumTypeDefs
+
 Перечисляет токены TypeDef, представляющие все типы в текущей области.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT EnumTypeDefs (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `phEnum`  
  заполняет Указатель на новый перечислитель. При первом вызове этого метода это значение должно быть равно NULL.  
   
@@ -53,22 +55,24 @@ HRESULT EnumTypeDefs (
   
 |HRESULT|Описание|  
 |-------------|-----------------|  
-|`S_OK`|`EnumTypeDefs`успешно возвращено.|  
+|`S_OK`|`EnumTypeDefs` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTypeDefs` равно нулю.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Маркер TypeDef представляет тип, например класс или интерфейс, а также любой тип, добавленный с помощью механизма расширяемости.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

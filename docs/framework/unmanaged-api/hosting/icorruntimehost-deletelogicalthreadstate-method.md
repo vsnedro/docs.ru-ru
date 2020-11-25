@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 34ffc4a6-6553-43df-9b43-779effb67e2c
 topic_type:
 - apiref
-ms.openlocfilehash: 13b0cdb5f1bd90d04ff52042de892e3defc5ff84
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 113931b44ebddfde37b0fb747b3df4e0e089cbf1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762283"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720689"
 ---
 # <a name="icorruntimehostdeletelogicalthreadstate-method"></a>Метод ICorRuntimeHost::DeleteLogicalThreadState
+
 Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -32,14 +33,15 @@ HRESULT DeleteLogicalThreadState ( );
 ```  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

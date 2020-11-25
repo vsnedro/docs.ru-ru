@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
 topic_type:
 - apiref
-ms.openlocfilehash: 2e7ed4e1529104db30b0b06665f74342d9ca9a01
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: e41be6407076a2609a83a5be3b0c42d28914ec38
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447240"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720346"
 ---
 # <a name="getpublickeytoken-method"></a>Метод GetPublicKeyToken
+
 Извлекает токен открытого ключа для данного ключа или контейнера ключей.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetPublicKeyToken(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pszKeyFile`  
  Имя файла ключа.  
   
@@ -46,15 +48,17 @@ HRESULT GetPublicKeyToken(
  Адрес, по которому должен храниться токен ключа.  
   
  `pcbPublicKeyToken`  
- Задает размер (в байтах) буфера, указанного `pvPublicKeyToken`. После возврата содержит фактическое число используемых байтов.  
+ Задает размер буфера (в байтах), указанного в параметре `pvPublicKeyToken` . После возврата содержит фактическое число используемых байтов.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Возвращает S_OK, если метод завершается с ошибкой.  
   
 ## <a name="requirements"></a>Требования  
+
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

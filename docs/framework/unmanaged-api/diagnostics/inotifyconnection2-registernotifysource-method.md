@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2632da80-6e4b-4429-8dee-b382745a5f81
 topic_type:
 - apiref
-ms.openlocfilehash: b7fa777466e2c7edd7b3110dd91e776785c63c58
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 1286dd970e437af0a8b607ed050ab4838f73a41f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442076"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720052"
 ---
 # <a name="inotifyconnection2registernotifysource-method"></a>Метод INotifyConnection2::RegisterNotifySource
+
 Устанавливает указанный источник уведомления.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT RegisterNotifySource
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `in_pNotifySource`  
  окне Указывает объект, который будет использоваться в качестве источника уведомления.  
   
@@ -43,12 +45,14 @@ HRESULT RegisterNotifySource
  заполняет Получает объект, который будет использоваться в качестве приемника уведомлений.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс INotifyConnection2](inotifyconnection2-interface.md)
 - [Интерфейс INotifySource2](inotifysource2-interface.md)

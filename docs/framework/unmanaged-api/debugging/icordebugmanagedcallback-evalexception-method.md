@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d6036345-18a3-45c1-a302-b1c6f2dced9b
 topic_type:
 - apiref
-ms.openlocfilehash: 20a841006d51671a491e11c4e40287baf739d191
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 6c59ede004ce02ee3d14a448fc61d1c092bd0d61
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209829"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721274"
 ---
 # <a name="icordebugmanagedcallbackevalexception-method"></a>Метод ICorDebugManagedCallback::EvalException
+
 Уведомляет отладчик о том, что вычисление завершено с необработанным исключением.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT EvalException (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pAppDomain`  
  окне Указатель на объект ICorDebugAppDomain, представляющий домен приложения, в котором завершается вычисление.  
   
@@ -46,6 +48,7 @@ HRESULT EvalException (
  окне Указатель на объект ICorDebugEval, представляющий код, который выполнил вычисление.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -54,6 +57,6 @@ HRESULT EvalException (
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

@@ -1,6 +1,6 @@
 ---
-title: QualifierSet_Get функция (неуправляемая справка API)
-description: Функция QualifierSet_Get получает названный квалификатор.
+title: Функция QualifierSet_Get (Справочник по неуправляемым интерфейсам API)
+description: Функция QualifierSet_Get Возвращает именованный квалификатор.
 ms.date: 11/06/2017
 api_name:
 - QualifierSet_Get
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - QualifierSet_Get function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 2f4e2d4518e01f3415b8f17ce5778dd98b2a45c3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fd096287b85b4a51a8cae85dddcca95cc1a8dbae
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174892"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721144"
 ---
 # <a name="qualifierset_get-function"></a>Функция QualifierSet_Get
+
 Получает указанный именованный квалификатор.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -41,38 +42,39 @@ HRESULT QualifierSet_Get (
 
 ## <a name="parameters"></a>Параметры
 
-`vFunc`(в) Этот параметр не используется.
+`vFunc` окне Этот параметр не используется.
 
-`ptr`(в) Указатель на экземпляр [IWbemqualifierSet.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset)
+`ptr` окне Указатель на экземпляр [ивбемкуалифиерсет](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) .
 
-`wszName`(в) Имя квалификатора, значение которого запрашивается.
+`wszName` окне Имя квалификатора, значение которого запрашивается.
 
-`lFlags`(в) Защищены. Этот параметр должен быть 0.
+`lFlags` окне Процессу. Этот параметр должен иметь значение 0.
 
-`pVal`(ваут) В случае успеха правильный тип и значение для квалификатора. Если функция выходит `VARIANT` из строя, указанная `pVal` не изменяется. Если этот `null`параметр, параметр игнорируется.
+`pVal` заполняет При успешном выполнении, правильный тип и значение для квалификатора. Если функция завершается ошибкой, то, на `VARIANT` которую указывает, `pVal` не изменяется. Если этот параметр имеет значение `null` , параметр игнорируется.
 
-`plFlavor`(ваут) Указатель на LONG, который получает квалификатор вкусбитые биты для запрошенного квалификатора. Если информация о вкусе не `null`желательна, этот параметр может быть.
+`plFlavor` заполняет Указатель на значение типа LONG, которое получает биты флагов для запрошенного описателя. Если сведения о разновидностях не нужны, этот параметр может иметь значение `null` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Следующие значения, возвращенные этой функцией, определяются в файле заголовка *WbemCli.h* или вы можете определить их как константы в коде:
+Следующие значения, возвращаемые этой функцией, определены в файле заголовка *вбемкли. h* , или их можно определить как константы в коде:
 
-|Постоянно  |Значение  |Описание  |
+|Константа  |Значение  |Описание  |
 |---------|---------|---------|
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Недействительный параметр. |
 |`WBEM_E_NOT_FOUND` | 0x80041002 | Указанный квалификатор не существует. |
-|`WBEM_S_NO_ERROR` | 0 | Вызов функции был успешным.  |
+|`WBEM_S_NO_ERROR` | 0 | Вызов функции выполнен успешно.  |
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция обертывает вызов [iWbemqualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) метод.
+Эта функция заключает в оболочку вызов метода [ивбемкуалифиерсет:: Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) .
 
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
- **Заголовок:** WMINet_Utils.idl  
+ **Заголовок:** WMINet_Utils. idl  
   
- **Версии платформы .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

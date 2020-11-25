@@ -14,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
 topic_type:
 - apiref
-ms.openlocfilehash: 78e667acf1573769a1a67b4c964d7801f11838fe
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 02facbb0ff1c0f8978d4f4f720ab370f70f07fe2
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805131"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721690"
 ---
 # <a name="igcthreadcontrol-interface"></a>Интерфейс IGCThreadControl
+
 Предоставляет методы для участия в планировании потоков, которые в противном случае были бы заблокированы для сборки мусора.  
   
 ## <a name="methods"></a>Методы  
@@ -33,14 +34,15 @@ ms.locfileid: "83805131"
 |[Метод ThreadIsBlockingForSuspension](igcthreadcontrol-threadisblockingforsuspension-method.md)|Уведомляет узел о том, что поток, выполняющий вызов, будет заблокирован, возможно, для сборки мусора или другой приостановки.|  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** MSCorEE. h  
   
- **Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll  
+ **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейсы размещения](hosting-interfaces.md)

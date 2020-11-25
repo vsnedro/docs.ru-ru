@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type:
 - apiref
-ms.openlocfilehash: 4a01ccd4e5cb9aadc6a693b2c6ceaff31c114bbc
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 83d3eda0f3c4619ec7a5df91d13ab9f3a58e5f01
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209894"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721352"
 ---
 # <a name="icordebuginternalframe2isclosertoleaf-method"></a>Метод ICorDebugInternalFrame2::IsCloserToLeaf
+
 Проверяет, `this` находится ли внутренний кадр ближе к конечному объекту, чем указанный объект ICorDebugFrame.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,25 +34,29 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `pFrameToCompare`  
  окне Указатель на `ICorDebugFrame` объект сравнения.  
   
  `pIsCloser`  
- [out] `true` `this`значение, если внутренний кадр находится ближе к конечному объекту, чем кадр, заданный параметром `pFrameToCompare` ; в противном случае — `false` .  
+ [out] `true` `this` значение, если внутренний кадр находится ближе к конечному объекту, чем кадр, заданный параметром `pFrameToCompare` ; в противном случае — `false` .  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.  
   
-|HRESULT|Описание|  
+|HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Сравнение успешно выполнено.|  
 |E_FAIL|Не удалось выполнить сравнение.|  
 |E_INVALIDARG|`pFrameToCompare` или `pIsCloser` равно null.|  
   
-## <a name="remarks"></a>Remarks  
- `IsCloserToLeaf`может использоваться для реализации политики для поверх внутренних кадров с другими кадрами в стеке.  
+## <a name="remarks"></a>Комментарии  
+
+ `IsCloserToLeaf` может использоваться для реализации политики для поверх внутренних кадров с другими кадрами в стеке.  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorDebug.idl, CorDebug.h  
@@ -60,7 +65,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorDebugInternalFrame2](icordebuginternalframe2-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

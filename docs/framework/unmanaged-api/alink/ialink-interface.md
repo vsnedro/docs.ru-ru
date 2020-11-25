@@ -6,17 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - IALink interface
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
-ms.openlocfilehash: 73b6bb9eac3f706df5cb1fd63b2f67c9791c8ed2
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 657c16f6e96633e568903ca4a55b4c68c1a49fa5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441816"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720325"
 ---
 # <a name="ialink-interface"></a>Интерфейс IALink
+
 Помогает при построении сборок .NET Framework. Помимо прочего, интерфейс содержит методы, которые помогают в написании манифестов сборок для многомодульных сборок, подписи сборок со строгими именами и создания модулей NETMODULE.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Метод AddFile](addfile-method.md)  
   
  [Метод AddImport](addimport-method.md)  
@@ -51,7 +53,7 @@ ms.locfileid: "74441816"
   
  [Метод GetResolutionScope](getresolutionscope-method.md)  
   
- [Метод superscope](getscope-method.md)  
+ [Метод GetScope](getscope-method.md)  
   
  [Метод GetWin32ResBlob](getwin32resblob-method.md)  
   
@@ -73,7 +75,7 @@ ms.locfileid: "74441816"
   
  [Метод SetNonAssemblyFlags](setnonassemblyflags-method.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [API ALink](index.md)
 - [Интерфейс IALink2](ialink2-interface.md)

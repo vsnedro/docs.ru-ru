@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
 topic_type:
 - apiref
-ms.openlocfilehash: ff1dabcfc366607639cd98be4392f8dd59dc83a1
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: fe2db3df688f91ec6e1aadd8cc3bb43726e5c30f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442011"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719961"
 ---
 # <a name="inotifysink2onsynccallreturn-method"></a>Метод INotifySink2::OnSyncCallReturn
+
 Вызывается при возвращении вызова.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT OnSyncCallReturn
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `in_CallID`  
  окне Идентификатор возвращаемого вызова. См. раздел [структура CALL_ID](call-id-structure.md).  
   
@@ -47,12 +49,14 @@ HRESULT OnSyncCallReturn
  окне Размер буфера вызова в байтах.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс INotifySink2](inotifysink2-interface.md)
 - [Интерфейс INotifySource2](inotifysource2-interface.md)

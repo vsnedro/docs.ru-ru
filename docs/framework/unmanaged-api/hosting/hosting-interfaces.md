@@ -6,14 +6,15 @@ helpviewer_keywords:
 - hosting interfaces [.NET Framework]
 - unmanaged interfaces [.NET Framework], hosting
 ms.assetid: cc64cb05-38da-418e-815a-daac8e8e26e5
-ms.openlocfilehash: b1459bf78276abe0daefd7a7ee814841f3c65dfb
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f82301da1813b8d50deebf4452d8c07809c186c5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550668"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721807"
 ---
 # <a name="hosting-interfaces"></a>Интерфейсы размещения
+
 В этом разделе описываются интерфейсы, которые неуправляемые узлы могут использовать для интеграции среды CLR в свои приложения.  
   
  Интерфейсы размещения .NET Framework версии 2,0 заменяют интерфейсы .NET Framework версии 1,0 и 1,1. Между двумя наборами интерфейсов существуют значительные различия. Смешивание этих параметров может привести к непредвиденному поведению и не рекомендуется.  
@@ -23,6 +24,7 @@ ms.locfileid: "90550668"
  Интерфейсы размещения .NET Framework 4 заменяют интерфейсы .NET Framework 2,0.
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Устаревшие интерфейсы размещения CLR и CoClasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Описание интерфейсов размещения, представленных в .NET Framework версиях 1,0 и 1,1.  
   
@@ -33,6 +35,7 @@ ms.locfileid: "90550668"
  Описание интерфейсов размещения, появившихся в .NET Framework 4.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Размещение коклассов](hosting-coclasses.md)  
   
  [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)  

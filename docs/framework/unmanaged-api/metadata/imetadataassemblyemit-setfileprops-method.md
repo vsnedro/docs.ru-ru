@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 85667d38-611c-45a9-938d-930ac7a7b681
 topic_type:
 - apiref
-ms.openlocfilehash: 9990daea1b097532de53684921d3f10c520a3b1a
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 9cf5f3d926c1e742dd9134e7bf292df53e1a4909
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008070"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720182"
 ---
 # <a name="imetadataassemblyemitsetfileprops-method"></a>Метод IMetaDataAssemblyEmit::SetFileProps
+
 Изменяет указанную структуру метаданных `File`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -37,6 +38,7 @@ HRESULT SetFileProps (
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `file`  
  окне Токен метаданных, указывающий `File` структуру метаданных, которую необходимо изменить.  
   
@@ -49,18 +51,20 @@ HRESULT SetFileProps (
  `dwFileFlags`  
  окне Побитовое сочетание значений [корфилефлагс](corfileflags-enumeration.md) , задающих различные атрибуты файла.  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Комментарии  
+
  Чтобы создать `File` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинефиле](imetadataassemblyemit-definefile-method.md) .  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** COR. h  
   
- **Библиотека:** Используется в качестве ресурса в MsCorEE. dll  
+ **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
  **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

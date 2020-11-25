@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
 topic_type:
 - apiref
-ms.openlocfilehash: aae03b0dc76639c50f4615d41eef73990226b5f7
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 64dd653bb0d4e383075a999e0803e4acfd0fae3d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442128"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720104"
 ---
 # <a name="idebugautoattachautoattach-method"></a>Метод IDebugAutoAttach::AutoAttach
+
 Выполняет вызванное сервером автоматическое присоединение отладчика.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -39,6 +40,7 @@ HRESULT AutoAttach
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `guidPort`  
  окне Всегда имеет значение `GUID_NULL` .  
   
@@ -55,11 +57,13 @@ HRESULT AutoAttach
  окне Строка, передаваемая командой Debug.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
+
  S_OK, если метод выполнен.  
   
 ## <a name="requirements"></a>Требования  
+
  **Заголовок:** Дбгаутоаттач. h  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IDebugAutoAttach](idebugautoattach-interface.md)

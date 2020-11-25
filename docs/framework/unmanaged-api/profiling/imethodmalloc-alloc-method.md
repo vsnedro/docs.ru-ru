@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
 topic_type:
 - apiref
-ms.openlocfilehash: a82a2150f32b1b335da083ca235ed9d2966a0b6e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 58809f12e4dd4419b754caafc3f8b883b8bc5089
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494206"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721170"
 ---
 # <a name="imethodmallocalloc-method"></a>Метод IMethodMalloc::Alloc
 
@@ -39,13 +39,14 @@ PVOID Alloc (
 `cb`\
 окне Число байтов, которое необходимо выделить для тела метода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
  Выделенная память будет начинаться с адреса, превышающего базовый адрес модуля, связанного с этим распределителем. Иными словами, каждый распределитель создается для конкретного модуля и пытается выделить память с положительным смещением от его базового адреса. Если `Alloc` не удается выделить запрошенное число байтов по адресу, превышающему базовый адрес модуля, он возвращает E_OUTOFMEMORY, независимо от фактического объема доступной памяти.
 
  `Alloc`Метод следует использовать в сочетании с методом [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) .
 
 ## <a name="requirements"></a>Требования
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
 
  **Заголовок:** CorProf.idl, CorProf.h
@@ -54,6 +55,6 @@ PVOID Alloc (
 
  **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс IMethodMalloc](imethodmalloc-interface.md)

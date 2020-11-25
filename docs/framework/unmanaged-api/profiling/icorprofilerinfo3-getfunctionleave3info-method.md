@@ -15,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: df7083d2-fd43-44c7-9ce5-912c25cef0ff
 topic_type:
 - apiref
-ms.openlocfilehash: bab52d9179d7454cab4a47e1a2bfe80a49b00c2a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f365a95b0859f4f97dab96ec85af6d7dfb96d8e5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502838"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721625"
 ---
 # <a name="icorprofilerinfo3getfunctionleave3info-method"></a>Метод ICorProfilerInfo3::GetFunctionLeave3Info
+
 Предоставляет кадр стека и возвращаемое значение функции, о которой сообщается профилировщику функцией [функции FunctionLeave3WithInfo](functionleave3withinfo-function.md) . Этот метод может быть вызван только во время обратного вызова `FunctionLeave3WithInfo`.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -36,6 +37,7 @@ HRESULT GetFunctionLeave3Info(
 ```  
   
 ## <a name="parameters"></a>Параметры  
+
  `functionId`  
  окне Возвращаемое значение `FunctionID` функции.  
   
@@ -51,6 +53,7 @@ HRESULT GetFunctionLeave3Info(
 ## <a name="remarks"></a>Remarks  
   
 ## <a name="requirements"></a>Требования  
+
  **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
   
  **Заголовок:** CorProf.idl, CorProf.h  
@@ -59,7 +62,7 @@ HRESULT GetFunctionLeave3Info(
   
  **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [FunctionEnter3WithInfo](functionenter3withinfo-function.md)
 - [FunctionLeave3WithInfo](functionleave3withinfo-function.md)
