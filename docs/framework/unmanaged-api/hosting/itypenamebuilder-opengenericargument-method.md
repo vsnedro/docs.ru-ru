@@ -15,31 +15,33 @@ helpviewer_keywords:
 ms.assetid: 476feeac-e8e9-46cf-9f8d-be103181d0ab
 topic_type:
 - apiref
-ms.openlocfilehash: 930177916030f78611873e05d605080b5bb893da
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8dea4c714380616478b62b206e7585ec14be49ca
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008655"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95732407"
 ---
-# <a name="itypenamebuilderopengenericargument-method"></a><span data-ttu-id="9fc84-102">Метод ITypeNameBuilder::OpenGenericArgument</span><span class="sxs-lookup"><span data-stu-id="9fc84-102">ITypeNameBuilder::OpenGenericArgument Method</span></span>
-<span data-ttu-id="9fc84-103">Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.</span><span class="sxs-lookup"><span data-stu-id="9fc84-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
+# <a name="itypenamebuilderopengenericargument-method"></a><span data-ttu-id="10af8-102">Метод ITypeNameBuilder::OpenGenericArgument</span><span class="sxs-lookup"><span data-stu-id="10af8-102">ITypeNameBuilder::OpenGenericArgument Method</span></span>
+
+<span data-ttu-id="10af8-103">Этот метод поддерживает инфраструктуру .NET Framework и не предназначен для использования непосредственно из программного кода.</span><span class="sxs-lookup"><span data-stu-id="10af8-103">This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</span></span>  
   
-## <a name="syntax"></a><span data-ttu-id="9fc84-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="9fc84-104">Syntax</span></span>  
+## <a name="syntax"></a><span data-ttu-id="10af8-104">Синтаксис</span><span class="sxs-lookup"><span data-stu-id="10af8-104">Syntax</span></span>  
   
 ```cpp  
 HRESULT OpenGenericArgument ( );  
 ```  
   
-## <a name="requirements"></a><span data-ttu-id="9fc84-105">Требования</span><span class="sxs-lookup"><span data-stu-id="9fc84-105">Requirements</span></span>  
- <span data-ttu-id="9fc84-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="9fc84-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
-  
- <span data-ttu-id="9fc84-107">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="9fc84-107">**Header:** MSCorEE.h</span></span>  
-  
- <span data-ttu-id="9fc84-108">**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll</span><span class="sxs-lookup"><span data-stu-id="9fc84-108">**Library:** Included as a resource in MSCorEE.dll</span></span>  
-  
- <span data-ttu-id="9fc84-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="9fc84-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="9fc84-110">См. также статью</span><span class="sxs-lookup"><span data-stu-id="9fc84-110">See also</span></span>
+## <a name="requirements"></a><span data-ttu-id="10af8-105">Требования</span><span class="sxs-lookup"><span data-stu-id="10af8-105">Requirements</span></span>  
 
-- [<span data-ttu-id="9fc84-111">Интерфейсы размещения</span><span class="sxs-lookup"><span data-stu-id="9fc84-111">Hosting Interfaces</span></span>](hosting-interfaces.md)
+ <span data-ttu-id="10af8-106">**Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="10af8-106">**Platforms:** See [System Requirements](../../get-started/system-requirements.md).</span></span>  
+  
+ <span data-ttu-id="10af8-107">**Заголовок:** MSCorEE. h</span><span class="sxs-lookup"><span data-stu-id="10af8-107">**Header:** MSCorEE.h</span></span>  
+  
+ <span data-ttu-id="10af8-108">**Библиотека:** Включается в качестве ресурса в MSCorEE.dll</span><span class="sxs-lookup"><span data-stu-id="10af8-108">**Library:** Included as a resource in MSCorEE.dll</span></span>  
+  
+ <span data-ttu-id="10af8-109">**.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span><span class="sxs-lookup"><span data-stu-id="10af8-109">**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="10af8-110">См. также раздел</span><span class="sxs-lookup"><span data-stu-id="10af8-110">See also</span></span>
+
+- [<span data-ttu-id="10af8-111">Интерфейсы размещения</span><span class="sxs-lookup"><span data-stu-id="10af8-111">Hosting Interfaces</span></span>](hosting-interfaces.md)
