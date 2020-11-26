@@ -2,14 +2,15 @@
 title: Одностороннее взаимодействие
 ms.date: 03/30/2017
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.openlocfilehash: 07fc4ecf981acbad577758c943aa22405f528a52
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7732b63cccb98ac54d99a0430dbaf0c8abfdaaa5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575256"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96245046"
 ---
 # <a name="one-way"></a>Одностороннее взаимодействие
+
 В этом образце демонстрируется контакт службы с односторонними операциями службы. Клиент не ожидает завершения операций службы, как это происходит в случае двусторонних операций службы. Этот образец основан на [Начало работы](getting-started-sample.md) и использует `wsHttpBinding` привязку. В данном образце служба представляет собой резидентное консольное приложение, позволяющее наблюдать за тем, как служба получает и обрабатывает запросы. Клиент также является консольным приложением.  
   
 > [!NOTE]

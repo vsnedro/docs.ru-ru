@@ -8,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - message security [WCF], programming overview
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-ms.openlocfilehash: a473a2bb3582274baddf7595ac396a0f833f8daf
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4ffbf6a05abd3ed9ebcea4b2e85f0dc305a4f2db
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90535902"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244773"
 ---
 # <a name="programming-wcf-security"></a>Программирование безопасности WCF
+
 В этом разделе описываются фундаментальные задачи программирования, используемые для создания безопасного Windows Communication Foundation (WCF) приложения. В этом разделе рассматриваются только проверка подлинности, конфиденциальность и целостность, называемая *безопасностью перемещения*. В этом разделе не рассматривается авторизация (Управление доступом к ресурсам или службам). сведения об авторизации см. в разделе [авторизация](authorization-in-wcf.md).  
   
 > [!NOTE]
@@ -24,6 +25,7 @@ ms.locfileid: "90535902"
  Программирование безопасности WCF основывается на трех шагах: режим безопасности, тип учетных данных клиента и значения учетных данных. Эти действия можно выполнить с помощью кода или конфигурации.  
   
 ## <a name="setting-the-security-mode"></a>Задание режима безопасности  
+
  Ниже описаны общие шаги для программирования с использованием режима безопасности в WCF.  
   
 1. Выберите одну из предопределенных привязок, отвечающих требованиям приложения. Список вариантов привязки см. в разделе привязки, [предоставляемые системой](../system-provided-bindings.md). По умолчанию практически во всех привязках включены функции безопасности. Единственным исключением является <xref:System.ServiceModel.BasicHttpBinding> класс (с использованием конфигурации, [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) ).  
@@ -55,6 +57,7 @@ ms.locfileid: "90535902"
      Безопасный сеанс создается, когда клиент и служба создают канал с использованием симметричного ключа (клиент и служба используют один и тот же ключ в течение всего диалога вплоть до его завершения).  
   
 ## <a name="setting-the-client-credential-type"></a>Задание типа учетных данных клиента  
+
  Выберите необходимый тип учетных данных клиента. Дополнительные сведения см. [в разделе Выбор типа учетных данных](selecting-a-credential-type.md). Доступны следующие типы учетных данных клиента:  
   
 - `Windows`  
@@ -92,12 +95,14 @@ ms.locfileid: "90535902"
  [!code-vb[c_WsHttpService#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#1)]  
   
 ## <a name="setting-service-credential-values"></a>Задание значений учетных данных службы  
+
  После выбора типа учетных данных необходимо задать фактические значения учетных данных, которые будут использоваться службой и клиентом. Задание учетных данных для службы осуществляется с помощью класса <xref:System.ServiceModel.Description.ServiceCredentials>. Свойство <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> класса <xref:System.ServiceModel.ServiceHostBase> возвращает эти учетные данные. Используемая привязка заключает в себе тип учетных данных службы, выбранный режим безопасности и тип учетных данных клиента. В следующем примере задается сертификат для учетных данных службы.  
   
  [!code-csharp[c_tcpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpservice/cs/source.cs#3)]
  [!code-vb[c_tcpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpservice/vb/source.vb#3)]  
   
 ## <a name="setting-client-credential-values"></a>Задание значений учетных данных клиента  
+
  Задание учетных данных для клиента осуществляется с помощью класса <xref:System.ServiceModel.Description.ClientCredentials>. Свойство <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> класса <xref:System.ServiceModel.ClientBase%601> возвращает эти учетные данные. В следующем примере задается сертификат для учетных данных клиента с использованием протокола TCP.  
   
  [!code-csharp[c_TcpClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpclient/cs/source.cs#1)]

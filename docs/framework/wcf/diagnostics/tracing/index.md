@@ -2,14 +2,15 @@
 title: Трассировка
 ms.date: 03/30/2017
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
-ms.openlocfilehash: 569a97dc21a434cd711ad4c735f828df588f3af7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 10b9be028710cdda378aeef0ca235a00aa451e08
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84578985"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96243915"
 ---
 # <a name="tracing"></a>Трассировка
+
 Windows Communication Foundation (WCF) предоставляет инструментарий приложений и диагностические данные для мониторинга сбоя и анализа. Трассировку можно использовать вместо отладчика для понимания того, как ведет себя приложение или почему оно дает сбои. Можно также устанавливать корреляцию между сбоями и обработкой, выполняемой различными компонентами, для сквозного анализа работы приложения.  
   
  WCF выводит следующие данные для диагностической трассировки:  
@@ -18,7 +19,8 @@ Windows Communication Foundation (WCF) предоставляет инструм
   
 - События ошибок Windows при сбоях возможности трассировки.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Настройка трассировки](configuring-tracing.md)  
   
  В этом разделе описывается, как настраивать трассировку на разных уровнях в соответствии с конкретными потребностями.  
@@ -39,6 +41,6 @@ Windows Communication Foundation (WCF) предоставляет инструм
   
  В этом разделе перечислены все трассировки, созданные WCF.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Программа Service Trace Viewer (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)

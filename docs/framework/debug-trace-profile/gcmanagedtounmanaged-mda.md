@@ -13,32 +13,38 @@ helpviewer_keywords:
 - threading [.NET Framework], managed debugging assistants
 - garbage collection, run-time errors
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
-ms.openlocfilehash: 76c621a1f2bb780d38228f2a84d4c77441774770
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 668b06109e59f1239cd2b3e3017aeee1916ce69e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415918"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244240"
 ---
 # <a name="gcmanagedtounmanaged-mda"></a>gcManagedToUnmanaged MDA
+
 Помощник по отладке управляемого кода (MDA) `gcManagedToUnmanaged` вызывает сбор мусора каждый раз, когда поток переходит из управляемого в неуправляемый код.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Неуправляемый пользовательский компонент вызывает нарушение прав доступа при попытке использования управляемого объекта, предоставленного для COM. COM-объект выглядит как освобожденный. Нарушение прав доступа является недетерминированным.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  Если неуправляемый компонент не является ссылкой, правильно учитывающей управляемый COM-объект, среда выполнения может собрать управляемый объект, предоставленный в COM, когда неуправляемый компонент еще содержит ссылку на объект. Среда выполнения вызывает метод <xref:System.Runtime.InteropServices.Marshal.Release%2A> во время сборки мусора, поэтому если пользовательский компонент использует этот объект до выполнения сборки мусора, то он еще не будет собираться. Это источник недетерминированности.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Включение помощника уменьшает время между тем, когда объект станет доступным для коллекции, и вызовом метода <xref:System.Runtime.InteropServices.Marshal.Release%2A>, помогая отследить, какие неуправляемые компоненты сначала пытаются получить доступ к собранному объекту.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Вызывает сборку мусора каждый раз, когда поток переходит из управляемого в неуправляемый код.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Данный MDA не дает результатов.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

@@ -13,23 +13,27 @@ helpviewer_keywords:
 - FatalExecutionEngineError MDA
 - managed debugging assistants (MDAs), fatal errors
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
-ms.openlocfilehash: 0806d2eaa1752c88bebd03304fbe5c8094416a48
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: a9347338d53755b74b3ff291f75cb6b221134130
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415931"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244279"
 ---
 # <a name="fatalexecutionengineerror-mda"></a>Помощник по отладке управляемого кода fatalExecutionEngineError
+
 Помощник по отладке управляемого кода `fatalExecutionEngineError` (MDA) активируется при обнаружении неустранимой ошибки в общеязыковой среде выполнения (CLR). В этом случае процесс завершается.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Непредвиденное завершение процесса. Другие признаки определить невозможно, поскольку сбой среды CLR может происходить по самым разным причинам.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  Неустранимое повреждение среды CLR. Чаще всего это вызвано повреждением данных, которое может быть связано с целым рядом проблем, таких как вызовы некорректных функций вызова неуправляемого кода и передача недопустимых данных в среду CLR.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Чтобы определить причины проблемы, попробуйте включить другие помощники по отладке управляемого кода. При диагностике вам могут помочь следующие помощники по отладке управляемого кода:  
   
 - [invalidOverlappedToPinvoke](invalidoverlappedtopinvoke-mda.md)  
@@ -57,12 +61,14 @@ ms.locfileid: "85415931"
 - [invalidGCHandleCookie](invalidgchandlecookie-mda.md)  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот помощник по отладке управляемого кода не оказывает влияния на поведение среды выполнения.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Адрес функции среды CLR, которая стала причиной неустранимой ошибки, идентификатор потока, в котором произошла ошибка, а также код самой ошибки.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

@@ -10,32 +10,38 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), exceptions
 - ExceptionSwallowedOnCallFromCOM MDA
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
-ms.openlocfilehash: 434f06cf953147d5c245e625db997bed6dbef700
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 11daccb4d1e757bf2fae25858d706eee5921c509
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415957"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244357"
 ---
 # <a name="exceptionswallowedoncallfromcom-mda"></a>exceptionSwallowedOnCallFromCom MDA
+
 Помощник отладки управляемого кода (MDA) `exceptionSwallowedOnCallFromCOM` активируется при возникновении исключения из кода среды CLR, вызываемого из COM посредством метода, который не имеет неуправляемого типа возвращаемого значения HRESULT.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Вызов управляемого компонента из COM возвращает значение FALSE или 0. Кроме того, если метод имеет тип возвращаемого значения void, указание на возникновение исключения во время выполнения метода может отсутствовать. В этом случае исключение будет перехвачено без предупреждения и возвращено вызывающему объекту COM.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  Возникло исключение, однако не существует приемлемого способа сообщить об этом.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Сведения приведены исключительно для справки и необязательно указывают на наличие ошибки.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR. Он только выводит данные об исключениях, перехваченных без предупреждения.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Информационное сообщение с именем метода, именем типа и указанием на исключение.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

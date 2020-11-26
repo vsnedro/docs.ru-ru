@@ -5,14 +5,15 @@ helpviewer_keywords:
 - NT Service
 - NT Service Host Sample [Windows Communication Foundation]
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
-ms.openlocfilehash: d4e034e3e18433714fcbcc3f061cb05bd8f2f441
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 305cf7897483dbc8e57217cf8098f4e790e2a4c8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552889"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244968"
 ---
 # <a name="windows-service-host"></a>Узел службы Windows
+
 В этом примере демонстрируется служба Windows Communication Foundation (WCF), размещенная в управляемой службе Windows. Управление службами Windows осуществляется с помощью приложения "службы" на **панели управления** и может быть настроено для автоматического запуска после перезагрузки системы. Этот образец состоит из клиентской программы и программы службы Windows. Служба реализуется как программа EXE и содержит свой собственный код размещения. В других средах размещения, таких как служба активации Windows (WAS) или IIS, писать код размещения необязательно.
 
 > [!NOTE]

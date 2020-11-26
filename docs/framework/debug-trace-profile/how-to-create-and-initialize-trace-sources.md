@@ -10,13 +10,15 @@ helpviewer_keywords:
 - initializing trace sources
 - configuration files [.NET Framework], trace sources
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
-ms.openlocfilehash: 55d7854bff991ba185d3f5d6e4c6e7222c9e3039
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 3c3624dce9e860a46a9c8c9e9075a03a7c47cb8d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051276"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244136"
 ---
 # <a name="how-to-create-and-initialize-trace-sources"></a>Практическое руководство. Создание и инициализация источников трассировки
+
 Класс <xref:System.Diagnostics.TraceSource> используется приложениями для создания трассировок, которые могут быть связаны с приложением. <xref:System.Diagnostics.TraceSource> предоставляет методы трассировки, позволяющие легко трассировать события, трассировать данные и выпускать информационные трассировки. Выходные данные трассировки из объектов <xref:System.Diagnostics.TraceSource> можно создавать и инициализировать с использованием или без использования файлов конфигурации. В этом разделе содержатся инструкции для обоих вариантов. Однако рекомендуется использовать файлы конфигурации для упрощения повторной настройки трассировки, создаваемой источниками трассировки во время выполнения.  
   
 ### <a name="to-create-and-initialize-a-trace-source-using-a-configuration-file"></a>Создание и инициализация источника трассировки с помощью файла конфигурации  

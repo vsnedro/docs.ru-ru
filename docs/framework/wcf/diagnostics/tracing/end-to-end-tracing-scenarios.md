@@ -2,14 +2,15 @@
 title: Сценарии сквозной трассировки
 ms.date: 03/30/2017
 ms.assetid: f83b7d53-6061-4362-a9a3-ee1daf6542be
-ms.openlocfilehash: d881a8396e21d31b2303d1bb270bed52823c8d49
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cd9be9a39ba1ebb331060231bdb481fd21a3ae6d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589257"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96243967"
 ---
 # <a name="end-to-end-tracing-scenarios"></a>Сценарии сквозной трассировки
+
 В данном разделе содержатся подразделы, в которых описываются различные сценарии использования трассировки.  
   
  Трассировка действия реализуется для сценариев "отклик-ответ", сценариев с односторонней связью и дуплексных сценариев с использованием следующего.  
@@ -22,7 +23,7 @@ ms.locfileid: "84589257"
   
 - Распространение идентификатора действия пользователя.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
   
 - [Список действий](activity-list.md)  
   
@@ -38,7 +39,7 @@ ms.locfileid: "84589257"
   
 - [COM](com.md)  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Использование трассировки для устранения неполадок приложения](using-tracing-to-troubleshoot-your-application.md)
 - [Сквозная трассировка](end-to-end-tracing.md)

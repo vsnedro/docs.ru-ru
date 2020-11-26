@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
-ms.openlocfilehash: 30910d428ddace7a5d5fc10fc0def21ea14d39c9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e0eb61e56b20eda6627030700b823042e07d10c9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556002"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244448"
 ---
 # <a name="how-to-host-a-wcf-service-in-iis"></a>Практическое руководство. Размещение службы WCF в IIS
+
 В этом разделе описаны основные шаги, необходимые для создания службы Windows Communication Foundation (WCF), размещенной в службы IIS (IIS). Предполагается, что читатель знаком со службами IIS и может использовать средство управления IIS для создания приложений служб IIS и управления такими приложениями. Дополнительные сведения о службах IIS см. в разделе [службы IIS](https://www.iis.net/). Служба WCF, работающая в среде IIS, обладает всеми преимуществами функций IIS, таких как перезапуск процессов, выключение в режиме простоя, мониторинг работоспособности процессов и активация на основе сообщений. Для реализации этого варианта размещения требуется правильно настроить службу IIS, но не требуется включать в приложение код размещения. Размещение в службах IIS возможно только при использовании транспорта HTTP.  
   
  Дополнительные сведения о взаимодействии WCF и ASP.NET см. в разделе [WCF Services and ASP.NET](wcf-services-and-aspnet.md). Дополнительные сведения о настройке безопасности см. в разделе [Безопасность](security.md).  
@@ -70,6 +71,7 @@ ms.locfileid: "90556002"
 11. Чтобы проверить правильность размещения службы, откройте экземпляр окна Internet Explorer и перейдите по URL-адресу службы: `http://localhost/IISHostedCalc/Service.svc`.  
   
 ## <a name="example"></a>Пример  
+
  Далее представлен полный код службы калькулятора, размещаемой в IIS.  
   
  [!code-csharp[C_HowTo_HostInIIS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#1)]

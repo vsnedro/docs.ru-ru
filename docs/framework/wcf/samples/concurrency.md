@@ -5,14 +5,15 @@ helpviewer_keywords:
 - service behaviors, concurency sample
 - Concurrency Sample [Windows Communication Foundation]
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
-ms.openlocfilehash: 393c8a79cb60a33203b41a0778176a4d78a9b6ee
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 69692f48cc1f45057e865a3908ddf41afc599bb1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585315"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96243263"
 ---
 # <a name="concurrency"></a>Параллелизм
+
 Образец Concurrency демонстрирует использование <xref:System.ServiceModel.ServiceBehaviorAttribute> с перечислением <xref:System.ServiceModel.ConcurrencyMode>, определяющим, будет ли экземпляр службы обрабатывать сообщения последовательно или параллельно. Образец основан на [Начало работы](getting-started-sample.md), который реализует `ICalculator` контракт службы. Этот образец определяет новый контракт, `ICalculatorConcurrency`, унаследованный от `ICalculator`, который добавляет две операции для контроля состояния параллелизма службы. Изменив параметр параллелизма, можно запустить клиент и посмотреть, как изменилось поведение.  
   
  В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  
@@ -97,7 +98,7 @@ public class CalculatorService : ICalculatorConcurrency
   
 1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Если для создания прокси-клиента используется программа Svcutil. exe, убедитесь, что включен `/async` параметр.  
+2. Если для создания прокси-клиента используется Svcutil.exe, убедитесь, что включен `/async` параметр.  
   
 3. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   

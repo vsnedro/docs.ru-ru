@@ -14,12 +14,12 @@ helpviewer_keywords:
 - display attributes for debugger
 - DebuggerBrowsableAttribute attribute
 ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
-ms.openlocfilehash: f266bf7278f472c51dd355df5ba04a123cbd7df0
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 2e556358490409a0fa7b345c4454eb43cf607e32
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415970"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244370"
 ---
 # <a name="enhancing-debugging-with-the-debugger-display-attributes"></a>Повышение эффективности отладки с помощью атрибутов просмотра отладчика
 
@@ -42,11 +42,12 @@ class MyHashtable
 Например, если в объекте C# имеется переопределенный метод `ToString()`, отладчик будет вызывать переопределенный метод и отображать возвращаемый им результат, а не имя типа `{<typeName>}.`. Таким образом, если метод `ToString()` переопределен, нет необходимости использовать <xref:System.Diagnostics.DebuggerDisplayAttribute>. Если используется и то и другое, то атрибут <xref:System.Diagnostics.DebuggerDisplayAttribute> будет иметь более высокий приоритет по отношению к переопределению `ToString()`.
 
 ## <a name="using-the-debuggerbrowsableattribute"></a>Использование атрибута DebuggerBrowsableAttribute
+
  Применяя атрибут <xref:System.Diagnostics.DebuggerBrowsableAttribute> к полю или свойству, можно указать, как они будут отображаться в окне отладчика. Конструктор этого атрибута принимает одно из значений перечисления <xref:System.Diagnostics.DebuggerBrowsableState>, которое задает одно из следующих состояний:
 
 - <xref:System.Diagnostics.DebuggerBrowsableState.Never> указывает, что член не отображается в окне данных.  Например, если применить это значение к полю <xref:System.Diagnostics.DebuggerBrowsableAttribute>, это поле будет удалено из иерархии и не будет отображаться при развертывании включающего типа путем нажатия кнопки плюса (+) для экземпляра типа.
 
-- <xref:System.Diagnostics.DebuggerBrowsableState.Collapsed> указывает, что член отображается, но по умолчанию не развернут.  Это поведение установлено по умолчанию.
+- <xref:System.Diagnostics.DebuggerBrowsableState.Collapsed> указывает, что член отображается, но по умолчанию не развернут.  Это поведение по умолчанию.
 
 - <xref:System.Diagnostics.DebuggerBrowsableState.RootHidden> указывает, что сам член не отображается, однако если это массив или коллекция, то выводятся составляющие его объекты.
 
@@ -61,6 +62,7 @@ public static string y = "Test String";
 ```
 
 ## <a name="using-the-debuggertypeproxy"></a>Использование атрибута DebuggerTypeProxy
+
  Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> позволяет существенным образом изменить представление отладки для типа, не изменяя при этом сам тип. Атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> задает прокси-тип отображения для типа, позволяя разработчику настроить представление этого типа.  Как и <xref:System.Diagnostics.DebuggerDisplayAttribute>, этот атрибут можно использовать на уровне сборки. В этом случае свойство <xref:System.Diagnostics.DebuggerTypeProxyAttribute.Target%2A> задает тип, для которого будет использоваться прокси. Этот атрибут рекомендуется использовать для частного вложенного типа, входящего в тип, к которому применен этот атрибут.  При отображении типа вычислитель выражений, поддерживающий средства просмотра типов, проверяет наличие этого атрибута. Если он найден, вычислитель выражений заменяет прокси-тип отображения на тип, к которому применен этот атрибут.
 
  Если атрибут <xref:System.Diagnostics.DebuggerTypeProxyAttribute> задан, окно переменных отладчика отображает только открытые члены прокси-типа. Закрытые члены не отображаются. При использовании атрибутов просмотра поведение окна данных не изменяется.
