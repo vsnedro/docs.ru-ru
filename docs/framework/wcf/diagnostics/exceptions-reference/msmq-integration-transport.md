@@ -2,14 +2,15 @@
 title: Транспорт интеграции с MSMQ
 ms.date: 03/30/2017
 ms.assetid: 2bf9893a-fbd1-41fc-b6de-a41a44279936
-ms.openlocfilehash: 52fd98354ded57bd7d7c075d4f08ca543760e598
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 032b6886152fb73c382fed1572e8c184a822b44f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61777368"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96248751"
 ---
 # <a name="msmq-integration-transport"></a>Транспорт интеграции с MSMQ
+
 В этом разделе перечислены все исключения, вызываемые транспортом интеграции MSMQ.  
   
 ## <a name="exception-list"></a>Список исключений  

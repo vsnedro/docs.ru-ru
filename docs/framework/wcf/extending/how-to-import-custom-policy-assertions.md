@@ -1,21 +1,22 @@
 ---
-title: Практическое руководство. Импорт утверждений пользовательской политики
+title: Практическое руководство. Импорт проверочных утверждений пользовательской политики
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
-ms.openlocfilehash: ed8aae30875e3b17f65be5857c7d93af98db9b3e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: fb5e3ba5faca1b32eef63ac174bcd7731ee50771
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185557"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96249154"
 ---
-# <a name="how-to-import-custom-policy-assertions"></a>Практическое руководство. Импорт утверждений пользовательской политики
+# <a name="how-to-import-custom-policy-assertions"></a>Практическое руководство. Импорт проверочных утверждений пользовательской политики
+
 В утверждениях политики описываются возможности и требования конечной точки службы.  Клиентские приложения могут использовать утверждения политики в метаданных службы для настройки привязки клиента или для настройки контракта службы для конечной точки службы.  
   
- Утверждения настраиваемой политики импортируются путем реализации интерфейса <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> и передачи этого объекта системе метаданных или путем регистрации типа реализации в файле конфигурации приложения.  Реализация интерфейса <xref:System.ServiceModel.Description.IPolicyImportExtension> должна обеспечивать беспараметрыный конструктор.  
+ Утверждения настраиваемой политики импортируются путем реализации интерфейса <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> и передачи этого объекта системе метаданных или путем регистрации типа реализации в файле конфигурации приложения.  Реализации <xref:System.ServiceModel.Description.IPolicyImportExtension> интерфейса должны предоставлять конструктор без параметров.  
   
 ### <a name="to-import-custom-policy-assertions"></a>Импорт утверждений настраиваемой политики  
   
@@ -25,7 +26,7 @@ ms.locfileid: "79185557"
   
 3. Путем использования файла конфигурации. См. описанные ниже действия.  
   
-4. Использование файла конфигурации с [помощью Utility Tool ServiceModel Metadata (Svcutil.exe).](../servicemodel-metadata-utility-tool-svcutil-exe.md) См. описанные ниже действия.  
+4. Использование файла конфигурации со [служебной программой метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). См. описанные ниже действия.  
   
 5. Программным путем. См. описанные ниже действия.  
   
@@ -40,11 +41,11 @@ ms.locfileid: "79185557"
   
 3. Настройте привязку или контракт, поддерживающие возможность или требование, задаваемое утверждением политики. Как правило, в утверждениях указывается, что привязка требует определенной конфигурации или определенного элемента привязки. Внесите эти изменения, обратившись к свойству <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A?displayProperty=nameWithType>. Другие утверждения требуют изменения контракта.  Обратиться к контракту и внести в него изменения можно с помощью свойства <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A?displayProperty=nameWithType>.  Обратите внимание, что импортер политики может вызываться несколько раз для одной и той же привязки и контракта, однако для разных альтернативных политик, если импортировать альтернативную политику не удается. Код должен быть устойчив к такому поведению.  
   
-4. Удалите утверждение настраиваемой политики из коллекции утверждений. Если вы не удалите утверждение Windows Communication Foundation (WCF) предполагает, что импорт политики был неудачным и не импортирует связанную привязку. Если использовался метод <xref:System.ServiceModel.Description.PolicyAssertionCollection.Remove%2A?displayProperty=nameWithType> для поиска утверждения настраиваемой политики и удаления его из коллекции за один шаг, выполнять этот шаг не требуется.  
+4. Удалите утверждение настраиваемой политики из коллекции утверждений. Если не удалить утверждение Windows Communication Foundation (WCF) не предполагает, что импорт политики завершился неудачно и не импортировал связанную привязку. Если использовался метод <xref:System.ServiceModel.Description.PolicyAssertionCollection.Remove%2A?displayProperty=nameWithType> для поиска утверждения настраиваемой политики и удаления его из коллекции за один шаг, выполнять этот шаг не требуется.  
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-using-a-configuration-file"></a>Вставка импортера настраиваемой политики в систему метаданных с помощью файла конфигурации  
   
-1. Добавьте тип импортера `<extensions>` к элементу внутри [ \<политикиИмпортери>](../../configure-apps/file-schema/wcf/policyimporters.md) элементом в файле конфигурации клиента.  
+1. Добавьте тип средства импорта в `<extensions>` элемент внутри [\<policyImporters>](../../configure-apps/file-schema/wcf/policyimporters.md) элемента в файле конфигурации клиента.  
   
      [!code-xml[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]
   
@@ -55,15 +56,15 @@ ms.locfileid: "79185557"
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-using-svcutilexe"></a>Вставка импортера настраиваемой политики в систему метаданных с помощью Svcutil.exe  
   
-1. Добавьте тип импортера `<extensions>` к элементу внутри [ \<политикиИмпортери>](../../configure-apps/file-schema/wcf/policyimporters.md) элементом в файле конфигурации Svcutil.exe.config. Также можно с помощью параметра `/svcutilConfig` дать Svcutil.exe указание загрузить типы импортеров политик, зарегистрированные в другом файле конфигурации.  
+1. Добавьте тип средства импорта в `<extensions>` элемент внутри [\<policyImporters>](../../configure-apps/file-schema/wcf/policyimporters.md) элемента в Svcutil.exe.config файле конфигурации. Также можно с помощью параметра `/svcutilConfig` дать Svcutil.exe указание загрузить типы импортеров политик, зарегистрированные в другом файле конфигурации.  
   
-2. Для импорта метаданных [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) для импорта метаданных и импортера автоматически вызывается.  
+2. Используйте [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы импортировать метаданные, а импортер вызывается автоматически.  
   
 ### <a name="to-insert-the-custom-policy-importer-into-the-metadata-system-programmatically"></a>Вставка импортера настраиваемой политики в систему метаданных программным путем  
   
 1. Добавьте импортер в свойство <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> (например, если используется класс <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>), прежде чем импортировать метаданные.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>
