@@ -6,14 +6,15 @@ helpviewer_keywords:
 - interop events [.NET Framework]
 - ETW, interop events (CLR)
 ms.assetid: eb6eac2e-45f4-4923-a32c-38f203da66df
-ms.openlocfilehash: 9dac9bc70cd070eb3e94969ce47ce24325a6f89d
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 8e92a1492d0295fb71473843752cb4c6184d3604
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904251"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242192"
 ---
 # <a name="interop-etw-events"></a>События взаимодействия (трассировка событий Windows)
+
 С помощью событий взаимодействия регистрируются сведения о создании заглушек и кэшировании MSIL.  
 
 ## <a name="ilstubgenerated-event"></a>Событие ILStubGenerated
@@ -26,7 +27,7 @@ ms.locfileid: "84904251"
   
  В таблице ниже представлены сведения о событии.  
   
-|Событие|Код события|Условие вызова|  
+|Событие|Идентификатор события|Условие вызова|  
 |-----------|--------------|-----------------|  
 |`ILStubGenerated`|88|Была создана заглушка языка MSIL.|  
   
@@ -56,7 +57,7 @@ ms.locfileid: "84904251"
   
  В таблице ниже представлены сведения о событии.  
   
-|Событие|Код события|Условие вызова|  
+|Событие|Идентификатор события|Условие вызова|  
 |-----------|--------------|-----------------|  
 |`ILStubCacheHit`|89|Обращение к кэшу MSIL.|  
   
@@ -72,6 +73,6 @@ ms.locfileid: "84904251"
 |ManagedInteropMethodSignature|win:UnicodeString|Сигнатура управляемого метода взаимодействия.|  
 |ClrInstanceID|win:UInt16|Уникальный идентификатор экземпляра CLR или CoreCLR.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События трассировки событий Windows в среде CLR](clr-etw-events.md)

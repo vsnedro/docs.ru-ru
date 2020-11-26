@@ -8,20 +8,22 @@ helpviewer_keywords:
 - UI Automation, clients for managed code
 - managed code, UI Automation clients
 ms.assetid: e1ed1197-3e9e-4e78-8845-92e82787faed
-ms.openlocfilehash: b7c3e425312652fb37ed8e2203d0a0155fea25b9
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 95ac13409156b553962aee5ea4f5ca717375c133
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163922"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241984"
 ---
 # <a name="ui-automation-clients-for-managed-code"></a>Клиенты автоматизации пользовательского интерфейса для управляемого кода
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
  В этом разделе содержатся обзоры и практические руководства, помогающие разрабатывать клиенты автоматизации пользовательского интерфейса.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Модель автоматизации пользовательского интерфейса и масштабирование экрана](ui-automation-and-screen-scaling.md)  
  [Поддержка автоматизации пользовательского интерфейса для стандартных элементов управления](ui-automation-support-for-standard-controls.md)  
  [События модели автоматизации пользовательского интерфейса для клиентов](ui-automation-events-for-clients.md)  
@@ -31,7 +33,8 @@ ms.locfileid: "87163922"
  [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)  
  [Получение элементов автоматизации пользовательского интерфейса](obtaining-ui-automation-elements.md)  
  [Проблемы потока модели автоматизация пользовательского интерфейса](ui-automation-threading-issues.md)  
- [Практические руководства](ui-automation-clients-for-managed-code-how-to-topics.md)  
+ [Инструкции](ui-automation-clients-for-managed-code-how-to-topics.md)  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.Windows.Automation>

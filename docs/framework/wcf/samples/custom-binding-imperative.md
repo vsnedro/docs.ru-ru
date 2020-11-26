@@ -2,14 +2,15 @@
 title: Императивные пользовательские привязки
 ms.date: 03/30/2017
 ms.assetid: 6e13bf96-5de0-4476-b646-5f150774418d
-ms.openlocfilehash: f7ba5c21b35d556be2c8d0817c37d98ad7d7dfcb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6be5105831fa3845db9a55a14a7ed8821dc1cbc4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594742"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241919"
 ---
 # <a name="custom-binding-imperative"></a>Императивные пользовательские привязки
+
 В примере показано, как написать императивный код для определения и использования пользовательских привязок без использования файла конфигурации или клиента, созданного Windows Communication Foundation (WCF). Этот образец объединяет возможности, предоставляемые транспортом HTTP, и канал надежного сеанса, создавая надежную привязку на основе HTTP. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора.  
   
 > [!NOTE]
@@ -80,6 +81,6 @@ Press <ENTER> to terminate client.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Binding\Custom\Imperative`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Примеры пользовательских привязок](custom-binding.md)

@@ -2,17 +2,19 @@
 title: Пользовательское составное действие, использующее собственное действие
 ms.date: 03/30/2017
 ms.assetid: ef9e739c-8a8a-4d11-9e25-cb42c62e3c76
-ms.openlocfilehash: bf2b8123619df8977b0687c72663c6b482e35654
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 82cfd8605d66e2cb489326c40f6ae3e960123788
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200879"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242244"
 ---
 # <a name="custom-composite-using-native-activity"></a>Пользовательское составное действие, использующее собственное действие
+
 В этом образце показано, как разработать действие <xref:System.Activities.NativeActivity>, которое планирует другие объекты <xref:System.Activities.Activity> для управления потоком выполнения рабочего процесса. В этом образце используются два общих потока управления, Sequence и While, для демонстрации того, как это сделать.
 
 ## <a name="sample-details"></a>Подробные сведения об образце
+
  Прежде всего об объекте `MySequence` следует отметить, что он является производным от <xref:System.Activities.NativeActivity>. <xref:System.Activities.NativeActivity> - объект <xref:System.Activities.Activity>, который предоставляет доступ ко всем возможностям среды выполнения рабочего процесса с помощью объекта <xref:System.Activities.NativeActivityContext>, передаваемого методу `Execute`.
 
  Действие `MySequence` предоставляет доступ к общедоступной коллекции объектов <xref:System.Activities.Activity>, которая заполняется разработчиком рабочего процесса. Перед выполнением рабочего процесса среда выполнения рабочего процесса вызывает метод <xref:System.Activities.Activity.CacheMetadata%2A> для каждого действия в рабочем процессе. В ходе этого процесса среда выполнения определяет связи типа «родитель-потомок» в целях управления областью определения данных и временем существования. Реализация метода по умолчанию <xref:System.Activities.Activity.CacheMetadata%2A> использует <xref:System.ComponentModel.TypeDescriptor> класс экземпляра для `MySequence` действия, чтобы добавить любое открытое свойство типа <xref:System.Activities.Activity> или <xref:System.Collections.IEnumerable> \<<xref:System.Activities.Activity>> как дочерние элементы `MySequence` действия.
@@ -25,7 +27,7 @@ ms.locfileid: "84200879"
 
  После завершения дочернего действия выполняется <xref:System.Activities.CompletionCallback>. Выполнение цикла продолжается с его верхней части. Как и метод `Execute`, обратный вызов <xref:System.Activities.CompletionCallback> принимает контекст <xref:System.Activities.NativeActivityContext>, предоставляя средству реализации доступ к среде выполнения.
 
- `MyWhile`отличается от `MySequence` в том, что он регулярно планирует один <xref:System.Activities.Activity> объект, а также использует <xref:System.Activities.Activity%601><bool \> с именем, `Condition` чтобы определить, должно ли выполняться планирование. Как и действие `MySequence`, действие `MyWhile` использует метод `InternalExecute` для централизации своей логики планирования. Он планирует `Condition` <xref:System.Activities.Activity><bool \> с <xref:System.Activities.CompletionCallback%601> \<bool> именем `OnEvaluationCompleted` . Когда выполнение `Condition` завершается, его результат становится доступным через это <xref:System.Activities.CompletionCallback> в строго типизированном параметре с именем `result` . Если значение равно `true`, действие `MyWhile` вызывает метод <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, передавая объект `Body` типа <xref:System.Activities.Activity> и метод `InternalExecute` в качестве обратного вызова <xref:System.Activities.CompletionCallback>. После завершения выполнения `Body` проверка `Condition` планируется еще раз в действии `InternalExecute`, что приводит к очередному запуску цикла. Если проверка `Condition` возвращает значение `false`, экземпляр действия `MyWhile` передает управление среде выполнения без планирования `Body`, а среда выполнения переводит действие в состояние <xref:System.Activities.ActivityInstanceState.Closed>.
+ `MyWhile` отличается от `MySequence` в том, что он регулярно планирует один <xref:System.Activities.Activity> объект, а также использует <xref:System.Activities.Activity%601><bool \> с именем, `Condition` чтобы определить, должно ли выполняться планирование. Как и действие `MySequence`, действие `MyWhile` использует метод `InternalExecute` для централизации своей логики планирования. Он планирует `Condition` <xref:System.Activities.Activity><bool \> с <xref:System.Activities.CompletionCallback%601> \<bool> именем `OnEvaluationCompleted` . Когда выполнение `Condition` завершается, его результат становится доступным через это <xref:System.Activities.CompletionCallback> в строго типизированном параметре с именем `result` . Если значение равно `true`, действие `MyWhile` вызывает метод <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, передавая объект `Body` типа <xref:System.Activities.Activity> и метод `InternalExecute` в качестве обратного вызова <xref:System.Activities.CompletionCallback>. После завершения выполнения `Body` проверка `Condition` планируется еще раз в действии `InternalExecute`, что приводит к очередному запуску цикла. Если проверка `Condition` возвращает значение `false`, экземпляр действия `MyWhile` передает управление среде выполнения без планирования `Body`, а среда выполнения переводит действие в состояние <xref:System.Activities.ActivityInstanceState.Closed>.
 
 #### <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 

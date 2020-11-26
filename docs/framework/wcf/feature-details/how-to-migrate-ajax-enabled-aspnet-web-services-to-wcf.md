@@ -2,14 +2,15 @@
 title: Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: 6f356f47922945218e02271371d9ddea36ecc5a2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 89c9601ba6afcef9733d7653564a98664a1ed70f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597011"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241906"
 ---
 # <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>Практическое руководство. Миграция веб-служб ASP.NET с поддержкой AJAX на платформу WCF
+
 В этом разделе описаны процедуры переноса базовой службы ASP.NET AJAX в эквивалентную службу Windows Communication Foundation (WCF) с поддержкой AJAX. Здесь показано, как создать функционально эквивалентную версию WCF службы ASP.NET AJAX. Затем две службы можно использовать параллельно, или службу WCF можно использовать для замены службы ASP.NET AJAX.
 
  Перенос существующей службы AJAX ASP.NET в службу WCF AJAX предоставляет следующие преимущества:
@@ -36,7 +37,7 @@ ms.locfileid: "84597011"
 
 5. В меню **Сборка** выберите пункт **построить решение**.
 
-6. В меню **Отладка** выберите пункт **Запуск без отладки**.
+6. В меню **Отладка** выберите **Запуск без отладки**.
 
 7. На созданной веб-странице выберите операцию `HelloWorld`.
 
@@ -53,7 +54,7 @@ ms.locfileid: "84597011"
 
 ### <a name="to-create-an-equivalent-wcf-ajax-service-application"></a>Создание эквивалентного приложения службы AJAX WCF
 
-1. Щелкните правой кнопкой мыши проект **асфелло** и выберите **Добавить**, затем **новый элемент**и **Служба WCF с поддержкой AJAX**.
+1. Щелкните правой кнопкой мыши проект **асфелло** и выберите **Добавить**, затем **новый элемент** и **Служба WCF с поддержкой AJAX**.
 
 2. Присвойте службе имя `WCFHello` и нажмите кнопку **Добавить**.
 
@@ -111,6 +112,7 @@ ms.locfileid: "84597011"
 11. `WCFHello.svc/HelloWorld` `Service1.aspx/HelloWorld` Конечные точки и теперь функционально эквивалентны.
 
 ## <a name="example"></a>Пример
+
  Код, получаемый в результате применения описанных в этом разделе процедур, приведен в следующем примере.
 
 ```csharp
@@ -195,7 +197,7 @@ d.Add("two", 2);
 
 - [{"Key":"one","Value":1},{"Key":"two","Value":2}] - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 
-- {"One": 1, "два": 2} с помощью ASP.NET AJAX<xref:System.Web.Script.Serialization.JavaScriptSerializer>
+- {"One": 1, "два": 2} с помощью ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
 
  Класс <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> обладает более широкими возможностями в том смысле, что он может обрабатываться словари, где тип ключа не является строковым; класс <xref:System.Web.Script.Serialization.JavaScriptSerializer> не поддерживает такой возможности. Однако последний класс лучше работает с форматом JSON.
 
@@ -204,7 +206,7 @@ d.Add("two", 2);
 |Категория различий|DataContractJsonSerializer|JavaScriptSerializer AJAX ASP.NET|
 |-----------------------------|--------------------------------|---------------------------------------|
 |Десериализация пустого буфера (new byte[0]) в <xref:System.Object> (или <xref:System.Uri>, или некоторые другие классы).|SerializationException|null|
-|Сериализация <xref:System.DBNull.Value>|{}(или {"__type": "#System"})|Null|
+|Сериализация <xref:System.DBNull.Value>|{} (или {"__type": "#System"})|NULL|
 |Сериализация закрытых членов типов [Serializable]|Сериализуются|Не сериализуются|
 |Сериализация открытых свойств типов <xref:System.Runtime.Serialization.ISerializable>|Не сериализуются|Сериализуются|
 |Расширения JSON|Удовлетворяет спецификации JSON, которая требует заключать имена членов объектов в кавычки ({"a":"hello"}).|Поддерживает имена членов объектов без кавычек ({a:"hello"}).|
@@ -212,6 +214,6 @@ d.Add("two", 2);
 |Представление словарей|Массив KeyValuePair \<K,V> обрабатывает типы ключей, которые не являются строками.|Фактические объекты JSON, но обрабатывает только ключи строковых типов|
 |Escape-символы|Всегда с escape-символом прямой косой черты (/); нельзя использовать недопустимые символы JSON без escape-символа, например "\n"|Значения DateTime с escape-символом прямой косой черты (/)|
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Использование конфигурации для добавления конечной точки ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
