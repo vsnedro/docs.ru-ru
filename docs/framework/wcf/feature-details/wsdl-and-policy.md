@@ -2,17 +2,18 @@
 title: WSDL и политика
 ms.date: 03/30/2017
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
-ms.openlocfilehash: 201920a8ebf639c74acfb20b2e990c8bbc0c5b55
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 123a878e90ee9099b009985a5e79155e8b1cd097
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600105"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238344"
 ---
 # <a name="wsdl-and-policy"></a>WSDL и политика
-В этом разделе рассматриваются Windows Communication Foundation (WCF) WSDL 1,1, WS-Policy и WS-Полициаттачмент, а также дополнительные утверждения WS-Policy и расширения WSDL 1,1, появившиеся в WCF.  
+
+В этом разделе рассматриваются Windows Communication Foundation (WCF) WSDL 1,1, WS-Policy и WS-PolicyAttachment сведения о реализации, а также дополнительные утверждения WS-Policy и расширения WSDL 1,1, появившиеся в WCF.  
   
- В WCF реализованы спецификации WS-Policy и WS-Полициаттачмент, которые передаются в W3C с ограничениями и пояснениями, описанными в этом документе.  
+ В WCF реализованы WS-Policy и WS-PolicyAttachment спецификации, переданные в W3C с ограничениями и пояснениями, описанными в этом документе.  
   
  В этом документе используются префиксы и пространства имен, приведенные в следующей таблице.  
   
@@ -28,6 +29,7 @@ ms.locfileid: "84600105"
 |cdp|`http://schemas.microsoft.com/net/2006/06/duplex`|  
   
 ## <a name="wcf-wsdl11-extensions"></a>Расширения WCF WSDL1.1  
+
  WCF использует следующие расширения WSDL 1.1 для описания требований к сеансу контракта.  
   
  wsdl:portType/wsdl:operation/@msc:isInitiating  
@@ -40,6 +42,7 @@ ms.locfileid: "84600105"
  xs:boolean, показывает, что этот контракт требует установления сеанса.  
   
 ### <a name="soap-1x-http-binding-transport-uris"></a>Универсальные коды ресурса (URI) транспорта привязки SOAP 1.x HTTP  
+
  WCF использует следующие URI для указания транспортов, которые будут использоваться для элементов расширения привязки WSDL 1,1, SOAP 1,1 и SOAP 1,2.  
   
 |Транспорт|URI|  
@@ -50,6 +53,7 @@ ms.locfileid: "84600105"
 |Именованные каналы|`http://schemas.microsoft.com/soap/named-pipe`|  
   
 ## <a name="policy-assertions-implemented-by-wcf"></a>Утверждения политики, реализуемые WCF  
+
  В дополнение к утверждениям политики, появившимся в спецификациях веб-служб (WS-*) и упомянутых в других разделах этого документа, в WCF реализуются следующие утверждения политики.  
   
 |Утверждение политики|Субъект политики|Описание|  
@@ -72,7 +76,7 @@ ms.locfileid: "84600105"
 |mssp:MustNotSendCancel|вложена|Задает требование о том, что сообщения запроса маркера безопасности (RST) [WS-Trust] с использованием привязки Cancel [WS-Trust, WS-SC] не должны отправляться издателю заданного SecurityContextToken. Если присутствует это утверждение, такие сообщения запроса не должны отправляться издателю. Если это утверждение отсутствует, такие сообщения запроса могут отправляться издателю.|  
 |mssp:RequireClientCertificate|вложена|Этот необязательный элемент задает требование о том, что сертификат клиента должен предоставляться как часть протокола TLSNEGO. Если это утверждение присутствует, сертификат клиента должен быть предоставлен. Если это утверждение отсутствует, сертификат клиента предоставляться не должен. Это утверждение не должно использоваться за пределами mssp:SslContextToken.|  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Пользовательская публикация WSDL](../samples/custom-wsdl-publication.md)
 - [Практическое руководство. Экспорт пользовательской информации WSDL](../extending/how-to-export-custom-wsdl.md)

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-ms.openlocfilehash: bbe99b133e7edda191d17e9fe8a1dea89d3f0eb7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 521b2a887792d41dd28342ca4bfe7be71ceba4b7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556529"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96237382"
 ---
 # <a name="message-security-with-mutual-certificates"></a>Безопасность сообщений с использованием взаимных сертификатов
+
 В следующем сценарии показана служба Windows Communication Foundation (WCF) и клиент защищены с помощью режима безопасности сообщений. Проверка подлинности клиента и службы выполняется с помощью сертификатов.  
   
  Данный сценарий поддерживает возможность взаимодействия, поскольку в нем используется WS-Security с профилем маркера сертификата X.509.  
@@ -33,19 +34,22 @@ ms.locfileid: "90556529"
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономную службу, используя код без конфигурации.  
   
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано, как создать конечную точку службы, которая использует безопасность сообщений. Служба требует прохождения проверки подлинности сертификата.  
   
  [!code-csharp[C_SecurityScenarios#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#13)]
  [!code-vb[C_SecurityScenarios#13](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#13)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Вместо кода для создания той же службы можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -91,7 +95,8 @@ ms.locfileid: "90556529"
 ```  
   
 ## <a name="client"></a>Клиент  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
@@ -101,12 +106,14 @@ ms.locfileid: "90556529"
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### <a name="code"></a>Код  
+
  Следующий код служит для создания клиента. Режим безопасности установлен в Message, и типу учетных данных клиента присвоено значение Certificate.  
   
  [!code-csharp[C_SecurityScenarios#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#20)]
  [!code-vb[C_SecurityScenarios#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#20)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Следующий код служит для настройки клиента. Сертификат клиента должен быть указан с помощью [\<clientCertificate>](../../configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md) . Кроме того, сертификат службы указывается с помощью [\<defaultCertificate>](../../configure-apps/file-schema/wcf/defaultcertificate-element.md) .  
   
 ```xml  

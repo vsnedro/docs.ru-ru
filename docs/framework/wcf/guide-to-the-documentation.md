@@ -5,14 +5,15 @@ helpviewer_keywords:
 - WCF [WCF], documentation
 - Windows Communication Foundation [WCF], documentation
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
-ms.openlocfilehash: 705e571e11fa7c8276fcb48d15ed0160fbda2bc5
-ms.sourcegitcommit: 44a7cd8687f227fc6db3211ccf4783dc20235e51
+ms.openlocfilehash: 10a4fe88c9d49d49338776db83abc1201ada8a95
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77628765"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238149"
 ---
 # <a name="guide-to-the-documentation"></a>Руководство по работе с документацией
+
 Здесь приведены рекомендации по использованию документации по Windows Communication Foundation (WCF). Документы, на которые указывают ссылки - это рекомендуемые отправные точки, сгруппированные по интересам и уровням подготовки.  
   
 ## <a name="new-to-windows-communication-foundation-programming"></a>Новичкам в программировании на основе Windows Communication Foundation  
@@ -38,6 +39,7 @@ ms.locfileid: "77628765"
 - Настройка с помощью XML-файлов является основным способом программирования служб и клиентов WCF. Справочную документацию по XML-элементам, используемым в файлах конфигурации, см. в разделе [Схема конфигурации WCF](../configure-apps/file-schema/wcf/index.md).  
   
 ## <a name="troubleshooting"></a>Устранение неполадок  
+
  Сведения об устранении распространенных проблем WCF см. в разделе [Краткое руководство по устранению неполадок WCF](wcf-troubleshooting-quickstart.md).  
   
 ## <a name="using-windows-communication-foundation-with-other-technologies"></a>Использование Windows Communication Foundation в сочетании с другими технологиями  
@@ -57,11 +59,12 @@ ms.locfileid: "77628765"
 - Чтобы использовать WCF для использования службы расширений веб-служб (WSE) 3,0, см. раздел [как получить доступ к службе wse 3,0](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md).  
   
 ## <a name="ws--protocols-supported-in-windows-communication-foundation"></a>Протоколы WS-*, поддерживаемые Windows Communication Foundation  
- Список протоколов, поддерживаемых в привязках, предоставляемых системой, см. в разделе [Протоколы веб-служб, поддерживаемые привязками взаимодействия, предоставляемыми системой](./feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md). Список привязок, предоставляемых системой, см. в разделе [привязки, предоставляемые системой](system-provided-bindings.md).  
-  
-## <a name="see-also"></a>См. также раздел
 
-- [Примеры Windows Communication Foundation](./samples/index.md)
-- [Концептуальный обзор](conceptual-overview.md)
+ Список протоколов, поддерживаемых в привязках, предоставляемых системой, см. в разделе [Протоколы веб-служб, поддерживаемые System-Provided привязками взаимозаменяемости](./feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md). Список привязок, предоставляемых системой, см. в разделе [привязки, предоставляемые системой](system-provided-bindings.md).  
+  
+## <a name="see-also"></a>См. также
+
+- [Примеры Windows Communication Foundation](./samples/index.md)
+- [Общие сведения об основных понятиях](conceptual-overview.md)
 - [Правила и рекомендации](guidelines-and-best-practices.md)
 - [Создание клиентов](building-clients.md)

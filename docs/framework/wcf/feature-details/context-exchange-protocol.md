@@ -2,14 +2,15 @@
 title: Протокол обмена контекстом
 ms.date: 03/30/2017
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4
-ms.openlocfilehash: 86d2a19b086fbd5d6be6f1a084bfd7aaace0e250
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ba613a2d12843ad00034057f8bbf08d5357d7f04
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597440"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96237824"
 ---
 # <a name="context-exchange-protocol"></a>Протокол обмена контекстом
+
 В этом разделе описывается протокол обмена контекстом, представленный в выпуске Windows Communication Foundation (WCF) .NET Framework версии 3,5. Этот протокол позволяет клиентскому каналу принимать контекст, предоставленный службой, и применять его ко всем последующим запросам, поступающим в эту службу через тот же экземпляр клиентского канала. Для распространения контекста между сервером и клиентом реализация протокола обмена контекстом может использовать один из двух механизмов: файлы cookie HTTP или заголовок SOAP.  
   
  Протокол обмена контекстом реализуется на уровне пользовательских каналов. Канал передает контекст на уровень приложения и обратно с помощью свойства <xref:System.ServiceModel.Channels.ContextMessageProperty>. Для передачи данных между конечными точками значение контекста либо сериализуется в качестве заголовка SOAP на уровне канала, либо преобразуется в свойства сообщения, представляющие HTTP-запрос и ответ. В последнем случае предполагается, что один из используемых уровней канала преобразует свойства сообщений HTTP-запроса и ответа в файлы cookie HTTP и обратно соответственно. Выбор механизма обмена контекстом осуществляется с помощью свойства <xref:System.ServiceModel.Channels.ContextExchangeMechanism> в элементе привязки <xref:System.ServiceModel.Channels.ContextBindingElement>. Допустимые значения: `HttpCookie` или `SoapHeader`.  
@@ -17,6 +18,7 @@ ms.locfileid: "84597440"
  На стороне клиента экземпляр канала может работать в двух режимах на основе параметров в свойстве канала <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A>.  
   
 ## <a name="mode-1-channel-context-management"></a>Режим 1: управление контекстом канала  
+
  Этот режим используется по умолчанию, если параметру <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> задано значение `true`. В этом режиме канал контекста управляет контекстом и кэширует его в течение времени его существования. Контекст может быть извлечен из канала с помощью свойства канала `IContextManager` вызовом метода `GetContext`. Можно также заранее инициализировать канал с конкретным контекстом до его открытия вызовом метода `SetContext` для свойства канала. Если канал инициализирован с контекстом, его сброс невозможен.  
   
  В этом режиме перечисленное ниже остается неизменным.  
@@ -33,6 +35,7 @@ ms.locfileid: "84597440"
 - Свойство <xref:System.ServiceModel.Channels.ContextMessageProperty> для входящего сообщения всегда null.  
   
 ## <a name="mode-2-application-context-management"></a>Режим 2: управление контекстом приложения  
+
  Этот режим используется, если свойству <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> присвоено значение `false`. В этом режиме канал контекста не управляет контекстом. Ответственность за извлечение, обработку и применение контекста с использованием свойства <xref:System.ServiceModel.Channels.ContextMessageProperty> возлагается на приложение. Любая попытка вызова метода `GetContext` или `SetContext` приводит к возникновению исключения <xref:System.InvalidOperationException>.  
   
  Независимо от выбранного режима работы фабрика клиентских каналов поддерживает шаблоны обмена сообщениями <xref:System.ServiceModel.Channels.IRequestChannel>, <xref:System.ServiceModel.Channels.IRequestSessionChannel> и <xref:System.ServiceModel.Channels.IDuplexSessionChannel>  
@@ -67,6 +70,6 @@ ms.locfileid: "84597440"
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Руководство по взаимодействию по протоколам веб-служб](web-services-protocols-interoperability-guide.md)

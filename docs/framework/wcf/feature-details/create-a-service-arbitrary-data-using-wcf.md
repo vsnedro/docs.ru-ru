@@ -2,14 +2,15 @@
 title: Практическое руководство. Как создать службу, принимающую произвольные данные, с использованием модели программирования WCF REST
 ms.date: 03/30/2017
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-ms.openlocfilehash: d908651f7815c102b45ea106f5bec4c07d869950
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9c9899705861cc1cf2cda2559c30a0a60d8cc635
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601339"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96237837"
 ---
 # <a name="how-to-create-a-service-that-accepts-arbitrary-data-using-the-wcf-rest-programming-model"></a>Практическое руководство. Как создать службу, принимающую произвольные данные, с использованием модели программирования WCF REST
+
 Иногда разработчики должны полностью управлять тем, как данные возвращаются из операции службы. Это происходит, когда операция службы должна возвращать данные в формате, не поддерживаемом Бивкф. В этом разделе обсуждается использование модели программирования WCF RESTFUL для создания службы, которая получает произвольные данные.  
   
 ### <a name="to-implement-the-service-contract"></a>Реализация контракта службы  
@@ -124,6 +125,7 @@ ms.locfileid: "84601339"
     ```  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный код этого примера.  
   
 ```csharp  
@@ -193,7 +195,7 @@ namespace ReceiveRawData
   
 - При компиляции этого кода задайте ссылки на файлы System.ServiceModel.dll и System.ServiceModel.Web.dll.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [UriTemplate и UriTemplateTable](uritemplate-and-uritemplatetable.md)
 - [Модель веб-программирования HTTP WCF](wcf-web-http-programming-model.md)

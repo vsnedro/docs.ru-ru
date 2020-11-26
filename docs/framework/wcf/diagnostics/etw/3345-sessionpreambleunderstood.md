@@ -2,27 +2,30 @@
 title: 3345 - SessionPreambleUnderstood
 ms.date: 03/30/2017
 ms.assetid: e8e9fcda-7dbc-4670-bb47-b365219f3046
-ms.openlocfilehash: 42e37edeace9853330c89deffb472e2c7f438c9b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 59cb8dd642225f0451c6c5dbe488ed385871fb97
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61971513"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96237213"
 ---
 # <a name="3345---sessionpreambleunderstood"></a>3345 - SessionPreambleUnderstood
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|3345|  
-|Ключевые слова|Канал|  
-|Уровень|Verbose|  
+|Keywords|Канал|  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Это событие отправляется, если начальная часть сеанса NetTcp была правильно распознана.  
   
 ## <a name="message"></a>Сообщение  
+
  Начальная часть сеанса для «%1» распознана.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее

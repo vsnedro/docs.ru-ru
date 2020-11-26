@@ -2,27 +2,30 @@
 title: 514 - WebHostRequestStop
 ms.date: 03/30/2017
 ms.assetid: c5858bf6-3330-4f2a-9907-a99692fa8817
-ms.openlocfilehash: c5f29851cf1e3b7607eaafc411e7a221273bcb3d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d2f08ff003fe92caa6d09ba61cac18c7a869e45c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61762688"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238357"
 ---
 # <a name="514---webhostrequeststop"></a>514 - WebHostRequestStop
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|514|  
-|Ключевые слова|WebHost|  
-|Уровень|Сведения|  
+|Keywords|WebHost|  
+|Level|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Это событие создается по окончании WebHostRequest.  
   
 ## <a name="message"></a>Сообщение  
+
  Остановка WebHostRequest.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее

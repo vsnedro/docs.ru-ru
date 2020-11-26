@@ -2,24 +2,26 @@
 title: WebHostHttpError
 ms.date: 03/30/2017
 ms.assetid: dff35e7e-5571-463d-abcf-7e048381f91f
-ms.openlocfilehash: 2178731b6b2fa76efa471b3f2d6d8363f04d9d38
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 895879513711c3e1ef355dcc90a154c0df5bec59
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70796055"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96237005"
 ---
 # <a name="webhosthttperror"></a>WebHostHttpError
-ИД: 110  
+
+Идентификатор: 110  
   
- "Уровень серьезности" — Ошибка  
+ Важность: ошибка  
   
- Категори ServiceModel  
+ Категория: ServiceModel  
   
 ## <a name="description"></a>Описание  
+
  Данное событие указывает, что произошло исключение WebHost HTTP. В событии указаны информация об отправителе, значение HtmlErrorMessage, исключение, имя и идентификатор процесса.  
   
 ## <a name="see-also"></a>См. также
 
-- [Ведение журнала событий](index.md)
+- [Ведение журналов событий](index.md)
 - [Общие справочные сведения о событиях](events-general-reference.md)
