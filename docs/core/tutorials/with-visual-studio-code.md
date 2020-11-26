@@ -1,26 +1,26 @@
 ---
-title: Создание консольного приложения .NET Core в Visual Studio Code
-description: Узнайте, как создать консольное приложение .NET Core с помощью Visual Studio Code и .NET Core CLI.
-ms.date: 05/22/2020
-ms.openlocfilehash: e936c23d8525e42a9d2781cc680067c9da2ce42f
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+title: Создание консольного приложения .NET в Visual Studio Code
+description: Узнайте, как создать консольное приложение .NET с помощью Visual Studio Code и .NET CLI.
+ms.date: 11/17/2020
+ms.openlocfilehash: dbbdf88b0c84089249eb7e446c25eddc11543c1a
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811930"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915873"
 ---
-# <a name="tutorial-create-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Создание консольного приложения .NET Core в Visual Studio Code
+# <a name="tutorial-create-a-net-console-application-using-visual-studio-code"></a>Учебник. Создание консольного приложения .NET в Visual Studio Code
 
-В этом учебнике показано, как создать и запустить консольное приложение .NET Core с помощью Visual Studio Code и .NET Core CLI. Задачи проекта, такие как создание, компиляция и запуск проекта, выполняются с помощью .NET Core CLI, поэтому вы можете следовать этому руководству, используя при желании другой редактор кода и выполняя команды в терминале.
+В этом учебнике показано, как создать и запустить консольное приложение .NET с помощью Visual Studio Code и .NET CLI. Задачи проекта, такие как создание, компиляция и запуск проекта, выполняются с помощью .NET CLI, поэтому вы можете следовать этому руководству, используя при желании другой редактор кода и выполняя команды в терминале.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 1. Установленная платформа [Visual Studio Code](https://code.visualstudio.com/) с [расширением C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). См. сведения об [установке расширений Visual Studio Code из Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download)
+2. [Пакет SDK для .NET 5.0 или более поздней версии](https://dotnet.microsoft.com/download)
 
 ## <a name="create-the-app"></a>Создание приложения
 
-Создайте проект консольного приложения .NET Core с именем HelloWorld.
+Создайте проект консольного приложения .NET с именем HelloWorld.
 
 1. Запустите Visual Studio Code.
 
@@ -120,7 +120,7 @@ dotnet run
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве показано, как создать консольное приложение .NET Core. В следующем учебнике описывается отладка приложения.
+В этом учебнике показано, как создать консольное приложение .NET. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка консольного приложения .NET Core с помощью Visual Studio Code](debugging-with-visual-studio-code.md)
+> [Отладка консольного приложения .NET с помощью Visual Studio Code](debugging-with-visual-studio-code.md)

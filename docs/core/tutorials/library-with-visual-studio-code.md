@@ -1,24 +1,26 @@
 ---
-title: Создание библиотеки классов .NET Standard с помощью Visual Studio Code
-description: Сведения о создании библиотеки классов .NET Standard с помощью Visual Studio Code.
-ms.date: 06/08/2020
-ms.openlocfilehash: 966b9b0b48f67809e82d9133c523995cd97b6015
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+title: Создание библиотеки классов .NET с помощью Visual Studio Code
+description: Сведения о создании библиотеки классов .NET с помощью Visual Studio Code.
+ms.date: 11/18/2020
+ms.openlocfilehash: 4daa077fc54da3de2f808d831e06ee5f9bb3bde7
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495516"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94916095"
 ---
-# <a name="tutorial-create-a-net-standard-library-using-visual-studio-code"></a>Учебник. Создание библиотеки .NET Standard с помощью Visual Studio Code
+# <a name="tutorial-create-a-net-class-library-using-visual-studio-code"></a>Учебник. Создание библиотеки классов .NET с помощью Visual Studio Code
 
-В этом руководстве вы создадите простую служебную библиотеку с одним методом для обработки строк. Вы реализуете его как [метод расширения](../../csharp/programming-guide/classes-and-structs/extension-methods.md), чтобы вызывать его так же, как любой член класса <xref:System.String>.
+В этом руководстве вы создадите простую служебную библиотеку с одним методом для обработки строк.
 
-*Библиотека классов* определяет типы и методы, которые могут быть вызваны из любого приложения. Библиотеку классов, предназначенную для .NET Standard 2.0, можно вызывать из любой реализации .NET, которая поддерживает эту версию .NET Standard. Когда вы завершите создание библиотеки классов, можете распространить ее как независимый компонент или включить в состав одного или нескольких пакетов приложения.
+*Библиотека классов* определяет типы и методы, которые могут быть вызваны из любого приложения. Если библиотека предназначена для .NET Standard 2.0, она может быть вызвана любой реализацией .NET (включая .NET Framework), которая поддерживает .NET Standard 2.0. Если библиотека предназначена для .NET 5, ее можно вызвать с помощью любого приложения, предназначенного для .NET 5. В этом учебнике показано, как ориентироваться на .NET 5.
+
+После создания библиотеки классов ее можно распространить как независимый компонент или включить в состав одного или нескольких пакетов приложения.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
 1. Установленная платформа [Visual Studio Code](https://code.visualstudio.com/) с [расширением C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp). См. сведения об [установке расширений Visual Studio Code из Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download)
+2. [Пакет SDK для .NET 5.0 или более поздней версии](https://dotnet.microsoft.com/download)
 
 ## <a name="create-a-solution"></a>Создание решения
 
@@ -48,7 +50,7 @@ ms.locfileid: "89495516"
 
 ## <a name="create-a-class-library-project"></a>Создание проекта библиотеки классов
 
-Добавьте в решение новый проект библиотеки классов .NET Standard с именем "StringLibrary".
+Добавьте в решение новый проект библиотеки классов .NET с именем "StringLibrary".
 
 1. В терминале выполните следующую команду, чтобы создать проект библиотеки классов:
 
@@ -81,15 +83,15 @@ ms.locfileid: "89495516"
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Проверьте, предназначена ли библиотека для правильной версии .NET Standard. В **обозревателе** откройте файл *StringLibrary/StringLibrary.csproj*.
+1. Убедитесь, что библиотека предназначена для .NET 5. В **обозревателе** откройте файл *StringLibrary/StringLibrary.csproj*.
 
-   Элемент `TargetFramework` показывает, что проект предназначен для .NET Standard 2.0.
+   Элемент `TargetFramework` показывает, что проект предназначен для .NET 5.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>netstandard2.0</TargetFramework>
+       <TargetFramework>net5.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -116,7 +118,7 @@ ms.locfileid: "89495516"
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -208,12 +210,11 @@ ms.locfileid: "89495516"
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-* [Разработка библиотек с помощью .NET Core CLI](libraries.md)
-* [Список версий .NET Standard и поддерживаемых ими платформ](../../standard/net-standard.md)
+* [Разработка библиотек с помощью .NET CLI](libraries.md)
 
 ## <a name="next-steps"></a>Следующие шаги
 
 В этом руководстве вы создали решение, добавили проект библиотеки и добавили проект консольного приложения, использующего библиотеку. В следующем руководстве вы добавите в решение проект модульного теста.
 
 > [!div class="nextstepaction"]
-> [Тестирование библиотеки .NET Standard с помощью .NET Core и Visual Studio Code](testing-library-with-visual-studio-code.md)
+> [Тестирование библиотеки классов .NET с помощью .NET и Visual Studio Code](testing-library-with-visual-studio-code.md)

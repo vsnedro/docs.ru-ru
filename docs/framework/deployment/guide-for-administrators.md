@@ -6,12 +6,12 @@ helpviewer_keywords:
 - administrator's guide, deploying .NET Framework
 - deployment [.NET Framework], administrator's guide
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
-ms.openlocfilehash: b358f0909147e52293fd802bc98caa31b284d7b1
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 12076334d3ede0c8ab9b618ba2018f23c9fc6ae4
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558723"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817098"
 ---
 # <a name="net-framework-deployment-guide-for-administrators"></a>Руководство по развертыванию .NET Framework для администраторов
 
@@ -39,7 +39,7 @@ ms.locfileid: "90558723"
 
 После создания инфраструктуры поддержки распространяемый пакет .NET Framework можно развернуть на компьютерах сети с помощью Configuration Manager. Построение инфраструктуры включает в себя создание и определение пяти основных областей: коллекции, пакет и программа для программного обеспечения, точки распространения и развертывания.
 
-- **Коллекции** — группы ресурсов Configuration Manager, такие как пользователи, группы пользователей или компьютеры, на которых развертывается .NET Framework. Дополнительные сведения см. в статье [Общие сведения о коллекциях в System Center Configuration Manager](/configmgr/core/clients/manage/collections/introduction-to-collections) в библиотеке документации по Configuration Manager.
+- **Коллекции** — группы ресурсов Configuration Manager, такие как пользователи, группы пользователей или компьютеры, на которых развертывается .NET Framework. Дополнительные сведения см. в статье [Общие сведения о коллекциях в System Center Configuration Manager](/configmgr/core/clients/manage/collections/introduction-to-collections) в библиотеке документации по Configuration Manager.
 
 - **Пакеты и программы** обычно представляют программные приложения, которые подлежат установке на клиентском компьютере. Сюда также могут относиться отдельные файлы, обновления и даже отдельные команды. Дополнительные сведения см. в статье [Пакеты и программы в Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs) в библиотеке документации по Configuration Manager.
 
@@ -52,9 +52,9 @@ ms.locfileid: "90558723"
 
 <a name="deploying_in_a_test_environment"></a>
 
-## <a name="deploying-the-net-framework"></a>Развертывание .NET Framework
+## <a name="deploying-net-framework"></a>Развертывание .NET Framework
 
-Для развертывания автоматической установки платформы .NET Framework 4.5, при которой пользователи не участвуют в процессе установки, можно использовать Configuration Manager. Выполните следующие действия.
+Для развертывания автоматической установки платформы .NET Framework 4.5, при которой пользователи не участвуют в процессе установки, можно использовать Configuration Manager. Выполните следующие действия.
 
 1. [Создайте коллекцию](#creating_a_collection).
 
@@ -78,7 +78,7 @@ ms.locfileid: "90558723"
 
 3. На вкладке **Главная** в группе **Создать** выберите **Создать коллекцию устройств**.
 
-4. На странице**Общие** **мастера создания коллекций устройств** введите имя коллекции.
+4. На странице **Общие** **мастера создания коллекций устройств** введите имя коллекции.
 
 5. Выберите **Обзор**, чтобы определить ограничивающую коллекцию.
 
@@ -189,7 +189,7 @@ ms.locfileid: "90558723"
 9. На странице **Взаимодействие с пользователем** оставьте значения по умолчанию и нажмите кнопку **Далее**.
 
     > [!WARNING]
-    > В вашей рабочей среде могут использоваться политики, требующие выбора других параметров для расписания развертывания. Сведения об этих параметрах см. в статье [Свойства имени объявления: вкладка "Расписание"](/previous-versions/system-center/configuration-manager-2007/bb694016(v=technet.10)).
+    > В вашей рабочей среде могут использоваться политики, требующие выбора других параметров для расписания развертывания.
 
 10. На странице **Точки распространения** оставьте значения по умолчанию и нажмите кнопку **Далее**.
 
@@ -220,8 +220,6 @@ ms.locfileid: "90558723"
 **System Center 2012 Configuration Manager (точка управления, точка распространения)**
 
 - [Администрирование сайтов для System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10))
-
-- [Планирование и развертывание одного сайта Configuration Manager](/previous-versions/system-center/configuration-manager-2007/bb680961(v=technet.10))
 
 **Клиент System Center 2012 Configuration Manager для компьютеров под управлением Windows**
 

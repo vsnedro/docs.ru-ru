@@ -1,25 +1,39 @@
 ---
-title: dotnet-counters (.NET Core)
-description: Сведения о том, как установить и использовать программу командной строки dotnet-counter.
-ms.date: 02/26/2020
-ms.openlocfilehash: 7ff29ad91ad271afd35e3d38a4d748bc79ad6c03
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+title: Средство диагностики dotnet-counters — .NET CLI
+description: Узнайте, как установить и использовать средство CLI dotnet-counter для нерегламентированного мониторинга работоспособности и анализа производительности первого уровня.
+ms.date: 11/17/2020
+ms.openlocfilehash: 7dd4c06f3abe423552ba1d3eb82f6d0c35a84d0b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94507258"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822221"
 ---
-# <a name="dotnet-counters"></a>dotnet-counters
+# <a name="investigate-performance-counters-dotnet-counters"></a>Исследование счетчиков производительности (dotnet-counter)
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий
 
-## <a name="install-dotnet-counters"></a>Установка dotnet-counters
+## <a name="install"></a>Установка
 
-Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-counters) `dotnet-counters`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+Есть два способа загрузки и установки `dotnet-counters`:
 
-```dotnetcli
-dotnet tool install --global dotnet-counters
-```
+- **Средство dotnet global:**
+
+  Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-counters) `dotnet-counters`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-counters
+  ```
+
+- **Прямое скачивание:**
+
+  скачайте исполняемый файл средства, соответствующий вашей платформе:
+
+  | OS  | Платформа |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -57,14 +71,18 @@ dotnet-counters [-h|--help] [--version] <command>
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### <a name="options"></a>Параметры
 
 - **`-p|--process-id <PID>`**
 
-  Идентификатор отслеживаемого процесса.
+  Идентификатор процесса, из которого нужно получить данные счетчика.
+
+- **`-n|--name <name>`**
+
+  Имя процесса, из которого нужно получить данные счетчика.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -86,8 +104,8 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
   После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0. `dotnet-counters` запустит процесс с указанной командой и соберет запрошенные метрики. Это часто бывает полезно для сбора метрик для пути запуска приложения и может использоваться для диагностики и отслеживания проблем, происходящих незадолго до основной точки входа или вскоре после нее.
 
-> [!NOTE]
-> При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении. Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.
+  > [!NOTE]
+  > При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении. Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.
 
 ### <a name="examples"></a>Примеры
 
@@ -162,7 +180,7 @@ Microsoft.AspNetCore.Hosting
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### <a name="options"></a>Параметры
@@ -170,6 +188,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 - **`-p|--process-id <PID>`**
 
   Идентификатор отслеживаемого процесса.
+
+- **`-n|--name <name>`**
+
+  Имя отслеживаемого процесса.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -245,7 +267,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
 - Запустите `my-aspnet-server.exe` и отслеживайте число сборок, загруженных при запуске (только для .NET 5.0 или более поздних версий):
 
-  Примечание. Это работает только для приложений, использующих .NET 5.0 или более поздней версии.
+  > [!IMPORTANT]
+  > Это работает только для приложений, использующих .NET 5.0 или более поздней версии.
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
@@ -259,7 +282,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
   
 - Запустите `my-aspnet-server.exe` с `arg1` и `arg2` в качестве аргументов командной строки и отслеживайте рабочий набор и размер кучи сборки мусора при запуске (только для .NET 5.0 или более поздней версии):
 
-  Примечание. Это работает только для приложений, использующих .NET 5.0 или более поздней версии.
+  > [!IMPORTANT]
+  > Это работает только для приложений, использующих .NET 5.0 или более поздней версии.
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2

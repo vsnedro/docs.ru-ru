@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 55a52754439020bd2a925aa3e987fb4ad99c9c3d
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: ca6dab01cbd639594da0b51f145272a9a150e93c
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223998"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687757"
 ---
 # <a name="use-broadcast-variables-in-net-for-apache-spark"></a>Использование широковещательных переменных в .NET для Apache Spark
 
@@ -96,6 +96,11 @@ Func<Column, Column> udf2 = Udf<string, string>(
 // Calling udf2 works fine as expected
 df.Select(udf2(df["_1"])).Show();
 ```
+
+## <a name="faqs"></a>Часто задаваемые вопросы
+
+**Почему широковещательные переменные не работают с .NET Interactive?**  
+Причины, по которым широковещательные переменные не работают с интерактивными сценариями, обусловлены тем, что в NET Interactive каждый объект, определенный в ячейке с помощью класса отправки ячейки и поэтому не помеченный как сериализуемый, завершается с тем же исключением, как показано выше. Чтобы получить дополнительные сведения, прочитайте [эту статью](dotnet-interactive-udf-issue.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 

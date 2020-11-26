@@ -1,31 +1,33 @@
 ---
 title: Руководство по программированию на C#. Преобразование строки в число
 description: Сведения о преобразовании строки в число путем вызова методов классов Parse, TryParse или Convert при программировании на C#.
-ms.date: 02/11/2019
+ms.date: 11/20/2020
 helpviewer_keywords:
 - conversions [C#]
 - conversions [C#], string to int
 - converting strings to int [C#]
 - strings [C#], converting to int
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-ms.openlocfilehash: acaa013c89aff8dcb672a12df0c01911d8e52a1c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0a9585d05a817d09308e06558352f78a5347a8f1
+ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556197"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95099176"
 ---
 # <a name="how-to-convert-a-string-to-a-number-c-programming-guide"></a>Руководство по программированию на C#. Преобразование строки в число
 
 Вы можете преобразовывать [строку](../../language-reference/builtin-types/reference-types.md) в число с помощью вызова метода `Parse` или `TryParse`, который можно найти в различных числовых типах (`int`, `long`, `double` и т. д.), или используя методы в классе <xref:System.Convert?displayProperty=nameWithType>.  
   
- Если имеется строка, то немного эффективнее и проще вызвать метод `TryParse` (например, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A)) или метод `Parse` (например, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A)).  Использование метода <xref:System.Convert> более удобно для общих объектов, реализующих <xref:System.IConvertible>.  
+ Немного эффективнее и проще вызвать метод `TryParse` (например, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A)) или метод `Parse` (например, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A)).  Использование метода <xref:System.Convert> более удобно для общих объектов, реализующих <xref:System.IConvertible>.  
   
- Вы можете использовать методы `Parse` или `TryParse` в числовом типе, который предположительно содержит строка, таком как тип <xref:System.Int32?displayProperty=nameWithType>.  Метод <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> использует <xref:System.Int32.Parse%2A> внутри себя.  Метод `Parse` возвращает преобразованное число; метод `TryParse` возвращает значение <xref:System.Boolean>, которое указывает, успешно ли выполнено преобразование, и возвращает преобразованное число в [параметр`out`](../../language-reference/keywords/out.md). Если строка имеет недопустимый формат, `Parse` создает исключение, а `TryParse` возвращает значение `false`. В случае сбоя операции синтаксического анализа при вызове метода `Parse` вы всегда должны использовать обработку исключений, чтобы перехватить <xref:System.FormatException>.  
+ Можно использовать методы `Parse` или `TryParse` в числовом типе, который предположительно содержит строка, таком как тип <xref:System.Int32?displayProperty=nameWithType>.  Метод <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> использует <xref:System.Int32.Parse%2A> внутри себя.  Метод `Parse` возвращает преобразованное число; метод `TryParse` возвращает значение <xref:System.Boolean>, которое указывает, успешно ли выполнено преобразование, и возвращает преобразованное число в [параметр`out`](../../language-reference/keywords/out.md). Если строка имеет недопустимый формат, `Parse` создает исключение, а `TryParse` возвращает значение `false`. В случае сбоя операции синтаксического анализа при вызове метода `Parse` вы всегда должны использовать обработку исключений, чтобы перехватить <xref:System.FormatException>.  
   
 ## <a name="calling-the-parse-and-tryparse-methods"></a>Вызов методов Parse и TryParse
 
-Методы `Parse` и `TryParse` игнорируют пробелы в начале и в конце строки, но все остальные символы должны быть символами, которые образуют соответствующий числовой тип (`int`, `long`, `ulong`, `float`, `decimal` и т. д.).  Любые пробелы в строке, образующие число, приводят к ошибке.  Например, можно использовать `decimal.TryParse` для анализа "10", "10.3" или "  10  ", но этот метод нельзя использовать для анализа 10 из "10X", "1 0" (обратите внимание на внедренный пробел), "10 .3" (обратите внимание на внедренный пробел), "10e1" (здесь работает `float.TryParse`) и т. д. Кроме того, строку со значением `null` или <xref:System.String.Empty?displayProperty=nameWithType> невозможно успешно проанализировать. Вы можете проверить наличие NULL или пустой строки, прежде чем пытаться ее проанализировать, вызвав метод <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>.
+Методы `Parse` и `TryParse` игнорируют пробелы в начале и в конце строки, но все остальные символы должны быть символами, которые образуют соответствующий числовой тип (`int`, `long`, `ulong`, `float`, `decimal` и т. д.).  Любые пробелы в строке, образующие число, приводят к ошибке.  Например, можно использовать `decimal.TryParse` для анализа "10", "10.3" или "  10  ", но этот метод нельзя использовать для анализа 10 из "10X", "1 0" (обратите внимание на внедренный пробел), "10 .3" (обратите внимание на внедренный пробел), "10e1" (здесь работает `float.TryParse`) и т. д. Строку со значением `null` или <xref:System.String.Empty?displayProperty=nameWithType> невозможно успешно проанализировать. Вы можете проверить наличие NULL или пустой строки, прежде чем пытаться ее проанализировать, вызвав метод <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>.
 
 В указанном ниже примере демонстрируются успешные и неуспешные вызовы методов `Parse` и `TryParse`.  
   

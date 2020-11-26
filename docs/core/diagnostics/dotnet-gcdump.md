@@ -1,25 +1,39 @@
 ---
-title: dotnet-gcdump — .NET Core
-description: Установка и использование программы командной строки dotnet-gcdump.
-ms.date: 07/26/2020
-ms.openlocfilehash: a7b19f4d7487677b975621e7267a17894dae2e3a
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+title: Средство диагностики dotnet-gcdump — .NET CLI
+description: Узнайте, как установить и использовать средство CLI dotnet-gcdump для сбора дампов сборщика мусора активных процессов .NET с помощью .NET EventPipe.
+ms.date: 11/17/2020
+ms.openlocfilehash: 59de1845ada9e5bdd0b24bf4312517283324ce94
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656655"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826044"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>Средство анализа кучи (dotnet-gcdump)
 
 **Эта статья относится к:** ✔️ пакету SDK для .NET Core 3.1 и более поздних версий
 
-## <a name="install-dotnet-gcdump"></a>Установка dotnet-gcdump
+## <a name="install"></a>Установка
 
-Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-gcdump) `dotnet-gcdump`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+Есть два способа загрузки и установки `dotnet-gcdump`:
 
-```dotnetcli
-dotnet tool install -g dotnet-gcdump
-```
+- **Средство dotnet global:**
+
+  Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-gcdump) `dotnet-gcdump`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-gcdump
+  ```
+
+- **Прямое скачивание:**
+
+  скачайте исполняемый файл средства, соответствующий вашей платформе:
+
+  | OS  | Платформа |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [arm](https://aka.ms/dotnet-gcdump/win-arm) \| [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -29,7 +43,7 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 ## <a name="description"></a>Описание
 
-Глобальное средство `dotnet-gcdump` предоставляет способ сбора дампов сборщика мусора (GC) для активных процессов .NET. Оно использует технологию EventPipe, которая является межплатформенной альтернативой трассировки событий Windows (ETW). Дампы сборщика мусора создаются путем его запуска в целевом процессе, включения специальных событий и повторного создания графа корней объектов из потока событий. Этот процесс позволяет собирать дампы сборщика мусора во время выполнения процесса и с минимальными издержками. Эти дампы могут быть полезны в нескольких сценариях.
+Глобальное средство `dotnet-gcdump` собирает дампы сборщика мусора для активных процессов .NET с помощью [EventPipe](./eventpipe.md). Дампы сборщика мусора создаются путем его запуска в целевом процессе, включения специальных событий и повторного создания графа корней объектов из потока событий. Этот процесс позволяет собирать дампы сборщика мусора во время выполнения процесса и с минимальными издержками. Эти дампы могут быть полезны в нескольких сценариях.
 
 - Сравнение количества объектов в куче в нескольких моментах времени.
 - Анализ корней объектов (ответы на вопросы вида "что все еще содержит ссылку на этот тип?").

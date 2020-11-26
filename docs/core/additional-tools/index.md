@@ -4,12 +4,12 @@ description: Общие сведения о дополнительных инс�
 author: mlacouture
 ms.date: 02/13/2020
 ms.custom: mvc
-ms.openlocfilehash: f7bfa660f7521adf4950d5bbdd59628bb88cca4d
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: f563dff312442cbf068d52d08992621e3d6f1460
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557936"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699005"
 ---
 # <a name="net-core-additional-tools-overview"></a>Общие сведения о дополнительных инструментах .NET Core
 
@@ -46,3 +46,7 @@ WCF [dotnet-svcutil](dotnet-svcutil-guide.md) — это средство .NET,
 ## <a name="xml-serializer-generator"></a>Генератор сериализации XML
 
 Являясь аналогом [Генератора сериализации XML (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) для .NET Framework, [NuGet-пакет Microsoft.XmlSerializer.Generator](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) представляет собой решение для библиотек .NET Core и .NET Standard. Он создает сборку сериализации XML для содержащихся в сборке типов, улучшая производительность при запуске сериализации или десериализации XML для объектов этих типов с помощью <xref:System.Xml.Serialization.XmlSerializer>.
+
+## <a name="generating-self-signed-certificates"></a>Создание самозаверяющих сертификатов
+
+Для создания самозаверяющих сертификатов в сценариях разработки и тестирования вы можете использовать [dotnet dev-certs](self-signed-certificates-guide.md).

@@ -1,25 +1,25 @@
 ---
-title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
-description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
-ms.date: 06/08/2020
+title: Тестирование библиотеки классов .NET с помощью Visual Studio
+description: Узнайте, как использовать Visual Studio для создания и запуска проекта модульного теста для библиотеки классов .NET.
+ms.date: 11/18/2020
 dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 04d0120622697d1e0c84fc169dfc50951cb8aa3c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3d56627b937fa0ad5f8002f396ce617e09ce9d2c
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177297"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94916130"
 ---
-# <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Учебник. Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
+# <a name="tutorial-test-a-net-class-library-with-net-using-visual-studio"></a>Учебник. Тестирование библиотеки классов .NET с помощью .NET в Visual Studio
 
 В этом руководстве показано, как автоматизировать модульное тестирование путем добавления тестового проекта в решение.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве используется решение, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md).
+- В этом руководстве используется решение, созданное при работе со статьей [Создание библиотеки классов .NET в Visual Studio](library-with-visual-studio.md).
 
 ## <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
@@ -27,7 +27,7 @@ ms.locfileid: "91177297"
 
 1. Запустите Visual Studio.
 
-1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio](library-with-visual-studio.md).
+1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки классов .NET в Visual Studio](library-with-visual-studio.md).
 
 1. Добавьте в решение новый проект модульного теста с именем StringLibraryTest.
 
@@ -35,9 +35,11 @@ ms.locfileid: "91177297"
 
    1. На странице **Добавить новый проект** введите в поле поиска **mstest**. Выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ.
 
-   1. Выберите шаблон **Тестовый проект MSTest (.NET Core)** и нажмите кнопку **Далее**.
+   1. Выберите шаблон **Проект модульного теста** и нажмите кнопку **Далее**.
 
-   1. На странице **Настроить новый проект** введите **StringLibraryTest** в поле **Имя проекта**. Затем нажмите кнопку **Создать**.
+   1. На странице **Настроить новый проект** введите **StringLibraryTest** в поле **Имя проекта**. Нажмите кнопку **Далее**.
+
+   1. На странице **Дополнительные сведения** выберите **.NET 5.0 (текущая)** в поле **Целевая платформа**. Затем нажмите кнопку **Создать**.
 
 1. Visual Studio создаст проект и откроет файл класса в окне кода с помощью следующего кода: Если нужный язык не отображается, измените выбор языка в верхней части страницы.
 
@@ -122,21 +124,21 @@ ms.locfileid: "91177297"
 1. В строке меню выберите **Файл** > **Сохранить UnitTest1.cs как** или **Файл** > **Сохранить UnitTest1.vb как**. В диалоговом окне **Сохранить файл как** щелкните стрелку рядом с кнопкой **Сохранить** и выберите вариант **Сохранить с кодировкой**.
 
    > [!div class="mx-imgBorder"]
-   > ![Диалоговое окно "Сохранить файл как" в Visual Studio](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Диалоговое окно Сохранить файл как в Visual Studio":::
 
 1. В диалоговом окне **Подтверждение сохранения** нажмите кнопку **Да**, чтобы сохранить файл.
 
 1. В диалоговом окне **Дополнительные параметры сохранения** выберите в раскрывающемся списка **Кодировка** вариант **Юникод (UTF-8, с сигнатурой), кодовая страница 65001** и нажмите кнопку **ОК**.
 
    > [!div class="mx-imgBorder"]
-   > ![Диалоговое окно "Дополнительные параметры сохранения" в Visual Studio](./media/testing-library-with-visual-studio/advanced-save-options.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Диалоговое окно &quot;Дополнительные параметры сохранения&quot; в Visual Studio":::
 
    Если вы не сохраните исходный код в кодировке UTF8, Visual Studio может сохранить его как файл ASCII. В этом случае среде выполнения не удастся правильно раскодировать символы UTF8 за пределами стандартного диапазона ASCII, и результаты теста будут неправильными.
 
 1. В строке меню выберите **Тест** > **Выполнить все тесты**. Если окно **обозревателя тестов** не открыто, откройте его, выбрав **Тест** > **Обозреватель тестов**. В разделе **Пройденные тесты** перечислены три теста, а раздел **Сводка** содержит результат тестового запуска.
 
    > [!div class="mx-imgBorder"]
-   > ![Окно "Обозреватель тестов" с пройденными тестами](./media/testing-library-with-visual-studio/test-explorer-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Окно &quot;Обозреватель тестов&quot; с пройденными тестами":::
 
 ## <a name="handle-test-failures"></a>Обработка сбоев теста
 
@@ -158,14 +160,14 @@ ms.locfileid: "91177297"
 1. Выполните тест, последовательно выбрав в строке меню пункты **Тест** > **Выполнить все тесты**. В окне **Обозреватель тестов** будет указано, что два теста выполнены успешно, а третий завершился ошибкой.
 
    > [!div class="mx-imgBorder"]
-   > ![Окно "Обозреватель тестов" с тестами, которые завершились ошибкой](./media/testing-library-with-visual-studio/failed-test-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Окно Обозреватель тестов с тестами, которые завершились ошибкой":::
 
 1. Выберите непройденный тест `TestDoesNotStartWith`.
 
    В окне **Обозреватель тестов** появится сообщение, созданное методом утверждения "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя строки в массиве, расположенные после слова "Error", не проверялись.
 
    > [!div class="mx-imgBorder"]
-   > ![Окно "Обозреватель тестов" с сообщением о том, что утверждение IsFalse ошибочно](./media/testing-library-with-visual-studio/failed-test-detail.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Окно Обозреватель тестов с сообщением о том, что утверждение IsFalse ошибочно":::
 
 1. Удалите строку "Error", которую вы добавили на шаге 1. Еще раз запустите тест. Теперь тесты будут пройдены.
 
@@ -178,25 +180,25 @@ ms.locfileid: "91177297"
 1. В панели инструментов Visual Studio измените конфигурацию сборки с режима **Отладка** на **Выпуск**.
 
    > [!div class="mx-imgBorder"]
-   > ![Панель инструментов Visual Studio с выделенной сборкой выпуска](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Панель инструментов Visual Studio с выделенной сборкой выпуска":::
 
 1. В **обозревателе решений** щелкните проект **StringLibrary** правой кнопкой мыши и выберите в контекстном меню пункт **Сборка**, чтобы выполнить повторную компиляцию библиотеки.
 
    > [!div class="mx-imgBorder"]
-   > ![Контекстное меню проекта StringLibrary с командой сборки](./media/testing-library-with-visual-studio/build-library-context-menu.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="Контекстное меню проекта StringLibrary с командой сборки":::
 
 1. Выполните модульные тесты, выбрав в строке меню **Тест** > **Выполнить все тесты**. Все тесты будут пройдены.
 
 ## <a name="debug-tests"></a>Отладка тестов
 
-Если в качестве IDE вы используете Visual Studio, то можете следовать инструкциям из [руководства по отладке консольного приложения .NET Core с помощью Visual Studio](debugging-with-visual-studio.md), чтобы выполнить отладку кода с применением проекта модульного теста. Вместо запуска проекта приложения *ShowCase* щелкните правой кнопкой проект **StringLibraryTests** и выберите элемент **Отладка тестов** в контекстном меню.
+Если в качестве IDE вы используете Visual Studio, то можете следовать инструкциям из [руководства по отладке консольного приложения .NET с помощью Visual Studio](debugging-with-visual-studio.md), чтобы выполнить отладку кода с применением проекта модульного теста. Вместо запуска проекта приложения *ShowCase* щелкните правой кнопкой проект **StringLibraryTests** и выберите элемент **Отладка тестов** в контекстном меню.
 
 Visual Studio запускает тестовый проект с присоединенным отладчиком. Выполнение будет прервано в любой точке останова, добавленной в тестовый проект или базовый код библиотеки.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 * [Основные сведения о модульных тестах](/visualstudio/test/unit-test-basics)
-* [Модульное тестирование в .NET Core и .NET Standard](../testing/index.md)
+* [Модульное тестирование в .NET](../testing/index.md)
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -213,4 +215,4 @@ Visual Studio запускает тестовый проект с присоед
 Библиотеку не нужно распространять как пакет. Ее можно объединить с консольным приложением, где она используется. Чтобы узнать, как опубликовать консольное приложение, ознакомьтесь с предыдущим руководством в этой серии:
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core с помощью Visual Studio](publishing-with-visual-studio.md)
+> [Публикация консольного приложения .NET с помощью Visual Studio](publishing-with-visual-studio.md)

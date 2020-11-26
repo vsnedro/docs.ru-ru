@@ -4,16 +4,16 @@ description: Сведения о .NET для Apache Spark, бесплатной 
 author: mamccrea
 ms.topic: overview
 ms.date: 10/09/2020
-ms.openlocfilehash: 2c743cf7f88d857fb87aed123bd687c353fd8b84
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 533a4d3b497ad499edcf3accf250477c03f98714
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955360"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688037"
 ---
 # <a name="what-is-net-for-apache-spark"></a>Что такое .NET для Apache Spark?
 
-[Apache Spark](what-is-spark.md) — это подсистема распределенной обработки общего назначения для анализа больших наборов данных, в несколько терабайт или петабайт. .NET для Apache Spark предоставляет бесплатный, кросс-платформенный и с открытым кодом механизм поддержки .NET для популярной платформы больших данных с открытым кодом. Теперь вы можете включить возможности Apache Spark в приложения для работы с большими данными, используя привычные языки программирования.
+[Apache Spark](what-is-spark.md) — это подсистема распределенной обработки общего назначения для анализа больших наборов данных, в несколько терабайт или петабайт. .NET для Apache Spark предоставляет бесплатный, кроссплатформенный и с [открытым кодом](https://github.com/dotnet/spark) механизм поддержки .NET для популярной платформы больших данных с открытым кодом. Теперь вы можете включить возможности Apache Spark в приложения для работы с большими данными, используя привычные языки программирования.
 
 ## <a name="why-choose-net-for-apache-spark"></a>Преимущества .NET для Apache Spark
 

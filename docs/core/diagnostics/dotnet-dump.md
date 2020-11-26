@@ -1,28 +1,42 @@
 ---
-title: dotnet-dump (.NET Core)
-description: Установка и использование программы командной строки dotnet-dump.
-ms.date: 10/14/2019
-ms.openlocfilehash: e008dcfc734a8742c495ea32a7a149c9a55c54c6
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+title: Средство диагностики dotnet-dump — .NET CLI
+description: Узнайте, как установить и использовать средство CLI dotnet-dump для накопления и анализа дампов Windows и Linux без использования отладчика машинного кода.
+ms.date: 11/17/2020
+ms.openlocfilehash: ea9a70c4dc47b5006339e9a197712092eb66b241
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598106"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822208"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Программа для сбора и анализа дампов (dotnet-dump)
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 3.0 и более поздних версий
 
 > [!NOTE]
-> `dotnet-dump` не поддерживается для macOS.
+> `dotnet-dump` для macOS поддерживается только в .NET 5.0 и более поздних версиях.
 
-## <a name="install-dotnet-dump"></a>Установка dotnet-dump
+## <a name="install"></a>Установка
 
-Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-dump) `dotnet-dump`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+Есть два способа загрузки и установки `dotnet-dump`:
 
-```dotnetcli
-dotnet tool install -g dotnet-dump
-```
+- **Средство dotnet global:**
+
+  Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-dump) `dotnet-dump`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-dump
+  ```
+
+- **Прямое скачивание:**
+
+  скачайте исполняемый файл средства, соответствующий вашей платформе:
+
+  | OS  | Платформа |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [arm](https://aka.ms/dotnet-dump/win-arm) \| [arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -58,7 +72,7 @@ dotnet-dump [-h|--help] [--version] <command>
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag]
 ```
 
 ### <a name="options"></a>Параметры
@@ -69,7 +83,11 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
 - **`-p|--process-id <PID>`**
 
-  Указывает идентификатор процесса, из которого нужно собрать дамп памяти.
+  Указывает идентификатор процесса, из которого нужно собрать дамп.
+
+- **`-n|--name <name>`**
+
+  Имя процесса, из которого нужно получить дамп.
 
 - **`--type <Full|Heap|Mini>`**
 

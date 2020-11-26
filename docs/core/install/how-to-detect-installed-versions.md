@@ -6,12 +6,12 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ms.custom: updateeachrelease
 zone_pivot_groups: operating-systems-set-one
-ms.openlocfilehash: d924e5bc58052cd760f367e906666d68ab79b764
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.openlocfilehash: 39020a32cdea9b82dc9d30e62e663ebc4ee39ebb
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94507219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687446"
 ---
 # <a name="how-to-check-that-net-is-already-installed"></a>Проверка того, установлена ли платформа .NET
 
@@ -189,5 +189,5 @@ _/usr/local/share/dotnet/shared/{тип среды выполнения}/{вер
 ## <a name="next-steps"></a>Следующие шаги
 
 - [Установка среды выполнения .NET и пакета SDK для Windows](windows.md).
-- [Установка среды выполнения .NET и пакета SDK для MacOS](linux.md).
-- [Установка среды выполнения .NET и пакета SDK для Linux](macos.md).
+- [Установка среды выполнения .NET и пакета SDK для macOS](macos.md).
+- [Установка среды выполнения .NET и пакета SDK для Linux](linux.md).

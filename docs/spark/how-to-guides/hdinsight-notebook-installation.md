@@ -4,12 +4,12 @@ description: Узнайте, как установить .NET для Apache Spar
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: b5689c9ccdd13209fec33674ad8fc80dcc369660
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: e2319fec833147ce50c7b94dd8ccc84f552f20d2
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955053"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688284"
 ---
 # <a name="install-net-for-apache-spark-on-jupyter-notebooks-on-azure-hdinsight-spark-clusters"></a>Установка .NET для Apache Spark в записных книжках Jupyter в кластерах Spark Azure HDInsight
 
@@ -73,7 +73,7 @@ ms.locfileid: "91955053"
    | name | *Установка .NET для Apache Spark в интерфейс интерактивной Notebook*. |
    | URI bash-скрипта | Универсальный код ресурса (URI), по которому был отправлен файл `install-interactive-notebook.sh`. |
    | Типы узлов| Головной и рабочий. |
-   | Параметры | Версия .NET для Apache Spark. Вы можете ознакомиться с [выпусками .NET для Apache Spark](https://github.com/dotnet/spark/releases). Например, если вы хотите установить Sparkdotnet версии 0.6.0, параметры будут следующими: `0.6.0`.
+   | Параметры | Версия .NET для Apache Spark. Вы можете ознакомиться с [выпусками .NET для Apache Spark](https://github.com/dotnet/spark/releases). Например, если вы хотите установить Sparkdotnet версии 1.0.0, параметры будут следующими: `1.0.0`.
 
    Перейдите к следующему шагу, когда рядом с состоянием действия скрипта отображаются зеленые отметки.
 
@@ -101,7 +101,7 @@ ms.locfileid: "91955053"
 
    * **Свойство 2**. Используйте версию .NET для Apache Spark, которая была включена в предыдущее действие скрипта.
        * Ключ:&ensp;&ensp;`spark.dotnet.packages`.
-       * Значение: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
+       * Значение: `["nuget: Microsoft.Spark, 1.0.0", "nuget: Microsoft.Spark.Extensions.Delta, 1.0.0"]`
 
    * **Свойство 3**.
        * Ключ:&ensp;&ensp;`spark.dotnet.interpreter`.

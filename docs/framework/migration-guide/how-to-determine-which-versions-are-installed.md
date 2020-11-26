@@ -9,12 +9,12 @@ helpviewer_keywords:
 - versions, determining for .NET Framework
 - .NET Framework, determining version
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-ms.openlocfilehash: 79c60c8dbc29d8985f3cfb2ffc2436539155c555
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: fe28a4bf4a5432d6e33b7ad3238c1d7c0d4e7a84
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440149"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831368"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>Практическое руководство. Определение установленных версий платформы .NET Framework
 
@@ -60,7 +60,7 @@ ms.locfileid: "94440149"
 | .NET Framework 4.7     | Windows 10 Creators Update: 460798<br />Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 460805 |
 | .NET Framework 4.7.1   | Windows 10 Fall Creators Update и Windows Server версии 1709: 461308<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 461310 |
 | .NET Framework 4.7.2   | Windows 10 за апрель 2018 г. Update и Windows Server версии 1803: 461808<br/>Все остальные операционные системы, кроме Windows 10 с обновлением за апрель 2018 г. и Windows Server версии 1803: 461814 |
-| .NET Framework 4.8     | Обновление Windows 10 за май 2019 года и обновление Windows 10 за ноябрь 2019 года: 528040<br/>Обновление Windows 10 за май 2020 г.: 528372<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 528049 |
+| .NET Framework 4.8     | Обновление Windows 10 за май 2019 года и обновление Windows 10 за ноябрь 2019 года: 528040<br/>Обновление Windows 10 за май 2020 года и обновление Windows 10 за октябрь 2020 года: 528372<br/>Все остальные версии операционной системы Windows (включая другие операционные системы Windows 10): 528049 |
 
 ### <a name="minimum-version"></a>Минимальная версия
 

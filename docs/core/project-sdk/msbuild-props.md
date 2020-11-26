@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 463e2a163e6a20f5631b0ab82462614834156ae3
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: ecd1cf405f661d0025553974f92fa1401b13220d
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93063232"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687475"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -123,7 +123,7 @@ ms.locfileid: "93063232"
 
 ### <a name="useapphost"></a>UseAppHost
 
-Свойство `UseAppHost` было представлено в пакете SDK для .NET версии 2.1.400. Оно контролирует создание собственного исполняемого файла для развертывания. Этот файл требуется для автономных развертываний.
+Свойство `UseAppHost` контролирует создание собственного исполняемого файла для развертывания. Этот файл требуется для автономных развертываний.
 
 В .NET Core 3.0 и более поздних версиях зависимый от платформы исполняемый файл создается по умолчанию. Задайте свойству `UseAppHost` значение `false`, чтобы отключить создание исполняемого файла.
 
@@ -142,7 +142,7 @@ ms.locfileid: "93063232"
 
 ### <a name="embeddedresourceusedependentuponconvention"></a>EmbeddedResourceUseDependentUponConvention
 
-Свойство `EmbeddedResourceUseDependentUponConvention` определяет, будет ли использоваться информация о типах в исходных файлах, расположенных в одной папке с файлами ресурсов, для создания имен файлов манифеста этих ресурсов. Например, если *Form1.resx* находится в той же папке, что и *Form1.cs* , а `EmbeddedResourceUseDependentUponConvention` имеет значение `true`, то созданному файл *.resources* присваивается имя на основе имени первого типа, определенного в файле *Form1.cs*. Например, если первым типом в файле *Form1.cs* является `MyNamespace.Form1`, созданному файлу присваивается имя *MyNamespace.Form1.resources*.
+Свойство `EmbeddedResourceUseDependentUponConvention` определяет, будет ли использоваться информация о типах в исходных файлах, расположенных в одной папке с файлами ресурсов, для создания имен файлов манифеста этих ресурсов. Например, если *Form1.resx* находится в той же папке, что и *Form1.cs*, а `EmbeddedResourceUseDependentUponConvention` имеет значение `true`, то созданному файл *.resources* присваивается имя на основе имени первого типа, определенного в файле *Form1.cs*. Например, если первым типом в файле *Form1.cs* является `MyNamespace.Form1`, созданному файлу присваивается имя *MyNamespace.Form1.resources*.
 
 > [!NOTE]
 > Если для `EmbeddedResource` элемента заданы метаданные `LogicalName`, `ManifestResourceName` или `DependentUpon`, то имя файла манифеста для этого файла ресурсов будет создаваться на основе таких метаданных.
@@ -270,7 +270,7 @@ ms.locfileid: "93063232"
 
 ### <a name="invariantglobalization"></a>InvariantGlobalization
 
-Свойство `InvariantGlobalization` определяет, выполняется ли приложение в *инвариантном режиме глобализации* , что означает, что у него нет доступа к данным, относящимся к языку и региональным параметрам. Установите значение `true` для запуска в инвариантном режиме глобализации. Дополнительные сведения см. в разделе [Инвариантный режим](../run-time-config/globalization.md#invariant-mode).
+Свойство `InvariantGlobalization` определяет, выполняется ли приложение в *инвариантном режиме глобализации*, что означает, что у него нет доступа к данным, относящимся к языку и региональным параметрам. Установите значение `true` для запуска в инвариантном режиме глобализации. Дополнительные сведения см. в разделе [Инвариантный режим](../run-time-config/globalization.md#invariant-mode).
 
 ```xml
 <PropertyGroup>
@@ -354,7 +354,7 @@ ms.locfileid: "93063232"
 - [PackageReference](#packagereference)
 - [ProjectReference](#projectreference)
 - [Ссылки](#reference)
-- [Свойства восстановления](#restore-properties)
+- [Свойства, связанные с восстановлением](#restore-related-properties)
 
 ### <a name="assettargetfallback"></a>AssetTargetFallback
 
@@ -412,13 +412,44 @@ ms.locfileid: "93063232"
 </ItemGroup>
 ```
 
-### <a name="restore-properties"></a>Свойства восстановления
+### <a name="restore-related-properties"></a>Свойства, связанные с восстановлением
 
 При восстановлении пакета, на который указывает ссылка, устанавливаются все его прямые зависимости и все зависимости этих зависимостей. Можно настроить восстановление пакетов, указав такие свойства, как `RestorePackagesPath` и `RestoreIgnoreFailedSources`. Дополнительные сведения об этих и других свойствах см. в разделе [целевой объект восстановления](/nuget/reference/msbuild-targets#restore-target).
 
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+## <a name="hosting-properties-and-items"></a>Размещение свойств и элементов
+
+- [EnableComHosting](#enablecomhosting)
+- [EnableDynamicLoading](#enabledynamicloading)
+
+### <a name="enablecomhosting"></a>EnableComHosting
+
+Свойство `EnableComHosting` указывает, что сборка предоставляет сервер COM. Установка `EnableComHosting` в `true` также подразумевает, что [EnableDynamicLoading](#enabledynamicloading) — `true`.
+
+```xml
+<PropertyGroup>
+  <EnableComHosting>True</EnableComHosting>
+</PropertyGroup>
+```
+
+Дополнительные сведения см. в разделе [Предоставление компонентов .NET для COM](../native-interop/expose-components-to-com.md).
+
+### <a name="enabledynamicloading"></a>EnableDynamicLoading
+
+Свойство `EnableDynamicLoading` указывает, что сборка является динамически загружаемым компонентом. Компонентом может быть [библиотека COM](/windows/win32/com/the-component-object-model) или библиотека, не относящаяся к COM, которую можно [использовать из собственного узла](../tutorials/netcore-hosting.md). Если присвоить этому свойству значения `true`:
+
+- Создается файл *runtimeconfig.json*.
+- [Накат](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) получает значение `LatestMinor`.
+- Ссылки NuGet копируются локально.
+
+```xml
+<PropertyGroup>
+  <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
 

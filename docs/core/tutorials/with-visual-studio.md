@@ -1,48 +1,58 @@
 ---
-title: Создание консольного приложения .NET Core в Visual Studio
-description: Узнайте, как консольное приложение .NET Core с помощью C# или Visual Basic в Visual Studio.
+title: Создание консольного приложения .NET в Visual Studio
+description: Узнайте, как создать консольное приложение .NET с помощью C# или Visual Basic в Visual Studio.
 ms.date: 06/08/2020
 dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: d543a05eb00a59c5c08ada28fc8392875385aa8a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e395122e59f17ed66bbd9d83b01610993f663ce1
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537539"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915949"
 ---
-# <a name="tutorial-create-a-net-core-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET Core в Visual Studio
+# <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET в Visual Studio
 
-В этом учебнике показано, как создать и запустить консольное приложение .NET Core в помощью Visual Studio 2019.
+В этом учебнике показано, как создать и запустить консольное приложение .NET с помощью Visual Studio 2019.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- [Visual Studio 2019 версии 16.6 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET Core 3.1 устанавливается автоматически при выборе этой рабочей нагрузки.
+- [Visual Studio 2019 версии 16.8 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой **Кроссплатформенная разработка .NET Core**. Пакет SDK для .NET 5.0 устанавливается автоматически при выборе этой рабочей нагрузки.
 
-  См. раздел [Установка с помощью Visual Studio](../install/windows.md#install-with-visual-studio).
+  См. раздел [Установка пакета SDK для .NET с помощью Visual Studio](../install/windows.md#install-with-visual-studio).
 
 ## <a name="create-the-app"></a>Создание приложения
 
-Создайте проект консольного приложения .NET Core с именем HelloWorld.
+Создайте проект консольного приложения .NET с именем HelloWorld.
 
 1. Запустите Visual Studio 2019.
 
+1. Выберите **Сервис** > **Параметры** > **Среда** > **Предварительная версия функций**, а затем выберите **Показывать все шаблоны .NET Core в новом проекте (требуется перезапуск)** .
+
+   :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Параметр &quot;Показывать все шаблоны .NET&quot;":::
+
+1. Закройте и снова откройте Visual Studio.
+
 1. На начальной странице выберите **Создать проект**.
 
-   ![Кнопка "Создать проект", выбранная на начальной странице Visual Studio](./media/with-visual-studio/start-window.png)
+   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Кнопка &quot;Создать проект&quot;, выбранная на начальной странице Visual Studio":::
 
-1. На странице **Создание проекта** введите в поле поиска **консоль**. Затем выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ. Выберите шаблон **Консольное приложение (.NET Core)** и щелкните **Далее**.
+1. На странице **Создание проекта** введите в поле поиска **консоль**. Затем выберите **C#** или **Visual Basic** из списка языков, а затем — **Все платформы** из списка платформ. Выберите шаблон **Консольное приложение** и нажмите **Далее**.
 
-   ![Окно "Создание проекта" с выбранными фильтрами](./media/with-visual-studio/create-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Окно &quot;Создание проекта&quot; с выбранными фильтрами":::
 
    > [!TIP]
-   > Если вы не видите шаблоны .NET Core, вероятно, у вас не установлена требуемая рабочая нагрузка. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
+   > Если вы не видите шаблоны .NET, вероятно, у вас не установлена требуемая рабочая нагрузка. В сообщении **Не удается найти то, что ищете?** выберите ссылку **Установка других средств и компонентов**. Откроется Visual Studio Installer. Убедитесь, что у вас установлена рабочая нагрузка **Кроссплатформенная разработка .NET Core**.
 
 1. В диалоговом окне **Настройка нового проекта** в поле **Имя проекта** введите **HelloWorld**. Затем нажмите кнопку **Создать**.
 
-   ![Окно настройки нового проекта с полями имени проекта, расположения и имени решения](./media/with-visual-studio/configure-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Окно настройки нового проекта с полями имени проекта, расположения и имени решения":::
+
+1. В диалоговом окне **Дополнительные сведения** выберите **.NET 5.0 (текущая)** , а затем нажмите **Создать**.
+
+   :::image type="content" source="media/with-visual-studio/additional-info.png" alt-text="Диалоговое окно &quot;Дополнительные сведения&quot;":::
 
 Этот шаблон создает простое приложение Hello World. Он вызывает метод <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> для отображения сообщения "Hello World!" в окне консоли.
 
@@ -81,9 +91,9 @@ End Module
 
 1. Нажмите клавиши <kbd>CTRL</kbd>+<kbd>F5</kbd>, чтобы запустить программу без отладки.
 
-   Откроется окно консоли с текстом "Hello World!" на экране и информацией об отладке Visual Studio.
+   Откроется окно консоли с текстом "Hello World!" на экране.
 
-   ![Окно консоли с приложением Hello World и надписью "Чтобы продолжить, нажмите любую клавишу"](./media/with-visual-studio/hello-world-console.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-console.png" alt-text="Окно консоли с приложением Hello World и надписью &quot;Чтобы продолжить, нажмите любую клавишу&quot;":::
 
 1. Для закрытия консольного окна нажмите любую клавишу.
 
@@ -106,13 +116,17 @@ End Module
 
 1. В ответ на приглашение в командной строке введите имя и нажмите клавишу <kbd>ВВОД</kbd>.
 
-   ![Окно консоли с измененными выходными данными программы](./media/with-visual-studio/hello-world-update.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Окно консоли с измененными выходными данными программы":::
 
 1. Для закрытия консольного окна нажмите любую клавишу.
 
+## <a name="additional-resources"></a>Дополнительные ресурсы
+
+- [Текущие выпуски и выпуски с долгосрочной поддержкой](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве показано, как создать консольное приложение .NET Core. В следующем учебнике описывается отладка приложения.
+В этом учебнике показано, как создать консольное приложение .NET. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка консольного приложения .NET Core с помощью Visual Studio](debugging-with-visual-studio.md)
+> [Отладка консольного приложения .NET с помощью Visual Studio](debugging-with-visual-studio.md)

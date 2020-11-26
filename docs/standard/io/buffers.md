@@ -1,18 +1,17 @@
 ---
 title: Использование System.Buffers в .NET
 ms.date: 12/05/2019
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - buffers [.NET]
 - I/O [.NET], buffers
 author: rick-anderson
 ms.author: riande
-ms.openlocfilehash: d113def0182dc6a5bcea6c18b2d0e4b475946e31
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: afcd6976e6220349fbec370c47b11596a35a81a2
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739621"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94823528"
 ---
 # <a name="work-with-buffers-in-net"></a>Работа с буферами в .NET
 

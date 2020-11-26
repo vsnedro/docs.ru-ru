@@ -4,25 +4,28 @@ description: Узнайте, как развернуть приложение .N
 ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 0232896254e93525f2a6f0be05417107cf7f5432
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: dd1cfdf12266b55d9dbc0210479b89ba68c59a38
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955477"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688076"
 ---
 # <a name="deploy-a-net-for-apache-spark-application-to-amazon-emr-spark"></a>Развертывание приложения .NET для Apache Spark в Amazon EMR Spark
 
-В этом руководстве рассматривается развертывание приложения .NET для Apache Spark в Amazon EMR Spark.
+В этом руководстве рассматривается развертывание приложения .NET для Apache Spark в Amazon EMR Spark. [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) — это управляемая кластерная платформа, которая упрощает выполнение систем больших данных в AWS.
 
-В этом руководстве вы узнаете, как:
+Из этого руководства вы узнаете, как выполнять следующие задачи:
 
 > [!div class="checklist"]
 >
 > * Подготовка Microsoft.Spark.Worker
 > * Публикация приложения Spark .NET
 > * Развертывание приложения в Amazon EMR Spark
-> * Запуск приложения
+> * Запустите приложение.
+
+> [!Note]
+> AWS EMR Spark работает под управлением Linux. Поэтому если вы хотите развернуть приложение в AWS EMR Spark, оно должно быть совместимо с .NET Standard, а для его компиляции необходимо использовать компилятор .NET Core.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -37,7 +40,7 @@ ms.locfileid: "91955477"
 
 1. Выберите выпуск netcoreapp компонента [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) для Linux, который будет развернут в кластере.
 
-   Например, чтобы использовать `.NET for Apache Spark v0.1.0` с `netcoreapp2.1`, скачайте выпуск [Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.1.0.tar.gz](https://github.com/dotnet/spark/releases/download/v0.1.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.1.0.tar.gz).
+   Например, чтобы использовать `.NET for Apache Spark v1.0.0` с `netcoreapp3.1`, скачайте выпуск [Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz](https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz).
 
 2. Передайте файлы `Microsoft.Spark.Worker.<release>.tar.gz` и [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) в распределенную файловую систему (например, S3), к которой есть доступ у кластера.
 
@@ -50,7 +53,7 @@ ms.locfileid: "91955477"
    Выполните приведенную ниже команду в Linux.
 
    ```dotnetcli
-   dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.16.04-x64
    ```
 
 3. Создайте `<your app>.zip` для опубликованных файлов.
@@ -63,7 +66,7 @@ ms.locfileid: "91955477"
 
 4. Передайте в распределенную файловую систему (например, S3), к которой есть доступ у кластера, следующие объекты:
 
-   * `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`. Этот JAR-файл входит в состав пакета NuGet [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) и размещается в выходном каталоге сборки приложения.
+   * `microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar`: Этот JAR-файл входит в состав пакета NuGet [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) и размещается в выходном каталоге сборки приложения.
    * `<your app>.zip`
    * Файлы (например, файлы зависимостей или общие данные, доступные каждой рабочей роли) или сборки (например, библиотеки DLL, содержащие определяемые пользователем функции, или библиотеки, от которых зависит приложение), которые необходимо поместить в рабочий каталог каждого исполнителя.
 
@@ -94,7 +97,7 @@ aws emr create-cluster \
 --bootstrap-actions Path=s3://mybucket/<some dir>/install-worker.sh,Name="Install Microsoft.Spark.Worker",Args=["aws","s3://mybucket/<some dir>/Microsoft.Spark.Worker.<release>.tar.gz","/usr/local/bin"]
 ```
 
-## <a name="run-your-app"></a>Запуск приложения
+## <a name="run-your-app"></a>Запустите приложение.
 
 Приложение можно запускать в Amazon EMR Spark двумя способами: с помощью команды spark-submit или с помощью шагов Amazon EMR.
 
@@ -104,14 +107,14 @@ aws emr create-cluster \
 
 1. Подключитесь к одному из узлов кластера с помощью команды `ssh`.
 
-2. Запустите `spark-submit`.
+2. Выполните `spark-submit`.
 
    ```bash
    spark-submit \
    --master yarn \
    --class org.apache.spark.deploy.dotnet.DotnetRunner \
    --files <comma-separated list of assemblies that contain UDF definitions, if any> \
-   s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar \
+   s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar \
    s3://mybucket/<some dir>/<your app>.zip <your app> <app args>
    ```
 
@@ -124,7 +127,7 @@ aws emr create-cluster \
 ```bash
 aws emr add-steps \
 --cluster-id j-xxxxxxxxxxxxx \
---steps Type=spark,Name="Spark Program",Args=[--master,yarn,--files,s3://mybucket/<some dir>/<udf assembly>,--class,org.apache.spark.deploy.dotnet.DotnetRunner,s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar,s3://mybucket/<some dir>/<your app>.zip,<your app>,<app arg 1>,<app arg 2>,...,<app arg n>],ActionOnFailure=CONTINUE
+--steps Type=spark,Name="Spark Program",Args=[--master,yarn,--files,s3://mybucket/<some dir>/<udf assembly>,--class,org.apache.spark.deploy.dotnet.DotnetRunner,s3://mybucket/<some dir>/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar,s3://mybucket/<some dir>/<your app>.zip,<your app>,<app arg 1>,<app arg 2>,...,<app arg n>],ActionOnFailure=CONTINUE
 ```
 
 ## <a name="next-steps"></a>Следующие шаги

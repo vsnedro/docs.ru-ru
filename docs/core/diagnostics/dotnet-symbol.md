@@ -1,24 +1,24 @@
 ---
-title: dotnet-symbol — .NET Core
-description: Установка и использование программы командной строки dotnet-symbol.
-ms.date: 08/26/2020
-ms.openlocfilehash: 5a96306fc96525b00e57eda089a45b730a7e3e8c
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+title: Средство диагностики dotnet-symbol — .NET CLI
+description: Узнайте, как установить и использовать средство CLI dotnet-symbol для загрузки файлов, необходимых для отладки дампов и минидампов .NET.
+ms.date: 11/17/2020
+ms.openlocfilehash: 8ea694e5331f1e4e75b3b3ad644428568e515331
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679192"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825342"
 ---
 # <a name="symbol-downloader-dotnet-symbol"></a>Загрузчик символов (dotnet-symbol)
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий
 
-## <a name="install-dotnet-symbol"></a>Установка dotnet-symbol
+## <a name="install"></a>Установка
 
-Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-symbol) `dotnet-symbol`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-trace) `dotnet-trace`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
 
 ```dotnetcli
-dotnet tool install -g dotnet-symbol
+dotnet tool install --global dotnet-symbol
 ```
 
 ## <a name="synopsis"></a>Краткий обзор

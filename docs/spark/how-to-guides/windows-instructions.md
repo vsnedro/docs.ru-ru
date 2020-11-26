@@ -4,12 +4,12 @@ description: Сведения о том, как скомпилировать п�
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: how-to
-ms.openlocfilehash: db073e6b82e63b3f0b98c9fe66a5b4d9be1356ba
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 8f197c0050d149ed03e328e72868ad4ba2f728c1
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688115"
 ---
 # <a name="learn-how-to-build-your-net-for-apache-spark-application-on-windows"></a>Сведения о том, как скомпилировать приложение .NET для Apache Spark в Windows
 
@@ -19,7 +19,7 @@ ms.locfileid: "91955529"
 
 Если у вас уже есть все перечисленные ниже компоненты, перейдите к [сборке](#build).
 
-  1. Скачайте и установите **[пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core/2.1)** . После этого в путь будет добавлена цепочка инструментов `dotnet`. Поддерживается .NET Core версий 2.1, 2.2 и 3.1.
+  1. Скачайте и установите **[пакет SDK для .NET Core](https://dotnet.microsoft.com/download/dotnet-core/3.1)** . После этого в путь будет добавлена цепочка инструментов `dotnet`. Поддерживается .NET Core версий 2.1, 2.2 и 3.1.
   2. Установите **[Visual Studio 2019](https://www.visualstudio.com/downloads/)**  16.3 или более поздней версии. Версия Community предоставляется бесплатно. При настройке установки включите по меньшей мере следующие компоненты:
      * Разработка классических приложений .NET
        * Все необходимые компоненты.
@@ -35,14 +35,14 @@ ms.locfileid: "91955529"
      - Добавьте Apache Maven в [переменную среды PATH](https://www.java.com/en/download/help/path.xml). Например, *C:\bin\apache-maven-3.6.0\bin*.
      - Убедитесь в том, что можно выполнить команду `mvn` в командной строке.
   5. Установите **[Apache Spark 2.3 или более поздней версии](https://spark.apache.org/downloads.html)** .
-     - Скачайте [Apache Spark 2.3 или более поздней версии](https://spark.apache.org/downloads.html) и извлеките содержимое в локальную папку (например, *C:\bin\spark-2.3.2-bin-hadoop2.7\*) с помощью средства [7-zip](https://www.7-zip.org/). (Поддерживаются версии Spark 2.3.* , 2.4.0, 2.4.1, 2.4.3 и 2.4.4.)
-     - Добавьте [новую переменную среды](https://www.java.com/en/download/help/path.xml) `SPARK_HOME`. Например, *C:\bin\spark-2.3.2-bin-hadoop2.7\*.
+     - Скачайте [Apache Spark 2.3 или более поздней версии](https://spark.apache.org/downloads.html) и извлеките содержимое в локальную папку (например, *C:\bin\spark-3.0.1-bin-hadoop2.7\*) с помощью средства [7-zip](https://www.7-zip.org/). (Поддерживаются версии Spark 2.3.* , 2.4.0, 2.4.1, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 3.0.0 и 3.0.1.)
+     - Добавьте [новую переменную среды](https://www.java.com/en/download/help/path.xml) `SPARK_HOME`. Например, *C:\bin\spark-3.0.1-bin-hadoop2.7\*.
 
        ```powershell
-       set SPARK_HOME=C:\bin\spark-2.3.2-bin-hadoop2.7\
+       set SPARK_HOME=C:\bin\spark-3.0.1-bin-hadoop2.7\
        ```
 
-     - Добавьте Apache Spark в [переменную среды PATH](https://www.java.com/en/download/help/path.xml). Например, *C:\bin\spark-2.3.2-bin-hadoop2.7\bin*.
+     - Добавьте Apache Spark в [переменную среды PATH](https://www.java.com/en/download/help/path.xml). Например, *C:\bin\spark-3.0.1-bin-hadoop2.7\bin*.
 
        ```powershell
        set PATH=%SPARK_HOME%\bin;%PATH%
@@ -56,10 +56,10 @@ ms.locfileid: "91955529"
               ____              __
              / __/__  ___ _____/ /__
             _\ \/ _ \/ _ `/ __/  '_/
-           /___/ .__/\_,_/_/ /_/\_\   version 2.3.2
+           /___/ .__/\_,_/_/ /_/\_\   version 3.0.1
               /_/
 
-        Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_201)
+        Using Scala version 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_201)
         Type in expressions to have them evaluated.
         Type :help for more information.
 
@@ -70,7 +70,7 @@ ms.locfileid: "91955529"
         </details>
 
   6. Установите **[WinUtils](https://github.com/steveloughran/winutils)** .
-     - Скачайте двоичный файл `winutils.exe` из [репозитория WinUtils](https://github.com/steveloughran/winutils). Выберите версию Hadoop, с использованием которой был скомпилирован дистрибутив Spark. Например, для Spark 2.3.2 используйте hadoop-2.7.1.
+     - Скачайте двоичный файл `winutils.exe` из [репозитория WinUtils](https://github.com/steveloughran/winutils). Выберите версию Hadoop, с использованием которой был скомпилирован дистрибутив Spark. Например, для Spark 3.0.1 используйте hadoop-2.7.1.
      - Сохраните двоичный файл `winutils.exe` в любом каталоге по своему выбору. Например, *C:\hadoop\bin*.
      - Включите в переменную среды `HADOOP_HOME` путь к каталогу с файлом winutils.exe (без строки bin). Например, выполните такую команду в командной строке:
 
@@ -110,8 +110,9 @@ mvn clean package
 
 Здесь должны быть JAR-файлы, созданные для поддерживаемых версий Spark:
 
-* `microsoft-spark-2.3.x\target\microsoft-spark-2.3.x-<version>.jar`
-* `microsoft-spark-2.4.x\target\microsoft-spark-2.4.x-<version>.jar`
+* `microsoft-spark-2-3\target\microsoft-spark-2-3_2.11-<spark-dotnet-version>.jar`
+* `microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-<spark-dotnet-version>.jar`
+* `microsoft-spark-3-0\target\microsoft-spark-3-0_2.12-<spark-dotnet-version>.jar`
 
 ### <a name="build-the-net-for-spark-sample-applications"></a>Сборка примеров приложений .NET для Spark
 
@@ -170,58 +171,58 @@ mvn clean package
 
       ```powershell
       cd C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker\
-      dotnet publish -f netcoreapp2.1 -r win10-x64
+      dotnet publish -f netcoreapp3.1 -r win-x64
       ```
 
       Пример выходных данных в консоли.
 
       ```powershell
-      PS C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker> dotnet publish -f netcoreapp2.1 -r win10-x64
-      Microsoft (R) Build Engine version 16.0.462+g62fb89029d for .NET Core
+      PS C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker> dotnet publish -f netcoreapp3.1 -r win-x64
+      Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
       Copyright (C) Microsoft Corporation. All rights reserved.
 
         Restore completed in 299.95 ms for C:\github\dotnet-spark\src\csharp\Microsoft.Spark\Microsoft.Spark.csproj.
         Restore completed in 306.62 ms for C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker\Microsoft.Spark.Worker.csproj.
-        Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.0\Microsoft.Spark.dll
-        Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.Worker.dll
-        Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish\
+        Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.1\Microsoft.Spark.dll
+        Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\x64\Debug\netcoreapp3.1\win-x64\Microsoft.Spark.Worker.dll
+        Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\x64\Debug\netcoreapp3.1\win-x64\publish\
       ```
 
   2. Скомпилируйте примеры:
 
       ```powershell
       cd C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples\
-      dotnet publish -f netcoreapp2.1 -r win10-x64
+      dotnet publish -f netcoreapp3.1 -r win-x64
       ```
 
       Пример выходных данных в консоли.
 
       ```powershell
-      PS C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples> dotnet publish -f netcoreapp2.1 -r win10-x64
-      Microsoft (R) Build Engine version 16.0.462+g62fb89029d for .NET Core
+      PS C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples> dotnet publish -f netcoreapp3.1 -r win-x64
+      Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
       Copyright (C) Microsoft Corporation. All rights reserved.
 
         Restore completed in 44.22 ms for C:\github\dotnet-spark\src\csharp\Microsoft.Spark\Microsoft.Spark.csproj.
         Restore completed in 336.94 ms for C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples\Microsoft.Spark.CSharp.Examples.csproj.
-        Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.0\Microsoft.Spark.dll
-        Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.CSharp.Examples.dll
-        Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish\
+        Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.1\Microsoft.Spark.dll
+        Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\x64\Debug\netcoreapp3.1\win-x64\Microsoft.Spark.CSharp.Examples.dll
+        Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\x64\Debug\netcoreapp3.1\win-x64\publish\
       ```
 
 ## <a name="run-the-net-for-spark-sample-applications"></a>Запуск примеров приложений .NET для Spark
 
 После сборки примеров их можно запустить через `spark-submit`, независимо от целевой платформы (.NET Framework или .NET Core). Убедитесь, что выполнены все [предварительные требования](#prerequisites) и установка Apache Spark.
 
-  1. Задайте переменную среды `DOTNET_WORKER_DIR` или `PATH`, чтобы включить путь, по которому был создан двоичный файл `Microsoft.Spark.Worker` (например, *C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.Worker\Debug\net461* для .NET Framework, *C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish* для .NET Core):
+  1. Задайте переменную среды `DOTNET_WORKER_DIR` или `PATH`, чтобы включить путь, по которому был создан двоичный файл `Microsoft.Spark.Worker` (например, *C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.Worker\Debug\net461* для .NET Framework, *C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\x64\Debug\netcoreapp3.1\win-x64\publish* для .NET Core):
 
       ```powershell
-      set DOTNET_WORKER_DIR=C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish
+      set DOTNET_WORKER_DIR=C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\x64\Debug\netcoreapp3.1\win-x64\publish
       ```
   
-  2. Откройте PowerShell и перейдите в каталог, где создан двоичный файл приложения (например, *C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461* для .NET Framework, *C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish* для .NET Core):
+  2. Откройте PowerShell и перейдите в каталог, где создан двоичный файл приложения (например, *C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461* для .NET Framework, *C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\x64\Debug\netcoreapp3.1\win-x64\publish* для .NET Core):
 
       ```powershell
-      cd C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish
+      cd C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\x64\Debug\netcoreapp3.1\win-x64\publish
       ```
 
   3. Приложение запускается по единой общей схеме.
@@ -243,7 +244,7 @@ mvn clean package
          spark-submit.cmd `
          --class org.apache.spark.deploy.dotnet.DotnetRunner `
          --master local `
-         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<version>.jar `
+         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar `
          Microsoft.Spark.CSharp.Examples.exe Sql.Batch.Basic %SPARK_HOME%\examples\src\main\resources\people.json
          ```
 
@@ -253,7 +254,7 @@ mvn clean package
          spark-submit.cmd `
          --class org.apache.spark.deploy.dotnet.DotnetRunner `
          --master local `
-         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<version>.jar `
+         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar `
          Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredNetworkWordCount localhost 9999
          ```
 
@@ -264,7 +265,7 @@ mvn clean package
          --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.2 `
          --class org.apache.spark.deploy.dotnet.DotnetRunner `
          --master local `
-         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<version>.jar `
+         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar `
          Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
          ```
 
@@ -275,6 +276,6 @@ mvn clean package
          --jars path\to\net.jpountz.lz4\lz4-1.3.0.jar,path\to\org.apache.kafka\kafka-clients-0.10.0.1.jar,path\to\org.apache.spark\spark-sql-kafka-0-10_2.11-2.3.2.jar,`path\to\org.slf4j\slf4j-api-1.7.6.jar,path\to\org.spark-project.spark\unused-1.0.0.jar,path\to\org.xerial.snappy\snappy-java-1.1.2.6.jar `
          --class org.apache.spark.deploy.dotnet.DotnetRunner `
          --master local `
-         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<version>.jar `
+         C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar `
          Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
           ```

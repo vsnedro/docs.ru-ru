@@ -2,12 +2,12 @@
 title: Счетчики событий в .NET Core
 description: В этой статье вы узнаете, что такое счетчики событий и как их реализовать и использовать.
 ms.date: 08/07/2020
-ms.openlocfilehash: be273776b888f13893fc694a111093cca1fa8a5e
-ms.sourcegitcommit: b59237ca4ec763969a0dd775a3f8f39f8c59fe24
+ms.openlocfilehash: 212cd6b495785dcd091187f97a1b5e44e5597a4a
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91955321"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687646"
 ---
 # <a name="eventcounters-in-net-core"></a>Счетчики событий в .NET Core
 
@@ -17,7 +17,7 @@ ms.locfileid: "91955321"
 
 Начиная с NET Core 3.0 среда выполнения .NET Core и некоторые библиотеки .NET публикуют основные данные диагностики, используя счетчики событий. Помимо счетчиков событий, предоставляемых средой выполнения .NET, вы можете реализовывать и собственные счетчики событий. Счетчики событий можно использовать для отслеживания различных метрик.
 
-Они являются частью <xref:System.Diagnostics.Tracing.EventSource> и передаются в средства прослушивания автоматически и на регулярной основе. Как и все остальные события в <xref:System.Diagnostics.Tracing.EventSource>, их можно использовать как внутри, так и вне процессов через <xref:System.Diagnostics.Tracing.EventListener> и EventPipe. В этой статье рассматриваются межплатформенные возможности счетчиков событий и намеренно исключены PerfView и ETW (трассировка событий для Windows), хотя обе эти функции можно использовать со счетчиками событий.
+Они являются частью <xref:System.Diagnostics.Tracing.EventSource> и передаются в средства прослушивания автоматически и на регулярной основе. Как и все остальные события в <xref:System.Diagnostics.Tracing.EventSource>, их можно использовать как внутри, так и вне процессов через <xref:System.Diagnostics.Tracing.EventListener> и [EventPipe](./eventpipe.md). В этой статье рассматриваются межплатформенные возможности счетчиков событий и намеренно исключены PerfView и ETW (трассировка событий для Windows), хотя обе эти функции можно использовать со счетчиками событий.
 
 ![Схема счетчиков событий внутри и вне процессов](media/event-counters.svg)
 

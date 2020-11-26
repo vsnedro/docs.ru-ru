@@ -1,21 +1,21 @@
 ---
-title: Отладка консольного приложения .NET Core с помощью Visual Studio Code
-description: Узнайте, как выполнить отладку консольного приложения .NET Core с помощью Visual Studio Code.
+title: Отладка консольного приложения .NET с помощью Visual Studio Code
+description: Узнайте, как выполнить отладку консольного приложения .NET с помощью Visual Studio Code.
 ms.date: 05/26/2020
-ms.openlocfilehash: 8e84747256551b633a5bf74b72723ba8d2840d52
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 85095a9e70ee3ff846716ef91239b240d8c42410
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118303"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94916233"
 ---
-# <a name="tutorial-debug-a-net-core-console-application-using-visual-studio-code"></a>Учебник. Отладка консольного приложения .NET Core с помощью Visual Studio Code
+# <a name="tutorial-debug-a-net-console-application-using-visual-studio-code"></a>Учебник. Отладка консольного приложения .NET с помощью Visual Studio Code
 
-В этом учебнике представлены средства отладки, доступные в Visual Studio Code для работы с приложениями .NET Core.
+В этом учебнике представлены средства отладки, доступные в Visual Studio Code для работы с приложениями .NET.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом руководстве используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+- В этом учебнике используется консольное приложение, созданное в руководстве [Создание консольного приложения .NET в Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="use-debug-build-configuration"></a>Использование конфигурации отладочной сборки
 
@@ -27,7 +27,7 @@ ms.locfileid: "89118303"
 
 1. Запустите Visual Studio Code.
 
-1. Откройте папку проекта, созданную по инструкциям из статьи [Создание консольного приложения .NET Core в Visual Studio Code](with-visual-studio-code.md).
+1. Откройте папку проекта, созданную по инструкциям из статьи [Создание консольного приложения .NET в Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="set-a-breakpoint"></a>Установка точки останова
 
@@ -224,4 +224,4 @@ dotnet run --configuration Release
 В этом учебнике вы использовали средства отладки Visual Studio Code. В следующем руководстве вы опубликуете развертываемую версию приложения.
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core с помощью Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Публикация консольного приложения .NET с помощью Visual Studio Code](publishing-with-visual-studio-code.md)

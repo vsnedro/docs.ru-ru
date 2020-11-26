@@ -2,12 +2,12 @@
 title: Ведение журнала и трассировка (.NET Core)
 description: Общие сведения о ведении журнала и трассировке в .NET Core.
 ms.date: 10/12/2020
-ms.openlocfilehash: e3f809dab64d66d8b4ba16ca55fc426309614715
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 86444f2451079e54050f6698f3e45ddff0700acf
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439928"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820583"
 ---
 # <a name="net-core-logging-and-tracing"></a>Ведение журнала и трассировка в .NET Core
 
@@ -55,7 +55,7 @@ ms.locfileid: "94439928"
   - Поддерживает трассировку только сериализуемых объектов.
   - Можно использовать в процессе через любые экземпляры [EventListener](xref:System.Diagnostics.Tracing.EventListener), настроенные для использования EventSource.
   - Можно использовать вне процесса через:
-    - EventPipe из .NET Core на всех платформах.
+    - [EventPipe из .NET Core](./eventpipe.md) на всех платформах.
     - [Трассировка событий Windows (ETW).](/windows/win32/etw/event-tracing-portal)
     - [Платформа трассировки LTTng для Linux.](https://lttng.org/)
       - Пошаговое руководство. [Сбор трассировки LTTng с помощью PerfCollect](trace-perfcollect-lttng.md).
@@ -93,6 +93,8 @@ ms.locfileid: "94439928"
 - Статья [о ведении журналов в .NET](../extensions/logging.md) содержит обзор поддерживаемых технологий ведения журналов.
 
 - [Интерполяция строк в C#](../../csharp/language-reference/tokens/interpolated.md) помогает упростить создание кода для ведения журналов.
+
+- [Список событий поставщика среды выполнения](../../fundamentals/diagnostics/runtime-events.md)
 
 - Свойство <xref:System.Exception.Message?displayProperty=nameWithType> очень полезно для ведения журналов исключений.
 

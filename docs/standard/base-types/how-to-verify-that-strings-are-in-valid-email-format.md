@@ -2,7 +2,6 @@
 title: Проверка строк на соответствие формату электронной почты
 description: Вы можете ознакомиться с примером того, как регулярное выражение проверяет строки на соответствие формату электронной почты в .NET.
 ms.date: 06/30/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -19,12 +18,12 @@ helpviewer_keywords:
 - email [.NET], validating
 - IsMatch method
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
-ms.openlocfilehash: 07b8e31e4a0203b87492eb01ab686a1c56f5565d
-ms.sourcegitcommit: 4a938327bad8b2e20cabd0f46a9dc50882596f13
+ms.openlocfilehash: 88ff326e16ede6a422e9403b71905845014c4c25
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92889079"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982496"
 ---
 # <a name="how-to-verify-that-strings-are-in-valid-email-format"></a>Проверка строк на соответствие формату электронной почты
 
