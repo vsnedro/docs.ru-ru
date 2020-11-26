@@ -7,14 +7,15 @@ helpviewer_keywords:
 - control patterns, Scroll
 - Scroll control pattern
 ms.assetid: 73d64242-6cbb-424c-92dd-dc69530b7899
-ms.openlocfilehash: 830d65286f27302dcad109384b8df187ed4af1a5
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 4069772530d8b4db817aa1b7a9be86a3ee83881e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166996"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239267"
 ---
 # <a name="implementing-the-ui-automation-scroll-control-pattern"></a>Реализация шаблона элемента управления Scroll для автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -28,7 +29,9 @@ ms.locfileid: "87166996"
  Примеры элементов управления, реализующих данный шаблон элемента управления, см. в разделе [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## <a name="implementation-guidelines-and-conventions"></a>Правила и соглашения реализации  
+
  При реализации шаблона элемента управления Scroll обратите внимание на следующие правила и соглашения.  
   
 - Дочерние элементы данного элемента управления должны реализовывать <xref:System.Windows.Automation.Provider.IScrollItemProvider>.  
@@ -44,24 +47,28 @@ ms.locfileid: "87166996"
 - <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A> зависит от конкретного языка. Установка HorizontalScrollPercent = 100.0 должна задавать расположение прокрутки элемента управления в крайней правой позиции для таких языков, как английский, где чтение выполняется слева направо. И наоборот, для таких языков, как арабский, где чтение выполняется справа налево, установка HorizontalScrollPercent = 100.0 должен задавать расположение прокрутки в крайней левой позиции.  
   
 <a name="Required_Members_for_IScrollProvider"></a>
+
 ## <a name="required-members-for-iscrollprovider"></a>Обязательные члены для IScrollProvider  
+
  Следующие свойства и методы обязательны для реализации <xref:System.Windows.Automation.Provider.IScrollProvider>.  
   
 |Обязательный член|Тип члена|Примечания|  
 |---------------------|-----------------|-----------|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A>|Свойство|Нет|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent%2A>|Свойство|Нет|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize%2A>|Свойство|Нет|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize%2A>|Свойство|Нет|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A>|Свойство|Нет|  
-|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A>|Свойство|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A>|Свойство.|Нет|  
 |<xref:System.Windows.Automation.Provider.IScrollProvider.Scroll%2A>|Метод|Нет|  
 |<xref:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent%2A>|Метод|Нет|  
   
  Этот шаблон элемента управления не имеет связанных событий.  
   
 <a name="Exceptions"></a>
+
 ## <a name="exceptions"></a>Исключения  
+
  Поставщики должны вызывать следующие исключения.  
   
 |Тип исключения|Условие|  

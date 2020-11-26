@@ -2,46 +2,47 @@
 title: Выражения C#
 ms.date: 03/30/2017
 ms.assetid: 29110be7-f4e3-407e-8dbe-78102eb21115
-ms.openlocfilehash: d1728758a4f1af76c2d08695a83c0f9acc3dde3e
-ms.sourcegitcommit: fbb8a593a511ce667992502a3ce6d8f65c594edf
+ms.openlocfilehash: b0e5d7f2fbb1f7b84c6d8f0110bd111165f0ea52
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74140094"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239631"
 ---
 # <a name="c-expressions"></a>Выражения C#
-Начиная с .NET Framework 4,5, C# выражения поддерживаются в Windows Workflow Foundation (WF). Новые C# проекты рабочих процессов, созданные в Visual Studio 2012, предназначенные C# для .NET Framework 4,5, используют выражения, а проекты рабочих процессов Visual Basic используют выражения Visual Basic. Существующие проекты рабочих процессов .NET Framework 4, использующие выражения Visual Basic, можно перенести в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] независимо от языка проекта и поддерживаются. В этом разделе приведены общие сведения о выражениях на языке C# в [!INCLUDE[wf1](../../../includes/wf1-md.md)].
+
+Начиная с .NET Framework 4,5, выражения C# поддерживаются в Windows Workflow Foundation (WF). Новые проекты рабочих процессов C#, созданные в Visual Studio 2012, предназначенные для .NET Framework 4,5, используют выражения C#, а проекты рабочих процессов Visual Basic используют выражения Visual Basic. Существующие проекты рабочих процессов .NET Framework 4, использующие выражения Visual Basic, могут быть перенесены в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] независимо от языка проекта и поддерживаются. В этом разделе приведены общие сведения о выражениях на языке C# в [!INCLUDE[wf1](../../../includes/wf1-md.md)].
 
 ## <a name="using-c-expressions-in-workflows"></a>Выражения на языке C# в рабочих процессах
 
-- [Использование C# выражений в конструктор рабочих процессов](csharp-expressions.md#WFDesigner)
+- [Выражения на языке C# в конструкторе рабочих процессов](csharp-expressions.md#WFDesigner)
 
-  - [Обратная совместимость](csharp-expressions.md#BackwardCompat)
+  - [обратная совместимость;](csharp-expressions.md#BackwardCompat)
 
-- [Использование C# выражений в рабочих процессах кода](csharp-expressions.md#CodeWorkflows)
+- [Выражения на языке C# в коде рабочих процессов](csharp-expressions.md#CodeWorkflows)
 
-- [Использование C# выражений в рабочих ПРОЦЕССах XAML](csharp-expressions.md#XamlWorkflows)
+- [Выражения на языке C# в рабочих процессах языка XAML](csharp-expressions.md#XamlWorkflows)
 
-  - [Скомпилированный XAML](csharp-expressions.md#CompiledXaml)
+  - [Скомпилированные файлы Xaml](csharp-expressions.md#CompiledXaml)
 
   - [Свободный XAML](csharp-expressions.md#LooseXaml)
 
-- [Использование C# выражений в службах рабочих процессов XAMLX](csharp-expressions.md#WFServices)
+- [Выражения на языке C# в службах рабочих процессов XAMLX](csharp-expressions.md#WFServices)
 
-### <a name="WFDesigner"></a>Использование C# выражений в конструктор рабочих процессов
+### <a name="using-c-expressions-in-the-workflow-designer"></a><a name="WFDesigner"></a> Использование выражений C# в конструктор рабочих процессов
 
-Начиная с .NET Framework 4,5, C# выражения поддерживаются в Windows Workflow Foundation (WF). C#проекты рабочих процессов, созданные в Visual Studio 2012, предназначенные C# для .NET Framework 4,5, используют выражения, тогда как Visual Basic проекты рабочих процессов используют выражения Visual Basic. Чтобы указать нужное C# выражение, введите его в поле с надписью **введите C# выражение**. Эта метка отображается в окне свойств при выборе действия в конструкторе или при работе в конструкторе рабочих процессов. В следующем примере два действия `WriteLine` содержатся в `Sequence` внутри `NoPersistScope`.
+Начиная с .NET Framework 4,5, выражения C# поддерживаются в Windows Workflow Foundation (WF). Проекты рабочих процессов C#, созданные в Visual Studio 2012, предназначенные для .NET Framework 4,5, используют выражения C#, а Visual Basic проекты рабочих процессов используют выражения Visual Basic. Чтобы указать нужное выражение C#, введите его в поле с надписью **введите выражение c#**. Эта метка отображается в окне свойств при выборе действия в конструкторе или при работе в конструкторе рабочих процессов. В следующем примере два действия `WriteLine` содержатся в `Sequence` внутри `NoPersistScope`.
 
 ![Снимок экрана, на котором показано автоматически созданное действие последовательности.](./media/csharp-expressions/auto-surround-sequence-activity.png)
 
 > [!NOTE]
-> C#выражения поддерживаются только в Visual Studio и не поддерживаются в конструкторе рабочих процессов, размещенном повторно. Дополнительные сведения о новых функциях WF45, поддерживаемых в повторно размещенном конструкторе, см. в разделе [Поддержка новых функций Workflow Foundation 4,5 в](wf-features-in-the-rehosted-workflow-designer.md)переразмещенной конструктор рабочих процессов.
+> Выражения C# поддерживаются только в Visual Studio и не поддерживаются в конструкторе рабочих процессов, размещенном повторно. Дополнительные сведения о новых функциях WF45, поддерживаемых в повторно размещенном конструкторе, см. в разделе [Поддержка новых функций Workflow Foundation 4,5 в](wf-features-in-the-rehosted-workflow-designer.md)переразмещенной конструктор рабочих процессов.
 
-#### <a name="BackwardCompat"></a>Обратная совместимость
+#### <a name="backwards-compatibility"></a><a name="BackwardCompat"></a> Обратная совместимость
 
-Поддерживаются Visual Basic выражения в существующих C# проектах рабочих процессов .NET Framework 4, которые были перенесены в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]. Когда Visual Basic выражения просматриваются в конструкторе рабочих процессов, текст существующего выражения Visual Basic заменяется значением, **установленным в XAML**, если только выражение Visual Basic не является допустимым C# синтаксисом. Если выражение Visual Basic имеет допустимый синтаксис C#, то отображается выражение. Чтобы обновить выражение Visual Basic до C#, следует отредактировать его в конструкторе рабочих процессов и указать эквивалентное выражение C#. Преобразование выражений Visual Basic в C# не является обязательным, но после обновления выражений в конструкторе рабочих процессов они преобразуется в C# и не могут быть восстановлены в виде выражений Visual Basic.
+Поддерживаются Visual Basic выражения в существующих проектах рабочих процессов C# .NET Framework 4, которые были перенесены в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] . Когда Visual Basic выражения просматриваются в конструкторе рабочих процессов, текст существующего выражения Visual Basic заменяется значением, **установленным в XAML**, если только выражение Visual Basic не является допустимым синтаксисом C#. Если выражение Visual Basic имеет допустимый синтаксис C#, то отображается выражение. Чтобы обновить выражение Visual Basic до C#, следует отредактировать его в конструкторе рабочих процессов и указать эквивалентное выражение C#. Преобразование выражений Visual Basic в C# не является обязательным, но после обновления выражений в конструкторе рабочих процессов они преобразуется в C# и не могут быть восстановлены в виде выражений Visual Basic.
 
-### <a name="CodeWorkflows"></a>Использование C# выражений в рабочих процессах кода
+### <a name="using-c-expressions-in-code-workflows"></a><a name="CodeWorkflows"></a> Использование выражений C# в рабочих процессах кода
 
 Выражения на языке C# поддерживаются в рабочих процессах [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] с кодом, но до того, как рабочий процесс может быть вызван, выражения C# необходимо скомпилировать с помощью <xref:System.Activities.XamlIntegration.TextExpressionCompiler.Compile%2A?displayProperty=nameWithType>. Авторы рабочих процессов могут использовать `CSharpValue` для представления r-значений выражения и `CSharpReference` для представления l-значений выражения. В следующем примере рабочий процесс создается с помощью действия `Assign` и действия `WriteLine`, содержащихся в `Sequence`. `CSharpReference` указывается для аргумента `To` действия `Assign` и представляет l-значение выражения. `CSharpValue` указывается для аргумента `Value` действия `Assign` и для аргумента `Text` действия `WriteLine` и представляет r-значение для двух этих выражений.
 
@@ -124,7 +125,7 @@ static void CompileExpressions(Activity activity)
 ```
 
 > [!NOTE]
-> Если C# выражения не компилируются, выдается <xref:System.NotSupportedException> при вызове рабочего процесса с сообщением следующего вида: `Expression Activity type 'CSharpValue`1 "требует компиляции для выполнения.  Убедитесь, что рабочий процесс был скомпилирован.
+> Если выражения C# не компилируются, вызывается <xref:System.NotSupportedException> исключение, если рабочий процесс вызывается с сообщением следующего вида: `Expression Activity type 'CSharpValue` 1 "требуется компиляция для выполнения.  Убедитесь, что рабочий процесс был скомпилирован.
 
 Если рабочий процесс на основе пользовательского кода использует `DynamicActivity`, то требуется внести некоторые изменения в методе `CompileExpressions`, как показано в следующем примере кода.
 
@@ -189,21 +190,21 @@ static void CompileExpressions(DynamicActivity dynamicActivity)
 
 Дополнительные сведения о работе с выражениями в коде см. в разделе [создание рабочих процессов, действий и выражений с помощью императивного кода](authoring-workflows-activities-and-expressions-using-imperative-code.md).
 
-### <a name="XamlWorkflows"></a>Использование C# выражений в рабочих ПРОЦЕССах XAML
+### <a name="using-c-expressions-in-xaml-workflows"></a><a name="XamlWorkflows"></a> Использование выражений C# в рабочих процессах XAML
 
 Выражения на языке C# поддерживаются в рабочих процессах языка XAML. Скомпилированные рабочие процессы языка XAML компилируются в тип, свободные рабочие процессы языка XAML загружаются средой выполнения и компилируются в дерево действий при выполнении рабочего процесса.
 
-- [Скомпилированный XAML](csharp-expressions.md#CompiledXaml)
+- [Скомпилированные файлы Xaml](csharp-expressions.md#CompiledXaml)
 
 - [Свободный XAML](csharp-expressions.md#LooseXaml)
 
-#### <a name="CompiledXaml"></a>Скомпилированный XAML
+#### <a name="compiled-xaml"></a><a name="CompiledXaml"></a> Скомпилированный XAML
 
-Выражения на языке C# поддерживаются в скомпилированных рабочих процессах языка XAML, которые компилируются в тип как часть проекта рабочего процесса C#, целью для которых является [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]. Скомпилированный XAML является типом по умолчанию для создания рабочих процессов в Visual C# Studio, а проекты рабочих процессов, созданные в Visual C# studio, предназначены для [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] использования выражений.
+Выражения на языке C# поддерживаются в скомпилированных рабочих процессах языка XAML, которые компилируются в тип как часть проекта рабочего процесса C#, целью для которых является [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]. Скомпилированный XAML является типом по умолчанию для создания рабочих процессов в Visual Studio, а проекты рабочих процессов C#, созданные в Visual Studio, предназначены для [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] использования выражений C#.
 
-#### <a name="LooseXaml"></a>Свободный XAML
+#### <a name="loose-xaml"></a><a name="LooseXaml"></a> Свободный XAML
 
-Выражения на языке C# поддерживаются в свободных рабочих процессах языка XAML. Программа размещения рабочего процесса, которая загружает и вызывает свободный рабочий процесс языка XAML, должна иметь целью компиляции [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] и <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A> должно быть задано значение `true` (по умолчанию `false`). Чтобы установить свойству <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A> значение `true`, создайте экземпляр <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings> со свойством <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A>, установленным в значение `true`, и передайте его как параметр в <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load%2A?displayProperty=nameWithType>. Если для `CompileExpressions` не задано значение `true`, будет создано исключение <xref:System.NotSupportedException> с сообщением следующего вида: `Expression Activity type 'CSharpValue`1 "требует компиляции для выполнения.  Убедитесь, что рабочий процесс был скомпилирован.
+Выражения на языке C# поддерживаются в свободных рабочих процессах языка XAML. Программа размещения рабочего процесса, которая загружает и вызывает свободный рабочий процесс языка XAML, должна иметь целью компиляции [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] и <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A> должно быть задано значение `true` (по умолчанию `false`). Чтобы установить свойству <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A> значение `true`, создайте экземпляр <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings> со свойством <xref:System.Activities.XamlIntegration.ActivityXamlServicesSettings.CompileExpressions%2A>, установленным в значение `true`, и передайте его как параметр в <xref:System.Activities.XamlIntegration.ActivityXamlServices.Load%2A?displayProperty=nameWithType>. Если `CompileExpressions` для параметра не задано значение `true` , <xref:System.NotSupportedException> будет создано исключение с сообщением следующего вида: `Expression Activity type 'CSharpValue` 1 ' требуется компиляция для выполнения.  Убедитесь, что рабочий процесс был скомпилирован.
 
 ```csharp
 ActivityXamlServicesSettings settings = new ActivityXamlServicesSettings
@@ -216,9 +217,9 @@ DynamicActivity<int> wf = ActivityXamlServices.Load(new StringReader(serializedA
 
 Дополнительные сведения о работе с рабочими процессами XAML см. [в разделе Сериализация рабочих процессов и действий в XAML и обратно](serializing-workflows-and-activities-to-and-from-xaml.md).
 
-### <a name="WFServices"></a>Использование C# выражений в службах рабочих процессов XAMLX
+### <a name="using-c-expressions-in-xamlx-workflow-services"></a><a name="WFServices"></a> Использование выражений C# в службах рабочих процессов XAMLX
 
-Выражения на языке C# поддерживаются в службах рабочих процессов XAMLX. Если служба рабочего процесса размещается в IIS или WAS, то дополнительные действия не требуются. Но если служба рабочих процессов языка XAML является резидентной, то выражения C# необходимо скомпилировать. Чтобы скомпилировать C# выражения в локальной службе рабочего процесса xamlx, сначала загрузите файл XAMLX в `WorkflowService`, а затем передайте `Body` `WorkflowService` методу `CompileExpressions`, описанному в разделе "предыдущие [выражения using C# в рабочих процессах кода](csharp-expressions.md#CodeWorkflows) ". В следующем примере загружается служба рабочих процессов XAMLX, компилируются выражения на языке C#, затем открывается служба рабочих процессов, которая начинает ожидать запросы.
+Выражения на языке C# поддерживаются в службах рабочих процессов XAMLX. Если служба рабочего процесса размещается в IIS или WAS, то дополнительные действия не требуются. Но если служба рабочих процессов языка XAML является резидентной, то выражения C# необходимо скомпилировать. Чтобы скомпилировать выражения C# в локальной службе рабочего процесса XAMLX, сначала загрузите файл XAMLX в `WorkflowService` , а затем передайте в `Body` `WorkflowService` метод, `CompileExpressions` описанный в разделе о предыдущем [использовании выражений C# в рабочих процессах кода](csharp-expressions.md#CodeWorkflows) . В следующем примере загружается служба рабочих процессов XAMLX, компилируются выражения на языке C#, затем открывается служба рабочих процессов, которая начинает ожидать запросы.
 
 ```csharp
 // Load the XAMLX workflow service.
@@ -243,7 +244,7 @@ Console.WriteLine("Press enter to quit");
 Console.ReadLine();
 ```
 
-Если выражения C# не скомпилированы, операция `Open` выполняется успешно, но при вызове рабочий процесс завершится ошибкой. Следующий метод `CompileExpressions` тот же, что и метод из предыдущего раздела [использование C# выражений в рабочих процессах кода](csharp-expressions.md#CodeWorkflows) .
+Если выражения C# не скомпилированы, операция `Open` выполняется успешно, но при вызове рабочий процесс завершится ошибкой. Следующий метод аналогичен `CompileExpressions` методу из предыдущего раздела [Использование выражений C# в рабочих процессах кода](csharp-expressions.md#CodeWorkflows) .
 
 ```csharp
 static void CompileExpressions(Activity activity)

@@ -2,24 +2,26 @@
 title: ComPlusTLBImportError
 ms.date: 03/30/2017
 ms.assetid: fe087e97-efbb-4006-8465-ec2ff7860c7b
-ms.openlocfilehash: 760097157699b5a5e2265a03daf663146e84792d
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a10c94c8c697211bf85aabc78c5437e074eaf3de
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797992"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240151"
 ---
 # <a name="complustlbimporterror"></a>ComPlusTLBImportError
-ИД: 132  
+
+Идентификатор: 132  
   
- "Уровень серьезности" — Ошибка  
+ Важность: ошибка  
   
- Категори ServiceModel  
+ Категория: ServiceModel  
   
 ## <a name="description"></a>Описание  
+
  Это событие указывает, что произошла ошибка при импорте библиотеки типов. В событии указаны идентификатор интерфейса IID, идентификатор библиотеки типов, исключение, имя и идентификатор процесса.  
   
 ## <a name="see-also"></a>См. также
 
-- [Ведение журнала событий](index.md)
+- [Ведение журналов событий](index.md)
 - [Общие справочные сведения о событиях](events-general-reference.md)

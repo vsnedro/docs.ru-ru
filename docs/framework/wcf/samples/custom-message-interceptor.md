@@ -2,14 +2,15 @@
 title: Пользовательский перехватчик сообщений
 ms.date: 03/30/2017
 ms.assetid: 73f20972-53f8-475a-8bfe-c133bfa225b0
-ms.openlocfilehash: b9a517d0f8ada3680d49cd5ab0b13fa9e4d85402
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a3362ee33e6d3813d6715646ecb7d066f1930c76
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600066"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240918"
 ---
 # <a name="custom-message-interceptor"></a>Пользовательский перехватчик сообщений
+
 Данный образец демонстрирует использование модели расширяемости канала. В частности, показано, как реализовать пользовательский элемент привязки, который создает фабрики и прослушиватели каналов для перехвата всех входящих и исходящих сообщений в определенной точке стека времени выполнения. В состав образца входят клиент и сервер, которые демонстрируют использование этих пользовательских фабрик.  
   
  В этом образце служба и клиент являются консольными программами (EXE). Как клиент, так и служба используют общую библиотеку (DLL), которая содержит пользовательский элемент привязки и ассоциированные с ним объекты времени выполнения.  
@@ -37,9 +38,11 @@ ms.locfileid: "84600066"
 4. Добавьте раздел расширения элементов привязки, чтобы представить новый элемент привязки системе конфигурации.  
   
 ## <a name="channel-shapes"></a>Формы каналов  
+
  При создании пользовательского многоуровневого канала в первую очередь необходимо решить, какие формы требуются для канала. Данным инспектором сообщений поддерживается любая форма, поддерживаемая уровнем ниже (например, если уровень ниже может выполнить построение метода <xref:System.ServiceModel.Channels.IOutputChannel> и интерфейса <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, то также предоставляется метод <xref:System.ServiceModel.Channels.IOutputChannel> и интерфейс <xref:System.ServiceModel.Channels.IDuplexSessionChannel>).  
   
 ## <a name="channel-factory-and-listener-factory"></a>Фабрика и прослушиватель каналов  
+
  Следующий шаг создания пользовательского многоуровневого канала - реализация интерфейса <xref:System.ServiceModel.Channels.IChannelFactory> для каналов клиентов и интерфейса <xref:System.ServiceModel.Channels.IChannelListener> для каналов служб.  
   
  Эти классы получают внутреннюю фабрику и прослушиватель и делегируют все вызовы внутренней фабрике и прослушивателю, кроме `OnCreateChannel` и `OnAcceptChannel`.  
@@ -57,7 +60,8 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 ```  
   
 ## <a name="adding-a-binding-element"></a>Добавление элемента привязки  
- В образце определен пользовательский элемент привязки: `InterceptingBindingElement`. `InterceptingBindingElement`принимает в `ChannelMessageInterceptor` качестве входных данных и использует его `ChannelMessageInterceptor` для обработки сообщений, которые проходят через него. Только этот класс должен быть открытым. Фабрика, прослушиватель и каналы - все они могут являться внутренними реализациями открытых интерфейсов времени выполнения.  
+
+ В образце определен пользовательский элемент привязки: `InterceptingBindingElement`. `InterceptingBindingElement` принимает в `ChannelMessageInterceptor` качестве входных данных и использует его `ChannelMessageInterceptor` для обработки сообщений, которые проходят через него. Только этот класс должен быть открытым. Фабрика, прослушиватель и каналы - все они могут являться внутренними реализациями открытых интерфейсов времени выполнения.  
   
 ```csharp
 public class InterceptingBindingElement : BindingElement
@@ -66,6 +70,7 @@ public class InterceptingBindingElement : BindingElement
 ```  
   
 ## <a name="adding-configuration-support"></a>Добавление поддержки конфигурации  
+
  Для интеграции с конфигурацией привязки библиотека определяет обработчик раздела конфигурации в качестве раздела расширения элемента привязки. Файлы конфигурации клиента и сервера должны зарегистрировать расширение элемента привязки в системе конфигурации. Реализации, требующие предоставить их элементы привязки в системе конфигурации, могут наследовать от этого класса.  
   
 ```csharp
@@ -76,9 +81,11 @@ public abstract class InterceptingElement : BindingElementExtensionElement
 ```  
   
 ## <a name="adding-policy"></a>Добавление политики  
+
  Для интеграции с системой политики `InterceptingBindingElement` реализует расширение IPolicyExportExtension, чтобы сообщить об участии в создании политики. Чтобы поддержать импорт политики на созданном клиенте, пользователь может зарегистрировать производный класс `InterceptingBindingElementImporter` и переопределить `CreateMessageInterceptor`(), чтобы создать принадлежащий им класс `ChannelMessageInterceptor` с разрешенной политикой.  
   
 ## <a name="example-droppable-message-inspector"></a>Пример: инспектор сообщений, допускающий удаление.  
+
  Включенный в пример образец реализации `ChannelMessageInspector` удаляет сообщения.  
   
 ```csharp

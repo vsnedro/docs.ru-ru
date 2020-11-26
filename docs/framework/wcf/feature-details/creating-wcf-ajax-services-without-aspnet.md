@@ -2,14 +2,15 @@
 title: Создание служб WCF AJAX без использования ASP.NET
 ms.date: 03/30/2017
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934
-ms.openlocfilehash: b5f0f730f90227dcccc7e5ebf533d80a28f6e6eb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 37a442f85ddf5c0a1687c05e26f140d052eaa94f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599299"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239098"
 ---
 # <a name="creating-wcf-ajax-services-without-aspnet"></a>Создание служб WCF AJAX без использования ASP.NET
+
 Доступ к службам AJAX Windows Communication Foundation (WCF) можно получить с любой веб-страницы с поддержкой JavaScript, не требуя ASP.NET AJAX. В этом разделе описывается создание такой службы WCF.  
   
  Инструкции по использованию WCF с ASP.NET AJAX см. в разделе [Создание служб WCF для ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md).  
@@ -23,6 +24,7 @@ ms.locfileid: "84599299"
 - Доступ к службам AJAX WCF.  
   
 ## <a name="creating-an-ajax-endpoint"></a>Создание конечной точки AJAX  
+
  Самый простой способ включить поддержку AJAX в службе WCF — использовать <xref:System.ServiceModel.Activation.WebServiceHostFactory> в SVC-файле, связанном со службой, как показано в следующем примере.  
   
 ```text
@@ -62,6 +64,7 @@ ms.locfileid: "84599299"
  Рабочий пример см. в разделе [Служба AJAX с JSON и XML](../samples/ajax-service-with-json-and-xml-sample.md).  
   
 ## <a name="creating-an-ajax-compatible-service-contract"></a>Создание контракта службы, совместимого с технологией AJAX  
+
  По умолчанию контракты служб, предоставляемые через конечную точку AJAX, возвращают данные в формате XML. Кроме того, по умолчанию доступ к операциям службы предоставляется через HTTP-запросы POST, поступающие в URL-адреса, содержащие адрес конечной точки, после которого следует имя операции, как показано в следующем примере.  
   
 ```csharp
@@ -102,6 +105,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ```  
   
 ## <a name="accessing-ajax-services"></a>Доступ к службам AJAX  
+
  Конечные точки AJAX WCF всегда принимают запросы JSON и XML.  
   
  Запросы HTTP POST с типом содержимого "Application/JSON" рассматриваются как JSON, а те, которые имеют тип содержимого, указывающий на XML (например, "Text/XML"), обрабатываются как XML.  

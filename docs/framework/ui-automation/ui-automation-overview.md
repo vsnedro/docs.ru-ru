@@ -7,18 +7,19 @@ helpviewer_keywords:
 - user interface, see UI
 - accessibility, UI automation
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
-ms.openlocfilehash: 84b176e53f16ba0676e933efe9ed679bf425abc0
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 50c811a4b9b3b191abc35c5b3eb1220fec4ba3bd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163266"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240502"
 ---
 # <a name="ui-automation-overview"></a>Общие сведения о модели автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
- [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)]— Это новая платформа специальных возможностей для Microsoft Windows, доступная во всех операционных системах, поддерживающих [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] .  
+ [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] — Это новая платформа специальных возможностей для Microsoft Windows, доступная во всех операционных системах, поддерживающих [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] .  
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] обеспечивает программный доступ к большинству элементов [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] на рабочем столе, позволяя продуктам с поддержкой специальных возможностей, таким как средства чтения с экрана, предоставлять конечным пользователям сведения о [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] и управлять [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] средствами, отличными от стандартного ввода данных. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] также позволяет скриптам автоматических тестов взаимодействовать с [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
@@ -32,7 +33,9 @@ ms.locfileid: "87163266"
  Поставщики автоматизации пользовательского интерфейса предлагают некоторую поддержку клиентских приложений Microsoft Active Accessibility с помощью встроенной службы моста.  
   
 <a name="Providers_and_Clients"></a>
+
 ## <a name="providers-and-clients"></a>Поставщики и клиенты  
+
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] состоит из четырех основных компонентов, как показано в следующей таблице.  
   
 |Компонент|Описание|  
@@ -44,7 +47,7 @@ ms.locfileid: "87163266"
   
  С точки зрения разработчика программного обеспечения существует два способа использования [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]: создание поддержки пользовательских элементов управления (с помощью API поставщика) и создание приложений, использующих ядро [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] для взаимодействия с элементами [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] (с помощью API клиента). В зависимости от ключевых целей вы должны обращаться к разным частям документации. В следующих разделах вы можете подробнее ознакомиться с основными понятиями и получить практические знания.  
   
-|Section|Предмет рассмотрения|Аудитория|  
+|Раздел|Предмет рассмотрения|Аудитория|  
 |-------------|--------------------|--------------|  
 |[Основы модели автоматизации пользовательского интерфейса](index.md) (этот раздел)|Расширенный обзор основных понятий.|Все.|  
 |[Поставщики автоматизации пользовательского интерфейса для управляемого кода](ui-automation-providers-for-managed-code.md)|Обзоры и практические руководства, помогающие использовать API поставщика.|Разработчики элементов управления.|  
@@ -63,7 +66,9 @@ ms.locfileid: "87163266"
 |<xref:System.Windows.Automation.Peers>|PresentationFramework|Разработчики поставщиков автоматизации пользовательского интерфейса для [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].|  
   
 <a name="UI_Automation_Model"></a>
+
 ## <a name="ui-automation-model"></a>Модель автоматизации пользовательского интерфейса  
+
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] предоставляет клиентским приложениям каждый фрагмент [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] как <xref:System.Windows.Automation.AutomationElement>. Элементы содержатся в древовидной структуре с рабочим столом в качестве корневого элемента. Клиенты могут фильтровать базовое представление дерева как представление элемента управления или представление содержимого. Приложения также могут создавать настраиваемые представления.  
   
  Объекты<xref:System.Windows.Automation.AutomationElement> предоставляют общие свойства элементов [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] , которые они представляют. Одно из этих свойств — это тип элемента управления, который определяет его базовый внешний вид и функциональность как единую распознаваемую сущность, например кнопку или флажок.  
@@ -75,7 +80,7 @@ ms.locfileid: "87163266"
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] также предоставляет клиентским приложениям сведения с помощью событий. В отличие от Виневентс, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] события не основаны на механизме вещания. Клиенты[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] регистрируются для конкретных уведомлений о событиях и могут запрашивать, чтобы конкретные свойства [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] и сведения о шаблонах элементов управления передавались в их обработчики событий. Кроме того, событие [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] содержит ссылку на породивший его элемент. Поставщики могут повысить производительность, вызывая события выборочно, в зависимости от того, являются ли клиенты прослушивающими.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о дереве модели автоматизации пользовательского интерфейса](ui-automation-tree-overview.md)
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)

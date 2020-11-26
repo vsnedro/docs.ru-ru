@@ -7,14 +7,15 @@ helpviewer_keywords:
 - MultipleView control pattern
 - control patterns, MultipleView
 ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
-ms.openlocfilehash: 0d65d57637891fcb1307f5ee83a417941ff323fb
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 7e64a696e8dc96123631853b06ea3ccee434d2f1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168228"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239437"
 ---
 # <a name="implementing-the-ui-automation-multipleview-control-pattern"></a>Реализация шаблона элемента управления MultipleView модели автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -25,7 +26,9 @@ ms.locfileid: "87168228"
  Примеры элементов управления, которые могут представлять несколько представлений, включают представление списка (которое может отображать его содержимое в виде эскизов, плитки, значки или сведения), диаграммы Microsoft Excel (круговые, линейные, линейчатые, значения ячеек с формулами), документы Microsoft Word (обычная, веб-макет, макет печати, макет для чтения, контур), календарь Microsoft Outlook (год, месяц, неделя, день) и обложки проигрывателя Microsoft Windows Media. Поддерживаемые представления определяются разработчиками элементов управления и относятся к конкретному элементу управления.  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## <a name="implementation-guidelines-and-conventions"></a>Правила и соглашения реализации  
+
  При реализации шаблона элемента управления Multiple View обратите внимание на следующие правила и соглашения.  
   
 - <xref:System.Windows.Automation.Provider.IMultipleViewProvider> также должен быть реализован в контейнере, который управляет текущим представлением, если он отличается от элемента управления, обеспечивающего текущее представление. Например, проводник содержит элемент управления "Список" для текущего содержимого папки, а представлением для этого элемента управления управляет приложение проводника.  
@@ -37,27 +40,31 @@ ms.locfileid: "87168228"
 - Имена представлений должны быть подходящими для использования в приложениях преобразования текста в речь, шрифта Брайля и других приложениях для удобства чтения.  
   
 <a name="Required_Members_for_IMultipleViewProvider"></a>
+
 ## <a name="required-members-for-imultipleviewprovider"></a>Обязательные члены для IMultipleViewProvider  
+
  Следующие свойства и методы обязательны для реализации IMultipleViewProvider.  
   
 |Обязательные члены|Тип члена|Примечания|  
 |----------------------|-----------------|-----------|  
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView%2A>|Свойство|None|  
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews%2A>|Метод|None|  
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A>|Метод|None|  
-|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A>|Метод|None|  
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.CurrentView%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetSupportedViews%2A>|Метод|Нет|  
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A>|Метод|Нет|  
+|<xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A>|Метод|Нет|  
   
  Отсутствуют события, связанные с этим шаблоном элемента управления.  
   
 <a name="Exceptions"></a>
+
 ## <a name="exceptions"></a>Исключения  
+
  Поставщик должен вызывать следующие исключения.  
   
 |Тип исключения|Условие|  
 |--------------------|---------------|  
 |<xref:System.ArgumentException>|Когда метод <xref:System.Windows.Automation.Provider.IMultipleViewProvider.SetCurrentView%2A> или <xref:System.Windows.Automation.Provider.IMultipleViewProvider.GetViewName%2A> вызывается с параметром, который не является членом коллекции поддерживаемых представлений.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)

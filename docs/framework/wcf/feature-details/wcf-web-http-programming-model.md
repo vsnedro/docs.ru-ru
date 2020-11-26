@@ -6,17 +6,19 @@ helpviewer_keywords:
 - POX
 - REST
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
-ms.openlocfilehash: dd9cc282750e59e5ccbfec428c7252ab9689395f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 644bcba9f8ced965ff962962bd83e1ae170159a7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589855"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239007"
 ---
 # <a name="wcf-web-http-programming-model"></a>Модель веб-программирования HTTP WCF
+
 Модель программирования веб-HTTP Windows Communication Foundation (WCF) позволяет разработчикам предоставлять операции службы WCF конечным точкам, не являющимся SOAP. Эта возможность подробно описана в следующих подразделах.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md)  
  Содержит общие сведения о модели веб-программирования HTTP для Windows Communication Foundation (WCF).  
   

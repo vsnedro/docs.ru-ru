@@ -6,14 +6,15 @@ helpviewer_keywords:
 - UI Automation, properties
 - properties, UI Automation
 ms.assetid: a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8
-ms.openlocfilehash: 17d780c059530be8c91890302ea4066de2d4aa73
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 95729c1d26a9ae7fdec4fa4215f9478251612242
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163212"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240398"
 ---
 # <a name="ui-automation-properties-overview"></a>Общие сведения о свойствах автоматизированного пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -26,7 +27,9 @@ ms.locfileid: "87163212"
 - [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)  
   
 <a name="Property_Identifiers"></a>
+
 ## <a name="property-identifiers"></a>Идентификаторы свойств  
+
  Каждое свойство определяется номером и именем. Имена свойств используются только для отладки и диагностики. Поставщики используют числовые идентификаторы для идентификации входящих запросов свойств. Однако клиентские приложения используют для идентификации свойств, которые им требуется получить, только ссылку <xref:System.Windows.Automation.AutomationProperty>, которая включает номер и имя.  
   
  Объекты<xref:System.Windows.Automation.AutomationProperty> , представляющие конкретные свойства, доступны как поля в различных классах. По соображениям безопасности поставщики автоматизации пользовательского интерфейса получают эти объекты из отдельного набора классов, содержащихся в Uiautomationtypes.dll.  
@@ -53,7 +56,9 @@ ms.locfileid: "87163212"
 |Возможности и состояние окна|<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.WindowPatternIdentifiers>|  
   
 <a name="Properties_by_Category"></a>
+
 ## <a name="properties-by-category"></a>Свойства, упорядоченные по категориям  
+
  В следующих таблицах указаны свойства, идентификаторы которых находятся в <xref:System.Windows.Automation.AutomationElement> и <xref:System.Windows.Automation.AutomationElementIdentifiers> . Эти свойства являются общими для всех элементов управления. Почти все из них, скорее всего, будут статическими во время существования приложения поставщика; большинство динамических свойств связано с шаблонами элементов управления.  
   
  В столбце **Доступ к свойству** перечислены другие методы доступа для каждого свойства, в дополнение к <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> и <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>. Дополнительные сведения о получении свойств в клиентском приложении см. в разделе [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
@@ -66,7 +71,7 @@ ms.locfileid: "87163212"
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
 |<xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle%2A>|  
-|<xref:System.Windows.Automation.AutomationElement.CultureProperty>|н/д|  
+|<xref:System.Windows.Automation.AutomationElement.CultureProperty>|Недоступно|  
 |<xref:System.Windows.Automation.AutomationElement.HelpTextProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsOffscreen%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.OrientationProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Orientation%2A>|  
@@ -81,7 +86,7 @@ ms.locfileid: "87163212"
 |<xref:System.Windows.Automation.AutomationElement.ItemTypeProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.LocalizedControlType%2A>|  
   
-### <a name="identification"></a>Определение  
+### <a name="identification"></a>Identification  
   
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
@@ -94,7 +99,7 @@ ms.locfileid: "87163212"
 |<xref:System.Windows.Automation.AutomationElement.RuntimeIdProperty>|<xref:System.Windows.Automation.AutomationElement.GetRuntimeId%2A>|  
 |<xref:System.Windows.Automation.AutomationElement.NativeWindowHandleProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.NativeWindowHandle%2A>|  
   
-### <a name="interaction"></a>Взаимодействие  
+### <a name="interaction"></a>Тип взаимодействия  
   
 |Идентификатор свойства|Доступ к свойству|  
 |-------------------------|---------------------|  
@@ -137,7 +142,9 @@ ms.locfileid: "87163212"
 |<xref:System.Windows.Automation.AutomationElement.ItemStatusProperty>|<xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus%2A>|  
   
 <a name="Localization"></a>
+
 ## <a name="localization"></a>Локализация  
+
  Поставщики[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] должны представлять следующие свойства на языке операционной системы.  
   
 - <xref:System.Windows.Automation.AutomationElementIdentifiers.AcceleratorKeyProperty>  
@@ -151,7 +158,9 @@ ms.locfileid: "87163212"
 - <xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>  
   
 <a name="Properties_and_Events"></a>
+
 ## <a name="properties-and-events"></a>Свойства и события  
+
  Тесная связь со свойствами в [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] — это концепция событий изменения свойств. Для динамических свойств клиентскому приложению требуется способ узнать об изменении значения свойства, чтобы оно могло обновить свой кэш данных или отреагировать на новые сведения другим способом.  
   
  Поставщики вызывают события, когда что-нибудь в [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] изменяется. Например, если флажок устанавливается или снимается, реализация поставщика шаблона Toggle вызывает событие изменения свойства. Поставщики могут вызывать события выборочно, в зависимости от наличия клиентов, прослушивающих события или прослушивающих определенные события.  
@@ -160,7 +169,7 @@ ms.locfileid: "87163212"
   
  Клиенты прослушивают события, подписавшись на их. Подписка на события означает создание методов делегата, могущих обрабатывать эти события, и затем передачу этих методов в [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] вместе с конкретными событиями, которые будут обработаны в этих методах. В частности, для событий изменения свойств клиенты должны реализовать <xref:System.Windows.Automation.AutomationPropertyChangedEventHandler>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Кэширование в клиентах автоматизации пользовательского интерфейса](caching-in-ui-automation-clients.md)
 - [Свойства автоматизации пользовательского интерфейса для клиентов](ui-automation-properties-for-clients.md)

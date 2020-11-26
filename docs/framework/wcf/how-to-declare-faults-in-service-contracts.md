@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e8da98e7-d22f-4f60-ac82-3fb0928a353f
-ms.openlocfilehash: 2de14a76fd2ce8ad656c2b64f5f9e5b17d81eebc
-ms.sourcegitcommit: 56f1d1203d0075a461a10a301459d3aa452f4f47
+ms.openlocfilehash: 06262d5f698f8898e162e92dad272a7188897af0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71216862"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240060"
 ---
 # <a name="how-to-declare-faults-in-service-contracts"></a>Практическое руководство. Объявление сбоев в контрактах служб
 
@@ -18,7 +18,7 @@ ms.locfileid: "71216862"
 
 ## <a name="create-a-service-contract-that-specifies-a-soap-fault"></a>Создайте контракт службы, в котором определяется ошибка SOAP
 
-1. Создайте контракт службы, который содержит как минимум одну операцию. Пример см. в статье [Практическое руководство. Определите контракт](how-to-define-a-wcf-service-contract.md)службы.
+1. Создайте контракт службы, который содержит как минимум одну операцию. Пример см. в разделе [как определить контракт службы](how-to-define-a-wcf-service-contract.md).
 
 2. Выберите операцию, которая задает условие ошибки, о которой предполагается уведомить клиентов. Сведения о том, какие условия ошибок по высоте возвращают ошибки SOAP клиентам, см. в разделе [Указание и обработка ошибок в контрактах и службах](specifying-and-handling-faults-in-contracts-and-services.md).
 
@@ -30,6 +30,7 @@ ms.locfileid: "71216862"
 4. Повторите шаги 2 и 3 для всех операций контракта, которые могут передавать клиентам условия ошибок.
 
 ## <a name="implementing-an-operation-to-return-a-specified-soap-fault"></a>Реализация операции, возвращающей заданную ошибку SOAP
+
  После задания операции, возвращающей конкретную ошибку SOAP (например, как в описанной выше процедуре) для передачи условия ошибки вызывающему приложения, необходимо реализовать соответствующую спецификацию.
 
 ### <a name="throw-the-specified-soap-fault-in-the-operation"></a>Создайте заданную ошибку SOAP в операции

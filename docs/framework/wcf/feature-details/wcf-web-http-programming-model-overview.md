@@ -2,14 +2,15 @@
 title: Общие сведения о модели программирования WCF Web HTTP
 ms.date: 03/30/2017
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
-ms.openlocfilehash: 34d7945b8a7898955794e2ad5813bc66f52b60c7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 713dd05daa5071f253afd70e735475e49a986aa7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594937"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239020"
 ---
 # <a name="wcf-web-http-programming-model-overview"></a>Общие сведения о модели программирования WCF Web HTTP
+
 Модель программирования веб-сервера HTTP Windows Communication Foundation (WCF) предоставляет основные элементы, необходимые для сборки веб-служб HTTP с помощью WCF. Службы WCF WEB HTTP предназначены для доступа к широкому спектру возможных клиентов, включая веб-браузеры, и имеют следующие уникальные требования.  
   
 - **URI и обработка URI** Универсальные коды ресурсов (URI) играют центральную роль в разработке веб-служб HTTP. Модель программирования WCF WEB HTTP использует <xref:System.UriTemplate> <xref:System.UriTemplateTable> классы и для предоставления возможностей обработки URI.  
@@ -29,6 +30,7 @@ ms.locfileid: "84594937"
 > Установка расширения WebDAV для служб IIS может привести к тому, что веб-службы HTTP будут возвращать ошибку HTTP 405, поскольку расширение WebDAV пытается обрабатывать все запросы PUT. Для решения этой проблемы расширение WebDAV можно удалить либо отключить его для данного веб-узла. Дополнительные сведения см. в разделе [IIS и WebDAV](https://learn.iis.net/page.aspx/357/webdav-for-iis-70/) .  
   
 ## <a name="uri-processing-with-uritemplate-and-uritemplatetable"></a>Обработка универсального кода ресурса (URI) с помощью UriTemplate и UriTemplateTable  
+
  Шаблоны URI предоставляют эффективный синтаксис представления больших наборов URI или схожих по структуре URI. Например, следующий шаблон представляет набор всех трехсегментных URI, начинающихся с "a" и заканчивающихся на "c", независимо от значения промежуточного сегмента: a/{segment}/c.  
   
  Данный шаблон описывает универсальные коды ресурса, подобные следующим:  
@@ -56,6 +58,7 @@ ms.locfileid: "84594937"
  Для связывания операций службы с набором URI, который описывается шаблоном <xref:System.UriTemplate>, модель службы WCF использует шаблон <xref:System.UriTemplateTable> и таблицу шаблонов <xref:System.UriTemplate>. Операция службы связывается с шаблоном <xref:System.UriTemplate> с помощью атрибута <xref:System.ServiceModel.Web.WebGetAttribute> или <xref:System.ServiceModel.Web.WebInvokeAttribute>. Дополнительные сведения о <xref:System.UriTemplate> и см. в <xref:System.UriTemplateTable> разделе [UriTemplate и UriTemplateTable](uritemplate-and-uritemplatetable.md) .  
   
 ## <a name="webget-and-webinvoke-attributes"></a>Атрибуты WebGet и WebInvoke  
+
  Службы WCF WEB HTTP используют команды извлечения (например, HTTP GET) в дополнение к различным командам вызова (например, HTTP POST, WHERE и DELETE). Модель программирования WCF WEB HTTP позволяет разработчикам служб управлять шаблоном и командой URI, связанными с операциями службы, с помощью <xref:System.ServiceModel.Web.WebGetAttribute> и <xref:System.ServiceModel.Web.WebInvokeAttribute> . Атрибуты <xref:System.ServiceModel.Web.WebGetAttribute> и <xref:System.ServiceModel.Web.WebInvokeAttribute> позволяют управлять привязкой отдельных операций к URI и методам HTTP, связанным с этими URI. Например, добавление атрибутов <xref:System.ServiceModel.Web.WebGetAttribute> и <xref:System.ServiceModel.Web.WebInvokeAttribute> продемонстрировано в следующем примере кода.  
   
 ```csharp
@@ -99,6 +102,7 @@ interface ICustomer
  Полный пример службы WCF, использующей модель программирования WCF WEB HTTP, см. в разделе [как создать базовую веб-службу HTTP WCF](how-to-create-a-basic-wcf-web-http-service.md)  
   
 ## <a name="uritemplate-query-string-parameters-and-urls"></a>Параметры строки запроса UriTemplate и URL-адреса  
+
  Веб-службы можно вызвать из веб-браузера, введя URL-адрес, связанный с операцией службы. Эти операции службы могут принимать параметры строки запроса, которые необходимо указывать в URL-адресе в строковом формате. В таблице ниже представлены типы, которые могут передаваться внутри URL-адреса и используемого формата.  
   
 |Тип|Формат|  
@@ -125,6 +129,7 @@ interface ICustomer
 |Типы, содержащие `TypeConverterAttribute`, который может преобразовать типы в строковое представление и обратно.|Зависит от преобразователя типов.|  
   
 ## <a name="formats-and-the-wcf-web-http-programming-model"></a>Форматы и модель программирования WCF WEB HTTP  
+
  Модель программирования WCF WEB HTTP обладает новыми возможностями для работы с различными форматами данных. На уровне привязки <xref:System.ServiceModel.WebHttpBinding> может считывать и записывать следующие различные типы данных.  
   
 - XML  
@@ -142,9 +147,10 @@ interface ICustomer
 Так как модель программирования WCF WEB HTTP не поддерживает протоколы WS-*, единственным способом защиты веб-службы HTTP WCF является предоставление службы по протоколу HTTPS с помощью SSL. Дополнительные сведения о настройке SSL с помощью IIS 7,0 см. в статье [Реализация SSL в IIS](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis).
   
 ## <a name="troubleshooting-the-wcf-web-http-programming-model"></a>Устранение неполадок в модели программирования WCF WEB HTTP  
+
  Когда службы WCF WEB HTTP вызываются с помощью <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> для создания канала, <xref:System.ServiceModel.Description.WebHttpBehavior> использует адрес <xref:System.ServiceModel.EndpointAddress>, заданный в файле конфигурации, даже в случае, когда в <xref:System.ServiceModel.EndpointAddress> передается другой <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Синдикация WCF](wcf-syndication.md)
 - [Объектная модель программирования WCF Web HTTP](wcf-web-http-programming-object-model.md)
