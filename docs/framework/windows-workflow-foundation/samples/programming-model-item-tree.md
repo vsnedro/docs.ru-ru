@@ -2,20 +2,22 @@
 title: Программирование дерева элементов модели
 ms.date: 03/30/2017
 ms.assetid: 0229efde-19ac-4bdc-a187-c6227a7bd1a5
-ms.openlocfilehash: f14b140fdac95f3763cc5625841a725793876fa4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 059bb3edcfe41f52e2244ff6f5bf3fc78a4262bb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79142697"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96235809"
 ---
 # <a name="programming-model-item-tree"></a>Программирование дерева элементов модели
-В этом примере показано, как перемещаться по <xref:System.Activities.Presentation.Model.ModelItem> дереву с помощью декларативного связывания данных из Представления Windows Foundation (WPF) Tree View.
+
+В этом образце показано, как перемещаться по <xref:System.Activities.Presentation.Model.ModelItem> дереву с помощью декларативной привязки данных из древовидного представления Windows Presentation Foundation (WPF).
 
 ## <a name="sample-details"></a>Подробные сведения об образце
- Дерево <xref:System.Activities.Presentation.Model.ModelItem> — это абстракция, используемая инфраструктурой Конструктора рабочего процесса Windows для разоблачения данных об отредактированном базовом экземпляре. Следующая иллюстрация представляет собой изображение различных уровней инфраструктуры в проектировщике рабочего процесса.
 
- ![Диаграмма, отображая архитектуру рабочего процесса designer.](./media/programming-model-item-tree/workflow-designer-architecture.jpg)
+ <xref:System.Activities.Presentation.Model.ModelItem>Дерево является абстракцией, используемой инфраструктурой Конструктор рабочих процессов Windows для предоставления данных об изменяемом базовом экземпляре. На следующем рисунке показаны различные уровни инфраструктуры в конструктор рабочих процессов.
+
+ ![Схема, показывающая архитектуру конструктор рабочих процессов.](./media/programming-model-item-tree/workflow-designer-architecture.jpg)
 
  Элемент <xref:System.Activities.Presentation.Model.ModelItem> состоит из указателя базового значения, а также коллекции объектов <xref:System.Activities.Presentation.Model.ModelProperty>. Объект <xref:System.Activities.Presentation.Model.ModelProperty> в свою очередь включает данные, такие как имя и тип свойства, и указатель значения, который в свою очередь является еще одним элементом <xref:System.Activities.Presentation.Model.ModelItem>. Преобразователь значений используется для манипуляции некоторыми элементами <xref:System.Activities.Presentation.Model.ModelItem>, возвращаемыми свойством <xref:System.Activities.Presentation.Model.ModelProperty>, чтобы они правильно отображались в представлении дерева. Далее в образце показано, как императивно программировать с использованием дерева <xref:System.Activities.Presentation.Model.ModelItem> при помощи императивных инструкций, в соответствии со следующим примером.
 
@@ -29,25 +31,25 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 
 #### <a name="to-use-this-sample"></a>Использование этого образца
 
-1. Откройте решение ProgrammingModelItemTree.sln в Visual Studio 2010.
+1. Откройте решение Программингмоделитемтри. sln в Visual Studio 2010.
 
-2. Создайте решение, выбрав **решение Build** из меню **Build.**
+2. Создайте решение, выбрав пункт **построить решение** в меню **Сборка** .
 
 3. Нажмите клавишу F5 для запуска приложения. Затем отображается форма WPF.
 
-4. Нажмите кнопку **Load WF,** чтобы загрузить <xref:System.Activities.Presentation.Model.ModelItem> и привязать ее к представлению дерева.
+4. Нажмите кнопку **Загрузить WF** , чтобы загрузить <xref:System.Activities.Presentation.Model.ModelItem> и привязать его к представлению в виде дерева.
 
-5. Нажатие кнопки **«Дерево изменения модели изменения»** выполняет предыдущий код, чтобы добавить элемент в дерево и установить свойство.
+5. При нажатии кнопки " **изменить дерево элементов модели** " выполняется предыдущий код для добавления элемента в дерево и задания свойства.
 
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ProgrammingModelItemTree`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Data.IValueConverter>

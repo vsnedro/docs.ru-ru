@@ -8,15 +8,16 @@ helpviewer_keywords:
 - WCF, security
 - ProtectionLevel property
 ms.assetid: 3d4e8f80-0f9e-4a26-9899-beb6584e78df
-ms.openlocfilehash: 4ff835f767852da586a3a35b7f4ce2edf99db283
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 359364228c4ab4d5b247f4f42f3ef3391f774197
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320911"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236602"
 ---
 # <a name="how-to-set-the-protectionlevel-property"></a>Практическое руководство. Установка свойства ProtectionLevel
-Уровень защиты можно задать, применив соответствующий атрибут и задав свойство. Защиту на уровне службы можно задать таким образом, чтобы она влияла на все части каждого сообщения, можно также задать защиту на более детализированных уровнях - от методов до частей сообщения. Дополнительные сведения о свойстве `ProtectionLevel` см. в разделе Общие сведения об [уровне защиты](understanding-protection-level.md).  
+
+Уровень защиты можно задать, применив соответствующий атрибут и задав свойство. Защиту на уровне службы можно задать таким образом, чтобы она влияла на все части каждого сообщения, можно также задать защиту на более детализированных уровнях - от методов до частей сообщения. Дополнительные сведения о `ProtectionLevel` свойстве см. в разделе Основные сведения об [уровне защиты](understanding-protection-level.md).  
   
 > [!NOTE]
 > Уровни защиты можно задавать только в коде, а не в конфигурации.  
@@ -42,6 +43,7 @@ ms.locfileid: "72320911"
      [!code-vb[C_ProtectionLevel#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#2)]  
   
 ## <a name="protecting-fault-messages"></a>Защита сообщений об ошибках  
+
  Создаваемые в службе исключения можно отправить клиенту в виде ошибок SOAP. Дополнительные сведения о создании строго типизированных ошибок см. [в разделе Указание и обработка ошибок в контрактах и службах](specifying-and-handling-faults-in-contracts-and-services.md) и [инструкции: объявление ошибок в контрактах служб](how-to-declare-faults-in-service-contracts.md).  
   
 #### <a name="to-protect-a-fault-message"></a>Защита сообщения об ошибке  
@@ -61,6 +63,7 @@ ms.locfileid: "72320911"
      [!code-vb[C_ProtectionLevel#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#4)]  
   
 ## <a name="protecting-message-parts"></a>Защита частей сообщения  
+
  Для защиты частей сообщения следует использовать контракт сообщения. Дополнительные сведения о контрактах сообщений см. [в разделе Использование контрактов сообщений](./feature-details/using-message-contracts.md).  
   
 #### <a name="to-protect-a-message-body"></a>Защита тела сообщения  
@@ -71,18 +74,20 @@ ms.locfileid: "72320911"
   
 3. Примените атрибут <xref:System.ServiceModel.MessageHeaderAttribute> к полю, которое будет выражено как заголовок сообщения, и задайте значение `ProtectionLevel` для свойства <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
-4. Примените <xref:System.ServiceModel.MessageBodyMemberAttribute> к любому полю, которое будет выводиться как часть текста сообщения, и задайте для свойства `ProtectionLevel` значение <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, как показано в следующем примере.  
+4. Примените <xref:System.ServiceModel.MessageBodyMemberAttribute> к любому полю, которое будет выражаться как часть текста сообщения, и задайте `ProtectionLevel` для свойства значение <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> , как показано в следующем примере.  
   
      [!code-csharp[C_ProtectionLevel#5](../../../samples/snippets/csharp/VS_Snippets_CFX/c_protectionlevel/cs/source.cs#5)]
      [!code-vb[C_ProtectionLevel#5](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#5)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере демонстрируется, как задать свойство `ProtectionLevel` нескольких классов атрибута в разных местах службы.  
   
  [!code-csharp[C_ProtectionLevel#6](../../../samples/snippets/csharp/VS_Snippets_CFX/c_protectionlevel/cs/source.cs#6)]
  [!code-vb[C_ProtectionLevel#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_protectionlevel/vb/source.vb#6)]  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  В следующем примере кода показаны пространства имен, необходимые для компиляции примера кода.  
   
  [!code-csharp[C_ProtectionLevel#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_protectionlevel/cs/source.cs#0)]

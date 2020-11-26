@@ -2,14 +2,15 @@
 title: TransactionFlowBindingElement
 ms.date: 03/30/2017
 ms.assetid: 0a9656fe-2400-45ca-ad79-92715c8cf190
-ms.openlocfilehash: a58d5620abbb636480ceea3020552246ae284842
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 577502d1cd3d81784cb9b1eb3b249376b8ffa6b8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641688"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96234899"
 ---
 # <a name="transactionflowbindingelement"></a>TransactionFlowBindingElement
+
 TransactionFlowBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,29 +25,34 @@ class TransactionFlowBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс TransactionFlowBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс TransactionFlowBindingElement имеет следующие свойства.  
   
 ### <a name="issuedtokens"></a>IssuedTokens  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Задает требование для заголовка выданных маркеров безопасности (IssuedTokens из WS-Trust).  
   
 ### <a name="transactionprotocol"></a>TransactionProtocol  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Протокол транзакций, используемый службой для передачи транзакций.  
   
-### <a name="transactions"></a>Транзакции  
+### <a name="transactions"></a>Transactions  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, поддерживается ли входящая транзакция.  
   

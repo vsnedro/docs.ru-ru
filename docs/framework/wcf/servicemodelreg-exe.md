@@ -3,14 +3,15 @@ title: Средство регистрации ServiceModel (ServiceModelReg.exe
 description: Используйте это средство командной строки для управления регистрацией компонентов WCF и WF на одном компьютере, если возникают проблемы с активацией службы.
 ms.date: 03/30/2017
 ms.assetid: 396ec5ae-e34f-4c64-a164-fcf50e86b6ac
-ms.openlocfilehash: 347b1b8071abe7d8eb7e16ffd879c1fdb9825bc7
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: d8d5bc4dc3de021e2110fb953dbc4d6c7d7972d0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245899"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96235926"
 ---
 # <a name="servicemodel-registration-tool-servicemodelregexe"></a>Средство регистрации ServiceModel (ServiceModelReg.exe)
+
 Этот инструмент командной строки предоставляет возможность управления регистрацией компонентов WCF и WF на одном компьютере. В обычных условиях использование данного средства не требуется, так как при установке компонентов WCF и WF производится их правильная настройка. Но если вы испытываете проблемы с активацией службы, то можно попробовать зарегистрировать компоненты с помощью этого средства.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -19,7 +20,8 @@ ms.locfileid: "85245899"
 ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]  
 ```  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Примечания  
+
  Это средство можно найти в следующей папке:  
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\  
@@ -43,6 +45,7 @@ ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]
 |`-?`|Отображает текст справки|  
   
 ## <a name="fixing-the-fileloadexception-error"></a>Исправление ошибки FileLoadException  
+
  Если вы установили предыдущие версии WCF на компьютере, при `FileLoadFoundException` запуске средства ServiceModelReg для регистрации новой установки может возникнуть ошибка. Это может произойти, даже если пользователь вручную удалил файлы из каталога установки предыдущей версии, но оставил файл machine.config без изменений.  
   
  Сообщение об ошибке подобно приведенному ниже.  
@@ -69,6 +72,7 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
  Найдите в этом файле все XML-узлы, которые ссылаются на "System. ServiceModel, версия = 2.0.0.0", удалите их и все дочерние узлы. Сохраните файл и повторно запустите ServiceModelReg.exe. Проблема устранена.  
   
 ## <a name="examples"></a>Примеры  
+
  В следующих примерах показано, как использовать наиболее употребимые параметры средства ServiceModelReg.exe.  
   
 ```console  

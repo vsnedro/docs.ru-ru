@@ -6,14 +6,15 @@ helpviewer_keywords:
 - stack event [.NET Framework]
 - ETW, stack event (CLR)
 ms.assetid: f612fa5b-4b62-4593-a19e-85c9b1018dce
-ms.openlocfilehash: cab496615c4ef17831895b72c8987917e3c06e77
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 3b890e587abd5cb1b7315fe41897f24638fd4604
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474141"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236212"
 ---
 # <a name="stack-etw-event"></a>События стека (трассировка событий Windows)
+
 Событие стека должно использоваться вместе с другими событиями для создания трассировок стека после вызова события. Оно регистрируется при включенном поставщике среды выполнения. Это очень часто случающееся событие, так как оно сопровождает создание другого события времени выполнения. По этой причине рекомендуется использовать его с осторожностью.  
   
  В таблице ниже показаны ключевое слово и уровень. (Дополнительные сведения см. в разделе [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
@@ -38,6 +39,6 @@ ms.locfileid: "86474141"
 |FrameCount|win:UInt32|Число кадров в трассировке стека.|  
 |Стек|win:Pointer|Столбцы указателей инструкций.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События трассировки событий Windows в среде CLR](clr-etw-events.md)

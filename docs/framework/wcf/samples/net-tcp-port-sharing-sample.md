@@ -2,14 +2,15 @@
 title: Пример совместного использования портов Net.TCP
 ms.date: 03/30/2017
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-ms.openlocfilehash: 6c196380951d0da912cd937e3ebc38a03f80489c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fa62734ed6a4a016011c9f29b3665dae05a000c6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584315"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96235393"
 ---
 # <a name="nettcp-port-sharing-sample"></a>Пример совместного использования портов Net.TCP
+
 Протокол TCP/IP использует 16-разрядное число, называемое номером порта, чтобы различать подключения к разным сетевым приложениям, выполняющимся на одном компьютере. Если приложение ожидает передачи данных через порт, то весь трафик TCP через этот порт перенаправляется данному приложению. Другие приложения не могут одновременно ожидать передачи данных через тот же порт.  
   
 > [!IMPORTANT]
@@ -34,6 +35,7 @@ Unhandled Exception: System.ServiceModel.CommunicationException: The TransportMa
  Общий доступ к портам включается на сервере путем задания свойства <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> привязки <xref:System.ServiceModel.NetTcpBinding> или элемента привязки <xref:System.ServiceModel.Channels.TcpTransportBindingElement>. Чтобы использовать на сервере общий доступ к портам, клиенту не требуются сведения о его конфигурации.  
   
 ## <a name="enabling-port-sharing"></a>Включение общего доступа к портам  
+
  В следующем примере кода показано, как включить на сервере общий доступ к портам. Он запускает экземпляр службы `ICalculator` на фиксированном порту со случайным путем универсального кода ресурса (URI). Хотя две службы могут использовать один и тот же порт, их адреса конечных точек должны быть уникальными, чтобы служба общего доступа к портам NetTcp могла перенаправлять сообщения нужным приложениям.  
 
 ```csharp
@@ -56,6 +58,7 @@ Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is 
 ```  
   
 ## <a name="running-the-sample"></a>Запуск примера  
+
  Чтобы проверить, что сообщения правильно направляются службам, которые совместно используют порт, можно воспользоваться тестовым клиентом.  
 
 ```csharp

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 67ab5dd8-79c1-4e62-aa75-828ea918a53a
-ms.openlocfilehash: 3c6cfd084055d59d3292b49897ff710f14f92737
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 7cf54754661182dca1e91c75b158d9b0a34a1f5e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320878"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236485"
 ---
 # <a name="how-to-specify-a-service-binding-in-code"></a>Практическое руководство. Задание привязки службы в коде
+
 В этом примере контракт `ICalculator` определен для службы калькулятора, служба реализуется в классе `CalculatorService`, а затем ее конечная точка задается в коде с указанием того, что служба должна использовать класс <xref:System.ServiceModel.BasicHttpBinding>.  
   
  В большинстве случаев рекомендуется указывать привязку и адрес декларативно в конфигурации, а не принудительно в коде. Как правило, определять конечные точки в коде непрактично, поскольку привязки и адреса для развернутой службы чаще всего отличаются от привязок и адресов, используемых в процессе разработки службы. В общем случае, если не указывать привязку и адрес в коде, их можно изменять без повторной компиляции или повторного развертывания приложения.  
@@ -51,4 +52,4 @@ ms.locfileid: "72320878"
 ## <a name="see-also"></a>См. также
 
 - [Использование привязок для настройки служб и клиентов](using-bindings-to-configure-services-and-clients.md)
-- [Указание адреса конечной точки](specifying-an-endpoint-address.md)
+- [Задание адреса конечной точки](specifying-an-endpoint-address.md)

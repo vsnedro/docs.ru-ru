@@ -2,17 +2,19 @@
 title: Настраиваемое отслеживание
 ms.date: 03/30/2017
 ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
-ms.openlocfilehash: 87f72359e16b4268d77148ec16a626c2bac5751c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3d125c59196cb2a7d33961e0f271aab8c5663a50
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557036"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96234575"
 ---
 # <a name="custom-tracking"></a>Настраиваемое отслеживание
+
 В данном образце демонстрируется создание настраиваемого участника отслеживания и запись содержимого данных отслеживания в консоль. Помимо этого, в образце демонстрируется создание <xref:System.Activities.Tracking.CustomTrackingRecord> объектов, заполненных определенными пользователем данными. Консольный участник отслеживания фильтрует <xref:System.Activities.Tracking.TrackingRecord> объекты, выпущенные рабочим процессом, используя объект профиля отслеживания, созданный в коде.
 
 ## <a name="sample-details"></a>Подробные сведения об образце
+
  Windows Workflow Foundation (WF) предоставляет инфраструктуру отслеживания для отслеживания выполнения экземпляра рабочего процесса. Среда выполнения для отслеживания реализует экземпляр рабочего процесса для создания событий, связанных с жизненным циклом рабочего процесса, действиями рабочего процесса и настраиваемыми событиями отслеживания. В следующих сведениях о таблице подробно описаны основные компоненты инфраструктуры отслеживания.
 
 |Компонент|Описание|
@@ -33,6 +35,7 @@ ms.locfileid: "90557036"
  Участник отслеживания подписывается на часть создаваемых объектов <xref:System.Activities.Tracking.TrackingRecord>, используя профили отслеживания. Профиль отслеживания содержит запросы отслеживания, которые позволяют подписываться на определенный тип записей отслеживания. Профили отслеживания можно указывать в коде или в конфигурации.
 
 ### <a name="custom-tracking-participant"></a>Настраиваемый участник отслеживания
+
  API участника отслеживания позволяет расширить среду выполнения отслеживания с помощью пользовательского участника отслеживания, который может включать настраиваемую логику для обработки <xref:System.Activities.Tracking.TrackingRecord> объектов, созданных средой рабочего процесса.
 
  Чтобы создать участника отслеживания, пользователь должен реализовать <xref:System.Activities.Tracking.TrackingParticipant>. В частности, метод <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> должен быть реализован настраиваемым участником. Этот метод вызывается, когда <xref:System.Activities.Tracking.TrackingRecord> создается средой рабочего процесса.
@@ -108,6 +111,7 @@ invoker.Extensions.Add(customTrackingParticipant);
 ```
 
 ### <a name="emitting-custom-tracking-records"></a>Выдача пользовательских записей отслеживания
+
  В этом образце также демонстрируется возможность создания <xref:System.Activities.Tracking.CustomTrackingRecord> объектов из пользовательских действий рабочего процесса:
 
 - Объекты <xref:System.Activities.Tracking.CustomTrackingRecord> создаются и заполняются определенными пользователем данными, которые, по замыслу пользователя, будут выдаваться вместе с записью.
@@ -148,6 +152,6 @@ context.Track(customRecord);
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Образцы наблюдения за AppFabric](/previous-versions/appfabric/ff383407(v=azure.10))

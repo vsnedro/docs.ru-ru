@@ -2,14 +2,15 @@
 title: TransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 54ecfbee-53c0-410c-a7fa-a98f2e40c545
-ms.openlocfilehash: bdb5ca7400a41dd724c2ad7fc76695a82874ded6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 45bfcd069391156bc85cc4c26f2b172770197a9e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641623"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96234847"
 ---
 # <a name="transportbindingelement"></a>TransportBindingElement
+
 TransportBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,36 +26,42 @@ class TransportBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс TransportBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс TransportBindingElement имеет следующие свойства.  
   
 ### <a name="manualaddressing"></a>ManualAddressing  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, указывающее, требуется ли пользователю контролировать адресацию сообщений.  
   
 ### <a name="maxbufferpoolsize"></a>MaxBufferPoolSize  
+
  Тип данных: sint64  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальный размер буферного пула для этой привязки.  
   
 ### <a name="maxreceivedmessagesize"></a>MaxReceivedMessageSize  
+
  Тип данных: sint64  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимально размер сообщения, обрабатываемого данной привязкой.  
   
 ### <a name="scheme"></a>Схема  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Схема универсального кода ресурса (URI) для транспорта.  
   

@@ -2,20 +2,23 @@
 title: Декларативные ограничения
 ms.date: 03/30/2017
 ms.assetid: 67001ed1-7f4d-4ada-ae57-a31176901a53
-ms.openlocfilehash: 321021e3d73daecae07268f33807c992414a7b4c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9098a3d79337689fef6d37e4cccf3633d8128a10
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182966"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236459"
 ---
 # <a name="declarative-constraints"></a>Декларативные ограничения
+
 Декларативные ограничения - это мощный метод проверки допустимости действия и его связей с другими действиями. Ограничения для действий настраиваются во время процесса создания, однако дополнительные ограничения также могут задаваться ведущим приложением рабочего процесса. В этом разделе приводятся общие сведения об использовании декларативных ограничений для обеспечения проверки допустимости действий.  
   
 ## <a name="using-declarative-constraints"></a>Использование декларативных ограничений  
+
  Ограничение - это действие, содержащее логику проверки допустимости. Это действие ограничения может быть создано в коде или в XAML. После создания действия ограничения автор действия добавляет данное ограничение в свойство <xref:System.Activities.Activity.Constraints%2A> действия, которое должно быть проверено, или использует ограничение для реализации дополнительной проверки с помощью свойства <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> экземпляра <xref:System.Activities.Validation.ValidationSettings>. Логика проверки допустимости может состоять из простых проверок допустимости, например проверки метаданных действия, но она также может выполнять проверку допустимости, учитывающую связь текущего действия с его родительскими, дочерними и одноуровневыми действиями. Ограничения создаются посредством использования действия <xref:System.Activities.Validation.Constraint%601>; кроме того, предоставляются несколько дополнительных действий проверки допустимости, облегчающие создание ошибок и предупреждений проверки допустимости и выдачу сведений о связанных действиях в рабочем процессе.  
   
 ### <a name="assertvalidation-and-addvalidationerror"></a>AssertValidation и AddValidationError  
+
  Действие <xref:System.Activities.Validation.AssertValidation> вычисляет выражение, на которое ссылается его свойство <xref:System.Activities.Validation.AssertValidation.Assertion%2A>, и, если в результате вычисления получается значение `false`, к <xref:System.Activities.Validation.ValidationResults> добавляется ошибка или предупреждение проверки допустимости. Свойство <xref:System.Activities.Validation.AssertValidation.Message%2A> описывает ошибку проверки допустимости; свойство <xref:System.Activities.Validation.AssertValidation.IsWarning%2A> указывает, является ли неудачная проверка допустимости ошибкой или предупреждением. По умолчанию для объекта <xref:System.Activities.Validation.AssertValidation.IsWarning%2A> установлено значение `false`.  
   
  В следующем примере объявляется ограничение, возвращающее предупреждение проверки допустимости, если длина <xref:System.Activities.Activity.DisplayName%2A> действия, для которого выполняется проверка, меньше или равна двум символам. Параметр универсального типа, используемый для <xref:System.Activities.Validation.Constraint%601>, задает тип действия, проверяемого ограничением. Это ограничение использует действие <xref:System.Activities.Activity> в качестве универсального типа. Оно может использоваться для проверки допустимости всех типов действий.  
@@ -138,6 +141,7 @@ public sealed class CreateState : CodeActivity
 ```
   
 ## <a name="additional-constraints"></a>Дополнительные ограничения  
+
  Авторы ведущих приложений рабочих процессов могут задавать дополнительные ограничения проверки допустимости для действий в рабочем процессе, создавая ограничения и добавляя их к словарю <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> экземпляра <xref:System.Activities.Validation.ValidationSettings>. Каждый элемент в <xref:System.Activities.Validation.ValidationSettings.AdditionalConstraints%2A> содержит тип действия, к которому применяются ограничения, а также список дополнительных ограничений для этого типа действия. При вызове проверки допустимости для рабочего процесса каждое действие указанного типа, включая производные классы, проверяется на соответствие ограничениям. В этом примере ограничение `ActivityDisplayNameIsNotSetWarning` из предыдущего раздела применяется ко всем действиям в рабочем процессе.  
   
 ```csharp  
@@ -176,4 +180,4 @@ else
 }  
 ```  
   
- Если свойство <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A> у <xref:System.Activities.Validation.ValidationSettings> имеет значение `true`, то при вызове проверки допустимости путем вызова <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> выполняется проверка только дополнительных ограничений. Это может быть полезно при проверке рабочих процессов по отдельным конфигурациям проверки. Необходимо отметить, что при вызове рабочего процесса выполняется проверка логики проверки, настроенной в рабочем процессе; для запуска рабочего процесса проверка должна быть пройдена успешно. Для получения дополнительной информации о вызывая проверку [см.](invoking-activity-validation.md)
+ Если свойство <xref:System.Activities.Validation.ValidationSettings.OnlyUseAdditionalConstraints%2A> у <xref:System.Activities.Validation.ValidationSettings> имеет значение `true`, то при вызове проверки допустимости путем вызова <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> выполняется проверка только дополнительных ограничений. Это может быть полезно при проверке рабочих процессов по отдельным конфигурациям проверки. Необходимо отметить, что при вызове рабочего процесса выполняется проверка логики проверки, настроенной в рабочем процессе; для запуска рабочего процесса проверка должна быть пройдена успешно. Дополнительные сведения о вызове проверки см. в разделе [вызов проверки активности](invoking-activity-validation.md).
