@@ -5,36 +5,39 @@ helpviewer_keywords:
 - authorization [WCF]
 - security [WCF], authorization
 ms.assetid: 8ea0b552-af65-45b0-a157-c6c111b8ce5e
-ms.openlocfilehash: c86a07b96b15963af9f078b52bc0d28e9a38187a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 67da01508fbb8f14b6405b79445bdef297e63288
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556262"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247490"
 ---
-# <a name="authorization-in-wcf"></a><span data-ttu-id="93edd-102">Авторизация в WCF</span><span class="sxs-lookup"><span data-stu-id="93edd-102">Authorization in WCF</span></span>
-<span data-ttu-id="93edd-103">Авторизация - процесс управления доступом и правами на ресурсы, например службы и файлы.</span><span class="sxs-lookup"><span data-stu-id="93edd-103">Authorization is the process of controlling access and rights to resources, such as services or files.</span></span> <span data-ttu-id="93edd-104">В подразделах этого раздела показано, как выполнить эту базовую задачу в Windows Communication Foundation (WCF) различными способами.</span><span class="sxs-lookup"><span data-stu-id="93edd-104">The topics in this section show you how to perform this basic task in Windows Communication Foundation (WCF) in a variety of ways.</span></span>  
+# <a name="authorization-in-wcf"></a><span data-ttu-id="9e91c-102">Авторизация в WCF</span><span class="sxs-lookup"><span data-stu-id="9e91c-102">Authorization in WCF</span></span>
+
+<span data-ttu-id="9e91c-103">Авторизация - процесс управления доступом и правами на ресурсы, например службы и файлы.</span><span class="sxs-lookup"><span data-stu-id="9e91c-103">Authorization is the process of controlling access and rights to resources, such as services or files.</span></span> <span data-ttu-id="9e91c-104">В подразделах этого раздела показано, как выполнить эту базовую задачу в Windows Communication Foundation (WCF) различными способами.</span><span class="sxs-lookup"><span data-stu-id="9e91c-104">The topics in this section show you how to perform this basic task in Windows Communication Foundation (WCF) in a variety of ways.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="93edd-105">в этом разделе</span><span class="sxs-lookup"><span data-stu-id="93edd-105">In This Section</span></span>  
- [<span data-ttu-id="93edd-106">Механизмы управления доступом</span><span class="sxs-lookup"><span data-stu-id="93edd-106">Access Control Mechanisms</span></span>](access-control-mechanisms.md)  
- <span data-ttu-id="93edd-107">Краткий обзор механизмов авторизации в WCF и предлагаемых вариантов использования.</span><span class="sxs-lookup"><span data-stu-id="93edd-107">Provides a brief outline of the authorization mechanisms in WCF, and suggested uses.</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="9e91c-105">в этом разделе</span><span class="sxs-lookup"><span data-stu-id="9e91c-105">In This Section</span></span>  
+
+ [<span data-ttu-id="9e91c-106">Механизмы управления доступом</span><span class="sxs-lookup"><span data-stu-id="9e91c-106">Access Control Mechanisms</span></span>](access-control-mechanisms.md)  
+ <span data-ttu-id="9e91c-107">Краткий обзор механизмов авторизации в WCF и предлагаемых вариантов использования.</span><span class="sxs-lookup"><span data-stu-id="9e91c-107">Provides a brief outline of the authorization mechanisms in WCF, and suggested uses.</span></span>  
   
- [<span data-ttu-id="93edd-108">Практическое руководство. Ограничение доступа с использованием класса PrincipalPermissionAttribute</span><span class="sxs-lookup"><span data-stu-id="93edd-108">How to: Restrict Access with the PrincipalPermissionAttribute Class</span></span>](../how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- <span data-ttu-id="93edd-109">Показывает процесс ограничения доступа к сервису с помощью класса <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span><span class="sxs-lookup"><span data-stu-id="93edd-109">Shows the process of restricting access to a service with the <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>  
+ [<span data-ttu-id="9e91c-108">Практическое руководство. Ограничение доступа с использованием класса PrincipalPermissionAttribute</span><span class="sxs-lookup"><span data-stu-id="9e91c-108">How to: Restrict Access with the PrincipalPermissionAttribute Class</span></span>](../how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
+ <span data-ttu-id="9e91c-109">Показывает процесс ограничения доступа к сервису с помощью класса <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span><span class="sxs-lookup"><span data-stu-id="9e91c-109">Shows the process of restricting access to a service with the <xref:System.Security.Permissions.PrincipalPermissionAttribute>.</span></span>  
   
- [<span data-ttu-id="93edd-110">Практическое руководство. Использование поставщика ролей ASP.NET со службой</span><span class="sxs-lookup"><span data-stu-id="93edd-110">How to: Use the ASP.NET Role Provider with a Service</span></span>](how-to-use-the-aspnet-role-provider-with-a-service.md)  
- <span data-ttu-id="93edd-111">Пошаговые инструкции по настройке службы, позволяющие использовать функцию поставщика ролей ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="93edd-111">Walks through the configuration of a service to enable it to use the role provider feature of ASP.NET.</span></span>  
+ [<span data-ttu-id="9e91c-110">Практическое руководство. Использование поставщика ролей ASP.NET со службой</span><span class="sxs-lookup"><span data-stu-id="9e91c-110">How to: Use the ASP.NET Role Provider with a Service</span></span>](how-to-use-the-aspnet-role-provider-with-a-service.md)  
+ <span data-ttu-id="9e91c-111">Пошаговые инструкции по настройке службы, позволяющие использовать функцию поставщика ролей ASP.NET.</span><span class="sxs-lookup"><span data-stu-id="9e91c-111">Walks through the configuration of a service to enable it to use the role provider feature of ASP.NET.</span></span>  
   
- [<span data-ttu-id="93edd-112">Практическое руководство. Использование поставщика ролей диспетчера авторизации ASP.NET со службой</span><span class="sxs-lookup"><span data-stu-id="93edd-112">How to: Use the ASP.NET Authorization Manager Role Provider with a Service</span></span>](how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
- <span data-ttu-id="93edd-113">ASP.NET может использовать диспетчер авторизации для управления авторизацией веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="93edd-113">ASP.NET can use the Authorization Manager to manage authorization for a Web site.</span></span> <span data-ttu-id="93edd-114">WCF также может использовать сочетание ASP.NET/Authorization Manager для авторизации клиентов.</span><span class="sxs-lookup"><span data-stu-id="93edd-114">WCF can similarly leverage the ASP.NET/Authorization Manager combination for authorization of clients.</span></span>  
+ [<span data-ttu-id="9e91c-112">Практическое руководство. Использование поставщика ролей диспетчера авторизации ASP.NET со службой</span><span class="sxs-lookup"><span data-stu-id="9e91c-112">How to: Use the ASP.NET Authorization Manager Role Provider with a Service</span></span>](how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
+ <span data-ttu-id="9e91c-113">ASP.NET может использовать диспетчер авторизации для управления авторизацией веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="9e91c-113">ASP.NET can use the Authorization Manager to manage authorization for a Web site.</span></span> <span data-ttu-id="9e91c-114">WCF также может использовать сочетание ASP.NET/Authorization Manager для авторизации клиентов.</span><span class="sxs-lookup"><span data-stu-id="9e91c-114">WCF can similarly leverage the ASP.NET/Authorization Manager combination for authorization of clients.</span></span>  
   
- [<span data-ttu-id="93edd-115">Управление утверждениями и авторизацией с помощью модели удостоверения</span><span class="sxs-lookup"><span data-stu-id="93edd-115">Managing Claims and Authorization with the Identity Model</span></span>](managing-claims-and-authorization-with-the-identity-model.md)  
- <span data-ttu-id="93edd-116">Объясняет основы использования инфраструктуры модели удостоверения для механизма авторизации на основе утверждений.</span><span class="sxs-lookup"><span data-stu-id="93edd-116">Explains the basics of using the Identity Model infrastructure for claims-based authorization.</span></span>  
+ [<span data-ttu-id="9e91c-115">Управление утверждениями и авторизацией с помощью модели удостоверения</span><span class="sxs-lookup"><span data-stu-id="9e91c-115">Managing Claims and Authorization with the Identity Model</span></span>](managing-claims-and-authorization-with-the-identity-model.md)  
+ <span data-ttu-id="9e91c-116">Объясняет основы использования инфраструктуры модели удостоверения для механизма авторизации на основе утверждений.</span><span class="sxs-lookup"><span data-stu-id="9e91c-116">Explains the basics of using the Identity Model infrastructure for claims-based authorization.</span></span>  
   
- [<span data-ttu-id="93edd-117">Делегирование и олицетворение</span><span class="sxs-lookup"><span data-stu-id="93edd-117">Delegation and Impersonation</span></span>](delegation-and-impersonation-with-wcf.md)  
- <span data-ttu-id="93edd-118">Объясняет разницу между делегированием и олицетворением.</span><span class="sxs-lookup"><span data-stu-id="93edd-118">Explains the difference between delegation and impersonation.</span></span>  
+ [<span data-ttu-id="9e91c-117">Делегирование и олицетворение</span><span class="sxs-lookup"><span data-stu-id="9e91c-117">Delegation and Impersonation</span></span>](delegation-and-impersonation-with-wcf.md)  
+ <span data-ttu-id="9e91c-118">Объясняет разницу между делегированием и олицетворением.</span><span class="sxs-lookup"><span data-stu-id="9e91c-118">Explains the difference between delegation and impersonation.</span></span>  
   
-## <a name="reference"></a><span data-ttu-id="93edd-119">Справочник</span><span class="sxs-lookup"><span data-stu-id="93edd-119">Reference</span></span>  
+## <a name="reference"></a><span data-ttu-id="9e91c-119">Справочник</span><span class="sxs-lookup"><span data-stu-id="9e91c-119">Reference</span></span>  
+
  <xref:System.ServiceModel.Security>  
   
  <xref:System.ServiceModel.Description.PrincipalPermissionMode>  
@@ -43,10 +46,11 @@ ms.locfileid: "90556262"
   
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
   
-## <a name="related-sections"></a><span data-ttu-id="93edd-120">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="93edd-120">Related Sections</span></span>  
- [<span data-ttu-id="93edd-121">Аутентификация</span><span class="sxs-lookup"><span data-stu-id="93edd-121">Authentication</span></span>](authentication-in-wcf.md)  
-  
-## <a name="see-also"></a><span data-ttu-id="93edd-122">См. также</span><span class="sxs-lookup"><span data-stu-id="93edd-122">See also</span></span>
+## <a name="related-sections"></a><span data-ttu-id="9e91c-120">Связанные разделы</span><span class="sxs-lookup"><span data-stu-id="9e91c-120">Related Sections</span></span>  
 
-- [<span data-ttu-id="93edd-123">Обзор безопасности</span><span class="sxs-lookup"><span data-stu-id="93edd-123">Security Overview</span></span>](security-overview.md)
-- <span data-ttu-id="93edd-124">[Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))</span><span class="sxs-lookup"><span data-stu-id="93edd-124">[Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))</span></span>
+ [<span data-ttu-id="9e91c-121">Аутентификация</span><span class="sxs-lookup"><span data-stu-id="9e91c-121">Authentication</span></span>](authentication-in-wcf.md)  
+  
+## <a name="see-also"></a><span data-ttu-id="9e91c-122">См. также</span><span class="sxs-lookup"><span data-stu-id="9e91c-122">See also</span></span>
+
+- [<span data-ttu-id="9e91c-123">Обзор безопасности</span><span class="sxs-lookup"><span data-stu-id="9e91c-123">Security Overview</span></span>](security-overview.md)
+- <span data-ttu-id="9e91c-124">[Модель безопасности для Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))</span><span class="sxs-lookup"><span data-stu-id="9e91c-124">[Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))</span></span>
