@@ -2,27 +2,30 @@
 title: 3390 - ClientSendPreambleStop
 ms.date: 03/30/2017
 ms.assetid: fbf6e4ed-8538-417e-b4d1-a30b45ee6b5d
-ms.openlocfilehash: ae0d6a630d8ab0e39ed85155e4d458132a96addc
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6a6e5ae844f7ad37394b0c1338e17164e6351786
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61753352"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247724"
 ---
 # <a name="3390---clientsendpreamblestop"></a>3390 - ClientSendPreambleStop
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|3390|  
-|Ключевые слова|Канал|  
-|Уровень|Verbose|  
+|Keywords|Канал|  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Это событие отправляется при прекращении отправки клиентом начальной части.  
   
 ## <a name="message"></a>Сообщение  
+
  Остановка отправки клиентом начальной части.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее

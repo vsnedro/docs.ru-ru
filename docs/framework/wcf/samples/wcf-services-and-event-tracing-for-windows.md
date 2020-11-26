@@ -2,14 +2,15 @@
 title: Службы WCF и средство отслеживания событий для Windows
 ms.date: 03/30/2017
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
-ms.openlocfilehash: 38e26c369d17f4aa9ccb39d2ae649facffe65418
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b5fcfb34843d1168511141b4ce2b4f956559290a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552970"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247841"
 ---
 # <a name="wcf-services-and-event-tracing-for-windows"></a>Службы WCF и средство отслеживания событий для Windows
+
 В этом примере показано, как использовать аналитическую трассировку в Windows Communication Foundation (WCF) для создания событий в трассировке событий Windows (ETW). Аналитические трассировки — это события, генерируемые в ключевых точках стека WCF, которые позволяют устранять неполадки служб WCF в рабочей среде.
 
  Аналитическая трассировка в службах WCF — это трассировка, которую можно включить в рабочей среде с минимальным влиянием на производительность. Отслеживаемые события передаются в сеанс трассировки событий Windows.

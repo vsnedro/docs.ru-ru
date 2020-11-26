@@ -2,27 +2,30 @@
 title: 601 - CBAEntryRead
 ms.date: 03/30/2017
 ms.assetid: 7d8b757f-e8d8-4c12-927e-ba3776c17983
-ms.openlocfilehash: b8357ab1aab7cb8f7d57887b6bbdef67ce5f3369
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 03721457bd80d633afa2c4879180e98eb95ad186
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61952988"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247035"
 ---
 # <a name="601---cbaentryread"></a>601 - CBAEntryRead
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|601|  
-|Ключевые слова||  
-|Уровень|Verbose|  
+|Keywords||  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Это событие отправляется с операцией чтения CBAEntry.  
   
 ## <a name="message"></a>Сообщение  
+
  Обработанный относительный адрес элемента ServiceActivation: «%1»; нормализованный относительный адрес: «%2».  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее
