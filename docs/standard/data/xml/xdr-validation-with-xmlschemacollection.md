@@ -1,26 +1,25 @@
 ---
 title: XDR-проверка с помощью XmlSchemaCollection
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
-ms.openlocfilehash: c1383dbb5419eadbfb7c07f288ee46b1ca11cf5c
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 9edde2fc0da97b570162775a33c95d472cda974b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710002"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819283"
 ---
-# <a name="xdr-validation-with-xmlschemacollection"></a><span data-ttu-id="abae6-102">XDR-проверка с помощью XmlSchemaCollection</span><span class="sxs-lookup"><span data-stu-id="abae6-102">XDR Validation with XmlSchemaCollection</span></span>
+# <a name="xdr-validation-with-xmlschemacollection"></a><span data-ttu-id="7f366-102">XDR-проверка с помощью XmlSchemaCollection</span><span class="sxs-lookup"><span data-stu-id="7f366-102">XDR Validation with XmlSchemaCollection</span></span>
 
-<span data-ttu-id="abae6-103">Схема XDR, по которой выполняется проверка, хранится в коллекции **XmlSchemaCollection**. Она связана с URI-кодом пространства имен, который был указан во время добавления схемы в коллекцию.</span><span class="sxs-lookup"><span data-stu-id="abae6-103">If the XML-Data Reduced (XDR) schema you are validating against is stored in the **XmlSchemaCollection**, it is associated with the namespace URI specified when the schema was added to the collection.</span></span> <span data-ttu-id="abae6-104">Объект **XmlValidatingReader** сопоставляет URI-код пространства имен в XML-документе со схемой, соответствующей этому URI-коду в коллекции.</span><span class="sxs-lookup"><span data-stu-id="abae6-104">**XmlValidatingReader** maps the namespace URI in the XML document to the schema that corresponds to that URI in the collection.</span></span>
+<span data-ttu-id="7f366-103">Схема XDR, по которой выполняется проверка, хранится в коллекции **XmlSchemaCollection**. Она связана с URI-кодом пространства имен, который был указан во время добавления схемы в коллекцию.</span><span class="sxs-lookup"><span data-stu-id="7f366-103">If the XML-Data Reduced (XDR) schema you are validating against is stored in the **XmlSchemaCollection**, it is associated with the namespace URI specified when the schema was added to the collection.</span></span> <span data-ttu-id="7f366-104">Объект **XmlValidatingReader** сопоставляет URI-код пространства имен в XML-документе со схемой, соответствующей этому URI-коду в коллекции.</span><span class="sxs-lookup"><span data-stu-id="7f366-104">**XmlValidatingReader** maps the namespace URI in the XML document to the schema that corresponds to that URI in the collection.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="abae6-105">Класс <xref:System.Xml.Schema.XmlSchemaCollection> устарел и заменен классом <xref:System.Xml.Schema.XmlSchemaSet>.</span><span class="sxs-lookup"><span data-stu-id="abae6-105">The <xref:System.Xml.Schema.XmlSchemaCollection> class is now obsolete and has been replaced with the <xref:System.Xml.Schema.XmlSchemaSet> class.</span></span> <span data-ttu-id="abae6-106">Дополнительные сведения о классе <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [использованию XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md).</span><span class="sxs-lookup"><span data-stu-id="abae6-106">For more information about the <xref:System.Xml.Schema.XmlSchemaSet> class see, [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md).</span></span>
+> <span data-ttu-id="7f366-105">Класс <xref:System.Xml.Schema.XmlSchemaCollection> устарел и заменен классом <xref:System.Xml.Schema.XmlSchemaSet>.</span><span class="sxs-lookup"><span data-stu-id="7f366-105">The <xref:System.Xml.Schema.XmlSchemaCollection> class is now obsolete and has been replaced with the <xref:System.Xml.Schema.XmlSchemaSet> class.</span></span> <span data-ttu-id="7f366-106">Дополнительные сведения о классе <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [использованию XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md).</span><span class="sxs-lookup"><span data-stu-id="7f366-106">For more information about the <xref:System.Xml.Schema.XmlSchemaSet> class see, [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md).</span></span>
 
-<span data-ttu-id="abae6-107">Например, если корневым элементом XML-документа является `<bookstore xmlns="urn:newbooks-schema">`, при добавлении схемы в коллекцию **XmlSchemaCollection** она будет ссылаться на то же пространство имен следующим образом:</span><span class="sxs-lookup"><span data-stu-id="abae6-107">For example, if the root element of the XML document is `<bookstore xmlns="urn:newbooks-schema">`, when the schema is added to the **XmlSchemaCollection** it references the same namespace, as follows:</span></span>
+<span data-ttu-id="7f366-107">Например, если корневым элементом XML-документа является `<bookstore xmlns="urn:newbooks-schema">`, при добавлении схемы в коллекцию **XmlSchemaCollection** она будет ссылаться на то же пространство имен следующим образом:</span><span class="sxs-lookup"><span data-stu-id="7f366-107">For example, if the root element of the XML document is `<bookstore xmlns="urn:newbooks-schema">`, when the schema is added to the **XmlSchemaCollection** it references the same namespace, as follows:</span></span>
 
 ```vb
 xsc.Add("urn:newbooks-schema", "newbooks.xdr")
@@ -30,7 +29,7 @@ xsc.Add("urn:newbooks-schema", "newbooks.xdr")
 xsc.Add("urn:newbooks-schema", "newbooks.xdr");
 ```
 
-<span data-ttu-id="abae6-108">В следующем примере кода создается объект **XmlValidatingReader**, который принимает объект **XmlTextReader** и добавляет схему XDR HeadCount.xdr в коллекцию **XmlSchemaCollection**.</span><span class="sxs-lookup"><span data-stu-id="abae6-108">The following code example creates an **XmlValidatingReader** that takes an **XmlTextReader** and adds an XDR schema, HeadCount.xdr, to the **XmlSchemaCollection**:</span></span>
+<span data-ttu-id="7f366-108">В следующем примере кода создается объект **XmlValidatingReader**, который принимает объект **XmlTextReader** и добавляет схему XDR HeadCount.xdr в коллекцию **XmlSchemaCollection**.</span><span class="sxs-lookup"><span data-stu-id="7f366-108">The following code example creates an **XmlValidatingReader** that takes an **XmlTextReader** and adds an XDR schema, HeadCount.xdr, to the **XmlSchemaCollection**:</span></span>
 
 ```vb
 Imports System.IO
@@ -70,7 +69,7 @@ Namespace ValidationSample
         End Sub
 
         Public Shared Sub ValidationHandler(sender As Object, args As ValidationEventArgs)
-            Console.WriteLine("***Validation error")
+            Console.WriteLine("**_Validation error")
             Console.WriteLine($"Severity:{args.Severity}")
             Console.WriteLine($"Message:{args.Message}")
         End Sub
@@ -123,7 +122,7 @@ namespace ValidationSample
 
         public static void ValidationHandler(object sender, ValidationEventArgs args)
         {
-            Console.WriteLine("***Validation error");
+            Console.WriteLine("_*_Validation error");
             Console.WriteLine($"\tSeverity:{args.Severity}");
             Console.WriteLine($"\tMessage:{args.Message}");
         }
@@ -131,7 +130,7 @@ namespace ValidationSample
 }
 ```
 
-<span data-ttu-id="abae6-109">Ниже описано содержимое проверяемого входного файла *HeadCount.xml*:</span><span class="sxs-lookup"><span data-stu-id="abae6-109">The following outlines the contents of the input file, *HeadCount.xml*, to be validated:</span></span>
+<span data-ttu-id="7f366-109">Ниже описано содержимое проверяемого входного файла _HeadCount.xml\*:</span><span class="sxs-lookup"><span data-stu-id="7f366-109">The following outlines the contents of the input file, _HeadCount.xml\*, to be validated:</span></span>
 
 ```xml
 <!--Load HeadCount.xdr in SchemaCollection for Validation-->
@@ -141,7 +140,7 @@ namespace ValidationSample
 </HeadCount>
 ```
 
-<span data-ttu-id="abae6-110">Ниже описано содержимое файла XDR-схемы *HeadCount.xdr*, по которому выполняется проверка.</span><span class="sxs-lookup"><span data-stu-id="abae6-110">The following outlines the contents of the XDR schema file, *HeadCount.xdr*, to be validated against:</span></span>
+<span data-ttu-id="7f366-110">Ниже описано содержимое файла XDR-схемы *HeadCount.xdr*, по которому выполняется проверка.</span><span class="sxs-lookup"><span data-stu-id="7f366-110">The following outlines the contents of the XDR schema file, *HeadCount.xdr*, to be validated against:</span></span>
 
 ```xml
 <Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
@@ -154,7 +153,7 @@ namespace ValidationSample
 </Schema>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="abae6-111">См. также</span><span class="sxs-lookup"><span data-stu-id="abae6-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7f366-111">См. также</span><span class="sxs-lookup"><span data-stu-id="7f366-111">See also</span></span>
 
 - <xref:System.Xml.XmlValidatingReader.ValidationType%2A>
-- [<span data-ttu-id="abae6-112">Компиляция схемы XmlSchemaCollection</span><span class="sxs-lookup"><span data-stu-id="abae6-112">XmlSchemaCollection Schema Compilation</span></span>](xmlschemacollection-schema-compilation.md)
+- [<span data-ttu-id="7f366-112">Компиляция схемы XmlSchemaCollection</span><span class="sxs-lookup"><span data-stu-id="7f366-112">XmlSchemaCollection Schema Compilation</span></span>](xmlschemacollection-schema-compilation.md)
