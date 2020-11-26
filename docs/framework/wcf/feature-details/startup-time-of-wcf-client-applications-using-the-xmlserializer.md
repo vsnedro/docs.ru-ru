@@ -2,20 +2,21 @@
 title: Практическое руководство. Сокращение времени запуска клиентских приложений WCF с использованием XmlSerializer
 ms.date: 03/30/2017
 ms.assetid: 21093451-0bc3-4b1a-9a9d-05f7f71fa7d0
-ms.openlocfilehash: 91712963908ecc56ff17fbac028389207544b82f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ac54a766161db146331a3e072b97822b609344c0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600261"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96246385"
 ---
 # <a name="how-to-improve-the-startup-time-of-wcf-client-applications-using-the-xmlserializer"></a>Практическое руководство. Сокращение времени запуска клиентских приложений WCF с использованием XmlSerializer
+
 Службы и клиентские приложения, использующие типы данных, сериализуемые с помощью сериализатора <xref:System.Xml.Serialization.XmlSerializer>, создают и компилируют код сериализации для этих типов данных во время выполнения, что может привести к снижению производительности при запуске.  
   
 > [!NOTE]
 > Предварительно созданный код сериализации может использоваться только в клиентских приложениях, но не в службах.  
   
- [Средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Svcutil.exe создает код сериализации для всех типов данных, используемых в контрактах служб в скомпилированной сборке приложения, которые могут быть сериализованы с помощью <xref:System.Xml.Serialization.XmlSerializer>. Контракты служб и операций, предусматривающие использование <xref:System.Xml.Serialization.XmlSerializer>, отмечены атрибутом <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
+ [Средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) может улучшить производительность при запуске этих приложений, создавая необходимый код сериализации из скомпилированных сборок для приложения. Svcutil.exe создает код сериализации для всех типов данных, используемых в контрактах служб в скомпилированной сборке приложения, которые могут быть сериализованы с помощью <xref:System.Xml.Serialization.XmlSerializer>. Контракты служб и операций, предусматривающие использование <xref:System.Xml.Serialization.XmlSerializer>, отмечены атрибутом <xref:System.ServiceModel.XmlSerializerFormatAttribute>.  
   
 ### <a name="to-generate-xmlserializer-serialization-code"></a>Создание кода сериализации XmlSerializer  
   
@@ -37,7 +38,7 @@ ms.locfileid: "84600261"
   
 4. Предоставьте приложению доступ к созданному коду сериализации одним из следующих способов.  
   
-    1. Скомпилируйте созданный код сериализации в отдельную сборку с именем [*Исходная сборка*]. XmlSerializer. dll (например, MyApp. XmlSerializers. dll). Приложение должно иметь возможность загрузить эту сборку, которая должна быть подписана с помощью того же ключа, что и исходная сборка. В случае повторной компиляции исходной сборки необходимо заново создать сборку сериализации.  
+    1. Скомпилируйте созданный код сериализации в отдельную сборку с именем [*Исходная сборка*] .XmlSerializers.dll (например, MyApp.XmlSerializers.dll). Приложение должно иметь возможность загрузить эту сборку, которая должна быть подписана с помощью того же ключа, что и исходная сборка. В случае повторной компиляции исходной сборки необходимо заново создать сборку сериализации.  
   
     2. Скомпилируйте созданный код сериализации в отдельную сборку и используйте атрибут <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute> в контракте службы, в котором используется атрибут <xref:System.ServiceModel.XmlSerializerFormatAttribute>. Задайте свойство <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute.AssemblyName%2A> или <xref:System.Xml.Serialization.XmlSerializerAssemblyAttribute.CodeBase%2A> так, чтобы оно указывало на скомпилированную сборку сериализации.  
   
@@ -51,7 +52,7 @@ ms.locfileid: "84600261"
   
 3. Создайте клиентское приложение.  
   
-4. Используйте [средство служебной программы для метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать предварительно созданный файл сериализатора *. CS* с помощью команды:  
+4. Используйте [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , чтобы создать предварительно созданный файл сериализатора *. CS* с помощью команды:  
   
     ```console  
     svcutil.exe /t:xmlSerializer  <assemblyPath>*  
@@ -65,7 +66,7 @@ ms.locfileid: "84600261"
     svcutil.exe /t:xmlSerializer wcfclient.exe  
     ```  
   
-     Будет создан файл *WCFClient.XmlSerializers.dll.CS* .  
+     Будет создан файл *WCFClient.XmlSerializers.dll. CS* .  
   
 5. Скомпилируйте предварительно созданную сборку сериализации.  
   
@@ -75,17 +76,18 @@ ms.locfileid: "84600261"
     csc /r:wcfclient.exe /out:WCFClient.XmlSerializers.dll /t:library WCFClient.XmlSerializers.dll.cs  
     ```  
   
-     Убедитесь, что созданная *вкфклиент. XmlSerializer. dll* находится в том же каталоге, что и клиентское приложение, которое в данном случае является *вкфклиент. exe* .  
+     Убедитесь, что созданный *WCFClient.XmlSerializers.dll* находится в том же каталоге, что и клиентское приложение, которое *WCFClient.exe* в этом случае.  
   
 6. Запустите клиентское приложение обычным образом. Будет использоваться предварительно созданная сборка сериализации.  
   
 ## <a name="example"></a>Пример  
+
  Следующая команда создает типы сериализации для типов `XmlSerializer`, используемых любыми контрактами служб в сборке.  
   
 ```console  
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

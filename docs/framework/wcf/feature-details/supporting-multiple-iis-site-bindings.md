@@ -3,20 +3,22 @@ title: Поддержка нескольких привязок узла IIS
 description: Узнайте, как предоставить несколько базовых адресов, использующих один и тот же протокол на одном сайте при размещении службы WCF в IIS.
 ms.date: 03/30/2017
 ms.assetid: 40440495-254d-45c8-a8c6-b29f364892ba
-ms.openlocfilehash: 6af4d885c7fc3d4dcc12ffb4bf6670f1a9b3d78c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 7b9118a7a507939aab6276716722be8d6d02628c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546202"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96246294"
 ---
 # <a name="supporting-multiple-iis-site-bindings"></a>Поддержка нескольких привязок узла IIS
+
 При размещении службы Windows Communication Foundation (WCF) в службы IIS (IIS) 7,0 может потребоваться указать несколько базовых адресов, использующих один и тот же протокол на одном сайте. Это позволяет одной и той же службе отвечать на несколько разных URI. Это полезно, если требуется разместить службу, которая прослушивает `http://www.contoso.com` и `http://contoso.com` . Также может использоваться при создании службы, имеющей базовый адрес для внутренних пользователей и отдельный базовый адрес для внешних пользователей. Например, `http://internal.contoso.com` и `http://www.contoso.com`.  
   
 > [!NOTE]
 > Эта функция доступна только при использовании протокола HTTP.  
   
 ## <a name="multiple-base-addresses"></a>Несколько базовых адресов  
+
  Эта функция доступна только для служб WCF, размещенных в службах IIS. Эта функция отключена по умолчанию. Чтобы включить его, необходимо добавить `multipleSiteBindingsEnabled` атрибут к `serviceHostingEnvironment` элементу <> в файле Web.config и задать для него значение `true` , как показано в следующем примере.  
   
 ```xml  

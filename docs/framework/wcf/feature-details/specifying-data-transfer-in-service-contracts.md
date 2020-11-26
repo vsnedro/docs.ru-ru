@@ -7,14 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF], data transfer
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
-ms.openlocfilehash: ae05fb5ea0ee4962d9889e2a29399a3913a0d9d5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 30cdae7e15b80ca826eeea652566a535271477d9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600300"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96246398"
 ---
 # <a name="specifying-data-transfer-in-service-contracts"></a>Задание передачи данных в контрактах служб
+
 Windows Communication Foundation (WCF) можно рассматривать как инфраструктуру обмена сообщениями. Операции служб могут получать сообщения, обрабатывать их и отправлять. Сообщения описываются с помощью контрактов операций. Например, рассмотрим следующий контракт:  
   
 ```csharp  
@@ -40,6 +41,7 @@ End Interface
  В этом разделе рассматриваются различные способы описания сообщений в контракте операции.  
   
 ## <a name="describing-messages-by-using-parameters"></a>Описание сообщений с помощью параметров  
+
  Простейший способ описания сообщений - с помощью списка параметров и возвращаемого значения. В приведенном выше примере строковые параметры `fromCity` и `toCity` используются для описания сообщения запроса, а возвращаемое значение типа "float" - для описания ответного сообщения. Если возвращаемое значение само по себе недостаточно для описания ответного сообщения, можно использовать выходные параметры. Например, следующая операция содержит строки `fromCity` и `toCity` в сообщении запроса и число с названием валюты в ответном сообщении:  
   
 ```csharp  
@@ -87,7 +89,7 @@ Public Interface IAirfareQuoteService
 End Interface  
 ```  
   
- Иногда объект `DataContractSerializer` не подходит для сериализации конкретных типов. WCF поддерживает альтернативный механизм сериализации, <xref:System.Xml.Serialization.XmlSerializer> который также можно использовать для сериализации параметров. Сериализатор <xref:System.Xml.Serialization.XmlSerializer> позволяет более четко контролировать результирующий XML-код с помощью атрибутов, таких как `XmlAttributeAttribute`. Чтобы перейти на использование сериализатора <xref:System.Xml.Serialization.XmlSerializer> для определенной операции или для всей службы, примените к ней атрибут <xref:System.ServiceModel.XmlSerializerFormatAttribute>. Пример.  
+ Иногда объект `DataContractSerializer` не подходит для сериализации конкретных типов. WCF поддерживает альтернативный механизм сериализации, <xref:System.Xml.Serialization.XmlSerializer> который также можно использовать для сериализации параметров. Сериализатор <xref:System.Xml.Serialization.XmlSerializer> позволяет более четко контролировать результирующий XML-код с помощью атрибутов, таких как `XmlAttributeAttribute`. Чтобы перейти на использование сериализатора <xref:System.Xml.Serialization.XmlSerializer> для определенной операции или для всей службы, примените к ней атрибут <xref:System.ServiceModel.XmlSerializerFormatAttribute>. Пример:  
   
 ```csharp  
 [ServiceContract]  
@@ -141,6 +143,7 @@ public float GetAirfare(
 ```  
   
 ## <a name="describing-empty-messages"></a>Описание пустых сообщений  
+
  Пустое сообщение запроса можно описать с помощью отсутствия входных и ссылочных параметров. Например, в C#:  
   
  `[OperationContract]`  
@@ -180,6 +183,7 @@ Sub SetLightbulbStatus(isOne As Boolean)
  Операция `SetTemperatureStatus` возвращает пустое сообщение. Вместо него она может вернуть ошибку, если возникнет проблема при обработке входного сообщения. Операция `SetLightbulbStatus` не возвращает какое-либо значение. Эта операция никоим образом не может сообщить об ошибке.  
   
 ## <a name="describing-messages-by-using-message-contracts"></a>Описание сообщений с помощью контрактов сообщений  
+
  Иногда имеет смысл представить все сообщение одним типом. Хотя для этого можно использовать контракт данных, все же рекомендуется использовать контракт сообщений: это позволяет избежать чрезмерных уровней заключения в оболочку в результирующем XML-коде. Кроме того, контракты сообщений обеспечивают более полное управление результирующими сообщениями. Например, можно задать, какие именно сведения должны находиться в тексте сообщения и какие в заголовке. В следующем примере показано использование контрактов сообщений.  
   
 ```csharp  
@@ -246,6 +250,7 @@ End Class
  В приведенном выше примере класс <xref:System.Runtime.Serialization.DataContractSerializer> используется по умолчанию. Класс <xref:System.Xml.Serialization.XmlSerializer> также можно использовать с контрактами сообщений. Для этого примените атрибут <xref:System.ServiceModel.XmlSerializerFormatAttribute> к операции или к контракту и используйте типы, совместимые с классом <xref:System.Xml.Serialization.XmlSerializer>, в заголовках сообщения и элементах тела сообщения.  
   
 ## <a name="describing-messages-by-using-streams"></a>Описание сообщений с помощью потоков  
+
  Еще один способ описания сообщений в операциях - использование класса <xref:System.IO.Stream> (или одного из производных от него классов) в контракте операции или в качестве элемента тела контракта сообщения (в этом случае он должен быть единственным элементом). Для входящих сообщений необходимо использовать тип `Stream`: производные классы использовать не допускается.  
   
  Вместо вызова сериализатора WCF извлекает данные из потока и помещает их непосредственно в исходящее сообщение или получает данные из входящего сообщения и помещает их непосредственно в поток. В следующем образце показано использование потоков.  
@@ -304,6 +309,7 @@ End Class
  Дополнительные сведения см. в разделе [большие данные и потоковая передача](large-data-and-streaming.md).  
   
 ## <a name="using-the-message-class"></a>Использование класса сообщений  
+
  Чтобы обеспечить полный программный контроль над получаемыми или отправляемыми сообщениями, можно использовать класс <xref:System.ServiceModel.Channels.Message> напрямую, как показано в следующем примере кода.  
   
 ```csharp  
@@ -319,6 +325,7 @@ Sub LogMessage(m As Message)
  Это расширенный сценарий, подробно описанный в разделе [использование класса Message](using-the-message-class.md).  
   
 ## <a name="describing-fault-messages"></a>Описание сообщений об ошибках  
+
  Помимо сообщений, описываемых возвращаемыми значениями и выходными или ссылочными параметрами, любая неодносторонняя операция может возвращать не менее двух возможных значений: нормальное ответное сообщение и сообщение об ошибке. Рассмотрим следующий контракт операции.  
   
 ```csharp  
@@ -373,6 +380,7 @@ End Class
  Использовать класс <xref:System.Xml.Serialization.XmlSerializer> для описания ошибок не допускается. Атрибут <xref:System.ServiceModel.XmlSerializerFormatAttribute> не влияет на контракты ошибок.  
   
 ## <a name="using-derived-types"></a>Использование производных типов  
+
  Иногда имеет смысл использовать базовый тип в контракте операции или сообщения, а затем (при фактическом вызове операции) производный тип. В этом случае необходимо использовать либо атрибут <xref:System.ServiceModel.ServiceKnownTypeAttribute>, либо некий альтернативный механизм, позволяющий использовать производные типы. Рассмотрим следующую операцию.  
   
 ```csharp  
@@ -430,6 +438,7 @@ End Class
  Атрибут <xref:System.ServiceModel.ServiceKnownTypeAttribute> можно применить к операции или ко всей службе. Он принимает либо тип, либо имя метода, при вызове которого возвращается список известных типов (подобно атрибуту <xref:System.Runtime.Serialization.KnownTypeAttribute>). Дополнительные сведения см. в статье о [известных типах контрактов данных](data-contract-known-types.md).  
   
 ## <a name="specifying-the-use-and-style"></a>Указание назначения и стиля  
+
  Для описания служб с помощью языка WSDL наиболее часто используются следующие две службы: Document и RPC (удаленный вызов процедуры). В стиле Document тело сообщения полностью описывается с помощью схемы, а в языке WSDL различные части тела сообщения описываются ссылками на элементы в этой схеме. В стиле RPC код WSDL ссылается на тип схемы для каждой части сообщения, а не элемент. В некоторых случаях необходимо выбрать один из этих типов вручную. Для этого можно применить атрибут <xref:System.ServiceModel.DataContractFormatAttribute> и задать свойство `Style` (когда используется <xref:System.Runtime.Serialization.DataContractSerializer>) или задать `Style` атрибуту <xref:System.ServiceModel.XmlSerializerFormatAttribute> (когда используется <xref:System.Xml.Serialization.XmlSerializer>).  
   
  Кроме того, <xref:System.Xml.Serialization.XmlSerializer> поддерживает две формы сериализованного XML: `Literal` и `Encoded`. `Literal` - наиболее распространенная форма, а также единственная форма, которую поддерживает <xref:System.Runtime.Serialization.DataContractSerializer>. `Encoded` - это форма из прежних версий, описанная в разделе 5 спецификации протокола SOAP. Не рекомендуется для использования в новых службах. Чтобы перейти в режим `Encoded`, задайте свойству `Use` атрибута <xref:System.ServiceModel.XmlSerializerFormatAttribute> значение `Encoded`.  
@@ -437,9 +446,11 @@ End Class
  В большинстве случаев лучше не изменять параметры по умолчанию для свойств `Style` и `Use`.  
   
 ## <a name="controlling-the-serialization-process"></a>Управление процессом сериализации  
+
  Сериализацию данных можно настраивать различными способами.  
   
 ### <a name="changing-server-serialization-settings"></a>Изменение параметров сериализации для сервера  
+
  Если используется сериализатор по умолчанию <xref:System.Runtime.Serialization.DataContractSerializer>, можно управлять некоторыми аспектами процесса сериализации в службе путем применения к ней атрибута <xref:System.ServiceModel.ServiceBehaviorAttribute>. В частности, с помощью свойства `MaxItemsInObjectGraph` можно задать максимальную квоту на количество объектов, десериализуемых с помощью <xref:System.Runtime.Serialization.DataContractSerializer>. Можно использовать свойство `IgnoreExtensionDataObject` для отключения функции полной совместимости управления версиями. Дополнительные сведения о квотах см. в разделе [Вопросы безопасности для данных](security-considerations-for-data.md). Дополнительные сведения о циклической активации см. в разделе [контракты данных с прямыми совместимостью](forward-compatible-data-contracts.md).  
   
 ```csharp  
@@ -464,6 +475,7 @@ End Interface
 ```  
   
 ### <a name="serialization-behaviors"></a>Поведения сериализации  
+
  В WCF доступны два поведения — <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> и <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> , которые автоматически подключаются в зависимости от того, какой сериализатор используется для определенной операции. Поскольку эти поведения применяются автоматически, о них обычно можно не беспокоиться.  
   
  Впрочем, у поведения `DataContractSerializerOperationBehavior` имеются свойства `MaxItemsInObjectGraph`, `IgnoreExtensionDataObject` и `DataContractSurrogate`, позволяющие настроить процесс сериализации. Назначение первых двух из вышеперечисленных свойств аналогично рассмотренному в предыдущем разделе. С помощью свойства `DataContractSurrogate` можно включить суррогаты контрактов данных - мощный механизм настройки и расширения процесса сериализации. Дополнительные сведения см. в разделе [суррогаты контракта данных](../extending/data-contract-surrogates.md).  
@@ -533,6 +545,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
  Если клиент размещен в Интернете, необходимо создать новый класс, производный от `ServiceHost`, и подключить его с помощью фабрики узла служб.  
   
 ### <a name="controlling-serialization-settings-in-configuration"></a>Управление параметрами сериализации в конфигурации  
+
  Параметры `MaxItemsInObjectGraph` и `IgnoreExtensionDataObject` можно изменять с помощью конфигурации, используя конечную точку `dataContractSerializer` или поведение службы, как показано в следующем примере.  
   
 ```xml  
@@ -558,6 +571,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
 ```  
   
 ### <a name="shared-type-serialization-object-graph-preservation-and-custom-serializers"></a>Сериализация общих типов, сохранение графов объектов и пользовательские сериализаторы  
+
  <xref:System.Runtime.Serialization.DataContractSerializer> при сериализации использует имена контрактов данных, а не имена типов .NET. Это соответствует принципам сервисноориентированной архитектуры и повышает степень гибкости, поскольку типы .NET могут изменяться, не затрагивая при этом сетевой контракт. В редких случаях имеет смысл сериализовать имена типов .NET, обеспечив таким образом тесное соединение клиента и сервера (подобно технологии удаленного взаимодействия платформы .NET Framework). Это не рекомендуемый подход, за исключением редких случаев, которые обычно возникают при переходе на WCF из .NET Framework удаленного взаимодействия. В этом случае необходимо использовать класс <xref:System.Runtime.Serialization.NetDataContractSerializer> вместо класса <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  <xref:System.Runtime.Serialization.DataContractSerializer> обычно сериализует графы объектов как деревья объектов. А именно, если один объект указан неоднократно, он сериализуется неоднократно. Рассмотрим, к примеру, экземпляр класса `PurchaseOrder`, имеющий два поля типа Address с именами `billTo` и `shipTo`. Если оба поля заданы одному и тому же экземпляру класса Address, после сериализации и десериализации получится два идентичных экземпляра этого класса. Это происходит из-за отсутствия стандартного (и поддерживающего взаимодействие) способа представления графов объектов в XML (за исключением стандарта предыдущих версий с кодировкой SOAP, используемого в сериализаторе <xref:System.Xml.Serialization.XmlSerializer>, как указано в предыдущем разделе о `Style` и `Use`). Сериализация графов объектов как деревьев имеет определенные преимущества: например, невозможность сериализации графов с циклическими ссылками. Иногда требуется переключиться на истинную сериализацию графов объектов, даже несмотря на потерю возможностей взаимодействия. Это достигается с помощью сериализатора <xref:System.Runtime.Serialization.DataContractSerializer>, созданного с параметром `preserveObjectReferences`, имеющим значение `true`.  
@@ -574,7 +588,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
   
  Дополнительные сведения о дополнительных понятиях сериализации см. в разделе [сериализация и десериализация](serialization-and-deserialization.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Использование класса XmlSerializer](using-the-xmlserializer-class.md)
 - [Практическое руководство. Включение потоковой передачи](how-to-enable-streaming.md)
