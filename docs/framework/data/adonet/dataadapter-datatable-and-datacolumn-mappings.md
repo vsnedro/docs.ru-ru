@@ -6,10 +6,10 @@ dev_langs:
 - vb
 ms.assetid: d023260a-a66a-4c39-b8f4-090cd130e730
 ms.openlocfilehash: b979431836b55b23ac9ba6ec4535f33765dce555
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "91177739"
 ---
 # <a name="dataadapter-datatable-and-datacolumn-mappings"></a>Сопоставления DataAdapter DataTable и DataColumn
@@ -54,7 +54,7 @@ adapter.Fill(custDS);
   
  Если методу **Fill** передается экземпляр **набора данных** и имя **экземпляр DataTableMapping** , если сопоставление с таким именем существует, оно используется; в противном случае используется **Таблица** данных с таким именем.  
   
- В следующих примерах создается **экземпляр DataTableMapping** с именем **Customers** и **DataTable** с именем **бизталксчема**. Затем в примере сопоставляются строки, возвращенные инструкцией SELECT, с **таблицей**данных **бизталксчема** .  
+ В следующих примерах создается **экземпляр DataTableMapping** с именем **Customers** и **DataTable** с именем **бизталксчема**. Затем в примере сопоставляются строки, возвращенные инструкцией SELECT, с **таблицей** данных **бизталксчема** .  
   
 ```vb  
 Dim mapping As ITableMapping = _  
@@ -96,7 +96,7 @@ adapter.Fill(customersDataSet, "Customers")
 adapter.Fill(customersDataSet, "Customers");  
 ```  
 
- В **наборе данных**создаются две таблицы: **Customers** и **Customers1**. Можно использовать сопоставления таблиц, чтобы гарантировать, что вторая таблица будет называться **Orders** вместо **Customers1**. Для этого сопоставьте исходную таблицу **Customers1** со столбцами таблицы **набора данных** , **Orders**как показано в следующем примере.  
+ В **наборе данных** создаются две таблицы: **Customers** и **Customers1**. Можно использовать сопоставления таблиц, чтобы гарантировать, что вторая таблица будет называться **Orders** вместо **Customers1**. Для этого сопоставьте исходную таблицу **Customers1** со столбцами таблицы **набора данных** , **Orders** как показано в следующем примере.  
   
 ```vb  
 adapter.TableMappings.Add("Customers1", "Orders")  
