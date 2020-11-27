@@ -8,14 +8,15 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
-ms.openlocfilehash: 05f35bbb7dbb34cd4067c407578038cbb4eff70f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 692ccc0c39ca7ed40601551ea6bbcdd840fa03af
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599149"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257591"
 ---
 # <a name="how-to-configure-credentials-on-a-federation-service"></a>Практическое руководство. Настройка учетных данных службы федерации
+
 В Windows Communication Foundation (WCF) Создание федеративной службы состоит из следующих основных процедур:  
   
 1. Настройка <xref:System.ServiceModel.WSFederationHttpBinding> или аналогичной пользовательской привязки. Дополнительные сведения о создании подходящей привязки см. в разделе [инструкции. Создание WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md).  
@@ -56,6 +57,7 @@ ms.locfileid: "84599149"
 5. При необходимости присвойте `samlSerializer` атрибуту `issuedTokenAuthentication` элемента <> имя типа пользовательского <xref:System.IdentityModel.Tokens.SamlSerializer> класса.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере свойства объекта <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> задаются в коде.  
   
  [!code-csharp[C_FederatedService#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federatedservice/cs/source.cs#2)]
@@ -71,7 +73,7 @@ ms.locfileid: "84599149"
   
  Например, установка свойства <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> равным <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust> приведет к тому, что будет проверяться подлинность всех выданных маркеров, сертификаты которых принадлежат к хранилищу сертификатов `TrustedPeople`. В этом случае задайте для свойства <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.TrustedStoreLocation%2A> значение <xref:System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser> или <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine>. Можно выбрать и другие режимы, в том числе режим <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>. Если выбран режим `Custom`, необходимо присвоить экземпляр класса <xref:System.IdentityModel.Selectors.X509CertificateValidator> свойству <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CustomCertificateValidator%2A>. Пользовательский проверяющий элемент управления может проверять сертификаты, используя любые условия. Дополнительные сведения см. [в разделе инструкции. Создание службы, использующей пользовательский проверяющий элемент управления для сертификатов](../extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Федерация](federation.md)
 - [Федерация и доверие](federation-and-trust.md)

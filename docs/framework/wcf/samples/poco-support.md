@@ -2,14 +2,15 @@
 title: Поддержка POCO
 ms.date: 03/30/2017
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
-ms.openlocfilehash: a9f8d185c58b22e68f7a8c11954e0e534c4bd48f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d416f37e0add99fbe3d60982fd2298748ff78556
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600468"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259971"
 ---
 # <a name="poco-support"></a>Поддержка POCO
+
 В этом образце демонстрируется поддержка сериализации непомеченных типов, т. е. типов, к которым не применены атрибуты сериализации. Иногда такие типы называют типами POCO (Plain Old CLR Object). Объект <xref:System.Runtime.Serialization.DataContractSerializer> выводит контракт данных для всех открытых непомеченных типов, имеющих конструктор без параметров. Контракты данных позволяют передавать структурированные данные в службы и из служб. Дополнительные сведения о непомеченных типах см. в разделе [сериализуемые типы](../feature-details/serializable-types.md).  
   
  Этот образец основан на [Начало работы](getting-started-sample.md), но использует комплексные числа, а не простые числовые типы. Он также похож на пример [базового контракта данных](basic-data-contract.md) , за исключением того, <xref:System.Runtime.Serialization.DataContractAttribute> что <xref:System.Runtime.Serialization.DataMemberAttribute> атрибуты и не используются.  
@@ -56,7 +57,7 @@ public class ComplexNumber
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\POCO`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - [Сериализуемые типы](../feature-details/serializable-types.md)

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6400bc71-a858-4ac2-8d5a-caa72d3b5482
-ms.openlocfilehash: 28f2858d68de99839d7fec66b0fe4528d7e42325
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 39b9da1096c38eba648f528f7c2b3ecaa39ab7c2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579531"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257513"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-service-to-use-port-sharing"></a>Практическое руководство. Настройка службы Windows Communication Foundation на совместное использование портов
+
 Самый простой способ использовать NET. TCP://совместное использование портов в приложении Windows Communication Foundation (WCF) — предоставить службу с помощью <xref:System.ServiceModel.NetTcpBinding> .  
   
  Эта привязка предоставляет свойство <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A>, которое определяет, включено ли совместное использование порта net.tcp:// для службы, настраиваемой с этой привязкой.  
@@ -60,7 +61,7 @@ ms.locfileid: "84579531"
 </system.serviceModel>  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Совместное использование портов Net.TCP](net-tcp-port-sharing.md)
 - [Практическое руководство. Включение службы совместного использования портов Net.TCP](how-to-enable-the-net-tcp-port-sharing-service.md)

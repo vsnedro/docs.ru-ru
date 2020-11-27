@@ -5,15 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
-ms.openlocfilehash: 847146c2025612689f0d69cc0c23d2be14018c0f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c955244c2e6821abda3a1fc5e25f00a73389ff1d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556841"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257773"
 ---
 # <a name="how-to-access-a-wse-30-service-with-a-wcf-client"></a>Практическое руководство. Обращение к службе WSE 3.0 с помощью клиента WCF
-Клиенты Windows Communication Foundation (WCF) совместимы с расширениями веб-служб (WSE) 3,0 для служб Microsoft .NET, когда клиенты WCF настроены для использования версии WS-Addressing в августе 2004. Однако службы WSE 3,0 не поддерживают протокол обмена метаданными (MEX), поэтому при использовании [средства служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) для создания клиентского класса WCF параметры безопасности не применяются к созданному клиенту WCF. Поэтому необходимо указать параметры безопасности, которые требуются службе WSE 3,0 после создания клиента WCF.  
+
+Клиенты Windows Communication Foundation (WCF) совместимы с расширениями веб-служб (WSE) 3,0 для служб Microsoft .NET, когда клиенты WCF настроены для использования спецификации WS-Addressing в августе 2004. Однако службы WSE 3,0 не поддерживают протокол обмена метаданными (MEX), поэтому при использовании [средства служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) для создания клиентского класса WCF параметры безопасности не применяются к созданному клиенту WCF. Поэтому необходимо указать параметры безопасности, которые требуются службе WSE 3,0 после создания клиента WCF.  
   
  Эти параметры безопасности можно применить с помощью пользовательской привязки, чтобы учитывать требования службы WSE 3,0 и требования взаимодействия между службой WSE 3,0 и клиентом WCF. Требования в отношении взаимодействия включают использование упомянутой выше спецификации WS-Addressing от августа 2004 г. и предусмотренной в WSE 3.0 защиты сообщений по умолчанию с помощью поля <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>. Защита сообщений по умолчанию для WCF — <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature> . В этом разделе подробно описано, как создать привязку WCF, взаимодействующую со службой WSE 3,0. WCF также предоставляет пример, включающий эту привязку. Дополнительные сведения об этом примере см. в разделе [взаимодействие с веб-СЛУЖБАМИ ASMX](../samples/interoperating-with-asmx-web-services.md).  
   
@@ -58,6 +59,7 @@ ms.locfileid: "90556841"
      [!code-vb[c_WCFClientToWSEService#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#4)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода определяется пользовательская привязка, предоставляющая свойства, соответствующие свойствам готового к использованию утверждения безопасности WSE 3.0. Эта пользовательская привязка, которая называется `WseHttpBinding` , затем используется для указания свойств привязки для клиента WCF, который взаимодействует с примером краткого руководства по ВССЕКУРИТЯНОНИМАУС WSE 3,0.  
 
 ## <a name="see-also"></a>См. также

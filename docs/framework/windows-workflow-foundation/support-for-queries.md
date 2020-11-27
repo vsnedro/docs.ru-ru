@@ -2,14 +2,15 @@
 title: Поддержка запросов
 ms.date: 03/30/2017
 ms.assetid: 093c22f5-3294-4642-857a-5252233d6796
-ms.openlocfilehash: e281b5ae7a41bd282f8e7c7eb9db6f99ef5487f3
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 350644de4a5deb7b8dcb5133c9cc2edb477fd355
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69948941"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96258443"
 ---
 # <a name="support-for-queries"></a>Поддержка запросов
+
 Хранилище экземпляров рабочих процессов SQL записывает набор известных свойств в хранилище. Пользователи могут выполнить запрос экземпляров на основе этих свойств. В следующем списке приведены некоторые из этих известных свойств.  
   
 - **Имя сайта.** Имя веб-узла, содержащего службу.  
@@ -34,69 +35,73 @@ ms.locfileid: "69948941"
  Возможность хранилища экземпляров рабочих процессов SQL также позволяет указать пользовательские свойства, значения которых требуется сохранять в базе данных сохраняемости и которые будут в дальнейшем использованы в запросах. Дополнительные сведения о пользовательских рекламных акциях см. в разделе [Хранение расширяемости](store-extensibility.md).  
   
 ## <a name="views"></a>Представления  
+
  Хранилище экземпляров содержит следующие представления. Дополнительные сведения см. в разделе [схема базы данных сохраняемости](persistence-database-schema.md) .  
   
 ### <a name="the-instances-view"></a>Представление экземпляров  
+
  Представление экземпляров содержит следующие поля:  
   
-1. **Идентификатор**  
+1. **Id**  
   
-2. **пендингтимер**  
+2. **PendingTimer**  
   
 3. **CreationTime**  
   
 4. **LastUpdatedTime**  
   
-5. **сервицедеплойментид**  
+5. **ServiceDeploymentId**  
   
-6. **суспенсионексцептионнаме**  
+6. **SuspensionExceptionName**  
   
-7. **суспенсионреасон**  
+7. **SuspensionReason**  
   
-8. **активебукмаркс**  
+8. **ActiveBookmarks**  
   
-9. **куррентмачине**  
+9. **CurrentMachine**  
   
-10. **ластмачине**  
+10. **LastMachine**  
   
-11. **ексекутионстатус**  
+11. **ExecutionStatus**  
   
 12. **IsInitialized**  
   
-13. **Приостановка**  
+13. **IsSuspended**  
   
-14. **Соответствующие IsCompleted**  
+14. **IsCompleted**  
   
-15. **енкодингоптион**  
+15. **EncodingOption**  
   
-16. **реадвритепримитиведатапропертиес**  
+16. **ReadWritePrimitiveDataProperties**  
   
-17. **вритеонлипримитиведатапропертиес**  
+17. **WriteOnlyPrimitiveDataProperties**  
   
-18. **реадвритекомплексдатапропертиес**  
+18. **ReadWriteComplexDataProperties**  
   
-19. **вритеонликомплексдатапропертиес**  
+19. **WriteOnlyComplexDataProperties**  
   
 ### <a name="the-servicedeployments-view"></a>Представление ServiceDeployments  
+
  Представление ServiceDeployments содержит следующие поля:  
   
 1. **Значением**  
   
-2. **релативесервицепас**  
+2. **RelativeServicePath**  
   
-3. **релативеаппликатионпас**  
+3. **RelativeApplicationPath**  
   
 4. **Служба**  
   
-5. **сервиценамеспаце**  
+5. **ServiceNamespace**  
   
 ### <a name="the-instancepromotedproperties-view"></a>Представление InstancePromotedProperties  
+
  Представление InstancePromotedProperties содержит следующие поля. Дополнительные сведения о повышенных свойствах см. в статье о [расширении хранилища](store-extensibility.md) .  
   
 1. **InstanceId**  
   
-2. **енкодингоптион**  
+2. **EncodingOption**  
   
-3. **промотионнаме**  
+3. **PromotionName**  
   
 4. **Значение #** (диапазон полей от **Значение1** до **Value64**).

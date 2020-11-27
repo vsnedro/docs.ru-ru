@@ -2,17 +2,19 @@
 title: Привязка MSMQ на платформе .NET
 ms.date: 03/30/2017
 ms.assetid: fe4bb696-f57c-4cb3-9b7e-9d95fe6b8323
-ms.openlocfilehash: 622341ef00f5d8950fa0c013e427f20e02187893
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 22b82e9335f3bf5861000a62374ab9e8dccce8cf
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602431"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259984"
 ---
 # <a name="net-msmq-binding"></a>Привязка MSMQ на платформе .NET
+
 Этот раздел содержит образцы, которые демонстрируют использование привязки атрибутов MSMQ элемента конечной точки.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Привязка MSMQ с поддержкой транзакций](transacted-msmq-binding.md)  
  Показывает, как осуществлять транзакционное взаимодействие с использованием очередей с помощью очереди сообщений (MSMQ).  
   

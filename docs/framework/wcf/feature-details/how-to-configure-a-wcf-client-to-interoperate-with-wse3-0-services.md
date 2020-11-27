@@ -5,15 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
-ms.openlocfilehash: 1ebc4e145528c3025b0299ea7e421c248c28cdc0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b5284db1329c572bdecf3ef607e697c63835d508
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556373"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257526"
 ---
 # <a name="how-to-configure-a-wcf-client-to-interoperate-with-wse30-services"></a>Практическое руководство. Настройка клиента WCF для взаимодействия со службами WSE 3.0
-Клиенты Windows Communication Foundation (WCF), совместимые с веб-службами, расширяют возможности 3,0 для служб Microsoft .NET (WSE), когда клиенты WCF настроены для использования версии спецификации WS-Addressing в августе 2004.  
+
+Клиенты Windows Communication Foundation (WCF) совместимы с расширениями веб-служб 3,0 для служб Microsoft .NET (WSE), когда клиенты WCF настроены для использования спецификации WS-Addressing в августе 2004.  
   
 ### <a name="to-configure-a-wcf-client-to-interoperate-with-a-wse-30-web-service"></a>Настройка клиента WCF для взаимодействия с веб-службой WSE 3.0  
   
@@ -56,6 +57,7 @@ ms.locfileid: "90556373"
      [!code-vb[c_WCFClientToWSEService#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#4)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода определяется пользовательская привязка, предоставляющая свойства, соответствующие свойствам готового к использованию утверждения безопасности WSE 3.0. Пользовательская привязка, которая называется `WseHttpBinding` , затем используется для указания свойств привязки для клиента WCF.  
 
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]
