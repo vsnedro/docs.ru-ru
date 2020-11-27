@@ -2,24 +2,27 @@
 title: Инструкции по установке сертификата сервера в службах IIS
 ms.date: 03/30/2017
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
-ms.openlocfilehash: 301a10c615a13a42e1a6e1b89d2724476ca4fbae
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 597af9873b4a5c042aec817ac0d26a86bac9ea82
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594664"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253795"
 ---
 # <a name="internet-information-services-iis-server-certificate-installation-instructions"></a>Инструкции по установке сертификата сервера в службах IIS
+
 Чтобы запускать примеры, которые безопасным образом взаимодействуют со службами IIS, необходимо создать и установить сертификат сервера.  
   
 ## <a name="step-1-creating-certificates"></a>Шаг 1. Создание сертификатов  
- Чтобы создать сертификат для компьютера, откройте Командная строка разработчика для Visual Studio с правами администратора и запустите Setup. bat, который включен в каждый из примеров, использующих безопасное взаимодействие с IIS. Перед запуском пакетного файла убедитесь, что путь включает папку, содержащую программу Makecert.exe. Следующая команда служит для создания сертификата в файле Setup.bat.  
+
+ Чтобы создать сертификат для компьютера, откройте Командная строка разработчика для Visual Studio с правами администратора и запустите Setup.bat, включенный в каждый из примеров, использующих безопасное соединение с IIS. Перед запуском пакетного файла убедитесь, что путь включает папку, содержащую программу Makecert.exe. Следующая команда служит для создания сертификата в файле Setup.bat.  
   
 ```console  
 makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exchange -sk ServiceModelSamples-HTTPS-Key  
 ```  
   
 ## <a name="step-2-installing-certificates"></a>Шаг 2. Установка сертификатов  
+
  Шаги, необходимые для установки созданных сертификатов, зависят от используемой версии IIS.  
   
 #### <a name="to-install-iis-on-iis-51-windows-xp-and-iis-60-windows-server-2003"></a>Установка IIS в IIS 5.1 (Windows XP) и IIS 6.0 (Windows Server 2003)  

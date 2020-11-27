@@ -2,14 +2,15 @@
 title: HttpCookieSession
 ms.date: 03/30/2017
 ms.assetid: 101cb624-8303-448a-a3af-933247c1e109
-ms.openlocfilehash: 8dba147ace7ada221b5d274cd233e4b9618835d9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: df29ae84537cdb7cea40abcdb848ffbb8bbd6b9f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585134"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253821"
 ---
 # <a name="httpcookiesession"></a>HttpCookieSession
+
 В этом образце показано, как построить пользовательский канал протокола, который использует для управления сеансами протокол HTTP. Этот канал обеспечивает взаимодействие между службами Windows Communication Foundation (WCF) и клиентами ASMX или между клиентами WCF и службами ASMX.  
   
  Когда клиент вызывает веб-метод в веб-службе ASMX, которая основана на сеансе, подсистема ASP.NET выполняет следующие действия:  
@@ -34,9 +35,11 @@ ms.locfileid: "84585134"
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\HttpCookieSession`  
   
 ## <a name="httpcookiesession-channel-message-exchange-pattern"></a>Шаблон обмена сообщениями канала HttpCookieSession  
+
  В этом примере включаются сеансы для сценариев, подобных применению служб ASMX. В нижней части стека каналов имеется транспорт HTTP, который поддерживает <xref:System.ServiceModel.Channels.IRequestChannel> и <xref:System.ServiceModel.Channels.IReplyChannel>. Именно канал отвечает за то, чтобы предоставлять сеансы каналам стека более высокого уровня. В образце реализуются два канала (<xref:System.ServiceModel.Channels.IRequestSessionChannel> и <xref:System.ServiceModel.Channels.IReplySessionChannel>), поддерживающих сеансы.  
   
 ## <a name="service-channel"></a>Канал службы  
+
  В этом образце создается канал службы в классе `HttpCookieReplySessionChannelListener`. Этот класс реализует интерфейс <xref:System.ServiceModel.Channels.IChannelListener> и преобразует канал <xref:System.ServiceModel.Channels.IReplyChannel> из нижнего канала в стеке в канал <xref:System.ServiceModel.Channels.IReplySessionChannel>. Этот процесс можно разбить на следующие части.  
   
 - Когда открывается прослушиватель канала, он принимает от своего внутреннего прослушивателя внутренний канал. Поскольку внутренний прослушиватель является прослушивателем датаграмм, а время существования принятого канала вычитается из времени существования прослушивателя, можно закрыть внутренний прослушиватель и работать только с внутренним каналом.  
@@ -77,9 +80,11 @@ InputQueue<RequestContext> requestQueue;
  Мы используем `channelMapping` для отслеживания `ReplySessionChannels` и не закрываем соответствующий канал `innerChannel`, пока не будут закрыты все принятые каналы. Таким образом, канал `HttpCookieReplySessionChannel` может существовать после истечения времени существования `HttpCookieReplySessionChannelListener`. Кроме того, нам не нужно беспокоиться о попадании прослушивателя под сборку мусора, поскольку принятые каналы сохраняют ссылку на свой прослушиватель с помощью обратного вызова `OnClosed`.  
   
 ## <a name="client-channel"></a>Клиентский канал  
+
  Соответствующий клиентский канал создается в классе `HttpCookieSessionChannelFactory`. Во время создания канал фабрика каналов с помощью `HttpCookieRequestSessionChannel` создает оболочку для внутреннего канала запросов. Класс `HttpCookieRequestSessionChannel` перенаправляет вызовы в соответствующий канал запросов. Когда клиент закрывает прокси, `HttpCookieRequestSessionChannel` отправляет службе сообщение о том, что канал закрывается. Таким образом, стек каналов службы может безопасно закрыть используемый канал сеанса.  
   
 ## <a name="binding-and-binding-element"></a>Привязка и элемент привязки  
+
  После создания канала службы и клиента следующий шаг заключается в их интеграции в среду выполнения WCF. Каналы предоставляются WCF с помощью привязок и элементов привязки. Привязка состоит из одного или нескольких элементов привязки. WCF предлагает несколько определяемых системой привязок. Например, BasicHttpBinding или WSHttpBinding. Класс `HttpCookieSessionBindingElement` содержит реализацию элемента привязки. Он переопределяет прослушиватель канала и методы создания фабрики канала для создания нужных экземпляров прослушивателя канала и фабрики каналов.  
   
  В этом образце для описания службы используются утверждения политики. Это позволяет образцу публиковать свои требования к каналам для других клиентов, которые могут пользоваться службой. Например, этот элемент привязки публикует утверждения политики, позволяющие потенциальным клиентам узнать, служба поддерживает сеансы. Поскольку в конфигурации элемента привязки этого образца включено свойство `ExchangeTerminateMessage`, оно добавляет необходимые утверждения, чтобы показать, что служба поддерживает дополнительные действия обмена сообщениями для завершения сеанса. Клиенты могут использовать это действие. В следующем коде WSDL показаны утверждения политики, созданные на базе элемента `HttpCookieSessionBindingElement`.  
@@ -98,9 +103,11 @@ InputQueue<RequestContext> requestQueue;
  Класс `HttpCookieSessionBinding` является предоставляемой системой привязкой, которая использует описанный выше элемент привязки.  
   
 ## <a name="adding-the-channel-to-the-configuration-system"></a>Добавление канала в систему конфигурации  
+
  В этом образце имеется два канала, делающие канал доступным через конфигурацию. Первый - элемент <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> для `HttpCookieSessionBindingElement`. Основная часть реализации делегируется классу `HttpCookieSessionBindingConfigurationElement`, наследуемому от класса <xref:System.ServiceModel.Configuration.StandardBindingElement>. Элемент `HttpCookieSessionBindingConfigurationElement` имеет свойства, которые соответствуют свойствам элемента `HttpCookieSessionBindingElement`.  
   
 ### <a name="binding-element-extension-section"></a>Раздел расширения элемента привязки  
+
  Раздел `HttpCookieSessionBindingElementSection` представляет собой <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> , который предоставляет `HttpCookieSessionBindingElement` системе конфигурации. С помощью нескольких простых переопределений определяется имя раздела конфигурации, тип элемента привязки и способ создания элемента привязки. Мы можем затем зарегистрировать раздел расширения в файле конфигурации следующим образом.  
   
 ```xml  
@@ -130,6 +137,7 @@ InputQueue<RequestContext> requestQueue;
 ```  
   
 ## <a name="test-code"></a>Тестовый код  
+
  Тестовый код для использования этого примера транспорта находится в каталогах Client и Service. Он состоит из двух тестов — один тест использует привязку с параметром, равным `allowCookies` `true` , на клиенте. Второй тест включает на привязке явное отключение (с помощью обмена сообщениями завершения).  
   
  При запуске примера результат должен выглядеть следующим образом:  

@@ -2,14 +2,15 @@
 title: Практическое руководство. Как создать службу, возвращающую произвольные данные, с использованием модели программирования WCF Web HTTP
 ms.date: 03/30/2017
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
-ms.openlocfilehash: 9753fbc9b333cb7e89ddc8dff030cb1f62ede23b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4ed3e5269be5b636b348ff0efe44c49dae5335e2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600365"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253899"
 ---
 # <a name="how-to-create-a-service-that-returns-arbitrary-data-using-the-wcf-web-http-programming-model"></a>Практическое руководство. Как создать службу, возвращающую произвольные данные, с использованием модели программирования WCF Web HTTP
+
 Иногда разработчики должны полностью управлять тем, как данные возвращаются из операции службы. Так происходит, когда операция службы должна возвращать данные в формате, не поддерживаемом WCF. В этом разделе обсуждается использование модели программирования WCF WEB HTTP для создания такой службы. В этой службе имеется одна операция, которая возвращает поток.  
   
 ### <a name="to-implement-the-service-contract"></a>Реализация контракта службы  
@@ -108,6 +109,7 @@ ms.locfileid: "84600365"
 2. Откройте Internet Explorer и введите `http://localhost:8000/Service/GetImage?width=50&height=40`. Должен появиться желтый прямоугольник с синей диагональной линией, проходящей через центр.  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный листинг кода для данного раздела.  
   
 ```csharp  
@@ -175,6 +177,6 @@ namespace RawImageService
   
 - При компиляции образец кода обращается к файлам System.ServiceModel.dll и System.ServiceModel.Web.dll.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Модель веб-программирования HTTP WCF](wcf-web-http-programming-model.md)

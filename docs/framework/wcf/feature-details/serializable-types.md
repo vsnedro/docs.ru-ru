@@ -2,19 +2,21 @@
 title: Сериализуемые типы
 ms.date: 03/30/2017
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-ms.openlocfilehash: e65fcb93c5c36bb289b825cef58b3adc6f5155f5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4ba5fb80b3a7f4149eb49aa838826f2792147dd1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586108"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253964"
 ---
 # <a name="serializable-types"></a>Сериализуемые типы
+
 По умолчанию <xref:System.Runtime.Serialization.DataContractSerializer> сериализует все открытые типы. Все открытые свойства чтения/записи и поля типа сериализуются.  
   
  Изменить предусмотренное по умолчанию поведение можно, применив к типам и членам атрибуты <xref:System.Runtime.Serialization.DataContractAttribute> и <xref:System.Runtime.Serialization.DataMemberAttribute>. Этим удобно пользоваться в ситуациях, когда разработчик не имеет возможности управлять типами и изменять их для добавления атрибутов. <xref:System.Runtime.Serialization.DataContractSerializer> распознает такие "неотмеченные" типы.  
   
 ## <a name="serialization-defaults"></a>Параметры сериализации по умолчанию  
+
  Для явного управления сериализацией или настройки сериализации типов и членов можно применять атрибуты <xref:System.Runtime.Serialization.DataContractAttribute> и <xref:System.Runtime.Serialization.DataMemberAttribute>. Эти атрибуты также можно применять к закрытым полям. В то же время даже типы, не отмеченные этими атрибутами, сериализуются и десериализуются. Действуют следующие правила и исключения.  
   
 - <xref:System.Runtime.Serialization.DataContractSerializer> выводит контракт данных из типов без атрибутов, используя свойства по умолчанию только что созданных типов.  
@@ -36,9 +38,10 @@ ms.locfileid: "84586108"
 - Чтобы исключить из процесса сериализации открытые члены, свойства или поля, применяйте к таким членам атрибут <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>.  
   
 ## <a name="inheritance"></a>Наследование  
+
  Неотмеченные типы (типы без атрибута <xref:System.Runtime.Serialization.DataContractAttribute>) могут наследоваться от типов, имеющих этот атрибут. В то же время обратное невозможно: типы с атрибутом от неотмеченных типов наследоваться не могут. Это правило применяется в первую очередь для обеспечения обратной совместимости с кодом, написанным в более ранних версиях .NET Framework.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>
 - <xref:System.Runtime.Serialization.DataContractAttribute>

@@ -2,14 +2,15 @@
 title: Безопасность транспорта WS
 ms.date: 03/30/2017
 ms.assetid: 33a20358-5e1b-458a-a6a9-15753bc7b99b
-ms.openlocfilehash: d0f357ddcfc355bac8eeb86d57641add0013a052
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 64059a5a09d49f83c9abda5b2f3d1601acf41a3e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596401"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96252417"
 ---
 # <a name="ws-transport-security"></a>Безопасность транспорта WS
+
 В этом образце показано использование безопасности транспорта SSL с привязкой <xref:System.ServiceModel.WSHttpBinding>. По умолчанию привязка `wsHttpBinding` обеспечивает взаимодействие по протоколу HTTP. При настройке для безопасности транспорта привязка поддерживает взаимодействие по протоколу HTTPS. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора. В файлах конфигурации клиента и службы задана и настроена привязка `wsHttpBinding`.  
   
 > [!NOTE]
@@ -51,7 +52,7 @@ ms.locfileid: "84596401"
   
  Указанный адрес использует `https://` схему. Конфигурация привязки задает режим безопасности `Transport`. Тот же режим безопасности необходимо задать в файле Web.config службы.  
   
- Поскольку сертификат, используемый в этом примере, является тестовым сертификатом, созданным с помощью Makecert. exe, при попытке получить доступ к адресу https:, например, в браузере появится предупреждение системы безопасности `https://localhost/servicemodelsamples/service.svc` . Чтобы клиент Windows Communication Foundation (WCF) работал с тестовым сертификатом на месте, к клиенту был добавлен дополнительный код для подавления оповещения системы безопасности. При использовании рабочих сертификатов этот код и соответствующие классы не требуются.  
+ Так как сертификат, используемый в этом примере, является тестовым сертификатом, созданным с помощью Makecert.exe, оповещение системы безопасности появляется при попытке доступа к адресу https:, например `https://localhost/servicemodelsamples/service.svc` , из браузера. Чтобы клиент Windows Communication Foundation (WCF) работал с тестовым сертификатом на месте, к клиенту был добавлен дополнительный код для подавления оповещения системы безопасности. При использовании рабочих сертификатов этот код и соответствующие классы не требуются.  
 
 ```csharp
 // This code is required only for test certificates like those created by Makecert.exe.  

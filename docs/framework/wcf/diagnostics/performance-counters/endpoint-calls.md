@@ -1,16 +1,18 @@
 ---
-title: 'Конечная точка: Вызовы'
+title: 'Конечная точка: вызовы'
 ms.date: 03/30/2017
 ms.assetid: 223aefec-3011-4f35-afa7-a34c76708d52
-ms.openlocfilehash: 056b3a571c035c9c0187a3883efdb303cbbc4849
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: dce1cb6658222bd90b148fae8409d518bf47d9cc
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61797258"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253128"
 ---
-# <a name="endpoint-calls"></a>Конечная точка: Вызовы
-Имя счетчика: Вызовы.  
+# <a name="endpoint-calls"></a>Конечная точка: вызовы
+
+Имя счетчика: Calls  
   
 ## <a name="description"></a>Описание  
+
  Количество вызовов данной конечной точки.

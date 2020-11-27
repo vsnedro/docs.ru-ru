@@ -2,17 +2,19 @@
 title: Использование DataContractSerializer и Data Contract Resolver для обеспечения функциональности NetDataContractSerializer
 ms.date: 03/30/2017
 ms.assetid: 1376658f-f695-45f7-a7e0-94664e9619ff
-ms.openlocfilehash: e7a4f0d754b444d8558b03e07d98788a2eee5971
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 002cd101ddf760e28a71ded0d6a7f4ee29a56c3b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144986"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253617"
 ---
 # <a name="using-datacontractserializer-and-datacontractresolver-to-provide-the-functionality-of-netdatacontractserializer"></a>Использование DataContractSerializer и Data Contract Resolver для обеспечения функциональности NetDataContractSerializer
+
 В образце описывается, как использование <xref:System.Runtime.Serialization.DataContractSerializer> с соответствующим <xref:System.Runtime.Serialization.DataContractResolver> обеспечивает функциональность, идентичную <xref:System.Runtime.Serialization.NetDataContractSerializer>. В следующем образце показано, как создать соответствующий <xref:System.Runtime.Serialization.DataContractResolver> и как добавить его к <xref:System.Runtime.Serialization.DataContractSerializer>.
 
 ## <a name="sample-details"></a>Подробные сведения об образце
+
  Существует одно важное отличие <xref:System.Runtime.Serialization.NetDataContractSerializer> от <xref:System.Runtime.Serialization.DataContractSerializer>: <xref:System.Runtime.Serialization.NetDataContractSerializer> включает информацию о типе CLR в сериализованный XML, а <xref:System.Runtime.Serialization.DataContractSerializer> этого не делает. Таким образом <xref:System.Runtime.Serialization.NetDataContractSerializer> может использоваться только при использовании одних и тех же типов CLR на концах сериализации и десериализации. Однако рекомендуется использовать <xref:System.Runtime.Serialization.DataContractSerializer>, поскольку он обладает более высоким уровнем производительности, чем <xref:System.Runtime.Serialization.NetDataContractSerializer>. Можно изменить данные, сериализуемые в <xref:System.Runtime.Serialization.DataContractSerializer> при добавлении к нему <xref:System.Runtime.Serialization.DataContractResolver>.
 
  Этот образец состоит из двух проектов. В первом проекте используется <xref:System.Runtime.Serialization.NetDataContractSerializer> для сериализации этого объекта. Во втором проекте используется <xref:System.Runtime.Serialization.DataContractSerializer> с <xref:System.Runtime.Serialization.DataContractResolver> для обеспечения функциональности, идентичной первому проекту.
@@ -54,15 +56,15 @@ class MyDataContractResolver : DataContractResolver
 
 #### <a name="to-use-this-sample"></a>Использование этого образца
 
-1. Используя Visual Studio 2012, откройте файл решения DCRSample.sln.
+1. С помощью Visual Studio 2012 откройте файл решения Дкрсампле. sln.
 
-2. Нажмите правой кнопкой мыши файл решения и выбрать **Свойства**.
+2. Щелкните правой кнопкой мыши файл решения и выберите пункт **Свойства**.
 
-3. В диалоге **страниц свойств решений,** под **общими свойствами,** **Стартап-проект**, выберите **несколько проектов запуска:**.
+3. В диалоговом окне **страницы свойств решения** в разделе **Общие свойства**, **запускаемый проект** выберите **Несколько запускаемых проектов:**.
 
-4. Рядом с проектом **DCSwithDCR** выберите **«Старт** из отбрасывания **действий».**
+4. Рядом с проектом **дксвисдкр** выберите **Запуск** из раскрывающегося списка **действие** .
 
-5. Рядом с проектом **NetDCS** выберите **«Старт** из отбрасывания **действий».**
+5. Рядом с проектом **нетдкс** выберите **Запуск** из раскрывающегося списка **действие** .
 
 6. Нажмите кнопку **ОК**, чтобы закрыть диалоговое окно.
 
@@ -75,6 +77,6 @@ class MyDataContractResolver : DataContractResolver
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\NetDcSasDcSwithDCR`  

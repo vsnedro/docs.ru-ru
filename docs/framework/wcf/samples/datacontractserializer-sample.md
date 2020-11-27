@@ -5,14 +5,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - XML Formatter
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
-ms.openlocfilehash: c2f62c8926f09e2d4cdea1941909e7d8f59c43a0
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: d38dddcaff7316f4933207c4aa0897ad47306352
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244417"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253626"
 ---
 # <a name="datacontractserializer-sample"></a>Пример DataContractSerializer
+
 В образце DataContractSerializer показывается сериализатор <xref:System.Runtime.Serialization.DataContractSerializer>, выполняющий службы общей сериализации и десериализации для классов контракта данных. Пример создает `Record` объект, сериализует его в поток памяти и десериализует поток памяти обратно в другой `Record` объект, чтобы продемонстрировать использование <xref:System.Runtime.Serialization.DataContractSerializer> . Затем в образце объект `Record` сериализуется с помощью модуля записи двоичных данных, чтобы продемонстрировать, как этот модуль влияет на сериализацию.  
   
 > [!NOTE]

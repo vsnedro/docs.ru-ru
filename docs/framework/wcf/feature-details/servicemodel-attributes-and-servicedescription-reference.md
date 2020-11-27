@@ -2,19 +2,21 @@
 title: Атрибуты ServiceModel и справочная информация ServiceDescription
 ms.date: 03/30/2017
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
-ms.openlocfilehash: 5e39a63d399edccc580b27ad4bfbc9ab05015ef9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: db2824d7452f1ec4c675782e18ad25bd4be6a483
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600352"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253873"
 ---
 # <a name="servicemodel-attributes-and-servicedescription-reference"></a>Атрибуты ServiceModel и справочная информация ServiceDescription
+
 *Дерево описания* — это иерархия типов (начиная с <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=nameWithType> класса), которые вместе описывают каждый аспект службы. Windows Communication Foundation (WCF) использует дерево описания для создания допустимой среды выполнения службы, публикации языка описания веб-служб (WSDL), языка определения схемы XML (XSD) и утверждений политики (метаданных) о службе, которую клиенты могут использовать для подключения к службе и ее использования, а также для создания различных представлений кода и файлов конфигурации для значений дерева описания.  
   
  В этом разделе описывается получение свойств, относящихся к контракту, из контракта службы, а также их реализация и добавление в дерево описания. В некоторых случаях значения атрибутов преобразуются в свойства поведения, затем поведение вставляется в дерево описания. Дополнительные сведения о преобразовании значений дерева описания в метаданные см. в разделе [ServiceDescription и Справочник по WSDL](servicedescription-and-wsdl-reference.md).  
   
 ## <a name="mapping-operations-to-the-description-tree"></a>Сопоставление операций дереву описания  
+
  В приложениях WCF контракты служб моделируются по интерфейсам (или классам), которые используют атрибуты для пометки интерфейса или класса и его методов как группирования операций. При открытии класса <xref:System.ServiceModel.ServiceHost> все контракты и реализации службы отражаются и объединяются с информацией о конфигурации в дереве описания.  
   
  Существует два типа моделей операций: модель *параметров* и модель *контрактов сообщений* . В модели параметров используются управляемые методы, не имеющие типа параметра или возвращаемого значения, помеченного классом <xref:System.ServiceModel.MessageContractAttribute?displayProperty=nameWithType>. В этой модели разработчики управляют сериализацией параметров и возвращаемых значений, но WCF создает значения, которые используются для заполнения дерева описания для службы и ее контракта.  
@@ -47,7 +49,7 @@ ms.locfileid: "84600352"
 |IsOneWay|Сопоставляется одному описанию <xref:System.ServiceModel.Description.MessageDescription> в <xref:System.ServiceModel.Description.OperationDescription.Messages%2A>|  
 |IsInitiating|<xref:System.ServiceModel.Description.OperationDescription.IsInitiating%2A>|  
 |IsTerminating|<xref:System.ServiceModel.Description.OperationDescription.IsTerminating%2A>|  
-|Имя|<xref:System.ServiceModel.Description.OperationDescription.Name%2A>|  
+|name|<xref:System.ServiceModel.Description.OperationDescription.Name%2A>|  
 |ProtectionLevel|<xref:System.ServiceModel.Description.OperationDescription.ProtectionLevel%2A> и, возможно, дочерние уровни защиты. Дополнительные сведения об иерархии уровня защиты см. в разделе [Основные сведения о уровне защиты](../understanding-protection-level.md).|  
 |ReplyAction|<xref:System.ServiceModel.Description.MessageDescription.Action%2A> для исходящего или входящего сообщения, в зависимости от контракта/контракта обратного вызова.|  
   
@@ -61,12 +63,12 @@ ms.locfileid: "84600352"
   
 |Значение DataContractFormatAttribute|Изменяемое значение дерева описания|  
 |---------------------------------------|-------------------------------------|  
-|Использовать|Задается значение <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> в <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> для операции.|  
+|Назначение|Задается значение <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> в <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> для операции.|  
   
 |Значение XmlSerializerFormatAttribute|Изменяемое значение дерева описания|  
 |----------------------------------------|-------------------------------------|  
 |Стиль|Это свойство <xref:System.ServiceModel.XmlSerializerFormatAttribute> задается в <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> для операции.|  
-|Использовать|<xref:System.ServiceModel.XmlSerializerFormatAttribute> задается в <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> для операции.|  
+|Назначение|<xref:System.ServiceModel.XmlSerializerFormatAttribute> задается в <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> для операции.|  
   
 |Значение TransactionFlowAttribute|Изменяемое значение дерева описания|  
 |------------------------------------|-------------------------------------|  
@@ -80,19 +82,19 @@ ms.locfileid: "84600352"
   
 |Значение MessageHeaderAttribute|Изменяемое значение дерева описания|  
 |----------------------------------|-------------------------------------|  
-|Субъект|<xref:System.ServiceModel.Description.MessageHeaderDescription.Actor%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|MustUnderstand|<xref:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|Имя|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|Пространство имен|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
-|Ретрансляция|<xref:System.ServiceModel.Description.MessageHeaderDescription.Relay%2A>для соответствующего заголовка в<xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|Субъект|<xref:System.ServiceModel.Description.MessageHeaderDescription.Actor%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|MustUnderstand|<xref:System.ServiceModel.Description.MessageHeaderDescription.MustUnderstand%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|Пространство имен|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
+|Ретрансляция|<xref:System.ServiceModel.Description.MessageHeaderDescription.Relay%2A> для соответствующего заголовка в <xref:System.ServiceModel.Description.MessageDescription.Headers%2A>|  
   
 |Значение MessageBodyMemberAttribute|Изменяемое значение дерева описания|  
 |--------------------------------------|-------------------------------------|  
-|Имя|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>для соответствующей части в<xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
-|Пространство имен|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A>для соответствующей части в<xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
-|Номер|<xref:System.ServiceModel.Description.MessagePartDescription.Index%2A>для соответствующей части в<xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
-|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A>для соответствующей части в<xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> для соответствующей части в <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|Пространство имен|<xref:System.ServiceModel.Description.MessagePartDescription.Namespace%2A> для соответствующей части в <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|Порядок|<xref:System.ServiceModel.Description.MessagePartDescription.Index%2A> для соответствующей части в <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|ProtectionLevel|<xref:System.ServiceModel.Description.MessagePartDescription.ProtectionLevel%2A> для соответствующей части в <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
   
 |Значение MessageHeaderArrayAttribute|Изменяемое значение дерева описания|  
 |---------------------------------------|-------------------------------------|  
@@ -105,14 +107,14 @@ ms.locfileid: "84600352"
   
 |Значение MessagePropertyAttribute|Изменяемое значение дерева описания|  
 |------------------------------------|-------------------------------------|  
-|Имя|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>|  
+|name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>|  
   
 |Значение MessageParameterAttribute|Изменяемое значение дерева описания|  
 |-------------------------------------|-------------------------------------|  
-|Имя|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A>для соответствующей части в<xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
+|name|<xref:System.ServiceModel.Description.MessagePartDescription.Name%2A> для соответствующей части в <xref:System.ServiceModel.Description.MessageBodyDescription.Parts%2A>|  
   
  Дополнительные сведения о преобразовании значений дерева описания в метаданные см. в разделе [ServiceDescription и Справочник по WSDL](servicedescription-and-wsdl-reference.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [ServiceDescription и справочная информация о WSDL](servicedescription-and-wsdl-reference.md)

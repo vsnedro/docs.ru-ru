@@ -2,17 +2,19 @@
 title: Сбои при проверке безопасности и проверке подлинности
 ms.date: 03/30/2017
 ms.assetid: 0d4e3666-dfc6-421c-baf8-9479c22f7050
-ms.openlocfilehash: 0f061e1e12321dbe8034d7619830f71717ca9d1f
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 3bcc6111f322a3bd8169567e8f436871eb19f879
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64664975"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253054"
 ---
 # <a name="security-validation-and-authentication-failures"></a>Сбои при проверке безопасности и проверке подлинности
-Имя счетчика: Сбои при проверке безопасности и проверке подлинности  
+
+Имя счетчика: Security Validation and Authentication Failures  
   
 ## <a name="description"></a>Описание  
+
  Значение этого счетчика увеличивается всякий раз, когда сообщение отклоняется из-за проблемы безопасности, не относящейся к счетчику "Security Calls Not Authorized". К таким проблемам относятся следующие.  
   
 - Невозможно прочесть в этом сообщении маркер клиента.  

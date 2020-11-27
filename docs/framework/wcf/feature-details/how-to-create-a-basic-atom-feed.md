@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 6e0cacc1-9b11-4665-adb7-577a62626fd6
-ms.openlocfilehash: 0317e7b42f589b31f5c77b89d26cb46815f13054
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 76362684d289ca6aaac852158a05087a0a28f837
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599052"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254055"
 ---
 # <a name="how-to-create-a-basic-atom-feed"></a>Практическое руководство. Создание базового канала Atom
+
 Windows Communication Foundation (WCF) позволяет создать службу, предоставляющую канал синдикации. В этом разделе рассматривается процесс создания службы синдикации, предоставляющей веб-канал синдикации Atom.  
   
 ### <a name="to-create-a-basic-syndication-service"></a>Создание базовой службы синдикации  
@@ -64,7 +65,7 @@ Windows Communication Foundation (WCF) позволяет создать слу�
   
 ### <a name="to-call-getblog-with-an-http-get"></a>Вызов GetBlog() c HTTP GET  
   
-1. Откройте Internet Explorer, введите следующий URL-адрес и нажмите клавишу ВВОД:`http://localhost:8000/BlogService/GetBlog`  
+1. Откройте Internet Explorer, введите следующий URL-адрес и нажмите клавишу ВВОД: `http://localhost:8000/BlogService/GetBlog`  
   
      URL-адрес содержит базовый адрес службы ( `http://localhost:8000/BlogService` ), относительный адрес конечной точки и операцию службы для вызова.  
   
@@ -88,12 +89,14 @@ Windows Communication Foundation (WCF) позволяет создать слу�
      [!code-vb[htAtomBasic#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatombasic/vb/snippets.vb#11)]  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный код этого примера.  
   
  [!code-csharp[htAtomBasic#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatombasic/cs/program.cs#12)]
  [!code-vb[htAtomBasic#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatombasic/vb/program.vb#12)]  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  При компиляции приведенного выше кода задайте ссылки на файлы System.ServiceModel.dll и System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>См. также

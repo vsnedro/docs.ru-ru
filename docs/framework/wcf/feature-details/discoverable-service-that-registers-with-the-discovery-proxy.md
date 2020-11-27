@@ -2,14 +2,15 @@
 title: Практическое руководство. Как реализовать обнаружимую службу, которая регистрируется в прокси-сервере обнаружения
 ms.date: 03/30/2017
 ms.assetid: eb275bc1-535b-44c8-b9f3-0b75e9aa473b
-ms.openlocfilehash: bf878dff59a9a258567ff99098b0b3f8761194e2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1e6b57193d25da7e5c9a865525dd5e9ea21110b0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599234"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254263"
 ---
 # <a name="how-to-implement-a-discoverable-service-that-registers-with-the-discovery-proxy"></a>Практическое руководство. Как реализовать обнаружимую службу, которая регистрируется в прокси-сервере обнаружения
+
 Данный раздел является вторым из четырех разделов, в которых обсуждается реализация прокси-сервера обнаружения. В предыдущем разделе [руководство. Реализация прокси-сервера обнаружения](how-to-implement-a-discovery-proxy.md)реализован прокси-сервер обнаружения. В этом разделе вы создадите службу WCF, которая отправляет сообщения объявления ( `Hello` и `Bye` ) на прокси-сервер обнаружения, что приведет к регистрации и отмене регистрации в прокси-сервере обнаружения.
 
 ### <a name="to-define-the-service-contract"></a>Определение контракта службы
@@ -159,6 +160,7 @@ ms.locfileid: "84599234"
 Реализация обнаруживаемой службы завершена. Перейдите к [процедуре внедрения клиентского приложения, использующего прокси-сервер обнаружения для поиска службы](client-app-discovery-proxy-to-find-a-service.md).
 
 ## <a name="example"></a>Пример
+
  Далее приведен полный код, используемый в этом подразделе.
 
 ```csharp
@@ -289,7 +291,7 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Обнаружение WCF](wcf-discovery.md)
 - [Практическое руководство. Как реализовать прокси-сервер обнаружения](how-to-implement-a-discovery-proxy.md)

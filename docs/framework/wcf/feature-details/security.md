@@ -6,19 +6,21 @@ helpviewer_keywords:
 - security [WCF]
 - Windows Communication Foundation, security
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-ms.openlocfilehash: 9498358dd480487afcd3b746d14266e486c62d71
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b92f1ad8bb00e9df8daf55da4d7a808420d909cf
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90546319"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254003"
 ---
 # <a name="windows-communication-foundation-security"></a>Безопасность Windows Communication Foundation
+
 В подразделах этого раздела описываются функции безопасности Windows Communication Foundation (WCF) и способы их использования для защиты сообщений.  
   
  Дополнительные сведения о Windows Server AppFabric и безопасности см. в статье [модель безопасности для Windows Server AppFabric](/previous-versions/appfabric/ee677202(v=azure.10)) .  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Обзор безопасности](security-overview.md)  
  Описание функций безопасности в WCF.  
   
@@ -56,18 +58,20 @@ ms.locfileid: "90546319"
  Рекомендации по созданию безопасных приложений WCF.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Security>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Сведения о функции WCF](index.md)  
   
  [Базовое программирование для WCF](../basic-wcf-programming.md)  
   
  [Учебник по началу работы](../getting-started-tutorial.md)  
   
- [Обзор концепции](../conceptual-overview.md)  
+ [Общие сведения об основных понятиях](../conceptual-overview.md)  
   
 ## <a name="see-also"></a>См. также
 

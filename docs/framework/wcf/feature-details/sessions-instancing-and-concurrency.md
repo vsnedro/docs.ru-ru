@@ -3,19 +3,21 @@ title: Сеансы, экземпляры и параллелизм
 description: Сведения о сеансах, создании экземпляров и параллелизме, их использовании и взаимодействии между ними в WFC.
 ms.date: 03/30/2017
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
-ms.openlocfilehash: 41eef5a962c702eebd6b9a34607b542ec6bbd97b
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 7335d1c4d4ddf5247fc42c70cdc5e8ae33be7292
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246549"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254211"
 ---
 # <a name="sessions-instancing-and-concurrency"></a>Сеансы, экземпляры и параллелизм
-Под *сеансом* понимается скоррелированный набор всех сообщений, переданных между двумя конечными точками. *Создание экземпляров* означает управление временем жизни определенных пользователем объектов службы и связанных с ними объектов <xref:System.ServiceModel.InstanceContext> . Термин*параллелизм* означает управление количеством потоков, одновременно выполняющихся в некотором контексте <xref:System.ServiceModel.InstanceContext> .  
+
+Под *сеансом* понимается скоррелированный набор всех сообщений, переданных между двумя конечными точками. *Создание экземпляров* означает управление временем жизни определенных пользователем объектов службы и связанных с ними объектов <xref:System.ServiceModel.InstanceContext> . Термин *параллелизм* означает управление количеством потоков, одновременно выполняющихся в некотором контексте <xref:System.ServiceModel.InstanceContext> .  
   
  В этом разделе описаны эти параметры, способы их использования и различные взаимодействия между ними.  
   
-## <a name="sessions"></a>сеансы;  
+## <a name="sessions"></a>Сеансы  
+
  Если в контракте службы для свойства <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> задано значение <xref:System.ServiceModel.SessionMode.Required?displayProperty=nameWithType>, такой контракт означает, что все вызовы (т. е. обмен сообщениями, на котором основана поддержка вызовов) должны быть частью одного диалога. Если в контракте указано, что сеансы для него разрешены, но не требуются, клиенты могут подключаться, создавая сеанс или не создавая его. Если сеанс завершен, но по этому же основанному на сеансе каналу отправляется сообщение, выдается исключение.  
   
  Сеансы WCF имеют следующие основные концептуальные функции:  
@@ -38,7 +40,8 @@ ms.locfileid: "85246549"
   
  Клиентские приложения и приложения служб взаимодействуют с сеансами разными способами. Клиентское приложение инициирует сеансы, а затем получает и обрабатывает сообщения, передаваемые в рамках этого сеанса. Приложения служб могут использовать сеансы как точки расширяемости для добавления дополнительного поведения. Это можно сделать, работая непосредственно с контекстом <xref:System.ServiceModel.InstanceContext> , или реализовав пользовательский поставщик контекста экземпляров.  
   
-## <a name="instancing"></a>Instancing  
+## <a name="instancing"></a>Создание экземпляров  
+
  Поведение при создании экземпляров (задаваемое с помощью свойства <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> ) управляет способом создания контекста <xref:System.ServiceModel.InstanceContext> в ответ на входящие сообщения. По умолчанию каждый контекст <xref:System.ServiceModel.InstanceContext> связан с одним определенным пользователем объектом службы, поэтому (по умолчанию) задание свойства <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> также определяет создание экземпляров определенных пользователем объектов службы. Перечисление <xref:System.ServiceModel.InstanceContextMode> определяет режимы создания экземпляров.  
   
  Доступны следующие режимы создания экземпляров:  
@@ -62,6 +65,7 @@ public class CalculatorService : ICalculatorInstance
  Свойство <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> управляет частотой освобождения контекста <xref:System.ServiceModel.InstanceContext> , а свойства <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> и <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A?displayProperty=nameWithType> управляют частотой освобождения объекта службы.  
   
 ### <a name="well-known-singleton-services"></a>Широко известные одноэлементные службы  
+
  Иногда бывает полезен один из вариантов объектов службы с одним экземпляром: можно самому создать объект службы, а затем создать основное приложение службы, используя этот объект. Для этого необходимо задать для свойства <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> значение <xref:System.ServiceModel.InstanceContextMode.Single> - в противном случае при открытии основного приложения службы возникает исключение.  
   
  Для создания такой службы используйте конструктор <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> . Он обеспечивает альтернативу реализации пользовательского <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> , если требуется предоставить определенный экземпляр объекта для использования одноэлементной службой. Эту перегрузку можно использовать, если тип реализации службы сложно создать (например, если он не реализует открытый конструктор без параметров).  
@@ -69,9 +73,11 @@ public class CalculatorService : ICalculatorInstance
  Обратите внимание, что при указании объекта для этого конструктора некоторые функции, связанные с поведением создания экземпляров Windows Communication Foundation (WCF), работают по-разному. Например, вызов <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> не выполняет никаких действий, если предоставлен экземпляр одноэлементного объекта. Аналогичным образом пропускаются все другие механизмы освобождения экземпляров. Приложение <xref:System.ServiceModel.ServiceHost> всегда ведет себя таким образом, как если бы для свойства <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> было задано значение <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> для всех операций.  
   
 ### <a name="sharing-instancecontext-objects"></a>Совместное использование объектов InstanceContext  
+
  Также для каждого сеансового канала или вызова можно задать объект <xref:System.ServiceModel.InstanceContext> , с которым он будет ассоциирован, самостоятельно назначив ассоциацию.  
   
 ## <a name="concurrency"></a>Параллелизм  
+
  Параллелизм означает управление количеством потоков, одновременно активных в некотором контексте <xref:System.ServiceModel.InstanceContext> . Управление осуществляется с помощью <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=nameWithType> с перечислением <xref:System.ServiceModel.ConcurrencyMode> .  
   
  Доступны следующие три режима параллелизма:  
@@ -98,6 +104,7 @@ public class CalculatorService : ICalculatorConcurrency
 ```  
   
 ## <a name="sessions-interact-with-instancecontext-settings"></a>Сеансы взаимодействуют с параметрами InstanceContext  
+
  Взаимодействие сеансов и контекстов <xref:System.ServiceModel.InstanceContext> зависит от значений перечисления <xref:System.ServiceModel.SessionMode> в контракте и свойства <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> в реализации службы; сочетание этих значений определяет сопоставление каналов и конкретных объектов службы.  
   
  В приведенной ниже таблице показано, к какому результату приводит поддержка или отсутствие поддержки сеансов входящим каналом при заданном сочетании значений свойств <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> и <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> в службе.  
@@ -106,7 +113,7 @@ public class CalculatorService : ICalculatorConcurrency
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |PerCall|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для каждого вызова.<br />-Поведение с каналом без сеанса: создается исключение.|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для каждого вызова.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого вызова.|-Поведение с каналом сеанса: создается исключение.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого вызова.|  
 |PerSession|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для каждого канала.<br />-Поведение с каналом без сеанса: создается исключение.|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для каждого канала.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого вызова.|-Поведение с каналом сеанса: создается исключение.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого вызова.|  
-|Один|— Поведение с каналом сеанса: сеанс и один <xref:System.ServiceModel.InstanceContext> для всех вызовов.<br />-Поведение с каналом без сеанса: создается исключение.|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для созданного или заданного пользователем Singleton.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для созданного или указанного пользователем Singleton.|-Поведение с каналом сеанса: создается исключение.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого созданного одноэлементного экземпляра или для заданного пользователем одноэлементного множества.|  
+|Single|— Поведение с каналом сеанса: сеанс и один <xref:System.ServiceModel.InstanceContext> для всех вызовов.<br />-Поведение с каналом без сеанса: создается исключение.|— Поведение с каналом сеанса: сеанс и <xref:System.ServiceModel.InstanceContext> для созданного или заданного пользователем Singleton.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для созданного или указанного пользователем Singleton.|-Поведение с каналом сеанса: создается исключение.<br />-Поведение с каналом без сеанса: <xref:System.ServiceModel.InstanceContext> для каждого созданного одноэлементного экземпляра или для заданного пользователем одноэлементного множества.|  
   
 ## <a name="see-also"></a>См. также
 
@@ -114,5 +121,5 @@ public class CalculatorService : ICalculatorConcurrency
 - [Практическое руководство. Создание службы, для которой требуются сеансы](how-to-create-a-service-that-requires-sessions.md)
 - [Практическое руководство. Управление созданием экземпляров служб](how-to-control-service-instancing.md)
 - [Параллелизм](../samples/concurrency.md)
-- [Instancing](../samples/instancing.md)
-- [Session](../samples/session.md)
+- [Создание экземпляров](../samples/instancing.md)
+- [Согласованность сеанса](../samples/session.md)
