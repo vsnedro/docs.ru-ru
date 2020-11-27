@@ -2,14 +2,15 @@
 title: Класс Channel
 ms.date: 03/30/2017
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776
-ms.openlocfilehash: f60a3946617b0994db1ba9e9ddf43be863be81f9
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a920636e7df9609b12834366b1488c80122f9fca
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964091"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96274235"
 ---
 # <a name="channel-class"></a>Класс Channel
+
 Канал  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,43 +27,50 @@ class Channel
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс Channel не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс Channel имеет следующие свойства.  
   
 ### <a name="localaddress"></a>LocalAddress  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Локальная конечная точка канала.  
   
 ### <a name="ref"></a>ref  
- Тип данных: Конечная точка  
+
+ Тип данных: Endpoint  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Ссылка на конечную точку, к которой подключается канал.  
   
 ### <a name="remoteaddress"></a>RemoteAddress  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Удаленный адрес, связанный с каналом.  
   
 ### <a name="sessionid"></a>SessionId  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Идентификатор текущего сеанса, если он существует.  
   
 ### <a name="type"></a>Тип  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Тип канала.  
   

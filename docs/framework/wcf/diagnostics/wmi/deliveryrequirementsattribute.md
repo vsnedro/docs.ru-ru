@@ -2,14 +2,15 @@
 title: DeliveryRequirementsAttribute
 ms.date: 03/30/2017
 ms.assetid: 40c5435c-a325-4cf8-9dd0-d6e24b4a56a3
-ms.openlocfilehash: c81e4b27969d879a70806082f48879cbf1b32ccc
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a70a4ba40b569acc7893b21d796194224dc4ee78
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62039680"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96274053"
 ---
 # <a name="deliveryrequirementsattribute"></a>DeliveryRequirementsAttribute
+
 DeliveryRequirementsAttribute  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -24,29 +25,34 @@ class DeliveryRequirementsAttribute : Behavior
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс DeliveryRequirementsAttribute не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс DeliveryRequirementsAttribute имеет следующие свойства.  
   
 ### <a name="queueddeliveryrequirements"></a>QueuedDeliveryRequirements  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, поддерживает ли привязка для службы контракты.  
   
 ### <a name="requireordereddelivery"></a>RequireOrderedDelivery  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, поддерживает ли привязка упорядоченные сообщения.  
   
 ### <a name="targetcontract"></a>TargetContract  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Контракт, к которому оно применимо.  
   

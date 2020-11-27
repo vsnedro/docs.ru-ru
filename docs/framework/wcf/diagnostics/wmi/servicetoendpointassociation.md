@@ -2,14 +2,15 @@
 title: ServiceToEndpointAssociation
 ms.date: 03/30/2017
 ms.assetid: 03c3cd15-e1b2-4dc2-bdc2-59fdccdae110
-ms.openlocfilehash: 3d23a3ee10c47e04ea7bdba202ea5063c0d84fac
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6e20556541b1aa48e7dfc6a8cde97e1bc477457e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62048235"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273949"
 ---
 # <a name="servicetoendpointassociation"></a>ServiceToEndpointAssociation
+
 Сопоставляет службу конечной точке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -23,24 +24,28 @@ class ServiceToEndpointAssociation
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс ServiceToEndpointAssociation не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс ServiceToEndpointAssociation имеет следующие свойства.  
   
 ### <a name="ref"></a>ref  
- Тип данных: Служба  
+
+ Тип данных: Service  
   
- Тип доступа: Только чтение  
-Квалификаторы: Ключ  
+ Тип доступа: только для чтения  
+Квалификаторы: ключ  
   
  Служба, связанная с конечной точкой.  
   
 ### <a name="ref"></a>ref  
- Тип данных: Конечная точка  
+
+ Тип данных: Endpoint  
   
- Тип доступа: Только чтение  
-Квалификаторы: Ключ  
+ Тип доступа: только для чтения  
+Квалификаторы: ключ  
   
  Конечная точка, связанная со службой.  
   

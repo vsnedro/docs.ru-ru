@@ -2,17 +2,19 @@
 title: Отслеживание рабочих процессов
 ms.date: 03/30/2017
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
-ms.openlocfilehash: fc27be295cbf0a83b65ff03e36f2aeffeda12db9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b5a8f650edfdade4a18999c5e7af38ca72112122
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557506"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273884"
 ---
 # <a name="workflow-tracing"></a>Отслеживание рабочих процессов
+
 Трассировка рабочего процесса позволяет получать сведения диагностики при помощи прослушивателей трассировки .NET Framework. Трассировку можно включить при обнаружении проблемы в работе приложения, а затем снова отключить после разрешения проблемы. Существует два способа включения трассировки отладки для рабочих процессов. Можно настроить отслеживание в средстве просмотра трассировки событий либо использовать <xref:System.Diagnostics> для отправки событий трассировки в файл.  
   
 ## <a name="enabling-debug-tracing-in-etw"></a>Включение трассировки отладки в ETW  
+
  Для включения трассировки при помощи ETW включите канал отладки в средстве просмотра событий.  
   
 1. Перейдите в узел аналитики и журналов отладки в средстве просмотра событий.  
@@ -41,6 +43,7 @@ ms.locfileid: "90557506"
 > Если вы используете клиентский профиль .NET Framework 4, сначала необходимо зарегистрировать манифест ETW, выполнив следующую команду из каталога .NET Framework 4: `ServiceModelReg.exe –i –c:etw`  
   
 ## <a name="enabling-debug-tracing-using-systemdiagnostics"></a>Включение трассировки отладки при помощи System.Diagnostics  
+
  Эти прослушиватели можно настроить в файле App.config приложения рабочего процесса либо в файле Web.config для службы рабочего процесса. В этом примере a <xref:System.Diagnostics.TextWriterTraceListener> настроен для сохранения данных трассировки в файл MyTraceLog.txt в текущем каталоге.  
   
 ```xml  
