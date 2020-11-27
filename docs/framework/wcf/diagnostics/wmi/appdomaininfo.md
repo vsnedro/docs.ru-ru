@@ -2,14 +2,15 @@
 title: AppDomainInfo
 ms.date: 03/30/2017
 ms.assetid: 6610b7d8-81eb-4bec-a543-9b72ad7b6f73
-ms.openlocfilehash: 0b7f8aadbd9a9dfcdd33fc65be3a5a41ea95f5be
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c5c44f4d8f6d93443802d5e1950c4d850976c5b6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964259"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96291132"
 ---
 # <a name="appdomaininfo"></a>AppDomainInfo
+
 Сведения о домене приложения  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,92 +34,106 @@ class AppDomainInfo
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс AppDomainInfo не определяет никакие методы.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс AppDomainInfo имеет следующие свойства.  
   
 ### <a name="appdomainid"></a>AppDomainId  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Идентификатор домена приложения.  
   
 ### <a name="isdefault"></a>IsDefault  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, является ли домен приложения доменом приложения, используемым по умолчанию.  
   
 ### <a name="logmalformedmessages"></a>LogMalformedMessages  
+
  Тип данных: boolean  
   
- Тип доступа: Чтение и запись  
+ Тип доступа: чтение/запись  
   
  Значение, указывающее, заносятся ли в журнал неправильные сообщения.  
   
 ### <a name="logmessagesatservicelevel"></a>LogMessagesAtServiceLevel  
+
  Тип данных: boolean  
   
- Тип доступа: Чтение и запись  
+ Тип доступа: чтение/запись  
   
  Значение, указывающее, трассируются ли сообщения на уровне службы (перед шифрованием и преобразованиями, связанными с транспортом).  
   
 ### <a name="logmessagesattransportlevel"></a>LogMessagesAtTransportLevel  
+
  Тип данных: boolean  
   
- Тип доступа: Чтение и запись  
+ Тип доступа: чтение/запись  
   
  Значение, указывающее, трассируются ли сообщения на уровне транспорта.  
   
 ### <a name="messageloggingtracelisteners"></a>MessageLoggingTraceListeners  
- Тип данных: Массив TraceListener  
+
+ Тип данных: массив TraceListener  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Коллекция прослушивателей трассировки, которые ожидают передачи данных источнику трассировки System.Wmi.MessageLogging.  
   
 ### <a name="name"></a>name  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Имя домена приложения.  
   
 ### <a name="performancecounters"></a>PerformanceCounters  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Область активных счетчиков производительности в домене приложения.  
   
 ### <a name="processid"></a>ProcessId  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Идентификатор процесса.  
   
 ### <a name="serviceconfigpath"></a>ServiceConfigPath  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Путь к конфигурации службы.  
   
 ### <a name="tracelevel"></a>TraceLevel  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Чтение и запись  
+ Тип доступа: чтение/запись  
   
  Уровень трассировки источника трассировки System.Wmi.  
   
 ### <a name="servicemodeltracelisteners"></a>ServiceModelTraceListeners  
- Тип данных: Массив TraceListener  
+
+ Тип данных: массив TraceListener  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Коллекция прослушивателей, ожидающих передачи данных от источника трассировки System.ServiceModel.  
   

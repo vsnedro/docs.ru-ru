@@ -2,20 +2,22 @@
 title: System.ServiceModel.Channels.RequestContextAbort
 ms.date: 03/30/2017
 ms.assetid: b41c78a2-c885-418d-831f-2db86fa3a52d
-ms.openlocfilehash: 27954e0c957cbba341da48ac2c9fe415df2e1042
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f469e496eb8684d4cd3109527a9193514fc01cb7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593949"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292029"
 ---
 # <a name="systemservicemodelchannelsrequestcontextabort"></a>System.ServiceModel.Channels.RequestContextAbort
+
 System.ServiceModel.Channels.RequestContextAbort  
   
 ## <a name="description"></a>Описание  
+
  Прерван контекст RequestContext.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Трассировка](index.md)
 - [Использование трассировки для устранения неполадок приложения](using-tracing-to-troubleshoot-your-application.md)

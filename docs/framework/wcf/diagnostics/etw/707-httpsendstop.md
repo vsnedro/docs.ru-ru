@@ -2,27 +2,30 @@
 title: 707 - HttpSendStop
 ms.date: 03/30/2017
 ms.assetid: 5c8a607a-be7a-4e36-a885-67746f03cae6
-ms.openlocfilehash: b24d5284b3812efd37d6958fb328a9613c30cc56
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 83744ddd4a066b21595456bea681d8dbfe5321f8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61953014"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96290885"
 ---
 # <a name="707---httpsendstop"></a>707 - HttpSendStop
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|707|  
-|Ключевые слова|HTTP|  
-|Уровень|Verbose|  
+|Keywords|HTTP|  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Это событие создается при остановке запроса на отправку HTTP.  
   
 ## <a name="message"></a>Сообщение  
+
  Остановка запроса на отправку HTTP.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее

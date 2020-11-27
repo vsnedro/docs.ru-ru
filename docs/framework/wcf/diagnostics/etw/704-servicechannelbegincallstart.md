@@ -2,27 +2,30 @@
 title: 704 - ServiceChannelBeginCallStart
 ms.date: 03/30/2017
 ms.assetid: 708819d3-45cc-46c3-938c-80f38b1fa9e2
-ms.openlocfilehash: 0bfe0da9e1c59976831d64b3a50b5d5f1271e378
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 9075c063b9fac28da595997043bb9ddb7bc6cda2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61952897"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96291028"
 ---
 # <a name="704---servicechannelbegincallstart"></a>704 - ServiceChannelBeginCallStart
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|704|  
-|Ключевые слова|ServiceModel|  
-|Уровень|Сведения|  
+|Keywords|ServiceModel|  
+|Level|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
+
  Это событие создается при запуске асинхронных вызовов ServiceChannel.  
   
 ## <a name="message"></a>Сообщение  
+
  Запущены асинхронные вызовы ServiceChannel.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее
