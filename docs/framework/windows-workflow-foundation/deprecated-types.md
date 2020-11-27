@@ -2,17 +2,19 @@
 title: Устаревшие типы в Windows Workflow Foundation
 ms.date: 03/30/2017
 ms.assetid: 4aebe928-a964-4c1c-abf7-0dbbd3604b13
-ms.openlocfilehash: 011f13a56695efdd9e964ef1e6c1099b0acc2710
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 628963650d32237dedbb6ab2a0a2d9a79866af18
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713344"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272876"
 ---
 # <a name="deprecated-types-in-windows-workflow-foundation"></a>Устаревшие типы в Windows Workflow Foundation
+
 В .NET 4 команда разработки по рабочим процессам представила полностью новую подсистему рабочих процессов в пространстве имен <xref:System.Activities>. При выпуске бета-версии .NET Framework 4,5 Мы помечаем большинство типов в "WF 3" <xref:System.Workflow.Activities> , <xref:System.Workflow.ComponentModel> и "  <xref:System.Workflow.Runtime> пространства имен" как устаревшие.
 
 ## <a name="obsolete-namespaces-and-tools"></a>Устаревшие пространства имен и средства
+
  Следующие сборки содержат один и более открытых типов, которые станут устаревшими.
 
 - System.Workflow.Activities.dll

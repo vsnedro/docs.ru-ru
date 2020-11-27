@@ -12,31 +12,38 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), marshaling
 - invalid function pointers
 ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
-ms.openlocfilehash: a17427d117c62ba782af3c9549c84623a3013b06
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 8072d35a45cb1e0590aa5533210d0e0f86913164
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051744"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272622"
 ---
 # <a name="invalidfunctionpointerindelegate-mda"></a>invalidFunctionPointerInDelegate MDA
+
 Помощник отладки управляемого кода `invalidFunctionPointerInDelegate` (MDA) активируется, когда передается недопустимый указатель функции для создания делегата поверх собственного указателя функции.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Нарушения прав доступа или непредвиденное повреждение памяти при использовании делегата поверх указателя функции.  
   
 ## <a name="cause"></a>Причина:  
+
  Был указан недопустимый указатель функции.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Укажите допустимый указатель функции.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.  
   
 ## <a name="output"></a>Выходные данные  
+
  Недопустимый указатель функции.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

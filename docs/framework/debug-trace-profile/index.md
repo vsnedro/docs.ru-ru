@@ -14,19 +14,21 @@ helpviewer_keywords:
 - troubleshooting applications [.NET Framework]
 - application development [.NET Framework], profiling
 ms.assetid: 4a04863e-2475-46f4-bc3f-3c11510c2a4b
-ms.openlocfilehash: 745f16652c02e3409e7fa7a48beacbf7e777e924
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 33dd840f4c1421bbff54499af56ab3e147cc694b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415983"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272778"
 ---
 # <a name="debugging-tracing-and-profiling"></a>Отладка, трассировка и профилирование
+
 Для отладки приложения .NET Framework компилятор и среда выполнения должны быть настроены для включения присоединения отладчика к приложению и создания символов и сопоставлений строк, если это возможно, для приложения и его соответствующего языка MSIL. После отладки управляемого приложения можно выполнить его профилирование для повышения производительности. Профилирование оценивает и описывает строки исходного кода, создающие наиболее часто выполняемый код, и время, необходимое для их выполнения.  
   
  Приложения .NET Framework можно легко отладить с помощью Visual Studio, который обрабатывает многие детали конфигурации. Если Visual Studio не установлен, вы можете проверять и улучшать производительность приложений .NET Framework с помощью классов отладки в пространстве имен <xref:System.Diagnostics> .NET Framework. Это пространство имен включает классы <xref:System.Diagnostics.Trace>, <xref:System.Diagnostics.Debug> и <xref:System.Diagnostics.TraceSource> для трассировки потока выполнения и классы <xref:System.Diagnostics.Process>, <xref:System.Diagnostics.EventLog> и <xref:System.Diagnostics.PerformanceCounter> для профилирования кода.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Включение отладки с JIT-присоединением (трассировка событий Windows)](enabling-jit-attach-debugging.md)  
  Показывается, как настроить реестр для JIT-присоединения модуля отладки к приложению .NET Framework.  
   
@@ -46,6 +48,7 @@ ms.locfileid: "85415983"
  Описываются счетчики, которые можно использовать для отслеживания производительности приложения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Отладка приложений ASP.NET и ASP.NET Core в Visual Studio](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Предоставляются предварительные требования и инструкции по отладке приложения ASP.NET во время разработки или после развертывания.  
   

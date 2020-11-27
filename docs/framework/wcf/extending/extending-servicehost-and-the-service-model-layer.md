@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - extending service models [WCF]
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
-ms.openlocfilehash: e370316cd121f49953e00e83dfc9d2aec17de1e8
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 184719f5c3e2e3830d7e1c9c69b73649b66fff34
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795734"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273039"
 ---
 # <a name="extending-servicehost-and-the-service-model-layer"></a>Расширение ServiceHost и уровень модели службы
+
 Уровень модели службы отвечает за удаление входящих сообщений из базовых каналов, их перевод в вызовы метода в коде приложения и отправку результатов обратно вызывающему коду. Расширения модели службы изменяют или реализуют поведение и возможности выполнения или взаимодействия, в том числе возможности клиента или диспетчера, пользовательские поведения, перехват сообщений и параметров, а также другие возможности расширяемости.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Расширение клиентов](extending-clients.md)  
  Описываются интерфейсы, которые могут перехватывать и изменять среду выполнения клиента, а также классы, в которые можно вставить специальные расширения в клиентских приложениях. Например, можно выполнять специальную регистрацию сообщений, специальную сериализацию сообщений и т. п.  
   
@@ -30,6 +32,6 @@ ms.locfileid: "70795734"
  [Расширение размещения с использованием ServiceHostFactory](extending-hosting-using-servicehostfactory.md)  
  Описывается, как расширить <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType>, <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> и использовать классы <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> с целью настройки среды узла.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочник  
   
 ## <a name="related-sections"></a>Связанные разделы

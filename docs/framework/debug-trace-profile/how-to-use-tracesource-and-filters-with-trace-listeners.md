@@ -15,13 +15,15 @@ helpviewer_keywords:
 - trace listeners, filters
 - trace listeners, initializing
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
-ms.openlocfilehash: 432c866f7c3ca1fd59f8f3d36acd61740b6584c0
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 94af872e0417941f17c043710688c7b723cd4004
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051263"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272804"
 ---
 # <a name="how-to-use-tracesource-and-filters-with-trace-listeners"></a>Практическое руководство. Использование TraceSource и фильтров с прослушивателями трассировки
+
 Одной из новых функций в платформе .NET Framework версии 2.0 является расширенная система трассировки. Основное условие осталось неизменным: сообщения трассировки отправляются через переключатели к прослушивателям, которые передают данные соответствующему выходному носителю. Для версии 2.0 основное отличие заключается в том, что трассировку можно инициировать через экземпляры класса <xref:System.Diagnostics.TraceSource>. Класс <xref:System.Diagnostics.TraceSource> представляет собой улучшенную систему трассировки и может использоваться вместо статических методов более старых классов трассировки <xref:System.Diagnostics.Trace> и <xref:System.Diagnostics.Debug>. Знакомые классы <xref:System.Diagnostics.Trace> и <xref:System.Diagnostics.Debug> сохранены, но для трассировки рекомендуется использовать класс <xref:System.Diagnostics.TraceSource>.  
   
  В этом разделе описано использование <xref:System.Diagnostics.TraceSource> вместе с файлом конфигурации приложения.  Возможно, хотя и не рекомендуется, выполнять трассировку с помощью <xref:System.Diagnostics.TraceSource> без использования файла конфигурации. Сведения о трассировке без использования файла конфигурации см. в разделе [Практическое руководство. Создание и инициализация источников трассировки](how-to-create-and-initialize-trace-sources.md).  

@@ -2,14 +2,15 @@
 title: ServiceAuthorizationBehavior
 ms.date: 03/30/2017
 ms.assetid: 77dad8e8-fea4-4d1c-b366-2f01a2a87f78
-ms.openlocfilehash: 51555e3357b8c33a53261c4894d97798b0a05656
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d3625865484568746888ef0638d9a8501e610bef
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61957059"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273208"
 ---
 # <a name="serviceauthorizationbehavior"></a>ServiceAuthorizationBehavior
+
 ServiceAuthorizationBehavior  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,36 +26,42 @@ class ServiceAuthorizationBehavior : Behavior
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс ServiceAuthorizationBehavior не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс ServiceAuthorizationBehavior имеет следующие свойства.  
   
 ### <a name="impersonatecallerforalloperations"></a>ImpersonateCallerForAllOperations  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, которое определяет, будет ли служба пытаться производить олицетворение при помощи учетных данных, содержащихся во входящем сообщении.  
   
 ### <a name="principalpermissionmode"></a>PrincipalPermissionMode  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Участник, используемый для выполнения операций на сервере.  
   
 ### <a name="roleprovider"></a>RoleProvider  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Имя поставщика ролей ASP.NET.  
   
 ### <a name="serviceauthorizationmanager"></a>ServiceAuthorizationManager  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Диспетчер авторизации, используемый для пользовательской авторизации.  
   

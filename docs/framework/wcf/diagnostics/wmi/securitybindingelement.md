@@ -2,14 +2,15 @@
 title: SecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: ef93b6e6-3524-48a8-94d3-c8837f1872f9
-ms.openlocfilehash: 1d367d0c5d14e6e75539dd2b20cdffcf2b34963d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 61eae75de04f75b6ad6e78d16569595732b3d28f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61962790"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273312"
 ---
 # <a name="securitybindingelement"></a>SecurityBindingElement
+
 SecurityBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -27,50 +28,58 @@ class SecurityBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс SecurityBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс SecurityBindingElement имеет следующие свойства.  
   
 ### <a name="defaultalgorithmsuite"></a>DefaultAlgorithmSuite  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Задает алгоритмы, используемые в сочетании с привязкой.  
   
 ### <a name="includetimestamp"></a>IncludeTimestamp  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, указывающее, будет ли в каждое сообщение вноситься метка времени.  
   
 ### <a name="keyentropymode"></a>KeyEntropyMode  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Источник энтропии, используемый для создания ключей.  
   
 ### <a name="localservicesecuritysettings"></a>LocalServiceSecuritySettings  
+
  Тип данных: LocalServiceSecuritySettings  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Свойства безопасности для локальной службы, соответствующие данной привязке.  
   
 ### <a name="messagesecurityversion"></a>MessageSecurityVersion  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Версия, используемая для безопасности сообщения.  
   
 ### <a name="securityheaderlayout"></a>SecurityHeaderLayout  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Порядок элементов в заголовке безопасности для данной привязки.  
   

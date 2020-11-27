@@ -9,31 +9,38 @@ helpviewer_keywords:
 - InvalidGCHandleCookie MDA
 - invalid cookies
 ms.assetid: 613ad742-3c11-401d-a6b3-893ceb8de4f8
-ms.openlocfilehash: 1063b7be902d3063717b6639564d819ef3292c0e
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 36806498445da78c8d9dd5c51c1903b253a39da0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051302"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272609"
 ---
 # <a name="invalidgchandlecookie-mda"></a>invalidGCHandleCookie MDA
+
 Помощник по отладке управляемого кода (MDA) `invalidGCHandleCookie` активируется при попытке преобразования из недопустимого файла cookie <xref:System.IntPtr> в <xref:System.Runtime.InteropServices.GCHandle>.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Неопределенное поведение, например нарушения прав доступа и повреждение памяти, при попытке использовать или получить <xref:System.Runtime.InteropServices.GCHandle> из <xref:System.IntPtr>.  
   
 ## <a name="cause"></a>Причина:  
+
  Возможно, файл cookie является недопустимым, так как он не был изначально создан из <xref:System.Runtime.InteropServices.GCHandle>, представляет <xref:System.Runtime.InteropServices.GCHandle>, который уже был освобожден, является файлом cookie для <xref:System.Runtime.InteropServices.GCHandle> в другом домене приложения или был упакован в собственный код как <xref:System.Runtime.InteropServices.GCHandle>, но передан обратно в среду CLR в качестве <xref:System.IntPtr>, где была выполнена попытка приведения к типу.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Укажите допустимый файл cookie <xref:System.IntPtr> для <xref:System.Runtime.InteropServices.GCHandle>.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Если этот MDA включен, отладчик больше не может отслеживать корни обратно в их объекты, поскольку значения файла cookie, переданные обратно, отличаются от значений, возвращаемых при отключенном MDA.  
   
 ## <a name="output"></a>Выходные данные  
+
  Указывается значение недопустимого файла cookie <xref:System.IntPtr>.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

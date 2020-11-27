@@ -2,14 +2,15 @@
 title: ReliableSessionBindingElement
 ms.date: 03/30/2017
 ms.assetid: effda125-b8d3-4de6-8c0e-f59f5ea8f6eb
-ms.openlocfilehash: b0a621da43402777cc620f1876bd968a72bb8c12
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f91e38ab88cd9f93e9bec0e3a6ca65254bc49570
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61962920"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273325"
 ---
 # <a name="reliablesessionbindingelement"></a>ReliableSessionBindingElement
+
 ReliableSessionBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,64 +30,74 @@ class ReliableSessionBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс ReliableSessionBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс ReliableSessionBindingElement имеет следующие свойства.  
   
 ### <a name="acknowledgementinterval"></a>AcknowledgementInterval  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Промежуток времени, в течение которого пункт назначения ожидает перед отправкой подтверждения источнику сообщения по надежным каналам, созданным фабрикой.  
   
 ### <a name="flowcontrolenabled"></a>FlowControlEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, указывающее, включено ли управление потоком.  
   
 ### <a name="inactivitytimeout"></a>InactivityTimeout  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное время, в течение которого канал позволяет другому участнику соединения не отправлять никаких сообщений, прежде чем канал будет закрыт с ошибкой.  
   
 ### <a name="maxpendingchannels"></a>MaxPendingChannels  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное число каналов, ожидающих принятия на прослушивателе.  
   
 ### <a name="maxretrycount"></a>MaxRetryCount  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное количество попыток повторной передачи надежным каналом сообщения, для которого не было получено подтверждение приема. Повторная передача осуществляется посредством вызова метода `Send` в базовом канале.  
   
 ### <a name="maxtransferwindowsize"></a>MaxTransferWindowSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальный размер окна передачи для надежного сеанса.  
   
-### <a name="ordered"></a>Упорядоченного  
+### <a name="ordered"></a>Заказано  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, определяющее, прибывают ли сообщения точно в том порядке, в котором они были отправлены.  
   
 ### <a name="reliablemessagingversion"></a>ReliableMessagingVersion  
+
  Тип данных: integer  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Целочисленное значение, задающее версию используемого в надежном канале протокола WS-ReliableMessaging.  
   

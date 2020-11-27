@@ -2,14 +2,15 @@
 title: Расширение размещения с использованием ServiceHostFactory
 ms.date: 03/30/2017
 ms.assetid: bcc5ae1b-21ce-4e0e-a184-17fad74a441e
-ms.openlocfilehash: de6a590b94285872dd77006eda7f86d5d629be9d
-ms.sourcegitcommit: 205b9a204742e9c77256d43ac9d94c3f82909808
+ms.openlocfilehash: d2224ea683326679efdad368cf2ff7b2b95f4dba
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70849903"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273130"
 ---
 # <a name="extending-hosting-using-servicehostfactory"></a>Расширение размещения с использованием ServiceHostFactory
+
 Стандартный <xref:System.ServiceModel.ServiceHost> API для размещения служб в Windows Communication Foundation (WCF) является точкой расширения в архитектуре WCF. Пользователи могут наследовать свои собственные хост-классы от класса <xref:System.ServiceModel.ServiceHost>, как правило, чтобы переопределить <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening> для использования <xref:System.ServiceModel.Description.ServiceDescription> с целью принудительного добавления конечных точек по умолчанию или изменения поведений до открытия службы.  
   
  В резидентной среде нет необходимости создавать пользовательский класс <xref:System.ServiceModel.ServiceHost>, поскольку записывается код, создающий узел, а после его создания в нем вызывается метод <xref:System.ServiceModel.ICommunicationObject.Open>. В промежутке между этими двумя операциями можно выполнять любые действия. Можно, например, добавить новое поведение <xref:System.ServiceModel.Description.IServiceBehavior>.  
@@ -78,4 +79,4 @@ public class DerivedFactory : ServiceHostFactory
   
  Хотя нет технических ограничений на операции с классом <xref:System.ServiceModel.ServiceHost>, возвращаемым методом <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, рекомендуется сохранять реализации фабрики как можно более простыми. Если у вас много пользовательских логики, лучше разместить эту логику в своем узле, а не в фабрике, чтобы ее можно было использовать повторно.  
   
- Существует еще один уровень размещения API, о котором следует упомянуть здесь. WCF также имеет <xref:System.ServiceModel.ServiceHostBase> и <xref:System.ServiceModel.Activation.ServiceHostFactoryBase>, от которой <xref:System.ServiceModel.ServiceHost> и <xref:System.ServiceModel.Activation.ServiceHostFactory> соответственно является производным. Существуют более сложные сценарии, в которых необходимо выгружать большие части системы метаданных с помощью собственных настроенных созданий.
+ Существует еще один уровень размещения API, о котором следует упомянуть здесь. WCF также имеет <xref:System.ServiceModel.ServiceHostBase> и <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> , от которой <xref:System.ServiceModel.ServiceHost> и <xref:System.ServiceModel.Activation.ServiceHostFactory> соответственно является производным. Существуют более сложные сценарии, в которых необходимо выгружать большие части системы метаданных с помощью собственных настроенных созданий.

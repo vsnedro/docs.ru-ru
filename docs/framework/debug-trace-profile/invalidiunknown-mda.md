@@ -9,31 +9,38 @@ helpviewer_keywords:
 - IUnknown pointers
 - managed debugging assistants (MDAs), invalid IUnknown pointer
 ms.assetid: c7924771-a16b-40fe-b337-ce51dcdf6a12
-ms.openlocfilehash: 65d704463ed746390ff1710b590bf080013bf53d
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 8e7ca6c9c43c4f507d235c879498b2e831c6eba9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051731"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272544"
 ---
 # <a name="invalidiunknown-mda"></a>Помощник по отладке управляемого кода invalidIUnknown
+
 Помощник по отладке управляемого кода (MDA) `invalidIUnknown` активируется, когда недопустимый указатель `IUnknown` передается в управляемый код из машинного кода. `IUnknown` не удалось возвратить успех при запросе для интерфейса `IUnknown`.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Непредвиденная ошибка при маршалинге указателя интерфейса СОМ во время маршалинга аргумента.  
   
 ## <a name="cause"></a>Причина:  
+
  Неверная реализация `QueryInterface` в интерфейсе COM, переданном в среду CLR.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Исправьте реализацию `QueryInterface`.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.  
   
 ## <a name="output"></a>Выходные данные  
+
  Описание ошибки.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

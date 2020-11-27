@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - bindings [WCF]
 ms.assetid: 845df323-be53-4848-92ef-ba67a406484d
-ms.openlocfilehash: 7d2c27ad2b265a7feda5f013b5b0993a6cd83094
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 3ce861404e59d24c2b1e0b548026bc795157fffe
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320769"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272375"
 ---
 # <a name="windows-communication-foundation-bindings"></a>Привязки Windows Communication Foundation
+
 Привязки указывают, как конечная точка службы Windows Communication Foundation (WCF) взаимодействует с другими конечными точками. В привязке должен быть указан как минимум используемый транспорт (например, HTTP или TCP). Через привязки также можно задать другие характеристики, такие как поддержка безопасности и транзакций.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения о привязках WCF](bindings-overview.md)  
  Общие сведения о том, что делают привязки WCF, какие привязки предоставляет система и как их можно определить или изменить.  
   
@@ -27,10 +29,12 @@ ms.locfileid: "72320769"
  [Настройка привязок для служб](configuring-bindings-for-wcf-services.md)  
  С помощью конфигурации администраторы и установщики могут настраивать привязки для конечных точек службы.  
   
-## <a name="reference"></a>Справочники  
+## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel.Channels>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Конечные точки: адреса, привязки и контракты](./feature-details/endpoints-addresses-bindings-and-contracts.md)  
   
  [Привязки](./feature-details/bindings.md)  

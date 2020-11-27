@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - extending channels [WCF]
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
-ms.openlocfilehash: 76ca76d7973403c657b8f68bfde9619df36f220e
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 8d051ff84ea0562b3d7c810b2c884f4d8b787952
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797136"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273026"
 ---
 # <a name="extending-the-channel-layer"></a>Расширение уровня каналов
+
 Уровень канала отвечает за обмен сообщениями между клиентами и службами. Расширения каналов могут реализовывать новые функциональные возможности протокола, такие как безопасность, или транспортные функциональные возможности, такие как реализация нового сетевого транспорта для передачи сообщений SOAP.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения о модели каналов](channel-model-overview.md)  
  Высокоуровневый обзор каналов, предоставляемых ими функций и принципов работы в службе и клиентском приложении.  
   
