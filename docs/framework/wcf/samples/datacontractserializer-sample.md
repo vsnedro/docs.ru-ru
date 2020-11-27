@@ -5,20 +5,21 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - XML Formatter
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
-ms.openlocfilehash: c2f62c8926f09e2d4cdea1941909e7d8f59c43a0
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: d38dddcaff7316f4933207c4aa0897ad47306352
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244417"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253626"
 ---
-# <a name="datacontractserializer-sample"></a><span data-ttu-id="2499b-103">Пример DataContractSerializer</span><span class="sxs-lookup"><span data-stu-id="2499b-103">DataContractSerializer Sample</span></span>
-<span data-ttu-id="2499b-104">В образце DataContractSerializer показывается сериализатор <xref:System.Runtime.Serialization.DataContractSerializer>, выполняющий службы общей сериализации и десериализации для классов контракта данных.</span><span class="sxs-lookup"><span data-stu-id="2499b-104">The DataContractSerializer sample demonstrates the <xref:System.Runtime.Serialization.DataContractSerializer>, which performs general serialization and deserialization services for the data contract classes.</span></span> <span data-ttu-id="2499b-105">Пример создает `Record` объект, сериализует его в поток памяти и десериализует поток памяти обратно в другой `Record` объект, чтобы продемонстрировать использование <xref:System.Runtime.Serialization.DataContractSerializer> .</span><span class="sxs-lookup"><span data-stu-id="2499b-105">The sample creates a `Record` object, serializes it to a memory stream and deserializes the memory stream back to another `Record` object to demonstrate the use of the <xref:System.Runtime.Serialization.DataContractSerializer>.</span></span> <span data-ttu-id="2499b-106">Затем в образце объект `Record` сериализуется с помощью модуля записи двоичных данных, чтобы продемонстрировать, как этот модуль влияет на сериализацию.</span><span class="sxs-lookup"><span data-stu-id="2499b-106">The sample then serializes the `Record` object using a binary writer to demonstrate how the writer affects serialization.</span></span>  
+# <a name="datacontractserializer-sample"></a><span data-ttu-id="b0acd-103">Пример DataContractSerializer</span><span class="sxs-lookup"><span data-stu-id="b0acd-103">DataContractSerializer Sample</span></span>
+
+<span data-ttu-id="b0acd-104">В образце DataContractSerializer показывается сериализатор <xref:System.Runtime.Serialization.DataContractSerializer>, выполняющий службы общей сериализации и десериализации для классов контракта данных.</span><span class="sxs-lookup"><span data-stu-id="b0acd-104">The DataContractSerializer sample demonstrates the <xref:System.Runtime.Serialization.DataContractSerializer>, which performs general serialization and deserialization services for the data contract classes.</span></span> <span data-ttu-id="b0acd-105">Пример создает `Record` объект, сериализует его в поток памяти и десериализует поток памяти обратно в другой `Record` объект, чтобы продемонстрировать использование <xref:System.Runtime.Serialization.DataContractSerializer> .</span><span class="sxs-lookup"><span data-stu-id="b0acd-105">The sample creates a `Record` object, serializes it to a memory stream and deserializes the memory stream back to another `Record` object to demonstrate the use of the <xref:System.Runtime.Serialization.DataContractSerializer>.</span></span> <span data-ttu-id="b0acd-106">Затем в образце объект `Record` сериализуется с помощью модуля записи двоичных данных, чтобы продемонстрировать, как этот модуль влияет на сериализацию.</span><span class="sxs-lookup"><span data-stu-id="b0acd-106">The sample then serializes the `Record` object using a binary writer to demonstrate how the writer affects serialization.</span></span>  
   
 > [!NOTE]
-> <span data-ttu-id="2499b-107">Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.</span><span class="sxs-lookup"><span data-stu-id="2499b-107">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
+> <span data-ttu-id="b0acd-107">Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.</span><span class="sxs-lookup"><span data-stu-id="b0acd-107">The setup procedure and build instructions for this sample are located at the end of this topic.</span></span>  
   
- <span data-ttu-id="2499b-108">Контракт данных для `Record` показан в следующем образце кода.</span><span class="sxs-lookup"><span data-stu-id="2499b-108">The data contract for `Record` is shown in the following sample code.</span></span>  
+ <span data-ttu-id="b0acd-108">Контракт данных для `Record` показан в следующем образце кода.</span><span class="sxs-lookup"><span data-stu-id="b0acd-108">The data contract for `Record` is shown in the following sample code.</span></span>  
   
 ```csharp  
 [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
@@ -72,14 +73,14 @@ internal class Record
 }  
 ```  
   
- <span data-ttu-id="2499b-109">Код образца создает объект `Record` с именем `record1`, а затем отображает объект.</span><span class="sxs-lookup"><span data-stu-id="2499b-109">The sample code creates a `Record` object named `record1` then displays the object.</span></span>  
+ <span data-ttu-id="b0acd-109">Код образца создает объект `Record` с именем `record1`, а затем отображает объект.</span><span class="sxs-lookup"><span data-stu-id="b0acd-109">The sample code creates a `Record` object named `record1` then displays the object.</span></span>  
   
 ```csharp
 Record record1 = new Record(1, 2, "+", 3);  
 Console.WriteLine("Original record: {0}", record1.ToString());  
 ```  
   
- <span data-ttu-id="2499b-110">После этого в образце используется <xref:System.Runtime.Serialization.DataContractSerializer> для сериализации `record1` в поток памяти.</span><span class="sxs-lookup"><span data-stu-id="2499b-110">The sample then uses the <xref:System.Runtime.Serialization.DataContractSerializer> to serialize `record1` into a memory stream.</span></span>  
+ <span data-ttu-id="b0acd-110">После этого в образце используется <xref:System.Runtime.Serialization.DataContractSerializer> для сериализации `record1` в поток памяти.</span><span class="sxs-lookup"><span data-stu-id="b0acd-110">The sample then uses the <xref:System.Runtime.Serialization.DataContractSerializer> to serialize `record1` into a memory stream.</span></span>  
   
 ```csharp  
 MemoryStream stream1 = new MemoryStream();  
@@ -89,7 +90,7 @@ DataContractSerializer serializer = new DataContractSerializer(typeof(Record));
 serializer.WriteObject(stream1, record1);  
 ```  
   
- <span data-ttu-id="2499b-111">Затем в образце используется <xref:System.Runtime.Serialization.DataContractSerializer> для десериализации потока памяти в новый объект `Record`, который затем отображается.</span><span class="sxs-lookup"><span data-stu-id="2499b-111">Next, the sample uses the <xref:System.Runtime.Serialization.DataContractSerializer> to deserialize the memory stream back into a new `Record` object and displays it.</span></span>  
+ <span data-ttu-id="b0acd-111">Затем в образце используется <xref:System.Runtime.Serialization.DataContractSerializer> для десериализации потока памяти в новый объект `Record`, который затем отображается.</span><span class="sxs-lookup"><span data-stu-id="b0acd-111">Next, the sample uses the <xref:System.Runtime.Serialization.DataContractSerializer> to deserialize the memory stream back into a new `Record` object and displays it.</span></span>  
   
 ```csharp  
 stream1.Position = 0;  
@@ -100,7 +101,7 @@ Record record2 = (Record)serializer.ReadObject(stream1);
 Console.WriteLine("Deserialized record: {0}", record2.ToString());  
 ```  
   
- <span data-ttu-id="2499b-112">По умолчанию `DataContractSerializer` кодирует объекты в поток с помощью текстового представления XML.</span><span class="sxs-lookup"><span data-stu-id="2499b-112">By default, the `DataContractSerializer` encodes objects into a stream using a textual representation of XML.</span></span> <span data-ttu-id="2499b-113">Однако на кодирование XML можно повлиять, передав его другому модулю записи данных.</span><span class="sxs-lookup"><span data-stu-id="2499b-113">However, you can influence the encoding of the XML by passing in a different writer.</span></span> <span data-ttu-id="2499b-114">В этом образце создается модель записи двоичных данных путем вызова <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>.</span><span class="sxs-lookup"><span data-stu-id="2499b-114">The sample creates a binary writer by calling <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>.</span></span> <span data-ttu-id="2499b-115">Затем этот модуль и объект записи передаются сериализатору при вызове <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>.</span><span class="sxs-lookup"><span data-stu-id="2499b-115">It then passes the writer and the record object to the serializer when it calls <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>.</span></span> <span data-ttu-id="2499b-116">Наконец, выполняется очистка модуля записи данных и отчетов согласно размеру потоков.</span><span class="sxs-lookup"><span data-stu-id="2499b-116">Finally, the sample flushes the writer and reports on the length of the streams.</span></span>  
+ <span data-ttu-id="b0acd-112">По умолчанию `DataContractSerializer` кодирует объекты в поток с помощью текстового представления XML.</span><span class="sxs-lookup"><span data-stu-id="b0acd-112">By default, the `DataContractSerializer` encodes objects into a stream using a textual representation of XML.</span></span> <span data-ttu-id="b0acd-113">Однако на кодирование XML можно повлиять, передав его другому модулю записи данных.</span><span class="sxs-lookup"><span data-stu-id="b0acd-113">However, you can influence the encoding of the XML by passing in a different writer.</span></span> <span data-ttu-id="b0acd-114">В этом образце создается модель записи двоичных данных путем вызова <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>.</span><span class="sxs-lookup"><span data-stu-id="b0acd-114">The sample creates a binary writer by calling <xref:System.Xml.XmlDictionaryWriter.CreateBinaryWriter%2A>.</span></span> <span data-ttu-id="b0acd-115">Затем этот модуль и объект записи передаются сериализатору при вызове <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>.</span><span class="sxs-lookup"><span data-stu-id="b0acd-115">It then passes the writer and the record object to the serializer when it calls <xref:System.Runtime.Serialization.DataContractSerializer.WriteObjectContent%2A>.</span></span> <span data-ttu-id="b0acd-116">Наконец, выполняется очистка модуля записи данных и отчетов согласно размеру потоков.</span><span class="sxs-lookup"><span data-stu-id="b0acd-116">Finally, the sample flushes the writer and reports on the length of the streams.</span></span>  
   
 ```csharp  
 MemoryStream stream2 = new MemoryStream();  
@@ -114,7 +115,7 @@ Console.WriteLine("Text Stream is {0} bytes long", stream1.Length);
 Console.WriteLine("Binary Stream is {0} bytes long", stream2.Length);  
 ```  
   
- <span data-ttu-id="2499b-117">При запуске образца отображаются исходная и десериализованная запись с последующем сравнением длины текстового и двоичного кодирования.</span><span class="sxs-lookup"><span data-stu-id="2499b-117">When you run the sample, the original record and the deserialized record are displayed, followed by the comparison between the length of the text encoding and the binary encoding.</span></span> <span data-ttu-id="2499b-118">Чтобы закрыть клиент, нажмите клавишу ВВОД в окне клиента.</span><span class="sxs-lookup"><span data-stu-id="2499b-118">Press ENTER in the client window to shut down the client.</span></span>  
+ <span data-ttu-id="b0acd-117">При запуске образца отображаются исходная и десериализованная запись с последующем сравнением длины текстового и двоичного кодирования.</span><span class="sxs-lookup"><span data-stu-id="b0acd-117">When you run the sample, the original record and the deserialized record are displayed, followed by the comparison between the length of the text encoding and the binary encoding.</span></span> <span data-ttu-id="b0acd-118">Чтобы закрыть клиент, нажмите клавишу ВВОД в окне клиента.</span><span class="sxs-lookup"><span data-stu-id="b0acd-118">Press ENTER in the client window to shut down the client.</span></span>  
   
 ```console  
 Original record: Record: 1 + 2 = 3  
@@ -125,19 +126,19 @@ Binary Stream is 156 bytes long
 Press <ENTER> to terminate client.  
 ```  
   
-### <a name="to-set-up-build-and-run-the-sample"></a><span data-ttu-id="2499b-119">Настройка, сборка и выполнение образца</span><span class="sxs-lookup"><span data-stu-id="2499b-119">To set up, build, and run the sample</span></span>  
+### <a name="to-set-up-build-and-run-the-sample"></a><span data-ttu-id="b0acd-119">Настройка, сборка и выполнение образца</span><span class="sxs-lookup"><span data-stu-id="b0acd-119">To set up, build, and run the sample</span></span>  
   
-1. <span data-ttu-id="2499b-120">Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).</span><span class="sxs-lookup"><span data-stu-id="2499b-120">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
+1. <span data-ttu-id="b0acd-120">Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).</span><span class="sxs-lookup"><span data-stu-id="b0acd-120">Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).</span></span>  
   
-2. <span data-ttu-id="2499b-121">Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).</span><span class="sxs-lookup"><span data-stu-id="2499b-121">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).</span></span>  
+2. <span data-ttu-id="b0acd-121">Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).</span><span class="sxs-lookup"><span data-stu-id="b0acd-121">To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).</span></span>  
   
-3. <span data-ttu-id="2499b-122">Чтобы запустить пример, запустите клиент из командной строки, введя client\bin\client.exe.</span><span class="sxs-lookup"><span data-stu-id="2499b-122">To run the sample, start the client from the command prompt by typing client\bin\client.exe.</span></span>  
+3. <span data-ttu-id="b0acd-122">Чтобы запустить пример, запустите клиент из командной строки, введя client\bin\client.exe.</span><span class="sxs-lookup"><span data-stu-id="b0acd-122">To run the sample, start the client from the command prompt by typing client\bin\client.exe.</span></span>  
   
 > [!IMPORTANT]
-> <span data-ttu-id="2499b-123">Образцы уже могут быть установлены на компьютере.</span><span class="sxs-lookup"><span data-stu-id="2499b-123">The samples may already be installed on your machine.</span></span> <span data-ttu-id="2499b-124">Перед продолжением проверьте следующий каталог (по умолчанию).</span><span class="sxs-lookup"><span data-stu-id="2499b-124">Check for the following (default) directory before continuing.</span></span>  
+> <span data-ttu-id="b0acd-123">Образцы уже могут быть установлены на компьютере.</span><span class="sxs-lookup"><span data-stu-id="b0acd-123">The samples may already be installed on your machine.</span></span> <span data-ttu-id="b0acd-124">Перед продолжением проверьте следующий каталог (по умолчанию).</span><span class="sxs-lookup"><span data-stu-id="b0acd-124">Check for the following (default) directory before continuing.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> <span data-ttu-id="2499b-125">Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры.</span><span class="sxs-lookup"><span data-stu-id="2499b-125">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="2499b-126">Этот образец расположен в следующем каталоге.</span><span class="sxs-lookup"><span data-stu-id="2499b-126">This sample is located in the following directory.</span></span>  
+> <span data-ttu-id="b0acd-125">Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры.</span><span class="sxs-lookup"><span data-stu-id="b0acd-125">If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples.</span></span> <span data-ttu-id="b0acd-126">Этот образец расположен в следующем каталоге.</span><span class="sxs-lookup"><span data-stu-id="b0acd-126">This sample is located in the following directory.</span></span>  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\DataContractSerializer`  
