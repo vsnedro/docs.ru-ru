@@ -2,21 +2,23 @@
 title: System.ServiceModel.UnhandledExceptionInUserOperation
 ms.date: 03/30/2017
 ms.assetid: b00612e4-84c7-4a53-849a-e693cdce7fca
-ms.openlocfilehash: fab4589e64d332255020372034223da21b395adf
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a1d033da69afd2582d2509d5c8f7e49d318f7fbd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593650"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268031"
 ---
-# <a name="systemservicemodelunhandledexceptioninuseroperation"></a><span data-ttu-id="5e4e0-102">System.ServiceModel.UnhandledExceptionInUserOperation</span><span class="sxs-lookup"><span data-stu-id="5e4e0-102">System.ServiceModel.UnhandledExceptionInUserOperation</span></span>
-<span data-ttu-id="5e4e0-103">System.ServiceModel.UnhandledExceptionInUserOperation</span><span class="sxs-lookup"><span data-stu-id="5e4e0-103">System.ServiceModel.UnhandledExceptionInUserOperation</span></span>  
-  
-## <a name="description"></a><span data-ttu-id="5e4e0-104">Описание</span><span class="sxs-lookup"><span data-stu-id="5e4e0-104">Description</span></span>  
- <span data-ttu-id="5e4e0-105">Необработанное исключение в операции пользователя.</span><span class="sxs-lookup"><span data-stu-id="5e4e0-105">Unhandled exception in user operation.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="5e4e0-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="5e4e0-106">See also</span></span>
+# <a name="systemservicemodelunhandledexceptioninuseroperation"></a><span data-ttu-id="7c76c-102">System.ServiceModel.UnhandledExceptionInUserOperation</span><span class="sxs-lookup"><span data-stu-id="7c76c-102">System.ServiceModel.UnhandledExceptionInUserOperation</span></span>
 
-- [<span data-ttu-id="5e4e0-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="5e4e0-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="5e4e0-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="5e4e0-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="5e4e0-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="5e4e0-109">Administration and Diagnostics</span></span>](../index.md)
+<span data-ttu-id="7c76c-103">System.ServiceModel.UnhandledExceptionInUserOperation</span><span class="sxs-lookup"><span data-stu-id="7c76c-103">System.ServiceModel.UnhandledExceptionInUserOperation</span></span>  
+  
+## <a name="description"></a><span data-ttu-id="7c76c-104">Описание</span><span class="sxs-lookup"><span data-stu-id="7c76c-104">Description</span></span>  
+
+ <span data-ttu-id="7c76c-105">Необработанное исключение в операции пользователя.</span><span class="sxs-lookup"><span data-stu-id="7c76c-105">Unhandled exception in user operation.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="7c76c-106">См. также</span><span class="sxs-lookup"><span data-stu-id="7c76c-106">See also</span></span>
+
+- [<span data-ttu-id="7c76c-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="7c76c-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="7c76c-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="7c76c-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="7c76c-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="7c76c-109">Administration and Diagnostics</span></span>](../index.md)
