@@ -2,33 +2,35 @@
 title: 'Конечная точка: количество сбоев при проверке безопасности и проверке подлинности в секунду'
 ms.date: 03/30/2017
 ms.assetid: 89a70b90-d7e4-4b03-9b84-4dc88ce3d605
-ms.openlocfilehash: 8573c35f16d03e2f86310c054703c25a3175200c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b2c5022caa5abe6154a3cb4dd4281dd212599b74
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90541504"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256486"
 ---
-# <a name="endpoint-security-validation-and-authentication-failures-per-second"></a><span data-ttu-id="c72aa-102">Конечная точка: количество сбоев при проверке безопасности и проверке подлинности в секунду</span><span class="sxs-lookup"><span data-stu-id="c72aa-102">Endpoint: Security Validation and Authentication Failures Per Second</span></span>
-<span data-ttu-id="c72aa-103">Имя счетчика: Security Validation and Authentication Failures Per Second</span><span class="sxs-lookup"><span data-stu-id="c72aa-103">Counter name: Security Validation and Authentication Failures Per Second</span></span>  
+# <a name="endpoint-security-validation-and-authentication-failures-per-second"></a><span data-ttu-id="082db-102">Конечная точка: количество сбоев при проверке безопасности и проверке подлинности в секунду</span><span class="sxs-lookup"><span data-stu-id="082db-102">Endpoint: Security Validation and Authentication Failures Per Second</span></span>
+
+<span data-ttu-id="082db-103">Имя счетчика: Security Validation and Authentication Failures Per Second</span><span class="sxs-lookup"><span data-stu-id="082db-103">Counter name: Security Validation and Authentication Failures Per Second</span></span>  
   
-## <a name="description"></a><span data-ttu-id="c72aa-104">Описание</span><span class="sxs-lookup"><span data-stu-id="c72aa-104">Description</span></span>  
- <span data-ttu-id="c72aa-105">Значение этого счетчика увеличивается всякий раз, когда сообщение отклоняется из-за проблемы безопасности, не относящейся к счетчику "Security Calls Not Authorized".</span><span class="sxs-lookup"><span data-stu-id="c72aa-105">This counter is incremented whenever a message is rejected due to a security problem not covered by the "Security Calls Not Authorized" counter.</span></span> <span data-ttu-id="c72aa-106">К таким проблемам относятся следующие.</span><span class="sxs-lookup"><span data-stu-id="c72aa-106">Such problems include:</span></span>  
+## <a name="description"></a><span data-ttu-id="082db-104">Описание</span><span class="sxs-lookup"><span data-stu-id="082db-104">Description</span></span>  
+
+ <span data-ttu-id="082db-105">Значение этого счетчика увеличивается всякий раз, когда сообщение отклоняется из-за проблемы безопасности, не относящейся к счетчику "Security Calls Not Authorized".</span><span class="sxs-lookup"><span data-stu-id="082db-105">This counter is incremented whenever a message is rejected due to a security problem not covered by the "Security Calls Not Authorized" counter.</span></span> <span data-ttu-id="082db-106">К таким проблемам относятся следующие.</span><span class="sxs-lookup"><span data-stu-id="082db-106">Such problems include:</span></span>  
   
-- <span data-ttu-id="c72aa-107">Невозможно прочесть в этом сообщении маркер клиента.</span><span class="sxs-lookup"><span data-stu-id="c72aa-107">Client token cannot be read from the message.</span></span>  
+- <span data-ttu-id="082db-107">Невозможно прочесть в этом сообщении маркер клиента.</span><span class="sxs-lookup"><span data-stu-id="082db-107">Client token cannot be read from the message.</span></span>  
   
-- <span data-ttu-id="c72aa-108">Маркер клиента не прошел проверку подлинности (например, неправильный пароль).</span><span class="sxs-lookup"><span data-stu-id="c72aa-108">Client token has failed authentication (for example, bad password).</span></span>  
+- <span data-ttu-id="082db-108">Маркер клиента не прошел проверку подлинности (например, неправильный пароль).</span><span class="sxs-lookup"><span data-stu-id="082db-108">Client token has failed authentication (for example, bad password).</span></span>  
   
-- <span data-ttu-id="c72aa-109">Сбой при проверке подписи (например, сообщение было искажено).</span><span class="sxs-lookup"><span data-stu-id="c72aa-109">Signature verification has failed (for example, the message has been tampered).</span></span>  
+- <span data-ttu-id="082db-109">Сбой при проверке подписи (например, сообщение было искажено).</span><span class="sxs-lookup"><span data-stu-id="082db-109">Signature verification has failed (for example, the message has been tampered).</span></span>  
   
-- <span data-ttu-id="c72aa-110">Сообщение является копией предыдущего, что может свидетельствовать об атаке воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="c72aa-110">The message is a duplicate from a previous one, which can happen during a replay attack.</span></span>  
+- <span data-ttu-id="082db-110">Сообщение является копией предыдущего, что может свидетельствовать об атаке воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="082db-110">The message is a duplicate from a previous one, which can happen during a replay attack.</span></span>  
   
-- <span data-ttu-id="c72aa-111">Произошел сбой при расшифровке.</span><span class="sxs-lookup"><span data-stu-id="c72aa-111">A decryption failure has occurred.</span></span>  
+- <span data-ttu-id="082db-111">Произошел сбой при расшифровке.</span><span class="sxs-lookup"><span data-stu-id="082db-111">A decryption failure has occurred.</span></span>  
   
-- <span data-ttu-id="c72aa-112">В сообщении отсутствуют некоторые обязательные элементы (например, отсутствует отметка времени или зашифрованный блок данных).</span><span class="sxs-lookup"><span data-stu-id="c72aa-112">Some required elements (for example, missing timestamp or encrypted data block) are missing from the message.</span></span>  
+- <span data-ttu-id="082db-112">В сообщении отсутствуют некоторые обязательные элементы (например, отсутствует отметка времени или зашифрованный блок данных).</span><span class="sxs-lookup"><span data-stu-id="082db-112">Some required elements (for example, missing timestamp or encrypted data block) are missing from the message.</span></span>  
   
-- <span data-ttu-id="c72aa-113">Во время подтверждения TLSNEGO/SPNEGO произошли ошибки.</span><span class="sxs-lookup"><span data-stu-id="c72aa-113">Errors have occurred during TLSNEGO/SPNEGO handshake.</span></span>  
+- <span data-ttu-id="082db-113">Во время подтверждения TLSNEGO/SPNEGO произошли ошибки.</span><span class="sxs-lookup"><span data-stu-id="082db-113">Errors have occurred during TLSNEGO/SPNEGO handshake.</span></span>  
   
- <span data-ttu-id="c72aa-114">Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется по следующей формуле:</span><span class="sxs-lookup"><span data-stu-id="c72aa-114">This counter is of performance counter type [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), whose value is calculated using the following formula:</span></span>  
+ <span data-ttu-id="082db-114">Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется по следующей формуле:</span><span class="sxs-lookup"><span data-stu-id="082db-114">This counter is of performance counter type [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), whose value is calculated using the following formula:</span></span>  
   
- <span data-ttu-id="c72aa-115">(N1-N0)/((D1-D0)/F)</span><span class="sxs-lookup"><span data-stu-id="c72aa-115">(N1-N0)/((D1-D0)/F)</span></span>
+ <span data-ttu-id="082db-115">(N1-N0)/((D1-D0)/F)</span><span class="sxs-lookup"><span data-stu-id="082db-115">(N1-N0)/((D1-D0)/F)</span></span>
