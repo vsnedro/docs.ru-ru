@@ -2,14 +2,15 @@
 title: Исключения IdentityModel
 ms.date: 03/30/2017
 ms.assetid: 4ef34497-8ff5-4621-b773-7731cc721231
-ms.openlocfilehash: 4b8af2620b6179ce4cff59d7f9871377f06ffe5f
-ms.sourcegitcommit: 2d42b7ae4252cfe1232777f501ea9ac97df31b63
+ms.openlocfilehash: 08d81f4eb35d0f4bda3997d6ab4dfd0ec10407e1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67486666"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275041"
 ---
 # <a name="identitymodel-exceptions"></a>Исключения IdentityModel
+
 В этом разделе перечислены все исключения, создаваемые IdentityModel.  
   
 ## <a name="exception-list"></a>Список исключений  
@@ -23,7 +24,7 @@ ms.locfileid: "67486666"
 |SAMLAttributeMissingNameAttributeOnRead|"Name" для считываемого атрибута SamlAttribute отсутствует или имеет длину 0.|  
 |UnknownICryptoType|Реализация ICrypto не поддерживается.|  
 |TraceCodeSecurityTokenProviderClosed|Поставщик маркера безопасности закрыт.|  
-|SAMLUnableToLoadAdvice|Не удалось загрузить \<SAML: advice > элемента.|  
+|SAMLUnableToLoadAdvice|Не удалось загрузить \<saml:advice> элемент.|  
 |SAMLAuthenticationStatementMissingAuthenticationMethodOnRead|Считываемый атрибут "AuthenticationMethod" для оператора SamlAuthenticationStatement отсутствует или имеет длину 0.|  
 |UnsupportedTransformAlgorithm|Неподдерживаемое преобразование или алгоритм канонизации.|  
 |SAMLAudienceRestrictionShouldHaveOneAudience|Условие SamlAudienceRestrictionCondition должно иметь хотя бы одну аудиторию (URI).|  
@@ -42,7 +43,7 @@ ms.locfileid: "67486666"
 |TraceCodeSecuritySessionClosedFaultReceived|Сеанс безопасности клиента получил от сервера сообщение о сбое закрытия сеанса.|  
 |TraceCodeIssuanceTokenProviderRedirectApplied|IssuanceTokenProvider применил заголовок перенаправления.|  
 |TraceCodeSecuritySessionClosedFaultSendFailure|Произошла ошибка при отправлении клиенту сообщения об ошибке, вызывавшей закрытие сеанса безопасности.|  
-|ValueMustBeZero|Значение этого аргумента должно быть 0.|  
+|ValueMustBeZero|Значение этого аргумента должно быть равно 0.|  
 |SAMLUnableToResolveSignatureKey|Не удалось разрешить идентификатор SecurityKeyIdentifier, найденный в сигнатуре SamlAssertion. Невозможно проверить сигнатуру SamlAssertion для указанного издателя.|  
 |X509IsNotInTrustedStore|Указанный сертификат X.509 не принадлежит хранилищу "Доверенные лица".|  
 |SAMLElementNotRecognized|Указанный элемент не поддерживается.|  
@@ -80,15 +81,15 @@ ms.locfileid: "67486666"
 |SAMLSignatureAlreadyRead|Сигнатура уже прочитана в утверждении SAML.|  
 |AlgorithmAndPrivateKeyMisMatch|Указанный алгоритм и закрытый ключ не соответствуют друг другу.|  
 |EmptyTransformChainNotSupported|Пустая цепочка преобразований не поддерживается.|  
-|SspiWrapperEncryptDecryptAssert1|SSPIWrapper::EncryptDecryptHelper&#124;'offset' is out of range.|  
-|SspiWrapperEncryptDecryptAssert2|Sspiwrapper:: Encryptdecrypthelper&#124;«size» выходит за пределы диапазона. SecurityTokenManagerCannotCreateAuthenticatorForRequirement=Диспетчер маркера безопасности не может создать структуру проверки подлинности для указанного требования.|  
+|SspiWrapperEncryptDecryptAssert1|Сспивраппер:: Енкриптдекрипселпер&#124; "offset" выходит за пределы допустимого диапазона.|  
+|SspiWrapperEncryptDecryptAssert2|Сспивраппер:: Енкриптдекрипселпер&#124; "size" выходит за пределы допустимого диапазона. SecurityTokenManagerCannotCreateAuthenticatorForRequirement=Диспетчер маркера безопасности не может создать структуру проверки подлинности для указанного требования.|  
 |UnableToCreateKeyedHashAlgorithm|Не удалось создать алгоритм KeyedHashAlgorithm из указанного значения для указанного алгоритма сигнатуры.|  
-|SAMLUnableToLoadAssertion|\<SAML: Assertion > не удалось загрузить элемент.|  
+|SAMLUnableToLoadAssertion|\<saml:assertion>Не удалось загрузить элемент.|  
 |X509FindValueMismatchMulti|Для указанного типа X509FindType требуется, чтобы аргумент findValue имел один из 2 типов. Аргумент findValue имеет другой тип.|  
 |TraceCodeSecurityIdentityDeterminationSuccess|Для EndpointAddress была определена идентификация.|  
 |UndefinedUseOfPrefixAtElement|У указанного префикса, использованного для элемента, не задано пространство имен.|  
 |TraceCodeSecuritySessionResponderOperationFailure|Сбой операции сеанса безопасности на сервере.|  
-|CannotFindCert|Не удалось найти сертификат X.509, с помощью указанных условий поиска: StoreName, StoreLocation, FindType, FindValue.|  
+|CannotFindCert|Не удается найти сертификат X.509 с использованием указанных условий поиска: StoreName, StoreLocation, FindType, FindValue.|  
 |X509InvalidUsageTime|Указанное время использования сертификата X.509 недопустимо. Время использования выходит за требуемые временные границы NotBefore и NotAfter.|  
 |TraceCodeSecurityIdentityDeterminationFailure|Невозможно определить идентификацию для EndpointAddress.|  
 |AsyncObjectAlreadyEnded|Для данного объекта асинхронного результата уже был вызван метод End.|  
@@ -100,11 +101,11 @@ ms.locfileid: "67486666"
 |SAMLAssertionMissingMajorVersionAttributeOnRead|Значение MajorVersion для считываемого утверждения SamlAssertion отсутствует или имеет длину 0.|  
 |SamlAttributeClaimRightShouldBePossessProperty|Данный конструктор SamlAttribute требует, чтобы параметр Right утверждения Claim имел значение System.IdentityModel.Claims.Rights.PossessProperty.|  
 |AuthorizationPolicyEvaluated|Политика с указанным ИД оценена.|  
-|SAMLUnableToLoadCondtions<!-- the misspelling here is deliberate. -->|\<SAML: Conditions > не удалось загрузить элемент.|  
+|SAMLUnableToLoadCondtions<!-- the misspelling here is deliberate. -->|\<saml:conditions>Не удалось загрузить элемент.|  
 |AESKeyLengthNotSupported|Ключ указанной длины не поддерживается. Поддерживаются только 128-, 192- и 256-разрядные ключи.|  
 |UserNameCannotBeEmpty|Имя пользователя не может быть пустым.|  
 |AlgorithmAndPublicKeyMisMatch|Указанный алгоритм и открытый ключ не соответствуют друг другу.|  
-|SAMLUnableToLoadCondtion<!-- the misspelling here is deliberate. -->|\<SAML: Conditions > не удалось загрузить элемент.|  
+|SAMLUnableToLoadCondtion<!-- the misspelling here is deliberate. -->|\<saml:conditions>Не удалось загрузить элемент.|  
 |SamlAssertionMissingSigningCredentials|SigningCredentials не заданы в SamlAssertion. Утверждения SamlAssertion должны быть подписаны, для продолжения задайте допустимые учетные данные SigningCredentials в утверждении SamlAssertion.|  
 |SspiPayloadNotEncrypted|Двоичные данные не зашифрованы с контекстом безопасности SSPI.|  
 |SAMLAuthorizationDecisionShouldHaveOneActionOnRead|Считываемый оператор SamlAuthorizationDecisionStatement не содержит ни одного действия SamlAction.|  
@@ -164,7 +165,7 @@ ms.locfileid: "67486666"
 |LengthOfArrayToConvertMustGreaterThanZero|Длина массива для преобразования в целое число должна быть больше 0.|  
 |InvalidAsyncResult|Недопустимый AsyncResult.|  
 |TraceCodeIssuanceTokenProviderRemovedCachedToken|IssuanceTokenProvider удалил маркер службы с истекшим сроком действия.|  
-|IncorrectUserNameFormat|Имя пользователя имеет недопустимый формат. Имя пользователя должно быть в формате «имя пользователя "или" домен\\\username ".|  
+|IncorrectUserNameFormat|Имя пользователя имеет недопустимый формат. Формат имени пользователя должен быть в формате "Username" или "Domain \\ \усернаме".|  
 |TraceCodeExportSecurityChannelBindingEntry|Запуск привязки безопасности ExportChannelBinding.|  
 |UnsupportedInputTypeForTransform|Для преобразования не поддерживается указанный тип входных данных.|  
 |CannotFindDocumentRoot|Невозможно найти корень документа.|  
@@ -227,7 +228,7 @@ ms.locfileid: "67486666"
 |UnableToCreateSignatureDeformatterFromAsymmetricCrypto|Не удалось создать модуль удаления формата сигнатуры для указанного алгоритма из указанного асимметричного шифрования.|  
 |TraceCodeIdentityModelAsyncCallbackThrewException|Асинхронный обратный вызов сгенерировал исключение.|  
 |LengthMustBeGreaterThanZero|Длина этого аргумента должна быть больше 0.|  
-|FoundMultipleCerts|Найдено несколько сертификатов X.509, с помощью условий поиска: StoreName, StoreLocation, FindType, FindValue. Укажите более точное значение.|  
+|FoundMultipleCerts|С помощью указанных условий поиска StoreName, StoreLocation, FindType, FindValue найдено несколько сертификатов X.509. Укажите более точное значение.|  
 |AtLeastOneTransformRequired|Элемент Transforms должен содержать хотя бы одно преобразование.|  
 |SAMLTokenNotSerialized|Утверждение SamlAssertion не может быть сериализовано в XML. Подробнее см. в описании внутреннего исключения.|  
 |TraceCodeSecurityBindingOutgoingMessageSecured|Протокол безопасности обеспечил защиту исходящего сообщения.|  
@@ -294,5 +295,5 @@ ms.locfileid: "67486666"
 |UnableToCreateKeyedHashAlgorithmFromSymmetricCrypto|Не удалось создать keyedHashAlgorithm для указанного алгоритма из указанного симметричного шифрования.|  
 |SAMLAuthenticationStatementMissingAuthenticationMethod|Метод "AuthenticationMethod", указанный для оператора SamlAuthenticationStatement, не может иметь значение null или длину 0.|  
 |TraceCodeSecurityImpersonationFailure|Ошибка олицетворения безопасности на сервере.|  
-|Значение по умолчанию|(Значение по умолчанию)|  
+|По умолчанию|(по умолчанию)|  
 |UnsupportedNodeTypeInReader|Указанный тип узла с указанным именем не поддерживается.|

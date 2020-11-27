@@ -2,30 +2,33 @@
 title: 39458 - TrackingRecordTruncated
 ms.date: 03/30/2017
 ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
-ms.openlocfilehash: 416feb4073b31178b016ae72c9cd85e15c4a68c3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f02a34673c51be6e0b127a64e4622131575d836f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774417"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275896"
 ---
 # <a name="39458---trackingrecordtruncated"></a>39458 - TrackingRecordTruncated
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|39458|  
-|Ключевые слова|WFTracking|  
-|Уровень|Предупреждение|  
+|Keywords|WFTracking|  
+|Level|Предупреждение|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Указывает, что запись отслеживания была усечена. Данные переменных, заметок, пользователей удалены.  
   
 ## <a name="message"></a>Сообщение  
+
  Усеченная запись отслеживания %1 записана в сеанс трассировки событий Windows с использованием поставщика %2. Данные переменных, заметок, пользователей удалены  
   
-## <a name="details"></a>Подробные сведения  
+## <a name="details"></a>Сведения  
   
 |Имя элемента данных|Тип элемента данных|Описание|  
 |--------------------|--------------------|-----------------|  

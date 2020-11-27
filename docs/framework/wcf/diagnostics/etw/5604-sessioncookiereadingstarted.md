@@ -2,27 +2,30 @@
 title: 5604 - SessionCookieReadingStarted
 ms.date: 03/30/2017
 ms.assetid: 7348caaa-add0-473d-8af3-b2dadb68abdb
-ms.openlocfilehash: 549ece457f4c4498f38a7c19cf4d31137fbe7eff
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f082f67f6ff774d11c6080a3f138d93d2f6ef3ba
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61767407"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276325"
 ---
 # <a name="5604---sessioncookiereadingstarted"></a>5604 - SessionCookieReadingStarted
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|5604|  
-|Ключевые слова|Безопасность|  
-|Уровень|Verbose|  
+|Keywords|Безопасность|  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Событие возникает при запуске чтения токена сеанса из куки-файла сеанса.  
   
 ## <a name="message"></a>Сообщение  
+
  Запущено чтение токена сеанса из файла cookie сеанса.  
   
-## <a name="details"></a>Подробные сведения
+## <a name="details"></a>Подробнее

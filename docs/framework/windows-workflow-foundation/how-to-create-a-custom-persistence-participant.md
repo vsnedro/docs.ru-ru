@@ -2,14 +2,15 @@
 title: Практическое руководство. Создание настраиваемого участника сохраняемости
 ms.date: 03/30/2017
 ms.assetid: 1d9cc47a-8966-4286-94d5-4221403d9c06
-ms.openlocfilehash: d1d59f139b666790920eaabe032878dca1617b62
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 633961ac12eed593613eba75862cbc81f2fa68c6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557049"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275818"
 ---
 # <a name="how-to-create-a-custom-persistence-participant"></a>Практическое руководство. Создание настраиваемого участника сохраняемости
+
 В следующей процедуре содержаться шаги для создания участника сохраняемости. Примеры реализаций участников сохраняемости см. в разделе участие в примерах использования [сохраняемости](/previous-versions/dotnet/netframework-4.0/dd699769(v=vs.100)) и [сохранении расширяемости](store-extensibility.md) .  
   
 1. Создайте класс, который происходит от класса <xref:System.Activities.Persistence.PersistenceParticipant> или <xref:System.Activities.Persistence.PersistenceIOParticipant>. Класс PersistenceIOParticipant предлагает те же точки расширения, что и класс PersistenceParticipant, а также возможность участвовать в операциях ввода-вывода. Выполните один или несколько следующих шагов.  

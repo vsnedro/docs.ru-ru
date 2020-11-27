@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
-ms.openlocfilehash: c87583bec908c3465dedf7c542e30ce264cd7b47
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1fe50f711c65871b811837a7f48cf6f45f4455b4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90553783"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275610"
 ---
 # <a name="message-security-with-a-windows-client"></a>Безопасность сообщений с клиентом Windows
+
 В этом сценарии показан клиент Windows Communication Foundation (WCF) и сервер, защищенный режимом безопасности сообщений. Клиент и служба проходят проверку подлинности с использованием учетных данных Windows.  
   
  ![Безопасность сообщений с помощью клиента Windows](media/1c8618d4-0005-4022-beb6-32fd087a8c3c.gif "1c8618d4-0005-4022-beb6-32fd087a8c3c")  
@@ -29,19 +30,22 @@ ms.locfileid: "90553783"
 |Привязка|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## <a name="service"></a>Служба  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономную службу, используя код без конфигурации.  
   
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано создание конечной точки службы, которая использует безопасность сообщений для установления защищенного контекста с компьютером Windows.  
   
  [!code-csharp[C_SecurityScenarios#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#11)]
  [!code-vb[C_SecurityScenarios#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#11)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Вместо кода для настройки службы можно использовать следующую конфигурацию:  
   
 ```xml  
@@ -73,7 +77,8 @@ ms.locfileid: "90553783"
 ```  
   
 ## <a name="client"></a>Клиент  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
@@ -83,12 +88,14 @@ ms.locfileid: "90553783"
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### <a name="code"></a>Код  
+
  Следующий код служит для создания клиента. Привязка осуществляется к безопасности режима сообщений, и типу учетных данных клиента присваивается значение `Windows`.  
   
  [!code-csharp[C_SecurityScenarios#18](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#18)]
  [!code-vb[C_SecurityScenarios#18](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#18)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Следующая конфигурация используется для задания свойств клиента.  
   
 ```xml  

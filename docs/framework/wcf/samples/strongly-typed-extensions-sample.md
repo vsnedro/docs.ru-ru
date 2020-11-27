@@ -2,12 +2,12 @@
 title: Пример строго типизированных расширений
 ms.date: 03/30/2017
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
-ms.openlocfilehash: e8c3bf202a1fb76d383f0a3fe15084d19a1d51fb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e5b74188d4c9c333858c60ff95a2a90b0e2e9418
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600884"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275935"
 ---
 # <a name="strongly-typed-extensions-sample"></a>Пример строго типизированных расширений
 
@@ -18,6 +18,7 @@ ms.locfileid: "84600884"
  Например, здесь показано, как реализовать элемент расширения, определенный в документе RFC "Atom Threading Extensions". Этот образец приводится исключительно с целью демонстрации и не является полной реализацией предлагаемой спецификации.  
   
 ## <a name="sample-xml"></a>Образец XML  
+
  В следующем примере XML показана запись Atom 1.0 с дополнительным элементом расширения `<in-reply-to>`.  
   
 ```xml  
@@ -44,6 +45,7 @@ ms.locfileid: "84600884"
  `<in-reply-to>`Элемент задает три обязательных атрибута ( `ref` `type` и), `href` а также разрешение на присутствие дополнительных атрибутов расширения и элементов расширения.  
   
 ## <a name="modeling-the-in-reply-to-element"></a>Моделирование элемента In-Reply-To  
+
  В этом образце элемент `<in-reply-to>` моделируется в среде CLR, которая реализует интерфейс <xref:System.Xml.Serialization.IXmlSerializable>, позволяющий использовать его с <xref:System.Runtime.Serialization.DataContractSerializer>. Он также реализует некоторые методы и свойства для доступа к данным элемента, как показано в следующем образце кода.  
   
 ```csharp  
@@ -186,6 +188,7 @@ public void WriteXml(System.Xml.XmlWriter writer)
 ```  
   
 ## <a name="threadedfeed-and-threadeditem"></a>ThreadedFeed и ThreadedItem  
+
  В этом образце элементы `SyndicationItems` с расширениями `InReplyTo` моделируются с помощью класса `ThreadedItem`. Аналогично класс `ThreadedFeed` является каналом `SyndicationFeed`, элементы которого являются экземплярами `ThreadedItem`.  
   
  Класс `ThreadedFeed` наследует классу `SyndicationFeed` и переопределяет метод `OnCreateItem`, чтобы он возвращал элементы `ThreadedItem`. Кроме того, он реализует метод для доступа к коллекции `Items` в виде `ThreadedItems`, как показано в следующем примере кода.  

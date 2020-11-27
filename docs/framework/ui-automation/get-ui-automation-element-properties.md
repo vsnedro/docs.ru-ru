@@ -9,14 +9,15 @@ helpviewer_keywords:
 - properties, retrieving
 - UI Automation, retrieving properties of elements
 ms.assetid: 09576b1a-291f-435c-980e-dee32d899ae1
-ms.openlocfilehash: 277822c9d89046bfbad50df16bce83da7dd45b3b
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 34a42355acce0beafbb9658baf6032e4e7e19fcb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164104"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276429"
 ---
 # <a name="get-ui-automation-element-properties"></a>Получение свойств элементов управления модели автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -35,6 +36,7 @@ ms.locfileid: "87164104"
 2. Вызовите <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> или извлеките <xref:System.Windows.Automation.AutomationElement.Cached%2A> структуру свойства и получите значение от одного из его членов.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показаны различные способы получения текущих свойств <xref:System.Windows.Automation.AutomationElement> .  
   
  [!code-csharp[UIAClient_snip#170](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#170)]

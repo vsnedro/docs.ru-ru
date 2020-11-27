@@ -5,42 +5,49 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3b787719-4e77-4e77-96a6-5b15a11b995a
-ms.openlocfilehash: 4f24c558b1d5303b2417416beb14555539f498ea
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: cf6ee310e034ad7b2e53206e1bdba68007b1a268
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797269"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275584"
 ---
 # <a name="client-channel-level-programming"></a>Программирование клиентов на уровне канала
+
 В этом разделе описывается Написание клиентского приложения Windows Communication Foundation (WCF) без использования <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType> класса и связанной с ним объектной модели.  
   
-## <a name="sending-messages"></a>Отправка сообщений  
+## <a name="sending-messages"></a>отправка сообщений  
+
  Чтобы подготовиться к отправке сообщений и получению и обработке ответов, необходимы следующие действия.  
   
 1. Создайте привязку.  
   
 2. Создайте фабрику каналов.  
   
-3. Создайте канал.  
+3. Создание канала.  
   
 4. Отправьте запрос и прочитайте ответ.  
   
 5. Закройте все объекты каналов.  
   
 #### <a name="creating-a-binding"></a>Создание привязки  
- Как и в случае с приемом (см. раздел [обслуживание на уровне канала службы](service-channel-level-programming.md)), отправка сообщений начинается с создания привязки. В данном примере создается новая привязка <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType>, и в коллекцию ее элементов добавляется элемент <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType>.  
+
+ Как и в случае с получением (см. [службу Channel-Level программирование](service-channel-level-programming.md)), отправка сообщений начинается с создания привязки. В данном примере создается новая привязка <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType>, и в коллекцию ее элементов добавляется элемент <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType>.  
   
 #### <a name="building-a-channelfactory"></a>Создание фабрики каналов  
+
  На этот раз вместо того чтобы создавать прослушиватель каналов <xref:System.ServiceModel.Channels.IChannelListener?displayProperty=nameWithType>, следует создать производство каналов <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> вызовом метода <xref:System.ServiceModel.ChannelFactory.CreateFactory%2A?displayProperty=nameWithType> в привязке с параметром типа <xref:System.ServiceModel.Channels.IRequestChannel?displayProperty=nameWithType>. Прослушиватели каналов используются ожидающей входящих сообщений стороной, а фабрики каналов - стороной, которая инициирует связь для создания канала. Точно так же, как при работе с прослушивателями каналов, фабрики каналов можно использовать только после того, как они будут открыты.  
   
 #### <a name="creating-a-channel"></a>Создание канала  
+
  Затем, чтобы создать канал <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType>, необходимо вызвать метод <xref:System.ServiceModel.Channels.IRequestChannel>. Этот вызов принимает адрес конечной точки, с которой необходимо установить связь, используя вновь создаваемый канал. После создания канала необходимо вызвать для него функцию "Открыть", чтобы подготовить его к взаимодействию. В зависимости от особенностей транспорта подобный вызов функции "Открыть" может инициировать соединение с целевой конечной точкой или не выполнить никаких действий в сети.  
   
 #### <a name="sending-a-request-and-reading-the-reply"></a>Отправка запроса и чтение ответа  
+
  После открытия канала можно создать сообщение, воспользоваться методом запроса канала для отправки запроса и ожидать ответа. По возвращении этого метода приходит ответное сообщение, прочитав которое, можно узнать, каков был ответ конечной точки.  
   
 #### <a name="closing-objects"></a>Закрытие объектов  
+
  Во избежание утечки ресурсов следует закрывать объекты, используемые во взаимодействии, если они больше не требуются.  
   
  В следующем примере кода показан основной клиент, использующий фабрику каналов для отправки сообщения и чтения ответа.  
