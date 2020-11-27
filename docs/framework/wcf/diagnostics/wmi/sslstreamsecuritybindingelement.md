@@ -2,14 +2,15 @@
 title: SslStreamSecurityBindingElement
 ms.date: 03/30/2017
 ms.assetid: 18130d50-8996-4257-9c60-bc457f8654d8
-ms.openlocfilehash: 83929c46f57af35932dd8399d4f74b6a5b5debc3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: fcb6cb304c7435f8b954ed5aeea7179c7cb40be8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61956655"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282097"
 ---
 # <a name="sslstreamsecuritybindingelement"></a>SslStreamSecurityBindingElement
+
 SslStreamSecurityBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,15 +23,18 @@ class SslStreamSecurityBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс SslStreamSecurityBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс SslStreamSecurityBindingElement имеет следующее свойство:  
   
 ### <a name="requireclientcertificate"></a>RequireClientCertificate  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Определяет, требуется ли для этой привязки сертификат клиента.  
   
