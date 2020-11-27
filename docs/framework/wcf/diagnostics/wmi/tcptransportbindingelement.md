@@ -2,14 +2,15 @@
 title: TcpTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 33bbc1e5-44e4-4ee3-b7b5-801dc78956e4
-ms.openlocfilehash: 6d2717bc2d1d14e369af2b9c5a8c0affb67501d9
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6af85d62fffada95537494692b8694f42d7a2932
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61956550"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96290092"
 ---
 # <a name="tcptransportbindingelement"></a>TcpTransportBindingElement
+
 TcpTransportBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,36 +26,42 @@ class TcpTransportBindingElement : ConnectionOrientedTransportBindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс TcpTransportBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс TcpTransportBindingElement имеет следующие свойства.  
   
 ### <a name="connectionpoolsettings"></a>ConnectionPoolSettings  
+
  Тип данных: TcpConnectionPoolSettings  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Настройки пула подключений.  
   
 ### <a name="listenbacklog"></a>ListenBacklog  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимально допустимое количество ожидающих запросов на подключение в очереди.  
   
 ### <a name="portsharingenabled"></a>PortSharingEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, определяющее, включено ли совместное использование порта TCP для этого подключения.  
   
 ### <a name="teredoenabled"></a>TeredoEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, указывающее, используется ли Teredo (технология адресации клиентов, защищенных брандмауэром).  
   

@@ -2,14 +2,15 @@
 title: Направление транзакций в службы рабочего процесса и из них
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 17c05139b5977c47e20e888e436a311ba145018a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 8764f3c88fc978bc71ff993252b04fe58da4bbc9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597466"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96290352"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>Направление транзакций в службы рабочего процесса и из них
+
 Службы и клиенты рабочих процессов могут использоваться в транзакциях.  Чтобы сделать операцию службы частью внешней транзакции, поместите действие <xref:System.ServiceModel.Activities.Receive> в действие <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Все вызовы, выполненные действием <xref:System.ServiceModel.Activities.Send> или <xref:System.ServiceModel.Activities.SendReply> в области <xref:System.ServiceModel.Activities.TransactedReceiveScope>, также будут выполнены во внешней транзакции. Клиентское приложение рабочего процесса может создавать внешнюю транзакцию с помощью действия <xref:System.Activities.Statements.TransactionScope> и вызывать операции службы с помощью внешних транзакций. В данном разделе описывается создание службы рабочего процесса и клиента рабочего процесса, которые участвуют в транзакции.  
   
 > [!WARNING]
@@ -84,7 +85,7 @@ ms.locfileid: "84597466"
   
 3. Перетащите действие с именем <xref:System.Activities.Statements.WriteLine> в `Sequential Service`. Задайте значение для свойства текста `"Workflow Service starting ..."`, как показано в следующем примере.  
   
-     ! [Добавление действия WriteLine к действию последовательной службы (./медиа/фловинг-трансактионс-Инто-Анд-аут-оф-воркфлов-сервицес/адд-врителине-секуентиал-сервице.ЖПГ)  
+     ! [Добавление действия WriteLine к действию последовательной службы (./медиа/фловинг-трансактионс-Инто-Анд-аут-оф-воркфлов-сервицес/add-writeline-sequential-service.jpg)  
   
 4. Перетащите действие <xref:System.ServiceModel.Activities.TransactedReceiveScope> и поместите его после действия <xref:System.Activities.Statements.WriteLine>. Это <xref:System.ServiceModel.Activities.TransactedReceiveScope> действие можно найти в разделе « **Обмен сообщениями** » **панели элементов**. <xref:System.ServiceModel.Activities.TransactedReceiveScope>Действие состоит из двух разделов: **запрос** и **текст**. Раздел **запроса** содержит <xref:System.ServiceModel.Activities.Receive> действие. Раздел **Body** содержит действия, выполняемые в рамках транзакции после получения сообщения.  
   
@@ -99,7 +100,7 @@ ms.locfileid: "84597466"
   
 6. Перетащите <xref:System.ServiceModel.Activities.Receive> действие в раздел **запроса** <xref:System.ServiceModel.Activities.TransactedReceiveScope> действия. Задайте следующие свойства.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
     |CanCreateInstance|True (установите флажок)|  
     |OperationName|StartSample|  
@@ -130,7 +131,7 @@ ms.locfileid: "84597466"
   
 10. Перетащите действие <xref:System.Activities.Statements.Assign>, поместите его после действия `PrintTransactionInfo` и задайте свойства в соответствии со следующей таблицей.  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
     |Кому|replyMessage|  
     |Значение|"Service: Sending reply."|  
@@ -179,7 +180,7 @@ ms.locfileid: "84597466"
   
 8. Перетащите действие <xref:System.ServiceModel.Activities.Send>, поместите его после действия <xref:System.Activities.Statements.Assign> и задайте следующие свойства:  
   
-    |Свойство|Значение|  
+    |Свойство.|Значение|  
     |--------------|-----------|  
     |EndpointConfigurationName|workflowServiceEndpoint|  
     |OperationName|StartSample|  
@@ -209,7 +210,7 @@ ms.locfileid: "84597466"
   
      ![Завершенный рабочий процесс клиента](./media/flowing-transactions-into-and-out-of-workflow-services/client-complete-workflow.jpg)  
   
-16. Постройте решение.  
+16. Создайте решение.  
   
 ### <a name="create-the-service-application"></a>Создание приложения службы  
   
@@ -311,7 +312,7 @@ ms.locfileid: "84597466"
     }  
     ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Службы рабочего процесса](workflow-services.md)
 - [Общие сведения о транзакциях Windows Communication Foundation](transactions-overview.md)
