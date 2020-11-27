@@ -2,14 +2,15 @@
 title: BinaryMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: e2bb3cdd-3bbd-4bb5-85fe-570457500a66
-ms.openlocfilehash: e0551e7b4b05151490625912742aa6b26ef0216e
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: eb174d12731d7f1bc78f4d709cf043daf2346bd2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964103"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96269799"
 ---
 # <a name="binarymessageencodingbindingelement"></a>BinaryMessageEncodingBindingElement
+
 BinaryMessageEncodingBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -25,36 +26,42 @@ class BinaryMessageEncodingBindingElement : MessageEncodingBindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс BinaryMessageEncodingBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс BinaryMessageEncodingBindingElement имеет следующие свойства.  
   
 ## <a name="maxreadpoolsize"></a>MaxReadPoolSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Целое число, определяющее количество сообщений, которые можно читать одновременно, не выделяя памяти для новых средств чтения.  
   
 ## <a name="maxsessionsize"></a>MaxSessionSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее максимальный размер буфера, используемого для кодирования (в байтах).  
   
 ## <a name="maxwritepoolsize"></a>MaxWritePoolSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Целое число, обозначающее количество сообщений, которые можно отправлять одновременно, не выделяя памяти для новых средств записи.  
   
 ## <a name="readerquotas"></a>ReaderQuotas  
+
  Тип данных: XmlDictionaryReaderQuotas  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Квоты средств чтения.  
   
