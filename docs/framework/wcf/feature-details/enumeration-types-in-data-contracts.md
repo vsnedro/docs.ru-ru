@@ -8,17 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], enumeration types
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
-ms.openlocfilehash: ff3184a285e88d47d4545a38a6c74b2f209827fb
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 88bf2513435a9c00cf11a0681b32871992c8d2b2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247303"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276663"
 ---
 # <a name="enumeration-types-in-data-contracts"></a>Типы перечислений в контрактах данных
+
 Перечисления могут быть выражены в модели контракта данных. В этом разделе представлено несколько примеров, иллюстрирующих использование модели программирования.  
   
 ## <a name="enumeration-basics"></a>Основные сведения о перечислениях  
+
  Одним из способов использования типов перечисления в модели контрактов данных является применение к типу атрибута <xref:System.Runtime.Serialization.DataContractAttribute>. Затем необходимо применить атрибут <xref:System.Runtime.Serialization.EnumMemberAttribute> к каждому члену, включаемому в контракт данных.  
   
  В следующем примере показаны два класса. Первый использует перечисление, а второй - определяет его.  
@@ -31,6 +33,7 @@ ms.locfileid: "85247303"
  Свойства <xref:System.Runtime.Serialization.DataContractAttribute> (<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> и <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>) можно использовать в контрактах данных перечисления как обычно.  
   
 ### <a name="enumeration-member-values"></a>Значения членов перечисления  
+
  Как правило, контракт данных содержит имена членов перечисления, а не числовые значения. Однако при использовании модели контрактов данных, если принимающая сторона является клиентом WCF, экспортируемая схема сохраняет числовые значения. Обратите внимание, что при использовании [класса XmlSerializer](using-the-xmlserializer-class.md)это не так.  
   
  В предыдущем примере, если `condition` задано значение `Used` и данные сериализуются в формат XML, получается XML-код `<condition>Used</condition>`, а не `<condition>1</condition>`. Поэтому следующий контракт данных эквивалентен контракту данных `CarConditionEnum`.  
@@ -49,6 +52,7 @@ ms.locfileid: "85247303"
 - Во-вторых, члены данных перечисления, свойству <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> которых задано значение `false` (в этом случае перечисление с нулевым значением исключается из сериализованных данных).  
   
 ### <a name="customizing-enumeration-member-values"></a>Настройка значений членов перечисления  
+
  Настройка значения членов перечисления, входящего в состав контракта данных, осуществляется с помощью свойства <xref:System.Runtime.Serialization.EnumMemberAttribute.Value%2A> атрибута <xref:System.Runtime.Serialization.EnumMemberAttribute>.  
   
  Так, следующий контракт данных также эквивалентен контракту данных перечисления `CarConditionEnum`.  
@@ -59,6 +63,7 @@ ms.locfileid: "85247303"
  При сериализации значение `PreviouslyOwned` имеет представление XML `<condition>Used</condition>`.  
   
 ## <a name="simple-enumerations"></a>Простые перечисления  
+
  Кроме того, можно сериализовать типы перечислений, к которым не был применен атрибут <xref:System.Runtime.Serialization.DataContractAttribute>. Эти типы перечислений обрабатываются точно так же, как описано выше, за исключением того, что каждый член (к которому не применяется атрибут <xref:System.NonSerializedAttribute>) обрабатывается, как если бы атрибут <xref:System.Runtime.Serialization.EnumMemberAttribute> применялся. Например, следующее перечисление неявно содержит контракт данных, эквивалентный контракту, описанному в примере `CarConditionEnum`.  
   
  [!code-csharp[c_DataContractEnumerations#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs/source.cs#6)]
@@ -67,6 +72,7 @@ ms.locfileid: "85247303"
  Если не нужно настраивать имя и пространство имен контракта данных перечисления, а также значения членов перечисления, можно использовать простые перечисления.  
   
 #### <a name="notes-on-simple-enumerations"></a>Замечания о простых перечислениях  
+
  Применение атрибута <xref:System.Runtime.Serialization.EnumMemberAttribute> к простым перечислениям не дает результата.  
   
  Не имеет значения, применяется ли атрибут <xref:System.SerializableAttribute> к перечислению.  
@@ -74,6 +80,7 @@ ms.locfileid: "85247303"
  Тот факт, что класс <xref:System.Runtime.Serialization.DataContractSerializer> учитывает атрибут <xref:System.NonSerializedAttribute>, применимый к членам перечисления, отличает его от поведения классов <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> и <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. Оба сериализатора игнорируют атрибут <xref:System.NonSerializedAttribute>.  
   
 ## <a name="flag-enumerations"></a>Перечисления флагов  
+
  К перечислениям можно применить атрибут <xref:System.FlagsAttribute>. В этом случае можно организовать одновременную отправку или получение списка нулевых и других значений перечисления.  
   
  Для этого нужно применить атрибут <xref:System.Runtime.Serialization.DataContractAttribute> к перечислению флагов, а затем пометить атрибутом <xref:System.Runtime.Serialization.EnumMemberAttribute> все члены, являющиеся степенями двух. Обратите внимание, что использование перечисления флагов возможно только в том случае, если имеется непрерывная последовательность степеней двух (например, 1, 2, 4, 8, 16, 32, 64).  
@@ -87,6 +94,7 @@ ms.locfileid: "85247303"
 3. Если не удается выполнить предыдущие два шага и числовое значение ненулевое, создайте исключение <xref:System.Runtime.Serialization.SerializationException>. Если числовое значение равно нулю, отправьте пустой список.  
   
 ### <a name="example"></a>Пример  
+
  Следующий пример перечисления можно использовать в операции флага.  
   
  [!code-csharp[c_DataContractEnumerations#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs/source.cs#4)]

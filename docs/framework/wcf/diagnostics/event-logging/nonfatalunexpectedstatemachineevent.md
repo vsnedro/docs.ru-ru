@@ -2,24 +2,26 @@
 title: NonFatalUnexpectedStateMachineEvent
 ms.date: 03/30/2017
 ms.assetid: bfa37c10-cf1b-4325-b756-6ef200606510
-ms.openlocfilehash: 4be0f7719ef20d0ebb0a048d6a2ca9bf75b24d05
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a7dee2ae310602b0284b77b07272b7633989002c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797674"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96278600"
 ---
 # <a name="nonfatalunexpectedstatemachineevent"></a>NonFatalUnexpectedStateMachineEvent
-ИД: 148  
+
+Идентификатор: 148  
   
- "Уровень серьезности" — Ошибка  
+ Важность: ошибка  
   
- Категори трансактионбридже  
+ Категория: TransactionBridge  
   
 ## <a name="description"></a>Описание  
+
  Это событие указывает, что конечный автомат попытался обработать непредвиденное событие. Событие не считается неустранимым. В событии указаны идентификатор транзакции, конечный автомат, текущее состояние, журнал, имя события, сведения о событии, имя процесса и ИД процесса.  
   
 ## <a name="see-also"></a>См. также
 
-- [Ведение журнала событий](index.md)
+- [Ведение журналов событий](index.md)
 - [Общие справочные сведения о событиях](events-general-reference.md)

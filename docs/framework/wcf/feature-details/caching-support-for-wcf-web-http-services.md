@@ -2,12 +2,12 @@
 title: Поддержка кэширования для веб-служб HTTP WCF
 ms.date: 03/30/2017
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
-ms.openlocfilehash: 0445f0214f90873dad4241789db270c9b6f4a2f6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6ce3ceccde01879876960e0288cb600a3a20c204
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559419"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279341"
 ---
 # <a name="caching-support-for-wcf-web-http-services"></a>Поддержка кэширования для веб-служб HTTP WCF
 
@@ -167,4 +167,5 @@ public Customer GetCustomer(string id)
 ```  
   
 ## <a name="security-considerations"></a>Вопросы безопасности  
+
  Не должны кэшироваться ответы для запросов, требующих авторизации, так как авторизация не выполняется при получении ответа из кэша.  Кэширование таких ответов серьезно снижает безопасность.  Обычно запросы, требующие авторизации, содержат данные конкретного пользователя, в силу чего кэширование на стороне сервера просто не имеет смысла.  В таких ситуациях практичнее использовать кэширование на стороне клиента или вовсе не использовать кэширование.

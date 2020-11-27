@@ -6,14 +6,15 @@ helpviewer_keywords:
 - control patterns
 - UI Automation, control patterns
 ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
-ms.openlocfilehash: d0df24de4f8a877405dfecb6b0d245ff1caf0418
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: e7d32be1532be7d673d8df4fe3f76c3d83fea913
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163891"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96278067"
 ---
 # <a name="ui-automation-control-patterns-overview"></a>Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -25,7 +26,9 @@ ms.locfileid: "87163891"
 > Агрегатные элементы управления, построенные с помощью дочерних элементов управления, которые обеспечивают [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] для функциональности, предоставляемой родительским классом, должны реализовывать все шаблоны элементов управления, обычно связанные с каждым дочерним элементом управления. В свою очередь те же шаблоны элементов управления не обязательно должны быть реализованы дочерними элементами управления.  
   
 <a name="uiautomation_control_pattern_includes"></a>
+
 ## <a name="ui-automation-control-pattern-components"></a>Компоненты шаблонов элементов управления модели автоматизации пользовательского интерфейса  
+
  Шаблоны элементов управления поддерживают методы, свойства, события и связи, необходимые для определения дискретной части функциональности, доступной в элементе управления.  
   
 - Связь между элементом модели автоматизации пользовательского интерфейса и его родительским, дочерними и одноуровневыми элементами описывает структуру элемента в дереве [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] .  
@@ -37,7 +40,9 @@ ms.locfileid: "87163891"
  Шаблоны элементов управления связаны с [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] объектами модели COM. В модели COM вы можете запросить у объекта сведения о поддерживаемых им интерфейсах, а затем использовать эти интерфейсы, чтобы получить доступ к функциональности. В [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]клиенты автоматизации пользовательского интерфейса могут запрашивать у элемента управления, какие шаблоны элементов управления он поддерживает, а затем взаимодействовать с этим элементом управления посредством свойств, методов, событий и структур, предоставляемых поддерживаемыми шаблонами этого элемента управления. Например, для многострочного поля ввода поставщики автоматизации пользовательского интерфейса реализуют <xref:System.Windows.Automation.Provider.IScrollProvider>. Если клиенту известно, что <xref:System.Windows.Automation.AutomationElement> поддерживает шаблон элемента управления <xref:System.Windows.Automation.ScrollPattern> , он может использовать свойства, методы и события, предоставляемые данным шаблоном элемента управления, для работы с этим элементом управления или получения доступа к сведениям о нем.  
   
 <a name="uiautomation_control_pattern_client_provider"></a>
+
 ## <a name="ui-automation-providers-and-clients"></a>Поставщики и клиенты автоматизации пользовательского интерфейса  
+
  Поставщики автоматизации пользовательского интерфейса реализуют шаблоны элементов управления для предоставления соответствующего расширения функциональности для определенной части функциональных возможностей, поддерживаемых элементом управления.  
   
  Клиенты автоматизации пользовательского интерфейса получают доступ к методам и свойствам классов шаблонов элементов управления [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] и используют их для получения сведений о [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]или для работы с [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. Эти классы шаблонов элементов управления находятся в пространстве имен <xref:System.Windows.Automation> (например, в <xref:System.Windows.Automation.InvokePattern> или в <xref:System.Windows.Automation.SelectionPattern>).  
@@ -45,11 +50,15 @@ ms.locfileid: "87163891"
  Клиенты используют <xref:System.Windows.Automation.AutomationElement> методы (например, <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A?displayProperty=nameWithType> или <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A?displayProperty=nameWithType> ) или способы доступа среды CLR для доступа к [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] свойствам в шаблоне. Каждый класс шаблона элемента управления имеет элемент Field (например, <xref:System.Windows.Automation.InvokePattern.Pattern?displayProperty=nameWithType> или <xref:System.Windows.Automation.SelectionPattern.Pattern?displayProperty=nameWithType> ), который определяет шаблон элемента управления и может быть передан в качестве параметра в <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> или <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> для получения этого шаблона для <xref:System.Windows.Automation.AutomationElement> .  
   
 <a name="uiautomation_control_patterns_dynamic"></a>
+
 ## <a name="dynamic-control-patterns"></a>Динамические шаблоны элементов управления  
+
  Некоторые элементы управления не всегда поддерживают один и тот же набор шаблонов элементов управления. Шаблоны элементов управления считаются поддерживаемыми, если они доступны для клиента автоматизации пользовательского интерфейса. Например, многострочное поле ввода включает вертикальную прокрутку, только если оно содержит больше строк текста, чем может быть отображено в его видимой области. Прокрутка отключается при удалении достаточного объема текста, когда она становится ненужной. Например, шаблон элемента управления ScrollPattern динамически поддерживается в зависимости от текущего состояния элемента управления (какой объем текста находится в поле ввода).  
   
 <a name="Control_Pattern_Classes_and_Interfaces"></a>
+
 ## <a name="control-pattern-classes-and-interfaces"></a>Классы шаблонов элементов управления и интерфейсы  
+
  В следующей таблице описываются шаблоны элементов управления [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] . В этой таблице также приведены классы, используемые клиентами автоматизации пользовательского интерфейса для доступа к шаблонам элементов управления, а также интерфейсы, используемые поставщиками автоматизации пользовательского интерфейса для их реализации.  
   
 |Класс шаблона элемента управления|Интерфейс поставщика|Описание|  
@@ -73,7 +82,7 @@ ms.locfileid: "87163891"
 |<xref:System.Windows.Automation.ValuePattern>|<xref:System.Windows.Automation.Provider.IValueProvider>|Позволяет клиентам получать или задавать значения для элементов управления, которые не поддерживают диапазон значений. Например, это может быть элемент управления "Выбор даты и времени".|  
 |<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Предоставляет информацию, касающуюся окон, основной концепции операционной системы Microsoft Windows. Примерами элементов управления, являющихся окнами, являются окна приложений верхнего уровня (Microsoft Word, Microsoft Windows Explorer и т. д.), дочерние окна многодокументного интерфейса (MDI) и диалоговые окна.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Шаблоны элементов управления модели автоматизации пользовательского интерфейса для клиентов](ui-automation-control-patterns-for-clients.md)
 - [Сопоставление шаблона элемента управления для клиентов автоматизации пользовательского интерфейса](control-pattern-mapping-for-ui-automation-clients.md)

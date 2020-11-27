@@ -2,14 +2,15 @@
 title: Взаимодействие с веб-службами ASP.NET
 ms.date: 03/30/2017
 ms.assetid: 622422f8-6651-442f-b8be-e654a4aabcac
-ms.openlocfilehash: f38209ffe2161e58528a108b29e730665a65da37
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cca4e1b3da26d8026d41d0a7107432cdd2960545
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598870"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276637"
 ---
 # <a name="interoperability-with-aspnet-web-services"></a>Взаимодействие с веб-службами ASP.NET
+
 Взаимодействие между веб-службами ASP.NET и веб-службами Windows Communication Foundation (WCF) можно обеспечить, убедившись, что службы, реализованные с помощью обеих технологий, соответствуют спецификации WS-I Basic Profile 1,1. Веб-службы ASP.NET, которые соответствуют стандартному профилю WS-I 1,1, взаимодействуют с клиентами WCF с помощью предоставляемой системой привязки WCF <xref:System.ServiceModel.BasicHttpBinding> .  
   
  Используйте параметр ASP.NET 2,0, чтобы добавить <xref:System.Web.Services.WebService> <xref:System.Web.Services.WebMethodAttribute> атрибуты и в интерфейс, а не в класс, а также написать класс для реализации интерфейса, как показано в следующем образце кода.  
@@ -47,6 +48,7 @@ public class Service : IEcho
  Избегайте использования параметров проверки подлинности, предусмотренных в службах IIS. Клиенты WCF не поддерживают их. Если служба должна быть защищена, используйте параметры, предоставляемые WCF, поскольку эти параметры являются надежными и основаны на стандартных протоколах.  
   
 ## <a name="performance-impact-caused-by-loading-the-servicemodel-httpmodule"></a>Влияние загрузки модуля ServiceModel HttpModule на производительность  
+
  В платформе .NET Framework 3.0 модуль WCF `HttpModule` устанавливался в корневой файл Web.config таким образом, что любое приложение ASP.NET поддерживало WCF. Это может влиять на производительность, поэтому можно удалить `ServiceModel` из файла Web.config, как показано в следующем примере.  
   
 ```xml  
@@ -55,6 +57,6 @@ public class Service : IEcho
 </httpModules>
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Настройка службы WCF для взаимодействия с клиентами веб-службы ASP.NET](config-wcf-service-with-aspnet-web-service.md)

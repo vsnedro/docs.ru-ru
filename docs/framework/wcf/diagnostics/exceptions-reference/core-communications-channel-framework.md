@@ -2,15 +2,16 @@
 title: 'Основное взаимодействие: структура каналов'
 ms.date: 03/30/2017
 ms.assetid: 8caeb496-8d4c-477e-a476-994ece685a68
-ms.openlocfilehash: 3795c3c34d80c455d7158a707e5d1cb18e7c5a7b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 2be3fa056c95a45d16f50442ee86ffb92f97cb74
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61998807"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96277599"
 ---
 # <a name="core-communications-channel-framework"></a>Основное взаимодействие: структура каналов
-В этом разделе перечислены все исключения, вызываемые инфраструктуры канала Windows Communication Foundation (WCF).  
+
+В этом разделе перечислены все исключения, созданные платформой канала Windows Communication Foundation (WCF).  
   
 ## <a name="exception-list"></a>Список исключений  
   

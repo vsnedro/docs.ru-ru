@@ -6,19 +6,21 @@ helpviewer_keywords:
 - JIT tracing events [.NET Framework]
 - ETW, JIT tracing events (CLR)
 ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
-ms.openlocfilehash: 568fc942cd0e2188c530d2befb6260083757ec72
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: fd1fae8731ea927ab64d0c0df83b90d29289a0a0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474466"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96277972"
 ---
 # <a name="jit-tracing-etw-events"></a>События трассировки JIT-компилятора (трассировка событий Windows)
+
 Эти события собирают сведения, относящиеся к успешному или неудачному встраиванию кода JIT и вызовам с префиксом tail в JIT.
 
 ## <a name="jit-inlining-events"></a>События встраивания кода JIT
 
 ### <a name="methodjitinliningfailed-event"></a>Событие MethodJitInliningFailed
+
  В таблице ниже показаны ключевое слово и уровень. (Дополнительные сведения см. в разделе [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Ключевое слово для вызова события|Level|  
@@ -49,6 +51,7 @@ ms.locfileid: "86474466"
 |ClrInstanceID|win:UnicodeString|Уникальный идентификатор экземпляра CLR или CoreCLR.|  
   
 ### <a name="methodjitinliningsucceeded-event"></a>Событие MethodJitInliningSucceeded  
+
  В таблице ниже показаны ключевое слово и уровень.  
   
 |Ключевое слово для вызова события|Level|  
@@ -79,6 +82,7 @@ ms.locfileid: "86474466"
 ## <a name="jit-tail-call-events"></a>События вызовов с префиксом tail в JIT  
   
 ### <a name="methodjittailcallfailed-event"></a>Событие MethodJITTailCallFailed  
+
  В таблице ниже показаны ключевое слово и уровень.  
   
 |Ключевое слово для вызова события|Level|  
@@ -109,6 +113,7 @@ ms.locfileid: "86474466"
 |ClrInstanceID|win:UInt16|Уникальный идентификатор экземпляра CLR или CoreCLR.|  
   
 ### <a name="methodjittailcallsucceeded-event"></a>Событие MethodJITTailCallSucceeded  
+
  В таблице ниже показаны ключевое слово и уровень.  
   
 |Ключевое слово для вызова события|Level|  
@@ -138,6 +143,6 @@ ms.locfileid: "86474466"
 |TailCallType|win:UnicodeString|Тип вызова с префиксом tail.|  
 |ClrInstanceID|win:UInt16|Уникальный идентификатор экземпляра CLR или CoreCLR.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [События трассировки событий Windows в среде CLR](clr-etw-events.md)
