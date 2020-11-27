@@ -3,17 +3,19 @@ title: Безопасность транспорта
 description: Используйте эти ссылки, чтобы понять механизмы безопасности транспорта в WFC, способ их реализации и параметры.
 ms.date: 03/30/2017
 ms.assetid: 86c94153-e48d-4539-b6cf-cd8060582e7f
-ms.openlocfilehash: d39aa49906b79b9e12eecf04629080863719f986
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: cecb1ec263d993e9d669d73245fad1a49fe041fd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244755"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251715"
 ---
 # <a name="transport-security"></a>Безопасность транспорта
+
 Безопасность транспорта в Windows Communication Foundation (WCF) зависит от выбранной привязки. Транспорт, реализуемый привязкой, определяет фактический механизм безопасности. В подразделах данного раздела описываются реализуемые механизмы и их параметры.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения о безопасности транспорта](transport-security-overview.md)  
  Основные сведения о безопасности транспорта в WCF.  
   
@@ -30,6 +32,7 @@ ms.locfileid: "85244755"
  Пошаговое руководство по основам настройки порта компьютера с помощью сертификата X.509 для безопасности транспорта SSL.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -37,6 +40,7 @@ ms.locfileid: "85244755"
  <xref:System.ServiceModel.Security>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Защита служб и клиентов](securing-services-and-clients.md)  
   
 ## <a name="see-also"></a>См. также

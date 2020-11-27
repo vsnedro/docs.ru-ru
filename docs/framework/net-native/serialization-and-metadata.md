@@ -2,12 +2,12 @@
 title: Сериализация и метаданные
 ms.date: 03/30/2017
 ms.assetid: 619ecf1c-1ca5-4d66-8934-62fe7aad78c6
-ms.openlocfilehash: cc9adf0e6627ef3190e74fea5d4f0f3afd581811
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 739d482330103a2a79d0d640781b5516bbc15c01
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "81389220"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250792"
 ---
 # <a name="serialization-and-metadata"></a>Сериализация и метаданные
 
@@ -18,6 +18,7 @@ ms.locfileid: "81389220"
 - В библиотеке классов .NET Framework найдены сериализаторы, не основанные на отражении. Они могут потребовать внесения изменений в файл директив среды выполнения и обсуждаются в разделе [Сериализаторы Майкрософт](#Microsoft).  
   
 <a name="ThirdParty"></a>
+
 ## <a name="third-party-serializers"></a>Сериализаторы сторонних поставщиков
 
  Сериализаторы сторонних поставщиков, включая Newtonsoft.JSON, обычно основаны на отражении. Учитывая большой двоичный объект (BLOB) из сериализованных данных, поля данных назначаются конкретному типу путем поиска полей типа целевого объекта по имени. Как минимум, использование этих библиотек приводит к исключениям [MissingMetadataException](missingmetadataexception-class-net-native.md) для каждого объекта <xref:System.Type> при попытке сериализации или десериализации в коллекции `List<Type>`.  
@@ -31,6 +32,7 @@ ms.locfileid: "81389220"
  Сведения о синтаксисе, используемом в примере, см. в разделе [ \<Namespace> element](namespace-element-net-native.md).  
   
 <a name="Microsoft"></a>
+
 ## <a name="microsoft-serializers"></a>Сериализаторы Microsoft
 
  Несмотря на то, что классы <xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> и <xref:System.Xml.Serialization.XmlSerializer> не рассчитывают на отражение, они требуют создания кода на основе объекта для сериализации или десериализации. Перегруженные конструкторы для каждого сериализатора содержа параметр <xref:System.Type>, который задает тип для сериализации или десериализации. Способ указания этого типа в коде определяет действие, которое необходимо выполнить, как описано в следующих двух разделах.  
@@ -71,5 +73,5 @@ ms.locfileid: "81389220"
 
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
-- [\<Type>Дерев](type-element-net-native.md)
-- [\<Namespace>Дерев](namespace-element-net-native.md)
+- [\<Type> Элемент](type-element-net-native.md)
+- [\<Namespace> Элемент](namespace-element-net-native.md)

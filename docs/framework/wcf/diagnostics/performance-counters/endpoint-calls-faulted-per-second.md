@@ -2,17 +2,19 @@
 title: 'Конечная точка: количество сбоев вызовов в секунду'
 ms.date: 03/30/2017
 ms.assetid: 9840fc0a-0e4d-4638-96fd-40e3ab9e4667
-ms.openlocfilehash: 4be8f1b527ea72601b14173813f4f24e44685ce0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e69e37de9605afd4806fd628088948d0d69291da
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544171"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250168"
 ---
 # <a name="endpoint-calls-faulted-per-second"></a>Конечная точка: количество сбоев вызовов в секунду
+
 Имя счетчика: Calls Faulted Per Second.  
   
 ## <a name="description"></a>Описание  
+
  Количество вызовов, которые возвратили сбой данной конечной точке в секунду.  
   
  Этот счетчик имеет тип счетчика производительности [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), значение которого вычисляется с помощью следующей формулы.  

@@ -11,25 +11,27 @@ helpviewer_keywords:
 - UI Automation, registering provider assemblies
 - provider assemblies, registering
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
-ms.openlocfilehash: 034a109bb69c08883c0943b7b6ef69a397a8e7e1
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 1c6f7685b796b544925207a22679e6a4da455844
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168133"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250467"
 ---
 # <a name="register-a-client-side-provider-assembly"></a>Регистрация сборки поставщика на стороне клиента
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
  В этом разделе показано, как зарегистрировать библиотеку DLL, содержащую поставщики автоматизации пользовательского интерфейса на стороне клиента.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как зарегистрировать сборку, содержащую поставщик для окна консоли.  
   
  [!code-csharp[UIAClientSideProvider_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClientSideProvider_snip/CSharp/CSClientProgram.cs#102)]
  [!code-vb[UIAClientSideProvider_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/csclientprogram.vb#102)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание поставщика модели автоматизации пользовательского интерфейса на стороне клиента](create-a-client-side-ui-automation-provider.md)

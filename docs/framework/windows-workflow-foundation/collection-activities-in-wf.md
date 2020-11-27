@@ -2,15 +2,16 @@
 title: Действия коллекции в WF
 ms.date: 03/30/2017
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
-ms.openlocfilehash: 5935b569bc46a6f38a7158049336f1e57fd8b0e5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ff6bfdff7c05d996be66af508307f2087d8bfc76
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79143152"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250337"
 ---
 # <a name="collection-activities-in-wf"></a>Действия коллекции в WF
-Действия коллекции используются для работы с объектами коллекции в рамках рабочего процесса. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] имеет системные действия для добавления элементов в коллекцию и удаления из нее, тестирования на наличие элемента в коллекции и очистки коллекции. `ExistsInCollection`и `RemoveFromCollection` имеют <xref:System.Activities.OutArgument%601> тип, <xref:System.Boolean>который указывает на результат.  
+
+Действия коллекции используются для работы с объектами коллекции в рамках рабочего процесса. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] имеет системные действия для добавления элементов в коллекцию и удаления из нее, тестирования на наличие элемента в коллекции и очистки коллекции. `ExistsInCollection` и `RemoveFromCollection` имеют <xref:System.Activities.OutArgument%601> тип <xref:System.Boolean> , который указывает результат.  
   
 > [!IMPORTANT]
 > Если действие коллекции выполняется до задания базового объекта коллекции, то формируется исключение <xref:System.InvalidOperationException> и действие завершается ошибкой.  
@@ -25,6 +26,7 @@ ms.locfileid: "79143152"
 |<xref:System.Activities.Statements.RemoveFromCollection%601>|Удаляет элемент из указанной коллекции и возвращает значение `true`, если элемент успешно удален.|  
   
 ## <a name="using-collection-activities"></a>Использование действий коллекции  
+
  В следующем примере кода показано, как работать с коллекцией, объявленной в виде переменной рабочего процесса. Используемая коллекция является <xref:System.Collections.Generic.List%601> объектов <xref:System.String> по имени `fruitList`.  
   
 ```csharp  
@@ -425,6 +427,6 @@ Activity wf = new Sequence
 </Sequence>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Разработка рабочих процессов, действий и выражений с использованием императивного кода](authoring-workflows-activities-and-expressions-using-imperative-code.md)
+- [Разработка рабочих процессов, действий и выражений с помощью императивного кода](authoring-workflows-activities-and-expressions-using-imperative-code.md)

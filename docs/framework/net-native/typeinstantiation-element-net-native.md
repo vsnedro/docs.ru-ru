@@ -1,15 +1,16 @@
 ---
-title: <TypeInstantiation>Элемент (.NET Native)
+title: <TypeInstantiation> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-ms.openlocfilehash: 9069856b3d8739724d148b5eea5d4188c8b8b9e1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a1db497762b3dc8c135154086d72fb3ac92ff5a4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128681"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250753"
 ---
-# <a name="typeinstantiation-element-net-native"></a>\<TypeInstantiation>Элемент (.NET Native)
+# <a name="typeinstantiation-element-net-native"></a>\<TypeInstantiation> Элемент (.NET Native)
+
 Применяет политику отражения среды применения к сконструированному универсальному типу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -30,6 +31,7 @@ ms.locfileid: "73128681"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -51,19 +53,19 @@ ms.locfileid: "73128681"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*type_name*|Имя типа. Если этот `<TypeInstantiation>` элемент является дочерним по отношению к [\<Namespace>](namespace-element-net-native.md) элементу, [\<Type>](type-element-net-native.md) элементу или другому `<TypeInstantiation>` элементу, *TYPE_NAME* может указывать имя типа без его пространства имен. В противном случае атрибут *type_name* должен содержать полное имя типа. Имя типа не является внутренним. Например, для объекта <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> элемент `<TypeInstantiation>` может выглядеть следующим образом:<br /><br /> `\<TypeInstantiation Name=System.Collections.Generic.List Dynamic="Required Public" />`|  
   
 ## <a name="arguments-attribute"></a>Атрибут аргументов  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*type_argument*|Задает аргументы универсального типа. При наличии нескольких аргументов, они разделяются запятыми. Каждый аргумент должен содержать полное имя типа.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Значение для применения к этому типу политики для сконструированного универсального типа. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
@@ -92,11 +94,13 @@ ms.locfileid: "73128681"
 |`<TypeInstantiation>`|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Атрибуты отражения, сериализации и взаимодействия являются необязательными. Тем не менее, по крайней мере один должен присутствовать.  
   
  Если `<TypeInstantiation>` элемент является дочерним для [\<Assembly>](assembly-element-net-native.md) элемента, [\<Namespace>](namespace-element-net-native.md) или, [\<Type>](type-element-net-native.md) он переопределяет параметры политики, определенные родительским элементом. Если [\<Type>](type-element-net-native.md) элемент определяет соответствующее определение универсального типа, `<TypeInstantiation>` элемент переопределяет политику отражения среды выполнения только для экземпляров указанного сконструированного универсального типа.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере отражение используется для получения определения универсального типа из сконструированного объекта <xref:System.Collections.Generic.Dictionary%602>. Отражение используется также для отображения сведений об объектах<xref:System.Type>, представляющих сконструированные универсальные типы и определения универсальных типов. Переменная `b` в примере является <xref:Windows.UI.Xaml.Controls.TextBlock> элементом управления.  
   
  [!code-csharp[ProjectN_Reflection#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/makegenerictype1.cs#2)]  

@@ -1,15 +1,16 @@
 ---
-title: <Field>Элемент (.NET Native)
+title: <Field> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
-ms.openlocfilehash: 2a63b88c399a999cd00750dee1614352cea10e80
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e63dc293c42aa620b7f7ac15fc0454bc603b9dde
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128419"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251052"
 ---
-# <a name="field-element-net-native"></a>\<Field>Элемент (.NET Native)
+# <a name="field-element-net-native"></a>\<Field> Элемент (.NET Native)
+
 Применяет политику отражения среды выполнения к полю.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,6 +23,7 @@ ms.locfileid: "73128419"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -35,17 +37,18 @@ ms.locfileid: "73128419"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*method_name*|Имя поля. Тип поля определяется родительским [\<Type>](type-element-net-native.md) [\<TypeInstantiation>](typeinstantiation-element-net-native.md) элементом или.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый к этому типу политики для поля. Допустимые значения: `Auto`, `Excluded`, `Included` и `Required`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -56,6 +59,7 @@ ms.locfileid: "73128419"
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Если политика поля не определена явно, оно наследует политику среды выполнения своего родительского элемента.  
   
 ## <a name="see-also"></a>См. также

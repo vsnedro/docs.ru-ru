@@ -1,15 +1,16 @@
 ---
-title: <Assembly>Элемент (.NET Native)
+title: <Assembly> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
-ms.openlocfilehash: f3cf65b185b1db3289a0dbb785c2b91431951cc2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9d1556d8d414386d3f350a96396381bd7b66ffc5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79181079"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251130"
 ---
-# <a name="assembly-element-net-native"></a>\<Assembly>Элемент (.NET Native)
+# <a name="assembly-element-net-native"></a>\<Assembly> Элемент (.NET Native)
+
 Применяет политику отражения среды выполнения ко всем типам в указанной сборке.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "79181079"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -49,13 +51,13 @@ ms.locfileid: "79181079"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*assembly_name*|Простое имя сборки без расширения файла. Этот атрибут соответствует свойству <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType>. Например, имя сборки с именем Extensions.dll является «Extensions».<br /><br /> Можно также указать строковый литерал `*Application*` для применения политики ко всем сборкам в пакете приложения, вне зависимости от того, загружены ли эти сборки или нет. `*Application*` никогда не применяет политику к сборкам платформы .NET Framework.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр для этого типа политики для всех типов в сборке. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
@@ -75,6 +77,7 @@ ms.locfileid: "79181079"
 |[\<Library>](library-element-net-native.md)|Определяет сборку, содержащую типы и члены типов, метаданные которой доступны для отражения во время выполнения. [\<Library>](library-element-net-native.md)Элемент может иметь ноль или один `<Assembly>` элемент.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Элемент `<Assembly>` определяет политику среды выполнения для всех типов в сборке. Он отличается от [\<Library>](library-element-net-native.md) элемента, который указывает библиотеку, но зависит от его дочерних элементов для определения политики отражения среды выполнения. Элемент `<Assembly>` применяется ко всем типам в сборке, если они не переопределены дочерним элементом.  
   
  В следующем примере показано, как применять политику среды выполнения для всех типов сборки в пакете приложения путем назначения атрибуту `Name` значения "*Application\*". `<Assembly>`Элемент должен быть дочерним по отношению к [\<Application>](application-element-net-native.md) элементу.  

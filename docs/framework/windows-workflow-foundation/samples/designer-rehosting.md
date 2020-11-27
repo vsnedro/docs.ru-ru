@@ -2,14 +2,15 @@
 title: Повторное размещение конструктора
 ms.date: 03/30/2017
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
-ms.openlocfilehash: b72e3450799db40988c8b99e4db3707de330d8ad
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ce81f41764aa35b3173cca89cdb219ae9b21436d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182821"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251676"
 ---
 # <a name="designer-rehosting"></a>Повторное размещение конструктора
+
 Повторное размещение конструктора представляет собой обычный сценарий, предусматривающий размещение поля визуальной разработки рабочего процесса в пользовательском приложении. Наиболее привычным приложением размещения является Visual Studio, однако в целом ряде сценариев может быть полезным отображение конструктора рабочих процессов в приложении.  
   
 - Наблюдение за приложениями (позволяющее конечному пользователю визуально представить процесс, а также данные среды выполнения о процессе, такие как состояние, активное в настоящее время, агрегированные данные времени выполнения или другие сведения об экземпляре рабочего процесса).  
@@ -23,6 +24,7 @@ ms.locfileid: "79182821"
 - Кроме того, использование повторно размещенной области элементов и таблицы свойств.  
   
 ## <a name="rehosting-the-designer"></a>Повторное размещение конструктора  
+
  Этот образец показывает, как создать макет WPF, содержащий конструктор, который можно видеть в следующем макете таблицы (код панели инструментов опущен в целях экономии места). Обратите внимание на то, как именуются границы, которые содержат конструктор и таблицы свойств.  
   
 ```xaml  
@@ -40,7 +42,7 @@ ms.locfileid: "79182821"
 </Grid>  
 ```  
   
- Затем в образце создается конструктор и связываются его первичные представления <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> и <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> с соответствующим контейнером в пользовательском интерфейсе. В следующем примере есть несколько дополнительных строк кода, которые заслуживают более подробного объяснения. Вызов <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A> необходим для ассоциировать конструкторов активности по умолчанию для действий, поставляемых с помощью .NET Framework. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> вызывается для передачи элемента WF, подлежащего редактированию. Наконец, в область пользовательского интерфейса помещаются <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (первичное полотно) и <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (таблица свойств).  
+ Затем в образце создается конструктор и связываются его первичные представления <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> и <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> с соответствующим контейнером в пользовательском интерфейсе. В следующем примере есть несколько дополнительных строк кода, которые заслуживают более подробного объяснения. <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A>Вызов необходим для связи конструкторов действий по умолчанию для действий, поставляемых с .NET Framework. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> вызывается для передачи элемента WF, подлежащего редактированию. Наконец, в область пользовательского интерфейса помещаются <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (первичное полотно) и <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (таблица свойств).  
   
 ```csharp  
 protected override void OnInitialized(EventArgs e)  
@@ -58,6 +60,7 @@ protected override void OnInitialized(EventArgs e)
 ```  
   
 ## <a name="using-the-rehosted-toolbox"></a>Использование повторно размещенной области инструментов  
+
  В этом образце используется повторно размещенный элемент управления области инструментов декларативно в XAML. Обратите внимание на то, что в коде каждый может передать некоторый тип в конструктор <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper>.  
   
 ```xaml  
@@ -114,7 +117,7 @@ protected override void OnInitialized(EventArgs e)
   
 #### <a name="using-the-sample"></a>Использование образца  
   
-1. Откройте решение DesignerRehosting.sln в Visual Studio 2010.  
+1. Откройте решение Десигнеррехостинг. sln в Visual Studio 2010.  
   
 2. Чтобы скомпилировать и запустить приложение, нажмите клавишу F5.  
   
@@ -125,6 +128,6 @@ protected override void OnInitialized(EventArgs e)
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\DesignerRehosting\Basic`

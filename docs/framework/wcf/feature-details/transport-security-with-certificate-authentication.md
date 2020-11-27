@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 dev_langs:
 - csharp
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
-ms.openlocfilehash: 38f7d310be41455dd12460fdfa93d7e624d10c2a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: d3f2a10bb6b355e82f94b8cc793c93ce4634c7d2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545224"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251832"
 ---
 # <a name="transport-security-with-certificate-authentication"></a>Безопасность транспорта с проверкой подлинности с использованием сертификатов
 
@@ -33,6 +33,7 @@ ms.locfileid: "90545224"
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="configure-the-service"></a>Настройка службы  
+
  Поскольку в этом сценарии служба размещается в службах IIS, он настраивается с помощью файла web.config. В следующем примере содержимого файла web.config показано, как настроить в <xref:System.ServiceModel.WSHttpBinding> использование безопасности транспорта и учетных данных клиента X.509.  
   
 ```xml  
@@ -64,6 +65,7 @@ ms.locfileid: "90545224"
 ```  
   
 ## <a name="configure-the-client"></a>Настройка клиента  
+
  Настроить клиент можно в коде или в файле app.config. В следующем примере показано, как настроить клиент в коде.  
   
 ```csharp

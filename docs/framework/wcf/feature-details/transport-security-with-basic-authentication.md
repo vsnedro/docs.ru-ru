@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
-ms.openlocfilehash: 2add8c21ca8ade4b530e0e6b1b3c5bba66e100ab
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e821f8ed3996e9119c6f2c06ec6533c575bf75dd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556789"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251845"
 ---
 # <a name="transport-security-with-basic-authentication"></a>Безопасность транспорта с обычной проверкой подлинности
+
 На следующем рисунке показана служба Windows Communication Foundation (WCF) и клиент. Серверу требуется действительный сертификат X.509, который можно использовать для протокола SSL, а клиенты должны доверять сертификату сервера. Кроме того, у веб-службы уже имеется сертификат SSL, который можно использовать. Дополнительные сведения о включении обычной проверки подлинности для службы IIS (IIS) см. в разделе <https://docs.microsoft.com/iis/configuration/system.webserver/security/authentication/basicauthentication> .  
   
  ![Снимок экрана, показывающий безопасность транспорта с обычной проверкой подлинности.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
@@ -29,19 +30,22 @@ ms.locfileid: "90556789"
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономную службу, используя код без конфигурации.  
   
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
+
  В следующем примере кода показано, как создавать конечную точку службы, использующую имя и пароль пользователя в домене Windows для безопасности передачи. Обратите внимание, что для проверки подлинности клиента службе требуется сертификат X.509. Дополнительные сведения см. в статьях [Работа с сертификатами](working-with-certificates.md) и [инструкции. Настройка порта с помощью SSL-сертификата](how-to-configure-a-port-with-an-ssl-certificate.md).  
   
  [!code-csharp[C_SecurityScenarios#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#1)]
  [!code-vb[C_SecurityScenarios#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#1)]  
   
 ## <a name="configuration"></a>Конфигурация  
+
  Следующий код служит для настройки службы на использование обычной проверки подлинности с безопасностью на уровне транспорта.  
   
 ```xml  
@@ -73,6 +77,7 @@ ms.locfileid: "90556789"
 ## <a name="client"></a>Клиент  
   
 ### <a name="code"></a>Код  
+
  В следующем примере кода демонстрируется код клиента, который содержит имя и пароль пользователя. Обратите внимание, что пользователь должен предоставить действительные имя и пароль пользователя в Windows. В данном разделе не представлен код, возвращающий имя и пароль пользователя. Используйте диалоговое окно или другой интерфейс, чтобы запросить пользователя об этой информации.  
   
 > [!NOTE]
@@ -82,6 +87,7 @@ ms.locfileid: "90556789"
  [!code-vb[C_SecurityScenarios#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#2)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  В следующем примере кода показана конфигурация клиента.  
   
 > [!NOTE]

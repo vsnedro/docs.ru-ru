@@ -1,15 +1,16 @@
 ---
-title: <Property>Элемент (.NET Native)
+title: <Property> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
-ms.openlocfilehash: b9bc89804a872dddf1a56c2a3dadc9c3df4f5fd1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a0bdf95a1d1cadf7423f8c6595add13eda4d0d9a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128215"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250857"
 ---
-# <a name="property-element-net-native"></a>\<Property>Элемент (.NET Native)
+# <a name="property-element-net-native"></a>\<Property> Элемент (.NET Native)
+
 Применяет политику отражения среды выполнения к свойству.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,6 +23,7 @@ ms.locfileid: "73128215"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -35,17 +37,18 @@ ms.locfileid: "73128215"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*method_name*|Имя свойства. Тип свойства определяется родительским [\<Type>](type-element-net-native.md) [\<TypeInstantiation>](typeinstantiation-element-net-native.md) элементом или.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый к этому типу политики для свойства. Допустимые значения: `Auto`, `Excluded`, `Included` и `Required`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -56,9 +59,11 @@ ms.locfileid: "73128215"
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Если политика свойства не определена явно, оно наследует политику среды выполнения своего родительского элемента.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере используется отражение для создания экземпляров объекта `Book` и отображения значений его свойств. Исходный файл default.rd.xml для проекта выглядит следующим образом:  
   
 ```xml  
@@ -81,7 +86,7 @@ ms.locfileid: "73128215"
   
 - путем определения `Dynamic` политики для `Book` типа в его [\<Type>](type-element-net-native.md) элементе.  
   
-- Добавив вложенный [\<Property>](property-element-net-native.md) элемент для каждого свойства, для которого необходимо вызвать метод получения, как в следующем файле Default. Rd. XML.  
+- Путем добавления вложенного [\<Property>](property-element-net-native.md) элемента для каждого свойства, для которого необходимо вызвать метод получения, как в следующем default.rd.xml файле.  
   
     ```xml  
     <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - security [.NET Framework], method access
 - method access security
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-ms.openlocfilehash: f9b9bc00058aefc8f58facff43509e717967c2a7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52ae1eb4b6210403ce9c5aa96479809f885b0eba
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555722"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251221"
 ---
 # <a name="securing-method-access"></a>Безопасность доступа к методам
 
@@ -40,7 +40,7 @@ ms.locfileid: "90555722"
   
 - Потребовать, чтобы производные классы, переопределяющие некоторые методы, имели заданное удостоверение или разрешение.  
   
- В следующем примере показано, как ограничить доступ к открытому классу, требуя, чтобы вызывающие объекты были подписаны определенным строгим именем. В этом примере используется <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> с **требованием** строгого имени. Сведения о том, как подписать сборку строгим именем в зависимости от задач, см. в разделе [Создание и использование сборок со строгими именами](../../standard/assembly/create-use-strong-named.md).  
+ В следующем примере показано, как ограничить доступ к открытому классу, требуя, чтобы вызывающие объекты были подписаны определенным строгим именем. В этом примере используется <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> с **требованием** строгого имени. Сведения о том, как подписать сборку строгим именем, см. в разделе [Создание и использование Strong-Named сборок](../../standard/assembly/create-use-strong-named.md).  
   
 ```vb  
 <StrongNameIdentityPermissionAttribute(SecurityAction.Demand, PublicKey := "…hex…", Name := "App1", Version := "0.0.0.0")>  _  
@@ -57,6 +57,7 @@ public class Class1
 ```  
   
 ## <a name="excluding-classes-and-members-from-use-by-untrusted-code"></a>Исключение использования классов и членов ненадежным кодом  
+
  Используйте объявления, приведенные в этом разделе, чтобы запретить частично доверенному коду использовать определенные классы и методы, а также свойства и события. Применяя эти объявления к классу, вы применяете защиту ко всем его методам, свойствам и событиям. Однако для доступа к полям не применяется декларативная безопасность. Также обратите внимание, что связывание помогает защититься от только непосредственных вызывающих объектов, и не может пресечь отвлекающие атаки.  
   
 > [!NOTE]

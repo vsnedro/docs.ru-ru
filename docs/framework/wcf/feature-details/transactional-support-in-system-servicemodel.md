@@ -2,17 +2,19 @@
 title: Поддержка транзакций в System.ServiceModel
 ms.date: 03/30/2017
 ms.assetid: e7e54ed3-d1e5-4aa7-a653-1300c6b304eb
-ms.openlocfilehash: 9e9a16df52901cced67f135538d3724700140073
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1a5c7e6fc8c5e116764c6dd9813d7cccf600af8c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586043"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96251793"
 ---
 # <a name="transactional-support-in-systemservicemodel"></a>Поддержка транзакций в System.ServiceModel
+
 В подразделах этого раздела описываются функциональные возможности транзакций, предоставляемые Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Атрибуты транзакции ServiceModel](servicemodel-transaction-attributes.md)  
  Описывает два стандартных <xref:System.ServiceModel> атрибута, которые позволяют настроить поведение транзакций для службы WCF.  
   
