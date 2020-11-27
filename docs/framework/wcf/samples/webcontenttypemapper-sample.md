@@ -2,14 +2,15 @@
 title: Пример WebContentTypeMapper
 ms.date: 03/30/2017
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-ms.openlocfilehash: a51d03fab5c6499a0e9685e01a9bbace1c11f28a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 550e763d30a7fa503f6500dcaa8f9b77ea499bca
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594560"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283267"
 ---
 # <a name="webcontenttypemapper-sample"></a>Пример WebContentTypeMapper
+
 В этом примере показано, как сопоставлять новые типы содержимого с форматами текста сообщений Windows Communication Foundation (WCF).  
   
  <xref:System.ServiceModel.Description.WebHttpEndpoint>Элемент подключается к кодировщику веб-сообщений, который позволяет WCF принимать сообщения JSON, XML или необработанные двоичные данные в той же конечной точке. Кодировщик определяет формат тела сообщения, просмотрев тип содержимого HTTP запроса. В этом примере показан класс <xref:System.ServiceModel.Channels.WebContentTypeMapper>, который позволяет пользователю управлять сопоставлением типа содержимого и формата тела.  
@@ -58,7 +59,7 @@ public class JsonContentTypeMapper : WebContentTypeMapper
   
 2. Создайте решение Вебконтенттипемапперсампле. sln, как описано в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-3. Перейдите к `http://localhost/ServiceModelSamples/JCTMClientPage.htm` разделу (не открывайте жктмклиентпаже. htm в браузере из каталога проекта).  
+3. Перейдите к `http://localhost/ServiceModelSamples/JCTMClientPage.htm` (не открывайте JCTMClientPage.htm в браузере в каталоге проекта).  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  

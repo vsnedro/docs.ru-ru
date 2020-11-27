@@ -2,17 +2,19 @@
 title: Пример федерации
 ms.date: 03/30/2017
 ms.assetid: 7e9da0ca-e925-4644-aa96-8bfaf649d4bb
-ms.openlocfilehash: 00cb9a13a01687fb41f1d5c09f277d582f706e3b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 22d405620a77285ebe7a68fc151a8e8611df9b4d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594690"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283280"
 ---
 # <a name="federation-sample"></a>Пример федерации
+
 В данном примере демонстрируется федеративная безопасность.  
   
 ## <a name="sample-details"></a>Подробные сведения об образце  
+
  Windows Communication Foundation (WCF) обеспечивает поддержку развертывания федеративных архитектур безопасности с помощью `wsFederationHttpBinding` . Привязка `wsFederationHttpBinding` обеспечивает наличие безопасной и надежной привязки, которая поддерживает возможность взаимодействия. Данная привязка предполагает использование протокола HTTP в качестве базового транспортного механизма для взаимодействия типа "запрос-ответ" и текста/XML в качестве формата подключения для кодирования. Дополнительные сведения о Федерации в WCF см. в разделе [Федерация](../feature-details/federation.md).  
   
  Сценарий состоит из 4 частей:  

@@ -6,17 +6,19 @@ helpviewer_keywords:
 - .NET Framework, dynamic programming
 - dynamic programming [.NET Framework]
 ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
-ms.openlocfilehash: dd0a46dc9e0c2228c97ba995d9d1acda206e95f9
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 07b8bb05767ca37982ea86abdb5b3bfadb60e491
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474011"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259932"
 ---
 # <a name="dynamic-programming-in-the-net-framework"></a>Динамическое программирование в .NET Framework
+
 Этот раздел документации содержит сведения о динамическом программировании на платформе .NET Framework.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Отражение](reflection.md)  
  Описание использования отражения для работы с объектами во время выполнения.  
   
@@ -30,4 +32,5 @@ ms.locfileid: "86474011"
  Описание способов создания и компиляции динамического исходного кода.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Руководство по разработке](../development-guide.md)  

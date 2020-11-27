@@ -2,24 +2,26 @@
 title: FailFast
 ms.date: 03/30/2017
 ms.assetid: 4fc4e476-997b-4166-90af-8d164f775924
-ms.openlocfilehash: c5ddebedd7f3467c34c73beb801807ba1feb398f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 3dfcd5a3eccb54f6c28ce8ac189a76abdec6fe93
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797864"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96284359"
 ---
 # <a name="failfast"></a>FailFast
-ИД: 102  
+
+Идентификатор: 102  
   
- "Уровень серьезности" — Ошибка  
+ Важность: ошибка  
   
- Категори Трассировка  
+ Категория: Tracing  
   
 ## <a name="description"></a>Описание  
+
  Запущен режим FailFast. В событии указаны сообщение, трассировка стека, имя процесса и ИД процесса.  
   
 ## <a name="see-also"></a>См. также
 
-- [Ведение журнала событий](index.md)
+- [Ведение журналов событий](index.md)
 - [Общие справочные сведения о событиях](events-general-reference.md)

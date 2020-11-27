@@ -8,17 +8,19 @@ helpviewer_keywords:
 - ETW, CLR keywords
 - ETW, CLR levels
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
-ms.openlocfilehash: dfbe047640a3a640cf37adeea6fa3656cfd9ec6d
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 31426ae0589954d4388ba6d40f156c3eea9a8989
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309681"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283891"
 ---
 # <a name="clr-etw-keywords-and-levels"></a>Ключевые слова и уровни среды CLR (трассировка событий Windows)
+
 События трассировки событий Windows можно отфильтровать по категории и уровню. [Ключевые слова событий трассировки событий Windows в среде CLR](#clr-etw-keywords) обеспечивают фильтрацию событий по категории. Они используются в различных сочетаниях для поставщиков среды выполнения и очистки. [Уровни событий](#etw-event-levels) определяются флагами.  
   
 ## <a name="clr-etw-keywords"></a>Ключевые слова трассировки событий Windows в среде CLR  
+
  Ключевые слова служат флагами, которые можно объединять для формирования значений. На практике при использовании программ командной строки вместо имен ключевых слов применяются их шестнадцатеричные значения.  
   
  В следующих таблицах представлено описание ключевых слов:  
@@ -32,7 +34,9 @@ ms.locfileid: "86309681"
 - [Сочетания ключевых слов для разрешения символов для поставщика очистки](#rundown_combo)  
   
 <a name="runtime"></a>
+
 ### <a name="clr-etw-runtime-keywords"></a>Ключевые слова среды выполнения трассировки событий Windows в среде CLR  
+
  В таблице ниже приведены ключевые слова среды выполнения трассировки событий Windows среды CLR, их значения и предназначение.  
   
 |Имя ключевого слова среды выполнения|Значение|Назначение|  
@@ -55,7 +59,9 @@ ms.locfileid: "86309681"
 |`StackKeyword`|0x40000000|Включает сбор [событий трассировки стека](stack-etw-event.md)среды CLR.|  
   
 <a name="rundown"></a>
+
 ### <a name="clr-etw-rundown-keywords"></a>Ключевые слова среды очистки трассировки событий Windows в среде CLR  
+
  В таблице ниже приведены ключевые слова среды очистки трассировки событий Windows среды CLR, их значения и предназначение.  
   
 |Имя ключевого слова очистки|Значение|Назначение|  
@@ -71,30 +77,33 @@ ms.locfileid: "86309681"
 |`PerfTrackKeyWord`|0x2000000|Включает сбор событий `ModuleDCStart`, `ModuleDCEnd`, `ModuleRangeDCStart`и `ModuleRangeDCEnd` .|
   
 <a name="runtime_combo"></a>
+
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-runtime-provider"></a>Сочетания ключевых слов для разрешения символов для поставщика среды выполнения  
   
 |Ключевые слова и флаги|События загрузки и выгрузки доменов приложений, сборок, модулей|События загрузки и выгрузки методов (кроме динамических событий)|События загрузки и уничтожения динамических методов|  
 |------------------------|--------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------|  
 |`LoaderKeyword`|События загрузки и выгрузки.|Нет.|Нет.|  
-|`JITKeyword`<br /><br /> (+ `StartEnumerationKeyword` ничего не добавляет)|Нет.|События загрузки.|События загрузки и выгрузки.|  
-|`JITKeyword` +<br /><br /> `EndEnumerationKeyword`|Нет.|События загрузки и выгрузки.|События загрузки и выгрузки.|  
+|`JITKeyword`<br /><br /> (+ `StartEnumerationKeyword` ничего не добавляет)|Отсутствует.|События загрузки.|События загрузки и выгрузки.|  
+|`JITKeyword` +<br /><br /> `EndEnumerationKeyword`|Отсутствует.|События загрузки и выгрузки.|События загрузки и выгрузки.|  
 |`NGenKeyword`|Нет.|Нет.|Неприменимо.|  
-|`NGenKeyword` +<br /><br /> `StartEnumerationKeyword`|Нет.|События загрузки.|Неприменимо.|  
-|`NGenKeyword` +<br /><br /> `EndEnumerationKeyword`|Нет.|События выгрузки.|Неприменимо.|  
+|`NGenKeyword` +<br /><br /> `StartEnumerationKeyword`|Отсутствует.|События загрузки.|Неприменимо.|  
+|`NGenKeyword` +<br /><br /> `EndEnumerationKeyword`|Отсутствует.|События выгрузки.|Неприменимо.|  
   
 <a name="rundown_combo"></a>
+
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-rundown-provider"></a>Сочетания ключевых слов для разрешения символов для поставщика очистки  
   
 |Ключевые слова и флаги|События DCStart и DCEnd для доменов приложений, сборок, модулей|События DCStart и DCEnd методов (включая события динамических методов)|  
 |------------------------|----------------------------------------------------------------|----------------------------------------------------------------------|  
-|`LoaderRundownKeyword` +<br /><br /> `StartRundownKeyword`|События`DCStart` .|Нет.|  
+|`LoaderRundownKeyword` +<br /><br /> `StartRundownKeyword`|События`DCStart` .|Отсутствует.|  
 |`LoaderRundownKeyword` +<br /><br /> `EndRundownKeyword`|События`DCEnd` .|Нет.|  
 |`JITKeyword` +<br /><br /> `StartRundownKeyword`|Нет.|События`DCStart` .|  
-|`JITKeyword` +<br /><br /> `EndRundownKeyword`|Нет.|События`DCEnd` .|  
-|`NGenKeyword` +<br /><br /> `StartRundownKeyword`|Нет.|События`DCStart` .|  
-|`NGenKeyword` +<br /><br /> `EndRundownKeyword`|Нет.|События`DCEnd` .|  
+|`JITKeyword` +<br /><br /> `EndRundownKeyword`|Отсутствует.|События`DCEnd` .|  
+|`NGenKeyword` +<br /><br /> `StartRundownKeyword`|Отсутствует.|События`DCStart` .|  
+|`NGenKeyword` +<br /><br /> `EndRundownKeyword`|Отсутствует.|События`DCEnd` .|  
 
 ## <a name="etw-event-levels"></a>Уровни событий трассировки событий Windows  
+
  События трассировки событий Windows также можно фильтровать по уровням. Если задан уровень 0x5, создаются события всех уровней, включая 0x5 и более низкие (события относятся к категориям, включенным с помощью ключевых слов). Если задан уровень 0x2, создаются только события, относящиеся к уровню 0x2 и более низким.  
   
  Уровни имеют следующие значения:  
@@ -111,7 +120,7 @@ ms.locfileid: "86309681"
   
  0x0 — LogAlways (регистрировать всегда).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Поставщики ETW среды CLR](clr-etw-providers.md)
 - [События трассировки событий Windows в среде CLR](clr-etw-events.md)

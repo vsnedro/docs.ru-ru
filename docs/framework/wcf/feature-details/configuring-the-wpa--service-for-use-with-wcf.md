@@ -2,14 +2,15 @@
 title: Настройка службы активации процессов Windows для использования с Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
-ms.openlocfilehash: 7dccfea990afff1d2aacd5e9714472e733684c33
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2f84afba72e5260a44726dcc812401da5475679f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556607"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96284099"
 ---
 # <a name="configuring-the-windows-process-activation-service-for-use-with-windows-communication-foundation"></a>Настройка службы активации процессов Windows для использования с Windows Communication Foundation
+
 В этом разделе описываются шаги, необходимые для настройки службы активации Windows (также известной как WAS) в Windows Vista для размещения служб Windows Communication Foundation (WCF), не передающих сетевые протоколы HTTP. Настройка предполагает следующие шаги.  
   
 - Установите (или подтвердите установку) необходимые компоненты активации WCF.  
@@ -21,6 +22,7 @@ ms.locfileid: "90556607"
 - Создайте службу WCF, которая предоставляет конечную точку, отличную от HTTP.  
   
 ## <a name="configuring-a-site-with-non-http-bindings"></a>Настройка узла с привязками протоколов, отличных от HTTP  
+
  Для использования в сочетании со службой WAS привязки к протоколу, отличному от HTTP, необходимо добавить привязку узла в конфигурацию WAS. Хранилищем конфигурации для службы WAS является файл applicationHost.config, находящийся в каталоге %windir%\system32\inetsrv\config. Это хранилище конфигурации используется и службой WAS, и службами IIS 7.0.  
   
  applicationHost.config представляет собой текстовый XML-файл, который можно открыть в любом стандартном текстовом редакторе, таком как Блокнот. Однако предпочтительным способом добавления привязок сайта, отличных от HTTP, является средство настройки командной строки IIS 7,0 (appcmd.exe).  
@@ -46,6 +48,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
 ```  
   
 ## <a name="enabling-an-application-to-use-non-http-protocols"></a>Разрешение приложению использовать протоколы, отличные от HTTP  
+
  Вы можете включить или отключить отдельную сеть, протоколсат уровень приложения. Следующая команда иллюстрирует включение и протокола HTTP, и протокола net.tcp для приложения, выполняющегося на сайте `Default Web Site`.  
   
 ```console  
@@ -92,6 +95,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
  Если появилось это сообщение об ошибке, убедитесь, что установлены и правильно настроены службы WAS для активации по протоколу, отличному от HTTP. Дополнительные сведения см. [в разделе инструкции. Установка и настройка компонентов активации WCF](how-to-install-and-configure-wcf-activation-components.md).  
   
 ## <a name="building-a-wcf-service-that-uses-was-for-non-http-activation"></a>Построение службы WCF, использующей WAS для активации по протоколу, отличному от HTTP  
+
  После выполнения действий по установке и настройке WAS (см. раздел [как установить и настроить компоненты активации WCF](how-to-install-and-configure-wcf-activation-components.md)) Настройка службы для использования была выполнена для активации аналогично настройке службы, размещенной в службах IIS.  
   
  Подробные инструкции по созданию активированной службы WCF см. в разделе [как разместить службу WCF в WAS](how-to-host-a-wcf-service-in-was.md).  

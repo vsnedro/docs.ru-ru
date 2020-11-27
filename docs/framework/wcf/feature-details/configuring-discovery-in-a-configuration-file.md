@@ -2,17 +2,19 @@
 title: Настройка обнаружения в файле конфигурации
 ms.date: 03/30/2017
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
-ms.openlocfilehash: 59eaecb7e34b9105bc694f444d98c13c036d552f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1ffd5cb2e884b6eeae292326cb0dc1586995ba38
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597557"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96284190"
 ---
 # <a name="configuring-discovery-in-a-configuration-file"></a>Настройка обнаружения в файле конфигурации
+
 При обнаружении используются четыре основные группы параметров конфигурации. В этом разделе кратко описана каждая из них, а также приведены примеры их настройки. В конце каждого раздела имеется ссылка на более подробную документацию о каждой области.  
   
 ## <a name="behavior-configuration"></a>Конфигурация поведения  
+
  При обнаружении используется поведение служб и конечных точек. Поведение <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> позволяет обнаруживать все конечные точки службы, а также указывать конечные точки объявлений.  В следующем примере показано, как добавить поведение <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> и указать конечную точку объявления.  
   
 ```xml  
@@ -144,6 +146,7 @@ ms.locfileid: "84597557"
  Дополнительные сведения о <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> и <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> см. в [обзоре обнаружения WCF](wcf-discovery-overview.md).  
   
 ## <a name="binding-element-configuration"></a>Настройка элемента привязки  
+
  Настройка элемента привязки представляет наибольший интерес на стороне клиента. С ее помощью можно указать критерии поиска, используемые для обнаружения служб из клиентского приложения WCF.  Следующий пример создает пользовательскую привязку с каналом <xref:System.ServiceModel.Discovery.DiscoveryClient> и указывает критерии поиска, включая тип и область. Кроме того, он также указывает значения для свойств <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> и <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A>.  
   
 ```xml  
@@ -186,6 +189,7 @@ ms.locfileid: "84597557"
  Дополнительные сведения о критериях поиска см. в разделе [Обнаружение Find и FindCriteria](discovery-find-and-findcriteria.md). Дополнительные сведения об элементах обнаружения и привязки см. в разделе [Обзор обнаружения WCF](wcf-discovery-overview.md) .  
   
 ## <a name="standard-endpoint-configuration"></a>Конфигурация стандартной конечной точки  
+
  Стандартные конечные точки - точки, имеющие значения по умолчанию одного или нескольких свойств (адрес, привязка или контракт), либо одно или несколько свойств, значения которых нельзя изменить. Платформа .NET 4 поставляется с тремя стандартными конечными точками, связанными с обнаружением: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> и <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  Конечная точка <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> ― это стандартная конечная точка, настроенная для операций обнаружения через привязку для многоадресной рассылки. Конечная точка <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> ― это стандартная конечная точка, настроенная для отправки сообщений с объявлениями по привязке UDP. Конечная точка <xref:System.ServiceModel.Discovery.DynamicEndpoint> ― это стандартная конечная точка, которая использует обнаружение для динамического обнаружения адреса конечной точки во время выполнения.  Стандартные привязки указываются с помощью элемента <`endpoint`>, который содержит атрибут Kind, заданный типом стандартной конечной точки для добавления. В следующем примере демонстрируется, как добавить <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> и <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>.  
   
 ```xml  
