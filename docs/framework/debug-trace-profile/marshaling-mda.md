@@ -8,28 +8,33 @@ helpviewer_keywords:
 - managed debugging assistants (MDAs), marshaling
 - MDAs (managed debugging assistants), marshaling
 ms.assetid: 5433b1f8-b0e5-40c9-a49a-0e5bd213363d
-ms.openlocfilehash: 77811c526d1770b91b14aa1199dfc7b3177e6c59
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: afe54a2104e05f8fad57c7cbba4988b013aff761
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051159"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96271178"
 ---
-# <a name="marshaling-mda"></a><span data-ttu-id="15a3b-103">MDA маршалинг</span><span class="sxs-lookup"><span data-stu-id="15a3b-103">marshaling MDA</span></span>
-<span data-ttu-id="15a3b-104">Помощник по отладке управляемого кода (MDA) `marshaling`активируется, когда среда CLR задает сведения о маршалинге для параметра метода или поля структуры.</span><span class="sxs-lookup"><span data-stu-id="15a3b-104">The `marshaling` managed debugging assistant (MDA) is activated when the CLR sets up marshaling information for a method parameter or a field of a structure.</span></span> <span data-ttu-id="15a3b-105">Данный MDA не работает для сборок JIT-компиляции.</span><span class="sxs-lookup"><span data-stu-id="15a3b-105">This MDA does not work for JIT-compiled assemblies.</span></span>  
+# <a name="marshaling-mda"></a><span data-ttu-id="bed7a-103">MDA маршалинг</span><span class="sxs-lookup"><span data-stu-id="bed7a-103">marshaling MDA</span></span>
+
+<span data-ttu-id="bed7a-104">Помощник по отладке управляемого кода (MDA) `marshaling`активируется, когда среда CLR задает сведения о маршалинге для параметра метода или поля структуры.</span><span class="sxs-lookup"><span data-stu-id="bed7a-104">The `marshaling` managed debugging assistant (MDA) is activated when the CLR sets up marshaling information for a method parameter or a field of a structure.</span></span> <span data-ttu-id="bed7a-105">Данный MDA не работает для сборок JIT-компиляции.</span><span class="sxs-lookup"><span data-stu-id="bed7a-105">This MDA does not work for JIT-compiled assemblies.</span></span>  
   
-## <a name="effect-on-the-runtime"></a><span data-ttu-id="15a3b-106">Влияние на среду выполнения</span><span class="sxs-lookup"><span data-stu-id="15a3b-106">Effect on the Runtime</span></span>  
- <span data-ttu-id="15a3b-107">Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.</span><span class="sxs-lookup"><span data-stu-id="15a3b-107">This MDA has no effect on the CLR.</span></span>  
+## <a name="effect-on-the-runtime"></a><span data-ttu-id="bed7a-106">Влияние на среду выполнения</span><span class="sxs-lookup"><span data-stu-id="bed7a-106">Effect on the Runtime</span></span>  
+
+ <span data-ttu-id="bed7a-107">Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.</span><span class="sxs-lookup"><span data-stu-id="bed7a-107">This MDA has no effect on the CLR.</span></span>  
   
-## <a name="output"></a><span data-ttu-id="15a3b-108">Выходные данные</span><span class="sxs-lookup"><span data-stu-id="15a3b-108">Output</span></span>  
- <span data-ttu-id="15a3b-109">MDA отображает тип параметра или поля в управляемом и неуправляемом контекстах, а также структуру или метод, содержащий этот тип.</span><span class="sxs-lookup"><span data-stu-id="15a3b-109">The MDA displays the type of the parameter or field in the managed and unmanaged contexts, and the structure or method containing the type.</span></span>  <span data-ttu-id="15a3b-110">Ниже представлен пример выходных данных для поля.</span><span class="sxs-lookup"><span data-stu-id="15a3b-110">The following is an example of the output for a field:</span></span>  
+## <a name="output"></a><span data-ttu-id="bed7a-108">Выходные данные</span><span class="sxs-lookup"><span data-stu-id="bed7a-108">Output</span></span>  
+
+ <span data-ttu-id="bed7a-109">MDA отображает тип параметра или поля в управляемом и неуправляемом контекстах, а также структуру или метод, содержащий этот тип.</span><span class="sxs-lookup"><span data-stu-id="bed7a-109">The MDA displays the type of the parameter or field in the managed and unmanaged contexts, and the structure or method containing the type.</span></span>  <span data-ttu-id="bed7a-110">Ниже представлен пример выходных данных для поля.</span><span class="sxs-lookup"><span data-stu-id="bed7a-110">The following is an example of the output for a field:</span></span>  
   
 ```output
 Marshaling from 'Char' to 'ANSI char'  
 name="assembly!Namespace.Class::myChar  
 ```  
   
-## <a name="configuration"></a><span data-ttu-id="15a3b-111">Параметр Configuration</span><span class="sxs-lookup"><span data-stu-id="15a3b-111">Configuration</span></span>  
- <span data-ttu-id="15a3b-112">Конфигурация MDA позволяет фильтровать сообщенные сведения о маршалинге на основе связанных полей или имен методов.</span><span class="sxs-lookup"><span data-stu-id="15a3b-112">The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.</span></span>  <span data-ttu-id="15a3b-113">В следующем примере показано использование элементов `methodFilter`, `fieldFilter` и `match` для определения фильтров.</span><span class="sxs-lookup"><span data-stu-id="15a3b-113">The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.</span></span>  <span data-ttu-id="15a3b-114">Присвоение `name` атрибуту значения звездочки ( \* ) будет соответствовать всем параметрам.</span><span class="sxs-lookup"><span data-stu-id="15a3b-114">Setting the `name` attribute to an asterisk (\*) will match everything.</span></span>  
+## <a name="configuration"></a><span data-ttu-id="bed7a-111">Конфигурация</span><span class="sxs-lookup"><span data-stu-id="bed7a-111">Configuration</span></span>  
+
+ <span data-ttu-id="bed7a-112">Конфигурация MDA позволяет фильтровать сообщенные сведения о маршалинге на основе связанных полей или имен методов.</span><span class="sxs-lookup"><span data-stu-id="bed7a-112">The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.</span></span>  <span data-ttu-id="bed7a-113">В следующем примере показано использование элементов `methodFilter`, `fieldFilter` и `match` для определения фильтров.</span><span class="sxs-lookup"><span data-stu-id="bed7a-113">The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.</span></span>  <span data-ttu-id="bed7a-114">Присвоение `name` атрибуту значения звездочки ( \* ) будет соответствовать всем параметрам.</span><span class="sxs-lookup"><span data-stu-id="bed7a-114">Setting the `name` attribute to an asterisk (\*) will match everything.</span></span>  
   
 ```xml  
 <mdaConfig>  
@@ -48,8 +53,8 @@ name="assembly!Namespace.Class::myChar
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="15a3b-115">См. также</span><span class="sxs-lookup"><span data-stu-id="15a3b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bed7a-115">См. также</span><span class="sxs-lookup"><span data-stu-id="bed7a-115">See also</span></span>
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [<span data-ttu-id="15a3b-116">Диагностика ошибок посредством управляемых помощников по отладке</span><span class="sxs-lookup"><span data-stu-id="15a3b-116">Diagnosing Errors with Managed Debugging Assistants</span></span>](diagnosing-errors-with-managed-debugging-assistants.md)
-- [<span data-ttu-id="15a3b-117">Маршалинг взаимодействия</span><span class="sxs-lookup"><span data-stu-id="15a3b-117">Interop Marshaling</span></span>](../interop/interop-marshaling.md)
+- [<span data-ttu-id="bed7a-116">Диагностика ошибок посредством управляемых помощников по отладке</span><span class="sxs-lookup"><span data-stu-id="bed7a-116">Diagnosing Errors with Managed Debugging Assistants</span></span>](diagnosing-errors-with-managed-debugging-assistants.md)
+- [<span data-ttu-id="bed7a-117">Маршалинг взаимодействия</span><span class="sxs-lookup"><span data-stu-id="bed7a-117">Interop Marshaling</span></span>](../interop/interop-marshaling.md)
