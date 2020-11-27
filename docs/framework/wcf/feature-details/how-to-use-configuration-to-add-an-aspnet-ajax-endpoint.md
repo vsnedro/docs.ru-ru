@@ -2,13 +2,15 @@
 title: Практическое руководство. Использование конфигурации для добавления конечной точки ASP.NET AJAX
 ms.date: 03/30/2017
 ms.assetid: 7cd0099e-dc3a-47e4-a38c-6e10f997f6ea
-ms.openlocfilehash: 97f8174161068f2c72b6bd2bc4e8a3044f5bccdd
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: b229173381eed3e821a9ad9e1a6639912521731c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051666"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268434"
 ---
 # <a name="how-to-use-configuration-to-add-an-aspnet-ajax-endpoint"></a>Практическое руководство. Использование конфигурации для добавления конечной точки ASP.NET AJAX
+
 Windows Communication Foundation (WCF) позволяет создать службу, которая делает доступной конечную точку ASP.NET с поддержкой AJAX, которую можно вызывать из JavaScript на веб-сайте клиента. Чтобы создать такую конечную точку, можно использовать файл конфигурации, как и для всех остальных конечных точек Windows Communication Foundation (WCF), или использовать метод, который не требует каких-либо элементов конфигурации. В этом разделе показано выполнение этой задачи с помощью файла конфигурации.  
   
  Часть процедуры, которая позволяет сделать конечную точку службы доступной для ASP.NET AJAX, состоит в настройке конечной точки для использования <xref:System.ServiceModel.WebHttpBinding> и для добавления [\<enableWebScript>](../../configure-apps/file-schema/wcf/enablewebscript.md) поведения конечной точки. После настройки конечной точки действия по внедрению и размещению службы похожи на те, которые используются любой службой WCF. Рабочий пример см. в разделе [Служба AJAX, использующая HTTP POST](../samples/ajax-service-using-http-post.md).  

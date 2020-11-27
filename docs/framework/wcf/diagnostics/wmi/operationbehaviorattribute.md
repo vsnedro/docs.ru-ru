@@ -2,14 +2,15 @@
 title: OperationBehaviorAttribute
 ms.date: 03/30/2017
 ms.assetid: 8c9b0755-9e83-411f-bdcb-61a586022797
-ms.openlocfilehash: 79601308c66abe43dd5a7f72bd2a05b9d2346c2b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 76cc619aed4ba2b944a8d11dc454a40368a4068c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963050"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96269084"
 ---
 # <a name="operationbehaviorattribute"></a>OperationBehaviorAttribute
+
 OperationBehaviorAttribute  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,43 +27,50 @@ class OperationBehaviorAttribute : Behavior
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс OperationBehaviorAttribute не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс OperationBehaviorAttribute имеет следующие свойства.  
   
 ### <a name="autodisposeparameters"></a>AutoDisposeParameters  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Состояние возможности автоматического удаления для параметров.  
   
 ### <a name="impersonation"></a>Олицетворение  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает уровень олицетворения вызывающей стороны, который поддерживает операция.  
   
 ### <a name="releaseinstancemode"></a>ReleaseInstanceMode  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, когда удалять объект в процессе вызова операции.  
   
 ### <a name="transactionautocomplete"></a>TransactionAutoComplete  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, следует ли автоматически фиксировать текущую транзакцию при отсутствии необработанных исключений.  
   
 ### <a name="transactionscoperequired"></a>TransactionScopeRequired  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Указывает, требует ли операция транзакции.  
   

@@ -2,14 +2,15 @@
 title: MsmqIntegrationBindingElement
 ms.date: 03/30/2017
 ms.assetid: eaaa7651-e6e5-4fae-9dad-c1867d38b586
-ms.openlocfilehash: 12d910a0b3b4931c869b9e209912f2f0c96130f7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 236589e2a691efe1fec7b43a758ca4455f72deb3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963336"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267849"
 ---
 # <a name="msmqintegrationbindingelement"></a>MsmqIntegrationBindingElement
+
 MsmqIntegrationBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -22,15 +23,18 @@ class MsmqIntegrationBindingElement : MsmqBindingElementBase
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс MsmqIntegrationBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс MsmqIntegrationBindingElement имеет следующее свойство:  
   
 ### <a name="serializationformat"></a>SerializationFormat  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Формат, используемый привязкой для сериализации сообщений.  
   

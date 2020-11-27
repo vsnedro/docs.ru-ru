@@ -2,14 +2,15 @@
 title: Страница справки веб-службы HTTP WCF
 ms.date: 03/30/2017
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.openlocfilehash: ef42457dea8bfe12a3e5054c5eacdf5a2964fdc7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fe6b22c6ebd637d3aa2bcd3744cb6b73e71c9482
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600170"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266939"
 ---
 # <a name="wcf-web-http-service-help-page"></a>Страница справки веб-службы HTTP WCF
+
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] предоставляет автоматическую справочную страницу для службы WCF WEB HTTP. На этой странице справки приводится описание каждой операции, форматов запроса и ответа, а также схем. По умолчанию эта функциональная возможность отключена. При просмотре пользователем веб-службы HTTP WCF и добавлении "/Help" в конец URL-адреса, например `http://localhost:8000/Customers/Help` , отображается страница справки, подобная приведенной ниже.  
   
  ![Откроется браузер с открытой страницей справки WCF.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page.gif)  
@@ -19,6 +20,7 @@ ms.locfileid: "84600170"
  ![Браузер с подробными сведениями о странице справки WCF для метода Customers Open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
   
 ## <a name="using-the-wcf-web-http-help-page"></a>Использование справочной страницы службы WCF Web HTTP  
+
  На справочной странице службы WCF WEB HTTP дано краткое описание для каждой из представленных операций при условии, что оно было определено в <xref:System.ComponentModel.DescriptionAttribute>. Этот атрибут принимает строку, которая содержит краткое описание операции, для которой он применен. Например, в следующем коде показано, как задать краткое описание с помощью <xref:System.ComponentModel.DescriptionAttribute>.  
   
 ```csharp
@@ -59,6 +61,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
  Справочная страница построена на основе формата XHTML, где разметка определяет различные части страницы. Это позволяет клиентам производить программный доступ к странице через объект <xref:System.Xml.Linq.XElement> или другие API-интерфейсы XLinq.  
   
 ## <a name="schemas-used-in-the-wcf-web-http-service-help-page"></a>Схемы, используемые на справочной странице веб-службы WCF Web HTTP  
+
  На справочной странице службы WCF Web HTTP используются следующие схемы.  
   
 ```xml  

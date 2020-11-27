@@ -2,17 +2,19 @@
 title: Форматирование веб-HTTP WCF
 ms.date: 03/30/2017
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
-ms.openlocfilehash: 011ff4f2e667268fac1aa2d82c0a2c4ffefc8dde
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e9346cd1bb3798ad0beac5e9e28a8536007d897b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585562"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266913"
 ---
 # <a name="wcf-web-http-formatting"></a>Форматирование веб-HTTP WCF
+
 Модель веб-программирования HTTP WCF позволяет динамически определять лучший формат возвращаемого ответа операции службы. Поддерживается два метода для определения формата: автоматический и явный.  
   
 ## <a name="automatic-formatting"></a>Автоматическое форматирование  
+
  Если выбран этот метод, автоматическое форматирование выбирает наилучший формат возврата ответа. Наилучший формат определяется путем проверки в следующем порядке.  
   
 1. Типы носителей в заголовке Accept сообщения запроса.  
@@ -91,6 +93,7 @@ try
 ```  
   
 ## <a name="explicit-formatting"></a>Явное форматирование  
+
  Как следует из названия, в явном форматировании разработчик определяет наилучший формат для использования внутри кода операции. Если лучшим форматом является формат XML или JSON, разработчик устанавливает <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format%2A> в формат <xref:System.ServiceModel.Web.WebMessageFormat.Xml> либо <xref:System.ServiceModel.Web.WebMessageFormat.Json>. Если свойство <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format%2A> явно не задано, то используется формат операции по умолчанию.  
   
  В следующем примере для определения формата, который нужно использовать, проверяется параметр строки запроса формата. Если этот параметр был указан, формат операции задается свойством <xref:System.ServiceModel.Web.OutgoingWebResponseContext.Format%2A>.  
@@ -163,7 +166,7 @@ public class Service : IService
 }  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.UriTemplate>
 - <xref:System.UriTemplateMatch>

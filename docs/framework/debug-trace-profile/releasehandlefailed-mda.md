@@ -11,20 +11,23 @@ helpviewer_keywords:
 - SafeHandle class, run-time errors
 - MDAs (managed debugging assistants), handles
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
-ms.openlocfilehash: 167a304b4571aa35f758a2054caf6ae1c60a3c60
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: b337a7283e961d0fae2b51d92a21fa77f7249250
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803642"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267134"
 ---
 # <a name="releasehandlefailed-mda"></a>releaseHandleFailed MDA
+
 Помощник по отладке управляемого кода (MDA) `releaseHandleFailed` активируется для уведомления разработчиков, когда метод <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> класса, производного от <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle>, возвращает значение `false`.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Утечки памяти или ресурсов  Если метод <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> класса, производного от <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle> завершается с ошибкой, то ресурс, инкапсулированный этим классом, может быть не освобожден или не очищен.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  Пользователи должны предоставить реализацию метода <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A>, если они создают классы, производные от <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle>; таким образом, эти обстоятельства характерны для отдельных ресурсов. Однако действуют следующие требования.  
   
 - Типы <xref:System.Runtime.InteropServices.SafeHandle> и <xref:System.Runtime.InteropServices.CriticalHandle> представляют оболочки важных ресурсов процессов. Утечка памяти может со временем сделать процесс непригодным для использования.  
@@ -33,7 +36,8 @@ ms.locfileid: "85803642"
   
 - Все ошибки, возникающие при выполнении метода <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> и препятствующие освобождению ресурса, представляют ошибку в реализации самого метода <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A>. Программист должен убедиться, что контракт будет выполнен, даже если этот код вызывает код, созданный другим разработчиком для выполнения своих функций.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Код, использующий конкретный тип <xref:System.Runtime.InteropServices.SafeHandle> (или <xref:System.Runtime.InteropServices.CriticalHandle>), вызвавший уведомление MDA, следует пересмотреть, найти места, где необработанное значение дескриптора извлекается из <xref:System.Runtime.InteropServices.SafeHandle> и копируется в другом месте. Это обычная причина сбоев в реализации <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle>, так как использование необработанного значения дескриптора далее не отслеживается средой выполнения. Если копия необработанного дескриптора впоследствии закрывается, это может привести к сбою последующего вызова метода <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A>, поскольку попытка закрытия выполняется в том же дескрипторе, который теперь является недопустимым.  
   
  Существует несколько путей, в которых может возникнуть дублирование неверного дескриптора.  
@@ -49,9 +53,11 @@ ms.locfileid: "85803642"
 - Обратите внимание, что некоторые типы собственных дескрипторов, например все дескрипторы Win32, которые могут быть освобождены с помощью функции `CloseHandle`, совместно используют одно пространство имен дескрипторов. Ошибочное освобождение одного типа дескриптора может вызвать проблемы с другим. Например, случайное закрытие дескриптора события Win32 дважды может привести к вероятному преждевременному закрытию несвязанного дескриптора файла. Это происходит, когда дескриптор освобождается и значение дескриптора становится доступным для использования в целях отслеживания другого ресурса, возможно другого типа. Если это происходит и приводит к ошибочному повторному освобождению, дескриптор несвязанного потока может стать недействительным.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот помощник отладки управляемого кода не оказывает никакого влияния на среду CLR.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Сообщение, указывающее, что <xref:System.Runtime.InteropServices.SafeHandle> или <xref:System.Runtime.InteropServices.CriticalHandle> не удалось должным образом освободить дескриптор. Пример:  
   
 ```output
@@ -62,7 +68,7 @@ another means (such as extracting the handle using DangerousGetHandle
 and closing it directly or building another SafeHandle around it."  
 ```  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  
@@ -73,6 +79,7 @@ and closing it directly or building another SafeHandle around it."
 ```  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен пример кода, который может активировать MDA `releaseHandleFailed`.  
   
 ```csharp

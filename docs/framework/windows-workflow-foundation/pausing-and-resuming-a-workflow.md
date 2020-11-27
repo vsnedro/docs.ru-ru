@@ -2,17 +2,19 @@
 title: Приостановление и восстановление рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 11f38339-79c7-4295-b610-24a7223bbf6d
-ms.openlocfilehash: dc6bdfe7cc10837fb8721ab12490d244d5ec1ca0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e8d1806c6d2c8e72b4e3a8b18bff669fcd0e0538
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79142970"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268544"
 ---
 # <a name="pausing-and-resuming-a-workflow"></a>Приостановление и восстановление рабочего процесса
+
 Выполнение рабочих процессов будет приостанавливаться и возобновляться при выполнении действий с закладками и блокировками, такими как <xref:System.Activities.Statements.Delay>. Кроме того, рабочие потоки можно будет явным образом приостановить, выгрузить и возобновить с использованием механизма сохраняемости.  
   
 ## <a name="pausing-a-workflow"></a>Приостановка рабочего процесса  
+
  Чтобы приостановить рабочий процесс, пользуйтесь вызовом <xref:System.Activities.WorkflowApplication.Unload%2A>.  Этот метод отправляет запрос на сохранение и выгрузку рабочего процесса. При этом, если рабочий процесс не будет выгружен в течение 30 секунд, будет вызвано исключение <xref:System.TimeoutException>.  
   
 ```csharp  
@@ -28,6 +30,7 @@ catch (TimeoutException e)
 ```  
   
 ## <a name="resuming-a-workflow"></a>Возобновление рабочих процессов  
+
  Чтобы возобновить выполнение ранее приостановленного и выгруженного рабочего процесса, пользуйтесь вызовом <xref:System.Activities.WorkflowApplication.Load%2A>. Этот метод загружает рабочий процесс из хранилища сохраняемости в память.  
   
 ```csharp  
@@ -37,6 +40,7 @@ application.Load(id);
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем образце кода описывается приостановка и возобновление выполнения рабочего процесса с помощью механизма сохраняемости.  
   
 ```csharp  

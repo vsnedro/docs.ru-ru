@@ -11,14 +11,15 @@ helpviewer_keywords:
 - WSSecurityTokenSerializer class
 - SecurityToken class
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
-ms.openlocfilehash: a95d663c2669186fcb3eb1fb2f0c426ade945f1c
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: e0d80fe2433d894ef1f9e110e9090701dc305d8e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247537"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266757"
 ---
 # <a name="how-to-create-a-custom-token"></a>Практическое руководство. Создание пользовательского токена
+
 В этом разделе показано, как создать пользовательский маркер безопасности с помощью класса <xref:System.IdentityModel.Tokens.SecurityToken> и интегрировать его с поставщиком пользовательских маркеров безопасности и структурой проверки подлинности. Полный пример кода см. в примере [пользовательского маркера](../samples/custom-token.md) .  
   
  *Маркер безопасности* — это, по сути, элемент XML, который используется платформой безопасности Windows Communication Foundation (WCF) для представления утверждений об отправителе в сообщении SOAP. Безопасность WCF предоставляет различные маркеры для режимов проверки подлинности, предоставляемых системой. Примером является маркер безопасности X.509, представленный классом <xref:System.IdentityModel.Tokens.X509SecurityToken>, или маркер безопасности Username, представленный классом <xref:System.IdentityModel.Tokens.UserNameSecurityToken>.  
@@ -32,6 +33,7 @@ ms.locfileid: "85247537"
  Сведения о дополнительных классах, представляющих маркеры безопасности, см. в описании пространства имен <xref:System.IdentityModel.Tokens>.  
   
 ## <a name="procedures"></a>Процедуры  
+
  Клиентскому приложению необходимо предоставить возможность указания данных кредитной карты для инфраструктуры безопасности. Эти данные делаются доступными приложению с помощью класса учетных данных клиента. Первым шагом является создание класса для представления данных кредитной карты для пользовательских учетных данных клиента.  
   
 #### <a name="to-create-a-class-that-represents-credit-card-information-inside-client-credentials"></a>Создание класса, представляющего данные кредитной карты в учетных данных клиента  
@@ -90,11 +92,11 @@ ms.locfileid: "85247537"
   
 2. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.CanReadTokenCore%28System.Xml.XmlReader%29>, основанный на объекте <xref:System.Xml.XmlReader> для чтения потока XML. Этот метод возвращает значение `true`, если реализация сериализатора может десериализовать маркер безопасности при наличии его текущего элемента. В этом примере данный метод проверяет, задано ли для XML-элемента средства чтения XML правильное имя и пространство имен. В случае отрицательного результата для обработки XML-элемента вызывается базовая реализация данного метода.  
   
-3. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> . Этот метод считывает содержимое XML маркера безопасности и создает для него представление, хранимое в памяти. Если метод не распознает XML-элемент, на котором основано переданное средство чтения XML, он вызывает реализацию базового класса для обработки предоставленных системой типов маркеров.  
+3. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.ReadTokenCore%28System.Xml.XmlReader%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29>. Этот метод считывает содержимое XML маркера безопасности и создает для него представление, хранимое в памяти. Если метод не распознает XML-элемент, на котором основано переданное средство чтения XML, он вызывает реализацию базового класса для обработки предоставленных системой типов маркеров.  
   
-4. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29> . Этот метод возвращает значение `true`, если он может преобразовать хранимое в памяти представление маркера (переданное в качестве аргумента) в XML-представление. Если преобразование невозможно, он вызывает реализацию базового класса.  
+4. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.CanWriteTokenCore%28System.IdentityModel.Tokens.SecurityToken%29>. Этот метод возвращает значение `true`, если он может преобразовать хранимое в памяти представление маркера (переданное в качестве аргумента) в XML-представление. Если преобразование невозможно, он вызывает реализацию базового класса.  
   
-5. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29> . Этот метод преобразует хранимое в памяти представление маркера безопасности в XML-представление. Если преобразование невозможно, он вызывает реализацию базового класса.  
+5. Переопределите метод <xref:System.ServiceModel.Security.WSSecurityTokenSerializer.WriteTokenCore%28System.Xml.XmlWriter%2CSystem.IdentityModel.Tokens.SecurityToken%29>. Этот метод преобразует хранимое в памяти представление маркера безопасности в XML-представление. Если преобразование невозможно, он вызывает реализацию базового класса.  
   
      [!code-csharp[c_CustomToken#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtoken/cs/source.cs#3)]
      [!code-vb[c_CustomToken#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtoken/vb/source.vb#3)]  

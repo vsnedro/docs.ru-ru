@@ -2,14 +2,15 @@
 title: Практическое руководство. Задание учетных данных безопасности канала
 ms.date: 03/30/2017
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
-ms.openlocfilehash: 45a13460ce94cbacae0465fede4b455a2833ce81
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9236985ef461044e480847003d9d249b7e232783
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596946"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266770"
 ---
 # <a name="how-to-specify-channel-security-credentials"></a>Практическое руководство. Задание учетных данных безопасности канала
+
 Моникер службы Windows Communication Foundation (WCF) позволяет приложениям COM вызывать службы WCF. Большинству служб WCF требуется, чтобы клиент указал учетные данные для проверки подлинности и авторизации. При вызове службы WCF из клиента WCF можно указать эти учетные данные в управляемом коде или в файле конфигурации приложения. При вызове службы WCF из приложения COM можно использовать <xref:System.ServiceModel.ComIntegration.IChannelCredentials> интерфейс для указания учетных данных. В данном разделе описаны различные способы указания учетных данных с использованием интерфейса <xref:System.ServiceModel.ComIntegration.IChannelCredentials>.  
   
 > [!NOTE]
@@ -25,7 +26,7 @@ ms.locfileid: "84596946"
   
 3. Добавьте `[ServiceBehavior(Namespace="http://Microsoft.ServiceModel.Samples")]` в `ICalculator` Определение интерфейса.  
   
-4. Добавьте `bindingNamespace="http://Microsoft.ServiceModel.Samples"` в тег Endpoint в файле App. config для службы.  
+4. Добавьте в `bindingNamespace="http://Microsoft.ServiceModel.Samples"` тег Endpoint в App.config для службы.  
   
 5. Создайте образец безопасности сообщений и запустите файл Service.exe. Используйте Internet Explorer и перейдите к URI службы (), `http://localhost:8000/ServiceModelSamples/Service` чтобы убедиться, что служба работает.  
   
@@ -131,7 +132,7 @@ ms.locfileid: "84596946"
   
      Дополнительные сведения о параметрах для этого метода см. в разделе <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Федерация](federation.md)
 - [Практическое руководство. Настройка учетных данных службы федерации](how-to-configure-credentials-on-a-federation-service.md)

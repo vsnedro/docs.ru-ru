@@ -2,25 +2,28 @@
 title: Конечные точки SOAP и HTTP
 ms.date: 03/30/2017
 ms.assetid: e3c8be75-9dda-4afa-89b6-a82cb3b73cf8
-ms.openlocfilehash: fee1df86026716941f65dccca15d437ae917770b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9e7ce32a0f5a2f37294db57659e2b30b364bef24
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600949"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268265"
 ---
 # <a name="soap-and-http-endpoints"></a>Конечные точки SOAP и HTTP
+
 В этом образце показано, как реализовать службу на основе RPC и предоставить ее в формате SOAP и формате "Plain Old XML" (POX) с помощью модели веб-программирования WCF. Дополнительные сведения о привязке HTTP для службы см. в разделе образец [основной службы HTTP](basic-http-service.md) . В данном образце акцент сделан на особенностях предоставления одной и той же службы через протокол SOAP и HTTP с использованием разных привязок.  
   
 ## <a name="demonstrates"></a>Что демонстрирует  
+
  Предоставление доступа к службе RPC по протоколу SOAP и HTTP с помощью WCF.  
   
-## <a name="discussion"></a>Обсуждение  
+## <a name="discussion"></a>Разговор  
+
  Этот пример состоит из двух компонентов: проекта веб-приложения (службы), который содержит службу WCF, и консольного приложения (клиента), которое вызывает операции службы с помощью привязок SOAP и HTTP.  
   
  Служба WCF предоставляет 2 операции — `GetData` и `PutData` — это строка, передаваемая в качестве входных данных. Операции службы помечены атрибутами <xref:System.ServiceModel.Web.WebGetAttribute> и <xref:System.ServiceModel.Web.WebInvokeAttribute>. Эти атрибуты управляют HTTP-проекцией операций. Кроме того, они помечены атрибутом <xref:System.ServiceModel.OperationContractAttribute>, который позволяет предоставлять их через привязки протокола SOAP. Метод службы `PutData` вызывает исключение <xref:System.ServiceModel.Web.WebFaultException>, которое отправляется обратно через HTTP с использованием кода состояния HTTP, а через SOAP как ошибка SOAP.  
   
- Файл Web. config настраивает службу WCF с 3 конечными точками:  
+ Файл Web.config настраивает службу WCF с 3 конечными точками:  
   
 - Конечная точка ~/service.svc/mex предоставляет доступ к метаданным службы клиентам на основе SOAP.  
   

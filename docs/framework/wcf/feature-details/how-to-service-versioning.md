@@ -2,14 +2,15 @@
 title: 'Как выполнить: Управление версиями службы'
 ms.date: 03/30/2017
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
-ms.openlocfilehash: beb7de63d300ad7986bfc59093006b074b9456ba
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ec0f776f296e5ab24f4f628a204b04aa8d903d39
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586940"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268473"
 ---
 # <a name="how-to-service-versioning"></a>Как выполнить: Управление версиями службы
+
 В этом разделе описаны основные шаги, которые необходимо выполнить для создания конфигурации маршрутизации сообщений к разным версиям одной и той же службы. В этом примере сообщения направляются в две разные версии службы калькулятора: `roundingCalc` (v1) и `regularCalc` (v2). Обе реализации поддерживают одинаковые операции, однако старая версия службы `roundingCalc`, прежде чем вернуть результаты вычислений, округляет их до ближайшего целого числа. Клиентское приложение должно указать необходимость использования более новой версии службы `regularCalc`.  
   
 > [!WARNING]
@@ -131,6 +132,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     ```  
   
 ## <a name="example"></a>Пример  
+
  Далее приведен полный листинг файла конфигурации.  
   
 ```xml  
@@ -214,6 +216,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
 ```  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный листинг клиентского приложения.  
   
 ```csharp  
@@ -324,6 +327,6 @@ namespace Microsoft.Samples.AdvancedFilters
 }  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Службы маршрутизации](../samples/routing-services.md)

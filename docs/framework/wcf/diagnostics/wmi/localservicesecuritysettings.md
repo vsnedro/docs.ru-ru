@@ -2,14 +2,15 @@
 title: LocalServiceSecuritySettings
 ms.date: 03/30/2017
 ms.assetid: 490aa0e5-5242-4f8d-b505-5ec6287633b4
-ms.openlocfilehash: 15304630eb8a14e01d4815ddddc84cd32796fdcf
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: eecf2b0bf459fd14236c550e393149553183b3ac
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963453"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267927"
 ---
 # <a name="localservicesecuritysettings"></a>LocalServiceSecuritySettings
+
 LocalServiceSecuritySettings  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -35,106 +36,122 @@ class LocalServiceSecuritySettings
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс LocalServiceSecuritySettings не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс LocalServiceSecuritySettings имеет следующие свойства.  
   
 ### <a name="detectreplays"></a>DetectReplays  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, показывающее, будут ли атаки с повторением обнаружены и ликвидированы на канале автоматически.  
   
 ### <a name="inactivitytimeout"></a>InactivityTimeout  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное количество ожидающих безопасных сеансов, поддерживаемое службой.  
   
 ### <a name="issuedcookielifetime"></a>IssuedCookieLifetime  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, которое задает время существования для всех новых файлов безопасности cookie.  
   
 ### <a name="maxcachedcookies"></a>MaxCachedCookies  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное количество файлов cookie, которые могут быть кэшированы.  
   
 ### <a name="maxclockskew"></a>MaxClockSkew  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, указывающее максимальный разброс времени между системными часами взаимодействующих сторон.  
   
 ### <a name="maxpendingsessions"></a>MaxPendingSessions  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальное количество ожидающих подключений к службе.  
   
 ### <a name="maxstatefulnegotiations"></a>MaxStatefulNegotiations  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Количество одновременно выполняемых согласований режима безопасности.  
   
 ### <a name="negotiationtimeout"></a>NegotiationTimeout  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, указывающее максимальную длительность этапа согласования режима безопасности между сервером и клиентом.  
   
 ### <a name="reconnecttransportonfailure"></a>ReconnectTransportOnFailure  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Логическое значение, указывающее, будут ли подключения, использующие режим обмена сообщениями WS-Reliable, пытаться восстановиться после транспортных сбоев.  
   
 ### <a name="replaycachesize"></a>ReplayCacheSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Количество кэшированных параметров nonce, используемых для определения ответов.  
   
 ### <a name="replaywindow"></a>ReplayWindow  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, которое указывает срок действия параметров nonce отдельного сообщения.  
   
 ### <a name="sessionkeyrenewalinterval"></a>SessionKeyRenewalInterval  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, которое задает интервал времени, по истечении которого инициатор обновляет ключ сеанса безопасности.  
   
 ### <a name="sessionkeyrolloverinterval"></a>SessionKeyRolloverInterval  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, которое задает интервал времени, указывающий период, в течение которого предыдущий сеансовый ключ остается действительным для входящих сообщений, пока выполняется обновление ключа.  
   
 ### <a name="timestampvalidityduration"></a>TimestampValidityDuration  
+
  Тип данных: datetime  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение типа TimeSpan, которое определяет интервал времени, указывающий срок действия отметки времени.  
   

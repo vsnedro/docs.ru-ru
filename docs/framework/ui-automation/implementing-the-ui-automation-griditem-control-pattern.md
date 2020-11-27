@@ -7,14 +7,15 @@ helpviewer_keywords:
 - UI Automation GridItem control pattern
 - GridItem control pattern
 ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
-ms.openlocfilehash: e0a0c616f3f0cf9bc091e4fbb496d71ab8550bd3
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 30932e630c663aabb7d26302174785d44dc1c385
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87165819"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267888"
 ---
 # <a name="implementing-the-ui-automation-griditem-control-pattern"></a>Реализация шаблона элемента управления GridItem модели автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -23,7 +24,9 @@ ms.locfileid: "87165819"
  Шаблон элемента управления <xref:System.Windows.Automation.GridItemPattern> используется для поддержки отдельных дочерних элементов управления контейнеров, реализующих <xref:System.Windows.Automation.Provider.IGridProvider>. Примеры элементов управления, реализующих данный шаблон элемента управления, см. в разделе [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## <a name="implementation-guidelines-and-conventions"></a>Правила и соглашения реализации  
+
  При реализации <xref:System.Windows.Automation.Provider.IGridProvider> обратите внимание на следующие правила и соглашения.  
   
 - Координаты сетки отсчитываются от нуля, начиная с верхней левой ячейки с координатами (0, 0).  
@@ -35,24 +38,28 @@ ms.locfileid: "87165819"
 - Элементы управления, реализующие <xref:System.Windows.Automation.Provider.IGridItemProvider>, обычно могут быть пройдены (то есть клиент автоматизации пользовательского интерфейса может переходить в соседние элементы управления) с помощью клавиатуры.  
   
 <a name="Required_Members_for_IGridItemProvider"></a>
+
 ## <a name="required-members-for-igriditemprovider"></a>Обязательные члены для IGridItemProvider  
+
  Следующие свойства и методы обязательны для реализации <xref:System.Windows.Automation.Provider.IGridItemProvider>.  
   
 |Обязательные члены|Тип члена|Примечания|  
 |----------------------|-----------------|-----------|  
-|<xref:System.Windows.Automation.Provider.IGridItemProvider.Row%2A>|Свойство|None|  
-|<xref:System.Windows.Automation.Provider.IGridItemProvider.Column%2A>|Свойство|None|  
-|<xref:System.Windows.Automation.Provider.IGridItemProvider.RowSpan%2A>|Свойство|None|  
-|<xref:System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan%2A>|Свойство|None|  
-|<xref:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid%2A>|Свойство|None|  
+|<xref:System.Windows.Automation.Provider.IGridItemProvider.Row%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IGridItemProvider.Column%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IGridItemProvider.RowSpan%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan%2A>|Свойство.|Нет|  
+|<xref:System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid%2A>|Свойство.|Нет|  
   
  Этот шаблон элемента управления не имеет связанных методов или событий.  
   
 <a name="Exceptions"></a>
+
 ## <a name="exceptions"></a>Исключения  
+
  Этот шаблон элемента управления не имеет связанных исключений.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о шаблонах элементов управления модели автоматизации пользовательского интерфейса](ui-automation-control-patterns-overview.md)
 - [Поддержка шаблонов элементов управления в поставщике модели автоматизации пользовательского интерфейса](support-control-patterns-in-a-ui-automation-provider.md)

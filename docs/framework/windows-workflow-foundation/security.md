@@ -2,14 +2,15 @@
 title: Безопасность
 ms.date: 03/30/2017
 ms.assetid: 737ec121-bfc5-4b75-a504-2d53c2c8af39
-ms.openlocfilehash: 09614a4528e83898c894506a99c5992c506b7961
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e4419a7a73015541e0a75b4f8c615485c5fdac1b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559243"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267277"
 ---
 # <a name="security"></a>Безопасность
+
 Хранилище экземпляров рабочих процессов SQL использует следующие роли безопасности базы данных для обеспечения безопасного доступа к сведениям о состоянии экземпляров в базе данных сохраняемости.  
   
 - **System. activitys. DurableInstancing. инстанцестореусерс**. Эта роль имеет доступ на чтение и запись для всех открытых представлений и права на выполнение хранимых процедур, участвующих в создании, загрузке и сохранении экземпляров.  

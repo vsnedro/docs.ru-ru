@@ -9,17 +9,19 @@ helpviewer_keywords:
 - COM [WCF]
 - WCF, COM integration
 ms.assetid: c98bda3e-6779-419e-8e6d-9aa94053026d
-ms.openlocfilehash: dc3bbe0ee72ca5583b1e52a61c914ad866a22a05
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bc58e22b64284d66367302d55b5c9554c9ec0d72
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596814"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268239"
 ---
 # <a name="integrating-with-com-applications"></a>Интеграция с приложениями COM
+
 Службы Windows Communication Foundation (WCF) можно интегрировать непосредственно в существующий код с помощью моникера службы WCF. Моникер служб можно использовать в широком наборе сред разработки на базе модели COM, например в Office VBA, Visual Basic 6.0 и Visual C++ 6.0.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения об интеграции с приложениями COM](integrating-with-com-applications-overview.md)  
  Предоставляет общие сведения об основных компонентах процесса объединения.  
   
@@ -39,6 +41,7 @@ ms.locfileid: "84596814"
  Моникер службы WCF поддерживает `IChannelCredentials` интерфейс, который позволяет использовать ряд альтернативных методов для указания учетных данных канала.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
 ## <a name="see-also"></a>См. также

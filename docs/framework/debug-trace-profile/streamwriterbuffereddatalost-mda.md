@@ -11,20 +11,23 @@ helpviewer_keywords:
 - data buffering problems
 - streamWriterBufferedDataLost MDA
 ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
-ms.openlocfilehash: 0c10ea6bb9dc0aaafa2ac1798696579af7592895
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 23a8146bfa5acc08000e689917abb844c5540fec
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803486"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267082"
 ---
 # <a name="streamwriterbuffereddatalost-mda"></a>streamWriterBufferedDataLost MDA
+
 Помощник по отладке управляемого кода (MDA) `streamWriterBufferedDataLost` активируется при записи в <xref:System.IO.StreamWriter>, если методы <xref:System.IO.StreamWriter.Flush%2A> или <xref:System.IO.StreamWriter.Close%2A> после этого не вызываются до уничтожения экземпляра <xref:System.IO.StreamWriter>. Если этот помощник по отладке управляемого кода включен, среда выполнения определяет, существуют ли до сих пор какие-либо буферизованные данные в <xref:System.IO.StreamWriter>. Если буферизованные данные существуют, помощник по отладке управляемого кода активируется. Вызов методов <xref:System.GC.Collect%2A> и <xref:System.GC.WaitForPendingFinalizers%2A> может принудительно вызвать методы завершения. В противном случае методы завершения будут выполняться в произвольные моменты времени и, возможно, вовсе не в момент завершения работы процесса. Выполнение методов завершения явным образом, когда данный помощник по отладке управляемого кода включен, способствует более надежному воспроизведению проблемы такого типа.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  <xref:System.IO.StreamWriter> не записывает последние 1–4 КБ данных в файл.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  <xref:System.IO.StreamWriter> осуществляет внутреннюю буферизацию данных. Для этого требуется, чтобы метод <xref:System.IO.StreamWriter.Close%2A> или <xref:System.IO.StreamWriter.Flush%2A> вызывался для записи буферизованных данных в базовое хранилище данных. Если метод <xref:System.IO.StreamWriter.Close%2A> или <xref:System.IO.StreamWriter.Flush%2A> не вызывается должным образом, данные, буферизованные в экземпляре <xref:System.IO.StreamWriter>, возможно, будут записаны некорректно.  
   
  Ниже приведен пример неправильно написанного кода, который помощник по отладке управляемого кода должен перехватить.  
@@ -46,7 +49,8 @@ GC.Collect();
 GC.WaitForPendingFinalizers();  
 ```  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Следует обязательно вызывать <xref:System.IO.StreamWriter.Close%2A> или <xref:System.IO.StreamWriter.Flush%2A> для <xref:System.IO.StreamWriter>, прежде чем закрывать приложение или любой блок кода, в котором есть экземпляр <xref:System.IO.StreamWriter>. Один из лучших способов для этого — создать экземпляр с блоком C# `using` (`Using` в Visual Basic), что обеспечивает вызов метода <xref:System.IO.StreamWriter.Dispose%2A> для средства записи, в результате чего экземпляр закрывается корректно.  
   
 ```csharp
@@ -88,12 +92,14 @@ static WriteToFile()
 ```  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот MDA не оказывает никакого влияния на среду выполнения.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Сообщение о том, что произошло данное нарушение.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  
