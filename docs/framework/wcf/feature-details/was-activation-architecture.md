@@ -2,17 +2,19 @@
 title: Архитектура активации WAS
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: 77cebede5827016c5c9660663c0491614ba0ef19
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 46f9f9b0e951d363200cf41b5119b13ca921a3b5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545986"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96281642"
 ---
 # <a name="was-activation-architecture"></a>Архитектура активации WAS
+
 В настоящем разделе перечисляются и обсуждаются компоненты службы активации процесса Windows (также известной как WAS).  
   
 ## <a name="activation-components"></a>Компоненты активации  
+
  Служба WAS состоит из нескольких архитектурных компонентов.  
   
 - Адаптеры прослушивателя. Службы Windows, получающие сообщения по определенным сетевым протоколам и взаимодействующие со службой WAS для маршрутизации входящих сообщений к правильным рабочим процессам.  
@@ -30,6 +32,7 @@ ms.locfileid: "90545986"
  ![Снимок экрана, на котором показана архитектура WAS.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### <a name="listener-adapters"></a>Адаптеры прослушивателя  
+
  Адаптеры прослушивателя - это отдельные службы Windows, реализующие логику сетевого взаимодействия, используемую для приема сообщений по сетевому протоколу, по которому они ожидают передачи данных. В следующей таблице перечислены Адаптеры прослушивателя для протоколов Windows Communication Foundation (WCF).  
   
 |Имя службы адаптера прослушивателя|Протокол|Примечания|  
@@ -59,6 +62,7 @@ ms.locfileid: "90545986"
 ```  
   
 ### <a name="protocol-handlers"></a>Обработчики протоколов  
+
  Обработчики протоколов процесса и домена приложения для конкретных протоколов регистрируются в файле Web.config на уровне компьютера.  
   
 ```xml  

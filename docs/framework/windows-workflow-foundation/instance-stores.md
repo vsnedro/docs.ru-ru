@@ -2,14 +2,15 @@
 title: Хранилища экземпляров
 ms.date: 03/30/2017
 ms.assetid: f2629668-0923-4987-b943-67477131c1e0
-ms.openlocfilehash: 26e0c28fe3061306a00e75b0498ef0781b7013c6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0e3cc0c6c635d9c42b4242581ce039b186116113
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555800"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279874"
 ---
 # <a name="instance-stores"></a>Хранилища экземпляров
+
 Хранилище экземпляров - это логический контейнер для экземпляров. Здесь хранятся данные и метаданные экземпляра. Хранилище экземпляров не предполагает выделения физического пространства. Хранилище экземпляра может содержать постоянные сведения в базе данных SQL Server или непостоянные сведения о состоянии в памяти. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] поставляется с хранилищем экземпляров рабочего процесса SQL - конкретной реализацией хранилища экземпляров, которая позволяет рабочему процессу хранить данные и метаданные в базе данных SQL Server 2005 или SQL Server 2008. Кроме того, Windows Server App Fabric также предоставляет конкретную реализацию хранилища экземпляров. Дополнительные сведения см. в разделе [хранилище экземпляров Windows Server App Fabric, запросы и поставщики элементов управления](/previous-versions/appfabric/ff383417(v=azure.10)).  
   
  API сохраняемости - это интерфейс между узлом и хранилищем экземпляров, позволяющим узлу отправлять запросы на команды (например, <xref:System.Activities.DurableInstancing.LoadWorkflowCommand> и <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>) в хранилище экземпляров. Конкретная реализация данного API-интерфейса называется поставщиком сохраняемости. Поставщик сохраняемости получает запросы от узла и изменяет хранилище экземпляров.  

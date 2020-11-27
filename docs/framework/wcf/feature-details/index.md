@@ -7,17 +7,19 @@ helpviewer_keywords:
 - WCF, features
 - Windows Communication Foundation, features
 ms.assetid: 9b4368ca-0bd3-40dc-a539-bcd5779cee5f
-ms.openlocfilehash: 308a32c73d33a4da2fd841ca7c330a42deb7d324
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 30b8acb3b89b8c28be0b8d0b4ce5a1d1d734b055
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246640"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96280433"
 ---
 # <a name="wcf-feature-details"></a>Подробные сведения о возможностях WCF
+
 Windows Communication Foundation (WCF) обеспечивает обширный контроль над функциями обмена сообщениями приложения. В подразделах этого раздела подробно описываются имеющиеся возможности. Дополнительные сведения о базовом программировании см. в разделе [Basic WCF Programming](../basic-wcf-programming.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Службы рабочего процесса](workflow-services.md)  
  Описывает создание и настройку служб рабочих процессов.  
   
@@ -69,10 +71,11 @@ Windows Communication Foundation (WCF) обеспечивает обширный
  [Обнаружение WCF](wcf-discovery.md)  
  Описывает поддержку для включения обнаружения служб во время выполнения совместимым способом с помощью протокола WS-Discovery.  
   
- [Routing](routing.md)  
+ [Маршрутизация](routing.md)  
  Описывает службу маршрутизации.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -82,4 +85,5 @@ Windows Communication Foundation (WCF) обеспечивает обширный
  <xref:System.ServiceModel.Routing>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Базовое программирование для WCF](../basic-wcf-programming.md)

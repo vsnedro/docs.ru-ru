@@ -2,14 +2,15 @@
 title: Практическое руководство. Использование моникера службы с контрактами WSDL
 ms.date: 03/30/2017
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
-ms.openlocfilehash: 70d7e9ff45616f832597ebc48db00198967935c6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6b1a6c905008b0232a098f253b9007e5147d71a2
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601144"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96280888"
 ---
 # <a name="how-to-use-a-service-moniker-with-wsdl-contracts"></a>Практическое руководство. Использование моникера службы с контрактами WSDL
+
 Существуют ситуации, когда требуется полностью автономный клиент COM-взаимодействия. Например, вызываемая служба может не отображать конечную точку обмена метаданными, а клиентская библиотека WCF может быть не зарегистрирована для COM-взаимодействия. В таких ситуациях можно создать WSDL-файл, описывающий службу, и передать его в моникер службы WCF. В данном разделе описывается, как вызвать образец WCF "Приступая к работе" с помощью моникера WSDL для службы WCF.  
   
 ### <a name="using-the-wsdl-service-moniker"></a>Использование моникера WSDL  
@@ -54,7 +55,7 @@ ms.locfileid: "84601144"
   
 7. Запустите приложение Visual Basic 6.0. Отобразится окно сообщения с результатами вызова Subtract(145, 76.54).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Начало работы](../samples/getting-started-sample.md)
 - [Общие сведения об интеграции с приложениями COM](integrating-with-com-applications-overview.md)

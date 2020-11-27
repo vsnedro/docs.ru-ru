@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
-ms.openlocfilehash: 86062dd5147e6e354833928fd98bd1f6b5de9114
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 7f76ed5ad1a76a155489339a9febf12eefd64ae8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421505"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279991"
 ---
 # <a name="how-to-run-a-workflow"></a>Практическое руководство. Запуск рабочего процесса
+
 Этот раздел продолжает учебник "Приступая к работе" для Windows Workflow Foundation и показывает, как создать узел рабочего процесса и выполнить рабочий процесс, описанный в предыдущем разделе [How to: Create a Workflow](how-to-create-a-workflow.md) .
 
 > [!NOTE]
@@ -31,16 +32,16 @@ ms.locfileid: "83421505"
     > [!TIP]
     > Если окно **Обозреватель решений** не отображается, выберите пункт **Обозреватель решений** в меню **Вид**.
 
-3. В узле **Установленные** выберите пункты **Visual C#** и **Рабочий процесс** (или **Visual Basic**и **Рабочий процесс**).
+3. В узле **Установленные** выберите пункты **Visual C#** и **Рабочий процесс** (или **Visual Basic** и **Рабочий процесс**).
 
     > [!NOTE]
     > В зависимости от основного используемого языка программирования Visual Studio узел **Visual C#** или **Visual Basic** может располагаться в узле **Другие языки** под узлом **Установлено**.
 
      Убедитесь, что в раскрывающемся списке версий .NET Framework выбран пункт **.NET Framework 4.5**. В списке **Рабочий процесс** выберите **Консольное приложение рабочего процесса** . Введите `NumberGuessWorkflowHost` в поле **Имя** и нажмите кнопку **ОК**. Будет создано начальное приложение рабочего процесса с базовой поддержкой размещения рабочего процесса. Этот базовый код размещения изменяется и используется для выполнения приложения рабочего процесса.
 
-4. Щелкните правой кнопкой мыши созданный проект **NumberGuessWorkflowHost** в **обозревателе решений** и выберите **Добавить ссылку**. Выберите **Решение** из списка **Добавление ссылки** , установите флажок рядом с **NumberGuessWorkflowActivities**и нажмите кнопку **ОК**.
+4. Щелкните правой кнопкой мыши созданный проект **NumberGuessWorkflowHost** в **обозревателе решений** и выберите **Добавить ссылку**. Выберите **Решение** из списка **Добавление ссылки** , установите флажок рядом с **NumberGuessWorkflowActivities** и нажмите кнопку **ОК**.
 
-5. Щелкните правой кнопкой мыши **Workflow1.xaml** в окне **Обозреватель решений** и выберите **Удалить**. Для подтверждения нажмите кнопку **ОК**.
+5. Щелкните правой кнопкой мыши **Workflow1.xaml** в окне **Обозреватель решений** и выберите **Удалить**. Нажмите кнопку **ОК** для подтверждения.
 
 ### <a name="to-modify-the-workflow-hosting-code"></a>Изменение кода размещения рабочего процесса
 
@@ -138,7 +139,7 @@ ms.locfileid: "83421505"
      [!code-csharp[CFX_WF_GettingStarted#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#11)]
      [!code-vb[CFX_WF_GettingStarted#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#11)]
 
-## <a name="to-build-and-run-the-application"></a><a name="BKMK_ToRunTheApplication"></a>Сборка и запуск приложения
+## <a name="to-build-and-run-the-application"></a><a name="BKMK_ToRunTheApplication"></a> Сборка и запуск приложения
 
 1. Щелкните правой кнопкой мыши **NumberGuessWorkflowHost** в окне **Обозреватель решений** и выберите команду **Установить как запускаемый проект**.
 
@@ -152,6 +153,7 @@ ms.locfileid: "83421505"
      Инструкции по добавлению сохраняемости к приложению рабочего процесса см. в следующем разделе [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md).
 
 ## <a name="example"></a>Пример
+
  Ниже приведен полный код для метода `Main` .
 
 > [!NOTE]
@@ -160,7 +162,7 @@ ms.locfileid: "83421505"
  [!code-csharp[CFX_WF_GettingStarted#12](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#12)]
  [!code-vb[CFX_WF_GettingStarted#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#12)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - <xref:System.Activities.WorkflowApplication>
 - <xref:System.Activities.Bookmark>

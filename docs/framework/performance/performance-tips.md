@@ -10,23 +10,27 @@ helpviewer_keywords:
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: c5e3f692c2bf754ccd35324019246ee905e8c591
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 526dd0d42b82dd4987e446382e7639f322e063aa
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554649"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96281707"
 ---
 # <a name="net-performance-tips"></a>Советы по производительности .NET
+
 Под *производительностью* обычно понимается скорость выполнения программы. В некоторых случаях ее можно увеличить, следуя определенным основным правилам написания исходного кода. В некоторых программах важно тщательно проверить код и с помощью профилировщиков убедиться, что он выполняется максимально быстро. В других случаях такая оптимизация не требуется, поскольку код выполняется достаточно быстро в своем первоначальном виде. В этой статье описываются основные причины снижения производительности и приводятся рекомендации по ее повышению, а также ссылки на разделы с дополнительной информацией. Дополнительные сведения о планировании и измерении производительности см. в разделе [Производительность](index.md)  
   
 ## <a name="boxing-and-unboxing"></a>Упаковка–преобразование и распаковка–преобразование  
+
  Не рекомендуется использовать типы значений в тех случаях, где они многократно упаковываются, например в классах неуниверсальных коллекций, таких как <xref:System.Collections.ArrayList?displayProperty=nameWithType>. Чтобы избежать упаковки типов значений, используйте универсальные коллекции, такие как <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Операции упаковки и распаковки являются весьма затратными процессами с точки зрения вычислений. При упаковке типа значений создается полностью новый объект. Это может занимать почти в 20 раз больше времени, чем простое присваивание ссылки. Процесс приведения при распаковке также занимает в 4 раза больше времени, чем присваивание. Дополнительные сведения см. в разделе [Упаковка-преобразование и распаковка-преобразование](../../csharp/programming-guide/types/boxing-and-unboxing.md).  
   
 ## <a name="strings"></a>Строки  
+
  При сцеплении большого числа строковых переменных, например в непрерывном цикле, используйте <xref:System.Text.StringBuilder?displayProperty=nameWithType> вместо [оператора + (C#)](../../csharp/language-reference/operators/addition-operator.md) или [операторов сцепления (Visual Basic)](../../visual-basic/language-reference/operators/concatenation-operators.md). Дополнительные сведения см. в разделе [сцепление нескольких строк](../../csharp/how-to/concatenate-multiple-strings.md) и [операторов объединения в Visual Basic](../../visual-basic/programming-guide/language-features/operators-and-expressions/concatenation-operators.md).  
   
 ## <a name="destructors"></a>Деструкторы  
+
  Пустые деструкторы использовать не следует. Если класс содержит деструктор, то в очереди метода Finalize создается запись. При вызове деструктора вызывается сборщик мусора, выполняющий обработку очереди. Если деструктор пустой, это приводит только к ненужному снижению производительности. Дополнительные сведения см. в разделах [Деструкторы](../../csharp/programming-guide/classes-and-structs/destructors.md) и [Время существования: создание и уничтожение объектов](../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).  
   
 ## <a name="other-resources"></a>Другие ресурсы  
@@ -43,7 +47,7 @@ ms.locfileid: "90554649"
 
 - [Блог Вэнс Моррисон](/archive/blogs/vancem/)
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также статью
 
 - [Производительность](index.md)
 - [Руководство по программированию на Visual Basic](../../visual-basic/programming-guide/index.md)

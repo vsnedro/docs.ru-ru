@@ -5,14 +5,15 @@ ms.date: 02/25/2019
 helpviewer_keywords:
 - certificates [WCF], viewing with the MMC snap-in
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
-ms.openlocfilehash: e63034e48ae836f67f89b454829f7196c94610cd
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 1f20384f16b3b5b898f926258d76a6a2773eaaa1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246679"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96280628"
 ---
 # <a name="how-to-view-certificates-with-the-mmc-snap-in"></a>Пошаговое руководство. Просмотр сертификатов с помощью оснастки MMC
+
 При создании защищенного клиента или службы можно использовать [сертификат](working-with-certificates.md) в качестве учетных данных. Например, общий тип учетных данных — это сертификат X. 509, который создается с помощью <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType> метода.
 
 Существует три разных типа хранилищ сертификатов, которые можно проверить с помощью консоли управления (MMC) в системах Windows:
