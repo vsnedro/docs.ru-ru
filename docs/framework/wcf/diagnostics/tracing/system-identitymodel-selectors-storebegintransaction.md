@@ -2,20 +2,22 @@
 title: System.IdentityModel.Selectors.StoreBeginTransaction
 ms.date: 03/30/2017
 ms.assetid: 221df2e7-0931-4cbc-93b9-dfffd0fdf4c8
-ms.openlocfilehash: ce53896957b36c67fcbc608630372f9d439d8a5a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a3f21220c154305b222af91a40db9db05e48a04c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583483"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96270996"
 ---
 # <a name="systemidentitymodelselectorsstorebegintransaction"></a>System.IdentityModel.Selectors.StoreBeginTransaction
+
 System.IdentityModel.Selectors.StoreBeginTransaction  
   
 ## <a name="description"></a>Описание  
+
  Начало заданной транзакции с хранилищем.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Трассировка](index.md)
 - [Использование трассировки для устранения неполадок приложения](using-tracing-to-troubleshoot-your-application.md)

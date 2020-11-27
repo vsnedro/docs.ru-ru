@@ -2,20 +2,22 @@
 title: System.IdentityModel.Selectors.StoreFailedToOpenStore
 ms.date: 03/30/2017
 ms.assetid: f850b3e2-022b-4c75-aca3-1a8b14f9dc30
-ms.openlocfilehash: 2ef22f528f6e748d94874b584f1f3caa89a21498
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3bb63951cc147409f47f77d7927b59f9aa834662
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583470"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96270931"
 ---
 # <a name="systemidentitymodelselectorsstorefailedtoopenstore"></a>System.IdentityModel.Selectors.StoreFailedToOpenStore
+
 System.IdentityModel.Selectors.StoreFailedToOpenStore  
   
 ## <a name="description"></a>Описание  
+
  Хранилище не удалось открыть.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Трассировка](index.md)
 - [Использование трассировки для устранения неполадок приложения](using-tracing-to-troubleshoot-your-application.md)
