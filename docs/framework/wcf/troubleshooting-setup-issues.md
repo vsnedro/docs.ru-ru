@@ -2,18 +2,19 @@
 title: Устранение неполадок с установкой
 ms.date: 03/30/2017
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
-ms.openlocfilehash: fb687e9975ab9ac763030f10d54c7744dc02c9e0
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 596aae345061796535895a091c59d50a5bffe0d8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720456"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255121"
 ---
 # <a name="troubleshoot-setup-issues"></a>Устранение неполадок при установке
 
 В этой статье описывается, как устранять неполадки при установке Windows Communication Foundation (WCF).  
   
 ## <a name="some-windows-communication-foundation-registry-keys-are-not-repaired-by-performing-an-msi-repair-operation-on-the-net-framework-30"></a>Некоторые разделы реестра Windows Communication Foundation невозможно восстановить с помощью операции восстановления MSI в .NET Framework 3.0  
+
  Если удалить какие-либо разделы реестра из следующего списка:  
   
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0  
@@ -42,11 +43,11 @@ ms.locfileid: "90720456"
   
      ServiceModelReg [11:09:59:046]: System.ApplicationException: Неожиданный результат 3, ожидается E:\WINDOWS\system32\wbem\mofcomp.exe с «E:\WINDOWS\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModel.mof»  
   
-     или:  
+     или  
   
      ServiceModelReg [07:19:33:843]: System.TypeInitializationException: Инициализатор типа 'System.Management.ManagementPath' выдал исключение. ---> System. Runtime. InteropServices. COMException (0x80040154): не удалось получить фабрику класса COM для компонента с CLSID {CF4CC405-E2C5-4DDD-B3CE-5E7582D8C9FA} из-за следующей ошибки: 80040154.  
   
-     или:  
+     или  
   
      ServiceModelReg [07:19:32:750]: System.IO.FileNotFoundException: Невозможно загрузить файл или сборку 'C:\WINDOWS\system32\wbem\mofcomp.exe' или один из зависимых от них компонентов. Системе не удается найти указанный файл.  
   
@@ -65,6 +66,7 @@ ms.locfileid: "90720456"
  [Средство регистрации служб рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) можно найти по адресу%windir%\Microsoft.NET\framework\v3.5\ или%WINDIR%\Microsoft.NET\framework64\v3.5\.  
   
 ## <a name="configure-iis-properly-for-wcfwf-webhost-after-installing-net-framework-35"></a>Правильная настройка узла WCF/WF в службах IIS после установки .NET Framework 3.5  
+
  Если при установке .NET Framework 3,5 не удается настроить дополнительные параметры конфигурации IIS, связанные с WCF, в журнал установки заносится ошибка и выполняется продолжение. Все попытки запуска приложений WorkflowServices будут неудачными, поскольку отсутствуют обязательные параметры конфигурации. Например, не удастся загрузить службы правил или XOML.  
   
  Чтобы решить эту проблему, используйте [средство регистрации службы рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) с `/c` параметром, чтобы правильно настроить карты сценариев IIS на компьютере. [Средство регистрации служб рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) можно найти по адресу%windir%\Microsoft.NET\framework\v3.5\ или%WINDIR%\Microsoft.NET\framework64\v3.5\.  
@@ -79,6 +81,6 @@ ms.locfileid: "90720456"
 aspnet_regiis.exe -i -enable  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Инструкции по установке](./samples/set-up-instructions.md)

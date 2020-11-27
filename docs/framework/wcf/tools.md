@@ -6,21 +6,22 @@ helpviewer_keywords:
 - WCF, tools
 - Windows Communication Foundation, tools
 ms.assetid: 399a47b4-bfea-434b-8e83-f76b5063d79d
-ms.openlocfilehash: acc142e8e3108a827b63cf013b818d30b5dcaa52
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 53791cdd7789aedf19792ca628a666c963512821
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245976"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255147"
 ---
 # <a name="windows-communication-foundation-tools"></a>Средства Windows Communication Foundation
+
 Средства Microsoft Windows Communication Foundation (WCF) предназначены для облегчения создания, развертывания и управления приложениями WCF. Данный раздел содержит подробные сведения об этих средствах. Обратите внимание, что некоторые средства могут не поддерживаться.  
   
  Все инструменты можно запускать из командной строки.  
   
  В следующей таблице представлены средства и их краткое описание.  
   
-|Инструмент|Описание|  
+|Средство|Описание|  
 |----------|-----------------|  
 |[Служебное средство ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)|Создает код модели службы из документов метаданных и документы метаданных из кода модели службы.|  
 |[Средство поиска закрытых ключей (FindPrivateKey.exe)](find-private-key-tool-findprivatekey-exe.md)|Извлекает закрытый ключ из указанного хранилища.|  

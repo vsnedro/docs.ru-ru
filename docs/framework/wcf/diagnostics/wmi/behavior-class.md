@@ -2,14 +2,15 @@
 title: Класс Behavior
 ms.date: 03/30/2017
 ms.assetid: 75d117f5-87f9-40fb-84c6-9e2fef6da6af
-ms.openlocfilehash: 7c7c25e63677ca2b48a5df18892d2e8ab946ad08
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 73edea45ccd1d1684604a571fbc0615da52f5686
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964246"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255706"
 ---
 # <a name="behavior-class"></a>Класс Behavior
+
 ## <a name="syntax"></a>Синтаксис  
   
 ```csharp
@@ -20,15 +21,18 @@ class Behavior
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс Behavior не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс Behavior имеет следующее свойство.  
   
 ### <a name="type"></a>Тип  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Тип поведения.  
   

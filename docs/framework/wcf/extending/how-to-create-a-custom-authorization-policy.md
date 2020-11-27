@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
-ms.openlocfilehash: 5d5268cd2171bdccc3885cd599fdc8c277e61aa4
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: fef7aa531c946ecacef30bb79f2362bad4d375ed
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795711"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256031"
 ---
 # <a name="how-to-create-a-custom-authorization-policy"></a>Практическое руководство. Создание пользовательской политики авторизации
+
 Инфраструктура модели удостоверений в Windows Communication Foundation (WCF) поддерживает модель авторизации на основе утверждений. Утверждения извлекаются из маркеров, дополнительно обрабатываемых пользовательской политикой авторизации, и затем помещаются в контекст <xref:System.IdentityModel.Policy.AuthorizationContext>, который позже может проверяться для принятия решений по авторизации. Пользовательская политика может использоваться для преобразования утверждений из входящих маркеров в утверждения, ожидаемые приложением. Таким образом, уровень приложения можно изолировать от подробных сведений об отличиях заявок, обслуживаемых различными типами токенов, которые поддерживает WCF. В данном разделе показываются реализация пользовательской политики авторизации и добавление этой политики в коллекцию политик, используемых службой.  
   
 ### <a name="to-implement-a-custom-authorization-policy"></a>Реализация пользовательской политики авторизации  
@@ -29,7 +30,7 @@ ms.locfileid: "70795711"
   
 1. В этот метод передаются два параметра: экземпляр класса <xref:System.IdentityModel.Policy.EvaluationContext> и ссылка на объект.  
   
-2. Если пользовательская политика авторизации добавляет <xref:System.IdentityModel.Claims.ClaimSet> экземпляры без учета текущего содержимого <xref:System.IdentityModel.Policy.EvaluationContext>, <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29> добавьте каждый из них `ClaimSet` , вызвав метод и <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> выполнив возврат `true` из метода. Возврат значения `true` указывает инфраструктуре авторизации, что политика авторизации выполнила свою работу и снова ее вызывать не требуется.  
+2. Если пользовательская политика авторизации добавляет <xref:System.IdentityModel.Claims.ClaimSet> экземпляры без учета текущего содержимого <xref:System.IdentityModel.Policy.EvaluationContext> , добавьте каждый из них, `ClaimSet` вызвав <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29> метод и выполнив возврат `true` из <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> метода. Возврат значения `true` указывает инфраструктуре авторизации, что политика авторизации выполнила свою работу и снова ее вызывать не требуется.  
   
 3. Если пользовательская политика авторизации добавляет наборы утверждений только в случае наличия определенных утверждений в классе `EvaluationContext`, выполните поиск этих утверждений, проверив экземпляры `ClaimSet`, возвращенные свойством <xref:System.IdentityModel.Policy.EvaluationContext.ClaimSets%2A>. Если утверждения присутствуют, добавьте новые наборы утверждений, вызвав метод <xref:System.IdentityModel.Policy.EvaluationContext.AddClaimSet%28System.IdentityModel.Policy.IAuthorizationPolicy%2CSystem.IdentityModel.Claims.ClaimSet%29>, и в случае отсутствия необходимости добавления дополнительных наборов утверждений верните значение `true`, указывающее инфраструктуре авторизации, что политика авторизации завершила свою работу. Если утверждения отсутствуют, верните значение `false`, указывающее, что в случае добавления дополнительных наборов утверждений в класс `EvaluationContext` другими политиками авторизации политика авторизации должна быть вызвана снова.  
   
@@ -70,6 +71,7 @@ ms.locfileid: "70795711"
      [!code-vb[c_CustomAuthPol#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#8)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показана полная реализация <xref:System.IdentityModel.Policy.IAuthorizationPolicy>.  
   
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]

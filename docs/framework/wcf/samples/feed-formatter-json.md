@@ -2,20 +2,23 @@
 title: Модуль форматирования веб-канала (JSON)
 ms.date: 03/30/2017
 ms.assetid: f9c0b295-55e7-48ea-b308-ba51c7d31143
-ms.openlocfilehash: 7b535a5090d3c7df59b7faada35fc324a77b5651
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f0b79adcc37037c3ba497946e8a6fb1a74f2e1e0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594677"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255537"
 ---
 # <a name="feed-formatter-json"></a>Модуль форматирования веб-канала (JSON)
+
 В этом примере показано, как сериализовать экземпляр класса <xref:System.ServiceModel.Syndication.SyndicationFeed> в формат нотации объектов JavaScript (JSON) с помощью пользовательских объектов <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> и <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
 ## <a name="architecture-of-the-sample"></a>Архитектура примера  
+
  В данном примере реализуется класс с именем `JsonFeedFormatter`, унаследованный от класса <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>. Класс `JsonFeedFormatter` использует класс <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> для чтения и записи данных в формате JSON. При внутренней обработке средство форматирования использует пользовательский набор типов контрактов данных с именами `JsonSyndicationFeed` и `JsonSyndicationItem` для контроля формата данных JSON, создаваемых сериализатором. Эти сведения реализации скрыты от конечного пользователя, что позволяет делать вызовы к стандартным классам <xref:System.ServiceModel.Syndication.SyndicationFeed> и <xref:System.ServiceModel.Syndication.SyndicationItem>.  
   
 ## <a name="writing-json-feeds"></a>Написание веб-каналов JSON  
+
  Веб-канал JSON можно написать, используя класс `JsonFeedFormatter` (реализованный в этом образце) с классом <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, как показано в следующем образце кода.  
   
 ```csharp  
@@ -34,6 +37,7 @@ writeSerializer.WriteObject(stream, new JsonFeedFormatter(feed));
 ```  
   
 ## <a name="reading-a-json-feed"></a>Чтение веб-канала JSON  
+
  Получить объект <xref:System.ServiceModel.Syndication.SyndicationFeed> из потока данных в формате JSON можно с помощью класса `JsonFeedFormatter`, как показано в следующем примере кода.  
   
  `//Read in the feed using the DataContractJsonSerializer`  

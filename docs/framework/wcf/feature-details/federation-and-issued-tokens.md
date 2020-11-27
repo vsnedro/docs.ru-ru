@@ -6,17 +6,19 @@ helpviewer_keywords:
 - issued tokens [WCF]
 - federation [WCF], issued tokens
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
-ms.openlocfilehash: dffba51c1bf1aaffbed8725aafc96fd747cb31c6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0ab3d6bad717e71901b4d94c99f1c48f99d8675e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559256"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255524"
 ---
 # <a name="federation-and-issued-tokens"></a>Федерация и выданные маркеры
+
 С помощью Windows Communication Foundation (WCF) можно создавать клиенты, которые безопасно обмениваются данными со службами, реализующими спецификации WS-Federation и WS-Trust. В этих спецификациях XML, протокол SOAP и язык WSDL используются для предоставления механизмов, позволяющих производить проверку подлинности и авторизацию в различных областях доверия.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Федерация](federation.md)  
  Общие сведения о федерации.  
   
@@ -45,6 +47,7 @@ ms.locfileid: "90559256"
  Порядок отключения безопасных сеансов в `WSFederationHttpBinding`. Отключение безопасных сеансов необходимо при создании веб-фермы, требующей сеансы для каждого клиента.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.IdentityModel.Claims>  
   
  <xref:System.ServiceModel.ServiceAuthorizationManager>  

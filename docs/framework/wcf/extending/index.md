@@ -6,17 +6,19 @@ helpviewer_keywords:
 - extensibility [WCF]
 - Windows Communication Foundation, extensibility
 ms.assetid: c145e2f6-f402-41f5-8b5a-eee03978737b
-ms.openlocfilehash: 037182a3cb105f544e15a05f955c142ba57f62f3
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: b82dd4fb6a5b41a0160df8680fb1ba65d9a5bd33
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795542"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254601"
 ---
 # <a name="extending-wcf"></a>Расширение WCF
+
 Windows Communication Foundation (WCF) позволяет изменять и расширять компоненты времени выполнения для точного управления и расширения приложений на основе служб. Статьи данного раздела подробно описывают архитектуру расширяемости. Дополнительные сведения о базовом программировании см. в разделе [Basic WCF Programming](../basic-wcf-programming.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Расширение ServiceHost и уровень модели службы](extending-servicehost-and-the-service-model-layer.md)  
  Уровень модели службы отвечает за удаление входящих сообщений из базовых каналов, их перевод в вызовы метода в коде приложения и отправку результатов обратно вызывающему коду.  Расширения модели службы изменяют или реализуют порядок и компоненты выполнения или взаимодействия, в том числе компоненты, включающие возможности диспетчера, пользовательские поведения, перехват сообщений и параметров, а также другие расширяемые возможности.  
   
@@ -35,7 +37,8 @@ Windows Communication Foundation (WCF) позволяет изменять и р
  [Расширение кодировщиков и сериализаторов](extending-encoders-and-serializers.md)  
  Кодировщики и сериализаторы преобразовывают данные из одной формы в другую. Статьи данного раздела описывают, как расширять переданные классы для удовлетворения конкретных требований.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -51,8 +54,9 @@ Windows Communication Foundation (WCF) позволяет изменять и р
  <xref:System.IdentityModel.Tokens>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Базовое программирование для WCF](../basic-wcf-programming.md)  
   
- [Подробные сведения о возможностях WCF](../feature-details/index.md)  
+ [Сведения о функции WCF](../feature-details/index.md)  
   
  [Правила и рекомендации](../guidelines-and-best-practices.md)

@@ -2,14 +2,15 @@
 title: Импорт пользовательских метаданных для расширения WCF
 ms.date: 03/30/2017
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
-ms.openlocfilehash: f6f858cbe86bd2965decf42be5daa7b3f7d3c8c2
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: b231ff676ffc81666713987a24605b8ae98bb6d6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70796927"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254627"
 ---
 # <a name="importing-custom-metadata-for-a-wcf-extension"></a>Импорт пользовательских метаданных для расширения WCF
+
 В Windows Communication Foundation (WCF) импорт метаданных — это процесс создания абстрактного представления службы или ее компонентов из метаданных. Например, WCF может импортировать <xref:System.ServiceModel.Description.ServiceEndpoint> экземпляры, <xref:System.ServiceModel.Channels.Binding> экземпляры или <xref:System.ServiceModel.Description.ContractDescription> экземпляры из документа WSDL для службы. Чтобы импортировать метаданные службы в WCF, используйте реализацию <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> абстрактного класса. Типы, производные от <xref:System.ServiceModel.Description.MetadataImporter> класса, реализуют поддержку импорта форматов метаданных, которые используют преимущества логики импорта WS-Policy в WCF.  
   
  Пользовательские метаданные состоят из элементов XML, которые не могут быть импортированы с помощью средств импорта метаданных, предоставляемых системой. Как правило, они включают пользовательские расширения WSDL и утверждения политики.  
@@ -17,7 +18,8 @@ ms.locfileid: "70796927"
  В этом разделе описано, как импортировать пользовательские расширения WSDL и утверждения политики. В нем не рассматривается сам процесс импорта. Дополнительные сведения об использовании типов, которые экспортируют и импортируют метаданные независимо от того, поддерживаются ли эти метаданные как настраиваемые или поддерживаемые системой, см. в разделе [Экспорт и импорт метаданных](../feature-details/exporting-and-importing-metadata.md).  
   
 ## <a name="overview"></a>Обзор  
- Тип является реализацией <xref:System.ServiceModel.Description.MetadataImporter> абстрактного класса, входящего в состав WCF. <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> Тип <xref:System.ServiceModel.Description.WsdlImporter> импортирует метаданные языка WSDL с прикрепленными политиками, объединенными в объекте <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType>. Утверждения политики и расширения WSDL, не распознаваемые стандартными средствами импорта метаданных, передаются для импорта зарегистрированным средствам импорта пользовательской политики и WSDL. Как правило, средства импорта реализуются с целью поддержки пользовательских элементов привязки или изменения импортированного контракта.  
+
+ <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>Тип является реализацией <xref:System.ServiceModel.Description.MetadataImporter> абстрактного класса, входящего в состав WCF. Тип <xref:System.ServiceModel.Description.WsdlImporter> импортирует метаданные языка WSDL с прикрепленными политиками, объединенными в объекте <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType>. Утверждения политики и расширения WSDL, не распознаваемые стандартными средствами импорта метаданных, передаются для импорта зарегистрированным средствам импорта пользовательской политики и WSDL. Как правило, средства импорта реализуются с целью поддержки пользовательских элементов привязки или изменения импортированного контракта.  
   
  В данном разделе рассматриваются следующие вопросы.  
   
@@ -28,14 +30,16 @@ ms.locfileid: "70796927"
  Дополнительные сведения об экспорте пользовательских WSDL и утверждений политик см. [в разделе Экспорт пользовательских метаданных для расширения WCF](exporting-custom-metadata-for-a-wcf-extension.md).  
   
 ## <a name="importing-custom-wsdl-extensions"></a>Импорт пользовательских расширений WSDL  
+
  Чтобы добавить поддержку импорта расширений WSDL, следует реализовать интерфейс <xref:System.ServiceModel.Description.IWsdlImportExtension>, а затем добавить эту реализацию в свойство <xref:System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions%2A>. Также <xref:System.ServiceModel.Description.WsdlImporter> может загружать реализации интерфейса <xref:System.ServiceModel.Description.IWsdlImportExtension>, зарегистрированного в файле конфигурации приложения. Обратите внимание, что регистрируется большое количество средств импорта WSDL, при этом имеет значение порядок зарегистрированных средств импорта WSDL.  
   
  Если объект <xref:System.ServiceModel.Description.WsdlImporter> загружает и использует пользовательское средство импорта WSDL, сначала вызывается метод <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%2A>, чтобы разрешить изменение метаданных до начала процесса импорта. Затем выполняется импорт контрактов, после чего вызывается метод <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A>, чтобы разрешить изменение контрактов, импортированных из метаданных. И, наконец, вызывается метод <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A>, чтобы разрешить изменение импортированных конечных точек.  
   
- Дополнительные сведения см. в разделе [Практическое руководство. Импорт пользовательского WSDL](how-to-import-custom-wsdl.md)-документа.  
+ Дополнительные сведения см. [в разделе инструкции. Импорт ПОЛЬЗОВАТЕЛЬСКОГО WSDL](how-to-import-custom-wsdl.md).  
   
 ### <a name="importing-custom-policy-assertions"></a>Импорт утверждений пользовательской политики  
- Тип и [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) автоматически обрабатывают обработку различных типов утверждений политики в выражениях политик, прикрепленных к документам WSDL. <xref:System.ServiceModel.Description.WsdlImporter> Эти средства собирают, нормализуют и объединяют выражения политики, прикрепленные к привязкам WSDL и портам WSDL.  
+
+ <xref:System.ServiceModel.Description.WsdlImporter>Тип и [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) автоматически обрабатывают различные типы утверждений политики в выражениях политик, прикрепленных к документам WSDL. Эти средства собирают, нормализуют и объединяют выражения политики, прикрепленные к привязкам WSDL и портам WSDL.  
   
  Чтобы добавить поддержку утверждений пользовательской политики, следует реализовать интерфейс <xref:System.ServiceModel.Description.IPolicyImportExtension>, а затем добавить эту реализацию в свойство <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A>. Также <xref:System.ServiceModel.Description.MetadataImporter> может загружать реализации интерфейса <xref:System.ServiceModel.Description.IPolicyImportExtension>, зарегистрированного в файле конфигурации приложения. Обратите внимание, что регистрируется большое количество средств политик, при этом имеет значение порядок зарегистрированных средств импорта политик.  
   
@@ -50,6 +54,6 @@ ms.locfileid: "70796927"
   
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. Импорт пользовательского WSDL](how-to-import-custom-wsdl.md)
-- [Практическое руководство. Импорт утверждений пользовательской политики](how-to-import-custom-policy-assertions.md)
-- [Практическое руководство. Создание расширения для ServiceContractGenerator](how-to-write-an-extension-for-the-servicecontractgenerator.md)
+- [Практическое руководство. Импорт пользовательской информации WSDL](how-to-import-custom-wsdl.md)
+- [Практическое руководство. Импорт проверочных утверждений пользовательской политики](how-to-import-custom-policy-assertions.md)
+- [Практическое руководство. Разработка расширения для ServiceContractGenerator](how-to-write-an-extension-for-the-servicecontractgenerator.md)

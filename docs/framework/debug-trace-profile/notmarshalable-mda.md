@@ -12,32 +12,38 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), marshaling
 - notMarshalable MDA
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
-ms.openlocfilehash: b464d914a8d83504daaf4cb276914da7798262dc
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 344c275d8645b16de3ecb06517297df06323ced4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803798"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254562"
 ---
 # <a name="notmarshalable-mda"></a>notMarshalable MDA
+
 Помощник по отладке (MDA) управляемого кода `notMarshalable` активируется, когда среда CLR обнаруживает указатель интерфейса СОМ без допустимого зарегистрированного прокси или заглушки или неправильную реализацию интерфейса `IMarshal` при попытке выполнить маршалинг интерфейса по контекстам.  
   
 ## <a name="symptoms"></a>Симптомы  
+
  Вызовы не обслуживаются, или вызовы выполняются из неправильного контекста для указателей интерфейса СОМ.  
   
-## <a name="cause"></a>Причина  
+## <a name="cause"></a>Причина:  
+
  Отсутствует допустимый зарегистрированный прокси или заглушка, или неправильный `IMarshal` при попытке выполнить маршалинг интерфейса по контекстам.  
   
-## <a name="resolution"></a>Решение  
+## <a name="resolution"></a>Разрешение  
+
  Убедитесь, что имеются зарегистрированный прокси или заглушка и что реализация `IMarshal` является допустимой.  
   
 ## <a name="effect-on-the-runtime"></a>Влияние на среду выполнения  
+
  Этот MDA не оказывает никакого влияния на среду выполнения.  
   
-## <a name="output"></a>Вывод  
+## <a name="output"></a>Выходные данные  
+
  Сообщение, описывающее проблему.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
   
 ```xml  
 <mdaConfig>  

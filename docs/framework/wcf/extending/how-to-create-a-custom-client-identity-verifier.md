@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f2d34e43-fa8b-46d2-91cf-d2960e13e16b
-ms.openlocfilehash: 86e7869efdba50d72cc61a1aebb767cf43927546
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 84982aca06bacb5718855602872fe4dab2376a9d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795631"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256070"
 ---
 # <a name="how-to-create-a-custom-client-identity-verifier"></a>Практическое руководство. Создание пользовательского средства проверки идентификации клиентов
+
 Функция *идентификации* Windows Communication Foundation (WCF) позволяет клиенту заранее указать ожидаемое удостоверение службы. Всякий раз, когда сервер доказывает свою подлинность клиенту, удостоверение проверяется на соответствие ожидаемому удостоверению. (Сведения об удостоверении и принципах его работы см. в разделе [удостоверение службы и проверка подлинности](../feature-details/service-identity-and-authentication.md).)  
   
  При необходимости процедуру проверки можно настроить, используя пользовательское средство проверки удостоверения. Например, можно выполнять дополнительные процедуры проверки удостоверения службы. В данном примере пользовательское средство проверки удостоверения проверяет дополнительные утверждения в сертификате X.509, возвращенном от сервера. Пример приложения см. в разделе [Пример удостоверения службы](../samples/service-identity-sample.md).  
@@ -33,7 +34,7 @@ ms.locfileid: "70795631"
      [!code-csharp[c_HowToSetCustomClientIdentity#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#7)]
      [!code-vb[c_HowToSetCustomClientIdentity#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#7)]  
   
-2. Переопределите метод <xref:System.ServiceModel.Security.IdentityVerifier.CheckAccess%2A> . Этот метод определяет, успешно ли пройдена проверка удостоверения.  
+2. Переопределите метод <xref:System.ServiceModel.Security.IdentityVerifier.CheckAccess%2A>. Этот метод определяет, успешно ли пройдена проверка удостоверения.  
   
 3. Метод `CheckAccess` имеет два параметра. Первый представляет собой экземпляр класса <xref:System.ServiceModel.EndpointIdentity>. Второй является экземпляром класса <xref:System.IdentityModel.Policy.AuthorizationContext>.  
   
@@ -70,12 +71,14 @@ ms.locfileid: "70795631"
      [!code-vb[c_HowToSetCustomClientIdentity#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#4)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показана полная реализация класса <xref:System.ServiceModel.Security.IdentityVerifier>.  
   
  [!code-csharp[c_HowToSetCustomClientIdentity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#5)]
  [!code-vb[c_HowToSetCustomClientIdentity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#5)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показана полная реализация класса <xref:System.ServiceModel.EndpointIdentity>.  
   
  [!code-csharp[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#6)]

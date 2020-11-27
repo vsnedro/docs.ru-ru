@@ -2,14 +2,15 @@
 title: COM+
 ms.date: 03/30/2017
 ms.assetid: 6665a2d3-7e11-4cce-8968-3fcf3426d362
-ms.openlocfilehash: c7fd2ed43218e4b52926947702160cb7d48494cd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3945ba8bd5e3c26c09c5526765841b47b35ba68e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602158"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254484"
 ---
 # <a name="com"></a>COM+
+
 На следующем рисунке показано, как можно использовать трассировку действий в приложении COM+. Вместо выполнения пользовательского кода на сервере можно определить действие COM+ для каждого вызова метода в объектной модели COM+.  
   
  ![Синхронные вызовы с помощью приложения&#43; COM](media/com-tracing.gif "Com и трассировка")

@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d619976b-eda3-475e-ac23-c7988a2dceb0
-ms.openlocfilehash: 89f2b1359b48b71720db6ff38f27883745cfe612
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: ea3bc7384ca10538ca5ab1d3bb05da6a2757fb67
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247550"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256018"
 ---
 # <a name="how-to-create-a-custom-claim"></a>Практическое руководство. Создание пользовательского утверждения
+
 Инфраструктура модели удостоверений в Windows Communication Foundation (WCF) предоставляет набор встроенных типов утверждений и прав с вспомогательными функциями для создания <xref:System.IdentityModel.Claims.Claim> экземпляров с этими типами и правами. Эти встроенные утверждения предназначены для моделирования сведений, находящихся в типах учетных данных клиента, которые WCF поддерживает по умолчанию. Очень часто бывает достаточно встроенных утверждений; однако некоторые приложения требуют пользовательских утверждений. Утверждение состоит из типа утверждения, ресурса, к которому применяется утверждение, и права, подтверждающегося через этот ресурс. В этом разделе описывается создание пользовательского утверждения.  
   
 ### <a name="to-create-a-custom-claim-that-is-based-on-a-primitive-data-type"></a>Создание пользовательского утверждения на основе примитивного типа данных  
@@ -70,6 +71,7 @@ ms.locfileid: "85247550"
          [!code-vb[c_CustomClaim#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#5)]
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода демонстрируется создание пользовательского утверждения с примитивным типом ресурса и пользовательского утверждения с непримитивным типом ресурса.  
   
  [!code-csharp[c_CustomClaim#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#0)]
