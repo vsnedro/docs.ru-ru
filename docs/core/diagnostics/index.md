@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: 3274b72363a3df1dbe1bb29492eedcb134a4f9f2
-ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
+ms.openlocfilehash: c43e661ad8c9f665151e0240bf6b54e61b9acfef
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94982313"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031921"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -27,6 +27,10 @@ ms.locfileid: "94982313"
 ## <a name="unit-testing"></a>Модульное тестирование
 
 [Модульное тестирование](../testing/index.md) — это ключевой компонент непрерывной интеграции и развертывания высококачественного программного обеспечения. Модульные тесты позволяют сразу же узнать о возникшей проблеме.
+
+## <a name="dumps"></a>Файлы дампа
+
+[Дамп](./dumps.md) — это файл, содержащий моментальный снимок процесса во время создания. Он может использоваться при проверке состояния приложения для отладки.
 
 ## <a name="collect-diagnostics-in-containers"></a>Сбор диагностики в контейнерах
 
