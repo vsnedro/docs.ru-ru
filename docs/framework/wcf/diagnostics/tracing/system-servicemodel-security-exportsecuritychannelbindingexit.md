@@ -2,21 +2,23 @@
 title: System.ServiceModel.Security.ExportSecurityChannelBindingExit
 ms.date: 03/30/2017
 ms.assetid: 714a8f4d-a297-4f1c-b9df-d97115a1d82a
-ms.openlocfilehash: c226256a76d06d7d4a6ec3da5f4bbb9d1ce7da6f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7a26d683c6ac17b2602f8cda7e8f413cf8e1d203
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599447"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96277261"
 ---
-# <a name="systemservicemodelsecurityexportsecuritychannelbindingexit"></a><span data-ttu-id="319ce-102">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="319ce-102">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span></span>
-<span data-ttu-id="319ce-103">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="319ce-103">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span></span>  
-  
-## <a name="description"></a><span data-ttu-id="319ce-104">Описание</span><span class="sxs-lookup"><span data-stu-id="319ce-104">Description</span></span>  
- <span data-ttu-id="319ce-105">Привязка безопасности ExportChannelBinding завершена.</span><span class="sxs-lookup"><span data-stu-id="319ce-105">The Security ExportChannelBinding finished.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="319ce-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="319ce-106">See also</span></span>
+# <a name="systemservicemodelsecurityexportsecuritychannelbindingexit"></a><span data-ttu-id="68c4b-102">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="68c4b-102">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span></span>
 
-- [<span data-ttu-id="319ce-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="319ce-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="319ce-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="319ce-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="319ce-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="319ce-109">Administration and Diagnostics</span></span>](../index.md)
+<span data-ttu-id="68c4b-103">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span><span class="sxs-lookup"><span data-stu-id="68c4b-103">System.ServiceModel.Security.ExportSecurityChannelBindingExit</span></span>  
+  
+## <a name="description"></a><span data-ttu-id="68c4b-104">Описание</span><span class="sxs-lookup"><span data-stu-id="68c4b-104">Description</span></span>  
+
+ <span data-ttu-id="68c4b-105">Привязка безопасности ExportChannelBinding завершена.</span><span class="sxs-lookup"><span data-stu-id="68c4b-105">The Security ExportChannelBinding finished.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="68c4b-106">См. также</span><span class="sxs-lookup"><span data-stu-id="68c4b-106">See also</span></span>
+
+- [<span data-ttu-id="68c4b-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="68c4b-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="68c4b-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="68c4b-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="68c4b-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="68c4b-109">Administration and Diagnostics</span></span>](../index.md)
