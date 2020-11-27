@@ -2,17 +2,19 @@
 title: Клиентская архитектура
 ms.date: 03/30/2017
 ms.assetid: 02624403-0d77-41cb-9a86-ab55e98c7966
-ms.openlocfilehash: c873368b82551312d203eb28d208eb6e3f50c89b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d2a7c25b73562155a7120ecee4998b0de364ca45
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587005"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295110"
 ---
 # <a name="client-architecture"></a>Клиентская архитектура
+
 Приложения используют клиентские объекты Windows Communication Foundation (WCF) для вызова операций службы. В этом разделе обсуждаются клиентские объекты WCF, каналы клиента WCF и их связи с архитектурой базового канала. Основные сведения о клиентских объектах WCF см. в разделе [Общие сведения о клиенте WCF](../wcf-client-overview.md). Дополнительные сведения о слое каналов см. в разделе [расширение канального уровня](../extending/extending-the-channel-layer.md).  
   
 ## <a name="overview"></a>Обзор  
+
  Время выполнения модели службы создает клиенты WCF, которые состоят из следующих элементов:  
   
 - Автоматически созданная реализация клиента контракта службы, направляющая вызовы из кода приложения в исходящие сообщения, а также направляющая ответные сообщения в параметры вывода и возвращаемые значения, которые приложение может получать.  
@@ -21,18 +23,20 @@ ms.locfileid: "84587005"
   
 - Клиентский канал, созданный на основе параметров конфигурации, определенных использованной привязкой.  
   
- Приложения могут создавать такие клиенты по запросу либо с помощью, <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> либо путем создания экземпляра <xref:System.ServiceModel.ClientBase%601> производного класса в том виде, в котором он создается [средством служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Эти созданные клиентские классы осуществляют инкапсуляцию и делегирование в реализацию клиентского канала, которая динамически создается фабрикой <xref:System.ServiceModel.ChannelFactory>. Следовательно, наибольший интерес для данного обсуждения представляют клиентские каналы и создающая их фабрика каналов.  
+ Приложения могут создавать такие клиенты по запросу либо с помощью, <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> либо путем создания экземпляра <xref:System.ServiceModel.ClientBase%601> производного класса в том виде, в котором он создается [средством служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Эти созданные клиентские классы осуществляют инкапсуляцию и делегирование в реализацию клиентского канала, которая динамически создается фабрикой <xref:System.ServiceModel.ChannelFactory>. Следовательно, наибольший интерес для данного обсуждения представляют клиентские каналы и создающая их фабрика каналов.  
   
 ## <a name="client-objects-and-client-channels"></a>Клиентские объекты и клиентские каналы  
+
  Базовый интерфейс клиентов WCF — это <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> интерфейс, который предоставляет основные функциональные возможности клиента, а также основные функциональные возможности объекта связи, функции <xref:System.ServiceModel.ICommunicationObject?displayProperty=nameWithType> контекста <xref:System.ServiceModel.IContextChannel?displayProperty=nameWithType> и расширяемое поведение <xref:System.ServiceModel.IExtensibleObject%601?displayProperty=nameWithType> .  
   
- Интерфейс <xref:System.ServiceModel.IClientChannel>, однако, не определяет сам контракт службы. Они объявляются интерфейсом контракта службы (обычно создаются из метаданных службы с помощью такого средства, как [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)). Типы клиентов WCF расширяют <xref:System.ServiceModel.IClientChannel> и, и целевой интерфейс контракта службы, чтобы позволить приложениям напрямую вызывать операции, а также иметь доступ к функциональным возможностям во время выполнения на стороне клиента. Создание клиента WCF предоставляет объекты WCF <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> с информацией, необходимой для создания времени выполнения, которое может подключаться и взаимодействовать с настроенной конечной точкой службы.  
+ Интерфейс <xref:System.ServiceModel.IClientChannel>, однако, не определяет сам контракт службы. Они объявляются интерфейсом контракта службы (обычно создаются из метаданных службы с помощью такого средства, как [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)). Типы клиентов WCF расширяют <xref:System.ServiceModel.IClientChannel> и, и целевой интерфейс контракта службы, чтобы позволить приложениям напрямую вызывать операции, а также иметь доступ к функциональным возможностям во время выполнения на стороне клиента. Создание клиента WCF предоставляет объекты WCF <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> с информацией, необходимой для создания времени выполнения, которое может подключаться и взаимодействовать с настроенной конечной точкой службы.  
   
  Как упоминалось ранее, необходимо настроить два типа клиента WCF, прежде чем их можно будет использовать. Простейшие типы клиентов WCF — это объекты, производные от <xref:System.ServiceModel.ClientBase%601> (или <xref:System.ServiceModel.DuplexClientBase%601> Если контракт службы является дуплексным контрактом). Эти типы можно создать с помощью программно настроенного конструктора или с использованием файла конфигурации и затем вызывать непосредственно для запуска операций службы. Основные сведения об <xref:System.ServiceModel.ClientBase%601> объектах см. в разделе [Общие сведения о клиенте WCF](../wcf-client-overview.md).  
   
  Второй тип создается во время выполнения в результате вызова метода <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A>. Приложения, связанные с жестким контролем конкретных коммуникаций, обычно используют этот тип клиента, называемый *объектом "канал клиента*", так как он обеспечивает более прямое взаимодействие, чем базовая система клиентской среды выполнения и канала.  
   
 ## <a name="channel-factories"></a>Фабрики каналов  
+
  За создание базовой среды выполнения, которая поддерживает вызовы клиентов, отвечает класс <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>. Как клиентские объекты WCF, так и объекты канала клиента WCF используют <xref:System.ServiceModel.ChannelFactory%601> объект для создания экземпляров; <xref:System.ServiceModel.ClientBase%601> производный клиент инкапсулирует обработку фабрики каналов, но в ряде сценариев вполне целесообразно использовать фабрику каналов напрямую. Распространенный сценарий для этого - необходимость многократного создания новых клиентских каналов из существующей фабрики. При использовании клиентского объекта можно получить базовую фабрику каналов из клиентского объекта WCF, вызвав <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A?displayProperty=nameWithType> свойство.  
   
  В отношении фабрик каналов необходимо иметь в виду, что они создают новые экземпляры клиентских каналов для предоставленной им конфигурации до вызова метода <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType>. После вызова <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A> (или <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType> , <xref:System.ServiceModel.ClientBase%601.CreateChannel%2A?displayProperty=nameWithType> или любой операции с клиентским объектом WCF) нельзя изменить фабрику каналов и не дождаться получения каналов к различным экземплярам службы, даже если вы просто изменяете адрес целевой конечной точки. Если требуется создать клиентский объект или клиентский канал с другой конфигурацией, сначала необходимо создать новую фабрику каналов.  
@@ -42,6 +46,7 @@ ms.locfileid: "84587005"
  В следующих двух разделах описывается создание и использование объектов канала клиента WCF.  
   
 #### <a name="creating-a-new-wcf-client-channel-object"></a>Создание нового объекта клиентского канала WCF  
+
  Чтобы продемонстрировать использование клиентского канала, предположим, что создан следующий контракт службы.  
   
  [!code-csharp[C_GeneratedCodeFiles#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#12)]  
@@ -53,6 +58,7 @@ ms.locfileid: "84587005"
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  
   
 #### <a name="creating-a-new-wcf-client-channel-object"></a>Создание нового объекта клиентского канала WCF  
+
  Чтобы воспользоваться клиентским каналом для подключения к службе `ISampleService`, используйте созданный интерфейс контракта (или вспомогательный вариант) непосредственно с фабрикой каналов, передав тип интерфейса контракта в качестве параметра типа. После создания и настройки фабрики каналов для конкретного контракта можно вызвать метод <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType> для возврата объектов клиентских каналов, которые можно использовать для взаимодействия со службой `ISampleService`.  
   
  Созданные объекты клиентских каналов реализуют интерфейс <xref:System.ServiceModel.IClientChannel> и интерфейс контракта. Следовательно, их можно использовать непосредственно для вызова операций, взаимодействующих со службой, поддерживающей этот контракт.  

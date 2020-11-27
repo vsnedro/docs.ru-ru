@@ -5,14 +5,15 @@ helpviewer_keywords:
 - service behaviors, metadata publishing sample
 - Metadata Publishing Behaviors Sample [Windows Communication Foundation]
 ms.assetid: 78c13633-d026-4814-910e-1c801cffdac7
-ms.openlocfilehash: 60a5884bb8d1189ab758260bf765c321392e1bfe
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7df0a8ce41b7a26f70a010b377213c8438fe659d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584367"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294356"
 ---
 # <a name="metadata-publishing-behavior"></a>Поведение публикации метаданных
+
 Образец поведения публикации метаданных демонстрирует, как управлять возможностями публикации метаданных службы. Чтобы предотвратить непреднамеренное раскрытие потенциально конфиденциальных метаданных службы, конфигурация по умолчанию для служб Windows Communication Foundation (WCF) отключает публикацию метаданных. Такое расширение функциональности по умолчанию защищено, но это также означает, что при этом невозможно использовать средство импорта метаданных (например, Svcutil.exe) для создания клиентского кода, необходимого для вызова службы, если поведение публикации не включено явно в конфигурации.  
   
 > [!IMPORTANT]
@@ -57,7 +58,7 @@ ms.locfileid: "84584367"
   
  Этот образец присваивает свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> логическое значение `true`, а также предоставляет метаданные службы, используя HTTP GET. Чтобы включить конечную точку метаданных HTTP GET, службе должен быть присвоен базовый HTTP-адрес. Для доступа к метаданным используется строка запроса `?wsdl` для базового адреса службы. Например, чтобы просмотреть WSDL для службы в веб-браузере, используйте адрес `http://localhost/servicemodelsamples/service.svc?wsdl` . Кроме того, можно использовать это поведение, чтобы предоставить метаданные по протоколу HTTPS, присваивая свойству <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> логическое значение `true`. Это потребует наличия базового HTTPS-адреса.  
   
- Для доступа к конечной точке обмена метаданными службы используйте [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ Чтобы получить доступ к конечной точке обмена метаданными службы, используйте [служебную программу метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
  `svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /out:generatedClient.cs`  
   

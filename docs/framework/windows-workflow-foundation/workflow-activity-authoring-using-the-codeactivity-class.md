@@ -2,17 +2,19 @@
 title: Разработка действий рабочих процессов с помощью класса CodeActivity
 ms.date: 03/30/2017
 ms.assetid: cfe315c1-f86d-43ec-b9ce-2f8c469b1106
-ms.openlocfilehash: e82122301ef412f9f145ef8b6e2c9e7b9033ced1
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 714e0971a006db20d002b0f3a486533b1357fba7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64656019"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293823"
 ---
 # <a name="workflow-activity-authoring-using-the-codeactivity-class"></a>Разработка действий рабочих процессов с помощью класса CodeActivity
+
 Действия, созданные путем наследования от <xref:System.Activities.CodeActivity>, могут реализовывать базовое императивное поведение путем переопределения метода <xref:System.Activities.CodeActivity.Execute%2A>.
 
 ## <a name="using-codeactivitycontext"></a>Использование CodeActivityContext
+
  Доступ к функциям среды выполнения рабочего процесса можно получить из метода <xref:System.Activities.CodeActivity.Execute%2A> при помощи элементов параметра `context` типа <xref:System.Activities.CodeActivityContext>. Функции, доступные посредством <xref:System.Activities.CodeActivityContext>:
 
 - Возврат и задание значений аргументов и переменных.
@@ -25,11 +27,11 @@ ms.locfileid: "64656019"
 
 1. Откройте Visual Studio 2010.
 
-2. Выберите **файл**, **новый**, а затем **проекта**. Выберите **Workflow 4.0** под **Visual C#** в **типы проектов** затем выберите **v2010** узла. Выберите **библиотеки действий** в **шаблоны** окна. Задайте имя для нового проекта HelloActivity.
+2. Выберите **файл**, **создать**, а затем **проект**. Выберите **Рабочий процесс 4,0** в разделе **Visual C#** в окне **типы проектов** и выберите узел **v2010** . В окне **шаблоны** выберите пункт **Библиотека действий** . Задайте имя для нового проекта HelloActivity.
 
-3. Щелкните правой кнопкой мыши Activity1.xaml в проекте HelloActivity и выберите **удалить**.
+3. Щелкните правой кнопкой мыши Activity1. XAML в проекте Хеллоактивити и выберите **Удалить**.
 
-4. Щелкните правой кнопкой мыши проект HelloActivity и выберите **добавить** , а затем **класс**. Задайте имя для нового класса HelloActivity.cs.
+4. Щелкните правой кнопкой мыши проект Хеллоактивити и выберите **Добавить** , а затем — **класс**. Задайте имя для нового класса HelloActivity.cs.
 
 5. В файле HelloActivity.cs добавьте следующие директивы `using`.
 

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
-ms.openlocfilehash: 10d6db63368ee55040f85f922b9483982e8ff264
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bf498ee373f2d637a7a93fbc36225a38ff7744c0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596972"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293901"
 ---
 # <a name="how-to-secure-a-service-with-an-x509-certificate"></a>Практическое руководство. Защита службы с использованием сертификата X.509
+
 Обеспечение безопасности службы с помощью сертификата X. 509 — это базовый метод, который большинство привязок используется в Windows Communication Foundation (WCF). В этом разделе описывается порядок настройки резидентной службы с сертификатом X.509.  
   
  Предварительным условием является наличие действительного сертификата, который можно использовать для проверки подлинности сервера. Сертификат должен быть выдан серверу доверенным центром сертификации. Если сертификат недействителен, ни один клиент, пытающийся воспользоваться службой, не будет доверять этой службе, следовательно, соединение установлено не будет. Дополнительные сведения об использовании сертификатов см. [в разделе Работа с сертификатами](working-with-certificates.md).  
@@ -62,12 +63,14 @@ ms.locfileid: "84596972"
      [!code-vb[C_SecureWithCertificate#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#8)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показана настройка службы с сертификатом X.509 с помощью метода <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>.  
   
  [!code-csharp[C_SecureWithCertificate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#9)]
  [!code-vb[C_SecureWithCertificate#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#9)]  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  Для компиляции кода требуются следующие пространства имен.  
   
 - <xref:System>  
@@ -82,6 +85,6 @@ ms.locfileid: "84596972"
   
 - <xref:System.Runtime.Serialization>  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Работа с сертификатами](working-with-certificates.md)

@@ -2,18 +2,19 @@
 title: Добавление ссылки на службу в проект переносного вложенного набора
 ms.date: 03/30/2017
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
-ms.openlocfilehash: e9a0d3fbc75a8c64af892f74acedfc41dc115da3
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: f81a596c5573405bec9389347c45ff6cb6b30fc9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687703"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294863"
 ---
 # <a name="add-service-reference-in-a-portable-subset-project"></a>Добавление ссылки на службу в проект переносного вложенного набора
 
 Переносимые проекты подмножества позволяют программистам сборок .NET поддерживать единое дерево исходного кода и систему сборки, одновременно обеспечивая поддержку нескольких реализаций .NET (Desktop, Silverlight, Windows Phone и Xbox). Переносимые проекты подмножества ссылаются только на переносимые библиотеки, которые являются сборками .NET, которые могут использоваться в любой реализации .NET.
   
 ## <a name="add-service-reference-details"></a>Диалоговое окно «Добавление ссылки на службу»  
+
  При добавлении ссылки на службу в проект переносного подмножества применяются следующие ограничения.  
   
 1. Для <xref:System.Xml.Serialization.XmlSerializer> разрешены только символьные кодирования. Кодировки SOAP приводят к ошибке во время импорта.  
@@ -44,7 +45,7 @@ ms.locfileid: "92687703"
   
 14. Свойство <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> не поддерживается в проектах переносимого подмножества.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Обращение к службам с использованием клиента WCF](accessing-services-using-a-wcf-client.md)
 - [Переносимая библиотека классов](../cross-platform/portable-class-library.md)

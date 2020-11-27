@@ -5,17 +5,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - service creation [WCF]
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
-ms.openlocfilehash: c672827fff780fd263f5355520bb6ccf02bb902e
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: f958bd06f617a5648b31332ebe9e7662d45cd241
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245535"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294850"
 ---
 # <a name="basic-programming-lifecycle"></a>Базовый жизненный цикл программирования
+
 Windows Communication Foundation (WCF) позволяет приложениям взаимодействовать независимо от того, находятся ли они на одном компьютере, через Интернет или на разных платформах приложений. В этом разделе описаны задачи, необходимые для создания приложения WCF. Рабочий пример приложения см. в [руководстве по начало работы](getting-started-tutorial.md).  
   
 ## <a name="the-basic-tasks"></a>Основные задачи  
+
  Необходимо выполнить следующие основные задачи в указанном порядке:  
   
 1. Определите контракт службы. В контракте службы указывается ее сигнатура, отправляемые и получаемые ей данные и прочие данные, требуемые контрактом. Дополнительные сведения см. в разделе [проектирование контрактов служб](designing-service-contracts.md).  

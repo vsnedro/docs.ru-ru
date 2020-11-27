@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Security
 ms.assetid: c63cfc87-6b20-4949-93b3-bcd4b732b0a2
-ms.openlocfilehash: c6b742cbb438b10b443aa8d1cfca21a80acd2afe
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8e1cf38a6906ca1c15c0dc00fc8866955a326f3d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558619"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294369"
 ---
 # <a name="message-security-user-name"></a>Безопасность сообщений с использованием имени пользователя
+
 В этом образце показано, как реализовать приложение, использующее протокол WS-Security и проверку подлинности имен пользователя для клиента и требующее проверки подлинности сервера с использованием сертификата X.509v3 сервера. Все сообщения приложений, которыми обмениваются служба и клиент, подписываются и шифруются. По умолчанию для входа от имени действующей учетной записи Windows используются предоставляемые клиентом имя пользователя и пароль. Этот образец основан на [WSHttpBinding](wshttpbinding.md). Этот образец содержит консольную программу клиента (Client.exe) и библиотеку службы (Service.dll), размещаемую в службах IIS. Служба реализует контракт, определяющий шаблон взаимодействия "запрос-ответ".  
   
 > [!NOTE]

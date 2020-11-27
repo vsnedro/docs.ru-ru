@@ -2,14 +2,15 @@
 title: Счетчики производительности операций
 ms.date: 03/30/2017
 ms.assetid: 333a51e0-f56e-4e1a-b359-5c91ff390568
-ms.openlocfilehash: 59c75dacb2a01f1b85d67d5cc1651dbc55b6aa8e
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 01f3ed7b2722f7ff4bdbb50e352920bdc277330f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320165"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295237"
 ---
 # <a name="operation-performance-counters"></a>Счетчики производительности операций
+
 При просмотре с помощью системного монитора (Perfmon.exe) счетчики производительности операций находятся под объектом производительности `ServiceModelOperation 4.0.0.0`. Каждая операция содержит отдельный экземпляр. Следовательно, если указанный контракт имеет 10 операций, 10 экземпляров счетчика операций связаны с этим контрактом. Экземпляры объекта именуются по следующей схеме:  
   
 `(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)`

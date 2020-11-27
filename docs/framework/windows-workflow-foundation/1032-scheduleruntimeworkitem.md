@@ -2,30 +2,33 @@
 title: 1032 - ScheduleRuntimeWorkItem
 ms.date: 03/30/2017
 ms.assetid: 54688101-becf-42f3-80ca-f53a7b527620
-ms.openlocfilehash: 505b852d54e256b2c2bfff8d90944dd4e993e0c0
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: da35201f2b3e3bc07e0b9139b0584ce37011e168
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924869"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294317"
 ---
 # <a name="1032---scheduleruntimeworkitem"></a>1032 - ScheduleRuntimeWorkItem
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|1032|  
-|Ключевые слова|WFRuntime|  
-|Уровень|Verbose|  
+|Keywords|WFRuntime|  
+|Level|Подробный|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Указывает, что элемент RuntimeWorkItem был запланирован.  
   
 ## <a name="message"></a>Сообщение  
+
  Рабочий элемент среды выполнения запланирован для действия «%1», DisplayName «%2», InstanceId «%3».  
   
-## <a name="details"></a>Подробные сведения  
+## <a name="details"></a>Сведения  
   
 |Имя элемента данных|Тип элемента данных|Описание|  
 |--------------------|--------------------|-----------------|  

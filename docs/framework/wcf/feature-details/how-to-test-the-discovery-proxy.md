@@ -2,14 +2,15 @@
 title: Практическое руководство. Как проверить прокси-сервер обнаружения
 ms.date: 03/30/2017
 ms.assetid: d96e3fa2-3c42-4e5d-8244-2694081bdc32
-ms.openlocfilehash: 78921d0a26f1116c87c2931b1472a161d6fed145
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b08e8561ceff9f0a427a9ea9acb2309772579853
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592818"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294668"
 ---
 # <a name="how-to-test-the-discovery-proxy"></a>Практическое руководство. Как проверить прокси-сервер обнаружения
+
 Это последний из четырех разделов, в которых демонстрируется реализация прокси-сервера обнаружения. В предыдущем разделе [как реализовать клиентское приложение, использующее прокси-сервер обнаружения для поиска службы](client-app-discovery-proxy-to-find-a-service.md), вы реализовали клиентское приложение WCF, которое использует прокси-сервер обнаружения для поиска службы и затем вызывает службу. В данном разделе показано, как проверить работу прокси-сервера обнаружения, службы и клиентского приложения.  
   
 ### <a name="run-the-discovery-proxy"></a>Запуск прокси-сервера обнаружения  
@@ -28,7 +29,7 @@ ms.locfileid: "84592818"
   
 2. Из командной строки запустите обнаруживаемую службу Service.exe.  
   
-3. В DiscoveryProxy. exe должен отображаться следующий текст: `******* Adding the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 3.******* Done *******` .  
+3. В DiscoveryProxy.exe должен отображаться следующий текст: `******* Adding the following service: ** [Service Contract Name] ** [Service Endpoint Addr] 3.******* Done *******` .  
   
 ### <a name="run-the-client-application"></a>Запуск клиентского приложения  
   
@@ -50,7 +51,7 @@ ms.locfileid: "84592818"
   
 3. Завершите работу прокси-сервера обнаружения.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
 - [Практическое руководство. Как реализовать прокси-сервер обнаружения](how-to-implement-a-discovery-proxy.md)

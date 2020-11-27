@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], scenarios
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
-ms.openlocfilehash: cfd29f8cae8ac362a5fa1709864dce4ae11b5af6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 21c8279890d1d1cf746e98f875efb6b1ff869c73
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558892"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295084"
 ---
 # <a name="common-security-scenarios"></a>Типовые сценарии безопасности
+
 В подразделах этого раздела рассматривается множество возможных конфигураций безопасности клиентов и служб. Конфигурация зависит от ряда факторов: например, находится ли служба или клиент в интрасети, или чем обеспечивается безопасность - Windows или транспортом (таким как HTTPS).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Незащищенные интернет-клиент и служба](internet-unsecured-client-and-service.md)  
  Пример общедоступных, незащищенных клиента и службы.  
   
@@ -58,9 +60,11 @@ ms.locfileid: "90558892"
  Клиент обращается к одной или нескольким веб-службам, распределенным по сети. Веб-службы обращаются к дополнительным ресурсам (таким как базы данных или другие веб-службы), которые должны быть защищены.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Авторизация](authorization-in-wcf.md)  
   
  [Обзор безопасности](security-overview.md)  

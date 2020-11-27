@@ -1,15 +1,16 @@
 ---
-title: Нетипизированный запрос-ответ
+title: Нетипизированный Request-Reply
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: 46047d1671fadb18052991451910b9056015edd2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bcd35bcac928397cad57384fdecb55d7e5ad13c3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591109"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294993"
 ---
 # <a name="untyped-requestreply"></a>Нетипизированный запрос/ответ
+
 В этом образце показано, как определять контракты операций, использующие класс Message.  
   
 > [!NOTE]
@@ -43,7 +44,7 @@ public Message ComputeSum(Message request)
 }  
 ```  
   
- Клиент использует код, созданный [средством служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , для создания учетной записи-посредника для удаленной службы. Чтобы отправить сообщение запроса, клиенту требуется версия сообщения, которая зависит от соответствующего канала. Таким образом, он создает новую область <xref:System.ServiceModel.OperationContextScope>, соответствующую созданному каналу прокси и создающую контекст <xref:System.ServiceModel.OperationContext> с правильной версией сообщения, подставленной в свойство `OutgoingMessageHeaders.MessageVersion`. Клиент передает входящий массив в виде тела сообщения запроса, а затем вызывает метод `ComputeSum` прокси. После этого клиент извлекает сумму входных данных через метод `GetBody<T>` ответного сообщения. Это показано в следующем образце кода.  
+ Клиент использует код, созданный [средством служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) , для создания учетной записи-посредника для удаленной службы. Чтобы отправить сообщение запроса, клиенту требуется версия сообщения, которая зависит от соответствующего канала. Таким образом, он создает новую область <xref:System.ServiceModel.OperationContextScope>, соответствующую созданному каналу прокси и создающую контекст <xref:System.ServiceModel.OperationContext> с правильной версией сообщения, подставленной в свойство `OutgoingMessageHeaders.MessageVersion`. Клиент передает входящий массив в виде тела сообщения запроса, а затем вызывает метод `ComputeSum` прокси. После этого клиент извлекает сумму входных данных через метод `GetBody<T>` ответного сообщения. Это показано в следующем образце кода.  
   
 ```csharp
 using (new OperationContextScope(client.InnerChannel))  

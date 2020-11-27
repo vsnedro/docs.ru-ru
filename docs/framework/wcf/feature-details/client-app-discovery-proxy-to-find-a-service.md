@@ -2,14 +2,15 @@
 title: Практическое руководство. Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
 ms.date: 03/30/2017
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
-ms.openlocfilehash: a1e770531a196d73dfc7d93bf70ed432df343c88
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7316b080809f0298ae5f19eaf4160d9bca2b3ad0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587018"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295123"
 ---
 # <a name="how-to-implement-a-client-application-that-uses-the-discovery-proxy-to-find-a-service"></a>Практическое руководство. Как реализовать клиентское приложение, которое для поиска служб использует прокси-сервер обнаружения
+
 Это последний из трех разделов, в которых рассматривается реализация прокси-сервера обнаружения. В предыдущем разделе [как реализовать обнаруживаемую службу, которая регистрируется в прокси-сервере обнаружения](discoverable-service-that-registers-with-the-discovery-proxy.md), вы реализовали службу WCF, которая регистрирует себя с прокси-сервером обнаружения. В этом разделе вы создадите клиент WCF, который использует прокси-сервер обнаружения для поиска службы WCF.  
   
 ### <a name="implement-the-client"></a>Реализация клиента  
@@ -62,7 +63,7 @@ ms.locfileid: "84587018"
     }  
     ```  
   
-5. Добавьте следующий код в метод `Main` .  
+5. Добавьте в метод `Main` следующий код.  
   
     ```csharp  
     public static void Main()  
@@ -104,6 +105,7 @@ ms.locfileid: "84587018"
  Реализация клиентского приложения завершена. Перейдите к [процедуре проверки прокси-сервера обнаружения](how-to-test-the-discovery-proxy.md).  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный листинг кода для этого раздела.  
   
 ```csharp  
@@ -281,7 +283,7 @@ namespace Microsoft.Samples.Discovery
 }  
 ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)
 - [Практическое руководство. Как реализовать прокси-сервер обнаружения](how-to-implement-a-discovery-proxy.md)

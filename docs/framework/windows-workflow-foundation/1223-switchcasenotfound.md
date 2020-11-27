@@ -2,30 +2,33 @@
 title: 1223 - SwitchCaseNotFound
 ms.date: 03/30/2017
 ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
-ms.openlocfilehash: 6825d0b4f7c95feb4445d42772a32f46c2bd53df
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b50f2bb9e6a507a2928a472310fdc2780c35885d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924102"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294642"
 ---
 # <a name="1223---switchcasenotfound"></a>1223 - SwitchCaseNotFound
+
 ## <a name="properties"></a>Свойства  
   
 |||  
 |-|-|  
 |ID|1223|  
-|Ключевые слова|WFActivities|  
-|Уровень|Сведения|  
+|Keywords|WFActivities|  
+|Level|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
+
  Указывает, что в действии Switch не удалось найти действие Case, соответствующее результату выражения Expression.  
   
 ## <a name="message"></a>Сообщение  
+
  Действию Switch «%1» не удалось найти действие Case, соответствующее результату выражения Expression.  
   
-## <a name="details"></a>Подробные сведения  
+## <a name="details"></a>Сведения  
   
 |Имя элемента данных|Тип элемента данных|Описание|  
 |--------------------|--------------------|-----------------|  

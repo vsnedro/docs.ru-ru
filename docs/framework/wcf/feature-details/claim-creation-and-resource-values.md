@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - claims [WCF], creation and resource values
 ms.assetid: 30431f76-cbe7-4bad-bad7-8e43e23a82d4
-ms.openlocfilehash: fabd0a2606560d99174e5ad28940c3b59ee689d9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c3f36d607d88b208753066dcbd4e9baa6a2590fa
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587057"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295136"
 ---
 # <a name="claim-creation-and-resource-values"></a>Создание утверждений и значения ресурсов
+
 Класс <xref:System.IdentityModel.Claims.Claim> предоставляет несколько методов для создания экземпляров встроенных типов утверждений. Из этих методов следующие не выполняют проверки семантики или формата переданного ресурса:  
   
 - <xref:System.IdentityModel.Claims.Claim.CreateDnsClaim%2A>  
@@ -42,7 +43,7 @@ ms.locfileid: "84587057"
   
 - <xref:System.IdentityModel.Claims.Claim.CreateX500DistinguishedNameClaim%2A>  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Claims.Claim>
 - <xref:System.IdentityModel.Claims.ClaimSet>
