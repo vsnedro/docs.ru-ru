@@ -2,14 +2,15 @@
 title: COM+
 ms.date: 03/30/2017
 ms.assetid: 6665a2d3-7e11-4cce-8968-3fcf3426d362
-ms.openlocfilehash: c7fd2ed43218e4b52926947702160cb7d48494cd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3945ba8bd5e3c26c09c5526765841b47b35ba68e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602158"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254484"
 ---
-# <a name="com"></a><span data-ttu-id="467bc-102">COM+</span><span class="sxs-lookup"><span data-stu-id="467bc-102">COM+</span></span>
-<span data-ttu-id="467bc-103">На следующем рисунке показано, как можно использовать трассировку действий в приложении COM+.</span><span class="sxs-lookup"><span data-stu-id="467bc-103">The following figure shows how you can use activity tracing in a COM+ application.</span></span> <span data-ttu-id="467bc-104">Вместо выполнения пользовательского кода на сервере можно определить действие COM+ для каждого вызова метода в объектной модели COM+.</span><span class="sxs-lookup"><span data-stu-id="467bc-104">Instead of executing user code on the server, we can define a COM+ activity for each method call to the COM+ object model.</span></span>  
+# <a name="com"></a><span data-ttu-id="2e5aa-102">COM+</span><span class="sxs-lookup"><span data-stu-id="2e5aa-102">COM+</span></span>
+
+<span data-ttu-id="2e5aa-103">На следующем рисунке показано, как можно использовать трассировку действий в приложении COM+.</span><span class="sxs-lookup"><span data-stu-id="2e5aa-103">The following figure shows how you can use activity tracing in a COM+ application.</span></span> <span data-ttu-id="2e5aa-104">Вместо выполнения пользовательского кода на сервере можно определить действие COM+ для каждого вызова метода в объектной модели COM+.</span><span class="sxs-lookup"><span data-stu-id="2e5aa-104">Instead of executing user code on the server, we can define a COM+ activity for each method call to the COM+ object model.</span></span>  
   
- <span data-ttu-id="467bc-105">![Синхронные вызовы с помощью приложения&#43; COM](media/com-tracing.gif "Com и трассировка")</span><span class="sxs-lookup"><span data-stu-id="467bc-105">![Synchronous calls with a COM&#43; application](media/com-tracing.gif "Com+Tracing")</span></span>
+ <span data-ttu-id="2e5aa-105">![Синхронные вызовы с помощью приложения&#43; COM](media/com-tracing.gif "Com и трассировка")</span><span class="sxs-lookup"><span data-stu-id="2e5aa-105">![Synchronous calls with a COM&#43; application](media/com-tracing.gif "Com+Tracing")</span></span>
