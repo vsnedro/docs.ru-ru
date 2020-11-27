@@ -2,19 +2,20 @@
 title: Практическое руководство. Доступ к службам WCF с односторонним контрактом и контрактом типа "запрос-ответ"
 ms.date: 03/30/2017
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b
-ms.openlocfilehash: 9c8bd0d21be1d87d536eb6f943e782fc4da352a8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2d415b8f901e0a0e35690c015656620fe5ce13d0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597193"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257708"
 ---
-# <a name="how-to-access-wcf-services-with-one-way-and-request-reply-contracts"></a><span data-ttu-id="79ce1-102">Практическое руководство. Доступ к службам WCF с односторонним контрактом и контрактом типа "запрос-ответ"</span><span class="sxs-lookup"><span data-stu-id="79ce1-102">How to: Access WCF Services with One-Way and Request-Reply Contracts</span></span>
-<span data-ttu-id="79ce1-103">Следующие процедуры описывают, как получить доступ к службе Windows Communication Foundation (WCF), которая определяет односторонний контракт и контракт «запрос-ответ» и не использует шаблон дуплексного обмена данными.</span><span class="sxs-lookup"><span data-stu-id="79ce1-103">The following procedures describe how to access a Windows Communication Foundation (WCF) service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.</span></span>  
+# <a name="how-to-access-wcf-services-with-one-way-and-request-reply-contracts"></a><span data-ttu-id="3603a-102">Практическое руководство. Доступ к службам WCF с односторонним контрактом и контрактом типа "запрос-ответ"</span><span class="sxs-lookup"><span data-stu-id="3603a-102">How to: Access WCF Services with One-Way and Request-Reply Contracts</span></span>
+
+<span data-ttu-id="3603a-103">Следующие процедуры описывают, как получить доступ к службе Windows Communication Foundation (WCF), которая определяет односторонний контракт и контракт «запрос-ответ» и не использует шаблон дуплексного обмена данными.</span><span class="sxs-lookup"><span data-stu-id="3603a-103">The following procedures describe how to access a Windows Communication Foundation (WCF) service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.</span></span>  
   
-### <a name="to-define-the-service"></a><span data-ttu-id="79ce1-104">Определение службы</span><span class="sxs-lookup"><span data-stu-id="79ce1-104">To define the service</span></span>  
+### <a name="to-define-the-service"></a><span data-ttu-id="3603a-104">Определение службы</span><span class="sxs-lookup"><span data-stu-id="3603a-104">To define the service</span></span>  
   
-1. <span data-ttu-id="79ce1-105">Объявите контракт службы.</span><span class="sxs-lookup"><span data-stu-id="79ce1-105">Declare the service contract.</span></span> <span data-ttu-id="79ce1-106">Для операций, которые требуется сделать односторонними, необходимо назначить для `IsOneWay` значение `true` в атрибуте <xref:System.ServiceModel.OperationContractAttribute>.</span><span class="sxs-lookup"><span data-stu-id="79ce1-106">The operations that are to be one-way must have `IsOneWay` set to `true` within the <xref:System.ServiceModel.OperationContractAttribute>.</span></span> <span data-ttu-id="79ce1-107">В следующем коде объявляется контракт `IOneWayCalculator`, имеющий односторонние операции для `Add`, `Subtract`, `Multiply` и `Divide`.</span><span class="sxs-lookup"><span data-stu-id="79ce1-107">The following code declares the `IOneWayCalculator` contract that has one-way operations for `Add`, `Subtract`, `Multiply`, and `Divide`.</span></span> <span data-ttu-id="79ce1-108">В нем также определяется операция ответа на запрос, называемая `SayHello`.</span><span class="sxs-lookup"><span data-stu-id="79ce1-108">It also defines a request response operation called `SayHello`.</span></span>  
+1. <span data-ttu-id="3603a-105">Объявите контракт службы.</span><span class="sxs-lookup"><span data-stu-id="3603a-105">Declare the service contract.</span></span> <span data-ttu-id="3603a-106">Для операций, которые требуется сделать односторонними, необходимо назначить для `IsOneWay` значение `true` в атрибуте <xref:System.ServiceModel.OperationContractAttribute>.</span><span class="sxs-lookup"><span data-stu-id="3603a-106">The operations that are to be one-way must have `IsOneWay` set to `true` within the <xref:System.ServiceModel.OperationContractAttribute>.</span></span> <span data-ttu-id="3603a-107">В следующем коде объявляется контракт `IOneWayCalculator`, имеющий односторонние операции для `Add`, `Subtract`, `Multiply` и `Divide`.</span><span class="sxs-lookup"><span data-stu-id="3603a-107">The following code declares the `IOneWayCalculator` contract that has one-way operations for `Add`, `Subtract`, `Multiply`, and `Divide`.</span></span> <span data-ttu-id="3603a-108">В нем также определяется операция ответа на запрос, называемая `SayHello`.</span><span class="sxs-lookup"><span data-stu-id="3603a-108">It also defines a request response operation called `SayHello`.</span></span>  
   
     ```csharp  
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
@@ -33,7 +34,7 @@ ms.locfileid: "84597193"
     }  
     ```  
   
-2. <span data-ttu-id="79ce1-109">Реализуйте контракт службы.</span><span class="sxs-lookup"><span data-stu-id="79ce1-109">Implement the service contract.</span></span> <span data-ttu-id="79ce1-110">В следующем коде реализуется интерфейс `IOnewayCalculator`.</span><span class="sxs-lookup"><span data-stu-id="79ce1-110">The following code implements the `IOnewayCalculator` interface.</span></span>  
+2. <span data-ttu-id="3603a-109">Реализуйте контракт службы.</span><span class="sxs-lookup"><span data-stu-id="3603a-109">Implement the service contract.</span></span> <span data-ttu-id="3603a-110">В следующем коде реализуется интерфейс `IOnewayCalculator`.</span><span class="sxs-lookup"><span data-stu-id="3603a-110">The following code implements the `IOnewayCalculator` interface.</span></span>  
   
     ```csharp  
     [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.PerCall)]  
@@ -71,7 +72,7 @@ ms.locfileid: "84597193"
     }  
     ```  
   
-3. <span data-ttu-id="79ce1-111">Разместите службу в консольном приложении.</span><span class="sxs-lookup"><span data-stu-id="79ce1-111">Host the service in a console application.</span></span> <span data-ttu-id="79ce1-112">В следующем примере кода показано, как это сделать.</span><span class="sxs-lookup"><span data-stu-id="79ce1-112">The following code shows how to host the service.</span></span>  
+3. <span data-ttu-id="3603a-111">Разместите службу в консольном приложении.</span><span class="sxs-lookup"><span data-stu-id="3603a-111">Host the service in a console application.</span></span> <span data-ttu-id="3603a-112">В следующем примере кода показано, как это сделать.</span><span class="sxs-lookup"><span data-stu-id="3603a-112">The following code shows how to host the service.</span></span>  
   
     ```csharp  
     // Host the service within this EXE console application.  
@@ -107,9 +108,9 @@ ms.locfileid: "84597193"
     }  
     ```  
   
-### <a name="to-access-the-service"></a><span data-ttu-id="79ce1-113">Доступ к службе</span><span class="sxs-lookup"><span data-stu-id="79ce1-113">To access the service</span></span>  
+### <a name="to-access-the-service"></a><span data-ttu-id="3603a-113">Доступ к службе</span><span class="sxs-lookup"><span data-stu-id="3603a-113">To access the service</span></span>  
   
-1. <span data-ttu-id="79ce1-114">Запустите [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) с помощью адреса конечной точки обмена метаданными, чтобы создать класс клиента для службы с помощью следующей командной строки: `Svcutil http://localhost:8000/Service` [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) создает набор интерфейсов и классов, как показано в следующем образце кода.</span><span class="sxs-lookup"><span data-stu-id="79ce1-114">Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) using the metadata exchange endpoint address to create the client class for the service using the following command line: `Svcutil http://localhost:8000/Service` The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) generates a set of interfaces and classes, as shown in the following sample code.</span></span>  
+1. <span data-ttu-id="3603a-114">Запустите [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) с помощью адреса конечной точки обмена метаданными, чтобы создать класс клиента для службы с помощью следующей командной строки: `Svcutil http://localhost:8000/Service` средство создания [метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) создает набор интерфейсов и классов, как показано в следующем образце кода.</span><span class="sxs-lookup"><span data-stu-id="3603a-114">Run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) using the metadata exchange endpoint address to create the client class for the service using the following command line: `Svcutil http://localhost:8000/Service` The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) generates a set of interfaces and classes, as shown in the following sample code.</span></span>  
   
     ```csharp  
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -194,9 +195,9 @@ ms.locfileid: "84597193"
     }  
     ```  
   
-     <span data-ttu-id="79ce1-115">Обратите внимание, что в интерфейсе `IOneWayCalculator` односторонним операциям службы задано значение <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> для атрибута `true`, а операции запроса-ответа службы для этого атрибута задано значение по умолчанию: `false`.</span><span class="sxs-lookup"><span data-stu-id="79ce1-115">Notice in the `IOneWayCalculator` interface that the one-way service operations have the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> attribute set to `true` and the request-reply service operation has the attribute set to the default value, `false`.</span></span> <span data-ttu-id="79ce1-116">Также обратите внимание на класс `OneWayCalculatorClient`.</span><span class="sxs-lookup"><span data-stu-id="79ce1-116">Also notice the `OneWayCalculatorClient` class.</span></span> <span data-ttu-id="79ce1-117">Он используется для вызова службы.</span><span class="sxs-lookup"><span data-stu-id="79ce1-117">This is the class that you will use to call the service.</span></span>  
+     <span data-ttu-id="3603a-115">Обратите внимание, что в интерфейсе `IOneWayCalculator` односторонним операциям службы задано значение <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> для атрибута `true`, а операции запроса-ответа службы для этого атрибута задано значение по умолчанию: `false`.</span><span class="sxs-lookup"><span data-stu-id="3603a-115">Notice in the `IOneWayCalculator` interface that the one-way service operations have the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> attribute set to `true` and the request-reply service operation has the attribute set to the default value, `false`.</span></span> <span data-ttu-id="3603a-116">Также обратите внимание на класс `OneWayCalculatorClient`.</span><span class="sxs-lookup"><span data-stu-id="3603a-116">Also notice the `OneWayCalculatorClient` class.</span></span> <span data-ttu-id="3603a-117">Он используется для вызова службы.</span><span class="sxs-lookup"><span data-stu-id="3603a-117">This is the class that you will use to call the service.</span></span>  
   
-2. <span data-ttu-id="79ce1-118">Создайте клиентский объект.</span><span class="sxs-lookup"><span data-stu-id="79ce1-118">Create the client object.</span></span>  
+2. <span data-ttu-id="3603a-118">Создайте клиентский объект.</span><span class="sxs-lookup"><span data-stu-id="3603a-118">Create the client object.</span></span>  
   
     ```csharp  
     // Create a client  
@@ -205,7 +206,7 @@ ms.locfileid: "84597193"
     OneWayCalculatorClient client = new OneWayCalculatorClient(binding, epAddress);  
     ```  
   
-3. <span data-ttu-id="79ce1-119">Вызовите операции службы.</span><span class="sxs-lookup"><span data-stu-id="79ce1-119">Call service operations.</span></span>  
+3. <span data-ttu-id="3603a-119">Вызовите операции службы.</span><span class="sxs-lookup"><span data-stu-id="3603a-119">Call service operations.</span></span>  
   
     ```csharp  
     // Call the Add service operation.  
@@ -239,15 +240,16 @@ ms.locfileid: "84597193"
     Console.WriteLine("SayHello() returned: " + response);  
     ```  
   
-4. <span data-ttu-id="79ce1-120">Закройте клиент, чтобы закрыть соединения и очистить ресурсы.</span><span class="sxs-lookup"><span data-stu-id="79ce1-120">Close the client to close connections and clean up resources.</span></span>  
+4. <span data-ttu-id="3603a-120">Закройте клиент, чтобы закрыть соединения и очистить ресурсы.</span><span class="sxs-lookup"><span data-stu-id="3603a-120">Close the client to close connections and clean up resources.</span></span>  
   
     ```csharp  
     //Closing the client gracefully closes the connection and cleans up resources  
     client.Close();  
     ```  
   
-## <a name="example"></a><span data-ttu-id="79ce1-121">Пример</span><span class="sxs-lookup"><span data-stu-id="79ce1-121">Example</span></span>  
- <span data-ttu-id="79ce1-122">Код, фрагменты которого представлены в данном разделе, полностью приведен ниже.</span><span class="sxs-lookup"><span data-stu-id="79ce1-122">The following is a complete listing of the code used  in this topic.</span></span>  
+## <a name="example"></a><span data-ttu-id="3603a-121">Пример</span><span class="sxs-lookup"><span data-stu-id="3603a-121">Example</span></span>  
+
+ <span data-ttu-id="3603a-122">Код, фрагменты которого представлены в данном разделе, полностью приведен ниже.</span><span class="sxs-lookup"><span data-stu-id="3603a-122">The following is a complete listing of the code used  in this topic.</span></span>  
   
 ```csharp  
 // Service.cs  
@@ -400,6 +402,6 @@ namespace Microsoft.ServiceModel.Samples
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="79ce1-123">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="79ce1-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3603a-123">См. также</span><span class="sxs-lookup"><span data-stu-id="3603a-123">See also</span></span>
 
-- [<span data-ttu-id="79ce1-124">Односторонние службы</span><span class="sxs-lookup"><span data-stu-id="79ce1-124">One-Way Services</span></span>](one-way-services.md)
+- [<span data-ttu-id="3603a-124">Односторонние службы</span><span class="sxs-lookup"><span data-stu-id="3603a-124">One-Way Services</span></span>](one-way-services.md)
