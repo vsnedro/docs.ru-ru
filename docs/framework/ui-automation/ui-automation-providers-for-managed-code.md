@@ -9,21 +9,23 @@ helpviewer_keywords:
 - UI Automation, custom user interface (UI) elements
 - providers, UI Automation
 ms.assetid: 5f82f731-f1b5-4c8b-b47c-d11279a02574
-ms.openlocfilehash: 5b88127aa88544e77b1516d776bdce2d9f9a9fef
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 531dff4db6fe30ee4cdff2c0b9c482e7d3536583
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163163"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261089"
 ---
-# <a name="ui-automation-providers-for-managed-code"></a><span data-ttu-id="d7ad0-103">Поставщики автоматизации пользовательского интерфейса для управляемого кода</span><span class="sxs-lookup"><span data-stu-id="d7ad0-103">UI Automation Providers for Managed Code</span></span>
+# <a name="ui-automation-providers-for-managed-code"></a><span data-ttu-id="ea96e-103">Поставщики автоматизации пользовательского интерфейса для управляемого кода</span><span class="sxs-lookup"><span data-stu-id="ea96e-103">UI Automation Providers for Managed Code</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="d7ad0-104">Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> .</span><span class="sxs-lookup"><span data-stu-id="d7ad0-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="d7ad0-105">Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).</span><span class="sxs-lookup"><span data-stu-id="d7ad0-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
+> <span data-ttu-id="ea96e-104">Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> .</span><span class="sxs-lookup"><span data-stu-id="ea96e-104">This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace.</span></span> <span data-ttu-id="ea96e-105">Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).</span><span class="sxs-lookup"><span data-stu-id="ea96e-105">For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).</span></span>  
   
- <span data-ttu-id="d7ad0-106">Этот раздел содержит обзоры и инструкции, описывающие создание [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] поставщиков для пользовательских [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] элементов.</span><span class="sxs-lookup"><span data-stu-id="d7ad0-106">This section contains overviews and how-to topics that describe how to write [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] providers for custom [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.</span></span>  
+ <span data-ttu-id="ea96e-106">Этот раздел содержит обзоры и инструкции, описывающие создание [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] поставщиков для пользовательских [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] элементов.</span><span class="sxs-lookup"><span data-stu-id="ea96e-106">This section contains overviews and how-to topics that describe how to write [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] providers for custom [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="d7ad0-107">в этом разделе</span><span class="sxs-lookup"><span data-stu-id="d7ad0-107">In This Section</span></span>  
- [<span data-ttu-id="d7ad0-108">Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="d7ad0-108">Server-Side UI Automation Provider Implementation</span></span>](server-side-ui-automation-provider-implementation.md)  
- [<span data-ttu-id="d7ad0-109">Общие сведения о поставщиках автоматизации пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="d7ad0-109">UI Automation Providers Overview</span></span>](ui-automation-providers-overview.md)  
- [<span data-ttu-id="d7ad0-110">Реализация клиентского поставщика автоматизации пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="d7ad0-110">Client-Side UI Automation Provider Implementation</span></span>](client-side-ui-automation-provider-implementation.md)  
- [<span data-ttu-id="d7ad0-111">Практические руководства</span><span class="sxs-lookup"><span data-stu-id="d7ad0-111">How-to Topics</span></span>](ui-automation-providers-for-managed-code-how-to-topics.md)
+## <a name="in-this-section"></a><span data-ttu-id="ea96e-107">в этом разделе</span><span class="sxs-lookup"><span data-stu-id="ea96e-107">In This Section</span></span>  
+
+ [<span data-ttu-id="ea96e-108">Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера</span><span class="sxs-lookup"><span data-stu-id="ea96e-108">Server-Side UI Automation Provider Implementation</span></span>](server-side-ui-automation-provider-implementation.md)  
+ [<span data-ttu-id="ea96e-109">Общие сведения о поставщиках автоматизации пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="ea96e-109">UI Automation Providers Overview</span></span>](ui-automation-providers-overview.md)  
+ [<span data-ttu-id="ea96e-110">Реализация клиентского поставщика автоматизации пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="ea96e-110">Client-Side UI Automation Provider Implementation</span></span>](client-side-ui-automation-provider-implementation.md)  
+ [<span data-ttu-id="ea96e-111">Инструкции</span><span class="sxs-lookup"><span data-stu-id="ea96e-111">How-to Topics</span></span>](ui-automation-providers-for-managed-code-how-to-topics.md)

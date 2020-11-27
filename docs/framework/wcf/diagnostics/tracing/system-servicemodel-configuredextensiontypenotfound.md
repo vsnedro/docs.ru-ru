@@ -2,21 +2,23 @@
 title: System.ServiceModel.ConfiguredExtensionTypeNotFound
 ms.date: 03/30/2017
 ms.assetid: ef1c72d7-35c4-4886-80bb-b0a368da77e2
-ms.openlocfilehash: 88bef25b04824f3ebb0f89f38565369c7fd94bd7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c8292b1cef2bd4da32fcd0c5636643e4bb19b892
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598272"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262896"
 ---
-# <a name="systemservicemodelconfiguredextensiontypenotfound"></a><span data-ttu-id="8da10-102">System.ServiceModel.ConfiguredExtensionTypeNotFound</span><span class="sxs-lookup"><span data-stu-id="8da10-102">System.ServiceModel.ConfiguredExtensionTypeNotFound</span></span>
-<span data-ttu-id="8da10-103">System.ServiceModel.ConfiguredExtensionTypeNotFound</span><span class="sxs-lookup"><span data-stu-id="8da10-103">System.ServiceModel.ConfiguredExtensionTypeNotFound</span></span>  
-  
-## <a name="description"></a><span data-ttu-id="8da10-104">Описание</span><span class="sxs-lookup"><span data-stu-id="8da10-104">Description</span></span>  
- <span data-ttu-id="8da10-105">Тип расширения не сконфигурирован.</span><span class="sxs-lookup"><span data-stu-id="8da10-105">The extension type is not configured.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="8da10-106">Дополнительно</span><span class="sxs-lookup"><span data-stu-id="8da10-106">See also</span></span>
+# <a name="systemservicemodelconfiguredextensiontypenotfound"></a><span data-ttu-id="2b75a-102">System.ServiceModel.ConfiguredExtensionTypeNotFound</span><span class="sxs-lookup"><span data-stu-id="2b75a-102">System.ServiceModel.ConfiguredExtensionTypeNotFound</span></span>
 
-- [<span data-ttu-id="8da10-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="8da10-107">Tracing</span></span>](index.md)
-- [<span data-ttu-id="8da10-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="8da10-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
-- [<span data-ttu-id="8da10-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="8da10-109">Administration and Diagnostics</span></span>](../index.md)
+<span data-ttu-id="2b75a-103">System.ServiceModel.ConfiguredExtensionTypeNotFound</span><span class="sxs-lookup"><span data-stu-id="2b75a-103">System.ServiceModel.ConfiguredExtensionTypeNotFound</span></span>  
+  
+## <a name="description"></a><span data-ttu-id="2b75a-104">Описание</span><span class="sxs-lookup"><span data-stu-id="2b75a-104">Description</span></span>  
+
+ <span data-ttu-id="2b75a-105">Тип расширения не сконфигурирован.</span><span class="sxs-lookup"><span data-stu-id="2b75a-105">The extension type is not configured.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="2b75a-106">См. также</span><span class="sxs-lookup"><span data-stu-id="2b75a-106">See also</span></span>
+
+- [<span data-ttu-id="2b75a-107">Трассировка</span><span class="sxs-lookup"><span data-stu-id="2b75a-107">Tracing</span></span>](index.md)
+- [<span data-ttu-id="2b75a-108">Использование трассировки для устранения неполадок приложения</span><span class="sxs-lookup"><span data-stu-id="2b75a-108">Using Tracing to Troubleshoot Your Application</span></span>](using-tracing-to-troubleshoot-your-application.md)
+- [<span data-ttu-id="2b75a-109">Администрирование и диагностика</span><span class="sxs-lookup"><span data-stu-id="2b75a-109">Administration and Diagnostics</span></span>](../index.md)
