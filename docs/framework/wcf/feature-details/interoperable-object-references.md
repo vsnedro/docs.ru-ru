@@ -1,18 +1,20 @@
 ---
-title: Совместимые ссылки на объекты
+title: Взаимодействующие ссылки на объекты
 ms.date: 04/15/2019
 ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b
-ms.openlocfilehash: 0927f217a1666f8f27ca9c3e68f80a96b9c0f2b1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bf395c187c46e88406bfb81798c7e359b48255e3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184708"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263234"
 ---
-# <a name="interoperable-object-references"></a>Совместимые ссылки на объекты
-По умолчанию <xref:System.Runtime.Serialization.DataContractSerializer> сериализуем объекты по стоимости. Свойство <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> может использовать для инструктажа сериализатора контракта данных для сохранения ссылок на объекты при сериализации объектов.  
+# <a name="interoperable-object-references"></a>Взаимодействующие ссылки на объекты
+
+По умолчанию <xref:System.Runtime.Serialization.DataContractSerializer> сериализует объекты по значению. Можно использовать свойство, <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> чтобы указать сериализатору контрактов данных сохранять ссылки на объекты при сериализации объектов.  
   
 ## <a name="generated-xml"></a>Созданный идентификатор XML  
+
  В качестве примера рассмотрим следующий объект:  
   
 ```csharp  
@@ -49,10 +51,11 @@ public class SomeClass
 </X>  
 ```  
   
- Тем <xref:System.Runtime.Serialization.XsdDataContractExporter> не менее, `id` не `ref` описывает и атрибуты в своей схеме, даже если `preserveObjectReferences` свойство настроено на `true`.  
+ Однако <xref:System.Runtime.Serialization.XsdDataContractExporter> не описывает `id` `ref` атрибуты и в своей схеме, даже если `preserveObjectReferences` свойство имеет значение `true` .  
   
 ## <a name="using-isreference"></a>Использование IsReference  
- Для создания справочной информации объекта, которая действительна в <xref:System.Runtime.Serialization.DataContractAttribute> соответствии с описанной <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> схемой, примените атрибут к типу и установите флаг. `true` Следующий пример изменяет класс `X` в `IsReference`предыдущем примере, добавляя:  
+
+ Чтобы создать сведения о ссылке на объект, которые действительны в соответствии со схемой, которая ее описывает, примените <xref:System.Runtime.Serialization.DataContractAttribute> атрибут к типу и установите <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> для флага значение `true` . Следующий пример изменяет класс `X` в предыдущем примере, добавляя `IsReference` :  
   
 ```csharp
 [DataContract(IsReference=true)]
@@ -81,9 +84,9 @@ public class SomeClass
 </X>
 ```  
   
- Использование `IsReference` обеспечивает совместимость для цикла обработки сообщений. Без этого, когда тип генерируется из схемы, выход XML для этого типа не обязательно совместим с первоначально предполагаемой схемой. Другими словами, несмотря на сериализацию атрибутов `id` и `ref`, первоначальная схема могла предотвратить появление этих атрибутов (или всех атрибутов) в XML. При `IsReference` применении к участнику данных участник по-прежнему признается в качестве *ориентируемого* при круглом опере.  
+ Использование `IsReference` обеспечивает совместимость для цикла обработки сообщений. Без него, когда тип создается из схемы, выходные данные XML для этого типа не обязательно должны быть совместимы с изначально предполагаемой схемой. Другими словами, несмотря на сериализацию атрибутов `id` и `ref`, первоначальная схема могла предотвратить появление этих атрибутов (или всех атрибутов) в XML. `IsReference`При применении к элементу данных элемент остается распознанным как *ссылочный* при обращении с поддержкой цикла обработки.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.CollectionDataContractAttribute>

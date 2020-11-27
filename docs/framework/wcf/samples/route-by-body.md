@@ -2,14 +2,15 @@
 title: Маршрутизация по телу сообщения
 ms.date: 03/30/2017
 ms.assetid: 07a6fc3b-c360-42e0-b663-3d0f22cf4502
-ms.openlocfilehash: 146baf806f4922f5e3ddd92a762772786e61d443
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: af88d9938098c9aaa6b4b116c196e3b7f563a1e7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594599"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262701"
 ---
 # <a name="route-by-body"></a>Маршрутизация по телу сообщения
+
 В этом образце показано, как реализовать службу, которая принимает объекты сообщений с действием SOAP. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора. Служба реализует одну операцию `Calculate`, которая принимает параметр запроса <xref:System.ServiceModel.Channels.Message> и возвращает ответ <xref:System.ServiceModel.Channels.Message>.  
   
  В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  
@@ -37,7 +38,7 @@ ms.locfileid: "84594599"
   
  Чтобы при таком контракте можно было распределять сообщения между операциями, службе требуется пользовательское поведение диспетчеризации `DispatchByBodyBehavior`. Это поведение диспетчеризации инициализирует `DispatchByBodyElementOperationSelector` селектор настраиваемых операций с таблицей имен операций, ключом которых является QName соответствующих элементов оболочки. Операция `DispatchByBodyElementOperationSelector` проверяет начальный тег первого дочернего элемента Body и выбирает операцию, используя упомянутую ранее таблицу.  
   
- Клиент использует автоматически созданный прокси-сервер из WSDL-файла, экспортированного службой, с помощью [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
+ Клиент использует автоматически созданный прокси-сервер из WSDL-документа, экспортированного службой с помощью [средства служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ```console  
 svcutil.exe  /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples /uxs http://localhost/servicemodelsamples/service.svc?wsdl /out:generatedProxy.cs  

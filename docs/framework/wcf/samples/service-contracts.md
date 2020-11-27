@@ -2,17 +2,19 @@
 title: Контракты служб
 ms.date: 03/30/2017
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
-ms.openlocfilehash: f4487ac693b93a27b11fb69b1c663285ebcdc107
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3b2acdd10c5f5e7280ef8caef537112c083ce52d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599897"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262558"
 ---
 # <a name="service-contracts"></a>Контракты служб
+
 В этом разделе содержатся примеры, демонстрирующие контракты служб в Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Дуплекс](duplex.md)  
  Показано, как определить и реализовать двухсторонний контракт.  
   
@@ -22,7 +24,7 @@ ms.locfileid: "84599897"
  [Одностороннее взаимодействие](one-way.md)  
  Демонстрирует контакт службы с односторонними операциями службы.  
   
- [Session](session.md)  
+ [Согласованность сеанса](session.md)  
  Показана реализация контракта, требующего сеанс.  
   
  [Поток](stream.md)  

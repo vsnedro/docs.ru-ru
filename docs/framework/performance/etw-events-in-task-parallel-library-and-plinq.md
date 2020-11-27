@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - tasks, ETW events
 ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
-ms.openlocfilehash: a1a068b7ba94d5e5be4fd90d6adb48b0d25a8b9e
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 4cb4967ea704064ae08d09311ff33720e3871e19
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309642"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263650"
 ---
 # <a name="etw-events-in-task-parallel-library-and-plinq"></a>События трассировки событий Windows в библиотеке параллельных задач и PLINQ
 
@@ -40,6 +40,7 @@ EVENT_DESCRIPTOR.Id = 1
 |ExclusiveTo|<xref:System.Int64?displayProperty=nameWithType>|Конечное значение счетчика цикла|
 
 ### <a name="parallel-loop-end"></a>Конец параллельного цикла
+
  EVENT_DESCRIPTOR.Task = 2
 
  EVENT_DESCRIPTOR.Id = 2
@@ -54,6 +55,7 @@ EVENT_DESCRIPTOR.Id = 1
 |totalIterations|<xref:System.Int64?displayProperty=nameWithType>|Общее количество итераций|
 
 ### <a name="parallel-invoke-begin"></a>Начало параллельного вызова
+
  EVENT_DESCRIPTOR.Task = 3
 
  EVENT_DESCRIPTOR.Id = 3
@@ -70,6 +72,7 @@ EVENT_DESCRIPTOR.Id = 1
 |ActionCount|<xref:System.Int32?displayProperty=nameWithType>|Количество действий, которые будут выполнены при параллельном вызове.|
 
 ### <a name="parallel-invoke-end"></a>Конец параллельного вызова
+
  EVENT_DESCRIPTOR.Task = 4
 
  EVENT_DESCRIPTOR.Id = 4
@@ -83,11 +86,13 @@ EVENT_DESCRIPTOR.Id = 1
 |ForkJoinContextID|<xref:System.Int32?displayProperty=nameWithType>|Уникальный идентификатор, используемый для обозначения вложений и пар для событий с семантикой ветвления и соединения.|
 
 ## <a name="plinq-etw-events"></a>События трассировки событий Windows в PLINQ
+
  GUID EVENT_HEADER.ProviderId для PLINQ:
 
 `0x159eeeec, 0x4a14, 0x4418, 0xa8, 0xfe, 0xfa, 0xab, 0xcd, 0x98, 0x78, 0x87`
 
 ### <a name="parallel-query-begin"></a>Начало параллельного запроса
+
  EVENT_DESCRIPTOR.Task = 1
 
  EVENT_DESCRIPTOR.Id = 1
@@ -101,6 +106,7 @@ EVENT_DESCRIPTOR.Id = 1
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|Уникальный идентификатор запроса.|
 
 ### <a name="parallel-query-end"></a>Конец параллельного запроса
+
  EVENT_DESCRIPTOR.Task = 2
 
  EVENT_DESCRIPTOR.Id = 2
@@ -113,7 +119,7 @@ EVENT_DESCRIPTOR.Id = 1
 |OriginatingTaskID|<xref:System.Int32?displayProperty=nameWithType>|Идентификатор задачи, которая начала цикл.|
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|Уникальный идентификатор запроса.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [ETW Events in the .NET Framework](etw-events.md)
 - [Библиотека параллельных задач (TPL)](../../standard/parallel-programming/task-parallel-library-tpl.md)

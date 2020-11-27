@@ -2,14 +2,15 @@
 title: ServiceMetadataBehavior
 ms.date: 03/30/2017
 ms.assetid: 0f194476-72f1-467e-bdce-674306316e64
-ms.openlocfilehash: 1d99af064205447c2f11f6f19258551c1e88d386
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 921a880dad0d77558a70dff8a09f75c25a3cbb8a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61956953"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262285"
 ---
 # <a name="servicemetadatabehavior"></a>ServiceMetadataBehavior
+
 ServiceMetadataBehavior  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -26,43 +27,50 @@ class ServiceMetadataBehavior : Behavior
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс ServiceMetadataBehavior не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс ServiceMetadataBehavior имеет следующие свойства.  
   
 ### <a name="externalmetadatalocation"></a>ExternalMetadataLocation  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Задает расположение, в которое служба перенаправляет запросы метаданных.  
   
 ### <a name="httpgetenabled"></a>HttpGetEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Определяет, публикует ли служба свой код WSDL по адресу, определяемому атрибутом `HttpGetUrl`.  
   
 ### <a name="httpgeturl"></a>HttpGetUrl  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Задает расположение для публикации языка WSDL службы и его получения с помощью HTTP.  
   
 ### <a name="httpsgetenabled"></a>HttpsGetEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Определяет, публикует ли служба свой язык WSDL через HTTPS по адресу, указанному в атрибуте `HttpsGetUrl`.  
   
 ### <a name="httpsgeturl"></a>HttpsGetUrl  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Задает расположение для публикации языка WSDL службы и его получения с помощью HTTPS.  
   

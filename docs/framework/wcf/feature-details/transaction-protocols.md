@@ -2,15 +2,16 @@
 title: Протоколы транзакций
 ms.date: 03/30/2017
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.openlocfilehash: 17131c4cd10d9441ec65f9da4137147a703eb87c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 08ce12109d89e9087ced06be409435ac8c5b9d08
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600988"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261544"
 ---
 # <a name="transaction-protocols"></a>Протоколы транзакций
-Windows Communication Foundation (WCF) реализует WS-Atomic транзакции и протоколы WS-координации.  
+
+Windows Communication Foundation (WCF) реализует WS-Atomic протоколы транзакций и WS-Coordination.  
   
 |Спецификация/документ|Версия|Ссылка|  
 |-----------------------------|-------------|----------|  
@@ -63,21 +64,24 @@ Windows Communication Foundation (WCF) реализует WS-Atomic транза
 |wsa|До 1.0<br /><br /> 1.0|`http://www.w3.org/2004/08/addressing`<br /><br /> <https://www.w3.org/2005/08/addressing/>|  
 |wscoor|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wscoor/><br /><br /> <https://docs.oasis-open.org/ws-tx/wscoor/2006/06>|  
 |wsat|1.0<br /><br /> 1.1|<http://schemas.xmlsoap.org/ws/2004/10/wsat/><br /><br /> <https://docs.oasis-open.org/ws-tx/wsat/2006/06>|  
-|t|До 1.3<br /><br /> 1.3|<http://schemas.xmlsoap.org/ws/2005/02/trust/><br /><br /> <https://docs.oasis-open.org/ws-sx/ws-trust/200512>|  
+|t|До 1.3<br /><br /> 1,3|<http://schemas.xmlsoap.org/ws/2005/02/trust/><br /><br /> <https://docs.oasis-open.org/ws-sx/ws-trust/200512>|  
 |o||<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd>|  
 |xsd||<https://www.w3.org/2001/XMLSchema>|  
   
 ## <a name="transaction-manager-bindings"></a>Привязки диспетчеров транзакций  
- R1001: диспетчеры транзакций, участвующие в транзакции WS-AT 1,0, должны использовать SOAP 1,1 и WS-Addressing 2004/08 для транзакционных транзакций WS-Atomic и обмена сообщениями WS-координации.  
+
+ R1001: диспетчеры транзакций, участвующие в транзакции WS-AT 1,0, должны использовать SOAP 1,1 и WS-Addressing 2004/08 для WS-Atomic транзакций и WS-Coordination обмена сообщениями.  
   
  R1002: для обмена сообщениями протоколов WS-Atomic Transaction и WS-Coordination диспетчеры транзакций, участвующие в транзакции по протоколу WS-AT 1.1, должны использовать SOAP 1.1 и WS-Addressing 2005/08.  
   
  Сообщения приложений не ограничиваются этими привязками и описываются ниже.  
   
 ### <a name="transaction-manager-https-binding"></a>Привязка HTTPS диспетчера транзакций  
+
  Для обеспечения безопасности и установления доверия между каждой парой "отправитель-получатель" в дереве транзакций привязка HTTPS диспетчера транзакций полагается только на механизм безопасности транспорта.  
   
 #### <a name="https-transport-configuration"></a>Конфигурация транспорта HTTPS  
+
  Сертификаты X. 509 используются для установления удостоверения диспетчера транзакций. Проверка подлинности клиента и сервера является обязательной, а авторизация клиента и сервера зависит от реализации:  
   
 - R1111: сертификаты X.509, представляемые по линии связи, должны иметь имя субъекта, соответствующее полному доменному имени исходного компьютера;  
@@ -85,20 +89,25 @@ Windows Communication Foundation (WCF) реализует WS-Atomic транза
 - B1112: для успешного выполнения проверок имени субъекта X.509 между каждой парой "отправитель-получатель" в системе должна работать служба DNS.  
   
 #### <a name="activation-and-registration-binding-configuration"></a>Конфигурация привязки активации и регистрации  
+
  Для WCF требуется дуплексная привязка запроса/ответа с корреляцией по протоколу HTTPS. (Дополнительные сведения о корреляции и описание шаблонов обмена сообщениями "запрос-ответ" см. в разделе 8 спецификации WS-Atomic Transaction.)  
   
 #### <a name="2pc-protocol-binding-configuration"></a>Конфигурация привязки протокола 2PC  
+
  WCF поддерживает односторонние (датаграммы) сообщения по протоколу HTTPS. Корреляция между сообщениями зависит от реализации.  
   
- B1131: реализации должны поддерживаться `wsa:ReferenceParameters` , как описано в WS-Addressing, чтобы обеспечить корреляцию сообщений 2pc WCF.  
+ B1131: реализации должны поддерживаться `wsa:ReferenceParameters` , как описано в WS-Addressing для достижения корреляции сообщений 2pc WCF.  
   
 ### <a name="transaction-manager-mixed-security-binding"></a>Привязка безопасности диспетчера транзакций смешанного режима  
+
  Это альтернативная привязка (смешанного режима), которая для установления идентификации использует механизм безопасности транспорта в сочетании с моделью маркера, выдаваемого протоколом WS-Coordination. В двух привязках отличаются только элементы "Активация" и "Регистрация".  
   
 #### <a name="https-transport-configuration"></a>Конфигурация транспорта HTTPS  
+
  Сертификаты X. 509 используются для установления удостоверения диспетчера транзакций. Проверка подлинности клиента и сервера является обязательной, а авторизация клиента и сервера зависит от реализации.  
   
 #### <a name="activation-message-binding-configuration"></a>Конфигурация привязки сообщений активации  
+
  Сообщения активации обычно не участвуют во взаимодействии, поскольку они, как правило, передаются между приложением и его локальным диспетчером транзакций.  
   
  B1221: в WCF используется дуплексная HTTPS-привязка (описанная в разделе [протоколы обмена сообщениями](messaging-protocols.md)) для сообщений активации. Сообщения запроса и ответа коррелируются с использованием протокола WS-Addressing 2004/08 в случае WS-AT 1.0 и протокола WS-Addressing 2005/08 в случае WS-AT 1.1.  
@@ -112,6 +121,7 @@ Windows Communication Foundation (WCF) реализует WS-Atomic транза
  `t:IssuedTokens`Для присоединения к исходящему сообщению должен быть создан новый заголовок `wscoor:CreateCoordinationContextResponse` .  
   
 #### <a name="registration-message-binding-configuration"></a>Конфигурация привязки сообщений регистрации  
+
  B1231: в WCF используется дуплексная привязка HTTPS (описывается в разделе [протоколы обмена сообщениями](messaging-protocols.md)). Сообщения запроса и ответа коррелируются с использованием протокола WS-Addressing 2004/08 в случае WS-AT 1.0 и протокола WS-Addressing 2005/08 в случае WS-AT 1.1.  
   
  В разделе 8 спецификации WS-AtomicTransaction приводятся дополнительные сведения о корреляции и описание шаблонов обмена сообщениями.  
@@ -121,11 +131,13 @@ Windows Communication Foundation (WCF) реализует WS-Atomic транза
  `wsse:Timestamp`Элемент должен быть подписан с помощью `SecurityContextToken STx` выданного. Эта подпись является доказательством владения маркером, связанным с конкретной транзакцией, и используется для проверки подлинности зачисления участника в транзакцию. Сообщение RegistrationResponse отправляется обратно по протоколу HTTPS.  
   
 #### <a name="2pc-protocol-binding-configuration"></a>Конфигурация привязки протокола 2PC  
+
  WCF поддерживает односторонние (датаграммы) сообщения по протоколу HTTPS. Корреляция между сообщениями зависит от реализации.  
   
- B1241: реализации должны поддерживаться `wsa:ReferenceParameters` , как описано в WS-Addressing, чтобы обеспечить корреляцию сообщений 2pc WCF.  
+ B1241: реализации должны поддерживаться `wsa:ReferenceParameters` , как описано в WS-Addressing для достижения корреляции сообщений 2pc WCF.  
   
 ## <a name="application-message-exchange"></a>Обмен сообщениями приложений  
+
  Для сообщений, передаваемых между приложениями, приложения могут использовать любую привязку, если она удовлетворяет следующим требованиям безопасности.  
   
 - R2001: заголовок сообщений, передаваемых между приложениями, должен содержать заголовок `t:IssuedTokens` наряду с `CoordinationContext`.  
@@ -139,6 +151,7 @@ Windows Communication Foundation (WCF) реализует WS-Atomic транза
 ## <a name="message-examples"></a>Примеры сообщений  
   
 ### <a name="createcoordinationcontext-requestresponse-messages"></a>Сообщения запроса и ответа CreateCoordinationContext  
+
  Следующие сообщения соответствуют шаблону "запрос-ответ".  
   
 #### <a name="createcoordinationcontext-with-wscoor-10"></a>Креатекурдинатионконтекст с ВСКУР 1,0  
@@ -352,6 +365,7 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 ```  
   
 ### <a name="registration-messages"></a>Сообщения регистрации  
+
  Следующие сообщения являются сообщениями регистрации.  
   
 #### <a name="register-with-wscoor-10"></a>Регистрация с помощью ВСКУР 1,0  
@@ -542,6 +556,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 ```  
   
 ### <a name="two-phase-commit-protocol-messages"></a>Сообщения протокола двухфазной фиксации  
+
  Следующее сообщение относится к протоколу двухфазной фиксации (2PC).  
   
 #### <a name="commit-with-wsat-10"></a>Фиксация с помощью WSAT 1,0  
@@ -591,6 +606,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 ```  
   
 ### <a name="application-messages"></a>Сообщения приложений  
+
  Следующие сообщения являются сообщениями приложений.  
   
 #### <a name="application-message-request"></a>Сообщение приложения - запрос  

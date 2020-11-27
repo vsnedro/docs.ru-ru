@@ -2,14 +2,15 @@
 title: Пользовательская публикация WSDL
 ms.date: 03/30/2017
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29
-ms.openlocfilehash: b18ac2f72d58c768b3784e1c414a71cdaec50c01
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 83377e1c72ef5774c909729abd1312cce5364ab0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596699"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262870"
 ---
 # <a name="custom-wsdl-publication"></a>Пользовательская публикация WSDL
+
 В этом примере показано, как:  
   
 - реализации <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> пользовательского атрибута <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> для экспорта свойств атрибута в виде заметок WSDL;  
@@ -24,6 +25,7 @@ ms.locfileid: "84596699"
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
   
 ## <a name="service"></a>Служба  
+
  В этом образце служба помечена двумя пользовательскими атрибутами. Первый атрибут, `WsdlDocumentationAttribute`, принимает строку в конструкторе и может применяться для предоставления интерфейса контракта или операции со строкой, описывающей их использование. Второй атрибут, `WsdlParamOrReturnDocumentationAttribute`, может применяться для возврата значений или параметров, описывающих эти значения в операции. В следующем примере показан контракт службы `ICalculator`, описанный с помощью этих атрибутов.  
   
 ```csharp  
@@ -170,9 +172,11 @@ for (int i = 0; i < args.Length; i++)
 ```  
   
 ## <a name="svcutil-client"></a>Клиент Svcutil  
+
  В этом образце средство Svcutil.exe не используется. Контракт предоставляется в файле generatedClient.cs, поэтому службу можно вызывать после того, как образец продемонстрирует пользовательский импорт WSDL и создание кода. Чтобы использовать в этом примере приведенный ниже пользовательский импортер WSDL, можно запустить средство Svcutil.exe с параметром `/svcutilConfig`, задав путь к используемому в этом примере файлу конфигурации клиента, в котором содержится ссылка на библиотеку `WsdlDocumentation.dll`. Но для загрузки `WsdlDocumentationImporter` средство Svuctil.exe должно иметь возможность находить и загружать библиотеку `WsdlDocumentation.dll`, что означает, что она либо должна быть зарегистрирована в глобальном кэше сборок, либо располагаться в одном каталоге с файлом Svcutil.exe. Для простых образцах, таких как этот, удобнее всего скопировать программу Svcutil.exe и файл конфигурации в один каталог с файлом `WsdlDocumentation.dll` и запускать ее оттуда.  
   
 ## <a name="the-custom-wsdl-importer"></a>Пользовательский импортер WSDL  
+
  Пользовательский импортер <xref:System.ServiceModel.Description.IWsdlImportExtension> объекта `WsdlDocumentationImporter` также реализует интерфейсы <xref:System.ServiceModel.Description.IContractBehavior> и <xref:System.ServiceModel.Description.IOperationBehavior>, добавляемые в импортированные конечные точки службы, и интерфейсы<xref:System.ServiceModel.Description.IServiceContractGenerationExtension> и <xref:System.ServiceModel.Description.IOperationContractGenerationExtension>, вызываемые для изменения создания кода контракта или операции.  
   
  Сначала в методе <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> образец определяет, относится ли заметка WSDL к уровню контракта или службы, после чего он добавляет себя в качестве поведения в соответствующую область, передавая импортированный текст заметки в конструктор.  
@@ -219,6 +223,7 @@ public void GenerateOperation(OperationContractGenerationContext context)
 ```  
   
 ## <a name="the-client-application"></a>Клиентское приложение  
+
  Клиентское приложение загружает пользовательский импортер WSDL путем указания его в файле конфигурации приложения.  
   
 ```xml  

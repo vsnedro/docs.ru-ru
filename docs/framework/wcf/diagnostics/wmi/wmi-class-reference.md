@@ -2,20 +2,23 @@
 title: Справочные сведения по классам WMI
 ms.date: 03/30/2017
 ms.assetid: b95a51f5-8251-4619-ae05-7de88cb90f9a
-ms.openlocfilehash: 226e4dedecd152f3a3d4143280529c7823339932
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9830fbf50e8df625e3d3077a66c66e0370204acb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795875"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262259"
 ---
 # <a name="wmi-class-reference"></a>Справочные сведения по классам WMI
+
 В этом разделе перечислены все классы WMI, предоставляемые поставщиком WMI для Windows Communication Foundation (WCF).  
   
 ## <a name="accessing-wmi-instances"></a>Доступ к экземплярам WMI  
+
  Все классы, перечисленные в ссылках на объект WMI, невозможно создать напрямую, за исключением классов службы, домена приложения, контракта, ServiceToEndpointAssociation и конечной точки. Чтобы получить доступ к другим экземплярам, можно получить доступ к свойствам указанных выше классов верхнего уровня. Например, можно получить доступ к экземпляру TransportBindingElement из экземпляра конечной точки — > Binding-> BindingElements.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [ActivityTransfer](activitytransfer.md)  
   
  [AppDomainInfo](appdomaininfo.md)  
@@ -28,7 +31,7 @@ ms.locfileid: "70795875"
   
  [BinaryMessageEncodingBindingElement](binarymessageencodingbindingelement.md)  
   
- [Binding](binding.md)  
+ [Привязка](binding.md)  
   
  [BindingElement](bindingelement.md)  
   
@@ -46,13 +49,13 @@ ms.locfileid: "70795875"
   
  [ConnectionOrientedTransportBindingElement](connectionorientedtransportbindingelement.md)  
   
- [Contract](contract.md)  
+ [Архивирован](contract.md)  
   
  [CustomBindingElement](custombindingelement.md)  
   
  [DeliveryRequirementsAttribute](deliveryrequirementsattribute.md)  
   
- [Endpoint](endpoint.md)  
+ [Конечная точка](endpoint.md)  
   
  [HttpsTransportBindingElement](httpstransportbindingelement.md)  
   
@@ -102,7 +105,7 @@ ms.locfileid: "70795875"
   
  [SecurityBindingElement](securitybindingelement.md)  
   
- [Service](service.md)  
+ [Служба](service.md)  
   
  [ServiceAppDomain](serviceappdomain.md)  
   

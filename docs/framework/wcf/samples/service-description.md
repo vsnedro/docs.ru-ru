@@ -2,14 +2,15 @@
 title: Описание службы
 ms.date: 03/30/2017
 ms.assetid: 7034b5d6-d608-45f3-b57d-ec135f83ff24
-ms.openlocfilehash: 467d8437ec6b3383974b1faf2a96aacb1524771a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c0fa389e9c894bcfec49ce7538b512c96f176c23
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596582"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262584"
 ---
 # <a name="service-description"></a>Описание службы
+
 Образец "Описание службы" показывает, как служба может получать свое описание службы в среде выполнения. Образец основан на [Начало работы](getting-started-sample.md)с дополнительной операцией службы, которая возвращает описательные сведения о службе. Возвращаемые сведения содержат базовые адреса и конечные точки службы. Служба предоставляет эти сведения с помощью классов <xref:System.ServiceModel.OperationContext>, <xref:System.ServiceModel.ServiceHost> и <xref:System.ServiceModel.Description.ServiceDescription>.  
   
  В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  

@@ -6,14 +6,15 @@ helpviewer_keywords:
 - UI Automation, control types
 - control types, UI Automation
 ms.assetid: 75159ef8-bd43-4d13-acb7-1f1fe9253160
-ms.openlocfilehash: 204e950fca74c4f7bd2c13dc8a8891152954c071
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 851d509e719afb658971ea5f6fc2f8fdd6bd2cf7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166139"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261349"
 ---
 # <a name="ui-automation-control-types-overview"></a>Общие сведения о типах элементов управления автоматизации пользовательского интерфейса
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -22,7 +23,9 @@ ms.locfileid: "87166139"
  Известный идентификатор упрощает для вспомогательных устройств определение типов элементов управления, доступных в [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] , и способов взаимодействия с ними.  
   
 <a name="UI_Automation_Control_Type_Requisites"></a>
+
 ## <a name="ui-automation-control-type-requisites"></a>Необходимые компоненты элементов управления автоматизации пользовательского интерфейса  
+
  Тип элемента управления[!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] предоставляют набор условий, которым должны соответствовать поставщики. При выполнении этих условий элемент управления может использовать имя типа определенного элемента управления. Каждый тип элемента управления использует следующие условия:  
   
 - Шаблоны элементов управления[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] — какие шаблоны элементов управления должны поддерживаться, какой шаблоны необязательные и какие шаблоны не должны поддерживаться элементом управления.  
@@ -34,7 +37,9 @@ ms.locfileid: "87166139"
  Если элемент управления удовлетворяет условиям определенного типа элемента управления, значение свойства <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType%2A> указывает этот тип.  
   
 <a name="Current_UI_Automation_Control_Types"></a>
+
 ## <a name="current-ui-automation-control-types"></a>Текущие типы элементов управления автоматизации пользовательского интерфейса  
+
  Следующий список содержит текущий набор типов элементов управления [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] :  
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления кнопки](ui-automation-support-for-the-button-control-type.md)  
@@ -113,6 +118,6 @@ ms.locfileid: "87166139"
   
 - [Поддержка модели автоматизации пользовательского интерфейса для типа элемента управления Window](ui-automation-support-for-the-window-control-type.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Automation.ControlType>

@@ -2,14 +2,15 @@
 title: Выполнение примеров Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
-ms.openlocfilehash: 57f760fa8bf4a3abf83492ac455dfaed2b327e7e
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3a12128541739ba5c380be2efc291b9b419cab12
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90545107"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262675"
 ---
 # <a name="running-the-windows-communication-foundation-samples"></a>Выполнение примеров Windows Communication Foundation
+
 Примеры Windows Communication Foundation (WCF) можно выполнять в конфигурации с одним компьютером или между компьютерами. После передачи примеры готовы к выполнению на одном компьютере. При выполнении на нескольких компьютерах необходимо изменить параметры файла конфигурации примера. В следующих процедурах объясняется, как выполнить пример на одном компьютере или на нескольких компьютерах. Обратите внимание, что шаги, выполняемые для служб, размещенных в службах IIS, и шаги для резидентных примеров, отличаются. Большинство примеров размещаются в службах IIS; чтобы определить, как размещается пример, см. сведения в файле Readme.  
   
  В Windows Vista образцы, не размещенные в IIS, требуют повышенных привилегий для регистрации прослушивателя с Http.sys. Используйте средство Httpcfg.exe для регистрации адреса ожидания передачи данных службы, работающей под учетной записью службы, или запустите службу из командной строки с правами администратора.  

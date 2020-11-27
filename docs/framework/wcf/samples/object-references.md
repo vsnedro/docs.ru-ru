@@ -2,14 +2,15 @@
 title: Ссылки на объекты
 ms.date: 03/30/2017
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
-ms.openlocfilehash: ba4ee3fd0cc16130f66570891ecc295b2d2c50aa
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 55cadc908a3479ee3d104354bcbfd3ea49b15d07
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599988"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262389"
 ---
 # <a name="object-references"></a>Ссылки на объекты
+
 В данном образце показано, как передать объекты по ссылкам между сервером и клиентом. В этом примере используются смоделированные *социальные сети*. Социальная сеть состоит из класса `Person`, содержащего список друзей, в котором каждый друг является экземпляром класса `Person` с собственным списком друзей. Таким образом создается граф объектов. Служба предоставляет операции для этих социальных сетей.  
   
  В этом образце служба размещается в службах IIS, а клиентом является консольное приложение (EXE).  
@@ -18,6 +19,7 @@ ms.locfileid: "84599988"
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.  
   
 ## <a name="service"></a>Служба  
+
  К классу `Person` применен атрибут<xref:System.Runtime.Serialization.DataContractAttribute>. Полю <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> присвоено значение `true`, объявляющее его ссылочным типом. Ко всем свойствам применяется атрибут <xref:System.Runtime.Serialization.DataMemberAttribute>.  
   
 ```csharp
@@ -92,6 +94,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 ```  
   
 ## <a name="client"></a>Клиент  
+
  Прокси клиента создается с помощью функции **Добавление ссылки на службу** в Visual Studio.  
   
  Создается социальная сеть, состоящая из пяти объектов `Person`. Клиент вызывает каждый из трех методов службы.  
@@ -113,7 +116,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\ObjectReferences`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
 - [Справочные сведения о взаимодействии объектов](../feature-details/interoperable-object-references.md)

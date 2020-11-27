@@ -2,14 +2,15 @@
 title: Поведение аудита службы
 ms.date: 03/30/2017
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
-ms.openlocfilehash: bfe13146a7f7cdec648a82a34c34077ec5466809
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ae7ed2059b491a71de9c806e78f1fb784da197fa
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599936"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262571"
 ---
 # <a name="service-auditing-behavior"></a>Поведение аудита службы
+
 Этот образец демонстрирует, как использовать <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> для включения аудита событий безопасности во время выполнения операций службы. Этот образец основан на [Начало работы](getting-started-sample.md). Служба и клиент были настроены с помощью [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) . `mode`Атрибут [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) имеет значение `Message` и было `clientCredentialType` установлено в значение `Windows` . В этом образце клиентом является консольное приложение (EXE), а служба размещается в службах IIS.  
   
 > [!NOTE]
@@ -50,7 +51,7 @@ ms.locfileid: "84599936"
   
 3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Аудит](../feature-details/auditing-security-events.md)
 - [Практическое руководство. Аудит событий безопасности](../feature-details/how-to-audit-wcf-security-events.md)

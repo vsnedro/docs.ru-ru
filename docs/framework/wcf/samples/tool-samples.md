@@ -2,17 +2,19 @@
 title: Образцы средств
 ms.date: 03/30/2017
 ms.assetid: ccf90c64-31de-4a18-9208-28887735ce80
-ms.openlocfilehash: af6de2330bf0c5e671ded22c5e99a47252e02a95
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d6a24afd95de72e5656ca218f596e1f8e302b16f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584094"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262324"
 ---
 # <a name="tool-samples"></a>Образцы средств
+
 В этом разделе содержатся средства Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [ConfigurationCodeGenerator](configurationcodegenerator.md)  
  Показывает, как использовать средство ConfigurationCodeGenerator для представления пользовательских реализаций каналов в системе конфигурации.  
   

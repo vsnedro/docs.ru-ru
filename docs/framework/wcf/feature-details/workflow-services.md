@@ -2,17 +2,19 @@
 title: Службы рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
-ms.openlocfilehash: c7a5c6245702497fcd75341b3ff7ba08dc190fa5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ff73055d41531ef8188681d0b95748f62fde8011
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600131"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263247"
 ---
 # <a name="workflow-services"></a>Службы рабочего процесса
+
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] позволяет описать службу на основе рабочего процесса полностью декларативно на языке XAML. Рабочий процесс, реализующий службу, и описание конечных точек, предоставляемых службой, можно полностью определить на языке XAML. Подразделы, содержащиеся в этом разделе, подробно описывают модель программирования, декларативную поддержку создания служб.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения о службах рабочих процессов](workflow-services-overview.md)  
  Описывает компоненты, участвующие в создании и размещении службы рабочего процесса.  
   
@@ -25,7 +27,7 @@ ms.locfileid: "84600131"
  [Как выполнить: Получить доступ к службе из приложения рабочего процесса](how-to-access-a-service-from-a-workflow-application.md)  
  Описывает, как вызвать службу из приложения рабочего процесса.  
   
- [Correlation](correlation.md)  
+ [Correlation](correlation.md) (корреляция).  
  Описывает, как корреляция сопоставляет сообщения друг с другом и с экземплярами.  
   
  [Обработка неупорядоченных сообщений](out-of-order-message-processing.md)  

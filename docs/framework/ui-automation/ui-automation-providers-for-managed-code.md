@@ -9,21 +9,23 @@ helpviewer_keywords:
 - UI Automation, custom user interface (UI) elements
 - providers, UI Automation
 ms.assetid: 5f82f731-f1b5-4c8b-b47c-d11279a02574
-ms.openlocfilehash: 5b88127aa88544e77b1516d776bdce2d9f9a9fef
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 531dff4db6fe30ee4cdff2c0b9c482e7d3536583
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163163"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261089"
 ---
 # <a name="ui-automation-providers-for-managed-code"></a>Поставщики автоматизации пользовательского интерфейса для управляемого кода
+
 > [!NOTE]
 > Эта документация предназначена для разработчиков .NET Framework, желающих использовать управляемые классы [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] , заданные в пространстве имен <xref:System.Windows.Automation> . Последние сведения о [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]см. в разделе [API автоматизации Windows. Автоматизация пользовательского интерфейса](/windows/win32/winauto/entry-uiauto-win32).  
   
  Этот раздел содержит обзоры и инструкции, описывающие создание [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] поставщиков для пользовательских [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] элементов.  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Реализация поставщика автоматизации пользовательского интерфейса на стороне сервера](server-side-ui-automation-provider-implementation.md)  
  [Общие сведения о поставщиках автоматизации пользовательского интерфейса](ui-automation-providers-overview.md)  
  [Реализация клиентского поставщика автоматизации пользовательского интерфейса](client-side-ui-automation-provider-implementation.md)  
- [Практические руководства](ui-automation-providers-for-managed-code-how-to-topics.md)
+ [Инструкции](ui-automation-providers-for-managed-code-how-to-topics.md)
