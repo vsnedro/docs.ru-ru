@@ -6,19 +6,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: df5b32fa-e73b-4e8e-b66f-357c748e0173
-ms.openlocfilehash: 4b83862221cf249455478c3ade159a3101062f3e
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 34cbb9e31933debb5120eb30956c3a5f0be065ed
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245444"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266718"
 ---
 # <a name="configuring-client-behaviors"></a>Настройка поведений клиентов
+
 Windows Communication Foundation (WCF) настраивает поведение двумя способами: либо путем обращения к конфигурациям поведения, которые определены в `<behavior>` разделе файла конфигурации клиентского приложения, либо программными средствами в вызывающем приложении. В этом разделе описываются оба подхода.  
   
  При использовании файла конфигурации конфигурация поведения представляет собой именованную коллекцию параметров конфигурации. Имя каждой из конфигураций поведения должно быть уникальным. Эта строка используется в атрибуте `behaviorConfiguration` конфигурации конечной точки, чтобы связать конечную точку с поведением.  
   
 ## <a name="example"></a>Пример  
+
  В следующем фрагменте кода конфигурации определяется поведение с именем `myBehavior`. Конечная точка клиента ссылается на это поведение в атрибуте `behaviorConfiguration`.  
   
 ```xml  
@@ -44,9 +46,11 @@ Windows Communication Foundation (WCF) настраивает поведение
 ```  
   
 ## <a name="using-behaviors-programmatically"></a>Управление поведениями программным образом  
+
  Можно также настроить или вставить поведение программным путем, найдя соответствующее `Behaviors` свойство в клиентском объекте Windows Communication Foundation (WCF) или объекте фабрики канала клиента перед открытием клиента.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода показано, как программным образом вставить поведение, обратившись к свойству <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> объекта <xref:System.ServiceModel.Description.ServiceEndpoint>, возвращаемого свойством <xref:System.ServiceModel.ChannelFactory.Endpoint%2A> до создания объекта канала.  
   
  [!code-csharp[ChannelFactoryBehaviors#10](../../../samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]

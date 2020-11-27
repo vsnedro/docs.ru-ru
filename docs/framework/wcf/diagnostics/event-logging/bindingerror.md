@@ -2,24 +2,26 @@
 title: BindingError
 ms.date: 03/30/2017
 ms.assetid: 19d90e9d-c92a-4ca7-ba31-aa07882bb81e
-ms.openlocfilehash: ecd38c7655125cfdbe90c2682125fd1bd170ae5c
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 35d48b37461914ea0db2f9bae0b700e3f7eba16b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70798078"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266614"
 ---
 # <a name="bindingerror"></a>BindingError
-ИД: 159  
+
+Идентификатор: 159  
   
- "Уровень серьезности" — Ошибка  
+ Важность: ошибка  
   
- Категори SMSvcHost  
+ Категория: SMSvcHost  
   
 ## <a name="description"></a>Описание  
+
  Это событие указывает на то, что при анализе конкретной привязки для конкретного сайта произошла ошибка, в результате чего протокол для этого сайта был временно отключен. В событии указаны привязка, источник, исключение, имя процесса и идентификатор процесса.  
   
 ## <a name="see-also"></a>См. также
 
-- [Ведение журнала событий](index.md)
+- [Ведение журналов событий](index.md)
 - [Общие справочные сведения о событиях](events-general-reference.md)
