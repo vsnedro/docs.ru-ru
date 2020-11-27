@@ -2,14 +2,15 @@
 title: 'Транспорт: TCP-взаимодействие WSE 3.0'
 ms.date: 03/30/2017
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
-ms.openlocfilehash: f61d5037af0be6579d5110152ca070bec586fe87
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: c268043a9d5c3f6a48b7b66dc807e4e30f029f61
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558970"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292510"
 ---
 # <a name="transport-wse-30-tcp-interoperability"></a>Транспорт: TCP-взаимодействие WSE 3.0
+
 В примере транспорта TCP-взаимодействия WSE 3,0 показано, как реализовать дуплексный сеанс TCP в качестве настраиваемого транспорта Windows Communication Foundation (WCF). Также демонстрируется использование расширяемости уровня канала для создания интерфейса по сети с существующими развернутыми системами. Ниже показано, как создать этот настраиваемый транспорт WCF.  
   
 1. Начиная с сокета TCP, создайте клиентские и серверные реализации интерфейса <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, использующие кадрирование DIME для разграничения границ сообщений.  
@@ -23,6 +24,7 @@ ms.locfileid: "90558970"
 5. Добавьте элемент привязки, добавляющий пользовательский транспорт в стек каналов. Дополнительные сведения см. в разделе [Добавление элемента привязки].  
   
 ## <a name="creating-iduplexsessionchannel"></a>Создание IDuplexSessionChannel  
+
  Первый этап создания транспорта взаимодействия TCP WSE 3.0 - это реализация интерфейса <xref:System.ServiceModel.Channels.IDuplexSessionChannel> на основе класса <xref:System.Net.Sockets.Socket>. Интерфейс `WseTcpDuplexSessionChannel` является производным от интерфейса <xref:System.ServiceModel.Channels.ChannelBase>. Логика передачи сообщения состоит из двух основных частей: (1) кодирование сообщения в байты и (2) кадрирование этих байтов и передача их по сети.  
   
  `ArraySegment<byte> encodedBytes = EncodeMessage(message);`  
@@ -50,6 +52,7 @@ ms.locfileid: "90558970"
 - сессии. Вызова CloseOutputSession — завершение потока исходящих данных (половина закрытия).  
   
 ## <a name="channel-factory"></a>Фабрика каналов  
+
  Следующий этап создания транспорта TCP - реализация <xref:System.ServiceModel.Channels.IChannelFactory> для каналов клиентов.  
   
 - `WseTcpChannelFactory`является производным от <xref:System.ServiceModel.Channels.ChannelFactoryBase> \<IDuplexSessionChannel> . Это фабрика, которая переопределяет `OnCreateChannel` для создания каналов клиентов.  
@@ -77,6 +80,7 @@ ms.locfileid: "90558970"
 - Как часть контракта канала, все специфичные для домена расширения заключаются в оболочку, как `SocketException` в <xref:System.ServiceModel.CommunicationException>.  
   
 ## <a name="channel-listener"></a>Прослушиватель канала  
+
  Следующий этап создания транспорта TCP - реализация <xref:System.ServiceModel.Channels.IChannelListener> для приема каналов сервера.  
   
 - `WseTcpChannelListener`является производным от <xref:System.ServiceModel.Channels.ChannelListenerBase> \<IDuplexSessionChannel> и переопределяет метод [begin] Open и on [begin] Close для управления временем существования прослушивающего сокета. В OnOpen создается сокет для прослушивания по IP_ANY. Более сложные реализации могут создавать второй сокет для прослушивания также и по IPv6. Они могут также допускать задание IP-адреса в имени узла.  
@@ -92,6 +96,7 @@ ms.locfileid: "90558970"
  Когда принимается новый сокет, инициализируется новый канал сервера с этим сокетом. Все операции ввода и вывода уже реализованы в базовом классе, поэтому этот канал отвечает за инициализацию сокета.  
   
 ## <a name="adding-a-binding-element"></a>Добавление элемента привязки  
+
  Теперь, когда фабрики и каналы построены, они должны быть предоставлены среде выполнения ServiceModel через привязку. Привязка - это коллекция элементов привязки, представляющая стек связи для адреса службы. Каждый элемент стека представлен элементом привязки.  
   
  В этом примере в качестве элемента привязки выступает элемент `WseTcpTransportBindingElement`, являющийся производным элемента <xref:System.ServiceModel.Channels.TransportBindingElement>. Он поддерживает <xref:System.ServiceModel.Channels.IDuplexSessionChannel> и переопределяет следующие методы создания фабрик, связанных с нашей привязкой.  
@@ -115,6 +120,7 @@ ms.locfileid: "90558970"
  Он также содержит члены для клонирования элемента `BindingElement` и возврата схемы (wse.tcp).  
   
 ## <a name="the-wse-tcp-test-console"></a>Тестовая консоль WSE TCP  
+
  Тестовый код для использования этого образца транспорта находится в файле TestCode.cs. Ниже показано, как выполнить построение и запуск образца `TcpSyncStockService`.  
   
  Тестовый код создает пользовательскую привязку, которая использует MTOM для кодирования и `WseTcpTransport` для транспорта. Он также настраивает AddressingVersion для соответствия WSE 3.0, как показано в следующем примере кода.  
