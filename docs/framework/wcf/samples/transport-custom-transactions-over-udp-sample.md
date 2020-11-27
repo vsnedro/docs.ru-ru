@@ -2,17 +2,19 @@
 title: 'Транспорт: пример пользовательских транзакций по протоколу UDP'
 ms.date: 03/30/2017
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
-ms.openlocfilehash: ce1e6f0aedff46aaf58e22d8c23c37b03f8789dd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1a5b6afd7dc078b0e6e270888973b34a91bfdb9f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596543"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295669"
 ---
 # <a name="transport-custom-transactions-over-udp-sample"></a>Транспорт: пример пользовательских транзакций по протоколу UDP
+
 Этот пример основан на образце [Transport: UDP](transport-udp.md) в средстве[расширения транспорта](transport-extensibility.md)Windows Communication Foundation (WCF). Он расширяет пример транспорта UDP за счет поддержки пользовательского потока транзакций и иллюстрирует использование свойства <xref:System.ServiceModel.Channels.TransactionMessageProperty>.  
   
 ## <a name="code-changes-in-the-udp-transport-sample"></a>Изменения кода в примере транспорта UDP  
+
  Чтобы продемонстрировать поток транзакций, в этом примере изменен контракт службы для `ICalculatorContract`. Здесь этот контракт требует область транзакции для `CalculatorService.Add()`. Кроме того, в контракт операции `System.Guid` добавлен параметр `Add`. Этот параметр используется для передачи службе идентификатора транзакции клиента.  
   
 ```csharp  
@@ -178,7 +180,7 @@ if (transaction != null)
   
 1. Чтобы выполнить сборку решения, следуйте инструкциям в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).  
   
-2. Текущий пример должен выполняться аналогично примеру [Transport: UDP](transport-udp.md) . Для его запуска запустите службу с UdpTestService.exe. Если вы используете Windows Vista, необходимо запустить службу с повышенными привилегиями. Для этого щелкните правой кнопкой мыши файл Удптестсервице. exe в проводнике и выберите команду **Запуск от имени администратора**.  
+2. Текущий пример должен выполняться аналогично примеру [Transport: UDP](transport-udp.md) . Для его запуска запустите службу с UdpTestService.exe. Если вы используете Windows Vista, необходимо запустить службу с повышенными привилегиями. Для этого щелкните правой кнопкой мыши UdpTestService.exe в проводнике и выберите команду **Запуск от имени администратора**.  
   
 3. Получатся следующие результаты.  
   
@@ -262,6 +264,6 @@ if (transaction != null)
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Транспорт: UDP](transport-udp.md)

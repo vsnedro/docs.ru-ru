@@ -2,19 +2,20 @@
 title: Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
 ms.date: 03/30/2017
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-ms.openlocfilehash: c1b92568d90734a33a7b36af987fdb7cbbbe5149
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1226f02dd96b8ab1502869cb319c6efe1ad09d4f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90557831"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295565"
 ---
 # <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>Практическое руководство. Как программно добавить возможность обнаружения к службе и клиенту WCF
+
 В этом разделе объясняется, как сделать службу Windows Communication Foundation (WCF) обнаруживаемой. Он основан на образце с [самостоятельным размещением](../samples/self-host.md) .  
   
 ### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>Настройка образца службы существующего резидентного размещения для обнаружения  
   
-1. Откройте решение для самостоятельного размещения в Visual Studio 2012. Образец находится в каталоге TechnologySamples\Basic\Service\Hosting\SelfHost.  
+1. Откройте решение Self-Host в Visual Studio 2012. Образец находится в каталоге TechnologySamples\Basic\Service\Hosting\SelfHost.  
   
 2. Добавьте ссылку на проект службы `System.ServiceModel.Discovery.dll`. Может появиться сообщение об ошибке "System. Для ServiceModel.Discovery.dll или одной из его зависимостей требуется более поздняя версия .NET Framework, чем та, которая указана в проекте... " Если вы видите это сообщение, щелкните правой кнопкой мыши проект в обозреватель решений и выберите пункт **Свойства**. В окне **Свойства проекта** убедитесь, что **Целевая платформа** имеет значение [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
   
@@ -220,7 +221,8 @@ ms.locfileid: "90557831"
     ```  
   
 ## <a name="example"></a>Пример  
- Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на образце с [самостоятельным размещением](../samples/self-host.md) , отображаются только измененные файлы. Дополнительные сведения о примере с самостоятельным размещением см. в разделе [инструкции по установке](../samples/set-up-instructions.md).  
+
+ Ниже приведен полный листинг кода для данного образца. Поскольку этот код основан на образце с [самостоятельным размещением](../samples/self-host.md) , отображаются только измененные файлы. Дополнительные сведения о Self-Host примере см. в разделе [инструкции по установке](../samples/set-up-instructions.md).  
   
 ```csharp  
 // Service.cs  

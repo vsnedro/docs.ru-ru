@@ -2,14 +2,15 @@
 title: Внутренние особенности размещения службы рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
-ms.openlocfilehash: 7b47293211ee8143b1ce713c64ff1d5b22161b45
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 23ee0533d5386164dc95cb7fe2c61a626ea3f96e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594885"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295747"
 ---
 # <a name="workflow-service-host-internals"></a>Внутренние особенности размещения службы рабочего процесса
+
 Объект <xref:System.ServiceModel.WorkflowServiceHost> предоставляет возможность размещения служб рабочего процесса. Он отвечает за прослушивание входящих сообщений и перенаправление их соответствующему экземпляру службы рабочего процесса, управляет выгрузкой и сохранением бездействующих рабочих процессов, а также выполняет другие функции. В этом разделе описано, как объект WorkflowServiceHost обрабатывает входящие сообщения.  
   
 ## <a name="workflowservicehost-overview"></a>Обзор WorkflowServiceHost  
@@ -23,6 +24,7 @@ ms.locfileid: "84594885"
  Объект <xref:System.ServiceModel.WorkflowServiceHost> предоставляет также конечные точки приложений, которые прослушивают входящие сообщения приложений. При поступлении входящего сообщения оно перенаправляется соответствующему экземпляру службы рабочих процессов (если он в данный момент загружен). При необходимости создается новый экземпляр рабочего процесса. Если имеется сохраненный экземпляр, он загружается из хранилища.  
   
 ## <a name="workflowservicehost-details"></a>Подробные сведения о классе WorkflowServiceHost  
+
  На следующей схеме показано <xref:System.ServiceModel.WorkflowServiceHost> , как обрабатывает сообщения более подробно:  
   
  ![Схема, на которой показан поток сообщений узла службы рабочего процесса.](./media/workflow-service-host-internals/workflow-service-host-message-flow.gif)  
@@ -50,7 +52,7 @@ ms.locfileid: "84594885"
 > [!WARNING]
 > Открытие узла размещения служб рабочих процессов завершится с ошибкой, если SQL Server настроен для прослушивания только по протоколу NamedPipe.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Службы рабочего процесса](workflow-services.md)
 - [Размещение службы рабочего процесса](hosting-workflow-services.md)
