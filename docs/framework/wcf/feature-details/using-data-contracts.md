@@ -10,22 +10,25 @@ helpviewer_keywords:
 - WCF, data
 - data contracts [WCF]
 ms.assetid: a3ae7b21-c15c-4c05-abd8-f483bcbf31af
-ms.openlocfilehash: 80ea2a8bd67c627fbe11ee07e640704c1a41ef7b
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 97d234d094abf7666a341493f6b394c73513fa70
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289871"
 ---
 # <a name="using-data-contracts"></a>Использование контрактов данных
+
 *Контракт данных* - формальное соглашение между службой и клиентом, абстрактно описывающее данные, обмен которыми происходит. Это значит, что для взаимодействия клиент и служба не обязаны совместно использовать одни и те же типы, достаточно совместно использовать одни и те же контракты данных. Контракт данных для каждого параметра и возвращаемого типа четко определяет, какие данные сериализуются (превращаются в XML) для обмена.  
   
 ## <a name="data-contract-basics"></a>Основные сведения о контрактах данных  
+
  Windows Communication Foundation (WCF) использует механизм сериализации, именуемый сериализатором контрактов данных, по умолчанию для сериализации и десериализации данных (преобразования их в XML и обратно). Все .NET Framework примитивные типы, такие как целые числа и строки, а также определенные типы, которые рассматриваются как примитивы, такие как <xref:System.DateTime> и <xref:System.Xml.XmlElement> , могут быть сериализованы без какой-либо другой подготовки и считаются контрактами данных по умолчанию. Многие типы .NET Framework также имеют существующие контракты данных. Полный список сериализуемых типов см. в разделе [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md).  
   
  Для сериализации новых созданных сложных типов необходимо определить контракты данных. По умолчанию <xref:System.Runtime.Serialization.DataContractSerializer> определяет контракт данных и сериализует все открытые типы. Все открытые свойства чтения/записи и поля типа сериализуются. Можно исключать члены из сериализации с помощью <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute>. Также можно явно создавать контракт данных с помощью атрибутов <xref:System.Runtime.Serialization.DataContractAttribute> и <xref:System.Runtime.Serialization.DataMemberAttribute> . Обычно это делается с помощью применения атрибута <xref:System.Runtime.Serialization.DataContractAttribute> к типу. Данный атрибут может быть применен к классам, структурам и перечислениям. После этого необходимо применить атрибут <xref:System.Runtime.Serialization.DataMemberAttribute> к каждому члену типа контракта данных, чтобы указать, что он является *членом данных*, который необходимо сериализовать. Дополнительные сведения см. в разделе [сериализуемые типы](serializable-types.md).  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере показано явное применение атрибутов <xref:System.ServiceModel.ServiceContractAttribute> и <xref:System.ServiceModel.OperationContractAttribute> к контракту службы (интерфейсу). В нем показано, что типы-примитивы не требуют контрактов данных, в отличие от сложных типов.  
   
  [!code-csharp[C_DataContract#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#1)]
@@ -37,6 +40,7 @@ ms.locfileid: "85244729"
  [!code-vb[C_DataContract#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#2)]  
   
 ### <a name="notes"></a>Примечания  
+
  Существуют некоторые моменты, которые необходимо учитывать при создании контрактов данных:  
   
 - Атрибут <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> учитывается только при использовании в неотмеченных типах. Сюда входят типы, которые не отмечены ни одним из атрибутов <xref:System.Runtime.Serialization.DataContractAttribute>, <xref:System.SerializableAttribute>, <xref:System.Runtime.Serialization.CollectionDataContractAttribute>, <xref:System.Runtime.Serialization.EnumMemberAttribute> или отмечены как сериализуемые любыми другими способами (например, <xref:System.Xml.Serialization.IXmlSerializable>).  

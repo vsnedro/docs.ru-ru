@@ -3,14 +3,15 @@ title: Упрощенная конфигурация служб WCF
 description: Узнайте, как реализовать и настроить типичную службу и клиент с помощью WCF. Служба взаимодействует с помощью конечной точки, указанной в файле конфигурации.
 ms.date: 03/30/2017
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
-ms.openlocfilehash: dd05754dcfe36cb2e9c28ce20a5927585f85478f
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 087618d603ea1c7df75ab5383f6c95b781dca847
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554271"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96290027"
 ---
 # <a name="simplified-configuration-for-wcf-services"></a>Упрощенная конфигурация служб WCF
+
 В этом примере показано, как реализовать и настроить типичную службу и клиент с помощью Windows Communication Foundation (WCF). Этот образец является основой для всех остальных базовых образцов технологий.  
   
  Эта служба, которая предоставляет конечную точку для взаимодействия со службой, использует упрощенную конфигурацию в .NET Framework 4. До .NET Framework 4 конечная точка обычно определяется в файле конфигурации (Web.config), как показано в следующем примере кода конфигурации.  
