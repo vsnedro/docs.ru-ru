@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - message security [WCF]
 ms.assetid: e681f3bd-0c09-4a58-b0e4-0ecbdf1aa6c7
-ms.openlocfilehash: 713737b129771967958fddf44e9ef28583d49422
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 24e7cc3fd9b349aaba733a809a03be2454bd371d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554082"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288402"
 ---
 # <a name="securing-services-and-clients"></a>Защита служб и клиентов
+
 Сведения в этом разделе посвящены безопасности программирования в Windows Communication Foundation (WCF). Обычно обеспечение безопасности включает выбор подходящей предоставляемой системой привязки, задание свойств элемента безопасности и задание свойств поведений службы, управляющих извлечением учетных данных для использования службой или клиентом. Эти методы охватывают требования большинства пользователей для большинства сценариев, как показано в [типичных сценариях безопасности](common-security-scenarios.md). Если ваш сценарий требует больше возможностей, сначала ознакомьтесь [с возможностями безопасности с помощью пользовательских привязок](security-capabilities-with-custom-bindings.md). Если решение не очевидно, см. раздел [расширение безопасности](../extending/extending-security.md). При создании (или взаимодействии с) системой, использующей обширные утверждения, см. разделы в разделе [авторизация](authorization-in-wcf.md).  
   
 ## <a name="in-this-section"></a>в этом разделе  
+
  [Программирование безопасности WCF](programming-wcf-security.md)  
  Общие сведения о модели программирования, используемой для защиты сообщений.  
   
@@ -31,6 +33,7 @@ ms.locfileid: "90554082"
  Описание некоторых стандартных задач, которые требуется выполнять при использовании сертификатов X.509.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -38,6 +41,7 @@ ms.locfileid: "90554082"
  <xref:System.ServiceModel.Security>  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Основные понятия безопасности](security-concepts.md)  
   
  [Расширение безопасности](../extending/extending-security.md)  

@@ -4,17 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - behavior [WCF], service performance
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
-ms.openlocfilehash: 9cc5141805504bc46391105f475860b032f12d32
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 44cc924de0c3079bb2f8125a7ac63fa494d4aca1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600235"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289416"
 ---
 # <a name="using-servicethrottlingbehavior-to-control-wcf-service-performance"></a>Использование ServiceThrottlingBehavior для управления производительностью службы WCF
+
 Класс <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> представляет свойства, которые можно использовать для ограничения количества экземпляров или сеансов, создаваемых на уровне приложения. Используя такое поведение, можно точно настроить производительность приложения Windows Communication Foundation (WCF).  
   
 ## <a name="controlling-service-instances-and-concurrent-calls"></a>Управление экземплярами службы и одновременными вызовами  
+
  С помощью свойства <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> задайте максимальное количество одновременно обрабатываемых сообщений в классе <xref:System.ServiceModel.ServiceHost>, а с помощью свойства <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentInstances%2A> задайте максимальное количество объектов <xref:System.ServiceModel.InstanceContext> в службе.  
   
  Поскольку определение параметров для этих свойств обычно происходит после реального опыта работы приложения с загрузкой, параметры <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> свойств обычно задаются в файле конфигурации приложения с помощью [\<serviceThrottling>](../../configure-apps/file-schema/wcf/servicethrottling.md) элемента.  

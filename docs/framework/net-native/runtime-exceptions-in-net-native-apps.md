@@ -2,20 +2,22 @@
 title: Исключения среды выполнения в собственных приложениях .NET
 ms.date: 03/30/2017
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
-ms.openlocfilehash: 12df2ef7bf6e86a60dfa4c130f35969e72ac5211
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5c521eed94590e583a761cc2003460875e690fa9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180949"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287856"
 ---
 # <a name="runtime-exceptions-in-net-native-apps"></a>Исключения среды выполнения в собственных приложениях .NET
+
 Очень важно выполнять тестирование сборок выпуска приложения универсальной платформы Windows на их целевых платформах, поскольку конфигурации отладки и выпуска совершенно различны. По умолчанию конфигурация отладки использует для компиляции приложения среду выполнения .NET Core, но конфигурация выпуска использует для компиляции приложения в машинный код среду выполнения .NET Native.  
   
 > [!IMPORTANT]
-> Сведения о работе с исключениями [MissingMetadataException](missingmetadataexception-class-net-native.md), [MissingInteropDataException](missinginteropdataexception-class-net-native.md)и [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) , которые могут возникнуть при тестировании версий выпуска приложения, см. в разделе "шаг 4. разрешение отсутствующих метаданных вручную: в [Начало работы](getting-started-with-net-native.md) статье, а также ссылку на файл конфигурации [отражения и .NET Native](reflection-and-net-native.md) и [директив среды выполнения (RD. XML)](runtime-directives-rd-xml-configuration-file-reference.md).  
+> Сведения о работе с исключениями [MissingMetadataException](missingmetadataexception-class-net-native.md), [MissingInteropDataException](missinginteropdataexception-class-net-native.md)и [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) , которые могут возникнуть при тестировании версий выпуска приложения, см. в разделе "шаг 4. Ручное разрешение отсутствующих метаданных: [Начало работы](getting-started-with-net-native.md) раздел, а также ссылку на файл конфигурации [отражения и .NET Native](reflection-and-net-native.md) и [директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## <a name="debug-and-release-builds"></a>Отладочные и выпускные сборки  
+
  Когда отладочная сборка выполняется в среде выполнения .NET Core, она не компилируется в машинный код. Это делает все службы, обычно предоставляемые средой выполнения, доступными вашему приложению.  
   
  С другой стороны, выпускная сборка компилируется в машинный код для целевых платформ, при этом удаляется большинство зависимостей от внешних сред выполнения и библиотек и выполняется серьезная оптимизация кода для достижения максимальной производительности.  
@@ -32,7 +34,9 @@ ms.locfileid: "79180949"
 > Вы можете управлять тем, будут ли отладочные и выпускные сборки компилироваться с помощью цепочки инструментов .NET Native, устанавливая или снимая флажок **Компилировать с использованием цепочки инструментов машинного кода .NET** .   Однако обратите внимание, что Магазин Windows всегда будет компилировать рабочую версию вашего приложения с помощью цепочки инструментов .NET Native.  
   
 <a name="Messages"></a>
+
 ## <a name="runtime-exception-messages"></a>Runtime exception messages  
+
  Чтобы свести к минимуму размер исполняемого файла приложения, .NET Native не включает полный текст сообщений об исключениях. В результате исключения среды выполнения, возникающие в выпускной сборке, могут не отображать полный текст сообщений об исключениях. Вместо этого текст может содержать подстроку со ссылкой на дополнительные сведения. Например, сведения об исключении могут выглядеть следующим образом:  
   
 ```output
@@ -52,7 +56,9 @@ Additional information: Value does not fall within the expected range.
 ```  
   
 <a name="CallStack"></a>
+
 ## <a name="runtime-call-stack"></a>Runtime call stack  
+
  Из-за встраивания и других видов оптимизации стек вызовов, отображаемый приложением, которое скомпилировано цепочкой инструментов .NET Native, может не позволить вам четко определить путь к исключению среды выполнения.  
   
  Чтобы получить полный стек, запустите отладочную сборку.  

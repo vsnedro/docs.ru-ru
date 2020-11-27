@@ -3,17 +3,19 @@ title: Разработка рабочих процессов, действий 
 description: Определение рабочего процесса Workflow Foundation — это дерево настроенных объектов действий. Используйте код для создания определений рабочих процессов, действий и выражений.
 ms.date: 03/30/2017
 ms.assetid: cefc9cfc-2882-4eb9-8c94-7a6da957f2b2
-ms.openlocfilehash: d169049c47c154858a2e653b5f286fa6b66ba44d
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 5355f2090317a0bce3fec0f46550b202bd0af095
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063800"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289130"
 ---
 # <a name="authoring-workflows-activities-and-expressions-using-imperative-code"></a>Разработка рабочих процессов, действий и выражений с помощью императивного кода
+
 Определение рабочего процесса представляет собой дерево настроенных объектов действий. Это дерево действий можно определить многими способами, включая редактирование XAML вручную и использование конструктора рабочих процессов для создания XAML. Но использование XAML не является обязательным. Определения рабочих процессов могут быть также созданы вручную. В этом разделе представлены общие сведения о создании определений, действий и выражений рабочего процесса с помощью кода. Примеры работы с рабочими процессами XAML с помощью кода см. [в разделе Сериализация рабочих процессов и действий в XAML и обратно](serializing-workflows-and-activities-to-and-from-xaml.md).  
   
 ## <a name="creating-workflow-definitions"></a>Создание определений рабочих процессов  
+
  Определение рабочего процесса можно создать путем создания экземпляра типа действия и настройки свойств объекта действия. Для действий, которые не содержат дочерних действий, определение можно создать программно с помощью нескольких строк кода.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#47](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#47)]  
@@ -26,6 +28,7 @@ ms.locfileid: "88063800"
  [!code-csharp[CFX_WorkflowApplicationExample#48](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#48)]  
   
 ### <a name="using-object-initializers"></a>Использование инициализаторов объектов  
+
  В примерах в этом разделе используется синтаксис инициализации объектов. Синтаксис инициализации объектов можно использовать для создания определений рабочих процессов в коде, поскольку он обеспечивает иерархическое представление действий в рабочем процессе и показывает связи между действиями. При программном создании рабочих процессов нет необходимости использовать синтаксис инициализации объектов. Следующий пример функционально эквивалентен предыдущему примеру.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#49](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#49)]  
@@ -33,6 +36,7 @@ ms.locfileid: "88063800"
  Дополнительные сведения об инициализаторах объектов см. [в разделе как инициализировать объекты без вызова конструктора (руководство по программированию на C#)](../../csharp/programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md) и [как объявить объект с помощью инициализатора объекта](../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md).  
   
 ### <a name="working-with-variables-literal-values-and-expressions"></a>Работа с переменными, литеральными значениями и выражениями  
+
  При создании определения рабочего процесса с помощью кода необходимо помнить, какая часть кода выполняется как часть создания определения рабочего процесса и какая часть кода выполняется как часть выполнения экземпляра рабочего процесса. Например, следующий рабочий процесс должен создавать случайное число и записывать его в консоль.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#50](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#50)]  
@@ -75,6 +79,7 @@ new Assign<int>
  Во время выполнения выражения Visual Basic компилируются в выражения LINQ. Оба приведенных примера сериализуются в языке XAML, однако, если сериализованный язык XAML должен просматриваться и изменяться в конструкторе рабочих процессов, используйте для выражений <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>. Сериализованные рабочие процессы, использующие `ExpressionServices.Convert`, могут быть открыты в конструкторе, но значение выражения будет пустым. Дополнительные сведения о сериализации рабочих процессов в XAML см. [в разделе Сериализация рабочих процессов и действий в XAML и обратно](serializing-workflows-and-activities-to-and-from-xaml.md).  
   
 #### <a name="literal-expressions-and-reference-types"></a>Литеральные выражения и ссылочные типы  
+
  Литеральные выражения представляются действием <xref:System.Activities.Expressions.Literal%601> в рабочем процессе. Следующие действия <xref:System.Activities.Statements.WriteLine> функционально эквивалентны.  
   
 ```csharp  
@@ -111,6 +116,7 @@ new Assign
  Дополнительные сведения о выражениях см. в разделе [выражения](expressions.md).  
   
 #### <a name="invoking-methods-on-objects-using-expressions-and-the-invokemethod-activity"></a>Вызов методов в объектах с помощью выражений и действия InvokeMethod  
+
  Действие <xref:System.Activities.Expressions.InvokeMethod%601> можно использовать для вызова статических методов и методов экземпляров классов в платформе .NET Framework. В предыдущем примере этого раздела случайное число было создано с помощью класса <xref:System.Random>.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#51](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#51)]  
@@ -134,6 +140,7 @@ new InvokeMethod<int>
  Поскольку <xref:System.Random.Next%2A> не статический метод, предоставляется экземпляр класса <xref:System.Random> для свойства <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A>. В этом примере создается новый экземпляр класса с использованием выражения Visual Basic, но он мог быть также создан ранее и сохранен в переменной рабочего процесса. В этом примере будет проще использовать действие <xref:System.Activities.Statements.Assign%601> вместо действия <xref:System.Activities.Expressions.InvokeMethod%601>. Если вызов метода, в конечном счете осуществляемый действием <xref:System.Activities.Statements.Assign%601> или действием <xref:System.Activities.Expressions.InvokeMethod%601>, является долго выполняющимся, преимущество имеет <xref:System.Activities.Expressions.InvokeMethod%601> за счет наличия свойства <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously%2A>. Если это свойство имеет значение `true`, вызванный метод работает асинхронно относительно рабочего процесса. Если параллельно работают другие действия, они не будут заблокированы, пока метод выполняется асинхронно. Кроме того, если вызываемый метод не имеет возвращаемого значения, то для его вызова подойдет <xref:System.Activities.Expressions.InvokeMethod%601>.  
   
 ## <a name="arguments-and-dynamic-activities"></a>Аргументы и динамические действия  
+
  Определение рабочего процесса создается в коде путем сборки действий в дерево действий и настройки всех свойств и аргументов. Для существующих аргументов можно выполнить привязку, но новые аргументы нельзя добавить к действиям. Сюда относятся аргументы рабочего процесса, передаваемые корневому действию. В императивном коде аргументы рабочего процесса указываются как свойства для нового CLR-типа, а в XAML они объявляются с помощью `x:Class` и `x:Member`. Поскольку при создании определения рабочего процесса как дерева объектов, содержащихся в памяти, не создается нового CLR-типа, аргументы не могут быть добавлены. Однако аргументы могут быть добавлены к <xref:System.Activities.DynamicActivity>. В этом примере создается действие <xref:System.Activities.DynamicActivity%601>, которое принимает и складывает два целочисленных аргумента и возвращает результат. Для каждого аргумента создается свойство <xref:System.Activities.DynamicActivityProperty>, результат операции присваивается аргументу <xref:System.Activities.Activity%601.Result%2A> действия <xref:System.Activities.DynamicActivity%601>.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#55](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#55)]  
@@ -141,6 +148,7 @@ new InvokeMethod<int>
  Дополнительные сведения о динамических действиях см. [в разделе Создание действия во время выполнения](creating-an-activity-at-runtime-with-dynamicactivity.md).  
   
 ## <a name="compiled-activities"></a>Скомпилированные действия  
+
  Динамические действия - это один из способов определить действие, которое содержит аргументы в коде, но действия также можно создавать в коде и компилировать в типы. Можно создавать простые действия, производные от класса <xref:System.Activities.CodeActivity>, и асинхронные действия, производные от класса <xref:System.Activities.AsyncCodeActivity>. Эти действия могут иметь аргументы и возвращаемые значения и задают логику с помощью императивного кода. Примеры создания таких типов действий см. в статьях [базовый класс CodeActivity](workflow-activity-authoring-using-the-codeactivity-class.md) и [Создание асинхронных действий](creating-asynchronous-activities-in-wf.md).  
   
  Действия, производные от <xref:System.Activities.NativeActivity>, могут определять свою логику с помощью императивного кода и содержать дочерние действия, определяющие логику. Кроме того, они имеют полный доступ к возможностям среды выполнения, таким как создание закладок. Примеры создания <xref:System.Activities.NativeActivity> действий на основе см. в статьях [базовый класс NativeActivity](nativeactivity-base-class.md), [инструкции: Создание действия](how-to-create-an-activity.md)и пример [пользовательской составной модели с использованием собственного действия](./samples/custom-composite-using-native-activity.md) .  

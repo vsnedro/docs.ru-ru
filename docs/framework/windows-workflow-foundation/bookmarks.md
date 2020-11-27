@@ -1,24 +1,28 @@
 ---
-title: Закладки - WF
+title: Закладки — WF
 ms.date: 03/30/2017
 ms.assetid: 9b51a346-09ae-455c-a70a-e2264ddeb9e2
-ms.openlocfilehash: c5bd8130ee623599e80014777baf92986c3b6969
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7a52823ff68d8f09895bb3a9323a57d3abccd823
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183007"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289117"
 ---
 # <a name="bookmarks"></a>Закладки
+
 Закладки - это механизм, позволяющий действиям пассивно ожидать ввода, не останавливая поток рабочего процесса. Когда действие сообщает об ожидании внешнего воздействия, оно может создать закладку. Это сообщает среде выполнения, что выполнение действия не должно считаться завершенным даже в случае возвращения управления из выполняющегося в данный момент метода (создавшего закладку <xref:System.Activities.Bookmark>).  
   
 ## <a name="bookmark-basics"></a>Основные сведения о закладках  
+
  Закладка <xref:System.Activities.Bookmark> представляет точку, с которой может быть продолжено выполнение (и через которую могут быть переданы входные данные) в экземпляре рабочего процесса. Обычно закладке <xref:System.Activities.Bookmark> присваиваются имя и внешний код (ведущего приложения или расширения), используемый для продолжения работы с точки закладки с соответствующими данными. При возобновлении закладки <xref:System.Activities.Bookmark> среда выполнения рабочего процесса планирует делегат <xref:System.Activities.BookmarkCallback>, который был связан с этой закладкой <xref:System.Activities.Bookmark> на момент ее создания.  
   
 ## <a name="bookmark-options"></a>Параметры закладки  
+
  В классе <xref:System.Activities.BookmarkOptions> указывается тип создаваемой закладки <xref:System.Activities.Bookmark>. Возможны следующие (не исключающие друг друга) значения: <xref:System.Activities.BookmarkOptions.None>, <xref:System.Activities.BookmarkOptions.MultipleResume> и <xref:System.Activities.BookmarkOptions.NonBlocking>. При создании закладки <xref:System.Activities.BookmarkOptions.None>, которая будет возобновлена ровно один раз, рекомендуется использовать вариант по умолчанию <xref:System.Activities.Bookmark>. При создании закладки <xref:System.Activities.BookmarkOptions.MultipleResume>, которая может быть возобновлена несколько раз, следует использовать вариант <xref:System.Activities.Bookmark>. При создании закладки <xref:System.Activities.BookmarkOptions.NonBlocking>, которая может быть не продолжена вообще, следует использовать параметр <xref:System.Activities.Bookmark>. В отличие от закладок, созданных с использованием параметров <xref:System.Activities.BookmarkOptions> по умолчанию, закладки типа <xref:System.Activities.BookmarkOptions.NonBlocking> не мешают завершению работы действия.  
   
 ## <a name="bookmark-resumption"></a>Возобновление закладок  
+
  Закладки могут возобновляться кодом извне рабочего процесса с использованием одного из перегруженных методов <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A>. В этом примере создается действие `ReadLine`. При выполнении действие `ReadLine` создает <xref:System.Activities.Bookmark>, регистрирует обратный вызов и ждет возобновления чтения с закладки <xref:System.Activities.Bookmark>. После возобновления чтения с закладки действие `ReadLine` присваивает данные, переданные с закладкой <xref:System.Activities.Bookmark>, своему аргументу <xref:System.Activities.Activity%601.Result%2A>.  
   
 ```csharp  
@@ -114,4 +118,5 @@ syncEvent.WaitOne();
  При выполнении действие `ReadLine` создает закладку <xref:System.Activities.Bookmark> с именем `UserName` и ждет возобновления чтения с этой закладки. Узел собирает необходимые данные и возобновляет чтение с закладки <xref:System.Activities.Bookmark>. Рабочий процесс возобновляется, отображает имя и затем завершается. Следует заметить, что для возобновления закладки не требуется наличие кода синхронизации. Закладка <xref:System.Activities.Bookmark> может быть возобновлена только при простое рабочего процесса; если рабочий процесс не простаивает, вызов <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> блокируется, пока рабочий процесс не перейдет в состояние простоя.  
   
 ## <a name="bookmark-resumption-result"></a>Результат возобновления закладки  
+
  <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> возвращает значение перечисления <xref:System.Activities.BookmarkResumptionResult>, сообщая о результате выполнения запроса возобновления закладки. Возможны следующие возвращаемые значения: <xref:System.Activities.BookmarkResumptionResult.Success>, <xref:System.Activities.BookmarkResumptionResult.NotReady> и <xref:System.Activities.BookmarkResumptionResult.NotFound>. Ведущие приложения и расширения могут использовать эти значения для определения дальнейших действий.

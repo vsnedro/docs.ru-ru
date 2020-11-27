@@ -2,17 +2,19 @@
 title: Возможности безопасности при использовании пользовательских привязок
 ms.date: 03/30/2017
 ms.assetid: a2425679-484a-4e6c-9c98-7da7304f1516
-ms.openlocfilehash: 48d17543f2b133c74bcfa82cfe1a2a0de28b1d01
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1b12907481ccb3f3c5f4b8aaba6ede8ebfa6228a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595197"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288311"
 ---
 # <a name="security-capabilities-with-custom-bindings"></a>Возможности безопасности при использовании пользовательских привязок
+
 Основные задачи обеспечения безопасности можно выполнить, используя одну из предоставляемых системой привязок. Однако при необходимости в дополнительных элементах управления можно создать пользовательскую привязку с помощью элемента <xref:System.ServiceModel.Channels.SecurityBindingElement>, следуя объяснениям в этом разделе. Дополнительные сведения о пользовательских привязках см. в разделе [пользовательские привязки](../extending/custom-bindings.md).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Режимы проверки подлинности SecurityBindingElement](securitybindingelement-authentication-modes.md)  
  Содержит описание режимов проверки подлинности, которые возможны для пользовательской привязки.  
   
@@ -41,16 +43,18 @@ ms.locfileid: "84595197"
  Описывается, как отключение шифрования цифровых подписей может увеличить производительность.  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.ServiceModel.Channels.SecurityBindingElement>  
   
  [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md)  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Основные сведения об уровне защиты](../understanding-protection-level.md)  
   
  [Защита служб и клиентов](securing-services-and-clients.md)  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Привязки и безопасность](bindings-and-security.md)
 - [Обзор безопасности](security-overview.md)

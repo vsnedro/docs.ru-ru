@@ -1,15 +1,16 @@
 ---
-title: <Parameter>Элемент (.NET Native)
+title: <Parameter> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
-ms.openlocfilehash: c6dfc347d44a794ee8496c45ca879f9daab12b22
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7e812ab60eb0a89eb868346733a8ea74e2f76d3e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128196"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287869"
 ---
-# <a name="parameter-element-net-native"></a>\<Parameter>Элемент (.NET Native)
+# <a name="parameter-element-net-native"></a>\<Parameter> Элемент (.NET Native)
+
 Применяет политику отражения к типу аргумента, переданного методу.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "73128196"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -49,17 +51,18 @@ ms.locfileid: "73128196"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*parameter_name*|Имя параметра метода, к которому применяется политика. Например, сигнатура метода `String.CompareTo(Object value)`, значение `Name` — атрибут «value».|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения: `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -69,11 +72,12 @@ ms.locfileid: "73128196"
 |[\<Method>](method-element-net-native.md)|Применяет политику отражения среды выполнения к конструктору или методу.|  
   
 ## <a name="remarks"></a>Примечания  
+
  `<Parameter>`Элемент является дочерним по отношению к [\<Method>](method-element-net-native.md) элементу и используется для применения политики к конкретному параметру метода. Конкретный параметр метода указывается по имени, а не по типу. По крайней мере один атрибут, который представляет тип политики, такие как `Activate` или `Dynamic`, должен присутствовать.  
   
 ## <a name="see-also"></a>См. также
 
-- [\<Method>Дерев](method-element-net-native.md)
+- [\<Method> Элемент](method-element-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)

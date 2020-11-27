@@ -9,12 +9,12 @@ helpviewer_keywords:
 - restricted security environment
 - code security, sandboxing
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-ms.openlocfilehash: 415a42f7c4f4866bb72f19bdd6f02bfdb5158bf8
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: baa04a3c55728590b8aa502648a8ab42bf62f903
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855807"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288285"
 ---
 # <a name="how-to-run-partially-trusted-code-in-a-sandbox"></a>Практическое руководство. Выполнение не вполне безопасного кода в изолированной среде
 
@@ -178,6 +178,7 @@ AppDomain.CreateDomain( string friendlyName,
      Утверждение с полным доверием используется для получения расширенной информации из <xref:System.Security.SecurityException>. Если не используется утверждение <xref:System.Security.PermissionSet.Assert%2A>, метод <xref:System.Security.SecurityException.ToString%2A> исключения <xref:System.Security.SecurityException> обнаружит наличие в стеке кода с частичным доверием и ограничит возвращенные сведения. Если бы код с частичным доверием мог считать эти сведения, создалась бы угроза безопасности. Во избежание этого разрешение <xref:System.Security.Permissions.UIPermission> не предоставляется. Утверждения полного доверия нужно использовать очень осторожно и только в том случае, если вы уверены, что уровень разрешений кода с частичным доверием не повысится до уровня полного доверия. Как правило, не следует вызывать код без полного доверия в той же функции и после вызова утверждения полного доверия. Рекомендуется всегда отменять утверждение после завершения его использования.  
   
 ## <a name="example"></a>Пример  
+
  В примере ниже реализуется процедура, описанная в предыдущем подразделе. В этом примере проект с именем `Sandboxer` в решении Visual Studio содержит проект с именем `UntrustedCode`, реализующий класс `UntrustedClass`. В этом сценарии предполагается, что загружена библиотечная сборка, содержащая метод, который должен вернуть значение `true` или `false`, указывающее, является ли предоставленное число числом Фибоначчи. Вместо этого метод пытается считать файл с компьютера. В примере кода ниже показан ненадежный код.  
   
 ```csharp
@@ -273,6 +274,6 @@ class Sandboxer : MarshalByRefObject
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Правила написания безопасного кода](../../standard/security/secure-coding-guidelines.md)

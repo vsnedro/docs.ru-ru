@@ -2,14 +2,15 @@
 title: HttpTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 088a7bce-6bb2-4839-ad74-f68d4b1aa0f9
-ms.openlocfilehash: 5e23342d57621554aaec67c5c568bb75202a9454
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 2be32591c4844cc6d5d0f02916dd1563bb15dc2a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963492"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288792"
 ---
 # <a name="httptransportbindingelement"></a>HttpTransportBindingElement
+
 HttpTransportBindingElement  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -33,92 +34,106 @@ class HttpTransportBindingElement : TransportBindingElement
 ```  
   
 ## <a name="methods"></a>Методы  
+
  Класс HttpTransportBindingElement не определяет никаких методов.  
   
 ## <a name="properties"></a>Свойства  
+
  Класс HttpTransportBindingElement имеет следующие свойства.  
   
 ### <a name="allowcookies"></a>AllowCookies  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, определяющее, принимает ли клиент файлы Cookie и распространяет ли он их на будущие запросы.  
   
 ### <a name="authenticationscheme"></a>AuthenticationScheme  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Схема проверки подлинности, используемая для проверки подлинности клиентских запросов, обрабатываемых HTTP-прослушивателем.  
   
 ### <a name="bypassproxyonlocal"></a>BypassProxyOnLocal  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее, игнорируются ли прокси-серверы для локальных адресов.  
   
 ### <a name="hostnamecomparisonmode"></a>HostNameComparisonMode  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее, используется ли имя узла для доступа к службе при сопоставлении по универсальному коду ресурса (URI).  
   
 ### <a name="keepaliveenabled"></a>KeepAliveEnabled  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Когда включено, соединения HTTP остаются в активном состоянии независимо от уровня активности.  
   
 ### <a name="maxbuffersize"></a>MaxBufferSize  
+
  Тип данных: sint32  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Максимальный размер буферного пула.  
   
 ### <a name="proxyaddress"></a>ProxyAddress  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Универсальный код ресурса (URI), который содержит адрес прокси-сервера, используемого для выполнения HTTP-запросов.  
   
 ### <a name="proxyauthenticationscheme"></a>ProxyAuthenticationScheme  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Схема проверки подлинности, используемая для проверки подлинности клиентских запросов, обрабатываемых прокси-сервером HTTP.  
   
 ### <a name="realm"></a>Realm  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Область проверки подлинности.  
   
 ### <a name="transfermode"></a>TransferMode  
- Тип данных: string  
+
+ Тип данных: строка  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее статус сообщения: помещено в буфер или поток, запрос или ответ.  
   
 ### <a name="unsafeconnectionntlmauthentication"></a>UnsafeConnectionNtlmAuthentication  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее, разрешено ли на сервере совместное использование небезопасных подключений.  
   
 ### <a name="usedefaultwebproxy"></a>UseDefaultWebProxy  
+
  Тип данных: boolean  
   
- Тип доступа: Только чтение  
+ Тип доступа: только для чтения  
   
  Значение, указывающее, используются ли параметры прокси-сервера компьютера или пользователя.  
   

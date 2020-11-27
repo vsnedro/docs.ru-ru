@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: d1d62bfb-2aa3-4170-b6f8-c93d3afdbbed
-ms.openlocfilehash: f806e257cfd3ccc5118a5783e2eda48eef4ba0bf
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: fd19256b571727883dd877f0094f180ec47c6d63
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246497"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289390"
 ---
 # <a name="using-the-message-class"></a>Использование класса сообщений
+
 <xref:System.ServiceModel.Channels.Message>Класс является фундаментальным для Windows Communication Foundation (WCF). Все взаимодействие между клиентами и службами в конечном итоге приводит к отправке и получению экземпляров класса <xref:System.ServiceModel.Channels.Message>.  
   
  Как правило, с классом <xref:System.ServiceModel.Channels.Message> не приходится взаимодействовать напрямую. Вместо этого для описания входящих и исходящих сообщений используются конструкции модели службы WCF, такие как контракты данных, контракты сообщений и контракты операций. Однако в некоторых сложных сценариях можно создавать код непосредственно с использованием класса <xref:System.ServiceModel.Channels.Message>. Например, класс <xref:System.ServiceModel.Channels.Message> можно использовать в следующих случаях.  
@@ -29,6 +30,7 @@ ms.locfileid: "85246497"
  Класс <xref:System.ServiceModel.Channels.Message> представляет собой контейнер для данных общего назначения, структура которого во многом схожа со структурой сообщения в протоколе SOAP. Как и в протоколе SOAP, сообщение имеет тело и заголовки. Тело сообщения содержит фактическую полезную нагрузку данных, а заголовки - дополнительные именованные контейнеры с данными. Правила чтения и записи тела и заголовков сообщения различаются. Так, заголовки всегда буферизуются в памяти, доступ к ним можно получать в любой очередности неограниченное количество раз, в то время как тело можно прочитать только один раз, и тело может участвовать в потоковой передаче. Как правило, при использовании протокола SOAP тело сообщения сопоставляется телу сообщения SOAP, а его заголовки - заголовкам сообщения SOAP.  
   
 ## <a name="using-the-message-class-in-operations"></a>Использование класса сообщений в операциях  
+
  Класс <xref:System.ServiceModel.Channels.Message> можно использовать в качестве входного параметра или возвращаемого значения операции либо обоих. При использовании класса <xref:System.ServiceModel.Channels.Message> в любом месте операции действуют следующие ограничения.  
   
 - Операция не должна иметь параметров `out` или `ref`.  
@@ -43,11 +45,13 @@ ms.locfileid: "85246497"
  [!code-vb[C_UsingTheMessageClass#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#1)]  
   
 ## <a name="creating-basic-messages"></a>Создание базовых сообщений  
+
  Класс <xref:System.ServiceModel.Channels.Message> предоставляет статические методы фабрики `CreateMessage`, которые можно использовать для создания базовых сообщений.  
   
  Все перегрузки `CreateMessage` могут принимать параметр версии типа <xref:System.ServiceModel.Channels.MessageVersion>, который указывает, какие версии протокола SOAP и WS-Addressing использовать для данного сообщения. При необходимости использовать те же версии протокола, что и входящее сообщение, можно использовать свойство <xref:System.ServiceModel.OperationContext.IncomingMessageVersion%2A> в экземпляре <xref:System.ServiceModel.OperationContext>, полученном из свойства <xref:System.ServiceModel.OperationContext.Current%2A>. Большинство перегрузок `CreateMessage` также имеют параметр строки, который указывает, какое действие SOAP следует использовать для сообщения. Чтобы отключить создание конверта SOAP, можно задать версии значение `None`, тогда сообщение будет состоять только из тела.  
   
 ## <a name="creating-messages-from-objects"></a>Создание сообщений из объектов  
+
  Самая обычная перегрузка метода `CreateMessage`, использующая только версию и действие, создает сообщение с пустым телом. Перегрузка, принимающая дополнительный параметр <xref:System.Object>, создает сообщение, тело которого представляет собой сериализуемое представление данного объекта. Для сериализации используйте сериализатор <xref:System.Runtime.Serialization.DataContractSerializer> с параметрами по умолчанию. При необходимости использовать другой сериализатор или сериализатор `DataContractSerializer` с другими настройками используйте перегрузку метода `CreateMessage`, которая также принимает параметр `XmlObjectSerializer`.  
   
  Например, чтобы вернуть объект в сообщение, следует воспользоваться следующим кодом.  
@@ -56,6 +60,7 @@ ms.locfileid: "85246497"
  [!code-vb[C_UsingTheMessageClass#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#2)]  
   
 ## <a name="creating-messages-from-xml-readers"></a>Создание сообщений из средств чтения XML  
+
  Существуют перегрузки метода `CreateMessage`, которые вместо объекта принимают средство чтения <xref:System.Xml.XmlReader> или <xref:System.Xml.XmlDictionaryReader> для тела сообщения. В этом случае тело сообщения содержит XML-код, создаваемый в результате чтения из переданного средства чтения XML. Например, следующий код возвращает сообщение, содержимое тела которого прочитано из файла XML.  
   
  [!code-csharp[C_UsingTheMessageClass#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#3)]
@@ -64,6 +69,7 @@ ms.locfileid: "85246497"
  Кроме того, существуют перегрузки метода `CreateMessage`, которые принимают средство чтения <xref:System.Xml.XmlReader> или <xref:System.Xml.XmlDictionaryReader>, представляющее все сообщение, а не только его тело. Эти перегрузки также принимают целочисленный параметр `maxSizeOfHeaders`. Заголовки всегда буферизуются в память сразу после создания сообщения, а этот параметр ограничивает объем буферизации. Для снижения вероятности атаки типа "отказ в обслуживании" необходимо задать безопасное значение этому параметру, если XML-код поступает из ненадежного источника. Версии SOAP и WS-Addressing сообщения, представляемого средством чтения XML, должны соответствовать версиям, указанным с использованием параметра версии.  
   
 ## <a name="creating-messages-with-bodywriter"></a>Создание сообщений с помощью конструктора BodyWriter  
+
  Одна из перегрузок метода `CreateMessage` использует экземпляр `BodyWriter` для описания тела сообщения. `BodyWriter` - это абстрактный класс, который может наследоваться для настройки способа создания тел сообщений. Можно создать собственный производный класс `BodyWriter` для описания тел сообщений пользовательским способом. Необходимо переопределить метод `BodyWriter.OnWriteBodyContents`, принимающий <xref:System.Xml.XmlDictionaryWriter>; этот метод используется для записи тела сообщения.  
   
  Некоторые средства записи тела сообщения используют буферизацию, другие (потоковые) - нет. Средства записи тела с буферизацией могут записывать содержимое неограниченное число раз, а потоковые - только один раз. Свойство `IsBuffered` указывает, использует ли средство записи тела сообщения буферизацию или нет. Настроить это свойство для используемого средства записи тела сообщения можно вызовом защищенного конструктора `BodyWriter`, принимающего логический параметр `isBuffered`. Средства записи тела сообщения позволяют создавать средство записи тела сообщения с буферизацией из средства записи без буферизации. Для настройки этого процесса можно переопределить метод `OnCreateBufferedCopy`. По умолчанию используется буфер в памяти, который содержит XML-код, возвращаемый `OnWriteBodyContents`. `OnCreateBufferedCopy` принимает целочисленный параметр `maxBufferSize`; при переопределении этого метода не следует создавать буферы, размер которых превышает данное максимальное значение.  
@@ -71,12 +77,14 @@ ms.locfileid: "85246497"
  Класс `BodyWriter` предоставляет методы `WriteBodyContents` и `CreateBufferedCopy`, которые, по сути, являются тонкими программами-оболочками для методов `OnWriteBodyContents` и `OnCreateBufferedCopy` соответственно. Эти методы выполняют проверку состояния, чтобы убедиться, что доступ к средству записи тела сообщения без буферизации не осуществляется более одного раза. Эти методы вызываются непосредственно только при создании пользовательских производных классов `Message` на основе `BodyWriters`.  
   
 ## <a name="creating-fault-messages"></a>Создание сообщений об ошибках  
+
  Для создания сообщений об ошибке SOAP можно использовать определенные перегрузки `CreateMessage`. Основная из них принимает объект <xref:System.ServiceModel.Channels.MessageFault>, который описывает ошибку. Другие перегрузки предоставляются для удобства. Первая такая перегрузка принимает `FaultCode` и строку причины и создает `MessageFault` с помощью `MessageFault.CreateFault`, использующего эти сведения. Другая перегрузка этого метода принимает объект сведений и передает его `CreateFault` вместе с кодом ошибки и причиной. Например, следующая операция возвращает ошибку.  
   
  [!code-csharp[C_UsingTheMessageClass#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#4)]
  [!code-vb[C_UsingTheMessageClass#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#4)]  
   
 ## <a name="extracting-message-body-data"></a>Извлечение данных тела сообщения  
+
  Класс `Message` позволяет извлекать данные из его тела несколькими способами. Эти способы можно разделить на следующие категории.  
   
 - Возвращение целого тела сообщения, мгновенно записываемого в средство записи XML. Это называется *записью сообщения*.  
@@ -88,6 +96,7 @@ ms.locfileid: "85246497"
  Доступ к телу `Message` можно получить только один раз независимо от того, каким способом осуществляется доступ. Объект сообщения имеет свойство `State`, которому изначально задано значение Created. Три способа доступа, описанные в вышеприведенном списке, устанавливают состояние Written, Read и Copied соответственно. Кроме того, метод `Close` может установить состояние Closed, если содержимое тела сообщения больше не требуется. Доступ к телу сообщения осуществляется только в состоянии Created, вернуться к состоянию Created после изменения состояния невозможно.  
   
 ## <a name="writing-messages"></a>Создание сообщений  
+
  Метод <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> записывает содержимое тела заданного экземпляра `Message` в заданное средство записи XML. <xref:System.ServiceModel.Channels.Message.WriteBody%2A>Метод выполняет то же самое, за исключением того, что он заключает содержимое тела в соответствующий элемент-оболочку (например, <`soap:body`>). Наконец, метод <xref:System.ServiceModel.Channels.Message.WriteMessage%2A> записывает все сообщение, включая конверт SOAP и заголовки, выполняющие функции оболочки. Если протокол SOAP отключен ( <xref:System.ServiceModel.Channels.Message.Version> имеет значение <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType> ), все три метода выполняют одно и то же действие: они записывают содержимое текста сообщения.  
   
  Например, следующий код записывает тело входящего сообщения в файл.  
@@ -95,7 +104,7 @@ ms.locfileid: "85246497"
  [!code-csharp[C_UsingTheMessageClass#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#5)]
  [!code-vb[C_UsingTheMessageClass#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#5)]  
   
- Два дополнительных вспомогательных метода записывают определенные теги начального элемента SOAP. Эти методы не осуществляют доступ к телу сообщения, поэтому они не изменяют состояние сообщения. К ним относятся следующие объекты.  
+ Два дополнительных вспомогательных метода записывают определенные теги начального элемента SOAP. Эти методы не осуществляют доступ к телу сообщения, поэтому они не изменяют состояние сообщения. Сюда входит следующее.  
   
 - <xref:System.ServiceModel.Channels.Message.WriteStartBody%2A> записывает начальный элемент тела, например `<soap:Body>`.  
   
@@ -104,6 +113,7 @@ ms.locfileid: "85246497"
  Для записи соответствующих тегов конечных элементов необходимо вызвать метод `WriteEndElement` в соответствующем средстве записи XML. Эти методы редко вызываются напрямую.  
   
 ## <a name="reading-messages"></a>Чтение сообщений  
+
  Основной способ прочитать тело сообщения - это вызвать метод <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>. В результате возвращается средство чтения <xref:System.Xml.XmlDictionaryReader>, которое можно использовать для чтения тела сообщения. Обратите внимания, что <xref:System.ServiceModel.Channels.Message> переходит в состояние Read сразу после вызова <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A>, а не одновременно с использованием возвращенного средства чтения XML.  
   
  Метод <xref:System.ServiceModel.Channels.Message.GetBody%2A> также позволяет получать доступ к телу сообщения как типизированному объекту. Изнутри этот метод использует `GetReaderAtBodyContents`, поэтому он также изменяет состояние сообщения на <xref:System.ServiceModel.Channels.MessageState.Read> (см. свойство <xref:System.ServiceModel.Channels.Message.State%2A>).  
@@ -118,6 +128,7 @@ ms.locfileid: "85246497"
  [!code-vb[C_UsingTheMessageClass#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#6)]  
   
 ## <a name="copying-a-message-into-a-buffer"></a>Копирование сообщения в буфер  
+
  Иногда необходимо получить доступ к телу сообщения более одного раза, например чтобы переслать одно и то же сообщение по нескольким назначениям в рамках системы "издатель-подписчик". В этом случае необходимо поместить в буфер памяти все сообщение (включая тело). Это выполняется вызовом метода <xref:System.ServiceModel.Channels.Message.CreateBufferedCopy%28System.Int32%29>. Этот метод принимает целочисленное значение, которое представляет максимальный размер буфера, и создает буфер, размеры которого не превышают это значение. Если сообщение поступает из ненадежного источника, важно задать этому параметру безопасное значение.  
   
  Буфер возвращается в виде экземпляра <xref:System.ServiceModel.Channels.MessageBuffer>. Доступ к данным в буфере осуществляется несколькими способами. Основной способ - это вызов метода <xref:System.ServiceModel.Channels.Message.CreateMessage%2A> для создания экземпляров `Message` из буфера.  
@@ -134,9 +145,11 @@ ms.locfileid: "85246497"
  Имеет смысл упомянуть и о других членах класса `MessageBuffer`. Метод <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> можно вызвать для освобождения ресурсов, когда содержимое буфера больше не требуется. Свойство <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> возвращает размер выделенного буфера. Свойство <xref:System.ServiceModel.Channels.MessageBuffer.MessageContentType%2A> возвращает тип содержимого сообщения MIME.  
   
 ## <a name="accessing-the-message-body-for-debugging"></a>Доступ к телу сообщения для отладки  
+
  При отладке можно вызвать метод <xref:System.ServiceModel.Channels.Message.ToString%2A>, чтобы представить сообщение в качестве строки. Это представление, как правило, соответствует виду кодированного с помощью текстового кодировщика сообщения с той разницей, что XML лучше отформатирован для восприятия человеком. Единственным исключением из вышесказанного является тело сообщения. Тело сообщения можно прочитать только один раз, и `ToString` не меняет состояние сообщения. Поэтому `ToString` метод может не иметь доступа к телу и может заменить заполнитель (например, "..."). или три точки) вместо текста сообщения. Следовательно, не рекомендуется использовать `ToString` для записи сообщений в журнал, если важно содержимое тел сообщений.  
   
 ## <a name="accessing-other-message-parts"></a>Осуществление доступа к другим частям сообщения  
+
  Для получения доступа к другой информации о сообщении (кроме содержимого его тела) предоставляются различные свойства. Однако эти свойства невозможно вызвать после того, как сообщение было закрыто.  
   
 - Свойство <xref:System.ServiceModel.Channels.Message.Headers%2A> представляет заголовки сообщения. См. раздел "работа с заголовками" Далее в этом разделе.  
@@ -152,12 +165,14 @@ ms.locfileid: "85246497"
  Для доступа к определенному атрибуту в программе-оболочке тела (например, <xref:System.ServiceModel.Channels.Message.GetBodyAttribute%28System.String%2CSystem.String%29>), обозначаемому определенным именем и пространством имен, можно использовать метод `<soap:Body>`. Если такой атрибут не найден, возвращается значение `null`. Этот метод можно вызвать, только если сообщение `Message` находится в состоянии Created (если доступ к телу сообщения еще не осуществлялся).  
   
 ## <a name="working-with-headers"></a>Работа с заголовками  
+
  `Message`Может содержать любое количество именованных фрагментов XML, называемых *заголовками*. Как правило, каждый фрагмент сопоставляется заголовку SOAP. Доступ к заголовкам осуществляется через свойство `Headers` типа <xref:System.ServiceModel.Channels.MessageHeaders>. <xref:System.ServiceModel.Channels.MessageHeaders> - это коллекция объектов <xref:System.ServiceModel.Channels.MessageHeaderInfo>. Доступ к отдельным заголовкам осуществляется через его интерфейс <xref:System.Collections.IEnumerable> или индексатор. Например, в следующем коде перечислены имена всех заголовков в сообщении `Message`.  
   
  [!code-csharp[C_UsingTheMessageClass#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_usingthemessageclass/cs/source.cs#8)]
  [!code-vb[C_UsingTheMessageClass#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_usingthemessageclass/vb/source.vb#8)]  
   
 #### <a name="adding-removing-finding-headers"></a>Добавление, удаление, нахождение заголовков  
+
  С помощью метода <xref:System.ServiceModel.Channels.MessageHeaders.Add%2A> можно добавлять новый заголовок в конце всех существующих заголовков. Для вставки заголовка в заданном индексе можно использовать метод <xref:System.ServiceModel.Channels.MessageHeaders.Insert%2A>. Существующие заголовки сдвигаются на вставленный элемент. Заголовки упорядочиваются по индексу, первым доступным индексом является 0. Можно использовать различные методы перегрузки <xref:System.ServiceModel.Channels.MessageHeaders.CopyHeadersFrom%2A> для добавления заголовков из другого экземпляра `Message` или `MessageHeaders`. Некоторые перегрузки копируют только один заголовок, другие копируют все заголовки. Метод <xref:System.ServiceModel.Channels.MessageHeaders.Clear%2A> удаляет все заголовки. Метод <xref:System.ServiceModel.Channels.MessageHeaders.RemoveAt%2A> удаляет заголовок в определенном индексе (сдвигая все заголовки после него). Метод <xref:System.ServiceModel.Channels.MessageHeaders.RemoveAll%2A> удаляет все заголовки с определенным именем и пространством имен.  
   
  Метод <xref:System.ServiceModel.Channels.MessageHeaders.FindHeader%2A> позволяет извлечь определенный заголовок. Этот метод использует для нахождения заголовка его имя и пространство имен и возвращает его индекс. Если заголовок встречается более одного раза, создается исключение. Если заголовок не найден, возвращается -1.  
@@ -169,12 +184,15 @@ ms.locfileid: "85246497"
  Чтобы получить доступ к XML-данным в заголовке, можно вызвать метод <xref:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader%2A> и вернуть средство чтения XML для конкретного индекса заголовка. При необходимости десериализовать содержимое заголовка в объект, следует использовать <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.Int32%29> или любую другую перегрузку. Основные перегрузки десериализуют заголовки с помощью сериализатора <xref:System.Runtime.Serialization.DataContractSerializer>, настроенного по умолчанию. При необходимости использовать другой сериализатор или сериализатор `DataContractSerializer` с другими настройками используйте одну из перегрузок, принимающих `XmlObjectSerializer`. Существуют перегрузки, принимающие вместо индекса имя заголовка, пространство имен и дополнительно список значений `Actor`; в этом случае получается сочетание `FindHeader` и `GetHeader`.  
   
 ## <a name="working-with-properties"></a>Работа со свойствами  
+
  Экземпляр `Message` может содержать произвольное число именованных объектов произвольных типов. Доступ к этой коллекции осуществляется через свойство `Properties` типа `MessageProperties`. Коллекция реализует интерфейс <xref:System.Collections.Generic.IDictionary%602> и действует как сопоставление между <xref:System.String> и <xref:System.Object>. Обычно значения свойств не сопоставляются непосредственно с какой бы то ни было частью сообщения, а предоставляют различные подсказки обработки сообщений различным каналам в стеке канала WCF или к <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> инфраструктуре службы. Пример см. в разделе [Общие сведения об архитектуре передача данных](data-transfer-architectural-overview.md).  
   
 ## <a name="inheriting-from-the-message-class"></a>Наследование от класса сообщений  
+
  Если встроенные типы сообщений, созданные с использованием `CreateMessage`, не соответствуют предъявляемым требованиям, можно создать класс, который наследуется от класса `Message`.  
   
 ### <a name="defining-the-message-body-contents"></a>Определение содержимого тела сообщения  
+
  Для осуществления доступа к данным в теле сообщения существует три основных методики: запись, чтение и копирование в буфер. Эти операции, по сути, сводятся к вызову для производного класса <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%2A> методов <xref:System.ServiceModel.Channels.Message.OnGetReaderAtBodyContents%2A>, <xref:System.ServiceModel.Channels.Message.OnCreateBufferedCopy%2A> и `Message` соответственно. Базовый класс `Message` гарантирует, что для каждого экземпляра `Message` вызывается только один из этих методов и вызывается однократно. Базовый класс также гарантирует, что эти методы не вызываются для закрытого сообщения. Нет необходимости отслеживать состояние сообщения в реализации.  
   
  Метод <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%2A> является абстрактным и должен быть реализован. Основным способом определения содержимого тела сообщения является его запись с помощью этого метода. Например, в следующем сообщении содержится 100 000 случайных чисел от 1 до 20.  
@@ -194,6 +212,7 @@ ms.locfileid: "85246497"
  Обратите внимание, что если создать копию сообщения, в ней будут использоваться заголовки из оригинального сообщения.  
   
 ### <a name="other-members-that-can-be-overridden"></a>Другие переопределяемые члены  
+
  Можно переопределить <xref:System.ServiceModel.Channels.Message.OnWriteStartEnvelope%2A> <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A> методы, и, <xref:System.ServiceModel.Channels.Message.OnWriteStartBody%2A> чтобы указать, как записываются открывающие теги SOAP, заголовки SOAP и элементы тела SOAP. Обычно они соответствуют `<soap:Envelope>` , `<soap:Header>` и `<soap:Body>` . Если свойство <xref:System.ServiceModel.Channels.Message.Version> возвращает значение <xref:System.ServiceModel.Channels.MessageVersion.None>, как правило, эти методы ничего не записывают.  
   
 > [!NOTE]

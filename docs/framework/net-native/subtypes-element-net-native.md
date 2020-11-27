@@ -1,15 +1,16 @@
 ---
-title: <Subtypes>Элемент (.NET Native)
+title: <Subtypes> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
-ms.openlocfilehash: bb719449f3769c5dbbde6d05efdb865c18bb4ab2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7484152c351f59ee84b601584bd84347186628a3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180935"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287817"
 ---
-# <a name="subtypes-element-net-native"></a>\<Subtypes>Элемент (.NET Native)
+# <a name="subtypes-element-net-native"></a>\<Subtypes> Элемент (.NET Native)
+
 Применяет политику среды выполнения для всех классов, унаследованных из содержащего типа.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -28,6 +29,7 @@ ms.locfileid: "79180935"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -47,11 +49,12 @@ ms.locfileid: "79180935"
   
 ## <a name="all-attributes"></a>Все атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -61,11 +64,13 @@ ms.locfileid: "79180935"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Элемент `<Subtypes>` применяет политику ко всем подтипам его содержащего типа. Используется для применения различных политик для производных типов и их базовых классов.  
   
  Атрибуты отражения, сериализации и взаимодействия необязательны, несмотря на то, что по крайней мере один из них должен присутствовать.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере определяется класс с именем `BaseClass` и подкласс с именем `Derived1`.  
   
  [!code-csharp[ProjectN_Reflection#4](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/subtypes.cs#4)]  
@@ -89,7 +94,7 @@ ms.locfileid: "79180935"
   
 ## <a name="see-also"></a>См. также
 
-- [\<Type>Дерев](type-element-net-native.md)
+- [\<Type> Элемент](type-element-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)

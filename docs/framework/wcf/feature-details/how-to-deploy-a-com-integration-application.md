@@ -2,14 +2,15 @@
 title: Практическое руководство. Развертывание приложения интеграции COM+
 ms.date: 03/30/2017
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650
-ms.openlocfilehash: b4ae7f730296d54debc1cf2971b61e5700503430
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5f2e64ed06b98db50259edf8ef307ce430b8be38
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595431"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289793"
 ---
 # <a name="how-to-deploy-a-com-integration-application"></a>Практическое руководство. Развертывание приложения интеграции COM+
+
 Написанное приложение интеграции COM+ может понадобиться развернуть на другом компьютере. В этом разделе описывается перенос приложения COM+ с одного компьютера на другой.  
   
 ### <a name="moving-a-com-hosted-integration-app"></a>Перенос размещенного в COM+ приложения интеграции  
@@ -24,7 +25,7 @@ ms.locfileid: "84595431"
   
 5. Скопируйте файлы Application.config и Application.manifest из корневой папки приложения на компьютере A в корневую папку приложения на компьютере B.  
   
-6. Отредактируйте адреса конечных точек службы в файле Application.config на компьютере B так, чтобы они указывали на соответствующий компьютер. Например, измените `http://machineA/MyService` на `http://machineB/MyService`.  
+6. Отредактируйте адреса конечных точек службы в файле Application.config на компьютере B так, чтобы они указывали на соответствующий компьютер. Например измените `http://machineA/MyService` на `http://machineB/MyService`.  
   
 ### <a name="moving-a-web-hosted-integration-application"></a>Перенос размещенного на веб-сервере приложения интеграции  
   
@@ -38,7 +39,7 @@ ms.locfileid: "84595431"
   
 5. Скопируйте файл .SVC (имя_компонента.svc) и файл Web.config из виртуального корневого каталога на компьютере A в только что созданный виртуальный корневой каталог на компьютере B.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об интеграции с приложениями COM+](integrating-with-com-plus-applications-overview.md)
 - [Практическое руководство. Настройка параметров службы COM+](how-to-configure-com-service-settings.md)

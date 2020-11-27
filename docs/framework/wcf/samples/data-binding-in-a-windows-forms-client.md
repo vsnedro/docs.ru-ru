@@ -2,14 +2,15 @@
 title: Привязка данных в клиенте Windows Forms
 ms.date: 03/30/2017
 ms.assetid: a2a30b37-d6e2-4552-820e-e60b2bbe8829
-ms.openlocfilehash: d2784c86bc3ef84f99f4731f441019b3f568b321
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 07af2f2e604c8eab7eca9908e0985fefee5b273f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575489"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289455"
 ---
 # <a name="data-binding-in-a-windows-forms-client"></a>Привязка данных в клиенте Windows Forms
+
 В этом образце показано, как выполнить привязку к данным, возвращаемым службой Windows Communication Foundation (WCF) в приложении Windows Forms.  
   
 > [!NOTE]

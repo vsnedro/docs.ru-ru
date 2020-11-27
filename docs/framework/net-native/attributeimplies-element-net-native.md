@@ -1,15 +1,16 @@
 ---
-title: <AttributeImplies>Элемент (.NET Native)
+title: <AttributeImplies> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-ms.openlocfilehash: 2ab1fdc71bc43f61f69a0d9b7bea7acb35e14ea5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4171345bb5337436142128623abc7d183c4477ff
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79181065"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288116"
 ---
-# <a name="attributeimplies-element-net-native"></a>\<AttributeImplies>Элемент (.NET Native)
+# <a name="attributeimplies-element-net-native"></a>\<AttributeImplies> Элемент (.NET Native)
+
 Определяет политики для элементов кода, к которым применяется содержащий атрибут.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -28,6 +29,7 @@ ms.locfileid: "79181065"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -47,11 +49,12 @@ ms.locfileid: "79181065"
   
 ## <a name="all-attributes"></a>Все атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -61,13 +64,14 @@ ms.locfileid: "79181065"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Элемент `<AttributeImplies>` используется в том случае, если его содержащий тип является атрибутом (то есть классом, производным от <xref:System.Attribute?displayProperty=nameWithType>). Если атрибут применяется к элементу определенной программы, политика, определенная элементом `<AttributeImplies>`, применяется к этому элементу программы.  
   
  Атрибуты отражения, сериализации и взаимодействия необязательны, несмотря на то, что по крайней мере один из них должен присутствовать.  
   
 ## <a name="see-also"></a>См. также
 
-- [\<Type>Дерев](type-element-net-native.md)
+- [\<Type> Элемент](type-element-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)

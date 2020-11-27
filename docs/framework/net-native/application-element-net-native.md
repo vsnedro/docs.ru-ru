@@ -1,19 +1,20 @@
 ---
-title: <Application>Элемент (.NET Native)
+title: <Application> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.openlocfilehash: e26826b3d8674b536ab0897182da58bc02cfd00b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a7f2eca5a5bb5cfb7b9827f2463454a17fc128cb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128519"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288142"
 ---
-# <a name="application-element-net-native"></a>\<Application>Элемент (.NET Native)
+# <a name="application-element-net-native"></a>\<Application> Элемент (.NET Native)
+
 Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения во время выполнения и применяет политику отражения среды выполнения ко всем программным элементам приложения.  
   
  Элемент \<Directives>  
-\<Application>Элемент (RD. XML)  
+\<Application> Элемент (rd.xml)  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -31,6 +32,7 @@ ms.locfileid: "73128519"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы. В таблице дочерних элементов политика имеет отношение к метаданным, к которым программные элементы получают доступ по время выполнения.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -50,7 +52,7 @@ ms.locfileid: "73128519"
   
 ## <a name="all-attributes"></a>Все атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр для этой политики, относящихся к типам в приложении. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
@@ -75,6 +77,7 @@ ms.locfileid: "73128519"
 |[\<Directives>](directives-element-net-native.md)|Корневой элемент файла директив среды выполнения.|  
   
 ## <a name="remarks"></a>Примечания  
+
  [\<Directives>](directives-element-net-native.md)Элемент может содержать ноль или один `<Application>` элемент. Несколько элементов `<Application>` в одном файле директив отражения не поддерживаются.  
   
  Элемент `<Application>` можно использовать одним из двух способов:  
@@ -85,7 +88,7 @@ ms.locfileid: "73128519"
   
 ## <a name="see-also"></a>См. также
 
-- [\<Library>Дерев](library-element-net-native.md)
-- [\<Directives>Дерев](directives-element-net-native.md)
+- [\<Library> Элемент](library-element-net-native.md)
+- [\<Directives> Элемент](directives-element-net-native.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

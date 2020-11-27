@@ -1,15 +1,16 @@
 ---
-title: <Event>Элемент (.NET Native)
+title: <Event> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
-ms.openlocfilehash: 60da48d5872d7ce61afcffa7977411bc6e1efc7f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b1cf2239e58839c5026bc375ba04568227881bdd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79181042"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288103"
 ---
-# <a name="event-element-net-native"></a>\<Event>Элемент (.NET Native)
+# <a name="event-element-net-native"></a>\<Event> Элемент (.NET Native)
+
 Применяет политику отражения среды выполнения к событию.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -21,6 +22,7 @@ ms.locfileid: "79181042"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -33,17 +35,18 @@ ms.locfileid: "79181042"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*method_name*|Имя события. Тип события определяется родительским [\<Type>](type-element-net-native.md) [\<TypeInstantiation>](typeinstantiation-element-net-native.md) элементом или.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый к этому типу политики для события. Допустимые значения: `Auto`, `Excluded`, `Included` и `Required`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -54,6 +57,7 @@ ms.locfileid: "79181042"
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Если политика события не определена явно, оно наследует политику среды выполнения своего родительского элемента.  
   
 ## <a name="see-also"></a>См. также

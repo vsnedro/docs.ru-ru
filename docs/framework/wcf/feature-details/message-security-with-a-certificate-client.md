@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
-ms.openlocfilehash: 6221f253746ac304115fe844966e2cf552263d04
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4a1cb6d804d313f438fc8e7a92946d55f73b9ee5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551149"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288584"
 ---
 # <a name="message-security-with-a-certificate-client"></a>Безопасность сообщений при использовании клиентом сертификата
+
 В следующем сценарии показана защита клиента Windows Communication Foundation (WCF) и службы с помощью режима безопасности сообщений. Проверка подлинности клиента и службы выполняется с помощью сертификатов. Дополнительные сведения см. в разделе [Безопасность распределенных приложений](distributed-application-security.md).
 
  ![Снимок экрана, на котором показан клиент с сертификатом.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
@@ -31,19 +32,22 @@ ms.locfileid: "90551149"
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономную службу, используя код без конфигурации.  
   
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано создание конечной точки службы, которая использует безопасность сообщений для установления защищенного контекста.  
   
  [!code-csharp[C_SecurityScenarios#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#10)]
  [!code-vb[C_SecurityScenarios#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#10)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Вместо кода можно использовать следующую конфигурацию.  
   
 ```xml  
@@ -85,7 +89,8 @@ ms.locfileid: "90551149"
 ```  
   
 ## <a name="client"></a>Клиент  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономный клиент, используя код (и код клиента).  
   
@@ -95,12 +100,14 @@ ms.locfileid: "90551149"
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### <a name="code"></a>Код  
+
  Следующий код служит для создания клиента. Привязка осуществляется к безопасности режима сообщений, и типу учетных данных клиента присваивается значение `Certificate`.  
   
  [!code-csharp[C_SecurityScenarios#17](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#17)]
  [!code-vb[C_SecurityScenarios#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#17)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  В следующей конфигурации задается сертификат клиента с помощью поведения конечной точки. Дополнительные сведения см. в разделе [Работа с сертификатами](working-with-certificates.md). Код также использует `identity` элемент> <, чтобы указать службу доменных имен (DNS) ожидаемого удостоверения сервера. Дополнительные сведения об удостоверении см. в статье [удостоверение службы и проверка подлинности](service-identity-and-authentication.md).  
   
 ```xml  

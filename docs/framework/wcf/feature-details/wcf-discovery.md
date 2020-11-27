@@ -6,17 +6,19 @@ helpviewer_keywords:
 - Windows Communication Foundation [WCF], discovery
 - discovery [WCF]
 ms.assetid: 462c4913-f388-45a9-9042-28ae96a4e735
-ms.openlocfilehash: 63c6589cb2ecff9f0a5e7c8bb61b454f6516c98c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 176e9760d98f9640bd9d1c7b059287dc29c0d666
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600183"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289364"
 ---
 # <a name="wcf-discovery"></a>Обнаружение WCF
+
 Windows Communication Foundation (WCF) предоставляет поддержку для обеспечения возможности обнаружения служб во время выполнения с помощью протокола WS-Discovery. Службы WCF могут объявлять о доступности в сети с помощью многоадресного сообщения или прокси-сервера обнаружения. Клиентские приложения могут осуществлять поиск служб, отвечающих набору указанных критериев, в сети или на прокси-сервере обнаружения. В подразделах этого раздела представлены общие сведения и описание модели программирования данной функции.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Общие сведения об обнаружении WCF](wcf-discovery-overview.md)  
  Содержит общие сведения о поддержке WS-Discovery, предоставляемой WCF.  
   

@@ -1,15 +1,15 @@
 ---
-title: <Type>Элемент (.NET Native)
+title: <Type> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-ms.openlocfilehash: 4e88b49b82513079ddcf6f0bafe02d44235a406a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e71df41c4a37206910d835ee85dc3d68b4cbad4a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73091858"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287713"
 ---
-# <a name="type-element-net-native"></a>\<Type>Элемент (.NET Native)
+# <a name="type-element-net-native"></a>\<Type> Элемент (.NET Native)
 
 Применяет политику выполнения для конкретного типа, например класса или структуры.
 
@@ -51,13 +51,13 @@ ms.locfileid: "73091858"
 
 ## <a name="name-attribute"></a>Name - атрибут
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |*type_name*|Имя типа. Если этот `<Type>` элемент является дочерним элементом либо [\<Namespace>](namespace-element-net-native.md) элемента, либо другого `<Type>` элемента, *TYPE_NAME* может включать имя типа без его пространства имен. В противном случае атрибут *type_name* должен содержать полное имя типа.|
 
 ## <a name="all-other-attributes"></a>Все остальные атрибуты
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|
 
@@ -118,6 +118,7 @@ ms.locfileid: "73091858"
 ```
 
 ## <a name="example"></a>Пример
+
  В следующем примере отражение используется для получения объекта <xref:System.Reflection.PropertyInfo>, представляющего свойство <xref:System.String.Chars%2A?displayProperty=nameWithType>. Затем он использует метод <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> для извлечения значения седьмого знака в строке и для отображения всех символов в строке. Переменная `b` в примере является <xref:Windows.UI.Xaml.Controls.TextBlock> элементом управления.
 
  [!code-csharp[ProjectN_Reflection#1](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/propertyinfo1.cs#1)]

@@ -2,17 +2,19 @@
 title: Использование арбитра контрактов данных
 ms.date: 03/30/2017
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
-ms.openlocfilehash: 20abd4d928fc51eb359949ecbb216615e9659b7f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a86ad21a5846feec37f8b4b48843eab2d6c161da
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595028"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96289637"
 ---
 # <a name="using-a-data-contract-resolver"></a>Использование арбитра контрактов данных
+
 Арбитр контрактов данных позволяет динамически настраивать известные типы. Известные типы необходимы для сериализации или десериализации типов, не предусмотренных контрактом данных. Дополнительные сведения об известных типах см. в разделе [Data Contract известные типы](data-contract-known-types.md). Известные типы обычно задаются статически. Это означает, что при реализации операции необходимо знать все типы, которые могут быть переданы операции. Существуют сценарии, в которых это не так, и важно иметь возможность динамического задания типов.  
   
 ## <a name="creating-a-data-contract-resolver"></a>Создание арбитра контрактов данных  
+
  Создание арбитра контрактов данных включает реализацию двух методов: <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> и <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A>. Эти методы реализуют обратные вызовы, используемые при сериализации и десериализации соответственно. Метод <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> вызывается при сериализации, принимает тип контракта данных и сопоставляет его с именем `xsi:type` и пространством имен. Метод <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> вызывается при десериализации, принимает имя `xsi:type` и пространство имен и сопоставляется с типом контракта данных. Оба метода содержат параметр `knownTypeResolver`, который позволяет использовать в реализации арбитр известного типа по умолчанию.  
   
  В следующем примере показана реализация <xref:System.Runtime.Serialization.DataContractResolver> для сопоставления с типом контракта данных с именем `Customer`, производного от типа контракта данных `Person`.  
@@ -87,7 +89,7 @@ SerializerBehavior.DataContractResolver = new MyCustomerResolver();
   
  Сопоставитель контрактов данных можно задать декларативно, реализовав атрибут, применяемый к службе.  Дополнительные сведения см. в примере [кновнассембляттрибуте](../samples/knownassemblyattribute.md) . В этом примере реализуется атрибут с именем «Кновнассембли», который добавляет пользовательский сопоставитель контракта данных к поведению службы.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Известные типы контрактов данных](data-contract-known-types.md)
 - [Пример DataContractSerializer](../samples/datacontractserializer-sample.md)

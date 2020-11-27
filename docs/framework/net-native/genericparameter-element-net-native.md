@@ -1,15 +1,16 @@
 ---
-title: <GenericParameter>Элемент (.NET Native)
+title: <GenericParameter> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-ms.openlocfilehash: d0b18211206a8f9d4365ab3affe6d1c376003348
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1400fb7029df533d54e87a1c534f4ac3b0a5fc68
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128432"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288025"
 ---
-# <a name="genericparameter-element-net-native"></a>\<GenericParameter>Элемент (.NET Native)
+# <a name="genericparameter-element-net-native"></a>\<GenericParameter> Элемент (.NET Native)
+
 Применяет политику к параметру типа универсального типа или метода.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -29,6 +30,7 @@ ms.locfileid: "73128432"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -49,17 +51,18 @@ ms.locfileid: "73128432"
   
 ## <a name="name-attribute"></a>Name - атрибут  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*generic_parameter_name*|Обязательный атрибут. Имя универсального параметра типа. Например, для универсального делегата <xref:System.Func%603> значение *generic_parameter_name*, равное "TResult", применяет политику среды выполнения к возвращаемому значению делегата.|  
   
 ## <a name="all-other-attributes"></a>Все остальные атрибуты  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |*policy_setting*|Параметр, применяемый для этого типа политики. Допустимые значения: `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` и `Required All`. Дополнительные сведения см. в разделе [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -70,6 +73,7 @@ ms.locfileid: "73128432"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения среды выполнения для конкретного типа, например, класса или структуры.|  
   
 ## <a name="remarks"></a>Примечания  
+
  `<GenericParameter>`Элемент является дочерним по отношению к [\<Method>](method-element-net-native.md) [\<Type>](type-element-net-native.md) элементу или и используется для применения политики к конкретному параметру универсального типа, который задается его именем в сигнатуре универсального типа или метода.  
   
  Элемент `<GenericParameter>` особенно полезен при использовании сериализаторов. В следующем примере элемент используется `<GenericParameter>` для применения политики к типу `T` при вызове перегрузок метода JsonConvert. методов DeserializeObject сериализатора JSON NewtonSoft [ \<T> (String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) .  
@@ -86,8 +90,8 @@ ms.locfileid: "73128432"
   
 ## <a name="see-also"></a>См. также
 
-- [\<Method>Дерев](method-element-net-native.md)
-- [\<Type>Дерев](type-element-net-native.md)
+- [\<Method> Элемент](method-element-net-native.md)
+- [\<Type> Элемент](type-element-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Параметры политики директив среды выполнения](runtime-directive-policy-settings.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)
