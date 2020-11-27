@@ -2,22 +2,24 @@
 title: Разработка каналов
 ms.date: 03/30/2017
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
-ms.openlocfilehash: 8d0ecb9ea473b78dfc648a1087ae2261406f2b4f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 11e7a78282a3c9f7cd221e2ef44bc43c625e447b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795789"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96286803"
 ---
 # <a name="developing-channels"></a>Разработка каналов
-Для разработки протокола или канала транспорта, которые могут использоваться с уровнем приложения Windows Communication Foundation (WCF), требуется выполнить несколько шагов. В этом разделе описываются эти действия и указываются конкретные разделы для получения дополнительных сведений. Сведения о модели канала и различных типах, упомянутых в этом разделе, см. в разделе [Обзор модели каналов](channel-model-overview.md). Полный пример транспортного канала см. [в разделе Transport: UDP](../samples/transport-udp.md).  
+
+Для разработки протокола или канала транспорта, которые могут использоваться с уровнем приложения Windows Communication Foundation (WCF), требуется выполнить несколько шагов. В этом разделе описываются эти действия и указываются конкретные разделы для получения дополнительных сведений. Сведения о модели канала и различных типах, упомянутых в этом разделе, см. в разделе [Обзор модели каналов](channel-model-overview.md). Полный пример транспортного канала см. в разделе [Transport: UDP](../samples/transport-udp.md).  
   
 ## <a name="the-channel-development-task-list"></a>Список задач разработки канала  
+
  Чтобы создать канал, определенный пользователем, выполните следующие действия (для всех каналов).  
   
 1. Решите, какой из шаблонов обмена сообщениями по каналу (<xref:System.ServiceModel.Channels.IOutputChannel>, <xref:System.ServiceModel.Channels.IInputChannel>, <xref:System.ServiceModel.Channels.IDuplexChannel>, <xref:System.ServiceModel.Channels.IRequestChannel> или <xref:System.ServiceModel.Channels.IReplyChannel>) будет поддерживаться фабрикой <xref:System.ServiceModel.Channels.IChannelFactory> и прослушивателем <xref:System.ServiceModel.Channels.IChannelListener>, а также, будет ли этот шаблон поддерживать связанные с сеансами разновидности указанных интерфейсов. Дополнительные сведения см. [в разделе Выбор шаблона обмена сообщениями](choosing-a-message-exchange-pattern.md).  
   
-2. Создайте фабрику и прослушиватель каналов (<xref:System.ServiceModel.Channels.IChannelFactory> и <xref:System.ServiceModel.Channels.IChannelListener>), которые поддерживают выбранный шаблон обмена сообщениями. Дополнительные сведения о разработке фабрик см. [в разделе Клиент: Фабрики каналов и](client-channel-factories-and-channels.md)каналы. Дополнительные сведения о разработке прослушивателей см [. в разделе Служба: Прослушиватели каналов и](service-channel-listeners-and-channels.md)каналы.  
+2. Создайте фабрику и прослушиватель каналов (<xref:System.ServiceModel.Channels.IChannelFactory> и <xref:System.ServiceModel.Channels.IChannelListener>), которые поддерживают выбранный шаблон обмена сообщениями. Дополнительные сведения о разработке фабрик см. в статье [Клиент: фабрики каналов и каналы](client-channel-factories-and-channels.md). Дополнительные сведения о разработке прослушивателей см. в статье [служба: прослушиватели каналов и каналы](service-channel-listeners-and-channels.md).  
   
 3. Обеспечьте, чтобы любые исключения, связанные с сетью, нормализовались либо в <xref:System.TimeoutException?displayProperty=nameWithType>, либо в соответствующий класс, унаследованный от <xref:System.ServiceModel.CommunicationException>. Дополнительные сведения см. в разделе [обработка исключений и ошибок](handling-exceptions-and-faults.md).  
   
@@ -29,7 +31,7 @@ ms.locfileid: "70795789"
   
 2. Добавьте расширения метаданных, чтобы сообщить о возможностях в другие конечные точки. Дополнительные сведения см. в разделе [Поддержка конфигурации и метаданных](configuration-and-metadata-support.md).  
   
-3. Добавьте привязку, которая предварительно настраивает стек элементов привязки в соответствии с четко определенным профилем. Дополнительные сведения см. в разделе [Создание пользовательских привязок](creating-user-defined-bindings.md).  
+3. Добавьте привязку, которая предварительно настраивает стек элементов привязки в соответствии с четко определенным профилем. Дополнительные сведения см. в разделе [Создание привязок User-Defined](creating-user-defined-bindings.md).  
   
 4. Добавьте раздел привязки и элемент конфигурации привязки, чтобы представить привязку системе конфигурации. Дополнительные сведения см. в разделе [Поддержка конфигурации и метаданных](configuration-and-metadata-support.md).  
   

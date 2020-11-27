@@ -2,14 +2,15 @@
 title: Инфраструктура службы
 ms.date: 03/30/2017
 ms.assetid: 75f60b87-f80e-4377-ba7c-8e6becaa2b28
-ms.openlocfilehash: 859e718a56ab63c8e012e1851c0730f53cb707be
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 1fb39f2106e027cc5d4125cfb0bc89f3e5983cec
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61780761"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96285724"
 ---
 # <a name="service-framework"></a>Инфраструктура службы
+
 В этом разделе перечислены все исключения, вызываемые данными инфраструктуры службы.  
   
 ## <a name="exception-list"></a>Список исключений  
@@ -25,7 +26,7 @@ ms.locfileid: "61780761"
 |BaseAddressCannotHaveUserInfo|Базовый адрес не может содержать раздел с информацией о пользователе URI.|  
 |BaseAddressDuplicateScheme|Коллекция уже содержит адрес с указанной схемой. В этой коллекции каждой схеме может соответствовать только один адрес.|  
 |BaseAddressMustBeAbsolute|Только абсолютный URI можно использовать в качестве базового адреса.|  
-|BindingDoesnTSupportAnyChannelTypes1|Указанная привязка не поддерживает создание типов каналов. Элементы пользовательской привязки расположены в стеке неправильно или в неверном порядке. Элемент Transport должен находиться в нижней части стека. Рекомендуемый порядок элементов привязки:: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, транспорта.|  
+|BindingDoesnTSupportAnyChannelTypes1|Указанная привязка не поддерживает создание типов каналов. Элементы пользовательской привязки расположены в стеке неправильно или в неверном порядке. Элемент Transport должен находиться в нижней части стека. Рекомендуемый порядок элементов привязки: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, Transport.|  
 |BindingDoesnTSupportDuplexButContractRequires1|Контракту требуется свойство Duplex. Указанная привязка не поддерживает это или настроена неправильно.|  
 |BindingDoesnTSupportOneWayButContractRequires1|Контракту требуется свойство OneWay. Указанная привязка не поддерживает это или настроена неправильно.|  
 |BindingDoesnTSupportRequestReplyButContract1|Контракту требуется свойство Request или Reply. Указанная привязка не поддерживает это или настроена неправильно.|  
@@ -33,11 +34,11 @@ ms.locfileid: "61780761"
 |BindingDoesnTSupportTwoWayButContractRequires1|Контракту требуется свойство Two-Way (либо типа запрос-ответ, либо дуплексное). Указанная привязка не поддерживает это или настроена неправильно.|  
 |BindingRequirementsAttributeDisallowsQueuedDelivery1|Атрибут DeliveryRequirementsAttribute запрещает метод QueuedDelivery. Привязка для конечной точки с указанным контрактом поддерживает его.|  
 |BindingRequirementsAttributeRequiresQueuedDelivery1|Атрибут DeliveryRequirementsAttribute требует метод QueuedDelivery. Привязка для конечной точки с указанным контрактом не поддерживает это или настроена неправильно.|  
-|channelDoesNotHaveADuplexSession0|Текущий канал не поддерживает закрытие выходных сеансов. Этот канал не реализует ISessionChannel\<IDuplexSession >.|  
+|channelDoesNotHaveADuplexSession0|Текущий канал не поддерживает закрытие выходных сеансов. Этот канал не реализует ISessionChannel \<IDuplexSession> .|  
 |ClientRuntimeRequiresFormatter0|Указанный элемент ClientOperation требуется средство форматирования, так как параметры SerializeRequest и DeserializeReply не имеют одновременно значение false.|  
 |CommunicationObjectAborted1|Указанный коммуникационный объект нельзя использовать для связи, так как он остановлен.|  
-|CommunicationObjectAbortedStack2|Указанный Коммуникационный объект не может использоваться для обмена данными, так как он остановлен: {1}|  
-|CommunicationObjectBaseClassMethodNotCalled|Указанный Коммуникационный объект переопределил виртуальную функцию {1} , но не вызвал версию, заданную в базовом классе.|  
+|CommunicationObjectAbortedStack2|Указанный коммуникационный объект нельзя использовать для связи, так как он остановлен: {1}|  
+|CommunicationObjectBaseClassMethodNotCalled|Указанный коммуникационный объект переопределил виртуальную функцию, {1} но не вызывает версию, определенную в базовом классе.|  
 |ContractIsNotSelfConsistentItHasOneOrMore2|Указанный контракт имеет одну или несколько операций IsTerminating или non-IsInitiating. Свойству SessionMode не присвоено значение SessionMode.Required. Атрибуты IsInitiating и IsTerminating можно использовать только в контексте сеанса.|  
 |CouldnTCreateChannelForChannelType2|Указанный тип канала был запрошен, однако указанная привязка не поддерживает это или настроена неправильно.|  
 |DispatchRuntimeRequiresFormatter0|Указанный элемент DispatchOperation требуется средство форматирования, так как параметры DeserializeRequest и SerializeReply не имеют одновременно значение false.|  
@@ -48,7 +49,7 @@ ms.locfileid: "61780761"
 |MultipleMebesInParameters|Обнаружено несколько элементов MessageEncodingBindingElement в BindingParameters контекста BindingContext. Привязка CustomBinding не может иметь несколько элементов MessageEncodingBindingElements. Удалите все элементы, кроме одного.|  
 |MultipleStreamUpgradeProvidersInParameters|Обнаружено несколько элементов IStreamUpgradeProviderElement в BindingParameters контекста BindingContext. Привязка CustomBinding не может иметь несколько элементов IStreamUpgradeProviderElements. Удалите все элементы, кроме одного.|  
 |NoChannelBuilderAvailable|Невозможно использовать привязку для создания производства канала или прослушивателя канала, поскольку в ней нет элемента TransportBindingElement. В каждой привязке должен присутствовать по меньшей мере один элемент привязки, наследуемый от TransportBindingElement.|  
-|NotAllBindingElementsBuilt|Некоторые элементы данной привязки не были использовании при создании производства канала и прослушивателя канала. Элементы привязки расположены в неправильном порядке. Рекомендуемый порядок элементов привязки:: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, транспорта.  Последним должен быть элемент TransportBindingElement. Указанные элементы привязки не были созданы.|  
+|NotAllBindingElementsBuilt|Некоторые элементы данной привязки не были использовании при создании производства канала и прослушивателя канала. Элементы привязки расположены в неправильном порядке. Рекомендуемый порядок элементов привязки: TransactionFlow, ReliableSession, Security, CompositeDuplex, OneWay, StreamSecurity, MessageEncoding, Transport.  Последним должен быть элемент TransportBindingElement. Указанные элементы привязки не были созданы.|  
 |RuntimeRequiresInvoker0|Операции отправки требуется средство вызова.|  
 |ServiceHasZeroAppEndpoints|Указанная служба не имеет конечных точек приложения (не инфраструктурных). Это может быть связано с тем, что для данного приложения не найден файл конфигурации или в файле конфигурации не удалось найти элементы службы, соответствующие данному имени службы, или конечные точки не были определены в элементе службы.|  
 |SFxActionMismatch|Не удается создать типизированное сообщение из-за несоответствия действия. Ожидается указанное действие, а происходит другое.|  
@@ -100,13 +101,13 @@ ms.locfileid: "61780761"
 |SFXEndpointBehaviorUsedOnWrongSide|Указанное поведение IEndpointBehavior нельзя использовать на сервере. Его можно применять только к клиентам.|  
 |SFxEndpointNoMatchingScheme|Не удается найти базовый адрес, соответствующий указанной схеме для конечной точки с указанной привязкой. Заданы зарегистрированные схемы базовых адресов.|  
 |SFxErrorCreatingMtomReader|При создании средства чтения для сообщения MTOM произошла ошибка.|  
-|SFxErrorDeserializingFault|Сервер возвратил недопустимое сообщение об ошибке SOAP. Дополнительные сведения см. в разделе InnerException.|  
+|SFxErrorDeserializingFault|Сервер возвратил недопустимое сообщение об ошибке SOAP. See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
 |SFxErrorDeserializingHeader|При десериализации одного из заголовков указанного сообщения произошла ошибка. Дополнительные сведения см. в разделе InnerException.|  
-|SFxErrorReflectingOnMethod3|Ошибка при загрузке указанного атрибута указанного метода в указанном типе.  Дополнительные сведения см. в разделе InnerException.|  
-|SFxErrorReflectingOnParameter4|Ошибка при загрузке указанного атрибута указанного параметра указанного метода в указанном типе. Дополнительные сведения см. в разделе InnerException.|  
-|SFxErrorReflectingOnType2|Ошибка при загрузке указанного атрибута в указанном типе.  Дополнительные сведения см. в разделе InnerException.|  
-|SFxErrorSerializingBody|При сериализации тела указанного сообщения произошла ошибка. Дополнительные сведения см. в разделе InnerException.|  
-|SFxErrorSerializingHeader|При сериализации одного из заголовков указанного сообщения произошла ошибка. Дополнительные сведения см. в разделе InnerException.|  
+|SFxErrorReflectingOnMethod3|Ошибка при загрузке указанного атрибута указанного метода в указанном типе.  See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
+|SFxErrorReflectingOnParameter4|Ошибка при загрузке указанного атрибута указанного параметра указанного метода в указанном типе. See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
+|SFxErrorReflectingOnType2|Ошибка при загрузке указанного атрибута в указанном типе.  See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
+|SFxErrorSerializingBody|При сериализации тела указанного сообщения произошла ошибка. See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
+|SFxErrorSerializingHeader|При сериализации одного из заголовков указанного сообщения произошла ошибка. See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
 |SFxExpectedIMethodCallMessage|Внутренняя ошибка. Сообщение должно быть допустимым IMethodCallMessage.|  
 |SFxExportMustHaveType|Указанную часть указанной операции нельзя экспортировать, так как она не имеет допустимого типа CLR.|  
 |SFxHeaderNotUnderstood|Сообщение не было обработано. Получатель данного сообщения не распознал указанный заголовок из указанного пространства имен. Эта ошибка обычно указывает, что отправитель сообщения включил протокол связи, который не может быть обработан получателем. Необходимо обеспечить совместимость конфигурации привязки клиента с привязкой службы.|  
@@ -117,12 +118,12 @@ ms.locfileid: "61780761"
 |SFxInvalidMessageBody|OperationFormatter обнаружил недопустимое тело сообщения. Ожидался тип узла "Element" с указанным именем и пространством имен. Найден указанный тип узла с указанным именем и пространством имен.|  
 |SFxInvalidMessageBodyEmptyMessage|OperationFormatter не удалось десериализовать какую-либо информацию из данного сообщения, так как сообщение пустое.|  
 |SFxInvalidMessageBodyErrorDeserializingParameter|При попытке десериализации указанного параметра произошла ошибка. Дополнительные сведения см. в разделе InnerException.|  
-|SFxInvalidMessageBodyErrorSerializingParameter|При попытке сериализации указанного параметра произошла ошибка. Указано сообщение InnerException.  Дополнительные сведения см. в разделе InnerException.|  
+|SFxInvalidMessageBodyErrorSerializingParameter|При попытке сериализации указанного параметра произошла ошибка. Указано сообщение InnerException.  See InnerException for more details" (Сбой синхронизации с исключением. Ошибка десериализации параметра www.microsoft.com/.../05:GetBatchInfoResult. Подробнее см. в описании InnerException).|  
 |SFxInvalidMessageBodyUnexpectedNode|При десериализации параметров обнаружен указанный непредвиденный узел в указанном пространстве имен.|  
 |SFxInvalidMessageContractSignature|Указанная операция имеет параметр или тип возвращаемого значения с атрибутом MessageContractAttribute. Чтобы представить сообщение запроса с помощью контракта сообщения, операция должна иметь один параметр с атрибутом MessageContractAttribute. Чтобы представить сообщение ответа с помощью контракта сообщения, возвращенное значение операции должно быть типом, имеющим атрибут MessageContractAttribute. Операция не должна иметь параметры out или ref.|  
 |SFxInvalidReplyAction|В исходящем сообщении ответа для операции указано действие Action, однако в контракте для этой операции указано другое действие ReplyAction. Действие Action в сообщении должно соответствовать действию ReplyAction в контракте, или в контракте операции должно быть задано действие ReplyAction='*'.|  
 |SFxInvalidRequestAction|В исходящем сообщении запроса для операции указано действие Action, однако в контракте для этой операции указано другое действие RequestAction. Действие Action в сообщении должно соответствовать действию RequestAction в контракте, или в контракте операции должно быть задано действие RequestAction='*'.|  
-|SFxInvalidStaticOverloadCalledForDuplexChannelFactory1|Нельзя использовать статический метод CreateChannel с указанным контрактом, так как контракт определяет контракт обратного вызова. Воспользуйтесь одним из статических перегрузок CreateChannel для DuplexChannelFactory\<TChannel >.|  
+|SFxInvalidStaticOverloadCalledForDuplexChannelFactory1|Нельзя использовать статический метод CreateChannel с указанным контрактом, так как контракт определяет контракт обратного вызова. Используйте одну из статических перегрузок CreateChannel для DuplexChannelFactory \<TChannel> .|  
 |SFxInvalidStreamInRequest|Чтобы запрос в указанной операции был потоком, операция должна иметь один параметр с типом Stream.|  
 |SFxInvalidStreamInResponse|Чтобы ответ в указанной операции был потоком, операция должна иметь один выходной параметр или возвращенное значение с типом Stream.|  
 |SFxInvalidStreamInTypedMessage|Чтобы использовать потоки в программной модели контракта сообщения, указанный тип должен иметь один член MessageBodyMember типа Stream.|  
@@ -145,7 +146,7 @@ ms.locfileid: "61780761"
 |SFxSchemaDoesNotContainType|В схеме с указанным целевым пространством имен отсутствует тип с указанным именем.|  
 |SfxServiceContractAttributeNotFound|Указанный тип контракта не имеет атрибута ServiceContractAttribute. Чтобы определить допустимый контракт, указанный тип должен иметь атрибут ServiceContractAttribute. Этот тип может быть интерфейсом контракта или классом службы.|  
 |SFxServiceContractGeneratorConfigRequired|Чтобы создать информацию о конфигурации с помощью метода GenerateServiceEndpoint, экземпляр ServiceContractGenerator должен быть инициализирован допустимым объектом Configuration.|  
-|SFxServiceHostBaseCannotAddEndpointAfterOpen|Невозможно добавить конечные точки после того, как ServiceHost находится в одном из следующих состояний:<br /><br /> -Открыт<br />— Сбой<br />-Завершено<br />-Закрыт|  
+|SFxServiceHostBaseCannotAddEndpointAfterOpen|Невозможно добавить конечные точки после того, как ServiceHost находится в одном из следующих состояний:<br /><br /> — Открыто<br />— Сбой<br />-Завершено<br />-Закрыто|  
 |SFxServiceHostBaseCannotAddEndpointWithoutDescription|Невозможно добавить конечные точки до инициализации свойства Description.|  
 |SFxServiceMetadataBehaviorNoHttpBaseAddress|Свойство HttpGetEnabled объекта ServiceMetadataBehavior имеет значение true, а свойство HttpGetUrl является относительным адресом, но при этом отсутствует базовый HTTP-адрес. Задайте базовый HTTP-адрес или задайте абсолютный адрес для HttpGetUrl.|  
 |SFxServiceMetadataBehaviorNoHttpsBaseAddress|Свойство HttpsGetEnabled объекта ServiceMetadataBehavior имеет значение true, а свойство HttpsGetUrl является относительным адресом, но при этом отсутствует базовый HTTPS-адрес. Задайте базовый HTTPS-адрес или задайте абсолютный адрес для HttpsGetUrl.|  

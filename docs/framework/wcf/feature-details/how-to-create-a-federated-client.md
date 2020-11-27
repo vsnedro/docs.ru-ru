@@ -8,17 +8,18 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
-ms.openlocfilehash: 47e59452edfff74daf17d94a058ce8b12af7867c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a03d388f2773e312a149b5caf1747627d1c17864
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593546"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96286632"
 ---
 # <a name="how-to-create-a-federated-client"></a>Практическое руководство. Создание федеративного клиента
+
 В Windows Communication Foundation (WCF) создание клиента для *федеративной службы* состоит из трех основных этапов:  
   
-1. Настройте [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) или аналогичную пользовательскую привязку. Дополнительные сведения о создании подходящей привязки см. в разделе [инструкции. Создание WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). Кроме того, запустите [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) в конечной точке метаданных федеративной службы, чтобы создать файл конфигурации для взаимодействия с федеративной службой и одной или нескольких служб маркеров безопасности.  
+1. Настройте [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) или аналогичную пользовательскую привязку. Дополнительные сведения о создании подходящей привязки см. в разделе [инструкции. Создание WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). Кроме того, запустите [служебную программу метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) в конечной точке метаданных федеративной службы, чтобы создать файл конфигурации для взаимодействия с федеративной службой и одной или нескольких служб маркеров безопасности.  
   
 2. Задайте свойства <xref:System.ServiceModel.Security.IssuedTokenClientCredential>, управляющие различными аспектами взаимодействия клиента со службой маркеров безопасности.  
   
@@ -31,7 +32,7 @@ ms.locfileid: "84593546"
   
 ### <a name="to-generate-and-examine-the-configuration-for-a-federated-service"></a>Создание и проверка конфигурации для федеративной службы  
   
-1. Запустите [средство служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) с адресом URL-адреса метаданных службы в качестве параметра командной строки.  
+1. Запустите [средство служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) с адресом URL-адреса метаданных службы в качестве параметра командной строки.  
   
 2. Откройте созданный файл конфигурации в подходящем редакторе.  
   
@@ -84,7 +85,7 @@ ms.locfileid: "84593546"
   
 2. Если кэширование маркеров не требуется, задайте `cacheIssuedTokens` атрибуту (элемента> <`issuedToken` ) значение `false` .  
   
-3. Если для кэшированных токенов требуется ограничение по времени, задайте `maxIssuedTokenCachingTime` для атрибута в `issuedToken` элементе <> соответствующее значение. Пример.  
+3. Если для кэшированных токенов требуется ограничение по времени, задайте `maxIssuedTokenCachingTime` для атрибута в `issuedToken` элементе <> соответствующее значение. Пример:  
     `<issuedToken maxIssuedTokenCachingTime='00:10:00' />`  
   
 4. Если предпочтительным является значение, отличное от значения по умолчанию, установите `issuedTokenRenewalThresholdPercentage` атрибут для `issuedToken` элемента <> в соответствующее значение, например:  
@@ -141,26 +142,30 @@ ms.locfileid: "84593546"
     ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода экземпляр класса <xref:System.ServiceModel.Security.IssuedTokenClientCredential> настраивается в коде.  
   
  [!code-csharp[c_FederatedClient#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federatedclient/cs/source.cs#2)]
  [!code-vb[c_FederatedClient#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federatedclient/vb/source.vb#2)]  
   
-## <a name="net-framework-security"></a>Безопасность .NET Framework  
+## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
+
  Для исключения возможного раскрытия информации клиенты, запускающие средство Svcutil.exe для обработки метаданных от федеральных конечных точек, должны проверять, что получающиеся адреса служб маркеров безопасности соответствуют ожидаемым. Это особенно важно, если служба маркеров безопасности предоставляет несколько конечных точек, так как средство Svcutil.exe задает в создаваемом файле конфигурации первую такую конечную точку, которая может отличаться от конечной точки, которую должен использовать клиент.  
   
 ## <a name="localissuer-required"></a>Требуется LocalIssuer  
+
  Если требуется, чтобы клиенты всегда использовали локального издателя, обратите внимание на следующее: выходные данные средства Svcutil.exe по умолчанию задают, что локальный издатель не используется, если в предпоследней службе маркеров безопасности в цепочке указан адрес издателя или адрес метаданных издателя.  
   
  Дополнительные сведения о настройке <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerAddress%2A> <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerBinding%2A> свойств, и класса см <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerChannelBehaviors%2A> <xref:System.ServiceModel.Security.IssuedTokenClientCredential> . [в разделе как настроить локальный издатель](how-to-configure-a-local-issuer.md).  
   
 ## <a name="scoped-certificates"></a>Сертификаты с областью действия  
+
  Если требуется задать сертификаты службы для взаимодействия с любыми службами маркеров безопасности (обычно в связи с тем, что не используется согласование сертификатов), их можно задать с помощью свойства <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> класса <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>. Метод <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate%2A> принимает в качестве параметров <xref:System.Uri> и <xref:System.Security.Cryptography.X509Certificates.X509Certificate2>. Указанный сертификат используется при взаимодействии с конечными точками по указанному универсальному коду ресурса (URI). В качестве альтернативы можно с помощью метода <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate%2A> добавить сертификат в коллекцию, возвращаемую свойством <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A>.  
   
 > [!NOTE]
 > Концепция сертификатов клиента, область действия которых ограничена только определенным универсальным кодом ресурса (URI), применима только к приложениям, производящим исходящие вызовы служб, предоставляющих конечные точки по этим универсальным кодам ресурса (URI). Он не применяется к сертификатам, которые используются для подписывания выданных маркеров, например, настроенных на сервере в коллекции, возвращаемой <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> классом. Дополнительные сведения см. в разделе [инструкции. Настройка учетных данных на служба федерации](how-to-configure-credentials-on-a-federation-service.md).  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Пример федерации](../samples/federation-sample.md)
 - [Практическое руководство. Порядок отключения безопасных сеансов в WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)

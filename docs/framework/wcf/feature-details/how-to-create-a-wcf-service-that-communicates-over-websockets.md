@@ -2,13 +2,15 @@
 title: Практическое руководство. Создание службы WCF, обменивающейся данными через WebSockets
 ms.date: 03/30/2017
 ms.assetid: bafbbd89-eab8-4e9a-b4c3-b7b0178e12d8
-ms.openlocfilehash: 80c62ddc6630d26c6c178d1eeff8c6df05bf1d00
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 64f856bcce1234c8e833cc9be723b4af91c4569c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051939"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96286166"
 ---
 # <a name="how-to-create-a-wcf-service-that-communicates-over-websockets"></a>Практическое руководство. Создание службы WCF, обменивающейся данными через WebSockets
+
 Службы и клиенты WCF могут использовать привязку <xref:System.ServiceModel.NetHttpBinding> для обмена данными через WebSockets.  WebSockets будет использоваться в тех случаях, когда <xref:System.ServiceModel.NetHttpBinding> распознает, что в контракте службы определен контракт обратного вызова. В этом разделе описано, как реализовать службу WCF и клиент, использующий <xref:System.ServiceModel.NetHttpBinding> для обмена данными через WebSockets.  
   
 ### <a name="define-the-service"></a>Определение службы  
@@ -160,6 +162,7 @@ ms.locfileid: "86051939"
          Никаких особых изменений в клиентскую конфигурацию вносить не нужно, просто укажите конечную точку на стороне клиента с помощью `NetHttpBinding`.  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный код, используемый в данном разделе.  
   
 ```csharp  
