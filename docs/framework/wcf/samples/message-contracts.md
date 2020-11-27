@@ -2,21 +2,23 @@
 title: Контракты сообщений
 ms.date: 03/30/2017
 ms.assetid: e3df7c11-c653-4796-be47-26b09c35b691
-ms.openlocfilehash: 5467ee9ff807bca79330054c30ad424ea479a6a3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e00720674a384e2b0ac1cdb5aeab84f9b2c91209
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591687"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96264703"
 ---
 # <a name="message-contracts"></a>Контракты сообщений
+
 Этот раздел содержит примеры, демонстрирующие контракты сообщений в Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Контракт сообщения по умолчанию](default-message-contract.md)  
  Показывает службу, где пользовательское сообщение, определенное пользователем, передается в операции службы и из них.  
   
- Нетипизированный запрос-ответ  
+ Нетипизированный Request-Reply  
  Показано, как определять контракты операций, использующие класс Message.  
   
  [Сообщения без оболочки](unwrapped-messages.md)  

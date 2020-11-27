@@ -2,14 +2,15 @@
 title: Образец конфигурации
 ms.date: 03/30/2017
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
-ms.openlocfilehash: 6d84085d06da117ebf13fa4bb714513aacc3abd6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 927aab30ab122d281b4f3577ec05a2035c08f2fc
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96264339"
 ---
 # <a name="configuration-sample"></a>Образец конфигурации
+
 Этот образец демонстрирует, как при помощи файла конфигурации можно сделать службу доступной для обнаружения.  
   
 > [!NOTE]
@@ -25,6 +26,7 @@ ms.locfileid: "84594729"
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
 ## <a name="service-configuration"></a>Конфигурация службы  
+
  Файл конфигурации в данном образце иллюстрирует две возможности.  
   
 - Обеспечение доступности обнаружения службы через стандартную конечную точку <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
@@ -155,6 +157,7 @@ ms.locfileid: "84594729"
 ```  
   
 ## <a name="client-configuration"></a>Конфигурация клиента  
+
  Для включения функции обнаружения в конфигурации приложения для клиента используется конечная точка `standardEndpoint` типа `dynamicEndpoint`, как показано в следующем фрагменте.  
   
 ```xml  
@@ -262,7 +265,7 @@ ms.locfileid: "84594729"
   
 1. В этом образце используются конечные точки HTTP, и для работы этого образца необходимо добавить соответствующие списки управления доступом по URL-адресу. Дополнительные сведения см. в разделе [Настройка HTTP и HTTPS](../feature-details/configuring-http-and-https.md). Нужные списки управления доступом будут добавлены после выполнения следующей команды с повышенными привилегиями. Если команда не работает, следует указать домен и имя пользователя в следующих аргументах. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2. Постройте решение.  
+2. Создайте решение.  
   
 3. Выполните исполняемый файл службы из каталога сборки.  
   

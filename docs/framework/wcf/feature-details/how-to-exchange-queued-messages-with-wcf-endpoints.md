@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: 7da7ba1b680bae2b29eeff8fe669e097ea8eda32
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3f69286a2b4d4ec55f18931f9156c20a38da9c34
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595379"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265431"
 ---
 # <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>Практическое руководство. Обмен сообщениями в очереди с конечными точками WCF
+
 Очереди обеспечивают надежный обмен сообщениями между клиентом и службой Windows Communication Foundation (WCF), даже если служба недоступна во время обмена данными. В следующих процедурах показано, как обеспечить устойчивое взаимодействие между клиентом и службой с помощью стандартной привязки в очереди при реализации службы WCF.  
   
  В этом разделе объясняется, как использовать <xref:System.ServiceModel.NetMsmqBinding> для обмена данными между клиентом WCF и службой WCF.  
@@ -50,7 +51,7 @@ ms.locfileid: "84595379"
   
 ### <a name="to-create-a-client-for-the-queued-service"></a>Создание клиента для службы в очереди  
   
-1. В следующем примере показано, как запустить приложение размещения и использовать средство Svcutil. exe для создания клиента WCF.  
+1. В следующем примере показано, как запустить приложение размещения и использовать средство Svcutil.exe для создания клиента WCF.  
   
     ```console
     svcutil http://localhost:8000/ServiceModelSamples/service  
@@ -64,6 +65,7 @@ ms.locfileid: "84595379"
      [!code-vb[S_Msmq_Transacted#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#8)]  
   
 ## <a name="example"></a>Пример  
+
  В следующих примерах показан код службы, ведущее приложение, файл App.config и код клиента для этого примера.  
   
  [!code-csharp[S_Msmq_Transacted#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#9)]
@@ -75,7 +77,7 @@ ms.locfileid: "84595379"
  [!code-csharp[S_Msmq_Transacted#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/client.cs#12)]
  [!code-vb[S_Msmq_Transacted#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#12)]  
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [Привязка MSMQ с поддержкой транзакций](../samples/transacted-msmq-binding.md)
