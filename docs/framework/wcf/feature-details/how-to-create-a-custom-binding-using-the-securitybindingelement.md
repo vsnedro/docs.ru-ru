@@ -7,20 +7,22 @@ dev_langs:
 helpviewer_keywords:
 - security [WCF], creating custom bindings
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
-ms.openlocfilehash: 15fdd50b05bd2217cb9819373cd1c015da52b15b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9aaaf6a10e0c51db35720d72512c1a91cfbb9720
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599013"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256746"
 ---
 # <a name="how-to-create-a-custom-binding-using-the-securitybindingelement"></a>Практическое руководство. Создание пользовательской привязки с использованием элемента SecurityBindingElement
+
 Windows Communication Foundation (WCF) включает несколько предоставляемых системой привязок, которые можно настроить, но не обеспечивают полную гибкость при настройке всех параметров безопасности, поддерживаемых WCF. В этом разделе описывается создание пользовательской привязки непосредственно из отдельных элементов привязки с рассмотрением некоторых из параметров безопасности, которые могут быть заданы при создании такой привязки. Дополнительные сведения о создании пользовательских привязок см. в разделе [Расширение привязок](../extending/extending-bindings.md).  
   
 > [!WARNING]
 > <xref:System.ServiceModel.Channels.SecurityBindingElement> не поддерживает форму канала <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, которая по умолчанию используется формами каналов TCP-транспорта, если свойство <xref:System.ServiceModel.TransferMode> имеет значение <xref:System.ServiceModel.TransferMode.Buffered>. Необходимо задать свойству <xref:System.ServiceModel.TransferMode> значение <xref:System.ServiceModel.TransferMode.Streamed> для использования элемента <xref:System.ServiceModel.Channels.SecurityBindingElement> в этом сценарии.  
   
 ## <a name="creating-a-custom-binding"></a>Создание пользовательской привязки  
+
  В WCF все привязки состоят из *элементов привязки*. Каждый элемент привязки наследуется от класса <xref:System.ServiceModel.Channels.BindingElement>. В случае стандартных предоставляемых системой привязок элементы привязки уже созданы и настроены, хотя значения некоторых свойств можно изменить.  
   
  В противоположность этому при создании пользовательской привязки потребуется создать и настроить элементы привязки и создать из этих элементов объект <xref:System.ServiceModel.Channels.CustomBinding>.  
@@ -28,6 +30,7 @@ Windows Communication Foundation (WCF) включает несколько пр�
  Для этого необходимо добавить отдельные элементы привязки в коллекцию, представляемую экземпляром класса <xref:System.ServiceModel.Channels.BindingElementCollection>, а затем задать свойство `Elements` класса `CustomBinding` равным этому объекту. Добавлять элементы привязки необходимо в следующем порядке: Transaction Flow, Reliable Session, Security, Composite Duplex, One-way, Stream Security, Message Encoding и Transport. Обратите внимание, что все перечисленные элементы привязки являются обязательными для каждой привязки.  
   
 ## <a name="securitybindingelement"></a>SecurityBindingElement  
+
  С безопасностью уровня сообщений связаны три элемента привязки; все они наследуются от класса <xref:System.ServiceModel.Channels.SecurityBindingElement>. Эти три элемента называются <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>, <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> и <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>. Элемент <xref:System.ServiceModel.Channels.TransportSecurityBindingElement> используется для обеспечения смешанного режима безопасности. Другие два элемента используются, когда безопасность обеспечивается уровнем сообщений.  
   
  При обеспечении безопасности на транспортном уровне используются дополнительные классы:  
@@ -39,6 +42,7 @@ Windows Communication Foundation (WCF) включает несколько пр�
 - <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
   
 ## <a name="required-binding-elements"></a>Обязательные элементы привязки  
+
  Существует большое количество возможных элементов привязки, которые можно сочетать в одной привязке. При этом не все сочетания являются допустимыми. В этом разделе описываются обязательные элементы, которые должны присутствовать в привязке безопасности.  
   
  Допустимые привязки безопасности зависят от многих факторов, в том числе:  
@@ -65,7 +69,7 @@ Windows Communication Foundation (WCF) включает несколько пр�
 |||||CompositeDuplexBindingElement|  
 |||OneWayBindingElement||OneWayBindingElement|  
 |||HttpTransportBindingElement|HttpTransportBindingElement|HttpTransportBindingElement|  
-||Tcp|SecurityBindingElement|SecurityBindingElement|SymmetricSecurityBindingElement (режим проверки подлинности = SecureConversation)|  
+||TCP|SecurityBindingElement|SecurityBindingElement|SymmetricSecurityBindingElement (режим проверки подлинности = SecureConversation)|  
 |||TcpTransportBindingElement|TcpTransportBindingElement|TcpTransportBindingElement|  
 |Смешанный (транспорта с учетными данными сообщения)|Https|TransportSecurityBindingElement|TransportSecurityBindingElement||  
 |||OneWayBindingElement|||  
@@ -100,13 +104,15 @@ Windows Communication Foundation (WCF) включает несколько пр�
 ## <a name="example"></a>Пример  
   
 ### <a name="description"></a>Описание  
+
  Следующий пример кода представляет собой полноценную функцию для создания пользовательской привязки с использованием класса <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>.  
   
 ### <a name="code"></a>Код  
+
  [!code-csharp[c_CustomBinding#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#20)]
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>

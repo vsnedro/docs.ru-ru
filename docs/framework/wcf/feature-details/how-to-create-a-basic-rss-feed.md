@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 431879b8-a5f8-4947-ad1e-4768c726aca8
-ms.openlocfilehash: 872fe325a6705e79d026cd7f6e1f7cfef5145307
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d322dd40fd024685d6f3236caed41ae5eec1f375
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599026"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256811"
 ---
 # <a name="how-to-create-a-basic-rss-feed"></a>Практическое руководство. Создание базового RSS-канала
+
 Windows Communication Foundation (WCF) позволяет создать службу, предоставляющую канал синдикации. В данном разделе рассматривается процесс создания службы синдикации, предоставляющей веб-канал синдикации RSS.  
   
 ### <a name="to-create-a-basic-syndication-service"></a>Создание базовой службы синдикации  
@@ -86,12 +87,14 @@ Windows Communication Foundation (WCF) позволяет создать слу�
      [!code-vb[htRssBasic#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htrssbasic/vb/snippets.vb#11)]  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен полный код этого примера.  
   
  [!code-csharp[htRssBasic#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/htrssbasic/cs/program.cs#12)]
  [!code-vb[htRssBasic#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htrssbasic/vb/program.vb#12)]  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  При компиляции приведенного выше кода задайте ссылки на файлы System.ServiceModel.dll и System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>См. также

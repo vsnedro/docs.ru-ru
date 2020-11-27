@@ -2,17 +2,19 @@
 title: Привязка WS
 ms.date: 03/30/2017
 ms.assetid: 629945b2-d771-46d7-a87b-5df3b2e460da
-ms.openlocfilehash: b17391a882e4a85b717376f644fb3b6195073a70
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e4e37dc4b04cfa44cbca4367046c0ee24d182956
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589764"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256720"
 ---
 # <a name="ws-binding"></a>Привязка WS
+
 В этом разделе содержатся примеры, демонстрирующие привязку служб Windows в Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Поток транзакций WS](ws-transaction-flow.md)  
  Демонстрируется использование координируемой клиентом транзакции и параметры клиента и сервера для организации потока транзакции с использованием протокола WS-Atomic Transaction или OleTransactions.  
   

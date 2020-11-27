@@ -1,18 +1,20 @@
 ---
-title: 'Конечная точка: Сбои при проверке безопасности и проверке подлинности'
+title: 'Конечная точка: количество сбоев при проверке безопасности и проверке подлинности'
 ms.date: 03/30/2017
 ms.assetid: 5bad60aa-6084-4c7b-aefd-9b581f04382e
-ms.openlocfilehash: 9e0192ea600bb52abd555f2f83cfe8e96d3fe203
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: a9a4758b26c744c55af200aee22a7e90c5a5cf57
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64619344"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256473"
 ---
-# <a name="endpoint-security-validation-and-authentication-failures"></a>Конечная точка: Сбои при проверке безопасности и проверке подлинности
-Имя счетчика: Сбои при проверке безопасности и проверке подлинности  
+# <a name="endpoint-security-validation-and-authentication-failures"></a>Конечная точка: количество сбоев при проверке безопасности и проверке подлинности
+
+Имя счетчика: Security Validation and Authentication Failures  
   
 ## <a name="description"></a>Описание  
+
  Значение этого счетчика увеличивается всякий раз, когда сообщение отклоняется из-за проблемы безопасности, не относящейся к счетчику "Security Calls Not Authorized". К таким проблемам относятся следующие.  
   
 - Невозможно прочесть в этом сообщении маркер клиента.  
