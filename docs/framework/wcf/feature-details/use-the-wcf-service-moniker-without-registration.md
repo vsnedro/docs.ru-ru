@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], service monikers without registration
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
-ms.openlocfilehash: f69314948a0e0a69e49ec148f94572f17d0b8e3c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 41761313fae68a1a348a73f104e21dc19e07eb65
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595054"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293511"
 ---
 # <a name="how-to-use-the-windows-communication-foundation-service-moniker-without-registration"></a>Практическое руководство. Использование моникера службы Windows Communication Foundation без регистрации
+
 Чтобы подключиться к службе Windows Communication Foundation (WCF) и взаимодействовать с ней, клиентское приложение WCF должно иметь сведения об адресе службы, конфигурации привязки и контракте службы.  
   
  Моникер службы WCF обычно получает требуемый контракт путем выполнения предварительной регистрации требуемых типов атрибутов, но в некоторых случаях это нецелесообразно. Вместо регистрации моникер может получать определение контракта в виде документа на языке WSDL - путем использования параметра `wsdl` или с помощью обмена метаданными (MEX), путем использования параметра `mexAddress`.  
@@ -22,6 +23,7 @@ ms.locfileid: "84595054"
 > Для защиты от изменения запросов и ответов или спуфинга необходимо использовать взаимную проверку подлинности. В частности, важно, чтобы клиенты были уверены в том, что отвечающая конечная точка обмена данными является ожидаемой доверенной стороной.  
   
 ## <a name="example"></a>Пример  
+
  В этом примере показано использование моникера службы в сочетании с контрактом MEX. Служба со следующим контрактом предоставляется посредством привязки wsHttpBinding.  
   
 ```csharp
@@ -57,6 +59,6 @@ binding=WSHttpBinding_IAffiliate, bindingNamespace=http://tempuri.org/
 > [!NOTE]
 > Если моникер сформирован неправильно или служба недоступна, при вызове метода `GetObject` будет возвращена ошибка "Синтаксическая ошибка". При получении этой ошибки убедитесь, что используется правильный моникер, а служба доступна.  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Регистрация и настройка моникера службы](how-to-register-and-configure-a-service-moniker.md)

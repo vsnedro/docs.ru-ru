@@ -2,21 +2,23 @@
 title: Обнаружение (образцы)
 ms.date: 03/30/2017
 ms.assetid: 522a00b4-a789-4e8c-b8d7-a4c3d863a182
-ms.openlocfilehash: bb5471db6f4feb61798926ae1466a3bebac7e959
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d5801452943a75e87d829e5d5004e3c259ce3afa
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600585"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292614"
 ---
 # <a name="discovery-samples"></a>Обнаружение (образцы)
+
 В этом разделе приведены образцы, связанные с возможностью обнаружения.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
+
  [Объявления](announcements-sample.md)  
  Показывает способ использования объявлений совместно с функцией обнаружения.  
   
- [Basic](basic-sample.md) (обычная)  
+ [Основной](basic-sample.md)  
  Показано, как сделать службу обнаруживаемой программно, а также как искать службу с помощью <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  
   
  [Конфигурация](configuration-sample.md)  

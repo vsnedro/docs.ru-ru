@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 9bcac0e45d44270d27a4cf04677e967a80e94b90
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 7168b393bde626c8c413cda3c7422e0eee4ce267
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90550206"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292874"
 ---
 # <a name="message-security-with-a-user-name-client"></a>Безопасность сообщений при использовании клиентом учетных данных пользователя
+
 На следующем рисунке показана служба Windows Communication Foundation (WCF) и клиент защищены с помощью безопасности на уровне сообщений. Служба проходит проверку подлинности с использованием сертификата X.509. Подлинность клиента проверяется с помощью имени и пароля пользователя.  
   
  Пример приложения см. в разделе [Message Security имя пользователя](../samples/message-security-user-name.md).  
@@ -31,19 +32,22 @@ ms.locfileid: "90550206"
 |Привязка|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Служба  
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
+
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
   
 - Создайте автономную службу, используя код без конфигурации.  
   
 - Создайте службу, используя предоставленную конфигурацию, но не определяйте конечные точки.  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано, как создать конечную точку службы, которая использует безопасность сообщений.  
   
  [!code-csharp[C_SecurityScenarios#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#9)]
  [!code-vb[C_SecurityScenarios#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#9)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Вместо кода можно использовать следующую конфигурацию:  
   
 ```xml  
@@ -89,12 +93,14 @@ ms.locfileid: "90550206"
 ## <a name="client"></a>Клиент  
   
 ### <a name="code"></a>Код  
+
  Следующий код служит для создания клиента. Привязка осуществляется к безопасности режима сообщений, и типу учетных данных клиента присваивается значение `UserName`. Указать имя пользователя и пароль можно только с помощью кода (они не подлежат настройке). Здесь не показан код, который возвращает имя пользователя и пароль, потому что это происходит на уровне приложения. Например, диалоговое окно Windows Forms используется для того, чтобы запросить пользователя о данных.  
   
  [!code-csharp[C_SecurityScenarios#16](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#16)]
  [!code-vb[C_SecurityScenarios#16](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#16)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Следующий код служит для настройки клиента. Привязка осуществляется к безопасности режима сообщений, и типу учетных данных клиента присваивается значение `UserName`. Указать имя пользователя и пароль можно только с помощью кода (они не подлежат настройке).  
   
 ```xml  

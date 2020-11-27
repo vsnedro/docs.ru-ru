@@ -2,20 +2,23 @@
 title: Служба обнаружения маршрутизатора
 ms.date: 03/30/2017
 ms.assetid: 3d30af47-b24f-40e5-833a-24d77125c9e6
-ms.openlocfilehash: 149dd69cdd1972465f4b7cb48ab657492d3f21d7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f3ea32d10e27eceb3edcee8b6aeacbf9c5ebc6f1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183726"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292653"
 ---
 # <a name="discovery-router-service"></a>Служба обнаружения маршрутизатора
+
 В этом образце показаны способы направления сообщений обнаружения другой конечной точке.  
   
 ## <a name="demonstrates"></a>Что демонстрирует  
+
  Маршрутизация обнаружения  
   
-## <a name="discussion"></a>Обсуждение  
+## <a name="discussion"></a>Разговор  
+
  Маршрутизация обнаружения используется в случаях, когда клиент выполняет поиск службы с использованием прокси-сервера и этот прокси-сервер не имеет данных об этой службе, но обладает сведениями о другом прокси-сервере. Этот прокси-сервер может направлять пакет обнаружения от этого клиента второму прокси-серверу. Второй прокси-сервер может выполнить поиск службы и вернуть ответы исходному клиенту.  
   
  В этом образце клиент отправляет сообщение компоненту маршрутизации обнаружения. Это сообщение отправляется определенной конечной точке на маршрутизаторе обнаружения. Затем маршрутизатор перенаправляет сообщение по многоадресной рассылке конечной точке определяемой пользователем процедуре. Сообщение зонда передается по многоадресной рассылке конечной точке, а служба, прослушивающая адрес многоадресной рассылки определяемой пользователем процедуры, реагирует на маршрутизатор обнаружения. Маршрутизатор обнаружения выполняет сбор ответов и отправляет их обратно клиенту.  
@@ -35,6 +38,6 @@ ms.locfileid: "79183726"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\DiscoveryRouter`

@@ -2,21 +2,23 @@
 title: Пользовательские конструкторы действий
 ms.date: 03/30/2017
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
-ms.openlocfilehash: 982aecea27de680468fe6f574f72c459ef76b142
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 2c6458d6c4c7e722f577b1bad30521d899ac1688
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61913852"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293446"
 ---
 # <a name="custom-activity-designers"></a>Пользовательские конструкторы действий
+
 В данном разделе содержатся образцы действий, использующих пользовательские конструкторы для отображения в конструкторе рабочих процессов.  
   
-## <a name="in-this-section"></a>В этом разделе  
- [Пользовательские составные конструкторы — средство представления элементов рабочего процесса](custom-composite-designers-workflow-item-presenter.md)  
- В этом примере показано, как построить конструктор действий, который предоставляет доступ к «зону сброса.»  
+## <a name="in-this-section"></a>в этом разделе  
+
+ [Пользовательские составные конструкторы - средство представления элементов рабочего процесса](custom-composite-designers-workflow-item-presenter.md)  
+ В этом образце показано, как создать конструктор действий, который охватывает такую "область перетаскивания".  
   
- [Пользовательские составные конструкторы — средства представления элементов рабочего процесса](custom-composite-designers-workflow-items-presenter.md)  
+ [Пользовательские составные конструкторы - средство представления элементов рабочего процесса](custom-composite-designers-workflow-items-presenter.md)  
  В этом образце показано, как построить конструктор действий, который предоставляет доступ к такой изменяемой коллекции.  
   
  [Использование ExpressionTextBox в пользовательском конструкторе действия](using-the-expressiontextbox-in-a-custom-activity-designer.md)  

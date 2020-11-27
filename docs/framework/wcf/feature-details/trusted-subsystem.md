@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-ms.openlocfilehash: 29ac26616313ec8bd7661cb92c42f726ec051cd7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 93770c8f4d92a12dcfe29290c84708949d9a1d4a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542891"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293394"
 ---
 # <a name="trusted-subsystem"></a>Доверенная подсистема
+
 Клиент обращается к одной или нескольким веб-службам, распределенным по сети. Веб-службы устроены так, что доступ к дополнительным ресурсам (таким как базы данных или другие веб-службы) инкапсулируется в бизнес-логике веб-службы. Эти ресурсы должны быть защищены от несанкционированного доступа. На следующем рисунке показан процесс доверенной подсистемы.  
   
  ![Доверенная подсистема](media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
@@ -43,12 +44,14 @@ ms.locfileid: "90542891"
 ## <a name="resource-back-end-service"></a>Ресурс (внутренняя служба)  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано, как создать конечную точку службы для ресурса, работающую в режиме безопасности транспорта по транспортному протоколу TCP.  
   
  [!code-csharp[TrustedSubSystemsResource#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystemsresource/cs/source.cs#1)]
  [!code-vb[TrustedSubSystemsResource#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystemsresource/vb/source.vb#1)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  В следующей конфигурации настраивается та же конечная точка с использованием конфигурации.  
   
 ```xml  
@@ -90,6 +93,7 @@ ms.locfileid: "90542891"
 ## <a name="trusted-subsystem"></a>Доверенная подсистема  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано, как создать конечную точку службы для доверенной подсистемы, работающую в режиме безопасности сообщения по транспортному протоколу HTTP и использующую для проверки подлинности имя пользователя и пароль.  
   
  [!code-csharp[TrustedSubSystems#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystems/cs/source.cs#1)]
@@ -101,6 +105,7 @@ ms.locfileid: "90542891"
  [!code-vb[TrustedSubSystems#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystems/vb/source.vb#2)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  В следующей конфигурации настраивается та же конечная точка с использованием конфигурации. Обратите внимание на две привязки: одна защищает службу, размещенную в доверенной подсистеме, а вторая обеспечивает обмен данными между доверенной подсистемой и внутренней службой.  
   
 ```xml  
@@ -166,12 +171,14 @@ ms.locfileid: "90542891"
 ## <a name="client"></a>Клиент  
   
 ### <a name="code"></a>Код  
+
  В следующем коде показано, как создать клиент, обменивающийся данными с доверенной подсистемой в режиме безопасности сообщения по протоколу HTTP и использующий для проверки подлинности имя пользователя и пароль.  
   
  [!code-csharp[TrustedSubSystemsClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystemsclient/cs/source.cs#1)]
  [!code-vb[TrustedSubSystemsClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystemsclient/vb/source.vb#1)]  
   
 ### <a name="configuration"></a>Конфигурация  
+
  Следующий код служит для настройки клиента для использования режима безопасности сообщений по протоколу HTTP, а также имени пользователя и пароля для проверки подлинности. Указать имя пользователя и пароль можно только с помощью кода (они не подлежат настройке).  
   
 ```xml  

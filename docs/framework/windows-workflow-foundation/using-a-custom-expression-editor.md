@@ -2,29 +2,31 @@
 title: Использование редактора настраиваемых выражений
 ms.date: 03/30/2017
 ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
-ms.openlocfilehash: a1cd92766c8897868920c1465ddb3eeabae1aa97
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e33e804d73239794a7f9cf9f3c28c3808f8b963e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182718"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293316"
 ---
 # <a name="using-a-custom-expression-editor"></a>Использование редактора настраиваемых выражений
+
 Чтобы получить расширенные или упрощенные возможности редактирования выражений, можно реализовать настраиваемый редактор выражений. Редактор настраиваемых выражений может потребоваться в следующих случаях.  
   
-- Чтобы обеспечить поддержку IntelliSense и других функций расширенного редактирования во вновь размещенном конструкторе рабочих процессов. Эта функциональность должна быть предоставлена, поскольку редактор выражения Visual Studio по умолчанию не может быть использован в переразмещении приложений.  
+- Чтобы обеспечить поддержку IntelliSense и других функций расширенного редактирования во вновь размещенном конструкторе рабочих процессов. Эта функция должна быть предоставлена, так как редактор выражений Visual Studio по умолчанию нельзя использовать в переразмещенных приложениях.  
   
-- Чтобы упростить редактирование выражения для пользователей бизнес-аналитиков, чтобы они не были, например, обязаны изучать Visual Basic или иметь дело с визуальными основными выражениями.  
+- Для упрощения редактирования выражений для пользователей бизнес-аналитики, чтобы они не были, например, потребовались для изучения Visual Basic или работы с выражениями Visual Basic.  
   
  Для реализации редактора настраиваемых выражений требуется выполнить три основных шага.  
   
-1. Реализуйте интерфейс <xref:System.Activities.Presentation.View.IExpressionEditorService>. Этот интерфейс применяется для управления созданием и удалением редакторов выражений.  
+1. Реализовать интерфейс <xref:System.Activities.Presentation.View.IExpressionEditorService>. Этот интерфейс применяется для управления созданием и удалением редакторов выражений.  
   
-2. Реализуйте интерфейс <xref:System.Activities.Presentation.View.IExpressionEditorInstance>. Этот интерфейс реализует пользовательский интерфейс для редактирования выражений.  
+2. Реализовать интерфейс <xref:System.Activities.Presentation.View.IExpressionEditorInstance>. Этот интерфейс реализует пользовательский интерфейс для редактирования выражений.  
   
 3. Опубликуйте службу <xref:System.Activities.Presentation.View.IExpressionEditorService> во вновь размещенном приложении рабочих процессов.  
   
 ## <a name="implementing-a-custom-expression-editor-in-a-class-library"></a>Реализация редактора пользовательских выражений в библиотеке классов  
+
  Далее приводится образец кода для класса `MyEditorService` (эксперимент), который реализует интерфейс <xref:System.Activities.Presentation.View.IExpressionEditorService>, содержащийся в проекте библиотеки MyExpressionEditorService.  
   
 ```csharp  
@@ -222,7 +224,8 @@ namespace MyExpressionEditorService
 ```  
   
 ### <a name="publishing-a-custom-expression-editor-in-a-wpf-project"></a>Публикация редактора настраиваемых выражений в WPF-проекте  
- Вот код, который показывает, как перевести дизайнера в приложении WPF и как создать и опубликовать службу. `MyEditorService` Прежде чем использовать этот код, необходимо добавить ссылку на проект библиотеки MyExpressionEditorService из проекта, содержащего приложение avalon2.  
+
+ Ниже приведен код, демонстрирующий способ повторного размещения конструктора в приложении WPF и создания и публикации `MyEditorService` службы. Прежде чем использовать этот код, необходимо добавить ссылку на проект библиотеки MyExpressionEditorService из проекта, содержащего приложение avalon2.  
   
 ```csharp  
 using System.Windows;  
@@ -276,9 +279,10 @@ namespace WpfApplication1
 ```  
   
 ### <a name="notes"></a>Примечания  
- Если вы используете управление **ExpressionTextBox** в пользовательском ировщике деятельности, нет необходимости <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> создавать и <xref:System.Activities.Presentation.View.IExpressionEditorService> уничтожать редакторы выражений с помощью <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> и методов интерфейса. Класс <xref:System.Activities.Presentation.View.ExpressionTextBox> выполнит это за вас.  
+
+ При использовании элемента управления **ExpressionTextBox** в пользовательском конструкторе действий необязательно создавать и уничтожать редакторы выражений с помощью <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> методов и <xref:System.Activities.Presentation.View.IExpressionEditorService> интерфейса. Класс <xref:System.Activities.Presentation.View.ExpressionTextBox> выполнит это за вас.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Activities.Presentation.View.IExpressionEditorService>
 - <xref:System.Activities.Presentation.View.IExpressionEditorInstance>

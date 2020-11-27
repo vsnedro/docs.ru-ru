@@ -4,14 +4,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Net profile TCP
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
-ms.openlocfilehash: 56648b74e400085b76f4f837852791b33fbf97e0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7a1af17ef3c2176371a394ae8b63d9cc207d5b6f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600001"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96292783"
 ---
 # <a name="default-nettcpbinding"></a>Привязка NetTcpBinding по умолчанию
+
 В этом образце демонстрируется использование привязки <xref:System.ServiceModel.NetTcpBinding>. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора. В этом образце служба является резидентной. И клиент, и служба являются консольными приложениями.  
   
 > [!NOTE]
