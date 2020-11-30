@@ -2,17 +2,19 @@
 title: Доступ к XML-данным с помощью класса XPathNavigator
 ms.date: 03/30/2017
 ms.assetid: c57b46e6-5c77-408f-bc4e-67a5dcc9cc05
-ms.openlocfilehash: a3911230598a282d66fa50bf1d82c4b4083a30e4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f87e2e12b7ebc740809dc8db902f2ece92e8f127
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821896"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725408"
 ---
 # <a name="accessing-xml-data-using-xpathnavigator"></a>Доступ к XML-данным с помощью класса XPathNavigator
+
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет методы для перемещения по узлам, извлечения XML-данных, доступа к строго типизированным XML-данным в объектах <xref:System.Xml.XPath.XPathDocument> и <xref:System.Xml.XmlDocument>.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Навигация в наборе узлов с помощью XPathNavigator](node-set-navigation-using-xpathnavigator.md)  
  Описываются методы класса <xref:System.Xml.XPath.XPathNavigator>, используемые для перемещения по наборам узлов в объектах <xref:System.Xml.XPath.XPathDocument> и <xref:System.Xml.XmlDocument>.  
   

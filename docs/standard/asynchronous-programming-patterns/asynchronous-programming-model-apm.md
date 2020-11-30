@@ -11,14 +11,15 @@ helpviewer_keywords:
 - stopping asynchronous operations
 - asynchronous programming, beginning operations
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
-ms.openlocfilehash: 7b976cf48214fb623563b09aab8a991a5a05d3ca
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a6e2ed06e92adffa6c8a61b27bbff994370e8b34
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824445"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722743"
 ---
 # <a name="asynchronous-programming-model-apm"></a>Асинхронная модель программирования (APM)
+
 Асинхронная операция, использующая шаблон разработки <xref:System.IAsyncResult>, реализуется в виде двух методов с именами `BeginOperationName` и `EndOperationName`, которые соответственно начинают и завершают асинхронную операцию *OperationName*. Например, класс <xref:System.IO.FileStream> предоставляет методы <xref:System.IO.FileStream.BeginRead%2A> и <xref:System.IO.FileStream.EndRead%2A> для асинхронного считывания байтов из файла. Эти методы реализуют асинхронную версию метода <xref:System.IO.FileStream.Read%2A> .  
   
 > [!NOTE]
@@ -27,6 +28,7 @@ ms.locfileid: "94824445"
  После вызова метода `BeginOperationName` приложение может продолжить выполнение инструкций в вызывающем потоке, пока асинхронная операция выполняется в другом потоке. Для каждого вызова метода `BeginOperationName` приложение должно вызывать метод `EndOperationName`, получающий результаты операции.  
   
 ## <a name="beginning-an-asynchronous-operation"></a>Начало асинхронной операции  
+
  Метод `BeginOperationName` начинает асинхронную операцию *OperationName* и возвращает объект, реализующий интерфейс <xref:System.IAsyncResult>. В объектах<xref:System.IAsyncResult> хранятся сведения об асинхронных операциях. В таблице ниже приведены сведения об асинхронной операции.  
   
 |Член|Описание|  
@@ -41,6 +43,7 @@ ms.locfileid: "94824445"
  `BeginOperationName` немедленно возвращает управление в вызывающий поток. Если метод `BeginOperationName` создает исключения, это происходит до запуска асинхронной операции. Если метод `BeginOperationName` создает исключения, метод обратного вызова не вызывается.  
   
 ## <a name="ending-an-asynchronous-operation"></a>Завершение асинхронной операции  
+
  Метод `EndOperationName` завершает асинхронную операцию *OperationName*. Возвращаемое значение метода `EndOperationName` имеет тот же тип, что и значение его синхронной версии, и определяется асинхронной операцией. Например, метод <xref:System.IO.FileStream.EndRead%2A> возвращает число байтов, считанных из потока <xref:System.IO.FileStream> , а метод <xref:System.Net.Dns.EndGetHostByName%2A> возвращает объект <xref:System.Net.IPHostEntry> , содержащий сведения о сервере. Метод `EndOperationName` принимает любые выходные параметры out и ref, объявленные в сигнатуре синхронной версии метода. В дополнение к параметрам из синхронного метода метод `EndOperationName` также включает параметр <xref:System.IAsyncResult>. Вызывающие объекты должны передавать экземпляр, возвращаемый соответствующим вызовом метода `BeginOperationName`.  
   
  Если асинхронная операция, представленная объектом <xref:System.IAsyncResult>, не завершилась к моменту вызова метода `EndOperationName`, метод `EndOperationName` блокирует выполнение вызывающего потока до момента завершения асинхронной операции. Исключения, создаваемые асинхронной операцией, возникают из метода `EndOperationName`. Многократный вызов метода `EndOperationName` с одним экземпляром <xref:System.IAsyncResult> не определен. Аналогично, вызов метода `EndOperationName` с объектом <xref:System.IAsyncResult>, который не был возвращен соответствующим методом Begin, также имеет неопределенный эффект.  

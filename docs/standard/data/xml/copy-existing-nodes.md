@@ -2,14 +2,15 @@
 title: Копирование существующих узлов
 ms.date: 03/30/2017
 ms.assetid: 2aa8f65c-cc62-4638-9c46-129dc15be786
-ms.openlocfilehash: b4ae24f9776456033a876e8ae4d1515d2f669fe0
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 651e9fc9dc0d1a50a2d15d382b3ca65f7fd4b7fd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830952"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701436"
 ---
 # <a name="copy-existing-nodes"></a>Копирование существующих узлов
+
 Модель XML DOM включает множество методов и свойств, которые можно использовать для выбора узла, например **SelectSingleNode**, **ChildNodes[int i]** , **Attributes[int i]** . После выбора узла его можно вставить в дерево с помощью одного из методов вставки, допустимых для данного типа узла. Единственное ограничение при выполнении операции вставки узла в дерево состоит в том, что по ее завершении документ должен оставаться документом правильного формата. При вставке существующего узла в дерево DOM узел удаляется из своей исходной позиции и добавляется в целевую позицию.  
   
 ## <a name="see-also"></a>См. также

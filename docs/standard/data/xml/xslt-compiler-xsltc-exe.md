@@ -2,14 +2,15 @@
 title: XSLT-компилятор (xsltc.exe)
 ms.date: 03/30/2017
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
-ms.openlocfilehash: cfeebc3ac0c0259c975439dc93c3c5f003b60c40
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 89e2291cb4eafe9ca9e5001061b960f348fe4719
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818327"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720832"
 ---
 # <a name="xslt-compiler-xsltcexe"></a>XSLT-компилятор (xsltc.exe)
+
 XSLT-компилятор (xsltc.exe) компилирует таблицы стилей XSLT и создает сборку. Скомпилированную таблицу стилей можно передать непосредственно методу <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>. Подписанные сборки не могут создаваться с помощью xsltc.exe.  
   
  Средство xsltc.exe входит в состав среды Visual Studio. Дополнительные сведения см. в разделе [Загрузки Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).  
@@ -41,6 +42,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 |`?`|Отображает синтаксис команд и параметров программы.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Решения XSLT могут состоять из нескольких модулей таблиц стилей. Программа xsltc.exe создает сборки из таблиц стилей. Затем эти сборки можно передать методу <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>. Это может снизить затраты производительности в некоторых сценариях развертывания XSLT.  
   
 > [!NOTE]
@@ -49,6 +51,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
  Программа xsltc.exe не проверяет имена класса (`/class:`*name*) и сборки (`/out:`*assemblyName*). Если имена оказываются недопустимыми, среда CLR сообщает об ошибке.  
   
 ## <a name="examples"></a>Примеры  
+
  Следующая команда компилирует таблицу стилей и создает сборку с именем booksort.dll.  
   
 ```console  

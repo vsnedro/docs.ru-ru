@@ -12,12 +12,12 @@ helpviewer_keywords:
 - data streams, reading text from files
 - I/O [.NET], reading text from files
 ms.assetid: ed180baa-dfc6-4c69-a725-46e87edafb27
-ms.openlocfilehash: 7c772ec1de41d0ba2b4ef0d924a252326ee6909e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 48b862ff77bf4ace48a5481fe9bedcf354b5654b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823372"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725343"
 ---
 # <a name="how-to-read-text-from-a-file"></a>Практическое руководство. Чтение текста из файла
 
@@ -27,6 +27,7 @@ ms.locfileid: "94823372"
 > Эти примеры кода не относятся к приложениям универсальной платформы Windows (UWP), так как в среде выполнения Windows используются разные типы потоков для чтения и записи файлов. Пример чтения текста из файла в приложении UWP см. в разделе [Краткое руководство. Чтение и запись файлов](/previous-versions/windows/apps/hh758325(v=win.10)). Примеры, демонстрирующие преобразование потоков .NET Framework в потоки среды выполнения Windows и наоборот, см. в разделе [Практическое руководство. Преобразование между потоками .NET Framework и потоками среды выполнения Windows](how-to-convert-between-dotnet-streams-and-winrt-streams.md).  
   
 ## <a name="example-synchronous-read-in-a-console-app"></a>Пример. Синхронное чтение в консольном приложении  
+
 Следующий пример иллюстрирует синхронную операцию чтения в консольном приложении. В этом примере текстовый файл открывается с помощью модуля чтения потока, содержимое копируется в строку, а строка выводится в консоли.  
   
 > [!IMPORTANT]
@@ -36,6 +37,7 @@ ms.locfileid: "94823372"
 :::code language="vb" source="snippets/how-to-read-text-from-a-file/vb/sync-console/Program.vb":::
   
 ## <a name="example-asynchronous-read-in-a-wpf-app"></a>Пример. Асинхронное чтение в приложении WPF
+
  Следующий пример иллюстрирует асинхронную операцию чтения в приложении Windows Presentation Foundation (WPF).  
   
 > [!IMPORTANT]

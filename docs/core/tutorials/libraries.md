@@ -4,12 +4,12 @@ description: Узнайте, как создавать библиотеки дл
 author: cartermp
 ms.topic: how-to
 ms.date: 05/01/2017
-ms.openlocfilehash: e98ce9e08c8d92bb4c89348e21cece60de811848
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 8a0b1c5645f41a256bfb9d0e5dac74f8706d84e6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223700"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725083"
 ---
 # <a name="develop-libraries-with-the-net-core-cli"></a>Разработка библиотек с помощью .NET Core CLI
 
@@ -185,7 +185,7 @@ namespace MultitargetLib
             return $"Dotnet Foundation mentions .NET {dotNetCount} times!";
         }
 #else
-        // .NET 4.5+ can use async/await!
+        // .NET Framework 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
             string url = "https://www.dotnetfoundation.org/";
@@ -295,9 +295,9 @@ let doWork data = async {
 
 Подобные сценарии использования предполагают, что интерфейсы API, к которым осуществляется доступ, должны иметь разную структуру для C# и F#.  Стандартным подходом к решению этой задачи является факторинг всей логики библиотеки в базовом проекте и определение в проектах C# и F# уровней API, которые вызывают этот базовый проект.  Далее в этом разделе будут использоваться следующие имена:
 
-* **AwesomeLibrary.Core**  — базовый проект, содержащий всю логику библиотеки;
-* **AwesomeLibrary.CSharp**  — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке C#
-* **AwesomeLibrary.FSharp**  — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке F#
+* **AwesomeLibrary.Core** — базовый проект, содержащий всю логику библиотеки;
+* **AwesomeLibrary.CSharp** — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке C#
+* **AwesomeLibrary.FSharp** — проект с открытыми интерфейсами API, предназначенными для использования в коде на языке F#
 
 Чтобы получить ту же структуру каталогов, что и в этом руководстве, выполните следующие команды в окне терминала:
 

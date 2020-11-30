@@ -6,17 +6,19 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: fe1b4a11-37f4-4e1a-93c9-239f4fe736c0
-ms.openlocfilehash: f382165ca8e2b972c47a080244a3d0054b5eb604
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b2feb14e304c8ba7ecc19b2e79b943204044da05
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822741"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722678"
 ---
 # <a name="including-or-importing-xml-schemas"></a>Включение или импорт XML-схем
+
 Схема XML может содержать элементы `<xs:import />`, `<xs:include />` и `<xs:redefine />`. Эти элементы схемы ссылаются на другие схемы XML, которые можно использовать в дополнение к структуре схемы, их включающей или импортирующей. Классы <xref:System.Xml.Schema.XmlSchemaImport>, <xref:System.Xml.Schema.XmlSchemaInclude> и <xref:System.Xml.Schema.XmlSchemaRedefine> сопоставляются с этими элементами в API модели SOM.  
   
 ## <a name="including-or-importing-an-xml-schema"></a>Включение или импорт схемы XML  
+
  В следующем примере кода [пользовательская схема XML](building-xml-schemas.md) дополняется схемой адресов. Добавление к пользовательской схеме схемы адресов делает типы адресов доступными в пользовательской схеме.  
   
  Схему адресов можно добавить с помощью элементов `<xs:include />` или `<xs:import />`, использующих компоненты схемы адресов без изменения, или с помощью элемента `<xs:redefine />`, который изменяет компоненты схемы в соответствии с задачами пользовательской схемы. Поскольку схема адресов имеет пространство имен `targetNamespace`, которое отличается от пользовательской схемы, используется элемент `<xs:import />` и семантика импорта.  

@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
-ms.openlocfilehash: 2eee3ff905473d8fd520929c0fe5abfb5d5c42da
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 0cee7481f9c002f860bff7f12b8be0bb763dadb1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830965"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701475"
 ---
 # <a name="convert-strings-to-net-data-types"></a>Преобразование строк в типы данных .NET
 
@@ -72,6 +72,7 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
  Однако если строка преобразуется в тип **Boolean**, **Single** или **Double**, возвращаемый тип .NET не совпадает с типом, который возвращается при использовании класса **System.Convert**.  
   
 ## <a name="string-to-boolean"></a>Преобразование строки в тип Boolean  
+
  В следующей таблице показано, какие типы создаются для заданных входных строк при преобразовании строки в значение **Boolean** с помощью метода **ToBoolean**.  
   
 |Допустимый строковый входной параметр|Тип выходных данных .NET|  
@@ -104,6 +105,7 @@ Console.WriteLine(bvalue);
 ```  
   
 ## <a name="string-to-single"></a>Преобразование строки в тип Single  
+
  В следующей таблице показано, какие типы создаются для заданных входных строк при преобразовании строки в значение **Single** с помощью метода **ToSingle**.  
   
 |Допустимый строковый входной параметр|Тип выходных данных .NET|  
@@ -112,6 +114,7 @@ Console.WriteLine(bvalue);
 |"-INF"|Single.NegativeInfinity|  
   
 ## <a name="string-to-double"></a>Преобразование строки в тип Double  
+
  В следующей таблице показано, какие типы создаются для заданных входных строк при преобразовании строки в значение **Double** с помощью метода **ToDouble**.  
   
 |Допустимый строковый входной параметр|Тип выходных данных .NET|  

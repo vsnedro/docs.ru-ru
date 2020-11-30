@@ -9,17 +9,19 @@ helpviewer_keywords:
 - lists [.NET], generic delegates
 - generics [.NET], delegates
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
-ms.openlocfilehash: b3b18a2efc4dba432ee241d764c1a81101796baf
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 5356671b4f1c48c125e49c35a2f8ddc5ea1ca26b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827286"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728515"
 ---
 # <a name="generic-delegates-for-manipulating-arrays-and-lists"></a>Универсальные делегаты для управления массивами и списками
+
 В этом разделе содержится обзор универсальных делегатов для преобразований, предикатов поиска и действий, осуществляемых с элементами массива или коллекции.  
   
 ## <a name="generic-delegates-for-manipulating-arrays-and-lists"></a>Универсальные делегаты для управления массивами и списками  
+
  Универсальный делегат <xref:System.Action%601> представляет метод, выполняющий некоторое действие с элементом указанного типа. Можно создать метод, выполняющий нужное действие с элементом, создать экземпляр делегата <xref:System.Action%601> для представления этого метода, а затем передать массив и делегат в статический универсальный метод <xref:System.Array.ForEach%2A?displayProperty=nameWithType>. Метод вызывается для каждого элемента массива.  
   
  Универсальный класс <xref:System.Collections.Generic.List%601> также предоставляет метод <xref:System.Collections.Generic.List%601.ForEach%2A>, использующий делегат <xref:System.Action%601>. Этот метод неуниверсальный.  
@@ -36,6 +38,7 @@ ms.locfileid: "94827286"
  Универсальный делегат <xref:System.Converter%602> позволяет определить преобразование между двумя типами и преобразовать массив одного типа в массив другого типа (либо преобразовать список одного типа в список другого типа). Создайте метод, преобразующий элементы существующего списка в новый тип, создайте экземпляр делегата, который будет представлять метод, и используйте универсальный статический метод <xref:System.Array.ConvertAll%2A?displayProperty=nameWithType> для создания массива нового типа из исходного массива или универсальный метод экземпляра <xref:System.Collections.Generic.List%601.ConvertAll%60%601%28System.Converter%7B%600%2C%60%600%7D%29?displayProperty=nameWithType> для создания списка нового типа из исходного списка.  
   
 ### <a name="chaining-delegates"></a>Связывание делегатов  
+
  Многие методы, использующие эти делегаты, возвращают массив или список, который можно передать другому методу. Например, если вы хотите выбрать определенные элементы массива, преобразовать их в новый тип и сохранить в новый массив, вы можете передать массив, возвращенный универсальным методом <xref:System.Array.FindAll%2A>, в универсальный метод <xref:System.Array.ConvertAll%2A>. Если у нового типа элементов нет естественного порядка сортировки, вы можете передать массив, возвращенный универсальным методом <xref:System.Array.ConvertAll%2A>, в универсальный метод <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29>.  
   
 ## <a name="see-also"></a>См. также раздел

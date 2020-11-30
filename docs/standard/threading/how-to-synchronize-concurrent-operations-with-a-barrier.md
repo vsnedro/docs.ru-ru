@@ -7,17 +7,19 @@ dev_langs:
 helpviewer_keywords:
 - Barrier, how to use
 ms.assetid: e1a253ff-e0fb-4df8-95ff-d01a90d4cb19
-ms.openlocfilehash: 97a95250ff73b43d4404fb891078aed1b04f105e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: dc0955ba6194dd936da19c634ada797d6cbd3720
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819738"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95716477"
 ---
 # <a name="how-to-synchronize-concurrent-operations-with-a-barrier"></a>Практическое руководство. Синхронизация параллельных операций с барьером
+
 В следующем примере показано, как синхронизировать параллельные задачи с помощью объекта <xref:System.Threading.Barrier>.  
   
 ## <a name="example"></a>Пример  
+
  Следующая программа подсчитывает количество итераций (или этапов), необходимых для того, чтобы каждый из двух потоков одновременно нашел свое частичное решение, используя алгоритм перемешивания слов. В каждом потоке перемешиваются свои слова, а затем операция барьера после этапа сравнивает два результата и проверяет, правильно ли собрано полное предложение.  
   
  [!code-csharp[CDS_Barrier#01](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_barrier/cs/barrier.cs#01)]

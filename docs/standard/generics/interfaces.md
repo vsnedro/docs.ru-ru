@@ -7,12 +7,12 @@ helpviewer_keywords:
 - generics [.NET], interfaces
 - ordering comparisons [.NET]
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-ms.openlocfilehash: 429aa3c4d48fa6805b498206bcb699b56f522409
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f8cdd7ea71e68f73871a606c6f9b754d675ca7eb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827195"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722639"
 ---
 # <a name="generic-interfaces"></a>Универсальные интерфейсы
 
@@ -24,6 +24,7 @@ ms.locfileid: "94827195"
 > Параметры типов нескольких универсальных интерфейсов помечены как ковариантные или контрвариантные, что обеспечивает дополнительную гибкость при назначении и использовании типов, реализующих эти интерфейсы. См. раздел [Ковариация и контрвариация](covariance-and-contravariance.md).  
   
 ## <a name="equality-and-ordering-comparisons"></a>Упорядочение и сравнение на равенство  
+
  В пространстве имен <xref:System> универсальные интерфейсы <xref:System.IComparable%601?displayProperty=nameWithType> и <xref:System.IEquatable%601?displayProperty=nameWithType>, как и их неуниверсальные аналоги, определяют методы для упорядочения и сравнения на равенство соответственно. Типы реализуют эти интерфейсы для предоставления способности выполнять такие сравнения.  
   
  В пространстве имен <xref:System.Collections.Generic> универсальные интерфейсы <xref:System.Collections.Generic.IComparer%601> и <xref:System.Collections.Generic.IEqualityComparer%601> позволяют определить операции упорядочения или сравнения на равенство для типов, которые не реализуют универсальный интерфейс <xref:System.IComparable%601?displayProperty=nameWithType> или <xref:System.IEquatable%601?displayProperty=nameWithType>. Кроме того, они позволяют переопределить эти отношения для типов, реализующих эти интерфейсы. Эти интерфейсы используются методами и конструкторами многих универсальных классов коллекций. Например, можно передать универсальный объект <xref:System.Collections.Generic.IComparer%601> в конструктор класса <xref:System.Collections.Generic.SortedDictionary%602>, чтобы указать порядок сортировки для типа, который не реализует универсальный интерфейс <xref:System.IComparable%601?displayProperty=nameWithType>. Предусмотрены перегрузки универсального статического метода <xref:System.Array.Sort%2A?displayProperty=nameWithType> и метода экземпляра <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> для сортировки массивов и списков с помощью реализаций универсального интерфейса <xref:System.Collections.Generic.IComparer%601>.  
@@ -31,6 +32,7 @@ ms.locfileid: "94827195"
  Универсальные классы <xref:System.Collections.Generic.Comparer%601> и <xref:System.Collections.Generic.EqualityComparer%601> предоставляют базовые классы для реализаций универсальных интерфейсов <xref:System.Collections.Generic.IComparer%601> и <xref:System.Collections.Generic.IEqualityComparer%601>. Кроме того, они предоставляют операции упорядочения и сравнения на равенство по умолчанию через соответствующие свойства <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=nameWithType> и <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType>.  
   
 ## <a name="collection-functionality"></a>Функциональные возможности коллекций  
+
  Универсальный интерфейс <xref:System.Collections.Generic.ICollection%601> представляет собой базовый интерфейс для универсальных типов коллекций. Он предоставляет базовые функции для добавления, удаления, копирования и перечисления элементов. <xref:System.Collections.Generic.ICollection%601> наследуется от универсального интерфейса <xref:System.Collections.Generic.IEnumerable%601> и неуниверсального интерфейса <xref:System.Collections.IEnumerable>.  
   
  Универсальный интерфейс <xref:System.Collections.Generic.IList%601> расширяет универсальный интерфейс <xref:System.Collections.Generic.ICollection%601> с помощью методов для получения элементов по индексу.  

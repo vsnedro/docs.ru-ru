@@ -6,19 +6,21 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
-ms.openlocfilehash: a97ff5afef23c361b1f675d2f07f43b3bc5df299
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 74dbe6b84c8d9400790f763f811da5542c732892
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818392"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720884"
 ---
 # <a name="xpath-queries-and-namespaces"></a>Запросы XPath и пространства имен
+
 Запросы XPath учитывают наличие пространств имен в XML-документе и могут использовать префиксы пространств имен для дополнения имен элементов и атрибутов. Добавление префикса пространства имен к именам элементов и атрибутов ограничивает набор узлов, возвращаемых запросом XPath, лишь теми узлами, которые принадлежат к определенному пространству имен.  
   
  Например, если префикс `books` соответствует пространству имен `http://www.contoso.com/books`, то следующий запрос XPath `/books:books/books:book` выберет только элементы `book` в пространстве имен `http://www.contoso.com/books`.  
   
 ## <a name="the-xmlnamespacemanager"></a>Класс XmlNamespaceManager  
+
  Чтобы использовать пространства имен в запросе XPath, объект, производный от интерфейса <xref:System.Xml.IXmlNamespaceResolver>, например класс <xref:System.Xml.XmlNamespaceManager>, конструируется с URI-кодом пространства имен и префиксом, включаемым в запрос XPath.  
   
  Объект <xref:System.Xml.XmlNamespaceManager> можно использовать в запросе любым из следующих способов.  
@@ -36,6 +38,7 @@ ms.locfileid: "94818392"
 - <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
   
 ### <a name="the-default-namespace"></a>Пространство имен по умолчанию  
+
  В следующем XML-документе используется пространство имен по умолчанию с пустым префиксом, чтобы объявить пространство имен `http://www.contoso.com/books`.  
   
 ```xml  

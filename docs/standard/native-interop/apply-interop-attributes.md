@@ -14,19 +14,21 @@ helpviewer_keywords:
 - COM interop, exposing COM components
 - COM interop, applying attributes
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-ms.openlocfilehash: 7b9e557e36d2ff6aa978eb28d3c82764ffb1980a
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 38632c5a1f462c3a7b537978fde81424916746da
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93188683"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706298"
 ---
 # <a name="applying-interop-attributes"></a>Применение атрибутов взаимодействия
+
 В пространстве имен <xref:System.Runtime.InteropServices> представлены три категории атрибутов взаимодействия: атрибуты, применяемые разработчиком во время разработки, API и средствами COM-взаимодействия в процессе преобразования, а также разработчиком или средой COM-взаимодействия.  
   
  Дополнительные сведения о применении атрибутов к управляемому коду см. в разделе [Расширение метаданных с помощью атрибутов](../attributes/index.md). Как и другие настраиваемые атрибуты, атрибуты взаимодействия можно применять к типам, методам, свойствам, параметрам, полям и другим членам.  
   
 ## <a name="design-time-attributes"></a>Атрибуты времени разработки  
+
  Атрибуты времени разработки позволяют настраивать результаты процесса преобразования, который выполняется API и средствами COM-взаимодействия. В следующей таблице описываются атрибуты, которые можно применять к управляемому исходному коду. В некоторых случаях средства COM-взаимодействия также могут применять описываемые здесь атрибуты.  
   
 |Атрибут|Описание|  
@@ -38,10 +40,10 @@ ms.locfileid: "93188683"
 |<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>|Указывает, что метод должен вызываться при регистрации сборки для использования из модели COM, что позволяет выполнять написанный пользователем код в процессе регистрации.|  
 |<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>|Определяет интерфейсы, являющиеся источниками событий для класса.<br /><br /> Этот атрибут может применяться средствами COM-взаимодействия.|  
 |<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>|Указывает, что метод должен вызываться при отмене регистрации сборки для использования из модели COM, что позволяет выполнять написанный пользователем код в ходе этого процесса.|  
-|<xref:System.Runtime.InteropServices.ComVisibleAttribute>|Если значение атрибута равно **false** , отображает типы, невидимые для модели COM. Этот атрибут может применяться к отдельному типу или ко всей сборке для управления видимостью COM. По умолчанию все управляемые открытые типы являются видимыми, и использовать этот атрибут не нужно.|  
+|<xref:System.Runtime.InteropServices.ComVisibleAttribute>|Если значение атрибута равно **false**, отображает типы, невидимые для модели COM. Этот атрибут может применяться к отдельному типу или ко всей сборке для управления видимостью COM. По умолчанию все управляемые открытые типы являются видимыми, и использовать этот атрибут не нужно.|  
 |<xref:System.Runtime.InteropServices.DispIdAttribute>|Указывает идентификатор диспетчера COM (DISPID) для метода или поля. Этот атрибут содержит идентификатор DISPID для метода, поля или свойства, которые он описывает.<br /><br /> Этот атрибут может применяться средствами COM-взаимодействия.|
 |<xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute>|Определяет интерфейс по умолчанию для COM-класса, реализованного в .NET.<br /><br /> Этот атрибут может применяться средствами COM-взаимодействия.|
-|<xref:System.Runtime.InteropServices.FieldOffsetAttribute>|Указывает физическое расположение каждого поля в классе при использовании с атрибутом **StructLayoutAttribute** , если атрибуту **LayoutKind** присвоено значение Explicit.|  
+|<xref:System.Runtime.InteropServices.FieldOffsetAttribute>|Указывает физическое расположение каждого поля в классе при использовании с атрибутом **StructLayoutAttribute**, если атрибуту **LayoutKind** присвоено значение Explicit.|  
 |<xref:System.Runtime.InteropServices.GuidAttribute>|Указывает глобальный уникальный идентификатор (GUID) класса, интерфейса или всей библиотеки типов. Строка, передаваемая атрибуту, должна иметь формат допустимого аргумента конструктора для типа **System.Guid**.<br /><br /> Этот атрибут может применяться средствами COM-взаимодействия.|  
 |<xref:System.Runtime.InteropServices.IDispatchImplAttribute>|Указывает, какую реализацию интерфейса **IDispatch** общеязыковая среда выполнения использует при предоставлении dual- и disp-интерфейсов для модели COM.|  
 |<xref:System.Runtime.InteropServices.InAttribute>|Указывает, что данные необходимо маршалировать в вызывающий объект. Может использоваться в качестве атрибута параметров.|  
@@ -55,6 +57,7 @@ ms.locfileid: "93188683"
 |<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Управляет физической компоновкой полей класса.<br /><br /> Этот атрибут может применяться средствами COM-взаимодействия.|  
   
 ## <a name="conversion-tool-attributes"></a>Атрибуты средств преобразования  
+
  В следующей таблице описываются атрибуты, которые применяются средствами COM-взаимодействия во время преобразования. Эти атрибуты не применяются во время разработки.  
   
 |Атрибут|Описание|  
@@ -63,9 +66,9 @@ ms.locfileid: "93188683"
 |<xref:System.Runtime.InteropServices.ComConversionLossAttribute>|Указывает, что сведения о классе или интерфейсе были потеряны при импорте из библиотеки типов в сборку.|  
 |<xref:System.Runtime.InteropServices.ComEventInterfaceAttribute>|Определяет исходный интерфейс и класс, реализующие методы интерфейса событий.|  
 |<xref:System.Runtime.InteropServices.ImportedFromTypeLibAttribute>|Указывает, что сборка была первоначально импортирована из библиотеки типов COM. Этот атрибут содержит определение исходной библиотеки типов.|  
-|<xref:System.Runtime.InteropServices.TypeLibFuncAttribute>|Содержит флаги **FUNCFLAGS** , которые были первоначально импортированы для этой функции из библиотеки типов COM.|  
-|<xref:System.Runtime.InteropServices.TypeLibTypeAttribute>|Содержит флаги **TYPEFLAGS** , которые были первоначально импортированы для этого типа из библиотеки типов COM.|  
-|<xref:System.Runtime.InteropServices.TypeLibVarAttribute>|Содержит флаги **VARFLAGS** , которые были первоначально импортированы для этой переменной из библиотеки типов COM.|  
+|<xref:System.Runtime.InteropServices.TypeLibFuncAttribute>|Содержит флаги **FUNCFLAGS**, которые были первоначально импортированы для этой функции из библиотеки типов COM.|  
+|<xref:System.Runtime.InteropServices.TypeLibTypeAttribute>|Содержит флаги **TYPEFLAGS**, которые были первоначально импортированы для этого типа из библиотеки типов COM.|  
+|<xref:System.Runtime.InteropServices.TypeLibVarAttribute>|Содержит флаги **VARFLAGS**, которые были первоначально импортированы для этой переменной из библиотеки типов COM.|  
   
 ## <a name="see-also"></a>См. также
 

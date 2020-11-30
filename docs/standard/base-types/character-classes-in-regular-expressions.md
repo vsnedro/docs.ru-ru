@@ -11,12 +11,12 @@ helpviewer_keywords:
 - characters, matching syntax
 - .NET regular expressions, character classes
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
-ms.openlocfilehash: 69cece42c5d7c92eb1af5e31f4fd83f5384b1d8e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 35ffe3f338897bc7b24a6c274b5458dd2e19918c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823320"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95728775"
 ---
 # <a name="character-classes-in-regular-expressions"></a>Классы символов в регулярных выражениях
 
@@ -50,7 +50,9 @@ ms.locfileid: "94823320"
 > Классы символов, которые сопоставляют символы по категориям, например [\w](#WordCharacter), для соответствия символов слов или [\p{}](#CategoryOrBlock) для соответствия категории Юникод, используют класс <xref:System.Globalization.CharUnicodeInfo> для получения сведений о категориях символов. В .NET Framework 4.6.2 и более поздних версий категории символов основаны на [стандарте Юникода, версия 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/).
   
 <a name="PositiveGroup"></a>
+
 ## <a name="positive-character-group--"></a>Положительная группа символов: [ ]  
+
  Положительная группа символов задает список символов, один из которых должен присутствовать во входной строке для успешного сопоставления. Символы можно задать по отдельности или в виде диапазона.  
   
  Синтаксис для указания списка отдельных символов выглядит следующим образом:  
@@ -106,7 +108,9 @@ ms.locfileid: "94823320"
 |`\b`|Соответствует границе слова.|  
   
 <a name="NegativeGroup"></a>
+
 ## <a name="negative-character-group-"></a>Отрицательная группа символов: [^]  
+
  Отрицательная группа символов задает список символов, которые не должны присутствовать во входной строке для успешного сопоставления. Символы можно задать по отдельности или в виде диапазона.  
   
 Синтаксис для указания списка отдельных символов выглядит следующим образом:  
@@ -154,7 +158,9 @@ ms.locfileid: "94823320"
 |`\b`|Конец на границе слова.|  
   
 <a name="AnyCharacter"></a>
+
 ## <a name="any-character-"></a>Любой символ: .  
+
  Символ точки (.) соответствует любому символу, кроме `\n` (символ перевода строки, \u000A), с использованием указанных ниже двух квалификаторов.  
   
 - Если шаблон регулярного выражения изменяется параметром <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> или если часть этого шаблона, содержащая класс символов `.`, изменяется параметром `s`, то `.` соответствует любому символу. Для получения дополнительной информации см. [Параметры регулярных выражений](regular-expression-options.md).  
@@ -176,7 +182,9 @@ ms.locfileid: "94823320"
 > Поскольку элемент языка `.` соответствует любому символу, он часто используется с отложенным квантификатором, если шаблон регулярного выражения пытается несколько раз найти соответствие любому символу. Для получения дополнительной информации см. [Квантификаторы](quantifiers-in-regular-expressions.md).  
   
 <a name="CategoryOrBlock"></a>
+
 ## <a name="unicode-category-or-unicode-block-p"></a>Категория Юникода или блок Юникода: \p{}  
+
  В стандарте Юникода каждому символу присваивается общая категория. Например, определенный символ может быть прописной буквой (категория `Lu`), десятичной цифрой (категория `Nd`), математическим символом (категория `Sm`) или разделителем абзацев (категория `Zl`). Определенные наборы символов стандарта Юникод также занимают некоторый диапазон или блок последовательных кодовых точек. Например, базовая латинская кодировка находится в диапазоне от \u0000 до \u007F, а арабская кодировка находится в диапазоне от \u0600 до \u06FF.  
   
  Конструкция регулярного выражения  
@@ -205,7 +213,9 @@ ms.locfileid: "94823320"
 |`(\p{IsBasicLatin}+(\s)?)+`|Выделяет один или несколько раз шаблон из одного или нескольких базовых латинских символов, за которыми следует ноль или один символ пробела.|  
   
 <a name="NegativeCategoryOrBlock"></a>
+
 ## <a name="negative-unicode-category-or-unicode-block-p"></a>Отрицательная категория Юникода или блок Юникода: \P{}  
+
  В стандарте Юникода каждому символу присваивается общая категория. Например, определенный символ может быть прописной буквой (категория `Lu`), десятичной цифрой (категория `Nd`), математическим символом (категория `Sm`) или разделителем абзацев (категория `Zl`). Определенные наборы символов стандарта Юникод также занимают некоторый диапазон или блок последовательных кодовых точек. Например, базовая латинская кодировка находится в диапазоне от \u0000 до \u007F, а арабская кодировка находится в диапазоне от \u0600 до \u06FF.  
   
  Конструкция регулярного выражения  
@@ -222,7 +232,9 @@ ms.locfileid: "94823320"
  Шаблон регулярного выражения `(\P{Sc})+` выделяет один или несколько символов, которые не являются символами валют. Это позволяет удалить любой символ валюты из строки результата.  
   
 <a name="WordCharacter"></a>
+
 ## <a name="word-character-w"></a>Словообразующий символ: \w  
+
  `\w` соответствует любому словообразующему символу. Словообразующий символ входит во все категории Юникода, перечисленные в следующей таблице.  
   
 |Категория|Описание|  
@@ -252,7 +264,9 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/wordchar1.vb#8)]  
   
 <a name="NonWordCharacter"></a>
+
 ## <a name="non-word-character-w"></a>Несловообразующий символ: \W  
+
  `\W` соответствует любому несловообразующему символу. Элемент языка \W эквивалентен следующему классу символов:  
   
 `[^\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`  
@@ -289,7 +303,9 @@ ms.locfileid: "94823320"
  Поскольку объект <xref:System.Text.RegularExpressions.Group> для второй группы записи содержит только один захваченный несловообразующий символ, в примере извлекаются все захваченные несловообразующие символы из объекта <xref:System.Text.RegularExpressions.CaptureCollection>, который возвращается свойством <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType>.  
   
 <a name="WhitespaceCharacter"></a>
+
 ## <a name="whitespace-character-s"></a>Символ пробела: \s  
+
  `\s` соответствует любому символу пробела. Это эквивалентно управляющим последовательностям и категориям Юникода, перечисленным в следующей таблице.  
   
 |Категория|Описание|  
@@ -318,7 +334,9 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/whitespace1.vb#10)]  
   
 <a name="NonWhitespaceCharacter"></a>
+
 ## <a name="non-whitespace-character-s"></a>Символ, не являющийся пробелом: \S  
+
  `\S` соответствует любому символу, не являющемуся пробелом. Он эквивалентен шаблону регулярного выражения `[^\f\n\r\t\v\x85\p{Z}]` или противоположному шаблону, эквивалентному `\s`, выделяющему символы пробела. Дополнительные сведения см. в разделе [Символ пробела: \s](#WhitespaceCharacter).  
   
  Если задано поведение, совместимое с ECMAScript, то параметр `\S` эквивалентен `[^ \f\n\r\t\v]`. Информацию о регулярных выражениях ECMAScript см. в подразделе "Поведение сопоставления ECMAScript" раздела [Параметры регулярных выражений](regular-expression-options.md).  
@@ -335,7 +353,9 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nonwhitespace1.vb#11)]  
   
 <a name="DigitCharacter"></a>
+
 ## <a name="decimal-digit-character-d"></a>Десятичная цифра: \d  
+
  `\d` соответствует любой десятичной цифре. Он эквивалентен шаблону регулярного выражения `\p{Nd}`, который включает стандартные десятичные цифры 0–9, а также десятичные цифры из некоторых других наборов символов.  
   
  Если задано поведение, совместимое с ECMAScript, то параметр `\d` эквивалентен `[0-9]`. Информацию о регулярных выражениях ECMAScript см. в подразделе "Поведение сопоставления ECMAScript" раздела [Параметры регулярных выражений](regular-expression-options.md).  
@@ -357,7 +377,9 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/digit1.vb#12)]  
   
 <a name="NonDigitCharacter"></a>
+
 ## <a name="non-digit-character-d"></a>Символ, не являющийся цифрой: \D  
+
  `\D` соответствует любому символу, не являющемуся цифрой. Он эквивалентен шаблону регулярного выражения `\P{Nd}`.  
   
  Если задано поведение, совместимое с ECMAScript, то параметр `\D` эквивалентен `[^0-9]`. Информацию о регулярных выражениях ECMAScript см. в подразделе "Поведение сопоставления ECMAScript" раздела [Параметры регулярных выражений](regular-expression-options.md).  
@@ -376,7 +398,9 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nondigit1.vb#13)]  
   
 <a name="SupportedUnicodeGeneralCategories"></a>
+
 ## <a name="supported-unicode-general-categories"></a>Поддерживаемые общие категории Юникода  
+
  В Юникоде определяются общие категории, приведенные в следующей таблице. Дополнительные сведения см. в подразделах "Формат файлов UCD" и "Значения общих категорий" в разделе [База данных символов Юникода](https://www.unicode.org/reports/tr44/).  
   
 |Категория|Описание|  
@@ -425,6 +449,7 @@ ms.locfileid: "94823320"
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/getunicodecategory1.vb#14)]  
   
 <a name="SupportedNamedBlocks"></a>
+
 ## <a name="supported-named-blocks"></a>Поддерживаемые именованные блоки
 
 Платформа .NET предоставляет именованные блоки, перечисленные в следующей таблице. Набор поддерживаемых именованных блоков составлен на основе Юникода версии 4.0 и Perl версии 5.6. Сведения о регулярном выражении, которое использует именованные блоки, см. в разделе [Категория Юникода или блок Юникода: \\p{}](#unicode-category-or-unicode-block-p).  
@@ -538,7 +563,9 @@ ms.locfileid: "94823320"
 |FFF0 - FFFF|`IsSpecials`|  
   
 <a name="CharacterClassSubtraction"></a>
+
 ## <a name="character-class-subtraction-base_group---excluded_group"></a>Вычитание класса символов: [базовая_группа - [исключенная_группа]]  
+
  Класс знаков определяет набор знаков. Результатом вычитания класса знаков является набор знаков, полученный в результате исключения одного класса знаков из другого класса знаков.  
   
  Выражение вычитания класса знаков имеет следующий вид:  

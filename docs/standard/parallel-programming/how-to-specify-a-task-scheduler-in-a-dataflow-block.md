@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - task scheduler, linking from TPL
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
-ms.openlocfilehash: 716892940bf8387cbe3d39fd36258c5ede02ee8b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b8c27c1ca61356b36183bb74b8360e41f5324d25
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826909"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722444"
 ---
 # <a name="how-to-specify-a-task-scheduler-in-a-dataflow-block"></a>Практическое руководство. Указание планировщика задач в блоке потока данных
+
 В этом документе приводятся способы привязки определенного планировщика задач при использовании потока данных в приложении. В этом пример используется класс <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair?displayProperty=nameWithType> в приложении Windows Forms для указания того, когда активна задача чтения и когда активна задача записи. Здесь также используется метод <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType>, чтобы позволить блоку потока данных выполняться в потоке пользовательского интерфейса.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
@@ -30,6 +31,7 @@ ms.locfileid: "94826909"
 3. Добавьте на форму элемент управления <xref:System.Windows.Forms.Timer>. Задайте для свойства <xref:System.Windows.Forms.Timer.Interval%2A> значение `2500`.  
   
 ## <a name="adding-dataflow-functionality"></a>Добавление функциональных возможностей потока данных  
+
  В этом разделе описываются способы создания блоков потока данных, участвующих в приложении, и привязки каждого из них к планировщику задач.  
   
 ### <a name="to-add-dataflow-functionality-to-the-application"></a>Добавление функциональных возможностей потока данных в приложение  
@@ -73,6 +75,7 @@ ms.locfileid: "94826909"
  В этом примере также используется класс <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair>, чтобы обеспечить возможность одновременной работы для нескольких блоков потока данных и монопольной работы еще одного блока потока данных в отношении остальных блоков потока данных, выполняемых в этом же объекте <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair>. Этот способ полезен, когда несколько блоков потока данных совместно используют ресурс, и некоторым требуется монопольный доступ к этому ресурсу, поскольку это исключают потребность вручную синхронизировать доступ к этому ресурсу. Исключение ручной синхронизации может сделать код более эффективным.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере приведен полный код Form1.cs (Form1.vb для Visual Basic).  
   
  [!code-csharp[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#100)]

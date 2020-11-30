@@ -12,14 +12,15 @@ helpviewer_keywords:
 - culture-insensitive string operations, comparisons
 - culture parameter
 ms.assetid: abae50ef-32f7-4a50-a540-fd256fd1aed0
-ms.openlocfilehash: 81520f603041693ba97e4ad74764a64627ee7147
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 3f933121d3c878dd8eee4812fa6669a915c22356
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829795"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95696496"
 ---
 # <a name="performing-culture-insensitive-string-comparisons"></a>Сравнение строк без учета языка и региональных параметров
+
 По умолчанию метод <xref:System.String.Compare%2A?displayProperty=nameWithType> выполняет сравнение с учетом языка и региона и регистра символов. Этот метод также содержит несколько перегрузок, которые предоставляют параметр `culture`, позволяющий задать используемый язык и региональные параметры, и параметр `comparisonType`, позволяющий указать используемые правила сравнения. При вызове этих методов вместо перегрузки по умолчанию удаляется любая неопределенность в отношении правил, используемых при вызове конкретного метода, и четко определяется, учитываются ли при конкретном сравнении язык и региональные параметры.  
   
 > [!NOTE]

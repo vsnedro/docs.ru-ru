@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 2bc6ddc6-674a-4f75-b264-abc35e4e5857
-ms.openlocfilehash: cd8320071f1de15d503c94c138c02cab5742685c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a1542c0800f9042e27a4b0806d717c58d7783c79
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818437"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720845"
 ---
 # <a name="xpathnodeiterator-in-transformations"></a>XPathNodeIterator в преобразованиях
+
 Класс <xref:System.Xml.XPath.XPathNodeIterator> обеспечивает методы перебора набора узлов, созданного в результате выполнения запроса XPath или в результате преобразования фрагмента результирующего дерева в набор узлов с помощью метода node-set. Класс <xref:System.Xml.XPath.XPathNodeIterator> дает возможность перебирать узлы внутри этого набора узлов. По получении набора узлов класс <xref:System.Xml.XPath.XPathNodeIterator> предоставляет однопроходные курсоры только для чтения к выделенному набору узлов. Набор узлов создается в порядке расположения узлов в документе, поэтому вызов этого метода приводит к переходу на следующий узел документа. Класс <xref:System.Xml.XPath.XPathNodeIterator> не выполняет построение дерева узлов для всех узлов набора. Вместо этого он предоставляет окно данных размером в один узел, в котором при переходе от одного элемента дерева к другому отображается базовый узел, на который указывает итератор. Методы и свойства класса <xref:System.Xml.XPath.XPathNodeIterator> дают возможность получать сведения из текущего узла. Список доступных методов и свойств см. здесь: <xref:System.Windows.Forms.ToolBar>.  
   
  Поскольку <xref:System.Xml.XPath.XPathNodeIterator> перемещается по набору узлов, созданному в ходе выполнения запроса Xpath, и при этом движется только вперед, перемещение осуществляется с использованием метода <xref:System.Xml.XPath.XPathNodeIterator.MoveNext%2A>. При использовании этого метода возвращаемое значение имеет тип `Boolean`. Значение `true` возвращается при перемещении к следующему выделенному узлу, а значение `false` - если выделенных узлов больше нет. При возвращении значения `true` доступны свойства, перечисленные в следующем списке:  

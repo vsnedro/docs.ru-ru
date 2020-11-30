@@ -11,12 +11,12 @@ helpviewer_keywords:
 - delegates [.NET], asynchronous
 - synchronous calling in asynchronous manner
 ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
-ms.openlocfilehash: da468d3b16ee504317c7de2e216a9be2073d1cf3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 01cdf5acf8f64472c218f35a0b8095aebf8f4571
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830510"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95716269"
 ---
 # <a name="asynchronous-programming-using-delegates"></a>Асинхронное программирование с использованием делегатов
 
@@ -26,10 +26,12 @@ ms.locfileid: "94830510"
 > Компиляторы должны формировать классы делегатов с методами `Invoke`, `BeginInvoke`, и `EndInvoke` с использованием сигнатуры делегата, задаваемой пользователем. Методы `BeginInvoke` и `EndInvoke` должны быть объявлены как собственные. Поскольку эти методы помечены как собственные, среда CLR автоматически обеспечивает реализацию во время загрузки класса. Загрузчик проверяет, что эти методы не переопределены.  
   
 ## <a name="in-this-section"></a>Содержание  
+
  [Асинхронный вызов синхронных методов](calling-synchronous-methods-asynchronously.md)  
  Обсуждается использование делегатов для асинхронного вызова обычных методов, и приводятся примеры кода, демонстрирующие четыре способа ожидания возврата асинхронного вызова.  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Асинхронная модель на основе событий (EAP)](event-based-asynchronous-pattern-eap.md)  
  Описание асинхронного программирования в .NET.  
   

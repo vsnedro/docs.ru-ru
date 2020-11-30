@@ -14,12 +14,12 @@ helpviewer_keywords:
 - constructs, alternation
 - .NET regular expressions, alternation constructs
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
-ms.openlocfilehash: 4fb9960ad3c92494cd3aa47516f6ba82ab606ee5
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 0a1b46443d5cd9f8a19f4cfb9f9b07a5e33e719e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825303"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714696"
 ---
 # <a name="alternation-constructs-in-regular-expressions"></a>Конструкции изменения в регулярных выражениях
 
@@ -30,6 +30,7 @@ ms.locfileid: "94825303"
 - [Условное сопоставление на основе действительной захватываемой группы](#Conditional_Group)
 
 <a name="Either_Or"></a>
+
 ## <a name="pattern-matching-with-124"></a>Сопоставление шаблонов с помощью |
 
 Вертикальную черту (`|`) можно использовать для сопоставления с любым набором шаблонов, в котором шаблоны разделяются с помощью символа `|`.
@@ -62,6 +63,7 @@ ms.locfileid: "94825303"
 |`\b`|Совпадение должно заканчиваться на границе слова.|  
   
 <a name="Conditional_Expr"></a>
+
 ## <a name="conditional-matching-with-an-expression"></a>Условное сопоставление с выражением
 
 Этот элемент языка пытается сопоставить один из двух шаблонов в зависимости от того, может ли он сопоставить первоначальный шаблон. Он имеет следующий синтаксис:  
@@ -93,6 +95,7 @@ ms.locfileid: "94825303"
 |`\b`|Соответствует границе слова.|  
 
 <a name="Conditional_Group"></a>
+
 ## <a name="conditional-matching-based-on-a-valid-captured-group"></a>Условное сопоставление на основе действительной захватываемой группы.
 
 Этот элемент языка пытается сопоставить один из двух шаблонов, в зависимости от того, соответствует ли он указанной группе записи. Он имеет следующий синтаксис:

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 9f436bca-1b96-494b-a6d2-e102c7551752
-ms.openlocfilehash: 0895154e6932f32ebd3f5d1cf0d59bd557eb1b06
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 265275e3b200ec7bf38df997ace622f2056ad66f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822546"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95697627"
 ---
 # <a name="remove-xml-data-using-xpathnavigator"></a>Удаление XML-данных с помощью XPathNavigator
+
 Класс <xref:System.Xml.XPath.XPathNavigator> располагает набором методов, используемых для удаления узлов и значений из XML-документа. Для использования этих методов необходимо сделать редактируемым объект <xref:System.Xml.XPath.XPathNavigator>, то есть установить для свойства <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> значение `true`.  
   
  Объекты <xref:System.Xml.XPath.XPathNavigator> для правки XML-документа создаются с помощью метода <xref:System.Xml.XmlDocument.CreateNavigator%2A> класса <xref:System.Xml.XmlDocument>. Объекты <xref:System.Xml.XPath.XPathNavigator>, созданные классом <xref:System.Xml.XPath.XPathDocument>, доступны только для чтения, и любая попытка вызова методов редактирования объекта <xref:System.Xml.XPath.XPathNavigator>, созданного объектом <xref:System.Xml.XPath.XPathDocument>, приводит к возникновению исключения <xref:System.NotSupportedException>.  
@@ -20,9 +21,11 @@ ms.locfileid: "94822546"
  Дополнительные сведения о доступных только для чтения и изменяемых объектах <xref:System.Xml.XPath.XPathNavigator> см. в руководстве по [чтению данных XML с помощью XPathDocument и XmlDocument](reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
 ## <a name="removing-nodes"></a>Удаление узлов  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> представляет метод <xref:System.Xml.XPath.XPathNavigator.DeleteSelf%2A> для удаления узлов из XML-документа.  
   
 ### <a name="removing-a-node"></a>Удаление узла  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> представляет метод <xref:System.Xml.XPath.XPathNavigator.DeleteSelf%2A> для удаления узлов текущего узла, на котором в данное время позиционирован объект <xref:System.Xml.XPath.XPathNavigator>, из XML-документа.  
   
  Узел, удаленный с помощью метода <xref:System.Xml.XPath.XPathNavigator.DeleteSelf%2A>, более недоступен из корня объекта <xref:System.Xml.XmlDocument>. После удаления узла объект <xref:System.Xml.XPath.XPathNavigator> позиционируется на родительском узле удаленного узла.  
@@ -69,17 +72,21 @@ Console.WriteLine(navigator.OuterXml);
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
   
 ### <a name="removing-an-attribute-node"></a>Удаление узла атрибута  
+
  Узлы атрибута удаляются из XML-документа с помощью метода <xref:System.Xml.XPath.XPathNavigator.DeleteSelf%2A>.  
   
  Удаленный узел атрибута более недоступен из корневого узла объекта <xref:System.Xml.XmlDocument>, и объект <xref:System.Xml.XPath.XPathNavigator> позиционируется на родительском элементе.  
   
 #### <a name="default-attributes"></a>Атрибуты по умолчанию  
+
  Независимо от метода удаления атрибутов, существуют специальные ограничения на удаление атрибутов, определенных как атрибуты по умолчанию в определении DTD или схеме XML для XML-документа. Атрибуты по умолчанию нельзя удалить, если не удален элемент, к которому они принадлежат. Атрибуты по умолчанию всегда присутствуют для элементов с объявленными атрибутами по умолчанию, и в результате удаление атрибута по умолчанию приводит к вставке в элемент атрибута замены, инициируемого с декларированным значением по умолчанию.  
   
 ## <a name="removing-values"></a>Удаление значений  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> представляет методы <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> и <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> для удаления узлов нетипизированных и типизированных значений из XML-документа.  
   
 ### <a name="removing-untyped-values"></a>Удаление нетипизированных значений  
+
  Метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> просто вставляет нетипизированное значение `string`, переданное в качестве параметра, как значение узла, на котором в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>. Передача пустой строки в метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> удаляет значение текущего узла.  
   
  В следующем примере значение элемента `price` первого элемента `book` в файле `contosoBooks.xml` удаляется с помощью метода <xref:System.Xml.XPath.XPathNavigator.SetValue%2A>.  
@@ -119,6 +126,7 @@ Console.WriteLine(navigator.OuterXml);
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
   
 ### <a name="removing-typed-values"></a>Удаление типизированных значений  
+
  Когда тип узла является простым типом XML-схемы W3C, новое значение, вставленное методом <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A>, проверяется по особенностям простого типа, прежде чем будет установлено значение. Если новое значение недопустимо в соответствии с типом узла (например, при установке значения `-1` для элемента с типом `xs:positiveInteger`), возникает исключение. Методу <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> также невозможно передать значение `null` в качестве параметра. В результате удаления значение типизированного узла должно соответствовать типу схемы узла.  
   
  В следующем примере значение элемента `price` первого элемента `book` в файле `contosoBooks.xml` удаляется с помощью метода <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> путем присвоения значения `0`. Значение узла не удаляется, но цена книги удалена в соответствии с ее типом данных `xs:decimal`.  
@@ -166,9 +174,11 @@ Console.WriteLine(navigator.OuterXml);
 ```  
   
 ## <a name="namespace-nodes"></a>Узлы пространства имен  
+
  Узлы пространства имен нельзя удалить из объекта <xref:System.Xml.XmlDocument>. Попытки удалить узлы пространства имен с помощью метода <xref:System.Xml.XPath.XPathNavigator.DeleteSelf%2A> приводят к исключению.  
   
 ## <a name="the-innerxml-and-outerxml-properties"></a>Свойства InnerXml и OuterXml  
+
  Свойства <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> и <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> класса <xref:System.Xml.XPath.XPathNavigator> изменяют XML-разметку узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>.  
   
  Свойство <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, разобранный содержимым заданной XML-строки (`string`). Подобным образом свойство <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, так же как и самого текущего узла.  
@@ -176,6 +186,7 @@ Console.WriteLine(navigator.OuterXml);
  В дополнение к методам, описанным в этом разделе, свойства <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> и <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> могут использоваться, чтобы удалить узлы и значения из XML-документа. Дополнительные сведения об использовании свойств <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> и [ для изменения узлов см. в <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A>руководстве по изменению данных XML с помощью XPathNavigator](modify-xml-data-using-xpathnavigator.md).  
   
 ## <a name="saving-an-xml-document"></a>Сохранение XML-документа  
+
  Сохранение изменений, внесенных в объект <xref:System.Xml.XmlDocument> в результате выполнения описанных в данном разделе методов, выполняется с помощью методов класса <xref:System.Xml.XmlDocument>. Дополнительные сведения о сохранении изменений, внесенных в объект <xref:System.Xml.XmlDocument>, см. в руководстве по [созданию и сохранению документов](saving-and-writing-a-document.md).  
   
 ## <a name="see-also"></a>См. также

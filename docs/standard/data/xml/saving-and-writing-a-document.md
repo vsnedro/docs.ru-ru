@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
-ms.openlocfilehash: 0cb83935b4175060a04f4be48e6b4eee2f44ed7d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 14497bb5b027209c4707eab9bcf1b60f85740dfd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823502"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95697562"
 ---
 # <a name="saving-and-writing-a-document"></a>Сохранение и запись документа
+
 При загрузке и сохранении <xref:System.Xml.XmlDocument> между сохраненным и исходным документами возможны следующие различия:  
   
 - Если свойство <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> имеет значение `true` перед вызовом метода <xref:System.Xml.XmlDocument.Save%2A>, то пробелы в документе при выводе сохраняются. Если свойство имеет значение `false`, то <xref:System.Xml.XmlDocument> автоматически вставляет отступы в выходные данные.  
@@ -30,6 +31,7 @@ ms.locfileid: "94823502"
 - Если требуется записать <xref:System.Xml.XmlDocument> в файл или поток, то записываемые выходные данные не будут отличаться от содержимого документа. То есть, <xref:System.Xml.XmlDeclaration> записывается только если объявление содержится в документе, а кодировка, используемая при записи документа, совпадает с указанной в узле декларации.  
   
 ## <a name="writing-an-xmldeclaration"></a>Запись XmlDeclaration  
+
  XML-декларацию создают члены <xref:System.Xml.XmlDocument> и элементы <xref:System.Xml.XmlDeclaration> классов <xref:System.Xml.XmlNode.OuterXml%2A>, <xref:System.Xml.XmlNode.InnerXml%2A>, метод <xref:System.Xml.XmlNode.WriteTo%2A>, а также методы <xref:System.Xml.XmlDocument> и <xref:System.Xml.XmlDocument.Save%2A> класса <xref:System.Xml.XmlDocument.WriteContentTo%2A>.  
   
  Для свойств <xref:System.Xml.XmlDocument> методов <xref:System.Xml.XmlNode.OuterXml%2A>, <xref:System.Xml.XmlDocument.InnerXml%2A>, а также методов <xref:System.Xml.XmlDocument.Save%2A>, <xref:System.Xml.XmlDocument.WriteTo%2A> и <xref:System.Xml.XmlDocument.WriteContentTo%2A> кодировка, записываемая в XML-декларацию, берется из узла <xref:System.Xml.XmlDeclaration>. Если узел <xref:System.Xml.XmlDeclaration> отсутствует, то <xref:System.Xml.XmlDeclaration> не записывается. Если в узле <xref:System.Xml.XmlDeclaration> нет кодировки, то кодировка не записывается в XML-декларацию.  
@@ -55,6 +57,7 @@ doc.Save(tw);
  Если для элементов <xref:System.Xml.XmlDeclaration> в <xref:System.Xml.XmlNode.OuterXml%2A>, <xref:System.Xml.XmlDeclaration.WriteTo%2A> и <xref:System.Xml.XmlNode.InnerXml%2A> не установлено свойство <xref:System.Xml.XmlDeclaration.Encoding%2A>, то кодировка не записывается. В противном случае кодировка, записанная в XML-декларацию, не отличается от кодировки в свойстве <xref:System.Xml.XmlDeclaration.Encoding%2A>.  
   
 ## <a name="writing-document-content-using-the-outerxml-property"></a>Запись содержимого документа с помощью свойства OuterXml  
+
  Свойство <xref:System.Xml.XmlNode.OuterXml%2A> является расширением Майкрософт для стандартов объектной модели DOM XML-документа консорциума W3C. Свойство <xref:System.Xml.XmlNode.OuterXml%2A> позволяет получить разметку как полного XML-документа, так и единичного узла вместе с его дочерними узлами. Свойство <xref:System.Xml.XmlNode.OuterXml%2A> возвращает разметку, предоставляющую заданный узел и все его дочерние узлы.  
   
  В приведенном ниже образце кода показано сохранение документа целиком в виде строки.  

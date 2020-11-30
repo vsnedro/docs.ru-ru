@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - thread-safe collections, when to upgrade
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-ms.openlocfilehash: 92fb912cdd2030f87bee1109b9944e1fa857dddd
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ab1d4d436ce833af94e7eaba35943e499a047a05
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819465"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725070"
 ---
 # <a name="when-to-use-a-thread-safe-collection"></a>Преимущества использования потокобезопасных коллекций
 
@@ -33,6 +33,7 @@ ms.locfileid: "94819465"
  Увеличение в производительности, которое пропорционально числу ядер в компьютере. Масштабируемый алгоритм выполняется быстрее на компьютере, у которого восемь ядер, чем на компьютере, у которого два ядра.  
   
 ## <a name="concurrentqueuet-vs-queuet"></a>ConcurrentQueue(T) и Queue(T)  
+
  В чистых сценариях "производитель-получатель", когда время обработки каждого элемента очень мало (несколько инструкций), класс <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType> может дать незначительный рост производительности по сравнению с классом <xref:System.Collections.Generic.Queue%601?displayProperty=nameWithType>, который использует внешнюю блокировку. В этом сценарии класс <xref:System.Collections.Concurrent.ConcurrentQueue%601> выполняется лучше, когда один выделенный поток помещается в очередь, а другой выделенный поток удаляется из очереди. Если это правило не применяется, класс <xref:System.Collections.Generic.Queue%601> может даже выполняться немного быстрее, чем класс <xref:System.Collections.Concurrent.ConcurrentQueue%601> на компьютерах с многоядерными процессорами.  
   
  Когда время обработки составляет 500 FLOPS (операций с плавающей запятой) или больше, то правило двух потоков не применяется к классу <xref:System.Collections.Concurrent.ConcurrentQueue%601>, который имеет очень хорошую масштабируемость. <xref:System.Collections.Generic.Queue%601> в этой ситуации не обладает хорошей масштабируемостью.  
@@ -40,6 +41,7 @@ ms.locfileid: "94819465"
  В смешанных сценариях "производитель-получатель", когда время обработки очень мало, класс <xref:System.Collections.Generic.Queue%601>, который имеет внешнюю блокировку, масштабируется лучше, чем класс<xref:System.Collections.Concurrent.ConcurrentQueue%601>. Однако, если время обработки имеет значение приблизительно равное 500 FLOPS и выше, то класс <xref:System.Collections.Concurrent.ConcurrentQueue%601> масштабируется лучше.  
   
 ## <a name="concurrentstack-vs-stack"></a>ConcurrentStack и Стек  
+
  В чистых сценариях "производитель-получатель", когда время обработки каждого элемента очень мало, класс <xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=nameWithType> и класс <xref:System.Collections.Generic.Stack%601?displayProperty=nameWithType>, который использует внешнюю блокировку, обычно выполняются с одинаковой скоростью при одном выделенном потоке на добавление и одном выделенном потоке на извлечение. Однако по мере увеличения числа потоков производительность снижается у обоих типов, так как увеличивается число конфликтных ситуаций, и класс <xref:System.Collections.Generic.Stack%601> может выполняться лучше, чем класс <xref:System.Collections.Concurrent.ConcurrentStack%601>. Если время обработки имеет значение приблизительно равное 500 FLOPS и выше, то оба типа масштабируются примерно одинаково.  
   
  В смешанных сценариях "производитель-получатель" класс <xref:System.Collections.Concurrent.ConcurrentStack%601> имеет большее ускорение для небольших и больших рабочих нагрузок.  
@@ -47,6 +49,7 @@ ms.locfileid: "94819465"
  Использование методов <xref:System.Collections.Concurrent.ConcurrentStack%601.PushRange%2A> и <xref:System.Collections.Concurrent.ConcurrentStack%601.TryPopRange%2A> может значительно снизить время доступа.  
   
 ## <a name="concurrentdictionary-vs-dictionary"></a>ConcurrentDictionary и Словарь  
+
  Как правило, лучше использовать класс <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> в любой ситуации, когда вы одновременно добавляете и обновляете ключи или значения из множества потоков. В сценариях, которые включают частные операции обновления и относительно редкие операции чтения, класс <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, в общем случае, обеспечивает немного лучшую производительность. В сценариях, которые включают частные операции чтения и относительно редкие операции обновления, класс <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, в общем случае, имеет значительно большее ускорение на компьютерах с многоядерными процессорами.  
   
  В сценариях, которые включают частые обновления, можно увеличить степень параллелизма в классе <xref:System.Collections.Concurrent.ConcurrentDictionary%602> и затем провести оценку, чтобы увидеть, увеличилась ли производительность на компьютерах с многоядерными процессорами. При изменении уровня параллелизма исключите, насколько это возможно, глобальные операции.  
@@ -54,11 +57,13 @@ ms.locfileid: "94819465"
  Если выполняются только операции чтения ключа или значений, класс <xref:System.Collections.Generic.Dictionary%602> работает быстрее, так как он не требует синхронизации, пока словарь не изменяется каким-либо потоком.  
   
 ## <a name="concurrentbag"></a>ConcurrentBag  
+
  В чистых сценариях "производитель — получатель" класс <xref:System.Collections.Concurrent.ConcurrentBag%601?displayProperty=nameWithType> может выполняться более медленно, чем другие типы параллельных коллекций.  
   
  В смешанных сценариях "производитель-получатель" класс <xref:System.Collections.Concurrent.ConcurrentBag%601> в общем случае имеет большее ускорение и большую масштабируемость, чем все остальные типы параллельных коллекций для небольших и больших рабочих нагрузок.  
   
 ## <a name="blockingcollection"></a>BlockingCollection  
+
  Если вы хотите использовать семантику границ и блокировок, класс <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> может работать быстрее, чем любые пользовательские реализации. Он также поддерживает гибкую обработку исключений и операций отмены, перечисления.  
   
 ## <a name="see-also"></a>См. также

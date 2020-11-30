@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
-ms.openlocfilehash: 7e93331d106dc74878e4d211c4dc6458c37088a3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bb17cd4802f97bb012ae8214b3c4095ed516d367
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819127"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721922"
 ---
 # <a name="xmlschemacollection-schema-compilation"></a>Компиляция схемы XmlSchemaCollection
+
 Объект **XmlSchemaCollection** является кэшем или библиотекой, где можно хранить и проверять схемы XDR и XSD. Использование **XmlSchemaCollection** повышает производительность, поскольку схемы кэшируются в памяти и их не нужно каждый раз получать из файла или по URL-адресу.  
   
 > [!NOTE]
@@ -22,18 +23,23 @@ ms.locfileid: "94819127"
 > Класс <xref:System.Xml.Schema.XmlSchemaCollection> устарел и заменен классом <xref:System.Xml.Schema.XmlSchemaSet>. Дополнительные сведения о классе <xref:System.Xml.Schema.XmlSchemaSet> см. в руководстве по [использованию XmlSchemaSet для компиляции схемы](xmlschemaset-for-schema-compilation.md).  
   
 ## <a name="add-schemas-to-the-collection"></a>Добавление схем в коллекцию  
+
  Схемы загружаются в коллекцию с помощью метода **Add** класса **XmlSchemaCollection**, и одновременно с этим схема связывается с URI пространства имен. Для схем XML URI-код пространства имен обычно является целевым пространством имен для схемы. Для схем XDR URI-код пространства имен будет задаваться во время добавления схемы в коллекцию.  
   
 ## <a name="check-for-a-schema-in-the-collection"></a>Проверка наличия схемы в коллекции  
+
  Наличие схемы в коллекции вы можете проверить с помощью метода **Contains**. Метод **Contains** принимает объект **XmlSchema** (только для схем XML) или строку, представляющую URI пространства имен, связанного со схемой (для схем XML и XDR).  
   
 ## <a name="retrieve-a-schema-from-the-collection"></a>Получение схемы из коллекции  
+
  Схему из коллекции можно получить с помощью свойства **Item**. Свойство **Item** принимает строку, представляющую URI пространства имен, связанного со схемой (обычно это целевое пространство имен), и возвращает объект **XmlSchema**. Свойство **Item** применимо только к схемам XML. Для схем XDR всегда возвращается ссылка NULL, поскольку для них нет доступной модели объектов.  
   
 ## <a name="validate-xml-documents-using-xmlschemacollection"></a>Проверка XML-документов с помощью XmlSchemaCollection  
+
  Чтобы проверить экземпляр XML-документа с помощью **XmlSchemaCollection**, создайте объект **XmlSchemaCollection**, добавьте в эту коллекцию схемы и задайте свойство **Schemas** для объекта **XmlValidatingReader**, чтобы назначить созданную коллекцию **XmlSchemaCollection** для объекта **XmlValidatingReader**.  
   
 ### <a name="improved-performance"></a>Повышенная производительность  
+
  Если вы проверяете несколько документов по одной схеме, мы рекомендуем использовать объект **XmlSchemaCollection**, поскольку его производительность выше благодаря кэшированию схем в памяти.  
   
  Следующий пример кода создает объект **XmlSchemaCollection**, добавляет схемы в коллекцию и задает свойство **Schemas**.  

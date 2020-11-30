@@ -10,14 +10,15 @@ helpviewer_keywords:
 - serialization, attributes
 - XML Schema, serializing
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7
-ms.openlocfilehash: 032843728c74799d7ee78257b21243b31cb4f99c
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 55c36ea6313bfd3000b1d8502d4eda7c552e08cf
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281992"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95717933"
 ---
 # <a name="attributes-that-control-xml-serialization"></a>Атрибуты управления сериализацией XML
+
 Для управления способом, с помощью которого <xref:System.Xml.Serialization.XmlSerializer> сериализует или десериализует экземпляр класса, к классам и членам класса можно применять атрибуты, указанные в следующей таблице. Сведения о том, как эти атрибуты управляют XML-сериализацией, см. в разделе [Управление сериализацией XML с использованием атрибутов](controlling-xml-serialization-using-attributes.md).  
   
  Эти атрибуты можно также использовать для управления литеральным стилем сообщений SOAP, генерируемых XML-веб-службой. Дополнительные сведения о применении этих атрибутов для существующего метода XML-веб-служб см. в разделе [Сериализация XML с использованием XML-веб-служб](xml-serialization-with-xml-web-services.md).  

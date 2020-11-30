@@ -4,18 +4,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - data structures, multi-threading
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
-ms.openlocfilehash: c7f974c5626cf1efc6bf62c423043089d5c32e7c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4e0214afe4dba7f838f420907374f1472d6d3911
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829535"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699018"
 ---
 # <a name="data-structures-for-parallel-programming"></a>Структуры данных для параллельного программирования
 
 Платформа .NET предоставляет несколько типов для параллельного программирования, включая набор классов параллельных коллекций, упрощенные примитивы синхронизации и типы отложенной инициализации. Эти типы можно использовать с любым кодом многопоточного приложения, включая библиотеку параллельных задач и PLINQ.  
   
 ## <a name="concurrent-collection-classes"></a>Классы параллельных коллекций  
+
  Классы коллекций в пространства имен <xref:System.Collections.Concurrent?displayProperty=nameWithType> поддерживают потокобезопасные операции добавления и удаления, которые избегают блокировок везде, где это возможно, и применяют только детально настроенные блокировки. Класс параллельных коллекций не требует использовать блокировки в пользовательском коде для доступа к элементам. Классы параллельных коллекций могут значительно повысить производительность по сравнению с типами <xref:System.Collections.ArrayList?displayProperty=nameWithType> и <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> (где блокировка реализуется пользователем) в сценариях одновременного добавления и удаления элементов коллекции из нескольких потоков.  
   
  В приведенной ниже таблице перечислены классы параллельных коллекций.  
@@ -31,6 +32,7 @@ ms.locfileid: "94829535"
  Дополнительные сведения см. в разделе [Потокобезопасные коллекции](../collections/thread-safe/index.md).  
   
 ## <a name="synchronization-primitives"></a>Примитивы синхронизации  
+
  Примитивы синхронизации в пространстве имен <xref:System.Threading?displayProperty=nameWithType> обеспечивают детально настраиваемый параллелизм и более высокую производительность за счет устранения ресурсоемких механизмов блокировки из старого кода для многопоточной работы.
   
  В приведенной ниже таблице перечислены типы синхронизации.  
@@ -51,6 +53,7 @@ ms.locfileid: "94829535"
 - [Практическое руководство. Синхронизация параллельных операций с барьером](../threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
   
 ## <a name="lazy-initialization-classes"></a>Классы отложенной инициализации  
+
  При использовании отложенной инициализации память выделяется объекту только в тот момент, когда она нужна. Отложенная инициализация позволяет повысить производительность, равномерно распределяя процессы выделения объектов на вест период существования программы. Чтобы включить отложенную инициализацию для любого пользовательского типа, упакуйте в него тип <xref:System.Lazy%601>.  
   
  В следующей таблице перечислены типы отложенной инициализации.  
@@ -64,6 +67,7 @@ ms.locfileid: "94829535"
  Дополнительные сведения см. в статье [Отложенная инициализация](../../framework/performance/lazy-initialization.md).  
   
 ## <a name="aggregate-exceptions"></a>Агрегатные исключения  
+
  Тип <xref:System.AggregateException?displayProperty=nameWithType> позволяет захватить несколько исключений, создаваемых одновременно в нескольких отдельных потоках, и передать их в присоединяемый поток в виде одного исключения. Типы <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>, а также PLINQ, широко используют для этой цели <xref:System.AggregateException>. Дополнительные сведения см. в статьях [Обработка исключений](exception-handling-task-parallel-library.md) и [Практическое руководство. Обработка исключений в запросах PLINQ](how-to-handle-exceptions-in-a-plinq-query.md).  
   
 ## <a name="see-also"></a>См. также

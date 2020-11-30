@@ -7,12 +7,12 @@ helpviewer_keywords:
 - threading [.NET], synchronizing threads
 - managed threading
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-ms.openlocfilehash: 188090a968b49bd77279d35dc41f00e808299938
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e1b90bdc5657c1fd22c6e77e31890ff63c3cc3ea
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819647"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727462"
 ---
 # <a name="synchronizing-data-for-multithreading"></a>Синхронизация данных для многопоточности
 
@@ -38,12 +38,15 @@ ms.locfileid: "94819647"
 |Синхронизация вручную|Вручную|Вручную|Вручную|Вручную|Вручную|Вручную|  
   
 ## <a name="no-synchronization"></a>Синхронизации нет  
+
  По умолчанию для объектов. Любой поток может получить доступ к любому методу или полю в любое время. Одновременно обращаться к этим объектам может только один поток.  
   
 ## <a name="manual-synchronization"></a>Синхронизация вручную  
+
  Библиотека классов .NET предоставляет ряд классов для синхронизации потоков. См. раздел [Обзор примитивов синхронизации](overview-of-synchronization-primitives.md).  
   
 ## <a name="synchronized-code-regions"></a>Синхронизированные области кода  
+
  Класс <xref:System.Threading.Monitor> или ключевое слово компилятора можно использовать для синхронизации блоков кода, методов экземпляров и статических методов. Синхронизированные статические поля не поддерживаются.  
   
  Visual Basic и C# поддерживают маркировку блоков кода ключевым словом определенного языка, оператором `lock` в C# или `SyncLock` в Visual Basic. Если код выполняется потоком, он пытается получить блокировку. Если блокировка уже получена другим потоком, поток блокируется, пока блокировка не станет доступной. Когда поток выходит из синхронизированного блока кода, блокировка снимается независимо от того, каким образом поток выходит из блока.  
@@ -59,6 +62,7 @@ ms.locfileid: "94819647"
 > Не блокируйте тип, т. е. `typeof(MyType)` в C#, `GetType(MyType)` в Visual Basic или `MyType::typeid` в C++, для защиты методов `static` (методы `Shared` в Visual Basic). Вместо этого используйте закрытый статический объект. Кроме того, не блокируйте методы экземпляра, используя `this` в C# (`Me` в Visual Basic). Вместо этого используйте закрытый объект. Класс или экземпляр может заблокировать чужой код, вызвав при этом взаимоблокировку или проблемы производительности.  
   
 ### <a name="compiler-support"></a>Поддержка компилятора  
+
  Visual Basic и C# поддерживают ключевое слово языка для блокировки объекта с помощью <xref:System.Threading.Monitor.Enter%2A?displayProperty=nameWithType> и <xref:System.Threading.Monitor.Exit%2A?displayProperty=nameWithType>. Visual Basic поддерживает оператор [SyncLock](../../visual-basic/language-reference/statements/synclock-statement.md), а C# поддерживает оператор [lock](../../csharp/language-reference/keywords/lock-statement.md).  
   
  В обоих случаях, если в коде блока возникает исключение, блокировка, введенная оператором **lock** или **SyncLock**, автоматически снимается. Компиляторы C# и Visual Basic выдают блок **try**/**finally** с **Monitor.Enter** в начале оператора try и **Monitor.Exit** в блоке **finally**. Если исключение возникает в блоке **lock** или **SyncLock**, запускается обработчик **finally**, позволяющий выполнить очистку.  

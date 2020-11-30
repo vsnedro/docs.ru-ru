@@ -20,12 +20,12 @@ helpviewer_keywords:
 - waiting for asynchronous calls
 - status information [.NET], asynchronous operations
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
-ms.openlocfilehash: 668ac7552289a9d1015b62ed9e68f53415dd6211
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 8d12ab2904b336f38e56387c8aaf2a851a46007e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830445"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722730"
 ---
 # <a name="calling-synchronous-methods-asynchronously"></a>Асинхронный вызов синхронных методов
 
@@ -55,6 +55,7 @@ ms.locfileid: "94830445"
 > Независимо от выбранного варианта необходимо всегда использовать для завершения асинхронного вызова метод `EndInvoke` .
 
 ## <a name="defining-the-test-method-and-asynchronous-delegate"></a>Определение метода проверки и асинхронного делегата
+
  В приведенных ниже примерах кода показаны различные способы асинхронного вызова одного и того же длительно выполняющегося метода `TestMethod`. Метод `TestMethod` отображает сообщение в консоли, указывающее на начало выполнения, бездействует в течение нескольких секунд и завершается. В методе`TestMethod` имеется параметр `out` для демонстрации порядка добавления таких параметров в сигнатуры методов `BeginInvoke` и `EndInvoke`. Таким же способом можно обрабатывать параметры `ref` .
 
  В следующем примере кода показано определение `TestMethod` и делегата `AsyncMethodCaller` , который может использоваться для асинхронного вызова `TestMethod` . Чтобы скомпилировать эти примеры кода, необходимо включить определения для метода `TestMethod` и делегата `AsyncMethodCaller` .
@@ -64,6 +65,7 @@ ms.locfileid: "94830445"
  [!code-vb[AsyncDelegateExamples#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]
 
 ## <a name="waiting-for-an-asynchronous-call-with-endinvoke"></a>Ожидание асинхронного вызова с использованием EndInvoke
+
  Самым простым способом асинхронного вызова метода является запуск выполнения метода посредством вызова метода `BeginInvoke` делегата, выполнения каких-либо действий в основном потоке и последующего вызова метода `EndInvoke` . Метод`EndInvoke` может блокировать вызывающий поток, поскольку он не возвращает значение до завершения асинхронного вызова. Этот подход хорошо использовать с файловыми и сетевыми операциями.
 
 > [!IMPORTANT]
@@ -74,6 +76,7 @@ ms.locfileid: "94830445"
  [!code-vb[AsyncDelegateExamples#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/EndInvoke.vb#2)]
 
 ## <a name="waiting-for-an-asynchronous-call-with-waithandle"></a>Ожидание асинхронного вызова с использованием WaitHandle
+
  Объект <xref:System.Threading.WaitHandle> можно получить с помощью свойства <xref:System.IAsyncResult.AsyncWaitHandle%2A> объекта <xref:System.IAsyncResult> , возвращаемого методом `BeginInvoke`. Объект <xref:System.Threading.WaitHandle> получает сигнал после завершения асинхронного вызова; его можно дождаться путем вызова метода <xref:System.Threading.WaitHandle.WaitOne%2A> .
 
  При использовании объекта <xref:System.Threading.WaitHandle>можно выполнять дополнительные операции до или после завершения асинхронного вызова, но до вызова метода `EndInvoke` для получения результатов.
@@ -86,6 +89,7 @@ ms.locfileid: "94830445"
  [!code-vb[AsyncDelegateExamples#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]
 
 ## <a name="polling-for-asynchronous-call-completion"></a>Опрос завершения асинхронного вызова
+
  Свойство <xref:System.IAsyncResult.IsCompleted%2A> объекта <xref:System.IAsyncResult> , возвращаемого методом `BeginInvoke` , можно использовать для отслеживания завершения асинхронного вызова. Это можно делать, когда асинхронный вызов выполнен из потока, обслуживающего пользовательский интерфейс. Опрос завершения позволяет вызывающему потоку продолжить выполнение при асинхронном вызове для потока <xref:System.Threading.ThreadPool> .
 
  [!code-cpp[AsyncDelegateExamples#4](../../../samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/polling.cpp#4)]
@@ -93,6 +97,7 @@ ms.locfileid: "94830445"
  [!code-vb[AsyncDelegateExamples#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/polling.vb#4)]
 
 ## <a name="executing-a-callback-method-when-an-asynchronous-call-completes"></a>Выполнение метода обратного вызова при завершении асинхронного вызова
+
  Если поток, инициировавший асинхронный вызов, не обязательно должен быть потоком, обрабатывающим результаты вызова, после завершения асинхронного вызова можно выполнить метод обратного вызова. Метод обратного вызова выполняется для потока <xref:System.Threading.ThreadPool> .
 
  Чтобы использовать метод обратного вызова, необходимо передать в метод `BeginInvoke` делегат <xref:System.AsyncCallback> , который представляет метод обратного вызова. Кроме того, можно передать объект, содержащий данные, которые будут использоваться методом обратного вызова. В методе обратного вызова параметр <xref:System.IAsyncResult>, который является единственным параметром метода обратного вызова, можно привести к типу объекта <xref:System.Runtime.Remoting.Messaging.AsyncResult> . После этого свойство <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A?displayProperty=nameWithType> можно будет использовать для получения делегата, с помощью которого инициирован вызов, чтобы можно было вызвать метод `EndInvoke`.

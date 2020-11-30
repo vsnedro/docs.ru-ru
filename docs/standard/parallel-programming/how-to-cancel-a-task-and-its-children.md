@@ -8,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - tasks, how to cancel
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-ms.openlocfilehash: 578544a910127f41dfdfd577316b23d6d5a60bc4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 82a71faf3a2390f5bb36dd896cf865f773f54bd9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817267"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713227"
 ---
 # <a name="how-to-cancel-a-task-and-its-children"></a>Практическое руководство. Отмена задачи и ее дочерних элементов
+
 В следующих примерах показано выполнение таких задач:  
   
 1. Создание и запуск задачи с возможностью отмены.  
@@ -29,6 +30,7 @@ ms.locfileid: "94817267"
  Вызывающий поток не может принудительно завершить задачу. Он только передает ей запрос на отмену. Если задача уже выполняется, то именно пользовательский делегат получает такой запрос и принимает соответствующие меры. Если запрос на отмену поступает до запуска задачи, пользовательский делегат даже не выполняется и объект задачи сразу переходит в состояние Canceled (Отменено).  
   
 ## <a name="example"></a>Пример  
+
  В этом примере показано, как завершить операцию <xref:System.Threading.Tasks.Task> и ее дочерние элементы в ответ на запрос отмены. Здесь также показано, что при завершении пользовательского делегата путем создания исключения <xref:System.Threading.Tasks.TaskCanceledException> вызывающий поток может дополнительно использовать метод <xref:System.Threading.Tasks.Task.Wait%2A> или метод <xref:System.Threading.Tasks.Task.WaitAll%2A> для ожидания завершения задач. В этом случае необходимо использовать блок `try/catch` для обработки исключений в вызывающем потоке.  
   
  [!code-csharp[TPL_Cancellation#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/cancel1.cs#04)]

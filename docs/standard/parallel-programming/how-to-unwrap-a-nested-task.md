@@ -7,14 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - tasks, how to unwrap nested tasks
 ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
-ms.openlocfilehash: cda42dbc88d73eadf04720c0faaf98151d371127
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 3eec3b7e8cc76ee171d88a7886b4983000848084
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825563"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722626"
 ---
 # <a name="how-to-unwrap-a-nested-task"></a>Практическое руководство. Извлечение вложенной задачи из оболочки
+
 Вы можете вернуть задачу из метода, и затем ожидать ее выполнения или продолжить работу после нее, как показано в следующем примере.  
   
  [!code-csharp[TPL_Unwrap#01](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_unwrap/cs/unwrapprogram.cs#01)]
@@ -35,6 +36,7 @@ ms.locfileid: "94825563"
  С помощью методов <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A> можно преобразовать любой объект `Task<Task>` или `Task<Task<TResult>>` (`Task(Of Task)` или `Task(Of Task(Of TResult))` в Visual Basic) в `Task` или `Task<TResult>` (`Task(Of TResult)` в Visual Basic). Новая задача в полной мере представляет внутреннюю вложенную задачу с поддержкой состояния отмены и всех исключений.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере показано, как использовать методы расширения <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A>.  
   
  [!code-csharp[TPL_UnWrap#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_unwrap/cs/unwrapprogram.cs#04)]

@@ -3,12 +3,12 @@ title: Параметры конфигурации глобализации
 description: Вы можете узнать о параметрах времени выполнения, настраивающих аспекты глобализации для приложения .NET Core, например способа анализа дат на японском языке.
 ms.date: 05/18/2020
 ms.topic: reference
-ms.openlocfilehash: 56228e9a6cb6dbab6a22bdc00d11212e1019776b
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: fc98e965093c28b75b9b66e4f1c9f147abd4680e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83761971"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721921"
 ---
 # <a name="run-time-configuration-options-for-globalization"></a>Параметры конфигурации времени выполнения для глобализации
 
@@ -87,7 +87,7 @@ ms.locfileid: "83761971"
 
 - Определяет, использует ли .NET API глобализации для приложений Windows: National Language Support (NLS) и International Components for Unicode (ICU). .NET 5.0 и более поздних версий использует API глобализации ICU по умолчанию в обновлении Windows за 10 мая 2019 г. и более поздних версиях.
 - Если этот параметр не задан, .NET по умолчанию использует API глобализации ICU. Это эквивалентно присвоению значения `false`.
-- См. сведения об [API глобализации, которые используют библиотеки ICU в Windows](../compatibility/3.1-5.0.md#globalization-apis-use-icu-libraries-on-windows).
+- См. сведения об [API глобализации, которые используют библиотеки ICU в Windows](../compatibility/globalization/5.0/icu-globalization-api.md).
 
 | | Имя параметра | Значения | Введенный |
 | - | - | - | - |

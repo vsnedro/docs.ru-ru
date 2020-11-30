@@ -6,20 +6,23 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 8a5ea56c-0140-4b51-8997-875ae6a8e0cb
-ms.openlocfilehash: bb011a8b81d9808c7517ebc2517529af7c4b975a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 177c52ea7217821735250b297974ac0ebaa1eb2e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819375"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95725382"
 ---
 # <a name="building-xml-schemas"></a>Построение XML-схем
+
 Классы в пространстве имен <xref:System.Xml.Schema?displayProperty=nameWithType> сопоставляются со структурами, определенными в рекомендациях по схемам XML консорциума W3C, и могут использоваться для сборки схем XML в памяти.  
   
 ## <a name="building-an-xml-schema"></a>Построение схемы XML  
+
  В следующем примере кода для построения схемы XML в памяти используется API модели SOM.  
   
 ### <a name="creating-element-and-attributes"></a>Создание элемента и атрибутов  
+
  Примеры кода собирают пользовательскую схему снизу вверх, вначале создавая дочерние элементы, атрибуты и их соответствующие типы, а затем элементы верхнего уровня.  
   
  В следующем примере кода элементы `FirstName` и `LastName`, а также атрибут пользовательской схемы `CustomerId` создаются с помощью классов <xref:System.Xml.Schema.XmlSchemaElement> и <xref:System.Xml.Schema.XmlSchemaAttribute> модели SOM. Помимо свойств <xref:System.Xml.Schema.XmlSchemaElement.Name%2A> классов <xref:System.Xml.Schema.XmlSchemaElement> и <xref:System.Xml.Schema.XmlSchemaAttribute>, соответствующих атрибуту name элементов `<xs:element />` и `<xs:attribute />` схемы XML, все остальные атрибуты, разрешенные схемой (`defaultValue`, `fixedValue`, `form` и так далее), имеют соответствующие свойства в классах <xref:System.Xml.Schema.XmlSchemaElement> и <xref:System.Xml.Schema.XmlSchemaAttribute>.  
@@ -29,6 +32,7 @@ ms.locfileid: "94819375"
  [!code-vb[XmlSchemaCreateExample#2](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCreateExample/VB/XmlSchemaCreateExample.vb#2)]  
   
 ### <a name="creating-schema-types"></a>Создание типов схемы  
+
  Содержимое элементов и атрибутов определяется их типом. Чтобы создать элементы и атрибуты со встроенными типами схемы, свойство <xref:System.Xml.Schema.XmlSchemaElement.SchemaTypeName%2A> классов <xref:System.Xml.Schema.XmlSchemaElement> или <xref:System.Xml.Schema.XmlSchemaAttribute> принимает значение соответствующего полного имени встроенного типа с помощью класса <xref:System.Xml.XmlQualifiedName>. Чтобы создать определяемый пользователем тип для элементов и атрибутов, формируется новый простой или сложный тип с помощью классов <xref:System.Xml.Schema.XmlSchemaSimpleType> или <xref:System.Xml.Schema.XmlSchemaComplexType>.  
   
 > [!NOTE]
@@ -46,6 +50,7 @@ ms.locfileid: "94819375"
  [!code-vb[XmlSchemaCreateExample#3](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCreateExample/VB/XmlSchemaCreateExample.vb#3)]  
   
 ### <a name="creating-and-compiling-schemas"></a>Создание и компиляция схем  
+
  В этой точке дочерние элементы и атрибуты, их соответствующие типы и элемент верхнего уровня `Customer` были созданы в памяти с помощью API модели SOM. В следующем примере кода с помощью класса <xref:System.Xml.Schema.XmlSchema> создается элемент схемы, к нему добавляются элементы верхнего уровня и типы с помощью свойства <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> и полная схема компилируется с помощью класса <xref:System.Xml.Schema.XmlSchemaSet> и выводится на консоль.  
   
  [!code-cpp[XmlSchemaCreateExample#4](../../../../samples/snippets/cpp/VS_Snippets_Data/XmlSchemaCreateExample/CPP/XmlSchemaCreateExample.cpp#4)]

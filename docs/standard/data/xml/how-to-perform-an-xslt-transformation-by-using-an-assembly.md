@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
-ms.openlocfilehash: 62f3ec511edb7f695580dbfc386773b1dd7b7121
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 64ae2ecf4dac15170115e232fca0ddee272afd0f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829483"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722704"
 ---
 # <a name="how-to-perform-an-xslt-transformation-by-using-an-assembly"></a>Практическое руководство. Выполнение XSLT-преобразования с помощью сборки
+
 XSLT-компилятор (xsltc.exe) компилирует таблицы стилей XSLT и создает сборку. Сборку можно передать непосредственно методу <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>.  
   
 ### <a name="to-copy-the-xml-and-xslt-files-to-your-local-computer"></a>Копирование XML-файлов и XSLT-файлов на локальный компьютер  

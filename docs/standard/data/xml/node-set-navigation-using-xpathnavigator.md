@@ -2,17 +2,19 @@
 title: Навигация в наборе узлов с помощью XPathNavigator
 ms.date: 03/30/2017
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
-ms.openlocfilehash: cf0058f553488e453d0227291110d9edc96638f6
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 592acfb5e4065d707f4dda09f349e8b783656148
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830133"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714306"
 ---
 # <a name="node-set-navigation-using-xpathnavigator"></a>Навигация в наборе узлов с помощью XPathNavigator
+
 Навигацию по узлам в объекте <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> обеспечивают методы просмотра набора узлов класса <xref:System.Xml.XPath.XPathNavigator>. Возможен просмотр всех узлов или набора выбранных узлов, возвращаемого одним из методов выбора класса <xref:System.Xml.XPath.XPathNavigator>.  
   
 ## <a name="element-node-set-navigation"></a>Навигация в наборе узлов элементов  
+
  В классе <xref:System.Xml.XPath.XPathNavigator> предусмотрено несколько методов, используемых для навигации по узлам элементов. В следующей таблице показаны доступные методы навигации и описания способов перемещения. В таблицу не включены методы, применяемые для навигации по узлам атрибутов и пространств имен.  
   
  Дополнительные сведения о выборе узлов объекта <xref:System.Xml.XPath.XPathNavigator> см. в руководстве по [выбору, вычислению и отбору данных XML с помощью XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md). Дополнительные сведения о навигации по узлам атрибутов и пространств имен см. в руководстве по [навигации в узлах атрибутов и пространств имен с помощью XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
@@ -31,6 +33,7 @@ ms.locfileid: "94830133"
 |<xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A>|Перемещает объект <xref:System.Xml.XPath.XPathNavigator> в корневой узел XML-документа.|  
   
 ## <a name="comments-and-processing-instruction-node-navigation"></a>Навигация по узлам комментариев и инструкций по обработке  
+
  Следующие методы класса <xref:System.Xml.XPath.XPathNavigator> допустимы для перемещения комментариев и инструкций по обработке из других узлов в XML-документ.  
   
 - <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>  

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Task-based Asynchronous Pattern, .NET support for
 - .NET, asynchronous design patterns
 ms.assetid: f120a5d9-933b-4d1d-acb6-f034a57c3749
-ms.openlocfilehash: b0dd786e1922d75edcb0326cc9e98037c6e4945c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2ae1c514185152dd709fe06018df513fb54b874b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830328"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726721"
 ---
 # <a name="interop-with-other-asynchronous-patterns-and-types"></a>Взаимодействие с другими асинхронными шаблонами и типами
 
@@ -28,6 +28,7 @@ ms.locfileid: "94830328"
 ## <a name="tasks-and-the-asynchronous-programming-model-apm"></a>Задачи и асинхронная модель программирования (APM)
 
 ### <a name="from-apm-to-tap"></a>от APM к TAP  
+
  Так как шаблон [Асинхронная модель программирования (APM)](asynchronous-programming-model-apm.md) структурирован, можно довольно легко создавать оболочки для предоставления реализации APM в качестве реализации TAP. Платформа .NET Framework 4 и более поздних версий включает вспомогательные процедуры в форме перегрузок методов <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> для реализации этого преобразования.  
   
  Рассмотрим класс <xref:System.IO.Stream> и его методы <xref:System.IO.Stream.BeginRead%2A> и <xref:System.IO.Stream.EndRead%2A> , которые представляют аналог APM для синхронного метода <xref:System.IO.Stream.Read%2A> :  
@@ -50,6 +51,7 @@ ms.locfileid: "94830328"
  [!code-vb[Conceptual.AsyncInterop#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.AsyncInterop/vb/Wrap2.vb#5)]  
   
 ### <a name="from-tap-to-apm"></a>от TAP к APM  
+
  Если существующая инфраструктура предполагает использование шаблона APM, также может потребоваться использовать реализацию TAP там, где ожидается реализация APM.  Поскольку задачи можно создавать, а класс <xref:System.Threading.Tasks.Task> реализует интерфейс <xref:System.IAsyncResult>, для этого можно использовать простую вспомогательную функцию. В следующем коде используется расширение класса <xref:System.Threading.Tasks.Task%601> , но можно использовать почти такую же функцию для неуниверсальных задач.  
   
  [!code-csharp[Conceptual.AsyncInterop#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/APM1.cs#6)]
@@ -73,6 +75,7 @@ ms.locfileid: "94830328"
  [!code-vb[Conceptual.AsyncInterop#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.AsyncInterop/vb/APM2.vb#10)]  
   
 ## <a name="tasks-and-the-event-based-asynchronous-pattern-eap"></a>Задачи и асинхронная модель, основанная на событиях  
+
  Создание оболочки для реализации [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md) сложнее создания оболочки для шаблона APM, так как шаблон EAP имеет несколько вариантов и менее структурирован, чем шаблон APM.  В качестве демонстрации следующий код создает оболочку метода `DownloadStringAsync` .  `DownloadStringAsync` принимает универсальный код ресурса (URI), создает событие `DownloadProgressChanged` во время скачивания, чтобы периодически передавать данные о ходе загрузки, а когда загрузка завершена, создает событие `DownloadStringCompleted` .  Конечным результатом является строка, содержащая оглавление страницы по указанному URI.  
   
  [!code-csharp[Conceptual.AsyncInterop#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/EAP1.cs#11)]
@@ -81,6 +84,7 @@ ms.locfileid: "94830328"
 ## <a name="tasks-and-wait-handles"></a>Задачи и дескрипторы ожидания  
   
 ### <a name="from-wait-handles-to-tap"></a>от дескрипторов ожидания к TAP  
+
  Хотя дескрипторы ожидания не реализуют асинхронную модель, опытные разработчики могут использовать класс <xref:System.Threading.WaitHandle> и метод <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A?displayProperty=nameWithType> для асинхронных уведомлений, когда задан дескриптор ожидания.  Можно создать оболочку метода <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> для создания альтернативы синхронного ожидания на основе задач для дескриптора ожидания:  
   
  [!code-csharp[Conceptual.AsyncInterop#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/Wait1.cs#12)]
@@ -94,6 +98,7 @@ ms.locfileid: "94830328"
  Можно также создать асинхронный семафор, который не зависит от дескрипторов ожидания и вместо этого работает только с задачами. Для этого используются методы, описанные в разделе [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md) для построения структур данных на основе <xref:System.Threading.Tasks.Task>.  
   
 ### <a name="from-tap-to-wait-handles"></a>от TAP к дескрипторам ожидания  
+
  Как упоминалось ранее, класс <xref:System.Threading.Tasks.Task> реализует <xref:System.IAsyncResult>, и эта реализация предоставляет свойство <xref:System.Threading.Tasks.Task.System%23IAsyncResult%23AsyncWaitHandle%2A> , которое возвращает дескриптор ожидания, задаваемое при завершении <xref:System.Threading.Tasks.Task> .  Можно получить <xref:System.Threading.WaitHandle> для <xref:System.Threading.Tasks.Task> следующим образом:  
   
  [!code-csharp[Conceptual.AsyncInterop#14](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.AsyncInterop/cs/Wait1.cs#14)]

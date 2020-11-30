@@ -8,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - parallelism, data
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
-ms.openlocfilehash: 9d0fe1afef126a9c4f73a74d969d36df27182be9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ce034260fd3e6746bb7d516483b5e6872dfdc172
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829379"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95699031"
 ---
 # <a name="data-parallelism-task-parallel-library"></a>Параллелизм данных (библиотека параллельных задач)
+
 Понятие *Параллелизм данных* относится к сценариям, в которых одна и та же операция выполняется одновременно (то есть параллельно) для элементов в исходной коллекции или массиве. В параллельных операциях с данными исходная коллекция секционируются таким образом, чтобы несколько потоков могли одновременно работать в разных сегментах.  
   
  Библиотека параллельных задач (TPL) поддерживает параллелизм данных с помощью класса <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>. Этот класс предоставляет параллельные реализации на основе методов циклов [for](../../csharp/language-reference/keywords/for.md) и [foreach](../../csharp/language-reference/keywords/foreach-in.md) (`For` и `For Each` в Visual Basic). Вы пишете логику цикла для <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> или <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> в значительной степени так же, как пишете последовательный цикл. Нет необходимости создавать потоки или очередь рабочих элементов. В базовых циклах нет необходимости применять блокировки. Библиотека параллельных задач обрабатывает все низкоуровневые работы. Чтобы узнать больше об использовании <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType>, загрузите документ [Шаблоны параллельного программирования: описание и применение в .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222). В следующем примере кода показан простой цикл `foreach` и его параллельный эквивалент.  

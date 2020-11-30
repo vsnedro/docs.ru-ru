@@ -6,14 +6,15 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 03a7c5a1-b296-4af4-b209-043c958dc0a5
-ms.openlocfilehash: 79bb23b77557a5a10f021e2167c9fa8ae3ee044a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 10de24d97d15ed4b6de3effa21410fb22054ec68
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830198"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714462"
 ---
 # <a name="modify-xml-data-using-xpathnavigator"></a>Изменение XML-данных с помощью класса XPathNavigator
+
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет набор методов для изменения узлов и значений в XML-документе. Для использования этих методов необходимо сделать редактируемым объект <xref:System.Xml.XPath.XPathNavigator>, то есть установить для свойства <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> значение `true`.  
   
  Объекты <xref:System.Xml.XPath.XPathNavigator> для правки XML-документа создаются с помощью метода <xref:System.Xml.XmlDocument.CreateNavigator%2A> класса <xref:System.Xml.XmlDocument>. Объекты <xref:System.Xml.XPath.XPathNavigator>, созданные классом <xref:System.Xml.XPath.XPathDocument>, доступны только для чтения, и любая попытка вызова методов редактирования объекта <xref:System.Xml.XPath.XPathNavigator>, созданного объектом <xref:System.Xml.XPath.XPathDocument>, приводит к возникновению исключения <xref:System.NotSupportedException>.  
@@ -21,6 +22,7 @@ ms.locfileid: "94830198"
  Дополнительные сведения о доступных только для чтения и изменяемых объектах <xref:System.Xml.XPath.XPathNavigator> см. в руководстве по [чтению данных XML с помощью XPathDocument и XmlDocument](reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
 ## <a name="modifying-nodes"></a>Изменение узлов  
+
  Удобнее всего изменять значение узла с помощью методов <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> и <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> класса <xref:System.Xml.XPath.XPathNavigator>.  
   
  В следующей таблице описывается действие этих методов на различные типы узлов.  
@@ -41,6 +43,7 @@ ms.locfileid: "94830198"
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет также набор методов для вставки и удаления узлов. Дополнительные сведения о вставке и удалении узлов в XML-документах вы найдете в статьях [Вставка XML-данных с помощью XPathNavigator](insert-xml-data-using-xpathnavigator.md) и [Удаление XML-данных с помощью XPathNavigator](remove-xml-data-using-xpathnavigator.md).  
   
 ### <a name="modifying-untyped-values"></a>Изменение нетипизированных значений  
+
  Метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> просто вставляет нетипизированное значение `string`, переданное в качестве параметра, как значение узла, на котором в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>. Значение вставляется без какого-либо типа и без проверки допустимости нового значения в соответствии с типом узла, если доступны сведения о схеме.  
   
  В следующем примере метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> используется для обновления всех элементов `price` в файле `contosoBooks.xml`.  
@@ -54,6 +57,7 @@ ms.locfileid: "94830198"
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
   
 ### <a name="modifying-typed-values"></a>Изменение типизированных значений  
+
  Когда тип узла является простым типом XML-схемы W3C, новое значение, вставленное методом <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A>, проверяется по особенностям простого типа, прежде чем будет установлено значение. Если новое значение недопустимо в соответствии с типом узла (например, при установке значения `-1` для элемента с типом `xs:positiveInteger`), возникает исключение.  
   
  В следующем примере предпринимается попытка изменить значение элемента `price` первого элемента `book` в файле `contosoBooks.xml` на <xref:System.DateTime>. Так как в файлах `price` тип элемента `xs:decimal` по XML-схеме определен как `contosoBooks.xsd`, возникает исключение.  
@@ -103,6 +107,7 @@ navigator.SetTypedValue(DateTime.Now);
  [!code-xml[XPathXMLExamples#3](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
   
 #### <a name="the-effects-of-editing-strongly-typed-xml-data"></a>Последствия изменения строго типизированных XML-данных  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> использует схему XML W3C как основу для описания строго типизированного XML. Элементы и атрибуты могут сопровождаться информацией о типе, создаваемой по результатам проверки на основе документа схемы XML W3C. Элементы, содержащие другие элементы или атрибуты, называются сложными типами, а имеющие только текстовое содержимое - простыми типами.  
   
 > [!NOTE]
@@ -115,6 +120,7 @@ navigator.SetTypedValue(DateTime.Now);
  Дополнительные сведения о проверке схемы и классе <xref:System.Xml.XPath.XPathNavigator> см. в статье [Проверка по схеме с помощью XPathNavigator](schema-validation-using-xpathnavigator.md).  
   
 ### <a name="modifying-attributes"></a>Изменение атрибутов  
+
  Для изменения узлов типизированных и нетипизированных атрибутов, а также других типов узлов, перечисленных в разделе «Изменение узлов», применяются методы <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> и <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A>.  
   
  В следующем примере изменяется значение атрибута `genre` первого элемента `book` в файле `books.xml`.  
@@ -152,6 +158,7 @@ Console.WriteLine(navigator.OuterXml);
  Дополнительные сведения о методах <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> и <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> см. в разделах «Изменение нетипизированных значений» и «Изменение типизированных значений».  
   
 ## <a name="innerxml-and-outerxml-properties"></a>Свойства InnerXml и OuterXml  
+
  Свойства <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> и <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> класса <xref:System.Xml.XPath.XPathNavigator> изменяют XML-разметку узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>.  
   
  Свойство <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, разобранный содержимым заданной XML-строки (`string`). Подобным образом свойство <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, так же как и самого текущего узла.  
@@ -193,6 +200,7 @@ Console.WriteLine(navigator.OuterXml);
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
   
 ## <a name="modifying-namespace-nodes"></a>Изменение узлов пространств имен  
+
  В модели DOM декларации пространств имен обрабатываются как обычные атрибуты, которые можно вставлять, изменять и удалять. Класс <xref:System.Xml.XPath.XPathNavigator> не допускает подобных операций на узлах пространств имен, поскольку изменение значения узла пространства имен может изменить идентификатор элементов и атрибутов в области действия узла пространства имен, как показано в следующем примере.  
   
 ```xml  
@@ -232,9 +240,11 @@ Console.WriteLine(navigator.OuterXml);
  В приведенном выше примере атрибут `a:parent-id` вставляется в элемент `parent` в пространстве имен `http://www.contoso.com/parent-id`. Метод <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A> используется для вставки атрибута для текущего элемента `parent`. Декларация пространства имен `http://www.contoso.com` автоматически вставляется классом <xref:System.Xml.XPath.XPathNavigator> для сохранения согласованности всего остального XML-документа.  
   
 ## <a name="modifying-entity-reference-nodes"></a>Изменение узлов ссылок на сущности  
+
  Ссылки на сущности в объекте <xref:System.Xml.XmlDocument> служат только для чтения; их нельзя изменять ни с помощью класса <xref:System.Xml.XPath.XPathNavigator>, ни с помощью класса <xref:System.Xml.XmlNode>. Любые попытки изменения узла ссылки на сущность приводят к исключению <xref:System.InvalidOperationException>.  
   
 ## <a name="modifying-xsinil-nodes"></a>Изменение узлов xsi:nil  
+
  Рекомендации схемы XML W3C содержат понятие обнуляемого (nillable) элемента. Обнуляемый элемент может не иметь никакого содержимого и все же быть допустимым. Понятие обнуляемого элемента аналогично понятию объекта со значением `null`. Основное различие заключается в том, что объект со значением `null` недоступен ни для каких взаимодействий, в то время как элемент `xsi:nil` все же обладает доступными свойствами (например, атрибутами), но не имеет содержимого (дочерних элементов или текста). Существование атрибута `xsi:nil` со значением `true` у элемента в XML-документе используется для обозначения отсутствия содержимого у данного элемента.  
   
  Если объект <xref:System.Xml.XPath.XPathNavigator> используется для добавления содержимого к допустимому элементу с атрибутом `xsi:nil` со значением `true`, для его атрибута `xsi:nil` будет установлено значение `false`.  
@@ -243,6 +253,7 @@ Console.WriteLine(navigator.OuterXml);
 > Если содержимое элемента с атрибутом `xsi:nil`, значение которого равно `false`, удалить, значение атрибута не будет изменено на `true`.  
   
 ## <a name="saving-an-xml-document"></a>Сохранение XML-документа  
+
  Сохранение изменений, внесенных в объект <xref:System.Xml.XmlDocument> с помощью описанных в данном разделе методов, выполняется с помощью методов класса <xref:System.Xml.XmlDocument>. Дополнительные сведения о сохранении изменений, внесенных в объект <xref:System.Xml.XmlDocument>, см. в руководстве по [созданию и сохранению документов](saving-and-writing-a-document.md).  
   
 ## <a name="see-also"></a>См. также

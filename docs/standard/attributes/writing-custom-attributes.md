@@ -16,14 +16,15 @@ helpviewer_keywords:
 - Inherited property
 - attribute classes, declaring
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
-ms.openlocfilehash: 4c7051fa45dfc23a09b037b78030ff90af182a7d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e3c97f28a05f2e5396872fe808cae0d48d5a4824
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829015"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95727007"
 ---
 # <a name="writing-custom-attributes"></a>Написание настраиваемых атрибутов
+
 Чтобы создавать собственные атрибуты, совсем не обязательно в совершенстве овладевать множеством новых понятий. Если вы знакомы с объектно-ориентированным программированием и знаете, как создавать классы, вы уже обладаете почти всеми нужными знаниями. Настраиваемые атрибуты, в сущности, представляют собой традиционные классы, прямо или косвенно наследующие от <xref:System.Attribute?displayProperty=nameWithType>. Подобно традиционным классам настраиваемые атрибуты содержат методы, хранящие и извлекающие данные.  
   
  Ниже приведены основные этапы правильно выстроенного процесса разработки классов настраиваемых атрибутов.  
@@ -39,6 +40,7 @@ ms.locfileid: "94829015"
  В этом разделе описано каждое из этих действий. В конце приведен [пример настраиваемого атрибута](#custom-attribute-example).  
   
 ## <a name="applying-the-attributeusageattribute"></a>Применение атрибута AttributeUsageAttribute  
+
  Объявление настраиваемого атрибута начинается с <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>, что определяет некоторые ключевые характеристики класса атрибута. Например, можно указать, может ли атрибут быть унаследован другими классами, или указать элементы языка, к которым может применяться этот атрибут. В следующем фрагменте кода демонстрируется использование <xref:System.AttributeUsageAttribute>.  
   
  [!code-cpp[Conceptual.Attributes.Usage#5](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#5)]
@@ -48,6 +50,7 @@ ms.locfileid: "94829015"
  В <xref:System.AttributeUsageAttribute> есть три члена, которые важны для создания настраиваемых атрибутов: [AttributeTargets](#attributetargets-member), [Inherited](#inherited-property) и [AllowMultiple](#allowmultiple-property).  
   
 ### <a name="attributetargets-member"></a>Член AttributeTargets  
+
  В предыдущем примере использовался элемент <xref:System.AttributeTargets.All?displayProperty=nameWithType>, указывающий, что этот атрибут может применяться ко всем элементам программы. Можно также задать <xref:System.AttributeTargets.Class?displayProperty=nameWithType>, чтобы атрибут применялся только к классам, или <xref:System.AttributeTargets.Method?displayProperty=nameWithType>, чтобы атрибут применялся только к методам. Подобным образом с помощью настраиваемых атрибутов можно выделить любые элементы программы с целью их последующего описания.  
   
  Вы также можете передать несколько значений <xref:System.AttributeTargets>. В следующем фрагменте кода задается применение настраиваемого атрибута к любому классу или методу.  
@@ -57,6 +60,7 @@ ms.locfileid: "94829015"
  [!code-vb[Conceptual.Attributes.Usage#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#6)]  
   
 ### <a name="inherited-property"></a>Свойство Inherited  
+
  Свойство <xref:System.AttributeUsageAttribute.Inherited%2A?displayProperty=nameWithType> указывает, может ли атрибут быть унаследован классами, производными от класса, к которому этот атрибут применен. Это свойство принимает флаг `true` (по умолчанию) или `false`. В следующем примере в классе `MyAttribute` для свойства <xref:System.AttributeUsageAttribute.Inherited%2A> по умолчанию указано значение `true`, а в классе `YourAttribute` для свойства <xref:System.AttributeUsageAttribute.Inherited%2A> указано значение `false`.  
   
  [!code-cpp[Conceptual.Attributes.Usage#7](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#7)]
@@ -76,6 +80,7 @@ ms.locfileid: "94829015"
  [!code-vb[Conceptual.Attributes.Usage#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#10)]  
   
 ### <a name="allowmultiple-property"></a>Свойство AllowMultiple  
+
  Свойство <xref:System.AttributeUsageAttribute.AllowMultiple%2A?displayProperty=nameWithType> указывает, можно ли применять к элементу несколько экземпляров атрибута. Если его значение равно `true`, допускается существование нескольких экземпляров. Если значение равно `false` (по умолчанию), можно использовать только один экземпляр.  
   
  В следующем примере в классе `MyAttribute` для свойства <xref:System.AttributeUsageAttribute.AllowMultiple%2A> задано значение `false`, а для `YourAttribute` — `true`.  
@@ -93,6 +98,7 @@ ms.locfileid: "94829015"
  Если оба свойства <xref:System.AttributeUsageAttribute.AllowMultiple%2A> и <xref:System.AttributeUsageAttribute.Inherited%2A> имеют значение `true`, то класс, наследуемый от другого класса, может наследовать атрибуты и иметь дополнительные экземпляры атрибута, применяемого в этом же дочернем классе. Если <xref:System.AttributeUsageAttribute.AllowMultiple%2A> имеет значение `false`, значения атрибутов в родительском классе будут перезаписаны новыми экземплярами того же самого атрибута в дочернем классе.  
   
 ## <a name="declaring-the-attribute-class"></a>Объявление класса атрибута  
+
  После применения <xref:System.AttributeUsageAttribute>можно начать определение характеристик атрибута. Объявление класса атрибута выглядит аналогично объявлению традиционного класса, как показано в следующем примере кода.  
   
  [!code-cpp[Conceptual.Attributes.Usage#14](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#14)]
@@ -110,6 +116,7 @@ ms.locfileid: "94829015"
 - В Microsoft Visual Basic все классы настраиваемых атрибутов должны иметь атрибут <xref:System.AttributeUsageAttribute?displayProperty=nameWithType>.  
   
 ## <a name="declaring-constructors"></a>Объявление конструкторов  
+
  Атрибуты инициализируются с помощью конструкторов точно так же, как и традиционные классы. В следующем фрагменте кода показан типичный конструктор атрибута. Этот открытый конструктор получает параметр и устанавливает его значение равным переменной-члену.  
   
  [!code-cpp[Conceptual.Attributes.Usage#15](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#15)]
@@ -125,6 +132,7 @@ ms.locfileid: "94829015"
  [!code-vb[Conceptual.Attributes.Usage#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#17)]  
   
 ## <a name="declaring-properties"></a>Объявление свойств  
+
  Если необходимо определить именованный параметр или предоставить простой способ получения значений, хранящихся в атрибуте, можно объявить [свойство](/previous-versions/visualstudio/visual-studio-2013/65zdfbdt(v=vs.120)). Свойства атрибута следует объявлять как открытые сущности с описанием типа данных, который будет возвращен. Определите переменную, которая будет хранить значение свойства, и свяжите ее с методами **get** и **set** . В следующем примере кода показана реализация простого свойства в атрибуте.  
   
  [!code-cpp[Conceptual.Attributes.Usage#16](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#16)]
@@ -132,6 +140,7 @@ ms.locfileid: "94829015"
  [!code-vb[Conceptual.Attributes.Usage#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source2.vb#16)]  
   
 ## <a name="custom-attribute-example"></a>пример настраиваемого атрибута  
+
  В этом разделе используются приведенные выше сведения и демонстрируется пример создания простого атрибута, содержащего данные об авторе раздела кода. Атрибут в этом примере хранит имя и уровень программиста, а также данные об изменениях, внесенных в код. Для хранения текущих сохраняемых значений в нем используются три закрытые переменные. Каждая переменная представлена открытым свойством, которое возвращает и задает значения. Наконец, в примере определяется конструктор с двумя обязательными параметрами.  
   
  [!code-cpp[Conceptual.Attributes.Usage#4](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source2.cpp#4)]

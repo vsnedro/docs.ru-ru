@@ -5,17 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: e25dd95f-b64c-4d8b-a3a4-379e1aa0ad55
-ms.openlocfilehash: 310d5eb01fff02d82ec3762d55ff14e5a6bcd621
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 99f06db3c6f1e634e9c4a677c01d1b0849afe43f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831017"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701514"
 ---
 # <a name="compiled-xpath-expressions"></a>Скомпилированные выражения XPath
+
 Объект <xref:System.Xml.XPath.XPathExpression> представляет скомпилированный запрос XPath, возвращаемый либо статическим методом <xref:System.Xml.XPath.XPathExpression.Compile%2A> класса <xref:System.Xml.XPath.XPathExpression>, либо методом <xref:System.Xml.XPath.XPathNavigator.Compile%2A> класса <xref:System.Xml.XPath.XPathNavigator>.  
   
 ## <a name="the-xpathexpression-class"></a>Класс XPathExpression  
+
  Скомпилированный запрос XPath, представляемый объектом <xref:System.Xml.XPath.XPathExpression> полезен в случаях, когда один запрос XPath используется несколько раз.  
   
  Например, если метод <xref:System.Xml.XPath.XPathNavigator.Select%2A> вызывается несколько раз, то вместо многократного использования строки, представляющей запрос XPath, используйте метод <xref:System.Xml.XPath.XPathExpression.Compile%2A> класса <xref:System.Xml.XPath.XPathExpression> или метод <xref:System.Xml.XPath.XPathNavigator.Compile%2A> класса <xref:System.Xml.XPath.XPathNavigator>, чтобы скомпилировать запрос XPath и поместить его в кэш в объекте <xref:System.Xml.XPath.XPathExpression> для повторного использования и повышения производительности.  
@@ -45,6 +47,7 @@ ms.locfileid: "94831017"
 > Метод <xref:System.Xml.XPath.XPathNavigator.Matches%2A> принимает в качестве параметра выражение XPath. Метод <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A> возвращает объект <xref:System.Xml.XPath.XPathNavigator>, а не один из возвращаемых типов W3C XPath.  
   
 ### <a name="the-returntype-property"></a>Свойство ReturnType  
+
  После компиляции запроса XPath в объект <xref:System.Xml.XPath.XPathExpression> можно использовать свойство <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> объекта <xref:System.Xml.XPath.XPathExpression>, чтобы определить возвращаемый тип запроса XPath.  
   
  Свойство <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> возвращает одно из следующих значений перечисления <xref:System.Xml.XPath.XPathResultType>, представляющего возвращаемые типы W3C XPath.  
@@ -110,6 +113,7 @@ Console.WriteLine(nodes.Current.Value);
  [!code-xml[XPathXMLExamples#1](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/books.xml#1)]  
   
 ### <a name="higher-performance-xpath-expressions"></a>Выражения XPath повышенной производительности  
+
  Для повышения производительности используйте в запросах по возможности наиболее точно заданные выражения XPath. Например, если узел `book` является дочерним для узла `bookstore`, а узел `bookstore` является элементом верхнего уровня в XML-документе, то использование выражения XPath `/bookstore/book` обеспечит скорость большую, чем использование выражения `//book`. Выражение XPath `//book` будет просматривать каждый узел в XML-дереве для определения совпадающих узлов.  
   
  Кроме того, использование методов перемещения по набору узлов, предоставляемых классом <xref:System.Xml.XPath.XPathNavigator>, может повысить производительность по сравнению с методами выбора, предоставляемыми классом <xref:System.Xml.XPath.XPathNavigator>, в случаях с простыми критериями выбора. Например, если нужно выбрать первый дочерний узел текущего узла, быстрее использовать метод <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>, чем выражение XPath `child::*[1]` и метод <xref:System.Xml.XPath.XPathNavigator.Select%2A>.  

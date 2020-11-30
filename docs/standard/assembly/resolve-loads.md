@@ -13,12 +13,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 16f2f61a2a36e4189e98c85b3d3ce706a52e2938
-ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
+ms.openlocfilehash: edd101e57793668d71d44db08f191ae412c6d998
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92687278"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95720910"
 ---
 # <a name="resolve-assembly-loads"></a>Разрешение загрузки сборок
 
@@ -28,6 +28,7 @@ ms.locfileid: "92687278"
 > Для разрешения загрузки сборок в контексте только для отражения используйте событие <xref:System.AppDomain.ReflectionOnlyAssemblyResolve?displayProperty=nameWithType>.  
   
 ## <a name="how-the-assemblyresolve-event-works"></a>Принцип действия события AssemblyResolve  
+
  При регистрации обработчика для события <xref:System.AppDomain.AssemblyResolve> обработчик вызывается каждый раз, когда среда выполнения не может связать сборку по имени. Например, вызов следующих методов из пользовательского кода может привести к возникновению события <xref:System.AppDomain.AssemblyResolve>.  
   
 - Перегрузка метода <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> или перегрузка метода <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>, где первым аргументом является строка, представляющая отображаемое имя загружаемой сборки (то есть строка, возвращаемая свойством <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType>).  
@@ -39,6 +40,7 @@ ms.locfileid: "92687278"
 - Перегрузка метода <xref:System.AppDomain.CreateInstance%2A?displayProperty=nameWithType> или <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=nameWithType>, создающая объект в другом домене приложения.  
   
 ### <a name="what-the-event-handler-does"></a>Действия обработчика событий  
+
  Обработчик события <xref:System.AppDomain.AssemblyResolve> получает отображаемое имя сборки, которую необходимо загрузить, в свойстве <xref:System.ResolveEventArgs.Name%2A?displayProperty=nameWithType>. Если обработчик не распознает имя сборки, он возвращает значение `null` (C#), `Nothing` (Visual Basic) или `nullptr` (Visual C++).  
   
  Если обработчик распознает имя сборки, он может загрузить и вернуть сборку, отвечающую запросу. Ниже перечислены некоторые возможные сценарии.  
@@ -69,6 +71,7 @@ ms.locfileid: "92687278"
  Несколько версий одной сборки можно загрузить в один домен приложения. Делать так не рекомендуется, так как это может привести к проблемам назначения типа. См. раздел [Рекомендации для загрузки сборок](../../framework/deployment/best-practices-for-assembly-loading.md).  
   
 ### <a name="what-the-event-handler-should-not-do"></a>Чего не должен делать обработчик событий  
+
 Основное правило обработки события <xref:System.AppDomain.AssemblyResolve> заключается в том, что не следует пытаться вернуть сборку, которая не распознается. При написании обработчика следует учитывать, какие сборки могут вызвать событие. Обработчик должен возвращать значение NULL для других сборок.  
 
 > [!IMPORTANT]

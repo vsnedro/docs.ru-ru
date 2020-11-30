@@ -4,19 +4,21 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - garbage collection, forced
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
-ms.openlocfilehash: 637ba9b3b73d685ee2263315a08f982d862efb35
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 25e94221355569931a31b566a53434cbed9ea93f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827728"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714241"
 ---
 # <a name="induced-collections"></a>Индуцированные коллекции
+
 В большинстве случаев сборщик мусора может определить самое подходящее время для выполнения сборки мусора, поэтому следует дать ему возможность работать независимо. В очень редких случаях принудительная сборка мусора может улучшить производительность приложения. В этих случаях вы можете принудительно запустить сборку мусора с помощью метода <xref:System.GC.Collect%2A?displayProperty=nameWithType>.  
   
  Используйте метод <xref:System.GC.Collect%2A?displayProperty=nameWithType>, если обнаружите заметное уменьшение объема доступной памяти в определенной точке кода приложения. Например, если приложение использует сложное диалоговое окно с несколькими элементами управления, вызов <xref:System.GC.Collect%2A> при закрытом диалоговом окне может повысить производительность, немедленно очищая память, выделенную для этого окна. Убедитесь, что приложение не запускает сборку мусора слишком часто, потому что это может уменьшить производительность, если сборщик мусора непродуктивно пытается удалить объекты в не самое удачное время. Можно передать значение перечисления <xref:System.GCCollectionMode.Optimized?displayProperty=nameWithType> в метод <xref:System.GC.Collect%2A>, чтобы осуществлять сбор только в случае его эффективности, как описано в следующем разделе.  
   
 ## <a name="gc-collection-mode"></a>Режим сборки мусора  
+
  Можно использовать одну из перегрузок метода <xref:System.GC.Collect%2A?displayProperty=nameWithType>, которая включает значение <xref:System.GCCollectionMode>, чтобы определить поведение принудительной сборки, как описано ниже.  
   
 |Значение `GCCollectionMode`|Описание:|  
@@ -26,6 +28,7 @@ ms.locfileid: "94827728"
 |<xref:System.GCCollectionMode.Optimized>|Позволяет сборщику мусора определить, является ли текущий момент оптимальным для освобождения объектов.<br /><br /> Сборщик мусора может определить, что сборка мусора будет недостаточно продуктивна, в этом случае он возвратится без удаления объектов.|  
   
 ## <a name="background-or-blocking-collections"></a>Фоновые или блокирующие сборки  
+
  Вы можете вызвать перегрузку метода <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29?displayProperty=nameWithType>, чтобы указать, является ли принудительная сборка блокирующей. Тип выполняемой сборки зависит от сочетания значений, установленных для параметров `mode` и `blocking`. `mode` является элементом перечисления <xref:System.GCCollectionMode>, а `blocking` — это значение <xref:System.Boolean>. В следующей таблице описаны разные сочетания аргументов `mode` и `blocking`.  
   
 |`mode`|`blocking` = `true`|`blocking` = `false`|  

@@ -2,14 +2,15 @@
 title: Ввод XmlDataDocument в XslTransform
 ms.date: 03/30/2017
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
-ms.openlocfilehash: 46abc88f413ae5e0c5f78deba25e939b957a5beb
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 96ce5176b83a6dfcb9af29b55f4e5052915dba93
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827572"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95721950"
 ---
 # <a name="xmldatadocument-input-to-xsltransform"></a>Ввод XmlDataDocument в XslTransform
+
 > [!NOTE]
 > Класс <xref:System.Xml.Xsl.XslTransform> явлется устаревшим в версии .NET Framework 2.0. Можно выполнять XSLT-преобразование, используя класс <xref:System.Xml.Xsl.XslCompiledTransform>. См. дополнительные сведения об [использовании класса XslCompiledTransform](using-the-xslcompiledtransform-class.md) и [миграции из класса XslTransform](migrating-from-the-xsltransform-class.md).  
   
