@@ -11,14 +11,15 @@ helpviewer_keywords:
 - strong-named assemblies, signing files
 - key pairs for signing files
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
-ms.openlocfilehash: 8f10dab9b395640e46cb9bf3ca468b8f6bb2bc1b
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: bb9640bbb46683a3facf290c8157853007f4407d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517195"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238448"
 ---
 # <a name="snexe-strong-name-tool"></a>Sn.exe (средство строгих имен)
+
 Программа строгих имен (Sn.exe) позволяет подписывать сборки [строгими именами](../../standard/assembly/strong-named.md). Программа Sn.exe предусматривает параметры для управления ключами, создания подписи и ее проверки.  
   
 > [!WARNING]
@@ -79,6 +80,7 @@ sn [-quiet][option [parameter(s)]]
 > Все параметры программы Sn.exe зависят от регистра и должны вводиться в точном соответствии с инструкциями выше, чтобы программа их правильно распознала.  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметры **-R** и **–Rc** можно использовать для сборок с отложенной подписью. При этом во время компиляции задается только открытый ключ, а подпись выполняется позднее, когда становится известен закрытый ключ.  
   
 > [!NOTE]
@@ -87,6 +89,7 @@ sn [-quiet][option [parameter(s)]]
 Средство строгих имен поддерживает пары открытого и закрытого ключей, созданные с помощью идентификатора алгоритма `AT_SIGNATURE`. При использовании пар открытого и закрытого ключей, созданных с помощью алгоритма `AT_KEYEXCHANGE`, возникает ошибка.
 
 ## <a name="examples"></a>Примеры  
+
  Следующая команда создает новую пару случайных ключей, которая сохраняется в файле `keyPair.snk`.  
   
 ```console  

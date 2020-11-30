@@ -9,14 +9,15 @@ helpviewer_keywords:
 - staleness of cached resources
 - age of cached resources
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-ms.openlocfilehash: e21cfc28407ba67afdce8d72e5e52c12ab359059
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bdfa608b5169755b2b4daaaa26e562308ae2be01
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048844"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250610"
 ---
 # <a name="cache-policy-interactionmaximum-age-and-maximum-staleness"></a>Взаимодействие с политикой кэша: максимальный возраст и устаревание
+
 Чтобы обеспечить возврат клиентскому приложению самого актуального содержимого, в результате взаимодействия политики кэша клиента и требований к повторной проверке сервера всегда применяется наиболее консервативная политика кэша. Все примеры в этом разделе иллюстрируют политику кэша для ресурса, который кэшируется 1 января и срок действия которого истекает 4 января.  
   
  В следующих примерах значение максимального возраста (`maxStale`) используется в сочетании со значением максимального срока действия (`maxAge`):  

@@ -3,17 +3,19 @@ title: Основные сведения о проблемах и исключе
 description: Класс WebRequest и его производные классы сообщают об аномальных состояниях, создавая исключения. Используйте эти варианты решения для устранения этих проблем в .NET Framework.
 ms.date: 03/30/2017
 ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
-ms.openlocfilehash: aa9ab989bad7940e82cc4fd8fd22ca3915f7b800
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 27fde2a3cf3e6a3469a47bdd9efe70d31620777d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502084"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236329"
 ---
 # <a name="understanding-webrequest-problems-and-exceptions"></a>Основные сведения о проблемах и исключениях WebRequest
+
 Класс <xref:System.Net.WebRequest> и его производные классы (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest> и <xref:System.Net.FileWebRequest>) сообщают об аномальных состояниях, создавая исключения. Иногда способ решения проблемы не очевиден.  
   
 ## <a name="solutions"></a>Решения  
+
  Чтобы определить причину проблемы, изучите свойство <xref:System.Net.WebException.Status%2A> объекта <xref:System.Net.WebException>. В приведенной ниже таблице представлены некоторые значения состояния и возможные решения.  
   
 |Status|Подробнее|Решение|  

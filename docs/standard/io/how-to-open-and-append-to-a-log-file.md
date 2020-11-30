@@ -11,12 +11,12 @@ helpviewer_keywords:
 - log files, appending to
 - I/O [.NET], log files
 ms.assetid: 74423362-1721-49cb-aa0a-e04005f72a06
-ms.openlocfilehash: f92dd34b15ca79f229b365c7c2db4ace411d9353
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: be4cacee8d0a529730c66c5850f42330520ba2d3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830757"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734612"
 ---
 # <a name="how-to-open-and-append-to-a-log-file"></a>Практическое руководство. открытие файла журнала и добавление в него данных
 
@@ -28,6 +28,7 @@ ms.locfileid: "94830757"
 > Пользователи Visual Basic могут использовать методы и свойства, предоставляемые классом <xref:Microsoft.VisualBasic.Logging.Log> или <xref:Microsoft.VisualBasic.FileIO.FileSystem>, для создания файлов журнала и записи данных в них.  
   
 ## <a name="example"></a>Пример  
+
  [!code-csharp[Conceptual.BasicIO.TextFiles#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source2.cs#2)]
  [!code-vb[Conceptual.BasicIO.TextFiles#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source2.vb#2)]  
   

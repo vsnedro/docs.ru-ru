@@ -7,14 +7,15 @@ helpviewer_keywords:
 - CorFlags.exe
 - portable executable files, CorFlags section
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
-ms.openlocfilehash: da5efadd63cc03f6f6e4eecf3115865ca3643b39
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 3f9f2a71a7a33de13264ce60fa7ff6ea5832aace
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167221"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247191"
 ---
 # <a name="corflagsexe-corflags-conversion-tool"></a>CorFlags.exe (средство преобразования CorFlags)
+
 Средство преобразования CorFlags позволяет настраивать раздел CorFlags в заголовке переносимого исполняемого образа.  
   
  Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
@@ -49,6 +50,7 @@ CorFlags.exe assembly [options]
 |`-UpgradeCLRHeader`|Обновляет версию заголовка CLR до версии 2.5. **Примечание.**  Для оптимального выполнения сборок они должны иметь версию заголовка CLR 2.5.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Если другие параметры не заданы, средство преобразования CorFlags отображает флаги заданной сборки.  
   
 ## <a name="see-also"></a>См. также

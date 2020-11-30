@@ -11,14 +11,15 @@ helpviewer_keywords:
 - object activation
 - registration-free COM interop, about registration-free COM interop
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
-ms.openlocfilehash: c6a4dfc54152ade6136e4292bbd1c4522553d491
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: f61ad954215aecfc9380a47de788d36f327ab0b3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281606"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96239540"
 ---
 # <a name="registration-free-com-interop"></a>COM-взаимодействие без регистрации
+
 COM-взаимодействие без регистрации активирует компонент, не используя реестр Windows для хранения сведений о сборке. Вместо регистрации компонента на компьютере во время развертывания необходимо в режиме разработки создать файлы манифеста в стиле Win32, содержащие информацию о привязке и активации. Именно эти файлы манифеста, а не ключи реестра, управляют активацией объекта.  
   
  Активация сборок без регистрации имеет два преимущества по сравнению с регистрацией во время развертывания.  

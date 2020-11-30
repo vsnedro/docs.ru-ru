@@ -12,14 +12,15 @@ helpviewer_keywords:
 - CodeDOM, creating classes
 - CodeDOM, graphs
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
-ms.openlocfilehash: 3d7151d384402dba6fbb5da8fe54621346251f7b
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 7c2cda2bb7cbdb93c27aef91c08f7c7227da7eed
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865311"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96235705"
 ---
 # <a name="how-to-create-a-class-using-codedom"></a>Практическое руководство. Создание класса с помощью CodeDOM
+
 В следующих процедурах демонстрируется создание и компиляция графа CodeDOM, который создает класс, содержащий два поля, три свойства, метод, конструктор и точку входа.  
   
 1. Создайте приложение консоли, которое будет использовать код CodeDOM для создания исходного кода класса.  
@@ -94,6 +95,7 @@ ms.locfileid: "86865311"
 2. Скомпилируйте и выполните создающий класс.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода представлен код, созданный на предыдущих этапах.  
   
  [!code-csharp[CodeDOM Class Sample#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample/CS/program.cs#1)]

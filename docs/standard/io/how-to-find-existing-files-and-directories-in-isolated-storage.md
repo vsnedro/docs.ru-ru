@@ -16,12 +16,12 @@ helpviewer_keywords:
 - locating directories in isolated storage file
 - storing data using isolated storage, finding files and directories
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
-ms.openlocfilehash: ebd2ae6684e7b3390b29aeebeb2552b4616a69f3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 43685a6ecb92510ad8d80c472a1c774d46cbb5f7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830731"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734638"
 ---
 # <a name="how-to-find-existing-files-and-directories-in-isolated-storage"></a>Практическое руководство. Поиск существующих файлов и каталоги в изолированном хранилище
 
@@ -32,6 +32,7 @@ ms.locfileid: "94830731"
  Ни один из этих методов не является рекурсивным. Класс <xref:System.IO.IsolatedStorage.IsolatedStorageFile> не предоставляет никаких методов для перечисления всех каталогов или файлов в хранилище. Но в примере кода ниже мы предлагаем вам несколько рекурсивных методов.  
   
 ## <a name="example"></a>Пример  
+
  В примере кода ниже показано, как создавать файлы и каталоги в изолированном хранилище. Сначала код получает данные о хранилище, изолированном по пользователю, домену и сборке, и помещает его в переменную `isoStore`. С помощью метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> создаются несколько разных каталогов, а конструктор <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.IsolatedStorage.IsolatedStorageFile%29> создает в них файлы. Затем код в цикле обрабатывает результаты выполнения метода `GetAllDirectories`. Этот метод использует <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> для поиска всех имен каталогов в текущем каталоге. Эти имена сохраняются в массиве, а затем `GetAllDirectories` вызывает сам себя и передает в качестве параметра каждый найденный каталог. В конечном счете возвращается массив с именами всех каталогов. Затем этот код вызывает метод `GetAllFiles`. Он, в свою очередь, вызывает `GetAllDirectories` для поиска всех имен каталогов и ищет файлы в каждом из каталогов с помощью метода <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A>. Результат возвращается в виде массива для отображения.  
   
  [!code-cpp[Conceptual.IsolatedStorage#9](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.isolatedstorage/cpp/source8.cpp#9)]

@@ -3,17 +3,19 @@ title: Устранение рисков. Нормализация путей
 description: Узнайте об изменении нормализация путей в .NET Framework, начиная с приложений, предназначенных для .NET Framework 4.6.2.
 ms.date: 03/30/2017
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
-ms.openlocfilehash: 89dcc46d9f266ffd3635dc0cc02b634720356eda
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 6f7e07690ab06fc7ef03344556c045405a63c374
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475220"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253600"
 ---
 # <a name="mitigation-path-normalization"></a>Устранение рисков. Нормализация путей
+
 Начиная с приложений, ориентированных на .NET Framework 4.6.2, нормализация путей в .NET Framework изменилась.  
   
 ## <a name="what-is-path-normalization"></a>Что такое нормализация путей?  
+
  Нормализация пути подразумевает изменение строки, которая идентифицирует путь или файл, чтобы он соответствовал допустимому пути в целевой операционной системе. Нормализация обычно включает в себя:  
   
 - канонизацию разделителей компонентов и каталогов;  
@@ -25,6 +27,7 @@ ms.locfileid: "86475220"
 - обрезку указанных символов.  
   
 ## <a name="the-changes"></a>Изменения  
+
  Начиная с приложений, ориентированных на .NET Framework 4.6.2, нормализация путей изменилась следующим образом:  
   
 - Среда выполнения перекладывает нормализацию путей на функцию [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) операционной системы.  
@@ -44,6 +47,7 @@ ms.locfileid: "86475220"
 Это изменение не влияет на приложения, предназначенные для .NET Framework 4.6.1 и более ранних версий, но работающие на платформе .NET Framework 4.6.2 или более новой версии.  
   
 ## <a name="mitigation"></a>Устранение рисков  
+
  В приложениях, предназначенных для .NET Framework 4.6.2 или более поздней версии, данное изменение можно отключить и использовать устаревшую нормализацию, добавив следующее в раздел [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) файла конфигурации приложения:  
   
 ```xml  

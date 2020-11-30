@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Aximp.exe
 - Windows Forms ActiveX Control Importer
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-ms.openlocfilehash: d4fd6762195078963b43392178996a61f90feb94
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 97e5201aecc540594aa154bb5a2e93e85c925570
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167342"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247347"
 ---
 # <a name="aximpexe-windows-forms-activex-control-importer"></a>Aximp.exe (программа импорта элементов ActiveX форм Windows)
+
 Программа для импорта элементов управления ActiveX преобразует определения типов в библиотеке типов COM для элемента управления ActiveX в элемент управления Windows Forms.  
   
  В Windows Forms могут находиться только элементы управления Windows Forms, то есть классы, производные от класса <xref:System.Windows.Forms.Control>. Программа Aximp.exe создает класс-оболочку для элемента управления ActiveX, который может быть размещен в Windows Forms. Благодаря этому во время разработки можно использовать ту же методологию программирования и поддержки, что и для других элементов управления Windows Forms.  
@@ -58,7 +59,7 @@ aximp [options]{file.dll | file.ocx}
   
  Прокси среды CLR для типов COM: *progid*.dll  
   
- Прокси Windows Forms для элементов управления ActiveX (Ax обозначает ActiveX): Ax*progid*.dll  
+ Прокси Windows Forms для элементов управления ActiveX (Ax обозначает ActiveX): Ax *progid*.dll  
   
 > [!NOTE]
 > Если имя члена элемента управления ActiveX совпадает с именем, заданным в .NET Framework, к имени члена при создании производного класса AxHost программа Aximp.exe добавит префикс "Ctl". Например, если элемент управления ActiveX содержит член с именем "Layout", в производном классе "AxHost" он будет переименован в "CtlLayout", так как в .NET Framework задано событие "Layout".  
@@ -72,6 +73,7 @@ aximp [options]{file.dll | file.ocx}
  Кроме того, проблемы могут возникнуть при использовании программы Aximp.exe с "shdocvw.dll" для создания сборки .NET, которая будет использоваться при разработке приложения. В этом случае приложение загружает и системную версию "shdocvw.dll", и созданную версию, а также может задавать приоритет системной версии. В такой ситуации при попытке загрузить веб-страницу в элемент управления ActiveX WebBrowser пользователю может быть выведено диалоговое окно "Открыть/Сохранить". Когда пользователь щелкает **Открыть**, веб-страница открывается в браузере Internet Explorer. Это происходит только на тех компьютерах, на которых установлен Internet Explorer версии 6 или более ранней версии. Чтобы избежать этой проблемы, следует использовать управляемый элемент управления <xref:System.Windows.Forms.WebBrowser> или Visual Studio для создания управляемой библиотеки "shdocvw.dll", как описано в разделе [Практическое руководство. Добавление ссылок на библиотеки типов](../interop/how-to-add-references-to-type-libraries.md).  
   
 ## <a name="example"></a>Пример  
+
  При выполнении указанной ниже команды создаются библиотеки "MediaPlayer.dll" и "AxMediaPlayer.dll" для элемента управления Media Player `msdxm.ocx`.  
   
 ```console

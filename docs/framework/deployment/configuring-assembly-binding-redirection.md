@@ -6,13 +6,15 @@ helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: d266cbd8-bf91-41d1-baf0-afbc481a741f
-ms.openlocfilehash: 8f3e2270d92e11ea467d6cefc2b19b4faff563b4
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 2455cab19132a208fb99454d4131363a624315c5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621734"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236381"
 ---
 # <a name="configuring-assembly-binding-redirection"></a>Настройка перенаправления привязки сборок
+
 По умолчанию приложение использует набор сборок .NET Framework, поставляемых вместе с версией среды выполнения, которая использовалась для компиляции приложения. Чтобы перенаправить ссылки привязки сборок на определенную версию сборок .NET Framework, можно использовать атрибут **appliesTo** элемента [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) в файле конфигурации приложения. Этот необязательный атрибут содержит номер версии .NET Framework, к которой применяется перенаправление. Если атрибут **appliesTo** не указан, элемент **\<assemblyBinding>** применяется ко всем версиям платформы .NET Framework.  
   
  Атрибут **appliesTo** появился в .NET Framework 1.1; он игнорируется в .NET Framework 1.0. Это означает, что при использовании платформы .NET Framework версии 1.0 применяются все элементы **\<assemblyBinding>** , даже если атрибут **appliesTo** задан.  
@@ -51,6 +53,7 @@ ms.locfileid: "85621734"
 ```  
   
 ## <a name="debugging-configuration-file-errors"></a>Отладка файлов конфигурации  
+
  Среда выполнения анализирует файлы конфигурации один раз при создании домена приложения и загружает код в этот домен. Среда CLR обрабатывает ошибки в файле конфигурации, игнорируя данную запись. Среда выполнения игнорирует весь файл конфигурации, если он содержит неправильный код XML. Что касается недопустимого кода XML, игнорируются только недопустимые разделы.  
   
  Чтобы определить, используется ли файл конфигурации, можно проверить, происходит ли перенаправление привязки сборки. Чтобы узнать, какие сборки загружаются, используйте [средство просмотра журнала привязки сборок (Fuslogvw.exe)](../tools/fuslogvw-exe-assembly-binding-log-viewer.md). Чтобы просмотреть все привязки сборок, необходимо создать запись для параметра **ForceLog** в реестре.  

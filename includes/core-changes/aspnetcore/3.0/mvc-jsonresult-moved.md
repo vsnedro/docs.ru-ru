@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1356f3eee5e2d8090d7d96aafc07a19507a1aff1
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 96c2a32dd7cca91e965601d715bbd4625bba439a
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721000"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032838"
 ---
 ### <a name="mvc-jsonresult-moved-to-microsoftaspnetcoremvccore"></a>MVC. JsonResult перемещен в Microsoft.AspNetCore.Mvc.Core
 
@@ -22,7 +22,7 @@ ms.locfileid: "83721000"
 
 Приложение, использующее библиотеку на основе версии 2.2 не может выполнить компиляцию. Указана ошибка, содержащая разновидность следующего текста:
 
-```
+```output
 The type 'JsonResult' exists in both 'Microsoft.AspNetCore.Mvc.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' and 'Microsoft.AspNetCore.Mvc.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
 ```
 

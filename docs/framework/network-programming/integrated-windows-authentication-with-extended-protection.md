@@ -2,14 +2,15 @@
 title: Встроенная аутентификация Windows с расширенной защитой
 ms.date: 03/30/2017
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
-ms.openlocfilehash: d69471f4be0f102381dee4fc5037e8f8b0c625c3
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 74f421131da0e5b11fd676ff23229f5ff6ec7eca
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144855"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241628"
 ---
 # <a name="integrated-windows-authentication-with-extended-protection"></a>Встроенная аутентификация Windows с расширенной защитой
+
 Были добавлены улучшения, которые влияют на обработку встроенной проверки подлинности Windows в <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream> и связанных классах в <xref:System.Net> и соответствующих пространствах имен. Была добавлена поддержка расширенной защиты для повышения безопасности.  
   
  Эти изменения могут влиять на приложения, которые используют эти классы для создания веб-запросов и получения ответов, в которых используется встроенная проверка подлинности Windows. Это изменение также может повлиять на веб-серверы и клиентские приложения, в которых используется встроенная проверка подлинности Windows.  
@@ -19,6 +20,7 @@ ms.locfileid: "84144855"
  Изменения для поддержки расширенной защиты будут доступны только для приложений в Windows 7 и Windows Server 2008 R2. Функции расширенной защиты недоступны в более ранних версиях Windows.  
   
 ## <a name="overview"></a>Обзор  
+
  Структура встроенной проверки подлинности Windows позволяет формировать универсальные ответы на некоторые запросы учетных данных. Это означает, что эти ответы можно повторно использовать или перенаправлять. Ответы на запросы должны обязательно содержать сведения о целевом объекте, а также могут содержать некоторые сведения о канале. Кроме того, службы могут предоставлять расширенную защиту, чтобы в ответах на запросы учетных данных также содержались сведения о службе, например имя субъекта-службы. С включением этих сведений в ответы на запросы учетных данных службы могут обеспечить лучшую защиту при изменении ответов на запросы учетных данных злоумышленниками.  
   
  Механизм расширенной защиты представляет собой улучшение протоколов проверки подлинности, предназначенное для исключения атак на ретрансляторы проверки подлинности. Это улучшение связано с концепцией каналов и сведениями о привязке службы.  
@@ -64,6 +66,7 @@ ms.locfileid: "84144855"
  Расширенная защита поддерживается в Windows 7. Предоставляется механизм, с помощью которого приложение может определить, поддерживает ли операционная система расширенную защиту.  
   
 ## <a name="changes-to-support-extended-protection"></a>Изменения для поддержки расширенной защиты  
+
  Процесс проверки подлинности, используемый со встроенной проверкой подлинности Windows, в зависимости от протокола проверки подлинности часто включает в себя запрос, который выдается компьютером назначения и отправляется обратно на клиентский компьютер. Расширенная защита добавляет новые функции при проверке подлинности  
   
  Пространство имен <xref:System.Security.Authentication.ExtendedProtection> обеспечивает поддержку проверки подлинности для приложений с использованием расширенной защиты. Класс <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> в этом пространстве имен представляет привязку каналов. Класс <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> в этом пространстве имен представляет политику расширенной защиты, используемую сервером для проверки входящих клиентских подключений. Другие члены класса используются с расширенной защитой.  
@@ -107,6 +110,7 @@ ms.locfileid: "84144855"
  В пространство имен <xref:System.Net.Security> добавлено свойство <xref:System.Net.Configuration.SmtpNetworkElement> для поддержки настройки расширенной защиты для клиентов SMTP.  
   
 ## <a name="extended-protection-for-client-applications"></a>Расширенная защита для клиентских приложений  
+
  Для большинства приложений расширенная защита поддерживается автоматически. Классы <xref:System.Net.HttpWebRequest> и <xref:System.Net.Mail.SmtpClient> поддерживают расширенную защиту, если базовая версия Windows поддерживает расширенную защиту. Экземпляр <xref:System.Net.HttpWebRequest> отправляет имя участника-службы, сформированное из <xref:System.Uri>. По умолчанию экземпляр <xref:System.Net.Mail.SmtpClient> отправляет имя участника-службы, сформированное из имени узла на почтовом сервере SMTP.  
   
  Для пользовательской проверки подлинности клиентские приложения могут использовать методы <xref:System.Net.HttpWebRequest.EndGetRequestStream%28System.IAsyncResult%2CSystem.Net.TransportContext%40%29?displayProperty=nameWithType> или <xref:System.Net.HttpWebRequest.GetRequestStream%28System.Net.TransportContext%40%29?displayProperty=nameWithType> в классе <xref:System.Net.HttpWebRequest>, которые позволяют получить <xref:System.Net.TransportContext> и маркер привязки канала с помощью метода <xref:System.Net.TransportContext.GetChannelBinding%2A>.  
@@ -116,6 +120,7 @@ ms.locfileid: "84144855"
  Свойство <xref:System.Net.Mail.SmtpClient.TargetName%2A> можно использовать для установки пользовательского имени субъекта-службы, которое будет использоваться во встроенной проверке подлинности Windows для соединения SMTP.  
   
 ## <a name="extended-protection-for-server-applications"></a>Расширенная защита для серверных приложений  
+
  <xref:System.Net.HttpListener> автоматически предоставляет механизмы для проверки привязок службы при проверке подлинности HTTP.  
   
  Наиболее безопасный сценарий — включение расширенной защиты для префиксов `HTTPS://`. В этом случае установите <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> в значение <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy>, <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> — в значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> или <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> и <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> — в значение <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected>. Значение <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> переводит <xref:System.Net.HttpListener> в частично усиленный режим, а <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> — в полностью усиленный режим.  

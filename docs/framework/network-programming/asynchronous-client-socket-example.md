@@ -10,14 +10,15 @@ helpviewer_keywords:
 - sockets, code examples
 - sockets, asynchronous client sockets
 ms.assetid: d4ac53a0-b50b-4232-9726-d47d25fcc38a
-ms.openlocfilehash: c0bcf4becf8193f3bd6bc728dc6d7e96276dddf2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2ab53ef5973091d8828260aa82d287ce4a2455eb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502734"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250701"
 ---
 # <a name="asynchronous-client-socket-example"></a>Примеры асинхронных сокетов клиента
+
 Приведенная ниже программа создает клиент, который подключается к серверу. Клиент создается с использованием асинхронного сокета, поэтому выполнение клиентского приложения не приостанавливается до тех пор, пока сервер возвращает ответ. Приложение отправляет строку на сервер, а затем выводит возвращенную им строку в консоли.  
   
 ```vb  

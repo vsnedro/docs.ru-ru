@@ -6,14 +6,15 @@ helpviewer_keywords:
 - SecAnnotate.exe
 - Security Annotator tool
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
-ms.openlocfilehash: 408a3064b67cae2d75c80881f918c774e05866e6
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: cfa7ec7cb0ff174a820afcdcbdb1eb461510fc05
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558385"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238539"
 ---
 # <a name="secannotateexe-net-security-annotator-tool"></a>SecAnnotate.exe (средство создания заметок безопасности .NET)
+
 Средство создания заметок безопасности .NET Security Annotator (SecAnnotate.exe) — это приложение командной строки, определяющее части `SecurityCritical` и `SecuritySafeCritical` одной или нескольких сборок.  
   
  Расширение Visual Studio [Security Annotator](https://marketplace.visualstudio.com/items?itemName=sheldonb.SecurityAnnotator) обеспечивает графический пользовательский интерфейс для программы SecAnnotate.exe и позволяет запускать эту программу из Visual Studio.  
@@ -49,6 +50,7 @@ SecAnnotate.exe [parameters] [assemblies]
 |`/y:` *каталог*<br /><br /> or<br /><br /> `/symbolpath:` *каталог*|Включает указанный каталог при поиске файлов символов во время аннотирования.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Параметры и сборки также могут предоставляться в файле ответов, указанном в командной строке с префиксом в виде знака \@ . Каждая строка в файле ответов должна содержать один параметр или имя сборки.  
   
  Дополнительные сведения о .NET Security Annotator см. в записи [Использование SecAnnotate для анализа сборок на наличие нарушений прозрачности](/archive/blogs/shawnfa/using-secannotate-to-analyze-your-assemblies-for-transparency-violations-an-example) в блоге .NET Security.  

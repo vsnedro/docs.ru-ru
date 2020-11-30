@@ -6,17 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8e4450dc-56b3-472b-b467-32f5694f83ad
-ms.openlocfilehash: b8a67d1fd508d0674d9230d4b934071a15669599
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b6b68d9351431acc6d9ef20276f51ac4d667d325
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829249"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734690"
 ---
 # <a name="select-nodes-using-xpath-navigation"></a>Выбор узлов с помощью XPath-навигации
+
 Модель DOM содержит методы, позволяющие использовать навигацию языка XPath для запроса данных в модели DOM. Язык XPath используется для поиска конкретного одиночного узла или всех узлов, соответствующих некоторым условиям.  
   
 ## <a name="xpath-select-methods"></a>Методы выбора XPath  
+
  Классы DOM предоставляют два способа выбора XPath: метод <xref:System.Xml.XmlNode.SelectSingleNode%2A> и метод <xref:System.Xml.XmlNode.SelectNodes%2A>. Метод <xref:System.Xml.XmlNode.SelectSingleNode%2A> возвращает первый узел, соответствующий критериям выбора. Метод <xref:System.Xml.XmlNode.SelectNodes%2A> возвращает список <xref:System.Xml.XmlNodeList>, содержащий соответствующие узлы.  
   
  В следующем примере метод <xref:System.Xml.XmlNode.SelectSingleNode%2A> используется для выбора первого узла `book`, в котором фамилия автора соответствует указанному критерию. Файл bookstore.xml (приведенный в конце этого раздела) используется в качестве входного файла.  
@@ -122,12 +124,14 @@ this doc.DocumentElement.FirstChild.SelectNodes(. . .);
 > При изменении базового документа рекомендуется повторно запустить выбор. Если изменение узла может привести к его добавлению в список узлов, где он ранее отсутствовал, или удалению из списка узлов, точность списка узлов не гарантируется.  
   
 ## <a name="namespaces-in-xpath-expressions"></a>Пространства имен в выражениях XPath  
+
  Выражения XPath могут включать пространства имен. Разрешение пространства имен поддерживается с помощью объекта <xref:System.Xml.XmlNamespaceManager>. Если выражение XPath содержит префикс, этот префикс вместе с URI-кодом пространства имен необходимо добавить к объекту <xref:System.Xml.XmlNamespaceManager>, и объект <xref:System.Xml.XmlNamespaceManager> передается методу <xref:System.Xml.XmlNode.SelectNodes%28System.String%2CSystem.Xml.XmlNamespaceManager%29> или <xref:System.Xml.XmlNode.SelectSingleNode%28System.String%2CSystem.Xml.XmlNamespaceManager%29>. Обратите внимание, что вышеприведенные примеры кода пользуются диспетчером <xref:System.Xml.XmlNamespaceManager> для разрешения пространства имен документа bookstore.xml.  
   
 > [!NOTE]
 > Если выражение XPath не содержит префикс, предполагается, что URI-код пространства имен указывает на пустое пространство имен. Если XML включает пространство имен по умолчанию, необходимо добавить префикс вместе с URI-кодом пространства имен к объекту <xref:System.Xml.XmlNamespaceManager>, в противном случае невозможно будет выбрать узлы.  
   
 #### <a name="input-file"></a>Входной файл  
+
  Файл bookstore.xml используется в качестве входного файла в примерах этого раздела.  
   
 ```xml  

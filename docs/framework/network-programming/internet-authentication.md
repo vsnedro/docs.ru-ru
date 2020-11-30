@@ -16,14 +16,15 @@ helpviewer_keywords:
 - NetworkCredential class, about NetworkCredential class
 - client authentication, classes for authentication
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-ms.openlocfilehash: a1f0829aa0e9e4bcc68168b73443578c3a34310b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 085ca27dd0cfedc90211b21c10cc8bc5cf1ecd21
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502383"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241594"
 ---
 # <a name="internet-authentication"></a>Аутентификация в Интернете
+
 Классы <xref:System.Net> поддерживают ряд механизмов проверки подлинности клиентов, включая стандартные методы проверки подлинности в Интернете: базовая проверка подлинности, дайджест-проверка подлинности, проверка подлинности согласованием, проверка подлинности NTLM, проверка подлинности Kerberos, а также создаваемые пользовательские методы.  
   
  Учетные данные проверки подлинности хранятся в классах <xref:System.Net.NetworkCredential> и <xref:System.Net.CredentialCache>, которые реализуют интерфейс <xref:System.Net.ICredentials>. Когда один из этих классов запрашивается на предоставление учетных данных, он возвращает экземпляр класса **NetworkCredential**. Процесс проверки подлинности управляется классом <xref:System.Net.AuthenticationManager>, а фактический процесс проверки подлинности выполняется классом модуля проверки подлинности, который реализует интерфейс <xref:System.Net.IAuthenticationModule>. Перед использованием необходимо зарегистрировать пользовательский модуль проверки подлинности с помощью **AuthenticationManager**. Модули для базовой проверки подлинности, дайджест-проверки подлинности, проверки подлинности согласованием, проверки подлинности NTLM, проверки подлинности Kerberos зарегистрированы по умолчанию.  

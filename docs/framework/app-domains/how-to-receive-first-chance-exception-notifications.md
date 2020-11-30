@@ -9,14 +9,15 @@ helpviewer_keywords:
 - first-chance exception notifications
 - exceptions, first chance notifications
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-ms.openlocfilehash: e8b5ae5fb69c7befd329316aee11523f79d73fcd
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 0b3150a52a68e078d1052a9894bb652ad35027d0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104738"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242569"
 ---
 # <a name="how-to-receive-first-chance-exception-notifications"></a>Практическое руководство. Получение уведомлений о первом этапе обработки исключений
+
 Событие <xref:System.AppDomain.FirstChanceException> класса <xref:System.AppDomain> позволяет получать уведомления о порождении исключений до того, как среда CLR начнет искать обработчики исключений.
 
  Событие возникает на уровне домена приложения. Поток выполнения может проходить несколько доменов приложения, поэтому необработанное в одном домене исключение может быть обработано в другом домене. Уведомление происходит во всех доменах приложения, добавивших обработчик для этого события, пока исключение не будет обработано.
@@ -26,6 +27,7 @@ ms.locfileid: "85104738"
  Более развернутый пример с несколькими доменами приложения см. в описании события <xref:System.AppDomain.FirstChanceException>.
 
 ## <a name="receiving-first-chance-exception-notifications-in-the-default-application-domain"></a>Получение уведомлений о первом этапе обработки исключений в домене приложения по умолчанию
+
  В представленной ниже процедуре точка входа для приложения, метод `Main()`, запускается в домене приложения по умолчанию.
 
 #### <a name="to-demonstrate-first-chance-exception-notifications-in-the-default-application-domain"></a>Получение уведомлений о первом этапе обработки исключений в домене приложения по умолчанию
@@ -51,6 +53,7 @@ ms.locfileid: "85104738"
      [!code-vb[System.AppDomain.FirstChanceException_howto_simple#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/vb/example.vb#5)]
 
 ## <a name="receiving-first-chance-exception-notifications-in-another-application-domain"></a>Получение уведомлений о первом этапе обработки исключений в другом домене приложения
+
  Если в программе имеется несколько доменов приложения, можно выбирать, какие из них должны получать уведомления.
 
 #### <a name="to-receive-first-chance-exception-notifications-in-an-application-domain-that-you-create"></a>Получение уведомлений о первом этапе обработки исключений в созданном пользователем домене приложения
@@ -85,6 +88,7 @@ ms.locfileid: "85104738"
      [!code-vb[System.AppDomain.FirstChanceException_howto#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/vb/example.vb#5)]
 
 ## <a name="example"></a>Пример
+
  В следующем примере создается домен приложения `AD1`, после чего для события <xref:System.AppDomain.FirstChanceException> этого домена добавляется обработчик событий. Затем в этом домене приложения создается экземпляр класса `Worker` и вызывается метод `Thrower`, порождающий исключение <xref:System.ArgumentException>. В зависимости от значения аргумента метод либо перехватит исключение, либо не сможет его обработать.
 
  Каждый раз `Thrower` метод вызывает исключение в `AD1`, <xref:System.AppDomain.FirstChanceException> события в `AD1`, и обработчик событий выводит сообщение. Затем среда выполнения ищет обработчик исключений. В первом случае он обнаруживается в `AD1`. Во втором случае исключение в `AD1` не обрабатывается и перехватывается только в домене приложения по умолчанию.

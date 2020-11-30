@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PEverify.exe
 - PE files, PEVerify
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
-ms.openlocfilehash: 478c04a45c7f9d3ad568a6bc4a12a89fe786583a
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: c859aa4e2e3ae95c5c72aed930a9bc4a05add296
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325626"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238591"
 ---
 # <a name="peverifyexe-peverify-tool"></a>Peverify.exe (средство PEVerify)
 
@@ -55,6 +55,7 @@ peverify filename [options]
 |**/?**|Отображает синтаксис команд и параметров программы.|  
   
 ## <a name="remarks"></a>Примечания  
+
  В среде CLR реализация механизмов безопасности и изоляции основана на типобезопасном выполнении кода приложения. Обычно код, для которого невозможно [проверить типобезопасность](../../standard/security/key-security-concepts.md#type-safety-and-security), не выполняется, хотя можно настроить политику безопасности таким образом, чтобы допускалось выполнение доверенного непроверяемого кода.  
   
  Если параметры **/md** и **/il** не заданы, Peverify.exe проверяет как CIL, так и метаданные. Сначала Peverify.exe проверяет метаданные (параметр **/md**). Если ошибок нет, выполняется проверка CIL (параметр **/il**). Если задан и параметр **/md**, и параметр **/il**, проверка по параметру **/il** производится даже при наличии ошибок в метаданных. Поэтому при отсутствии ошибок в метаданных команда **peverify** *имя_файла* эквивалентна команде **peverify** *имя_файла* **/md** **/il**.  
@@ -64,6 +65,7 @@ peverify filename [options]
 На платформе .NET Framework 2.0 и более поздних версий поддерживается возврат проверяемых значений `byref`, заданных с использованием следующих инструкций MSIL: `dup`, `ldsflda`, `ldflda`, `ldelema`, `call` и `unbox`.  
   
 ## <a name="examples"></a>Примеры  
+
  Следующая команда проверяет метаданные и безопасность типов CIL для методов, реализованных в сборке `myAssembly.exe`.  
   
 ```console  

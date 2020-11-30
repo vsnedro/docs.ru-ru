@@ -9,12 +9,12 @@ helpviewer_keywords:
 - memory-mapped files
 - inter-process communication
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-ms.openlocfilehash: dc0da9842df7b0a827293c42d80ccdd418a043b2
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4a179bff7ec7988c5b7410fa99eab346d4add1df
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819205"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734833"
 ---
 # <a name="memory-mapped-files"></a>Сопоставленные в памяти файлы
 
@@ -31,6 +31,7 @@ ms.locfileid: "94819205"
      Непостоянными называются отображенные в память файлы, которые не сопоставлены с файлом на диске. Когда последний процесс закончит работу с таким файлом, данные не сохраняются, а файл удаляется при сборке мусора. Такие файлы позволяют создать общую область памяти для межпроцессного взаимодействия (IPC).  
   
 ## <a name="processes-views-and-managing-memory"></a>Процессы, представления и управление памятью  
+
  Отображенные в память файлы можно сделать общими для нескольких процессов. Процессы могут обращаться к одному отображенному в память файлу по единому имени, которое назначается процессом, создающим этот файл.  
   
  Для работы с отображенным в память файлом следует создать представление всего файла или его части. Также вы можете создать несколько представлений для одной части отображенного в память файла, фактически применяя одновременно используемую память. Чтобы два представления оставались согласованными, их нужно создавать из одного отображенного в память файла.  
@@ -48,6 +49,7 @@ ms.locfileid: "94819205"
  ![Снимок экрана с представлениями для отображенного в память файла.](./media/memory-mapped-files/memory-map-persist-file.png)  
   
 ## <a name="programming-with-memory-mapped-files"></a>Программирование с использованием отображенных в память файлов  
+
  В следующей таблице содержатся инструкции по использованию объектов и элементов для отображенных в память файлов.  
   
 |Задача|Применимые методы или свойства|  
@@ -61,6 +63,7 @@ ms.locfileid: "94819205"
 |Задержка распределения памяти до момента, когда будет создано представление (только для непостоянных файлов).<br /><br /> (Чтобы определить текущий размер системной страницы, используйте свойство <xref:System.Environment.SystemPageSize%2A?displayProperty=nameWithType>.)|Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> со значением <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType>.<br /><br /> -или-<br /><br /> Методы <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A>, которые принимают в качестве параметра перечисление <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions>.|  
   
 ### <a name="security"></a>Безопасность  
+
  При создании отображенного в память файла вы можете применить к нему права доступа. Для этого используйте следующие методы, которые принимают в качестве параметра перечисление <xref:System.IO.MemoryMappedFiles.MemoryMappedFileAccess>:  
   
 - <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A?displayProperty=nameWithType>  
@@ -78,6 +81,7 @@ ms.locfileid: "94819205"
 ## <a name="examples"></a>Примеры  
   
 ### <a name="persisted-memory-mapped-files"></a>Постоянные отображенные в память файлы  
+
  Метод <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> позволяет создать отображенный в память файл из существующего файла на диске.  
   
  В следующем примере создается отображенное в память представление для части очень большого файла, с которым выполняются определенные действия:  
@@ -93,6 +97,7 @@ ms.locfileid: "94819205"
  [!code-vb[MemoryMappedFiles.MemoryMappedFile.OpenExisting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/vb/program.vb#1)]  
   
 ### <a name="non-persisted-memory-mapped-files"></a>Непостоянные отображенные в память файлы  
+
  Методы <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> и <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A> позволяют создать отображенный в память файл, который не сопоставлен ни с каким файлом на диске.  
   
  Приведенный ниже пример состоит из трех отдельных процессов (консольных приложений), при которых логические значения записываются в отображенный в память файл. Последовательность действий следующая:  

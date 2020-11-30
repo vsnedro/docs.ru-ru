@@ -10,14 +10,15 @@ helpviewer_keywords:
 - profile [.NET Framework Client Profile]
 - .NET Framework Client Profile
 ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
-ms.openlocfilehash: e199dccd30b8648177b3da5cc173ea3a7f9a60d8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 92ade654b20c5971482464ce1cb9619c434679b6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555293"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236394"
 ---
 # <a name="net-framework-client-profile"></a>.NET Framework (клиентский профиль)
+
 Клиентский профиль .NET — это подмножество платформы .NET Framework, которое предоставлялось с .NET Framework 4 и более ранними версиями и было оптимизировано для клиентских приложений. .NET Framework — это платформа разработки для Windows, Windows Phone и Microsoft Azure, которая включает в себя управляемую среду выполнения приложений и библиотеку классов .NET Framework. В .NET Framework 4 и более ранних версиях предоставлялось два варианта развертывания: полная платформа .NET Framework и клиентский профиль. Клиентский профиль позволял ускорить развертывание и уменьшить установочные пакеты приложений по сравнению с полной платформой .NET Framework.  
   
  Начиная с .NET Framework 4.5 доступен только полный распространяемый пакет. Оптимизации, предоставляемые платформой .NET Framework 4.5, такие как меньший размер загружаемых файлов и повышенная скорость развертывания, исключили необходимость в отдельном пакете. Один распространяемый пакет упрощает процесс установки и параметры развертывания приложения.  

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - cache [.NET Framework], time-based policies
 - default time-based cache policy
 ms.assetid: 6bfce066-a2e7-4add-a05e-85c12ec9f07f
-ms.openlocfilehash: 0aaa26f67ef1ef191060e682690fa14de328b812
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e9398beee7051d88867600b79c615356c2d4cc28
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048092"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241698"
 ---
 # <a name="how-to-set-the-default-time-based-cache-policy-for-an-application"></a>Практическое руководство. Установка политики кэша для приложения на основе времени по умолчанию
+
 Политики кэша на основе времени по умолчанию позволяют приложению определить поведение кэширования с помощью заголовков, которые отправляются с кэшируемым ресурсом. Поведение кэширования определяется в разделах 13 и 14 стандарта RFC 2616, который доступен на веб-сайте [IETF](https://www.ietf.org/). Это поведение кэширования подходит для большинства приложений.  
   
 ### <a name="to-set-the-default-automatic-policy-for-an-application"></a>Установка политики кэша по умолчанию для приложения  
@@ -26,6 +27,7 @@ ms.locfileid: "71048092"
 2. Установите этот объект политики как объект по умолчанию для домена приложения.  
   
 ## <a name="example"></a>Пример  
+
  В двух примерах в этом разделе формируются идентичные политики.  
   
  В следующем примере создается политика на основе времени по умолчанию. Затем эта политика устанавливается в качестве политики по умолчанию для домена приложения.  

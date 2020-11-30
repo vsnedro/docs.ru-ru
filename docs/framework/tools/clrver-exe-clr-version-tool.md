@@ -6,14 +6,15 @@ helpviewer_keywords:
 - Clrver.exe
 - CLR Version tool
 ms.assetid: cbc2ee86-bdc8-4a65-a8f1-ba23bce3a699
-ms.openlocfilehash: e914034819418df00438c454e209e6c86779ba3c
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 3a7a585d990051553aa8fdc0e99b2dc206273cf4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167275"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247230"
 ---
 # <a name="clrverexe-clr-version-tool"></a>Clrver.exe (средство проверки версий среды CLR)
+
 Программа версий среды CLR (Clrver.exe) выводит отчет обо всех установленных версиях среды CLR на компьютере.  
   
  Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
@@ -35,6 +36,7 @@ clrver [option]
 |`-?`|Отображает синтаксис команд и параметров программы.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Если программа Clrver.exe вызывается без параметров, отображаются все установленные версии среды CLR. Если указан PID для другого пользователя, для получения сведений о версии необходимо иметь права администратора.  
   
 > [!NOTE]
@@ -43,6 +45,7 @@ clrver [option]
  При попытке определить версию среды CLR для процессов SYSTEM, LOCAL SERVICE и NETWORK SERVICE выводится сообщение о том, что PID не существует.  
   
 ## <a name="examples"></a>Примеры  
+
  Приведенная ниже команда отображает все установленные на компьютере версии среды CLR.  
   
  `clrver`  

@@ -14,14 +14,15 @@ helpviewer_keywords:
 - CTLs
 - certificate revocation lists
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-ms.openlocfilehash: 43ab281e6ec28ff23ea584b03fd4278c6682e33e
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 30a35ded6fc86af6dc6dd4bf19cdf60f66570e0c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167270"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247256"
 ---
 # <a name="certmgrexe-certificate-manager-tool"></a>Certmgr.exe (средство диспетчера сертификатов)
+
 Диспетчер сертификатов (Certmgr.exe) предназначен для управления сертификатами, списками доверия сертификатов (CTL) и списками отзыва сертификатов (CRL).  
   
  Диспетчер сертификатов устанавливается автоматически вместе с Visual Studio. Для запуска программы используйте [Командные строки](developer-command-prompt-for-vs.md).  
@@ -72,6 +73,7 @@ ms.locfileid: "87167270"
 |**/?**|Отображает синтаксис команд и параметров программы.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Основные функции программы Certmgr.exe.  
   
 - Отображение сведений о сертификатах, CTL и CRL на консоли.  
@@ -94,6 +96,7 @@ ms.locfileid: "87167270"
  Дополнительные сведения см. в разделе [Работа с сертификатами](../wcf/feature-details/working-with-certificates.md).  
   
 ## <a name="examples"></a>Примеры  
+
  Следующая команда выводит подробные сведения о содержимом системного хранилища `my`, используемого по умолчанию.  
   
 ```console  

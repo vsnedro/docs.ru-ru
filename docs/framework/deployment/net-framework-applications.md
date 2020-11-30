@@ -6,16 +6,19 @@ helpviewer_keywords:
 - deploying applications [.NET Framework]
 - .NET Framework, deploying apps
 ms.assetid: 139d4cb1-5972-40f4-bdd8-1ce68e4dfb80
-ms.openlocfilehash: 894248b0a32984c8563dc5357451ea25c4926bea
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3ede6f8aba00bd4ea3e7326eade7b51a9c9a867f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621552"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240386"
 ---
 # <a name="deploying-net-framework-applications"></a>Развертывание приложений .NET Framework
+
 Этот раздел документации по платформе .NET Framework содержит общие сведения о развертывании приложений платформы .NET Framework, включая рекомендации по загрузке сборок, разрешению ссылок на сборки и повышению производительности приложения при помощи генерации образа в машинном коде.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
  [Обнаружение сборок в среде выполнения](how-the-runtime-locates-assemblies.md)  
  Описывает, как среда CLR выполнения находит и привязывает сборки, составляющие ваше приложение.  
   

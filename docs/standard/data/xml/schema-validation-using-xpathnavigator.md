@@ -5,22 +5,25 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 81fa0e41-d9c9-46f0-b22b-50da839c77f5
-ms.openlocfilehash: 304177ed4cb600aa27142e3b1c3690a3d7053c5d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 1c91dfa63723cc087662630232376e74394c7b13
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822481"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734703"
 ---
 # <a name="schema-validation-using-xpathnavigator"></a>Проверка по схеме с помощью XPathNavigator
+
 С помощью класса <xref:System.Xml.XmlDocument> можно проверять XML-содержимое в объекте <xref:System.Xml.XmlDocument> двумя способами. Первый способ проверки XML- содержимого заключается в использовании проверяющего объекта <xref:System.Xml.XmlReader>, а второй - в вызове метода <xref:System.Xml.XmlDocument.Validate%2A> класса <xref:System.Xml.XmlDocument>. Можно также выполнить проверку XML-содержимого «только для чтения» с помощью класса <xref:System.Xml.XPath.XPathDocument>.  
   
 ## <a name="validating-xml-data"></a>Проверка XML-данных  
+
  Класс <xref:System.Xml.XmlDocument> по умолчанию не выполняет проверку XML-документа с помощью определения DTD или XSD. Он только проверяет правильность формата XML-документа.  
   
  Первый способ проверки XML-документа заключается в его проверке при загрузке в объект <xref:System.Xml.XmlDocument> с помощью проверяющего объекта <xref:System.Xml.XmlReader>. Второй способ состоит в проверке ранее нетипизированного XML-документа с помощью метода <xref:System.Xml.XmlDocument.Validate%2A> класса <xref:System.Xml.XmlDocument>. В обоих случаях изменения в проверяемом XML-документе можно проверить повторно с помощью метода <xref:System.Xml.XmlDocument.Validate%2A> класса <xref:System.Xml.XmlDocument>.  
   
 ### <a name="validating-a-document-as-it-is-loaded"></a>Проверка документа при загрузке  
+
  Проверочный объект <xref:System.Xml.XmlReader> создается путем передачи объекта <xref:System.Xml.XmlReaderSettings> методу <xref:System.Xml.XmlReader.Create%2A> класса <xref:System.Xml.XmlReader>, который принимает объект <xref:System.Xml.XmlReaderSettings> в качестве параметра. Свойство <xref:System.Xml.XmlReaderSettings> объекта <xref:System.Xml.XmlReaderSettings.ValidationType%2A>, переданного в качестве параметра, имеет значение `Schema`, а схема XML для XML-документа, содержащегося в объекте <xref:System.Xml.XmlDocument>, добавляется к его свойству <xref:System.Xml.XmlReaderSettings.Schemas%2A>. После этого проверочный объект <xref:System.Xml.XmlReader> используется для создания объекта <xref:System.Xml.XmlDocument>.  
   
  В следующем примере выполняется проверка файла `contosoBooks.xml`, загруженного в объект <xref:System.Xml.XmlDocument> путем создания объекта <xref:System.Xml.XmlDocument> с помощью проверяющего объекта <xref:System.Xml.XmlReader>. Поскольку XML-документ допустим в соответствии со своей схемой, ошибки или предупреждения проверки не формируются.  
@@ -129,6 +132,7 @@ class ValidatingReaderExample
 > Если XML-документ загружается в объект <xref:System.Xml.XmlDocument> со связанной схемой, определяющей значения по умолчанию, объект <xref:System.Xml.XmlDocument> рассматривает их как значения по умолчанию XML-документа. Это означает, что свойство <xref:System.Xml.XPath.XPathNavigator.IsEmptyElement%2A> всегда возвращает значение `false` для элемента, получившего значения по умолчанию из схемы, даже если в XML-документе это был пустой элемент.  
   
 ### <a name="validating-a-document-using-the-validate-method"></a>Проверка документа с помощью метода Validate  
+
  Метод <xref:System.Xml.XmlDocument.Validate%2A> класса <xref:System.Xml.XmlDocument> проверяет XML-документ, содержащийся в объекте <xref:System.Xml.XmlDocument>, по схеме, указанной в свойстве <xref:System.Xml.XmlDocument> объекта <xref:System.Xml.XmlDocument.Schemas%2A>, и выполняет приращение информационного набора. Результатом является замена в объекте <xref:System.Xml.XmlDocument> ранее нетипизированного XML-документа типизированным документом.  
   
  Объект <xref:System.Xml.XmlDocument> сообщает об ошибках и предупреждениях проверки схемы с помощью делегата <xref:System.Xml.Schema.ValidationEventHandler>, передаваемого в качестве параметра методу <xref:System.Xml.XmlDocument.Validate%2A>.  
@@ -216,6 +220,7 @@ class ValidateExample
  [!code-xml[XPathXMLExamples#3](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
   
 ### <a name="validating-modifications"></a>Проверка изменений  
+
  После внесения изменений в XML-документ можно проверить эти изменения по схеме XML-документа с помощью метода <xref:System.Xml.XmlDocument.Validate%2A> класса <xref:System.Xml.XmlDocument>.  
   
  В следующем примере выполняется проверка файла `contosoBooks.xml`, загруженного в объект <xref:System.Xml.XmlDocument> путем создания объекта <xref:System.Xml.XmlDocument> с помощью проверяющего объекта <xref:System.Xml.XmlReader>. XML-документ успешно проходит проверку во время загрузки без формирования ошибок и предупреждений проверки схемы. Затем пример выполняет два изменения в XML-документе, недопустимых по схеме `contosoBooks.xsd`. Первое изменение вставляет недопустимый дочерний элемент, что приводит к ошибке проверки схемы. Второе изменение присваивает значение типизированному узлу, недопустимое с точки зрения типа узла, что вызывает исключение.  
@@ -350,6 +355,7 @@ class ValidatingReaderExample
  Дополнительные сведения об изменении значений с помощью метода <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A> см. в руководстве по [изменению данных XML с помощью XPathNavigator](modify-xml-data-using-xpathnavigator.md).  
   
 ### <a name="read-only-validation"></a>Проверка «только для чтения»  
+
  Класс <xref:System.Xml.XPath.XPathDocument> является доступным только для чтения, хранящимся в памяти представлением XML-документа. Классы <xref:System.Xml.XPath.XPathDocument> и <xref:System.Xml.XmlDocument> создают объекты <xref:System.Xml.XPath.XPathNavigator> для перехода по XML-документам и их изменения. Поскольку класс <xref:System.Xml.XPath.XPathDocument> доступен только для чтения, объект <xref:System.Xml.XPath.XPathNavigator>, возвращенный из объекта <xref:System.Xml.XPath.XPathDocument>, не может изменять XML-документ, содержащийся в объекте <xref:System.Xml.XPath.XPathDocument>.  
   
  Для проверки можно создать объект <xref:System.Xml.XPath.XPathDocument> точно так же, как создается объект <xref:System.Xml.XmlDocument>, используя проверяющий объект <xref:System.Xml.XmlReader>, как описано выше в этом разделе. Объект <xref:System.Xml.XPath.XPathDocument> проверяет XML-документ во время загрузки, но, поскольку в объекте <xref:System.Xml.XPath.XPathDocument> нельзя изменять XML-данные, повторно проверить этот XML-документ невозможно.  
