@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Equals method
 - collections [.NET], comparisons
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-ms.openlocfilehash: 343f633b3807391b8deea28f56a5166ac3d8c8c5
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e4d40568710498df811954c86bb36382d93057a3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823866"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733546"
 ---
 # <a name="comparisons-and-sorts-within-collections"></a>Сравнение и сортировка в коллекциях
 
@@ -26,6 +26,7 @@ ms.locfileid: "94823866"
 В коллекциях обычно используется компаратор проверки на равенство и (или) компаратор упорядочения. Для сравнения используются две конструкции.
 
 <a name="BKMK_Checkingforequality"></a>
+
 ## <a name="check-for-equality"></a>Проверка на равенство
 
 Такие методы, как `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A>и `Remove` , используют компаратор проверки на равенство для элементов коллекции. Если коллекция является универсальной, элементы проверяются на равенство согласно следующим правилам:
@@ -37,6 +38,7 @@ ms.locfileid: "94823866"
 Кроме того, некоторые перегрузки конструктора для коллекций словаря принимают реализацию <xref:System.Collections.Generic.IEqualityComparer%601>, которая используется для сравнения ключей на равенство. Пример см. в конструкторе <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A> .
 
 <a name="BKMK_Determiningsortorder"></a>
+
 ## <a name="determine-sort-order"></a>Определение порядка сортировки
 
 Такие методы, как `BinarySearch` и `Sort` , используют компаратор упорядочения для элементов коллекции. Сравнение может проводиться между элементами коллекции или между элементом и заданным значением. В процессе сравнения объектов существует понятие `default comparer` и `explicit comparer`.
@@ -54,6 +56,7 @@ ms.locfileid: "94823866"
 Текущее значение языка и региональных параметров системы может влиять на сравнения и сортировки в рамках коллекции. По умолчанию сравнения и сортировки в классах **Collections** зависят от языка и региональных параметров. Чтобы игнорировать параметр языка и региональные параметры и получить согласованные результаты сравнения и сортировки, используйте <xref:System.Globalization.CultureInfo.InvariantCulture%2A> с перегрузками элементов, принимающими <xref:System.Globalization.CultureInfo>. Дополнительные сведения см. в разделах [Выполнение в коллекциях строковых операций, не зависящих от языка и региональных параметров](../globalization-localization/performing-culture-insensitive-string-operations-in-collections.md) и [Выполнение в массивах строковых операций, не зависящих от языка и региональных параметров](../globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md).
 
 <a name="BKMK_Equalityandsortexample"></a>
+
 ## <a name="equality-and-sort-example"></a>Пример сортировки и проверки на равенство
 
 В следующем примере демонстрируется реализация <xref:System.IEquatable%601> и <xref:System.IComparable%601> в простом бизнес-объекте. Кроме того, когда объект сохраняется в списке и сортируется, вы увидите, что вызов метода <xref:System.Collections.Generic.List%601.Sort> приведет к использованию компаратора по умолчанию для типа `Part` , а метод <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29> будет реализован с помощью анонимного метода.

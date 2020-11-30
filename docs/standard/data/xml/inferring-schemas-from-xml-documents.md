@@ -6,17 +6,19 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-ms.openlocfilehash: 1f7b8c8b3cf51aa707a17b3a9e58c6a8c0d3d833
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4540e1706cbd3dad9490f100d7e8fa58e80a9206
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830237"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733442"
 ---
 # <a name="inferring-schemas-from-xml-documents"></a>Выведение схем из XML-документов
+
 В этом разделе описывается, как использовать класс <xref:System.Xml.Schema.XmlSchemaInference> для выведения схемы XSD из структуры XML-документа.  
   
 ## <a name="the-schema-inference-process"></a>Процесс выведения схемы  
+
  Класс <xref:System.Xml.Schema.XmlSchemaInference> из пространства имен <xref:System.Xml.Schema?displayProperty=nameWithType> используется для создания одной или нескольких схем XSD из структуры XML-документа. Полученные схемы можно использовать для проверки исходного XML-документа.  
   
  Во время обработки XML-документа <xref:System.Xml.Schema.XmlSchemaInference> класс <xref:System.Xml.Schema.XmlSchemaInference> строит предположения о компонентах схемы, описывающих элементы и атрибуты в XML-документе. Класс <xref:System.Xml.Schema.XmlSchemaInference> также выводит компоненты схемы по принципу ограничения - выводится самый строгий тип для каждого элемента или атрибута. По мере сбора дополнительных сведений о XML-документе эти ограничения ослабляются и выводятся менее строгие типы. Наименее строгим выводимым типом является `xs:string`.  
@@ -34,6 +36,7 @@ ms.locfileid: "94830237"
  В примере выше, когда в процессе `attribute1` обнаруживается атрибут `6` со значением <xref:System.Xml.Schema.XmlSchemaInference>, для него предполагается тип `xs:unsignedByte`. Когда в процессе `parent` обнаруживается второй элемент <xref:System.Xml.Schema.XmlSchemaInference>, ограничение ослабляется путем замены типа на `xs:string`, поскольку теперь атрибут `attribute1` имеет значение `A`. Аналогично, атрибут `minOccurs` для всех элементов `child`, выведенных в схему, ослабляется до значения `minOccurs="0"`, поскольку второй родительский элемент не имеет дочерних.  
   
 ## <a name="inferring-schemas-from-xml-documents"></a>Выведение схем из XML-документов  
+
  Класс <xref:System.Xml.Schema.XmlSchemaInference> использует два перегруженных метода <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> для вывода схемы из XML-документа.  
   
  Первый метод <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> используется для создания схемы на основе XML-документа. Второй метод <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> используется для вывода схемы, описывающей несколько XML-документов. Например, можно по очереди передать методу <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A?displayProperty=nameWithType> несколько XML-документов, чтобы создать схему, описывающую весь набор XML-документов.  
@@ -65,6 +68,7 @@ ms.locfileid: "94830237"
  [!code-xml[XmlSchemaInferenceExamples#16](../../../../samples/snippets/xml/VS_Snippets_Data/XmlSchemaInferenceExamples/XML/InferSchema2.xml#16)]  
   
 ## <a name="inline-schemas"></a>Встроенные схемы  
+
  Если в процессе <xref:System.Xml.Schema.XmlSchemaInference> обнаруживается встроенная схема XSD, создается исключение <xref:System.Xml.Schema.XmlSchemaInferenceException>. Например, следующая встроенная схема вызывает исключение <xref:System.Xml.Schema.XmlSchemaInferenceException>.  
   
 ```xml  
@@ -77,6 +81,7 @@ ms.locfileid: "94830237"
 ```  
   
 ## <a name="schemas-that-cannot-be-refined"></a>Неуточняемые схемы  
+
  В схемах W3C XML существуют такие конструкции, которые процесс <xref:System.Xml.Schema.XmlSchemaInference> для схемы XSD не может обработать, если задан тип для уточнения, и которые приводят к созданию исключения. Например, сложный тип, на верхнем уровне которого находится компоновщик, отличный от sequence. В модели SOM это соответствует типу <xref:System.Xml.Schema.XmlSchemaComplexType>, свойством <xref:System.Xml.Schema.XmlSchemaComplexType.Particle%2A> которого не является экземпляр <xref:System.Xml.Schema.XmlSchemaSequence>.  
   
 ## <a name="see-also"></a>См. также

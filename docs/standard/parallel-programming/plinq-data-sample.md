@@ -7,14 +7,15 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, sample data
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-ms.openlocfilehash: 0ecdea3fa56ee2d8902b24006351c6d43e370c97
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: cdbecc0c7483ec189c7c19f19d75ababeb20989f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830575"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95730556"
 ---
 # <a name="plinq-data-sample"></a>Пример данных PLINQ
+
 Этот пример содержит тестовые данные в формате CSV и несколько методов, которые преобразуют эти данные в коллекции в памяти (клиенты, продукты, заказы и сведения о заказе). Чтобы поэкспериментировать с PLINQ, вы можете вставить в этот код примеры кода из других статей и вызвать его из метода `Main`. Также вы можете применить собственные запросы PLINQ к этим данным.  
   
  Данные представляют собой подмножество базы данных Northwind. Сюда включены данные из ограниченного набора полей по 50 клиентам. Также предоставляются подмножества строк из таблицы заказов (Orders) и соответствующих сведений о заказах (Order_Detail) для каждого клиента. Включены все продукты (Products).  

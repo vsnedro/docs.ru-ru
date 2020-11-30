@@ -5,12 +5,12 @@ helpviewer_keywords:
 - collections [.NET], generic
 - generic collections [.NET]
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
-ms.openlocfilehash: eeee207d7fe70cc736ca962ef99f3dac2295902b
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7b8b7b458a1667a1d3239ef378c729929678e8aa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822897"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733078"
 ---
 # <a name="when-to-use-generic-collections"></a>Когда следует использовать универсальные коллекции
 
@@ -62,6 +62,7 @@ ms.locfileid: "94822897"
 Функция LINQ to Objects позволяет использовать запросы LINQ для доступа к объектам в памяти при условии, что тип объекта реализует интерфейс <xref:System.Collections.IEnumerable?displayProperty=nameWithType> или <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> . Запросы LINQ предоставляют общий шаблон для доступа к данным, являются более четкими и удобочитаемыми, чем стандартные циклы `foreach`, а также предоставляют возможности фильтрации, сортировки и группировки. LINQ запросы также могут повысить производительность. Дополнительные сведения см. в разделах [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) и [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## <a name="additional-functionality"></a>Дополнительные функциональные возможности
+
 Некоторые универсальные типы имеют функциональные возможности, отсутствующие в неуниверсальных коллекциях. Например, класс <xref:System.Collections.Generic.List%601> , который соответствует неуниверсальный классу <xref:System.Collections.ArrayList> , имеет ряд методов, которые принимают универсальные делегаты, такие как делегат <xref:System.Predicate%601> , который позволяет указать методы для поиска в списке, делегат <xref:System.Action%601> , который представляет методы, выполняемые с каждым элементом списка, и делегат <xref:System.Converter%602> , который позволяет определять преобразования между типами.
 
 Класс <xref:System.Collections.Generic.List%601> позволяет задавать свои собственные реализации универсального интерфейса <xref:System.Collections.Generic.IComparer%601> для сортировки и поиска в списке. Классы <xref:System.Collections.Generic.SortedDictionary%602> и <xref:System.Collections.Generic.SortedList%602> также имеют эту возможность. Кроме того эти классы позволяют задавать функции сравнения при создании коллекции. Аналогично, классы <xref:System.Collections.Generic.Dictionary%602> и <xref:System.Collections.ObjectModel.KeyedCollection%602> позволяют задавать собственные сравнения на равенство.

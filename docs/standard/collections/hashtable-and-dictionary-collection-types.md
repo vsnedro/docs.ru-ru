@@ -9,14 +9,15 @@ ms.date: 03/30/2017
 - hash function
 - collections [.NET], Hashtable collection type
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
-ms.openlocfilehash: bb6d0802526db9b6b5673fe7d13b1f12af7acfcf
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 56e8ceff05f8f9777af370301a96cd17d0286f44
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831225"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733533"
 ---
 # <a name="hashtable-and-dictionary-collection-types"></a>Типы коллекций Hashtable и Dictionary
+
 Класс <xref:System.Collections.Hashtable?displayProperty=nameWithType> и универсальные классы <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> и <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> реализуют интерфейс <xref:System.Collections.IDictionary?displayProperty=nameWithType>. Универсальный класс <xref:System.Collections.Generic.Dictionary%602> также реализует универсальный интерфейс <xref:System.Collections.Generic.IDictionary%602>. Таким образом, каждый элемент в этих коллекциях является парой "ключ-значение".  
   
  Объект <xref:System.Collections.Hashtable> состоит из контейнеров, содержащих элементы коллекции. Контейнер — это виртуальная подгруппа элементов внутри объекта <xref:System.Collections.Hashtable>, которая обеспечивает более простой и быстрый поиск и извлечение, чем в большинстве коллекций. Каждый контейнер связан с хэш-кодом, который создается с помощью хэш-функции и основан на ключе элемента.  

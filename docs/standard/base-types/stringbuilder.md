@@ -16,17 +16,19 @@ helpviewer_keywords:
 - Insert method
 - strings [.NET], StringBuilder object
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-ms.openlocfilehash: c9337df864a01ec0fbdf7068051efea60b6c59aa
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 54878f737faaedf4c9a176719f4ff83813a80201
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831303"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734222"
 ---
 # <a name="using-the-stringbuilder-class-in-net"></a>Использование класса StringBuilder в .NET
+
 Объект <xref:System.String> является неизменяемым. Каждый раз при использовании одного из методов в классе <xref:System.String?displayProperty=nameWithType> вы создаете объект строки в памяти, для которого требуется выделение нового пространства. В случаях, когда необходимо выполнять повторяющиеся изменения строки, издержки, связанные с созданием объекта <xref:System.String>, могут оказаться значительными. Чтобы изменять строку без создания нового объекта, можно использовать класс <xref:System.Text.StringBuilder?displayProperty=nameWithType>. Например, использование класса <xref:System.Text.StringBuilder> может повысить производительность при соединении большого количества строк в цикле.  
   
 ## <a name="importing-the-systemtext-namespace"></a>Импорт пространства имен System.Text  
+
  Класс <xref:System.Text.StringBuilder> находится в пространстве имен <xref:System.Text>.  Чтобы не указывать в коде полное имя типа, вы можете импортировать пространство имен <xref:System.Text>:  
   
  [!code-cpp[Conceptual.StringBuilder#11](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#11)]
@@ -34,6 +36,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#11)]  
   
 ## <a name="instantiating-a-stringbuilder-object"></a>Создание экземпляров объекта StringBuilder  
+
  Вы можете создать экземпляр класса <xref:System.Text.StringBuilder> путем инициализации переменной с помощью одного из перегруженных методов конструктора, как показано в следующем примере.  
   
  [!code-cpp[Conceptual.StringBuilder#1](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#1)]
@@ -41,6 +44,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#1)]  
   
 ## <a name="setting-the-capacity-and-length"></a>Настройка емкости и длины  
+
  Хотя <xref:System.Text.StringBuilder> является динамическим объектом, который позволяет вам развернуть ряд символов в строке, которые она инкапсулирует, вы можете указать максимальное число содержащихся в ней символов. Это значение называется емкостью объекта, и его не следует путать с длиной строки, которую содержит текущий объект <xref:System.Text.StringBuilder>. Например, вы можете создать экземпляр класса <xref:System.Text.StringBuilder> со строкой Hello, длина которой составляет 5 символов, указав при этом максимальную емкость объекта 25 символов. При изменении значения <xref:System.Text.StringBuilder> размер не перераспределяется, если не достигнута максимальная емкость. Когда это происходит, новое пространство выделяется автоматически, а емкость удваивается. Вы можете указать емкость класса <xref:System.Text.StringBuilder> с помощью одного из перегруженных конструкторов. В следующем примере показано, что объект `myStringBuilder` можно развернуть максимум на 25 позиций.  
   
  [!code-cpp[Conceptual.StringBuilder#2](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#2)]
@@ -58,6 +62,7 @@ ms.locfileid: "94831303"
  Можно также просмотреть или задать свойство <xref:System.Text.StringBuilder.Length%2A>. Если вы задали для свойства **Length** значение больше значения свойства **Capacity**, значение свойства **Capacity** будет автоматически изменено на то же самое значение, что и у свойства **Length**. Если задать для свойства **Length** значение меньше длины строки в текущем объекте **StringBuilder**, строка будет укорочена.  
   
 ## <a name="modifying-the-stringbuilder-string"></a>Изменение строки StringBuilder  
+
  В следующей таблице перечислены методы, которые можно использовать для изменения содержимого объекта **StringBuilder**.  
   
 |Имя метода|Использовать|  
@@ -69,6 +74,7 @@ ms.locfileid: "94831303"
 |<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Замещает все вхождения указанного символа или строки в текущем **StringBuilder** на другой указанный символ или строку.|  
   
 ### <a name="append"></a>Добавить  
+
  Метод **Append** позволяет добавить текст или строковое представление объекта к концу строки, представленной текущим объектом **StringBuilder**. Следующий пример инициализирует **StringBuilder** с текстом Hello World, а затем добавляет текст в конец объекта. Пространство выделяется автоматически при необходимости.  
   
  [!code-cpp[Conceptual.StringBuilder#4](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#4)]
@@ -76,6 +82,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#4)]  
   
 ### <a name="appendformat"></a>AppendFormat  
+
  Метод <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> добавляет текс в конец объекта <xref:System.Text.StringBuilder>. Он поддерживает возможность составного форматирования (дополнительные сведения см. в статье [Составное форматирование](composite-formatting.md)) путем вызова реализации <xref:System.IFormattable> для одного или нескольких форматируемых объектов. Следовательно, он принимает строки стандартного формата для числовых значений, значений даты и времени, значений перечисления, строки пользовательского формата для чисел и дат и строки формата, определенные для пользовательских типов. (Дополнительные сведения о форматировании см. в разделе [Типы форматирования](formatting-types.md).) Вы можете использовать этот метод для настройки формата переменных и добавления этих значений к <xref:System.Text.StringBuilder>. В следующем примере метод <xref:System.Text.StringBuilder.AppendFormat%2A> помещает в конец объекта <xref:System.Text.StringBuilder> целочисленное значение, отформатированное в виде значения валюты.  
   
  [!code-cpp[Conceptual.StringBuilder#5](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#5)]
@@ -83,6 +90,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#5)]  
   
 ### <a name="insert"></a>Insert  
+
  Метод <xref:System.Text.StringBuilder.Insert%2A> добавляет строку или объект в указанную позицию в текущем объекте <xref:System.Text.StringBuilder>. В следующем примере этот метод вставляет слово в шестую позицию объекта <xref:System.Text.StringBuilder>.  
   
  [!code-cpp[Conceptual.StringBuilder#6](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#6)]
@@ -90,6 +98,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#6)]  
   
 ### <a name="remove"></a>Удалить  
+
  Вы можете использовать метод **Remove**, чтобы удалить указанное количество символов из текущего объекта <xref:System.Text.StringBuilder>, начиная с указанного индекса (с отсчетом с нуля). В следующем примере метод **Remove** используется для сокращения объекта <xref:System.Text.StringBuilder>.  
   
  [!code-cpp[Conceptual.StringBuilder#7](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#7)]
@@ -97,6 +106,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#7)]  
   
 ### <a name="replace"></a>Замените  
+
  Метод **Replace** можно использовать для замены символов в объекте <xref:System.Text.StringBuilder> другими указанными символами. В следующем примере метод **Replace** находит все экземпляры восклицательного знака (!) в объекте <xref:System.Text.StringBuilder> и заменяет их знаками вопроса (?).  
   
  [!code-cpp[Conceptual.StringBuilder#8](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#8)]
@@ -104,6 +114,7 @@ ms.locfileid: "94831303"
  [!code-vb[Conceptual.StringBuilder#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#8)]  
   
 ## <a name="converting-a-stringbuilder-object-to-a-string"></a>Преобразование объекта StringBuilder в строку  
+
  Необходимо преобразовать объект <xref:System.Text.StringBuilder> в <xref:System.String>, прежде чем передавать представленную объектом <xref:System.Text.StringBuilder> строку методу, который содержит параметр <xref:System.String>, или вывести ее в пользовательском интерфейсе. Это преобразование можно выполнить, вызвав метод <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType>. Следующий пример вызывает несколько методов <xref:System.Text.StringBuilder>, а затем вызывает метод <xref:System.Text.StringBuilder.ToString?displayProperty=nameWithType> для отображения строки.  
   
  [!code-csharp[Conceptual.StringBuilder#10](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/tostringexample1.cs#10)]

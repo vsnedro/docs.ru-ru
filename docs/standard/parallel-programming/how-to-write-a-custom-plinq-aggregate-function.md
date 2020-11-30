@@ -7,20 +7,22 @@ dev_langs:
 helpviewer_keywords:
 - PLINQ queries, how to create aggregate function
 ms.assetid: 5a70dd49-ab2a-4798-b551-196ee7042b1a
-ms.openlocfilehash: d04f90e9c763c8ddba5ba07b650ffb878869ff3a
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: dc03802c960c0926380d7b7fa44fdf436b8fea89
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825472"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734261"
 ---
 # <a name="how-to-write-a-custom-plinq-aggregate-function"></a>Практическое руководство. Написание пользовательской агрегатной функции PLINQ
+
 Этот пример демонстрирует, как использовать метод <xref:System.Linq.ParallelEnumerable.Aggregate%2A> для применения пользовательской функции агрегирования к исходной последовательности.  
   
 > [!WARNING]
 > Этот пример предназначен для демонстрации использования и может выполняться не быстрее аналогичного последовательного запроса LINQ to Objects. Дополнительные сведения см. в статье [Общее представление об ускорении выполнения в PLINQ](understanding-speedup-in-plinq.md).  
   
 ## <a name="example"></a>Пример  
+
  Следующий пример вычисляет стандартное отклонение для последовательности целых чисел.  
   
  [!code-csharp[PLINQ#31](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#31)]

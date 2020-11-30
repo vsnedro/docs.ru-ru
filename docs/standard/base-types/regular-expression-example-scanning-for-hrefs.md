@@ -13,19 +13,21 @@ helpviewer_keywords:
 - regular expressions [.NET], examples
 - pattern-matching with regular expressions, examples
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-ms.openlocfilehash: 6f11825a5d744fd03c08545213bd4d6eaa14dd6d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: aceccc019542bb1afe3082881626cfc32740a338
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830289"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733650"
 ---
 # <a name="regular-expression-example-scanning-for-hrefs"></a>Пример регулярных выражений: Поиск ссылок HREF
+
 В следующем примере показаны поиск и вывод всех значений href="...", а также их позиций в строке.  
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
 ## <a name="the-regex-object"></a>Объект Regex
+
  Поскольку метод `DumpHRefs` может быть вызван из пользовательского кода несколько раз, он использует метод `static` (`Shared` в Visual Basic) <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. Это позволяет обработчику регулярных выражений кэшировать регулярное выражение и избежать дополнительной нагрузки, связанной с созданием объекта <xref:System.Text.RegularExpressions.Regex> при каждом вызове метода. Затем объект <xref:System.Text.RegularExpressions.Match> выполняет итерацию по всем совпадениям в строке.  
   
  [!code-csharp[RegularExpressions.Examples.HREF#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.HREF/cs/example.cs#1)]
@@ -49,9 +51,11 @@ ms.locfileid: "94830289"
 |`(?<1>\S+)`|Присвоить один или несколько символов, отличных от пробела, захваченной группе с именем `1`.|  
   
 ## <a name="match-result-class"></a>Класс результата поиска  
+
  Результаты поиска сохраняются в классе <xref:System.Text.RegularExpressions.Match>, который предоставляет доступ ко всем подстрокам, извлеченным в ходе поиска. Также он запоминает искомую строку и использованное регулярное выражение, что позволяет вызвать метод <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> для продолжения поиска с того места, где закончился предыдущий.  
   
 ## <a name="explicitly-named-captures"></a>Явно именованные шаблоны  
+
  В обычных регулярных выражениях круглые скобки, обозначающие отдельные шаблоны, автоматически последовательно нумеруются. В связи с этим возникают две проблемы. Во-первых, если регулярное выражение изменяется из-за вставки или удаления пары круглых скобок, все части кода, которые ссылаются на нумерованные шаблоны, необходимо переписать, чтобы отразить новую нумерацию. Во-вторых, вследствие того, что различные пары круглых скобок часто используются для определения двух альтернативных выражений для поиска, трудно определить, какое из двух выражений в действительности вернуло результат.  
   
  Для решения этих проблем класс <xref:System.Text.RegularExpressions.Regex> поддерживает синтаксис `(?<name>…)`, с помощью которого найденное совпадение можно сохранить в указанной ячейке (которой можно присвоить строковое имя или целочисленное обозначение; числа при этом работают быстрее). Таким образом, если совпадение будет найдено повторно, оно попадет в ту же ячейку. В случае конфликта успешным является то совпадение, которое было помещено в ячейку последним. (Однако доступен и полный список совпадений для одной ячейки. Подробнее см. описание коллекции <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType>.)  

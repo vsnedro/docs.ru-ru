@@ -14,14 +14,15 @@ helpviewer_keywords:
 - .NET regular expressions, character escapes
 - constructs, character escapes
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
-ms.openlocfilehash: 5a9890f9ada6a4e749c8cf5ee96d9e8668525040
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 820e6cd7fa4a60fa6adfcaf0f0ff4d25fdda0f21
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823268"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734391"
 ---
 # <a name="character-escapes-in-regular-expressions"></a>Escape-знаки в регулярных выражениях
+
 Обратная косая черта (\\) в регулярном выражении может означать следующее.  
   
 - Следующий за ней символ является специальным, как показано в таблице в следующем разделе. Например, `\b` — это привязка, указывающая, что сопоставление регулярного выражения должно начинаться на границе слова, `\t` представляет знак табуляции, а `\x020` соответствует пробелу.  
@@ -32,6 +33,7 @@ ms.locfileid: "94823268"
 > Escape-символы распознаются в шаблонах регулярных выражений, но не в шаблонах замены.  
   
 ## <a name="character-escapes-in-net"></a>Escape-знаки в NET  
+
  В таблице ниже перечислены escape-последовательности, поддерживаемые регулярными выражениями в .NET.  
   
 |Символ или последовательность|Описание|  
@@ -52,6 +54,7 @@ ms.locfileid: "94823268"
 |`\`|Со следующим знаком, который не распознается как escape-символ, соответствует этому знаку. Например, `\*` обозначает звездочку (*) и совпадает с `\x2A`.|  
   
 ## <a name="an-example"></a>Пример  
+
  В приведенном ниже примере показано использование escape-последовательностей в регулярном выражении. В нем анализируется строка, содержащая названия крупнейших городов мира и их население в 2009 г. Название каждого города отделено от его населения символом табуляции (`\t`) или вертикальной чертой (| или `\u007c`). Отдельные города и их население разделяются символами возврата каретки и перевода строки.  
   
  [!code-csharp[RegularExpressions.Language.Escapes#1](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.escapes/cs/escape1.cs#1)]

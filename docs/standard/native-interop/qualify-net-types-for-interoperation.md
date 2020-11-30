@@ -10,14 +10,15 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing .NET components
 - COM interop, exposing COM components
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
-ms.openlocfilehash: 3fa9f0d5d8dd4d532fc510a1d946eddf32016748
-ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
+ms.openlocfilehash: 3f5fe0f168e0e520ce1985faf5a8228c1bfbdf20
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "93187766"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734313"
 ---
 # <a name="qualifying-net-types-for-com-interoperation"></a>Уточнение типов .NET для COM-взаимодействия
+
 Если вы планируете предоставлять типы в сборке COM-приложениям, во время разработки необходимо учитывать требования COM-взаимодействия. Управляемые типы (класс, интерфейс, структура и перечисление) легко интегрируются с COM-типами, если следовать приведенным ниже рекомендациям:  
   
 - Классы должны явным образом реализовывать интерфейсы.  

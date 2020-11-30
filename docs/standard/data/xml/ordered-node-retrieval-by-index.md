@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5412c90f-2703-4aa8-a9c4-1b8a35183c37
-ms.openlocfilehash: 73c31c5249262fe9b6624201bc5b9bd6b1374d1e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 37d350231e03e8a435977328a288abff2f336a4b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823749"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731167"
 ---
 # <a name="ordered-node-retrieval-by-index"></a>Упорядоченное извлечение узлов по индексу
+
 Модель DOM XML-документа консорциума W3C описывает класс NodeList, который позволяет обрабатывать упорядоченные списки узлов, в отличие от неупорядоченного набора, обрабатываемого с помощью класса **XmlNamedNodeMap**. Класс NodeList в платформе Microsoft .NET Framework называется **XmlNodeList**. Методы и свойства, которые возвращают класс **XmlNodeList**:  
   
 - XmlNode.ChildNodes  

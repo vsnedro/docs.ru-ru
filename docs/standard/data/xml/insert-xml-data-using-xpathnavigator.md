@@ -6,14 +6,15 @@ dev_langs:
 - vb
 - cpp
 ms.assetid: 2ed8c28b-b88d-4be7-9c87-92df01f0821f
-ms.openlocfilehash: 1a0fa96c0fc4db1ab005961728e81b6940cd00e6
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 50e5b363a35eb3f11d7eb26bb34c53910a59201b
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94822716"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733416"
 ---
 # <a name="insert-xml-data-using-xpathnavigator"></a>Вставка XML-данных с помощью XPathNavigator
+
 Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет набор методов для вставки в XML-документ одноуровневых узлов, дочерних узлов и узлов атрибутов. Для использования этих методов необходимо сделать редактируемым объект <xref:System.Xml.XPath.XPathNavigator>, то есть установить для свойства <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> значение `true`.  
   
  Объекты <xref:System.Xml.XPath.XPathNavigator> для правки XML-документа создаются с помощью метода <xref:System.Xml.XmlDocument.CreateNavigator%2A> класса <xref:System.Xml.XmlDocument>. Объекты <xref:System.Xml.XPath.XPathNavigator>, созданные классом <xref:System.Xml.XPath.XPathDocument>, доступны только для чтения, и любая попытка вызова методов редактирования объекта <xref:System.Xml.XPath.XPathNavigator>, созданного объектом <xref:System.Xml.XPath.XPathDocument>, приводит к возникновению исключения <xref:System.NotSupportedException>.  
@@ -21,9 +22,11 @@ ms.locfileid: "94822716"
  Дополнительные сведения о доступных только для чтения и изменяемых объектах <xref:System.Xml.XPath.XPathNavigator> см. в руководстве по [чтению данных XML с помощью XPathDocument и XmlDocument](reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
 ## <a name="inserting-nodes"></a>Вставка узлов  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет методы для вставки в XML-документ одноуровневых узлов, дочерних узлов и узлов атрибутов. Эти методы позволяют вставить узлы и атрибуты в разные места относительно текущего положения объекта <xref:System.Xml.XPath.XPathNavigator> и описываются в следующих разделах.  
   
 ### <a name="inserting-sibling-nodes"></a>Вставка одноуровневых узлов  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет следующие методы для вставки одноуровневых узлов.  
   
 - <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>  
@@ -53,6 +56,7 @@ ms.locfileid: "94822716"
  Дополнительные сведения о методах <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertElementAfter%2A> и <xref:System.Xml.XPath.XPathNavigator.InsertElementBefore%2A> см. в справочной документации по классу <xref:System.Xml.XPath.XPathNavigator>.  
   
 ### <a name="inserting-child-nodes"></a>Вставка дочерних узлов  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет следующие методы для вставки дочерних узлов.  
   
 - <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>  
@@ -82,6 +86,7 @@ ms.locfileid: "94822716"
  Дополнительные сведения о методах <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>, <xref:System.Xml.XPath.XPathNavigator.AppendChildElement%2A> и <xref:System.Xml.XPath.XPathNavigator.PrependChildElement%2A> см. в справочной документации по классу <xref:System.Xml.XPath.XPathNavigator>.  
   
 ### <a name="inserting-attribute-nodes"></a>Вставка узлов атрибутов  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет следующие методы для вставки узлов атрибутов.  
   
 - <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A>  
@@ -103,6 +108,7 @@ ms.locfileid: "94822716"
  Дополнительные сведения о методах <xref:System.Xml.XPath.XPathNavigator.CreateAttribute%2A> и <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> см. в справочной документации по классу <xref:System.Xml.XPath.XPathNavigator>.  
   
 ## <a name="copying-nodes"></a>Копирование узлов  
+
  В некоторых случаях необходимо заполнить XML-документ содержимым другого XML-документа. Оба класса, <xref:System.Xml.XPath.XPathNavigator> и <xref:System.Xml.XmlWriter>, могут копировать узлы в объект <xref:System.Xml.XmlDocument> из существующего объекта <xref:System.Xml.XmlReader> или объекта <xref:System.Xml.XPath.XPathNavigator>.  
   
  Методы <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A> и <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A> класса <xref:System.Xml.XPath.XPathNavigator> имеют перегруженные варианты, которые могут принимать в качестве параметра объект <xref:System.Xml.XPath.XPathNavigator> или объект <xref:System.Xml.XmlReader>.  
@@ -148,9 +154,11 @@ document.Save("newBooks.xml");
 ```  
   
 ## <a name="inserting-values"></a>Вставка значений  
+
  Класс <xref:System.Xml.XPath.XPathNavigator> предоставляет методы <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> и <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A>, чтобы вставить значения для узла в объект <xref:System.Xml.XmlDocument>.  
   
 ### <a name="inserting-untyped-values"></a>Вставка нетипизированных значений  
+
  Метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> просто вставляет нетипизированное значение `string`, переданное в качестве параметра, как значение узла, на котором в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>. Значение вставляется без какого-либо типа и без проверки допустимости нового значения в соответствии с типом узла, если доступны сведения о схеме.  
   
  В следующем примере метод <xref:System.Xml.XPath.XPathNavigator.SetValue%2A> используется для обновления всех элементов `price` в файле `contosoBooks.xml`.  
@@ -164,6 +172,7 @@ document.Save("newBooks.xml");
  [!code-xml[XPathXMLExamples#2](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
   
 ### <a name="inserting-typed-values"></a>Вставка типизированных значений  
+
  Когда тип узла является простым типом XML-схемы W3C, новое значение, вставленное методом <xref:System.Xml.XPath.XPathNavigator.SetTypedValue%2A>, проверяется по особенностям простого типа, прежде чем будет установлено значение. Если новое значение недопустимо в соответствии с типом узла (например, при установке значения `-1` для элемента с типом `xs:positiveInteger`), возникает исключение.  
   
  В следующем примере предпринимается попытка изменить значение элемента `price` первого элемента `book` в файле `contosoBooks.xml` на <xref:System.DateTime>. Так как в файлах `price` тип элемента `xs:decimal` по XML-схеме определен как `contosoBooks.xsd`, возникает исключение.  
@@ -213,6 +222,7 @@ navigator.SetTypedValue(DateTime.Now);
  [!code-xml[XPathXMLExamples#3](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
   
 ## <a name="the-innerxml-and-outerxml-properties"></a>Свойства InnerXml и OuterXml  
+
  Свойства <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> и <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> класса <xref:System.Xml.XPath.XPathNavigator> изменяют XML-разметку узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>.  
   
  Свойство <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, разобранный содержимым заданной XML-строки (`string`). Подобным образом свойство <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> изменяет XML-разметку дочерних узлов, на которых в данный момент позиционируется объект <xref:System.Xml.XPath.XPathNavigator>, так же как и самого текущего узла.  
@@ -220,6 +230,7 @@ navigator.SetTypedValue(DateTime.Now);
  Помимо методов, описанных в этом разделе, для вставки узлов и значений в XML-документ можно использовать свойства <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A> и <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A>. Дополнительные сведения об использовании свойств <xref:System.Xml.XPath.XPathNavigator.OuterXml%2A> и [ для добавления узлов и значений см. в <xref:System.Xml.XPath.XPathNavigator.InnerXml%2A>руководстве по изменению данных XML с помощью XPathNavigator](modify-xml-data-using-xpathnavigator.md).  
   
 ## <a name="namespace-and-xmllang-conflicts"></a>Конфликты пространства имен и деклараций xml:lang  
+
  При вставке XML-данных с помощью методов `xml:lang`, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A> и <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A> класса <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A>, принимающих в качестве параметров объекты <xref:System.Xml.XPath.XPathNavigator>, могут возникнуть определенные конфликты, связанные с областью пространства имен и деклараций <xref:System.Xml.XmlReader>.  
   
  Ниже перечислены возможные конфликты пространства имен.  
@@ -246,9 +257,11 @@ navigator.SetTypedValue(DateTime.Now);
 - Если атрибут `xml:lang` существует в контексте объекта <xref:System.Xml.XPath.XPathNavigator>, но не существует в контексте объекта <xref:System.Xml.XmlReader>, то к вновь добавленному узлу вообще не добавляется атрибут `xml:lang`.  
   
 ## <a name="inserting-nodes-with-xmlwriter"></a>Вставка узлов с помощью класса XmlWriter  
+
  Методы, используемые для вставки одноуровневых узлов, дочерних узлов и узлов атрибутов, которые описаны в разделе «Вставка узлов и атрибутов», перегружены. Методы <xref:System.Xml.XPath.XPathNavigator.InsertAfter%2A>, <xref:System.Xml.XPath.XPathNavigator.InsertBefore%2A>, <xref:System.Xml.XPath.XPathNavigator.AppendChild%2A>, <xref:System.Xml.XPath.XPathNavigator.PrependChild%2A> и <xref:System.Xml.XPath.XPathNavigator.CreateAttributes%2A> класса <xref:System.Xml.XPath.XPathNavigator> возвращают объект <xref:System.Xml.XmlWriter>, используемый для вставки узлов.  
   
 ### <a name="unsupported-xmlwriter-methods"></a>Неподдерживаемые методы класса XmlWriter  
+
  Не все методы, используемые для записи данных в XML-документ с помощью класса <xref:System.Xml.XmlWriter>, поддерживаются классом <xref:System.Xml.XPath.XPathNavigator>, что связано с различиями между моделями данных XPath и DOM.  
   
  В следующей таблице описаны методы класса <xref:System.Xml.XmlWriter>, которые не поддерживаются в классе <xref:System.Xml.XPath.XPathNavigator>.  
@@ -264,6 +277,7 @@ navigator.SetTypedValue(DateTime.Now);
  Дополнительные сведения о классе <xref:System.Xml.XmlWriter> см. в справочной документации по классу <xref:System.Xml.XmlWriter>.  
   
 ### <a name="multiple-xmlwriter-objects"></a>Несколько объектов XmlWriter  
+
  Можно иметь несколько объектов <xref:System.Xml.XPath.XPathNavigator>, указывающих на различные части XML-документа с одним или более открытыми объектами <xref:System.Xml.XmlWriter>. Использование нескольких объектов <xref:System.Xml.XmlWriter> разрешено и поддерживается в однопоточных сценариях.  
   
  При использовании нескольких объектов <xref:System.Xml.XmlWriter> важно учесть следующие замечания.  
@@ -325,6 +339,7 @@ document.Save("book.xml");
 ```  
   
 ## <a name="saving-an-xml-document"></a>Сохранение XML-документа  
+
  Сохранение изменений, внесенных в объект <xref:System.Xml.XmlDocument> в результате выполнения описанных в данном разделе методов, выполняется с помощью методов класса <xref:System.Xml.XmlDocument>. Дополнительные сведения о сохранении изменений, внесенных в объект <xref:System.Xml.XmlDocument>, см. в руководстве по [созданию и сохранению документов](saving-and-writing-a-document.md).  
   
 ## <a name="see-also"></a>См. также

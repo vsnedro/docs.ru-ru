@@ -12,14 +12,15 @@ helpviewer_keywords:
 - Collections classes
 - generic collections
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
-ms.openlocfilehash: 2ab86a6cbf0b92ecdaf0a97041d493f9494e3225
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 1b992837bcb32537f24643ef4781b6d170a058d1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831251"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733559"
 ---
 # <a name="commonly-used-collection-types"></a>Часто используемые типы коллекций
+
 Типы коллекций — это распространенные виды коллекций данных, такие как хэш-таблицы, очереди, стеки, контейнеры, словари и списки.  
   
  Коллекции основаны на интерфейсе <xref:System.Collections.ICollection>, интерфейсе <xref:System.Collections.IList>, интерфейсе <xref:System.Collections.IDictionary> или их универсальных аналогах. Интерфейс <xref:System.Collections.IList> и <xref:System.Collections.IDictionary> являются производными от интерфейса <xref:System.Collections.ICollection>. Таким образом, все коллекции прямо или косвенно основаны на интерфейсе <xref:System.Collections.ICollection>. В коллекциях, основанных на интерфейсе <xref:System.Collections.IList> (например, <xref:System.Array>, <xref:System.Collections.ArrayList> или <xref:System.Collections.Generic.List%601>) или напрямую на интерфейсе <xref:System.Collections.ICollection> (например, <xref:System.Collections.Queue>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Stack>, <xref:System.Collections.Concurrent.ConcurrentStack%601> или <xref:System.Collections.Generic.LinkedList%601>), каждый элемент содержит только значение. В коллекциях, основанных на интерфейсе <xref:System.Collections.IDictionary> (например, классы <xref:System.Collections.Hashtable> и <xref:System.Collections.SortedList> и универсальные классы <xref:System.Collections.Generic.Dictionary%602> или <xref:System.Collections.Generic.SortedList%602>), или классах <xref:System.Collections.Concurrent.ConcurrentDictionary%602> каждый элемент содержит ключ и значение.  Класс <xref:System.Collections.ObjectModel.KeyedCollection%602> является уникальным, поскольку он представляет собой список значений с встроенными в значения ключами. Поэтому он функционирует как список и как словарь.  
@@ -40,6 +41,7 @@ ms.locfileid: "94831251"
 |[Универсальные шаблоны](../generics/index.md)|Описание универсальных функций, в том числе универсальных коллекций, делегатов и интерфейсов, предоставляемых .NET. Ссылки на документацию по C#, Visual Basic и Visual C++, а также на вспомогательные технологии, такие как Reflection.|  
   
 ## <a name="reference"></a>Справочник  
+
  <xref:System.Collections?displayProperty=nameWithType>  
   
  <xref:System.Collections.Generic?displayProperty=nameWithType>  

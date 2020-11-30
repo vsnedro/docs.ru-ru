@@ -15,14 +15,15 @@ helpviewer_keywords:
 - TrimStart method
 - removing characters
 ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
-ms.openlocfilehash: 8bc2980aa887dc652485e135058b9f6f718e7b45
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 9b0fd87bfec747f8dd09d3972167374a1a2daffa
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831277"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734195"
 ---
 # <a name="trimming-and-removing-characters-from-strings-in-net"></a>Сокращение и удаление символов из строк в .NET
+
 При разборе предложения на отдельные слова может оказаться, что в начале или в конце некоторых слов стоят пробелы. В этом случае можно воспользоваться методами сокращения в классе **System.String**, чтобы удалить любое количество пробелов или других символов из указанной позиции в строке. В таблице ниже описаны доступны методы сокращения.  
   
 |Имя метода|Использовать|  

@@ -6,14 +6,15 @@ ms.assetid: bab62063-61e6-453f-905f-77673df9534e
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: b6176afed44e32911a37a0d753cea2bae7d8554e
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 4c441501ae0f939f69ac863a990d6e392bd35fc4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378544"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734274"
 ---
 # <a name="how-to-create-signed-friend-assemblies"></a>Практическое руководство. Создание подписанных дружественных сборок
+
 В этом примере демонстрируется использование дружественных сборок со сборками, имеющими строгие имена. Обе сборки должны иметь строгое имя. Хотя обе сборки в этом примере используют одинаковые ключи, вы можете использовать для двух сборок разные ключи.  
   
 ## <a name="create-a-signed-assembly-and-a-friend-assembly"></a>Создание подписанной и дружественной сборки  
@@ -125,6 +126,7 @@ ms.locfileid: "83378544"
    Программа выводит строку **Class1.Test**.  
   
 ## <a name="net-security"></a>Безопасность в .NET  
+
  Между атрибутом <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> и классом <xref:System.Security.Permissions.StrongNameIdentityPermission> существует определенное сходство. Основное отличие заключается в том, что для выполнения <xref:System.Security.Permissions.StrongNameIdentityPermission> в определенном разделе кода могут потребоваться разрешения системы безопасности, тогда как атрибут <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> определяет видимость членов и типов `internal` (C#) или `Friend` (Visual Basic).  
   
 ## <a name="see-also"></a>См. также

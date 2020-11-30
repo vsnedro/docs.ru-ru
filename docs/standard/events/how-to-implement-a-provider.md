@@ -9,14 +9,15 @@ helpviewer_keywords:
 - providers [.NET], in observer design pattern
 - observables [.NET], in observer design pattern
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-ms.openlocfilehash: c58d4b79c9f722889352587c2cb1313fc1595319
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b63666a581959f7a6c6a30ca8763f9c22067f32a
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94828352"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734339"
 ---
 # <a name="how-to-implement-a-provider"></a>Практическое руководство. Реализация поставщика
+
 Шаблон разработки наблюдателя подразумевает разделение ролей поставщика, который отслеживает данные и отправляет уведомления, и одного или нескольких наблюдателей, которые получают от поставщика уведомления (обратные вызовы). В этой статье описан процесс создания поставщика. Создание наблюдателя рассматривается в схожей статье [Практическое руководство. Реализация объекта Observer](how-to-implement-an-observer.md).  
   
 ### <a name="to-create-a-provider"></a>Создание поставщика  
@@ -52,6 +53,7 @@ ms.locfileid: "94828352"
      [!code-vb[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#6)]  
   
 ## <a name="example"></a>Пример  
+
  Ниже представлен полный пример исходного кода, определяющий реализацию <xref:System.IObservable%601> для приложения контроля температуры. Он содержит структуру `Temperature` для данных, отправляемых наблюдателям, и класс `TemperatureMonitor`, который является реализацией <xref:System.IObservable%601>.  
   
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]

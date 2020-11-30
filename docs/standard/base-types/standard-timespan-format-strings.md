@@ -17,12 +17,12 @@ helpviewer_keywords:
 - standard TimeSpan format strings
 - formatting [.NET], time intervals
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-ms.openlocfilehash: ab64b2ef0a87cbad3b3c036d74f4690ff7fdb1f4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 251f90e85d037d8cf4f3fd58bc27659c98d04b5e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831316"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734248"
 ---
 # <a name="standard-timespan-format-strings"></a>Строки стандартного формата TimeSpan
 
@@ -47,6 +47,7 @@ ms.locfileid: "94831316"
 |"G"|Общий длинный формат|Этот описатель всегда отображает дни и семь цифр после запятой. Он зависит от языка и региональных параметров и принимает форму `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> Дополнительная информация: [Описатель общего длинного формата (G)](#the-general-long-g-format-specifier).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
 
 ## <a name="the-constant-c-format-specifier"></a>Описатель постоянного ("c") формата.  
+
  Описатель формата "c" возвращает строковое представление значения <xref:System.TimeSpan> в следующем виде:  
   
  [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
@@ -73,6 +74,7 @@ ms.locfileid: "94831316"
  [!code-vb[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardc1.vb#1)]  
 
 ## <a name="the-general-short-g-format-specifier"></a>Описатель общего короткого ("g") формата  
+
  Описатель формата "g" <xref:System.TimeSpan> возвращает строковое представление значения <xref:System.TimeSpan> в компактной форме, включая только необходимые элементы. Представление имеет следующую форму:  
   
  [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
@@ -97,6 +99,7 @@ ms.locfileid: "94831316"
  [!code-vb[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardshort1.vb#4)]  
 
 ## <a name="the-general-long-g-format-specifier"></a>Описатель общего длинного ("G") формата  
+
  Описатель формата "G" <xref:System.TimeSpan> возвращает строковое представление значения <xref:System.TimeSpan> в длинной форме, которая всегда включает и дни, и доли секунд. Строка, которая является результатом описателя стандартного формата "G" имеет следующий вид:  
   
  [-]*d*:*hh*:*mm*:*ss*.*fffffff*  
