@@ -6,7 +6,7 @@ ms.openlocfilehash: a3aa7e3ee57759ef54ddaa898fe036c4e3caa33e
 ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
+ms.lasthandoff: 11/29/2020
 ms.locfileid: "96279705"
 ---
 # <a name="wcf-visual-studio-templates"></a>Шаблоны WCF в Visual Studio
@@ -93,7 +93,7 @@ ms.locfileid: "96279705"
 > [!NOTE]
 > Служба WCF с поддержкой Silverlight предоставляет доступ к конечной точке `basicHttpBinding` без применения параметров безопасности. Поэтому сведения о службе могут быть получены всеми клиентами, которые подключены к этой службе. Сообщения, которыми обмениваются служба и клиент, также не подписываются и не шифруются. Для защиты конечной точки необходимо использовать проверку подлинности ASP.NET, протокол HTTPS или другие механизмы.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Узел службы WCF (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)
 - [Тестовый клиент WCF (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)
