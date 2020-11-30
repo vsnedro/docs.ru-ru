@@ -9,17 +9,19 @@ helpviewer_keywords:
 - .NET regular expressions, miscellaneous constructs
 - regular expressions, miscellaneous constructs
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-ms.openlocfilehash: c9abccd6c93bad89cc737822fce3990c77b1b96e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ef8f126559b51aa9b918f04e27f5599fba519b43
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821948"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683801"
 ---
 # <a name="miscellaneous-constructs-in-regular-expressions"></a>Другие конструкции в регулярных выражениях
+
 Регулярные выражения в .NET поддерживают три различные языковые конструкции. Одна позволяет включать или отключать определенные параметры соответствия в середине шаблона регулярного выражения. Оставшиеся две позволяют включать комментарии в регулярное выражение.  
   
 ## <a name="inline-options"></a>Встроенные параметры  
+
  С помощью синтаксиса можно задать или отключить конкретные параметры сопоставления шаблонов для части регулярного выражения.  
   
 `(?imnsx-imnsx)`  
@@ -56,6 +58,7 @@ ms.locfileid: "94821948"
 |`\b`|Соответствует границе слова.|  
   
 ## <a name="inline-comment"></a>Встроенный комментарий  
+
  Конструкция `(?#` *comment*`)` позволяет включать в регулярное выражение встроенные комментарии. Обработчик регулярных выражений не использует какую-либо часть комментария при сопоставлении шаблонов, хотя комментарий включается в строку, которая возвращается методом <xref:System.Text.RegularExpressions.Regex.ToString%2A?displayProperty=nameWithType>. Примечание заканчивается первой закрывающей скобкой.  
   
  В следующем примере повторяется первый шаблон регулярного выражения из примера, указанного в предыдущем разделе. В регулярное выражение добавляются два встроенных комментария, чтобы указать, учитывается ли в сравнении регистр. Шаблон регулярного выражения `\b((?# case-sensitive comparison)D\w+)\s(?ixn)((?#case-insensitive comparison)d\w+)\b` определяется, как показано ниже.  
@@ -75,6 +78,7 @@ ms.locfileid: "94821948"
  [!code-vb[RegularExpressions.Language.Miscellaneous#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.miscellaneous/vb/miscellaneous2.vb#2)]  
   
 ## <a name="end-of-line-comment"></a>Комментарий в конце строки  
+
  Символ решетки (`#`) помечает комментарий режима x, который начинается с неэкранированного символа # в конце шаблона регулярного выражения и продолжается до конца строки. Для использования этой конструкции следует включить параметр `x` во встроенных параметрах или передать значение <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> в параметр `option` при создании объекта <xref:System.Text.RegularExpressions.Regex> или вызове статического метода <xref:System.Text.RegularExpressions.Regex>.  
   
  В следующем примере показана конструкция комментария в конце строки. Она определяет, является ли строка составного форматирования строкой, которая содержит по крайней мере один элемент формата. В следующей таблице описаны конструкции в шаблоне регулярного выражения.  

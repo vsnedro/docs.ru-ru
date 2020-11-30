@@ -2,14 +2,15 @@
 title: Разрешение внешних таблиц стилей XSLT и документов
 ms.date: 03/30/2017
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-ms.openlocfilehash: 370d1df296666e5b5c162db34bd7fb35ae8a2e0e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f1fbf950f7d67d46937652987516e5faf9857b85
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823593"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686570"
 ---
 # <a name="resolving-external-xslt-style-sheets-and-documents"></a>Разрешение внешних таблиц стилей XSLT и документов
+
 В некоторых случаях в процессе преобразования может потребоваться разрешение внешних ресурсов.  
   
 > [!NOTE]
@@ -24,6 +25,7 @@ ms.locfileid: "94823593"
 - При использовании метода <xref:System.Xml.Xsl.XslTransform.Transform%2A>, чтобы разрешить любые функции `document()`.  
   
 ## <a name="using-the-xmlresolver-class"></a>Использование класса XmlResolver  
+
  Если для проверки подлинности требуется доступ к сетевому ресурсу, используйте методы <xref:System.Xml.Xsl.XslTransform.Load%2A> с параметром <xref:System.Xml.XmlResolver>, чтобы передать объект <xref:System.Xml.XmlResolver> с набором необходимых свойств учетных данных.  
   
  Если нужно использовать специальный класс <xref:System.Xml.XmlResolver> или указать другие учетные данные, то в следующей таблице приведен список необходимых задач, в зависимости от того, когда необходимо разрешить внешний ресурс.  

@@ -10,10 +10,10 @@ helpviewer_keywords:
 - -codepage compiler option [C#]
 ms.assetid: 75942989-b69a-4308-90a0-840c73d2c478
 ms.openlocfilehash: eda4ce5604beb25ae2d72ac94fbbe7dde9695820
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "91196810"
 ---
 # <a name="-codepage-c-compiler-options"></a>-codepage (параметры компилятора C#)
@@ -31,7 +31,7 @@ ms.locfileid: "91196810"
  `id`  
  Идентификатор кодовой страницы, используемой для всех файлов исходного кода при компиляции.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
 
  Во-первых, компилятор будет пытаться интерпретировать все исходные файлы в кодировке UTF-8. Если кодировка файлов исходного кода отличается от UTF-8 и использует символы, отличные от 7-разрядных символов ASCII, используйте параметр **-codepage**, чтобы указать нужную кодовую страницу. Параметр **-codepage** применяется ко всем файлам исходного кода, включенным в компиляцию.  
 

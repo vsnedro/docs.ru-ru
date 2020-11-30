@@ -3,12 +3,12 @@ title: XML Schema Definition Tool (Xsd.exe)
 description: Инструмент создания XML-сериализатора создает сборку XML-сериализации для типов в указанной сборке, улучшающую производительность XmlSerializer при запуске.
 ms.date: 03/30/2017
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
-ms.openlocfilehash: c8ae3e05f2d775cbc4c44ce27e7474d1fcfc06a3
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: a66ebfee3a461bb800e61e4f1d789f497da2f9d1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281758"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676612"
 ---
 # <a name="xml-schema-definition-tool-xsdexe"></a>XML Schema Definition Tool (Xsd.exe)
 
@@ -50,6 +50,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |**/p\[arameters\]:** _file.xml_|Считывает параметры различных режимов операций из указанного XML-файла. Краткая форма: `/p:`. Дополнительные сведения см. в разделе [Примечания](#remarks).|
 
 ## <a name="xsd-file-options"></a>Параметры файла XSD
+
  Для файлов XSD следует указать только один из следующих параметров.
 
 |Параметр|Описание|
@@ -105,7 +106,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 </xsd>
 ```
 
-Если предыдущий XML содержится в файле с именем GenerateSchemas.xml, используйте параметр `/parameters`, введя следующий текст в командной строке и нажав клавишу **ВВОД** :
+Если предыдущий XML содержится в файле с именем GenerateSchemas.xml, используйте параметр `/parameters`, введя следующий текст в командной строке и нажав клавишу **ВВОД**:
 
 ```console
  xsd /p:GenerateSchemas.xml
@@ -205,6 +206,7 @@ xsd /p:GenerateSchemaFromType.xml ConsoleApplication1.exe
 |help|Отображает синтаксис команд и параметров программы. Задайте `true` или `false`.|
 
 ## <a name="examples"></a>Примеры
+
  Следующая команда создает схему XML из `myFile.xdr` и сохраняет ее в текущий каталог.
 
 ```console

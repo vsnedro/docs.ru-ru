@@ -3,12 +3,12 @@ title: Предупреждение SYSLIB0007
 description: Сведения об устаревших элементах, которые приводят к появлению предупреждения во время компиляции SYSLIB0007.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 4c0feac1d673e3462a4f2db470825b15cf1b1706
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: db7150fa3e3c566adf110034734e068fac079c6d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94439946"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685023"
 ---
 # <a name="syslib0007-default-implementations-of-cryptography-algorithms-not-supported"></a>SYSLIB0007. Реализации алгоритмов шифрования по умолчанию не поддерживаются
 
@@ -38,4 +38,4 @@ ms.locfileid: "94439946"
 
 ## <a name="see-also"></a>См. также
 
-- [Критические изменения в области шифрования](cryptography.md#instantiating-default-implementations-of-cryptographic-abstractions-is-not-supported)
+- [Создание экземпляров реализаций по умолчанию для криптографических абстракций не поддерживается](cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md)

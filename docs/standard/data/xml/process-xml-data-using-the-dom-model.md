@@ -2,14 +2,15 @@
 title: Обработка XML-данных с использованием модели DOM
 ms.date: 03/30/2017
 ms.assetid: 56b6e9c7-ed82-4a65-a647-7be32c83bcc8
-ms.openlocfilehash: 2608008f33eb8bc0dd0a9b5fe96e619df6138b51
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b0e24527e0edafee16511ea03a229e049b31126c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830913"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686973"
 ---
 # <a name="process-xml-data-using-the-dom-model"></a>Обработка XML-данных с использованием модели DOM
+
 Модель DOM рассматривает XML-данные как стандартный набор объектов и используется для обработки XML-данных в памяти. Пространство имен `System.Xml` обеспечивает программное представление XML-документов, фрагментов, узлов и наборов узлов. Оно основывается на рекомендациях базовой модели DOM уровня 1 и модели DOM уровня 2 консорциума W3C.  
   
  Класс <xref:System.Xml.XmlDocument> представляет XML-документ. Он включает элементы для получения и создания всех других XML-объектов. С помощью класса <xref:System.Xml.XmlDocument> и связанных с ним классов можно конструировать XML-документы, загружать и обращаться к данным, изменять данные и сохранять изменения.  
@@ -55,5 +56,6 @@ ms.locfileid: "94830913"
 - [Расширение модели DOM](extending-the-dom.md)  
   
 ## <a name="related-sections"></a>Связанные разделы  
+
  [Обработка XML-данных с использованием модели данных XPath](process-xml-data-using-the-xpath-data-model.md)  
  Описывает обработку XML с использованием класса <xref:System.Xml.XPath.XPathNavigator>.

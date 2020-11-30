@@ -5,17 +5,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-ms.openlocfilehash: 67c25015f1127a62c480a8fc09c5945682097124
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 5d50711eda266cecdb817c778f04aa845fa4c342
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823684"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686648"
 ---
 # <a name="resolving-external-resources-during-xslt-processing"></a>Разрешение внешних ресурсов в ходе обработки XSLT
+
 Во время XSLT-преобразования может понадобиться несколько раз разрешать внешние ресурсы.  
   
 ## <a name="using-the-xmlresolver-class"></a>Использование класса XmlResolver  
+
  Класс <xref:System.Xml.XmlResolver> используется для разрешения внешних ресурсов. В следующей таблице описывается, когда класс <xref:System.Xml.XmlResolver> участвует в XSLT-обработке.  
   
 |Задача XSLT|Зачем используется класс XmlResolver|  
@@ -36,6 +38,7 @@ ms.locfileid: "94823684"
 - Если необходимо убедиться в отсутствии доступа к внешним ресурсам, можно указать `null` в качестве значения аргумента <xref:System.Xml.XmlResolver>.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере компилируется таблица стилей, которая хранится на сетевом ресурсе. Объект <xref:System.Xml.XmlUrlResolver> задает учетные данные, необходимые для доступа к таблице стилей.  
   
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - SemaphoreSlim class, about SemaphoreSlim class
 - threading [.NET], Semaphore class
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-ms.openlocfilehash: bda88012fde60481d8870f701e98924acdeeb5a2
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 34ffe11f7211d2d8b282bfd27f8c48328a5cb6d1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817149"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95681903"
 ---
 # <a name="semaphore-and-semaphoreslim"></a>Классы Semaphore и SemaphoreSlim
 
@@ -24,16 +24,19 @@ ms.locfileid: "94817149"
  <xref:System.Threading.SemaphoreSlim> Класс представляет упрощенный, быстрый семафор, который можно использовать для ожидания внутри одного процесса, когда предполагается, что времена ожидания будут очень короткими. <xref:System.Threading.SemaphoreSlim>использует максимально примитивы синхронизации, предоставляемые общеязыковой среды выполнения (CLR). Тем не менее, он также предоставляет неактивно инициализированные дескрипторы ожидания на основе ядра при необходимости поддержки ожидания для нескольких семафоров. <xref:System.Threading.SemaphoreSlim>также поддерживает использование токенов отмены, но не поддерживает именованные семафоры или использование дескриптора ожидания для синхронизации.  
   
 ## <a name="managing-a-limited-resource"></a>Управление ограниченным ресурсом  
+
  Потоки входят в семафор посредством вызова метода <xref:System.Threading.WaitHandle.WaitOne%2A>, который наследуется от класса <xref:System.Threading.WaitHandle>, в случае объекта <xref:System.Threading.Semaphore?displayProperty=nameWithType> либо метода <xref:System.Threading.SemaphoreSlim.Wait%2A?displayProperty=nameWithType> или <xref:System.Threading.SemaphoreSlim.WaitAsync%2A?displayProperty=nameWithType> в случае объекта <xref:System.Threading.SemaphoreSlim>. По возвращении вызова счетчик на семафоре уменьшается на единицу. При запросе потоком записи счетчик равен нулю, поток блокируется. Потоки освобождают семафор посредством вызова метода <xref:System.Threading.Semaphore.Release%2A?displayProperty=nameWithType> или <xref:System.Threading.SemaphoreSlim.Release%2A?displayProperty=nameWithType>, заблокированные потоки разрешено вводить. Для входа блокированных потоков в семафор нет гарантированного порядка, например first-in, first-out (FIFO) или последним поступил — первым обслужен (LIFO).  
   
  Поток может войти в семафор несколько раз, многократно вызывая метод <xref:System.Threading.Semaphore?displayProperty=nameWithType> объекта <xref:System.Threading.WaitHandle.WaitOne%2A> или метод  <xref:System.Threading.SemaphoreSlim> объекта<xref:System.Threading.SemaphoreSlim.Wait%2A>. Чтобы освободить семафор, поток может либо вызвать метод перегрузки <xref:System.Threading.Semaphore.Release?displayProperty=nameWithType> или <xref:System.Threading.SemaphoreSlim.Release?displayProperty=nameWithType> одинаковое количество раз, либо вызвать метод перегрузки <xref:System.Threading.Semaphore.Release%28System.Int32%29?displayProperty=nameWithType> или <xref:System.Threading.SemaphoreSlim.Release%28System.Int32%29?displayProperty=nameWithType> и указать количество освобождаемых записей.  
   
 ### <a name="semaphores-and-thread-identity"></a>Семафоры и идентификация потоков  
+
  Типы два семафора не обеспечивают идентификацию потоков по вызовам методов <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.SemaphoreSlim.Wait%2A>, <xref:System.Threading.Semaphore.Release%2A> и <xref:System.Threading.SemaphoreSlim.Release%2A?displayProperty=nameWithType>. Например, обычным сценарием использования семафора является наличие потока производителя и потока получателя. При этом один поток всегда увеличивает счетчик семафора, а другой всегда уменьшает его.  
   
  Программист должен обеспечить, чтобы поток не освобождал семафор слишком много раз. Например предположим, что семафор имеет максимальное значение счетчика равное двум, а два потока A и B входят в семафор. Если ошибка программирования в потоке B заставляет его вызывать метод `Release` дважды, оба вызова оканчиваются успешно. Счетчик на семафоре переполнен, и если поток A вызывает `Release`, <xref:System.Threading.SemaphoreFullException> создается исключение.  
   
 ## <a name="named-semaphores"></a>Именованные семафоры  
+
  Операционная система Windows позволяет присваивать семафорам имена. Именованный семафор относится ко всей системе. То есть после создания именованный семафор становится видимым для всех потоков во всех процессах. Таким образом именованный семафор может использоваться для синхронизации действий процессов, а также потоков.  
   
  Можно создать <xref:System.Threading.Semaphore> объект, который представляет именованный системный семафор с помощью одного из конструкторов, указывающих имя.  

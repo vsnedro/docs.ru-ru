@@ -7,14 +7,15 @@ helpviewer_keywords:
 - XML serialization, configuration
 - <dateTimeSerialization> element
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
-ms.openlocfilehash: 90ae911c8942fef7a9e8238921990b0a52a47ca0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 1623517e66955c14b7e738c860ec16086fe30429
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281771"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678978"
 ---
 # <a name="datetimeserialization-element"></a>Элемент \<dateTimeSerialization>
+
 Определяет режим сериализации объектов <xref:System.DateTime>.  
   
  \<configuration>  
@@ -29,6 +30,7 @@ ms.locfileid: "93281771"
 ```  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
+
  В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
   
 ### <a name="attributes"></a>Атрибуты  
@@ -38,6 +40,7 @@ ms.locfileid: "93281771"
 |`mode`|Необязательный элемент. Задает режим сериализации. Задайте одно из значений <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>. Значение по умолчанию: **RoundTrip**.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
+
  Отсутствует.  
   
 ### <a name="parent-elements"></a>Родительские элементы  
@@ -48,9 +51,9 @@ ms.locfileid: "93281771"
   
 ## <a name="remarks"></a>Примечания  
 
-Если этому свойству присвоить значение **Local** , объекты <xref:System.DateTime> будут всегда иметь формат местного времени. Это значит, что в сериализованные данные всегда включается информация о местном часовом поясе.
+Если этому свойству присвоить значение **Local**, объекты <xref:System.DateTime> будут всегда иметь формат местного времени. Это значит, что в сериализованные данные всегда включается информация о местном часовом поясе.
   
-Если для этого свойства задано значение **Roundtrip** , объекты <xref:System.DateTime> анализируются с целью выяснить, указан ли в них местный часовой пояс, время UTC или часовой пояс не указан. После этого объекты <xref:System.DateTime> сериализуются способом, обеспечивающим сохранение этой информации. Это является поведением по умолчанию, рекомендуемым для всех новых приложений, не взаимодействующих со старыми версиями платформы .NET Framework.  
+Если для этого свойства задано значение **Roundtrip**, объекты <xref:System.DateTime> анализируются с целью выяснить, указан ли в них местный часовой пояс, время UTC или часовой пояс не указан. После этого объекты <xref:System.DateTime> сериализуются способом, обеспечивающим сохранение этой информации. Это является поведением по умолчанию, рекомендуемым для всех новых приложений, не взаимодействующих со старыми версиями платформы .NET Framework.  
   
 ## <a name="see-also"></a>См. также
 

@@ -1,7 +1,7 @@
 ---
 title: Операторы и выражения для доступа к элементам. Справочник по C#
 description: Дополнительные сведения об операторах C#, которые можно использовать для доступа к членам типа.
-ms.date: 04/17/2020
+ms.date: 11/13/2020
 author: pkulikov
 f1_keywords:
 - ._CSharpKeyword
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - hat operator [C#]
 - .. operator [C#]
 - range operator [C#]
-ms.openlocfilehash: 688a1fcff84a6e8f2fa31533a2bc459bf8c8717a
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 28d3d9c3261f1a852d16f2637309b21412611c10
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916795"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95691244"
 ---
 # <a name="member-access-operators-and-expressions-c-reference"></a>Операторы и выражения для доступа к элементам (справочник по C#)
 
@@ -137,9 +137,6 @@ A?.B?[C];
 Если в предыдущем примере оператор `??` не используется, `numbers?.Length < 2` вычисляется как `false`, если `numbers` имеет значение `null`.
 
 Null-условный оператор доступа к элементу `?.` также называется элвис-оператором.
-
-> [!NOTE]
-> В C# 8 оператор, [допускающий значение NULL](null-forgiving.md), завершает список предыдущих условных операций со значением NULL. Например, выражение `x?.y!.z` анализируется как `(x?.y)!.z`. Из-за этой интерпретации `z` вычисляется, даже если `x` — `null`, что может привести к <xref:System.NullReferenceException>.
 
 ### <a name="thread-safe-delegate-invocation"></a>Потокобезопасный вызов делегата
 

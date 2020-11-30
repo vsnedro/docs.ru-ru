@@ -3,12 +3,12 @@ title: Предупреждение SYSLIB0011
 description: Сведения об устаревших элементах, которые приводят к появлению предупреждения во время компиляции SYSLIB0011.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 1b4f4c24c64148319f659b78573a4d80fd5b98a7
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 99cdd9f5335f71eb9325039891db17972fb48532
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440019"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685010"
 ---
 # <a name="syslib0011-binaryformatter-serialization-is-obsolete"></a>SYSLIB0011. Сериализация BinaryFormatter устарела
 
@@ -32,4 +32,4 @@ ms.locfileid: "94440019"
 ## <a name="see-also"></a>См. также
 
 - [Устранение ошибок, связанных с устареванием и отключением BinaryFormatter](https://aka.ms/binaryformatter)
-- [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](corefx.md#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
+- [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](core-libraries/5.0/binaryformatter-serialization-obsolete.md)

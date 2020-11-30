@@ -13,10 +13,10 @@ helpviewer_keywords:
 - d compiler option [C#]
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
 ms.openlocfilehash: 74c9a23cd1b3a691063c2976a593c9b3a63ca618
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "91173273"
 ---
 # <a name="-define-c-compiler-options"></a>-define (параметры компилятора C#)
@@ -34,7 +34,7 @@ ms.locfileid: "91173273"
  `name`, `name2`  
  Имя одного или нескольких символов, которые требуется определить.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
 
  Параметр компилятора **-define** действует так же, как директива препроцессора [#define](../preprocessor-directives/preprocessor-define.md), однако, в отличие от нее, применяется ко всем файлам проекта. Символ остается определенным в файле исходного кода до тех пор, пока определение не будет отменено с помощью директивы [#undef](../preprocessor-directives/preprocessor-undef.md) в файле исходного кода. При использовании параметра -define директива `#undef` в одном файле не действует для других файлов исходного кода в проекте.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "91173273"
   
  **-d** является краткой формой **-define**.  
   
- Вы можете определить несколько символов с помощью **-define**, разделяя их имена точкой с запятой или запятой. Пример:  
+ Вы можете определить несколько символов с помощью **-define**, разделяя их имена точкой с запятой или запятой. Например:  
   
 ```console  
 -define:DEBUG;TUESDAY  

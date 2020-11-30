@@ -18,21 +18,23 @@ helpviewer_keywords:
 - literal XML serialization
 - serialization, attributes
 ms.assetid: a416192f-8102-458e-bc0a-0b8f3f784da9
-ms.openlocfilehash: 5c986162de19c2cb27edf19ff8e9e80798f36117
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 64b5911ca110ae4ef08f9003898bb817d8b8dd79
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282369"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676547"
 ---
 # <a name="xml-serialization-with-xml-web-services"></a>Сериализация XML с использованием XML-веб-служб
 
 Сериализация XML является базовым механизмом передачи, применяемом в архитектуре XML-веб-служб, и выполняется с использованием класса <xref:System.Xml.Serialization.XmlSerializer>. Для управления кодом XML, созданным XML-веб-службой, для классов, возвращаемых значений, параметров и полей файла, используемых для создания XML-веб-службы (файл ASMX), можно применять атрибуты, указанные в разделах [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md) и [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md). Дополнительные сведения о создании XML-веб-службы см. в разделе [XML-веб-службы с использованием ASP.NET](/previous-versions/dotnet/netframework-4.0/ba0z6a33(v=vs.100)).  
   
 ## <a name="literal-and-encoded-styles"></a>Литеральный и кодированный стили  
+
  Код XML, создаваемый XML-веб-службой, можно отформатировать двумя способами: литерально или кодированно. Дополнительные сведения см. в разделе [Настройка форматирования сообщения SOAP](/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)). Поэтому для управления XML-сериализацией предусмотрено два набора атрибутов. Атрибуты, указанные в разделе [Атрибуты управления сериализацией XML](attributes-that-control-xml-serialization.md), предназначены для управления литеральным стилем XML. Атрибуты, указанные в разделе [Атрибуты управления сериализацией с кодировкой SOAP](attributes-that-control-encoded-soap-serialization.md), управляют кодированным стилем. Путем выборочного применения таких атрибутов можно настроить приложение на возврат одного или обоих стилей. Кроме того, эти атрибуты применимы (в соответствующих случаях) к возвращаемым значениям и параметрам.  
   
 ### <a name="example-of-using-both-styles"></a>Пример использования обоих стилей.  
+
  При создании XML-веб-службы для методов можно использовать оба набора атрибутов. В следующем примере кода класс с именем `MyService` содержит два метода XML-веб-служб: `MyLiteralMethod` и `MyEncodedMethod`. Оба метода выполняют одну и ту же функцию: возвращение экземпляра класса `Order`. В классе `Order` оба атрибута <xref:System.Xml.Serialization.XmlTypeAttribute> и <xref:System.Xml.Serialization.SoapTypeAttribute> применяются к полю `OrderID`, и свойство `ElementName` обоих атрибутов имеет разные значения.  
   
  Чтобы запустить пример, вставьте код в файл с расширением ASMX и поместите файл в виртуальный каталог, управляемый службами IIS. В HTML-браузере, например Internet Explorer, введите имя компьютера, виртуального каталога и файла.  
@@ -124,6 +126,7 @@ public class MyService {
 ```  
   
 ### <a name="applying-attributes-to-return-values"></a>Применение атрибутов к возвращаемым значениям  
+
  Также можно применять атрибуты к возвращаемым значениям для управления пространством имен, именем элемента и т. д. В следующем примере кода атрибут `XmlElementAttribute` применяется к возвращаемому значению метода `MyLiteralMethod`. Это обеспечивает управление пространством имен и именем элемента.  
   
 ```vb  
@@ -163,6 +166,7 @@ public Order MyLiteralMethod(){
 ```  
   
 ### <a name="attributes-applied-to-parameters"></a>Атрибуты, применяемые к параметрам  
+
  Также можно применять атрибуты к параметрам для указания пространства имен, имени элемента и т. д. В следующем примере кода к методу `MyLiteralMethodResponse` добавляется параметр, и к параметру применяется атрибут `XmlAttributeAttribute`. Для параметра задается как имя элемента, так и пространство имен.  
   
 ```vb  
@@ -204,6 +208,7 @@ Namespace="http://www.microsoft.com")] string ID){
 ```  
   
 ### <a name="applying-attributes-to-classes"></a>Применение атрибутов к классам  
+
  Если требуется управление пространством имен элементов, сопоставленных классам, можно применить `XmlTypeAttribute`, `XmlRootAttribute` и `SoapTypeAttribute` по мере необходимости. В следующем примере кода к классу `Order` применяются все три атрибута.  
   
 ```vb  

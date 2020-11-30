@@ -9,10 +9,10 @@ helpviewer_keywords:
 - pathmap compiler option [C#]
 - /pathmap compiler option [C#]
 ms.openlocfilehash: 707a37c6946cfcaf429552f0aeece6b87f3ad71d
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "89125011"
 ---
 # <a name="-pathmap-c-compiler-options"></a>-pathmap (параметры компилятора C#)
@@ -33,7 +33,7 @@ ms.locfileid: "89125011"
 
 Чтобы указать несколько сопоставленных исходных путей, разделите их запятыми.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Компилятор записывает исходный путь в выходные данные по следующим причинам:
 

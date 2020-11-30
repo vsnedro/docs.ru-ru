@@ -11,17 +11,19 @@ helpviewer_keywords:
 - enumerations [.NET], parsing strings
 - base types, parsing strings
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
-ms.openlocfilehash: 6054456b50c48ecee61e95851aee095a4227b176
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 1339301786ed0f7ddd41565ca3fc64c2a859b3f4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94821934"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95683762"
 ---
 # <a name="parsing-numeric-strings-in-net"></a>Синтаксический анализ числовых строк в .NET
+
 Все числовые типы имеют два статических метода синтаксического анализа — `Parse` и `TryParse`, которые можно использовать для преобразования строкового представления числа в числовой тип. Эти методы позволяют анализировать строки, которые были созданы с помощью строк формата, описанных в разделах [Строки стандартных числовых форматов](standard-numeric-format-strings.md) и [Строки настраиваемых числовых форматов](custom-numeric-format-strings.md). По умолчанию методы `Parse` и `TryParse` могут успешно преобразовывать строки, содержащие целые десятичные числа, только в целочисленные значения. Они могут успешно преобразовывать строки, содержащие целые и дробные десятичные числа, разделители групп и десятичные разделители, в значения с плавающей запятой. Если операцию выполнить не удалось, метод `Parse` создает исключение, а метод `TryParse` возвращает значение `false`.  
   
 ## <a name="parsing-and-format-providers"></a>Синтаксический анализ и поставщики формата  
+
  Как правило, строковые представления числовых значений зависят от языка и региональных параметров. Для различных языков и региональных параметров используются различные элементы численных строк, такие как обозначения денежной единицы, разделители групп (тысяч) и десятичные разделители. Методы анализа неявно или явно используют поставщик формата, распознающий эти различия для разных языков и региональных параметров. Если поставщик формата не задан в вызове метода `Parse` или `TryParse`, используется поставщик формата, связанный с текущим языком и региональными параметрами (объект <xref:System.Globalization.NumberFormatInfo>, возвращаемый свойством <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType>).  
   
  Поставщик формата представлен реализацией интерфейса <xref:System.IFormatProvider>. Этот интерфейс содержит только один элемент — метод <xref:System.IFormatProvider.GetFormat%2A>, единственным параметром которого является объект <xref:System.Type>, представляющий тип для форматирования. Этот метод возвращает объект, предоставляющий сведения о форматировании. .NET поддерживает следующие две реализации <xref:System.IFormatProvider> для синтаксического анализа числовых строк:  
@@ -36,6 +38,7 @@ ms.locfileid: "94821934"
  [!code-vb[Parsing.Numbers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/formatproviders1.vb#1)]  
   
 ## <a name="parsing-and-numberstyles-values"></a>Синтаксический анализ и значения NumberStyles  
+
  Распознаваемые при синтаксическом анализе элементы стиля (например, пробелы, разделители групп и десятичные разделители) определяются значением перечисления <xref:System.Globalization.NumberStyles>. По умолчанию строки, представляющие целочисленные значения, анализируются с использованием значения <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType>, которое допускает только цифры, начальные и конечные пробелы и знак в начале. Строки, представляющие значения с плавающей запятой, анализируются с использованием сочетания значений <xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType> и <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>. Такой смешанный стиль поддерживает десятичные числа, начальные и конечные пробелы, знак в начале, десятичный разделитель, разделитель групп и показатель степени. Вызвав перегрузку метода `Parse` или `TryParse`, содержащего параметр типа <xref:System.Globalization.NumberStyles>, и установив один или несколько флагов <xref:System.Globalization.NumberStyles>, можно управлять выбором элементов стиля, допускаемых в строке для синтаксического анализа.  
   
  Например, строка, содержащая разделитель групп, не может быть преобразована в значение <xref:System.Int32> с помощью метода <xref:System.Int32.Parse%28System.String%29?displayProperty=nameWithType>. Однако преобразование пройдет успешно, если установить флаг <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>, как показано в следующем примере.  
@@ -74,6 +77,7 @@ ms.locfileid: "94821934"
 |<xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>|Включает стили <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>, <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType> и <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>.|  
   
 ## <a name="parsing-and-unicode-digits"></a>Синтаксический анализ и цифры в Юникоде  
+
  Стандарт Юникод определяет кодовые точки для цифр в различных системах письма. Например, кодовые точки в диапазоне от U+0030 до U+0039 представляют основные цифры от 0 до 9, кодовые точки в диапазоне от U+09E6 до U+09EF представляют бенгальские цифры от 0 до 9, а кодовые точки в диапазоне от U+FF10 до U+FF19 представляют полноширинные цифры от 0 до 9. Однако методами синтаксического анализа распознаются только основные цифры от 0 до 9 (кодовые точки от U+0030 до U+ 0039). Если методу анализа чисел передается строка, содержащая любые другие цифры, метод создает исключение <xref:System.FormatException>.  
   
  В примере ниже метод <xref:System.Int32.Parse%2A?displayProperty=nameWithType> используется для анализа строк, состоящих из цифр различных систем письма. Как показывает вывод, попытка анализа основных цифр завершается успешно, но попытка анализа полноширинных, арабо-индийских и бенгальских цифр заканчивается неудачей.  

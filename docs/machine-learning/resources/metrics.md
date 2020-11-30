@@ -3,10 +3,10 @@ title: Метрики ML.NET
 description: Общие сведения о метриках, которые используются для оценки производительности модели ML.NET
 ms.date: 12/17/2019
 ms.openlocfilehash: 046e0a3feea2da702dfef5ca9ce4f498fce5fb26
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "91804826"
 ---
 # <a name="evaluate-your-mlnet-model-with-metrics"></a>Оценка модели ML.NET с помощью метрик

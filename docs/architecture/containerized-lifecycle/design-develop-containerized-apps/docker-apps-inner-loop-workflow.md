@@ -2,12 +2,12 @@
 title: Рабочий процесс внутреннего цикла разработки для приложений Docker
 description: Узнайте о рабочем процессе внутреннего цикла разработки для приложений Docker.
 ms.date: 08/06/2020
-ms.openlocfilehash: 071e16afede91f4cfd6cbe8662fa68814ffdcdd7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: d66274a64591f79f242c1e8a63951b51d94a9ecd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539766"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676534"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Рабочий процесс внутреннего цикла разработки для приложений Docker
 
@@ -107,7 +107,7 @@ ms.locfileid: "90539766"
 
 **Рис. 4-24**. Добавление файлов Docker с помощью команды **Добавить файлы Docker в рабочую область**
 
-При добавлении файла Dockerfile указывается базовый образ Docker, который необходимо использовать (например, `FROM mcr.microsoft.com/dotnet/core/aspnet`). Обычно пользовательский образ создается на основе базового образа, полученного из официального репозитория в [реестре Docker Hub](https://hub.docker.com/) (например, [образа для .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/) или [Node.js](https://hub.docker.com/_/node/)).
+При добавлении файла Dockerfile указывается базовый образ Docker, который необходимо использовать (например, `FROM mcr.microsoft.com/dotnet/aspnet`). Обычно пользовательский образ создается на основе базового образа, полученного из официального репозитория в [реестре Docker Hub](https://hub.docker.com/) (например, [образа для .NET Core](https://hub.docker.com/_/microsoft-dotnet/) или [Node.js](https://hub.docker.com/_/node/)).
 
 > [!TIP]
 > Эту процедуру необходимо повторить для каждого проекта в приложении. Однако после первого запуска расширение будет запрашивать перезапись созданного файла docker-compose. На запрос на перезапись нужно отвечать отказом, чтобы расширение создавало отдельные файлы docker-compose, которые затем можно объединить вручную перед выполнением docker-compose.
@@ -119,12 +119,12 @@ ms.locfileid: "90539766"
 Вот пример файла Dockerfile для контейнера .NET Core:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 COPY ["src/WebApi/WebApi.csproj", "src/WebApi/"]
 RUN dotnet restore "src/WebApi/WebApi.csproj"
@@ -141,7 +141,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApi.dll"]
 ```
 
-В этом случае образ основан на версии 3.1 официального образа Docker ASP.NET Core (мультиархитектурного, для Linux и Windows), что следует из строки `FROM mcr.microsoft.com/dotnet/core/aspnet:3.1`. (Дополнительные сведения по этой теме см. на страницах [Образ Docker ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) и [Образ Docker .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/).)
+В этом случае образ основан на версии 3.1 официального образа Docker ASP.NET Core (мультиархитектурного, для Linux и Windows), что следует из строки `FROM mcr.microsoft.com/dotnet/aspnet:3.1`. (Дополнительные сведения по этой теме см. на страницах [Образ Docker ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-aspnet/) и [Образ Docker .NET Core](https://hub.docker.com/_/microsoft-dotnet/).)
 
 Кроме того, в файле Dockerfile можно указать, что средство Docker должно прослушивать порт TCP, который будет использоваться во время выполнения (например, порт 80 или 443).
 
@@ -154,9 +154,9 @@ ENTRYPOINT ["dotnet", "WebApi.dll"]
 
 **Использование репозиториев мультиархитектурных образов**
 
-В репозитории могут содержаться варианты одного и того же образа для разных платформ, например образ Linux и образ Windows. Это позволяет поставщикам, таким как Майкрософт, которые создают базовые образы, создать один репозиторий для охвата нескольких платформ (т. е. Windows и Linux). Например, репозиторий [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) в реестре Docker Hub обеспечивает поддержку Linux и Windows Nano Server при использовании одного и того же имени образа.
+В репозитории могут содержаться варианты одного и того же образа для разных платформ, например образ Linux и образ Windows. Это позволяет поставщикам, таким как Майкрософт, которые создают базовые образы, создать один репозиторий для охвата нескольких платформ (т. е. Windows и Linux). Например, репозиторий [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) в реестре Docker Hub обеспечивает поддержку Linux и Windows Nano Server при использовании одного и того же имени образа.
 
-При запросе образа [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) с узла Windows извлекается вариант для Windows, а при запросе образа с тем же именем с узла Linux — вариант для Linux.
+При запросе образа [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) с узла Windows извлекается вариант для Windows, а при запросе образа с тем же именем с узла Linux — вариант для Linux.
 
 **_Создание базового образа с нуля_**
 

@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 4772f20e-1e7f-496e-93c2-1484473be555
-ms.openlocfilehash: d4936ec32d54a465803d493048cba2b70ed50db6
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c1f519dd539a266d61945ad221bccceaa1361779
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818509"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95675624"
 ---
 # <a name="user-defined-functions-and-variables"></a>Определяемые пользователем функции и переменные
+
 Класс <xref:System.Xml.XPath.XPathNavigator> содержит ряд методов, используемых для взаимодействия с данными <xref:System.Xml.XPath.XPathDocument>. Можно дополнить стандартные функции XPath, реализовав функции и переменные расширения для использования в выражениях запросов XPath. Метод <xref:System.Xml.XPath.XPathExpression.SetContext%2A> может принимать определяемый пользователем контекст, производный от <xref:System.Xml.Xsl.XsltContext>. Определяемые пользователем функции разрешаются в пользовательском контексте.  
   
  Функции и переменные расширения полезны для предотвращения атак путем внедрения XML-кода. В таких сценариях вводимые пользователем данные помещаются в пользовательские переменные и обрабатываются функциями расширения, в отличие от исходных данных, объединяемых с инструкциями по обработке. Функции и переменные расширения хранят вводимые пользователем данные, чтобы они работали с XML-данными только так, как планировалось разработчиком.  

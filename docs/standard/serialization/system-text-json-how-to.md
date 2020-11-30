@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: aba45a99562b67df17e1ff33ecc3c8bbad63ec30
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 1e8c46e11d3a82ca0bce29f9cb7bbc749c219198
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440820"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676729"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -116,6 +116,7 @@ using System.Text.Json.Serialization;
 Сериализация в UTF-8 происходит примерно на 5-10 % быстрее, чем при использовании строковых методов. Разница заключается в том, что байты (например, UTF-8) не нужно преобразовывать в строки (UTF-16).
 
 ## <a name="serialization-behavior"></a>Поведение сериализации
+
 ::: zone pivot="dotnet-5-0"
 
 * По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](#ignore-properties).

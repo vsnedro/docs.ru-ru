@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
-ms.openlocfilehash: 6f0be433abcebed7f9da70225563a04170426314
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: fe227a2d3efc5c36b818b7f4431896e6f62b1f26
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818210"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685049"
 ---
 # <a name="xsltargumentlist-for-style-sheet-parameters-and-extension-objects"></a>XsltArgumentList для параметров таблицы стилей и объектов расширения
+
 Класс <xref:System.Xml.Xsl.XsltArgumentList> содержит параметры языка XSLT и объекты расширения XSLT. При передаче в метод <xref:System.Xml.Xsl.XslTransform.Transform%2A> эти параметры и объекты расширения могут вызываться из таблиц стилей.  
   
 > [!NOTE]
@@ -31,6 +32,7 @@ ms.locfileid: "94818210"
 - Поддерживает передачу фрагментов результирующего дерева в таблицу стилей с помощью <xref:System.Xml.XPath.XPathNodeIterator>.  
   
 ## <a name="xslt-style-sheet-parameters"></a>Параметры таблицы стилей XSLT  
+
  Параметры XSLT добавляются в <xref:System.Xml.Xsl.XsltArgumentList> с помощью метода <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A>. В это время с объектом параметра связываются полное имя и URI-код пространства имен.  
   
  Объект параметра должен соответствовать типу W3C. В следующей таблице показано соответствие типов W3C и классов (типов) .NET Framework. Также показано, является ли тип W3C типом XPath или типом XSLT.  
@@ -54,6 +56,7 @@ ms.locfileid: "94818210"
 3. Передать <xref:System.Xml.Xsl.XsltArgumentList> методу <xref:System.Xml.Xsl.XslTransform.Transform%2A>.  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере используется метод <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> для создания параметра, хранящего вычисленную дату скидки. Дата скидки вычисляется как 20 дней после даты заказа.  
   
 ```vb  
@@ -137,6 +140,7 @@ public class Sample
 ```  
   
 ### <a name="input"></a>Входные данные  
+
  order.xml  
   
 ```xml  
@@ -178,6 +182,7 @@ public class Sample
 ```  
   
 ## <a name="xslt-extension-objects"></a>Объекты расширения XSLT  
+
  Объекты расширения XSLT добавляются в объект <xref:System.Xml.Xsl.XsltArgumentList> с помощью метода <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>. В это время с объектом расширения связываются полное имя и URI-код пространства имен.  
   
  Во время добавления объекта вызывающий объект метода <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> должен иметь полное доверие в политике безопасности. Если вызывающий объект обладает только частичным доверием, добавление объекта завершится ошибкой.  
@@ -195,6 +200,7 @@ public class Sample
 3. Передать <xref:System.Xml.Xsl.XsltArgumentList> методу <xref:System.Xml.Xsl.XslTransform.Transform%2A>.  
   
 ### <a name="example"></a>Пример  
+
  В следующем примере вычисляется длина окружности по заданному радиусу.  
   
 ```vb  
@@ -305,6 +311,7 @@ public class Sample
 ```  
   
 ### <a name="input"></a>Входные данные  
+
  number.xml  
   
 ```xml  
@@ -341,6 +348,7 @@ public class Sample
 ```  
   
 ### <a name="output"></a>Вывод  
+
  `<circles xmlns:myObj="urn:myObj">`  
   
  `<circle>`  

@@ -3,10 +3,10 @@ title: 'Зарезервированные атрибуты C#: Conditional, Obs
 ms.date: 04/09/2020
 description: Компилятор интерпретирует эти атрибуты, чтобы они могли влиять на создаваемый им код.
 ms.openlocfilehash: c6d697dd08233ffc88900949998047137ee170a9
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
+ms.lasthandoff: 11/29/2020
 ms.locfileid: "82021765"
 ---
 # <a name="reserved-attributes-conditionalattribute-obsoleteattribute-attributeusageattribute"></a>Зарезервированные атрибуты: ConditionalAttribute, ObsoleteAttribute, AttributeUsageAttribute

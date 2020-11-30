@@ -8,19 +8,21 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - TPL dataflow library, receiving data
 ms.assetid: fc2585dc-965e-4632-ace7-73dd02684ed3
-ms.openlocfilehash: 3a709e40908afcbd1a228aab00fe36be43097826
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: c0fe9d1aa0e907ab28cf53cc97488a15e6434cda
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825732"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674844"
 ---
 # <a name="how-to-perform-action-when-a-dataflow-block-receives-data"></a>Практическое руководство. Выполнение действий при получении данных блоком потоков данных
+
 Типы *блоков выполнения потоков данных* вызывают предоставленный пользователем делегат при получении данных. Классы <xref:System.Threading.Tasks.Dataflow.ActionBlock%601?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602?displayProperty=nameWithType> и <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602?displayProperty=nameWithType> являются типами блоков выполнения потока данных. При предоставлении рабочей функции блоку выполнения потока данных можно использовать ключевое слово `delegate` (`Sub` в Visual Basic), <xref:System.Action%601>, <xref:System.Func%602> или лямбда-выражение. В этом документе описано, как использовать <xref:System.Func%602> и лямбда-выражения для выполнения действий в блоках выполнения.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 
 ## <a name="example"></a>Пример  
+
  В следующем примере используется поток данных для считывания файла с диска и вычисления количества равных нулю байтов в этом файле. Здесь используется <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> для считывания файла и вычисления числа нулевых байтов и <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> для вывода числа нулевых байтов на консоль. Объект <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> определяет объект <xref:System.Func%602> для выполнения работы, когда блоки получают данные. Объект <xref:System.Threading.Tasks.Dataflow.ActionBlock%601> использует лямбда-выражение для печати на консоль числа прочитанных нулевых байтов.  
   
  [!code-csharp[TPLDataflow_ExecutionBlocks#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs/dataflowexecutionblocks.cs#1)]
@@ -31,6 +33,7 @@ ms.locfileid: "94825732"
  В разделе "Сводка о типах делегатов" документации по [потокам данных](dataflow-task-parallel-library.md) перечислены типы делегатов, которые можно предоставлять объектам <xref:System.Threading.Tasks.Dataflow.ActionBlock%601>, <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> и <xref:System.Threading.Tasks.Dataflow.TransformManyBlock%602>. В таблице также указано, работает ли делегат данного типа синхронно или асинхронно.  
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
+
  Этот пример предоставляет делегат типа <xref:System.Func%602> объекту <xref:System.Threading.Tasks.Dataflow.TransformBlock%602> для синхронного выполнения задачи блока потока данных. Чтобы позволить блоку потока данных работать асинхронно, предоставьте блоку потока данных делегат типа <xref:System.Func%601>. Если блок потока данных работает асинхронно, задача блока потока данных завершается, только когда завершается возвращенный объект <xref:System.Threading.Tasks.Task%601>. В следующем примере изменяется метод `CountBytes` и используются операторы [async](../../csharp/language-reference/keywords/async.md) и [await](../../csharp/language-reference/operators/await.md) ([Async](../../visual-basic/language-reference/modifiers/async.md) и [Await](../../visual-basic/language-reference/operators/await-operator.md) в Visual Basic) для асинхронного подсчета общего количества нулевых байтов в предоставленном файле. Метод <xref:System.IO.FileStream.ReadAsync%2A> выполняет операции чтения файла асинхронно.  
   
  [!code-csharp[TPLDataflow_ExecutionBlocks#2](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_executionblocks/cs/dataflowexecutionblocks.cs#2)]

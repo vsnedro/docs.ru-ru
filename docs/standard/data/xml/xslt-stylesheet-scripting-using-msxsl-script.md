@@ -5,14 +5,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
-ms.openlocfilehash: 61538656580878da775d4a42dac40165c7941eee
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 206a659656f1019af1540b9b2476ae7fe9ba93eb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94818275"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95685114"
 ---
 # <a name="xslt-stylesheet-scripting-using-msxslscript"></a>Использование скриптов таблиц стилей XSLT\<msxsl:script>
+
 Класс <xref:System.Xml.Xsl.XslTransform> поддерживает внедрение скриптов с помощью элемента `script`.  
   
 > [!NOTE]
@@ -98,6 +99,7 @@ ms.locfileid: "94818275"
  Этот код вызывает исключение, так как амперсанды не экранированы. Документ загружается как XML, и к тексту между тегами элемента `msxsl:script` не применяется никакая специальная обработка.  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере используется внедренный скрипт для вычисления длины окружности по заданному радиусу.  
   
 ```vb  
@@ -165,6 +167,7 @@ public class Sample
 ```  
   
 ## <a name="input"></a>Входные данные  
+
  number.xml  
   
 ```xml  

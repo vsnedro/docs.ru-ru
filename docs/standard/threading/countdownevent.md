@@ -7,12 +7,12 @@ dev_langs:
 helpviewer_keywords:
 - synchronization primitives, CountdownEvent
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
-ms.openlocfilehash: 82fe4844728702e91190b55a833848c1c9ece40c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 15ff3ee8f4ea18b243f5c3070f1c59df4646a1a4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94826577"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676482"
 ---
 # <a name="countdownevent"></a>CountdownEvent
 
@@ -32,12 +32,14 @@ ms.locfileid: "94826577"
 - Экземпляры поддерживают <xref:System.Threading.WaitHandle> для интеграции с другими API синхронизации .NET, например <xref:System.Threading.WaitHandle.WaitAll%2A>.  
   
 ## <a name="basic-usage"></a>Основное использование  
+
  В следующем примере демонстрируется применение рабочих элементов <xref:System.Threading.CountdownEvent> и <xref:System.Threading.ThreadPool>.  
   
  [!code-csharp[CDS_CountdownEvent#01](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs/countdownevent.cs#01)]
  [!code-vb[CDS_CountdownEvent#01](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_countdownevent/vb/module1.vb#01)]  
   
 ## <a name="countdownevent-with-cancellation"></a>CountdownEvent с возможностью отмены  
+
  В примере ниже показано, как отменить операцию ожидания для <xref:System.Threading.CountdownEvent> с помощью маркера отмены. Базовый шаблон соответствует универсальной модели отмены, которая появилась в .NET Framework 4. Дополнительные сведения см. в статье [Отмена в управляемых потоках](cancellation-in-managed-threads.md).  
   
  [!code-csharp[CDS_CountdownEvent#02](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs/countdownevent.cs#02)]

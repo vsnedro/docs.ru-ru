@@ -18,12 +18,12 @@ helpviewer_keywords:
 - OnDeserializedAttribute class, custom serialization
 - OnSerializingAttribute class, custom serialization
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
-ms.openlocfilehash: 8e8d8d38ab8170a9bf9fae098e267be1a38f27d0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 4ca78c71f464a914c07583825d4a7027ebb11bf6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93281797"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679043"
 ---
 # <a name="custom-serialization"></a>Пользовательская сериализация
 
@@ -51,6 +51,7 @@ ms.locfileid: "93281797"
  Кроме того, при добавлении нового поля в существующий сериализуемый тип применяйте к полю атрибут <xref:System.Runtime.Serialization.OptionalFieldAttribute>. <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> и <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> игнорируют отсутствие поля, если обрабатывается поток без нового поля.  
   
 ## <a name="implementing-the-iserializable-interface"></a>Реализация интерфейса ISerializable  
+
  Еще одним способом управления сериализацией является реализация для объекта интерфейса <xref:System.Runtime.Serialization.ISerializable>. Однако следует помнить, что метод, описанный в предыдущем разделе, замещает этот метод управления сериализацией.  
   
  Кроме того, не следует использовать сериализацию по умолчанию для класса, который отмечен атрибутом [Serializable](xref:System.SerializableAttribute) и имеет декларативную или принудительную безопасность на уровне класса или конструкторов. В таких случаях в классах всегда следует реализовывать интерфейс <xref:System.Runtime.Serialization.ISerializable>.  
@@ -112,13 +113,13 @@ Public Class MyObject
 End Class
 ```  
   
- Если во время сериализации вызывается **GetObjectData** , следует указать информацию <xref:System.Runtime.Serialization.SerializationInfo>, которая предоставляется вместе с вызовом метода. Добавьте переменные, которые будут сериализованы как пары имен и значений. В качестве имени можно ввести любой текст. Переменные-члены, добавляемые в <xref:System.Runtime.Serialization.SerializationInfo> могут быть любыми при условии, что сериализуется достаточное количество данных для восстановления объекта при десериализации. Производные классы должны вызывать метод **GetObjectData** для базового объекта, если в последнем реализован интерфейс <xref:System.Runtime.Serialization.ISerializable>.  
+ Если во время сериализации вызывается **GetObjectData**, следует указать информацию <xref:System.Runtime.Serialization.SerializationInfo>, которая предоставляется вместе с вызовом метода. Добавьте переменные, которые будут сериализованы как пары имен и значений. В качестве имени можно ввести любой текст. Переменные-члены, добавляемые в <xref:System.Runtime.Serialization.SerializationInfo> могут быть любыми при условии, что сериализуется достаточное количество данных для восстановления объекта при десериализации. Производные классы должны вызывать метод **GetObjectData** для базового объекта, если в последнем реализован интерфейс <xref:System.Runtime.Serialization.ISerializable>.  
   
  Обратите внимание, что сериализация позволяет другому коду просматривать или изменять данные экземпляра объекта, не доступные в ином случае. Поэтому код, выполняющий сериализацию, требует разрешения [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) с установленным флагом <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter>. При политике безопасности по умолчанию такое разрешение не предоставляется коду, загруженному из Интернета или интрасети, и дается только коду на локальном компьютере. Метод **GetObjectData** должен быть явно защищен посредством запроса либо [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) с установленным флагом <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter>, либо иных разрешений, которые предназначены специально для защиты закрытых данных.  
   
- Если в закрытом поле хранятся конфиденциальные сведения, для их защиты следует запрашивать соответствующие разрешения для **GetObjectData**. Помните, что код, которому предоставлены разрешения [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) с установленным флагом **SerializationFormatter** , может просматривать и изменять данные, которые хранятся в закрытых полях. Злонамеренный вызывающий объект с предоставленными разрешениями [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) может просматривать такие данные, как местоположения скрытых каталогов или предоставленные разрешения, и использовать такую информацию для повышения уязвимости системы безопасности компьютера. Полный список устанавливаемых флагов разрешений безопасности представлен в перечислении [SecurityPermissionFlag Enumeration](xref:System.Security.Permissions.SecurityPermissionFlag).  
+ Если в закрытом поле хранятся конфиденциальные сведения, для их защиты следует запрашивать соответствующие разрешения для **GetObjectData**. Помните, что код, которому предоставлены разрешения [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) с установленным флагом **SerializationFormatter**, может просматривать и изменять данные, которые хранятся в закрытых полях. Злонамеренный вызывающий объект с предоставленными разрешениями [SecurityPermission](xref:System.Security.Permissions.SecurityPermissionAttribute) может просматривать такие данные, как местоположения скрытых каталогов или предоставленные разрешения, и использовать такую информацию для повышения уязвимости системы безопасности компьютера. Полный список устанавливаемых флагов разрешений безопасности представлен в перечислении [SecurityPermissionFlag Enumeration](xref:System.Security.Permissions.SecurityPermissionFlag).  
   
- Следует особо отметить, что при добавлении <xref:System.Runtime.Serialization.ISerializable> в класс следует реализовать и **GetObjectData** , и специальный конструктор. Компилятор выдает предупреждение, если **GetObjectData** отсутствует. Но поскольку невозможно принудительно реализовать конструктор, при его отсутствии предупреждение не выводится, и при попытке десериализовать класс без конструктора создается исключение.  
+ Следует особо отметить, что при добавлении <xref:System.Runtime.Serialization.ISerializable> в класс следует реализовать и **GetObjectData**, и специальный конструктор. Компилятор выдает предупреждение, если **GetObjectData** отсутствует. Но поскольку невозможно принудительно реализовать конструктор, при его отсутствии предупреждение не выводится, и при попытке десериализовать класс без конструктора создается исключение.  
   
  В текущей разработке предусмотрена поддержка метода <xref:System.Runtime.Serialization.ISerializationSurrogate.SetObjectData%2A>, чтобы избежать возможных проблем с безопасностью и управлением версиями. Например, метод `SetObjectData` должен быть открытым, если он определяется как часть интерфейса. По этой причине пользователям следует написать код, чтобы метод **SetObjectData** не вызывался несколько раз. Иначе вредоносное приложение, вызывающее метод **SetObjectData** для объекта в процессе выполнения операции, может стать причиной возникновения проблем.  
   
@@ -126,7 +127,7 @@ End Class
   
  Чтобы восстановить состояние объекта, необходимо всего лишь запросить значения переменных из <xref:System.Runtime.Serialization.SerializationInfo> по именам, использованным во время сериализации. Если в базовом классе реализовано <xref:System.Runtime.Serialization.ISerializable>, следует вызвать базовый конструктор, чтобы базовый объект смог восстановить свои переменные.  
   
- При создании нового производного класса на основе класса с реализацией <xref:System.Runtime.Serialization.ISerializable> в производном классе должны быть реализованы как конструктор, так и метод **GetObjectData** , если имеются переменные, подлежащие сериализации. В следующем примере показано, как это можно сделать с помощью рассмотренного ранее класса `MyObject`.  
+ При создании нового производного класса на основе класса с реализацией <xref:System.Runtime.Serialization.ISerializable> в производном классе должны быть реализованы как конструктор, так и метод **GetObjectData**, если имеются переменные, подлежащие сериализации. В следующем примере показано, как это можно сделать с помощью рассмотренного ранее класса `MyObject`.  
   
 ```csharp
 [Serializable]

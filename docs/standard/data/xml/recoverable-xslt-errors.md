@@ -2,17 +2,19 @@
 title: Устранимые ошибки XSLT
 ms.date: 03/30/2017
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
-ms.openlocfilehash: 8a77600c8cc1baf61ed21cc7a480b75dd2fde2dc
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2123ead435fe389693f3b141a26873700ba5647f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827585"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686778"
 ---
 # <a name="recoverable-xslt-errors"></a>Устранимые ошибки XSLT
+
 Рекомендация W3C по XSL-преобразованиям (XSLT) версии 1.0 включает в себя такие области, в которых поставщик реализации может решать, как обрабатывать ситуацию. Эти области считаются предоставленными на усмотрение поставщика. Например, в разделе 7.3 «Инструкции по обработке при создании» рекомендаций XSLT 1.0 указывается на ошибку, которая возникает, если при формировании экземпляра содержимого `xsl:processing-instruction` создаются узлы, отличные от текстовых. Для некоторых проблем в рекомендациях XSLT 1.0 указывается решение, которое следует принять, если обработчик решает устранить ошибку. Для проблемы, приведенной в разделе 7.3, W3C заявляет, что реализация может устранять эту ошибку, игнорируя узлы и их содержимое.  
   
 ## <a name="discretionary-behaviors"></a>Возможные поведения  
+
  В следующей таблице перечислены возможные поведения, разрешенные рекомендациями XSLT 1.0, и способы обработки этих поведений классом <xref:System.Xml.Xsl.XslCompiledTransform>.  
   
 - «Восстановление» указывает, что класс <xref:System.Xml.Xsl.XslCompiledTransform> устраняет эту ошибку. Событие <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=nameWithType> может быть использовано, чтобы сообщать о любых событиях из обработчика XSLT.  

@@ -4,10 +4,10 @@ description: Сведения о свойствах в C#, в том числе 
 ms.technology: csharp-fundamentals
 ms.date: 04/25/2018
 ms.openlocfilehash: 28050a77e1f7b0ac148bba6112aa79ef4d46b710
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "89358912"
 ---
 # <a name="properties"></a>Свойства

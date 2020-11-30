@@ -6,24 +6,27 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - Windows Forms, and TPL
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
-ms.openlocfilehash: c09259afdc5ede32791ba895ca012cdc2a0a1c18
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: da42358007b887f6bab05c35e0f7542f1069abd4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829951"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689814"
 ---
 # <a name="walkthrough-using-dataflow-in-a-windows-forms-application"></a>Пошаговое руководство. Использование потока данных в приложении Windows Forms
+
 В этом документе демонстрируется способ создания сети блоков потока данных, которые выполняют обработку изображений в приложении Windows Forms.  
   
  В этом примере файлы изображения загружаются из указанной папки, из них создается составное изображение, и результат отображается. В данном примере для перемещения изображений по сети используется модель потока данных. В модели потока данных независимые компоненты программы взаимодействуют друг с другом, отправляя сообщения. Когда компонент получает сообщение, он выполняет какое-либо действие и затем передает результат другому компоненту. Сравните это с моделью потока управления, в который приложение использует структуры управления, например условные операторы, циклы и т. д., для управления порядком операций в программе.  
   
 ## <a name="prerequisites"></a>Prerequisites  
+
  Прежде чем начать выполнение этого пошагового руководства, ознакомьтесь с документом [Поток данных](dataflow-task-parallel-library.md).  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 
 ## <a name="sections"></a>Разделы  
+
  Это пошаговое руководство содержит следующие разделы:  
   
 - [Создание приложения Windows Forms](#winforms)  
@@ -35,7 +38,9 @@ ms.locfileid: "94829951"
 - [Полный пример](#complete)  
   
 <a name="winforms"></a>
+
 ## <a name="creating-the-windows-forms-application"></a>Создание приложения Windows Forms  
+
  В этом разделе описывается, как создать простое приложение Windows Forms и добавить элементы управления в главную форму.  
   
 ### <a name="to-create-the-windows-forms-application"></a>Создание приложения Windows Forms  
@@ -51,7 +56,9 @@ ms.locfileid: "94829951"
 5. Добавьте объект <xref:System.Windows.Forms.PictureBox> на главную форму. Задайте для свойства <xref:System.Windows.Forms.Control.Dock%2A> значение <xref:System.Windows.Forms.DockStyle.Fill>.  
   
 <a name="network"></a>
+
 ## <a name="creating-the-dataflow-network"></a>Создание сети потока данных  
+
  В этом разделе описывается способ создания сети потока данных, которая выполняет обработку изображений.  
   
 ### <a name="to-create-the-dataflow-network"></a>Создание сети потока данных  
@@ -101,7 +108,9 @@ ms.locfileid: "94829951"
  В этом примере используется общий токен отмены, а не устанавливается свойство <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A>, поскольку свойство <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> окончательно отменяет выполнение блока потока данных. Токен отмены в этом примере позволяет повторно использовать те же сети потоков данных несколько раз, даже если пользователь отменил одну или несколько операций. См. пример, который использует <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A>, чтобы окончательно [отменить выполнение блока потока данных](how-to-cancel-a-dataflow-block.md).  
   
 <a name="ui"></a>
+
 ## <a name="connecting-the-dataflow-network-to-the-user-interface"></a>Подключение сети потока данных к пользовательскому интерфейсу  
+
  В этом разделе описывается, как подключить сеть потока данных к интерфейсу пользователя. Создание составного изображения и отмена операции инициализируются кнопками **Выбрать папку** и **Отмена**. Когда пользователь выбирает какую-либо из этих кнопок, соответствующее действие выполняется асинхронно.  
   
 ### <a name="to-connect-the-dataflow-network-to-the-user-interface"></a>Подключение сети потока данных к пользовательскому интерфейсу  
@@ -119,7 +128,9 @@ ms.locfileid: "94829951"
      [!code-csharp[TPLDataflow_CompositeImages#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#7)]  
   
 <a name="complete"></a>
+
 ## <a name="the-complete-example"></a>Полный пример  
+
  В следующем примере приведен полный код для этого руководства.  
   
  [!code-csharp[TPLDataflow_CompositeImages#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#100)]  

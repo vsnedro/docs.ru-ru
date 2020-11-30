@@ -15,12 +15,12 @@ helpviewer_keywords:
 - global applications, localizability
 - localizing resources
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
-ms.openlocfilehash: 30cde57a5c837d9dc324e9cd263d2a1011641af4
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: ecfba7b6b5908a16bb23860704a35035f58e3ed4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829847"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686024"
 ---
 # <a name="localizability-review"></a>Проверка локализуемости
 
@@ -35,11 +35,13 @@ ms.locfileid: "94829847"
 - [Проводилось ли тестирование приложения с данными на других языках?](#test)
 
 <a name="global"></a>
+
 ## <a name="implement-globalization-recommendations"></a>Реализация рекомендаций по глобализации
 
 Если при проектировании и разработке приложения вы не забывали о локализации и соблюдали все рекомендации, описанные в статье [Глобализация](globalization.md), анализ локализуемости станет лишь формальным этапом контроля качества. В противном случае на этом этапе вам предстоит изучить и внедрить рекомендации по [глобализации](globalization.md), а также исправить все проблемы в исходном коде, которые будут мешать локализации.
 
 <a name="culture"></a>
+
 ## <a name="handle-culture-sensitive-features"></a>Обработка возможностей, чувствительных к языковым и региональным параметрам
 
 Платформа .NET не обеспечивает программную поддержку в нескольких областях, которые значительно отличаются в зависимости от языка и региональных параметров. В большинстве случаев для обработки следующих функциональных областей необходимо писать собственный код.
@@ -58,6 +60,7 @@ ms.locfileid: "94829847"
    [!code-vb[Conceptual.Localizability#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.localizability/vb/ismetric1.vb#1)]
 
 <a name="test"></a>
+
 ## <a name="test-your-application"></a>Тестирование приложения
 
 Перед локализацией приложения необходимо протестировать его с использованием данных на других языках в международных версиях операционной системы. Хотя большая часть пользовательского интерфейса еще не локализована, можно будет обнаружить различные проблемы, например следующие.

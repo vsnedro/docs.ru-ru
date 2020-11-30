@@ -6,14 +6,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
-ms.openlocfilehash: 08900f9e5b735065f97ef705dccd899eebe3bfe0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 72568f897db80f2beb7ed980e850a7b2e13f5ae1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289620"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95678952"
 ---
 # <a name="how-to-control-serialization-of-derived-classes"></a>Практическое руководство. Управление сериализацией производных классов
+
 Использование атрибута **XmlElementAttribute** для изменения имени элемента XML — не единственный способ изменения сериализации объекта. Поток XML также можно настроить путем наследования из существующего класса и передачи в экземпляр <xref:System.Xml.Serialization.XmlSerializer> инструкций по сериализации нового класса.  
   
  Например, если имеется класс `Book`, посредством наследования от него можно создать класс `ExpandedBook` с большим числом свойств. Однако **XmlSerializer** должен принять производный тип при сериализации или десериализации. Это можно сделать, создав экземпляр класса <xref:System.Xml.Serialization.XmlElementAttribute> и указав тип производного класса в его свойстве **Type**. Добавьте атрибут **XmlElementAttribute** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributes>. Затем добавьте **XmlAttributes** к экземпляру класса <xref:System.Xml.Serialization.XmlAttributeOverrides>, указав переопределяемый тип и имя члена, принимающего производный класс. Эти действия показаны в следующем примере.  

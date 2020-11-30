@@ -2,17 +2,19 @@
 title: Разрешение внешних ресурсов
 ms.date: 03/30/2017
 ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a
-ms.openlocfilehash: 460fee3464c7de9a6ad0ca97bf5341fe5078fb47
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: dffaef1b27d5814591c935c0ca795ba4ea3eba84
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820375"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95686609"
 ---
 # <a name="resolving-external-resources"></a>Разрешение внешних ресурсов
+
 Свойство **XmlResolver** класса **XmlDocument** используется классом **XmlDocument** для поиска ресурсов, не встроенных в XML-данные, таких как внешние определения DTD, сущности и схемы. Эти элементы могут находиться в сети или на локальном диске, и могут быть найдены с помощью URI. Это позволяет классу **XmlDocument** разрешать имеющиеся в документе узлы **EntityReference** и проверять документ на соответствие внешнему определению DTD или схеме.  
   
 ## <a name="fully-trusted-xmldocument"></a>Полностью доверенный XmlDocument  
+
  Свойство **XmlResolver** влияет на функциональность метода **XmlDocument.Load**. В следующей таблице показано, как работает свойство **XmlDocument.XmlResolver**, если объект **XmlDocument** является полностью доверенным. В этой таблице также приводятся методы **XmlDocument.Load**, которым в качестве входных данных передаются объекты **TextReader**, **String**, **Stream** или **URI**. Эта таблица не применяется к методу **Load**, если **XmlDocument** загружается из **XmlReader**.  
   
 |XmlResolver, свойство|Функция|Примечания|  
@@ -28,6 +30,7 @@ ms.locfileid: "94820375"
 |Класс **XmlDocument** использует тот же класс **XmlResolver**, что и объект **XmlReader**.|В **XmlDocument** используется **XmlResolver**, назначенный ранее для **XmlReader**.<br /><br /> Вы не можете установить свойство **XmlDocument.Resolver** вне зависимости от уровня доверия **XmlDocument**, поскольку оно получает значение **XmlResolver** из **XmlReader**. Вы не можете переопределить параметры **XmlResolver** класса **XmlReader**, устанавливая свойство **XmlResolver** для класса **XmlDocument**.|В качестве **XmlReader** можно использовать **XmlTextReader**, **XmlValidatingReader** или пользовательский модуль чтения данных. Если используемое средство чтения поддерживает разрешение сущностей, внешние сущности разрешаются. Если переданный модуль чтения не поддерживает ссылки на сущности, то ссылки на сущности не разрешаются.|  
   
 ## <a name="semi-trusted-xmldocument"></a>Полудоверенный XmlDocument  
+
  В таблице ниже показано, как работает свойство **XmlDocument.XmlResolver**, если объект является полудоверенным. Эта таблица применима к методам **XmlDocument.Load**, если входными данными метода Load являются объекты **TextReader**, **String**, **Stream** или **URI**. Эта таблица не применяется к методу **Load**, если **XmlDocument** загружается из **XmlReader**.  
   
 |XmlResolver, свойство|Функция|Примечания|  
