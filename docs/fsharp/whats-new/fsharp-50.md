@@ -2,12 +2,12 @@
 title: 'Новые возможности в F # 5,0-F # Guide'
 description: 'Ознакомьтесь с обзором новых функций, доступных в F # 5,0.'
 ms.date: 11/06/2020
-ms.openlocfilehash: 29b5b110379dec476d7c0aa51540984acb25f26e
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: dd954fac31b008beab37cd6c1f06b1d41c5d5004
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95098701"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96438004"
 ---
 # <a name="whats-new-in-f-50"></a>Новые возможности F# 5.0
 
@@ -15,7 +15,7 @@ ms.locfileid: "95098701"
 
 Вы можете скачать последний пакет SDK для .NET на странице [скачиваемых файлов .NET](https://dotnet.microsoft.com/download).
 
-## <a name="get-started"></a>Приступая к работе
+## <a name="get-started"></a>Начало работы
 
 F # 5,0 доступен во всех дистрибутивах .NET Core и средствах Visual Studio. Дополнительные сведения см. в статье [Приступая к работе с F #](../get-started/index.md) .
 
@@ -56,7 +56,7 @@ let test p str =
 test pfloat "1.234"
 ```
 
-Эта функция реализует [F # Tools RFC ФСТ-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md). Дополнительные сведения о ссылках на пакеты см. в руководстве по [F# Interactive](../tutorials/fsharp-interactive/index.md) .
+Эта функция реализует [F # Tools RFC ФСТ-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md). Дополнительные сведения о ссылках на пакеты см. в руководстве по [F# Interactive](../tools/fsharp-interactive/index.md) .
 
 ## <a name="string-interpolation"></a>Интерполяция строк
 
