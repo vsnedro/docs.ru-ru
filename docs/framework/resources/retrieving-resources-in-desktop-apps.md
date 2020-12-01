@@ -19,19 +19,21 @@ helpviewer_keywords:
 - translating resources into languages
 - localizing resources
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
-ms.openlocfilehash: cefdfef32928783b23ac0d51be596e48c27bde9a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 26e4367d28193ce731198ee0ba3d3b35d83cf19c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90535512"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96254549"
 ---
 # <a name="retrieving-resources-in-desktop-apps"></a>Извлечение ресурсов в приложениях для настольных систем
 
 При работе с локализованными ресурсами в классических приложениях .NET Framework желательно упаковывать ресурсы для нейтральной или стандартной комбинации языка и региональных параметров в основную сборку и создавать отдельную вспомогательную сборку для каждого языка или каждой комбинации языка и региональных параметров, поддерживаемых вашим приложением. Затем можно использовать класс <xref:System.Resources.ResourceManager> для доступа к именованным ресурсам, как описано в следующем разделе. Если вы решили не внедрять ресурсы в основную и вспомогательные сборки, можно обратиться к двоичным файлам RESOURCES напрямую, как описано в разделе [Извлечение ресурсов из файлов RESOURCES](#from_file) далее в этой статье.  Сведения об извлечении ресурсов в приложениях магазина Windows 8.x см. в статье [Создание и извлечение ресурсов в приложениях магазина Windows](/previous-versions/windows/apps/hh694557(v=vs.140)).  
   
 <a name="from_assembly"></a>
+
 ## <a name="retrieving-resources-from-assemblies"></a>Извлечение ресурсов из сборок  
+
  Класс <xref:System.Resources.ResourceManager> предоставляет доступ к ресурсам во время выполнения. Вы можете использовать метод <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> для извлечения строковых ресурсов и метод <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> или <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> для извлечения нестроковых ресурсов. Каждый метод имеет две перегрузки:  
   
 - Перегрузка, единственным параметром которой является строка с именем ресурса. Метод пытается извлечь этот ресурс для языка и региональных параметров текущего потока. Дополнительные сведения см. в описании методов <xref:System.Resources.ResourceManager.GetString%28System.String%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%29>и <xref:System.Resources.ResourceManager.GetStream%28System.String%29> .  
@@ -41,6 +43,7 @@ ms.locfileid: "90535512"
  Диспетчер ресурсов использует процесс резервных ресурсов, чтобы управлять тем, как приложение извлекает ресурсы, связанные с языком и региональными параметрами. Дополнительные сведения см. в разделе "Процесс использования резервных ресурсов" статьи [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md). Сведения о создании экземпляра объекта <xref:System.Resources.ResourceManager> см. в разделе "Создание экземпляров объекта ResourceManager" статьи о классе <xref:System.Resources.ResourceManager> .  
   
 ### <a name="retrieving-string-data-an-example"></a>Извлечение строковых данных. Пример  
+
  В следующем примере вызывается метод <xref:System.Resources.ResourceManager.GetString%28System.String%29> для извлечения строковых ресурсов текущего языка и региональных параметров пользовательского интерфейса. Он включает нейтральный строковый ресурс для английского языка (США) и локализованные ресурсы для французского (Франция) и русского (Россия) языков и соответствующих региональных параметров. Следующий ресурс для английского языка (США) находится в файле Strings.txt:  
   
 ```text
@@ -82,6 +85,7 @@ al -embed:strings.ru-RU.resources -culture:ru-RU -out:ru-RU\GetString.resources.
  Если текущая комбинация языка и региональных параметров пользовательского интерфейса относится к испанскому языку (Испания), обратите внимание, что пример отображает ресурсы на английском языке, так как ресурсы для испанского языка недоступны, а в примере английский язык задан по умолчанию.  
   
 ### <a name="retrieving-object-data-two-examples"></a>Извлечение объектных данных. Два примера  
+
  Для извлечения данных объекта можно использовать методы <xref:System.Resources.ResourceManager.GetObject%2A> и <xref:System.Resources.ResourceManager.GetStream%2A> . Сюда входят типы-примитивы, сериализуемые объекты и объекты, хранящиеся в двоичном формате (например, изображения).  
   
  В следующем примере метод <xref:System.Resources.ResourceManager.GetStream%28System.String%29> используется для извлечения точечного рисунка, который используется на экране-заставке приложения. Следующий исходный код в файле с именем CreateResources.cs (для C#) или CreateResources.vb (для Visual Basic) создает файл RESX, содержащий сериализованное изображение. В этом случае изображение загружается из файла SplashScreen.jpg; имя файла можно изменить, чтобы использовать собственное изображение.  
@@ -134,6 +138,7 @@ GetObject.exe
 ```  
   
 ## <a name="versioning-support-for-satellite-assemblies"></a>Поддержка управления версиями для вспомогательных сборок  
+
  По умолчанию, когда объект <xref:System.Resources.ResourceManager> извлекает запрошенные ресурсы, он ищет вспомогательные сборки с номерами версий, совпадающими с номером версии основной сборки. После развертывания приложения может потребоваться обновить основную сборку или вспомогательные сборки для конкретного ресурса. Платформа .NET Framework обеспечивает поддержку управления версиями как для основной, так и для вспомогательных сборок.  
   
  Атрибут <xref:System.Resources.SatelliteContractVersionAttribute> обеспечивает поддержку управления версиями для главной сборки. Указание этого атрибута для основной сборки приложения позволяет обновить и заново развернуть основную сборку без обновления ее вспомогательных сборок. После обновления основной сборки следует увеличить номер версии основной сборки, а номер версии вспомогательной сборки следует оставить без изменений. Когда диспетчер ресурсов извлекает запрошенные ресурсы, он загружает версию вспомогательной сборки, заданную этим атрибутом.  
@@ -145,10 +150,13 @@ GetObject.exe
  Дополнительные сведения об управлении версиями сборок см. в разделах [Управление версиями сборок](../../standard/assembly/versioning.md) и [Обнаружение сборок в среде выполнения](../deployment/how-the-runtime-locates-assemblies.md).  
   
 <a name="from_file"></a>
+
 ## <a name="retrieving-resources-from-resources-files"></a>Извлечение ресурсов из файлов RESOURCES  
+
  Если вы решили не развертывать ресурсы в вспомогательных сборках, то все равно можете воспользоваться объектом <xref:System.Resources.ResourceManager> для прямого доступа к ресурсам из файлов RESOURCES. Для этого требуется развернуть файлы RESOURCES правильным образом. После этого используйте метод <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A?displayProperty=nameWithType> для создания экземпляра объекта <xref:System.Resources.ResourceManager> и укажите каталог, содержащий автономные файлы RESOURCES.  
   
 ### <a name="deploying-resources-files"></a>Развертывание файлов RESOURCES  
+
  При внедрении файлов RESOURCES в сборку приложения и вспомогательные сборки все вспомогательные сборки имеют одинаковое имя файла, однако каждая из них помещается в подкаталог, который отражает ее язык и региональные параметры. И наоборот, при прямом доступе к ресурсам из RESOURCES-файлов все эти файлы можно поместить в один каталог, который обычно находится в каталоге приложения. Имя RESOURCES-файла по умолчанию для приложения состоит только из корневого имени без указания языка и региональных параметров (например, strings.resources). Ресурсы для каждого локализованного языка хранятся в файле, имя которого состоит из корневого имени, за которым следует обозначение языка и региональных параметров (например, strings.ja.resources или strings.de DE.resources).
 
  На следующем рисунке показано, где должны находиться файлы ресурсов в структуре каталогов. На нем также приведены соглашения об именовании для файлов RESOURCE.  
@@ -156,6 +164,7 @@ GetObject.exe
  ![Рисунок, показывающий главную папку приложения.](./media/retrieving-resources-in-desktop-apps/resource-application-directory.gif)  
   
 ### <a name="using-the-resource-manager"></a>Использование диспетчера ресурсов  
+
  После создания ресурсов и помещения их в соответствующий каталог создайте объект <xref:System.Resources.ResourceManager> , чтобы использовать ресурсы путем вызова метода <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%28System.String%2CSystem.String%2CSystem.Type%29> . Первый параметр указывает корневое имя RESOURCES-файла по умолчанию в приложении (в примере из предыдущего раздела этому соответствует "strings"). Второй параметр указывает расположение ресурсов ("Resources" в предыдущем примере). Третий параметр указывает используемую реализацию <xref:System.Resources.ResourceSet> . Если третий параметр равен `null`, используется среда выполнения по умолчанию <xref:System.Resources.ResourceSet> .  
   
 > [!NOTE]
@@ -164,6 +173,7 @@ GetObject.exe
  После его создания экземпляра объекта <xref:System.Resources.ResourceManager> используйте методы <xref:System.Resources.ResourceManager.GetString%2A>, <xref:System.Resources.ResourceManager.GetObject%2A>и <xref:System.Resources.ResourceManager.GetStream%2A> для извлечения ресурсов, как было описано выше. Однако получение ресурсов непосредственно из RESOURCES-файлов отличается от извлечения внедренных ресурсов из сборок. При получении ресурсов из RESOURCES-файлов методы <xref:System.Resources.ResourceManager.GetString%28System.String%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%29>и <xref:System.Resources.ResourceManager.GetStream%28System.String%29> всегда извлекают ресурсы для языка и региональных параметров по умолчанию, независимо от текущего их значения. Чтобы извлечь ресурсы для текущей или конкретной комбинации языка и региональных параметров приложения, необходимо вызвать метод <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29>или <xref:System.Resources.ResourceManager.GetStream%28System.String%2CSystem.Globalization.CultureInfo%29> и указать комбинацию языка и региональных параметров, ресурсы которой требуется получить. Чтобы получить ресурсы для текущего языка и региональных параметров, укажите значение свойства <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> в качестве аргумента `culture` . Если диспетчер ресурсов не может извлечь ресурсы `culture`, для извлечения необходимых ресурсов он использует стандартные правила резервных ресурсов.  
   
 ### <a name="an-example"></a>Пример  
+
  В следующем примере показано, как диспетчер ресурсов получает ресурсы непосредственно из RESOURCES-файлов. Пример состоит из трех текстовых файлов ресурсов для английского (США), французского (Франция) и русского (Россия) языков и соответствующих региональных параметров. В этом примере по умолчанию задан английский язык (США). Его ресурсы хранятся в файле с именем Strings.txt:  
   
 ```text

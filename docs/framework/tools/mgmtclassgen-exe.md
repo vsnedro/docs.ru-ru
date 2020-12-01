@@ -12,14 +12,15 @@ helpviewer_keywords:
 - Mgmtclassgen.exe
 - early-bound managed classes
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
-ms.openlocfilehash: 89facd4369dad6168e46febd3e34d7f7c235faf0
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 1dea4b0b94053919169abb639ff48ecd3abbd66c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517299"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279159"
 ---
 # <a name="mgmtclassgenexe-management-strongly-typed-class-generator"></a>Mgmtclassgen.exe (генератор строго типизированных классов управления)
+
 Генератор классов управления со строгим типом позволяет быстро создавать управляемые классы с ранней привязкой для указанного класса инструментария управления Windows (WMI). Создаваемый класс упрощает код, необходимый для доступа к экземпляру класса WMI.  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -45,6 +46,7 @@ WMIClass [options]
 |**/?**|Отображает синтаксис команд и параметров программы.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Программа Mgmtclassgen.exe использует метод <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>. Поэтому для генерации кода на управляемом языке, отличном от C#, Visual Basic и JScript, можно использовать любой нестандартный поставщик кода.  
   
  Следует заметить, что создаваемые классы связаны со схемой, для которой они были созданы. Если базовая схема изменяется, для отображения внесенных изменений в схеме класс следует создать повторно.  
@@ -93,6 +95,7 @@ WMIClass [options]
  Дополнительные сведения о WMI см. в разделе **Инструментарий управления Windows** в документации по продукту Platform SDK.  
   
 ## <a name="examples"></a>Примеры  
+
  При выполнении следующей команды создается управляемый класс на языке C# для класса WMI **Win32_LogicalDisk** в пространстве имен **Root\cimv2**. Программа записывает управляемый класс в исходный файл, расположенный в "c:\disk.cs", в пространстве имен **ROOT.CIMV2.Win32**.  
   
 ```console  

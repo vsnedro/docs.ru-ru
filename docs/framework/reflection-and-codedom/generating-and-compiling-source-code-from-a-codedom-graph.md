@@ -27,17 +27,19 @@ helpviewer_keywords:
 - compiling source code, multiple languages
 - CodeDOM, graphs
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
-ms.openlocfilehash: 3aad7b2ff047a2d9ad12c23d16773e482a395c10
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: aec7d6b44e63558ae70bc0eb41f94e55c8a6c325
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551201"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266341"
 ---
 # <a name="generating-and-compiling-source-code-from-a-codedom-graph"></a>Создание и компиляция исходного кода из графа CodeDOM
+
 Пространство имен <xref:System.CodeDom.Compiler> предоставляет интерфейсы для создания исходного кода из графов объекта CodeDOM и для управления компиляцией в поддерживаемых компиляторах. Поставщик кода может создавать исходный код на конкретном языке программирования, используя граф CodeDOM. Класс, производный от <xref:System.CodeDom.Compiler.CodeDomProvider>, обычно может предоставлять методы для создания и компиляции кода для языка, поддерживаемого поставщиком.  
   
 ## <a name="using-a-codedom-code-provider-to-generate-source-code"></a>Использование поставщика кода CodeDOM для создания исходного кода  
+
  Чтобы создать исходный код на конкретном языке, необходим граф CodeDOM, представляющий структуру создаваемого исходного кода.  
   
  В следующем примере демонстрируется создание экземпляра <xref:Microsoft.CSharp.CSharpCodeProvider>.  
@@ -53,6 +55,7 @@ ms.locfileid: "90551201"
  [!code-vb[CodeDomExample#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#22)]  
   
 ## <a name="using-a-codedom-code-provider-to-compile-assemblies"></a>Использование поставщика кода CodeDOM для компиляции сборок  
+
  **Вызов процесса компиляции**  
   
  Чтобы скомпилировать сборку, используя поставщик CodeDom, необходимо иметь либо исходный код для компиляции на языке, для которого есть компилятор, либо граф CodeDOM, из которого может быть создан исходный код для компиляции.  
@@ -90,6 +93,7 @@ ms.locfileid: "90551201"
  [!code-vb[CodeDomExample#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#23)]  
   
 ## <a name="languages-with-initial-support"></a>Встроенная поддержка языков  
+
  .NET Framework предоставляет компиляторы и генераторы кода для следующих языков: C#, Visual Basic, C++ и JScript. Поддержка CodeDOM может быть расширена на другие языки путем реализации генераторов и компиляторов кода для определенных языков.  
   
 ## <a name="see-also"></a>См. также

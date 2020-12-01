@@ -22,12 +22,12 @@ helpviewer_keywords:
 - discovering type information at run time
 - type system, reflection
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
-ms.openlocfilehash: 46c67595126af2c62b28d29983775943586a0b90
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 371f56c3a57b8e320c9b329c539075a40cd7a19f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865285"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96258417"
 ---
 # <a name="reflection-in-net"></a>Отражение в .NET
 
@@ -62,6 +62,7 @@ ms.locfileid: "86865285"
 Есть и другие способы использования отражения. Компиляторы таких языков программирования, как JScript, используют отражение для построения таблиц символов. Классы в пространстве имен <xref:System.Runtime.Serialization> используют отражение для доступа к данным и определения того, какие поля следует сохранить. Классы в пространстве имен <xref:System.Runtime.Remoting> используют отражение косвенным образом через сериализацию.  
   
 ## <a name="runtime-types-in-reflection"></a>Типы среды выполнения в отражении  
+
 Отражение предоставляет классы, такие как <xref:System.Type> и <xref:System.Reflection.MethodInfo>, для представления типов, членов, параметров и других объектов кода. Однако при использовании отражения вы работаете с этими классами не напрямую: большинство из них являются абстрактными (`MustInherit` в Visual Basic). Вместо этого вы работаете с типами, предоставленными средой CLR.  
   
 Например, при использовании оператора `typeof` в C# (`GetType` в Visual Basic) для получения объекта <xref:System.Type> объект фактически является `RuntimeType`. `RuntimeType` является производным от <xref:System.Type> и предоставляет реализации всех абстрактных методов.  

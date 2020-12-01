@@ -10,14 +10,15 @@ helpviewer_keywords:
 - reflection, generic types
 - generics [.NET Framework], reflection
 ms.assetid: f93b03b0-1778-43fc-bc6d-35983d210e74
-ms.openlocfilehash: b57a0ed0c809da442dc9fcf202ad364060971f80
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 34efca4a26b0ab3739d19b793237532ec9f4f15e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865103"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263442"
 ---
 # <a name="how-to-examine-and-instantiate-generic-types-with-reflection"></a>Практическое руководство. Изучение универсальных типов и создание их экземпляров при помощи отражения
+
 Сведения об универсальных типах получаются аналогично сведениям о других типах: путем изучения объекта <xref:System.Type>, который представляет универсальный тип. Принципиальная разница заключается в том, что универсальный тип имеет список объектов <xref:System.Type>, представляющих его параметры универсального типа. В первой процедуре данного раздела изучаются универсальные типы.  
   
  Можно создать объект <xref:System.Type>, представляющий сконструированный тип, путем привязки аргументов типа к параметрам типа определения универсального типа. Это демонстрируется во второй процедуре.  
@@ -73,6 +74,7 @@ ms.locfileid: "86865103"
      [!code-vb[HowToGeneric#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#9)]  
   
 ## <a name="constructing-an-instance-of-a-generic-type"></a>Конструирование экземпляра универсального типа  
+
  Универсальный тип напоминает шаблон. Нельзя создать его экземпляры, если не указаны фактические типы для его параметров универсального типа. Чтобы сделать это во время выполнения с использованием отражения, необходимо использовать метод <xref:System.Type.MakeGenericType%2A>.  
   
 #### <a name="to-construct-an-instance-of-a-generic-type"></a>Конструирование экземпляра универсального типа  
@@ -102,6 +104,7 @@ ms.locfileid: "86865103"
      [!code-vb[HowToGeneric#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#13)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода определяется метод `DisplayGenericType` для изучения определений универсальных типов и сконструированных типов, используемых в коде, и вывода сведений о них. Метод `DisplayGenericType` показывает, как использовать свойства <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A> и <xref:System.Type.GenericParameterPosition%2A>, а также метод <xref:System.Type.GetGenericArguments%2A>.  
   
  В этом примере также определяется метод `DisplayGenericParameter` для изучения параметра универсального типа и вывода его ограничений.  

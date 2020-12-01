@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Type Library Exporter
 - type libraries [.NET Framework], exporting
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-ms.openlocfilehash: e675b0addc9051a0b3c877e9b029e113c17ba5f0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1a9e984e1b81adda572076cb118a25f5f3a045ea
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543391"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283761"
 ---
 # <a name="tlbexpexe-type-library-exporter"></a>Tlbexp.exe (программа экспорта библиотек типов)
+
 Программа экспорта библиотек типов создает библиотеку типов, описывающую типы, определенные в сборке среды CLR.  
   
  Эта программа автоматически устанавливается вместе с Visual Studio. Чтобы применить этот инструмент, воспользуйтесь командной строкой разработчика для Visual Studio (или командной строкой Visual Studio в Windows 7). Дополнительные сведения см. в разделе [Командные строки](developer-command-prompt-for-vs.md).  
@@ -56,6 +57,7 @@ tlbexp assemblyName [options]
 > В параметрах командной строки для программы Tlbexp.exe не учитывается регистр, и такие параметры могут задаваться в любом порядке. Можно вводить только часть имени параметра, достаточную для его однозначной идентификации. Например, **/n** эквивалентно **/nologo**, а **/o:** *outfile.tlb* эквивалентно **/out:** *outfile.tlb*.  
   
 ## <a name="remarks"></a>Примечания  
+
  Программа Tlbexp.exe создает библиотеку типов, содержащую определения типов, заданных в сборке. Приложения, такие как Visual Basic 6.0, могут использовать созданную библиотеку типов для связывания с типами .NET, определенными в сборке.  
   
 > [!IMPORTANT]
@@ -96,6 +98,7 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
  Программа экспорта библиотек типов поддерживается в Microsoft Windows 2000 и более поздних версиях.  
   
 ## <a name="examples"></a>Примеры  
+
  Следующая команда создает библиотеку типов с таким же именем, что и у сборки, найденной в `myTest.dll`.  
   
 ```console  

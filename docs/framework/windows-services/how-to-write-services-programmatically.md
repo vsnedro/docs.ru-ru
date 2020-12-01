@@ -9,14 +9,15 @@ helpviewer_keywords:
 - services, creating
 - Windows Service applications, creating
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
-ms.openlocfilehash: cd749d325bec6636243dec1905f79abb5e42f04e
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: ab153b89272323a1a7a71181559f4f4eee082640
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91608404"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96270515"
 ---
 # <a name="how-to-write-services-programmatically"></a>Практическое руководство. Создание службы программным способом
+
 Если вы решили не использовать шаблон проекта "Служба Windows", для создания собственной службы вам придется настроить наследование и другие элементы инфраструктуры самостоятельно. Создавая службу программным способом, вам необходимо выполнить несколько действий, которые в случае с шаблоном выполняются автоматически.  
   
 - Для класса службы необходимо настроить наследование от класса <xref:System.ServiceProcess.ServiceBase>.  

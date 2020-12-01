@@ -10,14 +10,15 @@ helpviewer_keywords:
 - reflection emit, dynamic methods
 - dynamic methods
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
-ms.openlocfilehash: d1ccf3d3ac966e35e1708f0639785a2760eb8287
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1ea15149ea72c3c422251abefb5a1008cc496f2c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559191"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263455"
 ---
 # <a name="how-to-define-and-execute-dynamic-methods"></a>Практическое руководство. Определение и выполнение динамических методов
+
 В следующих процедурах показаны способы определения и выполнения простого динамического метода и динамического метода, привязанного к экземпляру класса. Дополнительные сведения о динамических методах см. в описании класса <xref:System.Reflection.Emit.DynamicMethod> и в разделе [Сценарии динамических методов порождаемого отражения](/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  
   
 ### <a name="to-define-and-execute-a-dynamic-method"></a>Определение и выполнение динамического метода  
@@ -101,6 +102,7 @@ ms.locfileid: "90559191"
      [!code-vb[DynamicMethodHowTo#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DynamicMethodHowTo/vb/source.vb#16)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода показано выполнение простого динамического метода и динамического метода, привязанного к экземпляру класса.  
   
  Простой динамический метод принимает один аргумент, 32-разрядное целое число, и возвращает 64-разрядное значение квадрата этого целого числа. Для вызова этого метода используется универсальный делегат.  

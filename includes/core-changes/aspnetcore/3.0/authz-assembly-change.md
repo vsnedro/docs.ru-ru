@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b91cdc7a0d2e4258662155a840500ce21ab35760
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 2819fb3857fa6d40a2b2e42eeaec2d9c6e50eef0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74101412"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96299357"
 ---
 ### <a name="authorization-addauthorization-overload-moved-to-different-assembly"></a>Авторизация. Перемещение перегрузки AddAuthorization в другую сборку
 
@@ -15,6 +15,7 @@ ms.locfileid: "74101412"
 3.0
 
 #### <a name="old-behavior"></a>Старое поведение
+
 Методы `AddAuthorization` существовали в `Microsoft.AspNetCore.Authorization`.
 
 #### <a name="new-behavior"></a>Новое поведение

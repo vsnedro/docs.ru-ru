@@ -18,14 +18,15 @@ helpviewer_keywords:
 - downloading Internet resources, connections
 - ServicePointManager class, about ServicePointManager class
 ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
-ms.openlocfilehash: 124dff1b104e323b929d13f73cf17d740e747c32
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 00db05c99cf232a31b10bbd0356e6d43d3bc3e28
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502292"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282864"
 ---
 # <a name="managing-connections"></a>Управление подключениями
+
 Приложения, которые используют протокол HTTP для подключения к ресурсам данных, могут использовать классы <xref:System.Net.ServicePoint> и <xref:System.Net.ServicePointManager> .NET Framework для управления подключением к Интернету и для оптимизации масштабирования и производительности.  
   
  Класс **ServicePoint** предоставляет приложению конечную точку, которое оно может использовать для доступа к ресурсам в Интернете. Каждый экземпляр класса **ServicePoint** содержит сведения, которые помогают оптимизировать подключения к интернет-серверу с помощью анализа сведений о подключениях для повышения производительности.  

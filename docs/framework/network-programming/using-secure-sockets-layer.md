@@ -16,14 +16,15 @@ helpviewer_keywords:
 - receiving data, Secure Sockets Layer
 - Internet, Secure Sockets Layer
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
-ms.openlocfilehash: 67330962382e768849cbf67d5f412ea80f65569d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 1309e9dc594869cec7bce81ef666d9f5e06f13b9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501993"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265184"
 ---
 # <a name="using-secure-sockets-layer"></a>Использование протокола SSL
+
 Классы <xref:System.Net> используют протокол SSL для шифрования подключений по нескольким сетевым протоколам.  
   
  Для подключений по протоколу HTTP классы <xref:System.Net.WebRequest> и <xref:System.Net.WebResponse> используют протокол SSL для взаимодействия с веб-узлами, поддерживающими SSL. Решение об использовании SSL принимается классом <xref:System.Net.WebRequest> в соответствии с предоставленным универсальным кодом ресурса (URI). Если код URI начинается с префикса "https:", SSL используется. Если код URI начинается с "http:", подключение не шифруется.  
@@ -59,6 +60,7 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 ```  
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
+
  Для этого примера требуются:  
   
 - Ссылки на пространство имен **System.Net**.  

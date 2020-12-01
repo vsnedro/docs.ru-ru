@@ -5,14 +5,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - wrappers, creating manually
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
-ms.openlocfilehash: 0d696adbe1ee224e78f79a049ed2e41d50be1faa
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0321e98e6237e54397db7e583546fd69803ab7e1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554173"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96275961"
 ---
 # <a name="how-to-create-wrappers-manually"></a>Практическое руководство. Создание оболочек вручную
+
 Если вы решили объявлять типы COM в управляемом исходном коде вручную, лучше всего начать с существующего файла языка IDL или библиотеки типов. Если у вас нет файла IDL или вы не можете создать файл библиотеки типов, можно имитировать типы COM, создав управляемые объявления и экспортировав получившуюся сборку в библиотеку типов.  
   
 ### <a name="to-simulate-com-types-from-managed-source"></a>Имитация типов COM из управляемого источника  
@@ -34,6 +35,7 @@ ms.locfileid: "90554173"
 4. Как и в случае с типами, импортированными с помощью программы Tlbimp.exe, для некоторых типов требуются дополнительные сведения, которые можно добавить непосредственно в код. Подробную информацию см. в разделе [Практическое руководство. Изменение сборок взаимодействия](/previous-versions/dotnet/netframework-4.0/8zbc969t(v=vs.100)).  
   
 ## <a name="example"></a>Пример  
+
  Ниже приведен пример кода интерфейса `ISATest` и класса `SATest` в IDL вместе с соответствующими типами в исходном коде C#.  
   
  **Файл IDL или файл библиотеки типов**  

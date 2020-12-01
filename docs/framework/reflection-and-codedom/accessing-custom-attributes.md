@@ -11,20 +11,23 @@ helpviewer_keywords:
 - attributes [.NET Framework], accessing
 - reflection, custom attributes
 ms.assetid: 1d8e3398-00d8-47d5-a084-214f9859d3d7
-ms.openlocfilehash: 1197fc5149e144d293deda1173e82ca2dadeda7d
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: d441bad7d4af3a88c4ede507d1bce7bdd1ab3215
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475142"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266822"
 ---
 # <a name="accessing-custom-attributes"></a>Доступ к пользовательским атрибутам
+
 После того как с элементами программы связаны атрибуты, можно использовать отражение для проверки их существования и получения значений. В .NET Framework версии 1.0 и 1.1 пользовательские атрибуты проверяются в контексте выполнения. Платформа .NET Framework версии 2.0 предоставляет новый контекст загрузки — контекст только для отражения, используемый для проверки кода, который не может быть загружен для выполнения.  
   
 ## <a name="the-reflection-only-context"></a>Контекст только для отражения  
+
  Код, загруженный в контекст только для отражения, не может быть выполнен. Это означает, что экземпляры пользовательских атрибутов не могут быть созданы, потому что это потребует выполнения соответствующих конструкторов. Чтобы загрузить и просмотреть пользовательские атрибуты в контексте только для отражения, используйте класс <xref:System.Reflection.CustomAttributeData>. Экземпляры этого класса можно получить посредством использования допустимой перегрузки статического метода <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A?displayProperty=nameWithType>. См. практическое руководство по [ Загрузка сборок в контекст, предназначенный только для отражения](how-to-load-assemblies-into-the-reflection-only-context.md).  
   
 ## <a name="the-execution-context"></a>Контекст выполнения  
+
  Основные методы отражения, используемые для запроса атрибутов в контексте выполнения — это <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> и <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>.  
   
  Возможность доступа к пользовательскому атрибуту проверяется относительно сборки, с которой он связан. Это эквивалентно проверке того, может ли метод типа в сборке, с которой связан атрибут, вызвать конструктор этого атрибута.  

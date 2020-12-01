@@ -11,12 +11,12 @@ helpviewer_keywords:
 - attribute fields in platform invoke, CharSet
 - CharSet field
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
-ms.openlocfilehash: 789753742d8714e481f038e323407cbab0499f6c
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 8cc4198d6c13d4705ffc5ce5229cce7a205aec8a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309798"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96278184"
 ---
 # <a name="specify-a-character-set"></a>Определение кодировки
 
@@ -33,6 +33,7 @@ ms.locfileid: "86309798"
      Обеспечивает форматирование двухбайтовых символов Юникода и имеет суффикс "W" в имени точки входа. При вызове **MessageBoxW** строки всегда маршалируются в формате Юникод.  
   
 ## <a name="string-marshaling-and-name-matching"></a>Маршалинг строк и сопоставление имен  
+
  Поле `CharSet` принимает следующие значения:  
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (значение по умолчанию)  

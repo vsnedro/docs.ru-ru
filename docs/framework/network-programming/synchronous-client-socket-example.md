@@ -10,14 +10,15 @@ helpviewer_keywords:
 - synchronous client sockets
 - sockets, synchronous client sockets
 ms.assetid: 2c7d5be7-2221-467c-a839-5744ec4d576d
-ms.openlocfilehash: 7455307441045360bc62cee50f13d106df4d005e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d2595f3a6cb5e1ced17697def33e35ce8912ea90
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502123"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279250"
 ---
 # <a name="synchronous-client-socket-example"></a>Пример синхронного сокета клиента
+
 Приведенная ниже программа создает клиент, который подключается к серверу. Клиент создается с использованием синхронного сокета, поэтому выполнение клиентского приложения приостанавливается до тех пор, пока сервер не вернет ответ. Приложение отправляет строку на сервер, а затем выводит возвращенную им строку в консоли.  
   
 ```vb  

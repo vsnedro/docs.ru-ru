@@ -10,14 +10,15 @@ dev_langs:
 - cpp
 - csharp
 - vb
-ms.openlocfilehash: fa7af39c0addb328944a03236c26982301caf722
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 771917bb2ae5cae56c775ae23119d5eda9701df1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865324"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266328"
 ---
 # <a name="how-to-get-type-and-member-information-by-using-reflection"></a>Практическое руководство. Получение сведений о типах и членах с помощью отражения
+
 Пространство имен <xref:System.Reflection> содержит много методов для получения сведений о типах и их членах. В этой статье демонстрируется один из этих методов — <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>. Дополнительные сведения см. в разделе [Общие сведения об отражении](reflection.md).
   
 ## <a name="example"></a>Пример

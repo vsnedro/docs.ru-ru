@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .NET Framework, troubleshooting blocked installations
 - blocked .NET Framework installations, troubleshooting
 ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d
-ms.openlocfilehash: e6f5dbce6bd10ae68b2033a135660d1e31aceff9
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 9f4ae96a148d850efd92f950a177b32cc75c33ab
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558456"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283176"
 ---
 # <a name="troubleshoot-blocked-net-framework-installations-and-uninstallations"></a>Устранение неполадок заблокированных установок и удалений .NET Framework
 
@@ -53,6 +53,7 @@ ms.locfileid: "88558456"
 |Для этой программы установки требуется компьютер с процессором x64 или x86. Ее невозможно установить на компьютер с процессором IA64.|См. раздел [Требования к системе](../get-started/system-requirements.md).|  
 
 <a name="compat"></a>
+
 ### <a name="program-compatibility-issues"></a>Проблемы совместимости программ
 
 Установка .NET Framework 4.5 и ее доработанных выпусков завершается сбоем с кодом ошибки 1603 или блокируется, когда она выполняется в режиме совместимости программ Windows. **Помощник по совместимости программ** сообщает, что платформа .NET Framework могла быть установлена неправильно, и предлагает переустановить ее с использованием рекомендуемых параметров (режима совместимости программ). Также возможно, что помощник по совместимости программ выбрал режим совместимости, если программу установки .NET Framework не удалось запустить или установка была отменена.

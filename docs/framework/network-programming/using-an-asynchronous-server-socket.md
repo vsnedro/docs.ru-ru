@@ -18,14 +18,15 @@ helpviewer_keywords:
 - protocols, sockets
 - Internet, sockets
 ms.assetid: 813489a9-3efd-41b6-a33f-371d55397676
-ms.openlocfilehash: 8b85afb3ffdf69973eff37ccbb067b470ed44e3a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6800a1973d9eb65bbb7520f9db7a8f431656c685
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502032"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265210"
 ---
 # <a name="using-an-asynchronous-server-socket"></a>Использование асинхронных сокетов сервера
+
 Асинхронные сокеты сервера используют асинхронную модель программирования платформы .NET Framework для обработки запросов сетевых служб. Класс <xref:System.Net.Sockets.Socket> соответствует стандартному шаблону асинхронного именования платформы .NET Framework. Например, синхронный метод <xref:System.Net.Sockets.Socket.Accept%2A> соответствует асинхронным методам <xref:System.Net.Sockets.Socket.BeginAccept%2A> и <xref:System.Net.Sockets.Socket.EndAccept%2A>.  
   
  Для асинхронного сокета сервера нужен метод, который начинает принимать запросы на соединение из сети, метод обратного вызова, чтобы обрабатывать запросы на соединение и начинать принимать данные, и метод обратного вызова для завершения получения данных. Все эти методы описаны ниже в этом разделе.  

@@ -12,14 +12,15 @@ helpviewer_keywords:
 - COM interop, HRESULTs
 - COM interop, exceptions
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
-ms.openlocfilehash: a1a43d7ce3fbc678cc9aa047c5110ac8615ea27e
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ea5d920ccfa8a91c9fdc9d95c6165c8dfb52c6ff
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554147"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267043"
 ---
 # <a name="how-to-map-hresults-and-exceptions"></a>Практическое руководство. Сопоставление значений HRESULT и исключений
+
 Методы COM сообщают об ошибках, возвращая значения HRESULT. Методы .NET в этом случае вызывают исключения. Среда выполнения обеспечивает сопоставление этих двух элементов. Каждый класс платформы .NET Framework сопоставляется со значением HRESULT.  
   
  Соответствующие значения HRESULT задаются определяемыми пользователем классами исключений. Эти классы исключений могут динамически изменять значение HRESULT, возвращаемое при возникновении исключения, устанавливая поле **HResult** соответствующего объекта исключения. Дополнительные сведения об исключении предоставляются клиенту посредством интерфейса **IErrorInfo**, который реализуется для объекта .NET в неуправляемом процессе.  

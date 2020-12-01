@@ -18,14 +18,15 @@ helpviewer_keywords:
 - Internet, sockets
 - client sockets
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-ms.openlocfilehash: 9cf46e9519bcecf4d7a20ff99b86fa5f66af2087
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: af5379533e51e7488d673359dc24268c6329c082
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502045"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265223"
 ---
 # <a name="using-an-asynchronous-client-socket"></a>Использование асинхронных сокетов клиента
+
 Асинхронный сокет клиента не приостанавливает работу приложения на то время, пока выполняются сетевые операции. Вместо этого он использует стандартную модель асинхронного программирования .NET Framework для обработки операций сетевого подключения в одном потоке, пока приложение продолжает работу в изначальном потоке. Асинхронные сокеты подходят для приложений, которые интенсивно используют сеть или не могут ждать, пока сетевые операции завершатся.  
   
  Класс <xref:System.Net.Sockets.Socket> соответствует шаблону именования платформы .NET Framework для асинхронных методов. Например, синхронный метод <xref:System.Net.Sockets.Socket.Receive%2A> соответствует асинхронным методам <xref:System.Net.Sockets.Socket.BeginReceive%2A> и <xref:System.Net.Sockets.Socket.EndReceive%2A>.  

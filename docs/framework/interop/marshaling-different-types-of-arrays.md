@@ -9,13 +9,15 @@ helpviewer_keywords:
 - marshaling, Arrays sample
 - data marshaling, Arrays sample
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
-ms.openlocfilehash: f1473c7917189f0b36c96b2adcf20005c5fd6b48
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: b7777e99daf9d294bf26033f470a6e562b7b727f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621500"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96269097"
 ---
 # <a name="marshaling-different-types-of-arrays"></a>Маршалинг различных типов массивов
+
 Массив является ссылочным типом в управляемом коде, содержащим один или несколько элементов одного и того же типа. Несмотря на то, что массивы являются ссылочными типами, они передаются в неуправляемые функции в виде параметров In. Это поведение не согласуется со способом передачи управляемых массивов в управляемые объекты в виде параметров In/Out. Подробнее см. в разделе [Копирование и закрепление](copying-and-pinning.md).  
   
  В таблице ниже перечислены параметры маршалинга для массивов и описывается их использование.  
@@ -30,6 +32,7 @@ ms.locfileid: "85621500"
 |Структуры со строками.|Передает массив структур, содержащих только строки, в виде параметра In или Out. Элементы массива можно изменять.|  
   
 ## <a name="example"></a>Пример  
+
  В этом примере показаны способы передачи массивов следующих типов:  
   
 - массив целых чисел по значению;  
@@ -48,37 +51,37 @@ ms.locfileid: "85621500"
   
  В этом примере используются перечисленные ниже неуправляемые функции, показанные со своими исходными объявлениями.  
   
-- Функция**TestArrayOfInts** , экспортированная из PinvokeLib.dll.  
+- Функция **TestArrayOfInts** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestArrayOfInts(int* pArray, int pSize);  
     ```  
   
-- Функция**TestRefArrayOfInts** , экспортированная из PinvokeLib.dll.  
+- Функция **TestRefArrayOfInts** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestRefArrayOfInts(int** ppArray, int* pSize);  
     ```  
   
-- Функция**TestMatrixOfInts** , экспортированная из PinvokeLib.dll.  
+- Функция **TestMatrixOfInts** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestMatrixOfInts(int pMatrix[][COL_DIM], int row);  
     ```  
   
-- Функция**TestArrayOfStrings** , экспортированная из PinvokeLib.dll.  
+- Функция **TestArrayOfStrings** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestArrayOfStrings(char** ppStrArray, int size);  
     ```  
   
-- Функция**TestArrayOfStructs** , экспортированная из PinvokeLib.dll.  
+- Функция **TestArrayOfStructs** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestArrayOfStructs(MYPOINT* pPointArray, int size);  
     ```  
   
-- Функция**TestArrayOfStructs2** , экспортированная из PinvokeLib.dll.  
+- Функция **TestArrayOfStructs2** , экспортированная из PinvokeLib.dll.  
   
     ```cpp
     int TestArrayOfStructs2 (MYPERSON* pPersonArray, int size);  
@@ -105,10 +108,12 @@ typedef struct _MYPERSON
  Класс `NativeMethods` содержит набор методов, вызываемых классом `App` . Конкретные сведения о передаче массивов см. в комментариях к приведенному ниже примеру. Массив, который является ссылочным типом, по умолчанию передается в виде параметра In. Чтобы вызывающий объект мог получать результаты, необходимо явным образом применить атрибуты **InAttribute** и **OutAttribute** к аргументу, содержащему массив.  
   
 ### <a name="declaring-prototypes"></a>Объявление прототипов  
+
  [!code-csharp[Conceptual.Interop.Marshaling#31](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#31)]
  [!code-vb[Conceptual.Interop.Marshaling#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#31)]  
   
 ### <a name="calling-functions"></a>Вызов функций  
+
  [!code-csharp[Conceptual.Interop.Marshaling#32](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#32)]
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   

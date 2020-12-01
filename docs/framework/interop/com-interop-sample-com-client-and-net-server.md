@@ -9,16 +9,19 @@ helpviewer_keywords:
 - interoperation with unmanaged code, samples
 - COM interop, samples
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
-ms.openlocfilehash: 1a9c17cda6a6d129327b296e5d7d851902f78d35
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 91c908153592eb8ae55ecd341b32b82a232ee473
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620889"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282929"
 ---
 # <a name="com-interop-sample-com-client-and-net-server"></a>Пример COM-взаимодействия. COM-клиент и сервер .NET
+
 В этом примере демонстрируется взаимодействие [клиента COM](#cpconcominteropsamplecomclientnetserveranchor1) и [сервера .NET](#cpconcominteropsamplecomclientnetserveranchor2), в рамках которого рассчитывается величина выплат по ипотечному кредиту. В этом примере клиент создает и вызывает экземпляр управляемого класса `Loan`, передает в экземпляр четыре аргумента (один из этих аргументов равен нулю) и отображает результаты вычислений. Примеры кода из этого образца используются в рамках всего этого раздела.  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor1"></a>
+
 ## <a name="com-client"></a>Клиент COM  
   
 ```cpp  
@@ -86,6 +89,7 @@ int main(int argc, char* argv[])
 ```  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor2"></a>
+
 ## <a name="net-server"></a>Сервер .NET  
   
 ```vb  

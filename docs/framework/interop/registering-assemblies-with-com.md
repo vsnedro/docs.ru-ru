@@ -8,14 +8,15 @@ helpviewer_keywords:
 - interoperation with unmanaged code, registering assemblies
 - registering assemblies
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
-ms.openlocfilehash: 0adae4db393c4c01620ea896c4451c3279272fca
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 525e3724aec82a74f5b0339296808b41f30d0ddc
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559282"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266380"
 ---
 # <a name="registering-assemblies-with-com"></a>Регистрация сборок в COM
+
 С помощью программы командной строки, которая называется [средством регистрации сборок (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md), можно регистрировать сборки для использования с моделью COM и отменять их регистрацию. Программа Regasm.exe добавляет сведения о классе в системный реестр, что обеспечивает прозрачное использование класса .NET Framework COM-клиентами. Класс <xref:System.Runtime.InteropServices.RegistrationServices> реализует эквивалентные функциональные возможности.  
   
  Управляемый компонент необходимо регистрировать в реестре Windows до того, как он будет активироваться из COM-клиента. В следующей таблице показаны разделы, которые программа Regasm.exe обычно добавляет в реестр Windows. (000000 указывает фактическое значение GUID.)  
@@ -38,6 +39,7 @@ ms.locfileid: "90559282"
  Программа Regasm.exe также создает подраздел InProcServer32 в разделе HKCR\CLSID\\{0000…0000}. В качестве значения по умолчанию этому разделу присваивается имя библиотеки DLL, которая инициализирует общеязыковую среду выполнения (Mscoree.dll).  
   
 ## <a name="examining-registry-entries"></a>Проверка записей реестра  
+
  COM-взаимодействие предоставляет стандартную реализацию фабрики класса для создания экземпляра любого класса .NET Framework. Клиенты могут вызывать **DllGetClassObject** для управляемой библиотеки DLL, чтобы получить фабрику класса и создать объекты так же, как и для любого другого COM-компонента.  
   
  В подразделе `InprocServer32` вместо традиционной библиотеки типов COM указывается ссылка на библиотеку Mscoree.dll. Это указывает на то, что общеязыковая среда выполнения создает объект.  

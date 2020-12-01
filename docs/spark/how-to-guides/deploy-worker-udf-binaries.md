@@ -4,12 +4,12 @@ description: Узнайте, как развернуть рабочую роль
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 19ecd4736baaf789a409229d35a6946c6021db45
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: c777fdb26045c62317b49259fdde974f43ba5c0d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688193"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293771"
 ---
 # <a name="deploy-net-for-apache-spark-worker-and-user-defined-function-binaries"></a>Развертывание рабочей роли и двоичных файлов пользовательских функций .NET для Apache Spark
 
@@ -30,6 +30,7 @@ ms.locfileid: "94688193"
 | DOTNET_WORKER_DEBUG          | Если нужно <a href="https://github.com/dotnet/spark/blob/master/docs/developer-guide.md#debugging-user-defined-function-udf">выполнить отладку пользовательской функции</a>, присвойте этой переменной среды значение <code>1</code> перед выполнением <code>spark-submit</code>.
 
 ### <a name="parameter-options"></a>Параметры
+
 После [упаковки](https://spark.apache.org/docs/latest/submitting-applications.html#bundling-your-applications-dependencies) приложения Spark его можно запустить с помощью `spark-submit`. В таблице ниже представлены некоторые часто используемые параметры.
 
 | имени параметра        | Описание
@@ -47,17 +48,21 @@ ms.locfileid: "94688193"
 > При запуске приложений с помощью `spark-submit` укажите все параметры `--options` перед `application-jar`, иначе они будут проигнорированы. Дополнительные сведения см. в [описании параметров `spark-submit`](https://spark.apache.org/docs/latest/submitting-applications.html) и [подробной статье о запуске Spark в режиме YARN](https://spark.apache.org/docs/latest/running-on-yarn.html).
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
+
 ### <a name="when-i-run-a-spark-app-with-udfs-i-get-a-filenotfoundexception-error-what-should-i-do"></a>При запуске приложения Spark с пользовательскими функциями возникает ошибка FileNotFoundException. Что следует делать?
+
 > **Ошибка:** [Error] [TaskRunner] [0] Произошел сбой ProcessStream() со следующим исключением. System.IO.FileNotFoundException: файл сборки "mySparkApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" не найден: "mySparkApp.dll"
 
 **Ответ.** Проверьте, правильно ли задана переменная среды `DOTNET_ASSEMBLY_SEARCH_PATHS`. Она должна содержать путь к файлу `mySparkApp.dll`.
 
 ### <a name="after-i-upgraded-my-net-for-apache-spark-version-and-reset-the-dotnet_worker_dir-environment-variable-why-do-i-still-get-the-following-ioexception-error"></a>Почему после обновления версии .NET для Apache Spark и сброса переменной среды `DOTNET_WORKER_DIR` по-прежнему происходит указанная ниже ошибка `IOException`?
+
 > **Ошибка:** Утеряна задача 0.0 на этапе 11.0 (TID 24, localhost, драйвер исполнителя): java.io.IOException: Не удается запустить программу Microsoft.Spark.Worker.exe: CreateProcess error=2. Система не может найти указанный файл.
 
 **Ответ.** Сначала попробуйте перезапустить окно PowerShell (или другие командные окна), чтобы получить последние значения переменных среды. Затем запустите программу.
 
 ### <a name="after-submitting-my-spark-application-i-get-the-error-systemtypeloadexception-could-not-load-type-systemruntimeremotingcontextscontext"></a>После отправки приложения Spark происходит ошибка `System.TypeLoadException: Could not load type 'System.Runtime.Remoting.Contexts.Context'`.
+
 > **Ошибка:** [Error] [TaskRunner] [0] Произошел сбой ProcessStream() со следующим исключением. System.TypeLoadException: не удалось загрузить тип System.Runtime.Remoting.Contexts.Context из сборки "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=...".
 
 **Ответ.** Проверьте используемую версию `Microsoft.Spark.Worker`. Имеются две версии: **.NET Framework 4.6.1** и **.NET Core 3.1.x**. В этом случае следует использовать `Microsoft.Spark.Worker.net461.win-x64-<version>` (которую можно скачать [здесь](https://github.com/dotnet/spark/releases)), так как тип `System.Runtime.Remoting.Contexts.Context` предназначен только для .NET Framework.

@@ -12,14 +12,15 @@ helpviewer_keywords:
 - logs, trace
 - destination for tracing output
 ms.assetid: 5fff458c-51a6-4134-ba47-8a6137ddc41e
-ms.openlocfilehash: 4ad0b23fc93ddcdc11cebcc556d12148df5e8ae2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 246a975ead3cb9c1acb4fe0512dfa91d1b8a00c0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502604"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287427"
 ---
 # <a name="enabling-network-tracing"></a>Включение сетевой трассировки
+
 Трассировка сети предоставляет доступ к сведениям о вызовах методов и о сетевом трафике, созданном управляемым приложением. Чтобы включить трассировку сети в приложении, выполните следующие действия:  
   
 - Скомпилируйте код с включенной трассировкой. См. практическое руководство по [ Условная компиляция с использованием атрибутов Trace и Debug](../debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).  

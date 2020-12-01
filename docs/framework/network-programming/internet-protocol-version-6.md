@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Internet Protocol version 6, improvements
 - Internet Protocol version 6
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
-ms.openlocfilehash: c2b23705ae309436344513e54d6258e206d69da4
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f5b74674ba4144f75d125267f2458394bb74fab1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551469"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283956"
 ---
 # <a name="internet-protocol-version-6"></a>протокол IP версии 6
+
 Протокол IP версии 6 (IPv6) — это новый набор стандартных протоколов для сетевого уровня Интернета. IPv6 позволяет устранить множество проблем текущей версии набора интернет-протоколов (известного как IPv4), связанных с нехваткой адресов, безопасностью, автоматической настройкой, расширяемостью и т. д. IPv6 расширяет возможности Интернета для активации новых видов приложений, включая приложения для одноранговой сети и мобильных устройств. Ниже приведены основные проблемы текущего протокола IPv4.  
   
 - Быстрое исчерпание диапазона адресов.  
@@ -46,6 +47,7 @@ ms.locfileid: "90551469"
  Дополнительные сведения см. в разделах [Адресация IPv6](ipv6-addressing.md), [Маршрутизация IPv6](ipv6-routing.md), [Автоматическая настройка IPv6](ipv6-auto-configuration.md), [Включение и отключение IPv6](enabling-and-disabling-ipv6.md) и [Практическое руководство. Изменение файла конфигурации компьютера для включения поддержки IPv6](how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md).  
   
 ## <a name="references"></a>Ссылки  
+
  Ниже перечислен ряд документов RFC, которые можно найти на веб-сайте [IETF](https://www.ietf.org/):  
   
 - RFC 1287, Towards the Future Internet Architecture.  

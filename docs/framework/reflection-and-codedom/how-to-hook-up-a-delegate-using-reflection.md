@@ -11,14 +11,15 @@ helpviewer_keywords:
 - reflection, adding event-handler delegates
 - delegates [.NET Framework], adding event handlers with reflection
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
-ms.openlocfilehash: b5d93efd278a53a4e6382f2321918e58ead55899
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 9a92afd1c2aeadeb0cf7bc1e626b5bd1fb3cecea
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865090"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263429"
 ---
 # <a name="how-to-hook-up-a-delegate-using-reflection"></a>Практическое руководство. Подключение делегата с помощью отражения
+
 При использовании отражения для загрузки и запуска сборок невозможно использовать функциональные возможности языка, такие как оператор C# `+=` или [оператор AddHandler](../../visual-basic/language-reference/statements/addhandler-statement.md) в Visual Basic. В следующих процедурах показано, как подключить существующий метод к событию посредством получения всех необходимых типов через отражение и как создать динамический метод с помощью порожденного отражения и подключить этот метод к событию.  
   
 > [!NOTE]
@@ -69,6 +70,7 @@ ms.locfileid: "86865090"
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
 <a name="procedureSection1"></a>
+
 ### <a name="to-generate-an-event-handler-at-run-time-by-using-a-dynamic-method"></a>Создание обработчика событий во время выполнения с помощью динамического метода  
   
 1. Методы обработчика события могут быть созданы во время выполнения с помощью облегченных динамических методов и порождения отражения. Чтобы создать обработчик событий, будут необходимы тип возвращаемого значения и типы параметров делегата. Их можно получить, просмотрев метод `Invoke`, относящийся к делегату. В следующем примере кода используются методы `GetDelegateReturnType` и `GetDelegateParameterTypes` для получения этих сведений. Код для этих методов можно найти в подразделе "Пример" этого раздела.  
@@ -98,6 +100,7 @@ ms.locfileid: "86865090"
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода показано, как подключить существующий метод к событию с помощью отражения, а также как использовать класс <xref:System.Reflection.Emit.DynamicMethod> для выпуска метода во время выполнения и подключить его к событию.  
   
  [!code-cpp[HookUpDelegate#1](../../../samples/snippets/cpp/VS_Snippets_CLR/HookUpDelegate/cpp/source.cpp#1)]

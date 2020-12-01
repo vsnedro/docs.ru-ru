@@ -3,20 +3,23 @@ title: Выбор и проверка сертификата
 description: Сведения о различных способах выбора и проверки сертификатов для соединений SSL/TLS, которые реализуются в классах System.Net.
 ms.date: 03/30/2017
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
-ms.openlocfilehash: 2dc63413f5c3a5fadd0d62ad61f0b887697c6a45
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a85b6947c20f7dbced1fb6ad6e79f3134ce1f57b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502656"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287518"
 ---
 # <a name="certificate-selection-and-validation"></a>Выбор и проверка сертификата
+
 Классы <xref:System.Net> поддерживают несколько способов выбора и проверки <xref:System.Security.Cryptography.X509Certificates> для подключений SSL. Клиент может выбрать один или несколько сертификатов для прохождения проверки подлинности на сервере. Сервер может потребовать наличия в сертификате клиента одного или нескольких атрибутов для проверки подлинности.  
   
 ## <a name="definition"></a>Определение  
+
  Сертификат — это поток байтов в кодировке ASCII, который содержит открытый ключ, атрибуты (такие как номер версии, серийный номер и дата истечения срока действия) и цифровую подпись из центра сертификации. Сертификаты служат для установления зашифрованных соединений или для проверки подлинности клиента на сервере.  
   
 ## <a name="client-certificate-selection-and-validation"></a>Выбор и проверка сертификата клиента  
+
  Клиент может выбрать для SSL-соединения один или несколько сертификатов. Сертификаты клиента могут быть связаны с SSL-соединением с веб-сервером или почтовым SMTP-сервером. Клиент добавляет сертификаты в коллекцию объектов класса <xref:System.Security.Cryptography.X509Certificates.X509Certificate> или <xref:System.Security.Cryptography.X509Certificates.X509Certificate2>. Если взять для примера электронную почту, коллекция сертификатов — это экземпляр <xref:System.Security.Cryptography.X509Certificates.X509CertificateCollection>, связанный со свойством <xref:System.Net.Mail.SmtpClient.ClientCertificates%2A> класса <xref:System.Net.Mail.SmtpClient>. Класс <xref:System.Net.HttpWebRequest> имеет аналогичное свойство <xref:System.Net.HttpWebRequest.ClientCertificates%2A>.  
   
  Основное различие между классами <xref:System.Security.Cryptography.X509Certificates.X509Certificate> и <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> заключается в том, что для класса <xref:System.Security.Cryptography.X509Certificates.X509Certificate> закрытый ключ должен находиться в хранилище сертификатов.  
@@ -28,6 +31,7 @@ ms.locfileid: "84502656"
  Удаленный сервер может проверить, является ли сертификат клиента действительным, актуальным и подписан ли он соответствующим центром сертификации. Делегат можно добавить в <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> для принудительной проверки сертификата.  
   
 ## <a name="client-certificate-selection"></a>Выбор сертификата клиента  
+
  Платформа .NET Framework выбирает сертификат клиента для предъявления серверу указанным ниже образом.  
   
 1. Если сертификат клиента предъявлялся серверу ранее, он был кэширован при первом предъявлении и используется повторно при последующих запросах сертификата клиента.  
@@ -37,6 +41,7 @@ ms.locfileid: "84502656"
 3. Если это первый запрос сертификата клиента, платформа перечисляет сертификаты в объектах класса <xref:System.Security.Cryptography.X509Certificates.X509Certificate> или <xref:System.Security.Cryptography.X509Certificates.X509Certificate2>, связанных с соединением, и ищет совпадение с именем издателя сертификата клиента в списке издателей сертификатов, предоставляемом сервером. Первый совпадающий сертификат отправляется на сервер. Если совпадений нет или коллекция сертификатов пуста, на сервер отправляются анонимные учетные данные.  
   
 ## <a name="tools-for-certificate-configuration"></a>Средства для настройки сертификатов  
+
  Для настройки сертификатов клиента и сервера имеется ряд средств.  
   
  С помощью средства *Winhttpcertcfg.exe* можно настраивать сертификаты клиента. Средство *Winhttpcertcfg.exe* входит в состав набора ресурсов Windows Server 2003. Его также можно скачать в составе средств набора ресурсов Windows Server 2003 на сайте [www.microsoft.com](https://www.microsoft.com).  

@@ -9,13 +9,15 @@ dev_langs:
 helpviewer_keywords:
 - callback function, implementing
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
-ms.openlocfilehash: 31c657372e760c8d57f9714b20178967ad85fcd3
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 9fa1d3b3ece334e109584f38ba69b796dfe24491
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619121"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267056"
 ---
 # <a name="how-to-implement-callback-functions"></a>Практическое руководство. Реализация функций обратного вызова
+
 В приведенных ниже процедуре и примере показано, как, используя вызов неуправляемого кода, можно напечатать из управляемого приложения значение дескриптора для каждого окна на локальном компьютере. В частности, для печати значения дескриптора окна в процедуре и примере используется функция **EnumWindows**, которая просматривает список окон, и управляемая функция обратного вызова CallBack.  
   
 ### <a name="to-implement-a-callback-function"></a>Реализация функции обратного вызова  

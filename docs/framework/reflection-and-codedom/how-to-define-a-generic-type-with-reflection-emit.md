@@ -11,14 +11,15 @@ helpviewer_keywords:
 - generics [.NET Framework], dynamic types
 - reflection emit, generic types
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
-ms.openlocfilehash: bf308b07bf4b2a863b9825e7c8d9f412bdb6d1b8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 75076eb9ce1b9bfc6b3c8b5a48e200ca5e63cdff
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90559217"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263468"
 ---
 # <a name="how-to-define-a-generic-type-with-reflection-emit"></a>Практическое руководство. Определение универсального типа с порождаемым отражением
+
 В этом разделе приведено описание способов создания простого универсального типа с двумя параметрами типа, порядка применения ограничений класса, ограничений интерфейса и специальных ограничений параметров типа, создания элементов, использующих параметры типа класса в качестве типов параметров и возвращаемых типов.  
   
 > [!IMPORTANT]
@@ -110,6 +111,7 @@ ms.locfileid: "90559217"
      [!code-vb[EmitGenericType#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/EmitGenericType/VB/source.vb#10)]  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере кода определяется класс с именем `Sample` наряду с базовым классом и двумя интерфейсами. Программа определяет два параметра универсального типа для `Sample`, преобразуя его в универсальный тип. Параметры типа — это единственный фактор, делающий тип универсальным. Программа отображает это посредством сообщения проверки до и после определения параметров типа.  
   
  Параметр типа `TSecond` используется для демонстрации ограничений класса и интерфейса с помощью базовых классов и интерфейсов, а параметр типа `TFirst` применяется для демонстрации специальных ограничений.  

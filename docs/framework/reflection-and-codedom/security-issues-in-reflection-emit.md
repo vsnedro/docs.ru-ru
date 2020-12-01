@@ -12,14 +12,15 @@ helpviewer_keywords:
 - emitting dynamic assemblies,partial trust scenarios
 - dynamic assemblies, security
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
-ms.openlocfilehash: 62bce7435887855f799d320736e6bce8f39e5999
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 859c564e107fd3a9b219d71dc6ac5ccdf6e9d690
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558801"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259282"
 ---
 # <a name="security-issues-in-reflection-emit"></a>Вопросы безопасности в порождаемом отражении
+
 Платформа .NET Framework предоставляет три способа создания промежуточного языка Майкрософт (MSIL), каждый из которых имеет собственные вопросы безопасности:  
   
 - [Динамические сборки](#Dynamic_Assemblies)  
@@ -34,7 +35,9 @@ ms.locfileid: "90558801"
 > Разрешения, необходимые для отражения и порождения кода, были изменены в последующих выпусках .NET Framework. Подробнее см. в подразделе [Сведения о версиях](#Version_Information) далее в этом разделе.  
   
 <a name="Dynamic_Assemblies"></a>
+
 ## <a name="dynamic-assemblies"></a>Динамические сборки  
+
  Динамические сборки создаются с помощью перегрузок метода <xref:System.AppDomain.DefineDynamicAssembly%2A?displayProperty=nameWithType>. Большинство способов перегрузки этого метода не рекомендуется использовать в .NET Framework 4, так как политика безопасности на уровне компьютера больше не используется. (См. раздел [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).) Остальные перегрузки могут выполняться из любого кода независимо от уровня доверия. Эти перегрузки делятся на две группы: те, которые определяют список атрибутов, применяемых к динамической сборке при ее создании, и те, которые этого не делают. Если не указать модель прозрачности для сборки, применив атрибут <xref:System.Security.SecurityRulesAttribute> при ее создании, эта модель наследуется от порождающей сборки.  
   
 > [!NOTE]
@@ -48,6 +51,7 @@ ms.locfileid: "90558801"
  Временные динамические сборки создаются в памяти и никогда не сохраняются на диск, поэтому им не требуются разрешения на доступ к файлам. Для сохранения динамической сборки на диск требуется разрешение <xref:System.Security.Permissions.FileIOPermission> с соответствующими флагами.  
   
 ### <a name="generating-dynamic-assemblies-from-partially-trusted-code"></a>Создание динамических сборок из частично доверенного кода  
+
  Рассмотрим условия, в которых сборка с разрешениями на доступ к Интернету может создавать временную динамическую сборку и выполнять ее код.  
   
 - Динамическая сборка использует только открытые типы и члены других сборок.  
@@ -59,7 +63,9 @@ ms.locfileid: "90558801"
 - Отладочные символы не создаются (наборы разрешений `Internet` и `LocalIntranet` не включают необходимые разрешения).  
   
 <a name="Anonymously_Hosted_Dynamic_Methods"></a>
+
 ## <a name="anonymously-hosted-dynamic-methods"></a>Анонимно размещенные динамические методы  
+
  Анонимно размещенные динамические методы создаются с помощью двух конструкторов <xref:System.Reflection.Emit.DynamicMethod>, которые не указывают связанный тип или модуль, <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%29> и <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29>. Эти конструкторы размещают динамические методы в предоставляемой системой сборке, которая является полностью доверенной и прозрачный для системы безопасности. Для использования этих конструкторов или порождения кода для динамических методов разрешения не требуются.  
   
  Вместо этого при создании анонимно размещаемых динамических методов записывается стек вызовов. При создании метода требования безопасности предъявляются к записанному стеку вызовов.  
@@ -82,6 +88,7 @@ ms.locfileid: "90558801"
  Дополнительные сведения см. в описании класса <xref:System.Reflection.Emit.DynamicMethod>.  
   
 ### <a name="generating-anonymously-hosted-dynamic-methods-from-partially-trusted-code"></a>Создание анонимно размещенных динамических методов из частично доверенного кода  
+
  Рассмотрим условия, в которых сборка с разрешениями на доступ к Интернету может создавать анонимно размещенный динамический метод и выполнять его.  
   
 - Динамический метод использует только открытые типы и члены. Если его набор прав включает <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType>, он может использовать закрытые типы и члены любой сборки, набор прав которой идентичен набору прав порождающей сборки или является его подмножеством.  
@@ -92,7 +99,9 @@ ms.locfileid: "90558801"
 > Динамические методы не поддерживают отладочные символы.  
   
 <a name="Dynamic_Methods_Associated_with_Existing_Assemblies"></a>
+
 ## <a name="dynamic-methods-associated-with-existing-assemblies"></a>Динамические методы, связанные с существующими сборками  
+
  Чтобы связать динамический метод с типом или модулем в существующей сборке, используйте любой из конструкторов <xref:System.Reflection.Emit.DynamicMethod>, который указывает связанный тип или модуль. Разрешения, необходимые для вызова этих конструкторов, могут быть разными, так как при связывании динамического метода с существующим типом или модулем он получает доступ к закрытым типам и членам.  
   
 - Динамический метод, связанный с типом, имеет доступ ко всем членам этого типа, даже к закрытым, а также ко всем внутренним типам и членам в сборке, содержащей связанный тип.  
@@ -137,7 +146,9 @@ ms.locfileid: "90558801"
 > Динамические методы не поддерживают отладочные символы.  
   
 <a name="Version_Information"></a>
+
 ## <a name="version-information"></a>Сведения о версии  
+
  Начиная с .NET Framework 4 политика безопасности на уровне компьютера больше не используется, и механизмом обеспечения безопасности по умолчанию становится прозрачность безопасности. См. раздел [Изменения системы безопасности](/previous-versions/dotnet/framework/security/security-changes).  
   
  Начиная с .NET Framework 2.0 с пакетом обновления 1 (SP1), разрешение <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.ReflectionEmit?displayProperty=nameWithType> больше не требуется при порождении динамических сборок и динамических методов. Этот флаг необходим во всех более ранних версиях платформы .NET Framework.  
@@ -150,6 +161,7 @@ ms.locfileid: "90558801"
  Наконец, в .NET Framework 2.0 с пакетом обновления 1 (SP1) реализованы анонимно размещенные методы.  
   
 ### <a name="obtaining-information-on-types-and-members"></a>Получение сведений о типах и членах  
+
  Начиная с .NET Framework 2.0 для получения сведений о закрытых типах и членах никакие разрешения не требуются. Для получения сведений, необходимых для порождения динамических методов, используется отражение. Например, объекты <xref:System.Reflection.MethodInfo> используются для порождения вызовов метода. Более ранние версии платформы .NET Framework требуют <xref:System.Security.Permissions.ReflectionPermission> с флагом <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType>. Дополнительные сведения см. в разделе [Соображения о безопасности для отражения](security-considerations-for-reflection.md).  
   
 ## <a name="see-also"></a>См. также

@@ -10,18 +10,21 @@ helpviewer_keywords:
 - interoperation with unmanaged code, samples
 - COM interop, samples
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
-ms.openlocfilehash: bc95197813f5e4b0f4c7db6a8f0c24e8b27e4c3e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ed8568116d189573a1903678726cb348fa062376
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620876"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282890"
 ---
 # <a name="com-interop-sample-net-client-and-com-server"></a>Пример COM-взаимодействия. Клиент .NET и COM-сервер
+
 В этом примере демонстрируется, как [клиент .NET](#cpconcominteropsamplenetclientcomserveranchor1), построенный для доступа к [COM-серверу](#cpconcominteropsamplenetclientcomserveranchor2), создает экземпляр кокласса COM и вызывает члены класса для расчета выплат по ипотечному кредиту.  
   
  В этом примере клиент создает и вызывает экземпляр кокласса **Loan**, передает в экземпляр четыре аргумента (один из этих аргументов равен нулю) и отображает результаты вычислений. Фрагменты кода из этого образца используются в рамках всего этого раздела.  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor1"></a>
+
 ## <a name="net-client"></a>Клиент .NET  
   
 ```vb  
@@ -152,6 +155,7 @@ public class LoanApp {
 ```  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor2"></a>
+
 ## <a name="com-server"></a>COM-сервер  
   
 ```cpp  

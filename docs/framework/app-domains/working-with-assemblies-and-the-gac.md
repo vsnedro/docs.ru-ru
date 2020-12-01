@@ -9,12 +9,12 @@ helpviewer_keywords:
 - GAC (global assembly cache), benefits
 - access control lists [.NET Framework]
 ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
-ms.openlocfilehash: 16cfd9faf02d5b58acad1cc0cf19be61c9814d35
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: e27fdd7def2d234e1e8eb7557e869bf478d68210
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105154"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279315"
 ---
 # <a name="working-with-assemblies-and-the-global-assembly-cache"></a>Работа со сборками и глобальным кэшем сборок
 
@@ -46,6 +46,7 @@ ms.locfileid: "85105154"
  Обратите внимание, что существуют сценарии, в которых установка сборки в глобальный кэш сборок явно не требуется. Если одна из составляющих приложение сборок помещается в глобальный кэш сборок, то после этого нельзя будет скопировать или установить приложение с помощью команды XCOPY путем копирования каталога приложения. В этом случае также требуется переместить сборку в глобальный кэш сборок.  
   
 ## <a name="in-this-section"></a>В этом разделе  
+
 [Практическое руководство. Установка сборки в глобальный кэш сборок](install-assembly-into-gac.md)  
 Описание способов установки сборки в глобальном кэше сборок.  
   

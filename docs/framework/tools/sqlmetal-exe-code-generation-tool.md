@@ -10,14 +10,15 @@ helpviewer_keywords:
 - LINQ to SQL, DBML files
 - LINQ to SQL, SQLMetal
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.openlocfilehash: 84cad85a7a9fc4b420b57543b7f258607be4ab52
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 4edf11315892ed8267bee17d69a70033348eca5c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517052"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272570"
 ---
 # <a name="sqlmetalexe-code-generation-tool"></a>SqlMetal.exe (средство создания кода)
+
 Средство командной строки SqlMetal создает код и сопоставление для компонента [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] платформы .NET Framework. С помощью описанных ниже параметров можно настраивать SqlMetal на выполнение различных действий, включая следующие.  
   
 - Создание исходного кода и атрибутов сопоставления или файла сопоставления на основе базы данных.  
@@ -40,6 +41,7 @@ sqlmetal [options] [<input file>]
 ```  
   
 ## <a name="options"></a>Параметры  
+
  Чтобы просмотреть текущий список параметров, в командной строке введите `sqlmetal /?` в каталоге установки.  
   
  **Параметры подключения**  
@@ -50,7 +52,7 @@ sqlmetal [options] [<input file>]
 |**/database:** *\<name>*|Задает каталог базы данных на сервере.|  
 |**/user:** *\<name>*|Задает идентификатор пользователя для входа. Значение по умолчанию: использование проверки подлинности Windows.|  
 |**/password:** *\<password>*|Задает пароль для входа. Значение по умолчанию: использование проверки подлинности Windows.|  
-|**/conn:** *\<connection string>*|Задает строку подключения к базе данных. Нельзя использовать с параметрами **/server**, **/database**, **/user**или **/password** .<br /><br /> В строке подключения не следует указывать имя файла. Вместо этого добавьте имя файла в командную строку в качестве входного файла. Например, в следующей строке указывается входной файл "c:\northwnd.mdf": **sqlmetal /code:"c:\northwind.cs" /language:csharp "c:\northwnd.mdf"** .|  
+|**/conn:** *\<connection string>*|Задает строку подключения к базе данных. Нельзя использовать с параметрами **/server**, **/database**, **/user** или **/password** .<br /><br /> В строке подключения не следует указывать имя файла. Вместо этого добавьте имя файла в командную строку в качестве входного файла. Например, в следующей строке указывается входной файл "c:\northwnd.mdf": **sqlmetal /code:"c:\northwind.cs" /language:csharp "c:\northwnd.mdf"** .|  
 |**/timeout:** *\<seconds>*|Задает время ожидания для доступа SqlMetal к базе данных. Значение по умолчанию: 0 (то есть время не ограничено).|  
   
  **Параметры извлечения**  
@@ -87,6 +89,7 @@ sqlmetal [options] [<input file>]
 |**\<input file>**|Задает MDF-файл SQL Server, экспресс-выпуск, SDF-файл SQL Server Compact 3.5 или промежуточный DBML-файл.|  
   
 ## <a name="remarks"></a>Примечания  
+
  Функции SqlMetal фактически выполняются в два этапа.  
   
 - Метаданные базы данных извлекаются в DBML-файл.  
@@ -110,6 +113,7 @@ sqlmetal [options] [<input file>]
  Чтобы указать имя входного файла, добавьте имя в командную строку в качестве входного файла. Включение имени файла в строку подключения (параметром **/conn** ) не поддерживается.  
   
 ## <a name="examples"></a>Примеры  
+
  Создание DBML-файла, содержащего извлеченные метаданные SQL.  
   
  **sqlmetal /server:myserver /database:northwind /dbml:mymeta.dbml**  

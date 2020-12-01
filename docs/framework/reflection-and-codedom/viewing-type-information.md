@@ -12,14 +12,15 @@ helpviewer_keywords:
 - viewing type information
 - reflection, viewing type information
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
-ms.openlocfilehash: cd74021e1f1a79626e171db13def98e546cd51df
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 3baacbeca7f5cc50fbb720849aec273f996f86e7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865207"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259145"
 ---
 # <a name="viewing-type-information"></a>Просмотр сведений о типах
+
 Класс <xref:System.Type?displayProperty=nameWithType> является центральной частью отражения. Среда CLR создает объект **Type** для загруженного типа, когда он запрашивается отражением. Используя методы, поля, свойства и вложенные классы объекта **Type**, можно получить полные сведения об этом типе.  
   
  Используйте <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> или <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> для получения объектов **Type** из сборок, которые не были загружены, передавая имя необходимого типа или типов. Используйте <xref:System.Type.GetType%2A?displayProperty=nameWithType> для получения объектов **Type** из уже загруженной сборки. Используйте <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> и <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType> для получения объектов **Type** модуля.  
@@ -46,6 +47,7 @@ ms.locfileid: "86865207"
  Если имеется объект **Type**, вы можете использовать свойство <xref:System.Type.Module%2A?displayProperty=nameWithType> для получения объекта, который инкапсулирует модуль, содержащий этот тип. Используйте свойство <xref:System.Reflection.Module.Assembly%2A?displayProperty=nameWithType> для обнаружения объекта, который инкапсулирует сборку, содержащую модуль. Вы можете напрямую получить сборку, которая инкапсулирует тип, с помощью свойства <xref:System.Type.Assembly%2A?displayProperty=nameWithType>.  
   
 ## <a name="systemtype-and-constructorinfo"></a>System.Type и ConstructorInfo  
+
  В приведенном ниже примере показано, как получить список конструкторов класса, в этом случае для класса <xref:System.String>.  
   
  [!code-cpp[Conceptual.Types.ViewInfo#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.types.viewinfo/cpp/source1.cpp#1)]
@@ -53,6 +55,7 @@ ms.locfileid: "86865207"
  [!code-vb[Conceptual.Types.ViewInfo#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source1.vb#1)]  
   
 ## <a name="memberinfo-methodinfo-fieldinfo-and-propertyinfo"></a>MemberInfo, MethodInfo, FieldInfo и PropertyInfo  
+
  Для получения сведений о методах, свойствах, событиях и полях типа используйте объекты <xref:System.Reflection.MemberInfo>, <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.FieldInfo> и <xref:System.Reflection.PropertyInfo>.  
   
  В приведенном ниже примере используется объект **MemberInfo** для вывода количества членов в классе **System.IO.File** и свойство <xref:System.Type.IsPublic%2A> для определения степени доступности этого класса.  

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - registering primary interop assemblies
 - primary interop assemblies, registering
 ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
-ms.openlocfilehash: 09b283712a66805669154c720dff5c2c5f910bf4
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 4961b4bc57d25f9fa83cf40f82b153aa93592b55
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90547184"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267017"
 ---
 # <a name="how-to-register-primary-interop-assemblies"></a>Практическое руководство. Регистрация основных сборок взаимодействия
 
@@ -42,6 +42,7 @@ ms.locfileid: "90547184"
      В этой команде *имя_сборки* — это имя файла регистрируемой сборки. Программа Regasm.exe добавляет запись об основной сборке взаимодействия в тот же раздел реестра, что и для исходной библиотеки типов.
 
 ## <a name="example"></a>Пример
+
  В примере ниже регистрируется основная сборка взаимодействия `CompanyA.UtilLib.dll`.
 
 ```console

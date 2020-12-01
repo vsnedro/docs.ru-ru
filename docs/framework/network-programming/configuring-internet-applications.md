@@ -22,14 +22,15 @@ helpviewer_keywords:
 - network resources, configuring Internet applications
 - Internet, default proxy
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
-ms.openlocfilehash: 760a4ac7cec9abeabfc372c3be5bd3860a6fb03a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 796752ebf6e3cc5c3dac2a20213934f35d31b392
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502643"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287466"
 ---
 # <a name="configuring-internet-applications"></a>Настройка веб-приложений
+
 [Элемент конфигурации \<system.Net> (параметры сети)](../configure-apps/file-schema/network/system-net-element-network-settings.md) содержит сведения о конфигурации сети для приложений. С помощью [элемента \<system.Net> (параметры сети)](../configure-apps/file-schema/network/system-net-element-network-settings.md) можно задавать прокси-серверы, устанавливать параметры управления подключениями и включать в приложение пользовательские модули проверки подлинности и запросов.  
   
  [Элемент \<defaultProxy> (параметры сети)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) определяет прокси-сервер, который возвращается классом `GlobalProxySelection`. Любой объект <xref:System.Net.HttpWebRequest>, для которого не установлено свойство <xref:System.Net.HttpWebRequest.Proxy%2A>, использует прокси-сервер по умолчанию. Помимо настройки адреса прокси-сервера можно создать список адресов серверов, которые не будут использовать прокси-сервер. Кроме того, можно запретить использование прокси-сервера локальным адресам.  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - application resources, creating files
 - resource files, creating
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
-ms.openlocfilehash: 2e71dc177a0358370c7eecde03d9388cced60b75
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+ms.openlocfilehash: d10af40420c1ab9ab177514c0babeaf5cea96922
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957441"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259080"
 ---
 # <a name="create-resource-files-for-net-apps"></a>Создание файлов ресурсов для приложений .NET
 
@@ -33,6 +33,7 @@ ms.locfileid: "88957441"
 - Создайте файл ресурсов в [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) и включите этот файл в проект. В Visual Studio есть редактор ресурсов,с помощью которого можно добавлять, удалять и изменять ресурсы. Во время компиляции файл ресурсов автоматически преобразуется в двоичный RESOURCES-файл и внедряется в сборку приложения или вспомогательную сборку. Дополнительные сведения см. в разделе [Файлы ресурсов в Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles).
 
 <a name="TextFiles"></a>
+
 ## <a name="resources-in-text-files"></a>Ресурсы в формате текстовых файлов
 
 В текстовых файлах (TXT или RESTEXT) можно сохранять только строковые ресурсы. Для нестроковых ресурсов используйте RESX-файлы или создавайте их программными средствами. Текстовые файлы, содержащие строковые ресурсы, имеют следующий формат.
@@ -135,7 +136,9 @@ csc greeting.cs -resource:GreetingResources.resources
 ```
 
 <a name="ResxFiles"></a>
+
 ## <a name="resources-in-resx-files"></a>Ресурсы в RESX-файлах
+
  В отличие от текстовых файлов, в которых могут храниться только строковые ресурсы, в XML-файлах ресурсов (RESX) могут храниться строки, двоичные данные (такие как изображения, значки и аудиоклипы) и программные объекты. RESX-файл содержит стандартный заголовок, который описывает формат записей ресурсов и включает сведения о версии XML, которые используются для анализа данных. За заголовком XML следуют данные в файле ресурсов. Каждый элемент данных состоит из пары "имя-значение", заключенной в тег `data`. Атрибут `name` этого тега определяет имя ресурса, а вложенный тег `value` содержит значение ресурса. Для строковых данных тег `value` содержит строку.
 
  Например, следующий тег `data` определяет строковый ресурс с именем `prompt` и значением "Enter your name:".
@@ -174,6 +177,7 @@ csc greeting.cs -resource:GreetingResources.resources
 > Так как RESX-файлы должны представлять собой XML-код с правильным, заранее определенным форматом, с ними не рекомендуется работать вручную, особенно если они содержат нестроковые ресурсы. Вместо этого в [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) предусмотрен прозрачный интерфейс для создания RESX-файлов и управления ими. Дополнительные сведения см. в разделе [Файлы ресурсов в Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles). Создавать RESX-файлы и управлять ими можно также программно. Дополнительные сведения см. в разделе [Работа с RESX-файлами программным способом](working-with-resx-files-programmatically.md).
 
 <a name="ResourcesFiles"></a>
+
 ## <a name="resources-in-resources-files"></a>Ресурсы в RESOURCES-файлах
 
 Для программного создания двоичного файла ресурсов (RESOURCES-файла) непосредственно из кода можно использовать класс <xref:System.Resources.ResourceWriter?displayProperty=nameWithType>. Для создания RESOURCES-файла из текстового файла или RESX-файла можно также использовать [генератор файлов ресурсов (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md). Помимо строковых данных, RESOURCES-файл может содержать двоичные данные (массивы байтов) и данные объектов. Для программного создания RESOURCES-файла необходимо выполнить следующие действия.
@@ -195,6 +199,7 @@ csc greeting.cs -resource:GreetingResources.resources
  После создания RESOURCES-файла его можно внедрить в исполняемый файл среды выполнения или библиотеку, используя параметр `/resource` компилятора языка, или во вспомогательную сборку с помощью [компоновщик сборок (Al.exe)](../tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
+
 ## <a name="resource-files-in-visual-studio"></a>Файлы ресурсов в Visual Studio
 
 При добавлении файла ресурсов в проект [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) среда Visual Studio создает RESX-файл в каталоге проекта. В Visual Studio имеются редакторы ресурсов, позволяющие добавлять строки, изображения и двоичные объекты. Так как редакторы предназначены для обработки только статических данных, их нельзя использовать для хранения программных объектов; данные объектов необходимо записывать в RESX- или RESOURCES-файл программным способом. Дополнительные сведения см. в статье [Работа с RESX-файлами программным способом](working-with-resx-files-programmatically.md) и разделе [Ресурсы в RESOURCES-файлах](creating-resource-files-for-desktop-apps.md#ResourcesFiles).

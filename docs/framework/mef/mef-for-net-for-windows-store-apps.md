@@ -3,14 +3,15 @@ title: 'Managed Extensibility Framework для .NET: приложения из �
 description: Сведения о пространствах имен Managed Extensibility Framework (MEF), которые содержат типы для разработки расширяемых приложений Магазина для Windows 8.x.
 ms.date: 03/30/2017
 ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
-ms.openlocfilehash: 470ce5f4ac9945f96a430af9806de6f6df6eb1f8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 1bd62ad0b405f84952aca9d527c5f8a8e9f744f4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558710"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276598"
 ---
 # <a name="mef-for-net-for-windows-store-apps"></a>Managed Extensibility Framework для .NET: приложения из магазина Windows Store
+
 <xref:System.Composition?displayProperty=nameWithType>и его дочерние пространства имен содержат типы для разработки расширяемых приложений Windows 8.x с использованием Managed Extensibility Framework (MEF). Эти пространства имен являются частью подмножества .NET для приложений Windows 8.x магазина Windows Store для операционной системы Windows 8.  
   
  Они не входят в состав основной библиотеки классов, распространяемой с платформой .NET Framework. Чтобы установить эти пространства имен, откройте проект в Visual Studio, выберите пункт **Управление пакетами NuGet** в меню **Проект** и найдите в Интернете пакет Microsoft.Composition.  

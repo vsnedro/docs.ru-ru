@@ -15,14 +15,15 @@ helpviewer_keywords:
 - ServiceProcessInstaller class, service application code model
 - Windows Service applications, states
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-ms.openlocfilehash: 386311228abb08600acc249e80702c724c137900
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: c2344dd0a7d35781aea52b24694f2cfee70a6d41
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91609269"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96270462"
 ---
 # <a name="service-application-programming-architecture"></a>Программная архитектура приложений служб
+
 В основе приложений-служб Windows лежит класс, наследуемый от класса <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>. Вы можете переопределить методы из этого класса и определить функции для них, чтобы настроить поведение службы.  
   
  Ниже перечислены основные классы, используемые при создании службы:  
@@ -34,6 +35,7 @@ ms.locfileid: "91609269"
  Кроме того, класс с именем <xref:System.ServiceProcess.ServiceController> можно использовать для управления самой службой. Этот класс не используется при создании службы, но может использоваться для ее запуска и остановки, а также передачи команд и возврата последовательностей перечислений.  
   
 ## <a name="defining-your-services-behavior"></a>Определение поведения службы  
+
  В классе службы вы можете переопределить функции базового класса, которые определяют, что происходит при изменении состояния службы в диспетчере служб. Класс <xref:System.ServiceProcess.ServiceBase> предоставляет следующие методы, которые можно переопределить, чтобы добавить пользовательское поведение.  
   
 |Метод|Переопределение|  
