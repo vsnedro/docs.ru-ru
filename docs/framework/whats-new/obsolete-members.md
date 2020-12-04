@@ -7,12 +7,12 @@ helpviewer_keywords:
 - members, obsolete in .NET Framework
 - obsolete members [.NET Framework]
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
-ms.openlocfilehash: d5981a2ec1e8152e891a4480ea548200be45ecd1
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 35dc67e80a47ba3e61db3d27f44f6c6ee45464ba
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558528"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726461"
 ---
 # <a name="obsolete-members-in-net-framework"></a>Устаревшие члены в .NET Framework
 
@@ -134,7 +134,7 @@ ms.locfileid: "90558528"
 > |<xref:System.Security.HostSecurityManagerOptions?displayProperty=nameWithType>|<xref:System.Security.HostSecurityManagerOptions.HostPolicyLevel>|Уровни политики AppDomain устарели и будут удалены в одном из будущих выпусков платформы .NET Framework.|
 > |<xref:System.Security.PermissionSet?displayProperty=nameWithType>|<xref:System.Security.PermissionSet.ConvertPermissionSet%2A>|Этот метод устарел, поэтому его использовать не рекомендуется.|
 > |<xref:System.Security.PermissionSet?displayProperty=nameWithType>|<xref:System.Security.PermissionSet.Deny%2A>|<xref:System.Security.PermissionSet.Deny%2A> считается устаревшим и будет удален в одном из будущих выпусков платформы .NET Framework.|
-> |<xref:System.Security.SecurityCriticalAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalAttribute.Scope%2A>|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType> применяется только для обеспечения прозрачной совместимости с .NET 2.0.|
+> |<xref:System.Security.SecurityCriticalAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalAttribute.Scope%2A>|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType> применяется только для обеспечения прозрачной совместимости с .NET Framework 2.0.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.CheckExecutionRights%2A>|Поскольку контроль разрешения на выполнение более отключить нельзя, свойство <xref:System.Security.SecurityManager.CheckExecutionRights%2A> не оказывает никакого действия.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.IsGranted%2A>|<xref:System.Security.SecurityManager.IsGranted%2A> считается устаревшим и будет удален в одном из будущих выпусков платформы .NET Framework. Взамен используйте свойство <xref:System.AppDomain.PermissionSet%2A?displayProperty=nameWithType> или <xref:System.Reflection.Assembly.PermissionSet%2A?displayProperty=nameWithType>.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.LoadPolicyLevelFromFile%2A>|Этот метод устарел и будет удален в одном из будущих выпусков платформы .NET Framework.|

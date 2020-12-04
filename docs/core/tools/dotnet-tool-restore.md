@@ -2,12 +2,12 @@
 title: Команда dotnet tool restore
 description: Команда dotnet tool restore устанавливает на компьютере локальные средства .NET, которые доступны для текущего каталога.
 ms.date: 02/14/2020
-ms.openlocfilehash: 1b7fd10102f2c957b3eb235f6897b60bc8ca9c07
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 3425bc6b78fd53f578c209013f83b006305dbb81
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634276"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242933"
 ---
 # <a name="dotnet-tool-restore"></a>dotnet tool restore
 
@@ -15,7 +15,7 @@ ms.locfileid: "94634276"
 
 ## <a name="name"></a>name
 
-`dotnet tool restore` — устанавливает на компьютере локальные средства .NET, которые доступны для текущего каталога.
+`dotnet tool restore` — устанавливает локальные средства .NET, которые доступны для текущего каталога.
 
 ## <a name="synopsis"></a>Краткий обзор
 

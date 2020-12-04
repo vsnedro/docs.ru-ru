@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4ab2fc0645f76870dead99b5f45eef763643fb27
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.openlocfilehash: 83808f2f3a05333ed5d9e3809cbc2fd6e230d02c
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506905"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031785"
 ---
 
 [Платформа .NET Core доступна в Snap Store.](https://snapcraft.io/dotnet-sdk)
@@ -15,7 +15,7 @@ Snap-пакет — это пакет приложения и его завис
 
 ### <a name="install-the-sdk"></a>Установка пакета SDK
 
-Snap-пакеты пакета SDK для .NET публикуются с одним и тем же идентификатором: `dotnet-sdk`. Конкретную версию пакета SDK можно установить, указав канал. Пакет SDK содержит соответствующую среду выполнения. В следующей таблице перечислены каналы:
+Snap-пакеты пакета SDK для .NET публикуются с одним и тем же идентификатором: `dotnet-sdk`. Конкретную версию пакета SDK можно установить, указав канал. Пакет SDK содержит соответствующую среду выполнения. В следующей таблице перечислены каналы.
 
 | Версия .NET | Snap-пакет             |
 |--------------|--------------------------|

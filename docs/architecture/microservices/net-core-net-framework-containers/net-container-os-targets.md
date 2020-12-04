@@ -2,12 +2,12 @@
 title: Для какой ОС использовать контейнеры .NET
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Для какой ОС использовать контейнеры .NET
 ms.date: 01/30/2020
-ms.openlocfilehash: a09e3981ece478a9795c0f27acc98d604864cdd5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1f52dcb4da6509be7e771af353daea9cfc97306c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77501865"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95688462"
 ---
 # <a name="what-os-to-target-with-net-containers"></a>Для какой ОС использовать контейнеры .NET
 
@@ -34,10 +34,10 @@ ms.locfileid: "77501865"
 
 | Изображение | Комментарии |
 |-------|----------|
-| mcr.microsoft.com/dotnet/core/runtime:3.1 | .NET Core 3.1 (несколько архитектур): поддерживает Linux и Windows Nano Server в зависимости от узла Docker. |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1 | ASP.NET Core 3.1 (несколько архитектур): поддерживает Linux и Windows Nano Server в зависимости от узла Docker. <br/> Образ aspnetcore имеет несколько оптимизаций для ASP.NET Core. |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim | .NET Core 3.1 (только для среды выполнения) на основе дистрибутива Linux Debian |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1809 | .NET Core 3.1 (только для среды выполнения) на основе Windows Nano Server (Windows Server версии 1809) |
+| mcr.microsoft.com/dotnet/runtime:3.1 | .NET Core 3.1 (несколько архитектур): поддерживает Linux и Windows Nano Server в зависимости от узла Docker. |
+| mcr.microsoft.com/dotnet/aspnet:3.1 | ASP.NET Core 3.1 (несколько архитектур): поддерживает Linux и Windows Nano Server в зависимости от узла Docker. <br/> Образ aspnetcore имеет несколько оптимизаций для ASP.NET Core. |
+| mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim | .NET Core 3.1 (только для среды выполнения) на основе дистрибутива Linux Debian |
+| mcr.microsoft.com/dotnet/aspnet:3.1-nanoserver-1809 | .NET Core 3.1 (только для среды выполнения) на основе Windows Nano Server (Windows Server версии 1809) |
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

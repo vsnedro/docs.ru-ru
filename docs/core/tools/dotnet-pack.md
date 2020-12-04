@@ -2,12 +2,12 @@
 title: Команда dotnet pack
 description: Команда dotnet pack создает пакеты NuGet для проекта .NET.
 ms.date: 04/28/2020
-ms.openlocfilehash: 4312ea64a75fa89eae58cdb41a6dc3463cdd215c
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 3ca7947b4ed9902b163f09a7b57696f304610cce
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634237"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95674805"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -118,7 +118,7 @@ dotnet pack -h|--help
 
 - **`-s|--serviceable`**
 
-  Задает флаг "подлежит обслуживанию" в пакете. Дополнительные сведения см. в записи блога о том, что [.NET 4.5.1 поддерживает обновления системы безопасности Майкрософт для библиотек .NET NuGet](https://aka.ms/nupkgservicing).
+  Задает флаг "подлежит обслуживанию" в пакете. Дополнительные сведения см. в записи блога о том, что [.NET Framework 4.5.1 поддерживает обновления системы безопасности Майкрософт для библиотек .NET NuGet](https://aka.ms/nupkgservicing).
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -185,7 +185,7 @@ dotnet pack -h|--help
   ```
 
   Дополнительные сведения об использовании `NuspecFile`, `NuspecBasePath` и `NuspecProperties` см. в следующих документах:
-  
+
   - [Упаковка с помощью NUSPEC](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Улучшенные точки расширения для создания настраиваемого пакета](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
   - [Глобальные свойства](/visualstudio/msbuild/msbuild-properties#global-properties)

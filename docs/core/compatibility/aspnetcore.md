@@ -1,31 +1,29 @@
 ---
 title: Критические изменения ASP.NET Core
 titleSuffix: ''
-description: В этой статье приведен список критических изменений в ASP.NET Core.
+description: В этой статье приведен список критических изменений в ASP.NET Core 3.0 и 3.1.
 ms.date: 11/03/2020
 author: scottaddie
 ms.author: scaddie
-ms.openlocfilehash: 6e8e35d01ea7ff91c45bf1febd822e8497b608f0
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 40dfda77dd51ed46366ec6cd8f6598070e8ce846
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440489"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "96032689"
 ---
-# <a name="aspnet-core-breaking-changes"></a>Критические изменения ASP.NET Core
+# <a name="aspnet-core-breaking-changes-for-versions-30-and-31"></a>Критические изменения ASP.NET Core для версий 3.0 и 3.1.
 
 ASP.NET Core предоставляет функции разработки веб-приложений, используемые .NET Core.
 
 Выберите одну из следующих ссылок для критических изменений в определенной версии.
 
-* [ASP.NET Core 5.0](#aspnet-core-50)
 * [ASP.NET Core 3.1](#aspnet-core-31)
 * [ASP.NET Core 3.0](#aspnet-core-30)
 
-На этой странице описаны следующие критические изменения в ASP.NET Core версий 3.0, 3.1 и 5.0.
+На этой странице описаны следующие критические изменения в ASP.NET Core версий 3.0 и 3.1.
 
 - [Удалены устаревшие API в областях борьбы с фальсификацией, CORS, диагностики, MVC и маршрутизации](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
-- [Проверка подлинности. API-интерфейсы и пакеты AzureAD.UI и AzureADB2C.UI помечены как устаревшие](#authentication-azureadui-and-azureadb2cui-apis-and-packages-marked-obsolete)
 - [Проверка подлинности. Использование Google + прекращено](#authentication-google-deprecated-and-replaced)
 - [Проверка подлинности. Удалено свойство HttpContext.Authentication](#authentication-httpcontextauthentication-property-removed)
 - [Проверка подлинности. Заменены типы Newtonsoft.Json](#authentication-newtonsoftjson-types-replaced)
@@ -33,66 +31,38 @@ ASP.NET Core предоставляет функции разработки ве
 - [Авторизация. Перегрузка AddAuthorization перемещена в другую сборку](#authorization-addauthorization-overload-moved-to-different-assembly)
 - [Авторизация. IAllowAnonymous удален из AuthorizationFilterContext.Filters](#authorization-iallowanonymous-removed-from-authorizationfiltercontextfilters)
 - [Авторизация. Для реализаций IAuthorizationPolicyProvider требуется новый метод](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
-- [Авторизация. Для маршрутизации конечных точек используется ресурс HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
-- [Общие сведения Пакеты интеграции Azure с префиксом Майкрософт удалены](#azure-microsoft-prefixed-azure-integration-packages-removed)
-- [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
-- [Blazor. Незначащие пробелы удалены из компонентов во время компиляции](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
-- [Blazor. Типы JSObjectReference и JSInProcessObjectReference изменены на internal](#blazor-jsobjectreference-and-jsinprocessobjectreference-types-changed-to-internal)
-- [Blazor. Функция ProtectedBrowserStorage перемещена на общую платформу](#blazor-protectedbrowserstorage-feature-moved-to-shared-framework)
-- [Blazor. Открытые поля только для чтения RenderTreeFrame стали свойствами](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
-- [Blazor. Изменена целевая платформа для пакетов NuGet](#blazor-target-framework-of-nuget-packages-changed)
-- [Blazor. Обновлен список поддерживаемых веб-браузеров](#blazor-updated-browser-support)
-- [Blazor. Обновленная логика проверки для статических веб-ресурсов](#blazor-updated-validation-logic-for-static-web-assets)
 - [Кэширование. Удалено свойство CompactOnMemoryPressure](#caching-compactonmemorypressure-property-removed)
 - [Кэширование. Microsoft.Extensions.Caching.SqlServer использует новый пакет SqlClient](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
-- [Кэширование. Типы ResponseCaching pubternal теперь стали внутренними](#caching-responsecaching-pubternal-types-changed-to-internal)
 - [Защита данных. DataProtection.Blobs использует новые API службы хранилища Azure](#data-protection-dataprotectionblobs-uses-new-azure-storage-apis)
-- [Расширения. Изменения ссылок на пакеты, затрагивающие некоторые пакеты NuGet](#extensions-package-reference-changes-affecting-some-nuget-packages)
 - [Размещение. Модуль AspNetCoreModule версии 1 удален из пакета размещения Windows](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Размещение. Универсальный узел ограничивает внедрение через конструктор Startup](#hosting-generic-host-restricts-startup-constructor-injection)
 - [Размещение. Для приложений IIS вне процесса включено перенаправление HTTPS](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
 - [Размещение. Удалены типы IHostingEnvironment и IApplicationLifetime](#hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced)
 - [Размещение. ObjectPoolProvider удален из зависимостей WebHostBuilder](#hosting-objectpoolprovider-removed-from-webhostbuilder-dependencies)
-- [HTTP. Типы Kestrel и IIS BadHttpRequestException, помеченные как устаревшие и замененные](#http-kestrel-and-iis-badhttprequestexception-types-marked-obsolete-and-replaced)
 - [HTTP. Изменения SameSite в браузере влияют на проверку подлинности](#http-browser-samesite-changes-impact-authentication)
 - [HTTP. Удалена расширяемость DefaultHttpContext](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP. Поля HeaderNames изменены на статические только для чтения](#http-headernames-constants-changed-to-static-readonly)
-- [HTTP. Экземпляры HttpClient, созданные с помощью целочисленных кодов состояния журнала IHttpClientFactory](#http-httpclient-instances-created-by-ihttpclientfactory-log-integer-status-codes)
 - [HTTP. Изменения в инфраструктуре текста ответа](#http-response-body-infrastructure-changes)
 - [HTTP. Внесены изменения в некоторые значения по умолчанию для параметра SameSite для файлов cookie](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP. Синхронный ввод-вывода отключен по умолчанию](#http-synchronous-io-disabled-in-all-servers)
-- [HttpSys: Повторное согласование сертификата клиента по умолчанию отключено](#httpsys-client-certificate-renegotiation-disabled-by-default)
 - [Удостоверение. Удалена перегрузка метода AddDefaultUI](#identity-adddefaultui-method-overload-removed)
 - [Удостоверение. Изменена версия начальной загрузки пользовательского интерфейса](#identity-default-bootstrap-version-of-ui-changed)
 - [Удостоверение. SignInAsync создает исключение для удостоверения, не прошедшего проверку подлинности](#identity-signinasync-throws-exception-for-unauthenticated-identity)
 - [Удостоверение. Конструктор SignInManager принимает новый параметр](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Удостоверение. Пользовательский интерфейс использует функцию статических веб-ресурсов](#identity-ui-uses-static-web-assets-feature)
-- [IIS: строки запросов ПО промежуточного слоя UrlRewrite сохраняются](#iis-urlrewrite-middleware-query-strings-are-preserved)
-- [Kestrel. Обнаружение изменений конфигурации во время выполнения включено по умолчанию](#kestrel-configuration-changes-at-run-time-detected-by-default)
 - [Kestrel. Удалены адаптеры подключений](#kestrel-connection-adapters-removed)
-- [Kestrel. Изменены поддерживаемые версии протокола TLS по умолчанию](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel. Удалена пустая сборка HTTPS](#kestrel-empty-https-assembly-removed)
-- [Kestrel. HTTP/2 по TLS отключен в несовместимых версиях Windows](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
-- [Kestrel. Транспорт Libuv помечен как устаревший](#kestrel-libuv-transport-marked-as-obsolete)
 - [Kestrel. Заголовки трейлеров запросов перемещены в новую коллекцию](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel. Внесены изменения в слой абстракции транспорта](#kestrel-transport-abstractions-removed-and-made-public)
 - [Локализация. Интерфейсы API отмечены как устаревшие](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
-- [Локализация. Удалены API-интерфейсы Pubternal](#localization-pubternal-apis-removed)
-- [Локализация. Из ПО промежуточного слоя локализации запроса удален устаревший конструктор](#localization-obsolete-constructor-removed-in-request-localization-middleware)
-- [Локализация. Удален класс ResourceManagerWithCultureStringLocalizer и элемент интерфейса WithCulture](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Ведение журнала. Класс DebugLogger стал внутренним](#logging-debuglogger-class-made-internal)
-- [ПО промежуточного слоя. Страница ошибок базы данных помечена как устаревшая](#middleware-database-error-page-marked-as-obsolete)
-- [ПО промежуточного слоя. ПО промежуточного слоя обработчика исключений создает исходное исключение, если обработчик не найден](#middleware-exception-handler-middleware-throws-original-exception-if-handler-not-found)
 - [MVC. Удален асинхронный суффикс действия контроллера](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC. JsonResult перемещен в Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
-- [MVC. ObjectModelValidator вызывает новую перегрузку ValidationVisitor.Validate](#mvc-objectmodelvalidator-calls-a-new-overload-of-validationvisitorvalidate)
 - [MVC. Использование средства предварительной компиляции прекращено](#mvc-precompilation-tool-deprecated)
 - [MVC. Типы теперь стали внутренними](#mvc-pubternal-types-changed-to-internal)
 - [MVC. Удалена оболочка совместимости веб-интерфейса API](#mvc-web-api-compatibility-shim-removed)
 - [Razor. Удален API RazorTemplateEngine](#razor-razortemplateengine-api-removed)
 - [Razor. Компиляция среды выполнения перемещена в пакет](#razor-runtime-compilation-moved-to-a-package)
-- [Безопасность. Удалена кодировка имен файлов cookie](#security-cookie-name-encoding-removed)
-- [Безопасность. Обновлены версии пакета NuGet IdentityModel](#security-identitymodel-nuget-package-versions-updated)
 - [Состояние сеанса. Удалены устаревшие API](#session-state-obsolete-apis-removed)
 - [Общая платформа. Из Microsoft.AspNetCore.App удалена сборка](#shared-framework-assemblies-removed-from-microsoftaspnetcoreapp)
 - [Общая платформа. Удален Microsoft.AspNetCore.All](#shared-framework-removed-microsoftaspnetcoreall)
@@ -100,160 +70,22 @@ ASP.NET Core предоставляет функции разработки ве
 - [SignalR. Удалены методы HubConnection](#signalr-hubconnection-resetsendping-and-resettimeout-methods-removed)
 - [SignalR. Изменены конструкторы HubConnectionContext](#signalr-hubconnectioncontext-constructors-changed)
 - [SignalR. Изменено имя пакета клиента JavaScript](#signalr-javascript-client-package-name-changed)
-- [SignalR. Протокол MessagePack для концентратора перемещен в пакет MessagePack 2.x](#signalr-messagepack-hub-protocol-moved-to-messagepack-2x-package)
-- [SignalR. Тип параметров протокола концентратора MessagePack изменился](#signalr-messagepack-hub-protocol-options-type-changed)
 - [SignalR. Устаревшие API](#signalr-usesignalr-and-useconnections-methods-marked-obsolete)
-- [SignalR. Методы UseSignalR и UseConnections удалены](#signalr-usesignalr-and-useconnections-methods-removed)
 - [Одностраничные приложения. Изменено поведение по умолчанию при переключении на средство ведения журнала консоли SpaServices и NodeServices](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
 - [Одностраничные приложения. SpaServices и NodeServices отмечены как устаревшие](#spas-spaservices-and-nodeservices-marked-obsolete)
-- [Статические файлы. Тип содержимого CSV изменен на соответствующий стандартам](#static-files-csv-content-type-changed-to-standards-compliant)
-- [Blazor WebAssembly не поддерживает интерфейсы API System.Security.Cryptography](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly)
 - [Целевая платформа: прекращена поддержка .NET Framework](#target-framework-net-framework-support-dropped)
-
-## <a name="aspnet-core-50"></a>ASP.NET Core 5.0
-
-[!INCLUDE[Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete](~/includes/core-changes/aspnetcore/5.0/authentication-aad-packages-obsolete.md)]
-
-***
-
-[!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
-
-**_
-
-[!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
-
-_*_
-
-[!INCLUDE[Serialization: BinaryFormatter serialization obsolete](~/includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
-
-_*_
-
-[!INCLUDE[Blazor: Insignificant whitespace trimmed from components at compile time](~/includes/core-changes/aspnetcore/5.0/blazor-components-trim-insignificant-whitespace.md)]
-
-_*_
-
-[!INCLUDE[Blazor: JSObjectReference and JSInProcessObjectReference types changed to internal](~/includes/core-changes/aspnetcore/5.0/blazor-jsobjectreference-to-internal.md)]
-
-_*_
-
-[!INCLUDE[Blazor: ProtectedBrowserStorage feature moved to shared framework](~/includes/core-changes/aspnetcore/5.0/blazor-protectedbrowserstorage-moved.md)]
-
-_*_
-
-[!INCLUDE[Blazor: RenderTreeFrame readonly public fields have become properties](~/includes/core-changes/aspnetcore/5.0/blazor-rendertreeframe-fields-become-properties.md)]
-
-_*_
-
-[!INCLUDE[Blazor: Target framework of NuGet packages changed](~/includes/core-changes/aspnetcore/5.0/blazor-packages-target-framework-changed.md)]
-
-_*_
-
-[!INCLUDE[Blazor: Updated browser support](~/includes/core-changes/aspnetcore/5.0/blazor-browser-support-updated.md)]
-
-_*_
-
-[!INCLUDE[Blazor: Static web assets validation logic updated](~/includes/core-changes/aspnetcore/5.0/blazor-static-web-assets-validation-logic-updated.md)]
-
-_*_
-
-[!INCLUDE[Extensions: Package reference changes](~/includes/core-changes/aspnetcore/5.0/extensions-package-reference-changes.md)]
-
-_*_
-
-[!INCLUDE[HTTP: HttpClient instances created by IHttpClientFactory log integer status codes](~/includes/core-changes/aspnetcore/5.0/http-httpclient-instances-log-integer-status-codes.md)]
-
-_*_
-
-[!INCLUDE[HTTP: Kestrel and IIS BadHttpRequestException types marked obsolete and replaced](~/includes/core-changes/aspnetcore/5.0/http-badhttprequestexception-obsolete.md)]
-
-_*_
-
-[!INCLUDE[HttpSys: Client certificate renegotiation disabled by default](~/includes/core-changes/aspnetcore/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md)]
-
-_*_
-
-[!INCLUDE[IIS: UrlRewrite middleware query strings are preserved](~/includes/core-changes/aspnetcore/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md)]
-
-_*_
-
-[!INCLUDE[Kestrel: Configuration changes at run time detected by default](~/includes/core-changes/aspnetcore/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md)]
-
-_*_
-[!INCLUDE[Kestrel: Default supported TLS protocol versions changed](~/includes/core-changes/aspnetcore/5.0/kestrel-default-supported-tls-protocol-versions-changed.md)]
-
-_*_
-
-[!INCLUDE[Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](~/includes/core-changes/aspnetcore/5.0/kestrel-disables-http2-over-tls.md)]
-
-_*_
-
-[!INCLUDE[Kestrel: Libuv transport marked as obsolete](~/includes/core-changes/aspnetcore/5.0/kestrel-libuv-transport-obsolete.md)]
-
-_*_
-
-[!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
-
-_*_
-
-[!INCLUDE[Localization: Obsolete constructor removed in request localization middleware](~/includes/core-changes/aspnetcore/5.0/localization-requestlocalizationmiddleware-constructor-removed.md)]
-
-_*_
-
-[!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
-
-_*_
-
-[!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
-
-_*_
-
-[!INCLUDE[Middleware: Exception Handler Middleware throws original exception if handler not found](~/includes/core-changes/aspnetcore/5.0/middleware-exception-handler-throws-original-exception.md)]
-
-_*_
-
-[!INCLUDE[MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate](~/includes/core-changes/aspnetcore/5.0/mvc-objectmodelvalidator-calls-new-overload.md)]
-
-_*_
-
-[!INCLUDE[Security: Cookie name encoding removed](~/includes/core-changes/aspnetcore/5.0/security-cookie-name-encoding-removed.md)]
-
-_*_
-
-[!INCLUDE[Security: IdentityModel NuGet package versions updated](~/includes/core-changes/aspnetcore/5.0/security-identitymodel-nuget-package-versions-updated.md)]
-
-_*_
-
-[!INCLUDE[SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-package.md)]
-
-_*_
-
-[!INCLUDE[SignalR: MessagePack Hub Protocol options type changed](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-hub-protocol-options-changed.md)]
-
-_*_
-
-[!INCLUDE[SignalR: UseSignalR and UseConnections methods removed](~/includes/core-changes/aspnetcore/5.0/signalr-usesignalr-useconnections-removed.md)]
-
-_*_
-
-[!INCLUDE[Cryptography APIs not supported on Blazor WebAssembly](~/includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
-
-_*_
-
-[!INCLUDE[Static files: CSV content type changed to standards-compliant](~/includes/core-changes/aspnetcore/5.0/static-files-csv-content-type-changed.md)]
-
-_*_
 
 ## <a name="aspnet-core-31"></a>ASP.NET Core 3.1
 
 [!INCLUDE[HTTP: Browser SameSite changes impact authentication](~/includes/core-changes/aspnetcore/3.1/http-cookie-samesite-authn-impacts.md)]
 
-_*_
+***
 
 ## <a name="aspnet-core-30"></a>ASP.NET Core 3.0
 
 [!INCLUDE[Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](~/includes/core-changes/aspnetcore/3.0/obsolete-apis-removed.md)]
 
-_*_
+**_
 
 [!INCLUDE[Authentication: Google+ deprecation](~/includes/core-changes/aspnetcore/3.0/authn-google-plus-authn-changes.md)]
 

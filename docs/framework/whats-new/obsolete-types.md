@@ -1,18 +1,18 @@
 ---
 title: Устаревшие типы в .NET Framework
-description: Просмотрите список типов, устаревших в .NET Framework 4.5 и .NET 4.6, упорядоченных по сборкам. Там также приводятся рекомендованные альтернативы.
+description: Просмотрите список типов, устаревших в .NET Framework 4.5 и .NET Framework 4.6, упорядоченных по сборкам. Там также приводятся рекомендованные альтернативы.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - .NET Framework 4.5, obsolete types
 - types, obsolete in .NET Framework 4.5
 - obsolete types [.NET Framework]
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
-ms.openlocfilehash: 795735b66c7568dada0196a6426a0a9aaf52398a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ccf39283152ecdc6b7827f2185de215c17ecc845
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558541"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95707919"
 ---
 # <a name="obsolete-types-in-the-net-framework"></a>Устаревшие типы в платформе .NET Framework
 
@@ -134,8 +134,8 @@ ms.locfileid: "90558541"
 |<xref:System.Runtime.InteropServices.UCOMITypeLib?displayProperty=nameWithType>|Используйте вместо этого <xref:System.Runtime.InteropServices.ComTypes.ITypeLib?displayProperty=nameWithType>.|
 |<xref:System.Runtime.InteropServices.VARDESC?displayProperty=nameWithType>|Взамен рекомендуется использовать <xref:System.Runtime.InteropServices.ComTypes.VARDESC?displayProperty=nameWithType>.|
 |<xref:System.Runtime.InteropServices.VARFLAGS?displayProperty=nameWithType>|Взамен рекомендуется использовать <xref:System.Runtime.InteropServices.ComTypes.VARFLAGS?displayProperty=nameWithType>.|
-|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalScope> применяется только для обеспечения прозрачной совместимости с .NET 2.0.|
-|<xref:System.Security.SecurityTreatAsSafeAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityTreatAsSafeAttribute> применяется только для обеспечения прозрачной совместимости с .NET 2.0. Взамен рекомендуется использовать <xref:System.Security.SecuritySafeCriticalAttribute?displayProperty=nameWithType>.|
+|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalScope> применяется только для обеспечения прозрачной совместимости с .NET Framework 2.0.|
+|<xref:System.Security.SecurityTreatAsSafeAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityTreatAsSafeAttribute> применяется только для обеспечения прозрачной совместимости с .NET Framework 2.0. Взамен рекомендуется использовать <xref:System.Security.SecuritySafeCriticalAttribute?displayProperty=nameWithType>.|
 |<xref:System.Security.Policy.FirstMatchCodeGroup?displayProperty=nameWithType>|Этот тип устарел и будет удален в одном из будущих выпусков платформы .NET Framework.|
 |<xref:System.Security.Policy.PermissionRequestEvidence?displayProperty=nameWithType>|Декларативная безопасность на уровне сборки устарела и больше не обеспечивается средой CLR по умолчанию.|
 |<xref:System.Security.Policy.UnionCodeGroup?displayProperty=nameWithType>|Этот тип устарел и будет удален в одном из будущих выпусков платформы .NET Framework.|

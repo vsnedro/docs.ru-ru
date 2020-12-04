@@ -1,6 +1,6 @@
 ---
 title: Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5
-description: Узнайте, как получить ход выполнения установщика .NET Framework 4.5. В ходе разработки приложений для этой версии .NET можно включить (добавить в цепочку) настройку .NET 4.5 в процесс настройки приложения.
+description: Узнайте о том, как получить ход выполнения установщика .NET Framework 4.5. В ходе разработки приложений для этой версии .NET можно включить (добавить в цепочку) настройку .NET Framework 4.5 в процесс настройки приложения.
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - progress information, .NET Framework installer
 - .NET Framework, installing
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
-ms.openlocfilehash: 501fcaa7636d586ddfff8606768d4639fdc010d7
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 7e21a376c5a7551ecadeaa70c0a70968dc5752fd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904264"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729126"
 ---
 # <a name="how-to-get-progress-from-the-net-framework-45-installer"></a>Практическое руководство. Получение хода выполнения установщика .NET Framework 4.5
 

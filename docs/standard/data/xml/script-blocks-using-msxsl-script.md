@@ -5,23 +5,29 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
-ms.openlocfilehash: 3cb65142243d1f910ffd0fb85750ba62786d79f0
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 1a2d1f0972bc610cb4943dacc74c1bae8c54012b
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824704"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032220"
 ---
 # <a name="script-blocks-using-msxslscript"></a>Блоки скриптов с использованием msxsl:script
+
+> [!NOTE]
+> Блоки скриптов поддерживаются только в .NET Framework. Они _не_ поддерживаются в .NET Core или .NET 5.0 или более поздней версии.
+
 Класс <xref:System.Xml.Xsl.XslCompiledTransform> поддерживает внедренные скрипты с помощью элемента `msxsl:script`. После загрузки таблицы стилей все определенные функции компилируются в MSIL с помощью модели CodeDOM и выполняются во время выполнения. Сборка, создаваемая из блока внедренного скрипта, располагается отдельно от сборки, создаваемой для таблицы стилей.  
   
 ## <a name="enable-xslt-script"></a>Включение скрипта XSLT  
+
  Поддержка внедренных скриптов является необязательным параметром XSLT в классе <xref:System.Xml.Xsl.XslCompiledTransform>. По умолчанию поддержка скриптов отключена. Чтобы включить поддержку скриптов, создайте объект <xref:System.Xml.Xsl.XsltSettings> со значением свойства <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A>, равным `true`, и передайте его методу <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A>.  
   
 > [!NOTE]
 > Скрипты XSLT следует включать только при необходимости в поддержке скриптов и при работе в полностью доверенной среде.  
   
 ## <a name="msxslscript-element-definition"></a>Определение элемента msxsl:script  
+
  Элемент `msxsl:script` введен корпорацией Майкрософт в качестве расширения рекомендации XSLT 1.0 и имеет следующее определение:  
   
 ```xml  
@@ -46,6 +52,7 @@ ms.locfileid: "94824704"
 ```  
   
 ## <a name="script-functions"></a>Функции в скриптах  
+
  Функции можно объявлять внутри элемента `msxsl:script`. При объявлении функции она заключается в блок скрипта. Таблицы стилей могут содержать несколько блоков скриптов, каждый из которых работает независимо от других. Это значит, что в одном блоке скрипта нельзя вызвать функцию, определенную в другом блоке, если в них не объявлены одно и то же пространство имен и один и тот же язык скрипта. Поскольку каждый блок скрипта может быть написан на собственном языке и блок проходит синтаксический анализ по правилам грамматики этого языка, рекомендуется использовать синтаксис языка, используемого в текущем блоке. Например, в пределах блока скрипта на языке Microsoft C# используйте синтаксис комментариев C#.  
   
  Передаваемые аргументы и возвращаемые значения функции могут иметь любой тип. Поскольку типы W3C XPath являются подмножеством типов среды CLR, для типов, которые не относятся к XPath, выполняется преобразование типов. В следующей таблице показано соответствие типов W3C и типов среды CLR.  
@@ -63,9 +70,11 @@ ms.locfileid: "94824704"
  Все другие типы вызывают ошибку.  
   
 ### <a name="importing-namespaces-and-assemblies"></a>Импорт пространств имен и сборок  
+
  В классе <xref:System.Xml.Xsl.XslCompiledTransform> определяется готовый набор сборок и пространств имен, которые по умолчанию поддерживаются элементом `msxsl:script`. Однако можно использовать классы и элементы из пространства имен, не входящего в стандартный список. Для этого нужно импортировать сборку и пространство имен в блок `msxsl:script`.  
   
 #### <a name="assemblies"></a>Сборки  
+
  По умолчанию создаются ссылки на следующие сборки:  
   
 - System.dll  
@@ -89,6 +98,7 @@ ms.locfileid: "94824704"
  Атрибут `name` содержит имя сборки, а атрибут `href` - путь к сборке. Имя сборки может быть полным, таким как «System.Data, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089», или кратким, таким как «System.Web».  
   
 #### <a name="namespaces"></a>Пространства имен  
+
  По умолчанию включаются следующие пространства имен:  
   
 - Система  
@@ -119,15 +129,18 @@ ms.locfileid: "94824704"
 ```  
   
 ## <a name="example"></a>Пример  
+
  В следующем примере используется внедренный скрипт для вычисления длины окружности по заданному радиусу.  
   
  [!code-csharp[XSLT_Script#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XSLT_Script/CS/xslt_script.cs#1)]
  [!code-vb[XSLT_Script#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XSLT_Script/VB/xslt_script.vb#1)]  
   
 #### <a name="numberxml"></a>number.xml  
+
  [!code-xml[XSLT_Script#2](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Script/XML/number.xml#2)]  
   
 #### <a name="calcxsl"></a>calc.xsl  
+
  [!code-xml[XSLT_Script#3](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Script/XML/calc.xsl#3)]  
   
 ### <a name="output"></a>Вывод  

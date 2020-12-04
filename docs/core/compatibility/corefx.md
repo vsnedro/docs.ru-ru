@@ -1,15 +1,15 @@
 ---
-title: Критические изменения в библиотеке базовых классов
-description: В этой статье приведен список критических изменений в основных библиотеках .NET.
+title: Критические изменения в библиотеке .NET
+description: Список критических изменений в основных библиотеках .NET для .NET Core версий 1.0–3.0.
 ms.date: 07/27/2020
-ms.openlocfilehash: 900fd4e0e071f19aa286dec84632006870822f26
-ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
+ms.openlocfilehash: 0f42429e44776fc70bb99ed3bdf346f0d5dbc9eb
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434915"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "96032047"
 ---
-# <a name="core-net-libraries-breaking-changes"></a>Критические изменения в основных библиотеках .NET
+# <a name="core-net-libraries-breaking-changes-in-net-core-10-30"></a>Критические изменения в основных библиотеках .NET Core версий 1.0–3.0.
 
 Основные библиотеки .NET предоставляет примитивы и другие общие типы, используемые в .NET Core.
 
@@ -17,33 +17,6 @@ ms.locfileid: "92434915"
 
 | Критическое изменение | Представленная версия |
 | - | :-: |
-| [API глобального кэша сборок устарели](#global-assembly-cache-apis-are-obsolete) | 5.0 |
-| [API удаленного взаимодействия устарели](#remoting-apis-are-obsolete) | 5.0 |
-| [Большинство API управления доступом для кода устарело](#most-code-access-security-apis-are-obsolete) | 5.0 |
-| [Устаревшие API с отличными от заданных по умолчанию идентификаторами диагностики](#api-obsoletions-with-non-default-diagnostic-ids) | 5.0 |
-| [Значение FrameworkDescription изменено с .NET Core на .NET](#frameworkdescriptions-value-is-net-instead-of-net-core) | 5.0 |
-| [Изменения в поведении API, связанные со сборкой, для формата публикации с одним файлом](#assembly-related-api-behavior-changes-for-single-file-publishing-format) | 5.0 |
-| [Порядок тегов в действии Activity.Tags обращен](#order-of-tags-in-activitytags-is-reversed) | 5.0 |
-| [В RC1 изменились имена параметров](#parameter-names-changed-in-rc1) | 5.0 |
-| [Атрибуты OSPlatform переименованы или удалены](#osplatform-attributes-renamed-or-removed) | 5.0 |
-| [Thread.Abort устарел](#threadabort-is-obsolete) | 5.0 |
-| [Устаревшие свойства ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
-| [Встроенные проверки IsSupported, поддерживаемые оборудованием, могут отличаться для вложенных типов](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
-| [В ссылочных сборках изменились имена параметров](#parameter-names-changed-in-reference-assemblies) | 5.0 |
-| [В UNIX правильно анализируются пути URI с символами, отличными от ASCII](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
-| [Распознавание URI UNC-путей в UNIX](#uri-recognition-of-unc-paths-on-unix) | 5.0 |
-| [Environment.OSVersion возвращает правильную версию операционной системы](#environmentosversion-returns-the-correct-operating-system-version) | 5.0 |
-| [Увеличена сложность LINQ OrderBy.First{OrDefault}](#complexity-of-linq-orderbyfirstordefault-increased) | 5.0 |
-| [IntPtr и UIntPtr реализуют IFormattable](#intptr-and-uintptr-implement-iformattable) | 5.0 |
-| [PrincipalPermissionAttribute устарел и является ошибочным](#principalpermissionattribute-is-obsolete-as-error) | 5.0 |
-| [Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) | 5.0 |
-| [Пути к коду в кодировке UTF-7 устарели](#utf-7-code-paths-are-obsolete) | 5.0 |
-| [Vector\<T> всегда вызывает исключение NotSupportedException для неподдерживаемых типов](#vectort-always-throws-notsupportedexception-for-unsupported-types) | 5.0 |
-| [По умолчанию ActivityIdFormat имеет значение W3C](#default-activityidformat-is-w3c) | 5.0 |
-| [Изменение в поведении для Vector2.Lerp и Vector4.Lerp](#behavior-change-for-vector2lerp-and-vector4lerp) | 5.0 |
-| [Методы SSE и SSE2 CompareGreaterThan корректно обрабатывают входные данные, которые не являются числом](#sse-and-sse2-comparegreaterthan-methods-properly-handle-nan-inputs) | 5.0 |
-| [Теперь CounterSet.CreateCounterSetInstance создает исключение InvalidOperationException, если экземпляр уже существует](#countersetcreatecountersetinstance-now-throws-invalidoperationexception-if-instance-already-exists) | 5.0 |
-| [Удален пакет Microsoft.DotNet.PlatformAbstractions](#microsoftdotnetplatformabstractions-package-removed) | 5.0 |
 | [Интерфейсы API, сообщающие версию, теперь сообщают версию продукта, а не файла](#apis-that-report-version-now-report-product-and-not-file-version) | 3.0 |
 | [Пользовательские экземпляры EncoderFallbackBuffer не поддерживают рекурсивный откат](#custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively) | 3.0 |
 | [Изменено поведение форматирования и анализа при наличии плавающей запятой](#floating-point-formatting-and-parsing-behavior-changed) | 3.0 |
@@ -61,125 +34,15 @@ ms.locfileid: "92434915"
 | [Для свойств UriBuilder больше не добавляются начальные символы](#uribuilder-properties-no-longer-prepend-leading-characters) | 1.0 |
 | [Process.StartInfo выдает исключение InvalidOperationException для процессов, которые не были запущены](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
-## <a name="net-50"></a>.NET 5.0
-
-[!INCLUDE [remoting-apis-obsolete](../../../includes/core-changes/corefx/5.0/remoting-apis-obsolete.md)]
-
-***
-
-[!INCLUDE [globalassemblycache-property-obsolete](../../../includes/core-changes/corefx/5.0/global-assembly-cache-apis-obsolete.md)]
-
-**_
-
-[!INCLUDE [code-access-security-apis-obsolete](../../../includes/core-changes/corefx/5.0/code-access-security-apis-obsolete.md)]
-
-_*_
-
-[!INCLUDE [obsolete-apis-with-custom-diagnostics](../../../includes/core-changes/corefx/5.0/obsolete-apis-with-custom-diagnostics.md)]
-
-_*_
-
-[!INCLUDE [frameworkdescription-returns-net-not-net-core](../../../includes/core-changes/corefx/5.0/frameworkdescription-returns-net-not-net-core.md)]
-
-_*_
-
-[!INCLUDE [assembly-api-behavior-changes-for-single-file-publish](../../../includes/core-changes/corefx/5.0/assembly-api-behavior-changes-for-single-file-publish.md)]
-
-_*_
-
-[!INCLUDE [reverse-order-of-tags-in-activity-property](../../../includes/core-changes/corefx/5.0/reverse-order-of-tags-in-activity-property.md)]
-
-_*_
-
-[!INCLUDE [reference-assembly-parameter-names-rc1](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names-rc1.md)]
-
-_*_
-
-[!INCLUDE [os-platform-attributes-renamed](../../../includes/core-changes/corefx/5.0/os-platform-attributes-renamed.md)]
-
-_*_
-
-[!INCLUDE [thread-abort-obsolete](../../../includes/core-changes/corefx/5.0/thread-abort-obsolete.md)]
-
-_*_
-
-[!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
-
-_*_
-
-[!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
-
-_*_
-
-[!INCLUDE [reference-assembly-parameter-names](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names.md)]
-
-_*_
-
-[!INCLUDE [non-ascii-chars-in-uri-parsed-correctly](../../../includes/core-changes/corefx/5.0/non-ascii-chars-in-uri-parsed-correctly.md)]
-
-_*_
-
-[!INCLUDE [unc-path-recognition-unix](../../../includes/core-changes/corefx/5.0/unc-path-recognition-unix.md)]
-
-_*_
-
-[!INCLUDE [environment-osversion-returns-correct-version](../../../includes/core-changes/corefx/5.0/environment-osversion-returns-correct-version.md)]
-
-_*_
-
-[!INCLUDE [orderby-firstordefault-complexity-increase](../../../includes/core-changes/corefx/5.0/orderby-firstordefault-complexity-increase.md)]
-
-_*_
-
-[!INCLUDE [intptr-uintptr-implement-iformattable](../../../includes/core-changes/corefx/5.0/intptr-uintptr-implement-iformattable.md)]
-
-_*_
-
-[!INCLUDE [principalpermissionattribute-obsolete](../../../includes/core-changes/corefx/5.0/principalpermissionattribute-obsolete.md)]
-
-_*_
-
-[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
-
-_*_
-
-[!INCLUDE [utf-7-code-paths-obsolete](../../../includes/core-changes/corefx/5.0/utf-7-code-paths-obsolete.md)]
-
-_*_
-
-[!INCLUDE [vectort-throws-notsupportedexception](../../../includes/core-changes/corefx/5.0/vectort-throws-notsupportedexception.md)]
-
-_*_
-
-[!INCLUDE [default-activityidformat-changed](../../../includes/core-changes/corefx/5.0/default-activityidformat-changed.md)]
-
-_*_
-
-[!INCLUDE [vector-lerp-behavior-change](../../../includes/core-changes/corefx/5.0/vector-lerp-behavior-change.md)]
-
-_*_
-
-[!INCLUDE [sse-comparegreaterthan-intrinsics](../../../includes/core-changes/corefx/5.0/sse-comparegreaterthan-intrinsics.md)]
-
-_*_
-
-[!INCLUDE [createcountersetinstance-throws-invalidoperation](../../../includes/core-changes/corefx/5.0/createcountersetinstance-throws-invalidoperation.md)]
-
-_*_
-
-[!INCLUDE [platformabstractions-package-removed](../../../includes/core-changes/corefx/5.0/platformabstractions-package-removed.md)]
-
-_*_
-
 ## <a name="net-core-30"></a>.NET Core 3.0
 
 [!INCLUDE[APIs that report version now report product and not file version](~/includes/core-changes/corefx/3.0/version-information-changes.md)]
 
-_*_
+***
 
 [!INCLUDE[Custom EncoderFallbackBuffer instances cannot fall back recursively](~/includes/core-changes/corefx/3.0/custom-encoderfallbackbuffer-cannot-be-recursive.md)]
 
-_*_
+**_
 
 [!INCLUDE[Floating point formatting and parsing behavior changes](~/includes/core-changes/corefx/3.0/floating-point-changes.md)]
 
