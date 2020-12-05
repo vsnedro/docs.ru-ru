@@ -8,16 +8,19 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: ca3a9cb914befbc8e0982070b818b27ee3143793
-ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
+ms.openlocfilehash: 8efac4d5e3fddcb9fdc6e08bcc933f2776420ced
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "96593840"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739978"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Обзор анализа исходного кода .NET
 
-Анализаторы .NET Compiler Platform (Roslyn) проверяют качество кода C# или Visual Basic и выявляют в нем проблемы. Начиная с .NET 5.0 эти анализаторы входят в состав пакета SDK .NET. (Ранее вы установили анализаторы качества кода как [пакет NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), и анализаторы стиля кода были установлены вместе с Visual Studio.)
+Анализаторы .NET Compiler Platform (Roslyn) проверяют качество кода C# или Visual Basic и выявляют в нем проблемы. Начиная с .NET 5.0 эти анализаторы входят в состав пакета SDK .NET. Если вы не хотите переходить на пакет SDK для .NET 5 + или если предпочитаете использовать модель на основе пакетов NuGet, анализаторы также доступны в `Microsoft.CodeAnalysis.NetAnalyzers` [пакете NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). Вы можете предпочесть модели на основе пакетов для обновления версий по требованию.
+
+> [!NOTE]
+> Анализаторы .NET являются независимыми от целевой платформы. То есть проект не обязан ориентироваться на конкретную платформу .NET. Анализаторы работают для проектов, предназначенных для, а также для `net5.0` более ранних версий .NET, таких как `netcoreapp` , `netstandard` и `net472` .
 
 - [Анализ качества кода (правила "Какскскскс")](#code-quality-analysis)
 - [Анализ стиля кода (правила "Идекскскскс")](#code-style-analysis)

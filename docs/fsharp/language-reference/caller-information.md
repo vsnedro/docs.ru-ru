@@ -2,12 +2,12 @@
 title: Сведения о вызывающем объекте
 description: Описывает использование атрибутов аргумента сведений вызывающей стороны для получения сведений о вызывающем объекте из метода.
 ms.date: 11/04/2019
-ms.openlocfilehash: d995b37149277b7c7d1b6217ee484d3c90a7f8b3
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 700cde26fbe4e6c48155f88bfc63af59af86cfe2
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976800"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739780"
 ---
 # <a name="caller-information"></a>Сведения о вызывающем объекте
 
@@ -15,7 +15,7 @@ ms.locfileid: "73976800"
 
 Для получения этих сведений используются атрибуты, которые применяются к необязательным параметрам, каждый из которых имеет значение по умолчанию. В следующей таблице перечислены атрибуты сведений о вызывающем объекте, определенные в пространстве имен [System. Runtime. CompilerServices](/dotnet/api/system.runtime.compilerservices) :
 
-|Атрибут|Описание|Type|
+|attribute|Описание|Тип|
 |---------|-----------|----|
 |[каллерфилепас](/dotnet/api/system.runtime.compilerservices.callerfilepathattribute)|Полный путь исходного файла, содержащего вызывающий объект. Это путь к файлу во время компиляции.|`String`
 |[каллерлиненумбер](/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute)|Номер строки в исходном файле, в которой вызывается метод.|`Integer`|
@@ -35,13 +35,13 @@ type Tracer() =
                       [<CallerMemberName; Optional; DefaultParameterValue("")>] memberName: string,
                       [<CallerFilePath; Optional; DefaultParameterValue("")>] path: string,
                       [<CallerLineNumber; Optional; DefaultParameterValue(0)>] line: int) =
-        Trace.WriteLine(sprintf "Message: %s" message)
-        Trace.WriteLine(sprintf "Member name: %s" memberName)
-        Trace.WriteLine(sprintf "Source file path: %s" path)
-        Trace.WriteLine(sprintf "Source line number: %d" line)
+        Trace.WriteLine(sprintf $"Message: {message}")
+        Trace.WriteLine(sprintf $"Member name: {memberName}")
+        Trace.WriteLine(sprintf $"Source file path: {path}")
+        Trace.WriteLine(sprintf $"Source line number: {line}")
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Атрибуты сведений о вызывающем объекте могут применяться только к необязательным параметрам. Атрибуты сведений о вызывающем объекте приводят к тому, что компилятор записывает правильное значение для каждого необязательного параметра, дополненного атрибутом сведений о вызывающем объекте.
 
@@ -51,10 +51,10 @@ type Tracer() =
 
 ## <a name="member-names"></a>Имена членов
 
-Можно использовать атрибут [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) , чтобы не указывать имя члена в качестве аргумента `String` вызываемого метода. С помощью этого метода можно избежать проблем, при которых Рефакторинг переименования не изменяет значения `String`. Это особенно полезно при выполнении следующих задач:
+Можно использовать атрибут, [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) чтобы не указывать имя члена в качестве `String` аргумента вызываемого метода. Этот прием позволяет избежать проблемы, заключающейся в том, что операция рефакторинга и переименования не изменяет значений `String`. Это особенно полезно при выполнении следующих задач:
 
 - Использование процедур трассировки и диагностики.
-- Реализация интерфейса [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) при привязке данных. Этот интерфейс позволяет свойству объекта уведомлять связанный элемент управления об изменении свойства, чтобы элемент управления мог отображать обновленные сведения. Без атрибута [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) необходимо указать имя свойства в виде литерала.
+- Реализация интерфейса [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) при привязке данных. Этот интерфейс позволяет свойству объекта уведомлять связанный элемент управления об изменении свойства, чтобы элемент управления мог отображать обновленные сведения. Без [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) атрибута необходимо указать имя свойства в виде литерала.
 
 На следующей диаграмме показаны имена элементов, возвращаемых при использовании атрибута CallerMemberName.
 

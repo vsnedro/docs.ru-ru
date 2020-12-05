@@ -2,12 +2,12 @@
 title: Начало работы с F# в Visual Studio Code
 description: 'Узнайте, как использовать F # с Visual Studio Code и набором подключаемых модулей Ionide.'
 ms.date: 12/23/2018
-ms.openlocfilehash: 3317d0037d3c14a6b55079385d7b27e499c0c392
-ms.sourcegitcommit: 39b1d5f2978be15409c189a66ab30781d9082cd8
+ms.openlocfilehash: 11fb0d443fb7c2b3f270d45bfeaa91102ba28efd
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92050550"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739806"
 ---
 # <a name="get-started-with-f-in-visual-studio-code"></a>Начало работы с F# в Visual Studio Code
 
@@ -36,7 +36,7 @@ code .
 
 Во-первых, убедитесь, что скрипты .NET Core — это среда сценариев по умолчанию:
 
-1. Откройте Параметры Visual Studio Code (параметры настройки**кода**  >  **Preferences**  >  **Settings**).
+1. Откройте Параметры Visual Studio Code (параметры настройки **кода**  >  **Preferences**  >  **Settings**).
 1. Найдите термин **скрипт F #**.
 1. Установите флажок **FSharp: использовать скрипты пакета SDK**.
 
@@ -144,7 +144,7 @@ val toPigLatin : word:string -> string
 let main argv =
     for name in argv do
         let newName = PigLatin.toPigLatin name
-        printfn "%s in Pig Latin is: %s" name newName
+        printfn %"{name} in Pig Latin is: {newName}"
 
     0
 ```

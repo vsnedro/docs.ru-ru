@@ -6,16 +6,16 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: quickstart
 ms.prod: dotnet
-ms.openlocfilehash: 09e0c46a08e08a2021a9dffe214d3d62d6fb8ec5
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 2919db55304590f5557aa0cbda50cc4bd6640443
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "96594026"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739534"
 ---
 # <a name="quickstart---use-net-to-drive-a-raspberry-pi-sense-hat"></a>Краткое руководство. использование .NET для работы с Raspberry Пи (*)
 
-Датчик Raspberry Pi [Hat](https://www.raspberrypi.org/products/sense-hat/) <span class="docon docon-navigate-external x-hidden-focus"></span> — это надстройка для Raspberry Pi. У точки зрения установлена схема ИНДИКАТОРов RGB размером 8 × 8, джойстик с пятью кнопками, а также следующие датчики:
+Raspberry Pi [*](https://www.raspberrypi.org/products/sense-hat/) <span class="docon docon-navigate-external x-hidden-focus"></span> (**H** ардваре **A** ттачед On **T** op) — это надстройка для Raspberry Pi. У точки зрения установлена схема ИНДИКАТОРов RGB размером 8 × 8, джойстик с пятью кнопками, а также следующие датчики:
 
 - Гироскоп
 - Акселерометр
@@ -52,7 +52,7 @@ ms.locfileid: "96594026"
 
 ## <a name="get-the-source-code"></a>Получение исходного кода
 
-Источник этого краткого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart). <span class="docon docon-navigate-external x-hidden-focus"></span>
+Источник этого краткого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart) <span class="docon docon-navigate-external x-hidden-focus"></span> .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

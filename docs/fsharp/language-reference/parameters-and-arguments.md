@@ -2,12 +2,12 @@
 title: Параметры и аргументы
 description: 'Сведения о поддержке языка F # для определения параметров и передачи аргументов в функции, методы и свойства.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 6564fd31105427683af8fc6280672e638737e9b5
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 3c391ca37a1cf3bd150316943e5b06efa532b317
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811526"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96740293"
 ---
 # <a name="parameters-and-arguments"></a>Параметры и аргументы
 
@@ -137,7 +137,7 @@ open System
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
-        printfn "%s" message
+        printfn $"{message}"
 ```
 
 Можно также указать новый объект в качестве значения параметра по умолчанию. Например, `Foo` элемент может иметь необязательный `CancellationToken` Вход в качестве входа:
@@ -147,7 +147,7 @@ open System.Threading
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
-        printfn "%A" ct
+        printfn $"{ct}"
 ```
 
 Значение, заданное в качестве аргумента, `DefaultParameterValue` должно соответствовать типу параметра. Например, следующее не разрешено:
@@ -168,12 +168,12 @@ type C =
 - Используйте, `byref<'T>` Если требуется как чтение, так и запись в указатель.
 
 ```fsharp
-let example1 (x: inref<int>) = printfn "It's %d" x
+let example1 (x: inref<int>) = printfn $"It's %d{x}"
 
 let example2 (x: outref<int>) = x <- x + 1
 
 let example3 (x: byref<int>) =
-    printfn "It'd %d" x
+    printfn $"It's %d{x}"
     x <- x + 1
 
 let test () =

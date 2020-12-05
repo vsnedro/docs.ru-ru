@@ -2,12 +2,12 @@
 title: Учебник. Создание поставщика типов
 description: 'Узнайте, как создавать собственные поставщики типов F # в F # 3,0, изучив несколько поставщиков простых типов, чтобы продемонстрировать основные понятия.'
 ms.date: 11/04/2019
-ms.openlocfilehash: 71225614ed983a76d35c214faa87bbad0fbb7d24
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 65cb9616f66b5850135dbfcdd9b9a9dad30421de
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810876"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739702"
 ---
 # <a name="tutorial-create-a-type-provider"></a>Учебник. Создание поставщика типов
 
@@ -243,7 +243,7 @@ let t = ProvidedTypeDefinition(thisAssembly, namespaceName,
 Затем добавьте XML-документацию в тип. Эта документация является отложенной, то есть вычисленной по запросу, если она требуется компилятору узла.
 
 ```fsharp
-t.AddXmlDocDelayed (fun () -> sprintf "This provided type %s" ("Type" + string n))
+t.AddXmlDocDelayed (fun () -> $"""This provided type {"Type" + string n}""")
 ```
 
 Далее вы добавите в тип предоставленное статическое свойство:
@@ -352,9 +352,9 @@ t.AddMembersDelayed(fun () ->
                   getterCode= (fun args -> <@@ valueOfTheProperty @@>))
 
               p.AddXmlDocDelayed(fun () ->
-                  sprintf "This is StaticProperty%d on NestedType" i)
+                  $"This is StaticProperty{i} on NestedType")
 
-              p
+              p
       ]
 
     staticPropsInNestedType)
@@ -461,7 +461,7 @@ let result = reg.IsMatch("425-123-2345")
 let r = reg.Match("425-123-2345").Groups.["AreaCode"].Value //r equals "425"
 ```
 
-Обратите внимание на следующие моменты:
+Обратите внимание на следующие моменты.
 
 - Стандартный тип Regex представляет параметризованный `RegexTyped` тип.
 
@@ -527,7 +527,7 @@ type public CheckedRegexProvider() as this =
 do ()
 ```
 
-Обратите внимание на следующие моменты:
+Обратите внимание на следующие моменты.
 
 - Поставщик типов принимает два статических параметра: `pattern` , который является обязательным, и `options` , который является необязательным (поскольку предоставляется значение по умолчанию).
 
@@ -581,7 +581,7 @@ for group in r.GetGroupNames() do
         propertyName = group,
         propertyType = typeof<Group>,
         getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
-        prop.AddXmlDoc(sprintf @"Gets the ""%s"" group from this match" group)
+        prop.AddXmlDoc($"""Gets the ""{group}"" group from this match""")
     matchTy.AddMember prop
 ```
 
@@ -764,7 +764,7 @@ do ()
 let info = new MiniCsv<"info.csv">()
 for row in info.Data do
 let time = row.Time
-printfn "%f" (float time)
+printfn $"{float time}"
 ```
 
 В этом случае компилятор должен преобразовать эти вызовы в что-то, как показано в следующем примере:
@@ -773,7 +773,7 @@ printfn "%f" (float time)
 let info = new CsvFile("info.csv")
 for row in info.Data do
 let (time:float) = row.[1]
-printfn "%f" (float time)
+printfn $"%f{float time}"
 ```
 
 Для оптимального перевода необходимо, чтобы поставщик типов определял реальный `CsvFile` тип в сборке поставщика типов. Поставщики типов часто используют несколько вспомогательных типов и методов для создания оболочки для важной логики. Поскольку меры удаляются во время выполнения, можно использовать `float[]` как тип стирания для строки. Компилятор будет обрабатывать различные столбцы с разными типами мер. Например, первый столбец в нашем примере имеет тип `float<meter>` , а второй — `float<second>` . Однако удаленное представление может остаться довольно простым.
@@ -1048,7 +1048,7 @@ API Провидедтипес предоставляет вспомогател
   let nullableDecimal_kgpm2 = typedefof<System.Nullable<_>>.MakeGenericType [|dkgpm2 |]
 ```
 
-### <a name="accessing-project-local-or-script-local-resources"></a>Доступ к локальным ресурсам проекта или локальному сценарию
+### <a name="accessing-project-local-or-script-local-resources"></a>Доступ к ресурсам Project-Local или Script-Local
 
 Каждому экземпляру поставщика типов может быть присвоено `TypeProviderConfig` значение во время создания. Это значение содержит "папку разрешения" для поставщика (то есть папка проекта для компиляции или каталога, содержащего скрипт), список сборок, на которые имеются ссылки, и другие сведения.
 

@@ -2,12 +2,12 @@
 title: Результаты
 description: 'Узнайте, как использовать тип "Result" F #, чтобы упростить написание кода, поддерживающего ошибку.'
 ms.date: 08/13/2020
-ms.openlocfilehash: d69e6ddc37bcf5cb5fc28644d59a11a822b83faa
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 53b1db0c9224ae032d58c06cd3c58e3dbed03f7b
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656922"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96740228"
 ---
 # <a name="results"></a>Результаты
 
@@ -68,15 +68,15 @@ let test() =
     let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
     let res1 = validateRequest (Ok req1)
     match res1 with
-    | Ok req -> printfn "My request was valid! Name: %s Email %s" req.Name req.Email
-    | Error e -> printfn "Error: %s" e
+    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"  
+    | Error e -> printfn $"Error: {e}"
     // Prints: "My request was valid!  Name: Phillip Email: phillip@consoto.biz"
 
     let req2 = { Name = "Phillip"; Email = "phillip@bananas.com" }
     let res2 = validateRequest (Ok req2)
     match res2 with
-    | Ok req -> printfn "My request was valid! Name: %s Email %s" req.Name req.Email
-    | Error e -> printfn "Error: %s" e
+    | Ok req -> printfn $"My request was valid! Name: {req.Name} Email {req.Email}"  
+    | Error e -> printfn $"Error: {e}"
     // Prints: "Error: No email from bananas.com is allowed."
 
 test()
@@ -84,7 +84,7 @@ test()
 
 Как видите, в цепочку можно легко объединить различные функции проверки, если все они будут возвращать `Result` .  Это позволяет разбивать такие функциональные возможности на небольшие части, которые являются взаимокомпозициями по мере необходимости.  Это также имеет добавленное *значение применения* [сопоставления шаблонов](pattern-matching.md) в конце круга проверки, что в свою сторону принуждает к более высокой степени правильности программы.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Размеченные объединения](discriminated-unions.md)
 - [Соответствие шаблону](pattern-matching.md)

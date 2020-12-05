@@ -2,18 +2,18 @@
 title: Сопоставление шаблонов
 description: 'Узнайте, как шаблоны используются в F # для сравнения данных с логическими структурами, разложения данных на составляющие части или извлечения информации из данных.'
 ms.date: 11/12/2020
-ms.openlocfilehash: e167712b082b7f587e41a78edcaf0a0db9c7294b
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 932f50b7947f6df728149437dd3ceb19c42e5c6a
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687809"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96740280"
 ---
 # <a name="pattern-matching"></a>Сопоставление шаблонов
 
 Шаблоны — это правила для преобразования входных данных. Они используются на любом языке F # для сравнения данных с логической структурой или структурами, разложения данных на составляющие части или извлечения информации из данных различными способами.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Шаблоны используются во многих языковых конструкциях, таких как `match` выражение. Они используются при обработке аргументов для функций в `let` привязках, лямбда-выражениях и в обработчиках исключений, связанных с `try...with` выражением. Дополнительные сведения см. в разделе [выражения Match](match-expressions.md), [Привязка let](./functions/let-bindings.md), [лямбда-выражения: `fun` ключевое слово](./functions/lambda-expressions-the-fun-keyword.md)и [исключения: `try...with` выражение](./exception-handling/the-try-with-expression.md).
 
@@ -88,8 +88,8 @@ type Shape =
 ```fsharp
 let matchShape shape =
     match shape with
-    | Rectangle(height = h) -> printfn "Rectangle with length %f" h
-    | Circle(r) -> printfn "Circle with radius %f" r
+    | Rectangle(height = h) -> printfn $"Rectangle with length %f{h}"
+    | Circle(r) -> printfn $"Circle with radius %f{r}"
 ```
 
 Использование именованного поля является необязательным, поэтому в предыдущем примере оба `Circle(r)` и `Circle(radius = r)` имеют одинаковый результат.
@@ -98,7 +98,7 @@ let matchShape shape =
 
 ```fsharp
 match shape with
-| Rectangle(height = h; width = w) -> printfn "Rectangle with height %f and width %f" h w
+| Rectangle(height = h; width = w) -> printfn $"Rectangle with height %f{h} and width %f{w}"
 | _ -> ()
 ```
 
@@ -232,7 +232,7 @@ f "asdf" // does not match
 
 Сведения о [`nameof`](nameof.md) том, что можно сделать, см. в операторе.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Выражения match](match-expressions.md)
 - [Активные шаблоны](active-patterns.md)
