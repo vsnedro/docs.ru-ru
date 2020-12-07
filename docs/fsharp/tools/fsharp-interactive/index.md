@@ -4,12 +4,12 @@ description: Узнайте, как F# Interactive (dotnet fsi) использ�
 ms.date: 11/29/2020
 f1_keywords:
 - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
-ms.openlocfilehash: 92177c41dc6b31d9186bae8176f85787e2fb89e0
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 71ec5d1b050b02ecbdb98adce814fce011cdbca0
+ms.sourcegitcommit: c6de55556add9f92af17e0f8d1da8f356a19a03d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96438050"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96549401"
 ---
 # <a name="interactive-programming-with-f"></a>Интерактивное программирование с помощью F\#
 
@@ -90,6 +90,9 @@ dotnet fsi Script.fsx
 
 ## <a name="referencing-packages-in-f-interactive"></a>Создание ссылок на пакеты в F# Interactive
 
+> [!NOTE]
+> Система управления пакетами является расширяемой, ознакомьтесь с дополнительными сведениями [о других расширениях](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+
 F# Interactive позволяет создавать ссылки на пакеты NuGet с помощью синтаксиса `#r "nuget:"` и дополнительной версии:
 
 ```fsharp
@@ -133,6 +136,8 @@ printfn "%A" (f (dsharp.tensor 1.2))
 
 > [!NOTE]
 > В настоящее время существует ограничение для скриптов, использующих ссылки на платформы (например, `Microsoft.NET.Sdk.Web` или `Microsoft.NET.Sdk.WindowsDesktop`). Такие пакеты, как Saturn, Giraffe, WinForms, недоступны. Для решения создана соответствующая проблема [9417](https://github.com/dotnet/fsharp/issues/9417).
+
+Ознакомьтесь с дополнительными сведениями о [расширяемости управления пакетами и другими расширениями](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 ## <a name="referencing-assemblies-on-disk-with-f-interactive"></a>Создание ссылок на сборки на диске в F# Interactive
 
