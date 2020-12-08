@@ -2,12 +2,12 @@
 title: 'Критическое изменение. CA1831: используйте AsSpan вместо индексаторов на основе диапазона для строки'
 description: Сведения о критическом изменении в .NET 5.0, вызванном включением правила анализа кода CA1831.
 ms.date: 08/21/2020
-ms.openlocfilehash: 74f34af04a56b73478ffb3305d69ed49f3a30072
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 850916b804ae29dba8d2bd05c6e4fb06fe667296
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759582"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437895"
 ---
 # <a name="warning-ca1831-use-asspan-instead-of-range-based-indexers-for-string"></a>Предупреждение CA1831: используйте AsSpan вместо индексаторов на основе диапазона для строки
 
@@ -41,7 +41,7 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ```
 
-- Если вы не хотите изменять код, можно отключить правило, задав серьезность `suggestion` или `none`. Дополнительные сведения см. в разделе [Настройка правил анализа кода](../../../../fundamentals/productivity/configure-code-analysis-rules.md).
+- Если вы не хотите изменять код, можно отключить правило, задав серьезность `suggestion` или `none`. Дополнительные сведения см. в разделе [Настройка правил анализа кода](../../../../fundamentals/code-analysis/configuration-options.md).
 
 - Чтобы полностью отключить анализ кода, задайте для параметра `EnableNETAnalyzers` значение `false` в файле проекта. Дополнительные сведения см. в разделе [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - BinaryFormatter class, samples
 - serialization, attributes
 ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
-ms.openlocfilehash: e7c4d6ca4c72390c3e0803502aa9c1a675e02345
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: 26612c5b0591efa61fcd476733aee2b219d67c62
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282416"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96438158"
 ---
 # <a name="version-tolerant-serialization"></a>Независимая от версий сериализация
 
@@ -28,7 +28,7 @@ ms.locfileid: "93282416"
 - Приложения старых версий выдадут исключения при запросе десериализации новых версий старого типа.
 - Приложения более новых версий выдадут исключения при десериализации старых версий типа с отсутствующими данными.
 
-Независимая от версий сериализация (VTS) является набором функций, которые со временем упрощают изменение сериализуемых типов. В частности, функции VTS доступны для классов, к которым применен атрибут <xref:System.SerializableAttribute>, включая универсальные типы. VTS позволяет добавлять новые поля для таких классов, не нарушая совместимости с другими версиями типа. Пример работающего приложения см. в разделе [Образец технологии сериализации, независимой от версии](basic-serialization-technology-sample.md).
+Независимая от версий сериализация (VTS) является набором функций, которые со временем упрощают изменение сериализуемых типов. В частности, функции VTS доступны для классов, к которым применен атрибут <xref:System.SerializableAttribute>, включая универсальные типы. VTS позволяет добавлять новые поля для таких классов, не нарушая совместимости с другими версиями типа.
 
 Функции VTS доступны при использовании <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Кроме того, при использовании <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> доступны все функции, за исключением допустимости лишних данных. Дополнительные сведения об использовании этих классов для сериализации см. в разделе [Двоичная сериализация](binary-serialization.md).
 

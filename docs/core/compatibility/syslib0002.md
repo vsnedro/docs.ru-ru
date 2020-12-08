@@ -3,12 +3,12 @@ title: Ошибка SYSLIB0002
 description: Сведения об устаревших элементах, которые приводят к появлению ошибки во время компиляции SYSLIB0002.
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: 53eb51d5e525c463e5698710bdb6fa0c0907e43c
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 36ecde3c52845a6594c4d04e167df48142038654
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440781"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437503"
 ---
 # <a name="syslib0002-principalpermissionattribute-is-obsolete"></a>SYSLIB0002. PrincipalPermissionAttribute устарел
 
@@ -64,4 +64,4 @@ ms.locfileid: "94440781"
 
 ## <a name="see-also"></a>См. также
 
-- [PrincipalPermissionAttribute устарел и является ошибочным](3.1-5.0.md#principalpermissionattribute-is-obsolete-as-error)
+- [PrincipalPermissionAttribute устарел и является ошибочным](core-libraries/5.0/principalpermissionattribute-obsolete.md)

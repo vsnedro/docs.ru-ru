@@ -5,12 +5,12 @@ dev_langs:
 - csharp
 - vb
 ms.date: 10/10/2018
-ms.openlocfilehash: f125a6a8d9287cb515478a10c2679c07817ae9a6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5c15b663cf69de334771e83c1a14db8d66d30458
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087366"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437920"
 ---
 # <a name="whats-new-in-net-core-21"></a>Новые возможности .NET Core 2.1
 
@@ -248,7 +248,7 @@ AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", False)
 
 ### <a name="breaking-changes"></a>Критические изменения
 
-Дополнительные сведения о критических изменениях для перехода с версии 2.0 на 2.1 см. в [этой статье](../compatibility/2.0-2.1.md).
+Дополнительные сведения о критических изменениях для перехода с версии 2.0 на 2.1 см. в [этой статье](../compatibility/2.1.md).
 
 ## <a name="see-also"></a>См. также
 

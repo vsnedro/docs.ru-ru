@@ -3,12 +3,12 @@ title: Отладка высокой загрузки ЦП в .NET Core
 description: Руководство по отладке высокой загрузки ЦП в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: 71e0b98f7ad38836c6a20c3e0e75a878fb6525c7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 91f31f77b54398d2f9816890338955bc9b0852e4
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538713"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437827"
 ---
 # <a name="debug-high-cpu-usage-in-net-core"></a>Отладка высокой загрузки ЦП в .NET Core
 
@@ -90,7 +90,7 @@ Press p to pause, r to resume, q to quit.
 Теперь выполните команду [dotnet-counters](dotnet-counters.md) повторно. Чтобы отслеживать только `cpu-usage`, укажите `System.Runtime[cpu-usage]` как часть команды.
 
 ```dotnetcli
-dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
+dotnet-counters monitor --counters System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
 ```
 
 Вы увидите увеличение загрузки ЦП, как показано ниже:

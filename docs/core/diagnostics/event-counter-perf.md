@@ -3,12 +3,12 @@ title: Измерение производительности с помощью
 description: В этом руководстве вы узнаете, как измерять производительность с помощью EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: db9a0889d46cc4db02baac60cbed6f6e0ba6856b
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 75f6f1469c87eb1fe8a3064a815ec72943771f88
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538570"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437447"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>Учебник. Измерение производительности с помощью EventCounters в .NET Core
 
@@ -97,7 +97,7 @@ dotnet-counters ps
 Используя идентификатор процесса из выходных данных команды `dotnet-counters ps`, можно начать мониторинг счетчика событий с помощью следующей команды `dotnet-counters monitor`:
 
 ```console
-dotnet-counters monitor --process-id 2196 Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters monitor --process-id 2196 --counters Sample.EventCounter.Minimal,Microsoft.AspNetCore.Hosting[total-requests,requests-per-second],System.Runtime[cpu-usage]
 ```
 
 Во время выполнения команды `dotnet-counters monitor` удерживайте нажатой клавишу <kbd>F5</kbd> в браузере, чтобы начать выдачу непрерывных запросов к конечной точке `https://localhost:5001/api/values`. Через несколько секунд нажмите клавишу <kbd>q</kbd>.
@@ -118,7 +118,7 @@ Press p to pause, r to resume, q to quit.
 Команда `dotnet-counters monitor` отлично подходит для активного мониторинга. Однако может потребоваться собрать эти метрики диагностики для обработки и анализа. Для этого используйте команду `dotnet-counters collect`. Команда `collect` аналогична команде `monitor`, но принимает несколько дополнительных параметров. Можно указать требуемое имя выходного файла и формат. Для файла JSON с именем *diagnostics.json* используйте следующую команду:
 
 ```console
-dotnet-counters collect --process-id 2196 --format json -o diagnostics.json Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters collect --process-id 2196 --format json -o diagnostics.json --counters Sample.EventCounter.Minimal,Microsoft.AspNetCore.Hosting[total-requests,requests-per-second],System.Runtime[cpu-usage]
 ```
 
 Во время выполнения команды удерживайте нажатой клавишу <kbd>F5</kbd> в браузере, чтобы начать выдачу непрерывных запросов к конечной точке `https://localhost:5001/api/values`. Через несколько секунд нажмите клавишу <kbd>q</kbd>. Файл *diagnostics.json* будет записан. Однако файл JSON не имеет отступа; для удобства чтения здесь он отображается с отступом.

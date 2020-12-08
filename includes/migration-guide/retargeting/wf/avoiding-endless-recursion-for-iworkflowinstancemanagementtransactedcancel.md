@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: daf09748e69e70ad982bcee14461b66579f3bb87
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ab9431780422dfece5dcf8007d13e6d584f5118f
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614860"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96476685"
 ---
 ### <a name="avoiding-endless-recursion-for-iworkflowinstancemanagementtransactedcancel-and-iworkflowinstancemanagementtransactedterminate"></a>Предотвращение бесконечной рекурсии для IWorkflowInstanceManagement.TransactedCancel и IWorkflowInstanceManagement.TransactedTerminate
 
@@ -14,7 +14,7 @@ ms.locfileid: "85614860"
 
 #### <a name="suggestion"></a>Предложение
 
-При использовании AppFabric или другого клиента <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement> и возникновении переполнения стека в экземпляре службы рабочего процесса при попытке отменить или завершить экземпляр рабочего процесса можно добавить следующий код в часть `<appSettings>` файла web.config/app.config для службы рабочего процесса:
+При использовании AppFabric или другого клиента <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement> и возникновении переполнения стека в экземпляре службы рабочего процесса при попытке отменить или завершить экземпляр рабочего процесса можно добавить следующий код в раздел `<appSettings>` файла web.config/app.config для службы рабочего процесса:
 
 <pre><code class="lang-xml">&lt;add key=&quot;microsoft:WorkflowServices:IgnoreTransactionsForTransactedCancelAndTransactedTerminate&quot; value=&quot;true&quot;/&gt;&#13;&#10;</code></pre>
 

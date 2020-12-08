@@ -2,12 +2,12 @@
 title: Реализация прикладного уровня микрослужб с помощью веб-интерфейсов API
 description: Изучите внедрение зависимостей и шаблоны медиатора, а также сведения об их реализации на слое приложений веб-API.
 ms.date: 08/17/2020
-ms.openlocfilehash: 56d4eecb2831a57460b01ff4da8150d6dcce5bc5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 45121026e06c55258a16f41aa801c06808a6919f
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173423"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437788"
 ---
 # <a name="implement-the-microservice-application-layer-using-the-web-api"></a>Реализация прикладного уровня для микрослужб с помощью веб-API
 
@@ -663,7 +663,7 @@ public class IdentifiedCommandHandler<T, R> : IRequestHandler<IdentifiedCommand<
                     commandId,
                     command);
 
-                // Send the embeded business command to mediator so it runs its related CommandHandler
+                // Send the embedded business command to mediator so it runs its related CommandHandler
                 var result = await _mediator.Send(command, cancellationToken);
 
                 _logger.LogInformation(
