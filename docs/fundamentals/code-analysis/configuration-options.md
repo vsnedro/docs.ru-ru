@@ -5,18 +5,20 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: af2ebb74786f0ae884ffee4636765cae43fcb23f
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 4f7b392a2b066023fec75c5295bd94651654d645
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "96593142"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851794"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Параметры конфигурации для анализа кода
 
 Правила анализа кода имеют различные параметры конфигурации. Эти параметры указываются в виде пар "ключ-значение" в [файле конфигурации анализатора](configuration-files.md) с использованием синтаксиса `<option key> = <option value>` .
 
-Наиболее распространенным параметром, который вы настраиваете, является серьезность правила. Уровень серьезности можно настроить для всех правил анализатора, включая [Правила качества кода](quality-rules/index.md) и [правила стиля кода](style-rules/index.md).
+Наиболее распространенным параметром, который вы настраиваете, является [серьезность правила](#severity-level). Уровень серьезности можно настроить для всех правил анализатора, включая [Правила качества кода](quality-rules/index.md) и [правила стиля кода](style-rules/index.md). Например, чтобы включить правило как предупреждение, можно добавить следующую пару "ключ-значение" в EditorConfig файл.
+
+`dotnet_diagnostic.<rule ID>.severity = warning`
 
 Кроме того, можно настроить дополнительные параметры для настройки поведения правила.
 

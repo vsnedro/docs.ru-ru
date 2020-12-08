@@ -4,12 +4,12 @@ description: Узнайте, как F# Interactive (dotnet fsi) использ�
 ms.date: 11/29/2020
 f1_keywords:
 - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
-ms.openlocfilehash: 71ec5d1b050b02ecbdb98adce814fce011cdbca0
-ms.sourcegitcommit: c6de55556add9f92af17e0f8d1da8f356a19a03d
+ms.openlocfilehash: fe8ee2ebb97f4a47e80f39d5be8d95ba5b72ddc7
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96549401"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739317"
 ---
 # <a name="interactive-programming-with-f"></a>Интерактивное программирование с помощью F\#
 
@@ -118,7 +118,7 @@ let t2 = dsharp.tensor [ [ 0; 1 ]; [ 2; 2 ] ]
 // Define a scalar-to-scalar function
 let f (x: Tensor) = sin (sqrt x)
 
-printfn "%A" (f (dsharp.tensor 1.2))
+printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
 ### <a name="specifying-a-package-source"></a>Указание источника пакета
@@ -137,7 +137,7 @@ printfn "%A" (f (dsharp.tensor 1.2))
 > [!NOTE]
 > В настоящее время существует ограничение для скриптов, использующих ссылки на платформы (например, `Microsoft.NET.Sdk.Web` или `Microsoft.NET.Sdk.WindowsDesktop`). Такие пакеты, как Saturn, Giraffe, WinForms, недоступны. Для решения создана соответствующая проблема [9417](https://github.com/dotnet/fsharp/issues/9417).
 
-Ознакомьтесь с дополнительными сведениями о [расширяемости управления пакетами и другими расширениями](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+Дополнительные сведения см. на странице, посвященной [расширяемости управления пакетами и другим расширениям](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 ## <a name="referencing-assemblies-on-disk-with-f-interactive"></a>Создание ссылок на сборки на диске в F# Interactive
 
@@ -154,7 +154,7 @@ let myFunction x y = x + 2 * y
 ```fsharp
 #r "path/to/MyAssembly.dll"
 
-printfn "%A" (MyAssembly.myFunction 10 40)
+printfn $"{MyAssembly.myFunction 10 40}"
 ```
 
 Вывод выглядит следующим образом.
@@ -182,7 +182,7 @@ let square x = x * x
 #load "Script1.fsx"
 open Script1
 
-printfn "%d" (square 12)
+printfn $"%d{square 12}"
 ```
 
 Обратите внимание, что требуется объявление `open Script1`. Это обусловлено тем, что конструкции в скрипте F# компилируются в модуль верхнего уровня, являющийся именем файла скрипта, в котором он находится.
@@ -206,7 +206,7 @@ dotnet fsi Script2.fsx
 let args = fsi.CommandLineArgs
 
 for arg in args do
-    printfn "%s" arg
+    printfn $"{arg}"
 ```
 
 При оценке выводятся все аргументы. Первым аргументом всегда является имя вычисляемого скрипта:
