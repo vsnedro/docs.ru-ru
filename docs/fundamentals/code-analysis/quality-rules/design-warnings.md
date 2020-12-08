@@ -11,12 +11,12 @@ helpviewer_keywords:
 - rules, design
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: c8c7d46b9271e33ab7ce3f989fae95bd57394ccd
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 7b49403b1aa3d48008e6f7448ab0ed5a84468373
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "96593242"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851533"
 ---
 # <a name="design-rules"></a>Правила разработки
 
@@ -75,3 +75,4 @@ ms.locfileid: "96593242"
 | [CA1068: Параметры CancellationToken должны быть последними](ca1068.md) | Метод имеет параметр CancellationToken, который не является последним параметром. |
 | [CA1069: перечисления не должны иметь повторяющихся значений](ca1069.md) | Перечисление содержит несколько членов, которым явным образом присвоено одно и то же значение константы. |
 | [CA1070: не объявляйте поля событий как виртуальные](ca1070.md) | [Событие, похожее на поле](../../../csharp/event-pattern.md#defining-and-raising-field-like-events) , было объявлено как виртуальное. |
+| [CA1071: базовое переопределение. Равно при реализации IEquatable](ca1071.md) | Производный тип реализует <xref:System.IEquatable%601> , но не переопределяет метод базового класса <xref:System.IEquatable%601.Equals%2A> . |
