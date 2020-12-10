@@ -1,17 +1,17 @@
 ---
-title: Создание консольного приложения .NET Core с помощью Visual Studio для Mac
-description: Узнайте, как создать консольное приложение .NET Core с помощью Visual Studio для Mac.
-ms.date: 06/02/2020
-ms.openlocfilehash: 0248e48865541a7c73b9e219a06a57996c5cf601
-ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
+title: Создание консольного приложения .NET с помощью Visual Studio для Mac
+description: Узнайте, как создать консольное приложение .NET с помощью Visual Studio для Mac.
+ms.date: 11/30/2020
+ms.openlocfilehash: 1351b06eec32cd8d3d9d44926655405fe2246f58
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400530"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599490"
 ---
-# <a name="tutorial-create-a-net-core-console-application-using-visual-studio-for-mac"></a>Учебник. Создание консольного приложения .NET Core с помощью Visual Studio для Mac
+# <a name="tutorial-create-a-net-console-application-using-visual-studio-for-mac"></a>Учебник. Создание консольного приложения .NET с помощью Visual Studio для Mac
 
-В этом учебнике показано, как создать и запустить консольное приложение .NET Core с помощью Visual Studio для Mac.
+В этом руководстве показано, как создать и запустить консольное приложение .NET с помощью Visual Studio для Mac.
 
 > [!NOTE]
 > Ваш отзыв очень важен. Вы можете отправить отзыв о Visual Studio для Mac команде разработчиков двумя способами.
@@ -21,15 +21,13 @@ ms.locfileid: "93400530"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Visual Studio для Mac 8.6 или более поздней версии](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Выберите вариант установки .NET Core. Установка Xamarin является необязательным шагом для разработки .NET Core. Дополнительные сведения см. в следующих ресурсах:
+* [Visual Studio для Mac 8.8 или более поздней версии.](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) Выберите вариант установки .NET Core. Установка Xamarin является необязательным шагом для разработки в .NET. Дополнительные сведения см. в следующих ресурсах:
 
   * [Учебник. Установка Visual Studio для Mac](/visualstudio/mac/installation).
   * [Поддерживаемые версии macOS](../install/windows.md).
-  * [Версии .NET Core, поддерживаемые Visual Studio для Mac](/visualstudio/mac/net-core-support).
+  * [Версии .NET, поддерживаемые Visual Studio для Mac.](/visualstudio/mac/net-core-support)
 
 ## <a name="create-the-app"></a>Создание приложения
-
-Создайте проект консольного приложения .NET Core с именем HelloWorld.
 
 1. Запустите Visual Studio для Mac.
 
@@ -41,9 +39,7 @@ ms.locfileid: "93400530"
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="Список шаблонов для создания проектов":::
 
-1. В раскрывающемся списке **Целевая платформа** диалогового окна **Configure your new Console Application** (Настройка нового консольного приложения) выберите **.NET Core 3.1** и щелкните **Далее**.
-
-   :::image type="content" source="media/with-visual-studio-mac/target-framework.png" alt-text="Выбор целевой платформы":::
+1. В раскрывающемся списке **Целевая платформа** диалогового окна **Configure your new Console Application** (Настройка нового консольного приложения) выберите **.NET 5.0** и щелкните **Далее**.
 
 1. Введите HelloWorld в поле **Имя проекта** и щелкните **Создать**.
 
@@ -102,7 +98,7 @@ namespace HelloWorld
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этом руководстве показано, как создать консольное приложение .NET Core. В следующем учебнике описывается отладка приложения.
+В этом учебнике показано, как создать консольное приложение .NET. В следующем учебнике описывается отладка приложения.
 
 > [!div class="nextstepaction"]
-> [Отладка консольного приложения .NET Core с помощью Visual Studio для Mac](debugging-with-visual-studio-mac.md)
+> [Отладка консольного приложения .NET с помощью Visual Studio для Mac](debugging-with-visual-studio-mac.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - enumeration type [C#]
 - bit flags [C#]
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
-ms.openlocfilehash: 930efdbdc6a20ea301331c1ce6fc664da43bfc5f
-ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
+ms.openlocfilehash: a21bdf63247dc5fec95922de017e1d3502e08565
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92471854"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599438"
 ---
 # <a name="enumeration-types-c-reference"></a>Типы перечислений (справочник по C#)
 
-*Тип перечисления*  (или *тип enum* ) — это [тип значения](value-types.md), определенный набором именованных констант применяемого [целочисленного типа](integral-numeric-types.md). Чтобы определить тип перечисления, используйте ключевое слово `enum` и укажите имена *элементов перечисления* :
+*Тип перечисления* (или *тип enum*) — это [тип значения](value-types.md), определенный набором именованных констант применяемого [целочисленного типа](integral-numeric-types.md). Чтобы определить тип перечисления, используйте ключевое слово `enum` и укажите имена *элементов перечисления*:
 
 ```csharp
 enum Season
@@ -62,7 +62,7 @@ enum ErrorCode : ushort
 
 Тип <xref:System.Enum?displayProperty=nameWithType> является абстрактным базовым классом всех типов перечисления. Он предоставляет различные методы, позволяющие получить информацию о типе перечисления и его значениях. Дополнительные сведения и примеры см. на странице справочника по API <xref:System.Enum?displayProperty=nameWithType>.
 
-Начиная с C# версии 7.3, вы можете использовать тип `System.Enum` в ограничении базового класса (которое известно как [ограничение перечисления](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)), чтобы указать, что параметр типа является типом перечисления.
+Начиная с C# версии 7.3, вы можете использовать тип `System.Enum` в ограничении базового класса (которое известно как [ограничение перечисления](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)), чтобы указать, что параметр типа является типом перечисления. Любой тип перечисления также удовлетворяет ограничению `struct`, которое используется для указания того, что параметр типа является типом значения, не допускающим значения NULL.
 
 ## <a name="conversions"></a>Преобразования
 

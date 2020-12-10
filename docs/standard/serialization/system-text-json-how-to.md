@@ -1,7 +1,8 @@
 ---
 title: Как сериализировать и десериализировать JSON с помощью C# для .NET
 description: Сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. Содержит пример кода.
-ms.date: 11/05/2020
+ms.date: 11/30/2020
+ms.custom: contperfq2
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 1e8c46e11d3a82ca0bce29f9cb7bbc749c219198
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9ea9e2fef5ef66f2a5ff816168abfbd7b2e75276
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676729"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437672"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -28,7 +29,7 @@ ms.locfileid: "95676729"
 
 Примеры кода относятся к следующему классу и его вариантам:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 ## <a name="namespaces"></a>Пространства имен
 
@@ -39,38 +40,39 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 ```
 
-Атрибуты из пространства имен <xref:System.Runtime.Serialization> не поддерживаются в `System.Text.Json`.
+> [!IMPORTANT]
+> Атрибуты из пространства имен <xref:System.Runtime.Serialization> не поддерживаются в `System.Text.Json`.
 
-## <a name="how-to-write-net-objects-to-json-serialize"></a>Как записать объекты .NET в JSON (сериализация)
+## <a name="how-to-write-net-objects-as-json-serialize"></a>Как записать объекты .NET в формате JSON (сериализация)
 
 Чтобы записать JSON в строку или в файл, вызовите метод <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType>.
 
 В следующем примере показано создание JSON в виде строки:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Serialize":::
 
 В примере ниже для создания JSON-файла используется синхронный код:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToFile.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Serialize":::
 
 В следующем примере для создания JSON-файла используется асинхронный код:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Serialize":::
 
 В предыдущих примерах для сериализуемого типа используется определение типа. Перегрузка `Serialize()` принимает параметр универсального типа:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetSerializeWithGenericParameter)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializeWithGenericParameter":::
 
 ### <a name="serialization-example"></a>Пример сериализации
 
 Ниже приведен пример класса, который содержит свойства типа коллекции и определяемый пользователем тип:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPOCOs":::
 
 > [!TIP]
 > POCO означает [традиционный объект среды CLR](https://en.wikipedia.org/wiki/Plain_old_CLR_object). POCO — это тип .NET, который не зависит от каких-либо типов платформы, например посредством наследования или атрибутов.
 
-Выходные данные JSON из сериализации экземпляра предыдущего типа выглядят следующим образом. Выходные данные JSON по умолчанию сокращены:
+Выходные данные JSON из сериализации экземпляра предыдущего типа выглядят следующим образом. По умолчанию выходные данные JSON сокращены (удалены пробелы, отступы и символы новой строки):
 
 ```json
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
@@ -105,11 +107,11 @@ using System.Text.Json.Serialization;
 }
 ```
 
-### <a name="serialize-to-utf-8"></a>Сериализация в UTF-8
+## <a name="serialize-to-utf-8"></a>Сериализация в UTF-8
 
 Чтобы выполнить сериализацию в UTF-8, вызовите метод <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType>:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Serialize":::
 
 Также доступна перегрузка <xref:System.Text.Json.JsonSerializer.Serialize%2A>, которая принимает <xref:System.Text.Json.Utf8JsonWriter>.
 
@@ -119,22 +121,22 @@ using System.Text.Json.Serialization;
 
 ::: zone pivot="dotnet-5-0"
 
-* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](#ignore-properties).
+* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](system-text-json-ignore-properties.md).
 * [Кодировщик по умолчанию](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) экранирует символы, не относящиеся к ASCII, символы, учитывающие HTML, в пределах диапазона ASCII и символы, которые должны быть экранированы в соответствии со [спецификацией JSON RFC 8259](https://tools.ietf.org/html/rfc8259#section-7).
 * По умолчанию JSON сокращается. Вы можете [структурировать JSON](#serialize-to-formatted-json).
-* По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](#customize-json-names-and-values).
-* По умолчанию обнаруживаются циклические ссылки и создаются исключения. Вы можете [сохранять ссылки и обрабатывать циклические ссылки](#preserve-references-and-handle-circular-references).
+* По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](system-text-json-customize-properties.md).
+* По умолчанию обнаруживаются циклические ссылки и создаются исключения. Вы можете [сохранять ссылки и обрабатывать циклические ссылки](system-text-json-preserve-references.md).
 * По умолчанию [поля](../../csharp/programming-guide/classes-and-structs/fields.md) игнорируются. Вы можете [включить поля](#include-fields).
 
-При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 
-* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](#ignore-properties).
+* По умолчанию все открытые свойства сериализуются. Вы можете [указать свойства, которые нужно игнорировать](system-text-json-ignore-properties.md).
 * [Кодировщик по умолчанию](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) экранирует символы, не относящиеся к ASCII, символы, учитывающие HTML, в пределах диапазона ASCII и символы, которые должны быть экранированы в соответствии со [спецификацией JSON RFC 8259](https://tools.ietf.org/html/rfc8259#section-7).
 * По умолчанию JSON сокращается. Вы можете [структурировать JSON](#serialize-to-formatted-json).
-* По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](#customize-json-names-and-values).
+* По умолчанию регистр имен JSON соответствует именам в .NET. Вы можете [настроить регистр имен JSON](system-text-json-customize-properties.md).
 * Обнаруживаются циклические ссылки и создаются исключения.
 * [Поля](../../csharp/programming-guide/classes-and-structs/fields.md) игнорируются.
 ::: zone-end
@@ -171,29 +173,29 @@ using System.Text.Json.Serialization;
 
 Для обработки дополнительных типов или для обеспечения функциональности, которая не поддерживается встроенными преобразователями, можно [реализовать пользовательские преобразователи](system-text-json-converters-how-to.md).
 
-## <a name="how-to-read-json-into-net-objects-deserialize"></a>Как считать JSON в объекты .NET (десериализация)
+## <a name="how-to-read-json-as-net-objects-deserialize"></a>Как считать JSON как объекты .NET (десериализация)
 
 Чтобы выполнить десериализацию из строки или файла, вызовите метод <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
 
 В следующем примере показано считывание JSON из строки и создание экземпляра класса `WeatherForecastWithPOCOs`, показанного ранее для [примера сериализации](#serialization-example):
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Deserialize":::
 
 Чтобы выполнить десериализацию из файла с помощью синхронного кода, выполните считывание файла в строку, как показано в следующем примере:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToFile.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Deserialize":::
 
 Чтобы выполнить десериализацию из файла с помощью асинхронного кода, вызовите метод <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A>:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Deserialize":::
 
-### <a name="deserialize-from-utf-8"></a>Десериализация из UTF-8
+## <a name="deserialize-from-utf-8"></a>Десериализация из UTF-8
 
-Для десериализации из UTF-8 вызовите перегрузку <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>, которая принимает значения `Utf8JsonReader` или `ReadOnlySpan<byte>`, как показано в следующих примерах. В примерах предполагается, что JSON находится в массиве байтов jsonUtf8Bytes.
+Для десериализации из UTF-8 вызовите перегрузку <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>, которая принимает значения `ReadOnlySpan<byte>` или `Utf8JsonReader`, как показано в следующих примерах. В примерах предполагается, что JSON находится в массиве байтов jsonUtf8Bytes.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs?name=SnippetDeserialize1)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize1":::
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs?name=SnippetDeserialize2)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize2":::
 
 ## <a name="deserialization-behavior"></a>Поведение десериализации
 
@@ -201,30 +203,30 @@ using System.Text.Json.Serialization;
 
 ::: zone pivot="dotnet-5-0"
 
-* По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](#case-insensitive-property-matching).
+* По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](system-text-json-character-casing.md).
 * Если JSON содержит значение для свойства, доступного только для чтения, значение игнорируется, а исключение не создается.
 * Сериализатор не учитывает конструкторы, которые не являются открытыми.
-* Поддерживается десериализация в неизменяемые объекты или свойства "только для чтения". См. статью [Неизменяемые типы и записи](#immutable-types-and-records).
-* По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](#enums-as-strings).
+* Поддерживается десериализация в неизменяемые объекты или свойства "только для чтения". См. статью [Неизменяемые типы и записи](system-text-json-immutability.md).
+* По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](system-text-json-customize-properties.md#enums-as-strings).
 * По умолчанию поля игнорируются. Вы можете [включить поля](#include-fields).
-* По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](#allow-comments-and-trailing-commas).
+* По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](system-text-json-invalid-json.md).
 * Максимальная глубина [по умолчанию](xref:System.Text.Json.JsonReaderOptions.MaxDepth) равна 64.
 
-При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 
-* По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](#case-insensitive-property-matching). Приложения ASP.NET Core [указывают учет регистра по умолчанию](#web-defaults-for-jsonserializeroptions).
+* По умолчанию при сопоставлении имен свойств учитывается регистр. Вы можете [указать учет регистра](system-text-json-character-casing.md). Приложения ASP.NET Core [указывают учет регистра по умолчанию](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * Если JSON содержит значение для свойства, доступного только для чтения, значение игнорируется, а исключение не создается.
 * Для десериализации используется конструктор без параметров, который может быть общедоступным, внутренним или частным.
 * Десериализация в неизменяемые объекты или свойства только для чтения не поддерживается.
-* По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](#enums-as-strings).
+* По умолчанию перечисления поддерживаются в виде чисел. Вы можете [сериализовать имена перечислений в качестве строк](system-text-json-customize-properties.md#enums-as-strings).
 * Поля не поддерживаются.
-* По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](#allow-comments-and-trailing-commas).
+* По умолчанию комментарии или завершающие запятые в JSON вызывают исключения. Вы можете разрешить [комментарии и завершающие запятые](system-text-json-invalid-json.md).
 * Максимальная глубина [по умолчанию](xref:System.Text.Json.JsonReaderOptions.MaxDepth) равна 64.
 
-При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+При косвенном использовании System.Text.Json в приложении ASP.NET Core некоторые поведения по умолчанию отличаются. Дополнительные сведения см. в разделе [Стандартные параметры веб-приложений для JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 Для обеспечения функциональности, которая не поддерживается встроенными преобразователями, можно [реализовать пользовательские преобразователи](system-text-json-converters-how-to.md).
@@ -233,11 +235,11 @@ using System.Text.Json.Serialization;
 
 Чтобы структурировать выходные данные JSON, задайте для <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> значение `true`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetSerializePrettyPrint)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializePrettyPrint":::
 
 Ниже приведен пример типа для сериализации и структурирования данных JSON:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 ```json
 {
@@ -252,7 +254,7 @@ using System.Text.Json.Serialization;
 ::: zone pivot="dotnet-5-0"
 Используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> или атрибут [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) для включения поля при сериализации или десериализации, как показано ниже:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="16,18,20,32-35":::
 
 Чтобы пропустить поля, предназначенные только для чтения, используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType>.
 ::: zone-end
@@ -261,663 +263,15 @@ using System.Text.Json.Serialization;
 Поля не поддерживаются в System.Text.Json в .NET Core 3.1. Эта функция может быть предоставлена [пользовательскими преобразователями](system-text-json-converters-how-to.md).
 ::: zone-end
 
-## <a name="customize-json-names-and-values"></a>Настройка имен и значений JSON
-
-По умолчанию имена и ключи словарей не изменяются в выходных данных JSON, включая регистр. Значения перечисления представлены в виде чисел. В этом разделе объясняется, как выполнить такие задачи:
-
-* [Настраивать отдельные имена свойств](#customize-individual-property-names).
-* [Преобразовывать все имена свойств в неоднородный регистр](#use-camel-case-for-all-json-property-names).
-* [Реализовывать политики именования пользовательских свойств](#use-a-custom-json-property-naming-policy).
-* [Преобразовывать ключи словаря в "верблюжий" стиль](#camel-case-dictionary-keys).
-* [Преобразовывать перечисления в строки и "верблюжий" стиль](#enums-as-strings).
-
-Для других сценариев, требующих специальной обработки имен и значений свойств JSON, можно [реализовать пользовательские преобразователи](system-text-json-converters-how-to.md).
-
-### <a name="customize-individual-property-names"></a>Настройка отдельных имен свойств
-
-Чтобы задать имена отдельных свойств, используйте атрибут [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute).
-
-Ниже приведен пример типа для сериализации и полученный код JSON:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "Wind": 35
-}
-```
-
-Имя свойства, заданное этим атрибутом:
-
-* Применяется в обоих направлениях для сериализации и десериализации.
-* Имеет приоритет над политиками именования свойств.
-
-### <a name="use-camel-case-for-all-json-property-names"></a>Использование "верблюжьего" стиля для всех имен свойств JSON
-
-Чтобы использовать "верблюжий" стиль для всех имен свойств JSON, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> значение `JsonNamingPolicy.CamelCase`, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundTripCamelCasePropertyNames.cs?name=Serialize)]
-
-Ниже приведен пример класса для сериализации и вывода JSON.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
-
-```json
-{
-  "date": "2019-08-01T00:00:00-07:00",
-  "temperatureCelsius": 25,
-  "summary": "Hot",
-  "Wind": 35
-}
-```
-
-Политика именования свойств "верблюжьего" стиля:
-
-* Применяется к сериализации и десериализации.
-* Переопределяется атрибутами `[JsonPropertyName]`. Именно поэтому имя свойства JSON, `Wind` в примере, не указано в "верблюжьем" стиле.
-
-### <a name="use-a-custom-json-property-naming-policy"></a>Использование настраиваемой политики именования свойств JSON
-
-Чтобы использовать настраиваемую политику именования свойств JSON, создайте класс, производный от <xref:System.Text.Json.JsonNamingPolicy>, и переопределите метод <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A>, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/UpperCaseNamingPolicy.cs)]
-
-Затем задайте для свойства <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> экземпляр класса политики именования:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripPropertyNamingPolicy.cs?name=SnippetSerialize)]
-
-Ниже приведен пример класса для сериализации и вывода JSON.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
-
-```json
-{
-  "DATE": "2019-08-01T00:00:00-07:00",
-  "TEMPERATURECELSIUS": 25,
-  "SUMMARY": "Hot",
-  "Wind": 35
-}
-```
-
-Политика именования свойств JSON:
-
-* Применяется к сериализации и десериализации.
-* Переопределяется атрибутами `[JsonPropertyName]`. Именно поэтому имя свойства JSON, `Wind` в примере, не указано в верхнем регистре.
-
-### <a name="camel-case-dictionary-keys"></a>Ключи словаря в "верблюжьем" стиле.
-
-Если свойство сериализуемого объекта имеет тип `Dictionary<string,TValue>`, ключи `string` можно преобразовать в "верблюжий" стиль. Для этого задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> значение `JsonNamingPolicy.CamelCase`, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
-
-Сериализация объекта с помощью словаря с именем `TemperatureRanges`, имеющего пары "ключ-значение" `"ColdMinTemp", 20` и `"HotMinTemp", 40`, приведет к выходным данным JSON, как в следующем примере:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "TemperatureRanges": {
-    "coldMinTemp": 20,
-    "hotMinTemp": 40
-  }
-}
-```
-
-Политика именования в "верблюжьем" стиле для ключей словаря применяется только к сериализации. При десериализации словаря ключи будут соответствовать JSON-файлу, даже если для параметра `DictionaryKeyPolicy` указано значение `JsonNamingPolicy.CamelCase`.
-
-### <a name="enums-as-strings"></a>Перечисление в виде строк
-
-По умолчанию перечисления сериализуются как числа. Чтобы сериализовать имена перечислений как строки, используйте <xref:System.Text.Json.Serialization.JsonStringEnumConverter>.
-
-Например, предположим, что необходимо сериализовать следующий класс, имеющий перечисление:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithEnum)]
-
-Если параметр "Сводка" имеет значение `Hot`, то по умолчанию сериализованный код JSON имеет числовое значение 3:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": 3
-}
-```
-
-Следующий пример кода сериализует имена перечислений вместо числовых значений и преобразует имена в "верблюжий" стиль:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs?name=SnippetSerialize)]
-
-Итоговый код JSON выглядит следующим образом:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "hot"
-}
-```
-
-Имена строк перечисления можно также десериализовать, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs?name=SnippetDeserialize)]
-
-## <a name="ignore-properties"></a>Игнорирование свойств
-
-По умолчанию все открытые свойства сериализуются. Если вы не хотите, чтобы некоторые из них отображались в выходных данных JSON, у вас есть несколько вариантов. В этом разделе объясняется, как выполнить игнорирование:
-
-::: zone pivot="dotnet-5-0"
-
-* [отдельных свойств](#ignore-individual-properties);
-* [всех свойств только для чтения](#ignore-all-read-only-properties);
-* [всех свойств со значением NULL](#ignore-all-null-value-properties).
-* [всех свойств значений по умолчанию](#ignore-all-default-value-properties);
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-
-* [отдельных свойств](#ignore-individual-properties);
-* [всех свойств только для чтения](#ignore-all-read-only-properties);
-* [всех свойств со значением NULL](#ignore-all-null-value-properties).
-::: zone-end
-
-### <a name="ignore-individual-properties"></a>Игнорирование индивидуальных свойств
-
-Чтобы игнорировать отдельные свойства, используйте атрибут [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute).
-
-Ниже приведен пример типа для сериализации и вывода JSON.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithIgnoreAttribute)]
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-}
-```
-
-::: zone pivot="dotnet-5-0"
-Можно указать условное исключение, задав свойство `Condition` атрибута [ [JsonIgnore] ](xref:System.Text.Json.Serialization.JsonIgnoreAttribute). Перечисление <xref:System.Text.Json.Serialization.JsonIgnoreCondition> предоставляет следующие возможности:
-
-* `Always` — свойство всегда игнорируется. Если свойство `Condition` не указано, предполагается этот параметр.
-* `Never` — свойство всегда сериализуется и десериализуется, независимо от глобальных параметров `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties` и `IgnoreReadOnlyFields`.
-* `WhenWritingDefault` — свойство не учитывается при сериализации, если оно является ссылочным типом `null` или типом значения `default`.
-* `WhenWritingNull` — свойство не учитывается при сериализации, если оно является ссылочным типом `null`.
-
-В следующем примере показано использование свойства `Condition` атрибута [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute):
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
-::: zone-end
-
-### <a name="ignore-all-read-only-properties"></a>Игнорирование всех свойств "только для чтения"
-
-Свойство доступно только для чтения, если оно содержит открытый метод получения, но не является общим методом задания. Чтобы игнорировать при сериализации все свойства "только для чтения", задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> значение `true`, как показано ниже:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeExcludeReadOnlyProperties.cs?name=SnippetSerialize)]
-
-Ниже приведен пример типа для сериализации и вывода JSON.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithROProperty)]
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-}
-```
-
-Этот параметр применяется только к сериализации. Во время десериализации свойства, доступные только для чтения, по умолчанию игнорируются.
-
-::: zone pivot="dotnet-5-0"
-Этот параметр применяется только к свойствам. Чтобы пропустить при [сериализации полей](#include-fields) поля, предназначенные только для чтения, используйте глобальный параметр <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType>.
-::: zone-end
-
-### <a name="ignore-all-null-value-properties"></a>Игнорировать все свойства со значением NULL
-
-::: zone pivot="dotnet-5-0"
-Чтобы игнорировать все свойства со значением NULL, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> значение <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, как показано в следующем примере:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="28":::
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Чтобы игнорировать при сериализации все свойства со значением NULL, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> значение `true`, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs?name=SnippetSerialize)]
-
-Ниже приведен пример объекта для сериализации и вывода JSON.
-
-|Свойство. |Значение  |
-|---------|---------|
-| Дата    | 01.08.2019 г. 00:00:00 – 7:00|
-| TemperatureCelsius| 25 |
-| Сводка| null|
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25
-}
-```
-
-::: zone-end
-
-### <a name="ignore-all-default-value-properties"></a>Игнорирование всех свойств со значениями по умолчанию
-
-::: zone pivot="dotnet-5-0"
-Чтобы предотвратить сериализацию значений по умолчанию в свойствах типа значения, присвойте свойству <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> значение <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, как показано ниже:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="28":::
-::: zone-end
-
-Параметр `WhenWritingDefault` также предотвращает сериализацию свойств ссылочного типа со значением NULL.
-
-::: zone pivot="dotnet-core-3-1"
-Для .NET Core 3.1. не существует встроенного способа предотвращения сериализации свойств с типом значения "по умолчанию" в System.Text.Json.
-::: zone-end
-
-## <a name="customize-character-encoding"></a>Настройка кодировки символов
-
-По умолчанию сериализатор экранирует символы, отличные от ASCII.  То есть он заменяет их на `\uxxxx`, где `xxxx` является кодом в кодировке Юникода символа.  Например, если свойству `Summary` присвоено кириллическое значение "жарко", то объект `WeatherForecast` сериализуется, как показано в этом примере:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "\u0436\u0430\u0440\u043A\u043E"
-}
-```
-
-### <a name="serialize-language-character-sets"></a>Сериализация кодировки языка
-
-Чтобы сериализовать кодировки одного или нескольких языков без экранирования, укажите [диапазон символов Юникода](xref:System.Text.Unicode.UnicodeRanges) при создании экземпляра <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetLanguageSets)]
-
-Этот код не поддерживает символы кириллицы или греческого языка. Если свойству `Summary` присвоено кириллическое значение "жарко", то объект `WeatherForecast` сериализуется, как показано в этом примере:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жарко"
-}
-```
-
-Чтобы сериализовать все кодировки языка без экранирования, используйте <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
-
-### <a name="serialize-specific-characters"></a>Сериализация определенных символов
-
-В качестве альтернативного способа вы можете указать отдельные символы, которые нужно разрешить, без экранирования. В следующем примере сериализуются только первые два символа слова "жарко":
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetSelectedCharacters)]
-
-Ниже приведен пример JSON, созданный с помощью приведенного выше кода.
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жа\u0440\u043A\u043E"
-}
-```
-
-### <a name="serialize-all-characters"></a>Сериализация всех символов
-
-Чтобы минимизировать экранирование, можно использовать <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, как показано в следующем примере:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs?name=SnippetUnsafeRelaxed)]
-
-> [!CAUTION]
-> По сравнению с кодировщиком по умолчанию, кодировщик `UnsafeRelaxedJsonEscaping` более предпочтителен в отношении передачи символов без экранирования:
->
-> * Он не выполняет экранирование символов, учитывающих HTML, например `<`, `>`, `&` и `'`.
-> * Он не предоставляет никаких дополнительных средств защиты от атак с помощью XSS или раскрытия информации, которые, например, могут возникать из-за того, что клиент и сервер не согласны с *кодировкой*.
->
-> Используйте ненадежный кодировщик, только если известно, что клиент будет интерпретировать полученные полезные данные как JSON в кодировке UTF-8. Например, его можно использовать, если сервер отправляет заголовок ответа `Content-Type: application/json; charset=utf-8`. Никогда не допускайте, чтобы необработанные выходные данные `UnsafeRelaxedJsonEscaping` выводились на HTML-страницу или в элемент `<script>`.
-
-## <a name="serialize-properties-of-derived-classes"></a>Сериализация свойств производных классов
-
-Сериализация иерархии полиморфных типов не поддерживается. Например, если свойство определено как интерфейс или абстрактный класс, сериализуются только свойства, определенные в интерфейсе или абстрактном классе, даже если тип среды выполнения имеет дополнительные свойства. В этом разделе описаны исключения из этого поведения.
-
-Например, предположим, что у вас есть класс `WeatherForecast` и производный класс `WeatherForecastDerived`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFDerived)]
-
-Предположим также, что аргумент типа метода `Serialize` во время компиляции `WeatherForecast`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeDefault)]
-
-В этом сценарии свойство `WindSpeed` не сериализуется, даже если объект `weatherForecast` фактически является объектом `WeatherForecastDerived`. Сериализуются только свойства базового класса:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
-
-Это поведение предназначено для предотвращения случайного доступа к данным в производном типе, созданном во время выполнения.
-
-Чтобы сериализовать свойства производного типа в предыдущем примере, используйте один из следующих подходов:
-
-* Вызовите перегрузку <xref:System.Text.Json.JsonSerializer.Serialize%2A>, которая позволяет указать тип во время выполнения:
-
-  [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeGetType)]
-
-* Объявите объект, который должен быть сериализован как `object`.
-
-  [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeObject)]
-
-В предыдущем примере сценария оба подхода приводят к тому, что `WindSpeed` свойство включается в выходные данные JSON:
-
-```json
-{
-  "WindSpeed": 35,
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
-
-> [!IMPORTANT]
-> Эти подходы обеспечивают одноэлементную сериализацию только для сериализации корневого объекта, а не для его свойств.
-
-Вы можете выполнить полиморфную сериализацию для объектов более низкого уровня, если вы определите их как тип `object`. Например, предположим, что у класса `WeatherForecast` есть свойство `PreviousForecast`, которое может быть определено как тип `WeatherForecast` или `object`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPrevious)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPreviousAsObject)]
-
-Если свойство `PreviousForecast` содержит экземпляр `WeatherForecastDerived`:
-
-* Выходные данные JSON из сериализации `WeatherForecastWithPrevious` **не содержат** `WindSpeed`.
-* Выходные данные JSON из сериализации `WeatherForecastWithPreviousAsObject` **включают в себя** `WindSpeed`.
-
-Чтобы сериализовать `WeatherForecastWithPreviousAsObject`, не нужно вызывать `Serialize<object>` или `GetType`, потому что корневой объект не является объектом, который может иметь производный тип. В следующем примере кода не вызывается `Serialize<object>` или `GetType`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeSecondLevel)]
-
-Приведенный выше код правильно сериализует `WeatherForecastWithPreviousAsObject`:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "PreviousForecast": {
-    "WindSpeed": 35,
-    "Date": "2019-08-01T00:00:00-07:00",
-    "TemperatureCelsius": 25,
-    "Summary": "Hot"
-  }
-}
-```
-
-Аналогичный подход к определению свойств `object` работает с интерфейсами. Предположим, что у вас есть следующий интерфейс и реализация и вы хотите сериализовать класс со свойствами, содержащими экземпляры реализации:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/IForecast.cs)]
-
-Когда вы сериализуете экземпляр `Forecasts`, только `Tuesday` отображает свойство `WindSpeed`, так как `Tuesday` определяется как `object`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs?name=SnippetSerializeInterface)]
-
-В следующем примере показан код JSON, который является результатом предыдущего кода:
-
-```json
-{
-  "Monday": {
-    "Date": "2020-01-06T00:00:00-08:00",
-    "TemperatureCelsius": 10,
-    "Summary": "Cool"
-  },
-  "Tuesday": {
-    "Date": "2020-01-07T00:00:00-08:00",
-    "TemperatureCelsius": 11,
-    "Summary": "Rainy",
-    "WindSpeed": 10
-  }
-}
-```
-
-Дополнительные сведения о полиморфной **сериализации** и **десериализации** см. в статье [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-serialization).
-
-## <a name="allow-comments-and-trailing-commas"></a>Разрешение комментариев и завершающих запятых
-
-По умолчанию комментарии и завершающие запятые в JSON не допускаются. Чтобы разрешить комментарии в JSON, задайте для свойства <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> значение `JsonCommentHandling.Skip`.
-Чтобы разрешить завершающие запятые, задайте для свойства <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> значение `true`. В следующем примере показано, как разрешить оба варианта:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeCommasComments.cs?name=SnippetDeserialize)]
-
-Ниже приведен пример JSON с комментариями и завершающей запятой:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25, // Fahrenheit 77
-  "Summary": "Hot", /* Zharko */
-}
-```
-
-## <a name="case-insensitive-property-matching"></a>Сопоставление свойств без учета регистра
-
-По умолчанию десериализация выполняет поиск совпадения имен свойств с учетом регистра между кодом JSON и свойствами целевого объекта. Чтобы изменить это поведение, задайте для параметра <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> значение `true`.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeCaseInsensitive.cs?name=SnippetDeserialize)]
-
-Ниже приведен пример JSON с именами свойств в "верблюжьем" стиле. Его можно десериализовать в следующий тип, который содержит имена свойств в регистре Pascal.
-
-```json
-{
-  "date": "2019-08-01T00:00:00-07:00",
-  "temperatureCelsius": 25,
-  "summary": "Hot",
-}
-```
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
-
-## <a name="handle-overflow-json"></a>Обработка переполнения JSON
-
-При десериализации в JSON могут быть получены данные, которые не представлены свойствами целевого типа. Предположим у вас есть следующий целевой тип:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
-
-А десериализируемым кодом JSON является:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "temperatureCelsius": 25,
-  "Summary": "Hot",
-  "DatesAvailable": [
-    "2019-08-01T00:00:00-07:00",
-    "2019-08-02T00:00:00-07:00"
-  ],
-  "SummaryWords": [
-    "Cool",
-    "Windy",
-    "Humid"
-  ]
-}
-```
-
-При десериализации кода JSON, показанного в указанном типе, свойства `DatesAvailable` и `SummaryWords` никуда не переходят и будут потеряны. Для записи дополнительных данных, таких как эти свойства, примените атрибут [[JsonExtensionData]](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) к свойству типа `Dictionary<string,object>` или `Dictionary<string,JsonElement>`:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithExtensionData)]
-
-При десериализации показанного ранее JSON в этот тип данных дополнительные данные становятся парами "ключ-значение" свойства `ExtensionData`:
-
-|Свойство. |Значение  |Примечания  |
-|---------|---------|---------|
-| Дата    | 01.08.2019 г. 00:00:00 – 7:00||
-| TemperatureCelsius| 0 | Несовпадение с учетом регистра (`temperatureCelsius` в коде JSON), поэтому свойство не задано. |
-| Сводка | Горячий ||
-| ExtensionData | temperatureCelsius: 25 |Так как регистр не совпадает, это свойство JSON является лишним и становится парой "ключ-значение" в словаре.|
-|| DatesAvailable:<br>  01.08.2019 г. 00:00:00 – 7:00<br>02.08.2019 г. 00:00:00 – 7:00 |Дополнительное свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.|
-| |SummaryWords:<br>Здорово<br>Ветрено<br>Влажно |Дополнительное свойство из кода JSON преобразуется в пару "ключ-значение" с массивом в качестве объекта значения.|
-
-Когда целевой объект сериализуется, пары "ключ-значение" данных расширения становятся свойствами JSON точно так же, как они были во входящем коде JSON:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 0,
-  "Summary": "Hot",
-  "temperatureCelsius": 25,
-  "DatesAvailable": [
-    "2019-08-01T00:00:00-07:00",
-    "2019-08-02T00:00:00-07:00"
-  ],
-  "SummaryWords": [
-    "Cool",
-    "Windy",
-    "Humid"
-  ]
-}
-```
-
-Обратите внимание, что имя свойства `ExtensionData` не отображается в коде JSON. Такое поведение позволяет JSON выполнить круговой путь без потери дополнительных данных, которые в противном случае не будут десериализованы.
-
-## <a name="preserve-references-and-handle-circular-references"></a>Сохранение ссылок и обработка циклических ссылок
-
-::: zone pivot="dotnet-5-0"
-
-Для сохранения ссылок и обработки циклических ссылок задайте для свойства <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> значение <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. Этот параметр приводит к следующему поведению:
-
-* При сериализации:
-
-  При написании сложных типов сериализатор также записывает свойства метаданных (`$id`, `$values`, а также `$ref`).
-
-* При десериализации:
-
-  Ожидаются метаданные (не обязательно), и десериализатор пытается их распознать.
-
-В следующем коде показано использование параметра `Preserve`.
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
-
-Эту функцию нельзя использовать для сохранения типов значений или неизменяемых типов. При десериализации экземпляр неизменяемого типа создается после считывания всех полезных данных. Поэтому для того же экземпляра невозможно будет выполнить десериализацию, если в полезных данных JSON появляется ссылка на него.
-
-Для типов значений, неизменяемых типов и массивов ссылочные метаданные не сериализуются. Если при десериализации было найдено `$ref` или `$id`, создается исключение. Однако типы значений игнорируют `$id` (и `$values` для коллекций), чтобы позволить десериализацию полезных данных, сериализованных с помощью Newtonsoft.Json.  Newtonsoft.Json выполняет сериализацию метаданных для таких типов.
-
-Для определения равенства объектов System.Text.Json использует свойство <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A?displayProperty=nameWithType>, которое при сравнении двух экземпляров объекта использует эквивалентность ссылок (<xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=nameWithType>), а не эквивалентность значений (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>).
-
-Больше о сериализации и десериализации ссылок см. в статье <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A?displayProperty=nameWithType>.
-
-Класс <xref:System.Text.Json.Serialization.ReferenceResolver> определяет поведение сохранения ссылок при сериализации и десериализации. Создайте производный класс, чтобы указать настраиваемое поведение. Пример см. в статье [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
-
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-System.Text.Json в .NET Core 3.1 поддерживает сериализацию только по значению и вызывает исключение для циклических ссылок.
-::: zone-end
-
-## <a name="allow-or-write-numbers-in-quotes"></a>Разрешение или запись чисел в кавычках
-
-::: zone pivot="dotnet-5-0"
-
-Некоторые сериализаторы кодируют числа в виде строк JSON (заключены в кавычки). Например: `{"DegreesCelsius":"23"}` вместо `{"DegreesCelsius":23}`. Для сериализации или принятия чисел в кавычках во всех входных данных графа объектов задайте свойство <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType>, как показано ниже:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27-28":::
-
-Если вы используете System.Text.Json косвенно через ASP.NET Core, тогда заключенные в кавычки числа будут разрешены при десериализации, поскольку ASP.NET Core определяет [стандартные параметры веб-приложений](xref:System.Text.Json.JsonSerializerDefaults.Web).
-
-Чтобы разрешить или записать заключенные в кавычки числа для конкретных свойств, полей или типов, используйте атрибут [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-System.Text.Json в .NET Core 3.1 не поддерживает сериализацию или десериализацию чисел, заключенных в кавычки. Дополнительные сведения см. в разделе [Разрешение или запись чисел в кавычках](system-text-json-migrate-from-newtonsoft-how-to.md#allow-or-write-numbers-in-quotes).
-::: zone-end
-
-## <a name="immutable-types-and-records"></a>Неизменяемые типы и записи
-
-::: zone pivot="dotnet-5-0"
-System.Text.Json может использовать параметризованный конструктор, позволяющий десериализовать неизменяемый класс или структуру. Если для класса существует только параметризованный конструктор, тогда будет использован этот конструктор. Для структуры или класса с несколькими конструкторами укажите необходимый, применив атрибут [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A). Если атрибут не используется, тогда всегда применяется общедоступный конструктор без параметров. Атрибут используется только с общедоступными конструкторами. В следующем примере используется атрибут `[JsonConstructor]`.
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="13":::
-
-Записи в C# 9 поддерживаются, как показано в примере:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
-
-Подробнее о неизменяемых типах, чьи методы задания не являются общедоступными, см. в разделе о [методах доступа к свойствам, не являющимся общедоступными](#non-public-property-accessors).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-`JsonConstructorAttribute` и поддержка записи C# 9 недоступны в .NET Core 3.1.
-::: zone-end
-
-## <a name="non-public-property-accessors"></a>Методы доступа к свойствам, не являющимся общедоступными
-
-::: zone pivot="dotnet-5-0"
-Для включения метода доступа к свойству, не являющемуся общедоступным, используйте атрибут [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute), как показано ниже:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="12,15":::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Методы доступа к свойству, не являющемуся общедоступным, не поддерживаются в .NET Core 3.1. Дополнительные сведения см. в статье [о переходе с Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
-::: zone-end
-
-## <a name="copy-jsonserializeroptions"></a>Копирование JsonSerializerOptions
-
-::: zone pivot="dotnet-5-0"
-Существует [конструктор JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)), который позволяет создавать новый экземпляр с параметрами, использованными для существующего экземпляра:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Конструктор `JsonSerializerOptions`, который принимает существующий экземпляр, недоступен в .NET Core 3.1.
-::: zone-end
-
-## <a name="web-defaults-for-jsonserializeroptions"></a>Стандартные параметры веб-приложений для JsonSerializerOptions
-
-::: zone pivot="dotnet-5-0"
-Ниже приведены параметры с различными значениями по умолчанию для веб-приложений:
-
-* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
-* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
-* <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
-
-Существует [конструктор JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)?view=net-5.0&preserve-view=true), который позволяет создавать новый экземпляр со стандартными параметрами, которые ASP.NET Core использует для веб-приложений, как показано ниже:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="24":::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Ниже приведены параметры с различными значениями по умолчанию для веб-приложений:
-
-* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
-* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
-
-Конструктор `JsonSerializerOptions`, указывающий набор значений по умолчанию, недоступен в .NET Core 3.1.
-::: zone-end
-
 ## <a name="httpclient-and-httpcontent-extension-methods"></a>Методы расширения HttpClient и HttpContent
 
 ::: zone pivot="dotnet-5-0"
 
-Сериализация и десериализация полезных данных JSON из сети являются обычными операциями. Методы расширения в [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) и [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) позволяют выполнять эти операции в одной строке кода. Эти методы расширения используют [стандартные параметры веб-приложений для JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+Сериализация и десериализация полезных данных JSON из сети являются обычными операциями. Методы расширения в [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) и [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) позволяют выполнять эти операции в одной строке кода. Эти методы расширения используют [стандартные параметры веб-приложений для JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 
 В следующем примере демонстрируется применение <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> и <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="26,33":::
 
 Для System.Text.Json существуют также методы расширения на [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
 ::: zone-end
@@ -926,112 +280,7 @@ System.Text.Json может использовать параметризова�
 Методы расширения на `HttpClient` и `HttpContent` недоступны в System.Text.Json для .NET Core 3.1.
 ::: zone-end
 
-## <a name="utf8jsonreader-utf8jsonwriter-and-jsondocument"></a>Utf8JsonReader, Utf8JsonWriter и JsonDocument
-
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> — это последовательный модуль чтения текста JSON в кодировке UTF-8 из `ReadOnlySpan<byte>` или `ReadOnlySequence<byte>` с высокой производительностью и низким уровнем распределения. `Utf8JsonReader` — это низкоуровневый тип, с помощью которого можно создавать пользовательские средства синтаксического анализа и десериализаторы. Метод <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> использует `Utf8JsonReader`, как описано выше.
-
-<xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> — это высокопроизводительный способ записать текст JSON в кодировке UTF-8 из распространенных типов .NET, например `String`, `Int32` и `DateTime`. Модуль записи — это низкоуровневый тип, с помощью которого можно создавать пользовательские сериализаторы. Метод <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> использует `Utf8JsonWriter`, как описано выше.
-
-<xref:System.Text.Json.JsonDocument?displayProperty=fullName> предоставляет возможность создания модели DOM только для чтения с помощью `Utf8JsonReader`. Модель DOM предоставляет произвольный доступ к данным в полезных данных JSON. Доступ к элементам JSON, составляющим полезные данные, можно получить с помощью типа <xref:System.Text.Json.JsonElement>. Тип `JsonElement` предоставляет перечислители массивов и объектов вместе с API-интерфейсами для преобразования текста JSON в стандартные типы .NET. `JsonDocument` предоставляет свойство <xref:System.Text.Json.JsonDocument.RootElement>.
-
-В следующих разделах показано, как использовать эти средства для чтения и записи данных JSON.
-
-## <a name="use-jsondocument-for-access-to-data"></a>Использование класса JsonDocument для доступа к данным
-
-В следующем примере показано, как использовать класс <xref:System.Text.Json.JsonDocument> для произвольного доступа к данным в строке JSON:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs?name=SnippetAverageGrades1)]
-
-Предыдущий код:
-
-* Предполагается, что анализируемый код JSON находится в строке `jsonString`.
-* Вычисляет среднее значение для объектов в массиве `Students`, имеющих свойство `Grade`.
-* Назначает значение по умолчанию 70 для учащихся, у которых нет оценки.
-* Подсчитывает число учащихся путем увеличения переменной `count` с каждой итерацией. Альтернативой является вызов <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, как показано в следующем примере:
-
-  [!code-csharp[](snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs?name=SnippetAverageGrades2)]
-
-Ниже приведен пример JSON, обрабатываемый этим кодом:
-
-[!code-json[](snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json)]
-
-## <a name="use-jsondocument-to-write-json"></a>Использование класса JsonDocument для записи кода JSON
-
-В следующем примере показано, как записать JSON код из <xref:System.Text.Json.JsonDocument>.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/JsonDocumentWriteJson.cs?name=SnippetSerialize)]
-
-Предыдущий код:
-
-* Считывает JSON-файл, загружает данные в `JsonDocument` и записывает форматированный (структурированный) код JSON в файл.
-* Использует <xref:System.Text.Json.JsonDocumentOptions>, чтобы указать, что комментарии во входных данных JSON разрешены, но пропускаются.
-* По завершении для модуля записи вызывается <xref:System.Text.Json.Utf8JsonWriter.Flush%2A>. В качестве альтернативы можно разрешить автоматическую запись в модуле записи при его удалении.
-
-Ниже приведен пример входных данных JSON для обработки в примере кода:
-
-[!code-json[](snippets/system-text-json-how-to/csharp/Grades.json)]
-
-В результате получаются следующие структурированные выходные данные JSON:
-
-[!code-json[](snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json)]
-
-## <a name="use-utf8jsonwriter"></a>Использование Utf8JsonWriter
-
-В следующем примере показано, как использовать класс <xref:System.Text.Json.Utf8JsonWriter>.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs?name=SnippetSerialize)]
-
-## <a name="use-utf8jsonreader"></a>Использование Utf8JsonReader
-
-В следующем примере показано, как использовать класс <xref:System.Text.Json.Utf8JsonReader>.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Utf8ReaderFromBytes.cs?name=SnippetDeserialize)]
-
-В приведенном выше коде предполагается, что переменной `jsonUtf8` является массив байтов, который содержит допустимые данные JSON в кодировке UTF-8.
-
-### <a name="filter-data-using-utf8jsonreader"></a>Фильтрация данных с помощью Utf8JsonReader
-
-В следующем примере показано, как синхронно выполнить чтение файла и поиск значения.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs)]
-
-(Для этого примера доступна [асинхронная версия](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).)
-
-Предыдущий код:
-
-* Предполагается, что JSON содержит массив объектов и каждый объект может содержать свойство name строкового типа.
-* Подсчитывает объекты и значения свойств name, заканчивающиеся на University.
-* Предполагается, что файл кодируется как UTF-16 и перекодируется в UTF-8. Файл, закодированный как UTF-8, можно прочитать непосредственно в `ReadOnlySpan<byte>` с помощью следующего кода:
-
-  ```csharp
-  ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName);
-  ```
-
-  Если файл содержит метку порядка байтов (BOM) UTF-8, удалите ее перед передачей байтов в `Utf8JsonReader`, так как средство чтения ждет текст. В противном случае метка порядка байтов считается недопустимым кодом JSON, и средство чтения создает исключение.
-
-Ниже приведен пример JSON, который можно считать с помощью приведенного выше кода. Полученным итоговым сообщением будет 2 out of 4 have names that end with University (2 из 4 имеют имена, заканчивающиеся на University):
-
-[!code-json[](snippets/system-text-json-how-to/csharp/Universities.json)]
-
-### <a name="read-from-a-stream-using-utf8jsonreader"></a>Чтение из потока данных с помощью Utf8JsonReader
-
-При чтении большого файла (размером гигабайт и более) вы, скорее всего, предпочтете не загружать весь файл в память сразу. В таких ситуациях можно использовать <xref:System.IO.FileStream>.
-
-При использовании `Utf8JsonReader` для чтения из потока данных действуют следующие правила:
-
-* Буфер, который накапливает часть данных в формате JSON, должен быть не меньше самого крупного из возможных маркеров JSON, чтобы средство чтения могло продвигаться вперед.
-* Размер буфера должен быть не меньше самой большой последовательности пробелов в JSON.
-* Средство чтения не запоминает прочитанные данные, пока не дойдет до следующего свойства <xref:System.Text.Json.Utf8JsonReader.TokenType%2A> в структуре JSON. Таким образом, если в буфере еще остались байты, их нужно снова передать в средство чтения. Для определения количества оставшихся байтов можно использовать <xref:System.Text.Json.Utf8JsonReader.BytesConsumed%2A>.
-
-В примере кода ниже показано, как выполнять чтение из потока. Этот пример демонстрирует <xref:System.IO.MemoryStream>. Аналогичный код будет работать и с <xref:System.IO.FileStream>, за исключением случаев, когда в начале `FileStream` содержится метка порядка байтов UTF-8. В этом случае необходимо удалить эти три байта из буфера, прежде чем передавать оставшиеся байты в `Utf8JsonReader`. В противном случае средство чтения создаст исключение, поскольку метка порядка байтов не считается допустимой частью JSON.
-
-Пример кода начинает работу с буфером в 4 КБ и удваивает размер буфера каждый раз, когда тот оказывается недостаточно велик для размещения полного маркера JSON, который потребуется средству чтения для дальнейшего перемещения по структуре данных JSON. Представленный в этом примере фрагмент JSON приводит к увеличению размера буфера только в том случае, если задан очень маленький начальный размер буфера, например 10 байт. Если указать для буфера начальное значение 10, то инструкции `Console.WriteLine` продемонстрируют причину и последствия увеличения размера буфера. При начальном размере буфера 4 КБ весь пример JSON целиком отображается в каждой `Console.WriteLine`, и размер буфера увеличивать не нужно.
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Utf8ReaderPartialRead.cs)]
-
-В примере выше ограничение на увеличение размера буфера не установлено. Если размер маркера будет слишком большой, такой код может возвратить ошибку с исключением <xref:System.OutOfMemoryException>. Такое может произойти, если в JSON есть маркер размером около 1 ГБ, поскольку удвоение размера 1 ГБ приводит к переполнению буфера `int32`.
-
-## <a name="additional-resources"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
 * [Как написать пользовательские преобразователи для сериализации JSON (маршалинг) в .NET](system-text-json-converters-how-to.md)

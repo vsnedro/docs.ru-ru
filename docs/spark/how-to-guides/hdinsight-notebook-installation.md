@@ -1,21 +1,21 @@
 ---
-title: Установка .NET для Apache Spark в записных книжках Jupyter в кластерах Spark Azure HDInsight
+title: Установка .NET для Apache Spark в записных книжках Jupyter Notebook в кластерах Spark Azure HDInsight
 description: Узнайте, как установить .NET для Apache Spark в записных книжках Jupyter Notebook Azure HDInsight.
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: e2319fec833147ce50c7b94dd8ccc84f552f20d2
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: ff6b3a64c01fb9148d3abe3d04579233d11a4f73
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94688284"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599659"
 ---
-# <a name="install-net-for-apache-spark-on-jupyter-notebooks-on-azure-hdinsight-spark-clusters"></a>Установка .NET для Apache Spark в записных книжках Jupyter в кластерах Spark Azure HDInsight
+# <a name="install-net-for-apache-spark-on-jupyter-notebooks-on-azure-hdinsight-spark-clusters"></a>Установка .NET для Apache Spark в записных книжках Jupyter Notebook в кластерах Spark Azure HDInsight
 
-В этой статье описывается, как установить .NET для Apache Spark в записных книжках Jupyter в кластерах Spark Azure HDInsight. Вы можете развернуть .NET для Apache Spark в кластерах Azure HDInsight с помощью командной строки и портала Azure (дополнительные сведения см. в статье [Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight](../tutorials/hdinsight-deployment.md)). Обратите внимание, что записные книжки предоставляют более интерактивный и итеративный интерфейс.
+В этой статье показано, как установить .NET для Apache Spark в записных книжках Jupyter Notebook в кластерах Spark Azure HDInsight. Вы можете развернуть .NET для Apache Spark в кластерах Azure HDInsight с помощью командной строки и портала Azure (дополнительные сведения см. в статье [Учебник. Развертывание приложения .NET для Apache Spark в Azure HDInsight](../tutorials/hdinsight-deployment.md)). Обратите внимание, что записные книжки предоставляют более интерактивный и итеративный интерфейс.
 
-Кластеры Azure HDInsight поставляются с записными книжками Jupyter, поэтому вам нужно лишь настроить их для запуска .NET для Apache Spark. Чтобы использовать .NET для Apache Spark в записных книжках Jupyter, необходимо иметь C# REPL, чтобы построчно выполнить код C# и при необходимости сохранить состояние выполнения. Средство [Try .NET](https://github.com/dotnet/try) интегрировано в качестве официальной версии .NET REPL.
+Кластеры Azure HDInsight поставляются с записными книжками Jupyter Notebook, поэтому вам нужно лишь настроить их для запуска .NET для Apache Spark. Для использования .NET для Apache Spark в записных книжках Jupyter Notebook требуется C# REPL, чтобы построчно выполнить код C# и при необходимости сохранить состояние выполнения. Средство [Try .NET](https://github.com/dotnet/try) интегрировано в качестве официальной версии .NET REPL.
 
 Чтобы включить .NET для Apache Spark через интерфейс записных книжек Jupyter Notebook, необходимо выполнить несколько действий вручную с помощью [Ambari](/azure/hdinsight/hdinsight-hadoop-manage-ambari) и отправить [действия скрипта](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) в кластере HDInsight Spark.
 
@@ -121,11 +121,11 @@ ms.locfileid: "94688284"
 
    При появлении запроса выберите **CONFIRM RESTART ALL** (Подтвердить перезапуск всех), чтобы продолжить, а затем нажмите кнопку **ОК** для завершения работы.
 
-## <a name="submit-jobs-through-a-jupyter-notebook"></a>Отправка заданий с помощью записной книжки Jupyter
+## <a name="submit-jobs-through-a-jupyter-notebook"></a>Отправка заданий с помощью Jupyter Notebook
 
-После завершения предыдущих шагов можно отправить задания .NET для Apache Spark с помощью записных книжек Jupyter.
+После завершения предыдущих шагов можно отправить задания .NET для Apache Spark с помощью записных книжек Jupyter Notebook.
 
-1. Создайте записную книжку .NET для Apache Spark. Запустите записную книжку Jupyter из кластера HDI на портале Azure.
+1. Создайте записную книжку .NET для Apache Spark. Запустите Jupyter Notebook из кластера HDI на портале Azure.
 
    ![Запуск Jupyter Notebook](./media/hdinsight-notebook-installation/launch-notebook.png)
 

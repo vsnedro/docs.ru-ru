@@ -1,21 +1,21 @@
 ---
-title: Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio для Mac
-description: Создайте проект модульного теста для библиотеки классов .NET Core. Проверьте правильность работы библиотеки классов .NET Core с помощью модульных тестов.
-ms.date: 06/08/2020
-ms.openlocfilehash: 3adcddc96abf77012f89a28c1cf60ea57ae506a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+title: Тестирование библиотеки классов .NET с помощью Visual Studio для Mac
+description: Создайте проект модульного теста для библиотеки классов .NET. Проверьте правильность работы библиотеки классов .NET с помощью модульных тестов.
+ms.date: 11/18/2020
+ms.openlocfilehash: 02d5aa74258ec15c5447b23246a3c7e9c61a6760
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180534"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599530"
 ---
-# <a name="test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Тестирование библиотеки классов .NET Standard с помощью .NET Core и Visual Studio
+# <a name="test-a-net-class-library-using-visual-studio"></a>Тестирование библиотеки классов .NET с помощью Visual Studio
 
 В этом руководстве показано, как автоматизировать модульное тестирование путем добавления тестового проекта в решение.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-- В этом учебнике используется решение, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio для Mac](library-with-visual-studio-mac.md).
+- В этом руководстве используется решение, созданное при работе со статьей [Создание библиотеки классов .NET с помощью Visual Studio для Mac](library-with-visual-studio-mac.md).
 
 ## <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
@@ -23,7 +23,7 @@ ms.locfileid: "91180534"
 
 1. Запустите Visual Studio для Mac.
 
-1. Откройте решение `ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки .NET Standard в Visual Studio для Mac](library-with-visual-studio-mac.md).
+1. Откройте решение`ClassLibraryProjects`, созданное при работе со статьей [Создание библиотеки классов .NET с помощью Visual Studio для Mac](library-with-visual-studio-mac.md).
 
 1. На панели **Решение** щелкните решение `ClassLibraryProjects` при нажатой клавише <kbd>CTRL</kbd> и выберите пункт **Добавить** > **Новый проект**.
 
@@ -31,9 +31,11 @@ ms.locfileid: "91180534"
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
 
-1. Выберите **.NET Core 3.1**. Назовите новый проект StringLibraryTest и выберите **Создать**.
+1. Выберите **.NET 5.0** в качестве **целевой платформы**, а затем нажмите кнопку **Далее**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+1. Назовите новый проект StringLibraryTest и выберите **Создать**.
+
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Диалоговое окно Создание проекта Visual Studio для Mac с именем проекта":::
 
    Visual Studio создает файл класса, используя следующий код:
 
@@ -69,7 +71,7 @@ ms.locfileid: "91180534"
 
 1. В диалоговом окне **Ссылки** выберите проект **StringLibrary**. Нажмите кнопку **ОК**.
 
-      :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+      :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-edit-references.png" alt-text="Диалоговое окно Изменение ссылок Visual Studio для Mac":::
 
 ## <a name="add-and-run-unit-test-methods"></a>Добавление и выполнение методов модульного теста
 
@@ -102,7 +104,7 @@ ms.locfileid: "91180534"
 
 1. В строке меню выберите **Файл** > **Сохранить как**. В диалоговом окне проверьте, что поле **Кодировка** имеет значение **Юникод (UTF-8)** .
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/save-file-as-dialog.png" alt-text="Диалоговое окно Сохранить файл как в Visual Studio":::
 
 1. Когда вам предложат заменить существующий файл, выберите **Заменить**.
 
@@ -112,13 +114,13 @@ ms.locfileid: "91180534"
 
 1. Щелкните значок **Закрепить**, чтобы панель не закрывалась.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-dock-icon.png" alt-text="Значок закрепления на панели Модульные тесты в Visual Studio для Mac":::
 
 1. Нажмите кнопку **Запустить все**.
 
    Все тесты пройдены.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-pass.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-pass.png" alt-text="Ожидаемое прохождение теста в Visual Studio для Mac":::
 
 ## <a name="handle-test-failures"></a>Обработка сбоев теста
 
@@ -135,13 +137,13 @@ ms.locfileid: "91180534"
 
    В этот раз в окне **Обозреватель тестов** будет указано, что два теста выполнены успешно, а третий завершился ошибкой.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/failed-test-window.png" alt-text="Окно Обозреватель тестов с тестами, которые завершились ошибкой":::
 
 1. Щелкните непройденный тест `TestDoesNotStartWithUpper` при нажатой клавише <kbd>CTRL</kbd> и в контекстном меню выберите **Показать панель результатов**.
 
    На панели **Результаты** появится сообщение, созданное методом утверждения: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Из-за этого сбоя строки в массиве, расположенные после слова "Error", не проверялись.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-failure.png" alt-text="Окно Обозреватель тестов с сообщением о том, что утверждение IsFalse ошибочно":::
 
 1. Удалите строку "Error", которую вы добавили на шаге 1. Еще раз запустите тест. Теперь тесты будут пройдены.
 
@@ -153,11 +155,11 @@ ms.locfileid: "91180534"
 
 1. В панели инструментов Visual Studio измените конфигурацию сборки с режима **Отладка** на **Выпуск**.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-toolbar-release.png" alt-text="Панель инструментов Visual Studio с выделенной сборкой выпуска":::
 
 1. На панели **Решение** щелкните проект **StringLibrary** при нажатой клавише <kbd>CTRL</kbd> и выберите в контекстном меню пункт **Сборка**, чтобы выполнить повторную компиляцию библиотеки.
 
-   :::image type="content" source="media/testing-library-with-visual-studio-mac/build-library-context-menu.png" alt-text="Создание тестового проекта в диалоговом окне Создание проекта Visual Studio для Mac":::
+   :::image type="content" source="media/testing-library-with-visual-studio-mac/build-library-context-menu.png" alt-text="Контекстное меню проекта StringLibrary с командой сборки":::
 
 1. Повторно запустите модульные тесты.
 
@@ -165,13 +167,13 @@ ms.locfileid: "91180534"
 
 ## <a name="debug-tests"></a>Отладка тестов
 
-Если в качестве IDE вы используете Visual Studio для Mac, то можете следовать инструкциям из статьи [Учебник. Отладка консольного приложения .NET Core с помощью Visual Studio для Mac](debugging-with-visual-studio-mac.md), чтобы выполнить отладку кода с помощью проекта модульного теста. Вместо запуска проекта приложения *ShowCase* щелкните проект **StringLibraryTests**, удерживая клавишу <kbd>CTRL</kbd> и выберите элемент **Начать отладку проекта** в контекстном меню.
+Если в качестве IDE вы используете Visual Studio для Mac, то можете следовать инструкциям из статьи [Учебник. Отладка консольного приложения .NET с помощью Visual Studio для Mac](debugging-with-visual-studio-mac.md), чтобы выполнить отладку кода с помощью проекта модульного теста. Вместо запуска проекта приложения *ShowCase* щелкните проект **StringLibraryTests**, удерживая клавишу <kbd>CTRL</kbd> и выберите элемент **Начать отладку проекта** в контекстном меню.
 
 Visual Studio запускает тестовый проект с присоединенным отладчиком. Выполнение будет прервано в любой точке останова, добавленной в тестовый проект или базовый код библиотеки.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-* [Модульное тестирование в .NET Core и .NET Standard](../testing/index.md)
+* [Модульное тестирование в .NET](../testing/index.md)
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -188,4 +190,4 @@ Visual Studio запускает тестовый проект с присоед
 Библиотеку не нужно распространять как пакет. Ее можно объединить с консольным приложением, где она используется. Чтобы узнать, как опубликовать консольное приложение, ознакомьтесь с предыдущим руководством в этой серии:
 
 > [!div class="nextstepaction"]
-> [Публикация консольного приложения .NET Core с помощью Visual Studio для Mac](publishing-with-visual-studio-mac.md)
+> [Публикация консольного приложения .NET с помощью Visual Studio для Mac](publishing-with-visual-studio-mac.md)

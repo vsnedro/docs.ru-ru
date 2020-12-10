@@ -1,7 +1,7 @@
 ---
 title: Как написать настраиваемые преобразователи для сериализации JSON — .NET
 description: Узнайте, как создать настраиваемые преобразователи для классов сериализации JSON, предоставляемых в пространстве имен System.Text.Json.
-ms.date: 01/10/2020
+ms.date: 11/30/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -12,18 +12,18 @@ helpviewer_keywords:
 - serialization
 - objects, serializing
 - converters
-ms.openlocfilehash: ba6b61232ccf7ed493fe5809e5c0b8ba21091d3d
-ms.sourcegitcommit: 6bef8abde346c59771a35f4f76bf037ff61c5ba3
+ms.openlocfilehash: 17671b86dc6d1d7b45a01cb0bf7c5c42f624d99f
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94329811"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96438119"
 ---
 # <a name="how-to-write-custom-converters-for-json-serialization-marshalling-in-net"></a>Как написать настраиваемые преобразователи для сериализации JSON (маршалинг) в .NET
 
 В этой статье показано, как создать настраиваемые преобразователи для классов сериализации JSON, предоставляемых в пространстве имен <xref:System.Text.Json>. Общие сведения о `System.Text.Json` см. в статье [Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET](system-text-json-how-to.md).
 
-*Преобразователь*  — это класс, который преобразует объект или значение в формат JSON и обратно. Пространство имен `System.Text.Json` содержит встроенные преобразователи для большинства примитивных типов, которые сопоставляются с примитивами JavaScript. Вы можете создавать настраиваемые преобразователи для следующих целей:
+*Преобразователь* — это класс, который преобразует объект или значение в формат JSON и обратно. Пространство имен `System.Text.Json` содержит встроенные преобразователи для большинства примитивных типов, которые сопоставляются с примитивами JavaScript. Вы можете создавать настраиваемые преобразователи для следующих целей:
 
 * Чтобы переопределить поведение встроенного преобразователя, используемое по умолчанию. Например, может потребоваться, чтобы значения `DateTime` были представлены в формате дд.мм.гггг вместо формата ISO 8601-1:2019 по умолчанию.
 * Для поддержки настраиваемого типа значения. Например, структуры `PhoneNumber`.
@@ -49,17 +49,17 @@ ms.locfileid: "94329811"
 
 Существует два шаблона для создания настраиваемого преобразователя: базовый шаблон и шаблон фабрики. Шаблон фабрики предназначен для преобразователей, обрабатывающих типы `Enum` или открытые универсальные шаблоны. Базовый шаблон предназначен для неуниверсальных и закрытых универсальных типов.  Например, для преобразователей следующих типов требуется шаблон фабрики:
 
-* `Dictionary<TKey, TValue>`
-* `Enum`
-* `List<T>`
+* <xref:System.Collections.Generic.Dictionary%602>
+* <xref:System.Enum>
+* <xref:System.Collections.Generic.List%601>
 
 Ниже приведены некоторые примеры типов, которые могут быть обработаны базовым шаблоном:
 
 * `Dictionary<int, string>`
 * `WeekdaysEnum`
 * `List<DateTimeOffset>`
-* `DateTime`
-* `Int32`
+* <xref:System.DateTime>
+* <xref:System.Int32>
 
 Базовый шаблон создает класс, который может работать с одним типом. Шаблон фабрики создает класс, который в среде выполнения определяет, какой конкретный тип требуется, и динамически создает соответствующий преобразователь.
 
@@ -67,13 +67,13 @@ ms.locfileid: "94329811"
 
 Следующий пример представляет собой преобразователь, который переопределяет сериализацию по умолчанию для существующего типа данных. Для свойств `DateTimeOffset` преобразователь использует формат дд.мм.гггг.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DateTimeOffsetConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetConverter.cs":::
 
 ## <a name="sample-factory-pattern-converter"></a>Пример преобразователя шаблона фабрики
 
 В следующем примере кода показан настраиваемый преобразователь, который работает с `Dictionary<Enum,TValue>`. Код соответствует шаблону фабрики, так как первый параметр универсального типа является `Enum`, а второй — открытым. Метод `CanConvert` возвращает `true` только для `Dictionary` с двумя универсальными параметрами, первый из которых является типом `Enum`. Внутренний преобразователь получает существующий преобразователь для работы с любым типом, предоставленным во время выполнения для `TValue`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
 Предыдущий код аналогичен тому, который приведен в разделе [Поддержка словаря с ключом, не являющимся строкой](#support-dictionary-with-non-string-key) далее в этой статье.
 
@@ -125,11 +125,11 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 Ниже приведен пример, который делает <xref:System.ComponentModel.DateTimeOffsetConverter> классом по умолчанию для свойств типа <xref:System.DateTimeOffset>.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs" id="Serialize":::
 
 Предположим, что вы сериализуете экземпляр следующего типа.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 Ниже приведен пример выходных данных JSON, в котором показано использование настраиваемого преобразователя.
 
@@ -143,35 +143,35 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 Следующий код использует тот же подход для десериализации с помощью настраиваемого преобразователя `DateTimeOffset`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithConvertersCollection.cs" id="Deserialize":::
 
 ## <a name="registration-sample---jsonconverter-on-a-property"></a>Пример регистрации — [JsonConverter] для свойства
 
 В следующем примере кода выбирается настраиваемый преобразователь для свойства `Date`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithConverterAttribute)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithConverterAttribute":::
 
 В коде для сериализации `WeatherForecastWithConverterAttribute` не нужно использовать `JsonSerializeOptions.Converters`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RegisterConverterWithAttributeOnProperty.cs?name=SnippetSerialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithAttributeOnProperty.cs" id="Serialize":::
 
 В коде для десериализации также не нужно использовать `Converters`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RegisterConverterWithAttributeOnProperty.cs?name=SnippetDeserialize)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RegisterConverterWithAttributeOnProperty.cs" id="Deserialize":::
 
 ## <a name="registration-sample---jsonconverter-on-a-type"></a>Пример регистрации — [JsonConverter] для типа
 
 Ниже приведен код, создающий структуру и применяющий к ней атрибут `[JsonConverter]`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Temperature.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Temperature.cs":::
 
 Ниже приведен настраиваемый преобразователь для предыдущей структуры.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/TemperatureConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/TemperatureConverter.cs":::
 
 Атрибут `[JsonConvert]` в структуре регистрирует настраиваемый преобразователь в качестве значения по умолчанию для свойств типа `Temperature`. Этот преобразователь автоматически используется в свойстве `TemperatureCelsius` следующего типа при его сериализации или десериализации.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithTemperatureStruct)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithTemperatureStruct":::
 
 ## <a name="converter-registration-precedence"></a>Очередность регистрации преобразователей
 
@@ -219,15 +219,15 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 * Строки в `string`.
 * Все остальное в `JsonElement`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs":::
 
 В следующем коде регистрируется преобразователь.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeInferredTypesToObject.cs?name=SnippetRegister)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeInferredTypesToObject.cs" id="Register":::
 
 Ниже приведен пример типа со свойствами `object`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithObjectProperties":::
 
 Следующий пример JSON для десериализации содержит значения, которые будут десериализованы как `DateTime`, `long` и `string`.
 
@@ -251,15 +251,15 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 В следующем примере кода показан настраиваемый преобразователь, который работает с `Dictionary<Enum,TValue>`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
 В следующем коде регистрируется преобразователь.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripDictionaryTkeyEnumTValue.cs" id="Register":::
 
 Преобразователь может сериализовать и десериализировать свойство `TemperatureRanges` следующего класса, который использует `Enum`.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithEnumDictionary)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithEnumDictionary":::
 
 Выходные данные JSON из сериализации выглядят так, как показано в следующем примере.
 
@@ -280,19 +280,19 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 ### <a name="support-polymorphic-deserialization"></a>Поддержка полиморфной десериализации
 
-Встроенные функции предоставляют ограниченный диапазон [полиморфной сериализации](system-text-json-how-to.md#serialize-properties-of-derived-classes), но совсем не поддерживают десериализацию. Для десериализации требуется настраиваемый преобразователь.
+Встроенные функции предоставляют ограниченный диапазон [полиморфной сериализации](system-text-json-polymorphism.md), но совсем не поддерживают десериализацию. Для десериализации требуется настраиваемый преобразователь.
 
 Например, предположим, что имеется абстрактный базовый класс `Person` с производными классами `Employee` и `Customer`. Полиморфная десериализации означает, что во время разработки можно указать `Person` в качестве цели десериализации, а объекты `Customer` и `Employee` в JSON правильно десериализованы во время выполнения. Во время десериализации необходимо найти признаки, которые определяют требуемый тип в JSON. В каждом сценарии доступны различные типы признаков. Например, может быть доступно свойство дискриминатора или придется полагаться на присутствие или отсутствие конкретного свойства. В текущем выпуске `System.Text.Json` не предоставлены атрибуты для указания способов обработки сценариев полиморфной десериализации, поэтому необходимо использовать настраиваемые преобразователи.
 
 В следующем коде показан базовый класс, два производных класса и настраиваемый преобразователь для них. Преобразователь использует свойство дискриминатора для выполнения в полиморфной десериализации. Дискриминатор типа не находится в определениях классов, но создается во время сериализации и считывается во время десериализации.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/Person.cs?name=SnippetPerson)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs":::
 
 В следующем коде регистрируется преобразователь.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripPolymorphic.cs?name=SnippetRegister)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripPolymorphic.cs" id="Register":::
 
 Преобразователь может десериализировать JSON, созданный с помощью того же преобразователя для сериализации, например.
 
@@ -327,17 +327,17 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 В следующем коде показан пользовательский преобразователь, включающий поддержку кругового пути для объектов `Stack<T>`:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/JsonConverterFactoryForStackOfT.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonConverterFactoryForStackOfT.cs":::
 
 В следующем коде регистрируется преобразователь.
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs?name=SnippetRegister)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs" id="Register":::
 
 ## <a name="handle-null-values"></a>Обработка значений NULL
 
 По умолчанию сериализатор обрабатывает значения NULL следующим образом:
 
-* Для ссылочных типов и типов `Nullable<T>`:
+* Для ссылочных типов и типов <xref:System.Nullable%601>:
 
   * Не передает `null` в пользовательские преобразователи для сериализации.
   * Не передает `JsonTokenType.Null` в пользовательские преобразователи для десериализации.
@@ -374,9 +374,7 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 
 * [Исходный код для встроенных преобразователей](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
 * [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md)
-* [Общие сведения о System.Text.Json](system-text-json-overview.md)
-* [Как использовать System.Text.Json](system-text-json-how-to.md)
-* [Как выполнить миграцию из Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
 * [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-trace — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-trace для получения трассировки .NET для запущенного процесса без собственного профилировщика с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: d0798e4f703c18c48db47193ac24ec0d13b66ae5
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 6bc5ad449f62ed0080ff6b1f401f1871d90cf5ec
+ms.sourcegitcommit: c6de55556add9f92af17e0f8d1da8f356a19a03d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94829314"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96549336"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -115,7 +115,13 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--profile <profile-name>`**
 
-  Заранее определенный именованный набор конфигураций поставщиков, который позволяет кратко указывать типичные сценарии трассировки.
+  Заранее определенный именованный набор конфигураций поставщиков, который позволяет кратко указывать типичные сценарии трассировки. Доступны следующие профили.
+
+ | Профиль | Описание |
+ |---------|-------------|
+ |`cpu-sampling`|Подходит для отслеживания загрузки ЦП и общих сведений среды выполнения .NET. Этот вариант используется по умолчанию, если другой профиль или поставщики не указаны.|
+ |`gc-verbose`|Отслеживает коллекции GC и распределения объектов samples.|
+ |`gc-collect`|Отслеживает коллекции GC только при очень низких издержках.|
 
 - **`--providers <list-of-comma-separated-providers>`**
 

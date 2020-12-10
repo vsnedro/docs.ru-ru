@@ -9,12 +9,12 @@ helpviewer_keywords:
 - types [C#], value types
 - C# language, value types
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
-ms.openlocfilehash: 6fb33ad2eb3f6a5e8f6506527f3807f31bf33fdc
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: 64c9e9eba2495531cfef8a603d53fb21c95c87a4
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92471655"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599399"
 ---
 # <a name="value-types-c-reference"></a>Типы значений (справочник по C#)
 
@@ -31,7 +31,7 @@ ms.locfileid: "92471655"
 > [!NOTE]
 > Чтобы сделать код менее подверженным ошибкам и более надежным, определите и используйте неизменяемые типы значений. В этой статье изменяемые типы значений используются только в демонстрационных целях.
 
-## <a name="kinds-of-value-types"></a>Виды типов значений
+## <a name="kinds-of-value-types-and-type-constraints"></a>Виды типов значений и ограничения типов
 
 Тип значения может относится к одному из двух следующих видов:
 
@@ -39,6 +39,8 @@ ms.locfileid: "92471655"
 - [тип перечисления](enum.md), который определяется набором именованных констант и представляет выбор или сочетание вариантов для выбора.
 
 [Тип значений `T?`, допускающий значение NULL](nullable-value-types.md), представляет все значения своего базового типа значения `T`, а также дополнительное значение [NULL](../keywords/null.md). Вы не можете назначить `null` переменной типа значения, если только это не тип, допускающий значение NULL.
+
+Вы можете использовать [ограничение `struct`](../../programming-guide/generics/constraints-on-type-parameters.md), чтобы указать, что параметр типа является типом значения, не допускающим значения NULL. Типы структуры и перечисления удовлетворяют ограничению `struct`. Начиная с C# версии 7.3, вы можете использовать тип `System.Enum` в ограничении базового класса (которое известно как [ограничение перечисления](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)), чтобы указать, что параметр типа является типом перечисления.
 
 ## <a name="built-in-value-types"></a>Встроенные типы значений
 
