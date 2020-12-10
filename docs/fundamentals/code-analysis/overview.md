@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 657975742c3efc2985264fe16cb316357b959e73
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 2f59b97de6f92e5a9bf927e1318286e400017dad
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851820"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009850"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Обзор анализа исходного кода .NET
 
@@ -99,21 +99,20 @@ ms.locfileid: "96851820"
 
 - Установите [пакет NuGet Microsoft. CodeAnalysis. нетанализерс](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) для отделения обновлений правил от обновлений пакета SDK для .NET. При установке пакета отключаются встроенные анализаторы SDK и создается предупреждение о сборке, если пакет SDK содержит более новую версию сборки анализатора, чем версия пакета NuGet.
 
-## <a name="code-style-analysis"></a>Анализ стиля кода
+## <a name="code-style-analysis"></a>Анализ в стиле кода
 
-Правила *анализа стиля кода* ("идекскскскс") позволяют определять и поддерживать единообразный стиль кода в базе кода. Параметры включения по умолчанию:
+Правила *анализа в стиле кода* ("идекскскскс") позволяют определять и поддерживать единообразный стиль кода в базе кода. Параметры включения по умолчанию:
 
-- Сборка из командной строки: анализ стиля кода по умолчанию отключен для всех проектов .NET при сборке из командной строки.
-- Visual Studio: анализ стиля кода включен по умолчанию для всех проектов .NET в Visual Studio в виде [быстрых действий по оптимизации кода](/visualstudio/ide/code-generation-in-visual-studio).
+- Сборка из командной строки. по умолчанию для всех проектов .NET в сборках из командной строки отключен анализ в стиле кода.
+- Visual Studio: анализ в стиле кода включен по умолчанию для всех проектов .NET в Visual Studio в виде [быстрых действий по оптимизации кода](/visualstudio/ide/code-generation-in-visual-studio).
 
-Начиная с .NET 5,0, можно включить анализ стиля кода для сборки как в командной строке, так и в Visual Studio. Нарушения стиля кода отображаются как предупреждения или ошибки с префиксом "IDE". Это позволяет применять единообразные стили кода во время сборки.
+Начиная с .NET 5,0, можно включить анализ в стиле кода для сборки как в командной строке, так и в Visual Studio. Нарушения стиля кода отображаются как предупреждения или ошибки с префиксом "IDE". Это позволяет применять единообразные стили кода во время сборки.
 
 Полный список правил анализа в стиле кода см. в разделе [правила стиля кода](style-rules/index.md).
 
-> [!NOTE]
-> Функция анализа стиля кода экспериментальна и может изменяться между выпусками .NET 5 и .NET 6.
+### <a name="enable-on-build"></a>Включить при сборке
 
-Инструкции по включению анализа стиля кода для сборки:
+Чтобы включить анализ в стиле кода для сборки, выполните следующие действия.
 
 1. Задайте для свойства MSBuild [енфорцекодестилеинбуилд](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) значение `true` .
 
@@ -137,6 +136,9 @@ ms.locfileid: "96851820"
    dotnet_diagnostic.IDE0040.severity = silent
    ```
 
+> [!NOTE]
+> Функция анализа в стиле кода экспериментальна и может изменяться в выпусках .NET 5 и .NET 6.
+
 ## <a name="suppress-a-warning"></a>Подавлять предупреждение
 
 Чтобы отключить нарушение правил, задайте для этого идентификатора правила степень серьезности `none` в файле EditorConfig. Пример:
@@ -153,7 +155,7 @@ Visual Studio предоставляет дополнительные спосо
 
 Помимо официальных анализаторов .NET, можно также установить сторонние анализаторы, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Рослинатор](https://www.nuget.org/packages/Roslynator.Analyzers/), [xUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)и [анализатор Sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по правилам анализа качества кода](quality-rules/index.md)
 - [Справочник по правилам анализа стиля кода](style-rules/index.md)
