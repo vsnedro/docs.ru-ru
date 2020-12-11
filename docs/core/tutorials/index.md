@@ -1,19 +1,19 @@
 ---
-title: Учебники по .NET Core
-description: Руководства по .NET Core научат вас создавать приложения и библиотеки на Mac, Linux и в Windows.
-author: richlander
-ms.date: 09/09/2020
+title: Руководства по .NET
+description: Руководства по .NET научат вас создавать приложения и библиотеки в Mac, Linux и Windows.
+author: tdykstra
+ms.date: 12/07/2020
 titleSuffix: ''
-ms.openlocfilehash: 84c8daa735df0255b0e383244f1abd8db4fe21fe
-ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.openlocfilehash: cf466f7ea004199052c1f02f5860668f2bb2ff28
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89656162"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009323"
 ---
-# <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a>См. дополнительные сведения о средствах пакета SDK для .NET Core и .NET Core
+# <a name="learn-net-and-the-net-sdk-tools-by-exploring-these-tutorials"></a>Изучив эти руководства, вы узнаете об инструментах для .NET и пакета SDK для .NET
 
-Ниже приведены доступные учебники по использованию .NET Core.
+В следующих руководствах показано, как разрабатывать консольные приложения и библиотеки для .NET Core, .NET 5 и более поздних версий. Сведения о других типах приложений см. в разделе [Руководства по началу работы с .NET](../../standard/get-started.md).
 
 ## <a name="use-visual-studio"></a>Использование Visual Studio
 
@@ -58,7 +58,3 @@ ms.locfileid: "89656162"
 - [Создание шаблонов для интерфейса командной строки](cli-templates-create-item-template.md)
 - [Создание и использование средств для интерфейса командной строки](../tools/global-tools-how-to-create.md)
 - [Создание приложения с подключаемыми модулями](creating-app-with-plugin-support.md)
-
-## <a name="create-web-apps"></a>Создание веб-приложений
-
-Руководства по разработке веб-приложений на ASP.NET Core см. в [документации по ASP.NET Core](/aspnet/core/).
