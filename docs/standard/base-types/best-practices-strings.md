@@ -17,12 +17,12 @@ helpviewer_keywords:
 - comparing strings
 - strings [.NET],comparing
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.openlocfilehash: d0a928fffb84e925ae167885e6d2456dc45b6892
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: bf11edc3669916ba4d30a3648692ca9b084d4340
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825082"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009823"
 ---
 # <a name="best-practices-for-comparing-strings-in-net"></a>Рекомендации по сравнению строк в .NET
 
@@ -166,9 +166,6 @@ ms.locfileid: "94825082"
 [!code-vb[Conceptual.Strings.BestPractices#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison2.vb#5)]
 
 Эти сравнения по-прежнему выполняются очень быстро.
-
-> [!NOTE]
-> Поведение строки файловой системы, ключей реестра и значений, а также переменные среды лучше всего представлены типом <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>.
 
 И <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> , и <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> используют двоичные значения непосредственно и лучше всего подходят для сопоставления. При отсутствии точной информации о параметрах сравнения используйте одно из этих двух значений. Однако, поскольку они выполняют побайтовое сравнение, лингвистическая сортировка (как в словаре английского языка) не выполняется, однако используется двоичный порядок сортировки. В большинстве случаев для пользователя эти результаты будут выглядеть странно.
 
