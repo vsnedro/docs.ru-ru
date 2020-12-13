@@ -2,12 +2,12 @@
 title: Учебники по C#
 description: Эти руководства расскажут о возможностях языка C# и научат вас создавать на нем программы.
 ms.date: 10/25/2018
-ms.openlocfilehash: 9542f4919c9b1f0363fb8bc27136eb9a7e074913
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: d6eeed2ed5fbf68120c789b7d8203e811fb8608d
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110173"
 ---
 # <a name="c-tutorials"></a>Учебники по C#
 
@@ -47,7 +47,6 @@ ms.locfileid: "89414827"
 
 ## <a name="explore-new-features-in-c"></a>Обзор новых возможностей в C\#
 
-* [Ознакомьтесь с новыми функциями C# 6 в интерактивном режиме](exploration/csharp-6.yml): испытайте новые возможности [C# 6](../whats-new/csharp-6.md) в интерактивном режиме с помощью браузера.
 * [Строка интерполяции](string-interpolation.md). Демонстрирует, как использовать интерполяцию строк для создания форматированных строк в C#.
 * [Ссылочные типы, допускающие значение NULL](nullable-reference-types.md). Демонстрируется использование ссылочных типов, допускающих значение NULL, для выражения намерения относительно пустых ссылок.
 * [Обновление проекта для использования ссылочных типов, допускающих значение NULL](upgrade-to-nullable-references.md): описание способов обновления существующего проекта для использования ссылочных типов, допускающих значение NULL.
