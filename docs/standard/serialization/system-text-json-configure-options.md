@@ -1,7 +1,7 @@
 ---
 title: Создание экземпляров JsonSerializerOptions с помощью System.Text.Json
-description: Узнайте, как создавать экземпляры JsonSerializerOptions путем копирования существующих экземпляров или с помощью стандартных параметров веб-приложения.
-ms.date: 11/30/2020
+description: Сведения о том, как избежать проблем с производительностью и использовать доступные конструкторы для экземпляров JsonSerializerOptions.
+ms.date: 12/02/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -11,16 +11,30 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 0febfe15f36856f10699fd327fb17c146277eb9b
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 5f32e1369e58dd9550f28abc822f187dee46c022
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439871"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009837"
 ---
 # <a name="how-to-instantiate-jsonserializeroptions-instances-with-no-locsystemtextjson"></a>Создание экземпляров JsonSerializerOptions с помощью System.Text.Json
 
-Из этой статьи вы узнаете, как создавать экземпляры <xref:System.Text.Json.JsonSerializerOptions> путем копирования существующих экземпляров или с помощью стандартных параметров веб-приложения.
+В этой статье объясняется, как избежать проблем с производительностью при использовании <xref:System.Text.Json.JsonSerializerOptions>. В ней также показано, как использовать доступные параметризованные конструкторы.
+
+## <a name="reuse-jsonserializeroptions-instances"></a>Повторное использование экземпляров JsonSerializerOptions
+
+При многократном использовании `JsonSerializerOptions` с одинаковыми параметрами не создавайте новый экземпляр `JsonSerializerOptions` при каждом использовании. Повторно используйте один и тот же экземпляр для каждого вызова. Это руководство относится к коду для настраиваемых преобразователей, а также при вызове <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> или <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
+
+В следующем примере кода демонстрируется снижение производительности при использовании новых экземпляров параметров.
+
+:::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
+
+Предыдущий код сериализует небольшой объект 100 000 раз с помощью одного и того же экземпляра параметров. Затем он сериализует тот же объект такое же количество раз и каждый раз создает новый экземпляр параметров. Типичная разница во времени выполнения — 190 и 40 140 миллисекунд. Разница станет еще больше, если увеличить число итераций.
+
+Сериализатор выполняет этап прогрева во время первой сериализации каждого типа в графе объектов при передаче ему нового экземпляра параметров. Этот прогрев включает создание кэша метаданных, необходимых для сериализации. Метаданные содержат делегаты для методов получения свойств, методов задания свойств, аргументов конструктора, заданных атрибутов и т. д. Этот кэш метаданных хранится в экземпляре параметров. Тот же процесс прогрева и создания кэша относится к десериализации.
+
+Размер кэша метаданных в экземпляре `JsonSerializerOptions` зависит от числа сериализуемых типов. Если в сериализатор передается большое число типов, например, динамически создаваемые типы, то размер кэша будет продолжать расти и может привести к появлению `OutOfMemoryException`.
 
 ## <a name="copy-jsonserializeroptions"></a>Копирование JsonSerializerOptions
 
@@ -60,12 +74,19 @@ ms.locfileid: "96439871"
 ## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
 * [Сопоставление без учета регистра](system-text-json-character-casing.md)
 * [Настройка имен и значений свойств](system-text-json-customize-properties.md)
 * [Игнорирование свойств](system-text-json-ignore-properties.md)
 * [Применение недействительного кода JSON](system-text-json-invalid-json.md)
 * [Обработка переполнения JSON](system-text-json-handle-overflow.md)
-* [Сохранение циклических ссылок](system-text-json-preserve-references.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
 * [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
 * [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
+* [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

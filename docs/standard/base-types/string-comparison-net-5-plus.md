@@ -1,13 +1,13 @@
 ---
 title: Изменения в поведении при сравнении строк в .NET 5+
 description: Узнайте больше об изменениях в поведении при сравнении строк в .NET 5 и более поздних версий в Windows.
-ms.date: 11/04/2020
-ms.openlocfilehash: fa1a1d12f45e5b41877a674d7b8747bb2b2f9658
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 12/07/2020
+ms.openlocfilehash: a53c36b31785fb43c0aa5f5040042abb6d40031a
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734235"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851755"
 ---
 # <a name="behavior-changes-when-comparing-strings-on-net-5"></a>Изменения в поведении при сравнении строк в .NET 5+
 
@@ -43,16 +43,29 @@ Console.WriteLine(idx);
 
 ### <a name="enable-code-analyzers"></a>Включение анализаторов кода
 
-[Анализаторы кода](../../fundamentals/code-analysis/overview.md) могут обнаруживать места вызовов с ошибками. Для защиты от непредвиденного поведения мы рекомендуем установить [для вашего проекта пакет NuGet __Microsoft.CodeAnalysis.FxCopAnalyzers__](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/). Пакет включает правила анализа кода [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) и [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), благодаря которым вы сможете отмечать код, в котором вместо порядкового сравнения непреднамеренно использовалась лингвистическая функция сравнения.
+[Анализаторы кода](../../fundamentals/code-analysis/overview.md) могут обнаруживать места вызовов с ошибками. Чтобы не допустить неожиданного поведения, мы рекомендуем включить анализаторы платформы компилятора .NET (Roslyn) в вашем проекте. Анализаторы помогают отмечать код, в котором вместо порядкового сравнения непреднамеренно использовалась лингвистическая функция сравнения. Следующие правила должны помочь в выявлении таких ситуаций:
 
-Пример:
+- [CA1307. Используйте StringComparison, чтобы ясно указать намерение.](../../fundamentals/code-analysis/quality-rules/ca1307.md)
+- [CA1309. Используйте порядковый параметр StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
+- [CA1310. Используйте StringComparison, чтобы правильно указать намерение.](../../fundamentals/code-analysis/quality-rules/ca1310.md)
+
+Эти конкретные правила не включены по умолчанию. Чтобы включить их и отображать все нарушения как ошибки сборки, задайте следующие свойства в файле проекта:
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
+</PropertyGroup>
+```
+
+В следующем фрагменте показаны примеры кода, который создает соответствующие предупреждения или ошибки анализатора кода.
 
 ```cs
 //
 // Potentially incorrect code - answer might vary based on locale.
 //
 string s = GetString();
-// Produces analyzer warning CA1307.
+// Produces analyzer warning CA1310 for string; CA1307 matches on char ','
 int idx = s.IndexOf(",");
 Console.WriteLine(idx);
 
@@ -89,17 +102,12 @@ List<string> list = GetListOfStrings();
 list.Sort(StringComparer.Ordinal);
 ```
 
-Дополнительные сведения об этих правилах анализатора кода, в том числе о том, когда необходимо добавлять эти правила в собственную базу кода, см. в следующих статьях:
-
-* [CA1307. Используйте StringComparison, чтобы ясно указать намерение.](../../fundamentals/code-analysis/quality-rules/ca1307.md)
-* [CA1309. Используйте порядковый параметр StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
-
 ### <a name="revert-back-to-nls-behaviors"></a>Возврат к поведению NLS
 
 Чтобы восстановить для приложения .NET 5 прежнее поведение NLS при работе в Windows, выполните действия, описанные в статье [Глобализация .NET и ICU](../globalization-localization/globalization-icu.md). Этот переключатель совместимости следует установить на уровне приложения. Индивидуальные библиотеки не могут перенимать это поведение или отказываться от него.
 
 > [!TIP]
-> Мы настоятельно рекомендуем включить правила анализа кода [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) и [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md) для очистки кода и обнаружения скрытых ошибок. Дополнительные сведения см. в разделе [Включение анализаторов кода](#enable-code-analyzers).
+> Настоятельно рекомендуем включить правила анализа кода [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md) и [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) для очистки кода и обнаружения скрытых ошибок. Дополнительные сведения см. в разделе [Включение анализаторов кода](#enable-code-analyzers).
 
 ## <a name="affected-apis"></a>Затронутые API
 
@@ -196,7 +204,7 @@ Console.WriteLine("re\u0301sume\u0301".IndexOf("E", StringComparison.OrdinalIgno
 
 Элемент параметров сортировки частично соответствует тому, что читатели представляют, думая об одном символе или кластере символов. Он концептуально похож на [кластер графем](character-encoding-introduction.md#grapheme-clusters), однако охватывает более крупные группировки.
 
-В лингвистической функции сравнения точные совпадения не требуются. Элементы параметров сортировки сравниваются на основе их семантического значения. Например, лингвистическая функция сравнения анализирует подстроки `"\u00E9"` и `"e\u0301"` как равные, поскольку они обе семантически означают "строчная буква e с модификатором знака акута". Это позволяет методу `IndexOf` сопоставлять подстроку `"e\u0301"` в более длинной строке, содержащей семантически эквивалентную подстроку `"\u00E9"`, как показано в следующем примере кода.
+В лингвистической функции сравнения точные совпадения не требуются. Элементы параметров сортировки сравниваются на основе их семантического значения. Например, лингвистическая функция сравнения считает подстроки `"\u00E9"` и `"e\u0301"` равными, поскольку они обе семантически означают "строчная буква e с модификатором диакритического знака ударения". Это позволяет методу `IndexOf` сопоставлять подстроку `"e\u0301"` в более длинной строке, содержащей семантически эквивалентную подстроку `"\u00E9"`, как показано в следующем примере кода.
 
 ```cs
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // prints '-1' (not found)

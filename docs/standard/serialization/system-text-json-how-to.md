@@ -1,7 +1,7 @@
 ---
 title: Как сериализировать и десериализировать JSON с помощью C# для .NET
 description: Сведения об использовании пространства имен System.Text.Json для сериализации и десериализации формата JSON в .NET. Содержит пример кода.
-ms.date: 11/30/2020
+ms.date: 12/02/2020
 ms.custom: contperfq2
 no-loc:
 - System.Text.Json
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 9ea9e2fef5ef66f2a5ff816168abfbd7b2e75276
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 1ea4ff71b9e21bd7c5b12598581b33e1e96ebb19
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437672"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97008842"
 ---
 # <a name="how-to-serialize-and-deserialize-marshal-and-unmarshal-json-in-net"></a>Как сериализировать и десериализировать (маршалирование и демаршалирование) JSON в .NET
 
@@ -249,6 +249,8 @@ using System.Text.Json.Serialization;
 }
 ```
 
+При многократном использовании `JsonSerializerOptions` с одинаковыми параметрами не создавайте новый экземпляр `JsonSerializerOptions` при каждом использовании. Повторно используйте один и тот же экземпляр для каждого вызова. Дополнительные сведения см. в разделе [Повторное использование экземпляров JsonSerializerOptions](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
+
 ## <a name="include-fields"></a>Включение полей
 
 ::: zone pivot="dotnet-5-0"
@@ -283,8 +285,19 @@ using System.Text.Json.Serialization;
 ## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
-* [Как написать пользовательские преобразователи для сериализации JSON (маршалинг) в .NET](system-text-json-converters-how-to.md)
-* [Как выполнить миграцию из Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md)
+* [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
+* [Сопоставление без учета регистра](system-text-json-character-casing.md)
+* [Настройка имен и значений свойств](system-text-json-customize-properties.md)
+* [Игнорирование свойств](system-text-json-ignore-properties.md)
+* [Применение недействительного кода JSON](system-text-json-invalid-json.md)
+* [Обработка переполнения JSON](system-text-json-handle-overflow.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
+* [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
+* [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->
+* [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

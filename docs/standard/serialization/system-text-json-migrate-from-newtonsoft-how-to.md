@@ -13,12 +13,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: bc256c5129cd4a7306e632685474b159a43ce76c
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 418637639790199755803bf374ef99af949ae9b3
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96438062"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009902"
 ---
 # <a name="how-to-migrate-from-no-locnewtonsoftjson-to-no-locsystemtextjson"></a>Миграция из Newtonsoft.Json в System.Text.Json
 
@@ -535,7 +535,7 @@ The JSON value could not be converted to System.String.
 * Параметр `DateTimeZoneHandling` можно использовать для сериализации всех значений `DateTime` как даты в формате UTC.
 * Параметры `DateFormatString` и преобразователи `DateTime` можно использовать для настройки формата строк даты.
 
-В <xref:System.Text.Json> единственным форматом со встроенной поддержкой является ISO 8601-1:2019, так как он широко используется, выражен однозначно и обеспечивает точные круговые пути. Чтобы использовать любой другой формат, создайте пользовательский преобразователь. Дополнительные сведения см. в разделе [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md).
+<xref:System.Text.Json> поддерживает ISO 8601-1:2019, включая профиль RFC 3339. Этот формат широко используется, является однозначным и точно выполняет круговые пути. Чтобы использовать любой другой формат, создайте пользовательский преобразователь. Дополнительные сведения см. в разделе [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md).
 
 ### <a name="callbacks"></a>Обратные вызовы
 
@@ -806,10 +806,20 @@ doc.WriteTo(writer);
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
-* [Как использовать System.Text.Json](system-text-json-how-to.md)
-* [Практическое руководство. Написание настраиваемых преобразователей](system-text-json-converters-how-to.md)
-* [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
+* [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
+* [Сопоставление без учета регистра](system-text-json-character-casing.md)
+* [Настройка имен и значений свойств](system-text-json-customize-properties.md)
+* [Игнорирование свойств](system-text-json-ignore-properties.md)
+* [Применение недействительного кода JSON](system-text-json-invalid-json.md)
+* [Обработка переполнения JSON](system-text-json-handle-overflow.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
+* [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
+* [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
 * [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

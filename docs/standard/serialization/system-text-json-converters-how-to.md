@@ -1,7 +1,7 @@
 ---
 title: Как написать настраиваемые преобразователи для сериализации JSON — .NET
 description: Узнайте, как создать настраиваемые преобразователи для классов сериализации JSON, предоставляемых в пространстве имен System.Text.Json.
-ms.date: 11/30/2020
+ms.date: 12/09/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - serialization
 - objects, serializing
 - converters
-ms.openlocfilehash: 17671b86dc6d1d7b45a01cb0bf7c5c42f624d99f
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 33334ccd8bad4ac5a9f5dccde79ff3ae09ca8f89
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96438119"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97008868"
 ---
 # <a name="how-to-write-custom-converters-for-json-serialization-marshalling-in-net"></a>Как написать настраиваемые преобразователи для сериализации JSON (маршалинг) в .NET
 
@@ -25,7 +25,7 @@ ms.locfileid: "96438119"
 
 *Преобразователь* — это класс, который преобразует объект или значение в формат JSON и обратно. Пространство имен `System.Text.Json` содержит встроенные преобразователи для большинства примитивных типов, которые сопоставляются с примитивами JavaScript. Вы можете создавать настраиваемые преобразователи для следующих целей:
 
-* Чтобы переопределить поведение встроенного преобразователя, используемое по умолчанию. Например, может потребоваться, чтобы значения `DateTime` были представлены в формате дд.мм.гггг вместо формата ISO 8601-1:2019 по умолчанию.
+* Чтобы переопределить поведение встроенного преобразователя, используемое по умолчанию. Например, может потребоваться, чтобы значения `DateTime` были представлены в формате "мм/дд/гггг". По умолчанию поддерживается стандарт ISO 8601-1:2019, включая профиль RFC 3339. Дополнительные сведения см. в разделе [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md).
 * Для поддержки настраиваемого типа значения. Например, структуры `PhoneNumber`.
 
 Вы также можете создать настраиваемые преобразователи для настройки или расширения `System.Text.Json` с функциональностью, не входящей в текущий выпуск. Далее в этой статье описываются следующие сценарии:
@@ -44,6 +44,8 @@ ms.locfileid: "96438119"
 * [Поддержка полиморфной десериализации](#support-polymorphic-deserialization).
 * [Поддержка кругового пути для Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
+
+При написании кода настраиваемого преобразователя помните о значительном снижении производительности при использовании новых экземпляров <xref:System.Text.Json.JsonSerializerOptions>. Дополнительные сведения см. в разделе [Повторное использование экземпляров JsonSerializerOptions](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
 
 ## <a name="custom-converter-patterns"></a>Шаблоны настраиваемых преобразователей
 
@@ -103,7 +105,11 @@ ms.locfileid: "96438119"
 
 ## <a name="error-handling"></a>Обработка ошибок
 
-Если необходимо вызвать исключение в коде обработки ошибок, рассмотрите возможность создания <xref:System.Text.Json.JsonException> без сообщения. Этот тип исключения автоматически создает сообщение, содержащее путь к части JSON, вызвавшей ошибку. Например, инструкция `throw new JsonException();` выдает сообщение об ошибке, как в следующем примере:
+Сериализатор обеспечивает специальную обработку типов исключений <xref:System.Text.Json.JsonException> и <xref:System.NotSupportedException>.
+
+### <a name="jsonexception"></a>JsonException
+
+Если выдается исключение `JsonException` без сообщения, сериализатор создает сообщение, содержащее путь к части JSON, вызвавшей ошибку. Например, инструкция `throw new JsonException()` выдает сообщение об ошибке, как в следующем примере:
 
 ```output
 Unhandled exception. System.Text.Json.JsonException:
@@ -111,7 +117,25 @@ The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
-Если вы предоставляете сообщение (например, `throw new JsonException("Error occurred")`), исключение по-прежнему предоставляет путь в свойстве <xref:System.Text.Json.JsonException.Path>.
+Если вы выдаете сообщение (например, `throw new JsonException("Error occurred")`), сериализатор по-прежнему устанавливает свойства <xref:System.Text.Json.JsonException.Path>, <xref:System.Text.Json.JsonException.LineNumber> и <xref:System.Text.Json.JsonException.BytePositionInLine>.
+
+### <a name="notsupportedexception"></a>NotSupportedException
+
+При возникновении `NotSupportedException` вы всегда получаете сведения о пути в сообщении. Если сообщение указано, сведения о пути добавляются к нему. Например, инструкция `throw new NotSupportedException("Error occurred.")` выдает сообщение об ошибке, как в следующем примере:
+
+```output
+Error occurred. The unsupported member type is located on type
+'System.Collections.Generic.Dictionary`2[Samples.SummaryWords,System.Int32]'.
+Path: $.TemperatureRanges | LineNumber: 4 | BytePositionInLine: 24
+```
+
+### <a name="when-to-throw-which-exception-type"></a>Типы исключений, которые следует использовать в различных случаях
+
+Если полезные данные JSON содержат токены, которые не являются допустимыми для десериализуемого типа, необходимо выдать исключение `JsonException`.
+
+Если требуется запретить определенные типы, используйте исключение `NotSupportedException`. Это исключение автоматически выдается сериализатором для типов, которые не поддерживаются. Например, тип `System.Type` не поддерживается по соображениям безопасности, поэтому попытка десериализации приведет к исключению `NotSupportedException`.
+
+При необходимости можно вызвать и другие исключения, но в них не будут автоматически включаться сведения о пути JSON.
 
 ## <a name="register-a-custom-converter"></a>Регистрация настраиваемого преобразователя
 
@@ -373,8 +397,20 @@ Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
 * [Исходный код для встроенных преобразователей](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
-* [Поддержка DateTime и DateTimeOffset в System.Text.Json](../datetime/system-text-json-support.md)
+* [Общие сведения о System.Text.Json](system-text-json-overview.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
+* [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
+* [Сопоставление без учета регистра](system-text-json-character-casing.md)
+* [Настройка имен и значений свойств](system-text-json-customize-properties.md)
+* [Игнорирование свойств](system-text-json-ignore-properties.md)
+* [Применение недействительного кода JSON](system-text-json-invalid-json.md)
+* [Обработка переполнения JSON](system-text-json-handle-overflow.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
+* [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
+* [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [Настройка кодировки символов](system-text-json-character-encoding.md)
 * [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
 * [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

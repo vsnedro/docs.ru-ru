@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 2c40d42b26bc5bd05f592cc51c6b5b9b4c6bbd9e
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 265ce4f77d353720419122d17c36e508a377b68f
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439849"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97008920"
 ---
 # <a name="how-to-handle-overflow-json-with-no-locsystemtextjson"></a>Как обрабатывать переполнения JSON с помощью System.Text.Json
 
@@ -86,12 +86,19 @@ ms.locfileid: "96439849"
 ## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
 * [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
 * [Сопоставление без учета регистра](system-text-json-character-casing.md)
 * [Настройка имен и значений свойств](system-text-json-customize-properties.md)
 * [Игнорирование свойств](system-text-json-ignore-properties.md)
 * [Применение недействительного кода JSON](system-text-json-invalid-json.md)
-* [Сохранение циклических ссылок](system-text-json-preserve-references.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
 * [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
 * [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
+* [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

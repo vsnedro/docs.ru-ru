@@ -1,7 +1,7 @@
 ---
 title: Разрешение некоторых недопустимых объектов JSON с помощью System.Text.Json
 description: Узнайте, как в .NET разрешить комментарии, конечные запятые и числа в кавычках при сериализации в JSON и десериализации из JSON.
-ms.date: 11/30/2020
+ms.date: 12/03/2020
 no-loc:
 - System.Text.Json
 - Newtonsoft.Json
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 60cbb98bb65ee5c1ffdd3043e42a04004530a115
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 2559b081010fb0a2fa208b121cb095efdeb8da2e
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439819"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009814"
 ---
 # <a name="how-to-allow-some-kinds-of-invalid-json-with-no-locsystemtextjson"></a>Разрешение некоторых недопустимых объектов JSON с помощью System.Text.Json
 
@@ -36,6 +36,8 @@ ms.locfileid: "96439819"
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureCelsius": 25, // Fahrenheit 77
   "Summary": "Hot", /* Zharko */
+  // Comments on
+  /* separate lines */
 }
 ```
 
@@ -77,12 +79,19 @@ ms.locfileid: "96439819"
 ## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
 * [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
 * [Сопоставление без учета регистра](system-text-json-character-casing.md)
 * [Настройка имен и значений свойств](system-text-json-customize-properties.md)
 * [Игнорирование свойств](system-text-json-ignore-properties.md)
 * [Обработка переполнения JSON](system-text-json-handle-overflow.md)
-* [Сохранение циклических ссылок](system-text-json-preserve-references.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
 * [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
 * [Полиморфная сериализация](system-text-json-polymorphism.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
+* [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)

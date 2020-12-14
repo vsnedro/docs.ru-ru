@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serializing objects
 - serialization
 - objects, serializing
-ms.openlocfilehash: 4b99a402ea4f4c664d3bfd75627ffaf94948d493
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: c0bc16c60d3bf96a380bc29bbf7f4765f752b320
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96439840"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97008751"
 ---
 # <a name="how-to-serialize-properties-of-derived-classes-with-no-locsystemtextjson"></a>Как сериализовать свойства производных классов с помощью System.Text.Json
 
@@ -133,12 +133,19 @@ ms.locfileid: "96439840"
 ## <a name="see-also"></a>См. также раздел
 
 * [Общие сведения о System.Text.Json](system-text-json-overview.md)
+* [Практическое руководство. Сериализация и десериализация JSON](system-text-json-how-to.md)
 * [Создание экземпляров JsonSerializerOptions](system-text-json-configure-options.md)
 * [Сопоставление без учета регистра](system-text-json-character-casing.md)
 * [Настройка имен и значений свойств](system-text-json-customize-properties.md)
 * [Игнорирование свойств](system-text-json-ignore-properties.md)
 * [Применение недействительного кода JSON](system-text-json-invalid-json.md)
 * [Обработка переполнения JSON](system-text-json-handle-overflow.md)
-* [Сохранение циклических ссылок](system-text-json-preserve-references.md)
+* [Сохранение ссылок](system-text-json-preserve-references.md)
 * [Неизменяемые типы и непубличные методы доступа](system-text-json-immutability.md)
+* [Миграция из Newtonsoft.Json в System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Настройка кодировки символов](system-text-json-character-encoding.md)
+* [Написание пользовательских сериализаторов и десериализаторов](write-custom-serializer-deserializer.md)
+* [Написание пользовательских преобразователей для сериализации JSON](system-text-json-converters-how-to.md)
+* [Поддержка DateTime и DateTimeOffset](../datetime/system-text-json-support.md)
 * [Справочник по API System.Text.Json](xref:System.Text.Json)
+* [Справочник по API System.Text.Json.Serialization](xref:System.Text.Json.Serialization)
