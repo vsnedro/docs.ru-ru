@@ -3,12 +3,12 @@ title: История языка C# (руководство по C#)
 description: На что был похож этот язык в ранних версиях и во что он превратился сейчас?
 author: erikdietrich
 ms.date: 04/08/2020
-ms.openlocfilehash: 349f2cfbe0fc93060eb6927ee8c3528c16b99aca
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 7258dc8b8fcfbd6354b5ceee4183429bfee14038
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110732"
 ---
 # <a name="the-history-of-c"></a>История языка C\#
 
@@ -134,17 +134,17 @@ C# версии 3.0 был выпущен в конце 2007 года вмест
 
 Версии 3.0 и 5.0 добавили в объектно-ориентированный язык C# несколько впечатляющих возможностей. Версия 6.0, выпущенная вместе с Visual Studio 2015, отступает от подхода, ориентированного на реализацию уникальных возможностей. Здесь предоставляются менее масштабные функции, с которыми программирование на C# становится гораздо эффективнее. Вот некоторые из них:
 
-- [Статические импорты](./csharp-6.md#using-static)
-- [Фильтры исключений](./csharp-6.md#exception-filters)
-- [Инициализаторы автосвойств](./csharp-6.md#auto-property-initializers)
-- [Элементы, воплощающие выражение](./csharp-6.md#expression-bodied-function-members)
-- [Null-распространитель](./csharp-6.md#null-conditional-operators)
-- [Интерполяция строк](./csharp-6.md#string-interpolation)
-- [Оператор nameof](./csharp-6.md#the-nameof-expression)
-- [Инициализаторы индекса](csharp-6.md#extension-add-methods-in-collection-initializers)
+- [Статические импорты](../language-reference/keywords/using-static.md)
+- [Фильтры исключений](../language-reference/keywords/when.md)
+- [Инициализаторы автосвойств](../properties.md)
+- [Элементы, воплощающие выражение](../language-reference/operators/lambda-operator.md#expression-body-definition)
+- [Null-распространитель](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-)
+- [Интерполяция строк](../language-reference/tokens/interpolated.md)
+- [Оператор nameof](../language-reference/operators/nameof.md)
 
 Другие новые возможности:
 
+- Инициализаторы индекса
 - Выражение Await в блоках Catch и Finally
 - Значения по умолчанию для свойств метода получения
 

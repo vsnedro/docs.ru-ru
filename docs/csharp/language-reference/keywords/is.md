@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - is keyword [C#]
 ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
-ms.openlocfilehash: d30ebfa2dc47265185a96514efbddc3e4937438c
-ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
+ms.openlocfilehash: c38649a9e3b3f75ec35fb8711324302a682b504e
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94982398"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851338"
 ---
 # <a name="is-c-reference"></a>is (Справочник по C#)
 
@@ -32,7 +32,7 @@ ms.locfileid: "94982398"
 При использовании шаблона типа для сопоставления шаблонов `is` проверяет, можно ли преобразовать выражение в указанный тип и, если это возможно, приводит его к переменной этого типа. Это простое расширение оператора `is` для краткого определения и преобразования типов. Шаблон типа `is` имеет следующий общий вид:
 
 ```csharp
-   expr is type varname
+expr is type varname
 ```
 
 Здесь *expr* — это выражение, значением которого является экземпляр какого-либо типа, *type* — это имя типа, в который должен быть преобразован результат *expr*, а *varname* — это объект, в который преобразуется результат *expr*, если проверка `is` возвращает значение `true`.
