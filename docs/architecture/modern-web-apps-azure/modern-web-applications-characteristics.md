@@ -6,13 +6,13 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 12/04/2019
-ms.openlocfilehash: 6241a9a3a51bd4d5228841caeaf3a7b652fc6eaa
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.date: 12/01/2020
+ms.openlocfilehash: 2a9e55250018352c8019d30a4d615ec39e619e31
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91608365"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851234"
 ---
 # <a name="characteristics-of-modern-web-applications"></a>Характеристики современных веб-приложений
 
@@ -25,7 +25,7 @@ ms.locfileid: "91608365"
 
 ## <a name="reference-application-eshoponweb"></a>Справочное приложение: eShopOnWeb
 
-В этом руководстве показано справочное приложение _eShopOnWeb_, на примере которого демонстрируются некоторые принципы и рекомендации. Это приложение представляет собой простой интернет-магазин, в котором можно просматривать каталог рубашек, кружек и других товаров. Это справочное приложение намеренно упрощено для наилучшего понимания.
+В этом руководстве показано справочное приложение _eShopOnWeb_, на примере которого демонстрируются некоторые принципы и рекомендации. Это приложение представляет собой простой интернет-магазин, в котором можно просматривать каталог футболок, кружек и других товаров. Это справочное приложение намеренно упрощено для наилучшего понимания.
 
 ![eShopOnWeb](./media/image2-1.png)
 

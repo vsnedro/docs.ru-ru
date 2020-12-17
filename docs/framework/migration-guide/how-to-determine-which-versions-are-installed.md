@@ -1,24 +1,27 @@
 ---
 title: Определение установленных версий платформы .NET Framework
 description: Используйте код, regedit.exe или PowerShell, чтобы определить, какие версии .NET Framework установлены на компьютере, запросив реестр Windows.
-ms.date: 02/03/2020
+ms.date: 12/04/2020
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - versions, determining for .NET Framework
-- .NET Framework, determining version
+- .NET Framework, determining installed versions
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
-ms.openlocfilehash: b4c5b6911a4be4f9ac156b600646c649549f88f8
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: a219514fafdcb17db259e089afa8318dbab24811
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96438141"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851833"
 ---
 # <a name="how-to-determine-which-net-framework-versions-are-installed"></a>Практическое руководство. Определение установленных версий платформы .NET Framework
 
 На компьютере можно [установить](../install/index.md) и запустить несколько версий платформы .NET Framework. При разработке или развертывании приложения могут потребоваться сведения о том, какие версии .NET Framework установлены на компьютере пользователя. Реестр содержит список версий .NET Framework, установленных на компьютере.
+
+> [!NOTE]
+> Эта статья относится к .NET Framework. Чтобы определить, какие пакеты SDK и среды выполнения .NET Core и .NET 5+ установлены, см. раздел [Как проверить, что .NET уже установлен](../../core/install/how-to-detect-installed-versions.md).
 
 Платформа .NET Framework состоит из двух основных компонентов, версии которым присваиваются отдельно:
 
@@ -37,6 +40,21 @@ ms.locfileid: "96438141"
   Модуль PowerShell 2.0.
 
 Сведения об определении установленных обновлений для каждой версии платформы .NET Framework см. в статье [Практическое руководство. Определение установленных обновлений платформы .NET Framework](how-to-determine-which-net-framework-updates-are-installed.md).
+
+## <a name="determine-which-net-implementation-and-version-an-app-is-running-on"></a>Определение реализации и версии .NET, в которой работает приложение
+
+Для запроса реализации и версии .NET, в которой работает ваше приложение, можно использовать свойство <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType>. Если приложение работает в .NET Framework, выходные данные будут выглядеть примерно так:
+
+```output
+.NET Framework 4.8.4250.0
+```
+
+Если же приложение работает в .NET Core или .NET 5+, выходные данные будут выглядеть следующим образом:
+
+```output
+.NET Core 3.1.9
+.NET 5.0.0
+```
 
 ## <a name="detect-net-framework-45-and-later-versions"></a>Обнаружение .NET Framework 4.5 и более поздних версий
 
@@ -81,13 +99,13 @@ ms.locfileid: "96438141"
 
 ### <a name="use-registry-editor"></a>Использование редактора реестра
 
-01. В меню **Пуск** выберите **Выполнить**, введите *regedit* и нажмите кнопку **ОК**.
+1. В меню **Пуск** выберите **Выполнить**, введите *regedit* и нажмите кнопку **ОК**.
 
    (Для запуска программы regedit необходимы учетные данные администратора.)
 
-01. В редакторе реестра откройте следующий подраздел: **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. Если подраздел **Full** отсутствует, платформа .NET Framework 4.5 или более поздней версии не установлена.
+1. В редакторе реестра откройте следующий подраздел: **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. Если подраздел **Full** отсутствует, платформа .NET Framework 4.5 или более поздней версии не установлена.
 
-01. Проверьте значение REG_DWORD с именем **Release**. Если оно имеется, платформа .NET Framework 4.5 или более поздней версии установлена. Это значение соответствует определенной версии .NET Framework. Например, на приведенном ниже рисунке значение параметра **Release** равно 528040, что является разделом выпуска для .NET Framework 4.8.
+1. Проверьте значение REG_DWORD с именем **Release**. Если оно имеется, платформа .NET Framework 4.5 или более поздней версии установлена. Это значение соответствует определенной версии .NET Framework. Например, на приведенном ниже рисунке значение параметра **Release** равно 528040, что является разделом выпуска для .NET Framework 4.8.
 
    ![Запись реестра для .NET Framework 4.5](./media/clr-installdir.png )
 
