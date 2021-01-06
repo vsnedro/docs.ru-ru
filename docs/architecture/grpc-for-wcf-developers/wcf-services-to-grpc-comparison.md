@@ -1,13 +1,13 @@
 ---
 title: Сравнение WCF с gRPC-gRPC для разработчиков WCF
 description: Сравнение платформ WCF и gRPC для создания распределенных приложений.
-ms.date: 09/02/2019
-ms.openlocfilehash: 4f54db76c9512b770b4dd993496d95437dd89753
-ms.sourcegitcommit: f38e527623883b92010cf4760246203073e12898
+ms.date: 12/15/2020
+ms.openlocfilehash: 7dd41c3d6f248bb1ef5eacb323b1443c7bc575a7
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77503334"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938498"
 ---
 # <a name="comparing-wcf-to-grpc"></a>Сравнение WCF и gRPC
 
@@ -18,11 +18,11 @@ ms.locfileid: "77503334"
 - Типы RPC
 - Метаданные
 - Обработка ошибок
-- Протоколы WS-\*
+- WS- \* Protocols
 
 ## <a name="grpc-example"></a>Пример gRPC
 
-При создании нового проекта ASP.NET Core 3,0 gRPC из Visual Studio 2019 или командной строки для вас создается gRPC эквивалент "Hello World". Он состоит из `greeter.proto` файла, определяющего службу и ее сообщения, а также `GreeterService.cs` файл с реализацией службы.
+При создании нового проекта ASP.NET Core 5,0 gRPC из Visual Studio 2019 или командной строки для вас создается gRPC эквивалент "Hello World". Он состоит из `greeter.proto` файла, который определяет службу и ее сообщения, а также `GreeterService.cs` файл с реализацией службы.
 
 ```protobuf
 syntax = "proto3";

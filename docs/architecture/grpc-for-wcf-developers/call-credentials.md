@@ -1,13 +1,13 @@
 ---
 title: Вызов учетных данных — gRPC для разработчиков WCF
 description: Как реализовать и использовать учетные данные вызова gRPC в ASP.NET Core 3,0.
-ms.date: 09/02/2019
-ms.openlocfilehash: 01f21f58ed4235f45509c948c84653cd99d35618
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.date: 12/15/2020
+ms.openlocfilehash: 66394c75929bf068f83d631e022b467386e59ec5
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74711536"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938446"
 ---
 # <a name="call-credentials"></a>Учетные данные вызова
 
@@ -15,19 +15,19 @@ ms.locfileid: "74711536"
 
 ## <a name="ws-federation"></a>WS-Federation
 
-ASP.NET Core поддерживает WS-Federation с помощью пакета NuGet [WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) . WS-Federation — это ближайшая доступная альтернатива к проверке подлинности Windows, которая не поддерживается по протоколу HTTP/2. Проверка подлинности пользователей осуществляется с помощью службы федерации Active Directory (AD FS) (AD FS), который предоставляет маркер, который можно использовать для проверки подлинности с помощью ASP.NET Core.
+ASP.NET Core поддерживает WS-Federation с помощью пакета NuGet [WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) . WS-Federation является ближайшей доступной альтернативой проверки подлинности Windows, которая не поддерживается по протоколу HTTP/2. Проверка подлинности пользователей осуществляется с помощью службы федерации Active Directory (AD FS) (AD FS), который предоставляет маркер, который можно использовать для проверки подлинности с помощью ASP.NET Core.
 
-Дополнительные сведения о том, как приступить к работе с этим методом проверки подлинности, см. [в разделе Проверка подлинности пользователей с помощью WS-Federation в ASP.NET Core](/aspnet/core/security/authentication/ws-federation).
+Дополнительные сведения о том, как приступить к работе с этим методом проверки подлинности, см. [в разделе Проверка подлинности пользователей с WS-Federation в ASP.NET Core](/aspnet/core/security/authentication/ws-federation).
 
 ## <a name="jwt-bearer-tokens"></a>Токены носителя JWT
 
 Стандарт [JSON Web Token](https://jwt.io) (JWT) предоставляет способ кодирования сведений о пользователе и их утверждениях в закодированной строке. Он также предоставляет способ подписи маркера, чтобы потребитель мог проверить целостность маркера с помощью шифрования с открытым ключом. Можно использовать различные службы, например IdentityServer4, для проверки подлинности пользователей и создания маркеров OpenID Connect Connect (OIDC) для использования с gRPC и API HTTP.
 
-ASP.NET Core 3,0 может работать с JWT с помощью пакета носителя JWT. Конфигурация одинакова для приложения gRPC, так же как для приложения ASP.NET Core MVC. Здесь мы рассмотрим токены носителя JWT, так как их проще разрабатывать, чем WS-Federation.
+ASP.NET Core 5,0 может работать с JWT с помощью пакета носителя JWT. Конфигурация одинакова для приложения gRPC, так же как для приложения ASP.NET Core MVC. Здесь мы рассмотрим токены носителя JWT, так как их проще разрабатывать, чем WS-Federation.
 
 ## <a name="add-authentication-and-authorization-to-the-server"></a>Добавление проверки подлинности и авторизации на сервер
 
-Пакет носителя JWT не входит в ASP.NET Core 3,0 по умолчанию. Установите пакет NuGet [Microsoft. AspNetCore. Authentication. JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) в приложении.
+Пакет носителя JWT не входит в ASP.NET Core 5,0 по умолчанию. Установите пакет NuGet [Microsoft. AspNetCore. Authentication. JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) в приложении.
 
 Добавьте службу проверки подлинности в класс Startup и настройте обработчик носителя JWT:
 
@@ -55,7 +55,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Для свойства `IssuerSigningKey` требуется реализация `Microsoft.IdentityModels.Tokens.SecurityKey` с криптографическими данными, необходимыми для проверки подписанных токенов. Безопасно Храните этот маркер на *сервере секретов*, например Azure Key Vault.
+`IssuerSigningKey`Для этого свойства требуется реализация `Microsoft.IdentityModels.Tokens.SecurityKey` с использованием криптографических данных, необходимых для проверки подписанных токенов. Безопасно Храните этот маркер на *сервере секретов*, например Azure Key Vault.
 
 Затем добавьте службу авторизации, которая управляет доступом к системе:
 
@@ -74,7 +74,7 @@ public void ConfigureServices(IServiceCollection services)
 > [!TIP]
 > Проверка подлинности и авторизация — это два отдельных шага. Для определения удостоверения пользователя используется проверка подлинности. С помощью авторизации можно определить, разрешено ли этому пользователю доступ к различным частям системы.
 
-Теперь добавьте по промежуточного слоя проверки подлинности и авторизации в конвейер ASP.NET Core в методе `Configure`:
+Теперь добавьте по промежуточного слоя проверки подлинности и авторизации в ASP.NET Core конвейер в `Configure` методе:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -97,7 +97,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-Наконец, примените атрибут `[Authorize]` к любым службам или методам, которые необходимо защитить, и используйте свойство `User` из базового `HttpContext` для проверки разрешений.
+Наконец, примените `[Authorize]` атрибут к любым службам или методам, которые необходимо защитить, и используйте `User` свойство из базового `HttpContext` для проверки разрешений.
 
 ```csharp
 [Authorize]

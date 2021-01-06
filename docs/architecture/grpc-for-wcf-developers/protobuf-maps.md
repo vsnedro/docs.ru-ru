@@ -1,17 +1,17 @@
 ---
 title: Карты protobuf для словарей — gRPC для разработчиков WCF
 description: Узнайте, как использовать карты protobuf для представления типов словарей в .NET.
-ms.date: 09/09/2019
-ms.openlocfilehash: 2c2ae76d47b2309227d22235b5acbe2afa794158
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+ms.date: 12/15/2020
+ms.openlocfilehash: d38270d4bc320cf1f758080c18843ed1d716b350
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867470"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938550"
 ---
 # <a name="protobuf-maps-for-dictionaries"></a>Карты Protobuf для словарей
 
-Важно иметь возможность представлять произвольные коллекции именованных значений в сообщениях. В .NET это обычно осуществляется с помощью типов словаря. Эквивалентом <xref:System.Collections.Generic.IDictionary%602> типа .NET в буфере протокола (protobuf) является `map<key_type, value_type>` тип. В этом разделе показано, как объявить `map` тип в protobuf и как использовать созданный код.
+Важно иметь возможность представлять произвольные коллекции именованных значений в сообщениях. В .NET это действие обычно обрабатывается с помощью типов словаря. Эквивалентом <xref:System.Collections.Generic.IDictionary%602> типа .NET в буфере протокола (protobuf) является `map<key_type, value_type>` тип. В этом разделе показано, как объявить `map` тип в protobuf и как использовать созданный код.
 
 ```protobuf
 message StockPrices {

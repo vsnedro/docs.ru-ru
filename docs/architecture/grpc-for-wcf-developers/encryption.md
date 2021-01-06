@@ -1,13 +1,13 @@
 ---
 title: Шифрование и безопасность сети — gRPC для разработчиков WCF
 description: Некоторые замечания по сетевой безопасности и шифрованию в gRPC
-ms.date: 09/02/2019
-ms.openlocfilehash: f8a7aeaf2a65e4ff56ac33d728e40f09a436f7a6
-ms.sourcegitcommit: 771c554c84ba38cbd4ac0578324ec4cfc979cf2e
+ms.date: 12/15/2020
+ms.openlocfilehash: 0735158ed69ce425c4f00eed6c42689b888a1885
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77542784"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938628"
 ---
 # <a name="encryption-and-network-security"></a>Шифрование и безопасность сети
 
@@ -15,7 +15,7 @@ ms.locfileid: "77542784"
 
 gRPC оставляет защищенную сеть основным протоколом HTTP/2, который можно защитить с помощью TLS-сертификатов.
 
-Веб-браузеры настаивает на использовании соединений TLS для HTTP/2, но большинство программных клиентов, включая. `HttpClient`сети, может использовать HTTP/2 через незашифрованные соединения. по умолчанию для `HttpClient` требуется шифрование, но его можно переопределить с помощью параметра <xref:System.AppContext>.
+Веб-браузеры настаивает на использовании соединений TLS для HTTP/2, но большинство программных клиентов, включая. NET `HttpClient` может использовать HTTP/2 через незашифрованные соединения. `HttpClient` по умолчанию требует шифрования, но это поведение можно переопределить с помощью <xref:System.AppContext> параметра.
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);

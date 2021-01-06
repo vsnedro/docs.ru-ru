@@ -1,31 +1,31 @@
 ---
-title: Учетные данные канала - gRPC для разработчиков WCF
-description: Как реализовать и использовать учетные данные канала gRPC в ASP.NET Core 3.0.
-ms.date: 09/02/2019
-ms.openlocfilehash: 9ebe0aecb517e4cc2fe280632c4ecb593da9871c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+title: Учетные данные канала — gRPC для разработчиков WCF
+description: Как реализовать и использовать учетные данные канала gRPC в ASP.NET Core 3,0.
+ms.date: 12/15/2020
+ms.openlocfilehash: 3663bbf061156db957241e2a32dbb9c64562ade2
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79148209"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938641"
 ---
 # <a name="channel-credentials"></a>Учетные данные канала
 
-Как следует из названия, учетные данные канала прикрепляются к базовому каналу gRPC. Стандартная форма учетных данных канала использует аутентификацию сертификата клиента. В этом процессе клиент предоставляет сертификат TLS при подключении, а затем сервер проверяет это, прежде чем разрешить любые звонки.
+Как следует из названия, учетные данные канала присоединяются к базовому каналу gRPC. Стандартная форма учетных данных канала использует проверку подлинности на основе сертификата клиента. В этом процессе клиент предоставляет сертификат TLS, когда он создает подключение, а затем сервер проверяет этот сертификат перед тем, как разрешить выполнение любых вызовов.
 
-Вы можете объединить учетные данные канала с учетными данными вызова, чтобы обеспечить полную безопасность для службы gRPC. Учетные данные канала доказывают, что клиентское приложение имеет доступ к службе, а учетные данные вызова предоставляют информацию о человеке, который использует клиентское приложение.
+Учетные данные канала можно объединить с учетными данными вызова для обеспечения полной безопасности службы gRPC. Учетные данные канала подтверждают, что клиентскому приложению разрешен доступ к службе, а учетные данные вызова предоставляют сведения о пользователе, который использует клиентское приложение.
 
-Проверка подлинности сертификата клиента работает для gRPC так же, как она работает для ASP.NET Core. Для получения дополнительной информации смотрите [проверку подлинности сертификата Настройка в ASP.NET Core](/aspnet/core/security/authentication/certauth).
+Проверка подлинности сертификата клиента работает для gRPC так же, как и для ASP.NET Core. Дополнительные сведения см. [в разделе Настройка проверки подлинности сертификата в ASP.NET Core](/aspnet/core/security/authentication/certauth).
 
-Для целей разработки можно использовать сертификат, подписанный самостоятельно, но для производства следует использовать соответствующий сертификат HTTPS, подписанный доверенным органом.
+В целях разработки можно использовать самозаверяющий сертификат, но для рабочей среды следует использовать правильный HTTPS-сертификат, подписанный доверенным центром сертификации.
 
-## <a name="add-certificate-authentication-to-the-server"></a>Добавление проверки подлинности сертификата на сервер
+## <a name="add-certificate-authentication-to-the-server"></a>Добавление проверки подлинности на сертификат на сервер
 
-Настройка аутентификации сертификата как на уровне хоста (например, на сервере Kestrel), так и в ASP.NET конвейера Core.
+Настройте проверку подлинности на сертификате на уровне узла (например, на сервере Kestrel) и в конвейере ASP.NET Core.
 
-### <a name="configure-certificate-validation-on-kestrel"></a>Настройка сертификата на Kestrel
+### <a name="configure-certificate-validation-on-kestrel"></a>Настройка проверки сертификата в Kestrel
 
-Вы можете настроить Kestrel (ASP.NET core HTTP сервер), чтобы требовать сертификат клиента, и по желанию провести некоторую проверку поставляемого сертификата, прежде чем принимать входящие соединения. Вы делаете это `CreateWebHostBuilder` в `Program` методе класса, `Startup`а не в .
+Можно настроить Kestrel (HTTP-сервер ASP.NET Core), чтобы требовать сертификат клиента, и при необходимости выполнить некоторую проверку предоставляемого сертификата перед приемом входящих подключений. Эта конфигурация указывается в `CreateWebHostBuilder` методе `Program` класса, а не в `Startup` .
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -48,13 +48,13 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 ```
 
-Настройка `ClientCertificateMode.RequireCertificate` заставляет Kestrel немедленно отклонить любой запрос на подключение, который не предоставляет сертификат клиента, но эта настройка сама по себе не будет проверять предоставленный сертификат. До `ClientCertificateValidation` подключения обратного вызова, чтобы Kestrel проверил сертификат клиента в момент подключения, до того, как будет включен конвейер ASP.NET Core. (В этом случае обратный вызов гарантирует, что он был выдан тем же *органом сертификата,* что и сертификат сервера.)
+Этот `ClientCertificateMode.RequireCertificate` параметр приводит к тому, что Kestrel немедленно отклоняет любой запрос на подключение, который не предоставляет сертификат клиента, но этот параметр сам по себе не проверяет предоставленный сертификат. Добавьте `ClientCertificateValidation` обратный вызов, чтобы включить Kestrel для проверки сертификата клиента в момент, когда соединение установлено, до того, как будет задействован конвейер ASP.NET Core. (В этом случае обратный вызов гарантирует, что он был выдан тем же *центром сертификации* , что и сертификат сервера.)
 
-### <a name="add-aspnet-core-certificate-authentication"></a>Добавьте аутентификацию сертификата ASP.NET core
+### <a name="add-aspnet-core-certificate-authentication"></a>Добавление ASP.NET Core проверки подлинности сертификата
 
-Пакет [Microsoft.AspNetCore.Authentication.Certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate) NuGet обеспечивает аутентификацию сертификата.
+Пакет NuGet [Microsoft. AspNetCore. Authentication. Certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate) обеспечивает проверку подлинности сертификата.
 
-Добавьте службу аутентификации сертификатов в `ConfigureServices` метод и добавьте `Configure` аутентификацию и авторизацию в ASP.NET ядро конвейера в методе.
+Добавьте в метод службу проверки подлинности сертификата `ConfigureServices` и добавьте проверку подлинности и авторизацию в ASP.NET Core конвейер в `Configure` методе.
 
 ```csharp
 public class Startup
@@ -93,9 +93,9 @@ public class Startup
 }
 ```
 
-## <a name="provide-channel-credentials-in-the-client-application"></a>Предоставление учетных данных канала в клиентском приложении
+## <a name="provide-channel-credentials-in-the-client-application"></a>Указание учетных данных канала в клиентском приложении
 
-С `Grpc.Net.Client` помощью пакета вы настраиваете сертификаты <xref:System.Net.Http.HttpClient> на `GrpcChannel` экземпляр, который предоставляется используемому для соединения.
+С помощью `Grpc.Net.Client` пакета можно настроить сертификаты на <xref:System.Net.Http.HttpClient> экземпляре, который предоставляется для `GrpcChannel` соединения.
 
 ```csharp
 class Program
@@ -122,11 +122,11 @@ class Program
 }
 ```
 
-## <a name="combine-channelcredentials-and-callcredentials"></a>Объедините ChannelCredentials и CallCredentials
+## <a name="combine-channelcredentials-and-callcredentials"></a>Объединение Чаннелкредентиалс и Каллкредентиалс
 
-Вы можете настроить сервер для использования как сертификата, так и проверки подлинности маркеров. Сделайте это, применяя изменения сертификата на серверЕ Kestrel и используя промежуточное программное обеспечение jWT в ASP.NET Core.
+Вы можете настроить сервер для использования проверки подлинности сертификата и маркера. Для этого примените изменения сертификата к серверу Kestrel и используйте по промежуточного слоя JWT Bearer в ASP.NET Core.
 
-Чтобы предоставить как `ChannelCredentials` клиента, так и `CallCredentials` клиента, используйте `ChannelCredentials.Create` метод для применения учетных данных вызова. Вам все еще нужно применить проверку подлинности сертификата с помощью экземпляра. <xref:System.Net.Http.HttpClient> Если вы передаете какие-либо аргументы конструктору, `SslCredentials` внутренний код клиента бросает исключение. Параметр `SslCredentials` включен только `Grpc.Net.Client` в `Create` метод пакета для поддержания `Grpc.Core` совместимости с пакетом.
+Чтобы предоставить `ChannelCredentials` и `CallCredentials` на клиенте, используйте `ChannelCredentials.Create` метод для применения учетных данных вызова. Вам по-прежнему необходимо применить проверку подлинности с помощью сертификата, используя <xref:System.Net.Http.HttpClient> экземпляр. При передаче аргументов в `SslCredentials` конструктор внутренний клиентский код создает исключение. `SslCredentials`Параметр включается только в `Grpc.Net.Client` `Create` метод пакета для обеспечения совместимости с `Grpc.Core` пакетом.
 
 ```csharp
 var handler = new HttpClientHandler();
@@ -151,10 +151,10 @@ var grpc = new Portfolios.PortfoliosClient(channel);
 ```
 
 > [!TIP]
-> Вы можете `ChannelCredentials.Create` использовать метод для клиента без проверки подлинности сертификата. Это полезный способ передачи учетных данных маркеров с каждым вызовом, сделанным на канале.
+> Для клиента можно использовать `ChannelCredentials.Create` метод без проверки подлинности сертификата. Это удобный способ передачи учетных данных маркера при каждом вызове, сделанном в канале.
 
-Версия приложения [FullStockTicker образца gRPC с добавленной сертификатом подлинности](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker) находится на GitHub.
+Версия [примера приложения Фуллстокктиккер gRPC с проверкой подлинности с помощью сертификата](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker) находится на сайте GitHub.
 
 >[!div class="step-by-step"]
->[Предыдущий](call-credentials.md)
->[Следующий](encryption.md)
+>[Назад](call-credentials.md)
+>[Вперед](encryption.md)

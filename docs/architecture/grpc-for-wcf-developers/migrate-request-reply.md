@@ -1,13 +1,13 @@
 ---
 title: Перенос службы WCF "запрос — ответ" в gRPC — gRPC для разработчиков WCF
 description: Узнайте, как перенести простую службу "запрос — ответ" из WCF в gRPC.
-ms.date: 09/02/2019
-ms.openlocfilehash: 29a7bc77bc3a4becd767fc7a50adff5b746f54bc
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.date: 12/15/2020
+ms.openlocfilehash: 38c6e33e7588dd7c1b263d813d06c088ab484948
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512701"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938576"
 ---
 # <a name="migrate-a-wcf-request-reply-service-to-a-grpc-unary-rpc"></a>Перенос службы WCF "запрос — ответ" в gRPC унарный RPC
 
@@ -196,7 +196,7 @@ namespace TraderSys.Portfolios.Services
 
 Тип возвращаемого значения метода — `Task<T>` , где `T` — это тип ответного сообщения. Все методы службы gRPC являются асинхронными.
 
-## <a name="migrate-the-portfoliodata-library-to-net-core"></a>Миграция библиотеки Портфолиодата в .NET Core
+## <a name="migrate-the-portfoliodata-library-to-net"></a>Перенос библиотеки Портфолиодата в .NET
 
 На этом этапе проекту требуется репозиторий портфеля и модели, содержащиеся в `TraderSys.PortfolioData` библиотеке классов в решении WCF. Самый простой способ сделать это — создать новую библиотеку классов с помощью диалогового окна **Новый проект** Visual Studio с шаблоном библиотеки классов (.NET Standard) или из командной строки с помощью .NET Core CLI запуска этих команд из каталога, содержащего `TraderSys.sln` файл:
 
@@ -395,7 +395,7 @@ public override async Task<GetAllResponse> GetAll(GetAllRequest request, ServerC
 Создайте .NET Standard библиотеку классов в том же решении, в котором будет содержаться клиент. Это, в первую очередь, пример создания клиентского кода, но можно упаковать такую библиотеку с помощью NuGet и распространить ее во внутреннем репозитории для использования другими командами .NET. Добавьте новую библиотеку классов .NET Standard `TraderSys.Portfolios.Client` с именем в решение и удалите `Class1.cs` файл.
 
 > [!CAUTION]
-> Для пакета NuGet [.NET. Client GRPC](https://www.nuget.org/packages/Grpc.Net.Client) требуется .net Core 3,0 (или другая .NET Standard 2,1-совместимая среда выполнения). Более ранние версии .NET Framework и .NET Core поддерживаются пакетом NuGet [GRPC. Core](https://www.nuget.org/packages/Grpc.Core) .
+> Для пакета NuGet [.NET. Client GRPC](https://www.nuget.org/packages/Grpc.Net.Client) требуется .net Core 3,0 или более поздняя версия (или другая .NET Standard 2,1-совместимая среда выполнения). Более ранние версии .NET Framework и .NET Core поддерживаются пакетом NuGet [GRPC. Core](https://www.nuget.org/packages/Grpc.Core) .
 
 В Visual Studio 2019 можно добавить ссылки на службы gRPC так же, как вы добавите ссылки на службы в проекты WCF в более ранних версиях Visual Studio. Ссылки на службы и подключенные службы управляются в одном пользовательском интерфейсе. Чтобы получить доступ к пользовательскому интерфейсу, щелкните правой кнопкой мыши узел **зависимости** в `TraderSys.Portfolios.Client` проекте в Обозреватель решений и выберите команду **Добавить подключенную службу**. В появившемся окне инструментов выберите раздел ссылки на **службу** , а затем щелкните **Добавить новую ссылку на службу gRPC**:
 
