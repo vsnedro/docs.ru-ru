@@ -3,12 +3,12 @@ title: Перенос библиотек в .NET Core
 description: Узнайте, как перенести проекты библиотеки из .NET Framework в .NET Core.
 author: cartermp
 ms.date: 12/07/2018
-ms.openlocfilehash: dcacf4d59964e0ef2009b4e9694d7f562e3a1547
-ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
+ms.openlocfilehash: 25c53cdc71f4269b058953ef1903dc72d222f65f
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92223572"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633914"
 ---
 # <a name="port-net-framework-libraries-to-net-core"></a>Перенос библиотек .NET Framework в .NET Core
 
@@ -42,8 +42,8 @@ ms.locfileid: "92223572"
 
 Для каждого проекта в Visual Studio, который нужно перенести, выполните указанные ниже действия:
 
-1. Щелкните проект правой кнопкой мыши и выберите пункт **Свойства** .
-1. В раскрывающемся списке **Требуемая версия .NET Framework** выберите значение **.NET Framework 4.7.2** .
+1. Щелкните проект правой кнопкой мыши и выберите пункт **Свойства**.
+1. В раскрывающемся списке **Требуемая версия .NET Framework** выберите значение **.NET Framework 4.7.2**.
 1. Перекомпилируйте проект.
 
 Так как ваши проекты теперь предназначены для .NET Framework 4.7.2, используйте эту версию .NET Framework в качестве основы для переноса кода.
@@ -107,8 +107,8 @@ ms.locfileid: "92223572"
 
 Чтобы гарантировать правильную работу кода после его переноса в .NET Core, лучше всего тестировать его в процессе переноса. Для этого потребуется использовать платформу тестирования, которая выполняет сборку и запуск тестов для .NET Core. В настоящее время имеются три варианта:
 
-- [xUnit](https://xunit.github.io/)
-  - [Начало работы](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+- [xUnit](https://xunit.net/)
+  - [Начало работы](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Средство для преобразования проекта MSTest в xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
   - [Начало работы](https://github.com/nunit/docs/wiki/Installation)
@@ -121,7 +121,7 @@ ms.locfileid: "92223572"
 
 1. Перенесите тестовый проект для тестирования того уровня библиотеки, который вы переносите на данном этапе.
 1. Скопируйте основные объекты библиотеки в новый проект .NET Core и выберите версию .NET Standard, которая должна поддерживаться.
-1. Внесите изменения, необходимые для компиляции кода. Как правило, для этого требуется добавить зависимости пакетов NuGet в файл *CSPROJ* .
+1. Внесите изменения, необходимые для компиляции кода. Как правило, для этого требуется добавить зависимости пакетов NuGet в файл *CSPROJ*.
 1. Проведите тесты и внесите необходимые исправления.
 1. Выберите следующий уровень кода для переноса и повторите предыдущие шаги.
 

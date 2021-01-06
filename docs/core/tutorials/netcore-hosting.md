@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: 79336396de3058e40cf7328e6d92e7e9e54296e9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 358cbff1ded3bd4ee9a3f78965eac1e1b1883ede
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242920"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633855"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -30,7 +30,7 @@ ms.locfileid: "96242920"
 Есть два разных API, которые могут использоваться для размещения .NET Core. В этой статье (и связанных с ней [примерах](https://github.com/dotnet/samples/tree/master/core/hosting)) рассматриваются два возможных варианта.
 
 * Предпочтительный способ для размещения среды выполнения .NET Core в .NET Core 3.0 и более поздних версиях — это библиотеки API `nethost` и `hostfxr`. Эти точки входа решают все сложности по поиску и настройке среды выполнения для инициализации, а также поддерживают как запуск управляемого приложения, так и вызов статического управляемого метода.
-* Предпочтительный способ размещения среды выполнения .NET Core в версиях до .NET Core 3.0 — API [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/hosts/inc/coreclrhost.h). Этот API предоставляет функции для облегчения запуска и остановки среды выполнения и вызова управляемого кода (либо путем запуска управляемого EXE-файла, либо путем вызова статических управляемых методов).
+* Предпочтительный способ размещения среды выполнения .NET Core в версиях до .NET Core 3.0 — API [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/hosts/inc/coreclrhost.h). Этот API предоставляет функции для облегчения запуска и остановки среды выполнения и вызова управляемого кода (либо путем запуска управляемого EXE-файла, либо путем вызова статических управляемых методов).
 
 ## <a name="sample-hosts"></a>Примеры основного приложения
 
@@ -84,7 +84,7 @@ public delegate int ComponentEntryPoint(IntPtr args, int sizeBytes);
 
 Следующая процедура описывает применение API `coreclrhost.h` для запуска среды выполнения .NET Core в нативном приложении и вызова управляемого статического метода. Фрагменты кода в этом документе могут использовать некоторые API-интерфейсы Windows, но [полный пример основного приложения](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) содержит пути кода для Windows и Linux.
 
-[Узел Unix CoreRun](https://github.com/dotnet/runtime/tree/master/src/coreclr/src/hosts/unixcorerun) демонстрирует более сложный и приближенный к реальности пример размещения с использованием `coreclrhost.h`.
+[Узел Unix CoreRun](https://github.com/dotnet/runtime/tree/master/src/coreclr/hosts/unixcorerun) демонстрирует более сложный и приближенный к реальности пример размещения с использованием `coreclrhost.h`.
 
 ### <a name="step-1---find-and-load-coreclr"></a>Шаг 1. Поиск и загрузка CoreCLR
 

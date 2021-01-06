@@ -2,12 +2,12 @@
 title: Устаревшие компоненты в .NET 5 и более поздних версий
 description: Сведения об API-интерфейсах, которые помечены как устаревшие в .NET 5.0 и более поздних версий и приводят к созданию предупреждений компилятора SYSLIB.
 ms.date: 10/20/2020
-ms.openlocfilehash: aa5716ba8fe46c7c4ae2faafe7cc963551eecef7
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 336958c93e3db8f66cfbec89476a666e5e103b70
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440768"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593309"
 ---
 # <a name="obsolete-features-in-net-5"></a>Устаревшие компоненты в .NET 5 и более поздних версий
 
@@ -25,18 +25,18 @@ ms.locfileid: "94440768"
 
 | ИД диагностики | Описание |
 | - | - |
-| [SYSLIB0001](syslib0001.md) | Кодировка UTF-7 небезопасна и не должна использоваться. Вместо нее рекомендуется использовать UTF-8. |
-| [SYSLIB0002](syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> не учитывается средой выполнения и не должен использоваться. |
-| [SYSLIB0003](syslib0003.md) | Управление доступом для кода (CAS) не поддерживается или не учитывается средой выполнения. |
-| [SYSLIB0004](syslib0004.md) | Функция области ограниченного выполнения (CER) не поддерживается. |
-| [SYSLIB0005](syslib0005.md) | Глобальный кэш сборок не поддерживается. |
-| [SYSLIB0006](syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> не поддерживается и вызывает <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0007](syslib0007.md) | Реализации этого алгоритма шифрования по умолчанию не поддерживается. |
-| [SYSLIB0008](syslib0008.md) | API <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> не поддерживается и вызывает <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0009](syslib0009.md) | Методы <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> и <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> не поддерживаются и вызывают <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0010](syslib0010.md) | Некоторые API удаленного взаимодействия не поддерживаются и вызывают <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0011](syslib0011.md) | Сериализация <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> устарела и не должна использоваться. |
-| [SYSLIB0012](syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> и <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> включены только для обеспечения совместимости с .NET Framework. Взамен рекомендуется использовать <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>. |
+| [SYSLIB0001](syslib-warnings/syslib0001.md) | Кодировка UTF-7 небезопасна и не должна использоваться. Вместо нее рекомендуется использовать UTF-8. |
+| [SYSLIB0002](syslib-warnings/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> не учитывается средой выполнения и не должен использоваться. |
+| [SYSLIB0003](syslib-warnings/syslib0003.md) | Управление доступом для кода (CAS) не поддерживается или не учитывается средой выполнения. |
+| [SYSLIB0004](syslib-warnings/syslib0004.md) | Функция области ограниченного выполнения (CER) не поддерживается. |
+| [SYSLIB0005](syslib-warnings/syslib0005.md) | Глобальный кэш сборок не поддерживается. |
+| [SYSLIB0006](syslib-warnings/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> не поддерживается и вызывает <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0007](syslib-warnings/syslib0007.md) | Реализации этого алгоритма шифрования по умолчанию не поддерживается. |
+| [SYSLIB0008](syslib-warnings/syslib0008.md) | API <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> не поддерживается и вызывает <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0009](syslib-warnings/syslib0009.md) | Методы <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> и <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> не поддерживаются и вызывают <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0010](syslib-warnings/syslib0010.md) | Некоторые API удаленного взаимодействия не поддерживаются и вызывают <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0011](syslib-warnings/syslib0011.md) | Сериализация <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> устарела и не должна использоваться. |
+| [SYSLIB0012](syslib-warnings/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> и <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> включены только для обеспечения совместимости с .NET Framework. Взамен рекомендуется использовать <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType>. |
 
 ## <a name="suppress-warnings"></a>Отключение предупреждений
 

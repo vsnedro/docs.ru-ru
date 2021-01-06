@@ -2,12 +2,12 @@
 title: Расширения типов
 description: 'Узнайте, как расширения типа F # позволяют добавлять новые члены к ранее определенному типу объекта.'
 ms.date: 02/05/2020
-ms.openlocfilehash: 8fdb2d5e527643b23d24a6118e8cef6b11f1a546
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: c9adddb3133a4af57a12be0b09c22954a8bff6a7
+ms.sourcegitcommit: c3093e9d106d8ca87cc86eef1f2ae4ecfb392118
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559132"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97737272"
 ---
 # <a name="type-extensions"></a>Расширения типов
 
@@ -34,7 +34,7 @@ open System.Runtime.CompilerServices
 [<Extension>]
 type Extensions() =
     [<Extension>]
-    static member self-identifier.extension-name (ty: typename, [args]) =
+    static member extension-name (ty: typename, [args]) =
         body
     ...
 ```
@@ -180,4 +180,4 @@ do ()
 ## <a name="see-also"></a>См. также
 
 - [Справочник по языку F#](index.md)
-- [Участники](./members/index.md)
+- [Члены](./members/index.md)

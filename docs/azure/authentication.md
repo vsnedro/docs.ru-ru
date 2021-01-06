@@ -2,13 +2,13 @@
 title: Общие сведения о проверке подлинности в библиотеках Azure для .NET
 description: Описание различных способов проверки подлинности с помощью пакета Azure SDK для .NET.
 ms.date: 06/19/2020
-ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: dbae72eb9e80801d7338b210f9664f1c4e318ae0
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.custom: devx-track-dotnet
+ms.openlocfilehash: 0a508606b40905d5b09b8515910873359efbbf2e
+ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539181"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97700845"
 ---
 # <a name="authenticate-with-the-azure-sdk-for-net"></a>Проверка подлинности с помощью пакета Azure SDK для .NET
 

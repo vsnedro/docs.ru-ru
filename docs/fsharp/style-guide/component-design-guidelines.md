@@ -2,12 +2,12 @@
 title: Рекомендации по проектированию компонентов F#
 description: 'Ознакомьтесь с рекомендациями по написанию компонентов F #, предназначенных для использования другими вызывающими объектами.'
 ms.date: 05/14/2018
-ms.openlocfilehash: 590bda0660d54ea73c590d31e694f3d499e0fd9f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 24be2a422c97b9334f749e3d9dfcccd0feec219b
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209140"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856111"
 ---
 # <a name="f-component-design-guidelines"></a>Рекомендации по проектированию компонентов F#
 
@@ -70,11 +70,11 @@ type Point =
 
 В следующей таблице приведены соглашения об именовании и капитализации .NET. Существуют небольшие дополнения, которые также включают конструкции F #.
 
-| Конструкция | Случай | Часть | Примеры | Примечания |
+| Конструкция | Случай | Отделение | Примеры | Примечания |
 |-----------|------|------|----------|-------|
 | Конкретные типы | PascalCase | Существительное или прилагательное | List, Double, Complex | Конкретные типы — это структуры, классы, перечисления, делегаты, записи и объединения. Хотя в OCaml имена типов традиционно строчные, F # использует схему именования .NET для типов.
-| библиотеки DLL           | PascalCase |                 | Fabrikam. Core. dll |  |
-| Теги объединения     | PascalCase | Имя существительное | Некоторые, добавление, успешное выполнение | Не используйте префикс в общедоступных API. При необходимости используйте префикс при внутренних функциях, например`type Teams = TAlpha | TBeta | TDelta.` |
+| библиотеки DLL           | PascalCase |                 | Fabrikam.Core.dll |  |
+| Теги объединения     | PascalCase | Имя существительное | Некоторые, добавление, успешное выполнение | Не используйте префикс в общедоступных API. При необходимости используйте префикс при внутренних функциях, например `type Teams = TAlpha | TBeta | TDelta.` |
 | Событие          | PascalCase | Команда | ValueChanged/Валуечангинг |  |
 | Исключения     | PascalCase |      | WebException | Имя должно заканчиваться на "Exception". |
 | Поле          | PascalCase | Имя существительное | куррентнаме  | |
@@ -84,7 +84,7 @@ type Point =
 | Параметры | camelCase | Имя существительное |  typeName, Transform, Range | |
 | Разрешить значения (внутренние) | camelCase или PascalCase | Существительное или глагол |  getValue, myTable |
 | Разрешить значения (внешние) | camelCase или PascalCase | Существительное или глагол  | List. Map, dates. Today | значения, связанные с let, часто являются общедоступными при использовании традиционных шаблонов функционального проектирования. Однако обычно используется PascalCase, если идентификатор можно использовать из других языков .NET. |
-| Свойство.  | PascalCase  | Существительное или прилагательное  | Исендоффиле, BackColor  | Как правило, логические свойства используют, и могут быть голосами подтверждающими, как в Исендоффиле, а не Иснотендоффиле.
+| Свойство  | PascalCase  | Существительное или прилагательное  | Исендоффиле, BackColor  | Как правило, логические свойства используют, и могут быть голосами подтверждающими, как в Исендоффиле, а не Иснотендоффиле.
 
 #### <a name="avoid-abbreviations"></a>Избегайте сокращений
 
@@ -125,7 +125,7 @@ module CommonOperations =
     ...
 ```
 
-или диспетчер конфигурации служб
+или
 
 ```fsharp
 module Fabrikam.BasicOperationsAndTypes
@@ -191,8 +191,8 @@ type Counter() =
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 В качестве предпочтения к:
@@ -222,7 +222,7 @@ module CollectionType =
 
 #### <a name="use-a-module-to-group-functions-for-common-canonical-functions-especially-in-math-and-dsl-libraries"></a>Используйте модуль для группировки функций для распространенных, канонических функций, особенно в математических и ДОМЕНных библиотеках.
 
-Например, `Microsoft.FSharp.Core.Operators` — это автоматически открываемая коллекция функций верхнего уровня (например `abs` , и `sin` ), предоставляемых FSharp. Core. dll.
+Например, `Microsoft.FSharp.Core.Operators` — это автоматически открываемая коллекция функций верхнего уровня (например `abs` , и `sin` ), предоставляемых FSharp.Core.dll.
 
 Аналогичным образом библиотека статистики может включать модуль с функциями `erf` и `erfc` , где этот модуль предназначен для явного или автоматического открытия.
 
@@ -653,7 +653,7 @@ member this.ParamOverload(x: int) = x
 member this.ParamOverload(x: int, y: int) = x + y
 ```
 
-#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>Использование типов интерфейса коллекции .NET IEnumerable \< T \> и IDictionary \< Key, значения \> для параметров и возвращаемых значений
+#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>Использование типов интерфейсов коллекций .NET IEnumerable \<T\> и IDictionary \<Key,Value\> для параметров и возвращаемых значений
 
 Избегайте использования конкретных типов коллекций, таких как массивы .NET `T[]` , типы F # `list<T>` , `Map<Key,Value>` и `Set<T>` , а также конкретных типов коллекций .NET, таких как `Dictionary<Key,Value>` . Рекомендации по проектированию библиотеки .NET содержат советы и рекомендации относительно использования различных типов коллекций, таких как `IEnumerable<T>` . Использование массивов ( `T[]` ) является приемлемым в некоторых обстоятельствах, по причинам производительности. Обратите внимание, особенно, что `seq<T>` является просто псевдонимом F # для `IEnumerable<T>` , и, таким образом, seq часто является подходящим типом для обычный .NET API.
 

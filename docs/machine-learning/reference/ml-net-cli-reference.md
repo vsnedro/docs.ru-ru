@@ -3,12 +3,12 @@ title: Справочник по командам интерфейса кома�
 description: Обзор, примеры и справочник по командам auto-train в программе командной строки ML.NET.
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 4c6cb1346c16f6162077d3414140d693de9e0d8c
-ms.sourcegitcommit: 182c7b6c079ebcc0e1898dfd9e921b9ef472ea2c
+ms.openlocfilehash: 6f07cd8b4237f8931bbc0ec97bc0bbe18c488f16
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85946945"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856072"
 ---
 # <a name="the-mlnet-cli-command-reference"></a>Справочник по командам интерфейса командной строки ML.NET
 
@@ -99,7 +99,7 @@ mlnet classification
 При запуске `mlnet regression` выполняется обучение модели регрессии. Выберите эту команду, если требуется, чтобы модель машинного обучения Azure предсказывала числовое значение (например, прогноз цены).
 
 ```console
-mlnet classification
+mlnet regression
 
 --dataset <path> (REQUIRED)
 
@@ -134,7 +134,7 @@ mlnet classification
 При запуске `mlnet recommendation` выполняется обучение модели рекомендации.  Выберите эту команду, если требуется, чтобы модель ML рекомендовала пользователям элементы на основе оценок (например, рекомендации продукта).
 
 ```console
-mlnet classification
+mlnet recommendation
 
 --dataset <path> (REQUIRED)
 

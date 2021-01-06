@@ -1,19 +1,19 @@
 ---
 title: Перенос решения WCF в gRPC-gRPC для разработчиков WCF
 description: Как перенести различные типы служб WCF в эквивалент в gRPC.
-ms.date: 09/02/2019
-ms.openlocfilehash: 12e724ab46a33547d352da7a604a5a994e617bc2
-ms.sourcegitcommit: 44a7cd8687f227fc6db3211ccf4783dc20235e51
+ms.date: 12/15/2020
+ms.openlocfilehash: 3bd35cb6119368ff3db3be9ab5fabf89f2652b29
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77628518"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97937965"
 ---
 # <a name="migrate-a-wcf-solution-to-grpc"></a>Перенос решения WCF в gRPC
 
-В этой главе описывается работа с проектами ASP.NET Core 3,0 gRPC и демонстрируется перенос различных типов служб Windows Communication Foundation (WCF) в эквивалент gRPC.
+В этой главе описывается работа с проектами ASP.NET Core 5,0 gRPC и демонстрируется перенос различных типов служб Windows Communication Foundation (WCF) в эквивалент gRPC.
 
-- Создайте проект ASP.NET Core 3,0 gRPC.
+- Создайте проект ASP.NET Core 5,0 gRPC.
 - Простые операции запроса-ответа для gRPC унарного RPC.
 - Односторонние операции для gRPC потоковой передачи RPC клиента.
 - Службы с полным дуплексом для gRPC двунаправленной потоковой передачи RPC.

@@ -3,18 +3,18 @@ title: Измерение производительности с помощью
 description: В этом руководстве вы узнаете, как измерять производительность с помощью EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: 75f6f1469c87eb1fe8a3064a815ec72943771f88
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 2ed7f234b685dab91ab275105d26b474e3bd1a87
+ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437447"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97700747"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>Учебник. Измерение производительности с помощью EventCounters в .NET Core
 
 **Эта статья относится к:** ✔️ пакету SDK для .NET Core 3.0 и более поздних версий
 
-В этом руководстве вы узнаете, как можно использовать <xref:System.Diagnostics.Tracing.EventCounter> для измерения производительности с высокой частотой событий. Вы можете использовать [доступные счетчики](event-counters.md#available-counters), опубликованные в разных официальных пакетах .NET Core или сторонними поставщиками, либо создать собственные метрики для мониторинга.
+В этом руководстве вы узнаете, как можно использовать <xref:System.Diagnostics.Tracing.EventCounter> для измерения производительности с высокой частотой событий. Вы можете использовать [доступные счетчики](available-counters.md), опубликованные в разных официальных пакетах .NET Core или сторонними поставщиками, либо создать собственные метрики для мониторинга.
 
 Изучив данный учебник, вы научитесь:
 
