@@ -1,13 +1,13 @@
 ---
 title: DOCKER-gRPC для разработчиков WCF
 description: Создание образов DOCKER для ASP.NET Core приложений gRPC
-ms.date: 12/15/2020
-ms.openlocfilehash: f662dbd67f00b828f3e1dfa47359a450dd1c5900
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.date: 01/06/2021
+ms.openlocfilehash: f59518a28b0a1dee75c792ba03bd4af826638502
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938420"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970093"
 ---
 # <a name="create-docker-images"></a>Создание образов DOCKER
 
@@ -15,7 +15,7 @@ ms.locfileid: "97938420"
 
 ## <a name="microsoft-base-images-for-aspnet-core-applications"></a>Базовые образы Майкрософт для приложений ASP.NET Core
 
-Корпорация Майкрософт предоставляет ряд базовых образов для создания и запуска приложений .NET Core. Чтобы создать образ ASP.NET Core 3,0, используйте два базовых образа:
+Корпорация Майкрософт предоставляет ряд базовых образов для создания и запуска приложений .NET. Чтобы создать образ ASP.NET Core 5,0, используйте два базовых образа:
 
 - Образ пакета SDK для сборки и публикации приложения.
 - Образ среды выполнения для развертывания.
@@ -29,10 +29,9 @@ ms.locfileid: "97938420"
 
 | Теги изображений | Linux | Примечания |
 | --------- | ----- | ----- |
-| 5,0-бустер, 5,0 | Debian 10 | Изображение по умолчанию, если не указан вариант ОС. |
-| 5,0-Alpine | Alpine 3,9 | Базовые образы Alpine намного меньше, чем Debian или Ubuntu. |
-| 5,0-Disco | Ubuntu 19.04 | |
-| 5,0-Бионик | Ubuntu 18.04 | |
+| 5,0-бустер-тонкий, 5,0 | Debian 10 | Изображение по умолчанию, если не указан вариант ОС. |
+| 5,0-Alpine | Alpine 3,12 | Базовые образы Alpine намного меньше, чем Debian или Ubuntu. |
+| 5,0 — фокус| Ubuntu 20.04 | |
 
 Базовый образ Alpine составляет около 100 МБ по сравнению с 200 МБ для образов Debian и Ubuntu. Некоторые программные пакеты или библиотеки могут быть недоступны в управлении пакетами Alpine. Если вы не знаете, какой образ следует использовать, то, вероятно, вам нужно выбрать Debian по умолчанию.
 
@@ -116,7 +115,7 @@ obj/
 Для `StockKube.sln` решения, содержащего два разных приложения `StockData` и `StockWeb` , проще всего разместить Dockerfile для каждого из них в базовом каталоге. В этом случае для создания образа используйте следующую `docker build` команду из того же каталога, в котором `.sln` находится файл.
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 Флаг с непонятным именем `--tag` (который можно сократить до `-t` ) задает полное имя изображения, включая фактический тег, если он указан. В `.` конце указывается контекст, в котором будет выполняться сборка; текущий рабочий каталог для `COPY` команд в Dockerfile.
@@ -124,7 +123,7 @@ docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
 Если в одном решении имеется несколько приложений, Dockerfile можно разместить для каждого приложения в отдельной папке рядом с `.csproj` файлом. Необходимо по-прежнему выполнить `docker build` команду из базового каталога, чтобы убедиться, что решение и все проекты скопированы в образ. Можно указать Dockerfile под текущим каталогом с помощью `--file` `-f` флага (или).
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 ## <a name="run-the-image-in-a-container-on-your-machine"></a>Запуск образа в контейнере на компьютере

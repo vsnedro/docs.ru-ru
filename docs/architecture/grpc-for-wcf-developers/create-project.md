@@ -1,13 +1,13 @@
 ---
 title: Создание нового ASP.NET Core проекта gRPC — gRPC для разработчиков WCF
 description: Узнайте, как создать проект gRPC с помощью Visual Studio или командной строки.
-ms.date: 12/15/2020
-ms.openlocfilehash: 960725a9507797f43b2c15283e384b0ad827c2b1
-ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
+ms.date: 01/06/2021
+ms.openlocfilehash: c9d66a773f0633c2ae93c42ce3ce53084032cd17
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97938664"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970262"
 ---
 # <a name="create-a-new-aspnet-core-grpc-project"></a>Создание проекта ASP.NET Core gRPC
 
@@ -16,7 +16,7 @@ ms.locfileid: "97938664"
 ## <a name="create-the-project-by-using-visual-studio"></a>Создание проекта с помощью Visual Studio
 
 > [!IMPORTANT]
-> Для разработки любого приложения ASP.NET Core 5,0 требуется Visual Studio 2019 версии 16,3 или более поздней, с установленной рабочей нагрузкой **ASP.NET и Web Development** .
+> Для разработки любого приложения ASP.NET Core 5,0 требуется Visual Studio 2019 версии 16,8 или более поздней, с установленной рабочей нагрузкой **ASP.NET и Web Development** .
 
 Создайте пустое решение с именем **традерсис** из шаблона *пустого решения* . Добавьте папку решения с именем `src` . Затем щелкните правой кнопкой мыши папку и выберите команду **Добавить**  >  **Новый проект**. Введите `grpc` в поле поиска шаблона, и вы увидите шаблон проекта с именем `gRPC Service` .
 
