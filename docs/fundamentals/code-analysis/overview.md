@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: 2f59b97de6f92e5a9bf927e1318286e400017dad
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 80815b5913ad72756de503209b52e8848dd708bf
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009850"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025085"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Обзор анализа исходного кода .NET
 
@@ -104,13 +104,16 @@ ms.locfileid: "97009850"
 Правила *анализа в стиле кода* ("идекскскскс") позволяют определять и поддерживать единообразный стиль кода в базе кода. Параметры включения по умолчанию:
 
 - Сборка из командной строки. по умолчанию для всех проектов .NET в сборках из командной строки отключен анализ в стиле кода.
-- Visual Studio: анализ в стиле кода включен по умолчанию для всех проектов .NET в Visual Studio в виде [быстрых действий по оптимизации кода](/visualstudio/ide/code-generation-in-visual-studio).
 
-Начиная с .NET 5,0, можно включить анализ в стиле кода для сборки как в командной строке, так и в Visual Studio. Нарушения стиля кода отображаются как предупреждения или ошибки с префиксом "IDE". Это позволяет применять единообразные стили кода во время сборки.
+  Начиная с .NET 5,0, можно [Включить анализ в стиле кода для сборки](#enable-on-build)как в командной строке, так и в Visual Studio. Нарушения стиля кода отображаются как предупреждения или ошибки с префиксом "IDE". Это позволяет применять единообразные стили кода во время сборки.
+
+- Visual Studio: анализ в стиле кода включен по умолчанию для всех проектов .NET в Visual Studio в виде [быстрых действий по оптимизации кода](/visualstudio/ide/code-generation-in-visual-studio).
 
 Полный список правил анализа в стиле кода см. в разделе [правила стиля кода](style-rules/index.md).
 
 ### <a name="enable-on-build"></a>Включить при сборке
+
+С помощью пакета SDK для .NET 5,0 и более поздних версий можно включить анализ в стиле кода при построении из командной строки и в Visual Studio. (Однако по соображениям производительности некоторые [правила стиля кода](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) по-прежнему будут применяться только в интегрированной среде разработки Visual Studio.)
 
 Чтобы включить анализ в стиле кода для сборки, выполните следующие действия.
 
@@ -155,7 +158,7 @@ Visual Studio предоставляет дополнительные спосо
 
 Помимо официальных анализаторов .NET, можно также установить сторонние анализаторы, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Рослинатор](https://www.nuget.org/packages/Roslynator.Analyzers/), [xUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)и [анализатор Sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по правилам анализа качества кода](quality-rules/index.md)
 - [Справочник по правилам анализа стиля кода](style-rules/index.md)
