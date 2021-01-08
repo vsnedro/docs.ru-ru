@@ -1,19 +1,19 @@
 ---
 title: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 description: Общий обзор процесса разработки и развертывания контейнерных приложений с помощью Docker, а также платформы и средств Microsoft.
-ms.date: 11/10/2020
-ms.openlocfilehash: cf20ea97ec252649cdb14add40ead67b6319520a
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/06/2021
+ms.openlocfilehash: 94c277e349bacee9b9fc7b160043005dd4135958
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506666"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970119"
 ---
 # <a name="containerized-docker-application-lifecycle-with-microsoft-platform-and-tools"></a>Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
 
 ![Обложка книги](./media/devops-book-cover-large-we.png)
 
-**ВЫПУСК 3.1** — обновлен до ASP.NET Core 3.1
+**Выпуск 5.0** — обновлен до ASP.NET Core 5.0
 
 Обновления книги и вклад сообщества см. в [журнале изменений](https://aka.ms/DockerLifecycleEbookChangelog).
 
@@ -71,7 +71,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-&copy; Корпорация Майкрософт (Microsoft Corporation), 2020.
+&copy; Корпорация Майкрософт (Microsoft Corporation), 2021.
 
 Все права защищены. Запрещается полное или частичное воспроизведение или передача настоящей книги в любом виде или любыми средствами без письменного разрешения издателя.
 
