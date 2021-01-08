@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: c43e661ad8c9f665151e0240bf6b54e61b9acfef
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: d468ec5b9cc050cc54f6c53f8a4ea4531f8b58f5
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031921"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753618"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -24,6 +24,10 @@ ms.locfileid: "96031921"
 
 [Ведение журнала и трассировка](logging-tracing.md) — это связанные методы, предназначенные для инструментирования кода и создания файлов журнала. В файлах записываются сведения о том, что делает программа. Эти сведения можно использовать для диагностики самых сложных проблем. В сочетании с метками времени эти методы также используются для выявления проблем с производительностью.
 
+## <a name="metrics"></a>Метрики
+
+[Счетчики событий](event-counters.md) позволяют записывать метрики для обнаружения и мониторинга проблем с производительностью. Метрики обеспечивают меньшую нагрузку на производительность по сравнению с трассировкой и потому больше подходят для постоянного мониторинга производительности. В среде выполнения и библиотеках .NET опубликовано несколько [стандартных счетчиков событий](available-counters.md), также доступных вам для мониторинга.
+
 ## <a name="unit-testing"></a>Модульное тестирование
 
 [Модульное тестирование](../testing/index.md) — это ключевой компонент непрерывной интеграции и развертывания высококачественного программного обеспечения. Модульные тесты позволяют сразу же узнать о возникшей проблеме.
@@ -32,13 +36,13 @@ ms.locfileid: "96031921"
 
 [Дамп](./dumps.md) — это файл, содержащий моментальный снимок процесса во время создания. Он может использоваться при проверке состояния приложения для отладки.
 
+## <a name="symbols"></a>Символы
+
+Символы обязательно используются при отладке и в других диагностических средствах. Файлы символов будут иметь разное содержимое в зависимости от языка, компилятора и платформы. Если рассматривать их на высоком уровне, символы представляют собой сопоставление между исходным кодом и двоичным кодом, который создается компилятором. Эти сопоставления позволяют узнавать номер строки, имена локальных переменных и другие сведения в средствах диагностики, например в [Visual Studio](/visualstudio/debugger/what-is-debugging) и [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  По [этой ссылке](/windows/win32/dxtecharts/debugging-with-symbols) приводится подробное объяснение символов в Windows, причем многие понятия относятся и к другим платформам. [Переносимые символы .NET](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) имеют расширение файла PDB, аналогичное PDB в Windows, однако они несовместимы с этим форматом.
+
 ## <a name="collect-diagnostics-in-containers"></a>Сбор диагностики в контейнерах
 
 Средства диагностики, используемые в средах Linux без контейнеров, позволяют также осуществлять и [сбор диагностики в контейнерах](diagnostics-in-containers.md). Требуется лишь частично изменить использование, чтобы обеспечить работу этих средств в контейнере Docker.
-
-## <a name="debug-linux-dumps"></a>Отладка дампов Linux
-
-[Отладка дампов Linux](debug-linux-dumps.md) — узнайте, как собирать и анализировать дампы в Linux.
 
 ## <a name="net-core-diagnostic-global-tools"></a>Глобальные средства диагностики в .NET Core
 
@@ -64,7 +68,7 @@ ms.locfileid: "96031921"
 
 ### <a name="dotnet-sos"></a>dotnet-sos
 
-[dotnet-sos](dotnet-sos.md) используется для установки [расширения отладки SOS](../../framework/tools/sos-dll-sos-debugging-extension.md) в Linux или MacOS (или в Windows при использовании старых средств отладки).
+[dotnet-sos](dotnet-sos.md) устанавливает [расширение отладки SOS](sos-debugging-extension.md) на Linux и macOS (а также для Windows при использовании [Windbg/cdb](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)).
 
 ### <a name="perfcollect"></a>PerfCollect
 
@@ -83,6 +87,14 @@ ms.locfileid: "96031921"
 ### <a name="debug-deadlock"></a>Отладка взаимоблокировки
 
 В [руководстве по отладке взаимоблокировки](debug-deadlock.md) показано, как использовать средство [dotnet-dump](dotnet-dump.md) для изучения потоков и блокировок.
+
+### <a name="debug-a-stackoverflow"></a>Отладка StackOverflow
+
+[Учебник. Отладка StackOverflow](debug-stackoverflow.md) показывает процесс отладки <xref:System.StackOverflowException> на Linux.
+
+### <a name="debug-linux-dumps"></a>Отладка дампов Linux
+
+[Отладка дампов Linux](debug-linux-dumps.md) — узнайте, как собирать и анализировать дампы в Linux.
 
 ### <a name="measure-performance-using-eventcounters"></a>Измерение производительности с помощью EventCounters
 
