@@ -2,12 +2,12 @@
 title: Перенос .NET Core из project.json
 description: Сведения о переносе старого проекта .NET Core с использованием project.json
 ms.date: 07/19/2017
-ms.openlocfilehash: 0d4190a02389089a888d8b52dd8e7c412636b575
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 73fbfed6943e3eb535e6eead3b3496edd3426c26
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538254"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970724"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>Перенос проектов .NET Core из project.json
 
@@ -80,7 +80,7 @@ Visual Studio автоматически переносит выбранные �
 - Удалите инструкции `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` и `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` в верхней и нижней частях проекта. Эти инструкции импорта выполняются пакетом SDK, поэтому включать их в проект не нужно.
 - Если в проекте есть элементы `Microsoft.NETCore.App` или `NETStandard.Library` `<PackageReference>`, их следует удалить. Эти ссылки на пакет [содержатся в пакете SDK](../tools/csproj.md).
 - Удалите элемент `Microsoft.NET.Sdk` `<PackageReference>`, если он существует. Пакет SDK ссылается на атрибут `Sdk` элемента `<Project>`.
-- Удалите [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)), [подразумеваемые пакетом SDK](../project-sdk/overview.md#default-compilation-includes). Если оставить эти объекты glob в проекте, это приведет к ошибке сборки из-за дублирования элементов компиляции.
+- Удалите [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)), [подразумеваемые пакетом SDK](../project-sdk/overview.md#default-includes-and-excludes). Если оставить эти объекты glob в проекте, это приведет к ошибке сборки из-за дублирования элементов компиляции.
 
 После выполнения этих действий ваш проект должен быть полностью совместим с форматом csproj RTM .NET Core.
 
