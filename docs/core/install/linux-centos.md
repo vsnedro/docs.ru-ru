@@ -3,13 +3,13 @@ title: Установка .NET в CentOS — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 2c3453c79a1dc31f01577bc0c1b9e320eb307c0a
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.date: 01/06/2021
+ms.openlocfilehash: 7e73f90a1f1f7e11e592b1b074f243c9f5b32ced
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851683"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970867"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-centos"></a>Установка пакета SDK для .NET или среды выполнения .NET в CentOS
 
@@ -44,10 +44,6 @@ ms.locfileid: "96851683"
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>Установка других версий
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="centos-8-"></a>CentOS 8 ✔️
 
 .NET 5.0 предоставляется в репозиториях пакетов по умолчанию для CentOS 8.
@@ -64,6 +60,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
 
+## <a name="how-to-install-other-versions"></a>Установка других версий
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>Устранение неполадок диспетчера пакетов
 
 В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET.
@@ -76,22 +76,11 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## <a name="snap"></a>Snap-пакеты
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>Зависимости
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## <a name="scripted-install"></a>Установка с помощью скрипта
+## <a name="next-steps"></a>Дальнейшие действия
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>Установка вручную
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
-## <a name="next-steps"></a>Следующие шаги
-
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

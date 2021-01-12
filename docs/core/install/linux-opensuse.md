@@ -3,13 +3,13 @@ title: Установка .NET в openSUSE — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: eb31e3109ccd40999c22a27607d48544bf117dc2
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 7a519f19f708e1f12af1e9715bad4f38a607f9c3
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031869"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970815"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-opensuse"></a>Установка пакета SDK для .NET или среды выполнения .NET в openSUSE
 
@@ -41,10 +41,6 @@ ms.locfileid: "96031869"
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>Установка других версий
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="opensuse-15-"></a>openSUSE 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -59,6 +55,10 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## <a name="how-to-install-other-versions"></a>Установка других версий
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>Устранение неполадок диспетчера пакетов
 
 В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET.
@@ -70,10 +70,6 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ### <a name="failed-to-fetch"></a>Ошибка получения
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
-
-## <a name="snap"></a>Snap-пакеты
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
 
 ## <a name="dependencies"></a>Зависимости
 
@@ -94,14 +90,7 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
   > [!WARNING]
   > Вы можете установить последнюю версию *libgdiplus*, добавив в систему репозиторий Mono. Для получения дополнительной информации см. <https://www.mono-project.com/download/stable/>.
 
-## <a name="scripted-install"></a>Установка с помощью скрипта
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>Установка вручную
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>Следующие шаги
 
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

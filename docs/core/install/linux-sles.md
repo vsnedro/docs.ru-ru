@@ -3,13 +3,13 @@ title: Установка .NET в SLES — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: f351a9b11ab16910963a1db88d88b6949b56ae11
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 80da69616dd1507b809ef56d439645d569a6a805
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031804"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970789"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-sles"></a>Установка пакета SDK для .NET или среды выполнения .NET в SLES
 
@@ -40,10 +40,6 @@ ms.locfileid: "96031804"
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## <a name="how-to-install-other-versions"></a>Установка других версий
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## <a name="sles-15-"></a>SLES 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -72,6 +68,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## <a name="how-to-install-other-versions"></a>Установка других версий
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## <a name="troubleshoot-the-package-manager"></a>Устранение неполадок диспетчера пакетов
 
 В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET.
@@ -99,14 +99,7 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
   > [!WARNING]
   > Вы можете установить последнюю версию *libgdiplus*, добавив в систему репозиторий Mono. Для получения дополнительной информации см. <https://www.mono-project.com/download/stable/>.
 
-## <a name="scripted-install"></a>Установка с помощью скрипта
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>Установка вручную
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## <a name="next-steps"></a>Следующие шаги
 
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -3,13 +3,13 @@ title: Установка .NET в RHEL — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в RHEL.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 0b6138185bfd3e2f50c1b31e82779165715a5b6e
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.date: 01/06/2021
+ms.openlocfilehash: d585017919507a8fdcbb24778a0ff3ab3d9049c2
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851644"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970802"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-rhel"></a>Установка пакета SDK для .NET или среды выполнения .NET в RHEL
 
@@ -43,10 +43,6 @@ ms.locfileid: "96851644"
 ## <a name="remove-preview-versions"></a>Удалите предварительные версии
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
-## <a name="how-to-install-other-versions"></a>Установка других версий
-
-Сведения об установке других выпусков .NET см. в [документации по Red Hat для .NET](https://access.redhat.com/documentation/net/5.0/).
 
 ## <a name="rhel-8-"></a>RHEL 8 ✔️
 
@@ -140,22 +136,15 @@ source scl_source enable rh-dotnet31
 
 В качестве альтернативы среде выполнения ASP.NET Core вы можете установить среду выполнения .NET Core без поддержки ASP.NET Core. Для этого в приведенной выше команде замените `rh-dotnet31-aspnetcore-runtime-3.1` на `rh-dotnet31-dotnet-runtime-3.1`.
 
-## <a name="snap"></a>Snap-пакеты
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## <a name="dependencies"></a>Зависимости
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## <a name="scripted-install"></a>Установка с помощью скрипта
+## <a name="how-to-install-other-versions"></a>Установка других версий
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
+Сведения об установке других выпусков .NET см. в [документации по Red Hat для .NET](https://access.redhat.com/documentation/net/5.0/).
 
-## <a name="manual-install"></a>Установка вручную
+## <a name="next-steps"></a>Дальнейшие действия
 
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
-## <a name="next-steps"></a>Следующие шаги
-
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -3,12 +3,12 @@ title: Сравнение project.json и CSPROJ
 description: См. сопоставление между элементами project.json и CSPROJ.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: c8638bc30ba09d8e8d464159aded60dcde4b8dc0
-ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
+ms.openlocfilehash: 7de9f623a57a6a094debd3e018edc1560d837fc2
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87427025"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970880"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>Сопоставление между свойствами project.json и CSPROJ
 
@@ -620,7 +620,7 @@ And it's really great!</Description>
 ```
 
 > [!NOTE]
-> Многие из [стандартных масок](https://en.wikipedia.org/wiki/Glob_(programming)) по умолчанию добавляются автоматически с помощью пакета SDK для .NET Core. См. сведения о том, [что включает компиляция по умолчанию](../project-sdk/overview.md#default-compilation-includes).
+> Многие из [стандартных масок](https://en.wikipedia.org/wiki/Glob_(programming)) по умолчанию добавляются автоматически с помощью пакета SDK для .NET Core. См. сведения о том, [что включает компиляция по умолчанию](../project-sdk/overview.md#default-includes-and-excludes).
 
 Все элементы `ItemGroup` MSBuild поддерживают `Include`, `Exclude` и `Remove`.
 
