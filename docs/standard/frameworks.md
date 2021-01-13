@@ -5,12 +5,12 @@ ms.date: 11/06/2020
 ms.prod: dotnet
 ms.custom: updateeachrelease
 ms.technology: dotnet-standard
-ms.openlocfilehash: 1a0d6ef9d31b85fd6c083604dd11b9ca9ff09c79
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7a3dcd61c330607bacf0d05dbd775c62cfa15b37
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827923"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765063"
 ---
 # <a name="target-frameworks-in-sdk-style-projects"></a>Целевые платформы в проектах в стиле SDK
 
@@ -22,7 +22,7 @@ ms.locfileid: "94827923"
 
 Для некоторых целевых платформ (например, .NET Framework) API-интерфейсы определяются сборками, устанавливаемыми платформой в системе, в число которых могут входить API-интерфейсы платформы приложений (например, ASP.NET).
 
-Для целевых платформ на основе пакетов (например, .NET 5, .NET Core и .NET Standard) API-интерфейсы определяются пакетами в составе приложения или библиотеки. *Метапакет* — это пакет NuGet, не имеющий собственного содержимого, но имеющий список зависимостей (другие пакеты). В этом случае целевая платформа на основе пакетов NuGet неявно задает метапакет, который ссылается на все пакеты, составляющие платформу.
+Для целевых платформ на основе пакетов (например, .NET 5, .NET Core и .NET Standard) API-интерфейсы определяются пакетами NuGet в составе приложения или библиотеки.
 
 ## <a name="latest-versions"></a>Последние версии
 

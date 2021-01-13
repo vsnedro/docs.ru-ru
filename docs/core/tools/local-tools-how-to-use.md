@@ -2,13 +2,13 @@
 title: Учебник. Установка и использование локальных средств .NET
 description: Узнайте, как устанавливать и использовать средство .NET в качестве локального.
 ms.topic: tutorial
-ms.date: 02/12/2020
-ms.openlocfilehash: 2cb25443706293b66325d43136afcd3fd886294d
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.date: 12/11/2020
+ms.openlocfilehash: f32a5c4091ff63c7c50cf339dddd89b78e543c4c
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633885"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512467"
 ---
 # <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET
 
@@ -172,7 +172,7 @@ dotnet tool run botsay hello from the bot
 
 ## <a name="update-a-local-tool"></a>Обновление локального средства
 
-Установленная версия локального средства `dotnetsay` — 2.1.3.  Последней является версия 2.1.4. Используйте команду [dotnet tool update](dotnet-tool-update.md), чтобы обновить средство до последней версии.
+Установленная версия локального средства `dotnetsay` — 2.1.3.  Используйте команду [dotnet tool update](dotnet-tool-update.md), чтобы обновить средство до последней версии.
 
 ```dotnetcli
 dotnet tool update dotnetsay
@@ -181,7 +181,7 @@ dotnet tool update dotnetsay
 В выходных данных указывается новый номер версии:
 
 ```console
-Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.4'
+Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.7'
 (manifest file /home/name/repository/.config/dotnet-tools.json).
 ```
 
@@ -205,4 +205,4 @@ dotnet tool uninstall dotnetsay
 
 ## <a name="see-also"></a>См. также
 
-Дополнительные сведения см. в статье [Обзор глобальных средств .NET Core](global-tools.md).
+Дополнительные сведения см. в разделе о [средствах .NET](global-tools.md)

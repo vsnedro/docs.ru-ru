@@ -1,20 +1,21 @@
 ---
-title: Создание шаблона элемента для dotnet new — .NET Core CLI
+title: Создание шаблона элемента для dotnet new — .NET CLI
+titleSuffix: ''
 description: Из этой статьи вы узнаете, как создать шаблон элемента для команды dotnet new. Шаблоны элементов могут содержать любое число файлов.
 author: adegeo
-ms.date: 06/25/2019
+ms.date: 12/11/2020
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 0b804d26b2f33d4d600c17de2f7f71101a0f9c98
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: d213646a933c77bd0d9a3f1aa9b6b4948b66439b
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324378"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633667"
 ---
 # <a name="tutorial-create-an-item-template"></a>Учебник. Создание шаблона элемента
 
-С помощью .NET Core вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это руководство представляет собой первую часть серии, в которой описано, как создавать, устанавливать и удалять шаблоны для использования с командой `dotnet new`.
+С помощью .NET вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это руководство представляет собой первую часть серии, в которой описано, как создавать, устанавливать и удалять шаблоны для использования с командой `dotnet new`.
 
 Из этой части вы узнаете, как выполнять такие задачи:
 
@@ -28,7 +29,7 @@ ms.locfileid: "85324378"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* [Пакет SDK для .NET Core 2.2](https://dotnet.microsoft.com/download) или более поздней версии.
+* [Пакет SDK для .NET 5.0](https://dotnet.microsoft.com/download) или более поздней версии.
 * Ознакомьтесь со статьей справки [Пользовательские шаблоны для команды dotnet new](../tools/custom-templates.md).
 
   В ней приведены общие сведения о шаблонах и о способах их создания. Некоторые сведения будут повторены и здесь.
@@ -85,7 +86,7 @@ namespace System
 
 ## <a name="create-the-template-config"></a>Создание конфигурации шаблона
 
-Шаблоны распознаются в .NET Core по специальной папке и файлу конфигурации, которые находятся в корневой папке шаблона. В нашем случае папка шаблона имеет такое расположение: _working\templates\extensions_.
+Шаблоны распознаются по специальной папке и файлу конфигурации, которые находятся в корневой папке шаблона. В нашем случае папка шаблона имеет такое расположение: _working\templates\extensions_.
 
 При создании шаблона все файлы и папки в этой папке включаются как его часть, кроме специальной папки конфигурации. Эта папка конфигурации имеет имя _.template.config_.
 
@@ -116,7 +117,7 @@ working
 }
 ```
 
-Этот файл конфигурации содержит все параметры шаблона. Вы можете увидеть основные параметры, например `name` и `shortName`, но здесь также присутствует параметр `tags/type` со значением `item`. Он указывает, что ваш шаблон является шаблоном элемента. Вы можете создать шаблон любого типа. Значения `item` и `project` — это общие рекомендуемые имена .NET Core, которые позволяют без усилий фильтровать типы шаблонов при поиске.
+Этот файл конфигурации содержит все параметры шаблона. Вы можете увидеть основные параметры, например `name` и `shortName`, но здесь также присутствует параметр `tags/type` со значением `item`. Он указывает, что ваш шаблон является шаблоном элемента. Вы можете создать шаблон любого типа. Значения `item` и `project` — это общие рекомендуемые имена .NET, которые позволяют без усилий фильтровать типы шаблонов при поиске.
 
 Элемент `classifications` представляет столбец **tags**, который отображается после запуска команды `dotnet new` и получения списка шаблонов. Пользователи также могут выполнять поиск по тегам классификации. Не спутайте свойство `tags` в файле \*.json со списком тегов `classifications`. Это два разных элемента, которые, к сожалению, имеют одинаковые имена. Полная схема файла *template.json* находится в [хранилище схем JSON](http://json.schemastore.org/template). Дополнительные сведения о файле *template.json* см. на [вики-сайте о шаблонах dotnet](https://github.com/dotnet/templating/wiki).
 
@@ -137,14 +138,12 @@ Options:
 
 ... cut to save space ...
 
-Templates                                         Short Name            Language          Tags
--------------------------------------------------------------------------------------------------------------------------------
-Example templates: string extensions              stringext             [C#]              Common/Code
-Console Application                               console               [C#], F#, VB      Common/Console
-Class library                                     classlib              [C#], F#, VB      Common/Library
-WPF Application                                   wpf                   [C#], VB          Common/WPF
-Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
-Worker Service                                    worker                [C#]              Common/Worker/Web
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+Example templates: string extensions              stringext                [C#]              Common/Code
+Console Application                               console                  [C#], F#, VB      Common/Console
+Class library                                     classlib                 [C#], F#, VB      Common/Library
+WPF Application                                   wpf                      [C#], VB          Common/WPF
 ```
 
 ## <a name="test-the-item-template"></a>Тестирование шаблона элемента
@@ -209,11 +208,11 @@ dotnet run
 !dlroW olleH
 ```
 
-Поздравляем! Вы создали и развернули шаблон элемента с помощью .NET Core. Для подготовки к следующей части этой серии руководств вам необходимо удалить созданный шаблон. Также обязательно удалите все файлы из папки _test_. Так вы воссоздадите первоначальные условия для работы со следующим разделом этого руководства.
+Поздравляем! Вы создали и развернули шаблон элемента с помощью .NET. Для подготовки к следующей части этой серии руководств вам необходимо удалить созданный шаблон. Также обязательно удалите все файлы из папки _test_. Так вы воссоздадите первоначальные условия для работы со следующим разделом этого руководства.
 
 ## <a name="uninstall-the-template"></a>Удаление шаблона
 
-Так как вы установили шаблон с указанием пути к файлу, вам нужно удалить его, указав **абсолютный** путь к файлу. Вы можете просмотреть список всех установленных шаблонов, выполнив команду `dotnet new -u`. Ваш шаблон должен быть последним в списке. Удалите шаблон с помощью команды `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>`, указав путь к нему.
+Так как вы установили шаблон с указанием пути к файлу, вам нужно удалить его, указав **абсолютный** путь к файлу. Вы можете просмотреть список всех установленных шаблонов, выполнив команду `dotnet new -u`. Ваш шаблон должен быть последним в списке. Используйте `Uninstall Command`, чтобы удалить шаблон.
 
 ```dotnetcli
 dotnet new -u
@@ -225,31 +224,31 @@ dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
-  C:\working\templates\extensions
+C:\Test\templatetutorial\working\templates\extensions
     Templates:
       Example templates: string extensions (stringext) C#
+    Uninstall Command:
+      dotnet new -u C:\working\templates\extensions
 ```
 
-Чтобы удалить шаблон, выполните указанную ниже команду.
+Чтобы удалить созданный шаблон, запустите `Uninstall Command`, показанный в выходных данных.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\extensions

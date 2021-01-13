@@ -1,23 +1,23 @@
 ---
-title: Разработка библиотек с помощью .NET Core CLI
-description: Узнайте, как создавать библиотеки для .NET Core с помощью .NET Core CLI. Вы создадите библиотеку, которая поддерживает несколько платформ.
+title: Разработка библиотек с помощью .NET CLI
+description: Узнайте, как создавать библиотеки для .NET с помощью .NET CLI. Вы создадите библиотеку, которая поддерживает несколько платформ.
 author: cartermp
 ms.topic: how-to
-ms.date: 05/01/2017
-ms.openlocfilehash: 8a0b1c5645f41a256bfb9d0e5dac74f8706d84e6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 12/14/2020
+ms.openlocfilehash: 6f4c1feac7630a6a0250e4b0b39ef01152f5a400
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725083"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633680"
 ---
-# <a name="develop-libraries-with-the-net-core-cli"></a>Разработка библиотек с помощью .NET Core CLI
+# <a name="develop-libraries-with-the-net-cli"></a>Разработка библиотек с помощью .NET CLI
 
-В этой статье показано, как создавать библиотеки для .NET с помощью .NET Core CLI. CLI предоставляет эффективный и низкоуровневый интерфейс, работающий в любых поддерживаемых операционных системах. Вы по-прежнему можете создавать библиотеки с помощью Visual Studio. Если вы предпочитаете такой способ, обратитесь к [руководству по Visual Studio](library-with-visual-studio.md).
+В этой статье показано, как создавать библиотеки для .NET с помощью .NET CLI. CLI предоставляет эффективный и низкоуровневый интерфейс, работающий в любых поддерживаемых операционных системах. Вы по-прежнему можете создавать библиотеки с помощью Visual Studio. Если вы предпочитаете такой способ, обратитесь к [руководству по Visual Studio](library-with-visual-studio.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-На компьютере должны быть установлены [пакет SDK и интерфейс CLI для .NET Core ](https://dotnet.microsoft.com/download).
+На компьютере должны быть установлены [пакет SDK и интерфейс CLI для .NET](https://dotnet.microsoft.com/download).
 
 При работе с разделами, в которых используются различные версии .NET Framework, на компьютере с ОС Windows должна быть установлена платформа [.NET Framework](https://dotnet.microsoft.com).
 
@@ -33,35 +33,27 @@ ms.locfileid: "95725083"
 | 4,0                    | Пакет SDK для Windows 7 и .NET Framework 4         |
 | 2.0, 3.0 и 3.5      | Среда выполнения .NET Framework 3.5 с пакетом обновления 1 (SP1) (либо версия для Windows 8 или более поздняя) |
 
-## <a name="how-to-target-net-standard"></a>Нацеливание на .NET Standard
+## <a name="how-to-target-net-50-or-net-standard"></a>Нацеливание на .NET 5.0 или .NET Standard
 
-Если вы незнакомы с платформой .NET Standard, дополнительные сведения см. в [этом разделе](../../standard/net-standard.md).
+Вы можете управлять целевой платформой проекта, добавив его в файл проекта (*CSPROJ* или *FSPROJ*). Инструкции по выбору между нацеливанием на .NET 5.0 и .NET Standard см. в разделе [.NET 5 и .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
-В этом разделе есть таблица, которая сопоставляет версии .NET Standard с различными реализациями:
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
 
-[!INCLUDE [net-standard-table](../../../includes/net-standard-table.md)]
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
 
-Вот что значит эта таблица в контексте создания библиотеки:
-
-Версия .NET Standard, которую вы выберете, будет компромиссом между наличием новейших API-интерфейсов и возможностью нацеливать приложение на большее количество реализаций .NET и версий .NET Standard. Диапазон целевых платформ и версий определяется выбранной версией `netstandardX.X` (где `X.X` — это номер версии), которая добавляется в файл проекта (`.csproj` или `.fsproj`).
-
-При нацеливании на платформу .NET Standard есть три основных варианта, выбор которых зависит от ваших потребностей.
-
-1. Вы можете использовать версию .NET Standard по умолчанию, которая предоставляется шаблонами `netstandard1.4`, что обеспечивает доступ к большинству API-интерфейсов .NET Standard, сохраняя совместимость с UWP, .NET Framework 4.6.1 и .NET Standard 2.0.
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-      <PropertyGroup>
-        <TargetFramework>netstandard1.4</TargetFramework>
-      </PropertyGroup>
-    </Project>
-    ```
-
-2. Изменив значение в узле `TargetFramework` файла проекта можно использовать более раннюю или более позднюю версию .NET Standard.
-
-    Версии .NET Standard обладают обратной совместимостью. Это означает, что библиотеки `netstandard1.0` выполняются на платформах `netstandard1.1` и более поздних версий. Однако, прямой совместимости нет. Платформы .NET Standard нижнего уровня не могут ссылаться на платформы высшего уровня. Это значит, что библиотеки `netstandard1.0` не могут ссылаться на библиотеки, предназначенные для `netstandard1.1` или более поздних версий. Выберите версию Standard, которая предоставляет подходящее сочетание интерфейсов API и поддерживаемых платформ для ваших потребностей. Сейчас рекомендуем использовать версию `netstandard1.4`.
-
-3. Если требуется нацеливание на .NET Framework версии 4.0 или более ранней или использование интерфейса API, доступного в .NET Framework, но не в .NET Standard (например, `System.Drawing`), прочитайте следующие подразделы, чтобы узнать, как осуществляется настройка для разных версий.
+Если требуется нацеливание на .NET Framework версии 4.0 или более ранней или использование интерфейса API, доступного в .NET Framework, но не в .NET Standard (например, `System.Drawing`), прочитайте следующие подразделы, чтобы узнать, как осуществляется настройка для разных версий.
 
 ## <a name="how-to-target-net-framework"></a>Нацеливание на .NET Framework.
 
@@ -104,7 +96,7 @@ ms.locfileid: "95725083"
 > [!NOTE]
 > В приведенных ниже инструкциях предполагается, что на компьютере установлена платформа .NET Framework. Сведения о зависимостях, которые необходимо установить, и о том, где их можно скачать, см. в разделе [Предварительные требования](#prerequisites).
 
-Если проект поддерживает как .NET Framework, так и .NET Core, может потребоваться нацеливание на более старые версии .NET Framework. В такой ситуации, если вам нужно применять более новые интерфейсы API и языковые конструкции для новых целевых платформ, используйте директивы `#if` в коде. Кроме того, может потребоваться добавить разные пакеты и зависимости для каждой целевой платформы, чтобы включить различные интерфейсы API, необходимые в каждом случае.
+Если проект поддерживает как .NET Framework, так и .NET, может потребоваться нацеливание на более старые версии .NET Framework. В такой ситуации, если вам нужно применять более новые интерфейсы API и языковые конструкции для новых целевых платформ, используйте директивы `#if` в коде. Кроме того, может потребоваться добавить разные пакеты и зависимости для каждой целевой платформы, чтобы включить различные интерфейсы API, необходимые в каждом случае.
 
 Предположим, имеется библиотека, выполняющая сетевые операции по протоколу HTTP. Для .NET Standard и .NET Framework версии 4.5 или более поздней можно использовать класс `HttpClient` из пространства имен `System.Net.Http`. Однако в более ранних версиях .NET Framework нет класса `HttpClient`, поэтому вместо него можно использовать класс `WebClient` из пространства имен `System.Net`.
 
@@ -113,7 +105,7 @@ ms.locfileid: "95725083"
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.4;net40;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net40;net45</TargetFrameworks>
   </PropertyGroup>
 
   <!-- Need to conditionally bring in references for the .NET Framework 4.0 target -->
@@ -207,17 +199,17 @@ namespace MultitargetLib
 ```
 net40/
 net45/
-netstandard1.4/
+netstandard2.0/
 ```
 
 Каждый из них содержит файлы `.dll` для соответствующего целевого объекта.
 
-## <a name="how-to-test-libraries-on-net-core"></a>Тестирование библиотек в .NET Core
+## <a name="how-to-test-libraries-on-net"></a>Тестирование библиотек в .NET
 
-Необходимо иметь возможность тестирования проектов на различных платформах. Вы можете использовать [xUnit](https://xunit.github.io/) или MSTest без дополнительной настройки. Обе платформы тестирования идеально подходят для модульного тестирования библиотеки в .NET Core. Настройка тестовых проектов для решения зависит от [его структуры](#structuring-a-solution). В следующем примере предполагается, что каталог с тестами и каталог с исходным кодом находятся в одном и том же каталоге верхнего уровня.
+Необходимо иметь возможность тестирования проектов на различных платформах. Вы можете использовать [xUnit](https://xunit.net/) или MSTest без дополнительной настройки. Обе платформы тестирования идеально подходят для модульного тестирования библиотеки в .NET. Настройка тестовых проектов для решения зависит от [его структуры](#structuring-a-solution). В следующем примере предполагается, что каталог с тестами и каталог с исходным кодом находятся в одном и том же каталоге верхнего уровня.
 
 > [!NOTE]
-> В этом примере используются некоторые команды [.NET Core CLI](../tools/index.md). Дополнительные сведения см. в разделах [dotnet new](../tools/dotnet-new.md) и [dotnet sln](../tools/dotnet-sln.md).
+> В этом примере используются некоторые [команды интерфейса командной строки .NET](../tools/index.md). Дополнительные сведения см. в разделах [dotnet new](../tools/dotnet-new.md) и [dotnet sln](../tools/dotnet-sln.md).
 
 1. Настройте решение. Это можно сделать с помощью следующих команд:
 
@@ -253,8 +245,6 @@ netstandard1.4/
    dotnet restore
    dotnet build
    ```
-
-   [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]
 
 1. Убедитесь, что xUnit запущен, выполнив команду `dotnet test`. Если вы решили использовать MSTest, запустите средство запуска консоли MSTest вместо xUnit.
 
@@ -319,7 +309,7 @@ dotnet sln add AwesomeLibrary.FSharp/AwesomeLibrary.FSharp.fsproj
 
 ### <a name="project-to-project-referencing"></a>Ссылки проектов на проекты
 
-Ссылку на проект лучше всего добавить с помощью интерфейса командной строки .NET Core. Из каталогов проекта **AwesomeLibrary.CSharp** и **AwesomeLibrary.FSharp** выполните следующую команду:
+Ссылку на проект лучше всего добавить с помощью интерфейса командной строки .NET. Из каталогов проекта **AwesomeLibrary.CSharp** и **AwesomeLibrary.FSharp** выполните следующую команду:
 
 ```dotnetcli
 dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
@@ -333,7 +323,7 @@ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 </ItemGroup>
 ```
 
-Если вы не хотите использовать интерфейс командной строки .NET Core, можете добавить этот раздел в каждый файл проекта вручную.
+Если вы не хотите использовать интерфейс командной строки .NET, можете добавить этот код в каждый файл проекта вручную.
 
 ### <a name="structuring-a-solution"></a>Структурирование решения
 

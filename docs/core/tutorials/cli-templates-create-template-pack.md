@@ -2,19 +2,19 @@
 title: Создание пакета шаблонов для команды dotnet new
 description: Узнайте, как создать файл CSPROJ, с помощью которого выполняется сборка пакета шаблонов для команды dotnet new.
 author: adegeo
-ms.date: 12/10/2019
+ms.date: 12/11/2020
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 25264fff42c47f5bb660f68f85dbb123b5b2608c
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 2aea143f1e41d580de41a9cc9e924d70b55695db
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324340"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633602"
 ---
 # <a name="tutorial-create-a-template-pack"></a>Учебник. Создание пакета шаблонов
 
-С помощью .NET Core вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это третья часть серии руководств по созданию, установке и удалению шаблонов с помощью команды `dotnet new`.
+С помощью .NET вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это третья часть серии руководств по созданию, установке и удалению шаблонов с помощью команды `dotnet new`.
 
 Из этой части вы узнаете, как выполнять такие задачи:
 
@@ -51,10 +51,6 @@ dotnet new console -n templatepack -o .
 
 Параметр `-n` присваивает файлы _.csproj_ имя _templatepack.csproj_. Параметр `-o` создает файлы в текущем каталоге. Отобразится результат примерно такого содержания:
 
-```dotnetcli
-dotnet new console -n templatepack -o .
-```
-
 ```console
 The template "Console Application" was created successfully.
 
@@ -84,6 +80,7 @@ Restore succeeded.
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -94,11 +91,13 @@ Restore succeeded.
 </Project>
 ```
 
-Параметры `<PropertyGroup>` в приведенном выше коде XML разделены на три группы. Первая группа отвечает за свойства, необходимые для пакета NuGet. Три параметра `<Package` отвечают за свойства пакета NuGet, необходимые для обнаружения пакета в веб-канале NuGet. В частности, значение `<PackageId>` позволяет удалить пакет шаблонов по имени и не указывать путь к его каталогу. Оно также позволяет установить пакет шаблонов из веб-канала NuGet. Остальные параметры, такие как `<Title>` и `<PackageTags>`, отвечают за метаданные, отображаемые в веб-канале NuGet. См. подробнее о параметрах NuGet в описании [свойств NuGet и MSBuild](/nuget/reference/msbuild-targets).
+Параметры `<PropertyGroup>` в приведенном выше коде XML разделены на три группы. Первая группа отвечает за свойства, необходимые для пакета NuGet. Три параметра `<Package*>` отвечают за свойства пакета NuGet, необходимые для обнаружения пакета в веб-канале NuGet. В частности, значение `<PackageId>` позволяет удалить пакет шаблонов по имени и не указывать путь к его каталогу. Оно также позволяет установить пакет шаблонов из веб-канала NuGet. Остальные параметры, такие как `<Title>` и `<PackageTags>`, отвечают за метаданные, отображаемые в веб-канале NuGet. См. подробнее о параметрах NuGet в описании [свойств NuGet и MSBuild](/nuget/reference/msbuild-targets).
 
 Параметр `<TargetFramework>` необходимо задать так, чтобы MSBuild правильно запускался при выполнении команды pack для компиляции и упаковки проекта.
 
-Последние три параметра отвечают за правильную настройку проекта — добавление шаблонов в соответствующую папку в пакете NuGet при его создании.
+Следующие три параметра отвечают за правильную настройку проекта — добавление шаблонов в соответствующую папку в пакете NuGet при его создании.
+
+Последний параметр подавляет сообщение с предупреждением, которое не применяется к проектам пакета шаблонов.
 
 `<ItemGroup>` содержит два параметра. Первый параметр `<Content>` добавляет все содержимое папки _templates_ в виде содержимого. Он также предотвращает добавление папки _bin_ или _obj_ и компиляцию кода (если вы выполняли тестирование и компиляцию шаблонов). Второй параметр `<Compile>` предотвращает компиляцию файлов кода независимо от их расположения. Этот параметр не позволяет проекту, используемому для созданию пакета шаблонов, компилировать код в иерархии папки _templates_.
 
@@ -117,7 +116,7 @@ dotnet pack
 ```
 
 ```console
-Microsoft (R) Build Engine version 16.2.0-preview-19278-01+d635043bd for .NET Core
+Microsoft (R) Build Engine version 16.8.0+126527ff1 for .NET
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Restore completed in 123.86 ms for C:\working\templatepack.csproj.
@@ -138,12 +137,12 @@ Options:
 
 ... cut to save space ...
 
-Templates                                         Short Name            Language          Tags
--------------------------------------------------------------------------------------------------------------------------------
-Example templates: string extensions              stringext             [C#]              Common/Code
-Console Application                               console               [C#], F#, VB      Common/Console
-Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
-Class library                                     classlib              [C#], F#, VB      Common/Library
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+Example templates: string extensions              stringext                [C#]              Common/Code
+Console Application                               console                  [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
+Class library                                     classlib                 [C#], F#, VB      Common/Library
 ```
 
 Если пакет NuGet был передан в веб-канал NuGet, можно использовать команду `dotnet new -i PACKAGEID`, в которой `PACKAGEID` совпадает с параметром `<PackageId>` из файла _CSPROJ_. Этот идентификатор пакета совпадает с идентификатором пакета NuGet.
@@ -160,36 +159,40 @@ dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
   AdatumCorporation.Utility.Templates
+    Details:
+      NuGetPackageId: AdatumCorporation.Utility.Templates
+      Version: 1.0.0
+      Author: Me
     Templates:
       Example templates: async project (consoleasync) C#
       Example templates: string extensions (stringext) C#
+    Uninstall Command:
+      dotnet new -u AdatumCorporation.Utility.Templates
 ```
 
 Выполните команду `dotnet new -u AdatumCorporation.Utility.Templates`, чтобы удалить шаблон. Команда `dotnet new` выводит справочную информацию без сведений о ранее установленных шаблонах.
 
 Поздравляем! Вы выполнили установку и удаление пакета шаблонов.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения о шаблонах см. в статье [Пользовательские шаблоны для команды dotnet new](../tools/custom-templates.md).
 

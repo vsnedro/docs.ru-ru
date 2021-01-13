@@ -1,13 +1,13 @@
 ---
 title: Каталог идентификаторов сред выполнения (RID) в .NET Core
 description: Сведения об идентификаторах сред выполнения и их использовании в .NET Core.
-ms.date: 02/22/2019
-ms.openlocfilehash: 096ce8e33a82df3b9de682ed16e10fbe9f07fd03
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 12/15/2020
+ms.openlocfilehash: f818ab2d503be7960d9eb8450a7dd749766637a6
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "90538228"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633615"
 ---
 # <a name="net-core-rid-catalog"></a>Каталог идентификаторов сред выполнения (RID) в .NET Core
 
@@ -114,15 +114,15 @@ SDK для .NET Core 2.0 представляет концепцию перен
 
 Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) в репозитории `dotnet/runtime`. Устройства с дистрибутивами, не перечисленными ниже, могут работать с одним из переносных идентификаторов RID. Например, для устройств Raspberry Pi с дистрибутивом Linux, которого нет в списке, можно использовать `linux-arm`.
 
-- Переносные (.NET Core 2.0 или более поздние версии):
+- Портативные
   - `linux-x64` (большинство дистрибутивов для компьютеров, например CentOS, Debian, Fedora, Ubuntu и производные от них);
   - `linux-musl-x64` (упрощенные дистрибутивы, которые используют [musl](https://wiki.musl-libc.org/projects-using-musl.html), например Alpine Linux);
   - `linux-arm` (дистрибутивы Linux, которые работают на архитектуре ARM, например Raspbian on Raspberry Pi Model 2+)
   - `linux-arm64` (дистрибутивы Linux, которые работают на 64-разрядной архитектуре ARM, например 64-разрядный Ubuntu Server на Raspberry Pi Model 3+)
 - Red Hat Enterprise Linux
   - `rhel-x64` (заменен на `linux-x64` для RHEL новее версии 6);
-  - `rhel.6-x64` (.NET Core 2.0 или более поздние версии)
-- Tizen (.NET Core 2.0 или более поздние версии)
+  - `rhel.6-x64`
+- Tizen
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
@@ -133,18 +133,23 @@ SDK для .NET Core 2.0 представляет концепцию перен
 
 Относительные идентификаторы macOS используют старую фирменную символику "OSX". Перечислены только распространенные значения. Последнюю и полную версию см. в файле [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/pkg/Microsoft.NETCore.Platforms/runtime.json) в репозитории `dotnet/runtime`.
 
-- Переносные (.NET Core 2.0 или более поздние версии):
+- Портативные
   - `osx-x64` (минимальная версия — macOS 10.12 Sierra).
 - macOS 10.10 Yosemite:
   - `osx.10.10-x64`
 - macOS 10.11 El Capitan:
   - `osx.10.11-x64`
-- macOS 10.12 Sierra (.NET Core 1.1 или более поздние версии):
+- macOS 10.12 Sierra
   - `osx.10.12-x64`
-- macOS 10.13 High Sierra (.NET Core 1.1 или более поздние версии):
+- macOS 10.13 High Sierra
   - `osx.10.13-x64`
-- macOS 10.14 Mojave (.NET Core 1.1 или более поздние версии):
+- macOS 10.14 Mojave
   - `osx.10.14-x64`
+- macOS 10.15 Catalina
+  - `osx.10.15-x64`
+- macOS 11.01 Big Sur
+  - `osx.11.0-x64`
+  - `osx.11.0-arm64`
 
 Дополнительные сведения см. в статье [Зависимости и требования для .NET Core](./install/macos.md#dependencies).
 

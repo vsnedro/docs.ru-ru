@@ -2,12 +2,12 @@
 title: Команда dotnet sln
 description: Команда dotnet-sln предоставляет удобный способ добавлять проекты в файл решений, удалять или перечислять их.
 ms.date: 12/07/2020
-ms.openlocfilehash: 480634550f6fa1983bb46f51b439dc8a686ead3c
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: af502efe842e9c9610137738d86c05e00a3b37df
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851706"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633654"
 ---
 # <a name="dotnet-sln"></a>dotnet sln
 
@@ -104,7 +104,7 @@ dotnet sln add [-h|--help]
 
 - **`-s|--solution-folder <PATH>`**
 
-  Путь к папке назначения решения, в которую будут добавлены проекты. Доступно, начиная с пакета SDK для .NET Core 3.0.
+  Путь к [папке назначения решения](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder), в которую будут добавлены проекты. Доступно, начиная с пакета SDK для .NET Core 3.0.
 
 ### `remove`
 

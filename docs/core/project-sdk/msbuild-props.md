@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 3b58fd080439c73ee30d5c8dc59c50c0410db164
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 27944a6726f8d74a3b00c7c774faa8037c0f2f0e
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851579"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899630"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -365,6 +365,7 @@ ms.locfileid: "96851579"
 ## <a name="reference-properties-and-items"></a>Справочники по свойствам и элементам
 
 - [AssetTargetFallback](#assettargetfallback)
+- [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [PackageReference](#packagereference)
 - [ProjectReference](#projectreference)
 - [Ссылки](#reference)
@@ -379,6 +380,18 @@ ms.locfileid: "96851579"
 ```xml
 <PropertyGroup>
   <AssetTargetFallback>net461</AssetTargetFallback>
+</PropertyGroup>
+```
+
+### <a name="disableimplicitframeworkreferences"></a>DisableImplicitFrameworkReferences
+
+Свойство `DisableImplicitFrameworkReferences` управляет неявными элементами `FrameworkReference` при разработке для .NET Core 3.0 и более поздних версий. При использовании .NET Core 2.1 или .NET Standard 2.0 и более ранних версий оно управляет неявными элементами [PackageReference](#packagereference) в пакетах в метапакете. (Метапакет — это пакет на основе платформы, который состоит только из зависимостей от других пакетов.) Это свойство также управляет неявными ссылками, такими как `System` и `System.Core`, при разработке для .NET Framework.
+
+Присвойте этому свойству значение `true`, чтобы отключить неявные элементы `FrameworkReference` или [PackageReference](#packagereference). Если этому свойству присвоено значение `true`, можно добавить явные ссылки на только необходимые платформы или пакеты.
+
+```xml
+<PropertyGroup>
+  <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
 </PropertyGroup>
 ```
 
@@ -433,6 +446,36 @@ ms.locfileid: "96851579"
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+## <a name="run-properties"></a>Свойства запуска
+
+Следующие свойства используются для запуска приложения с помощью команды [`dotnet run`](../tools/dotnet-run.md):
+
+- [RunArguments](#runarguments)
+- [RunWorkingDirectory](#runworkingdirectory)
+
+### <a name="runarguments"></a>RunArguments
+
+Свойство `RunArguments` определяет аргументы, которые передаются в приложение при его запуске.
+
+```xml
+<PropertyGroup>
+  <RunArguments>-mode dryrun</RunArguments>
+</PropertyGroup>
+```
+
+> [!TIP]
+> Можно указать дополнительные аргументы для передачи в приложение с помощью параметра [`--` для `dotnet run`](../tools/dotnet-run.md#options).
+
+### <a name="runworkingdirectory"></a>RunWorkingDirectory
+
+Свойство `RunWorkingDirectory` определяет рабочий каталог для запуска процесса приложения. Если каталог не указан, в качестве рабочего каталога используется `OutDir`.
+
+```xml
+<PropertyGroup>
+  <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
 </PropertyGroup>
 ```
 

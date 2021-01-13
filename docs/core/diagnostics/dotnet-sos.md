@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-sos — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-sos для управления расширением отладчика SOS, которое используется с собственными отладчиками в Windows и Linux.
 ms.date: 11/17/2020
-ms.openlocfilehash: 59512c42a778f68bb3cd092dc854dcc727fd2881
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 09e8228c47bdc632bccf3c9ad2296d55fe420060
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825446"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765011"
 ---
 # <a name="sos-installer-dotnet-sos"></a>Установщик SOS (dotnet-sos)
 
@@ -43,7 +43,10 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## <a name="description"></a>Описание
 
-Глобальное средство `dotnet-sos` устанавливает [расширение отладчика SOS](../../framework/tools/sos-dll-sos-debugging-extension.md), которое позволяет выполнять [проверку управляемого состояния .NET Core](https://github.com/dotnet/diagnostics/blob/master/documentation/sos-debugging-extension.md) из собственных отладчиков, таких как WinDbg/CDB в Windows и lldb в Linux и macOS. Последние версии отладчика Windows (> = версия 10.0.18317.1001 WinDbg или CDB) загружают SOS автоматически из коллекции расширений Майкрософт, поэтому установка SOS через средство `dotnet-sos` требуется только в Linux и macOS или при использовании в Windows старых средств отладки.
+Глобальное средство `dotnet-sos` устанавливает [расширение отладчика SOS](sos-debugging-extension.md). Это расширение позволяет проверять управляемое состояние .NET Core из отладчиков машинного кода, таких как lldb и windbg.
+
+> [!NOTE]
+> Установка SOS с помощью средства `dotnet-sos` требуется только в Linux или macOS.  Это также может потребоваться в Windows, если вы используете старые средства отладки. Последние версии [Отладчика Windows](/windows-hardware/drivers/debugger/debugger-download-tools) (версии WinDbg или CDB >= 10.0.18317.1001) автоматически загружают SOS из коллекции расширений Майкрософт.  
 
 ## <a name="options"></a>Параметры
 
@@ -57,17 +60,30 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## <a name="dotnet-sos-install"></a>dotnet-sos install
 
-Установка [расширения SOS](../../framework/tools/sos-dll-sos-debugging-extension.md) локально для отладки процессов .NET Core. В macOS и Linux файл LLDBINIT будет обновлен таким образом, чтобы расширение загружалось автоматически при запуске lldb. При установке SOS в Windows с более старыми средствами отладки (< версии 10.0.18317.1001) необходимо вручную загрузить расширение в WinDbg или CDB, запустив `.load %USERPROFILE%\.dotnet\sos\sos.dll` в отладчике.
+Установка [расширения SOS](sos-debugging-extension.md) локально для отладки процессов .NET Core. В macOS и Linux файл *LLDBINIT* будет обновлен таким образом, чтобы расширение загружалось автоматически при запуске lldb. При установке SOS в Windows с более старыми средствами отладки (ниже версии 10.0.18317.1001) необходимо вручную загрузить расширение в WinDbg или CDB, запустив `.load %USERPROFILE%\.dotnet\sos\sos.dll` в отладчике.
 
 ### <a name="synopsis"></a>Краткий обзор
 
 ```console
-dotnet-sos install
+dotnet-sos install [--architecture <arch>]
 ```
+
+### <a name="options"></a>Параметры
+
+- **`--architecture <arch>`**
+
+  Задает архитектуру процессора для устанавливаемых двоичных файлов SOS. По умолчанию средство `dotnet-sos` устанавливает архитектуру хост-компьютера. Используйте этот параметр, если необходимо установить SOS для архитектуры, отличной от архитектуры узла dotnet. Например, если вы запускаете двоичные файлы Arm32 на узле Arm64, необходимо установить SOS командой `dotnet-sos install --architecture Arm`.
+
+  Доступны следующие архитектуры:
+
+  - `Arm`
+  - `Arm64`
+  - `X86`
+  - `X64`
 
 ## <a name="dotnet-sos-uninstall"></a>dotnet-sos uninstall
 
-Удаление [расширения SOS](../../framework/tools/sos-dll-sos-debugging-extension.md) и, если в Linux или macOS, удаление из конфигурации lldb.
+Удаление [расширения SOS](sos-debugging-extension.md), а в Linux и macOS также удаление из конфигурации lldb.
 
 ### <a name="synopsis"></a>Краткий обзор
 

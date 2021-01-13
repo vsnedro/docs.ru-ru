@@ -2,12 +2,12 @@
 title: Отладка дампов Linux
 description: В этой статье вы узнаете, как выполнять сбор и анализ дампов из сред Linux.
 ms.date: 08/27/2020
-ms.openlocfilehash: 94f923f2ec7b5fa20c2ebc9b83540094348dff03
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: e6f2eea3af718853ad7365a5209b397a66035dde
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95099150"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753605"
 ---
 # <a name="debug-linux-dumps"></a>Отладка дампов Linux
 
@@ -15,7 +15,10 @@ ms.locfileid: "95099150"
 
 ## <a name="collect-dumps-on-linux"></a>Сбор дампов в Linux
 
-Два рекомендуемых способа сбора дампов в Linux — это средства [`dotnet-dump`](dotnet-dump.md) или [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md).
+Два рекомендуемых способа сбора дампов в Linux:
+
+* Средство CLI [`dotnet-dump`](dotnet-dump.md)
+* [Переменные среды](dumps.md#collecting-dumps-on-crash) для сборки дампов при аварийном завершении
 
 ### <a name="managed-dumps-with-dotnet-dump"></a>Управляемые дампы с помощью `dotnet-dump`
 

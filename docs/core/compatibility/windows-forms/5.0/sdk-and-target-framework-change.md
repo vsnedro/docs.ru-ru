@@ -2,12 +2,12 @@
 title: Критическое изменение. В приложениях WinForms и WPF используется Microsoft.NET.Sdk
 description: Ознакомьтесь с критическим изменением в .NET 5.0, где приложения Windows Forms и Windows Presentation Framework теперь используют пакет SDK для .NET вместо .NET Core WinForms и пакета SDK WPF.
 ms.date: 09/18/2020
-ms.openlocfilehash: 5f25be44c390abc173f155351d8cb007a6b370b0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5eafed03fbf034f6a6457217a8527a877214e239
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759871"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633823"
 ---
 # <a name="winforms-and-wpf-apps-use-microsoftnetsdk"></a>В приложениях WinForms и WPF используется Microsoft.NET.Sdk
 
@@ -47,7 +47,7 @@ ms.locfileid: "95759871"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-.NET 5.0
+Пакет SDK для .NET 5.0.100
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 

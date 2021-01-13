@@ -1,13 +1,13 @@
 ---
 title: Критическое изменение. Свойству OutputType задано значение WinExe для приложений WPF и WinForms
-description: Сведения о критическом изменении в .NET 5.0, где свойству OutputType автоматически задается значение WinExe для приложений Windows Forms.
+description: Сведения о критическом изменении в пакете SDK для .NET 5.0.100, где свойству OutputType автоматически задается значение WinExe для приложений Windows Forms.
 ms.date: 09/18/2020
-ms.openlocfilehash: 072c5b11c8304eb540e176ce9747930789f28505
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0b56db57d5242f2fb001c4de339a7f696c088dfc
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95760021"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633861"
 ---
 # <a name="outputtype-set-to-winexe-for-wpf-and-winforms-apps"></a>Свойству OutputType задано значение WinExe для приложений WPF и WinForms
 
@@ -15,7 +15,7 @@ ms.locfileid: "95760021"
 
 ## <a name="change-description"></a>Описание изменений
 
-В предыдущих версиях .NET используется значение, указанное для `OutputType` в файле проекта. Пример:
+В предыдущих версиях пакета SDK для .NET используется значение, указанное для `OutputType` в файле проекта. Пример:
 
 ```xml
 <PropertyGroup>
@@ -23,7 +23,7 @@ ms.locfileid: "95760021"
 </PropertyGroup>
 ```
 
-Начиная с .NET 5.0 свойству `OutputType` автоматически задается значение `WinExe` для приложений WPF и Windows Forms. Пример:
+Начиная с версии 5.0.100 пакета SDK для .NET для `OutputType` автоматически задается значение `WinExe` для приложений WPF и Windows Forms, предназначенных для любой версии платформы, включая .NET Framework. Пример:
 
 ```xml
 <PropertyGroup>
@@ -37,7 +37,7 @@ ms.locfileid: "95760021"
 
 ## <a name="version-introduced"></a>Представленная версия
 
-.NET 5.0
+.NET 5.0.100
 
 ## <a name="recommended-action"></a>Рекомендованное действие
 

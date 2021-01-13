@@ -2,12 +2,12 @@
 title: Ведение журнала и трассировка (.NET Core)
 description: Общие сведения о ведении журнала и трассировке в .NET Core.
 ms.date: 10/12/2020
-ms.openlocfilehash: 86444f2451079e54050f6698f3e45ddff0700acf
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: fac8eeed63e8737ad42699d81b421747b207c69a
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820583"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753631"
 ---
 # <a name="net-core-logging-and-tracing"></a>Ведение журнала и трассировка в .NET Core
 
@@ -36,11 +36,11 @@ ms.locfileid: "94820583"
   - Полезно для сведений, которые могут потребоваться клиенту для просмотра в выпуске.
   - Это самый простой подход. Он часто используется для краткосрочных и непредвиденных действий по отладке. Такой код отладки часто даже не попадает в систему управления версиями.
 - <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
-  - Включается только при наличии определения `TRACE`.
+  - Включается только в том случае, если `TRACE` определяется путем добавления `#define TRACE` в источник или указания параметра `/d:TRACE` при компиляции.
   - Записывает данные в присоединенные прослушиватели (<xref:System.Diagnostics.Trace.Listeners>, по умолчанию это <xref:System.Diagnostics.DefaultTraceListener>).
   - Используйте этот API при создании журналов, которые будут включены в большинстве сборок.
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
-  - Включается только при наличии определения `DEBUG`.
+  - Включается только в том случае, если `DEBUG` определяется путем добавления `#define DEBUG` в источник или указания параметра `/d:DEBUG` при компиляции.
   - Передает данные в присоединенный отладчик.
   - В системах `*nix` ведет запись в stderr, если задан параметр `COMPlus_DebugWriteToStdErr`.
   - Используйте этот API при создании журналов, которые будут включены только в сборках отладки.
@@ -95,6 +95,8 @@ ms.locfileid: "94820583"
 - [Интерполяция строк в C#](../../csharp/language-reference/tokens/interpolated.md) помогает упростить создание кода для ведения журналов.
 
 - [Список событий поставщика среды выполнения](../../fundamentals/diagnostics/runtime-events.md)
+
+- [Стандартные поставщики событий в .NET](well-known-event-providers.md)
 
 - Свойство <xref:System.Exception.Message?displayProperty=nameWithType> очень полезно для ведения журналов исключений.
 

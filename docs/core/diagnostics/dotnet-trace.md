@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-trace — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-trace для получения трассировки .NET для запущенного процесса без собственного профилировщика с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: 868ce7828eee6bd7f2101d5d6a65c7f7bf87fe24
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: a3b5748cb2a6c2060971fbad0d81ade00dc83087
+ms.sourcegitcommit: 35ca2255c6c86968eaef9e3a251c9739ce8e4288
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009538"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753670"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -144,6 +144,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   > [!NOTE]
   > При использовании этого параметра выполняется мониторинг первого процесса .NET 5.0, который передает результаты обратно в средство. Это означает, что если команда запускает несколько приложений .NET, данные будут собираться только о первом приложении. Поэтому рекомендуется использовать этот параметр для автономных приложений или с помощью параметра `dotnet exec <app.dll>`.
 
+> [!NOTE]
+> Для больших приложений остановка трассировки может занять много времени (до нескольких минут). Среде выполнения необходимо передать кэш типов для всего управляемого кода, захваченного при трассировке.
+
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 
 Преобразует трассировки `nettrace` в альтернативные форматы для использования с другими средствами анализа трассировок.
@@ -169,6 +172,9 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 - **`-o|--output <output-filename>`**
 
   Имя файла выходных данных. К нему добавляется расширение целевого формата.
+
+> [!NOTE]
+> Преобразование файлов `nettrace` в файлы `chromium` или `speedscope` является необратимым. Файлы `speedscope` и `chromium` не содержат всей информации, необходимой для воссоздания `nettrace` файлов. Однако команда `convert` сохраняет исходный файл `nettrace`, поэтому не удаляйте этот файл, если вы планируете открывать его в будущем.
 
 ## <a name="dotnet-trace-ps"></a>dotnet-trace ps
 
@@ -329,12 +335,31 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 
 Эта команда отключает события среды выполнения и профилировщик управляемого стека.
 
-## <a name="net-providers"></a>Поставщики .NET
+## <a name="use-rsp-file-to-avoid-typing-long-commands"></a>Использование файла RSP, чтобы не вводить длинные команды
 
-Среда выполнения .NET Core поддерживает следующие поставщики .NET. .NET Core использует одинаковые ключевые слова для включения трассировок `Event Tracing for Windows (ETW)` и `EventPipe`.
+Можно запустить команду `dotnet-trace` с файлом `.rsp`, содержащим аргументы для передачи. Это может быть полезно при включении поставщиков, для которых требуются длинные аргументы, или при использовании среды оболочки, которая обрезает символы.
 
-| Имя поставщика                            | Сведения |
-|------------------------------------------|-------------|
-| `Microsoft-Windows-DotNETRuntime`        | [Поставщик среды выполнения](../../framework/performance/clr-etw-providers.md#the-runtime-provider)<br>[Ключевые слова среды выполнения CLR](../../framework/performance/clr-etw-keywords-and-levels.md#runtime) |
-| `Microsoft-Windows-DotNETRuntimeRundown` | [Поставщик очистки](../../framework/performance/clr-etw-providers.md#the-rundown-provider)<br>[Ключевые слова очистки CLR](../../framework/performance/clr-etw-keywords-and-levels.md#rundown) |
-| `Microsoft-DotNETCore-SampleProfiler`    | Включает пример профилировщика. |
+Ниже приведен пример поставщика, команда трассировки которого слишком громоздка, чтобы каждый раз набирать ее вручную.
+
+```cmd
+dotnet-trace collect --providers Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+Кроме того, в предыдущем примере аргумент содержит символ `"`. Так как кавычки в каждой оболочке обрабатываются по-разному, могут возникать различные проблемы. Например, команда в `zsh` будет отличаться от команды в `cmd`.
+
+Вместо того чтобы вводить ее каждый раз, можно сохранить следующий текст в файл с именем `myprofile.rsp`.
+
+```txt
+--providers
+Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+После сохранения файла `myprofile.rsp` можно запустить `dotnet-trace` с этой конфигурацией, выполнив следующую команду:
+
+```bash
+dotnet-trace @myprofile.rsp
+```
+
+## <a name="see-also"></a>См. также раздел
+
+- [Стандартные поставщики событий из .NET](well-known-event-providers.md)

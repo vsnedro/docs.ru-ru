@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9544b65f31772d0f4cee918528a73171fec4de99
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: dcc64fe651b219ff1416c0afcdb4c6d275160f4b
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032052"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97911546"
 ---
 ### <a name="change-in-default-value-of-useshellexecute"></a>Изменение значения по умолчанию для UseShellExecute
 
@@ -13,6 +13,13 @@ ms.locfileid: "96032052"
 #### <a name="change-description"></a>Описание изменений
 
 <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> позволяет запускать приложение напрямую, например с помощью кода, как `Process.Start("mspaint.exe")`, запускающего Paint. Это также позволяет косвенно запускать связанное приложение, если для <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> установлено значение `true`. В .NET Framework значением по умолчанию для <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> является `true`, что означает, что такой код как `Process.Start("mytextfile.txt")` будет запускать Блокнот, если вы связали файлы *.txt* с этим редактором. Чтобы предотвратить косвенный запуск приложения на .NET Framework, необходимо явно установить `false` на <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType>. В .NET Core значением по умолчанию для <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> является значение `false`. Это означает, что связанные по умолчанию приложения не запускаются при вызове `Process.Start`.
+
+Следующие свойства <xref:System.Diagnostics.ProcessStartInfo?displayProperty=nameWithType> работают только в том случае, если <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> имеет значение `true`:
+
+- <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.ErrorDialog?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.Verb?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.WindowStyle?displayProperty=nameWithType>.
 
 Это изменение введено в .NET Core для повышения производительности. Как правило, <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> используется для непосредственного запуска приложения. Запуск приложения напрямую не требует затрагивания оболочки Windows и влечет за собой соответствующие расходы на производительность. Чтобы ускорить этот вариант по умолчанию, .NET Core изменяет значение по умолчанию <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> на `false`. При необходимости вы можете выбрать более медленный путь.
 

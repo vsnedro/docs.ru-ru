@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-symbol — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-symbol для загрузки файлов, необходимых для отладки дампов и минидампов .NET.
 ms.date: 11/17/2020
-ms.openlocfilehash: 8ea694e5331f1e4e75b3b3ad644428568e515331
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 69c05544e886d9d41113c8a2383f760b85d01124
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94825342"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764998"
 ---
 # <a name="symbol-downloader-dotnet-symbol"></a>Загрузчик символов (dotnet-symbol)
 
@@ -15,7 +15,7 @@ ms.locfileid: "94825342"
 
 ## <a name="install"></a>Установка
 
-Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-trace) `dotnet-trace`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
+Чтобы установить последнюю версию [пакета NuGet](https://www.nuget.org/packages/dotnet-symbol) `dotnet-symbol`, используйте команду [dotnet tool install](../tools/dotnet-tool-install.md).
 
 ```dotnetcli
 dotnet tool install --global dotnet-symbol
@@ -55,7 +55,7 @@ dotnet-symbol [-h|--help] [options] <FILES>
 
 - **`--host-only`**
 
-  Загрузка только основной программы (например, dotnet), которая требуется lldb для загрузки основных дампов.
+  Загрузка только основной программы (то есть dotnet), которая требуется lldb для загрузки основных дампов.
 
 - **`--symbols`**
 
@@ -98,3 +98,8 @@ dotnet-symbol --host-only --debugging <dump file path>
 - Ошибка 404 (объект не найден) при скачивании символов.
 
    Загрузка символов поддерживается только для официальных версий среды выполнения .NET Core, полученных по официальным каналам, таким как [официальный веб-сайт](https://dotnet.microsoft.com/download/dotnet-core) и [источники по умолчанию в сценариях установки dotnet](../tools/dotnet-install-script.md). Ошибка 404 при скачивании файлов отладки может указывать на то, что дамп был создан с помощью среды выполнения .NET Core из другого источника, например из исходного кода, созданного локально или для конкретного дистрибутива Linux, либо с сайтов сообщества, таких как archlinux. В таких случаях файл, необходимый для отладки (dotnet, libcoreclr.so и libmscordaccore.so), должен быть скопирован из этих источников или из среды, в которой был создан файл дампа.
+
+## <a name="see-also"></a>См. также раздел
+
+* [Отладка с помощью символов](/windows/win32/dxtecharts/debugging-with-symbols)
+* [Переносимые PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)

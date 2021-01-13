@@ -1,18 +1,18 @@
 ---
-title: Организация и тестирование проектов с помощью .NET Core CLI
-description: В этом учебнике объясняется, как упорядочить и протестировать проекты .NET Core из командной строки.
+title: Организация и тестирование проектов с помощью .NET CLI
+description: В этом учебнике объясняется, как упорядочить и протестировать проекты .NET из командной строки.
 author: cartermp
 ms.date: 09/10/2018
-ms.openlocfilehash: 58c78c0f11ab1b275e4e4d05bf1da32562333c91
-ms.sourcegitcommit: 0a798a7e9680e2d0a5a81a3eaa203870ea782883
+ms.openlocfilehash: 263eaf15beac008de8bb353a385b8f3588a7fefc
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84325949"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633641"
 ---
-# <a name="organizing-and-testing-projects-with-the-net-core-cli"></a>Организация и тестирование проектов с помощью .NET Core CLI
+# <a name="organizing-and-testing-projects-with-the-net-cli"></a>Организация и тестирование проектов с помощью .NET CLI
 
-Это руководство служит продолжением документа [Учебник. Создание консольного приложения с помощью .NET Core в Visual Studio Code](with-visual-studio-code.md), и с его помощью мы переходим от создания простых консольных приложений к разработке более сложных и структурированных приложений. В этом руководстве будет описано, как упорядочить код с помощью папок и расширить консольное приложение с помощью платформы тестирования [xUnit](https://xunit.github.io/).
+Это руководство служит продолжением документа [Учебник. Создание консольного приложения с помощью .NET в Visual Studio Code](with-visual-studio-code.md), и с его помощью мы переходим от создания простых консольных приложений к разработке более сложных и структурированных приложений. В этом руководстве будет описано, как упорядочить код с помощью папок и расширить консольное приложение с помощью платформы тестирования [xUnit](https://xunit.net/).
 
 ## <a name="using-folders-to-organize-code"></a>Упорядочение кода с помощью папок
 
@@ -42,6 +42,10 @@ ms.locfileid: "84325949"
 Проекты, в которых файлы логически упорядочены в папки, легко поддерживать. Они также отличаются удобной навигацией. В следующем разделе мы создадим более сложный пример проекта с папками и модульным тестированием.
 
 ## <a name="organizing-and-testing-using-the-newtypes-pets-sample"></a>Упорядочение и тестирование проекта на основе примера проекта с новыми типами для животных
+
+### <a name="prerequisites"></a>Предварительные требования
+
+* [Пакет SDK для .NET 5.0](https://dotnet.microsoft.com/download) или более поздней версии
 
 ### <a name="building-the-sample"></a>Создание примера
 
@@ -100,7 +104,7 @@ Meow!
 
 ### <a name="testing-the-sample"></a>Тестирование примера
 
-Проект `NewTypes` развернут, и вы упорядочили типы, связанные с животными, в отдельную папку. Теперь давайте создадим тестовый проект и напишем тесты с помощью платформы тестирования [xUnit](https://xunit.github.io/). Модульное тестирование позволяет автоматически проверять правильную работу типов домашних животных.
+Проект `NewTypes` развернут, и вы упорядочили типы, связанные с животными, в отдельную папку. Теперь давайте создадим тестовый проект и напишем тесты с помощью платформы тестирования [xUnit](https://xunit.net/). Модульное тестирование позволяет автоматически проверять правильную работу типов домашних животных.
 
 Вернитесь в папку *src*, создайте папку *test*, а внутри нее — папку *NewTypesTests*. В командной строке перейдите в каталог *NewTypesTests* и выполните команду `dotnet new xunit`. Эта команда создает два файла: *NewTypesTests.csproj* и *UnitTest1.cs*.
 
@@ -181,38 +185,27 @@ public class PetTests
       |__NewTypesTests.csproj
 ```
 
-Запустите тест в папке *test/NewTypesTests*. Восстановите тестовый проект, выполнив команду [`dotnet restore`](../tools/dotnet-restore.md). Запустите тесты, выполнив команду [`dotnet test`](../tools/dotnet-test.md). Эта команда запускает средство запуска тестов, указанное в файле проекта.
-
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+Запустите тест в папке *test/NewTypesTests*. Запустите тесты, выполнив команду [`dotnet test`](../tools/dotnet-test.md). Эта команда запускает средство запуска тестов, указанное в файле проекта.
 
 Как и ожидалось, тест завершается с ошибкой, и в консоли отображаются следующие выходные данные:
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-[xUnit.net 00:00:00.77]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
-[xUnit.net 00:00:00.78]     PetTests.CatTalkToOwnerReturnsMeow [FAIL]
-Failed   PetTests.DogTalkToOwnerReturnsWoof
-Error Message:
- Assert.NotEqual() Failure
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.50]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
+  Failed PetTests.DogTalkToOwnerReturnsWoof [6 ms]
+  Error Message:
+   Assert.NotEqual() Failure
 Expected: Not "Woof!"
 Actual:   "Woof!"
-Stack Trace:
-   at PetTests.DogTalkToOwnerReturnsWoof() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 13
-Failed   PetTests.CatTalkToOwnerReturnsMeow
-Error Message:
- Assert.NotEqual() Failure
-Expected: Not "Meow!"
-Actual:   "Meow!"
-Stack Trace:
-   at PetTests.CatTalkToOwnerReturnsMeow() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 22
+  Stack Trace:
+     at PetTests.DogTalkToOwnerReturnsWoof() in C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\PetTests.cs:line 13
 
-Total tests: 2. Passed: 0. Failed: 2. Skipped: 0.
-Test Run Failed.
-Test execution time: 1.7000 Seconds
+Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2, Duration: 8 ms - NewTypesTests.dll (net5.0)
 ```
 
 Измените проверочные утверждения в тестах с `Assert.NotEqual` на `Assert.Equal`:
@@ -222,15 +215,14 @@ Test execution time: 1.7000 Seconds
 Повторно запустите тесты, выполнив `dotnet test` команду, и получите следующие выходные данные:
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
 
-Total tests: 2. Passed: 2. Failed: 0. Skipped: 0.
-Test Run Successful.
-Test execution time: 1.6029 Seconds
+Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 2 ms - NewTypesTests.dll (net5.0)
 ```
 
 Тесты завершены успешно. Методы типов животных возвращают правильные значения при взаимодействии с владельцем.

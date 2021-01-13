@@ -2,12 +2,12 @@
 title: Дампы — .NET
 description: Общие сведения о дампах в .NET.
 ms.date: 10/12/2020
-ms.openlocfilehash: 56cf4085d10658c828bac39be93eed3f774e00d5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7a4c7bf54b3e9ea43e685eafbd00b4a373326520
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242777"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764946"
 ---
 # <a name="dumps"></a>Файлы дампа
 
@@ -53,7 +53,13 @@ ms.locfileid: "96242777"
 
 ## <a name="analyze-dumps"></a>Анализ дампов
 
-Дампы можно анализировать с помощью [`dotnet-dump`](dotnet-dump.md).
+Дампы можно проанализировать с помощью средства CLI [`dotnet-dump`](dotnet-dump.md) или посредством [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files).
+
+> [!NOTE]
+> Visual Studio версии 16.8 и более поздних версий позволяет [открывать дампы Linux](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/), созданные в .NET Core 3.1.7 и более поздних версий.  
+
+> [!NOTE]
+> Если необходима отладка машинного кода, можно использовать [расширение отладчика SOS](sos-debugging-extension.md) совместно с [LLDB в Linux и macOS](debug-linux-dumps.md#analyze-dumps-on-linux). SOS также поддерживается в Windows c [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools), хотя рекомендуется использовать Visual Studio.
 
 ## <a name="see-also"></a>См. также раздел
 

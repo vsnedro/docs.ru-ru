@@ -2,19 +2,19 @@
 title: Создание шаблона проекта для dotnet new
 description: Из этой статьи вы узнаете, как создать шаблон проекта для команды dotnet new.
 author: adegeo
-ms.date: 06/25/2019
+ms.date: 12/11/2020
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 75fedb2333a4ef9e16a27126055b6cacaf37c1c5
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: ed40cfd303c70c7b8f198a0f5b593bf1e1ebeaf8
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324326"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513137"
 ---
 # <a name="tutorial-create-a-project-template"></a>Учебник. Создание шаблона проекта
 
-С помощью .NET Core вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это руководство представляет собой вторую часть серии, в которой описано, как создавать, устанавливать и удалять шаблоны с помощью команды `dotnet new`.
+С помощью .NET вы можете создавать и развертывать шаблоны, которые генерируют проекты, файлы и даже ресурсы. Это руководство представляет собой вторую часть серии, в которой описано, как создавать, устанавливать и удалять шаблоны с помощью команды `dotnet new`.
 
 Из этой части вы узнаете, как выполнять такие задачи:
 
@@ -33,7 +33,7 @@ ms.locfileid: "85324326"
 
 ## <a name="create-a-project-template"></a>Создание шаблона проекта
 
-Шаблоны проектов предоставляют готовые проекты, которые упрощают пользователям взаимодействие с рабочим набором кода. .NET Core включает несколько шаблонов проектов, например консольное приложение или библиотеку класса. В этом описано, как создать консольный проект, который включает поддержку C# 8.0 и создает точку входа `async main`.
+Шаблоны проектов предоставляют готовые проекты, которые упрощают пользователям взаимодействие с рабочим набором кода. .NET включает несколько шаблонов проектов, например консольное приложение или библиотеку класса. В этом примере описано, как создать консольный проект, который включает поддержку C# 9.0 и создает точку входа `async main`.
 
 В окне терминала перейдите к папке _working\templates_ и создайте вложенную папку с именем _consoleasync_. Откройте созданную папку и выполните команду `dotnet new console`, чтобы создать стандартное консольное приложение. Чтобы создать новый шаблон, созданные им файлы нужно изменить.
 
@@ -59,7 +59,7 @@ namespace consoleasync
     {
         static async Task Main(string[] args)
         {
-            await Console.Out.WriteAsync("Hello World with C# 8.0!");
+            await Console.Out.WriteAsync("Hello World with C# 9.0!");
         }
     }
 }
@@ -67,16 +67,16 @@ namespace consoleasync
 
 ## <a name="modify-consoleasynccsproj"></a>Изменение файла consoleasync.csproj
 
-Мы изменим версию языка C#, которую использует проект, на 8.0. Отредактируйте файл _consoleasync.csproj_ и добавьте параметр `<LangVersion>` для узла `<PropertyGroup>`.
+Мы изменим версию языка C#, которую использует проект, на 9.0. Отредактируйте файл _consoleasync.csproj_ и добавьте параметр `<LangVersion>` для узла `<PropertyGroup>`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
 
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
 
   </PropertyGroup>
   
@@ -96,7 +96,7 @@ dotnet run
 Вы получите приведенные ниже выходные данные.
 
 ```console
-Hello World with C# 8.0!
+Hello World with C# 9.0!
 ```
 
 Вы можете удалить папки _obj_ и _bin_, созданные после запуска команды `dotnet run`. Удаление этих файлов гарантирует, что шаблон будет включать только те файлы, которые связаны с шаблоном (без файлов, созданных в результате сборки).
@@ -105,7 +105,7 @@ Hello World with C# 8.0!
 
 ## <a name="create-the-template-config"></a>Создание конфигурации шаблона
 
-Шаблоны распознаются в .NET Core по специальной папке и файлу конфигурации, которые находятся в корневой папке шаблона. В нашем случае папка шаблона имеет такое расположение: _working\templates\consoleasync_.
+Шаблоны распознаются в .NET по специальной папке и файлу конфигурации, которые находятся в корневой папке шаблона. В нашем случае папка шаблона имеет такое расположение: _working\templates\consoleasync_.
 
 При создании шаблона все файлы и папки в этой папке включаются как его часть, кроме специальной папки конфигурации. Эта папка конфигурации имеет имя _.template.config_.
 
@@ -125,7 +125,7 @@ working
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Me",
-  "classifications": [ "Common", "Console", "C#8" ],
+  "classifications": [ "Common", "Console", "C#9" ],
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
@@ -136,7 +136,7 @@ working
 }
 ```
 
-Этот файл конфигурации содержит все параметры шаблона. Вы можете увидеть основные параметры, например `name` и `shortName`, но в нем также присутствует параметр `tags/type` со значением `project`. Он указывает на то, что ваш шаблон является шаблоном проекта. Вы можете создать шаблон любого типа. Значения `item` и `project` — это общие рекомендуемые имена .NET Core, которые позволяют без усилий фильтровать типы шаблонов при поиске.
+Этот файл конфигурации содержит все параметры шаблона. Вы можете увидеть основные параметры, например `name` и `shortName`, но в нем также присутствует параметр `tags/type` со значением `project`. Он указывает на то, что ваш шаблон является шаблоном проекта. Вы можете создать шаблон любого типа. Значения `item` и `project` — это общие рекомендуемые имена .NET, которые позволяют без усилий фильтровать типы шаблонов при поиске.
 
 Элемент `classifications` представляет столбец **tags**, который отображается после запуска команды `dotnet new` и получения списка шаблонов. Пользователи также могут выполнять поиск по тегам классификации. Не путайте свойство `tags` в JSON-файле со списком тегов `classifications`. Это два разных элемента, которые, к сожалению, имеют одинаковые имена. Полная схема файла *template.json* находится в [хранилище схем JSON](http://json.schemastore.org/template). Дополнительные сведения о файле *template.json* см. на [вики-сайте о шаблонах dotnet](https://github.com/dotnet/templating/wiki).
 
@@ -159,19 +159,17 @@ Options:
 
 ... cut to save space ...
 
-Templates                                         Short Name            Language          Tags
--------------------------------------------------------------------------------------------------------------------------------
-Console Application                               console               [C#], F#, VB      Common/Console
-Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
-Class library                                     classlib              [C#], F#, VB      Common/Library
-WPF Application                                   wpf                   [C#], VB          Common/WPF
-Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
-Worker Service                                    worker                [C#]              Common/Worker/Web
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+Console Application                               console                  [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
+Class library                                     classlib                 [C#], F#, VB      Common/Library
+WPF Application                                   wpf                      [C#], VB          Common/WPF
 ```
 
 ### <a name="test-the-project-template"></a>Тестирование шаблона проекта
 
-Теперь, когда вы установили шаблон элемента, протестируйте его.
+Теперь, когда вы установили шаблон проекта, протестируйте его.
 
 1. Перейдите в папку _теста_.
 
@@ -196,14 +194,14 @@ Worker Service                                    worker                [C#]    
     Вы получите приведенные ниже выходные данные.
 
     ```console
-    Hello World with C# 8.0!
+    Hello World with C# 9.0!
     ```
 
-Поздравляем! Вы создали и развернули шаблон проекта с помощью .NET Core. Для подготовки к следующей части этой серии руководств вам необходимо удалить созданный шаблон. Также обязательно удалите все файлы из папки _test_. Так вы воссоздадите первоначальные условия для работы со следующим разделом этого руководства.
+Поздравляем! Вы создали и развернули шаблон проекта с помощью .NET. Для подготовки к следующей части этой серии руководств вам необходимо удалить созданный шаблон. Также обязательно удалите все файлы из папки _test_. Так вы воссоздадите первоначальные условия для работы со следующим разделом этого руководства.
 
 ### <a name="uninstall-the-template"></a>Удаление шаблона
 
-Так как вы установили шаблон с указанием пути к файлу, вам нужно удалить его, указав **абсолютный** путь к файлу. Вы можете просмотреть список всех установленных шаблонов, выполнив команду `dotnet new -u`. Ваш шаблон должен быть последним в списке. Удалите шаблон с помощью команды `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>`, указав путь к нему.
+Так как вы установили шаблон с указанием пути к файлу, вам нужно удалить его, указав **абсолютный** путь к файлу. Вы можете просмотреть список всех установленных шаблонов, выполнив команду `dotnet new -u`. Ваш шаблон должен быть последним в списке. Используйте `Uninstall Command`, чтобы удалить шаблон.
 
 ```dotnetcli
 dotnet new -u
@@ -215,31 +213,31 @@ dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
-  C:\working\templates\consoleasync
+  C:\Test\templatetutorial\working\templates\consoleasync
     Templates:
       Example templates: async project (consoleasync) C#
+    Uninstall Command:
+      dotnet new -u C:\working\templates\consoleasync
 ```
 
-Чтобы удалить шаблон, выполните указанную ниже команду.
+Чтобы удалить созданный шаблон, запустите `Uninstall Command`, показанный в выходных данных.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\consoleasync
