@@ -2,12 +2,12 @@
 title: Перенос .NET Core из project.json
 description: Сведения о переносе старого проекта .NET Core с использованием project.json
 ms.date: 07/19/2017
-ms.openlocfilehash: 73fbfed6943e3eb535e6eead3b3496edd3426c26
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 28da1723ed91d169305c2865c5346b8ce6e0b3d1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970724"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189714"
 ---
 # <a name="migrating-net-core-projects-from-projectjson"></a>Перенос проектов .NET Core из project.json
 
@@ -78,7 +78,7 @@ Visual Studio автоматически переносит выбранные �
 - Удалите пространство имен XML (`xmlns`) из элемента `<Project>`.
 - Если атрибут `Sdk` не существует, добавьте этот атрибут к элементу `<Project>` и установите значение атрибута в `Microsoft.NET.Sdk` или `Microsoft.NET.Sdk.Web`. Этот атрибут означает, что в проекте используется указанный пакет SDK. `Microsoft.NET.Sdk.Web` используется для веб-приложений.
 - Удалите инструкции `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` и `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` в верхней и нижней частях проекта. Эти инструкции импорта выполняются пакетом SDK, поэтому включать их в проект не нужно.
-- Если в проекте есть элементы `Microsoft.NETCore.App` или `NETStandard.Library` `<PackageReference>`, их следует удалить. Эти ссылки на пакет [содержатся в пакете SDK](../tools/csproj.md).
+- Если в проекте есть элементы `Microsoft.NETCore.App` или `NETStandard.Library` `<PackageReference>`, их следует удалить. Эти ссылки на пакет [содержатся в пакете SDK](../project-sdk/overview.md).
 - Удалите элемент `Microsoft.NET.Sdk` `<PackageReference>`, если он существует. Пакет SDK ссылается на атрибут `Sdk` элемента `<Project>`.
 - Удалите [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)), [подразумеваемые пакетом SDK](../project-sdk/overview.md#default-includes-and-excludes). Если оставить эти объекты glob в проекте, это приведет к ошибке сборки из-за дублирования элементов компиляции.
 

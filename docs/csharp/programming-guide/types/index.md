@@ -12,12 +12,12 @@ helpviewer_keywords:
 - C# language, types
 - strong typing [C#]
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.openlocfilehash: c347dbc6af46d4c334445d606d7cedfdf17e43f6
-ms.sourcegitcommit: 30e9e11dfd90112b8eec6406186ba3533f21eba1
+ms.openlocfilehash: 6a1a5b230e427a4991162a702245f1a87352784d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95098714"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190251"
 ---
 # <a name="types-c-programming-guide"></a>Типы (Руководство по программированию на C#)
 
@@ -74,8 +74,6 @@ C# предоставляет стандартный набор встроенн
 - Каждый тип в CTS определяется как *тип значения* либо *ссылочный тип*. Это справедливо и для всех пользовательских типов, в том числе включенных в библиотеку классов .NET или определенных вами. Если в определении типа используется ключевое слово [struct](../../language-reference/builtin-types/struct.md), он является типом значения. Например, все встроенные числовые типы определены как `structs`. Если в определении типа используется ключевое слово [class](../../language-reference/keywords/class.md), он является ссылочным типом. Для ссылочных типов и типов значений используются разные правила компиляции, и они демонстрируют разное поведение во время выполнения.
 
 Ниже показаны взаимоотношения между типами значения и ссылочными типами в CTS.
-
-На следующем изображении показаны типы значений и ссылочные типы в CTS:
 
 ![Снимок экрана, где показаны типы значений и ссылочные типы в CTS.](./media/index/value-reference-types-common-type-system.png)
 
