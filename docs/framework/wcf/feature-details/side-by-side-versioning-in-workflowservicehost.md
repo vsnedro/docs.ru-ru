@@ -5,19 +5,16 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.openlocfilehash: 878e610bd1fe0b7e2496f251333a3ad21909788a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1505582e5ac7303a2df20539fdcf67435746b9d3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245098"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190498"
 ---
 # <a name="side-by-side-versioning-in-workflowservicehost"></a>Параллельное управление версиями в WorkflowServiceHost
 
 <xref:System.ServiceModel.Activities.WorkflowServiceHost>Параллельное управление версиями, представленное в .NET Framework 4,5, предоставляет возможность размещения нескольких версий службы рабочего процесса на одной конечной точке. Предоставляемая функциональность параллельной работы позволяет настроить службу Workflow Service таким образом, чтобы новые экземпляры службы Workflow Service создавались с использованием нового определения рабочего процесса, а запущенные экземпляры завершались с использованием существующего определения. Данный раздел содержит общие сведения о параллельном выполнении служб Workflow Services с использованием <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
-  
-> [!NOTE]
-> Чтобы скачать пример и просмотреть видео пошаговое руководство по использованию службы рабочего процесса для параллельного управления версиями, см. статью [параллельное управление версиями с помощью службы рабочего процесса Web-Hosted XAMLX](https://go.microsoft.com/fwlink/?LinkId=393746).  
   
 ## <a name="hosting-multiple-versions-in-a-workflow-service"></a>Размещение нескольких версий в службе Workflow Service  
 

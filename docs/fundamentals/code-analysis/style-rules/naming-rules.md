@@ -16,12 +16,12 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 8ce209e64ee7f9f9028c221daedef8fc6a993ef7
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 0eea5e89ac5055a45d9ead14363cc2f2fc574401
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96594161"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191083"
 ---
 # <a name="naming-rules"></a>Правила именования
 
@@ -75,11 +75,11 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 Чтобы правило вступило в силу, требуются все свойства правил именования.
 
-| Свойство | Описание |
+| Свойство. | Описание |
 | -- | -- |
 | `symbols` | Заголовок группы символов, определяющий символы, к которым должно применяться это правило |
 | `style` | Заголовок стиля именования, который должен быть связан с этим правилом |
-| `severity` |  Задает серьезность, с которой будет принудительно применяться правило именования. Задайте для связанного значения один из доступных [уровней серьезности](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#severity-level). <sup>1</sup> |
+| `severity` |  Задает серьезность, с которой будет принудительно применяться правило именования. Задайте для связанного значения один из доступных [уровней серьезности](../configuration-options.md#severity-level). <sup>1</sup> |
 
 **Примечания.**
 
@@ -97,7 +97,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 Для групп символов можно задать следующие свойства, чтобы ограничить набор символов, включаемых в группу. Чтобы указать несколько значений в одном параметре свойства, разделите их запятыми.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | -- | -- | -- | -- |
 | `applicable_kinds` | Виды символов в группе <sup>1</sup> | `*` (используйте это значение, чтобы указать все символы)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Да |
 | `applicable_accessibilities` | Уровни доступности символов в группе | `*` (используйте это значение, чтобы указать все уровни доступа)<br/>`public`<br/>`internal` или `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` или `protected_friend`<br/>`private_protected`<br/>`local` (для символов, определенных в методе) | Да |
@@ -120,7 +120,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 Для стиля именования можно задать следующие свойства.
 
-| Свойство | Описание | Допустимые значения | Обязательно |
+| Свойство. | Описание | Допустимые значения | Обязательно |
 | -- | -- | -- | -- |
 | `capitalization` | Стиль капитализации для слов внутри символа | `pascal_case`<br/>`camel_case`<br/>`first_word_upper`<br/>`all_upper`<br/>`all_lower` | Да<sup>1</sup> |
 | `required_prefix` | Должно начинаться с этих символов | | Нет |

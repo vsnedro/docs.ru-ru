@@ -5,21 +5,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
-ms.openlocfilehash: 820ed324c8095e2f9f2823513a37965099f42c48
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: e47440110215d8e60744c26c6351211a2ac08f3a
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70989650"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191161"
 ---
 # <a name="how-to-host-multiple-versions-of-a-workflow-side-by-side"></a>Практическое руководство. Параллельное размещение множества версий рабочего процесса
 
 `WorkflowIdentity` предоставляет разработчикам приложений рабочих процессов способ связать имя и версию с определением рабочего процесса, а также связать эти сведения с сохраненным экземпляром рабочего процесса. Эти идентификационные данные могут быть использованы разработчиками приложений рабочего процесса для поддержки таких сценариев, как параллельное выполнение нескольких версий определения рабочего процесса, и являются ключевым элементом для других функциональных возможностей, таких как динамическое обновление. Этот шаг в учебнике показывает, как использовать `WorkflowIdentity` для размещения нескольких версий рабочих процессов одновременно.
 
-> [!NOTE]
-> Чтобы скачать готовую версию или просмотреть видео пошаговое руководство, см. Руководство по [Windows Workflow Foundation (WF45) — Начало работы](https://go.microsoft.com/fwlink/?LinkID=248976).
-
-## <a name="in-this-topic"></a>Содержание раздела
+## <a name="in-this-topic"></a>В этом разделе
 
 На этом этапе учебника действия `WriteLine` в рабочем процессе изменены для предоставления дополнительных сведений и добавлено новое действие `WriteLine`. Копия исходной сборки рабочего процесса сохранена, а ведущее приложение обновлено для возможности одновременного выполнения исходных и обновленных рабочих процессов.
 
@@ -33,17 +30,14 @@ ms.locfileid: "70989650"
 
   - [Обновление последовательного рабочего процесса](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
 
-- [Обновление WorkflowVersionMap для включения предыдущих версий рабочего процесса](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)
+- [Обновление WorkflowVersionMap для включения в предыдущие версии рабочего процесса](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)
 
-- [Сборка и запуск приложения](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BuildAndRun)
-
-> [!NOTE]
-> Перед выполнением действий, описанных в этом разделе, выполните приложение, запустите несколько рабочих процессов каждого типа и укажите одно или два предположения для каждого из них. Эти сохраненные рабочие процессы используются на этом шаге и на следующем шаге [: Обновление определения выполняющегося экземпляра](how-to-update-the-definition-of-a-running-workflow-instance.md)рабочего процесса.
+- [Построение и запуск приложения](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_BuildAndRun)
 
 > [!NOTE]
-> Каждый шаг в учебнике «Приступая к работе» построен на основе предыдущих шагов. Если вы не выполнили предыдущие шаги, можно скачать завершенную версию руководства из [Windows Workflow Foundation (WF45) — Начало работы учебнике](https://go.microsoft.com/fwlink/?LinkID=248976).
+> Перед выполнением действий, описанных в этом разделе, выполните приложение, запустите несколько рабочих процессов каждого типа и укажите одно или два предположения для каждого из них. Эти сохраненные рабочие процессы используются на этом шаге и на следующем шаге [: обновление определения выполняющегося экземпляра рабочего процесса](how-to-update-the-definition-of-a-running-workflow-instance.md).
 
-### <a name="BKMK_BackupCopy"></a>Создание копии проекта NumberGuessWorkflowActivities
+### <a name="to-make-a-copy-of-the-numberguessworkflowactivities-project"></a><a name="BKMK_BackupCopy"></a> Создание копии проекта NumberGuessWorkflowActivities
 
 1. Откройте решение **WF45GettingStartedTutorial** в Visual Studio 2012, если оно не открыто.
 
@@ -55,24 +49,24 @@ ms.locfileid: "70989650"
 
 5. Создайте новую папку с именем **превиаусверсионс** в той же папке, что и **NumberGuessWorkflowHost** и **NumberGuessWorkflowActivities**. Эта папка служит для хранения сборок, содержащих различные версии рабочих процессов, которые используются на последующих шагах учебника.
 
-6. Перейдите в папку **нумбергуессворкфловактивитиес\бин\дебуг** (или **Bin\Release** в зависимости от параметров проекта). Скопируйте файл **NumberGuessWorkflowActivities. dll** и вставьте его в папку **превиаусверсионс** .
+6. Перейдите в папку **нумбергуессворкфловактивитиес\бин\дебуг** (или **Bin\Release** в зависимости от параметров проекта). Скопируйте **NumberGuessWorkflowActivities.dll** и вставьте его в папку **превиаусверсионс** .
 
-7. Переименуйте **NumberGuessWorkflowActivities. dll** в папке **превиаусверсионс** в **NumberGuessWorkflowActivities_v1. dll**.
+7. Переименуйте **NumberGuessWorkflowActivities.dll** в папке **превиаусверсионс** , чтобы **NumberGuessWorkflowActivities_v1.dll**.
 
     > [!NOTE]
     > Шаги в этом разделе демонстрируют один способ управления сборками, которые используются для хранения нескольких версий рабочих процессов. Также можно использовать другие методы, такие как строгое наименование сборок и их регистрация в глобальном кэше сборок (GAC).
 
-8. Создайте новую папку с именем **NumberGuessWorkflowActivities_du** в той же папке, что и **NumberGuessWorkflowHost**, **NumberGuessWorkflowActivities**, и вновь добавленную папку **превиаусверсионс** , а затем скопируйте все файлы и вложенные папки из папки **NumberGuessWorkflowActivities** в новую папку **NumberGuessWorkflowActivities_du** . Эта резервная копия проекта для начальной версии действий используется в [следующих руководствах: Обновление определения выполняющегося экземпляра](how-to-update-the-definition-of-a-running-workflow-instance.md)рабочего процесса.
+8. Создайте новую папку с именем **NumberGuessWorkflowActivities_du** в той же папке, что и **NumberGuessWorkflowHost**, **NumberGuessWorkflowActivities**, и вновь добавленную папку **превиаусверсионс** , а затем скопируйте все файлы и вложенные папки из папки **NumberGuessWorkflowActivities** в новую папку **NumberGuessWorkflowActivities_du** . Эта резервная копия проекта для начальной версии действий используется в [процедуре обновления определения выполняющегося экземпляра рабочего процесса](how-to-update-the-definition-of-a-running-workflow-instance.md).
 
 9. Повторно откройте решение **WF45GettingStartedTutorial** в Visual Studio 2012.
 
-### <a name="BKMK_UpdateWorkflows"></a>Обновление рабочих процессов
+### <a name="to-update-the-workflows"></a><a name="BKMK_UpdateWorkflows"></a> Обновление рабочих процессов
 
 В этом разделе обновлены определения рабочего процесса. Обновлены два действия `WriteLine`, которые получают отзывы на пробное значение пользователя, и добавлено новое действие `WriteLine`, которое предоставляет дополнительные сведения об игре, как только будет угадано число.
 
-#### <a name="BKMK_UpdateStateMachine"></a>Обновление рабочего процесса StateMachine
+#### <a name="to-update-the-statemachine-workflow"></a><a name="BKMK_UpdateStateMachine"></a> Обновление рабочего процесса StateMachine
 
-1. В **Обозреватель решений**в проекте **NumberGuessWorkflowActivities** дважды щелкните **StateMachineNumberGuessWorkflow. XAML**.
+1. В **Обозреватель решений** в проекте **NumberGuessWorkflowActivities** дважды щелкните **StateMachineNumberGuessWorkflow. XAML**.
 
 2. Дважды щелкните **некорректный** переход на конечный автомат.
 
@@ -112,9 +106,9 @@ ms.locfileid: "70989650"
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-#### <a name="BKMK_UpdateFlowchart"></a>Обновление рабочего процесса блок-схемы
+#### <a name="to-update-the-flowchart-workflow"></a><a name="BKMK_UpdateFlowchart"></a> Обновление рабочего процесса блок-схемы
 
-1. В **Обозреватель решений**в проекте **NumberGuessWorkflowActivities** дважды щелкните **FlowchartNumberGuessWorkflow. XAML**.
+1. В **Обозреватель решений** в проекте **NumberGuessWorkflowActivities** дважды щелкните **FlowchartNumberGuessWorkflow. XAML**.
 
 2. Обновите `Text` крайнего левого действия `WriteLine`.
 
@@ -136,7 +130,7 @@ ms.locfileid: "70989650"
     Guess + " is too high."
     ```
 
-4. Перетащите действие **WriteLine** из раздела **примитивы** **области элементов** и поместите его в точку `True` перетаскивания действия самого верхнего `FlowDecision`элемента. Действие `WriteLine` добавляется к блок-схеме и связывается с действием `True``FlowDecision`.
+4. Перетащите действие **WriteLine** из раздела **примитивы** **области элементов** и поместите его в точку перетаскивания `True` действия самого верхнего элемента `FlowDecision` . Действие `WriteLine` добавляется к блок-схеме и связывается с действием `True``FlowDecision`.
 
 5. В поле свойств `Text` введите следующее выражение.
 
@@ -148,9 +142,9 @@ ms.locfileid: "70989650"
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-#### <a name="BKMK_UpdateSequential"></a>Обновление последовательного рабочего процесса
+#### <a name="to-update-the-sequential-workflow"></a><a name="BKMK_UpdateSequential"></a> Обновление последовательного рабочего процесса
 
-1. В **Обозреватель решений**в проекте **NumberGuessWorkflowActivities** дважды щелкните **SequentialNumberGuessWorkflow. XAML**.
+1. В **Обозреватель решений** в проекте **NumberGuessWorkflowActivities** дважды щелкните **SequentialNumberGuessWorkflow. XAML**.
 
 2. Обновите `Text` крайнего левого `WriteLine` в действии `If`.
 
@@ -184,7 +178,7 @@ ms.locfileid: "70989650"
     Guess + " is correct. You guessed it in " + Turns + " turns."
     ```
 
-### <a name="BKMK_UpdateWorkflowVersionMap"></a>Обновление WorkflowVersionMap для включения предыдущих версий рабочего процесса
+### <a name="to-update-workflowversionmap-to-include-the-previous-workflow-versions"></a><a name="BKMK_UpdateWorkflowVersionMap"></a> Обновление WorkflowVersionMap для включения предыдущих версий рабочего процесса
 
 1. Дважды щелкните **WorkflowVersionMap.CS** (или **WorkflowVersionMap. vb**) в проекте **NumberGuessWorkflowHost** , чтобы открыть его.
 
@@ -552,7 +546,7 @@ ms.locfileid: "70989650"
     }
     ```
 
-### <a name="BKMK_BuildAndRun"></a> Сборка и запуск приложения
+### <a name="to-build-and-run-the-application"></a><a name="BKMK_BuildAndRun"></a> Сборка и запуск приложения
 
 1. Нажмите сочетание клавиш CTRL+SHIFT+B, чтобы построить приложение, а затем сочетание клавиш CTRL+F5 для его запуска.
 
@@ -572,7 +566,7 @@ ms.locfileid: "70989650"
     > [!NOTE]
     > Отображается обновленный текст из действий `WriteLine`, но выходные данные последнего действия `WriteLine`, которое было добавлено в этом разделе, отсутствуют. Это происходит потому, что окно состояния обновляется обработчиком `PersistableIdle`. Поскольку рабочий процесс завершается, а не переходит в состояние бездействия после окончательного действия, обработчик `PersistableIdle` не вызывается. Однако похожее сообщение отображается обработчиком `Completed` в окне состояния. Если необходимо, код можно добавить в обработчик `Completed`, чтобы извлечь текст из `StringWriter` и показать его в окне состояния.
 
-3. Откройте проводник Windows и перейдите в папку **нумбергуессворкфловхост\бин\дебуг** (или **Bin\Release** в зависимости от параметров проекта) и откройте файл отслеживания с помощью блокнота, который соответствует завершенному рабочему процессу. Если вы не запустили заметку `InstanceId`, вы можете найти правильный файл отслеживания, используя сведения об **изменении даты** в проводнике Windows.
+3. Откройте проводник Windows и перейдите в папку **нумбергуессворкфловхост\бин\дебуг** (или **Bin\Release** в зависимости от параметров проекта) и откройте файл отслеживания с помощью блокнота, который соответствует завершенному рабочему процессу. Если вы не запустили заметку `InstanceId` , вы можете найти правильный файл отслеживания, используя сведения об **изменении даты** в проводнике Windows.
 
     ```console
     Please enter a number between 1 and 10
@@ -589,4 +583,4 @@ ms.locfileid: "70989650"
 
 4. Перейдите к приложению отгадывания чисел и выберите один из рабочих процессов, который был запущен до выполнения обновлений. Вы можете указать версию выбранного в данный момент рабочего процесса, посмотрев сведения о версии, отображаемые под окном состояния. Введите несколько предположений и обратите внимание на то, что некоторые обновления состояния соответствуют выходным данным действия `WriteLine` из предыдущей версии, но не включают предположение пользователя. Это происходит потому, что такие рабочие процессы используют предыдущее определение рабочего процесса, в котором не выполнены обновления `WriteLine`.
 
-    На следующем шаге [: Обновление определения выполняющегося экземпляра](how-to-update-the-definition-of-a-running-workflow-instance.md)рабочего процесса, при этом выполняется обновление выполняющихся `v1` экземпляров рабочего процесса, чтобы они содержали `v2` новые функциональные возможности в качестве экземпляров.
+    На следующем шаге [: как обновить определение выполняющегося экземпляра рабочего процесса](how-to-update-the-definition-of-a-running-workflow-instance.md), выполняющиеся `v1` экземпляры рабочего процесса обновляются, чтобы они содержали новые функциональные возможности в качестве `v2` экземпляров.
