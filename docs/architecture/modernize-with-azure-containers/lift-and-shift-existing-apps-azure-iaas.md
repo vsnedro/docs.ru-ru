@@ -1,13 +1,13 @@
 ---
 title: Перенос существующих приложений .NET в Azure IaaS (в готовом для облачной инфраструктуры виде)
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows.
-ms.date: 04/28/2018
-ms.openlocfilehash: d610222aa6649c1b28e198c074794dd316f895ec
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: fb875c38cac236826007bba217189238b7c00898
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172174"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025398"
 ---
 # <a name="lift-and-shift-existing-net-apps-to-azure-iaas-cloud-infrastructure-ready"></a>Перенос существующих приложений .NET в Azure IaaS (в готовом для облачной инфраструктуры виде)
 

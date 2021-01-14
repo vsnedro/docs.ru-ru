@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 6b6651f674f09d5d0d18ddb873096037ad3b2ba5
-ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
+ms.openlocfilehash: 270735c9eef9f1930680687917317ac8bdf39e6d
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91247581"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970698"
 ---
 # <a name="net-project-sdks"></a>Пакеты SDK для проектов .NET
 
@@ -83,9 +83,9 @@ ms.locfileid: "91247581"
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### <a name="default-compilation-includes"></a>Включения для элементов компиляции по умолчанию
+### <a name="default-includes-and-excludes"></a>Включения и исключения по умолчанию
 
-В пакете SDK определены стандартные включения и исключения для элементов компиляции, внедренных ресурсов и элементов `None`. В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Это позволяет уменьшить файлы проекта и без труда понимать их, а при необходимости даже вносить правки вручную.
+В пакете SDK определены стандартные включения и исключения для [элементов `Compile`](/visualstudio/msbuild/common-msbuild-project-items#compile), [внедренных ресурсов](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource) и [элементов `None`](/visualstudio/msbuild/common-msbuild-project-items#none). В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Такой подход позволяет уменьшить файлы проекта и без труда понимать их, а при необходимости даже вносить правки вручную.
 
 В следующей таблице показано, какие элементы и [стандартные маски](https://en.wikipedia.org/wiki/Glob_(programming)) включены в пакет SDK для .NET и исключены из него:
 
@@ -96,7 +96,7 @@ ms.locfileid: "91247581"
 | Отсутствуют              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
-> Папки `./bin` и `./obj`, которые представлены свойствами MSBuild `$(BaseOutputPath)` и `$(BaseIntermediateOutputPath)`, исключаются из стандартных масок исключения по умолчанию. Исключения представляется свойством `$(DefaultItemExcludes)`.
+> Папки `./bin` и `./obj`, которые представлены свойствами MSBuild `$(BaseOutputPath)` и `$(BaseIntermediateOutputPath)`, исключаются из стандартных масок исключения по умолчанию. Исключения представлены свойством [DefaultItemExcludes](msbuild-props.md#defaultitemexcludes).
 
 #### <a name="build-errors"></a>Ошибки сборки
 
@@ -110,7 +110,7 @@ ms.locfileid: "91247581"
 
 - Удалите явно заданные элементы `Compile`, `EmbeddedResource` или `None`, которые совпадают с неявно заданными параметрами из предыдущей таблицы.
 
-- Задайте свойству `EnableDefaultItems` значение `false`, чтобы отключить все неявные включения файлов.
+- Присвойте [свойству EnableDefaultItems](msbuild-props.md#enabledefaultitems) значение `false`, чтобы отключить все неявные включения файлов:
 
   ```xml
   <PropertyGroup>
@@ -120,7 +120,7 @@ ms.locfileid: "91247581"
 
   Если вы хотите указать файлы, которые нужно публиковать вместе с приложением, для этого можно по-прежнему использовать привычные механизмы MSBuild (например, элемент `Content`).
 
-- Выборочно отключите только стандартные маски `Compile`, `EmbeddedResource` или `None`, задав для свойства `EnableDefaultCompileItems`, `EnableDefaultEmbeddedResourceItems` или `EnableDefaultNoneItems` значение `false`.
+- Выборочно отключите только стандартные маски `Compile`, `EmbeddedResource` или `None`, присвоив свойствам [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems) или [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) значение `false`:
 
   ```xml
   <PropertyGroup>

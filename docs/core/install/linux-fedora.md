@@ -3,21 +3,47 @@ title: Установка .NET в Fedora — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: f7422941af7e39d69d286a0f79920b025c1bf9c0
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.date: 01/06/2021
+ms.openlocfilehash: 9dd8c6264831e2a9382960be505639f1eba95151
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96031908"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970828"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-fedora"></a>Установка пакета SDK для .NET или среды выполнения .NET в Fedora
 
-.NET поддерживается в Fedora. В этой статье описано, как установить .NET в Fedora. Если поддержка какой-либо версии Fedora прекращается, то .NET также перестает поддерживать ее. Но с помощью этих инструкций вы сможете запустить .NET даже в неподдерживаемых версиях.
+Платформа .NET поддерживается в Fedora. В этой статье описано, как установить .NET в Fedora. Если поддержка какой-либо версии Fedora прекращается, то .NET также перестает поддерживать ее.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
+## <a name="install-net-50"></a>Установка .NET 5.0
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+**Fedora 32**
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
+```
+
+**Fedora 33**
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+
+## <a name="install-net-core-31"></a>Установка .NET Core 3.1
+
+Последней версией .NET, которая представлена в репозиториях пакетов по умолчанию для Fedora 33, является .NET Core 3.1.
+
+[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
@@ -27,15 +53,11 @@ ms.locfileid: "96031908"
 - Значок ❌ означает, что версия Fedora или версия .NET в таком выпуске Fedora не поддерживается.
 - Если значок ✔️ стоит как напротив версии Fedora, так и напротив версии .NET, это значит, что такое сочетание ОС и .NET поддерживается.
 
-| Fedora               | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
-|----------------------|---------------|---------------|----------|
-| ✔️ [33](#fedora-33-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [32](#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ [31](#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [30](#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [29](#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
-| ❌ [28](#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ [27](#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| Версия .NET  | Fedora 33 ✔️ | 32 ✔️ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| ------------  | ---------: | --: | --: | --: | --: | --: | --: |
+| .NET 5.0      | ✔️        | ✔️ | ❌|❌ |❌ |❌  |❌ |
+| .NET Core 3.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |❌  |❌ |
+| .NET Core 2.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |✔️  |✔️ |
 
 Следующие версии .NET больше не поддерживаются. (но остаются доступными для скачивания):
 
@@ -47,106 +69,43 @@ ms.locfileid: "96031908"
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## <a name="dependencies"></a>Зависимости
+
+[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
+
+## <a name="install-on-older-distributions"></a>Установка в других дистрибутивах
+
+В репозиториях пакетов по умолчанию для более старых версий Fedora отсутствует .NET Core. Вы можете установить .NET с помощью пакета [snap](linux-snap.md), [скрипта _dotnet-install.sh_](linux-scripted-manual.md#scripted-install)или репозитория Майкрософт:
+
+01. Сначала необходимо добавить ключ подписывания пакета Майкрософт в список доверенных ключей.
+
+    ```bash
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    ```
+
+02. Далее добавьте репозиторий пакетов Майкрософт. Источник репозитория зависит от вашей версии Fedora.
+
+    | Версия Fedora | Репозиторий пакетов |
+    | -------------- | ------- |
+    | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
+    | 30             | `https://packages.microsoft.com/config/fedora/30/prod.repo` |
+    | 29             | `https://packages.microsoft.com/config/fedora/29/prod.repo` |
+    | 28             | `https://packages.microsoft.com/config/fedora/28/prod.repo` |
+    | 27             | `https://packages.microsoft.com/config/fedora/27/prod.repo` |
+
+    ```bash
+    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
+    ```
+
+[!INCLUDE [linux-dnf-install-31](./includes/linux-install-31-dnf.md)]
+
 ## <a name="how-to-install-other-versions"></a>Установка других версий
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
-## <a name="fedora-33-"></a>Fedora 33 ✔️
-
-> [!TIP]
-> .NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для Fedora 33. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. .NET 5.0 еще не предоставляется в репозиториях пакетов по умолчанию.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
-
-## <a name="fedora-32-"></a>Fedora 32 ✔️
-
-> [!TIP]
-> .NET Core 3.1 предоставляется в репозиториях пакетов по умолчанию для Fedora 32. Чтобы установить .NET Core 3.1, используйте команду `dnf install` с соответствующим пакетом, например `aspnetcore-runtime-3.1` или `dotnet-sdk-3.1`. .NET 5.0 еще не предоставляется в репозиториях пакетов по умолчанию.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
-
-## <a name="fedora-31-"></a>Fedora 31 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
-
-## <a name="fedora-30-"></a>Fedora 30 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/30/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
-
-## <a name="fedora-29-"></a>Fedora 29 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-30](includes/linux-install-30-dnf.md)]
-
-## <a name="fedora-28-"></a>Fedora 28 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/28/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-20](includes/linux-install-20-dnf.md)]
-
-## <a name="fedora-27-"></a>Fedora 27 ❌
-
-[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/27/prod.repo
-```
-
-[!INCLUDE [linux-dnf-install-20](includes/linux-install-20-dnf.md)]
-
 ## <a name="troubleshoot-the-package-manager"></a>Устранение неполадок диспетчера пакетов
 
-В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET Core.
+В этом разделе описаны распространенные ошибки, которые могут возникнуть при использовании диспетчера пакетов для установки .NET или .NET Core.
 
 ### <a name="unable-to-find-package"></a>Не удалось найти пакет
 
@@ -156,22 +115,7 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## <a name="snap"></a>Snap-пакеты
+## <a name="next-steps"></a>Дальнейшие действия
 
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
-## <a name="dependencies"></a>Зависимости
-
-[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
-
-## <a name="scripted-install"></a>Установка с помощью скрипта
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>Установка вручную
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
-## <a name="next-steps"></a>Следующие шаги
-
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

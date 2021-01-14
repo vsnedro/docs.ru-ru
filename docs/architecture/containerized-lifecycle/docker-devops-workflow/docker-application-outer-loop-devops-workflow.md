@@ -1,13 +1,13 @@
 ---
 title: Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 description: Сведения об этапах, относящихся к "внешнему циклу" рабочего процесса DevOps
-ms.date: 08/06/2020
-ms.openlocfilehash: 82a45c8669812580623811e18cc55f55f45cb6d3
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.date: 01/06/2021
+ms.openlocfilehash: bfac2d2c7866bfd11cd18201a93cb17a72cae588
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271911"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970301"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
 
@@ -77,7 +77,7 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 
 Используя эти задачи Visual Studio Team Services, узел или виртуальную машину сборки Linux-Docker, подготовленные в Azure, а также предпочтительный реестр Docker (реестр контейнеров Azure, Docker Hub, закрытый доверенный реестр Docker DTR или любой другой реестр Docker), вы можете обеспечить максимально согласованное построение конвейера непрерывной интеграции Docker.
 
-***Требования:***
+**_Требования:_* _
 
 - Службы Azure DevOps Services либо (для локальной установки) Team Foundation Server 2015 с обновлением 3 или более поздней версии.
 
@@ -90,7 +90,7 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 > - Запуск агента Visual Studio Team Services (теперь Azure DevOps Services) в качестве контейнера Docker: \
 >   <https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent>
 >
-> - Сборка образов Docker .NET Core Linux с использованием Azure DevOps Services: \
+> - Сборка образов Docker .NET Linux с использованием Azure DevOps Services: \
 >   <https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services>
 >
 > - Построение машины сборки Visual Studio Team Service на основе Linux с поддержкой Docker: \
@@ -126,7 +126,7 @@ Azure DevOps Services и Team Foundation Server поддерживают Git и 
 
 ![Схема, на которой показана отправка пользовательских образов в реестр контейнеров.](./media/docker-application-outer-loop-devops-workflow/docker-push-custom-images.png)
 
-**Рис. 5-4**. Публикация пользовательских образов в реестре Docker
+_*Рис. 5-4**. Публикация пользовательских образов в реестре Docker
 
 На этапе 3 при построении интеграции и тестирования (непрерывная интеграция) вы можете публиковать полученные образы Docker в закрытом или общедоступном реестре. На рынке представлены реестры Docker, предлагаемые целым рядом поставщиков облачных решений, в том числе реестр контейнеров Azure, Amazon Web Services Container Registry, Google Container Registry, Quay Registry и другие.
 

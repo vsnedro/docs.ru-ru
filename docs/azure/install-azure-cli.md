@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
-ms.openlocfilehash: 43737aaf5dfd02b8c4ffa6c213d7221cfe38162f
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: aa2739cc6c11145887e64921398c72affeaec729
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700971"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025033"
 ---
 # <a name="install-the-azure-cli"></a>Установка Azure CLI
 
@@ -35,3 +35,7 @@ Azure CLI доступен для Windows, macOS и Linux.
 Azure CLI также можно использовать в Azure Cloud Shell по адресу [https://shell.azure.com](https://shell.azure.com).  Azure Cloud Shell представляет собой полнофункциональную браузерную оболочку для управления ресурсами Azure.  Azure Cloud Shell удобно использовать в тех случаях, когда требуется среда командной строки, но работа ведется на устройстве, где нельзя установить Azure CLI.
 
 ![Снимок экрана: Azure Cloud Shell в браузере](media/azure-cloud-shell.png)
+
+### <a name="next-steps"></a>Дальнейшие действия
+
+Затем необходимо [установить дополнительные инструменты Azure](./azure-tools.md), такие как Обозреватель службы хранилища Azure и Azure Data Studio, чтобы повысить эффективность работы с Azure.

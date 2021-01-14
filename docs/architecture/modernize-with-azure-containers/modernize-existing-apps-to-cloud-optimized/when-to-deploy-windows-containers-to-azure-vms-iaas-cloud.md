@@ -1,13 +1,13 @@
 ---
 title: Когда следует развертывать контейнеры Windows на виртуальных машинах Azure (облачная среда IaaS)
 description: Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows | Когда следует развертывать контейнеры Windows на виртуальных машинах Azure (облачная среда IaaS)
-ms.date: 04/28/2018
-ms.openlocfilehash: e9a2903662306b607977a7751018e24161ab80ab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 12/21/2020
+ms.openlocfilehash: 64ba53fa56227266ee0e61a128d18373a2dbbc93
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "69577907"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025098"
 ---
 # <a name="when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"></a>Когда следует развертывать контейнеры Windows на виртуальных машинах Azure (облачная среда IaaS)
 

@@ -3,12 +3,12 @@ title: Команда dotnet nuget push
 description: Команда dotnet nuget push отправляет пакет на сервер и публикует его.
 author: karann-msft
 ms.date: 02/14/2020
-ms.openlocfilehash: 50a4a542c2d192bfbd927845489d04fd1b6c6cf3
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 99e735f7bb18b7af1c12c3ef77fc150a19083542
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555127"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970659"
 ---
 # <a name="dotnet-nuget-push"></a>dotnet nuget push
 
@@ -74,7 +74,9 @@ dotnet nuget push -h|--help
 
 - **`-s|--source <SOURCE>`**
 
-  Определяет URL-адрес сервера. Этот параметр является обязательным, если значение параметра конфигурации `DefaultPushSource` задано в файле конфигурации NuGet.
+  Определяет URL-адрес сервера. NuGet определяет источник в формате UNC или локальную папку и просто копирует файл вместо отправки через HTTP.
+  > [!IMPORTANT]
+  > Начиная с NuGet 3.4.2, этот параметр является обязательным, если в файле конфигурации NuGet не указано значение `DefaultPushSource`. Дополнительные сведения см. в статье [Configuring NuGet behavior](/nuget/consume-packages/configuring-nuget-behavior) (Настройка поведения NuGet).
 
 - **`--skip-duplicate`**
 
@@ -94,7 +96,7 @@ dotnet nuget push -h|--help
 
 ## <a name="examples"></a>Примеры
 
-- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию, предоставляя ключ API:
+- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию, указанный в файле конфигурации NuGet, используя ключ API:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
@@ -112,7 +114,7 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию:
+- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию, указанный в файле конфигурации NuGet:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
@@ -124,13 +126,13 @@ dotnet nuget push -h|--help
   dotnet nuget push foo.symbols.nupkg
   ```
 
-- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию, указав время ожидания 360 секунд:
+- Отправляет *foo.nupkg* в источник push-уведомлений по умолчанию, указанный в файле конфигурации NuGet, с временем ожидания 360 с:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-- Отправляет все файлы *NUPKG* из текущего каталога в источник push-уведомлений по умолчанию:
+- Отправляет все файлы *NUPKG* из текущего каталога в источник push-уведомлений по умолчанию, указанный в файле конфигурации NuGet:
 
   ```dotnetcli
   dotnet nuget push "*.nupkg"
@@ -143,7 +145,7 @@ dotnet nuget push -h|--help
   > [!NOTE]
   > Закрывающие кавычки необходимы для оболочек, таких как bash, выполняющих файл глобализации. Дополнительные сведения см. на странице [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
-- Принудительно отправляет все файлы *NUPKG*, даже если сервер HTTP(S) возвращает код состояния 409 Conflict (конфликт):
+- Отправляет все файлы *NUPKG* в источник push-уведомлений по умолчанию, указанный в файле конфигурации NuGet, даже если сервер HTTP (S) возвращает в ответе конфликт 409:
 
   ```dotnetcli
   dotnet nuget push "*.nupkg" --skip-duplicate

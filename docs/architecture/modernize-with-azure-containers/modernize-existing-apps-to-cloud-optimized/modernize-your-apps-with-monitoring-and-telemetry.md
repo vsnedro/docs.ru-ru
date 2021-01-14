@@ -1,13 +1,13 @@
 ---
 title: Модернизация приложений с помощью мониторинга и данных телеметрии
 description: Модернизация имеющихся приложений .NET с помощью облака Azure и контейнеров Windows | Модернизация приложений с помощью мониторинга и данных телеметрии
-ms.date: 04/30/2018
-ms.openlocfilehash: a6094435eece661d99904876ac49b3ca85ec45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 12/21/2020
+ms.openlocfilehash: c79a16400ce9dadca50fabb6c7df2859e4519a41
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172005"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025242"
 ---
 # <a name="modernize-your-apps-with-monitoring-and-telemetry"></a>Модернизация приложений с помощью мониторинга и данных телеметрии
 

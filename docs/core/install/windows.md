@@ -3,13 +3,13 @@ title: Установка .NET в Windows
 description: Сведения о версиях Windows, в которых возможна установка .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: b5c0949bbd591906536094a33d8583a265d8a4c8
-ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
+ms.date: 01/06/2021
+ms.openlocfilehash: d8ca3eed3786a728002d8ffe80b774a0018eee82
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97110238"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025457"
 ---
 # <a name="install-net-on-windows"></a>Установка .NET в Windows
 
@@ -182,28 +182,19 @@ ms.locfileid: "97110238"
 
 При установке пакета SDK для .NET или среды выполнения .NET в следующих версиях Windows требуются дополнительные зависимости:
 
-- Windows 7 с пакетом обновления 1 (SP1), [ESU][esu]
-- Windows Vista с пакетом обновления 2 (SP2)
-- Windows 8.1
-- Windows Server 2008 R2
-- Windows Server 2012 R2
+| Операционная система         | Предварительные требования                                                                    |
+|--------------------------|----------------------------------------------------------------------------------|
+| Windows 7 с пакетом обновления 1 (SP1), [ESU][esu] | – Распространяемый компонент Microsoft Visual C++ 2015–2019, [64-разрядный][vcc64] / [32-разрядный][vcc32] <br> – Обновление KB3063858, [64-разрядное][kb64] / [32-разрядное][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (только для .NET Core 2.1) |
+| Windows Vista с пакетом обновления 2 (SP2)       | Распространяемый компонент Microsoft Visual C++ 2015–2019, [64-разрядный][vcc64] / [32-разрядный][vcc32] |
+| Windows 8.1              | Распространяемый компонент Microsoft Visual C++ 2015–2019, [64-разрядный][vcc64] / [32-разрядный][vcc32] |
+| Windows Server 2008 R2   | Распространяемый компонент Microsoft Visual C++ 2015–2019, [64-разрядный][vcc64] / [32-разрядный][vcc32] |
+| Windows Server 2012 R2   | Распространяемый компонент Microsoft Visual C++ 2015–2019, [64-разрядный][vcc64] / [32-разрядный][vcc32] |
 
-Установите следующие компоненты:
+Приведенные выше требования также применяются, если возникает ошибка, связанная с любой из следующих библиотек DLL:
 
-- [Распространяемый компонент Microsoft Visual C++ 2015 с обновлением 3](https://www.microsoft.com/download/details.aspx?id=52685).
-- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
-
-Приведенные выше требования также применяются, если возникает одна из следующих ошибок:
-
-> Запуск программы невозможен, так как на компьютере отсутствует *api-ms-win-crt-runtime-l1-1-0.dll*. Попробуйте переустановить программу.
->
-> \- или -
->
-> Запуск программы невозможен, так как на компьютере отсутствует файл *api-ms-win-cor-timezone-l1-1-0.dll*. Попробуйте переустановить программу.
->
-> \- или -
->
-> Библиотека *hostfxr.dll* найдена, но при ее загрузке из *C:\\\<path_to_app>\\hostfxr.dll* произошел сбой.
+- *api-ms-win-crt-runtime-l1-1-0.dll*
+- *api-ms-win-cor-timezone-l1-1-0.dll*
+- *hostfxr.dll*
 
 ## <a name="install-with-powershell-automation"></a>Установка с помощью функции автоматизации PowerShell
 
@@ -318,3 +309,7 @@ set DOTNET_MULTILEVEL_LOOKUP=0
 - [Учебник. Контейнеризация приложения .NET Core](../docker/build-container.md).
 
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
+[vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
+[vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
+[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409

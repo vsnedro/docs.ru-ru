@@ -1,15 +1,15 @@
 ---
-title: Действия в рабочем процессе внешнего цикла DevOps для приложения Docker
+title: Создание конвейеров CI/CD в службах Azure DevOps для приложения .NET в контейнерах и развертывание в кластер Kubernetes
 description: Жизненный цикл контейнерного приложения Docker на основе платформы и средств Майкрософт
-ms.date: 08/06/2020
-ms.openlocfilehash: 1a973407d59484899f99fb6e326b8d7c8e97079b
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/06/2021
+ms.openlocfilehash: ef994f132716547ee402237016ee71013528d779
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915213"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970490"
 ---
-# <a name="creating-cicd-pipelines-in-azure-devops-services-for-a-net-core-application-on-containers-and-deploying-to-a-kubernetes-cluster"></a>Создание конвейеров CI/CD в службах Azure DevOps для приложения .NET Core в контейнерах и развертывание в кластер Kubernetes
+# <a name="create-cicd-pipelines-in-azure-devops-services-for-a-net-application-on-containers-and-deploying-to-a-kubernetes-cluster"></a>Создание конвейеров CI/CD в службах Azure DevOps для приложения .NET в контейнерах и развертывание в кластер Kubernetes
 
 На рисунке 5-12 показан комплексный сценарий DevOps, охватывающий управление кодом, компиляцию кода, создание образов Docker, отправку образы Docker в реестр Docker и, наконец, развертывание в кластере Kubernetes в Azure.
 

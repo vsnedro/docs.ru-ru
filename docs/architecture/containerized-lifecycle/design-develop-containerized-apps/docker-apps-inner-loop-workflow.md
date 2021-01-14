@@ -1,13 +1,13 @@
 ---
 title: Рабочий процесс внутреннего цикла разработки для приложений Docker
 description: Узнайте о рабочем процессе внутреннего цикла разработки для приложений Docker.
-ms.date: 08/06/2020
-ms.openlocfilehash: d66274a64591f79f242c1e8a63951b51d94a9ecd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/06/2021
+ms.openlocfilehash: 78c593890d56a6888d4c4ea6752497918222ebee
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676534"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970589"
 ---
 # <a name="inner-loop-development-workflow-for-docker-apps"></a>Рабочий процесс внутреннего цикла разработки для приложений Docker
 
@@ -85,11 +85,11 @@ ms.locfileid: "95676534"
 
 **Рис. 4-23**. Установка расширения Docker в Visual Studio Code
 
-### <a name="step-2-create-a-dockerfile-related-to-an-existing-image-plain-os-or-dev-environments-like-net-core-nodejs-and-ruby"></a>Шаг 2. Создание файла Dockerfile, связанного с существующим образом (обычная ОС или среды разработки, такие как .NET Core, Node.js и Ruby)
+### <a name="step-2-create-a-dockerfile-related-to-an-existing-image-plain-os-or-dev-environments-like-net-nodejs-and-ruby"></a>Шаг 2. Создание файла Dockerfile, связанного с существующим образом (обычная ОС или среды разработки, такие как .NET, Node.js и Ruby)
 
 Для каждого собираемого образа и каждого развертываемого контейнера требуется файл `DockerFile`. Если в приложении имеется только одна пользовательская служба, необходим один файл `DockerFile`. Но если приложение состоит из нескольких служб (как в архитектуре на основе микрослужб), потребуется по одному файлу `Dockerfile` для каждой службы.
 
-Файл `DockerFile` обычно находится в корневой папке приложения или службы и содержит команды, которые требуются Docker для настройки и запуска приложения или службы. Вы можете создать файл `DockerFile` самостоятельно и добавить его в проект вместе с кодом (node.js, .NET Core и т. д.) или, если у вас нет опыта работы со средой, воспользоваться приведенным ниже советом.
+Файл `DockerFile` обычно находится в корневой папке приложения или службы и содержит команды, которые требуются Docker для настройки и запуска приложения или службы. Вы можете создать файл `DockerFile` самостоятельно и добавить его в проект вместе с кодом (node.js, .NET и т. д.) или, если у вас нет опыта работы со средой, воспользоваться приведенным ниже советом.
 
 > [!TIP]
 > При использовании файлов `Dockerfile` и `docker-compose.yml`, связанных с контейнерами Docker, можно следовать указаниям, которые предоставляются расширением Docker. Вероятно, в дальнейшем вы будете создавать эти файлы, не прибегая к помощи данного средства, но поначалу оно позволяет ускорить обучение.
@@ -107,7 +107,7 @@ ms.locfileid: "95676534"
 
 **Рис. 4-24**. Добавление файлов Docker с помощью команды **Добавить файлы Docker в рабочую область**
 
-При добавлении файла Dockerfile указывается базовый образ Docker, который необходимо использовать (например, `FROM mcr.microsoft.com/dotnet/aspnet`). Обычно пользовательский образ создается на основе базового образа, полученного из официального репозитория в [реестре Docker Hub](https://hub.docker.com/) (например, [образа для .NET Core](https://hub.docker.com/_/microsoft-dotnet/) или [Node.js](https://hub.docker.com/_/node/)).
+При добавлении файла Dockerfile указывается базовый образ Docker, который необходимо использовать (например, `FROM mcr.microsoft.com/dotnet/aspnet`). Обычно пользовательский образ создается на основе базового образа, полученного из официального репозитория в [реестре Docker Hub](https://hub.docker.com/) (например, [образа для .NET](https://hub.docker.com/_/microsoft-dotnet/) или [Node.js](https://hub.docker.com/_/node/)).
 
 > [!TIP]
 > Эту процедуру необходимо повторить для каждого проекта в приложении. Однако после первого запуска расширение будет запрашивать перезапись созданного файла docker-compose. На запрос на перезапись нужно отвечать отказом, чтобы расширение создавало отдельные файлы docker-compose, которые затем можно объединить вручную перед выполнением docker-compose.
@@ -116,15 +116,15 @@ ms.locfileid: "95676534"
 
 Использование официального репозитория стека языка с номером версии гарантирует, что на всех компьютерах (включая компьютеры для разработки, тестирования и работы) будут доступны одни и те же функции языка.
 
-Вот пример файла Dockerfile для контейнера .NET Core:
+Вот пример файла Dockerfile для контейнера .NET:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["src/WebApi/WebApi.csproj", "src/WebApi/"]
 RUN dotnet restore "src/WebApi/WebApi.csproj"
@@ -141,22 +141,22 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApi.dll"]
 ```
 
-В этом случае образ основан на версии 3.1 официального образа Docker ASP.NET Core (мультиархитектурного, для Linux и Windows), что следует из строки `FROM mcr.microsoft.com/dotnet/aspnet:3.1`. (Дополнительные сведения по этой теме см. на страницах [Образ Docker ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-aspnet/) и [Образ Docker .NET Core](https://hub.docker.com/_/microsoft-dotnet/).)
+В этом случае образ основан на версии 5.0 официального образа Docker ASP.NET Core (мультиархитектурного, для Linux и Windows), что следует из строки `FROM mcr.microsoft.com/dotnet/aspnet:5.0`. (Дополнительные сведения по этой теме см. на страницах [Образ Docker ASP.NET Core](https://hub.docker.com/_/microsoft-dotnet-aspnet/) и [Образ Docker .NET](https://hub.docker.com/_/microsoft-dotnet/).)
 
 Кроме того, в файле Dockerfile можно указать, что средство Docker должно прослушивать порт TCP, который будет использоваться во время выполнения (например, порт 80 или 443).
 
-В Dockerfile можно задать дополнительные параметры конфигурации, в зависимости от используемого языка и платформы. Например, строка `ENTRYPOINT` со значением `["dotnet", "WebMvcApplication.dll"]` указывает Docker запускать приложение .NET Core. Если для создания и запуска приложения .NET используется пакет SDK и .NET Core CLI (`dotnet CLI`), этот параметр будет другим. Ключевой момент здесь заключается в том, что строка ENTRYPOINT и другие параметры зависят от языка и платформы, выбранных для приложения.
+В Dockerfile можно задать дополнительные параметры конфигурации, в зависимости от используемого языка и платформы. Например, строка `ENTRYPOINT` со значением `["dotnet", "WebMvcApplication.dll"]` указывает Docker запускать приложение .NET. Если для создания и запуска приложения .NET используется пакет SDK и .NET CLI (`dotnet CLI`), этот параметр будет другим. Ключевой момент здесь заключается в том, что строка ENTRYPOINT и другие параметры зависят от языка и платформы, выбранных для приложения.
 
 > [!TIP]
-> Дополнительные сведения о создании образов Docker для приложений .NET Core см. на странице <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
+> Дополнительные сведения о создании образов Docker для приложений .NET см. на странице <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
 >
 > Дополнительные сведения о создании собственных образов см. на странице <https://docs.docker.com/engine/tutorials/dockerimages/>.
 
 **Использование репозиториев мультиархитектурных образов**
 
-В репозитории могут содержаться варианты одного и того же образа для разных платформ, например образ Linux и образ Windows. Это позволяет поставщикам, таким как Майкрософт, которые создают базовые образы, создать один репозиторий для охвата нескольких платформ (т. е. Windows и Linux). Например, репозиторий [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) в реестре Docker Hub обеспечивает поддержку Linux и Windows Nano Server при использовании одного и того же имени образа.
+В репозитории могут содержаться варианты одного и того же образа для разных платформ, например образ Linux и образ Windows. Это позволяет поставщикам, таким как Майкрософт, которые создают базовые образы, создать один репозиторий для охвата нескольких платформ (т. е. Windows и Linux). Например, репозиторий [dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) в реестре Docker Hub обеспечивает поддержку Linux и Windows Nano Server при использовании одного и того же имени образа.
 
-При запросе образа [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) с узла Windows извлекается вариант для Windows, а при запросе образа с тем же именем с узла Linux — вариант для Linux.
+При запросе образа [dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) с узла Windows извлекается вариант для Windows, а при запросе образа с тем же именем с узла Linux — вариант для Linux.
 
 **_Создание базового образа с нуля_**
 
@@ -181,7 +181,7 @@ ENTRYPOINT ["dotnet", "WebApi.dll"]
 
 При необходимости вместо непосредственного выполнения команды `docker build` из папки проекта можно сначала создать развертываемую папку с нужными библиотеками .NET, выполнив команду `dotnet publish`, а затем использовать команду `docker build`.
 
-В этом примере создается образ Docker с именем `explore-docker-vscode/webapi:latest` (`:latest` — это тег, например определенная версия). Этот шаг можно выполнить для каждого пользовательского образа, который требуется создать для составного приложения Docker с несколькими контейнерами. Однако в следующем разделе мы увидим, что это проще сделать с помощью `docker-compose`.
+В этом примере создается образ Docker с именем `webapi:latest` (`:latest` — это тег, например определенная версия). Этот шаг можно выполнить для каждого пользовательского образа, который требуется создать для составного приложения Docker с несколькими контейнерами. Однако в следующем разделе мы увидим, что это проще сделать с помощью `docker-compose`.
 
 Вы можете найти образы, имеющиеся в локальном репозитории (на компьютере разработки), с помощью команды `docker images`, как показано на рисунке 4-26.
 
@@ -249,7 +249,7 @@ services:
 Образ Docker можно запустить с помощью команды docker run, как показано в этом примере:
 
 ```console
-docker run -t -d -p 50080:80 explore-docker-vscode/webapp:latest
+docker run -t -d -p 50080:80 webapp:latest
 ```
 
 Для этого конкретного развертывания мы будем перенаправлять запросы, отправленные на порт 50080 узла, на внутренний порт 80.
@@ -272,7 +272,7 @@ docker run -t -d -p 50080:80 explore-docker-vscode/webapp:latest
 
 Этот шаг будет зависеть от того, что делает ваше приложение.
 
-В случае простого веб-API Hello World на основе .NET Core, развернутого в виде единственного контейнера или службы, для доступа к службе достаточно указать TCP-порт из файла Dockerfile.
+В случае простого веб-API Hello World на основе .NET, развернутого в виде единственного контейнера или службы, для доступа к службе достаточно указать TCP-порт из файла Dockerfile.
 
 В узле Docker откройте браузер и перейдите на этот сайт. Вы должны увидеть работающее приложение или службу, как показано на рисунке 4-29.
 
@@ -290,9 +290,9 @@ docker run -t -d -p 50080:80 explore-docker-vscode/webapp:latest
 
 **Отладка контейнера, запущенного в Docker**
 
-Visual Studio Code поддерживает отладку Docker при использовании Node.js и других платформ, таких как контейнеры .NET Core.
+Visual Studio Code поддерживает отладку Docker при использовании Node.js и других платформ, таких как контейнеры .NET.
 
-Вы также можете отлаживать контейнеры .NET Core или .NET Framework в Docker с помощью Visual Studio для Windows или Mac, как описано в следующем разделе.
+Вы также можете отлаживать контейнеры .NET или .NET Framework в Docker с помощью Visual Studio для Windows или Mac, как описано в следующем разделе.
 
 > [!TIP]
 > См. сведения об <https://blog.docker.com/2016/07/live-debugging-docker/>отладке контейнеров Docker Node.js<https://docs.microsoft.com/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more>.

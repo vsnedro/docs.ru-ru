@@ -3,13 +3,13 @@ title: Установка .NET в Alpine — .NET
 description: Здесь приводятся различные способы установки пакета SDK для .NET и среды выполнения .NET в Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
-ms.openlocfilehash: 29901cc24ddd4bbe8200a36765ddd29f501394c0
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.date: 01/06/2021
+ms.openlocfilehash: 6adaa905c400b45526ebbc3d8e2606522863eec3
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506835"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970854"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-on-alpine"></a>Установка пакета SDK для .NET или среды выполнения .NET в Alpine
 
@@ -17,7 +17,13 @@ ms.locfileid: "94506835"
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-Установщиков для Alpine не существует. Необходимо либо использовать [сценарий установки](#scripted-install), либо следовать инструкциям по [установке вручную](#manual-install).
+## <a name="install"></a>Установить
+
+Для Alpine Linux недоступны установщики. Устанавливать .NET необходимо одним из следующих способов:
+
+- [Пакет Snap](linux-snap.md)
+- [Установка с помощью скрипта _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Ручное извлечение двоичных файлов](linux-scripted-manual.md#manual-install)
 
 ## <a name="supported-distributions"></a>Поддерживаемые дистрибутивы
 
@@ -54,14 +60,7 @@ ms.locfileid: "94506835"
 - libstdc++
 - zlib
 
-## <a name="scripted-install"></a>Установка с помощью сценария
+## <a name="next-steps"></a>Дальнейшие действия
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## <a name="manual-install"></a>Установка вручную
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
-## <a name="next-steps"></a>Следующие шаги
-
+- [Включение заполнения клавишей TAB для .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Учебник. Создание консольного приложения с помощью пакета SDK для .NET в Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 96a39609e9ae8b11e9872b049134136fe1ff3e2a
-ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
+ms.openlocfilehash: 2ceac94c04dd8deb169e836f09928dfd9a38ac35
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96599106"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025437"
 ---
 # <a name="structure-types-c-reference"></a>Типы структур (справочник по C#)
 
@@ -30,11 +30,7 @@ ms.locfileid: "96599106"
 
 ## <a name="readonly-struct"></a>Структура `readonly`
 
-Начиная с C# версии 7.2, чтобы объявить, что тип структуры является неизменяемым, используйте модификатор `readonly`:
-
-[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
-
-Все элементы данных структуры `readonly` должны быть доступны только для чтения:
+Начиная с C# версии 7.2, чтобы объявить, что тип структуры является неизменяемым, используйте модификатор `readonly`. Все элементы данных структуры `readonly` должны быть доступны только для чтения:
 
 - Любое объявление поля должно иметь [`readonly` модификатор](../keywords/readonly.md).
 - Все свойства, включая автоматические реализованные, должны быть доступны только для чтения. В C# 9.0 и более поздних версий свойство может иметь [метод доступа `init`](../../whats-new/csharp-9.md#init-only-setters).
@@ -43,6 +39,10 @@ ms.locfileid: "96599106"
 
 > [!NOTE]
 > В структуре `readonly` элемент данных изменяемого ссылочного типа по-прежнему может изменять свое собственное состояние. Например, вы не можете заменить экземпляр <xref:System.Collections.Generic.List%601>, но можете добавить в него новые элементы.
+
+В следующем коде определяется структура `readonly` с методами задания свойств только для инициализации, которые доступны в C# 9.0 и более поздних версий:
+
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 ## <a name="readonly-instance-members"></a>Члены экземпляров `readonly`
 
