@@ -2,12 +2,12 @@
 title: Пример миграции на .NET Core 3.1
 description: Показано, как перенести примеры приложений, предназначенных для .NET Framework в .NET Core 3,1.
 ms.date: 05/12/2020
-ms.openlocfilehash: 6a0311e9aaeb25ac39f3394d3a62e17046fe03d8
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: dc0d3d825847bd72a38469615cfc5b2d793f1977
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "97866779"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188781"
 ---
 # <a name="example-of-migrating-to-net-core-31"></a>Пример миграции на .NET Core 3.1
 
@@ -65,7 +65,7 @@ ms.locfileid: "97866779"
 
 В большинстве случаев необходимо обновить существующий проект до нового формата .NET Core. Однако можно также создать новый проект, сохранив старый. Основным недостатком обновления старого проекта является то, что вы потеряли поддержку конструктора, что может быть важным для вас. Если вы хотите продолжить работу с конструктором, необходимо создать новый проект .NET Core параллельно с прежним и общим ресурсам. Если необходимо изменить элементы пользовательского интерфейса в конструкторе, можно переключиться на старый проект, чтобы сделать это. А так как ресурсы связаны, они также будут обновлены в проекте .NET Core.
 
-[Проект в стиле пакета SDK](../../core/project-sdk/msbuild-props.md) для .NET Core гораздо проще, чем формат проекта .NET Framework. За исключением упомянутых ранее `PackageReference` записей, вам больше не потребуется делать это. Новый формат проекта включает определенные расширения файлов по [умолчанию](../../core/tools/csproj.md#default-compilation-includes-in-net-core-projects), например `.cs` файлы и `.xaml` , без необходимости явно включать их в файл проекта.
+[Проект в стиле пакета SDK](../../core/project-sdk/msbuild-props.md) для .NET Core гораздо проще, чем формат проекта .NET Framework. Помимо упомянутых выше `PackageReference` записей вам больше не нужно делать. Новый формат проекта [включает файлы с определенными расширениями по умолчанию](../../core/project-sdk/overview.md#default-includes-and-excludes), `.cs` например `.xaml` файлы и, без необходимости явно включать их в файл проекта.
 
 #### <a name="assemblyinfo-considerations"></a>Рекомендации по Assembly.info
 
