@@ -1,7 +1,8 @@
 ---
 description: Справочник по C#
 title: Справочник по C#
-ms.date: 02/14/2017
+ms.date: 01/13/2021
+ms.custom: updateeachrelease
 f1_keywords:
 - _CSharpKeyword
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - C# language, reference
 - reference, C# language
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
-ms.openlocfilehash: 317f375c46eee3bb9c719afb68993cd4720e54fe
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 663d08921b1fb6c5013ce8dddb044ba12ead8409
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127195"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235239"
 ---
 # <a name="c-reference"></a>Справочник по C#
 
@@ -61,7 +62,10 @@ ms.locfileid: "89127195"
   
  [Предложения по спецификации C# 8.0](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
  Версия C# 8.0 доступна для .NET Core 3.0. В число возможностей входят использование ссылочных типов, допускающих значения NULL, рекурсивное сопоставление шаблонов, методы интерфейса по умолчанию, асинхронные потоки, диапазоны и индексы, использование шаблонов и объявлений using, назначение объединения со значением NULL и члены экземпляров с доступом только на чтение.
-  
+
+ [Предложения по спецификации C# 9.0](../../../_csharplang/proposals/csharp-9.0/records.md)  
+ Версия C# 9.0 доступна для .NET 5.0. Предлагаемые функции включают записи, инструкции верхнего уровня, усовершенствованное сопоставление шаблонов, методы задания только для инициализации, выражения new с целевым типом, модульные инициализаторы, расширение методов partial, статические анонимные функции, условные выражения с целевым типом, ковариантные типы возвращаемого значения, метод расширения GetEnumerator в циклах foreach, пустые переменные в качестве параметров лямбда-выражений, атрибуты для локальных функций, целочисленные значения с системным размером, указатели на функцию, подавляемое порождение флага localsinit и аннотации для параметров неограниченного типа.
+
 ## <a name="related-sections"></a>Связанные разделы  
 
  [Использование среды разработки Visual Studio для C#](/visualstudio/get-started/csharp)  
