@@ -8,12 +8,12 @@ helpviewer_keywords:
 - installing .NET Framework
 - installation [.NET Framework]
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-ms.openlocfilehash: 4ea1954841696ef28cceca2968e750d9771be038
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 45ae10a92b66bc1b487e3ed4e1e29b6905b895f5
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543715"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190784"
 ---
 # <a name="install-the-net-framework-for-developers"></a>Установка .NET Framework для разработчиков
 
@@ -134,7 +134,7 @@ ms.locfileid: "90543715"
 
 - .NET Framework 4.5 и более поздние версии заменяют .NET Framework 4.0 При установке этих версий в системе, где установлена версия .NET Framework 4, сборки заменяются.
 
-- При удалении .NET Framework 4.5 или более поздней версии автоматически удаляются все существовавшие ранее файлы .NET Framework 4. Если вам нужно вернуться к .NET Framework 4, ее придется полностью переустановить со всеми обновлениями. Ознакомьтесь со статьей [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=230665) (Установка платформы .NET Framework).
+- При удалении .NET Framework 4.5 или более поздней версии автоматически удаляются все существовавшие ранее файлы .NET Framework 4. Если вам нужно вернуться к .NET Framework 4, ее придется полностью переустановить со всеми обновлениями. Ознакомьтесь со статьей [Installing the .NET Framework](/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100)) (Установка платформы .NET Framework).
 
 - Для установки .NET Framework 4.5 и более поздних версий требуются права администратора.
 

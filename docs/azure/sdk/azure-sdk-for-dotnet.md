@@ -5,12 +5,12 @@ ms.date: 11/30/2020
 ms.custom: devx-track-dotnet
 ms.author: daberry
 author: daberry
-ms.openlocfilehash: 3ec1ee9e8da3a6e03581ce2a29a655ec0d68fe54
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: b547e105b13d380ffae049ab55e76aa25abe8cc3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700951"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189204"
 ---
 # <a name="azure-sdk-for-net-overview"></a>Обзор пакета Azure SDK для .NET
 
@@ -32,4 +32,4 @@ ms.locfileid: "97700951"
 
 3. **Напишите код в приложении с использованием пакета SDK.** При работе со службами Azure код сначала создает объект клиента для работы со службой, а затем вызывает методы этого клиентского объекта для взаимодействия со службой.  Предоставляются как синхронные, так и асинхронные методы.  Примеры использования каждого отдельного пакета SDK приведены в документации по Azure.
 
-4. **Настройте ведение журнала для пакета SDK (необязательно).** Если необходимо диагностировать проблемы взаимодействия приложения и Azure, можно [включить ведение журнала в пакете Azure SDK для .NET](./logging.md).
+4. **Настройте ведение журнала для пакета SDK (необязательно).** Если необходимо диагностировать проблемы взаимодействия приложения и Azure, можно [включить ведение журнала в пакете Azure SDK для .NET](../logging.md).

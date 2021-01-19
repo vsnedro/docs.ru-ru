@@ -3,12 +3,12 @@ title: Перенос веб-приложения или службы .NET в С
 description: Сведения о миграции веб-приложений или служб .NET из локальной среды в Службу приложений Azure.
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: a5e193b2dbaedb86ff0e24bc8b70043896bbeea3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0e2aaa23aedabef007878901ec7297711f140533
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539090"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189256"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Перенос веб-приложения или службы .NET в Службу приложений Azure
 
@@ -24,7 +24,7 @@ ms.locfileid: "90539090"
 
 * С помощью службы [Виртуальная сеть Azure](/azure/app-service/web-sites-integrate-with-vnet) создайте сеть VPN для подключения Службы приложений к локальным ресурсам.
 * С помощью [Azure Relay](/azure/service-bus-relay/relay-what-is-it) предоставьте облаку защищенный доступ к локальным службам, не внося изменения в брандмауэр.
-* Перенесите зависимости в Azure (например, [базу данных SQL](https://go.microsoft.com/fwlink/?linkid=863217)).
+* Перенесите зависимости в Azure (например, [базу данных SQL](./sql.md)).
 * Для уменьшения количества зависимостей используйте облачные решения типа "платформа как услуга". Например, вместо подключения к локальному почтовому серверу используйте [SendGrid](/azure/sendgrid-dotnet-how-to-send-email).
 
 ### <a name="port-bindings"></a>Привязки портов

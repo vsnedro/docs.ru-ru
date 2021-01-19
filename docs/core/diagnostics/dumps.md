@@ -2,12 +2,12 @@
 title: Дампы — .NET
 description: Общие сведения о дампах в .NET.
 ms.date: 10/12/2020
-ms.openlocfilehash: 7a4c7bf54b3e9ea43e685eafbd00b4a373326520
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: f68d9bd804350366625df014df4d9ca0641d5d4d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764946"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188560"
 ---
 # <a name="dumps"></a>Файлы дампа
 
@@ -19,7 +19,6 @@ ms.locfileid: "97764946"
 
 > [!NOTE]
 > Для сбора дампа внутри контейнера требуется возможность PTRACE, которую можно добавить с помощью `--cap-add=SYS_PTRACE` или `--privileged`.
-
 > [!NOTE]
 > Дампы могут содержать конфиденциальные сведения, поскольку они могут содержать всю память выполняющегося процесса. При их обработке следует учитывать ограничения безопасности и рекомендации.
 
@@ -53,11 +52,10 @@ ms.locfileid: "97764946"
 
 ## <a name="analyze-dumps"></a>Анализ дампов
 
-Дампы можно проанализировать с помощью средства CLI [`dotnet-dump`](dotnet-dump.md) или посредством [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files).
+Дампы можно проанализировать с помощью средства CLI [`dotnet-dump`](dotnet-dump.md) или посредством [Visual Studio](/visualstudio/debugger/using-dump-files).
 
 > [!NOTE]
 > Visual Studio версии 16.8 и более поздних версий позволяет [открывать дампы Linux](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/), созданные в .NET Core 3.1.7 и более поздних версий.  
-
 > [!NOTE]
 > Если необходима отладка машинного кода, можно использовать [расширение отладчика SOS](sos-debugging-extension.md) совместно с [LLDB в Linux и macOS](debug-linux-dumps.md#analyze-dumps-on-linux). SOS также поддерживается в Windows c [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools), хотя рекомендуется использовать Visual Studio.
 

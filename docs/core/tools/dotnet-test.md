@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: a5666cfe4c09b2b88d77b256fac922154c7d6bd7
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 4834da766bd052f44127a72635b65866eb7e3352
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634387"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189158"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -146,7 +146,7 @@ dotnet test -h|--help
 
 - **`-l|--logger <LOGGER>`**
 
-  Указывает средство ведения журнала для результатов тестирования. В отличие от MSBuild, dotnet test не принимает аббревиатуры: вместо `-l "console;v=d"` используйте `-l "console;verbosity=detailed"`.
+  Указывает средство ведения журнала для результатов тестирования. В отличие от MSBuild, dotnet test не принимает аббревиатуры: вместо `-l "console;v=d"` используйте `-l "console;verbosity=detailed"`. Укажите параметр несколько раз, чтобы включить несколько средств ведения журнала.
 
 - **`--no-build`**
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - developer's guide, deploying .NET Framework
 - deployment [.NET Framework], developer's guide
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
-ms.openlocfilehash: 950ff048a918a52e6c64d8cc15e1ef0f80233b88
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dddd10846c5c57c88d23fef6d6851e288bd2d4b1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238656"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98191096"
 ---
 # <a name="net-framework-deployment-guide-for-developers"></a>Руководство по развертыванию .NET Framework для разработчиков
 
@@ -316,19 +316,19 @@ InstallShield создает пакеты приложений для Windows (M
 
 Ознакомьтесь со следующими ресурсами:
 
-- [Коды ошибок Background Intelligent Transfer Service (BITS)](https://go.microsoft.com/fwlink/?LinkId=180946)
+- [Коды ошибок Background Intelligent Transfer Service (BITS)](/windows/win32/bits/bits-return-values)
 
-- [Коды ошибок моникера URL](https://go.microsoft.com/fwlink/?LinkId=180947)
+- [Коды ошибок моникера URL](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145(v=vs.85))
 
-- [Коды ошибок WinHttp](https://go.microsoft.com/fwlink/?LinkId=180948)
+- [Коды ошибок WinHttp](/windows/win32/winhttp/error-messages)
 
 #### <a name="other-error-codes"></a>Другие коды ошибок
 
 Ознакомьтесь со следующими ресурсами:
 
-- [Коды ошибок установщика Windows](https://go.microsoft.com/fwlink/?LinkId=180949)
+- [Коды ошибок установщика Windows](/previous-versions/aa368542(v=vs.85))
 
-- [Коды результатов агента обновления Windows](https://go.microsoft.com/fwlink/?LinkId=180951)
+- [Коды результатов агента обновления Windows](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
 
 ## <a name="uninstalling-the-net-framework"></a>Удаление .NET Framework
 

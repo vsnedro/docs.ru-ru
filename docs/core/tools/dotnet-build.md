@@ -2,12 +2,12 @@
 title: Команда dotnet build
 description: Команда dotnet build выполняет сборку проекта и всех его зависимостей.
 ms.date: 02/14/2020
-ms.openlocfilehash: ea0291129aeaed3bebef5c454ff003131bd3562b
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: cc8c6ed30dbf8ff0602fb19e5001f618a8380f16
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634485"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189961"
 ---
 # <a name="dotnet-build"></a>dotnet build
 
@@ -83,7 +83,7 @@ dotnet build -h|--help
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Выполняет компиляцию для конкретной [платформы](../../standard/frameworks.md). Платформа должна быть определена в [файле проекта](csproj.md).
+  Выполняет компиляцию для конкретной [платформы](../../standard/frameworks.md). Платформа должна быть определена в [файле проекта](../project-sdk/overview.md).
 
 - **`--force`**
 

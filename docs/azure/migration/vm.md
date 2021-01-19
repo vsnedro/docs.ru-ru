@@ -3,12 +3,12 @@ title: Перенос веб-приложения ASP.NET на виртуаль�
 description: Узнайте, как перенести веб-приложение ASP.NET из локальной среды на виртуальную машину Azure.
 ms.topic: how-to
 ms.date: 06/20/2020
-ms.openlocfilehash: 940243310c5e6ed13d2a42c8d9d87244200479f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0bf591ce0bd02537414527c8f3ba22bd41cf51d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91171563"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189217"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Перенос веб-приложения ASP.NET на виртуальную машину Azure
 
@@ -26,7 +26,7 @@ ms.locfileid: "91171563"
   - [Создание виртуальной машины для приложений ASP.NET](https://go.microsoft.com/fwlink/?linkid=863237).
   - [Перенос существующей локальной виртуальной машины VMware](/azure/migrate/tutorial-migrate-vmware).
   - [Перенос существующей локальной виртуальной машины Hyper-V](/azure/migrate/tutorial-migrate-hyper-v).
-- [Опубликуйте свое приложение с помощью Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240).
+- [Опубликуйте свое приложение с помощью Visual Studio](/azure/virtual-machines/windows/publish-web-app-from-visual-studio).
 - [Создайте защищенную виртуальную сеть для виртуальных машин](/azure/virtual-network/virtual-network-get-started-vnet-subnet).
 - [Создайте конвейер непрерывной интеграции или непрерывного развертывания для приложения](/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups).
 - [Перенесите приложение в масштабируемый набор виртуальных машин, чтобы обеспечить высокий уровень доступности и масштабируемость](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).

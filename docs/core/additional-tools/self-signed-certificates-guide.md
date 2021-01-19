@@ -3,12 +3,12 @@ title: Общие сведения о создании самозаверяющ�
 description: Обзор средства Microsoft dotnet dev-certs, добавляющего функции для проектов .NET Core и ASP.NET Core, а также другие параметры для использования самозаверяющих сертификатов.
 author: angee
 ms.date: 11/19/2020
-ms.openlocfilehash: b5bf4b719495c2d6ec248e8592367ac452be91c1
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: d1675abb7d584b72d981f9db739e02269abe662c
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96032181"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189145"
 ---
 # <a name="generate-self-signed-certificates-with-the-net-cli"></a>Создание самозаверяющих сертификатов с помощью интерфейса командной строки .NET
 
@@ -210,7 +210,7 @@ dotnet dev-certs https --clean
 
 ### <a name="with-powershell"></a>С помощью PowerShell
 
-Для создания самозаверяющих сертификатов можно использовать PowerShell. [Клиент PKI](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserver-view=true) можно использовать для создания самозаверяющего сертификата.
+Для создания самозаверяющих сертификатов можно использовать PowerShell. [Клиент PKI](/powershell/module/pkiclient/new-selfsignedcertificate?preserve-view=true&view=win10-ps) можно использовать для создания самозаверяющего сертификата.
 
 ```powershell
 $cert = New-SelfSignedCertificate -DnsName @("contoso.com", "www.contoso.com") -CertStoreLocation "cert:\LocalMachine\My"

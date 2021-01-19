@@ -2,12 +2,12 @@
 title: Критическое изменение. Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET
 description: Сведения о критическом изменении .NET 5.0 в основных библиотеках .NET, где методы сериализации и десериализации BinaryFormatter, Formatter и IFormatter устарели.
 ms.date: 11/01/2020
-ms.openlocfilehash: 5807a7d4e6beab26b9848b803922396dd893075b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1dca30d33f2aa0a6fe8f05fe728557092f836b2d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759784"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189848"
 ---
 # <a name="binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps"></a>Методы сериализации BinaryFormatter устарели и запрещены в приложениях ASP.NET
 
@@ -75,7 +75,7 @@ ms.locfileid: "95759784"
   </PropertyGroup>
   ```
 
-Дополнительные сведения о рекомендуемых действиях см. в статье [Устранение ошибок, связанных с устареванием и отключением BinaryFormatter](https://aka.ms/binaryformatter).
+Дополнительные сведения о рекомендуемых действиях см. в статье [Устранение ошибок, связанных с устареванием и отключением BinaryFormatter](../../../../standard/serialization/binaryformatter-security-guide.md).
 
 ## <a name="affected-apis"></a>Затронутые API
 
