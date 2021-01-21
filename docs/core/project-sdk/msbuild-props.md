@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e7deb8c32fd01452524122e41f758ab037020ee4
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: e35ccc3540756a4cb7905d5864caf65cded4362b
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970711"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189988"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -79,15 +79,43 @@ ms.locfileid: "97970711"
 </PropertyGroup>
 ```
 
-## <a name="publish-properties-and-items"></a>Публикация свойств и элементов
+## <a name="publish-properties-items-and-metadata"></a>Публикация свойств, элементов и метаданных
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
+
+### <a name="copytopublishdirectory"></a>CopyToPublishDirectory
+
+Метаданные `CopyToPublishDirectory` в элементах управления MSBuild, когда элемент копируется в каталог публикации. Допустимые значения: `PreserveNewest`, при котором копируется только элемент, если он был изменен, `Always`, при котором всегда копируется элемент, и `Never`, при котором элемент никогда не копируется. С точки зрения производительности `PreserveNewest` предпочтительнее, поскольку включает инкрементную сборку.
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### <a name="linkbase"></a>LinkBase
+
+Для элемента, находящегося за пределами каталога проекта и его подкаталогов, целевой объект публикации использует [метаданные Link](/visualstudio/msbuild/common-msbuild-item-metadata) элемента, чтобы определить, куда копировать элемент. `Link` также определяет, как элементы за пределами дерева проекта отображаются в окне обозревателя решений Visual Studio.
+
+Если для элемента, находящегося за пределами проекта, `Link` не указан, по умолчанию используется `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` позволяет указать допустимую базовую папку для элементов за пределами проекта. Иерархия папок в базовой папке обеспечивается с помощью `RecursiveDir`. Если параметр `LinkBase` не указан, он опускается в пути `Link`.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+На следующем рисунке показано, как файл, который включен с помощью стандартной маски предыдущего элемента `Include`, отображается в обозревателе решений.
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Обозреватель решений: элемент с метаданными LinkBase.":::
 
 ### <a name="appendtargetframeworktooutputpath"></a>AppendTargetFrameworkToOutputPath
 
@@ -478,7 +506,7 @@ ms.locfileid: "97970711"
 
 ### <a name="assettargetfallback"></a>AssetTargetFallback
 
-Свойство `AssetTargetFallback` позволяет указать дополнительные совместимые версии платформы для ссылок на проекты и пакетов NuGet. Например, если вы указали зависимость пакета с помощью `PackageReference`, но в этом пакете нет ресурсов, совместимых с `TargetFramework` вашего проекта, тогда пригодится свойство `AssetTargetFallback`. Совместимость пакета, на который указывает ссылка, повторно проверяется с помощью каждой целевой платформы, указанной в свойстве `AssetTargetFallback`.
+Свойство `AssetTargetFallback` позволяет указать дополнительные совместимые версии платформы для ссылок на проекты и пакетов NuGet. Например, если вы указали зависимость пакета с помощью `PackageReference`, но в этом пакете нет ресурсов, совместимых с `TargetFramework` вашего проекта, тогда пригодится свойство `AssetTargetFallback`. Совместимость пакета, на который указывает ссылка, повторно проверяется с помощью каждой целевой платформы, указанной в свойстве `AssetTargetFallback`. Это свойство заменяет устаревшее свойство `PackageTargetFallback`.
 
 В качестве значения свойства `AssetTargetFallback` можно задать одну [версию целевой платформы](../../standard/frameworks.md#supported-target-frameworks) или несколько.
 
@@ -504,7 +532,7 @@ ms.locfileid: "97970711"
 
 Элемент `PackageReference` определяет ссылку на пакет NuGet.
 
-Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges). Вы также можете добавить в ссылку на проект следующие метаданные: `IncludeAssets`, `ExcludeAssets` и `PrivateAssets`.
+Атрибут `Include` указывает идентификатор пакета. Атрибут `Version` указывает версию или диапазон версий. Сведения о том, как указать минимальную версию, максимальную версию, диапазон или точное соответствие, см. в разделе [Диапазоны версий](/nuget/concepts/package-versioning#version-ranges). [Атрибуты ресурса](#asset-attributes) можно также добавить в ссылку на пакет.
 
 Фрагмент файла проекта в следующем примере ссылается на пакет [System.Runtime](https://www.nuget.org/packages/System.Runtime/).
 
@@ -515,6 +543,30 @@ ms.locfileid: "97970711"
 ```
 
 Дополнительные сведения см. в статье [Ссылки на пакеты в файлах проекта](/nuget/consume-packages/package-references-in-project-files).
+
+#### <a name="asset-attributes"></a>Атрибуты ресурса
+
+Метаданные `IncludeAssets`, `ExcludeAssets` и `PrivateAssets` можно добавить в ссылку на пакет.
+
+| attribute | Описание |
+| - | - |
+| `IncludeAssets` | Указывает, какие ресурсы пакета, указанные `<PackageReference>`, следует использовать. По умолчанию включаются все ресурсы пакета. |
+| `ExcludeAssets`| Указывает, какие ресурсы пакета, указанные `<PackageReference>`, не следует использовать. |
+| `PrivateAssets` | Указывает, какие ресурсы пакета, указанные `<PackageReference>`, следует использовать, но не следует передавать в следующий проект. Если этот атрибут отсутствует, ресурсы `Analyzers`, `Build` и `ContentFiles` по умолчанию являются частными. |
+
+Эти атрибуты могут содержать один или несколько следующих элементов (если их больше одного, они разделяются точкой с запятой `;`):
+
+- `Compile` — содержимое папки *lib* доступно для компиляции.
+- `Runtime` — содержимое папки *runtime* распределяется.
+- `ContentFiles` — используется содержимое папки *contentfiles*.
+- `Build` — используются свойства и целевые объекты в папке *build*.
+- `Native` — содержимое копируется из основных ресурсов в папку *output* среды выполнения.
+- `Analyzers` — используются анализаторы.
+
+Кроме того, атрибут может содержать следующие значения.
+
+- `None` — не используется ни один ресурс.
+- `All` — используются все ресурсы.
 
 ### <a name="projectreference"></a>СсылкаНаПроект
 

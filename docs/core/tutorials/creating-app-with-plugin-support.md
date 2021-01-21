@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение .NET Cor
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 10/16/2019
-ms.openlocfilehash: ce7ac826feaf4542307abefde6d40a319d78e423
-ms.sourcegitcommit: c04535ad05e374fb269fcfc6509217755fbc0d54
+ms.openlocfilehash: d3b532ae72a80eef9603fc6f3ada8c11cae966dd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91247596"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187903"
 ---
 # <a name="create-a-net-core-application-with-plugins"></a>Создание приложения .NET Core с подключаемыми модулями
 
@@ -22,7 +22,10 @@ ms.locfileid: "91247596"
 
 ## <a name="prerequisites"></a>Prerequisites
 
-- Установите [пакет SDK для .NET Core 3.0](https://dotnet.microsoft.com/download) или более новой версии.
+- Установите [пакет SDK для .NET 5](https://dotnet.microsoft.com/download) или более новой версии.
+
+> [!NOTE]
+> Пример кода предназначен для .NET 5, но все функции, которые он использует, появились в .NET Core 3.0 и доступны во всех выпусках .NET, начиная с той версии.
 
 ## <a name="create-the-application"></a>Создание приложения
 
@@ -239,7 +242,7 @@ static Assembly LoadPlugin(string relativePath)
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -287,7 +290,7 @@ static Assembly LoadPlugin(string relativePath)
 
 ## <a name="plugin-target-framework-recommendations"></a>Рекомендации для целевой платформы подключаемого модуля
 
-Так как при загрузке зависимости подключаемого модуля используется файл *.deps.json*, есть один нюанс с целевой платформой подключаемого модуля. В частности, подключаемые модули должны быть нацелены на среду выполнения, такую как .NET Core 3.0, а не на версию .NET Standard. Файл *.deps.json* создается с учетом целевой платформы проекта. Так как многие пакеты, совместимые с .NET Standard, ссылаются на сборки для .NET Standard и сборки реализации для конкретных сред выполнения, файл *.deps.json* может неправильно распознавать сборки реализации или принимать версию сборки .NET Standard вместо ожидаемой версии .NET Core.
+Так как при загрузке зависимости подключаемого модуля используется файл *.deps.json*, есть один нюанс с целевой платформой подключаемого модуля. В частности, подключаемые модули должны быть нацелены на среду выполнения, такую как .NET 5, а не на версию .NET Standard. Файл *.deps.json* создается с учетом целевой платформы проекта. Так как многие пакеты, совместимые с .NET Standard, ссылаются на сборки для .NET Standard и сборки реализации для конкретных сред выполнения, файл *.deps.json* может неправильно распознавать сборки реализации или принимать версию сборки .NET Standard вместо ожидаемой версии .NET Core.
 
 ## <a name="plugin-framework-references"></a>Ссылки на платформу подключаемого модуля
 

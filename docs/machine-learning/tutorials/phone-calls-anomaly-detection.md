@@ -4,12 +4,12 @@ description: Узнайте, как создать приложение для �
 ms.date: 12/04/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 3451a44f8fa7ae85625687b7d52f120c411df1b6
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: f001cb912bb695a7edb0917f3306ca9bfbe311ac
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97634057"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187786"
 ---
 # <a name="tutorial-detect-anomalies-in-time-series-with-mlnet"></a>Учебник. Обнаружение аномалий во временном ряду с помощью ML.NET
 
@@ -28,7 +28,7 @@ ms.locfileid: "97634057"
 
 * [Visual Studio 2019 версии 16.7.8 или более поздней](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) с установленной рабочей нагрузкой "Кроссплатформенная разработка .NET Core".
 
-* [Набор данных phone-calls.csv](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrCnnDetection/Data/phone-calls.csv)
+* [Набор данных phone-calls.csv](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## <a name="create-a-console-application"></a>Создание консольного приложение
 
@@ -50,7 +50,7 @@ ms.locfileid: "97634057"
 
 1. Скачайте набор данных и сохраните его в ранее созданную папку *Data*:
 
-    Щелкните файл [*phone-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrCnnDetection/Data/phone-calls.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
+    Щелкните файл [*phone-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv) правой кнопкой мыши и выберите команду "Сохранить ссылку (объект) как...".
 
      Файл \*.csv нужно сохранить в папке *Data*. Если вы сохранили файл \*.csv в другом месте, переместите его в папку *Data*.
 

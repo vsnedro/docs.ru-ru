@@ -1,13 +1,13 @@
 ---
 title: Использование сервера баз данных, работающего в качестве контейнера
 description: Изучите важность использования сервера базы данных, работающего в качестве контейнера, только для разработки. Не для рабочей среды.
-ms.date: 01/30/2020
-ms.openlocfilehash: 38f77e195b184d57dcad5904674a0025ef6c2bd8
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.date: 01/13/2021
+ms.openlocfilehash: 1292bf37e3baaeb6284f6fba15b4bc7c9c17b4a7
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90539403"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188742"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>Использование сервера баз данных, работающего в качестве контейнера
 
@@ -270,7 +270,7 @@ docker run --name some-redis -d redis
       - "6379"
 ```
 
-Этот код в docker-compose.yml определяет контейнер с именем `basketdata` на основе образа redis и внутренней публикации порта 6379. Это означает, что он будет доступен только из других контейнеров, работающих на узле Docker.
+Этот код в docker-compose.yml определяет контейнер с именем `basketdata` на основе образа redis и внутренней публикации порта 6379. Такая конфигурация означает, что он будет доступен только из других контейнеров, работающих на узле Docker.
 
 Наконец, в файле *docker-compose.override.yml* микрослужба `basket-api` для примера приложения eShopOnContainers определяет строку подключения, используемую для этого контейнера Redis:
 

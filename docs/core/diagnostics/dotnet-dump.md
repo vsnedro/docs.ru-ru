@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-dump — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-dump для накопления и анализа дампов Windows и Linux без использования отладчика машинного кода.
 ms.date: 11/17/2020
-ms.openlocfilehash: eaffbb1f2959dba5c25a603b6f785c7480e4a8c0
-ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
+ms.openlocfilehash: 84b3796f4ee92880e6d432df606a6addfd2471b0
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97765050"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189808"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Программа для сбора и анализа дампов (dotnet-dump)
 
@@ -37,6 +37,9 @@ ms.locfileid: "97765050"
   | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [arm](https://aka.ms/dotnet-dump/win-arm) \| [arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
+
+> [!NOTE]
+> Для использования `dotnet-dump` в приложении x86 необходима соответствующая версия средства для архитектуры x86.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -113,6 +116,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 - **`--diag`**
 
   Включает ведение журнала диагностики для сбора дампов.
+
+> [!NOTE]
+> В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-dump` будут совместно использовать одну и ту же переменную среды `TMPDIR`. В противном случае время ожидания команды истечет.
+
+> [!NOTE]
+> Чтобы собрать дамп с помощью `dotnet-dump`, ее необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя. В противном случае средство не сможет установить соединение с целевым процессом.
 
 ## <a name="dotnet-dump-analyze"></a>dotnet-dump analyze
 

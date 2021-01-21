@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-gcdump — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-gcdump для сбора дампов сборщика мусора активных процессов .NET с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: 02e1a7c5d86b582289672a027464aefd67a6f490
-ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
+ms.openlocfilehash: fe7772eed642daadbd1754627751f58d0ab57b8e
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97593374"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188573"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>Средство анализа кучи (dotnet-gcdump)
 
@@ -34,6 +34,9 @@ ms.locfileid: "97593374"
   | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [arm](https://aka.ms/dotnet-gcdump/win-arm) \| [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
   | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
+
+> [!NOTE]
+> Для использования `dotnet-gcdump` в приложении x86 необходима соответствующая версия средства для архитектуры x86.
 
 ## <a name="synopsis"></a>Краткий обзор
 
@@ -103,6 +106,12 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 - **`-n|--name <name>`**
 
   Имя процесса, из которого нужно получить дамп сборщика мусора.
+
+> [!NOTE]
+> В Linux и macOS эта команда ожидает, что целевое приложение и `dotnet-gcdump` будут совместно использовать одну и ту же переменную среды `TMPDIR`. В противном случае время ожидания команды истечет.
+
+> [!NOTE]
+> Чтобы собрать дамп сборки мусора с помощью `dotnet-gcdump`, ее необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя. В противном случае средство не сможет установить соединение с целевым процессом.
 
 ## `dotnet-gcdump ps`
 

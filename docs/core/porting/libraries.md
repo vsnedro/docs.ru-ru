@@ -3,12 +3,12 @@ title: Перенос библиотек в .NET Core
 description: Узнайте, как перенести проекты библиотеки из .NET Framework в .NET Core.
 author: cartermp
 ms.date: 12/07/2018
-ms.openlocfilehash: 25c53cdc71f4269b058953ef1903dc72d222f65f
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 09874899018abc09051af17771c9df829b8dbe96
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633914"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189685"
 ---
 # <a name="port-net-framework-libraries-to-net-core"></a>Перенос библиотек .NET Framework в .NET Core
 
@@ -30,8 +30,8 @@ ms.locfileid: "97633914"
 [Разработка библиотек с помощью кроссплатформенных средств](../tutorials/libraries.md)\
 В этой статье показано, как создавать библиотеки с помощью .NET Core CLI.
 
-[Дополнения к формату *CSPROJ* для .NET Core](../tools/csproj.md)\
-В этой статье перечислены изменения, внесенные в файлы проекта при перемещении в *CSPROJ* и MSBuild.
+[Пакеты SDK для проектов .NET](../project-sdk/overview.md)\
+В этой статье описывается формат файла проекта в стиле пакета SDK.
 
 [Перенос кода в .NET Core — анализ зависимостей сторонних разработчиков](third-party-deps.md)\
 В этой статье рассматривается переносимость зависимостей сторонних разработчиков и объясняется, что делать, если зависимость пакета NuGet не работает в .NET Core.

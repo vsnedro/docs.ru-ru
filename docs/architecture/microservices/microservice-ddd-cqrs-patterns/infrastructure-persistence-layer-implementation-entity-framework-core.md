@@ -1,19 +1,19 @@
 ---
 title: Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Сведения о реализации уровня сохраняемости инфраструктуры с помощью Entity Framework Core.
-ms.date: 01/30/2020
-ms.openlocfilehash: 878d4d64e92ca92fd2393d60d496f1c5671e7029
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 2c7b6dbe2f59a26d33a4842e74aed2b7588bd14d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172356"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188898"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Реализация уровня сохраняемости инфраструктуры с помощью Entity Framework Core
 
 При использовании реляционных баз данных, таких как SQL Server, Oracle или PostgreSQL, рекомендуемый подход заключается в реализации уровня сохраняемости на основе Entity Framework (EF). EF поддерживает LINQ и предоставляет строго типизированные объекты для вашей модели, а также упрощенную сохраняемость в базу данных.
 
-Entity Framework имеет длинную историю в составе .NET Framework. При использовании .NET Core следует также использовать технологию Entity Framework Core, которая работает в Windows или Linux таким же образом, как .NET Core. EF Core — это полностью переработанная технология Entity Framework, реализованная с гораздо меньшими требованиями по ресурсам и важными улучшениями в производительности.
+Entity Framework имеет длинную историю в составе .NET Framework. При использовании .NET следует также использовать технологию Entity Framework Core, которая работает в Windows или Linux таким же образом, как .NET. EF Core — это полностью переработанная технология Entity Framework, реализованная с гораздо меньшими требованиями по ресурсам и важными улучшениями в производительности.
 
 ## <a name="introduction-to-entity-framework-core"></a>Знакомство с Entity Framework Core
 

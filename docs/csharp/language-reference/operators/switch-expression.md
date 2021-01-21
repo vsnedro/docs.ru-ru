@@ -1,13 +1,13 @@
 ---
 title: Выражение switch в справочнике по C#
 description: Узнайте, как использовать выражение switch в C# для сопоставления шаблонов и других самоанализов данных.
-ms.date: 03/19/2020
-ms.openlocfilehash: 2249afc1ff1cc81e9ad423d910ebb95df8c787d4
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/14/2021
+ms.openlocfilehash: 55fef8d351b178fd0ec23847e81e6c56eb1367b0
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916655"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536090"
 ---
 # <a name="switch-expression-c-reference"></a>Выражение switch (справочник по C#)
 
@@ -48,10 +48,13 @@ ms.locfileid: "87916655"
 
 В предыдущем примере добавляется шаблон `null`, а шаблон типа `IEnumerable<T>` меняется на шаблон `_`. В качестве ветви выражения switch шаблон `null` содержит проверку значения null. Выражение для этой ветви создает исключение <xref:System.ArgumentNullException>. Шаблон `_` соответствует всем входным данным, которые не совпали с предыдущими ветвями. Он должен появиться после проверки `null`, иначе он будет совпадать с входными файлами `null`.
 
-Дополнительные сведения см. в предложении языка C# для [рекурсивных шаблонов](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression).
+## <a name="non-exhaustive-switch-expressions"></a>Неисчерпывающие выражения switch
+
+Если ни один из шаблонов выражения switch не перехватывает аргумент, среда выполнения создает исключение. В .NET Core 3.0 и более поздних версиях исключением является <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. В .NET Framework исключением является <xref:System.InvalidOperationException>.
 
 ## <a name="see-also"></a>См. также
 
+- [Предложение языковой спецификации C# для рекурсивных шаблонов](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression)
 - [справочник по C#](../index.md)
 - [Операторы и выражения C#](index.md)
 - [Сопоставление шаблонов](../../pattern-matching.md)

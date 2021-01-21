@@ -6,12 +6,12 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 ms.date: 12/01/2020
-ms.openlocfilehash: a4549e48152b21af05c67f601c1db65029e346fa
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 75c696d881ad0586b11cdbd264f3ff90ec3bce8d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851670"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187968"
 ---
 # <a name="common-client-side-web-technologies"></a>Распространенные клиентские веб-технологии
 
@@ -169,7 +169,7 @@ var app = new Vue({
 
 Код WebAssembly может обращаться к любым функциям браузера через JavaScript благодаря поддержке взаимодействия с JavaScript (сокращенно JavaScript interop или JS interop). Код .NET, который обрабатывается через WebAssembly в браузере, выполняется в песочнице для JavaScript этого браузера, которая включает средства защиты от вредоносных действий на клиентском компьютере.
 
-Дополнительные сведения см. в разделе [Введение в ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
+Дополнительные сведения см. в статье [Введение в модуль ASP.NET CoreBlazor](/aspnet/core/blazor/).
 
 ### <a name="choosing-a-spa-framework"></a>Выбор платформы одностраничных приложений
 

@@ -4,12 +4,12 @@ description: Узнайте, как использовать возможнос�
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.openlocfilehash: 4d2c8f3db26eaabcb973378a349ef57912e92bfa
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 98652de8e8b5c3765dfee8e1b511399bc5a0be25
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538151"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189659"
 ---
 # <a name="use-code-coverage-for-unit-testing"></a>Использование объема протестированного кода для модульного тестирования
 
@@ -297,7 +297,7 @@ reportgenerator
 
 ## <a name="see-also"></a>См. также
 
-- [Объем протестированного кода модульного тестирования Visual Studio](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+- [Объем протестированного кода модульного тестирования Visual Studio](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 - [GitHub — репозиторий Coverlet](https://github.com/coverlet-coverage/coverlet)
 - [GitHub — репозиторий ReportGenerator](https://github.com/danielpalme/ReportGenerator)
 - [Сайт проекта ReportGenerator](https://danielpalme.github.io/ReportGenerator)

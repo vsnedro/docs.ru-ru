@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 270735c9eef9f1930680687917317ac8bdf39e6d
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970698"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189672"
 ---
 # <a name="net-project-sdks"></a>Пакеты SDK для проектов .NET
 
@@ -83,7 +83,7 @@ ms.locfileid: "97970698"
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### <a name="default-includes-and-excludes"></a>Включения и исключения по умолчанию
+## <a name="default-includes-and-excludes"></a>Включения и исключения по умолчанию
 
 В пакете SDK определены стандартные включения и исключения для [элементов `Compile`](/visualstudio/msbuild/common-msbuild-project-items#compile), [внедренных ресурсов](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource) и [элементов `None`](/visualstudio/msbuild/common-msbuild-project-items#none). В отличие от проектов .NET Framework без пакетов SDK в файле проекта не нужно указывать эти элементы, так как для наиболее распространенных вариантов использования действуют значения по умолчанию. Такой подход позволяет уменьшить файлы проекта и без труда понимать их, а при необходимости даже вносить правки вручную.
 
@@ -98,7 +98,7 @@ ms.locfileid: "97970698"
 > [!NOTE]
 > Папки `./bin` и `./obj`, которые представлены свойствами MSBuild `$(BaseOutputPath)` и `$(BaseIntermediateOutputPath)`, исключаются из стандартных масок исключения по умолчанию. Исключения представлены свойством [DefaultItemExcludes](msbuild-props.md#defaultitemexcludes).
 
-#### <a name="build-errors"></a>Ошибки сборки
+### <a name="build-errors"></a>Ошибки сборки
 
 Если вы явным образом определите любой из этих элементов в файле проекта, скорее всего, произойдет ошибка сборки NETSDK1022 с примерно таким сообщением:
 
@@ -131,6 +131,31 @@ ms.locfileid: "97970698"
   ```
 
   Если вы отключите только стандартные маски `Compile`, обозреватель решений в Visual Studio будет по-прежнему отображать элементы \*.cs в составе проекта, включая их в виде элементов `None`. Чтобы отключить неявную стандартную маску `None`, задайте свойству `EnableDefaultNoneItems` значение `false`.
+
+## <a name="build-events"></a>События сборки
+
+Для проектов в стиле пакета SDK используйте целевой объект MSBuild с именем `PreBuild` или `PostBuild` и задайте свойство `BeforeTargets` для `PreBuild` или свойство `AfterTargets` для `PostBuild`.
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>
+> - Для целевых объектов MSBuild можно использовать любые имена. Однако интегрированная среда разработки Visual Studio распознает целевые объекты `PreBuild` и `PostBuild`, поэтому с помощью этих имен можно изменять команды в интегрированной среде разработки.
+> - Свойства `PreBuildEvent` и `PostBuildEvent` не рекомендуется использовать в проектах в стиле пакета SDK, поскольку такие макросы, как `$(ProjectDir)`, не разрешены. Например, приведенный ниже код не поддерживается.
+>
+> ```xml
+> <PropertyGroup>
+>   <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"</PreBuildEvent>
+> </PropertyGroup>
+> ```
 
 ## <a name="customize-the-build"></a>Настройка сборки
 
@@ -168,7 +193,7 @@ ms.locfileid: "97970698"
     </ItemGroup>
   </Target>
   ...
-  
+
 </Project>
 ```
 

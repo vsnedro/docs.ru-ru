@@ -2,12 +2,12 @@
 title: Команда dotnet pack
 description: Команда dotnet pack создает пакеты NuGet для проекта .NET.
 ms.date: 04/28/2020
-ms.openlocfilehash: 3ca7947b4ed9902b163f09a7b57696f304610cce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9a634c358f5de4f28c3de06edc9a2b4d2eb8d57
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674805"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190082"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
@@ -46,7 +46,7 @@ dotnet pack -h|--help
 > [!NOTE]
 > В некоторых случаях выполнить неявную сборку невозможно. Это может произойти, если задано свойство `GeneratePackageOnBuild`, позволяющее избежать циклической зависимости между целевыми объектами сборки и упаковки. Кроме того, сборка может завершиться ошибкой при наличии заблокированного файла или другой проблемы.
 
-Может предоставлять свойства MSBuild команде `dotnet pack` для процесса упаковки. Дополнительные сведения см. в разделах [Свойства метаданных NuGet](csproj.md#nuget-metadata-properties) и [Справочник по командной строке MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). В разделе [Примеры](#examples) показано, как использовать параметр -p MSBuild в различных сценариях.
+Может предоставлять свойства MSBuild команде `dotnet pack` для процесса упаковки. Дополнительные сведения см. в разделах [Свойства целевого объекта пакета NuGet](/nuget/reference/msbuild-targets#pack-target) и [Справочник по командной строке MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). В разделе [Примеры](#examples) показано, как использовать параметр `-p` MSBuild в различных сценариях.
 
 Веб-проекты по умолчанию не упаковываются. Чтобы переопределить такое поведение по умолчанию, добавьте следующее свойство в файл с расширением *.csproj*:
 
@@ -64,7 +64,7 @@ dotnet pack -h|--help
 
 `PROJECT | SOLUTION`
 
-  Проект или решение для упаковки. Это путь к файлу [.csproj](csproj.md), .vbproj или .fsproj либо файлу решения или каталогу. Если он не указан, команда ищет текущий каталог для файла решения или проекта.
+  Проект или решение для упаковки. Это путь к файлу CSPROJ, VBPROJ или FSPROJ, либо к файлу решения или каталогу. Если он не указан, команда ищет текущий каталог для файла решения или проекта.
 
 ## <a name="options"></a>Параметры
 

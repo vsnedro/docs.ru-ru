@@ -1,13 +1,13 @@
 ---
 title: Терминология Docker
 description: Архитектура микрослужб .NET для упакованных в контейнеры приложений .NET | Терминология Docker
-ms.date: 01/30/2020
-ms.openlocfilehash: b30ea26ee174caf3484931945c832c72a1acf93d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/13/2021
+ms.openlocfilehash: 567635060502ec3b2293f5eee6dd8dfe4d934ff7
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707770"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189347"
 ---
 # <a name="docker-terminology"></a>Терминология Docker
 
@@ -35,7 +35,7 @@ docker build
 
 **Реестр**: служба, предоставляющая доступ к репозиториям. Реестр по умолчанию для большинства общедоступных образов — [Центр Docker](https://hub.docker.com/) (принадлежащий Docker как организации). Реестр обычно содержит репозитории нескольких команд. Компании часто используют частные реестры для хранения своих образов и управления ими. Еще один пример — реестр контейнеров Azure.
 
-**Мультиархитектурный образ**: Для нескольких архитектур это функция, которая упрощает выбор соответствующего образа в соответствии с платформой, в которой работает Docker. Например, когда Dockerfile запрашивает базовый образ **FROM mcr.microsoft.com/dotnet/sdk:3.1** из реестра, фактически возвращается **3.1-sdk-nanoserver-1909**, **3.1-sdk-nanoserver-1809** или **3.1-sdk-buster-slim** (в зависимости от ОС и версии среды, в которой работает Docker).
+**Мультиархитектурный образ**: Для нескольких архитектур это функция, которая упрощает выбор соответствующего образа в соответствии с платформой, в которой работает Docker. Например, когда Dockerfile запрашивает базовый образ **mcr.microsoft.com/dotnet/sdk:5.0** из реестра, фактически возвращается **5.0-nanoserver-1909**, **5.0-nanoserver-1809** или **5.0-buster-slim** (в зависимости от ОС и версии среды, в которой работает Docker).
 
 **Центр Docker**: общедоступный реестр для загрузки образов и работы с ними. Центр Docker обеспечивает размещение образов Docker и интеграцию с GitHub и Bitbucket, предоставляет общедоступные или частные реестры, триггеры сборки и веб-перехватчики.
 
@@ -43,7 +43,7 @@ docker build
 
 **Доверенный реестр Docker (DTR)** : служба реестра Docker (из Docker), которую можно установить локально, чтобы она находилась в центре данных и сети организации. Его удобно использовать для частных образов, которыми необходимо управлять внутри предприятия. Доверенный реестр Docker входит в Центр данных Docker. Дополнительные сведения см. в разделе [Доверенный реестр Docker (DTR)](https://docs.docker.com/docker-trusted-registry/overview/).
 
-**Docker Community Edition (CE)** : инструменты разработки в среде Windows и macOS для локальной сборки, выполнения и тестирования контейнеров. Docker CE для Windows предоставляет среды разработки для контейнеров Linux и Windows. Узел Linux Docker на Windows базируется на виртуальной машине [Hyper-V](https://www.microsoft.com/cloud-platform/server-virtualization). Узел для контейнеров Windows базируется непосредственно на Windows. Docker CE для Mac базируется на платформе Apple Hypervisor и [гипервизоре xhyve](https://github.com/mist64/xhyve), который предоставляет узлу Linux Docker виртуальную машину в Mac OS X. Docker CE для Windows и для Mac заменил Docker Toolbox на базе Oracle VirtualBox.
+**Docker Community Edition (CE)** : инструменты разработки в среде Windows и macOS для локальной сборки, выполнения и тестирования контейнеров. Docker CE для Windows предоставляет среды разработки для контейнеров Linux и Windows. Узел Linux Docker на Windows базируется на виртуальной машине [Hyper-V](https://www.microsoft.com/cloud-platform/server-virtualization). Узел для контейнеров Windows базируется непосредственно на Windows. Docker CE для Mac базируется на платформе Apple Hypervisor и [гипервизоре xhyve](https://github.com/mist64/xhyve), который предоставляет узлу Linux Docker виртуальную машину в macOS X. Docker CE для Windows и для Mac заменил Docker Toolbox на базе Oracle VirtualBox.
 
 **Docker Enterprise Edition (EE)** : корпоративная версия инструментов Docker для разработки в среде Windows и Linux.
 

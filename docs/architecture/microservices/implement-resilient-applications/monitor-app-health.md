@@ -1,13 +1,13 @@
 ---
 title: Мониторинг работоспособности
 description: Изучите один из способов реализации мониторинга работоспособности.
-ms.date: 03/02/2020
-ms.openlocfilehash: 3e3e8ec41de1469f0c397d8d80d224dd2f7a2bd2
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 01/13/2021
+ms.openlocfilehash: 4b85193c260b950b0c7a1c97ca5c83dfc87e5fb3
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267897"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189067"
 ---
 # <a name="health-monitoring"></a>Мониторинг работоспособности
 
@@ -31,10 +31,10 @@ ms.locfileid: "88267897"
 
 Для начала необходимо определить, что входит в состояние работоспособности для каждой микрослужбы. В примере приложения мы определяем, что микрослужба находится в работоспособном состоянии, если ее API доступен через HTTP и соответствующая база данных SQL Server также доступна.
 
-В .NET Core 3.1 со встроенными API-интерфейсами можно настроить службы, добавить проверку работоспособности для микрослужбы и ее зависимые базы данных SQL Server следующим образом:
+В .NET 5 со встроенными API-интерфейсами можно настроить службы, добавить проверку работоспособности для микрослужбы и ее зависимые базы данных SQL Server следующим образом:
 
 ```csharp
-// Startup.cs from .NET Core 3.1 Web API sample
+// Startup.cs from .NET 5 Web API sample
 //
 public void ConfigureServices(IServiceCollection services)
 {
@@ -109,7 +109,7 @@ public class SqlConnectionHealthCheck : IHealthCheck
 Наконец, добавьте ПО промежуточного слоя, которое отвечает на URL пути `/hc`:
 
 ```csharp
-// Startup.cs from .NET Core 3.1 Web Api sample
+// Startup.cs from .NET 5 Web Api sample
 //
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
@@ -130,7 +130,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 Микрослужбы в eShopOnContainers зависят от нескольких служб, которые выполняют задачи. Например, микрослужба `Catalog.API` из eShopOnContainers зависит от многих служб, таких как хранилище BLOB-объектов Azure, SQL Server и RabbitMQ. Поэтому к ней добавляется несколько проверок работоспособности с помощью метода `AddCheck()`. Для каждой зависимой службы необходимо добавить пользовательскую реализацию `IHealthCheck`, которая будет определять соответствующее состояние работоспособности.
 
-Проект с открытым кодом [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) решает эту проблему путем предоставления пользовательских реализаций проверки работоспособности для каждой из этих корпоративных служб, которые построены на основе .NET Core 3.1. Каждая проверка работоспособности доступна в виде отдельного пакета NuGet, который можно легко добавить в проект. eShopOnContainers широко использует их во всех своих микрослужбах.
+Проект с открытым кодом [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) решает эту проблему путем предоставления пользовательских реализаций проверки работоспособности для каждой из этих корпоративных служб, которые построены на основе .NET 5. Каждая проверка работоспособности доступна в виде отдельного пакета NuGet, который можно легко добавить в проект. eShopOnContainers широко использует их во всех своих микрослужбах.
 
 Например, в микрослужбе `Catalog.API` добавлены следующие пакеты NuGet:
 

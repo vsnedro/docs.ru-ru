@@ -1,36 +1,38 @@
 ---
-title: Улучшения специальных возможностей в .NET Framework
+title: Улучшения специальных возможностей в .NET Framework
+titleSuffix: ''
 description: Узнайте об улучшениях специальных возможностей в .NET, начиная с .NET Framework 4.7.1. Специальные возможности позволяют приложению предоставлять надлежащую функциональность пользователям технологий с поддержкой специальных возможностей.
-ms.date: 04/18/2019
+ms.date: 01/05/2021
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - what's new [.NET Framework]
-ms.openlocfilehash: d204bea7f5ec1ed0c25b7b2dedd04d61c7f3e93d
-ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
+ms.openlocfilehash: c2ebaed8bf347eb8d8764f4bdf76dcc33db86bad
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90679551"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536168"
 ---
-# <a name="whats-new-in-accessibility-in-the-net-framework"></a>Улучшения специальных возможностей в .NET Framework
+# <a name="whats-new-in-accessibility-in-net-framework"></a>Улучшения специальных возможностей в .NET Framework
 
-Платформа .NET Framework ориентирована на то, чтобы сделать приложения более доступными для ваших пользователей. Специальные возможности позволяют приложению предоставлять соответствующую функциональность пользователям технологий с поддержкой специальных возможностей. Начиная с .NET Framework 4.7.1 платформа .NET Framework включает большое число улучшений специальных возможностей, позволяющих разработчикам создавать доступные приложения.
+Платформа .NET Framework ориентирована на то, чтобы сделать приложения более доступными для ваших пользователей. Специальные возможности позволяют приложению предоставлять соответствующую функциональность пользователям технологий с поддержкой специальных возможностей. Начиная с .NET Framework 4.7.1 платформа .NET Framework включает большое число улучшений специальных возможностей, позволяющих разработчикам создавать доступные приложения.
 
 ## <a name="accessibility-switches"></a>Переключатель специальных возможностей
 
-Вы можете включить в приложении функции специальных возможностей, если оно предназначено для .NET Framework 4.7 или более ранней версии, но выполняется на платформе .NET Framework 4.7.1 или более поздней версии. Вы также можете настроить в приложении использование компонентов прежних версий (и не использовать преимущества функций специальных возможностей), если оно предназначено для .NET Framework 4.7.1 или более поздней версии. У каждой версии платформы .NET Framework с функциями специальных возможностей есть специальный переключатель, который можно добавить в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения. Ниже приведены поддерживаемые переключатели:
+Вы можете включить в приложении функции специальных возможностей, если оно предназначено для .NET Framework 4.7 или более ранней версии, но выполняется на платформе .NET Framework 4.7.1 или более поздней версии. Вы также можете настроить в приложении использование компонентов прежних версий (и не использовать преимущества функций специальных возможностей), если оно предназначено для .NET Framework 4.7.1 или более поздней версии. У каждой версии платформы .NET Framework с функциями специальных возможностей есть специальный переключатель, который можно добавить в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения. Ниже приведены поддерживаемые переключатели:
 
 |Version|Параметр|
 |---|---|
 |.NET Framework 4.7.1|"Switch.UseLegacyAccessibilityFeatures"|
 |.NET Framework 4.7.2|"Switch.UseLegacyAccessibilityFeatures.2"|
 |.NET Framework 4.8|"Switch.UseLegacyAccessibilityFeatures.3"|
+|Накопительный пакет обновления KB4569746 для платформы .NET Framework 4.8 от 11 августа 2020 г.|"Switch.UseLegacyAccessibilityFeatures.4"|
 
 ### <a name="taking-advantage-of-accessibility-enhancements"></a>Использование преимуществ усовершенствованных специальных возможностей
 
-Новые специальные возможности включены по умолчанию для приложений, предназначенных для .NET Framework 4.7.1 или более поздней версии. Кроме того, приложения, которые предназначены для более ранней версии .NET Framework, но работают на платформе .NET Framework 4.7.1 или более поздней версии, могут явно отказаться от устаревших вариантов специальных возможностей (и тем самым согласиться на использование улучшений специальных возможностей). Для этого добавьте параметры в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения и установите для них значение `false`. В следующем примере показано, как принять усовершенствованные специальные возможности, представленные в .NET Framework 4.7.1:
+Новые специальные возможности включены по умолчанию для приложений, предназначенных для .NET Framework 4.7.1 или более поздней версии. Кроме того, приложения, которые предназначены для более ранней версии .NET Framework, но работают на платформе .NET Framework 4.7.1 или более поздней версии, могут явно отказаться от устаревших вариантов специальных возможностей (и тем самым согласиться на использование улучшений специальных возможностей). Для этого добавьте параметры в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения и установите для них значение `false`. В следующем фрагменте кода показано, как принять усовершенствованные специальные возможности, представленные в .NET Framework 4.7.1:
 
 ```xml
 <runtime>
@@ -39,7 +41,7 @@ ms.locfileid: "90679551"
 </runtime>
 ```
 
-Если вы решили включить функции специальных возможностей из более поздней версии .NET Framework, необходимо явным образом включить эти функции из более ранних версий платформы .NET Framework. Для использования в приложении усовершенствованных специальных возможностей из .NET Framework 4.7.1 и 4.7.2 требуется следующий элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
+Если вы решили включить функции специальных возможностей из более поздней версии .NET Framework, необходимо явным образом включить эти функции из более ранних версий платформы. Для использования в приложении усовершенствованных специальных возможностей из .NET Framework 4.7.1 и 4.7.2 добавьте следующий элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
 
 ```xml
 <runtime>
@@ -48,18 +50,18 @@ ms.locfileid: "90679551"
 </runtime>
 ```
 
-Для использования в приложении усовершенствованных специальных возможностей из .NET Framework 4.7.1, 4.7.2 и 4.8 требуется следующий элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
+Для использования в приложении усовершенствованных специальных возможностей из .NET Framework 4.7.1, 4.7.2, 4.8 и августовского накопительного обновления 2020 г. для .NET Framework 4.8 добавьте следующий элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
 
 ```xml
 <runtime>
     <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true|false;key2=true|false  -->
-    <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false;Switch.UseLegacyAccessibilityFeatures.2=false;Switch.UseLegacyAccessibilityFeatures.3=false" />
+    <AppContextSwitchOverrides value=Switch.UseLegacyAccessibilityFeatures=false|Switch.UseLegacyAccessibilityFeatures.2=false|Switch.UseLegacyAccessibilityFeatures.3=false|Switch.UseLegacyAccessibilityFeatures.4=false"/>
 </runtime>
 ```
 
 ### <a name="restoring-legacy-behavior"></a>Восстановление поведения из предыдущих версий
 
-Для приложений, ориентированных на версии .NET Framework, начиная с 4.7.1, можно отключить функции специальных возможностей, добавив следующий параметр в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения и установив значение `true`. Например, следующая конфигурация задает отказ от функций специальных возможностей, представленных в .NET Framework 4.7.2:
+Для приложений, ориентированных на версии .NET Framework, начиная с 4.7.1, можно отключить функции специальных возможностей, добавив следующий параметр в элемент [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) в разделе [`<runtime>`](../configure-apps/file-schema/runtime/index.md) файла конфигурации приложения и установив значение `true`. Например, следующая конфигурация задает отказ от функций специальных возможностей, представленных в .NET Framework 4.7.2:
 
 ```xml
 <runtime>
@@ -67,6 +69,20 @@ ms.locfileid: "90679551"
     <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures.2=true" />
 </runtime>
 ```
+
+## <a name="whats-new-in-accessibility-in-the-august-11-2020-cumulative-update-for-net-framework-48"></a>Новое в специальных возможностях в накопительном обновлении от 11 августа 2020 г. для платформы .NET Framework 4.8
+
+Накопительное обновление KB4569746 для платформы .NET Framework 4.8 от 11 августа 2020 г. содержит новые специальные возможности Windows Forms.
+
+- Устранены проблемы с объявлением элементов управления `PropertyGrid` и развернутого или свернутого состояния категории средствами чтения с экрана.
+
+- Обновлены доступные шаблоны элемента управления `PropertyGrid` и его внутренних элементов.
+
+- Обновлены доступные имена внутренних элементов управления `PropertyGrid` для их правильного объявления средствами чтения с экрана.
+
+- Устранены доступные свойства ограничивающего прямоугольника для элементов управления `PropertyGridView`.
+
+- Обеспечение правильного объявления средствами чтения с экрана развернутого или свернутого состояния ячеек поля со списком `DataGridView`.
 
 ## <a name="whats-new-in-accessibility-in-net-framework-48"></a>Улучшения специальных возможностей в .NET Framework 4.8
 
@@ -149,7 +165,7 @@ if (raiseMethod != null) {
 
 **Подсказки при доступе с клавиатуры**
 
-В приложениях для платформы .NET Framework 4.7.2 и более ранних версий [подсказка](xref:System.Windows.Forms.ToolTip) элемента управления всплывает только при наведении на элемент указателя мыши. Начиная с .NET Framework 4.8 подсказка также может всплывать, когда пользователь переводит фокус на элемент управления с помощью клавиши TAB или клавиш со стрелками с клавишами-модификаторами или без них. Для данного улучшения специальных возможностей требуется дополнительный [параметр AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
+В приложениях для платформы .NET Framework 4.7.2 и более ранних версий [подсказка](xref:System.Windows.Forms.ToolTip) элемента управления всплывает только при наведении на элемент указателя мыши. Начиная с .NET Framework 4.8 подсказка также может всплывать, когда пользователь переводит фокус на элемент управления с помощью клавиши TAB или клавиш со стрелками с клавишами-модификаторами или без них. Для данного улучшения специальных возможностей требуется дополнительный [параметр AppContext](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,7 +197,7 @@ if (raiseMethod != null) {
 
 **Свойство SelectionTextBrush для выделения текста без использования декоративного элемента**
 
-В .NET Framework 4.7.2 в WPF появилась возможность отрисовывать выделение текста в <xref:System.Windows.Controls.TextBox> и <xref:System.Windows.Controls.PasswordBox> без использования слоя декоративных элементов. В таком случае цвет переднего плана выделенного текста определялся свойством <xref:System.Windows.SystemColors.HighlightTextBrush?displayProperty=nameWithType>.
+В .NET Framework 4.7.2 в WPF появилась возможность отрисовывать выделение текста в <xref:System.Windows.Controls.TextBox> и <xref:System.Windows.Controls.PasswordBox> без использования слоя декоративных элементов. В таком случае цвет переднего плана выделенного текста определялся свойством <xref:System.Windows.SystemColors.HighlightTextBrush?displayProperty=nameWithType>.
 
 В .NET Framework 4.8 добавлено новое свойство `SelectionTextBrush`, которое позволяет разработчикам выбирать кисть для текста, выделенного без использования декоративного элемента. Это свойство работает только для элементов управления, производных от <xref:System.Windows.Controls.Primitives.TextBoxBase>, и элемента управления <xref:System.Windows.Controls.PasswordBox> в приложениях WPF с включенным выделением текста без использования декоративного элемента. Оно не поддерживается элементом управления <xref:System.Windows.Controls.RichTextBox>. Если выделение текста без использования декоративного элемента не включено, это свойство игнорируется.
 
@@ -476,7 +492,7 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 
 - Элемент управления <xref:System.Windows.Controls.Expander>
 
-  Визуальный элемент фокуса для элемента управления <xref:System.Windows.Controls.Expander> теперь отображается. Визуальные элементы клавиатуры для элементов управления <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox> и <xref:System.Windows.Controls.RadioButton> также видимы. Пример:
+  Визуальный элемент фокуса для элемента управления <xref:System.Windows.Controls.Expander> теперь отображается. Визуальные элементы клавиатуры для элементов управления <xref:System.Windows.Controls.ComboBox>,<xref:System.Windows.Controls.ListBox> и <xref:System.Windows.Controls.RadioButton> также видимы. Пример:
 
   До:
 
@@ -562,7 +578,7 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
 
 **Улучшенное отображение в режиме высокой контрастности**
 
-Начиная с .NET Framework 4.7.1 различные элементы управления WinForms обеспечивают улучшенную отрисовку в режимах высокой контрастности, доступных в операционной системе. В Windows 10 были изменены некоторые системные цвета в режиме высокой контрастности, а Windows Forms основан на платформе Win32 Windows 10. Для достижения наилучших результатов используйте самую последнюю версию Windows и согласитесь на последние изменения операционной системы, добавив файл app.manifest в тестовое приложение и раскомментировав строку поддержки Windows 10, чтобы она выглядела следующим образом:
+Начиная с .NET Framework 4.7.1 различные элементы управления WinForms обеспечивают улучшенную отрисовку в режимах высокой контрастности, доступных в операционной системе. В Windows 10 были изменены некоторые системные цвета в режиме высокой контрастности, а Windows Forms основан на платформе Win32 Windows 10. Для достижения наилучших результатов используйте самую последнюю версию Windows и согласитесь на последние изменения операционной системы, добавив файл app.manifest в тестовое приложение и раскомментировав строку поддержки Windows 10, чтобы она выглядела следующим образом:
 
 ```xml
 <!-- Windows 10 -->

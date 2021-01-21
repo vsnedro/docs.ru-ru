@@ -3,12 +3,12 @@ title: Сравнение project.json и CSPROJ
 description: См. сопоставление между элементами project.json и CSPROJ.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: 7de9f623a57a6a094debd3e018edc1560d837fc2
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 3c9b2f266c2fcc3acdfbe40e19509edde20eec93
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970880"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190186"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>Сопоставление между свойствами project.json и CSPROJ
 
@@ -253,6 +253,9 @@ And it's really great!</Description>
 </ItemGroup>
 ```
 
+> [!NOTE]
+> Свойство `PackageTargetFallback` является нерекомендуемым. Вместо этого используйте [AssetTargetFallback](../project-sdk/msbuild-props.md#assettargetfallback).
+
 ### <a name="dependency-type"></a>Тип dependency
 
 #### <a name="type-project"></a>type: project
@@ -356,7 +359,9 @@ And it's really great!</Description>
 ```
 
 > [!NOTE]
-> `imports` для tools не поддерживаются в CSPROJ. Tools, которым требуются imports, не будут работать с новым `Microsoft.NET.Sdk`.
+>
+> - `imports` для tools не поддерживаются в CSPROJ. Tools, которым требуются imports, не будут работать с `Microsoft.NET.Sdk`.
+> - Вместо `DotNetCliToolReference` теперь используются [local tools](global-tools.md#install-a-local-tool).
 
 ## <a name="buildoptions"></a>buildOptions
 
@@ -609,7 +614,7 @@ And it's really great!</Description>
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 
@@ -674,3 +679,4 @@ And it's really great!</Description>
 ## <a name="see-also"></a>См. также
 
 - [Краткий обзор изменений в интерфейсе командной строки](cli-msbuild-architecture.md)
+- [Справочник по MSBuild для проектов пакета SDK для .NET](../project-sdk/msbuild-props.md)

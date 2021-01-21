@@ -1,13 +1,13 @@
 ---
 title: Использование баз данных NoSQL в качестве инфраструктуры сохраняемости
 description: Использование баз данных NoSql в целом и в Azure Cosmos DB в частности для реализации сохраняемости.
-ms.date: 01/30/2020
-ms.openlocfilehash: 2877c7eaf08dccfdf6126939b195a6a9a7195dfa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/13/2021
+ms.openlocfilehash: 32f32a3fd247f49ac54deaf33605bcc2ac7b55dc
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173384"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188833"
 ---
 # <a name="use-nosql-databases-as-a-persistence-infrastructure"></a>Использование баз данных NoSQL в качестве инфраструктуры сохраняемости
 
@@ -62,7 +62,7 @@ ms.locfileid: "91173384"
 
 ```csharp
 // C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH AZURE COSMOS DB API
-// *** Domain Model Code ***
+// **_ Domain Model Code _*_
 // Aggregate: Create an Order object with its child entities and/or value objects.
 // Then, use AggregateRoot's methods to add the nested objects so invariants and
 // logic is consistent across the nested properties (value objects and entities).
@@ -98,9 +98,9 @@ OrderItem orderItem1 = new OrderItem
 
 //Using methods with domain logic within the entity. No anemic-domain model
 orderAggregate.AddOrderItem(orderItem1);
-// *** End of Domain Model Code ***
+// _*_ End of Domain Model Code _*_
 
-// *** Infrastructure Code using Cosmos DB Client API ***
+// _*_ Infrastructure Code using Cosmos DB Client API _*_
 Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
     collectionName);
 
@@ -134,7 +134,7 @@ await client.CreateDocumentAsync(collectionUri, newOrder);
 
 ![Схема, на которой показано, что Cosmos DB поддерживает .NET и сетевой протокол MongoDB.](./media/nosql-database-persistence-infrastructure/mongodb-api-wire-protocol.png)
 
-**Рис. 7-20**. Использование API и протокола MongoDB для доступа к Azure Cosmos DB
+_*Рис. 7-20**. Использование API и протокола MongoDB для доступа к Azure Cosmos DB
 
 Это очень удобный подход для подтверждения концепций в средах Docker с контейнерами Linux, так как [образ Docker MongoDB](https://hub.docker.com/r/_/mongo/) — это образ с поддержкой нескольких архитектур. Он поддерживает как контейнеры Linux, так и контейнеры Windows в Docker.
 
@@ -146,7 +146,7 @@ await client.CreateDocumentAsync(collectionUri, newOrder);
 
 Рабочая база данных Azure Cosmos DB была бы запущена в облаке Azure как PaaS и масштабируемая служба.
 
-Пользовательские контейнеры .NET Core можно запустить на локальном узле Docker (на котором используется Docker для Windows на компьютере Windows 10) или развернуть в рабочей среде, например, в Kubernetes в Azure AKS или в Azure Service Fabric. Во второй среде вы разворачиваете только пользовательские контейнеры .NET Core, но не контейнер MongoDB, так как вы будете использовать Azure Cosmos DB в облаке для обработки данных в рабочей среде.
+Пользовательские контейнеры .NET можно запустить на локальном узле Docker (на котором используется Docker для Windows на компьютере Windows 10) или развернуть в рабочей среде, например, в Kubernetes в Azure AKS или в Azure Service Fabric. Во второй среде вы разворачиваете только пользовательские контейнеры .NET, но не контейнер MongoDB, так как вы будете использовать Azure Cosmos DB в облаке для обработки данных в рабочей среде.
 
 Очевидное преимущество API MongoDB — в том, что ваше решение можно запустить как в MongoDB, так и в Azure Cosmos DB, поэтому перенос в другую среду не должен представлять сложностей. Однако иногда стоит использовать собственный API (то есть собственный API Cosmos DB), чтобы получить полный набор возможностей конкретной СУБД.
 
@@ -162,13 +162,13 @@ await client.CreateDocumentAsync(collectionUri, newOrder);
 
 По сути, это просто предупреждение о том, что не следует всегда выбирать API MongoDB в сравнении с Azure Cosmos DB, как мы сделали в eShopOnContainers, так как API MongoDB хорошо подходит для контейнеров Linux. При принятии решения следует учитывать конкретные потребности и провести конкретные проверки для приложения в рабочей среде.
 
-### <a name="the-code-use-mongodb-api-in-net-core-applications"></a>Код. Использование API MongoDB в приложениях .NET Core
+### <a name="the-code-use-mongodb-api-in-net-applications"></a>Код. Использование API MongoDB в приложениях .NET
 
 API MongoDB для .NET основан на пакетах NuGet, которые необходимо добавить в свои проекты, например проект Locations.API, показанный на следующем рисунке.
 
 ![Снимок экрана: зависимости в пакетах NuGet MongoDB.](./media/nosql-database-persistence-infrastructure/mongodb-api-nuget-packages.png)
 
-**Рис. 7-22**. Ссылки на пакеты NuGet для API MongoDB в проекте .NET Core
+**Рис. 7-22**. Ссылки на пакеты NuGet для API MongoDB в проекте .NET
 
 Давайте рассмотрим код, приведенный в следующих разделах.
 
