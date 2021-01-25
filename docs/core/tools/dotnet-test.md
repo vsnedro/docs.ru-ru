@@ -2,12 +2,12 @@
 title: Команда dotnet test
 description: Команда dotnet test служит для выполнения модульных тестов в проекте.
 ms.date: 04/29/2020
-ms.openlocfilehash: 4834da766bd052f44127a72635b65866eb7e3352
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 2671cbe6f610cfa8aa98e63e67f3240a1650cd6b
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189158"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757880"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -250,7 +250,7 @@ dotnet test -h|--help
 | Тестовая платформа | Поддерживаемые свойства                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Признаки</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Категория</li></ul>                                 |
 | NUnit          | <ul><li>FullyQualifiedName</li><li>name</li><li>TestCategory</li><li>Priority</li></ul>                                   |
 
 `<operator>` описывает связь между свойством и значением:
