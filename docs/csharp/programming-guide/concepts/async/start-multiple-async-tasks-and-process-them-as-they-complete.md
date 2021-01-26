@@ -3,12 +3,12 @@ title: Обработка асинхронных задач по мере зав
 description: В этом примере показано, как использовать Task.WhenAny в C# для запуска нескольких задач и обработки их результатов по мере завершения, а не в порядке запуска.
 ms.date: 08/19/2020
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
-ms.openlocfilehash: 860e94a9c3973ce56e7321741a1136f752aa3d18
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 4cdd35af900863895911ea5c2c9772af362951ec
+ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805243"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98615975"
 ---
 # <a name="process-asynchronous-tasks-as-they-complete-c"></a>Обработка асинхронных задач по мере завершения (C#)
 
@@ -128,13 +128,13 @@ List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
 1. Ожидает вызов `WhenAny` для определения первой задачи в коллекции, чтобы завершить ее загрузку.
 
     ```csharp
-    Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+    Task<int> finishedTask = await Task.WhenAny(downloadTasks);
     ```
 
 1. Удаляет эту задачу из коллекции.
 
     ```csharp
-    downloadTasks.Remove(firstFinishedTask);
+    downloadTasks.Remove(finishedTask);
     ```
 
 1. Ожидает `finishedTask`, возвращаемый при вызове `ProcessUrlAsync`. Переменная `finishedTask` представляет собой <xref:System.Threading.Tasks.Task%601>, где `TResult` — целое число. Задача уже завершена, но она ожидается для получения размера загруженного веб-сайта, как показано в следующем примере. В случае сбоя задачи `await` выдаст первое исключение дочернего элемента, хранящееся в `AggregateException`, в отличие от считывания свойства <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType>, которое выдаст `AggregateException`.
