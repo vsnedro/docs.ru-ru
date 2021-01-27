@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: b1d7fbbe98aaad16454fdd71c161f2a17a2f4f2e
-ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
+ms.openlocfilehash: e55b86e5b028fb871f309d80217477cfd164c106
+ms.sourcegitcommit: f0eb7eeedf3ceec726499fa678786d03083214ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91173260"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98629258"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc (параметры компилятора C#)
 
@@ -54,15 +54,19 @@ ms.locfileid: "91173260"
   
  Способы создания документации из комментариев в коде описаны в разделе [Рекомендуемые теги для комментариев документации](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md).  
   
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio  
-  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-2019-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio 2019  
+
 1. Откройте страницу **Свойства** проекта.  
+2. Перейдите на вкладку **Сборка**.
+3. Измените свойство **XML-файл документации**.
   
-2. Перейдите на вкладку **Сборка**.  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-for-mac-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio для Mac  
   
-3. Измените свойство **XML-файл документации**.  
-  
- Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
+1. Откройте страницу проекта **Параметры**.
+2. Перейдите на вкладку **Компилятор**.
+3. Выберите **Создать XML-документацию** и введите имя файла в текстовом поле.
+
+Сведения об установке этого параметра компилятора программными средствами см. в статье <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   
 ## <a name="see-also"></a>См. также раздел
 

@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e35ccc3540756a4cb7905d5864caf65cded4362b
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 21bbe46cf60540c01344cc8fcb82c62ff0fbbee5
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189988"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692713"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -86,6 +86,8 @@ ms.locfileid: "98189988"
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
 - [CopyToPublishDirectory](#copytopublishdirectory)
 - [LinkBase](#linkbase)
+- [PreserveCompilationContext](#preservecompilationcontext)
+- [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
@@ -153,6 +155,30 @@ ms.locfileid: "98189988"
 
 > [!TIP]
 > Кроме того, можно использовать `dotnet publish` для публикации библиотеки классов. Дополнительные сведения см. в разделе [dotnet publish](../tools/dotnet-publish.md).
+
+### <a name="preservecompilationcontext"></a>PreserveCompilationContext
+
+Свойство `PreserveCompilationContext` позволяет собранному или опубликованному приложению компилировать дополнительный код во время выполнения с теми же параметрами, которые использовались во время сборки. Сборки, ссылки на которые были указаны во время сборки, будут скопированы в подкаталог *ref* выходного каталога. Имена базовых сборок хранятся в файле *.deps.json* приложения вместе с параметрами, передаваемыми компилятору. Эту информацию можно получить с помощью свойств <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> и <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType>.
+
+Эта функциональность в основном используется внутри системы для поддержки компиляции файлов Razor во время выполнения на страницах MVC и Razor ASP.NET Core.
+
+```xml
+<PropertyGroup>
+  <PreserveCompilationContext>true</PreserveCompilationContext>
+</PropertyGroup>
+```
+
+### <a name="preservecompilationreferences"></a>PreserveCompilationReferences
+
+Свойство `PreserveCompilationReferences` аналогично свойству [PreserveCompilationContext](#preservecompilationcontext) за исключением того, что при его использовании в каталог публикации копируются только указанные ссылками сборки, но не копируется файл *.deps.json*.
+
+```xml
+<PropertyGroup>
+  <PreserveCompilationReferences>true</PreserveCompilationReferences>
+</PropertyGroup>
+```
+
+Дополнительные сведения см. в разделе [Свойства пакета SDK Razor](/aspnet/core/razor-pages/sdk#properties).
 
 ### <a name="runtimeidentifier"></a>RuntimeIdentifier
 

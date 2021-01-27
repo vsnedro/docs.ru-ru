@@ -3,12 +3,12 @@ title: Телеметрия пакета SDK для .NET
 description: Сведения о функциях телеметрии пакета SDK для .NET, позволяющих собирать сведения об использовании для анализа, а также о собираемых данных и способе отключения этих функций.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.openlocfilehash: 4f137822c61e1a04eccd28ebd0cd56c04f4a85e2
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 137b703dc9369f09fb535af40edf057e4e02117a
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94633874"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757841"
 ---
 # <a name="net-sdk-telemetry"></a>Телеметрия пакета SDK для .NET
 
@@ -33,6 +33,9 @@ ms.locfileid: "94633874"
 Функция телеметрии пакета SDK для .NET по умолчанию включена. Чтобы отключить ее, присвойте переменной среды `DOTNET_CLI_TELEMETRY_OPTOUT` значение `1` или `true`.
 
 При успешной установке программа установки пакета SDK для .NET отправляет единую запись телеметрии. Чтобы отказаться от этого, задайте переменную среды `DOTNET_CLI_TELEMETRY_OPTOUT` перед установкой пакета SDK для .NET.
+
+> [!IMPORTANT]
+> Чтобы отказаться от отправки данных телеметрии после запуска установщика, закройте установщик, задайте переменную среды, а затем снова запустите установщик с заданной переменной среды.
 
 ## <a name="disclosure"></a>Раскрытие информации
 
@@ -98,7 +101,7 @@ Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 | `--language`            | `dotnet new`                                                                                   |
 | `--configuration`       | `dotnet build`, `dotnet clean`, `dotnet publish`, `dotnet run`, `dotnet test`                  |
 | `--framework`           | `dotnet build`, `dotnet clean`, `dotnet publish`, `dotnet run`, `dotnet test`, `dotnet vstest` |
-| `--runtime`             | `dotnet build`, `dotnet publish`                                                              |
+| `--runtime`             | `dotnet build`,  `dotnet publish`                                                              |
 | `--platform`            | `dotnet vstest`                                                                                |
 | `--logger`              | `dotnet vstest`                                                                                |
 | `--sdk-package-version` | `dotnet migrate`                                                                               |
