@@ -1,23 +1,23 @@
 ---
-title: Начало работы с хранилищем файлов Azure с помощью языка F#
-description: Хранение данных (файлов) в облаке в хранилище файлов Azure и подключение к общей облачной папке из виртуальной машины Azure или из локального приложения под управлением Windows.
+title: 'Начало работы с хранилищем файлов Azure с помощью F #'
+description: Храните данные файлов в облаке с помощью хранилища файлов Azure и подключите облачный файловый ресурс из виртуальной машины Azure или из локального приложения под управлением Windows.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: devx-track-fsharp
-ms.openlocfilehash: dd19b156e73774f4eca63afd3f4c10a4a7b8d46c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: bcea58b4bf756fc9d696cd5a1010b0feffb127a7
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100130"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899429"
 ---
 # <a name="get-started-with-azure-file-storage-using-f"></a>Начало работы с хранилищем файлов Azure с помощью F\#
 
-Хранилище файлов Azure — это служба, которая предлагает общие файловые ресурсы в облаке с помощью стандартного [протокола SMB](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Поддерживаются версии SMB 2.1 и SMB 3.0. Хранилище файлов Azure позволяет быстро и без дорогостоящей перезаписи выполнить перенос приложений прежних версий, связанных с общими папками. Приложения, работающие на виртуальных машинах Azure, в облачных службах или на локальных клиентах, могут подключать общую папку в облаке так же, как настольное приложение подключает обычную общую папку SMB. Любое количество компонентов приложений может одновременно подключаться и получать доступ к ресурсам хранилища файлов.
+Хранилище файлов Azure — это служба, которая предлагает общие файловые ресурсы в облаке с помощью стандартного [протокола SMB](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Поддерживаются версии SMB 2.1 и SMB 3.0. С помощью хранилища файлов Azure можно быстро перенести устаревшие приложения, использующие общие файловые ресурсы, в Azure и без дорогостоящей перезаписи. Приложения, работающие на виртуальных машинах Azure, в облачных службах или на локальных клиентах, могут подключать общую папку в облаке так же, как настольное приложение подключает обычную общую папку SMB. Любое количество компонентов приложений может одновременно подключаться и получать доступ к ресурсам хранилища файлов.
 
 Общие сведения о хранилище файлов см. [в этом](/azure/storage/storage-dotnet-how-to-use-files)разделе.
 
-## <a name="prerequisites"></a>Обязательные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для работы с этим руководством необходимо сначала [создать учетную запись хранения Azure](/azure/storage/storage-create-storage-account).
 Вам также потребуется ключ доступа к хранилищу для этой учетной записи.
@@ -48,7 +48,7 @@ ms.locfileid: "91100130"
 
 [!code-fsharp[FileStorage](~/samples/snippets/fsharp/azure/file-storage.fsx#L13-L15)]
 
-Использование диспетчера конфигураций Azure не является обязательным. Можно также использовать API, например `ConfigurationManager` тип .NET Framework.
+Использование диспетчера конфигураций Azure не является обязательным. Можно также использовать API, например `ConfigurationManager` тип платформа .NET Framework.
 
 ### <a name="parse-the-connection-string"></a>Проанализируйте строку подключения
 
@@ -154,7 +154,7 @@ ms.locfileid: "91100130"
 
 ### <a name="blog-posts"></a>Записи блога
 
-- [Хранилище файлов Azure стало общедоступным](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
+- [Хранилище файлов Azure теперь общедоступно](https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/)
 - [Внутреннее хранилище файлов Azure](https://azure.microsoft.com/blog/inside-azure-file-storage/)
 - [Введение в службы файлов Microsoft Azure](/archive/blogs/windowsazurestorage/introducing-microsoft-azure-file-service)
 - [Сохраняемые подключения к файлам Microsoft Azure](/archive/blogs/windowsazurestorage/persisting-connections-to-microsoft-azure-files)
