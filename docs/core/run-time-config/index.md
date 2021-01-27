@@ -2,12 +2,12 @@
 title: Параметры конфигурация во время выполнения
 description: Узнайте, как настроить приложения .NET Core с помощью параметров конфигурации среды выполнения.
 ms.date: 01/21/2020
-ms.openlocfilehash: 21673a221d0f21202febf4730b955da66132d5f7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 5e9f292476cf953c3e63bb8e89268f7cc06b3bfc
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538202"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757854"
 ---
 # <a name="net-core-run-time-configuration-settings"></a>Параметры конфигурации среды выполнения .NET Core
 
@@ -37,7 +37,7 @@ ms.locfileid: "90538202"
 
 ## <a name="runtimeconfigjson"></a>runtimeconfig.json
 
-Если проект [собран](../tools/dotnet-build.md), в выходном каталоге создается файл *[имя_приложения].runtimeconfig.json*. Если файл *runtimeconfig.template.json* находится в той же папке, что и файл проекта, все параметры конфигурации, которые он содержит, объединяются в файл *[имя_приложения].runtimeconfig.json*. Если вы самостоятельно создаете приложение, разместите все параметры конфигурации в файле *runtimeconfig.template.json*. Если вы только запускаете приложение, вставьте их непосредственно в файл *[имя_приложения].runtimeconfig.json*.
+Если проект [собран](../tools/dotnet-build.md), в выходном каталоге создается файл *[имя_приложения].runtimeconfig.json*. Если файл *runtimeconfig.template.json* находится в той же папке, что и файл проекта, все параметры конфигурации, которые он содержит, добавляются в файл *[имя_приложения].runtimeconfig.json*. Если вы самостоятельно создаете приложение, разместите все параметры конфигурации в файле *runtimeconfig.template.json*. Если вы только запускаете приложение, вставьте их непосредственно в файл *[имя_приложения].runtimeconfig.json*.
 
 > [!NOTE]
 > Файл *[имя_приложения].runtimeconfig.json* будет перезаписан при последующих сборках.
@@ -88,7 +88,7 @@ ms.locfileid: "90538202"
 
 ## <a name="msbuild-properties"></a>свойства MSBuild
 
-Некоторые параметры конфигурации времени выполнения можно задать с помощью свойств MSBuild в файле *CSPROJ* или *VBPROJ* в проектах .NET Core типа SDK. Свойства MSBuild имеют приоритет над параметрами, заданными в файле *runtimeconfig.template.json*. Они также перезапишут все параметры, заданные в файле *[имя_приложения].runtimeconfig.json* во время сборки.
+Некоторые параметры конфигурации времени выполнения можно задать с помощью свойств MSBuild в файле *CSPROJ* или *VBPROJ* в проектах .NET Core типа SDK. Свойства MSBuild имеют приоритет над параметрами, заданными в файле *runtimeconfig.template.json*.
 
 Ниже приведен пример файла проекта в стиле пакета SDK со свойствами MSBuild для настройки поведения во время выполнения:
 
