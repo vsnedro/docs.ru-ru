@@ -1,17 +1,17 @@
 ---
 title: Руководство по программированию на C#. Массивы
 description: Храните несколько переменных одного типа в структуре данных массива на C#. Объявите массив, указав тип или указав объект для хранения любого типа.
-ms.date: 07/20/2015
+ms.date: 01/22/2021
 helpviewer_keywords:
 - arrays [C#]
 - C# language, arrays
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
-ms.openlocfilehash: e302ff2e4c2488c4899c4eb99a666d2d322119ce
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 203d8b86da4e74d8c5397132a0ba68618eedf348
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474739"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794768"
 ---
 # <a name="arrays-c-programming-guide"></a>Массивы (Руководство по программированию на C#)
 
@@ -39,17 +39,25 @@ type[] arrayName;
 - Элементы массива могут иметь любой тип, в том числе тип массива.
 - Типы массивов — это [ссылочные типы](../../language-reference/keywords/reference-types.md), производные от абстрактного базового типа <xref:System.Array>. Поскольку этот тип реализует <xref:System.Collections.IEnumerable> и <xref:System.Collections.Generic.IEnumerable%601>, вы можете просматривать в цикле [foreach](../../language-reference/keywords/foreach-in.md) любые массивы C#.
 
-## <a name="related-sections"></a>Связанные разделы
+### <a name="arrays-as-objects"></a>Массивы как объекты
 
-- [Массивы как объекты](arrays-as-objects.md)
+В C# массивы представляют собой реальные объекты, а не просто адресуемые области непрерывной памяти, как в C и C++. <xref:System.Array> — это абстрактный базовый тип для всех типов массивов. Вы можете использовать свойства и другие члены класса, входящие в <xref:System.Array>. Например, с помощью свойства <xref:System.Array.Length%2A> можно получить длину массива. В следующем коде значение длины массива `numbers` (`5`) присваивается переменной с именем `lengthOfNumbers`:
+
+[!code-csharp[csProgGuideArrays#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#3)]
+
+В классе <xref:System.Array> представлено множество других полезных методов и свойств для сортировки, поиска и копирования массивов. В следующем примере свойство <xref:System.Array.Rank%2A> используется для отображения количества измерений массива.
+
+[!code-csharp[csProgGuideArrays#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#2)]
+
+## <a name="see-also"></a>См. также раздел
+
+- [Как использовать одномерные массивы](single-dimensional-arrays.md)
+- [Как использовать многомерные массивы](multidimensional-arrays.md)
+- [Как использовать массивы массивов](jagged-arrays.md)
 - [Использование оператора foreach с массивами](using-foreach-with-arrays.md)
 - [Передача массивов в качестве аргументов](passing-arrays-as-arguments.md)
-
-## <a name="c-language-specification"></a>Спецификация языка C#
-
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-
-## <a name="see-also"></a>См. также
-
+- [Неявно типизированные массивы](implicitly-typed-arrays.md)
 - [Руководство по программированию на C#](../index.md)
 - [Коллекции](../concepts/collections.md)
+
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
