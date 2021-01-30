@@ -2,12 +2,12 @@
 title: Рекурсивные функции. Ключевое слово rec
 description: 'Узнайте, как ключевое слово F # REC используется с ключевым словом let для определения рекурсивной функции.'
 ms.date: 08/12/2020
-ms.openlocfilehash: 1ab00ff9400129e531fd7320861b3d9625cad08c
-ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
+ms.openlocfilehash: 27f215f7b6f09646e847898c2618cfac10175e6e
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91438077"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215716"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>Рекурсивные функции. Ключевое слово rec
 
@@ -38,20 +38,20 @@ and function2-nameparameter-list =
 ```fsharp
 let rec fib n =
     match n with
-    | 0 | 1 -> 1
+    | 0 | 1 -> n
     | n -> fib (n-1) + fib (n-2)
 ```
 
 > [!NOTE]
 > На практике код, подобный предыдущему примеру, не является идеальным, поскольку он унецессарили повторно выполняет вычисление значений, которые уже были вычислены. Это обусловлено тем, что не является рекурсивным, что объясняется далее в этой статье.
 
-Методы неявно являются рекурсивными в пределах типа, в котором они определены, то есть нет необходимости добавлять `rec` ключевое слово. Пример:
+Методы неявно являются рекурсивными в пределах типа, в котором они определены, то есть нет необходимости добавлять `rec` ключевое слово. Например:
 
 ```fsharp
 type MyClass() =
     member this.Fib(n) =
         match n with
-        | 0 | 1 -> 1
+        | 0 | 1 -> n
         | n -> this.Fib(n-1) + this.Fib(n-2)
 ```
 

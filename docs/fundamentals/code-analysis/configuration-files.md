@@ -5,19 +5,19 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0d64df42ffb1763afed3e883c4f043755e158489
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: b98fdd48f2373bd23fcd3273834860a60c682969
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633992"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216386"
 ---
 # <a name="configuration-files-for-code-analysis-rules"></a>Файлы конфигурации для правил анализа кода
 
 Правила анализа кода имеют различные [Параметры конфигурации](configuration-options.md). Эти параметры указываются в виде пар "ключ-значение" в одном из следующих файлов конфигурации анализатора:
 
 - [EditorConfig](#editorconfig) файл: параметры конфигурации на основе файлов или папок.
-- [Глобальный файл анализерконфиг](#global-analyzerconfig) : параметры конфигурации на уровне проекта.
+- [Глобальный файл анализерконфиг](#global-analyzerconfig) : параметры конфигурации на уровне проекта. Полезно, когда некоторые файлы проекта находятся за пределами папки проекта.
 
 ## EditorConfig
 
@@ -58,7 +58,7 @@ tab_width = 4
 #### .NET Coding Conventions ####
 
 # this. and Me. preferences
-dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_method = true
 
 #### Diagnostic configuration ####
 
@@ -74,7 +74,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ### <a name="format"></a>Формат
 
-В отличие от EditorConfig файлов, которые должны иметь заголовки разделов, например `[*.cs]` , для обнаружения подходящих файлов и папок, глобальные файлы анализерконфиг не имеют заголовков разделов. Вместо этого им требуется запись верхнего уровня формы, `is_global = true` чтобы отличать их от обычных EditorConfig файлов. Это означает, что все параметры в файле применяются ко всему проекту. Пример:
+В отличие от EditorConfig файлов, которые должны иметь заголовки разделов, например `[*.cs]` , для обнаружения подходящих файлов и папок, глобальные файлы анализерконфиг не имеют заголовков разделов. Вместо этого им требуется запись верхнего уровня формы, `is_global = true` чтобы отличать их от обычных EditorConfig файлов. Это означает, что все параметры в файле применяются ко всему проекту. Например:
 
 ```ini
 is_global = true

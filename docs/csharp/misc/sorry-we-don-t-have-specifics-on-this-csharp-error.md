@@ -1,5 +1,6 @@
 ---
 title: К сожалению, конкретные сведения об этой ошибке C# отсутствуют.
+description: Список возможных ресурсов для ошибок компилятора и предупреждений, которые еще не документированы.
 ms.date: 08/04/2020
 f1_keywords:
 - CS0181
@@ -736,12 +737,12 @@ f1_keywords:
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: 16420ee5889779e3aefdbc15f1050aeeeea8f624
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c16698fbbf42e0967978a3502243793835f541c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91804616"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216906"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-c-error"></a>К сожалению, конкретные сведения об этой ошибке C# отсутствуют.
 
@@ -753,11 +754,9 @@ ms.locfileid: "91804616"
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
 Содержит веб-сайт вопросов и ответов для вопросов и проблем с Visual C#.  
 
- См. также:  
- [Дополнительные ресурсы для программистов Visual C#](../getting-started/index.md)  
-  
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Руководство по программированию на C#](../programming-guide/index.md)
 - [Справочник по C#](../language-reference/index.md)
 - [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Дополнительные ресурсы для программистов Visual C#](../tour-of-csharp/index.md)
