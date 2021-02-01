@@ -1,14 +1,14 @@
 ---
 title: Обзор средства WCF svcutil
 description: Обзор инструмента Microsoft WCF dotnet-svcutil, который расширяет функциональные возможности проектов .NET Core и ASP.NET Core аналогично инструменту WCF svcutil для проектов .NET Framework.
-author: mlacouture
+author: honggit
 ms.date: 02/22/2019
-ms.openlocfilehash: 403bcf78ccebd983d378cfdd7965c4ca5097ccc9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9468a881fe3850b53d48945340127ac2c2d4c6c8
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078259"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957927"
 ---
 # <a name="wcf-dotnet-svcutil-tool-for-net-core"></a>Средство WCF dotnet-svcutil для .NET Core
 

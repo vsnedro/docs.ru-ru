@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C# language, finalizers
 - finalizers [C#]
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-ms.openlocfilehash: 61a00e766b0f975691b9f2a7c7561bb4f1d33c02
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a2f4f5f9342d5df1f9fa741c86cfe6f8b1d88bd1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174307"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899065"
 ---
 # <a name="finalizers-c-programming-guide"></a>Методы завершения (руководство по программированию в C#)
 
@@ -32,7 +32,7 @@ ms.locfileid: "91174307"
   
  Например, ниже показано объявление метода завершения для класса `Car`.
   
- [!code-csharp[csProgGuideObjects#86](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#86)]  
+ [!code-csharp[csProgGuideObjects#86](snippets/destructors/Program.cs#2)]
 
 Метод завершения можно также реализовать как определение тела выражения, как показано в следующем примере.
 
@@ -85,7 +85,7 @@ protected override void Finalize()
 
  В приведенном ниже примере создаются три класса, образующих цепочку наследования. Класс `First` является базовым, класс `Second` является производным от класса `First`, а класс `Third` является производным от класса `Second`. Все три класса имеют методы завершения. В методе `Main` создается экземпляр самого дальнего в цепочке наследования класса. При выполнении программы обратите внимание на то, что методы завершения для всех трех классов вызываются автоматически в порядке от самого дальнего до первого в цепочке наследования.  
   
- [!code-csharp[csProgGuideObjects#85](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#85)]  
+ [!code-csharp[Destructors#1](snippets/destructors/Program.cs#1)]
   
 ## <a name="c-language-specification"></a>Спецификация языка C#  
 

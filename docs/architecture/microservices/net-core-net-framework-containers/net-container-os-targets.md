@@ -2,12 +2,12 @@
 title: Для какой ОС использовать контейнеры .NET
 description: Архитектура микрослужб .NET для контейнерных приложений .NET | Для какой ОС использовать контейнеры .NET
 ms.date: 01/13/2021
-ms.openlocfilehash: 1b914d9afca9ade37f13e639f73001b91f338d26
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: b128a7b98d7f46034a56314bd8cc6b4f5731f121
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98187991"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957914"
 ---
 # <a name="what-os-to-target-with-net-containers"></a>Для какой ОС использовать контейнеры .NET
 
@@ -27,9 +27,6 @@ ms.locfileid: "98187991"
 
 В том случае, если требуется использовать другой дистрибутив Linux или если нужен образ с версиями, не предоставляемыми Майкрософт, можно также создать собственный образ Docker. Например, можно создать образ с ASP.NET Core для работы на классической платформе .NET Framework и в Windows Server Core, что для Docker является довольно редко используемым сценарием.
 
-> [!IMPORTANT]
-> При использовании образов Windows Server Core может оказаться, что отсутствуют некоторые библиотеки DLL по сравнению с полными образами Windows. Возможно, вы можете решить эту проблему, создав пользовательский образ Server Core и добавив отсутствующие файлы во время сборки, как описано в этом [комментарии на сайте GitHub](https://github.com/microsoft/dotnet-framework-docker/issues/299#issuecomment-511537448).
-
 При добавлении имени образа в файл Dockerfile можно выбрать операционную систему и версию в зависимости от используемого тега, как показано в следующих примерах:
 
 | Изображение | Комментарии |
@@ -38,11 +35,6 @@ ms.locfileid: "98187991"
 | mcr.microsoft.com/dotnet/aspnet:5.0 | ASP.NET Core 5.0 (несколько архитектур): поддерживает Linux и Windows Nano Server в зависимости от узла Docker. <br/> Образ aspnetcore имеет несколько оптимизаций для ASP.NET Core. |
 | mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim | .NET 5(только для среды выполнения) на основе дистрибутива Linux Debian |
 | mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1809 | .NET 5 (только для среды выполнения) на основе Windows Nano Server (Windows Server версии 1809) |
-
-## <a name="additional-resources"></a>Дополнительные ресурсы
-
-- **BitmapDecoder завершается со сбоем из-за отсутствующей библиотеки WindowsCodecsExt.dll (проблема GitHub)**  
-  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
 
 > [!div class="step-by-step"]
 > [Назад](container-framework-choice-factors.md)

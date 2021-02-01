@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - fields [C#]
 ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7
-ms.openlocfilehash: 9bd2e198cd623788a21d4da73e89851a6d77e3bb
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 58e60e1dc0b574ae922e6a27a22978b91aca4ec4
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474791"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899052"
 ---
 # <a name="fields-c-programming-guide"></a>Поля (Руководство по программированию в C#)
 
@@ -24,15 +24,15 @@ ms.locfileid: "86474791"
 
 Поля объявляются в блоке класса путем указания уровня доступа поля, за которым следует тип поля, а затем имя поля. Пример:
 
-[!code-csharp[csProgGuideObjects#61](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#61)]
+[!code-csharp[fields#1](snippets/fields/Program.cs#1)]
 
 Для доступа к полю в объекте добавьте точку после имени объекта, за которой следует имя поля, как в `objectname.fieldname`. Пример:
 
-[!code-csharp[csProgGuideObjects#62](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#62)]
+[!code-csharp[fields#2](snippets/fields/Program.cs#2)]
 
 Полю можно присвоить начальное значение с помощью оператора присваивания при объявлении поля. Чтобы автоматически назначить поле `day`, например полю `"Monday"`, нужно объявить `day`, как в следующем примере:
 
-[!code-csharp[csProgGuideObjects#63](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#63)]
+[!code-csharp[fields#3](snippets/fields/Program.cs#3)]
 
 Поля инициализируются непосредственно перед вызовом конструктора для экземпляра объекта. Если конструктор присваивает значение поля, он заменит значения, присвоенные при объявлении поля. Дополнительные сведения см. в разделе [Использование конструкторов](./using-constructors.md).
 

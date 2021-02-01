@@ -7,12 +7,12 @@ helpviewer_keywords:
 - partial classes [C#]
 - C# language, partial classes and methods
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-ms.openlocfilehash: 792159786131654d6ee0363f7ab7b87ac50d32bb
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: cfda3b89bfd9dc046274dfa53d62a0789d4d597e
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864752"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899104"
 ---
 # <a name="partial-classes-and-methods-c-programming-guide"></a>Разделяемые классы и методы (Руководство по программированию в C#)
 
@@ -28,7 +28,7 @@ ms.locfileid: "86864752"
 
 - Чтобы разделить определение класса, используйте модификатор ключевого слова [partial](../../language-reference/keywords/partial-type.md), как показано ниже:
 
-  [!code-csharp[csProgGuideObjects#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#26)]
+  [!code-csharp[EmployeeExample#1](snippets/partial-classes-and-methods/Program.cs#1)]
 
 Ключевое слово `partial` указывает, что другие части класса, структуры или интерфейса могут быть определены в пространстве имен. Все части должны использовать ключевое слово `partial`. Для формирования окончательного типа все части должны быть доступны во время компиляции. Все части должны иметь одинаковые модификаторы доступа, например `public`, `private` и т. д.
 
@@ -41,15 +41,15 @@ ms.locfileid: "86864752"
 
 В следующем примере показано, что вложенные типы могут быть разделяемыми, даже если тип, в который они вложены, не является разделяемым.
 
-[!code-csharp[csProgGuideObjects#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#25)]
+[!code-csharp[NestedPartialTypes#2](snippets/partial-classes-and-methods/Program.cs#2)]
 
 Во время компиляции атрибуты определений разделяемого типа объединяются. В качестве примера рассмотрим следующие объявления:
 
-[!code-csharp[csProgGuideObjects#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#23)]
+[!code-csharp[PartialMoonDeclarations#3](snippets/partial-classes-and-methods/Program.cs#3)]
 
 Они эквивалентны следующим объявлениям:
 
-[!code-csharp[csProgGuideObjects#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#24)]
+[!code-csharp[SingleMoonDeclaration#4](snippets/partial-classes-and-methods/Program.cs#4)]
 
 Следующие элементы объединяются из всех определений разделяемого типа:
 
@@ -65,11 +65,11 @@ ms.locfileid: "86864752"
 
 В качестве примера рассмотрим следующие объявления:
 
-[!code-csharp[csProgGuideObjects#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#21)]
+[!code-csharp[PartialEarthDeclarations#5](snippets/partial-classes-and-methods/Program.cs#5)]
 
 Они эквивалентны следующим объявлениям:
 
-[!code-csharp[csProgGuideObjects#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#22)]
+[!code-csharp[SingleEarthDeclaration#6](snippets/partial-classes-and-methods/Program.cs#6)]
 
 ### <a name="restrictions"></a>Ограничения
 
@@ -77,13 +77,13 @@ ms.locfileid: "86864752"
 
 - Все определения разделяемого типа, являющиеся частями одного типа, должны изменяться с использованием типа `partial`. Например, следующие объявления класса приведут к появлению ошибки:
 
-  [!code-csharp[csProgGuideObjects#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#20)]
+  [!code-csharp[AllDefinitionsMustBePartials#7](snippets/partial-classes-and-methods/Program.cs#7)]
 
 - Модификатор `partial` должен находиться непосредственно перед ключевыми словами `class`, `struct` или `interface`.
 
 - В определениях разделяемого типа могут присутствовать вложенные разделяемые типы, что показано в следующем примере:
 
-  [!code-csharp[csProgGuideObjects#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#19)]
+  [!code-csharp[NestedPartialTypes#8](snippets/partial-classes-and-methods/Program.cs#8)]
 
 - Все определения разделяемого типа, являющиеся частями одного и того же типа, должны быть определены в одной сборке и в одном модуле (EXE-файл или DLL-файл). Разделяемые определения не могут находиться в разных модулях.
 
@@ -119,7 +119,7 @@ ms.locfileid: "86864752"
 
 ### <a name="code"></a>Код
 
-[!code-csharp[csProgGuideObjects#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#17)]
+[!code-csharp[CoordsExample#9](snippets/partial-classes-and-methods/Program.cs#9)]
 
 ## <a name="example-2"></a>Пример 2
 
@@ -129,7 +129,7 @@ ms.locfileid: "86864752"
 
 ### <a name="code"></a>Код
 
-[!code-csharp[csProgGuideObjects#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#18)]
+[!code-csharp[PartialStructsAndInterfaces#10](snippets/partial-classes-and-methods/Program.cs#10)]
 
 ## <a name="partial-methods"></a>Разделяемые методы
 

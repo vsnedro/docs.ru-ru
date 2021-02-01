@@ -6,12 +6,12 @@ helpviewer_keywords:
 - object identity [C#]
 - reference equality [C#]
 ms.assetid: 91307fda-267b-4fd2-a338-2aada39ee791
-ms.openlocfilehash: 1d1a0e5d80ac8d2a689e75acbc6099b92e16f23f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 148f37b37639061e84cefafc5f057e6e7b54563f
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151445"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899156"
 ---
 # <a name="how-to-test-for-reference-equality-identity-c-programming-guide"></a>Руководство по программированию на C#. Тестирование на равенство (идентичность) ссылок
 
@@ -23,7 +23,7 @@ ms.locfileid: "91151445"
   
 ## <a name="example"></a>Пример  
 
- [!code-csharp[csProgGuideObjects#90](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#90)]  
+ [!code-csharp[TestingReferenceEquality](snippets/how-to-test-for-reference-equality-identity/Program.cs)]  
   
  Реализация `Equals` в универсальном базовом классе <xref:System.Object?displayProperty=nameWithType> также выполняет проверку на равенство ссылок, однако использовать такой подход не рекомендуется, поскольку в случае переопределения метода в классе результат может отличаться от ожидаемого. Это справедливо также для операторов `==` и `!=`. При работе со ссылочными типами операторы `==` и `!=` по умолчанию выполняют проверку на равенство ссылок. Тем не менее производные классы могут перегружать оператор для проверки на равенство значений. Чтобы свести к минимуму вероятность появления ошибки, рекомендуется всегда использовать <xref:System.Object.ReferenceEquals%2A> в тех случаях, когда требуется проверить два объекта на равенство ссылок.  
   

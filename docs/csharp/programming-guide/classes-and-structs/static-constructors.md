@@ -6,18 +6,18 @@ helpviewer_keywords:
 - static constructors [C#]
 - constructors [C#], static
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
-ms.openlocfilehash: 07b3e54c9ffeb1abacaf5ddd04d2058697e653e4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c224f96091e8fd5c51139757002ec8a67461a508
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203973"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898740"
 ---
 # <a name="static-constructors-c-programming-guide"></a>Статические конструкторы (Руководство по программированию в C#)
 
 Статический конструктор используется для инициализации любых [статических](../../language-reference/keywords/static.md) данных или для выполнения определенного действия, которое требуется выполнить только один раз. Он вызывается автоматически перед созданием первого экземпляра или ссылкой на какие-либо статические члены.  
   
- [!code-csharp[csProgGuideObjects#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#14)]  
+ [!code-csharp[SimpleClass#1](snippets/static-constructors/Program.cs#1)]
 
 ## <a name="remarks"></a>Примечания
 
@@ -57,7 +57,7 @@ ms.locfileid: "91203973"
 
  В этом примере класс `Bus` имеет статический конструктор. При создании первого экземпляра класса `Bus` (`bus1`) для инициализации класса вызывается статический конструктор. В выходных данных этого примера можно увидеть, что статический конструктор выполняется только один раз, несмотря на то, что создается два экземпляра класса `Bus`. Кроме того, этот конструктор вызывается до выполнения конструктора экземпляра.  
   
- [!code-csharp[csProgGuideObjects#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#15)]
+ [!code-csharp[BusSample#2](snippets/static-constructors/Program.cs#2)]
 
 ## <a name="c-language-specification"></a>Спецификация языка C#
 

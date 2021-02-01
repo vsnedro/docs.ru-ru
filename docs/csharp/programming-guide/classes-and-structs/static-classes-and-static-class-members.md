@@ -9,12 +9,12 @@ helpviewer_keywords:
 - C# language, static classes
 - static class members [C#]
 ms.assetid: 235614b5-1371-4dbd-9abd-b406a8b0298b
-ms.openlocfilehash: cbfe4b63dc27cf0a0b6aad87c4f011151bacd4e5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 31de2a7d58d610213bfa4fc0377e1ab7283e111e
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91199020"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899013"
 ---
 # <a name="static-classes-and-static-class-members-c-programming-guide"></a>Статические классы и члены статических классов (Руководство по программированию в C#)
 
@@ -61,7 +61,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
 
  Ниже приведен пример статического класса, содержащего два метода, преобразующих температуру по Цельсию в температуру по Фаренгейту и наоборот.  
   
- [!code-csharp[csProgGuideObjects#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#31)]  
+ [!code-csharp[TemperatureConverter#1](snippets/static-classes-and-static-class-members/Program.cs#1)]  
   
 ## <a name="static-members"></a>Статический члены  
 
@@ -77,11 +77,11 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  Для объявления статических методов класса используется ключевое слово `static` перед возвращаемым типом члена, как показано в следующем примере:  
   
- [!code-csharp[csProgGuideObjects#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#29)]  
+ [!code-csharp[AutomobileExample#2](snippets/static-classes-and-static-class-members/Program.cs#2)]  
   
  Статические члены инициализируются перед первым доступом к статическому члену и перед вызовом статического конструктора, если таковой имеется. Для доступа к члену статического класса следует использовать имя класса, а не имя переменной, указывая расположение члена, как показано в следующем примере:  
   
- [!code-csharp[csProgGuideObjects#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#30)]  
+ [!code-csharp[AccessingStaticMembers#3](snippets/static-classes-and-static-class-members/Program.cs#3)]  
   
  Если класс содержит статические поля, должен быть указан статический конструктор, который инициализирует эти поля при загрузке класса.  
   

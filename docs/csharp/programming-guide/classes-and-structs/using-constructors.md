@@ -5,12 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - constructors [C#], about constructors
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
-ms.openlocfilehash: 6b441b04bd6bfcb5564f40a90718e822f56ac21e
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 161c243f16f6705fa8fcf79360f92a74e4d0b27b
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86863959"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899260"
 ---
 # <a name="using-constructors-c-programming-guide"></a>Использование конструкторов (Руководство по программированию на C#)
 
@@ -18,7 +18,7 @@ ms.locfileid: "86863959"
   
  В следующем примере класс с именем `Taxi` определяется с помощью простого конструктора. Затем оператор [new](../../language-reference/operators/new-operator.md) создает экземпляр этого класса. Конструктор `Taxi` вызывается оператором `new` сразу после того, как новому объекту будет выделена память.  
   
- [!code-csharp[csProgGuideObjects#53](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#53)]  
+ [!code-csharp[TaxiExample#1](snippets/using-constructors/Program.cs#1)]
   
  Конструктор, который не принимает никаких параметров, называется *конструктором без параметров*. Конструкторы без параметров вызываются всякий раз, когда создается экземпляр объекта с помощью оператора `new`, а аргументы в `new` не передаются. Дополнительные сведения см. в разделе [Конструкторы экземпляров](./instance-constructors.md).  
   
@@ -26,7 +26,7 @@ ms.locfileid: "86863959"
   
  Создание экземпляров класса можно запретить, сделав конструктор закрытым, следующим образом:  
   
- [!code-csharp[csProgGuideObjects#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#11)]  
+ [!code-csharp[PrivateConstructor#2](snippets/using-constructors/Program.cs#2)]
   
  Дополнительные сведения см. в разделе [Закрытые конструкторы](./private-constructors.md).  
   
@@ -57,33 +57,33 @@ Console.WriteLine("{0}, {1}", a, b);
   
  Оба класса и `structs` могут определять конструкторы, принимающие параметры. Конструкторы, принимающие параметры, необходимо вызывать с помощью оператора `new` или [base](../../language-reference/keywords/base.md). Классы и `structs` могут определять также несколько конструкторов; для определения конструктора без параметров ни один их них не требуется. Пример:  
   
- [!code-csharp[csProgGuideObjects#54](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#54)]  
+ [!code-csharp[EmployeeExample#3](snippets/using-constructors/Program.cs#3)]
   
  Этот класс можно создать, воспользовавшись одним из следующих операторов:  
   
- [!code-csharp[csProgGuideObjects#55](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#55)]  
+ [!code-csharp[InstantiatingEmployeeConstructors#4](snippets/using-constructors/Program.cs#4)]
   
  Конструктор может использовать ключевое слово `base` для вызова конструктора базового класса. Пример:  
   
- [!code-csharp[csProgGuideObjects#56](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#56)]  
+ [!code-csharp[ManagerInheritingEmployee#5](snippets/using-constructors/Program.cs#5)]
   
  В этом примере конструктор базового класса вызывается перед выполнением соответствующего ему блока. Ключевое слово `base` можно использовать как с параметрами, так и без них. Любые параметры для конструктора можно использовать как параметры для `base` или как часть выражения. Дополнительные сведения см. в разделе [base](../../language-reference/keywords/base.md).  
   
  В производном классе, если конструктор базового класса не вызывается явным образом с помощью ключевого слова `base`, конструктор без параметров, если он существует, вызывается неявно. Это означает, что следующие объявления конструкторов действуют одинаково:  
   
- [!code-csharp[csProgGuideObjects#58](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#58)]  
+ [!code-csharp[ManagerImplicitlyCallingParameterlessBaseConstructor#6](snippets/using-constructors/Program.cs#6)]
   
- [!code-csharp[csProgGuideObjects#57](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#57)]  
+ [!code-csharp[ManagerExplicitlyCallingParameterlessBaseConstructor#7](snippets/using-constructors/Program.cs#7)]
   
  Если базовый класс не предлагает конструктор без параметров, производный класс должен явно вызвать конструктор базового класса с помощью `base`.  
   
  Конструктор может вызывать другой конструктор в том же объекте с помощью ключевого слова [this](../../language-reference/keywords/this.md). Как и `base`, `this` можно использовать с параметрами или без, а все параметры в конструкторе доступны как параметры `this` или как часть выражения. Например, второй конструктор в предыдущем примере можно переписать, используя `this`:  
   
- [!code-csharp[csProgGuideObjects#59](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#59)]  
+ [!code-csharp[EmployeeCallingConstructorInSameClass#8](snippets/using-constructors/Program.cs#8)]
   
  Применение ключевого слова `this` в приведенном выше примере привело к вызову конструктора:  
   
- [!code-csharp[csProgGuideObjects#60](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#60)]  
+ [!code-csharp[ConstructorBeingCalledByThisKeyword#9](snippets/using-constructors/Program.cs#9)]
   
  Конструкторы могут иметь пометку [public](../../language-reference/keywords/public.md), [private](../../language-reference/keywords/private.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md) или [private protected](../../language-reference/keywords/private-protected.md). Эти модификаторы доступа определяют, каким образом пользователи класса смогут создавать класс. Дополнительные сведения см. в статье [Модификаторы доступа](./access-modifiers.md).  
   

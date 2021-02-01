@@ -2,12 +2,12 @@
 title: Объектно ориентированное программирование (C#)
 description: C# обеспечивает полную поддержку объектно ориентированного программирования, включая абстракцию, инкапсуляцию, наследование и полиморфизм.
 ms.date: 09/30/2020
-ms.openlocfilehash: 4ae31e18fcd88870f511e77bb0c555f35394fd1b
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: b778b7c42bbfb1f20bdd2d83b9cb10512ea3f41b
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687998"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794840"
 ---
 # <a name="object-oriented-programming-c"></a>Объектно-ориентированное программирование (C#)
 
@@ -99,7 +99,16 @@ public BankAccount(string name, decimal initialBalance)
 
 Проверьте результаты. Теперь добавьте аналогичный набор тестового кода для `LineOfCreditAccount`:
 
-:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="TestLineOfCredit":::
+```
+    var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+    // How much is too much to borrow?
+    lineOfCredit.MakeWithdrawal(1000m, DateTime.Now, "Take out monthly advance");
+    lineOfCredit.MakeDeposit(50m, DateTime.Now, "Pay back small amount");
+    lineOfCredit.MakeWithdrawal(5000m, DateTime.Now, "Emergency funds for repairs");
+    lineOfCredit.MakeDeposit(150m, DateTime.Now, "Partial restoration on repairs");
+    lineOfCredit.PerformMonthEndTransactions();
+    Console.WriteLine(lineOfCredit.GetAccountHistory());
+ ```
 
 Когда вы добавите приведенный выше код и запустите программу, вы увидите примерно такую ошибку:
 

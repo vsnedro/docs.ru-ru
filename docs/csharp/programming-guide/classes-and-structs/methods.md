@@ -6,12 +6,12 @@ helpviewer_keywords:
 - methods [C#]
 - C# language, methods
 ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
-ms.openlocfilehash: 7b411283822360f3057b0d4f4e60ebade4fe45bc
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 879e57cfbce82f1aa77f8810e23d6a61a6ea5bc8
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810941"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899455"
 ---
 # <a name="methods-c-programming-guide"></a>Методы (Руководство по программированию на C#)
 
@@ -29,19 +29,19 @@ ms.locfileid: "88810941"
 
 Параметры метода заключаются в скобки и разделяются запятыми. Пустые скобки указывают, что параметры методу не требуются. Этот класс содержит четыре метода:
 
-[!code-csharp[csProgGuideObjects#40](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#40)]
+[!code-csharp[DifferentModifiersOnMethods#1](snippets/methods/Program.cs#1)]
 
 ## <a name="method-access"></a>Доступ к методу
 
 Вызов метода в объекте аналогичен доступу к полю. После имени объекта добавьте точку, имя метода и круглые скобки. Аргументы перечисляются в этих скобках и разделяются запятыми. Таким образом, методы класса `Motorcycle` могут вызываться, как показано в следующем примере:
 
-[!code-csharp[csProgGuideObjects#41](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#41)]
+[!code-csharp[CallingMethods#2](snippets/methods/Program.cs#2)]
 
 ## <a name="method-parameters-vs-arguments"></a>Параметры и аргументы метода
 
 Определение метода задает имена и типы всех необходимых параметров. Когда вызывающий код вызывает метод, он предоставляет конкретные значения, называемые аргументами, для каждого параметра. Аргументы должны быть совместимы с типом параметра, но имя аргумента (если есть), используемое в вызывающем коде, не обязательно должно совпадать с именем параметра, указанным в методе. Пример:
 
-[!code-csharp[csProgGuideObjects#74](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#74)]
+[!code-csharp[MethodExamples#3](snippets/methods/Program.cs#3)]
 
 ## <a name="passing-by-reference-vs-passing-by-value"></a>Передача по ссылке и передача по значению
 
@@ -51,11 +51,11 @@ ms.locfileid: "88810941"
 
 Ссылочный тип создается с помощью ключевого слова `class`, как показано в следующем примере.
 
-[!code-csharp[csProgGuideObjects#42](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#42)]
+[!code-csharp[SampleRefTypeClass#4](snippets/methods/Program.cs#4)]
 
 Теперь, если передать объект, основанный на этом типе, в метод, то будет передана ссылка на объект. В следующем примере объект типа `SampleRefType` передается в метод `ModifyObject`:
 
-[!code-csharp[csProgGuideObjects#75](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#75)]
+[!code-csharp[PassingAReferenceType#5](snippets/methods/Program.cs#5)]
 
 В этом примере, в сущности, делается то же, что и в предыдущем примере, — аргумент по значению передается в метод. Но поскольку здесь используется ссылочный тип, результат будет другим. В данном случае в методе `ModifyObject` изменено поле `value` параметра `obj`, а также изменено поле `value` аргумента, `rt`в методе `TestRefType` . В качестве выходных данных метод `TestRefType` отображает 33.
 
@@ -76,13 +76,13 @@ public ref double GetEstimatedDistance()
 
 Ключевое слове `return` также останавливает выполнение метода. Если тип возврата — `void`, инструкцию `return` без значения по-прежнему можно использовать для завершения выполнения метода. Без ключевого слова `return` этот метод будет останавливать выполнение при достижении конца блока кода. Методы с типом возврата, отличным от void, должны использовать ключевое слово `return` для возврата значения. Например, в следующих двух методах ключевое слово `return` используется для возврата целочисленных значений.
 
-[!code-csharp[csProgGuideObjects#44](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#44)]
+[!code-csharp[SimpleMathClass#6](snippets/methods/Program.cs#6)]
 
 Чтобы использовать значение, возвращаемое из метода, вызывающий метод может применять сам вызов метода везде, где будет достаточно значения того же типа. Можно также назначить возвращаемое значение переменной. Например, следующие два примера кода достигают одной и той же цели.
 
-[!code-csharp[csProgGuideObjects#45](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#45)]
+[!code-csharp[SquareANumberWithAddTwoNumbersUsingLocalVariable#7](snippets/methods/Program.cs#7)]
 
-[!code-csharp[csProgGuideObjects#46](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#46)]
+[!code-csharp[SquareANumberWithAddTwoNumbersInTheSameLine#8](snippets/methods/Program.cs#8)]
 
 Использование локальной переменной, в данном случае `result`, для сохранения значения является необязательным. Это может улучшить читаемость кода или может оказаться необходимым, если нужно сохранить исходное значение аргумента для всей области метода.
 

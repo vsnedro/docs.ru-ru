@@ -3,12 +3,12 @@ title: Руководства по началу работы с .NET
 description: Выберите учебник для изучения разработки приложений .NET или одного из языков программирования .NET.
 author: tdykstra
 ms.date: 09/30/2020
-ms.openlocfilehash: 3002b23dcae44b38c9e4dbc2679a2919f1a8d1ce
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: e41a6ce0ae3e1c58b9d83eb644b2e68362cc04ed
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94827182"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215911"
 ---
 # <a name="tutorials-for-getting-started-with-net"></a>Руководства по началу работы с .NET
 
@@ -44,7 +44,7 @@ ms.locfileid: "94827182"
 
 ## <a name="resources-for-learning-net-languages"></a>Ресурсы для изучения языков .NET
 
-* [Начало работы с C#](../csharp/getting-started/index.md)
+* [Начало работы с C#](../csharp/tour-of-csharp/index.md)
 * [Начало работы с F#](../fsharp/get-started/index.md)
 * [Начало работы с Visual Basic](../visual-basic/getting-started/index.md)
 

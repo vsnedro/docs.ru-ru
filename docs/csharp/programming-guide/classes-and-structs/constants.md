@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# language, constants
 - constants [C#]
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.openlocfilehash: 9eff44f3260f0f50fef956ba60b01e2497d7d2dd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4783aff8e9424c90e46cb52692a3e645e995d914
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91199215"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899078"
 ---
 # <a name="constants-c-programming-guide"></a>Константы (Руководство по программированию на C#)
 
@@ -23,7 +23,7 @@ ms.locfileid: "91199215"
   
  Константы должны инициализироваться сразу после объявления. Пример:  
   
- [!code-csharp[csProgGuideObjects#64](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#64)]  
+ [!code-csharp[Calendar#1](snippets/constants/Calendar.cs#1)]
   
  В этом примере константа `Months` всегда имеет значение 12, и его не может изменить даже сам класс. На самом деле в случае, если компилятор встречает идентификатор константы в исходном коде C# (например, `Months`), он подставляет значение литерала непосредственно в создаваемый им промежуточный язык (IL). Поскольку с константой в среде выполнения не связан адрес ни одной переменной, поля `const` не могут передаваться по ссылке и отображаться в выражении как левостороннее значение.  
   
@@ -32,17 +32,17 @@ ms.locfileid: "91199215"
   
  Несколько констант одного типа можно объявить одновременно, например:  
   
- [!code-csharp[csProgGuideObjects#65](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#65)]  
+ [!code-csharp[Calendar#2](snippets/constants/Calendar.cs#2)]
   
  Выражение, которое используется для инициализации константы, может ссылаться на другую константу, если не создает циклическую ссылку. Пример:  
   
- [!code-csharp[csProgGuideObjects#66](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#66)]  
+ [!code-csharp[Calendar#3](snippets/constants/Calendar.cs#3)]
   
  Константы могут иметь пометку [public](../../language-reference/keywords/public.md), [private](../../language-reference/keywords/private.md), [protected](../../language-reference/keywords/protected.md), [internal](../../language-reference/keywords/internal.md), [protected internal](../../language-reference/keywords/protected-internal.md) или [private protected](../../language-reference/keywords/private-protected.md). Эти модификаторы доступа определяют, каким образом пользователи класса смогут получать доступ к константе. Дополнительные сведения см. в разделе [Модификаторы доступа](./access-modifiers.md).  
   
  Доступ к константам осуществляется так, как если бы они были [статическими](../../language-reference/keywords/static.md) полями, поскольку значение константы одинаково для всех экземпляров типа. Для их объявления используйте ключевое слово `static`. Выражения, которые не относятся к классу, определяющему константу, должны включать имя класса, период и имя константы для доступа к этой константе. Пример:  
   
- [!code-csharp[csProgGuideObjects#67](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#67)]  
+ [!code-csharp[Calendar#4](snippets/constants/Calendar.cs#4)]
   
 ## <a name="c-language-specification"></a>Спецификация языка C#  
 
