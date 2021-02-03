@@ -2,13 +2,13 @@
 title: Приложения-кандидаты для машинного кода в облаке
 description: Узнайте, какие типы приложений пользуются преимуществами собственного облачного подхода.
 author: robvet
-ms.date: 05/14/2020
-ms.openlocfilehash: 8f00633a575dad12b0bc1d5adb83acac03db0659
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 443a7c1a1aaef078b33f352f597b33b768d989a3
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160948"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506192"
 ---
 # <a name="candidate-apps-for-cloud-native"></a>Приложения-кандидаты для машинного кода в облаке
 
@@ -62,7 +62,7 @@ ms.locfileid: "91160948"
 
 Правая стратегия миграции зависит от приоритетов Организации и целевых систем. Многие из них могут быть более экономичными для оптимизации приложений в облаке или для добавления недетализированных служб в N-уровневое приложение. В таких случаях вы все равно можете полностью использовать облачные возможности PaaS, такие как службы приложений Azure.
 
-## <a name="summary"></a>Сводка
+## <a name="summary"></a>Итоги
 
 В этой главе мы предоставили облачные вычисления. Мы предоставили определение вместе с основными возможностями, которые позволяют управлять облачными приложениями. Мы рассматривали типы приложений, которые могут выровнять инвестиции и усилия.
 
@@ -74,11 +74,11 @@ ms.locfileid: "91160948"
 
 - [Микрослужбы .NET: архитектура контейнерных приложений .NET](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-- [Модернизировать существующие приложения .NET с помощью Azure Cloud и контейнеров Windows](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
+- [Модернизация существующих приложений .NET с помощью облака Azure и контейнеров Windows](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
 
 - [Собственные шаблоны в облаке по Корнелиа Дэвис](https://www.manning.com/books/cloud-native-patterns)
 
-- [За пределами 12-факторного приложения](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
+- [За пределами приложения Twelve-Factor](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
 - [Что такое инфраструктура как код](/azure/devops/learn/what-is-infrastructure-as-code)
 

@@ -1,13 +1,13 @@
 ---
 title: Использование контейнеров и оркестраторов
 description: Использование контейнеров DOCKER и orchestration Kubernetes в Azure
-ms.date: 05/31/2020
-ms.openlocfilehash: 0ca69b71aa7d414a7bc55253b123020d49468dee
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.date: 01/19/2021
+ms.openlocfilehash: 63ac91b05a88dc13b7c62e6e04eecb0550cd4652
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672517"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505758"
 ---
 # <a name="leveraging-containers-and-orchestrators"></a>Использование контейнеров и оркестраторов
 
@@ -184,12 +184,12 @@ Visual Studio поддерживает разработку с помощью DO
 Если выбран этот параметр, проект создается с помощью `Dockerfile` в корневом каталоге, который можно использовать для сборки и размещения приложения в контейнере DOCKER. Пример Dockerfile показан на рис. 3 -6. git
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
 COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
 RUN dotnet restore "eShopWeb/eShopWeb.csproj"

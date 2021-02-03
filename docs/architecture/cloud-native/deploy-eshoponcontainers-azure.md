@@ -1,13 +1,13 @@
 ---
 title: Развертывание eShopOnContainers в Azure
 description: Развертывание приложения eShopOnContainers с помощью службы Kubernetes Azure, Helm и Девспацес.
-ms.date: 05/13/2020
-ms.openlocfilehash: b3871dae2b414709bfe24b6f7bdbf06de1689d12
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.date: 01/19/2021
+ms.openlocfilehash: 8fc1343eac7f03c984c3a279d5a8c7908e37f0d1
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91160727"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505795"
 ---
 # <a name="deploying-eshoponcontainers-to-azure"></a>Развертывание eShopOnContainers в Azure
 
@@ -15,9 +15,9 @@ ms.locfileid: "91160727"
 
 ## <a name="azure-kubernetes-service"></a>Служба Azure Kubernetes
 
-Чтобы разместить Ешоп в AKS, первым делом нужно создать кластер AKS. Для этого можно использовать портал Azure, который поможет выполнить необходимые действия. Кроме того, можно создать кластер из Azure CLI, позаботиться о включении управления доступом на основе ролей (RBAC) и маршрутизации приложений. В документации по eShopOnContainers подробно описаны действия по созданию собственного кластера AKS. После создания вы сможете получать доступ к кластеру и управлять им с помощью панели мониторинга Kubernetes.
+Чтобы разместить Ешоп в AKS, первым делом нужно создать кластер AKS. Для этого можно использовать портал Azure, который поможет выполнить необходимые действия. Кроме того, можно создать кластер из Azure CLI, постарайтесь включить контроль доступа Role-Based (RBAC) и маршрутизацию приложений. В документации по eShopOnContainers подробно описаны действия по созданию собственного кластера AKS. После создания вы сможете получать доступ к кластеру и управлять им с помощью панели мониторинга Kubernetes.
 
-Теперь приложение Ешоп можно развернуть в кластере, используя Helm и.
+Теперь приложение Ешоп можно развернуть в кластере с помощью Helm.
 
 ## <a name="deploying-to-azure-kubernetes-service-using-helm"></a>Развертывание в службе Azure Kubernetes с помощью Helm
 
