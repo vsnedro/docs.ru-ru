@@ -2,12 +2,12 @@
 title: Ведение журналов с использованием эластичного стека
 description: Ведение журналов с помощью эластичного стека, Logstash и Kibana
 ms.date: 01/19/2021
-ms.openlocfilehash: ebe7eef16d3b1a73d0fd3a010a509bbaf7be3fd5
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: f8dbcd68bf809715a10d0ea1ab36cf5ceb6a96a9
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505821"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548088"
 ---
 # <a name="logging-with-elastic-stack"></a>Ведение журналов с использованием эластичного стека
 
@@ -17,7 +17,7 @@ ms.locfileid: "99505821"
 
 ## <a name="elastic-stack"></a>Эластичный стек
 
-Эластичный стек — это мощный вариант для сбора информации из кластера Kubernetes. Kubernetes поддерживает отправку журналов в конечную точку Elasticsearch, и в [большинстве случаев](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/)все, что необходимо для начала работы, — задать переменные среды, как показано на рис. 7-5:
+Эластичный стек — это мощный вариант для сбора информации из кластера Kubernetes. Kubernetes поддерживает отправку журналов в конечную точку Elasticsearch, и в [большинстве случаев](https://v1-19.docs.kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/)все, что необходимо для начала работы, — задать переменные среды, как показано на рис. 7-5:
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch

@@ -4,12 +4,12 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - load balancing [WCF]
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
-ms.openlocfilehash: ccafce51cadba588dc6c4e8fc8b476f3cd8ee699
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ccb915c33be217d2a8d00a54c5bd57384286140f
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262714"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548101"
 ---
 # <a name="load-balancing"></a>Балансировка нагрузки
 
@@ -58,7 +58,7 @@ ms.locfileid: "96262714"
 </configuration>  
 ```  
   
- С помощью упрощенной конфигурации, представленной в .NET Framework 4, такое же поведение можно выполнить с помощью следующей упрощенной конфигурации.  
+ С помощью упрощенной конфигурации, представленной в платформа .NET Framework 4, такое же поведение можно выполнить с помощью следующей упрощенной конфигурации.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -85,7 +85,9 @@ ms.locfileid: "96262714"
 
  Для привязок <xref:System.ServiceModel.WSHttpBinding> и <xref:System.ServiceModel.WSDualHttpBinding> можно обеспечить балансировку нагрузки, используя для этого методы балансировки нагрузки HTTP, реализуемые путем внесения некоторых изменений в конфигурацию привязки по умолчанию.  
   
-- Отключите установление контекста безопасности. Для этого присвойте свойству <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> привязки <xref:System.ServiceModel.WSHttpBinding> значение `false`. Кроме того, если требуются сеансы безопасности, можно использовать сеансы безопасности с отслеживанием состояния, как описано в разделе о [защищенных сеансах](./feature-details/secure-sessions.md) . Сеансы безопасности с отслеживанием состояния позволяют службе не учитывать состояние, потому что все сведения о состоянии сеанса безопасности передаются с каждым запросом в рамках маркера безопасности защиты. Обратите внимание, что для включения сеансов безопасности с отслеживанием состояния необходимо использовать привязку <xref:System.ServiceModel.Channels.CustomBinding> или определенную пользователем привязку <xref:System.ServiceModel.Channels.Binding>, поскольку необходимые параметры конфигурации не доступны в привязках <xref:System.ServiceModel.WSHttpBinding> и <xref:System.ServiceModel.WSDualHttpBinding>, которые предоставляются системой.  
+- Отключите установку контекста безопасности или используйте сеансы безопасности с отслеживанием состояния. Установка контекста безопасности может быть отключена путем присвоения <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> свойству значения <xref:System.ServiceModel.WSHttpBinding> `false` . Если <xref:System.ServiceModel.WSDualHttpBinding> требуются сеансы безопасности, можно использовать сеансы безопасности с отслеживанием состояния, как описано в разделе [безопасные сеансы](./feature-details/secure-sessions.md). Сеансы безопасности с отслеживанием состояния позволяют службе оставаться без отслеживания состояния, так как все состояния сеанса безопасности передаются с каждым запросом в составе маркера безопасности защиты. Чтобы включить сеанс безопасности с отслеживанием состояния, необходимо использовать <xref:System.ServiceModel.Channels.CustomBinding> или определяемые пользователем <xref:System.ServiceModel.Channels.Binding> , так как необходимые параметры конфигурации не предоставляются в предоставляемых системой <xref:System.ServiceModel.WSHttpBinding> и <xref:System.ServiceModel.WSDualHttpBinding> .
+
+- При отключении установки контекста безопасности необходимо также отключить согласование учетных данных службы. Чтобы отключить его, задайте <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential> для свойства в значение <xref:System.ServiceModel.WSHttpBinding> `false` . Чтобы отключить согласование учетных данных службы, может потребоваться явно указать идентификатор конечной точки на клиенте.
   
 - Не используйте надежные сеансы. Эта возможность отключена по умолчанию.  
   
@@ -95,6 +97,6 @@ ms.locfileid: "96262714"
   
  Для достижения максимальной производительности при балансировке нагрузки рекомендуется использовать <xref:System.ServiceModel.NetTcpSecurity> (<xref:System.ServiceModel.SecurityMode.Transport> или <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Рекомендации по размещению в службах IIS](./feature-details/internet-information-services-hosting-best-practices.md)
