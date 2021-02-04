@@ -3,12 +3,12 @@ title: Устойчивое взаимодействие
 description: Создание архитектуры облачных приложений .NET для Azure | Устойчивое взаимодействие
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 18b26223634efc5c05f680d0cbb7c8cbc2490a59
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 52f08c066767175c699f5a058267cb42d2b1d4aa
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166044"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547698"
 ---
 # <a name="resilient-communications"></a>Устойчивое взаимодействие
 
@@ -79,9 +79,9 @@ ms.locfileid: "91166044"
 
 ### <a name="references"></a>Ссылки
 
-- [Polly](http://www.thepollyproject.org/)
+- [Polly](https://dotnetfoundation.org/projects/polly)
 
-- [Шаблон повторов](/azure/architecture/patterns/retry)
+- [Шаблон повтора](/azure/architecture/patterns/retry)
 
 - [Шаблон автоматического выключения](/azure/architecture/patterns/circuit-breaker)
 
@@ -93,7 +93,7 @@ ms.locfileid: "91166044"
 
 - [Георепликация](/azure/sql-database/sql-database-active-geo-replication)
 
-- [Диспетчер трафика Azure](/azure/traffic-manager/traffic-manager-overview)
+- [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview)
 
 - [Руководство по автоматическому масштабированию](/azure/architecture/best-practices/auto-scaling)
 
