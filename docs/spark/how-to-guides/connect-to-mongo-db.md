@@ -6,12 +6,12 @@ author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 945e494e8a027d438bf4659d989da6033a13f6f0
-ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
+ms.openlocfilehash: 3889088ce32046f72a9a3392e28a5a36cda4745e
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94687607"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957849"
 ---
 # <a name="connect-net-for-apache-spark-to-mongodb"></a>Подключение .NET для Apache Spark к MongoDB
 
@@ -19,7 +19,7 @@ ms.locfileid: "94687607"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-1. Настройте и запустите сервер MongoDB с базой данных [ и коллекцией ](https://docs.mongodb.com/manual/core/databases-and-collections/) (скачайте [этот сервер сообщества](https://www.mongodb.com/try/download/community) для локального сервера, либо можно попробовать использовать [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) для облачной службы MongoDB).
+- Настройте и запустите сервер MongoDB с базой данных [ и коллекцией ](https://docs.mongodb.com/manual/core/databases-and-collections/) (скачайте [этот сервер сообщества](https://www.mongodb.com/try/download/community) для локального сервера, либо можно попробовать использовать [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) для облачной службы MongoDB).
 
 ## <a name="set-up-your-mongodb-instance"></a>Настройка экземпляра MongoDB
 
@@ -38,7 +38,7 @@ ms.locfileid: "94687607"
     )
     ```
 
-2. Убедитесь, что IP-адрес компьютера, на котором запущено приложение .NET для Apache Spark, находится в списке разрешенных, чтобы сервер MongoDB мог подключиться к нему. Подробнее см. в [этом руководстве](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/).
+2. Убедитесь, что IP-адрес компьютера, на котором запущено приложение .NET для Apache Spark, находится в списке разрешенных, чтобы сервер MongoDB мог подключиться к нему. Подробнее см. в [этом руководстве](https://docs.atlas.mongodb.com/security/add-ip-address-to-list/).
 
 ## <a name="configure-your-net-for-apache-spark-application"></a>Настройка приложения .NET для Apache Spark
 
@@ -79,7 +79,7 @@ ms.locfileid: "94687607"
 
 ## <a name="run-your-application"></a>Запуск приложения
 
-Чтобы запустить приложение .NET для Apache Spark, определите модуль `mongo-spark-connector` как часть определения сборки в проекте Spark, используя `libraryDependency` в `build.sbt` для проектов sbt. Для сред Spark, таких как `spark-submit` (или `spark-shell`), следует использовать параметр командной строки `--packages` следующим образом:
+Чтобы запустить приложение .NET для Apache Spark, определите модуль `mongo-spark-connector` как часть определения сборки в проекте Spark, используя `libraryDependency` в `build.sbt` для проектов sbt. Для сред Spark, таких как `spark-submit` (или `spark-shell`), используйте параметр командной строки `--packages` следующим образом:
 
 ```bash
 spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar yourApp.exe

@@ -2,12 +2,12 @@
 title: Счетчики событий в .NET Core
 description: В этой статье вы узнаете, что такое счетчики событий и как их реализовать и использовать.
 ms.date: 08/07/2020
-ms.openlocfilehash: 08180b5580d2e7fe782fbd531a26872715825cdf
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 843f1ec645bf7f52fd4f85e30d183e6e21fee5c6
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678204"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065068"
 ---
 # <a name="eventcounters-in-net-core"></a>Счетчики событий в .NET Core
 
@@ -195,11 +195,11 @@ dotnet-trace collect --process-id <pid> Sample.EventCounter.Minimal:0:0:EventCou
 
 Сначала необходимо включить <xref:System.Diagnostics.Tracing.EventSource>, который создает значение счетчика. Переопределите метод <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A?displayProperty=nameWithType> так, чтобы получать уведомление при создании <xref:System.Diagnostics.Tracing.EventSource>, и, если это правильный метод <xref:System.Diagnostics.Tracing.EventSource> со счетчиками событий, вы сможете вызывать для него <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType>. Пример переопределения:
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="16-27":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="11-22":::
 
 #### <a name="sample-code"></a>Образец кода
 
-Ниже приведен пример класса <xref:System.Diagnostics.Tracing.EventListener>, который выводит все имена и значения счетчиков из среды выполнения .NET <xref:System.Diagnostics.Tracing.EventSource> для публикации внутренних счетчиков (`System.Runtime`) с определенным интервалом.
+Ниже приведен пример класса <xref:System.Diagnostics.Tracing.EventListener>, который выводит все имена и значения счетчиков из среды выполнения .NET <xref:System.Diagnostics.Tracing.EventSource> для публикации внутренних счетчиков (`System.Runtime`) каждую секунду.
 
 :::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 

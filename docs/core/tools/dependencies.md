@@ -1,20 +1,20 @@
 ---
-title: Управление зависимостями в .NET Core
-description: Сведения об управлении зависимостями проекта для приложения .NET Core.
+title: Управление зависимостями в .NET
+description: Сведения об управлении зависимостями проекта для приложения .NET.
 no-loc:
 - dotnet add package
 - dotnet remove package
 - dotnet list package
 ms.topic: how-to
-ms.date: 02/25/2020
-ms.openlocfilehash: 2aeedb56f774b51076764c2772eb02b2fa095d92
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.date: 01/28/2021
+ms.openlocfilehash: 9f5f814d0b4dc7aa3ff1a938c172475169a55bf2
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062864"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216132"
 ---
-# <a name="manage-dependencies-in-net-core-applications"></a>Управление зависимостями в приложениях .NET Core
+# <a name="manage-dependencies-in-net-applications"></a>Управление зависимостями в приложениях .NET
 
 Эта статья описывает, как добавлять и удалять зависимости путем изменения файла проекта или с помощью интерфейса командной строки.
 
@@ -37,7 +37,7 @@ ms.locfileid: "88062864"
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-Зависимость в предыдущем примере будет допустимой только при сборке для указанного целевого объекта. Элемент `$(TargetFramework)` в этом условии представляет собой задаваемое в проекте свойство MSBuild. Для наиболее распространенных приложений .NET Core это не требуется.
+Зависимость в предыдущем примере будет допустимой только при сборке для указанного целевого объекта. Элемент `$(TargetFramework)` в этом условии представляет собой задаваемое в проекте свойство MSBuild. Для наиболее распространенных приложений .NET это не требуется.
 
 ## <a name="add-a-dependency-by-editing-the-project-file"></a>Добавление зависимости путем изменения файла проекта
 

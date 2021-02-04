@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 21271167-fe7f-46ba-a81f-a6812ea649d4
 author: jkoritzinsky
 ms.author: jekoritz
-ms.openlocfilehash: 346776ebae3a6077fd39f26d5bd19d599d163db2
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 13c91e5cb6728c5669642d1b5f7bb461efdd44f8
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608338"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065055"
 ---
 # <a name="exposing-net-core-components-to-com"></a>Предоставление доступа к компонентам .NET Core для COM
 
@@ -92,6 +92,9 @@ ms.locfileid: "88608338"
 ## <a name="additional-notes"></a>Дополнительные сведения
 
 В отличие от .NET Framework, в .NET Core создание библиотеки типов COM (TLB) из сборки .NET Core не поддерживается. Нужно вручную написать файл IDL или заголовок C/C++ для собственных объявлений COM-интерфейсов.
+
+> [!IMPORTANT]
+> В .NET Framework сборка "Любой ЦП" может использоваться как с 32-разрядными, так и с 64-разрядными клиентами. По умолчанию в .NET Core, .NET 5 и более поздних версий вместе со сборками "Любой ЦП" поставляется 64-разрядная библиотека *\*.comhost.dll*. По этой причине они могут использоваться только в 64-разрядных клиентах. Это настроено по умолчанию, поскольку это то, что предоставляет пакет SDK. Такое поведение аналогично публикации "автономного" компонента: по умолчанию он использует то, что предоставляет пакет SDK. Свойство MSBuild `NETCoreSdkRuntimeIdentifier` определяет разрядность библиотеки *\*.comhost.dll*. Управляемая часть на самом деле не зависит от ожидаемой разрядности, однако разрядность сопутствующего ресурса по умолчанию совпадает с разрядностью целевого пакета SDK.
 
 [Автономные развертывания](../deploying/index.md#publish-self-contained) COM-компонентов не поддерживаются. Поддерживаются только [зависящие от платформы развертывания](../deploying/index.md#publish-framework-dependent) COM-компонентов.
 

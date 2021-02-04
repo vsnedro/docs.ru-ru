@@ -3,20 +3,19 @@ title: Технологии .NET Framework, недоступные в .NET Core
 titleSuffix: ''
 description: Узнайте о технологиях .NET Framework, недоступных в .NET Core и .NET 5.0 и более поздних версий.
 author: cartermp
-ms.date: 10/13/2020
-ms.openlocfilehash: 492aace9db3dc3acef18e995f10b7b5fbe251558
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.date: 01/26/2021
+ms.openlocfilehash: d5926d2c0cfe6d2073ac6ad74046ca48b9cb18f1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92161040"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898779"
 ---
 # <a name="net-framework-technologies-unavailable-on-net-core-and-net-5"></a>Технологии .NET Framework, недоступные в .NET Core и .NET 5 и более поздних версий
 
-Некоторые технологии для библиотек .NET Framework недоступны для использования с .NET Core и .NET 5.0 и более поздних версий, например домены приложений, удаленное взаимодействие, управление доступом для кода (CAS), прозрачность безопасности и <xref:System.EnterpriseServices?displayProperty=fullName>. Если в библиотеках применяются такие технологии, рассмотрите альтернативные подходы, описанные в этой статье. Дополнительные сведения о совместимости API см. в статье [Критические изменения .NET](../compatibility/breaking-changes.md).
+Некоторые технологии для библиотек .NET Framework недоступны для использования с .NET Core и .NET 5.0 и более поздних версий, например домены приложений, удаленное взаимодействие и управление доступом для кода (CAS). Если в библиотеках применяются технологии, указанные на этой странице, рассмотрите альтернативные подходы, которые описаны.
 
-> [!TIP]
-> Тот факт, что API или технология сейчас не реализуются, не означает, что они намеренно не поддерживаются. Выполните поиск в репозиториях GitHub по .NET, чтобы выяснить, не является ли конкретная проблема, с которой вы столкнулись, преднамеренной. Если вы не нашли такого признака, отправьте запрос на конкретные API и функции в [репозиторий dotnet/runtime](https://github.com/dotnet/runtime/issues).
+Дополнительные сведения о совместимости API см. в статье [Критические изменения .NET](../compatibility/breaking-changes.md).
 
 ## <a name="application-domains"></a>Домены приложений
 
@@ -47,6 +46,10 @@ ms.locfileid: "92161040"
 ## <a name="systementerpriseservices"></a>System.EnterpriseServices
 
 <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) не поддерживается в .NET Core и .NET 5 и более поздних версий.
+
+## <a name="workflow-foundation-and-wcf"></a>Workflow Foundation и WCF
+
+Windows Workflow Foundation (WF) и Windows Communication Foundation (WCF) не поддерживаются в .NET 5+ (включая .NET Core). Альтернативные варианты см. в разделах [CoreWF](https://github.com/UiPath/corewf) и [CoreWCF](https://github.com/CoreWCF/CoreWCF).
 
 ## <a name="see-also"></a>См. также
 

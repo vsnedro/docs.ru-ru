@@ -2,12 +2,12 @@
 title: Скрипты dotnet-install
 description: Сведения о скриптах dotnet-install, которые служат для установки пакета SDK для .NET и общей среды выполнения.
 ms.date: 09/22/2020
-ms.openlocfilehash: a1598a84aa31aeac970f0493d1481651164d733e
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 1904d0322774de25aeba7e7a53ab36ce135d685d
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634446"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957886"
 ---
 # <a name="dotnet-install-scripts-reference"></a>Справка по скриптам dotnet-install
 
@@ -157,9 +157,15 @@ dotnet-install.sh --help
   - `aspnetcore` — общая среда выполнения `Microsoft.AspNetCore.App`.
   - `windowsdesktop` — общая среда выполнения `Microsoft.WindowsDesktop.App`.
 
-- **`--runtime-id <RID>`**
+- **`--runtime-id <RID>` [Не рекомендуется]**
 
-  Указывает [идентификатор среды выполнения](../rid-catalog.md), для которого устанавливаются средства. Используйте значение `linux-x64` для переносимых файлов Linux. (Допустимо только для Linux и macOS.)
+  Указывает [идентификатор среды выполнения](../rid-catalog.md), для которого устанавливаются средства. Используйте значение `linux-x64` для переносимых файлов Linux. (Допустимо только для Linux и macOS и для версий более ранних, чем .NET Core 2.1.)
+
+  **`--os <OPERATING_SYSTEM>`**
+
+  Указывает операционную систему, для которой устанавливаются средства. Возможные значения: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Допустимо для .NET Core 2.1 и более поздних версий.)
+
+  Параметр является необязательным и должен использоваться только в том случае, если требуется переопределить операционную систему, обнаруженную сценарием.
 
 - **`-SharedRuntime|--shared-runtime`**
 

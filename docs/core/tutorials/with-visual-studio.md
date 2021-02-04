@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: e395122e59f17ed66bbd9d83b01610993f663ce1
-ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
+ms.openlocfilehash: a3a27c1baaab135108ef475d77c35d607c45fa82
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94915949"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794788"
 ---
 # <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Учебник. Создание консольного приложения .NET в Visual Studio
 
@@ -108,7 +108,7 @@ End Module
 
    Этот код отображает запрос в окне консоли и ожидает, чтобы пользователь ввел строку текста и нажал клавишу <kbd>ВВОД</kbd>. Приложение сохраняет полученную строку в переменной с именем `name`. Оно также получает значение свойства <xref:System.DateTime.Now?displayProperty=nameWithType>, которое содержит текущее локальное время, и присваивает его переменной с именем `date` (`currentDate` в Visual Basic). Затем оно отображает эти значения в окне консоли. Наконец, приложение выводит запрос в окне консоли и вызывает метод <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> для ожидания ввода данных пользователем.
 
-   `\n` (`vbCrLf` в Visual Basic) представляет собой символ новой строки.
+   `\n` (или `vbCrLf` в коде Visual Basic) представляет сбой символ новой строки.
 
    Знак доллара (`$`) перед строкой позволяет вставить такие выражения, как имена переменных, в фигурные скобки в строке. Значение выражения вставляется в строку вместо выражения. Такой синтаксис называется [интерполированными строками](../../csharp/language-reference/tokens/interpolated.md).
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MEF, Composition Analysis Tool
 - Mefx [MEF], Composition Analysis Tool
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-ms.openlocfilehash: d3f3a282cfa9274a1939d312987dd58b24eab2af
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a7c76bfe169a23322a5a0cdfe0d2e2e5d82f0346
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255797"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957885"
 ---
 # <a name="composition-analysis-tool-mefx"></a>Средство анализа композиции (Mefx)
 
@@ -130,11 +130,11 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
   
 <a name="white_lists"></a>
 
-## <a name="white-lists"></a>Белые списки  
+## <a name="allow-lists"></a>Разрешить списки
 
- Параметр `/whitelist` позволяет задать текстовый файл с перечислением частей, которые, как ожидается, будут отклонены. Непредвиденные отклонения будут помечены. Это может быть полезным при анализе неполной библиотеки или вложенной библиотеки, в которой отсутствуют некоторые зависимости. Параметр `/whitelist` можно применить к действиям `/rejected` или `/causes` .  
+ Параметр `/whitelist` позволяет задать текстовый файл с перечислением частей, которые, как ожидается, будут отклонены. Непредвиденные отклонения будут помечены. Это может быть полезным при анализе неполной библиотеки или вложенной библиотеки, в которой отсутствуют некоторые зависимости. Параметр `/whitelist` можно применить к действиям `/rejected` или `/causes` .  
   
- Рассмотрим файл с именем test.txt, который содержит текст ClassLibrary1.ChainOne. При запуске действия `/rejected` с параметром `/whitelist` в предыдущем примере будут получены следующие выходные данные.  
+ Рассмотрим файл с именем test.txt, который содержит текст ClassLibrary1.ChainOne. При выполнении действия `/rejected` с параметром `/whitelist` в предыдущем примере будут получены следующие выходные данные:  
   
 ```console
 mefx /file:ClassLibrary1.dll /rejected /whitelist:test.txt  

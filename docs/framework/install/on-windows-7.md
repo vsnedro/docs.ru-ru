@@ -2,12 +2,12 @@
 title: Установка платформы .NET Framework в Windows 7 с пакетом обновления 1 (SP1)
 description: Сведения об установке платформы .NET Framework в Windows 7 с пакетом обновления 1 (SP1).
 ms.date: 04/18/2019
-ms.openlocfilehash: 3f94562f2a14c108a021343b89a8279e95215f30
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 900b38110626a93f37829045a8676ea87101d7e9
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558859"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899091"
 ---
 # <a name="install-the-net-framework-on-windows-7-sp1-and-windows-server-2008-r2"></a>Установка .NET Framework в Windows 7 с пакетом обновления 1 (SP1) и Windows Server 2008 R2
 
@@ -24,6 +24,16 @@ ms.locfileid: "88558859"
 
 [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/releases/net48) можно использовать для запуска приложений, созданных для .NET Framework 4.0 или более поздней версии.
 
+### <a name="offline-installer"></a>автономный установщик
+
+При выполнении автономной установки платформы .NET Framework в Windows 7 необходимо сначала убедиться, что на целевом компьютере установлена актуальная версия [Центра корневой сертификации Microsoft 2011](https://www.microsoft.com/pkiops/Docs/Repository.htm).
+
+Средство _certmgr.exe_ позволяет автоматизировать установку сертификата и его получение из Visual Studio или Windows SDK. Следующая команда используется для установки сертификата перед запуском установщика платформы .NET Framework:
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
+
 ## <a name="net-framework-35"></a>.NET Framework 3,5
 
 Платформа [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) входит в состав Windows 7.
@@ -34,7 +44,7 @@ ms.locfileid: "88558859"
 
 Вы можете [обратиться за помощью в корпорацию Майкрософт](mailto:dotnet-install-help@service.microsoft.com?subject=Install-Help), если не можете определить правильную версию установленной платформы .NET Framework.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Скачивание .NET Framework](https://dotnet.microsoft.com/download)
 - [Устранение неполадок с заблокированными установками и удалениями .NET Framework](troubleshoot-blocked-installations-and-uninstallations.md)

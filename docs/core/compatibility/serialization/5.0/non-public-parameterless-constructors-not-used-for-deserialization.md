@@ -2,12 +2,12 @@
 title: Критическое изменение. Не являющиеся открытыми конструкторы без параметров не используются для десериализации
 description: Узнайте о критическом изменении в .NET 5.0, где не являющиеся открытыми конструкторы без параметров больше не используются для десериализации с помощью JsonSerializer.
 ms.date: 10/18/2020
-ms.openlocfilehash: 6bdcc92c61008aa4ee27370bbac4dbf4ee3ef7c8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a2ea54b6a76692dae7d6e01b06b11218d66b1cd7
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759967"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794704"
 ---
 # <a name="non-public-parameterless-constructors-not-used-for-deserialization"></a>Не являющиеся открытыми конструкторы без параметров не используются для десериализации
 
@@ -37,7 +37,7 @@ ms.locfileid: "95759967"
 ## <a name="recommended-action"></a>Рекомендованное действие
 
 - Если вы являетесь владельцем типа и это целесообразно, сделайте конструктор без параметров открытым.
-- В противном случае реализуйте для типа `JsonConverter<T>` и обеспечьте контроль десериализации.
+- В противном случае реализуйте для типа <xref:System.Text.Json.Serialization.JsonConverter%601> и обеспечьте контроль десериализации. Можно вызвать конструктор, не являющийся открытым, из реализации <xref:System.Text.Json.Serialization.JsonConverter%601>, если это разрешено правилами специальных возможностей C# для этого сценария.
 
 ## <a name="affected-apis"></a>Затронутые API
 
