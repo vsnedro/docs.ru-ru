@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Span<T>
 - buffers"
 - pipeline processing
-ms.openlocfilehash: 4b0464cc81cf0908a907f8305ea4e35b716c18fb
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: b81531d77bae1dce9d6cf58fe1b5439bf79f9e9c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94830666"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506374"
 ---
 # <a name="memory--and-span-related-types"></a>Типы, связанные с памятью и диапазонами
 
@@ -21,7 +21,7 @@ ms.locfileid: "94830666"
 
 - <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> — неизменяемая версия структуры <xref:System.Span%601>.
 
-- <xref:System.Memory%601?displayProperty=nameWithType> — непрерывная область памяти, которая выделяется в управляемой куче, а не стеке. В основе экземпляра <xref:System.Memory%601> может быть массив объектов типа `T` или <xref:System.String>. Так как он может храниться в управляемой куче, <xref:System.Memory%601> не имеет ограничений, применимых к <xref:System.Span%601>.
+- <xref:System.Memory%601?displayProperty=nameWithType> — программа-оболочка для непрерывной области памяти. В основе экземпляра <xref:System.Memory%601> может быть массив объектов типа `T`, <xref:System.String> или диспетчер памяти. Так как он может храниться в управляемой куче, <xref:System.Memory%601> не имеет ограничений, применимых к <xref:System.Span%601>.
 
 - <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType> — неизменяемая версия структуры <xref:System.Memory%601>.
 
@@ -34,6 +34,8 @@ ms.locfileid: "94830666"
 - <xref:System.ArraySegment%601> — программа-оболочка для определенного числа элементов массива, начиная с определенного индекса.
 
 - <xref:System.MemoryExtensions?displayProperty=nameWithType> — коллекция методов расширения для преобразования строк, массивов и фрагментов массивов для блоков <xref:System.Memory%601>.
+
+<xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Memory%601?displayProperty=nameWithType> и их аналоги с доступом только на чтение предназначены для создания алгоритмов, позволяющих избежать копирования участков памяти или чрезмерного выделения памяти в управляемой куче. Их создание (с помощью `Slice` или их конструкторов) не предусматривает дублирование базовых буферов: обновляются только соответствующие ссылки и смещения, которые выполняют роль "представления" памяти в оболочке.
 
 > [!NOTE]
 > Для более ранних платформ <xref:System.Span%601> и <xref:System.Memory%601> доступны в [пакете System.Memory NuGet](https://www.nuget.org/packages/System.Memory/).
