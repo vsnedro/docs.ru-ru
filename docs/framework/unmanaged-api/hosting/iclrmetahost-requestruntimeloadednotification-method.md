@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRMetaHost:: Рекуеструнтимелоадеднотификатион'
 title: Метод ICLRMetaHost::RequestRuntimeLoadedNotification
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0d5ccc4d-0193-41f5-af54-45d7b70d5321
 topic_type:
 - apiref
-ms.openlocfilehash: ac40e203cf7d32c1fe30c9915bac3171139403e0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c385d2d845642605ad47944794f6274e8d472071
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637499"
 ---
 # <a name="iclrmetahostrequestruntimeloadednotification-method"></a>Метод ICLRMetaHost::RequestRuntimeLoadedNotification
 
@@ -47,7 +48,7 @@ HRESULT RequestRuntimeLoadedNotification (
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|Параметр `pCallbackFunction` имеет значение null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Обратный вызов работает следующим образом:  
   
@@ -99,9 +100,9 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRMetaHost](iclrmetahost-interface.md)
 - [Размещение](index.md)

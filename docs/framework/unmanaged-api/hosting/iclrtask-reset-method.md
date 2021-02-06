@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICLRTask:: Reset'
 title: Метод ICLRTask::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1bfb5d3a-0ffd-4bb4-9bf6-aec00cb675b7
 topic_type:
 - apiref
-ms.openlocfilehash: b87bc026a2cac2d0b913128c43142d56aee03025
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d30738b98003e0543c1a2a31c7471b15811efe5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725200"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636992"
 ---
 # <a name="iclrtaskreset-method"></a>Метод ICLRTask::Reset
 
@@ -52,7 +53,7 @@ HRESULT Reset (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR может перезапустить ранее созданные `ICLRTask` экземпляры, чтобы избежать лишних затрат на создание новых экземпляров каждый раз, когда требуется новая задача. Узел включает эту функцию, вызывая `ICLRTask::Reset` вместо [ICLRTask:: ExitTask](iclrtask-exittask-method.md) после завершения задачи. В следующем списке приведено краткое описание обычного жизненного цикла `ICLRTask` экземпляра.  
   
@@ -78,9 +79,9 @@ HRESULT Reset (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

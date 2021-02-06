@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICLRRuntimeInfo:: GetProcAddress'
 title: Метод ICLRRuntimeInfo::GetProcAddress
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
 topic_type:
 - apiref
-ms.openlocfilehash: 028cfd51a713d8598598566a5b1edcf3fc70ecfc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e5d08ed118930418106b28541b4081d6acad927
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732064"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637148"
 ---
 # <a name="iclrruntimeinfogetprocaddress-method"></a>Метод ICLRRuntimeInfo::GetProcAddress
 
@@ -54,7 +55,7 @@ HRESULT GetProcAddress(
 |E_POINTER|`pszProcName` или `ppProc` равно null.|  
 |CLR_E_SHIM_RUNTIMEEXPORT|Указанная функция не является экспортированной функцией.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод приводит к тому, что среда CLR загружается, но не инициализируется.  
   
@@ -66,9 +67,9 @@ HRESULT GetProcAddress(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

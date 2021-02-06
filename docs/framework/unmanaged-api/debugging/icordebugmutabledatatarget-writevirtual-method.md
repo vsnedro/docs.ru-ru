@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугмутабледататаржет:: WriteVirtual'
 title: Метод ICorDebugMutableDataTarget::WriteVirtual
 ms.date: 03/30/2017
 ms.assetid: 80833648-58a7-491a-8dc8-9a48e9bb3adc
-ms.openlocfilehash: 453ab23e292c5eab4a8300c32bf76743b787750d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f3400456b7af51f4b24d7e14e35d641f03a8bfd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637824"
 ---
 # <a name="icordebugmutabledatatargetwritevirtual-method"></a>Метод ICorDebugMutableDataTarget::WriteVirtual
 
@@ -37,7 +38,7 @@ HRESULT WriteVirtual(
 
  Значение `S_OK` при успешном выполнении или любое другое значение `HRESULT` в случае сбоя.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если не удается записать все байты, вызов метода завершается ошибкой без изменения каких-либо байтов в целевом адресном пространстве. (В противном случае целевое адресное пространство оказалось бы в несогласованном состоянии, что сделало бы ненадежной дальнейшую отладку.)  
   
@@ -49,9 +50,9 @@ HRESULT WriteVirtual(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMutableDataTarget](icordebugmutabledatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

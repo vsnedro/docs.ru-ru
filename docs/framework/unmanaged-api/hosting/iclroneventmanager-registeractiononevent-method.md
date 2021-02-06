@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLROnEventManager:: Регистерактиононевент'
 title: Метод ICLROnEventManager::RegisterActionOnEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b944cf49-918d-4c4e-993b-77d097a52550
 topic_type:
 - apiref
-ms.openlocfilehash: 7f0770585e977f5299a40517c28dfb776b2ab898
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b13209aed6a169185b42c6b9520f21f59f6be3bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637434"
 ---
 # <a name="iclroneventmanagerregisteractiononevent-method"></a>Метод ICLROnEventManager::RegisterActionOnEvent
 
@@ -54,7 +55,7 @@ HRESULT RegisterActionOnEvent (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел может регистрировать обратные вызовы для одного или обоих типов событий, описанных в `EClrEvent` . Узел получает `ICLROnEventManager` интерфейс путем вызова метода [ICLRControl:: GetCLRManager](iclrcontrol-getclrmanager-method.md) .  
   
@@ -69,9 +70,9 @@ HRESULT RegisterActionOnEvent (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrEvent](eclrevent-enumeration.md)
 - [Интерфейс IActionOnCLREvent](iactiononclrevent-interface.md)

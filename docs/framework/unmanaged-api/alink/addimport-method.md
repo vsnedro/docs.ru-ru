@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе AddImport
 title: Метод AddImport
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
 topic_type:
 - apiref
-ms.openlocfilehash: cf73ada36be66edb3fa267d61873ae9acb088a34
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9dca26501e66313b0932caf1288db7c909154e1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638604"
 ---
 # <a name="addimport-method"></a>Метод AddImport
 
@@ -59,7 +60,7 @@ HRESULT AddImport(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

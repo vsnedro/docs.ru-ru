@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameGetBlobFromImage
 title: Функция StrongNameGetBlobFromImage
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
 topic_type:
 - apiref
-ms.openlocfilehash: 3a84221f94bad76d69f0dc67fe695ada3f3862f4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c68d6914d47fbb711c49c1e8432cae1bf33e771f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732246"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636355"
 ---
 # <a name="strongnamegetblobfromimage-function"></a>Функция StrongNameGetBlobFromImage
 
@@ -56,7 +57,7 @@ BOOLEAN StrongNameGetBlobFromImage (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `StrongNameGetBlobFromImage` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
@@ -68,9 +69,9 @@ BOOLEAN StrongNameGetBlobFromImage (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameGetBlobFromImage](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md)
 - [Метод StrongNameGetBlob](../hosting/iclrstrongname-strongnamegetblob-method.md)

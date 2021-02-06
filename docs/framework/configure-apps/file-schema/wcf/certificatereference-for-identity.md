@@ -1,13 +1,14 @@
 ---
+description: <certificateReference>Дополнительные сведения о:<identity>
 title: <certificateReference> для <identity>;
 ms.date: 03/30/2017
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
-ms.openlocfilehash: f3daa2dcdf9b464b51cfb9c883cbb828bccb42df
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2c30e7ad035b560d766f3b5592af18210df53aad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639046"
 ---
 # <a name="certificatereference-for-identity"></a>\<certificateReference> для \<identity>;
 
@@ -39,7 +40,7 @@ ms.locfileid: "91149001"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|findValue|Задает значение для поиска в хранилище сертификатов X.509. Тип, указанный в этом атрибуте, должен отвечать требованиям заданного значения `X509FindType`. Значением по умолчанию является пустая строка.|  
+|findValue|Задает значение для поиска в хранилище сертификатов X.509. Тип, указанный в этом атрибуте, должен отвечать требованиям заданного значения `X509FindType`. Значение по умолчанию - пустая строка.|  
 |isChainIncluded|Логическое значение, определяющее, выполнена ли проверка с использованием цепочки сертификатов.|  
 |storeLocation|Задает расположение хранилища сертификатов, которое клиент может использовать для проверки сертификата сервера.<br /><br /> Допустимые значения.<br /><br /> -LocalMachine: хранилище сертификатов, назначенное локальному компьютеру.<br />-CurrentUser: хранилище сертификатов, назначенное текущему пользователю.<br /><br /> Значение по умолчанию - LocalMachine.<br /><br /> Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.StoreLocation>.|  
 |storeName|Задает имя открываемого хранилища сертификатов X.509.<br /><br /> Допустимые значения.<br /><br /> -AddressBook: хранилище сертификатов для других пользователей.<br />-Аусрут: хранилище сертификатов для сторонних центров сертификации (ЦС).<br />-CertificateAuthority: хранилище сертификатов для промежуточных ЦС.<br />— Запрещено: хранилище сертификатов для отозванных сертификатов.<br />-My: хранилище сертификатов для личных сертификатов.<br />— Root: хранилище сертификатов для доверенных корневых центров сертификации.<br />-TrustedPeople: хранилище сертификатов для напрямую доверенных лиц и ресурсов.<br />-Трустедпублишер: хранилище сертификатов для напрямую доверенных издателей.<br /><br /> Значение по умолчанию - «My».<br /><br /> Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.StoreName>.|  
@@ -55,7 +56,7 @@ ms.locfileid: "91149001"
 |-------------|-----------------|  
 |[\<identity>](identity.md)|Задает параметры, которые обеспечивают проверку подлинности конечной точки другими конечными точками, с которыми происходит обмен сообщениями.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.CertificateReferenceElement>
 - <xref:System.ServiceModel.Configuration.IdentityElement>

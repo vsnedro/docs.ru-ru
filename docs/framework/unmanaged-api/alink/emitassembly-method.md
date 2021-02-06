@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе Емитассембли
 title: Метод EmitAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 605ff39e-e5cc-4bff-8196-e8d68a9715b9
 topic_type:
 - apiref
-ms.openlocfilehash: b85b2576660f77eb901c504d398e8bc7909882f7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aada17d8df6435c5edfe6beb5db5ee13f887f253
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638344"
 ---
 # <a name="emitassembly-method"></a>Метод EmitAssembly
 
@@ -47,7 +48,7 @@ HRESULT EmitAssembly(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

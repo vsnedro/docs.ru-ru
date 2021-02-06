@@ -1,15 +1,16 @@
 ---
-title: <cancelRequestedQuery>WCF
+description: 'Дополнительные сведения о: <cancelRequestedQuery> из WCF'
+title: <cancelRequestedQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: b690d870-02eb-4c56-8bc3-e5ca99d7097b
-ms.openlocfilehash: 0ac8b87afc44927ab6653dd6fcdc09cd61436a9b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e477e33650eb901cf2e9275570d8538196c52b6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639176"
 ---
-# <a name="cancelrequestedquery-of-wcf"></a>\<cancelRequestedQuery>WCF
+# <a name="cancelrequestedquery-of-wcf"></a>\<cancelRequestedQuery> WCF
 
 Представляет запрос, используемый для отслеживания запросов по отмене дочернего действия родительским. Этот запрос необходим, чтобы участник отслеживания подписался на объекты записей запросов на отмену.  
   
@@ -47,7 +48,7 @@ ms.locfileid: "70850048"
 
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`activityName`|Строка, задающая имя действия, которое запрашивает отмену.|  
 |`childActivityName`|Строка, указывающая имя дочернего действия, для которого была запрошена отмена.|  

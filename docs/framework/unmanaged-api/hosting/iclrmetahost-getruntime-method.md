@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRMetaHost:: Runtime'
 title: Метод ICLRMetaHost::GetRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a10749f1-ab91-47cf-982f-d8ccd2e81bd2
 topic_type:
 - apiref
-ms.openlocfilehash: 093fa64a7d51e0c2fdc304d2bb4f1c9f7b03e2ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a2ada652dbb139337150cb8ed20986ebf8ae7f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637525"
 ---
 # <a name="iclrmetahostgetruntime-method"></a>Метод ICLRMetaHost::GetRuntime
 
@@ -39,10 +40,10 @@ HRESULT GetRuntime (
 ## <a name="parameters"></a>Параметры  
 
  `pwzVersion`  
- окне Версия компиляции .NET Framework, хранящаяся в метаданных, в формате "v *A*. *B*[.*X*] ". *A*, *B* и *X* — это десятичные числа, соответствующие основной версии, дополнительной версии и номеру сборки.  
+ окне Версия компиляции платформа .NET Framework, хранящаяся в метаданных, в формате "v *A*. *B*[.*X*] ". *A*, *B* и *X* — это десятичные числа, соответствующие основной версии, дополнительной версии и номеру сборки.  
   
 > [!NOTE]
-> Этот параметр должен соответствовать имени каталога для .NET Framework версии, так как она отображается в разделе К:\виндовс\микрософт.нет\фрамеворк или C:\Windows\Microsoft.NET\Framework64.  
+> Этот параметр должен соответствовать имени каталога для платформа .NET Framework версии, так как она отображается в разделе К:\виндовс\микрософт.нет\фрамеворк или C:\Windows\Microsoft.NET\Framework64.  
   
  Примеры значений: "v 1.0.3705", "v 1.1.4322", "v 2.0.50727" и "v 4.0. *X*", где *X* зависит от установленного номера сборки. Требуется префикс "v".  
   
@@ -61,9 +62,9 @@ HRESULT GetRuntime (
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|`pwzVersion` или `ppRuntime` равно null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Этот метод взаимодействует согласованно с устаревшими интерфейсами, такими как интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) , и устаревшими функциями, такими как устаревшие `CorBindTo*` функции (см. статью [устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md) в API размещения .NET Framework 2,0). То есть среды выполнения, загруженные с помощью API прежних версий, видимы для нового API, а среды выполнения, которые загружаются с новым API, видимы для API прежних версий.  
+ Этот метод взаимодействует согласованно с устаревшими интерфейсами, такими как интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) , и устаревшими функциями, такими как устаревшие `CorBindTo*` функции (см. статью [устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md) в API размещения платформа .NET Framework 2,0). То есть среды выполнения, загруженные с помощью API прежних версий, видимы для нового API, а среды выполнения, которые загружаются с новым API, видимы для API прежних версий.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -73,9 +74,9 @@ HRESULT GetRuntime (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRMetaHost](iclrmetahost-interface.md)
 - [Устаревшие интерфейсы размещения CLR и CoClasses](deprecated-clr-hosting-interfaces-and-coclasses.md)

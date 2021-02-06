@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <comContract>'
 title: <comContract>
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: 35596f32bf0e0de9081bc0d4c33fb370c7ab708b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fde1188a087f13da6629460bcebcea16ceefc0e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638669"
 ---
 # \<comContract>
 
@@ -55,7 +56,7 @@ ms.locfileid: "91173787"
 |---------------|-----------------|  
 |contract|Строка, содержащая тип контракта.|  
 |name|Строка, содержащая имя контракта.|  
-|namespace|Строка, содержащая пространство имен контракта.|  
+|пространство имен|Строка, содержащая пространство имен контракта.|  
 |requiresSession|Логическое значение, указывающее, ограничено ли использование контракта только сеансовыми привязками. При инициализации службы среда выполнения интеграции обеспечивает согласованность этого параметра с типом используемой привязки. В случае конфликта одной или нескольких привязок для контракта создается исключение. Если это свойство имеет значение `false`, то при использовании одностороннего канала и наличии параметров [out] также создается исключение.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -93,7 +94,7 @@ ms.locfileid: "91173787"
   
  После инициализации службы указанные пространства имен и имена контрактов применяются к созданным описаниям служб.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>

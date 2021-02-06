@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции EnumerateCLRs
 title: Функция EnumerateCLRs
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type:
 - apiref
-ms.openlocfilehash: 8fe0df3ee08f9915ed43990b6f9686e25b183a0b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 75124ef1e1e8588cb3d709161c3c1119e960be9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637785"
 ---
 # <a name="enumerateclrs-function"></a>Функция EnumerateCLRs
 
@@ -66,7 +67,7 @@ HRESULT EnumerateCLRs (
  E_FAIL (или другие коды возврата E_)  
  Не удалось перечислить загруженные среды CLR.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для целевого процесса, который определяется идентификатором `debuggeePID`, функция возвращает массив путей `ppStringArrayOut` в среды CLR, загруженные в процесс; массив дескрипторов событий `ppHandleArrayOut`, который может содержать событие продолжения запуска для среды CLR с тем же индексом, и размер массивов `pdwArrayLengthOut`, который задает число загружаемых CLR.  
   
@@ -84,4 +85,4 @@ HRESULT EnumerateCLRs (
   
  **Библиотека:** dbgshim.dll  
   
- **.NET Framework версии:** 3,5 SP1
+ **Платформа .NET Framework версии:** 3,5 SP1

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRPolicyManager:: SetDefaultAction'
 title: Метод ICLRPolicyManager::SetDefaultAction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9411e7a-27df-451f-9f6c-d643d6a7a7ce
 topic_type:
 - apiref
-ms.openlocfilehash: 93070690ea6b30b22949953f1ed0b8c5b1e92764
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cedf29f6217660493b151e06220158e931385d79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637369"
 ---
 # <a name="iclrpolicymanagersetdefaultaction-method"></a>Метод ICLRPolicyManager::SetDefaultAction
 
@@ -55,7 +56,7 @@ HRESULT SetDefaultAction (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|Для `action` задано недопустимое `operation` значение, или для параметра было указано недопустимое `operation` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Не все значения действий политики могут быть указаны в качестве поведения по умолчанию для операций среды CLR. `SetDefaultAction` обычно может использоваться только для эскалации поведения. Например, узел может указать, что прерывания потока должны быть преобразованы в грубые прерывания потока, но не могут указывать обратно. В следующей таблице описаны допустимые `action` значения для каждого возможного `operation` значения.  
   
@@ -76,9 +77,9 @@ HRESULT SetDefaultAction (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

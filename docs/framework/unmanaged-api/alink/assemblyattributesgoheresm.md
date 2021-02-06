@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ассембляттрибутесгохересм Class'
 title: Класс Ассембляттрибутесгохересм (System. Runtime. CompilerServices)
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4cf9bf39-1527-49e0-a0e9-55e7a018bf66
 topic_type:
 - apiref
-ms.openlocfilehash: 379ba20ebf675bec71e6e5f5bcfc0dc2fbd1f92c
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ac38017b6ae9169b853da1daa8533d4c1cf44d97
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638526"
 ---
 # <a name="assemblyattributesgoheresm-class"></a>Класс Ассембляттрибутесгохересм
 
@@ -32,19 +33,19 @@ ms.locfileid: "74446608"
 internal sealed class AssemblyAttributesGoHereSM
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Ссылки на этот тип можно включать в модули NETMODULE, источник которых содержат пользовательские атрибуты сборки. При построении манифеста сборки из одного или нескольких файлов, содержащих ссылки на эти NETMODULE, ALink использует сведения, подключенные к этим ссылкам, для выдачи фактических пользовательских атрибутов. Таким образом, экземпляр этого типа никогда не создается, а ссылки на него используются только как часть процесса сборки и бесполезны в окончательной сборке.
 
 Ссылки на этот тип указывают пользовательские атрибуты многократного использования, связанные с безопасностью.
 
-Эти типы помечены как "внутренние" в .NET Framework и находятся в пространстве имен <xref:System.Runtime.CompilerServices>.
+Эти типы помечены как "внутренние" в платформа .NET Framework и находятся в <xref:System.Runtime.CompilerServices> пространстве имен.
 
 ## <a name="requirements"></a>Требования
 
 mscorlib.dll
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [AssemblyAttributesGoHere](assemblyattributesgohere.md)
 - [AssemblyAttributesGoHereM](assemblyattributesgoherem.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе Експортнестедтипефорвардер
 title: Метод ExportNestedTypeForwarder
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
 topic_type:
 - apiref
-ms.openlocfilehash: 45adda6551e1cec994f59acbb0e8d2b5c56c4df6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd791e3fea76338f191fcf924d56720d257d2e8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638110"
 ---
 # <a name="exportnestedtypeforwarder-method"></a>Метод ExportNestedTypeForwarder
 
@@ -70,7 +71,7 @@ HRESULT ExportNestedTypeForwarder(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

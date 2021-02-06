@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе EnumCustomAttributes
 title: Метод EnumCustomAttributes
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
 topic_type:
 - apiref
-ms.openlocfilehash: 445c833d10631341ef7ad579eaff8ddd96be3428
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d5b537462745914903f0cdb1e9f4436f2c27a68d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684854"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638140"
 ---
 # <a name="enumcustomattributes-method"></a>Метод EnumCustomAttributes
 
@@ -63,7 +64,7 @@ HRESULT EnumCustomAttributes(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

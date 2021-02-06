@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameSignatureVerification
 title: Функция StrongNameSignatureVerification
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 933758dd-231e-4382-8819-242c0a13a4b7
 topic_type:
 - apiref
-ms.openlocfilehash: c47d693f450b9cafcb4c8a388c8c38afcd2094e6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74130cda96f38218d2fd296ff8804f86a9a18cd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636269"
 ---
 # <a name="strongnamesignatureverification-function"></a>Функция StrongNameSignatureVerification
 
@@ -74,9 +75,9 @@ BOOLEAN StrongNameSignatureVerification (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md)
 - [Метод StrongNameSignatureVerificationEx](../hosting/iclrstrongname-strongnamesignatureverificationex-method.md)

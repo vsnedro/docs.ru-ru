@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameTokenFromPublicKey
 title: Функция StrongNameTokenFromPublicKey
 ms.date: 03/30/2017
 api_name:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type:
 - apiref
-ms.openlocfilehash: 89556cf0e1ef65c35278a526e10fc791063ea2c6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f978c9b2727db4b293b9c92a8789fbf9ba749d41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636288"
 ---
 # <a name="strongnametokenfrompublickey-function"></a>Функция StrongNameTokenFromPublicKey
 
@@ -34,7 +35,7 @@ ms.locfileid: "95708352"
 ## <a name="syntax"></a>Синтаксис  
   
 ```cpp  
-BOOLEANStrongNameTokenFromPublicKey (
+BOOLEAN StrongNameTokenFromPublicKey (
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  
@@ -60,7 +61,7 @@ BOOLEANStrongNameTokenFromPublicKey (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Маркер строгого имени — это сокращенная форма открытого ключа, используемая для экономии места при хранении ключевых сведений в метаданных. В частности, маркеры строгого имени используются в ссылках на сборки для ссылки на зависимую сборку.  
   
@@ -74,9 +75,9 @@ BOOLEANStrongNameTokenFromPublicKey (
   
  **Библиотека:** Включается в качестве ресурса в mscoree.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameTokenFromPublicKey](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
 - [Метод StrongNameGetPublicKey](../hosting/iclrstrongname-strongnamegetpublickey-method.md)
