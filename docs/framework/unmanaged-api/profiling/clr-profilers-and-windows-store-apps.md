@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: профилировщики CLR и приложения для Магазина Windows'
 title: Профилировщики CLR и приложения для Магазина Windows
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - profiling managed code
 - profiling managed code [Windows Store Apps]
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
-ms.openlocfilehash: 04b4b529a5a1adaa40e804988dee506942c863c4
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: e864f67aff106659194b91814bc2509d50cbf701
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649280"
 ---
 # <a name="clr-profilers-and-windows-store-apps"></a>Профилировщики CLR и приложения для Магазина Windows
 
@@ -47,7 +48,7 @@ ms.locfileid: "94440084"
 
 В этом разделе используется следующая терминология:
 
-**Приложения**
+**Приложение**
 
 Это приложение, которое анализирует профилировщик. Как правило, разработчик этого приложения теперь использует профилировщик для диагностики проблем с приложением. Обычно это приложение классического приложения Windows, но в этом разделе мы рассмотрим приложения Магазина Windows.
 
@@ -356,9 +357,9 @@ GetAppContainerFolderPath(acSid, out acDir);
 
 ### <a name="reading-metadata-from-winmds"></a>Чтение метаданных из WinMD-файлы
 
-Файлы WinMD, как и обычные модули, содержат метаданные, которые можно считать с помощью [API метаданных](../metadata/index.md). Однако среда CLR сопоставляет среда выполнения Windows типы с .NET Framework типами при считывании WinMD-файлов, чтобы разработчики, которые программировать в управляемом коде и использовать файл WinMD, могли использовать более естественный интерфейс программирования. Некоторые примеры этих сопоставлений см. в разделе [поддержка .NET Framework для приложений Магазина Windows и среда выполнения Windows](../../cross-platform/support-for-windows-store-apps-and-windows-runtime.md).
+Файлы WinMD, как и обычные модули, содержат метаданные, которые можно считать с помощью [API метаданных](../metadata/index.md). Однако среда CLR сопоставляет среда выполнения Windows типы с платформа .NET Framework типами при считывании WinMD-файлов, чтобы разработчики, которые программировать в управляемом коде и использовать файл WinMD, могли использовать более естественный интерфейс программирования. Некоторые примеры этих сопоставлений см. в разделе [поддержка платформа .NET Framework для приложений Магазина Windows и среда выполнения Windows](../../cross-platform/support-for-windows-store-apps-and-windows-runtime.md).
 
-Итак, какое представление будет получать профилировщик при использовании API метаданных: необработанное среда выполнения Windows представление или сопоставленное .NET Framework представление?  Ответ. это все, что вам нужно.
+Итак, какое представление будет получать профилировщик при использовании API метаданных: необработанное среда выполнения Windows представление или сопоставленное платформа .NET Framework представление?  Ответ. это все, что вам нужно.
 
 При вызове метода [ICorProfilerInfo:: жетмодулеметадата](icorprofilerinfo-getmodulemetadata-method.md) для WinMD для получения интерфейса метаданных, например [IMetaDataImport](../metadata/imetadataimport-interface.md), можно задать [офнотрансформ](../metadata/coropenflags-enumeration.md) в `dwOpenFlags` параметре, чтобы отключить это сопоставление. В противном случае сопоставление будет включено по умолчанию. Как правило, профилировщик сохранит включенное сопоставление, чтобы строки, получаемые библиотекой DLL профилировщика из метаданных WinMD (например, имена типов), были привычными и естественными для пользователя профилировщика.
 
@@ -388,7 +389,7 @@ GetAppContainerFolderPath(acSid, out acDir);
 
 ### <a name="conditionalweaktablereferences"></a>кондитионалвеактаблереференцес
 
-Начиная с .NET Framework 4,5 существует новый обратный вызов GC, [ConditionalWeakTableElementReferences](icorprofilercallback5-conditionalweaktableelementreferences-method.md), который предоставляет профилировщику более полные сведения о *зависимых дескрипторах*. Эти дескрипторы эффективно добавляют ссылку из исходного объекта в целевой объект с целью управления жизненным циклом сборки мусора. Зависимые дескрипторы ничего не появились, и разработчики, которые программировать в управляемом коде, могли создавать собственные зависимые дескрипторы с помощью <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602?displayProperty=nameWithType> класса, даже до Windows 8 и .NET Framework 4,5.
+Начиная с платформа .NET Framework 4,5 существует новый обратный вызов GC, [ConditionalWeakTableElementReferences](icorprofilercallback5-conditionalweaktableelementreferences-method.md), который предоставляет профилировщику более полные сведения о *зависимых дескрипторах*. Эти дескрипторы эффективно добавляют ссылку из исходного объекта в целевой объект с целью управления жизненным циклом сборки мусора. Зависимые дескрипторы ничего не появились, и разработчики, которые программировать в управляемом коде, могли создавать собственные зависимые дескрипторы с помощью <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602?displayProperty=nameWithType> класса, даже до Windows 8 и платформа .NET Framework 4,5.
 
 Однако управляемые приложения для Магазина Windows в XAML теперь сильно используют зависимые дескрипторы. В частности, среда CLR использует их для упрощения управления циклами ссылок между управляемыми и неуправляемыми среда выполнения Windowsными объектами. Это означает, что теперь профилировщикам памяти важнее знать о таких зависимых маркерах, чтобы их можно было визуально отобразить вместе с остальными краями в графе кучи. Библиотека DLL профилировщика должна использовать [RootReferences2](icorprofilercallback2-rootreferences2-method.md), [ObjectReferences](icorprofilercallback-objectreferences-method.md)и [ConditionalWeakTableElementReferences](icorprofilercallback5-conditionalweaktableelementreferences-method.md) вместе для формирования полного представления графа кучи.
 

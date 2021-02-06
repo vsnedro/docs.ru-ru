@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции FunctionIDMapper
 title: Функция FunctionIDMapper
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
 topic_type:
 - apiref
-ms.openlocfilehash: 17396d3038578c16b74c3717174dc0fa4dc17631
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dca39d9d5269148fda12c50130f35bdeb10cb19d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648653"
 ---
 # <a name="functionidmapper-function"></a>Функция FunctionIDMapper
 
@@ -48,7 +49,7 @@ UINT_PTR __stdcall FunctionIDMapper (
 
  Профилировщик возвращает значение, которое использует подсистема выполнения в качестве альтернативного идентификатора функции. Это возвращаемое значение не может быть значением null, если указатель `pbHookFunction` возвращает значение `false`. В противном случае возвращаемое значение null приведет к непредсказуемым результатам, включая, возможно, остановку процесса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `FunctionIDMapper`Функция является обратным вызовом. Он реализуется профилировщиком для повторного сопоставления идентификатора функции с другим идентификатором, который более удобен для профилировщика. `FunctionIDMapper`Возвращает альтернативный идентификатор, используемый для любой заданной функции. Затем подсистема выполнения обрабатывает запрос профилировщика, передавая этот альтернативный идентификатор, помимо традиционного идентификатора функции, обратно в профилировщик в `clientData` параметре `FunctionEnter2` `FunctionLeave2` `FunctionTailcall2` обработчиков, и, чтобы найти функцию, для которой вызывается обработчик.  
   
@@ -66,9 +67,9 @@ UINT_PTR __stdcall FunctionIDMapper (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [Функция FunctionIDMapper2](functionidmapper2-function.md)

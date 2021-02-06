@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_PRF_CODE_INFO'
 title: Структура COR_PRF_CODE_INFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cf30e27c-1f7e-43a2-ba1e-01e4137301db
 topic_type:
 - apiref
-ms.openlocfilehash: b64e58a79f3dbe0c91b0c0cefc4a9d918c700cf9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 11eae032424a039cac1136c08409b5b4712e6db1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649251"
 ---
 # <a name="cor_prf_code_info-structure"></a>Структура COR_PRF_CODE_INFO
 
@@ -49,8 +50,8 @@ typedef struct _COR_PRF_CODE_INFO {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры профилирования](profiling-structures.md)

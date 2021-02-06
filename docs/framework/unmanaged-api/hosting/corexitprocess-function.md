@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Корекситпроцесс
 title: Функция CorExitProcess
 ms.date: 03/30/2017
 api_name:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type:
 - apiref
-ms.openlocfilehash: f6d8114732a3b7c15d0a0258a28a362d661b030a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 68d33dec76387e103a34e99c529a4e7aff7535b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649589"
 ---
 # <a name="corexitprocess-function"></a>Функция CorExitProcess
 
 Завершает текущий неуправляемый процесс.  
   
- Эта функция является устаревшей в .NET Framework 4. Используйте вместо этого метод [ICLRMetaHost:: ExitProcess](iclrmetahost-exitprocess-method.md) .  
+ Эта функция является устаревшей в платформа .NET Framework 4. Используйте вместо этого метод [ICLRMetaHost:: ExitProcess](iclrmetahost-exitprocess-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -44,10 +45,10 @@ void STDMETHODCALLTYPE CorExitProcess (
  `exitCode`  
  Целое число, указывающее код завершения процесса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
-> Начиная с .NET Framework 4, `CorExitProcess` завершает каждую запущенную среду выполнения в процессе, а не только среду выполнения, к которой привязаны API прежних версий.  
+> Начиная с платформа .NET Framework 4, `CorExitProcess` завершает каждую запущенную среду выполнения в процессе, а не только среду выполнения, к которой привязаны API прежних версий.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -57,8 +58,8 @@ void STDMETHODCALLTYPE CorExitProcess (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

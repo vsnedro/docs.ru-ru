@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугмержедассемблирекорд:: метода Version'
 title: Метод ICorDebugMergedAssemblyRecord::GetVersion
 ms.date: 03/30/2017
 ms.assetid: c6858b06-ae26-4312-b325-ea6025016675
-ms.openlocfilehash: 7352a77fc8f41124d7e6c78a3dfc6ccd6d3a94aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0e87e2bbb1207ebd1eb5775b7f52d5689b4e8727
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650343"
 ---
 # <a name="icordebugmergedassemblyrecordgetversion-method"></a>Метод ICorDebugMergedAssemblyRecord::GetVersion
 
@@ -38,7 +39,7 @@ HRESULT GetVersion(
  `pRevision`  
  [out] Указатель на номер редакции.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Сведения о версии сборки см в разделе, посвященном классу <xref:System.Version>.  
   
@@ -53,9 +54,9 @@ HRESULT GetVersion(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

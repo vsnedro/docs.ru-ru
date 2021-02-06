@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PRF_FINALIZER_FLAGS'
 title: Перечисление COR_PRF_FINALIZER_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
 topic_type:
 - apiref
-ms.openlocfilehash: 2b766715d6d87ab17a7cdabf721bbebf67e1ff13
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96430b1ba3a38cce2801ed55f030395154c78dab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649188"
 ---
 # <a name="cor_prf_finalizer_flags-enumeration"></a>Перечисление COR_PRF_FINALIZER_FLAGS
 
@@ -39,7 +40,7 @@ typedef enum {
 |------------|-----------------|  
 |`COR_PRF_FINALIZER_CRITICAL`|Метод завершения является критическим.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `COR_PRF_FINALIZER_FLAGS`Перечисление используется методом [ICorProfilerCallback2:: финализеаблеобжекткуеуед](icorprofilercallback2-finalizeableobjectqueued-method.md) для описания метода завершения для объекта.  
   
@@ -51,8 +52,8 @@ typedef enum {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)

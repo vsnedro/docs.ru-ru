@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ICorDebugProcess5:: Енумератехеапрегионс'
 title: Метод ICorDebugProcess5::EnumerateHeapRegions
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1edba68-9c36-4f69-be9f-678ce0b33480
 topic_type:
 - apiref
-ms.openlocfilehash: 5a51670200f8fc8a98ff7b80334253b37c7d89ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 034b1ebcd003e6854fa4f308b0464aac0a8c4839
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649849"
 ---
 # <a name="icordebugprocess5enumerateheapregions-method"></a>Метод ICorDebugProcess5::EnumerateHeapRegions
 
@@ -39,7 +40,7 @@ HRESULT EnumerateHeapRegions(
  `ppRegions`  
  заполняет Указатель на адрес объекта интерфейса [икордебугхеапсегментенум](icordebugheapsegmentenum-interface.md) , который является перечислителем для диапазонов памяти, в которых объекты находятся в управляемой куче.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Перед вызовом `ICorDebugProcess5::EnumerateHeapRegions` метода необходимо вызвать метод [метод ICorDebugProcess5:: GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) и проверить значение `areGCStructuresValid` поля возвращенного [COR_HEAPINFO](cor-heapinfo-structure.md) объекта, чтобы гарантировать, что куча сборки мусора в ее текущем состоянии является перечислимым. Кроме `ICorDebugProcess5::EnumerateHeapRegions` того, метод возвращает, `E_FAIL` Если вы присоединяетесь слишком рано в течение времени существования процесса до создания областей памяти.  
   
@@ -55,9 +56,9 @@ HRESULT EnumerateHeapRegions(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

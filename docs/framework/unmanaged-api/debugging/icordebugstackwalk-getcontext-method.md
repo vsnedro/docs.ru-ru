@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугстакквалк:: oncontext'
 title: Метод ICorDebugStackWalk::GetContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 081d1c95-152b-4797-8552-18453eb7b14b
 topic_type:
 - apiref
-ms.openlocfilehash: 927f2077b4bb71177c24816774d06643ebdaa922
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 30beefaa1e0e2e4c5043cae7213658ac24e8a1b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649615"
 ---
 # <a name="icordebugstackwalkgetcontext-method"></a>Метод ICorDebugStackWalk::GetContext
 
@@ -74,9 +75,9 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)
