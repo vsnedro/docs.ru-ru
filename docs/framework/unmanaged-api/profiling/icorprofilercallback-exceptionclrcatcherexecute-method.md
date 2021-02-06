@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: ExceptionCLRCatcherExecute'
 title: Метод ICorProfilerCallback::ExceptionCLRCatcherExecute
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: aaac8f98-5cf4-42c7-b04b-556cce367e36
 topic_type:
 - apiref
-ms.openlocfilehash: 1a9e377ba98c0c2302e341149bd5acb46c24051a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb6926fdfcc9b5ffef20cc69c71a3bafefd9f6ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657506"
 ---
 # <a name="icorprofilercallbackexceptionclrcatcherexecute-method"></a>Метод ICorProfilerCallback::ExceptionCLRCatcherExecute
 
-Вызывается, когда `catch` блок для исключения выполняется в самой среде CLR. Этот метод является устаревшим в .NET Framework версии 2,0.  
+Вызывается, когда `catch` блок для исключения выполняется в самой среде CLR. Этот метод является устаревшим в платформа .NET Framework версии 2,0.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,9 +41,9 @@ HRESULT ExceptionCLRCatcherExecute();
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ExceptionCLRCatcherFound](icorprofilercallback-exceptionclrcatcherfound-method.md)

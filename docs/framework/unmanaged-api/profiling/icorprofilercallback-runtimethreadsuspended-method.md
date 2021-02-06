@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: RuntimeThreadSuspended'
 title: Метод ICorProfilerCallback::RuntimeThreadSuspended
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: de830a8b-6ee1-4900-ace3-4237108f6b12
 topic_type:
 - apiref
-ms.openlocfilehash: 33a39cf2781f49ff0e31989831c4c9829889ec3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f7c2f5baf5a320375d9a2606ca05b13d522336be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732006"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657337"
 ---
 # <a name="icorprofilercallbackruntimethreadsuspended-method"></a>Метод ICorProfilerCallback::RuntimeThreadSuspended
 
@@ -38,7 +39,7 @@ HRESULT RuntimeThreadSuspended(
  `threadId`  
  окне Идентификатор приостановленного потока.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Это `RuntimeThreadSuspended` уведомление может возникнуть в любое время между методами [ICorProfilerCallback:: рунтимесуспендстартед](icorprofilercallback-runtimesuspendstarted-method.md) и связанными обратными вызовами [ICorProfilerCallback:: RuntimeResumeStarted](icorprofilercallback-runtimeresumestarted-method.md) . Уведомления, которые происходят между [ICorProfilerCallback:: RuntimeSuspendFinished](icorprofilercallback-runtimesuspendfinished-method.md) и `RuntimeResumeStarted` предназначены для потоков, которые были запущены в неуправляемом коде и были приостановлены при входе в среду выполнения.  
   
@@ -52,9 +53,9 @@ HRESULT RuntimeThreadSuspended(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод RuntimeThreadResumed](icorprofilercallback-runtimethreadresumed-method.md)

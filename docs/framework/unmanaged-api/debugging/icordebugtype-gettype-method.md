@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugType:: GetType'
 title: Метод ICorDebugType::GetType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d6e64534-4d47-4ad0-a340-7590e07e2b4a
 topic_type:
 - apiref
-ms.openlocfilehash: f0f45d5f0b2ea8cefa6bd36e909ae43d80c968ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 922791e51855badfb1fd548e08953a2f660f971a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700890"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658221"
 ---
 # <a name="icordebugtypegettype-method"></a>Метод ICorDebugType::GetType
 
@@ -39,7 +40,7 @@ HRESULT GetType (
  `ty`  
  заполняет Указатель на значение `CorElementType` перечисления, указывающее среду CLR <xref:System.Type> , которую представляет этот объект `ICorDebugType` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если значение параметра `ty` — ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE, можно вызвать метод [ICorDebugType:: coclass](icordebugtype-getclass-method.md) , чтобы получить тип без экземпляров для универсального типа; в противном случае не вызывайте `ICorDebugType::GetClass` .  
   
@@ -51,4 +52,4 @@ HRESULT GetType (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

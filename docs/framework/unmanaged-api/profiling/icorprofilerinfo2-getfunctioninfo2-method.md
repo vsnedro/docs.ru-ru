@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo2:: GetFunctionInfo2'
 title: Метод ICorProfilerInfo2::GetFunctionInfo2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type:
 - apiref
-ms.openlocfilehash: e44b8afe22fdb10077048dc7bc2ccb1f605edd75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f0534a2e8cc8a9ce24f2c2b3deaade6215e15b5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657077"
 ---
 # <a name="icorprofilerinfo2getfunctioninfo2-method"></a>Метод ICorProfilerInfo2::GetFunctionInfo2
 
@@ -66,7 +67,7 @@ HRESULT GetFunctionInfo2(
  `typeArgs`  
  [выходной] Массив значений `ClassID`, каждое из которых является идентификатором аргумента типа функции. При возврате из метода в параметре `typeArgs` содержатся все или некоторые значения `ClassID`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы получить интерфейс [метаданных](../metadata/index.md) для заданного модуля, код профилировщика может вызвать метод [ICorProfilerInfo:: жетмодулеметадата](icorprofilerinfo-getmodulemetadata-method.md) . Токен метаданных, возвращенный в расположение, на которое ссылается `pToken`, можно впоследствии использовать для доступа к метаданным функции.  
   
@@ -90,9 +91,9 @@ HRESULT GetFunctionInfo2(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

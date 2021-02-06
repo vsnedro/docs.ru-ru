@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: конечная точка: Проверка безопасности и ошибки проверки подлинности за секунду'
 title: 'Конечная точка: количество сбоев при проверке безопасности и проверке подлинности в секунду'
 ms.date: 03/30/2017
 ms.assetid: 89a70b90-d7e4-4b03-9b84-4dc88ce3d605
-ms.openlocfilehash: b2c5022caa5abe6154a3cb4dd4281dd212599b74
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa5ccc4049dc81a7c2d545cfc70e9078ac72d87a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655439"
 ---
 # <a name="endpoint-security-validation-and-authentication-failures-per-second"></a>Конечная точка: количество сбоев при проверке безопасности и проверке подлинности в секунду
 

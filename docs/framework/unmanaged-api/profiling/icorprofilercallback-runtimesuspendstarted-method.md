@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: Рунтимесуспендстартед'
 title: Метод ICorProfilerCallback::RuntimeSuspendStarted
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
 topic_type:
 - apiref
-ms.openlocfilehash: b778088f53a3c49def95d715f5fefcb26af81489
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f7ba6a2a8523589b025d98ea925b77d05d8a59d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657428"
 ---
 # <a name="icorprofilercallbackruntimesuspendstarted-method"></a>Метод ICorProfilerCallback::RuntimeSuspendStarted
 
@@ -38,7 +39,7 @@ HRESULT RuntimeSuspendStarted(
  `suspendReason`  
  окне Значение перечисления [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) , указывающее причину приостановки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Все потоки среды выполнения, наявляющиеся в неуправляемом коде, могут продолжать выполняться до тех пор, пока они не попытаются повторно войти в среду выполнения. На этом этапе они также будут приостановлены до тех пор, пока среда выполнения не возобновит работу. Это также относится к новым потокам, которые вводят среду выполнения. Все потоки в среде выполнения либо приостанавливаются немедленно, если они уже находятся в коде для преобразования, либо если они запросят приостановить работу в случае, если они достигают кода источника.  
   
@@ -50,9 +51,9 @@ HRESULT RuntimeSuspendStarted(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод RuntimeSuspendAborted](icorprofilercallback-runtimesuspendaborted-method.md)

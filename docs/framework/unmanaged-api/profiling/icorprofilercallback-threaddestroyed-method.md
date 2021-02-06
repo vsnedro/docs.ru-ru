@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: ThreadDestroyed'
 title: Метод ICorProfilerCallback::ThreadDestroyed
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4c2b66fd-0595-40a3-8931-f9c4fff97ac8
 topic_type:
 - apiref
-ms.openlocfilehash: 0cef868861155d553aba42fe28c3f1f1b86763b0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63c8c4c523cb398bd7c766fc41bc669a2d74045e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657196"
 ---
 # <a name="icorprofilercallbackthreaddestroyed-method"></a>Метод ICorProfilerCallback::ThreadDestroyed
 
@@ -38,7 +39,7 @@ HRESULT ThreadDestroyed(
  `threadId`  
  окне Идентификатор уничтоженного потока.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `threadId`Значение больше не является допустимым во время этого вызова.  
   
@@ -50,9 +51,9 @@ HRESULT ThreadDestroyed(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ThreadCreated](icorprofilercallback-threadcreated-method.md)

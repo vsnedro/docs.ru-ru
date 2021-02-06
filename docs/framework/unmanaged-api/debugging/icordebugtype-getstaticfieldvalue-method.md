@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugType:: GetStaticFieldValue'
 title: Метод ICorDebugType::GetStaticFieldValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 62eb5d55-53ee-4fb3-8d47-7b6c96808f9e
 topic_type:
 - apiref
-ms.openlocfilehash: 281b9f46194e93220f47ef8aadbf29ce03084582
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 378c72f24fedd76f40704ff684781bed124055bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658234"
 ---
 # <a name="icordebugtypegetstaticfieldvalue-method"></a>Метод ICorDebugType::GetStaticFieldValue
 
@@ -47,7 +48,7 @@ HRESULT GetStaticFieldValue (
  `ppValue`  
  заполняет Указатель на адрес объекта `ICorDebugValue` , который содержит значение статического поля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetStaticFieldValue`Метод может использоваться только в том случае, если тип имеет значение ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE, как указано в методе [ICorDebugType:: GetType](icordebugtype-gettype-method.md) .  
   
@@ -55,7 +56,7 @@ HRESULT GetStaticFieldValue (
   
  Для универсальных типов значение статического поля будет относиться к определенному экземпляру. Кроме того, если статическое поле может быть связано с потоком, контекстом или доменом приложения, то кадр стека поможет отладчику определить правильное значение.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetStaticFieldValue` может использоваться, только если вызов `ICorDebugType::GetType` возвращает значение ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE.  
   
@@ -67,4 +68,4 @@ HRESULT GetStaticFieldValue (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

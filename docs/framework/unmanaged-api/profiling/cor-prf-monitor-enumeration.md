@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PRF_MONITOR'
 title: Перечисление COR_PRF_MONITOR
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd
 topic_type:
 - apiref
-ms.openlocfilehash: e5e850e2464c310697c1cd1797d2207958591907
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5b0bd17713e47e40982e88f33721bf7d6d27fd00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657805"
 ---
 # <a name="cor_prf_monitor-enumeration"></a>Перечисление COR_PRF_MONITOR
 
@@ -186,7 +187,7 @@ typedef enum {
 |`COR_PRF_MONITOR_IMMUTABLE`|Представляет все флаги `COR_PRF_MONITOR`, которые могут быть установлены только во время инициализации. Попытка изменить какой-нибудь из этих флагов после инициализации вызовет значение `HRESULT`, указывающее на сбой.|  
 |`COR_PRF_REQUIRE_PROFILE_IMAGE`|Представляет все флаги `COR_PRF_MONITOR`, для которых необходимы улучшенные профилировщиком изображения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `COR_PRF_MONITOR`Значение используется с методами [ICorProfilerInfo:: GetEventMask](icorprofilerinfo-geteventmask-method.md) и [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) для определения уведомлений о событиях, которые среда CLR делает в профилировщике.  
   
@@ -198,9 +199,9 @@ typedef enum {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)
 - [Метод GetEventMask](icorprofilerinfo-geteventmask-method.md)
