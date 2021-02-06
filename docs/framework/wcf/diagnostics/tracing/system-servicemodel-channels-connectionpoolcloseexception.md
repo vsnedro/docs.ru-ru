@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: System. ServiceModel. Channels. Коннектионпулклосиксцептион'
 title: System.ServiceModel.Channels.ConnectionPoolCloseException
 ms.date: 03/30/2017
 ms.assetid: 8358898e-129e-4fac-a6bf-bf3aa4293ae2
-ms.openlocfilehash: d8edb8e916578247e62e3a3eb3b11b80f93416cd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a65739cc872f3cd175d76e9113380f9f4185d498
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644636"
 ---
 # <a name="systemservicemodelchannelsconnectionpoolcloseexception"></a>System.ServiceModel.Channels.ConnectionPoolCloseException
 
