@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugManagedCallback2:: MDANotification'
 title: Метод ICorDebugManagedCallback2::MDANotification
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 93f79627-bd31-4f4f-b95d-46a032a52fe4
 topic_type:
 - apiref
-ms.openlocfilehash: 09a410f54ddf07c9a5f6bb7dd34f2aaf266e0734
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f0c69c13ec30e604e07c284adca05f86283a5cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650499"
 ---
 # <a name="icordebugmanagedcallback2mdanotification-method"></a>Метод ICorDebugManagedCallback2::MDANotification
 
@@ -53,7 +54,7 @@ HRESULT MDANotification(
  `pMDA`  
  окне Указатель на интерфейс [ICorDebugMDA](icordebugmda-interface.md) , предоставляющий сведения об MDA.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  MDA является эвристическим предупреждением и не требует явных действий отладчика, за исключением вызова [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) для возобновления выполнения отлаживаемого приложения.  
   
@@ -71,9 +72,9 @@ HRESULT MDANotification(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Диагностика ошибок посредством управляемых помощников по отладке](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

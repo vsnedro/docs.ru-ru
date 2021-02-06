@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое выполнение запросов по связям (Visual Basic).
 title: Пошаговое руководство. Выполнение запросов со связями (Visual Basic)
 ms.date: 03/30/2017
 dev_langs:
 - vb
 ms.assetid: a7da43e3-769f-4e07-bcd6-552b8bde66f4
-ms.openlocfilehash: ce5323b4ecd7bd0c4337d4632eff209e4d0ebd42
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 002ec53c5a56d988dcd71af658a546d199473425
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91163990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650587"
 ---
 # <a name="walkthrough-querying-across-relationships-visual-basic"></a>Пошаговое руководство. Выполнение запросов со связями (Visual Basic)
 
@@ -95,10 +96,10 @@ ms.locfileid: "91163990"
   
 5. Чтобы сохранить это приложение, в меню **файл** выберите команду **сохранить все** .  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Следующие шаги  
 
  В следующем пошаговом руководстве ([Пошаговое руководство. Управление данными (Visual Basic)](walkthrough-manipulating-data-visual-basic.md)) демонстрируется управление данными. Для этого пошагового руководства не требуется сохранять два пошаговых руководства, которые уже выполнены в этой серии.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Обучение с использованием пошаговых руководств](learning-by-walkthroughs.md)
