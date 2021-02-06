@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о поставщике EntityClient для Entity Framework
 title: Поставщик EntityClient для Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
-ms.openlocfilehash: 9b3194e4a85eda6f405a3ab85723ac2cb9d00090
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 96c060f3e0b21484e90fcbc2483693abd528dcfb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650876"
 ---
 # <a name="entityclient-provider-for-the-entity-framework"></a>Поставщик EntityClient для Entity Framework
 
@@ -36,7 +37,7 @@ cmd.CommandText = @"SELECT VALUE p
   
 ## <a name="executing-queries"></a>Выполнение запросов  
 
- Во время выполнения запрос анализируется и преобразуется в каноническое дерево команд. Вся последующая обработка выполняется над деревом команд. Дерево команд — это средства взаимодействия между <xref:System.Data.EntityClient> и базовым .NET Framework поставщиком данных, например <xref:System.Data.SqlClient> .  
+ Во время выполнения запрос анализируется и преобразуется в каноническое дерево команд. Вся последующая обработка выполняется над деревом команд. Дерево команд — это средства взаимодействия между <xref:System.Data.EntityClient> и базовым платформа .NET Framework поставщиком данных, например <xref:System.Data.SqlClient> .  
   
  Объект <xref:System.Data.EntityClient.EntityDataReader> предоставляет доступ к результатам выполнения команды <xref:System.Data.EntityClient.EntityCommand> по отношению к концептуальной модели. Для выполнения команды, возвращающей значение <xref:System.Data.EntityClient.EntityDataReader>, нужно вызвать метод <xref:System.Data.EntityClient.EntityCommand.ExecuteReader%2A>. Класс <xref:System.Data.EntityClient.EntityDataReader> реализует интерфейс <xref:System.Data.IExtendedDataRecord> для описания детально структурированных результатов.  
   
@@ -46,7 +47,7 @@ cmd.CommandText = @"SELECT VALUE p
   
  Сведения об обновлении данных, предоставляемых с помощью концептуальной модели, см. в разделе [руководство. Управление транзакциями в Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Сборка строки соединения EntityConnection](how-to-build-an-entityconnection-connection-string.md)  
   
@@ -68,7 +69,7 @@ cmd.CommandText = @"SELECT VALUE p
   
  [Практическое руководство. Переход по отношениям с помощью оператора Navigate](how-to-navigate-relationships-with-the-navigate-operator.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление подключениями и транзакциями](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [ADO.NET Entity Framework](index.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Использование XML в наборе данных.
 title: Использование XML в наборах данных
 ms.date: 03/30/2017
 ms.assetid: 35138159-e199-49ec-baf7-1ec6777e171e
-ms.openlocfilehash: e133da727887271af3bc5330a5779df4af58a37e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5c4216fce9c1512c95da8e27a622ba228411b641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651422"
 ---
 # <a name="using-xml-in-a-dataset"></a>Использование XML в наборах данных
 
@@ -15,7 +16,7 @@ ms.locfileid: "91201191"
   
  ADO.NET также позволяет создавать XML-представление <xref:System.Data.DataSet> с его схемой или без нее с целью передать <xref:System.Data.DataSet> по HTTP для использования в другом приложении или на платформе, поддерживающей XML. В XML-представлении набора данных <xref:System.Data.DataSet> данные записываются на языке XML, а схема, если она встроена в представление, записывается на языке XSD. XML и схема XML предоставляют удобный формат для передачи содержимого объекта <xref:System.Data.DataSet> удаленному клиенту и обратно.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [DiffGrams](diffgrams.md)  
  Содержит подробные сведения о DiffGram, XML-формате, который используется для чтения и записи содержимого класса <xref:System.Data.DataSet>.  
@@ -49,7 +50,7 @@ ms.locfileid: "91201191"
  [Общие сведения об ADO.NET](../ado-net-overview.md)  
  Описывает архитектуру и компоненты ADO.NET, а также способы их использования для доступа к существующим источникам данных и управления данными приложения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

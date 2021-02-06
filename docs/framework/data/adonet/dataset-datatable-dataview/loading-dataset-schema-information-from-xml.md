@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье Загрузка данных схемы набора данных из XML.
 title: Загрузка сведений о схеме набора данных из XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 43dfb23b-5cef-46f2-8d87-78f0fba1eb8c
-ms.openlocfilehash: b084590d7158024227a9f12da759b56ae2031373
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dd3a327270d6f8e3086d7206dd6f44290415c55e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652111"
 ---
 # <a name="loading-dataset-schema-information-from-xml"></a>Загрузка сведений о схеме набора данных из XML
 
@@ -76,7 +77,7 @@ xmlStream.Close();
 </NewDataSet>  
 ```  
   
- В связи с атрибутами, указанными для элементов в предыдущем XML-документе, метод **ReadXmlSchema** и метод **ReadXml** с параметром **XmlReadMode** **инферсчема** будут создавать таблицы для каждого элемента в документе: **категории**, **CategoryID**, **CategoryName**, **Description**, **Products**, **ProductID**, **ReorderLevel**и больше не **поддерживаются**. (Дополнительные сведения см. [в разделе выведение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md).) Однако более подходящей структурой является создание только таблиц **Categories** и **Products** , а затем создание столбцов **CategoryID**, **CategoryName**и **Description** в таблице **Categories** , а также столбцов **ProductID**, **ReorderLevel**и **неподдерживаемые** столбцы таблицы **Products** . Чтобы убедиться, что выводимая схема не пропускает атрибуты, указанные в XML-элементах, используйте метод **инферксмлсчема** и укажите пространство имен XML для **оффицедата** , которое будет игнорироваться, как показано в следующем примере.  
+ В связи с атрибутами, указанными для элементов в предыдущем XML-документе, метод **ReadXmlSchema** и метод **ReadXml** с параметром **XmlReadMode** **инферсчема** будут создавать таблицы для каждого элемента в документе: **категории**, **CategoryID**, **CategoryName**, **Description**, **Products**, **ProductID**, **ReorderLevel** и больше не **поддерживаются**. (Дополнительные сведения см. [в разделе выведение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md).) Однако более подходящей структурой является создание только таблиц **Categories** и **Products** , а затем создание столбцов **CategoryID**, **CategoryName** и **Description** в таблице **Categories** , а также столбцов **ProductID**, **ReorderLevel** и **неподдерживаемые** столбцы таблицы **Products** . Чтобы убедиться, что выводимая схема не пропускает атрибуты, указанные в XML-элементах, используйте метод **инферксмлсчема** и укажите пространство имен XML для **оффицедата** , которое будет игнорироваться, как показано в следующем примере.  
   
 ```vb  
 Dim dataSet As DataSet = New DataSet  

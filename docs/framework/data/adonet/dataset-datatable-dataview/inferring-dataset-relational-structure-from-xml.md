@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: вывод реляционной структуры набора данных из XML'
 title: Определение реляционной структуры набора данных из XML
 ms.date: 03/30/2017
 ms.assetid: cd2f41c6-6785-420e-aa43-3ceb0bdccdce
-ms.openlocfilehash: fca50491120346dea3e09c82324225f2114380fc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d89b6a42e7e1bc3d7514f180329e9c1d877a67ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652228"
 ---
 # <a name="inferring-dataset-relational-structure-from-xml"></a>Определение реляционной структуры набора данных из XML
 
@@ -19,7 +20,7 @@ ms.locfileid: "91177583"
   
  Не все атрибуты, присутствующие в XML-документе, должны быть включены в процесс вывода. Атрибуты с уточнением в виде пространств имен могут включать метаданные, которые являются значимыми для XML-документа, но не для схемы <xref:System.Data.DataSet>. Используя <xref:System.Data.DataSet.InferXmlSchema%2A>, можно указывать пространства имен, которые не должны учитываться в процессе вывода. Дополнительные сведения см. [в разделе Загрузка данных схемы набора данных из XML](loading-dataset-schema-information-from-xml.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения о процессе определения схемы набора данных](summary-of-the-dataset-schema-inference-process.md)  
  Предоставляет высокоуровневую сводку правил для вывода схемы <xref:System.Data.DataSet> с использованием кода XML.  
@@ -50,6 +51,6 @@ ms.locfileid: "91177583"
  [Общие сведения об ADO.NET](../ado-net-overview.md)  
  Описывает архитектуру, компоненты ADO.NET и способы их использования для доступа к существующим источникам данных и управления данными приложения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

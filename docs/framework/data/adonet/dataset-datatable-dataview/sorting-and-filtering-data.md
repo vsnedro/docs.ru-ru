@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Сортировка и фильтрация данных'
 title: Сортировка и фильтрация данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
-ms.openlocfilehash: 89e2fdf656fb06ee545ba936f033646ad86182d4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a8b74dc13e88f8d5e70bb27291e0e6e34817f0ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183381"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651617"
 ---
 # <a name="sorting-and-filtering-data"></a>Сортировка и фильтрация данных
 
@@ -30,13 +31,13 @@ ms.locfileid: "91183381"
   
     |Параметры DataViewRowState|Описание|  
     |------------------------------|-----------------|  
-    |**CurrentRows**|**Текущая** версия строки всех **неизмененных**, **добавленных**и **измененных** строк. Это значение по умолчанию.|  
+    |**CurrentRows**|**Текущая** версия строки всех **неизмененных**, **добавленных** и **измененных** строк. Это значение по умолчанию.|  
     |**Добавлено**|Версия **текущей** строки всех **добавленных** строк.|  
     |**Удалено**|Версия **исходной** строки всех **удаленных** строк.|  
     |**ModifiedCurrent**|Версия **текущей** строки для всех **измененных** строк.|  
     |**ModifiedOriginal**|Версия **исходной** строки всех **измененных** строк.|  
-    |**None**|Нет строк.|  
-    |**OriginalRows**|Версия **исходной** строки всех **неизмененных**, **измененных**и **удаленных** строк.|  
+    |**Нет**|Нет строк.|  
+    |**OriginalRows**|Версия **исходной** строки всех **неизмененных**, **измененных** и **удаленных** строк.|  
     |**Без изменений**|Версия **текущей** строки всех **неизмененных** строк.|  
   
  Дополнительные сведения о состояниях строк и версиях строк см. в разделе [состояния строк и версии](row-states-and-row-versions.md)строк.  
@@ -57,7 +58,7 @@ DataView prodView = new DataView(prodDS.Tables["Products"],
    DataViewRowState.CurrentRows);  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataViewRowState>
 - <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>

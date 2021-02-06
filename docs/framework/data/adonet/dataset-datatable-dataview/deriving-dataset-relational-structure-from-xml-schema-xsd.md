@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: наследование реляционной структуры набора данных из схемы XML (XSD)'
 title: Наследование реляционной структуры набора данных от схемы XML (XSD)
 ms.date: 03/30/2017
 ms.assetid: 8f6cd04d-6197-4bc4-9096-8c51c7e4acae
-ms.openlocfilehash: 878e39af575328fb0abba096c327d36203a52231
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c2d2dc8ab9c8a1cf77c79fbde38a06de6f120c82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652527"
 ---
 # <a name="deriving-dataset-relational-structure-from-xml-schema-xsd"></a>Наследование реляционной структуры набора данных от схемы XML (XSD)
 
@@ -83,7 +84,7 @@ InStateCustomers (CustomerID, CompanyName, Phone)
 OutOfStateCustomers (CustomerID, CompanyName, Phone)  
 ```  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений UNIQUE и FOREIGN KEY в `DataSet` .  
@@ -99,6 +100,6 @@ OutOfStateCustomers (CustomerID, CompanyName, Phone)
  [Использование XML в наборах данных](using-xml-in-a-dataset.md)  
  Описывает загрузку и сохранение реляционной структуры и данных в `DataSet` виде XML-данных.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

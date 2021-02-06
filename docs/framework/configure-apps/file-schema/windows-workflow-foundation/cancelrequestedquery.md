@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <cancelRequestedQuery>'
 title: <cancelRequestedQuery>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 8da9b1c4-338a-4f23-9830-6d257772d340
-ms.openlocfilehash: a50e9965a595fce64c383313091334e883dcfbfa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: efd908fb52d2bc32bf05fce9099c7105abdc9b1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652644"
 ---
 # \<cancelRequestedQuery>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91189491"
 |-------------|-----------------|  
 |[\<faultPropagationQuery>](faultpropagationquery.md)|Представляет список элементов конфигурации, которые используются для отслеживания запросов на отмену дочернего действия родительским действием. Этот запрос необходим, чтобы участник отслеживания подписался на объекты записей запросов на отмену.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

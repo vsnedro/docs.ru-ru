@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о Выведение таблиц
 title: Определение таблиц
 ms.date: 03/30/2017
 ms.assetid: 74a288d4-b8e9-4f1a-b2cd-10df92c1ed1f
-ms.openlocfilehash: 4a3d7b239dbc405cf2acae967b5be401dc772e38
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 00a24cbfc44aea4279b0a115214ec26d3eac59ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652163"
 ---
 # <a name="inferring-tables"></a>Определение таблиц
 
@@ -122,7 +123,7 @@ ms.locfileid: "91177557"
 |Text1|  
 |Text2|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md)
 - [Загрузка набора данных из XML](loading-a-dataset-from-xml.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о создании связей наборов данных из XML-схемы (XSD)
 title: Создание отношений наборов данных из схемы XML (XSD)
 ms.date: 03/30/2017
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
-ms.openlocfilehash: 2673280ebb94dcc10c130f3969f3e3250d3706a2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e18ae451085f536e7fe35053fadab35e30dbc225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652462"
 ---
 # <a name="generating-dataset-relations-from-xml-schema-xsd"></a>Создание отношений наборов данных из схемы XML (XSD)
 
@@ -83,7 +84,7 @@ msdata:childkey="" />
   
  В процессе сопоставления используется элемент **Relationship** для создания связи типа «родители-потомки» между столбцом **OrderNumber** в таблице **Order** и столбцом **Ордерно** в таблице **OrderDetail** в **наборе данных**. Процесс сопоставления только указывает связь, он не задает автоматически ограничения значений в этих столбцах подобно ограничениям первичного/внешнего ключа в реляционных базах данных.  
   
-### <a name="in-this-section"></a>в этом разделе  
+### <a name="in-this-section"></a>В этом разделе  
 
  [Сопоставление неявных отношений между вложенными элементами схемы](map-implicit-relations-between-nested-schema-elements.md)  
  Описывает ограничения и связи, которые неявно создаются в **наборе данных** при обнаружении вложенных элементов в схеме XML.  
@@ -102,6 +103,6 @@ msdata:childkey="" />
  [Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений UNIQUE и FOREIGN KEY в **наборе данных**.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

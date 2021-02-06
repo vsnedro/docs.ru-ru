@@ -1,30 +1,31 @@
 ---
+description: 'Дополнительные сведения: руководство по безопасности наборов данных и DataTable'
 title: Набор данных и руководство по безопасности DataTable
 ms.date: 07/14/2020
 dev_langs:
 - csharp
-ms.openlocfilehash: 8798c4542acc578c8f7f00c9b26cd01a0db20c42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ec0130d5b5ad106cc3a0a26b45ebff34f73e31d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651643"
 ---
 # <a name="dataset-and-datatable-security-guidance"></a>Набор данных и руководство по безопасности DataTable
 
-Эта статья относится к следующим продуктам:
+Эта статья относится к:
 
 * .NET Framework (все версии)
 * .NET Core и более поздние версии
 * .NET 5.0 и более поздней версии
 
-Типы [DataSet](/dotnet/api/system.data.dataset) и [DataTable](/dotnet/api/system.data.datatable) являются устаревшими компонентами .NET, которые позволяют представлять наборы данных как управляемые объекты. Эти компоненты появились в .NET Framework 1,0 как часть исходной [инфраструктуры ADO.NET](./index.md). Их цель — предоставить управляемое представление по реляционному набору данных, чтобы отказаться от того, является ли базовый источник данных XML, SQL или другой технологией.
+Типы [DataSet](/dotnet/api/system.data.dataset) и [DataTable](/dotnet/api/system.data.datatable) являются устаревшими компонентами .NET, которые позволяют представлять наборы данных как управляемые объекты. Эти компоненты появились в платформа .NET Framework 1,0 как часть исходной [инфраструктуры ADO.NET](./index.md). Их цель — предоставить управляемое представление по реляционному набору данных, чтобы отказаться от того, является ли базовый источник данных XML, SQL или другой технологией.
 
 Дополнительные сведения о ADO.NET, включая более современные парадигмы представления данных, см. [в документации по ADO.NET](../index.md).
 
 ## <a name="default-restrictions-when-deserializing-a-dataset-or-datatable-from-xml"></a>Ограничения по умолчанию при десериализации набора данных или DataTable из XML
 
-Во всех поддерживаемых версиях .NET Framework, .NET Core и .NET, а также `DataSet` `DataTable` накладываются следующие ограничения на типы объектов, которые могут присутствовать в десериализованных данных. По умолчанию этот список ограничен:
+Во всех поддерживаемых версиях платформа .NET Framework, .NET Core и .NET, а также `DataSet` `DataTable` накладываются следующие ограничения на типы объектов, которые могут присутствовать в десериализованных данных. По умолчанию этот список ограничен:
 
 * Примитивы и примитивные эквиваленты: `bool` , `char` , `sbyte` , `byte` , `short` , `ushort` , `int` , `uint` ,,, `long` `ulong` `float` `double` `decimal` `DateTime` `DateTimeOffset` `TimeSpan` `string` `Guid` `SqlBinary` `SqlBoolean` `SqlByte` `SqlBytes` `SqlChars` `SqlDateTime` `SqlDecimal` `SqlDouble` `SqlGuid` `SqlInt16` `SqlInt32` `SqlInt64` `SqlMoney` `SqlSingle` `SqlString` ,,,,,,,,,,,,,,,,,,,,,, и.
 * Часто используемые не примитивы: `Type` , `Uri` и `BigInteger` .
@@ -70,7 +71,7 @@ table.ReadXml(xmlReader); // this call will succeed
 
 Приложение может расширить список разрешенных типов, включив в него пользовательские типы, а также встроенные типы, перечисленные выше. При расширении списка разрешенных типов изменение затрагивает _все_ `DataSet` `DataTable` экземпляры приложения и в нем. Невозможно удалить типы из списка разрешенных типов.
 
-#### <a name="extend-through-configuration-net-framework-40---48"></a>Расширение через конфигурацию (.NET Framework 4,0-4,8)
+#### <a name="extend-through-configuration-net-framework-40---48"></a>Расширение через конфигурацию (платформа .NET Framework 4,0-4,8)
 
 _App.config_ можно использовать для расширения списка разрешенных типов. Чтобы расширить список разрешенных типов, сделайте следующее:
 
@@ -107,9 +108,9 @@ string assemblyQualifiedName = typeof(Fabrikam.CustomType).AssemblyQualifiedName
 
 <a name="etc"></a>
 
-#### <a name="extend-through-configuration-net-framework-20---35"></a>Расширение через конфигурацию (.NET Framework 2,0-3,5)
+#### <a name="extend-through-configuration-net-framework-20---35"></a>Расширение через конфигурацию (платформа .NET Framework 2,0-3,5)
 
-Если приложение предназначено для .NET Framework 2,0 или 3,5, вы по-прежнему можете использовать описанный выше механизм _App.config_ для расширения списка разрешенных типов. Однако `<configSections>` элемент будет выглядеть немного иначе, как показано в следующем коде:
+Если приложение предназначено для платформа .NET Framework 2,0 или 3,5, вы по-прежнему можете использовать описанный выше механизм _App.config_ для расширения списка разрешенных типов. Однако `<configSections>` элемент будет выглядеть немного иначе, как показано в следующем коде:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -128,7 +129,7 @@ string assemblyQualifiedName = typeof(Fabrikam.CustomType).AssemblyQualifiedName
 </configuration>
 ```
 
-#### <a name="extend-programmatically-net-framework-net-core-net-50"></a>Расширение программным способом (.NET Framework, .NET Core, .NET 5.0 +)
+#### <a name="extend-programmatically-net-framework-net-core-net-50"></a>Расширение программным способом (платформа .NET Framework, .NET Core, .NET 5.0 +)
 
 Список разрешенных типов также можно расширить программно с помощью [AppDomain. SetData](/dotnet/api/system.appdomain.setdata) с хорошо известным ключом _System. Data. датасетдефаулталловедтипес_, как показано в следующем коде.
 
@@ -144,11 +145,11 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 
 При использовании механизма расширения значение, связанное с ключом _System. Data. датасетдефаулталловедтипес_ , должно иметь тип `Type[]` .
 
-В .NET Framework список разрешенных типов можно расширить с помощью _App.config_ и `AppDomain.SetData` . В этом случае `DataSet` и `DataTable` позволяет десериализовать объект как часть данных, если его тип имеется в любом из списков.
+В платформа .NET Framework список разрешенных типов можно расширить с помощью _App.config_ и `AppDomain.SetData` . В этом случае `DataSet` и `DataTable` позволяет десериализовать объект как часть данных, если его тип имеется в любом из списков.
 
-### <a name="run-an-app-in-audit-mode-net-framework"></a>Запуск приложения в режиме аудита (.NET Framework)
+### <a name="run-an-app-in-audit-mode-net-framework"></a>Запуск приложения в режиме аудита (платформа .NET Framework)
 
-В .NET Framework `DataSet` и `DataTable` Предоставьте возможность режима аудита. Если включен режим аудита `DataSet` и `DataTable` Сравнение типов входящих объектов со списком разрешенных типов. Однако если объект, тип которого не разрешен, отображается, исключение **не** создается. Вместо этого `DataSet` и `DataTable` уведомлять все подключенные `TraceListener` экземпляры о наличии подозрительного типа, позволяя `TraceListener` записывать эти сведения в журнал. Исключение не создается, и Операция десериализации сохраняется.
+В платформа .NET Framework `DataSet` и `DataTable` Предоставьте возможность режима аудита. Если включен режим аудита `DataSet` и `DataTable` Сравнение типов входящих объектов со списком разрешенных типов. Однако если объект, тип которого не разрешен, отображается, исключение **не** создается. Вместо этого `DataSet` и `DataTable` уведомлять все подключенные `TraceListener` экземпляры о наличии подозрительного типа, позволяя `TraceListener` записывать эти сведения в журнал. Исключение не создается, и Операция десериализации сохраняется.
 
 > [!WARNING]
 > Запуск приложения в режиме аудита должен быть только временной мерой, используемой для тестирования. Если включен режим аудита `DataSet` и `DataTable` не применяются ограничения типа, что может вызвать брешь в системе безопасности в приложении. Дополнительные сведения см. в разделах [Удаление всех ограничений на типы](#ratr) и [безопасность с учетом ненадежных входных данных](#swr).
@@ -216,11 +217,11 @@ AppDomain.CurrentDomain.SetData("System.Data.DataSetDefaultAllowedTypes", extraA
 > [!WARNING]
 > Удаление всех ограничений типа может вызвать брешь в системе безопасности внутри приложения. При использовании этого механизма убедитесь, что приложение не **использует** `DataSet` или `DataTable` для чтения недоверенных входных данных. Дополнительные сведения см. в статье [CVE-2020-1147](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1147) и следующем разделе [безопасность с учетом ненадежных входов](#swr).
 
-#### <a name="through-appcontext-configuration-net-framework-46---48-net-core-21-and-later-net-50-and-later"></a>Через AppContext Configuration (.NET Framework 4,6-4,8, .NET Core 2,1 и более поздних версий, .NET 5,0 и более поздние версии)
+#### <a name="through-appcontext-configuration-net-framework-46---48-net-core-21-and-later-net-50-and-later"></a>Через AppContext Configuration (платформа .NET Framework 4,6-4,8, .NET Core 2,1 и более поздних версий, .NET 5,0 и более поздние версии)
 
 `AppContext`Параметр, `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation` при установке которого `true` удаляет все ограничения, ограничивающие типы `DataSet` , от и `DataTable` .
 
-В .NET Framework этот коммутатор можно включить с помощью _App.config_, как показано в следующей конфигурации:
+В платформа .NET Framework этот коммутатор можно включить с помощью _App.config_, как показано в следующей конфигурации:
 
 ```xml
 <configuration>
@@ -267,7 +268,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 
  При выборе предыдущего программного подхода вызов метода `AppContext.SetSwitch` должен выполняться на раннем этапе запуска приложений.
 
-#### <a name="through-the-machine-wide-registry-net-framework-20---48"></a>Через реестр на уровне компьютера (.NET Framework 2,0-4,8);
+#### <a name="through-the-machine-wide-registry-net-framework-20---48"></a>Через реестр на уровне компьютера (платформа .NET Framework 2,0-4,8);
 
 Если параметр `AppContext` недоступен, проверка ограничений типов может быть отключена с помощью реестра Windows:
 
@@ -279,7 +280,7 @@ AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation"
 | **Раздел реестра** | `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` |
 | **Имя значения** | `Switch.System.Data.AllowArbitraryDataSetTypeInstantiation` |
 | **Тип значения** | `REG_SZ` |
-| **Данные** | `true` |
+| **«Значение»** | `true` |
 
 В 64-разрядной операционной системе это значение необходимо добавить как для 64-разрядного ключа (показанного выше), так и для ключа 32-bit. 32-разрядный ключ находится в папке `HKLM\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\AppContext` .
 
@@ -475,9 +476,9 @@ public class MyClass
 
 ## <a name="deserialize-a-dataset-or-datatable-via-binaryformatter"></a>Десериализация набора данных или DataTable через BinaryFormatter
 
-Разработчики никогда не должны использовать `BinaryFormatter` , `NetDataContractSerializer` , `SoapFormatter` или связанные ***ненадежные** модули форматирования для десериализации `DataSet` экземпляра или `DataTable` из ненадежных полезных данных:
+Разработчики никогда не должны использовать `BinaryFormatter` , `NetDataContractSerializer` , `SoapFormatter` или связанные ***ненадежные*** модули форматирования для десериализации `DataSet` `DataTable` экземпляра или из ненадежных полезных данных:
 
-_ Это является уязвимым для полной атаки удаленного выполнения кода.
+* Это является уязвимым для полной атаки удаленного выполнения кода.
 * Использование пользовательской функции недостаточно `SerializationBinder` для предотвращения такой атаки.
 
 ## <a name="safe-replacements"></a>Защищенные замены

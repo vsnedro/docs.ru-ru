@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: создание строго типизированных наборов данных'
 title: Создание строго типизированных наборов данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
-ms.openlocfilehash: 1c65389c8c5664f86f3f0c04829a2422908d72d1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c69aecc5a0a541c868dac3037c9dd0dbc3fe8383
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652436"
 ---
 # <a name="generating-strongly-typed-datasets"></a>Создание строго типизированных наборов данных
 
@@ -95,7 +96,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataSet>

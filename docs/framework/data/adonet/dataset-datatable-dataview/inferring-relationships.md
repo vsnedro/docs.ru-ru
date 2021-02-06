@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о выведение связей
 title: Определение отношений
 ms.date: 03/30/2017
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
-ms.openlocfilehash: ee691eee95c34afdb6374cdd7448d4b44ece3055
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a117581d512c1427c638ea862169ab3c7623d783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652150"
 ---
 # <a name="inferring-relationships"></a>Определение отношений
 
@@ -70,7 +71,7 @@ ms.locfileid: "91177570"
   
  **Акцептрежектруле:** None  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md)
 - [Загрузка набора данных из XML](loading-a-dataset-from-xml.md)

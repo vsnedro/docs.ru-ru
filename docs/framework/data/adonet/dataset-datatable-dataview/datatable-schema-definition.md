@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: определение схемы DataTable'
 title: Определение схемы таблицы данных
 ms.date: 03/30/2017
 ms.assetid: efbcdda4-f5a9-421d-8be2-4c194c74552f
-ms.openlocfilehash: 0c14c6012c65039e1e2e7e2d2d8c38c4202b45a7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1a48c8a129607dc8d683aa4735ea0e86ed32cc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153252"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652618"
 ---
 # <a name="datatable-schema-definition"></a>Определение схемы таблицы данных
 
@@ -20,7 +21,7 @@ ms.locfileid: "91153252"
 > [!NOTE]
 > <xref:System.Data.DataTable.CaseSensitive%2A>Свойство объекта **DataTable** не влияет на это поведение. Свойство **CaseSensitive** применяется к данным в таблице и влияет на сортировку, поиск, фильтрацию, применение ограничений и т. д., но не на ссылки на столбцы, связи и ограничения.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Добавление столбцов в таблицу данных](adding-columns-to-a-datatable.md)  
  Описывает, как определить столбцы таблицы с помощью объектов **DataColumn** .  
@@ -37,7 +38,7 @@ ms.locfileid: "91153252"
  [Ограничения таблиц данных](datatable-constraints.md)  
  Описывает, как определить внешний ключ и ограничения уникальности для столбцов в таблице.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [DataTables](datatables.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

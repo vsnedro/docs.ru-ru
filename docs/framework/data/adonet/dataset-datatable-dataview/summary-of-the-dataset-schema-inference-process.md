@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: сводка процесса вывода схемы набора данных'
 title: Общие сведения о процессе определения схемы набора данных
 ms.date: 03/30/2017
 ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
-ms.openlocfilehash: 8d517487b96aa7f204ea9f25d326500db7df413a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 637e4325558708c15d6d4eb17de9c0cf13b3b256
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651565"
 ---
 # <a name="summary-of-the-dataset-schema-inference-process"></a>Общие сведения о процессе определения схемы набора данных
 
@@ -31,7 +32,7 @@ ms.locfileid: "91198513"
   
 - Для элементов, которые выводятся в виде таблиц и содержат текст, но не имеют дочерних элементов, для текста каждого элемента создается новый столбец с именем **TableName_Text** . Если элемент выводится как таблица и имеет текст, но при этом имеет дочерние элементы, текст пропускается.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md)
 - [Загрузка набора данных из XML](loading-a-dataset-from-xml.md)

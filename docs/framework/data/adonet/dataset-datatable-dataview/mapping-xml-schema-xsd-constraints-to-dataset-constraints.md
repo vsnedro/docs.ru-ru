@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: сопоставление ограничений схемы XML (XSD) с ограничениями набора данных'
 title: Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных
 ms.date: 03/30/2017
 ms.assetid: 3d0d1a4b-9104-434f-ac04-6c01ab5716b5
-ms.openlocfilehash: a2b28b0dcb2e2858c7328854650667f51e83166a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1a958029e541b6ac95b5c509665005c9006adfa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651890"
 ---
 # <a name="mapping-xml-schema-xsd-constraints-to-dataset-constraints"></a>Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных
 
@@ -27,7 +28,7 @@ ms.locfileid: "91185292"
   
  Процесс сопоставления преобразует эти ограничения схемы в соответствующие ограничения для таблиц, созданных в **наборе данных**.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Сопоставление уникальных ограничений XML-схемы (XSD) с ограничениями набора данных](map-unique-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Описывает элементы XML-схемы, используемые для создания ограничений UNIQUE в **наборе данных**.  
@@ -46,6 +47,6 @@ ms.locfileid: "91185292"
  [Создание отношений наборов данных из схемы XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
  Описывает элементы XML-схемы, используемые для создания связей между столбцами таблицы в **наборе данных**.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: вывод текста элемента'
 title: Определение текста элемента
 ms.date: 03/30/2017
 ms.assetid: 789799e5-716f-459f-a168-76c5cf22178b
-ms.openlocfilehash: 7389e24f39902edf041c3cd3502303b17fd008ba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5d0d9b1b3bb6164cd3cf26b429a4c7d658ee4128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652215"
 ---
 # <a name="inferring-element-text"></a>Определение текста элемента
 
@@ -51,7 +52,7 @@ ms.locfileid: "91164692"
 |-------------------|  
 |Text2|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Определение реляционной структуры набора данных из XML](inferring-dataset-relational-structure-from-xml.md)
 - [Загрузка набора данных из XML](loading-a-dataset-from-xml.md)

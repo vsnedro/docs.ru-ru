@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Навигация по связям DataRelation'
 title: Навигация по отношениям DataRelation
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e5e673f4-9b44-45ae-aaea-c504d1cc5d3e
-ms.openlocfilehash: 5eb2ee16712be5ccd5e9aa0af4dde22dcaaeea09
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 72d5bbb282b3b43434e528390769e1203519e8e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651812"
 ---
 # <a name="navigating-datarelations"></a>Навигация по отношениям DataRelation
 
@@ -50,7 +51,7 @@ Customer ID: NORTS
  [!code-csharp[DataWorks Data.DataTableNavigation#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks Data.DataTableNavigation/CS/source.cs#1)]
  [!code-vb[DataWorks Data.DataTableNavigation#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks Data.DataTableNavigation/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

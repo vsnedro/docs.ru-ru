@@ -1,27 +1,28 @@
 ---
+description: 'Дополнительные сведения: генератор EDM (EdmGen.exe)'
 title: Генератор модели EDM (EdmGen.exe)
 ms.date: 03/30/2017
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-ms.openlocfilehash: da5b87fa76cbc8e44f6ed60b047e5a185c2aa603
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 853e579ff3859a543819d9785766535d9bb865af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90542559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99650928"
 ---
 # <a name="edm-generator-edmgenexe"></a>Генератор модели EDM (EdmGen.exe)
 
 EdmGen.exe — это средство командной строки, используемое для работы с файлами модели и сопоставления Entity Framework. Средство EdmGen.exe применяется для следующих целей.
 
-- Подключитесь к источнику данных с помощью конкретного .NET Framework поставщика данных и создайте файлы концептуальной модели (CSDL), модели хранения (SSDL) и сопоставления (MSL), используемые Entity Framework. Дополнительные сведения см. в разделе [инструкции. использование EdmGen.exe для создания файлов модели и сопоставления](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
+- Подключитесь к источнику данных с помощью конкретного платформа .NET Framework поставщика данных и создайте файлы концептуальной модели (CSDL), модели хранения (SSDL) и сопоставления (MSL), используемые Entity Framework. Дополнительные сведения см. в разделе [инструкции. использование EdmGen.exe для создания файлов модели и сопоставления](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
 
 - проверки существующей модели Дополнительные сведения см. в разделе [инструкции. использование EdmGen.exe для проверки файлов модели и сопоставления](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md).
 
-- Создания файла кода C# или Visual Basic, который содержит классы объектов, сформированные из файла концептуальной модели (CSDL). Дополнительные сведения см. [в разделе инструкции. использование EdmGen.exe для создания кода уровня объекта](how-to-use-edmgen-exe-to-generate-object-layer-code.md).
+- Создания файла кода C# или Visual Basic, который содержит классы объектов, сформированные из файла концептуальной модели (CSDL). Дополнительные сведения см. [в разделе инструкции. использование EdmGen.exe для создания кода Object-Layer](how-to-use-edmgen-exe-to-generate-object-layer-code.md).
 
 - Создания файла кода C# или Visual Basic, который содержит заранее сформированные представления для существующей модели. Дополнительные сведения см. в [руководствах по предварительному формированию представлений для повышения производительности запросов](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)).
 
-Средство EdmGen.exe устанавливается в каталог .NET Framework. Чаще всего она находится в папке C:\windows\Microsoft.NET\Framework\v4.0. Для 64-разрядных версий систем она находится в папке C:\windows\Microsoft.NET\Framework64\v4.0. Можно также получить доступ к средству EdmGen.exe из командной строки Visual Studio (нажмите кнопку **Пуск**, укажите **все программы**, **Microsoft Visual Studio 2010**, **инструменты Visual Studio**, а затем — **Командная строка Visual Studio 2010**).
+Средство EdmGen.exe устанавливается в каталог платформа .NET Framework. Чаще всего она находится в папке C:\windows\Microsoft.NET\Framework\v4.0. Для 64-разрядных версий систем она находится в папке C:\windows\Microsoft.NET\Framework64\v4.0. Можно также получить доступ к средству EdmGen.exe из командной строки Visual Studio (нажмите кнопку **Пуск**, укажите **все программы**, **Microsoft Visual Studio 2010**, **инструменты Visual Studio**, а затем — **Командная строка Visual Studio 2010**).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -66,7 +67,7 @@ EdmGen /mode:choice [options]
 |`/nologo`|Отключает вывод сообщения об авторских правах.|
 |`/targetversion:` \<string>|Версия платформы .NET Framework, которая будет использоваться для компиляции сформированного кода. Поддерживаемыми версиями являются 4 и 4.5. Значение по умолчанию — 4.|
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 [Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)
 

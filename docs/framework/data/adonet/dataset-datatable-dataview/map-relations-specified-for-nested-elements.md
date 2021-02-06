@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о сопоставлении связей, указанных для вложенных элементов.
 title: Сопоставление отношений, заданных для вложенных элементов
 ms.date: 03/30/2017
 ms.assetid: 24a2d3e5-4af7-4f9a-ab7a-fe6684c9e4fe
-ms.openlocfilehash: f758e1ef2c3786a102dc6bb5f6dd217b20dc5b55
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a625ad5bfd590794d0362a991dc22f756f043f2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651942"
 ---
 # <a name="map-relations-specified-for-nested-elements"></a>Сопоставление отношений, заданных для вложенных элементов
 
@@ -75,7 +76,7 @@ ms.locfileid: "91198552"
   
  Процесс сопоставления не создает никаких ограничений.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание отношений наборов данных из схемы XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
 - [Сопоставление ограничений XML-схемы (XSD) с ограничениями набора данных](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)

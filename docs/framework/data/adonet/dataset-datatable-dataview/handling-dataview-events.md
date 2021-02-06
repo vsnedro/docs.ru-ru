@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье обработка событий DataView.
 title: Обработка событий DataView
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e5675663-fc91-4e0d-87a9-481b25b64c0f
-ms.openlocfilehash: 2a67cb040c5d438d17ad91d41e97f24f3166262b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d3e72adefa6b320d48b90d481a20644b62009cdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652319"
 ---
 # <a name="handling-dataview-events"></a>Обработка событий DataView
 
@@ -18,7 +19,7 @@ ms.locfileid: "91204545"
   
  Событие **ListChanged** реализует делегат **листчанжедевенсандлер** <xref:System.ComponentModel> пространства имен и принимает в качестве входных данных <xref:System.ComponentModel.ListChangedEventArgs> объект. Вы можете определить, какой тип изменения произошло с помощью <xref:System.ComponentModel.ListChangedType> значения перечисления в свойстве **ListChangedType** объекта **ListChangedEventArgs** . Для изменений, затрагивающих Добавление, удаление или перемещение строк, можно получить доступ к новому индексу добавленной или перемещенной строки и предыдущему индексу удаленной строки с помощью свойства **невиндекс** объекта **ListChangedEventArgs** . В случае перемещенной строки доступ к предыдущему индексу перемещенной строки можно получить с помощью свойства **олдиндекс** объекта **ListChangedEventArgs** .  
   
- **DataViewManager** также предоставляет событие **ListChanged** для уведомления о том, что таблица была добавлена или удалена, или если в коллекцию **связей** базового **набора данных**было внесено изменение.  
+ **DataViewManager** также предоставляет событие **ListChanged** для уведомления о том, что таблица была добавлена или удалена, или если в коллекцию **связей** базового **набора данных** было внесено изменение.  
   
  В следующем примере кода показано, как добавить обработчик событий **ListChanged** .  
   
@@ -52,7 +53,7 @@ protected static void OnListChanged(object sender,
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataView>
 - <xref:System.ComponentModel.ListChangedEventHandler>
