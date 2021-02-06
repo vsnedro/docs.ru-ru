@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как получить метаданные через привязку не MEX.
 title: Практическое руководство. Получение метаданных через привязку, не использующую MEX
 ms.date: 03/30/2017
 ms.assetid: 2292e124-81b2-4317-b881-ce9c1ec66ecb
-ms.openlocfilehash: db4bad81241295e168685c8b80546f2305021066
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 521e48d90e9dbed2e0ded61c60af59d063d2b3dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96249024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644220"
 ---
 # <a name="how-to-retrieve-metadata-over-a-non-mex-binding"></a>Практическое руководство. Получение метаданных через привязку, не использующую MEX
 

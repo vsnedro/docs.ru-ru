@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: Архитектура синдикации'
 title: Архитектура синдикации
 ms.date: 03/30/2017
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-ms.openlocfilehash: bc8c9cfbdc4f5d8ee01dfcf5098cfbc74afc2467
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 274ec121629bcb4e596401ad989309d3ef02c128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96234808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643739"
 ---
 # <a name="architecture-of-syndication"></a>Архитектура синдикации
 
@@ -42,7 +43,7 @@ API синдикации предназначен для обеспечения 
   
  Классы форматирования:  
   
-|Класс|Описание|  
+|Class|Описание|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter>|Класс, который выполняет сериализацию экземпляра <xref:System.ServiceModel.Syndication.SyndicationFeed> в формат Atom 1.0.|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601>|Класс, который выполняет сериализацию классов, производных от <xref:System.ServiceModel.Syndication.SyndicationFeed>, в формат Atom 1.0.|  
@@ -55,7 +56,7 @@ API синдикации предназначен для обеспечения 
   
  Классы объектной модели  
   
-|Класс|Описание|  
+|Class|Описание|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.SyndicationCategory>|Класс, представляющий категорию веб-канала синдикации.|  
 |<xref:System.ServiceModel.Syndication.SyndicationContent>|Базовый класс, представляющий содержимое синдикации.|  

@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: создание приложения однорангового канала'
 title: Создание приложения одноранговых каналов
 ms.date: 03/30/2017
 ms.assetid: a69a1b8f-8e15-45c5-87b8-bdb71e1c7ab8
-ms.openlocfilehash: 4213f8049c5bd6a82ef814c3f152d52491fe2a8a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: dc55efab2e60db96589a8d014ce28b927ad39309
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96256876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643557"
 ---
 # <a name="building-a-peer-channel-application"></a>Создание приложения одноранговых каналов
 
 В следующих разделах представлено руководство по разработке приложений одноранговых каналов.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Преобразование приложения NetTcpBinding в приложение одноранговых каналов](converting-a-nettcpbinding-application-to-a-peer-channel-application.md)  
  Описывается, как преобразовать приложение NetTcpBinding в приложение одноранговых каналов.  

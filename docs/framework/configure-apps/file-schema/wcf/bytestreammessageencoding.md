@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <byteStreamMessageEncoding>'
 title: <byteStreamMessageEncoding>
 ms.date: 03/30/2017
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
-ms.openlocfilehash: ceb40558cd979a54f72c2e9aa88f3af47bee9b68
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9cbb4eacb1a960481ee262db662160b5a342e27f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183901"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639293"
 ---
 # \<byteStreamMessageEncoding>
 
@@ -48,7 +49,7 @@ ms.locfileid: "91183901"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.ByteStreamMessageEncodingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

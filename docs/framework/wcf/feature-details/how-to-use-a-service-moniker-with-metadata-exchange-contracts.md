@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о том, как использовать моникер службы с контрактами обмена метаданными.
 title: Практическое руководство. Использование моникера службы с контрактами обмена метаданными
 ms.date: 03/30/2017
 ms.assetid: c41a07e5-cb9d-45d6-9ea4-34511e227faf
-ms.openlocfilehash: 194caf6a48e64a4358a77ecd514dda456cc35e0b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 220132a10cb637be9e3724232d0ddaf80a13551a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96265964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643102"
 ---
 # <a name="how-to-use-a-service-moniker-with-metadata-exchange-contracts"></a>Практическое руководство. Использование моникера службы с контрактами обмена метаданными
 

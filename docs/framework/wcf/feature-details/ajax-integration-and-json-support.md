@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье интеграция AJAX и поддержка JSON.
 title: Интеграция с AJAX и поддержка JSON
 ms.date: 03/30/2017
 helpviewer_keywords:
 - AJAX integration and JSON support [WCF]
 ms.assetid: 3851a8fc-d861-4ac1-873c-96af0343d3a7
-ms.openlocfilehash: c895a6dedc22a42adb7104927d39090ab6587f37
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 13e52a3013e9c04f57d6303caf18fd23a41ebf25
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96266029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643895"
 ---
 # <a name="ajax-integration-and-json-support"></a>Интеграция с AJAX и поддержка JSON
 
@@ -17,7 +18,7 @@ ms.locfileid: "96266029"
   
  Дополнительные сведения о ASP.NET AJAX и его интеграции с ASP.NET 2,0 см. в разделе [Общие сведения о ASP.NET AJAX](/previous-versions/aspnet/bb398874(v=vs.100)).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Создание служб WCF для ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md)  
  Описывает, как служба WCF может быть предоставлена клиентам AJAX путем добавления соответствующей конечной точки AJAX либо с помощью настройки, либо с помощью фабрики узла службы, настроенной для создания узла службы, который автоматически настраивает конечную точку AJAX.  

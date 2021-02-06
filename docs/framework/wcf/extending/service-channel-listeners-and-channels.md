@@ -1,15 +1,16 @@
 ---
-title: 'Служба: Прослушиватели каналов и каналы'
+description: 'Дополнительные сведения о службе: прослушиватели каналов и каналы'
+title: 'Служба: прослушиватели каналов и каналы'
 ms.date: 03/30/2017
 ms.assetid: 8ccbe0e8-7e55-441d-80de-5765f67542fa
-ms.openlocfilehash: 4367d844867db7fdad013e30d047f9385addbce5
-ms.sourcegitcommit: 8a0fe8a2227af612f8b8941bdb8b19d6268748e7
+ms.openlocfilehash: 2a092813faaa6f8964158adb55d11f21bf3ee60a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71834800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643999"
 ---
-# <a name="service-channel-listeners-and-channels"></a>Служба: Прослушиватели каналов и каналы
+# <a name="service-channel-listeners-and-channels"></a>Служба: прослушиватели каналов и каналы
 
 Существует три категории объектов Channel: каналы, прослушиватели каналов и фабрики каналов. Каналы - это интерфейс между приложением и стеком канала. Прослушиватели каналов отвечают за создание каналов на принимающей (ожидающей передачи данных) стороне, обычно в ответ на новое входящее сообщение или подключение. Фабрики каналов отвечают за создание каналов на передающей стороне для инициации связи с конечной точкой.
 
@@ -27,19 +28,19 @@ ms.locfileid: "71834800"
 
 WCF предоставляет вспомогательные методы базового класса для этого процесса. Схему вспомогательных классов канала, обсуждаемых в этой статье, см. в разделе [Общие сведения о модели каналов](channel-model-overview.md).
 
-- Класс <xref:System.ServiceModel.Channels.CommunicationObject> реализует <xref:System.ServiceModel.ICommunicationObject> и применяет конечный автомат, описанный в шаге 2 [разработки каналов](developing-channels.md).
+- <xref:System.ServiceModel.Channels.CommunicationObject>Класс реализует <xref:System.ServiceModel.ICommunicationObject> и применяет конечный автомат, описанный в шаге 2 [разработки каналов](developing-channels.md).
 
-- Класс <xref:System.ServiceModel.Channels.ChannelManagerBase> реализует <xref:System.ServiceModel.Channels.CommunicationObject> и предоставляет унифицированный базовый класс для <xref:System.ServiceModel.Channels.ChannelFactoryBase> и <xref:System.ServiceModel.Channels.ChannelListenerBase>. Класс <xref:System.ServiceModel.Channels.ChannelManagerBase> работает совместно с классом <xref:System.ServiceModel.Channels.ChannelBase> - базовым классом, реализующим интерфейс <xref:System.ServiceModel.Channels.IChannel>.
+- <xref:System.ServiceModel.Channels.ChannelManagerBase>Класс реализует <xref:System.ServiceModel.Channels.CommunicationObject> и предоставляет унифицированный базовый класс для <xref:System.ServiceModel.Channels.ChannelFactoryBase> и <xref:System.ServiceModel.Channels.ChannelListenerBase> . Класс <xref:System.ServiceModel.Channels.ChannelManagerBase> работает совместно с классом <xref:System.ServiceModel.Channels.ChannelBase> - базовым классом, реализующим интерфейс <xref:System.ServiceModel.Channels.IChannel>.
 
-- Класс <xref:System.ServiceModel.Channels.ChannelFactoryBase> реализует <xref:System.ServiceModel.Channels.ChannelManagerBase> и <xref:System.ServiceModel.Channels.IChannelFactory> и объединяет перегрузки `CreateChannel` в один абстрактный метод `OnCreateChannel`.
+- <xref:System.ServiceModel.Channels.ChannelFactoryBase>Класс реализует <xref:System.ServiceModel.Channels.ChannelManagerBase> и <xref:System.ServiceModel.Channels.IChannelFactory> объединяет `CreateChannel` перегрузки в один `OnCreateChannel` абстрактный метод.
 
-- <xref:System.ServiceModel.Channels.ChannelListenerBase> Класс реализует<xref:System.ServiceModel.Channels.IChannelListener>. Он отвечает за базовое управление состоянием.
+- <xref:System.ServiceModel.Channels.ChannelListenerBase>Класс реализует <xref:System.ServiceModel.Channels.IChannelListener> . Он отвечает за базовое управление состоянием.
 
-Следующий рассказ основан на [Transport: Пример](../samples/transport-udp.md) протокола UDP.
+Следующее обсуждение основано на примере [Transport: UDP](../samples/transport-udp.md) .
 
 ## <a name="creating-a-channel-listener"></a>Создание прослушивателя каналов
 
-@No__t-0, который реализуется в примере, является производным от класса <xref:System.ServiceModel.Channels.ChannelListenerBase>. Он использует один UDP-сокет для приема датаграмм. Метод `OnOpen` принимает данные через UDP-сокет в асинхронном цикле. Затем данные преобразуются в сообщения с помощью системы кодирования:
+Объект `UdpChannelListener` , который реализуется в примере, является производным от <xref:System.ServiceModel.Channels.ChannelListenerBase> класса. Он использует один UDP-сокет для приема датаграмм. Метод `OnOpen` принимает данные через UDP-сокет в асинхронном цикле. Затем данные преобразуются в сообщения с помощью системы кодирования:
 
 ```csharp
 message = UdpConstants.MessageEncoder.ReadMessage(
@@ -48,8 +49,8 @@ message = UdpConstants.MessageEncoder.ReadMessage(
 );
 ```
 
-Поскольку один канал датаграмм представляет сообщения, приходящие из нескольких источников, `UdpChannelListener` - одноэлементный прослушиватель. В каждый момент времени существует не более одного активного <xref:System.ServiceModel.Channels.IChannel>, связанного с этим прослушивателем. В образце создается новый экземпляр только в том случае, если канал, возвращенный методом <xref:System.ServiceModel.Channels.ChannelListenerBase%601.AcceptChannel%2A>, был впоследствии освобожден. При получении сообщения оно помещается в очередь в этот одноэлементный канал.
+Поскольку один канал датаграмм представляет сообщения, приходящие из нескольких источников, `UdpChannelListener` - одноэлементный прослушиватель. <xref:System.ServiceModel.Channels.IChannel>Одновременно с этим прослушивателем связано не более одного активного времени. В образце создается новый экземпляр только в том случае, если канал, возвращенный методом <xref:System.ServiceModel.Channels.ChannelListenerBase%601.AcceptChannel%2A>, был впоследствии освобожден. При получении сообщения оно помещается в очередь в этот одноэлементный канал.
 
 ### <a name="udpinputchannel"></a>UdpInputChannel
 
-`UdpInputChannel` Класс реализует<xref:System.ServiceModel.Channels.IInputChannel>. Он состоит из очереди входящих сообщений, которая заполняется сокетом прослушивателя `UdpChannelListener`. Эти сообщения выводятся из очереди методом <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>.
+`UdpInputChannel`Класс реализует <xref:System.ServiceModel.Channels.IInputChannel> . Он состоит из очереди входящих сообщений, которая заполняется сокетом прослушивателя `UdpChannelListener`. Эти сообщения выводятся из очереди <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> методом.

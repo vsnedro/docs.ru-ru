@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <UseRandomizedStringHashAlgorithm> element'
 title: Элемент <UseRandomizedStringHashAlgorithm>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - UseRandomizedStringHashAlgorithm element
 - <UseRandomizedStringHashAlgorithm> element
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-ms.openlocfilehash: 148d55c8b8a63737867c4bfdf3ab118dfdefd6f9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bb651fc9c9f6f3df448ed5ce19e81c1ae092838c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639982"
 ---
 # <a name="userandomizedstringhashalgorithm-element"></a>Элемент \<UseRandomizedStringHashAlgorithm>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91174099"
   
 ## <a name="remarks"></a>Remarks  
 
- По умолчанию <xref:System.StringComparer> класс и <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> метод используют один алгоритм хэширования, который создает согласованный хэш-код между доменами приложений. Это эквивалентно присвоению `enabled` атрибуту элемента значения `<UseRandomizedStringHashAlgorithm>` `0` . Это алгоритм хэширования, используемый в .NET Framework 4.  
+ По умолчанию <xref:System.StringComparer> класс и <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> метод используют один алгоритм хэширования, который создает согласованный хэш-код между доменами приложений. Это эквивалентно присвоению `enabled` атрибуту элемента значения `<UseRandomizedStringHashAlgorithm>` `0` . Это алгоритм хэширования, используемый в платформа .NET Framework 4.  
   
  <xref:System.StringComparer>Класс и <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> метод могут также использовать другой алгоритм хэширования, который выполняет вычисление хэш-кодов для каждого домена приложения. В результате хэш-коды для эквивалентных строк будут различаться в разных доменах приложений. Эта функция является обязательной. чтобы воспользоваться его преимуществами, необходимо задать `enabled` атрибуту `<UseRandomizedStringHashAlgorithm>` элемента значение `1` .  
   
@@ -98,7 +99,7 @@ String 'This is a string.' in domain 'PerDomain.exe': 5435776D
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
 - <xref:System.String.GetHashCode%2A?displayProperty=nameWithType>

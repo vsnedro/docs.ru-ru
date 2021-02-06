@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: работа с календарями'
 title: Работа с календарями
 ms.date: 04/01/2019
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - international applications [.NET], calendars
 - culture, calendars
 ms.assetid: 0c1534e5-979b-4c8a-a588-1c24301aefb3
-ms.openlocfilehash: c30af36b3426c4abbdf9c55f6c9062a5d8fc8c23
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 978b084906573a18e19cca20db0740ba2a1276cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94824256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642478"
 ---
 # <a name="work-with-calendars"></a>Работа с календарями
 
@@ -139,7 +140,7 @@ ms.locfileid: "94824256"
 >
 > - [Обработка новой эры в японском календаре в .NET](https://devblogs.microsoft.com/dotnet/handling-a-new-era-in-the-japanese-calendar-in-net/), которая документирует функции, добавленные в .NET для поддержки календарей с несколькими Эр, и обсуждаются рекомендации по обработке календарей с несколькими эрами.
 > - [Подготовьте свое приложение к изменению японской эры](/windows/uwp/design/globalizing/japanese-era-change), которое содержит сведения о тестировании приложений в Windows, чтобы гарантировать их готовность к изменению эры.
-> - [Сводка новых обновлений японской эры для .NET Framework](https://support.microsoft.com/help/4477957/new-japanese-era-updates-for-net-framework), в которой перечислены .NET Framework обновления для отдельных версий Windows, которые относятся к новой эре для японского календаря, записываются новые функции .NET Framework для поддержки нескольких эпох, а также элементы, которые нужно искать при тестировании приложений.
+> - [Сводка новых обновлений японской эры для платформа .NET Framework](https://support.microsoft.com/help/4477957/new-japanese-era-updates-for-net-framework), в которой перечислены платформа .NET Framework обновления для отдельных версий Windows, которые относятся к новой эре для японского календаря, записываются новые функции платформа .NET Framework для поддержки нескольких эпох, а также элементы, которые нужно искать при тестировании приложений.
 
 Эра в большинстве календарей обозначает очень длинный период времени. Например, в григорианском календаре текущая эра охватывает более двух тысячелетий. Для <xref:System.Globalization.JapaneseCalendar> и <xref:System.Globalization.JapaneseLunisolarCalendar> два календаря, которые поддерживают несколько эр, это не так. Эра соответствует периоду Reign императора. Поддержка нескольких Эр, особенно если верхний предел текущей эры неизвестен, создает особые трудности.
 
@@ -225,7 +226,7 @@ ms.locfileid: "94824256"
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
+- **Платформа .NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -236,14 +237,14 @@ ms.locfileid: "94824256"
   </configuration>
   ```
 
-- **.NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
+- **Платформа .NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Ключ** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
    | **Имя** | Switch.SysTEM. Globalization. Енфорцежапанесирайеарранжес |
    | **Тип** | REG_SZ |
-   | **Значение** | верно |
+   | **Значение** | Да |
 
 Если включена поддержка оптимистических проверок диапазона, в предыдущем примере создается исключение <xref:System.ArgumentOutOfRangeException> и отображаются следующие выходные данные:
 
@@ -300,7 +301,7 @@ Parameter name: year
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
+- **Платформа .NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -311,14 +312,14 @@ Parameter name: year
   </configuration>
   ```
 
-- **.NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
+- **Платформа .NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Ключ** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
    | **Имя** | Switch.SysTEM. Globalization. Форматжапанесефирстеарасанумбер |
    | **Тип** | REG_SZ |
-   | **Значение** | верно |
+   | **Значение** | Да |
 
 Если поддержка ганнен в операциях форматирования отключена, в предыдущем примере выводятся следующие выходные данные:
 
@@ -338,7 +339,7 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
   }
   ```
 
-- **.NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
+- **Платформа .NET Framework 4,6 или более поздней версии:** Задайте следующий параметр AppContext в файле *app.config* :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -349,16 +350,16 @@ Japanese calendar date: 平成1年8月18日 (Gregorian: Friday, August 18, 1989)
   </configuration>
   ```
 
-- **.NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
+- **Платформа .NET Framework 4.5.2 или более ранней версии:** Задайте следующее значение реестра:
 
    |  |  |
    |--|--|
-   | **Key** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
+   | **Ключ** | **HKEY_LOCAL_MACHINE\Software\Microsoft\\ . нетфрамеворк\аппконтекст** |
    | **Имя** | Switch.SysTEM. Globalization. Енфорцелегацижапанеседатепарсинг |
    | **Тип** | REG_SZ |
-   | **Значение** | верно |
+   | **Значение** | Да |
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Отображение дат в календарях, отличных от григорианского](../base-types/how-to-display-dates-in-non-gregorian-calendars.md)
 - [Пример: служебная программа диапазона календарных недель](https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a)

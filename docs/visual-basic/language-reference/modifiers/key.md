@@ -1,5 +1,6 @@
 ---
-title: Ключ
+description: 'Дополнительные сведения: Key (Visual Basic)'
+title: Клавиши
 ms.date: 07/20/2015
 f1_keywords:
 - vb.AnonymousKey
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Key [Visual Basic]
 - Key keyword [Visual Basic]
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
-ms.openlocfilehash: 582ed5bb67b9c7504e736710aa4649cffb12ef45
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5ec918da661144053824ca2a734cdec11873b0e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90868002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640801"
 ---
 # <a name="key-visual-basic"></a>Key (Visual Basic)
 
@@ -51,7 +52,7 @@ ms.locfileid: "90868002"
   
  [!code-vb[VbVbalrAnonymousTypes#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#39)]  
   
-## <a name="read-only-values"></a>Значения только для чтения  
+## <a name="read-only-values"></a>Значения Read-Only  
 
  Значения ключевых свойств нельзя изменить. Например, в `flight1` предыдущих примерах `Airline` `FlightNo` поля и доступны только для чтения, но `Gate` могут быть изменены.  
   

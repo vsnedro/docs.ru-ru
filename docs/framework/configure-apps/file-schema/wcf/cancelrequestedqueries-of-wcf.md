@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <cancelRequestedQueries> из WCF'
 title: <cancelRequestedQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: a7cc7125-9ea3-4d3f-99c0-878cdeb1258a
-ms.openlocfilehash: 205399330c1aa69b332c2149ee32d9b6098ccdbe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3850d7efd01f9092312567a0eba68a6e9547baad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639189"
 ---
 # <a name="cancelrequestedqueries-of-wcf"></a>\<cancelRequestedQueries> WCF
 
@@ -60,7 +61,7 @@ ms.locfileid: "91151172"
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, обозначенного свойством <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId>.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Activities.Tracking.CancelRequestedQuery>
 - [Отслеживание и трассировка рабочих процессов](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)

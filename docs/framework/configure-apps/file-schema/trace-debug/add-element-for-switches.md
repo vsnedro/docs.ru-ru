@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <add> Element для <switches>'
 title: Элемент <add> для <switches>
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <add> element for <switches>
 - add element for <switches>
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-ms.openlocfilehash: 5be39425363cb6d2a0eca6a0fa3f4154ce857bb5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fc47a8518aca1e4e6390d9d7eba97d5fb7a7664e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173943"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639722"
 ---
 # <a name="add-element-for-switches"></a>Элемент \<add> для \<switches>
 
@@ -72,7 +73,7 @@ ms.locfileid: "91173943"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.Switch>
 - <xref:System.Diagnostics.TraceSwitch>

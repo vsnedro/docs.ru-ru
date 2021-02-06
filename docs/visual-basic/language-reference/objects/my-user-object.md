@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения об объекте My. User
 title: Объект My.User
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.User property
 - My.User object
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
-ms.openlocfilehash: f8004045b68dd7102aa85292e8e60c3ca38cbbe3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 2b1c1265199d2f01a943381fed360bfc5a20931a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640593"
 ---
 # <a name="myuser-object"></a>Объект My.User
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о том, как предполагается внедрять Windows Communication Foundation: ускорение миграции в будущем'
 title: 'Планирование перехода на платформу Windows Communication Foundation: упрощение будущей миграции'
 ms.date: 03/30/2017
 ms.assetid: f49664d9-e9e0-425c-a259-93f0a569d01b
-ms.openlocfilehash: bf3155f19e42787746d59ce7b593273522e2840a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6ea81b1dd01ed45ff62fa50c1b17442f88fc05af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245059"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643817"
 ---
 # <a name="anticipating-adopting-the-windows-communication-foundation-easing-future-migration"></a>Планирование перехода на платформу Windows Communication Foundation: упрощение будущей миграции
 

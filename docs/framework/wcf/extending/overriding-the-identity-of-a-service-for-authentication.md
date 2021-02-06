@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье переопределение удостоверения службы для проверки подлинности.
 title: Переопределение идентификатора службы для проверки подлинности
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
-ms.openlocfilehash: a02e5a2f69ad1819e6ab98b0454dd64599382cd0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f83c10d75c4ea71170a76a7fd10efb33958f5b52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644168"
 ---
 # <a name="override-the-identity-of-a-service-for-authentication"></a>Переопределение удостоверения службы для проверки подлинности
 

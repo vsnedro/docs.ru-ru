@@ -8,12 +8,12 @@ ms.custom: updateeachrelease
 helpviewer_keywords:
 - code analysis
 - code analyzers
-ms.openlocfilehash: efc440adb59da1ef9838ec5445d9c55544c14380
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 2cda5a23bbc90ca5dc2305b5d7023e8ea6120b79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643076"
 ---
 # <a name="overview-of-net-source-code-analysis"></a>Обзор анализа исходного кода .NET
 
@@ -40,7 +40,7 @@ ms.locfileid: "99216477"
 
 По умолчанию в .NET 5,0 включены следующие правила.
 
-| ИД диагностики | Категория | Уровень серьезности | Описание |
+| ИД диагностики | Категория | Статус | Описание |
 | - | - | - | - |
 | [CA1416](/visualstudio/code-quality/ca1416) | Совместимость | Предупреждение | Анализатор совместимости платформ |
 | [CA1417](/visualstudio/code-quality/ca1417) | Совместимость | Предупреждение | Не используйте `OutAttribute` в строковых параметрах для P/Invoke |
@@ -119,7 +119,7 @@ ms.locfileid: "99216477"
 
 1. Задайте для свойства MSBuild [енфорцекодестилеинбуилд](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) значение `true` .
 
-1. В *editorconfig* -файле [Настройте](configuration-options.md) каждое правило стиля кода "IDE", которое вы хотите запускать при сборке как предупреждение или ошибку. Например:
+1. В *editorconfig* -файле [Настройте](configuration-options.md) каждое правило стиля кода "IDE", которое вы хотите запускать при сборке как предупреждение или ошибку. Пример:
 
    ```ini
    [*.{cs,vb}]
@@ -127,7 +127,7 @@ ms.locfileid: "99216477"
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   Кроме того, можно настроить всю категорию как предупреждение или ошибку, по умолчанию, а затем выборочно отключить правила в этой категории, которые не нужно выполнять при сборке. Например:
+   Кроме того, можно настроить всю категорию как предупреждение или ошибку, по умолчанию, а затем выборочно отключить правила в этой категории, которые не нужно выполнять при сборке. Пример:
 
    ```ini
    [*.{cs,vb}]
@@ -144,21 +144,19 @@ ms.locfileid: "99216477"
 
 ## <a name="suppress-a-warning"></a>Подавлять предупреждение
 
-Чтобы отключить нарушение правил, задайте для этого идентификатора правила степень серьезности `none` в файле EditorConfig. Например:
+Одним из способов отключения нарушения правил является установка параметра серьезности для этого идентификатора правила `none` в файл EditorConfig. Пример:
 
 ```ini
 dotnet_diagnostic.CA1822.severity = none
 ```
 
-Visual Studio предоставляет дополнительные способы отключения предупреждений из правил анализа кода. Дополнительные сведения см. в разделе [подавлять нарушения](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-Дополнительные сведения о серьезности правил см. в разделе [Настройка серьезности правила](configuration-options.md#severity-level).
+Дополнительные сведения и другие способы отключения предупреждений см. [в разделе Отключение предупреждений анализа кода](suppress-warnings.md).
 
 ## <a name="third-party-analyzers"></a>Сторонние анализаторы
 
 Помимо официальных анализаторов .NET, можно также установить сторонние анализаторы, такие как [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Рослинатор](https://www.nuget.org/packages/Roslynator.Analyzers/), [xUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)и [анализатор Sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по правилам анализа качества кода](quality-rules/index.md)
 - [Справочник по правилам анализа стиля кода](style-rules/index.md)

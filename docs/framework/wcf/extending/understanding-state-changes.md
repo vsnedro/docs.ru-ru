@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: основные сведения об изменениях состояния'
 title: Основные сведения об изменении состояния
 ms.date: 03/30/2017
 ms.assetid: a79ed2aa-e49a-47a8-845a-c9f436ec9987
-ms.openlocfilehash: babc62206fc700fe68c2220c4f2cd717cd758d56
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e537a7421ffa8ab924e4e9e4ab841343245534b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644012"
 ---
 # <a name="understanding-state-changes"></a>Основные сведения об изменении состояния
 
@@ -110,7 +111,7 @@ ms.locfileid: "96294054"
  ![Схема потока данных ICommunicationObject. Close состояния изменений.](./media/understanding-state-changes/ico-close-process-override-onclose.gif)  
 Переопределите метод OnClose, чтобы реализовать пользовательскую логику закрытия, например, закрыть внутренний коммуникационный объект. Для мягкой логики закрытия, которая может выполнять блокировку на длительное время (например, для ожидания ответа другой стороны), следует реализовать метод OnClose(), поскольку он использует параметр времени ожидания и не вызывается как часть Abort().  
   
- Прерывание  
+ Прервать  
   
  Предусловие: нет.  
 Постусловие: состояние Closed. Может создаваться исключение.  
@@ -142,16 +143,16 @@ ms.locfileid: "96294054"
   
  Вызываемые исключения зависят от состояния. В следующей таблице показаны различные состояния и соответствующие типы исключений, которые метод ThrowIfXxx вызывает для них.  
   
-|Состояние|Вызван метод Abort?|Исключение|  
+|Область|Вызван метод Abort?|Исключение|  
 |-----------|----------------------------|---------------|  
-|Создание|Н/Д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
-|Открытие|Н/Д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
-|Opened (Открыто)|Н/Д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Создание|н/д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Открытие|н/д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
+|Opened (Открыто)|н/д|<xref:System.InvalidOperationException?displayProperty=nameWithType>|  
 |Закрытие|Да|<xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=nameWithType>|  
 |Закрытие|Нет|<xref:System.ObjectDisposedException?displayProperty=nameWithType>|  
 |Закрытое|Да|Исключение <xref:System.ServiceModel.CommunicationObjectAbortedException?displayProperty=nameWithType>, если объект был закрыт предыдущим и явным вызовом метода Abort. При вызове метода Close для объекта выдается исключение <xref:System.ObjectDisposedException?displayProperty=nameWithType>.|  
 |Закрытое|Нет|<xref:System.ObjectDisposedException?displayProperty=nameWithType>|  
-|Сбой|Н/Д|<xref:System.ServiceModel.CommunicationObjectFaultedException?displayProperty=nameWithType>|  
+|Сбой|н/д|<xref:System.ServiceModel.CommunicationObjectFaultedException?displayProperty=nameWithType>|  
   
 ### <a name="timeouts"></a>Время ожидания  
 

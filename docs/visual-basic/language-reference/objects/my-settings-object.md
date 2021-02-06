@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: объект My. Settings'
 title: Объект My.Settings
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Settings object
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
-ms.openlocfilehash: f3348e9eea5bdd7f4fd911150877c9aefdd66bcc
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 92323c5379d0c5a4dbf96cfdbe0becccc2bad7cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640606"
 ---
 # <a name="mysettings-object"></a>Объект My.Settings
 
@@ -26,7 +27,7 @@ ms.locfileid: "90867301"
 
  Свойства объекта `My.Settings` обеспечивают доступ к параметрам приложения. Чтобы добавить или удалить параметры, используйте **Конструктор параметров**.  
   
- Каждый параметр имеет **имя**, **Тип**, **область**и **значение**, и эти параметры определяют, как свойство для доступа к каждому параметру отображается в `My.Settings` объекте.  
+ Каждый параметр имеет **имя**, **Тип**, **область** и **значение**, и эти параметры определяют, как свойство для доступа к каждому параметру отображается в `My.Settings` объекте.  
   
 - **Имя** определяет имя свойства.  
   

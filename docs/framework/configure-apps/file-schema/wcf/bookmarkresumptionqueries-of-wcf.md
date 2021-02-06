@@ -1,15 +1,16 @@
 ---
-title: <bookmarkResumptionQueries>WCF
+description: 'Дополнительные сведения о: <bookmarkResumptionQueries> из WCF'
+title: <bookmarkResumptionQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3
-ms.openlocfilehash: 94ff9f44f295b45c03e1bd8f52a85d6b7b0c6e3b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: dfe631865549915760255b1df22ee970b806e368
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639371"
 ---
-# <a name="bookmarkresumptionqueries-of-wcf"></a>\<bookmarkResumptionQueries>WCF
+# <a name="bookmarkresumptionqueries-of-wcf"></a>\<bookmarkResumptionQueries> WCF
   
 Представляет коллекцию запросов, используемых для отслеживания возобновления чтения с закладок в экземпляре рабочего процесса. Этот запрос необходим, чтобы участник отслеживания мог подписываться на записи о возобновлении чтения с закладок.  
   

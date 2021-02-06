@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как настроить подтверждение подписи.
 title: Практическое руководство. Настройка подтверждения сигнатуры
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - signature confirmation
 - WCF, security
 ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
-ms.openlocfilehash: 9423922753efee7aac32e430f97307c715e43464
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 158ec2a5f74038f5c1ca1af847f57457a8881974
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643193"
 ---
 # <a name="how-to-set-up-a-signature-confirmation"></a>Практическое руководство. Настройка подтверждения сигнатуры
 
@@ -25,7 +26,7 @@ ms.locfileid: "84586927"
 
 1. Создайте экземпляр класса <xref:System.ServiceModel.Channels.BindingElementCollection>.
 
-2. Создайте экземпляр <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> класса.
+2. Создайте экземпляр  <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> класса.
 
 3. Измените <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement.RequireSignatureConfirmation%2A> на `true`.
 
@@ -68,7 +69,7 @@ ms.locfileid: "84586927"
 [!code-csharp[c_SignatureConfirmation#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_signatureconfirmation/cs/source.cs#1)]
 [!code-vb[c_SignatureConfirmation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_signatureconfirmation/vb/source.vb#1)]
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <behaviorExtensions>'
 title: <behaviorExtensions>
 ms.date: 03/30/2017
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
-ms.openlocfilehash: 27bf9e380df1586b42cbe96a628a794364fae743
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0bd641f8e26d309c592c07bcc19ff02897fe71cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204974"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639527"
 ---
 # \<behaviorExtensions>
 
@@ -53,7 +54,7 @@ ms.locfileid: "91204974"
   
  Дополнительные сведения см. [в разделе как среда выполнения находит сборки](../../../deployment/how-the-runtime-locates-assemblies.md) и <xref:System.AppDomain.TypeResolve> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>
 - [Настройка и расширение среды выполнения с помощью поведений](../../../wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о operator: + = (Visual Basic)'
 title: Оператор +=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - += operator [Visual Basic], appending strings
 - compound assignment statements [Visual Basic]
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
-ms.openlocfilehash: a3a37798a3ddb480ac5322c4b2d3e9396e739aa6
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e5a6b8fcc75e44c00ee18fec9cd57e68b1218de7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873481"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640476"
 ---
 # <a name="-operator-visual-basic"></a>Оператор += (Visual Basic)
 

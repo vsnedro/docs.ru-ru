@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <sectionGroup> Element для <configSections>'
 title: Элемент <sectionGroup> для <configSections>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - sectionGroup Element
 - <sectionGroup> Element
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
-ms.openlocfilehash: eb221027470fe6e485f8fcc4b939b71e4f219712
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 0d822b98acbc041b9d6e146e9cd15848a73d2f88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639891"
 ---
 # <a name="sectiongroup-element-for-configsections"></a>Элемент \<sectionGroup> для \<configSections>
 
@@ -30,7 +31,7 @@ ms.locfileid: "77215261"
 </sectionGroup>
 ```
 
-## <a name="attribute"></a>Атрибут
+## <a name="attribute"></a>attribute
 
 |           | Описание |
 | --------- | ----------- |
@@ -40,7 +41,7 @@ ms.locfileid: "77215261"
 
 |     | Описание |
 | --- | ----------- |
-| [**\<configSections>** Дерев](configsections-element-for-configuration.md) | Содержит раздел конфигурации и объявления пространств имен. |
+| [**\<configSections>** Элемент](configsections-element-for-configuration.md) | Содержит раздел конфигурации и объявления пространств имен. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
@@ -48,7 +49,7 @@ ms.locfileid: "77215261"
 | --- | ----------- |
 | [**\<section>**](section-element.md) | Содержит объявление раздела конфигурации. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Объявление группы разделов создает тег контейнера для разделов конфигурации и гарантирует отсутствие конфликтов имен с разделами конфигурации, определенными другими пользователями. Элементы можно вкладывать **\<sectionGroup>** друг в друга.
 
@@ -74,8 +75,8 @@ ms.locfileid: "77215261"
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
+Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine.config*) и *Web.config* файлах, которые не находятся на уровне каталога приложений.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

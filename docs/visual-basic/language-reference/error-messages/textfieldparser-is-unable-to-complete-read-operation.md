@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о: TextFieldParser не может завершить операцию чтения, так как был превышен максимальный размер буфера'
 title: TextFieldParser не смог завершить операцию чтения, так как превышен максимальный размер буфера
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_BufferExceededMaxSize
 ms.assetid: 36565e82-8458-4a08-86af-d9a7a2c32937
-ms.openlocfilehash: 51a029366bfb467bb2a4e2bc70f942161a1480e3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 8401739271c8f20cae54d9ac46e4387fe2240b89
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641340"
 ---
 # <a name="textfieldparser-is-unable-to-complete-the-read-operation-because-maximum-buffer-size-has-been-exceeded"></a>TextFieldParser не смог завершить операцию чтения, так как превышен максимальный размер буфера
 

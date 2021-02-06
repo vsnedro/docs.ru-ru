@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: My. Resources'
 title: Объект My.Resources
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.Resources object
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
-ms.openlocfilehash: 3d12524706f680434d5b6d8da39c89042bea3281
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ecd8e79aacea85080dc341ae36b362a595893034
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640632"
 ---
 # <a name="myresources-object"></a>Объект My.Resources
 

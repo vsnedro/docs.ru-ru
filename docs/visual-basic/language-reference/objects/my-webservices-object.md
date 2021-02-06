@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объект My. WebService'
 title: Объект My.WebServices
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - My.WebServices object
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.openlocfilehash: 0b63b44c2cd9d55094fb83fed6c04e4de528a25c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e8d7ef8b349fef6d69b92d9df4a23222bd3c912e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99640541"
 ---
 # <a name="mywebservices-object"></a>Объект My.WebServices
 
@@ -31,7 +32,7 @@ ms.locfileid: "90867199"
  Каждое свойство `My.WebServices` объекта предоставляет доступ к экземпляру веб-службы, на которую ссылается текущий проект. Имя свойства совпадает с именем веб-службы, к которой обращается свойство, а тип свойства совпадает с типом веб-службы.  
   
 > [!NOTE]
-> При конфликте имен имя свойства для доступа к веб-службе — *RootNamespace*_*Namespace* \_ *ServiceName*. Например, рассмотрим две веб-службы с именем `Service1` . Если одна из этих служб находится в корневом пространстве имен `WindowsApplication1` и в пространстве имен `Namespace1` , доступ к этой службе будет осуществляться с помощью `My.WebServices.WindowsApplication1_Namespace1_Service1` .  
+> При конфликте имен имя свойства для доступа к веб-службе — *RootNamespace* _ *Namespace* \_ *ServiceName*. Например, рассмотрим две веб-службы с именем `Service1` . Если одна из этих служб находится в корневом пространстве имен `WindowsApplication1` и в пространстве имен `Namespace1` , доступ к этой службе будет осуществляться с помощью `My.WebServices.WindowsApplication1_Namespace1_Service1` .  
   
  При первом доступе к одному из `My.WebServices` свойств объекта он создает новый экземпляр веб-службы и сохраняет его. Последующие обращения к этому свойству возвращают этот экземпляр веб-службы.  
   

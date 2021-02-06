@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: поддержка кэширования для служб WCF Web HTTP'
 title: Поддержка кэширования для веб-служб HTTP WCF
 ms.date: 03/30/2017
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
-ms.openlocfilehash: 6ce3ceccde01879876960e0288cb600a3a20c204
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a1f7351566c06010ed70093a1cab3697ae0e9356
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643492"
 ---
 # <a name="caching-support-for-wcf-web-http-services"></a>Поддержка кэширования для веб-служб HTTP WCF
 
@@ -17,7 +18,7 @@ ms.locfileid: "96279341"
 
   Чтобы включить кэширование веб-служб HTTP, необходимо сначала включить совместимость с ASP.NET, применив <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> к параметру службы значение <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> или <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required> .  
   
- В .NET Framework 4 появился новый атрибут <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> с именем, который позволяет указать имя профиля кэша. Этот атрибут применяется к операции службы. В следующем примере атрибут <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> применяется к службе для включения совместимости с ASP.NET, а операция `GetCustomer` настраивается для кэширования. Атрибут <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> задает профиль кэширования, содержащий используемые параметры кэширования.  
+ В платформа .NET Framework 4 появился новый атрибут <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> с именем, который позволяет указать имя профиля кэша. Этот атрибут применяется к операции службы. В следующем примере атрибут <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> применяется к службе для включения совместимости с ASP.NET, а операция `GetCustomer` настраивается для кэширования. Атрибут <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> задает профиль кэширования, содержащий используемые параметры кэширования.  
   
 ```csharp
 [ServiceContract]
@@ -166,6 +167,6 @@ public Customer GetCustomer(string id)
 }
 ```  
   
-## <a name="security-considerations"></a>Вопросы безопасности  
+## <a name="security-considerations"></a>Соображения безопасности  
 
  Не должны кэшироваться ответы для запросов, требующих авторизации, так как авторизация не выполняется при получении ответа из кэша.  Кэширование таких ответов серьезно снижает безопасность.  Обычно запросы, требующие авторизации, содержат данные конкретного пользователя, в силу чего кэширование на стороне сервера просто не имеет смысла.  В таких ситуациях практичнее использовать кэширование на стороне клиента или вовсе не использовать кэширование.
