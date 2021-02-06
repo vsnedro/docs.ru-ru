@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetModuleInfo'
 title: Метод ICorProfilerInfo::GetModuleInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
 topic_type:
 - apiref
-ms.openlocfilehash: 863fa1bf50830bb46e5c2939c99fe1e15897ac3d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 003f40e6637490be23e8bf87a6bac8ab76bc50e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647199"
 ---
 # <a name="icorprofilerinfogetmoduleinfo-method"></a>Метод ICorProfilerInfo::GetModuleInfo
 
@@ -59,7 +60,7 @@ HRESULT GetModuleInfo(
  `pAssemblyId`  
  [out] Указатель на идентификатор родительской сборки модуля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для динамических модулей параметр `szName` является пустой строкой, а базовый адрес равен 0 (нулю).  
   
@@ -77,9 +78,9 @@ HRESULT GetModuleInfo(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

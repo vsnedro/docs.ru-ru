@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerInfo2'
 title: Интерфейс ICorProfilerInfo2
 ms.date: 03/30/2017
 api_name:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 91bd49b6-4d12-494f-a8f1-2f251e8c65e3
 topic_type:
 - apiref
-ms.openlocfilehash: 6c146f3deed31601411bef39ab12b52dfec8cd39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07828c6f55b72068e9021991600ed17eb6ffe6ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647015"
 ---
 # <a name="icorprofilerinfo2-interface"></a>Интерфейс ICorProfilerInfo2
 
-Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. `ICorProfilerInfo2`Интерфейс является расширением интерфейса [ICorProfilerInfo](icorprofilerinfo-interface.md) . То есть он предоставляет новые методы, поддерживаемые в .NET Framework версии 2,0 и более поздних версиях.  
+Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. `ICorProfilerInfo2`Интерфейс является расширением интерфейса [ICorProfilerInfo](icorprofilerinfo-interface.md) . То есть он предоставляет новые методы, поддерживаемые в платформа .NET Framework версии 2,0 и более поздних версиях.  
   
 ## <a name="methods"></a>Методы  
   
@@ -51,7 +52,7 @@ ms.locfileid: "95681588"
 |[Метод GetThreadStaticAddress](icorprofilerinfo2-getthreadstaticaddress-method.md)|Возвращает адрес указанного статического поля потока, который находится в области заданного потока.|  
 |[Метод SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md)|Задает реализованные профилировщиком функции, которые должны вызываться для обработчиков "Ввод", "Leave" и "таилкалл" управляемых функций.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Профилировщик вызывает метод в `ICorProfilerInfo2` интерфейсе, чтобы взаимодействовать со средой CLR для управления мониторингом событий и сведениями о запросах.  
   
@@ -67,9 +68,9 @@ ms.locfileid: "95681588"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

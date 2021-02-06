@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo2:: Жетсреадаппдомаин'
 title: Метод ICorProfilerInfo2::GetThreadAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4a11b264-8540-4732-aa35-bc2d95b95b8e
 topic_type:
 - apiref
-ms.openlocfilehash: 010b2dff27ac17906e16fe58729facc7a217b43f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b480388254a6ee84db9f6c3e8d44b7358246502a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647067"
 ---
 # <a name="icorprofilerinfo2getthreadappdomain-method"></a>Метод ICorProfilerInfo2::GetThreadAppDomain
 
@@ -50,9 +51,9 @@ HRESULT GetThreadAppDomain(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

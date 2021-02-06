@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: Жетмодулеметадата'
 title: Метод ICorProfilerInfo::GetModuleMetaData
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
 topic_type:
 - apiref
-ms.openlocfilehash: 74df0fb412e7fb3d9f779391ec84f07a0379a2cc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff0fb0563b041fcb3cf63438874724c8236d6081
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647184"
 ---
 # <a name="icorprofilerinfogetmodulemetadata-method"></a>Метод ICorProfilerInfo::GetModuleMetaData
 
@@ -50,7 +51,7 @@ HRESULT GetModuleMetaData(
  `ppOut`  
  заполняет Указатель на адрес экземпляра интерфейса метаданных.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Можно запросить открытие метаданных в режиме чтения/записи, но это приведет к более медленному выполнению метаданных программы, так как изменения метаданных не могут быть оптимизированы по мере их постановки в компилятор.  
   
@@ -64,8 +65,8 @@ HRESULT GetModuleMetaData(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

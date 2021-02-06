@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetILToNativeMapping'
 title: Метод ICorProfilerInfo::GetILToNativeMapping
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6a5431ef-22fb-4e53-bac5-703986297eb1
 topic_type:
 - apiref
-ms.openlocfilehash: 1eb9b3af4c0e77fd1548de194d064eb85b86cdce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce3473365eb98beca4d2e9116251200d7539e4c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647392"
 ---
 # <a name="icorprofilerinfogetiltonativemapping-method"></a>Метод ICorProfilerInfo::GetILToNativeMapping
 
@@ -51,7 +52,7 @@ HRESULT GetILToNativeMapping(
  `map`  
  [out] Массив структур `COR_DEBUG_IL_TO_NATIVE_MAP`, каждая из которых задает смещения. После возврата метода `GetILToNativeMapping` параметр `map` будет содержать все или некоторые из структур `COR_DEBUG_IL_TO_NATIVE_MAP`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод `GetILToNativeMapping` возвращает массив структур `COR_DEBUG_IL_TO_NATIVE_MAP`. Чтобы убедиться, что определенные диапазоны машинных инструкций соответствуют специальным областям кода (например, прологу), в качестве поля в массиве можно `ilOffset` задать значение перечисления [кордебугилтонативемаппингтипес](../debugging/cordebugiltonativemappingtypes-enumeration.md) .  
   
@@ -67,9 +68,9 @@ HRESULT GetILToNativeMapping(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Метод GetILToNativeMapping2](icorprofilerinfo4-getiltonativemapping2-method.md)

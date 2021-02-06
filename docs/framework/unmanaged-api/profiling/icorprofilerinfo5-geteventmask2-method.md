@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo5:: GetEventMask2'
 title: Метод ICorProfilerInfo5::GetEventMask2
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: f854b68f-009c-4ffb-89cd-ca874d1c0fb7
 topic_type:
 - apiref
-ms.openlocfilehash: 81509db178b0ab1a524dcc4b00f39264e87a220d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6652ffe1b8fd0d99ce5493c8ba27a971363c423
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646664"
 ---
 # <a name="icorprofilerinfo5geteventmask2-method"></a>Метод ICorProfilerInfo5::GetEventMask2
 
@@ -42,7 +43,7 @@ HRESULT GetEventMask2(
  `pdwEventsHigh`  
  [из] Указатель на 4-байтовое значение, определяющее категории событий.  Каждый бит управляет отдельной возможностью, поведением или типом события. Биты описаны в перечислении [COR_PRF_HIGH_MONITOR](cor-prf-high-monitor-enumeration.md) .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод `GetEventMask2` используется для определения обратных вызовов, на которые подписался профилировщик. Обычно выполняется логическое или для `pdwEventsLow` значений и, а также `pdwEventsHigh` все новые биты, которые необходимо задать, а затем вызывается метод [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) .  
   
@@ -56,9 +57,9 @@ HRESULT GetEventMask2(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo5](icorprofilerinfo5-interface.md)
 - [Метод SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)

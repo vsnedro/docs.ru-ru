@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetFunctionInfo'
 title: Метод ICorProfilerInfo::GetFunctionInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c42b5891-019d-46b3-b551-4606295b75b8
 topic_type:
 - apiref
-ms.openlocfilehash: 6aaa02d72dd10fe72d773246d55216143786dabb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e6ad1112f0e6938fc6de549d3a1d2f0901150025
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647557"
 ---
 # <a name="icorprofilerinfogetfunctioninfo-method"></a>Метод ICorProfilerInfo::GetFunctionInfo
 
@@ -50,7 +51,7 @@ HRESULT GetFunctionInfo(
  `pToken`  
  [выходной] Указатель на токен метаданных функции.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы получить интерфейс метаданных для заданного модуля, код профилировщика может вызвать метод [ICorProfilerInfo:: жетмодулеметадата](icorprofilerinfo-getmodulemetadata-method.md) . Токен метаданных, возвращенный в расположение, на которое ссылается `pToken`, можно впоследствии использовать для доступа к метаданным функции.  
   
@@ -64,8 +65,8 @@ HRESULT GetFunctionInfo(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

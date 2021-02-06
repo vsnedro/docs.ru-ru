@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo8:: Жетдинамикфунктионинфо'
 title: 'ICorProfilerInfo8:: Жетдинамикфунктионинфо'
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: eaf33f3b0de7a18e400cd16d29c046784e2e190f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 48c8dbe20ccafb3fb23e9e289f728d5e3370613a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495324"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646586"
 ---
 # <a name="icorprofilerinfo8getdynamicfunctioninfo-method"></a>Метод ICorProfilerInfo8:: Жетдинамикфунктионинфо
 
@@ -64,7 +65,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
   \[out] массив, `WCHAR` представляющий собой имя функции, если она существует.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Некоторые методы, такие как заглушки IL или LCG, не имеют связанных метаданных, которые можно извлечь с помощью интерфейсов API [IMetaDataImport](../metadata/imetadataimport-interface.md) и [IMetaDataImport2](../metadata/imetadataimport2-interface.md) . Такие методы могут быть обнаружены профилировщиками с помощью указателей инструкций или путем прослушивания [ICorProfilerCallback8::D инамикмесоджиткомпилатионстартед](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
 
@@ -78,7 +79,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## <a name="see-also"></a>См. также
 

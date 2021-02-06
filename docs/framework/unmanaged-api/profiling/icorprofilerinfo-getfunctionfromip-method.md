@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetFunctionFromIP'
 title: Метод ICorProfilerInfo::GetFunctionFromIP
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f069802a-198f-46dd-9f09-4f77adffc9ba
 topic_type:
 - apiref
-ms.openlocfilehash: 4a7e21ae60253c741b57674212e0ecabdd844d2d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1acea6943e74e65e4359c7da590d3888736dbd6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647600"
 ---
 # <a name="icorprofilerinfogetfunctionfromip-method"></a>Метод ICorProfilerInfo::GetFunctionFromIP
 
@@ -52,8 +53,8 @@ HRESULT GetFunctionFromIP(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: Жетфунктионфромтокен'
 title: Метод ICorProfilerInfo::GetFunctionFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 0eed759f-cce8-405d-88dc-9ee293a38928
 topic_type:
 - apiref
-ms.openlocfilehash: 9c7f01d2e462ad1cb0532be6f369c3118a4deb6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58dea413539d6e3a625f515aa7e8d5123152c90a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722496"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647457"
 ---
 # <a name="icorprofilerinfogetfunctionfromtoken-method"></a>Метод ICorProfilerInfo::GetFunctionFromToken
 
-Возвращает идентификатор функции. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .  
+Возвращает идентификатор функции. Этот метод является устаревшим в платформа .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,8 +48,8 @@ HRESULT GetFunctionFromToken(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

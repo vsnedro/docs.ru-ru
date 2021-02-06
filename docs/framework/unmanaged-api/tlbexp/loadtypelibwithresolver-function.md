@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции LoadTypeLibWithResolver
 title: Функция LoadTypeLibWithResolver
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
 topic_type:
 - apiref
-ms.openlocfilehash: 6497dd3e720874e47de9dfda74e483a642cbb181
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6747199364a549d922ad73bfac3e93b329d1172a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646222"
 ---
 # <a name="loadtypelibwithresolver-function"></a>Функция LoadTypeLibWithResolver
 
@@ -70,7 +71,7 @@ HRESULT LoadTypeLibWithResolver(
 |`TYPE_E_INVALIDSTATE`|Не удалось открыть библиотеку типов.|  
 |`TYPE_E_CANTLOADLIBRARY`|Не удалось загрузить библиотеку типов или библиотеку DLL.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  [Tlbexp.exe (программа экспорта библиотек типов)](../../tools/tlbexp-exe-type-library-exporter.md) вызывает `LoadTypeLibWithResolver` функцию во время преобразования сборки в библиотеку типов.  
   
@@ -94,9 +95,9 @@ HRESULT LoadTypeLibWithResolver(
   
  **Библиотека:** Тлбреф. lib  
   
- **Версия .NET Framework:** 3,5, 3,0, 2,0  
+ **Версия платформа .NET Framework:** 3,5, 3,0, 2,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Вспомогательные функции Tlbexp](index.md)
 - [Функция Лоадтипелибекс](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе Ресолветипелиб
 title: Метод ResolveTypeLib
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
 topic_type:
 - apiref
-ms.openlocfilehash: 84eea78b9c2e73e24238a5ecbc9442f3d63dbd4e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ca7f94f630479d30bb9129497b38bcf04e759e5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646287"
 ---
 # <a name="resolvetypelib-method"></a>Метод ResolveTypeLib
 
@@ -60,7 +61,7 @@ HRESULT ResolveTypeLib(
  `pbstrResolvedTlbName`  
  заполняет Указатель на [BSTR](/previous-versions/windows/desktop/automat/bstr) , содержащий полный путь к библиотеке типов с именем в `bstrSimpleName` параметре.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ResolveTypeLib`Метод вызывается [функцией LoadTypeLibWithResolver](loadtypelibwithresolver-function.md) во время обработки [Tlbexp.exe (средство экспорта библиотеки типов)](../../tools/tlbexp-exe-type-library-exporter.md) .  
   
@@ -74,9 +75,9 @@ HRESULT ResolveTypeLib(
   
  **Библиотека:** Тлбреф. lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Вспомогательные функции Tlbexp](index.md)
 - [лоадтипелибекс](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Настройка среды профилирования'
 title: Установка профилирующей среды
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -10,17 +11,17 @@ helpviewer_keywords:
 - COR_ENABLE_PROFILING environment variable
 - profiling API [.NET Framework], enabling
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-ms.openlocfilehash: 9c712c5efe8d6d79454b70d0bf4f3ca2fa83b637
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 88bfb50b02874bf79f03414213329c5dcc79a9fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646352"
 ---
 # <a name="setting-up-a-profiling-environment"></a>Установка профилирующей среды
 
 > [!NOTE]
-> В .NET Framework 4 были внесены существенные изменения в профилирование.  
+> В платформа .NET Framework 4 были внесены существенные изменения в профилирование.  
   
  При запуске управляемого процесса (приложения или службы) он загружает среду CLR. При инициализации среды CLR она оценивает следующие две переменные среды, чтобы решить, следует ли подключить процесс к профилировщику.  
   
@@ -36,10 +37,10 @@ ms.locfileid: "95722483"
  Чтобы выполнить профилирование приложения среды CLR, необходимо задать переменные среды COR_ENABLE_PROFILING и COR_PROFILER перед запуском приложения. Кроме того, необходимо убедиться, что DLL профилировщика зарегистрирована.  
   
 > [!NOTE]
-> Начиная с .NET Framework 4, профилировщики не обязательно должны быть зарегистрированы.  
+> Начиная с платформа .NET Framework 4, профилировщики не обязательно должны быть зарегистрированы.  
   
 > [!NOTE]
-> Для использования профилировщиков .NET Framework версий 2,0, 3,0 и 3,5 в .NET Framework 4 и более поздних версиях необходимо задать переменную среды COMPLUS_ProfAPI_ProfilerCompatibilitySetting.  
+> Для использования профилировщиков платформа .NET Framework версий 2,0, 3,0 и 3,5 в платформа .NET Framework 4 и более поздних версиях необходимо задать переменную среды COMPLUS_ProfAPI_ProfilerCompatibilitySetting.  
   
 ## <a name="environment-variable-scope"></a>Область действия переменных среды.  
 
@@ -99,6 +100,6 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  Этот метод также приводит к профилированию каждого процесса CLR. Профилировщик должен добавить логику в свой обратный вызов [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) , чтобы определить, является ли текущий процесс интересным. Если это не так, профилировщик может завершить обратный вызов с ошибкой без выполнения инициализации.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о профилировании](profiling-overview.md)

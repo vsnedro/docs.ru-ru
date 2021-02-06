@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: профилирование глобальных статических функций'
 title: Глобальные статические функции профилирования
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,48 +7,48 @@ helpviewer_keywords:
 - profiling global static functions [.NET Framework]
 - unmanaged global static functions [.NET Framework], profiling
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
-ms.openlocfilehash: 1b0ad42e6b34e99212e112f6a594b0a36b6715e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 86e4b6bda73b0783f5f95e4e7dbc24f1ccccb130
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646378"
 ---
 # <a name="profiling-global-static-functions"></a>Глобальные статические функции профилирования
 
 В этом разделе описываются неуправляемые функции API, используемые API профилирования.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
   
-## <a name="net-framework-version-1-profiling-functions"></a>.NET Framework функции профилирования версии 1  
+## <a name="net-framework-version-1-profiling-functions"></a>Платформа .NET Framework функции профилирования версии 1  
 
  [Функция FunctionEnter](functionenter-function.md)  
- Уведомляет профилировщик о передаче управления в функцию. Не рекомендуется использовать в .NET Framework 2,0.  
+ Уведомляет профилировщик о передаче управления в функцию. Не рекомендуется использовать в платформа .NET Framework 2,0.  
   
  [Функция FunctionLeave](functionleave-function.md)  
- Уведомляет профилировщик о том, что функция собирается вернуть вызывающему объекту. Не рекомендуется использовать в .NET Framework 2,0.  
+ Уведомляет профилировщик о том, что функция собирается вернуть вызывающему объекту. Не рекомендуется использовать в платформа .NET Framework 2,0.  
   
  [Функция FunctionTailcall](functiontailcall-function.md)  
- Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail. Не рекомендуется использовать в .NET Framework 2,0.  
+ Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail. Не рекомендуется использовать в платформа .NET Framework 2,0.  
   
-## <a name="net-framework-version-2-profiling-functions"></a>Функции профилирования .NET Framework версии 2  
+## <a name="net-framework-version-2-profiling-functions"></a>Функции профилирования платформа .NET Framework версии 2  
 
  [Функция FunctionIDMapper](functionidmapper-function.md)  
  Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в обратных вызовах [FunctionEnter2](functionenter2-function.md), [FunctionLeave2](functionleave2-function.md)и [FunctionTailcall2](functiontailcall2-function.md) для этой функции. Также позволяет профилировщику указать, требуется ли получать обратные вызовы для этой функции.  
   
  [Функция FunctionEnter2](functionenter2-function.md)  
- Уведомляет профилировщик о передаче управления в функцию и предоставляет сведения о кадре стека и аргументах функции. Не рекомендуется использовать в .NET Framework 4.  
+ Уведомляет профилировщик о передаче управления в функцию и предоставляет сведения о кадре стека и аргументах функции. Не рекомендуется использовать в платформа .NET Framework 4.  
   
  [Функция FunctionLeave2](functionleave2-function.md)  
- Уведомляет профилировщик о том, что функция собирается вернуться к вызывающему объекту, и предоставляет сведения о кадре стека и возвращаемом значении функции. Не рекомендуется использовать в .NET Framework 4.  
+ Уведомляет профилировщик о том, что функция собирается вернуться к вызывающему объекту, и предоставляет сведения о кадре стека и возвращаемом значении функции. Не рекомендуется использовать в платформа .NET Framework 4.  
   
  [Функция FunctionTailcall2](functiontailcall2-function.md)  
- Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail и предоставляет сведения о кадре стека. Не рекомендуется использовать в .NET Framework 4.  
+ Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail и предоставляет сведения о кадре стека. Не рекомендуется использовать в платформа .NET Framework 4.  
   
  [Функция StackSnapshotCallback](stacksnapshotcallback-function.md)  
  Предоставляет профилировщику сведения о каждом управляемом кадре и каждом запуске неуправляемых кадров в стеке во время прохода стека, который инициируется методом [ICorProfilerInfo2::D остаккснапшот](icorprofilerinfo2-dostacksnapshot-method.md) .  
   
-## <a name="net-framework-version-4-profiling-functions"></a>Функции профилирования .NET Framework версии 4  
+## <a name="net-framework-version-4-profiling-functions"></a>Функции профилирования платформа .NET Framework версии 4  
 
  [Функция FunctionIDMapper2](functionidmapper2-function.md)  
  Уведомляет профилировщик о том, что заданный идентификатор функции может быть повторно сопоставлен с альтернативным ИДЕНТИФИКАТОРом для использования в ответных вызовах [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md), [FunctionTailcall3](functiontailcall3-function.md)или[FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)и [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) для этой функции. Также позволяет профилировщику указывать, хотят ли они получать обратные вызовы для этой функции.  
@@ -72,7 +73,7 @@ ms.locfileid: "95723081"
  [Функция FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md)  
  Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail, и предоставляет маркер, который можно передать в [ICorProfilerInfo3:: GetFunctionTailcall3Info](icorprofilerinfo3-getfunctiontailcall3info-method.md) для получения кадра стека.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Общие сведения о профилировании](profiling-overview.md)  
   
