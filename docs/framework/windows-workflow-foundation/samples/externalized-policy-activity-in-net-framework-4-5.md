@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения о действиях с внешней политикой в платформа .NET Framework 4,5
 title: Реализованное действие политики в .NET Framework 4.5
 ms.date: 03/30/2017
 ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
-ms.openlocfilehash: 00b671f169696728610e8ee32f874b44fbff9e33
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 52dad208aacf2993acffa605b896c14c0a906d4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90556919"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631233"
 ---
 # <a name="externalized-policy-activity-in-net-framework-45"></a>Реализованное действие политики в .NET Framework 4.5
 
-В этом примере показано, как действие ExternalizedPolicy4 позволяет выполнять существующие объекты .NET Framework 3,5 Windows Workflow Foundation (WF 3,5) <xref:System.Workflow.Activities.Rules.RuleSet> в [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4,5) непосредственно с помощью обработчика правил, который поставляется в WF 3,5. Используя это действие, можно создавать и выполнять любой существующий набор правил <xref:System.Workflow.Activities.Rules.RuleSet> WF 3.5. Дополнительные сведения о обработчике правил WF 3,5, включенном в состав Windows Workflow Foundation, см. в статье [Введение в обработчик правил Windows Workflow Foundation](/previous-versions/dotnet/articles/aa480193(v=msdn.10)). Дополнительные сведения о миграции правил в [!INCLUDE[wf1](../../../../includes/wf1-md.md)] [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] см. в руководстве по [миграции](../migration-guidance.md).
+В этом примере показано, как действие ExternalizedPolicy4 позволяет выполнять существующие объекты платформа .NET Framework 3,5 Windows Workflow Foundation (WF 3,5) <xref:System.Workflow.Activities.Rules.RuleSet> в [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] Windows Workflow Foundation (WF 4,5) непосредственно с помощью обработчика правил, который поставляется в WF 3,5. Используя это действие, можно создавать и выполнять любой существующий набор правил <xref:System.Workflow.Activities.Rules.RuleSet> WF 3.5. Дополнительные сведения о обработчике правил WF 3,5, включенном в состав Windows Workflow Foundation, см. в статье [Введение в обработчик правил Windows Workflow Foundation](/previous-versions/dotnet/articles/aa480193(v=msdn.10)). Дополнительные сведения о миграции правил в [!INCLUDE[wf1](../../../../includes/wf1-md.md)] [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] см. в руководстве по [миграции](../migration-guidance.md).
 
 ## <a name="projects-in-this-sample"></a>Проекты в этом образце
 
@@ -56,7 +57,7 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 
 ## <a name="policy4-and-externalpolicy4"></a>Policy4 и ExternalPolicy4
 
-Действие политики позволяет создавать и выполнять .NET Framework 3,5 RuleSet в рабочем процессе WF 4,5. Набор правил <xref:System.Workflow.Activities.Rules.RuleSet> сериализуется в рамках определения действия Policy4 в языке XAML. Образец действия ExternalizedPolicy4 показывает, как использовать существующий внешний набор правил <xref:System.Workflow.Activities.Rules.RuleSet> (содержащийся в файле с расширением RULES).
+Действие политики позволяет создавать и выполнять платформа .NET Framework 3,5 RuleSet в рабочем процессе WF 4,5. Набор правил <xref:System.Workflow.Activities.Rules.RuleSet> сериализуется в рамках определения действия Policy4 в языке XAML. Образец действия ExternalizedPolicy4 показывает, как использовать существующий внешний набор правил <xref:System.Workflow.Activities.Rules.RuleSet> (содержащийся в файле с расширением RULES).
 
 ## <a name="use-this-sample"></a>Используйте этот пример
 
@@ -68,7 +69,7 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 
 1. С помощью Visual Studio откройте файл решения *Policy4sample. sln* .
 
-2. В **Обозреватель решений**щелкните правой кнопкой мыши проект **Императивекодеклиентсампле** и выберите **Назначить запускаемым проектом**.
+2. В **Обозреватель решений** щелкните правой кнопкой мыши проект **Императивекодеклиентсампле** и выберите **Назначить запускаемым проектом**.
 
 3. Чтобы запустить проект, нажмите клавиши **CTRL** + **F5**.
 
@@ -76,7 +77,7 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 
 1. С помощью Visual Studio откройте файл решения *Policy4sample. sln* .
 
-2. В **Обозреватель решений**щелкните правой кнопкой мыши проект **Десигнерклиентсампле** и выберите **Назначить запускаемым проектом**.
+2. В **Обозреватель решений** щелкните правой кнопкой мыши проект **Десигнерклиентсампле** и выберите **Назначить запускаемым проектом**.
 
 3. Нажмите клавиши **CTRL** + **SHIFT** + **B** , чтобы скомпилировать проект.
 
@@ -87,7 +88,7 @@ public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры.
 >
 > Этот образец находится в следующем каталоге:
 >
