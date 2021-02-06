@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugsymbolprovider:: Жетмержедассемблирекордс'
 title: Метод ICorDebugSymbolProvider::GetMergedAssemblyRecords
 ms.date: 03/30/2017
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
-ms.openlocfilehash: 10bbcf2e6a536eeb4ab8141c10c177a53faa1c95
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f12bb3a49d7b49f9f8916c9d04417340502d44ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659885"
 ---
 # <a name="icordebugsymbolprovidergetmergedassemblyrecords-method"></a>Метод ICorDebugSymbolProvider::GetMergedAssemblyRecords
 
@@ -34,7 +35,7 @@ HRESULT GetMergedAssemblyRecords(
  `pRecords`  
  Указатель на массив объектов [икордебугмержедассемблирекорд](icordebugmergedassemblyrecord-interface.md) .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -47,9 +48,9 @@ HRESULT GetMergedAssemblyRecords(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

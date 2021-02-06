@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе ICorDebugThread
 title: Интерфейс ICorDebugThread
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3930fd9b-2bc3-4b72-80a0-b6eeb94d60c6
 topic_type:
 - apiref
-ms.openlocfilehash: 5165ef081aad849c11747807d8cc76b2df0a6c74
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7e16fa2a82a004a5c85d60a278cdd14df6ab2300
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658832"
 ---
 # <a name="icordebugthread-interface"></a>Интерфейс ICorDebugThread
 
@@ -46,7 +47,7 @@ ms.locfileid: "95729321"
 |[Метод GetUserState](icordebugthread-getuserstate-method.md)|Возвращает побитовое сочетание значений Кордебугусерстате, описывающих текущее состояние этого объекта `ICorDebugThread` .|  
 |[Метод SetDebugState](icordebugthread-setdebugstate-method.md)|Задает побитовое сочетание `CorDebugThreadState` значений, описывающих состояние отладки этого объекта `ICorDebugThread` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -59,8 +60,8 @@ ms.locfileid: "95729321"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

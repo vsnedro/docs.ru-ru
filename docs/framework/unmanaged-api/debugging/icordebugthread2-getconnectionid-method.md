@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugThread2:: Жетконнектионид'
 title: Метод ICorDebugThread2::GetConnectionID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9c76b587-f941-4fa1-8b86-f3494fb10c8e
 topic_type:
 - apiref
-ms.openlocfilehash: 1507715e80761c871dfdb0b8d25dc708a2130678
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f8035e703d3638b11f4206d9c47e39fe487d71d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658741"
 ---
 # <a name="icordebugthread2getconnectionid-method"></a>Метод ICorDebugThread2::GetConnectionID
 
@@ -39,7 +40,7 @@ HRESULT GetConnectionID (
  `pdwConnectionId`  
  заполняет Значение типа `CONNID` , представляющее идентификатор соединения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetConnectionID`Метод возвращает ноль в `pdwConnectionId` параметре, если этот поток не является частью соединения.  
   
@@ -53,4 +54,4 @@ HRESULT GetConnectionID (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

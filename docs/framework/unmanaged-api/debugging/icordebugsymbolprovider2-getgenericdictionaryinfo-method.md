@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugSymbolProvider2:: Жетженерикдиктионаринфо'
 title: Метод ICorDebugSymbolProvider2::GetGenericDictionaryInfo
 ms.date: 03/30/2017
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-ms.openlocfilehash: a6c32b72c5924399aeb13d56ddf9242fe7990f35
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 3488cab9ee21ea027e16089f066369ab8c6c69d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659547"
 ---
 # <a name="icordebugsymbolprovider2getgenericdictionaryinfo-method"></a>Метод ICorDebugSymbolProvider2::GetGenericDictionaryInfo
 
@@ -24,7 +25,7 @@ HRESULT GetGenericDictionaryInfo(
 ## <a name="parameters"></a>Параметры
 
 `ppMemoryBuffer`\
-заполняет Указатель на адрес объекта [икордебугмеморибуффер](icordebugmemorybuffer-interface.md) , содержащего универсальную карту словаря. Дополнительные сведения см. в разделе «Примечания».
+заполняет Указатель на адрес объекта [икордебугмеморибуффер](icordebugmemorybuffer-interface.md) , содержащего универсальную карту словаря. Дополнительные сведения см. в разделе "Примечания".
 
 ## <a name="remarks"></a>Remarks
 
@@ -83,7 +84,7 @@ Heap Size = Stream.Length – (Directory Size + 4)
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
 
 ## <a name="see-also"></a>См. также
 

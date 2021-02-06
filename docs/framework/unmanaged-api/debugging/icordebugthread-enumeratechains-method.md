@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugThread:: EnumerateChains'
 title: Метод ICorDebugThread::EnumerateChains
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ec00bc21-117e-4acd-9301-2cfafd5be8d3
 topic_type:
 - apiref
-ms.openlocfilehash: 76b231f00651186518d3bccfafa5780f258c4f75
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b9184a1b298e1d29970c5e56ceca76715b0ed096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659300"
 ---
 # <a name="icordebugthreadenumeratechains-method"></a>Метод ICorDebugThread::EnumerateChains
 
@@ -39,7 +40,7 @@ HRESULT EnumerateChains (
  `ppChains`  
  заполняет Указатель на адрес `ICorDebugChainEnum` объекта, который допускает перечисление всех цепочек стека в этом потоке, начиная с активной (то есть самой последней) цепочки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Цепочка стека представляет физический стек вызовов для потока. В следующих случаях создается граница цепочки стеков:  
   
@@ -61,4 +62,4 @@ HRESULT EnumerateChains (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

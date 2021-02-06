@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugThread:: Жеткуррентексцептион'
 title: Метод ICorDebugThread::GetCurrentException
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 331ed465-a195-4359-8584-b82c6098b29b
 topic_type:
 - apiref
-ms.openlocfilehash: c21be7b062b7e2d4129bafabae004351442ab853
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb241995520f26ca0e35f2b9e3b3187c2a2906a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728060"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659170"
 ---
 # <a name="icordebugthreadgetcurrentexception-method"></a>Метод ICorDebugThread::GetCurrentException
 
@@ -39,7 +40,7 @@ HRESULT GetCurrentException (
  `ppExceptionObject`  
  заполняет Указатель на адрес `ICorDebugValue` объекта, представляющий исключение, которое в данный момент вызывается управляемым кодом.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Объект исключения будет существовать с момента возникновения исключения до конца `catch` блока. Вычисление функции, выполняемое методами ICorDebugEval, очистит объект исключения при установке и восстановит его по завершении.  
   
@@ -55,4 +56,4 @@ HRESULT GetCurrentException (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

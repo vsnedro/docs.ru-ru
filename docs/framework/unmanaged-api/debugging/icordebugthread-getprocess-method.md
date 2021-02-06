@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugThread:: WebMethod'
 title: Метод ICorDebugThread::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 163816e7-0739-4566-b3df-cd256be8b8a4
 topic_type:
 - apiref
-ms.openlocfilehash: d3697bd8a3f32c802ab2e335f89c84efaf3e4db0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dac5da30b343ebd17c1b1ebdd6d4cfa38b78f0bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658957"
 ---
 # <a name="icordebugthreadgetprocess-method"></a>Метод ICorDebugThread::GetProcess
 
@@ -47,4 +48,4 @@ HRESULT GetProcess (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

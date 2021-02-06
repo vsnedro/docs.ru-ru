@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugThread2'
 title: Интерфейс ICorDebugThread2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 678f89f9-cce7-46d1-af87-5e989abaa93c
 topic_type:
 - apiref
-ms.openlocfilehash: fd4ad536d7d3df2b8f91f206459122cf083c8b9c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 81f687f6daff9ffa7298ec6d818a214b8934bcc3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95691140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658507"
 ---
 # <a name="icordebugthread2-interface"></a>Интерфейс ICorDebugThread2
 
@@ -35,7 +36,7 @@ ms.locfileid: "95691140"
 |[Метод GetVolatileOSThreadID](icordebugthread2-getvolatileosthreadid-method.md)|Возвращает идентификатор потока операционной системы для этого `ICorDebugThread2` .|  
 |[Метод InterceptCurrentException](icordebugthread2-interceptcurrentexception-method.md)|Позволяет отладчику перехватывать текущее исключение в потоке.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -48,8 +49,8 @@ ms.locfileid: "95691140"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

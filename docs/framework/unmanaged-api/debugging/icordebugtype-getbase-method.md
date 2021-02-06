@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе "ICorDebugType:: Polybase"'
 title: Метод ICorDebugType::GetBase
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f24e1af9-c220-4f79-ae62-4153ec17ea81
 topic_type:
 - apiref
-ms.openlocfilehash: 967f8f25e240f484ae86852c740be12cd3a6409e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 78cd540974b540b704e946f6c723214d72e89ab4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658390"
 ---
 # <a name="icordebugtypegetbase-method"></a>Метод ICorDebugType::GetBase
 
@@ -39,7 +40,7 @@ HRESULT GetBase (
  `pBase`  
  заполняет Указатель на адрес `ICorDebugType` объекта, который представляет базовый тип.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Поиск базового типа для типа полезен для реализации общих функциональных возможностей отладчика, таких как вывод всех полей объекта или его родительских классов.  
   
@@ -51,4 +52,4 @@ HRESULT GetBase (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

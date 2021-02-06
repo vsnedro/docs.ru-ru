@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugType:: Енумератетипепараметерс'
 title: Метод ICorDebugType::EnumerateTypeParameters
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1ee1f6e6-1bd7-4ebb-83b8-ff9a08ca03de
 topic_type:
 - apiref
-ms.openlocfilehash: 3717497ab6e72f0ce67f688813ee7264206e8c84
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5189394cbb39cd133ebce494107f4ca65660bb5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658416"
 ---
 # <a name="icordebugtypeenumeratetypeparameters-method"></a>Метод ICorDebugType::EnumerateTypeParameters
 
@@ -39,7 +40,7 @@ HRESULT EnumerateTypeParameters (
  `ppTyParEnum`  
  заполняет Указатель на адрес объекта `ICorDebugTypeEnum` , который содержит параметры типа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Можно использовать, `EnumerateTypeParameters` Если значение корелементтипе, возвращаемое методом [ICorDebugType:: GetType](icordebugtype-gettype-method.md) , равно ELEMENT_TYPE_CLASS, ELEMENT_TYPE_VALUETYPE, ELEMENT_TYPE_ARRAY, ELEMENT_TYPE_SZARRAY, ELEMENT_TYPE_BYREF, ELEMENT_TYPE_PTR или ELEMENT_TYPE_FNPTR. Количество параметров и их порядок зависит от типа:  
   
@@ -57,4 +58,4 @@ HRESULT EnumerateTypeParameters (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

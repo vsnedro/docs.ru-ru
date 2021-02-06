@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugsymbolprovider:: Жетстатикфиелдсимболс'
 title: Метод ICorDebugSymbolProvider::GetStaticFieldSymbols
 ms.date: 03/30/2017
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b
-ms.openlocfilehash: 09e68c751da6500c5580f4945e8dd1c486a09217
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e95f77be86ef88a73ca4c833b242617a0d405e21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659714"
 ---
 # <a name="icordebugsymbolprovidergetstaticfieldsymbols-method"></a>Метод ICorDebugSymbolProvider::GetStaticFieldSymbols
 
@@ -42,7 +43,7 @@ HRESULT GetStaticFieldSymbols(
  `pSymbols`  
  заполняет Указатель на массив [икордебугстатикфиелдсимбол](icordebugstaticfieldsymbol-interface.md) , содержащий запрошенные символы статического поля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -55,9 +56,9 @@ HRESULT GetStaticFieldSymbols(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetInstanceFieldSymbols](icordebugsymbolprovider-getinstancefieldsymbols-method.md)
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)

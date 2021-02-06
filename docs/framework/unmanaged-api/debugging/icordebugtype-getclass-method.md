@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugType:: coclass'
 title: Метод ICorDebugType::GetClass
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2644f48b-db3c-429f-ae62-76f1c98a1af5
 topic_type:
 - apiref
-ms.openlocfilehash: 1cb9729f175a2e82e88386b0694467c6fe05636a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2e8d68fbc8909599ca649ba0e226cc84af820939
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658351"
 ---
 # <a name="icordebugtypegetclass-method"></a>Метод ICorDebugType::GetClass
 
@@ -39,7 +40,7 @@ HRESULT GetClass (
  `ppClass`  
  заполняет Указатель на адрес `ICorDebugClass` интерфейса, представляющий универсальный тип, экземпляр которого не был создан.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetClass` может вызываться только при определенных условиях. Вызовите метод [ICorDebugType:: GetType](icordebugtype-gettype-method.md) перед вызовом метода `GetClass` . Если `ICorDebugType::GetType` возвращает значение корелементтипе, которое равно ELEMENT_TYPE_CLASS или ELEMENT_TYPE_VALUETYPE, `GetClass` можно вызвать метод, чтобы получить неэкземплярный тип для универсального типа.  
   
@@ -51,4 +52,4 @@ HRESULT GetClass (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

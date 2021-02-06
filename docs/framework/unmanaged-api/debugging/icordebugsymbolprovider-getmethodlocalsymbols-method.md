@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugsymbolprovider:: GetMethodLocalSymbols'
 title: Метод ICorDebugSymbolProvider::GetMethodLocalSymbols
 ms.date: 03/30/2017
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-ms.openlocfilehash: c5a21436c939ddfca0219618efe64d9e0e40aef4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4eaac208d98b25ae4a53acfd977d354c6f6ac1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730855"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659820"
 ---
 # <a name="icordebugsymbolprovidergetmethodlocalsymbols-method"></a>Метод ICorDebugSymbolProvider::GetMethodLocalSymbols
 
@@ -38,7 +39,7 @@ HRESULT GetMethodLocalSymbols(
  `pcFetchedSymbols`  
  заполняет Указатель на массив [ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md) , содержащий локальные символы метода.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -51,9 +52,9 @@ HRESULT GetMethodLocalSymbols(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetMethodParameterSymbols](icordebugsymbolprovider-getmethodparametersymbols-method.md)
 - [Интерфейс ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)
