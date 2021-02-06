@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении Skip (Visual Basic)
 title: Предложение Skip
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Skip statement [Visual Basic]
 - Skip clause [Visual Basic]
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
-ms.openlocfilehash: 40e89160baf663f7d6785e5d3e09ad6cc4eefbde
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6af702f65a724ea8c3d5a6122fb5f7a0ed5f6755
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653554"
 ---
 # <a name="skip-clause-visual-basic"></a>Предложение Skip (Visual Basic)
 
@@ -51,7 +52,7 @@ Skip count
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение ORDER BY](order-by-clause.md)
 - [Предложение Skip While](skip-while-clause.md)
 - [Предложение Take](take-clause.md)

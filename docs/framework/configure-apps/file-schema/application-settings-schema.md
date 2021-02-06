@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: схема параметров приложения'
 title: Схема параметров приложения
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, application settings schema
 - configuration schema [.NET Framework], application settings
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-ms.openlocfilehash: fc9cd8ac3819c6a02019c871e7bd45ceb4c2cef7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 24c5771e9d98d07bbdc8dab5fce0f1535bc9b582
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90552314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652904"
 ---
 # <a name="application-settings-schema"></a>Схема параметров приложения
 
@@ -37,14 +38,14 @@ ms.locfileid: "90552314"
 
 Этот элемент содержит все **\<setting>** теги, характерные для пользователя, который в настоящее время использует приложение. Атрибуты не определяются.
 
-## <a name="setting-element"></a>\<setting> - элемент
+## <a name="setting-element"></a>Элемент \<setting>
 
 Этот элемент определяет параметр. Он имеет следующие атрибуты.
 
 | attribute        | Описание |
 | ---------------- | ----------- |
 | **name**         | Обязательный элемент. Уникальный идентификатор параметра. Параметры, созданные в Visual Studio, сохраняются с именем `ProjectName.Properties.Settings` . |
-| **serializeAs** | Обязательный. Формат, используемый для сериализации значения в текст. Допустимые значения:<br><br>- `string`. Значение сериализуется в виде строки с помощью <xref:System.ComponentModel.TypeConverter> .<br>- `xml`. Значение сериализуется с помощью сериализации XML.<br>- `binary`. Значение сериализуется как двоичный файл, закодированный в виде текста, с помощью двоичной сериализации.<br />- `custom`. Поставщик параметров обладает знаниями об этом параметре и сериализует и десериализует его. |
+| **serializeAs** | Обязательный элемент. Формат, используемый для сериализации значения в текст. Допустимые значения:<br><br>- `string`. Значение сериализуется в виде строки с помощью <xref:System.ComponentModel.TypeConverter> .<br>- `xml`. Значение сериализуется с помощью сериализации XML.<br>- `binary`. Значение сериализуется как двоичный файл, закодированный в виде текста, с помощью двоичной сериализации.<br />- `custom`. Поставщик параметров обладает знаниями об этом параметре и сериализует и десериализует его. |
 
 ## <a name="value-element"></a>Элемент \<value>
 

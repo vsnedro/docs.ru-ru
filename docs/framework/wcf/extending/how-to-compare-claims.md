@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: инструкции по сравнению утверждений'
 title: Практическое руководство. Сравнение утверждений
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - claims [WCF], comparing
 - claims [WCF]
 ms.assetid: 0c4ec84d-53df-408f-8953-9bc437f56c28
-ms.openlocfilehash: 29254bd661e72b926b21695ccb646480c53b5475
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: c2088ad3992852bdc12e7bcd71d5f3598a237b45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653853"
 ---
 # <a name="how-to-compare-claims"></a>Практическое руководство. Сравнение утверждений
 
@@ -31,7 +32,7 @@ ms.locfileid: "70797095"
 [!code-csharp[c_CustomClaimComparison#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaimcomparison/cs/c_customclaimcomparison.cs#4)]
 [!code-vb[c_CustomClaimComparison#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaimcomparison/vb/source.vb#4)]
 
-код сравнения в <xref:System.IdentityModel.Claims.Claim.Equals%2A> методе возвращает `true`, предполагая `example\someone` , что он идентифицирует того же пользователя доменаsomeone@example.com, что и "".
+код сравнения в <xref:System.IdentityModel.Claims.Claim.Equals%2A> методе возвращает `true` , предполагая, что `example\someone` он идентифицирует того же пользователя домена, что и " someone@example.com ".
 
 Пользовательские типы утверждений также могут сравниваться с помощью метода <xref:System.IdentityModel.Claims.Claim.Equals%2A>. Однако в тех случаях, когда тип, возвращенный свойством <xref:System.IdentityModel.Claims.Claim.Resource%2A> утверждения, несколько отличается от типа-примитива, метод <xref:System.IdentityModel.Claims.Claim.Equals%2A> возвращает значение `true`, только если значения, возвращенные свойствами `Resource`, одинаковы для каждого метода <xref:System.IdentityModel.Claims.Claim.Equals%2A>. В других случаях пользовательский тип, возвращенный свойством `Resource`, должен переопределить методы <xref:System.IdentityModel.Claims.Claim.Equals%2A> и <xref:System.Object.GetHashCode%2A>, чтобы выполнить любую необходимую пользовательскую обработку.
 
@@ -75,4 +76,4 @@ ms.locfileid: "70797095"
 ## <a name="see-also"></a>См. также
 
 - [Управление утверждениями и авторизацией с помощью модели удостоверения](../feature-details/managing-claims-and-authorization-with-the-identity-model.md)
-- [Практическое руководство. Создание настраиваемого утверждения](how-to-create-a-custom-claim.md)
+- [Практическое руководство. Создание пользовательского утверждения](how-to-create-a-custom-claim.md)

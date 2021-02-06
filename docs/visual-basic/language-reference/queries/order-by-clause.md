@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении ORDER BY (Visual Basic)
 title: Предложение Order By
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Order By clause [Visual Basic]
 - Order By statement [Visual Basic]
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
-ms.openlocfilehash: 05fa720237f4b0185b5c07217362c99b5dbf4303
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: b5e7cc93b11393ef2f256e90e402975fbf6633a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869790"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653619"
 ---
 # <a name="order-by-clause-visual-basic"></a>Предложение Order By (Visual Basic)
 
@@ -61,4 +62,4 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)

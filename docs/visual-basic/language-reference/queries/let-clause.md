@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предложение let (Visual Basic)'
 title: Предложение Let
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Let clause [Visual Basic]
 - Let statement [Visual Basic]
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
-ms.openlocfilehash: a6ff3fc80a2b6752c61a8b8f7d4ce62b5a46baad
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 88a7d96bb790a1e6ec5adfa4337c51f807930168
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653645"
 ---
 # <a name="let-clause-visual-basic"></a>Предложение Let (Visual Basic)
 
@@ -49,5 +50,5 @@ Let variable = expression [, ...]
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение WHERE](where-clause.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <add> Element для <appSettings>'
 title: Элемент <add> для <appSettings>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - add Element
 - <add> Element
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
-ms.openlocfilehash: 5c7de79ec626966e71d461dd3865b294a8979db2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f10ffe517b3b25543bc7baed0c7d2af13f48ab02
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77214812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652891"
 ---
 # <a name="add-element-for-appsettings"></a>Элемент \<add> для \<appSettings>
 
@@ -68,4 +69,4 @@ None
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](../index.md)
+- [Схема файла конфигурации для платформа .NET Framework](../index.md)

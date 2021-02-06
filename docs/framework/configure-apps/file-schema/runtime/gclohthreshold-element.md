@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: Гклохсрешолд element'
 title: Гклохсрешолд, элемент
 ms.date: 11/20/2019
 helpviewer_keywords:
 - GCLOHThreshold element
 - <GCLOHThreshold> element
-ms.openlocfilehash: d72dc9d27984f60dfb6296217263ce8b176093c6
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5d4ef4e6aaf44642c2307dc27ac2e99e966d3ad0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74451326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652813"
 ---
 # <a name="gclohthreshold-element"></a>Гклохсрешолд, элемент
 
@@ -49,9 +50,9 @@ ms.locfileid: "74451326"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот параметр появился в .NET Framework 4,8.
+Этот параметр появился в платформа .NET Framework 4,8.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о <httpListener> элементе: Element (параметры сети)'
 title: Элемент <httpListener> (параметры сети)
 ms.date: 03/30/2017
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
-ms.openlocfilehash: 78526559164939667eab8848bc5fd2af6749d474
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 18c139ad7767370ecd3a4116e352b7614914d199
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652865"
 ---
 # <a name="httplistener-element-network-settings"></a>Элемент \<httpListener> (параметры сети)
 
@@ -26,7 +27,7 @@ ms.locfileid: "91195445"
 />  
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
 
@@ -86,7 +87,7 @@ ms.locfileid: "91195445"
   
  Поэтому `http.sys` предоставляет два раздела реестра для изменения процесса:  
   
-|Раздел реестра .|Значение по умолчанию|Описание|  
+|Ключ реестра|Значение по умолчанию|Описание|  
 |------------------|-------------------|-----------------|  
 |EnableNonUTF8|1|Если значение равно нулю, `http.sys` принимает только URL-адреса в кодировке UTF-8.<br /><br /> Если значение не равно нулю, `http.sys` в запросах также принимается URL-адреса в кодировке ANSI или в кодировке DBCS.|  
 |FavorUTF8|1|Если ненулевое значение, `http.sys` всегда пытается декодировать URL-адрес как UTF-8. Если преобразование завершается неудачно и EnableNonUTF8 не равно нулю, Http.sys попытается декодировать его как ANSI или DBCS.<br /><br /> Если ноль (и EnableNonUTF8 не равен нулю), `http.sys` попытается декодировать его как ANSI или DBCS; если это не удается, то пытается выполнить преобразование UTF-8.|  
@@ -142,7 +143,7 @@ ms.locfileid: "91195445"
 |Файл проверки||  
 |Может быть пустым||  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>

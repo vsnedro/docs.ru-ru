@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении SELECT (Visual Basic)
 title: Предложение Select
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Select clause [Visual Basic]
 - queries [Visual Basic], Select
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
-ms.openlocfilehash: d96423efbee075a7ad257df72471c71e38e09b63
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 029778ce8262a93eee9a69843579523e8434eb01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653580"
 ---
 # <a name="select-clause-visual-basic"></a>Предложение Select (Visual Basic)
 
@@ -59,7 +60,7 @@ Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]
 
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение WHERE](where-clause.md)
 - [Предложение ORDER BY](order-by-clause.md)
 - [Анонимные типы](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)
