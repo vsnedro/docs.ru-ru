@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье как использовать моникер службы Windows Communication Foundation без регистрации.
 title: Практическое руководство. Использование моникера службы Windows Communication Foundation без регистрации
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], service monikers without registration
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
-ms.openlocfilehash: 41761313fae68a1a348a73f104e21dc19e07eb65
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ed3ea221bc32c4334f609b6740fa10bb63cb2830
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632390"
 ---
 # <a name="how-to-use-the-windows-communication-foundation-service-moniker-without-registration"></a>Практическое руководство. Использование моникера службы Windows Communication Foundation без регистрации
 

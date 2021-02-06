@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: очереди недоставленных сообщений'
 title: Очереди недоставленных сообщений
 ms.date: 03/30/2017
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
-ms.openlocfilehash: cf281ff08d56669d0257d693af93d8a9b5b2e81a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5cec218f993fd99d1419aab884addfba686337c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632156"
 ---
 # <a name="dead-letter-queues"></a>Очереди недоставленных сообщений
 
@@ -359,6 +360,6 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  

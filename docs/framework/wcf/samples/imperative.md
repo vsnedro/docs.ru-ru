@@ -1,17 +1,18 @@
 ---
-title: Императивная
+description: 'Дополнительные сведения: императивный'
+title: Императивное определение
 ms.date: 03/30/2017
 ms.assetid: 4f7ce807-c0e4-407a-92a6-22abafb40b51
-ms.openlocfilehash: 2484b6a6a8e5a62676eb9e9830a91f91ac923eff
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ceaaf6d2bb196a50c0a9a096e39f9b6f78d63a11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79144686"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631844"
 ---
-# <a name="imperative"></a>Императивная
+# <a name="imperative"></a>Императивное определение
 
-Этот образец показывает, как определить привязку <xref:System.ServiceModel.WSHttpBinding> для службы в коде, вместо того, чтобы определять привязку `wsHttpBinding` в конфигурации. Этот пример основан на [getting Started,](getting-started-sample.md) который реализует услугу калькулятора.
+Этот образец показывает, как определить привязку <xref:System.ServiceModel.WSHttpBinding> для службы в коде, вместо того, чтобы определять привязку `wsHttpBinding` в конфигурации. Этот образец основан на [Начало работы](getting-started-sample.md) , который реализует службу калькулятора.
 
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
@@ -80,17 +81,17 @@ Press <ENTER> to terminate client.
 
 ## <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
 
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](one-time-setup-procedure-for-the-wcf-samples.md)
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
 2. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-3. Чтобы запустить образец в одно- или кросс-машинной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](running-the-samples.md)
+3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Imperative`

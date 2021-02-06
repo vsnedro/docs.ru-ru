@@ -1,21 +1,22 @@
 ---
+description: Дополнительные сведения о защите служб и клиентов
 title: Защита служб и клиентов
 ms.date: 03/30/2017
 helpviewer_keywords:
 - message security [WCF]
 ms.assetid: e681f3bd-0c09-4a58-b0e4-0ecbdf1aa6c7
-ms.openlocfilehash: 24e7cc3fd9b349aaba733a809a03be2454bd371d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ff947e8bf975fd3fb3c6513ee0bf49bb21a951dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632637"
 ---
 # <a name="securing-services-and-clients"></a>Защита служб и клиентов
 
 Сведения в этом разделе посвящены безопасности программирования в Windows Communication Foundation (WCF). Обычно обеспечение безопасности включает выбор подходящей предоставляемой системой привязки, задание свойств элемента безопасности и задание свойств поведений службы, управляющих извлечением учетных данных для использования службой или клиентом. Эти методы охватывают требования большинства пользователей для большинства сценариев, как показано в [типичных сценариях безопасности](common-security-scenarios.md). Если ваш сценарий требует больше возможностей, сначала ознакомьтесь [с возможностями безопасности с помощью пользовательских привязок](security-capabilities-with-custom-bindings.md). Если решение не очевидно, см. раздел [расширение безопасности](../extending/extending-security.md). При создании (или взаимодействии с) системой, использующей обширные утверждения, см. разделы в разделе [авторизация](authorization-in-wcf.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Программирование безопасности WCF](programming-wcf-security.md)  
  Общие сведения о модели программирования, используемой для защиты сообщений.  

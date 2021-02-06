@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: Общие сведения о надежных сеансах'
 title: Общие сведения о надежных сеансах
 ms.date: 03/30/2017
 ms.assetid: a7fc4146-ee2c-444c-82d4-ef6faffccc2d
-ms.openlocfilehash: a85a34c5e2ec7928c01586e4b01cdf5e90e896a7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 51de6012245b4fc0a367069d02fe69ee031f2b30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632897"
 ---
 # <a name="reliable-sessions-overview"></a>Общие сведения о надежных сеансах
 
@@ -125,7 +126,7 @@ Windows Communication Foundation (WCF) надежный обмен сообще�
 
 - Сеансы по протоколу HTTP
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Использование привязок для настройки служб и клиентов](../using-bindings-to-configure-services-and-clients.md)
 - [Надежный сеанс WS](../samples/ws-reliable-session.md)

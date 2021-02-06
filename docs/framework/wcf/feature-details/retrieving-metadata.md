@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: получение метаданных'
 title: Извлечение метаданных
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], retrieving
 ms.assetid: 18d8ba4c-af0f-4827-a50b-4202d767bacc
-ms.openlocfilehash: 212ea49418d5e33d79a1b6cf881e2828388c657e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 35068c9ad532b3a48eabda03274b0d53fcc94694
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295513"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632819"
 ---
 # <a name="retrieving-metadata"></a>Извлечение метаданных
 
@@ -25,7 +26,7 @@ ms.locfileid: "96295513"
   
  По умолчанию экземпляр <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> связан с одним экземпляром <xref:System.ServiceModel.ChannelFactory>. Можно изменить или заменить экземпляр <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType>, используемый экземпляром <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType>, переопределив виртуальный метод <xref:System.ServiceModel.Description.MetadataExchangeClient.GetChannelFactory%2A>. Аналогично можно изменить или заменить экземпляр <xref:System.Net.HttpWebRequest>, используемый экземпляром <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> для создания запросов HTTP/GET, переопределив виртуальный метод <xref:System.ServiceModel.Description.MetadataExchangeClient.GetWebRequest%2A?displayProperty=nameWithType>.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Использование Svcutil.exe для загрузки документов метаданных](how-to-use-svcutil-exe-to-download-metadata-documents.md)  
  Загрузка документов метаданных с помощью средства Svcutil.exe.  

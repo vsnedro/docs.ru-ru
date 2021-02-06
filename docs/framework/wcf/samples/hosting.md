@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: размещение'
 title: Примеры размещения WCF
 ms.date: 03/30/2017
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
-ms.openlocfilehash: f37653fd19e6a7524a274e32d9846c83c3f8270f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c26f66613e3e5ac92e11551023c3a731d31f2a58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631935"
 ---
 # <a name="hosting"></a>Hosting
 
 Этот раздел содержит примеры, демонстрирующие размещение служб Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Активация Windows](windows-process-activation.md)  
  Демонстрирует включение службы с помощью сетевых протоколов.  

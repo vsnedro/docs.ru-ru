@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: использование арбитра контрактов данных'
 title: Использование арбитра контрактов данных
 ms.date: 03/30/2017
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
-ms.openlocfilehash: a86ad21a5846feec37f8b4b48843eab2d6c161da
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 89571c63b9135f164e0b687251798e3b67153b8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632299"
 ---
 # <a name="using-a-data-contract-resolver"></a>Использование арбитра контрактов данных
 

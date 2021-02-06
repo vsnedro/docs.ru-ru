@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: использование JSONP'
 title: Использование средства JSONP
 ms.date: 03/30/2017
 ms.assetid: f386718c-b4ba-4931-a610-40c27a46672a
-ms.openlocfilehash: 82290319b5d8b58708f0b2ebf40522ee76127b84
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f4d21670cf468328b8579fa8a9cf2c2e06f09337
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632195"
 ---
 # <a name="using-jsonp"></a>Использование средства JSONP
 
@@ -74,7 +75,7 @@ anotherFunction ({"root":"Something"});
 anotherFunction ({"root":"Something"}, 201);
 ```
 
-## <a name="validations"></a>Validations (Проверки)
+## <a name="validations"></a>Проверки
 
 При включении JSONP выполняются следующие проверки.
 
@@ -84,6 +85,6 @@ anotherFunction ({"root":"Something"}, 201);
 
 - Если имя обратного вызова равно `null` или пустой строке, то ответ не приводится к формату JSONP.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md)

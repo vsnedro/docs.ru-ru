@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье маршрутизация контрактов.
 title: Контракты маршрутизации
 ms.date: 03/30/2017
 ms.assetid: 9ceea7ae-ea19-4cf9-ba4f-d071e236546d
-ms.openlocfilehash: 4c75034a8fdbf02bf568bc5392361113a37427be
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7ccdb281402bdf61d3ba27f97019fd3126bdf29b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632793"
 ---
 # <a name="routing-contracts"></a>Контракты маршрутизации
 
@@ -21,7 +22,7 @@ ms.locfileid: "96295500"
   
  Контракты, предоставляемые службой маршрутизации, находятся в пространстве имен <xref:System.ServiceModel.Routing>, они описаны в следующей таблице.  
   
-|Контракт|Фигурная|Форма канала|  
+|Контракт|Фигура|Форма канала|  
 |--------------|-----------|-------------------|  
 |<xref:System.ServiceModel.Routing.ISimplexDatagramRouter>|SessionMode = SessionMode.Allowed<br /><br /> AsyncPattern = true<br /><br /> IsOneWay = true|IInputChannel-> IOutputChannel|  
 |<xref:System.ServiceModel.Routing.ISimplexSessionRouter>|SessionMode = SessionMode.Required<br /><br /> AsyncPattern = true<br /><br /> IsOneWay = true|Иинпутсессиончаннел-> IOutputSessionChannel|  
