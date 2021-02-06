@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: Жетклассидинфо'
 title: Метод ICorProfilerInfo::GetClassIDInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e93b99e-5aca-415c-8e37-7f33753b612d
 topic_type:
 - apiref
-ms.openlocfilehash: 7d19a43048da742e702636faaa46ecf1458556f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 05937580bd8bd672da16875964548829d071f4bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647717"
 ---
 # <a name="icorprofilerinfogetclassidinfo-method"></a>Метод ICorProfilerInfo::GetClassIDInfo
 
@@ -46,7 +47,7 @@ HRESULT GetClassIDInfo(
  `pTypeDefToken`  
  заполняет Указатель на маркер метаданных для класса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы получить интерфейс метаданных для заданного модуля, код профилировщика может вызвать метод [ICorProfilerInfo:: жетмодулеметадата](icorprofilerinfo-getmodulemetadata-method.md) . Токен метаданных, возвращенный в расположение, на которое ссылается `pTypeDefToken`, можно впоследствии использовать для доступа к метаданным класса.  
   
@@ -60,8 +61,8 @@ HRESULT GetClassIDInfo(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

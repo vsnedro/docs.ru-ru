@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetCodeInfo'
 title: Метод ICorProfilerInfo::GetCodeInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 90140b0f-a926-4a7e-b6fa-23e05f703cce
 topic_type:
 - apiref
-ms.openlocfilehash: da3b0acefa68be3506567ad4742784943f4ec5ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e965e9c21b7add0367b08f152bf509ad6b6ed4cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647665"
 ---
 # <a name="icorprofilerinfogetcodeinfo-method"></a>Метод ICorProfilerInfo::GetCodeInfo
 
@@ -48,7 +49,7 @@ HRESULT GetCodeInfo(
  `pcSize`  
  [out] Указатель на целое число, задающее размер машинного кода в байтах.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для оптимизации производительности среда выполнения в .NET Framework версии 2.0 разделяет предварительно скомпилированный машинный код функции на несколько областей. Следовательно, метод `GetCodeInfo` является устаревшим в .NET Framework 2.0, так как он не может обработать экстент машинного кода функции. Профилировщики следует переключить на использование более универсального метода `ICorProfilerInfo2::GetCodeInfo2`.  
   
@@ -62,9 +63,9 @@ HRESULT GetCodeInfo(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,0  
+ **Платформа .NET Framework версии:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

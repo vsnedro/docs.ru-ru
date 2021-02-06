@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции FunctionLeave
 title: Функция FunctionLeave
 ms.date: 03/30/2017
 api_name:
@@ -14,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 18e89f45-e068-426a-be16-9f53a4346860
 topic_type:
 - apiref
-ms.openlocfilehash: 13636da9c3e8ac4aa9e8dc1fa02b2e33afef4717
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cc0db68df8976ce86197cc9b7570b00c6f662cb5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648484"
 ---
 # <a name="functionleave-function"></a>Функция FunctionLeave
 
 Уведомляет профилировщик о том, что функция собирается вернуть вызывающему объекту.  
   
 > [!NOTE]
-> `FunctionLeave`Функция является устаревшей в .NET Framework 2,0. Он будет продолжать работать, но будет приводить к снижению производительности. Вместо этого используйте функцию [FunctionLeave2](functionleave2-function.md) .  
+> `FunctionLeave`Функция является устаревшей в платформа .NET Framework 2,0. Он будет продолжать работать, но будет приводить к снижению производительности. Вместо этого используйте функцию [FunctionLeave2](functionleave2-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,7 +43,7 @@ void __stdcall FunctionLeave (
 
   \[in] Идентификатор возвращаемой функции.
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `FunctionLeave`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec` `naked` атрибут класса хранения ().  
   
@@ -64,9 +65,9 @@ void __stdcall FunctionLeave (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

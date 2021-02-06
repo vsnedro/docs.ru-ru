@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: GetCurrentThreadID'
 title: Метод ICorProfilerInfo::GetCurrentThreadID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 39bbdb30-6a7a-4202-8da3-67ae9a0ab3a8
 topic_type:
 - apiref
-ms.openlocfilehash: 18298c4c726d7d850e67afbf82ca77b7511d8917
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 562c6cb61f13e9ab568d18c7d179872cbc7cdb06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647647"
 ---
 # <a name="icorprofilerinfogetcurrentthreadid-method"></a>Метод ICorProfilerInfo::GetCurrentThreadID
 
@@ -38,7 +39,7 @@ HRESULT GetCurrentThreadID(
  `pThreadId`  
  заполняет Указатель на возвращенный идентификатор управляемого потока.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если текущий поток является внутренним потоком среды выполнения или другим неуправляемым потоком, `GetCurrentThreadID` возвращает CORPROF_E_NOT_MANAGED_THREAD как HRESULT, а возвращаемое значение `pThreadId` параметра будет равно null.  
   
@@ -50,8 +51,8 @@ HRESULT GetCurrentThreadID(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

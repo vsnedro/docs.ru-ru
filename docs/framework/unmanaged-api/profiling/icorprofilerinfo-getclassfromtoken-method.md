@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: Жетклассфромтокен'
 title: Метод ICorProfilerInfo::GetClassFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 0afc1197-2a5b-424f-8b82-9cb59a7e00db
 topic_type:
 - apiref
-ms.openlocfilehash: 7d9fe7d6d5c5af32be22ba19b52e7d40033a6eb2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0460a9b767f29f108a2b290b848f4cc6b6394ecb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647756"
 ---
 # <a name="icorprofilerinfogetclassfromtoken-method"></a>Метод ICorProfilerInfo::GetClassFromToken
 
-Возвращает идентификатор класса по заданному маркеру метаданных. Этот метод является устаревшим в .NET Framework версии 2,0. Вместо этого используйте [ICorProfilerInfo2:: GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) .  
+Возвращает идентификатор класса по заданному маркеру метаданных. Этот метод является устаревшим в платформа .NET Framework версии 2,0. Вместо этого используйте [ICorProfilerInfo2:: GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,7 +47,7 @@ HRESULT GetClassFromToken(
  `cTypeArgs`  
  заполняет Указатель на идентификатор класса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод устарел; Вместо этого используйте `ICorProfilerInfo2::GetClassFromTokenAndTypeArgs` для всех типов.  
   
@@ -58,7 +59,7 @@ HRESULT GetClassFromToken(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,0, 1,1  
+ **Платформа .NET Framework версии:** 1,0, 1,1  
   
 ## <a name="see-also"></a>См. также
 

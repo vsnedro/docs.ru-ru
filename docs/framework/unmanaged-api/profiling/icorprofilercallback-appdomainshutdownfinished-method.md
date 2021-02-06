@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: AppDomainShutdownFinished'
 title: Метод ICorProfilerCallback::AppDomainShutdownFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
 topic_type:
 - apiref
-ms.openlocfilehash: ddb2d6eeb75a118a12f681b354f6feccd1231c64
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e08a4f7e03bfd18d9c6a2fdf56bfab8c68f9c379
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648258"
 ---
 # <a name="icorprofilercallbackappdomainshutdownfinished-method"></a>Метод ICorProfilerCallback::AppDomainShutdownFinished
 
@@ -44,7 +45,7 @@ HRESULT AppDomainShutdownFinished(
 
   \[in] значение HRESULT, указывающее, успешно ли выгружен домен приложения.
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение недопустимо `appDomainId` для информационного запроса после возврата метода [ICorProfilerCallback:: AppDomainShutdownStarted](icorprofilercallback-appdomainshutdownstarted-method.md) .  
   
@@ -58,8 +59,8 @@ HRESULT AppDomainShutdownFinished(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

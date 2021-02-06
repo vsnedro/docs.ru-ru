@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иклрпрофилинг:: AttachProfiler'
 title: Метод ICLRProfiling::AttachProfiler
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type:
 - apiref
-ms.openlocfilehash: 94495ca0ea75bd41996d430159474c707a3e68b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 11b53b39d3332d1f72304352fad525e5881e05a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685426"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648458"
 ---
 # <a name="iclrprofilingattachprofiler-method"></a>Метод ICLRProfiling::AttachProfiler
 
@@ -83,7 +84,7 @@ HRESULT AttachProfiler(
 |E_FAIL|Произошел другой, не указанный сбой.|  
 |Другие коды ошибок|Если метод [ICorProfilerCallback3:: InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) профилировщика ВОЗВРАЩАЕТ значение HRESULT, которое указывает на сбой, `AttachProfiler` ВОЗВРАЩАЕТ то же значение HRESULT. В этом случае E_NOTIMPL преобразуется в CORPROF_E_PROFILER_NOT_ATTACHABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="memory-management"></a>Управление памятью  
 
@@ -97,9 +98,9 @@ HRESULT AttachProfiler(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
