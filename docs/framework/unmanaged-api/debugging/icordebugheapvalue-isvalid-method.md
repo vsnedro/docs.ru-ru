@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugHeapValue:: IsValid'
 title: Метод ICorDebugHeapValue::IsValid
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 68e20e62-203d-46d8-bb91-8d3c61cfacc3
 topic_type:
 - apiref
-ms.openlocfilehash: d9150d15ac183b65b87448424f265693ed7b7ab7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27eca844170b31934cd32dad5cf5fccc0b0e324e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660795"
 ---
 # <a name="icordebugheapvalueisvalid-method"></a>Метод ICorDebugHeapValue::IsValid
 
 Возвращает значение, указывающее, является ли допустимым объект, представленный этим ICorDebugHeapValue.  
   
- Этот метод не рекомендуется к использованию в .NET Framework версии 2,0.  
+ Этот метод не рекомендуется к использованию в платформа .NET Framework версии 2,0.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,11 +42,11 @@ HRESULT IsValid (
  `pbValid`  
  заполняет Указатель на логическое значение, указывающее, является ли значение в куче допустимым.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение недопустимо, если оно было освобождено сборщиком мусора.  
   
- Этот метод использовать не рекомендуется. В .NET Framework 2,0 все значения являются допустимыми до тех пор, пока не будет вызван метод [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) , после чего значения становятся недействительными.  
+ Этот метод использовать не рекомендуется. В платформа .NET Framework 2,0 все значения являются допустимыми до тех пор, пока не будет вызван метод [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) , после чего значения становятся недействительными.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -55,4 +56,4 @@ HRESULT IsValid (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugModule'
 title: Интерфейс ICorDebugModule
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 32e4d6fa-e5a3-413e-9166-d5e2871d3114
 topic_type:
 - apiref
-ms.openlocfilehash: 86e17b48bc491c45f8b46be23ab626dc1f2a6962
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f78023fe9975b609309c1c511380a3a394426283
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660119"
 ---
 # <a name="icordebugmodule-interface"></a>Интерфейс ICorDebugModule
 
@@ -47,7 +48,7 @@ ms.locfileid: "95709847"
 |[Метод IsDynamic](icordebugmodule-isdynamic-method.md)|Указывает, является ли модуль динамическим.|  
 |[Метод IsInMemory](icordebugmodule-isinmemory-method.md)|Указывает, существует ли этот модуль только в памяти.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -60,9 +61,9 @@ ms.locfileid: "95709847"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebug](icordebug-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

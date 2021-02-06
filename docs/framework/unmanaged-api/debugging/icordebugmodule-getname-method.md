@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: Name'
 title: Метод ICorDebugModule::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: db499637-7ba9-421e-b8b1-35856995e80b
 topic_type:
 - apiref
-ms.openlocfilehash: c2aecadf8688e763a69bd40ca877e44bc0ce5c29
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0f81271b2be283621027f4c835b6f220a383d771
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660204"
 ---
 # <a name="icordebugmodulegetname-method"></a>Метод ICorDebugModule::GetName
 
@@ -47,7 +48,7 @@ HRESULT GetName(
  `szName`  
  заполняет Массив, в котором хранится возвращаемое имя.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetName`Метод возвращает S_OK HRESULT, если имя файла модуля совпадает с именем на диске. `GetName` Возвращает S_FALSE HRESULT, если имя является составным, например, для динамического или в памяти модуля.  
   
@@ -59,6 +60,6 @@ HRESULT GetName(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также

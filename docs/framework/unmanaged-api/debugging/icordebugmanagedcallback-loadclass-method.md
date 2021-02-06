@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugManagedCallback:: LoadClass'
 title: Метод ICorDebugManagedCallback::LoadClass
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e58dac7b-85c3-41ca-b9aa-3a7fc9ae6680
 topic_type:
 - apiref
-ms.openlocfilehash: 6f1672d40cd495d3ec099abc703639cf52460703
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f670a2f0798c7edfdc4292334cf9534e59a3007
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660613"
 ---
 # <a name="icordebugmanagedcallbackloadclass-method"></a>Метод ICorDebugManagedCallback::LoadClass
 
@@ -43,7 +44,7 @@ HRESULT LoadClass (
  `c`  
  окне Указатель на объект ICorDebugClass, представляющий класс.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот обратный вызов происходит, только если для модуля, содержащего класс, была включена загрузка класса. Загрузка класса всегда включена для динамических модулей.  
   
@@ -57,9 +58,9 @@ HRESULT LoadClass (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод UnloadClass](icordebugmanagedcallback-unloadclass-method.md)
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

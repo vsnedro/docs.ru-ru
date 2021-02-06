@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: resize'
 title: Метод ICorDebugModule::GetSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5c68375d-145d-46ef-a7c8-2dc4257472de
 topic_type:
 - apiref
-ms.openlocfilehash: 0cfc31839b263c2e8cf44d15439b44ffacccf5bf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b2179c8830911e417ccd482fe72438c4cd7fd3df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660158"
 ---
 # <a name="icordebugmodulegetsize-method"></a>Метод ICorDebugModule::GetSize
 
@@ -49,4 +50,4 @@ HRESULT GetSize(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

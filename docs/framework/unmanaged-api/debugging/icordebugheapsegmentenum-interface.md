@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугхеапсегментенум'
 title: Интерфейс ICorDebugHeapSegmentEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 20fc1b9d-e228-4107-bd76-53934c1724b9
 topic_type:
 - apiref
-ms.openlocfilehash: 42126d15c64175f35bba89a1ab6abacc64128012
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 614bae0ea5e3eb7816fdeec23a0dc7aa6e44801d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704634"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660886"
 ---
 # <a name="icordebugheapsegmentenum-interface"></a>Интерфейс ICorDebugHeapSegmentEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95704634"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icordebugheapsegmentenum-next-method.md)|Возвращает указанное число экземпляров [COR_SEGMENT](cor-segment-structure.md) , содержащих сведения о регионах управляемой кучи.|  
+|[Следующий метод](icordebugheapsegmentenum-next-method.md)|Возвращает указанное число экземпляров [COR_SEGMENT](cor-segment-structure.md) , содержащих сведения о регионах управляемой кучи.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugHeapSegmentEnum`Интерфейс реализует интерфейс ICorDebugEnum.  
   
@@ -47,8 +48,8 @@ ms.locfileid: "95704634"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

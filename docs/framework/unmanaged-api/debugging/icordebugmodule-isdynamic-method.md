@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: Dynamic'
 title: Метод ICorDebugModule::IsDynamic
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5eefe716-5025-4a4c-970c-c823cdc7bb87
 topic_type:
 - apiref
-ms.openlocfilehash: 98c01993a85ed07d961902d8a098a96df4702c76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 06ecb7aaffbe73da29bbdbba9446839db54c58c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660106"
 ---
 # <a name="icordebugmoduleisdynamic-method"></a>Метод ICorDebugModule::IsDynamic
 
@@ -39,7 +40,7 @@ HRESULT IsDynamic(
  `pDynamic`  
  [out] `true` значение, если этот модуль является динамическим; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Динамический модуль может добавлять новые классы и удалять существующие классы даже после загрузки модуля. Обратные вызовы [ICorDebugManagedCallback:: loadClass](icordebugmanagedcallback-loadclass-method.md) и [ICorDebugManagedCallback:: унлоадкласс](icordebugmanagedcallback-unloadclass-method.md) информируют отладчик о добавлении или удалении класса.  
   
@@ -51,4 +52,4 @@ HRESULT IsDynamic(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

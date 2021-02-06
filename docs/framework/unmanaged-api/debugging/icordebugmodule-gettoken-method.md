@@ -1,4 +1,5 @@
 ---
+description: 'См. Дополнительные сведения о методе ICorDebugModule:: методом with Token'
 title: Метод ICorDebugModule::GetToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f759f87a-18ae-4c1a-8300-29b803432d0a
 topic_type:
 - apiref
-ms.openlocfilehash: 6ffc74247a4ecafcc3744923c0def99220b5ca6f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd1bc4bc397e7f81c77f2fe784c68dbaaceb2695
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660171"
 ---
 # <a name="icordebugmodulegettoken-method"></a>Метод ICorDebugModule::GetToken
 
@@ -39,7 +40,7 @@ HRESULT GetToken(
  `pToken`  
  заполняет Указатель на `mdModule` маркер, который ссылается на метаданные модуля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Маркер может быть передан интерфейсам импорта метаданных [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md)и [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) .  
   
@@ -51,8 +52,8 @@ HRESULT GetToken(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метаданные](../metadata/index.md)
