@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <windowsStreamSecurity>'
 title: <windowsStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
-ms.openlocfilehash: 3c82bd81bd0fabf10f2dd835188b346f62d038b5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c623dc23ca67d0341b66a2a4d97de564be77dcc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167084"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682401"
 ---
 # \<windowsStreamSecurity>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91167084"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -50,7 +51,7 @@ ms.locfileid: "91167084"
 
  Транспорты, использующие такой поточно-ориентированный протокол, как TCP и именованные каналы, поддерживают потоковые обновления транспорта. В частности, WCF обеспечивает обновления системы безопасности. Конфигурация этой защиты транспорта инкапсулирована этим элементом конфигурации, а также с [\<sslStreamSecurity>](sslstreamsecurity.md) , который можно настроить и добавить в пользовательскую привязку.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels.CustomBinding>
 - <xref:System.ServiceModel.Configuration.WindowsStreamSecurityElement>

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Method-Based примеры синтаксиса запросов: статистические операторы (LINQ to DataSet)'
 title: Примеры синтаксиса запросов на основе методов. Операторы статистических выражений (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5ed5f01d-acb2-4dd4-be60-f04c2d570fa8
-ms.openlocfilehash: f702506e648c73dc179cf1755a467b13afce4bc6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a404cde84266d4ef8c2118dd07644b28417e159a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681608"
 ---
 # <a name="method-based-query-syntax-examples-aggregate-operators-linq-to-dataset"></a>Примеры синтаксиса запросов на основе методов. Операторы статистических выражений (LINQ to DataSet)
 
@@ -105,7 +106,7 @@ ms.locfileid: "91164666"
  [!code-csharp[DP LINQ to DataSet Examples#LongCountSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#longcountsimple)]
  [!code-vb[DP LINQ to DataSet Examples#LongCountSimple](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#longcountsimple)]  
   
-## <a name="max"></a>Макс.  
+## <a name="max"></a>Max  
   
 ### <a name="example"></a>Пример  
 
@@ -166,7 +167,7 @@ ms.locfileid: "91164666"
  [!code-csharp[DP LINQ to DataSet Examples#SumGrouped_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#sumgrouped_mq)]
  [!code-vb[DP LINQ to DataSet Examples#SumGrouped_MQ](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#sumgrouped_mq)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Загрузка данных в набор данных](loading-data-into-a-dataset.md)
 - [Примеры LINQ to DataSet](linq-to-dataset-examples.md)

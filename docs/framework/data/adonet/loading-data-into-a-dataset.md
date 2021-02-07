@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Загрузка данных в набор данных'
 title: Загрузка данных в набор данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a53e5dc1-9669-49d4-828d-efa633237066
-ms.openlocfilehash: c870cabc875aa0152910ce916819fb1ff1c018f7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 167a399d17257008e884fbcccc96de17398b8f88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681686"
 ---
 # <a name="loading-data-into-a-dataset"></a>Загрузка данных в набор данных
 
@@ -25,7 +26,7 @@ ms.locfileid: "91166720"
  [!code-csharp[DP LINQ to DataSet Examples#FillDataSet](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#filldataset)]
  [!code-vb[DP LINQ to DataSet Examples#FillDataSet](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#filldataset)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о LINQ to DataSet](linq-to-dataset-overview.md)
 - [Запросы к DataSet](querying-datasets-linq-to-dataset.md)

@@ -1,15 +1,16 @@
 ---
-title: <workflowInstanceQuery>WCF
+description: 'Дополнительные сведения о: <workflowInstanceQuery> из WCF'
+title: <workflowInstanceQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3
-ms.openlocfilehash: eaf0cd204265aac7c1421e3de0c33963e6bbb7a1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 30df1a6b4fc0aeac5b7094f1a1f7d9d02599c94d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682323"
 ---
-# <a name="workflowinstancequery-of-wcf"></a>\<workflowInstanceQuery>WCF
+# <a name="workflowinstancequery-of-wcf"></a>\<workflowInstanceQuery> WCF
 
 Представляет запрос, отслеживающий изменения жизненного цикла экземпляра рабочего процесса, например начавшиеся и завершенные события.  
   
@@ -64,7 +65,7 @@ ms.locfileid: "70854739"
 |-------------|-----------------|  
 |[\<workflowInstanceQueries>](workflowinstancequeries-of-wcf.md)|Представляет коллекцию элементов конфигурации, которые отслеживают изменения жизненного цикла экземпляра рабочего процесса, например события «запущен» или «завершен».|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
 Запрос <xref:System.Activities.Tracking.WorkflowInstanceQuery> используется для подписки на следующие объекты <xref:System.Activities.Tracking.TrackingRecord>.  
   

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: LINQ to DataSet обзор'
 title: Общие сведения о LINQ to DataSet
 ms.date: 03/30/2017
 ms.assetid: dc20a8fb-03f6-4b68-9c2b-7f7299e3070b
-ms.openlocfilehash: f7659d03005df69d7debe604581ce49973f938cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 73054a4f9b7397e3fa5d417d85afa2fa23aec643
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681699"
 ---
 # <a name="linq-to-dataset-overview"></a>Общие сведения о LINQ to DataSet
 
@@ -19,7 +20,7 @@ ms.locfileid: "91200619"
   
 ## <a name="querying-datasets-using-linq-to-dataset"></a>Запросы к наборам данных с помощью LINQ to DataSet  
 
- Прежде чем начать запрос к <xref:System.Data.DataSet> объекту с помощью LINQ to DataSet, необходимо заполнить <xref:System.Data.DataSet> . Существует несколько способов загрузить данные в <xref:System.Data.DataSet> , например, с помощью <xref:System.Data.Common.DataAdapter> класса или [LINQ to SQL](./sql/linq/index.md). После загрузки данных в <xref:System.Data.DataSet> объект можно начать с запроса. Запросы составления, использующие LINQ to DataSet, аналогичны использованию запросов LINQ к другим источникам данных, поддерживающим LINQ. Запросы LINQ можно выполнять с отдельными таблицами в <xref:System.Data.DataSet> или на более чем в одной таблице с помощью <xref:System.Linq.Enumerable.Join%2A> <xref:System.Linq.Enumerable.GroupJoin%2A> стандартных операторов запросов.  
+ Прежде чем начать запрос к <xref:System.Data.DataSet> объекту с помощью LINQ to DataSet, необходимо заполнить <xref:System.Data.DataSet> . Существует несколько способов загрузить данные в <xref:System.Data.DataSet> , например, с помощью <xref:System.Data.Common.DataAdapter> класса или [LINQ to SQL](./sql/linq/index.md). После загрузки данных в <xref:System.Data.DataSet> объект можно начать с запроса. Запросы составления, использующие LINQ to DataSet, аналогичны использованию Language-Integrated query (LINQ) с другими источниками данных, поддерживающими LINQ. Запросы LINQ можно выполнять с отдельными таблицами в <xref:System.Data.DataSet> или на более чем в одной таблице с помощью <xref:System.Linq.Enumerable.Join%2A> <xref:System.Linq.Enumerable.GroupJoin%2A> стандартных операторов запросов.  
   
  Запросы LINQ поддерживаются как для типизированных, так и для нетипизированных <xref:System.Data.DataSet> объектов. Если схема <xref:System.Data.DataSet> известна во время разработки приложения, рекомендуется использование типизированного <xref:System.Data.DataSet>. В типизированном <xref:System.Data.DataSet> в таблицах и строках есть типизированные члены для каждого столбца, которые делают запросы проще и более читаемыми.  
   
@@ -31,7 +32,7 @@ ms.locfileid: "91200619"
   
  В многоуровневых приложениях объект <xref:System.Data.DataSet> часто используется на среднем уровне, чтобы кэшировать данные для веб-приложений. Функции запроса LINQ to DataSet реализуются через методы расширения и расширяют существующие ADO.NET 2,0 <xref:System.Data.DataSet> .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы к DataSet](querying-datasets-linq-to-dataset.md)
 - [LINQ — C#](../../../csharp/programming-guide/concepts/linq/index.md)

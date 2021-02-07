@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в LINQ to SQL объектной модели
 title: Модель объектов LINQ to SQL
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 81dd0c37-e2a4-4694-83b0-f2e49e693810
-ms.openlocfilehash: b17e1b6f4a6f849e3b42d69e9b9c2d5f906218e1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: be4021019d09d1479364b25268eefda50b6eaa6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681270"
 ---
 # <a name="the-linq-to-sql-object-model"></a>Модель объектов LINQ to SQL
 
@@ -89,7 +90,7 @@ ms.locfileid: "91155514"
   
  Дополнительные сведения см. в разделах атрибут функции, атрибут хранимой процедуры и атрибуты параметра в [сопоставлении на основе атрибутов](attribute-based-mapping.md) и [хранимых процедурах](stored-procedures.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сопоставление, основанное на атрибутах](attribute-based-mapping.md)
 - [Основные сведения](background-information.md)

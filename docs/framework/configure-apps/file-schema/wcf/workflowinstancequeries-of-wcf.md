@@ -1,15 +1,16 @@
 ---
-title: <workflowInstanceQueries>WCF
+description: 'Дополнительные сведения о: <workflowInstanceQueries> из WCF'
+title: <workflowInstanceQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: b0852f77-16e4-4d55-8eb7-a19feb0e8fc4
-ms.openlocfilehash: 8a58767745efab67fb7550de8770fec2c6226117
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d4dc4827cba5a1732070b5269350ca3dd9bf2c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682336"
 ---
-# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries>WCF
+# <a name="workflowinstancequeries-of-wcf"></a>\<workflowInstanceQueries> WCF
 
 Представляет коллекцию элементов конфигурации, которые отслеживают изменения жизненного цикла экземпляра рабочего процесса, например события «запущен» или «завершен».  
   
@@ -63,7 +64,7 @@ ms.locfileid: "70854770"
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, определяемого свойством [ActivityDefinitionId](xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement.ActivityDefinitionId) .|  
   
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Запрос <xref:System.Activities.Tracking.WorkflowInstanceQuery> используется для подписки на следующие объекты <xref:System.Activities.Tracking.TrackingRecord>.  
   

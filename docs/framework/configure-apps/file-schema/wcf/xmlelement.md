@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <xmlElement>'
 title: <xmlElement>
 ms.date: 03/30/2017
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
-ms.openlocfilehash: 0ab7fbd64cc92e940617f5334eeb16fcb3a50c4a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 891f1a95c1f6a79127d48a1572bc805574225530
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682011"
 ---
 # \<xmlElement>
 
@@ -51,7 +52,7 @@ ms.locfileid: "91181236"
 |-------------|-----------------|  
 |[\<tokenRequestParameters>](tokenrequestparameters.md)|Коллекция параметров запроса маркера. Каждый параметр представляет собой элемент XML.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters%2A>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters%2A>
