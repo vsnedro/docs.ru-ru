@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения о КУРСОРах Oracle REF
 title: REF CURSOR в Oracle
 ms.date: 03/30/2017
 ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
-ms.openlocfilehash: cbf330ba381a825c2d16038c01d7bdc52bc8f482
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a9c5e95a9f0d2da74fd6a3db19f15699a3e2787
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672456"
 ---
 # <a name="oracle-ref-cursors"></a>REF CURSOR в Oracle
 
-Поставщик данных .NET Framework для Oracle поддерживает тип данных Oracle **ref Cursor** . При использовании поставщика данных для работы с данными типа REF CURSOR Oracle необходимо учитывать следующие особенности его функционирования.  
+Поставщик данных платформа .NET Framework для Oracle поддерживает тип данных Oracle **ref Cursor** . При использовании поставщика данных для работы с данными типа REF CURSOR Oracle необходимо учитывать следующие особенности его функционирования.  
   
 > [!NOTE]
 > По некоторым особенностям функционирования он отличается от поставщика Microsoft OLE DB для Oracle (MSDAORA).  
@@ -30,7 +31,7 @@ ms.locfileid: "91180885"
   
 - **Табличный** тип данных PL/SQL не поддерживается. Но данные типа REF CURSOR являются более эффективными. Если необходимо использовать **табличный** тип данных, используйте поставщик данных OLE DB .NET с MSDAORA.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Примеры REF CURSOR](ref-cursor-examples.md)  
  Содержит три примера, которые демонстрируют использование данных типа REF CURSOR.  
@@ -44,7 +45,7 @@ ms.locfileid: "91180885"
  [Заполнение набора данных с помощью одного или нескольких параметров REF CURSOR](filling-a-dataset-using-one-or-more-ref-cursors.md)  
  Показывает, как выполнить хранимую процедуру PL/SQL, которая возвращает два параметра REF CURSOR и заполняет <xref:System.Data.DataSet> возвращаемыми строками.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Oracle и ADO.NET](oracle-and-adonet.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

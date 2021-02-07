@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostSecurityManager:: SetSecurityContext'
 title: Метод IHostSecurityManager::SetSecurityContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e4372384-ee69-48d7-97e0-8fab7866597a
 topic_type:
 - apiref
-ms.openlocfilehash: dadacaea2b8741afc7b8c51404e2604dc759a629
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ee2de40e043e626aba1d75540faab3cae4c8fb7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671481"
 ---
 # <a name="ihostsecuritymanagersetsecuritycontext-method"></a>Метод IHostSecurityManager::SetSecurityContext
 
@@ -54,7 +55,7 @@ HRESULT SetSecurityContext (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR вызывает `SetSecurityContext` в нескольких сценариях. Перед выполнением конструкторов классов и модулей и методов завершения среда CLR вызывает `SetSecurityContext` для защиты узла от сбоев при выполнении. Затем он сбрасывает контекст безопасности до исходного состояния после выполнения конструктора или метода завершения, используя другой вызов `SetSecurityContext` . Аналогичный шаблон происходит при завершении ввода-вывода. Если узел реализует [IHostIoCompletionManager](ihostiocompletionmanager-interface.md), среда CLR вызывает `SetSecurityContext` после того, как узел вызывает [ICLRIoCompletionManager:: OnComplete](iclriocompletionmanager-oncomplete-method.md).  
   
@@ -68,9 +69,9 @@ HRESULT SetSecurityContext (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.ThreadPool?displayProperty=nameWithType>
 - [Перечисление EContextType](econtexttype-enumeration.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameSignatureSize
 title: Функция StrongNameSignatureSize
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
 topic_type:
 - apiref
-ms.openlocfilehash: 6a2b3afe66f1eaa358c5f80de50f14ceb730048b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3f22a6a4d5455af4dd17cb75edfd18befed7de3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670532"
 ---
 # <a name="strongnamesignaturesize-function"></a>Функция StrongNameSignatureSize
 
@@ -52,7 +53,7 @@ BOOLEAN StrongNameSignatureSize (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `StrongNameSignatureSize` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
@@ -64,9 +65,9 @@ BOOLEAN StrongNameSignatureSize (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: выполнение пакетных операций с использованием адаптеров обработки'
 title: Выполнение пакетных операций с использованием объектов DataAdapters
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e72ed5af-b24f-486c-8429-c8fd2208f844
-ms.openlocfilehash: 9dd6abb91b3549e3bc8b4ae84cbb227171512ecb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d0472761a0a3893872f073cfe25921066a0f96bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672339"
 ---
 # <a name="performing-batch-operations-using-dataadapters"></a>Выполнение пакетных операций с использованием объектов DataAdapters
 
@@ -26,7 +27,7 @@ ms.locfileid: "91177427"
 
  Если пакетные обновления включены, значение свойства <xref:System.Data.IDbCommand.UpdatedRowSource%2A> для `UpdateCommand`, `InsertCommand` и `DeleteCommand` объекта DataAdapter должно быть установлено в <xref:System.Data.UpdateRowSource.None> или <xref:System.Data.UpdateRowSource.OutputParameters>. При выполнении пакетного обновления значение свойства <xref:System.Data.IDbCommand.UpdatedRowSource%2A> команды для <xref:System.Data.UpdateRowSource.FirstReturnedRecord> или <xref:System.Data.UpdateRowSource.Both> недействительно.  
   
- Следующая процедура демонстрирует использование свойства `UpdateBatchSize`. Процедура принимает два аргумента — <xref:System.Data.DataSet> объект со столбцами, представляющими поля **ProductCategoryID** и **Name** в таблице **Production. ProductCategory** , и целое число, представляющее размер пакета (число строк в пакете). Код создает новый объект <xref:System.Data.SqlClient.SqlDataAdapter>, устанавливая его свойства <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> и <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A>. В коде предполагается, что объект <xref:System.Data.DataSet> имеет измененные строки. В нем устанавливается свойство `UpdateBatchSize` и выполняется обновление.  
+ Следующая процедура демонстрирует использование свойства `UpdateBatchSize`. Процедура принимает два аргумента, объект <xref:System.Data.DataSet>, который имеет столбцы, представляющие поля **ProductCategoryID** и **Name** в таблице **Production.ProductCategory**, и целое число, представляющее размер пакета (число строк в пакете). Код создает новый объект <xref:System.Data.SqlClient.SqlDataAdapter>, устанавливая его свойства <xref:System.Data.SqlClient.SqlDataAdapter.UpdateCommand%2A>, <xref:System.Data.SqlClient.SqlDataAdapter.InsertCommand%2A> и <xref:System.Data.SqlClient.SqlDataAdapter.DeleteCommand%2A>. В коде предполагается, что объект <xref:System.Data.DataSet> имеет измененные строки. В нем устанавливается свойство `UpdateBatchSize` и выполняется обновление.  
   
 ```vb  
 Public Sub BatchUpdate( _  
@@ -129,7 +130,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
 ## <a name="handling-batch-update-related-events-and-errors"></a>Обработка событий и ошибок, связанных с обновлением пакета  
 
- **DataAdapter** имеет два связанных с обновлением события: **RowUpdating** и **RowUpdated**. В более ранних версиях ADO.NET, если пакетная обработка отключена, каждое из этих событий формируется для каждой обрабатываемой строки. **Событие RowUpdating** создается до выполнения обновления, а **событие RowUpdated** создается после завершения обновления базы данных.  
+ Объект **DataAdapter** имеет два события, связанных с обновлением: **RowUpdating** и **RowUpdated**. В более ранних версиях ADO.NET, если пакетная обработка отключена, каждое из этих событий формируется для каждой обрабатываемой строки. **Событие RowUpdating** создается до выполнения обновления, а **событие RowUpdated** создается после завершения обновления базы данных.  
   
 ### <a name="event-behavior-changes-with-batch-updates"></a>Изменение поведения событий при пакетных обновлениях  
 
@@ -147,7 +148,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
  Поставщик данных и сервер базы данных определяют, какие конструкции SQL поддерживаются для пакетного обновления. Если неподдерживаемая инструкция подается на выполнение, создается исключение.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)
 - [Обновление источников данных с объектами DataAdapter](updating-data-sources-with-dataadapters.md)

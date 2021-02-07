@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameKeyInstall
 title: Функция StrongNameKeyInstall
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e32fd546-7757-4681-be3d-658e93281e50
 topic_type:
 - apiref
-ms.openlocfilehash: 9e441d4da64e9704fbda2368d2b07289aaea610a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0a5d3971ac0927dda7066405adc01a5c80b7faca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125201"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670558"
 ---
 # <a name="strongnamekeyinstall-function"></a>Функция StrongNameKeyInstall
 
@@ -40,23 +41,23 @@ BOOLEAN StrongNameKeyInstall (
 ## <a name="parameters"></a>Параметры
 
 `wszKeyContainer`\
-окне Имя контейнера ключей. `wszKeyContainer` должен быть непустой строкой.
+окне Имя контейнера ключей. `wszKeyContainer` значение должно быть непустой строкой.
 
 `pbKeyBlob`\
 окне Пара двоичных ключей.
 
 `cbKeyBlob`\
-окне Размер `pbKeyBlob`в байтах.
+окне Размер (в байтах) `pbKeyBlob` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-`true` при успешном завершении; в противном случае `false`.
+`true` При успешном завершении; в противном случае — `false` .
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Чтобы удалить контейнер ключей, используйте функцию [StrongNameKeyDelete](strongnamekeydelete-function.md) .
 
-Если функция `StrongNameKeyInstall` не завершается успешно, вызовите функцию [StrongNameErrorInfo](strongnameerrorinfo-function.md), чтобы получить последнюю созданную ошибку.
+Если `StrongNameKeyInstall` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.
 
 ## <a name="requirements"></a>Требования
 
@@ -64,9 +65,9 @@ BOOLEAN StrongNameKeyInstall (
 
 **Заголовок:** StrongName. h
 
-**Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll
+**Библиотека:** Включается в качестве ресурса в MsCorEE.dll
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

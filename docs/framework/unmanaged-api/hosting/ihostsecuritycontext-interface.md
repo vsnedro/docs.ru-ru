@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс IHostSecurityContext'
 title: Интерфейс IHostSecurityContext
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842
 topic_type:
 - apiref
-ms.openlocfilehash: aafaa1d648396ddaa76193fa15cf7f74394777a9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c4c1be00a8b1c9df58797a0f2fc7e60abcab9673
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724810"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671650"
 ---
 # <a name="ihostsecuritycontext-interface"></a>Интерфейс IHostSecurityContext
 
@@ -31,7 +32,7 @@ ms.locfileid: "95724810"
 |------------|-----------------|  
 |[Метод Capture](ihostsecuritycontext-capture-method.md)|Возвращает клон `IHostSecurityContext` экземпляра, возвращенного из вызова [IHostSecurityManager:: getsecuritycontext-](ihostsecuritymanager-getsecuritycontext-method.md).|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел может управлять доступом кода к маркерам потоков как средой CLR, так и кодом пользователя. Он также может гарантировать, что полные сведения о контексте безопасности передаются по асинхронным операциям или кодовым точкам с ограниченным доступом к коду. `IHostSecurityContext` инкапсулирует эти сведения о контексте безопасности, которые непрозрачны для среды выполнения. Среда выполнения захватывает эти сведения с помощью `Capture` и перемещает их между отправкой рабочего элемента пула потоков, выполнением метода завершения, а также конструкторами модулей и классов.  
   
@@ -43,9 +44,9 @@ ms.locfileid: "95724810"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRHostProtectionManager](iclrhostprotectionmanager-interface.md)
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

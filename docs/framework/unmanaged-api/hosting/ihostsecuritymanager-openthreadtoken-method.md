@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostSecurityManager:: Опенсреадтокен'
 title: Метод IHostSecurityManager::OpenThreadToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
 topic_type:
 - apiref
-ms.openlocfilehash: 30ec8cc8bbbd6d49f89cd67371c3326c0cb0df9a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e0273f379f4adcf71396630b367a94c623ae15f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671570"
 ---
 # <a name="ihostsecuritymanageropenthreadtoken-method"></a>Метод IHostSecurityManager::OpenThreadToken
 
@@ -58,7 +59,7 @@ HRESULT OpenThreadToken (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostSecurityManager::OpenThreadToken` ведет себя аналогично соответствующей функции Win32 с тем же именем, за исключением того, что функция Win32 позволяет вызывающему объекту передать маркер произвольному потоку, а `IHostSecurityManager::OpenThreadToken` открывает только маркер, связанный с вызывающим потоком.  
   
@@ -72,9 +73,9 @@ HRESULT OpenThreadToken (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о системных функциях
 title: Системные функции
 ms.date: 03/30/2017
 ms.assetid: b7c71b58-09e6-44ce-a3e5-a0fdb892fb86
-ms.openlocfilehash: 0d46429ac958e6f5db4d51947669784303af783b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2346f92cb74a21e34f1413f64c2e392961b931be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673093"
 ---
 # <a name="system-functions"></a>Системные функции
 
@@ -27,7 +28,7 @@ ms.locfileid: "91156502"
   
  Дополнительные сведения о `String` функциях, поддерживаемых SqlClient, см. в разделе [строковые функции (TRANSACT-SQL)](/sql/t-sql/functions/string-functions-transact-sql).
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Язык Entity SQL](./language-reference/entity-sql-language.md)
 - [Функции SqlClient для Entity Framework](sqlclient-for-ef-functions.md)

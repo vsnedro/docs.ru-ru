@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: LINQ to DataSet примеры'
 title: Примеры LINQ to DataSet
 ms.date: 03/30/2017
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
-ms.openlocfilehash: 48511dc7ae249e35b9bd76e0d6d3d9f1ef39dde0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 65977210fb160439231ea723134c94eb56ca8930
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672755"
 ---
 # <a name="linq-to-dataset-examples"></a>Примеры LINQ to DataSet
 
 В этом разделе приводятся LINQ to DataSet примеры программирования, в которых используются стандартные операторы запросов. Объект, <xref:System.Data.DataSet> используемый в этих примерах, заполняется с помощью `FillDataSet` метода, который задается при [загрузке данных в набор данных](loading-data-into-a-dataset.md). Дополнительные сведения см. в разделе Общие сведения [о стандартных операторах запросов (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) или [Общие сведения о стандартных операторах запросов (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Примеры выражений запросов](query-expression-examples-linq-to-dataset.md)  
  Содержит следующие примеры.  
@@ -54,7 +55,7 @@ ms.locfileid: "91169522"
  [Связанные с определенными наборами данных примеры операторов](dataset-specific-operator-examples-linq-to-dataset.md)  
  Содержит примеры, в которых показано, как использовать метод <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> и класс <xref:System.Data.DataRowComparer>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Руководство по программированию](programming-guide-linq-to-dataset.md)
 - [Загрузка данных в набор данных](loading-data-into-a-dataset.md)

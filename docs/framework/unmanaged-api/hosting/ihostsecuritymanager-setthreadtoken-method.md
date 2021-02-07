@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostSecurityManager:: Сетсреадтокен'
 title: Метод IHostSecurityManager::SetThreadToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
 topic_type:
 - apiref
-ms.openlocfilehash: 5a2b2e5560c292598f0110de9445eb66ba794997
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96fb8d487cecc0e62d9b7787c686c74898d99d70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671403"
 ---
 # <a name="ihostsecuritymanagersetthreadtoken-method"></a>Метод IHostSecurityManager::SetThreadToken
 
@@ -50,7 +51,7 @@ HRESULT SetThreadToken (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostSecurityManager::SetThreadToken` ведет себя аналогично соответствующей функции Win32 с тем же именем, за исключением того, что функция Win32 позволяет вызывающему объекту передать маркер произвольному потоку, в то время как он `IHostSecurityManager::SetThreadToken` может связать маркер только с текущим выполняющимся потоком.  
   
@@ -64,9 +65,9 @@ HRESULT SetThreadToken (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)
 - [Интерфейс IHostThreadPoolManager](ihostthreadpoolmanager-interface.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: получение данных и операции CUD в N-уровневых приложениях (LINQ to SQL)'
 title: Извлечение данных и операции создания, обновления и удаления в N-уровневых приложениях (LINQ to SQL)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c3133d53-83ed-4a4d-af8b-82edcf3831db
-ms.openlocfilehash: 1bc97504b4dd053ce9ef747460a79865cbe836ee
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: dbad65e1bd29227f434166dca364946a68256177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672170"
 ---
 # <a name="data-retrieval-and-cud-operations-in-n-tier-applications-linq-to-sql"></a>Извлечение данных и операции создания, обновления и удаления в N-уровневых приложениях (LINQ to SQL)
 
@@ -400,7 +401,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
   
  Если один из этих обязательных членов отсутствует, то при выполнении метода <xref:System.Data.Linq.ChangeConflictException> вызывается исключение <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ("Строка не найдена или изменена").  
   
-### <a name="state"></a>Состояние  
+### <a name="state"></a>Область  
 
  После того как объект сущности присоединен к экземпляру <xref:System.Data.Linq.DataContext>, состоянием объекта считается значение `PossiblyModified`. Для принудительного присвоения объекту состояния `Modified` можно использовать три способа.  
   
@@ -416,7 +417,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
   
  Если при присоединении набора объектов `IEnumerable` в кэше оказывается совпадающий ключ, вызывается исключение <xref:System.Data.Linq.DuplicateKeyException>. Остальные объекты не присоединяются.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [N-уровневые и удаленные приложения с LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Основные сведения](background-information.md)

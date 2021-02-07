@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostSecurityManager:: Имперсонателогжедонусер'
 title: Метод IHostSecurityManager::ImpersonateLoggedOnUser
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acc49ba0-f1d9-45ad-871f-9d053a89dcbe
 topic_type:
 - apiref
-ms.openlocfilehash: dd1d1af8072ac11e37bd2eb1a47d76b12685cb31
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7b77e0a163551a48629898b1311fc19ba815aaf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724784"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671598"
 ---
 # <a name="ihostsecuritymanagerimpersonateloggedonuser-method"></a>Метод IHostSecurityManager::ImpersonateLoggedOnUser
 
@@ -50,7 +51,7 @@ HRESULT ImpersonateLoggedOnUser (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызов `LogonUser` или связанная функция Win32 для получения маркера учетных данных удостоверения текущего пользователя.  
   
@@ -64,9 +65,9 @@ HRESULT ImpersonateLoggedOnUser (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Интерфейс IHostSecurityManager](ihostsecuritymanager-interface.md)

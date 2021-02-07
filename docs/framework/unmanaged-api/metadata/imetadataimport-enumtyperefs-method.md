@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: EnumTypeRefs'
 title: Метод IMetaDataImport::EnumTypeRefs
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type:
 - apiref
-ms.openlocfilehash: e77520552eea9b58e4358cc5928e5ce666037009
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1155357e82c08660a852225f0b1a54629cbee0ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670636"
 ---
 # <a name="imetadataimportenumtyperefs-method"></a>Метод IMetaDataImport::EnumTypeRefs
 
@@ -58,7 +59,7 @@ HRESULT EnumTypeRefs (
 |`S_OK`|`EnumTypeRefs` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcTypeRefs` равно нулю.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Токен TypeRef представляет ссылку на тип.  
   
@@ -70,9 +71,9 @@ HRESULT EnumTypeRefs (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

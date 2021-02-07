@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: SqlClient для Entity Framework'
 title: SqlClient для Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
-ms.openlocfilehash: 7f3a1d4bbd18977bbb1dc9ce65140428ea6fe2f8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eba5602c13f66d1ee4404bbc27035304e34c1cd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673132"
 ---
 # <a name="sqlclient-for-the-entity-framework"></a>SqlClient для Entity Framework
 
@@ -46,7 +47,7 @@ ms.locfileid: "91156541"
 
  Поставщик SqlClient для платформы Entity Framework определяет список функций, поддерживаемых поставщиком. Список поддерживаемых функций см. в разделе [SqlClient for Entity Framework functions](sqlclient-for-ef-functions.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Функции SqlClient для Entity Framework](sqlclient-for-ef-functions.md)  
   
@@ -54,7 +55,7 @@ ms.locfileid: "91156541"
   
  [Известные проблемы SqlClient для Entity Framework](known-issues-in-sqlclient-for-entity-framework.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Язык Entity SQL](./language-reference/entity-sql-language.md)
 - [Справочник по языку](./language-reference/index.md)

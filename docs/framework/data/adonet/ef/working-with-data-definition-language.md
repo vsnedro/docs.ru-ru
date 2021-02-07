@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: работа с языком описания данных'
 title: Работа с языком описания данных DDL
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
-ms.openlocfilehash: c30cbbc1eae6d4cbcadb9bfe8d267fb428764971
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2f924087d12b519e6086289a91dedce3a88199f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673028"
 ---
 # <a name="working-with-data-definition-language"></a>Работа с языком описания данных DDL
 
-Начиная с .NET Framework версии 4 Entity Framework поддерживает язык описания данных (DDL). Это позволяет создавать и удалять экземпляры базы данных с использованием строки подключения и метаданных модели хранения (SSDL).  
+Начиная с платформа .NET Framework версии 4 Entity Framework поддерживает язык описания данных (DDL). Это позволяет создавать и удалять экземпляры базы данных с использованием строки подключения и метаданных модели хранения (SSDL).  
   
  В следующих методах в <xref:System.Data.Objects.ObjectContext> с помощью строки соединения и содержимого SSDL выполняются следующие задачи: создание базы данных, удаление базы данных, проверка наличия базы данных и просмотр сформированного скрипта DDL.  
   

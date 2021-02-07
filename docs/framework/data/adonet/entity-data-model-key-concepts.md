@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: EDM основные понятия'
 title: Основные понятия модели EDM
 ms.date: 03/30/2017
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
-ms.openlocfilehash: d020de65ff64d93c0ea925b71e5f1546eb4402aa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4b97a39a5989689662db7be92b259b9a08d84cc7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672801"
 ---
 # <a name="entity-data-model-key-concepts"></a>Основные понятия модели EDM
 
-EDM (модель EDM) использует три ключевых понятия для описания структуры данных: *тип сущности*, *тип ассоциации*и *свойство*. Это самые важные основные понятия в описании структуры данных в любой реализации модели EDM.  
+EDM (модель EDM) использует три ключевых понятия для описания структуры данных: *тип сущности*, *тип ассоциации* и *свойство*. Это самые важные основные понятия в описании структуры данных в любой реализации модели EDM.  
   
 ## <a name="entity-type"></a>Тип сущности  
 
@@ -43,6 +44,6 @@ EDM (модель EDM) использует три ключевых поняти
   
  [!code-xml[EDM_Example_Model#EDMExampleCSDL](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#edmexamplecsdl)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

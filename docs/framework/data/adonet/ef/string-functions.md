@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: строковые функции'
 title: Строковые функции
 ms.date: 03/30/2017
 ms.assetid: 338f0c26-8aee-43eb-bd1a-ec0849a376b9
-ms.openlocfilehash: f5c9696da51591b7a44de14838313112bbc46c06
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1287d81075fd87fa730020b44dfd134a59827f8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673119"
 ---
 # <a name="string-functions"></a>Строковые функции
 
@@ -43,7 +44,7 @@ ms.locfileid: "91156528"
   
  Дополнительные сведения о `String` функциях, поддерживаемых SqlClient, см. в разделе [строковые функции (TRANSACT-SQL)](/sql/t-sql/functions/string-functions-transact-sql).
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функции SqlClient для Entity Framework](sqlclient-for-ef-functions.md)
 - [Известные проблемы SqlClient для Entity Framework](known-issues-in-sqlclient-for-entity-framework.md)
