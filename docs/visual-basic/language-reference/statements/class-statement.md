@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о инструкции: Class (Visual Basic)'
 title: Оператор Class
 ms.date: 05/12/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - classes [Visual Basic], data members
 - data members [Visual Basic], of classes
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.openlocfilehash: 3b64597fcd7453c20ed295fe263eeaa8783b20ae
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: de4541addc9f4755d973586c7d1b4410e4bf12ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673899"
 ---
 # <a name="class-statement-visual-basic"></a>Оператор Class (Visual Basic)
 
@@ -40,7 +41,7 @@ End Class
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательный элемент. Может применяться один из перечисленных ниже типов.<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br/><br/> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательный элемент. Может принимать следующие значения:<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   [Защищенный дружественный](../modifiers/protected-friend.md)<br />- [Частный защищенный](../modifiers/private-protected.md)<br/><br/> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Необязательный элемент. См. раздел [Shadows](../modifiers/shadows.md).|  
 |`MustInherit`|Необязательный элемент. См. раздел [MustInherit](../modifiers/mustinherit.md).|  
 |`NotInheritable`|Необязательный элемент. См. [NotInheritable](../modifiers/notinheritable.md).|  
@@ -99,7 +100,7 @@ End Class
 
  У этих элементов много сходства, но есть и некоторые важные отличия.  
   
-- **Терминология.** В предыдущих версиях Visual Basic распознаются два типа модулей: *модули классов* (CLS-файлы) и *стандартные модули* (файлы. BAS). Текущая версия вызывает эти *классы* и *модули*соответственно.  
+- **Терминология.** В предыдущих версиях Visual Basic распознаются два типа модулей: *модули классов* (CLS-файлы) и *стандартные модули* (файлы. BAS). Текущая версия вызывает эти *классы* и *модули* соответственно.  
   
 - **Общие члены.** Можно контролировать, является ли член класса общим или членом экземпляра.  
   

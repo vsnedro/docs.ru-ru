@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о функциях SqlClient для Entity Framework.
 title: Функции SqlClient для Entity Framework
 ms.date: 03/30/2017
 ms.assetid: 71a3613c-b94e-494c-8ad8-90cf86ae0b87
-ms.openlocfilehash: f8e8ce44c1516171926ec71227e316586d02cc14
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 16f9551ef9ead26ed62f1a9f904bffc4513973c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673262"
 ---
 # <a name="sqlclient-for-entity-framework-functions"></a>Функции SqlClient для Entity Framework
 
@@ -17,7 +18,7 @@ ms.locfileid: "91156658"
   
  Сведения о том, как канонические функции сопоставляются с SQL Server функциями, см. [в разделе концептуальная модель Каноническая для сопоставления функций SQL Server](conceptual-model-canonical-to-sql-server-functions-mapping.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Сопоставление канонических функций концептуальной модели с функциями SQL Server](conceptual-model-canonical-to-sql-server-functions-mapping.md)  
   
@@ -31,7 +32,7 @@ ms.locfileid: "91156658"
   
  [Системные функции](system-functions.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](./language-reference/entity-sql-reference.md)
 - [Общие сведения об Entity SQL](./language-reference/entity-sql-overview.md)

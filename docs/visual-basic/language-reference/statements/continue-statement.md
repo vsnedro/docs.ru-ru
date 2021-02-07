@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о инструкции Continue (Visual Basic)
 title: Оператор Continue
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Continue statement [Visual Basic]
 - loops, transferring to next iteration
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
-ms.openlocfilehash: cf73ea1b3d402609c9966980dcab9ddd9bc096c2
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c6d67e766b2551956795803076efe639ba3c8c99
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673873"
 ---
 # <a name="continue-statement-visual-basic"></a>Оператор Continue (Visual Basic)
 
@@ -47,4 +48,4 @@ Continue { Do | For | While }
 - [Оператор Do…Loop](do-loop-statement.md)
 - [Оператор For…Next](for-next-statement.md)
 - [Оператор While…End While](while-end-while-statement.md)
-- [Попробуйте... Перехватить... Оператор finally](try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](try-catch-finally-statement.md)

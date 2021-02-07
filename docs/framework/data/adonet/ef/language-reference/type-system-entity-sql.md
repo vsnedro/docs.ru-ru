@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: система типов (Entity SQL)'
 title: Система типов (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
-ms.openlocfilehash: d4c8ba7a9d9b58220455b50ff99960fa132c00c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8d0d50a2c82a309a6a496642836aabe23b6bb9bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673392"
 ---
 # <a name="type-system-entity-sql"></a>Система типов (Entity SQL)
 
@@ -52,7 +53,7 @@ from (select ref(o) as r from LOB.Orders as o) as o2
   
  Если ссылка имеет значение NULL или цель ссылки не существует, результатом становится NULL.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об Entity SQL](entity-sql-overview.md)
 - [Справочник по Entity SQL](entity-sql-reference.md)

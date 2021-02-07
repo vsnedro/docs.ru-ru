@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: TREAT (Entity SQL)'
 title: TREAT (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635
-ms.openlocfilehash: bb41c0fed944ce4db11878b9213a62c6f851418e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f014cac631d246b35d145cdb80c9aa6ac401524
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673431"
 ---
 # <a name="treat-entity-sql"></a>TREAT (Entity SQL)
 
@@ -71,7 +72,7 @@ WHERE p IS OF (NamespaceName.Employee)
   
  [!code-sql[DP EntityServices Concepts#TREAT_ISOF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#treat_isof)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Допускающие значения NULL структурированные типы](nullable-structured-types-entity-sql.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: TOP (Entity SQL)'
 title: TOP (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 4a4a0954-82e2-4eae-bcaf-7c4552f3532d
-ms.openlocfilehash: 16be25336bac386c993eae7527c9377be1073d1e
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 51e4ce53cff4b47f6f57b6b856ccb09b38e639cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673444"
 ---
 # <a name="top-entity-sql"></a>TOP (Entity SQL)
 
@@ -21,9 +22,9 @@ ms.locfileid: "72319277"
 
 ## <a name="arguments"></a>Аргументы
 
-`n` числовое выражение, задающее количество возвращаемых строк. `n` может быть одним числовым литералом или одним параметром.
+`n` Числовое выражение, задающее количество возвращаемых строк. `n` может быть одним числовым литералом или одним параметром.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Выражение TOP должно быть одним числовым литералом или одним параметром. При использовании постоянного литерала он должен поддерживать неявное повышение до Edm.Int64 (byte, int16, int32 и int64 или любой тип поставщика, который сопоставляется с типом, поддерживающим повышение до Edm.Int64), а его значение должно быть больше или равно нулю. В противном случае возникнет исключение. Если в качестве выражения используется параметр, то тип параметра также должен поддерживать неявное повышение до Edm.Int64, однако проверка фактического значения параметра во время компиляции проводиться не будет, поскольку значения параметров связываются в режиме позднего связывания.
 
@@ -54,7 +55,7 @@ select distinct top(@topParam) c.a1, c.a2 from T as a
 ## <a name="see-also"></a>См. также
 
 - [SELECT](select-entity-sql.md)
-- [SKIP](skip-entity-sql.md)
-- [LIMIT](limit-entity-sql.md)
+- [СРАЗУ](skip-entity-sql.md)
+- [Размер](limit-entity-sql.md)
 - [ORDER BY](order-by-entity-sql.md)
 - [Справочник по Entity SQL](entity-sql-reference.md)

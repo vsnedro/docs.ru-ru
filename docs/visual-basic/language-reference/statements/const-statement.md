@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор Const (Visual Basic)'
 title: Оператор Const
 ms.date: 05/12/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Const statement [Visual Basic]
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
-ms.openlocfilehash: 3b05d4067ef99e03df07d2c316c982051180d961
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 61d898823c7697c91b207a502417b49cdeaf5eea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84382111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673860"
 ---
 # <a name="const-statement-visual-basic"></a>Оператор Const (Visual Basic)
 
@@ -36,7 +37,7 @@ Const constantlist
 Необязательный элемент. Используйте его для повторного объявления и скрытия программного элемента в базовом классе. См. раздел [Shadows](../modifiers/shadows.md).
 
 `constantlist`  
-Обязательный. Список констант, объявляемых в этой инструкции.
+Обязательный элемент. Список констант, объявляемых в этой инструкции.
 
 `constant` `[ ,` `constant` `... ]`
 
@@ -44,13 +45,13 @@ Const constantlist
 
 `constantname` `[ As` `datatype` `] =` `initializer`
 
-|Часть|Описание|
+|Отделение|Описание|
 |----------|-----------------|
-|`constantname`|Обязательный. Имя константы. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`constantname`|Обязательный элемент. Имя константы. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`datatype`|Обязательный `Option Strict` , если имеет значение `On` . Тип данных константы.|
-|`initializer`|Обязательный. Выражение, которое вычисляется во время компиляции и присваивается константе.|
+|`initializer`|Обязательный элемент. Выражение, которое вычисляется во время компиляции и присваивается константе.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Если у вас есть значение, которое никогда не изменяется в приложении, можно определить именованную константу и использовать ее вместо литерального значения. Имя проще запомнить, чем значение. Вы можете определить константу только один раз и использовать ее во многих местах кода. Если в более поздней версии необходимо переопределить значение, то единственным местом, которое необходимо `Const` внести в изменение, является только инструкция.
 
@@ -104,7 +105,7 @@ Const constantlist
 
 В предыдущем примере метод используется <xref:System.Type.ToString%2A> для <xref:System.Type> объекта, возвращаемого [оператором GetType](../operators/gettype-operator.md), поскольку <xref:System.Type> не может быть преобразован в `String` using `CStr` .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Method-Based примеры синтаксиса запросов: статистические операторы'
 title: Примеры синтаксиса запросов на основе методов. Статистические операторы
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0e306067-5720-4782-9719-2286570a7e47
-ms.openlocfilehash: f8754101e7ec55fe5f9836300de1d077e1db2478
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 26398af95398905f2e28c603ef90a04a4a2c56bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673619"
 ---
 # <a name="method-based-query-syntax-examples-aggregate-operators"></a>Примеры синтаксиса запросов на основе методов. Статистические операторы
 
@@ -90,7 +91,7 @@ ms.locfileid: "91192130"
  [!code-csharp[DP L2E Examples#LongCountSimple](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#longcountsimple)]
  [!code-vb[DP L2E Examples#LongCountSimple](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#longcountsimple)]  
   
-## <a name="max"></a>Макс.  
+## <a name="max"></a>Max  
   
 ### <a name="example"></a>Пример  
 
@@ -152,6 +153,6 @@ ms.locfileid: "91192130"
  [!code-csharp[DP L2E Examples#SumGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#sumgrouped_mq)]
  [!code-vb[DP L2E Examples#SumGrouped_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#sumgrouped_mq)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

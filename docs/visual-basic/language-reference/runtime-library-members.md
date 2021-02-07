@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: члены библиотеки среды выполнения Visual Basic'
 title: Члены библиотеки времени выполнения
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft.VisualBasic namespace
 - members [Visual Basic], Visual Basic run-time library
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
-ms.openlocfilehash: f7c7d818e6439f732031e23f297661bb960effb7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cbfca94fa1e8378c04c5a9a6c9cb77b560eed4c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674185"
 ---
 # <a name="visual-basic-runtime-library-members"></a>Члены библиотеки времени выполнения Visual Basic
 
@@ -195,7 +196,7 @@ ms.locfileid: "84359494"
 
  `Microsoft.VisualBasic`Пространство имен предоставляет константы и перечисления в составе Visual Basic библиотеки времени выполнения. Эти постоянные значения можно использовать в коде. Каждое перечисление представляет определенную категорию функциональности. Дополнительные сведения см. в разделе [константы и перечисления](constants-and-enumerations.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Константы и перечисления](constants-and-enumerations.md)
 - [Ключевые слова](keywords/index.md)
