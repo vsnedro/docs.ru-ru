@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе GetScope2
 title: Метод GetScope2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 49435665-6f5a-4acd-9034-8c9244a04a63
 topic_type:
 - apiref
-ms.openlocfilehash: e8c6fd7dca13afe7504e447caca9a217c8136c27
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9a68f02a638b58e7a70207d8610607bf24b2b96b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718347"
 ---
 # <a name="getscope2-method"></a>Метод GetScope2
 
@@ -58,7 +59,7 @@ HRESULT GetScope2(
 
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)

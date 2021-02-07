@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе ImportFile
 title: Метод ImportFile
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9
 topic_type:
 - apiref
-ms.openlocfilehash: f30307884a268008fd4d1a8de31ec5a49b6ab92d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82c9c7de7cd739ee205dc3695ea651643d01ea3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705245"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718165"
 ---
 # <a name="importfile-method"></a>Метод ImportFile
 
@@ -66,7 +67,7 @@ HRESULT ImportFile(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)

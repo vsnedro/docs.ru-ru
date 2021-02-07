@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе Жетпубликкэйтокен
 title: Метод GetPublicKeyToken
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
 topic_type:
 - apiref
-ms.openlocfilehash: e41be6407076a2609a83a5be3b0c42d28914ec38
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b864c1dc61c7498ccca6aa04ef29b57a30e1a9ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718425"
 ---
 # <a name="getpublickeytoken-method"></a>Метод GetPublicKeyToken
 
@@ -58,7 +59,7 @@ HRESULT GetPublicKeyToken(
 
  Требуется ALink. h.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink2](ialink2-interface.md)
 - [Интерфейс IALink](ialink-interface.md)
