@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedMethod::/namespace'
 title: Метод ISymUnmanagedMethod::GetNamespace
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7fbbac42-b966-406d-9ae9-67bf3aea74ce
 topic_type:
 - apiref
-ms.openlocfilehash: 7e26c272ee1ecf03f7d2a347cf7ca2cc3efa2122
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8cb211b1047aff31cc4f12d538fee414c578155b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699564"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721415"
 ---
 # <a name="isymunmanagedmethodgetnamespace-method"></a>Метод ISymUnmanagedMethod::GetNamespace
 
@@ -46,6 +47,6 @@ HRESULT GetNamespace(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedMethod](isymunmanagedmethod-interface.md)

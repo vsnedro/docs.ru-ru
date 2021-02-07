@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ICorDebugProcess5:: Енумератехеап'
 title: Метод ICorDebugProcess5::EnumerateHeap
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type:
 - apiref
-ms.openlocfilehash: 22ab29f8a204a4b27dafdefcd3652cc3dcf9769c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b43e7993b114ed64d009f91746ea987198edde74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671139"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722039"
 ---
 # <a name="icordebugprocess5enumerateheap-method"></a>Метод ICorDebugProcess5::EnumerateHeap
 
@@ -39,7 +40,7 @@ HRESULT EnumerateHeap(
  `ppObject`  
  заполняет Указатель на адрес объекта интерфейса [икордебугхеапенум](icordebugheapenum-interface.md) , который является перечислителем для объектов, находящихся в управляемой куче.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Перед вызовом `ICorDebugProcess5::EnumerateHeap` метода необходимо вызвать метод [метод ICorDebugProcess5:: GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) и проверить значение `areGCStructuresValid` поля возвращенного [COR_HEAPINFO](cor-heapinfo-structure.md) объекта, чтобы гарантировать, что куча сборки мусора в ее текущем состоянии является перечислимым. Кроме того, `ICorDebugProcess5::EnumerateHeap` возвращает, `E_FAIL` Если в течение времени существования процесса присоединяется слишком рано, до выделения памяти для управляемой кучи.  
   
@@ -53,9 +54,9 @@ HRESULT EnumerateHeap(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

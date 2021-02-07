@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess6:: EnableVirtualModuleSplitting'
 title: Метод ICorDebugProcess6::EnableVirtualModuleSplitting
 ms.date: 03/30/2017
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
-ms.openlocfilehash: 56795c6879d95253383c26c92e060f252a018914
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e56e66744ab971deba18f3bdc66d0cfb2053087f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722026"
 ---
 # <a name="icordebugprocess6enablevirtualmodulesplitting-method"></a>Метод ICorDebugProcess6::EnableVirtualModuleSplitting
 
@@ -26,7 +27,7 @@ HRESULT EnableVirtualModuleSplitting(
  `enableSplitting`  
  `true`, чтобы включить разделение виртуальных модулей; `false`, чтобы отключить его.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Разделение виртуальных [модулей заставляет препроцессор](icordebug-interface.md) распознать модули, Объединенные в ходе процесса сборки, и представлять их как группу отдельных модулей, а не один большой модуль. Это изменяет поведение различных методов [ICorDebug](icordebug-interface.md) , описанных ниже.  
   
@@ -118,9 +119,9 @@ HRESULT EnableVirtualModuleSplitting(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess6](icordebugprocess6-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

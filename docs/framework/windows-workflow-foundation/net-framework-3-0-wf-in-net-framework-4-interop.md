@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: использование действий WF платформа .NET Framework 3,0 в платформа .NET Framework 4 с действием взаимодействия'
 title: Использование действий .NET Framework 3.0 WF на платформе .NET Framework 4 с действием «Interop»
 ms.date: 03/30/2017
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
-ms.openlocfilehash: 69b3a49f96de4f955b16225864be3ee46b168356
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8a91e9488b9885682d2d46f7b6afd512700157d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720115"
 ---
 # <a name="using-net-framework-30-wf-activities-in-net-framework-4-with-the-interop-activity"></a>Использование действий .NET Framework 3.0 WF на платформе .NET Framework 4 с действием «Interop»
 
-<xref:System.Activities.Statements.Interop>Действие — это [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] действие (WF 4,5), которое служит оболочкой для действия .NET Framework 3,5 (WF 3,5) в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] рабочем процессе. Действие WF 3 может быть отдельным действием или целым деревом действий. Выполнение (включая отмену и обработку исключений) и сохраняемость действия .NET Framework 3,5 происходит в контексте [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] выполняемого экземпляра рабочего процесса.  
+<xref:System.Activities.Statements.Interop>Действие — это [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] действие (WF 4,5), которое служит оболочкой для действия платформа .NET Framework 3,5 (WF 3,5) в [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] рабочем процессе. Действие WF 3 может быть отдельным действием или целым деревом действий. Выполнение (включая отмену и обработку исключений) и сохраняемость действия платформа .NET Framework 3,5 происходит в контексте [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] выполняемого экземпляра рабочего процесса.  
   
 > [!NOTE]
-> <xref:System.Activities.Statements.Interop>Действие не отображается на панели элементов конструктора рабочих процессов, если для проекта рабочего процесса не задан параметр **целевой платформы** **.NET Framework 4,5**.  
+> <xref:System.Activities.Statements.Interop>Действие не отображается на панели элементов конструктора рабочих процессов, если для проекта рабочего процесса не задан параметр **целевой платформы** **платформа .NET Framework 4,5**.  
   
 ## <a name="criteria-for-using-a-wf-3-activity-with-an-interop-activity"></a>Условия использования действия WF 3 совместно с действием взаимодействия (Interop)  
 

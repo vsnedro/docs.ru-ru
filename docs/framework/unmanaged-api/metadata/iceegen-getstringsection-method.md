@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICeeGen:: GetStringSection'
 title: Метод ICeeGen::GetStringSection
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a2267d39-69d1-4de1-bf37-f752cafacc71
 topic_type:
 - apiref
-ms.openlocfilehash: bd284bced625de39791377a9248796ca3dd76f5c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef4b4bb502e1099b9b3bcdbd494d03df0858aa6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721064"
 ---
 # <a name="iceegengetstringsection-method"></a>Метод ICeeGen::GetStringSection
 
@@ -49,8 +50,8 @@ HRESULT GetStringSection (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

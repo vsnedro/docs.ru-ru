@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorPublishEnum'
 title: Интерфейс ICorPublishEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type:
 - apiref
-ms.openlocfilehash: 492d4b727ce507340fec47d30a791aa49d0cecb6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c0d50f67bd61eecbade0b226f2f569ac26712faf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721610"
 ---
 # <a name="icorpublishenum-interface"></a>Интерфейс ICorPublishEnum
 
@@ -34,7 +35,7 @@ ms.locfileid: "95693350"
 |[Метод Reset](icorpublishenum-reset-method.md)|Перемещает курсор в начало перечисления.|  
 |[Метод Skip](icorpublishenum-skip-method.md)|Перемещает курсор вперед в перечислении на указанное число элементов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Следующие перечислители являются производными от `ICorPublishEnum` :  
   
@@ -50,9 +51,9 @@ ms.locfileid: "95693350"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Кокласс CorpubPublish](corpubpublish-coclass.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

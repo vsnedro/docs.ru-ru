@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedENCUpdate'
 title: Интерфейс ISymUnmanagedENCUpdate
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 63a9ef45-01a6-46da-b958-5c6dc2dc232c
 topic_type:
 - apiref
-ms.openlocfilehash: 5e3c2ecd1bdd5c1181223c7500eb7473e20fa5d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4527dfbba840be00cf87a80cdcef3cbde6f275df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721428"
 ---
 # <a name="isymunmanagedencupdate-interface"></a>Интерфейс ISymUnmanagedENCUpdate
 
@@ -39,6 +40,6 @@ ms.locfileid: "95731349"
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

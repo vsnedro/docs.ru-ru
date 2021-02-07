@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: GetNameFromToken'
 title: Метод IMetaDataImport::GetNameFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
 topic_type:
 - apiref
-ms.openlocfilehash: 867fb0ee4bc1a093eb7fd46e25497d585c4d9b6b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6195020a2b291a47e908b257896bdba64b0a40d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727501"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720856"
 ---
 # <a name="imetadataimportgetnamefromtoken-method"></a>Метод IMetaDataImport::GetNameFromToken
 
@@ -43,7 +44,7 @@ HRESULT GetNameFromToken (
  `pszUtf8NamePtr`  
  заполняет Указатель на имя объекта UTF-8 в куче.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetNameFromToken` устарел. В качестве альтернативы можно вызвать метод, чтобы получить свойства требуемого типа токена, например `GetFieldProps` для поля или `GetMethodProps` для метода.  
   
@@ -55,9 +56,9 @@ HRESULT GetNameFromToken (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:** 1,0  
+ **Платформа .NET Framework версии:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

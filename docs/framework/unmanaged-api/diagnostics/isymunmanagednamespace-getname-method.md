@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedNamespace:: Name'
 title: Метод ISymUnmanagedNamespace::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 657bf91d-005a-4ea4-9298-04d1291c0bc3
 topic_type:
 - apiref
-ms.openlocfilehash: eca1137fb607d64e8645de5b0afc7ca391eac763
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4d366363cd089995f98039389f59077e949fb79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721220"
 ---
 # <a name="isymunmanagednamespacegetname-method"></a>Метод ISymUnmanagedNamespace::GetName
 
@@ -55,6 +56,6 @@ HRESULT GetName(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

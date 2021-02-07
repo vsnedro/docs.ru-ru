@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorPublishAppDomain:: GetID'
 title: Метод ICorPublishAppDomain::GetID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 229437e3-1465-4bd8-8846-9804b2488133
 topic_type:
 - apiref
-ms.openlocfilehash: ab331145a8147e8830cb9b158a1975bc748c7cce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b3de19c053b5fcce2af5e0036ee6174b01700aac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716867"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721844"
 ---
 # <a name="icorpublishappdomaingetid-method"></a>Метод ICorPublishAppDomain::GetID
 
@@ -39,7 +40,7 @@ HRESULT GetID (
  `puId`  
  заполняет Указатель на идентификатор домена приложения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Идентификатор уникален только в области содержащего его процесса.  
   
@@ -51,8 +52,8 @@ HRESULT GetID (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorPublishAppDomain](icorpublishappdomain-interface.md)
