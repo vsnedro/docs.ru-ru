@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о сохранении расширяемости хранилища
 title: Расширяемость хранилища
 ms.date: 03/30/2017
 ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5
-ms.openlocfilehash: 46c1ea40925a5c79180171da9a705d7e6b7c8b89
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f04c466224aacd1c8f755e7aa60b18846d0c7180
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755230"
 ---
 # <a name="store-extensibility"></a>Расширяемость хранилища
 
@@ -36,9 +37,9 @@ ms.locfileid: "61641610"
     application.Extensions.Add(documentStatusExtension);
     ```
 
-     Дополнительные сведения о добавлении нестандартного участника сохраняемости см. в разделе [участников сохраняемости](persistence-participants.md) образца.
+     Дополнительные сведения о добавлении настраиваемого участника сохраняемости см. в образце [участников сохраняемости](persistence-participants.md) .
 
-3. Настраиваемые действия в приложение обработки Документов заполняют различные поля состояния в **Execute** метод.
+3. Пользовательские действия в приложении DP заполняют различные поля состояния в методе **EXECUTE** .
 
     ```csharp
     public override void Execute(CodeActivityContext context)
@@ -52,7 +53,7 @@ ms.locfileid: "61641610"
     }
     ```
 
-4. Когда экземпляр рабочего процесса достигает точки сохраняемости, **CollectValues** метод **DocumentStatusExtension** участника сохраняемости сохраняет эти свойства в данных сохраняемости Коллекция.
+4. Когда экземпляр рабочего процесса достигает точки сохраняемости, метод **CollectValues** участника сохраняемости **документстатусекстенсион** сохраняет эти свойства в коллекции данных сохраняемости.
 
     ```csharp
     class DocumentStatusExtension : PersistenceParticipant
@@ -74,9 +75,9 @@ ms.locfileid: "61641610"
     ```
 
     > [!NOTE]
-    > Все эти свойства передаются **SqlWorkflowInstanceStore** платформой сохраняемости через **SaveWorkflowCommand.InstanceData** коллекции.
+    > Все эти свойства передаются в **SqlWorkflowInstanceStore** средой сохраняемости с помощью коллекции **савеворкфловкомманд. инстанцедата** .
 
-5. Приложение обработки Документов инициализирует Store экземпляра рабочего процесса SQL и вызывает **Promote** способ повышения уровня этих данных.
+5. Приложение DP инициализирует хранилище экземпляров рабочих процессов SQL и вызывает метод **Promote** для продвижения этих данных.
 
     ```csharp
     SqlWorkflowInstanceStore store = new SqlWorkflowInstanceStore(connectionString);
@@ -92,7 +93,7 @@ ms.locfileid: "61641610"
     store.Promote("DocumentStatus", variantProperties, null);
     ```
 
-    На основании этой информации продвижение **SqlWorkflowInstanceStore** помещает свойства данных в столбцах [InstancePromotedProperties](#InstancePromotedProperties) представления.
+    На основе этих сведений об акциях **SqlWorkflowInstanceStore** размещает свойства данных в столбцах представления [инстанцепромотедпропертиес](#InstancePromotedProperties) .
 
 6. Чтобы создать запрос к подмножеству данных из таблицы повышения уровня, приложение обработки данных добавляет пользовательское представление к представлению повышения уровня.
 
@@ -109,7 +110,7 @@ ms.locfileid: "61641610"
     go
     ```
 
-## <a name="InstancePromotedProperties"></a> Представление [System.Activities.DurableInstancing.InstancePromotedProperties]
+## <a name="systemactivitiesdurableinstancinginstancepromotedproperties-view"></a><a name="InstancePromotedProperties"></a> [System. Activity. DurableInstancing. Инстанцепромотедпропертиес] представление
 
 |Имя столбца|Тип столбца|Описание|
 |-----------------|-----------------|-----------------|
