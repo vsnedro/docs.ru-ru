@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о модулях (Visual Basic)
 title: Модули
 ms.date: 07/20/2015
 helpviewer_keywords:
 - modules, Visual Basic
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
-ms.openlocfilehash: df7e32a81746a97a78a4a2a28e57032affa73cc0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 59a7c1ba94f8ad013ad2c9b6e335d0e9f411058a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674757"
 ---
 # <a name="modules-visual-basic"></a>Модули (Visual Basic)
 
@@ -30,6 +31,6 @@ Visual Basic предоставляет несколько модулей, ко�
 |<xref:Microsoft.VisualBasic.Strings>|Содержит элементы, выполняющие строковые операции, такие как переформатирование строк, поиск строки, получение длины строки и т. д.|  
 |<xref:Microsoft.VisualBasic.VBMath>|Содержит члены, выполняющие математические операции.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по языку Visual Basic](index.md)

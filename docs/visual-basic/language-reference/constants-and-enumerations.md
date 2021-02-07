@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константы и перечисления (Visual Basic)'
 title: Константы и перечисления
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - constants [Visual Basic]
 - constants [Visual Basic], list of
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
-ms.openlocfilehash: 60cd1ddac9bca685ddc5778e7d289710245a183e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4306b007fc5cc881cbe1342a5f4bdd7802c252f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675147"
 ---
 # <a name="constants-and-enumerations-visual-basic"></a>Константы и перечисления (Visual Basic)
 
@@ -81,7 +82,7 @@ Visual Basic предоставляет разработчикам ряд пре
 |<xref:Microsoft.VisualBasic.VariantType>|Указывает тип объекта Variant, возвращенного функцией <xref:Microsoft.VisualBasic.Information.VarType%2A>.|  
 |<xref:Microsoft.VisualBasic.VbStrConv>|Указывает, преобразование какого типа следует выполнить при вызове функции <xref:Microsoft.VisualBasic.Strings.StrConv%2A>.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по языку Visual Basic](index.md)
 - [Общие сведения о константах](../programming-guide/language-features/constants-enums/constants-overview.md)

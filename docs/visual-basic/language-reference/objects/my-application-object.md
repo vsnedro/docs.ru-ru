@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: My. Application Object'
 title: Объект My.Application
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application object
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
-ms.openlocfilehash: 89ca6f9b3bac384a1155f236134f32e61c51a01e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fa9f91cf100c6008f2f3b8c85c9792fa6ffd4904
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674562"
 ---
 # <a name="myapplication-object"></a>Объект My.Application
 
