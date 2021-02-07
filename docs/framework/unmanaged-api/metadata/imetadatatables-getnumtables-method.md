@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataTables:: GetNumTables'
 title: Метод IMetaDataTables::GetNumTables
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8196f2a3-bbf2-45d3-a6cd-74502c356644
 topic_type:
 - apiref
-ms.openlocfilehash: 7e1ea16e7954f21b1349e88d43d7e3b271a57ed7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1d1e386b1f1eb0f73fbd0df8ddff9cebc5817692
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680298"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687848"
 ---
 # <a name="imetadatatablesgetnumtables-method"></a>Метод IMetaDataTables::GetNumTables
 
@@ -47,9 +48,9 @@ HRESULT GetNumTables (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)
