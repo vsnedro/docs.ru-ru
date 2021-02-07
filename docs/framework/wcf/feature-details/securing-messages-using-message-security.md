@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: защита сообщений с помощью безопасности сообщений'
 title: Защита сообщений с использованием средств обеспечения безопасности сообщений
 ms.date: 03/30/2017
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-ms.openlocfilehash: 6aae16b766889f402f774451338ae2cd30162437
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 006caa232ef0ae92dfd27b03d7a20af3f4174c81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733064"
 ---
 # <a name="securing-messages-using-message-security"></a>Защита сообщений с использованием средств обеспечения безопасности сообщений
 
@@ -36,7 +37,7 @@ ms.locfileid: "96288608"
   
  В этом разделе описываются различные типы учетных данных и их использование с очередями.  
   
-### <a name="certificate"></a>Сертификат  
+### <a name="certificate"></a>Certificate  
 
  Этот тип учетных данных сертификата использует сертификат X.509 для идентификации службы и клиента.  
   

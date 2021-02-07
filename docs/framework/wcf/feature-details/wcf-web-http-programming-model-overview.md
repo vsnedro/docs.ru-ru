@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Общие сведения о модели программирования WCF Web HTTP'
 title: Общие сведения о модели программирования WCF Web HTTP
 ms.date: 03/30/2017
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
-ms.openlocfilehash: 713dd05daa5071f253afd70e735475e49a986aa7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 3359b0018458256cb3436e0fb631ee5fa438521e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732882"
 ---
 # <a name="wcf-web-http-programming-model-overview"></a>Общие сведения о модели программирования WCF Web HTTP
 
@@ -140,7 +141,7 @@ interface ICustomer
   
  Это означает, что модель программирования WCF WEB HTTP может обрабатывать любые типы данных, но может быть написана в программировании <xref:System.IO.Stream> .  
   
- .NET Framework 3,5 обеспечивает поддержку данных JSON (AJAX), а также каналов синдикации (включая ATOM и RSS). Дополнительные сведения об этих возможностях см. в статьях [Форматирование веб-HTTP WCF](wcf-web-http-formatting.md), [Обзор синдикации WCF](wcf-syndication-overview.md)и [Интеграция Ajax и поддержка JSON](ajax-integration-and-json-support.md).  
+ Платформа .NET Framework 3,5 обеспечивает поддержку данных JSON (AJAX), а также каналов синдикации (включая ATOM и RSS). Дополнительные сведения об этих возможностях см. в статьях [Форматирование веб-HTTP WCF](wcf-web-http-formatting.md), [Обзор синдикации WCF](wcf-syndication-overview.md)и [Интеграция Ajax и поддержка JSON](ajax-integration-and-json-support.md).  
   
 ## <a name="wcf-web-http-programming-model-and-security"></a>Модель программирования WCF WEB HTTP и безопасность  
 

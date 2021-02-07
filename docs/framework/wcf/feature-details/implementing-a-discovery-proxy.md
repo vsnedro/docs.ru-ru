@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Реализация прокси-сервера обнаружения.
 title: Реализация прокси-сервера обнаружения
 ms.date: 03/30/2017
 ms.assetid: dda20e79-8df3-438e-a281-69d779d978ec
-ms.openlocfilehash: ae003c89bb0f14623c5d31a1596533d821380336
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfd897e114c99bcacb24e9981ee4a3e99e06636c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96268304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734039"
 ---
 # <a name="implementing-a-discovery-proxy"></a>Реализация прокси-сервера обнаружения
 
@@ -17,7 +18,7 @@ ms.locfileid: "96268304"
   
  Используемый здесь прокси-сервер обнаружения похож на любую другую службу WCF в том, что можно сделать прокси-сервер обнаруживаемым и позволить клиентам находить его конечные точки.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Как реализовать прокси-сервер обнаружения](how-to-implement-a-discovery-proxy.md)  
  Реализация прокси-сервера обнаружения.  

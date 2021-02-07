@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как использовать поставщик ролей ASP.NET со службой.
 title: Практическое руководство. Использование поставщика ролей ASP.NET со службой
 ms.date: 03/30/2017
 ms.assetid: 88d33a81-8ac7-48de-978c-5c5b1257951e
-ms.openlocfilehash: 45eeda046e877b4379d7d0e5edd90fac305f5e44
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 24bf9ad72d3634baf1d7120e4e60ccde5a4078a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734117"
 ---
 # <a name="how-to-use-the-aspnet-role-provider-with-a-service"></a>Практическое руководство. Использование поставщика ролей ASP.NET со службой
 
@@ -19,7 +20,7 @@ ms.locfileid: "84595301"
   
 ## <a name="configure-the-role-provider"></a>Настройка поставщика ролей  
   
-1. В файле Web. config в `system.web` элементе < > добавьте `roleManager` элемент < > и присвойте его `enabled` атрибуту значение `true` .  
+1. В файле Web.config в `system.web` элементе <> добавьте `roleManager` элемент <> и присвойте его `enabled` атрибуту значение `true` .  
   
 2. Задайте для атрибута `defaultProvider` значение `SqlRoleProvider`.  
   
@@ -42,7 +43,7 @@ ms.locfileid: "84595301"
   
 ## <a name="configure-the-service-to-use-the-role-provider"></a>Настройка службы для использования поставщика ролей  
   
-1. В файле Web. config добавьте [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) элемент.  
+1. В файле Web.config добавьте [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md) элемент.  
   
 2. Добавьте [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) элемент в `system.ServiceModel` элемент> <.  
   
@@ -67,7 +68,7 @@ ms.locfileid: "84595301"
     </behaviors>  
     ```  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Поставщик членства и ролей](../samples/membership-and-role-provider.md)
 - [Практическое руководство. Использование поставщика членства ASP.NET](how-to-use-the-aspnet-membership-provider.md)

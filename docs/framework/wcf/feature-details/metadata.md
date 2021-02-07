@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: Метаданные'
 title: Метаданные
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF]
 ms.assetid: 66a61bd0-18d3-4e7e-bf8b-177a10ac2f60
-ms.openlocfilehash: c7f681de9b4485d9963eab2b27fbdea74b8832f3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52957fff54077e2a727775edb6cb706222eb0c64
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733883"
 ---
 # <a name="metadata"></a>Метаданные
 
 Windows Communication Foundation (WCF) предоставляет инфраструктуру для экспорта, публикации, извлечения и импорта метаданных службы. Службы WCF используют метаданные, чтобы описать, как взаимодействовать с конечными точками службы, чтобы средства, такие как Svcutil.exe, могли автоматически создавать код клиента для доступа к службе.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения об архитектуре метаданных](metadata-architecture-overview.md)  
  Высокоуровневое общее описание архитектуры метаданных.  

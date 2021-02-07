@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье как использовать средство настройки модели службы COM+.
 title: Практическое руководство. Использование программы командной строки настройки модели служб COM+
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM+ [WCF], using service model configuration tool
 ms.assetid: 7e68cd8d-5fda-4641-b92f-290db874376e
-ms.openlocfilehash: 2d21ec8ccf84a7c9af235af8e0afd444044cf81b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2047604f327cd871629bbdac403e9acd816bbdb1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729391"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734091"
 ---
 # <a name="how-to-use-the-com-service-model-configuration-tool"></a>Практическое руководство. Использование программы командной строки настройки модели служб COM+
 
@@ -30,7 +31,7 @@ ms.locfileid: "95729391"
 > Восстановление значения ключа - важно. Это ключ совместимости. Если не восстановить значение ключа, могут возникнуть проблемы в работе других приложений .NET на данном компьютере.
 
 > [!WARNING]
-> При использовании ComSvcConfig.exe/Install на компьютере под управлением Windows 8 появляется диалоговое окно "для приложения на вашем компьютере требуется следующая функция Windows: .NET Framework 3,5 (включая .NET 2,0 и .NET 3,0", если .NET Framework 3,5 не установлен. Это диалоговое окно можно пропустить. В качестве альтернативы можно задать ключу реестра OnlyUseLatestCLR значение DWORD 0x00000001
+> При использовании ComSvcConfig.exe/Install на компьютере под управлением Windows 8 появляется диалоговое окно "для приложения на вашем компьютере требуется следующая функция Windows: платформа .NET Framework 3,5 (включая .NET 2,0 и .NET 3,0", если платформа .NET Framework 3,5 не установлен. Это диалоговое окно можно пропустить. В качестве альтернативы можно задать ключу реестра OnlyUseLatestCLR значение DWORD 0x00000001
 
 ## <a name="add-an-interface-using-the-com-hosting-mode"></a>Добавление интерфейса с помощью режима размещения COM+
 
@@ -110,6 +111,6 @@ ms.locfileid: "95729391"
     ComSvcConfig.exe /?
     ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об интеграции с приложениями COM+](integrating-with-com-plus-applications-overview.md)

@@ -1,12 +1,14 @@
 ---
+description: 'Дополнительные сведения: как выбрать между HTTP POST и запросами HTTP GET для конечных точек AJAX ASP.NET'
 title: Практическое руководство. Выбор между запросами HTTP POST и HTTP GET для конечных точек ASP.NET AJAX
 ms.date: 03/30/2017
 ms.assetid: b47de82a-4c92-4af6-bceb-a5cb8bb8ede9
-ms.openlocfilehash: c74b1acdf3802ab680123cd9d676919fe47236e8
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: dcc9a0e2d77e8394628cd8bedf155d9f7dd5e2f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734078"
 ---
 # <a name="how-to-choose-between-http-post-and-http-get-requests-for-aspnet-ajax-endpoints"></a>Практическое руководство. Выбор между запросами HTTP POST и HTTP GET для конечных точек ASP.NET AJAX
 

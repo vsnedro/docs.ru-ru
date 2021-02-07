@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: протоколы обмена сообщениями'
 title: Протоколы обмена сообщениями
 ms.date: 03/30/2017
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
-ms.openlocfilehash: 871297abb0ccc46e079ab85b098705602d14a161
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f4dd15d41266d3e5492b584f9f8e31f456a70ef7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96248322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733974"
 ---
 # <a name="messaging-protocols"></a>Протоколы обмена сообщениями
 
@@ -215,14 +216,14 @@ B3221: Если настроено использование WS-Addressing 2004
 
 R3411: WCF создает следующие ошибки, определенные WS-Addressing 2004/08.
 
-| Код | Причина: |
+| Код | Причина |
 |----------|-----------|
 | `wsa:DestinationUnreachable` | Поступило сообщение со значением `ReplyTo`, отличающимся от адреса ответа, установленного для данного канала; нет конечной точки, ожидающей передачи данных по адресу, указанному в заголовке «To». |
 | `wsa:ActionNotSupported` | Каналы инфраструктуры или диспетчер, связанные с конечной точкой, не распознали действие, указанное в заголовке `Action`. |
 
 R3412: WCF создает следующие ошибки, определенные WS-Addressing 1,0.
 
-| Код | Причина: |
+| Код | Причина |
 |----------|-----------|
 | `wsa10:InvalidAddressingHeader` | Дублировать `wsa:To` , `wsa:ReplyTo` `wsa:From` или `wsa:MessageID` . Повторяется `wsa:RelatesTo` с тем же `RelationshipType` . |
 | `wsa10:MessageAddressingHeaderRequired` | Отсутствует обязательный заголовок адресации. |
@@ -492,7 +493,7 @@ Content-Length: 0
                         / "_" / "," / "-" / "." / "/" / ":" / "=" / "?"
     ```
 
-     Примеры:
+     Примеры
 
      ПРАВИЛЬНО
 

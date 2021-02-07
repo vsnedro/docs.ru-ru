@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье сценарии маршрутизации.
 title: Сценарии маршрутизации
 ms.date: 03/30/2017
 helpviewer_keywords:
 - routing [WCF], scenarios
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
-ms.openlocfilehash: b84cd4ba49e9deaf4ffc0e901716efc56059d60f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cce69ca846f5179d78b2e7321e62444fc6f6ec26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733285"
 ---
 # <a name="routing-scenarios"></a>Сценарии маршрутизации
 
@@ -73,7 +74,7 @@ ms.locfileid: "96288531"
   
  Шаги, используемые для настройки обработки ошибок, см. [в разделе как обрабатывать ошибки](how-to-error-handling.md).
   
-### <a name="in-this-section"></a>в этом разделе  
+### <a name="in-this-section"></a>В этом разделе  
 
  [Как выполнить: Управление версиями службы](how-to-service-versioning.md)  
   

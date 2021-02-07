@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: служба маршрутизации'
 title: Служба маршрутизации
 ms.date: 03/30/2017
 ms.assetid: ca7c216a-5141-4132-8193-102c181d2eba
-ms.openlocfilehash: 833c824e17d70a982a2f7bb13fe388b9b2b0dec1
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 29fec780e6bc9266a8fe17d779ff0998e13e5c68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733259"
 ---
 # <a name="routing-service"></a>Служба маршрутизации
 
@@ -116,7 +117,7 @@ ms.locfileid: "84590453"
 
 - Динамическая конфигурация
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Введение в маршрутизацию](routing-introduction.md)
 - [Контракты маршрутизации](routing-contracts.md)
