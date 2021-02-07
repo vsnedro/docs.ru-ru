@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: JITFunctionPitched'
 title: Метод ICorProfilerCallback::JITFunctionPitched
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 116085df-7a77-404a-afac-d0557a12b986
 topic_type:
 - apiref
-ms.openlocfilehash: 51fec26837b3c7f0a0328a7b64ff4a02148283da
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 11729de2188fe2f2cec7ec16ff7a5d1928cbd75d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705724"
 ---
 # <a name="icorprofilercallbackjitfunctionpitched-method"></a>Метод ICorProfilerCallback::JITFunctionPitched
 
@@ -38,7 +39,7 @@ HRESULT JITFunctionPitched(
  `functionId`  
  окне Идентификатор удаленной функции.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если вызывается Удаленная функция, профилировщик получит новые события JIT-компиляции при повторной компиляции функции. В настоящее время JIT-компилятор среды CLR не удаляет функции из памяти, поэтому этот обратный вызов сейчас не используется и не будет получен профилировщиком.  
   
@@ -52,8 +53,8 @@ HRESULT JITFunctionPitched(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

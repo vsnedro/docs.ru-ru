@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerCallback2'
 title: Интерфейс ICorProfilerCallback2
 ms.date: 03/30/2017
 api_name:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 4a261dba-450d-4f1f-8d98-865b58bfc992
 topic_type:
 - apiref
-ms.openlocfilehash: 597a3dfecd42e206c98974093fa2417eba570f6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6a6fa62d8d1b119ce1a52b06cb562c6da32b1a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705529"
 ---
 # <a name="icorprofilercallback2-interface"></a>Интерфейс ICorProfilerCallback2
 
-Предоставляет методы, которые используются средой CLR для уведомления профилировщика кода при возникновении событий, на которые подписан профилировщик. `ICorProfilerCallback2`Интерфейс является расширением интерфейса [ICorProfilerCallback](icorprofilercallback-interface.md) . То есть он предоставляет новые обратные вызовы, представленные в .NET Framework версии 2,0.  
+Предоставляет методы, которые используются средой CLR для уведомления профилировщика кода при возникновении событий, на которые подписан профилировщик. `ICorProfilerCallback2`Интерфейс является расширением интерфейса [ICorProfilerCallback](icorprofilercallback-interface.md) . То есть он предоставляет новые обратные вызовы, представленные в платформа .NET Framework версии 2,0.  
   
 > [!NOTE]
 > Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
@@ -41,16 +42,16 @@ ms.locfileid: "95729469"
 |[Метод SurvivingReferences](icorprofilercallback2-survivingreferences-method.md)|Уведомляет профилировщик о ссылках на объекты, которые были сохранившиются при сборке мусора.|  
 |[Метод ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md)|Уведомляет профилировщик кода о том, что имя потока изменилось.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR вызывает метод в `ICorProfilerCallback` интерфейсе (или `ICorProfilerCallback2` ) для уведомления профилировщика при возникновении события, на которое подписан профилировщик. Это основной интерфейс обратного вызова, с помощью которого среда CLR взаимодействует с профилировщиком кода.  
   
- Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для .NET Framework 2,0 и более поздних версий профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
+ Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для платформа .NET Framework 2,0 и более поздних версий профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
   
  Профилировщик кода должен быть зарегистрирован в реестре Microsoft Windows, его COM-объекте, который реализует `ICorProfilerCallback` интерфейсы и `ICorProfilerCallback2` . Профилировщик кода подписывается на события, для которых требуется получать уведомления путем вызова [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md). Обычно это делается в реализации метода [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md)профилировщика. Затем профилировщик может получать уведомления от среды выполнения, когда событие собирается или было только что произошло в процессе выполнения.  
   
 > [!NOTE]
-> Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы `ICorProfilerCallback` . Если он предназначен для .NET Framework версии 2,0 и более поздних, то COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
+> Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для платформа .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы `ICorProfilerCallback` . Если он предназначен для платформа .NET Framework версии 2,0 и более поздних, то COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
   
 ## <a name="requirements"></a>Требования  
 
@@ -60,9 +61,9 @@ ms.locfileid: "95729469"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

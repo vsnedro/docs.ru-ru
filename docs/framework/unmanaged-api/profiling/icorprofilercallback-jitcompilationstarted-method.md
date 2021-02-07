@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: JITCompilationStarted'
 title: Метод ICorProfilerCallback::JITCompilationStarted
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 31782b36-d311-4518-8f45-25f65385af5b
 topic_type:
 - apiref
-ms.openlocfilehash: 7ce100a68a3e2b8963ed14bbf044fa9ba11d629f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 984c19e1601f83cc0f52145403ad85affc158050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725525"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705737"
 ---
 # <a name="icorprofilercallbackjitcompilationstarted-method"></a>Метод ICorProfilerCallback::JITCompilationStarted
 
@@ -44,7 +45,7 @@ HRESULT JITCompilationStarted(
   
  Хотя значение `true` не будет нанести вред среде выполнения, оно может наклонять результаты профилирования.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Можно получить более одной пары `JITCompilationStarted` вызовов и [ICorProfilerCallback:: JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md) для каждой функции, так как среда выполнения обрабатывает конструкторы классов. Например, среда выполнения начинает JIT-компилировать метод а, но необходимо запустить конструктор класса B. Поэтому среда выполнения JIT компилирует конструктор для класса B и запускает его. Пока конструктор выполняется, он вызывает метод а, что вызывает повторную JIT-компиляцию метода. В этом сценарии первая JIT-компиляция метода A останавливается. Однако обе попытки JIT-компиляции метода A сообщаются с событиями JIT-компиляции. Если профилировщик будет заменять код промежуточного языка MSIL для метода а путем вызова метода [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) , он должен сделать это для обоих `JITCompilationStarted` событий, но может использовать один и тот же блок MSIL для обоих.  
   
@@ -58,9 +59,9 @@ HRESULT JITCompilationStarted(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)
