@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения: изменения таблицы данных'
 title: Редактирование таблиц данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f08008a9-042e-4de9-94f3-4f0e502b1eb5
-ms.openlocfilehash: 4fdb19e7fa014bf4a7c924b1fbae53fa44de6e3c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 983a4016fbdb71baa3bcd4ce8a34175d10b604d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739473"
 ---
 # <a name="datatable-edits"></a>Редактирование таблиц данных
 
 При выполнении изменений значений столбцов в <xref:System.Data.DataRow>, изменения немедленно помещаются в текущее состояние строки. <xref:System.Data.DataRowState>Затем задается значение **Modified**, и изменения принимаются или отклоняются с помощью <xref:System.Data.DataRow.AcceptChanges%2A> <xref:System.Data.DataRow.RejectChanges%2A> методов или объекта **DataRow**. **DataRow** также предоставляет три метода, которые можно использовать для приостановки состояния строки при ее редактировании. Такими методами являются: <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> и <xref:System.Data.DataRow.CancelEdit%2A>.  
   
- При непосредственном изменении значений столбцов в **DataRow** объект **DataRow** управляет значениями столбцов, используя **текущие**версии строк, **используемые по умолчанию**и **исходные** . В дополнение к этим версиям строк методы **BeginEdit**, **EndEdit**и **CancelEdit** используют четвертую версию строки: **предложено**. Дополнительные сведения о версиях строк см. в разделе [состояния строк и версии строк](row-states-and-row-versions.md).  
+ При непосредственном изменении значений столбцов в **DataRow** объект **DataRow** управляет значениями столбцов, используя **текущие** версии строк, **используемые по умолчанию** и **исходные** . В дополнение к этим версиям строк методы **BeginEdit**, **EndEdit** и **CancelEdit** используют четвертую версию строки: **предложено**. Дополнительные сведения о версиях строк см. в разделе [состояния строк и версии строк](row-states-and-row-versions.md).  
   
  **Предлагаемая** версия строки существует во время операции изменения, которая начинается с вызова **BeginEdit** и заканчивается либо с помощью **EndEdit** **, либо CancelEdit,** либо путем вызова **метода AcceptChanges** или **RejectChanges**.  
   
@@ -87,7 +88,7 @@ protected static void OnColumnChanged(
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataRow>
 - <xref:System.Data.DataTable>

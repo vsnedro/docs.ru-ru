@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: создание набора данных'
 title: Создание набора данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 57629d8f-393e-4677-8b83-29ffde27f5fc
-ms.openlocfilehash: cbf652cc3742cb880fe060743dcc2615e6283ca7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7a52c6e73b5ab3ba4bf384d6bab3640b85929fcc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202361"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739655"
 ---
 # <a name="creating-a-dataset"></a>Создание набора данных
 
@@ -28,7 +29,7 @@ Dim customerOrders As DataSet = New DataSet("CustomerOrders")
 DataSet customerOrders = new DataSet("CustomerOrders");  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Заполнение набора данных с помощью адаптера данных DataAdapter](../populating-a-dataset-from-a-dataadapter.md)
 - [Наборы данных, таблицы данных и объекты DataView](index.md)
