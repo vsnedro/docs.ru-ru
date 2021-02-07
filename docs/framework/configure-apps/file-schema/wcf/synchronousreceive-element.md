@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <synchronousReceive> element'
 title: <synchronousReceive> - элемент
 ms.date: 03/30/2017
 ms.assetid: cc070387-3d11-4b02-a952-bc08ad2df05a
-ms.openlocfilehash: 2073d115dd87d513a6e48b8b585fed4b49d5bb32
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: afcd10b4ad41bd6ff12dbf246f66ef7fac4e759a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157178"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682622"
 ---
 # <a name="synchronousreceive-element"></a>Элемент \<synchronousReceive>
 
@@ -48,7 +49,7 @@ ms.locfileid: "91157178"
 
  Используйте это поведение, чтобы дать указание прослушивателю каналов использовать синхронное получение вместо асинхронного получения по умолчанию. Windows Communication Foundation (WCF) выдает новый поток для приема для каждого принятого канала. При наличии множества каналов существует вероятность недостатка потоков.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>
 - <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

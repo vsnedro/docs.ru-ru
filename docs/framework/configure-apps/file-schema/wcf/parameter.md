@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <parameter>'
 title: <parameter>
 ms.date: 03/30/2017
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
-ms.openlocfilehash: 2ef674dc8601bc9afaf6b547265988bb8a99f943
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb04cfb5bf451cdb99c23ae41ea8fafeb13f0d11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683818"
 ---
 # \<parameter>
 
@@ -64,7 +65,7 @@ ms.locfileid: "91170172"
   
  У данного элемента конфигурации не может одновременно быть оба атрибута. Если заданы оба атрибута, возникает исключение <xref:System.Configuration.ConfigurationErrorsException>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Известные типы контрактов данных](../../../wcf/feature-details/data-contract-known-types.md)

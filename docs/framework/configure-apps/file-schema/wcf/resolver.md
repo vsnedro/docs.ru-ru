@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <resolver>'
 title: <resolver>
 ms.date: 03/30/2017
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
-ms.openlocfilehash: 6b1fd8e916aef2425377c45a0c85e37773f3ca28
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 338f9342d1ef14f3d96dada17fb9f6d893c86bee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683363"
 ---
 # \<resolver>
 
@@ -55,7 +56,7 @@ ms.locfileid: "91150899"
 
  Распознаватель одноранговых узлов представляет собой службу обнаружения, используемую одноранговыми каналами для поиска одноранговых узлов, участвующих в сетке с IP-адресами. Он также используется для «регистрации» узла в сетке с IP-адресами; с помощью такого механизма одноранговый узел становится известным и доступным из сетки с IP-адресами. Дополнительные сведения об одноранговых решениях см. в разделе [одноранговые арбитры конфликтов](../../../wcf/feature-details/peer-resolvers.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.PeerResolver>
 - <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>

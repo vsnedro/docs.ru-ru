@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <sslStreamSecurity>'
 title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: aa6bc7f5a94afc8a190d3d9d2d71ea8b38d8c25b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77e08deb5263e330ead5df21ed1ef2dddbba28ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682700"
 ---
 # \<sslStreamSecurity>
 
@@ -35,7 +36,7 @@ ms.locfileid: "91153577"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|requireClientCertificate|Логическое значение, указывающее, требуется ли для этой привязки сертификат клиента. Значение по умолчанию — `false`.|  
+|requireClientCertificate|Логическое значение, указывающее, требуется ли для этой привязки сертификат клиента. Значение по умолчанию — `false`.|  
 |sslProtocols|Значение флага перечисления SslProtocols, указывающее, какие протоколы SslProtocols поддерживаются. Значение по умолчанию — Ssl3&#124;TLS&#124;Tls11&#124;Tls12.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -48,7 +49,7 @@ ms.locfileid: "91153577"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

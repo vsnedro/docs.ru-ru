@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <peer> <clientCredentials> element'
 title: <peer> элемента <clientCredentials>
 ms.date: 03/30/2017
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.openlocfilehash: 75d8543d7db5eee1345d54f934fc89c9593b85ac
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1ff9386ba51dcf6bab6df71bd345cdaa59f18e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91186995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683792"
 ---
 # <a name="peer-of-clientcredentials-element"></a>\<peer> элемента \<clientCredentials>
 
@@ -57,7 +58,7 @@ ms.locfileid: "91186995"
 
  Этот элемент конфигурации задает учетные данные, используемые одноранговым узлом для подтверждения своей подлинности для других узлов в сетке, а также параметры, используемые одноранговым узлом для проверки подлинности других одноранговых узлов. Дополнительные сведения см. в статье [Проверка подлинности сообщений одноранговых каналов](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) и [Защита приложений одноранговых каналов](../../../wcf/feature-details/securing-peer-channel-applications.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Description.ClientCredentials>

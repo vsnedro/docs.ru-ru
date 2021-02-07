@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <pnrpPeerResolver>'
 title: <pnrpPeerResolver>
 ms.date: 03/30/2017
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
-ms.openlocfilehash: 0a8cc60226b13552d47faec3a156ed1f59acacb9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4af6a63312fa300cfa33e578f01b8e07267ad3a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181405"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683545"
 ---
 # \<pnrpPeerResolver>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91181405"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -52,7 +53,7 @@ ms.locfileid: "91181405"
 <pnrpResolver resolverType="String" />
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>
 - <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>

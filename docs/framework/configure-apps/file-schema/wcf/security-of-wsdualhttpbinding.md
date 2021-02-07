@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <wsDualHttpBinding>'
 title: <security> из <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-ms.openlocfilehash: 7398cd538bb240e78413575f7c28abe7f797d05c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6d2e87912aef6114d7dcb99b82e4a7804317b28a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683038"
 ---
 # <a name="security-of-wsdualhttpbinding"></a>\<security> из \<wsDualHttpBinding>
 
@@ -38,13 +39,13 @@ ms.locfileid: "91162209"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSDualHttpSecurityMode>.|  
+|mode|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.WSDualHttpSecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут Mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|Отсутствуют|Режим безопасности отключен.|  
+|None|Режим безопасности отключен.|  
 |Сообщение|Безопасность обеспечивается с помощью средств безопасности сообщений SOAP.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -63,7 +64,7 @@ ms.locfileid: "91162209"
 
  Двойная привязка предоставляет службе IP-адрес клиента. Клиенту следует использовать механизм безопасности, чтобы гарантировать, что подключение выполняется только к доверенным службам.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.WSDualHttpSecurity>
 - <xref:System.ServiceModel.BasicHttpSecurity>

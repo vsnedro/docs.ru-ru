@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <oneWay>'
 title: <oneWay>
 ms.date: 03/30/2017
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
-ms.openlocfilehash: 92cd6b280305c223ee125a45724691c5205ce3c1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8e3314dd14525b5f7585a7336c00b615da56d1c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683844"
 ---
 # \<oneWay>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91195016"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`packetRoutable`|Логическое значение, указывающее, включена ли поддержка маршрутизации пакетов. Значение по умолчанию — `false`.|  
+|`packetRoutable`|Логическое значение, указывающее, включена ли поддержка маршрутизации пакетов. Значение по умолчанию — `false`.|  
 |`MaxAcceptedChannels`|Целое число, указывающее максимальное количество принимаемых каналов.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -57,7 +58,7 @@ ms.locfileid: "91195016"
 
  Чтобы включить поддержку маршрутизации пакетов, необходим уровень одностороннего преобразования, предоставляемый данным элементом. Пользователь может создавать пользовательские привязки, которые выполняют наложение данной привязки на транспорт с поддержкой сеансов или типа «запрос-отклик», чтобы включить для него поддержку маршрутизации пакетов. Этот элемент также полезен, если необходимо предоставить односторонние методы более естественным образом. К данному уровню могут применяться дополнительные преобразования, например Composite Duplex и Reliable Messaging.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Channels.OneWayBindingElement>
 - <xref:System.ServiceModel.Configuration.OneWayElement>

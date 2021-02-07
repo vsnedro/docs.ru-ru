@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <netHttpBinding>'
 title: <security> из <netHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
-ms.openlocfilehash: 97c52fa4f062ed0c65d5b1a8ca47a1439ab04cf5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 70d6363c0ac7fa00d83880ddc8c873548b385a29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683129"
 ---
 # <a name="security-of-nethttpbinding"></a>\<security> из \<netHttpBinding>
 
@@ -38,9 +39,9 @@ ms.locfileid: "73736490"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
-|mode|Необязательный параметр. Задает тип используемого механизма обеспечения безопасности. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.BasicHttpSecurityMode>.|
+|mode|Необязательный элемент. Задает тип используемого механизма обеспечения безопасности. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.BasicHttpSecurityMode>.|
 
 ## <a name="mode-attribute"></a>атрибут mode
 
@@ -65,7 +66,7 @@ ms.locfileid: "73736490"
 |-------------|-----------------|
 |binding|Элемент Binding объекта [\<basicHttpBinding>](basichttpbinding.md) .|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
  По умолчанию сообщение SOAP не защищено и проверка подлинности клиента не выполняется. Данный элемент позволяет настроить дополнительные параметры безопасности для элемента `netHttpBinding`.
 

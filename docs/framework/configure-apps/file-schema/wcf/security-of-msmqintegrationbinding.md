@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <msmqIntegrationBinding>'
 title: <security> из <msmqIntegrationBinding>
 ms.date: 03/30/2017
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
-ms.openlocfilehash: be2f48f7d9c3be4ea0a5fe95436930b3f23c7551
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4ad4cb89599198661d764cfeb985609be027c0eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170068"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683207"
 ---
 # <a name="security-of-msmqintegrationbinding"></a>\<security> из \<msmqIntegrationBinding>
 
@@ -46,7 +47,7 @@ ms.locfileid: "91170068"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Задает тип системы безопасности, отвечающей за целостность, конфиденциальность и проверку подлинности при использовании канала интеграции очереди сообщений. Допустимые значения.<br /><br /> -None: отключает безопасность.<br />-Transport: защита и проверка подлинности предоставляются транспортом. Это значение связано с безопасностью сообщений между двумя диспетчерами очереди. Между приложением и диспетчером очереди безопасность сообщений не обеспечивается. Существующие Msmq-приложения функционально равноценны такому режиму безопасности.<br /><br /> Значение по умолчанию — `Transport`. Это атрибут типа <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.|  
+|mode|Задает тип системы безопасности, отвечающей за целостность, конфиденциальность и проверку подлинности при использовании канала интеграции очереди сообщений. Допустимые значения.<br /><br /> -None: отключает безопасность.<br />-Transport: защита и проверка подлинности предоставляются транспортом. Это значение связано с безопасностью сообщений между двумя диспетчерами очереди. Между приложением и диспетчером очереди безопасность сообщений не обеспечивается. Существующие Msmq-приложения функционально равноценны такому режиму безопасности.<br /><br /> Значение по умолчанию — `Transport`. Это атрибут типа <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode>.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
@@ -60,7 +61,7 @@ ms.locfileid: "91170068"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Элемент Binding объекта [\<msmqIntegrationBinding>](msmqintegrationbinding.md) .|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>

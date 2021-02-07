@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <webHttpBinding>'
 title: <security> из <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-ms.openlocfilehash: 60b863a0a2a846a60dde2e4b323a305b5096b1cc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a80a919ef877f01503e5ceaeb4fe7432e46f288c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683051"
 ---
 # <a name="security-of-webhttpbinding"></a>\<security> из \<webHttpBinding>
 
@@ -46,13 +47,13 @@ ms.locfileid: "91169899"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Указывает, использует ли конечная точка безопасность на уровне транспорта, или же режим обеспечения безопасности не используется. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.WebHttpSecurityMode>.|  
+|mode|Указывает, использует ли конечная точка безопасность на уровне транспорта, или же режим обеспечения безопасности не используется. Значение по умолчанию — `None`. Это атрибут типа <xref:System.ServiceModel.WebHttpSecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут Mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|Отсутствуют|Режим безопасности отключен.|  
+|None|Режим безопасности отключен.|  
 |Транспорт|Безопасность обеспечивается с помощью протокола HTTPS. Необходимо настроить службу с использованием SSL-сертификата. Сообщение полностью защищено с помощью HTTPS, а проверка подлинности службы выполняется клиентом с помощью SSL-сертификата службы. Проверка подлинности клиента контролируется с помощью `ClientCredentialType` атрибута [\<transport>](transport-of-webhttpbinding.md) .|  
 |TransportCredentialOnly|Данный режим не обеспечивает целостности и конфиденциальности сообщений. Он обеспечивает проверку подлинности клиента на основе HTTP. Этот режим следует использовать с осторожностью. Он должен использоваться в средах, где безопасность транспорта предоставляется другими средствами (например, IPSec), а инфраструктура WCF предоставляет только проверку подлинности клиента.|  
   
@@ -68,7 +69,7 @@ ms.locfileid: "91169899"
 |-------------|-----------------|  
 |[\<webHttpBinding>](webhttpbinding.md)|Элемент Binding, который используется для настройки конечных точек для веб-служб Windows Communication Foundation (WCF), которые реагируют на запросы HTTP, а не сообщения SOAP.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.WebHttpBindingElement>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>

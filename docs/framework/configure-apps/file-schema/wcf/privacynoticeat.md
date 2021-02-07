@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <privacyNoticeAt>'
 title: <privacyNoticeAt>
 ms.date: 03/30/2017
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
-ms.openlocfilehash: 5e772e23b21c566c906be854e33b924698dcf3e0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2e38d43becd783cc50afba5a029d3ab9905ec15a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683506"
 ---
 # \<privacyNoticeAt>
 
@@ -27,7 +28,7 @@ ms.locfileid: "91158712"
                version="Integer" />
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `Type`  
   
@@ -52,7 +53,7 @@ ms.locfileid: "91158712"
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Определяет все возможности пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.PrivacyNoticeElement>
 - <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <serviceAuthorization> element'
 title: <serviceAuthorization> - элемент
 ms.date: 03/30/2017
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
-ms.openlocfilehash: f476f754a340f52859be2986e42754cba0ef3771
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ee447f487027ed12f829dd0fd364556ce095d7d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "71834013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682934"
 ---
 # <a name="serviceauthorization-element"></a>Элемент \<serviceAuthorization>
 
@@ -39,11 +40,11 @@ ms.locfileid: "71834013"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |impersonateCallerForAllOperations|Логическое значение, которое определяет, должны ли все операции службы олицетворять вызывающий объект. Значение по умолчанию — `false`.<br /><br /> Если конкретная операция службы олицетворяет вызывающий объект, контекст потока переключается на контекст вызывающего объекта перед выполнением указанной службы.|  
 |principalPermissionMode|Определяет участников, используемых для выполнения операций на сервере. В эти значения входят:<br /><br /> — Нет<br />-Усевиндовсграупс<br />-UseAspNetRoles<br />— Пользовательский<br /><br /> Значение по умолчанию - «UseWindowsGroups». Это значение типа <xref:System.ServiceModel.Description.PrincipalPermissionMode>. Дополнительные сведения об использовании этого атрибута см. в разделе [как ограничить доступ с помощью класса PrincipalPermissionAttribute](../../../wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md).|  
-|roleProviderName|Строка, указывающая имя поставщика роли, который предоставляет сведения о роли для приложения Windows Communication Foundation (WCF). Значением по умолчанию является пустая строка.|  
+|roleProviderName|Строка, указывающая имя поставщика роли, который предоставляет сведения о роли для приложения Windows Communication Foundation (WCF). Значение по умолчанию - пустая строка.|  
 |ServiceAuthorizationManagerType|Строка, содержащая имя типа диспетчера авторизации служб. Для получения дополнительной информации см. <xref:System.ServiceModel.ServiceAuthorizationManager>.|  
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -58,7 +59,7 @@ ms.locfileid: "71834013"
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Содержит коллекцию параметров для поведения службы.|  
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Этот раздел содержит элементы, влияющие на авторизацию, поставщики пользовательских ролей и олицетворение.  
   

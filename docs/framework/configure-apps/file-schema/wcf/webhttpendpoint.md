@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <webHttpEndpoint>'
 title: <webHttpEndpoint>
 ms.date: 03/30/2017
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
-ms.openlocfilehash: 3282871bf8dbd25726ada7003d3066b9a42e2366
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d1bcda1fc97dece833c8163e5facbefe614af0ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682596"
 ---
 # \<webHttpEndpoint>
 
@@ -56,7 +57,7 @@ ms.locfileid: "91177986"
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|Коллекция стандартных конечных точек, одно или несколько свойств которых (адрес, привязка, контракт) являются фиксированными.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Description.WebHttpEndpoint>
 - <xref:System.ServiceModel.Configuration.WebHttpEndpointElement>

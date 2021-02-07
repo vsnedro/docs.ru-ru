@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <state> из WCF <workflowInstanceQuery>'
 title: <state> WCF, <workflowInstanceQuery>
 ms.date: 03/30/2017
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.openlocfilehash: c323f7dba265e7fbcb09482115694088e761af0e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8dbf741473e5f3c15c1833868c2c17abdfba6643
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682648"
 ---
 # <a name="state-of-wcf-workflowinstancequery"></a>\<state> WCF, \<workflowInstanceQuery>
 
@@ -72,7 +73,7 @@ ms.locfileid: "91148897"
   
 Возможные значения состояния описаны в следующей таблице.
   
-|Состояние|Описание|  
+|Область|Описание|  
 |-----------|-----------------|  
 |Прерывание|Экземпляр рабочего процесса прерван.|  
 |Завершено|Выполнение экземпляра рабочего процесса завершено.|  
@@ -102,7 +103,7 @@ ms.locfileid: "91148897"
 </workflowInstanceQueries>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElement?displayProperty=nameWithType>

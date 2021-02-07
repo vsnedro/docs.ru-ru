@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <serviceTimeouts>'
 title: <serviceTimeouts>
 ms.date: 03/30/2017
 ms.assetid: ada536cf-97dc-4cd7-89ec-ed1466c1c557
-ms.openlocfilehash: 92d3de42daf6f7baf288e3e74242381a60e76618
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: bc9ef99078f8c6fa3b441604e14df928eec054e1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682732"
 ---
 # \<serviceTimeouts>
 
@@ -26,7 +27,7 @@ ms.locfileid: "91153603"
 <serviceTimeouts transactionTimeout="TimeSpan" />
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `Type`  
   
@@ -50,6 +51,6 @@ ms.locfileid: "91153603"
 |-------------|-----------------|  
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Указывает элемент поведения.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>
