@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugAssembly3:: EnumerateContainedAssemblies'
 title: Метод ICorDebugAssembly3::EnumerateContainedAssemblies
 ms.date: 03/30/2017
 ms.assetid: 98f15b05-afad-4616-9e2a-1a9af31948b6
-ms.openlocfilehash: 1e040453d5eb7a312f2e665974486492b99de16d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8933500713661ef785eb3ce5abc574e512580b6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754086"
 ---
 # <a name="icordebugassembly3enumeratecontainedassemblies-method"></a>Метод ICorDebugAssembly3::EnumerateContainedAssemblies
 
@@ -30,7 +31,7 @@ HRESULT EnumerateContainedAssemblies(
 
  `S_OK`, если этот объект `ICorDebugAssembly3` является контейнером; в противном случае — `S_FALSE`, и перечисление будет пустым.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Символы необходимы для перечисления вложенных сборок. Если они отсутствуют, метод возвращает `S_FALSE`, и действительный перечислитель отсутствует.  
   
@@ -45,9 +46,9 @@ HRESULT EnumerateContainedAssemblies(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugAssembly3](icordebugassembly3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

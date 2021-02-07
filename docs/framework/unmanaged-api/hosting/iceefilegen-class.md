@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ицеефилежен Class'
 title: Класс ICeeFileGen
 ms.date: 03/30/2017
 api_name:
@@ -14,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
 topic_type:
 - apiref
-ms.openlocfilehash: 78de6f91cc5c9de41426ac2e3c200fe14b32ae96
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 01f8e21ccdb46a236e69a83942b16f65b2b04378
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753969"
 ---
 # <a name="iceefilegen-class"></a>Класс ICeeFileGen
 
 Предоставляет функциональные возможности для создания машинного переносимого исполняемого файла (PE). Интерфейс, как правило, используется компиляторами для создания скомпилированного выходного исполняемого файла.  
   
 > [!NOTE]
-> `ICeeFileGen` поддерживает инфраструктуру .NET Framework и не предназначена для непосредственного использования в коде.  
+> `ICeeFileGen` поддерживает инфраструктуру платформа .NET Framework и не предназначена для непосредственного использования в коде.  
   
  Этот интерфейс является устаревшим и будет удален в следующем выпуске.  
   
@@ -241,8 +242,8 @@ public:
   
  **Заголовок:** Ицеефилежен. h  
   
- **Версия .NET Framework:** 1,0  
+ **Версия платформа .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)

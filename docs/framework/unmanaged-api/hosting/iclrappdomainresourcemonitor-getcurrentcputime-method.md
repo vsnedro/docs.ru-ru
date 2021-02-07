@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRAppDomainResourceMonitor:: GetCurrentCpuTime'
 title: Метод ICLRAppDomainResourceMonitor::GetCurrentCpuTime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
 topic_type:
 - apiref
-ms.openlocfilehash: a0b966e85bedcbef622aba2f6b181b98e0950e01
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce36bf4ab88f953834d3ff12404bcaadcb42812d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95700682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753933"
 ---
 # <a name="iclrappdomainresourcemonitorgetcurrentcputime-method"></a>Метод ICLRAppDomainResourceMonitor::GetCurrentCpuTime
 
@@ -49,7 +50,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
 |COR_E_APPDOMAINUNLOADED|Домен приложения был выгружен или не существует.|  
 |E_FAIL|Отслеживание ресурсов домена приложений не включено.<br /><br /> -или-<br /><br /> Все остальные сбои.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод является неуправляемым эквивалентом управляемого <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> Свойства.  
   
@@ -61,7 +62,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>См. также
 

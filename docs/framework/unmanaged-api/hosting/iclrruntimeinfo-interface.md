@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье об интерфейсе ICLRRuntimeInfo.
 title: Интерфейс ICLRRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 287e5ede-b3a7-4ef8-a756-4fca3f285a82
 topic_type:
 - apiref
-ms.openlocfilehash: 9f485728ddb050abf815bf8ba26c69be9c909785
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d599c743e5a42801321ea487fdd9e52bfcfaf081
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753865"
 ---
 # <a name="iclrruntimeinfo-interface"></a>Интерфейс ICLRRuntimeInfo
 
@@ -50,9 +51,9 @@ ms.locfileid: "95714982"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)
 - [Размещение](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугмеморибуффер'
 title: Интерфейс ICorDebugMemoryBuffer
 ms.date: 03/30/2017
 ms.assetid: 85dc2d65-3657-4b93-9f23-9feaa95d37ff
-ms.openlocfilehash: 2765852309401d2aa30f91b506ba55156cd8a3e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94eeb0f31c0e1c053fabbd556768fa65dda2d328
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754021"
 ---
 # <a name="icordebugmemorybuffer-interface"></a>Интерфейс ICorDebugMemoryBuffer
 
@@ -20,7 +21,7 @@ ms.locfileid: "95710750"
 |[Метод GetSize](icordebugmemorybuffer-getsize-method.md)|Возвращает размер буфера памяти в байтах.|  
 |[Метод GetStartAddress](icordebugmemorybuffer-getstartaddress-method.md)|Возвращает начальный адрес буфера памяти.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс доступен только в .NET Native. При реализации этого интерфейса для сценариев ICorDebug вне .NET Native среда CLR будет игнорировать этот интерфейс.  
@@ -33,9 +34,9 @@ ms.locfileid: "95710750"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: использование настраиваемых конструкторов действий и шаблонов'
 title: Использование шаблонов и конструкторов настраиваемых действий
 ms.date: 03/30/2017
 ms.assetid: 1aab82e7-7f89-4255-be46-526b09ceeb8b
-ms.openlocfilehash: 92e199a8592fd79a454ecee083d55b7642f829d2
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8e38f445929878036298a3db13fa9aa6acd4bc94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238643"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755035"
 ---
 # <a name="using-custom-activity-designers-and-templates"></a>Использование шаблонов и конструкторов настраиваемых действий
 
 Здесь перечислены разделы, в которых описывается создание настраиваемых конструкторов действий и настраиваемых шаблонов действий.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Создание настраиваемого конструктора действий](how-to-create-a-custom-activity-designer.md)  
  Описывает создание настраиваемого конструктора действий для случая, когда конструкторы, предоставляемые рабочим процессом, не подходят для задач разработки.  

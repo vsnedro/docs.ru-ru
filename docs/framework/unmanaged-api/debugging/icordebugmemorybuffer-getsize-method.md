@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугмеморибуффер:: resize'
 title: Метод ICorDebugMemoryBuffer::GetSize
 ms.date: 03/30/2017
 ms.assetid: 9ffd5482-268e-4680-9fd1-bfb0b7d66450
-ms.openlocfilehash: 7f5458dd12ca83c1a5190bbf7fab0f8e5d06a0e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7de23dd13a1e0ef841145e3845d7d0052ce3ef9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754044"
 ---
 # <a name="icordebugmemorybuffergetsize-method"></a>Метод ICorDebugMemoryBuffer::GetSize
 
@@ -26,7 +27,7 @@ HRESULT GetSize(
  `pcbBufferLength`  
  [out] Указатель на размер буфера памяти.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -39,9 +40,9 @@ HRESULT GetSize(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

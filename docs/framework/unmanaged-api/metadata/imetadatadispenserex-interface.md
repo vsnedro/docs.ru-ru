@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IMetaDataDispenserEx'
 title: Интерфейс IMetaDataDispenserEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 78b3629e-77a2-4406-89c3-56b5cc2c4594
 topic_type:
 - apiref
-ms.openlocfilehash: 60d321c1a87a5da433437c9d4587fa9f8947acf4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d940ac20eaad4b930ab17fb2d194d3b03bd4cf3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753540"
 ---
 # <a name="imetadatadispenserex-interface"></a>Интерфейс IMetaDataDispenserEx
 
@@ -44,9 +45,9 @@ ms.locfileid: "95713383"
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)

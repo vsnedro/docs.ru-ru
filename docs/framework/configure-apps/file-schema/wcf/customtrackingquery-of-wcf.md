@@ -1,15 +1,16 @@
 ---
-title: <customTrackingQuery>WCF
+description: 'Дополнительные сведения о: <customTrackingQuery> из WCF'
+title: <customTrackingQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: 164446ae-8440-4b67-b217-6786cfae1e01
-ms.openlocfilehash: 204bbb6cf5ebcb30bf92b697885ecbbbd94385e0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3eac26ee94a95b480d743e3c6ec554a84b8747a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855418"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754463"
 ---
-# <a name="customtrackingquery-of-wcf"></a>\<customTrackingQuery>WCF
+# <a name="customtrackingquery-of-wcf"></a>\<customTrackingQuery> WCF
 
 Представляет запрос, который используется для трассировки событий, определенных в действиях кода. Запрос необходим, чтобы участник отслеживания подписался на пользовательские записи отслеживания.
 
@@ -47,7 +48,7 @@ ms.locfileid: "70855418"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`activityName`|Строка, задающая имя действия, сформировавшего запись отслеживания.|  
 |`name`|Строка, задающая имя выдаваемой пользовательской записи отслеживания.|  

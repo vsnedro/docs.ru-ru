@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <gcServer> element'
 title: gcServer, элемент
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - gcServer element
 - <gcServer> element
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
-ms.openlocfilehash: 8eab5e36bab90510aff4f1a3e15328197ac59ed7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bed347699786682421292392a8d2449b7aac61d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73968949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754541"
 ---
 # <a name="gcserver-element"></a>Элемент \<gcServer>
 
@@ -58,7 +59,7 @@ ms.locfileid: "73968949"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Среда CLR поддерживает два типа сборки мусора: сборку мусора рабочей станции, которая доступна во всех системах, и сборку мусора сервера, которая доступна в многопроцессорных системах. Используйте элемент **gcServer** для управления типом сборки мусора, ВЫПОЛНЯЕМой средой CLR. Используйте свойство <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>, чтобы определить, включена ли сборка мусора сервера.
 
@@ -69,7 +70,7 @@ ms.locfileid: "73968949"
 > [!NOTE]
 > В платформе .NET Framework версии 4 и более ранних версиях параллельная сборка мусора недоступна, если включена серверная сборка мусора. С версии .NET Framework 4.5 серверная сборка мусора является параллельной. Чтобы использовать непараллельную сборку мусора сервера, установите для элемента **gcServer** значение `true` , а для [элемента gcConcurrent](gcconcurrent-element.md) — значение `false` .
 
-Начиная с .NET Framework 4.6.2 можно также использовать следующие элементы для настройки GC сервера:
+Начиная с платформа .NET Framework 4.6.2 можно также использовать следующие элементы для настройки GC сервера:
 
 - [Гкноаффинитизе](gcnoaffinitize-element.md), который указывает, существует ли сходство между кучами и процессорами серверной сборки мусора. По умолчанию для каждого процессора существует одна куча сервера GC.
 

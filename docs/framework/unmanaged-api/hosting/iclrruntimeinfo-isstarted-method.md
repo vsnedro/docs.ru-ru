@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICLRRuntimeInfo:: OnStarted'
 title: Метод ICLRRuntimeInfo::IsStarted
 ms.date: 03/30/2017
 api_name:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - IsStarted method [.NET Framework hosting]
 - ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]
 ms.assetid: ef6f2662-323b-4534-aa82-6d1afb7b9309
-ms.openlocfilehash: 1dfeb6101a6b8e33ab2fe35f318087d7f1834b6a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 22059ecbded9eae9659cdaae8b9b92f2d7df0650
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753852"
 ---
 # <a name="iclrruntimeinfoisstarted-method"></a>Метод ICLRRuntimeInfo::IsStarted
 
@@ -47,11 +48,11 @@ HRESULT IsStarted(
 |HRESULT|Описание:|  
 |-------------|-----------------|  
 |S_OK|Метод завершился успешно.|  
-|E_NOTIMPL|Версия среды CLR предшествует версии CLR в .NET Framework 4.|  
+|E_NOTIMPL|Версия среды CLR предшествует версии CLR в платформа .NET Framework 4.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Этот метод не работает с версиями CLR, предшествующими версии CLR в .NET Framework 4.  
+ Этот метод не работает с версиями CLR, предшествующими версии CLR в платформа .NET Framework 4.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -61,9 +62,9 @@ HRESULT IsStarted(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

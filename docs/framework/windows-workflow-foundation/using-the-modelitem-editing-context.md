@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: использование контекста редактирования ModelItem'
 title: Использование контекста редактирования ModelItem
 ms.date: 03/30/2017
 ms.assetid: 7f9f1ea5-0147-4079-8eca-be94f00d3aa1
-ms.openlocfilehash: 2ab002f902833d3b1a69ea0b03b5ca589f4492d1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7b6b9015f250d0e52f15e574f62386fa94a68e11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275974"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755022"
 ---
 # <a name="using-the-modelitem-editing-context"></a>Использование контекста редактирования ModelItem
 
@@ -105,7 +106,7 @@ protected override void OnModelItemChanged(object newItem)
   
 ## <a name="editingcontext-host-items-and-services"></a>Ведущие элементы узла EditingContext и службы  
 
- .NET Framework предоставляет ряд встроенных элементов и служб, доступ к которым осуществляется через контекст редактирования.  
+ Платформа .NET Framework предоставляет ряд встроенных элементов и служб, доступ к которым осуществляется через контекст редактирования.  
   
  Элементы:  
   
@@ -137,7 +138,7 @@ protected override void OnModelItemChanged(object newItem)
   
 - <xref:System.Activities.Presentation.Validation.IValidationErrorService> - обеспечивает доступ к ошибкам проверки через <xref:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors%2A>.  
   
-- <xref:System.Activities.Presentation.IWorkflowDesignerStorageService> - реализует внутреннюю службу для хранения и извлечения данных. Эта служба используется на внутреннем уровне .NET Framework и не предназначена для внешнего использования.  
+- <xref:System.Activities.Presentation.IWorkflowDesignerStorageService> - реализует внутреннюю службу для хранения и извлечения данных. Эта служба используется на внутреннем уровне платформа .NET Framework и не предназначена для внешнего использования.  
   
 - <xref:System.Activities.Presentation.IXamlLoadErrorService> - предоставляет доступ к коллекции ошибок загрузки XAML через <xref:System.Activities.Presentation.IXamlLoadErrorService.ShowXamlLoadErrors%2A>.  
   

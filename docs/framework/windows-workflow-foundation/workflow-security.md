@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: безопасность рабочих процессов'
 title: Безопасность рабочих процессов
 ms.date: 03/30/2017
 helpviewer_keywords:
 - programming [WF], workflow security
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
-ms.openlocfilehash: 6253a0d76d8b1db938e789f19d2cdd5abba9b700
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: afaf5c9f5a8b0bcf707dae0e9e9669d63c5f8176
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96273897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754866"
 ---
 # <a name="workflow-security"></a>Безопасность рабочих процессов
 
@@ -47,7 +48,7 @@ Windows Workflow Foundation (WF) интегрируется с нескольк�
 
 ## <a name="wf-security-pack-ctp"></a>Пакет безопасности WF CTP
 
- CTP-версия 1 представляет собой набор действий и их реализацию на основе [Windows Workflow Foundation](index.md) в [.NET Framework 4](/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) и [Windows Identity Foundation (WIF)](/previous-versions/dotnet/framework/security/index). Пакет безопасности Microsoft WF CTP 1 содержит действия и их конструкторы, которые демонстрируют простое включение различных сценариев обеспечения безопасности с помощью рабочих процессов, в том числе следующие:
+ CTP-версия 1 представляет собой набор действий и их реализацию на основе [Windows Workflow Foundation](index.md) в [платформа .NET Framework 4](/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) и [Windows Identity Foundation (WIF)](/previous-versions/dotnet/framework/security/index). Пакет безопасности Microsoft WF CTP 1 содержит действия и их конструкторы, которые демонстрируют простое включение различных сценариев обеспечения безопасности с помощью рабочих процессов, в том числе следующие:
 
 1. Олицетворение удостоверения клиента в рабочем процессе
 

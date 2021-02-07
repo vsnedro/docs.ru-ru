@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугблоккингобжектенум'
 title: Интерфейс ICorDebugBlockingObjectEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 208e5c2d-3f3f-404e-8b3c-7cccc14ddb16
 topic_type:
 - apiref
-ms.openlocfilehash: 221acf9bea714728a81b9f15c8165c1f9eba16a8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4f28039cb8a9bdcb376a9acf22572d29e41a2adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754073"
 ---
 # <a name="icordebugblockingobjectenum-interface"></a>Интерфейс ICorDebugBlockingObjectEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95719207"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icordebugblockingobjectenum-next-method.md)|Перечисляет по списку структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) .|  
+|[Следующий метод](icordebugblockingobjectenum-next-method.md)|Перечисляет по списку структур [CorDebugBlockingObject](cordebugblockingobject-structure.md) .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Каждая структура `CorDebugBlockingObject` представляет объект, блокирующий поток.  
   
@@ -46,9 +47,9 @@ ms.locfileid: "95719207"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

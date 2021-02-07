@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: dataContractSerializer'
 title: dataContractSerializer
 ms.date: 03/30/2017
 ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71
-ms.openlocfilehash: 0e4cbc50c25d4fa1f67f283f2b52d4b174428cd3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5dee59ba97a1632c142179aee79058dd3ce8c349
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153928"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754411"
 ---
 # <a name="datacontractserializer"></a>dataContractSerializer
 
@@ -55,7 +56,7 @@ ms.locfileid: "91153928"
 > [!CAUTION]
 > Элемент поведения `<dataContractSerializer>` (если он присутствует) должен всегда находиться в файле конфигурации перед элементом поведения `<enableWebScript>`. В противном случае результирующее поведение является неопределенным.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>

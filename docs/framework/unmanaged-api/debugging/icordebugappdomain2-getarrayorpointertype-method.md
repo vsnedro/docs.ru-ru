@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugAppDomain2:: Жетаррайорпоинтертипе'
 title: Метод ICorDebugAppDomain2::GetArrayOrPointerType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 97e493f5-3a62-4ec7-b42f-4af57bf71f57
 topic_type:
 - apiref
-ms.openlocfilehash: 8b3f6ae92e39f5385bf29f8b29abbb1726136088
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e42d105e807bdb8c81f2d6f8ef6c2f65a4081d98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754229"
 ---
 # <a name="icordebugappdomain2getarrayorpointertype-method"></a>Метод ICorDebugAppDomain2::GetArrayOrPointerType
 
@@ -51,7 +52,7 @@ HRESULT GetArrayOrPointerType (
  `ppType`  
  заполняет Указатель на адрес `ICorDebugType` объекта, представляющий сконструированный массив, тип указателя или ссылочный тип.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение *ElementType* должно быть одним из следующих:  
   
@@ -71,4 +72,4 @@ HRESULT GetArrayOrPointerType (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
