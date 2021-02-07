@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataAssemblyEmit::D Ефинеманифестресаурце'
 title: Метод IMetaDataAssemblyEmit::DefineManifestResource
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 27f6d295-0fe9-4cda-b77e-6e7d5c53df09
 topic_type:
 - apiref
-ms.openlocfilehash: 3729f06097fa4dce6de009307183d5e97c24479b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 53994f1777cbd2e019f14c0ccae375e6424de509
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678332"
 ---
 # <a name="imetadataassemblyemitdefinemanifestresource-method"></a>Метод IMetaDataAssemblyEmit::DefineManifestResource
 
@@ -55,7 +56,7 @@ HRESULT DefineManifestResource (
  `pmdmr`  
  заполняет Указатель на возвращаемый маркер метаданных.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ManifestResource`Для каждого ресурса, реализованного в каждом файле сборки, должна быть определена одна структура метаданных.  
   
@@ -67,8 +68,8 @@ HRESULT DefineManifestResource (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

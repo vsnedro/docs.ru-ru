@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataImport2:: Енумженерикпарамконстраинтс'
 title: Метод IMetaDataImport2::EnumGenericParamConstraints
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8a7d4e40-28fe-4e14-b801-4049880130e7
 topic_type:
 - apiref
-ms.openlocfilehash: 27c3ec349cf6c83f6783e252e6c5af5e99fa4b37
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7ee44059796a943411750b66f5b45034f871a0b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677552"
 ---
 # <a name="imetadataimport2enumgenericparamconstraints-method"></a>Метод IMetaDataImport2::EnumGenericParamConstraints
 
@@ -70,9 +71,9 @@ HRESULT EnumGenericParamConstraints (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 3309-Куерикомпоситионексекутед'
 title: 3309 - QueryCompositionExecuted
 ms.date: 03/30/2017
 ms.assetid: a7ae2267-b478-4115-8317-a89ce4ced65d
-ms.openlocfilehash: e11e03fdbe29efb6b55974b1d4f0a9428a2f9346
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 56eac39e13d4478cdf5e03218a4af1f8de5c289b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677357"
 ---
 # <a name="3309---querycompositionexecuted"></a>3309 - QueryCompositionExecuted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96279588"
 |-|-|  
 |ID|3309|  
 |Keywords|ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  

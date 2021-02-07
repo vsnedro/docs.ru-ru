@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataAssemblyEmit:: Сетассемблирефпропс'
 title: Метод IMetaDataAssemblyEmit::SetAssemblyRefProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type:
 - apiref
-ms.openlocfilehash: e28659f3c6912489775dd09951610f19e4400942
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 704fff656b705bb246e2742ce991d41fcadcdfcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678176"
 ---
 # <a name="imetadataassemblyemitsetassemblyrefprops-method"></a>Метод IMetaDataAssemblyEmit::SetAssemblyRefProps
 
@@ -67,7 +68,7 @@ HRESULT SetAssemblyRefProps (
  `dwAssemblyRefFlags`  
  окне Побитовое сочетание значений [ассемблиреффлагс](assemblyrefflags-enumeration.md) , задающих атрибуты упоминаемой сборки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы создать `AssemblyRef` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеассемблиреф](imetadataassemblyemit-defineassemblyref-method.md) .  
   
@@ -79,8 +80,8 @@ HRESULT SetAssemblyRefProps (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

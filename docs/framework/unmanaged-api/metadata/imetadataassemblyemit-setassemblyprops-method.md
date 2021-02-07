@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataAssemblyEmit:: Сетассемблипропс'
 title: Метод IMetaDataAssemblyEmit::SetAssemblyProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 91b633d7-9e75-43c3-a8d2-2144984e5f9e
 topic_type:
 - apiref
-ms.openlocfilehash: 3736e7279056e015b157758b1233cf6dc5aa6d8d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d5dfb5fa472bb83863c8e4909998deeb2b9fc53b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678202"
 ---
 # <a name="imetadataassemblyemitsetassemblyprops-method"></a>Метод IMetaDataAssemblyEmit::SetAssemblyProps
 
@@ -63,7 +64,7 @@ HRESULT SetAssemblyProps (
  `dwAssemblyFlags`  
  окне Побитовое сочетание значений [AssemblyFlags](assemblyflags-enumeration.md) , задающих различные атрибуты сборки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы создать `Assembly` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинеассембли](imetadataassemblyemit-defineassembly-method.md) .  
   
@@ -75,8 +76,8 @@ HRESULT SetAssemblyProps (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)
