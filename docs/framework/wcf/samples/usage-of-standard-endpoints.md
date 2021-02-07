@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Использование стандартных конечных точек.
 title: Использование стандартных конечных точек
 ms.date: 03/30/2017
 ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
-ms.openlocfilehash: 2b210bfe683669aeebf54a1701f07d492e6abdb4
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 804fdd84d3f6ff6f961aed81e8bd14cf8c43063c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685417"
 ---
 # <a name="usage-of-standard-endpoints"></a>Использование стандартных конечных точек
 
@@ -143,9 +144,9 @@ public class CustomEndpoint : ServiceEndpoint
 
 2. Разрешите запуск нескольких проектов.
 
-    1. В **Обозреватель решений**щелкните правой кнопкой мыши решение стандартные конечные точки и выберите пункт **свойства**.
+    1. В **Обозреватель решений** щелкните правой кнопкой мыши решение стандартные конечные точки и выберите пункт **свойства**.
 
-    2. В окне **Общие свойства**выберите **запускаемый проект**и щелкните **Несколько запускаемых проектов**.
+    2. В окне **Общие свойства** выберите **запускаемый проект** и щелкните **Несколько запускаемых проектов**.
 
     3. Переместите проект службы в начало списка, указав для параметра **действие** значение **Запуск**.
 
@@ -167,6 +168,6 @@ public class CustomEndpoint : ServiceEndpoint
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\StandardEndpoints`

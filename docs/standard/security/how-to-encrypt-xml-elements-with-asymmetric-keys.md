@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как шифровать XML-элементы с помощью асимметричных ключей.
 title: Практическое руководство. Шифрование XML-элементов с помощью асимметричных ключей
 ms.date: 07/14/2020
 dev_langs:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Advanced Encryption Standard algorithm
 - encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 29fe7c229664b08c9e1563413525818f2e883198
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fff8ec57da0318e48f2a230f01dba26497837028
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729347"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685157"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>Практическое руководство. Шифрование XML-элементов с помощью асимметричных ключей
 
@@ -129,7 +130,7 @@ ms.locfileid: "95729347"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+- В проекте, предназначенном для платформа .NET Framework, включите ссылку на `System.Security.dll` .
 
 - В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
@@ -143,7 +144,7 @@ ms.locfileid: "95729347"
   
 После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  Иногда криптографические ключи можно считывать из памяти отладчиком или с жесткого диска, если область памяти выгружается на диск.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

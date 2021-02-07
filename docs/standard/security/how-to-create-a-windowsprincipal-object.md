@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как создать объект WindowsPrincipal.
 title: Практическое руководство. Создание объекта WindowsPrincipal
 ms.date: 07/15/2020
 dev_langs:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - security [.NET], principals
 - principal objects, creating
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-ms.openlocfilehash: d4140470308a09774e5e4eee429c1e91b559d063
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: eee33eb419e8626b8b7f627b9ab1e46ea8dceab5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94819036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685235"
 ---
 # <a name="how-to-create-a-windowsprincipal-object"></a>Практическое руководство. Создание объекта WindowsPrincipal
 
@@ -80,7 +81,7 @@ ms.locfileid: "94819036"
   
 3. После создания объекта субъекта можно использовать один из нескольких методов для его проверки.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Объекты Principal и Identity](principal-and-identity-objects.md)
 - [Безопасность ASP.NET Core](/aspnet/core/security/)

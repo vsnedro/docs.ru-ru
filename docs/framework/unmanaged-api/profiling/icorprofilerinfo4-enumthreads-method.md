@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод icorprofilerinfo4:: EnumThreads'
 title: Метод ICorProfilerInfo4::EnumThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bca7a5b4-c207-4894-918c-0733926296dd
 topic_type:
 - apiref
-ms.openlocfilehash: df0e66c8563404d7de4f1e11f41483f2f61f519c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d597e68b8765e135d5bdb403dbdb161b7acbaa9b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721560"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686938"
 ---
 # <a name="icorprofilerinfo4enumthreads-method"></a>Метод ICorProfilerInfo4::EnumThreads
 
@@ -48,9 +49,9 @@ HRESULT EnumThreads([out]
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)
 - [Интерфейс ICorProfilerInfo4](icorprofilerinfo4-interface.md)

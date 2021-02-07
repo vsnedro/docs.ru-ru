@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo3:: Рекуестпрофилердетач'
 title: Метод ICorProfilerInfo3::RequestProfilerDetach
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
 topic_type:
 - apiref
-ms.openlocfilehash: 2ea39c94a5a0f3d24d4123d6405115ac75105e26
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d37c6df823aaebe4209e45cd459a8815a39852f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687042"
 ---
 # <a name="icorprofilerinfo3requestprofilerdetach-method"></a>Метод ICorProfilerInfo3::RequestProfilerDetach
 
@@ -51,7 +52,7 @@ HRESULT RequestProfilerDetach(
 |CORPROF_E_RUNTIME_UNINITIALIZED|Среда выполнения еще не была инициализирована в управляемом приложении. (То есть среда выполнения не была полностью загружена.) Этот код ошибки может быть возвращен, когда запрос отсоединения запрашивается в методе [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) обратного вызова профилировщика.|  
 |CORPROF_E_UNSUPPORTED_CALL_SEQUENCE|`RequestProfilerDetach` был вызван в неподдерживаемое время. Это происходит, если метод вызывается в управляемом потоке, но не в методе [ICorProfilerCallback](icorprofilercallback-interface.md) или в методе [ICorProfilerCallback](icorprofilercallback-interface.md) , который не допускает сборки мусора. Дополнительные сведения см. в разделе [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](corprof-e-unsupported-call-sequence-hresult.md).|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  При выполнении процедуры отсоединения поток отсоединения (поток, созданный специально для отсоединения профилировщика) периодически проверяет, все ли потоки вышли из кода профилировщика. Профилировщик должен предоставить оценку, как долго это должно происходить, с помощью параметра `dwExpectedCompletionMilliseconds`. В качестве этого значения рекомендуется использовать обычное время, которое профилировщик проводит внутри любого конкретного метода `ICorProfilerCallback*`; это значение не должно быть меньше половины максимального времени, которое профилировщик предполагает потратить.  
   
@@ -67,9 +68,9 @@ HRESULT RequestProfilerDetach(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

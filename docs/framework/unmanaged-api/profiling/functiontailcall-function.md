@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Функтионтаилкалл
 title: Функция FunctionTailcall
 ms.date: 03/30/2017
 api_name:
@@ -14,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 66347e03-9a97-41e8-8f9d-89b80803f7b5
 topic_type:
 - apiref
-ms.openlocfilehash: 02bc6f4bbb6754bd160fe2694f27563908f3a759
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8da3efde7d925fdb02232ca98662f8d6a6fd0adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722223"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687315"
 ---
 # <a name="functiontailcall-function"></a>Функция FunctionTailcall
 
 Уведомляет профилировщик о том, что выполняемая в данный момент функция собирается выполнить вызов другой функции с префиксом tail.  
   
 > [!NOTE]
-> `FunctionTailcall`Функция является устаревшей в .NET Framework версии 2,0. Он будет продолжать работать, но будет приводить к снижению производительности. Вместо этого используйте функцию [FunctionTailcall2](functiontailcall2-function.md) .  
+> `FunctionTailcall`Функция является устаревшей в платформа .NET Framework версии 2,0. Он будет продолжать работать, но будет приводить к снижению производительности. Вместо этого используйте функцию [FunctionTailcall2](functiontailcall2-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,7 +43,7 @@ void __stdcall FunctionTailcall (
 
   \[in] идентификатор выполняемой в данный момент функции, которая собирается выполнить вызов с префиксом tail.
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Целевая функция вызова с префиксом tail будет использовать текущий кадр стека и будет возвращаться непосредственно вызывающему объекту функции, которая выполнила вызов с префиксом tail. Это означает, что обратный вызов [FunctionLeave](functionleave-function.md) не будет выдаваться для функции, которая является целевым объектом для вызова с префиксом tail.  
   
@@ -66,9 +67,9 @@ void __stdcall FunctionTailcall (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameKeyGenEx
 title: Функция StrongNameKeyGenEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 36bd10b9-9857-45f3-8d3b-0da091d6169e
 topic_type:
 - apiref
-ms.openlocfilehash: f28ee5767997240018d182b8303e4f65be81c702
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b6c103d16cac1b4668e4b478a0947970b5b44a0b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686831"
 ---
 # <a name="strongnamekeygenex-function"></a>Функция StrongNameKeyGenEx
 
@@ -64,9 +65,9 @@ BOOLEAN StrongNameKeyGenEx (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Для подписывания сборки строгим именем в .NET Framework версиях 1,0 и 1,1 требуется a `dwKeySize` из 1024 бит. в версии 2,0 добавлена поддержка для 2048-разрядных ключей.  
+ Для подписывания сборки строгим именем в платформа .NET Framework версиях 1,0 и 1,1 требуется a `dwKeySize` из 1024 бит. в версии 2,0 добавлена поддержка для 2048-разрядных ключей.  
   
  После извлечения ключа необходимо вызвать функцию [StrongNameFreeBuffer](strongnamefreebuffer-function.md) , чтобы освободить выделенную память.  
   
@@ -80,9 +81,9 @@ BOOLEAN StrongNameKeyGenEx (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameKeyGenEx](../hosting/iclrstrongname-strongnamekeygenex-method.md)
 - [Метод StrongNameKeyGen](../hosting/iclrstrongname-strongnamekeygen-method.md)

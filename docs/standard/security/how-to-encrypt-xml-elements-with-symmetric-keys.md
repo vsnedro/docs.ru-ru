@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как шифровать XML-элементы с помощью симметричных ключей.
 title: Практическое руководство. Шифрование XML-элементов с помощью симметричного ключа
 ms.date: 07/14/2020
 dev_langs:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - XML encryption
 - Advanced Encryption Standard algorithm
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
-ms.openlocfilehash: cfda1835a1390b025f2ee0509a91c59104a77ae9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 137e1592a73ff9eb25fd6a5ba29b92c839f44575
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685118"
 ---
 # <a name="how-to-encrypt-xml-elements-with-symmetric-keys"></a>Практическое руководство. Шифрование XML-элементов с помощью симметричного ключа
 
@@ -89,7 +90,7 @@ ms.locfileid: "94820232"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+- В проекте, предназначенном для платформа .NET Framework, включите ссылку на `System.Security.dll` .
 
 - В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
@@ -101,7 +102,7 @@ ms.locfileid: "94820232"
   
 После завершения работы с криптографическим ключом очистите его из памяти, установив для каждого байта нулевое значение или вызвав метод <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> управляемого класса шифрования.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Криптографическая модель](cryptography-model.md) — описывает, как криптография реализуется в библиотеке базовых классов.
 - [службы шифрования](cryptographic-services.md)

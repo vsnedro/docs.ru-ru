@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Проверка цифровых подписей XML-документов.
 title: Практическое руководство. Проверка цифровых подписей XML-документов
 ms.date: 07/14/2020
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - XML digital signatures
 - digital signatures, verifying
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
-ms.openlocfilehash: 9cbebd34866b66c00bf4aca708d75e315b067b0d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 37ef72c6bedf73ced7c2dde4335034f603190946
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685040"
 ---
 # <a name="how-to-verify-the-digital-signatures-of-xml-documents"></a>Практическое руководство. Проверка цифровых подписей XML-документов
 
@@ -77,7 +78,7 @@ ms.locfileid: "94820076"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+- В проекте, предназначенном для платформа .NET Framework, включите ссылку на `System.Security.dll` .
 
 - В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
@@ -89,7 +90,7 @@ ms.locfileid: "94820076"
   
 Не следует внедрять закрытый ключ непосредственно в исходный код.  Внедренные ключи можно легко считывать из сборки с помощью [Ildasm.exe (IL)](../../framework/tools/ildasm-exe-il-disassembler.md) или путем открытия сборки в текстовом редакторе, например в блокноте.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

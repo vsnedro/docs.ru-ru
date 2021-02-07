@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод icorprofilerinfo4:: GetCodeInfo3'
 title: Метод ICorProfilerInfo4::GetCodeInfo3
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb8c105e-4d9a-4684-8c05-ed6909cc1b8c
 topic_type:
 - apiref
-ms.openlocfilehash: 44454b87bb656d2a4ad6e597ae001f64222b905f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6bc2beb291101257448ab58ac9a93362005fecbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686832"
 ---
 # <a name="icorprofilerinfo4getcodeinfo3-method"></a>Метод ICorProfilerInfo4::GetCodeInfo3
 
@@ -55,7 +56,7 @@ HRESULT GetCodeInfo3(
  `codeInfos`  
  [out] Буфер, предоставляемый вызывающим объектом. После возврата метода он содержит массив структур `COR_PRF_CODE_INFO`, каждая из которых описывает блок машинного кода.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetCodeInfo3`Метод аналогичен [GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md), за исключением того, что он получает JIT-перекомпилированный идентификатор функции, которая содержит указанный IP-адрес.  
   
@@ -76,9 +77,9 @@ HRESULT GetCodeInfo3(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md)
 - [Интерфейс ICorProfilerInfo4](icorprofilerinfo4-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerInfo3'
 title: Интерфейс ICorProfilerInfo3
 ms.date: 03/30/2017
 api_name:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654
 topic_type:
 - apiref
-ms.openlocfilehash: 9944234da1677608aec10066b61bfc6a6cb72bcb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52b4c699a122c302e47cffb11d01e7829009e219
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687185"
 ---
 # <a name="icorprofilerinfo3-interface"></a>Интерфейс ICorProfilerInfo3
 
-Предоставляет методы, используемые профилировщиками кода для обмена данными со средой CLR с целью управления мониторингом событий и запроса информации. `ICorProfilerInfo3`Интерфейс является расширением интерфейса [ICorProfilerInfo2](icorprofilerinfo2-interface.md) . Он предоставляет новые методы, поддерживаемые в .NET Framework 4 и более поздних версий.  
+Предоставляет методы, используемые профилировщиками кода для обмена данными со средой CLR с целью управления мониторингом событий и запроса информации. `ICorProfilerInfo3`Интерфейс является расширением интерфейса [ICorProfilerInfo2](icorprofilerinfo2-interface.md) . Он предоставляет новые методы, поддерживаемые в платформа .NET Framework 4 и более поздних версий.  
   
 ## <a name="methods"></a>Методы  
   
@@ -44,7 +45,7 @@ ms.locfileid: "95697861"
 |[Метод SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md)|Задает реализованные профилировщиком функции, которые будут вызываться для обработчиков [FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)и [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) управляемых функций.|  
 |[Метод SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)|Задает реализуемую профилировщиком функцию, которая будет вызвана для сопоставления значений `FunctionID` с альтернативными значениями, передаваемыми обработчикам входа и выхода для функции профилировщика. Этот метод расширяет [ICorProfilerInfo:: SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md) с параметром, который профилировщики могут использовать для устранения неоднозначности между средами выполнения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR реализует методы интерфейса `ICorProfilerInfo3` с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в файле CorError.h.  
   
@@ -58,9 +59,9 @@ ms.locfileid: "95697861"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

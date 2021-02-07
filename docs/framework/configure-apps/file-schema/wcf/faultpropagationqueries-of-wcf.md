@@ -1,15 +1,16 @@
 ---
-title: <faultPropagationQueries>WCF
+description: 'Дополнительные сведения о: <faultPropagationQueries> из WCF'
+title: <faultPropagationQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: d85f66a7-e7b0-4dbb-83cc-89fa06fc9161
-ms.openlocfilehash: 709c2c6907b4d0d28118f9de12edb047aa16d741
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e3ed504b3aada87246fabe54c0b32ef5ad60b34b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684442"
 ---
-# <a name="faultpropagationqueries-of-wcf"></a>\<faultPropagationQueries>WCF
+# <a name="faultpropagationqueries-of-wcf"></a>\<faultPropagationQueries> WCF
 
 Представляет коллекцию запросов, которые используются для отслеживания обработки ошибок, возникающих в рамках действия.  Это событие возникает каждый раз, когда FaultHandler обрабатывает ошибку. Такой запрос следует использовать для отслеживания обработки ошибок, возникающих в рамках действия. Этот запрос необходим, чтобы участник отслеживания подписался на записи распространения ошибок.  
   
