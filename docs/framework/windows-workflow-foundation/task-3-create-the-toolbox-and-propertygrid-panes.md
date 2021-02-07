@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: задача 3. Создание панели элементов и панелей PropertyGrid'
 title: Задача 3. Создание области элементов и сетки свойств
 ms.date: 03/30/2017
 ms.assetid: 72c1546a-eed5-4f0f-a616-719a163414f4
-ms.openlocfilehash: 29e50b24135cd3d6a02052d846e1781b0d9fa325
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: c07bfc2f974018cb0d789a6cc1181f9bed861382
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74716232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755167"
 ---
 # <a name="task-3-create-the-toolbox-and-propertygrid-panes"></a>Задача 3. Создание области элементов и сетки свойств
 
@@ -21,7 +22,7 @@ ms.locfileid: "74716232"
 
 2. В области **Обозреватель решений** щелкните правой кнопкой мыши файл *MainWindow. XAML* и выберите **Просмотреть код**.
 
-3. Добавьте `GetToolboxControl` метод в класс `MainWindow`, который создает <xref:System.Activities.Presentation.Toolbox.ToolboxControl>, добавит новую категорию **панели элементов** в **панель элементов**и присвоит этой категории типы действий <xref:System.Activities.Statements.Assign> и <xref:System.Activities.Statements.Sequence>.
+3. Добавьте `GetToolboxControl` метод в `MainWindow` класс, который создает <xref:System.Activities.Presentation.Toolbox.ToolboxControl> , добавляет новую категорию **панели** элементов в **область элементов** и присваивает <xref:System.Activities.Statements.Assign> <xref:System.Activities.Statements.Sequence> этой категории типы действий и.
 
     ```csharp
     private ToolboxControl GetToolboxControl()
@@ -50,7 +51,7 @@ ms.locfileid: "74716232"
     }
     ```
 
-4. Добавьте закрытый метод `AddToolbox` в класс `MainWindow`, который помещает **область элементов** в левом столбце сетки.
+4. Добавьте в `AddToolbox` класс закрытый метод `MainWindow` , поместив **область элементов** в левый столбец сетки.
 
     ```csharp
     private void AddToolBox()
@@ -61,7 +62,7 @@ ms.locfileid: "74716232"
     }
     ```
 
-5. Добавьте вызов метода `AddToolBox` в конструкторе класса `MainWindow()`, как показано в следующем коде:
+5. Добавьте вызов `AddToolBox` метода в `MainWindow()` конструктор класса, как показано в следующем коде:
 
     ```csharp
     public MainWindow()
@@ -74,13 +75,13 @@ ms.locfileid: "74716232"
     }
     ```
 
-6. Нажмите клавишу <kbd>F5</kbd> , чтобы создать и запустить решение. Необходимо отобразить **панель элементов** , содержащую действия <xref:System.Activities.Statements.Assign> и <xref:System.Activities.Statements.Sequence>.
+6. Нажмите клавишу <kbd>F5</kbd> , чтобы создать и запустить решение. Должна отобразиться **панель элементов** , содержащая <xref:System.Activities.Statements.Assign> <xref:System.Activities.Statements.Sequence> действия и.
 
 ## <a name="to-create-the-propertygrid"></a>Создание области PropertyGrid
 
 1. В области **Обозреватель решений** щелкните правой кнопкой мыши файл *MainWindow. XAML* и выберите **Просмотреть код**.
 
-2. Добавьте метод `AddPropertyInspector` в класс `MainWindow`, чтобы разместить панель **PropertyGrid** в крайнем правом столбце сетки:
+2. Добавьте `AddPropertyInspector` метод в класс, `MainWindow` чтобы разместить панель **PropertyGrid** в крайнем правом столбце сетки:
 
     ```csharp
     private void AddPropertyInspector()
@@ -90,7 +91,7 @@ ms.locfileid: "74716232"
     }
     ```
 
-3. Добавьте вызов метода `AddPropertyInspector` в конструкторе класса `MainWindow()`, как показано в следующем коде:
+3. Добавьте вызов `AddPropertyInspector` метода в `MainWindow()` конструктор класса, как показано в следующем коде:
 
     ```csharp
     public MainWindow()
@@ -104,7 +105,7 @@ ms.locfileid: "74716232"
     }
     ```
 
-4. Нажмите клавишу <kbd>F5</kbd> , чтобы создать и запустить решение. Все области **элементов**, конструктор рабочих процессов и панели **PropertyGrid** должны отображаться, а при перетаскивании <xref:System.Activities.Statements.Assign> действия или <xref:System.Activities.Statements.Sequence> на холст конструктора сетка свойств должна обновляться в зависимости от выделенного действия.
+4. Нажмите клавишу <kbd>F5</kbd> , чтобы создать и запустить решение. Все области **элементов**, конструктор рабочих процессов и панели **PropertyGrid** должны отображаться, а при перетаскивании <xref:System.Activities.Statements.Assign> действия или <xref:System.Activities.Statements.Sequence> действия на холст конструктора сетка свойств должна обновляться в зависимости от выделенного действия.
 
 ## <a name="example"></a>Пример
 
@@ -214,8 +215,8 @@ namespace HostingApplication
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-- [Отдельное размещение конструктора рабочих процессов](rehosting-the-workflow-designer.md)
-- [Задача 1. Создание приложения Windows Presentation Foundation](task-1-create-a-new-wpf-app.md)
-- [Задача 2. Размещение конструктора рабочих процессов](task-2-host-the-workflow-designer.md)
+- [Повторное размещение конструктора рабочих процессов](rehosting-the-workflow-designer.md)
+- [Задача 1. Создание нового приложения Windows Presentation Foundation](task-1-create-a-new-wpf-app.md)
+- [Задача 2. Размещение конструктора рабочих процессов](task-2-host-the-workflow-designer.md)
