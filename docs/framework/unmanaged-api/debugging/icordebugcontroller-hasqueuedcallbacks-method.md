@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugController:: Хаскуеуедкаллбаккс'
 title: Метод ICorDebugController::HasQueuedCallbacks
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
 topic_type:
 - apiref
-ms.openlocfilehash: bd623f8bee2feafebe80c0c7513bcfb33d6ad367
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bdc22831b912d3bad565b6abf5c73591d07ffe11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707923"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764675"
 ---
 # <a name="icordebugcontrollerhasqueuedcallbacks-method"></a>Метод ICorDebugController::HasQueuedCallbacks
 
@@ -45,7 +46,7 @@ HRESULT HasQueuedCallbacks (
   
  Если для параметра задано значение NULL `pThread` , `HasQueuedCallbacks` функция возвратит, если в `true` настоящий момент в очереди есть управляемые обратные вызовы для любого потока.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Обратные вызовы будут отправлены по одному, каждый раз, когда вызывается [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) . Отладчик может проверить этот флаг, если он хочет сообщить о нескольких событиях отладки, происходящих одновременно.  
   
@@ -59,6 +60,6 @@ HRESULT HasQueuedCallbacks (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также

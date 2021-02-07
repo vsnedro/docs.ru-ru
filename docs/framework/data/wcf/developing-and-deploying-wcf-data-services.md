@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Разработка и развертывание службы данных WCF'
 title: Разработка и развертывание служб WCF Data Services
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,24 +8,26 @@ helpviewer_keywords:
 - deploying [WCF Data Services
 - developing applications [WCF Data Services]
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.openlocfilehash: 484505406701b52a2b80b95b718a23a2156aa22c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 52d7a00ffbd333b9a6ad01298fd1133ea8d5e731
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "90556093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766079"
 ---
-# <a name="develop-and-deploy-wcf-data-services"></a>Разработка и развертывание WCF Data Services
+# <a name="develop-and-deploy-wcf-data-services"></a>Разработка и развертывание службы данных WCF
 
-В этой статье содержатся сведения о разработке и развертывании WCF Data Services. Дополнительные основные сведения о WCF Data Services см. в разделе [Начало работы](getting-started-with-wcf-data-services.md) и [Обзор](wcf-data-services-overview.md).
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
-## <a name="develop-wcf-data-services"></a>Разработка WCF Data Services
+В этой статье содержатся сведения о разработке и развертывании службы данных WCF. Дополнительные основные сведения о службы данных WCF см. в разделе [Начало работы](getting-started-with-wcf-data-services.md) и [Обзор](wcf-data-services-overview.md).
 
-При использовании WCF Data Services для создания службы данных, которая поддерживает Open Data Protocol (OData), необходимо выполнить следующие основные задачи во время разработки.
+## <a name="develop-wcf-data-services"></a>Разработка службы данных WCF
+
+При использовании службы данных WCF для создания службы данных, которая поддерживает Open Data Protocol (OData), необходимо выполнить следующие основные задачи во время разработки.
 
 1. **Определение модели данных**
 
-     WCF Data Services поддерживает различные поставщики служб данных, позволяющие определить модель данных на основе данных из различных источников данных, от реляционных баз данных до типов данных с поздним связыванием. Дополнительные сведения см. в разделе [поставщики служб данных](data-services-providers-wcf-data-services.md).
+     Службы данных WCF поддерживает различные поставщики служб данных, позволяющие определить модель данных на основе данных из различных источников данных, от реляционных баз данных до типов данных с поздним связыванием. Дополнительные сведения см. в разделе [поставщики служб данных](data-services-providers-wcf-data-services.md).
 
 2. **Создание службы данных**
 
@@ -32,9 +35,9 @@ ms.locfileid: "90556093"
 
 3. **Настройка службы данных**
 
-     По умолчанию WCF Data Services отключает доступ к ресурсам, предоставляемым контейнером сущностей. <xref:System.Data.Services.DataServiceConfiguration>Интерфейс позволяет настроить доступ к ресурсам и операциям службы, указать поддерживаемую версию OData и определить другие поведения на уровне службы, например поведение пакетной обработки или максимальное число сущностей, которые могут быть возвращены в одном канале ответа. Дополнительные сведения см. [в разделе Настройка службы данных](configuring-the-data-service-wcf-data-services.md).
+     По умолчанию службы данных WCF отключает доступ к ресурсам, предоставляемым контейнером сущностей. <xref:System.Data.Services.DataServiceConfiguration>Интерфейс позволяет настроить доступ к ресурсам и операциям службы, указать поддерживаемую версию OData и определить другие поведения на уровне службы, например поведение пакетной обработки или максимальное число сущностей, которые могут быть возвращены в одном канале ответа. Дополнительные сведения см. [в разделе Настройка службы данных](configuring-the-data-service-wcf-data-services.md).
 
-В этой статье в основном рассматривается разработка и развертывание служб данных с помощью Visual Studio. Сведения о гибкости, обеспечиваемой WCF Data Services для предоставления данных в виде веб-каналов OData, см. в разделе [определение WCF Data Services](defining-wcf-data-services.md).
+В этой статье в основном рассматривается разработка и развертывание служб данных с помощью Visual Studio. Сведения о гибкости, обеспечиваемой службы данных WCF для предоставления данных в виде веб-каналов OData, см. в разделе [определение службы данных WCF](defining-wcf-data-services.md).
 
 ### <a name="choose-a-development-web-server"></a>Выбор веб-сервера разработки
 
@@ -49,7 +52,7 @@ ms.locfileid: "90556093"
 
 2. **Сервер разработки Visual Studio**
 
-     Visual Studio включает встроенный веб-сервер, Visual Studio Development Server, который является веб-сервером по умолчанию для проектов ASP.NET. Этот веб-сервер предназначен для запуска проектов ASP.NET на локальном компьютере во время разработки. В [WCF Data Services кратком руководстве](quickstart-wcf-data-services.md) показано, как создать службу данных, которая выполняется в Visual Studio Development Server.
+     Visual Studio включает встроенный веб-сервер, Visual Studio Development Server, который является веб-сервером по умолчанию для проектов ASP.NET. Этот веб-сервер предназначен для запуска проектов ASP.NET на локальном компьютере во время разработки. В [службы данных WCF кратком руководстве](quickstart-wcf-data-services.md) показано, как создать службу данных, которая выполняется в Visual Studio Development Server.
 
      При использовании Visual Studio Development Server для разработки службы данных учитывайте следующие ограничения.
 
@@ -61,9 +64,9 @@ ms.locfileid: "90556093"
 
     - На этом сервере отсутствуют дополнительные возможности служб IIS, такие как проверка подлинности.
 
-    - Этот сервер не может работать с фрагментированными потоками HTTP, которые по умолчанию отправляются клиентом WCF Data Services при доступе к большим двоичным данным из службы данных. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md).
+    - Этот сервер не может работать с фрагментированными потоками HTTP, которые по умолчанию отправляются клиентом службы данных WCF при доступе к большим двоичным данным из службы данных. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md).
 
-    - На этом сервере возникли проблемы с обработкой символа period ( `.` ) в URL-адресе, хотя этот символ поддерживается WCF Data Services в значениях ключа.
+    - На этом сервере возникли проблемы с обработкой символа period ( `.` ) в URL-адресе, хотя этот символ поддерживается службы данных WCF в значениях ключа.
 
     > [!TIP]
     > Несмотря на то, что можно использовать Visual Studio Development Server для тестирования служб данных во время разработки, их следует протестировать снова после развертывания на веб-сервере, на котором работают службы IIS.
@@ -80,13 +83,13 @@ ms.locfileid: "90556093"
 
 - Программа проверки HTTP может быть полезной при отладке службы данных, позволяя проверять содержимое сообщений запросов и ответов. Любой планировщик сетевых пакетов, способный отображать необработанные пакеты, можно использовать для проверки HTTP-запросов к службе данных и ответов от нее.
 
-- При отладке службы данных может потребоваться получить дополнительные сведения об ошибке из службы данных, чем во время обычной работы. Дополнительные сведения об ошибках можно получить из службы данных, установив свойство <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> в <xref:System.Data.Services.DataServiceConfiguration> значение `true` , а свойство <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> атрибута <xref:System.ServiceModel.Description.ServiceDebugBehavior> класса службы данных — в значение `true`. Дополнительные сведения см. в разделе Post [Debugging WCF Data Services](/archive/blogs/phaniraj/debugging-wcf-data-services). Можно также включить трассировку в WCF для просмотра исключений, возникающих на уровне HTTP-сообщений. Для получения дополнительной информации см. [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
+- При отладке службы данных может потребоваться получить дополнительные сведения об ошибке из службы данных, чем во время обычной работы. Дополнительные сведения об ошибках можно получить из службы данных, установив свойство <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> в <xref:System.Data.Services.DataServiceConfiguration> значение `true` , а свойство <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> атрибута <xref:System.ServiceModel.Description.ServiceDebugBehavior> класса службы данных — в значение `true`. Дополнительные сведения см. в разделе Post [Debugging службы данных WCF](/archive/blogs/phaniraj/debugging-wcf-data-services). Можно также включить трассировку в WCF для просмотра исключений, возникающих на уровне HTTP-сообщений. Для получения дополнительной информации см. [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
 
 - Служба данных обычно разрабатывается как проект приложения ASP.NET, но вы также можете создать службу данных в качестве проекта веб-сайта ASP.NET в Visual Studio. Сведения о различиях между двумя типами проектов см. [в разделе проекты веб-приложений и проекты веб-сайтов в Visual Studio](/previous-versions/aspnet/dd547590(v=vs.110)).
 
 - При создании службы данных с помощью диалогового окна **Добавление нового элемента** в Visual Studio Служба данных размещается в ASP.NET в IIS. Хотя ASP.NET и IIS является узлом по умолчанию для службы данных, поддерживаются другие варианты размещения. Дополнительные сведения см. [в разделе Размещение службы данных](hosting-the-data-service-wcf-data-services.md).
 
-## <a name="deploy-wcf-data-services"></a>Развертывание WCF Data Services
+## <a name="deploy-wcf-data-services"></a>Развертывание службы данных WCF
 
 Службы данных WCF обеспечивают гибкость в выборе процесса, в котором будет размещаться служба данных. Visual Studio можно использовать для развертывания службы данных на следующих платформах:
 
@@ -123,9 +126,9 @@ ms.locfileid: "90556093"
 
 - При развертывании службы данных, которая использует поставщик Entity Framework для доступа к базе данных SQL Server, может также потребоваться распространить структуры данных, данные или и то, и другое вместе с развертыванием службы данных. Visual Studio может автоматически создавать скрипты (SQL-файлы), чтобы сделать это в целевой базе данных, и эти скрипты можно добавить в пакет веб-развертывания приложения ASP.NET. Дополнительные сведения см. [в разделе руководство. Развертывание базы данных с помощью проекта веб-приложения](/previous-versions/dd465343(v=vs.100)). Для веб-сайта ASP.NET это можно сделать с помощью **мастера публикации баз данных** в Visual Studio. Дополнительные сведения см. [в разделе Публикация базы данных SQL](/previous-versions/aspnet/bb907585(v=vs.100)).
 
-- Поскольку WCF Data Services включает базовую реализацию WCF, можно использовать Windows Server AppFabric для мониторинга службы данных, развернутой в службах IIS, работающих на Windows Server. Дополнительные сведения об использовании Windows Server AppFabric для мониторинга службы данных см. в подразделе " [Отслеживание после WCF Data Services с помощью Windows Server AppFabric](/archive/blogs/rjacobs/tracking-wcf-data-services-with-windows-server-appfabric)".
+- Поскольку службы данных WCF включает базовую реализацию WCF, можно использовать Windows Server AppFabric для мониторинга службы данных, развернутой в службах IIS, работающих на Windows Server. Дополнительные сведения об использовании Windows Server AppFabric для мониторинга службы данных см. в подразделе " [Отслеживание после службы данных WCF с помощью Windows Server AppFabric](/archive/blogs/rjacobs/tracking-wcf-data-services-with-windows-server-appfabric)".
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение службы данных](hosting-the-data-service-wcf-data-services.md)
 - [Защита служб WCF Data Services](securing-wcf-data-services.md)

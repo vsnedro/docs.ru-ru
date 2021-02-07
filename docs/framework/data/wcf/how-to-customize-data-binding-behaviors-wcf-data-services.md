@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Настройка поведения привязки данных (службы данных WCF).
 title: Практическое руководство. Настройка поведения привязки данных (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,18 +9,20 @@ helpviewer_keywords:
 - WCF Data Services, customizing
 - WCF Data Services, data binding
 ms.assetid: 40476b89-8941-4771-8d21-2fe430c85a9d
-ms.openlocfilehash: 13847923a5f31108e93ef12cf7775109be3cd9eb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 60c8808f90f8e0a824a8b2b641508c0fe33f14cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765689"
 ---
 # <a name="how-to-customize-data-binding-behaviors-wcf-data-services"></a>Практическое руководство. Настройка поведения привязки данных (службы данных WCF)
 
-С помощью WCF Data Services можно указать пользовательскую логику, вызываемую, <xref:System.Data.Services.Client.DataServiceCollection%601> когда объект добавляется в коллекцию привязки или удаляется из нее или когда обнаруживается изменение свойства. Эта пользовательская логика предоставляется в виде методов, на которые ссылаются как <xref:System.Func%602> делегаты, которые возвращают значение, `false` Если поведение по умолчанию по-прежнему должно быть выполнено при завершении пользовательского метода, и `true` когда должна быть остановлена последующая обработка события.  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+С помощью службы данных WCF можно указать пользовательскую логику, вызываемую, <xref:System.Data.Services.Client.DataServiceCollection%601> когда объект добавляется в коллекцию привязки или удаляется из нее или когда обнаруживается изменение свойства. Эта пользовательская логика предоставляется в виде методов, на которые ссылаются как <xref:System.Func%602> делегаты, которые возвращают значение, `false` Если поведение по умолчанию по-прежнему должно быть выполнено при завершении пользовательского метода, и `true` когда должна быть остановлена последующая обработка события.  
   
- Примеры в этом разделе добавляют специализированные методы для обоих параметров `entityChanged` и `entityCollectionChanged` коллекции <xref:System.Data.Services.Client.DataServiceCollection%601>. Примеры в этом разделе используют образец службы данных Northwind и автоматически сформированные клиентские классы службы данных. Эта служба и классы данных клиента создаются при завершении [краткого руководства по WCF Data Services](quickstart-wcf-data-services.md).  
+ Примеры в этом разделе добавляют специализированные методы для обоих параметров `entityChanged` и `entityCollectionChanged` коллекции <xref:System.Data.Services.Client.DataServiceCollection%601>. Примеры в этом разделе используют образец службы данных Northwind и автоматически сформированные клиентские классы службы данных. Эта служба и классы данных клиента создаются при завершении [краткого руководства по службы данных WCF](quickstart-wcf-data-services.md).  
   
 ## <a name="example"></a>Пример  
 
@@ -35,6 +38,6 @@ ms.locfileid: "91172519"
   
  [!code-xaml[Astoria Northwind Client#WpfDataBindingCustomXaml](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)

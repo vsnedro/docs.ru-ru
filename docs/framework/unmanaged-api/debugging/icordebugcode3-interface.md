@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugCode3'
 title: Интерфейс ICorDebugCode3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 70f07c9e-0614-4bee-ac34-09fe6c51c5a9
 topic_type:
 - apiref
-ms.openlocfilehash: 609cd557db71fac53aadf613534a23e988b14bde
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 378141395ab4d23e3e33a84c3b14ca4a75d847dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764844"
 ---
 # <a name="icordebugcode3-interface"></a>Интерфейс ICorDebugCode3
 
@@ -31,7 +32,7 @@ ms.locfileid: "95720763"
 |------------|-----------------|  
 |[Метод GetReturnValueLiveOffset](icordebugcode3-getreturnvalueliveoffset-method.md)|Для указанного смещения IL получает машинные смещения, в которых должна быть помещена точка останова, чтобы отладчик мог получить возвращаемое значение из функции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,9 +45,9 @@ ms.locfileid: "95720763"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugILFrame3](icordebugilframe3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

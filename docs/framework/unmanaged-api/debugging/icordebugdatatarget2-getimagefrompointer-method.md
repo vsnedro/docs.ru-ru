@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugdatatarget2:: Жетимажефромпоинтер'
 title: Метод ICorDebugDataTarget2::GetImageFromPointer
 ms.date: 03/30/2017
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d
-ms.openlocfilehash: 41385fe915733f052af67c82d984c8b9d853c579
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bcf73fa522072707a7b08d90965fcd38188c2bb5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764402"
 ---
 # <a name="icordebugdatatarget2getimagefrompointer-method"></a>Метод ICorDebugDataTarget2::GetImageFromPointer
 
@@ -34,7 +35,7 @@ HRESULT GetImageFromPointer(
  `pSize`  
  Указатель на размер модуля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -47,9 +48,9 @@ HRESULT GetImageFromPointer(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugDataTarget2](icordebugdatatarget2-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

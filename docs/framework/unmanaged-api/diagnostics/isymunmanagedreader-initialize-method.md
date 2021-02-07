@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedReader:: Initialize'
 title: Метод ISymUnmanagedReader::Initialize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type:
 - apiref
-ms.openlocfilehash: 6193d91c8cbe0efa7cd68b97b9262acf72c9ea0b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf7f5df3efed7823fc36bd6c9fc56e0c49d17443
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763882"
 ---
 # <a name="isymunmanagedreaderinitialize-method"></a>Метод ISymUnmanagedReader::Initialize
 
@@ -48,7 +49,7 @@ HRESULT Initialize (
  окне Имя файла модуля. Вместо этого можно использовать `pIStream` параметр.  
   
  `searchPath`  
- окне Путь для поиска. Это необязательный параметр.  
+ окне Путь для поиска. Этот параметр является необязательным.  
   
  `pIStream`  
  окне Файловый поток, используемый в качестве альтернативы параметру filename.  
@@ -57,7 +58,7 @@ HRESULT Initialize (
 
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Необходимо указать только один из `filename` `pIStream` параметров или, но не оба. Параметр `searchPath` не обязателен.  
   
@@ -65,6 +66,6 @@ HRESULT Initialize (
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedReader](isymunmanagedreader-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс ISymUnmanagedReader'
 title: Интерфейс ISymUnmanagedReader
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa3cc15d-058e-4e6f-b03e-39569646ba47
 topic_type:
 - apiref
-ms.openlocfilehash: bca84fdba575ed9bfe572b9fd7a5869620962de6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bad4fdbac3bf6f03fa0db79ce54a5b0ca897028f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763804"
 ---
 # <a name="isymunmanagedreader-interface"></a>Интерфейс ISymUnmanagedReader
 
@@ -51,7 +52,7 @@ ms.locfileid: "95675871"
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
 - [Интерфейс ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

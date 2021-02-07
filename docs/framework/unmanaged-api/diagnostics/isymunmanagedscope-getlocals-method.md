@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе Исимунманажедскопе:: Localization.'
 title: Метод ISymUnmanagedScope::GetLocals
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 17c45f15-8c44-44da-b070-f902077b36e4
 topic_type:
 - apiref
-ms.openlocfilehash: 3a2045466340f92dd8421090c74a442068e8bfaf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b20d8a79e826be0bd191d46e794f8dad45c4810
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731414"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763414"
 ---
 # <a name="isymunmanagedscopegetlocals-method"></a>Метод ISymUnmanagedScope::GetLocals
 
@@ -55,6 +56,6 @@ HRESULT GetLocals(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)

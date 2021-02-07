@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugCode2:: Жеткодечункс'
 title: Метод ICorDebugCode2::GetCodeChunks
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 210a2f02-2678-4555-bc4a-78a0408764c8
 topic_type:
 - apiref
-ms.openlocfilehash: e419ebb6ffd404368baf32e591e08c4a70645127
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 371d077466ff2390293d9d4e320d4c95a992fe54
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73121123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764974"
 ---
 # <a name="icordebugcode2getcodechunks-method"></a>Метод ICorDebugCode2::GetCodeChunks
 
@@ -40,17 +41,17 @@ HRESULT GetCodeChunks (
 ## <a name="parameters"></a>Параметры
 
 `cbufSize`  
-окне Размер массива `chunks`.
+окне Размер `chunks` массива.
 
 `pcnumChunks`  
-заполняет Количество блоков, возвращаемых в массиве `chunks`.
+заполняет Количество блоков, возвращаемых в `chunks` массиве.
 
 `chunks`  
-заполняет Массив структур "Кодечункинфо", каждый из которых представляет отдельный фрагмент кода. Если значение `cbufSize` равно 0, то этот параметр может иметь значение null.
+заполняет Массив структур "Кодечункинфо", каждый из которых представляет отдельный фрагмент кода. Если значение `cbufSize` равно 0, этот параметр может принимать значение null.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Фрагменты кода никогда не перекрываются, и они будут следовать порядку, в котором они были сцеплены с помощью [ICorDebugCode:: Code](icordebugcode-getcode-method.md). Объект кода на языке MSIL в .NET Framework версии 2,0 будет состоять из одного фрагмента кода.
+Фрагменты кода никогда не перекрываются, и они будут следовать порядку, в котором они были сцеплены с помощью [ICorDebugCode:: Code](icordebugcode-getcode-method.md). Объект кода на языке MSIL в платформа .NET Framework версии 2,0 будет состоять из одного фрагмента кода.
 
 ## <a name="requirements"></a>Требования
 
@@ -60,4 +61,4 @@ HRESULT GetCodeChunks (
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

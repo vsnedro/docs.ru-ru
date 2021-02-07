@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: загрузка отложенного содержимого (службы данных WCF)'
 title: Загрузка отложенного содержимого (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -9,16 +10,18 @@ helpviewer_keywords:
 - WCF Data Services, deferred content
 - WCF Data Services, loading data
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
-ms.openlocfilehash: 6eff454bf4f79f7fe215828956ffe79d0c1f6757
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e14796ba003cbad721160ed4a0e2be3e8d148660
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764922"
 ---
 # <a name="loading-deferred-content-wcf-data-services"></a>Загрузка отложенного содержимого (службы данных WCF)
 
-По умолчанию WCF Data Services ограничивает объем данных, возвращаемых запросом. Однако при необходимости из службы данных можно явно загрузить дополнительные данные, включая связанные сущности, разбитые на страницы данные ответа и потоки двоичных данных. Этот раздел описывает загрузку такого отложенного содержимого в приложении.  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+По умолчанию службы данных WCF ограничивает объем данных, возвращаемых запросом. Однако при необходимости из службы данных можно явно загрузить дополнительные данные, включая связанные сущности, разбитые на страницы данные ответа и потоки двоичных данных. Этот раздел описывает загрузку такого отложенного содержимого в приложении.  
   
 ## <a name="related-entities"></a>Связанные сущности  
 
@@ -29,7 +32,7 @@ ms.locfileid: "91194327"
      [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#expandorderdetailsspecific)]
      [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#expandorderdetailsspecific)]  
   
-     WCF Data Services ограничивает число наборов сущностей, которые можно включать в один запрос, с помощью `$expand` параметра запроса.  
+     Службы данных WCF ограничивает число наборов сущностей, которые можно включать в один запрос, с помощью `$expand` параметра запроса.  
   
 - **Явная загрузка**. <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> <xref:System.Data.Services.Client.DataServiceContext> для явной загрузки связанных сущностей можно вызвать метод для экземпляра. При каждом вызове метода <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> создается отдельный запрос к службе данных. Следующий пример явно загружает сущности `Order_Details` для сущности `Orders`:  
   
@@ -59,9 +62,9 @@ ms.locfileid: "91194327"
   
 ## <a name="binary-data-streams"></a>Потоки двоичных данных  
 
- WCF Data Services позволяет обращаться к данным больших двоичных объектов (BLOB) как к потоку данных. Преобразование в поток откладывает загрузку двоичных данных до момента, когда они понадобятся, а клиент имеет возможность обработать их более эффективно. Чтобы можно было воспользоваться этой функцией, в службе данных должен быть реализован поставщик <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md). Если потоки включены, типы сущностей возвращаются без связанных двоичных данных. В этом случае необходимо использовать <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> метод <xref:System.Data.Services.Client.DataServiceContext> класса для доступа к потоку данных для двоичных данных из службы. Аналогично можно использовать метод <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> для добавления или изменения двоичных данных сущности в виде потока. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).  
+ Службы данных WCF позволяет обращаться к данным больших двоичных объектов (BLOB) как к потоку данных. Преобразование в поток откладывает загрузку двоичных данных до момента, когда они понадобятся, а клиент имеет возможность обработать их более эффективно. Чтобы можно было воспользоваться этой функцией, в службе данных должен быть реализован поставщик <xref:System.Data.Services.Providers.IDataServiceStreamProvider>. Дополнительные сведения см. в разделе [Streaming Provider](streaming-provider-wcf-data-services.md). Если потоки включены, типы сущностей возвращаются без связанных двоичных данных. В этом случае необходимо использовать <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> метод <xref:System.Data.Services.Client.DataServiceContext> класса для доступа к потоку данных для двоичных данных из службы. Аналогично можно использовать метод <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> для добавления или изменения двоичных данных сущности в виде потока. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Библиотека клиентов служб данных WCF](wcf-data-services-client-library.md)
 - [Выполнение запросов к службе данных](querying-the-data-service-wcf-data-services.md)

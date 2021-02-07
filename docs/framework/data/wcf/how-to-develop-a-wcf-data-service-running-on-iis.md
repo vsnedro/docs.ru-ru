@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как разработать службу данных WCF, работающую на IIS.
 title: Практическое руководство. Разработка службы данных WCF Data Service, работающей на IIS
 ms.date: 03/30/2017
 dev_langs:
@@ -9,16 +10,18 @@ helpviewer_keywords:
 - WCF Data Services, deploying
 - WCF Data Services, hosting
 ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
-ms.openlocfilehash: 75dc18f3ee91ec077ed48c68ec62cb47910d9ddd
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: b4d7b322a00e3c9c43005a416c608e1b98f1ce51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99765481"
 ---
 # <a name="how-to-develop-a-wcf-data-service-running-on-iis"></a>Руководство. Разработка службы данных WCF, работающей на сервере IIS
 
-В этой статье показано, как использовать WCF Data Services для создания службы данных на основе образца базы данных Northwind, размещенного в веб-приложении ASP.NET, работающем на службы IIS (IIS). Пример создания одной и той же службы данных Northwind как веб-приложения ASP.NET, выполняемого на ASP.NET Development Server, см. в [кратком руководстве по WCF Data Services](quickstart-wcf-data-services.md).
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+В этой статье показано, как использовать службы данных WCF для создания службы данных на основе образца базы данных Northwind, размещенного в веб-приложении ASP.NET, работающем на службы IIS (IIS). Пример создания одной и той же службы данных Northwind как веб-приложения ASP.NET, выполняемого на ASP.NET Development Server, см. в [кратком руководстве по службы данных WCF](quickstart-wcf-data-services.md).
 
 > [!NOTE]
 > Чтобы создать службу данных Northwind, сначала установите образец базы данных Northwind на локальном компьютере. Чтобы установить базу данных, выполните скрипт Transact-SQL из [баз данных Northwind и Pubs для Microsoft SQL Server](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
@@ -122,7 +125,7 @@ ms.locfileid: "90543489"
 
 ## <a name="define-the-data-model"></a>Определение модели данных
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта ASP.NET и выберите команду **Добавить**  >  **новый элемент**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши имя проекта ASP.NET и выберите команду **Добавить**  >  **новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите **ADO.NET EDM**.
 
@@ -144,7 +147,7 @@ ms.locfileid: "90543489"
 
 ## <a name="create-the-data-service"></a>Создание службы данных
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши имя проекта ASP.NET и выберите команду **Добавить**  >  **новый элемент**.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши имя проекта ASP.NET и выберите команду **Добавить**  >  **новый элемент**.
 
 2. В диалоговом окне **Добавление нового элемента** выберите **WCF Data Service**.
 
@@ -155,7 +158,7 @@ ms.locfileid: "90543489"
 
 3. В качестве имени службы введите `Northwind` .
 
-     В Visual Studio для новой службы создаются файлы разметки и кодов XML. По умолчанию открывается окно редактора кода. В **Обозреватель решений**служба имеет имя, Northwind и расширение. svc.cs или. svc. vb.
+     В Visual Studio для новой службы создаются файлы разметки и кодов XML. По умолчанию открывается окно редактора кода. В **Обозреватель решений** служба имеет имя, Northwind и расширение. svc.cs или. svc. vb.
 
 4. В коде службы данных замените комментарий `/* TODO: put your data source class name here */` в определении класса, задающего службу данных, типом контейнера сущностей модели данных, который в данном случае равен `NorthwindEntities`. Определение класса должно выглядеть следующим образом.
 
