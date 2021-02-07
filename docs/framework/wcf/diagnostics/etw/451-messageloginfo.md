@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 451-Мессажелогинфо'
 title: 451 - MessageLogInfo
 ms.date: 03/30/2017
 ms.assetid: 485b4b29-dc21-4a35-93f8-5f4726d6aa5a
-ms.openlocfilehash: 2b5dd36099e1d9978cb1136462c224a79465f823
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9df1911eaee3300b770175f2af26e6dafd3de90c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242790"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760281"
 ---
 # <a name="451---messageloginfo"></a>451 - MessageLogInfo
 
@@ -17,7 +18,7 @@ ms.locfileid: "96242790"
 |-|-|  
 |ID|451|  
 |Keywords|Troubleshooting, WCFMessageLogging|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

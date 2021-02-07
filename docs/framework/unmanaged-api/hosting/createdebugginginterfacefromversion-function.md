@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции CreateDebuggingInterfaceFromVersion
 title: Функция CreateDebuggingInterfaceFromVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: a746a849-463c-44f5-a2f0-9e812ed8bcc3
 topic_type:
 - apiref
-ms.openlocfilehash: b68fbc713374642c9f55d49ee51a88c5785cf4b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 163ada49f028071b48c93ee3c565152a773782ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760636"
 ---
 # <a name="createdebugginginterfacefromversion-function"></a>Функция CreateDebuggingInterfaceFromVersion
 
 Создает объект [ICorDebug](../debugging/icordebug-interface.md) на основе указанных сведений о версии.  
   
- Эта функция является устаревшей в .NET Framework 4. Вместо этого для получения интерфейса для среды CLR 2,0 используйте метод [ICLRRuntimeInfo::](iclrruntimeinfo-getinterface-method.md) coclass и укажите идентификатор класса CLSID_CLRDebuggingLegacy и идентификатор интерфейса IID_ICorDebug. Чтобы получить интерфейс для CLR 4 или более поздней версии, вызовите функцию [клркреатеинстанце](clrcreateinstance-function.md) и укажите идентификатор класса CLSID_CLRDebugging и идентификатор интерфейса IID_ICLRDebugging.  
+ Эта функция является устаревшей в платформа .NET Framework 4. Вместо этого для получения интерфейса для среды CLR 2,0 используйте метод [ICLRRuntimeInfo::](iclrruntimeinfo-getinterface-method.md) coclass и укажите идентификатор класса CLSID_CLRDebuggingLegacy и идентификатор интерфейса IID_ICorDebug. Чтобы получить интерфейс для CLR 4 или более поздней версии, вызовите функцию [клркреатеинстанце](clrcreateinstance-function.md) и укажите идентификатор класса CLSID_CLRDebugging и идентификатор интерфейса IID_ICLRDebugging.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,7 +59,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|`szDebuggeeVersion` или `ppCordb` имеет значение null, или строка версии неверна.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `szDebuggeeVersion`Параметр сопоставляется с соответствующей версией MSCorDbi.dll.  
   
@@ -70,8 +71,8 @@ HRESULT CreateDebuggingInterfaceFromVersion (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

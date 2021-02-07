@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс IAppDomainSetup'
 title: Интерфейс IAppDomainSetup
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c
 topic_type:
 - apiref
-ms.openlocfilehash: d504101747995557ba526c88de451ebab7b3c556
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8fd224308ea68f7b56ae174c7f71fc4f89630101
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760588"
 ---
 # <a name="iappdomainsetup-interface"></a>Интерфейс IAppDomainSetup
 
@@ -40,7 +41,7 @@ ms.locfileid: "95698563"
 |<xref:System.AppDomainSetup.ShadowCopyDirectories%2A>|Возвращает или задает имена каталогов, содержащих сборки для теневого копирования.|  
 |<xref:System.AppDomainSetup.ShadowCopyFiles%2A>|Возвращает или задает строку, которая указывает, включено ли теневое копирование. Допустимые значения: "true" или "false".|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IAppDomainSetup`Интерфейс соответствует управляемому <xref:System.IAppDomainSetup> интерфейсу, который <xref:System.AppDomainSetup> реализуется типом. <xref:System.IAppDomainSetup?displayProperty=nameWithType>Подробные описания его свойств см. в разделе.  
   
@@ -54,9 +55,9 @@ ms.locfileid: "95698563"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>
