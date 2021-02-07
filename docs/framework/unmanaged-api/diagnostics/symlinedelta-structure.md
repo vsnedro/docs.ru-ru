@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура SYMLINEDELTA'
 title: Структура SYMLINEDELTA
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9634e995-d46d-4397-ab66-cc5781d11e4e
 topic_type:
 - apiref
-ms.openlocfilehash: dd45703540f8dc41b746ca03b4f09d74186aa9aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ae00d2be9809b48180d2cd99d05e410624033419
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761451"
 ---
 # <a name="symlinedelta-structure"></a>Структура SYMLINEDELTA
 
@@ -46,6 +47,6 @@ typedef struct _SYMLINEDELTA
 
  **Заголовок:** Корсим. idl  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры хранилища символов диагностики](diagnostics-symbol-store-structures.md)

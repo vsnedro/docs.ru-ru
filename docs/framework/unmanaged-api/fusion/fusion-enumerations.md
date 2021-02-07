@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисления Fusion'
 title: Перечисления Fusion
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - fusion enumerations [.NET Framework]
 - enumerations [.NET Framework fusion]
 ms.assetid: 5817b4bc-b0ba-4b2f-a11c-a03dd8cb8f84
-ms.openlocfilehash: c014d6fcf8ac34ebc82b43214a358039d8c28907
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6549347a80d4831c9065da94a6d9bab318058dec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761100"
 ---
 # <a name="fusion-enumerations"></a>Перечисления Fusion
 
 В этом разделе описаны неуправляемые перечисления, используемые API Fusion.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Перечисление ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md)  
  Указывает источник сборки, представленной [IAssemblyCacheItem](iassemblycacheitem-interface.md) в глобальном кэше сборок.  
@@ -37,7 +38,7 @@ ms.locfileid: "95688761"
  [Перечисление CREATE_ASM_NAME_OBJ_FLAGS](create-asm-name-obj-flags-enumeration.md)  
  Задает атрибуты `IAssemblyName` объекта при создании с помощью функции [креатеассемблинамеобжект](createassemblynameobject-function.md) .  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Fusion-интерфейсы](fusion-interfaces.md)  
   

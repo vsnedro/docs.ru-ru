@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление ASM_CMP_FLAGS'
 title: Перечисление ASM_CMP_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
 topic_type:
 - apiref
-ms.openlocfilehash: fea06a3e6d06aeff56ba7e20e8e64f0a6feb5e69
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d35691e853d76dc0e363651b23a6e5ff94244a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731063"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761425"
 ---
 # <a name="asm_cmp_flags-enumeration"></a>Перечисление ASM_CMP_FLAGS
 
@@ -74,9 +75,9 @@ typedef enum {
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IAssemblyName](iassemblyname-interface.md)
 - [Перечисления Fusion](fusion-enumerations.md)

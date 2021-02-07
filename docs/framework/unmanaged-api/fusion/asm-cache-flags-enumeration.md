@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление ASM_CACHE_FLAGS'
 title: Перечисление ASM_CACHE_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 82e9a7da-321b-48b8-b239-52eaffda6be8
 topic_type:
 - apiref
-ms.openlocfilehash: 6c6fab627f21977e85f9885ca4b49a0276faa5ce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 866f61d2960074495ed036e3a8e89ebceec74e87
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761438"
 ---
 # <a name="asm_cache_flags-enumeration"></a>Перечисление ASM_CACHE_FLAGS
 
@@ -55,9 +56,9 @@ typedef enum {
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция GetCachePath](getcachepath-function.md)
 - [Интерфейс IAssemblyCacheItem](iassemblycacheitem-interface.md)

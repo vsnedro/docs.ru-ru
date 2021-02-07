@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IAssemblyCache'
 title: Интерфейс IAssemblyCache
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 71ea170f-872d-4fc5-81b6-27da1dec9b19
 topic_type:
 - apiref
-ms.openlocfilehash: df4f0ba018b55202c22cb90b22b927a9c426c4ed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 29c042fc101180085a697e02376b91b0e1ffd19f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760931"
 ---
 # <a name="iassemblycache-interface"></a>Интерфейс IAssemblyCache
 
@@ -41,9 +42,9 @@ ms.locfileid: "95696860"
   
  **Заголовок:** Fusion. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Fusion-интерфейсы](fusion-interfaces.md)
 - [Глобальный кэш сборок](../../app-domains/gac.md)

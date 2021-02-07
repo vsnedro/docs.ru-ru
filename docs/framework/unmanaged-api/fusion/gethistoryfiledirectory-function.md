@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Жесисторифиледиректори
 title: Функция GetHistoryFileDirectory
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
 topic_type:
 - apiref
-ms.openlocfilehash: 484adf288356b9955fe0cac0bb30002ec1f012d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 960bc75d69f4be6d1639e109d6327b5e65d3e129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760970"
 ---
 # <a name="gethistoryfiledirectory-function"></a>Функция GetHistoryFileDirectory
 
@@ -51,7 +52,7 @@ HRESULT GetHistoryFileDirectory (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|`wzDir` или `pdwSize` имеет значение null, или строка версии неверна.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  При успешном завершении `pdwSize` аргументу присваивается длина строки пути.  
   
@@ -61,11 +62,11 @@ HRESULT GetHistoryFileDirectory (
   
  **Заголовок:** Fusion. h  
   
- **Библиотека:** Fusion.dll и Mscorwks.dll. Используйте Fusion.dll вместо Mscorwks.dll, чтобы убедиться в правильности целевой версии .NET Framework.  
+ **Библиотека:** Fusion.dll и Mscorwks.dll. Используйте Fusion.dll вместо Mscorwks.dll, чтобы убедиться в правильности целевой версии платформа .NET Framework.  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция CreateHistoryReader](createhistoryreader-function.md)
 - [Функция NukeDownloadedCache](nukedownloadedcache-function.md)

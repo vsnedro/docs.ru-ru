@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Компареассемблидентити
 title: Функция CompareAssemblyIdentity
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
 topic_type:
 - apiref
-ms.openlocfilehash: da32ce6a40378a6f88cf71bd7707be2079d71068
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa55d1ea0b1968ec4e50106139e154e29e159ec7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761217"
 ---
 # <a name="compareassemblyidentity-function"></a>Функция CompareAssemblyIdentity
 
@@ -63,13 +64,13 @@ STDAPI CompareAssemblyIdentity (
 
  `pfEquivalent` Возвращает логическое значение, указывающее, эквивалентны ли две сборки. `pResult` Возвращает одно из `AssemblyComparisonResult` значений, чтобы получить более подробную причину для значения `pfEquivalent` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CompareAssemblyIdentity` проверяет, `pwzAssemblyIdentity1` `pwzAssemblyIdentity2` эквивалентны ли и. `pfEquivalent` задается в `true` одном или нескольких следующих случаях.  
   
 - Два удостоверения сборки эквивалентны. Для строго именованных сборок эквивалентность требует идентичности имени сборки, версии, токена открытого ключа и языка и региональных параметров. Для просто именованных сборок эквивалентность требует соответствия имени сборки и языку и региональным параметрам.  
   
-- Оба удостоверения сборки ссылаются на сборки, которые выполняются в .NET Framework. Это условие возвращает значение `true` , даже если номера версий сборки не совпадают.  
+- Оба удостоверения сборки ссылаются на сборки, которые выполняются в платформа .NET Framework. Это условие возвращает значение `true` , даже если номера версий сборки не совпадают.  
   
 - Эти две сборки не являются управляемыми сборками, но `fUnified1` или имеют `fUnified2` значение `true` .  
   
@@ -85,9 +86,9 @@ STDAPI CompareAssemblyIdentity (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)
 - [Перечисление AssemblyComparisonResult](assemblycomparisonresult-enumeration.md)
