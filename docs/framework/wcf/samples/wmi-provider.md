@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: поставщик WMI'
 title: Поставщик WMI
 ms.date: 03/30/2017
 ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
-ms.openlocfilehash: 9d654527c6897e071f914d4015ba9a225974b0f1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 23d673f55781204fb4ce54d7d8ee0dab7933484f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263791"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715097"
 ---
 # <a name="wmi-provider"></a>Поставщик WMI
 
@@ -35,7 +36,7 @@ ms.locfileid: "96263791"
   
 ## <a name="accessing-wmi-information"></a>Доступ к сведениям WMI  
 
-Доступ к данным инструментария WMI может осуществляться несколькими различными способами. Корпорация Майкрософт предоставляет API-интерфейсы WMI для сценариев, Visual Basic приложений, приложений C++ и .NET Framework. Дополнительные сведения см. [в разделе Использование WMI](/windows/desktop/wmisdk/using-wmi).
+Доступ к данным инструментария WMI может осуществляться несколькими различными способами. Корпорация Майкрософт предоставляет API-интерфейсы WMI для сценариев, Visual Basic приложений, приложений C++ и платформа .NET Framework. Дополнительные сведения см. [в разделе Использование WMI](/windows/desktop/wmisdk/using-wmi).
   
  В этом образце используется два скрипта Java: один - для перечисления выполняющихся на компьютере служб и некоторых их свойств, а второй - для просмотра пользовательских данных инструментария WMI. Скрипт открывает подключение к поставщику инструментария WMI, анализирует данные и отображает собранные данные.  
   
@@ -142,7 +143,7 @@ cscript EnumerateCustomObjects.js
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
   

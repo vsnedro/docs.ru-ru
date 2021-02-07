@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: System. ServiceModel. Портшаринг. Портшарингдуфандлегрантед'
 title: System.ServiceModel.PortSharing.PortSharingDupHandleGranted
 ms.date: 03/30/2017
 ms.assetid: dde8a393-f31a-4e6d-b483-001b389e2df9
-ms.openlocfilehash: 1225ccbf387ca54a07af91a8300fee4debf37cd3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ad05a7b8df15d1d416ec010212b8deeaa39ba2f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96252586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716020"
 ---
 # <a name="systemservicemodelportsharingportsharingduphandlegranted"></a>System.ServiceModel.PortSharing.PortSharingDupHandleGranted
 

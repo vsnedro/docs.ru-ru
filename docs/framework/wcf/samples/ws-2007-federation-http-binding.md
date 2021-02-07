@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: HTTP-привязка федерации WS 2007'
 title: Привязка HTTP для федерации WS 2007
 ms.date: 03/30/2017
 ms.assetid: 91c1b477-a96e-4bf5-9330-5e9312113371
-ms.openlocfilehash: bf61e64733859d96adf42fbacf08266eca1f5b45
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 12363abb1c8c503db8ec4aac9197276c8ec41c58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79183184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715058"
 ---
 # <a name="ws-2007-federation-http-binding"></a>Привязка HTTP для федерации WS 2007
 
@@ -16,9 +17,9 @@ ms.locfileid: "79183184"
 > [!NOTE]
 > Процедура настройки и инструкции по построению для данного образца приведены в конце этого раздела.
 
-Образец состоит из клиентской программы на базе консолей *(Client.exe),* программы обслуживания токенов безопасности на основе консоли *(Securitytokenservice.exe)* и программы обслуживания на основе консолей *(Service.exe*). Служба реализует контракт, определяющий шаблон взаимодействия "запрос-ответ". Контракт определяется интерфейсом `ICalculator`, который предоставляет математические операции (`Add`, `Subtract`, `Multiply` и `Divide`). Клиент получает маркер безопасности от службы маркеров безопасности (STS) и осуществляет синхронные вызовы службы для заданной математической операции. Служба отправляет в ответ результат. Действия клиента отображаются в окне консоли.
+Пример состоит из клиентской программы на основе консоли (*Client.exe*), программы службы маркеров безопасности на основе консоли (*Securitytokenservice.exe*) и программы службы на основе консоли (*Service.exe*). Служба реализует контракт, определяющий шаблон взаимодействия "запрос-ответ". Контракт определяется интерфейсом `ICalculator`, который предоставляет математические операции (`Add`, `Subtract`, `Multiply` и `Divide`). Клиент получает маркер безопасности от службы маркеров безопасности (STS) и осуществляет синхронные вызовы службы для заданной математической операции. Служба отправляет в ответ результат. Действия клиента отображаются в окне консоли.
 
-В этом образце контракт `ICalculator` делается доступным с помощью элемента `ws2007FederationHttpBinding`. Конфигурация этой привязки к клиенту отображается в следующем коде:
+В этом образце контракт `ICalculator` делается доступным с помощью элемента `ws2007FederationHttpBinding`. Конфигурация этой привязки на клиенте показана в следующем коде:
 
 ```xml
 <bindings>
@@ -37,9 +38,9 @@ ms.locfileid: "79183184"
 </bindings>
 ```
 
-На [ \<>безопасности ](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) `security` значение определяет, какой режим безопасности следует использовать. В этом `message` примере используется безопасность, поэтому [ \<>сообщения](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) указана внутри [ \<>безопасности. ](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) Эмитент [ \<>](../../configure-apps/file-schema/wcf/issuer.md) элемент внутри [ \<сообщения>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) определяет адрес и привязку для STS, который выдает маркер безопасности клиенту, чтобы клиент мог проверить подлинность службы. `ICalculator`
+На странице [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) `security` значение указывает, какой режим безопасности следует использовать. В этом примере `message` используется безопасность, поэтому она [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) указана в [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) . [\<issuer>](../../configure-apps/file-schema/wcf/issuer.md)Элемент внутри [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) определяет адрес и привязку для STS, которая выдает клиенту маркер безопасности, чтобы клиент мог пройти проверку подлинности в `ICalculator` службе.
   
-Конфигурация этой привязки к службе отображается в следующем коде:
+Конфигурация этой привязки в службе показана в следующем коде:
 
 ```xml
 <bindings>
@@ -64,9 +65,9 @@ ms.locfileid: "79183184"
 </bindings>
 ```
 
-На [ \<>безопасности ](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) `security` значение определяет, какой режим безопасности следует использовать. В этом `message` примере используется безопасность, поэтому [ \<>сообщения](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) указана внутри [ \<>безопасности. ](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) [ \<элемент>в](../../configure-apps/file-schema/wcf/issuermetadata.md) [ \<сообщении,](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md)>`ws2007FederationHttpBinding` определяет адрес и идентификацию для конечной точки, которая может быть использована для получения метаданных для STS.
+На странице [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) `security` значение указывает, какой режим безопасности следует использовать. В этом примере `message` используется безопасность, поэтому она [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) указана в [\<security>](../../configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md) . [\<issuerMetadata>](../../configure-apps/file-schema/wcf/issuermetadata.md)Элемент `ws2007FederationHttpBinding` внутри [\<message>](../../configure-apps/file-schema/wcf/message-element-of-ws2007federationhttpbinding.md) определяет адрес и идентификатор для конечной точки, которые можно использовать для получения метаданных для службы маркеров безопасности.
 
-Поведение службы отображается в следующем коде:
+Поведение службы показано в следующем коде:
 
 ```xml
 <behaviors>
@@ -93,7 +94,7 @@ ms.locfileid: "79183184"
 </behaviors>
 ```
   
-ВыданноеToTokenAuthentication>> позволяет службе указывать ограничения на токены, которые она позволяет клиентам представить во время проверки подлинности. [ \<](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) Эта конфигурация указывает, что маркеры, подписанные сертификатом, у которых имя субъекта CN=STS, принимаются службой.
+[\<issuedTokenAuthentication>](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md)> позволяет службе указывать ограничения на токены, которые она позволяет клиентам предоставлять во время проверки подлинности. Эта конфигурация указывает, что маркеры, подписанные сертификатом, у которых имя субъекта CN=STS, принимаются службой.
 
 Служба маркеров безопасности делает единственную конечную точку доступной с помощью стандартной привязки <xref:System.ServiceModel.WS2007HttpBinding>. Служба отвечает на запросы маркеров от клиентов. Если клиент прошел проверку подлинности с использованием учетной записи Windows, служба выдает маркер, содержащий имя пользователя клиента в качестве утверждения. В одной из частей процедуры создания маркера служба маркеров безопасности подписывает маркер с использованием закрытого ключа, связанного с сертификатом CN=STS. Дополнительно она создает симметричный ключ и шифрует его с использованием открытого ключа, связанного с сертификатом CN=localhost. При возврате маркера клиенту служба маркеров безопасности также возвращает симметричный ключ. Клиент предъявляет выданный маркер службе `ICalculator` и подтверждает свое знание симметричного ключа, подписывая сообщение этим ключом.
 
@@ -107,25 +108,25 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.
 ```
 
-Файл *Setup.bat,* включенный в этот пример, позволяет настроить сервер и STS с соответствующими сертификатами для запуска самоходного приложения. Пакетный файл создает два сертификата в хранилище сертификатов LocalMachine/TrustedPeople. Имя субъекта первого сертификата CN=STS, он используется службой маркеров безопасности, чтобы подписывать маркеры безопасности, выдаваемые клиенту. Имя субъекта второго сертификата CN=localhost, он используется службой маркеров безопасности для шифрования ключа таким образом, чтобы служба могла его расшифровать.
+Файл *Setup.bat* , включенный в этот пример, позволяет настроить сервер и STS с соответствующими сертификатами для запуска приложения, размещенного на собственном сервере. Пакетный файл создает два сертификата в хранилище сертификатов LocalMachine/TrustedPeople. Имя субъекта первого сертификата CN=STS, он используется службой маркеров безопасности, чтобы подписывать маркеры безопасности, выдаваемые клиенту. Имя субъекта второго сертификата CN=localhost, он используется службой маркеров безопасности для шифрования ключа таким образом, чтобы служба могла его расшифровать.
 
 ## <a name="to-set-up-build-and-run-the-sample"></a>Настройка, сборка и выполнение образца
   
-1. Убедитесь, что вы выполнили [одноразовую процедуру настройки для образцов Фонда связи Windows.](one-time-setup-procedure-for-the-wcf-samples.md)
+1. Убедитесь, что вы выполнили [однократную процедуру настройки для Windows Communication Foundation примеров](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2. Откройте командный запрос разработчика для Visual Studio с привилегиями администратора и запустите файл Setup.bat для создания необходимых сертификатов.
+2. Откройте Командная строка разработчика для Visual Studio с правами администратора и запустите файл Setup.bat, чтобы создать необходимые сертификаты.
 
- Этот пакетный файл использует *Certmgr.exe* и Makecert.exe, которые распространяются с Windows SDK. Тем не менее, необходимо запустить *Setup.bat* из команды Visual Studio, чтобы позволить скрипту найти эти инструменты.
+ Этот пакетный файл использует *Certmgr.exe* и Makecert.exe, которые распространяются вместе с Windows SDK. Однако необходимо запустить *Setup.bat* из командной строки Visual Studio, чтобы разрешить сценарию найти эти средства.
 
 1. Чтобы создать выпуск решения на языке C# или Visual Basic .NET, следуйте инструкциям в разделе [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-2. Чтобы запустить образец в одно- или кросс-компьютерной конфигурации, следуйте инструкциям в [Запуске образцов Фонда связи Windows.](running-the-samples.md) Если вы используете Windows Vista, вы должны запустить *Service.exe*, *Client.exe*, и *SecurityTokenService.exe* с повышенными привилегиями (право нажмите на файлы, а затем нажмите **Run в качестве администратора).**
+2. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md). При использовании Windows Vista необходимо запустить *Service.exe*, *Client.exe* и *SecurityTokenService.exe* с повышенными привилегиями (щелкните правой кнопкой мыши файлы и выберите команду **Запуск от имени администратора**).
 
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этого каталога не существует, перейдите в [Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) Образцы для .NET Framework 4,](https://www.microsoft.com/download/details.aspx?id=21459) чтобы загрузить все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] образцы. Этот образец находится в следующем каталоге:
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец находится в следующем каталоге:
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\WS2007FederationHttp`
