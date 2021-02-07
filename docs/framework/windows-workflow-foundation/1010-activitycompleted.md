@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 1010-Активитикомплетед'
 title: 1010 - ActivityCompleted
 ms.date: 03/30/2017
 ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706
-ms.openlocfilehash: d0ebf32ec1d5fe5b34ffe650d5547891be0eb665
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c72339449b94b0ea5d6d8fa227b606cc25c29704
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755542"
 ---
 # <a name="1010---activitycompleted"></a>1010 - ActivityCompleted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239917"
 |-|-|  
 |ID|1010|  
 |Keywords|WFRuntime|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
@@ -35,5 +36,5 @@ ms.locfileid: "96239917"
 |Действие|xs:string|Имя типа действия.|  
 |DisplayName|xs:string|Отображаемое имя действия.|  
 |InstanceId|xs:string|Идентификатор экземпляра действия.|  
-|Состояние|xs:string|Состояние действия.|  
+|Область|xs:string|Состояние действия.|  
 |Домен приложения|xs:string|Строка, возвращаемая AppDomain.CurrentDomain.FriendlyName.|

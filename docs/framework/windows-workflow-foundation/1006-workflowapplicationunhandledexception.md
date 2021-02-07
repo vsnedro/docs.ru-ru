@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 1006-Воркфловаппликатионунхандледексцептион'
 title: 1006 - WorkflowApplicationUnhandledException
 ms.date: 03/30/2017
 ms.assetid: dfe0f316-e03b-47fb-b6a3-622c56bfd753
-ms.openlocfilehash: 4bb76a93ec7a07a735def1f1d5dc79decb7792ad
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bfccd0d12c5dac4caad1e84e95f1cd096a551aa0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239839"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755594"
 ---
 # <a name="1006---workflowapplicationunhandledexception"></a>1006 - WorkflowApplicationUnhandledException
 
@@ -17,7 +18,7 @@ ms.locfileid: "96239839"
 |-|-|  
 |ID|1006|  
 |Keywords|WFRuntime|  
-|Level|Ошибка|  
+|Уровень|Ошибка|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
