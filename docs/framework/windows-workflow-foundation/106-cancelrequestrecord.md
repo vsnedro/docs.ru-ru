@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 106-Канцелрекуестрекорд'
 title: 106 ― CancelRequestRecord
 ms.date: 03/30/2017
 ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb
-ms.openlocfilehash: e7b736d78486b0de7c108e6212d2aa1857e01cc4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a5d65ef8606821dc8aa7b64b36498b343ff986e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667660"
 ---
 # <a name="106---cancelrequestrecord"></a>106 ― CancelRequestRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238903"
 |-|-|  
 |Идентификатор|106|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -35,7 +36,7 @@ ms.locfileid: "96238903"
 |InstanceId|xs:GUID|Идентификатор экземпляра для рабочего процесса.|  
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
-|name|xs:string|Имя действия, запросившего операцию отмены.|  
+|Имя|xs:string|Имя действия, запросившего операцию отмены.|  
 |ActivityId|xs:string|Идентификатор действия, запросившего операцию отмены.|  
 |ActivityInstanceId|xs:string|Идентификатор экземпляра действия, запросившего операцию отмены.|  
 |ActivityTypeName|xs:string|Тип действия, запросившего операцию отмены.|  

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 104-Активитисчедуледрекорд'
 title: 104 ― ActivityScheduledRecord
 ms.date: 03/30/2017
 ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
-ms.openlocfilehash: b2c7cbd169053188d5e84a0b8afd87c4916c87cb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9d52dac3ec68de0d38959e81294c5c6ead21428e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238968"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667815"
 ---
 # <a name="104---activityscheduledrecord"></a>104 ― ActivityScheduledRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238968"
 |-|-|  
 |Идентификатор|104|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -35,7 +36,7 @@ ms.locfileid: "96238968"
 |InstanceId|xs:GUID|Идентификатор экземпляра для рабочего процесса.|  
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
-|name|xs:string|Имя действия, которое запланировало дочернее действие.|  
+|Имя|xs:string|Имя действия, которое запланировало дочернее действие.|  
 |ActivityId|xs:string|Идентификатор действия, которое запланировало дочернее действие.|  
 |ActivityInstanceId|xs:string|Идентификатор экземпляра действия, которое запланировало дочернее действие.|  
 |ActivityTypeName|xs:string|Тип действия, запросившего операцию отмены.|  

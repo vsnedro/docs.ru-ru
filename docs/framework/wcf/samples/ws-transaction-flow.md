@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о потоке транзакций WS
 title: Поток транзакций WS
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Transactions
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
-ms.openlocfilehash: 7fd4968bbe4e1a3dafbfc35cc0617cef7083d291
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4d0a0af77dd516bf98c5dc8318ac110a31e731e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96252404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668374"
 ---
 # <a name="ws-transaction-flow"></a>Поток транзакций WS
 
@@ -251,7 +252,7 @@ Press <ENTER> to terminate the service.
   
     6. Нажмите кнопку **ОК**, а затем нажмите кнопку **Да** , чтобы перезапустить службу MSDTC.  
   
-    7. Чтобы закрыть диалоговое окно, нажмите кнопку **ОК** .  
+    7. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно.  
   
 2. На компьютере службы, работающем под управлением Windows Server 2008 или Windows Vista настройте MSDTC, разрешив входящие сетевые транзакции, согласно следующим инструкциям.  
   
@@ -265,7 +266,7 @@ Press <ENTER> to terminate the service.
   
     5. Нажмите кнопку **ОК**, а затем нажмите кнопку **Да** , чтобы перезапустить службу MSDTC.  
   
-    6. Чтобы закрыть диалоговое окно, нажмите кнопку **ОК** .  
+    6. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно.  
   
 3. На клиентском компьютере настройте координатор распределенных транзакций, чтобы он разрешал исходящие сетевые транзакции.  
   
@@ -279,13 +280,13 @@ Press <ENTER> to terminate the service.
   
     5. Нажмите кнопку **ОК**, а затем нажмите кнопку **Да** , чтобы перезапустить службу MSDTC.  
   
-    6. Чтобы закрыть диалоговое окно, нажмите кнопку **ОК** .  
+    6. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно.  
   
 > [!IMPORTANT]
 > Образцы уже могут быть установлены на компьютере. Перед продолжением проверьте следующий каталог (по умолчанию).  
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\TransactionFlow`

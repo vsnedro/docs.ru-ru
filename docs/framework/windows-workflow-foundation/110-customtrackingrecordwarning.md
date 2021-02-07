@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 110-Кустомтраккингрекордварнинг'
 title: 110 ― CustomTrackingRecordWarning
 ms.date: 03/30/2017
 ms.assetid: 3bc093de-be47-4ed0-983f-05b4246446fc
-ms.openlocfilehash: 8fced5fe4baabac34b25b9a00421c3ded1c83ca6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d127b0fbf8fa4f2d7285068486a900452685346d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667607"
 ---
 # <a name="110---customtrackingrecordwarning"></a>110 ― CustomTrackingRecordWarning
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238773"
 |-|-|  
 |Идентификатор|110|  
 |Keywords|UserEvents, EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Предупреждение|  
+|Уровень|Предупреждение|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -35,7 +36,7 @@ ms.locfileid: "96238773"
 |InstanceId|xs:GUID|Идентификатор экземпляра для рабочего процесса.|  
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
-|name|xs:string|Имя CustomTrackingRecord.|  
+|Имя|xs:string|Имя CustomTrackingRecord.|  
 |ActivityName|xs:string|Имя действия, создавшего CustomTrackingRecord.|  
 |ActivityId|xs:string|Идентификатор действия, создавшего CustomTrackingRecord.|  
 |ActivityInstanceId|xs:string|Идентификатор экземпляра действия, создавшего CustomTrackingRecord.|  

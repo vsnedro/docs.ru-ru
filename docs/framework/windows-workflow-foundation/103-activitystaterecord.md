@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 103-Активитистатерекорд'
 title: 103 ― ActivityStateRecord
 ms.date: 03/30/2017
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
-ms.openlocfilehash: 02c33f02b7650c9f9b7527c319de3b58980fdd6c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 14afbfdb0869b6ee65e1482fa73aa36ccd58f307
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275080"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668127"
 ---
 # <a name="103---activitystaterecord"></a>103 ― ActivityStateRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96275080"
 |-|-|  
 |Идентификатор|103|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -35,8 +36,8 @@ ms.locfileid: "96275080"
 |InstanceId|xs:GUID|Идентификатор экземпляра для рабочего процесса.|  
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
-|Состояние|xs:string|Состояние действия.|  
-|name|xs:string|Отображаемое имя действия, выдавшего событие.|  
+|Область|xs:string|Состояние действия.|  
+|Имя|xs:string|Отображаемое имя действия, выдавшего событие.|  
 |ActivityId|xs:string|Идентификатор создающего действия.|  
 |ActivityInstanceId|xs:string|Идентификатор экземпляра создающего действия.|  
 |ActivityTypeName|xs:string|Имя типа выдающего действия.|  

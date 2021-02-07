@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: 107--Букмаркресумптионрекорд'
 title: 107 ― BookmarkResumptionRecord
 ms.date: 03/30/2017
 ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
-ms.openlocfilehash: 14557ef2726a60bcde49d30f9d6168fd831e613c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 456a6cd9f723732454ce032facd062a26aa609be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667633"
 ---
 # <a name="107----bookmarkresumptionrecord"></a>107 ― BookmarkResumptionRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96238864"
 |-|-|  
 |Идентификатор|107|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -35,7 +36,7 @@ ms.locfileid: "96238864"
 |InstanceId|xs:GUID|Идентификатор экземпляра для рабочего процесса.|  
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
-|name|xs:string|Имя возобновленной закладки.|  
+|Имя|xs:string|Имя возобновленной закладки.|  
 |SubInstanceID|xs:GUID|Идентификатор области закладки.|  
 |OwnerActivityName|xs:string|Имя действия закладки.|  
 |OwnerActivityId|xs:string|Идентификатор действия закладки.|  
