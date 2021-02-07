@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 100-Воркфловинстанцерекорд'
 title: 100 ― WorkflowInstanceRecord
 ms.date: 03/30/2017
 ms.assetid: ed4d1851-b378-489b-a22d-c1db09571fb4
-ms.openlocfilehash: c0780aa21e76eb0d72f83b5d2de7d16ff84a6ac7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 59145d0d8151017cfeebe68e0da147410aae991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96240047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755659"
 ---
 # <a name="100---workflowinstancerecord"></a>100 ― WorkflowInstanceRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96240047"
 |-|-|  
 |Идентификатор|100|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -36,7 +37,7 @@ ms.locfileid: "96240047"
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
 |ActivityDefinitionId|xs:string|Имя корневого действия в рабочем процессе.|  
-|Состояние|xs:string|Текущее состояние рабочего процесса.|  
+|Область|xs:string|Текущее состояние рабочего процесса.|  
 |Заметки|xs:string|Заметки, добавленные к этому событию.  Значения хранятся в XML-элементе в формате \<items> \< item  name = "annotationName" type="System.String"> аннотатионвалуе \</item> \</items> .  Если заметки не указаны, строка содержит \<items/> . Размер событий ETW ограничен размером буфера ETW или максимальным размером полезных данных для события ETW. Если размер события превышает предел ETW, то событие усекается путем удаления заметок и замены значения аннотации на \<items> ... \</items> .|  
 |ProfileName|xs:string|Имя или профиль отслеживания, который привел к созданию этого события.|  
 |HostReference|xs:string|Для служб, размещенных на веб-сайтах, это поле служит уникальным идентификатором службы в веб-иерархии.  Его формат определяется как "имя веб-сайта виртуальный путь к приложению&#124;виртуальный путь службы&#124;ServiceName" example: "Default Web site/Калкулатораппликатион&#124;/Калкулаторсервице.СВК&#124;CalculatorService"|  

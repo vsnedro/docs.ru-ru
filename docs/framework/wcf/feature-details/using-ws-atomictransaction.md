@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: использование WS-AtomicTransaction'
 title: Использование WS-AtomicTransaction
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF]
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
-ms.openlocfilehash: 22b84dc49ab723953ce36402ac14221f410dda11
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c79a5912289d0dca9f671e614e69e54b82bba854
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756036"
 ---
 # <a name="using-ws-atomictransaction"></a>Использование WS-AtomicTransaction
 
@@ -25,7 +26,7 @@ WS-AtomicTransaction (WS-AT) - это протокол передачи тран
   
 - сетевой протокол, используемый для выполнения протокола двухфазной фиксации между диспетчером транзакций клиента и транзакцией сервера с целью распознавания результата транзакции.  
   
- Если сервер и клиент пишутся с помощью WCF, не нужно использовать WS-AT. Вместо этого воспользуйтесь параметрами по умолчанию привязки `NetTcpBinding` с включенным атрибутом `TransactionFlow`. При этом будет применяться протокол `OleTransactions`. Дополнительные сведения см. в разделе [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md). В противном случае, если транзакции передаются в веб-службы, созданные на основе сторонних технологий, необходимо использовать протокол WS-AT.  
+ Если сервер и клиент пишутся с помощью WCF, не нужно использовать WS-AT. Вместо этого воспользуйтесь параметрами по умолчанию привязки `NetTcpBinding` с включенным атрибутом `TransactionFlow`. При этом будет применяться протокол `OleTransactions`. Дополнительные сведения см. на веб-сайте [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md). В противном случае, если транзакции передаются в веб-службы, созданные на основе сторонних технологий, необходимо использовать протокол WS-AT.  
   
 ## <a name="see-also"></a>См. также
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: инструкции по настройке виртуальных каталогов'
 title: Инструкции по настройке виртуальных каталогов
 ms.date: 03/30/2017
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
-ms.openlocfilehash: dba6547888935ccf36ec0924fd3c95e8fbda5688
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b1a68fb657a59e9858c6efa7931c5d106231605
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755711"
 ---
 # <a name="virtual-directory-setup-instructions"></a>Инструкции по настройке виртуальных каталогов
 
@@ -34,7 +35,7 @@ ms.locfileid: "96243655"
   
 6. Укажите путь к физическому каталогу %SystemDrive%\inetpub\wwwroot\servicemodelsamples.  Большинство образцов WCF при построении копируют исполняемые файлы службы именно в этот каталог.  
   
-7. Нажмите кнопку **ОК**. Веб-приложение для образцов WCF создано.  
+7. Нажмите кнопку **OK**. Веб-приложение для образцов WCF создано.  
   
     > [!NOTE]
     > Эту задачу необходимо выполнить только один раз, так как все примеры WCF используют одно и то же веб-приложение servicemodelsamples.  
@@ -56,7 +57,7 @@ ms.locfileid: "96243655"
   
 5. Укажите путь к каталогу %SystemDrive%\inetpub\wwwroot\servicemodelsamples. Большинство образцов WCF при построении копируют исполняемые файлы службы именно в этот каталог.  
   
-6. Щелкните **Далее**.  
+6. Нажмите кнопку **Далее**.  
   
 7. По умолчанию устанавливаются следующие флажки:  
   

@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: расширяемые объекты'
 title: Расширяемые объекты
 ms.date: 03/30/2017
 helpviewer_keywords:
 - extensible objects [WCF]
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
-ms.openlocfilehash: 682c391e7b3c68de5bf799f77a93df7539681a37
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 80082f4c94adf2d668ff4c241d286959d9a05038
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64654487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756699"
 ---
 # <a name="extensible-objects"></a>Расширяемые объекты
 
 Шаблон расширяемого объекта используется для расширения существующих классов среды выполнения при помощи новых функций или добавления нового состояния к объекту. Расширения, привязанные к одному из расширяемых объектов, позволяют использовать поведения на различных этапах обработки для получения доступа к общему состоянию и функциональности, привязанным к общему расширяемому объекту, к которому они могут получить доступ.
 
-## <a name="the-iextensibleobjectt-pattern"></a>IExtensibleObject\<T > шаблон
+## <a name="the-iextensibleobjectt-pattern"></a>Шаблон IExtensibleObject \<T>
 
 Предусмотрено три интерфейса в шаблоне расширяемого объекта: <xref:System.ServiceModel.IExtensibleObject%601>, <xref:System.ServiceModel.IExtension%601> и <xref:System.ServiceModel.IExtensionCollection%601>.
 
@@ -38,11 +39,11 @@ where T : IExtensibleObject<T>
 
 В шаблоне <xref:System.ServiceModel.IExtension%601> не подразумевается никаких взаимодействий с другими стандартными управляемыми интерфейсами. В частности, метод <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> в объекте владельца, как правило, не отсоединяет его расширения.
 
-При добавлении расширения в коллекцию <xref:System.ServiceModel.IExtension%601.Attach%2A> вызывается перед отправкой его в коллекцию. При удалении расширения из коллекции, <xref:System.ServiceModel.IExtension%601.Detach%2A> вызывается после того, он удаляется. Это значит (предполагая соответствующую синхронизацию) расширения могли полагаться на только найден в коллекции, когда элемент находится в диапазоне от <xref:System.ServiceModel.IExtension%601.Attach%2A> и <xref:System.ServiceModel.IExtension%601.Detach%2A>.
+При добавлении расширения в коллекцию <xref:System.ServiceModel.IExtension%601.Attach%2A> вызывается до того, как он перейдет в коллекцию. Если расширение удаляется из коллекции, <xref:System.ServiceModel.IExtension%601.Detach%2A> вызывается после его удаления. Это означает, что (при соответствующей синхронизации) расширение может быть подсчитано только в коллекции, если оно находится между <xref:System.ServiceModel.IExtension%601.Attach%2A> и <xref:System.ServiceModel.IExtension%601.Detach%2A> .
 
 Нет необходимости, чтобы объект, переданный методу <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> или методу <xref:System.ServiceModel.IExtensionCollection%601.Find%2A>, был объектом <xref:System.ServiceModel.IExtension%601> (например, можно передать любой объект), но возвращенное расширение должно быть расширением <xref:System.ServiceModel.IExtension%601>.
 
-Если нет расширения в коллекции <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> возвращает значение null, и <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> возвращает пустую коллекцию. Если несколько расширений реализуют <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> возвращает одно из них. Значение, возвращаемое методом <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A>, является моментальным снимком.
+Если в коллекции нет расширения <xref:System.ServiceModel.IExtension%601> , <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> возвращается значение NULL и <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> возвращается пустая коллекция. Если реализуется несколько расширений <xref:System.ServiceModel.IExtension%601> , <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> возвращает один из них. Значение, возвращаемое методом <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A>, является моментальным снимком.
 
 Имеется два основных сценария. В первом сценарии свойство <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> используется как основанный на типах словарь для вставки состояния в объект с целью предоставления другому компоненту возможности просматривать его с помощью типа.
 
@@ -52,7 +53,7 @@ where T : IExtensibleObject<T>
 
 ### <a name="extensible-objects-in-windows-communication-foundation"></a>Расширяемые объекты в Windows Communication Foundation
 
-Существуют четыре расширяемых объекта в Windows Communication Foundation (WCF):
+В Windows Communication Foundation (WCF) доступно четыре расширяемых объекта:
 
 - <xref:System.ServiceModel.ServiceHostBase>. Это базовый класс для узла службы.  Расширения этого класса можно использовать для расширения поведения самого класса <xref:System.ServiceModel.ServiceHostBase> или для хранения состояния для каждой службы.
 
@@ -60,7 +61,7 @@ where T : IExtensibleObject<T>
 
 - <xref:System.ServiceModel.OperationContext>. Этот класс представляет данные об операциях, собранные средой выполнения для каждой операции.  Сюда входят такие данные как заголовки входящих сообщений, свойства входящих сообщений, идентификация входящих сообщений и др.  Расширения этого класса можно использовать как для расширения поведения класса <xref:System.ServiceModel.OperationContext>, так и для хранения состояния для каждой операции.
 
-- <xref:System.ServiceModel.IContextChannel> – Этот интерфейс обеспечивает проверку каждого состояния для каналов и прокси-серверы, созданные средой выполнения WCF.  Расширения этого класса можно использовать как для расширения поведения класса <xref:System.ServiceModel.IClientChannel>, так и для хранения состояния для каждого канала.
+- <xref:System.ServiceModel.IContextChannel> — Этот интерфейс обеспечивает проверку каждого состояния для каналов и прокси-серверов, созданных средой выполнения WCF.  Расширения этого класса можно использовать как для расширения поведения класса <xref:System.ServiceModel.IClientChannel>, так и для хранения состояния для каждого канала.
 
 В следующем примере кода показано использование простого расширения для отслеживания объектов <xref:System.ServiceModel.InstanceContext>.
 

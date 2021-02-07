@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в справочнике по классам WMI
 title: Справочные сведения по классам WMI
 ms.date: 03/30/2017
 ms.assetid: b95a51f5-8251-4619-ae05-7de88cb90f9a
-ms.openlocfilehash: 9830fbf50e8df625e3d3077a66c66e0370204acb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6413065b5740b190aee122ef34727da120737afa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96262259"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757026"
 ---
 # <a name="wmi-class-reference"></a>Справочные сведения по классам WMI
 
@@ -17,7 +18,7 @@ ms.locfileid: "96262259"
 
  Все классы, перечисленные в ссылках на объект WMI, невозможно создать напрямую, за исключением классов службы, домена приложения, контракта, ServiceToEndpointAssociation и конечной точки. Чтобы получить доступ к другим экземплярам, можно получить доступ к свойствам указанных выше классов верхнего уровня. Например, можно получить доступ к экземпляру TransportBindingElement из экземпляра конечной точки — > Binding-> BindingElements.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [ActivityTransfer](activitytransfer.md)  
   
@@ -31,7 +32,7 @@ ms.locfileid: "96262259"
   
  [BinaryMessageEncodingBindingElement](binarymessageencodingbindingelement.md)  
   
- [Привязка](binding.md)  
+ [Вязывания](binding.md)  
   
  [BindingElement](bindingelement.md)  
   

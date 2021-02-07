@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о действиях обмена сообщениями
 title: Действия обмена сообщениями
 ms.date: 03/30/2017
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
-ms.openlocfilehash: 69a0e9a415b10d9c58d04eac27e48b1ed6a78064
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fc98081cabc552cd51bf35db3bed9443220fc065
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84576399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756075"
 ---
 # <a name="messaging-activities"></a>Действия обмена сообщениями
 
@@ -111,7 +112,7 @@ Request = rcv
 
 При вызове службы рабочего процесса может быть полезно выделить для операции службы транзакцию. Чтобы сделать это, поместите действие <xref:System.ServiceModel.Activities.Receive> в действие <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Действие <xref:System.ServiceModel.Activities.TransactedReceiveScope> содержит действие `Receive` и текст. Транзакция, выделяемая службе, остается внешней в течение выполнения текста <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Транзакция завершает работу, когда заканчивается выполнение основной части. Дополнительные сведения о рабочих процессах и транзакциях см. в разделе [транзакции рабочего процесса](../../windows-workflow-foundation/workflow-transactions.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Отправка и получение ошибок в службах рабочих процессов](https://go.microsoft.com/fwlink/?LinkId=189151)
 - [Создание службы долго выполняющегося рабочего процесса](creating-a-long-running-workflow-service.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: защита сообщений с помощью клиента имени пользователя'
 title: Безопасность сообщений при использовании клиентом учетных данных пользователя
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 7168b393bde626c8c413cda3c7422e0eee4ce267
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4502635df3b52ba069c19fca7a73cc9395dd105d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96292874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756114"
 ---
 # <a name="message-security-with-a-user-name-client"></a>Безопасность сообщений при использовании клиентом учетных данных пользователя
 
@@ -33,7 +34,7 @@ ms.locfileid: "96292874"
   
 ## <a name="service"></a>Служба  
 
- Предполагается, что представленные ниже код и конфигурация выполняются независимо. Используйте один из следующих вариантов:  
+ Предполагается, что представленные ниже код и конфигурация выполняются независимо. Выполните одно из следующих действий.  
   
 - Создайте автономную службу, используя код без конфигурации.  
   

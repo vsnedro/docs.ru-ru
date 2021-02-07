@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: экспорт и импорт метаданных'
 title: Экспорт и импорт метаданных
 ms.date: 03/30/2017
 helpviewer_keywords:
 - metadata [WCF], exporting and importing
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
-ms.openlocfilehash: 44a684ca7904cc059277d94f26b5c077794d75b9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c4309e9ce48089fa0034f2b93128ac021dd08998
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96276650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756296"
 ---
 # <a name="exporting-and-importing-metadata"></a>Экспорт и импорт метаданных
 
@@ -52,7 +53,7 @@ ms.locfileid: "96276650"
   
  Тип <xref:System.ServiceModel.Description.WsdlExporter> заново создает все исключения, перехваченные во время процесса экспорта. Эти исключения не записываются в виде ошибок в свойство `Errors`. После того, как <xref:System.ServiceModel.Description.WsdlExporter> создал исключение, он находится в состоянии ошибки и не может использоваться повторно. <xref:System.ServiceModel.Description.WsdlExporter> не добавляет предупреждения в свое свойство `Errors`, если экспорт операции невозможен из-за использования подстановочных действий или если обнаружены одинаковые имена привязок.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Импорт метаданных в конечные точки службы](how-to-import-metadata-into-service-endpoints.md)  
  Описание порядка импорта загруженных метаданных в объекты описания.  

@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения: Передача данных и сериализация'
 title: Передача данных и сериализация
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data serialization [WCF]
 - data transfer [WCF]
 ms.assetid: 0f03c635-f3e7-4c5c-9463-3cb0135e221e
-ms.openlocfilehash: 490c89f5cfbecd4b2cc0c0e639aa97849132a809
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 50e5068efc10d706fb9ce2634998408e48037ded
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756569"
 ---
 # <a name="data-transfer-and-serialization"></a>Передача данных и сериализация
 
 В распределенных системах для выполнения каких-либо задач клиенты и службы обмениваются данными. Разработчику службы или клиента необходимо также понимать, как Windows Communication Foundation (WCF) обрабатывает данные и сериализацию данных для создания эффективных и удобных в обслуживании приложений.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Задание передачи данных в контрактах служб](specifying-data-transfer-in-service-contracts.md)  
  Базовые принципы передачи данных в службах.  

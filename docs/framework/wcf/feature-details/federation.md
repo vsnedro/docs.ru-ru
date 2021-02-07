@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Федерация'
 title: Федерация
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation [WCF]
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-ms.openlocfilehash: 5b5e944b96fc5e56fbb4d19a582ba9dd245904b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 069017097b46ef0b86e74fb94c2e2823172fb1e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286751"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756335"
 ---
 # <a name="federation"></a>Федерация
 
@@ -298,7 +299,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
   
  ![Схема, демонстрирующая шаги в вызове службы MyService.](./media/federation/federation-myservice-service-call-process.gif)  
   
-## <a name="summary"></a>Сводка  
+## <a name="summary"></a>Итоги  
 
  Федеративная безопасность обеспечивает четкое разделение ответственности и позволяет выстраивать безопасные, масштабируемые архитектуры служб. В качестве платформы для создания и развертывания распределенных приложений WCF предоставляет встроенную поддержку реализации федеративной безопасности.  
   

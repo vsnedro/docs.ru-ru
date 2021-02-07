@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Отладка ошибок проверки подлинности Windows'
 title: Отладка ошибок проверки подлинности Windows
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, authentication
 - WCF, Windows authentication
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.openlocfilehash: c8aa87bdbf9488bce8e1a62f6d1a3898f923d349
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cfc8bf8ce9b9c5da3d9b25949321ed1ac2b62d98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96291665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756491"
 ---
 # <a name="debug-windows-authentication-errors"></a>Отладка ошибок проверки подлинности Windows
 
@@ -52,9 +53,9 @@ ms.locfileid: "96291665"
   
 - локальная система: встроенная учетная запись SYSTEM на входящем в состав домена компьютере;  
   
-- пользователь домена: учетная запись пользователя в домене Windows. Например, введите `DomainName\ProfileName`.  
+- пользователь домена: учетная запись пользователя в домене Windows. Например, `DomainName\ProfileName`.  
   
-- компьютер домена: процесс с удостоверением компьютера, выполняющийся на компьютере, который входит в состав домена Windows. Например, введите `MachineName\Network Service`.  
+- компьютер домена: процесс с удостоверением компьютера, выполняющийся на компьютере, который входит в состав домена Windows. Например, `MachineName\Network Service`.  
   
 > [!NOTE]
 > Получение учетных данных службы происходит при вызове метода <xref:System.ServiceModel.ICommunicationObject.Open%2A> класса <xref:System.ServiceModel.ServiceHost>. Чтение учетных данных клиента происходит всякий раз, когда клиент отправляет сообщение.  

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о создании длительно выполняемой службы рабочих процессов
 title: Создание службы долго выполняющегося рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
-ms.openlocfilehash: 4ae01201230bf848c045158424db60097d8dd767
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9d26e763e2515f9e9ec2b61201512f02eeaeb1bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756907"
 ---
 # <a name="create-a-long-running-workflow-service"></a>Создание длительно выполняющейся службы рабочего процесса
 
@@ -27,7 +28,7 @@ ms.locfileid: "84599351"
 
 ## <a name="set-up-the-sql-database"></a>Настройка базы данных SQL
 
-1. Для сохранения экземпляров служб рабочих процессов требуется установленный Microsoft SQL Server, на котором необходимо настроить базу данных для хранения выгруженных из памяти экземпляров рабочих процессов. Запустите Microsoft SQL Management Studio, нажав кнопку **Пуск** , выбрав **все программы**, **Microsoft SQL Server 2008**и **Microsoft SQL Management Studio**.
+1. Для сохранения экземпляров служб рабочих процессов требуется установленный Microsoft SQL Server, на котором необходимо настроить базу данных для хранения выгруженных из памяти экземпляров рабочих процессов. Запустите Microsoft SQL Management Studio, нажав кнопку **Пуск** , выбрав **все программы**, **Microsoft SQL Server 2008** и **Microsoft SQL Management Studio**.
 
 2. Чтобы войти в SQL Server экземпляр, нажмите кнопку " **Подключиться** "
 
@@ -93,7 +94,7 @@ ms.locfileid: "84599351"
 
         При этом будет создан новый идентификатор заказа, а его значение будет помещено в переменную orderId.
 
-    6. Выберите действие **реплитостартордер** . В окне Свойства нажмите кнопку с многоточием для **CorrelationInitializers**. Выберите ссылку **Добавить инициализатор** , введите `orderIdHandle` в текстовом поле инициализатор, выберите инициализатор корреляции запросов для типа корреляции и выберите p_orderId в раскрывающемся списке запросы XPath. Эти параметры показаны на следующем рисунке. Нажмите кнопку **ОК**.  При этом будет инициализирована новая корреляция между клиентом и этим экземпляром службы рабочего процесса. При получении сообщения с этим идентификатором заказа оно будет направлено этому экземпляру службы рабочего процесса.
+    6. Выберите действие **реплитостартордер** . В окне Свойства нажмите кнопку с многоточием для **CorrelationInitializers**. Выберите ссылку **Добавить инициализатор** , введите `orderIdHandle` в текстовом поле инициализатор, выберите инициализатор корреляции запросов для типа корреляции и выберите p_orderId в раскрывающемся списке запросы XPath. Эти параметры показаны на следующем рисунке. Нажмите кнопку **OK**.  При этом будет инициализирована новая корреляция между клиентом и этим экземпляром службы рабочего процесса. При получении сообщения с этим идентификатором заказа оно будет направлено этому экземпляру службы рабочего процесса.
 
         ![Добавление инициализатора корреляции](./media/creating-a-long-running-workflow-service/add-correlationinitializers.png "Добавьте инициализатор корреляции.")
 
@@ -116,13 +117,13 @@ ms.locfileid: "84599351"
 
         ![Указание параметров для второго получения](./media/creating-a-long-running-workflow-service/add-receive-two-parameters.png "Настройте действие Receive для получения двух параметров.")
 
-    4. Нажмите кнопку с многоточием **коррелатеон** и введите `orderIdHandle` . В разделе **запросы XPath**щелкните стрелку раскрывающегося списка и выберите `p_orderId` . При этом будет настроена корреляция второго действия Receive. Дополнительные сведения о корреляции см. в разделе [корреляция](correlation.md).
+    4. Нажмите кнопку с многоточием **коррелатеон** и введите `orderIdHandle` . В разделе **запросы XPath** щелкните стрелку раскрывающегося списка и выберите `p_orderId` . При этом будет настроена корреляция второго действия Receive. Дополнительные сведения о корреляции см. в разделе [корреляция](correlation.md).
 
         ![Задание свойства CorrelatesOn](./media/creating-a-long-running-workflow-service/correlateson-setting.png "Задайте свойство CorrelatesOn.")
 
     5. Перетаскивание действия **If** сразу после действия **рецеивеаддитем** . Это действие работает аналогично инструкции IF.
 
-        1. Присвойте свойству **Condition** значение.`itemId=="Zune HD" (itemId="Zune HD" for Visual Basic)`
+        1. Присвойте свойству **Condition** значение. `itemId=="Zune HD" (itemId="Zune HD" for Visual Basic)`
 
         2. Перетащите действие Assign ( **назначение** ) в раздел Then, а другой **—** в раздел **else** , чтобы установить свойства действий **назначения** , как показано на следующем рисунке.
 
@@ -138,7 +139,7 @@ ms.locfileid: "84599351"
 
             ![Настройка привязки данных для действия SendReply](./media/creating-a-long-running-workflow-service/set-property-for-sendreplytoadditem.gif "Задание свойства для действия Сендреплитоаддитем.")
 
-8. Откройте файл Web. config и добавьте в раздел следующие элементы, \<behavior> чтобы включить сохранение рабочего процесса.
+8. Откройте файл web.config и добавьте в раздел следующие элементы, \<behavior> чтобы включить сохранение рабочего процесса.
 
     ```xml
     <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />
@@ -148,7 +149,7 @@ ms.locfileid: "84599351"
     > [!WARNING]
     > В приведенном выше фрагменте кода необходимо заменить имя узла и экземпляра SQL Server.
 
-9. Постройте решение.
+9. Создайте решение.
 
 ## <a name="create-a-client-application-to-call-the-workflow-service"></a>Создание клиентского приложения для вызова службы рабочего процесса
 
@@ -205,6 +206,6 @@ ms.locfileid: "84599351"
     Sending add item messageService returned: Item added to orderPress any key to continue . . .
     ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Службы рабочего процесса](workflow-services.md)

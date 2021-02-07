@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: диагностика транзакционных приложений'
 title: Диагностика транзакционных приложений
 ms.date: 03/30/2017
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
-ms.openlocfilehash: 696ebe7249a8388eaaf38a678581e28d472e821a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4b80dd5273781feaad0ef1c964c737a1cd470c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756452"
 ---
 # <a name="diagnosing-transactional-applications"></a>Диагностика транзакционных приложений
 
@@ -56,8 +57,8 @@ ms.locfileid: "96290248"
   
 |Имя|Тип|Описание|  
 |----------|----------|-----------------|  
-|ReleaseServiceInstanceOnTransactionComplete|Логическое значение|Указывает, производится ли повторное использование объекта службы после завершения текущей транзакции.|  
-|TransactionAutoCompleteOnSessionClose|Логическое значение|Указывает, завершаются ли ожидающие транзакции при закрытии текущего сеанса.|  
+|ReleaseServiceInstanceOnTransactionComplete|Логическое|Указывает, производится ли повторное использование объекта службы после завершения текущей транзакции.|  
+|TransactionAutoCompleteOnSessionClose|Логическое|Указывает, завершаются ли ожидающие транзакции при закрытии текущего сеанса.|  
 |TransactionIsolationLevel|Строка, содержащая допустимое значение перечисления <xref:System.Transactions.IsolationLevel>.|Задает уровень изоляции транзакции, поддерживаемый этой службой.|  
 |TransactionTimeout|<xref:System.DateTime>|Задает период времени, в течение которого транзакция должна быть завершена.|  
   
@@ -72,14 +73,14 @@ ms.locfileid: "96290248"
 |Имя|Тип|Описание|  
 |----------|----------|-----------------|  
 |TransactionProtocol|Строка, содержащая допустимое значение типа <xref:System.ServiceModel.TransactionProtocol>.|Указывает протокол транзакций, используемый при передаче транзакций.|  
-|TransactionFlow|Логическое значение|Задает, включен ли входящий поток транзакций.|  
+|TransactionFlow|Логическое|Задает, включен ли входящий поток транзакций.|  
   
  В операции атрибут `OperationBehaviorAttribute` имеет следующие свойства.  
   
 |Имя|Тип|Описание|  
 |----------|----------|-----------------|  
-|TransactionAutoComplete|Логическое значение|Указывает, следует ли автоматически фиксировать текущую транзакцию при отсутствии необработанных исключений.|  
-|TransactionScopeRequired|Логическое значение|Указывает, требует ли операция транзакции.|  
+|TransactionAutoComplete|Логическое|Указывает, следует ли автоматически фиксировать текущую транзакцию при отсутствии необработанных исключений.|  
+|TransactionScopeRequired|Логическое|Указывает, требует ли операция транзакции.|  
   
  В операции атрибут `TransactionFlowAttribute` имеет следующие свойства.  
   

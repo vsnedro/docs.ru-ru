@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Справочник по схеме контракта данных'
 title: Справочник по схеме контрактов данных
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: 04d1f753e5788460404942a21a29e1612f674e90
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3449340600ea5c55ef46433031e53266a218bd6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756647"
 ---
 # <a name="data-contract-schema-reference"></a>Справочник по схеме контрактов данных
 
@@ -17,7 +18,7 @@ ms.locfileid: "84593572"
 
 ## <a name="datacontractserializer-mappings"></a>DataContractSerializer - сопоставления
 
-`DataContractSerializer`Сопоставляет типы CLR с XSD при экспорте метаданных из службы Windows Communication Foundation (WCF) с помощью конечной точки метаданных или [средства служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Дополнительные сведения см. в разделе [сериализатор контрактов данных](data-contract-serializer.md).
+`DataContractSerializer`Сопоставляет типы CLR с XSD при экспорте метаданных из службы Windows Communication Foundation (WCF) с помощью конечной точки метаданных или [средства служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Дополнительные сведения см. в разделе [сериализатор контрактов данных](data-contract-serializer.md).
 
 `DataContractSerializer` также сопоставляет типы XSD типам среды CLR, когда для доступа к документам WSDL или XSD и создания контрактов данных для служб или клиентов используется Svcutil.exe.
 
@@ -43,7 +44,7 @@ ms.locfileid: "84593572"
 
 ### <a name="xsschema-attributes"></a>\<xs:schema>: атрибуты
 
-|Атрибут|DataContract|
+|attribute|DataContract|
 |---------------|------------------|
 |`attributeFormDefault`|Не обрабатывается.|
 |`blockDefault`|Не обрабатывается.|
@@ -76,7 +77,7 @@ ms.locfileid: "84593572"
 
 ### <a name="xscomplextype-attributes"></a>\<xs:complexType>: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`abstract`|По умолчанию должен иметь значение false.|
 |`block`|Запрещено.|
@@ -100,15 +101,15 @@ ms.locfileid: "84593572"
 |`anyAttribute`|Запрещено.|
 |(пусто)|Сопоставляется с контрактом данных, не имеющем элементов данных.|
 
-### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence>в сложном типе: атрибуты
+### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence> в сложном типе: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`id`|Не обрабатывается.|
 |`maxOccurs`|По умолчанию должен иметь значение 1.|
 |`minOccurs`|По умолчанию должен иметь значение 1.|
 
-### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence>в сложном типе: содержимое
+### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence> в сложном типе: содержимое
 
 |Содержимое|схема|
 |--------------|------------|
@@ -131,9 +132,9 @@ ms.locfileid: "84593572"
 
 - Он может использоваться в `<xs:schema>` в качестве объявления глобального элемента.
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element>с maxOccurs = 1 в \<xs:sequence> (элементы данных)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element> с maxOccurs = 1 в \<xs:sequence> (элементы данных)
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`ref`|Запрещено.|
 |`name`|Поддерживается, сопоставляется с именем элемента данных.|
@@ -147,7 +148,7 @@ ms.locfileid: "84593572"
 |`minOccurs`|Сопоставляется со свойством <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> элемента данных (`IsRequired` имеет значение true, когда `minOccurs` имеет значение 1).|
 |`nillable`|Влияет на сопоставление типов. См. "Сопоставление тип-примитив".|
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element>с maxOccurs>1 в \<xs:sequence> коллекции (коллекций)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element> с maxOccurs>1 в \<xs:sequence> коллекции (коллекций)
 
 - Сопоставляется <xref:System.Runtime.Serialization.CollectionDataContractAttribute>.
 
@@ -163,7 +164,7 @@ ms.locfileid: "84593572"
 
 Правила для атрибутов `ref`, `block`, `default`, `fixed`, `form`и `id` те же, что и в случае типов, не являющихся коллекциями. Другие атрибуты приведены в следующей таблице.
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`name`|Поддерживается, сопоставляется свойству <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A> в атрибуте `CollectionDataContractAttribute` .|
 |`type`|Поддерживается, сопоставляется типу, хранящемуся в коллекции.|
@@ -171,7 +172,7 @@ ms.locfileid: "84593572"
 |`minOccurs`|Не обрабатывается.|
 |`nillable`|Влияет на сопоставление типов. Этот атрибут игнорируется в случае коллекций-словарей.|
 
-### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element>в \<xs:schema> объявлении глобального элемента
+### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element> в \<xs:schema> объявлении глобального элемента
 
 - Объявление глобального элемента, имеющего то же имя и пространство имен, что и тип в схеме, или определяющего анонимный тип внутри себя, означает связь с типом.
 
@@ -181,7 +182,7 @@ ms.locfileid: "84593572"
 
 - Импорт схемы: связанные объявления глобальных элементов не требуются и игнорируются, если они соответствуют следующим правилам (если только они не определяют типы).
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`abstract`|Должен иметь значение false для связанных объявлений глобальных элементов.|
 |`block`|Запрещено в связанных объявлениях глобальных элементов.|
@@ -205,7 +206,7 @@ ms.locfileid: "84593572"
 |`keyref`|Не обрабатывается.|
 |(пусто)|Поддерживается.|
 
-\*При использовании `simpleType` сопоставления и `complexType,` для анонимных типов такая же, как и для неанонимных типов, за исключением того, что нет анонимных контрактов данных, поэтому создается именованный контракт данных с созданным именем, производным от имени элемента. Ниже перечислены правила для анонимных типов.
+\* При использовании `simpleType` сопоставления и `complexType,` для анонимных типов такая же, как и для неанонимных типов, за исключением того, что нет анонимных контрактов данных, поэтому создается именованный контракт данных с созданным именем, производным от имени элемента. Ниже перечислены правила для анонимных типов.
 
 - Сведения о реализации WCF: Если `xs:element` имя не содержит точек, то анонимный тип сопоставляется внутреннему типу внешнего типа контракта данных. Если имя содержит точки, итоговый тип контракта данных является независимым (не внутренним типом).
 
@@ -217,7 +218,7 @@ ms.locfileid: "84593572"
 
 ### <a name="xssimpletype-attributes"></a>\<xs:simpleType>: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`final`|Не обрабатывается.|
 |`id`|Не обрабатывается.|
@@ -241,12 +242,12 @@ ms.locfileid: "84593572"
 
 ### <a name="xsrestriction-attributes"></a>\<xs:restriction>: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`base`|Должен быть поддерживаемым простым типом или `xs:anyType`.|
 |`id`|Не обрабатывается.|
 
-### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction>для всех остальных случаев: содержимое
+### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction> для всех остальных случаев: содержимое
 
 |Содержимое|схема|
 |--------------|------------|
@@ -267,14 +268,14 @@ ms.locfileid: "84593572"
 
 ## <a name="enumeration"></a>Перечисление
 
-### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction>для перечислений: атрибуты
+### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction> для перечислений: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`base`|Если существует, должен быть `xs:string`.|
 |`id`|Не обрабатывается.|
 
-### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction>для перечислений: содержимое
+### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction> для перечислений: содержимое
 
 |Содержимое|схема|
 |--------------|------------|
@@ -337,7 +338,7 @@ public enum MyEnum
 
 ### <a name="xslist-attributes"></a>\<xs:list>: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`itemType`|Запрещено.|
 |`id`|Не обрабатывается.|
@@ -441,7 +442,7 @@ public class Employee : Person
 
 ### <a name="xscomplexcontent-attributes"></a>\<xs:complexContent>: атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`id`|Не обрабатывается.|
 |`mixed`|Должен иметь значение false.|
@@ -453,14 +454,14 @@ public class Employee : Person
 |`restriction`|Запрещено, за исключением случая, когда base="`xs:anyType`". Последнее эквивалентно помещению содержимого `xs:restriction` прямо под контейнер `xs:complexContent`.|
 |`extension`|Поддерживается. Сопоставляется наследованию контракта данных.|
 
-### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension>в \<xs:complexContent> : атрибуты
+### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension> в \<xs:complexContent> : атрибуты
 
-|Атрибут|схема|
+|attribute|схема|
 |---------------|------------|
 |`id`|Не обрабатывается.|
 |`base`|Поддерживается. Сопоставляется базовому типу контракта данных, от которого наследует этот тип.|
 
-### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension>в \<xs:complexContent> : содержимое
+### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension> в \<xs:complexContent> : содержимое
 
 Применяются те же правила, что и для содержимого `<xs:complexType>` .
 
@@ -529,7 +530,7 @@ public class Employee : Person
 
 ## <a name="iserializable-types-mapping"></a>Сопоставление типов ISerializable
 
-В .NET Framework версии 1,0 <xref:System.Runtime.Serialization.ISerializable> было представлено как общий механизм сериализации объектов для сохранения или обмена данными. Существует множество типов .NET Framework, которые реализуют `ISerializable` и могут передаваться между приложениями. <xref:System.Runtime.Serialization.DataContractSerializer> поддерживает классы `ISerializable` . `DataContractSerializer` сопоставляет типы схемы реализации `ISerializable` , отличающиеся только полным именем типа (QName) и фактически являющиеся коллекциями свойств. Например, объект `DataContractSerializer` сопоставляется со <xref:System.Exception> следующим типом XSD в `http://schemas.datacontract.org/2004/07/System` пространстве имен.
+В платформа .NET Framework версии 1,0 <xref:System.Runtime.Serialization.ISerializable> было представлено как общий механизм сериализации объектов для сохранения или обмена данными. Существует множество типов платформа .NET Framework, которые реализуют `ISerializable` и могут передаваться между приложениями. <xref:System.Runtime.Serialization.DataContractSerializer> поддерживает классы `ISerializable` . `DataContractSerializer` сопоставляет типы схемы реализации `ISerializable` , отличающиеся только полным именем типа (QName) и фактически являющиеся коллекциями свойств. Например, объект `DataContractSerializer` сопоставляется со <xref:System.Exception> следующим типом XSD в `http://schemas.datacontract.org/2004/07/System` пространстве имен.
 
 ```xml
 <xs:complexType name="Exception">
