@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугунманажедкаллбакк::D Ебужевент'
 title: Метод ICorDebugUnmanagedCallback::DebugEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: be9cab04-65ec-44d5-a39a-f90709fdd043
 topic_type:
 - apiref
-ms.openlocfilehash: 75341b1af034972c861b75f29a06eaa2c4e33c3a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fcd7bc3b380add7465473cb01585eb1656d00aad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690578"
 ---
 # <a name="icordebugunmanagedcallbackdebugevent-method"></a>Метод ICorDebugUnmanagedCallback::DebugEvent
 
@@ -43,7 +44,7 @@ HRESULT DebugEvent (
  `fOutOfBand`  
  [in] `true` , если взаимодействие с состоянием управляемого процесса невозможно после возникновения неуправляемого события, до тех пор, пока отладчик не вызовет [ICorDebugController:: Continue](icordebugcontroller-continue-method.md); в противном случае — значение `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если отлаживаемый поток является потоком Win32, не используйте члены интерфейса отладки Win32. Можно вызывать `ICorDebugController::Continue` только в потоке Win32 и продолжать событие за пределами внешнего управления.  
   
@@ -51,7 +52,7 @@ HRESULT DebugEvent (
   
  Перед продолжением процесса вызовите [ICorDebugProcess:: ClearCurrentException](icordebugprocess-clearcurrentexception-method.md) в процессе, чтобы проигнорировать событие исключения. Вызов этого метода отправляет DBG_CONTINUE вместо DBG_EXCEPTION_NOT_HANDLED в запросе continue и автоматически очищает невыполненные точки останова и одношаговые исключения. События по внешнему каналу могут быть получены в любое время, даже если отладка приложения будет остановлена и когда уже существует необработанное событие в полосе.  
   
- В .NET Framework версии 2,0 отладчик должен немедленно продолжить работу после события нестандартной точки останова. Для добавления и удаления точек останова отладчик должен использовать методы [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md) и [ICorDebugProcess2:: клеарунманажедбреакпоинт](icordebugprocess2-clearunmanagedbreakpoint-method.md) . Эти методы будут автоматически пропускать любые точки останова по внешнему каналу. Таким образом, только точки останова по внешнему каналу, которые были отправлены, должны быть необработанными точками останова, которые уже находятся в потоке инструкций, например в вызове `DebugBreak` функции Win32. Не пытайтесь использовать `ICorDebugProcess::ClearCurrentException` , [ICorDebugProcess:: GetThreadContext](icordebugprocess-getthreadcontext-method.md), [ICorDebugProcess:: SetThreadContext](icordebugprocess-setthreadcontext-method.md)или любой другой член [API отладки](index.md).  
+ В платформа .NET Framework версии 2,0 отладчик должен немедленно продолжить работу после события нестандартной точки останова. Для добавления и удаления точек останова отладчик должен использовать методы [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md) и [ICorDebugProcess2:: клеарунманажедбреакпоинт](icordebugprocess2-clearunmanagedbreakpoint-method.md) . Эти методы будут автоматически пропускать любые точки останова по внешнему каналу. Таким образом, только точки останова по внешнему каналу, которые были отправлены, должны быть необработанными точками останова, которые уже находятся в потоке инструкций, например в вызове `DebugBreak` функции Win32. Не пытайтесь использовать `ICorDebugProcess::ClearCurrentException` , [ICorDebugProcess:: GetThreadContext](icordebugprocess-getthreadcontext-method.md), [ICorDebugProcess:: SetThreadContext](icordebugprocess-setthreadcontext-method.md)или любой другой член [API отладки](index.md).  
   
 ## <a name="requirements"></a>Требования  
 
@@ -61,8 +62,8 @@ HRESULT DebugEvent (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugUnmanagedCallback](icordebugunmanagedcallback-interface.md)

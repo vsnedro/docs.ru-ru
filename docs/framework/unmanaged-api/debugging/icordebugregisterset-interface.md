@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugRegisterSet'
 title: Интерфейс ICorDebugRegisterSet
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
 topic_type:
 - apiref
-ms.openlocfilehash: 940810288b72be0d4dfc5366176663c22c369ebb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7d888e9e395e9f5fa88c6a6d96b2b8e3171ef4ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690786"
 ---
 # <a name="icordebugregisterset-interface"></a>Интерфейс ICorDebugRegisterSet
 
@@ -32,10 +33,10 @@ ms.locfileid: "95712382"
 |[Метод GetRegisters](icordebugregisterset-getregisters-method.md)|Возвращает значение каждого регистра (на компьютере, выполняющем в данный момент код), который задается битовой маской.|  
 |[Метод GetRegistersAvailable](icordebugregisterset-getregistersavailable-method.md)|Возвращает битовую маску, указывающую, какие регистры в данный `ICorDebugRegisterSet` момент доступны.|  
 |[Метод GetThreadContext](icordebugregisterset-getthreadcontext-method.md)|Возвращает контекст текущего потока.|  
-|[Метод SetRegisters](icordebugregisterset-setregisters-method.md)|Не реализовано для .NET Framework версии 2,0.|  
-|[Метод SetThreadContext](icordebugregisterset-setthreadcontext-method.md)|Не реализовано для .NET Framework 2,0.|  
+|[Метод SetRegisters](icordebugregisterset-setregisters-method.md)|Не реализовано для платформа .NET Framework версии 2,0.|  
+|[Метод SetThreadContext](icordebugregisterset-setthreadcontext-method.md)|Не реализовано для платформа .NET Framework 2,0.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugRegisterSet`Интерфейс поддерживает только 32-разрядные регистры. Используйте интерфейс [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) на платформах, таких как IA-64, требующих дополнительных регистров.  
   
@@ -50,9 +51,9 @@ ms.locfileid: "95712382"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)

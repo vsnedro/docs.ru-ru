@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугунманажедкаллбакк'
 title: Интерфейс ICorDebugUnmanagedCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc71cbca-7d73-40e5-84dd-2109fade3c2a
 topic_type:
 - apiref
-ms.openlocfilehash: 73722c9fbc1571496159c32b0106f25bc05dbe65
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6d8aa398ff7121e360c3da66671781cd169b6228
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703022"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690552"
 ---
 # <a name="icordebugunmanagedcallback-interface"></a>Интерфейс ICorDebugUnmanagedCallback
 
@@ -31,7 +32,7 @@ ms.locfileid: "95703022"
 |------------|-----------------|  
 |[Метод DebugEvent](icordebugunmanagedcallback-debugevent-method.md)|Уведомляет отладчик о срабатывании собственного события.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,8 +45,8 @@ ms.locfileid: "95703022"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

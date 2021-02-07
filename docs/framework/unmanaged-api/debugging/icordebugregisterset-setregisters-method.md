@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugRegisterSet:: SetRegisters'
 title: Метод ICorDebugRegisterSet::SetRegisters
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: ac6244b9-54ba-475f-b72a-abed6afc46ec
 topic_type:
 - apiref
-ms.openlocfilehash: 4be5d2d9d891010e68cd6eb96cd4456e04d8c8b0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a83d9d01a392d7ed435292f45ee0c75765ced36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712291"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690682"
 ---
 # <a name="icordebugregistersetsetregisters-method"></a>Метод ICorDebugRegisterSet::SetRegisters
 
-`SetRegisters` не реализован в .NET Framework версии 2,0. Этот метод не следует вызывать.  
+`SetRegisters` не реализован в платформа .NET Framework версии 2,0. Этот метод не следует вызывать.  
   
 > [!NOTE]
 > Используйте операции более высокого уровня, такие как [ICorDebugILFrame:: SetIP](icordebugilframe-setip-method.md) или [ICorDebugNativeFrame:: SetIP](icordebugnativeframe-setip-method.md).  
@@ -47,9 +48,9 @@ HRESULT SetRegisters (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)
 - [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)
