@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: безопасный доступ к данным'
 title: Безопасный доступ к данным
 ms.date: 03/30/2017
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
-ms.openlocfilehash: 9e4af58ce845c0b57c433e4ad1b8dddf4ee2a0cb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0f14f271dda9d07ba1efdea2328a5b3e30d14849
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718893"
 ---
 # <a name="secure-data-access"></a>Безопасный доступ к данным
 
@@ -95,7 +96,7 @@ ms.locfileid: "91189023"
 |[Взаимодействие с неуправляемым кодом](../../interop/index.md)|Содержит подразделы, описывающие представление COM-компонентов платформе .NET Framework и представление компонентов .NET Framework объектам COM.|
 |[Расширенное COM-взаимодействие](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Содержит расширенные подразделы, такие как основные сборки взаимодействия, организация поточной обработки и пользовательская упаковка и передача.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](securing-ado-net-applications.md)
 - [Безопасность SQL Server](./sql/sql-server-security.md)

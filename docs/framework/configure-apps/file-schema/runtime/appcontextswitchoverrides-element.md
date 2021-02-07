@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <AppContextSwitchOverrides> element'
 title: AppContextSwitchOverrides, элемент
 ms.date: 04/18/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configuration switches
 - configuration
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-ms.openlocfilehash: ab74886edcc86c900c56017867a3b81c9cb7886e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c2e4ceaec83ee23990c2146960f602eb12361a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176153"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719335"
 ---
 # <a name="appcontextswitchoverrides-element"></a>Элемент \<AppContextSwitchOverrides>
 
@@ -42,7 +43,7 @@ ms.locfileid: "91176153"
 
 |Значение|Описание|
 |-----------|-----------------|
-|"имя = значение"|Предопределенное имя коммутатора вместе со значением ( `true` или `false` ). Несколько пар "имя-значение" переключателей разделяются точкой с запятой (";"). Список стандартных имен коммутаторов, поддерживаемых .NET Framework, см. в разделе "Примечания".|
+|"имя = значение"|Предопределенное имя коммутатора вместе со значением ( `true` или `false` ). Несколько пар "имя-значение" переключателей разделяются точкой с запятой (";"). Список стандартных имен коммутаторов, поддерживаемых платформа .NET Framework, см. в разделе "Примечания".|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -57,11 +58,11 @@ ms.locfileid: "91176153"
 
 ## <a name="remarks"></a>Remarks
 
- Начиная с .NET Framework 4,6, `<AppContextSwitchOverrides>` элемент в файле конфигурации позволяет вызывающим ОБЪЕКТАМ API определить, может ли их приложение использовать преимущества новых функциональных возможностей или сохранить совместимость с предыдущими версиями библиотеки. Например, если поведение API изменилось между двумя версиями библиотеки, `<AppContextSwitchOverrides>` элемент позволяет вызывающим объектам этого API отказаться от нового поведения в версиях библиотеки, поддерживающих новые функциональные возможности. Для приложений, которые вызывают интерфейсы API в .NET Framework, `<AppContextSwitchOverrides>` элемент может также разрешить вызывающим объектам, приложения которых нацелены на более раннюю версию .NET Framework, использовать новые функции, если их приложение выполняется в версии .NET Framework, которая включает эти функции.
+ Начиная с платформа .NET Framework 4,6, `<AppContextSwitchOverrides>` элемент в файле конфигурации позволяет вызывающим ОБЪЕКТАМ API определить, может ли их приложение использовать преимущества новых функциональных возможностей или сохранить совместимость с предыдущими версиями библиотеки. Например, если поведение API изменилось между двумя версиями библиотеки, `<AppContextSwitchOverrides>` элемент позволяет вызывающим объектам этого API отказаться от нового поведения в версиях библиотеки, поддерживающих новые функциональные возможности. Для приложений, которые вызывают интерфейсы API в платформа .NET Framework, `<AppContextSwitchOverrides>` элемент может также разрешить вызывающим объектам, приложения которых нацелены на более раннюю версию платформа .NET Framework, использовать новые функции, если их приложение выполняется в версии платформа .NET Framework, которая включает эти функции.
 
  `value`Атрибут `<AppContextSwitchOverrides>` элемента состоит из одной строки, состоящей из одной или нескольких пар "имя-значение", разделенных точкой с запятой.  Каждое имя определяет переключатель совместимости, и его соответствующее значение является логическим ( `true` или `false` ), указывающим, задан ли параметр. По умолчанию параметр имеет значение `false` , а библиотеки предоставляют новые функциональные возможности. Они предоставляют только предыдущие функции, если задан параметр (то есть его значение `true` ). Это позволяет библиотекам предоставлять новое поведение для существующего API, одновременно позволяя вызывающим объектам, которые зависят от предыдущего поведения, отказаться от новых функциональных возможностей.
 
-.NET Framework поддерживает следующие параметры:
+Платформа .NET Framework поддерживает следующие параметры:
 
 |Имя коммутатора|Описание|Введенный|
 |-----------------|-----------------|----------------|
@@ -69,7 +70,7 @@ ms.locfileid: "91176153"
 |`Switch.MS.Internal.`<br/>`UseSha1AsDefaultHashAlgorithmForDigitalSignatures`|Определяет, используется ли алгоритм по умолчанию для подписывания частей пакета с помощью PackageDigitalSignatureManager — SHA1 или SHA256.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.7.1|
 |`Switch.System.Activities.`<br/>`UseMD5CryptoServiceProviderForWFDebugger`|Если задано значение `false` , позволяет выполнять отладку проектов рабочих процессов на основе XAML с помощью Visual Studio, когда включен FIPS. Без него вызывается <xref:System.NullReferenceException> в вызовах методов в сборке System. activitys.|.NET Framework 4.7|
 |`Switch.System.Activities.`<br/>`UseMD5ForWFDebugger`|Определяет, использует ли контрольная сумма для экземпляра рабочего процесса в отладчике MD5 или SHA1. | .NET Framework 4.7|
-|`Switch.System.Activities.`<br/>`UseSHA1HashForDebuggerSymbols`|Определяет, использует ли хэширование контрольных сумм рабочего процесса алгоритм SHA1, представленный в качестве значения по умолчанию в .NET Framework 4,7 ( `true` ), или используется ли алгоритм SHA256 по умолчанию в .NET Framework 4,8 ( `false` ).<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
+|`Switch.System.Activities.`<br/>`UseSHA1HashForDebuggerSymbols`|Определяет, использует ли хэширование контрольных сумм рабочего процесса алгоритм SHA1, представленный в качестве значения по умолчанию в платформа .NET Framework 4,7 ( `true` ), или используется ли алгоритм SHA256 по умолчанию в платформа .NET Framework 4,8 ( `false` ).<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
 |`Switch.System.Diagnostics.`<br/>`IgnorePortablePDBsInStackTraces`|Определяет, получают ли трассировкы стека при использовании переносимых PDB, могут включать исходные сведения о файлах и строках. `false` , чтобы включить исходные сведения о файлах и строках. в противном случае — `true` .|.NET Framework 4.7.2|
 |`Switch.System.Drawing.`<br/>`DontSupportPngFramesInIcons`|Определяет, <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> вызывает ли метод исключение, если <xref:System.Drawing.Icon> объект содержит кадры PNG. Дополнительные сведения см. в разделе [Устранение рисков: кадры PNG кадров в объектах Icon](../../../migration-guide/mitigation-png-frames-in-icon-objects.md).|.NET Framework 4.6|
 |`Switch.System.Drawing.Text.`<br/>`DoNotRemoveGdiFontsResourcesFromFontCollection`|Определяет <xref:System.Drawing.Text.PrivateFontCollection?displayProperty=nameWithType> , должны ли объекты правильно удаляться при добавлении в коллекцию <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=nameWithType> методом. `true` для поддержки устаревшего поведения; `false` Удаление всех объектов частных шрифтов. |.NET Framework 4.7.2|
@@ -102,7 +103,7 @@ ms.locfileid: "91176153"
 |`Switch.System.Security.Cryptography.Pkcs.`<br/>`UseInsecureHashAlgorithms`|Определяет, используется ли по умолчанию для некоторых операций SignedCMS алгоритм SHA1 или SHA256.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.7.1|
 |`Switch.System.Security.Cryptography.X509Certificates.`<br/>`ECDsaCertificateExtensions.UseLegacyPublicKeyReader`|Определяет, <xref:System.Security.Cryptography.X509Certificates.ECDsaCertificateExtensions.GetECDsaPublicKey%2A?displayProperty=nameWithType> правильно ли метод обрабатывает все именованные кривые, поддерживаемые операционной системой ( `false` ), или возвращается к поведению прежних версий.|.NET Framework 4.8|
 |`Switch.System.Security.Cryptography.Xml.`<br/>`UseInsecureHashAlgorithms`|Определяет, используется ли по умолчанию для некоторых операций SignedXML алгоритм SHA1 или SHA256.<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.7.1|
-|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|Определяет, `TransportWithMessageCredential` допускает ли режим безопасности сообщения с неподписанным заголовком "to". Это параметр выбора. Дополнительные сведения см. [в разделе изменения среды выполнения в .NET Framework 4.6.1](../../../migration-guide/runtime/4.5.2-4.6.1.md#windows-communication-foundation-wcf).|.NET Framework 4.6.1|
+|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|Определяет, `TransportWithMessageCredential` допускает ли режим безопасности сообщения с неподписанным заголовком "to". Это параметр выбора. Дополнительные сведения см. [в разделе изменения среды выполнения в платформа .NET Framework 4.6.1](../../../migration-guide/runtime/4.5.2-4.6.1.md#windows-communication-foundation-wcf).|.NET Framework 4.6.1|
 |`Switch.System.ServiceModel.`<br/>`DisableAddressHeaderCollectionValidation`>|Определяет, <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})> создает ли конструктор исключение, <xref:System.ArgumentException> Если один из элементов имеет значение `null` .|.NET Framework 4.7.1|
 |`Switch.System.ServiceModel.`<br />`DisableCngCertificates`|Определяет, возникает ли исключение при попытке использовать сертификаты X509 с поставщиком хранилища ключей CSG ВЫЗЫВАЛА. Дополнительные сведения см. в разделе [Безопасность транспорта WCF поддерживает сертификаты, хранимые с помощью CNG](../../../migration-guide/retargeting/4.6.1-4.6.2.md#wcf-transport-security-supports-certificates-stored-using-cng).|.NET Framework 4.6.1|
 |`Switch.System.ServiceModel.`<br/>`DisableExplicitConnectionCloseHeader`|При использовании транспорта HTTP с резидентной службой Установка этого значения `true` приводит к тому, что WCF игнорирует приложение, добавляя `Connection: close` заголовок в заголовки ответа для запроса. Установка этого значения `false` позволяет добавить `Connection: close` заголовок в заголовки ответа, что приведет к закрытию соединителя запросов после отправки ответа.|.NET Framework 4.6|
@@ -129,13 +130,13 @@ ms.locfileid: "91176153"
 |`Switch.System.Windows.Input.Stylus.`<br/>`EnablePointerSupport`|Определяет, включен ли необязательный `WM_POINTER` стек касаний или пера в приложениях WPF. Дополнительные сведения см. в разделе [Устранение рисков. Поддержка сенсорного ввода и пера на основе указателя.](../../../migration-guide/mitigation-pointer-based-touch-and-stylus-support.md)|.NET Framework 4.7|
 |`Switch.System.Windows.Markup.`<br/>`DoNotUseSha256ForMarkupCompilerChecksumAlgorithm`|Определяет, используется ли алгоритм хэширования по умолчанию для контрольных сумм: SHA256 ( `false` ) или SHA1 ( `true` ).<br>Из-за конфликта с SHA1 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.7.2|
 |`Switch.System.Windows.Media.ImageSourceConverter.`<br/>`OverrideExceptionWithNullReferenceException`|Определяет, создается ли устаревшая [NullReferenceException](xref:System.NullReferenceException) , а не исключение, которое точнее указывает на причину исключения (например, [DirectoryNotFoundException](xref:System.IO.DirectoryNotFoundException) или [FileNotFoundException](xref:System.IO.FileNotFoundException)). Он предназначен для использования в коде, который зависит от обработки [NullReferenceException](xref:System.NullReferenceException). | .NET Framework 4.7 |
-|`Switch.System.Workflow.ComponentModel.`<br/>`UseLegacyHashForXomlFileChecksum`|Определяет, используется ли для хэширования контрольной суммы файлов XOML в сборках проекта рабочего процесса алгоритм MD5 ( `true` ) или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
-|`Switch.System.Workflow.Runtime.`<br/>`UseLegacyHashForSqlTrackingCacheKey`|Определяет, использует ли SqlTrackingService хэширование контрольных сумм в качестве хэш-алгоритма ( `true` ) для кэшированных строк или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
-|`Switch.System.Workflow.Runtime.`<br/>`UseLegacyHashForWorkflowDefinitionDispenserCacheKey`|Определяет, использует ли хэширование контрольных сумм в среде выполнения рабочих процессов алгоритм MD5 ( `true` ) для кэшированных определений рабочих процессов или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
-|`Switch.UseLegacyAccessibilityFeatures`|Определяет, включены или отключены специальные возможности, доступные начиная с .NET Framework 4.7.1. | .NET Framework 4.7.1 |
-|`Switch.UseLegacyAccessibilityFeatures.2`|Определяет, включены ли функции специальных возможностей в .NET Framework 4.7.2 ( `false` ) или отключены ( `true` ). Если `true` значение равно, `Switch.UseLegacyAccessibilityFeatures` необходимо также `true` включить .NET Framework специальных возможностей 4.7.1.|.NET Framework 4.7.2|
-|`Switch.UseLegacyAccessibilityFeatures.3`|Определяет, включены ли специальные возможности, появившиеся в .NET Framework 4,8 ( `false` ) или Disabled ( `true` ). Если `true` значение `Switch.UseLegacyAccessibilityFeatures` равно, а `Switch.UseLegacyAccessibilityFeatures.2` также должно иметь значение `true` .|.NET Framework 4.8|
-|`Switch.UseLegacyToolTipDisplay`|Определяет, отображаются ли подсказки, когда пользователь наводит указатель мыши на элемент управления WPF ( `true` ) или они отображаются как на клавиатурном фокусе, так и через сочетание клавиш ( `false` , поведение по умолчанию). Для приложений, работающих на .NET Framework 4,8, но предназначенных для предыдущих версий .NET Framework, включение поддержки фокуса клавиатуры и сочетаний клавиш требует, `Switch.UseLegacyAccessibilityFeatures` `Switch.UseLegacyAccessibilityFeatures.2` `Switch.UseLegacyAccessibilityFeatures.3` чтобы для параметра, и было задано значение `false` .|.NET Framework 4.8|
+|`Switch.System.Workflow.ComponentModel.`<br/>`UseLegacyHashForXomlFileChecksum`|Определяет, используется ли для хэширования контрольной суммы файлов XOML в сборках проекта рабочего процесса алгоритм MD5 ( `true` ) или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в платформа .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
+|`Switch.System.Workflow.Runtime.`<br/>`UseLegacyHashForSqlTrackingCacheKey`|Определяет, использует ли SqlTrackingService хэширование контрольных сумм в качестве хэш-алгоритма ( `true` ) для кэшированных строк или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в платформа .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
+|`Switch.System.Workflow.Runtime.`<br/>`UseLegacyHashForWorkflowDefinitionDispenserCacheKey`|Определяет, использует ли хэширование контрольных сумм в среде выполнения рабочих процессов алгоритм MD5 ( `true` ) для кэшированных определений рабочих процессов или используется ли алгоритм SHA256, представленный в качестве значения по умолчанию в платформа .NET Framework 4,8.<br>Из-за конфликта с MD5 корпорация Майкрософт рекомендует использовать SHA256.|.NET Framework 4.8|
+|`Switch.UseLegacyAccessibilityFeatures`|Определяет, включены или отключены специальные возможности, доступные начиная с платформа .NET Framework 4.7.1. | .NET Framework 4.7.1 |
+|`Switch.UseLegacyAccessibilityFeatures.2`|Определяет, включены ли функции специальных возможностей в платформа .NET Framework 4.7.2 ( `false` ) или отключены ( `true` ). Если `true` значение равно, `Switch.UseLegacyAccessibilityFeatures` необходимо также `true` включить платформа .NET Framework специальных возможностей 4.7.1.|.NET Framework 4.7.2|
+|`Switch.UseLegacyAccessibilityFeatures.3`|Определяет, включены ли специальные возможности, появившиеся в платформа .NET Framework 4,8 ( `false` ) или Disabled ( `true` ). Если `true` значение `Switch.UseLegacyAccessibilityFeatures` равно, а `Switch.UseLegacyAccessibilityFeatures.2` также должно иметь значение `true` .|.NET Framework 4.8|
+|`Switch.UseLegacyToolTipDisplay`|Определяет, отображаются ли подсказки, когда пользователь наводит указатель мыши на элемент управления WPF ( `true` ) или они отображаются как на клавиатурном фокусе, так и через сочетание клавиш ( `false` , поведение по умолчанию). Для приложений, работающих на платформа .NET Framework 4,8, но предназначенных для предыдущих версий платформа .NET Framework, включение поддержки фокуса клавиатуры и сочетаний клавиш требует, `Switch.UseLegacyAccessibilityFeatures` `Switch.UseLegacyAccessibilityFeatures.2` `Switch.UseLegacyAccessibilityFeatures.3` чтобы для параметра, и было задано значение `false` .|.NET Framework 4.8|
 |`Switch.System.Xml.`<br />`IgnoreEmptyKeySequences`|Определяет, пропускаются ли пустые последовательности ключей в составных ключах при проверке схемы XSD. Дополнительные сведения см. в разделе [Устранение рисков. Проверка схемы XML](../../../migration-guide/mitigation-xml-schema-validation.md).|.NET Framework 4.6|
 
 > [!NOTE]
@@ -179,7 +180,7 @@ ms.locfileid: "91176153"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устранение рисков, связанных с новыми возможностями .NET Framework 4.6 и последующих версий](../../../migration-guide/mitigations.md)
 - <xref:System.AppContext?displayProperty=nameWithType>

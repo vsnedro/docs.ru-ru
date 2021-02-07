@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <bypassTrustedAppStrongNames> element'
 title: Элемент <bypassTrustedAppStrongNames>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - strong-named assemblies, loading into trusted application domains
 - <bypassTrustedAppStrongNames> element
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
-ms.openlocfilehash: 96361a6742d1d2f76cb237344189d3277d7c8069
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d23b9efa19481027480f2a1c7dab22bc97a05e13
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73739095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719166"
 ---
 # <a name="bypasstrustedappstrongnames-element"></a>Элемент \<bypassTrustedAppStrongNames>
 
@@ -57,7 +58,7 @@ ms.locfileid: "73739095"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Функция пропуска строгих имен позволяет избежать дополнительных затрат на проверку подписи строгого имени сборок с полным доверием.
 
@@ -72,7 +73,7 @@ ms.locfileid: "73739095"
 - Подпись осуществлена без задержки.
 
 > [!NOTE]
-> Если функция обхода отключена для всех приложений на компьютере с помощью раздела реестра, этот параметр файла конфигурации не действует. Дополнительные сведения см. в разделе [инструкции. Отключение функции обхода строгих имен](../../../../standard/assembly/disable-strong-name-bypass-feature.md).
+> Если функция обхода отключена для всех приложений на компьютере с помощью раздела реестра, этот параметр файла конфигурации не действует. Дополнительные сведения см. в разделе [как отключить функцию обхода Strong-Name](../../../../standard/assembly/disable-strong-name-bypass-feature.md).
 
 ## <a name="example"></a>Пример
 

@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: пример установки с массовым копированием'
 title: Установка примера массового копирования
 ms.date: 03/30/2017
 ms.assetid: d4dde6ac-b8b6-4593-965a-635c8fb2dadb
-ms.openlocfilehash: 562d36e0aee72fcc0619ec4ed7362622ba652337
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ae05dfa5f1ab19a3021b2b79ecd2bbee6a3ecae1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718555"
 ---
 # <a name="bulk-copy-example-setup"></a>Установка примера массового копирования
 
 Класс <xref:System.Data.SqlClient.SqlBulkCopy> можно использовать для записи данных только в таблицы SQL Server. В примерах кода в этом разделе используется образец базы данных SQL Server **AdventureWorks**. Чтобы не допустить изменения существующих таблиц, примеры кода записывают данные в таблицы, которые сначала необходимо создать.  
   
- Таблицы **BulkCopyDemoMatchingColumns** и **BulkCopyDemoDifferentColumns** основаны на таблице **AdventureWorks** **Production.Products**. В примерах кода, использующих эти таблицы, данные добавляются из таблицы **Production. Products** в одну из этих образцов таблиц. Таблица **булккопидемодифферентколумнс** используется, когда в образце показано, как сопоставлять столбцы из исходных данных с целевой таблицей. **Булккопидемоматчингколумнс** используется для большинства других примеров.  
+ Таблицы **BulkCopyDemoMatchingColumns** и **BulkCopyDemoDifferentColumns** основаны на таблице **AdventureWorks** **Production.Products**. В примерах кода, использующих эти таблицы, данные из таблицы **Production.Products** добавляются к одной из этих таблиц-образцов. Таблица **BulkCopyDemoDifferentColumns** используется для демонстрации сопоставления столбцов из источника данных с целевой таблицей. Таблица **BulkCopyDemoMatchingColumns** используется в большинстве других примеров.  
   
- Некоторые примеры кода демонстрируют использование одного класса <xref:System.Data.SqlClient.SqlBulkCopy> для записи в несколько таблиц. В этих примерах таблицы **BulkCopyDemoOrderHeader** и **BulkCopyDemoOrderDetail** используются в качестве целевых таблиц. Эти таблицы основаны на таблицах **Sales. SalesOrderHeader** и **Sales. SalesOrderDetail** в **AdventureWorks**.  
+ Некоторые примеры кода демонстрируют использование одного класса <xref:System.Data.SqlClient.SqlBulkCopy> для записи в несколько таблиц. В этих примерах в качестве целевых таблиц применяются **BulkCopyDemoOrderHeader** и **BulkCopyDemoOrderDetail**. Эти таблицы основаны на таблицах **Sales.SalesOrderHeader** и **Sales.SalesOrderDetail** из базы данных **AdventureWorks**.  
   
 > [!NOTE]
 > Образцы кода **SqlBulkCopy** предоставляются только для демонстрации синтаксиса применения **SqlBulkCopy**. Если исходная и целевая таблицы расположены в одном экземпляре SQL Server, будет проще и быстрее использовать инструкцию Transact-SQL `INSERT … SELECT` для копирования данных.  
@@ -83,7 +84,7 @@ CREATE TABLE [dbo].[BulkCopyDemoOrderDetail]([SalesOrderID] [int] NOT NULL,
 ) ON [PRIMARY]) ON [PRIMARY]  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Операции массового копирования в SQL Server](bulk-copy-operations-in-sql-server.md)
+- [Операции с массовым копированием в SQL Server](bulk-copy-operations-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

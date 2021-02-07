@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <alwaysFlowImpersonationPolicy> element'
 title: Элемент <alwaysFlowImpersonationPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - alwaysFlowImpersonationPolicy element
 - <alwaysFlowImpersonationPolicy> element
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-ms.openlocfilehash: 9316f026a807b6ad36014157061f67bdbd7d3d18
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5ee8e763eddb810143522ce9e6df780ee77c26c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719374"
 ---
 # <a name="alwaysflowimpersonationpolicy-element"></a>Элемент \<alwaysFlowImpersonationPolicy>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91149443"
   
 ## <a name="remarks"></a>Remarks  
 
- В .NET Framework версиях 1,0 и 1,1 идентификатор Windows не проходит через асинхронные точки. В .NET Framework версии 2,0 имеется <xref:System.Threading.ExecutionContext> объект, который содержит сведения о выполняемом в данный момент потоке и передает его между асинхронными точками в домене приложения. Также передается <xref:System.Security.Principal.WindowsIdentity> как часть информации, которая проходит через асинхронные точки, при условии, что олицетворение достигается с помощью управляемых методов, таких как <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> , а не с помощью других средств, таких как вызов неуправляемого кода в машинные методы. Этот элемент позволяет указать, что удостоверение Windows выполняет потоковую передачу через асинхронные точки независимо от того, как было достигнуто олицетворение.  
+ В платформа .NET Framework версиях 1,0 и 1,1 идентификатор Windows не проходит через асинхронные точки. В платформа .NET Framework версии 2,0 имеется <xref:System.Threading.ExecutionContext> объект, который содержит сведения о выполняемом в данный момент потоке и передает его между асинхронными точками в домене приложения. Также передается <xref:System.Security.Principal.WindowsIdentity> как часть информации, которая проходит через асинхронные точки, при условии, что олицетворение достигается с помощью управляемых методов, таких как <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> , а не с помощью других средств, таких как вызов неуправляемого кода в машинные методы. Этот элемент позволяет указать, что удостоверение Windows выполняет потоковую передачу через асинхронные точки независимо от того, как было достигнуто олицетворение.  
   
  Это поведение по умолчанию можно изменить двумя способами.  
   
@@ -74,7 +75,7 @@ ms.locfileid: "91149443"
   
 ## <a name="configuration-file"></a>Файл конфигурации  
 
- В приложении .NET Framework этот элемент можно использовать только в файле конфигурации приложения.  
+ В приложении платформа .NET Framework этот элемент можно использовать только в файле конфигурации приложения.  
   
  Для приложения ASP.NET поток олицетворения можно настроить в файле aspnet.config, который находится в \<Windows Folder> каталоге \микрософт.нет\фрамеворк\вкс.КС.кскскскс.  
   
@@ -112,7 +113,7 @@ ms.locfileid: "91149443"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

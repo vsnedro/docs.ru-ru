@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <appDomainManagerAssembly> element'
 title: Элемент <appDomainManagerAssembly>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <appDomainManagerAssembly> element
 - appDomainManagerAssembly element
 ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
-ms.openlocfilehash: 1716b11106775bed2c0d6ccb62e8d5b032b6e8be
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fcd461a8c8727679df3974028ddbc4b689c73e5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719309"
 ---
 # <a name="appdomainmanagerassembly-element"></a>Элемент \<appDomainManagerAssembly>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91176140"
   
  Сведения о формате отображаемого имени сборки см. в описании <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> Свойства.  
   
- Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
+ Этот элемент конфигурации доступен только в платформа .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
 

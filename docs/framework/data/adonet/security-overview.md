@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: Общие сведения о безопасности'
 title: Общие сведения о безопасности
 ms.date: 03/30/2017
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
-ms.openlocfilehash: ede9b24828da74c043bed103595073c4607c51f2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3aa6e5cbe444e9cfc417d79defce7e89a2034f71
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91188997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718828"
 ---
 # <a name="security-overview"></a>Общие сведения о безопасности
 
@@ -108,7 +109,7 @@ ms.locfileid: "91188997"
 |[Управление политиками безопасности](/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))|Содержит сведения о создании и реализации политики безопасности.|
 |[Рекомендации по политике безопасности](/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Предоставляет ссылки на описание реализации политики безопасности.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](securing-ado-net-applications.md)
 - [Безопасность в .NET](../../../standard/security/index.md)

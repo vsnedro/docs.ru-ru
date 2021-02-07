@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: ASP.NET приложения с помощью дескрипторов ожидания'
 title: Приложения ASP.NET, использующие дескрипторы ожидания
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f588597a-49de-4206-8463-4ef377e112ff
-ms.openlocfilehash: b590b504d1d497e35612b9d7ea047fe12c43c386
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5f1f9475a041aa3cc2b3f31a8a77ce54b4e0e1e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718646"
 ---
 # <a name="aspnet-applications-using-wait-handles"></a>Приложения ASP.NET, использующие дескрипторы ожидания
 
@@ -582,7 +583,7 @@ void Button1_Click(object sender, System.EventArgs e)
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Асинхронные операции](asynchronous-operations.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

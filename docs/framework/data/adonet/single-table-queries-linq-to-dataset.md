@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: запросы Single-Table (LINQ to DataSet)'
 title: Запросы к одной таблице (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
-ms.openlocfilehash: 17a2fcf54cae64d9443b0cc0e8a37e1002bbd394
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a4b6ce2a60eeafc9221d838d1b86c9964774df60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718763"
 ---
 # <a name="single-table-queries-linq-to-dataset"></a>Запросы к одной таблице (LINQ to DataSet)
 
-Запросы LINQ работают с источниками данных, которые реализуют <xref:System.Collections.Generic.IEnumerable%601> интерфейс или <xref:System.Linq.IQueryable%601> интерфейс. <xref:System.Data.DataTable>Класс не реализует ни один из интерфейсов, поэтому необходимо вызвать <xref:System.Data.DataTableExtensions.AsEnumerable%2A> метод, если вы хотите использовать в <xref:System.Data.DataTable> качестве источника в `From` предложении запроса LINQ.  
+Запросы Language-Integrated запросов (LINQ) работают с источниками данных, которые реализуют <xref:System.Collections.Generic.IEnumerable%601> интерфейс или <xref:System.Linq.IQueryable%601> интерфейс. <xref:System.Data.DataTable>Класс не реализует ни один из интерфейсов, поэтому необходимо вызвать <xref:System.Data.DataTableExtensions.AsEnumerable%2A> метод, если вы хотите использовать в <xref:System.Data.DataTable> качестве источника в `From` предложении запроса LINQ.  
   
  В следующем примере получаются все активные заказы из таблицы SalesOrderHeader и выводится на консоль идентификатор, дата и номер заказа.  
   
@@ -31,7 +32,7 @@ ms.locfileid: "91175360"
   
  Обратите внимание, что тип данных, определяемый в универсальном параметре `T` методов <xref:System.Data.DataRowExtensions.Field%2A> и <xref:System.Data.DataRowExtensions.SetField%2A>, должен соответствовать типу базового значения, иначе сформируется исключение <xref:System.InvalidCastException>. Указанное имя столбца должно совпадать с именем столбца в <xref:System.Data.DataSet>, иначе это вызовет исключение <xref:System.ArgumentException>. В обоих случаях исключении возникает при перечислении данных во время выполнения в момент выполнения запроса.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы между таблицами](cross-table-queries-linq-to-dataset.md)
 - [Запрос к типизированным объектам DataSet](querying-typed-datasets.md)
