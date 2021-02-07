@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: Протоколстопфаилуре'
 title: ProtocolStopFailure
 ms.date: 03/30/2017
 ms.assetid: 8b246f8f-eb0f-430b-a82b-3d55aad287a1
-ms.openlocfilehash: 3bcdb2b8f048a768cc82f90de4bbd14b1f0b6a8c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: bc678813b86addd35caacff02683b173d3b45f7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736093"
 ---
 # <a name="protocolstopfailure"></a>ProtocolStopFailure
 

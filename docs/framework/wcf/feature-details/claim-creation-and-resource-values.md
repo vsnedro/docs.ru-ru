@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о создании утверждений и значениях ресурсов
 title: Создание утверждений и значения ресурсов
 ms.date: 03/30/2017
 helpviewer_keywords:
 - claims [WCF], creation and resource values
 ms.assetid: 30431f76-cbe7-4bad-bad7-8e43e23a82d4
-ms.openlocfilehash: c3f36d607d88b208753066dcbd4e9baa6a2590fa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 20763c683c5bf5734a21a4315576a8f9f354ff35
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96295136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734988"
 ---
 # <a name="claim-creation-and-resource-values"></a>Создание утверждений и значения ресурсов
 

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о том, как создать службу рабочего процесса с помощью действий обмена сообщениями.
 title: Практическое руководство. Как создать службу рабочего процесса с помощью действий обмена сообщениями
 ms.date: 03/30/2017
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b
-ms.openlocfilehash: 21d08d9c3c78cc8774d038018703ffb0c7ceb1fe
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c8f01574c2880e3a75a4db8edea949648d49426c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96286322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734546"
 ---
 # <a name="how-to-create-a-workflow-service-with-messaging-activities"></a>Практическое руководство. Как создать службу рабочего процесса с помощью действий обмена сообщениями
 

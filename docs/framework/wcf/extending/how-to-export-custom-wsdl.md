@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как экспортировать пользовательский язык WSDL.
 title: Практическое руководство. Экспорт пользовательской информации WSDL
 ms.date: 03/30/2017
 ms.assetid: 5c1e4b58-b76b-472b-9635-2f80d42a0734
-ms.openlocfilehash: 723121798fee3a3c0b49a7f15995bb26444836e8
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 3893e02807bce3db66e469abd5dc38808f530f01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797003"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735027"
 ---
 # <a name="how-to-export-custom-wsdl"></a>Практическое руководство. Экспорт пользовательской информации WSDL
 

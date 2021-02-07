@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как создать WSFederationHttpBinding.
 title: Практическое руководство. Создание WSFederationHttpBinding
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: e54897d7-aa6c-46ec-a278-b2430c8c2e10
-ms.openlocfilehash: ccc28c46e8be0b835cf08d372ef85b8a66e989ef
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f0b40cf074d5c3f2575c5a94baa2fdd4271f280f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734403"
 ---
 # <a name="how-to-create-a-wsfederationhttpbinding"></a>Практическое руководство. Создание WSFederationHttpBinding
 
@@ -24,7 +25,7 @@ ms.locfileid: "84595444"
 1. Выберите режим безопасности. Привязка <xref:System.ServiceModel.WSFederationHttpBinding> поддерживает режим `Message`, обеспечивающий сквозную защиту на уровне сообщений даже при нескольких переходах, а также режим `TransportWithMessageCredential`, который повышает производительность в случаях, когда клиент и служба могут напрямую подключаться друг к другу с помощью протокола HTTPS.
 
     > [!NOTE]
-    > Кроме того, привязка <xref:System.ServiceModel.WSFederationHttpBinding> поддерживает режим безопасности `None`. Этот режим небезопасен и поддерживается только в целях отладки. Если конечная точка службы развертывается с параметром <xref:System.ServiceModel.WSFederationHttpBinding> со значением режима безопасности `None` , то результирующая привязка клиента (созданная [средством служебной программы метаданных ServiceModel (Svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)) будет иметь <xref:System.ServiceModel.WSHttpBinding> режим безопасности `None` .
+    > Кроме того, привязка <xref:System.ServiceModel.WSFederationHttpBinding> поддерживает режим безопасности `None`. Этот режим небезопасен и поддерживается только в целях отладки. Если конечная точка службы развертывается с параметром <xref:System.ServiceModel.WSFederationHttpBinding> со значением режима безопасности `None` , то результирующая привязка клиента (созданная [средством служебной программы метаданных ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)) будет иметь <xref:System.ServiceModel.WSHttpBinding> режим безопасности `None` .
 
      В отличие от других предоставляемых системой привязок, при использовании привязки `WSFederationHttpBinding` нет необходимости выбирать тип учетных данных клиента. Это связано с тем, что типом учетных данных клиента всегда является выданный токен. WCF получает маркер от указанного издателя и представляет этот токен службе для проверки подлинности клиента.
 
@@ -106,7 +107,7 @@ ms.locfileid: "84595444"
 [!code-csharp[c_FederationBinding#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_federationbinding/cs/source.cs#2)]
 [!code-vb[c_FederationBinding#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_federationbinding/vb/source.vb#2)]
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Федерация](federation.md)
 - [Пример федерации](../samples/federation-sample.md)

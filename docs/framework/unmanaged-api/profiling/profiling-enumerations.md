@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Профилирование перечислений'
 title: Перечисления профилирования
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - enumerations [.NET Framework profiling]
 - unmanaged enumerations [.NET Framework], profiling
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
-ms.openlocfilehash: 8956a09cf76aa54452e8c020239e650e55d8a0d1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f202e70dd27654dd39740851549477d4a6bf77a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736756"
 ---
 # <a name="profiling-enumerations"></a>Перечисления профилирования
 
 В этом разделе описываются неуправляемые перечисления, которые использует API профилирования.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Перечисление COR_PRF_CLAUSE_TYPE](cor-prf-clause-type-enumeration.md)  
  Указывает тип предложения исключения, код которого был только что введен или удален.  
@@ -70,7 +71,7 @@ ms.locfileid: "95701618"
  [Перечисление COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md)  
  Указывает причину перехода из управляемого в неуправляемый код или наоборот.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Общие сведения о профилировании](profiling-overview.md)  
   

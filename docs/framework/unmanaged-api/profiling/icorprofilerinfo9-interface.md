@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerInfo9'
 title: Интерфейс ICorProfilerInfo9
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 3d1cdfa56e6bb20f08370aa76b87d516f7b51cda
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 954cb16d2b789359693f6a8fa3e0f6e19ad19b3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736912"
 ---
 # <a name="icorprofilerinfo9-interface"></a>Интерфейс ICorProfilerInfo9
 
@@ -28,6 +29,6 @@ ms.locfileid: "95732961"
 **Заголовок:** CorProf.idl, CorProf.h  
 **Версии .NET:**[!INCLUDE[net_core](../../../../includes/net-core-22-md.md)]  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)

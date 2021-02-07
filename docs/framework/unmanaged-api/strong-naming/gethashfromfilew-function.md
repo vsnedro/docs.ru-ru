@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetHashFromFileW
 title: Функция GetHashFromFileW
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
 topic_type:
 - apiref
-ms.openlocfilehash: 8038d0abc93e058e6bde897bbf2261d8f1df885a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: daebd06de02dfe936f1bdeb8697de4fe6524dce3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736571"
 ---
 # <a name="gethashfromfilew-function"></a>Функция GetHashFromFileW
 
@@ -56,7 +57,7 @@ HRESULT GetHashFromFileW (
  `pchHash`  
  заполняет Размер (в байтах) `pbHash` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Эта функция аналогична [GetHashFromFile](gethashfromfile-function.md), за исключением того, что спецификация имени файла имеет кодировку Unicode, а не ANSI.  
   
@@ -68,9 +69,9 @@ HRESULT GetHashFromFileW (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetHashFromFileW](../hosting/iclrstrongname-gethashfromfilew-method.md)
 - [Метод GetHashFromFile](../hosting/iclrstrongname-gethashfromfile-method.md)

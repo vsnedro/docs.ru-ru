@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: пользовательские привязки'
 title: Пользовательские привязки
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Windows Communication Foundation, endpoints
 - Windows Communication Foundation, configuration
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
-ms.openlocfilehash: 062aba26227fedeea3e5f462ebf5d55cf0cba56c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ced0f9ada7238b43216a246d75dd391aa6eb3f2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735352"
 ---
 # <a name="custom-bindings"></a>Пользовательские привязки
 
@@ -66,9 +67,9 @@ ms.locfileid: "90540001"
 
 |Уровень|Параметры|Обязательно|
 |-----------|-------------|--------------|
-|Transactions|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|нет|
-|надежность;|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|нет|
-|Безопасность|<xref:System.ServiceModel.Channels.SecurityBindingElement>|нет|
+|Transactions|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|Нет|
+|Надежность|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|Нет|
+|Безопасность|<xref:System.ServiceModel.Channels.SecurityBindingElement>|Нет|
 |Кодирование|Текст, двоичное, механизм оптимизации передачи сообщений (MTOM), пользовательское|Да|
 |Транспорт|TCP, HTTP, HTTPS, именованные каналы (также называются IPC), одноранговый (P2P), очередь сообщений (также называется MSMQ), пользовательский|Да|
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetHashFromAssemblyFileW
 title: Функция GetHashFromAssemblyFileW
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d1b2b172-5353-42af-a877-cf653c68ece0
 topic_type:
 - apiref
-ms.openlocfilehash: b895c77850c0457fd2a152c1128c016093599f76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7f44106f12a2d21ea67acb874b577c5b303632b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736678"
 ---
 # <a name="gethashfromassemblyfilew-function"></a>Функция GetHashFromAssemblyFileW
 
@@ -64,9 +65,9 @@ HRESULT GetHashFromAssemblyFileW (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetHashFromAssemblyFileW](../hosting/iclrstrongname-gethashfromassemblyfilew-method.md)
 - [Метод GetHashFromAssemblyFile](../hosting/iclrstrongname-gethashfromassemblyfile-method.md)

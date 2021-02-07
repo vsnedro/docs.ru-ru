@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetHashFromBlob
 title: Функция GetHashFromBlob
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982
 topic_type:
 - apiref
-ms.openlocfilehash: d1027aea1d800bda1654b223fec992aa70efd4b7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: dc5039e44440afa7a000bc61167faec0e5b6cc84
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73140712"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736613"
 ---
 # <a name="gethashfromblob-function"></a>Функция GetHashFromBlob
 
@@ -55,10 +56,10 @@ HRESULT GetHashFromBlob (
 заполняет Возвращаемый буфер хэша.
 
 `cchHash`\
-окне Запрошенный максимальный размер `pbHash`.
+окне Запрошенный максимальный размер `pbHash` .
 
 `pchHash`\
-заполняет Размер возвращаемого `pbHash`в байтах.
+заполняет Размер возвращаемого объекта (в байтах) `pbHash` .
 
 ## <a name="requirements"></a>Требования
 
@@ -66,9 +67,9 @@ HRESULT GetHashFromBlob (
 
 **Заголовок:** StrongName. h
 
-**Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll
+**Библиотека:** Включается в качестве ресурса в MsCorEE.dll
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

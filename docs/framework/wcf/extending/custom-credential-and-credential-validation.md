@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: пользовательские учетные данные и проверка учетных данных'
 title: Пользовательские учетные данные и проверка учетных данных
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - credential validation [WCF]
 - credentials [WCF], validation
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
-ms.openlocfilehash: 5f2909bb088a5f3d3203fe3c9e24b2df3450aa3f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f1ceb8cf46cca01ac31faeb9485cbeb6c8663d31
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735313"
 ---
 # <a name="custom-credential-and-credential-validation"></a>Пользовательские учетные данные и проверка учетных данных
 
 Безопасность в Windows Communication Foundation (WCF) основана на обмене учетными данными между службами и клиентами. Большинство сценариев обеспечения безопасности можно реализовать с использованием стандартных типов учетных данных, например Windows (Kerberos), имен пользователей и паролей, а также сертификатов. Если требуются учетные данные новых типов, в приведенных ниже разделах можно найти сведения о том, как обрабатывать и проверять эти типы.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Создание службы, использующей пользовательский проверяющий элемент управления для сертификатов](how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
  Объясняется, как настроить проверку WCF путем наследования от <xref:System.IdentityModel.Selectors.X509CertificateValidator> класса.  

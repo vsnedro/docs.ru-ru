@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameCompareAssemblies
 title: Функция StrongNameCompareAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 763f2375-efc6-4219-8806-a3b0567ef72b
 topic_type:
 - apiref
-ms.openlocfilehash: e7292635ea0344f1c77c8d44908a9a811e464ff9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e59bb96a89dc1e1cf8b809c3e0d538aaffe83b8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736551"
 ---
 # <a name="strongnamecompareassemblies-function"></a>Функция StrongNameCompareAssemblies
 
@@ -66,15 +67,15 @@ BOOLEAN StrongNameCompareAssemblies (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Подпись строгого имени сборки состоит из текстового имени, версии, языка и региональных параметров сборки, а также токена открытого ключа.  
   
  Если `StrongNameCompareAssemblies` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameCompareAssemblies](../hosting/iclrstrongname-strongnamecompareassemblies-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

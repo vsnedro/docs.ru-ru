@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Публиккэйблоб'
 title: Структура PublicKeyBlob
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type:
 - apiref
-ms.openlocfilehash: 42cd3cc22fbbb8eb3d5ac44544fce36650b6461f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94c1ea3d5a41bbb8941658e87f97cd6d6336187a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736494"
 ---
 # <a name="publickeyblob-structure"></a>Структура PublicKeyBlob
 
@@ -45,7 +46,7 @@ typedef struct {
 |`cbPublicKey`|Длина ключа в байтах.|  
 |`PublicKey`|Массив байтов переменной длины, который содержит значение ключа в формате, возвращенном CryptoAPI.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `PublicKeyBlob`Структура используется [StrongNameGetPublicKey](strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md)и другими функциями строгого имени для представления открытого ключа пары открытого и закрытого ключей.  
   
@@ -57,9 +58,9 @@ typedef struct {
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция StrongNameGetPublicKey](strongnamegetpublickey-function.md)
 - [Функция StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икорпрофилерсреаденум:: Skip'
 title: Метод ICorProfilerThreadEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
 topic_type:
 - apiref
-ms.openlocfilehash: 12b7b53c408388c21d7508f6591ead5ccf55936b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1da191980364868ed4237fccaf7495d5417705cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736899"
 ---
 # <a name="icorprofilerthreadenumskip-method"></a>Метод ICorProfilerThreadEnum::Skip
 
@@ -47,7 +48,7 @@ HRESULT Skip (    [in] ULONG celt
 |S_OK|`celt` элементы пропущены.|  
 |S_FALSE|`celt`Пропущено меньше элементов, что означает, что больше нет элементов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Новая позиции курсора перечислителя — (Текущая позиции) + `celt` .  
   
@@ -59,9 +60,9 @@ HRESULT Skip (    [in] ULONG celt
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)
