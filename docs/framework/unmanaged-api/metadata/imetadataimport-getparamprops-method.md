@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: GetParamProps'
 title: Метод IMetaDataImport::GetParamProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type:
 - apiref
-ms.openlocfilehash: a16621f4c9b06f049239dc4e2335d70a167dd756
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2c48215836dfb3ae44edc9a2bf10d4028fd82bb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728123"
 ---
 # <a name="imetadataimportgetparamprops-method"></a>Метод IMetaDataImport::GetParamProps
 
@@ -75,7 +76,7 @@ HRESULT GetParamProps (
  `pcchValue`  
  заполняет Размер `ppValue` в расширенных символах или нуль, если не содержит `ppValue` строку.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Значения последовательности в `pulSequence` аргументе начинаются с 1 для параметров. Возвращаемое значение имеет порядковый номер 0.
 
@@ -87,9 +88,9 @@ HRESULT GetParamProps (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

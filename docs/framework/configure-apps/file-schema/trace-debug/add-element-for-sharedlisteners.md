@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <add> Element для <sharedListeners>'
 title: Элемент <add> для <sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <add> element for <sharedListeners>
 - add element for <sharedListeners>
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-ms.openlocfilehash: f0ede5f9dc19e9589afc888e7fcd01785bc1840c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df3348fa0cbb357b2ceeb5d9db940a1ae3ae102c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726082"
 ---
 # <a name="add-element-for-sharedlisteners"></a>Элемент \<add> для \<sharedListeners>
 
@@ -63,12 +64,12 @@ ms.locfileid: "91174034"
   
 ## <a name="remarks"></a>Remarks  
 
- Классы прослушивателей, поставляемые с .NET Framework, являются производными от <xref:System.Diagnostics.TraceListener> класса. Значение `name` атрибута используется для добавления общего прослушивателя в `Listeners` коллекцию либо для трассировки, либо для источника трассировки. Значение `initializeData` атрибута зависит от типа создаваемого прослушивателя. Не все прослушиватели трассировки нуждаются в указании `initializeData` .  
+ Классы прослушивателей, поставляемые с платформа .NET Framework, являются производными от <xref:System.Diagnostics.TraceListener> класса. Значение `name` атрибута используется для добавления общего прослушивателя в `Listeners` коллекцию либо для трассировки, либо для источника трассировки. Значение `initializeData` атрибута зависит от типа создаваемого прослушивателя. Не все прослушиватели трассировки нуждаются в указании `initializeData` .  
   
 > [!NOTE]
 > При использовании `initializeData` атрибута может появиться предупреждение компилятора "атрибут initializeData не объявлен". Это предупреждение возникает из-за того, что параметры конфигурации проверяются по абстрактному базовому классу <xref:System.Diagnostics.TraceListener> , который не распознает `initializeData` атрибут. Как правило, это предупреждение можно игнорировать для реализаций прослушивателя трассировки, имеющих конструктор, принимающий параметр.  
   
- В следующей таблице показаны прослушиватели трассировки, которые включены в состав .NET Framework и описываются значения их `initializeData` атрибутов.  
+ В следующей таблице показаны прослушиватели трассировки, которые включены в состав платформа .NET Framework и описываются значения их `initializeData` атрибутов.  
   
 |Класс прослушивателя трассировки|значение атрибута initializeData|  
 |--------------------------|------------------------------------|  
@@ -113,7 +114,7 @@ ms.locfileid: "91174034"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>

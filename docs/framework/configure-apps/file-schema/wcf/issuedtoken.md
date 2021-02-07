@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <issuedToken>'
 title: <issuedToken>
 ms.date: 03/30/2017
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
-ms.openlocfilehash: 9f3feb11fbe45cbb4b952c70feaa99f9c481dd2b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa7486a621d5a6e6900f67300792e29ce2538257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157373"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725692"
 ---
 # \<issuedToken>
 
@@ -41,7 +42,7 @@ ms.locfileid: "91157373"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`cacheIssuedTokens`|Дополнительный логический атрибут, указывающий, выполняется ли кэширование маркеров. Значение по умолчанию — `true`.|  
+|`cacheIssuedTokens`|Дополнительный логический атрибут, указывающий, выполняется ли кэширование маркеров. Значение по умолчанию — `true`.|  
 |`defaultKeyEntropyMode`|Дополнительный строковый атрибут, указывающий, какие случайные значения (показатели энтропии) используются для операций «рукопожатия». Допустимы следующие значения: `ClientEntropy`, `ServerEntropy` и `CombinedEntropy`. Значение по умолчанию - `CombinedEntropy`. Это атрибут типа <xref:System.ServiceModel.Security.SecurityKeyEntropyMode>.|  
 |`issuedTokenRenewalThresholdPercentage`|Дополнительный целочисленный атрибут, задающий время в процентах от срока действия (предоставляемого издателем маркера), которое может пройти до обновления маркера. Диапазон значений: 0–100. Значение по умолчанию, равное 60, указывает, что попытка возобновления предпринимается по истечении 60% времени.|  
 |`issuerChannelBehaviors`|Дополнительный атрибут, определяющий поведения канала во время связи с издателем.|  
@@ -67,7 +68,7 @@ ms.locfileid: "91157373"
   
  Этот раздел содержит элементы, используемые для настройки локального издателя маркеров, или поведения, используемые при работе со службой маркеров безопасности. Инструкции по настройке клиента для использования локального издателя см. [в разделе как настроить локальный издатель](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>

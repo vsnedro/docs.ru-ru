@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: схема параметров времени выполнения'
 title: Схема параметров среды выполнения
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - configuration schema [.NET Framework], runtime settings
 - runtime settings schema
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
-ms.openlocfilehash: 1797afe3e6347da1aef916d13be7678b7b8d4acf
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: ee9c209866eb8c505130327d78a18482f5a282e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726134"
 ---
 # <a name="run-time-settings-schema"></a>Схема параметров среды выполнения
 
-Параметры времени выполнения используются средой CLR для настройки приложений, предназначенных для .NET Framework.
+Параметры времени выполнения используются средой CLR для настройки приложений, предназначенных для платформа .NET Framework.
 
 ## <a name="the-runtime-section-and-its-parent-and-child-elements"></a>\<runtime>Раздел и его родительские и дочерние элементы
 
@@ -95,7 +96,7 @@ ms.locfileid: "89495177"
 |[\<CompatSortNLSVersion>](compatsortnlsversion-element.md)|Указывает, что при операциях сравнения строк среда выполнения должна использовать устаревший режим сортировки.|
 |[\<dependentAssembly>](dependentassembly-element.md)|Инкапсулирует политику привязки и расположение каждой сборки.|
 |[\<developmentMode>](developmentmode-element.md)|Указывает, выполняет ли среда поиск сборок в каталогах, указанных в переменной среды DEVPATH.|
-|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Указывает, отключено ли кэширование ошибок привязки, что является поведением по умолчанию в .NET Framework 2,0.|
+|[\<disableCachingBindingFailures>](disablecachingbindingfailures-element.md)|Указывает, отключено ли кэширование ошибок привязки, что является поведением по умолчанию в платформа .NET Framework 2,0.|
 |[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)|Указывает, фиксируется ли весь стек потоков при запуске потока.|
 |[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)|Указывает, отключено ли поведение по умолчанию, которое разрешает хост-приложению среды выполнения переопределять параметры конфигурации для домена приложения.|
 |[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)|Определяет, используют ли методы анализа даты и времени скорректированной набор правил для анализа строк даты, содержащих только день, месяц, час и указатель AM/PM.|
@@ -126,7 +127,7 @@ ms.locfileid: "89495177"
 |[\<relativeBindForResources>](relativebindforresources-element.md)|Оптимизирует поиск вспомогательных сборок.|
 |[\<remove>](remove-element-for-namedcaches.md)|Удаляет элемент именованного кэша из коллекции `namedCaches` для кэша памяти.|
 |[\<runtime>](runtime-element.md)|Содержит сведения о привязке сборок и поведении при сборке мусора.|
-|[\<shadowCopyTimeStampVerification>](shadowcopyverifybytimestamp-element.md)|Указывает, использует ли теневое копирование поведение при запуске по умолчанию, представленное в .NET Framework 4, или возвращается к поведению при запуске более ранних версий .NET Framework.|
+|[\<shadowCopyTimeStampVerification>](shadowcopyverifybytimestamp-element.md)|Указывает, использует ли теневое копирование поведение при запуске по умолчанию, представленное в платформа .NET Framework 4, или возвращается к поведению при запуске более ранних версий платформа .NET Framework.|
 |[\<supportPortability>](supportportability-element.md)|Указывает, что приложение может ссылаться на ту же сборку в двух различных реализациях .NET Framework, отключая поведение по умолчанию, которое рассматривает сборки как эквивалент для переносимости приложения.|
 |[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Указывает сведения о конфигурации кэша объектов в памяти, используемого по умолчанию.|
 |[\<Thread_UseAllCpuGroups>](thread-useallcpugroups-element.md)|Указывает, распределяет ли среда выполнения управляемые потоки во всех группах ЦП.|

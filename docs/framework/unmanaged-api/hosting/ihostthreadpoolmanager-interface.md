@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IHostThreadPoolManager'
 title: Интерфейс IHostThreadPoolManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type:
 - apiref
-ms.openlocfilehash: b6625b0ef4dc3de4067514a0b39849c7a958d5c4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0361b7a08f781a8748e43959f65ce0e9f21bbac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728423"
 ---
 # <a name="ihostthreadpoolmanager-interface"></a>Интерфейс IHostThreadPoolManager
 
@@ -36,7 +37,7 @@ ms.locfileid: "95730764"
 |[Метод SetMaxThreads](ihostthreadpoolmanager-setmaxthreads-method.md)|Задает максимальное число потоков, которые узел может поддерживать в пуле потоков.|  
 |[Метод SetMinThreads](ihostthreadpoolmanager-setminthreads-method.md)|Задает минимальное число бездействующих потоков, которые должны поддерживаться узлом в ожидаемых запросах.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел не требуется для настройки пула потоков с использованием значений, указанных в вызовах `SetMaxThreads` `SetMinThreads` методов и. В этом случае узел должен вернуть значение HRESULT E_NOTIMPL из этих методов.  
   
@@ -48,9 +49,9 @@ ms.locfileid: "95730764"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading>
 - <xref:System.Threading.ThreadPool>

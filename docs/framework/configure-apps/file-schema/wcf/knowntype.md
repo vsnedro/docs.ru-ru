@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <knownType>'
 title: <knownType>
 ms.date: 03/30/2017
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
-ms.openlocfilehash: 6bb6a419d863172951d82a67de044cb8cfc30f49
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 205f799c81263be3dd08aae9efefb975b06a0cc7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725510"
 ---
 # \<knownType>
 
@@ -29,7 +30,7 @@ ms.locfileid: "91183797"
 </knownType>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `string`  
   
@@ -74,7 +75,7 @@ ms.locfileid: "91183797"
 </add>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Известные типы контрактов данных](../../../wcf/feature-details/data-contract-known-types.md)

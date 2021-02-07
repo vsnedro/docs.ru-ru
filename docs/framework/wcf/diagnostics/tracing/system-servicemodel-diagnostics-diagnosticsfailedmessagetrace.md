@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: System. ServiceModel. Diagnostics. Диагностиксфаиледмессажетраце'
 title: System.ServiceModel.Diagnostics.DiagnosticsFailedMessageTrace
 ms.date: 03/30/2017
 ms.assetid: 8c1de25c-7e1e-4986-9c32-fc47a604f373
-ms.openlocfilehash: b6660fa8561226917689f9467359fd34f0bf38aa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ddc577f3fe448e7ffb78ac15ad152027037486fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727421"
 ---
 # <a name="systemservicemodeldiagnosticsdiagnosticsfailedmessagetrace"></a>System.ServiceModel.Diagnostics.DiagnosticsFailedMessageTrace
 

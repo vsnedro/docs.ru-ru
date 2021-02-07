@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <issuedTokenAuthentication> о: <serviceCredentials>'
 title: <issuedTokenAuthentication> из <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
-ms.openlocfilehash: 88657b6982108596c8d9030161390f76fcff6609
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 62c60cc467217312c349ecdbe8e98b04dd022ddf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725679"
 ---
 # <a name="issuedtokenauthentication-of-servicecredentials"></a>\<issuedTokenAuthentication> из \<serviceCredentials>
 
@@ -57,7 +58,7 @@ ms.locfileid: "91202478"
 |`certificateValidationMode`|Устанавливает режим проверки сертификата. Одно из допустимых значений для <xref:System.ServiceModel.Security.X509CertificateValidationMode>. Если свойству присвоено значение `Custom`, также необходимо указать свойство `customCertificateValidator`. Значение по умолчанию — `ChainTrust`.|  
 |`customCertificateValidatorType`|Необязательная строка. Тип и сборка, используемые для проверки пользовательского типа. Этот атрибут должен быть задан, когда `certificateValidationMode` имеет значение `Custom`.|  
 |`revocationMode`|Задает режим отзыва, который указывает, проводится ли проверка списка отозванных сертификатов; этот режим также определяет способ проверки: с подключением к сети или автономно. Это атрибут типа <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.|  
-|`samlSerializer`|Необязательный строковый атрибут, который задает тип SamlSerializer, который используется для учетных данных службы. Значением по умолчанию является пустая строка.|  
+|`samlSerializer`|Необязательный строковый атрибут, который задает тип SamlSerializer, который используется для учетных данных службы. Значение по умолчанию - пустая строка.|  
 |`trustedStoreLocation`|Необязательное перечисление. Одно из двух местоположений системного хранилища: `LocalMachine` или `CurrentUser`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -93,7 +94,7 @@ ms.locfileid: "91202478"
   
  Дополнительные сведения об использовании этого элемента конфигурации см. в разделе [как настроить учетные данные на служба федерации](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>

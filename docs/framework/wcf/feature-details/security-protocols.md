@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: протоколы безопасности'
 title: Протоколы безопасности
 ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], protocols
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
-ms.openlocfilehash: 1455aeeeb759f8eb2cc09c8649a5cbd6843d950a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 267724f852e2402054c11fbada3ef465db4b1ca2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726810"
 ---
 # <a name="security-protocols"></a>Протоколы безопасности
 
@@ -48,7 +49,7 @@ ms.locfileid: "96254016"
 |KerberosOverTransport|Windows|X509|Транспорт|  
 |IssuedTokenOverTransport|Федеративные|X509|Транспорт|  
 |SspiNegotiatedOverTransport|Согласование Windows Sspi|Согласование Windows Sspi|Транспорт|  
-|AnonymousForCertificate|Нет|X509|Сообщение|  
+|AnonymousForCertificate|None|X509|Сообщение|  
 |UserNameForCertificate|Имя пользователя/пароль|X509|Сообщение|  
 |MutualCertificate|X509|X509|Сообщение|  
 |MutualCertificateDuplex|X509|X509|Сообщение|  
@@ -56,7 +57,7 @@ ms.locfileid: "96254016"
 |Kerberos|Windows|Windows|Сообщение|  
 |IssuedToken|Федеративные|Федеративные|Сообщение|  
 |SspiNegotiation|Согласование Windows Sspi|Согласование Windows Sspi|Сообщение|  
-|AnonymousForSslNegotiated|Нет|X509, TLS-Nego|Сообщение|  
+|AnonymousForSslNegotiated|None|X509, TLS-Nego|Сообщение|  
 |UserNameForSslNegotiated|Имя пользователя/пароль|X509, TLS-Nego|Сообщение|  
 |MutualSslNegotiated|X509|X509, TLS-Nego|Сообщение|  
 |IssuedTokenForSslNegotiated|Федеративные|X509, TLS-Nego|Сообщение|  

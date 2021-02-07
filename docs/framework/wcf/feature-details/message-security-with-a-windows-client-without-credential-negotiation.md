@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье безопасность сообщений с помощью клиента Windows без согласования учетных данных.
 title: Безопасность сообщений с использованием клиента Windows без согласования учетных данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fc07a26c-cbee-41c5-8fb0-329085fef749
-ms.openlocfilehash: 3e5838c474a4f13136ed29baab440dc1559b95f5
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e9edd63c80d868024d8a4b664c42456bb454cb69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90551097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727018"
 ---
 # <a name="message-security-with-a-windows-client-without-credential-negotiation"></a>Безопасность сообщений с использованием клиента Windows без согласования учетных данных
 

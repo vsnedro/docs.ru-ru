@@ -1,15 +1,16 @@
 ---
-title: <activityStateQuery>WCF
+description: 'Дополнительные сведения о: <activityStateQuery> из WCF'
+title: <activityStateQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: d6cdc04b-6f3a-4097-a623-ee4a1be3b5c4
-ms.openlocfilehash: 49c507424e813067e1dad9b08167d9661acef36f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fff8f6ac793df9b0a355dfbed859b3a88178002a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70991216"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725926"
 ---
-# <a name="activitystatequery-of-wcf"></a>\<activityStateQuery>WCF
+# <a name="activitystatequery-of-wcf"></a>\<activityStateQuery> WCF
 
 Представляет запрос, используемый для трассировки изменений жизненного цикла действий, составляющих экземпляр рабочего процесса. Например, вы можете захотеть отследить каждый раз, когда действие "отправить электронное письмо" завершается в рамках экземпляра рабочего процесса. Этот запрос необходим, чтобы участник отслеживания мог подписываться на объекты записей состояния действия. Состояния, доступные для подписки, указаны в ActivtyStates.  
   
@@ -56,7 +57,7 @@ ms.locfileid: "70991216"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |activityName|Строка, указывающая имя действия, по которому будут фильтроваться экземпляры <xref:System.Activities.Tracking.ActivityStateRecord>.|  
   
@@ -74,7 +75,7 @@ ms.locfileid: "70991216"
 |-------------|-----------------|  
 |[\<faultPropagationQuery>](../windows-workflow-foundation/faultpropagationquery.md)|Представляет список элементов конфигурации, которые используются для отслеживания запросов на отмену дочернего действия родительским действием. Этот запрос необходим, чтобы участник отслеживания подписался на объекты записей запросов на отмену.|  
   
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Уникальной возможностью ActivityStateQuery является возможность извлекать данные во время отслеживания выполнения рабочего процесса. Это обеспечивает дополнительный контекст при доступе к записям отслеживания после выполнения. Можно использовать [\<arguments>](../windows-workflow-foundation/arguments.md) [\<states>](../windows-workflow-foundation/states.md) элементы, и [\<states>](../windows-workflow-foundation/states.md) для извлечения любой переменной или аргумента из любого действия в рабочем процессе. В следующем примере показан запрос состояния действия, который извлекает переменные и аргументы при создании записи отслеживания действия `Closed`. Переменные и аргументы могут извлекаться только с помощью Активитистатерекорд, поэтому они подписываются в профиле отслеживания с помощью [\<activityStateQuery>](../windows-workflow-foundation/activitystatequery.md) .  
   

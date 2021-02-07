@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <issuedTokenParameters>'
 title: <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
-ms.openlocfilehash: c90024a0629f39d160967ca00434e48f682d8933
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 92c8f5aa25ddb71561eb702ba3eb0396456008a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91157321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725666"
 ---
 # \<issuedTokenParameters>
 
@@ -40,7 +41,7 @@ ms.locfileid: "91157321"
 </issuedTokenParameters>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `Type`  
   
@@ -55,7 +56,7 @@ ms.locfileid: "91157321"
 |defaultMessageSecurityVersion|Задает версии спецификаций безопасности (WS-Security, WS-Trust, WS-Secure Conversation и WS-Security Policy), которые должны поддерживаться привязкой. Это значение имеет тип <xref:System.ServiceModel.MessageSecurityVersion>.|  
 |inclusionMode|Задает требования включения маркера. Это атрибут типа <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>.|  
 |keySize|Целое число, которое задает размер ключа маркера. Значение по умолчанию — 256.|  
-|keyType|Допустимое значение <xref:System.IdentityModel.Tokens.SecurityKeyType>, которое задает тип ключа. Значение по умолчанию — `SymmetricKey`.|  
+|keyType|Допустимое значение <xref:System.IdentityModel.Tokens.SecurityKeyType>, которое задает тип ключа. Значение по умолчанию — `SymmetricKey`.|  
 |tokenType|Строка, задающая тип маркера. Значение по умолчанию - «http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAML».|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -74,7 +75,7 @@ ms.locfileid: "91157321"
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|Задает значения по умолчанию, используемые для инициализации службы безопасного обмена данными.|  
 |[\<security>](security-of-custombinding.md)|Задает параметры безопасности для пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>

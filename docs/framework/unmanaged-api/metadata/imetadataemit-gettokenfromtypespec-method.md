@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Метод IMetaDataEmit:: Жеттокенфромтипеспек'
 title: Метод IMetaDataEmit::GetTokenFromTypeSpec
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7de6447a-a751-49d8-87e2-951cee77b536
 topic_type:
 - apiref
-ms.openlocfilehash: 3a8f369728b8464850259518981bf6690cb17a01
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09f7133af9b9d912b03cdc1c93744ee260c69169
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728240"
 ---
 # <a name="imetadataemitgettokenfromtypespec-method"></a>Метод IMetaDataEmit::GetTokenFromTypeSpec
 
@@ -55,9 +56,9 @@ HRESULT GetTokenFromTypeSpec (
   
  **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

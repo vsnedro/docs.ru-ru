@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <issuerChannelBehaviors> element'
 title: Элемент <issuerChannelBehaviors>
 ms.date: 03/30/2017
 ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
@@ -11,25 +12,25 @@ no-loc:
 - <issuedToken>
 - <issuerChannelBehaviors>
 - <dataContractSerializer>
-ms.openlocfilehash: cbbfb9d3b5af47a360aa82cf837cd6749f61b641
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6be79f2ee6afb442a7a399ce49df4ad59dff2db5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70893155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725549"
 ---
-# <a name="issuerchannelbehaviors-element"></a>Элемент \<issuerChannelBehaviors>
+# <a name="issuerchannelbehaviors-element"></a>\::: No-Loc ( <issuerChannelBehaviors> )::: элемент
 
-Содержит коллекцию поведений конечной точки клиента Windows Communication Foundation (WCF) (определенную в конфигурации) для использования при взаимодействии с указанными службами маркеров службы. Определенные поведения не могут включать [\<clientCredentials>](clientcredentials.md) элементы.
+Содержит коллекцию поведений конечной точки клиента Windows Communication Foundation (WCF) (определенную в конфигурации) для использования при взаимодействии с указанными службами маркеров службы. Определенные поведения не могут содержать элементы [ \: :: No-Loc ( <clientCredentials> ):::](clientcredentials.md) .
 
 [\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<system.serviceModel>](system-servicemodel.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[\<behaviors>](behaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<endpointBehaviors>](endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<behavior>](behavior-of-endpointbehaviors.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<clientCredentials>](clientcredentials.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<issuedToken>](issuedtoken.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<issuerChannelBehaviors>
+&nbsp;&nbsp;[\::: No-Loc (<System. serviceModel>):::](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\::: No-Loc ( <behaviors> ):::](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\::: No-Loc ( <endpointBehaviors> ):::](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\::: No-Loc ( <behavior> ):::](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\::: No-Loc ( <clientCredentials> ):::](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\::: No-Loc ( <issuedToken> ):::](issuedtoken.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\::: No-Loc ( <issuerChannelBehaviors> ):::
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -58,11 +59,11 @@ ms.locfileid: "70893155"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|[\<issuedToken>](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|
+|[\::: No-Loc ( <issuedToken> ):::](issuedtoken.md)|Задает пользовательский маркер, используемый для проверки подлинности клиента при подключении к службе.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот элемент используется, когда для связи со службой необходимо любое поведение (кроме поведений, в которые включаются элементы `<clientCredentials>`). Например, если [\<dataContractSerializer>](datacontractserializer-element.md) необходимо добавить элемент поведения.
+Этот элемент используется, когда для связи со службой необходимо любое поведение (кроме поведений, в которые включаются элементы `<clientCredentials>`). Например, если необходимо добавить элемент [ \: :: No-Loc ( <dataContractSerializer> ):::](datacontractserializer-element.md) Behavior.
 
 ## <a name="see-also"></a>См. также
 

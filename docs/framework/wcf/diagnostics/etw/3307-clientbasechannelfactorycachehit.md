@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 3307-Клиентбасечаннелфакторикачехит'
 title: 3307 - ClientBaseChannelFactoryCacheHit
 ms.date: 03/30/2017
 ms.assetid: 93d332af-a666-4fa4-81a3-2db6b1eaf190
-ms.openlocfilehash: 0d8be2694b88fd23eb2e026ec3171269719f3621
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: fd84615237249a5abc7109d059d6ca7fbe49c828
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727967"
 ---
 # <a name="3307---clientbasechannelfactorycachehit"></a>3307 - ClientBaseChannelFactoryCacheHit
 
@@ -17,7 +18,7 @@ ms.locfileid: "96279627"
 |-|-|  
 |ID|3307|  
 |Keywords|ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  

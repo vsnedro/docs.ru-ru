@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о схеме конфигурации WCF
 title: Схем конфигурации WCF
 ms.date: 03/30/2017
 ms.assetid: c282aeb5-91f0-4522-8e2f-704c1ef3651f
-ms.openlocfilehash: 44d5e0acc6f5a9ca43949bce0c7964354ad18270
-ms.sourcegitcommit: 665f8fc55258356f4d2f4a6585b750c974b26675
+ms.openlocfilehash: 31307fd299cc1e0b63d92b43b33aabafa28858f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91573661"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725770"
 ---
 # <a name="wcf-configuration-schema"></a>Схем конфигурации WCF
 
@@ -26,7 +27,7 @@ ms.locfileid: "91573661"
 > [!CAUTION]
 > Защитите разделы конфигурации WCF в файлах конфигурации приложения (app.config) с соответствующими списками управления доступом (ACL), чтобы предотвратить потенциальные угрозы безопасности. Например, убедитесь, что доступ или изменение параметров безопасности для привязок приложений разрешено только соответствующим пользователям, или раздел Service Model файла конфигурации для службы.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [\<system.serviceModel>](system-servicemodel.md)  
  Приводится описание элемента `ServiceModel`.  
