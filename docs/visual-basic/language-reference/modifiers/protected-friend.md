@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Protected Friend (Visual Basic)'
 title: Protected Friend
 ms.date: 05/10/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Protected Friend keyword [Visual Basic]
 - Protected Friend keyword [Visual Basic], syntax
-ms.openlocfilehash: 27fc993ca0b94d406261d5e6275de8cd619eb6a8
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: dcc8fd2b1aa99f910f002ac05178d379532fb73d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700979"
 ---
 # <a name="protected-friend-visual-basic"></a>Protected Friend (Visual Basic)
 
@@ -26,10 +27,10 @@ ms.locfileid: "87303456"
 
 ## <a name="see-also"></a>См. также
 
-- [Открытый](public.md)
-- [От](protected.md)
-- [Объявление](friend.md)
-- [Частное](private.md)
+- [Общедоступная](public.md)
+- [Защищенный](protected.md)
+- [Friend](friend.md)
+- [Частная](private.md)
 - [Частный защищенный](./private-protected.md)
 - [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [Процедуры](../../programming-guide/language-features/procedures/index.md)

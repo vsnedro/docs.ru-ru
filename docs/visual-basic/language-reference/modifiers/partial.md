@@ -1,5 +1,6 @@
 ---
-title: Partial
+description: 'Дополнительные сведения о: partial (Visual Basic)'
+title: Частично
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Partial
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - Partial keyword [Visual Basic]
 - type promotion
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-ms.openlocfilehash: 2482facadd0e0528ed1b71df6edb4a447947a902
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bf2d8b06b83f4a90ec2f4edd52405b58695c26e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701018"
 ---
 # <a name="partial-visual-basic"></a>Partial (Visual Basic)
 
@@ -60,7 +61,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 |`interfacenames`|Обязательный параметр, если используется параметр `Implements`. Имена интерфейсов, реализуемых этим типом.|  
 |`variabledeclarations`|Необязательный элемент. Операторы, которые объявляют дополнительные переменные и события для типа.|  
 |`proceduredeclarations`|Необязательный элемент. Операторы, которые объявляют и определяют дополнительные процедуры для типа.|  
-|`End Class` или `End Structure`|Завершает этот частичное определение `Class` или `Structure`.|  
+|`End Class` либо `End Structure`|Завершает этот частичное определение `Class` или `Structure`.|  
   
 ## <a name="remarks"></a>Remarks  
 

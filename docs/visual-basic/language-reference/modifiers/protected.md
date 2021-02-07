@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: protected (Visual Basic)'
 title: Защищенный
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - Protected access modifier
 - Protected keyword [Visual Basic]
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
-ms.openlocfilehash: d66ed68004f8b6ef21ae703f02b317589814764b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 74a695e7c8ff06543a7118c935365e31af258171
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700940"
 ---
 # <a name="protected-visual-basic"></a>Protected (Visual Basic)
 
 Модификатор доступа к члену, указывающий, что один или несколько объявленных программных элементов доступны только в своем собственном классе или производном классе.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Иногда программный элемент, объявленный в классе, содержит конфиденциальные данные или ограниченный код и требуется ограничить доступ к элементу. Однако если класс является наследуемым и предполагается иерархия производных классов, то эти производные классы могут быть необходимы для доступа к данным или коду в этих производных классах. В этом случае необходимо, чтобы элемент был доступен как из базового класса, так и из всех производных классов. Чтобы ограничить доступ к элементу таким образом, его можно объявить с помощью `Protected` .
 
@@ -69,11 +70,11 @@ ms.locfileid: "84398224"
 
 - [Оператор Sub](../statements/sub-statement.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Открытый](public.md)
-- [Объявление](friend.md)
-- [Частное](private.md)
+- [Общедоступная](public.md)
+- [Friend](friend.md)
+- [Частная](private.md)
 - [Частный защищенный](private-protected.md)
 - [Protected Friend](protected-friend.md)
 - [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

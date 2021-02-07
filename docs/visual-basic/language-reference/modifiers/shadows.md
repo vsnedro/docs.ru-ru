@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Shadows (Visual Basic)'
 title: Shadows
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Shadows keyword [Visual Basic]
 - names [Visual Basic], shadowing
 ms.assetid: 6bf687cd-0544-4797-b51b-911125ec57c6
-ms.openlocfilehash: 7aed6bec21bd484cca019b061bd5915de13a9eb8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4a455a78c36e15db977936b81c22e7a5b03d107e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402711"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700849"
 ---
 # <a name="shadows-visual-basic"></a>Shadows (Visual Basic)
 
 Указывает, что объявленный программный элемент повторно объявляет и скрывает элемент с идентичным именем или набор перегруженных элементов в базовом классе.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Основное назначение теневого копирования (которое также называется *скрытием по имени*) — сохранение определения членов класса. Базовый класс может быть подвергнут изменениям, создающим элемент с тем же именем, что и у уже определенного. В этом случае `Shadows` Модификатор принудительно определяет ссылки через класс на определенный член, а не на новый элемент базового класса.
 
@@ -70,11 +71,11 @@ ms.locfileid: "84402711"
 
 - [Оператор Sub](../statements/sub-statement.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общий](shared.md)
-- [Статическое](static.md)
-- [Частное](private.md)
+- [статически.](static.md)
+- [Частная](private.md)
 - [Me, My, MyBase и MyClass](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
 - [Основы наследования](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
 - [MustOverride](mustoverride.md)

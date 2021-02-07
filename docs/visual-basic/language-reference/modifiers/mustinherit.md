@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: MustInherit (Visual Basic)'
 title: MustInherit
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - abstract classes [Visual Basic], MustInherit class
 - MustInherit keyword [Visual Basic]
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
-ms.openlocfilehash: 6502da947ae331a26e66d8ce2dbcda46e4172a6e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6ca11dd3fee8240f39ea1a3d278870d167d283d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701044"
 ---
 # <a name="mustinherit-visual-basic"></a>MustInherit (Visual Basic)
 
@@ -27,7 +28,7 @@ ms.locfileid: "90867955"
   
  Другим применением `MustInherit` класса является ограничение переменной набором связанных классов. Можно определить базовый класс и получить от него все связанные с ним классы. Базовый класс не обязан предоставлять функциональные возможности, общие для всех производных классов, но он может служить фильтром для присвоения значений переменным. Если в используемом коде объявляется переменная в качестве базового класса, Visual Basic позволяет назначить этой переменной только один из производных классов.  
   
- .NET Framework определяет несколько `MustInherit` классов, между ними, <xref:System.Array> <xref:System.Enum> и <xref:System.ValueType> . <xref:System.ValueType> — Это пример базового класса, который ограничивают переменную. Все типы значений являются производными от <xref:System.ValueType> . Если переменная объявляется как <xref:System.ValueType> , то этой переменной можно назначить только типы значений.  
+ Платформа .NET Framework определяет несколько `MustInherit` классов, между ними, <xref:System.Array> <xref:System.Enum> и <xref:System.ValueType> . <xref:System.ValueType> — Это пример базового класса, который ограничивают переменную. Все типы значений являются производными от <xref:System.ValueType> . Если переменная объявляется как <xref:System.ValueType> , то этой переменной можно назначить только типы значений.  
   
 ## <a name="rules"></a>Правила  
   

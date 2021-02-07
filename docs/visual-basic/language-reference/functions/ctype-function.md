@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Функция CType (Visual Basic)'
 title: CType Function
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - CType function
 - conversions [Visual Basic], expression
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
-ms.openlocfilehash: 88d609146648fe1b0c3124b99a65e85293fc0707
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9732f52b40e5f762769ba5dc340c000e7e1ba17a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701265"
 ---
 # <a name="ctype-function-visual-basic"></a>Функция CType (Visual Basic)
 
@@ -28,11 +29,11 @@ CType(expression, typename)
 
 ## <a name="parts"></a>Компоненты
 
-`expression`Любое допустимое выражение. Если значение `expression` выходит за пределы диапазона, допустимого параметром `typename` , Visual Basic создает исключение.
+`expression` Любое допустимое выражение. Если значение `expression` выходит за пределы диапазона, допустимого параметром `typename` , Visual Basic создает исключение.
 
-`typename`Любое выражение, которое является допустимым в `As` предложении `Dim` оператора, то есть имя любого типа данных, объекта, структуры, класса или интерфейса.
+`typename` Любое выражение, которое является допустимым в `As` предложении `Dim` оператора, то есть имя любого типа данных, объекта, структуры, класса или интерфейса.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 > [!TIP]
 > Для преобразования типов также можно использовать следующие функции.
@@ -40,7 +41,7 @@ CType(expression, typename)
 > - Функции преобразования типов, такие как `CByte` , `CDbl` и `CInt` , которые выполняют преобразование в конкретный тип данных. Дополнительные сведения см. в разделе [Функции преобразования типов](type-conversion-functions.md).
 > - Оператор [DirectCast](../operators/directcast-operator.md) или [Оператор TryCast](../operators/trycast-operator.md). Для этих операторов требуется, чтобы один тип наследовал или реализовывал другой тип. Они могут обеспечить более высокую производительность, чем `CType` при преобразовании в тип данных и из него `Object` .
 
-`CType`компилируется встроенным образом, что означает, что код преобразования является частью кода, который вычисляет выражение. В некоторых случаях код выполняется быстрее, так как для выполнения преобразования не вызываются никакие процедуры.
+`CType` компилируется встроенным образом, что означает, что код преобразования является частью кода, который вычисляет выражение. В некоторых случаях код выполняется быстрее, так как для выполнения преобразования не вызываются никакие процедуры.
 
 Если преобразование не определено из `expression` в `typename` (например, из в `Integer` `Date` ), Visual Basic отображает сообщение об ошибке времени компиляции.
 
@@ -64,7 +65,7 @@ CType(expression, typename)
 
 Дополнительные примеры см. в разделе [явные и неявные преобразования](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.OverflowException>
 - <xref:System.InvalidCastException>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: закрыто защищено (Visual Basic)'
 title: Частный защищенный
 ms.date: 05/10/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Private Protected keyword [Visual Basic]
 - Private Protected keyword [Visual Basic], syntax
-ms.openlocfilehash: 8ad1509da71bc80b33700d363ddd4569a0965dff
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: eb521ace77cd16f4904657cbdc035575e98e98fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700966"
 ---
 # <a name="private-protected-visual-basic"></a>Частный защищенный (Visual Basic)
 
@@ -70,10 +71,10 @@ ms.locfileid: "87303469"
 
 ## <a name="see-also"></a>См. также
 
-- [Открытый](public.md)
-- [От](protected.md)
-- [Объявление](friend.md)
-- [Частное](private.md)
+- [Общедоступная](public.md)
+- [Защищенный](protected.md)
+- [Friend](friend.md)
+- [Частная](private.md)
 - [Protected Friend](./protected-friend.md)
 - [Уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [Процедуры](../../programming-guide/language-features/procedures/index.md)

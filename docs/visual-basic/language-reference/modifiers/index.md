@@ -1,21 +1,22 @@
 ---
+description: Дополнительные сведения об модификаторах (Visual Basic)
 title: Модификаторы
 ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
-ms.openlocfilehash: 6ee477e8d09ea7c8ea559ff8245784b2d0123141
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 581f484e81a7de2cb6c80061eb4730adc18f316b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701057"
 ---
 # <a name="modifiers-visual-basic"></a>Модификаторы (Visual Basic)
 
 В статьях этого раздела описываются модификаторы времени выполнения Visual Basic.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
- [Набора](ansi.md)  
+ [Ansi](ansi.md)  
   
  [Сборка](assembly.md)  
   
@@ -35,7 +36,7 @@ ms.locfileid: "90875454"
   
  [Итератор](iterator.md)  
   
- [Key](key.md)  
+ [Ключ](key.md)  
   
  [Модуль \<keyword>](module-keyword.md)  
   
@@ -51,7 +52,7 @@ ms.locfileid: "90875454"
   
  [Необязательно](optional.md)  
   
- [Заполняет](out-generic-modifier.md)  
+ [Out](out-generic-modifier.md)  
   
  [Перегрузки](overloads.md)  
   
@@ -67,11 +68,11 @@ ms.locfileid: "90875454"
   
  [Частный защищенный](private-protected.md)  
   
- [От](protected.md)  
+ [Защищенный](protected.md)  
 
  [Protected Friend](protected-friend.md)  
   
- [Открытый](public.md)  
+ [Общедоступная](public.md)  
   
  [ReadOnly](readonly.md)  
   
@@ -79,7 +80,7 @@ ms.locfileid: "90875454"
   
  [Общий](shared.md)  
   
- [Статическое](static.md)  
+ [статически.](static.md)  
   
  [Юникод](unicode.md)  
   
@@ -89,6 +90,6 @@ ms.locfileid: "90875454"
   
  [WriteOnly](writeonly.md)  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Справочник по языку Visual Basic](../index.md)  

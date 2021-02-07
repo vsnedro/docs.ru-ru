@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: Сводка реестра (Visual Basic)'
 title: Сводка по реестру
 ms.date: 07/20/2015
 helpviewer_keywords:
 - registry [Visual Basic]
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
-ms.openlocfilehash: 2f3b97396a6da199b07aee51d146ccb7ddf0abcb
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 13036d7ccf7f0ac5278094bb19926a422e1178c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701213"
 ---
 # <a name="registry-summary-visual-basic"></a>Сводка по реестру (Visual Basic)
 
@@ -17,7 +18,7 @@ ms.locfileid: "90875546"
   
  Использование этой `My` функции обеспечивает более высокую производительность и производительность операций с реестром, чем эти элементы. Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>.  
   
-|**Действие**|**Языковой элемент**|  
+|**Действие**|**Элемент языка**|  
 |----------------|--------------------------|  
 |Удаление параметров программы.|<xref:Microsoft.VisualBasic.Interaction.DeleteSetting%2A>|  
 |Чтение параметров программы.|<xref:Microsoft.VisualBasic.Interaction.GetSetting%2A>, <xref:Microsoft.VisualBasic.Interaction.GetAllSettings%2A>|  

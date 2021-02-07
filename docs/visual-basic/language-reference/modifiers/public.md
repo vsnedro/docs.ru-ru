@@ -1,5 +1,6 @@
 ---
-title: Общие
+description: 'Дополнительные сведения о: public (Visual Basic)'
+title: Открытый
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Public
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Public keyword [Visual Basic], syntax
 - Public access modifier
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
-ms.openlocfilehash: f2b6a126435b111ef56ee2a9870ea6fbddf87901
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1083ca877cf99917291523fe10f6561784ff06a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700927"
 ---
 # <a name="public-visual-basic"></a>Public (Visual Basic)
 
@@ -69,7 +70,7 @@ ms.locfileid: "90867682"
   
 ## <a name="see-also"></a>См. также
 
-- [От](protected.md)
+- [Защищенный](protected.md)
 - [Friend](friend.md)
 - [Частная](private.md)
 - [Частный защищенный](private-protected.md)
