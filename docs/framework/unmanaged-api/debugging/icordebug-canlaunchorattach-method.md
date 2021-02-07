@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebug:: CanLaunchOrAttach'
 title: Метод ICorDebug::CanLaunchOrAttach
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ca7723db-7c07-4cdd-bd92-fba34928b623
 topic_type:
 - apiref
-ms.openlocfilehash: 195c7e1e7c61fd6ac8a21226b52e3782d2f7e421
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb813c4bae968941de731d9d5b74d8f804b3c8ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723248"
 ---
 # <a name="icordebugcanlaunchorattach-method"></a>Метод ICorDebug::CanLaunchOrAttach
 
@@ -55,7 +56,7 @@ HRESULT CanLaunchOrAttach (
   
 - CORDBG_E_KERNEL_DEBUGGER_ENABLED  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод является исключительно информационным. Интерфейс не будет останавливаться при запуске или присоединении к процессу, независимо от значения, возвращаемого `CanLaunchOrAttach` .  
   
@@ -69,8 +70,8 @@ HRESULT CanLaunchOrAttach (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebug](icordebug-interface.md)

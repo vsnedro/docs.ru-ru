@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как реализовать CopyToDataTable <T> , где универсальный тип T не является DataRow
 title: Практическое руководство. Реализация CopyToDataTable<T>, где универсальный тип T не является объектом DataRow
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b27b52cf-6172-485f-a75c-70ff9c5a2bd4
-ms.openlocfilehash: 776ff6062282d12b622ec89cfa9990513da64a07
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 742e4f0a4854cbb1a37a5401abc628cd4d239b26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723807"
 ---
 # <a name="how-to-implement-copytodatatablet-where-the-generic-type-t-is-not-a-datarow"></a>Практическое руководство. Реализация CopyToDataTable\<T>, где универсальный тип T не является объектом DataRow
 
@@ -78,7 +79,7 @@ public class ObjectShredder<T>
 }  
 ```
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание DataTable из запроса](creating-a-datatable-from-a-query-linq-to-dataset.md)
 - [Руководство по программированию](programming-guide-linq-to-dataset.md)

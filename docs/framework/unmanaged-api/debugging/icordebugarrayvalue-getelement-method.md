@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugArrayValue:: WebMethod'
 title: Метод ICorDebugArrayValue::GetElement
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7ac3cba5-c282-402e-b7ef-b46634f5176b
 topic_type:
 - apiref
-ms.openlocfilehash: 0b6b6f46c7fff8f1d4c2ad555c93423f9ca8ac09
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: dfae074b78735934d1e71b13ce01c24741a5f2ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698155"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723066"
 ---
 # <a name="icordebugarrayvaluegetelement-method"></a>Метод ICorDebugArrayValue::GetElement
 
@@ -60,4 +61,4 @@ HRESULT GetElement (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

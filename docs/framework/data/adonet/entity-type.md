@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: тип сущности'
 title: тип сущности
 ms.date: 03/30/2017
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
-ms.openlocfilehash: 3f99667a06d8aa439232802d4909290dfe9db97c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fb801ca8565fce01466f30bddc8c14c39af568c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724366"
 ---
 # <a name="entity-type"></a>тип сущности
 
@@ -37,7 +38,7 @@ ms.locfileid: "91194782"
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

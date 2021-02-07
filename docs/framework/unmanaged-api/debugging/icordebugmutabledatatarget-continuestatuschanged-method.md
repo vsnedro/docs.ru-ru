@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугмутабледататаржет:: Континуестатусчанжед'
 title: Метод ICorDebugMutableDataTarget::ContinueStatusChanged
 ms.date: 03/30/2017
 ms.assetid: 5a66d3f4-dd16-4d62-9dcc-0eab7041d894
-ms.openlocfilehash: 4910b125c2344505128a6979dfe4c9fad2b72c19
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6655d6f1a115b4879c73e356faa8e8785a110078
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722507"
 ---
 # <a name="icordebugmutabledatatargetcontinuestatuschanged-method"></a>Метод ICorDebugMutableDataTarget::ContinueStatusChanged
 
@@ -29,7 +30,7 @@ HRESULT ContinueStatusChanged(
  `continueStatus`  
  Значение [COREDB_CONTINUE_STATUS](../common-data-types-unmanaged-api-reference.md), которое представляет новое запрошенное состояние продолжения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Отладчик вызывает метод `ContinueStatusChanged` при вызове метода ICorDebug, требующего, чтобы способ обработки текущего события отладки потенциально отличался от способа, которым оно обычно обрабатывается. Например, если имеется незавершенное исключение и отладчик запрашивает операцию, которая будет отменять это исключение (например, [ICorDebugILFrame::SetIP](icordebugilframe-setip-method.md) или `FuncEval`), этот API используется для запроса отмены исключения.  
   
@@ -41,9 +42,9 @@ HRESULT ContinueStatusChanged(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMutableDataTarget](icordebugmutabledatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

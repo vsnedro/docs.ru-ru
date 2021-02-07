@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Общие сведения о модели фабрики'
 title: Общие сведения о модели фабрики
 ms.date: 03/30/2017
 ms.assetid: b5dc81c4-7554-44b9-b513-769bd61e2e7b
-ms.openlocfilehash: 7cee3966ab3a37d2dbc6dd0ea9ab26b485ef63fd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 175b05a298eb260dfe8c59b380ab3b8b9dcba943
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724210"
 ---
 # <a name="factory-model-overview"></a>Общие сведения о модели фабрики
 
@@ -21,7 +22,7 @@ ms.locfileid: "91156398"
   
  Начиная с ADO.NET 2.0, для создания экземпляра <xref:System.Data.Common.DbProviderFactories> класс `static` предоставляет методы `Shared` (<xref:System.Data.Common.DbProviderFactory> в Visual Basic). После этого экземпляр возвращает правильный строго типизированный объект, основанный на данных поставщика и строке соединения, предоставленной во время выполнения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Получение класса DbProviderFactory](obtaining-a-dbproviderfactory.md)
 - [DbConnection, DbCommand и DbException](dbconnection-dbcommand-and-dbexception.md)

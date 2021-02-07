@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: универсальные методы полей и SetField (LINQ to DataSet)'
 title: Универсальные методы Field и SetField (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
-ms.openlocfilehash: 9deda11592389dd799477bdc027d59a0be0036da
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2dfbb7377d782525170d47f59a5577f96caadbb6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724015"
 ---
 # <a name="generic-field-and-setfield-methods-linq-to-dataset"></a>Универсальные методы Field и SetField (LINQ to DataSet)
 
@@ -30,6 +31,6 @@ LINQ to DataSet предоставляет методы расширения <xr
   
  Метод <xref:System.Data.DataRowExtensions.SetField%2A> сам по себе не выполняет преобразования типов. Однако это не означает, что преобразование типов не происходит. <xref:System.Data.DataRowExtensions.SetField%2A>Метод предоставляет ADO.NET поведение <xref:System.Data.DataRow> класса. Преобразование типа может быть выполнено <xref:System.Data.DataRow> объектом, а преобразованное значение будет сохранено в <xref:System.Data.DataRow> объект.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataRowExtensions>

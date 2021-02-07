@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Method-Based примеры синтаксиса запросов: операторы SET (LINQ to DataSet)'
 title: Примеры синтаксиса запросов на основе методов. Операторы набора (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fa93af15-28af-4b5e-846b-897308410edb
-ms.openlocfilehash: f91d009e66f1f0da25e508994040d7e9f80fc681
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3a50c9793e3af6fdab08227b4789c4042dd64931
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723755"
 ---
 # <a name="method-based-query-syntax-examples-set-operators-linq-to-dataset"></a>Примеры синтаксиса запросов на основе методов. Операторы набора (LINQ to DataSet)
 
@@ -63,7 +64,7 @@ ms.locfileid: "91147870"
  [!code-csharp[DP LINQ to DataSet Examples#Union2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#union2)]
  [!code-vb[DP LINQ to DataSet Examples#Union2](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#union2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Загрузка данных в набор данных](loading-data-into-a-dataset.md)
 - [Примеры LINQ to DataSet](linq-to-dataset-examples.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: язык Entity SQL'
 title: Язык Entity SQL
 ms.date: 03/30/2017
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
-ms.openlocfilehash: 721a4cd9d4e5618c083392bbe1ae203f285f8feb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c05e561e5da3f9ee8788a25f8ca97b22444e109f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724574"
 ---
 # <a name="entity-sql-language"></a>Язык Entity SQL
 
@@ -77,13 +78,13 @@ Entity SQL представляет собой независимый от хр�
   
  [Практическое руководство. Разбивка на страницы результатов запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения об Entity SQL](entity-sql-overview.md)  
   
  [Справочник по Entity SQL](entity-sql-reference.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [ADO.NET Entity Framework](../index.md)
 - [Справочник по языку](index.md)

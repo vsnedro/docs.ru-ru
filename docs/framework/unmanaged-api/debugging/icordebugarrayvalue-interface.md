@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugArrayValue'
 title: Интерфейс ICorDebugArrayValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dc437751-7093-44e2-bfdc-191d9ce3c192
 topic_type:
 - apiref
-ms.openlocfilehash: 90688132b98f8316a4b08988c08b2f7cc7ce0fd8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2b91c910b9444b061b4a6bea715667bca6a4629c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722897"
 ---
 # <a name="icordebugarrayvalue-interface"></a>Интерфейс ICorDebugArrayValue
 
@@ -38,7 +39,7 @@ ms.locfileid: "95725057"
 |[Метод GetRank](icordebugarrayvalue-getrank-method.md)|Получает число измерений в массиве.|  
 |[Метод HasBaseIndicies](icordebugarrayvalue-hasbaseindicies-method.md)|Определяет, имеет ли массив базовые индексы.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugArrayValue` поддерживает одномерный и многомерный массивы.  
   
@@ -53,8 +54,8 @@ ms.locfileid: "95725057"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

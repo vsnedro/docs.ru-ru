@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье обработка событий DataAdapter.
 title: Обработка событий DataAdapter
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
-ms.openlocfilehash: a2c2dc71cc9e5c445fd05534dad5ad47fd66f436
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 045a48ae545ad4354844dd451ff58618b760a9a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723950"
 ---
 # <a name="handling-dataadapter-events"></a>Обработка событий DataAdapter
 
@@ -41,7 +42,7 @@ ms.locfileid: "91194730"
   
  Кроме того, для обработки ошибок для обновленных строк можно использовать свойство `ContinueUpdateOnError`. Если `DataAdapter.ContinueUpdateOnError` имеет значение `true`, когда обновление строки приводит к возникновению исключения, то текст исключения помещается в сведения `RowError` для конкретной строки, и обработка продолжается без вызова исключения. Это позволяет реагировать на ошибки, когда `Update` завершено, в отличие от события `RowUpdated`, которое позволяет реагировать на ошибки при их возникновении.  
   
- В следующем образце кода показано, как добавлять и удалять обработчики событий. Обработчик события `RowUpdating` ведет журнал всех удаленных записей с временной меткой. `RowUpdated`Обработчик событий добавляет сведения об ошибке в `RowError` свойство строки в `DataSet` , подавляет исключение и возобновляет обработку (зеркальное отображение поведения `ContinueUpdateOnError`  =  `true` ).  
+ В следующем образце кода показано, как добавлять и удалять обработчики событий. Обработчик события `RowUpdating` ведет журнал всех удаленных записей с временной меткой. Обработчик события `RowUpdated` добавляет сведения об ошибке в свойство `RowError` строки в `DataSet`, подавляет исключение и продолжает обработку (зеркально отображая поведение `ContinueUpdateOnError` = `true`).  
   
 ```vb  
 ' Assumes that connection is a valid SqlConnection object.  
@@ -189,7 +190,7 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)
 - [Обработка событий наборов данных](./dataset-datatable-dataview/handling-dataset-events.md)

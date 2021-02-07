@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugArrayValue:: GetElementAtPosition'
 title: Метод ICorDebugArrayValue::GetElementAtPosition
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
 topic_type:
 - apiref
-ms.openlocfilehash: a6e5ecee9a89da98a73dfb20935c5ec594d5958f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef8e4a39f5fe4088b1883803aee037c51f410241
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723040"
 ---
 # <a name="icordebugarrayvaluegetelementatposition-method"></a>Метод ICorDebugArrayValue::GetElementAtPosition
 
@@ -43,7 +44,7 @@ HRESULT GetElementAtPosition (
  `ppValue`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет значение элемента.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Компоновка многомерного массива соответствует стилю в C++ для макета массива.  
   
@@ -55,4 +56,4 @@ HRESULT GetElementAtPosition (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

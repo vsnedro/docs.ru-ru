@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugManagedCallback'
 title: Интерфейс ICorDebugManagedCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
 topic_type:
 - apiref
-ms.openlocfilehash: 6eebabc3a08027eab4ac55c1e46dd75b1f75bd21
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0dd33e4295caa8f5ae41c65d9bd10152737156ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679706"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722819"
 ---
 # <a name="icordebugmanagedcallback-interface"></a>Интерфейс ICorDebugManagedCallback
 
@@ -56,13 +57,13 @@ ms.locfileid: "95679706"
 |[Метод UnloadModule](icordebugmanagedcallback-unloadmodule-method.md)|Уведомляет отладчик о выгрузке модуля CLR (DLL).|  
 |[Метод UpdateModuleSymbols](icordebugmanagedcallback-updatemodulesymbols-method.md)|Уведомляет отладчик о том, что символы для модуля CLR были изменены.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Все обратные вызовы сериализуются, вызываются в том же потоке и вызываются с процессом в состоянии SYNCHRONIZED.  
   
  Каждая реализация обратного вызова должна вызывать [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) для возобновления выполнения. Если `ICorDebugController::Continue` метод не вызывается до возврата обратного вызова, процесс будет остановлен, а обратные вызовы событий не будут выполняться до `ICorDebugController::Continue` вызова метода.  
   
- Отладчик должен реализовать [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) при отладке приложений .NET Framework версии 2,0. Экземпляр `ICorDebugManagedCallback` или `ICorDebugManagedCallback2` передается как объект обратного вызова в [ICorDebug:: SetManagedHandler](icordebug-setmanagedhandler-method.md).  
+ Отладчик должен реализовать [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) при отладке приложений платформа .NET Framework версии 2,0. Экземпляр `ICorDebugManagedCallback` или `ICorDebugManagedCallback2` передается как объект обратного вызова в [ICorDebug:: SetManagedHandler](icordebug-setmanagedhandler-method.md).  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -75,9 +76,9 @@ ms.locfileid: "95679706"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebug](icordebug-interface.md)
 - [Интерфейс ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

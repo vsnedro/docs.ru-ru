@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugArrayValue:: Жетелементтипе'
 title: Метод ICorDebugArrayValue::GetElementType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ed71961e-ae9b-4dfc-9554-06637696d697
 topic_type:
 - apiref
-ms.openlocfilehash: 1deadef7517772460adc96cd0dd630d85cb21c9f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 97c01a9c8ae7a1d73a1a15b97d3ce3e9aa079365
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723036"
 ---
 # <a name="icordebugarrayvaluegetelementtype-method"></a>Метод ICorDebugArrayValue::GetElementType
 
@@ -47,4 +48,4 @@ HRESULT GetElementType (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

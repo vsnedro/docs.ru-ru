@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Entity SQL обзор'
 title: Общие сведения об Entity SQL
 ms.date: 03/30/2017
 ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d
-ms.openlocfilehash: e9a5117984380938e48e0cd1113107c74389480f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eb337ff3894b24d787d829838c9cf12c934a823c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724613"
 ---
 # <a name="entity-sql-overview"></a>Общие сведения об Entity SQL
 
@@ -19,7 +20,7 @@ ms.locfileid: "91148131"
   
  В этом разделе приведены основные сведения о языке [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Отличия Entity SQL от Transact-SQL](how-entity-sql-differs-from-transact-sql.md)  
   
@@ -63,7 +64,7 @@ ms.locfileid: "91148131"
   
  [Допускающие значения NULL структурированные типы](nullable-structured-types-entity-sql.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Язык Entity SQL](entity-sql-language.md)

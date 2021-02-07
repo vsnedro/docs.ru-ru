@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о свойстве внешнего ключа
 title: свойство внешнего ключа
 ms.date: 03/30/2017
 ms.assetid: 23cb6729-544d-4f67-9ee7-44e8a6545587
-ms.openlocfilehash: be0fcb94b0b457a33c17e7125cd22db50f298cc6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1666e4477c09dd5d0ed3d2c35a93ca21824e8a0e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724132"
 ---
 # <a name="foreign-key-property"></a>свойство внешнего ключа
 
@@ -25,7 +26,7 @@ ms.locfileid: "91189322"
   
  [!code-xml[EDM_Example_Model#RefConstraint](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books4.edmx#refconstraint)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

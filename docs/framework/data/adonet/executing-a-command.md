@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о выполнении команды
 title: Выполнение команды
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 40494916-c25a-4cb8-8f7c-fcb8d378464e
-ms.openlocfilehash: d7d290c1c149f9eab2449c25e8d32f2568eb0277
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7b5fe46bf4d82fcd4f24cc0eb19e85a2ee9aca7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724327"
 ---
 # <a name="executing-a-command"></a>Выполнение команды
 
@@ -42,7 +43,7 @@ ms.locfileid: "91156463"
 
  Поставщик данных .NET Framework для SQL Server добавляет счетчики производительности, позволяя обнаруживать периодически возникающие проблемы, связанные со сбоями команд. Дополнительные сведения см. в разделе [счетчики производительности](performance-counters.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды и параметры](commands-and-parameters.md)
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: создание типов (Entity SQL)'
 title: Сборка типов (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
-ms.openlocfilehash: 89b4c3bb8b9d69767aa30cee5331269537c084bd
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 5963c34ffd8e9273d400cc16ba93f72ded2ede46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99427037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724847"
 ---
 # <a name="constructing-types-entity-sql"></a>Сборка типов (Entity SQL)
 
@@ -67,7 +68,7 @@ ms.locfileid: "99427037"
 
 Дополнительные сведения см. в разделе [Конструктор именованного типа](named-type-constructor-entity-sql.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

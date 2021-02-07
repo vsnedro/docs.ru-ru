@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: константные выражения'
 title: Постоянные выражения
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9d98a7be-b110-4edb-8eba-bed10f250b6d
-ms.openlocfilehash: 163f73a7682d444214caa213751cb35f8f0e8743
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3c040918df4af6a0302d2435e3564e395044108e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724834"
 ---
 # <a name="constant-expressions"></a>Постоянные выражения
 
@@ -23,6 +24,6 @@ ms.locfileid: "91153044"
   
  LINQ to Entities не поддерживает использование класса пользователя в качестве константы. Однако ссылка на свойство пользовательского класса считается константой; она будет преобразована в константное выражение дерева команд и выполнена в источнике данных.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Выражения в запросах LINQ to Entities](expressions-in-linq-to-entities-queries.md)

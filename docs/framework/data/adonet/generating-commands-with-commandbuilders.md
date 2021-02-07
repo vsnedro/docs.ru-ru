@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: создание команд с помощью Коммандбуилдерс'
 title: Создание команд с помощью построителей CommandBuilder
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6e3fb8b5-373b-4f9e-ab03-a22693df8e91
-ms.openlocfilehash: d88f5772e038766d49baf8c758c547e6d5667904
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 495312f57d497421182384eff23b621130447940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724106"
 ---
 # <a name="generating-commands-with-commandbuilders"></a>Создание команд с помощью построителей CommandBuilder
 
@@ -54,7 +55,7 @@ ms.locfileid: "91200723"
   
 ### <a name="table-and-column-names"></a>Имена таблиц и столбцов  
 
- Логика автоматического создания команд может дать сбой при наличии в именах столбцов или таблиц любых специальных символов, например пробелов, точек, двойных кавычек или других символов, отличных от буквенно-цифровых, даже отделенных квадратными скобками. В зависимости от поставщика, задавая параметры QuotePrefix и QuoteSuffix, можно дать возможность логике создания обрабатывать пробелы, но для специальных символов это не сработает. Полные имена таблиц в виде *каталога. Schema. Table* поддерживаются.  
+ Логика автоматического создания команд может дать сбой при наличии в именах столбцов или таблиц любых специальных символов, например пробелов, точек, двойных кавычек или других символов, отличных от буквенно-цифровых, даже отделенных квадратными скобками. В зависимости от поставщика, задавая параметры QuotePrefix и QuoteSuffix, можно дать возможность логике создания обрабатывать пробелы, но для специальных символов это не сработает. Поддерживаются полностью указанные имена таблиц в виде *catalog.schema.table*.  
   
 ## <a name="using-the-commandbuilder-to-automatically-generate-an-sql-statement"></a>Использование построителя команд для автоматического создания инструкции SQL  
 
@@ -98,7 +99,7 @@ Console.WriteLine(builder.GetUpdateCommand().CommandText)
 Console.WriteLine(builder.GetUpdateCommand().CommandText);
 ```
   
- В следующем примере повторно создается таблица `Customers` из набора данных `custDS`. Метод **рефрешсчема** вызывается для обновления автоматически создаваемых команд новыми сведениями о столбце.  
+ В следующем примере повторно создается таблица `Customers` из набора данных `custDS`. Метод **RefreshSchema** вызывается для внесения новых сведений о столбцах в автоматически созданные команды.  
   
 ```vb  
 ' Assumes an open SqlConnection and SqlDataAdapter inside of a Using block.  
@@ -120,7 +121,7 @@ custDS.Tables.Remove(custDS.Tables["Customers"]);
 adapter.Fill(custDS, "Customers");  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды и параметры](commands-and-parameters.md)
 - [Выполнение команды](executing-a-command.md)
