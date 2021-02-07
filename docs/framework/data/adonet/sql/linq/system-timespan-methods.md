@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о методах System. TimeSpan
 title: Методы System.TimeSpan
 ms.date: 03/30/2017
 ms.assetid: 9333fee8-1454-4374-855b-8c14c002f48f
-ms.openlocfilehash: 15b6c8bd5c9cce8e6d1bac030c6b7f6b40df6cd4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fa3192d18a59e589f2c7510776f8510b2c12cac4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681192"
 ---
 # <a name="systemtimespan-methods"></a>Методы System.TimeSpan
 
@@ -39,7 +40,7 @@ ms.locfileid: "91155592"
 
  Хотя тип CLR <xref:System.TimeSpan?displayProperty=nameWithType> поддерживает сложение и вычитание, тип SQL `TIME` их не поддерживает. Поэтому запросы LINQ to SQL будут вызывать ошибки при попытке выполнить сложение или вычитание, когда они сопоставлены с типом SQL `TIME`. Другие рекомендации по работе с типами даты и времени SQL можно найти в [сопоставлении типов SQL-CLR](sql-clr-type-mapping.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные принципы запросов](query-concepts.md)
 - [Создание модели объектов](creating-the-object-model.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostTaskManager:: ReverseLeaveRuntime'
 title: Метод IHostTaskManager::ReverseLeaveRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4837d398-16a1-4e32-902c-022cd1aad3ca
 topic_type:
 - apiref
-ms.openlocfilehash: 8e0981415c03120cc30e6349daced51e79216938
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2fed157f6ea05243270b957cacdb00ba5a47a88f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669969"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680871"
 ---
 # <a name="ihosttaskmanagerreverseleaveruntime-method"></a>Метод IHostTaskManager::ReverseLeaveRuntime
 
@@ -44,7 +45,7 @@ HRESULT ReverseLeaveRuntime ();
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно памяти для завершения запрошенного выделения ресурсов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызовы CLR `ReverseLeaveRuntime` для информирования основного приложения о том, что выполняемая в данный момент задача возвращает управление неуправляемой функции, которая, в свою очередь, вызывается из управляемого кода через вызов платформы. Каждый вызов `ReverseLeaveRuntime` соответствует соответствующему вызову [реверсинтеррунтиме](ihosttaskmanager-reverseenterruntime-method.md).  
   
@@ -56,9 +57,9 @@ HRESULT ReverseLeaveRuntime ();
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод CallNeedsHostHook](ihosttaskmanager-callneedshosthook-method.md)
 - [Метод EnterRuntime](ihosttaskmanager-enterruntime-method.md)

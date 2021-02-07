@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IValidator:: FormatEventInfo'
 title: Метод IValidator::FormatEventInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4c0c7477-05ba-461b-b21b-cbfba95f1db1
 topic_type:
 - apiref
-ms.openlocfilehash: c5c89e0eda6e93e34775c00d5ec8fb4ff0940707
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28ecf9ab2b14cd2fdd178a4ad9d8e218f7038a9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95701020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680165"
 ---
 # <a name="ivalidatorformateventinfo-method"></a>Метод IValidator::FormatEventInfo
 
@@ -63,4 +64,4 @@ HRESULT FormatEventInfo(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  

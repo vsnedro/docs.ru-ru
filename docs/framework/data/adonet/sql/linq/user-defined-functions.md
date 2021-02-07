@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: функции User-Defined'
 title: Определяемые пользователем функции
 ms.date: 03/30/2017
 ms.assetid: 3304c9b2-5c7a-4a95-9d45-4f260dcb606e
-ms.openlocfilehash: 061e07ba91a1742c90a594bf42f12e64172b2481
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d27abd78e15ad6cb5ce4e9440ac425159a0b5bdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680945"
 ---
 # <a name="user-defined-functions"></a>Определяемые пользователем функции
 
@@ -19,11 +20,11 @@ ms.locfileid: "91164120"
   
 - Статический метод SQL, характерный для [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
-- Функция, поддерживаемая методом .NET Framework.  
+- Функция, поддерживаемая методом платформа .NET Framework.  
   
  В темах данного раздела показано формирование и вызов этих методов в приложении при самостоятельном написании кода. Разработчики, использующие Visual Studio, обычно используют реляционный конструктор объектов для соотнесения определяемых пользователем функций.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Как применять определяемые пользователем скалярные функции](how-to-use-scalar-valued-user-defined-functions.md)  
  Описано, как реализовать функцию, возвращающую скалярные значения.  
