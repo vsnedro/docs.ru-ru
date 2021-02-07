@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT'
 title: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
 ms.date: 03/30/2017
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
-ms.openlocfilehash: 1a75b51b57bdf2923ca6386f42c19c0b2f44fd39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 05f5364768d04b571e8901362d9ca2d26ecaa15d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753306"
 ---
 # <a name="corprof_e_unsupported_call_sequence-hresult"></a>CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
 
-CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framework версии 2,0. .NET Framework 4 возвращает это значение HRESULT в двух сценариях:  
+CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в платформа .NET Framework версии 2,0. Платформа .NET Framework 4 возвращает это значение HRESULT в двух сценариях:  
   
 - Когда захватывающий профилировщик принудительно сбрасывает контекст регистрации потока в произвольный момент времени, чтобы поток попытается получить доступ к структурам, которые находятся в непротиворечивом состоянии.  
   
@@ -33,7 +34,7 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
   
  Как правило, когда незахватывающий профилировщик выполняет код внутри метода [ICorProfilerCallback](icorprofilercallback-interface.md) и вызывает `ICorProfilerInfo` метод с допустимыми параметрами, он не должен быть взаимоблокировками или получать нарушение прав доступа. Например, код профилировщика, который выполняется внутри метода [ICorProfilerCallback:: класслоадфинишед](icorprofilercallback-classloadfinished-method.md) , может запросить сведения о классе, вызвав метод [ICorProfilerInfo2:: GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) . Код может получить CORPROF_E_DATAINCOMPLETE HRESULT, чтобы указать, что информация недоступна. Однако он не будет взаимоблокировками или получить нарушение прав доступа. Эти вызовы `ICorProfilerInfo` считаются синхронными, поскольку они выполняются из `ICorProfilerCallback` метода.  
   
- Однако управляемый поток, который выполняет код, не находящиеся в `ICorProfilerCallback` методе, считается асинхронным вызовом. В .NET Framework версии 1 было сложно определить, что может произойти в асинхронном вызове. Вызов может привести к взаимоблокировке, сбою или дать недопустимый ответ. В .NET Framework версии 2,0 появились некоторые простые проверки, которые помогут избежать этой проблемы. В .NET Framework 2,0 при асинхронном вызове ненадежной `ICorProfilerInfo` функции происходит сбой с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT.  
+ Однако управляемый поток, который выполняет код, не находящиеся в `ICorProfilerCallback` методе, считается асинхронным вызовом. В платформа .NET Framework версии 1 было сложно определить, что может произойти в асинхронном вызове. Вызов может привести к взаимоблокировке, сбою или дать недопустимый ответ. В платформа .NET Framework версии 2,0 появились некоторые простые проверки, которые помогут избежать этой проблемы. В платформа .NET Framework 2,0 при асинхронном вызове ненадежной `ICorProfilerInfo` функции происходит сбой с CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT.  
   
  Как правило, асинхронные вызовы не являются надежными. Однако следующие методы являются надежными и специально поддерживают асинхронные вызовы:  
   
@@ -81,7 +82,7 @@ CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT был введен в .NET Framewor
 |------------------------------------------------------|------------------------------------------------------------|  
 |[ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md)<br /><br /> [ExceptionUnwindFunctionEnter](icorprofilercallback-exceptionunwindfunctionenter-method.md)<br /><br /> [ексцептионунвиндфунктионлеаве](icorprofilercallback-exceptionunwindfunctionleave-method.md)<br /><br /> [ексцептионунвиндфиналлентер](icorprofilercallback-exceptionunwindfinallyenter-method.md)<br /><br /> [Exceptionunwindfinallyleave-](icorprofilercallback-exceptionunwindfinallyleave-method.md)<br /><br /> [ексцептионкатчерентер](icorprofilercallback-exceptioncatcherenter-method.md)<br /><br /> [рунтимесуспендстартед](icorprofilercallback-runtimesuspendstarted-method.md)<br /><br /> [RuntimeSuspendFinished](icorprofilercallback-runtimesuspendfinished-method.md)<br /><br /> [рунтимесуспендабортед](icorprofilercallback-runtimesuspendaborted-method.md)<br /><br /> [RuntimeThreadSuspended](icorprofilercallback-runtimethreadsuspended-method.md)<br /><br /> [RuntimeThreadResumed](icorprofilercallback-runtimethreadresumed-method.md)<br /><br /> [MovedReferences](icorprofilercallback-movedreferences-method.md)<br /><br /> [ObjectReferences](icorprofilercallback-objectreferences-method.md)<br /><br /> [обжектсаллокатедбикласс](icorprofilercallback-objectsallocatedbyclass-method.md)<br /><br /> [RootReferences2](icorprofilercallback-rootreferences-method.md)<br /><br /> [хандлекреатед](icorprofilercallback2-handlecreated-method.md)<br /><br /> [хандледестройед](icorprofilercallback2-handledestroyed-method.md)<br /><br /> [GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md)<br /><br /> [GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md)|[GetILFunctionBodyAllocator](icorprofilerinfo-getilfunctionbodyallocator-method.md)<br /><br /> [SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md)<br /><br /> [сетилинструментедкодемап](icorprofilerinfo-setilinstrumentedcodemap-method.md)<br /><br /> [ForceGC](icorprofilerinfo-forcegc-method.md)<br /><br /> [жетклассфромтокен](icorprofilerinfo-getclassfromtoken-method.md)<br /><br /> [GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md)<br /><br /> [жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md)<br /><br /> [жетаппдомаининфо](icorprofilerinfo-getappdomaininfo-method.md)<br /><br /> [EnumModules](icorprofilerinfo3-enummodules-method.md)<br /><br /> [рекуестпрофилердетач](icorprofilerinfo3-requestprofilerdetach-method.md)<br /><br /> [жетаппдомаинсконтаинингмодуле](icorprofilerinfo3-getappdomainscontainingmodule-method.md)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

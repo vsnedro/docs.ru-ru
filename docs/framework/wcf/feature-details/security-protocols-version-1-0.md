@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье протоколы безопасности версии 1,0.
 title: Протоколы безопасности версии 1.0
 ms.date: 03/30/2017
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-ms.openlocfilehash: d98a05bbcb8413c33672a17580c6d16b57c63b83
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c807f0b844fb9cb861148afa63d83826a9740c98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752734"
 ---
 # <a name="security-protocols-version-10"></a>Протоколы безопасности версии 1.0
 
@@ -46,7 +47,7 @@ ms.locfileid: "96254029"
 |KerberosOverTransport|Windows|X509|Транспорт|  
 |IssuedTokenOverTransport|Федеративные|X509|Транспорт|  
 |SspiNegotiatedOverTransport|Согласование Windows Sspi|Согласование Windows Sspi|Транспорт|  
-|AnonymousForCertificate|Нет|X509|Сообщение|  
+|AnonymousForCertificate|None|X509|Сообщение|  
 |UserNameForCertificate|Имя пользователя/пароль|X509|Сообщение|  
 |MutualCertificate|X509|X509|Сообщение|  
 |MutualCertificateDuplex|X509|X509|Сообщение|  
@@ -54,7 +55,7 @@ ms.locfileid: "96254029"
 |Kerberos|Windows|Windows|Сообщение|  
 |IssuedToken|Федеративные|Федеративные|Сообщение|  
 |SspiNegotiation|Согласование Windows Sspi|Согласование Windows Sspi|Сообщение|  
-|AnonymousForSslNegotiated|Нет|X509, TLS-Nego|Сообщение|  
+|AnonymousForSslNegotiated|None|X509, TLS-Nego|Сообщение|  
 |UserNameForSslNegotiated|Имя пользователя/пароль|X509, TLS-Nego|Сообщение|  
 |MutualSslNegotiated|X509|X509, TLS-Nego|Сообщение|  
 |IssuedTokenForSslNegotiated|Федеративные|X509, TLS-Nego|Сообщение|  

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: руководство по взаимодействию протоколов веб-служб'
 title: Рекомендации по взаимодействию протоколов веб-служб
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
-ms.openlocfilehash: f35ca629da65af749897d28d28808d06eced7aa8
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: cab744818d3a52c6f6cd0d95195d9112ac9babf6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752552"
 ---
 # <a name="web-services-protocols-interoperability-guide"></a>Рекомендации по взаимодействию протоколов веб-служб
 
@@ -102,7 +103,7 @@ WCF обеспечивает поддержку протоколов инфра�
 
 - [Basic Security Profile 1.0 Working Draft](http://www.ws-i.org/Profiles/BasicSecurityProfile-1.0-2006-03-29.html)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками](web-services-protocols-supported-by-system-provided-interoperability-bindings.md)
 - [Протоколы обмена сообщениями](messaging-protocols.md)

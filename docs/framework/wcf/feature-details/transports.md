@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье транспорты в Windows Communication Foundation
 title: Транспорты в Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF, transports
 - Windows Communication Foundation, transports
 ms.assetid: 005c894b-af70-48aa-a1c1-c99338083c27
-ms.openlocfilehash: 8623b788b848867f25836a657b07349dd50c2780
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e80a1730de107c0433949b7d476944f38e386702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251689"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752617"
 ---
 # <a name="transports-in-windows-communication-foundation"></a>Транспорты в Windows Communication Foundation
 
@@ -19,7 +20,7 @@ ms.locfileid: "96251689"
   
  В состав WCF входят дополнительные транспорты. Дополнительные сведения о службе очередей сообщений (MSMQ) см. в статье [очереди и надежные сеансы](queues-and-reliable-sessions.md). Дополнительные сведения о одноранговом транспорте см. в разделе одноранговая [сеть](peer-to-peer-networking.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Выбор транспортов](choosing-a-transport.md)  
  Описываются три основных типа транспорта и рассматриваются вопросы выбора транспорта.  

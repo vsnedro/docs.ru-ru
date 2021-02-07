@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo2::D Остаккснапшот'
 title: Метод ICorProfilerInfo2::DoStackSnapshot
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 287b11e9-7c52-4a13-ba97-751203fa97f4
 topic_type:
 - apiref
-ms.openlocfilehash: 10cc9dedfa34cd5235df721d7010bbd928fbc3ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e30e11dfe04da1e7a5adfef004036507b724963d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727241"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753254"
 ---
 # <a name="icorprofilerinfo2dostacksnapshot-method"></a>Метод ICorProfilerInfo2::DoStackSnapshot
 
@@ -66,7 +67,7 @@ HRESULT DoStackSnapshot(
  `contextSize`  
  окне Размер `CONTEXT` структуры, на которую ссылается `context` параметр.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  При передаче значения NULL для `thread` получается моментальный снимок текущего потока. Моментальные снимки могут создаваться для других потоков, только если целевой поток приостановлен в данный момент времени.  
   
@@ -74,7 +75,7 @@ HRESULT DoStackSnapshot(
   
  Порядок, в котором выполняется продвижение стека, — это обратная процедура, с которой кадры помещаются в стек: первый кадр (последний отправленный), основной кадр (с первой передачей) последним.  
   
- Дополнительные сведения о программировании профилировщика для прохода по управляемым стекам см. в статьях анализ [стека профилировщика в .NET Framework 2,0: основы и больше](/previous-versions/dotnet/articles/bb264782(v=msdn.10)).  
+ Дополнительные сведения о программировании профилировщика для прохода по управляемым стекам см. в статьях анализ [стека профилировщика в платформа .NET Framework 2,0: основы и больше](/previous-versions/dotnet/articles/bb264782(v=msdn.10)).  
   
  Анализ стека может быть синхронным или асинхронным, как описано в следующих разделах.  
   
@@ -110,9 +111,9 @@ HRESULT DoStackSnapshot(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)
