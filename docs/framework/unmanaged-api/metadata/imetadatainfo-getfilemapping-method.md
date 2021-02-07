@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иметадатаинфо:: GetFileMapping'
 title: Метод IMetaDataInfo::GetFileMapping
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2868dfec-c992-4606-88bb-a8e0b6b18271
 topic_type:
 - apiref
-ms.openlocfilehash: 8823f3cc016072d3f20100c29532459da5e97492
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 82a1a23c50a4d8340804f66966933fc6a11e0f8c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682395"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688485"
 ---
 # <a name="imetadatainfogetfilemapping-method"></a>Метод IMetaDataInfo::GetFileMapping
 
@@ -55,7 +56,7 @@ HRESULT GetFileMapping (
 |`E_INVALIDARG`|Значение NULL передано в качестве значения аргумента.|  
 |`COR_E_NOTSUPPORTED`|Реализация CLR не может предоставить сведения о области памяти. Это может происходить по следующим причинам:<br /><br /> — Область метаданных была открыта с помощью `ofWrite` `ofCopyMemory` флага или.<br />— Область метаданных была открыта без `ofReadOnly` флага.<br />— Метод [IMetaDataDispenser:: OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) использовался для открытия только части файла с метаданными.<br />— Файл не является переносимым исполняемым файлом (PE). **Примечание.**  Эти условия зависят от реализации CLR и, скорее всего, будут ослаблены в будущих версиях среды CLR.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Память, `ppvData` на которую указывает указатель, допустима, только если базовая область метаданных открыта.  
   
@@ -73,9 +74,9 @@ HRESULT GetFileMapping (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataInfo](imetadatainfo-interface.md)
 - [Перечисление CorFileMapping](corfilemapping-enumeration.md)

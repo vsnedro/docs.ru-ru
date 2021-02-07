@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugValue:: GetType'
 title: Метод ICorDebugValue::GetType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
 topic_type:
 - apiref
-ms.openlocfilehash: 06f403f0b653866428a41240f99833ec1180eb86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 750e73634683a03e811d2756cc62c16b6dcea3de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690331"
 ---
 # <a name="icordebugvaluegettype-method"></a>Метод ICorDebugValue::GetType
 
@@ -39,7 +40,7 @@ HRESULT GetType (
  `pType`  
  заполняет Указатель на значение перечисления "Корелементтипе", которое указывает тип значения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если объект является сложным типом времени выполнения, этот тип можно исследовать с помощью соответствующих подклассов `ICorDebugValue` интерфейса. Например, "ICorDebugObjectValue", который наследует от `ICorDebugValue` , представляет сложный тип.  
   
@@ -53,6 +54,6 @@ HRESULT GetType (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также

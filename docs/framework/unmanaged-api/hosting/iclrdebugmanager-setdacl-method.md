@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDebugManager:: Сетдакл'
 title: Метод ICLRDebugManager::SetDacl
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52f4af3f-e02b-4c20-9fd9-e8e4f4d6fc31
 topic_type:
 - apiref
-ms.openlocfilehash: 92134396d9f9d869866a73cdd31278f4ac1e6355
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b507d94f9e23e509d279a0fd4e32c8c996a4668b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689590"
 ---
 # <a name="iclrdebugmanagersetdacl-method"></a>Метод ICLRDebugManager::SetDacl
 
@@ -53,9 +54,9 @@ HRESULT SetDacl (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)

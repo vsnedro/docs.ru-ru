@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedBinder2:: GetReaderForFile2'
 title: Метод ISymUnmanagedBinder2::GetReaderForFile2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dd92dcaf-403c-464d-a254-21594985dddd
 topic_type:
 - apiref
-ms.openlocfilehash: e0fc6cf2a08de4a00cb8b7f98d3922df98f427c5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c1a180ceec07c3087150613365acfce646adc34e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706974"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689941"
 ---
 # <a name="isymunmanagedbinder2getreaderforfile2-method"></a>Метод ISymUnmanagedBinder2::GetReaderForFile2
 
@@ -64,11 +65,11 @@ HRESULT GetReaderForFile2(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Эта версия метода может искать PDB-файл в областях, отличных от right рядом с модулем. Политику поиска можно контролировать путем объединения [корсимсеарчполициаттрибутес](corsymsearchpolicyattributes-enumeration.md). Например, `AllowReferencePathAccess | AllowSymbolServerAccess` выполняет поиск PDB-файла рядом с исполняемым файлом и на сервере символов, но не запрашивает реестр или не использует путь в исполняемом файле. Если `searchPath` указан параметр, то поиск в этих каталогах будет выполняться всегда.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedBinder2](isymunmanagedbinder2-interface.md)
 - [Метод GetReaderForFile](isymunmanagedbinder-getreaderforfile-method.md)

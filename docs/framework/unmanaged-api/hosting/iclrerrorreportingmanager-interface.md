@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Iclrerrorreportingmanagergetbucketparametersforcurrentexception'
 title: Интерфейс ICLRErrorReportingManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type:
 - apiref
-ms.openlocfilehash: d3816c8a3b6204b053505aa888eb28d696f8990b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 094fe52858983fd0e1e5826e823932cb150b6087
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677852"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689278"
 ---
 # <a name="iclrerrorreportingmanager-interface"></a>Интерфейс ICLRErrorReportingManager
 
@@ -33,7 +34,7 @@ ms.locfileid: "95677852"
 |[Метод EndCustomDump](iclrerrorreportingmanager-endcustomdump-method.md)|Очищает конфигурацию пользовательского дампа стека, которая была задана предыдущим вызовом метода `BeginCustomDump` .|  
 |[Метод GetBucketParametersForCurrentException](iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|Возвращает контейнер Watson для текущего исключения в вызывающем потоке.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `BeginCustomDump`Метод задает конфигурацию пользовательского дампа стека. `EndCustomDump`Метод очищает конфигурацию дампа пользовательского стека и освобождает любое связанное состояние. Он должен вызываться после завершения пользовательского дампа.  
   
@@ -48,9 +49,9 @@ ms.locfileid: "95677852"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление ECustomDumpItemKind](ecustomdumpitemkind-enumeration.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

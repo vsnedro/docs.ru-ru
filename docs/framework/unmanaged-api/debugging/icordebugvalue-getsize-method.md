@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugValue:: resize'
 title: Метод ICorDebugValue::GetSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
 topic_type:
 - apiref
-ms.openlocfilehash: 9f5688ae4f76f9ddfde231aa6252d666c9152eec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3fc2582990d58fa2e42f240dfd3e563eed34e372
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690344"
 ---
 # <a name="icordebugvaluegetsize-method"></a>Метод ICorDebugValue::GetSize
 
@@ -39,7 +40,7 @@ HRESULT GetSize (
  `pSize`  
  заполняет Размер данного объекта значения в байтах.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если типом значения является ссылочный тип, этот метод возвращает размер указателя, а не размер объекта.  
   
@@ -53,8 +54,8 @@ HRESULT GetSize (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetSize64](icordebugvalue3-getsize64-method.md)

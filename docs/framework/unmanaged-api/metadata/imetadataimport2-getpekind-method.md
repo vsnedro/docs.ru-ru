@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataImport2:: GetPEKind'
 title: Метод IMetaDataImport2::GetPEKind
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
 topic_type:
 - apiref
-ms.openlocfilehash: d335beecc12e0c1c895e42888ad7172f78062ff7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3cd003f4b1a56f59b9e8c89bf1c4f8f2f8c7fea1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688589"
 ---
 # <a name="imetadataimport2getpekind-method"></a>Метод IMetaDataImport2::GetPEKind
 
@@ -43,7 +44,7 @@ HRESULT GetPEKind (
  `pdwMachine`  
  заполняет Указатель на значение, идентифицирующее архитектуру компьютера. Возможные значения см. в следующем разделе.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение, на которое ссылается `pdwMachine` параметр, может быть одним из следующих.  
   
@@ -61,9 +62,9 @@ HRESULT GetPEKind (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)

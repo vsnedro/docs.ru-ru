@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugValue2'
 title: Интерфейс ICorDebugValue2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
 topic_type:
 - apiref
-ms.openlocfilehash: 7aca5fcb5a55331756b4f98c08eb46fc4db1e289
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b408bb5d1732a60fc9aa8ffb93321d3542f2cab7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690266"
 ---
 # <a name="icordebugvalue2-interface"></a>Интерфейс ICorDebugValue2
 
@@ -31,7 +32,7 @@ ms.locfileid: "95720351"
 |------------|-----------------|  
 |[Метод GetExactType](icordebugvalue2-getexacttype-method.md)|Возвращает указатель интерфейса на `ICorDebugType` объект, представляющий <xref:System.Type> это значение.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,9 +45,9 @@ ms.locfileid: "95720351"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataTables:: DataColumn'
 title: Метод IMetaDataTables::GetColumn
 ms.date: 02/25/2019
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
 topic_type:
 - apiref
-ms.openlocfilehash: 270546f0270521e38cfdcae5e4d2137202c13cb1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c4cec7216f93783b34b594330358d1e6036ed40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688277"
 ---
 # <a name="imetadatatablesgetcolumn-method"></a>Метод IMetaDataTables::GetColumn
 
@@ -51,7 +52,7 @@ HRESULT GetColumn (
  `pVal`  
  заполняет Указатель на значение в ячейке.  
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Интерпретация значения, возвращаемого с помощью, `pVal` зависит от типа столбца. Тип столбца можно определить с помощью метода [IMetaDataTables. GetColumnInfo](imetadatatables-getcolumninfo-method.md).
 
@@ -80,9 +81,9 @@ HRESULT GetColumn (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **Версии .NET Framework**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Версии платформа .NET Framework**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейс IMetaDataTables2](imetadatatables2-interface.md)
