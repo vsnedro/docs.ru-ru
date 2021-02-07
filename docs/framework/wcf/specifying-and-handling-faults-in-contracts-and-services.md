@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: указание и обработка ошибок в контрактах и службах'
 title: Задание и обработка сбоев в контрактах и службах
 ms.date: 03/30/2017
 helpviewer_keywords:
 - handling faults [WCF]
 ms.assetid: a9696563-d404-4905-942d-1e0834c26dea
-ms.openlocfilehash: bbc1ca97c8887ebdfbe30f7dd76549572367efbe
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 32a1c795d2be964ff5da259b70a5695ddedfadb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72321102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676395"
 ---
 # <a name="specifying-and-handling-faults-in-contracts-and-services"></a>Задание и обработка сбоев в контрактах и службах
 
@@ -47,12 +48,12 @@ ms.locfileid: "72321102"
 
 ## <a name="undeclared-soap-faults-and-debugging"></a>Необъявленные ошибки протокола SOAP и отладка
 
-Объявленные ошибки протокола SOAP очень полезны для построения надежных распределенных приложений с возможностью взаимодействия. Однако в некоторых случаях для службы (или дуплексного клиента) полезно отправлять необъявленную ошибку SOAP, которая не упоминается для данной операции в языке WSDL. Например, при разработке службы могут произойти непредвиденные ситуации, в которых для отладки понадобится отправить информацию обратно клиенту. Кроме того, можно установить свойство <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> или <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> в значение `true`, чтобы позволить клиентам WCF получать сведения о внутренних исключениях операций службы. Как отправка отдельных ошибок, так и Настройка свойств поведения отладки описаны в статье [Отправка и получение ошибок](sending-and-receiving-faults.md).
+Объявленные ошибки протокола SOAP очень полезны для построения надежных распределенных приложений с возможностью взаимодействия. Однако в некоторых случаях для службы (или дуплексного клиента) полезно отправлять необъявленную ошибку SOAP, которая не упоминается для данной операции в языке WSDL. Например, при разработке службы могут произойти непредвиденные ситуации, в которых для отладки понадобится отправить информацию обратно клиенту. Кроме того, можно задать <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> свойство или свойство, чтобы <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> `true` позволить клиентам WCF получать сведения о внутренних исключениях операций службы. Как отправка отдельных ошибок, так и Настройка свойств поведения отладки описаны в статье [Отправка и получение ошибок](sending-and-receiving-faults.md).
 
 > [!IMPORTANT]
-> Поскольку управляемые исключения могут предоставлять внутренние сведения о приложении, установка <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> или <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> в `true` может позволить клиентам WCF получать сведения о внутренних исключениях операций службы, включая персональные и другие конфиденциальные данные. об.
+> Поскольку управляемые исключения могут предоставлять внутренние сведения о приложении, <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> устанавливать <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> или `true` разрешать клиентам WCF получать сведения о внутренних исключениях операций службы, включая персональные и другие конфиденциальные сведения.
 >
-> Присваивать свойству <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> или <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> значение `true` рекомендуется только в качестве временного способа отладки приложения службы. Кроме того, WSDL для метода, который возвращает такие необработанные управляемые исключения, не содержит контракт для исключения <xref:System.ServiceModel.FaultException%601> типа <xref:System.ServiceModel.ExceptionDetail>. Клиенты должны рассчитывать на возможность неизвестной ошибки SOAP (возвращенные клиентам WCF как объекты <xref:System.ServiceModel.FaultException?displayProperty=nameWithType>) для правильного получения отладочной информации.
+> Присваивать свойству <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> или <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> значение `true` рекомендуется только в качестве временного способа отладки приложения службы. Кроме того, WSDL для метода, который возвращает такие необработанные управляемые исключения, не содержит контракт для исключения <xref:System.ServiceModel.FaultException%601> типа <xref:System.ServiceModel.ExceptionDetail>. Клиенты должны рассчитывать на возможность неизвестной ошибки SOAP (возвращается клиентам WCF как <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> объекты) для правильного получения отладочной информации.
 
 ## <a name="customizing-error-handling-with-ierrorhandler"></a>Настройка обработки ошибок с помощью интерфейса IErrorHandler
 
@@ -76,4 +77,4 @@ ms.locfileid: "72321102"
 - <xref:System.ServiceModel.FaultException.Reason%2A>
 - <xref:System.ServiceModel.FaultCode.SubCode%2A>
 - <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
-- [Определение и указание сбоев](defining-and-specifying-faults.md)
+- [Определение и задание сбоев](defining-and-specifying-faults.md)

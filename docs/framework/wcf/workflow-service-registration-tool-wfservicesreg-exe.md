@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: средство регистрации службы рабочих процессов (WFServicesReg.exe)'
 title: Программа регистрации служб WorkFlow (WFServicesReg.exe)
 ms.date: 03/30/2017
 ms.assetid: 9e92c87b-99c5-4e8d-9d53-7944cc2b47d3
-ms.openlocfilehash: 763b617a99c98383b5b873e4fb8646884f9b5253
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 302da7e6e62db771472f95dc422cc7e97408600b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261882"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676330"
 ---
 # <a name="workflow-service-registration-tool-wfservicesregexe"></a>Программа регистрации служб WorkFlow (WFServicesReg.exe)
 
@@ -19,9 +20,9 @@ ms.locfileid: "96261882"
 WFServicesReg.exe [-c | -r | -v | -m | -i]  
 ```  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
- Это средство можно найти в каталоге установки .NET Framework 3,5, в частности, в%windir%\Microsoft.NET\Framework\v3.5 или%windir%\Microsoft.NET\Framework64\v3.5 на 64-разрядных компьютерах.  
+ Это средство можно найти в каталоге установки платформа .NET Framework 3,5, в частности, в%windir%\Microsoft.NET\Framework\v3.5 или%windir%\Microsoft.NET\Framework64\v3.5 на 64-разрядных компьютерах.  
   
  В следующей таблице представлены параметры, которые могут использоваться со средством регистрации служб Workflow Services (WFServicesReg.exe).  
   
@@ -37,7 +38,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 
  Средство проверяет файл Web.config и регистрирует следующие объекты.  
   
-- Ссылочные сборки .NET Framework 3,5.  
+- Ссылочные сборки платформа .NET Framework 3,5.  
   
 - Поставщик построения для XOML-файлов.  
   
@@ -74,7 +75,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
   
 ### <a name="installing-iis-after-net-framework-35-is-installed"></a>Установка IIS после установки .NET Framework 3.5  
 
- На компьютере под Windows Server 2003 .NET Framework 3,5 устанавливается до установки IIS. Из-за недоступности метабазы IIS установка .NET Framework 3,5 будет выполнена без установки скриптов scriptmap и Rules.  
+ На компьютере под Windows Server 2003 платформа .NET Framework 3,5 устанавливается до установки IIS. Из-за недоступности метабазы IIS установка платформа .NET Framework 3,5 будет выполнена без установки скриптов scriptmap и Rules.  
   
  После установки IIS можно воспользоваться средством WFServicesReg.exe с переключателем `/c` для установки этих карт скриптов.  
   
@@ -92,4 +93,4 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
   
 ### <a name="configuring-handlers-after-switching-iis-mode"></a>Настройка обработчиков после переключения режима IIS  
 
- Если службы IIS находятся в режиме общей конфигурации и установлено .NET Framework 3,5, метабаза IIS настраивается в общем расположении. Если переключить IIS в режим, отличный от режима общей конфигурации, в локальной метабазе не будут содержаться необходимые обработчики. Чтобы правильно настроить локальный метабазу, можно либо импортировать общий метабазу в локальную, либо выполнить команду "WFServicesReg.exe/c", которая настраивает локальный метабазу.
+ Если службы IIS находятся в режиме общей конфигурации и установлено платформа .NET Framework 3,5, метабаза IIS настраивается в общем расположении. Если переключить IIS в режим, отличный от режима общей конфигурации, в локальной метабазе не будут содержаться необходимые обработчики. Чтобы правильно настроить локальный метабазу, можно либо импортировать общий метабазу в локальную, либо выполнить команду "WFServicesReg.exe/c", которая настраивает локальный метабазу.

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: шаблоны WCF Visual Studio'
 title: Шаблоны WCF в Visual Studio
 ms.date: 03/30/2017
 ms.assetid: 6a608575-3535-4190-89da-911e24c8374f
-ms.openlocfilehash: a3aa7e3ee57759ef54ddaa898fe036c4e3caa33e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95d320b2a425ddef7e48f915c8f66d759702ccce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "96279705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676369"
 ---
 # <a name="wcf-visual-studio-templates"></a>Шаблоны WCF в Visual Studio
 
@@ -93,7 +94,7 @@ ms.locfileid: "96279705"
 > [!NOTE]
 > Служба WCF с поддержкой Silverlight предоставляет доступ к конечной точке `basicHttpBinding` без применения параметров безопасности. Поэтому сведения о службе могут быть получены всеми клиентами, которые подключены к этой службе. Сообщения, которыми обмениваются служба и клиент, также не подписываются и не шифруются. Для защиты конечной точки необходимо использовать проверку подлинности ASP.NET, протокол HTTPS или другие механизмы.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Узел службы WCF (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)
 - [Тестовый клиент WCF (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)
