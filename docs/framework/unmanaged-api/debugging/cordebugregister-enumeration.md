@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorDebugRegister
 title: Перечисление CorDebugRegister
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 003bb138-7960-4291-ac88-0d87e470ff70
 topic_type:
 - apiref
-ms.openlocfilehash: 85df98e83396c9439c28dd41a3ffa02b820c9c3e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7a5dc771a239a82448f898e2f518e920993ec35a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661887"
 ---
 # <a name="cordebugregister-enumeration"></a>Перечисление CorDebugRegister
 
@@ -190,7 +191,7 @@ typedef enum CorDebugRegister {
 |`REGISTER_ARM_R12`|Регистр R12 на процессоре ARM.|  
 |`REGISTER_ARM_LR`|Регистр связи (R14) на процессоре ARM.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  На процессоре IA-64 имеются 128 регистров данных общего назначения и 128 регистров данных с плавающей запятой, но используются только значения `REGISTER_IA64_R0` и `REGISTER_IA64_F0`. Другие значения можно определить следующим образом.  
   
@@ -208,8 +209,8 @@ typedef enum CorDebugRegister {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: LINQ to SQL N-Tiered с веб-службами'
 title: N-уровневое использование LINQ to SQL с веб-службами
 ms.date: 03/30/2017
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
-ms.openlocfilehash: dd1f756fae99fbae591b27aaefc7cc4ad7501bd6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7c97cc80f071ae964f329265f5c3d0e68e12b84f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175295"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663109"
 ---
 # <a name="linq-to-sql-n-tier-with-web-services"></a>N-уровневое использование LINQ to SQL с веб-службами
 
@@ -19,7 +20,7 @@ ms.locfileid: "91175295"
   
  Затем следует определить интерфейс с методами, которые клиенты будут вызывать для извлечения, вставки и обновления данных. Методы интерфейса заключают запросы LINQ. Для обработки удаленных вызовов методов и сериализации данных можно использовать любой вид механизма сериализации. Единственное требование заключается в том, что если в объектной модели существуют циклические или двунаправленные отношения, например между классами "Customers" и "Orders" в стандартной объектной модели "Northwind", то необходимо использовать сериализатор, который поддерживает такие отношения. Сериализатор Windows Communication Foundation (WCF) <xref:System.Runtime.Serialization.DataContractSerializer> поддерживает двунаправленные отношения, а сериализатор XmlSerializer, который используется для веб-служб, не совместимых с WCF, не поддерживает. Если используется сериализатор XmlSerializer, то необходимо убедиться, что в объектной модели отсутствуют циклические связи.  
   
- Дополнительные сведения о Windows Communication Foundation см. [в разделе Windows Communication Foundation Services and WCF Data Services в Visual Studio](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio).  
+ Дополнительные сведения о Windows Communication Foundation см. [в разделе Windows Communication Foundation Services and службы данных WCF в Visual Studio](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio).  
   
  Реализуйте бизнес-правила и другую логику, относящуюся к домену, используя разделяемые классы и методы в классе <xref:System.Data.Linq.DataContext> и классах сущностей для обработки событий [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] времени выполнения. Дополнительные сведения см. в разделе [Реализация N-уровневой бизнес-логики](implementing-business-logic-linq-to-sql.md).  
   
@@ -41,7 +42,7 @@ ms.locfileid: "91175295"
   
  Дополнительные сведения см. в статьях [Получение данных и операции CUD в N-уровневых приложениях (LINQ to SQL)](data-retrieval-and-cud-operations-in-n-tier-applications.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [N-уровневые и удаленные приложения с LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
 - [Обзор серверного веб-элемента управления LinqDataSource](/previous-versions/aspnet/bb547113(v=vs.100))

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кордебугсреадстате
 title: Перечисление CorDebugThreadState
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5
 topic_type:
 - apiref
-ms.openlocfilehash: 5eee2aee5873fe512136bc5407e395acdc31af29
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0cf83ee31547e49ccc7d09e0ab4ee85548688b36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661812"
 ---
 # <a name="cordebugthreadstate-enumeration"></a>Перечисление CorDebugThreadState
 
@@ -41,7 +42,7 @@ typedef enum CorDebugThreadState {
 |`THREAD_RUN`|Поток выполняется свободно, если не происходит событие отладки.|  
 |`THREAD_SUSPEND`|Поток не может быть запущен.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Отладчик использует `CorDebugThreadState` перечисление для управления выполнением потока. Состояние потока можно задать с помощью метода [ICorDebugThread:: SetDebugState](icordebugthread-setdebugstate-method.md) или [ICorDebugController:: SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) .  
   
@@ -55,8 +56,8 @@ typedef enum CorDebugThreadState {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Вставка изображения из файла'
 title: Вставка изображения из файла
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 35900aa2-5615-4174-8212-ba184c6b82fb
-ms.openlocfilehash: e70576637d44e874532aa06da4fe94115ac8ed9c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 009b652988a6ce5dc532d3af926f865f7fc806e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663200"
 ---
 # <a name="inserting-an-image-from-a-file"></a>Вставка изображения из файла
 
@@ -132,10 +133,10 @@ public static byte[] GetPhoto(string filePath)
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование команд для изменения данных](../using-commands-to-modify-data.md)
 - [Извлечение двоичных данных](../retrieving-binary-data.md)
-- [SQL Server данные в двоичном и больших значениях](sql-server-binary-and-large-value-data.md)
+- [Двоичные данные и данные больших значений SQL Server](sql-server-binary-and-large-value-data.md)
 - [Сопоставления типов данных SQL Server](../sql-server-data-type-mappings.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

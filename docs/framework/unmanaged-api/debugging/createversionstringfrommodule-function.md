@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции CreateVersionStringFromModule
 title: Функция CreateVersionStringFromModule
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
 - apiref
-ms.openlocfilehash: 1b944034251b34350057866b2a52e63e934d72d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 45ae3ec31cf77e4c96e42a58b23e1f52dcf7c54b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661549"
 ---
 # <a name="createversionstringfrommodule-function"></a>Функция CreateVersionStringFromModule
 
@@ -74,7 +75,7 @@ HRESULT CreateVersionStringFromModule (
  E_FAIL (или другие коды возврата E_)  
  Параметр `pidDebuggee` не ссылается на допустимый процесс, или произошел другой сбой.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Эта функция принимает процесс CLR, который определяется параметром `pidDebuggee` и строкой пути, заданной параметром `szModuleName`. Строка версии возвращается в буфер, на который указывает `pBuffer`. Эта строка непрозрачна для пользователя функции, то есть сама строка версии не имеет внутреннего смысла. Он используется исключительно в контексте этой функции и [функции CreateDebuggingInterfaceFromVersion](createdebugginginterfacefromversion-function-for-silverlight.md).  
   
@@ -88,4 +89,4 @@ HRESULT CreateVersionStringFromModule (
   
  **Библиотека:** dbgshim.dll  
   
- **.NET Framework версии:** 3,5 SP1
+ **Платформа .NET Framework версии:** 3,5 SP1

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorDebugIntercept
 title: Перечисление CorDebugIntercept
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
 topic_type:
 - apiref
-ms.openlocfilehash: 3d3d4af8e9ee073c0aefec418a3b53c4589adf0d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ddd17aff309396fdcda37c731ff907224ee17db2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729113"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661978"
 ---
 # <a name="cordebugintercept-enumeration"></a>Перечисление CorDebugIntercept
 
@@ -51,7 +52,7 @@ typedef enum CorDebugIntercept {
 |`INTERCEPT_INTERCEPTION`|Не используется.|  
 |`INTERCEPT_ALL`|Возможен перехват любого кода.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Используйте метод [ICorDebugStepper:: сетинтерцептмаск](icordebugstepper-setinterceptmask-method.md) , чтобы установить типы кода, которые могут быть перехвачены.  
   
@@ -63,8 +64,8 @@ typedef enum CorDebugIntercept {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе SetManifestFile
 title: Метод SetManifestFile
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1b33de4c-19cb-4a36-a93f-8675b2a36d58
 topic_type:
 - apiref
-ms.openlocfilehash: a4518e93db887dbdc4397636479be8bf5a705c2d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fe91c7f2b4e6f58a0a740de84e055ead49adb77d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733728"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662329"
 ---
 # <a name="setmanifestfile-method"></a>Метод SetManifestFile
 
@@ -43,7 +44,7 @@ HRESULT SetManifestFile(
 
  Возвращает S_OK, если метод завершается с ошибкой.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызовите этот метод, прежде чем запрашивать Win32ResBlob. Значение `pszFile` параметра — это имя файла манифеста, содержимое которого считывается и помещается в ресурсы Win32 с идентификатором RT_MANIFEST. При вызове с помощью параметра NULL все ранее прочитанные манифесты очищаются. Это позволяет сбросить состояние компоновщика до значения времени инициализации.  
   
@@ -51,7 +52,7 @@ HRESULT SetManifestFile(
 
  Требуется aLink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink3](ialink3-interface.md)
 - [API ALink](index.md)

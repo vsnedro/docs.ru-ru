@@ -1,18 +1,19 @@
 ---
-title: Большие UDT
+description: 'Подробнее: крупные определяемые пользователем типы'
+title: Большие, определяемые пользователем типы
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
-ms.openlocfilehash: 032093244f51893cd3b0cf50ad81c79413aaa32e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e1a40330bb48d6320dc96533e764f1b856e0f410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91194548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663187"
 ---
-# <a name="large-udts"></a>Большие, определяемые пользователем типы
+# <a name="large-udts"></a>Большие UDT
 
 Определяемые пользователем типы призваны дать разработчику возможность расширить серверную систему скалярных типов путем хранения объектов среды CLR в базе данных SQL Server. Определяемые пользователем типы могут содержать несколько элементов, и их поведение может отличаться от традиционных псевдонимов типов данных, которые состоят из одного системного типа данных SQL Server.  
   
@@ -25,7 +26,7 @@ ms.locfileid: "91194548"
   
  **Документация по SQL Server**  
   
-1. [Определяемые пользователем типы CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
+1. [Пользовательские типы CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
 ## <a name="retrieving-udt-schemas-using-getschema"></a>Загрузка схем определяемых пользователем типов данных с помощью метода GetSchema  
 
@@ -137,10 +138,10 @@ Using connection As New SqlConnection( _
 End Using  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка параметров и типы данных параметров](../configuring-parameters-and-parameter-data-types.md)
 - [Извлечение сведений о схеме базы данных](../retrieving-database-schema-information.md)
 - [Сопоставления типов данных SQL Server](../sql-server-data-type-mappings.md)
-- [SQL Server данные в двоичном и больших значениях](sql-server-binary-and-large-value-data.md)
+- [Двоичные данные и данные больших значений SQL Server](sql-server-binary-and-large-value-data.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

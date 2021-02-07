@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Дакпжетмодулеаддресс'
 title: Структура DacpGetModuleAddress
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: a65fa9974165fa36e59a7fb83dca6dd902f7d8dc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3de76cc4f15bffd35d7a43ae25a313eb2fe59b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661601"
 ---
 # <a name="dacpgetmoduleaddress-structure"></a>Структура DacpGetModuleAddress
 
@@ -49,7 +50,7 @@ struct DacpGetModuleAddress
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [Запрос](dacpgetmoduleaddress-request-method.md) | Выполняет запрос на заполнение структуры из заданной структуры среды выполнения. |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше, где `CLRDATA_ADDRESS` — это 64-разрядное целое число без знака.
 
@@ -58,9 +59,9 @@ struct DacpGetModuleAddress
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Структуры отладки](debugging-structures.md)

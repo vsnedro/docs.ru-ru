@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Directives> элементе: Element (.NET Native)'
 title: <Directives> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
-ms.openlocfilehash: 524c30872e218f6428491507bbfb4ca54b6061b1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 7aa3bf3718f32d55ba8189c65705868c6fb399ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251104"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662914"
 ---
 # <a name="directives-element-net-native"></a>\<Directives> Элемент (.NET Native)
 
@@ -36,7 +37,7 @@ ms.locfileid: "96251104"
 |[\<Application>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения.|  
 |[\<Library>](library-element-net-native.md)|Определяет сборку, чьи дочерние типы и члены типов требуют метаданные во время выполнения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Каждый файл директив среды выполнения содержит только один элемент `<Directives>`.  
   

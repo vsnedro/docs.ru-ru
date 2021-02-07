@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugChain:: Жетактивефраме'
 title: Метод ICorDebugChain::GetActiveFrame
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 36887017-670b-4f21-b406-8fab956f84a3
 topic_type:
 - apiref
-ms.openlocfilehash: daecd216b4d7e9c23336b8956c13735549be901b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d46906d9d6c671880d9446d889cdf9f83f3b4366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661428"
 ---
 # <a name="icordebugchaingetactiveframe-method"></a>Метод ICorDebugChain::GetActiveFrame
 
@@ -39,7 +40,7 @@ HRESULT GetActiveFrame (
  `ppFrame`  
  заполняет Указатель на адрес объекта ICorDebugFrame, который представляет активный (то есть самый последний) кадр в цепочке.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если управляемый фрейм стека недоступен, `ppFrame` устанавливается в значение null.  
   
@@ -53,4 +54,4 @@ HRESULT GetActiveFrame (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

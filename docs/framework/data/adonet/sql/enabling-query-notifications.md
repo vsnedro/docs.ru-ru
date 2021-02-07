@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о включении уведомлений о запросах
 title: Включение уведомлений запросов
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a5333e19-8e55-4aa9-82dc-ca8745e516ed
-ms.openlocfilehash: 4e9b3a2e1f176a9d01e983bc469cc4032fa5d730
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e0ff405477a9faa141ce81c5ac8ba2d1ace95501
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663343"
 ---
 # <a name="enabling-query-notifications"></a>Включение уведомлений запросов
 
@@ -91,7 +92,7 @@ CREATE SERVICE ContactChangeNotifications
 
  В то же время <xref:System.Data.Sql.SqlNotificationRequest> требует реализации всей инфраструктуры прослушивания вручную. Кроме того, необходимо будет определить все поддерживающие объекты компонента Service Broker, такие как очередь, служба и типы сообщений, поддерживаемые очередью. Этот ручной подход полезен, если для вашего приложения требуются специальные сообщения с уведомлениями или параметры уведомлений или же если ваше приложение является частью более крупного приложения Service Broker.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Уведомления о запросах в SQL Server](query-notifications-in-sql-server.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

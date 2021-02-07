@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кордебугмдафлагс
 title: Перечисление CorDebugMDAFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
 topic_type:
 - apiref
-ms.openlocfilehash: 1bb99503481d917d41ae00a5ef73c8fa59e2a999
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d7e9178d76286b112035729e997b1f68e2a93fb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661939"
 ---
 # <a name="cordebugmdaflags-enumeration"></a>Перечисление CorDebugMDAFlags
 
@@ -39,7 +40,7 @@ typedef enum CorDebugMDAFlags {
 |------------|-----------------|  
 |`MDA_FLAG_SLIP`|Поток, в котором был запущен MDA, был в запаздывания с момента запуска MDA.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если стек вызовов больше не описывает место первоначального создания MDA, обсуждение считается *, что он* находится в недоступном месте. Это необычное обстоятельство, вызванное выполнением недействительной операции потока при выходе.  
   
@@ -51,8 +52,8 @@ typedef enum CorDebugMDAFlags {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе SetNonAssemblyFlags
 title: Метод SetNonAssemblyFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f8ba6fc8-f5aa-4066-ac96-56332758f5ec
 topic_type:
 - apiref
-ms.openlocfilehash: b7bcf530947c161decc9c01c07df310550d69738
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9cf311ec8f04f97da03be626e20c1c07065eac38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662316"
 ---
 # <a name="setnonassemblyflags-method"></a>Метод SetNonAssemblyFlags
 
@@ -46,7 +47,7 @@ HRESULT SetNonAssemblyFlags(
 
  Требуется ALink. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IALink](ialink-interface.md)
 - [Интерфейс IALink2](ialink2-interface.md)
