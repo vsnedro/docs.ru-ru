@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как вызывать функции Model-Defined в запросах.
 title: Практическое руководство. Вызов определенных моделью функций в запросах
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6c804e4d-f348-4afd-9f63-d3f0f24bc6a9
-ms.openlocfilehash: b142ef820e964eaf5f1afed53a6b12a9344c7dda
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d59ef6edeba1e4b00e0481f8578e9c04735831fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748652"
 ---
 # <a name="how-to-call-model-defined-functions-in-queries"></a>Практическое руководство. Вызов определенных моделью функций в запросах
 
@@ -46,7 +47,7 @@ ms.locfileid: "91189335"
  [!code-csharp[DP ConceptualModelFunctions#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp conceptualmodelfunctions/cs/program.cs#3)]
  [!code-vb[DP ConceptualModelFunctions#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp conceptualmodelfunctions/vb/module1.vb#3)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения о EDMX-файлах](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

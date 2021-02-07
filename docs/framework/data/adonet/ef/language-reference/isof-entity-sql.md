@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: ISOF (Entity SQL)'
 title: ISOF (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-ms.openlocfilehash: 3cbbc9b6feda1bde104ed2c95d4dca274b090028
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4a44ddc74ef16ec16285132f6567ca2500e173a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91202283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748353"
 ---
 # <a name="isof-entity-sql"></a>ISOF (Entity SQL)
 
@@ -61,6 +62,6 @@ expression IS [ NOT ] OF ( [ ONLY ] type )
   
  [! code-SQL [DP Ентитисервицес основные понятия # TREAT_ISOF] ~/самплес/сниппетс/тскл/VS_Snippets_Data/DP ентитисервицес основные понятия/TSQL/ентитискл. SQL # treat_isof)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)

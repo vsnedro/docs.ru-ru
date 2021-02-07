@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: известные проблемы и рекомендации в LINQ to Entities'
 title: 'LINQ to Entities: рекомендации и известные проблемы'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
-ms.openlocfilehash: 0d36461cea68383e070db80d85f596151bd9c2ae
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 61377fc27770cb16583e0347fff1a03b6cd44af6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748314"
 ---
 # <a name="known-issues-and-considerations-in-linq-to-entities"></a>LINQ to Entities: рекомендации и известные проблемы
 
@@ -94,6 +95,6 @@ ms.locfileid: "91161962"
  [!code-csharp[DP L2E Conceptual Examples#ProjToAnonType2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#projtoanontype2)]
  [!code-vb[DP L2E Conceptual Examples#ProjToAnonType2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#projtoanontype2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ to Entities](linq-to-entities.md)

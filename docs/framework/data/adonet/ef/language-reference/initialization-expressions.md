@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: выражения инициализации'
 title: Выражения инициализации
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 98daef1f-15d4-483e-985c-d78ea3abe8c8
-ms.openlocfilehash: 93f590e1c177adf541baca85a48fee5f9eb8d1d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 02f2ea6953291641516b1daffbb2b75931ffb3cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748561"
 ---
 # <a name="initialization-expressions"></a>Выражения инициализации
 
@@ -47,6 +48,6 @@ ms.locfileid: "91203635"
  [!code-csharp[DP L2E Conceptual Examples#TypeInitialization_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#typeinitialization_mq)]
  [!code-vb[DP L2E Conceptual Examples#TypeInitialization_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#typeinitialization_mq)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Выражения в запросах LINQ to Entities](expressions-in-linq-to-entities-queries.md)

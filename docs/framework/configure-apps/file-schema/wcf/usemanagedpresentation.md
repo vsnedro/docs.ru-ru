@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <useManagedPresentation>'
 title: <useManagedPresentation>
 ms.date: 03/30/2017
 ms.assetid: 17a0dd77-af54-41db-a9d0-4b17ff42878f
-ms.openlocfilehash: 86a6f975b05133d5f9f21fcfb82ef4c23d2ffaba
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9203daedcc0553c7a1308b2763b9e818ca6560c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148816"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749042"
 ---
 # \<useManagedPresentation>
 
@@ -36,7 +37,7 @@ ms.locfileid: "91148816"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -48,7 +49,7 @@ ms.locfileid: "91148816"
 
  Этот элемент используется поставщиком удостоверения для отражения в своей политике поддержки CardSpace-профиля WS-Trust. Поставщики удостоверений, которые предоставляют такое утверждение политики, должны быть способны выдавать маркеры на основе этого профиля CardSpace.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.UseManagedPresentationElement>
 - <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>
