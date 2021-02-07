@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: One-Time процедура установки для примеров Windows Communication Foundation'
 title: Процедура однократной настройки образцов Windows Communication Foundation
 ms.date: 03/30/2017
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
-ms.openlocfilehash: bf25ea4734bad007fa3ac19df0664932d981519c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 8d57da5e018a61c6d11c9a9dc319ee74ec19d2ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752097"
 ---
 # <a name="one-time-setup-procedure-for-the-windows-communication-foundation-samples"></a>Процедура однократной настройки образцов Windows Communication Foundation
 
@@ -22,7 +23,7 @@ ms.locfileid: "90548121"
 
 1. Убедитесь, что ASP.NET настроен. Дополнительные сведения о настройке ASP.NET см. в разделе [инструкции по размещению службы](internet-information-service-hosting-instructions.md)IIS.
 
-2. Убедитесь, что установлен .NET Framework 4. Выполните поиск в следующем каталоге версии 4.0 (или более поздней): **\виндовс\микрософт.нет\фрамеворк**
+2. Убедитесь, что установлен платформа .NET Framework 4. Выполните поиск в следующем каталоге версии 4.0 (или более поздней): **\виндовс\микрософт.нет\фрамеворк**
 
 3. Убедитесь, что установлен Visual Studio 2012 или более поздней версии, либо установлена операционная система Windows Server 2008 SP2 или более поздней версии.
 
@@ -37,15 +38,15 @@ ms.locfileid: "90548121"
     ```
 
     > [!WARNING]
-    > При выполнении команды `aspnet_regiis –i –enable` пул приложений по умолчанию будет выполняться с помощью .NET Framework 4, что может привести к проблемам несовместимости других приложений на том же компьютере.
+    > При выполнении команды `aspnet_regiis –i –enable` пул приложений по умолчанию будет выполняться с помощью платформа .NET Framework 4, что может привести к проблемам несовместимости других приложений на том же компьютере.
 
 5. Следуйте [инструкциям брандмауэра](firewall-instructions.md) , чтобы включить порты, используемые образцами.
 
 6. Проверьте наличие следующего каталога по умолчанию: \<InstallDrive> :**\ WF_WCF_Samples**. Если образцы были предварительно установлены, этот каталог будет выбран по умолчанию.
 
-7. Если образцы не установлены, установите их из [примеров Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
+7. Если образцы не установлены, установите их из [примеров Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
 
-8. После установки образцов перейдите на страницу: \<InstallDrive> :**\ WF_WCF_Samples \вкф\сетуп \\ **
+8. После установки образцов перейдите на страницу: \<InstallDrive> :**\ WF_WCF_Samples \вкф\сетуп \\**
 
 9. Запустите пакетный файл **Setupvroot.bat** . Выполняются следующие шаги.
 
