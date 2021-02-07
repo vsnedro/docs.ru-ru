@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 1124-Инвокемесодисстатик'
 title: 1124 - InvokeMethodIsStatic
 ms.date: 03/30/2017
 ms.assetid: b9643641-fb52-4fa8-b354-4dd6617d68f6
-ms.openlocfilehash: d7ad99131f9813c2102f52784fc33605bed37557
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 86febd9c94c2e4c533eb5ab4349855f6d048a5ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242127"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667386"
 ---
 # <a name="1124---invokemethodisstatic"></a>1124 - InvokeMethodIsStatic
 
@@ -17,7 +18,7 @@ ms.locfileid: "96242127"
 |-|-|  
 |ID|1124|  
 |Keywords|WFRuntime|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  
