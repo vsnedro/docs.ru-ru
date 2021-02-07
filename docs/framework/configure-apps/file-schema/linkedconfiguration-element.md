@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <linkedConfiguration> element'
 title: <linkedConfiguration> - элемент
 ms.date: 03/30/2017
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - linked configuration files
 - linkedConfiguration Element
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-ms.openlocfilehash: 14ee2275ecf690ab16ffaabd71fbbe7e1a4897bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e4312cf788784241efc35304b632dfe1fdef1bc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74087965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698665"
 ---
 # <a name="linkedconfiguration-element"></a>Элемент \<linkedConfiguration>
 
@@ -32,7 +33,7 @@ ms.locfileid: "74087965"
 <linkedConfiguration href="URL of linked configuration file" />
 ```
 
-## <a name="attribute"></a>Атрибут
+## <a name="attribute"></a>attribute
 
 |           | Описание |
 | --------- | ----------- |
@@ -42,7 +43,7 @@ ms.locfileid: "74087965"
 
 |     | Описание |
 | --- | ----------- |
-| [**\<assemblyBinding>** Дерев](assemblybinding-element-for-configuration.md) | Определяет политику привязки сборок на уровне конфигурации. |
+| [**\<assemblyBinding>** Элемент](assemblybinding-element-for-configuration.md) | Определяет политику привязки сборок на уровне конфигурации. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
@@ -65,7 +66,7 @@ None
 
 - Все связанные файлы конфигурации объединяются в один файл, аналогично поведению `#include` директивы в C/C++.
 
-- **\<linkedConfiguration>** Элемент разрешен только в файлах конфигурации приложения. он игнорируется в *файле Machine. config*.
+- **\<linkedConfiguration>** Элемент разрешен только в файлах конфигурации приложения. он игнорируется в *Machine.config*.
 
 - Обнаружены и завершаются циклические ссылки. То есть, если **\<linkedConfiguration>** элементы последовательности файлов конфигурации образуют цикл, цикл определяется и останавливается.
 
@@ -83,5 +84,5 @@ None
 
 ## <a name="see-also"></a>См. также
 
-- [**\<assemblyBinding>** Дерев](assemblybinding-element-for-configuration.md)
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [**\<assemblyBinding>** Элемент](assemblybinding-element-for-configuration.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

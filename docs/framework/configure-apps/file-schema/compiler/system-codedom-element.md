@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <System. CodeDom> элемент'
 title: Элемент <system.codedom>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - system.codedom element
 - <system.codedom> element
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
-ms.openlocfilehash: 6c35e24696be040788a0c44cbb100ebb35d37157
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4761f971255b8ff7d60edfb8d9f5789c2e545aef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699016"
 ---
 # <a name="systemcodedom-element"></a>Элемент \<system.codedom>
 
@@ -53,16 +54,16 @@ ms.locfileid: "91149573"
   
 ## <a name="remarks"></a>Remarks  
   
-## <a name="net-framework-version-20"></a>.NET Framework версии 2,0  
+## <a name="net-framework-version-20"></a>Платформа .NET Framework версии 2,0  
 
- [\<system.codedom>](system-codedom-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков, установленных на компьютере в дополнение к поставщикам по умолчанию, которые устанавливаются вместе с .NET Framework, например <xref:Microsoft.CSharp.CSharpCodeProvider> и <xref:Microsoft.VisualBasic.VBCodeProvider> . [\<compilers>](compilers-element.md)Элемент содержит ноль или более [\<compiler>](compiler-element.md) элементов. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
+ [\<system.codedom>](system-codedom-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков, установленных на компьютере в дополнение к поставщикам по умолчанию, которые устанавливаются вместе с платформа .NET Framework, например <xref:Microsoft.CSharp.CSharpCodeProvider> и <xref:Microsoft.VisualBasic.VBCodeProvider> . [\<compilers>](compilers-element.md)Элемент содержит ноль или более [\<compiler>](compiler-element.md) элементов. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
   
  Разработчики и поставщики компиляторов могут добавлять параметры конфигурации в файл конфигурации компьютера (Machine.config) для новой <xref:System.CodeDom.Compiler.CodeDomProvider> реализации. Используйте <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> метод для программного перечисления поставщиков языка по умолчанию и поставщиков языков, определенных параметрами конфигурации компилятора на компьютере.  
   
 > [!NOTE]
-> В .NET Framework версиях 1,0 и 1,1 поставщики языка по умолчанию, предоставляемые .NET Framework, идентифицируются в [\<compilers>](compilers-element.md) элементе. В .NET Framework версии 2,0 поставщики языка по умолчанию не определяются в [\<compilers>](compilers-element.md) элементе, но их можно перечислить с помощью <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> метода.  
+> В платформа .NET Framework версиях 1,0 и 1,1 поставщики языка по умолчанию, предоставляемые платформа .NET Framework, идентифицируются в [\<compilers>](compilers-element.md) элементе. В платформа .NET Framework версии 2,0 поставщики языка по умолчанию не определяются в [\<compilers>](compilers-element.md) элементе, но их можно перечислить с помощью <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A> метода.  
   
-## <a name="net-framework-versions-10-and-11"></a>.NET Framework версии 1,0 и 1,1  
+## <a name="net-framework-versions-10-and-11"></a>Платформа .NET Framework версии 1,0 и 1,1  
 
  [\<system.codedom>](system-codedom-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков на компьютере. [\<compilers>](compilers-element.md)Элемент содержит ноль или более [\<compiler>](compiler-element.md) элементов. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
   
@@ -99,5 +100,5 @@ ms.locfileid: "91149573"
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров поставщиков языков и компиляторов](index.md)
+- [Схема параметров поставщика языка и компилятора](index.md)
 - [\<compiler> Элемент](compiler-element.md)

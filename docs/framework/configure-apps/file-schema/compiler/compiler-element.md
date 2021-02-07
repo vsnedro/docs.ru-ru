@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <compiler> element'
 title: Элемент <compiler>
 ms.date: 08/14/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - compiler configuration attributes
 - compiler element
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
-ms.openlocfilehash: 0abbe594754cbd70ec4732a1e7ef98e8e88bf167
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 91540d2217320b225ae67a48d616720ef2a0b679
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699224"
 ---
 # <a name="compiler-element"></a>Элемент \<compiler>
 
@@ -66,7 +67,7 @@ ms.locfileid: "90544756"
 |[\<system.codedom> Элемент](system-codedom-element.md)|Задает параметры конфигурации компилятора для доступных поставщиков языков.|
 |[\<compilers> Элемент](compilers-element.md)|Контейнер для элементов конфигурации компилятора; содержит ноль или более `<compiler>` элементов.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Каждый `<compiler>` элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка. Поставщик расширяет <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> класс для конкретного языка; `<compiler>` элемент определяет параметры компилятора и генератора кода для поставщика языка.
 

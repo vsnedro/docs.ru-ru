@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: настраиваемый элемент для NameValueSectionHandler и DictionarySectionHandler'
 title: Настраиваемый элемент для NameValueSectionHandler и DictionarySectionHandler
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
-ms.openlocfilehash: e5c5c6cf5744aa385e6f6700cad623751a4d7427
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c1bb5b2fb321e2cc9235e02be2158c0875d42032
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698730"
 ---
 # <a name="custom-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>Настраиваемый элемент для NameValueSectionHandler и DictionarySectionHandler
 
@@ -22,7 +23,7 @@ ms.locfileid: "77215478"
 
 ## <a name="attributes"></a>Атрибуты
 
-Нет
+None
 
 ## <a name="parent-element"></a>Родительский элемент
 
@@ -34,11 +35,11 @@ ms.locfileid: "77215478"
 
 |     | Описание |
 | --- | ----------- |
-| [**\<add>**](add-element-for-custom-2.md)для <xref:System.Configuration.NameValueSectionHandler> и<xref:System.Configuration.DictionarySectionHandler>  | Добавляет настраиваемые параметры приложения. |
-| [**\<remove>**](remove-element-for-custom-2.md)для <xref:System.Configuration.NameValueSectionHandler> и<xref:System.Configuration.DictionarySectionHandler> | Удаляет ранее определенный параметр. |
-| [**\<clear>**](clear-element-for-custom-2.md)для <xref:System.Configuration.NameValueSectionHandler> и<xref:System.Configuration.DictionarySectionHandler> | Удаляет все ранее определенные параметры в разделе. |
+| [**\<add>**](add-element-for-custom-2.md) для <xref:System.Configuration.NameValueSectionHandler> и <xref:System.Configuration.DictionarySectionHandler>  | Добавляет настраиваемые параметры приложения. |
+| [**\<remove>**](remove-element-for-custom-2.md) для <xref:System.Configuration.NameValueSectionHandler> и <xref:System.Configuration.DictionarySectionHandler> | Удаляет ранее определенный параметр. |
+| [**\<clear>**](clear-element-for-custom-2.md) для <xref:System.Configuration.NameValueSectionHandler> и <xref:System.Configuration.DictionarySectionHandler> | Удаляет все ранее определенные параметры в разделе. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 **\<sectionName>** Элемент является пользовательским элементом, определяемым **\<section>** тегом в **\<configSections>** элементе.
 
@@ -76,8 +77,8 @@ ms.locfileid: "77215478"
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
+Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine.config*) и *Web.config* файлах, которые не находятся на уровне каталога приложений.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

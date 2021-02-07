@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <configuration> element'
 title: <configuration> - элемент
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - configuration element
 - container tags, <configuration> element
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-ms.openlocfilehash: 8f79981a55d0bc9b1cd522e45f5606fda102c72c
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: ee48a45ddb987201e84213a0d7674da004951ab1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699002"
 ---
 # <a name="configuration-element"></a>Элемент \<configuration>
 
@@ -53,10 +54,10 @@ None
 | [**\<webServices>** Схема параметров](/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100)) | Все элементы в схеме параметров веб-служб. |
 | [Схема веб-параметров](./web/index.md) | Все элементы схемы веб-параметров, в том числе элементы настройки способов работы ASP.NET с ведущими приложениями, такими как службы IIS. Используется в файлах *aspnet.config* . |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Каждый файл конфигурации должен содержать ровно один **\<configuration>** элемент.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

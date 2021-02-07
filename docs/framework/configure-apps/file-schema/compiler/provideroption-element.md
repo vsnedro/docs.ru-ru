@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <providerOption> element'
 title: Элемент <providerOption>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - providerOptions
 - provideroption element
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
-ms.openlocfilehash: 9374fbaf7ceb61e5b72335417d32a08525477e0d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1fdca58830e8563ef28cbca28857127252928fd4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149638"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699042"
 ---
 # <a name="provideroption-element"></a>Элемент \<providerOption>
 
@@ -60,11 +61,11 @@ ms.locfileid: "91149638"
   
 ## <a name="remarks"></a>Remarks  
 
- В .NET Framework версии 3,5 поставщики кода Code Document Object Model (CodeDOM) могут поддерживать параметры, зависящие от поставщика, с помощью `<providerOption>` элемента.  
+ В платформа .NET Framework версии 3,5 поставщики кода Code Document Object Model (CodeDOM) могут поддерживать параметры, зависящие от поставщика, с помощью `<providerOption>` элемента.  
   
- .NET Framework 3,5 включает обновленные сборки .NET Framework 2,0 и предоставляет новые сборки версии 3,5, содержащие новые типы. Поставщики кода Microsoft C# и Visual Basic содержатся в сборках .NET Framework 2,0, но были обновлены для поддержки компиляторов версии 3,5. По умолчанию обновленные поставщики кода создают код для компиляторов версии 2,0. С помощью элемента можно `<providerOption>` изменить целевую версию компилятора на 3,5. Для этого укажите для атрибута значение "Компилерверсион" `name` и "v 3.5" `value` . Перед номером версии необходимо указать строчную букву "v".  
+ Платформа .NET Framework 3,5 включает обновленные сборки платформа .NET Framework 2,0 и предоставляет новые сборки версии 3,5, содержащие новые типы. Поставщики кода Microsoft C# и Visual Basic содержатся в сборках платформа .NET Framework 2,0, но были обновлены для поддержки компиляторов версии 3,5. По умолчанию обновленные поставщики кода создают код для компиляторов версии 2,0. С помощью элемента можно `<providerOption>` изменить целевую версию компилятора на 3,5. Для этого укажите для атрибута значение "Компилерверсион" `name` и "v 3.5" `value` . Перед номером версии необходимо указать строчную букву "v".  
   
- Глобальную спецификацию версии можно сделать, добавив `<providerOption>` элемент в Machine.config .NET Framework 2,0 или корневой Web.config файл. Если вы обновляете версию компилятора по умолчанию до 3,5 в файле Machine.config, вы можете изменить ее обратно на 2,0 для каждого приложения, используя `<providerOption>` элемент в файле конфигурации приложения.  
+ Глобальную спецификацию версии можно сделать, добавив `<providerOption>` элемент в Machine.config платформа .NET Framework 2,0 или корневой Web.config файл. Если вы обновляете версию компилятора по умолчанию до 3,5 в файле Machine.config, вы можете изменить ее обратно на 2,0 для каждого приложения, используя `<providerOption>` элемент в файле конфигурации приложения.  
   
  Разработчики поставщика кода CodeDOM могут обрабатывать пользовательские параметры, предоставляя конструктор, принимающий `providerOptions` параметр типа <xref:System.Collections.Generic.IDictionary%602> .  
   

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе Message. Бодитостринг
 title: Метод Message. Бодитостринг (System. ServiceModel. Channels)
 ms.date: 11/01/2019
 topic_type:
@@ -9,16 +10,16 @@ api_location:
 - system.servicemodel.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9f1f852c0bd82299fd40afe66a5f90cd7c0335cf
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: babcd881d191ff46b98e9999c4ff04166479a68d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77215507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699380"
 ---
 # <a name="messagebodytostring-method"></a>Метод Message. Бодитостринг
 
-Преобразует текст сообщения в строку путем вызова метода <xref:System.ServiceModel.Channels.Message.OnBodyToString%2A?displayProperty=nameWithType>.
+Преобразует текст сообщения в строку путем вызова <xref:System.ServiceModel.Channels.Message.OnBodyToString%2A?displayProperty=nameWithType> метода.
 
 ```csharp
 internal void BodyToString(XmlDictionaryWriter writer);
@@ -29,10 +30,10 @@ internal void BodyToString(XmlDictionaryWriter writer);
 - `writer` <xref:System.Xml.XmlDictionaryWriter>\
   Модуль записи, используемый для преобразования тела сообщения в строку.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `Message.BodyToString` является внутренним и не предназначен для непосредственного использования в коде.
+> `Message.BodyToString`Метод является внутренним и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
@@ -40,6 +41,6 @@ internal void BodyToString(XmlDictionaryWriter writer);
 
 **Пространство имен:** <xref:System.ServiceModel.Channels>
 
-**Сборка:** System. ServiceModel. dll
+**Сборка:** System.ServiceModel.dll
 
-**.NET Framework версии:** Доступно с 3,0.
+**Платформа .NET Framework версии:** Доступно с 3,0.

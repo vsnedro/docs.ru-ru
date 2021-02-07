@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <add> элемент для бипасслист (параметры сети)'
 title: Элемент <add> для bypasslist (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - <add> element, bypasslist
 - add element, bypasslist
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
-ms.openlocfilehash: 927a43f352fd776d9e6ba52ebea6ba2a1ccd4d48
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6bbd42cdf5d3b9bc31326b619cde96cfac0c755a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149495"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698639"
 ---
 # <a name="add-element-for-bypasslist-network-settings"></a>Элемент \<add> для bypasslist (параметры сети)
 
@@ -63,7 +64,7 @@ ms.locfileid: "91149495"
   
  При указании регулярного выражения для этого элемента следует соблюдать осторожность. Регулярное выражение "[a-z] + \\ . contoso \\ . com" соответствует любому узлу в домене contoso.com, но также соответствует любому узлу в домене contoso.com.cpandl.com. Чтобы сопоставить только узел в домене contoso.com, используйте привязку ("$"): "[a-z] + \\ . contoso \\ . com $".  
   
- Дополнительные сведения о регулярных выражениях см. в разделе. [.NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).  
+ Дополнительные сведения о регулярных выражениях см. в разделе. [Платформа .NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
 
@@ -86,7 +87,7 @@ ms.locfileid: "91149495"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)

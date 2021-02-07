@@ -1,5 +1,6 @@
 ---
-title: <clear>элемент для NameValueSectionHandler и DictionarySectionHandler
+description: 'Дополнительные сведения о: <clear> Element для NameValueSectionHandler и DictionarySectionHandler'
+title: <clear> элемент для NameValueSectionHandler и DictionarySectionHandler
 ms.date: 05/01/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - clear Element
 - <clear> Element
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
-ms.openlocfilehash: f6d860f35d22002030ffa3d09dd0d8a96116bf5e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 896aa7e8f0e3b41574538fcd9e4be9d6155da889
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77214743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699237"
 ---
-# <a name="clear-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<clear>элемент для NameValueSectionHandler и DictionarySectionHandler
+# <a name="clear-element-for-namevaluesectionhandler-and-dictionarysectionhandler"></a>\<clear> элемент для NameValueSectionHandler и DictionarySectionHandler
 
 Удаляет все ранее определенные параметры в разделе.
 
@@ -30,13 +31,13 @@ ms.locfileid: "77214743"
 
 ## <a name="attributes"></a>Атрибуты
 
-Нет
+None
 
 ## <a name="parent-element"></a>Родительский элемент
 
 |     | Описание |
 | --- | ------------|
-| [**\<sectionName>** Дерев](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> классы и. |
+| [**\<sectionName>** Элемент](custom-element-2.md) | Определяет параметры для пользовательских разделов конфигурации, использующих <xref:System.Configuration.NameValueSectionHandler> <xref:System.Configuration.DictionarySectionHandler> классы и. |
 
 ## <a name="child-elements"></a>Дочерние элементы
 
@@ -78,8 +79,8 @@ None
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , которые не находятся на уровне каталога приложений.
+Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine.config*) и *Web.config* файлах, которые не находятся на уровне каталога приложений.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

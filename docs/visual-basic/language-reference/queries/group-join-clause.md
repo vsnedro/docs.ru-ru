@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении Group Join (Visual Basic)
 title: Предложение Group Join
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Group Join statement [Visual Basic]
 - queries [Visual Basic], Group Join
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
-ms.openlocfilehash: 8d5f3ec80cb39825a3a283907d614b9be28e6e91
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 177dc2b41c923bc8c1ae0477c3905e8adad36fbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869914"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700485"
 ---
 # <a name="group-join-clause-visual-basic"></a>Предложение Group Join (Visual Basic)
 
@@ -63,7 +64,7 @@ Group Join element [As type] In collection _
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение Join](join-clause.md)
 - [Предложение WHERE](where-clause.md)
-- [Предложение Group By](group-by-clause.md)
+- [Предложение GROUP BY](group-by-clause.md)

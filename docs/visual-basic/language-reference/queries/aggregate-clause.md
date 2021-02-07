@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о предложении: Aggregate (Visual Basic)'
 title: Aggregate Clause
 ms.date: 08/28/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Aggregate statement [Visual Basic]
 - queries [Visual Basic], Aggregate
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
-ms.openlocfilehash: be2e401c7931b2637c14a3ea3b742a2c09917939
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 404cb4091bc11132450cf0d8d001ce426439ece7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700667"
 ---
 # <a name="aggregate-clause-visual-basic"></a>Предложение Aggregate (Visual Basic)
 
@@ -54,25 +55,25 @@ Aggregate element [As type] In collection _
   
 ### <a name="all"></a>Все
 
-Возвращает значение, `true` Если все элементы в коллекции соответствуют заданному условию. в противном случае возвращает `false` . Ниже приведен пример:
+Возвращает значение, `true` Если все элементы в коллекции соответствуют заданному условию. в противном случае возвращает `false` . Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#5)]
 
 ### <a name="any"></a>Любой
 
-Возвращает значение, `true` Если любой элемент в коллекции удовлетворяет заданному условию; в противном случае возвращает `false` . Ниже приведен пример:
+Возвращает значение, `true` Если любой элемент в коллекции удовлетворяет заданному условию; в противном случае возвращает `false` . Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#6)]
 
 ### <a name="average"></a>Среднее значение
 
-Вычисляет среднее значение всех элементов в коллекции или вычисляет заданное выражение для всех элементов в коллекции. Ниже приведен пример:
+Вычисляет среднее значение всех элементов в коллекции или вычисляет заданное выражение для всех элементов в коллекции. Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#7)]
 
 ### <a name="count"></a>Count
 
-Подсчитывает количество элементов в коллекции. Можно указать необязательное `Boolean` выражение, чтобы подсчитать только количество элементов в коллекции, удовлетворяющее условию. Ниже приведен пример:
+Подсчитывает количество элементов в коллекции. Можно указать необязательное `Boolean` выражение, чтобы подсчитать только количество элементов в коллекции, удовлетворяющее условию. Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#8)]
 
@@ -84,21 +85,21 @@ Aggregate element [As type] In collection _
 
 Подсчитывает количество элементов в коллекции. Можно указать необязательное `Boolean` выражение, чтобы подсчитать только количество элементов в коллекции, удовлетворяющее условию. Возвращает результат в виде `Long` . Пример см. в разделе `Count` агрегатная функция.
 
-### <a name="max"></a>Макс.
+### <a name="max"></a>Max
 
-Вычисление максимального значения из коллекции или вычисление заданного выражения для всех элементов в коллекции. Ниже приведен пример:
+Вычисление максимального значения из коллекции или вычисление заданного выражения для всех элементов в коллекции. Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#9)]
 
 ### <a name="min"></a>Min
 
-Вычисление минимального значения из коллекции или вычисление заданного выражения для всех элементов в коллекции. Ниже приведен пример:
+Вычисление минимального значения из коллекции или вычисление заданного выражения для всех элементов в коллекции. Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#10)]
 
 ### <a name="sum"></a>SUM
 
-Вычисляет сумму всех элементов в коллекции или вычисляет заданное выражение для всех элементов в коллекции. Ниже приведен пример:
+Вычисляет сумму всех элементов в коллекции или вычисляет заданное выражение для всех элементов в коллекции. Ниже представлен пример такого кода:
 
  [!code-vb[VbSimpleQuerySamples#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#15)]
 
@@ -108,7 +109,7 @@ Aggregate element [As type] In collection _
   
  [!code-vb[VbSimpleQuerySamples#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#4)]  
   
-## <a name="creating-user-defined-aggregate-functions"></a>Создание определяемых пользователем агрегатных функций
+## <a name="creating-user-defined-aggregate-functions"></a>Создание User-Defined агрегатных функций
 
  Можно включить собственные пользовательские агрегатные функции в выражение запроса, добавив методы расширения в <xref:System.Collections.Generic.IEnumerable%601> тип. Пользовательский метод может затем выполнить вычисление или операцию над перечислимой коллекцией, на которую ссылается агрегатная функция. Дополнительные сведения о методах расширения см. в разделе [Методы расширения](../../programming-guide/language-features/procedures/extension-methods.md).  
   
@@ -125,6 +126,6 @@ Aggregate element [As type] In collection _
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение WHERE](where-clause.md)
-- [Предложение Group By](group-by-clause.md)
+- [Предложение GROUP BY](group-by-clause.md)

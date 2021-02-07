@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <ipv6> элементе: Element (параметры сети)'
 title: Элемент <ipv6> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <ipv6> element
 - ipv6 element
 ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
-ms.openlocfilehash: 44ef0b8e1b6dc6ad0efde6b26ad7d4700e06f2c7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 667acaebdb290140f67ea36020bb191cd1a44f34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698652"
 ---
 # <a name="ipv6-element-network-settings"></a>Элемент \<ipv6> (параметры сети)
 
@@ -40,7 +41,7 @@ ms.locfileid: "91178337"
   
 |**Attribute**|**Описание**|  
 |-------------------|---------------------|  
-|`enabled`|Указывает, <xref:System.Net.Dns> возвращают ли члены класса IPv6-адреса. Значение по умолчанию — `false`.|  
+|`enabled`|Указывает, <xref:System.Net.Dns> возвращают ли члены класса IPv6-адреса. Значение по умолчанию — `false`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
@@ -74,7 +75,7 @@ ms.locfileid: "91178337"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net?displayProperty=nameWithType>
 - <xref:System.Net.Dns?displayProperty=nameWithType>

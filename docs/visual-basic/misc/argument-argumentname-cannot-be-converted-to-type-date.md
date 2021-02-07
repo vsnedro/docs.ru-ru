@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: аргумент " <argumentname> " не может быть преобразован к типу "Date"'
 title: Невозможно привести аргумент "<argumentname>" к типу Date
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_InvalidDateValue1
 ms.assetid: 928b8d75-f523-40c3-819a-03a1eb596ccc
-ms.openlocfilehash: 910fb209fefa0f735bf66ce801c27274f5ba37fe
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4a18a7dc6e203365a06e23b02faeb83a8795b3ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700251"
 ---
 # <a name="argument-argumentname-cannot-be-converted-to-type-date"></a>Невозможно привести аргумент "\<argumentname>" к типу Date
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении FROM (Visual Basic)
 title: Предложение From
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - From clause [Visual Basic]
 - From statement [Visual Basic]
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-ms.openlocfilehash: 120ba6da11bffc3a0e81873d1fd606633724723d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e35188412deb7fd9f2d8306c85057d050a60d030
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700563"
 ---
 # <a name="from-clause-visual-basic"></a>Предложение From (Visual Basic)
 

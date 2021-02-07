@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <configSections> Element для <configuration>'
 title: Элемент <configSections> для <configuration>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configSections Element
 - <configSections> Element
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
-ms.openlocfilehash: 1e4bb7a7cfb0b140ca6d13c162708c3c30bd496d
-ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
+ms.openlocfilehash: 543ceed8d53fd299e8a0b65594592b64d6b833a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86441691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698992"
 ---
 # <a name="configsections-element-for-configuration"></a>Элемент \<configSections> для \<configuration>
 
@@ -22,7 +23,7 @@ ms.locfileid: "86441691"
 
 ## <a name="attributes"></a>Атрибуты
 
-Нет
+None
 
 ## <a name="parent-element"></a>Родительский элемент
 
@@ -37,7 +38,7 @@ ms.locfileid: "86441691"
 | [**\<section>**](section-element.md) | Содержит объявление раздела конфигурации. |
 | [**\<sectionGroup>**](sectiongroup-element-for-configsections.md) | Определяет пространство имен для разделов конфигурации. |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Если этот элемент находится в файле конфигурации, он должен быть первым дочерним элементом **\<configuration>** элемента.
 
@@ -61,6 +62,6 @@ ms.locfileid: "86441691"
 
 Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine.config*) и *Web.config* файлах, которые не находятся на уровне каталога приложений.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

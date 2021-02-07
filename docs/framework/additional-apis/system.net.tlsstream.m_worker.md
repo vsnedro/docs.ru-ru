@@ -1,5 +1,6 @@
 ---
-title: Поле Тлсстреам. m_Worker (System.Net)
+description: 'Дополнительные сведения о: TlsStream.m_Worker поле'
+title: Поле TlsStream.m_Worker (System.Net)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
 topic_type:
@@ -10,14 +11,14 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: d335820d13e1e15e054e824a284615cdbf6c2094
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: d929b0b1949bc1902425c016bfd770d4c66a3257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699523"
 ---
-# <a name="tlsstreamm_worker-field"></a>Тлсстреам. m_Worker, поле
+# <a name="tlsstreamm_worker-field"></a>TlsStream.m_Worker поле
 
 Представляет состояние потока SSL.
 
@@ -32,10 +33,10 @@ private SslState m_Worker;
 `System.Net.Security.SslState`  
 Состояние потока SSL.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Поле `TlsStream.m_Worker` является закрытым и не предназначено для непосредственного использования в коде.
+> `TlsStream.m_Worker`Поле является закрытым и не предназначено для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
@@ -43,6 +44,6 @@ private SslState m_Worker;
 
 **Пространство имен:** <xref:System.Net>
 
-**Сборка:** Система (в System. dll)
+**Сборка:** Система (в System.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

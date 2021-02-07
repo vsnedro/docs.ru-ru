@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <requestCaching> элементе: Element (параметры сети)'
 title: Элемент <requestCaching> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - requestCaching element
 - <requestCaching> element
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-ms.openlocfilehash: 3eb32b7ae643efdb19892410b669c1e7ff80e0ad
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d09da8ad7a38ac363aaa740cca4de25e33fa8c56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91174164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698561"
 ---
 # <a name="requestcaching-element-network-settings"></a>Элемент \<requestCaching> (параметры сети)
 
@@ -44,9 +45,9 @@ ms.locfileid: "91174164"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`isPrivateCache`|Указывает, обеспечивает ли кэш изоляцию между данными разных пользователей. Значение по умолчанию — `true`. Это значение должно быть `false` для приложений среднего уровня.|  
+|`isPrivateCache`|Указывает, обеспечивает ли кэш изоляцию между данными разных пользователей. Значение по умолчанию — `true`. Это значение должно быть `false` для приложений среднего уровня.|  
 |`disableAllCaching`|Указывает, что кэширование отключено для всех веб-ответов и не может быть переопределено программным способом.|  
-|`defaultPolicyLevel`|Одно из значений в перечислении <xref:System.Net.Cache.RequestCacheLevel>. Значение по умолчанию — `BypassCache`.|  
+|`defaultPolicyLevel`|Одно из значений в перечислении <xref:System.Net.Cache.RequestCacheLevel>. Значение по умолчанию — `BypassCache`.|  
 |`unspecifiedMaximumAge`|Задает время по умолчанию, по истечении которого содержимое помечается как просроченное.|  
   
 ## <a name="policylevel-attribute"></a>Атрибут Полицилевел  
@@ -89,7 +90,7 @@ ms.locfileid: "91174164"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.Cache?displayProperty=nameWithType>
 - [Схема параметров сети](index.md)

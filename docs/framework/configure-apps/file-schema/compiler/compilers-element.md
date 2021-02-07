@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <compilers> element'
 title: Элемент <compilers>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <compilers> element
 - compilers element
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
-ms.openlocfilehash: 1aa096e185ae7f5957f173c03e221a31f30d5200
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6ced6bc81bc7d829ccebab50e0a361985c970f5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699172"
 ---
 # <a name="compilers-element"></a>Элемент \<compilers>
 
@@ -57,7 +58,7 @@ ms.locfileid: "91172948"
 
  [\<compilers>](compilers-element.md)Элемент содержит параметры конфигурации компилятора для поставщиков языков на компьютере. Каждый [\<compiler>](compiler-element.md) элемент задает атрибуты конфигурации компилятора для конкретного поставщика языка.  
   
- .NET Framework определяет начальные параметры компилятора и языка в файле конфигурации компьютера (Machine.config). Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>. С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.  
+ Платформа .NET Framework определяет начальные параметры компилятора и языка в файле конфигурации компьютера (Machine.config). Разработчики и поставщики компиляторов могут добавлять параметры конфигурации для новой реализации <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>. С помощью метода <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> можно осуществлять программное перечисление параметров конфигурации для поставщиков языков и компиляторов на компьютере.  
   
 ## <a name="configuration-file"></a>Файл конфигурации  
 
@@ -88,5 +89,5 @@ ms.locfileid: "91172948"
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Схема файла конфигурации](../index.md)
-- [Схема параметров поставщиков языков и компиляторов](index.md)
+- [Схема параметров поставщика языка и компилятора](index.md)
 - [\<compiler> Элемент](compiler-element.md)

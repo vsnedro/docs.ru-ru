@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения: запросы (Visual Basic)'
 title: Запросы
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [Visual Basic]
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-ms.openlocfilehash: 006a4b67094b258d440c2046fe3ae02274e1c337
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f816078ea7a8a02b84ebf2d23940c67e54997091
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700433"
 ---
 # <a name="queries-visual-basic"></a>Запросы (Visual Basic)
 
-Visual Basic позволяет создавать LINQ-выражения в коде.  
+Visual Basic позволяет создавать выражения Language-Integrated запросов (LINQ) в коде.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Aggregate Clause](aggregate-clause.md)  
  Описывает `Aggregate` предложение, которое применяет одну или несколько агрегатных функций к коллекции.  
@@ -24,10 +25,10 @@ Visual Basic позволяет создавать LINQ-выражения в к
  [Предложение Distinct](distinct-clause.md)  
  Описывает `Distinct` предложение, которое позволяет ограничивать значения текущей переменной диапазона, чтобы исключить дублирующиеся значения в результатах запроса.  
   
- [Предложение FROM](from-clause.md)  
+ [Предложение From](from-clause.md)  
  Описывает `From` предложение, которое задает коллекцию и переменную диапазона для запроса.  
   
- [Предложение Group By](group-by-clause.md)  
+ [Предложение GROUP BY](group-by-clause.md)  
  Описывает `Group By` предложение, которое группирует элементы результата запроса и может использоваться для применения агрегатных функций к каждой группе.  
   
  [Предложение Group Join](group-join-clause.md)  
@@ -60,7 +61,7 @@ Visual Basic позволяет создавать LINQ-выражения в к
  [Предложение WHERE](where-clause.md)  
  Описывает `Where` предложение, которое задает условие фильтрации для запроса.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ](../../programming-guide/language-features/linq/index.md)
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)

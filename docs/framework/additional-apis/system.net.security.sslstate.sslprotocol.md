@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о свойстве: Сслстате. Сслпротокол'
 title: Свойство Сслстате. Сслпротокол (System .NET. Security)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
@@ -11,12 +12,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 6983ac071dad29b240308031ecd0a3562a6856e4
-ms.sourcegitcommit: 337bdc5a463875daf2cc6883e5a2da97d56f5000
+ms.openlocfilehash: b0b9bebf23fcd8d643d06f1cff10c260c77a7c08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72847250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699627"
 ---
 # <a name="sslstatesslprotocol-property"></a>Сслстате. Сслпротокол, свойство
 
@@ -33,10 +34,10 @@ internal SslProtocols SslProtocol { get; }
 <xref:System.Security.Authentication.SslProtocols>  
 Побитовое сочетание значений перечисления, определяющих версии протокола SSL.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Свойство `SslState.SslProtocol` является внутренним и не предназначено для непосредственного использования в коде.
+> `SslState.SslProtocol`Свойство является внутренним и не предназначено для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого свойства в рабочем приложении при каких-либо обстоятельствах.
 
@@ -44,6 +45,6 @@ internal SslProtocols SslProtocol { get; }
 
 **Пространство имен:** <xref:System.Net.Security>
 
-**Сборка:** Система (в System. dll)
+**Сборка:** Система (в System.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.
