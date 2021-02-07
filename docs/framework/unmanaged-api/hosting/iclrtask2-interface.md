@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRTask2'
 title: Интерфейс ICLRTask2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b5a22ebc-0582-49de-91f9-97a3d9789290
 topic_type:
 - apiref
-ms.openlocfilehash: 9332b3462ba389783a113d173e32850d40427ce2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 835b01e1c808c071e9393c5117d5e38415ec8eba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728654"
 ---
 # <a name="iclrtask2-interface"></a>Интерфейс ICLRTask2
 
@@ -32,7 +33,7 @@ ms.locfileid: "95720234"
 |[Метод BeginPreventAsyncAbort](iclrtask2-beginpreventasyncabort-method.md)|Откладывает запросы на прерывание нового потока в текущем потоке.|  
 |[Метод EndPreventAsyncAbort](iclrtask2-endpreventasyncabort-method.md)|Разрешает новые или ожидающие запросы на прерывание потока в результате прерывания потока в текущем потоке.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICLRTask2`Интерфейс наследует `ICLRTask` интерфейс и добавляет методы, позволяющие узлу откладывать прерывания потока, чтобы защитить область кода, которая не должна завершаться ошибкой. Вызов `BeginPreventAsyncAbort` увеличивает счетчик прерывания задержки потока для текущего потока и вызывает метод `EndPreventAsyncAbort` декремента. Вызовы `BeginPreventAsyncAbort` и `EndPreventAsyncAbort` могут быть вложенными. Пока значение счетчика больше нуля, прерывания потока для текущего потока откладываются.  
   
@@ -52,9 +53,9 @@ ms.locfileid: "95720234"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

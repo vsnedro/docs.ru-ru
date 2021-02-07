@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget2:: Аллоквиртуал'
 title: Метод ICLRDataTarget2::AllocVirtual
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
 topic_type:
 - apiref
-ms.openlocfilehash: 6d3985919ea7e766db7d07e4ed81484851156ca5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d81474e4067599178285b6fa876919298617919d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729345"
 ---
 # <a name="iclrdatatarget2allocvirtual-method"></a>Метод ICLRDataTarget2::AllocVirtual
 
@@ -55,7 +56,7 @@ HRESULT AllocVirtual(
  `virt`  
  заполняет Указатель на `CLRDATA_ADDRESS` значение, указывающее фактический начальный адрес выделенной памяти.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `AllocVirtual`Метод служит логической оболочкой для `VirtualAlloc` функции Win32.  
   
@@ -69,9 +70,9 @@ HRESULT AllocVirtual(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget2](iclrdatatarget2-interface.md)
 - [Метод FreeVirtual](iclrdatatarget2-freevirtual-method.md)
