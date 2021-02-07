@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedWriter:: CloseScope'
 title: Метод ISymUnmanagedWriter::CloseScope
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6dade525-7770-4cb4-bafd-4bb995ad0d87
 topic_type:
 - apiref
-ms.openlocfilehash: 561a6348b9976789b02961fadb37d9127f5a6a13
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bb41e69955632d1e4d86250a63a9f25a7d1ae807
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762556"
 ---
 # <a name="isymunmanagedwriterclosescope-method"></a>Метод ISymUnmanagedWriter::CloseScope
 
@@ -42,7 +43,7 @@ HRESULT CloseScope(
 
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  После закрытия области в ней больше нельзя определять переменные.  
   
@@ -52,6 +53,6 @@ HRESULT CloseScope(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

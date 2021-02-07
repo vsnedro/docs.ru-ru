@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Исимунманажедскопе:: Parent'
 title: Метод ISymUnmanagedScope::GetParent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7963c87-6ec5-49b3-a5cd-e0fe0c43f9b4
 topic_type:
 - apiref
-ms.openlocfilehash: db7fb5f2c1b5d1fa8be1328852ca4402538396f3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6a056c828bfaefd171ef3f0c546d93d30fb6863
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763336"
 ---
 # <a name="isymunmanagedscopegetparent-method"></a>Метод ISymUnmanagedScope::GetParent
 
@@ -46,7 +47,7 @@ HRESULT GetParent(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedScope](isymunmanagedscope-interface.md)
 - [Метод GetChildren](isymunmanagedscope-getchildren-method.md)

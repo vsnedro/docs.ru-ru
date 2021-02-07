@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedWriter:: OpenScope'
 title: Метод ISymUnmanagedWriter::OpenScope
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbea0644-3873-4329-90b8-624163e87467
 topic_type:
 - apiref
-ms.openlocfilehash: 5afc91d1dc6d02f052e860787ebf0858a2f5d12d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1e47d97941b053fedcf08c7582e1083988a9fed4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762114"
 ---
 # <a name="isymunmanagedwriteropenscope-method"></a>Метод ISymUnmanagedWriter::OpenScope
 
@@ -46,7 +47,7 @@ HRESULT OpenScope(
 
  S_OK, если метод выполнен. в противном случае E_FAIL или другой код ошибки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ISymUnmanagedWriter::OpenScope` возвращает непрозрачный идентификатор области, который можно использовать с [ISymUnmanagedWriter:: сетскоперанже](isymunmanagedwriter-setscoperange-method.md) для определения начального и конечного смещения области в более позднее время. В этом случае смещения, передаваемые в `ISymUnmanagedWriter::OpenScope` и [ISymUnmanagedWriter:: CloseScope](isymunmanagedwriter-closescope-method.md) , игнорируются. Идентификаторы областей допустимы только в текущем методе.  
   
@@ -54,6 +55,6 @@ HRESULT OpenScope(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)

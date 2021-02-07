@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedWriter::D Ефинелокалвариабле'
 title: Метод ISymUnmanagedWriter::DefineLocalVariable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6fab8a58-3883-490f-8b27-64042c90f104
 topic_type:
 - apiref
-ms.openlocfilehash: b8b9f8e63a0b52dde0e814f53cfc75e6f6d48e78
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd817e3002c2a55fd8bbd7e565283752926f746b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762374"
 ---
 # <a name="isymunmanagedwriterdefinelocalvariable-method"></a>Метод ISymUnmanagedWriter::DefineLocalVariable
 
@@ -69,10 +70,10 @@ HRESULT DefineLocalVariable(
  окне Третий адрес для спецификации параметра.  
   
  `startOffset`  
- окне Начальное смещение для переменной. Это необязательный параметр. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Начальное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
  `endOffset`  
- окне Конечное смещение для переменной. Это необязательный параметр. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Конечное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
 
@@ -82,7 +83,7 @@ HRESULT DefineLocalVariable(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Метод DefineGlobalVariable](isymunmanagedwriter-defineglobalvariable-method.md)

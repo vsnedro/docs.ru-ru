@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedWriter:: Initialize2'
 title: Метод ISymUnmanagedWriter::Initialize2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 93de56b6-4ae8-4cca-acdc-25a434623509
 topic_type:
 - apiref
-ms.openlocfilehash: 93a96a5da3342f4beff611de1d448dc199dd39dd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0d4c769c9f1b571296cbfe159057df083a6d5ca6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762283"
 ---
 # <a name="isymunmanagedwriterinitialize2-method"></a>Метод ISymUnmanagedWriter::Initialize2
 
@@ -62,7 +63,7 @@ HRESULT Initialize2(
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter](isymunmanagedwriter-interface.md)
 - [Метод Initialize](isymunmanagedwriter-initialize-method.md)

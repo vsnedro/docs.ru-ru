@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedWriter2::D efineLocalVariable2'
 title: Метод ISymUnmanagedWriter2::DefineLocalVariable2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e774eefe-858c-4362-8d2d-28ebf2ba1a24
 topic_type:
 - apiref
-ms.openlocfilehash: cdbb09d25f51e479a8a8ddfc23348305ba7c0a71
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 169a086b8420b5dbe20af8e16b21d5b41a958ead
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761815"
 ---
 # <a name="isymunmanagedwriter2definelocalvariable2-method"></a>Метод ISymUnmanagedWriter2::DefineLocalVariable2
 
@@ -65,10 +66,10 @@ HRESULT DefineLocalVariable2(
  окне Третий адрес для спецификации параметра.  
   
  `startOffset`  
- окне Начальное смещение для переменной. Это необязательный параметр. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Начальное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
  `endOffset`  
- окне Конечное смещение для переменной. Это необязательный параметр. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
+ окне Конечное смещение для переменной. Этот параметр является необязательным. Если значение равно 0, этот параметр не учитывается, и переменная определяется всей областью. Если это ненулевое значение, переменная попадает в диапазон смещений текущей области.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
 
@@ -78,7 +79,7 @@ HRESULT DefineLocalVariable2(
 
  **Заголовок:** Корсим. idl  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)
 - [Метод DefineLocalVariable](isymunmanagedwriter-definelocalvariable-method.md)
