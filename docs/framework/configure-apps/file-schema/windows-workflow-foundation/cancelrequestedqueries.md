@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <cancelRequestedQueries>'
 title: <cancelRequestedQueries>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: eab5af7e-76fa-434d-9d36-873e995cee05
-ms.openlocfilehash: 4db30f3fed12b585b73339120fa5bc6602150e7d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a508de97bce604284d9af00a3344fe5f35dc8bea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91189543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698080"
 ---
 # \<cancelRequestedQueries>
 
@@ -58,7 +59,7 @@ ms.locfileid: "91189543"
 |-------------|-----------------|  
 |[\<workflow>](workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, определяемого свойством **ActivityDefinitionId** .|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Отслеживание и трассировка рабочих процессов](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [Профили отслеживания](../../../windows-workflow-foundation/tracking-profiles.md)

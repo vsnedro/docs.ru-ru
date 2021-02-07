@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как использовать EdmGen.exe для создания файлов модели и сопоставления.
 title: Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления
 ms.date: 03/30/2017
 ms.assetid: 40db462d-2fd2-4cc1-ad86-d280403e63fa
-ms.openlocfilehash: 8837afd05eec0eaf8ef3e909d46b280e8ae05da7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b601e7dd3c108f4bf4966df2fabcf8324365fe3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697417"
 ---
 # <a name="how-to-use-edmgenexe-to-generate-the-model-and-mapping-files"></a>Практическое руководство. Использование EdmGen.exe для создания файлов модели и сопоставления
 
@@ -54,7 +55,7 @@ ms.locfileid: "91198188"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:CSharp  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Моделирование и сопоставление](modeling-and-mapping.md)
 - [Практическое руководство. Настройка проекта Entity Framework вручную](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))

@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения о: использование аннотации в запросах'
 title: Использование заметок в запросах
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 50855b30-d5fe-49a9-89d3-3f1bfd670958
-ms.openlocfilehash: 3dd5d19cc303314386ae62ba67f7eec978f6d80b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 97423fe8ea7d90522a5f469adda5f645aa7e4485
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698028"
 ---
 # <a name="using-annotation-in-queries"></a>Использование заметок в запросах
 
@@ -32,7 +33,7 @@ ms.locfileid: "91185370"
 > [!NOTE]
 > Эти элементы запроса могут быть использованы для создания профиля отслеживания. Профиль отслеживания можно создать в коде или в файле конфигурации.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>
 - <xref:System.Activities.Tracking.TrackingProfile>

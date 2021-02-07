@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как сделать файлы модели и сопоставления внедренными ресурсами.
 title: Практическое руководство. Создание встроенных ресурсов файлов модели и сопоставления
 ms.date: 03/30/2017
 ms.assetid: 20dfae4d-e95a-4264-9540-f5ad23b462d3
-ms.openlocfilehash: 8496dcad5422d1a45af52e58325efd360768da34
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 373dfc2c93adfc510341ec0ea0487ad8962aa3e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697521"
 ---
 # <a name="how-to-make-model-and-mapping-files-embedded-resources"></a>Практическое руководство. Создание встроенных ресурсов файлов модели и сопоставления
 
@@ -18,13 +19,13 @@ Entity Framework позволяет развертывать файлы моде
   
 ### <a name="to-embed-model-and-mapping-files"></a>Внедрение файлов модели и сопоставления  
   
-1. В **Обозреватель решений**выберите концептуальный файл (CSDL).  
+1. В **Обозреватель решений** выберите концептуальный файл (CSDL).  
   
 2. На панели **Свойства** задайте для параметра **действие при сборке** значение **внедренный ресурс**.  
   
 3. Повторите шаги 1 и 2 для файла хранения с расширением SSDL и файла сопоставления с расширением MSL.  
   
-4. В **Обозреватель решений**дважды щелкните файл App.config и измените `Metadata` параметр в `connectionString` атрибуте, используя один из следующих форматов:  
+4. В **Обозреватель решений** дважды щелкните файл App.config и измените `Metadata` параметр в `connectionString` атрибуте, используя один из следующих форматов:  
   
     - `Metadata=` `res://<assemblyFullName>/<resourceName>;`  
   
@@ -38,7 +39,7 @@ Entity Framework позволяет развертывать файлы моде
 
  Следующая строка подключения ссылается на внедренную модель и файлы сопоставления для [модели AdventureWorks Sales](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Эта строка соединения хранится в файле App.config проекта.  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Моделирование и сопоставление](modeling-and-mapping.md)
 - [Практическое руководство. Определение строки соединения](how-to-define-the-connection-string.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как использовать EdmGen.exe для проверки файлов модели и сопоставления.
 title: Практическое руководство. Использование EdmGen.exe для проверки файлов модели и сопоставления
 ms.date: 03/30/2017
 ms.assetid: 2641906a-971a-4d0b-8aee-13fabc02a1cc
-ms.openlocfilehash: 62a3bde9d2431b9e9e86e2a8d8896520f3456590
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e729ea36b7ff17dc318f4488a669b968161aea8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697352"
 ---
 # <a name="how-to-use-edmgenexe-to-validate-model-and-mapping-files"></a>Практическое руководство. Использование EdmGen.exe для проверки файлов модели и сопоставления
 
@@ -25,7 +26,7 @@ ms.locfileid: "91198123"
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:ValidateArtifacts /inssdl:.\School.ssdl /inmsl:.\School.msl /incsdl:.\School.csdl  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Настройка проекта Entity Framework вручную](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))
 - [Средства EDM ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

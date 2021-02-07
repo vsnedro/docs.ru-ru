@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье сопоставление методов CLR с каноническими функциями.
 title: Сопоставление методов CLR с каноническими функциями
 ms.date: 03/30/2017
 ms.assetid: e3363261-2cb8-4b54-9555-2870be99b929
-ms.openlocfilehash: 6f14ad8d9e8f919fe820447cc991b102319b38d5
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 3a082f0b9bce63330e113e6ae9f50d15d71ce727
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70251227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697079"
 ---
 # <a name="clr-method-to-canonical-function-mapping"></a>Сопоставление методов CLR с каноническими функциями
 
@@ -40,17 +41,17 @@ ms.locfileid: "70251227"
 
 |Метод System.String (экземпляр)|Каноническая функция|Примечания|
 |---------------------------------------|------------------------|-----------|
-|Boolean Contains(String `value`)|`this` LIKE '%`value`%'|Если `value` не является константой, то этот объект сопоставляется с`this`IndexOf `value`(,) > 0|
-|Boolean EndsWith(String `value`)|`this`LIKE `'` '% `value`|Если `value` не является константой, от он сопоставляется с Right(`this`, length(`value`)) = `value`.|
+|Boolean Contains(String `value`)|`this` LIKE '%`value`%'|Если не `value` является константой, то этот объект сопоставляется с IndexOf ( `this` , `value` ) > 0|
+|Boolean EndsWith(String `value`)|`this`LIKE `'` % `value` '|Если `value` не является константой, от он сопоставляется с Right(`this`, length(`value`)) = `value`.|
 |Boolean StartsWith(String `value`)|`this` LIKE '`value`%'|Если `value` не является константой, от он сопоставляется с IndexOf(`this`, `value`) = 1.|
 |Длина|Length(`this`)||
 |Int32 IndexOf(String `value`)|IndexOf(`this`, `value`) - 1||
 |System.String Insert(Int32 `startIndex`, String `value`)|Concat(Concat(Substring(`this`, 1, `startIndex`), `value`), Substring(`this`, `startIndex`+1, Length(`this`) - `startIndex`))||
 |System.String Remove(Int32 `startIndex`)|Substring(`this`, 1, `startIndex`)||
-|System.String Remove(Int32 `startIndex`, Int32 `count`)|Concat (`this`substring (, 1, `startIndex`), substring (`this`,`this` + `count``startIndex` `count` `startIndex`  +  + 1, Length ()-()))|Remove(`startIndex`, `count`) поддерживается, только если `count` - это неотрицательное целое число.|
+|System.String Remove(Int32 `startIndex`, Int32 `count`)|Concat (substring ( `this` , 1, `startIndex` ), substring ( `this` , `startIndex`  +  `count` + 1, Length ( `this` )-( `startIndex`  +  `count` )))|Remove(`startIndex`, `count`) поддерживается, только если `count` - это неотрицательное целое число.|
 |System.String Replace(String `oldValue`, String `newValue`)|Replace(`this`, `oldValue`, `newValue`)||
 |System.String Substring(Int32 `startIndex`)|Substring(`this`, `startIndex` +1, Length(`this`) - `startIndex`)||
-|System.String Substring(Int32 `startIndex`, Int32 `length`)|Подстрока`this`( `startIndex` , + 1 `length`,)||
+|System.String Substring(Int32 `startIndex`, Int32 `length`)|Подстрока ( `this` , `startIndex` + 1, `length` )||
 |System.String ToLower()|ToLower(`this`)||
 |System.String ToUpper()|ToUpper(`this`)||
 |System.String Trim()|Trim(`this`)||
@@ -67,11 +68,11 @@ ms.locfileid: "70251227"
 |System.DateTime.UtcNow|CurrentUtcDateTime()||
 |Boolean op_Equality(DateTime `d1`, DateTime `d2`)|= - оператор||
 |Boolean op_GreaterThan(DateTime `t1`, DateTime `t2`)|Оператор >||
-|Boolean op_GreaterThanOrEqual(DateTime `t1`, DateTime `t2`)|Оператор > =||
+|Boolean op_GreaterThanOrEqual(DateTime `t1`, DateTime `t2`)|Оператор >=||
 |Boolean op_Inequality(DateTime `t1`, DateTime `t2`)|!= - оператор||
-|Boolean op_LessThan (DateTime `t1`, DateTime `t2`)|Оператор <||
-|Boolean op_LessThanOrEqual(DateTime `t1`, DateTime `t2`)|Оператор < =||
-|Microsoft.VisualBasic.DateAndTime.DatePart( _<br /><br /> ByVal `Interval` как DateInterval;\_<br /><br /> ByVal `DateValue` как DateTime,\_<br /><br /> Необязательное значение ByVal `FirstDayOfWeekValue` как FirstDayOfWeek = вбсундай,\_<br /><br /> Необязательное значение ByVal `FirstWeekOfYearValue` как первая_неделя_года = VbFirstJan1\_<br /><br /> ) As Integer||Дополнительные сведения см. в разделе «Функция DatePart».|
+|Логическое op_LessThan (DateTime `t1` , DateTime `t2` )|Оператор <||
+|Boolean op_LessThanOrEqual(DateTime `t1`, DateTime `t2`)|Оператор <=||
+|Microsoft.VisualBasic.DateAndTime.DatePart( _<br /><br /> ByVal `Interval` как DateInterval; \_<br /><br /> ByVal `DateValue` как DateTime, \_<br /><br /> Необязательное значение ByVal `FirstDayOfWeekValue` как FirstDayOfWeek = вбсундай, \_<br /><br /> Необязательное значение ByVal `FirstWeekOfYearValue` как первая_неделя_года = VbFirstJan1 \_<br /><br /> ) As Integer||Дополнительные сведения см. в разделе «Функция DatePart».|
 |Microsoft.VisualBasic.DateAndTime.Now|CurrentDateTime()||
 |Microsoft.VisualBasic.DateAndTime.Year(DateTime `TimeValue`)|Year()||
 |Microsoft.VisualBasic.DateAndTime.Month(DateTime `TimeValue`)|Month()||
@@ -87,11 +88,11 @@ ms.locfileid: "70251227"
 |Boolean Equals(DateTime `value`)|= - оператор|
 |День|Day(`this`)|
 |Час|Hour(`this`)|
-|Millisecond|Millisecond(`this`)|
+|Миллисекунда|Millisecond(`this`)|
 |Минута|Minute(`this`)|
 |Месяц|Month(`this`)|
-|Вторая|Second(`this`)|
-|Год|Year(`this`)|
+|Секунда|Second(`this`)|
+|Year;|Year(`this`)|
 
 ## <a name="systemdatetimeoffset-method-instance-mapping"></a>Сопоставление метода System.DateTimeOffset (экземпляр)
 
@@ -101,11 +102,11 @@ ms.locfileid: "70251227"
 |-----------------------------------------------|------------------------|-----------|
 |День|Day(`this`)|Не поддерживается для SQL Server 2005.|
 |Час|Hour(`this`)|Не поддерживается для SQL Server 2005.|
-|Millisecond|Millisecond(`this`)|Не поддерживается для SQL Server 2005.|
+|Миллисекунда|Millisecond(`this`)|Не поддерживается для SQL Server 2005.|
 |Минута|Minute(`this`)|Не поддерживается для SQL Server 2005.|
 |Месяц|Month(`this`)|Не поддерживается для SQL Server 2005.|
-|Вторая|Second(`this`)|Не поддерживается для SQL Server 2005.|
-|Год|Year(`this`)|Не поддерживается для SQL Server 2005.|
+|Секунда|Second(`this`)|Не поддерживается для SQL Server 2005.|
+|Year;|Year(`this`)|Не поддерживается для SQL Server 2005.|
 
 > [!NOTE]
 > Метод <xref:System.DateTimeOffset.Equals%2A> возвращает значение `true`, если сравниваемые объекты <xref:System.DateTimeOffset> равны, и значение `false` в противном случае. Метод <xref:System.DateTimeOffset.CompareTo%2A> возвращает значение 0, 1 или -1 в зависимости от состояния объекта <xref:System.DateTimeOffset> (соответственно равен, больше или меньше).
@@ -124,10 +125,10 @@ ms.locfileid: "70251227"
 
 |Метод System.TimeSpan (экземпляр)|Каноническая функция|Примечания|
 |-----------------------------------------|------------------------|-----------|
-|Часы.|Hour(`this`)|Не поддерживается для SQL Server 2005.|
-|Milliseconds|Millisecond(`this`)|Не поддерживается для SQL Server 2005.|
+|Часы|Hour(`this`)|Не поддерживается для SQL Server 2005.|
+|Миллисекунды|Millisecond(`this`)|Не поддерживается для SQL Server 2005.|
 |Минуты|Minute(`this`)|Не поддерживается для SQL Server 2005.|
-|Seconds|Second(`this`)|Не поддерживается для SQL Server 2005.|
+|Секунды|Second(`this`)|Не поддерживается для SQL Server 2005.|
 
 > [!NOTE]
 > Метод <xref:System.TimeSpan.Equals%2A> возвращает значение `true`, если сравниваемые объекты <xref:System.TimeSpan> равны, и значение `false` в противном случае. Метод <xref:System.TimeSpan.CompareTo%2A> возвращает значение 0, 1 или -1 в зависимости от состояния объекта <xref:System.TimeSpan> (соответственно равен, больше или меньше).

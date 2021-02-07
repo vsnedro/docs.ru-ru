@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как использовать EdmGen.exe для создания кода Object-Layer
 title: Практическое руководство. Использование EdmGen.exe для создания кода объектного уровня
 ms.date: 03/30/2017
 ms.assetid: c44d2ebe-f66f-42cb-9741-4a3f0c2dcffb
-ms.openlocfilehash: a243a588dcb6f7e7001de331cb9011a23ee2fdbe
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1c1f614247f10c8819709b9494fb1ec04271b634
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697469"
 ---
 # <a name="how-to-use-edmgenexe-to-generate-object-layer-code"></a>Практическое руководство. Использование EdmGen.exe для создания кода объектного уровня
 
@@ -39,7 +40,7 @@ ms.locfileid: "91198227"
     /incsdl:.\School.csdl /outobjectlayer:.\School.Objects.cs /language:CSharp  
     ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Моделирование и сопоставление](modeling-and-mapping.md)
 - [Практическое руководство. Настройка проекта Entity Framework вручную](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))

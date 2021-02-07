@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: окончание набора ассоциаций'
 title: конечная точка набора ассоциаций
 ms.date: 03/30/2017
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
-ms.openlocfilehash: bd104ffb46cbd02a886ce87822ddc37159961174
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 12e01a3fb947f6fabd5e1a93ef475132418963df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91198799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697677"
 ---
 # <a name="association-set-end"></a>конечная точка набора ассоциаций
 
@@ -33,7 +34,7 @@ ms.locfileid: "91198799"
   
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

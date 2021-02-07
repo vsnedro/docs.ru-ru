@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: окончание ассоциации'
 title: конечная точка ассоциации
 ms.date: 03/30/2017
 ms.assetid: 2c345213-0296-4d90-ac6d-cef179798a75
-ms.openlocfilehash: 00e3a7d855957ae539ea652dc8cde3ed8841dda5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4a166c0bdb61d1b5fad07a052518a78a74c54e23
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697664"
 ---
 # <a name="association-end"></a>конечная точка ассоциации
 
@@ -36,7 +37,7 @@ ms.locfileid: "91153447"
   
  [!code-xml[EDM_Example_Model#AssociationEnd](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#associationend)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

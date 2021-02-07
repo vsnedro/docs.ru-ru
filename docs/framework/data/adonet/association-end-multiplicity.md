@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: количество элементов для конечной точки ассоциации'
 title: кратность конечной точки ассоциации
 ms.date: 03/30/2017
 ms.assetid: 340926ee-aefb-4bef-92cc-453e5251fd03
-ms.openlocfilehash: cf9e6b5af0dc6a33af364901c631b4ce66fe0480
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4b708406192e8a6e34119b47261d8986829f2a43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153512"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697703"
 ---
 # <a name="association-end-multiplicity"></a>кратность конечной точки ассоциации
 
@@ -33,7 +34,7 @@ ms.locfileid: "91153512"
   
  [!code-xml[EDM_Example_Model#AssociationExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#associationexample)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные понятия модели EDM](entity-data-model-key-concepts.md)
 - [EDM (модель данных с использованием сущностей)](entity-data-model.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: ADO.NET технологии и рекомендации'
 title: Технологические параметры и рекомендации
 ms.date: 03/30/2017
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
-ms.openlocfilehash: c91eff55a322bfbe5675395a54c2b294d67d909a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0cd26162c70e1cad8a08488f0705a8aebf2fab96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697755"
 ---
 # <a name="adonet-technology-options-and-guidelines"></a>Возможности технологии и рекомендации по ADO.NET
 
@@ -47,9 +48,9 @@ ms.locfileid: "91185318"
   
 ## <a name="wcf-data-services"></a>Службы данных WCF  
 
- WCF Data Services развертывает службы данных в Интернете или в интрасети. Данные структурируются как сущности и отношения согласно спецификациям модели EDM. Данные, развертываемые в данной модели, адресуются по стандартному протоколу HTTP. Дополнительные сведения см. в разделе [Службы данных WCF 4.5](../wcf/index.md).  
+ Службы данных WCF развертывает службы данных в Интернете или в интрасети. Данные структурируются как сущности и отношения согласно спецификациям модели EDM. Данные, развертываемые в данной модели, адресуются по стандартному протоколу HTTP. Дополнительные сведения см. в разделе [Службы данных WCF 4.5](../wcf/index.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](ado-net-overview.md)
 - [Новые возможности в ADO.NET](whats-new.md)

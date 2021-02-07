@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <webRequestModules> элементе: Element (параметры сети)'
 title: Элемент <webRequestModules> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - webRequestModules element
 - <webRequestModules> element
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
-ms.openlocfilehash: 9396ca393523dce5593531f332e5c07241987947
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 851aec2bf38910239874cb5792239a48de6efb70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91187008"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698431"
 ---
 # <a name="webrequestmodules-element-network-settings"></a>Элемент \<webRequestModules> (параметры сети)
 
@@ -56,7 +57,7 @@ ms.locfileid: "91187008"
 
  Элемент `webRequestModules` регистрирует потомки класса <xref:System.Net.WebRequest>, чтобы обработать запросы информации к сетевым узлам. Модули веб-запросов должны реализовывать <xref:System.Net.IWebRequestCreate> интерфейс.  
   
- .NET Framework включает модули веб-запросов для URI, которые начинаются с `http://` , `https://` и `file://` . Модули по умолчанию можно переопределить только путем регистрации пользовательского модуля в файле конфигурации.  
+ Платформа .NET Framework включает модули веб-запросов для URI, которые начинаются с `http://` , `https://` и `file://` . Модули по умолчанию можно переопределить только путем регистрации пользовательского модуля в файле конфигурации.  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
 
@@ -79,7 +80,7 @@ ms.locfileid: "91187008"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.WebRequest>
 - <xref:System.Net.IWebRequestCreate>
