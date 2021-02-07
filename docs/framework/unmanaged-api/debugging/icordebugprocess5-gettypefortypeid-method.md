@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ICorDebugProcess5:: Жеттипефортипеид'
 title: Метод ICorDebugProcess5::GetTypeForTypeID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
 topic_type:
 - apiref
-ms.openlocfilehash: 0ed83005bd4ab23124a458a024985d011dfce8c1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a18543b0afc867dc3796264ac1d08a775c73ca59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746377"
 ---
 # <a name="icordebugprocess5gettypefortypeid-method"></a>Метод ICorDebugProcess5::GetTypeForTypeID
 
@@ -43,7 +44,7 @@ HRESULT GetTypeForTypeID(
  `ppType`  
  заполняет Указатель на адрес объекта ICorDebugType.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В некоторых случаях методы, возвращающие идентификатор типа, могут возвращать `COR_TYPEID` значение null. Если это значение передается в качестве `id` аргумента, `GetTypeForTypeID` метод завершится ошибкой и вернет значение `E_FAIL` .  
   
@@ -55,9 +56,9 @@ HRESULT GetTypeForTypeID(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

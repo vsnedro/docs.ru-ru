@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции _CorValidateImage
 title: Функция _CorValidateImage
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0117e080-05f9-4772-885d-e1847230947c
 topic_type:
 - apiref
-ms.openlocfilehash: 2d49a40610bd0e1a7629594e245bde9eacfcc06d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f3d91c2d7e05786f7bfb0ab94b64e2cfb84a21d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746247"
 ---
 # <a name="_corvalidateimage-function"></a>Функция _CorValidateImage
 
@@ -51,7 +52,7 @@ STDAPI _CorValidateImage (
 |`STATUS_INVALID_IMAGE_FORMAT`|Недопустимый образ. Это значение имеет 0xC000007BL HRESULT.|  
 |`STATUS_SUCCESS`|Изображение является допустимым. Это значение равно HRESULT 0x00000000.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В Windows XP и более поздних версиях загрузчик операционной системы проверяет наличие управляемых модулей, проверяя бит каталога дескрипторов COM в заголовке COFF. Заданный бит указывает на управляемый модуль. Если загрузчик обнаруживает управляемый модуль, он загружает MsCorEE.dll и вызывает `_CorValidateImage` , который выполняет следующие действия:  
   
@@ -83,8 +84,8 @@ STDAPI _CorValidateImage (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

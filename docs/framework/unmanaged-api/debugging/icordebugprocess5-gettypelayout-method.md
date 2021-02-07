@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ICorDebugProcess5:: GetTypeLayout'
 title: Метод ICorDebugProcess5::GetTypeLayout
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bd62f5d1-e874-41f1-81e5-a29a7572c15d
 topic_type:
 - apiref
-ms.openlocfilehash: 32277e8adcd4bb08c8d0480eb3b4e7e4b5949479
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d4496fa832b048dfc0bbe792aeb8fdcd460f5158
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746286"
 ---
 # <a name="icordebugprocess5gettypelayout-method"></a>Метод ICorDebugProcess5::GetTypeLayout
 
@@ -40,7 +41,7 @@ HRESULT GetTypeLayout(    [in] COR_TYPEID id,     [out] COR_TYPE_LAYOUT *pLayout
  `pLayout`  
  заполняет Указатель на структуру [COR_TYPE_LAYOUT](cor-type-layout-structure.md) , содержащую сведения о макете объекта в памяти.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugProcess5::GetTypeLayout`Метод предоставляет сведения об объекте на основе его [COR_TYPEID](cor-typeid-structure.md), который возвращается несколькими другими методами [метод ICorDebugProcess5](icordebugprocess5-interface.md) . Сведения предоставляются структурой [COR_TYPE_LAYOUT](cor-type-layout-structure.md) , которая заполняется методом.  
   
@@ -52,9 +53,9 @@ HRESULT GetTypeLayout(    [in] COR_TYPEID id,     [out] COR_TYPE_LAYOUT *pLayout
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структура COR_TYPE_LAYOUT](cor-type-layout-structure.md)
 - [Интерфейс ICorDebugProcess5](icordebugprocess5-interface.md)
