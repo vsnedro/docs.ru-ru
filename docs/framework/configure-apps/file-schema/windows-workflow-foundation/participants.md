@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <participants>'
 title: <participants>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 560dd0bb-f9fb-423c-8857-2101a3654b06
-ms.openlocfilehash: 51c7824a4dcbd95eac098d25e9a971514e2a1e0b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7fc3aeaeb7bd5f8e6c71079b2afec9d6316620f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91167045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739772"
 ---
 # \<participants>
 
@@ -92,7 +93,7 @@ ms.locfileid: "91167045"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
 - <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>

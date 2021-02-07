@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <defaultHttpCachePolicy> элементе: Element (параметры сети)'
 title: Элемент <defaultHttpCachePolicy> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - defaultHttpCachePolicy element
 - <defaultHttpCachePolicy> element
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-ms.openlocfilehash: 4120c57fbb65da1c124414cbe9cfba7ae64388f8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d2df27c9b140c9bdb4def49aef7de1a3d80f4a11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91190323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740331"
 ---
 # <a name="defaulthttpcachepolicy-element-network-settings"></a>Элемент \<defaultHttpCachePolicy> (параметры сети)
 
@@ -46,11 +47,11 @@ ms.locfileid: "91190323"
 |`maximumAge`|Указывает максимальный интервал времени, по истечении которого кэшированный объект помечается как истекший.|  
 |`maximumStale`|Указывает максимальное время после истечения срока действия вычисленного объекта до пометки времени, когда кэшированный объект помечается как истекший.|  
 |`minimumFresh`|Указывает минимальное время, в течение которого кэшированный объект будет считаться актуальным.|  
-|`policyLevel`|Указывает, является ли политика кэширования автоматическим, или же кэш будет пропущен. Значение по умолчанию — `BypassCache`.|  
+|`policyLevel`|Указывает, является ли политика кэширования автоматическим, или же кэш будет пропущен. Значение по умолчанию — `BypassCache`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -62,7 +63,7 @@ ms.locfileid: "91190323"
 
  Значение `policyLevel` атрибута может быть `BypassCache` или `Default` .  
   
- Значения для `maximumAge` элементов, `maximumStale` и `minimumFresh` являются либо явным временным интервалом с форматом *d*.* чч*:*мм*:*СС* (дни, часы, минуты и секунды), константы `minValue` или `maxValue` (при необходимости).  
+ Значения для `maximumAge` элементов, `maximumStale` и `minimumFresh` являются либо явным временным интервалом с форматом *d*.*чч*:*мм*:*СС* (дни, часы, минуты и секунды), константы `minValue` или `maxValue` (при необходимости).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
 
@@ -86,7 +87,7 @@ ms.locfileid: "91190323"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>

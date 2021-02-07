@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <socket> элементе: Element (параметры сети)'
 title: Элемент <socket> (параметры сети)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <socket> element
 - socket element
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-ms.openlocfilehash: b8df32745007b2a145d35b8cfcc4cbd2bd17eb33
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 564d6566bf6f6b1997b986cb6c0d85f841195e55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740136"
 ---
 # <a name="socket-element-network-settings"></a>Элемент \<socket> (параметры сети)
 
@@ -42,8 +43,8 @@ ms.locfileid: "91201737"
   
 |**Attribute**|**Описание**|  
 |-------------------|---------------------|  
-|`alwaysUseCompletionPortsForAccept`|Указывает, должен ли сокет всегда использовать порты завершения для вызовов метода Accept. Значение по умолчанию — `false`.|  
-|`alwaysUseCompletionPortsForConnect`|Указывает, должен ли сокет всегда использовать порты завершения для вызовов метода Connect. Значение по умолчанию — `false`.|  
+|`alwaysUseCompletionPortsForAccept`|Указывает, должен ли сокет всегда использовать порты завершения для вызовов метода Accept. Значение по умолчанию — `false`.|  
+|`alwaysUseCompletionPortsForConnect`|Указывает, должен ли сокет всегда использовать порты завершения для вызовов метода Connect. Значение по умолчанию — `false`.|  
 |`ipProtectionLevel`|Указывает значение по умолчанию, <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> используемое для сокета. Значение по умолчанию зависит от версии Windows.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -109,7 +110,7 @@ ms.locfileid: "91201737"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Net?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
