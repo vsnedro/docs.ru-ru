@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <filter>'
 title: <filter>
 ms.date: 03/30/2017
 ms.assetid: 3266700b-904b-44e4-93a7-e06a1a445100
-ms.openlocfilehash: 6e78275aaeb202405e327302455d56fa431d7f27
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 993d2265ac3a714475e8cbe9e8a2c3f93c46bde2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855256"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664682"
 ---
 # \<filter>
 
@@ -37,9 +38,9 @@ ms.locfileid: "70855256"
 
 ### <a name="attributes"></a>Атрибуты
 
-| Атрибут  | Описание: |
+| Атрибут  | Описание |
 | ---------- | ----------- |
-| customType | Строка, содержащая полное имя для пользовательского типа, используемого в качестве фильтра. Если параметр `filterType` имеет значение `custom` , этот атрибут содержит полное имя типа создаваемого класса.  `filterData`может также содержать значения, используемые при вычислении настраиваемого фильтра типов. |
+| customType | Строка, содержащая полное имя для пользовательского типа, используемого в качестве фильтра. Если параметр `filterType` имеет значение `custom` , этот атрибут содержит полное имя типа создаваемого класса.  `filterData` может также содержать значения, используемые при вычислении настраиваемого фильтра типов. |
 | filterData | Строка, содержащая данные фильтра. Дополнительные сведения об указании этого атрибута см. в разделе <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>. |
 | filterType | Строка, содержащая тип фильтра. Этот атрибут имеет тип <xref:System.ServiceModel.Routing.Configuration.FilterType>.  Дополнительные сведения о том, как это работает с атрибутом `filterData`, см. в разделе <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A>. |
 | name       | Строка, содержащая уникальное имя этого элемента фильтра. |

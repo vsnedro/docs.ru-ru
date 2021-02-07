@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе GetType (Visual Basic)
 title: GetType Operator
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - GetType operator [Visual Basic]
 - GetType keyword [Visual Basic]
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
-ms.openlocfilehash: 9ff207ea4f2b89ea30eb8f46a3e640ccf3789974
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 15fe9c28997aa01527f23c0cc8fdbb0fe6cc53f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867007"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665995"
 ---
 # <a name="gettype-operator-visual-basic"></a>Оператор GetType (Visual Basic)
 
@@ -36,7 +37,7 @@ GetType(typename)
   
 - Любой тип данных Visual Basic, например `Boolean` или `Date` .  
   
-- Любой .NET Framework класс, структура, модуль или интерфейс, например <xref:System.ArgumentException?displayProperty=nameWithType> или <xref:System.Double?displayProperty=nameWithType> .  
+- Любой платформа .NET Framework класс, структура, модуль или интерфейс, например <xref:System.ArgumentException?displayProperty=nameWithType> или <xref:System.Double?displayProperty=nameWithType> .  
   
 - Любой класс, структура, модуль или интерфейс, определенный приложением.  
   
@@ -44,7 +45,7 @@ GetType(typename)
   
 - Любой делегат, определенный приложением.  
   
-- Любое перечисление, определенное Visual Basic, .NET Framework или вашего приложения.  
+- Любое перечисление, определенное Visual Basic, платформа .NET Framework или вашего приложения.  
   
  Если требуется получить объект типа объектной переменной, используйте <xref:System.Type.GetType%2A?displayProperty=nameWithType> метод.  
   

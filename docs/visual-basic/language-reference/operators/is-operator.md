@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о операторе: is (Visual Basic)'
 title: Оператор is
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TypeOf...Is expression
 - Is operator [Visual Basic]
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
-ms.openlocfilehash: 1c2d87ef0a8202332c87af552f488d652c400213
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 0912ebd9bc9c33149568c6cea0197ef24c305ff2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665689"
 ---
 # <a name="is-operator-visual-basic"></a>Оператор is (Visual Basic)
 
@@ -29,15 +30,15 @@ result = object1 Is object2
 ## <a name="parts"></a>Компоненты
 
  `result`  
- Обязательный. Любое `Boolean` значение.  
+ Обязательный элемент. Любое `Boolean` значение.  
   
  `object1`  
- Обязательный. Любое `Object` имя.  
+ Обязательный элемент. Любое `Object` имя.  
   
  `object2`  
- Обязательный. Любое `Object` имя.  
+ Обязательный элемент. Любое `Object` имя.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 `Is`Оператор определяет, ссылаются ли две объектные ссылки на один и тот же объект. Однако сравнение значений не выполняется. Если `object1` и `object2` оба ссылаются на один и тот же экземпляр объекта, `result` имеет значение `True` ; Если нет, `result` то имеет значение `False` .
 
@@ -62,7 +63,7 @@ If TypeOf sender Is Button Then
 
 ## <a name="see-also"></a>См. также
 
-- [TypeOf, оператор](typeof-operator.md)
+- [Оператор TypeOf](typeof-operator.md)
 - [Оператор IsNot](isnot-operator.md)
 - [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)

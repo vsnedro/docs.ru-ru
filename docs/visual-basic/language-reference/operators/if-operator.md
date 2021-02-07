@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о операторе: if (Visual Basic)'
 title: Оператор If
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - conditional operator [Visual Basic]
 - If Operator [Visual Basic]
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
-ms.openlocfilehash: 28fb2afb2c4cf78ffbbb028145de647a8dc512ed
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3b25ab4b6c5f0d2608644adb6e35ff4ad5128f42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665878"
 ---
 # <a name="if-operator-visual-basic"></a>Оператор If (Visual Basic)
 
@@ -63,8 +64,8 @@ If( [argument1,] argument2, argument3 )
 
 [!code-vb[VbVbalrOperators#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#102)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.IIf%2A>
-- [Типы значений, допускающие значение null](../../programming-guide/language-features/data-types/nullable-value-types.md)
+- [Типы значений, допускающие значение NULL](../../programming-guide/language-features/data-types/nullable-value-types.md)
 - [Nothing](../nothing.md)

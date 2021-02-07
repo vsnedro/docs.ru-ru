@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: выражение функции (Visual Basic)'
 title: Выражение function
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - functions [Visual Basic], function expressions
 - lambda expressions [Visual Basic], function expression
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-ms.openlocfilehash: 719969be23a6d94f22a1d86cb4ad3f37e4c3b254
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: bef5db7f167b615c2a0c20539521c186683da985
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666021"
 ---
 # <a name="function-expression-visual-basic"></a>Выражение Function (Visual Basic)
 
@@ -79,7 +80,7 @@ End Function
   
 ## <a name="example"></a>Пример  
 
- Лямбда-выражения лежат в основе многих операторов запросов в LINQ и могут использоваться явным образом в запросах, основанных на методах. В следующем примере показан типичный запрос LINQ, а затем перевод запроса в формат метода.  
+ Лямбда-выражения лежат в основе многих операторов запросов в Language-Integrated query (LINQ) и могут использоваться явным образом в запросах, основанных на методах. В следующем примере показан типичный запрос LINQ, а затем перевод запроса в формат метода.  
   
 ```vb  
 Dim londonCusts = From cust In db.Customers  

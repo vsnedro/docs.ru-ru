@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о операторе: * = (Visual Basic)'
 title: Оператор *=
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - '*= operator [Visual Basic]'
 - compound assignment statements [Visual Basic]
 ms.assetid: 96c86509-6eb8-4682-8226-3852e049376f
-ms.openlocfilehash: 4e2f18fb2b8110d97390390b3934d3c1761baa35
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d5a88dc71a05c6375a09fe3f4b55eff704c13910
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866735"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665423"
 ---
 # <a name="-operator-visual-basic"></a>Оператор *= (Visual Basic)
 

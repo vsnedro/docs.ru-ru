@@ -1,5 +1,6 @@
 ---
-title: DataMemberListEditor Класс
+description: 'Дополнительные сведения о: DataMemberListEditor Class'
+title: Класс DataMemberListEditor
 ms.date: 03/30/2017
 ms.technology: dotnet-winforms
 api_name:
@@ -11,16 +12,16 @@ api_type:
 ms.assetid: c11d5231-78f2-45a7-9210-3b2d0969370e
 topic_type:
 - apiref
-ms.openlocfilehash: 407bbe87e3d186dc901b18dbfee38e2ff69d356a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a78be03733e8338e2c02f4675d3cfbd5f6e27c90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79156003"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664773"
 ---
-# <a name="datamemberlisteditor-class"></a>DataMemberListEditor Класс
+# <a name="datamemberlisteditor-class"></a>Класс DataMemberListEditor
 
-Обеспечивает выпадающий пользовательский интерфейс для редактирования свойств объектов, `DataSource` связанных с данными `DataSource` (объектов, не находящихся в ненулевом свойстве), путем перечисления всех свойств объекта для выбора источника значения.  
+Предоставляет раскрывающийся пользовательский интерфейс для редактирования свойств объектов с привязкой к данным (объектов, которые имеют свойство, отличное от NULL `DataSource` ) путем перечисления всех свойств `DataSource` объекта для выбора источника значения.  
   
 ## <a name="syntax"></a>Синтаксис
   
@@ -29,18 +30,18 @@ internal class DataMemberListEditor : UITypeEditor
 ```
 
 > [!WARNING]
-> Класс `DataMemberListEditor` является внутренним и не предназначен для использования непосредственно в коде.
+> `DataMemberListEditor`Класс является внутренним и не предназначен для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого класса в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого класса в рабочем приложении при каких-либо обстоятельствах.
   
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Windows.Forms.Design?displayProperty=nameWithType>  
+**Пространство имен:** <xref:System.Windows.Forms.Design?displayProperty=nameWithType>  
   
-**Сборка:** System.Design (в System.Design.dll)  
+**Сборка:** System. Design (в System.Design.dll)  
   
-**Рамочные версии .NET:** Доступно с 2.0.  
+**Платформа .NET Framework версии:** Доступно с 2,0.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Windows.Forms.Design?displayProperty=nameWithType>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор IsNot (Visual Basic)'
 title: IsNot - оператор
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TypeOf...IsNot expression
 - IsNot operator [Visual Basic]
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-ms.openlocfilehash: ea978f8874cee20fb3a005189fd846f7564da777
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: ac3e127676dfa57d14e07838152022de62fc336b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811045"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665670"
 ---
 # <a name="isnot-operator-visual-basic"></a>Оператор IsNot (Visual Basic)
 
@@ -29,17 +30,17 @@ result = object1 IsNot object2
 
 - `result`
 
-  Обязательный. Значение `Boolean`.
+  Обязательный элемент. Значение `Boolean`.
 
 - `object1`
 
-  Обязательный. Любая `Object` переменная или выражение.
+  Обязательный элемент. Любая `Object` переменная или выражение.
 
 - `object2`
 
-  Обязательный. Любая `Object` переменная или выражение.
+  Обязательный элемент. Любая `Object` переменная или выражение.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 `IsNot`Оператор определяет, ссылаются ли две объектные ссылки на разные объекты. Однако сравнение значений не выполняется. Если `object1` и `object2` оба ссылаются на один и тот же экземпляр объекта, `result` имеет значение `False` ; Если нет, `result` то имеет значение `True` .
 
@@ -55,7 +56,7 @@ result = object1 IsNot object2
 
 ## <a name="use-typeof-operator-with-isnot-operator"></a>Использование оператора TypeOf с оператором IsNot
 
-Начиная с Visual Basic 14 можно использовать `TypeOf` оператор с `IsNot` оператором, чтобы проверить, несовместим ли объект с типом *not* данных. Пример:
+Начиная с Visual Basic 14 можно использовать `TypeOf` оператор с `IsNot` оператором, чтобы проверить, несовместим ли объект с типом  данных. Пример:
 
 ```vb
 If TypeOf sender IsNot Button Then
@@ -63,7 +64,7 @@ If TypeOf sender IsNot Button Then
 
 ## <a name="see-also"></a>См. также
 
-- [Оператор is](is-operator.md)
-- [TypeOf, оператор](typeof-operator.md)
+- [Оператор Is](is-operator.md)
+- [Оператор TypeOf](typeof-operator.md)
 - [Порядок применения операторов в Visual Basic](operator-precedence.md)
 - [Практическое руководство. Проверка совпадения двух объектов](../../programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)

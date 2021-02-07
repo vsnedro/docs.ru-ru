@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: необязательно (Visual Basic)'
 title: Необязательно
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Optional keyword [Visual Basic], contexts
 - Optional keyword [Visual Basic]
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
-ms.openlocfilehash: c46d06dba61158d7362d736731161be306af3f10
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d9a61371364d87745203363dbc0a641cec9660a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666086"
 ---
 # <a name="optional-visual-basic"></a>Optional (Visual Basic)
 
 Указывает, что аргумент процедуры может быть пропущен при вызове процедуры.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Для каждого необязательного параметра необходимо указать константное выражение в качестве значения по умолчанию для этого параметра. Если результат вычисления выражения равен [Nothing](../nothing.md), в качестве значения по умолчанию для параметра используется значение по умолчанию типа данных value.
 
@@ -70,7 +71,7 @@ End Function
 
 [!code-vb[VbVbalrKeywords#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class8.vb#21)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Список параметров](../statements/parameter-list.md)
 - [Необязательные параметры](../../programming-guide/language-features/procedures/optional-parameters.md)

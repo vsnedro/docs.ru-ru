@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе Mod (Visual Basic)
 title: Оператор Mod
 ms.date: 04/24/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic], Mod
 - math operators [Visual Basic]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-ms.openlocfilehash: 32065567799b023556a018ae2f5ba338796e0b49
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bfec39f54041714258e21f087a044dce24edcb6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665436"
 ---
 # <a name="mod-operator-visual-basic"></a>Оператор Mod (Visual Basic)
 
@@ -32,7 +33,7 @@ result = number1 Mod number2
 ## <a name="parts"></a>Компоненты
 
 `result` \
-Обязательный. Любая числовая переменная или свойство.
+Обязательный элемент. Любая числовая переменная или свойство.
 
 `number1` \
 Обязательный. Произвольное числовое выражение.
@@ -49,7 +50,7 @@ result = number1 Mod number2
 Результат — остаток от деления на `number1` `number2` . Например, выражение принимает значение `14 Mod 4` 2.
 
 > [!NOTE]
-> Существует разница между *остатком* и *остатком* в математике с различными результатами для отрицательных чисел. `Mod`Оператор в Visual Basic, `op_Modulus` оператор .NET Framework и базовая инструкция [REM](<xref:System.Reflection.Emit.OpCodes.Rem>) Il выполняют операцию остатка.
+> Существует разница между *остатком* и *остатком* в математике с различными результатами для отрицательных чисел. `Mod`Оператор в Visual Basic, `op_Modulus` оператор платформа .NET Framework и базовая инструкция [REM](<xref:System.Reflection.Emit.OpCodes.Rem>) Il выполняют операцию остатка.
 
 Результат `Mod` операции удерживает знак делимого, `number1` и поэтому он может быть положительным или отрицательным. Результат всегда находится в диапазоне (- `number2` , `number2` ), исключающем. Пример:
 
@@ -116,7 +117,7 @@ End Module
 
 [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
 - <xref:Microsoft.VisualBasic.Conversion.Fix%2A>

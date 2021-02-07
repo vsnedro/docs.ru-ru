@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о операторе: * (Visual Basic)'
 title: '* Оператор'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - multiplication operator [Visual Basic], syntax
 - math operators [Visual Basic]
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
-ms.openlocfilehash: 7038fef4258d190b726a851b26f2a2840ff3c0ea
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 9a9f7eff9468fd6784b705a50871bc79fd6c1faa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873362"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665397"
 ---
 # <a name="-operator-visual-basic"></a>Оператор * (Visual Basic)
 

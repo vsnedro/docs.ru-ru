@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: оператор Like (Visual Basic)'
 title: Оператор Like
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - data [Visual Basic], string comparisons
 - string comparison [Visual Basic], Like operators
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
-ms.openlocfilehash: 49dfe5cf5dbcf8dc6f79f569a92e36aa81806913
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: f1be174010b7acae5bface4fc0a2d0e606a90fca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665592"
 ---
 # <a name="like-operator-visual-basic"></a>Оператор Like (Visual Basic)
 

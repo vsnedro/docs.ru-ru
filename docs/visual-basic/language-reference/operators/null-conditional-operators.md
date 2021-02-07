@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:?. перетаскивани? ()-условные операторы null (Visual Basic)
 title: Условные операторы null
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ?. operator [Visual Basic]
 - ?[] operator [C#]
 - ?[] operator [Visual Basic]
-ms.openlocfilehash: bffbba859968e0a050397cd9e685c142f801798a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 558b8921d0da4089505dd1035cb6039af24a2802
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665371"
 ---
 # <a name="-and--null-conditional-operators-visual-basic"></a>?. перетаскивани? ()-условные операторы null (Visual Basic)
 
@@ -109,7 +110,7 @@ SendNews?.Invoke("Just in...")
 
 Новый способ является потокобезопасным, так как компилятор создает код для вычисления `SendNews` только один раз, запоминая результат во временной переменной. Необходимо явно вызывать метод `Invoke`, так как отсутствует синтаксис `SendNews?(String)` для вызова делегатов с условием NULL.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Операторы (Visual Basic)](index.md)
 - [Руководство по программированию на Visual Basic](../../programming-guide/index.md)
