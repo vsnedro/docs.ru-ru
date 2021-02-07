@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о версии обнаружения
 title: Управление версиями обнаружения
 ms.date: 03/30/2017
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
-ms.openlocfilehash: 4a1ca07fc6773ce6f883d654abfedab4986341e1
-ms.sourcegitcommit: 9b1ac36b6c80176fd4e20eb5bfcbd9d56c3264cf
+ms.openlocfilehash: 075fefce0477810336c8b857343984070ed89b37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67425254"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743191"
 ---
 # <a name="discovery-versioning"></a>Управление версиями обнаружения
 
@@ -29,11 +30,11 @@ ms.locfileid: "67425254"
 
 ### <a name="discoveryversionwsdiscoveryapril2005"></a>DiscoveryVersion.WSDiscoveryApril2005
 
-Предоставляя <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> как конструктор делает реализация будет использовать April2005 версию протокола WS-Discovery. Эта версия соответствует опубликованной версии спецификации протокола WS-Discovery. Эту версию следует использовать для взаимодействия с приложениями прежних версий, использующими версию протокола WS-Discovery от апреля 2005 г.
+Предоставление в <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005> качестве параметра конструктора делает реализацию использовать April2005 версию протокола WS-Discovery. Эта версия соответствует опубликованной версии спецификации протокола WS-Discovery. Эту версию следует использовать для взаимодействия с приложениями прежних версий, использующими версию протокола WS-Discovery от апреля 2005 г.
 
 ### <a name="discoveryversionwsdiscovery11"></a>DiscoveryVersion.WSDiscovery11
 
-Версия обнаружения по умолчанию, используемые интерфейсы API — <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11>. Эта версия протокола обнаружения WS-Discovery на данный момент является стандартной.
+Версия обнаружения по умолчанию, используемая API-интерфейсами, — <xref:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11> . Эта версия протокола обнаружения WS-Discovery на данный момент является стандартной.
 
 ## <a name="discoveryversionwsdiscoverycd1"></a>DiscoveryVersion.WSDiscoveryCD1
 
@@ -41,7 +42,7 @@ ms.locfileid: "67425254"
 
 ## <a name="supporting-multiple-udp-discovery-endpoints-for-different-discovery-versions-on-a-single-service-host"></a>Поддержка нескольких конечных точек обнаружения UDP с различными версиями обнаружения на одном узле службы
 
-Может потребоваться предоставление доступа к нескольким конечным точкам обнаружения UDP с различными версиями обнаружения на одном узле службы. Для этого необходимо задать для каждой из конечных точек обнаружения UDP уникальный адрес. Следующий пример показывает, как это сделать.
+Может потребоваться предоставление доступа к нескольким конечным точкам обнаружения UDP с различными версиями обнаружения на одном узле службы. Для этого необходимо задать для каждой из конечных точек обнаружения UDP уникальный адрес. В приведенном ниже примере показано, как это сделать.
 
 ```csharp
 UdpDiscoveryEndpoint newVersionUdpEndpoint = new UdpDiscoveryEndpoint(DiscoveryVersion.WSDiscovery11);

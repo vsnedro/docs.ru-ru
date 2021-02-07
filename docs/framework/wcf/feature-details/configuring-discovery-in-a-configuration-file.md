@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о настройке обнаружения в файле конфигурации
 title: Настройка обнаружения в файле конфигурации
 ms.date: 03/30/2017
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
-ms.openlocfilehash: 1ffd5cb2e884b6eeae292326cb0dc1586995ba38
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 95ac1a08d40f16141dc5c8763640a258b15ef497
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284190"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743295"
 ---
 # <a name="configuring-discovery-in-a-configuration-file"></a>Настройка обнаружения в файле конфигурации
 
