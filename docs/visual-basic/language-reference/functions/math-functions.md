@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о математических функциях (Visual Basic)
 title: Математические функции
 ms.date: 01/27/2020
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - math routines
 - Atn function
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
-ms.openlocfilehash: ea30ae3b30484c1a13d6d540f121c03afb30ba26
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: d6ab82e45a17c0b1e1ee9f7df54936cd5420ef2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76794597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731161"
 ---
 # <a name="math-functions-visual-basic"></a>Математические функции (Visual Basic)
 
-Методы класса <xref:System.Math?displayProperty=nameWithType> предоставляют тригонометрические, Логарифмические и другие общие математические функции.
+Методы <xref:System.Math?displayProperty=nameWithType> класса предоставляют тригонометрические, Логарифмические и другие общие математические функции.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-В следующей таблице перечислены методы класса <xref:System.Math?displayProperty=nameWithType>. Их можно использовать в программе Visual Basic:
+В следующей таблице перечислены методы <xref:System.Math?displayProperty=nameWithType> класса. Их можно использовать в программе Visual Basic:
   
 |Метод .NET|Описание|
 |---------------------------|-----------------|
@@ -30,28 +31,28 @@ ms.locfileid: "76794597"
 |<xref:System.Math.Atan%2A>|Возвращает угол, тангенс которого равен указанному числу.|
 |<xref:System.Math.Atan2%2A>|Возвращает угол, тангенс которого равен отношению двух указанных чисел.|
 |<xref:System.Math.BigMul%2A>|Возвращает полное произведение 2 32-разрядных чисел.|
-|<xref:System.Math.Ceiling%2A>|Возвращает наименьшее целочисленное значение, которое больше или равно указанному `Decimal` или `Double`.|
+|<xref:System.Math.Ceiling%2A>|Возвращает наименьшее целочисленное значение, которое больше или равно указанному `Decimal` или `Double` .|
 |<xref:System.Math.Cos%2A>|Возвращает косинус указанного угла.|
 |<xref:System.Math.Cosh%2A>|Возвращает гиперболический косинус указанного угла.|
 |<xref:System.Math.DivRem%2A>|Возвращает частное от 2 32-битных или 64-битовых целых чисел со знаком, а также возвращает остаток в выходном параметре.|
 |<xref:System.Math.Exp%2A>|Возвращает значение e (основание натуральных логарифмов), возведенное в указанную степень.|
-|<xref:System.Math.Floor%2A>|Возвращает максимальное целое число, которое меньше или равно указанному `Decimal` или `Double`ному числу.|
+|<xref:System.Math.Floor%2A>|Возвращает максимальное целое число, которое меньше или равно указанному `Decimal` `Double` значению или.|
 |<xref:System.Math.IEEERemainder%2A>|Возвращает остаток, полученный от деления указанного числа на другое заданное число.|
 |<xref:System.Math.Log%2A>|Возвращает натуральный (базовый e) логарифм указанного числа или логарифм указанного числа в заданном базовом массиве.|
 |<xref:System.Math.Log10%2A>|Возвращает логарифм с основанием 10 указанного числа.|
 |<xref:System.Math.Max%2A>|Возвращает большее из двух чисел.|
 |<xref:System.Math.Min%2A>|Возвращает меньшее из двух чисел.|
 |<xref:System.Math.Pow%2A>|Возвращает указанное число, возведенное в указанную степень.|
-|<xref:System.Math.Round%2A>|Возвращает `Decimal` или `Double` значение, округленное до ближайшего целого значения или до указанного числа цифр дробной части.|
-|<xref:System.Math.Sign%2A>|Возвращает значение типа `Integer`, указывающее знак числа.|
+|<xref:System.Math.Round%2A>|Возвращает `Decimal` значение или, `Double` округленное до ближайшего целого значения или до указанного числа цифр дробной части.|
+|<xref:System.Math.Sign%2A>|Возвращает `Integer` значение, указывающее знак числа.|
 |<xref:System.Math.Sin%2A>|Возвращает синус указанного угла.|
 |<xref:System.Math.Sinh%2A>|Возвращает гиперболический синус указанного угла.|
 |<xref:System.Math.Sqrt%2A>|Возвращает квадратный корень из указанного числа.|
 |<xref:System.Math.Tan%2A>|Возвращает тангенс указанного угла.|
 |<xref:System.Math.Tanh%2A>|Возвращает гиперболический тангенс указанного угла.|
-|<xref:System.Math.Truncate%2A>|Вычисляет целую часть указанного `Decimal` или `Double` числа.|
+|<xref:System.Math.Truncate%2A>|Вычисляет целую часть указанного `Decimal` `Double` числа или.|
 
-В следующей таблице перечислены методы класса <xref:System.Math?displayProperty=nameWithType>, которые не существуют в .NET Framework, но добавлены в .NET Standard или .NET Core:
+В следующей таблице перечислены методы <xref:System.Math?displayProperty=nameWithType> класса, которые не существуют в платформа .NET Framework но добавляются в .NET Standard или .NET Core:
 
 |Метод .NET|Описание|Доступно в|
 |---------------------------|-----------------|-----------|
@@ -70,7 +71,7 @@ ms.locfileid: "76794597"
 |<xref:System.Math.MinMagnitude%2A>|Возвращает меньшую величину из двух чисел двойной точности с плавающей запятой.|Начиная с .NET Core 3,0|
 |<xref:System.Math.ScaleB%2A>|Возвращает значение x \* 2 ^ n, вычисленное эффективно.|Начиная с .NET Core 3,0|
 
-Чтобы использовать эти функции без уточнения, импортируйте <xref:System.Math?displayProperty=nameWithType>ое пространство имен в проект, добавив следующий код в начало исходного файла:
+Чтобы использовать эти функции без уточнения, импортируйте <xref:System.Math?displayProperty=nameWithType> пространство имен в проект, добавив следующий код в начало исходного файла:
 
 ```vb
 Imports System.Math
@@ -78,7 +79,7 @@ Imports System.Math
 
 ## <a name="example---abs"></a>Пример-ABS
 
-В этом примере используется метод <xref:System.Math.Abs%2A> класса <xref:System.Math> для расчета абсолютного значения числа.
+В этом примере используется <xref:System.Math.Abs%2A> метод <xref:System.Math> класса для расчета абсолютного значения числа.
 
 ```vb
 Dim x As Double = Math.Abs(50.3)
@@ -92,7 +93,7 @@ Console.WriteLine(y)
 
 ## <a name="example---atan"></a>Пример — Atan
 
-В этом примере используется метод <xref:System.Math.Atan%2A> класса <xref:System.Math> для вычисления значения PI.
+В этом примере используется <xref:System.Math.Atan%2A> метод <xref:System.Math> класса для вычисления значения PI.
 
 ```vb
 Public Function GetPi() As Double
@@ -102,11 +103,11 @@ End Function
 ```
 
 > [!NOTE]
-> Класс <xref:System.Math?displayProperty=nameWithType> содержит <xref:System.Math.PI?displayProperty=nameWithType> Константное поле. Его можно использовать вместо вычисления.
+> <xref:System.Math?displayProperty=nameWithType>Класс содержит <xref:System.Math.PI?displayProperty=nameWithType> постоянное поле. Его можно использовать вместо вычисления.
 
 ## <a name="example---cos"></a>Пример — COS
 
-В этом примере используется метод <xref:System.Math.Cos%2A> класса <xref:System.Math>, чтобы получить косинус угла.
+В этом примере используется <xref:System.Math.Cos%2A> метод <xref:System.Math> класса для возврата косинуса угла.
 
 ```vb
 Public Function Sec(angle As Double) As Double
@@ -117,7 +118,7 @@ End Function
 
 ## <a name="example---exp"></a>Пример — exp
 
-В этом примере используется метод <xref:System.Math.Exp%2A> класса <xref:System.Math>, возвращающего значение e, возведенное в степень.
+В этом примере используется <xref:System.Math.Exp%2A> метод класса, <xref:System.Math> возвращающий значение e, возведенное в степень.
 
 ```vb
 Public Function Sinh(angle As Double) As Double
@@ -128,7 +129,7 @@ End Function
 
 ## <a name="example---log"></a>Пример журнала
 
-В этом примере используется метод <xref:System.Math.Log%2A> класса <xref:System.Math>, чтобы получить натуральный логарифм числа.
+В этом примере используется <xref:System.Math.Log%2A> метод <xref:System.Math> класса для возврата натурального логарифма числа.
 
 ```vb
 Public Function Asinh(value As Double) As Double
@@ -139,7 +140,7 @@ End Function
 
 ## <a name="example---round"></a>Пример-Round
 
-В этом примере используется метод <xref:System.Math.Round%2A> класса <xref:System.Math> для округления числа до ближайшего целого числа.
+В этом примере <xref:System.Math.Round%2A> метод <xref:System.Math> класса используется для округления числа до ближайшего целого числа.
 
 ```vb
 Dim myVar2 As Double = Math.Round(2.8)
@@ -150,7 +151,7 @@ Console.WriteLine(myVar2)
 
 ## <a name="example---sign"></a>Пример — подпись
 
-В этом примере используется метод <xref:System.Math.Sign%2A> класса <xref:System.Math> для определения знака числа.
+В этом примере используется <xref:System.Math.Sign%2A> метод <xref:System.Math> класса для определения знака числа.
 
 ```vb
 Dim mySign1 As Integer = Math.Sign(12)
@@ -167,7 +168,7 @@ Console.WriteLine(mySign3)
 
 ## <a name="example---sin"></a>Пример — Sin
 
-В этом примере используется метод <xref:System.Math.Sin%2A> класса <xref:System.Math>, чтобы получить синус угла.
+В этом примере используется <xref:System.Math.Sin%2A> метод <xref:System.Math> класса для возврата синуса угла.
 
 ```vb
 Public Function Csc(angle As Double) As Double
@@ -178,7 +179,7 @@ End Function
 
 ## <a name="example---sqrt"></a>Пример. Sqrt
 
-В этом примере используется метод <xref:System.Math.Sqrt%2A> класса <xref:System.Math> для вычисления квадратного корня числа.
+В этом примере используется <xref:System.Math.Sqrt%2A> метод <xref:System.Math> класса для вычисления квадратного корня числа.
 
 ```vb
 Dim mySqrt1 As Double = Math.Sqrt(4)
@@ -198,7 +199,7 @@ Console.WriteLine(mySqrt4)
 
 ## <a name="example---tan"></a>Пример — Tan
 
-В этом примере используется метод <xref:System.Math.Tan%2A> класса <xref:System.Math>, чтобы получить тангенс угла.
+В этом примере используется <xref:System.Math.Tan%2A> метод <xref:System.Math> класса для возврата тангенса угла.
 
 ```vb
 Public Function Ctan(angle As Double) As Double
@@ -207,7 +208,7 @@ Public Function Ctan(angle As Double) As Double
 End Function
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
 - <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>

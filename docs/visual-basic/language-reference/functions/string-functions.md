@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: строковые функции (Visual Basic)'
 title: Строковые функции
 ms.date: 07/20/2015
 helpviewer_keywords:
 - string functions
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
-ms.openlocfilehash: 778e57eadd75baf1aabd100f9d8d41a490f79a04
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1c121bc3de66caf748426b5cd04d049b30bf78bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731153"
 ---
 # <a name="string-functions-visual-basic"></a>Строковые функции (Visual Basic)
 
 В следующей таблице перечислены функции, которые Visual Basic предоставляет в <xref:Microsoft.VisualBasic.Strings?displayProperty=nameWithType> классе для поиска и работы со строками. Их можно рассматривать как Visual Basic встроенных функций; то есть вам не нужно вызывать их как явные члены класса, как показано в примерах. Дополнительные методы и в некоторых случаях дополняют методы, доступны в <xref:System.String?displayProperty=nameWithType> классе.
 
-|Метод .NET Framework|Описание|
+|Метод платформа .NET Framework|Описание|
 |---------------------------|-----------------|
 |<xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>|Возвращает `Integer` значение, представляющее код символа, соответствующий символу.|
 |<xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>|Возвращает знак, связанный с указанным кодом знака.|
@@ -87,7 +88,7 @@ ms.locfileid: "84406292"
 
 [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ключевые слова](../keywords/index.md)
 - [Члены библиотеки времени выполнения Visual Basic](../runtime-library-members.md)

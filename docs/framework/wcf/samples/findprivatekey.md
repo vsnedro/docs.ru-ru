@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: FindPrivateKey Sample'
 title: Пример FindPrivateKey
 ms.date: 12/04/2017
 helpviewer_keywords:
 - FindPrivateKey
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
-ms.openlocfilehash: 0ed1e5e81a5d2f7f3586e5dce306e8244b5ebd48
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 0e876aa3e1f6dde16acbb3ddd2a130ad49d369fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75346016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732427"
 ---
 # <a name="findprivatekey-sample"></a>Пример FindPrivateKey
 
@@ -22,7 +23,7 @@ ms.locfileid: "75346016"
 
 У такой учетной записи может не быть доступа к файлу закрытого ключа, поскольку изначально сертификат был установлен другой учетной записью. Средство FindPrivateKey позволяет определить расположение файла закрытого ключа заданного сертификата X.509. Если расположение файла закрытого ключа заданного сертификата X.509 известно, можно добавлять или удалять разрешения на доступ к этому файлу.
 
-Примеры, использующие сертификаты для обеспечения безопасности, используют средство FindPrivateKey в файле *Setup. bat* . После того как файл закрытого ключа будет найден, можно использовать другие средства, такие как *cacls. exe* , для установки соответствующих прав доступа к файлу.
+Примеры, использующие сертификаты для обеспечения безопасности, используют средство FindPrivateKey в файле *Setup.bat* . После того как файл закрытого ключа будет найден, можно использовать другие средства, такие как *Cacls.exe* , чтобы задать соответствующие права доступа к файлу.
 
 При запуске службы Windows Communication Foundation (WCF) под учетной записью пользователя, такой как исполняемый файл с автономным размещением, убедитесь, что учетная запись пользователя имеет доступ только для чтения к файлу. При запуске службы WCF в службы IIS (IIS) учетные записи по умолчанию, под которыми работает служба, — это СЕТЕВая служба в IIS 7 и более ранних версиях или удостоверение пула приложений в IIS 7,5 и более поздних версиях. Дополнительные сведения см. в разделе [удостоверения пула приложений](/iis/manage/configuring-security/application-pool-identities).
 
@@ -36,7 +37,7 @@ Message="The certificate 'CN=localhost' must have a private key that is capable 
 Source="System.ServiceModel"
 ```
 
-В этом случае используйте средство FindPrivateKey, чтобы найти файл закрытого ключа, а затем установите право доступа для процесса, от имени которого запущена служба. Например, это можно сделать с помощью средства cacls. exe, как показано в следующем примере:
+В этом случае используйте средство FindPrivateKey, чтобы найти файл закрытого ключа, а затем установите право доступа для процесса, от имени которого запущена служба. Например, это можно сделать с помощью средства Cacls.exe, как показано в следующем примере:
 
 ```console
 cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /E /G "NETWORK SERVICE":R
@@ -44,7 +45,7 @@ cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto
 
 #### <a name="to-build-the-findprivatekey-project"></a>Построение проекта FindPrivateKey
 
-Чтобы скачать проект, перейдите на страницу [примеры Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
+Чтобы скачать проект, перейдите на страницу [примеры Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459).
 
 1. Откройте проводник и перейдите в папку *WF_WCF_Samples \вкф\сетуп\финдприватекэй\кс* в каталоге, где был установлен пример.
 
@@ -62,9 +63,9 @@ cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto
 
  "*параметр1* &#124; *параметр2*" представляет выбор между наборами параметров.
 
- "\<*значение*>" представляет значение параметра, которое необходимо указать.
+ " \<*value*> " представляет значение параметра, которое необходимо указать.
 
-## <a name="usage"></a>Метрики
+## <a name="usage"></a>Использование
 
 ```console
 FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]
@@ -75,7 +76,7 @@ FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbpri
 | Параметр         | Описание                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
 | `<subjectName>` | Имя субъекта сертификата                                               |
-| `<thumbprint>`  | Отпечаток сертификата (для поиска можно использовать средство certmgr. exe) |
+| `<thumbprint>`  | Отпечаток сертификата (для поиска можно использовать средство Certmgr.exe) |
 | `-f`            | только имя выходного файла                                                             |
 | `-d`            | только выходной каталог                                                             |
 | `-a`            | абсолютное имя выходного файла                                                         |

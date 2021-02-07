@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: функции преобразования типов (Visual Basic)'
 title: Type Conversion Functions
 ms.date: 10/24/2018
 f1_keywords:
@@ -81,12 +82,12 @@ helpviewer_keywords:
 - rounding numbers [Visual Basic], banker's rounding
 - type conversion [Visual Basic], Visual Basic vs. .NET Framework
 ms.assetid: d9d8d165-f967-44ff-a6cd-598e4740a99e
-ms.openlocfilehash: 5c0cfae01da02222d0827e81ec1ed35ce353ead1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c2e701b522bbeb32f4f6f448acd78e09b0616f46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731088"
 ---
 # <a name="type-conversion-functions-visual-basic"></a>Функции преобразования типов (Visual Basic)
 
@@ -113,10 +114,10 @@ CULng(expression)
 CUShort(expression)
 ```
 
-## <a name="part"></a>Часть
+## <a name="part"></a>Отделение
 
 `expression`  
-Обязательный. Любое выражение исходного типа данных.
+Обязательный элемент. Любое выражение исходного типа данных.
 
 ## <a name="return-value-data-type"></a>Тип данных возвращаемого значения
 
@@ -125,27 +126,27 @@ CUShort(expression)
 |Имя функции|Тип возвращаемых данных|Диапазон для `expression` аргумента|
 |-------------------|----------------------|-------------------------------------|
 |`CBool`|[Логический тип данных](../data-types/boolean-data-type.md)|Любое допустимое `Char` или `String` числовое выражение.|
-|`CByte`|[Тип данных Byte](../data-types/byte-data-type.md)|<xref:System.Byte.MinValue?displayProperty=nameWithType>(от 0) до <xref:System.Byte.MaxValue?displayProperty=nameWithType> (255) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в байтовую `CByte` функцию. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CByte`|[Тип данных Byte](../data-types/byte-data-type.md)|<xref:System.Byte.MinValue?displayProperty=nameWithType> (от 0) до <xref:System.Byte.MaxValue?displayProperty=nameWithType> (255) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в байтовую `CByte` функцию. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
 |`CChar`|[Тип данных Char](../data-types/char-data-type.md)|Любое допустимое `Char` `String` выражение или; преобразуется только первый символ `String` ; значение может быть от 0 до 65535 (без знака).|
 |`CDate`|[Тип данных Date](../data-types/date-data-type.md)|Любое допустимое представление даты и времени.|
 |`CDbl`|[Тип данных Double](../data-types/double-data-type.md)|-1.79769313486231570 e + 308 до-4.94065645841246544 E-324 для отрицательных значений; 4.94065645841246544 e-324 до 1.79769313486231570 E + 308 для положительных значений.|
 |`CDec`|[Тип данных Decimal](../data-types/decimal-data-type.md)|+/-79,228,162,514,264,337,593,543,950,335 для чисел с нулевым масштабом, то есть чисел без десятичных разрядов. Для чисел с 28 десятичными разрядами диапазоном является +/-7.9228162514264337593543950335. Наименьшее возможное ненулевое число — 0,0000000000000000000000000001 (+/-1E-28).|
-|`CInt`|[Тип данных Integer](../data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType>(от-2 147 483 648) до <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2 147 483 647); дробные части округляются.<sup> 1</sup> <br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в целое с помощью `CInt` функции. Дополнительные сведения см. в разделе ["Примечания](#remarks) ". Пример см. в разделе пример для функции [CInt](#cint-example) . |
-|`CLng`|[Тип данных Long](../data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType>(от-9223372036854775808) до <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9 223 372 036 854 775 807); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в 64-разрядное целое число с помощью `CLng` функции; Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CInt`|[Тип данных Integer](../data-types/integer-data-type.md)|<xref:System.Int32.MinValue?displayProperty=nameWithType> (от-2 147 483 648) до <xref:System.Int32.MaxValue?displayProperty=nameWithType> (2 147 483 647); дробные части округляются.<sup> 1</sup> <br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в целое с помощью `CInt` функции. Дополнительные сведения см. в разделе ["Примечания](#remarks) ". Пример см. в разделе пример для функции [CInt](#cint-example) . |
+|`CLng`|[Тип данных Long](../data-types/long-data-type.md)|<xref:System.Int64.MinValue?displayProperty=nameWithType> (от-9223372036854775808) до <xref:System.Int64.MaxValue?displayProperty=nameWithType> (9 223 372 036 854 775 807); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в 64-разрядное целое число с помощью `CLng` функции; Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
 |`CObj`|[Object Data Type](../data-types/object-data-type.md)|Любое допустимое выражение.|
-|`CSByte`|[Тип данных SByte](../data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType>(от-128) до <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования байтов с плавающей запятой в функцию с помощью `CSByte` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
-|`CShort`|[Тип данных Short](../data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType>(от-32 768) до <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32 767); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в 16-разрядное целое с помощью `CShort` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CSByte`|[Тип данных SByte](../data-types/sbyte-data-type.md)|<xref:System.SByte.MinValue?displayProperty=nameWithType> (от-128) до <xref:System.SByte.MaxValue?displayProperty=nameWithType> (127); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования байтов с плавающей запятой в функцию с помощью `CSByte` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CShort`|[Тип данных Short](../data-types/short-data-type.md)|<xref:System.Int16.MinValue?displayProperty=nameWithType> (от-32 768) до <xref:System.Int16.MaxValue?displayProperty=nameWithType> (32 767); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в 16-разрядное целое с помощью `CShort` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
 |`CSng`|[Тип данных Single](../data-types/single-data-type.md)|-3.402823 e + 38 – 1.401298 E-45 для отрицательных значений; 1.401298 e-45 до 3.402823 E + 38 для положительных значений.|
 |`CStr`|[Тип данных String](../data-types/string-data-type.md)|Для `CStr` зависит от `expression` аргумента. См. раздел [возвращаемые значения для функции CStr](return-values-for-the-cstr-function.md).|
-|`CUInt`|[Тип данных UInteger](../data-types/uinteger-data-type.md)|<xref:System.UInt32.MinValue?displayProperty=nameWithType>(от 0) до <xref:System.UInt32.MaxValue?displayProperty=nameWithType> (4 294 967 295) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в целое число без знака с помощью `CUInt` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
-|`CULng`|[Тип данных ULong](../data-types/ulong-data-type.md)|<xref:System.UInt64.MinValue?displayProperty=nameWithType>(от 0) до <xref:System.UInt64.MaxValue?displayProperty=nameWithType> (18446744073709551615) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования с плавающей запятой в функцию длинного целого числа без знака с помощью `CULng` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
-|`CUShort`|[Тип данных UShort](../data-types/ushort-data-type.md)|<xref:System.UInt16.MinValue?displayProperty=nameWithType>(от 0) до <xref:System.UInt16.MaxValue?displayProperty=nameWithType> (65 535) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования 16-разрядного целого числа без знака с плавающей запятой в `CUShort` функцию. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CUInt`|[Тип данных UInteger](../data-types/uinteger-data-type.md)|<xref:System.UInt32.MinValue?displayProperty=nameWithType> (от 0) до <xref:System.UInt32.MaxValue?displayProperty=nameWithType> (4 294 967 295) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8 Visual Basic оптимизирует производительность преобразования с плавающей запятой в целое число без знака с помощью `CUInt` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CULng`|[Тип данных ULong](../data-types/ulong-data-type.md)|<xref:System.UInt64.MinValue?displayProperty=nameWithType> (от 0) до <xref:System.UInt64.MaxValue?displayProperty=nameWithType> (18446744073709551615) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования с плавающей запятой в функцию длинного целого числа без знака с помощью `CULng` функции. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
+|`CUShort`|[Тип данных UShort](../data-types/ushort-data-type.md)|<xref:System.UInt16.MinValue?displayProperty=nameWithType> (от 0) до <xref:System.UInt16.MaxValue?displayProperty=nameWithType> (65 535) (без знака); дробные части округляются.<sup> 1</sup><br/><br/>Начиная с Visual Basic 15,8, Visual Basic оптимизирует производительность преобразования 16-разрядного целого числа без знака с плавающей запятой в `CUShort` функцию. Дополнительные сведения см. в разделе ["Примечания"](#remarks) . Пример см. в разделе пример для функции [CInt](#cint-example) .|
 
 <sup>1</sup> дробная часть может подвергаться специальному типу округления, называемому *банковским округлением*. Дополнительные сведения см. в разделе "Примечания".
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
-Как правило, следует использовать функции преобразования типа Visual Basic в качестве предпочтений для методов .NET Framework, таких как `ToString()` , в <xref:System.Convert> классе или в отдельной структуре типа или классе. Функции Visual Basic предназначены для оптимального взаимодействия с Visual Basicным кодом, а также для сокращения исходного кода и упрощения его чтения. Кроме того, методы преобразования .NET Framework не всегда дают те же результаты, что и функции Visual Basic, например при преобразовании `Boolean` в `Integer` . Дополнительные сведения см. в разделе [Устранение неполадок типов данных](../../programming-guide/language-features/data-types/troubleshooting-data-types.md).
+Как правило, следует использовать функции преобразования типа Visual Basic в качестве предпочтений для методов платформа .NET Framework, таких как `ToString()` , в <xref:System.Convert> классе или в отдельной структуре типа или классе. Функции Visual Basic предназначены для оптимального взаимодействия с Visual Basicным кодом, а также для сокращения исходного кода и упрощения его чтения. Кроме того, методы преобразования платформа .NET Framework не всегда дают те же результаты, что и функции Visual Basic, например при преобразовании `Boolean` в `Integer` . Дополнительные сведения см. в разделе [Устранение неполадок типов данных](../../programming-guide/language-features/data-types/troubleshooting-data-types.md).
 
 Начиная с Visual Basic 15,8, производительность преобразования с плавающей запятой в целое число оптимизируется при передаче <xref:System.Single> значения или, <xref:System.Double> возвращаемого следующими методами, в одну из целочисленных функций преобразования (,,,,,, `CByte` `CShort` `CInt` `CLng` `CSByte` `CUShort` `CUInt` , `CULng` ):
 
@@ -181,11 +182,11 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
 - **Дробные части.** При преобразовании нецелочисленного значения в целочисленные функции целочисленного преобразования ( `CByte` , `CInt` ,,, `CLng` , `CSByte` `CShort` `CUInt` , `CULng` и `CUShort` ) удаляют дробную часть и округляют значение до ближайшего целого.
 
-     Если дробная часть равна точности 0,5, функции целочисленного преобразования округляют его до ближайшего четного целого числа. Например, 0,5 округляется до 0, а 1,5 и 2,5 оба округляются в 2. Иногда это называется *округлением банка*и предназначено для компенсации смещения, которое может накапливаться при одновременном добавлении многих таких чисел.
+     Если дробная часть равна точности 0,5, функции целочисленного преобразования округляют его до ближайшего четного целого числа. Например, 0,5 округляется до 0, а 1,5 и 2,5 оба округляются в 2. Иногда это называется *округлением банка* и предназначено для компенсации смещения, которое может накапливаться при одновременном добавлении многих таких чисел.
 
-     `CInt`и `CLng` отличаются от <xref:Microsoft.VisualBasic.Conversion.Int%2A> функций и <xref:Microsoft.VisualBasic.Conversion.Fix%2A> , которые усекаются, а не округляют дробную часть числа. Кроме того, `Fix` и `Int` всегда возвращают значение того же типа данных, что и при передаче.
+     `CInt` и `CLng` отличаются от <xref:Microsoft.VisualBasic.Conversion.Int%2A> функций и <xref:Microsoft.VisualBasic.Conversion.Fix%2A> , которые усекаются, а не округляют дробную часть числа. Кроме того, `Fix` и `Int` всегда возвращают значение того же типа данных, что и при передаче.
 
-- **Преобразования даты и времени.** Используйте <xref:Microsoft.VisualBasic.Information.IsDate%2A> функцию, чтобы определить, можно ли преобразовать значение в дату и время. `CDate`распознает литералы даты и литералы времени, но не числовые значения. Чтобы преобразовать значение Visual Basic 6,0 в `Date` `Date` значение в Visual Basic 2005 или более поздней версии, можно использовать <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> метод.
+- **Преобразования даты и времени.** Используйте <xref:Microsoft.VisualBasic.Information.IsDate%2A> функцию, чтобы определить, можно ли преобразовать значение в дату и время. `CDate` распознает литералы даты и литералы времени, но не числовые значения. Чтобы преобразовать значение Visual Basic 6,0 в `Date` `Date` значение в Visual Basic 2005 или более поздней версии, можно использовать <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> метод.
 
 - **Нейтральные значения даты и времени.** [Тип данных Date](../data-types/date-data-type.md) всегда содержит сведения о дате и времени. В целях преобразования типов Visual Basic учитывает 1/1/0001 (1 января 1 года) как *нейтральное значение* для даты, а 00:00:00 (полночь) — как нейтральное значение времени. При преобразовании `Date` значения в строку не `CStr` включает нейтральные значения в результирующую строку. Например, если преобразовать `#January 1, 0001 9:30:00#` в строку, то результатом будет "9:30:00 AM"; сведения о дате подавляются. Однако сведения о дате по-прежнему содержатся в исходном `Date` значении и могут быть восстановлены с помощью таких функций, как <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> Function.
 
@@ -283,7 +284,7 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
 [!code-vb[VbVbalrFunctions#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#15)]
 
-`CStr`всегда отображает `Date` значение в стандартном коротком формате для текущего языкового стандарта, например "6/15/2003 4:35:47 PM". Однако `CStr` подавляет *нейтральные значения* 1/1/0001 для даты и 00:00:00 для времени.
+`CStr` всегда отображает `Date` значение в стандартном коротком формате для текущего языкового стандарта, например "6/15/2003 4:35:47 PM". Однако `CStr` подавляет *нейтральные значения* 1/1/0001 для даты и 00:00:00 для времени.
 
 Дополнительные сведения о значениях, возвращаемых `CStr` , см. в разделе [возвращаемые значения функции CStr](return-values-for-the-cstr-function.md).
 
@@ -305,7 +306,7 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
 [!code-vb[VbVbalrFunctions#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#18)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

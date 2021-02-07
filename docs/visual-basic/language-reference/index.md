@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Справочник по языку Visual Basic'
 title: Справочник по языку
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - language reference, Visual Basic
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-ms.openlocfilehash: dd7b26d7b5acf924c3eac39b7a67c35245945aaa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 47a299437b5f3ceab1cb24b8a09666366c546a64
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84362479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731036"
 ---
 # <a name="visual-basic-language-reference"></a>Справочник по языку Visual Basic
 
@@ -66,7 +67,7 @@ ms.locfileid: "84362479"
  Документирует свойства, доступные в Visual Basic.  
   
  [Запросы](queries/index.md)  
- Содержит справочные сведения об использовании выражений LINQ в коде.  
+ Содержит справочные сведения об использовании выражений Language-Integrated запросов (LINQ) в коде.  
   
  [Операторы](statements/index.md)  
  Документирует объявления и исполняемые операторы, доступные в Visual Basic.  
@@ -80,10 +81,10 @@ ms.locfileid: "84362479"
  [XML-литералы](xml-literals/index.md)  
  Приводит ссылки на сведения об использовании XML-литералов для включения XML непосредственно в код.  
   
- [сообщения об ошибках](error-messages/index.md)  
+ [Сообщения об ошибках](error-messages/index.md)  
  Содержит список Visual Basic компилятора и сообщений об ошибках во время выполнения, а также справку по их обработке.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Компилятор Visual Basic с интерфейсом командной строки](../reference/command-line-compiler/index.md)  
  Описывает использование компилятора командной строки в качестве альтернативы компиляции программ из интегрированной среды разработки (IDE) Visual Studio.
