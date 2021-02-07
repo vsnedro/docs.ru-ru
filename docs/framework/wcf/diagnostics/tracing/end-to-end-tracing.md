@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: сквозная трассировка'
 title: Сквозная трассировка
 ms.date: 03/30/2017
 ms.assetid: f5ac7fc7-f97c-4313-b068-54e0c471b2aa
-ms.openlocfilehash: a8c06b9e4f70321e6ef3756863390dc62c659557
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c1c4a38d4ef8c445994d42abeafbb25da9a5f326
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759436"
 ---
 # <a name="end-to-end-tracing"></a>Сквозная трассировка
 
@@ -15,7 +16,7 @@ ms.locfileid: "96243954"
   
  В разделе Сценарии сквозной [трассировки](end-to-end-tracing-scenarios.md) приведен список комплексных сценариев трассировки, а также соответствующие действия и структура трассировки.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Действие](activity.md): описывает трассировки действий в модели трассировки Windows Communication Foundation (WCF).  
   

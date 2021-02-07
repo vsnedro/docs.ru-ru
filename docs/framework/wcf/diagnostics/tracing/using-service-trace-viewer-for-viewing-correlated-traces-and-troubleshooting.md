@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Использование средства Service Trace Viewer для просмотра связанных трассировок и устранения неполадок.
 title: Использование программы Service Trace Viewer для просмотра скоррелированных трассировок и устранения неполадок
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: e1cd1443e96e7195127cb95e7ef1b2c4d6d9c176
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3f6f48c3d366a024c5dcc0cdbc85c4aea47a7a8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587759"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758168"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>Использование программы Service Trace Viewer для просмотра скоррелированных трассировок и устранения неполадок
 
@@ -15,9 +16,9 @@ ms.locfileid: "84587759"
 
 ## <a name="using-the-service-trace-viewer-tool"></a>Использование программы Service Trace Viewer
 
-Средство просмотра трассировки службы Windows Communication Foundation (WCF) помогает сопоставлять Диагностические трассировки, созданные прослушивателями WCF, для выявления причины ошибки. Это средство позволяет легко просматривать, группировать и фильтровать трассировки, чтобы можно было диагностировать, устранять и проверять проблемы со службами WCF. Дополнительные сведения об использовании этого средства см. в разделе [Service Trace Viewer Tool (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
+Средство просмотра трассировки службы Windows Communication Foundation (WCF) помогает сопоставлять Диагностические трассировки, созданные прослушивателями WCF, для выявления причины ошибки. Это средство позволяет легко просматривать, группировать и фильтровать трассировки, чтобы можно было диагностировать, устранять и проверять проблемы со службами WCF. Дополнительные сведения об использовании этого средства см. в разделе [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
 
-В этом разделе содержатся снимки [экрана трассировки,](../../samples/tracing-and-message-logging.md) созданные при просмотре с помощью [средства Service Trace Viewer (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md). Показывается, как интерпретировать содержимое трассировки, действия и взаимосвязь между ними, а также как анализировать большое количество трассировок при устранении неполадок.
+В этом разделе содержатся снимки [экрана трассировки,](../../samples/tracing-and-message-logging.md) созданные при просмотре с помощью [средства Service Trace Viewer (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md). Показывается, как интерпретировать содержимое трассировки, действия и взаимосвязь между ними, а также как анализировать большое количество трассировок при устранении неполадок.
 
 ## <a name="viewing-trace-content"></a>Просмотр содержимого трассировки
 
@@ -211,7 +212,7 @@ ms.locfileid: "84587759"
 
 Чтобы начать устранение неполадок, можно также выбрать трассировку сообщений красного или желтого цвета и дважды щелкнуть ее для отслеживания основной причины.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Сценарии сквозной трассировки](end-to-end-tracing-scenarios.md)
 - [Программа Service Trace Viewer (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)

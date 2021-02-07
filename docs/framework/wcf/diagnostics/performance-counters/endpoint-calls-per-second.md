@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: конечная точка: вызовов в секунду'
 title: 'Конечная точка: количество вызовов в секунду'
 ms.date: 03/30/2017
 ms.assetid: ca0fc06d-d68f-4236-bd5f-c7ff6214acdd
-ms.openlocfilehash: 3c9f9882be935474ec187e2829e8e1e58b091afa
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 10e3cb892119999225abaa8b85ea59065650795d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253158"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759579"
 ---
 # <a name="endpoint-calls-per-second"></a>Конечная точка: количество вызовов в секунду
 

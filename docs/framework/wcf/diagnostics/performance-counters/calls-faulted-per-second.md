@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: количество вызовов с ошибками в секунду'
 title: Количество сбоев вызовов в секунду
 ms.date: 03/30/2017
 ms.assetid: 81c88073-8e32-4520-a71a-2c56b71ee515
-ms.openlocfilehash: 0e69cadfdbb4e387382ba33aa9cf977e4cdb9c08
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: cbff7b24d2aa457bdbe3c600109f24c9672c7ab2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96271425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759683"
 ---
 # <a name="calls-faulted-per-second"></a>Количество сбоев вызовов в секунду
 

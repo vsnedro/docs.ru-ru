@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: передача трассировок User-Code'
 title: Создание трассировки пользовательского кода
 ms.date: 03/30/2017
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49
-ms.openlocfilehash: e8b2031165a83e24ba15a2fcf847a170f47e696a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0abc8a4b39979942fd291ffd9cbb96047274dab0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759514"
 ---
 # <a name="emitting-user-code-traces"></a>Создание трассировки пользовательского кода
 
@@ -109,7 +110,7 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 ## <a name="viewing-user-traces-in-the-service-trace-viewer-tool"></a>Просмотр пользовательских трассировок в программе Service Trace Viewer
 
-В этом разделе содержатся снимки экрана трассировки, созданные при [Extending Tracing](../../samples/extending-tracing.md) просмотре с помощью [средства Service Trace Viewer (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
+В этом разделе содержатся снимки экрана трассировки, созданные при [](../../samples/extending-tracing.md) просмотре с помощью [средства Service Trace Viewer (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
 
 На следующей диаграмме на левой панели выбрано действие "Добавить запрос", которое было создано ранее. Это действие входит в список с тремя другими математическими действиями ("Вычесть", "Умножить" и "Разделить"), образующими клиентское приложение. Во избежание потенциального появления ошибок в разных запросах в пользовательском коде для каждой операции определяется одно новое действие.
 
@@ -149,6 +150,6 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 Определение действий и распространение идентификатора действия позволяет осуществить непосредственную корреляцию ошибок в конечных точках. Это ускоряет выявление основной причины ошибки.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Расширение трассировки](../../samples/extending-tracing.md)

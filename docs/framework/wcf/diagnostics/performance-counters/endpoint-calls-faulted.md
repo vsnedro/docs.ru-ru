@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о: Endpoint: сбой вызовов'
 title: 'Конечная точка: сбои вызовов'
 ms.date: 03/30/2017
 ms.assetid: 271e6284-9c4b-465f-b619-069e1555a5e4
-ms.openlocfilehash: da8f771e93a9457944046dfe84a1a7a455388d77
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c1e65582f39a8512bb62b41044d49d32d9d38743
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759592"
 ---
 # <a name="endpoint-calls-faulted"></a>Конечная точка: сбои вызовов
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о службе: количество транзакций, обработанных за секунду'
 title: 'Служба: количество поступивших транзакций в секунду'
 ms.date: 03/30/2017
 ms.assetid: ec72eb49-2942-4811-91df-d6e5dad81fd8
-ms.openlocfilehash: 158bd7e2f2f98e91215ef7351cf90493a2d3059d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aae78853272b46a97ce25a710039661f36bf7079
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759501"
 ---
 # <a name="service-transactions-flowed-per-second"></a>Служба: количество поступивших транзакций в секунду
 
