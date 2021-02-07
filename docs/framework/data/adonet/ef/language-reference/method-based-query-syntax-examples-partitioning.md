@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Method-Based примеры синтаксиса запросов: секционирование'
 title: Примеры синтаксиса запросов на основе методов. Секционирование
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b7b64874-c3c8-4bdb-862c-89a168d07827
-ms.openlocfilehash: 659c05f261b854b1f2bb9bc3bce7c2889650571f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 914dacb5b82b9ce452d4d1d7a97262de5803a9fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696689"
 ---
 # <a name="method-based-query-syntax-examples-partitioning"></a>Примеры синтаксиса запросов на основе методов. Секционирование
 
@@ -53,6 +54,6 @@ ms.locfileid: "91191896"
  [!code-csharp[DP L2E Examples#TakeNested](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#takenested)]
  [!code-vb[DP L2E Examples#TakeNested](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#takenested)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

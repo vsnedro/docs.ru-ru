@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: справочные материалы'
 title: Справочник
 ms.date: 03/30/2017
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
-ms.openlocfilehash: 05ff05d165ad902eba0e984089ab1dde7f24fca7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 7125cbea5cf8689a77823ff85b9652bc2ca31096
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184863"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695238"
 ---
 # <a name="reference"></a>Справочник
 
 В этом разделе содержатся справочные сведения для разработчиков [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- Кроме того, рекомендуется искать конкретные проблемы в Документация Майкрософт, особенно для участия в [форуме по LINQ](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), где вы можете обсуждать более сложные темы подробно с экспертами. Вы также можете изучить технический документ с подробным описанием технологии [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], дополненный примерами кода Visual Basic и C#. Дополнительные сведения см. в разделе [LINQ to SQL: интегрированный в язык .NET запрос для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
+ Кроме того, рекомендуется искать конкретные проблемы в Документация Майкрософт, особенно для участия в [форуме по LINQ](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), где вы можете обсуждать более сложные темы подробно с экспертами. Вы также можете изучить технический документ с подробным описанием технологии [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], дополненный примерами кода Visual Basic и C#. Дополнительные сведения см. в разделе [LINQ to SQL: .net Language-Integrated запрос для реляционных данных](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Типы данных и функции](data-types-and-functions.md)  
  Описывает, как конструкции среды CLR имеют соответствующие выражения в SQL, где [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] явно предоставлено преобразование в подсистеме преобразования.  

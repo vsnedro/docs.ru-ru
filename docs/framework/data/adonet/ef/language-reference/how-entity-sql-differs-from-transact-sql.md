@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о том, как Entity SQL отличается от языка Transact-SQL.
 title: Отличия Entity SQL от Transact-SQL
 ms.date: 03/30/2017
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
-ms.openlocfilehash: 9433e7a7ffdc3a7e32900981dca95eefde32f290
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 349dd64cc0e548ab0dc8d0e66e8bb14b58912d09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204441"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696871"
 ---
 # <a name="how-entity-sql-differs-from-transact-sql"></a>Отличие Entity SQL от Transact-SQL
 
@@ -126,7 +127,7 @@ p.Address.City
   
  Entity SQL не поддерживает конструкцию *. Запросы Transact-SQL к форме `select * from T` и `select T1.* from T1, T2...` могут быть выражены в Entity SQL как `select value t from T as t` и `select value t1 from T1 as t1, T2 as t2...` соответственно. Эти конструкции также обеспечивают наследование (заменяемость значений), в то время как варианты `select *` ограничены свойствами верхнего уровня объявленного типа.  
   
- Entity SQL не поддерживает `count(*)` статистическую обработку. Используйте вместо этого `count(0)`.  
+ Entity SQL не поддерживает `count(*)` статистическую обработку. Взамен рекомендуется использовать `count(0)`.  
   
 ## <a name="changes-to-group-by"></a>Изменения на предложение Group By  
 
@@ -227,7 +228,7 @@ SELECT value c FROM Categories AS c;
   
  Entity SQL поддерживает только одну инструкцию запроса с результатами для каждой команды.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об Entity SQL](entity-sql-overview.md)
 - [Неподдерживаемые выражения](unsupported-expressions-entity-sql.md)

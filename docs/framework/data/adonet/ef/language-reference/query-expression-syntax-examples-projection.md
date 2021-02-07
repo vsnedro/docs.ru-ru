@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: примеры синтаксиса выражений запросов: проекция'
 title: Примеры синтаксиса выражений запросов. Проекция
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 079926c5-e6b5-4fb9-b4cf-9c63886dd626
-ms.openlocfilehash: 82395b79cb5b2834a79356cbdfb1087603a9ae77
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e14a84272cef03dca24df5d0f889b8aaa77e94d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696013"
 ---
 # <a name="query-expression-syntax-examples-projection"></a>Примеры синтаксиса выражений запросов. Проекция
 
@@ -67,6 +68,6 @@ ms.locfileid: "91175581"
  [!code-csharp[DP L2E Examples#SelectManyFromAssignment](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#selectmanyfromassignment)]
  [!code-vb[DP L2E Examples#SelectManyFromAssignment](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#selectmanyfromassignment)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

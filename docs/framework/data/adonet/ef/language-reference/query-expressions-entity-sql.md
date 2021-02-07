@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: выражения запроса (Entity SQL)'
 title: Выражения запросов (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: c36f327b-e230-48d4-bbd5-78dc6478c447
-ms.openlocfilehash: ca6b79b4b3d3326a74780345decf58367596adb0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 218e7db0e812bd43a92d3145bc4bf96244ef6a3d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696039"
 ---
 # <a name="query-expressions-entity-sql"></a>Выражения запросов (Entity SQL)
 
@@ -21,6 +22,6 @@ ms.locfileid: "91175607"
 
  Имена, определенные в предложении FROM, появляются в области FROM в порядке перечисления, слева направо. В списке JOIN выражения могут ссылаться на имена, которые определены в списке ранее. Открытые свойства элементов, указанные в предложении FROM, не добавляются в область FROM. На них всегда следует ссылаться через имя с псевдонимом. Но обычно все части выражения выбора находятся в области FROM.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)

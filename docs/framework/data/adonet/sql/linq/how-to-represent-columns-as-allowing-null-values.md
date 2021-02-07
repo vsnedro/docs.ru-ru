@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: как представить столбцы как допускающие значения NULL'
 title: Практическое руководство. Как представлять столбцы, допускающие значения NULL
 ms.date: 03/30/2017
 ms.assetid: ebb71a37-1f4c-4fa7-b2d2-d903f13c4af1
-ms.openlocfilehash: ec88429ed9c1f91917476cc807bd6b53f0bcc3a3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 019affd13fa9c2629c6a0ec66c42f19842a4d824
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695909"
 ---
 # <a name="how-to-represent-columns-as-allowing-null-values"></a>Практическое руководство. Как представлять столбцы, допускающие значения NULL
 
@@ -21,7 +22,7 @@ ms.locfileid: "91166369"
   
 2. Задайте свойству <xref:System.Data.Linq.Mapping.ColumnAttribute.CanBeNull%2A> значение `true`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модель объектов LINQ to SQL](the-linq-to-sql-object-model.md)
 - [Практическое руководство. Как настроить классы сущностей с помощью редактора кода](how-to-customize-entity-classes-by-using-the-code-editor.md)

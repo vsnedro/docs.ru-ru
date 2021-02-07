@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: удаленное и локальное выполнение'
 title: Удаленное и локальное выполнение
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-ms.openlocfilehash: c99e726902192fc8324e77441b80aa4519c55ddc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ea4d85faedd4a299da292029e64d77132e1a65a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91196953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695213"
 ---
 # <a name="remote-vs-local-execution"></a>Удаленное и локальное выполнение
 
@@ -52,6 +53,6 @@ ms.locfileid: "91196953"
 
  Обратите внимание на важное различие между локальной коллекцией, реализующей интерфейс, <xref:System.Collections.Generic.List%601> и коллекцией, которая предоставляет удаленные запросы к *неупорядоченным наборам* в реляционной базе данных. Для методов <xref:System.Collections.Generic.List%601>, например при использовании значений индексов, требуется семантика списка, которая, как правило, не реализуется посредством удаленного запроса к неупорядоченному набору. По этой причине подобные методы неявно загружают класс <xref:System.Data.Linq.EntitySet%601>, чтобы получить возможность локального выполнения.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные принципы запросов](query-concepts.md)

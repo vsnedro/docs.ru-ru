@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как вызывать канонические функции.
 title: Практическое руководство. Вызов канонических функций
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b3d84873-7403-4957-8e20-b4ae39f50214
-ms.openlocfilehash: acfbdbaf21fe1d454b68dfef5bf4f88d8020ea65
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d1e2310bccd6cc60177dba9a2e4c3a104702ba0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696845"
 ---
 # <a name="how-to-call-canonical-functions"></a>Практическое руководство. Вызов канонических функций
 
@@ -37,7 +38,7 @@ ms.locfileid: "91204454"
  [!code-csharp[DP L2E CanonicalAndStoreFunctions#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp l2e canonicalandstorefunctions/cs/program.cs#2)]
  [!code-vb[DP L2E CanonicalAndStoreFunctions#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp l2e canonicalandstorefunctions/vb/module1.vb#2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Вызов функций в запросах LINQ to Entities](calling-functions-in-linq-to-entities-queries.md)
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

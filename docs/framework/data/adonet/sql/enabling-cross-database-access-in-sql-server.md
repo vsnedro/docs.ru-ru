@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Включение межбазовых доступа в SQL Server'
 title: Организация межбазового доступа в SQL Server
 ms.date: 03/30/2017
 ms.assetid: 10663fb6-434c-4c81-8178-ec894b9cf895
-ms.openlocfilehash: 6ea1ed9a6faa39df0a4f9a4a353bf34c7f5ba601
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 4e818b4f0294fdc7edd351a1e60203357579a320
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695870"
 ---
 # <a name="enabling-cross-database-access-in-sql-server"></a>Организация межбазового доступа в SQL Server
 
@@ -55,7 +56,7 @@ ALTER DATABASE Database2 SET DB_CHAINING ON;
 |--------------|-----------------|  
 |[Расширение олицетворения базы данных с помощью параметра выполнить как](/previous-versions/sql/sql-server-2008-r2/ms188304(v=sql.105)) и [перекрестный межбазовые цепочки владения](/sql/database-engine/configure-windows/cross-db-ownership-chaining-server-configuration-option).|В статьях описано, как настроить межбазовые цепочки владения для экземпляра SQL Server.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Общие сведения о безопасности SQL Server](overview-of-sql-server-security.md)

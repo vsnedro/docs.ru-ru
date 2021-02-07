@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения о пространствах имен (Entity SQL)
 title: Пространства имен (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 83991c21-60db-4af9-aca3-b416f6cae98e
-ms.openlocfilehash: 7a53f8e7e70dbc9fa505f7f8619af10a0e44c331
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 70ef0021c3015fd661b42becb5371dcfd958f20f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696559"
 ---
 # <a name="namespaces-entity-sql"></a>Пространства имен (Entity SQL)
 
-В [!INCLUDE[esql](../../../../../../includes/esql-md.md)] были введены пространства имен, чтобы избежать возникновения конфликтов с именами глобальных идентификаторов, например именами типов, наборов сущностей, функций и т. д. Поддержка пространства имен в [!INCLUDE[esql](../../../../../../includes/esql-md.md)] аналогична поддержке пространства имен в .NET Framework.  
+В [!INCLUDE[esql](../../../../../../includes/esql-md.md)] были введены пространства имен, чтобы избежать возникновения конфликтов с именами глобальных идентификаторов, например именами типов, наборов сущностей, функций и т. д. Поддержка пространства имен в [!INCLUDE[esql](../../../../../../includes/esql-md.md)] аналогична поддержке пространства имен в платформа .NET Framework.  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] предоставляет две формы предложения USING: полные пространства имен (для пространства имен предоставляется короткий псевдоним) и неполные пространства имен, как показано в следующем примере:  
   
@@ -33,13 +34,13 @@ WHERE p IS OF (NamespaceName.Employee)
   
 ## <a name="differences-from-the-net-framework"></a>Отличия от платформы .NET Framework  
 
- В .NET Framework можно использовать частично определенные пространства имен. В [!INCLUDE[esql](../../../../../../includes/esql-md.md)] это недопустимо.  
+ В платформа .NET Framework можно использовать частично определенные пространства имен. В [!INCLUDE[esql](../../../../../../includes/esql-md.md)] это недопустимо.  
   
 ## <a name="adonet-usage"></a>Использование ADO.NET  
 
  Запросы выражаются посредством объектов <xref:System.Data.Common.DbCommand> ADO.NET. Объекты <xref:System.Data.Common.DbCommand> могут быть построены на основе объектов <xref:System.Data.Common.DbConnection>. Пространства имен также могут быть указаны как часть объектов <xref:System.Data.Common.DbCommand> и <xref:System.Data.Common.DbConnection>. Если [!INCLUDE[esql](../../../../../../includes/esql-md.md)] не может разрешить идентификатор внутри самого запроса, внешние пространства имен проходят проверку (на основе аналогичных правил).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о МУЛЬТИНАБОРе (Entity SQL)
 title: MULTISET (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: eb90a377-e47a-43a5-b308-e993b6d611e6
-ms.openlocfilehash: abdcce0e98c924052e07b9001d7dd92051c13747
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: f963638d018299e1cae7435f6dd3b7eaf855b4eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99427036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696598"
 ---
 # <a name="multiset-entity-sql"></a>MULTISET (Entity SQL)
 
@@ -57,7 +58,7 @@ MULTISET ( expression [{, expression }] )
 
 [!code-sql[DP EntityServices Concepts#MULTISET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#multiset)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Сборка типов](constructing-types-entity-sql.md)
 - [Справочник по Entity SQL](entity-sql-reference.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения см. в статье примеры синтаксиса выражений запросов: ограничение (LINQ to DataSet)'
 title: Примеры синтаксиса выражений запроса. Ограничение (LINQ to DataSet)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1daf42c2-c9f4-4cda-b291-7641b9c6d3fe
-ms.openlocfilehash: 92ffc3a36137281688ee3918828df111ac6707e9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 06ffaa782a02191be4c9568587824ec1767f1249
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695987"
 ---
 # <a name="query-expression-syntax-examples-restriction-linq-to-dataset"></a>Примеры синтаксиса выражений запроса. Ограничение (LINQ to DataSet)
 
@@ -56,7 +57,7 @@ ms.locfileid: "91172766"
  [!code-csharp[DP LINQ to DataSetExamples#WhereDrillDown](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#wheredrilldown)]
  [!code-vb[DP LINQ to DataSet Examples#WhereDrillDown](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#wheredrilldown)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Загрузка данных в набор данных](loading-data-into-a-dataset.md)
 - [Примеры LINQ to DataSet](linq-to-dataset-examples.md)

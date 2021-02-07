@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: примеры синтаксиса выражений запросов: операторы element'
 title: Примеры синтаксиса выражений запросов. Операторы элементов
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 32268fe2-de18-4065-8060-f250def83837
-ms.openlocfilehash: 8cd550120e949f247a17ca6c7dafca06607a4e7e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0dc6d49959abba712cef572eaa549138af646bd5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91152992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696247"
 ---
 # <a name="query-expression-syntax-examples-element-operators"></a>Примеры синтаксиса выражений запросов. Операторы элементов
 
@@ -30,6 +31,6 @@ ms.locfileid: "91152992"
  [!code-csharp[DP L2E Examples#FirstSimple](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#firstsimple)]
  [!code-vb[DP L2E Examples#FirstSimple](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#firstsimple)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

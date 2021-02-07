@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: зеркальное отображение базы данных в SQL Server'
 title: Зеркальное отображение баз данных в SQL Server
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 89befaff-bb46-4290-8382-e67cdb0e3de9
-ms.openlocfilehash: 7e2c1c8ea1cbc1bb22452b9ef9d1f250c96118ea
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 663f0a2a016a3f6c449c1d2694bc6c2d77eb6157
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695896"
 ---
 # <a name="database-mirroring-in-sql-server"></a>Зеркальное отображение баз данных в SQL Server
 
@@ -68,6 +69,6 @@ string activeServer = connection.DataSource;
 |--------------|-----------------|  
 |[Зеркальное отображение базы данных](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|Описывается установка и настройка зеркального отображения в SQL Server.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

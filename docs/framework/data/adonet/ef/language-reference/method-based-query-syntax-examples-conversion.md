@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Method-Based примеры синтаксиса запросов: преобразование'
 title: Примеры синтаксиса запросов на основе методов. Преобразование
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 19f66872-d5ab-49f8-969f-e53f9632a13d
-ms.openlocfilehash: e2b5ae3b7c7733216f18914c497d080fe8d71a8e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 054ef9291a66216b14e2f03ecebd28fb24c6574d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696754"
 ---
 # <a name="method-based-query-syntax-examples-conversion"></a>Примеры синтаксиса запросов на основе методов. Преобразование
 
@@ -48,6 +49,6 @@ ms.locfileid: "91192091"
  [!code-csharp[DP L2E Examples#ToList](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#tolist)]
  [!code-vb[DP L2E Examples#ToList](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#tolist)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

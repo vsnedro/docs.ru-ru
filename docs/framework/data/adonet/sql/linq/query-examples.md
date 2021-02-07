@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье примеры запросов.
 title: Примеры запросов
 ms.date: 03/30/2017
 ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
-ms.openlocfilehash: f3f135850fb5f40b3b8882f72f5cc24512f21084
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 77eb5c475a4f84930bd760b34f48d3954083c892
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147558"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695244"
 ---
 # <a name="query-examples"></a>Примеры запросов
 
@@ -16,7 +17,7 @@ ms.locfileid: "91147558"
 > [!IMPORTANT]
 > *база данных* часто используется в примерах кода в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] документации. Предполагается, что *база данных* является экземпляром класса *Northwind* , который наследует от <xref:System.Data.Linq.DataContext> .  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Статистические запросы](aggregate-queries.md)  
  Содержит описание использования <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Count%2A> и т. д.  

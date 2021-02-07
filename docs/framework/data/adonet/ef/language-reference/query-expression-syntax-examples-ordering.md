@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения см. в статье примеры синтаксиса выражений запросов: упорядочение'
 title: Примеры синтаксиса выражений запросов. Упорядочение
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: bcbc9625-7cf7-476e-85d2-058f12682f54
-ms.openlocfilehash: ed03fc248ed48f56998bc27f7e880b1e8aa443d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 931225344311e8dde6318564ddeba6eae0e2411d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156788"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696104"
 ---
 # <a name="query-expression-syntax-examples-ordering"></a>Примеры синтаксиса выражений запросов. Упорядочение
 
@@ -64,6 +65,6 @@ ms.locfileid: "91156788"
  [!code-csharp[DP L2E Examples#ThenByDescendingSimple](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#thenbydescendingsimple)]
  [!code-vb[DP L2E Examples#ThenByDescendingSimple](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#thenbydescendingsimple)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запросы в LINQ to Entities](queries-in-linq-to-entities.md)

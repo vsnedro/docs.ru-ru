@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: запросы к базе данных'
 title: Запрос к базе данных
 ms.date: 03/30/2017
 ms.assetid: eefb8b0c-ff07-4e86-a3d3-567479523fe9
-ms.openlocfilehash: b4ce48ee3d49769a353bf7371140b1f5a645f34e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 19eac5d42af644e3ba0eb5a7bfd82fc7f0e3f1fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91184883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695236"
 ---
 # <a name="querying-the-database"></a>Запрос к базе данных
 
 В этой группе разделов описывается, как разрабатывать и выполнять запросы в проектах [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Как обращаться с запросами о сведениях](how-to-query-for-information.md)  
  Краткое описание того, как [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] запросы LINQ в основном совпадают.  

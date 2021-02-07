@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: внесение и отправка изменений данных'
 title: Внесение и отправка изменений данных
 ms.date: 03/30/2017
 ms.assetid: d68c2dc3-99b3-49ab-b547-2ca5b386429a
-ms.openlocfilehash: 18468c9a2018a28e85d87155d98b0853854013fd
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 260dab911057b45250d44ded7c254dd903e2aed7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695578"
 ---
 # <a name="making-and-submitting-data-changes"></a>Внесение и отправка изменений данных
 
@@ -20,23 +21,23 @@ ms.locfileid: "70792963"
 
 ## <a name="in-this-section"></a>В этом разделе
 
-[Практическое руководство. Вставка строк в базу данных](how-to-insert-rows-into-the-database.md) \
+[Инструкции. Вставка строк в базу данных](how-to-insert-rows-into-the-database.md) \
 Описывает, как вставлять строки в базу данных путем добавления объектов в модель объектов.
 
-[Практическое руководство. Обновление строк в базе данных](how-to-update-rows-in-the-database.md) \
+[Как обновлять строки в базе данных](how-to-update-rows-in-the-database.md) \
 Описывается, как обновлять строки в базе данных путем обновления объектов в объектной модели.
 
-[Практическое руководство. Удаление строк из базы данных](how-to-delete-rows-from-the-database.md) \
+[Как удалить строки из базы данных](how-to-delete-rows-from-the-database.md) \
 Описывается, как удалять строки из базы данных путем удаления объектов из объектной модели.
 
-[Практическое руководство. Отправка изменений в базу данных](how-to-submit-changes-to-the-database.md) \
+[Как отправлять изменения в базу данных](how-to-submit-changes-to-the-database.md) \
 Описывается, как отправлять изменения объектной модели в базу данных.
 
-[Практическое руководство. Скобки для отправки данных с помощью транзакций](how-to-bracket-data-submissions-by-using-transactions.md) \
+[Как использовать скобки для отправки данных с помощью транзакций](how-to-bracket-data-submissions-by-using-transactions.md) \
 Описывается, как включать операции в транзакцию.
 
-[Практическое руководство. Динамическое создание базы данных](how-to-dynamically-create-a-database.md) \
+[Руководство. динамическое создание базы данных](how-to-dynamically-create-a-database.md) \
 Описывается динамическое создание баз данных и типичные сценарии использования этого метода.
 
-[Практическое руководство. Управление конфликтами изменений](how-to-manage-change-conflicts.md) \
+[Руководство. Управление конфликтами изменений](how-to-manage-change-conflicts.md) \
 Описываются методы устранения проблем оптимистического параллелизма.

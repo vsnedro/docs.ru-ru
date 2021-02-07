@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: возврат или пропуск элементов в последовательности'
 title: Возврат или пропуск элементов последовательности
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
-ms.openlocfilehash: 1a36d3c8457374183148599bf8160d14847cbf3e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6eba93562d4c6a8ffa4150453deed88844d4e297
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695142"
 ---
 # <a name="return-or-skip-elements-in-a-sequence"></a>Возврат или пропуск элементов последовательности
 
@@ -82,7 +83,7 @@ ORDER BY [t0].[CustomerID]
   
  Методы <xref:System.Linq.Queryable.Take%2A> и <xref:System.Linq.Queryable.Skip%2A> правильно определяются для неотрицательных постоянных целочисленных аргументов, соответствующих спецификации SQL.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Примеры запросов](query-examples.md)
 - [Трансляция стандартных операторов запросов](standard-query-operator-translation.md)

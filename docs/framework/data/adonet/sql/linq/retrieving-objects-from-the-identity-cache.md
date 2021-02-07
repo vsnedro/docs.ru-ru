@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: получение объектов из кэша удостоверений'
 title: Извлечение объектов из кэша идентификации
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
-ms.openlocfilehash: 457e11ddad16ca3be55f53f03c480b0e464ab38f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1f3d5f839a6fff33d62d4e0cb2281bd087f2d320
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91200398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695090"
 ---
 # <a name="retrieving-objects-from-the-identity-cache"></a>Извлечение объектов из кэша идентификации
 
@@ -66,7 +67,7 @@ ms.locfileid: "91200398"
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]
  [!code-vb[L2S_QueryCache#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb/module1.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные принципы запросов](query-concepts.md)
 - [Идентификация объектов](object-identity.md)
