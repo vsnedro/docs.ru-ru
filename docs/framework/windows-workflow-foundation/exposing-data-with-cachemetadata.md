@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: предоставление данных с помощью CacheMetadata'
 title: Предоставление данных с помощью CacheMetadata
 ms.date: 03/30/2017
 ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
-ms.openlocfilehash: a044c896e56541ee954fc33853376eb8293c6ede
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ac4623881ebd76270f773a3b7acfe205ad365118
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945708"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742346"
 ---
 # <a name="exposing-data-with-cachemetadata"></a>Предоставление данных с помощью CacheMetadata
 
@@ -17,19 +18,19 @@ ms.locfileid: "61945708"
 
 Реализация <xref:System.Activities.NativeActivity.CacheMetadata%2A> по умолчанию для действий, производных от <xref:System.Activities.NativeActivity>, обрабатывает следующие типы методов следующими способами:
 
-- <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, или <xref:System.Activities.InOutArgument%601> (универсальные аргументы): Эти аргументы предоставляются среде выполнения как аргументы с именем и типом имя открытого свойства и тип, с соответствующим направлением аргумента и некоторыми проверочными данными.
+- <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601> или <xref:System.Activities.InOutArgument%601> (универсальные аргументы). Эти аргументы доступны в среде выполнения с именем и типом, совпадающими с именем и типом переданного свойства, с соответствующим направлением аргумента и некоторыми проверочными данными.
 
-- <xref:System.Activities.Variable> или любой его подкласс: Эти элементы предоставляются среде выполнения в виде открытых переменных.
+- <xref:System.Activities.Variable> или любой его подкласс. Эти элементы предоставляются среде выполнения в виде открытых переменных.
 
-- <xref:System.Activities.Activity> или любой его подкласс: Эти элементы предоставляются среде выполнения в виде открытых дочерних действий. Поведение по умолчанию можно реализовать явно, вызвав <xref:System.Activities.ActivityMetadata.AddImportedChild%2A>с передачей дочернего действия.
+- <xref:System.Activities.Activity> или любой его подкласс. Эти элементы предоставляются среде выполнения в виде открытых дочерних действий. Поведение по умолчанию можно реализовать явным образом путем вызова метода <xref:System.Activities.ActivityMetadata.AddImportedChild%2A> , передав дочернее действие.
 
-- <xref:System.Activities.ActivityDelegate> или любой его подкласс: Эти элементы предоставляются среде выполнения в виде открытых делегатов.
+- <xref:System.Activities.ActivityDelegate> или любой его подкласс. Эти элементы доступны в среде выполнения в виде открытых делегатов.
 
-- <xref:System.Collections.ICollection> типа <xref:System.Activities.Variable>: Все элементы в коллекции передаются среде выполнения виде открытых переменных.
+- <xref:System.Collections.ICollection> типа <xref:System.Activities.Variable>. Все элементы коллекции передаются среде выполнения в виде открытых переменных.
 
-- <xref:System.Collections.ICollection> типа <xref:System.Activities.Activity>: Все элементы в коллекции передаются в среду выполнения в виде открытых дочерних действий.
+- <xref:System.Collections.ICollection> типа <xref:System.Activities.Activity>. Все элементы коллекции передаются среде выполнения в виде открытых дочерних действий.
 
-- <xref:System.Collections.ICollection> типа <xref:System.Activities.ActivityDelegate>: Все элементы в коллекции передаются в среду выполнения в виде открытых делегатов.
+- <xref:System.Collections.ICollection> типа <xref:System.Activities.ActivityDelegate>. Все элементы коллекции передаются среде выполнения в виде открытых делегатов.
 
 <xref:System.Activities.Activity.CacheMetadata%2A> для действий, производных от <xref:System.Activities.Activity>, <xref:System.Workflow.Activities.CodeActivity> и <xref:System.Activities.AsyncCodeActivity>, работают, как описано выше, за исключением следующих отличий.
 

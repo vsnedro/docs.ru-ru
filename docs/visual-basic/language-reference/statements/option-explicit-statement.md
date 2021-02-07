@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в инструкции Option Explicit (Visual Basic)
 title: Оператор Option Explicit
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - explicit variable declaration
 - Option Explicit statement [Visual Basic]
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
-ms.openlocfilehash: 44bf8205ec071710ee3660968ab3c3e9af33f74d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 11f59508125167fde98b4fc359dde7fd7c539b75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741618"
 ---
 # <a name="option-explicit-statement-visual-basic"></a>Оператор Option Explicit (Visual Basic)
 
@@ -51,7 +52,7 @@ Option Explicit { On | Off }
   
 #### <a name="to-set-option-explicit-in-the-ide"></a>Установка параметра Explicit в интегрированной среде разработки  
   
-1. В **Обозреватель решений**выберите проект. В меню **Проект** выберите пункт **Свойства**.  
+1. Выберите проект в **обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.  
   
 2. Откройте вкладку **Компиляция**.  
   

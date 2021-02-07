@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: удаление состояния представления, добавляемого конструктором в файл XAML'
 title: Удаление состояния представления, добавляемого конструктором в файл XAML, WF
 ms.date: 03/30/2017
 ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f
-ms.openlocfilehash: f431275140e821aa5ec4d2235322f06be87d5ee2
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: e6be1e8e4f754085b98f912923ad67cb12893910
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741800"
 ---
 # <a name="removing-the-view-state-the-designer-adds-to-an-xaml-file"></a>Удаление состояния представления, добавляемого конструктором в файл XAML
 
-Этот образец демонстрирует создание класса, производного от <xref:System.Xaml.XamlWriter>, и удаление состояния представления из файла XAML. Конструктор рабочих процессов Windows записывает сведения в документ XAML, который называется состоянием представления. Состоянием представления называются сведения, которые требуются во время разработки, такие как расположение макета, и не требуются во время выполнения. Конструктор рабочих процессов вставляет эти сведения в документ XAML при редактировании. Конструктор рабочих процессов записывает состояние представления в XAML-файл с атрибутом `mc:Ignorable`, поэтому эти сведения не загружаются, когда среда выполнения загружает XAML-файл. Этот образец демонстрирует, как создать класс, который удаляет указанные сведения о состоянии представления при обработке узлов XAML.
+Этот образец демонстрирует создание класса, производного от <xref:System.Xaml.XamlWriter>, и удаление состояния представления из файла XAML. Конструктор рабочих процессов Windows записывает сведения в документ XAML, который называется состоянием представления. Состоянием представления называются сведения, которые требуются во время разработки, такие как расположение макета, и не требуются во время выполнения. Конструктор рабочих процессов вставляет эти сведения в документ XAML при редактировании. Конструктор рабочих процессов записывает состояние представления в XAML-файл с `mc:Ignorable` атрибутом, поэтому эти сведения не загружаются, когда среда выполнения загружает XAML-файл. Этот образец демонстрирует, как создать класс, который удаляет указанные сведения о состоянии представления при обработке узлов XAML.
 
-## <a name="discussion"></a>Обсуждение
+## <a name="discussion"></a>Разговор
 
 Этот образец демонстрирует создание пользовательского модуля записи.
 
@@ -99,7 +100,7 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
    ViewStateCleaningWriter.exe [input file] [output file]
    ```
 
-   Это выводит XAML-файл для \[файла], в котором все сведения о состоянии представления удалены.
+   Это выводит файл XAML в \[ файл], в котором все сведения о состоянии представления удалены.
 
 > [!NOTE]
 > Что касается рабочего процесса <xref:System.Activities.Statements.Sequence>, то удаляется целый ряд подсказок виртуализации. Это вынуждает конструктор повторно вычислять макет при его следующей загрузке. При использовании этого образца для <xref:System.Activities.Statements.Flowchart> удаляется вся информация о расположении и маршрутизации линий, а при последующей загрузке в конструктор все действия отображаются в левой стороне экрана с наложением друг на друга.
@@ -121,6 +122,6 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Samples. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ViewStateCleaningWriter`

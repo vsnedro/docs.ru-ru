@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: выражения'
 title: Выражения — WF
 ms.date: 03/30/2017
 ms.assetid: c42341a9-43a1-462c-bffb-c5de004aa428
-ms.openlocfilehash: 1dca2090dda981fabb27d3e5f2dff78051d7af24
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: de16168585e2bbcbf8251c8e4b7c06784d72859d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96280225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742359"
 ---
 # <a name="expressions"></a>Выражения
 
@@ -18,7 +19,7 @@ ms.locfileid: "96280225"
  Конструктор рабочих процессов использует <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> и <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> для всех выражений в проектах Visual Basic <xref:Microsoft.CSharp.Activities.CSharpValue%601> и <xref:Microsoft.CSharp.Activities.CSharpReference%601> для выражений C# в проектах рабочих процессов.
 
 > [!NOTE]
-> Поддержка выражений C# в проектах рабочих процессов была представлена в .NET Framework 4,5. Дополнительные сведения см. в разделе [выражения C#](csharp-expressions.md).
+> Поддержка выражений C# в проектах рабочих процессов была представлена в платформа .NET Framework 4,5. Дополнительные сведения см. в разделе [выражения C#](csharp-expressions.md).
 
  Рабочие процессы, которые создаются конструктором, сохраняются в XAML, в котором выражения отображаются в квадратных скобках, как показано в следующем примере.
 

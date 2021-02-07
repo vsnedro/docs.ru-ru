@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в описании оператора Option Infer
 title: Option Infer - оператор
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - declaring variables [Visual Basic], inferred
 - inferred variable declaration
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
-ms.openlocfilehash: 977e492c1c8ec5040c22169d91268c9c2241f6c4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d0c3de7bdafb7e9b361da7a8538046e3d76b5ce7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741592"
 ---
 # <a name="option-infer-statement"></a>Option Infer - оператор
 
@@ -35,7 +36,7 @@ Option Infer { On | Off }
 |`On`|Необязательный элемент. Включает локальное определение типов.|
 |`Off`|Необязательный элемент. Отключает локальное определение типов.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Чтобы задать `Option Infer` в файле, введите `Option Infer On` или `Option Infer Off` в начале файла перед всем остальным исходным кодом. Если значение, заданное для `Option Infer` в файле, конфликтует со значением, заданным в среде разработки или в командной строке, приоритет имеет значение в файле.
 
@@ -66,7 +67,7 @@ Option Infer { On | Off }
 
 #### <a name="to-set-option-infer-in-the-ide"></a>Чтобы включить Option Infer в среде разработки
 
-1. В **Обозреватель решений**выберите проект. В меню **Проект** выберите пункт **Свойства**.
+1. Выберите проект в **обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.
 
 2. Откройте вкладку **Компиляция**.
 
@@ -84,9 +85,9 @@ Option Infer { On | Off }
 
 |Указан тип данных?|Указан инициализатор?|Пример|Результат|
 |---|---|---|---|
-|нет|нет|`Dim qty`|Если `Option Strict` отключен (по умолчанию), для переменной устанавливается значение `Nothing`.<br /><br /> Если параметр `Option Strict` включен, возникает ошибка времени при компиляции.|
-|нет|Да|`Dim qty = 5`|Если параметр `Option Infer` включен (по умолчанию), переменная получает тип данных инициализатора. См. раздел [определение локального типа](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> Если параметры `Option Infer` и `Option Strict` отключены, переменная получает тип данных `Object`.<br /><br /> Если параметр `Option Infer` отключен, а параметр `Option Strict` включен, возникает ошибка времени компиляции.|
-|Да|нет|`Dim qty As Integer`|Переменная инициализируется со значением по умолчанию для типа данных. Дополнительные сведения см. в разделе [оператор Dim](dim-statement.md).|
+|нет|Нет|`Dim qty`|Если `Option Strict` отключен (по умолчанию), для переменной устанавливается значение `Nothing`.<br /><br /> Если параметр `Option Strict` включен, возникает ошибка времени при компиляции.|
+|Нет|Да|`Dim qty = 5`|Если параметр `Option Infer` включен (по умолчанию), переменная получает тип данных инициализатора. См. раздел [определение локального типа](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> Если параметры `Option Infer` и `Option Strict` отключены, переменная получает тип данных `Object`.<br /><br /> Если параметр `Option Infer` отключен, а параметр `Option Strict` включен, возникает ошибка времени компиляции.|
+|Да|Нет|`Dim qty As Integer`|Переменная инициализируется со значением по умолчанию для типа данных. Дополнительные сведения см. в разделе [оператор Dim](dim-statement.md).|
 |Да|Да|`Dim qty  As Integer = 5`|Если тип данных инициализатора нельзя преобразовать в указанный тип данных, возникает ошибка времени компиляции.|
 
 ## <a name="example"></a>Пример
@@ -101,7 +102,7 @@ Option Infer { On | Off }
 
 [!code-vb[VbVbalrTypeInference#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#11)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Dim](dim-statement.md)
 - [Вывод локального типа](../../programming-guide/language-features/variables/local-type-inference.md)

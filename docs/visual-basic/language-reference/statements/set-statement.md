@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: инструкция SET (Visual Basic)'
 title: Оператор Set
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - write-only properties
 - properties [Visual Basic], write-only
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
-ms.openlocfilehash: b3524769567a56a87184bf916a3e5ccb1fd4fa1c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 5ee27b35a4639bc20d5b6634de8332c6ede9bf12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741124"
 ---
 # <a name="set-statement-visual-basic"></a>Инструкция Set (Visual Basic)
 
@@ -35,9 +36,9 @@ End Set
  Необязательный элемент. См. [список атрибутов](attribute-list.md).  
   
  `accessmodifier`  
- Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может применяться один из перечисленных ниже типов.  
+ Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может принимать следующие значения:  
   
-- [От](../modifiers/protected.md)  
+- [Защищенный](../modifiers/protected.md)  
   
 - [Friend](../modifiers/friend.md)  
   

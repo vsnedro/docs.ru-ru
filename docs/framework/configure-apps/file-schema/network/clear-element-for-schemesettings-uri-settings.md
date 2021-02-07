@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <clear> Element для schemeSettings (Параметры URI)'
 title: Элемент <clear> для schemeSettings (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
-ms.openlocfilehash: 17069a56a8647871e98d70826a97a8fe407a0887
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 719296285c9a7da26eb6eaf16c630a63a10698b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740461"
 ---
 # <a name="clear-element-for-schemesettings-uri-settings"></a>Элемент \<clear> для schemeSettings (параметры URI)
 
@@ -77,7 +78,7 @@ ms.locfileid: "91205065"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>

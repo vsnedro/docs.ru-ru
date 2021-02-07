@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор return (Visual Basic)'
 title: Оператор Return
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Return statement [Visual Basic]
 - expressions [Visual Basic], returning control to
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
-ms.openlocfilehash: 3ca705409bc8233bc2562c64b8e7704f08dd7641
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 62086090ede7e634b09d3edc3dc42feb28d15793
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741202"
 ---
 # <a name="return-statement-visual-basic"></a>Оператор Return (Visual Basic)
 
@@ -59,4 +60,4 @@ Return expression
 - [Operator Statement](operator-statement.md)
 - [Property Statement](property-statement.md)
 - [Оператор Exit](exit-statement.md)
-- [Попробуйте... Перехватить... Оператор finally](try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](try-catch-finally-statement.md)

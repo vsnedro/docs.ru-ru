@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: неуниверсальный оператор ForEach'
 title: Неуниверсальное действие ForEach
 ms.date: 03/30/2017
 ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
-ms.openlocfilehash: 9678d929375857a76d01f575e637a069b0911ae5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 16635da4ef57ff7b59e178f5954465d8b86bf488
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741956"
 ---
 # <a name="non-generic-foreach"></a>Неуниверсальное действие ForEach
 
@@ -71,7 +72,7 @@ Activity sampleUsage =
    };  
 ```  
   
-|Условие|Сообщение|Статус|Тип исключения|  
+|Условие|Сообщение|Severity|Тип исключения|  
 |---------------|-------------|--------------|--------------------|  
 |Значением является `null`|Не указано значение необходимого аргумента действия "Values".|Ошибка|<xref:System.InvalidOperationException>|  
   
@@ -113,6 +114,6 @@ public sealed class ForEachWithBodyFactory : IActivityTemplateFactory
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\NonGenericForEach`

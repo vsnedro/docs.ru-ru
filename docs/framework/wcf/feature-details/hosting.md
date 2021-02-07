@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: размещение'
 title: Hosting2
 ms.date: 03/30/2017
 ms.assetid: 0820c7e5-0b50-4cde-80e7-74e346513002
-ms.openlocfilehash: a83cc0d12b1099bc77d62f108741de1dbf387686
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4371cbb3b65242235ad0bb26c2b99b8e35d729c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742970"
 ---
 # <a name="hosting"></a>Hosting
 
@@ -15,7 +16,7 @@ ms.locfileid: "96255992"
   
  Важно отметить, что при запуске службы или любого расширения от недоверенного узла нарушается безопасность.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Размещение в службах IIS](hosting-in-internet-information-services.md)  
  Описывает, как служба Windows Communication Foundation (WCF) размещается в службы IIS или [Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)).  

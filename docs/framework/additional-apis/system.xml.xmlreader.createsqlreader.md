@@ -1,5 +1,6 @@
 ---
-title: Метод XmlReader.CreateSqlReader (System.Xml)
+description: Дополнительные сведения о методе XmlReader. Креатесклреадер
+title: Метод XmlReader. Креатесклреадер (System.Xml)
 ms.date: 10/17/2019
 topic_type:
 - apiref
@@ -9,12 +10,12 @@ api_location:
 - system.xml.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 7bd2ef5158516acede47f73f9937d06159bc16c9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 61d594c0438c86863ce4052387439f5483d8a34c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79155743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740438"
 ---
 # <a name="xmlreadercreatesqlreader-method"></a>Метод XmlReader.CreateSqlReader
 
@@ -36,7 +37,7 @@ internal static XmlReader CreateSqlReader(Stream input,
 - `inputContext` <xref:System.Xml.XmlParserContext>  
   Для синтаксического анализа фрагмента XML необходимы контекстные сведения. Это значение может быть равно `null`.
 
-## <a name="returns"></a>Результаты
+## <a name="returns"></a>Возвращаемое значение
 
 <xref:System.Xml.XmlReader>  
 Объект, используемый для чтения данных XML в потоке.
@@ -44,14 +45,14 @@ internal static XmlReader CreateSqlReader(Stream input,
 ## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `XmlReader.CreateSqlReader` является внутренним и не предназначен для использования непосредственно в коде.
+> `XmlReader.CreateSqlReader`Метод является внутренним и не предназначен для непосредственного использования в коде.
 >
-> Корпорация Майкрософт ни при каких обстоятельствах не поддерживает использование этого метода в производственном приложении.
+> Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
-**Пространство имен:**<xref:System.Xml>
+**Пространство имен:** <xref:System.Xml>
 
 **Сборка:** System.Xml.dll
 
-**Рамочные версии .NET:** Доступно с 2.0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

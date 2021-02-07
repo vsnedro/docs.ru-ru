@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: SELECT... Оператор Case (Visual Basic)'
 title: Оператор Select…Case
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Select Case statements
 - Case statement [Visual Basic], Select...Case
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-ms.openlocfilehash: 750e765390ad223976b000fe64e656fa2d62a34b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 4f8edecd0a0b1afd59e182a372e308c3829a9b93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741137"
 ---
 # <a name="selectcase-statement-visual-basic"></a>Оператор Select...Case (Visual Basic)
 
@@ -88,7 +89,7 @@ End Select
 ## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
-- [Оператор End](end-statement.md)
+- [End, инструкция](end-statement.md)
 - [Оператор If…Then…Else](if-then-else-statement.md)
 - [Оператор Option Compare](option-compare-statement.md)
 - [Оператор Exit](exit-statement.md)

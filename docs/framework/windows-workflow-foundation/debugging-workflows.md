@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Отладка рабочих процессов'
 title: Отладка рабочих процессов
 ms.date: 03/30/2017
 ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
-ms.openlocfilehash: 31c688f5f45b41f337176108486ec2074e1915a7
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 9de65e580d47395a9528f4672014ceb491b09230
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742567"
 ---
 # <a name="debugging-workflows"></a>Отладка рабочих процессов
 
@@ -29,7 +30,7 @@ ms.locfileid: "90543840"
 
 Отладка рабочих процессов поддерживает также использование инфраструктуры Visual Studio для присоединения к процессу. Это позволяет автору рабочего процесса выполнять отладку рабочего процесса, запущенного в другой среде узла, например в службах IIS 7.0.
 
-## <a name="remote-debugging"></a>Удаленная отладка
+## <a name="remote-debugging"></a>Remote Debugging
 
 Функция удаленной отладки Windows Workflow Foundation (WF) аналогична удаленной отладке для других компонентов Visual Studio. Сведения об использовании удаленной отладки см. [в разделе как включить удаленную отладку](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе "завершение" (Visual Basic)
 title: Оператор Stop
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - processes, interrupting
 - execution [Visual Basic], stopping
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
-ms.openlocfilehash: c9226ccaea9a0709a9d6a49900f69cb9ac9e1dbe
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1e25eb88d1b85f38a53023dfb7dfbc877f498e5e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741085"
 ---
 # <a name="stop-statement-visual-basic"></a>Оператор Stop (Visual Basic)
 
@@ -46,4 +47,4 @@ Stop
   
 ## <a name="see-also"></a>См. также
 
-- [Оператор End](end-statement.md)
+- [End, инструкция](end-statement.md)

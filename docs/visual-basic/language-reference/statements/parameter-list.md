@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в списке параметров (Visual Basic)
 title: Список параметров
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], Visual Basic
 - procedures [Visual Basic], parameter lists
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
-ms.openlocfilehash: 706fc2414806db5608cce410bf4156839ec2d83e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f69063fac82887ba4da3119d8ec4fcac11b7f4c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741410"
 ---
 # <a name="parameter-list-visual-basic"></a>Список параметров (Visual Basic)
 
@@ -46,7 +47,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 Необязательный элемент. Указывает, что последний параметр в списке параметров является необязательным массивом элементов указанного типа данных. Это позволяет вызывающему коду передавать процедуре произвольное число аргументов.
 
 `parametername`  
-Обязательный. Имя локальной переменной, представляющей параметр.
+Обязательный элемент. Имя локальной переменной, представляющей параметр.
 
 `parametertype`  
 Обязательный `Option Strict` , если имеет значение `On` . Тип данных локальной переменной, представляющей параметр.
@@ -54,7 +55,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 `defaultvalue`  
 Требуется для `Optional` параметров. Любое константное или константное выражение, результатом которого является тип данных параметра. Если тип — `Object` , или класс, интерфейс, массив или структура, значением по умолчанию может быть только `Nothing` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Параметры заключаются в круглые скобки и разделяются запятыми. Параметр может быть объявлен с любым типом данных. Если не указать `parametertype` , по умолчанию используется значение `Object` .
 
@@ -90,7 +91,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
 
 [!code-vb[VbVbalrStatements#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Оператор Function](function-statement.md)

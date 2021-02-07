@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об инструкции: SyncLock'
 title: Оператор SyncLock
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - SyncLock statement [Visual Basic]
 - locks, threads
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
-ms.openlocfilehash: cc8706b95e0785459e36abe27ce915b5bab8711a
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 206c10c8bca85a496345576d0d5f9ff260db82e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875201"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740981"
 ---
 # <a name="synclock-statement"></a>Оператор SyncLock
 

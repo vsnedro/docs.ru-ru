@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в описании оператора Option Compare
 title: Оператор Option Compare
 ms.date: 07/20/2015
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - Option Compare statement [Visual Basic]
 - text [Visual Basic], comparing
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-ms.openlocfilehash: 396770a2fc6996475d408cf8023a4eafdf6d3011
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fba8b207c0077f95540485d79311b47f1b8c209c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741670"
 ---
 # <a name="option-compare-statement"></a>Оператор Option Compare
 
@@ -68,7 +69,7 @@ Option Compare { Binary | Text }
   
 #### <a name="to-set-option-compare-in-the-ide"></a>Чтобы включить Option Compare в среде разработки  
   
-1. В **Обозреватель решений**выберите проект. В меню **Проект** выберите пункт **Свойства**.  
+1. Выберите проект в **обозревателе решений**. В меню **Проект** выберите пункт **Свойства**.  
   
 2. Откройте вкладку **Компиляция**.  
   

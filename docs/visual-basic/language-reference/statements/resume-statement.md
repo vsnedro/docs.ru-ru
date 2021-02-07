@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о инструкции Resume
 title: Оператор Resume
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - execution
 - Resume statement [Visual Basic]
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
-ms.openlocfilehash: db9d47798d087d60f4318b06fe3291fb895e6618
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: fd3a02fc2606355d7e3a34f5c0d69eef577809de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741189"
 ---
 # <a name="resume-statement"></a>Оператор Resume
 
@@ -66,8 +67,8 @@ Resume [ Next | line ]
   
  **Сборка:** Библиотека времени выполнения Visual Basic (в Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Try…Catch…Finally](try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](try-catch-finally-statement.md)
 - [Оператор Error](error-statement.md)
 - [Оператор On Error](on-error-statement.md)

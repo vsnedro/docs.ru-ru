@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о пользовательском действии SendMail
 title: Настраиваемое действие SendMail
 ms.date: 03/30/2017
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
-ms.openlocfilehash: f518beebe336080853e4dec3bca6f8539bbec304
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 853e28d26c41338670d377593d5a3536b011d112
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96267596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741761"
 ---
 # <a name="sendmail-custom-activity"></a>Настраиваемое действие SendMail
 
@@ -18,7 +19,7 @@ ms.locfileid: "96267596"
 |Имя|Тип|Описание|  
 |-|-|-|  
 |Узел|Строка|Адрес узла SMTP-сервера.|  
-|Порт|Строка|Порт службы SMTP на узле.|  
+|Port|Строка|Порт службы SMTP на узле.|  
 |EnableSsl|bool|Указывает, использует ли <xref:System.Net.Mail.SmtpClient> протокол SSL для шифрования соединения.|  
 |UserName|Строка|Имя пользователя для настройки учетных данных для проверки подлинности свойства <xref:System.Net.Mail.SmtpClient.Credentials%2A> отправителя.|  
 |Пароль|Строка|Пароль для настройки учетных данных для проверки подлинности свойства <xref:System.Net.Mail.SmtpClient.Credentials%2A> отправителя.|  
@@ -141,6 +142,6 @@ new SendMail
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`
