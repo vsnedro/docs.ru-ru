@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Field> элементе: Element (.NET Native)'
 title: <Field> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
-ms.openlocfilehash: e63dc293c42aa620b7f7ac15fc0454bc603b9dde
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1f8c8b6720fb90bdc5855da7b17694253bbb7629
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747846"
 ---
 # <a name="field-element-net-native"></a>\<Field> Элемент (.NET Native)
 
@@ -58,7 +59,7 @@ ms.locfileid: "96251052"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Если политика поля не определена явно, оно наследует политику среды выполнения своего родительского элемента.  
   

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess2:: Клеарунманажедбреакпоинт'
 title: Метод ICorDebugProcess2::ClearUnmanagedBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 12ed0fff-7f0e-4d7a-bb70-b3376371f36c
 topic_type:
 - apiref
-ms.openlocfilehash: a713fd006f1e9ad8fe7109651c2cda5025da3566
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fba31a479e9bac525109e14c02995e78918d4c17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746637"
 ---
 # <a name="icordebugprocess2clearunmanagedbreakpoint-method"></a>Метод ICorDebugProcess2::ClearUnmanagedBreakpoint
 
@@ -39,7 +40,7 @@ HRESULT ClearUnmanagedBreakpoint (
  `address`  
  окне `CORDB_ADDRESS` Значение типа, указывающее адрес, по которому была задана точка останова.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Указанная точка останова была ранее задана предыдущим вызовом метода [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md).  
   
@@ -55,4 +56,4 @@ HRESULT ClearUnmanagedBreakpoint (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

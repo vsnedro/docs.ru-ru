@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <MethodInstantiation> элементе: Element (.NET Native)'
 title: <MethodInstantiation> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
-ms.openlocfilehash: e247db05f8442d4fcfddbf03b5eb8955b8ff425a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 985d522a559dbbce936a2f29a9983c89ebd18a48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747495"
 ---
 # <a name="methodinstantiation-element-net-native"></a>\<MethodInstantiation> Элемент (.NET Native)
 
@@ -72,7 +73,7 @@ ms.locfileid: "96250961"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Элемент `<MethodInstantiation>`  переопределяет политику отражения среды выполнения его соответствующего открытого универсального метода.  
   

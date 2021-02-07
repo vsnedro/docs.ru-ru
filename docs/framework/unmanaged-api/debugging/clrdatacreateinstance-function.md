@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции CLRDataCreateInstance
 title: Функция CLRDataCreateInstance
 ms.date: 03/30/2017
 api_name:
@@ -7,7 +8,7 @@ api_location:
 - mscordbi.dll
 - mscordacwks.dll
 api_type:
-- COM
+- DLLExport
 f1_keywords:
 - CLRDataCreateInstance
 helpviewer_keywords:
@@ -15,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
 topic_type:
 - apiref
-ms.openlocfilehash: 2ffc575cfcef1089a70ef3b6d38787a5b4c50443
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 923b0c687d2b337eacb475973927452e3b47ad0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729828"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747261"
 ---
 # <a name="clrdatacreateinstance-function"></a>Функция CLRDataCreateInstance
 
-Создает объект интерфейса для указанного целевого элемента.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT CLRDataCreateInstance (  
+Создает объект интерфейса для указанного целевого элемента.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT CLRDataCreateInstance (
     [in]  REFIID           iid,
     [in]  ICLRDataTarget  *target,
     [out] void           **iface  
@@ -47,7 +48,7 @@ HRESULT CLRDataCreateInstance (
  `iface`  
  заполняет Указатель на адрес возвращенного объекта интерфейса.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICLRDataTarget`Объект реализуется модулем записи приложения отладки. Реализация зависит от типа представляемого целевого элемента. Целевой элемент может быть процессом, дампом памяти, удаленным компьютером и т. д.  
   
@@ -58,9 +59,11 @@ HRESULT CLRDataCreateInstance (
  **Заголовок:** Клрдата. idl  
   
  **Библиотека:** CorGuids.lib  
+
+ **Сборка**: mscordacwks.dll, mscordbi.dll
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:** Доступно с момента платформа .NET Framework 2,0
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции отладки](debugging-global-static-functions.md)

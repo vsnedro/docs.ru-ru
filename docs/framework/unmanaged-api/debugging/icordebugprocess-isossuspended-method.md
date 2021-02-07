@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess:: IsOSSuspended'
 title: Метод ICorDebugProcess::IsOSSuspended
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 83406cb2-5797-4402-872d-89c9516aefec
 topic_type:
 - apiref
-ms.openlocfilehash: fffa61d8e406162251b0934a9846e5a813422798
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aa5e438418330d9fee51fcdb56a617421df06904
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746775"
 ---
 # <a name="icordebugprocessisossuspended-method"></a>Метод ICorDebugProcess::IsOSSuspended
 
@@ -42,7 +43,7 @@ HRESULT IsOSSuspended(
  `pbSuspended`  
  заполняет Указатель на логическое значение, равное, `true` если указанный поток был приостановлен; в противном случае `pbSuspended` — * `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если указанный поток был приостановлен в результате остановки этого процесса отладчиком, счетчик приостановки Win32 указанного потока увеличивается на единицу. Пользовательский интерфейс отладчика может захотеть использовать эту информацию при отображении счетчика приостановки операционной системы (ОС) для пользователя.  
   
@@ -56,4 +57,4 @@ HRESULT IsOSSuspended(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

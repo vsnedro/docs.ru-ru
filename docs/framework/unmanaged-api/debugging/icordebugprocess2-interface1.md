@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugProcess2'
 title: Интерфейс ICorDebugProcess2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 73332138-5fea-441f-b893-61af87d45a42
 topic_type:
 - apiref
-ms.openlocfilehash: f1a30c197373928ec10c2b84de4e805b94ea2384
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47e94ee8ee4f45e365fa9efe888cb706f8bb1dfd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746598"
 ---
 # <a name="icordebugprocess2-interface"></a>Интерфейс ICorDebugProcess2
 
@@ -37,7 +38,7 @@ ms.locfileid: "95724511"
 |[Метод SetDesiredNGENCompilerFlags](icordebugprocess2-setdesiredngencompilerflags-method.md)|Задает флаги, которые требуются для JIT-компилятора при загрузке изображения в отлаживаемый процесс.|  
 |[Метод SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md)|Задает неуправляемую точку останова в указанном смещении машинного образа.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -50,8 +51,8 @@ ms.locfileid: "95724511"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кордебужексцептионфлагс
 title: Перечисление CorDebugExceptionFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b22687a8-e9cf-4e65-a1b0-f92a81bc524e
 topic_type:
 - apiref
-ms.openlocfilehash: a50272bce2e27963a1d684fef40bac30cf44e1f0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c0036c2674f3202623da1a8fdeea14165a2a6e62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747053"
 ---
 # <a name="cordebugexceptionflags-enumeration"></a>Перечисление CorDebugExceptionFlags
 
@@ -41,7 +42,7 @@ typedef enum CorDebugExceptionFlags {
 |`DEBUG_EXCEPTION_NONE`|Исключение отсутствует.|  
 |`DEBUG_EXCEPTION_CAN_BE_INTERCEPTED`|Исключение доступно для перехвата.<br /><br /> Время исключения все еще может быть таким, что отладчик не сможет его перехватить. Например, если ниже текущего обратного вызова или события исключения, возникшего в результате JIT-вложения, нет никакого управляемого кода, такое исключение не может быть перехвачено.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В более поздних версиях для этого перечисления могут быть добавлены новые значения, поэтому следует подготовить код, использующий `CorDebugExceptionFlags` для неожиданных значений.  
   
@@ -53,8 +54,8 @@ typedef enum CorDebugExceptionFlags {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

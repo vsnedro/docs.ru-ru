@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess:: WriteMemory'
 title: Метод ICorDebugProcess::WriteMemory
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d5c07d86-045d-4391-893b-0bcd2959f90e
 topic_type:
 - apiref
-ms.openlocfilehash: 18416954517c3cac09d013b8075bd097305a1dca
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6ea48aff2e1ea812d851a228976b458f58a60e14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746629"
 ---
 # <a name="icordebugprocesswritememory-method"></a>Метод ICorDebugProcess::WriteMemory
 
@@ -50,9 +51,9 @@ HRESULT WriteMemory(
  `written`  
  заполняет Указатель на переменную, которая получает число байтов, записанных в область памяти в этом процессе. Если `written` аргумент имеет значение null, этот параметр игнорируется.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Данные автоматически записываются за любые точки останова. В .NET Framework версии 2,0 отладчики машинного кода не должны использовать этот метод для вставки точек останова в поток инструкций. Вместо этого используйте [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md) .  
+ Данные автоматически записываются за любые точки останова. В платформа .NET Framework версии 2,0 отладчики машинного кода не должны использовать этот метод для вставки точек останова в поток инструкций. Вместо этого используйте [ICorDebugProcess2:: сетунманажедбреакпоинт](icordebugprocess2-setunmanagedbreakpoint-method.md) .  
   
  `WriteMemory`Метод следует использовать только за пределами управляемого кода. Этот метод может повредить среду выполнения при неправильном использовании.  
   
@@ -64,4 +65,4 @@ HRESULT WriteMemory(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

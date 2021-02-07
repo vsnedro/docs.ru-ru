@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс ICorDebugProcess'
 title: Интерфейс ICorDebugProcess
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be86f4b5-418a-4c5c-a67c-97148c65ed8c
 topic_type:
 - apiref
-ms.openlocfilehash: 7f9d4ac99234545ef75d9b91e6e84f79a133ffef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7172ee12bf450235db1c18601c8ff7de51435520
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95694923"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746793"
 ---
 # <a name="icordebugprocess-interface"></a>Интерфейс ICorDebugProcess
 
@@ -47,7 +48,7 @@ ms.locfileid: "95694923"
 |[Метод ThreadForFiberCookie](icordebugprocess-threadforfibercookie-method.md)|Не рекомендуется.|  
 |[Метод WriteMemory](icordebugprocess-writememory-method.md)|Записывает данные в область памяти в процессе.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -60,9 +61,9 @@ ms.locfileid: "95694923"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebug](icordebug-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

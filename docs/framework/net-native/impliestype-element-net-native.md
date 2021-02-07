@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <ImpliesType> элементе: Element (.NET Native)'
 title: <ImpliesType> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
-ms.openlocfilehash: 04c3a9498a5c9c24d67dedd02fb4c9d68d9efbdd
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6476876f335788a276907fd2aef02d5623382699
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747690"
 ---
 # <a name="impliestype-element-net-native"></a>\<ImpliesType> Элемент (.NET Native)
 
@@ -73,7 +74,7 @@ ms.locfileid: "96287960"
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
 |[\<Method>](method-element-net-native.md)|Применяет политику отражения к методу.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Элемент `<ImpliesType>` в основном предназначен для использования в библиотеках. Он используется в следующем сценарии:  
   
@@ -93,7 +94,7 @@ ms.locfileid: "96287960"
   
  Эта директива не действует, пока экземпляр `Explicit` не определил параметр политики `Dynamic`. Например, если это так, для `Explicit<Int32>`, `Implicit<Int32>` создается экземпляр с открытыми корневыми членами, а их метаданные становятся доступными для динамического программирования.  
   
- Ниже приведен реальный пример, который применяется по крайней мере к одному сериализатору. Директивы захватывают требование, отражающее что-либо, что, как и то и другое, `IList<` *something* `>` включает отражение для соответствующего `List<` *something* `>` типа, не требуя каких-либо заметок для каждого приложения.  
+ Ниже приведен реальный пример, который применяется по крайней мере к одному сериализатору. Директивы захватывают требование, отражающее что-либо, что, как и то и другое, `IList<`  `>` включает отражение для соответствующего `List<`  `>` типа, не требуя каких-либо заметок для каждого приложения.  
   
 ```xml  
 <Type Name="System.Collections.Generic.IList{T}">  

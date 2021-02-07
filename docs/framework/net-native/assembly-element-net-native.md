@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Assembly> элементе: Element (.NET Native)'
 title: <Assembly> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
-ms.openlocfilehash: 9d1556d8d414386d3f350a96396381bd7b66ffc5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 567a30a6a77e9de03635a9dfaae6bb28c9d728f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96251130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747924"
 ---
 # <a name="assembly-element-net-native"></a>\<Assembly> Элемент (.NET Native)
 
@@ -76,7 +77,7 @@ ms.locfileid: "96251130"
 |[\<Application>](application-element-net-native.md)|Служит в качестве контейнера для типов и членов типов приложения, метаданные которого доступны для отражения во время выполнения. [\<Application>](application-element-net-native.md)Элемент может иметь ноль, один или несколько `<Assembly>` элементов.|  
 |[\<Library>](library-element-net-native.md)|Определяет сборку, содержащую типы и члены типов, метаданные которой доступны для отражения во время выполнения. [\<Library>](library-element-net-native.md)Элемент может иметь ноль или один `<Assembly>` элемент.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Элемент `<Assembly>` определяет политику среды выполнения для всех типов в сборке. Он отличается от [\<Library>](library-element-net-native.md) элемента, который указывает библиотеку, но зависит от его дочерних элементов для определения политики отражения среды выполнения. Элемент `<Assembly>` применяется ко всем типам в сборке, если они не переопределены дочерним элементом.  
   

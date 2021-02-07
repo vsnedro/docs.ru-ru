@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <GenericParameter> элементе: Element (.NET Native)'
 title: <GenericParameter> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-ms.openlocfilehash: 1400fb7029df533d54e87a1c534f4ac3b0a5fc68
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 57cbb3418289d7da4f25577188299acd55ce6c94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747833"
 ---
 # <a name="genericparameter-element-net-native"></a>\<GenericParameter> Элемент (.NET Native)
 
@@ -72,7 +73,7 @@ ms.locfileid: "96288025"
 |[\<Method>](method-element-net-native.md)|Применяет политику отражения среды выполнения к конструктору или методу.|  
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения среды выполнения для конкретного типа, например, класса или структуры.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  `<GenericParameter>`Элемент является дочерним по отношению к [\<Method>](method-element-net-native.md) [\<Type>](type-element-net-native.md) элементу или и используется для применения политики к конкретному параметру универсального типа, который задается его именем в сигнатуре универсального типа или метода.  
   

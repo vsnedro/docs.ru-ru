@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess:: GetThreadContext'
 title: Метод ICorDebugProcess::GetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5b132ef1-8d4b-4525-89b3-54123596c194
 topic_type:
 - apiref
-ms.openlocfilehash: 3be689e5c1474bcbfbca72a14a298762dc2e7a90
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4cb926183522548e924013580f207d1d0677a0d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746871"
 ---
 # <a name="icordebugprocessgetthreadcontext-method"></a>Метод ICorDebugProcess::GetThreadContext
 
@@ -49,7 +50,7 @@ HRESULT GetThreadContext(
   
  Контекст указывает архитектуру процессора, на котором работает поток.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Отладчик должен вызывать этот метод вместо `GetThreadContext` метода Win32, так как поток может находиться в состоянии "перехвачено", в котором его контекст временно изменен. Этот метод следует использовать только в том случае, если поток находится в машинном коде. Используйте [ICorDebugRegisterSet](icordebugregisterset-interface.md) для потоков в управляемом коде.  
   
@@ -63,4 +64,4 @@ HRESULT GetThreadContext(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

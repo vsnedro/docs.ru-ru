@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <AttributeImplies> элементе: Element (.NET Native)'
 title: <AttributeImplies> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-ms.openlocfilehash: 4171345bb5337436142128623abc7d183c4477ff
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5af1f60f2c1e556281f2f1d392b1a046e52dd277
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747911"
 ---
 # <a name="attributeimplies-element-net-native"></a>\<AttributeImplies> Элемент (.NET Native)
 
@@ -63,7 +64,7 @@ ms.locfileid: "96288116"
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Элемент `<AttributeImplies>` используется в том случае, если его содержащий тип является атрибутом (то есть классом, производным от <xref:System.Attribute?displayProperty=nameWithType>). Если атрибут применяется к элементу определенной программы, политика, определенная элементом `<AttributeImplies>`, применяется к этому элементу программы.  
   

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Library> элементе: Element (.NET Native)'
 title: <Library> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
-ms.openlocfilehash: aeaa6b1a9c3c4ceebdd0eab3f331a044971398bf
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 224b2b9cbce8123f4a15b9ec3e3793674633822a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747612"
 ---
 # <a name="library-element-net-native"></a>\<Library> Элемент (.NET Native)
 
@@ -53,7 +54,7 @@ ms.locfileid: "96287921"
 |-------------|-----------------|  
 |[\<Directives>](directives-element-net-native.md)|Корневой элемент файла директив среды выполнения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  [\<Directives>](directives-element-net-native.md)Элемент может содержать ноль, один или несколько `<Library>` элементов.  
   

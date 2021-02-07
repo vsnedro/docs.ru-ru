@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: компиляция приложений с помощью .NET Native'
 title: Компиляция приложений с помощью машинного кода .NET
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - .NET Native
 - C# and native compilation
 ms.assetid: 47cd5648-9469-4b1d-804c-43cc04384045
-ms.openlocfilehash: 7601a6d5e7f49b6d8fc434ef772e2e69740f02cf
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 2626daf17fda751edd7915f15fd4b68ffb623dff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90543937"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747664"
 ---
 # <a name="compiling-apps-with-net-native"></a>Компиляция приложений с помощью машинного кода .NET
 
@@ -55,11 +56,11 @@ ms.locfileid: "90543937"
 |Библиотеки|Платформа.NET Framework + среда выполнения Windows|Win32 + среда выполнения Windows|
 |Компилятор|Оптимизирующий компилятор UTC|Оптимизирующий компилятор UTC|
 |Развернут|Готов к запуску двоичных файлов|Готов к запуску двоичных файлов (ASM)|
-|Среда выполнения|MRT.dll (минимальной среды CLR)|CRT.dll (среда выполнения C)|
+|Параметры выполнения|MRT.dll (минимальной среды CLR)|CRT.dll (среда выполнения C)|
 
 Для приложений, предназначенных для Windows 10, выполняется передача двоичных файлов компиляции машинного кода .NET в пакетах приложений (файлы APPX) в Магазин Windows.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 Дополнительные сведения о разработке приложений при использовании компиляции машинного кода .NET см. в следующих разделах
 

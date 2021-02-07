@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorDebugCodeInvokeKind
 title: Перечисление CorDebugCodeInvokeKind
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
 topic_type:
 - apiref
-ms.openlocfilehash: ece5bd5373fed1a10e6592ff884e98b614e7991d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3fc3fe6f7568adcb2d1bbbe18c98d9d84bac337
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747092"
 ---
 # <a name="cordebugcodeinvokekind-enumeration"></a>Перечисление CorDebugCodeInvokeKind
 
@@ -40,7 +41,7 @@ typedef enum CorDebugCodeInvokeKind
 |`CODE_INVOKE_KIND_RETURN`|Этот метод будет вызывать управляемый код с помощью инструкции return. Режим пропуска должен начаться в следующем управляемом коде.|  
 |`CODE_INVOKE_KIND_TAILCALL`|Этот метод будет вызывать управляемый код с помощью вызова с префиксом tail. Пошаговый режим и режим пропуска любых инструкций вызова должны поступать в управляемый код.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Это перечисление используется методом [ICorDebugProcess6:: жетекспортстепинфо](icordebugprocess6-getexportstepinfo-method.md) для предоставления сведений о пошаговом выполнении управляемого кода.  
   
@@ -55,9 +56,9 @@ typedef enum CorDebugCodeInvokeKind
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)
 - [Отладка](index.md)

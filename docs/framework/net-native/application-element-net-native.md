@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Application> элементе: Element (.NET Native)'
 title: <Application> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.openlocfilehash: a7f2eca5a5bb5cfb7b9827f2463454a17fc128cb
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ebbc6292b5936e6b7d54666070b33df2da80f57f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96288142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747950"
 ---
 # <a name="application-element-net-native"></a>\<Application> Элемент (.NET Native)
 
@@ -76,7 +77,7 @@ ms.locfileid: "96288142"
 |-------------|-----------------|  
 |[\<Directives>](directives-element-net-native.md)|Корневой элемент файла директив среды выполнения.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  [\<Directives>](directives-element-net-native.md)Элемент может содержать ноль или один `<Application>` элемент. Несколько элементов `<Application>` в одном файле директив отражения не поддерживаются.  
   
