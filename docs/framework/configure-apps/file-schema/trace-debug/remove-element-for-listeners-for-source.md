@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <remove> Element для <listeners> for <source>'
 title: <remove> Элемент для <listeners> для <source>
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - remove element for <listeners> for <source>
 - <remove> element for <listeners> for <source>
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
-ms.openlocfilehash: 53ba773ea1cb31955e59c1f57e1c0cc807227402
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2f7a815fe97fda95d71bc2a5a1b8fdda7bc2a0ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750628"
 ---
 # <a name="remove-element-for-listeners-for-source"></a>\<remove> Элемент для \<listeners> для \<source>
 
@@ -84,7 +85,7 @@ ms.locfileid: "91173877"
 </configuration>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Diagnostics.TraceSource.Listeners%2A>
 - <xref:System.Diagnostics.TraceSource>

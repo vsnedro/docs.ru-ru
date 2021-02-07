@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <announcementEndpoint>'
 title: <announcementEndpoint>
 ms.date: 03/30/2017
 ms.assetid: 034b7c69-a770-4502-8cef-38007bbcd025
-ms.openlocfilehash: f68972cdf0e55f92fd4856aff912f00db7c62be4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d010abb789a4401e9f0591f34edb29ec2036f16e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749926"
 ---
 # \<announcementEndpoint>
 
@@ -84,6 +85,6 @@ ms.locfileid: "91201620"
 </standardEndpoints>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>

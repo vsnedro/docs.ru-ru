@@ -1,12 +1,14 @@
 ---
+description: 'Дополнительные сведения: @ServiceHost'
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: cb425d9f4dadd97e93946a2b4cd9d059ea8504ce
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: d16fda68bdc753121f02f6332dabedf236fac257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750316"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 
@@ -36,7 +38,7 @@ CodeBehind = "CodeBehind"
 
 ### <a name="debug"></a>Отладка
 
-Указывает, должна ли служба Windows Communication Foundation (WCF) компилироваться с отладочными символами. `true`значение, если служба WCF должна быть скомпилирована с отладочными символами; в противном случае — `false` .
+Указывает, должна ли служба Windows Communication Foundation (WCF) компилироваться с отладочными символами. `true` значение, если служба WCF должна быть скомпилирована с отладочными символами; в противном случае — `false` .
 
 ### <a name="language"></a>Язык
 
@@ -46,7 +48,7 @@ CodeBehind = "CodeBehind"
 
 Указывает исходный файл, который реализует веб-службу XML, если класс, реализующий веб-службу XML, не находится в том же файле и не был скомпилирован в сборку и помещен в каталог *\bin* .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Объект, <xref:System.ServiceModel.ServiceHost> используемый для размещения службы, является точкой расширения в модели программирования Windows Communication Foundation (WCF). Для создания узла службы <xref:System.ServiceModel.ServiceHost> используется шаблон фабрики, поскольку он, возможно, имеет полиморфный тип, экземпляр которого среда размещения не должна создавать явно.
 

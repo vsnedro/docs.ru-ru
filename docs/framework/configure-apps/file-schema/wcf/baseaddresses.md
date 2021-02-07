@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <baseAddresses>'
 title: <baseAddresses>
 ms.date: 03/30/2017
 ms.assetid: 78918102-2898-46e0-9ea8-6b8afe65603e
-ms.openlocfilehash: 3b6cebd178ac5cd30fa034bd961d2d08075771d2
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a32afc23d4332bad149765a318c3ecdc73f99be0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749692"
 ---
 # \<baseAddresses>
 
@@ -28,7 +29,7 @@ ms.locfileid: "91201542"
 </baseAddresses>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `Type`  
   
@@ -52,7 +53,7 @@ ms.locfileid: "91201542"
 |-------------|-----------------|  
 |[\<host>](host.md)|Элемент конфигурации, который задает параметры узла службы.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>

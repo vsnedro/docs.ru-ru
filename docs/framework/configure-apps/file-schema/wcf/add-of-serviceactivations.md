@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <add> о: <serviceActivations>'
 title: <add> из <serviceActivations>
 ms.date: 03/30/2017
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.openlocfilehash: a0f68717f765482f53e675458fae63d1a374d6fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 53c89321c8cde1966a04870c62fa0777610ff547
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750147"
 ---
 # <a name="add-of-serviceactivations"></a>\<add> из \<serviceActivations>
 
@@ -36,10 +37,10 @@ ms.locfileid: "70850326"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |фабрика|Строка, задающая имя типа CLR фабрики, которая формирует элемент активации службы.|
-|служба|ServiceType, реализующий службу (либо полное, либо короткое имя типа) (когда оно размещено в папке App_Code).|
+|service|ServiceType, реализующий службу (либо полное, либо короткое имя типа) (когда оно размещено в папке App_Code).|
 |relativeAddress|Относительный адрес в текущем приложении IIS (например, «Service.svc»). В WCF 4,0 этот относительный адрес должен содержать одно из известных расширений файлов (. svc,. xamlx,...). Для Релативеурл не существует физического файла.|
 
 ### <a name="child-elements"></a>Дочерние элементы
@@ -52,7 +53,7 @@ ms.locfileid: "70850326"
 |-------------|-----------------|
 |[\<serviceHostingEnvironment>](servicehostingenvironment.md)|Раздел конфигурации, в котором описываются параметры активации.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 В следующем примере показано, как настроить параметры активации в файле web.config.
 

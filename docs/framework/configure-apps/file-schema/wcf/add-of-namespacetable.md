@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <add> о: <namespaceTable>'
 title: <add> из <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: 7d055d4933f1ad625d6842f91a140f668c05c64e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b7804bdec4a1fb2199c81ba0dde031b80b451d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91205000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750264"
 ---
 # <a name="add-of-namespacetable"></a>\<add> из \<namespaceTable>
 
@@ -38,7 +39,7 @@ ms.locfileid: "91205000"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|namespace|Строка, содержащая пространство имен.|  
+|пространство имен|Строка, содержащая пространство имен.|  
 |prefix|Строка, содержащая префикс этого пространства имен.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
@@ -51,6 +52,6 @@ ms.locfileid: "91205000"
 |-------------|-----------------|  
 |[\<namespaceTable>](namespacetable.md)|Представляет секцию конфигурации для определения набора элементов, содержащих пространство имен для использования в качестве префиксов сопоставлений, которые в дальнейшем могут быть использованы в фильтрах XPath для маршрутизации.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>

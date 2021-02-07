@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <add> о: <scopes>'
 title: <add> из <scopes>
 ms.date: 03/30/2017
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2
-ms.openlocfilehash: 1f5b5ea621614880286181c7584863ea024b3d04
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e5582a7599c221e9ac00e03178911290e18ff536
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750238"
 ---
 # <a name="add-of-scopes"></a>\<add> из \<scopes>
 
@@ -58,6 +59,6 @@ ms.locfileid: "91149014"
 |-------------|-----------------|  
 |[\<scopes>](scopes.md)|Содержит коллекцию элементов конфигурации, указывающие идентификаторы URI пользовательских областей, которые можно использовать для фильтрации конечных точек службы во время выполнения запроса.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
