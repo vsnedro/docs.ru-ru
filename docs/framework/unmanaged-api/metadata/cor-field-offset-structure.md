@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_FIELD_OFFSET'
 title: Структура COR_FIELD_OFFSET
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
 topic_type:
 - apiref
-ms.openlocfilehash: 1a8ab5aa5909af60089d5e4cc8092e15bc75e8cc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7976e79a5484fa467d7ac887a4e1a7fa324abf69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678637"
 ---
 # <a name="cor_field_offset-structure"></a>Структура COR_FIELD_OFFSET
 
@@ -41,7 +42,7 @@ typedef struct COR_FIELD_OFFSET {
 |`ridOfField`|`mdFieldDef`Токен метаданных, представляющий поле.|  
 |`ulOffset`|Смещение поля в его классе.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Методы [IMetaDataImport:: GetClassLayout](imetadataimport-getclasslayout-method.md) и [IMetaDataEmit:: сеткласслайаут](imetadataemit-setclasslayout-method.md) принимают параметр типа `COR_FIELD_OFFSET` .  
   
@@ -51,9 +52,9 @@ typedef struct COR_FIELD_OFFSET {
   
  **Заголовок:** Корхдр. h, CorProf. idl  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры метаданных](metadata-structures.md)
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)

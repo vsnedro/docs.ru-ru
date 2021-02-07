@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении AssemblyFlags
 title: Перечисление AssemblyFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866
 topic_type:
 - apiref
-ms.openlocfilehash: 561b4d68a574a2859286fb5f2e2d950518a9d29d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 17cc0dec305c21d21693fe8f4f8d82c039f73278
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732785"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679008"
 ---
 # <a name="assemblyflags-enumeration"></a>Перечисление AssemblyFlags
 
@@ -41,13 +42,13 @@ typedef enum {
   
 |Член|Описание|  
 |------------|-----------------|  
-|`afImplicitExportedTypes`|Указывает, что экспортированные определения типа являются неявными в файлах, составляющих сборку. В .NET Framework версиях 1,0 и 1,1 это значение всегда считается установленным.|  
-|`afImplicitResources`|Указывает, что определения ресурсов являются неявными в файлах, составляющих сборку. В .NET Framework 1,0 и 1,1 предполагается, что это значение всегда задано.|  
+|`afImplicitExportedTypes`|Указывает, что экспортированные определения типа являются неявными в файлах, составляющих сборку. В платформа .NET Framework версиях 1,0 и 1,1 это значение всегда считается установленным.|  
+|`afImplicitResources`|Указывает, что определения ресурсов являются неявными в файлах, составляющих сборку. В платформа .NET Framework 1,0 и 1,1 предполагается, что это значение всегда задано.|  
 |`afNonSideBySideAppDomain`|Указывает, что сборка не может выполняться с другими версиями, если они выполняются в одном домене приложения.|  
 |`afNonSideBySideProcess`|Указывает, что сборка не может выполняться с другими версиями, если они выполняются в одном процессе.|  
 |`afNonSideBySideMachine`|Указывает, что сборка не может выполняться с другими версиями, если они выполняются на одном компьютере.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значения между 0x0010 и 0x0070 (включительно) используются для описания возможностей параллельной совместимости сборки, на которую указывает ссылка. Если ни одно из этих значений не задано, предполагается, что сборка совместима параллельно.  
   
@@ -59,9 +60,9 @@ typedef enum {
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

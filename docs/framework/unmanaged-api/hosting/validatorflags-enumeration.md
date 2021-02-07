@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Валидаторфлагс
 title: Перечисление ValidatorFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type:
 - apiref
-ms.openlocfilehash: 92c430cdb8b46cf75dde9a8395ce713116dc05a5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 473b0eef2851126256e1ea6b6d2b82be32e03e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679125"
 ---
 # <a name="validatorflags-enumeration"></a>Перечисление ValidatorFlags
 
@@ -45,7 +46,7 @@ enum ValidatorFlags {
 |`VALIDATOR_CHECK_PEFORMAT_ONLY`|Указывает, что должен проверяться только формат исполняемого файла.|  
 |`VALIDATOR_EXTRA_VERBOSE`|Указывает, что следует выполнять все типы проверки и сообщать о них.|  
 |`VALIDATOR_NOCHECK_PEFORMAT`|Указывает, что формат исполняемого файла не должен проверяться.|  
-|`VALIDATOR_SHOW_SOURCE_LINES`|Указывает, что сообщения об ошибках проверки должны включать строки исходного кода, вызывающие ошибки проверки. Это значение поля недопустимо в .NET Framework версии 2,0.|  
+|`VALIDATOR_SHOW_SOURCE_LINES`|Указывает, что сообщения об ошибках проверки должны включать строки исходного кода, вызывающие ошибки проверки. Это значение поля недопустимо в платформа .NET Framework версии 2,0.|  
   
 ## <a name="requirements"></a>Требования  
 
@@ -55,9 +56,9 @@ enum ValidatorFlags {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRErrorReportingManager](iclrerrorreportingmanager-interface.md)
 - [Размещение перечислений](hosting-enumerations.md)

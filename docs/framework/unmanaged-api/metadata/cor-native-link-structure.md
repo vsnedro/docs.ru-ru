@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_NATIVE_LINK'
 title: Структура COR_NATIVE_LINK
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6ef78d3c-1c69-4141-b687-dcb065b7a74d
 topic_type:
 - apiref
-ms.openlocfilehash: 15f573ebc07bcf08a1ab8f5a5bbb88e940c5c8dc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 09c715af698a0614fd4a9a17679df6908a1497a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678579"
 ---
 # <a name="cor_native_link-structure"></a>Структура COR_NATIVE_LINK
 
@@ -52,9 +53,9 @@ typedef struct
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры метаданных](metadata-structures.md)
 - [Перечисление CorNativeLinkType](cornativelinktype-enumeration.md)

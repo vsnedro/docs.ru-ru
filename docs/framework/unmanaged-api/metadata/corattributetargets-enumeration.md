@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorAttributeTargets
 title: Перечисление CorAttributeTargets
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 694c0fa0-7011-41a9-9dfd-f0e16ea574b5
 topic_type:
 - apiref
-ms.openlocfilehash: fbe721bad56ec2be434039f00e741ad9a177815f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6f80df31b9da8591fac3d979ede1e9bf0f8ecfc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678501"
 ---
 # <a name="corattributetargets-enumeration"></a>Перечисление CorAttributeTargets
 
@@ -80,7 +81,7 @@ typedef enum CorAttributeTargets
 |`catAll`|Атрибут может быть применен к любому элементу приложения.|  
 |`catClassMembers`|Атрибут может применяться к члену класса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CorAttributeTargets`Значения перечисления можно комбинировать с помощью битовой операции OR для получения предпочтительного сочетания.  
   
@@ -92,8 +93,8 @@ typedef enum CorAttributeTargets
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

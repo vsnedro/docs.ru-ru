@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Цеесектионрелоктипе
 title: Перечисление CeeSectionRelocType
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 124656f6-0dad-4ceb-9043-d3869ab65cde
 topic_type:
 - apiref
-ms.openlocfilehash: f7aa9699e9929608c90020c6b2d66c301fc11955
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 49f7b39b3cc4c2e71dd3e4e426d0ca787e9ac0b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732714"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678839"
 ---
 # <a name="ceesectionreloctype-enumeration"></a>Перечисление CeeSectionRelocType
 
@@ -77,9 +78,9 @@ typedef enum  {
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)
 - [Интерфейс ICeeGen](iceegen-interface.md)

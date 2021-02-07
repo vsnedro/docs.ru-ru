@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Коркаллингконвентион
 title: Перечисление CorCallingConvention
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 69156fbf-7219-43bf-b4b8-b13f1a2fcb86
 topic_type:
 - apiref
-ms.openlocfilehash: c9b20500a4a9e4649a938e00e3b059d1395da1d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2e823fe3566ef7a54f759cd5debbbd7d5dcf3ceb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678449"
 ---
 # <a name="corcallingconvention-enumeration"></a>Перечисление CorCallingConvention
 
@@ -73,8 +74,8 @@ typedef enum CorCallingConvention
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

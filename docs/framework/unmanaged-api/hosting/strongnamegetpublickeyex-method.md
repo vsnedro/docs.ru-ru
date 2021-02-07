@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе StrongNameGetPublicKeyEx
 title: Метод StrongNameGetPublicKeyEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
 topic_type:
 - apiref
-ms.openlocfilehash: 8cc28d9ccd40c65d225a96b269562c9d3dfa2124
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bc9d40afc34509f852a0961823e264255125fa16
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679307"
 ---
 # <a name="strongnamegetpublickeyex-method"></a>Метод StrongNameGetPublicKeyEx
 
@@ -71,11 +72,11 @@ HRESULT StrongNameGetPublicKey (
 
  `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Открытый ключ содержится в структуре [публиккэйблоб](../strong-naming/publickeyblob-structure.md) .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В следующей таблице показан набор допустимых значений для `uHashAlgId` параметра.  
   
@@ -95,9 +96,9 @@ HRESULT StrongNameGetPublicKey (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameTokenFromPublicKey](iclrstrongname-strongnametokenfrompublickey-method.md)
 - [Структура PublicKeyBlob](../strong-naming/publickeyblob-structure.md)

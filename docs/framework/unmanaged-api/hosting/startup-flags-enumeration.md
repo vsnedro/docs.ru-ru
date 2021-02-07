@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление STARTUP_FLAGS'
 title: Перечисление STARTUP_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type:
 - apiref
-ms.openlocfilehash: 3c3f4d644bd7073655d2d77fe7f65a3a46cfea24
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2136f1c43545342f2cdc7cde884999a2f2c11bdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679346"
 ---
 # <a name="startup_flags-enumeration"></a>Перечисление STARTUP_FLAGS
 
@@ -70,7 +71,7 @@ typedef enum {
 |`STARTUP_DISABLE_COMMITTHREADSTACK`|Указывает, что весь стек потоков не должен зафиксироваться при запуске потока.|  
 |`STARTUP_ALWAYSFLOW_IMPERSONATION`|Указывает, что управляемые олицетворения и олицетворения, полученные через вызов неуправляемого кода, будут передаваться через асинхронные точки. По умолчанию только управляемые олицетворения будут проходить через асинхронные точки.|  
 |`STARTUP_TRIM_GC_COMMIT`|Указывает, что при нехватке системной памяти сборка мусора будет использовать меньше зафиксированного пространства. См `gcTrimCommitOnLowMemory` . раздел [Оптимизация для размещения общих веб-](../../../standard/garbage-collection/optimization-for-shared-web-hosting.md)сайтов.|  
-|`STARTUP_ETW`|Указывает, что трассировка событий для Windows (ETW) включена для событий общеязыковой среды выполнения. Начиная с Windows Vista, трассировка событий всегда включена, поэтому этот флаг не действует. См. раздел [Управление ведением журнала .NET Framework](../../performance/controlling-logging.md).|  
+|`STARTUP_ETW`|Указывает, что трассировка событий для Windows (ETW) включена для событий общеязыковой среды выполнения. Начиная с Windows Vista, трассировка событий всегда включена, поэтому этот флаг не действует. См. раздел [Управление ведением журнала платформа .NET Framework](../../performance/controlling-logging.md).|  
 |`STARTUP_ARM`|Указывает, что отслеживание ресурсов домена приложения включено. См <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> . свойство и [ \<appDomainResourceMonitoring> элемент](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
   
 ## <a name="requirements"></a>Требования  
@@ -81,8 +82,8 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)
