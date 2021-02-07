@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugFunction:: GetCurrentVersionNumber'
 title: Метод ICorDebugFunction::GetCurrentVersionNumber
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c3af1575-cbe6-457a-bc08-c53460edcbc8
 topic_type:
 - apiref
-ms.openlocfilehash: 14579d4c84be9bb225e618715b3a7d45ccaac0a9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ccc96755ac74624a00b806e3f569f39f2d6059f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692541"
 ---
 # <a name="icordebugfunctiongetcurrentversionnumber-method"></a>Метод ICorDebugFunction::GetCurrentVersionNumber
 
@@ -39,7 +40,7 @@ HRESULT GetCurrentVersionNumber (
  `pnCurrentVersion`  
  заполняет Указатель на целочисленное значение, которое является номером версии последнего изменения, внесенного в эту функцию.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Номер версии последнего изменения, внесенного в эту функцию, может быть больше номера версии самой функции. Для получения номера версии функции используйте метод [ICorDebugFunction2:: жетверсионнумбер](icordebugfunction2-getversionnumber-method.md) или метод [ICorDebugCode:: жетверсионнумбер](icordebugcode-getversionnumber-method.md) .  
   
@@ -51,4 +52,4 @@ HRESULT GetCurrentVersionNumber (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

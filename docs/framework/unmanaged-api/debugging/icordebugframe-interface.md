@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе ICorDebugFrame
 title: Интерфейс ICorDebugFrame
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0c48f764-3c64-4602-b2f4-4ffc60eb2c65
 topic_type:
 - apiref
-ms.openlocfilehash: bdc17e2c6c63deae1420fe738eac51153f6b368e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d0fd629672d535f89fe78c178032937443d9dfbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692853"
 ---
 # <a name="icordebugframe-interface"></a>Интерфейс ICorDebugFrame
 
@@ -38,7 +39,7 @@ ms.locfileid: "95726344"
 |[Метод GetFunctionToken](icordebugframe-getfunctiontoken-method.md)|Возвращает маркер метаданных для функции, которая содержит код, связанный с этим кадром стека.|  
 |[Метод GetStackRange](icordebugframe-getstackrange-method.md)|Возвращает диапазон абсолютных адресов кадра стека, представленного этим объектом `ICorDebugFrame` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -51,8 +52,8 @@ ms.locfileid: "95726344"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

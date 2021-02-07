@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugFunction:: GetLocalVarSigToken'
 title: Метод ICorDebugFunction::GetLocalVarSigToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 31e53494-bcc9-4981-91a4-f7e0f02cad48
 topic_type:
 - apiref
-ms.openlocfilehash: 3ad9697cf94a3dd89fbb00bdaa703632ddfcd6fd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd7fb03829285ddcb1da2f1a93985fa1f98d3d39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728138"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692502"
 ---
 # <a name="icordebugfunctiongetlocalvarsigtoken-method"></a>Метод ICorDebugFunction::GetLocalVarSigToken
 
@@ -47,4 +48,4 @@ HRESULT GetLocalVarSigToken (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

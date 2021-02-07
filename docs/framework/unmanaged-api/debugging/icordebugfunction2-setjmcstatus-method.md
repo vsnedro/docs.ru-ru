@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugFunction2:: Сетжмкстатус'
 title: Метод ICorDebugFunction2::SetJMCStatus
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22c27b01-2869-4214-b840-5921f7c874fc
 topic_type:
 - apiref
-ms.openlocfilehash: 55f219b5b834f365b87440e69bfa7d2c4e519235
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d2df9d47808b0220a91bd344e7600f8d16eccdb4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696100"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692193"
 ---
 # <a name="icordebugfunction2setjmcstatus-method"></a>Метод ICorDebugFunction2::SetJMCStatus
 
@@ -46,7 +47,7 @@ HRESULT SetJMCStatus (
 |`S_OK`|Функция была успешно помечена.|  
 |`CORDBG_E_FUNCTION_NOT_DEBUGGABLE`|Функция не может быть помечена как пользовательский код, так как ее отладка невозможна.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Только мой код пошаговое средство пропускает код, не являющийся пользовательским. Пользовательский код должен быть подмножеством отлаживаемого кода.  
   
@@ -58,4 +59,4 @@ HRESULT SetJMCStatus (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

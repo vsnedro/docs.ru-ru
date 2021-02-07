@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess8:: Енабликсцептионкаллбакксаутсидеофмикоде'
 title: Метод ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode
 ms.date: 03/30/2017
 dev_langs:
 - cpp
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-ms.openlocfilehash: 750d2a2d69c74e147c34c9c496079ee48ac04b42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a85c9d62e5fb62fe620f0901509afa5a03504d4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732545"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691280"
 ---
 # <a name="icordebugprocess8enableexceptioncallbacksoutsideofmycode-method"></a>Метод ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode
 
-[Поддерживается в .NET Framework 4,6 и более поздних версиях]  
+[Поддерживается в платформа .NET Framework 4,6 и более поздних версиях]  
   
  Включает или отключает определенные типы обратных вызовов исключений [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) .  
   
@@ -30,7 +31,7 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
  `enableExceptionsOutsideOfJMC`  
  [in]  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `enableExceptionsOutsideOfJMC` имеет значение `false`:  
   
@@ -48,9 +49,9 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugProcess8](icordebugprocess8-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

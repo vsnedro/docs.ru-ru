@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугпроцессенум'
 title: Интерфейс ICorDebugProcessEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b63a507a-ca97-4be0-8e4f-401cce2125f6
 topic_type:
 - apiref
-ms.openlocfilehash: 31f26a40294857701b151cd2fce35b061da28238
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3bb70d2a826be84ecb680014efe5ed918d98e861
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691215"
 ---
 # <a name="icordebugprocessenum-interface"></a>Интерфейс ICorDebugProcessEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95732532"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icordebugprocessenum-next-method.md)|Возвращает указанное количество `ICorDebugProcess` экземпляров из перечисления, начиная с текущей позиции.|  
+|[Следующий метод](icordebugprocessenum-next-method.md)|Возвращает указанное количество `ICorDebugProcess` экземпляров из перечисления, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,8 +45,8 @@ ms.locfileid: "95732532"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

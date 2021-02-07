@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugProcess8'
 title: Интерфейс ICorDebugProcess8
 ms.date: 03/30/2017
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
-ms.openlocfilehash: 00c432374eeb82692492b8e6b10472f13bc44d6e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d858470216cfe64c60902836e552f750f4b2d5ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691293"
 ---
 # <a name="icordebugprocess8-interface"></a>Интерфейс ICorDebugProcess8
 
-[Поддерживается в .NET Framework 4,6 и более поздних версиях]  
+[Поддерживается в платформа .NET Framework 4,6 и более поздних версиях]  
   
  Логически расширяет интерфейс ICorDebugProcess, чтобы включать или отключать определенные типы обратных вызовов исключений [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) .  
   
@@ -31,9 +32,9 @@ ms.locfileid: "95732519"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule:: GetFunctionFromRVA'
 title: Метод ICorDebugModule::GetFunctionFromRVA
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: f5a34517-2422-484f-be89-2ce0b4bce195
 topic_type:
 - apiref
-ms.openlocfilehash: 85f368eaa024e7792e5feefeb08f0bac1b59494d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdafba1321ce32743ccca271e5db551fc746d886
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691579"
 ---
 # <a name="icordebugmodulegetfunctionfromrva-method"></a>Метод ICorDebugModule::GetFunctionFromRVA
 
-Этот метод не был реализован в текущей версии .NET Framework.  
+Этот метод не был реализован в текущей версии платформа .NET Framework.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,4 +40,4 @@ HRESULT GetFunctionFromRVA(
 
  **Заголовок:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также

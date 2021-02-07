@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugFrameEnum'
 title: Интерфейс ICorDebugFrameEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ee3f85d3-044e-46b8-945c-93ebfa5d9e91
 topic_type:
 - apiref
-ms.openlocfilehash: 4277a552d217ad7f601bfe72cae32a1f25dd6be4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61a83bd960182c28888d3c5459cf43c9bc7f2be3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692814"
 ---
 # <a name="icordebugframeenum-interface"></a>Интерфейс ICorDebugFrameEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95696236"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icordebugframeenum-next-method.md)|Возвращает указанное количество `ICorDebugFrame` экземпляров из перечисления, начиная с текущей позиции.|  
+|[Следующий метод](icordebugframeenum-next-method.md)|Возвращает указанное количество `ICorDebugFrame` экземпляров из перечисления, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,8 +45,8 @@ ms.locfileid: "95696236"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

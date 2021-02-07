@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugFrame:: GetStackRange'
 title: Метод ICorDebugFrame::GetStackRange
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fab037cb-fda6-40fb-9367-921e435dd5a0
 topic_type:
 - apiref
-ms.openlocfilehash: 0cfc734e3c2d250bba045a926f5b178b6cbc1ba4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1f1278e0c00addc3c14f4e1c8d3ed5aad0381526
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692905"
 ---
 # <a name="icordebugframegetstackrange-method"></a>Метод ICorDebugFrame::GetStackRange
 
@@ -43,7 +44,7 @@ HRESULT GetStackRange (
  `pEnd`  
  заполняет Указатель на объект `CORDB_ADDRESS` , указывающий конечный адрес кадра стека, представленного этим `ICorDebugFrame` объектом.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Диапазон адресов стека полезен для пиеЦинг вместе чередующихся трассировок стека, собранных из нескольких ядер отладки. Числовой диапазон не предоставляет сведений о содержимом кадра стека. Он имеет смысл только для сравнения расположений в кадрах стека.  
   
@@ -55,4 +56,4 @@ HRESULT GetStackRange (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

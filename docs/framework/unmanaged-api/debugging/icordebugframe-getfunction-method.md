@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugFrame:: Function'
 title: Метод ICorDebugFrame::GetFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 879d2311-0ff1-4616-a8b3-959ea5868b2e
 topic_type:
 - apiref
-ms.openlocfilehash: 9f9a6238057f56459eb8dca2375da412c3cd569d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0309a066f686e55d086de1cbb040eea58e031df3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692996"
 ---
 # <a name="icordebugframegetfunction-method"></a>Метод ICorDebugFrame::GetFunction
 
@@ -39,7 +40,7 @@ HRESULT GetFunction (
  `ppFunction`  
  заполняет Указатель на адрес объекта ICorDebugFunction, представляющего функцию, содержащую код, связанный с данным кадром стека.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetFunction`Метод может завершиться ошибкой, если фрейм не связан с какой-либо определенной функцией.  
   
@@ -51,4 +52,4 @@ HRESULT GetFunction (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

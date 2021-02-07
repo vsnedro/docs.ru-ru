@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugFrame:: вызывали'
 title: Метод ICorDebugFrame::GetCaller
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bfdc946b-8238-4eb9-8a85-884049fb0fd4
 topic_type:
 - apiref
-ms.openlocfilehash: b52499e509bf172b03b5e4d2b1e4c677dc800281
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a042341f6edfa0e8f6ca00f758107852f9e381cb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693048"
 ---
 # <a name="icordebugframegetcaller-method"></a>Метод ICorDebugFrame::GetCaller
 
@@ -47,4 +48,4 @@ HRESULT GetCaller (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

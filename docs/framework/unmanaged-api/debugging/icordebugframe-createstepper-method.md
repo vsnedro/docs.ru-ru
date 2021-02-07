@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugFrame:: Креатестеппер'
 title: Метод ICorDebugFrame::CreateStepper
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 689e7f28-20c1-4d5c-9baa-17441cd63a88
 topic_type:
 - apiref
-ms.openlocfilehash: 5dfb64d0c440cbd2c8a8a65b2c18d78f02a7615e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 394418b89fd7a1c780a5bc33b97b8ef40bab8df2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693100"
 ---
 # <a name="icordebugframecreatestepper-method"></a>Метод ICorDebugFrame::CreateStepper
 
@@ -39,7 +40,7 @@ HRESULT CreateStepper (
  `ppStepper`  
  заполняет Указатель на адрес объекта ICorDebugStepper, который позволяет отладчику выполнять операции пошагового выполнения по отношению к текущему кадру.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если кадр неактивен, объект средства Организации, как правило, должен вернуться к кадру до завершения этого шага.  
   
@@ -51,4 +52,4 @@ HRESULT CreateStepper (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugFunction3:: GetActiveReJitRequestILCode'
 title: Метод ICorDebugFunction3::GetActiveReJitRequestILCode
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type:
 - apiref
-ms.openlocfilehash: 7ab5f8826da0b38fc9f92d9be955991a88d15f69
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9225c5cdf97395b7e1b11c61d653cab8d52031c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692125"
 ---
 # <a name="icordebugfunction3getactiverejitrequestilcode-method"></a>Метод ICorDebugFunction3::GetActiveReJitRequestILCode
 
@@ -38,7 +39,7 @@ HRESULT GetActiveReJitRequestILCode(
  `ppReJitedILCode`  
  Указатель на промежуточный язык из активного запроса ReJIT.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если метод, представленный этим объектом `ICorDebugFunction3`, имеет активный запрос ReJIT, `ppReJitedILCode` возвращает указатель на его промежуточный язык. Если нет активного запроса, то есть общего случая, то `ppReJitedILCode` имеет **значение NULL**.  
   
@@ -52,9 +53,9 @@ HRESULT GetActiveReJitRequestILCode(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugFunction3](icordebugfunction3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)
