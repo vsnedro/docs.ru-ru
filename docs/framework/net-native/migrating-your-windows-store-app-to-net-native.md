@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о переносе приложения из Магазина Windows в .NET Native
 title: Миграция приложения для магазина Windows в машинный код .NET
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: ee17e50590a80d8973197b46910d5e22296c265f
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: 39f8427474b37c42d856366bf4e4d677ba77e7f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94440898"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738719"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Перенос приложения из Магазина Windows в .NET Native
 
@@ -39,7 +40,7 @@ ms.locfileid: "94440898"
 
   [!code-csharp[ProjectN#8](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/compat1.cs#8)]
 
-- В некоторых случаях .NET Native предоставляет различные реализации библиотек классов .NET Framework. Объект, возвращенный из метода, всегда будет реализовать члены возвращаемого типа. Тем не менее, поскольку его резервная реализация отличается, может оказаться невозможным привести его к тому же набору типов, как это можно было бы сделать на платформах .NET Framework. Например, в некоторых случаях может оказаться невозможным привести объект интерфейса <xref:System.Collections.Generic.IEnumerable%601> , возвращенный такими методами как <xref:System.Reflection.TypeInfo.DeclaredMembers%2A?displayProperty=nameWithType> или <xref:System.Reflection.TypeInfo.DeclaredProperties%2A?displayProperty=nameWithType> , к `T[]`.
+- В некоторых случаях .NET Native предоставляет различные реализации библиотек классов платформа .NET Framework. Объект, возвращенный из метода, всегда будет реализовать члены возвращаемого типа. Тем не менее, поскольку его резервная реализация отличается, может оказаться невозможным привести его к тому же набору типов, как это можно было бы сделать на платформах .NET Framework. Например, в некоторых случаях может оказаться невозможным привести объект интерфейса <xref:System.Collections.Generic.IEnumerable%601> , возвращенный такими методами как <xref:System.Reflection.TypeInfo.DeclaredMembers%2A?displayProperty=nameWithType> или <xref:System.Reflection.TypeInfo.DeclaredProperties%2A?displayProperty=nameWithType> , к `T[]`.
 
 - Кэш WinInet не включен по умолчанию в .NET для приложений Магазина Windows, но находится на .NET Native. Это повышает производительность, но сказывается на рабочем наборе. Не требуется никаких действий разработчика.
 
@@ -47,7 +48,7 @@ ms.locfileid: "94440898"
 
 ## <a name="dynamic-programming-differences"></a>Различия динамического программирования
 
-.NET Native статические ссылки в коде из .NET Framework, чтобы сделать код локальным для приложения, чтобы обеспечить максимальную производительность. Тем не менее, двоичные размеры должны оставаться небольшими, поэтому не удается подключить всю платформу .NET Framework. Компилятор .NET Native разрешает это ограничение с помощью средства уменьшения зависимостей, которое удаляет ссылки на неиспользуемый код. Однако .NET Native может не поддерживать или генерировать некоторую информацию о типе и код, если эти сведения не могут быть выводиться статически во время компиляции, а вместо этого извлекаются динамически в среде выполнения.
+.NET Native статические ссылки в коде из платформа .NET Framework, чтобы сделать код локальным для приложения, чтобы обеспечить максимальную производительность. Тем не менее, двоичные размеры должны оставаться небольшими, поэтому не удается подключить всю платформу .NET Framework. Компилятор .NET Native разрешает это ограничение с помощью средства уменьшения зависимостей, которое удаляет ссылки на неиспользуемый код. Однако .NET Native может не поддерживать или генерировать некоторую информацию о типе и код, если эти сведения не могут быть выводиться статически во время компиляции, а вместо этого извлекаются динамически в среде выполнения.
 
 .NET Native включает отражение и динамическое программирование. При этом, не все типы могут быть помечены для отражения, так как это сделает размер созданного кода слишком большим (особенно потому, что поддерживается отражение на общедоступных API в платформе .NET Framework). Компилятор .NET Native делает разумные варианты того, какие типы должны поддерживать отражение, и сохраняет метаданные и создает код только для этих типов.
 
@@ -177,7 +178,7 @@ ms.locfileid: "94440898"
 
 **Прокси**
 
-<xref:Windows.Web.Http.Filters.HttpBaseProtocolFilter>Класс не поддерживает настройку или переопределение прокси-сервера для каждого запроса.  Это означает, что все запросы на .NET Native используют настроенный в системе прокси-сервер или не использует прокси-сервер в зависимости от значения <xref:System.Net.Http.HttpClientHandler.UseProxy%2A?displayProperty=nameWithType> Свойства.  В приложениях .NET для магазина Windows, прокси-сервер определяется свойством <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> .  В .NET Native при присвоении параметру значения, отличного <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> от, `null` вызывается <xref:System.PlatformNotSupportedException> исключение.  <xref:System.Net.Http.HttpClientHandler.SupportsProxy%2A?displayProperty=nameWithType>Свойство возвращается `false` в .NET Native, тогда как оно возвращается `true` в стандартном .NET Framework для приложений Магазина Windows.
+<xref:Windows.Web.Http.Filters.HttpBaseProtocolFilter>Класс не поддерживает настройку или переопределение прокси-сервера для каждого запроса.  Это означает, что все запросы на .NET Native используют настроенный в системе прокси-сервер или не использует прокси-сервер в зависимости от значения <xref:System.Net.Http.HttpClientHandler.UseProxy%2A?displayProperty=nameWithType> Свойства.  В приложениях .NET для магазина Windows, прокси-сервер определяется свойством <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> .  В .NET Native при присвоении параметру значения, отличного <xref:System.Net.Http.HttpClientHandler.Proxy%2A?displayProperty=nameWithType> от, `null` вызывается <xref:System.PlatformNotSupportedException> исключение.  <xref:System.Net.Http.HttpClientHandler.SupportsProxy%2A?displayProperty=nameWithType>Свойство возвращается `false` в .NET Native, тогда как оно возвращается `true` в стандартном платформа .NET Framework для приложений Магазина Windows.
 
 **Автоматическое перенаправление**
 
@@ -663,7 +664,7 @@ Visual Basic в настоящее время не поддерживается 
 
 Включение .NET Native в библиотеке модульных тестов для проекта приложений Магазина Windows не поддерживается и приводит к сбою сборки проекта.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Начало работы](getting-started-with-net-native.md)
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

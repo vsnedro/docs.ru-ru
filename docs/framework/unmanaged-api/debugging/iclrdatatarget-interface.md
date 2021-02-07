@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRDataTarget'
 title: Интерфейс ICLRDataTarget
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
 topic_type:
 - apiref
-ms.openlocfilehash: 0d3e6a95d8fd71a67b97923dac53c1f615dfe666
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f24760f638705a1bde7e055069cbc3a18a0896fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738225"
 ---
 # <a name="iclrdatatarget-interface"></a>Интерфейс ICLRDataTarget
 
@@ -41,7 +42,7 @@ ms.locfileid: "95703425"
 |[Метод SetTLSValue](iclrdatatarget-settlsvalue-method.md)|Задает значение в локальном хранилище потока (TLS) указанного потока в целевом процессе.|  
 |[Метод WriteVirtual](iclrdatatarget-writevirtual-method.md)|Записывает данные из указанного буфера в указанный адрес виртуальной памяти.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Клиент API (то есть отладчик) должен реализовать этот интерфейс в соответствии с конкретным целевым элементом. Например, реализация активного процесса будет отличаться от реализации дампа памяти.  
   
@@ -53,9 +54,9 @@ ms.locfileid: "95703425"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget2](iclrdatatarget2-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

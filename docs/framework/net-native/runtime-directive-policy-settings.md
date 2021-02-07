@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье параметры политики директив среды выполнения.
 title: Параметры политики директив среды выполнения
 ms.date: 03/30/2017
 ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
-ms.openlocfilehash: 7a8933decaec45e8000f3f3d1717847f333deddd
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b8bbb0f713900b4f0b3808431ce45ab85a7f8225
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "76738506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738420"
 ---
 # <a name="runtime-directive-policy-settings"></a>Параметры политики директив среды выполнения
 
@@ -128,7 +129,7 @@ ms.locfileid: "76738506"
 |`Required PublicAndInternal`|Включает политику для открытых и внутренних типов или членов и гарантирует, что эти метаданные для открытых и внутренних типов и членов всегда доступны. Этот параметр отличается от `PublicAndInternal`, который делает метаданные для открытых и внутренних типов и членов доступными, только если цепочка инструментов определяет, что это необходимо.|✔️||
 |`Required All`|Требует, чтобы цепочка инструментов сохранила все типы и члены, независимо то того, используются они или нет, и включает политику для них.|✔️||
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Ссылка на файл конфигурации директив среды выполнения (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Элементы директив среды выполнения](runtime-directive-elements.md)

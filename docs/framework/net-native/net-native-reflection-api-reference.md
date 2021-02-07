@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Справочник по API отражения .NET Native'
 title: Справочник по API отражения для машинного кода .NET
 ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
-ms.openlocfilehash: 4cded310397ffa4dea057899b6f008146d35a03b
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 44786812b5bf8c7bd470a588730b7b03ee91f00c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738524"
 ---
 # <a name="net-native-reflection-api-reference"></a>Справочник по API отражения для машинного кода .NET
 
@@ -24,13 +25,13 @@ ms.locfileid: "96250883"
 - [Средство устранения неполадок MissingMetadataException](https://dotnet.github.io/native/troubleshooter/method.html) для методов.  
   
 > [!NOTE]
-> В этой справочной документации описываются три типа исключений, которые являются уникальными для .NET Native. Справочную документацию по API отражения .NET Framework Core см. в <xref:System.Reflection> разделе <xref:System.Reflection.Context> <xref:System.Reflection.Emit> пространства имен и. Справочную документацию по основному API взаимодействия для .NET Framework см. в разделе <xref:System.Runtime.InteropServices>.  
+> В этой справочной документации описываются три типа исключений, которые являются уникальными для .NET Native. Справочную документацию по API отражения платформа .NET Framework Core см. в <xref:System.Reflection> разделе <xref:System.Reflection.Context> <xref:System.Reflection.Emit> пространства имен и. Справочную документацию по основному API взаимодействия для .NET Framework см. в разделе <xref:System.Runtime.InteropServices>.  
   
 ## <a name="systemreflection-namespace"></a>Пространства имен System.Reflection  
 
  Пространство имен <xref:System.Reflection> содержит базовые типы, используемые для отражения в платформе .NET Framework. Для .NET Native также включает два новых типа исключений:  
   
-|Класс|Описание|  
+|Class|Описание|  
 |-----------|-----------------|  
 |[MissingMetadataException](missingmetadataexception-class-net-native.md)|Исключение, возникающее при использовании отражения для извлечения метаданных, которые не существуют.|  
 |[MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md)|Исключение возникает, когда метаданные для типа или члена типа доступны, но его реализация была удалена.|  
@@ -41,7 +42,7 @@ ms.locfileid: "96250883"
 
  Пространство имен <xref:System.Runtime.CompilerServices> содержит типы, создаваемые для пользователя компиляторами языка. Для .NET Native также включает новый тип исключения:  
   
-|Класс|Описание|  
+|Class|Описание|  
 |-----------|-----------------|  
 |[MissingInteropDataException](missinginteropdataexception-class-net-native.md)|Исключение, которое возникает, когда вызывается ручной метод маршалинга, но не найдены метаданные для типа в ходе статического анализа или в файле директив среды выполнения.|  
   

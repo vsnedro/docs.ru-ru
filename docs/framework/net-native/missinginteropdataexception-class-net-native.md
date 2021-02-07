@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о классе: MissingInteropDataException (.NET Native)'
 title: Класс MissingInteropDataException (машинный код .NET)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
-ms.openlocfilehash: bbbb484e5cb8060568b321a2a41474d60c9f87f6
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ee1544d6a0e1e6a3f0e4386650754ed84b49015b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738706"
 ---
 # <a name="missinginteropdataexception-class-net-native"></a>Класс MissingInteropDataException (машинный код .NET)
 
@@ -21,7 +22,7 @@ ms.locfileid: "96250922"
  **Пространство имен:** System.Runtime.CompilerServices  
   
 > [!IMPORTANT]
-> `MissingInteropDataException`Класс предназначен исключительно для внутреннего использования в цепочке инструментов .NET Native. Он не предназначен для использования в стороннем коде. Вам также не следует обрабатывать исключение в коде своего приложения. Вместо этого вы устраняете исключение, добавляя записи в [файл директив среды выполнения](runtime-directives-rd-xml-configuration-file-reference.md). Дополнительные сведения см. в разделе "Примечания".  
+> `MissingInteropDataException`Класс предназначен исключительно для внутреннего использования в цепочке инструментов .NET Native. Он не предназначен для использования в стороннем коде. Вам также не следует обрабатывать исключение в коде своего приложения. Вместо этого вы устраняете исключение, добавляя записи в [файл директив среды выполнения](runtime-directives-rd-xml-configuration-file-reference.md). Дополнительные сведения см. в разделе «Примечания».  
   
 ## <a name="syntax"></a>Синтаксис  
 
@@ -38,7 +39,7 @@ ms.locfileid: "96250922"
   
 ## <a name="properties"></a>Свойства  
   
-|Свойство.|Описание|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |`public IDictionary Data { get; }`|Возвращает коллекцию пар «ключ-значение», предоставляющую дополнительные сведения об исключении. (Является наследником <xref:System.Exception?displayProperty=nameWithType>)|  
 |`public string HelpLink { get; set; }`|Получает или задает ссылку на файл справки, связанный с этим исключением. (Является наследником <xref:System.Exception?displayProperty=nameWithType>)|  

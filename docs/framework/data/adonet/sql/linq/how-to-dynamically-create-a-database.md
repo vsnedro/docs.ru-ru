@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о том, как динамически создавать базу данных.
 title: Практическое руководство. Как динамически создать базу данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fb7f23c4-4572-4c38-9898-a287807d070c
-ms.openlocfilehash: 95073eed3e0534a74272ee426ac6e329954c85a6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b9addce6befc63f91358d6ecae57e40d6123b200
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738979"
 ---
 # <a name="how-to-dynamically-create-a-database"></a>Практическое руководство. Как динамически создать базу данных
 
@@ -52,7 +53,7 @@ ms.locfileid: "91173488"
  [!code-csharp[DLinqSubmittingChanges#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#7)]
  [!code-vb[DLinqSubmittingChanges#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#7)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Сопоставление, основанное на атрибутах](attribute-based-mapping.md)
 - [Внешнее сопоставление](external-mapping.md)

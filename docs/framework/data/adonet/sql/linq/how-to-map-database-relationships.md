@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как сопоставлять связи базы данных
 title: Практическое руководство. Как сопоставлять связи баз данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 538def39-8399-46fb-b02d-60ede4e050af
-ms.openlocfilehash: 2f612877f5e7da6442c242aa0d56d811c0aa7cf8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: cbccf9ec33a76b6446549fe8031300174506bd00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738849"
 ---
 # <a name="how-to-map-database-relationships"></a>Практическое руководство. Как сопоставлять связи баз данных
 
@@ -56,7 +57,7 @@ ms.locfileid: "91166460"
  [!code-csharp[DLinqCustomize#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#5)]
  [!code-vb[DLinqCustomize#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#5)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Как настроить классы сущностей с помощью редактора кода](how-to-customize-entity-classes-by-using-the-code-editor.md)
 - [Модель объектов LINQ to SQL](the-linq-to-sql-object-model.md)

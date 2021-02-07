@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Namespace> элементе: Element (.NET Native)'
 title: <Namespace> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
-ms.openlocfilehash: 05de04685f8ba746f55bf040c74fd3831c5b63ca
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c24f78d8d9fd59258391e9dd5e59988675163b49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287895"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738615"
 ---
 # <a name="namespace-element-net-native"></a>\<Namespace> Элемент (.NET Native)
 
@@ -78,7 +79,7 @@ ms.locfileid: "96287895"
 |[\<Library>](library-element-net-native.md)|Определяет сборку, содержащую типы и члены типов, метаданные которой доступны для отражения во время выполнения. [\<Library>](library-element-net-native.md)Элемент может иметь ноль или один [\<Assembly>](assembly-element-net-native.md) элемент.|  
 |`<Namespace>`|Применяет политику отражения для всех типов в родительском пространстве имен.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Атрибуты `Activate`, `Browse`, `Dynamic` и `Serialize` необязательны. Если таковые отсутствуют, элемент `<Namespace>` используется только как контейнер для дочерних элементов. Если они присутствуют, элемент `<Namespace>` применяет политика отражения среды выполнения ко всем типам в указанном пространстве имен.  
   

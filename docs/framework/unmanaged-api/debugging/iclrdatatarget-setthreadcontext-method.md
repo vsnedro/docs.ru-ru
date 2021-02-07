@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget:: SetThreadContext'
 title: Метод ICLRDataTarget::SetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 103c8502-81fe-40d7-9c1e-9008d8fb19e1
 topic_type:
 - apiref
-ms.openlocfilehash: c135c051637858682c22db58d562e1d50eea562b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fc428bc887f7ba10f3096cdf17a757fb252418f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738209"
 ---
 # <a name="iclrdatatargetsetthreadcontext-method"></a>Метод ICLRDataTarget::SetThreadContext
 
@@ -50,7 +51,7 @@ HRESULT SetThreadContext (
   
  Данные в `context` буфере будут иметь формат `CONTEXT` структуры Win32. Контекст задает зависящие от процессора данные регистров, поэтому определение `CONTEXT` структуры Win32 зависит от архитектуры процессора. Описание структуры Win32 см. в файле заголовка WinNT. h `CONTEXT` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод реализуется модулем записи отладчика.  
   
@@ -62,8 +63,8 @@ HRESULT SetThreadContext (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)
