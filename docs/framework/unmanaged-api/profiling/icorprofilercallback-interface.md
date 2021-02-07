@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: интерфейс ICorProfilerCallback'
 title: Интерфейс ICorProfilerCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4bae06f7-94d7-4ba8-b250-648b2da78674
 topic_type:
 - apiref
-ms.openlocfilehash: 8451f100f9e1b8d68045050d1b584ae44c29195d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5bc59839bfe352fb7d67688dcd7c8fe0d6c97eaf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95684074"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705919"
 ---
 # <a name="icorprofilercallback-interface"></a>Интерфейс ICorProfilerCallback
 
@@ -45,8 +46,8 @@ ms.locfileid: "95684074"
 |[Метод COMClassicVTableDestroyed](icorprofilercallback-comclassicvtabledestroyed-method.md)|Уведомляет профилировщик о том, что обертка RCW уничтожается.|  
 |[Метод ExceptionCatcherEnter](icorprofilercallback-exceptioncatcherenter-method.md)|Уведомляет профилировщик о том, что управление передается соответствующему `catch` блоку.|  
 |[Метод ExceptionCatcherLeave](icorprofilercallback-exceptioncatcherleave-method.md)|Уведомляет профилировщик о том, что управление передается из соответствующего `catch` блока.|  
-|[Метод ExceptionCLRCatcherExecute](icorprofilercallback-exceptionclrcatcherexecute-method.md)|Устарело в .NET Framework версии 2,0.|  
-|[Метод ExceptionCLRCatcherFound](icorprofilercallback-exceptionclrcatcherfound-method.md)|Устарело в .NET Framework 2,0.|  
+|[Метод ExceptionCLRCatcherExecute](icorprofilercallback-exceptionclrcatcherexecute-method.md)|Устарело в платформа .NET Framework версии 2,0.|  
+|[Метод ExceptionCLRCatcherFound](icorprofilercallback-exceptionclrcatcherfound-method.md)|Устарело в платформа .NET Framework 2,0.|  
 |[Метод ExceptionOSHandlerEnter](icorprofilercallback-exceptionoshandlerenter-method.md)|Не реализован. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
 |[Метод ExceptionOSHandlerLeave](icorprofilercallback-exceptionoshandlerleave-method.md)|Не реализован. Профилировщик, которому требуются сведения о неуправляемом исключении, должен получить эти сведения с помощью других средств.|  
 |[Метод ExceptionSearchCatcherFound](icorprofilercallback-exceptionsearchcatcherfound-method.md)|Уведомляет профилировщик о том, что на фазе поиска исключений обнаружен обработчик для созданного исключения.|  
@@ -99,16 +100,16 @@ ms.locfileid: "95684074"
 |[Метод ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md)|Уведомляет профилировщик о том, что поток был уничтожен.|  
 |[Метод UnmanagedToManagedTransition](icorprofilercallback-unmanagedtomanagedtransition-method.md)|Уведомляет профилировщик о том, что произошел переход из неуправляемого кода в управляемый код.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR вызывает метод в `ICorProfilerCallback` интерфейсе (или [ICorProfilerCallback2](icorprofilercallback2-interface.md)) для уведомления профилировщика при возникновении события, на которое подписан профилировщик. Это основной интерфейс обратного вызова, с помощью которого среда CLR взаимодействует с профилировщиком кода.  
   
- Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для .NET Framework версии 2,0 или более поздней профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
+ Профилировщик кода должен реализовывать методы `ICorProfilerCallback` интерфейса. Для платформа .NET Framework версии 2,0 или более поздней профилировщик также должен реализовать `ICorProfilerCallback2` методы. Каждая реализация метода должна возвращать HRESULT со значением S_OK в случае успеха или E_FAIL при сбое. В настоящее время среда CLR игнорирует значение HRESULT, возвращаемое каждым обратным вызовом, за исключением значения [ICorProfilerCallback:: ObjectReferences](icorprofilercallback-objectreferences-method.md).  
   
  В реестре Microsoft Windows профилировщик кода должен зарегистрировать объект модели COM, реализующий `ICorProfilerCallback` `ICorProfilerCallback2` интерфейсы и. Профилировщик кода подписывается на события, для которых требуется получать уведомления путем вызова [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md). Обычно это делается в реализации метода [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md)профилировщика. Затем профилировщик может получать уведомления от среды выполнения, когда событие собирается или было только что произошло в процессе выполнения.  
   
 > [!NOTE]
-> Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы класса `ICorProfilerCallback` . Если он предназначен для .NET Framework версии 2,0 или более поздней, COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
+> Профилировщик регистрирует один COM-объект. Если профилировщик предназначен для платформа .NET Framework версии 1,0 или 1,1, этот COM-объект должен реализовывать только методы класса `ICorProfilerCallback` . Если он предназначен для платформа .NET Framework версии 2,0 или более поздней, COM-объект также должен реализовывать методы `ICorProfilerCallback2` .  
   
 ## <a name="requirements"></a>Требования  
 
@@ -118,9 +119,9 @@ ms.locfileid: "95684074"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICeeGen:: Жетсектионкреате'
 title: Метод ICeeGen::GetSectionCreate
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 154b2460-59ce-4874-a9f2-1b3353486ac5
 topic_type:
 - apiref
-ms.openlocfilehash: 4ef3992d840f539ca07c411c2d740fa32b14edbc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2839d11c927dbf573f213d3ebaa9e6e6d8d5015d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706868"
 ---
 # <a name="iceegengetsectioncreate-method"></a>Метод ICeeGen::GetSectionCreate
 
@@ -49,7 +50,7 @@ HRESULT GetSectionCreate (
  `section`  
  заполняет Указатель на только что созданный раздел кода.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызывайте `GetSectionCreate` только при наличии особых требований к разделам, которые не обрабатываются другими методами.  
   
@@ -61,8 +62,8 @@ HRESULT GetSectionCreate (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

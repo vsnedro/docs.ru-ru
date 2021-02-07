@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PRF_MODULE_FLAGS'
 title: Перечисление COR_PRF_MODULE_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type:
 - apiref
-ms.openlocfilehash: 7d9e187d4aede772b7a002359cd3bdd350aaec77
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0be5d97bfb6bea069d039d175fc554e0ef59993d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706442"
 ---
 # <a name="cor_prf_module_flags-enumeration"></a>Перечисление COR_PRF_MODULE_FLAGS
 
@@ -52,7 +53,7 @@ typedef enum
 |COR_PRF_MODULE_FLAT_LAYOUT|Структура модуля в памяти плоская, но не сопоставлена. Если в модуле установлен этот бит, профилировщики, считывающие информацию непосредственно из заголовка переносимого исполняемого файла (PE), должны быть внимательны при интерпретации относительных виртуальных адресов (RVA) в заголовке.|  
 |COR_PRF_MODULE_WINDOWS_RUNTIME|Флаг типа содержимого среда выполнения Windows задается в метаданных для сборки этого модуля. Это происходит для всех модулей метаданных Windows (. winmd).|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Биты из COR_PRF_MODULE_FLAGS возвращаются профилировщику в `pdwModuleFlags` параметре OUTPUT метода [ICorProfilerInfo3:: GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) . Некоторые сочетания двух или более флагов возможны, но не все сочетания возможны.  
   
@@ -64,8 +65,8 @@ typedef enum
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)
