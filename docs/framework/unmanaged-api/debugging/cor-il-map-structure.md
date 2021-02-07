@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_IL_MAP'
 title: Структура COR_IL_MAP
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 534ebc17-963d-4b26-8375-8cd940281db3
 topic_type:
 - apiref
-ms.openlocfilehash: fb6b5d43e60b52c867535c42d59a098ef3c959bc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff3d636429f51119342baea5d71163eb9d764e03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712328"
 ---
 # <a name="cor_il_map-structure"></a>Структура COR_IL_MAP
 
@@ -43,7 +44,7 @@ typedef struct _COR_IL_MAP {
 |`newOffset`|Новое смещение MSIL относительно начала функции.|  
 |`fAccurate`|`true` значение, если сопоставление известно как точное; в противном случае — `false` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Формат схемы выглядит следующим образом: в отладчике предполагается, что `oldOffset` ссылается на смещение MSIL в исходном, неизмененном коде MSIL. `newOffset`Параметр ссылается на соответствующее смещение MSIL в новом, инструментированном коде.  
   
@@ -89,9 +90,9 @@ typedef struct _COR_IL_MAP {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

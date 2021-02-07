@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: логические типы данных'
 title: Логические типы данных
 ms.date: 03/30/2017
 ms.assetid: 57f7376b-4b11-4b35-98a9-780382053ceb
-ms.openlocfilehash: e2175afc24cfc7db38c1b8e1dbb11757f633960a
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1adea2cefa94f4b58665c4cb9ac0a84bb66ba756
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712627"
 ---
 # <a name="boolean-data-types"></a>Логические типы данных
 
@@ -22,8 +23,8 @@ ms.locfileid: "91156073"
 |[Оператор Or](../../../../../visual-basic/language-reference/operators/or-operator.md)|[ Оператор&#124;](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-or-operator-)|  
 |[Оператор OrElse](../../../../../visual-basic/language-reference/operators/orelse-operator.md)|[ Оператор&#124;&#124; ](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-)|  
 |[Оператор Xor](../../../../../visual-basic/language-reference/operators/xor-operator.md)|[Оператор ^](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-exclusive-or-operator-)|  
-|[Оператор Not](../../../../../visual-basic/language-reference/operators/not-operator.md)|[\! Станции](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-negation-operator-)|  
+|[Оператор Not](../../../../../visual-basic/language-reference/operators/not-operator.md)|[\!Оператор](../../../../../csharp/language-reference/operators/boolean-logical-operators.md#logical-negation-operator-)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы данных и функции](data-types-and-functions.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о создании кода в LINQ to SQL
 title: Создание кода в LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
-ms.openlocfilehash: f58448e0fc0c22795005b55a737b42374a750ec3
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b523a84c6ee0d165673035073b6a5c5adf716641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712588"
 ---
 # <a name="code-generation-in-linq-to-sql"></a>Создание кода в LINQ to SQL
 
@@ -274,7 +275,7 @@ elementFormDefault="qualified" >
 </Database>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные сведения](background-information.md)
 - [Внешнее сопоставление](external-mapping.md)

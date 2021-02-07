@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugAssembly:: onappdomain'
 title: Метод ICorDebugAssembly::GetAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 14e18510-23ac-4cba-9f96-c86147a2df9d
 topic_type:
 - apiref
-ms.openlocfilehash: 55a798bcc575aee3f309c35eb454a0675e0cbd97
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f67b2a211b080843e2bd7b8820a5bf54dae638e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712107"
 ---
 # <a name="icordebugassemblygetappdomain-method"></a>Метод ICorDebugAssembly::GetAppDomain
 
@@ -39,7 +40,7 @@ HRESULT GetAppDomain (
  `ppAppDomain`  
  заполняет Указатель на адрес интерфейса ICorDebugAppDomain, который представляет домен приложения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если эта сборка является системной, `GetAppDomain` возвращает значение null.  
   
@@ -51,4 +52,4 @@ HRESULT GetAppDomain (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

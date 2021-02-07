@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ADO.NET и LINQ to SQL'
 title: ADO.NET и LINQ to SQL
 titleSuffix: ''
 ms.date: 03/30/2017
@@ -6,12 +7,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
-ms.openlocfilehash: 5dc1796b7fb7036f68c2435325c6a29d381c59f1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1f3f4a50c13af857ecd9f3195c7f431dd46ed3ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712965"
 ---
 # <a name="adonet-and-linq-to-sql"></a>ADO.NET и LINQ to SQL
 
@@ -31,11 +32,11 @@ ms.locfileid: "91161585"
  [!code-csharp[DLinqAdoNet#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#1)]
  [!code-vb[DLinqAdoNet#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#1)]  
   
-## <a name="transactions"></a>Транзакции  
+## <a name="transactions"></a>Transactions  
 
  Когда приложение уже инициировало транзакцию и в нее требуется включить <xref:System.Data.Linq.DataContext>, его можно добавить в собственную транзакцию базы данных.  
   
- Предпочтительным методом выполнения транзакций с .NET Framework является использование <xref:System.Transactions.TransactionScope> объекта. Благодаря этому способу можно выполнить распределенные транзакции, работающие в базах данных и других находящихся в памяти диспетчерах ресурсов. Для запуска транзакций требуется незначительное количество ресурсов. Они преобразуются в распределенные транзакции только при наличии в области действия транзакции нескольких подключений.  
+ Предпочтительным методом выполнения транзакций с платформа .NET Framework является использование <xref:System.Transactions.TransactionScope> объекта. Благодаря этому способу можно выполнить распределенные транзакции, работающие в базах данных и других находящихся в памяти диспетчерах ресурсов. Для запуска транзакций требуется незначительное количество ресурсов. Они преобразуются в распределенные транзакции только при наличии в области действия транзакции нескольких подключений.  
   
  [!code-csharp[DLinqAdoNet#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs/Program.cs#2)]
  [!code-vb[DLinqAdoNet#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb/Module1.vb#2)]  
@@ -63,7 +64,7 @@ ms.locfileid: "91161585"
 > [!NOTE]
 > Параметры записываются в тексте запроса с использованием той же нотации с фигурными скобками, что и в методах `Console.WriteLine()` и `String.Format()`. Метод `String.Format()` принимает указанную строку запроса и заменяет параметры в фигурных скобках на автоматически созданные имена, такие как `@p0`, `@p1`…, `@p(n)`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные сведения](background-information.md)
 - [Практическое руководство. Как повторно использовать соединение между командой ADO.NET и DataContext](how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md)

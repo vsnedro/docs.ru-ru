@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: сопоставление Attribute-Based'
 title: Сопоставление, основанное на атрибутах
 ms.date: 03/30/2017
 ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
-ms.openlocfilehash: 986a5022ea9e70868689c898649067135eac944b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 9dfe9fce10d7ba76281afd843385c734e86af245
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91156112"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712731"
 ---
 # <a name="attribute-based-mapping"></a>Сопоставление, основанное на атрибутах
 
@@ -76,7 +77,7 @@ ms.locfileid: "91156112"
 |Свойство|Тип|По умолчанию|Описание|  
 |--------------|----------|-------------|-----------------|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteOnNull%2A>|логический|`false`|При задании данного свойства для ассоциации, в которой члены внешнего ключа не поддерживают значение NULL, удаляет объект при установке ассоциации значения NULL.|  
-|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule%2A>|Строка|Нет|Добавляет в ассоциацию поведение удаления.|  
+|<xref:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule%2A>|Строка|None|Добавляет в ассоциацию поведение удаления.|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey%2A>|Логическое|`false`|При значении "true" назначает член в качестве внешнего ключа в ассоциации, представляющей отношение базы данных.|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.IsUnique%2A>|Логическое|`false`|При значении «true» указывает ограничение уникальности для первичного ключа.|  
 |<xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A>|Строка|Идентификатор связанного класса|Назначает один или более членов целевого класса сущности в качестве ключевых значений на другой стороне ассоциации.|  
@@ -95,9 +96,9 @@ ms.locfileid: "91156112"
   
 |Свойство|Тип|По умолчанию|Описание|  
 |--------------|----------|-------------|-----------------|  
-|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A>|Строка|Нет. Необходимо предоставить значение.|Указывает значение кода дискриминатора.|  
+|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code%2A>|Строка|Отсутствует. Необходимо предоставить значение.|Указывает значение кода дискриминатора.|  
 |<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A>|Логическое|`false`|При значении "true" создает объект данного типа, когда значение дискриминатора в хранилище не соответствует ни одному заданному значению.|  
-|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type%2A>|Type|Нет. Необходимо предоставить значение.|Указывает тип класса в иерархии.|  
+|<xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type%2A>|Тип|Отсутствует. Необходимо предоставить значение.|Указывает тип класса в иерархии.|  
   
  Для получения дополнительной информации см. <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute>.  
   
@@ -122,7 +123,7 @@ ms.locfileid: "91156112"
   
 |Свойство|Тип|По умолчанию|Описание|  
 |--------------|----------|-------------|-----------------|  
-|<xref:System.Data.Linq.Mapping.ParameterAttribute.DbType%2A>|Строка|Нет|Указывает тип базы данных.|  
+|<xref:System.Data.Linq.Mapping.ParameterAttribute.DbType%2A>|Строка|None|Указывает тип базы данных.|  
 |<xref:System.Data.Linq.Mapping.ParameterAttribute.Name%2A>|Строка|Строка, соответствующая имени параметра в базе данных|Указывает имя для параметра.|  
   
  Для получения дополнительной информации см. <xref:System.Data.Linq.Mapping.ParameterAttribute>.  
@@ -135,7 +136,7 @@ ms.locfileid: "91156112"
   
 |Свойство|Тип|По умолчанию|Описание|  
 |--------------|----------|-------------|-----------------|  
-|<xref:System.Data.Linq.Mapping.ResultTypeAttribute.Type%2A>|Type|(нет)|Используется в методах, сопоставленных с хранимыми процедурами, возвращающих <xref:System.Data.Linq.IMultipleResults>. Объявляет допустимые или ожидаемые сопоставления типов для хранимых процедур.|  
+|<xref:System.Data.Linq.Mapping.ResultTypeAttribute.Type%2A>|Тип|(нет)|Используется в методах, сопоставленных с хранимыми процедурами, возвращающих <xref:System.Data.Linq.IMultipleResults>. Объявляет допустимые или ожидаемые сопоставления типов для хранимых процедур.|  
   
  Для получения дополнительной информации см. <xref:System.Data.Linq.Mapping.ResultTypeAttribute>.  
   

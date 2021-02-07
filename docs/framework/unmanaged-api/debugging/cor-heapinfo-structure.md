@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_HEAPINFO'
 title: Структура COR_HEAPINFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
 topic_type:
 - apiref
-ms.openlocfilehash: 5400350e1c489ec4c2ff3cddf83a4f1a8a0c7947
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0841739172b3eaf807813af28e0b20fbb54608b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712319"
 ---
 # <a name="cor_heapinfo-structure"></a>Структура COR_HEAPINFO
 
@@ -47,7 +48,7 @@ typedef struct _COR_HEAPINFO {
 |`concurrent`|`TRUE` Если включена одновременная (фоновая) сборка мусора; в противном случае — `FALSE` .|  
 |`gcType`|Член перечисления [CorDebugGCType](cordebuggctype-enumeration.md) , указывающий, работает ли сборщик мусора на рабочей станции или сервере.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Экземпляр `COR_HEAPINFO` структуры возвращается путем вызова метода [метод ICorDebugProcess5:: GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) .  
   
@@ -61,9 +62,9 @@ typedef struct _COR_HEAPINFO {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

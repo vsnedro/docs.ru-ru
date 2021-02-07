@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget:: Request'
 title: Метод ICLRDataTarget::Request
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4723bd1c-eddb-4ed2-897a-010024a47e01
 topic_type:
 - apiref
-ms.openlocfilehash: 4d0cf22b4b0644d6b25d6b3ef884718cb9ca1e42
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 75c400a51a2fdaf0044d85b5f483d783fae4628b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712172"
 ---
 # <a name="iclrdatatargetrequest-method"></a>Метод ICLRDataTarget::Request
 
@@ -57,7 +58,7 @@ HRESULT Request (
  `outBuffer`  
  заполняет Буфер, содержащий ответ.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `Request`Метод упрощает добавление неуказанных пользовательских операций. Это значит, что этот метод обеспечивает расширяемость без необходимости пересмотра определения интерфейса.  
   
@@ -71,8 +72,8 @@ HRESULT Request (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)

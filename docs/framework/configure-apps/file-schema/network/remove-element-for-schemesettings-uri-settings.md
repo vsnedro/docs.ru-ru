@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <remove> Element для schemeSettings (Параметры URI)'
 title: Элемент <remove> для schemeSettings (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-ms.openlocfilehash: 018a08693a39bb297bdaa468ba59d4bf097f6922
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 125a347cfcbb1393ea70032b7e1b198a1a5a4ed0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713030"
 ---
 # <a name="remove-element-for-schemesettings-uri-settings"></a>Элемент \<remove> для schemeSettings (параметры URI)
 
@@ -80,7 +81,7 @@ ms.locfileid: "91151393"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_SEGMENT'
 title: Структура COR_SEGMENT
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084
 topic_type:
 - apiref
-ms.openlocfilehash: 738e29fa15340c76b055b608140f3c3bfbd29611
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9bbc452b2c2036d019175ac1be8b9917ffa07b6a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712198"
 ---
 # <a name="cor_segment-structure"></a>Структура COR_SEGMENT
 
@@ -45,7 +46,7 @@ typedef struct _COR_SEGMENT {
 |`gen`|Элемент перечисления [CorDebugGenerationTypes](cordebuggenerationtypes-enumeration.md), который указывает на создание области памяти.|  
 |`heap`|Номер кучи, в которой находится область памяти. Дополнительные сведения см. в разделе "Примечания".|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Структура `COR_SEGMENTS` представляет область памяти в управляемой куче.  Объекты `COR_SEGMENTS` являются членами объекта коллекции [ICorDebugHeapRegionEnum](icordebugheapsegmentenum-interface.md), которая заполняется путем вызова метода [ICorDebugProcess5::EnumerateHeapRegions](icordebugprocess5-enumerateheapregions-method.md).  
   
@@ -59,9 +60,9 @@ typedef struct _COR_SEGMENT {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

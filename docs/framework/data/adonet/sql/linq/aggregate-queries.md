@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: статистические запросы'
 title: Статистические запросы
 ms.date: 03/30/2017
 ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
-ms.openlocfilehash: 8dfe24a84c707b6d21afb7ccfc57ac7b0423942f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2b9b71440c804740e2f04d5b2dc8c2cd111634b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712835"
 ---
 # <a name="aggregate-queries"></a>Статистические запросы
 
@@ -25,7 +26,7 @@ ms.locfileid: "91161546"
   
  В следующих разделах используются примеры из учебной базы данных Northwind. Дополнительные сведения см. в статье [Загрузка образцов баз данных](downloading-sample-databases.md).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Возврат среднего значения из числовой последовательности](return-the-average-value-from-a-numeric-sequence.md)  
  Демонстрируется использование оператора <xref:System.Linq.Enumerable.Average%2A>.  
