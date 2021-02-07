@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugEval:: with Result'
 title: Метод ICorDebugEval::GetResult
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
 topic_type:
 - apiref
-ms.openlocfilehash: 86c017f581c7b980b8b0cb8bd7bdc1b0aa439afe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 03ab00f5c9a538e11a2046da9cbfd5ad7225231c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705830"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694244"
 ---
 # <a name="icordebugevalgetresult-method"></a>Метод ICorDebugEval::GetResult
 
@@ -39,7 +40,7 @@ HRESULT GetResult (
  `ppResult`  
  заполняет Указатель на адрес объекта ICorDebugValue, который представляет результаты этой оценки, если вычисление завершается нормально.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetResult`Метод действителен только после завершения оценки.  
   
@@ -53,4 +54,4 @@ HRESULT GetResult (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

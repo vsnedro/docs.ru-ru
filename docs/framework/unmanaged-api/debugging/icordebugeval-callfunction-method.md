@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugEval:: CallFunction'
 title: Метод ICorDebugEval::CallFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 7f470c5c-e1c0-4d8d-aad8-830f113ae751
 topic_type:
 - apiref
-ms.openlocfilehash: 1cf0080945ad78565fae3fedb454ceba7825cb4a
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: c0978ab3bdffc83e3eb5e3a6553e7f374ab6d5da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976243"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694192"
 ---
 # <a name="icordebugevalcallfunction-method"></a>Метод ICorDebugEval::CallFunction
 
 Настраивает вызов указанной функции.
 
-Этот метод является устаревшим в .NET Framework версии 2,0. Вместо этого используйте [ICorDebugEval2:: каллпараметеризедфунктион](icordebugeval2-callparameterizedfunction-method.md) .
+Этот метод является устаревшим в платформа .NET Framework версии 2,0. Вместо этого используйте [ICorDebugEval2:: каллпараметеризедфунктион](icordebugeval2-callparameterizedfunction-method.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,7 +52,7 @@ HRESULT CallFunction (
 
 ## <a name="remarks"></a>Remarks
 
-Если функция является виртуальной, `CallFunction` выполняет виртуальную диспетчеризацию. Если функция находится в другом домене приложения, произойдет переход, если все аргументы также находятся в этом домене приложения.
+Если функция является виртуальной, выполняет `CallFunction` виртуальную диспетчеризацию. Если функция находится в другом домене приложения, произойдет переход, если все аргументы также находятся в этом домене приложения.
 
 ## <a name="requirements"></a>Требования
 
@@ -61,8 +62,8 @@ HRESULT CallFunction (
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:** 1,1, 1,0
+**Платформа .NET Framework версии:** 1,1, 1,0
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md)

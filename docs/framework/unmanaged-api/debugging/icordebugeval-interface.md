@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugEval'
 title: Интерфейс ICorDebugEval
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
 topic_type:
 - apiref
-ms.openlocfilehash: 5d8fd79b242f2b88b82c5c3d78dfe45d80f1194f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6eda0f63b377399cad391346dc6bedfa860e4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694114"
 ---
 # <a name="icordebugeval-interface"></a>Интерфейс ICorDebugEval
 
@@ -30,17 +31,17 @@ ms.locfileid: "95729789"
 |Метод|Описание|  
 |------------|-----------------|  
 |[Метод Abort](icordebugeval-abort-method.md)|Прерывает вычисление, которое данный `ICorDebugEval` объект выполняет в данный момент.|  
-|[Метод CallFunction](icordebugeval-callfunction-method.md)|Настраивает вызов указанной функции. (Является устаревшим в .NET Framework версии 2,0; вместо этого используйте [ICorDebugEval2:: каллпараметеризедфунктион](icordebugeval2-callparameterizedfunction-method.md) .)|  
-|[Метод CreateValue](icordebugeval-createvalue-method.md)|Получает указатель интерфейса на объект "ICorDebugValue" указанного типа с начальным нулевым значением или значением NULL. (Является устаревшим в .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: креатевалуефортипе](icordebugeval2-createvaluefortype-method.md) .)|  
+|[Метод CallFunction](icordebugeval-callfunction-method.md)|Настраивает вызов указанной функции. (Является устаревшим в платформа .NET Framework версии 2,0; вместо этого используйте [ICorDebugEval2:: каллпараметеризедфунктион](icordebugeval2-callparameterizedfunction-method.md) .)|  
+|[Метод CreateValue](icordebugeval-createvalue-method.md)|Получает указатель интерфейса на объект "ICorDebugValue" указанного типа с начальным нулевым значением или значением NULL. (Является устаревшим в платформа .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: креатевалуефортипе](icordebugeval2-createvaluefortype-method.md) .)|  
 |[Метод GetResult](icordebugeval-getresult-method.md)|Возвращает указатель интерфейса на объект `ICorDebugValue` , содержащий результаты вычисления.|  
 |[Метод GetThread](icordebugeval-getthread-method.md)|Возвращает указатель интерфейса для "ICorDebugThread", в котором выполняется эта оценка или выполняется.|  
 |[Метод IsActive](icordebugeval-isactive-method.md)|Возвращает значение, указывающее, выполняется ли `ICorDebugEval` в данный момент объект.|  
-|[Метод NewArray](icordebugeval-newarray-method.md)|Выделяет новый массив указанного типа элемента и измерений. (Является устаревшим в .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) .)|  
-|[Метод NewObject](icordebugeval-newobject-method.md)|Выделяет новый экземпляр объекта и вызывает указанный метод конструктора. (Является устаревшим в .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: невпараметеризедобжект](icordebugeval2-newparameterizedobject-method.md) .)|  
-|[Метод NewObjectNoConstructor](icordebugeval-newobjectnoconstructor-method.md)|Выделяет новый экземпляр объекта указанного типа без попытки вызова метода конструктора. (Является устаревшим в .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: невпараметеризедобжектноконструктор](icordebugeval2-newparameterizedobjectnoconstructor-method.md) .)|  
+|[Метод NewArray](icordebugeval-newarray-method.md)|Выделяет новый массив указанного типа элемента и измерений. (Является устаревшим в платформа .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) .)|  
+|[Метод NewObject](icordebugeval-newobject-method.md)|Выделяет новый экземпляр объекта и вызывает указанный метод конструктора. (Является устаревшим в платформа .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: невпараметеризедобжект](icordebugeval2-newparameterizedobject-method.md) .)|  
+|[Метод NewObjectNoConstructor](icordebugeval-newobjectnoconstructor-method.md)|Выделяет новый экземпляр объекта указанного типа без попытки вызова метода конструктора. (Является устаревшим в платформа .NET Framework 2,0; используйте вместо него [ICorDebugEval2:: невпараметеризедобжектноконструктор](icordebugeval2-newparameterizedobjectnoconstructor-method.md) .)|  
 |[Метод NewString](icordebugeval-newstring-method.md)|Выделяет новый строковый объект с указанным содержимым.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugEval`Объект создается в контексте конкретного потока, используемого для выполнения оценок. Все объекты и типы, используемые в данной оценке, должны находиться в одном домене приложения. Этот домен приложения не должен совпадать с именем текущего домена приложения потока. Вычисления могут быть вложенными.  
   
@@ -61,8 +62,8 @@ ms.locfileid: "95729789"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugEval2:: Креатевалуефортипе'
 title: Метод ICorDebugEval2::CreateValueForType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea38ae20-7e0a-427a-be77-d78fae719d82
 topic_type:
 - apiref
-ms.openlocfilehash: 0b17bd729733665fbc4645aecd2e588b7eba14bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2a8cd129d6194a4870817eb64b79606c395cb055
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729698"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693919"
 ---
 # <a name="icordebugeval2createvaluefortype-method"></a>Метод ICorDebugEval2::CreateValueForType
 
@@ -43,7 +44,7 @@ HRESULT CreateValueForType (
  `ppValue`  
  заполняет Указатель на адрес `ICorDebugValue` объекта, представляющий значение.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CreateValueForType` обобщает [ICorDebugEval:: креатевалуе](icordebugeval-createvalue-method.md) , позволяя указать произвольный тип объекта, включая сконструированные типы, такие как `List<int>` . Единственная цель этого метода — создать значение, которое может быть передано в вычисление функции.  
   
@@ -57,4 +58,4 @@ HRESULT CreateValueForType (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

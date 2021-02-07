@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugEval2:: NewParameterizedArray'
 title: Метод ICorDebugEval2::NewParameterizedArray
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type:
 - apiref
-ms.openlocfilehash: 14274932461fa7a5278c9a09b421f50be098cb91
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce8582328013ad02357361f05efb55ade8780e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693750"
 ---
 # <a name="icordebugeval2newparameterizedarray-method"></a>Метод ICorDebugEval2::NewParameterizedArray
 
@@ -43,7 +44,7 @@ HRESULT NewParameterizedArray(
  окне Указатель на объект ICorDebugType, представляющий тип элемента, хранящегося в массиве.  
   
  `rank`  
- окне Число измерений массива. В .NET Framework версии 2,0 это значение должно быть равно 1.  
+ окне Число измерений массива. В платформа .NET Framework версии 2,0 это значение должно быть равно 1.  
   
  `dims`  
  окне Размер каждого измерения массива в байтах.  
@@ -51,9 +52,9 @@ HRESULT NewParameterizedArray(
  `lowBounds`  
  [в] Необязательно. Нижняя граница каждого измерения массива. Если это значение пропущено, для каждого измерения предполагается Нижняя граница, равная нулю.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Элементы массива могут быть экземплярами универсального типа. Массив всегда создается в домене приложения, в котором в данный момент выполняется поток. В .NET Framework 2,0 значение `rank` должно быть равно 1.  
+ Элементы массива могут быть экземплярами универсального типа. Массив всегда создается в домене приложения, в котором в данный момент выполняется поток. В платформа .NET Framework 2,0 значение `rank` должно быть равно 1.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -63,4 +64,4 @@ HRESULT NewParameterizedArray(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
