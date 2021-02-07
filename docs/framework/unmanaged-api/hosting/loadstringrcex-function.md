@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Лоадстрингрцекс
 title: Функция LoadStringRCEx
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type:
 - apiref
-ms.openlocfilehash: 1aa5c9f5dd7dd63e69c2eed1f6dd8ad6f007f01f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d3fe4b97014e5093dd8d209a5e27bac4ed7b879f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679924"
 ---
 # <a name="loadstringrcex-function"></a>Функция LoadStringRCEx
 
 Преобразует значение HRESULT в соответствующее сообщение об ошибке для указанного языка и региональных параметров.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -69,7 +70,7 @@ HRESULT LoadStringRCEx (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|`szBuffer` имеет значение null или `iMax` равно нулю (0).|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если метод не завершается успешно, `szBuffer` содержит пустую строку.  
   
@@ -81,9 +82,9 @@ HRESULT LoadStringRCEx (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
 - [Функция LoadStringRC](loadstringrc-function.md)

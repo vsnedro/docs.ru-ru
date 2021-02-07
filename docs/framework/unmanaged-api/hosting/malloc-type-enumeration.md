@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление MALLOC_TYPE'
 title: MALLOC_TYPE - перечисление
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c02476f9-23a2-4af7-9282-aa9c42c7429b
 topic_type:
 - apiref
-ms.openlocfilehash: fe58a519d0feac0da49e7778247da1ef538f8b83
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47eb58107d79309c34af5f0acdf614804d1f208f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679807"
 ---
 # <a name="malloc_type-enumeration"></a>MALLOC_TYPE - перечисление
 
@@ -49,8 +50,8 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Локкклрверсион
 title: Функция LockClrVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 1318ee37-c43b-40eb-bbe8-88fc46453d74
 topic_type:
 - apiref
-ms.openlocfilehash: 2ff08ec8f194ccc9e968b3a7ee017afe788f4b03
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 268c08cdd24a826ba92cc8865dfd036f544febcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679929"
 ---
 # <a name="lockclrversion-function"></a>Функция LockClrVersion
 
 Позволяет узлу определить, какая версия среды CLR будет использоваться в процессе перед явной инициализацией среды CLR.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,7 +59,7 @@ HRESULT LockClrVersion (
 |S_OK|Метод завершился успешно.|  
 |E_INVALIDARG|Один или несколько аргументов имеют значение null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел вызывает `LockClrVersion` перед инициализацией среды CLR. `LockClrVersion` принимает три параметра, все из которых являются обратными вызовами типа [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). Этот тип определяется следующим образом.  
   
@@ -94,8 +95,8 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

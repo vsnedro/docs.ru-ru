@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Лоадлибраришим
 title: Функция LoadLibraryShim
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type:
 - apiref
-ms.openlocfilehash: d5e9ba0023b6516eb6190f32bc65b2b8b6af79f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 829d64b5215fc21b2d8c8b753f5ad99212267b6a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727566"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680009"
 ---
 # <a name="loadlibraryshim-function"></a>Функция LoadLibraryShim
 
-Загружает указанную версию библиотеки DLL, которая входит в состав распространяемого пакета .NET Framework.  
+Загружает указанную версию библиотеки DLL, которая входит в состав распространяемого пакета платформа .NET Framework.  
   
- Эта функция является устаревшей в .NET Framework 4. Используйте вместо этого метод [ICLRRuntimeInfo:: LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) .  
+ Эта функция является устаревшей в платформа .NET Framework 4. Используйте вместо этого метод [ICLRRuntimeInfo:: LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,10 +43,10 @@ HRESULT LoadLibraryShim (
 ## <a name="parameters"></a>Параметры  
 
  `szDllName`  
- окне Строка, завершающаяся нулем, которая представляет имя библиотеки DLL, загружаемой из библиотеки .NET Framework.  
+ окне Строка, завершающаяся нулем, которая представляет имя библиотеки DLL, загружаемой из библиотеки платформа .NET Framework.  
   
  `szVersion`  
- окне Строка, заканчивающаяся нулем и представляющая версию загружаемой библиотеки DLL. Если `szVersion` параметр имеет значение null, версия, выбранная для загрузки, является последней версией указанной библиотеки DLL, которая меньше версии 4. То есть все версии, равные или больше версии 4, игнорируются `szVersion` , если имеет значение null, и если не установлена версия, отличная от версии 4, то не удается загрузить библиотеку DLL. Это необходимо для того, чтобы установка .NET Framework 4 не влияла на существующие приложения или компоненты. См. запись [In-Proc SxS и Migration быстрое начало](https://devblogs.microsoft.com/dotnet/in-proc-sxs-and-migration-quick-start/) в блоге команды разработчиков CLR.  
+ окне Строка, заканчивающаяся нулем и представляющая версию загружаемой библиотеки DLL. Если `szVersion` параметр имеет значение null, версия, выбранная для загрузки, является последней версией указанной библиотеки DLL, которая меньше версии 4. То есть все версии, равные или больше версии 4, игнорируются `szVersion` , если имеет значение null, и если не установлена версия, отличная от версии 4, то не удается загрузить библиотеку DLL. Это необходимо для того, чтобы установка платформа .NET Framework 4 не влияла на существующие приложения или компоненты. См. запись [In-Proc SxS и Migration быстрое начало](https://devblogs.microsoft.com/dotnet/in-proc-sxs-and-migration-quick-start/) в блоге команды разработчиков CLR.  
   
  `pvReserved`  
  Зарезервировано для будущего использования.  
@@ -62,12 +63,12 @@ HRESULT LoadLibraryShim (
 |S_OK|Метод завершился успешно.|  
 |CLR_E_SHIM_RUNTIMELOAD|`szDllName`Для загрузки требуется загрузка среды CLR, и необходимая версия CLR не может быть загружена.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Эта функция используется для загрузки библиотек DLL, включенных в распространяемый пакет .NET Framework. Он не загружает создаваемые пользователем библиотеки DLL.  
+ Эта функция используется для загрузки библиотек DLL, включенных в распространяемый пакет платформа .NET Framework. Он не загружает создаваемые пользователем библиотеки DLL.  
   
 > [!NOTE]
-> Начиная с версии .NET Framework 2,0, Загрузка Fusion.dll приводит к загрузке среды CLR. Это обусловлено тем, что функции в Fusion.dll теперь являются оболочками, реализации которых предоставляются средой выполнения.  
+> Начиная с версии платформа .NET Framework 2,0, Загрузка Fusion.dll приводит к загрузке среды CLR. Это обусловлено тем, что функции в Fusion.dll теперь являются оболочками, реализации которых предоставляются средой выполнения.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -75,8 +76,8 @@ HRESULT LoadLibraryShim (
   
  **Заголовок:** MSCorEE. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

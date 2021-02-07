@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: указатель функции LPOVERLAPPED_COMPLETION_ROUTINE'
 title: Указатель функции LPOVERLAPPED_COMPLETION_ROUTINE
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type:
 - apiref
-ms.openlocfilehash: a3a45a13073cf422064d28554a274e068db6f517
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6645e6a9746404a4ae355a22cf16e6d164c63bed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679840"
 ---
 # <a name="lpoverlapped_completion_routine-function-pointer"></a>Указатель функции LPOVERLAPPED_COMPLETION_ROUTINE
 
 Указывает на функцию, которая уведомляет узел при завершении перекрытия (асинхронного) ввода-вывода на устройство.  
   
- Этот указатель функции является устаревшим в .NET Framework 4.  
+ Этот указатель функции является устаревшим в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -50,7 +51,7 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
  `lpOverlapped`  
  окне Указатель на структуру, содержащую сведения, используемые для завершения запроса ввода-вывода.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Функция, к которой `LPOVERLAPPED_COMPLETION_ROUTINE` points является функцией обратного вызова и должна быть реализована модулем записи размещающего приложения. Функция обратного вызова позволяет узлу обработать завершенный запрос ввода-вывода.  
   
@@ -62,8 +63,8 @@ typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (
   
  **Библиотека:** MSCorWks.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

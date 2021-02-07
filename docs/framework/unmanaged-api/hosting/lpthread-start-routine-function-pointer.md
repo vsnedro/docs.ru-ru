@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: указатель функции LPTHREAD_START_ROUTINE'
 title: Указатель функции LPTHREAD_START_ROUTINE
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 7b9b93b0-fe92-42ba-8693-701168a29dde
 topic_type:
 - apiref
-ms.openlocfilehash: c86b65e136869603f93253678108b2ffa9d388e1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f79cffb0b5290031915b453353dd47cb3959970
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679814"
 ---
 # <a name="lpthread_start_routine-function-pointer"></a>Указатель функции LPTHREAD_START_ROUTINE
 
 Указывает на функцию, которая уведомляет узел о начале выполнения потока.  
   
- Этот указатель функции является устаревшим в .NET Framework 4.  
+ Этот указатель функции является устаревшим в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -40,7 +41,7 @@ typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (
  `lpThreadParameter`  
  окне Указатель на код, который начал выполнять.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Функция, к которой `LPTHREAD_START_ROUTINE` points является функцией обратного вызова и должна быть реализована модулем записи размещающего приложения.  
   
@@ -52,8 +53,8 @@ typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (
   
  **Библиотека:** MSCorWks.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)
