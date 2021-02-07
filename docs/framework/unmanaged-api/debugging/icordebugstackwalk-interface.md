@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугстакквалк'
 title: Интерфейс ICorDebugStackWalk
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 16d695e8-975d-431b-8421-e9e6c3e3f476
 topic_type:
 - apiref
-ms.openlocfilehash: b37a89c0a86df49c894dc43676f8feafb80f5c95
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27dcdfc90829a3a28d81ad28dce0cd4d1d674948
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738095"
 ---
 # <a name="icordebugstackwalk-interface"></a>Интерфейс ICorDebugStackWalk
 
@@ -31,10 +32,10 @@ ms.locfileid: "95687519"
 |------------|-----------------|  
 |[Метод GetContext](icordebugstackwalk-getcontext-method.md)|Возвращает контекст для текущего кадра в `ICorDebugStackWalk` объекте.|  
 |[Метод SetContext](icordebugstackwalk-setcontext-method.md)|Задает `ICorDebugStackWalk` для текущего контекста объекта допустимый контекст для потока.|  
-|[Метод Next](icordebugstackwalk-next-method.md)|Перемещает `ICorDebugStackWalk` объект на следующий кадр.|  
+|[Следующий метод](icordebugstackwalk-next-method.md)|Перемещает `ICorDebugStackWalk` объект на следующий кадр.|  
 |[Метод GetFrame](icordebugstackwalk-getframe-method.md)|Возвращает текущий кадр в `ICorDebugStackWalk` объекте.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -47,9 +48,9 @@ ms.locfileid: "95687519"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo10:: Енумератеобжектреференцес'
 title: 'ICorProfilerInfo10:: Енумератеобжектреференцес'
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: a276ecfe65ed9752f39ed68a36e8e17a24255508
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 3e31192426ea38e177b636bcc6a4b6e54057801f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558320"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737328"
 ---
 # <a name="icorprofilerinfo10enumerateobjectreferences-method"></a>Метод ICorProfilerInfo10:: Енумератеобжектреференцес
 
@@ -44,7 +45,7 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
 
   \[in] данные, предоставленные профилировщиком, передаются в `callback` функцию.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 `EnumerateObjectReferences`Метод аналогичен [ObjectReferences](icorprofilercallback-objectreferences-method.md), за исключением того, что он просматривает ссылки по запросу для профилировщика вместо предварительного выделения массива для хранения ссылок.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: BeginInprocDebugging'
 title: Метод ICorProfilerInfo::BeginInprocDebugging
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
 topic_type:
 - apiref
-ms.openlocfilehash: 3f56c3faa10eb05896936a37b0094797b0b6e2b9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 151aa3604d61e4c5d9e7e24fe9f17bf754d72233
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95669176"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737406"
 ---
 # <a name="icorprofilerinfobegininprocdebugging-method"></a>Метод ICorProfilerInfo::BeginInprocDebugging
 
-Инициализирует поддержку внутрипроцессного отладки. Этот метод является устаревшим в .NET Framework версии 2,0.  
+Инициализирует поддержку внутрипроцессного отладки. Этот метод является устаревшим в платформа .NET Framework версии 2,0.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,9 +43,9 @@ HRESULT BeginInprocDebugging(
  `pdwProfilerContext`  
  заполняет Указатель на возвращаемое значение, идентифицирующее сеанс отладки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Службы отладки CLR поддерживали ограниченную внутрипроцессную отладку в .NET Framework версиях 1,0 и 1,1. В процессе отладки с помощью профилировщика можно использовать части проверки для API отладки. Однако из-за отзывов клиентов внутрипроцессный процесс отладки был удален из .NET Framework в версии 2,0 и заменен набором функциональных возможностей, которые более подробно описаны в API профилирования.  
+ Службы отладки CLR поддерживали ограниченную внутрипроцессную отладку в платформа .NET Framework версиях 1,0 и 1,1. В процессе отладки с помощью профилировщика можно использовать части проверки для API отладки. Однако из-за отзывов клиентов внутрипроцессный процесс отладки был удален из платформа .NET Framework в версии 2,0 и заменен набором функциональных возможностей, которые более подробно описаны в API профилирования.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -54,8 +55,8 @@ HRESULT BeginInprocDebugging(
   
  **Библиотека:** CorGuids.lib  
   
- **Версия .NET Framework:** 1,0  
+ **Версия платформа .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

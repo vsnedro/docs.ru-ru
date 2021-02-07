@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ICorProfilerInfo Interface'
 title: Интерфейс ICorProfilerInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: a029784a28036e531670ad373893b4256c5864c4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d1da0f41a7c7358b7f71c8d931fff723b3144cdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737393"
 ---
 # <a name="icorprofilerinfo-interface"></a>Интерфейс ICorProfilerInfo
 
@@ -32,26 +33,26 @@ ms.locfileid: "95671191"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод BeginInprocDebugging](icorprofilerinfo-begininprocdebugging-method.md)|Инициализирует поддержку внутрипроцессного отладки. Этот метод является устаревшим в .NET Framework версии 2,0.|  
-|[Метод EndInprocDebugging](icorprofilerinfo-endinprocdebugging-method.md)|Завершает работу внутрипроцессного сеанса отладки. Этот метод является устаревшим в .NET Framework версии 2,0.|  
+|[Метод BeginInprocDebugging](icorprofilerinfo-begininprocdebugging-method.md)|Инициализирует поддержку внутрипроцессного отладки. Этот метод является устаревшим в платформа .NET Framework версии 2,0.|  
+|[Метод EndInprocDebugging](icorprofilerinfo-endinprocdebugging-method.md)|Завершает работу внутрипроцессного сеанса отладки. Этот метод является устаревшим в платформа .NET Framework версии 2,0.|  
 |[Метод ForceGC](icorprofilerinfo-forcegc-method.md)|Принудительное выполнение сборки мусора в среде выполнения.|  
 |[Метод GetAppDomainInfo](icorprofilerinfo-getappdomaininfo-method.md)|Возвращает сведения об указанном домене приложения.|  
 |[Метод GetAssemblyInfo](icorprofilerinfo-getassemblyinfo-method.md)|Возвращает сведения о указанной сборке.|  
 |[Метод GetClassFromObject](icorprofilerinfo-getclassfromobject-method.md)|Возвращает объект `ClassID`<br /><br /> Объект, учитывая его свойство `ObjectID` .|  
-|[Метод GetClassFromToken](icorprofilerinfo-getclassfromtoken-method.md)|Возвращает идентификатор класса по заданному маркеру метаданных. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) .|  
+|[Метод GetClassFromToken](icorprofilerinfo-getclassfromtoken-method.md)|Возвращает идентификатор класса по заданному маркеру метаданных. Этот метод является устаревшим в платформа .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) .|  
 |[Метод GetClassIDInfo](icorprofilerinfo-getclassidinfo-method.md)|Возвращает родительский модуль и маркер метаданных для указанного класса.|  
 |[Метод GetCodeInfo](icorprofilerinfo-getcodeinfo-method.md)|Получает экстент машинного кода, связанного с указанным идентификатором функции. Этот метод устарел. Используйте вместо этого метод [ICorProfilerInfo2:: GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md) .|  
 |[Метод GetCurrentThreadID](icorprofilerinfo-getcurrentthreadid-method.md)|Возвращает идентификатор текущего потока, если он является управляемым потоком.|  
 |[Метод GetEventMask](icorprofilerinfo-geteventmask-method.md)|Возвращает текущие категории событий, для которых профилировщик хочет получать уведомления о событиях из среды CLR.|  
 |[Метод GetFunctionFromIP](icorprofilerinfo-getfunctionfromip-method.md)|Сопоставляет указатель инструкции управляемого кода с `FunctionID` .|  
-|[Метод GetFunctionFromToken](icorprofilerinfo-getfunctionfromtoken-method.md)|Возвращает идентификатор функции. Этот метод является устаревшим в .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .|  
+|[Метод GetFunctionFromToken](icorprofilerinfo-getfunctionfromtoken-method.md)|Возвращает идентификатор функции. Этот метод является устаревшим в платформа .NET Framework версии 2,0. Используйте вместо этого метод [ICorProfilerInfo2:: жетфунктионфромтокенандтипеаргс](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) .|  
 |[Метод GetFunctionInfo](icorprofilerinfo-getfunctioninfo-method.md)|Возвращает родительский класс и токен метаданных для указанной функции.|  
 |[Метод GetHandleFromThread](icorprofilerinfo-gethandlefromthread-method.md)|Сопоставляет идентификатор потока с обработчиком потока Win32.|  
 |[Метод GetILFunctionBody](icorprofilerinfo-getilfunctionbody-method.md)|Возвращает указатель на тело метода в коде на языке MSIL, начиная с его заголовка.|  
 |[Метод GetILFunctionBodyAllocator](icorprofilerinfo-getilfunctionbodyallocator-method.md)|Возвращает интерфейс, предоставляющий метод для выделения памяти, используемой для перекачки тела метода в коде MSIL.|  
 |[Метод GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md)|Возвращает карту из смещений MSIL в машинные смещения для кода, содержащегося в указанной функции.|  
-|[Метод GetInprocInspectionInterface](icorprofilerinfo-getinprocinspectioninterface-method.md)|Возвращает объект, к которому можно выполнить запрос для интерфейса ICorDebugProcess. Этот метод является устаревшим в .NET Framework версии 2,0.|  
-|[Метод GetInprocInspectionIThisThread](icorprofilerinfo-getinprocinspectionithisthread-method.md)|Возвращает объект, для которого можно запросить интерфейс ICorDebugThread. Этот метод является устаревшим в .NET Framework версии 2,0.|  
+|[Метод GetInprocInspectionInterface](icorprofilerinfo-getinprocinspectioninterface-method.md)|Возвращает объект, к которому можно выполнить запрос для интерфейса ICorDebugProcess. Этот метод является устаревшим в платформа .NET Framework версии 2,0.|  
+|[Метод GetInprocInspectionIThisThread](icorprofilerinfo-getinprocinspectionithisthread-method.md)|Возвращает объект, для которого можно запросить интерфейс ICorDebugThread. Этот метод является устаревшим в платформа .NET Framework версии 2,0.|  
 |[Метод GetModuleInfo](icorprofilerinfo-getmoduleinfo-method.md)|Возвращает имя файла модуля и идентификатор его родительской сборки для указанного идентификатора модуля.|  
 |[Метод GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md)|Возвращает экземпляр интерфейса метаданных, сопоставляемый с указанным модулем.|  
 |[Метод GetObjectSize](icorprofilerinfo-getobjectsize-method.md)|Возвращает размер указанного объекта.|  
@@ -66,7 +67,7 @@ ms.locfileid: "95671191"
 |[Метод SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md)|Заменяет тело указанной функции в указанном модуле.|  
 |[Метод SetILInstrumentedCodeMap](icorprofilerinfo-setilinstrumentedcodemap-method.md)|Указывает, каким способом смещений исходной схемы MSIL указанной функции к новым смещениям MSIL-кода, измененного профилировщиком функции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Профилировщик вызывает метод в `ICorProfilerInfo` интерфейсе, чтобы взаимодействовать со средой CLR для управления мониторингом событий и сведениями о запросах.  
   
@@ -82,9 +83,9 @@ ms.locfileid: "95671191"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo2](icorprofilerinfo2-interface.md)

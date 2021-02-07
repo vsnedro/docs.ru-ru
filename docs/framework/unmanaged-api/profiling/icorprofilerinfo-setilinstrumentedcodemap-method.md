@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: Сетилинструментедкодемап'
 title: Метод ICorProfilerInfo::SetILInstrumentedCodeMap
 ms.date: 03/30/2017
 api_name:
@@ -15,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
 topic_type:
 - apiref
-ms.openlocfilehash: cac8e9570dab55af6b6e1fcf6f53b6a697727972
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0cf3b4ccf31076c2d1ea2df581003e3a07f0e795
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737354"
 ---
 # <a name="icorprofilerinfosetilinstrumentedcodemap-method"></a>Метод ICorProfilerInfo::SetILInstrumentedCodeMap
 
 Задает карту кода для указанной функции, используя указанные записи о сопоставлении языка MSIL.
 
 > [!NOTE]
-> В .NET Framework версии 2,0 вызов `SetILInstrumentedCodeMap` для `FunctionID` , представляющий универсальную функцию в конкретном домене приложения, повлияет на все экземпляры этой функции в домене приложения.
+> В платформа .NET Framework версии 2,0 вызов `SetILInstrumentedCodeMap` для `FunctionID` , представляющий универсальную функцию в конкретном домене приложения, повлияет на все экземпляры этой функции в домене приложения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -53,9 +54,9 @@ HRESULT SetILInstrumentedCodeMap(
 `rgILMapEntries`\
 окне Массив структур COR_IL_MAP, каждый из которых задает смещение MSIL.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Профилировщик часто вставляет инструкции в исходном коде метода, чтобы инструментировать этот метод (например, уведомлять о достижении данной строки исходного кода). `SetILInstrumentedCodeMap`позволяет профилировщику сопоставлять исходные инструкции MSIL с их новыми расположениями. Профилировщик может использовать метод [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) , чтобы получить исходное смещение MSIL для заданного смещения в машинном коде.
+Профилировщик часто вставляет инструкции в исходном коде метода, чтобы инструментировать этот метод (например, уведомлять о достижении данной строки исходного кода). `SetILInstrumentedCodeMap` позволяет профилировщику сопоставлять исходные инструкции MSIL с их новыми расположениями. Профилировщик может использовать метод [ICorProfilerInfo:: GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) , чтобы получить исходное смещение MSIL для заданного смещения в машинном коде.
 
 Отладчик предполагает, что каждое старое смещение ссылается на смещение MSIL в исходном, неизмененном коде MSIL и что каждое новое смещение ссылается на смещение MSIL в новом, инструментированном коде. Карту следует сортировать в порядке возрастания. Чтобы пошаговое выполнение работало правильно, следуйте приведенным ниже рекомендациям.
 
@@ -83,7 +84,7 @@ HRESULT SetILInstrumentedCodeMap(
 
   - Новое смещение, равное 20 или выше, будет сопоставлено старому смещению 9.
 
-В .NET Framework 3,5 и предыдущих версиях вы выделяете `rgILMapEntries` массив путем вызова метода [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) . Поскольку среда выполнения получает владение этой памятью, профилировщик не должен пытаться освободить его.
+В платформа .NET Framework 3,5 и предыдущих версиях вы выделяете `rgILMapEntries` массив путем вызова метода [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) . Поскольку среда выполнения получает владение этой памятью, профилировщик не должен пытаться освободить его.
 
 ## <a name="requirements"></a>Требования
 
@@ -93,7 +94,7 @@ HRESULT SetILInstrumentedCodeMap(
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

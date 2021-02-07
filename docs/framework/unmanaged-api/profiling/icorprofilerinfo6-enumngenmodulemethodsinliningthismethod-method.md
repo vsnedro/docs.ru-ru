@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerInfo6:: Енумнженмодулемесодсинлинингсисмесод'
 title: Метод ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod
 ms.date: 03/30/2017
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f
-ms.openlocfilehash: 8ed3f305deceacb976aeff994db1588f9e1ce1fb
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: bd43dcecabe9a75f7ce3a94996727b192574e321
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495532"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737172"
 ---
 # <a name="icorprofilerinfo6enumngenmodulemethodsinliningthismethod-method"></a>Метод ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod
 
@@ -31,18 +32,18 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
 окне Идентификатор модуля NGen.
 
 `inlineeModuleId`\
-окне Идентификатор модуля, который определяет `inlineeMethodId` . Дополнительные сведения см. в разделе «Примечания».
+окне Идентификатор модуля, который определяет `inlineeMethodId` . Дополнительные сведения см. в разделе "Примечания".
 
 `inlineeMethodId`\
-окне Идентификатор встроенного метода. Дополнительные сведения см. в разделе «Примечания».
+окне Идентификатор встроенного метода. Дополнительные сведения см. в разделе "Примечания".
 
 `incompleteData`\
-заполняет Флаг, указывающий, `ppEnum` содержит ли все методы выравнивание данного метода.  Дополнительные сведения см. в разделе «Примечания».
+заполняет Флаг, указывающий, `ppEnum` содержит ли все методы выравнивание данного метода.  Дополнительные сведения см. в разделе "Примечания".
 
 `ppEnum`\
 заполняет Указатель на адрес перечислителя
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 `inlineeModuleId``inlineeMethodId`вместе образуют полный идентификатор для метода, который может быть встроенным. Например, пусть модуль `A` определяет метод `Simple.Add` :
 
@@ -58,7 +59,7 @@ Fancy.AddTwice(int a, int b)
 { return Simple.Add(a,b) + Simple.Add(a,b); }
 ```
 
-Также можно предположить, что `Fancy.AddTwice` встроенный вызов `SimpleAdd` . Профилировщик может использовать этот перечислитель для поиска всех методов, определенных в модуле B, которые являются встроенными `Simple.Add` , и результат будет перечисляться `AddTwice` .  `inlineeModuleId`Идентификатор модуля `A` , а `inlineeMethodId` — идентификатор `Simple.Add(int a, int b)` .
+Также можно предположить, что `Fancy.AddTwice` встроенный вызов `SimpleAdd` . Профилировщик может использовать этот перечислитель для поиска всех методов, определенных в модуле B, которые являются встроенными `Simple.Add` , и результат будет перечисляться `AddTwice` .  `inlineeModuleId` Идентификатор модуля `A` , а `inlineeMethodId` — идентификатор `Simple.Add(int a, int b)` .
 
 Если `incompleteData` параметр имеет значение true после возвращения функции, перечислитель не содержит всех методов, выставляемых в данном методе. Это может произойти, если одна или несколько непосредственных или косвенных зависимостей модуля "вкладыши" еще не загружены. Если профилировщику требуются точные данные, необходимо повторить попытку позже, когда загрузится больше модулей, лучше при каждой загрузке модуля.
 
@@ -79,7 +80,7 @@ Simple.Add(int a, int b)
 
 **Библиотека:** CorGuids.lib
 
-**.NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 
