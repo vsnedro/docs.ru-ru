@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кустомдумпитем'
 title: Структура CustomDumpItem
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fd9085ff-7beb-4c38-97f0-037cd8ba4f65
 topic_type:
 - apiref
-ms.openlocfilehash: c77e93686c7d121e9fe2a92f03970404ab823dc0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9bd7b2bb59675bc01e24dc6e6d0ce524f3d35466
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673245"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716904"
 ---
 # <a name="customdumpitem-structure"></a>Структура CustomDumpItem
 
@@ -43,7 +44,7 @@ struct {
 |`itemKind`|Значение [екустомдумпитемкинд](ecustomdumpitemkind-enumeration.md) , указывающее тип добавляемого элемента.|  
 |`pReserved`|В настоящий момент не используется. Все элементы, добавляемые в объединение, не должны быть больше размера указателя. Если `struct` требуется, необходимо выделить его отдельно и указать на него.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  [Iclrerrorreportingmanagergetbucketparametersforcurrentexception:: BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) принимает параметр типа `CustomDumpItem` .  
   
@@ -55,8 +56,8 @@ struct {
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры размещения](hosting-structures.md)

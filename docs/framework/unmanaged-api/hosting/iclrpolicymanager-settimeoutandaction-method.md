@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRPolicyManager:: SetTimeoutAndAction'
 title: Метод ICLRPolicyManager::SetTimeoutAndAction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type:
 - apiref
-ms.openlocfilehash: 41e13e20a1cf5a7000907b1cc7d8d2af5174ceba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c91d43cce381bef804b30e9e1dcb50574ddcd1b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716579"
 ---
 # <a name="iclrpolicymanagersettimeoutandaction-method"></a>Метод ICLRPolicyManager::SetTimeoutAndAction
 
@@ -67,7 +68,7 @@ HRESULT SetTimeoutAndAction (
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_INVALIDARG|Не удается задать время ожидания для указанного `operation` или указано недопустимое значение для `action` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `SetTimeoutAndAction` Инкапсулирует возможности методов [ICLRPolicyManager:: setTimeout](iclrpolicymanager-settimeout-method.md) и [ICLRPolicyManager:: сетактиононтимеаут](iclrpolicymanager-setactionontimeout-method.md) , и их можно вызывать вместо последовательных вызовов этих двух методов.  
   
@@ -82,9 +83,9 @@ HRESULT SetTimeoutAndAction (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrOperation](eclroperation-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

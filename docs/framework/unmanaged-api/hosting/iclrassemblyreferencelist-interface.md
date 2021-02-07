@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRAssemblyReferenceList'
 title: Интерфейс ICLRAssemblyReferenceList
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636
 topic_type:
 - apiref
-ms.openlocfilehash: a75235cd0ac0e55412f0ba58881796e3ebc801f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f5ef4efd343ebc18c443482f4697a3d299c5aac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679244"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716827"
 ---
 # <a name="iclrassemblyreferencelist-interface"></a>Интерфейс ICLRAssemblyReferenceList
 
@@ -32,7 +33,7 @@ ms.locfileid: "95679244"
 |[Метод IsAssemblyReferenceInList](iclrassemblyreferencelist-isassemblyreferenceinlist-method.md)|Возвращает значение, указывающее, ссылается ли указанный указатель на сборку в списке.|  
 |[Метод IsStringAssemblyReferenceInList](iclrassemblyreferencelist-isstringassemblyreferenceinlist-method.md)|Возвращает значение, указывающее, совпадает ли заданное имя с именем сборки в списке.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызовите метод [ICLRAssemblyIdentityManager:: getclrassemblyreferencelist-](iclrassemblyidentitymanager-getclrassemblyreferencelist-method.md) , чтобы получить указатель на экземпляр `ICLRAssemblyReferenceList` .  
   
@@ -44,9 +45,9 @@ ms.locfileid: "95679244"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс IHostAssemblyStore](ihostassemblystore-interface.md)

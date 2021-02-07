@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugStepper:: Step'
 title: Метод ICorDebugStepper::Step
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 38c1940b-ada1-40ba-8295-4c0833744e1e
 topic_type:
 - apiref
-ms.openlocfilehash: 234705e4495a1a582f3801ad1e645f923cd6f4b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cb45575f7818784addf67eacda35442764e706af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717632"
 ---
 # <a name="icordebugstepperstep-method"></a>Метод ICorDebugStepper::Step
 
@@ -39,7 +40,7 @@ HRESULT Step (
  `bStepIn`  
  окне Задайте для значение, чтобы `true` выполнить шаг с заходом в функцию, которая вызывается в потоке. Задайте для значение `false` , чтобы выполнить шаг с обходом функции.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Шаг завершается, когда среда CLR выполняет следующую управляемую инструкцию в кадре этого средства. Если `Step` метод вызывается в пошаговом процессе, который не находится в управляемом коде, шаг будет выполнен, когда поток выполняет следующую инструкцию управляемого кода.  
   
@@ -51,4 +52,4 @@ HRESULT Step (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

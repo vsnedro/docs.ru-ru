@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Креатеицеефилежен
 title: Функция CreateICeeFileGen
 ms.date: 03/30/2017
 api_name:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
 topic_type:
 - apiref
-ms.openlocfilehash: 454cfa2dd1b676f32649050625b1074fbd776d54
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 10aefaad4dd1173e4ef55f727371bab508e2d40c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716936"
 ---
 # <a name="createiceefilegen-function"></a>Функция CreateICeeFileGen
 
 Создает объект [ицеефилежен](iceefilegen-class.md) .  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,7 +47,7 @@ HRESULT CreateICeeFileGen (
 
  Этот метод возвращает стандартные коды ошибок COM.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICeeFileGen`Объект используется для создания переносимых исполняемых (PE) файлов среды CLR.  
   
@@ -60,8 +61,8 @@ HRESULT CreateICeeFileGen (
   
  **Библиотека:** MSCorPE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

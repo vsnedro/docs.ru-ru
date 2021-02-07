@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugStringValue:: DATALENGTH'
 title: Метод ICorDebugStringValue::GetLength
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
 topic_type:
 - apiref
-ms.openlocfilehash: 74a4b42be09c577cc80f1a73e077694e5a4a8d5f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ae4d42b5b65e5f80e884415a5acfc7f894ffe11e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717385"
 ---
 # <a name="icordebugstringvaluegetlength-method"></a>Метод ICorDebugStringValue::GetLength
 
@@ -47,4 +48,4 @@ HRESULT GetLength (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

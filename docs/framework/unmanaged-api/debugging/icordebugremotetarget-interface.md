@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugRemoteTarget'
 title: Интерфейс ICorDebugRemoteTarget
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bd9936a6-cc24-4869-8761-0988664464e6
 topic_type:
 - apiref
-ms.openlocfilehash: 4212597b5ba43f0e4767aa585ca28a011e73e07a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6567ebb76c7a3c415c9978dc50941cb0b8985a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717879"
 ---
 # <a name="icordebugremotetarget-interface"></a>Интерфейс ICorDebugRemoteTarget
 
@@ -46,7 +47,7 @@ interface ICorDebugRemoteTarget  : IUnknown
 |------------|-----------------|  
 |[Метод ICorDebugRemoteTarget::GetHostName](icordebugremotetarget-gethostname-method.md)|Возвращает имя узла или IP-адрес удаленного компьютера.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Отладка в смешанном режиме (управляемый и машинный код) не поддерживается в Windows 95, Windows 98 или Windows ME, а также на платформах, отличных от x86 (например, IA-64 и AMD64).  
   
@@ -58,9 +59,9 @@ interface ICorDebugRemoteTarget  : IUnknown
   
  **Библиотека:** : коргуидс. lib  
   
- **.NET Framework версии:** 3,5 SP1  
+ **Платформа .NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

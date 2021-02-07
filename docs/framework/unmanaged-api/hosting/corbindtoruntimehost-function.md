@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Корбиндторунтимехост
 title: Функция CorBindToRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type:
 - apiref
-ms.openlocfilehash: 7ba35823ccb670ad0201d1950687dc83cc9ba64a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1921eece4c6fa7f1a8fc851f17ce8f9708bc49d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717164"
 ---
 # <a name="corbindtoruntimehost-function"></a>Функция CorBindToRuntimeHost
 
 Позволяет узлам загружать в процесс указанную версию среды CLR.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -47,7 +48,7 @@ HRESULT CorBindToRuntimeHost (
  `pwszVersion`  
  окне Строка, описывающая версию среды CLR, которую требуется загрузить.  
   
- Номер версии в .NET Framework состоит из четырех частей, разделенных точками: *основной. дополнительный. сборка. Редакция*. Строка, передаваемая как, `pwszVersion` должна начинаться с символа "v", за которым следуют первые три части номера версии (например, "v 1.0.1529").  
+ Номер версии в платформа .NET Framework состоит из четырех частей, разделенных точками: *основной. дополнительный. сборка. Редакция*. Строка, передаваемая как, `pwszVersion` должна начинаться с символа "v", за которым следуют первые три части номера версии (например, "v 1.0.1529").  
   
  Некоторые версии среды CLR устанавливаются с инструкцией политики, которая определяет совместимость с предыдущими версиями среды CLR. По умолчанию оболочка запуска выполняет проверку на `pwszVersion` соответствие инструкциям политики и загружает последнюю версию среды выполнения, совместимую с запрашиваемой версией. Узел может заставить оболочку пропускать вычисление политики и загружать точную версию, указанную в `pwszVersion` , передав значение STARTUP_LOADER_SAFEMODE для `startupFlags` параметра.  
   
@@ -87,9 +88,9 @@ HRESULT CorBindToRuntimeHost (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntime](corbindtoruntime-function.md)

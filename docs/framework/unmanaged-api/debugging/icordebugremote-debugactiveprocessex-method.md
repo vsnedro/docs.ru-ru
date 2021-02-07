@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugremote::D Ебугактивепроцессекс'
 title: Метод ICorDebugRemote::DebugActiveProcessEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type:
 - apiref
-ms.openlocfilehash: c9847fd6122aa32c95aecd5643a62a6775ae38d3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ccbde152e59146bd852a5a0a2f991d10333fa9d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712122"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717905"
 ---
 # <a name="icordebugremotedebugactiveprocessex-method"></a>Метод ICorDebugRemote::DebugActiveProcessEx
 
@@ -59,7 +60,7 @@ HRESULT DebugActiveProcessEx (
  E_FAIL (или другие коды возврата E_)  
  Не удалось присоединиться к процессу на удаленном компьютере.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Отладка в смешанном режиме не поддерживается в Silverlight.  
   
@@ -71,9 +72,9 @@ HRESULT DebugActiveProcessEx (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 4,5, 4, 3,5 SP1  
+ **Платформа .NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemote](icordebugremote-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

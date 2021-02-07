@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции _CorDllMain
 title: Функция _CorDllMain
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type:
 - apiref
-ms.openlocfilehash: 1b3ebcabc66ee7ca29245bb02d958be311bc65fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 442afae3a627eb684a86c02fbc6e546aa804b7a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673700"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717155"
 ---
 # <a name="_cordllmain-function"></a>\_Функция Кордллмаин
 
@@ -50,7 +51,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 
  Этот метод возвращает значение `true` для успешного выполнения и `false` при возникновении ошибки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Эта функция вызывается загрузчиком операционной системы для сборок DLL. Для исполняемых сборок загрузчик вызывает функцию [ \_ корексемаин](corexemain-function.md) .  
   
@@ -68,8 +69,8 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

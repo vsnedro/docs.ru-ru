@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Корлаунчаппликатион
 title: Функция CorLaunchApplication
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d
 topic_type:
 - apiref
-ms.openlocfilehash: ca427439f03d92b20e7714b9724d90b240e9cecb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 89f1f37ddde69fb5ecc24fd9dfd0d0c27d5fac40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716956"
 ---
 # <a name="corlaunchapplication-function"></a>Функция CorLaunchApplication
 
 Запускает приложение по указанному сетевому пути, используя указанные манифесты и другие данные приложения.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -73,8 +74,8 @@ HRESULT CorLaunchApplication (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

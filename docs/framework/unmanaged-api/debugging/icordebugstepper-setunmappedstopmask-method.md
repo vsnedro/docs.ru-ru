@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebugStepper:: Сетунмаппедстопмаск'
 title: Метод ICorDebugStepper::SetUnmappedStopMask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1211981-e90c-4e05-8def-fa18d85ad9ab
 topic_type:
 - apiref
-ms.openlocfilehash: 50fad8b38a6b33d0ddbb2f0f20676296c3d66737
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 60b8fd4b74e1eeb76868fc6cdac308ff805e44db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95698764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717721"
 ---
 # <a name="icordebugsteppersetunmappedstopmask-method"></a>Метод ICorDebugStepper::SetUnmappedStopMask
 
@@ -41,7 +42,7 @@ HRESULT SetUnmappedStopMask (
   
  Значение по умолчанию — STOP_OTHER_UNMAPPED. Значение STOP_UNMANAGED допустимо только при отладке взаимодействия.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Когда отладчик находит JIT-компиляцию, которая не имеет соответствующего сопоставления с MSIL, он прекращает выполнение, если установлен флаг, указывающий этот тип несопоставленного кода. в противном случае выполнение по шагам прозрачно продолжится.  
   
@@ -55,4 +56,4 @@ HRESULT SetUnmappedStopMask (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугстепперенум:: Next'
 title: Метод ICorDebugStepperEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0ea0f30-e8d2-48b0-8477-e1a029ceb4dd
 topic_type:
 - apiref
-ms.openlocfilehash: b8156b858bde550bb66a8f4ac254f850058ea1a2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e0c17fbc570d5ea8a4a56c89a5a2c855ed045bd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95697198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717476"
 ---
 # <a name="icordebugstepperenumnext-method"></a>Метод ICorDebugStepperEnum::Next
 
@@ -56,4 +57,4 @@ HRESULT Next(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
