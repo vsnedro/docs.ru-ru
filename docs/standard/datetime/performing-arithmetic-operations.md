@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: выполнение арифметических операций с датами и временем'
 title: Выполнение арифметических операций с датами и временем
 ms.date: 04/10/2017
 dev_langs:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - DateTime structure, arithmetic operations
 - DateTimeOffset structure, arithmetic operations
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-ms.openlocfilehash: af294c45359f6226c4189aabb34fdfc670bbd1c9
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 7b39a6dec3abc2206c8eef7566f74aab6614aae6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702565"
 ---
 # <a name="performing-arithmetic-operations-with-dates-and-times"></a>Выполнение арифметических операций с датами и временем
 
@@ -67,7 +68,7 @@ ms.locfileid: "94817774"
 
 ## <a name="arithmetic-operations-with-times-in-time-zones"></a>Арифметические операции со временем в часовых поясах
 
-<xref:System.TimeZoneInfo>Класс включает ряд методов преобразования, которые автоматически применяют корректировки при преобразовании времени из одного часового пояса в другой. В их числе можно назвать следующие:
+<xref:System.TimeZoneInfo>Класс включает ряд методов преобразования, которые автоматически применяют корректировки при преобразовании времени из одного часового пояса в другой. Вот некоторые из них.
 
 - <xref:System.TimeZoneInfo.ConvertTime%2A>Методы и <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> , которые преобразуют время между любыми двумя часовыми поясами.
 
@@ -82,7 +83,7 @@ ms.locfileid: "94817774"
 [!code-csharp[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual5.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual5.vb#5)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)
 - [Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем](use-time-zones-in-arithmetic.md)

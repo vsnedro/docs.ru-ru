@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как сохранять Часовые пояса во внедренном ресурсе.
 title: Практическое руководство. Сохранение часовых поясов во внедренном ресурсе
 ms.date: 04/10/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - time zone objects [.NET], serializing
 - time zone objects [.NET], saving
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-ms.openlocfilehash: 23f86076b2858404f3dbc900d8c40a6509abe8db
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4f1455ffa790652d2dad605a0eb71fb81a05326d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702474"
 ---
 # <a name="how-to-save-time-zones-to-an-embedded-resource"></a>Практическое руководство. Сохранение часовых поясов во внедренном ресурсе
 
@@ -22,7 +23,7 @@ ms.locfileid: "94817605"
 
 Как правило, сериализация <xref:System.TimeZoneInfo> объекта происходит отдельно от приложения, поддерживающего часовой пояс. В зависимости от хранилища данных, используемого для хранения сериализованных <xref:System.TimeZoneInfo> объектов, данные часового пояса могут быть сериализованы как часть программы установки или установки (например, когда данные хранятся в ключе реестра) или как часть служебной программы, выполняемой перед компиляцией окончательного приложения (например, когда сериализованные данные хранятся в файле ресурсов .NET XML (RESX)).
 
-Помимо файла ресурсов, компилируемого с приложением, для сведений о часовом поясе можно использовать несколько других хранилищ данных. В их числе можно назвать следующие:
+Помимо файла ресурсов, компилируемого с приложением, для сведений о часовом поясе можно использовать несколько других хранилищ данных. Вот некоторые из них.
 
 - Реестр. Обратите внимание, что приложение должно использовать подразделы собственного ключа приложения для хранения пользовательских данных часового пояса вместо использования подразделов HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
 
@@ -46,9 +47,9 @@ ms.locfileid: "94817605"
 
 5. Передайте сериализованную строку часового пояса в <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> метод.
 
-6. Вызовите метод <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType>.
+6. Вызовите метод <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=nameWithType> .
 
-7. Вызовите метод <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType>.
+7. Вызовите метод <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> .
 
 8. Закройте <xref:System.IO.StreamWriter> объект, вызвав его <xref:System.IO.StreamWriter.Close%2A> метод.
 
@@ -80,7 +81,7 @@ ms.locfileid: "94817605"
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)
 - [Общие сведения о часовых поясах](time-zone-overview.md)

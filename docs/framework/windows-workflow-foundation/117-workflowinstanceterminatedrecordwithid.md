@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 117-Воркфловинстанцетерминатедрекордвисид'
 title: 117 - WorkflowInstanceTerminatedRecordWithId
 ms.date: 03/30/2017
 ms.assetid: e68539d0-5338-468a-9f75-7e5b09d39a3c
-ms.openlocfilehash: 5e16eff8e8ce9815cac604be110e899a29b4af3d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d57940801cd9850136355a9ad4f91ba7c44fd5b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281733"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703241"
 ---
 # <a name="117---workflowinstanceterminatedrecordwithid"></a>117 - WorkflowInstanceTerminatedRecordWithId
 
@@ -17,7 +18,7 @@ ms.locfileid: "96281733"
 |-|-|  
 |ID|117|  
 |Keywords|HealthMonitoring, WFTracking|  
-|Level|Ошибка|  
+|Уровень|Ошибка|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -36,7 +37,7 @@ ms.locfileid: "96281733"
 |RecordNumber|xs:long|Порядковый номер созданной записи.|  
 |EventTime|xs:dateTime|Время в формате UTC, когда было создано событие.|  
 |ActivityDefinitionId|xs:string|Имя корневого действия в рабочем процессе.|  
-|Состояние|xs:string|Текущее состояние рабочего процесса.|  
+|Область|xs:string|Текущее состояние рабочего процесса.|  
 |Заметки|xs:string|Заметки, добавленные к этому событию. Значения хранятся в XML-элементе в формате \<items> \< item name = "annotationName" type="System.String"> аннотатионвалуе \</item> \</items> . Если заметки не указаны, строка содержит \<items/> . Размер событий ETW ограничен размером буфера ETW или максимальным размером полезных данных для события ETW. Если размер события превышает предел ETW, то событие усекается путем удаления заметок и замены значения аннотации на \<items> ... \</items> .|  
 |ProfileName|xs:string|Имя или профиль отслеживания, который привел к созданию этого события.|  
 |WorkflowDefinitionIdentity|xs:string|Идентификатор определения рабочего процесса|  

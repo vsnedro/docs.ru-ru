@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: повышение привилегий'
 title: Повышение привилегий
 ms.date: 03/30/2017
 helpviewer_keywords:
 - elevation of privilege [WCF]
 - security [WCF], elevation of privilege
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
-ms.openlocfilehash: 9c62e11eedaa3fa194522695a33bccf210d390df
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 65aff3b8a1f258f68333fe39a2c980ae523d9ee9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704944"
 ---
 # <a name="elevation-of-privilege"></a>Повышение привилегий
 
@@ -42,7 +43,7 @@ ms.locfileid: "96254224"
   
 ### <a name="credentials-capture"></a>Получение учетных данных  
 
- Следующее применимо к .NET Framework 3,5 и следующим версиям.  
+ Следующее применимо к платформа .NET Framework 3,5 и следующим версиям.  
   
  Учетные данные, используемые клиентом или службой, основаны на текущем потоке контекста. Получение учетных данных происходит, когда вызывается метод `Open` (или `BeginOpen` для асинхронных вызовов) клиента или службы. Для классов <xref:System.ServiceModel.ServiceHost> и <xref:System.ServiceModel.ClientBase%601> методы `Open` и `BeginOpen` наследуются от методов <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> и <xref:System.ServiceModel.Channels.CommunicationObject.BeginOpen%2A> класса <xref:System.ServiceModel.Channels.CommunicationObject>.  
   

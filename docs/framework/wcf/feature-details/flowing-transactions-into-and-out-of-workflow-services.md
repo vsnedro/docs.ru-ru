@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: перетекание транзакций в службы рабочих процессов и из них'
 title: Направление транзакций в службы рабочего процесса и из них
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 8764f3c88fc978bc71ff993252b04fe58da4bbc9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f39740c45dd70fbc06963b8e842f9a01a0393f7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96290352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704970"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>Направление транзакций в службы рабочего процесса и из них
 
@@ -100,7 +101,7 @@ ms.locfileid: "96290352"
   
 6. Перетащите <xref:System.ServiceModel.Activities.Receive> действие в раздел **запроса** <xref:System.ServiceModel.Activities.TransactedReceiveScope> действия. Задайте следующие свойства.  
   
-    |Свойство.|Значение|  
+    |Свойство|Значение|  
     |--------------|-----------|  
     |CanCreateInstance|True (установите флажок)|  
     |OperationName|StartSample|  
@@ -131,7 +132,7 @@ ms.locfileid: "96290352"
   
 10. Перетащите действие <xref:System.Activities.Statements.Assign>, поместите его после действия `PrintTransactionInfo` и задайте свойства в соответствии со следующей таблицей.  
   
-    |Свойство.|Значение|  
+    |Свойство|Значение|  
     |--------------|-----------|  
     |Кому|replyMessage|  
     |Значение|"Service: Sending reply."|  
@@ -180,7 +181,7 @@ ms.locfileid: "96290352"
   
 8. Перетащите действие <xref:System.ServiceModel.Activities.Send>, поместите его после действия <xref:System.Activities.Statements.Assign> и задайте следующие свойства:  
   
-    |Свойство.|Значение|  
+    |Свойство|Значение|  
     |--------------|-----------|  
     |EndpointConfigurationName|workflowServiceEndpoint|  
     |OperationName|StartSample|  

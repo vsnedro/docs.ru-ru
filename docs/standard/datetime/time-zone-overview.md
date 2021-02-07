@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: Общие сведения о часовом поясе'
 title: Общие сведения о часовых поясах
 ms.date: 04/10/2017
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - adjustment rule [.NET]
 - time zones [.NET], terminology
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
-ms.openlocfilehash: 1e876fd608b088b02385467367948440549e96e8
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 4f892763cc27794155847c602c458d82780592ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702435"
 ---
 # <a name="time-zone-overview"></a>Общие сведения о часовых поясах
 
@@ -70,6 +71,6 @@ ms.locfileid: "94817514"
 
 Дополнительные сведения о преобразовании времени между часовыми поясами см. в разделе [Преобразование времени из одного часового пояса в другой](converting-between-time-zones.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)

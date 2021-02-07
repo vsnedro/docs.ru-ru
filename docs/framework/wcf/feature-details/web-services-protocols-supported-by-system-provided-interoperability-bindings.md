@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: протоколы веб-служб, поддерживаемые System-Provided привязками взаимодействия'
 title: Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Web services protocols
 - Windows Communication Foundation, Web service protocols
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
-ms.openlocfilehash: 0dbfca5d56fe588864a371f4a81bbefbdfeb284c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: a970cdffe864861f4b6f0163d21a69648c777726
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704359"
 ---
 # <a name="web-services-protocols-supported-by-system-provided-interoperability-bindings"></a>Протоколы веб-служб, поддерживаемые предоставляемыми системой привязками
 
@@ -29,7 +30,7 @@ Windows Communication Foundation (WCF) создается для взаимод�
 |Категория|Протокол|Спецификация и использование|  
 |--------------|--------------|-----------------------------|  
 |Транспорт|HTTP 1.1|[HTTP 1.1](https://www.ietf.org/rfc/rfc2616.txt)<br /><br /> `BasicHttpBinding`, `WSHttpBinding`, и `WS2007HttpBinding` используют протоколы HTTP и HTTPS.|  
-|Обмен сообщениями|MTOM|[MTOM](https://www.w3.org/TR/soap12-mtom/)<br /><br /> `basicHttpBinding`, `wsHttpBinding` и `ws2007HttpBinding` поддерживают механизм оптимизации передачи сообщений (MTOM). По умолчанию не используется. Чтобы использовать MTOM, присвойте атрибуту `messageEncoding` значение `"Mtom"`.<br /><br /> Пример:<br /><br /> `<wsHttpBinding> <binding messageEncoding="Mtom"/> </wsHttpBinding>`|  
+|Обмен сообщениями|MTOM|[MTOM](https://www.w3.org/TR/soap12-mtom/)<br /><br /> `basicHttpBinding`, `wsHttpBinding` и `ws2007HttpBinding` поддерживают механизм оптимизации передачи сообщений (MTOM). По умолчанию не используется. Чтобы использовать MTOM, присвойте атрибуту `messageEncoding` значение `"Mtom"`.<br /><br /> Пример.<br /><br /> `<wsHttpBinding> <binding messageEncoding="Mtom"/> </wsHttpBinding>`|  
 |Метаданные|WSDL 1.1|[WSDL 1.1](https://www.w3.org/TR/wsdl/)<br /><br /> Для описания служб WCF использует язык описания веб-служб (WSDL).|  
 |Метаданные|WS-Policy|[WS-Policy](https://www.w3.org/Submission/WS-Policy/)<br /><br /> WCF использует спецификацию WS-Policy вместе с утверждениями, зависящими от домена, для описания требований и возможностей службы.|  
 |Метаданные|WS-Policy 1.5|[WS-Policy 1.5](https://www.w3.org/TR/2007/CR-ws-policy-20070605/)<br /><br /> WCF использует спецификацию WS-Policy вместе с утверждениями, зависящими от домена, для описания требований и возможностей службы.|  
@@ -70,7 +71,7 @@ Windows Communication Foundation (WCF) создается для взаимод�
   
 - WSS Security Assertions Markup Language (SAML) Token Profile 1.0 и 1.1 для наиболее часто выдаваемого формата маркеров.  
   
- Пример:  
+ Пример.  
   
 ```xml  
 <wsFederationHttpBinding>  

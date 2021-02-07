@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как использовать Часовые пояса в арифметических операциях с датами и временем
 title: Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем
 ms.date: 04/10/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - arithmetic operations [.NET], dates and times
 - dates [.NET], adding and subtracting
 ms.assetid: 83dd898d-1338-415d-8cd6-445377ab7871
-ms.openlocfilehash: ca7e9e1fbd73eafa80c444ba2d5ddaa84a6d7f5e
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 74f878da85dc959114013d7296b738e8198fc992
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702370"
 ---
 # <a name="how-to-use-time-zones-in-date-and-time-arithmetic"></a>Практическое руководство. Использование часовых поясов в арифметических операциях с датами и временем
 
@@ -59,7 +60,7 @@ ms.locfileid: "94817488"
 
 - , Что <xref:System> пространство имен должно быть импортировано с помощью `using` оператора (требуется в коде C#).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)
 - [Выполнение арифметических операций с датами и временем](performing-arithmetic-operations.md)

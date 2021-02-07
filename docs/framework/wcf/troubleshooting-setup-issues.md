@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: Устранение неполадок при установке'
 title: Устранение неполадок с установкой
 ms.date: 03/30/2017
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
-ms.openlocfilehash: 596aae345061796535895a091c59d50a5bffe0d8
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8beb404040c15ade8f435772fe1b947eef766702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96255121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703475"
 ---
 # <a name="troubleshoot-setup-issues"></a>Устранение неполадок при установке
 
@@ -27,11 +28,11 @@ ms.locfileid: "96255121"
   
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC Bridge 3.0.0.0  
   
- Ключи не создаются повторно, если вы запускаете восстановление с помощью установщика .NET Framework 3,0, запускаемого из программы установки **и удаления программ** на **панели управления**. Чтобы правильно восстановить эти разделы, необходимо удалить платформу .NET Framework 3.0, а затем установить ее снова.  
+ Ключи не создаются повторно, если вы запускаете восстановление с помощью установщика платформа .NET Framework 3,0, запускаемого из программы установки **и удаления программ** на **панели управления**. Чтобы правильно восстановить эти разделы, необходимо удалить платформу .NET Framework 3.0, а затем установить ее снова.  
   
 ## <a name="wmi-service-corruption-blocks-installation-of-the-wmi-provider"></a>Повреждение службы WMI блокирует установку поставщика WMI
 
- Повреждение службы WMI может заблокировать установку поставщика Windows Communication Foundation WMI при установке пакета .NET Framework 3,0. Во время установки Windows Communication Foundation Installer не удается зарегистрировать файл WCF *. mof* с помощью компонента *mofcomp.exe* . Ниже приведен список признаков возникновения такой ситуации.  
+ Повреждение службы WMI может заблокировать установку поставщика Windows Communication Foundation WMI при установке пакета платформа .NET Framework 3,0. Во время установки Windows Communication Foundation Installer не удается зарегистрировать файл WCF *. mof* с помощью компонента *mofcomp.exe* . Ниже приведен список признаков возникновения такой ситуации.  
   
 1. Установка .NET Framework 3.0 завершается успешно, но поставщик инструментария WMI для WCF не зарегистрирован.  
   
@@ -57,17 +58,17 @@ ms.locfileid: "96255121"
   
 1. Запустите служебная программа для диагностики WMI, чтобы восстановить службу WMI. Дополнительные сведения об использовании этого средства см. в разделе [служебная программа для диагностики WMI](/previous-versions/tn-archive/ff404265(v%3dmsdn.10)).  
   
- Восстановите установку .NET Framework 3,0 с помощью приложения **Установка и удаление программ** , расположенного в **панели управления**, или удалите или переустановите .NET Framework 3,0.  
+ Восстановите установку платформа .NET Framework 3,0 с помощью приложения **Установка и удаление программ** , расположенного в **панели управления**, или удалите или переустановите платформа .NET Framework 3,0.  
   
-## <a name="repair-net-framework-30-after-net-framework-35-installation"></a>Исправление .NET Framework 3,0 после установки .NET Framework 3,5
+## <a name="repair-net-framework-30-after-net-framework-35-installation"></a>Исправление платформа .NET Framework 3,0 после установки платформа .NET Framework 3,5
 
- При восстановлении .NET Framework 3,0 после установки .NET Framework 3,5 элементы конфигурации, появившиеся .NET Framework 3,5 в *machine.config* , удаляются. Однако файл *web.config* остается неизменным. Чтобы решить эту проблему, восстановите .NET Framework 3,5 после этого через ARP или используйте [средство регистрации службы рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) с `/c` параметром.  
+ При восстановлении платформа .NET Framework 3,0 после установки платформа .NET Framework 3,5 элементы конфигурации, появившиеся платформа .NET Framework 3,5 в *machine.config* , удаляются. Однако файл *web.config* остается неизменным. Чтобы решить эту проблему, восстановите платформа .NET Framework 3,5 после этого через ARP или используйте [средство регистрации службы рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) с `/c` параметром.  
   
  [Средство регистрации служб рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) можно найти по адресу%windir%\Microsoft.NET\framework\v3.5\ или%WINDIR%\Microsoft.NET\framework64\v3.5\.  
   
 ## <a name="configure-iis-properly-for-wcfwf-webhost-after-installing-net-framework-35"></a>Правильная настройка узла WCF/WF в службах IIS после установки .NET Framework 3.5  
 
- Если при установке .NET Framework 3,5 не удается настроить дополнительные параметры конфигурации IIS, связанные с WCF, в журнал установки заносится ошибка и выполняется продолжение. Все попытки запуска приложений WorkflowServices будут неудачными, поскольку отсутствуют обязательные параметры конфигурации. Например, не удастся загрузить службы правил или XOML.  
+ Если при установке платформа .NET Framework 3,5 не удается настроить дополнительные параметры конфигурации IIS, связанные с WCF, в журнал установки заносится ошибка и выполняется продолжение. Все попытки запуска приложений WorkflowServices будут неудачными, поскольку отсутствуют обязательные параметры конфигурации. Например, не удастся загрузить службы правил или XOML.  
   
  Чтобы решить эту проблему, используйте [средство регистрации службы рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) с `/c` параметром, чтобы правильно настроить карты сценариев IIS на компьютере. [Средство регистрации служб рабочего процесса (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) можно найти по адресу%windir%\Microsoft.NET\framework\v3.5\ или%WINDIR%\Microsoft.NET\framework64\v3.5\.  
   
@@ -75,7 +76,7 @@ ms.locfileid: "96255121"
 
 **Не удалось загрузить тип "System. ServiceModel. Activation. HttpModule" из сборки "System. ServiceModel, версия 3.0.0.0, язык и региональные параметры = нейтральный, PublicKeyToken = b77a5c561934e089»"**
 
- Эта ошибка возникает, если установлена .NET Framework 4, а затем включена активация WCF HTTP. Чтобы устранить эту проблему, выполните следующую команду в Командная строка разработчика для Visual Studio:  
+ Эта ошибка возникает, если установлена платформа .NET Framework 4, а затем включена активация WCF HTTP. Чтобы устранить эту проблему, выполните следующую команду в Командная строка разработчика для Visual Studio:  
   
 ```console
 aspnet_regiis.exe -i -enable  

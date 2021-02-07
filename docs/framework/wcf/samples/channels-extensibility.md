@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения о расширяемости каналов
 title: Расширяемость каналов
 ms.date: 03/30/2017
 ms.assetid: 4cc3b20b-778a-4ae8-b58c-a3822fb13065
-ms.openlocfilehash: 1a734c305e2a6f2fc759647ab5bdf380f7c7eeee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 08c93ffa2e7c4645e4c49be619c0cb065ecdbff7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704073"
 ---
 # <a name="channels-extensibility"></a>Расширяемость каналов
 
 В этом разделе содержатся образцы, демонстрирующие пользовательские каналы.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Локальный канал](local-channel.md)  
  Демонстрирует локальный канал, канал транспорта WCF, который используется для связи в пределах одного домена приложения.  

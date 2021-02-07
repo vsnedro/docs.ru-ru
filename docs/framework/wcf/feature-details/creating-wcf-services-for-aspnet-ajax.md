@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: создание служб WCF для ASP.NET AJAX'
 title: Создание служб WCF для ASP.NET AJAX
 ms.date: 03/30/2017
 ms.assetid: 04c0402c-e617-4ba5-aedf-d17692234776
-ms.openlocfilehash: 8c82d4c61b32572fd1ad7d8f19e939273cc2280b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e4ab977db5632de0c9e825e03369506d4917709f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705126"
 ---
 # <a name="creating-wcf-services-for-aspnet-ajax"></a>Создание служб WCF для ASP.NET AJAX
 
@@ -25,7 +26,7 @@ ms.locfileid: "84599312"
 
 - Добавление конечной точки с поддержкой AJAX в службу WCF с помощью конфигурации. Дополнительные сведения см. в разделе [инструкции. Использование конфигурации для добавления конечной точки ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md).
 
-Модель веб-программирования, описанная в разделе [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md) , может использоваться со СЛУЖБАМИ ASP.NET AJAX. В частности:
+Модель веб-программирования, описанная в разделе [Общие сведения о модели программирования WCF Web HTTP](wcf-web-http-programming-model-overview.md) , может использоваться со СЛУЖБАМИ ASP.NET AJAX. В частности, внесены следующие изменения.
 
 - Для выбора команд HTTP GET и HTTP POST можно использовать атрибуты <xref:System.ServiceModel.Web.WebGetAttribute> и <xref:System.ServiceModel.Web.WebInvokeAttribute>. При правильном применении это может существенно повысить производительность приложения. Дополнительные сведения см. [в разделе инструкции. Выбор между запросами HTTP POST и HTTP GET для конечных точек AJAX ASP.NET](http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md).
 
@@ -52,13 +53,13 @@ ms.locfileid: "84599312"
 
  В более сложных сценариях необходимо понимать некоторые дополнительные сведения о поддержке AJAX в WCF:
 
-- Чтобы понять, как данные передаются между клиентом страницы AJAX и службой WCF с помощью JavaScript, а сведения о том, как типы .NET Framework сопоставляются с типами JavaScript, см. в разделе [Поддержка JSON и других форматов передача данных](support-for-json-and-other-data-transfer-formats.md).
+- Чтобы понять, как данные передаются между клиентом страницы AJAX и службой WCF с помощью JavaScript, а сведения о том, как типы платформа .NET Framework сопоставляются с типами JavaScript, см. в разделе [Поддержка JSON и других форматов передача данных](support-for-json-and-other-data-transfer-formats.md).
 
 - чтобы воспользоваться преимуществами возможностей ASP.NET, например проверкой подлинности на основе URL-адреса и доступом к данным сеансов ASP.NET, можно включить режим совместимости с ASP.NET с использованием конфигурации.
 
 Конечные точки AJAX в WCF можно даже использовать без платформы ASP.NET AJAX. Для этого необходимо понимать архитектуру поддержки AJAX в WCF. Обсуждение этой архитектуры см. в разделе [объектная модель программирования WCF Web HTTP](wcf-web-http-programming-object-model.md). Пример кода, демонстрирующий этот подход, см. в разделе [Служба AJAX с JSON и XML](../samples/ajax-service-with-json-and-xml-sample.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Модель веб-программирования HTTP WCF](wcf-web-http-programming-model.md)
 - [Практическое руководство. Добавление конечной точки ASP.NET AJAX без использования конфигурации](how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)

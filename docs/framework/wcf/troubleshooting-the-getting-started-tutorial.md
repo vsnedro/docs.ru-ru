@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Устранение неполадок руководства по началу работы с Windows Communication Foundation'
 title: Устранение неполадок в руководствах Приступая к работе с Windows Communication Foundation
 ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
-ms.openlocfilehash: 4d471372419996c5bc490c2d0fdd83927428a41e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c57598da80beb7b95d324359f6f9cf7cab9a4879
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96281343"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703397"
 ---
 # <a name="troubleshoot-the-get-started-with-windows-communication-foundation-tutorials"></a>Устранение неполадок в руководствах Приступая к работе с Windows Communication Foundation
 
@@ -43,7 +44,7 @@ ms.locfileid: "96281343"
     a. В окне **GettingStartedHost** в поле **начальный объект** выберите **Service. Program** (или точку входа для конкретного приложения) из списка.
     b. В главном меню выберите **файл**  >  **сохранить все**.
 
-### <a name="run-the-service-application"></a>Запуск приложения службы
+### <a name="run-the-service-application"></a>Запуск приложения-службы
 
 **Протоколу HTTP не удалось зарегистрировать URL-адрес "http: \/ /+: 8000/GettingStarted/CalculatorService". Ваш процесс не имеет прав доступа к этому пространству имен.**
 

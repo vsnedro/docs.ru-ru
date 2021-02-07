@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: службы рабочих процессов'
 title: Службы рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
-ms.openlocfilehash: ff73055d41531ef8188681d0b95748f62fde8011
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 195ecf0322146a8735362dfbb82dc19bf1c04312
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96263247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704476"
 ---
 # <a name="workflow-services"></a>Службы рабочего процесса
 
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] позволяет описать службу на основе рабочего процесса полностью декларативно на языке XAML. Рабочий процесс, реализующий службу, и описание конечных точек, предоставляемых службой, можно полностью определить на языке XAML. Подразделы, содержащиеся в этом разделе, подробно описывают модель программирования, декларативную поддержку создания служб.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения о службах рабочих процессов](workflow-services-overview.md)  
  Описывает компоненты, участвующие в создании и размещении службы рабочего процесса.  

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: как создать объект TimeZoneInfo'
 title: Практическое руководство. Создание экземпляра объекта TimeZoneInfo
 ms.date: 04/10/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - instantiating time zone objects
 - time zone objects [.NET], instantiation
 ms.assetid: 8cb620e5-c6a6-4267-a52e-beeb73cd1a34
-ms.openlocfilehash: c4e441e793244dfe368fb86c3e77fcf67a685558
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: d063833aa60142bf6f942a836c7f89777d9073a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702617"
 ---
 # <a name="how-to-instantiate-a-timezoneinfo-object"></a>Практическое руководство. Создание экземпляра объекта TimeZoneInfo
 
@@ -40,7 +41,7 @@ ms.locfileid: "94817826"
 
 Если приложение зависит от наличия часового пояса, необходимо сначала вызвать метод <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> для извлечения сведений о часовом поясе из реестра. Если вызов метода завершится сбоем, обработчик исключений должен создать новый экземпляр часового пояса или повторно создать его путем десериализации сериализованного объекта <xref:System.TimeZoneInfo> . Пример см. [в разделе руководство. Восстановление часовых поясов из внедренного ресурса](restore-time-zones-from-an-embedded-resource.md) .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)
 - [Поиск часового пояса, заданного в локальной системе](finding-the-time-zones-on-local-system.md)

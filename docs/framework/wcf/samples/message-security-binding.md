@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: привязка безопасности сообщений'
 title: Привязка безопасности сообщений
 ms.date: 03/30/2017
 ms.assetid: a4570ce7-864e-461b-85d8-0f7bcc53c2c8
-ms.openlocfilehash: a4d13eabc0d086a9cfe58c95165b0405f60fcf14
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9392eb1955a4c142fc6cc5a693e14b7d765e4783
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96294382"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703878"
 ---
 # <a name="message-security-binding"></a>Привязка безопасности сообщений
 
 Этот раздел содержит примеры, демонстрирующие привязку безопасности сообщений в службах Windows в WCF.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Безопасность сообщений с возможностью анонимного доступа](message-security-anonymous.md)  
  В этом примере демонстрируется реализация приложения Windows Communication Foundation (WCF), использующего безопасность на уровне сообщений без проверки подлинности клиента, но требующего проверки подлинности сервера с помощью сертификата X. 509 на сервере.  
