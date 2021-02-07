@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostIoCompletionManager:: GetMinThreads'
 title: Метод IHostIoCompletionManager::GetMinThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7a7f733-677d-481c-b3d5-444fcc502b8e
 topic_type:
 - apiref
-ms.openlocfilehash: d321ce08edf4780fc5f26ac627849b9129c2f283
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 73b8d8cbff3777fe6aa956f282d3da5d4ac1b5c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708524"
 ---
 # <a name="ihostiocompletionmanagergetminthreads-method"></a>Метод IHostIoCompletionManager::GetMinThreads
 
@@ -51,7 +52,7 @@ HRESULT GetMinThreads (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_NOTIMPL|Узел не предоставляет реализацию `GetMinThreads` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узлу может потребоваться эксклюзивный контроль над числом потоков, выделенных для запросов на обслуживание операций ввода-вывода, по таким причинам, как реализация, производительность или масштабируемость. По этой причине узел не является обязательным для реализации `GetMinThreads` . В этом случае узел должен вернуть E_NOTIMPL из этого метода.  
   
@@ -63,9 +64,9 @@ HRESULT GetMinThreads (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Интерфейс IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

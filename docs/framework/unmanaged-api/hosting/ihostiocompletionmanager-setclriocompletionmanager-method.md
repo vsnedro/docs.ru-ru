@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostIoCompletionManager:: Сетклриокомплетионманажер'
 title: Метод IHostIoCompletionManager::SetCLRIoCompletionManager
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4254bb01-3a14-4f34-a3be-60ff1f5072b5
 topic_type:
 - apiref
-ms.openlocfilehash: d370cc81942269bd79e06e0fa57fe5d79832b3c2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1075c33d6de4f5edf34364d67cbc0a21c4f19802
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708298"
 ---
 # <a name="ihostiocompletionmanagersetclriocompletionmanager-method"></a>Метод IHostIoCompletionManager::SetCLRIoCompletionManager
 
@@ -50,7 +51,7 @@ HRESULT SetCLRIoCompletionManager (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  После вызова CLR `SetCLRIoCompletionManager` узел должен вызвать [ICLRIoCompletionManager:: OnComplete](iclriocompletionmanager-oncomplete-method.md) , чтобы уведомить CLR о завершении запроса ввода-вывода.  
   
@@ -62,9 +63,9 @@ HRESULT SetCLRIoCompletionManager (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Интерфейс IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

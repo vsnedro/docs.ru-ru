@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IHostTaskManager'
 title: Интерфейс IHostTaskManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: deb14d291bfd511e8f3534f3c5e32787c259c5e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 67574550ba26970189ea53b8e6bdb867fea8549b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707488"
 ---
 # <a name="ihosttaskmanager-interface"></a>Интерфейс IHostTaskManager
 
@@ -48,7 +49,7 @@ ms.locfileid: "95673115"
 |[Метод Sleep](ihosttaskmanager-sleep-method.md)|Уведомляет узел о том, что текущая задача переходит в спящий режим.|  
 |[Метод SwitchToTask](ihosttaskmanager-switchtotask-method.md)|Уведомляет узел о том, что необходимо отключить текущую задачу.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostTaskManager` позволяет среде CLR создавать задачи и управлять ими, чтобы обеспечить обработчики для узла на выполнение действий при передаче управления из управляемого кода в неуправляемый и наоборот, а также для указания определенных действий, которые узел может и не может принимать во время выполнения кода.  
   
@@ -60,9 +61,9 @@ ms.locfileid: "95673115"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

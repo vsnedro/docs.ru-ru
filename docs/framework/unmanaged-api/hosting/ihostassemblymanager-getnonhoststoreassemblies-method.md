@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostAssemblyManager:: GetNonHostStoreAssemblies'
 title: Метод IHostAssemblyManager::GetNonHostStoreAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type:
 - apiref
-ms.openlocfilehash: a34b907514376927d8a1aa66b136916108b704d8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef551db45428b2381dfeae8f722257241a4deaf0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709052"
 ---
 # <a name="ihostassemblymanagergetnonhoststoreassemblies-method"></a>Метод IHostAssemblyManager::GetNonHostStoreAssemblies
 
@@ -51,7 +52,7 @@ HRESULT GetNonHostStoreAssemblies (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания списка ссылок для запрошенного объекта `ICLRAssemblyReferenceList` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR разрешает ссылки с помощью следующего набора рекомендаций:  
   
@@ -76,9 +77,9 @@ HRESULT GetNonHostStoreAssemblies (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

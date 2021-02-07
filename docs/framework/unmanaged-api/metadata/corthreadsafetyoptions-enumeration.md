@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorThreadSafetyOptions
 title: Перечисление CorThreadSafetyOptions
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dae07d9b-df51-488c-b17e-52d6e48217bd
 topic_type:
 - apiref
-ms.openlocfilehash: 8c0527a7bc3cde7344bf809dc8e6f5a3fac04852
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 7915bcf5e7b71fa84ea83642467c1600cd38712d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707323"
 ---
 # <a name="corthreadsafetyoptions-enumeration"></a>Перечисление CorThreadSafetyOptions
 
@@ -35,7 +36,7 @@ typedef enum CorThreadSafetyOptions {
 } CorThreadSafetyOptions;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 |Член|Описание|
 |------------|-----------------|
@@ -49,8 +50,8 @@ typedef enum CorThreadSafetyOptions {
 
 **Заголовок:** Корхдр. h
 
-**.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IGCThreadControl:: SuspensionEnding'
 title: Метод IGCThreadControl::SuspensionEnding
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 70814265-c734-4ddc-9502-fe8b28d2b414
 topic_type:
 - apiref
-ms.openlocfilehash: 4638672b1d64a9ea07618212cc514d00996470eb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ff889f45ea3664312060f373907e65c367276f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721677"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709273"
 ---
 # <a name="igcthreadcontrolsuspensionending-method"></a>Метод IGCThreadControl::SuspensionEnding
 
@@ -39,7 +40,7 @@ HRESULT SuspensionEnding (
  `Generation`  
  окне Поколение, на котором была выполнена сборка мусора.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Не Перепланируйте потоки во время `SuspensionEnding` обратного вызова.  
   
@@ -51,8 +52,8 @@ HRESULT SuspensionEnding (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IGCThreadControl](igcthreadcontrol-interface.md)

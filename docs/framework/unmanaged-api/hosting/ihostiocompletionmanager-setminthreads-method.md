@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostIoCompletionManager:: SetMinThreads'
 title: Метод IHostIoCompletionManager::SetMinThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dea34b81-8d2b-4cc3-8696-0ad4291d8a92
 topic_type:
 - apiref
-ms.openlocfilehash: 64ea9fdd477ec005b089f451101b742278ab4266
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aade5ebb9e318d51296e52e7cf1c31c6ea9e4f6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708246"
 ---
 # <a name="ihostiocompletionmanagersetminthreads-method"></a>Метод IHostIoCompletionManager::SetMinThreads
 
@@ -51,7 +52,7 @@ HRESULT SetMinThreads (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_NOTIMPL|Узел не предоставляет реализацию `SetMinThreads` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узлу может потребоваться эксклюзивный контроль над количеством потоков, которые могут быть выделены для обработки запросов ввода-вывода, по таким причинам, как реализация, производительность или масштабируемость. По этой причине узел не является обязательным для реализации `SetMinThreads` . В этом случае узел должен вернуть E_NOTIMPL из этого метода.  
   
@@ -63,9 +64,9 @@ HRESULT SetMinThreads (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Метод SetMaxThreads](ihostiocompletionmanager-setmaxthreads-method.md)

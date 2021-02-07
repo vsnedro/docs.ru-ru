@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICeeGen:: Жетмесодбуффер'
 title: Метод ICeeGen::GetMethodBuffer
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
 topic_type:
 - apiref
-ms.openlocfilehash: e9c2dab9f30be6e5eea8f6570b297f8df11b6fe6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 24811f231b1db6d985753d4f4695f432aa12edc2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706946"
 ---
 # <a name="iceegengetmethodbuffer-method"></a>Метод ICeeGen::GetMethodBuffer
 
@@ -53,8 +54,8 @@ HRESULT GetMethodBuffer (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

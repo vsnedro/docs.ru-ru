@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс IHostAssemblyStore'
 title: Интерфейс IHostAssemblyStore
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2fed963d2d0ebec54e5f7a4d95cba26c1bac1f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a05fee7916911687143d5953e26187162a2fa544
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680957"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709039"
 ---
 # <a name="ihostassemblystore-interface"></a>Интерфейс IHostAssemblyStore
 
@@ -32,17 +33,17 @@ ms.locfileid: "95680957"
 |[Метод ProvideAssembly](ihostassemblystore-provideassembly-method.md)|Возвращает ссылку на сборку, на которую не ссылается [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) , возвращенную из вызова [IHostAssemblyManager:: GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md).|  
 |[Метод ProvideModule](ihostassemblystore-providemodule-method.md)|Разрешает модуль в сборке или в связанном (не внедренном) файле ресурсов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostAssemblyStore` Предоставляет узлу способ эффективного загрузки сборок на основе удостоверения сборки. Узел загружает сборки, возвращая `IStream` экземпляры, которые указывают непосредственно в байтах.  
   
- Среда CLR определяет, реализован ли узел `IHostAssemblyStore` путем вызова `IHostAssemblyManager::GetNonHostAssemblyStores` после инициализации. Это позволяет узлу, например, управлять привязкой к пользовательским сборкам, а также использовать среду выполнения для привязки к .NET Framework сборкам.  
+ Среда CLR определяет, реализован ли узел `IHostAssemblyStore` путем вызова `IHostAssemblyManager::GetNonHostAssemblyStores` после инициализации. Это позволяет узлу, например, управлять привязкой к пользовательским сборкам, а также использовать среду выполнения для привязки к платформа .NET Framework сборкам.  
   
 > [!NOTE]
 > При предоставлении реализации `IHostAssemblyStore` узел определяет его цель для разрешения всех сборок, на которые не ссылается объект, `ICLRAssemblyReferenceList` возвращенный из `IHostAssemblyManager::GetNonHostStoreAssemblies` .  
   
 > [!NOTE]
-> .NET Framework версии 2,0 не позволяет узлу загружать машинный образ сборки, как это предоставляется программой [генератора образов в машинном код (Ngen.exe)](../../tools/ngen-exe-native-image-generator.md) .  
+> Платформа .NET Framework версии 2,0 не позволяет узлу загружать машинный образ сборки, как это предоставляется программой [генератора образов в машинном код (Ngen.exe)](../../tools/ngen-exe-native-image-generator.md) .  
   
 ## <a name="requirements"></a>Требования  
 
@@ -52,9 +53,9 @@ ms.locfileid: "95680957"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

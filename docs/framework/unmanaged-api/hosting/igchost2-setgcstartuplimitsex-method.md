@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IGCHost2:: SetGCStartupLimitsEx'
 title: Метод IGCHost2::SetGCStartupLimitsEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bba941c2-1c57-46d3-bbf5-5fb92700c490
 topic_type:
 - apiref
-ms.openlocfilehash: 4dca62903a123765ceb8bb251b79455ad0e4730a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 32d3bcbb467a1a418c7123779c881c46e983edef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709312"
 ---
 # <a name="igchost2setgcstartuplimitsex-method"></a>Метод IGCHost2::SetGCStartupLimitsEx
 
@@ -43,7 +44,7 @@ HRESULT SetGCStartupLimitsEx (
  `MaxGen0Size`  
  окне Максимальный размер для поколения 0.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значения, которые `SetGCStartupLimitsEx` задаются, можно указать только перед запуском узла. Эти значения нельзя изменить позже.  
   
@@ -55,8 +56,8 @@ HRESULT SetGCStartupLimitsEx (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IGCHost2](igchost2-interface.md)

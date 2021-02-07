@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IGCHost:: GetThreadStats'
 title: Метод IGCHost::GetThreadStats
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 826baa9b-9218-4736-a509-7ab193b125a0
 topic_type:
 - apiref
-ms.openlocfilehash: c48b580e632d67db5a9826c210415adab1bdba96
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d923560e915a0c88035caad70ad91149d793cb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95670073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709663"
 ---
 # <a name="igchostgetthreadstats-method"></a>Метод IGCHost::GetThreadStats
 
@@ -51,8 +52,8 @@ HRESULT GetThreadStats (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IGCHost](igchost-interface.md)

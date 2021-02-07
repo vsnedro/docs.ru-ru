@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostMAlloc:: Free'
 title: Метод IHostMAlloc::Free
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c89abf5b-1120-4437-8b57-4a99fb3ae7f9
 topic_type:
 - apiref
-ms.openlocfilehash: d4c9048c89d55ed048a55a771572823905a056df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 097e2e95b6dfb9d6a1bae68f9e0455a96383159e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708207"
 ---
 # <a name="ihostmallocfree-method"></a>Метод IHostMAlloc::Free
 
@@ -51,7 +52,7 @@ HRESULT Free (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_INVALIDOPERATION|Предпринята попытка освободить память, которая не была выделена через узел.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `pMem` параметр ссылается на область памяти, которая не была выделена с помощью вызова `Alloc` , узел должен возвращать HOST_E_INVALIDOPERATION.  
   
@@ -63,9 +64,9 @@ HRESULT Free (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Интерфейс IHostMalloc](ihostmalloc-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Квструкт'
 title: Структура CVStruct
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e9e4e497-d5fb-464b-991c-3bdd824664fd
 topic_type:
 - apiref
-ms.openlocfilehash: db36b94fafe20b58b9bcbb886b8d285326960f67
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 25e8073f75620bca0737b11499d318cd57d6101c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707219"
 ---
 # <a name="cvstruct-structure"></a>Структура CVStruct
 
@@ -53,8 +54,8 @@ typedef struct {
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры метаданных](metadata-structures.md)

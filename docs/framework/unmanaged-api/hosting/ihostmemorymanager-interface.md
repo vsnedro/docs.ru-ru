@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Интерфейс IHostMemoryManager'
 title: Интерфейс IHostMemoryManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a945d439-3b34-4aa4-b575-8413dd7806ce
 topic_type:
 - apiref
-ms.openlocfilehash: 0f71e4c45e43c2027b12998532f2b04401a51951
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c9b6f83b5c70a53388e886e1047798f660b826e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731336"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707892"
 ---
 # <a name="ihostmemorymanager-interface"></a>Интерфейс IHostMemoryManager
 
@@ -40,7 +41,7 @@ ms.locfileid: "95731336"
 |[Метод VirtualProtect](ihostmemorymanager-virtualprotect-method.md)|Служит логической оболочкой для соответствующей функции Win32, которая изменяет защиту в области зафиксированных страниц в виртуальном адресном пространстве вызывающего процесса.|  
 |[Метод VirtualQuery](ihostmemorymanager-virtualquery-method.md)|Служит логической оболочкой для соответствующей функции Win32, которая получает сведения о диапазоне страниц в виртуальном адресном пространстве вызывающего процесса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostMemoryManager` также предоставляет методы для среды CLR для получения указателя, с помощью которого можно выполнять запросы к памяти в куче и получать уровень нехватки памяти в процессе, сообщаемый узлом.  
   
@@ -52,9 +53,9 @@ ms.locfileid: "95731336"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMalloc](ihostmalloc-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

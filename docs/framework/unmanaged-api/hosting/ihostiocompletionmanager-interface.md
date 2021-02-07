@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IHostIoCompletionManager'
 title: Интерфейс IHostIoCompletionManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818
 topic_type:
 - apiref
-ms.openlocfilehash: 75ad8670008242008aa344835143ff9b2add0a6c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 30cb0ecbfd9645bc0374e3570751832d6fa8eced
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708324"
 ---
 # <a name="ihostiocompletionmanager-interface"></a>Интерфейс IHostIoCompletionManager
 
@@ -41,7 +42,7 @@ ms.locfileid: "95719597"
 |[Метод SetMaxThreads](ihostiocompletionmanager-setmaxthreads-method.md)|Задает максимальное число потоков, которое узел запрашивает для обслуживания запросов ввода-вывода.|  
 |[Метод SetMinThreads](ihostiocompletionmanager-setminthreads-method.md)|Задает минимальное число потоков, которое узел должен выделить при завершении ввода-вывода.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostIoCompletionManager` соответствует `ICLRIoCompletionManager` интерфейсу, реализованному средой CLR. Среда CLR вызывает методы `IHostIoCompletionManager` для привязки дескрипторов к портам, предоставляемым узлом, и узел вызывает методы `ICLRIoCompletionManager` для сообщения о завершении запросов ввода-вывода.  
   
@@ -53,8 +54,8 @@ ms.locfileid: "95719597"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)

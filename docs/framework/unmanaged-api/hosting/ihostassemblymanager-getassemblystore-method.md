@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostAssemblyManager:: Жетассемблисторе'
 title: Метод IHostAssemblyManager::GetAssemblyStore
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
 topic_type:
 - apiref
-ms.openlocfilehash: 936ea068f3cc5567a00af5f2bdd5f3d9cd52bc81
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5edfdc5481803ce0dd3a6f8f400b18e3f1600ea8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709117"
 ---
 # <a name="ihostassemblymanagergetassemblystore-method"></a>Метод IHostAssemblyManager::GetAssemblyStore
 
@@ -51,7 +52,7 @@ HRESULT GetAssemblyStore (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_NOINTERFACE|Узел не предоставляет реализацию `IHostAssemblyStore` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IHostAssemblyStore` предоставляет методы, позволяющие узлу выполнять привязку к сборкам и модулям независимо от среды CLR. Узлы обычно предоставляют хранилища сборок, позволяющие загружать сборки из форматов, отличных от файловой системы.  
   
@@ -66,9 +67,9 @@ HRESULT GetAssemblyStore (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)
 - [Интерфейс IHostAssemblyStore](ihostassemblystore-interface.md)

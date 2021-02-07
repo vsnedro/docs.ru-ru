@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostMemoryManager:: CreateMAlloc'
 title: Метод IHostMemoryManager::CreateMAlloc
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
 topic_type:
 - apiref
-ms.openlocfilehash: 79580170d544cd3763992a4bc67fd20e3446bb1d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: de73490a5c8b4e1672beb4750bcc617c2371f07b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95685725"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707893"
 ---
 # <a name="ihostmemorymanagercreatemalloc-method"></a>Метод IHostMemoryManager::CreateMAlloc
 
@@ -55,7 +56,7 @@ HRESULT CreateMalloc (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно физической памяти для завершения запроса на выделение.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CreateMAlloc` Возвращает объект, позволяющий среде CLR выполнять запросы на выделение через основное приложение, а не использовать стандартные функции Win32.  
   
@@ -67,9 +68,9 @@ HRESULT CreateMalloc (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMalloc](ihostmalloc-interface.md)
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

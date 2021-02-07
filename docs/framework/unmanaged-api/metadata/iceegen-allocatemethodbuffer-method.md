@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICeeGen:: Аллокатемесодбуффер'
 title: Метод ICeeGen::AllocateMethodBuffer
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 845ab77e-9639-47f5-99fb-f3b619e3e779
 topic_type:
 - apiref
-ms.openlocfilehash: e1849eb95401e3637a1fd1b00715332f9886071e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ced5ac8b4fdd89fc41c2c70b68c5b49843a519e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707167"
 ---
 # <a name="iceegenallocatemethodbuffer-method"></a>Метод ICeeGen::AllocateMethodBuffer
 
@@ -57,8 +58,8 @@ HRESULT AllocateMethodBuffer (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICeeGen](iceegen-interface.md)

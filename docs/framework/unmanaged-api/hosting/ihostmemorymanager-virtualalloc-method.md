@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostMemoryManager:: VirtualAlloc'
 title: Метод IHostMemoryManager::VirtualAlloc
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
 topic_type:
 - apiref
-ms.openlocfilehash: a2deabc5f1c7ea0f42b6d8ec3944d984854ae571
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 28682aea5e6e7951b3b8f0a9af946a3f3828601b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707856"
 ---
 # <a name="ihostmemorymanagervirtualalloc-method"></a>Метод IHostMemoryManager::VirtualAlloc
 
@@ -71,7 +72,7 @@ HRESULT VirtualAlloc (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно памяти для завершения запроса на выделение|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы зарезервировать регион в адресном пространстве процесса, вызовите метод `VirtualAlloc` . `pAddress`Параметр содержит начальный адрес требуемого блока памяти. Обычно этот параметр имеет значение null. Операционная система хранит записи доступных диапазонов свободных адресов для вашего процесса. `pAddress`Значение NULL предписывает системе зарезервировать регион везде, где он видит. Кроме того, можно указать конкретный начальный адрес для блока памяти. В обоих случаях выходной параметр возвращается в `ppMem` виде указателя на выделенную память. Сама функция возвращает значение HRESULT.  
   
@@ -85,8 +86,8 @@ HRESULT VirtualAlloc (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)

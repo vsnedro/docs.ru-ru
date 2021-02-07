@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostAssemblyStore::P Ровидемодуле'
 title: Метод IHostAssemblyStore::ProvideModule
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
 topic_type:
 - apiref
-ms.openlocfilehash: 35805d277774e1de03bb7dee1740a2e1305a97c9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e783b9f8db303d095995507689d7567225a51fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733000"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709031"
 ---
 # <a name="ihostassemblystoreprovidemodule-method"></a>Метод IHostAssemblyStore::ProvideModule
 
@@ -64,7 +65,7 @@ HRESULT ProvideModule (
 |COR_E_FILENOTFOUND (0x80070002)|Не удалось найти запрошенную сборку или связанный ресурс.|  
 |E_NOT_SUFFICIENT_BUFFER|`pdwModuleId` недостаточно велик, чтобы вместить идентификатор, который требуется вернуть узлу.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение идентификатора, возвращенное для `pdwModuleId` , задается узлом. Идентификаторы должны быть уникальными в течение всего времени существования процесса. Среда CLR использует это значение в качестве уникального идентификатора для связанного потока. Он проверяет каждое значение по значениям `pAssemblyId` , возвращаемым вызовами [провидеассембли](ihostassemblystore-provideassembly-method.md) , и значениями, `pdwModuleId` возвращаемыми другими вызовами метода `ProvideModule` . Если узел возвращает одно и то же значение идентификатора для другого `IStream` , среда CLR проверяет, было ли уже сопоставлено содержимое этого потока. Если это так, среда CLR загружает существующую копию изображения вместо сопоставления нового. Таким образом, идентификатор также не должен перекрываться с идентификаторами сборок, возвращенными из `ProvideAssembly` .  
   
@@ -76,9 +77,9 @@ HRESULT ProvideModule (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

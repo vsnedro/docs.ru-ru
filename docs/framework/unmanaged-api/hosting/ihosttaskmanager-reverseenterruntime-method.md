@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostTaskManager:: Реверсинтеррунтиме'
 title: Метод IHostTaskManager::ReverseEnterRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b1e26bff-d3ea-436e-9867-29720df999f4
 topic_type:
 - apiref
-ms.openlocfilehash: 163bf3327219f1198c5ed078308096ac3d0325be
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1c2d2d7d60bd110999591ed5e94c86d680560d12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707552"
 ---
 # <a name="ihosttaskmanagerreverseenterruntime-method"></a>Метод IHostTaskManager::ReverseEnterRuntime
 
@@ -44,7 +45,7 @@ HRESULT ReverseEnterRuntime ();
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно памяти для завершения запрошенного выделения ресурсов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если вызов среды CLR выполняется из последовательности, порожденной в управляемом коде, каждый вызов `ReverseEnterRuntime` соответствует вызову [ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md).  
   
@@ -59,9 +60,9 @@ HRESULT ReverseEnterRuntime ();
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)
