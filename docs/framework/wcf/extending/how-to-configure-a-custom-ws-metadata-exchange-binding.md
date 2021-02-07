@@ -1,20 +1,21 @@
 ---
+description: Дополнительные сведения см. в статье Настройка пользовательской привязки WS-Metadata Exchange.
 title: Практическое руководство. Настройка пользовательской привязки для обмена WS-Metadata
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-Metadata Exchange [WCF]
 - WS-Metadata Exchange [WCF], configuring a custom binding
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
-ms.openlocfilehash: 6459e3f0cf0ab72af8027bd6802a0e7aa574aece
-ms.sourcegitcommit: 1c1a1f9ec0bd1efb3040d86a79f7ee94e207cca5
+ms.openlocfilehash: ae9d1932e7539d25c117a98bd130d1def8e691fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80635783"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743737"
 ---
 # <a name="how-to-configure-a-custom-ws-metadata-exchange-binding"></a>Практическое руководство. Настройка пользовательской привязки для обмена WS-Metadata
 
-В этой статье объясняется, как настроить пользовательский привязку обмена WS-Metadata. Фонд связи Windows (WCF) включает в себя четыре системно-определяемые привязки метаданных, но вы можете публиковать метаданные с помощью любой необходимой привязки. В этой статье показано, как публиковать `wsHttpBinding`метаданные с помощью . Эта привязка позволяет предоставлять метаданные безопасным способом. Код в этой статье основан на [начало](../samples/getting-started-sample.md).  
+В этой статье объясняется, как настроить настраиваемую привязку WS-Metadata Exchange. Windows Communication Foundation (WCF) включает четыре определяемые системой привязки метаданных, но метаданные можно публиковать с помощью любой требуемой привязки. В этой статье показано, как опубликовать метаданные с помощью `wsHttpBinding` . Эта привязка позволяет предоставлять метаданные безопасным способом. Код в этой статье основан на [Начало работы](../samples/getting-started-sample.md).  
   
 ### <a name="using-a-configuration-file"></a>Использование файла конфигурации  
   
@@ -45,7 +46,7 @@ ms.locfileid: "80635783"
               contract="IMetadataExchange" />  
     ```  
   
-4. Чтобы проверить правильное работу конечная точка обмена метаданными, добавьте тег конечных точек в файл конфигурации клиента:  
+4. Чтобы убедиться, что конечная точка обмена метаданными работает правильно, добавьте тег конечной точки в файл конфигурации клиента:  
   
     ```xml  
     <endpoint name="MyMexEndpoint"               address="http://localhost:8000/servicemodelsamples/service/mex"  

@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье ведение журнала событий в WCF.
 title: Ведение журнала событий в WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
 - event logging [WCF]
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
-ms.openlocfilehash: 535b3570f41cbfb277eeb14fb07242b528acea46
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 741e6efce9f5fffec607d511f04a400e1292b682
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96236160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744218"
 ---
 # <a name="event-logging-in-wcf"></a>Ведение журнала событий в WCF
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Енуммесодсвиснаме'
 title: Метод IMetaDataImport::EnumMethodsWithName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8624913-2e23-46ad-a0c1-bb8eccbbf20f
 topic_type:
 - apiref
-ms.openlocfilehash: 5b5345fc4819716dc6c2a00323f94546cfc67f32
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b77fc15bd7752b5b6b2b95d66a6bf04518616884
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745610"
 ---
 # <a name="imetadataimportenummethodswithname-method"></a>Метод IMetaDataImport::EnumMethodsWithName
 
@@ -59,7 +60,7 @@ HRESULT EnumMethodsWithName (
  `pcTokens`  
  заполняет Число токенов MethodDef, возвращаемых в `rMethods` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод перечисляет поля и методы, но не свойства или события. В отличие от метода [IMetaDataImport:: enummethods-](imetadataimport-enummethods-method.md), `EnumMethodsWithName` отменяет все маркеры методов, у которых нет указанного имени.  
   
@@ -78,9 +79,9 @@ HRESULT EnumMethodsWithName (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

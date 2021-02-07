@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDebugManager:: Бегинконнектион'
 title: Метод ICLRDebugManager::BeginConnection
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdd98146-ff4d-4150-a264-a4c1a32d31f3
 topic_type:
 - apiref
-ms.openlocfilehash: c5b41e4209141c0396ec8a1da766b80043be8807
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9b4ee64ad96bddfd5d7d650b657c6691b27d8c69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746143"
 ---
 # <a name="iclrdebugmanagerbeginconnection-method"></a>Метод ICLRDebugManager::BeginConnection
 
@@ -56,7 +57,7 @@ HRESULT BeginConnection (
 |E_INVALIDARG|`dwConnectionId` был равен нулю или `BeginConnection` уже был вызван с помощью этого `dwConnectionId` значения или `szConnectionName` был равен null.|  
 |E_OUTOFMEMORY|Не удалось выделить достаточно памяти для размещения списка задач, связанных с этим соединением.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  [ICLRDebugManager](iclrdebugmanager-interface.md) предоставляет три метода, `BeginConnection` , [SetConnectionTasks](iclrdebugmanager-setconnectiontasks-method.md)и [ендконнектион](iclrdebugmanager-endconnection-method.md)для связывания списков задач с идентификаторами и понятными именами.  
   
@@ -71,9 +72,9 @@ HRESULT BeginConnection (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Метод IMetaDataEmit:: Save'
 title: Метод IMetaDataEmit::Save
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c1de8400-adfe-4a71-b828-a1d0cc1ea505
 topic_type:
 - apiref
-ms.openlocfilehash: cef238239417a0a30cd94eaa8bd60968cfa78859
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bf8675540ae2c851d2b6ed14883c9b75e9631903
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745870"
 ---
 # <a name="imetadataemitsave-method"></a>Метод IMetaDataEmit::Save
 
@@ -51,9 +52,9 @@ HRESULT Save (
   
  **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Жеткустоматтрибутепропс'
 title: Метод IMetaDataImport::GetCustomAttributeProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
 topic_type:
 - apiref
-ms.openlocfilehash: b92e9ab714e2d8d2c66ed5546deba16352e8e390
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9bd8e83301252d7ead225146e562d3a58feb244a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711147"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745389"
 ---
 # <a name="imetadataimportgetcustomattributeprops-method"></a>Метод IMetaDataImport::GetCustomAttributeProps
 
@@ -55,7 +56,7 @@ HRESULT GetCustomAttributeProps (
  `pcbSize`  
  [out, optional] Размер в байтах данных, возвращаемых в *`ppBlob`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Пользовательский атрибут хранится в виде массива данных, в формате, который поддерживается подсистемой метаданных.  
   
@@ -67,9 +68,9 @@ HRESULT GetCustomAttributeProps (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

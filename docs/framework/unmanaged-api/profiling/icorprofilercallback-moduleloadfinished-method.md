@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: ModuleLoadFinished'
 title: Метод ICorProfilerCallback::ModuleLoadFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 050649e5-ffc0-4458-a0a4-d9ee128a219e
 topic_type:
 - apiref
-ms.openlocfilehash: 5a29507ca56cac4ab800845e3a88706dc7a25379
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 960eb9edd036055069ef3f9ab3a93602ce4ef9bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95683996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745350"
 ---
 # <a name="icorprofilercallbackmoduleloadfinished-method"></a>Метод ICorProfilerCallback::ModuleLoadFinished
 
@@ -42,7 +43,7 @@ HRESULT ModuleLoadFinished(
  `hrStatus`  
  окне Значение HRESULT, указывающее, успешно ли загружен модуль.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение недопустимо `moduleId` для информационного запроса до `ModuleLoadFinished` вызова метода.  
   
@@ -56,9 +57,9 @@ HRESULT ModuleLoadFinished(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ModuleLoadStarted](icorprofilercallback-moduleloadstarted-method.md)

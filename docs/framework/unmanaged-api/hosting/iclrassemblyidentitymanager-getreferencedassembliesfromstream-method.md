@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRAssemblyIdentityManager:: Жетреференцедассемблиесфромстреам'
 title: Метод ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fe9849c1-c3fc-477b-a31f-e8619f5516f5
 topic_type:
 - apiref
-ms.openlocfilehash: a5e71d6ca90c8d0aa489176eb5a90bfe6896b1cb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9173587125e7b528e203dcb7e6a19d3e3f2fb990
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746117"
 ---
 # <a name="iclrassemblyidentitymanagergetreferencedassembliesfromstream-method"></a>Метод ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream
 
@@ -62,7 +63,7 @@ HRESULT GetReferencedAssembliesFromStream (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызывающий объект может исключить набор известных ссылок на сборки из возвращенного списка. Этот набор определяется `pExcludeAssembliesList` .  
   
@@ -74,9 +75,9 @@ HRESULT GetReferencedAssembliesFromStream (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

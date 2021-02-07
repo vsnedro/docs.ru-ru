@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: ObjectAllocated'
 title: Метод ICorProfilerCallback::ObjectAllocated
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type:
 - apiref
-ms.openlocfilehash: fda234a6a280aeea1f497ad195d6d41efb6aa951
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58b58aeb4bb88d0df32cebc32440317a4d23632d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745168"
 ---
 # <a name="icorprofilercallbackobjectallocated-method"></a>Метод ICorProfilerCallback::ObjectAllocated
 
@@ -42,7 +43,7 @@ HRESULT ObjectAllocated(
  `classId`  
  окне Идентификатор класса, экземпляр которого является объектом.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ObjectedAllocated`Метод не вызывается для выделений из стека или неуправляемой памяти. `classId`Параметр может ссылаться на класс в управляемом коде, который еще не был загружен. Профилировщик получит обратный вызов загрузки класса для этого класса сразу после `ObjectAllocated` обратного вызова.  
   
@@ -54,9 +55,9 @@ HRESULT ObjectAllocated(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Метод ClassLoadStarted](icorprofilercallback-classloadstarted-method.md)
