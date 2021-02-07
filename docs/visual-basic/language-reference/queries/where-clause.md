@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении WHERE (Visual Basic)
 title: Предложение Where
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - queries [Visual Basic], Where
 - Where clause [Visual Basic]
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
-ms.openlocfilehash: 3a43554fb25592bf413525a2df109010e4868492
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 11f9a7e586a1fdea826df4fb34a7227747c8cebd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730321"
 ---
 # <a name="where-clause-visual-basic"></a>Предложение Where (Visual Basic)
 
@@ -54,6 +55,6 @@ Where condition
 
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение SELECT](select-clause.md)
 - [Оператор For Each…Next](../statements/for-each-next-statement.md)

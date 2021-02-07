@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: настраиваемый элемент для Синглетагсектионхандлер'
 title: Настраиваемый элемент для Синглетагсектионхандлер
 ms.date: 05/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom element
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
-ms.openlocfilehash: a40f35838655f6021af0b2e966335803ec8c16b4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 83022a1ebf295b89d5f868589e3d9a77c78e3fab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "80635398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729983"
 ---
 # <a name="custom-element-for-singletagsectionhandler"></a>Настраиваемый элемент для Синглетагсектионхандлер
 
@@ -61,8 +62,8 @@ None
 
 ## <a name="configuration-file"></a>Файл конфигурации
 
-Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine. config*) и файлах *Web. config* , не находящимся на уровне каталога приложения.
+Этот элемент можно использовать в файле конфигурации приложения, файле конфигурации компьютера (*Machine.config*) и *Web.config* файлах, которые не находятся на уровне каталога приложений.
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

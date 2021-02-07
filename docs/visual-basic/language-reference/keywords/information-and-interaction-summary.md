@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее: сведения и сводка по взаимодействию (Visual Basic)'
 title: Сводка по сведениям и взаимодействию
 ms.date: 07/20/2015
 helpviewer_keywords:
 - information functions [Visual Basic]
 - interaction functions [Visual Basic]
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
-ms.openlocfilehash: 05a830ad633f7307cb63630d02c81d7897b840a0
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: c2594e0f36115c5deada63e3a87ac2ae9fa5fd6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730594"
 ---
 # <a name="information-and-interaction-summary-visual-basic"></a>Сводка по сведениям и взаимодействию (Visual Basic)
 

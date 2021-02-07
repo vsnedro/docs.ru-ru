@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: out (универсальный модификатор) (Visual Basic)'
 title: out (универсальный модификатор)
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Out keyword [Visual Basic]
 - covariance, Out keyword [Visual Basic]
 ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
-ms.openlocfilehash: 28ae7d6fd51170aa822072fc2f5357443f51a353
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cdf80439fbae0d2411eecff1c7e8438534fcfdc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730542"
 ---
 # <a name="out-generic-modifier-visual-basic"></a>Out (универсальный модификатор) (Visual Basic)
 
 Для параметров универсального типа `Out` ключевое слово указывает, что тип является ковариантным.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Ковариация позволяет использовать производные типы со степенью наследования больше, нежели у типа, заданного универсальным параметром. Благодаря этому можно осуществлять неявное преобразование классов, реализующих вариантные интерфейсы, и неявное преобразование типов делегатов.
 
@@ -61,7 +62,7 @@ ms.locfileid: "84392097"
 
 [!code-vb[vbVarianceKeywords#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvariancekeywords/vb/module1.vb#4)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Вариативность в универсальных интерфейсах](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
-- [В](in-generic-modifier.md)
+- [Где](in-generic-modifier.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье сводка по датам и времени (Visual Basic)
 title: Сводка элементов для работы со значениями дат и времени
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - time, Visual Basic keywords and run-time library members
 - time data types [Visual Basic]
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
-ms.openlocfilehash: d9cda55c70779bf0f7ba9a605bb07b6fe50c02c3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 528d005f177d7ebeb4d5e374e006d5f2f5b80192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730854"
 ---
 # <a name="dates-and-times-summary-visual-basic"></a>Сводка элементов для работы со значениями даты и времени (Visual Basic)
 

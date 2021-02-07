@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <assemblyBinding> Element для <configuration>'
 title: Элемент <assemblyBinding> для <configuration>
 ms.date: 03/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assemblyBinding Element
 - <assemblyBinding> Element
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-ms.openlocfilehash: 21cf5e749b0dae310c3326f8abf82c6678fc97e9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5cc3fc7cccd4b9dc7b62815734ff76e32e2243d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730113"
 ---
 # <a name="assemblybinding-element-for-configuration"></a>Элемент \<assemblyBinding> для \<configuration>
 
@@ -28,7 +29,7 @@ ms.locfileid: "79155483"
 </assemblyBinding>
 ```
 
-## <a name="attribute"></a>Атрибут
+## <a name="attribute"></a>attribute
 
 |           | Описание |
 | --------- | ----------- |
@@ -46,7 +47,7 @@ ms.locfileid: "79155483"
 | --- | ----------- |
 | [**\<linkedConfiguration>**](linkedconfiguration-element.md) | Указание файла конфигурации, который следует включить. |
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 [**\<linkedConfiguration>**](linkedconfiguration-element.md)Элемент упрощает управление сборками компонентов, позволяя файлам конфигурации приложения включать файлы конфигурации сборки в хорошо известные расположения, а не дублировать параметры конфигурации сборки.
 
@@ -67,4 +68,4 @@ ms.locfileid: "79155483"
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](index.md)
+- [Схема файла конфигурации для платформа .NET Framework](index.md)

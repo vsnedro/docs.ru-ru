@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Схема файла конфигурации для платформа .NET Framework
 title: Схема файлов конфигурации для .NET Framework
 ms.date: 05/01/2017
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - configuration settings [.NET Framework], applications
 - configuration file reference [.NET Framework]
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-ms.openlocfilehash: ab6f12be01899f5b7e54a7ec2d9675d502d88bc3
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: eac6d14f29f5ae0eeb65efe5a1416b8f40583be3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729957"
 ---
 # <a name="configuration-file-schema-for-the-net-framework"></a>Схема файлов конфигурации для .NET Framework
 
@@ -55,7 +56,7 @@ ms.locfileid: "90555137"
 Элементы, которые настраивают привязку сборки и поведение во время выполнения.
 
 [Схема параметров сети](./network/index.md)\
-Элементы, указывающие, как .NET Framework подключается к Интернету.
+Элементы, указывающие, как платформа .NET Framework подключается к Интернету.
 
 [Схема параметров шифрования](./cryptography/index.md)\
 Элементы, которые сопоставляют понятные имена алгоритмов с классами, реализующими алгоритмы шифрования.
@@ -101,5 +102,5 @@ ms.locfileid: "90555137"
 [Схема параметров веб-служб](/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100))\
 Описание элемента, управляющего поведением веб-служб ASP.NET Web и их клиентов.
 
-[Настройка приложений .NET Framework](/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))\
+[Настройка приложений платформа .NET Framework](/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))\
 Описание способов настройки безопасности, привязки сборок и удаленного взаимодействия в платформе .NET Framework.
