@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: создание столбцов выражений'
 title: Создание столбцов выражений
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0af3bd64-92a2-4b47-ae62-f5df35f131a6
-ms.openlocfilehash: ad14e4d3d6a1107f994d9536485257f9dc1851f5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 96b445734d645a957951a1d4cbd9d72ed254068f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724990"
 ---
 # <a name="creating-expression-columns"></a>Создание столбцов выражений
 
@@ -39,7 +40,7 @@ workTable.Columns.Add("SalesTax", typeof(Double), "Total * 0.086");
   
  Выражение может содержать ссылки на другие столбцы выражений, но циклическая ссылка, при которой два выражения ссылаются друг на друга, вызовет исключение. Правила написания выражений см. в описании <xref:System.Data.DataColumn.Expression%2A> Свойства класса **DataColumn** .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Data.DataColumn>
 - <xref:System.Data.DataSet>
