@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугчаиненум:: Next'
 title: Метод ICorDebugChainEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b791351-bcc5-4ddd-9cab-eff2f7dd5142
 topic_type:
 - apiref
-ms.openlocfilehash: 0f42020821ec71d1e59ae8097f22ee530e16a576
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ab6665eb5af6d9f145f9aab67aeb75b4769e7e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711574"
 ---
 # <a name="icordebugchainenumnext-method"></a>Метод ICorDebugChainEnum::Next
 
@@ -56,4 +57,4 @@ HRESULT Next (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

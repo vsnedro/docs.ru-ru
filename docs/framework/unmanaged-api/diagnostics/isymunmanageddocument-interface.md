@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedDocument'
 title: Интерфейс ISymUnmanagedDocument
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5c26b366-6e81-467c-9dd0-02dd26fee0a3
 topic_type:
 - apiref
-ms.openlocfilehash: 83c683e1f60f13f7cee4ddc6fe5af5a94e36eb93
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd1907e570dd15ebcac3ee12aa09c626c9bb7787
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710144"
 ---
 # <a name="isymunmanageddocument-interface"></a>Интерфейс ISymUnmanagedDocument
 
@@ -40,6 +41,6 @@ ms.locfileid: "95692180"
 |[Метод GetURL](isymunmanageddocument-geturl-method.md)|Возвращает URL-адрес для этого документа.|  
 |[Метод HasEmbeddedSource](isymunmanageddocument-hasembeddedsource-method.md)|Возвращает `true` , если документ имеет исходный код, внедренный в отладочные символы; в противном случае возвращает `false` .|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)

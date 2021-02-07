@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе ICorDebugCode
 title: Интерфейс ICorDebugCode
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7bd14fb6-8b54-4484-a891-e3c21859c019
 topic_type:
 - apiref
-ms.openlocfilehash: 03cbc1a598ba6c0166f72ff404c239763956c996
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ce67c48501783bbe00152f0ba2c224e6e7dde6d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687610"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711158"
 ---
 # <a name="icordebugcode-interface"></a>Интерфейс ICorDebugCode
 
@@ -39,7 +40,7 @@ ms.locfileid: "95687610"
 |[Метод GetVersionNumber](icordebugcode-getversionnumber-method.md)|Возвращает номер, отсчитываемый от единицы, определяющий версию кода, который представляет данный объект `ICorDebugCode` .|  
 |[Метод IsIL](icordebugcode-isil-method.md)|Возвращает значение, указывающее, `ICorDebugCode` компилируется ли это в MSIL.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugCode` может представлять язык MSIL или машинный код. Объект "ICorDebugFunction", представляющий код MSIL, может быть связан с нулем или `ICorDebugCode` с одним объектом. Объект "ICorDebugFunction", представляющий машинный код, может иметь любое количество `ICorDebugCode` связанных с ним объектов.  
   
@@ -54,9 +55,9 @@ ms.locfileid: "95687610"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugCode3](icordebugcode3-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

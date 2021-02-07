@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugClass'
 title: Интерфейс ICorDebugClass
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 03a6facb-f12f-49be-9839-e73b9c791cd5
 topic_type:
 - apiref
-ms.openlocfilehash: 4f488741f4233f06c128e0a262ce798ef27af3ff
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5ded26a8b3a98bd273bbfe1bfa9efd1bb70d5595
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699642"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711509"
 ---
 # <a name="icordebugclass-interface"></a>Интерфейс ICorDebugClass
 
@@ -33,11 +34,11 @@ ms.locfileid: "95699642"
 |[Метод GetStaticFieldValue](icordebugclass-getstaticfieldvalue-method.md)|Возвращает значение указанного статического поля.|  
 |[Метод GetToken](icordebugclass-gettoken-method.md)|Возвращает `TypeDef` маркер метаданных для этого класса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugClass`Интерфейс представляет универсальный тип, экземпляр которого не был создан. Интерфейс ICorDebugType представляет экземпляр универсального типа. Например, будет `Hashtable<K, V>` представлено `ICorDebugClass` , а будет `Hashtable<Int32, String>` представлено `ICorDebugType` .  
   
- Типы, не являющиеся универсальными, представлены как, так `ICorDebugClass` и `ICorDebugType` . Последний интерфейс появился в .NET Framework версии 2,0 для обработки создания экземпляра типа.  
+ Типы, не являющиеся универсальными, представлены как, так `ICorDebugClass` и `ICorDebugType` . Последний интерфейс появился в платформа .NET Framework версии 2,0 для обработки создания экземпляра типа.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -50,8 +51,8 @@ ms.locfileid: "95699642"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

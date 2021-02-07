@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугблоккингобжектенум:: Next'
 title: Метод ICorDebugBlockingObjectEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0121753f-ebea-48d0-aeb2-ed7fda76dc60
 topic_type:
 - apiref
-ms.openlocfilehash: 232068a5fee8f7bd3dfbddf4d9452e80d6fd6170
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 66999ebf333c7115790b56afc1dc1d1ab7c47d69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711821"
 ---
 # <a name="icordebugblockingobjectenumnext-method"></a>Метод ICorDebugBlockingObjectEnum::Next
 
@@ -55,7 +56,7 @@ HRESULT Next([in] ULONG  celt,
 |S_OK|Метод завершился успешно.|  
 |S_FALSE|Значение параметра `pceltFetched` не равно `celt`.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод работает, как типичный перечислитель COM.  
   
@@ -72,9 +73,9 @@ HRESULT Next([in] ULONG  celt,
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugDataTarget](icordebugdatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

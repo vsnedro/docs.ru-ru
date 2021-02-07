@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugDataTarget:: GetThreadContext'
 title: Метод ICorDebugDataTarget::GetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8954268-1821-4b23-b665-dbb55f2af31b
 topic_type:
 - apiref
-ms.openlocfilehash: faacea6a2f04ef20025fd33adb4ce76eaf54f32c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf40579aa0a495af4e5e775334d177ca6f3da86f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710638"
 ---
 # <a name="icordebugdatatargetgetthreadcontext-method"></a>Метод ICorDebugDataTarget::GetThreadContext
 
@@ -50,7 +51,7 @@ HRESULT GetThreadContext(
  `pContext`  
  заполняет Буфер, в котором будет храниться контекст потока.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  На платформах Windows `pContext` должна быть `CONTEXT` Структура (определенная в Winnt. h), подходящая для типа компьютера, указанного в методе [ICorDebugDataTarget::-Platform](icordebugdatatarget-getplatform-method.md) . `contextFlags` должны иметь те же значения, что и `ContextFlags` поле `CONTEXT` структуры. `CONTEXT`Структура зависит от конкретного процессора; дополнительные сведения см. в файле WINNT. h.  
   
@@ -62,9 +63,9 @@ HRESULT GetThreadContext(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugDataTarget](icordebugdatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

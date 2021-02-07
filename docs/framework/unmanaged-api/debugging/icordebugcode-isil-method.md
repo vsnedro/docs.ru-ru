@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugCode:: ИСИЛ'
 title: Метод ICorDebugCode::IsIL
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 132ef8cc-d938-43f3-b8f2-e3b97c0ceb33
 topic_type:
 - apiref
-ms.openlocfilehash: 77e55c4c3644ac4bd76f5c92152f4ee86cf5fa9a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: db41f9ebaa6a6403b21e10d1daa0e8b167c7cb96
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711132"
 ---
 # <a name="icordebugcodeisil-method"></a>Метод ICorDebugCode::IsIL
 
@@ -37,7 +38,7 @@ HRESULT IsIL (
 ## <a name="parameters"></a>Параметры
 
 `pbIL`  
-[out] `true`, если этот `ICorDebugCode` представляет код, скомпилированный в MSIL; в противном случае `false`.
+[out] `true` , если `ICorDebugCode` представляет код, скомпилированный в MSIL; в противном случае — `false` .
 
 ## <a name="requirements"></a>Требования
 
@@ -47,4 +48,4 @@ HRESULT IsIL (
 
 **Библиотека:** CorGuids.lib
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

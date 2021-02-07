@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugChain:: EnumerateFrames'
 title: Метод ICorDebugChain::EnumerateFrames
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9fcefa98-750d-4168-8915-8173a43accf2
 topic_type:
 - apiref
-ms.openlocfilehash: ae6d81e6fdab0f8e3346d8a08a3b5ebc329a542a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 45bf69760eeccebada743d81e859a19e209b611a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730153"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711600"
 ---
 # <a name="icordebugchainenumerateframes-method"></a>Метод ICorDebugChain::EnumerateFrames
 
@@ -39,7 +40,7 @@ HRESULT EnumerateFrames (
  `ppFrames`  
  заполняет Указатель на адрес объекта ICorDebugFrameEnum, который является перечислителем для кадров стека.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Цепочка представляет физический стек вызовов для потока.  
   
@@ -53,4 +54,4 @@ HRESULT EnumerateFrames (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

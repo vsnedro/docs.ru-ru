@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedDocument:: GetDocumentType'
 title: Метод ISymUnmanagedDocument::GetDocumentType
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2d381ab1-7e7c-4281-af2b-e54d879b3ef8
 topic_type:
 - apiref
-ms.openlocfilehash: d30ee9318d76aaf3ad2cde789ae292aed54f457e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf2ceffccb33eb7cba0d45af203e12d1e4244f60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710326"
 ---
 # <a name="isymunmanageddocumentgetdocumenttype-method"></a>Метод ISymUnmanagedDocument::GetDocumentType
 
@@ -42,6 +43,6 @@ HRESULT GetDocumentType(
 
  S_OK, если метод выполнен.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedDocument](isymunmanageddocument-interface.md)

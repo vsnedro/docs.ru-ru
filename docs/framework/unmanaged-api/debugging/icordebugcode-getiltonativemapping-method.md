@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICorDebugCode:: GetILToNativeMapping'
 title: Метод ICorDebugCode::GetILToNativeMapping
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8ecd8c8-9627-4356-9c6f-bd05e24637c0
 topic_type:
 - apiref
-ms.openlocfilehash: 0adb9e58ca2c6b5b430a0413fa11ba59d79a0539
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 808ed450fced8afecc2b637a3b990a894897b350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711197"
 ---
 # <a name="icordebugcodegetiltonativemapping-method"></a>Метод ICorDebugCode::GetILToNativeMapping
 
@@ -50,7 +51,7 @@ HRESULT GetILToNativeMapping (
   
  Порядок для массива возвращаемых элементов отсутствует.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetILToNativeMapping`Метод возвращает значимые результаты только в том случае, если этот экземпляр "ICorDebugCode" представляет машинный код, который был скомпилирован из кода MSIL в JIT-режиме.  
   
@@ -62,8 +63,8 @@ HRESULT GetILToNativeMapping (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugCode](icordebugcode-interface1.md)

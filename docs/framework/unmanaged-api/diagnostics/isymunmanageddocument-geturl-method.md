@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ISymUnmanagedDocument:: GetURL'
 title: Метод ISymUnmanagedDocument::GetURL
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
 topic_type:
 - apiref
-ms.openlocfilehash: c862b6d3bfa415b622b68898db1ff30c6759e8f2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b39b36054d80f9ad2f9dd076e2055ccbc6526973
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726942"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710196"
 ---
 # <a name="isymunmanageddocumentgeturl-method"></a>Метод ISymUnmanagedDocument::GetURL
 
@@ -50,6 +51,6 @@ HRESULT GetURL(
 
  S_OK, если метод выполнен. в противном случае — код ошибки.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedDocument](isymunmanageddocument-interface.md)

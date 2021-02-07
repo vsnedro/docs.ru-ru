@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IDebuggerInfo'
 title: Интерфейс IDebuggerInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9395a8a0-ffb9-475f-8da6-890999ae4bb6
 topic_type:
 - apiref
-ms.openlocfilehash: 63114b07ff41639df61aa795bfedb0eb9f6334f6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ec5421d4efac2d50eb2900d58d7bd8ee80b6ead9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711654"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709832"
 ---
 # <a name="idebuggerinfo-interface"></a>Интерфейс IDebuggerInfo
 
@@ -39,9 +40,9 @@ ms.locfileid: "95711654"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)
 - [Компонентный класс CorRuntimeHost](corruntimehost-coclass.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugClass2'
 title: Интерфейс ICorDebugClass2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5416de70-43f2-4cdf-a11f-d570759c9c0c
 topic_type:
 - apiref
-ms.openlocfilehash: ce3f289ae914817071fad5274c45d1e5fae71a06
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 80aa8e59ccc774141e7fcea130d1fc6a38fa37da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711478"
 ---
 # <a name="icordebugclass2-interface"></a>Интерфейс ICorDebugClass2
 
@@ -32,7 +33,7 @@ ms.locfileid: "95717985"
 |[Метод GetParameterizedType](icordebugclass2-getparameterizedtype-method.md)|Возвращает объявление типа для этого класса.|  
 |[Метод SetJMCStatus](icordebugclass2-setjmcstatus-method.md)|Для каждого метода этого класса задает значение, указывающее, является ли метод определяемым пользователем кодом.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -45,9 +46,9 @@ ms.locfileid: "95717985"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugClass](icordebugclass-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: интерфейс метод icordebugdatatarget2'
 title: Интерфейс ICorDebugDataTarget2
 ms.date: 03/30/2017
 ms.assetid: 13f11388-2f91-48d8-98d6-6a4a63cb5746
-ms.openlocfilehash: aa1db39b564b987fb8d0f79d529f5af59b7e4c02
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 13a83ee99f0158f32f466f9ae29af3d917248f95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95713759"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710469"
 ---
 # <a name="icordebugdatatarget2-interface"></a>Интерфейс ICorDebugDataTarget2
 
@@ -23,7 +24,7 @@ ms.locfileid: "95713759"
 |[Метод GetImageLocation](icordebugdatatarget2-getimagelocation-method.md)|Возвращает путь для модуля из базового адреса модуля.|  
 |[Метод GetSymbolProviderForImage](icordebugdatatarget2-getsymbolproviderforimage-method.md)|Возвращает поставщика символов для модуля из базового адреса модуля.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс доступен только в .NET Native. При реализации этого интерфейса для сценариев ICorDebug вне .NET Native среда CLR будет игнорировать этот интерфейс.  
@@ -36,9 +37,9 @@ ms.locfileid: "95713759"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

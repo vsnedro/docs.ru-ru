@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугбреакпоинт'
 title: Интерфейс ICorDebugBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa5ad3d7-e1bb-42af-99bc-471224e3bcaa
 topic_type:
 - apiref
-ms.openlocfilehash: 0c84a91c7da553d0c84a4995b4744576d861dcb9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63917512cceeccedea37acdf2ba7ab3b849d9fad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730205"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711808"
 ---
 # <a name="icordebugbreakpoint-interface"></a>Интерфейс ICorDebugBreakpoint
 
@@ -32,7 +33,7 @@ ms.locfileid: "95730205"
 |[Метод Activate](icordebugbreakpoint-activate-method.md)|Задает активное состояние этого объекта `ICorDebugBreakpoint` .|  
 |[Метод IsActive](icordebugbreakpoint-isactive-method.md)|Возвращает значение, указывающее, является ли этот объект `ICorDebugBreakpoint` активным.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Точки останова не поддерживают непосредственно условные выражения. Если требуется такая функциональность, отладчик должен реализовать его поверх `ICorDebugBreakpoint` .  
   
@@ -49,8 +50,8 @@ ms.locfileid: "95730205"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

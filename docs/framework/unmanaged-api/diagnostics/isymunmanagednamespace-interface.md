@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ISymUnmanagedNamespace'
 title: Интерфейс ISymUnmanagedNamespace
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d42bea4e-5848-4e43-a883-69af7a313ce9
 topic_type:
 - apiref
-ms.openlocfilehash: d9b295060426acd7f925bcf19c05ba216fdc2a4d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff2cd2286ab006411a70ff9aa32c4f0265a73995
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707902"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709845"
 ---
 # <a name="isymunmanagednamespace-interface"></a>Интерфейс ISymUnmanagedNamespace
 
@@ -37,6 +38,6 @@ ms.locfileid: "95707902"
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы хранилища символов диагностики](diagnostics-symbol-store-interfaces.md)
