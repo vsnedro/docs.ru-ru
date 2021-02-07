@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <issuerTokenResolver>'
 title: <issuerTokenResolver>
 ms.date: 03/30/2017
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
 author: BrucePerlerMS
-ms.openlocfilehash: 946ae8601e1e4563becd0b346b6c792724405a45
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 535b6f098e168a198eb0949d6baba6659e5140db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165043"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664097"
 ---
 # \<issuerTokenResolver>
 
@@ -48,7 +49,7 @@ ms.locfileid: "91165043"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -93,6 +94,6 @@ public override void LoadCustomConfiguration(System.Xml.XmlNodeList nodelist)
 }  
 ```
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Tokens.IssuerTokenResolver>

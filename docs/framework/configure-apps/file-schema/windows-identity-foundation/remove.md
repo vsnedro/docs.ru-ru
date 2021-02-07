@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <remove>'
 title: <remove>
 ms.date: 03/30/2017
 ms.assetid: 4058e2f1-7db4-4d1a-84dd-1b52836f2ae6
 author: BrucePerlerMS
-ms.openlocfilehash: c4ba7b6f2a9b9092c5f24d424c6de2b0f510ac88
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 942148f677e10bbab7b86acfba2d0fdfb1b10ca7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91165004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664071"
 ---
 # \<remove>
 
@@ -45,7 +46,7 @@ ms.locfileid: "91165004"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

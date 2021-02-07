@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <userNameAuthentication>'
 title: <userNameAuthentication>
 ms.date: 03/30/2017
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
-ms.openlocfilehash: 30fd78d6c56e8b22e0e744a38f18ac076dc70162
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0edd92ba343ec38207d60c99616058d0b28f045b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664448"
 ---
 # \<userNameAuthentication>
 
@@ -42,9 +43,9 @@ ms.locfileid: "91178038"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |`cacheLogonTokenLifetime`|Объект <xref:System.TimeSpan>, определяющий максимальный срок кэширования маркера. Значение по умолчанию - 00:15:00.|  
-|`cacheLogonTokens`|Логическое значение, которое указывает, кэшируются ли маркеры входа. Значение по умолчанию — `false`.|  
-|`customUserNamePasswordValidatorType`|Строка, указывающая тип настраиваемого проверяющего элемента управления для проверки имени пользователя и пароля. Значением по умолчанию является пустая строка.|  
-|`includeWindowsGroups`|Логическое значение, указывающее, включаются ли группы Windows в контекст безопасности. Значение по умолчанию — `true`.<br /><br /> Установка для этого атрибута значения `true` влияет на производительность, поскольку приводит к расширению всей группы. Если нет необходимости устанавливать список групп, которым принадлежит пользователь, установите значение `false`.|  
+|`cacheLogonTokens`|Логическое значение, которое указывает, кэшируются ли маркеры входа. Значение по умолчанию — `false`.|  
+|`customUserNamePasswordValidatorType`|Строка, указывающая тип настраиваемого проверяющего элемента управления для проверки имени пользователя и пароля. Значение по умолчанию - пустая строка.|  
+|`includeWindowsGroups`|Логическое значение, указывающее, включаются ли группы Windows в контекст безопасности. Значение по умолчанию — `true`.<br /><br /> Установка для этого атрибута значения `true` влияет на производительность, поскольку приводит к расширению всей группы. Если нет необходимости устанавливать список групп, которым принадлежит пользователь, установите значение `false`.|  
 |`maxCacheLogonTokens`|Целое число, указывающее максимальное количество маркеров входа для кэширования. Значение должно быть больше нуля. Значение по умолчанию — 128.|  
 |`membershipProviderName`|Если атрибуту `clientCredentialType` привязки задано значение `username`, имя пользователя сопоставляется с учетными записями Windows. Такое поведение можно переопределить с помощью этого атрибута, который является строкой, содержащей имя значения <xref:System.Web.Security.MembershipProvider>, предоставляющего соответствующий механизм проверки пароля.|  
 |`userNamePasswordValidationMode`|Указывает способ проверки пароля. Допустимые значения:<br /><br /> — Windows<br />-MembershipProvider<br />— Пользовательский<br /><br /> По умолчанию используется Windows. Это атрибут типа <xref:System.ServiceModel.Security.UserNamePasswordValidationMode>.|  
@@ -65,7 +66,7 @@ ms.locfileid: "91178038"
   
  Если ни одна из используемых службой привязок не настроена на использование проверки подлинности Windows для имени и пароля пользователя, параметры, относящиеся к кэшированию маркеров входа, пропускаются. К ним относятся `cacheLogonTokenLifetime`, `cacheLogonTokens` и `maxCacheLogonTokens`.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.UserNameServiceElement>
 - <xref:System.ServiceModel.Description.ServiceCredentials.UserNameAuthentication%2A>

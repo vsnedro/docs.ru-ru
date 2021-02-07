@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о безопасности доступа к коду и ADO.NET.
 title: Управление доступом для кода
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 93e099eb-daa1-4f1e-b031-c1e10a996f88
-ms.openlocfilehash: c4c18e8026dc230db896103d29d40426dbd11f16
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: e7a6054cd7c222c700f5a83e46f5b44bfee23248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664006"
 ---
 # <a name="code-access-security-and-adonet"></a>Управление доступом для кода и ADO.NET
 
@@ -211,7 +212,7 @@ Failed, as expected: Request failed.
   
  Платформа .NET Framework также поддерживает обратную совместимость с существующими COM-компонентами, предоставляя доступ через COM-взаимодействие. COM-компоненты можно встраивать в приложение .NET Framework, используя средства COM-взаимодействия для импорта соответствующих типов COM. Типы COM готовы к использованию сразу после импорта. COM-взаимодействие также позволяет клиентам COM получать доступ к управляемому коду путем экспорта метаданных сборки в библиотеку типов и регистрации управляемого компонента в виде COM-компонента. Дополнительные сведения см. в разделе [Advanced COM-взаимодействие](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100)).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](securing-ado-net-applications.md)
 - [Безопасность в машинном коде и коде .NET Framework](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))

@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: <chunkedCookieHandler>'
 title: <chunkedCookieHandler>
 ms.date: 03/30/2017
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f
 author: BrucePerlerMS
-ms.openlocfilehash: a321c10e04eca2c1a5204929966a1725e918cbdf
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b0090706d3d7a9f62e17ae63ec16e4b3a869a812
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158530"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664292"
 ---
 # \<chunkedCookieHandler>
 
@@ -45,7 +46,7 @@ ms.locfileid: "91158530"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -69,6 +70,6 @@ ms.locfileid: "91158530"
 </cookieHandler>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Services.ChunkedCookieHandler>
