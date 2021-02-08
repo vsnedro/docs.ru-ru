@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugAssemblyEnum:: Next'
 title: Метод ICorDebugAssemblyEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b3e7d0c2-3baa-4ef8-8e3f-b865cf252940
 topic_type:
 - apiref
-ms.openlocfilehash: dd915a82551f5bed688a28ab77f5d6cf4e38af0f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: feb77f22ec59fcc0e1b3f5590b7aee4efba13d01
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719259"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772228"
 ---
 # <a name="icordebugassemblyenumnext-method"></a>Метод ICorDebugAssemblyEnum::Next
 
@@ -56,4 +57,4 @@ HRESULT Next (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

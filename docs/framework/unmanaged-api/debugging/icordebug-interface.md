@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе ICorDebug
 title: Интерфейс ICorDebug
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type:
 - apiref
-ms.openlocfilehash: 21838bdd8ff45f8f74524dc4da52364fb032b396
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b989013f7eb54e163feeb965e10448a3a1756e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772527"
 ---
 # <a name="icordebug-interface"></a>Интерфейс ICorDebug
 
@@ -42,11 +43,11 @@ ms.locfileid: "95723406"
 |[Метод SetUnmanagedHandler](icordebug-setunmanagedhandler-method.md)|Указывает объект обработчика событий для неуправляемых событий.|  
 |[Метод Terminate](icordebug-terminate-method.md)|Завершает `ICorDebug` объект.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebug` представляет цикл обработки событий для процесса отладчика. Перед освобождением этого интерфейса отладчик должен ожидать обратного вызова [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) для всех отлаживаемых процессов.  
   
- `ICorDebug`Объект является начальным объектом для управления всеми дальнейшими управляемыми отладками. В .NET Framework версиях 1,0 и 1,1 этот объект был `CoClass` объектом, созданным из com. В .NET Framework версии 2,0 этот объект больше не является `CoClass` объектом. Она должна быть создана функцией [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) , которая поддерживает больше версий. Эта новая функция создания позволяет клиентам получить определенную реализацию `ICorDebug` , которая также эмулирует определенную версию API отладки.  
+ `ICorDebug`Объект является начальным объектом для управления всеми дальнейшими управляемыми отладками. В платформа .NET Framework версиях 1,0 и 1,1 этот объект был `CoClass` объектом, созданным из com. В платформа .NET Framework версии 2,0 этот объект больше не является `CoClass` объектом. Она должна быть создана функцией [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) , которая поддерживает больше версий. Эта новая функция создания позволяет клиентам получить определенную реализацию `ICorDebug` , которая также эмулирует определенную версию API отладки.  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -59,8 +60,8 @@ ms.locfileid: "95723406"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
