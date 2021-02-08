@@ -1,20 +1,21 @@
 ---
+description: 'Подробнее: параллельное управление версиями в WorkflowServiceHost'
 title: Параллельное управление версиями в WorkflowServiceHost
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.openlocfilehash: 1505582e5ac7303a2df20539fdcf67435746b9d3
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: c4b883350d4a600b193cb62efec57f20f6fe852a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793497"
 ---
 # <a name="side-by-side-versioning-in-workflowservicehost"></a>Параллельное управление версиями в WorkflowServiceHost
 
-<xref:System.ServiceModel.Activities.WorkflowServiceHost>Параллельное управление версиями, представленное в .NET Framework 4,5, предоставляет возможность размещения нескольких версий службы рабочего процесса на одной конечной точке. Предоставляемая функциональность параллельной работы позволяет настроить службу Workflow Service таким образом, чтобы новые экземпляры службы Workflow Service создавались с использованием нового определения рабочего процесса, а запущенные экземпляры завершались с использованием существующего определения. Данный раздел содержит общие сведения о параллельном выполнении служб Workflow Services с использованием <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
+<xref:System.ServiceModel.Activities.WorkflowServiceHost>Параллельное управление версиями, представленное в платформа .NET Framework 4,5, предоставляет возможность размещения нескольких версий службы рабочего процесса на одной конечной точке. Предоставляемая функциональность параллельной работы позволяет настроить службу Workflow Service таким образом, чтобы новые экземпляры службы Workflow Service создавались с использованием нового определения рабочего процесса, а запущенные экземпляры завершались с использованием существующего определения. Данный раздел содержит общие сведения о параллельном выполнении служб Workflow Services с использованием <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
 ## <a name="hosting-multiple-versions-in-a-workflow-service"></a>Размещение нескольких версий в службе Workflow Service  
 

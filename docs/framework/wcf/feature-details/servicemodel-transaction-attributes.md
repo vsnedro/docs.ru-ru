@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения см. в статье атрибуты транзакций ServiceModel.
 title: Атрибуты транзакции ServiceModel
 ms.date: 03/30/2017
 helpviewer_keywords:
 - transactions [WCF], ServiceModel attributes
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
-ms.openlocfilehash: d4b7482431404241577111d8dd3841319b65696e
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: 0b443fc6b9503007574608afe03c5e0508f666d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663698"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793484"
 ---
 # <a name="servicemodel-transaction-attributes"></a>Атрибуты транзакции ServiceModel
 
-Windows Communication Foundation (WCF) предоставляет свойства в трех стандартных <xref:System.ServiceModel> атрибуты, которые позволяют настраивать поведение транзакций для службы WCF:
+Windows Communication Foundation (WCF) предоставляет свойства для трех стандартных <xref:System.ServiceModel> атрибутов, которые позволяют настроить поведение транзакций для службы WCF:
 
 - <xref:System.ServiceModel.TransactionFlowAttribute>
 
@@ -23,7 +24,7 @@ Windows Communication Foundation (WCF) предоставляет свойств
 
 ## <a name="transactionflowattribute"></a>TransactionFlowAttribute
 
-Атрибут <xref:System.ServiceModel.TransactionFlowAttribute> указывает готовность операции в контракте службы к приему входящих транзакций от клиента. Атрибут снабжает данный элемент управления следующее свойство: Транзакции используют <xref:System.ServiceModel.TransactionFlowOption> перечисления, чтобы указать, является ли Входящая транзакция <xref:System.ServiceModel.TransactionFlowOption.Mandatory>, <xref:System.ServiceModel.TransactionFlowOption.Allowed>, или <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>.
+Атрибут <xref:System.ServiceModel.TransactionFlowAttribute> указывает готовность операции в контракте службы к приему входящих транзакций от клиента. Атрибут снабжает данный элемент управления следующим свойством: в транзакциях используется перечисление <xref:System.ServiceModel.TransactionFlowOption> для указания того, является входящая транзакция <xref:System.ServiceModel.TransactionFlowOption.Mandatory>, <xref:System.ServiceModel.TransactionFlowOption.Allowed> или <xref:System.ServiceModel.TransactionFlowOption.NotAllowed>.
 
 Это единственный атрибут, связывающий операции службы с внешним взаимодействием с клиентом. Атрибуты, описанные в следующих разделах, связаны с использованием транзакций в рамках выполнения операции.
 
@@ -41,11 +42,11 @@ Windows Communication Foundation (WCF) предоставляет свойств
 
 ## <a name="operationbehaviorattribute"></a>OperationBehaviorAttribute
 
-Атрибут <xref:System.ServiceModel.OperationBehaviorAttribute> задает расширения функциональности методов в реализации службы. Его можно использовать для задания конкретного поведения выполнения операции. Свойства этого атрибута не влияют на описание языка описания веб-службы (WSDL) контракта службы и представляют собой исключительно элементы модели программирования WCF, обеспечивающие стандартные возможности, что разработчики в ином случае нужно реализовать самостоятельно.
+Атрибут <xref:System.ServiceModel.OperationBehaviorAttribute> задает расширения функциональности методов в реализации службы. Его можно использовать для задания конкретного поведения выполнения операции. Свойства этого атрибута не влияют на описание языка описания веб-служб (WSDL) для контракта службы и являются чисто элементами модели программирования WCF, обеспечивающими стандартные функции, которые разработчикам в противном случае приходится реализовывать самостоятельно.
 
 Этот атрибут имеет следующие относящиеся к транзакциям свойства.
 
-- <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> указывает, должен ли метод выполняться в области активной транзакции. Значение по умолчанию — `false`. Если для метода не задан атрибут <xref:System.ServiceModel.OperationBehaviorAttribute>, это также подразумевает, что метод не будет выполняться в транзакции. Если для операции не требуется область транзакции, любая транзакция, присутствующая в заголовке сообщения, не активируется и остается элементом свойства <xref:System.ServiceModel.OperationContext.IncomingMessageProperties%2A> класса <xref:System.ServiceModel.OperationContext>. Если для операции требуется область транзакции, источник транзакции определяется одним из следующих способов.
+- <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> указывает, должен ли метод выполняться в области активной транзакции. Значение по умолчанию — `false`. Если для метода не задан атрибут <xref:System.ServiceModel.OperationBehaviorAttribute>, это также подразумевает, что метод не будет выполняться в транзакции. Если для операции не требуется область транзакции, любая транзакция, присутствующая в заголовке сообщения, не активируется и остается элементом свойства <xref:System.ServiceModel.OperationContext.IncomingMessageProperties%2A> класса <xref:System.ServiceModel.OperationContext>. Если для операции требуется область транзакции, источник транзакции определяется одним из следующих способов.
 
   - Если транзакция передается в потоке от клиента, метод выполняется в области транзакции, созданной с использованием этой распределенной транзакции.
 

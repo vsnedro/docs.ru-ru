@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как указать цепочку сертификатов центра сертификации, используемую для проверки подписей (WCF).
 title: Практическое руководство. Указание цепочки сертификатов центра сертификации, используемой для проверки сигнатур (WCF)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], specifying the certificate authority certificate chain
 - certificates [WCF], verifying signatures
 ms.assetid: 7c719355-aa41-4567-80d0-5115a8cf73fd
-ms.openlocfilehash: 0a03902c9a0d36ebd6e2c38f4a827737cacec447
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: f3bfcb378641db2a4bdba054f25042a5e7e9be07
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245036"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793458"
 ---
 # <a name="how-to-specify-the-certificate-authority-certificate-chain-used-to-verify-signatures-wcf"></a>Практическое руководство. Указание цепочки сертификатов центра сертификации, используемой для проверки сигнатур (WCF)
 

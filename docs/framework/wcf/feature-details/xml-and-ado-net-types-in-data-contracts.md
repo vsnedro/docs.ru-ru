@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о типах XML и ADO.NET в контрактах данных
 title: Типы XML и ADO.NET в контрактах данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
-ms.openlocfilehash: d4ac956af0addf9c3b38f3bfb8e8644757dc81c3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c83520b1be1bdf0f7985982dc498f9c12cef5722
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793315"
 ---
 # <a name="xml-and-adonet-types-in-data-contracts"></a>Типы XML и ADO.NET в контрактах данных
 

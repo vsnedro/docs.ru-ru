@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: конечные точки службы и адресация очередей'
 title: Конечные точки служб и адресация очереди
 ms.date: 03/30/2017
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
-ms.openlocfilehash: f7c3221d466d2599139eb29a8358d726c2b4edda
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 61b4e35de6bd89f45aa9f5e54a55beaf8536b74b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253925"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793562"
 ---
 # <a name="service-endpoints-and-queue-addressing"></a>Конечные точки служб и адресация очереди
 
@@ -35,7 +36,7 @@ ms.locfileid: "96253925"
   
  NET. msmq:// \<*host-name*> /[частный/] \<*queue-name*>  
   
- Где:  
+ где:  
   
 - \<*host-name*> имя компьютера, на котором размещена целевая очередь.  
   
@@ -80,8 +81,8 @@ ms.locfileid: "96253925"
 |Адрес очереди WCF, основанный на URI|Используется свойство Active Directory|Свойство протокола передачи между очередями|Результирующие имена форматов MSMQ|  
 |----------------------------------|-----------------------------------|--------------------------------------|---------------------------------|  
 |`Net.msmq://<machine-name>/private/abc`|False (по умолчанию)|Native (по умолчанию)|`DIRECT=OS:machine-name\private$\abc`|  
-|`Net.msmq://<machine-name>/private/abc`|False|SRMP|`DIRECT=http://machine/msmq/private$/abc`|  
-|`Net.msmq://<machine-name>/private/abc`|True|Собственный|`PUBLIC=some-guid` (идентификатор GUID очереди)|  
+|`Net.msmq://<machine-name>/private/abc`|Неверно|SRMP|`DIRECT=http://machine/msmq/private$/abc`|  
+|`Net.msmq://<machine-name>/private/abc`|Верно|Собственный|`PUBLIC=some-guid` (идентификатор GUID очереди)|  
   
 ### <a name="reading-messages-from-the-dead-letter-queue-or-the-poison-message-queue"></a>Чтение сообщений из очереди недоставленных сообщений или из очереди подозрительных сообщений  
 

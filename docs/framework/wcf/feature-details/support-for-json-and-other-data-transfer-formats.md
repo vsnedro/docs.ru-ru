@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения см. в статье поддержка JSON и других форматов Передача данных.
 title: Поддержка JSON и других форматов передачи данных
 ms.date: 03/30/2017
 ms.assetid: a527f1be-4e37-4beb-9a95-291480d19627
-ms.openlocfilehash: 5f625c4ac6f2fa65df4d5a046b747c58f7a725b0
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4919082d75fd6e0b742b9ca17308c3b393afc632
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96246307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793380"
 ---
 # <a name="support-for-json-and-other-data-transfer-formats"></a>Поддержка JSON и других форматов передачи данных
 
 JSON (JavaScript Object Notation) - эффективный формат кодирования данных, обеспечивающий быстрый обмен небольшими объемами данных между клиентскими браузерами и веб-службами с поддержкой асинхронных сценариев JavaScript и XML (AJAX).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Автономная сериализация JSON](stand-alone-json-serialization.md)  
  Описывает автономную сериализацию JSON.  

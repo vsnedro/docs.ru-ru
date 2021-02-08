@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: поведение транзакций службы'
 title: Транзакционное поведение службы
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Service Transaction Behavior Sample [Windows Communication Foundation]
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
-ms.openlocfilehash: 0be5bf0dbe6416febb898fb5150c5a516c8b0969
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1f8b76de250ef87ec5ca2d4ea4353a9a28bac248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591531"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793068"
 ---
 # <a name="service-transaction-behavior"></a>Транзакционное поведение службы
 
@@ -213,13 +214,13 @@ Creating new service instance...
 
 3. Чтобы запустить пример в конфигурации с одним или несколькими компьютерами, следуйте инструкциям в разделе [выполнение примеров Windows Communication Foundation](running-the-samples.md).
 
-При запуске примера на нескольких компьютерах необходимо настроить Microsoft координатор распределенных транзакций (MSDTC) для включения потока сетевых транзакций и использовать средство WsatConfig. exe, чтобы включить поддержку сети транзакций Windows Communication Foundation (WCF).
+При запуске примера на нескольких компьютерах необходимо настроить Microsoft координатор распределенных транзакций (MSDTC) для включения потока сетевых транзакций и использовать средство WsatConfig.exe для включения поддержки сети транзакций Windows Communication Foundation (WCF).
 
 ### <a name="to-configure-the-microsoft-distributed-transaction-coordinator-msdtc-to-support-running-the-sample-across-machines"></a>Настройка координатора распределенных транзакций (Майкрософт) на поддержку выполнения образца на нескольких компьютерах
 
 1. На компьютере службы настройте координатор MSDTC на разрешение входящих сетевых транзакций.
 
-    1. В меню **Пуск** последовательно выберите пункты **Панель управления**, **Администрирование**и **службы компонентов**.
+    1. В меню **Пуск** последовательно выберите пункты **Панель управления**, **Администрирование** и **службы компонентов**.
 
     2. Щелкните правой кнопкой мыши **Мой компьютер** и выберите пункт **свойства**.
 
@@ -239,19 +240,19 @@ Creating new service instance...
 
     3. Перейдите в папку C:\WINDOWS\System32.
 
-    4. Выберите MSDTC. exe и нажмите кнопку **Открыть**.
+    4. Выберите Msdtc.exe и нажмите кнопку **Открыть**.
 
     5. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно **Добавление программы** , и еще раз нажмите кнопку **ОК** , чтобы закрыть приложение брандмауэра Windows.
 
 3. На клиентском компьютере настройте координатор распределенных транзакций, чтобы он разрешал исходящие сетевые транзакции.
 
-    1. В меню **Пуск** последовательно выберите пункты **Панель управления**, **Администрирование**и **службы компонентов**.
+    1. В меню **Пуск** последовательно выберите пункты **Панель управления**, **Администрирование** и **службы компонентов**.
 
     2. Щелкните правой кнопкой мыши **Мой компьютер** и выберите пункт **свойства**.
 
     3. На вкладке **MSDTC** щелкните **Конфигурация безопасности**.
 
-    4. Проверьте **доступ к сети DTC** и **разрешите исходящие**подключения.
+    4. Проверьте **доступ к сети DTC** и **разрешите исходящие** подключения.
 
     5. Нажмите кнопку **Да** , чтобы перезапустить службу MS DTC, а затем нажмите кнопку **ОК**.
 
@@ -262,6 +263,6 @@ Creating new service instance...
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Transactions`

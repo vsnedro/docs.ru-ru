@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о защите личных сведений о блокировании безопасности
 title: Блокировка безопасности PII
 ms.date: 03/30/2017
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
-ms.openlocfilehash: 0b4ec820cd57e3dfaff035dc8e5ce1ef4b463df5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4225ef208f711f9c027fdc52f82b4a281613067f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260005"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793198"
 ---
 # <a name="pii-security-lockdown"></a>Блокировка безопасности PII
 
@@ -24,7 +25,7 @@ ms.locfileid: "96260005"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
@@ -40,7 +41,7 @@ ms.locfileid: "96260005"
   
 ## <a name="encrypting-configuration-file-elements"></a>Шифрование элементов файла конфигурации  
 
- При размещении службы на веб-сервере с общим доступом может потребоваться зашифровать некоторые элементы файла конфигурации в целях безопасности, например строки для подключения к базам данных, в которых может содержаться конфиденциальная информация. Элемент конфигурации может быть зашифрован с помощью средства aspnet_regiis.exe, находящихся в папке .NET Framework например,%WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
+ При размещении службы на веб-сервере с общим доступом может потребоваться зашифровать некоторые элементы файла конфигурации в целях безопасности, например строки для подключения к базам данных, в которых может содержаться конфиденциальная информация. Элемент конфигурации может быть зашифрован с помощью средства aspnet_regiis.exe, находящихся в папке платформа .NET Framework например,%WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
   
 #### <a name="to-encrypt-the-values-in-the-appsettings-section-in-webconfig-for-the-sample"></a>Шифрование значений в разделе appSettings файла Web.config для данного образца  
   

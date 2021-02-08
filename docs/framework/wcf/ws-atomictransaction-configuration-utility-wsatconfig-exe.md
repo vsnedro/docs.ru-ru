@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: служебная программа настройки WS-AtomicTransaction (wsatConfig.exe)'
 title: Программа конфигурации WS-AtomicTransaction (wsatConfig.exe)
 ms.date: 03/30/2017
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
-ms.openlocfilehash: dbd33869de6b1ecee6406dfeede88afc4eca07f1
-ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
+ms.openlocfilehash: 8b315e5aa5df23a4d9bb032db41b7067accfa010
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90720495"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792964"
 ---
 # <a name="ws-atomictransaction-configuration-utility-wsatconfigexe"></a>Программа конфигурации WS-AtomicTransaction (wsatConfig.exe)
 
@@ -49,7 +50,7 @@ wsatConfig [Options]
 |-show|Отображает текущие параметры протокола WS-AtomicTransaction.|  
 |виртуального\<virtualServer>|Позволяет указать имя кластера ресурсов DTC.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Использование WS-AtomicTransaction](./feature-details/using-ws-atomictransaction.md)
 - [Настройка поддержки транзакций WS-Atomic](./feature-details/configuring-ws-atomic-transaction-support.md)

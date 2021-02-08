@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 102-Воркфловинстанцеабортедрекорд'
 title: 102 ― WorkflowInstanceAbortedRecord
 ms.date: 03/30/2017
 ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
-ms.openlocfilehash: a48e3e27787a9f6dd133240f20ed67230d837698
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 2fd192af1624618a2800843ad58a1fc65d5f86b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96275470"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792860"
 ---
 # <a name="102---workflowinstanceabortedrecord"></a>102 ― WorkflowInstanceAbortedRecord
 
@@ -17,7 +18,7 @@ ms.locfileid: "96275470"
 |-|-|  
 |Идентификатор|102|  
 |Keywords|EndToEndMonitoring, Troubleshooting, HealthMonitoring, WFTracking|  
-|Level|Предупреждение|  
+|Уровень|Предупреждение|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: поведение при отладке службы'
 title: Поведение отладки службы
 ms.date: 03/30/2017
 ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
-ms.openlocfilehash: 53f21129860c644d09d1a2eb9cb956aecf8ab0ad
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3aae4a4cca53fce50bff8ec02896e748f430166f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596647"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793107"
 ---
 # <a name="service-debug-behavior"></a>Поведение отладки службы
 
@@ -32,7 +33,7 @@ ms.locfileid: "84596647"
 </behaviors>
 ```
 
-[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md)— Это элемент конфигурации, позволяющий изменять свойства поведения при отладке службы. Пользователь может изменять это поведение для достижения следующих целей.
+[\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md) — Это элемент конфигурации, позволяющий изменять свойства поведения при отладке службы. Пользователь может изменять это поведение для достижения следующих целей.
 
 - Это позволяет службе возвращать любое исключение, вызванное кодом приложения, даже если это исключение не объявлено с помощью атрибута <xref:System.ServiceModel.FaultContractAttribute>. Для этого необходимо присвоить параметру `includeExceptionDetailInFaults` значение `true`. Этот параметр полезен при отладке в тех случаях, когда сервер создает непредвиденное исключение.
 
@@ -56,6 +57,6 @@ ms.locfileid: "84596647"
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\ServiceDebug`
