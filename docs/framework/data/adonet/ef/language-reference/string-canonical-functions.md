@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: строковые канонические функции'
 title: Строковые канонические функции
 ms.date: 03/30/2017
 ms.assetid: 5e2cbebd-5df3-47c7-b0e2-49a17ab22bfb
-ms.openlocfilehash: 5a7889511d9e8e276ba026c37f4cd8a4aeba156c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: aa356b094e900cca6bd9fdfe09b144d9a9424651
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767834"
 ---
 # <a name="string-canonical-functions"></a>Строковые канонические функции
 
@@ -40,6 +41,6 @@ ms.locfileid: "91173657"
   
  Эквивалентную функциональность предоставляет управляемый поставщик клиента Microsoft SQL. Дополнительные сведения см. в разделе [SqlClient для функций Entity Framework](../sqlclient-for-ef-functions.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Канонические функции](canonical-functions.md)

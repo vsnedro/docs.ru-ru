@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о стандартных операторах запросов в запросах LINQ to Entities
 title: Стандартные операторы в запросах LINQ to Entities
 ms.date: 08/21/2018
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
-ms.openlocfilehash: 23aea5fe1bcee8d043a7f093790cb45a1edc4aae
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2186d8efb9994a44f700ac3eb5de0d6658385a58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767860"
 ---
 # <a name="standard-query-operators-in-linq-to-entities-queries"></a>Стандартные операторы в запросах LINQ to Entities
 
@@ -85,7 +86,7 @@ ms.locfileid: "91173644"
   
  Ряд методов разбиения на страницы не поддерживается из-за невозможности сопоставлять функции с источником данных или отсутствия неявного упорядочивания наборов в источнике данных. Методы, возвращающие значения по умолчанию, ограничены типами-примитивами концептуальной модели и ссылочными типами со значениями по умолчанию, равными null. Методы постраничного просмотра, примененные к пустой последовательности, возвращают значение NULL.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Поддерживаемые и неподдерживаемые методы LINQ (LINQ to Entities)](supported-and-unsupported-linq-methods-linq-to-entities.md)
 - [Общие сведения о стандартных операторах запроса](/previous-versions/visualstudio/visual-studio-2013/bb397896(v=vs.120))

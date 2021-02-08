@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в XML-литерале CDATA (Visual Basic)
 title: XML-литерал CDATA
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XML CDATA literal [Visual Basic]
 - XML literals [Visual Basic], CDATA
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
-ms.openlocfilehash: 4447ad6cf0fb251b0d2d1387c109b06d32f69cb8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d0b419954acb5a9e8ae824dbac8234e2116d09b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866101"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768757"
 ---
 # <a name="xml-cdata-literal-visual-basic"></a>Литеральное представление XML-раздела CDATA (Visual Basic)
 

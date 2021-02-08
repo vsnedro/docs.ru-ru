@@ -1,16 +1,17 @@
 ---
-title: Изменение данных с большими значениями (max)
+description: 'Дополнительные сведения: изменение данных Large-Value (max) в ADO.NET'
+title: Изменение данных Large-Value (max)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8aca5f00-d80e-4320-81b3-016d0466f7ee
-ms.openlocfilehash: 4748740379df689669ee87f66dce58a7015d1217
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2d4721d2de24399a33322bde9e70eb68e59480cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91172701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767678"
 ---
 # <a name="modifying-large-value-max-data-in-adonet"></a>Изменение данных больших объемов (max) в ADO.NET
 
@@ -264,9 +265,9 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [SQL Server данные в двоичном и больших значениях](sql-server-binary-and-large-value-data.md)
+- [Двоичные данные и данные больших значений SQL Server](sql-server-binary-and-large-value-data.md)
 - [Сопоставления типов данных SQL Server](../sql-server-data-type-mappings.md)
 - [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

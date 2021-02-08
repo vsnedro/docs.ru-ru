@@ -1,5 +1,6 @@
 ---
-title: Свойство SmiOrderProperty.Item (Microsoft.SqlServer.Server)
+description: 'Дополнительные сведения о свойстве: Смиордерпроперти. Item'
+title: Свойство Смиордерпроперти. Item (Microsoft. SqlServer. Server)
 author: stevestein
 ms.author: sstein
 ms.date: 12/20/2018
@@ -13,16 +14,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: e2d8788f610d80c30baf51bff0131f0834d59fcd
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: fc2151d3f36a6746e80e2fd6d611a803b2c3162e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767990"
 ---
-# <a name="smiorderpropertyitem-property"></a>Свойство SmiOrderProperty.Item
+# <a name="smiorderpropertyitem-property"></a>Смиордерпроперти. Item, свойство
 
-Получает порядок столбцов для сущности. Сборка, содержащая это свойство имеет с SQLAccess.dll связью. Он предназначен для использования с SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базы данных.
+Возвращает порядок столбцов для сущности. Сборка, содержащая это свойство, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,12 +35,12 @@ internal SmiColumnOrder Item { get; }
 
 Порядок столбцов.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> `SmiOrderProperty.Item` Свойство является внутренним и не предназначен для непосредственного использования в коде.
+> `SmiOrderProperty.Item`Свойство является внутренним и не предназначено для непосредственного использования в коде.
 >
-> Майкрософт не поддерживает использование этого свойства в рабочем приложении ни при каких обстоятельствах.
+> Корпорация Майкрософт не поддерживает использование этого свойства в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
@@ -47,4 +48,4 @@ internal SmiColumnOrder Item { get; }
 
 **Сборка:** System.Data (в System.Data.dll)
 
-**Версии платформы .NET framework:** Доступно с версии 2.0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

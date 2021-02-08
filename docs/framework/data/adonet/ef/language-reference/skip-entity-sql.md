@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: SKIP (Entity SQL)'
 title: SKIP (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.openlocfilehash: 68f54dc5118e09d78f98c687e8a44def43b45c7d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: f4924acae6e351e076b5795cf47d63966ebdcb43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90540996"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768016"
 ---
 # <a name="skip-entity-sql"></a>SKIP (Entity SQL)
 
@@ -24,7 +25,7 @@ ms.locfileid: "90540996"
 `n` \
 Число элементов, которые нужно пропустить.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если в предложении ORDER BY есть вложенное предложение SKIP, то результаты будут отсортированы в соответствии со спецификацией сортировки, а результирующий набор будет включать строку или строки, начиная со строки, следующей непосредственно за значением выражения SKIP. Например, SKIP 5 пропустит первые пять строк и возвратит все, начиная с шестой.
 
@@ -45,4 +46,4 @@ ms.locfileid: "90540996"
 - [ORDER BY](order-by-entity-sql.md)
 - [Практическое руководство. Разбивка на страницы результатов запроса](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Разбивка на страницы](paging-entity-sql.md)
-- [Вверх](top-entity-sql.md)
+- [В начало](top-entity-sql.md)

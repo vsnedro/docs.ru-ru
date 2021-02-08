@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <findCriteria>'
 title: <findCriteria>
 ms.date: 03/30/2017
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
-ms.openlocfilehash: ce2b1fdd85e0454f901bac393e2f44ae0c6da43f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 6415dfd4614122ac361fd7d5b872f840b01734f0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767951"
 ---
 # \<findCriteria>
 
@@ -74,7 +75,7 @@ ms.locfileid: "91178151"
 |-------------|-----------------|  
 |[\<standardEndpoints>](standardendpoints.md)|Содержит параметры, необходимые приложению для участия в процессе обнаружения служб в качестве клиента.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

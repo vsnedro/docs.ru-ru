@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о свойстве "дочерняя ось XML" (Visual Basic)
 title: XML Descendant Axis Property
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - XML axis [Visual Basic], descendant
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.openlocfilehash: 52544619171dbc7034baeb5feb61395d81096387
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c356d4d6f9a84755e9df171b26060fc6bfc4ead6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768783"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>Свойство дочерней оси XML (Visual Basic)
 
@@ -35,10 +36,10 @@ object...<descendant>
 
 `descendant` Обязательный. Имя узлов-потомков для доступа к форме [ `prefix:]name` .
 
-|Часть|Описание|
+|Отделение|Описание|
 |----------|-----------------|
 |`prefix`|Необязательный элемент. Префикс пространства имен XML для узла-потомка. Должно быть глобальным пространством имен XML, которое определяется с помощью `Imports` инструкции.|
-|`name`|Обязательный. Локальное имя дочернего узла. См. [Имена объявленных XML-элементов и атрибутов](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
+|`name`|Обязательный элемент. Локальное имя дочернего узла. См. [Имена объявленных XML-элементов и атрибутов](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
 
 `>` Обязательный. Обозначает конец свойства дочерней оси.
 
@@ -46,7 +47,7 @@ object...<descendant>
 
 Коллекция объектов <xref:System.Xml.Linq.XElement>.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Свойство дочерней оси XML можно использовать для доступа к узлам-потомкам по имени из <xref:System.Xml.Linq.XElement> объекта или или <xref:System.Xml.Linq.XDocument> из коллекции <xref:System.Xml.Linq.XElement> объектов или <xref:System.Xml.Linq.XDocument> . Используйте свойство XML `Value` для доступа к значению первого узла-потомка в возвращаемой коллекции. Дополнительные сведения см. в разделе [свойство значения XML](xml-value-property.md).
 
@@ -78,7 +79,7 @@ object...<descendant>
 
 `Name: Patrick Hines`
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Xml.Linq.XElement>
 - [Свойства оси XML](index.md)
