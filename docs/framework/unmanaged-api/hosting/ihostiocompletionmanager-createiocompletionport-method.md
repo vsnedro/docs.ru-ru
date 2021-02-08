@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostIoCompletionManager:: CreateIoCompletionPort'
 title: Метод IHostIoCompletionManager::CreateIoCompletionPort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 907a2b43-68db-44a7-acac-89e792e7bb3c
 topic_type:
 - apiref
-ms.openlocfilehash: 0c74e073d55ab7dc98620052a0cfd68c294f7a1c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: da4cd595e84c341eb15837ff97f4ba23cac23210
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789441"
 ---
 # <a name="ihostiocompletionmanagercreateiocompletionport-method"></a>Метод IHostIoCompletionManager::CreateIoCompletionPort
 
@@ -51,7 +52,7 @@ HRESULT CreateIoCompletionPort (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно памяти для выделения запрошенного ресурса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR вызывает `CreateIoCompletionPort` метод, чтобы запросить создание узлом нового порта завершения ввода-вывода. Он привязывает операции ввода-вывода к этому порту с помощью вызова метода [IHostIoCompletionManager:: BIND](ihostiocompletionmanager-bind-method.md) . Узел сообщает среде CLR о состоянии, вызывая [ICLRIoCompletionManager:: OnComplete](iclriocompletionmanager-oncomplete-method.md).  
   
@@ -63,9 +64,9 @@ HRESULT CreateIoCompletionPort (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Интерфейс IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

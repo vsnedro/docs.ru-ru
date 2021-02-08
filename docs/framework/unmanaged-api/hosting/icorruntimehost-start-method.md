@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorRuntimeHost:: Start'
 title: Метод ICorRuntimeHost::Start
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c66f3ac5-6489-484a-9bed-c31b711cee01
 topic_type:
 - apiref
-ms.openlocfilehash: bc647ad025b5e22187b476383ed0128761cb632f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d07c0144c7192bc2f57927c294ea472cd6b47f9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789610"
 ---
 # <a name="icorruntimehoststart-method"></a>Метод ICorRuntimeHost::Start
 
@@ -41,7 +42,7 @@ HRESULT Start ();
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Как правило, вызов метода не требуется `Start` , поскольку среда CLR запускается автоматически при первом запросе на выполнение управляемого кода.  
   
@@ -53,8 +54,8 @@ HRESULT Start ();
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:** 1,0, 1,1  
+ **Платформа .NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

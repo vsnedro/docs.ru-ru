@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: GetUserString'
 title: Метод IMetaDataImport::GetUserString
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
 topic_type:
 - apiref
-ms.openlocfilehash: af3de5454ce3d4a763c216de6e8efdb39407457b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 074d196c74be30f5879410ad44b9bb5c096eb153
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729139"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789103"
 ---
 # <a name="imetadataimportgetuserstring-method"></a>Метод IMetaDataImport::GetUserString
 
@@ -59,9 +60,9 @@ HRESULT GetUserString (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

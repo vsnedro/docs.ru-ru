@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback3::P Рофилердетачсукцеедед'
 title: Метод ICorProfilerCallback3::ProfilerDetachSucceeded
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
 topic_type:
 - apiref
-ms.openlocfilehash: b9b284de102dc75a637803ca5be0f2769da452ec
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bc80b5bd5301bb5b0278534cfba6ac23e5968620
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788778"
 ---
 # <a name="icorprofilercallback3profilerdetachsucceeded-method"></a>Метод ICorProfilerCallback3::ProfilerDetachSucceeded
 
@@ -36,7 +37,7 @@ HRESULT ProfilerDetachSucceeded();
 
  Возвращаемое значение этого обратного вызова игнорируется.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Обратный вызов `ProfilerDetachSucceeded` производится после того, как все потоки вышли из кода профилировщика. Когда вызывается этот метод, профилировщик должен выполнить все завершающие задачи, которые не может выполнить его деструктор, такие как уведомление интерфейса пользователя или компонента ведения журнала. Однако профилировщик не должен вызывать функции для интерфейсов, предоставляемых средой CLR во время этого обратного вызова (например, в [ICorProfilerInfo](icorprofilerinfo-interface.md) или `IMetaData*` интерфейсах).  
   
@@ -52,9 +53,9 @@ HRESULT ProfilerDetachSucceeded();
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы метаданных](../metadata/metadata-interfaces.md)
 - [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)

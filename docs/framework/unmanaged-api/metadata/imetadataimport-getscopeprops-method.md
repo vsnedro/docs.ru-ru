@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Жетскопепропс'
 title: Метод IMetaDataImport::GetScopeProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8ba42d2-d9fa-43cb-bbc0-f33e1e592cb6
 topic_type:
 - apiref
-ms.openlocfilehash: 5a89d1406daa9a2416a708b63d88fd9005234015
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2ed7c08cc876f467a46fe38c7c27719e5608e623
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789155"
 ---
 # <a name="imetadataimportgetscopeprops-method"></a>Метод IMetaDataImport::GetScopeProps
 
@@ -51,7 +52,7 @@ HRESULT GetScopeProps (
  `pmvid`  
  [out, необязательно] Указатель на идентификатор GUID, однозначно определяющий версию сборки или модуля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для задания этих свойств используется метод [IMetaDataEmit:: сетмодулепропс](imetadataemit-setmoduleprops-method.md) .  
   
@@ -63,9 +64,9 @@ HRESULT GetScopeProps (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции FunctionEnter
 title: Функция FunctionEnter
 ms.date: 03/30/2017
 api_name:
@@ -14,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
 topic_type:
 - apiref
-ms.openlocfilehash: 9bc88d7dd5b00213da634dc9f511cfe0d39b42f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 07b91a81480e453be16e840b89fa822cb91002ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729841"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788960"
 ---
 # <a name="functionenter-function"></a>Функция FunctionEnter
 
 Уведомляет профилировщик о передаче управления в функцию.  
   
 > [!NOTE]
-> `FunctionEnter`Функция является устаревшей в .NET Framework версии 2,0, и ее использование приведет к снижению производительности. Вместо этого используйте функцию [FunctionEnter2](functionenter2-function.md) .  
+> `FunctionEnter`Функция является устаревшей в платформа .NET Framework версии 2,0, и ее использование приведет к снижению производительности. Вместо этого используйте функцию [FunctionEnter2](functionenter2-function.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -42,7 +43,7 @@ void __stdcall FunctionEnter (
 
   \[in] идентификатор функции, для которой передается элемент управления.
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `FunctionEnter`Функция является обратным вызовом. ее необходимо реализовать. Реализация должна использовать `__declspec` `naked` атрибут класса хранения ().  
   
@@ -64,9 +65,9 @@ void __stdcall FunctionEnter (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 1,1, 1,0  
+ **Платформа .NET Framework версии:** 1,1, 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция FunctionEnter2](functionenter2-function.md)
 - [Функция FunctionLeave2](functionleave2-function.md)

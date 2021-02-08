@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: нематериализованные экземпляры рабочих процессов'
 title: Экземпляры нематериализованного рабочего процесса
 ms.date: 03/30/2017
 ms.assetid: 5e01af77-6b14-4964-91a5-7dfd143449c0
-ms.openlocfilehash: 315d791585ace6ce4adf281abbba0a4c8c72d75a
-ms.sourcegitcommit: d6e27023aeaffc4b5a3cb4b88685018d6284ada4
+ms.openlocfilehash: 0ee5968426a6bb800b9e70ac592c6da191c22511
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67663048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787907"
 ---
 # <a name="non-persisted-workflow-instances"></a>Экземпляры нематериализованного рабочего процесса
 
 При создании нового экземпляра рабочего процесса, состояние которого сохраняется в <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, узел службы создает запись для этой службы в хранилище экземпляров. Затем при первом сохранении экземпляра рабочего процесса <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> сохраняет текущее состояние экземпляра. Если рабочий процесс размещен в службе активации Windows, данные развертывания службы также записываются в хранилище экземпляров при первом сохранении экземпляра.
 
-До тех пор, пока экземпляр рабочего процесса не сохранен, он находится в **несохраняемый** состояния. Если экземпляр рабочего процесса находится в этом состоянии, его нельзя восстановить после очистки домена приложения, ошибки узла или сбоя в работе компьютера.
+Пока экземпляр рабочего процесса не сохранен, он находится в **непостоянном** состоянии. Если экземпляр рабочего процесса находится в этом состоянии, его нельзя восстановить после очистки домена приложения, ошибки узла или сбоя в работе компьютера.
 
 ## <a name="the-non-persisted-state"></a>Несохраняемое состояние
 
@@ -23,9 +24,9 @@ ms.locfileid: "67663048"
 
 - Экземпляр рабочего процесса формирует исключение до его первого сохранения. В зависимости от возвращаемого <xref:System.Activities.UnhandledExceptionAction> выполняется следующий сценарий:
 
-  - <xref:System.Activities.UnhandledExceptionAction> имеет значение <xref:System.Activities.UnhandledExceptionAction.Abort>: Когда происходит исключение, сведения о развертывании службы записываются в хранилище экземпляров и экземпляр рабочего процесса выгружается из памяти. Экземпляр рабочего процесса остается в несохраняемом состоянии и не может быть выгружен.
+  - Для <xref:System.Activities.UnhandledExceptionAction> задается <xref:System.Activities.UnhandledExceptionAction.Abort>: при формировании исключения данные развертывания службы записываются в хранилище экземпляров и экземпляр рабочего процесса выгружается из памяти. Экземпляр рабочего процесса остается в несохраняемом состоянии и не может быть выгружен.
 
-  - <xref:System.Activities.UnhandledExceptionAction> имеет значение <xref:System.Activities.UnhandledExceptionAction.Cancel> или <xref:System.Activities.UnhandledExceptionAction.Terminate>: При возникновении исключения, сведения о развертывании службы записываются в хранилище экземпляров и состояние экземпляра действия имеет значение <xref:System.Activities.ActivityInstanceState.Closed>.
+  - Для <xref:System.Activities.UnhandledExceptionAction> задается <xref:System.Activities.UnhandledExceptionAction.Cancel> или <xref:System.Activities.UnhandledExceptionAction.Terminate>: при формировании исключения данные развертывания службы записываются в хранилище экземпляров и для экземпляра действия задается состояние <xref:System.Activities.ActivityInstanceState.Closed>.
 
 Чтобы свести к минимуму риск возникновения невыгруженных несохраняемых экземпляров рабочих процессов, рекомендуется сохранять рабочие процессы на ранних этапах жизненного цикла.
 

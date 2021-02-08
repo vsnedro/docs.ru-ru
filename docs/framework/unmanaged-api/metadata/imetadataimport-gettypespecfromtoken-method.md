@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: GetTypeSpecFromToken'
 title: Метод IMetaDataImport::GetTypeSpecFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ee518bda-3296-482e-a7b7-e9d51dd1a181
 topic_type:
 - apiref
-ms.openlocfilehash: 62495aa4280bb1799af09fea2e550ae6107e09e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b71f8f856da517b3e5046c20d787a555816fb728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789116"
 ---
 # <a name="imetadataimportgettypespecfromtoken-method"></a>Метод IMetaDataImport::GetTypeSpecFromToken
 
@@ -59,9 +60,9 @@ HRESULT GetTypeSpecFromToken (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

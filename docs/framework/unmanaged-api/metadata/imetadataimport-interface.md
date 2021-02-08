@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе IMetaDataImport
 title: Интерфейс IMetaDataImport
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0adbbd35-5e8d-4fec-8268-dc70a07c5975
 topic_type:
 - apiref
-ms.openlocfilehash: 0049db66d7a753488388c85e87e1f907db56c7cf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4fb0dc4cce6901858cde8cfbc494fce7ddbfeb0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679095"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789090"
 ---
 # <a name="imetadataimport-interface"></a>Интерфейс IMetaDataImport
 
@@ -92,7 +93,7 @@ ms.locfileid: "95679095"
 |[Метод ResetEnum](imetadataimport-resetenum-method.md)|Возвращает заданный перечислитель в указанную позицию.|  
 |[Метод ResolveTypeRef](imetadataimport-resolvetyperef-method.md)|Возвращает сведения о типе, на который ссылается указанный токен TypeRef.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  По своей структуре интерфейс `IMetaDataImport` предназначен в первую очередь для использования средствами и службами, которые будут импортировать сведения о типах (например, средства разработки) или управлять компонентами развертывания (например, службы разрешения или активации). Методы интерфейса `IMetaDataImport` делятся по задачам на следующие категории:  
   
@@ -112,9 +113,9 @@ ms.locfileid: "95679095"
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

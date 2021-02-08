@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback4:: SurvivingReferences2'
 title: Метод ICorProfilerCallback4::SurvivingReferences2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 02b51888-5d89-4e50-a915-45b7e329aad9
 topic_type:
 - apiref
-ms.openlocfilehash: fb10057a406bd2192e0da61f916f81697dfa4a7d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d092729c77b0c4feb253bb2f54968f7ff8bdbb2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689320"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788687"
 ---
 # <a name="icorprofilercallback4survivingreferences2-method"></a>Метод ICorProfilerCallback4::SurvivingReferences2
 
@@ -52,7 +53,7 @@ HRESULT SurvivingReferences2(
   
  Размер указывается для каждого блока, ссылка на который имеется в массиве `objectIDRangeStart`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для определения того, уцелел ли объект после сборки мусора, элементы массивов `objectIDRangeStart` и `cObjectIDRangeLength` должны интерпретироваться следующим образом. Предположим, что значение `ObjectID` (`ObjectID`) находится в следующем диапазоне:  
   
@@ -78,9 +79,9 @@ HRESULT SurvivingReferences2(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

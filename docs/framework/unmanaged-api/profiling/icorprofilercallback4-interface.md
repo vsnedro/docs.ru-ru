@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerCallback4'
 title: Интерфейс ICorProfilerCallback4
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 665f3cfc-cd6f-4880-906c-ea65ad384783
 topic_type:
 - apiref
-ms.openlocfilehash: 942ee8234b79c6579acc009960f4571801fc3185
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 882f234cb94ccd65203b42ed213aab6355250af8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788752"
 ---
 # <a name="icorprofilercallback4-interface"></a>Интерфейс ICorProfilerCallback4
 
@@ -46,9 +47,9 @@ ms.locfileid: "95730296"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)
 - [Профилирующие интерфейсы](profiling-interfaces.md)

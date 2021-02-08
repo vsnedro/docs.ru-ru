@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRTaskManager'
 title: Интерфейс ICLRTaskManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2bd55e0c-001b-41fd-b29d-f01670fe8216
 topic_type:
 - apiref
-ms.openlocfilehash: 1170b29c01275b108a6ccdf6e324c96d97c10c82
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0ce3641042725bc2f3acb95933ccd7a5bbe3bc4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789753"
 ---
 # <a name="iclrtaskmanager-interface"></a>Интерфейс ICLRTaskManager
 
@@ -35,7 +36,7 @@ ms.locfileid: "95732454"
 |[Метод SetLocale](iclrtaskmanager-setlocale-method.md)|Уведомляет среду CLR о том, что узел изменил идентификатор локали в выполняющейся задаче.|  
 |[Метод SetUILocale](iclrtaskmanager-setuilocale-method.md)|Уведомляет среду CLR о том, что узел изменил идентификатор локали пользовательского интерфейса для выполняемой в данный момент задачи.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Каждая задача, выполняемая в среде размещения, имеет представления на стороне размещения (экземпляр [IHostTask](ihosttask-interface.md)) и на стороне среды CLR (экземпляре [ICLRTask](iclrtask-interface.md)). Приложение или среда CLR могут инициировать создание задачи, но представление на стороне главного приложения должно быть связано с соответствующим представлением на стороне среды CLR для обеспечения успешной связи между узлом и средой CLR, относящейся к задаче. Перед выполнением управляемого кода в потоке операционной системы необходимо создать и создать экземпляры этих двух объектов.  
   
@@ -47,9 +48,9 @@ ms.locfileid: "95732454"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс IHostTask](ihosttask-interface.md)

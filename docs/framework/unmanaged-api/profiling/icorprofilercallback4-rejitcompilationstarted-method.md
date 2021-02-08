@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback4:: ReJITCompilationStarted'
 title: Метод ICorProfilerCallback4::ReJITCompilationStarted
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
 topic_type:
 - apiref
-ms.openlocfilehash: 43db4ce0ba7a95a029e6c4928f55a99df9085164
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7656f68ff6b10dcd58e48df212a036a590d0c3b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788713"
 ---
 # <a name="icorprofilercallback4rejitcompilationstarted-method"></a>Метод ICorProfilerCallback4::ReJITCompilationStarted
 
@@ -46,7 +47,7 @@ HRESULT ReJITCompilationStarted(
  `fIsSafeToBlock`  
  [входные] `true` чтобы указать, что блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова. `false` чтобы указать, что блокировка не повлияет на работу среды выполнения. Значение `true` не нанесет вред исполняющей среде, но может повлиять на результаты профилирования.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Можно получить несколько `ReJITCompilationStarted` вызовов методов и [режиткомпилатионфинишед](icorprofilercallback4-rejitcompilationfinished-method.md) для каждой из функций, поскольку среда выполнения обрабатывает конструкторы классов. Например, среда выполнения начинает перекомпилировать метод а, но необходимо запустить конструктор класса для класса B. Таким образом, среда выполнения перекомпилирует конструктор для класса B и запускает его. Пока конструктор выполняется, он вызывает метод а, что вызывает повторную компиляцию метода а. В этом сценарии первая перекомпиляция метода A останавливается. Однако обе попытки перекомпилировать метод а сообщают о событиях JIT-компиляции.  
   
@@ -60,9 +61,9 @@ HRESULT ReJITCompilationStarted(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback4](icorprofilercallback4-interface.md)

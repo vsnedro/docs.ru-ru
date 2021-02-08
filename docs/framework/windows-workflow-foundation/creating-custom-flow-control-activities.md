@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: создание настраиваемых действий управления потоком'
 title: Создание пользовательских действий управления потоком
 ms.date: 03/30/2017
 ms.assetid: 27f409f6-2d1d-4cfb-9765-93eb2ad667d5
-ms.openlocfilehash: 92d98d33b10e431248c4c482fcd26f3036c4c330
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c59bff08fe5b4d891a512de296f35de0ade34655
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96242075"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787920"
 ---
 # <a name="creating-custom-flow-control-activities"></a>Создание пользовательских действий управления потоком
 
-.NET Framework содержит множество действий управления потоком, которые работают аналогично абстрактным структурам программирования (например, <xref:System.Activities.Statements.Flowchart> ) или к стандартным инструкциям программирования (например, <xref:System.Activities.Statements.If> ). В этом разделе обсуждается архитектура одного из примеров проектов, [неуниверсальное значение foreach](./samples/non-generic-foreach.md).  
+Платформа .NET Framework содержит множество действий управления потоком, которые работают аналогично абстрактным структурам программирования (например, <xref:System.Activities.Statements.Flowchart> ) или к стандартным инструкциям программирования (например, <xref:System.Activities.Statements.If> ). В этом разделе обсуждается архитектура одного из примеров проектов, [неуниверсальное значение foreach](./samples/non-generic-foreach.md).  
   
 ## <a name="creating-the-custom-class"></a>Создание пользовательского класса  
 

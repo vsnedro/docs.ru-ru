@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerCallback5'
 title: Интерфейс ICorProfilerCallback5
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 61d2e9ef-5f1f-4771-8847-239616e35d84
 topic_type:
 - apiref
-ms.openlocfilehash: 8e94aebc489fff1c81593e54b17c471e7228d810
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b80b27dc994ad556381228370ece92935d89d293
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95689294"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788661"
 ---
 # <a name="icorprofilercallback5-interface"></a>Интерфейс ICorProfilerCallback5
 
@@ -27,7 +28,7 @@ ms.locfileid: "95689294"
   
  Для подписки на уведомления, связанные с зависимыми дескрипторами профилировщик управляемой памяти должен реализовать `ICorProfilerCallback5`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 ## <a name="methods"></a>Методы  
   
@@ -41,9 +42,9 @@ ms.locfileid: "95689294"
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

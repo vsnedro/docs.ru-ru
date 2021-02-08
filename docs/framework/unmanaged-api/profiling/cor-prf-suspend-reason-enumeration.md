@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PRF_SUSPEND_REASON'
 title: Перечисление COR_PRF_SUSPEND_REASON
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
 topic_type:
 - apiref
-ms.openlocfilehash: f7d76c72ed5db95425f5b1fa2db5e4346983daa4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9e8b3dc98aa6b1a989088f5f4d0efb74d488d927
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696678"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789012"
 ---
 # <a name="cor_prf_suspend_reason-enumeration"></a>Перечисление COR_PRF_SUSPEND_REASON
 
@@ -46,13 +47,13 @@ typedef enum {
 |`COR_PRF_FIELD_SUSPEND_OTHER`|Среда выполнения приостановлена по неизвестной причине.|  
 |`COR_PRF_FIELD_SUSPEND_FOR_GC`|Среда выполнения приостановлена для обслуживания запроса на сборку мусора.<br /><br /> Обратные вызовы, связанные со сборкой мусора, происходят между обратными вызовами [ICorProfilerCallback:: RuntimeSuspendFinished](icorprofilercallback-runtimesuspendfinished-method.md) и [ICorProfilerCallback:: RuntimeResumeStarted](icorprofilercallback-runtimeresumestarted-method.md) .|  
 |`COR_PRF_FIELD_SUSPEND_FOR_APPDOMAIN_SHUTDOWN`|Среда выполнения приостановлена, чтобы `AppDomain` можно было завершить работу.<br /><br /> Пока среда выполнения приостановлена, среда выполнения определит, какие потоки находятся в `AppDomain` , и задаст их в случае прерывания работы. `AppDomain`Во время этой приостановки не существует специальных обратных вызовов.|  
-|`COR_PRF_FIELD_SUSPEND_FOR_CODE_PITCHING`|Среда выполнения приостановлена, поэтому может произойти пошаговое выполнение кода.<br /><br /> Шаг с текстом выполняется, только если JIT-компилятор активен с включенным шагом в коде. Обратные вызовы с пошаговым выполнением кода происходят между `ICorProfilerCallback::RuntimeSuspendFinished` `ICorProfilerCallback::RuntimeResumeStarted` ответами и. **Примечание.**  JIT-компилятор CLR не выполняет функции в .NET Framework версии 2,0, поэтому это значение не используется в 2,0.|  
+|`COR_PRF_FIELD_SUSPEND_FOR_CODE_PITCHING`|Среда выполнения приостановлена, поэтому может произойти пошаговое выполнение кода.<br /><br /> Шаг с текстом выполняется, только если JIT-компилятор активен с включенным шагом в коде. Обратные вызовы с пошаговым выполнением кода происходят между `ICorProfilerCallback::RuntimeSuspendFinished` `ICorProfilerCallback::RuntimeResumeStarted` ответами и. **Примечание.**  JIT-компилятор CLR не выполняет функции в платформа .NET Framework версии 2,0, поэтому это значение не используется в 2,0.|  
 |`COR_PRF_FIELD_SUSPEND_FOR_SHUTDOWN`|Среда выполнения приостановлена, поэтому она может завершить работу. Чтобы завершить операцию, необходимо приостановить все потоки.|  
 |`COR_PRF_FIELD_SUSPEND_FOR_INPROC_DEBUGGER`|Среда выполнения приостанавливается для внутрипроцессного процесса отладки.|  
 |`COR_PRF_FIELD_SUSPEND_FOR_GC_PREP`|Среда выполнения приостановлена для подготовки к сбору мусора.|  
 |`COR_PRF_SUSPEND_FOR_REJIT`|Среда выполнения приостанавливается для повторной компиляции JIT.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Все потоки среды выполнения, наявляющиеся в неуправляемом коде, могут продолжать выполняться до тех пор, пока они не попытаются повторно войти в среду выполнения, после чего они также будут приостановлены до тех пор, пока среда выполнения не возобновит работу. Это также относится к новым потокам, которые вводят среду выполнения. Все потоки в среде выполнения либо приостанавливаются немедленно, если они находятся в коде для преобразования, либо запрашивается их приостановка, когда они достигают кода источника.  
   
@@ -64,8 +65,8 @@ typedef enum {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления профилирования](profiling-enumerations.md)

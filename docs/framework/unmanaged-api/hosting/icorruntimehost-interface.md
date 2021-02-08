@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorRuntimeHost'
 title: Интерфейс ICorRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
 topic_type:
 - apiref
-ms.openlocfilehash: 9fcb5e189af9f72de7635aad550a5e8ab5522dbd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cd50d31668b2dd0718dbe644343bfe314a0afdbe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789662"
 ---
 # <a name="icorruntimehost-interface"></a>Интерфейс ICorRuntimeHost
 
 Предоставляет методы, позволяющие основному приложению запускать и прекращать работу среды CLR, создавать и настраивать домены приложений, получать доступ к домену по умолчанию и перечислять все домены, выполняющиеся в процессе.  
   
- В .NET Framework версии 2,0 этот интерфейс заменен [ICLRRuntimeHost](iclrruntimehost-interface.md).  
+ В платформа .NET Framework версии 2,0 этот интерфейс заменен [ICLRRuntimeHost](iclrruntimehost-interface.md).  
   
 ## <a name="methods"></a>Методы  
   
@@ -46,7 +47,7 @@ ms.locfileid: "95720624"
 |[Метод MapFile](icorruntimehost-mapfile-method.md)|Сопоставляет указанный файл с памятью. Этот метод устарел.|  
 |[Метод NextDomain](icorruntimehost-nextdomain-method.md)|Возвращает указатель интерфейса на следующий домен в перечислении.|  
 |[Метод Start](icorruntimehost-start-method.md)|Запускает среду CLR.|  
-|[Метод Stop](icorruntimehost-stop-method.md)|Останавливает выполнение кода в среде выполнения для текущего процесса.|  
+|[Метод завершения](icorruntimehost-stop-method.md)|Останавливает выполнение кода в среде выполнения для текущего процесса.|  
 |[Метод SwitchInLogicalThreadState](icorruntimehost-switchinlogicalthreadstate-method.md)|Не используется.|  
 |[Метод SwitchOutLogicalThreadState](icorruntimehost-switchoutlogicalthreadstate-method.md)|Не используется.|  
 |[Метод UnloadDomain](icorruntimehost-unloaddomain-method.md)|Выгружает указанный домен приложения из текущего процесса.|  
@@ -59,9 +60,9 @@ ms.locfileid: "95720624"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:** 1,0, 1,1  
+ **Платформа .NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.AppDomain>
 - [Размещение](index.md)

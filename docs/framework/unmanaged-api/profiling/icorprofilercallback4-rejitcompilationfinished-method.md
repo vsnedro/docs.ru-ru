@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback4:: Режиткомпилатионфинишед'
 title: Метод ICorProfilerCallback4::ReJITCompilationFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3b5cff02-2005-44eb-a2bc-50214c4b0e1d
 topic_type:
 - apiref
-ms.openlocfilehash: a6c2209433a652523fd8e3a7cc2db1272600e1bd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d7270b5a8cf31fd81505c148429da5f7025319a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788726"
 ---
 # <a name="icorprofilercallback4rejitcompilationfinished-method"></a>Метод ICorProfilerCallback4::ReJITCompilationFinished
 
@@ -59,9 +60,9 @@ HRESULT ReJITCompilationFinished(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback4](icorprofilercallback4-interface.md)

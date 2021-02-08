@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorRuntimeHost:: CreateDomainEx'
 title: Метод ICorRuntimeHost::CreateDomainEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
 topic_type:
 - apiref
-ms.openlocfilehash: d6d9e06b6ed40bb0e5a65fd64f8bca7abe3afa84
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: aec759cec4fd68fff4bdfaaf3403a0da026fb9ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789701"
 ---
 # <a name="icorruntimehostcreatedomainex-method"></a>Метод ICorRuntimeHost::CreateDomainEx
 
@@ -60,7 +61,7 @@ HRESULT CreateDomainEx (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, общеязыковая среда выполнения (CLR) больше не может использоваться в процессе. Последующие вызовы любых API размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_CLRNOTAVAILABLE|Среда CLR не была загружена в процесс, или среда CLR находится в состоянии, в котором она не может выполнить управляемый код или успешно обработать вызов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CreateDomainEx` расширяет возможности [CreateDomain](icorruntimehost-createdomain-method.md) , позволяя вызывающей стороне передавать `IAppDomainSetup` экземпляр со значениями свойств для настройки домена приложения.  
   
@@ -72,9 +73,9 @@ HRESULT CreateDomainEx (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **Версия .NET Framework:** 1,0, 1,1  
+ **Версия платформа .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

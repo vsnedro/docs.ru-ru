@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о привязке настраиваемого свойства действия к элементу управления конструктора
 title: Привязка пользовательского свойства действия к элементу управления конструктора
 ms.date: 03/30/2017
 ms.assetid: 2e8061ea-10f5-407c-a31f-d0d74ce12f27
-ms.openlocfilehash: 142a9eb273a98d3a2d83a1239d6d7c891d5cc305
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 522e3df3028270d42f7654026383c628ec951e8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945903"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787946"
 ---
 # <a name="binding-a-custom-activity-property-to-a-designer-control"></a>Привязка пользовательского свойства действия к элементу управления конструктора
 
@@ -19,7 +20,7 @@ ms.locfileid: "61945903"
 
 2. Создайте новый класс с именем ComboBoxItemConverter. Добавьте ссылку на сборку System.Windows.Data и сделайте класс производным от <xref:System.Windows.Data.IValueConverter>. В Visual Studio внедрите интерфейс, создав заглушки для `Convert` и `ConvertBack`.
 
-3. Добавьте следующий код в метод `Convert` . Этот код преобразует <xref:System.Activities.InArgument%601> действия типа <xref:System.String> в значение, которое нужно вставить в конструктор.
+3. Добавьте в метод `Convert` следующий код. Этот код преобразует <xref:System.Activities.InArgument%601> действия типа <xref:System.String> в значение, которое нужно вставить в конструктор.
 
     ```csharp
     ModelItem modelItem = value as ModelItem;
@@ -73,7 +74,7 @@ ms.locfileid: "61945903"
     return null;
     ```
 
-4. Добавьте следующий код в метод `ConvertBack` . Этот код преобразует входящий элемент поля со списком обратно в <xref:System.Activities.InArgument%601>.
+4. Добавьте в метод `ConvertBack` следующий код. Этот код преобразует входящий элемент поля со списком обратно в <xref:System.Activities.InArgument%601>.
 
     ```csharp
     // Convert combo box value to InArgument<string>

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 3421-Вебсоккетконнектионабортед'
 title: 3421 - WebSocketConnectionAborted
 ms.date: 03/30/2017
 ms.assetid: 6ca325f5-7a06-4719-a236-72767a8e0530
-ms.openlocfilehash: 3062dac94beb56b7b3566191f4bded99486c4a01
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d310e6fc897608238b732babfa8592ae7db8fb48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788557"
 ---
 # <a name="3421---websocketconnectionaborted"></a>3421 - WebSocketConnectionAborted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243180"
 |-|-|  
 |ID|3421|  
 |Keywords|HTTP|  
-|Level|Ошибка|  
+|Уровень|Ошибка|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

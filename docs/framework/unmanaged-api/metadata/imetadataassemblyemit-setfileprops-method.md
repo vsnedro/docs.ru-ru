@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataAssemblyEmit:: SetFileProps'
 title: Метод IMetaDataAssemblyEmit::SetFileProps
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 85667d38-611c-45a9-938d-930ac7a7b681
 topic_type:
 - apiref
-ms.openlocfilehash: 9cf5f3d926c1e742dd9134e7bf292df53e1a4909
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 482aa11b85eaf05d126c4fcc0d5a1aced85002d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720182"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789311"
 ---
 # <a name="imetadataassemblyemitsetfileprops-method"></a>Метод IMetaDataAssemblyEmit::SetFileProps
 
@@ -51,7 +52,7 @@ HRESULT SetFileProps (
  `dwFileFlags`  
  окне Побитовое сочетание значений [корфилефлагс](corfileflags-enumeration.md) , задающих различные атрибуты файла.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы создать `File` структуру метаданных, используйте метод [IMetaDataAssemblyEmit::D ефинефиле](imetadataassemblyemit-definefile-method.md) .  
   
@@ -63,8 +64,8 @@ HRESULT SetFileProps (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

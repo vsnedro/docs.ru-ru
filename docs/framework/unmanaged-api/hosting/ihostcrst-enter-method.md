@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostCrst:: Enter'
 title: Метод IHostCrst::Enter
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 100dd7eb-7053-4295-9bb3-32ba47f6ec79
 topic_type:
 - apiref
-ms.openlocfilehash: a5c2646d7c9dbf8a7aea4a7fb9bd0a6b8c1d5d66
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ef8e4ce71cde75fe6b834802b08d22aedbd6fab9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789454"
 ---
 # <a name="ihostcrstenter-method"></a>Метод IHostCrst::Enter
 
@@ -50,7 +51,7 @@ HRESULT Enter (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `Enter` отражает функцию Win32 `EnterCriticalSection` .  
   
@@ -65,9 +66,9 @@ HRESULT Enter (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostCrst](ihostcrst-interface.md)

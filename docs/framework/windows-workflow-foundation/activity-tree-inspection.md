@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Проверка дерева действий'
 title: Проверка дерева действий
 ms.date: 03/30/2017
 ms.assetid: 100d00e4-8c1d-4233-8fbb-dd443a01155d
-ms.openlocfilehash: 044dcbbe7f22b1026dbc4dc14ab87da4f5a9d0ee
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aac19dd99199481e6ad0d1a554ad1846678c160e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96289156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787959"
 ---
 # <a name="activity-tree-inspection"></a>Проверка дерева действий
 
@@ -31,7 +32,7 @@ ms.locfileid: "96289156"
  **Элемент списка 4** 
  **Элемент списка 5** 
  **Элементы, добавленные в коллекцию.** 
- **Sequence** **\<String> Список ><литералов** последовательности  
+  **\<String> Список ><литералов** последовательности  
  **While**  
  **AddToCollection\<String>**  
  **Вариаблевалуе<ICollection\<String>>**  
@@ -39,7 +40,7 @@ ms.locfileid: "96289156"
  **Список<Локатионреференцевалуе\<String>>**  
  **ламбдавалуе\<Boolean>**  
  **Список<Локатионреференцевалуе\<String>>**  
- **Используют\<String>**  
+ **ForEach\<String>**  
  **Вариаблевалуе<IEnumerable\<String>>**  
  **WriteLine**  
  **делегатеаргументвалуе\<String>**  

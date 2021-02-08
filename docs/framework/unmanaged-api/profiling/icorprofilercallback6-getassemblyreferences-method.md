@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback6:: GetAssemblyReferences'
 title: Метод ICorProfilerCallback6::GetAssemblyReferences
 ms.date: 03/30/2017
 dev_langs:
@@ -13,12 +14,12 @@ api_type:
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
 topic_type:
 - apiref
-ms.openlocfilehash: c9e973009f46ef7e554ee2df63493464f4956342
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 27c2b5e0ed935501de551bac32b6d229d5c59f79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788648"
 ---
 # <a name="icorprofilercallback6getassemblyreferences-method"></a>Метод ICorProfilerCallback6::GetAssemblyReferences
 
@@ -46,7 +47,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
 
  Значения, возвращаемые из этого обратного вызова, игнорируются.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот обратный вызов управляется путем установки флага [COR_PRF_HIGH_ADD_ASSEMBLY_REFERENCES](cor-prf-high-monitor-enumeration.md) маски событий при вызове метода [ICorProfilerCallback5:: SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) . Если профилировщик регистрируется для метода обратного вызова [ICorProfilerCallback6:: GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) , среда выполнения передает путь и имя загружаемой сборки вместе с указателем на объект интерфейса [ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md) для этого метода. Затем профилировщик может вызвать метод [ICorProfilerAssemblyReferenceProvider:: AddAssemblyReference](icorprofilerassemblyreferenceprovider-addassemblyreference-method.md) с `COR_PRF_ASSEMBLY_REFERENCE_INFO` объектом для каждой целевой сборки, на которую планируется ссылаться из сборки, указанной в `GetAssemblyReferences` обратном вызове.  
   
@@ -64,9 +65,9 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback6](icorprofilercallback6-interface.md)
 - [Метод ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md)

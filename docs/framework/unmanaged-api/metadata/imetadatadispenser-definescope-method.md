@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IMetaDataDispenser::D Ефинескопе'
 title: Метод IMetaDataDispenser::DefineScope
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: af28db02-29af-45ac-aec6-8d6c6123c2ff
 topic_type:
 - apiref
-ms.openlocfilehash: 87a39350986cb7bb62f76b0d9a6a9aae8f82e2f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b7a7870ec06af4c08a4ef3609077eb93f74da776
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789246"
 ---
 # <a name="imetadatadispenserdefinescope-method"></a>Метод IMetaDataDispenser::DefineScope
 
@@ -40,10 +41,10 @@ HRESULT DefineScope (
 ## <a name="parameters"></a>Параметры  
 
  `rclsid`  
- окне Идентификатор CLSID версии создаваемых структур метаданных. Это значение должно быть CLSID_CorMetaDataRuntime для .NET Framework версии 2,0.  
+ окне Идентификатор CLSID версии создаваемых структур метаданных. Это значение должно быть CLSID_CorMetaDataRuntime для платформа .NET Framework версии 2,0.  
   
  `dwCreateFlags`  
- окне Флаги, указывающие параметры. Для .NET Framework 2,0 это значение должно быть равно нулю.  
+ окне Флаги, указывающие параметры. Для платформа .NET Framework 2,0 это значение должно быть равно нулю.  
   
  `riid`  
  окне Идентификатор IID требуемого интерфейса метаданных, который должен быть возвращен; вызывающий объект будет использовать интерфейс для создания новых метаданных.  
@@ -53,7 +54,7 @@ HRESULT DefineScope (
  `ppIUnk`  
  заполняет Указатель на возвращаемый интерфейс.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `DefineScope` создает набор таблиц метаданных в памяти, создает уникальный идентификатор GUID (идентификатор версии модуля или MVID) для метаданных и создает запись в таблице Module для выдаваемой единицы компиляции.  
   
@@ -67,9 +68,9 @@ HRESULT DefineScope (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataDispenser](imetadatadispenser-interface.md)
 - [Интерфейс IMetaDataDispenserEx](imetadatadispenserex-interface.md)

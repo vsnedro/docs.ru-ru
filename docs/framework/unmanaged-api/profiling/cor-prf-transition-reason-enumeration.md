@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_PRF_TRANSITION_REASON'
 title: Перечисление COR_PRF_TRANSITION_REASON
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: da941118-01b7-4197-ae5b-9f2f8adcd623
 topic_type:
 - apiref
-ms.openlocfilehash: 747313f217092652d5a9404fbf81383fa0828ee9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d0b7852f80f80a47f910e9f1240a5315772cd23
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696665"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788999"
 ---
 # <a name="cor_prf_transition_reason-enumeration"></a>Перечисление COR_PRF_TRANSITION_REASON
 
@@ -41,7 +42,7 @@ typedef enum {
 |`COR_PRF_TRANSITION_CALL`|Переход происходит из-за вызова функции.|  
 |`COR_PRF_TRANSITION_RETURN`|Переход происходит из-за возврата из функции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Когда происходит переход, профилировщик получает обратный вызов [ICorProfilerCallback:: манажедтаунманажедтранситион](icorprofilercallback-managedtounmanagedtransition-method.md) или [ICorProfilerCallback:: унманажедтоманажедтранситион](icorprofilercallback-unmanagedtomanagedtransition-method.md) , который предоставляет значение `COR_PRF_TRANSITION_REASON` перечисления для указания причины перехода.  
   
@@ -53,4 +54,4 @@ typedef enum {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostTaskManager:: Sleep'
 title: Метод IHostTaskManager::Sleep
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f67d25f3-9199-4c5f-b1e8-1c819243cfd5
 topic_type:
 - apiref
-ms.openlocfilehash: 372b15a565f8a7484c1c42c387098a38f7bbf428
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fedb87c6bd4558a2aa6158299551327cb2271d51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702060"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789376"
 ---
 # <a name="ihosttaskmanagersleep-method"></a>Метод IHostTaskManager::Sleep
 
@@ -54,7 +55,7 @@ HRESULT Sleep (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR обычно вызывает `IHostTaskManager::Sleep` метод <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> , когда вызывается из пользовательского кода.  
   
@@ -66,9 +67,9 @@ HRESULT Sleep (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

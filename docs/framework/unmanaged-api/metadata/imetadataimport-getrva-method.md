@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: GetRVA'
 title: Метод IMetaDataImport::GetRVA
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea422217-988b-4acd-b2db-c55357938275
 topic_type:
 - apiref
-ms.openlocfilehash: b4e7209c357f21a3f0de5770b483b673d5a5570b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8d6439bcad50a6311e7bb1408f4c86144a5026ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789168"
 ---
 # <a name="imetadataimportgetrva-method"></a>Метод IMetaDataImport::GetRVA
 
@@ -55,9 +56,9 @@ HRESULT GetRVA (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

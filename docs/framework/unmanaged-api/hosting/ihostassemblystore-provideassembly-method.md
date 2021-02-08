@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostAssemblyStore::P Ровидеассембли'
 title: Метод IHostAssemblyStore::ProvideAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
 topic_type:
 - apiref
-ms.openlocfilehash: db65519579104dd01816bb6d7cacaec947f24f53
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f8917cb28dd3898343a7b6ee08bd54096df8cfa7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95680873"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789506"
 ---
 # <a name="ihostassemblystoreprovideassembly-method"></a>Метод IHostAssemblyStore::ProvideAssembly
 
@@ -68,7 +69,7 @@ HRESULT ProvideAssembly (
 |COR_E_FILENOTFOUND (0x80070002)|Не удалось найти запрошенную сборку.|  
 |E_NOT_SUFFICIENT_BUFFER|Размер буфера, указанный в, `pAssemblyId` недостаточно велик для хранения идентификатора, который требуется вернуть узлу.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение идентификатора, возвращенное для `pAssemblyId` , задается узлом. Идентификаторы должны быть уникальными в течение всего времени существования процесса. Среда CLR использует это значение в качестве уникального идентификатора потока. Он проверяет каждое значение по значениям `pAssemblyId` , возвращаемым другими вызовами метода `ProvideAssembly` . Если узел возвращает одно и то же `pAssemblyId` значение для другого `IStream` , среда CLR проверяет, было ли уже сопоставлено содержимое этого потока. Если это так, среда выполнения загружает существующую копию изображения вместо сопоставления нового.  
   
@@ -80,9 +81,9 @@ HRESULT ProvideAssembly (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Интерфейс IHostAssemblyManager](ihostassemblymanager-interface.md)

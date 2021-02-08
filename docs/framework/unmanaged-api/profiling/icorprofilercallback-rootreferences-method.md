@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerCallback:: RootReferences'
 title: Метод ICorProfilerCallback::RootReferences
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbdf853b-d1a4-4828-8ef7-53d121d8e6ae
 topic_type:
 - apiref
-ms.openlocfilehash: 2d084ce0a785ba37c5b7dc937ed116cee74b7594
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e09434c425784e646c9856693abdfd4ac0d49273
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720676"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788869"
 ---
 # <a name="icorprofilercallbackrootreferences-method"></a>Метод ICorProfilerCallback::RootReferences
 
@@ -42,7 +43,7 @@ HRESULT RootReferences(
  `rootRefIds`  
  окне Массив идентификаторов объектов, ссылающихся либо на статический объект, либо на объект в стеке.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `RootReferences`Для уведомления профилировщика вызываются методы и [ICorProfilerCallback2:: RootReferences2](icorprofilercallback2-rootreferences2-method.md) . Профилировщики обычно реализуют один или другой, но не оба, так как передаваемые сведения `RootReferences2` являются надмножеством переданного `RootReferences` .  
   
@@ -58,8 +59,8 @@ HRESULT RootReferences(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)

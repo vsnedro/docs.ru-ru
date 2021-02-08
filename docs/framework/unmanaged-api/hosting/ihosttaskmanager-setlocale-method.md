@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostTaskManager:: SetLocale'
 title: Метод IHostTaskManager::SetLocale
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 747ee407-ee8c-484d-9583-25089236d2d1
 topic_type:
 - apiref
-ms.openlocfilehash: 7730c2dddaca98e4cb06cdb381e8a46ff23c97f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 522a3da9bcd8d61754684091f6de3f11f7ed478c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95699213"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789415"
 ---
 # <a name="ihosttaskmanagersetlocale-method"></a>Метод IHostTaskManager::SetLocale
 
@@ -51,7 +52,7 @@ HRESULT SetLocale (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_NOTIMPL|Узел не позволяет управляемому пользовательскому коду изменять языковой стандарт.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда выполнения вызывает `SetLocale` , когда значение <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> свойства изменяется управляемым кодом. Этот метод предоставляет узлу возможность выполнять любые механизмы, которые могут потребоваться для синхронизации языковых стандартов. Если узел не позволяет изменить языковой стандарт из управляемого кода или не реализует механизм для синхронизации языковых стандартов, он должен возвращать E_NOTIMPL из этого метода.  
   
@@ -63,9 +64,9 @@ HRESULT SetLocale (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

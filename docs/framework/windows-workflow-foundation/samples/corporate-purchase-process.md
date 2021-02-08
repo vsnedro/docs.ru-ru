@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о корпоративном процессе покупки
 title: Процесс корпоративных закупок
 ms.date: 03/30/2017
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
-ms.openlocfilehash: aa2ca2577eb68204ffcb755ce1b16b9354348ee3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: c26b1f46f29b7a6ec06acf5d19381b5c8f460433
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96293472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787868"
 ---
 # <a name="corporate-purchase-process"></a>Процесс корпоративных закупок
 
@@ -44,7 +45,7 @@ ms.locfileid: "96293472"
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
@@ -108,7 +109,7 @@ ms.locfileid: "96293472"
 
  В следующей таблице содержится описание наиболее важных классов в проекте Common.  
   
-|Класс|Описание|  
+|Class|Описание|  
 |-----------|-----------------|  
 |Vendor|Поставщик, который передает предложения в запросе предложений.|  
 |RequestForProposal|Запрос предложений представляет собой приглашение для поставщиков, согласно которому они должны передать предложения по конкретному товару или услуге.|  
