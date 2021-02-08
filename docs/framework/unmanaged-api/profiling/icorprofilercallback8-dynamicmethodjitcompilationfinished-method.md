@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback8::D Инамикмесоджиткомпилатионфинишед'
 title: 'ICorProfilerCallback8: метод:D Инамикмесоджиткомпилатионфинишед'
 ms.date: 04/10/2018
 api_name:
@@ -8,16 +9,16 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 6354667e754da42692cc0de2dc5330c56f951aa1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d076307b9e57c27753297cad8eebc1b9aa9433f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781718"
 ---
 # <a name="icorprofilercallback8dynamicmethodjitcompilationfinished-method"></a>ICorProfilerCallback8: метод:D Инамикмесоджиткомпилатионфинишед
 
-[Поддерживается в .NET Framework 4,7 и более поздних версиях]  
+[Поддерживается в платформа .NET Framework 4,7 и более поздних версиях]  
   
 Уведомляет профилировщик о завершении JIT-компиляции динамического метода.  
   
@@ -41,7 +42,7 @@ HRESULT DynamicMethodJITCompilationFinished(
 [входные] `fIsSafeToBlock` 
  `true` чтобы указать, что блокировка может привести к тому, что среда выполнения будет ожидать возврата вызывающим потоком из этого обратного вызова. `false`чтобы указать, что блокировка не повлияет на работу среды выполнения.  
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
 Этот обратный вызов активируется каждый раз, когда JIT-компиляция динамического метода завершается. Сюда входят различные суррогаты IL и методы LCG. Его цель — предоставить средствам записи профилировщика достаточно информации для распознавания скомпилированного метода для пользователей.
 
@@ -56,9 +57,9 @@ HRESULT DynamicMethodJITCompilationFinished(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
 - [Интерфейс ICorProfilerCallback8](icorprofilercallback8-interface.md)

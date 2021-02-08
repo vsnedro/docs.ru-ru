@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameKeyDelete
 title: Функция StrongNameKeyDelete
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 313e71e4-1790-4d2f-b68b-5040ebd1c149
 topic_type:
 - apiref
-ms.openlocfilehash: d37f990241ae704abef55d863da0f40a31284837
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 9314d961f79e673925125c2362308f9ab4533e75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73141594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781211"
 ---
 # <a name="strongnamekeydelete-function"></a>Функция StrongNameKeyDelete
 
@@ -42,13 +43,13 @@ BOOLEAN StrongNameKeyDelete (
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-`true` при успешном завершении; в противном случае `false`.
+`true` При успешном завершении; в противном случае — `false` .
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Используйте функцию [StrongNameKeyInstall](strongnamekeyinstall-function.md) для импорта пары открытого и закрытого ключей в контейнер.
 
-Если функция `StrongNameKeyDelete` не завершается успешно, вызовите функцию [StrongNameErrorInfo](strongnameerrorinfo-function.md), чтобы получить последнюю созданную ошибку.
+Если `StrongNameKeyDelete` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.
 
 ## <a name="requirements"></a>Требования
 
@@ -56,9 +57,9 @@ BOOLEAN StrongNameKeyDelete (
 
 **Заголовок:** StrongName. h
 
-**Библиотека:** Включается в качестве ресурса в библиотеку MsCorEE. dll
+**Библиотека:** Включается в качестве ресурса в MsCorEE.dll
 
-**Версии платформы .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

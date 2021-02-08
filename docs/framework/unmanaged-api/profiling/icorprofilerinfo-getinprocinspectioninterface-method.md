@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorProfilerInfo:: ЖетинпроЦинспектионинтерфаце'
 title: Метод ICorProfilerInfo::GetInprocInspectionInterface
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 22a92d1d-8849-4af6-8304-ecc53dd1d289
 topic_type:
 - apiref
-ms.openlocfilehash: cc8bdfb1e46e5304227a40f869856f07e1f90bed
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5b7ce053f0a64afd5d702a4eb59c1712f4b26e9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781471"
 ---
 # <a name="icorprofilerinfogetinprocinspectioninterface-method"></a>Метод ICorProfilerInfo::GetInprocInspectionInterface
 
-Возвращает объект, к которому можно выполнить запрос для интерфейса "ICorDebugProcess". Этот метод является устаревшим в .NET Framework версии 2,0.  
+Возвращает объект, к которому можно выполнить запрос для интерфейса "ICorDebugProcess". Этот метод является устаревшим в платформа .NET Framework версии 2,0.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -38,9 +39,9 @@ HRESULT GetInprocInspectionInterface(
  `ppicd`  
  [выходной](/cpp/atl/iunknown) объект, к которому можно запросить `ICorDebugProcess` интерфейс.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- API отладки среды CLR поддерживал ограниченную внутрипроцессную отладку в .NET Framework версии 1,0. В процессе отладки с помощью профилировщика можно использовать части проверки для API отладки. В результате отзывов клиентов внутрипроцессный процесс отладки был удален из .NET Framework в версии 2,0 и заменен набором функциональных возможностей, которые более подробно описаны в API профилирования.  
+ API отладки среды CLR поддерживал ограниченную внутрипроцессную отладку в платформа .NET Framework версии 1,0. В процессе отладки с помощью профилировщика можно использовать части проверки для API отладки. В результате отзывов клиентов внутрипроцессный процесс отладки был удален из платформа .NET Framework в версии 2,0 и заменен набором функциональных возможностей, которые более подробно описаны в API профилирования.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -50,8 +51,8 @@ HRESULT GetInprocInspectionInterface(
   
  **Библиотека:** CorGuids.lib  
   
- **Версия .NET Framework:** 1,0  
+ **Версия платформа .NET Framework:** 1,0  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

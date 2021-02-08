@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrstrongname:: StrongNameSignatureGenerationEx'
 title: Метод ICLRStrongName::StrongNameSignatureGenerationEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c3f34584-c6e2-41fd-bb44-e44da8546309
 topic_type:
 - apiref
-ms.openlocfilehash: 78cc043953e6288df136b43590831569d112afef
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 911f55aa509c25eb0d95d6d2a31c9f715af2080d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781874"
 ---
 # <a name="iclrstrongnamestrongnamesignaturegenerationex-method"></a>Метод ICLRStrongName::StrongNameSignatureGenerationEx
 
@@ -77,7 +78,7 @@ HRESULT StrongNameSignatureGenerationEx (
 
  `S_OK` значение, если метод успешно выполнен; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Укажите значение NULL для `wszFilePath` , чтобы вычислить размер подписи без создания подписи.  
   
@@ -95,9 +96,9 @@ HRESULT StrongNameSignatureGenerationEx (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureGeneration](iclrstrongname-strongnamesignaturegeneration-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

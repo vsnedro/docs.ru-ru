@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback7:: Модулеинмеморисимболсупдатед'
 title: 'Метод ICorProfilerCallback7:: Модулеинмеморисимболсупдатед'
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-ms.openlocfilehash: 248d2f749ddcbd772313558af2b2721f4d1c0f58
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74adf7edc5269824a924933eb3284a5964e1bac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781731"
 ---
 # <a name="icorprofilercallback7moduleinmemorysymbolsupdated-method"></a>Метод ICorProfilerCallback7:: Модулеинмеморисимболсупдатед
 
@@ -35,7 +36,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
  [in] `moduleId`  
  Идентификатор модуля в памяти, чей поток символов обновлен.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот обратный вызов управляется путем установки флага [COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](cor-prf-high-monitor-enumeration.md) маски событий при вызове метода [ICorProfilerCallback5:: SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) .  
   
@@ -52,9 +53,9 @@ HRESULT ModuleInMemorySymbolsUpdated(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md)
 - [Метод SetEventMask2](icorprofilerinfo5-seteventmask2-method.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorProfilerCallback7'
 title: Интерфейс ICorProfilerCallback7
 ms.date: 03/30/2017
 api_name:
@@ -9,12 +10,12 @@ api_location:
 api_type:
 - COM
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
-ms.openlocfilehash: e9c7186b3217c29805327e6c1d6b10f580c3a9e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3db402db221fca4487939f9817b20ec0c5207fc5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781744"
 ---
 # <a name="icorprofilercallback7-interface"></a>Интерфейс ICorProfilerCallback7
 
@@ -34,8 +35,8 @@ ms.locfileid: "95725460"
   
  **Заголовок:** CorProf.idl, CorProf.h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)

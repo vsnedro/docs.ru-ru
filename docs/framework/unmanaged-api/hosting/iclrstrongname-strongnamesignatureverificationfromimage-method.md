@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrstrongname:: StrongNameSignatureVerificationFromImage'
 title: Метод ICLRStrongName::StrongNameSignatureVerificationFromImage
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: da91c138-ee30-4fd4-a040-464d97d7e41a
 topic_type:
 - apiref
-ms.openlocfilehash: 134b32b6b281a08997849f4c23edfc1f357dadcd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5c1c3568dd0ad506c478525503f168d8b8c2dfbc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674402"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781835"
 ---
 # <a name="iclrstrongnamestrongnamesignatureverificationfromimage-method"></a>Метод ICLRStrongName::StrongNameSignatureVerificationFromImage
 
@@ -77,7 +78,7 @@ HRESULT StrongNameSignatureVerificationFromImage (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

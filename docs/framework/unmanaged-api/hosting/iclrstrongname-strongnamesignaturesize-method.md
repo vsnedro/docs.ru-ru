@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrstrongname:: StrongNameSignatureSize'
 title: Метод ICLRStrongName::StrongNameSignatureSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 76d4f93a-5e25-4399-abcc-a1389549481d
 topic_type:
 - apiref
-ms.openlocfilehash: f43a4e65442ca79ece71ce7e5e014309a611d7cc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c3804eea5b7c6325519b19546f25585af649866
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781861"
 ---
 # <a name="iclrstrongnamestrongnamesignaturesize-method"></a>Метод ICLRStrongName::StrongNameSignatureSize
 
@@ -59,7 +60,7 @@ HRESULT StrongNameSignatureSize (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## <a name="see-also"></a>См. также раздел
 

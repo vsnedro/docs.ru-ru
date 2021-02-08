@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икорпрофилерфунктионконтрол:: SetILFunctionBody'
 title: Метод ICorProfilerFunctionControl::SetILFunctionBody
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type:
 - apiref
-ms.openlocfilehash: fa82cd1e646777c9841c1b3d653134aa7ba7ed7c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 470eefce5b211adcfd111951be9a004b3bd7d8fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781614"
 ---
 # <a name="icorprofilerfunctioncontrolsetilfunctionbody-method"></a>Метод ICorProfilerFunctionControl::SetILFunctionBody
 
@@ -50,7 +51,7 @@ HRESULT SetILFunctionBody(
 |-------------|-----------------|  
 |S_OK|Замена выполнена успешно.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В отличие от метода [ICorProfilerInfo:: SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) `SetILFunctionBody` метод управляет памятью, необходимой для нового тела CIL. Это означает, что тело CIL, предоставленное профилировщиком, не должно выделяться с помощью интерфейса [IMethodMalloc](imethodmalloc-interface.md) или выделено в определенном диапазоне. Его можно разместить в любой куче. Профилировщик может освободить память, используемую для его тела CIL после `SetILFunctionBody` возврата.  
   
@@ -62,8 +63,8 @@ HRESULT SetILFunctionBody(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerFunctionControl](icorprofilerfunctioncontrol-interface.md)

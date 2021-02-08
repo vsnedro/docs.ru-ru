@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback8::D Инамикмесоджиткомпилатионстартед'
 title: 'ICorProfilerCallback8: метод:D Инамикмесоджиткомпилатионстартед'
 ms.date: 04/10/2018
 api_name:
@@ -8,16 +9,16 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 46a25fc6e9119481f728275e0569429cc6c46dc9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 186b41564e0aabb069b06356b8eccbe90296ec4b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781705"
 ---
 # <a name="icorprofilercallback8dynamicmethodjitcompilationstarted-method"></a>ICorProfilerCallback8: метод:D Инамикмесоджиткомпилатионстартед
 
-[Поддерживается в .NET Framework 4,7 и более поздних версиях]  
+[Поддерживается в платформа .NET Framework 4,7 и более поздних версиях]  
   
 Уведомляет профилировщик каждый раз, когда запускается JIT-компиляция динамического метода.  
   
@@ -44,7 +45,7 @@ HRESULT DynamicMethodJITCompilationStarted(
 
 [входные] `cbILHeader` Число байтов в заголовке IL.
 
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
 Этот обратный вызов активируется всякий раз, когда динамический метод компилируется JIT-компилятором. Сюда входят различные суррогаты IL и методы LCG. Его цель — предоставить средствам записи профилировщика достаточно информации для распознавания скомпилированного метода для пользователей.
 
@@ -61,9 +62,9 @@ HRESULT DynamicMethodJITCompilationStarted(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод DynamicMethodJITCompilationFinished](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)
 - [Интерфейс ICorProfilerCallback8](icorprofilercallback8-interface.md)

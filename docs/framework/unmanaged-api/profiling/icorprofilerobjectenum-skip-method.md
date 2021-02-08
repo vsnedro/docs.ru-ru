@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerObjectEnum:: Skip'
 title: Метод ICorProfilerObjectEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f8e498f8-f93a-4b82-bd22-55bdbf5e8d45
 topic_type:
 - apiref
-ms.openlocfilehash: 83c6af74ebc3eb668317bd64628af17513a2aed6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8a2aa5dd2b905931b97fafa4db6709aab16aacc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702359"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781263"
 ---
 # <a name="icorprofilerobjectenumskip-method"></a>Метод ICorProfilerObjectEnum::Skip
 
@@ -39,7 +40,7 @@ HRESULT Skip (
  `celt`  
  окне Число пропущенных элементов.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Новая позиции курсора перечислителя: (Текущая позиции) + `celt` .  
   
@@ -51,8 +52,8 @@ HRESULT Skip (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)

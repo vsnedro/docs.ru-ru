@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о настройке привязок System-Provided.
 title: Настройка привязок, предоставляемых системой
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WCF [WCF], system-provided bindings
 - bindings [WCF], system-provided
 ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
-ms.openlocfilehash: ab608ba954eafd9035335f00c8755629c5703c22
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1254d40638dd27ea14d79888cdf326d49345e02a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96284164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780730"
 ---
 # <a name="configuring-system-provided-bindings"></a>Настройка привязок, предоставляемых системой
 

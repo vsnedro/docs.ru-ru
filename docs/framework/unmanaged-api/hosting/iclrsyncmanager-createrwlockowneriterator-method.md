@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRSyncManager:: CreateRWLockOwnerIterator'
 title: Метод ICLRSyncManager::CreateRWLockOwnerIterator
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b5535b87-9439-424e-b9b3-7d6fafb9819e
 topic_type:
 - apiref
-ms.openlocfilehash: 2b6a2082d27fca4c78dcb15a13cfd87e8066e388
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6997b7720586f422cba3c96ca06a93f747d05bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95687220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781783"
 ---
 # <a name="iclrsyncmanagercreaterwlockowneriterator-method"></a>Метод ICLRSyncManager::CreateRWLockOwnerIterator
 
@@ -55,7 +56,7 @@ HRESULT CreateRWLockOwnerIterator (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |HOST_E_INVALIDOPERATION|`CreateRWLockOwnerIterator` был вызван в потоке, который в настоящий момент выполняет управляемый код.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узлы обычно вызывают `CreateRWLockOwnerIterator` методы, `DeleteRWLockOwnerIterator` и `GetRWLockOwnerNext` во время обнаружения взаимоблокировки. Узел отвечает за обеспечение допустимости блокировки чтения и записи, так как среда CLR не пытается сохранить блокировку чтения-записи в активном состоянии. Для обеспечения допустимости блокировки на узле доступны несколько стратегий.  
   
@@ -74,9 +75,9 @@ HRESULT CreateRWLockOwnerIterator (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

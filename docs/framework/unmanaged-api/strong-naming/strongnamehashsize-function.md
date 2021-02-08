@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameHashSize
 title: Функция StrongNameHashSize
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
 topic_type:
 - apiref
-ms.openlocfilehash: 1116fcde754f966a783f4fdca85df8bd3ca1b0ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3e6700bfce3ba480814f3837011c5f8f7107bbd5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781250"
 ---
 # <a name="strongnamehashsize-function"></a>Функция StrongNameHashSize
 
@@ -48,7 +49,7 @@ BOOLEAN StrongNameHashSize (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `StrongNameHashSize` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
@@ -60,9 +61,9 @@ BOOLEAN StrongNameHashSize (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameHashSize](../hosting/iclrstrongname-strongnamehashsize-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

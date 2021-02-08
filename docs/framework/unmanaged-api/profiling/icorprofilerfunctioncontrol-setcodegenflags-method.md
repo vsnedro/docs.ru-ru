@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Икорпрофилерфунктионконтрол:: SetCodegenFlags'
 title: Метод ICorProfilerFunctionControl::SetCodegenFlags
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a2d5daa5-b990-4ae5-bf2a-c0862fe58bd7
 topic_type:
 - apiref
-ms.openlocfilehash: 3593b07759b4d6feee239042e5aabaf0876fdd1c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 61fa8be0993a06a3b2d352af408ac47b7b30e385
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781627"
 ---
 # <a name="icorprofilerfunctioncontrolsetcodegenflags-method"></a>Метод ICorProfilerFunctionControl::SetCodegenFlags
 
@@ -38,7 +39,7 @@ HRESULT SetCodegenFlags(
  `flags`  
  окне Один или несколько флагов из перечисления [COR_PRF_CODEGEN_FLAGS](cor-prf-codegen-flags-enumeration.md) .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Профилировщик получает экземпляр этого интерфейса через обратный вызов [ICorProfilerCallback4:: жетрежитпараметерс](icorprofilercallback4-getrejitparameters-method.md) . `SetCodegenFlags` позволяет профилировщику управлять созданием кода для повторно скомпилированной функции. Как и в случае с другими параметрами повторной компиляции JIT, флаги создания кода применяются ко всем экземплярам функции.  
   
@@ -52,8 +53,8 @@ HRESULT SetCodegenFlags(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerFunctionControl](icorprofilerfunctioncontrol-interface.md)
