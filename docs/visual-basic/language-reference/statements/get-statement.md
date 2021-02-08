@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о инструкции: Get'
 title: Оператор Get
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Get keyword [Visual Basic]
 - property procedures [Visual Basic], Get statements
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.openlocfilehash: 3da6c099b3f43a144484eaddf58605609eb0bbfe
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 1cda485867a941129ab2453d4c0900d1403f4e8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769043"
 ---
 # <a name="get-statement"></a>Оператор Get
 
@@ -35,7 +36,7 @@ End Get
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может применяться один из перечисленных ниже типов.<br /><br /> -   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательно для одного из `Get` `Set` операторов и в этом свойстве. Может принимать следующие значения:<br /><br /> -   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-   `Protected Friend`<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`statements`|Необязательный элемент. Одна или несколько инструкций, выполняемых при `Get` вызове процедуры свойства.|  
 |`End Get`|Обязательный элемент. Завершает определение `Get` процедуры свойства.|  
   

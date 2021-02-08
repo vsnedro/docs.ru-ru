@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: if... Затем... Оператор else (Visual Basic)'
 title: Оператор If…Then…Else
 ms.date: 04/16/2018
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - If function [Visual Basic], and If...Then...Else statements
 - Else statement [Visual Basic]
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
-ms.openlocfilehash: 0884b71c24742286e695e720add9d00dd4bfe52b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83850771354b95f0e2d9c1bf1360a61d5264fe2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769017"
 ---
 # <a name="ifthenelse-statement-visual-basic"></a>Оператор If...Then...Else (Visual Basic)
 
@@ -59,7 +60,7 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 ## <a name="parts"></a>Компоненты
 
 `condition` \
-Обязательный. Выражение. Должен иметь значение `True` или `False` , или, или к типу данных, который неявно преобразуется в `Boolean` .
+Обязательный элемент. Выражение. Должен иметь значение `True` или `False` , или, или к типу данных, который неявно преобразуется в `Boolean` .
 
 Если выражение является переменной, [допускающей значение NULL](../../programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` , значением которого является [Nothing](../nothing.md), условие обрабатывается так, как если `False` бы выражение было, а `ElseIf` блоки оцениваются, если они существуют, или `Else` блок выполняется, если он существует.
 
@@ -81,7 +82,7 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 `End If` \
 Завершает многострочную версию `If` ... `Then` ...`Else` блок.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 ### <a name="multiline-syntax"></a>Многострочный синтаксис
 
@@ -94,7 +95,7 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 > [!TIP]
 > [Выберите... Оператор Case](select-case-statement.md) может оказаться более полезным при вычислении одного выражения, имеющего несколько возможных значений.
 
-### <a name="single-line-syntax"></a>Однострочный синтаксис
+### <a name="single-line-syntax"></a>Синтаксис Single-Line
 
 Можно использовать однострочный синтаксис для одного условия с кодом для выполнения, если это так. Однако многострочный синтаксис обеспечивает большую структуру и гибкость и проще в чтении, обслуживании и отладке.
 
@@ -118,13 +119,13 @@ If condition Then [ statements ] [ Else [ elsestatements ] ]
 
 [!code-vb[VbVbalrStatements#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#102)]
 
-## <a name="single-line-syntax-example"></a>Пример однострочного синтаксиса
+## <a name="single-line-syntax-example"></a>Пример синтаксиса Single-Line
 
-<a name="single-line"></a>В следующем примере показано использование однострочного синтаксиса.
+<a name="single-line"></a> В следующем примере показано использование однострочного синтаксиса.
 
 [!code-vb[VbVbalrStatements#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - <xref:Microsoft.VisualBasic.Interaction.Switch%2A>

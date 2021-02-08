@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор Enum (Visual Basic)'
 title: Оператор Enum
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - variables [Visual Basic], enumeration
 - constants [Visual Basic], enumerated
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
-ms.openlocfilehash: 976cc68d67c69ec86918962ab2dd3406d15aed9a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dcaf28e949f8d34b8d72b07d8029ea10d6baeabf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769173"
 ---
 # <a name="enum-statement-visual-basic"></a>Оператор Enum (Visual Basic)
 
@@ -43,13 +44,13 @@ End Enum
 
   Необязательный элемент. Указывает, какой код может получить доступ к этому перечислению. Может принимать следующие значения:
 
-  - [Открытый](../modifiers/public.md)
+  - [Общедоступная](../modifiers/public.md)
 
-  - [От](../modifiers/protected.md)
+  - [Защищенный](../modifiers/protected.md)
 
-  - [Объявление](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Частное](../modifiers/private.md)
+  - [Частная](../modifiers/private.md)
 
   - [Protected Friend](../modifiers/protected-friend.md)
 
@@ -61,7 +62,7 @@ End Enum
 
 - `enumerationname`
 
-  Обязательный. Имя перечисления. Сведения о допустимых именах см. в разделе [Имена объявленных элементов](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+  Обязательный элемент. Имя перечисления. Сведения о допустимых именах см. в разделе [Имена объявленных элементов](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `datatype`
 
@@ -69,20 +70,20 @@ End Enum
 
 - `memberlist`
 
-  Обязательный. Список констант членов, объявляемых в этой инструкции. В отдельных строках исходного кода отображаются несколько элементов.
+  Обязательный элемент. Список констант членов, объявляемых в этой инструкции. В отдельных строках исходного кода отображаются несколько элементов.
 
-  Каждый `member` из них имеет следующий синтаксис и фрагменты:`[<attribute list>] member name [ = initializer ]`
+  Каждый `member` из них имеет следующий синтаксис и фрагменты: `[<attribute list>] member name [ = initializer ]`
 
-  |Часть|Описание|
+  |Отделение|Описание|
   |---|---|
-  |`membername`|Обязательный. Имя этого элемента.|
+  |`membername`|Обязательный элемент. Имя этого элемента.|
   |`initializer`|Необязательный элемент. Выражение, которое вычисляется во время компиляции и присваивается этому элементу.|
 
 - `End` `Enum`
 
   Завершает блок `Enum`.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Если имеется набор неизменяемых значений, логически связанных друг с другом, их можно определить вместе в перечислении. Это дает осмысленные имена для перечисления и его членов, которые проще запомнить, чем их значения. Затем можно использовать элементы перечисления во многих местах кода.
 
@@ -184,7 +185,7 @@ End Enum
 
 [!code-vb[VbEnumsTask#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#51)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Enum>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>

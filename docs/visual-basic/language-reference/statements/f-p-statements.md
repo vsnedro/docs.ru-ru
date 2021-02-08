@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: инструкции F-P'
 title: Операторы F-P
 ms.date: 07/20/2015
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f
-ms.openlocfilehash: 81a3c27dd49ce7f870e9609d582945641567e483
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e9b9ff71623846a196c7b03b9decbbcb9b33e0ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769095"
 ---
 # <a name="f-p-statements"></a>Операторы F-P
 
@@ -16,7 +17,7 @@ ms.locfileid: "90865891"
 |||||  
 |---|---|---|---|  
 |[Для каждого... Очеред](for-each-next-statement.md)|[For...Next](for-next-statement.md)|[Function](function-statement.md)|[Получить](get-statement.md)|  
-|[GoTo](goto-statement.md)|[If...Then...Else](if-then-else-statement.md)|[Реализации](implements-statement.md)|[Imports (тип и пространство имен .NET)](imports-statement-net-namespace-and-type.md)|  
+|[GoTo](goto-statement.md)|[Если... Затем... Кроме](if-then-else-statement.md)|[Реализации](implements-statement.md)|[Imports (тип и пространство имен .NET)](imports-statement-net-namespace-and-type.md)|  
 |[Imports (пространство имен XML)](imports-statement-xml-namespace.md)|[Наследует](inherits-statement.md)|[Интерфейс](interface-statement.md)|[Расчет](mid-statement.md)|  
 |[Модуль](module-statement.md)|[Пространство имен](namespace-statement.md)|[В случае ошибки](on-error-statement.md)|[Оператор](operator-statement.md)|  
 |[Функцию \<keyword>](option-keyword-statement.md)|[Option Compare](option-compare-statement.md)|[Option Explicit](option-explicit-statement.md)|[Option Infer](option-infer-statement.md)|  

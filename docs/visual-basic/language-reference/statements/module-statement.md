@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе Module
 title: Оператор Module
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - classes [Visual Basic], vs. modules
 - declarations [Visual Basic], modules
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
-ms.openlocfilehash: 24a27ba41f5ac889f2f2725a2852368a4292a6fb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2a19bcfa4521d34b5a91fbc9de412a6d8f6f39c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768874"
 ---
 # <a name="module-statement"></a>Оператор Module
 
@@ -40,14 +41,14 @@ End Module
 `accessmodifier`  
 Необязательный элемент. Может принимать следующие значения:
 
-- [Открытый](../modifiers/public.md)
+- [Общедоступная](../modifiers/public.md)
 
-- [Объявление](../modifiers/friend.md)
+- [Friend](../modifiers/friend.md)
 
 См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 `name`  
-Обязательный. Имя этого модуля. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+Обязательный элемент. Имя этого модуля. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 `statements`  
 Необязательный элемент. Инструкции, которые определяют переменные, свойства, события, процедуры и вложенные типы этого модуля.
@@ -55,7 +56,7 @@ End Module
 `End Module`  
 Завершает `Module` Определение.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 `Module`Оператор определяет ссылочный тип, доступный в пределах его пространства имен. *Модуль* (иногда называемый *стандартным модулем*) аналогичен классу, но с некоторыми важными различиями. Каждый модуль имеет ровно один экземпляр и не требует создания или назначения переменной. Модули не поддерживают наследование или реализуют интерфейсы. Обратите внимание, что модуль не является *типом* в том смысле, что класс или структура — нельзя объявить программный элемент для типа данных модуля.
 
@@ -71,7 +72,7 @@ End Module
 
 У этих элементов много сходства, но есть и некоторые важные отличия.
 
-- **Терминология.** В предыдущих версиях Visual Basic распознаются два типа модулей: *модули классов* (CLS-файлы) и *стандартные модули* (файлы. BAS). Текущая версия вызывает эти *классы* и *модули*соответственно.
+- **Терминология.** В предыдущих версиях Visual Basic распознаются два типа модулей: *модули классов* (CLS-файлы) и *стандартные модули* (файлы. BAS). Текущая версия вызывает эти *классы* и *модули* соответственно.
 
 - **Общие члены.** Можно контролировать, является ли член класса общим или членом экземпляра.
 
@@ -101,7 +102,7 @@ End Module
 
 [!code-vb[VbVbalrStatements#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#69)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Оператор Class](class-statement.md)
 - [Оператор Namespace](namespace-statement.md)

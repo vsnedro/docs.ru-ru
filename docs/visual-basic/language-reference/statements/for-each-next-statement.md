@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: для каждого... Оператор Next (Visual Basic)'
 title: Оператор For Each…Next
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - Exit statement [Visual Basic], For Each...Next statements
 - iteration
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
-ms.openlocfilehash: 0feb938121a97b06509b472652e6a753841ab2b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ff7afb5e3b505ebe2326343063a7884dc4f567b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769108"
 ---
 # <a name="for-eachnext-statement-visual-basic"></a>Оператор For Each...Next (Visual Basic)
 
@@ -51,11 +52,11 @@ Next [ element ]
 |---|---|
 |`element`|Требуется в `For Each` инструкции. Необязательный в `Next` инструкции. Переменная. Используется для прохода по элементам коллекции.|
 |`datatype`|Необязательный [`Option Infer`](option-infer-statement.md) параметр, если имеет значение On (по умолчанию) или `element` уже объявлен; требуется, если `Option Infer` параметр имеет значение OFF и `element` еще не объявлен. Тип данных `element`.|
-|`group`|Обязательный. Переменная типа, которая является типом коллекции или объектом. Ссылается на коллекцию, для которой `statements` повторяются.|
+|`group`|Обязательный элемент. Переменная типа, которая является типом коллекции или объектом. Ссылается на коллекцию, для которой `statements` повторяются.|
 |`statements`|Необязательный элемент. Одна или несколько инструкций между `For Each` и `Next` выполняются для каждого элемента в `group` .|
 |`Continue For`|Необязательный элемент. Передает управление в начало `For Each` цикла.|
 |`Exit For`|Необязательный элемент. Передает управление за пределы `For Each` цикла.|
-|`Next`|Обязательный. Завершает определение `For Each` цикла.|
+|`Next`|Обязательный элемент. Завершает определение `For Each` цикла.|
 
 ## <a name="simple-example"></a>Простой пример
 
@@ -94,11 +95,11 @@ Next [ element ]
 
 В цикле можно разместить любое количество `Exit For` операторов `For Each` . При использовании внутри вложенных `For Each` циклов `Exit For` выполнение вызывает выход из внутреннего цикла и передает управление следующему более высокому уровню вложенности.
 
-`Exit For`часто используется после вычисления некоторого условия, например в `If` ... `Then` ...`Else` дереве. Может потребоваться использовать `Exit For` для следующих условий:
+`Exit For` часто используется после вычисления некоторого условия, например в `If` ... `Then` ...`Else` дереве. Может потребоваться использовать `Exit For` для следующих условий:
 
 - Продолжение итерации не требуется или невозможно. Это может быть вызвано ошибочным значением или запросом на завершение.
 
-- Исключение перехвачено в `Try` ... `Catch` ...`Finally`. `Exit For`В конце блока можно использовать `Finally` .
+- Исключение перехвачено в `Try` ... `Catch` ...`Finally`. `Exit For` В конце блока можно использовать `Finally` .
 
 - Существует бесконечный цикл, который может выполняться с большим или даже бесконечным числом раз. При обнаружении такого условия можно использовать `Exit For` для экранирования цикла. Дополнительные сведения см. в разделе [Do... Loop, инструкция](do-loop-statement.md).
 
@@ -132,7 +133,7 @@ Next [ element ]
 
 Среда выполнения должна иметь возможность преобразования элементов в `group` `element` . Оператор [ `Option Strict` ] определяет, разрешены ли расширяющие и сужающие преобразования ( `Option Strict` значение по умолчанию) или разрешены только расширяющие преобразования ( `Option Strict` включено). Дополнительные сведения см. в разделе [сужающие преобразования](#narrowing-conversions).
 
-Тип данных `group` должен быть ссылочным типом, ссылающимся на коллекцию или массив, который является перечислимым. Чаще всего это означает, что `group` ссылается на объект, реализующий <xref:System.Collections.IEnumerable> интерфейс `System.Collections` пространства имен или <xref:System.Collections.Generic.IEnumerable%601> интерфейс `System.Collections.Generic` пространства имен. `System.Collections.IEnumerable`Определяет <xref:System.Collections.IEnumerable.GetEnumerator%2A> метод, который возвращает объект перечислителя для коллекции. Объект перечислителя реализует `System.Collections.IEnumerator` интерфейс `System.Collections` пространства имен и предоставляет <xref:System.Collections.IEnumerator.Current%2A> Свойства и <xref:System.Collections.IEnumerator.Reset%2A> <xref:System.Collections.IEnumerator.MoveNext%2A> методы и. Visual Basic использует их для прохода по коллекции.
+Тип данных `group` должен быть ссылочным типом, ссылающимся на коллекцию или массив, который является перечислимым. Чаще всего это означает, что `group` ссылается на объект, реализующий <xref:System.Collections.IEnumerable> интерфейс `System.Collections` пространства имен или <xref:System.Collections.Generic.IEnumerable%601> интерфейс `System.Collections.Generic` пространства имен. `System.Collections.IEnumerable` Определяет <xref:System.Collections.IEnumerable.GetEnumerator%2A> метод, который возвращает объект перечислителя для коллекции. Объект перечислителя реализует `System.Collections.IEnumerator` интерфейс `System.Collections` пространства имен и предоставляет <xref:System.Collections.IEnumerator.Current%2A> Свойства и <xref:System.Collections.IEnumerator.Reset%2A> <xref:System.Collections.IEnumerator.MoveNext%2A> методы и. Visual Basic использует их для прохода по коллекции.
 
 ### <a name="narrowing-conversions"></a>сужающие преобразования
 
@@ -182,7 +183,7 @@ End Sub
 
 [!code-vb[VbVbalrStatements#125](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#125)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Коллекции](../../../standard/collections/index.md)
 - [Оператор For…Next](for-next-statement.md)

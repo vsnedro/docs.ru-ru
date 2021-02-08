@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе Interface (Visual Basic)
 title: Оператор Interface
 ms.date: 05/12/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interface statement [Visual Basic]
 - interfaces [Visual Basic], interface definition
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.openlocfilehash: 3025adfe8c881a08df3b5f03253510c263c624d1
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: e7fccec585fdbfd3946c2fa9874b5ea9b65ff014
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873221"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768913"
 ---
 # <a name="interface-statement-visual-basic"></a>Оператор Interface (Visual Basic)
 
@@ -39,7 +40,7 @@ End Interface
 |Термин|Определение|  
 |---|---|  
 |`attributelist`|Необязательный элемент. См. [список атрибутов](attribute-list.md).|  
-|`accessmodifier`|Необязательный элемент. Может применяться один из перечисленных ниже типов.<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-  [Защищенный дружественный](../modifiers/protected-friend.md)<br/>- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
+|`accessmodifier`|Необязательный элемент. Может принимать следующие значения:<br /><br /> -   [Закрытый](../modifiers/public.md)<br />-   [От](../modifiers/protected.md)<br />-   [Объявление](../modifiers/friend.md)<br />-   [Личному](../modifiers/private.md)<br />-  [Защищенный дружественный](../modifiers/protected-friend.md)<br/>- [Частный защищенный](../modifiers/private-protected.md)<br /><br /> См. раздел [уровни доступа в Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|  
 |`Shadows`|Необязательный элемент. См. раздел [Shadows](../modifiers/shadows.md).|  
 |`name`|Обязательный элемент. Имя этого интерфейса. См. раздел [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|  
 |`Of`|Необязательный элемент. Указывает, что это универсальный интерфейс.|  
@@ -127,4 +128,4 @@ End Interface
 - [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
 - [Вариативность в универсальных интерфейсах](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
 - [Где](../modifiers/in-generic-modifier.md)
-- [Заполняет](../modifiers/out-generic-modifier.md)
+- [Out](../modifiers/out-generic-modifier.md)

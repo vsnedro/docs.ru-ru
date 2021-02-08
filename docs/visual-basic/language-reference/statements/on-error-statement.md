@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: On Error Statement (Visual Basic)'
 title: Оператор On Error
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], handling
 - On Error statement [Visual Basic]
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-ms.openlocfilehash: 7e007d59292fc577c0c8927766423ba6f7896a71
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 593e90b07101d08d18a0db127bcb74cf6509f317
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768835"
 ---
 # <a name="on-error-statement-visual-basic"></a>Оператор On Error (Visual Basic)
 
@@ -131,8 +132,8 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 - <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
-- [Оператор End](end-statement.md)
+- [End, инструкция](end-statement.md)
 - [Оператор Exit](exit-statement.md)
 - [Оператор Resume](resume-statement.md)
 - [Сообщения об ошибках](../error-messages/index.md)
-- [Попробуйте... Перехватить... Оператор finally](try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](try-catch-finally-statement.md)

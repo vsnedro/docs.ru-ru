@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о инструкции: GoTo'
 title: Оператор GoTo
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - conditional statements [Visual Basic], GoTo statement
 - GoTo statement [Visual Basic], syntax
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
-ms.openlocfilehash: 000f6754575bcce6b2d79d85541e755219aca956
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 804baec130111562225b09cbdc7b5fb2d73adba5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769056"
 ---
 # <a name="goto-statement"></a>Оператор GoTo
 
@@ -50,9 +51,9 @@ GoTo line
   
 |Блок или область|Ветвление вне|Ветвление из внутрь|  
 |---------------------|-------------------------------|-------------------------------|  
-|Блок `Try`|Только из `Catch` блока одной конструкции <sup>1</sup>|Только за пределами всей конструкции|  
-|Блок `Catch`|Никогда не разрешено|Только за пределами всей конструкции или с `Try` блоком той же конструкции <sup>1</sup>|  
-|Блок `Finally`|Никогда не разрешено|Никогда не разрешено|  
+|`Try` блок|Только из `Catch` блока одной конструкции <sup>1</sup>|Только за пределами всей конструкции|  
+|`Catch` блок|Никогда не разрешено|Только за пределами всей конструкции или с `Try` блоком той же конструкции <sup>1</sup>|  
+|`Finally` блок|Никогда не разрешено|Никогда не разрешено|  
   
  <sup>1</sup> , если один `Try` ... `Catch` ...`Finally` Конструкция вложена в другую, `Catch` блок может выполнять ветвление в `Try` блок на своем собственном уровне вложенности, но не в другой `Try` блок. Вложенный `Try` ... `Catch` ...`Finally` конструкция должна полностью содержаться в `Try` `Catch` блоке или конструкции, внутри которой она вложена.  
   
@@ -73,6 +74,6 @@ GoTo line
 - [Оператор For Each…Next](for-each-next-statement.md)
 - [Оператор If…Then…Else](if-then-else-statement.md)
 - [Оператор Select…Case](select-case-statement.md)
-- [Оператор Try…Catch…Finally](try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](try-catch-finally-statement.md)
 - [Оператор While…End While](while-end-while-statement.md)
 - [Оператор With…End With](with-end-with-statement.md)
