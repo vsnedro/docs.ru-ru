@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback2:: RootReferences2'
 title: Метод ICorProfilerCallback2::RootReferences2
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55a2f907-d216-42eb-8f2f-e5d59c2eebd6
 topic_type:
 - apiref
-ms.openlocfilehash: 9e53e7bcecd900bb6c71d0a822e9b63ff6726e58
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a599014cc9fb47b103a136b9e5569d38031c9377
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729524"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799087"
 ---
 # <a name="icorprofilercallback2rootreferences2-method"></a>Метод ICorProfilerCallback2::RootReferences2
 
@@ -56,7 +57,7 @@ HRESULT RootReferences2(
   
  Если корневым типом является стек, то для функции, содержащей переменную, используется корневой идентификатор. Если этот корневой идентификатор равен 0, функция является неименованной функцией, которая является внутренней для среды CLR. Если корневой тип является обработчиком, корневой идентификатор — для обработчика сборки мусора. Для других корневых типов идентификатор является непрозрачным значением и должен игнорироваться.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `rootRefIds` `rootKinds` `rootFlags` Массивы,, и `rootIds` являются параллельными массивами. То есть,,, `rootRefIds[i]` `rootKinds[i]` `rootFlags[i]` и `rootIds[i]` имеют тот же корень.  
   
@@ -74,9 +75,9 @@ HRESULT RootReferences2(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

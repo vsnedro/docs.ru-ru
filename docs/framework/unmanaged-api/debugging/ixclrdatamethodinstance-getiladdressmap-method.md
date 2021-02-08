@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатамесодинстанце:: Жетиладдрессмап'
 title: 'Метод Иксклрдатамесодинстанце:: Жетиладдрессмап'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 0acfa9ffd6f4bc3be567855008dccd08c9c74153
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ddddf593c3c18f2b4cd1682b5d6f7c8ff1985ac6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420920"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800816"
 ---
 # <a name="ixclrdatamethodinstancegetiladdressmap-method"></a>Метод Иксклрдатамесодинстанце:: Жетиладдрессмап
 
@@ -49,7 +50,7 @@ HRESULT GetILAddressMap(
 `maps`\
 [out, size_is (Маплен)] Массив для хранения записей сопоставлений.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `IXCLRDataMethodInstance` интерфейса и соответствует 15-слоту таблицы виртуального метода.
 
@@ -58,9 +59,9 @@ HRESULT GetILAddressMap(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataMethodInstance](ixclrdatamethodinstance-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerObjectEnum:: NOCOUNT'
 title: Метод ICorProfilerObjectEnum::GetCount
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 166b0761-ed80-4ccd-9973-dc20e61bf8fa
 topic_type:
 - apiref
-ms.openlocfilehash: a0777797870a707c0d0f00bc0b4c986448118231
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b1bedfca913a099f88780807021497d15f75fcd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95702398"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798944"
 ---
 # <a name="icorprofilerobjectenumgetcount-method"></a>Метод ICorProfilerObjectEnum::GetCount
 
@@ -39,7 +40,7 @@ HRESULT GetCount (
  `pcelt`  
  заполняет Указатель на число замороженных объектов в коллекции.  
   
- Этот метод всегда будет возвращать ноль в .NET Framework версии 3,5 с пакетом обновления 1 (SP1) и более поздних версиях.  
+ Этот метод всегда будет возвращать ноль в платформа .NET Framework версии 3,5 с пакетом обновления 1 (SP1) и более поздних версиях.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -49,8 +50,8 @@ HRESULT GetCount (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)

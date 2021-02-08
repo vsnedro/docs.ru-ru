@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс IMetaDataTables2'
 title: Интерфейс IMetaDataTables2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c788bb7c-0212-4b6d-b840-22e8c8829028
 topic_type:
 - apiref
-ms.openlocfilehash: ecec104b57a1503bf813a7bb6715ea5c855fb008
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ff6cc584eb10f88f3cee55056b4aa8f53470ce9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799230"
 ---
 # <a name="imetadatatables2-interface"></a>Интерфейс IMetaDataTables2
 
@@ -40,9 +41,9 @@ ms.locfileid: "95708716"
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataTables](imetadatatables-interface.md)
 - [Интерфейсы метаданных](metadata-interfaces.md)

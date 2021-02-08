@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Енумусерстрингс'
 title: Метод IMetaDataImport::EnumUserStrings
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
 topic_type:
 - apiref
-ms.openlocfilehash: c7dcc740dcf9b228713693a57dc8ef96d215ebad
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a4ead696f3d924fef9ebfed5c4f1eb97eb13e14e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95716568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799321"
 ---
 # <a name="imetadataimportenumuserstrings-method"></a>Метод IMetaDataImport::EnumUserStrings
 
@@ -58,7 +59,7 @@ HRESULT EnumUserStrings (
 |`S_OK`|`EnumUserStrings` успешно возвращено.|  
 |`S_FALSE`|Нет токенов для перечисления. В этом случае значение `pcStrings` равно нулю.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Строковые токены создаются методом [IMetaDataEmit::D ефинеусерстринг](imetadataemit-defineuserstring-method.md) . Этот метод предназначен для использования обозревателем метаданных, а не компилятором.  
   
@@ -70,9 +71,9 @@ HRESULT EnumUserStrings (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

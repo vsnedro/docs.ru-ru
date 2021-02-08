@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugProcess:: Жеселперсреадид'
 title: Метод ICorDebugProcess::GetHelperThreadID
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
 topic_type:
 - apiref
-ms.openlocfilehash: 77cc658e28c7a69d8c4aeeed2f3e7ea40f0d2af6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ee7bd2106a37c5c67df48a54ff9ab7fa49a03f80
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724576"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801024"
 ---
 # <a name="icordebugprocessgethelperthreadid-method"></a>Метод ICorDebugProcess::GetHelperThreadID
 
@@ -39,7 +40,7 @@ HRESULT GetHelperThreadID (
  `pThreadID`  
  заполняет Указатель на идентификатор потока операционной системы внутреннего вспомогательного потока отладчика.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Во время управляемой и неуправляемой отладки следует следить за тем, чтобы поток с указанным ИДЕНТИФИКАТОРом оставался в работоспособном режиме, если он достигнет точки останова, размещенной отладчиком. Отладчику также может потребоваться скрыть этот поток от пользователя. Если в процессе еще не существует вспомогательного потока, `GetHelperThreadID` метод возвращает ноль в * `pThreadID` .  
   
@@ -55,4 +56,4 @@ HRESULT GetHelperThreadID (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

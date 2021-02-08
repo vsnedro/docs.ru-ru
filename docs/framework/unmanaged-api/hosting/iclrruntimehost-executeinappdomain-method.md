@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRRuntimeHost:: Ексекутеинаппдомаин'
 title: Метода ICLRRuntimeHost::ExecuteInAppDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e2b0e2db-3fae-4b56-844e-d30a125a660c
 topic_type:
 - apiref
-ms.openlocfilehash: 4c28c4a5cc64b20c9ac9c57e1aef5e7b90a20e01
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6640713b55e05817f39af819d5e41ee1f2a10b68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799750"
 ---
 # <a name="iclrruntimehostexecuteinappdomain-method"></a>Метода ICLRRuntimeHost::ExecuteInAppDomain
 
@@ -58,7 +59,7 @@ HRESULT ExecuteInAppDomain(
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ExecuteInAppDomain` позволяет ведущему приложению осуществлять контроль над тем, какой управляемым <xref:System.AppDomain> указанным управляемым методом следует выполнять в. Можно получить значение идентификатора домена приложения, которое соответствует значению <xref:System.AppDomain.Id%2A> свойства, вызвав [метод жеткуррентаппдомаинид](iclrruntimehost-getcurrentappdomainid-method.md).  
   
@@ -70,8 +71,8 @@ HRESULT ExecuteInAppDomain(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeHost](iclrruntimehost-interface.md)

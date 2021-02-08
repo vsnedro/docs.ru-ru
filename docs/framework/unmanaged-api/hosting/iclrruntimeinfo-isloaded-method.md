@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICLRRuntimeInfo:: Overloads'
 title: Метод ICLRRuntimeInfo::IsLoaded
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fdc5a3a7-71ff-4025-99a1-59e4ee0bfe1b
 topic_type:
 - apiref
-ms.openlocfilehash: 66ae74deba9ceab9d1ea6b2c0b96a87bf44f32ab
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e6a5984dbd2340fe07af546dd48ae6760d5b4271
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799710"
 ---
 # <a name="iclrruntimeinfoisloaded-method"></a>Метод ICLRRuntimeInfo::IsLoaded
 
@@ -51,15 +52,15 @@ HRESULT IsLoaded(
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|Параметр `pbLoaded` имеет значение null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод обеспечивает обратную совместимость со следующими функциями и интерфейсами:  
   
-- Интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) (в API размещения .NET Framework версии 1).  
+- Интерфейс [ICorRuntimeHost](icorruntimehost-interface.md) (в API размещения платформа .NET Framework версии 1).  
   
-- Интерфейс [ICLRRuntimeHost](iclrruntimehost-interface.md) (в API размещения .NET Framework 2,0).  
+- Интерфейс [ICLRRuntimeHost](iclrruntimehost-interface.md) (в API размещения платформа .NET Framework 2,0).  
   
-- Устаревшие `CorBindTo*` функции (см. раздел [нерекомендуемые функции размещения CLR](deprecated-clr-hosting-functions.md) в API размещения .NET Framework 2,0).  
+- Устаревшие `CorBindTo*` функции (см. раздел [нерекомендуемые функции размещения CLR](deprecated-clr-hosting-functions.md) в API размещения платформа .NET Framework 2,0).  
   
  Узел может вызвать одну из устаревших `CorBindTo*` функций, например функцию [CorBindToRuntime](corbindtoruntime-function.md) , для создания экземпляра конкретной версии среды CLR. Затем узел может вызвать метод [ICLRMetaHost::-Runtime](iclrmetahost-getruntime-method.md) и указать тот же номер версии для получения интерфейса [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .  
   
@@ -73,9 +74,9 @@ HRESULT IsLoaded(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

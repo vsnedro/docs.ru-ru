@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: INotifySink2:: Онсинккаллретурн'
 title: Метод INotifySink2::OnSyncCallReturn
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
 topic_type:
 - apiref
-ms.openlocfilehash: fe2db3df688f91ec6e1aadd8cc3bb43726e5c30f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 01518de4e5a9e1374edddadb3c49f16e8fe679a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800257"
 ---
 # <a name="inotifysink2onsynccallreturn-method"></a>Метод INotifySink2::OnSyncCallReturn
 
@@ -56,7 +57,7 @@ HRESULT OnSyncCallReturn
 
  **Заголовок:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс INotifySink2](inotifysink2-interface.md)
 - [Интерфейс INotifySource2](inotifysource2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура StackTrace_SimpleContext'
 title: Структура StackTrace_SimpleContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d4cef11f-a8ca-49bc-a1b8-6631f9e28f3e
 topic_type:
 - apiref
-ms.openlocfilehash: 30775b4a6f904d06b9c77e6b2b64aec693c446d7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 22a0acada5ef2d392dfdef5326953be137280d7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671802"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800569"
 ---
 # <a name="stacktrace_simplecontext-structure"></a>Структура StackTrace_SimpleContext
 
@@ -45,7 +46,7 @@ struct StackTrace_SimpleContext
 |`FrameOffset`|Смещение кадра или регистр EBP на платформах x86.|  
 |`InstructionOffset`|Указатель инструкции или ввод указателя инструкции (EIP) на платформах x86.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Поскольку функции трассировки стека обычно должны возвращать только адрес, Смещение фрейма и адрес стека, при необходимости можно использовать `SimpleContext` структуру, а не большую `CONTEXT` структуру.  
   
@@ -55,9 +56,9 @@ struct StackTrace_SimpleContext
   
  **Заголовок:** SOS_Stacktrace. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

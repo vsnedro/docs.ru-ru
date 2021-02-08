@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Коинитиализекор
 title: Функция CoInitializeCor
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc
 topic_type:
 - apiref
-ms.openlocfilehash: 9d077d5c5a414568b5643cad0171e101d7bb06f9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e1db9914cce8a92cecf78123a2e247d75ec74acf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799854"
 ---
 # <a name="coinitializecor-function"></a>Функция CoInitializeCor
 
@@ -42,6 +43,6 @@ STDAPI CoInitializeCor (
 
  **Заголовок:** COR. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции метаданных](../metadata/metadata-global-static-functions.md)

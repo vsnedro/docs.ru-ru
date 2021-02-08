@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье интерфейсы метаданных.
 title: Интерфейсы метаданных
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - metadata interfaces [.NET Framework]
 - interfaces (.NET Framework metadata]
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
-ms.openlocfilehash: 5d9b48df740668797a7c901219401e9ea304a8f8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4851fbc93bfa29f1b4b5015c82f05c1b200b9092
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799139"
 ---
 # <a name="metadata-interfaces"></a>Интерфейсы метаданных
 
 В этом разделе описываются неуправляемые интерфейсы, обеспечивающие доступ к метаданным, предоставляемым типами, методами, полями и прочими объектами .NET Framework.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Интерфейс ICeeGen](iceegen-interface.md)  
  Предоставляет методы для динамической компиляции кода.  
@@ -73,7 +74,7 @@ ms.locfileid: "95672885"
  [Интерфейс IMetaDataValidate](imetadatavalidate-interface.md)  
  Предоставляет методы, используемые для проверки сигнатур метаданных.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Глобальные статические функции метаданных](metadata-global-static-functions.md)  
   

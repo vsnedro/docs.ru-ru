@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Диагностика интерфейсов хранилища символов
 title: Интерфейсы хранилища символов диагностики
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-ms.openlocfilehash: e376544a9d428ce5110a7e38b92a8e830f574664
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 253a6e5eaa97c91332bca62f8fc47ad2945bf741
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800439"
 ---
 # <a name="diagnostics-symbol-store-interfaces"></a>Интерфейсы хранилища символов диагностики
 
 В этом разделе описываются неуправляемые интерфейсы, позволяющие компилятору создавать символьные сведения для использования отладчиком.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Интерфейс IBindingDisplay](ibindingdisplay-interface.md)  
  Предоставляет методы, отображающие текущие сведения о привязке для выполняющегося приложения.  
@@ -115,7 +116,7 @@ ms.locfileid: "95725187"
  [Интерфейс ISymUnmanagedWriter5](isymunmanagedwriter5-interface.md)  
  Интерфейс ISymUnmanagedWriter5.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Перечисления хранилища символов диагностики](diagnostics-symbol-store-enumerations.md)  
   

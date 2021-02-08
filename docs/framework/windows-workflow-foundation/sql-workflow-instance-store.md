@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: хранилище экземпляров рабочих процессов SQL'
 title: Хранилище экземпляров рабочих процессов SQL
 ms.date: 03/30/2017
 ms.assetid: 8cd2f8a5-4bf8-46ea-8909-c7fdb314fabc
-ms.openlocfilehash: e0989e4ed5d9e256d3570b0c3ee2bb35a95b410a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ca2b6751b69aa65a1e151feb55eee3a62f31895e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798073"
 ---
 # <a name="sql-workflow-instance-store"></a>Хранилище экземпляров рабочих процессов SQL
 
@@ -21,7 +22,7 @@ ms.locfileid: "96261752"
   
  Фабрика приложений (App Fabric) Windows Server предоставляет собственное хранилище экземпляров и инструментарий для упрощения настройки и использования хранилища. Дополнительные сведения см. в статье [хранилище экземпляров Windows Server App Fabric](/previous-versions/appfabric/ff383417(v=azure.10)). Дополнительные сведения о структуре приложений SQL Server базы данных сохраняемости см. в статье [app fabric SQL Server сохраняемость базы данных](/previous-versions/appfabric/ee790819(v=azure.10)) .  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
   
 - [Свойства хранилища экземпляров рабочего процесса SQL](properties-of-sql-workflow-instance-store.md)  
   

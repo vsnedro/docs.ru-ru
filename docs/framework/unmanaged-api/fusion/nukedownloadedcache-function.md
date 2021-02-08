@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции NukeDownloadedCache
 title: Функция NukeDownloadedCache
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
 topic_type:
 - apiref
-ms.openlocfilehash: 5ae0a887d666a150b717d495848c8a411d030a09
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2239473b8e6e43a539b0507c8255d40f87e72043
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95728580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800036"
 ---
 # <a name="nukedownloadedcache-function"></a>Функция NukeDownloadedCache
 
@@ -37,7 +38,7 @@ HRESULT NukeDownloadedCache();
 
  Этот метод возвращает стандартные коды ошибок COM, как определено в файле WinError. h.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Кэш загрузки среды CLR — это область, в которой хранятся сборки со строгими именами, загружаемые из URL-адреса для возможного повторного использования.  
   
@@ -47,11 +48,11 @@ HRESULT NukeDownloadedCache();
   
  **Заголовок:** Fusion. h  
   
- **Библиотека:** Fusion.dll и Mscorwks.dll. Используйте Fusion.dll вместо Mscorwks.dll, чтобы убедиться в правильности целевой версии .NET Framework.  
+ **Библиотека:** Fusion.dll и Mscorwks.dll. Используйте Fusion.dll вместо Mscorwks.dll, чтобы убедиться в правильности целевой версии платформа .NET Framework.  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция CreateHistoryReader](createhistoryreader-function.md)
 - [Функция GetHistoryFileDirectory](gethistoryfiledirectory-function.md)

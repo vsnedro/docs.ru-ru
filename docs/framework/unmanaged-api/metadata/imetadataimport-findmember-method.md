@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод IMetaDataImport:: Финдмембер'
 title: Метод IMetaDataImport::FindMember
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ad32fb84-c2b6-41cd-888d-787ff3a90449
 topic_type:
 - apiref
-ms.openlocfilehash: bcd9499d0aef34fb34065ed58c0f0d69cc4ecedc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdf02f57b8c4ff912d732515576fc05045474517
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799295"
 ---
 # <a name="imetadataimportfindmember-method"></a>Метод IMetaDataImport::FindMember
 
@@ -55,7 +56,7 @@ HRESULT FindMember (
  `pmb`  
  заполняет Указатель на соответствующий токен Мембердеф.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Элемент указывается с помощью включающего класса или интерфейса ( `td` ), его имени ( `szName` ) и (при необходимости) его сигнатуры ( `pvSigBlob` ). В классе или интерфейсе может быть несколько членов с одним и тем же именем. В этом случае передайте сигнатуру члена, чтобы найти уникальное совпадение.  
   
@@ -74,9 +75,9 @@ HRESULT FindMember (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataImport](imetadataimport-interface.md)
 - [Интерфейс IMetaDataImport2](imetadataimport2-interface.md)

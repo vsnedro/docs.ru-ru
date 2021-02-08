@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugModule2:: SetJITCompilerFlags'
 title: Метод ICorDebugModule2::SetJITCompilerFlags
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
 topic_type:
 - apiref
-ms.openlocfilehash: 11ff430c426c93f1c2a5c0582495e089a33995fa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 72139c2fefc0eab7e76e38d07558e4386b47bc34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709808"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801076"
 ---
 # <a name="icordebugmodule2setjitcompilerflags-method"></a>Метод ICorDebugModule2::SetJITCompilerFlags
 
@@ -39,7 +40,7 @@ HRESULT SetJITCompilerFlags (
  `dwFlags`  
  окне Побитовое сочетание значений перечисления [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `dwFlags` значение недопустимо, `SetJITCompilerFlags` метод завершится ошибкой.  
   
@@ -55,4 +56,4 @@ HRESULT SetJITCompilerFlags (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]

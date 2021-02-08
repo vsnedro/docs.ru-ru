@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатамесодинстанце:: Жетрепресентативинтряддресс'
 title: 'Метод Иксклрдатамесодинстанце:: Жетрепресентативинтряддресс'
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: d546cda5c68732e75550a3de286089f7df261c91
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 21cc6c50ab460c0e3a3a92c11fcfe51d4a2a4606
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800803"
 ---
 # <a name="ixclrdatamethodinstancegetrepresentativeentryaddress-method"></a>Метод Иксклрдатамесодинстанце:: Жетрепресентативинтряддресс
 
@@ -41,7 +42,7 @@ HRESULT GetRepresentativeEntryAddress(
 `addr`\
 заполняет Адрес наиболее репрезентативной собственной точки входа для метода.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью [ `IXCLRDataMethodInstance` интерфейса](ixclrdatamethodinstance-interface.md) и соответствует слоту 20 таблицы виртуальных методов.
 
@@ -50,9 +51,9 @@ HRESULT GetRepresentativeEntryAddress(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataMethodInstance](ixclrdatamethodinstance-interface.md)

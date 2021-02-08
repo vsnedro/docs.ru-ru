@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иксклрдатамодуле'
 title: Интерфейс IXCLRDataModule
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 3c2bc771c0a131329b9403c99a33ca7b79023771
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 403d4dd3db64f2855347562da7217a3562985c7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420855"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800751"
 ---
 # <a name="ixclrdatamodule-interface"></a>Интерфейс IXCLRDataModule
 
@@ -33,10 +34,10 @@ ms.locfileid: "83420855"
 | Метод                                                                                                                                | Описание                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | [GetMethodDefinitionByToken](ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Возвращает определение метода, соответствующее заданному маркеру метаданных. |
-| [Получения](ixclrdatamodule-request-method.md)                                       | Запросы на заполнение буфера данными модуля.       |
+| [Запрос](ixclrdatamodule-request-method.md)                                       | Запросы на заполнение буфера данными модуля.       |
 | [GetVersionId](ixclrdatamodule-getversionid-method.md)                             | Возвращает идентификатор версии модуля.                                       |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` GUID `88E32849-0A0A-4cb0-9022-7CD2E9E139E2` , который можно получить с помощью стандартных механизмов com.
 
@@ -45,9 +46,9 @@ ms.locfileid: "83420855"
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

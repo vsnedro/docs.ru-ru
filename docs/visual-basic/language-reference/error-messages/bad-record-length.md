@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: неправильная длина записи'
 title: Недопустимая длина записи
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID59
 ms.assetid: 0926a3a4-177b-4452-9b33-d8a01e24cc21
-ms.openlocfilehash: 6967015572b2567f52697f7ddcb1ff594013a2c4
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 820597a3c4e157894aadb280ae141098cae7eed4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869262"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797059"
 ---
 # <a name="bad-record-length"></a>Недопустимая длина записи
 

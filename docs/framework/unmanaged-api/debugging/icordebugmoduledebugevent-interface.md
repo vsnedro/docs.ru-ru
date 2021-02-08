@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугмодуледебужевент'
 title: Интерфейс ICorDebugModuleDebugEvent
 ms.date: 03/30/2017
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91
-ms.openlocfilehash: 62d419a193cff000e1dd748d0cbb6b61775a81aa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0c2d43d7b04caeea0407ede23f0df6e278d60c92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95695820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801037"
 ---
 # <a name="icordebugmoduledebugevent-interface"></a>Интерфейс ICorDebugModuleDebugEvent
 
@@ -19,7 +20,7 @@ ms.locfileid: "95695820"
 |------------|-----------------|  
 |[Метод GetModule](icordebugmoduledebugevent-getmodule-method.md)|Возвращает объединенный модуль, который только что был загружен или выгружен.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Типы событий [MODULE_LOADED](cordebugdebugeventkind-enumeration.md) и [MODULE_UNLOADED](cordebugdebugeventkind-enumeration.md) реализуют этот интерфейс.  
   
@@ -34,9 +35,9 @@ ms.locfileid: "95695820"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

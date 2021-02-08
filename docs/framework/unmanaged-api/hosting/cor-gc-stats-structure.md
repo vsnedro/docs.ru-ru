@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_GC_STATS'
 title: Структура COR_GC_STATS
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9
 topic_type:
 - apiref
-ms.openlocfilehash: 53a70c53a06ac55a2dab7c646018d63189ee0b36
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9b1002f462fb9b447e521cd1b3e5c78297eefc04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799812"
 ---
 # <a name="cor_gc_stats-structure"></a>Структура COR_GC_STATS
 
@@ -59,7 +60,7 @@ typedef struct _COR_GC_STATS {
 |`KBytesPromotedFromGen0`|Размер (в килобайтах) объектов, перешедших из поколения 0 в поколение.|  
 |`KBytesPromotedFromGen1`|Размер (в килобайтах) объектов, перешедших из поколения 1 в поколение 2.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод [иклргкманажер:: stats](iclrgcmanager-getstats-method.md) требует, чтобы `Flags` поле `COR_GC_STATS` структуры было установлено в одно или несколько значений перечисления [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) , чтобы указать, какую статистику следует задать.  
   
@@ -85,9 +86,9 @@ pCLRGCManager->GetStats(&GCStats);
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры размещения](hosting-structures.md)
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)

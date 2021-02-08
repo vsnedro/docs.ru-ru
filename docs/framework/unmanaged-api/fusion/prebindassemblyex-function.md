@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Пребиндассемблекс
 title: Функция PreBindAssemblyEx
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type:
 - apiref
-ms.openlocfilehash: a729249f7b0681941a0b1a478dbe2c0d9d6cd01c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e94bd7c335555e8109df60a00cadc76f7e13434b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800010"
 ---
 # <a name="prebindassemblyex-function"></a>Функция PreBindAssemblyEx
 
 Возвращает отображаемое имя после применения политики для сборки.  
   
- Эта функция поддерживает .NET Frameworkную инфраструктуру и не предназначена для непосредственного использования в коде.  
+ Эта функция поддерживает платформа .NET Frameworkную инфраструктуру и не предназначена для непосредственного использования в коде.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -60,7 +61,7 @@ HRESULT PreBindAssemblyEx (
  `pvReserved`  
  окне Зарезервировано для будущего расширения. `pvReserved` должен быть пустой ссылкой.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ppNamePostPolicy`Выходной параметр задается только в том случае, если функция возвращает значение HRESULT FUSION_E_REF_DEF_MISMATCH. В противном случае — значение null.  
   
@@ -72,8 +73,8 @@ HRESULT PreBindAssemblyEx (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции Fusion](fusion-global-static-functions.md)

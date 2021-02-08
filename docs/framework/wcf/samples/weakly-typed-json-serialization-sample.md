@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Пример сериализации слабо типизированного JSON'
 title: Пример сериализации слабо типизированных данных JSON
 ms.date: 03/30/2017
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
-ms.openlocfilehash: 65330e77622920f02b12bd69348aa635529e030e
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 82dba83b27e569c2356598b249c0b9e29ed2e847
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798164"
 ---
 # <a name="weakly-typed-json-serialization-sample"></a>Пример сериализации слабо типизированных данных JSON
 
@@ -59,7 +60,7 @@ ms.locfileid: "96244435"
   
  Эта задача может быть громоздкой, особенно если клиент должен обрабатывать более одного типа объектов JSON.  
   
- Тип `JsonObject` в этом образце является слабо типизированным представлением объекта JSON. `JsonObject` зависит от естественного сопоставления между объектами JSON и .NET Framework словарями, а также с сопоставлением между массивами JSON и .NET Framework массивами. В следующем примере кода демонстрируется тип `JsonObject` .  
+ Тип `JsonObject` в этом образце является слабо типизированным представлением объекта JSON. `JsonObject` зависит от естественного сопоставления между объектами JSON и платформа .NET Framework словарями, а также с сопоставлением между массивами JSON и платформа .NET Framework массивами. В следующем примере кода демонстрируется тип `JsonObject` .  
   
 ```csharp  
 // Instantiation of JsonObject json omitted  
@@ -137,6 +138,6 @@ My favorite bands are Band ABC and Band XYZ.
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Ajax\WeaklyTypedJson`  

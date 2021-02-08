@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrstrongname:: StrongNameGetBlobFromImage'
 title: Метод ICLRStrongName::StrongNameGetBlobFromImage
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0f5a2ec8-e776-4fd8-bda6-937b6834575a
 topic_type:
 - apiref
-ms.openlocfilehash: ad5fa510a17a3ce823ff90c4131b349b0d9efd39
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 32f04e21f1f08f3872ccdd27a64f39ea29d7e060
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799620"
 ---
 # <a name="iclrstrongnamestrongnamegetblobfromimage-method"></a>Метод ICLRStrongName::StrongNameGetBlobFromImage
 
@@ -63,9 +64,9 @@ HRESULT StrongNameGetBlobFromImage (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameGetBlob](iclrstrongname-strongnamegetblob-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

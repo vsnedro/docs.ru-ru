@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисление COR_GC_THREAD_STATS_TYPES'
 title: Перечисление COR_GC_THREAD_STATS_TYPES
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
 topic_type:
 - apiref
-ms.openlocfilehash: 122536877b2fd5f0e5c64118bd978b54c4a8b3df
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 04bc4e11c527b83cf5f1384b1092cc0d084008a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95696821"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799776"
 ---
 # <a name="cor_gc_thread_stats_types-enumeration"></a>Перечисление COR_GC_THREAD_STATS_TYPES
 
@@ -45,8 +46,8 @@ typedef enum {
   
  **Заголовок:** Гчост. idl, Гчост. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)

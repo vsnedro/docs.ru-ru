@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура OSINFO'
 title: Структура OSINFO
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fac7b480-7adb-4450-a5e9-690fed81ffae
 topic_type:
 - apiref
-ms.openlocfilehash: 49e29cc0367d5162dffcd641b163fd7b9a56ffd0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5027ef5cf4137aa1e781134b325407e1251fdd31
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799113"
 ---
 # <a name="osinfo-structure"></a>Структура OSINFO
 
@@ -43,7 +44,7 @@ typedef struct {
 |`dwOSMajorVersion`|Основной номер версии операционной системы или значение NULL для указания любой версии.|  
 |`dwOSMinorVersion`|Дополнительный номер версии операционной системы или значение NULL для указания любой версии.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `OSINFO` основывается на `OSVERSIONINFOEX` структуре, используемой в вызовах функции платформы Microsoft Windows `GetVersionEx` . Эта структура используется структурой ASSEMBLYMETADATA для указания поддержки операционной системы.  
   
@@ -55,9 +56,9 @@ typedef struct {
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры метаданных](metadata-structures.md)
 - [Интерфейс IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

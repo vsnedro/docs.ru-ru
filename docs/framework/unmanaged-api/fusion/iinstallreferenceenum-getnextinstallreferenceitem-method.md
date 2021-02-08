@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IInstallReferenceEnum:: Жетнекстинсталлреференцеитем'
 title: Метод IInstallReferenceEnum::GetNextInstallReferenceItem
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ce969c9d-6538-4c34-8784-148ffd99fe7a
 topic_type:
 - apiref
-ms.openlocfilehash: e093de7d2c2388274cbe9ebbe46084ee6ae3ff8c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d410407fe16a46b45786ff74f694aaa8931be542
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800127"
 ---
 # <a name="iinstallreferenceenumgetnextinstallreferenceitem-method"></a>Метод IInstallReferenceEnum::GetNextInstallReferenceItem
 
@@ -53,9 +54,9 @@ HRESULT GetNextInstallReferenceItem (
   
  **Заголовок:** Fusion. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IInstallReferenceItem](iinstallreferenceitem-interface.md)
 - [Интерфейс IInstallReferenceEnum](iinstallreferenceenum-interface.md)

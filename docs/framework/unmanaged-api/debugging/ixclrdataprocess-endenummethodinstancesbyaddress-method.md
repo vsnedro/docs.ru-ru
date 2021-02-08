@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатапроцесс:: Енденуммесодинстанцесбяддресс'
 title: 'Метод Иксклрдатапроцесс:: Енденуммесодинстанцесбяддресс'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 5960d08ccfc09010a20d28a22c2e2f3f5b339c7d
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 2e01fe0737319a7b336d9f6992bf81b2c57f9e70
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800725"
 ---
 # <a name="ixclrdataprocessendenummethodinstancesbyaddress-method"></a>Метод Иксклрдатапроцесс:: Енденуммесодинстанцесбяддресс
 
@@ -41,7 +42,7 @@ HRESULT EndEnumMethodInstancesByAddress(
 `handle`\
 заполняет Описатель для перечисления экземпляров методов.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `IXCLRDataProcess` интерфейса и соответствует 30-му слоту таблицы виртуального метода.
 
@@ -50,9 +51,9 @@ HRESULT EndEnumMethodInstancesByAddress(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
 - [Отладка](index.md)

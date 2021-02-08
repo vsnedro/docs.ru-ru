@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRTask2:: EndPreventAsyncAbort'
 title: Метод ICLRTask2::EndPreventAsyncAbort
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d8013659-e3df-44b3-814f-a6b534ce62f8
 topic_type:
 - apiref
-ms.openlocfilehash: 7f8963403c60815bbf1cd3008ed7fec73d849fea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 964a68c1ad6d5aa6a95560d2870e135640283590
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720260"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799503"
 ---
 # <a name="iclrtask2endpreventasyncabort-method"></a>Метод ICLRTask2::EndPreventAsyncAbort
 
@@ -41,7 +42,7 @@ HRESULT EndPreventAsyncAbort();
 |S_OK|Метод завершился успешно.|  
 |HOST_E_INVALIDOPERATION|Метод был вызван в потоке, который не является текущим потоком.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  При вызове этого метода счетчик "задержка — прерывание потока" для текущего потока уменьшается на один.  
   
@@ -57,9 +58,9 @@ HRESULT EndPreventAsyncAbort();
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод BeginPreventAsyncAbort](iclrtask2-beginpreventasyncabort-method.md)
 - [Интерфейс ICLRTask2](iclrtask2-interface.md)

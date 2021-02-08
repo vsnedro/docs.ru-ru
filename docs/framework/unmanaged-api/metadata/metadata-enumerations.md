@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисления метаданных'
 title: Перечисления метаданных
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - metadata enumerations [.NET Framework]
 - unmanaged enumerations [.NET Framework], metadata
 ms.assetid: 711ab251-cfdb-4280-aaa6-9bc1b341cdc3
-ms.openlocfilehash: d0a146ff5b6887e6678ee69d7e39731bd109c6d5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 790da8ce7573e607ce072dc384aeac9fecb389a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799165"
 ---
 # <a name="metadata-enumerations"></a>Перечисления метаданных
 
 В этом разделе описываются неуправляемые перечисления, которые использует API метаданных.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Перечисление AssemblyFlags](assemblyflags-enumeration.md)  
  Содержит значения, описывающие возможности времени выполнения сборки.  
@@ -157,7 +158,7 @@ ms.locfileid: "95672907"
  [Перечисление COUNINITIEE](couninitiee-enumeration.md)  
  Указывает константы, используемые [CoUninitializeEE](../hosting/couninitializeee-function.md) при инициализации среды CLR.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Интерфейсы метаданных](metadata-interfaces.md)  
   

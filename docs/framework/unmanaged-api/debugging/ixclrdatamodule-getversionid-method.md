@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатамодуле:: Жетверсионид'
 title: 'Метод Иксклрдатамодуле:: Жетверсионид'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 9d5ef137a5d76c3d7545ab16921352123e978fb1
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 1b924757f43d106df555ea028270ac873f8f4558
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420868"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800764"
 ---
 # <a name="ixclrdatamodulegetversionid-method"></a>Метод Иксклрдатамодуле:: Жетверсионид
 
@@ -41,7 +42,7 @@ HRESULT GetVersionId(
 `vid`\
 заполняет Идентификатор версии модуля.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `IXCLRDataModule` интерфейса и соответствует слоту й таблицы виртуальных методов.
 
@@ -50,9 +51,9 @@ HRESULT GetVersionId(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataModule](ixclrdatamodule-interface.md)

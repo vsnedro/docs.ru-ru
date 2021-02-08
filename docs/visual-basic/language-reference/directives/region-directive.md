@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Директива #Region'
 title: '#Директива Region'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - region directive (#region)
 - '#Region keyword [Visual Basic]'
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
-ms.openlocfilehash: cd53a6079c1564a8c73a0a1a6273fc166d18d3e6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4ba1645cfc51a69d39e6a60b5ea236dd65883e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797228"
 ---
 # <a name="region-directive"></a>Директива #Region
 
@@ -35,9 +36,9 @@ ms.locfileid: "84409948"
 |`identifier_string`|Обязательный. Строка, которая выступает в качестве заголовка области, если он свернут. По умолчанию области свернуты.|  
 |`#End Region`|Завершает блок `#Region`.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Используйте директиву `#Region`, чтобы указать блок кода, который можно разворачивать и сворачивать с помощью функции структурирования в редакторе кода Visual Studio. Вы можете разместить или *вложить*области внутри других регионов, чтобы сгруппировать похожие регионы.  
+ Используйте директиву `#Region`, чтобы указать блок кода, который можно разворачивать и сворачивать с помощью функции структурирования в редакторе кода Visual Studio. Вы можете разместить или *вложить* области внутри других регионов, чтобы сгруппировать похожие регионы.  
   
 ## <a name="example"></a>Пример  
 
@@ -45,7 +46,7 @@ ms.locfileid: "84409948"
   
  [!code-vb[VbVbalrConditionalComp#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#4)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Директивы #If...Then...#Else](if-then-else-directives.md)
 - [Структура](/visualstudio/ide/outlining)

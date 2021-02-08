@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: аргумент является необязательным (Visual Basic)'
 title: Аргумент является обязательным
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID449
 ms.assetid: 76e7bcf3-24ed-4cd5-945b-b98f1c76944b
-ms.openlocfilehash: cac81d364d71af65d922faa2f2db5d7ede415126
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3683f07174b980f6ceebf42151658a5be4615310
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797163"
 ---
 # <a name="argument-not-optional-visual-basic"></a>Аргумент не является обязательным (Visual Basic)
 
@@ -21,6 +22,6 @@ ms.locfileid: "84409989"
   
 2. Убедитесь, что пропущенные аргументы являются необязательными. Если это не так, укажите аргумент в вызове или объявите параметр `Optional` в определении.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Типы ошибок](../../programming-guide/language-features/error-types.md)

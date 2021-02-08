@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатапроцесс:: Енденуммодулес'
 title: 'Метод Иксклрдатапроцесс:: Енденуммодулес'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 9a7a23e53f5c2bc7d643046830cf335fec780f11
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 454d4fa3616f9ba8312dc3d1ac02c228625aa488
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800712"
 ---
 # <a name="ixclrdataprocessendenummodules-method"></a>Метод Иксклрдатапроцесс:: Енденуммодулес
 
@@ -41,16 +42,16 @@ HRESULT EndEnumModules(
 `handle`\
 заполняет Маркер для перечисления модулей.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `IXCLRDataProcess` интерфейса и соответствует слоту 26th таблицы виртуальных методов.
 
 ## <a name="requirements"></a>Требования
 
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).
-**Заголовок:** Нет **библиотеки:** нет **.NET Framework версий:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**Заголовок:** Нет **библиотеки:** нет **платформа .NET Framework версий:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс IXCLRDataProcess](ixclrdataprocess-interface.md)

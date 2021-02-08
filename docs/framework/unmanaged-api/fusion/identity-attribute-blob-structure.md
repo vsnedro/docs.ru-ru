@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура IDENTITY_ATTRIBUTE_BLOB'
 title: Структура IDENTITY_ATTRIBUTE_BLOB
 ms.date: 03/30/2017
 dev_langs:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
 topic_type:
 - apiref
-ms.openlocfilehash: 9a59e70257064220e8138f9d267a815fcdbf3929
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e89294397287cb5751196b563b1576bb4f1c0f12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729035"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800192"
 ---
 # <a name="identity_attribute_blob-structure"></a>Структура IDENTITY_ATTRIBUTE_BLOB
 
@@ -45,7 +46,7 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
 |`ofsName`|Второе смещение в символьном буфере. Это расположение отмечает начало имени атрибута.|  
 |`ofsValue`|Третье смещение в символьном буфере. Это расположение отмечает начало значения атрибута.|  
   
-## <a name="sample"></a>Образец  
+## <a name="sample"></a>Пример  
 
  В следующем примере показано несколько основных шагов, которые в итоге приводят к заполненной `IDENTITY_ATTRIBUTE_BLOB` структуре:  
   
@@ -225,7 +226,7 @@ Exit:
 
  В. \\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll  
   
-### <a name="sample-output"></a>Пример полученных результатов  
+### <a name="sample-output"></a>Пример выходных данных  
 
  Culture = Neutral  
   
@@ -243,9 +244,9 @@ Exit:
   
  **Заголовок:** Изоляция. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IReferenceIdentity](ireferenceidentity-interface.md)
 - [Интерфейс IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md)

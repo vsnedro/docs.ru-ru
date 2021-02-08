@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorProfilerCallback2:: SurvivingReferences'
 title: Метод ICorProfilerCallback2::SurvivingReferences
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f165200e-3a91-47f7-88fc-13ff10c8babc
 topic_type:
 - apiref
-ms.openlocfilehash: b2b0af36f84bd6623792fe0a987eaf40f2717f46
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 64edaf5388aeb0bded3de8e8bbde0bf7a5159ed4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799061"
 ---
 # <a name="icorprofilercallback2survivingreferences-method"></a>Метод ICorProfilerCallback2::SurvivingReferences
 
@@ -52,7 +53,7 @@ HRESULT SurvivingReferences(
   
  Размер указывается для каждого блока, ссылка на который имеется в массиве `objectIDRangeStart`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!IMPORTANT]
 > Этот метод сообщает размеры как `MAX_ULONG` для объектов с размером более 4 Гб на 64-разрядных платформах. Для объектов, размер которых превышает 4 ГБ, используйте вместо него метод [ICorProfilerCallback4:: SurvivingReferences2](icorprofilercallback4-survivingreferences2-method.md) .  
@@ -79,9 +80,9 @@ HRESULT SurvivingReferences(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Интерфейс ICorProfilerCallback2](icorprofilercallback2-interface.md)

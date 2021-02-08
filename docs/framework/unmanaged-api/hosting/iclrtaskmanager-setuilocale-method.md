@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRTaskManager:: SetUILocale'
 title: Метод ICLRTaskManager::SetUILocale
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 03adaa9a-2beb-49b3-b2c4-6b4fc3f10715
 topic_type:
 - apiref
-ms.openlocfilehash: a426fca1b7ca4bfb9cbb30a221859f7c114db682
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4fcc916c520489bd1e39f6a44bc1bb971df4bba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95732433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799464"
 ---
 # <a name="iclrtaskmanagersetuilocale-method"></a>Метод ICLRTaskManager::SetUILocale
 
@@ -50,7 +51,7 @@ HRESULT SetUILocale (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `SetUILocale` Предоставляет узлу возможность выполнять любые механизмы, необходимые для синхронизации языковых стандартов.  
   
@@ -62,9 +63,9 @@ HRESULT SetUILocale (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)
