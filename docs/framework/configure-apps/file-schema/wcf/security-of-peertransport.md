@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <peerTransport>'
 title: <security> из <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-ms.openlocfilehash: f37c336b0e42993e1eef3f06e2f919705f425a2e
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 592f886377a2d5f2008be900a9e7586385fb3782
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786828"
 ---
 # <a name="security-of-peertransport"></a>\<security> из \<peerTransport>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91169964"
 |-------------|-----------------|  
 |[\<peerTransport>](peertransport.md)|Определяет одноранговый транспорт для пользовательской привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings>

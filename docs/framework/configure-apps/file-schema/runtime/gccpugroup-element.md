@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <GCCpuGroup> element'
 title: Элемент <GCCpuGroup>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - GCCpuGroup element
 - <GCCpuGroup> element
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-ms.openlocfilehash: f1cbe5a7109d6e4aae2e92710920a1c6b3a40d00
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d4b3aa7084cbc2cb23b273bea95ffaec6e3a74d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "82102896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786997"
 ---
 # <a name="gccpugroup-element"></a>Элемент \<GCCpuGroup>
 
@@ -55,7 +56,7 @@ ms.locfileid: "82102896"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если на компьютере установлено несколько групп ЦП и включена сборка мусора сервера (см. [\<gcServer>](gcserver-element.md) элемент), включение этого элемента расширяет сбор мусора во всех группах ЦП и учитывает все ядра при создании и балансировке куч.
 

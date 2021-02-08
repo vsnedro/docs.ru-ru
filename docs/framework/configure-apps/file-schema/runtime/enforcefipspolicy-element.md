@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <enforceFIPSPolicy> element'
 title: Элемент <enforceFIPSPolicy>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - <enforceFIPSPolicy> element
 - Federal Information Processing Standards (FIPS)
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-ms.openlocfilehash: 864a371d4ad10585e672452ad85cc09d4b684068
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d445570db634867a15b6d97d4e20186bd0641c2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787075"
 ---
 # <a name="enforcefipspolicy-element"></a>Элемент \<enforceFIPSPolicy>
 
@@ -58,9 +59,9 @@ ms.locfileid: "91158842"
   
 ## <a name="remarks"></a>Remarks  
 
- Начиная с .NET Framework 2,0, создание классов, реализующих алгоритмы шифрования, управляется конфигурацией компьютера. Если компьютер настроен на требование соответствия алгоритмам FIPS, а класс реализует алгоритм, который не соответствует стандарту FIPS, любая попытка создать экземпляр этого класса вызывает исключение. Конструкторы создают <xref:System.InvalidOperationException> исключение, а `Create` методы вызывают <xref:System.Reflection.TargetInvocationException> исключение с внутренним <xref:System.InvalidOperationException> исключением.  
+ Начиная с платформа .NET Framework 2,0, создание классов, реализующих алгоритмы шифрования, управляется конфигурацией компьютера. Если компьютер настроен на требование соответствия алгоритмам FIPS, а класс реализует алгоритм, который не соответствует стандарту FIPS, любая попытка создать экземпляр этого класса вызывает исключение. Конструкторы создают <xref:System.InvalidOperationException> исключение, а `Create` методы вызывают <xref:System.Reflection.TargetInvocationException> исключение с внутренним <xref:System.InvalidOperationException> исключением.  
   
- Если приложение выполняется на компьютерах, конфигурация которых требует соответствия стандарту FIPS, а приложение использует алгоритм, не соответствующий стандарту FIPS, этот элемент можно использовать в файле конфигурации, чтобы среда CLR не могла принудительно применять соответствие FIPS. Этот элемент появился в .NET Framework 2,0 с пакетом обновления 1 (SP1).  
+ Если приложение выполняется на компьютерах, конфигурация которых требует соответствия стандарту FIPS, а приложение использует алгоритм, не соответствующий стандарту FIPS, этот элемент можно использовать в файле конфигурации, чтобы среда CLR не могла принудительно применять соответствие FIPS. Этот элемент появился в платформа .NET Framework 2,0 с пакетом обновления 1 (SP1).  
   
 ## <a name="example"></a>Пример  
 
@@ -74,7 +75,7 @@ ms.locfileid: "91158842"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <remove> <claimTypeRequirements> element'
 title: <remove> элемента <claimTypeRequirements>
 ms.date: 03/30/2017
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
-ms.openlocfilehash: 773f37156969f64f02711e6a60764aeb7e50a840
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2ec917d27966954382e5b091fd538168b48b5ffb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786906"
 ---
 # <a name="remove-of-claimtyperequirements-element"></a>\<remove> элемента \<claimTypeRequirements>
 
@@ -51,7 +52,7 @@ ms.locfileid: "91181327"
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](claimtyperequirements-for-message.md)|Задает коллекцию обязательных типов утверждений. Каждый элемент имеет тип <xref:System.ServiceModel.Configuration.ClaimTypeElement>.<br /><br /> В федеративном сценарии службы предъявляют требования к входящим учетным данным. Например, входящие учетные данные должны обладать определенным набором типов утверждений. Каждый элемент в этой коллекции задает типы обязательных и необязательных утверждений, которые могут появляться в федеративных учетных данных.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
 - <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>

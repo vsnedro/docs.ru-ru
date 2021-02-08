@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <netMsmqBinding>'
 title: <security> из <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-ms.openlocfilehash: 32b066fdf4d8edbbd36fdff7b14bdec87ddc970d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1b60d9e390e371555f4c3abf4988e79bb0f04fe8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786854"
 ---
 # <a name="security-of-netmsmqbinding"></a>\<security> из \<netMsmqBinding>
 
@@ -56,7 +57,7 @@ ms.locfileid: "91170081"
 |-------------|-----------------|  
 |binding|Элемент binding элемента [\<netMsmqBinding>](netmsmqbinding.md)|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
 - <xref:System.ServiceModel.NetMsmqBinding.Security%2A>

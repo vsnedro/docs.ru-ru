@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <routing> о: <serviceBehavior>'
 title: <routing> из <serviceBehavior>
 ms.date: 03/30/2017
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-ms.openlocfilehash: cd53b720bad5752189f1c30d9e4acd3a66830396
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1d8a056d708b3c42aeccf3e46a0703b3fc78a17d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786893"
 ---
 # <a name="routing-of-servicebehavior"></a>\<routing> из \<serviceBehavior>
 
@@ -43,7 +44,7 @@ ms.locfileid: "91150886"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |filterTable|Строка, в которой указано имя таблицы маршрутизации, содержащей фильтры, вычисляемые службой маршрутизации. Это значение должно соответствовать `name` атрибуту [\<filterTable>](filtertable.md) элемента в [\<filterTables>](filtertables.md) разделе.|  
-|routeOnHeaderOnly|Логическое значение, определяющее, какие части сообщения будут изучены фильтром: только заголовок или заголовок и текст сообщения. Значение по умолчанию — `true`.|  
+|routeOnHeaderOnly|Логическое значение, определяющее, какие части сообщения будут изучены фильтром: только заголовок или заголовок и текст сообщения. Значение по умолчанию — `true`.|  
 |soapProcessingEnabled|Логическое значение, указывающее, будет ли выполняться обработка SOAP.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  

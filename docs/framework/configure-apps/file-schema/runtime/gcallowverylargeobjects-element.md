@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <gcAllowVeryLargeObjects> element'
 title: Элемент gcAllowVeryLargeObjects
 ms.date: 03/30/2017
 helpviewer_keywords:
 - gcAllowVeryLargeObjects element
 - <gcAllowVeryLargeObjects> element
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-ms.openlocfilehash: 1e54b0780ffb5bbe81ab1be2b376ff7a038ee05c
-ms.sourcegitcommit: 0273f8845eb1ea8de64086bef2271b4f22182c91
+ms.openlocfilehash: ff8380a13c4284cc24178e185344207c3b9a39b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "98058133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787023"
 ---
 # <a name="gcallowverylargeobjects-element"></a>Элемент \<gcAllowVeryLargeObjects>
 
@@ -50,7 +51,7 @@ ms.locfileid: "98058133"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|  
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Использование этого элемента в файле конфигурации приложения позволяет использовать массивы размером более 2 ГБ, но не изменяет другие ограничения на размер объекта или размер массива:  
   
@@ -77,9 +78,9 @@ ms.locfileid: "98058133"
   
 ## <a name="supported-in"></a>Поддерживается в
 
-.NET Framework 4,5 и более поздних версий
+Платформа .NET Framework 4,5 и более поздних версий
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

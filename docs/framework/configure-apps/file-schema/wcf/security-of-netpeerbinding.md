@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <netPeerBinding>'
 title: <security> из <netPeerBinding>
 ms.date: 03/30/2017
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
-ms.openlocfilehash: 543c57d6b2dba1ff5934b49e0e219cf2e5cad153
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f67cfa445a5a605b99783cfd67dd1bae6e17b51e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786841"
 ---
 # <a name="security-of-netpeerbinding"></a>\<security> из \<netPeerBinding>
 
@@ -40,14 +41,14 @@ ms.locfileid: "91170029"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|mode|Необязательный элемент. Указывает тип безопасности, используемый одноранговыми узлами, настроенными с использованием этой привязки. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
+|mode|Необязательный элемент. Указывает тип безопасности, используемый одноранговыми узлами, настроенными с использованием этой привязки. Значение по умолчанию — `Message`. Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут mode  
   
 |Значение|Описание|  
 |-----------|-----------------|  
 |Сообщение|Механизм безопасности SOAP обеспечивает целостность, конфиденциальность и проверку подлинности.|  
-|Нет|Режим безопасности отключен.|  
+|None|Режим безопасности отключен.|  
 |Транспорт|Безопасность обеспечивается с помощью протокола HTTPS.|  
 |TransportWithMessageCredential|HTTPS обеспечивает конфиденциальность и проверку подлинности. Сообщения SOAP предоставляют различные типы учетных данных.|  
   
@@ -67,7 +68,7 @@ ms.locfileid: "91170029"
 
  Безопасность может определяться как на уровне сообщений, так и на уровне транспорта.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>

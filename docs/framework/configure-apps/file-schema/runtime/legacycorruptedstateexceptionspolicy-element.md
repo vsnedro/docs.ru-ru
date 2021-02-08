@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <legacyCorruptedStateExceptionsPolicy> element'
 title: Элемент <legacyCorruptedStateExceptionsPolicy>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - <legacyCorruptedStateExceptionsPolicy> element
 - legacyCorruptedStateExceptionsPolicy element
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
-ms.openlocfilehash: f36e27a1b85cff2ba8c7e838bace37890a5aa760
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 34082c0779b09400a875894359cf7cf501173508
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786958"
 ---
 # <a name="legacycorruptedstateexceptionspolicy-element"></a>Элемент \<legacyCorruptedStateExceptionsPolicy>
 
@@ -56,9 +57,9 @@ ms.locfileid: "91151211"
   
 ## <a name="remarks"></a>Remarks  
 
- В .NET Framework версии 3,5 и более ранних версиях среда CLR позволяла управляемому коду перехватывать исключения, которые были вызваны поврежденными состояниями процессов. Нарушение прав доступа — это пример исключения этого типа.  
+ В платформа .NET Framework версии 3,5 и более ранних версиях среда CLR позволяла управляемому коду перехватывать исключения, которые были вызваны поврежденными состояниями процессов. Нарушение прав доступа — это пример исключения этого типа.  
   
- Начиная с .NET Framework 4 управляемый код больше не перехватывает исключения этих типов в `catch` блоках. Однако это изменение можно переопределить и обрабатывать исключения поврежденного состояния двумя способами:  
+ Начиная с платформа .NET Framework 4 управляемый код больше не перехватывает исключения этих типов в `catch` блоках. Однако это изменение можно переопределить и обрабатывать исключения поврежденного состояния двумя способами:  
   
 - Задайте `<legacyCorruptedStateExceptionsPolicy>` `enabled` для атрибута элемента значение `true` . Этот параметр конфигурации применяется процессвиде и влияет на все методы.  
   
@@ -66,11 +67,11 @@ ms.locfileid: "91151211"
   
 - Примените <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=nameWithType> атрибут к методу, содержащему `catch` блок исключений.  
   
- Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
+ Этот элемент конфигурации доступен только в платформа .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
 
- В следующем примере показано, как указать, что приложение должно вернуться к поведению до .NET Framework 4, и перехватить все сбои исключений состояния.  
+ В следующем примере показано, как указать, что приложение должно вернуться к поведению до платформа .NET Framework 4, и перехватить все сбои исключений состояния.  
   
 ```xml  
 <configuration>  
@@ -80,7 +81,7 @@ ms.locfileid: "91151211"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
 - [Схема параметров среды выполнения](index.md)
