@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о <idn> элементе: Element (Параметры URI)'
 title: Элемент <idn> (параметры URI)
 ms.date: 03/30/2017
 ms.assetid: 16c8e869-1791-4cf5-9244-3d3c738f60ec
-ms.openlocfilehash: f45922ecd5f7476362aab5348d91415d8e31c53f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a53afd59b713a804d5b969521f468000dbbad6e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802480"
 ---
 # <a name="idn-element-uri-settings"></a>Элемент \<idn> (параметры URI)
 
@@ -43,15 +44,15 @@ ms.locfileid: "91195406"
 
 |**Элемент**|**Описание**|  
 |-----------------|---------------------|  
-|[uri](uri-element-uri-settings.md)|Содержит параметры, определяющие, как .NET Framework обрабатывает веб-адреса, выраженные с помощью универсальных идентификаторов ресурсов (URI).|  
+|[uri](uri-element-uri-settings.md)|Содержит параметры, определяющие, как платформа .NET Framework обрабатывает веб-адреса, выраженные с помощью универсальных идентификаторов ресурсов (URI).|  
 
 ## <a name="remarks"></a>Remarks
 
-Существующий <xref:System.Uri> класс был расширен в .NET Framework 3,5. 3,0 с пакетом обновления 1 (SP1) и 2,0 с пакетом обновления 1 (SP1) с поддержкой международных идентификаторов ресурсов (IRI) и международных доменных имен (IDN). Текущие пользователи не увидят каких бы то ни было изменений в работе .NET Framework 2,0, если они специально не включают поддержку IRI и IDN. Это обеспечивает совместимость приложений с предыдущими версиями платформы .NET Framework.
+Существующий <xref:System.Uri> класс был расширен в платформа .NET Framework 3,5. 3,0 с пакетом обновления 1 (SP1) и 2,0 с пакетом обновления 1 (SP1) с поддержкой международных идентификаторов ресурсов (IRI) и международных доменных имен (IDN). Текущие пользователи не увидят каких бы то ни было изменений в работе платформа .NET Framework 2,0, если они специально не включают поддержку IRI и IDN. Это обеспечивает совместимость приложений с предыдущими версиями платформы .NET Framework.
 
 Чтобы включить поддержку IRI, требуются следующие два изменения:
 
-1. Добавьте следующую строку в файл machine.config в каталоге .NET Framework 2,0:
+1. Добавьте следующую строку в файл machine.config в каталоге платформа .NET Framework 2,0:
   
     ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
@@ -92,7 +93,7 @@ ms.locfileid: "91195406"
 </configuration>
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>

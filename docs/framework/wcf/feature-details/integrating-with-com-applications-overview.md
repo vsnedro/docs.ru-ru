@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее: интеграция с приложениями COM обзор'
 title: Общие сведения об интеграции с приложениями COM
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], integration overview
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
-ms.openlocfilehash: c283e7cbc4cb4b8bc37dd1313480410df93a93bf
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a179fd73c8065fff1e16d3f86202d717df155b81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596829"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802818"
 ---
 # <a name="integrating-with-com-applications-overview"></a>Общие сведения об интеграции с приложениями COM
 
@@ -53,7 +54,7 @@ Windows Communication Foundation (WCF) предоставляет разрабо
 |`serializer`|Позволяет задать использование сериализатора "xml" или "datacontract".|
 
 > [!NOTE]
-> Даже при использовании с полностью основанными на COM клиентами для моникера службы требуется WCF, а на клиентском компьютере должна быть установлена поддержка .NET Framework 2,0. Также важно, чтобы в клиентские приложения, использующие моникер служб, была загружена соответствующая версия среды выполнения платформы .NET Framework. При использовании моникера в приложениях Office может потребоваться файл конфигурации, чтобы обеспечить загрузку надлежащей версии .NET Framework. Например, при использовании Excel файл Excel.exe.config, расположенный в том же каталоге, что и файл Excel.exe, должен содержать следующий текст:
+> Даже при использовании с полностью основанными на COM клиентами для моникера службы требуется WCF, а на клиентском компьютере должна быть установлена поддержка платформа .NET Framework 2,0. Также важно, чтобы в клиентские приложения, использующие моникер служб, была загружена соответствующая версия среды выполнения платформы .NET Framework. При использовании моникера в приложениях Office может потребоваться файл конфигурации, чтобы обеспечить загрузку надлежащей версии .NET Framework. Например, при использовании Excel файл Excel.exe.config, расположенный в том же каталоге, что и файл Excel.exe, должен содержать следующий текст:
 >
 > `<?xml version="1.0" encoding="utf-8"?>`
 >
@@ -67,6 +68,6 @@ Windows Communication Foundation (WCF) предоставляет разрабо
 >
 > `</configuration>`
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Регистрация и настройка моникера службы](how-to-register-and-configure-a-service-moniker.md)

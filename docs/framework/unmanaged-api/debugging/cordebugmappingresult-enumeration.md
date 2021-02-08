@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кордебугмаппингресулт
 title: Перечисление CorDebugMappingResult
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 701281dd-2936-45c8-a1f0-3bf7332b093b
 topic_type:
 - apiref
-ms.openlocfilehash: 0e7afa386af1bd2eebc2b58592d01b764660248f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 03454e2fbfa8fabca89805ea51a6cfba27aa792f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801596"
 ---
 # <a name="cordebugmappingresult-enumeration"></a>Перечисление CorDebugMappingResult
 
@@ -49,7 +50,7 @@ typedef enum CorDebugMappingResult {
 |`MAPPING_EXACT`|Либо метод полностью сопоставлен с кодом MSIL, либо кадр был интерпретирован, поэтому значение IP-адреса является точным.|  
 |`MAPPING_APPROXIMATE`|Метод успешно сопоставлен, но значение IP-адреса может быть приблизительным.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Для получения значения указателя инструкции можно использовать метод [ICorDebugILFrame:: GetIP](icordebugilframe-getip-method.md) .  
   
@@ -61,8 +62,8 @@ typedef enum CorDebugMappingResult {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)

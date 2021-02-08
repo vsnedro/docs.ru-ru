@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Type> элементе: Element (.NET Native)'
 title: <Type> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-ms.openlocfilehash: e71df41c4a37206910d835ee85dc3d68b4cbad4a
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9a0304049c5b8f97c30a85de1c6ed60cde111df1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801947"
 ---
 # <a name="type-element-net-native"></a>\<Type> Элемент (.NET Native)
 
@@ -88,7 +89,7 @@ ms.locfileid: "96287713"
 |`<Type>`|Применяет политику отражения к типу и всем его членам.|
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Атрибуты отражения, сериализации и взаимодействия являются необязательными. Если таковые отсутствуют, элемент `<Type>` служит в качестве контейнера, чьи дочерние типы определяют политику для отдельных элементов.
 

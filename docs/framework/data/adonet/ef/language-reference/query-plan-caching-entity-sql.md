@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: кэширование плана запроса (Entity SQL)'
 title: Кэширование плана запроса (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 90b0c685-5ef2-461b-98b4-c3c0a2b253c7
-ms.openlocfilehash: 51c5de8365819065f8e505468f37a47370ec502f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: eee8e3afcd6f97b7e6021389d59a8ce03507fb9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91175555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802103"
 ---
 # <a name="query-plan-caching-entity-sql"></a>Кэширование плана запроса (Entity SQL)
 
 При каждой попытке выполнения запроса конвейер запросов обращается в кэш планов запросов, чтобы определить, что конкретный запрос уже скомпилирован и доступен. Если это так, то кэшированный план используется повторно вместо построения нового плана. Если совпадение в кэше планов запросов не обнаружено, запрос компилируется и кэшируется. Запрос идентифицируется его текстом [!INCLUDE[esql](../../../../../../includes/esql-md.md)] и коллекцией параметров (имен и типов). Все текстовые сравнения выполняются с учетом регистра.  
   
-## <a name="configuration"></a>Параметр Configuration  
+## <a name="configuration"></a>Конфигурация  
 
  Кэширование планов запросов можно настроить с помощью <xref:System.Data.EntityClient.EntityCommand>.  
   
@@ -53,6 +54,6 @@ var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";
   
 - Изменение текста внутри комментариев.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

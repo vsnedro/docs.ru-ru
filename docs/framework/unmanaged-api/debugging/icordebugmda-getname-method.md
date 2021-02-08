@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugMDA:: Name'
 title: Метод ICorDebugMDA::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 885bf5e8-00b7-4cd7-9d8d-e720d47918c4
 topic_type:
 - apiref
-ms.openlocfilehash: 516fcf8a97b92eac8dfff9eae34199caa97c2d2f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4ea39f062071073684a20d8f60875fbaaab43a2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95710939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801172"
 ---
 # <a name="icordebugmdagetname-method"></a>Метод ICorDebugMDA::GetName
 
@@ -48,7 +49,7 @@ HRESULT GetName (
  `szName`  
  заполняет Массив, в котором сохраняется имя.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Имена MDA являются уникальными значениями. Этот `GetName` метод является удобной альтернативой производительности для получения XML-потока и извлечения имени из потока на основе схемы.  
   
@@ -60,9 +61,9 @@ HRESULT GetName (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMDA](icordebugmda-interface.md)
 - [Диагностика ошибок посредством управляемых помощников по отладке](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

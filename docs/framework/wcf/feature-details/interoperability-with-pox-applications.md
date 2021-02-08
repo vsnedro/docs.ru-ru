@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: взаимодействие с приложениями POX'
 title: Взаимодействие с приложениями POX
 ms.date: 03/30/2017
 ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
-ms.openlocfilehash: 64a6d850a32b14bc60cd43466e04b53a7a39be81
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 832b9ae93f6046ca9995b57bdcbbfbfeb46d2a09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802714"
 ---
 # <a name="interoperability-with-pox-applications"></a>Взаимодействие с приложениями POX
 
 «Обычные старые XML-приложения (POX) обмениваются данными путем обмена необработанными HTTP-сообщениями, которые содержат только данные приложения XML, не заключенные в конверт SOAP. Windows Communication Foundation (WCF) может предоставлять как службы, так и клиенты, использующие сообщения POX. В службе WCF можно использовать для реализации служб, предоставляющих конечные точки клиентам, таким как веб-браузеры и языки сценариев, которые отправляют и получают сообщения POX. На клиенте модель программирования WCF может использоваться для реализации клиентов, взаимодействующих со службами на основе POX.  
   
 > [!NOTE]
-> Этот документ был первоначально написан для .NET Framework 3,0.  .NET Framework 3,5 имеет встроенную поддержку работы с POX приложениями. Дополнительные сведения о [модели программирования WCF Web HTTP](wcf-web-http-programming-model.md)см. здесь.
+> Этот документ был первоначально написан для платформа .NET Framework 3,0.  Платформа .NET Framework 3,5 имеет встроенную поддержку работы с POX приложениями. Дополнительные сведения о [модели программирования WCF Web HTTP](wcf-web-http-programming-model.md)см. здесь.
   
 ## <a name="pox-programming-with-wcf"></a>Программирование POX с помощью WCF
 

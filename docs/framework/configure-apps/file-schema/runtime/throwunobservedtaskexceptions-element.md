@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <ThrowUnobservedTaskExceptions> element'
 title: Элемент <ThrowUnobservedTaskExceptions>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ThrowUnobservedTaskExceptions element
 - <ThrowUnobservedTaskExceptions> element
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-ms.openlocfilehash: 012c2e70e66015bc317606a7eea07812b5df26e7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 53f3f1275ea8419bed52fd73726c043e1c49eed7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802402"
 ---
 # <a name="throwunobservedtaskexceptions-element"></a>Элемент \<ThrowUnobservedTaskExceptions>
 
@@ -63,17 +64,17 @@ ms.locfileid: "91183927"
 
  Если исключение, связанное с объектом <xref:System.Threading.Tasks.Task> , не было замечено, то операция отсутствует <xref:System.Threading.Tasks.Task.Wait%2A> , родительский элемент не присоединяется, а <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> свойство не было прочитано, поэтому исключение задачи считается незамеченным.  
   
- В .NET Framework 4, по умолчанию, если <xref:System.Threading.Tasks.Task> исключение, для которого имеется незамеченная исключительная ошибка, уничтожается сборщиком мусора, метод завершения создает исключение и завершает процесс. Завершение процесса определяется временем сбора мусора и финализации.  
+ В платформа .NET Framework 4, по умолчанию, если <xref:System.Threading.Tasks.Task> исключение, для которого имеется незамеченная исключительная ошибка, уничтожается сборщиком мусора, метод завершения создает исключение и завершает процесс. Завершение процесса определяется временем сбора мусора и финализации.  
   
- Чтобы разработчикам было проще писать асинхронный код на основе задач, .NET Framework 4,5 изменяет это поведение по умолчанию для незамеченных исключений. Незамеченные исключения по-прежнему вызывают <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> событие, но по умолчанию процесс не завершается. Вместо этого исключение пропускается после возникновения события, независимо от того, отслеживает ли обработчик событий исключение.  
+ Чтобы разработчикам было проще писать асинхронный код на основе задач, платформа .NET Framework 4,5 изменяет это поведение по умолчанию для незамеченных исключений. Незамеченные исключения по-прежнему вызывают <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> событие, но по умолчанию процесс не завершается. Вместо этого исключение пропускается после возникновения события, независимо от того, отслеживает ли обработчик событий исключение.  
   
- В .NET Framework 4,5 можно использовать [ \<ThrowUnobservedTaskExceptions> элемент](throwunobservedtaskexceptions-element.md) в файле конфигурации приложения, чтобы обеспечить .NET Framework 4 действия создания исключения.  
+ В платформа .NET Framework 4,5 можно использовать [ \<ThrowUnobservedTaskExceptions> элемент](throwunobservedtaskexceptions-element.md) в файле конфигурации приложения, чтобы обеспечить платформа .NET Framework 4 действия создания исключения.  
   
  Можно также указать поведение исключения одним из следующих способов.  
   
 - Путем задания переменной среды `COMPlus_ThrowUnobservedTaskExceptions` ( `set COMPlus_ThrowUnobservedTaskExceptions=1` ).  
   
-- Задав в реестре значение DWORD Сровунобсерведтаскексцептионс = 1 в HKEY_LOCAL_MACHINE \Софтваре\микрософт \\ . Ключ NETFramework.  
+- Установив значение DWORD реестра Сровунобсерведтаскексцептионс = 1 в HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\ . Ключ NETFramework.  
   
 ## <a name="example"></a>Пример  
 
@@ -94,7 +95,7 @@ ms.locfileid: "91183927"
  [!code-csharp[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs/program.cs#1)]
  [!code-vb[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/throwunobservedtaskexceptions/vb/program.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Кордебугсетконтекстфлаг
 title: Перечисление CorDebugSetContextFlag
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b30280bb-fe75-44ed-8589-bcff081fae44
 topic_type:
 - apiref
-ms.openlocfilehash: 078dfefc70704eaadb9cf3c06cfe58f276f7dfce
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 625f24e516ff462cf3d0e628dfff6c08793807ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801557"
 ---
 # <a name="cordebugsetcontextflag-enumeration"></a>Перечисление CorDebugSetContextFlag
 
@@ -42,7 +43,7 @@ typedef enum CorDebugSetContextFlag
 |SET_CONTEXT_FLAG_ACTIVE_FRAME|Контекст является активным контекстом потока.|  
 |SET_CONTEXT_FLAG_UNWIND_FRAME|Контекст был вычислен путем очистки от другого кадра.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CorDebugSetContextFlag` предоставляет значения, используемые методом [икордебугстакквалк:: SetContext](icordebugstackwalk-setcontext-method.md) .  
   
@@ -54,9 +55,9 @@ typedef enum CorDebugSetContextFlag
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)
 - [Отладка](index.md)

@@ -1,5 +1,6 @@
 ---
-title: s_isDebuggerCheckDisabledForTestPurposes Field
+description: 'Дополнительные сведения о: s_isDebuggerCheckDisabledForTestPurposes поле'
+title: s_isDebuggerCheckDisabledForTestPurposes поле
 ms.date: 03/30/2017
 ms.technology: dotnet-wpf
 topic_type:
@@ -11,16 +12,16 @@ api_location:
 api_type:
 - Assembly
 ms.assetid: 9033a513-c255-4f31-b6d7-09b8d8c50e2d
-ms.openlocfilehash: ad9bc0ecf4b7a8e5f3ef13fdff5aa59ca8915922
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: a71235c13a7a35872bcf5374be8077bafad5ff9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634659"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802662"
 ---
-# <a name="sisdebuggercheckdisabledfortestpurposes-field"></a>s_isDebuggerCheckDisabledForTestPurposes Field
+# <a name="s_isdebuggercheckdisabledfortestpurposes-field"></a>s_isDebuggerCheckDisabledForTestPurposes поле
 
-Это частное поле в `System.Windows.Diagnostics.VisualDiagnostics` класс используется средой Visual Studio, чтобы определить, будет ли выполняться внутренняя проверка для активного отладчика.
+Это частное поле в `System.Windows.Diagnostics.VisualDiagnostics` классе используется в Visual Studio для определения, будет ли выполняться внутренняя проверка активного отладчика.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,9 +30,9 @@ private static bool s_isDebuggerCheckDisabledForTestPurposes
 ```
 
 > [!WARNING]
-> API-интерфейсы в `System.Windows.Diagnostics.VisualDiagnostics` класса доступны только в случае, когда приложение выполняется в режиме отладки. Задайте `s_isDebuggerCheckDisabledForTestPurposes` для `true` для доступа к API вне отладчика.
+> API-интерфейсы в `System.Windows.Diagnostics.VisualDiagnostics` классе доступны только в том случае, если приложение выполняется в отладчике. Задайте для значение, чтобы `s_isDebuggerCheckDisabledForTestPurposes` `true` получить доступ к API за пределами отладчика.
 >
-> Майкрософт не поддерживает использование этого поля в рабочем приложении ни при каких обстоятельствах.
+> Корпорация Майкрософт не поддерживает использование этого поля в рабочем приложении при каких-либо обстоятельствах.
 
 ## <a name="requirements"></a>Требования
 
@@ -39,4 +40,4 @@ private static bool s_isDebuggerCheckDisabledForTestPurposes
 
 **Сборка:** PresentationCore (в PresentationCore.dll)
 
-**Версии платформы .NET framework:** Доступно с версии 4.6.
+**Платформа .NET Framework версии:** Доступно с 4,6.

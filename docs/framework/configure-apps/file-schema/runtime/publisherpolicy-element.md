@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <publisherPolicy> element'
 title: Элемент <publisherPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - container tags, <publisherPolicy> element
 - <publisherPolicy> element
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-ms.openlocfilehash: bd6ab1123ef3f84f7e8a06b25ce48aed37e4bef7
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35d729d5b195e010a80e7272312f14ac5802001b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802441"
 ---
 # <a name="publisherpolicy-element"></a>Элемент \<publisherPolicy>
 
@@ -90,7 +91,7 @@ ms.locfileid: "91195263"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

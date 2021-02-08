@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о свойстве: Склстреамчарс. CanSeek'
 title: Свойство Склстреамчарс. CanSeek (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -13,16 +14,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: eb32978f62b7d46f0abf715e2bca347592c0fda8
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 5919a66bef9ac31e0ef15ad4af64b456700605f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802623"
 ---
 # <a name="sqlstreamcharscanseek-property"></a>Склстреамчарс. CanSeek, свойство
 
-При переопределении в производном классе получает значение, указывающее, поддерживает ли текущий Steam операцию Seek. Сборка, содержащая это свойство, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+При переопределении в производном классе получает значение, указывающее, поддерживает ли текущий Steam операцию Seek. Сборка, содержащая это свойство, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 public abstract bool CanSeek { get; }
@@ -31,12 +32,12 @@ public abstract bool CanSeek { get; }
 ## <a name="property-value"></a>Значение свойства
 
 <xref:System.Boolean>\
-`true`, если текущий Steam поддерживает операцию Seek; в противном случае `false`.
+`true` значение, если текущий Steam поддерживает операцию Seek; в противном случае — `false` .
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Свойство `SqlStreamChars.CanSeek` является закрытым и не предназначено для непосредственного использования в коде.
+> `SqlStreamChars.CanSeek`Свойство является закрытым и не предназначено для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого свойства в рабочем приложении при каких-либо обстоятельствах.
 
@@ -44,6 +45,6 @@ public abstract bool CanSeek { get; }
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура CoreClrDebugProcInfo'
 title: Структура CoreClrDebugProcInfo
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 4ddc37da-5c94-4beb-b61c-b54071c0e749
 topic_type:
 - apiref
-ms.openlocfilehash: 5996393fd1a0504f9c3d3f9f07aa0e3d886a0787
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 04befb057be689e68dd3571a13990da9af64551f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719701"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801492"
 ---
 # <a name="coreclrdebugprocinfo-structure"></a>Структура CoreClrDebugProcInfo
 
@@ -53,4 +54,4 @@ struct  CoreClrDebugProcInfo {
   
  **Библиотека:** mscordbi_macx86.dll  
   
- **.NET Framework версии:** 3,5 SP1
+ **Платформа .NET Framework версии:** 3,5 SP1

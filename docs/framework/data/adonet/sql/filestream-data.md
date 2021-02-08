@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: данные FILESTREAM'
 title: Данные FILESTREAM
 ms.date: 03/30/2017
 ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8
-ms.openlocfilehash: 87bed5dd345c240cc00b2c36aa976ec53fe63b93
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 0110be6b867a07ec1cd204e2a3de371367bbfa36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70794093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802051"
 ---
 # <a name="filestream-data"></a>Данные FILESTREAM
 
-Для двоичных данных (BLOB), хранящихся в столбце varbinary(max), появился новый атрибут хранилища FILESTREAM. До появления FILESTREAM для хранения двоичных данных была необходима специальная обработка. Неструктурированные данные, например текстовые документы, изображения и видеоролики, зачастую хранятся вне базы данных, что затрудняет работу с ними.
+Для двоичных (BLOB) данных, хранимых в столбце varbinary(max), появился новый атрибут хранилища FILESTREAM. Перед созданием FILESTREAM для хранения двоичных данных требовалась специальная обработка. Неструктурированные данные, такие как текстовые документы, изображения и видео, часто хранятся вне базы данных, что затрудняет управление ими.
 
 > [!NOTE]
 > Для работы с данными FILESTREAM через SqlClient необходимо установить .NET Framework 3.5 с пакетом обновления 1 (SP1) или более поздней версии.
@@ -20,11 +21,11 @@ ms.locfileid: "70794093"
 
 ## <a name="sqlclient-support-for-filestream"></a>Поддержка атрибута FILESTREAM в SqlClient
 
-.NET Framework поставщик данных для SQL Server, <xref:System.Data.SqlClient>поддерживает чтение и запись данных FILESTREAM с помощью класса, <xref:System.Data.SqlTypes.SqlFileStream> определенного в <xref:System.Data.SqlTypes> пространстве имен. Класс `SqlFileStream` является производным от класса <xref:System.IO.Stream>, который содержит методы для чтения и записи потоков данных. При чтении из потока данные передаются в структуру данных, например в массив байтов. При записи данные передаются из структуры данных в поток.
+Платформа .NET Framework поставщик данных для SQL Server, <xref:System.Data.SqlClient> поддерживает чтение и запись данных FILESTREAM с помощью <xref:System.Data.SqlTypes.SqlFileStream> класса, определенного в <xref:System.Data.SqlTypes> пространстве имен. `SqlFileStream` наследует от класса <xref:System.IO.Stream>, который предоставляет методы для чтения и записи в потоки данных. После считывания из потока данные передаются из потока в структуру данных, например массив байтов. Запись передает данные из структуры данных в поток.
 
 ### <a name="creating-the-sql-server-table"></a>Создание таблицы SQL Server
 
-Приведенная ниже инструкция Transact-SQL создает таблицу employees и вставляет в нее строку данных. После включения атрибута FILESTREAM эту таблицу можно использовать в приведенных ниже примерах кода. Ссылки на ресурсы в электронная документация на SQL Server находятся в конце этого раздела.
+Приведенная ниже инструкция Transact-SQL создает таблицу employees и вставляет в нее строку данных. После включения хранилища FILESTREAM эту таблицу можно использовать вместе с приведенными ниже примерами кода. Ссылки на ресурсы электронной документации на SQL Server приведены в конце данного раздела.
 
 ```sql
 CREATE TABLE employees
@@ -40,13 +41,13 @@ Values(1, 0x00, default)
 GO
 ```
 
-### <a name="example-reading-overwriting-and-inserting-filestream-data"></a>Пример Чтение, перезапись и вставка данных FILESTREAM
+### <a name="example-reading-overwriting-and-inserting-filestream-data"></a>Пример. Чтение, перезапись и вставка данных FILESTREAM
 
-В приведенном ниже образце демонстрируется чтение данных из потока FILESTREAM. В коде определяется логический путь к файлу, свойству `FileAccess` присваивается значение `Read`, а свойству `FileOptions` - значение `SequentialScan`. Затем в коде считываются в буфер байты данных из потока SqlFileStream. Эти байты данных затем выводятся в окно консоли.
+В приведенном ниже примере демонстрируется чтение данных из потока FILESTREAM. Код получает логический путь к файлу, устанавливая для `FileAccess` значение `Read` и для `FileOptions` — `SequentialScan`. Затем код считывает байты из SqlFileStream и передает их в буфер. Затем байты записываются в окно консоли.
 
-В приведенном ниже образце также демонстрируется запись данных в поток FILESTREAM с перезаписью всех существующих данных. В коде определяется логический путь к файлу, создается поток `SqlFileStream`, свойству `FileAccess` присваивается значение `Write`, а свойству `FileOptions` - значение `SequentialScan`. В поток `SqlFileStream` записывается один байт, заменяющий все данные в файле.
+В примере также демонстрируется запись данных в поток FILESTREAM с перезаписью всех существующих данных. Код получает логический путь к файлу и создает `SqlFileStream` устанавливая для `FileAccess` значение `Write` и для `FileOptions` — `SequentialScan`. Один байт записывается в `SqlFileStream`, заменяя все данные в файле.
 
-В этом примере кода также демонстрируется запись данных в поток FILESTREAM с использованием метода Seek для добавления данных в конец файла. В коде определяется логический путь к файлу, создается поток `SqlFileStream`, свойству `FileAccess` присваивается значение `ReadWrite`, а свойству `FileOptions` - значение `SequentialScan`. Для поиска конца файла в коде используется метод Seek, после чего в конец файла добавляется один байт.
+В приведенном примере также демонстрируется запись данных в поток FILESTREAM с использованием метода Seek для добавления данных в конец файла. Код получает логический путь к файлу и создает `SqlFileStream` устанавливая для `FileAccess` значение `ReadWrite` и для `FileOptions` — `SequentialScan`. Код использует метод Seek для поиска конца файла, добавляя один байт к существующему файлу.
 
 ```csharp
 using System;
@@ -171,22 +172,22 @@ namespace FileStreamTest
 }
 ```
 
-Другой пример см. в разделе [Сохранение и выбор двоичных данных в столбце файлового потока](https://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).
+Другой пример см. в разделе [Как сохранять и извлекать двоичные данные в столбце файлового потока](https://www.codeproject.com/Articles/32216/How-to-store-and-fetch-binary-data-into-a-file-str).
 
-## <a name="resources-in-sql-server-books-online"></a>Ресурсы электронной документации по SQL Server
+## <a name="resources-in-sql-server-books-online"></a>Ресурсы в электронной документации по SQL Server
 
-Полная документация по FILESTREAM находится в следующих разделах электронная документация на SQL Server.
+Полная документация по FILESTREAM содержится в указанных ниже разделах электронной документации на SQL Server.
 
 |Раздел|Описание|
 |-----------|-----------------|
-|[FILESTREAM (SQL Server)](/sql/relational-databases/blob/filestream-sql-server)|Приводятся сведения о том, когда необходимо использовать хранилище FILESTREAM; также описывается интеграция ядра СУБД SQL Server и файловой системы NTFS.|
-|[Создание клиентских приложений для данных FILESTREAM](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Описывает функции Windows API для работы с данными FILESTREAM.|
-|[FILESTREAM и другие функции SQL Server](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Приводятся общие сведения, рекомендации и ограничения при использовании данных FILESTREAM совместно с другими возможностями SQL Server.|
+|[FILESTREAM (SQL Server)](/sql/relational-databases/blob/filestream-sql-server)|Описывает, когда следует использовать хранилище FILESTREAM, и как оно интегрирует ядро СУБД Microsoft SQL Server с файловой системой NTFS.|
+|[Создание клиентских приложений для данных FILESTREAM](/sql/relational-databases/blob/create-client-applications-for-filestream-data)|Описывает функции API Windows для работы с данными FILESTREAM.|
+|[FILESTREAM и другие возможности SQL Server](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Содержит рекомендации, направляющие и ограничения для использования данных FILESTREAM с другими функциями SQL Server.|
 
 ## <a name="see-also"></a>См. также
 
 - [Типы данных SQL Server и ADO.NET](sql-server-data-types.md)
 - [Извлечение и изменение данных в ADO.NET](../retrieving-and-modifying-data.md)
 - [Управление доступом для кода и ADO.NET](../code-access-security.md)
-- [Двоичные данные и данные большого объема SQL Server](sql-server-binary-and-large-value-data.md)
+- [Двоичные данные и данные больших значений SQL Server](sql-server-binary-and-large-value-data.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

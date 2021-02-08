@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <TypeInstantiation> элементе: Element (.NET Native)'
 title: <TypeInstantiation> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-ms.openlocfilehash: a1db497762b3dc8c135154086d72fb3ac92ff5a4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8939767e016283ea525fbd74554fe30b1cca952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801934"
 ---
 # <a name="typeinstantiation-element-net-native"></a>\<TypeInstantiation> Элемент (.NET Native)
 
@@ -93,7 +94,7 @@ ms.locfileid: "96250753"
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
 |`<TypeInstantiation>`|Применяет политику отражения к сконструированному универсальному типу и всем его членам.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Атрибуты отражения, сериализации и взаимодействия являются необязательными. Тем не менее, по крайней мере один должен присутствовать.  
   

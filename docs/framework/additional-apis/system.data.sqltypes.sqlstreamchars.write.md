@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Склстреамчарс. Write (char [], Int32, Int32)'
 title: Метод Склстреамчарс. Write (char [], Int32, Int32) (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9d952041122ceb3824712bd81cab7ce4789c9db8
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 3031b57902215df01c5c30625281a99be73ba2d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802558"
 ---
 # <a name="sqlstreamcharswritechar-int32-int32-method"></a>Метод Склстреамчарс. Write (char [], Int32, Int32)
 
-При переопределении в производном классе записывает последовательность символов в текущий поток и перемещает текущую позицию в этом потоке вперед на число записанных символов. Сборка, содержащая этот метод, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+При переопределении в производном классе записывает последовательность символов в текущий поток и перемещает текущую позицию в этом потоке вперед на число записанных символов. Сборка, содержащая этот метод, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 public abstract void Write (char[] buffer, int offset, int count);
@@ -38,10 +39,10 @@ public abstract void Write (char[] buffer, int offset, int count);
 `count`  
 Число символов, записываемых в текущий поток.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `SqlStreamChars.Write` является закрытым и не предназначен для непосредственного использования в коде.
+> `SqlStreamChars.Write`Метод является закрытым и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода для написания в рабочем приложении каких-либо обстоятельств.
 
@@ -49,6 +50,6 @@ public abstract void Write (char[] buffer, int offset, int count);
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

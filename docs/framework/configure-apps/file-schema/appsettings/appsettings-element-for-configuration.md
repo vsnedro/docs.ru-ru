@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <appSettings> Element для <configuration>'
 title: Элемент <appSettings> для <configuration>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - appSettings Element
 - <appSettings> Element
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
-ms.openlocfilehash: 66260d15768781b7fa3d9397b8e8a7d9ad68ab95
-ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
+ms.openlocfilehash: 74a25bb0dffd97057cda45575745b6f51ad2a675
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97009798"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802493"
 ---
 # <a name="appsettings-element-for-configuration"></a>Элемент \<appSettings> для \<configuration>
 
-Содержит пользовательские параметры приложения. Это предварительно определенный раздел конфигурации, предоставляемый .NET Framework.
+Содержит пользовательские параметры приложения. Это предварительно определенный раздел конфигурации, предоставляемый платформа .NET Framework.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<appSettings>**
@@ -49,7 +50,7 @@ ms.locfileid: "97009798"
 | [**\<clear>**](clear-element-for-appsettings.md) | Удаляет все ранее определенные параметры приложения. |
 | [**\<remove>**](remove-element-for-appsettings.md) | Удаляет ранее определенный параметр приложения. |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 **\<appSettings>** Элемент хранит сведения о конфигурации пользовательского приложения, такие как строки подключения к базе данных, пути к файлам, URL-адреса XML или другие пользовательские сведения о конфигурации приложения. Пары "ключ-значение", указанные в **\<appSettings>** элементе, доступны в коде с помощью <xref:System.Configuration.ConfigurationSettings> класса.
 
@@ -84,4 +85,4 @@ ms.locfileid: "97009798"
 
 ## <a name="see-also"></a>См. также
 
-- [Схема файла конфигурации для .NET Framework](../index.md)
+- [Схема файла конфигурации для платформа .NET Framework](../index.md)

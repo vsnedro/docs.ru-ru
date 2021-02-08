@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 3306-Клиентбасечаннелфакторяжедаутофкаче'
 title: 3306 - ClientBaseChannelFactoryAgedOutofCache
 ms.date: 03/30/2017
 ms.assetid: d8af1dbf-ea3b-4931-94eb-6d21e30a886e
-ms.openlocfilehash: 760acf94830127fd340ad08e42d70173c4cc6ad7
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e33f2da4fff286351e9b6af7fcf382d03becc2fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96254471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803455"
 ---
 # <a name="3306---clientbasechannelfactoryagedoutofcache"></a>3306 - ClientBaseChannelFactoryAgedOutofCache
 
@@ -17,7 +18,7 @@ ms.locfileid: "96254471"
 |-|-|  
 |ID|3306|  
 |Keywords|ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## <a name="description"></a>Описание  

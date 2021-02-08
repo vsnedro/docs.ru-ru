@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <Thread_UseAllCpuGroups элемент>'
 title: Элемент <Thread_UseAllCpuGroups>
 ms.date: 03/30/2017
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
-ms.openlocfilehash: a3a612c0ffbcb211157b9623d298ce8ad7a13e94
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3f11ba6855caab25bd261de71c80c78232f2690f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73115399"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802415"
 ---
 # <a name="thread_useallcpugroups-element"></a>Элемент \<Thread_UseAllCpuGroups>
 
@@ -52,7 +53,7 @@ ms.locfileid: "73115399"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о привязке сборок и сборке мусора.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Если компьютер имеет несколько групп ЦП, включение этого элемента приводит к тому, что среда выполнения распределяет управляемые потоки по всем группам ЦП. Чтобы использовать эту функцию, необходимо также включить [\<GCCpuGroup>](gccpugroup-element.md) элемент, который расширяет сборку мусора на все группы ЦП и учитывает все ядра при создании и балансировке куч. Включение [\<GCCpuGroup>](gccpugroup-element.md) элемента требует включения [\<gcServer>](gcserver-element.md) элемента. Если эти элементы не включены, включение `<Thread_UseAllCpuGroups>` элемента не оказывает никакого влияния.
 
@@ -74,4 +75,4 @@ ms.locfileid: "73115399"
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)
-- [\<GCCpuGroup>Дерев](gccpugroup-element.md)
+- [\<GCCpuGroup> Элемент](gccpugroup-element.md)

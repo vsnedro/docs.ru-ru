@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Проверка безопасности и ошибки проверки подлинности за секунду'
 title: Количество сбоев при проверке безопасности и проверке подлинности в секунду
 ms.date: 03/30/2017
 ms.assetid: 266c3bd3-2ffc-4471-94b7-3675443be1ac
-ms.openlocfilehash: c64c121550043127db674fac6287a870449d789d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 77c11e8f47b5d91ea38030841f6ca33ba0f0795c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803403"
 ---
 # <a name="security-validation-and-authentication-failures-per-second"></a>Количество сбоев при проверке безопасности и проверке подлинности в секунду
 

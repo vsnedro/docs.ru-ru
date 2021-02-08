@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебуглоадедмодуле:: Name'
 title: Метод ICorDebugLoadedModule::GetName
 ms.date: 03/30/2017
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e
-ms.openlocfilehash: c18af45184f5a9485e13b9d4789bff2c570834cc
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40a0715b513115177cabac01727ce9166a40d50b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801258"
 ---
 # <a name="icordebugloadedmodulegetname-method"></a>Метод ICorDebugLoadedModule::GetName
 
@@ -35,7 +36,7 @@ HRESULT GetName(
  `szName`  
  [out] Массив символов, содержащий имя загруженного модуля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -48,9 +49,9 @@ HRESULT GetName(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugLoadedModule](icordebugloadedmodule-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

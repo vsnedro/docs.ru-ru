@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <localServiceSettings> element'
 title: <localServiceSettings> - элемент
 ms.date: 03/30/2017
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-ms.openlocfilehash: 3043c07afd316d90cc5525a67bef144f33d9b136
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ee3306588d6a86ed9ced9c66624cd34f18e2c5c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91204935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802207"
 ---
 # <a name="localservicesettings-element"></a>Элемент \<localServiceSettings>
 
@@ -50,7 +51,7 @@ ms.locfileid: "91204935"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`detectReplays`|Логическое значение, показывающее, будут ли атаки с повторением обнаружены и ликвидированы на канале автоматически. Значение по умолчанию — `false`.|  
+|`detectReplays`|Логическое значение, показывающее, будут ли атаки с повторением обнаружены и ликвидированы на канале автоматически. Значение по умолчанию — `false`.|  
 |`inactivityTimeout`|Положительное значение <xref:System.TimeSpan> , которое указывает время бездействия канала до истечения времени ожидания. Значение по умолчанию — "01:00:00".|  
 |`issuedCookieLifeTime`|Значение типа <xref:System.TimeSpan>, которое задает время существования для всех новых файлов безопасности cookie. Файлы cookie, время существования который превышает заданное время, используются повторно и снова должны быть согласованы. Значение по умолчанию - 10:00:00.|  
 |`maxCachedCookies`|Положительное целое число, указывающее максимальное количество файлов cookie, которые могут быть кэшированы. Значение по умолчанию — 1000.|  
@@ -92,7 +93,7 @@ ms.locfileid: "91204935"
   
  В процессе сеанса безопасного диалога следует учесть, что атрибуты `inactivityTimeout` и `receiveTimeout` в привязке влияют на тайм-аут сеанса. Наименьшая из этих величин определяет момент, когда истекает время ожидания.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>
 - <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings%2A>

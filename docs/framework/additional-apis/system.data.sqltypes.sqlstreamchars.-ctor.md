@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: конструктор Склстреамчарс'
 title: Конструктор Склстреамчарс (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,25 +13,25 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 34c5dcfe458ca57aa3bd5388e8b4c66c3c497df6
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 1bdf9b0a9b2b32e974b29f9710541c4babb54773
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802636"
 ---
 # <a name="sqlstreamchars-constructor"></a>Конструктор SqlStreamChars
 
-Инициализирует новый экземпляр класса `SqlStreamChars` . Сборка, содержащая этот конструктор, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+Инициализирует новый экземпляр класса `SqlStreamChars`. Сборка, содержащая этот конструктор, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 protected SqlStreamChars ();
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Конструктор `SqlStreamChars` защищен и не предназначен для непосредственного использования в коде.
+> `SqlStreamChars`Конструктор защищен и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого конструктора в рабочем приложении при каких-либо обстоятельствах.
 
@@ -38,6 +39,6 @@ protected SqlStreamChars ();
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

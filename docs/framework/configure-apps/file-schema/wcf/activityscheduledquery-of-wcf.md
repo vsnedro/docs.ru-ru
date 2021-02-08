@@ -1,15 +1,16 @@
 ---
-title: <activityScheduledQuery>WCF
+description: 'Дополнительные сведения о: <activityScheduledQuery> из WCF'
+title: <activityScheduledQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: 25f6eee1-3d98-4c39-b517-c0813f03f106
-ms.openlocfilehash: b173964cf5d691f4b9300bca69ca4a1fe1ea7e11
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b1b5f971dccfbc650ee12a08a9ae2fa7b745db50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802363"
 ---
-# <a name="activityscheduledquery-of-wcf"></a>\<activityScheduledQuery>WCF
+# <a name="activityscheduledquery-of-wcf"></a>\<activityScheduledQuery> WCF
 
 Представляет коллекцию запросов, которые используются для отслеживания действия, выполнение которого запланировано родительским действием. Этот запрос необходим, чтобы участник отслеживания подписался на записи запланированных действий.  
   
@@ -47,7 +48,7 @@ ms.locfileid: "70850476"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
 |`activityName`|Строка, задающая имя действия, которое запрашивает отмену.|  
 |`childActivityName`|Строка, указывающая имя дочернего действия, для которого была запрошена отмена.|  

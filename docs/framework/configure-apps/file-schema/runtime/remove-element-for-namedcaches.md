@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <remove> Element для <namedCaches>'
 title: Элемент <remove> для <namedCaches>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - remove element for namedCaches
 - <remove> element for namedCaches
 ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
-ms.openlocfilehash: c8ad5a0ce6d7a3059943b3962b9255385cea6e15
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5b39fc596735d746c52cdb5623962f5b9952fa3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802466"
 ---
 # <a name="remove-element-for-namedcaches"></a>Элемент \<remove> для \<namedCaches>
 
@@ -31,7 +32,7 @@ ms.locfileid: "91183992"
  </namedCaches>  
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `None`  
   
@@ -57,6 +58,6 @@ ms.locfileid: "91183992"
 
  `remove`Элемент удаляет `namedCache` запись из именованной коллекции кэша для кэша памяти.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [\<namedCaches> Элемент (параметры кэша)](namedcaches-element-cache-settings.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура CLRDATA_IL_ADDRESS_MAP'
 title: Структура CLRDATA_IL_ADDRESS_MAP
 ms.date: 01/16/2019
 api.name:
@@ -15,16 +16,16 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: e680a7a0dc3209d1988f6c84be0864572a74b3a4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 02ee14154de0c1609e58cf6a2ad1ca62710567f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801856"
 ---
 # <a name="clrdata_il_address_map-structure"></a>Структура CLRDATA_IL_ADDRESS_MAP
 
-Определяет ИЛ для решения картографирования.
+Определяет IL для сопоставления адресов.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -42,25 +43,25 @@ typedef struct
 
 ## <a name="members"></a>Члены
 
-| Участник         | Описание                                            |
+| Член         | Описание                                            |
 | -------------- | ------------------------------------------------------ |
-| `ilOffset`     | IL смещение для содержащегося диапазона адресов              |
-| `startAddress` | Стартовый адрес диапазона.                        |
+| `ilOffset`     | Смещение IL для диапазона входящих адресов              |
+| `startAddress` | Начальный адрес диапазона.                        |
 | `endAddress`   | Конечный адрес диапазона.                          |
 | `type`         | Тип данных. Это значение в настоящее время не используется |
 
 ## <a name="remarks"></a>Remarks
 
-Эта структура живет в времени выполнения и не подвергается воздействию каких-либо заголовков или файлов библиотек. Чтобы использовать его, определите структуру, указанную выше, где `CLRDATA_ADDRESS` находится 64-битный неподписанный целый ряд.
+Эта структура находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Чтобы использовать его, определите структуру, как указано выше, где `CLRDATA_ADDRESS` — это 64-разрядное целое число без знака.
 
 ## <a name="requirements"></a>Требования
 
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
-**Заголовок:** Ни один  
-**Библиотека:** Нет **рамочных версий .NET:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Заголовок:** None  
+**Библиотека:** Нет **платформа .NET Framework версий:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Перечисление CLRDataSourceType](clrdatasourcetype-enumeration.md)
-- [Отладки](index.md)
+- [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
+- [Отладка](index.md)
 - [Структуры отладки](debugging-structures.md)

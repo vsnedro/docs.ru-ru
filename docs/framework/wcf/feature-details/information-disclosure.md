@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: раскрытие информации'
 title: Раскрытие информации
 ms.date: 03/30/2017
 ms.assetid: 4064c89f-afa6-444a-aa7e-807ef072131c
-ms.openlocfilehash: a58ac4dd3715052031c7fb5c1da480c0d01396ea
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 420437703fab883698cdd7217efb14c214a1f529
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596868"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802857"
 ---
 # <a name="information-disclosure"></a>Раскрытие информации
 
@@ -65,11 +66,11 @@ MyChannelFactory.Credentials.Windows.ClientCredential = new System.Net.NetworkCr
 
 Если домен указан, но с помощью функции идентификации конечной точки задано недействительное имя субъекта-службы, то будет использоваться NTLM. Дополнительные сведения о том, как указывается удостоверение конечной точки, см. в разделе [удостоверение службы и проверка подлинности](service-identity-and-authentication.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Вопросы безопасности](security-considerations-in-wcf.md)
-- [Повышение привилегий](elevation-of-privilege.md)
+- [Несанкционированное получение привилегий](elevation-of-privilege.md)
 - [Отказ в обслуживании](denial-of-service.md)
-- [незаконное изменение;](tampering.md)
+- [Незаконное изменение](tampering.md)
 - [Неподдерживаемые сценарии](unsupported-scenarios.md)
 - [Атаки с повторением](replay-attacks.md)

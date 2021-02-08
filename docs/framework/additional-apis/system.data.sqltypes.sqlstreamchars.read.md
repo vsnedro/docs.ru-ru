@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Склстреамчарс. Read (char [], Int32, Int32)'
 title: Метод Склстреамчарс. Read (char [], Int32, Int32) (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 9c8a1526e75fdc304022e74a7cc52506762489ea
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: a899ddff7b7242fcc32aaf7b7f7794970596027b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395754"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802584"
 ---
 # <a name="sqlstreamcharsreadchar-int32-int32-method"></a>Метод Склстреамчарс. Read (char [], Int32, Int32)
 
-При переопределении в производном классе считывает следующий набор символов из входного потока. Сборка, содержащая этот метод, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+При переопределении в производном классе считывает следующий набор символов из входного потока. Сборка, содержащая этот метод, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 public abstract int Read (char[] buffer, int offset, int count);
@@ -38,15 +39,15 @@ public abstract int Read (char[] buffer, int offset, int count);
 `count`\
 Число символов, считываемых из текущего потока.
 
-## <a name="returns"></a>Returns
+## <a name="returns"></a>Возвращаемое значение
 
 <xref:System.Int32>\
 Общее количество символов, считанных в буфер.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `SqlStreamChars.Read` является закрытым и не предназначен для непосредственного использования в коде.
+> `SqlStreamChars.Read`Метод является закрытым и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
@@ -54,6 +55,6 @@ public abstract int Read (char[] buffer, int offset, int count);
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

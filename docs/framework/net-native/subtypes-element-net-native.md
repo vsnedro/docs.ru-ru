@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <Subtypes> элементе: Element (.NET Native)'
 title: <Subtypes> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
-ms.openlocfilehash: 7484152c351f59ee84b601584bd84347186628a3
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: d30bb482e784d912d3f5d61f688ed2b824e45f27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801960"
 ---
 # <a name="subtypes-element-net-native"></a>\<Subtypes> Элемент (.NET Native)
 
@@ -63,7 +64,7 @@ ms.locfileid: "96287817"
 |-------------|-----------------|  
 |[\<Type>](type-element-net-native.md)|Применяет политику отражения к типу и всем его членам.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  Элемент `<Subtypes>` применяет политику ко всем подтипам его содержащего типа. Используется для применения различных политик для производных типов и их базовых классов.  
   

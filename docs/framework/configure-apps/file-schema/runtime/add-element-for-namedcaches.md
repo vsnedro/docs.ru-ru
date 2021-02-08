@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <add> Element для <namedCaches>'
 title: Элемент <add> для <namedCaches>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - add element for <namedCaches>
 - <add> element for <namedCaches>
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
-ms.openlocfilehash: cd920b58290050fcc30ea5d0a1ac113a333902fa
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1485b80fa84268f68759bfb50744133744142d72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91195367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802428"
 ---
 # <a name="add-element-for-namedcaches"></a>Элемент \<add> для \<namedCaches>
 
@@ -31,7 +32,7 @@ ms.locfileid: "91195367"
  </namedCaches>  
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  `None`  
   
@@ -83,6 +84,6 @@ ms.locfileid: "91195367"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [\<namedCaches> Элемент (параметры кэша)](namedcaches-element-cache-settings.md)

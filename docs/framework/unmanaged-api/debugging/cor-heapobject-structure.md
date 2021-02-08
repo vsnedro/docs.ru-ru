@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_HEAPOBJECT'
 title: Структура COR_HEAPOBJECT
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5
 topic_type:
 - apiref
-ms.openlocfilehash: 54af02b48dabdf2042763954805f0d454323ac89
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f41e02e7c528063f4b7ed485cbadbabb4d3e5ca7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801804"
 ---
 # <a name="cor_heapobject-structure"></a>Структура COR_HEAPOBJECT
 
@@ -43,7 +44,7 @@ typedef struct _COR_HEAPOBJECT {
 |`size`|Общий размер объекта в байтах.|  
 |`type`|Токен [COR_TYPEID](cor-typeid-structure.md) , представляющий тип объекта.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `COR_HEAPOBJECT` экземпляры можно получить, перечисляя объект интерфейса [икордебугхеапенум](icordebugheapenum-interface.md) , который заполняется путем вызова метода [метод ICorDebugProcess5:: енумератехеап](icordebugprocess5-enumerateheap-method.md) .  
   
@@ -63,9 +64,9 @@ typedef struct _COR_HEAPOBJECT {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

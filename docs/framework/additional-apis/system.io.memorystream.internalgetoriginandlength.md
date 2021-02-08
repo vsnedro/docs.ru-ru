@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о методе MemoryStream. Интерналжеторигинандленгс
 title: Метод MemoryStream. Интерналжеторигинандленгс (System.IO)
 ms.date: 11/19/2019
 topic_type:
@@ -9,14 +10,14 @@ api_location:
 - mscorlib.dll
 api_type:
 - Assembly
-ms.openlocfilehash: d82b5080e9fbd5fc6603f1cddae996c75a06d3a3
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 4232852c0835a43454f36271a43062e1240297a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77215464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802545"
 ---
-# <a name="memorystreaminternalgetoriginandlength-method"></a>Метод MemoryStream. Интерналжеторигинандленгс
+# <a name="memorystreaminternalgetoriginandlength-method"></a>Метод MemoryStream.InternalGetOriginAndLength
 
 Возвращает внутренние значения источника и длину потока памяти.
 
@@ -27,15 +28,15 @@ internal void InternalGetOriginAndLength(out int origin, out int length)
 ## <a name="parameters"></a>Параметры
 
 - `origin` <xref:System.Int32>\
-  При возврате из этого метода смещение массива байтов, указанного при создании нового объекта <xref:System.IO.MemoryStream>. Содержит 0, если массив байтов был создан <xref:System.IO.MemoryStream>.
+  При возврате из этого метода смещение массива байтов, указанного при создании нового <xref:System.IO.MemoryStream> объекта. Содержит 0, если массив байтов был создан <xref:System.IO.MemoryStream> .
 
 - `length` <xref:System.Int32>\
   При возврате из этого метода число байтов в потоке памяти.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `MemoryStream.InternalGetOriginAndLength` является внутренним и не предназначен для непосредственного использования в коде.
+> `MemoryStream.InternalGetOriginAndLength`Метод является внутренним и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
@@ -43,6 +44,6 @@ internal void InternalGetOriginAndLength(out int origin, out int length)
 
 **Пространство имен:** <xref:System.IO>
 
-**Сборка:** mscorlib. dll (в mscorlib. dll)
+**Сборка:** mscorlib.dll (в mscorlib.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

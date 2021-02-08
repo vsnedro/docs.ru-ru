@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Хттпстатусдескриптион Class'
 title: Класс Хттпстатусдескриптион (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -11,16 +12,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 0214d8259c735de11abe204680d619a7298466de
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: fa135a6421397ce6b7be2af05d66aa8e81beafb7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802506"
 ---
-# <a name="httpstatusdescription-class"></a>Класс Хттпстатусдескриптион
+# <a name="httpstatusdescription-class"></a>Класс HttpStatusDescription
 
-Предоставляет стандартные описания состояния HTTP. Этот класс не может быть унаследован.
+Предоставляет стандартные описания состояния HTTP. Этот класс не наследуется.
 
 ```csharp
 internal static class HttpStatusDescription

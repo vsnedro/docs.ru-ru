@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура COR_GC_REFERENCE'
 title: Структура COR_GC_REFERENCE
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
 topic_type:
 - apiref
-ms.openlocfilehash: bb4a8f7ff3ee54474804e3e5620dcce7c9f79fb5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 38518bb1eb870081621bf32af9e63cdaa208dbd3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801817"
 ---
 # <a name="cor_gc_reference-structure"></a>Структура COR_GC_REFERENCE
 
@@ -42,10 +43,10 @@ typedef struct _COR_GC_REFERENCE {
 |------------|-----------------|  
 |`domain`|Указатель на домен приложения, которому принадлежит маркер или объект. Его значение может быть `null` .|  
 |`location`|Интерфейс ICorDebugValue или ICorDebugReferenceValue, соответствующий объекту, который должен быть собран сборщиком мусора.|  
-|`type`|Значение перечисления [CorGCReferenceType](corgcreferencetype-enumeration.md) , указывающее, откуда поступил корень. Дополнительные сведения см. в разделе "Примечания".|  
-|`extraData`|Дополнительные данные об объекте, который должен быть собран сборщиком мусора. Эти сведения зависят от источника объекта, как указано в `type` поле. Дополнительные сведения см. в разделе "Примечания".|  
+|`type`|Значение перечисления [CorGCReferenceType](corgcreferencetype-enumeration.md) , указывающее, откуда поступил корень. Дополнительные сведения см. в разделе «Примечания».|  
+|`extraData`|Дополнительные данные об объекте, который должен быть собран сборщиком мусора. Эти сведения зависят от источника объекта, как указано в `type` поле. Дополнительные сведения см. в разделе «Примечания».|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `type`Поле является значением перечисления [CorGCReferenceType](corgcreferencetype-enumeration.md) , которое указывает, откуда поступила ссылка. Конкретное `COR_GC_REFERENCE` значение может отражать любой из следующих видов управляемых объектов:  
   
@@ -55,7 +56,7 @@ typedef struct _COR_GC_REFERENCE {
   
 - Объекты из очереди метода завершения ( `CorGCReferenceType.CorReferenceFinalizer` ). Очередь метода завершения помещает объекты в корни до запуска метода завершения.  
   
- `extraData`Поле содержит дополнительные данные в зависимости от источника (или типа) ссылки. Возможны следующие значения:  
+ `extraData`Поле содержит дополнительные данные в зависимости от источника (или типа) ссылки. Доступны следующие значения:  
   
 - `DependentSource`. Если `type` имеет значение `CorGCREferenceType.CorHandleStrongDependent` , то это поле является объектом, в котором в случае со сроком существования объект, который должен быть собран в мусор, находится в корне `COR_GC_REFERENCE.Location` .  
   
@@ -71,9 +72,9 @@ typedef struct _COR_GC_REFERENCE {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Структуры отладки](debugging-structures.md)
 - [Отладка](index.md)

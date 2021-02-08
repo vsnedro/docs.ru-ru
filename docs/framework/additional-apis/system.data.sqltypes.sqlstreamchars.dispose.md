@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Склстреамчарс. Dispose (Boolean)'
 title: Метод Склстреамчарс. Dispose (Boolean) (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 44dc97835b8a7141064e8de4d2d5325c40be5a34
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: ce24cc885d87a3ff0bbcdbea7992ca78ee592454
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802610"
 ---
 # <a name="sqlstreamcharsdisposeboolean-method"></a>Метод Склстреамчарс. Dispose (логический)
 
-При переопределении в производном классе освобождает ресурсы, используемые потоком. Сборка, содержащая этот метод, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+При переопределении в производном классе освобождает ресурсы, используемые потоком. Сборка, содержащая этот метод, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 protected virtual void Dispose (bool disposing);
@@ -32,10 +33,10 @@ protected virtual void Dispose (bool disposing);
 `disposing`\
 Значение `true` позволяет освободить как управляемые, так и неуправляемые ресурсы; значение `false` освобождает только неуправляемые ресурсы.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `SqlStreamChars.Dispose` является закрытым и не предназначен для непосредственного использования в коде.
+> `SqlStreamChars.Dispose`Метод является закрытым и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
@@ -43,6 +44,6 @@ protected virtual void Dispose (bool disposing);
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

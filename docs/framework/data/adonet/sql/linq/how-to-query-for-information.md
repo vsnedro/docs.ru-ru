@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как запросить информацию
 title: Практическое руководство. Как обращаться с запросами о сведениях
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e538d288-2070-40ca-9da6-4fbc68cd6ad0
-ms.openlocfilehash: d45fdfa8b8976e3cdc86b905443bf7bcea578714
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 41774834fe919b28d71691203941cb8e0a8a0397
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91166408"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802025"
 ---
 # <a name="how-to-query-for-information"></a>Практическое руководство. Как обращаться с запросами о сведениях
 
@@ -27,7 +28,7 @@ ms.locfileid: "91166408"
  [!code-csharp[DLinqQuerying#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs/Program.cs#1)]
  [!code-vb[DLinqQuerying#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание модели объектов](creating-the-object-model.md)
 - [Загрузка примеров баз данных](downloading-sample-databases.md)

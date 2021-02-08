@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: интеграция с приложениями COM+'
 title: Интеграция с приложениями COM+
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - COM+ [WCF]
 - WCF, COM+ integration
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
-ms.openlocfilehash: 96a1f1cc68d28665a1b5dea1a106abfd793a4d1f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 02f1791d32863a413804a4a3a9c2710901f5a1e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96260335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802766"
 ---
 # <a name="integrating-with-com-applications"></a>Интеграция с приложениями COM+
 
 Windows Communication Foundation (WCF) предоставляет обширную среду для создания распределенных приложений. При наличии значительных инвестиций в логику приложений на основе компонентов, размещенных в COM+, можно использовать WCF для расширения существующей логики, а не переписывать ее. В подразделах этого раздела описывается использование COM+ с WCF.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения об интеграции с приложениями COM+](integrating-with-com-plus-applications-overview.md)  
  Даются общие сведения о том, где и как интегрировать компоненты COM+.  

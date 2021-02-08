@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <knownCertificates>'
 title: <knownCertificates>
 ms.date: 03/30/2017
 ms.assetid: 678e21b4-6493-47c3-8359-fcf0d37e2138
-ms.openlocfilehash: 7ddb292b8f0ffe38133c7f142be751a87d2be11c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0180db56c775f4f6f17de8da58781c15a412bc81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150912"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802233"
 ---
 # \<knownCertificates>
 
@@ -76,7 +77,7 @@ ms.locfileid: "91150912"
   
  Пример, демонстрирующий заполнение коллекции в конфигурации, см. в разделе [\<add>](add-of-knowncertificates.md) .  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
 - <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>

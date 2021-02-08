@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Класс Operation'
 title: Класс операции
 ms.date: 03/30/2017
 ms.assetid: b19d1496-ef06-4d0c-b2ae-e728ec00cca0
-ms.openlocfilehash: 6b47d933dc84813532398830c92c95210208a709
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 035c02bc05b7a64c5d15538001dbdcf2ec0b135b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96269162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803078"
 ---
 # <a name="operation-class"></a>Класс операции
 
@@ -105,7 +106,7 @@ class Operation
   
  Подпись метода операции.  
   
-### <a name="name"></a>name  
+### <a name="name"></a>Имя  
 
  Тип данных: строка  
   

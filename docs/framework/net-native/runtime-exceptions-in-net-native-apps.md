@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье исключения среды выполнения в .NET Native приложениях.
 title: Исключения среды выполнения в собственных приложениях .NET
 ms.date: 03/30/2017
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
-ms.openlocfilehash: 5c521eed94590e583a761cc2003460875e690fa9
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 11a85d36a95e74dac36cd45e080428fcba0c673e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801986"
 ---
 # <a name="runtime-exceptions-in-net-native-apps"></a>Исключения среды выполнения в собственных приложениях .NET
 

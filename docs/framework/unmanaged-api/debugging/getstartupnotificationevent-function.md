@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetStartupNotificationEvent
 title: Функция GetStartupNotificationEvent
 ms.date: 03/30/2017
 api_name:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
 - apiref
-ms.openlocfilehash: 1c6ad35cd42760a4d88cf78bb084a25cf58a1064
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 49b0e3f9b2acec87e419bae03086a7e437f45f98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95676092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801388"
 ---
 # <a name="getstartupnotificationevent-function"></a>Функция GetStartupNotificationEvent
 
@@ -56,7 +57,7 @@ HRESULT GetStartupNotificationEvent
  E_FAIL (или другие коды возврата E_)  
  Не удалось получить дескриптор события уведомления при запуске.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В операционной системе Windows `debuggeePID` сопоставляется с идентификатором процесса ОС.  
   
@@ -70,4 +71,4 @@ HRESULT GetStartupNotificationEvent
   
  **Библиотека:** dbgshim.dll  
   
- **.NET Framework версии:** 3,5 SP1
+ **Платформа .NET Framework версии:** 3,5 SP1

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции CreateDebuggingInterfaceFromVersion для Silverlight
 title: Функция CreateDebuggingInterfaceFromVersion Silverlight
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - debugging API [Silverlight]
 - Silverlight, debugging
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
-ms.openlocfilehash: f40345b09cae164660711b987f62130518736518
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8c61593f2e912260ecca65efce9f905ce56e88dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83208628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801453"
 ---
 # <a name="createdebugginginterfacefromversion-function-for-silverlight"></a>Функция CreateDebuggingInterfaceFromVersion Silverlight
 
@@ -39,18 +40,18 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 ## <a name="return-value"></a>Возвращаемое значение
 
  `S_OK`\
- `ppCordb`ссылается на допустимый объект, реализующий интерфейс [интерфейса ICorDebug](icordebug-interface.md) .  
+ `ppCordb` ссылается на допустимый объект, реализующий интерфейс [интерфейса ICorDebug](icordebug-interface.md) .  
   
  `E_INVALIDARG`\
  Либо `szDebuggeeVersion`, либо `ppCordb` имеет значение null.  
   
  `CORDBG_E_DEBUG_COMPONENT_MISSING`\
- Не удалось найти компонент, который необходим для отладки среды CLR. _Mscordbi. dll_ или _мскордаккоре. dll_ не найдены в том же каталоге, что и Целевая библиотека CoreCLR. dll.  
+ Не удалось найти компонент, который необходим для отладки среды CLR. _mscordbi.dll_ или _mscordaccore.dll_ не найдены в том же каталоге, что и Целевая CoreCLR.dll.  
   
  `CORDBG_E_INCOMPATIBLE_PROTOCOL`\
  Версия mscordbi.dll или mscordaccore.dll не совпадает с версией целевого объекта CoreCLR.dll.  
   
- `E_FAIL`(или другие `E_` коды возврата) \
+ `E_FAIL` (или другие `E_` коды возврата) \
  Не удалось вернуть [Интерфейс ICorDebug](icordebug-interface.md).  
   
 ## <a name="remarks"></a>Remarks
@@ -63,6 +64,6 @@ HRESULT CreateDebuggingInterfaceFromVersion (
   
  **Заголовок:** dbgshim. h  
   
- **Библиотека:** dbgshim. dll  
+ **Библиотека:** dbgshim.dll  
   
- **.NET Framework версии:** 3,5 SP1
+ **Платформа .NET Framework версии:** 3,5 SP1

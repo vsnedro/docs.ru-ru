@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кордебужехклаусе'
 title: Структура CorDebugEHClause
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type:
 - apiref
-ms.openlocfilehash: 225523280a2e1e0d8f51321e9dd865d901e725ba
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ecb00e2a110719ab82de32fb1f1c861e2033a528
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712707"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801674"
 ---
 # <a name="cordebugehclause-structure"></a>Структура CorDebugEHClause
 
@@ -43,7 +44,7 @@ typedef struct _CorDebugEHClause {
   
 |Член|Описание|  
 |------------|-----------------|  
-|`Flags`|Битовое поле, описывающее информацию об исключениях в предложении обработки исключений. Дополнительные сведения см. в разделе "Примечания".|  
+|`Flags`|Битовое поле, описывающее информацию об исключениях в предложении обработки исключений. Дополнительные сведения см. в разделе «Примечания».|  
 |`TryOffset`|Смещение блока `try` в байтах от начала тела метода.|  
 |`TryLength`|Длина блока `try` в байтах.|  
 |`HandlerOffset`|Расположение обработчика для этого блока `try`.|  
@@ -51,7 +52,7 @@ typedef struct _CorDebugEHClause {
 |`ClassToken`|Токен метаданных для обработчика исключений на основе типа.|  
 |`FilterOffset`|Смещение в байтах от начала тела метода для обработчика исключений на основе фильтра.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Массив `CoreDebugEHClause` значений возвращается методом [GetEHClauses](icordebugilcode-getehclauses-method.md) .  
   
@@ -74,9 +75,9 @@ typedef struct _CorDebugEHClause {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод GetEHClauses](icordebugilcode-getehclauses-method.md)
 - [Структуры отладки](debugging-structures.md)
