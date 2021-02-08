@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иапартменткаллбакк'
 title: Интерфейс IApartmentCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 57c33c58-bf0b-4533-b569-e6a682d02cba
 topic_type:
 - apiref
-ms.openlocfilehash: 0f38314df766b74164bf5e98d9b2153d2dddbcc1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ddf99b1d926bd2d9765b936143785a975ea378a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721742"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785144"
 ---
 # <a name="iapartmentcallback-interface"></a>Интерфейс IApartmentCallback
 
@@ -39,8 +40,8 @@ ms.locfileid: "95721742"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о структуре размещения
 title: Структуры размещения
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - unmanaged structures [.NET Framework], hosting
 - structures [.NET Framework hosting]
 ms.assetid: 492e010f-7493-4134-9505-f7008ccdaae6
-ms.openlocfilehash: 9d0349e4801c550731b6d126197003917c4a46e8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0eb7c95c22d7dc6c6018ad5071eaa47b0ecea2d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721794"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785163"
 ---
 # <a name="hosting-structures"></a>Структуры размещения
 
 В этом разделе описаны неуправляемые структуры, используемые API размещения.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Структура AssemblyBindInfo](assemblybindinfo-structure.md)  
  Предоставляет подробные сведения о сборке, на которую указывает ссылка.  
@@ -43,7 +44,7 @@ ms.locfileid: "95721794"
  [Структура StackOverflowInfo](stackoverflowinfo-structure.md)  
  Хранит тип произошедшего переполнения и сведения об исключении, порождаемом из-за переполнения.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Размещение коклассов](hosting-coclasses.md)  
   

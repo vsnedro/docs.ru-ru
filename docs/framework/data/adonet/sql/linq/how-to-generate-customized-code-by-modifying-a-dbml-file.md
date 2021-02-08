@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как создать настраиваемый код путем изменения DBML-файла.
 title: Практическое руководство. Как генерировать настраиваемый код путем изменения DBML-файла
 ms.date: 03/30/2017
 ms.assetid: 50ad597a-8598-42d3-82dd-fc7d702ebc37
-ms.openlocfilehash: ab49f76a0d5e7338a93e21ae9a8d1d9d74a21e82
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0dd4024b3f6a0ca0583de6bfbdb7463fab14d969
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91173443"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786008"
 ---
 # <a name="how-to-generate-customized-code-by-modifying-a-dbml-file"></a>Практическое руководство. Как генерировать настраиваемый код путем изменения DBML-файла
 
@@ -41,7 +42,7 @@ sqlmetal /namespace:nwind /code:nwind.vb /language:vb DBMLFile.dbml
 sqlmetal /namespace:nwind /code:nwind.cs /language:csharp DBMLFile.dbml  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Создание кода в LINQ to SQL](code-generation-in-linq-to-sql.md)
 - [SqlMetal.exe (средство создания кода)](../../../../tools/sqlmetal-exe-code-generation-tool.md)

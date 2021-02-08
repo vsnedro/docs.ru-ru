@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget:: GetThreadContext'
 title: Метод ICLRDataTarget::GetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type:
 - apiref
-ms.openlocfilehash: 35b7bff5d4d778a429ddc1dcd0206e6e8970ee4f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 210f4294aed31307557db419a0fb567cc71d4354
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785696"
 ---
 # <a name="iclrdatatargetgetthreadcontext-method"></a>Метод ICLRDataTarget::GetThreadContext
 
@@ -54,7 +55,7 @@ HRESULT GetThreadContext (
   
  Данные в `context` буфере должны быть в формате `CONTEXT` структуры Win32. Контекст задает зависящие от процессора данные регистров, поэтому определение `CONTEXT` структуры Win32 зависит от архитектуры процессора. Описание структуры Win32 см. в файле заголовка WinNT. h `CONTEXT` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод реализуется модулем записи отладчика.  
   
@@ -66,8 +67,8 @@ HRESULT GetThreadContext (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)

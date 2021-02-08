@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Емеморяваилабле
 title: Перечисление EMemoryAvailable
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 38e72a06-dbed-473b-a59b-7e0b3ea4f2af
 topic_type:
 - apiref
-ms.openlocfilehash: 6a8765bfd62a2e6543661804ab8d009ce19f8813
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fdb33b45c354d39b1a52fd815a44041b659181ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785452"
 ---
 # <a name="ememoryavailable-enumeration"></a>Перечисление EMemoryAvailable
 
@@ -43,7 +44,7 @@ typedef enum {
 |`eMemoryAvailableLow`|Доступно очень мало физической памяти.|  
 |`eMemoryAvailableNeutral`|Доступная физическая память не является нейтральной.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Это значение передается узлом в среду CLR с помощью вызова метода [ICLRMemoryNotificationCallback:: OnMemoryNotification](iclrmemorynotificationcallback-onmemorynotification-method.md) .  
   
@@ -55,8 +56,8 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)

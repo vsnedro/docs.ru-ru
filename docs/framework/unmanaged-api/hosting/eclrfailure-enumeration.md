@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еклрфаилуре
 title: Перечисление EClrFailure
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 37b95cce-9bfb-4ecf-a00b-33dcba782c67
 topic_type:
 - apiref
-ms.openlocfilehash: d2794b53ed17640413928b3af0d1ed3656e25f22
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f3a2270651e5b05d2d31ed90511b8eb05dd4d44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95675767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785592"
 ---
 # <a name="eclrfailure-enumeration"></a>Перечисление EClrFailure
 
@@ -48,10 +49,10 @@ typedef enum {
 |`FAIL_FatalRuntime`|Общеязыковая среда выполнения (CLR) больше не может выполнять управляемый код в процессе. Исходя этого, вызовы любых функций размещения возвращают значение HRESULT, равное HOST_E_CLRNOTAVAILABLE.|  
 |`FAIL_OrphanedLock`|Потоку не удалось снять блокировку после возврата из <xref:System.AppDomain> объекта. Узлу не удается установить этот сбой, чтобы привести к прерыванию потока.|  
 |`FAIL_StackOverflow`|Произошло переполнение стека.|  
-|`FAIL_AccessViolation`|Предпринята попытка чтения или записи в защищенную память. Не поддерживается в .NET Framework 4.|  
+|`FAIL_AccessViolation`|Предпринята попытка чтения или записи в защищенную память. Не поддерживается в платформа .NET Framework 4.|  
 |`FAIL_CodeContract`|Ошибка контракта кода. См. раздел [контракты кода](../../debug-trace-profile/code-contracts.md).|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Список значений [еполициактион](epolicyaction-enumeration.md) , которые узел может использовать для указания действий политики для условий сбоя, см. в описании метода [ICLRPolicyManager:: сетактиононфаилуре](iclrpolicymanager-setactiononfailure-method.md) . Дополнительные сведения о критических и некритических областях кода см. в разделе [еклроператион](eclroperation-enumeration.md).  
   
@@ -63,9 +64,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRPolicyManager](iclrpolicymanager-interface.md)
 - [Метод SetActionOnFailure](iclrpolicymanager-setactiononfailure-method.md)

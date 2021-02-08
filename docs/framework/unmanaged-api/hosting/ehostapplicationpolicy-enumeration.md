@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Ехостаппликатионполици
 title: Перечисление EHostApplicationPolicy
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0be52d90-1976-4bf7-9717-908833a8a78d
 topic_type:
 - apiref
-ms.openlocfilehash: a62bf0934159f2337a59020f366a299827068c30
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a9aa2910babe819658035869c10358fd24bf46db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785512"
 ---
 # <a name="ehostapplicationpolicy-enumeration"></a>Перечисление EHostApplicationPolicy
 
@@ -41,8 +42,8 @@ typedef enum _HostApplicationPolicy {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)

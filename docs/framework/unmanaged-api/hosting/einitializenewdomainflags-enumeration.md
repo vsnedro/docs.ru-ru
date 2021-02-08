@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении EInitializeNewDomainFlags
 title: Перечисление EInitializeNewDomainFlags
 ms.date: 03/30/2017
 api_name:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - EInitializeNewDomainFlags enumeration [.NET Framework hosting]
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-ms.openlocfilehash: 8350b507609e63c060cda08514200d386c37a6b3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b856d061e86c0c79b35f842975378307b79a37e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785469"
 ---
 # <a name="einitializenewdomainflags-enumeration"></a>Перечисление EInitializeNewDomainFlags
 
@@ -39,7 +40,7 @@ typedef enum {
 |`eInitializeNewDomainFlags_None`|Флаги отсутствуют.|  
 |`eInitializeNewDomainFlags_NoSecurityChanges`|Информирует среду CLR о том, что узел не будет вносить изменения в состояние безопасности домена приложения в <xref:System.AppDomainManager.InitializeNewDomain%2A> методе.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод [иклрдомаинманажер:: SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md) принимает параметр типа `EInitializeNewDomainFlags` .  
   
@@ -51,9 +52,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)
 - [Метод SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md)

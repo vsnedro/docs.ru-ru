@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget:: Сеттлсвалуе'
 title: Метод ICLRDataTarget::SetTLSValue
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4a2d6a24-749a-47ad-9f01-4517203d3f35
 topic_type:
 - apiref
-ms.openlocfilehash: d2eaab1f42eb04d8e9727220a08842ca75a2eadf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2432cd66f604575e35f171c98a0fb313c5ccd94e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723692"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785690"
 ---
 # <a name="iclrdatatargetsettlsvalue-method"></a>Метод ICLRDataTarget::SetTLSValue
 
@@ -47,7 +48,7 @@ HRESULT SetTLSValue (
  `value`  
  окне `CLRDATA_ADDRESS` Значение типа, указывающее значение, помещаемое в заданное расположение TLS.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод реализуется модулем записи отладчика.  
   
@@ -59,8 +60,8 @@ HRESULT SetTLSValue (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)

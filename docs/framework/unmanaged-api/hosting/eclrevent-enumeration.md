@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еклревент
 title: Перечисление EClrEvent
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154
 topic_type:
 - apiref
-ms.openlocfilehash: 5d6ec42da60a7b294177063b9f8bd5afbf352c62
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c2365d1a2fb0109bab9159c3af4e2da3a46de6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785605"
 ---
 # <a name="eclrevent-enumeration"></a>Перечисление EClrEvent
 
@@ -45,7 +46,7 @@ typedef enum {
 |`Event_MDAFired`|Указывает, что создано сообщение помощника по отладке управляемого кода (MDA).|  
 |`Event_StackOverflow`|Указывает, что произошла ошибка переполнения стека.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел может регистрировать обратные вызовы для любого из типов событий, описанных путем `EClrEvent` вызова методов интерфейса [ICLROnEventManager](iclroneventmanager-interface.md) . Узел получает указатель на этот интерфейс путем вызова метода [ICLRControl:: GetCLRManager](iclrcontrol-getclrmanager-method.md) .  
   
@@ -61,9 +62,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IActionOnCLREvent](iactiononclrevent-interface.md)
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)

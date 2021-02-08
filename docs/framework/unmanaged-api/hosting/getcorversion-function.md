@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Жеткорверсион
 title: Функция GetCORVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
 topic_type:
 - apiref
-ms.openlocfilehash: e7ef3f300c8cfa0c275d15913e171abe09385eea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 96899b2193be9307314dbc2afb7cd6d70d229cfe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785332"
 ---
 # <a name="getcorversion-function"></a>Функция GetCORVersion
 
 Возвращает номер версии общеязыковой среды выполнения (CLR), которая выполняется в текущем процессе.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -57,8 +58,8 @@ HRESULT GetCORVersion (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

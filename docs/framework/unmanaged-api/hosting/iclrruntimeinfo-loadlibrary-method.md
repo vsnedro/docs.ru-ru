@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: метод ICLRRuntimeInfo:: LoadLibrary'
 title: Метод ICLRRuntimeInfo::LoadLibrary
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 4517ada3-4417-4ac5-a150-73da7a87c686
 topic_type:
 - apiref
-ms.openlocfilehash: aa45c814568188a5fe93e3acd2514cb54bb0f984
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 47557934868c7c1b68b23bf4eded0e90705d7252
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785059"
 ---
 # <a name="iclrruntimeinfoloadlibrary-method"></a>Метод ICLRRuntimeInfo::LoadLibrary
 
-Загружает библиотеку .NET Framework из среды CLR, представленной интерфейсом [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .  
+Загружает библиотеку платформа .NET Framework из среды CLR, представленной интерфейсом [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .  
   
  Этот метод заменяет функцию [лоадлибраришим](loadlibraryshim-function.md) .  
   
@@ -54,9 +55,9 @@ HRESULT LoadLibrary(
 |E_POINTER|`pwzDllName` или `phndModule` равно null.|  
 |E_OUTOFMEMORY|Недостаточно памяти для выполнения запроса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Этот метод загружает только библиотеки DLL, входящие в распространяемый пакет .NET Framework. Он не может загружать сборки, созданные пользователем.  
+ Этот метод загружает только библиотеки DLL, входящие в распространяемый пакет платформа .NET Framework. Он не может загружать сборки, созданные пользователем.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -66,9 +67,9 @@ HRESULT LoadLibrary(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

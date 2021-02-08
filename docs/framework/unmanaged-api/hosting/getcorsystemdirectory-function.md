@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetCORSystemDirectory
 title: Функция GetCORSystemDirectory
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
 topic_type:
 - apiref
-ms.openlocfilehash: 21b01156afceb24ab5c132894fae6922d7b97e59
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 267736c2f8cdea03fbd9f77108a3d88193830ab4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785345"
 ---
 # <a name="getcorsystemdirectory-function"></a>Функция GetCORSystemDirectory
 
 Возвращает каталог установки среды CLR, который загружается в процесс. Каталог установки полностью квалифицирован, например "c:\windows\microsoft.net\framework\v1.0.3705".  
   
- Эта функция является устаревшей. Он заменяется методом [ICLRRuntimeInfo:: GetRuntimeDirectory](iclrruntimeinfo-getruntimedirectory-method.md) , предоставленным в .NET Framework 4.  
+ Эта функция является устаревшей. Он заменяется методом [ICLRRuntimeInfo:: GetRuntimeDirectory](iclrruntimeinfo-getruntimedirectory-method.md) , предоставленным в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -49,7 +50,7 @@ HRESULT GetCORSystemDirectory (
  `dwLength`  
  заполняет Число символов, возвращаемых в `pbuffer` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!CAUTION]
 > Не используйте эту функцию в процессах, работающих в среде CLR версии 4. Если на компьютере установлена более ранняя версия среды CLR, эта функция возвращает каталог установки для этой версии.  
@@ -62,8 +63,8 @@ HRESULT GetCORSystemDirectory (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Жетфилеверсион
 title: Функция GetFileVersion
 ms.date: 03/30/2017
 api_name:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: b3222c85-da88-4485-97d7-3a6ee3e8d358
 topic_type:
 - apiref
-ms.openlocfilehash: 57b30824c7849127f48d4da61872945366e7141e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7de19484f2f8123d61eb94e6a5ae09f56a3b5541
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785306"
 ---
 # <a name="getfileversion-function"></a>Функция GetFileVersion
 
 Возвращает сведения о версии среды CLR указанного файла, используя указанный буфер.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -58,8 +59,8 @@ HRESULT GetFileVersion (
   
  **Заголовок:** MSCorEE. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

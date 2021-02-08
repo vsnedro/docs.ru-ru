@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еклроператион
 title: Перечисление EClrOperation
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type:
 - apiref
-ms.openlocfilehash: c24e4557695d26666682ee385131abaab707a24d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9f75762a400955b5f36fb2a337f283e36a32658c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785566"
 ---
 # <a name="eclroperation-enumeration"></a>Перечисление EClrOperation
 
@@ -51,7 +52,7 @@ typedef enum {
 |`OPR_ThreadRudeAbortInCriticalRegion`|Узел может указывать действия политики, выполняемые при выполнении грубого прерывания потока в критической области кода.|  
 |`OPR_ThreadRudeAbortInNonCriticalRegion`|Узел может указать действия политики, которые должны выполняться, когда грубое прерывание потока происходит в некритической области кода.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Инфраструктура надежности среды CLR различает прерывания и сбои выделения ресурсов, происходящие в критических областях кода и происходящих в некритических областях кода. Это различие состоит в том, что узлы могут задавать разные политики в зависимости от того, где происходит сбой в коде.  
   
@@ -69,9 +70,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Перечисление EPolicyAction](epolicyaction-enumeration.md)

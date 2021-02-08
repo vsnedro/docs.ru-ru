@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <servicePrincipalName>'
 title: <servicePrincipalName>
 ms.date: 03/30/2017
 ms.assetid: 3f3b85d3-20f2-4cd8-8a6a-ee18befbd165
-ms.openlocfilehash: 0d03844a58de5b4af93f276de75c88af6efed3f8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 494368f1f47f10aac8009e47a9219966c87e5eda
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91153798"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786698"
 ---
 # \<servicePrincipalName>
 
@@ -52,7 +53,7 @@ ms.locfileid: "91153798"
 
  Клиент Secure Windows Communication Foundation (WCF), который подключается к конечной точке с этим удостоверением, использует имя субъекта-службы при выполнении проверки подлинности SSPI с конечной точкой.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>

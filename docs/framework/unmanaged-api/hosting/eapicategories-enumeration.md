@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еапикатегориес
 title: Перечисление EApiCategories
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
 topic_type:
 - apiref
-ms.openlocfilehash: f90e08373c0497201816bc7eead89b83b84be255
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 58a7d4fa4d0c965bf9158ad6713185782d4ae94a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95726877"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785631"
 ---
 # <a name="eapicategories-enumeration"></a>Перечисление EApiCategories
 
@@ -59,7 +60,7 @@ typedef enum {
 |`eSynchronization`|Указывает, что классы и члены среды CLR, которые позволяют коду пользователя удерживать блокировки, блокируются в частично доверенном коде.|  
 |`eUI`|Указывает, что управляемые классы и члены, которые разрешают или запрашивать взаимодействие с пользователем, блокируются в частично доверенном коде.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод [иклрхостпротектионманажер:: SetProtectedCategories](iclrhostprotectionmanager-setprotectedcategories-method.md) принимает параметр типа `EApiCategories` .  
   
@@ -73,9 +74,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRHostProtectionManager](iclrhostprotectionmanager-interface.md)
 - [Размещение перечислений](hosting-enumerations.md)

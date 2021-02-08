@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetRequestedRuntimeInfo
 title: Функция GetRequestedRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
 topic_type:
 - apiref
-ms.openlocfilehash: b120b854e1787824808dd64d95b0fa78ba6c9fa2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 63d0bdcd07be5727cddc0acc352e8358b5ff0090
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95705492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785293"
 ---
 # <a name="getrequestedruntimeinfo-function"></a>Функция GetRequestedRuntimeInfo
 
 Возвращает сведения о версии и каталоге о среде CLR, запрашиваемой приложением.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -90,11 +91,11 @@ HRESULT GetRequestedRuntimeInfo (
 |S_OK|Метод завершился успешно.|  
 |ERROR_INSUFFICIENT_BUFFER|Буфер каталога недостаточно велик для хранения пути к каталогу.<br /><br /> -или-<br /><br /> Буфер версии недостаточно велик для хранения строки версии.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetRequestedRuntimeInfo`Метод возвращает сведения времени выполнения о версии, загруженной в процесс, что не обязательно является последней версией, установленной на компьютере.  
   
- В .NET Framework версии 2,0 можно получить сведения о последней установленной версии с помощью `GetRequestedRuntimeInfo` метода следующим образом.  
+ В платформа .NET Framework версии 2,0 можно получить сведения о последней установленной версии с помощью `GetRequestedRuntimeInfo` метода следующим образом.  
   
 - Укажите для `pExe` `pwszVersion` параметров, и `pConfigurationFile` значение null.  
   
@@ -102,7 +103,7 @@ HRESULT GetRequestedRuntimeInfo (
   
  `GetRequestedRuntimeInfo`Метод не возвращает последнюю версию среды CLR в следующих случаях:  
   
-- Существует файл конфигурации приложения, указывающий загрузку определенной версии среды CLR. Обратите внимание, что .NET Framework будет использовать файл конфигурации, даже если для параметра указано значение NULL `pConfigurationFile` .  
+- Существует файл конфигурации приложения, указывающий загрузку определенной версии среды CLR. Обратите внимание, что платформа .NET Framework будет использовать файл конфигурации, даже если для параметра указано значение NULL `pConfigurationFile` .  
   
 - Метод [CorBindToRuntimeEx](corbindtoruntimeex-function.md) был вызван с указанием более ранней версии среды CLR.  
   
@@ -124,9 +125,9 @@ HRESULT GetRequestedRuntimeInfo (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)
 - [Функция GetVersionFromProcess](getversionfromprocess-function.md)

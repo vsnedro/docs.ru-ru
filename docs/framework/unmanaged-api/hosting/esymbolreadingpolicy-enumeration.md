@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Есимболреадингполици
 title: Перечисление ESymbolReadingPolicy
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
 topic_type:
 - apiref
-ms.openlocfilehash: 42ce1f02294db98c5c593a5f16de5226703d5f9d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e84c31343b589cb6019d88fafc9b94207c5f5892
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785423"
 ---
 # <a name="esymbolreadingpolicy-enumeration"></a>Перечисление ESymbolReadingPolicy
 
@@ -43,7 +44,7 @@ typedef enum {
 |`eSymbolReadingFullTrustOnly`|Указывает, что отладчик должен считывать только PDB-файлы, связанные со сборками с полным доверием.|  
 |`eSymbolReadingNever`|Указывает, что отладчик никогда не должен считывать PDB-файлы.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ESymbolReadingPolicy`Перечисление используется с методом [ICLRDebugManager:: SetSymbolReadingPolicy](iclrdebugmanager-setsymbolreadingpolicy-method.md) .  
   
@@ -55,8 +56,8 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Размещение перечислений](hosting-enumerations.md)

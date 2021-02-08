@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как указать имена баз данных
 title: Практическое руководство. Как указывать имена баз данных
 ms.date: 03/30/2017
 ms.assetid: b80f0fd2-7f75-45fe-9e12-496f80f183df
-ms.openlocfilehash: 82cb3f8f31af433b0299b4fec742b548d61921e4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 231c78830e009ed3414609eb6dbe05c3745f3e05
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197161"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785891"
 ---
 # <a name="how-to-specify-database-names"></a>Практическое руководство. Как указывать имена баз данных
 
@@ -23,7 +24,7 @@ ms.locfileid: "91197161"
   
 3. Установите для свойства <xref:System.Data.Linq.Mapping.DatabaseAttribute.Name%2A> значение имени, которое необходимо указать.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Модель объектов LINQ to SQL](the-linq-to-sql-object-model.md)
 - [Практическое руководство. Как настроить классы сущностей с помощью редактора кода](how-to-customize-entity-classes-by-using-the-code-editor.md)

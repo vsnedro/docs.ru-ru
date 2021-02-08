@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о том, как управлять объемом получаемых связанных данных.
 title: Практическое руководство. Как управлять объемом получаемых взаимосвязанных данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: efdc203e-3da9-4477-815e-54f10c3d7c6c
-ms.openlocfilehash: 77ac29eeeaa30ef438b635364dc8e883a0e4c158
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: becf1282d18d5c630da3e3be27c62ebae404d940
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91161338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786047"
 ---
 # <a name="how-to-control-how-much-related-data-is-retrieved"></a>Практическое руководство. Как управлять объемом получаемых взаимосвязанных данных
 
@@ -26,6 +27,6 @@ ms.locfileid: "91161338"
  [!code-csharp[System.Data.Linq.DataLoadOptions#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.dataloadoptions/cs/program.cs#2)]
  [!code-vb[System.Data.Linq.DataLoadOptions#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb/module1.vb#2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Запрос к базе данных](querying-the-database.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о типах данных и функциях
 title: Типы данных и функции
 ms.date: 03/30/2017
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
-ms.openlocfilehash: 456cf5acf42221379e68ff79ee57c084664e30e5
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 5a718d5fd4b110d35153e4486e42cee0b8a215bd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147766"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786151"
 ---
 # <a name="data-types-and-functions"></a>Типы данных и функции
 
@@ -18,21 +19,21 @@ ms.locfileid: "91147766"
 |Раздел|Описание|  
 |-----------|-----------------|  
 |[Сопоставление типов SQL-CLR](sql-clr-type-mapping.md)|Содержит таблицу с подробными сведениями о сопоставлении между типами CLR и типами SQL Server.|  
-|[Базовые типы данных](basic-data-types.md)|Суммирует различия в поведении .NET Framework.|  
-|[Логические типы данных](boolean-data-types.md)|Суммирует различия в поведении .NET Framework.|  
-|[Семантика NULL](null-semantics.md)|Приведены ссылки на разделы [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], посвященные обсуждению значений NULL и связанных с ними вопросов.|  
-|[Числовые операторы и операторы сравнения](numeric-and-comparison-operators.md)|Суммирует различия в поведении .NET Framework.|  
-|[Операторы последовательности](sequence-operators.md)|Суммирует различия в поведении .NET Framework.|  
-|[Методы System.Convert](system-convert-methods.md)|Суммирует различия в поведении .NET Framework.|  
+|[Базовые типы данных](basic-data-types.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Логические типы данных](boolean-data-types.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Семантика null](null-semantics.md)|Приведены ссылки на разделы [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], посвященные обсуждению значений NULL и связанных с ними вопросов.|  
+|[Числовые операторы и операторы сравнения](numeric-and-comparison-operators.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Операторы последовательности](sequence-operators.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Методы System.Convert](system-convert-methods.md)|Суммирует различия в поведении платформа .NET Framework.|  
 |[Методы System.DateTime](system-datetime-methods.md)|Описана поддержка в LINQ to SQL элементов структуры <xref:System.DateTime?displayProperty=nameWithType>.|  
 |[Методы System.DateTimeOffset](system-datetimeoffset-methods.md)|Описана поддержка в LINQ to SQL элементов структуры <xref:System.DateTimeOffset?displayProperty=nameWithType>.|  
-|[Методы System.Math](system-math-methods.md)|Суммирует различия в поведении .NET Framework.|  
-|[Методы System.Object](system-object-methods.md)|Суммирует различия в поведении .NET Framework.|  
-|[Методы System.String](system-string-methods.md)|Суммирует различия в поведении .NET Framework.|  
+|[Методы System.Math](system-math-methods.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Методы System.Object](system-object-methods.md)|Суммирует различия в поведении платформа .NET Framework.|  
+|[Методы System.String](system-string-methods.md)|Суммирует различия в поведении платформа .NET Framework.|  
 |[Методы System.TimeSpan](system-timespan-methods.md)|Описана поддержка в LINQ to SQL элементов структуры <xref:System.TimeSpan?displayProperty=nameWithType>.|  
 |[Неподдерживаемые функциональные возможности](unsupported-functionality.md)|Описаны функции, которые не поддерживаются в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Несоответствия типов SQL-CLR](sql-clr-type-mismatches.md)
 - [Ссылки](reference.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: OLE DB сопоставления типов данных'
 title: Сопоставления типов данных OLE DB
 ms.date: 03/30/2017
 ms.assetid: 04bcb259-59d3-4fd7-894d-4f0dd0c68069
-ms.openlocfilehash: 7f3b498e39feac4a6fe98e739793d20e0268b8f4
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8dd750754a67921437ca9b8fac751857961385cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150704"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786190"
 ---
 # <a name="ole-db-data-type-mappings"></a>Сопоставления типов данных OLE DB
 
-В следующей таблице показан тип выводимого .NET Framework для типов данных из .NET Framework поставщика данных для ADO и OLE DB ( <xref:System.Data.OleDb> ). Приведены также типизированные методы доступа для <xref:System.Data.OleDb.OleDbDataReader>.  
+В следующей таблице показан тип выводимого платформа .NET Framework для типов данных из платформа .NET Framework поставщика данных для ADO и OLE DB ( <xref:System.Data.OleDb> ). Приведены также типизированные методы доступа для <xref:System.Data.OleDb.OleDbDataReader>.  
   
-|Тип ADO|Тип OLE DB|Тип платформы .NET Framework|.NET Framework типизированный метод доступа|  
+|Тип ADO|Тип OLE DB|Тип платформы .NET Framework|Платформа .NET Framework типизированный метод доступа|  
 |--------------|-----------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------|  
 |adBigInt|DBTYPE_I8|Int64|GetInt64()|  
 |adBinary|DBTYPE_BYTES|Byte[]|GetBytes()|  
@@ -22,14 +23,14 @@ ms.locfileid: "91150704"
 |adChapter|DBTYPE_HCHAPTER|Поддерживается с помощью `DataReader`. См. раздел [Получение данных с помощью DataReader](retrieving-data-using-a-datareader.md).|GetValue()|  
 |adChar|DBTYPE_STR|Строка|GetString()|  
 |adCurrency|DBTYPE_CY|Decimal|GetDecimal()|  
-|adDate|DBTYPE_DATE|Дата/время|GetDateTime()|  
-|adDBDate|DBTYPE_DBDATE|Дата/время|GetDateTime()|  
-|adDBTime|DBTYPE_DBTIME|Дата/время|GetDateTime()|  
-|adDBTimeStamp|DBTYPE_DBTIMESTAMP|Дата/время|GetDateTime()|  
+|adDate|DBTYPE_DATE|DateTime|GetDateTime()|  
+|adDBDate|DBTYPE_DBDATE|DateTime|GetDateTime()|  
+|adDBTime|DBTYPE_DBTIME|DateTime|GetDateTime()|  
+|adDBTimeStamp|DBTYPE_DBTIMESTAMP|DateTime|GetDateTime()|  
 |adDecimal|DBTYPE_DECIMAL|Decimal|GetDecimal()|  
 |adDouble|DBTYPE_R8|Double|GetDouble()|  
 |adError|DBTYPE_ERROR|ExternalException|GetValue()|  
-|adFileTime|DBTYPE_FILETIME|Дата/время|GetDateTime()|  
+|adFileTime|DBTYPE_FILETIME|DateTime|GetDateTime()|  
 |adGUID|DBTYPE_GUID|Guid|GetGuid()|  
 |adIDispatch|DBTYPE_IDISPATCH *|Объект|GetValue()|  
 |adInteger|DBTYPE_I4|Int32|GetInt32()|  
@@ -50,7 +51,7 @@ ms.locfileid: "91150704"
   
  \* Для типов OLE DB `DBTYPE_IUNKNOWN` и `DBTYPE_IDISPATCH` ссылка на объект является упакованным представлением указателя.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)
 - [Общие сведения об ADO.NET](ado-net-overview.md)

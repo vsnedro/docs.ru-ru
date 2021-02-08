@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еклрунхандледексцептион
 title: Перечисление EClrUnhandledException
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d231044e-2b53-4836-93f9-8117ff0e5c3a
 topic_type:
 - apiref
-ms.openlocfilehash: bccd44e1bead4feadf67929dc104557715904577
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 088d448a92c4d9030208537b9c788477c85f9d37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95686479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785553"
 ---
 # <a name="eclrunhandledexception-enumeration"></a>Перечисление EClrUnhandledException
 
@@ -41,7 +42,7 @@ typedef enum {
 |`eRuntimeDeterminedPolicy`|Указывает, что происходит поведение по умолчанию. Процесс разорван.|  
 |`eHostDeterminedPolicy`|Указывает, что среда CLR не обрабатывает необработанные исключения и позволяет узлу определить дальнейшие действия.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы указать, что среда CLR работает как более ранние версии, используйте `eHostDeterminedPolicy` член.  
   
@@ -53,9 +54,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Перечисление EClrOperation](eclroperation-enumeration.md)

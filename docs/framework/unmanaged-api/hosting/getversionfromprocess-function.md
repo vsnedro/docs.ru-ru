@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetVersionFromProcess
 title: Функция GetVersionFromProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type:
 - apiref
-ms.openlocfilehash: da0d159da6eef7745c1fa7f7320d5e1355f6e413
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ab665d2984f79baf049009690b36782528094937
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95721885"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785254"
 ---
 # <a name="getversionfromprocess-function"></a>Функция GetVersionFromProcess
 
 Возвращает номер версии общеязыковой среды выполнения (CLR), связанной с указанным обработчиком процесса.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -72,9 +73,9 @@ HRESULT GetVersionFromProcess (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
 - [Функция GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)

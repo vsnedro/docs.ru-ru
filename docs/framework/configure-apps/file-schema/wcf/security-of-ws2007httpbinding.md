@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <security> о: <ws2007HttpBinding>'
 title: <security> из <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-ms.openlocfilehash: 48b49bf69f791f90ed5b2eea8e6d412438cd9519
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ef8b82d34b318db79db061b9c01b147e619d39c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91169847"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786815"
 ---
 # <a name="security-of-ws2007httpbinding"></a>\<security> из \<ws2007HttpBinding>
 
@@ -47,7 +48,7 @@ ms.locfileid: "91169847"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`mode`|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
+|`mode`|Используемых. Задает тип применяемого механизма обеспечения безопасности. Значение по умолчанию — `Message`.<br /><br /> Это атрибут типа <xref:System.ServiceModel.SecurityMode>.|  
   
 ## <a name="mode-attribute"></a>Атрибут Mode  
   
@@ -75,7 +76,7 @@ ms.locfileid: "91169847"
 
  Этот элемент предназначен для взаимодействия со службами, реализующими спецификации WS-*. Безопасность транспорта для этой привязки обеспечивается посредством протокола SSL по протоколам HTTP или HTTPS.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.WSHttpBinding.Security%2A>

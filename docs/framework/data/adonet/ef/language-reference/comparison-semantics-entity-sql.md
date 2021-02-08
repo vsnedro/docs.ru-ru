@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье семантика сравнения (Entity SQL)
 title: Семантика сравнения (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: b36ce28a-2fe4-4236-b782-e5f7c054deae
-ms.openlocfilehash: 9a36fcc4476c25d64fed670e857f339fb20043d8
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b1c832cb6f2903073b1c6be806c73823b1f4a220
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197837"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786437"
 ---
 # <a name="comparison-semantics-entity-sql"></a>Семантика сравнения (Entity SQL)
 
@@ -107,6 +108,6 @@ WHERE p1 != REF(p2)
   
  <sup>5</sup> Сравниваются все отдельные элементы ссылок (в том числе имя набора сущностей и все ключевые свойства типа сущности).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

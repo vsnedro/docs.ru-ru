@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: устаревшие функции размещения CLR'
 title: Устаревшие функции размещения CLR
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - .NET Framework 2.0, hosting global static functions
 - hosting global static functions [.NET Framework], version 2.0
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-ms.openlocfilehash: 9e19502672973f292991b72c7ea9b4fdc17f5707
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3d16b5829e29c5c963f4790bbb3be7adcaeedbfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673128"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785670"
 ---
 # <a name="deprecated-clr-hosting-functions"></a>Устаревшие функции размещения CLR
 
 В этом разделе описаны неуправляемые глобальные статические функции, которые использовались в предыдущих версиях API размещения.  
   
- За исключением функций инфраструктуры ( `_Cor*` функций), которые используются только .NET Framework, эти функции являются устаревшими в .NET Framework 4.  
+ За исключением функций инфраструктуры ( `_Cor*` функций), которые используются только платформа .NET Framework, эти функции являются устаревшими в платформа .NET Framework 4.  
   
 ## <a name="activation-functions"></a>Функции активации  
 
@@ -95,7 +96,7 @@ ms.locfileid: "95673128"
  Не рекомендуется. Запускает приложение по указанному сетевому пути, используя указанные манифесты и другие данные приложения.  
   
  [Функция CorMarkThreadInThreadPool](cormarkthreadinthreadpool-function.md)  
- Не рекомендуется. Помечает выполняющийся в данный момент поток пула потоков для выполнения управляемого кода. Начиная с версии .NET Framework 2,0 эта функция не действует. Он не является обязательным и может быть удален из кода.  
+ Не рекомендуется. Помечает выполняющийся в данный момент поток пула потоков для выполнения управляемого кода. Начиная с версии платформа .NET Framework 2,0 эта функция не действует. Он не является обязательным и может быть удален из кода.  
   
  [Функция CoUninitializeCor](couninitializecor-function.md)  
  Является устаревшей. Среду CLR нельзя выгрузить из процесса.  
@@ -122,7 +123,7 @@ ms.locfileid: "95673128"
  Не рекомендуется. Возвращает указатель на интерфейс, который позволяет среде CLR управлять удостоверениями.  
   
  [Функция LoadLibraryShim](loadlibraryshim-function.md)  
- Не рекомендуется. Загружает указанную версию .NET Framework DLL.  
+ Не рекомендуется. Загружает указанную версию платформа .NET Framework DLL.  
   
  [Функция LoadStringRC](loadstringrc-function.md)  
  Не рекомендуется. Преобразует значение HRESULT в сообщение об ошибке с помощью языка и региональных параметров по умолчанию текущего потока.  
@@ -144,7 +145,7 @@ ms.locfileid: "95673128"
   
 ## <a name="infrastructure-functions"></a>Функции инфраструктуры  
 
- Функции в этом разделе предназначены для использования только .NET Framework.  
+ Функции в этом разделе предназначены для использования только платформа .NET Framework.  
   
  [Функция _CorDllMain](cordllmain-function.md)  
  Инициализирует среду CLR, находит управляемую точку входа в заголовке CLR сборки DLL и начинает выполнение.  
@@ -161,6 +162,6 @@ ms.locfileid: "95673128"
  [Функция _CorValidateImage](corvalidateimage-function.md)  
  Проверяет образы управляемого модуля и уведомляет загрузчик операционной системы после их загрузки.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Глобальные статические функции размещения платформы .NET Framework 4](net-framework-4-hosting-global-static-functions.md)

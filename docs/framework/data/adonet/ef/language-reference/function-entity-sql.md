@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о функции: FUNCTION (Entity SQL)'
 title: FUNCTION (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-ms.openlocfilehash: 4e06b5bf8a2ca62630666ab3e8ba35f0425e3988
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: d61aafce03dc7b82b678f1eb107afb79c6c3ed2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91148039"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786320"
 ---
 # <a name="function-entity-sql"></a>FUNCTION (Entity SQL)
 
@@ -80,7 +81,7 @@ FUNCTION function-name
   
  [!code-sql[DP EntityServices Concepts#FUNCTION2](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function2)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Язык Entity SQL](entity-sql-language.md)

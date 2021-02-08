@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Дестройицеефилежен
 title: Функция DestroyICeeFileGen
 ms.date: 03/30/2017
 api_name:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
 topic_type:
 - apiref
-ms.openlocfilehash: 495d84470c559df13ea64b63dd00582f4335d4e3
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 14ae990999247b90f16b10115dea3408b965a04a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785657"
 ---
 # <a name="destroyiceefilegen-function"></a>Функция DestroyICeeFileGen
 
 Уничтожает объект [ицеефилежен](iceefilegen-class.md) .  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -46,7 +47,7 @@ HRESULT DestroyICeeFileGen (
 
  Этот метод возвращает стандартные коды ошибок COM.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `DestroyICeeFileGen` уничтожает `ICeeFileGen` объект, созданный функцией [креатеицеефилежен](createiceefilegen-function.md) .  
   
@@ -58,8 +59,8 @@ HRESULT DestroyICeeFileGen (
   
  **Библиотека:** MSCorPE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Устаревшие функции размещения CLR](deprecated-clr-hosting-functions.md)

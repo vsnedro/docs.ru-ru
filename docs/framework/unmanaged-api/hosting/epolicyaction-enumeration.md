@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Еполициактион
 title: Перечисление EPolicyAction
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 72dd76ba-239e-45ac-9ded-318fb07d6c6d
 topic_type:
 - apiref
-ms.openlocfilehash: 72b371d72b2f055f2840da5595d9022ffd7e2507
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fb66de2211972bd4d25ccfbab4965f315c0144a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95674753"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785475"
 ---
 # <a name="epolicyaction-enumeration"></a>Перечисление EPolicyAction
 
@@ -57,7 +58,7 @@ typedef enum {
 |`eThrowException`|Указывает, что должно быть создано исключение, соответствующее условию, например нехватки памяти, переполнение буфера и т. д.|  
 |`eUnloadAppDomain`|Указывает, что <xref:System.AppDomain> необходимо выгрузить. Среда CLR пытается запустить методы завершения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Узел задает действия политики, вызывая методы интерфейса [ICLRPolicyManager](iclrpolicymanager-interface.md) . Сведения о принудительном и корректном аварийном завершении см. в разделе Перечисление [еклроператион](eclroperation-enumeration.md) .  
   
@@ -69,9 +70,9 @@ typedef enum {
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисление EClrFailure](eclrfailure-enumeration.md)
 - [Интерфейс ICLRPolicyManager](iclrpolicymanager-interface.md)

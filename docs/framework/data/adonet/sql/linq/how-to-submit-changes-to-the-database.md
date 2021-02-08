@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как отправлять изменения в базу данных.
 title: Практическое руководство. Как отправить изменения в базу данных
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c7cba174-9d40-491d-b32c-f2d73b7e9eab
-ms.openlocfilehash: 5952cce5469d7a7e13e8b896f91ea1279fd62d8b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 31d85d94c74315a127b18bd41b4d1d1a7fe7d0b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91197044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785862"
 ---
 # <a name="how-to-submit-changes-to-the-database"></a>Практическое руководство. Как отправить изменения в базу данных
 
@@ -35,7 +36,7 @@ ms.locfileid: "91197044"
  [!code-csharp[DLinqSubmittingChanges#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#1)]
  [!code-vb[DLinqSubmittingChanges#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb/Module1.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Как обнаруживать и разрешать конфликты отправки](how-to-detect-and-resolve-conflicting-submissions.md)
 - [Практическое руководство. Как управлять конфликтами изменений](how-to-manage-change-conflicts.md)

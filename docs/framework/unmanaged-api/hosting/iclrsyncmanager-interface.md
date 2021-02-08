@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRSyncManager'
 title: Интерфейс ICLRSyncManager
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
 topic_type:
 - apiref
-ms.openlocfilehash: 5bfab21a36becf943b1813f266cf70c4b5e5b1d2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 188d1c913d75666aea09b17244012401d377fa10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785020"
 ---
 # <a name="iclrsyncmanager-interface"></a>Интерфейс ICLRSyncManager
 
@@ -42,9 +43,9 @@ ms.locfileid: "95690997"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread>
 - [Интерфейс IHostSyncManager](ihostsyncmanager-interface.md)

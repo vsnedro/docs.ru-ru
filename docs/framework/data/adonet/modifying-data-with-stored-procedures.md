@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: изменение данных с помощью хранимых процедур'
 title: Изменение данных с помощью хранимых процедур
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 7d8e9a46-1af6-4a02-bf61-969d77ae07e0
-ms.openlocfilehash: 65116a48533fd6ce86894c6a4522929285f8e1f0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 66a4aa9577c71605bde0152a142a65dfa81a31d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91150756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786229"
 ---
 # <a name="modifying-data-with-stored-procedures"></a>Изменение данных с помощью хранимых процедур
 
@@ -21,7 +22,7 @@ ms.locfileid: "91150756"
   
 ## <a name="example"></a>Пример  
 
- В примере используется следующая хранимая процедура для вставки новой категории в таблицу категорий **Northwind** **Categories** . Хранимая процедура принимает значение в столбце **CategoryName** в качестве входного параметра и использует функцию SCOPE_IDENTITY (), чтобы получить новое значение поля Identity, **CategoryID**и вернуть его в выходной параметр. Оператор RETURN использует @ROWCOUNT функцию @ для возврата количества вставленных строк.  
+ Пример использует следующую хранимую процедуру для вставки новой категории в таблицу **Northwind** **Categories**. Хранимая процедура принимает значение столбца **CategoryName** в качестве входного параметра и с помощью функции SCOPE_IDENTITY() получает новое значения поля идентификатора **CategoryID** и возвращает его в выходном параметре. Оператор RETURN использует @ROWCOUNT функцию @ для возврата количества вставленных строк.  
   
 ```sql
 CREATE PROCEDURE dbo.InsertCategory  
@@ -41,7 +42,7 @@ RETURN @@ROWCOUNT
  [!code-csharp[DataWorks SqlClient.SprocIdentityReturn#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.SprocIdentityReturn/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.SprocIdentityReturn#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.SprocIdentityReturn/VB/source.vb#1)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Извлечение и изменение данных в ADO.NET](retrieving-and-modifying-data.md)
 - [Объекты DataAdapter и DataReader](dataadapters-and-datareaders.md)

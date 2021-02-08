@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Жетрекуестедрунтимеверсион
 title: Функция GetRequestedRuntimeVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b
 topic_type:
 - apiref
-ms.openlocfilehash: 6c16b02a5ae323ba80d44937f322810022dfa9f5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 836cc4b875ddc427c6779950f5b68d2df8b6ef75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95711641"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785280"
 ---
 # <a name="getrequestedruntimeversion-function"></a>Функция GetRequestedRuntimeVersion
 
 Возвращает номер версии общеязыковой среды выполнения (CLR), запрошенной указанным приложением. Если эта версия не установлена, возвращает последнюю версию, установленную до запрошенной версии.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -71,9 +72,9 @@ HRESULT GetRequestedRuntimeVersion (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
 - [Функция GetVersionFromProcess](getversionfromprocess-function.md)
