@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <transport> о: <netNamedPipeBinding>'
 title: <transport> из <netNamedPipeBinding>
 ms.date: 03/30/2017
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d
-ms.openlocfilehash: 81c52405478d4c1ab5c65aab73f7feff61b879d0
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a54c429bcac192ddc46df7232c33ab98bd1a4c58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178025"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773489"
 ---
 # <a name="transport-of-netnamedpipebinding"></a>\<transport> из \<netNamedPipeBinding>
 
@@ -45,7 +46,7 @@ ms.locfileid: "91178025"
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -53,7 +54,7 @@ ms.locfileid: "91178025"
 |-------------|-----------------|  
 |[\<security>](security-of-netnamedpipebinding.md)|Определяет параметры безопасности для привязки.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.NamedPipeTransportSecurity>
 - <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>

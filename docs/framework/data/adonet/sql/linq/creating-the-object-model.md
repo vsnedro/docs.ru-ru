@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: создание объектной модели'
 title: Создание модели объектов
 ms.date: 03/30/2017
 ms.assetid: 27afce86-9b1d-45fb-8e0b-636bf671a236
-ms.openlocfilehash: 2191c29c0b2e56f9fdf7983bf96d2494867f318b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c258179274ddc02f78c161084042c3e0266cfb36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91164367"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773203"
 ---
 # <a name="creating-the-object-model"></a>Создание модели объектов
 
@@ -15,7 +16,7 @@ ms.locfileid: "91164367"
   
  При использовании Visual Studio можно использовать реляционный конструктор объектов для создания объектной модели.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Создание модели объектов на языке Visual Basic или C#](how-to-generate-the-object-model-in-visual-basic-or-csharp.md)  
  Описано, как применять средство командной строки SQLMetal. Также содержит ссылку на реляционный конструктор объектов для пользователей Visual Studio.  

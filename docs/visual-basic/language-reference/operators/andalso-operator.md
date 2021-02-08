@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор AndAlso (Visual Basic)'
 title: Оператор AndAlso
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operators [Visual Basic], conjunction
 - short-circuit evaluation
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
-ms.openlocfilehash: aff4621b8f415b9441ad1edf537b9b0736892bb8
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: dcf6c2685bf8f9ffee27b00543786cd3b315b327
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874845"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774269"
 ---
 # <a name="andalso-operator-visual-basic"></a>Оператор AndAlso (Visual Basic)
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о предложении Skip While (Visual Basic)
 title: Предложение Skip While
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Skip While clause [Visual Basic]
 - queries [Visual Basic], Skip While
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
-ms.openlocfilehash: af722f7aee021f244b411cdc61619b7de3c20607
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 6f2785fde1a62c10c914904ccba51510dbb1a041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773853"
 ---
 # <a name="skip-while-clause-visual-basic"></a>Предложение Skip While (Visual Basic)
 
@@ -50,7 +51,7 @@ Skip While expression
 - [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Запросы](index.md)
 - [Предложение SELECT](select-clause.md)
-- [Предложение FROM](from-clause.md)
+- [Предложение From](from-clause.md)
 - [Предложение Skip](skip-clause.md)
 - [Предложение Take While](take-while-clause.md)
 - [Предложение WHERE](where-clause.md)

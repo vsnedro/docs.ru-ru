@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Настройка операций вставки, обновления и удаления'
 title: Настройка операций вставки, обновления и удаления
 ms.date: 03/30/2017
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
-ms.openlocfilehash: 4b846d1e1f737cec85ecda75df5e3f66982def62
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 44bd76b61aff335019818b3c61040d10babe7301
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177349"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773216"
 ---
 # <a name="customizing-insert-update-and-delete-operations"></a>Настройка операций вставки, обновления и удаления
 
@@ -18,7 +19,7 @@ ms.locfileid: "91177349"
   
  В данном разделе описываются методы, представляемые [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], для настройки операций вставки, чтения, обновления и удаления в приложении.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Настройка операций: Обзор](customizing-operations-overview.md)  
  Содержит описание различных методов, представленных в [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], для настройки операций вставки, чтения, обновления и удаления в приложении.  

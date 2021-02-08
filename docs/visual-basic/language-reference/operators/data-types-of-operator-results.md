@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: типы данных результатов оператора (Visual Basic)'
 title: Типы данных результатов оператора
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - data types [Visual Basic], ranges
 - operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
-ms.openlocfilehash: f7a1249cec159f98ede48b960fadc5e2ff4a75f3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ebc99d5d735c30124feb52232e28a5fe6fe5fd50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867099"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773931"
 ---
 # <a name="data-types-of-operator-results-visual-basic"></a>Типы данных результатов оператора (Visual Basic)
 
@@ -50,7 +51,7 @@ Visual Basic определяет тип данных результата оп�
   
  Если один из операндов `+` операции,, `–` `*` , `/` или имеет значение, `Mod` `Decimal` а другой — нет `Single` или `Double` , Visual Basic расширяет другой операнд до `Decimal` . Он выполняет операцию в `Decimal` , а тип данных Result — `Decimal` .  
   
-## <a name="floating-point-arithmetic"></a>Арифметика с плавающей запятой  
+## <a name="floating-point-arithmetic"></a>Арифметические Floating-Point  
 
  Visual Basic выполняет большинство арифметических операций с плавающей запятой в [Double](../data-types/double-data-type.md), что является наиболее эффективным типом данных для таких операций. Однако если один операнд является [одиночным](../data-types/single-data-type.md) , а другой — нет `Double` , Visual Basic выполняет операцию в `Single` . Он расширяет каждый операнд по мере необходимости до соответствующего типа данных перед операцией, а результат имеет этот тип данных.  
   
@@ -159,7 +160,7 @@ Visual Basic определяет тип данных результата оп�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Not`|Логическое значение|SByte|Byte|Short|UShort|Целое число|UInteger|Long|ULong|  
+|`Not`|Логическое|SByte|Byte|Short|UShort|Целое число|UInteger|Long|ULong|  
   
  Если операнд имеет значение `Decimal` , `Single` , `Double` или `String` , Visual Basic пытается преобразовать его `Long` перед операцией, а тип данных Result — `Long` .  
   
@@ -170,7 +171,7 @@ Visual Basic определяет тип данных результата оп�
 |||||||||||  
 |---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Логическое значение|SByte|Short|Short|Целое число|Целое число|Long|Long|Long|  
+|`Boolean`|Логическое|SByte|Short|Short|Целое число|Целое число|Long|Long|Long|  
 |`SByte`|SByte|SByte|Short|Short|Целое число|Целое число|Long|Long|Long|  
 |`Byte`|Short|Short|Byte|Short|UShort|Целое число|UInteger|Long|ULong|  
 |`Short`|Short|Short|Short|Short|Целое число|Целое число|Long|Long|Long|  

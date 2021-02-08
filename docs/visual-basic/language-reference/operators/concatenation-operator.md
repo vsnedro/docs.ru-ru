@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об &amp; операторе: operator (Visual Basic)'
 title: Оператор &amp;
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - concatenation operators [Visual Basic], syntax
 - strings [Visual Basic], concatenating
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
-ms.openlocfilehash: 20c2e2088691e68221872cc1dfc5486413515a4d
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ba7c94805e805c841d05241fef557ca972a19ae9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90867150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774100"
 ---
 # <a name="amp-operator-visual-basic"></a>&amp; Оператор (Visual Basic)
 

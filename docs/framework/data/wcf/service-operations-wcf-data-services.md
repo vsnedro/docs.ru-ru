@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: операции службы (службы данных WCF)'
 title: Операции служб (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - service operations [WCF Data Services]
 - WCF Data Services, service operations
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
-ms.openlocfilehash: c254a7362c7bc28f4b38fc0189ae0ea763bc90cc
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: 3c811da86b1654f33675b46575d45884a6ba9b1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568848"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773099"
 ---
 # <a name="service-operations-wcf-data-services"></a>Операции служб (службы данных WCF)
 
-WCF Data Services позволяет определять операции службы в службе данных для предоставления методов на сервере. Как и остальные ресурсы службы данных, операции службы адресуются с помощью URI. Операции службы позволяют предоставлять бизнес-логику службы данных, например реализовывать логику проверки, применять правила безопасности на основе ролей и предоставлять специализированные возможности запросов. Операции службы представляют собой методы, добавленные в класс службы данных, производный от класса <xref:System.Data.Services.DataService%601>. Как и остальные ресурсы службы данных, методы операций службы поддерживают передачу параметров. Например, следующий универсальный код ресурса (URI) операции службы ( [на основе службы данных быстрого](quickstart-wcf-data-services.md) запуска) передает значение `London` в параметр `city`:
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+Службы данных WCF позволяет определять операции службы в службе данных для предоставления методов на сервере. Как и остальные ресурсы службы данных, операции службы адресуются с помощью URI. Операции службы позволяют предоставлять бизнес-логику службы данных, например реализовывать логику проверки, применять правила безопасности на основе ролей и предоставлять специализированные возможности запросов. Операции службы представляют собой методы, добавленные в класс службы данных, производный от класса <xref:System.Data.Services.DataService%601>. Как и остальные ресурсы службы данных, методы операций службы поддерживают передачу параметров. Например, следующий универсальный код ресурса (URI) операции службы (на основе [службы данных быстрого](quickstart-wcf-data-services.md) запуска) передает значение в `London` `city` параметр:
 
 ```http
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
@@ -30,7 +33,7 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
 
 Свойство <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> класса <xref:System.Data.Services.DataService%601> можно использовать для непосредственного обращения к источнику данных при работе со службой данных. Дополнительные сведения см. [в разделе инструкции. Определение операции службы](how-to-define-a-service-operation-wcf-data-services.md).
 
-Сведения о вызове операции службы из клиентского приложения .NET Framework см. в разделе [вызов операций службы](calling-service-operations-wcf-data-services.md).
+Сведения о вызове операции службы из клиентского приложения платформа .NET Framework см. в разделе [вызов операций службы](calling-service-operations-wcf-data-services.md).
 
 ## <a name="service-operation-requirements"></a>Требования к операциям службы
 
@@ -80,7 +83,7 @@ http://localhost:12345/Northwind.svc/GetOrdersByState?state='CA'&includeItems=tr
 
 |Допустимые типы возвращаемых значений|Правила URI|
 |------------------------|---------------|
-|`void` (`Nothing` в Visual Basic).<br /><br /> \- или -<br /><br /> Типы сущностей<br /><br /> \- или -<br /><br /> Примитивные типы|URI должен содержать один сегмент пути, представляющий собой имя операции службы. Параметры запросов не допускаются.|
+|`void` (`Nothing` в Visual Basic).<br /><br /> -или-<br /><br /> Типы сущностей<br /><br /> -или-<br /><br /> Примитивные типы|URI должен содержать один сегмент пути, представляющий собой имя операции службы. Параметры запросов не допускаются.|
 |<xref:System.Collections.Generic.IEnumerable%601>|URI должен содержать один сегмент пути, представляющий собой имя операции службы. Поскольку результат имеет тип, отличный от <xref:System.Linq.IQueryable%601>, параметры запросов не допускаются.|
 |<xref:System.Linq.IQueryable%601>|Допускаются сегменты пути запроса в дополнение к имени операции службы. Параметры запросов также допускаются.|
 
@@ -109,6 +112,6 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
 [!code-csharp[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#handleexceptions)]
 [!code-vb[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#handleexceptions)]
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Перехватчики](interceptors-wcf-data-services.md)

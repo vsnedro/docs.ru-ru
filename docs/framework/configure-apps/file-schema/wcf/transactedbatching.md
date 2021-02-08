@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <transactedBatching>'
 title: <transactedBatching>
 ms.date: 03/30/2017
 ms.assetid: 2f790a0d-8f03-4b86-81b5-ce1bc1a6c575
-ms.openlocfilehash: 6167a4ad56a9481a9f695b770605991a0a88d2d9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9a57226c3a2f2b026c69324e37b00e87fd3dd693
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399410"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773697"
 ---
 # \<transactedBatching>
 
@@ -32,9 +33,9 @@ ms.locfileid: "70399410"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
-|`maxBatchSize`|Целое число, указывающее максимальное число операций получения, которые могут быть объединены в одну транзакцию. Значение по умолчанию равно 0.|
+|`maxBatchSize`|Целое число, указывающее максимальное число операций получения, которые могут быть объединены в одну транзакцию. Значение по умолчанию — 0.|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -46,7 +47,7 @@ ms.locfileid: "70399410"
 |-------------|-----------------|
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Задает поведение конечной точки.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Транзакция, настроенная на попытки объединения в один пакет нескольких операций получения. Это позволяет избежать относительно высоких затрат ресурсов на создание и отправку транзакции для каждой операции получения.
 

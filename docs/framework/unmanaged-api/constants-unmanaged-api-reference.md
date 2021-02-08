@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константы (Справочник по неуправляемым API)'
 title: Константы (справочные сведения о неуправляемых API)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - native API reference [.NET Framework], constants
 - unmanaged API reference [.NET Framework], constants
 ms.assetid: 77526f65-b71c-4483-9d19-3a3751fd8a45
-ms.openlocfilehash: 19defe9c6c19bc04eb3c9ddaee386ef1ee409de5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 39641b4a98f921a3e8a004f536e0683cb81ab74e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95673934"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772800"
 ---
 # <a name="constants-unmanaged-api-reference"></a>Константы (справочные сведения о неуправляемых API)
 
@@ -33,7 +34,7 @@ ms.locfileid: "95673934"
 |CorSym_LanguageType_ILAssembly|Указывает код сборки кода на языке MSIL.|  
 |CorSym_LanguageType_JScript|Указывает язык JScript.|  
 |CorSym_LanguageType_SMC|Указывает на язык SMC.|  
-|CorSym_LanguageType_MCPlusPlus|Указывает язык C++, включенный для .NET Framework.|  
+|CorSym_LanguageType_MCPlusPlus|Указывает язык C++, включенный для платформа .NET Framework.|  
   
 ## <a name="language-vendor-constants"></a>Константы поставщика языка  
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <transport> о: <ws2007HttpBinding>'
 title: <transport> из <ws2007HttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0
-ms.openlocfilehash: 60e8758d653848176ca3f287e253bd7990e78470
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8c6890bc291458ba0849ab7a206487431b279576
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773437"
 ---
 # <a name="transport-of-ws2007httpbinding"></a>\<transport> из \<ws2007HttpBinding>
 
@@ -29,7 +30,7 @@ ms.locfileid: "91162053"
            realm="string" />
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  <xref:System.ServiceModel.HttpTransportSecurity>  
   
@@ -49,27 +50,27 @@ ms.locfileid: "91162053"
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|Отсутствуют|Режим безопасности отключен.|  
+|None|Режим безопасности отключен.|  
 |Basic|Используется обычная проверка подлинности.|  
 |Digest (дайджест)|Используется дайджест-проверка подлинности.|  
 |Ntlm|Используется проверка подлинности NTLM в качестве резервной в домене Windows.|  
 |Windows|Используется встроенная проверка подлинности Windows.|  
-|Сертификат|Для проверки подлинности клиента используются сертификаты X.509.|  
+|Certificate|Для проверки подлинности клиента используются сертификаты X.509.|  
   
 ## <a name="proxycredentialtype-attribute"></a>Атрибут proxyCredentialType  
   
 |Значение|Описание|  
 |-----------|-----------------|  
-|Отсутствуют|Режим безопасности отключен.|  
+|None|Режим безопасности отключен.|  
 |Basic|Используется обычная проверка подлинности.|  
 |Digest (дайджест)|Используется дайджест-проверка подлинности.|  
 |Ntlm|Используется проверка подлинности NTLM в качестве резервной в домене Windows.|  
 |Windows|Используется встроенная проверка подлинности Windows.|  
-|Сертификат|Для проверки подлинности клиента используются сертификаты X.509.|  
+|Certificate|Для проверки подлинности клиента используются сертификаты X.509.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -77,7 +78,7 @@ ms.locfileid: "91162053"
 |-------------|-----------------|  
 |[\<security>](security-of-ws2007httpbinding.md)|Представляет возможности безопасности [\<ws2007HttpBinding>](ws2007httpbinding.md) элемента.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>

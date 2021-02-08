@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <transport> о: <webHttpBinding>'
 title: <transport> из <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: b9efc732832a8862373b14f657796a59fb52c1a1
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: a845786f4e60a44dcb157201235d28d49ab8d40b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91162118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773450"
 ---
 # <a name="transport-of-webhttpbinding"></a>\<transport> из \<webHttpBinding>
 
@@ -41,7 +42,7 @@ ms.locfileid: "91162118"
 </webHttpBinding>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  <xref:System.ServiceModel.HttpTransportSecurity>  
   
@@ -89,7 +90,7 @@ ms.locfileid: "91162118"
 |-------------|-----------------|  
 |[\<security>](security-of-webhttpbinding.md)|Представляет возможности безопасности [\<wsHttpBinding>](wshttpbinding.md) элемента.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>
