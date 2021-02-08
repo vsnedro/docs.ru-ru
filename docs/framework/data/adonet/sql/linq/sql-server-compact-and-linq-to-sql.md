@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: SQL Server Compact и LINQ to SQL'
 title: SQL Server Compact и LINQ to SQL
 ms.date: 03/30/2017
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17
-ms.openlocfilehash: 7963db9e05eca7a7a148228c6d2fbca0221ca870
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ae7965db1685d7682b643662df8fb1c1376a7154
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91155683"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803715"
 ---
 # <a name="sql-server-compact-and-linq-to-sql"></a>SQL Server Compact и LINQ to SQL
 
@@ -45,6 +46,6 @@ SQL Server Compact — это база данных по умолчанию, у�
   
 - SQL Server Compact не поддерживает частичное доверие.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ссылки](reference.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <add> <declaredTypes> element'
 title: <add> элемента <declaredTypes>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - DataContractSerializer
 - DataContractAttribute
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
-ms.openlocfilehash: 9af47848b03074ec88f38a5884089bc50239ee50
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8e2be6e553ee5dc5c96bcae81d1c1c6bf609afed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91201672"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803988"
 ---
 # <a name="add-of-declaredtypes-element"></a>\<add> элемента \<declaredTypes>
 
@@ -79,7 +80,7 @@ ms.locfileid: "91201672"
 </add>
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - [Известные типы контрактов данных](../../../wcf/feature-details/data-contract-known-types.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: сериализация'
 title: Serialization2
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
-ms.openlocfilehash: 778cc73575ffc7421854fd89592f1c4eaa284678
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f4d9ecd63d4d15744fca4c6a6c61d9737cc8a196
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803780"
 ---
 # <a name="serialization"></a>Сериализация
 
@@ -34,7 +35,7 @@ ms.locfileid: "91203557"
   
 ### <a name="definitions"></a>Определения  
   
-- *Сериализатор DataContract*: сериализатор по умолчанию, используемый компонентом Windows Communication Framework (WCF) .NET Framework 3,0 или более поздних версий.  
+- *Сериализатор DataContract*: сериализатор по умолчанию, используемый компонентом Windows Communication Framework (WCF) платформа .NET Framework 3,0 или более поздних версий.  
   
 - *Однонаправленная сериализация*: сериализованная версия класса, которая содержит только одностороннее свойство взаимосвязи (во избежание цикла). По соглашению, для сериализации помечается свойство родительской стороны отношения «первичный ключ - внешний ключ». Другая сторона, участвующая в двунаправленном отношении, не сериализуется.  
   
@@ -77,7 +78,7 @@ ms.locfileid: "91203557"
  [!code-csharp[DLinqSerialization#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs/northwind-ser.cs#7)]
  [!code-vb[DLinqSerialization#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb/northwind-ser.vb#7)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные сведения](background-information.md)
 - [SqlMetal.exe (средство создания кода)](../../../../tools/sqlmetal-exe-code-generation-tool.md)

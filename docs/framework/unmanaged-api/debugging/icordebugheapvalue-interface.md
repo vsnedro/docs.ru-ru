@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugHeapValue'
 title: Интерфейс ICorDebugHeapValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
 topic_type:
 - apiref
-ms.openlocfilehash: ee3ea319360bba1a113c15daf8cf143ea512e5cd
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7c65cbce530f0d1f00d8610031fb604a0118ee29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803689"
 ---
 # <a name="icordebugheapvalue-interface"></a>Интерфейс ICorDebugHeapValue
 
@@ -30,9 +31,9 @@ ms.locfileid: "95733325"
 |Метод|Описание|  
 |------------|-----------------|  
 |[Метод CreateRelocBreakpoint](icordebugheapvalue-createrelocbreakpoint-method.md)|Не реализован.|  
-|[Метод IsValid](icordebugheapvalue-isvalid-method.md)|Возвращает значение, указывающее, является ли объект, представленный этим объектом `ICorDebugHeapValue` , допустимым или освобожденным сборщиком мусора. Этот метод не рекомендуется к использованию в .NET Framework версии 2,0.|  
+|[Метод IsValid](icordebugheapvalue-isvalid-method.md)|Возвращает значение, указывающее, является ли объект, представленный этим объектом `ICorDebugHeapValue` , допустимым или освобожденным сборщиком мусора. Этот метод не рекомендуется к использованию в платформа .NET Framework версии 2,0.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -45,8 +46,8 @@ ms.locfileid: "95733325"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

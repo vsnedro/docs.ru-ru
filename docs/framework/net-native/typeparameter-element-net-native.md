@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения об <TypeParameter> элементе: Element (.NET Native)'
 title: <TypeParameter> Элемент (.NET Native)
 ms.date: 03/30/2017
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
-ms.openlocfilehash: dc04115914b7571b677c6d069d2d4b820b895d59
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 182cd62dc0584991b8ef0f5757d6005173d6d7a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803650"
 ---
 # <a name="typeparameter-element-net-native"></a>\<TypeParameter> Элемент (.NET Native)
 
@@ -71,7 +72,7 @@ ms.locfileid: "96287674"
 |-------------|-----------------|  
 |[\<Method>](method-element-net-native.md)|Применяет политику отражения среды выполнения к конструктору или методу.|  
   
-## <a name="remarks"></a>Примечания  
+## <a name="remarks"></a>Remarks  
 
  `<TypeParameter>`Элемент аналогичен [\<Parameter>](parameter-element-net-native.md) элементу, за исключением того, что он может применяться только к параметрам типа <xref:System.Type> . Применяет политику, независимо от представленного типа во время выполнения по аргументу типа, указанному атрибутом `Name`.  
   

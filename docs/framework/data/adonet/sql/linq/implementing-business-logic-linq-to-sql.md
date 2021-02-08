@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: реализация бизнес-логики (LINQ to SQL)'
 title: Реализация бизнес-логики (LINQ to SQL)
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
-ms.openlocfilehash: 3d703f7a13f21947fb5d2b5adcac8ae4df6a1547
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 3f2b7085db3832f37da7520c8f75b6bc120125f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158374"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803884"
 ---
 # <a name="implementing-business-logic-linq-to-sql"></a>Реализация бизнес-логики (LINQ to SQL)
 
@@ -186,7 +187,7 @@ partial class Customer
   
  [Пошаговое руководство. Добавление проверки к классам сущностей](/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Разделяемые классы и методы](../../../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
 - [Разделяемые методы](../../../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсе ICorDebugStepper
 title: Интерфейс ICorDebugStepper
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 8b5bbb65034e5b715532397c9ecc650da9aee912
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a16df9d25b4d87b0638448c1fdf8fec4759261d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803598"
 ---
 # <a name="icordebugstepper-interface"></a>Интерфейс ICorDebugStepper
 
@@ -38,7 +39,7 @@ ms.locfileid: "95718297"
 |[Метод StepOut](icordebugstepper-stepout-method.md)|Приводит `ICorDebugStepper` к пошаговому вызову содержащего его потока и выполнению, когда текущий кадр возвращает управление вызывающему кадру.|  
 |[Метод StepRange](icordebugstepper-steprange-method.md)|Приводит `ICorDebugStepper` к пошаговому вызову содержащего его потока и возврату при достижении кода, находящегося за последним из указанных диапазонов.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugStepper`Интерфейс выполняет следующие задачи:  
   
@@ -63,8 +64,8 @@ ms.locfileid: "95718297"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

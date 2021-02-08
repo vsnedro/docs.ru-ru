@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <add> о: <contractTypeNames>'
 title: <add> из <contractTypeNames>
 ms.date: 03/30/2017
 ms.assetid: 03aff6be-5dfb-4a64-ada3-e36227cd43c7
-ms.openlocfilehash: 69a0bbbc8774251dbdc062875bb06453f355c882
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0708aa277b4250cb4134a98ddf7af661840981a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91149144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804001"
 ---
 # <a name="add-of-contracttypenames"></a>\<add> из \<contractTypeNames>
 
@@ -58,11 +59,11 @@ ms.locfileid: "91149144"
 |Атрибут|Описание|  
 |---------------|-----------------|  
 |name|Строка, в которой указано имя типа контракта.|  
-|namespace|Строка, в которой указано пространство имен типа контракта.|  
+|пространство имен|Строка, в которой указано пространство имен типа контракта.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -70,7 +71,7 @@ ms.locfileid: "91149144"
 |-------------|-----------------|  
 |[\<contractTypeNames>](contracttypenames.md)|Коллекция имен типа контракта.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

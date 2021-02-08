@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Поддержка наследования'
 title: Поддержка наследования
 ms.date: 03/30/2017
 ms.assetid: 19bb2794-b4e7-402e-8307-1d1517381a08
-ms.openlocfilehash: 7673e69458d5c1af854747c43ba463332a9cd588
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: ff6956441ab72f720151e42bd9358c8df1170e09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91158257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803871"
 ---
 # <a name="inheritance-support"></a>Поддержка наследования
 
@@ -19,6 +20,6 @@ ms.locfileid: "91158257"
   
  Разработчики, использующие Visual Studio, также могут использовать реляционный конструктор объектов для отображения иерархий наследования.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные сведения](background-information.md)

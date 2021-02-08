@@ -1,4 +1,5 @@
 ---
+description: 'См. Дополнительные сведения о методе ICorDebugRemoteTarget:: onhostname'
 title: Метод ICorDebugRemoteTarget::GetHostName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
 topic_type:
 - apiref
-ms.openlocfilehash: 3e946d8a27ec6b568b2f3c3633695c9f6795c938
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a24f34dd638c7031211c2185cd761af0aa24105e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803530"
 ---
 # <a name="icordebugremotetargetgethostname-method"></a>Метод ICorDebugRemoteTarget::GetHostName
 
@@ -55,7 +56,7 @@ HRESULT GetHostName (
  E_FAIL (или другие коды возврата E_)  
  Не удалось вернуть имя узла или IP-адрес.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод реализуется модулем записи отладчика. Он должен следовать парадигме нескольких вызовов: при первом вызове вызывающий объект передает значение NULL и `cchHostName` в `szHostName` , и `pcchHostName` возвращает размер требуемого буфера. При втором вызове передается размер, который был ранее возвращен `cchHostName` , и передается буфер соответствующего размера `szHostName` .  
   
@@ -67,9 +68,9 @@ HRESULT GetHostName (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 3,5 SP1  
+ **Платформа .NET Framework версии:** 3,5 SP1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)
