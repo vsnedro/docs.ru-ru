@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иксклрдатамесоддефинитион:: Енуминстанце'
 title: 'Метод Иксклрдатамесоддефинитион:: Енуминстанце'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: ae1ef2a3c8cf9e042ab9ab233ed993f8e36b2fce
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 4038dc4706b8362acaf9c13abd9c7326cce376a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790364"
 ---
 # <a name="ixclrdatamethoddefinitionenuminstance-method"></a>Метод Иксклрдатамесоддефинитион:: Енуминстанце
 
@@ -45,7 +46,7 @@ HRESULT EnumInstance(
 `instance`\
 заполняет Перечислимый экземпляр.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `IXCLRDataMethodDefinition` интерфейса и соответствует шестому слоту таблицы виртуального метода.
 
@@ -54,9 +55,9 @@ HRESULT EnumInstance(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Перечисление Клрдатасаурцетипе](clrdatasourcetype-enumeration.md)
 - [Отладка](index.md)

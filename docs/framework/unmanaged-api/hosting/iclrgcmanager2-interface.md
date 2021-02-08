@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRGCManager2'
 title: Интерфейс ICLRGCManager2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4b5ffd7b-9ad7-41cd-9bba-34030ae3da7e
 topic_type:
 - apiref
-ms.openlocfilehash: d2873b5e1f8229e8a16dfaacf1c9737ac47405bb
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 455b3a99d10fa43bf325e9f7075d255dd55ae38b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95672803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789961"
 ---
 # <a name="iclrgcmanager2-interface"></a>Интерфейс ICLRGCManager2
 
@@ -31,7 +32,7 @@ ms.locfileid: "95672803"
 |------------|-----------------|  
 |[Метод SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md)|Задает размер сегмента сборки мусора и максимальный размер поколения 0 для системы сборки мусора. Включает поколение 0 и размеры сегментов, превышающие `DWORD` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот интерфейс наследуется от [интерфейса иклргкманажер](iclrgcmanager-interface.md).  
   
@@ -45,9 +46,9 @@ ms.locfileid: "95672803"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)
 - [Структура COR_GC_STATS](cor-gc-stats-structure.md)

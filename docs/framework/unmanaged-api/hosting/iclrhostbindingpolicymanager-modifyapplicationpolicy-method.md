@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRHostBindingPolicyManager:: ModifyApplicationPolicy'
 title: Метод ICLRHostBindingPolicyManager::ModifyApplicationPolicy
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type:
 - apiref
-ms.openlocfilehash: 8da9c9fea5cf5b3a27eeb9d0222f0845c832b7da
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3f7d992f4b7d24233da175814f991106bb97a937
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714202"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789935"
 ---
 # <a name="iclrhostbindingpolicymanagermodifyapplicationpolicy-method"></a>Метод ICLRHostBindingPolicyManager::ModifyApplicationPolicy
 
@@ -76,7 +77,7 @@ HRESULT  ModifyApplicationPolicy (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ModifyApplicationPolicy`Метод можно вызвать дважды. Первый вызов должен предоставить значение NULL для `pbNewApplicationPolicy` параметра. Этот вызов возвратит с требуемым значением для `pcbNewAppPolicySize` . Второй вызов должен предоставить это значение для `pcbNewAppPolicySize` и указать буфер этого размера для `pbNewApplicationPolicy` .  
   
@@ -88,8 +89,8 @@ HRESULT  ModifyApplicationPolicy (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)

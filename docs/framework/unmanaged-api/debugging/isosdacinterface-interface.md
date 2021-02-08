@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ИсосдаЦинтерфаце'
 title: Интерфейс ISOSDacInterface
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: c9b4e6e5b36fe38b6c0ea78f6d1848d155008bcc
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: ddb99b7c6fca6870024f04933861d01e4b31ea9e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420972"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790403"
 ---
 # <a name="isosdacinterface-interface"></a>Интерфейс ISOSDacInterface
 
@@ -36,7 +37,7 @@ ms.locfileid: "83420972"
 | [GetMethodDescPtrFromIP](isosdacinterface-getmethoddescptrfromip-method.md) | Получает указатель MethodDesc, соответствующий методу, содержащему указанный адрес собственной инструкции. |
 | [GetModuleData](isosdacinterface-getmoduledata-method.md)| Извлекает данные, соответствующие модулю, загруженному по указанному адресу. |
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Этот интерфейс находится внутри среды выполнения и не предоставляется через все файлы заголовков или библиотек. Однако это COM-интерфейс, производный от `IUnknown` GUID `436f00f2-b42a-4b9f-870c-e73db66ae930` , который можно получить с помощью стандартных механизмов com.
 
@@ -45,9 +46,9 @@ ms.locfileid: "83420972"
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

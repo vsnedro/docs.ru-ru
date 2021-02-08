@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrstrongname:: StrongNameSignatureVerificationEx'
 title: Метод ICLRStrongName::StrongNameSignatureVerificationEx
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbd2f662-208b-4174-b301-5c99af91040f
 topic_type:
 - apiref
-ms.openlocfilehash: 9caeb72c57260012ae2b459950bf19d907da1d98
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 0e1692d7151e09a621b93823424b3ac10b6607d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789766"
 ---
 # <a name="iclrstrongnamestrongnamesignatureverificationex-method"></a>Метод ICLRStrongName::StrongNameSignatureVerificationEx
 
@@ -51,7 +52,7 @@ HRESULT StrongNameSignatureVerificationEx (
 
  `S_OK` значение, если проверка прошла успешно; в противном случае — значение HRESULT, указывающее на сбой (см. раздел [Общие значения HRESULT](/windows/win32/seccrypto/common-hresult-values) для списка).  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Метод [метод iclrstrongname:: StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md) предоставляет такую возможность, как метод [метод iclrstrongname:: StrongNameSignatureVerification](iclrstrongname-strongnamesignatureverification-method.md) . Однако второй входной параметр и выходной параметр для [метод iclrstrongname:: StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md) имеют тип, `BOOLEAN` а не `DWORD` .  
   
@@ -63,9 +64,9 @@ HRESULT StrongNameSignatureVerificationEx (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureVerification](iclrstrongname-strongnamesignatureverification-method.md)
 - [Интерфейс ICLRStrongName](iclrstrongname-interface.md)

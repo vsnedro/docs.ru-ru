@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ИсосдаЦинтерфаце:: Жетмесоддескптрфромип'
 title: 'Метод ИсосдаЦинтерфаце:: Жетмесоддескптрфромип'
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: c3de9e5ffe23a13c126343c6f74f042bf1239609
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 8d7c7071b7b3fc520faea71c8d7792317745cfde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790416"
 ---
 # <a name="isosdacinterfacegetmethoddescptrfromip-method"></a>Метод ИсосдаЦинтерфаце:: Жетмесоддескптрфромип
 
@@ -45,7 +46,7 @@ HRESULT GetMethodDescPtrFromIP(
 `ppMD`\
 заполняет Адрес `MethodDesc` для конкретного метода.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью [ `ISOSDacInterface` интерфейса](isosdacinterface-interface.md) и соответствует слоту 22 таблицы виртуальных методов.
 
@@ -54,9 +55,9 @@ HRESULT GetMethodDescPtrFromIP(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс ISOSDacInterface](isosdacinterface-interface.md)

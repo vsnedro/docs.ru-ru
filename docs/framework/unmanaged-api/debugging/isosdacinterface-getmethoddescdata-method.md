@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ИсосдаЦинтерфаце:: Жетмесоддескдата'
 title: 'Метод ИсосдаЦинтерфаце:: Жетмесоддескдата'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 105149d0abf312c33a8498e7428e3a8b23d6ae7d
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: a1284aa4d810ed9d6db7ad3c1b471702b1dad54d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790429"
 ---
 # <a name="isosdacinterfacegetmethoddescdata-method"></a>Метод ИсосдаЦинтерфаце:: Жетмесоддескдата
 
@@ -61,7 +62,7 @@ HRESULT GetMethodDescData(
 `pcNeededRevertedRejitData`\
 заполняет Число байтов, необходимое для хранения данных, связанных с возвращенными версиями ReJit.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Предоставленный метод является частью `ISOSDacInterface` интерфейса и соответствует 21-сегменту таблицы виртуального метода. Чтобы иметь возможность использовать их, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) необходимо определить как 64-разрядное целое число без знака.
 
@@ -70,9 +71,9 @@ HRESULT GetMethodDescData(
 **Платформы:** см. раздел [Требования к системе](../../get-started/system-requirements.md).  
 **Заголовок:** None  
 **Библиотека:** None  
-**.NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Отладка](index.md)
 - [Интерфейс ISOSDacInterface](isosdacinterface-interface.md)

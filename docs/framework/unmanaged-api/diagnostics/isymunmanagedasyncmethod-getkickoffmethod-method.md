@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Исимунманажедасинкмесод:: GetKickoffMethod'
 title: Метод ISymUnmanagedAsyncMethod::GetKickoffMethod
 ms.date: 03/30/2017
 ms.assetid: ba084444-9e68-4cde-9388-54b950670987
-ms.openlocfilehash: 2d4515087812b2b7c9303228ac5e5bbf34e8aa91
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c763109ac8556fd7941675f98879c6a1792e8bc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95707195"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790299"
 ---
 # <a name="isymunmanagedasyncmethodgetkickoffmethod-method"></a>Метод ISymUnmanagedAsyncMethod::GetKickoffMethod
 
@@ -33,6 +34,6 @@ HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);
 
  **Заголовок:** Корсим. idl, Корсим. h  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ISymUnmanagedAsyncMethod](isymunmanagedasyncmethod-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRAssemblyIdentityManager:: Жетреференцедассемблиесфромфиле'
 title: Метод ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eed63d31-d977-4c7d-9443-f9d37a2a7d81
 topic_type:
 - apiref
-ms.openlocfilehash: 6b67ba9d022d94f51d7cc6a4645855f6b6ac3e19
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 46b2f392746c6e23e2a8a11aded5eacd8f5a597b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95679327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790063"
 ---
 # <a name="iclrassemblyidentitymanagergetreferencedassembliesfromfile-method"></a>Метод ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile
 
@@ -62,7 +63,7 @@ HRESULT GetReferencedAssembliesFromFile (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Если метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызывающий объект может исключить набор известных ссылок на сборки из возвращенного списка. Этот набор определяется `pExcludeAssembliesList` параметром.  
   
@@ -74,9 +75,9 @@ HRESULT GetReferencedAssembliesFromFile (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Интерфейс ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)

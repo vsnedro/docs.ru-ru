@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRMemoryNotificationCallback:: OnMemoryNotification'
 title: Метод ICLRMemoryNotificationCallback::OnMemoryNotification
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5612a44d-56cc-4f34-af31-8c9809ba9431
 topic_type:
 - apiref
-ms.openlocfilehash: f9b2715801ebcaff3d97962540a4b1b103bbd53b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 92041c433fa82bb63afda7968eb8c6e1fa72acb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789919"
 ---
 # <a name="iclrmemorynotificationcallbackonmemorynotification-method"></a>Метод ICLRMemoryNotificationCallback::OnMemoryNotification
 
@@ -50,7 +51,7 @@ HRESULT OnMemoryNotification (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR регистрирует обратный вызов с `OnMemoryNotification` помощью вызова метода [IHostMemoryManager:: RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md) . Среда выполнения использует сведения, возвращаемые при обратном вызове, чтобы освободить дополнительную память, когда узел сообщает, что ресурсы памяти имеют низкий уровень.  
   
@@ -65,9 +66,9 @@ HRESULT OnMemoryNotification (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Метод RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md)

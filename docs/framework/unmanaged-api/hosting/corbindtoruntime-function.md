@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции CorBindToRuntime
 title: Функция CorBindToRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type:
 - apiref
-ms.openlocfilehash: 426e95281b648217642ca06f04dfbd9ec991221e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 727abdccd692a431960d293404025cf9ccc1d7ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790091"
 ---
 # <a name="corbindtoruntime-function"></a>Функция CorBindToRuntime
 
 Позволяет неуправляемым узлам загружать среду CLR в процесс.  
   
- Эта функция является устаревшей в .NET Framework 4.  
+ Эта функция является устаревшей в платформа .NET Framework 4.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -45,7 +46,7 @@ HRESULT CorBindToRuntime (
  `pwszVersion`  
  окне Строка, описывающая версию среды CLR, которую требуется загрузить.  
   
- Номер версии в .NET Framework состоит из четырех частей, разделенных точками: *основной. дополнительный. сборка. Редакция*. Строка, передаваемая как, `pwszVersion` должна начинаться с символа "v", за которым следуют первые три части номера версии (например, "v 1.0.1529").  
+ Номер версии в платформа .NET Framework состоит из четырех частей, разделенных точками: *основной. дополнительный. сборка. Редакция*. Строка, передаваемая как, `pwszVersion` должна начинаться с символа "v", за которым следуют первые три части номера версии (например, "v 1.0.1529").  
   
  Некоторые версии среды CLR устанавливаются с инструкцией политики, которая определяет совместимость с предыдущими версиями среды CLR. По умолчанию оболочка запуска выполняет проверку на `pwszVersion` соответствие инструкциям политики и загружает последнюю версию среды выполнения, совместимую с запрашиваемой версией. Узел может заставить оболочку пропускать вычисление политики и загружать точную версию, указанную в `pwszVersion` , передав значение  `STARTUP_LOADER_SAFEMODE` для `flags` параметра, как описано ниже.  
   
@@ -65,7 +66,7 @@ HRESULT CorBindToRuntime (
  `ppv`  
  заполняет Возвращаемый указатель интерфейса в `riid` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `pwszVersion` указывает несуществующую версию среды выполнения, `CorBindToRuntimeEx` ВОЗВРАЩАЕТ значение HRESULT, равное CLR_E_SHIM_RUNTIMELOAD.  
   
@@ -85,7 +86,7 @@ HRESULT CorBindToRuntime (
   
      Режим совместимости версии 1 применяется ко всему процессу и всем доменам приложения в процессе.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  [CorBindToRuntimeEx](corbindtoruntimeex-function.md) и `CorBindToRuntime` выполните ту же операцию, но `CorBindToRuntimeEx` функция позволяет устанавливать флаги для указания поведения среды CLR.  
   
@@ -97,9 +98,9 @@ HRESULT CorBindToRuntime (
   
  **Библиотека:** MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Функция CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Функция CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRMetaHostPolicy:: GetRequestedRuntime'
 title: Метод ICLRMetaHostPolicy::GetRequestedRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 59ec1832-9cc1-4b5c-983d-03407e51de56
 topic_type:
 - apiref
-ms.openlocfilehash: 37167b7a9aefa6cd9d5e4df043e8bbc1b0514261
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0e11694b0cb66ad7fc28abf7bb9f7fc8c6931a19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504125"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789844"
 ---
 # <a name="iclrmetahostpolicygetrequestedruntime-method"></a>Метод ICLRMetaHostPolicy::GetRequestedRuntime
 
@@ -57,7 +58,7 @@ HRESULT GetRequestedRuntime(
 |`riid`|окне Указывает идентификатор интерфейса IID_ICLRRuntimeInfo для запрошенного интерфейса [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .|
 |`ppRuntime`|заполняет При `GetRequestedRuntime` возврате содержит указатель на соответствующий интерфейс [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) .|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 После успешного завершения этого метода имеет место его побочный эффект в виде объединения дополнительных флагов с текущими флагами запуска по умолчанию из возвращенного интерфейса среды выполнения тогда и только тогда, когда один или несколько из следующих элементов существуют в потоке конфигурации в разделе `<configuration><runtime>`.
 
@@ -73,7 +74,7 @@ HRESULT GetRequestedRuntime(
 
 Этот метод возвращает следующие конкретные результаты HRESULT, а также ошибки HRESULT, которые указывают на сбой метода.
 
-|HRESULT|Описание|
+|HRESULT|Описание:|
 |-------------|-----------------|
 |S_OK|Метод завершился успешно.|
 |E_POINTER|`pwzVersion` не равен NULL, а `pcchVersion` равен NULL.<br /><br /> -или-<br /><br /> `pwzImageVersion` не равен NULL, а `pcchImageVersion` равен NULL.|
@@ -87,9 +88,9 @@ HRESULT GetRequestedRuntime(
 
 **Заголовок:** Метахост. h
 
-**Библиотека:** Включается в качестве ресурса в библиотеку MSCorEE. dll
+**Библиотека:** Включается в качестве ресурса в MSCorEE.dll
 
-**.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+**Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
 ## <a name="see-also"></a>См. также
 

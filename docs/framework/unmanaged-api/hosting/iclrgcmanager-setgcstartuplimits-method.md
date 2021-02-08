@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Иклргкманажер:: Сетгкстартуплимитс'
 title: Метод ICLRGCManager::SetGCStartupLimits
 ms.date: 03/30/2017
 api_name:
@@ -15,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 1c8d9959-95b5-4131-be4a-556d97774014
 topic_type:
 - apiref
-ms.openlocfilehash: 169d344975762b97f89e8dc32d72f2b9c95fea11
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5614b41cfd7a7938cdb653d879119ddbd9560b9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95678185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789987"
 ---
 # <a name="iclrgcmanagersetgcstartuplimits-method"></a>Метод ICLRGCManager::SetGCStartupLimits
 
 Задает размер сегмента сборки мусора и максимальный размер поколения 0 для системы сборки мусора.  
   
 > [!IMPORTANT]
-> Начиная с .NET Framework 4,5 можно задать размер сегмента и максимальный размер поколения 0 в значениях, превышающих `DWORD` использование метода [ICLRGCManager2:: SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md) .  
+> Начиная с платформа .NET Framework 4,5 можно задать размер сегмента и максимальный размер поколения 0 в значениях, превышающих `DWORD` использование метода [ICLRGCManager2:: SetGCStartupLimitsEx](iclrgcmanager2-setgcstartuplimitsex-method.md) .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -61,7 +62,7 @@ HRESULT SetGCStartupLimits (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значения, которые `SetGCStartupLimits` задаются, можно указать только один раз. Последующие вызовы метода `SetGCStartupLimits` игнорируются.  
   
@@ -73,9 +74,9 @@ HRESULT SetGCStartupLimits (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Автоматическое управление памятью](../../../standard/automatic-memory-management.md)
 - [Сборка мусора](../../../standard/garbage-collection/index.md)

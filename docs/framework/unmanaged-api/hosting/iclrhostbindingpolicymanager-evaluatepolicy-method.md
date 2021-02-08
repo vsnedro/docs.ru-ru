@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRHostBindingPolicyManager:: EvaluatePolicy'
 title: Метод ICLRHostBindingPolicyManager::EvaluatePolicy
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type:
 - apiref
-ms.openlocfilehash: 9840217abdf8b3e1d0917b7447572b6860c181c8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e92126a8c12d03ee21e4867754b1a418ef11d463
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789974"
 ---
 # <a name="iclrhostbindingpolicymanagerevaluatepolicy-method"></a>Метод ICLRHostBindingPolicyManager::EvaluatePolicy
 
@@ -72,7 +73,7 @@ HRESULT EvaluatePolicy (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `EvaluatePolicy`Метод позволяет основному приложению влиять на политику привязки, чтобы обеспечить соответствие требованиям к версии сборки, относящейся к конкретному узлу. Сам модуль политики остается внутри среды CLR.  
   
@@ -84,8 +85,8 @@ HRESULT EvaluatePolicy (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md)
