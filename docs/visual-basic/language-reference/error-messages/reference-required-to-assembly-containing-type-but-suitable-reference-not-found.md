@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC30969: требуется ссылка на сборку " <assemblyidentity> ", содержащую тип " <typename> ", но подходящая ссылка не может быть найдена из-за неоднозначности между проектами " <projectname1> " и "<projectname2>'
 title: Требуется ссылка на сборку <assemblyidentity>, содержащую тип <typename>, но подходящую ссылку не удалось найти из-за неоднозначности между проектами <projectname1> и <projectname2>
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30969
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
-ms.openlocfilehash: ca574bfe926b7b9df272e296190b36f8635263db
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 945a6558ff9eea20a28bc27da27e495d0eddfb15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792041"
 ---
 # <a name="bc30969-reference-required-to-assembly-assemblyidentity-containing-type-typename-but-a-suitable-reference-could-not-be-found-due-to-ambiguity-between-projects-projectname1-and-projectname2"></a>BC30969: требуется ссылка на сборку " \<assemblyidentity> ", содержащую тип " \<typename> ", но подходящая ссылка не может быть найдена из-за неоднозначности между проектами " \<projectname1> " и " \<projectname2> "
 
@@ -30,7 +31,7 @@ ms.locfileid: "92162314"
 
 2. В свойствах проекта добавьте ссылку на файл, содержащий сборку, определяющую используемый тип.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Управление ссылками в проекте](/visualstudio/ide/managing-references-in-a-project)
 - [References to Declared Elements](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)

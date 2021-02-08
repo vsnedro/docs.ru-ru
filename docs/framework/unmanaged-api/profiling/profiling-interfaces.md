@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: интерфейсы профилирования'
 title: Профилирующие интерфейсы
 ms.date: 04/10/2018
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - profiling interfaces [.NET Framework]
 - interfaces [.NET Framework profiling]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.openlocfilehash: dd6999e9f9e16264bde3cf62ce3a888841347607
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d35931c0caad93116d7ea26d29020d84e48ebc29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95727475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798931"
 ---
 # <a name="profiling-interfaces"></a>Профилирующие интерфейсы
 
 В этом разделе описываются неуправляемые интерфейсы, позволяющие профилировать программу, выполняемую в среде CLR.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Интерфейс ICLRProfiling](iclrprofiling-interface.md)  
  Предоставляет метод [AttachProfiler](iclrprofiling-attachprofiler-method.md) , который позволяет профилировщику присоединяться к выполняющемуся процессу.  
@@ -65,7 +66,7 @@ ms.locfileid: "95727475"
  Расширяет интерфейс `ICorProfilerInfo` методами, поддерживаемыми платформой .NET Framework 2.0 и более поздних версий.  
   
  [Интерфейс ICorProfilerInfo3](icorprofilerinfo3-interface.md)  
- Расширяет `ICorProfilerInfo2` интерфейс с помощью методов, поддерживаемых в .NET Framework 4 и более поздних версий.  
+ Расширяет `ICorProfilerInfo2` интерфейс с помощью методов, поддерживаемых в платформа .NET Framework 4 и более поздних версий.  
   
  [Интерфейс ICorProfilerInfo4](icorprofilerinfo4-interface.md)  
  Предоставляет методы, которые используются профилировщиками кода для взаимодействия со средой CLR с целью управления отслеживанием событий и для запроса сведений.  
@@ -91,7 +92,7 @@ ms.locfileid: "95727475"
  [Интерфейс IMethodMalloc](imethodmalloc-interface.md)  
  Предоставляет метод [выделения](imethodmalloc-alloc-method.md) для выделения памяти для нового текста функции MSIL.  
   
-## <a name="related-sections"></a>Связанные разделы  
+## <a name="related-sections"></a>См. также  
 
  [Общие сведения о профилировании](profiling-overview.md)  
   

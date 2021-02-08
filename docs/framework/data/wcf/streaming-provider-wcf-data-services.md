@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о поставщике потоковой передачи (службы данных WCF)
 title: Потоковый поставщик (службы WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +11,16 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 9ed728fa8d1d56c835aa27645a28921aa4f641e9
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: a87cd0764156e803bf30520160b54f6baaf4f644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90544457"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791742"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>Потоковый поставщик (службы WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Служба данных может обеспечивать доступ к данным больших двоичных объектов. Эти двоичные данные могут представлять видео- и аудиопотоки, изображения, файлы документов или двоичные данные медиаресурсов других типов. Когда сущность в модели данных включает одно или несколько двоичных свойств, служба данных возвращает двоичные данные в кодировке base-64 в записи в канале ответа. Поскольку загрузка и сериализация больших двоичных данных подобным образом может повлиять на производительность, Open Data Protocol (OData) определяет механизм извлечения двоичных данных независимо от сущности, к которой он принадлежит. Это достигается отделением двоичных данных от сущности с последующим разделением их на один или несколько потоков данных.
 
@@ -25,7 +28,7 @@ ms.locfileid: "90544457"
 
 - Запись медиассылки — это сущность, содержащая ссылку на соответствующий поток медиаресурса.
 
-С помощью WCF Data Services вы определяете поток двоичных ресурсов, реализуя поставщик потоковых данных. Реализация поставщика потоковой передачи предоставляет службе данных поток ресурсов мультимедиа, связанный с определенной сущностью в качестве <xref:System.IO.Stream> объекта. Эта реализация позволяет службе данных принимать и возвращать медиаресурсы по протоколу HTTP в виде потоков двоичных данных с указанным типом MIME.
+С помощью службы данных WCF вы определяете поток двоичных ресурсов, реализуя поставщик потоковых данных. Реализация поставщика потоковой передачи предоставляет службе данных поток ресурсов мультимедиа, связанный с определенной сущностью в качестве <xref:System.IO.Stream> объекта. Эта реализация позволяет службе данных принимать и возвращать медиаресурсы по протоколу HTTP в виде потоков двоичных данных с указанным типом MIME.
 
 Настройка службы данных для поддержки потоков двоичных данных состоит из следующих этапов.
 
@@ -79,7 +82,7 @@ ms.locfileid: "90544457"
 
 ## <a name="creating-the-streaming-data-service"></a>Создание потоковой службы данных
 
-Чтобы предоставить среде выполнения WCF Data Services доступ к <xref:System.Data.Services.Providers.IDataServiceStreamProvider> реализации, создаваемая служба данных должна также реализовать <xref:System.IServiceProvider> интерфейс. В следующем примере показана реализация метода <xref:System.IServiceProvider.GetService%2A>, который возвращает экземпляр класса `PhotoServiceStreamProvider`, реализующего <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
+Чтобы предоставить среде выполнения службы данных WCF доступ к <xref:System.Data.Services.Providers.IDataServiceStreamProvider> реализации, создаваемая служба данных должна также реализовать <xref:System.IServiceProvider> интерфейс. В следующем примере показана реализация метода <xref:System.IServiceProvider.GetService%2A>, который возвращает экземпляр класса `PhotoServiceStreamProvider`, реализующего <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
@@ -99,7 +102,7 @@ ms.locfileid: "90544457"
 
 ## <a name="using-data-streams-in-a-client-application"></a>Использование потоков данных в клиентском приложении
 
-Клиентская библиотека WCF Data Services позволяет получать и обновлять эти ресурсы как двоичные потоки на клиенте. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).
+Клиентская библиотека службы данных WCF позволяет получать и обновлять эти ресурсы как двоичные потоки на клиенте. Дополнительные сведения см. в разделе [Работа с двоичными данными](working-with-binary-data-wcf-data-services.md).
 
 ## <a name="considerations-for-working-with-a-streaming-provider"></a>Вопросы по работе с потоковым поставщиком
 

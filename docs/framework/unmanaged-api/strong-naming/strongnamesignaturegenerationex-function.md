@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameSignatureGenerationEx
 title: Функция StrongNameSignatureGenerationEx
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9a75469e-aa49-4e32-ad48-3bafd5202f09
 topic_type:
 - apiref
-ms.openlocfilehash: 96dae519d73505a30c8593e9883da7338525ea2c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e4d35cf51df6047d3a89d4146ceb8bf62e3f1b8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798879"
 ---
 # <a name="strongnamesignaturegenerationex-function"></a>Функция StrongNameSignatureGenerationEx
 
@@ -78,7 +79,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Укажите значение NULL для `wszFilePath` , чтобы вычислить размер подписи без создания подписи.  
   
@@ -98,9 +99,9 @@ BOOLEAN StrongNameSignatureGenerationEx (
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureGenerationEx](../hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)
 - [Метод StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md)

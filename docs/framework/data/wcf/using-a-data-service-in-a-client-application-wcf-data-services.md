@@ -1,18 +1,21 @@
 ---
+description: 'Дополнительные сведения о: использование службы данных в клиентском приложении (службы данных WCF)'
 title: Использование служб данных в клиентском приложении (службы данных WCF)
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, client library
 - WCF Data Services, getting started
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
-ms.openlocfilehash: b921e78c1b3d3d90d9ac8b4a459df496cf6d14dd
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: f16b927a00aae55a3cb95630fc5d75a1c4c9e238
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91180586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791729"
 ---
 # <a name="using-a-data-service-in-a-client-application-wcf-data-services"></a>Использование служб данных в клиентском приложении (службы данных WCF)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Вы можете получить доступ к службе, предоставляющей канал Open Data Protocol (OData), предоставив универсальный код ресурса (URI) для веб-браузера. URI предоставляет адрес ресурса, и сообщения запроса отправляются по этим адресам для доступа или изменения базовых данных, представляемых ресурсом. Браузер выдает команду HTTP GET и возвращает запрошенный ресурс в качестве веб-канала OData. Дополнительные сведения см. в разделе [доступ к службе из веб-браузера](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
   
@@ -50,13 +53,13 @@ ms.locfileid: "91180586"
   
 ## <a name="accessing-and-changing-data-using-client-libraries"></a>Доступ и изменения данных с помощью клиентских библиотек  
 
- WCF Data Services включает клиентские библиотеки, которые позволяют более просто использовать веб-канал OData из .NET Framework и клиентских приложений на основе Silverlight. Эти библиотеки упрощают отправку и получение сообщений HTTP. Кроме того, они преобразуют полезные данные сообщений в объекты CLR, представляющие данные сущностей. Клиентские библиотеки содержат два базовых класса: <xref:System.Data.Services.Client.DataServiceContext> и <xref:System.Data.Services.Client.DataServiceQuery%601>. Эти классы позволяют отправлять запросы к службе данных и работать с возвращенными данными сущностей как с объектами CLR. Дополнительные сведения см. в разделе [WCF Data Services Client Library](wcf-data-services-client-library.md) и [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95)).  
+ Службы данных WCF включает клиентские библиотеки, которые позволяют более просто использовать веб-канал OData из платформа .NET Framework и клиентских приложений на основе Silverlight. Эти библиотеки упрощают отправку и получение сообщений HTTP. Кроме того, они преобразуют полезные данные сообщений в объекты CLR, представляющие данные сущностей. Клиентские библиотеки содержат два базовых класса: <xref:System.Data.Services.Client.DataServiceContext> и <xref:System.Data.Services.Client.DataServiceQuery%601>. Эти классы позволяют отправлять запросы к службе данных и работать с возвращенными данными сущностей как с объектами CLR. Дополнительные сведения см. в разделе [службы данных WCF Client Library](wcf-data-services-client-library.md) и [службы данных WCF (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95)).  
   
  Для добавления ссылки на службу данных можно использовать диалоговое окно **Добавление ссылки на службу** в Visual Studio. Эта программа запрашивает метаданные службы у упомянутой службы данных и формирует контекст <xref:System.Data.Services.Client.DataServiceContext>, который представляет службу данных, а также клиентские классы службы данных, которые представляют сущности. Дополнительные сведения см. [в разделе Создание клиентской библиотеки службы данных](generating-the-data-service-client-library-wcf-data-services.md).  
   
  Существуют доступные библиотеки программирования, которые можно использовать для использования веб-канала OData в других типах клиентских приложений. Дополнительные сведения о пакете OData SDK см. в разделе [пример кода для ODATA SDK](https://www.odata.org/ecosystem/#sdk).
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Доступ к ресурсам служб данных](accessing-data-service-resources-wcf-data-services.md)
 - [Краткое руководство](quickstart-wcf-data-services.md)

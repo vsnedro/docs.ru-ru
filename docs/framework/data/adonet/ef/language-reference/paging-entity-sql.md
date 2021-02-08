@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: разбиение на страницы (Entity SQL)'
 title: Разбивка на страницы (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: ba4f334d-03e5-4a7b-9d42-628f4639b9a2
-ms.openlocfilehash: 42f685e0b84109f3099b501b2a75e681af1ea1bb
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c32474b772be359dbf2ffd46e5489cc0b4b2abb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791859"
 ---
 # <a name="paging-entity-sql"></a>Разбивка на страницы (Entity SQL)
 
@@ -21,13 +22,13 @@ ms.locfileid: "91177479"
 
  Предложения SKIP и LIMIT являются частью предложения ORDER BY. Если в предложении ORDER BY имеется вложенное предложение SKIP, результаты будут отсортированы в соответствии со спецификацией сортировки, а результирующий набор будет включать строку или строки, начиная со строки, следующей непосредственно за значением выражения SKIP. Например, SKIP 5 пропустит первые пять строк и возвратит все, начиная с шестой. Если в предложении ORDER BY имеется подчиненное выражение LIMIT, результаты запроса будут отсортированы в соответствии со спецификацией сортировки, а количество строк в наборе будет ограничено выражением LIMIT. Например, LIMIT 5 ограничит результирующий набор пятью экземплярами строк. Предложения SKIP и LIMIT необязательно использовать вместе: в предложение ORDER BY можно включить только SKIP или только LIMIT. Дополнительные сведения см. в следующих разделах:  
   
-- [SKIP](skip-entity-sql.md)  
+- [СРАЗУ](skip-entity-sql.md)  
   
 - [Размер](limit-entity-sql.md)  
   
 - [ORDER BY](order-by-entity-sql.md)  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по Entity SQL](entity-sql-reference.md)
 - [Общие сведения об Entity SQL](entity-sql-overview.md)

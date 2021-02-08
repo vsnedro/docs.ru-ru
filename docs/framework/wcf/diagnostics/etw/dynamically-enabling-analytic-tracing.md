@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: динамическое включение аналитической трассировки'
 title: Динамическое включение аналитического отслеживания
 ms.date: 03/30/2017
 ms.assetid: 58b63cfc-307a-427d-b69d-9917ff9f44ac
-ms.openlocfilehash: 2c213507f6ed4e9fff4f1385b10f22e96b0a41b4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 5fff4da8839b986ccb43a2280d6f994f31be7423
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96282357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798827"
 ---
 # <a name="dynamically-enabling-analytic-tracing"></a>Динамическое включение аналитического отслеживания
 
@@ -33,11 +34,11 @@ ms.locfileid: "96282357"
 |`EndToEndMonitoring`|Для поддержки трассировки потока сообщений используются события.|  
 |`Troubleshooting`|Более детализированные события относительно точек расширения WCF.|  
   
- Вторая группа ключевых слов определяет, какой компонент .NET Framework выдал событие.  
+ Вторая группа ключевых слов определяет, какой компонент платформа .NET Framework выдал событие.  
   
 |Ключевое слово|Описание|  
 |-------------|-----------------|  
-|`UserEvents`|События, генерируемые пользовательским кодом, а не .NET Framework.|  
+|`UserEvents`|События, генерируемые пользовательским кодом, а не платформа .NET Framework.|  
 |`ServiceModel`|События, созданные средой выполнения WCF.|  
 |`ServiceHost`|События, которые созданы узлом службы.|  
 |`WCFMessageLogging`|События ведения журнала сообщений WCF.|  
