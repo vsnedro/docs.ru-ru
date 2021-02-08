@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: тип данных UShort (Visual Basic)'
 title: Тип данных UShort
 ms.date: 01/31/2018
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - UShort data type
 - US literal type characters [Visual Basic]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-ms.openlocfilehash: ee31156e00059699125fd72a7f091afbb21beab0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9c709e2110aef4281c348f697408044a191314c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415483"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774984"
 ---
 # <a name="ushort-data-type-visual-basic"></a>Тип данных UShort (Visual Basic)
 
 Содержит 16-разрядные (2-байтные) целые числа без знака в диапазоне от 0 до 65 535.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
  Используйте `UShort` тип данных для хранения двоичных данных, размер которых слишком велик `Byte` .  
   
@@ -70,11 +71,11 @@ Dim number = &H_5826us
   
 - **Расширяющие.** `UShort`Тип данных расширяется до `Integer` ,,,,, `UInteger` `Long` `ULong` `Decimal` `Single` и `Double` . Это означает, что можно преобразовать `UShort` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.  
   
-- **Символы типа.** При добавлении символов типа литерала `US` к литералу он применяет его к `UShort` типу данных. `UShort`не имеет символа типа идентификатора.  
+- **Символы типа.** При добавлении символов типа литерала `US` к литералу он применяет его к `UShort` типу данных. `UShort` не имеет символа типа идентификатора.  
   
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.UInt16?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.UInt16>
 - [Типы данных](index.md)

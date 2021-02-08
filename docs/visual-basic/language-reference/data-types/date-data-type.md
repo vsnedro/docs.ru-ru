@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о типе данных Date (Visual Basic)
 title: Тип данных Date
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - literals [Visual Basic], Date
 - '# specifier for Date literals'
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
-ms.openlocfilehash: 46c25e14db56d4cc3c6d59ec7649b37c35676e2e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6ea6aa99339d13824477bba99ecd211f826a3ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775023"
 ---
 # <a name="date-data-type-visual-basic"></a>Тип данных Date (Visual Basic)
 
 Содержит 64-разрядные (8-байтные) значения IEEE, представляющие даты в диапазоне от 1 января 0001 года до 31 декабря 9999 года и время от 00:00:00 (полночь) до 23:59:9999999. Каждое приращение представляет 100 наносекунд затраченного времени с начала 1 января 1 года по григорианскому календарю. Максимальное значение представляет 100 наносекунд перед началом 1 января 10 000 года.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Используйте тип данных `Date`, содержащий значения даты, времени или даты и времени.
 
@@ -42,7 +43,7 @@ ms.locfileid: "84387430"
 
 ## <a name="workarounds"></a>Методы обхода проблемы
 
-Для преобразования литерала `Date` в формат языкового стандарта или пользовательский формат, передайте литерал функции <xref:Microsoft.VisualBasic.Strings.Format%2A>, указав стандартный или пользовательский формат даты. Это продемонстрировано в следующем примере.
+Для преобразования литерала `Date` в формат языкового стандарта или пользовательский формат, передайте литерал функции <xref:Microsoft.VisualBasic.Strings.Format%2A>, указав стандартный или пользовательский формат даты. В следующем примере это показано.
 
 ```vb
 MsgBox("The formatted date is " & Format(#5/31/1993#, "dddd, d MMM yyyy"))
@@ -70,7 +71,7 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 
 - **Вопросы взаимодействия.** При взаимодействие с компонентами, которые не написаны для платформы .NET Framework (например, автоматизация или COM-объекты), необходимо помнить, что в других средах типы даты и времени несовместимы с типом `Date` Visual Basic. Если вы передаете аргумент даты и времени такому компоненту, объявите его `Double`, а не как `Date` в новом коде Visual Basic и используйте методы преобразования <xref:System.DateTime.FromOADate%2A?displayProperty=nameWithType> и <xref:System.DateTime.ToOADate%2A?displayProperty=nameWithType>.
 
-- **Символы типа.** `Date`не имеет символа типа литерала или символа типа идентификатора. Однако компилятор обрабатывает литералы, заключенные в решетки (`# #`), как `Date`.
+- **Символы типа.** `Date` не имеет символа типа литерала или символа типа идентификатора. Однако компилятор обрабатывает литералы, заключенные в решетки (`# #`), как `Date`.
 
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.DateTime?displayProperty=nameWithType>.
 
@@ -82,7 +83,7 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 Dim someDateAndTime As Date = #8/13/2002 12:14 PM#
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - [Типы данных](index.md)
