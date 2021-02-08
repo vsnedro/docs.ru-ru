@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ihostsyncmanager:: CreateCrst'
 title: Метод IHostSyncManager::CreateCrst
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ac278cc8-2540-4a6c-b5c6-b90c3970b4f4
 topic_type:
 - apiref
-ms.openlocfilehash: 27861a9258916f4c188d981c44833e5be4c507f2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7d1880f1553d159f62efe65afe8368a60b5bf9cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784812"
 ---
 # <a name="ihostsyncmanagercreatecrst-method"></a>Метод IHostSyncManager::CreateCrst
 
@@ -51,7 +52,7 @@ HRESULT CreateCrst (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной критической секции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Объекты критических секций обеспечивают синхронизацию, аналогичную той, которая предоставляется объектом Mutex, за исключением того, что критические разделы могут использоваться только потоками одного процесса. `CreateCrst` отражает функцию Win32 `InitializeCriticalSection` .  
   
@@ -63,9 +64,9 @@ HRESULT CreateCrst (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostCrst](ihostcrst-interface.md)

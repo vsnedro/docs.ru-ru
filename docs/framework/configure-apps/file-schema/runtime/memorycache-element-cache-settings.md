@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о <memoryCache> элементе: Element (параметры кэша)'
 title: Элемент <memoryCache> (параметры кэша)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - caching [.NET Framework], configuration
 - memoryCache element
 ms.assetid: 182a622f-f7cf-472d-9d0b-451d2fd94525
-ms.openlocfilehash: 14480682c5d221216df5da3844897855d1d92a0d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1d46a156a222a0dc54e27cf56a5eb06cb1a908be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782342"
 ---
 # <a name="memorycache-element-cache-settings"></a>Элемент \<memoryCache> (параметры кэша)
 
@@ -31,7 +32,7 @@ ms.locfileid: "91192429"
 </memoryCache>  
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Тип  
 
  Класс<xref:System.Runtime.Caching.MemoryCache> .  
   
@@ -58,8 +59,8 @@ ms.locfileid: "91192429"
   
 |Элемент|Описание|  
 |-------------|-----------------|  
-|[\<configuration>](../configuration-element.md)|Указывает корневой элемент в каждом файле конфигурации, который используется средой CLR и .NET Framework приложениями.|  
-|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Содержит типы, позволяющие реализовать кэширование вывода в приложениях, встроенных в .NET Framework.|  
+|[\<configuration>](../configuration-element.md)|Указывает корневой элемент в каждом файле конфигурации, который используется средой CLR и платформа .NET Framework приложениями.|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Содержит типы, позволяющие реализовать кэширование вывода в приложениях, встроенных в платформа .NET Framework.|  
   
 ## <a name="remarks"></a>Remarks  
 
@@ -96,7 +97,7 @@ ms.locfileid: "91192429"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Runtime.Caching.MemoryCache>
 - [\<system.runtime.caching> Элемент (параметры кэша)](system-runtime-caching-element-cache-settings.md)

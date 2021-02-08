@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Метод IMetaDataEmit:: GetSaveSize'
 title: Метод IMetaDataEmit::GetSaveSize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8aea2e2c-23a3-4cda-9a06-e19f97383830
 topic_type:
 - apiref
-ms.openlocfilehash: 5cb202f5284c1c18545ec750b2fa0f04d4b0d2e2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 871e9f911eaaf1b1a7259466402e492d75aa7fb8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783941"
 ---
 # <a name="imetadataemitgetsavesize-method"></a>Метод IMetaDataEmit::GetSaveSize
 
@@ -49,7 +50,7 @@ HRESULT GetSaveSize (
  `pdwSaveSize`  
  заполняет Указатель на размер, необходимый для сохранения файла.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `GetSaveSize` Вычисляет пространство, необходимое в байтах, для сохранения сборки и всех ее метаданных в текущей области. (Вызов метода [IMetaDataEmit:: саветостреам](imetadataemit-savetostream-method.md) приведет к порождению этого числа байтов.)  
   
@@ -65,9 +66,9 @@ HRESULT GetSaveSize (
   
  **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

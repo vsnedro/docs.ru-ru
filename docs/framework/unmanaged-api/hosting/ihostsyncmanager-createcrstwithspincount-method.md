@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ihostsyncmanager:: Креатекрствисспинкаунт'
 title: Метод IHostSyncManager::CreateCrstWithSpinCount
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type:
 - apiref
-ms.openlocfilehash: 6b2f57c7147cc8ff2abff848bd1e4661c2f5e728
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3c43f1a3d52eb7174844ecb4079cf54413f20853
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682889"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784825"
 ---
 # <a name="ihostsyncmanagercreatecrstwithspincount-method"></a>Метод IHostSyncManager::CreateCrstWithSpinCount
 
@@ -55,7 +56,7 @@ HRESULT CreateCrstWithSpinCount (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной критической секции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Счетчик прокрутки используется только в многопроцессорной системе. Число счетчиков указывает, сколько раз вызывающий поток должен прокрутить перед выполнением операции ожидания семафора, связанного с недоступным критическим разделом. Если критическая секция будет свободна во время операции Spin, вызывающий поток не будет выполнять операцию ожидания. `CreateCrstWithSpinCount` отражает функцию Win32 `InitializeCriticalSectionAndSpinCount` .  
   
@@ -67,9 +68,9 @@ HRESULT CreateCrstWithSpinCount (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostSemaphore](ihostsemaphore-interface.md)

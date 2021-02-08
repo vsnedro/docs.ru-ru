@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <compositeDuplex>'
 title: <compositeDuplex>
 ms.date: 03/30/2017
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-ms.openlocfilehash: a5209efddd489f8cb04b3266e6ba0bb033eeae6c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a9ec47027618a5f4fb30b627ccb9ad04c547f48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91176023"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782186"
 ---
 # \<compositeDuplex>
 
@@ -34,11 +35,11 @@ ms.locfileid: "91176023"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|clientBaseAddress|Универсальный код ресурса (URI), который задает адрес обратного канала при работе в дуплексном режиме. Служба использует данный адрес для осуществления контакта и создания подключения к клиенту.<br /><br /> Если этот атрибут не задан, создается адрес по умолчанию `full qualified name+default port\TemporaryIndigoAddress\guid` . Значение по умолчанию — `null`.|  
+|clientBaseAddress|Универсальный код ресурса (URI), который задает адрес обратного канала при работе в дуплексном режиме. Служба использует данный адрес для осуществления контакта и создания подключения к клиенту.<br /><br /> Если этот атрибут не задан, создается адрес по умолчанию `full qualified name+default port\TemporaryIndigoAddress\guid` . Значение по умолчанию — `null`.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
 
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
@@ -58,7 +59,7 @@ ms.locfileid: "91176023"
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Configuration.CompositeDuplexElement>
 - <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>

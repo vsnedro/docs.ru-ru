@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: <NetFx45_CultureAwareComparerGetHashCode_LongStrings элемент>'
 title: Элемент <NetFx45_CultureAwareComparerGetHashCode_LongStrings>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - GetHashCode method
 - hash codes, calculating
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-ms.openlocfilehash: 413eb6c6e61b509135601c65cf045eabd849e8b3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ca4099d3bf812cb25e6a611b9b51b3752b1ad361
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74802110"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782290"
 ---
 # <a name="netfx45_cultureawarecomparergethashcode_longstrings-element"></a>Элемент \<NetFx45_CultureAwareComparerGetHashCode_LongStrings>
 
@@ -34,7 +35,7 @@ ms.locfileid: "74802110"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`enabled`|Обязательный атрибут.<br /><br /> Определяет, выделяет ли среда CLR постоянный объем памяти при вычислении хэш-кодов.|
 
@@ -56,7 +57,7 @@ ms.locfileid: "74802110"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`runtime`|Содержит сведения о параметрах инициализации среды выполнения.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 По умолчанию среда CLR выделяет переменный объем памяти для метода <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> и при попытке вычисления этим методом хэш-кодов очень больших строк (длиной свыше нескольких миллионов символов) может быть создано исключение <xref:System.ArgumentException> . Добавив этот элемент в файл конфигурации приложения и присвоив его атрибуту `enabled` значение "1", можно определить, что метод <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> использует другой алгоритм, который выделяет для вычисления хэш-кодов постоянный объем памяти.
 

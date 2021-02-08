@@ -1,15 +1,16 @@
 ---
-title: <faultPropagationQuery>WCF
+description: 'Дополнительные сведения о: <faultPropagationQuery> из WCF'
+title: <faultPropagationQuery> WCF
 ms.date: 03/30/2017
 ms.assetid: fabafbc8-3e45-4feb-8321-0725e9f4079c
-ms.openlocfilehash: a6ef4e198caec4a1f21cedf2ff46d390aeaa2d3b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cd26bf76fec54371ef0455b93c98650bdab19068
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782069"
 ---
-# <a name="faultpropagationquery-of-wcf"></a>\<faultPropagationQuery>WCF
+# <a name="faultpropagationquery-of-wcf"></a>\<faultPropagationQuery> WCF
 
 Представляет запрос, который используется для отслеживания обработки ошибок, возникающих в рамках действия.  Это событие возникает каждый раз, когда FaultHandler обрабатывает ошибку. Такой запрос следует использовать для отслеживания обработки ошибок, возникающих в рамках действия. Этот запрос необходим, чтобы участник отслеживания подписался на записи распространения ошибок.
 
@@ -47,7 +48,7 @@ ms.locfileid: "70855328"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`faultSourceActivityName`|Строка, указывающая имя действия обработчика сбоев, которое распространило ошибку. Значение по умолчанию — \* , что означает, что для всех действий возвращаются записи распространения ошибок.|
 |`faultHandlerActivityName`|Строка, указывающая имя действия, ставшего источником ошибки.|

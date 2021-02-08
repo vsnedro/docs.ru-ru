@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Коррефтодефчекк
 title: Перечисление CorRefToDefCheck
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f9a80f1a-55af-4459-b095-8441aae16119
 topic_type:
 - apiref
-ms.openlocfilehash: e7ce604acddb88d5a15844cbce2622b21e364cc1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ca9d1c7ceb3d9f82ef8d5f1f54d869db64053e69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784253"
 ---
 # <a name="correftodefcheck-enumeration"></a>Перечисление CorRefToDefCheck
 
@@ -53,8 +54,8 @@ typedef enum CorRefToDefCheck {
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

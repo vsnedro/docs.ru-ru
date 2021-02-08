@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: Склстреамчарс. Close'
 title: Метод Склстреамчарс. Close (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,25 +13,25 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: c33c60842d181be7011528ca7550f3d09f291f43
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 27f2ea6e288d166f3b63979a83a1cf80eeced334
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782381"
 ---
 # <a name="sqlstreamcharsclose-method"></a>Склстреамчарс. Close, метод
 
-Закрывает текущий поток и освобождает все системные ресурсы, связанные с потоком. Сборка, содержащая этот метод, имеет дружественную связь с Склакцесс. dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
+Закрывает текущий поток и освобождает все системные ресурсы, связанные с потоком. Сборка, содержащая этот метод, имеет дружественную связь с SQLAccess.dll. Он предназначен для использования SQL Server. Для других баз данных используйте механизм размещения, предоставляемый этой базой данных.
 
 ```csharp
 public virtual void Close ();
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 > [!WARNING]
-> Метод `SqlStreamChars.Close` является закрытым и не предназначен для непосредственного использования в коде.
+> `SqlStreamChars.Close`Метод является закрытым и не предназначен для непосредственного использования в коде.
 >
 > Корпорация Майкрософт не поддерживает использование этого метода в рабочем приложении при каких-либо обстоятельствах.
 
@@ -38,6 +39,6 @@ public virtual void Close ();
 
 **Пространство имен:** <xref:System.Data.SqlTypes>
 
-**Сборка:** System. Data (в System. Data. dll)
+**Сборка:** System.Data (в System.Data.dll)
 
-**.NET Framework версии:** Доступно с 2,0.
+**Платформа .NET Framework версии:** Доступно с 2,0.

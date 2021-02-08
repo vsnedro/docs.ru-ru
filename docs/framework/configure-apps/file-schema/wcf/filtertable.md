@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: <filterTable>'
 title: <filterTable>
 ms.date: 03/30/2017
 ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4
-ms.openlocfilehash: fb36feedc5fb2cbdf3827cbe44242c7ac6ab8a9b
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 2051bb0e778e5676f39d91b7d7ba415fd7e523af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91185695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782043"
 ---
 # \<filterTable>
 
@@ -58,6 +59,6 @@ ms.locfileid: "91185695"
 |-------------|-----------------|  
 |[\<routing>](routing.md)|Раздел конфигурации, содержащий таблицы маршрутизации.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>

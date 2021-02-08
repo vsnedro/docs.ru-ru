@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorRuntimeHost::D Елетелогикалсреадстате'
 title: Метод ICorRuntimeHost::DeleteLogicalThreadState
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 34ffc4a6-6553-43df-9b43-779effb67e2c
 topic_type:
 - apiref
-ms.openlocfilehash: 113931b44ebddfde37b0fb747b3df4e0e089cbf1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 17d779bfa7181553ee529ed69049faf66c1b71a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720689"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784890"
 ---
 # <a name="icorruntimehostdeletelogicalthreadstate-method"></a>Метод ICorRuntimeHost::DeleteLogicalThreadState
 
@@ -40,8 +41,8 @@ HRESULT DeleteLogicalThreadState ( );
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:** 1,0, 1,1  
+ **Платформа .NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorRuntimeHost](icorruntimehost-interface.md)

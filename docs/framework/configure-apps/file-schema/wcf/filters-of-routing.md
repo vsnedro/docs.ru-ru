@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения <filters> о: <routing>'
 title: <filters> из <routing>
 ms.date: 03/30/2017
 ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
-ms.openlocfilehash: c9bc3a2c379e14d8cf687676a3ec40702d150e1e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 41b51453f53fca042f53ca1ee8372413b8478ecd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782056"
 ---
 # <a name="filters-of-routing"></a>\<filters> из \<routing>
 
@@ -38,7 +39,7 @@ ms.locfileid: "70855236"
 
 ### <a name="attributes"></a>Атрибуты
 
-Нет
+None
 
 ### <a name="child-elements"></a>Дочерние элементы
 

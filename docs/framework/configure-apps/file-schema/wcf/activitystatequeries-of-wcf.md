@@ -1,15 +1,16 @@
 ---
-title: <activityStateQueries>WCF
+description: 'Дополнительные сведения о: <activityStateQueries> из WCF'
+title: <activityStateQueries> WCF
 ms.date: 10/08/2018
 ms.assetid: 9e45db49-ed85-4fdf-bd65-0d5477e31823
-ms.openlocfilehash: 249ac3d91f6251a943dd856e4122b8b54f691702
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 00795a26a37f62fae8aa884b5a4188be79453186
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782238"
 ---
-# <a name="activitystatequeries-of-wcf"></a>\<activityStateQueries>WCF
+# <a name="activitystatequeries-of-wcf"></a>\<activityStateQueries> WCF
 
 Представляет коллекцию запросов, которые используются для отслеживания изменений жизненного цикла действий, составляющих экземпляр рабочего процесса. Например, вы можете захотеть отследить каждый раз, когда действие "отправить электронное письмо" завершается в рамках экземпляра рабочего процесса. Этот запрос необходим, чтобы участник отслеживания мог подписываться на объекты записей состояния действия. Состояния, доступные для подписки, указаны в ActivtyStates.
 

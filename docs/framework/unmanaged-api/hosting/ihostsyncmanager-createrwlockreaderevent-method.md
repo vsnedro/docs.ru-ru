@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ihostsyncmanager:: CreateRWLockReaderEvent'
 title: Метод IHostSyncManager::CreateRWLockReaderEvent
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 68c4ea19-c47c-45c6-b420-d3a2ba1c2d50
 topic_type:
 - apiref
-ms.openlocfilehash: 7c9bf2186d3dc4500694225ea4023df3609b9010
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: be20757924aa45d2a44edab9bf921026aa0247a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95704387"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784773"
 ---
 # <a name="ihostsyncmanagercreaterwlockreaderevent-method"></a>Метод IHostSyncManager::CreateRWLockReaderEvent
 
@@ -59,7 +60,7 @@ HRESULT CreateRWLockReaderEvent (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенного объекта события.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызовы CLR `CreateRWLockReaderEvent` для получения ссылки на `IHostManualEvent` экземпляр, используемый в его реализации блокировки чтения. Узел может использовать файл cookie для определения задач, ожидающих блокировки чтения, путем запроса к интерфейсу [ICLRSyncManager](iclrsyncmanager-interface.md) .  
   
@@ -71,9 +72,9 @@ HRESULT CreateRWLockReaderEvent (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostAutoEvent](ihostautoevent-interface.md)

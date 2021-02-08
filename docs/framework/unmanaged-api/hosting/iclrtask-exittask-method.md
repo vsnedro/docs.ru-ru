@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICLRTask:: ExitTask'
 title: Метод ICLRTask::ExitTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 746c85a6-4b33-4f72-a2e9-379fdf2e96af
 topic_type:
 - apiref
-ms.openlocfilehash: bcd1cac47e4b59cc47c95145f0ccf60c92ea54fe
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 267b7f284ccac5b535a72dab425c035b6c689361
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95690844"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784969"
 ---
 # <a name="iclrtaskexittask-method"></a>Метод ICLRTask::ExitTask
 
@@ -43,7 +44,7 @@ HRESULT ExitTask ();
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ExitTask` пытается выполнить чистое завершение задачи, аналогично отсоединению потока из неуправляемой библиотеки типов.  
   
@@ -55,9 +56,9 @@ HRESULT ExitTask ();
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

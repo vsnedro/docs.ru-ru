@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Корпараматтр
 title: Перечисление CorParamAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a7ff90ad-dad8-48e8-917d-4aa9a118cbc8
 topic_type:
 - apiref
-ms.openlocfilehash: 6f5d022a96fa021cb28dbbb67d0b53e08f77498c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c07569d3fb92b20a7985dbfeb2205af727866051
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95729293"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784292"
 ---
 # <a name="corparamattr-enumeration"></a>Перечисление CorParamAttr
 
@@ -61,8 +62,8 @@ typedef enum CorParamAttr {
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

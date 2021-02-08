@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе IHostTask:: SetCLRTask'
 title: Метод IHostTask::SetCLRTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e9d39c80-41a1-49e7-bb5e-ea3433bfb5d7
 topic_type:
 - apiref
-ms.openlocfilehash: e6b9a4015a6139d6c8d7101fa7811c7ad9134e4c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 381b7827f043b6ef1d4a6698f5eb103233c9af55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784682"
 ---
 # <a name="ihosttasksetclrtask-method"></a>Метод IHostTask::SetCLRTask
 
@@ -50,7 +51,7 @@ HRESULT SetCLRTask (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR вызывает метод `SetCLRTask` , чтобы связать `ICLRTask` экземпляр с текущим `IHostTask` экземпляром, который был создан с помощью вызова [IHostTaskManager:: CreateTask](ihosttaskmanager-createtask-method.md).  
   
@@ -62,9 +63,9 @@ HRESULT SetCLRTask (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

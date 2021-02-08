@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: <activityScheduledQueries> из WCF'
 title: <activityScheduledQueries> WCF
 ms.date: 03/30/2017
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
-ms.openlocfilehash: 86f196437b2230d6541570aa8994d99e7b340f66
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: b92bb2827b4c8bce43e4ee0b8dc03c7be124e3da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782251"
 ---
 # <a name="activityscheduledqueries-of-wcf"></a>\<activityScheduledQueries> WCF
 
@@ -60,7 +61,7 @@ ms.locfileid: "91151198"
 |-------------|-----------------|  
 |[\<workflow>](../windows-workflow-foundation/workflow.md)|Элемент конфигурации, содержащий все запросы для определенного рабочего процесса, обозначенного свойством `activityDefinitionId`.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

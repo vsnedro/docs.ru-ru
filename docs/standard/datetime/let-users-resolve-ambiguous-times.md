@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как разрешить пользователям устранять неоднозначные времена.
 title: Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени
 ms.date: 04/10/2017
 helpviewer_keywords:
 - time zones [.NET], ambiguous time
 - ambiguous time [.NET]
 ms.assetid: bca874ee-5b68-4654-8bbd-3711220ef332
-ms.openlocfilehash: d543db20161057764749210533f35f7c2a1ec81d
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: a64d20080ed021af273a2d114c7558615b8b04e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94817800"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782485"
 ---
 # <a name="how-to-let-users-resolve-ambiguous-times"></a>Практическое руководство. Предоставление пользователям возможности разрешения неоднозначности времени
 
@@ -53,7 +54,7 @@ ms.locfileid: "94817800"
 
 - , Что <xref:System> пространство имен должно быть импортировано с помощью `using` оператора (требуется в коде C#).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Даты, время и часовые пояса](index.md)
 - [Руководство. разрешение неоднозначных времени](resolve-ambiguous-times.md)

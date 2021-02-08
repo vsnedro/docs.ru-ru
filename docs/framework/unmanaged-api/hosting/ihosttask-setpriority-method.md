@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе IHostTask:: SetPriority'
 title: Метод IHostTask::SetPriority
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cd8c379b-c7a0-434f-8e23-899bd26be75d
 topic_type:
 - apiref
-ms.openlocfilehash: 80b4bb2f6a547250acbc16a89e7396c60cc50d87
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c3e8fee954e5cbea2d084141a4b2d22d2fa5e95b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95720455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784643"
 ---
 # <a name="ihosttasksetpriority-method"></a>Метод IHostTask::SetPriority
 
@@ -50,7 +51,7 @@ HRESULT SetPriority (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Потокам предоставляется время обработки с помощью системы циклического перебора, частично основанной на уровне приоритета потока. `SetPriority` позволяет среде CLR устанавливать этот уровень приоритета потока для текущей задачи. `newPriority`Поддерживаются следующие значения.  
   
@@ -83,9 +84,9 @@ HRESULT SetPriority (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Thread>
 - [Интерфейс ICLRTask](iclrtask-interface.md)

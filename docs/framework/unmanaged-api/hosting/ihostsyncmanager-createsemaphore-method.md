@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод ihostsyncmanager:: Createsemaphore-'
 title: Метод IHostSyncManager::CreateSemaphore
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
 topic_type:
 - apiref
-ms.openlocfilehash: 9af38a58ce8786c56d9f50089605dc994167497e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 5a03ef7532e2ac8357ec015b40cc54942f5420e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784747"
 ---
 # <a name="ihostsyncmanagercreatesemaphore-method"></a>Метод IHostSyncManager::CreateSemaphore
 
@@ -59,7 +60,7 @@ HRESULT CreateSemaphore (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенного объекта события.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `CreateSemaphore` отражает функцию Win32 с тем же именем. `dwInitial`Параметры и `dwMax` используют ту же семантику для счетчика семафора `lInitialCount` , что и Win32 и `lMaximumCount` параметры соответственно. `dwInitial` значение должно находиться в диапазоне от 0 до `dwMax` включительно. `dwMax` должно быть больше нуля.  
   
@@ -71,9 +72,9 @@ HRESULT CreateSemaphore (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Интерфейс IHostSemaphore](ihostsemaphore-interface.md)

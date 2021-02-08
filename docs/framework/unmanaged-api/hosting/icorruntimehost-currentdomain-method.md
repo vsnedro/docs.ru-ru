@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorRuntimeHost:: CurrentDomain'
 title: Метод ICorRuntimeHost::CurrentDomain
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dd2afb38-675b-4c3c-a9f3-8ab3b133eb02
 topic_type:
 - apiref
-ms.openlocfilehash: 33d56354a560949b2f451df9ef82d4f433951195
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: fd75028b57475a620cc88a75016911dd0ab55b2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95715567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784903"
 ---
 # <a name="icorruntimehostcurrentdomain-method"></a>Метод ICorRuntimeHost::CurrentDomain
 
@@ -56,9 +57,9 @@ HRESULT CurrentDomain (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:** 1,0, 1,1  
+ **Платформа .NET Framework версии:** 1,0, 1,1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

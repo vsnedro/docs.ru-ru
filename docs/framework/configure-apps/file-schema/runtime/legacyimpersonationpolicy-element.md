@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <legacyImpersonationPolicy> element'
 title: Элемент <legacyImpersonationPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <legacyImpersonationPolicy> element
 - legacyImpersonationPolicy element
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
-ms.openlocfilehash: ca10c809ddf319817aaa074ba5fc3415abf6387d
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 36cc3336e8e3c0196ae20fc749fc2239c35c8584
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91192520"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782368"
 ---
 # <a name="legacyimpersonationpolicy-element"></a>Элемент \<legacyImpersonationPolicy>
 
@@ -60,9 +61,9 @@ ms.locfileid: "91192520"
   
 ## <a name="remarks"></a>Remarks  
 
- В .NET Framework версиях 1,0 и 1,1, объект не <xref:System.Security.Principal.WindowsIdentity> проходит через определенные пользователем асинхронные точки. Начиная с версии .NET Framework 2,0, существует <xref:System.Threading.ExecutionContext> объект, который содержит сведения о выполняющемся в данный момент потоке и проходит через асинхронные точки в пределах домена приложения. <xref:System.Security.Principal.WindowsIdentity>Включается в этот контекст выполнения и, следовательно, проходит через асинхронные точки, что означает, что если контекст олицетворения существует, он также будет работать.  
+ В платформа .NET Framework версиях 1,0 и 1,1, объект не <xref:System.Security.Principal.WindowsIdentity> проходит через определенные пользователем асинхронные точки. Начиная с версии платформа .NET Framework 2,0, существует <xref:System.Threading.ExecutionContext> объект, который содержит сведения о выполняющемся в данный момент потоке и проходит через асинхронные точки в пределах домена приложения. <xref:System.Security.Principal.WindowsIdentity>Включается в этот контекст выполнения и, следовательно, проходит через асинхронные точки, что означает, что если контекст олицетворения существует, он также будет работать.  
   
- Начиная с .NET Framework 2,0, можно использовать `<legacyImpersonationPolicy>` элемент, чтобы указать, что не передается  <xref:System.Security.Principal.WindowsIdentity> через асинхронные точки.  
+ Начиная с платформа .NET Framework 2,0, можно использовать `<legacyImpersonationPolicy>` элемент, чтобы указать, что не передается  <xref:System.Security.Principal.WindowsIdentity> через асинхронные точки.  
   
 > [!NOTE]
 > Общеязыковая среда выполнения (CLR) осведомлена об операциях олицетворения, выполняемых только с помощью управляемого кода, а не олицетворения, выполненных за пределами управляемого кода, например посредством вызова неуправляемого кода платформой или прямых вызовов функций Win32. Только управляемые <xref:System.Security.Principal.WindowsIdentity> объекты могут передаваться по асинхронным точкам, если только `alwaysFlowImpersonationPolicy` элемент не имеет значение true ( `<alwaysFlowImpersonationPolicy enabled="true"/>` ). Если задать `alwaysFlowImpersonationPolicy` для элемента значение true, удостоверение Windows всегда проходит через асинхронные точки независимо от того, как было выполнено олицетворение. Дополнительные сведения о передаче неуправляемого олицетворения через асинхронные точки см. в разделе [ \<alwaysFlowImpersonationPolicy> element](alwaysflowimpersonationpolicy-element.md).  
@@ -81,7 +82,7 @@ ms.locfileid: "91192520"
   
 ## <a name="configuration-file"></a>Файл конфигурации  
 
- В приложении .NET Framework этот элемент можно использовать только в файле конфигурации приложения.  
+ В приложении платформа .NET Framework этот элемент можно использовать только в файле конфигурации приложения.  
   
  Для приложения ASP.NET поток олицетворения можно настроить в файле aspnet.config, который находится в \<Windows Folder> каталоге \микрософт.нет\фрамеворк\вкс.КС.кскскскс.  
   
@@ -119,7 +120,7 @@ ms.locfileid: "91192520"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

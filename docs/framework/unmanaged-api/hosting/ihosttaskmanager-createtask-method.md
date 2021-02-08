@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostTaskManager:: CreateTask'
 title: Метод IHostTaskManager::CreateTask
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type:
 - apiref
-ms.openlocfilehash: 7fdf25d44bdf630e306cf0f5dcb3387a3b0f7c76
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c14c80ea9067b0a28e7b9186ea66eb695687bf27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731687"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784578"
 ---
 # <a name="ihosttaskmanagercreatetask-method"></a>Метод IHostTaskManager::CreateTask
 
@@ -63,7 +64,7 @@ HRESULT CreateTask (
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
 |E_OUTOFMEMORY|Недостаточно свободной памяти для создания запрошенной задачи.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Вызовы CLR `CreateTask` для запроса создания новой задачи узлом. Узел возвращает указатель интерфейса на `IHostTask` экземпляр. Возвращаемая задача должна оставаться приостановленной до тех пор, пока она не будет явно запущена вызовом метода `IHostTask::Start` .  
   
@@ -75,9 +76,9 @@ HRESULT CreateTask (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRTask](iclrtask-interface.md)
 - [Интерфейс ICLRTaskManager](iclrtaskmanager-interface.md)

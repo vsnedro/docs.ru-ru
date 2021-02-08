@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Коревентаттр
 title: Перечисление CorEventAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417
 topic_type:
 - apiref
-ms.openlocfilehash: 554f47cc4bd948e2b6106c1d71a2a4b7968d43f1
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 70f05eacf2cc7c7975b9b52d402cceb60bbea426
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718869"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784513"
 ---
 # <a name="coreventattr-enumeration"></a>Перечисление CorEventAttr
 
@@ -52,8 +53,8 @@ typedef enum CorEventAttr {
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

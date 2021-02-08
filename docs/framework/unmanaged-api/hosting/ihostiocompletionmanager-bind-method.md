@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostIoCompletionManager:: BIND'
 title: Метод IHostIoCompletionManager::Bind
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: acd74cb5-7e22-4a07-83c3-82288e1abd9f
 topic_type:
 - apiref
-ms.openlocfilehash: 5231db8de6129ed593e4e0d508b312b7034c01f0
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2105bf06c23f70588d0c1bc0cd849b8e810d121e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95733910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784864"
 ---
 # <a name="ihostiocompletionmanagerbind-method"></a>Метод IHostIoCompletionManager::Bind
 
@@ -54,7 +55,7 @@ HRESULT Bind (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. Когда метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Порт завершения ввода-вывода создается с помощью вызова `CreateIoCompletionPort` . Среда CLR вызывает `Bind` для привязки маркера к этому порту.  
   
@@ -69,8 +70,8 @@ HRESULT Bind (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRIoCompletionManager](iclriocompletionmanager-interface.md)

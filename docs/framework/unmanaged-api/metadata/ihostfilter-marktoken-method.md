@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: IHostFilter:: Марктокен'
 title: Метод IHostFilter::MarkToken
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d7061343-d0a3-4fd5-b312-61974f98bd62
 topic_type:
 - apiref
-ms.openlocfilehash: b4db3b115517f0a146aeab469f091008d31efc86
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c8f5ecdef56b77e1b0031a93d6d8f7de79de4c3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95718232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784188"
 ---
 # <a name="ihostfiltermarktoken-method"></a>Метод IHostFilter::MarkToken
 
@@ -39,7 +40,7 @@ HRESULT MarkToken (
  `tk`  
  окне Токен метаданных для обработки.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Как правило, требуется обработка маркера, если он находится в области действия метаданных. `MarkToken`Метод передается в обработчик метаданных с помощью метода [IMetaDataEmit:: сесандлер](imetadataemit-sethandler-method.md) .  
   
@@ -51,9 +52,9 @@ HRESULT MarkToken (
   
  **Библиотека:** Используется в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы метаданных](metadata-interfaces.md)
 - [Интерфейс IHostFilter](ihostfilter-interface.md)
