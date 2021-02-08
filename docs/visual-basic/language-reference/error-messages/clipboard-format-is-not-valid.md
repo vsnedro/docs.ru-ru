@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: недопустимый формат буфера обмена'
 title: Недопустимый формат буфера обмена
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID460
 ms.assetid: 71a4a045-65bb-417d-b3bd-99a9fa3c53f6
-ms.openlocfilehash: 429d1e120a0044152a358a87663eb09989f45b0e
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 58ba6197a14b005cf61d0783e19cb3f957dd2fca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90874595"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796760"
 ---
 # <a name="clipboard-format-is-not-valid"></a>Недопустимый формат буфера обмена
 

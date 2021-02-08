@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC40007: свойство по умолчанию " <propertyname1> " конфликтует со свойством по умолчанию " <propertyname2> " в " <classname> " и поэтому должно быть объявлено как "Shadows"'
 title: Свойство <propertyname1>, используемое по умолчанию, конфликтует со свойством <propertyname2>, используемым по умолчанию в классе <classname>, и должно быть объявлено с ключевым словом Shadows
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40007
 ms.assetid: 692ccf76-5715-4f11-a972-84cf9de30bc1
-ms.openlocfilehash: 290971a3173c59f08fbd279b6fffe3bcb618cb72
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 8ec7e36da18bbf8dda35e1a521d64268d14b7b26
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796643"
 ---
 # <a name="bc40007-default-property-propertyname1-conflicts-with-default-property-propertyname2-in-classname-and-so-should-be-declared-shadows"></a>BC40007: свойство по умолчанию " \<propertyname1> " конфликтует со свойством по умолчанию " \<propertyname2> " в " \<classname> " и поэтому должно быть объявлено как "Shadows"
 
@@ -28,5 +29,5 @@ ms.locfileid: "92160611"
 
 ## <a name="see-also"></a>См. также
 
-- [Тени](../modifiers/shadows.md)
+- [Shadows](../modifiers/shadows.md)
 - [Сокрытие в Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)
