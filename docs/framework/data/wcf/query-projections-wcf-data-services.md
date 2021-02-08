@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: проекции запросов (службы данных WCF)'
 title: Проекции запросов (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +11,16 @@ helpviewer_keywords:
 - query projection [WCF Data Services]
 - WCF Data Services, querying
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
-ms.openlocfilehash: 764ea6a77ba267e691d48bc72d17c02f6b3c18ca
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: 35427a4bc74691f366711c30cfa7af23de1caa35
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75900975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794966"
 ---
 # <a name="query-projections-wcf-data-services"></a>Проекции запросов (службы данных WCF)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Проекция предоставляет механизм в Open Data Protocol (OData) для уменьшения объема данных в веб-канале, возвращаемых запросом, указывая, что в ответе возвращаются только определенные свойства сущности. Дополнительные сведения см. в разделе 4,8. Выберите параметр системного запроса ($select) в [соглашениях об URI (OData версии 2,0)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
@@ -25,7 +28,7 @@ ms.locfileid: "75900975"
 
 ## <a name="defining-a-query-projection"></a>Определение проекции запроса
 
-Предложение проекции можно добавить в запрос либо с помощью параметра запроса `$select` в URI, либо с помощью предложения [SELECT](../../../csharp/language-reference/keywords/select-clause.md) ([выберите](../../../visual-basic/language-reference/queries/select-clause.md) в Visual Basic) в запросе LINQ. Возвращаемые данные сущности могут быть проецированы в типы сущностей или в типы, отличные от сущностей, на клиенте. В примерах этого раздела показано, как использовать предложение `select` в запросе LINQ.
+Предложение проекции можно добавить в запрос либо с помощью `$select` параметра запроса в URI, либо с помощью предложения [SELECT](../../../csharp/language-reference/keywords/select-clause.md) ([выберите](../../../visual-basic/language-reference/queries/select-clause.md) в Visual Basic) в запросе LINQ. Возвращаемые данные сущности могут быть проецированы в типы сущностей или в типы, отличные от сущностей, на клиенте. В примерах этого раздела показано, как использовать предложение `select` в запросе LINQ.
 
 > [!IMPORTANT]
 > При сохранении обновлений, выполненных в проецируемых типах, в службе данных может произойти потеря данных. Дополнительные сведения см. в разделе [рекомендации по проекции](#considerations).
@@ -38,7 +41,7 @@ ms.locfileid: "75900975"
 
 - Если тип имеет свойство, именуемое `ID`.
 
-- Если тип имеет свойство с именем *type*`ID`, где *Type* — это имя типа.
+- Если тип имеет свойство с именем *Type* `ID` , где *Type* — это имя типа.
 
 По умолчанию, если результаты запроса проецируются на тип, определенный на клиенте, свойства, запрашиваемые в проекции, должны существовать в типе клиента. Но если задается значение `true` для свойства <xref:System.Data.Services.Client.DataServiceContext.IgnoreMissingProperties%2A> для <xref:System.Data.Services.Client.DataServiceContext>, не требуется, чтобы свойства, заданные в проекции, были в типе клиента.
 
@@ -65,7 +68,7 @@ ms.locfileid: "75900975"
 
 **Создание нового проецируемого экземпляра с помощью инициализаторов**
 
-- Пример:
+- Пример.
 
    [!code-csharp[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#projectwithinitializer)]
    [!code-vb[Astoria Northwind Client#ProjectWithInitializer](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#projectwithinitializer)]
@@ -76,18 +79,18 @@ ms.locfileid: "75900975"
 
 **Создание нового проецируемого экземпляра с помощью конструкторов**
 
-- Пример:
+- Пример.
 
    [!code-csharp[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#projectwithconstructor)]
    [!code-vb[Astoria Northwind Client#ProjectWithConstructor](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#projectwithconstructor)]
 
-- Тип сущности: создается <xref:System.NotSupportedException>.
+- Тип сущности: создается <xref:System.NotSupportedException> .
 
 - Тип, не относящийся к сущности: поддерживается
 
 **Преобразование значения свойства с помощью проекции**
 
-- Пример:
+- Пример.
 
    [!code-csharp[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#projectwithtransform)]
    [!code-vb[Astoria Northwind Client#ProjectWithTransform](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#projectwithtransform)]
@@ -112,10 +115,10 @@ ms.locfileid: "75900975"
 
 - Если проекция включает свойство навигации, связанные объекты загружаются неявно, без вызова метода <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A>. Метод <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> не поддерживается для использования в проецированном запросе.
 
-- Запросы проецирования запроса на клиенте преобразуются для использования параметра запроса `$select` в URI запроса. Если запрос с проекцией выполняется в предыдущей версии WCF Data Services, не поддерживающей параметр запроса `$select`, возвращается ошибка. Это может также произойти, если версия <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> объекта <xref:System.Data.Services.DataServiceBehavior> для службы данных установлена в значение <xref:System.Data.Services.Common.DataServiceProtocolVersion.V1>. Дополнительные сведения см. в разделе [Управление версиями службы данных](data-service-versioning-wcf-data-services.md).
+- Запросы проецирования запроса на клиенте преобразуются для использования параметра запроса `$select` в URI запроса. Если запрос с проекцией выполняется в предыдущей версии службы данных WCF, которая не поддерживает `$select` параметр запроса, возвращается ошибка. Это может также произойти, если версия <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> объекта <xref:System.Data.Services.DataServiceBehavior> для службы данных установлена в значение <xref:System.Data.Services.Common.DataServiceProtocolVersion.V1>. Дополнительные сведения см. в разделе [Управление версиями службы данных](data-service-versioning-wcf-data-services.md).
 
 Дополнительные сведения см. [в разделе Практические руководства. Project Results Query](how-to-project-query-results-wcf-data-services.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [Выполнение запросов к службе данных](querying-the-data-service-wcf-data-services.md)

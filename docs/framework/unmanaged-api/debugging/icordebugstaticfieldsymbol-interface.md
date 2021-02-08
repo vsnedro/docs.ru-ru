@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икордебугстатикфиелдсимбол'
 title: Интерфейс ICorDebugStaticFieldSymbol
 ms.date: 03/30/2017
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631
-ms.openlocfilehash: fcf3bb61ccd903f2dd375e638814247a98aaf7b2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3aa9c98cef4cdc7edc519b06b6cf9b4b2192b4e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95717569"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794680"
 ---
 # <a name="icordebugstaticfieldsymbol-interface"></a>Интерфейс ICorDebugStaticFieldSymbol
 
@@ -21,7 +22,7 @@ ms.locfileid: "95717569"
 |[Метод GetName](icordebugstaticfieldsymbol-getname-method.md)|Получает имя статического поля.|  
 |[Метод GetSize](icordebugstaticfieldsymbol-getsize-method.md)|Получает размер статического поля в байтах.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Интерфейс `ICorDebugStaticFieldSymbol` используется для извлечения сведений отладочного символа для статического поля.  
   
@@ -36,9 +37,9 @@ ms.locfileid: "95717569"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugInstanceFieldSymbol](icordebuginstancefieldsymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

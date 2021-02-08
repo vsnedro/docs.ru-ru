@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как разместить службу рабочего процесса с помощью Windows Server App Fabric.
 title: Практическое руководство. Как разместить службу рабочего процесса с помощью Windows Server App Fabric
 ms.date: 03/30/2017
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
-ms.openlocfilehash: 2cf77753a0540e75ae6778065f7fa006729f8d6a
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 057e81c50844d1a36e32fe899de3469f024d775b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555989"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793809"
 ---
 # <a name="how-to-host-a-workflow-service-with-windows-server-app-fabric"></a>Практическое руководство. Как разместить службу рабочего процесса с помощью Windows Server App Fabric
 
@@ -35,23 +36,23 @@ ms.locfileid: "90555989"
   
 4. Перейдите на вкладку **Общие** , чтобы отобразить общие сведения о приложении, как показано на следующем снимке экрана.  
   
-     ![Вкладка «Общие» диалогового окна «Конфигурация фабрики приложения»](media/appfabricconfiguration-general.gif "Аппфабрикконфигуратион — общие")  
+     ![Вкладка «Общие» диалогового окна «Конфигурация фабрики приложения»](media/appfabricconfiguration-general.gif "AppFabricConfiguration-General")  
   
 5. Перейдите на вкладку **мониторинг** . Отобразятся различные параметры мониторинга, как показано на следующем снимке экрана.  
   
-     ![Вкладка «Наблюдение за конфигурацией фабрики приложения»](media/appfabricconfiguration-monitoring.gif "Аппфабрикконфигуратион — мониторинг")  
+     ![Вкладка «Наблюдение за конфигурацией фабрики приложения»](media/appfabricconfiguration-monitoring.gif "AppFabricConfiguration-Monitoring")  
   
      Дополнительные сведения о настройке мониторинга службы рабочих процессов в структуре приложений см. в статье [Настройка мониторинга с помощью App Fabric](/previous-versions/appfabric/ee677384(v=azure.10)).  
   
 6. Перейдите на вкладку **Сохраняемость рабочего процесса** . Это позволяет настроить приложение для использования поставщика сохраняемости по умолчанию в структуре приложений, как показано на следующем снимке экрана.  
   
-     ![Конфигурация структуры приложений &#45; сохраняемость](media/appfabricconfiguration-persistence.gif "Аппфабрикконфигуратион — сохраняемость")  
+     ![Конфигурация структуры приложений &#45; сохраняемость](media/appfabricconfiguration-persistence.gif "AppFabricConfiguration-Persistence")  
   
      Дополнительные сведения о настройке сохраняемости рабочих процессов в структуре приложений Windows Server см. [в статье Настройка сохраняемости рабочих процессов в структуре приложений](/previous-versions/appfabric/ee677353(v=azure.10)).  
   
 7. Перейдите на вкладку **Управление узлом рабочего процесса** . Это позволяет указать, когда следует выгружать неактивные экземпляры службы рабочего процесса и сохранять их, как показано на следующем снимке экрана.  
   
-     ![Управление узлом рабочего процесса конфигурации структуры приложений](media/appfabricconfiguration-management.gif "Аппфабрикконфигуратион — управление")  
+     ![Управление узлом рабочего процесса конфигурации структуры приложений](media/appfabricconfiguration-management.gif "AppFabricConfiguration-Management")  
   
      Дополнительные сведения о конфигурации управления узлом рабочих процессов см. [в статье Настройка управления узлами рабочих процессов в App Fabric](/previous-versions/appfabric/ff383424(v=azure.10)).  
   
@@ -69,7 +70,7 @@ ms.locfileid: "90555989"
   
 10. Перейдите на вкладку **Безопасность** . Это позволяет настроить параметры безопасности для приложения, как показано на следующем снимке экрана.  
   
-     ![Конфигурация безопасности фабрики приложения](media/appfabricconfiguration-security.gif "Аппфабрикконфигуратион — безопасность")  
+     ![Конфигурация безопасности фабрики приложения](media/appfabricconfiguration-security.gif "AppFabricConfiguration-Security")  
   
      Дополнительные сведения о настройке безопасности с помощью Windows Server App Fabric см. [в статье Настройка безопасности с помощью App Fabric](/previous-versions/appfabric/ee677278(v=azure.10)).  
   

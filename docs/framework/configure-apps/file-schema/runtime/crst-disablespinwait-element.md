@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: <Crst_DisableSpinWait элемент>'
 title: Элемент <Crst_DisableSpinWait>
 ms.date: 04/18/2019
 f1_keywords:
 - Crst_DisableSpinWait
 helpviewer_keywords:
 - Crst_DisableSpinWait element
-ms.openlocfilehash: 45052d99bb297ac39d058fa405fe57a7c991f738
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: fca6fed2dabc3d1319ad030bb13bbb35a561b9aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91151354"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795109"
 ---
 # <a name="crst_disablespinwait-element"></a>\<Crst_DisableSpinWait> - элемент
 
@@ -66,7 +67,7 @@ ms.locfileid: "91151354"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Схема параметров среды выполнения](index.md)
 - [Схема файла конфигурации](../index.md)

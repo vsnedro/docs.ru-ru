@@ -1,4 +1,5 @@
 ---
+description: См. Дополнительные сведения о методе ICorDebugRegisterSet2::, регистрирующих
 title: Метод ICorDebugRegisterSet2::GetRegisters
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dbc498a8-ba3f-42f2-bdd9-b623c77a1019
 topic_type:
 - apiref
-ms.openlocfilehash: 71b9d59621efb547713cb4a6c9df7a7142f4a677
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 58af939b0e88185e2be23b69ca70d28e93ff873f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794797"
 ---
 # <a name="icordebugregisterset2getregisters-method"></a>Метод ICorDebugRegisterSet2::
 
@@ -51,7 +52,7 @@ HRESULT GetRegisters (
  `regBuffer`  
  заполняет Массив `CORDB_REGISTER` объектов, каждый из которых получает значение регистра.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
  `GetRegisters`Метод возвращает массив значений из регистров, заданных маской. Массив не содержит значений регистров, бит маски которых не задан. Таким `regBuffer` же размером массива должно быть значение, равное количеству 1 в маске. Если значение `regCount` слишком мало для количества регистров, указанных маской, значения более высоких регистров будут обрезаны из набора. Если `regCount` значение слишком велико, неиспользуемые `regBuffer` элементы будут неизменными.  
   
@@ -69,9 +70,9 @@ HRESULT GetRegisters (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRegisterSet2](icordebugregisterset2-interface.md)
 - [Интерфейс ICorDebugRegisterSet](icordebugregisterset-interface.md)

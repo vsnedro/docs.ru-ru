@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 220-Мессажесенттотранспорт'
 title: 220 - MessageSentToTransport
 ms.date: 03/30/2017
 ms.assetid: aef4e781-240b-45bc-bff8-400053037e71
-ms.openlocfilehash: 1b63877998ea7942886c83d8795fe5ee49fdf053
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 8d76f147c8a31a5aa08c21073cd03e63436095ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96241932"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794316"
 ---
 # <a name="220---messagesenttotransport"></a>220 - MessageSentToTransport
 
@@ -17,7 +18,7 @@ ms.locfileid: "96241932"
 |-|-|  
 |Идентификатор|220|  
 |Keywords|EndToEndMonitoring, Troubleshooting, ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

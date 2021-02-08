@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о операторе:  >> (Visual Basic)'
 title: '>> Оператор'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - operator >>
 - right shift operators [Visual Basic]
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
-ms.openlocfilehash: 00f43bc9bae6d550ed175906777ac273fc8e9a23
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 125b93f129734d196bd1f7f9c4fde86ab5d66319
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873346"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795304"
 ---
 # <a name="-operator-visual-basic"></a>Оператор >> (Visual Basic)
 

@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: ошибка доступа к пути или файлу'
 title: Ошибка доступа к пути к файлу
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID75
 ms.assetid: 6ce3a161-7316-46bd-a785-0d50e5414020
-ms.openlocfilehash: 70de8f9cb33ab3d889f4916ae3d5de48cd218092
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d4fc7e716f025c0a482ab414f4a25a2b521634e6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90871192"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795447"
 ---
 # <a name="pathfile-access-error"></a>Ошибка доступа к пути/файлу
 

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 212-Параметеринспекторбефорекаллинвокед'
 title: 212 - ParameterInspectorBeforeCallInvoked
 ms.date: 03/30/2017
 ms.assetid: 063fc8d2-ceac-4c18-8368-de84f2c78035
-ms.openlocfilehash: 28c2aca4555d2e4ff498e450deae55ad6a87743c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aa02ff22b533855716c212d312396e6de23ace42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794407"
 ---
 # <a name="212---parameterinspectorbeforecallinvoked"></a>212 - ParameterInspectorBeforeCallInvoked
 
@@ -17,7 +18,7 @@ ms.locfileid: "96279042"
 |-|-|  
 |ID|212|  
 |Keywords|Troubleshooting, ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

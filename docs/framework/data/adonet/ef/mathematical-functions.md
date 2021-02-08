@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: математические функции'
 title: Математические функции
 ms.date: 03/30/2017
 ms.assetid: b040c7cb-156d-40f2-9152-61065b18148c
-ms.openlocfilehash: 4512aaa2eeb3e715a1d6f7a8655912eb15162124
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6bf1f116d6d88a8a188dc31cab91fbf26bdaea36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795031"
 ---
 # <a name="mathematical-functions"></a>Математические функции
 
 Поставщик данных для SQL Server платформы .NET Framework (SqlClient) предоставляет математические функции, производящие вычисления на входящих значениях, предоставляемых в качестве аргументов, и возвращающие результат в виде числовых значений. Эти функции находятся в пространстве имен SqlServer, которое доступно при использовании SqlClient. Свойство пространства имен поставщика позволяет платформе Entity Framework узнать, какой префикс используется поставщиком для конкретных конструкций, таких как типы или функции. В следующей таблице описаны математические функции SqlClient.  
   
-## <a name="absexpression"></a>АБС (выражение)
+## <a name="absexpression"></a>ABS (выражение)
 
 Возвращает абсолютное значение.
 
@@ -21,7 +22,7 @@ ms.locfileid: "79149769"
 
 `expression`: значение типа `Int32`, `Int64`, `Double` или `Decimal`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Абсолютное значение заданного выражения.
 
@@ -37,9 +38,9 @@ ms.locfileid: "79149769"
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -53,15 +54,15 @@ ms.locfileid: "79149769"
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
 `SqlServer.ASIN(.9)`
 
-## <a name="atanexpression"></a>АТАН (ВЫРАЖЕНИЕ)
+## <a name="atanexpression"></a>ATAN (выражение)
 
 Возвращает значение арктангенса указанного числового выражения.
 
@@ -69,9 +70,9 @@ ms.locfileid: "79149769"
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -85,9 +86,9 @@ ms.locfileid: "79149769"
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -101,9 +102,9 @@ ms.locfileid: "79149769"
 
 `expression`: значение типа `Int32`, `Int64`, `Double` или `Decimal`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-An `Int32` `Int64`, `Double`, `Decimal`или .
+`Int32`,, `Int64` `Double` Или `Decimal` .
 
 **Пример**
 
@@ -117,15 +118,15 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
 `SqlServer.COS(45)`
 
-## <a name="cotexpression"></a>КОТ (выражение)
+## <a name="cotexpression"></a>COT (выражение)
 
 Вычисляет тригонометрический котангенс указанного угла в радианах.
 
@@ -133,15 +134,15 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
 `SqlServer.COT(60)`
   
-## <a name="degreesradians"></a>DEGREES (радианы)
+## <a name="degreesradians"></a>ГРАДУСы (радианы)
 
 Возвращает соответствующее значение угла в градусах.
 
@@ -149,9 +150,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression`: значение типа `Int32`, `Int64`, `Double` или `Decimal`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-An `Int32` `Int64`, `Double`, `Decimal`или .
+`Int32`,, `Int64` `Double` Или `Decimal` .
 
 **Пример**
 
@@ -165,9 +166,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**`SqlServer.EXP(1)`
 
@@ -179,9 +180,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -195,9 +196,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -211,27 +212,27 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
 `SqlServer.LOG10(100)`
 
-## <a name="pi"></a>PI()
+## <a name="pi"></a>PI ()
 
 Возвращает константу «пи» в виде значения типа `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
 `SqlServer.PI()`
 
-## <a name="powernumeric_expression-power_expression"></a>POWER (numeric_expression, power_expression)
+## <a name="powernumeric_expression-power_expression"></a>МОЩНОСТЬ (numeric_expression, power_expression)
 
 Вычисляет значение указанного выражения, возведенного в заданную степень.
 
@@ -239,10 +240,10 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 |  |  |
 |--|--|
-|`numeric_expression`| An `Int32` `Int64`, `Double`, `Decimal`или .|
-|`power_expression`| A, `Double` который представляет собой власть, к которой поднять `numeric_expression`.|
+|`numeric_expression`| `Int32`,, `Int64` `Double` Или `Decimal` .|
+|`power_expression`| Объект `Double` , представляющий степень, до которой вызывается `numeric_expression` .|
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Значение заданного выражения `numeric_expression` в указанной степени `power_expression`.
 
@@ -250,7 +251,7 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `SqlServer.POWER(2,7)`
 
-## <a name="radiansexpression"></a>РАДИАНС (выражение)
+## <a name="radiansexpression"></a>РАДИАНы (выражение)
 
 Преобразует градусы в радианы.
 
@@ -258,23 +259,23 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression`: значение типа `Int32`, `Int64`, `Double` или `Decimal`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-An `Int32` `Int64`, `Double`, `Decimal`или .
+`Int32`,, `Int64` `Double` Или `Decimal` .
 
 **Пример**
 
 `SqlServer.RADIANS(360.0)`
 
-## <a name="randseed"></a>RAND («семя»)
+## <a name="randseed"></a>RAND ([начальное значение])
 
 Возвращает случайное значение от 0 до 1.
 
 **Аргументы**
 
-Значение семян как `Int32`. Если начальное значение не задано, то компонент SQL Server Database Engine присваивает случайно выбранное начальное значение. Для указанного начального значения возвращаемый результат всегда будет один и тот же.
+Начальное значение в виде `Int32` . Если начальное значение не задано, то компонент SQL Server Database Engine присваивает случайно выбранное начальное значение. Для указанного начального значения возвращаемый результат всегда будет один и тот же.
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Случайное значение типа `Double` от 0 до 1.
 
@@ -282,7 +283,7 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `SqlServer.RAND()`
   
-## <a name="roundnumeric_expression-lengthfunction"></a>ROUND (numeric_expression, длина, функция)
+## <a name="roundnumeric_expression-lengthfunction"></a>ROUND (numeric_expression, длина [, функция])
 
 Возвращает числовое выражение, округленное до указанной длины или точности.
 
@@ -290,11 +291,11 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 |  |  |
 |--|--|
-|`numeric_expression`| An `Int32` `Int64`, `Double`, `Decimal`или .
+|`numeric_expression`| `Int32`,, `Int64` `Double` Или `Decimal` .
 |`length`| Значение типа `Int32`, указывающее точность, до которой должно быть округлено значение аргумента `numeric_expression`. Если аргумент `length` является положительным числом, значение `numeric_expression` округляется до числа десятичных разрядов, указанных аргументом `length`. Если аргумент `length` является отрицательным числом, значение `numeric_expression` округляется слева от десятичной запятой, как указано аргументом `length`.|
-|`function` | Необязательный параметр. Тип `Int32` операции представляет собой тип операции. Когда функция опущена или имеет значение 0 `numeric_expression` (по умолчанию), округляется. Когда значение, не превышающее 0, усечено. `numeric_expression` |
+|`function` | Необязательный элемент. Объект `Int32` , представляющий тип выполняемой операции. Если функция опущена или имеет значение 0 (по умолчанию), `numeric_expression` то параметр округляется. Если указано значение, отличное от 0, `numeric_expression` усекается. |
 
-**Значение возврата**
+**Возвращаемое значение**
 
 Значение заданного выражения `numeric_expression` в указанной степени `power_expression`.
 
@@ -310,9 +311,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression`: `Int32`, `Int64`, `Double` или `Decimal`
 
-**Значение возврата**
+**Возвращаемое значение**
 
-An `Int32` `Int64`, `Double`, `Decimal`или .
+`Int32`,, `Int64` `Double` Или `Decimal` .
 
 **Пример**
 
@@ -326,13 +327,13 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**`SqlServer.SIN(20)`
 
-## <a name="sqrtexpression"></a>СЗРТ (выражение)
+## <a name="sqrtexpression"></a>SQRT (выражение)
 
 Возвращает квадратный корень указанного выражения.
 
@@ -340,13 +341,13 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**`SqlServer.SQRT(3600)`
 
-## <a name="squareexpression"></a>СКВАРЕ (выражение)
+## <a name="squareexpression"></a>SQUARE (выражение)
 
 Возвращает значение указанного выражения в квадрате.
 
@@ -354,9 +355,9 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression` — значение в формате `Double`.
 
-**Значение возврата**
+**Возвращаемое значение**
 
-`Double`.
+Объект `Double`.
 
 **Пример**
 
@@ -370,7 +371,7 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `expression`: `Double`
 
-**Значение возврата**
+**Возвращаемое значение**
 
 `Double`
 
@@ -378,7 +379,7 @@ An `Int32` `Int64`, `Double`, `Decimal`или .
 
 `SqlServer.TAN(45.0)`
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Математические функции (Transact-SQL)](/sql/t-sql/functions/mathematical-functions-transact-sql)
 - [Функции SqlClient для Entity Framework](sqlclient-for-ef-functions.md)

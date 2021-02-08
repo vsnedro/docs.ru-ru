@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс метод icorprofilerinfo4'
 title: Интерфейс ICorProfilerInfo4
 ms.date: 03/30/2017
 api_name:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 80a5308e-c22f-4201-ba89-31cc8562515b
 topic_type:
 - apiref
-ms.openlocfilehash: c3e623b0b5f8b49e043fe3a1aa8311558e573573
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 94e33be74ccffea3fa9a0e51e317a6888596606d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682839"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794511"
 ---
 # <a name="icorprofilerinfo4-interface"></a>Интерфейс ICorProfilerInfo4
 
-Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. . `ICorProfilerInfo4`Интерфейс является расширением других `ICorProfilerInfo` интерфейсов. Он предоставляет новые методы для поддержки повторной компиляции JIT, добавленной в .NET Framework 4,5.  
+Предоставляет методы, используемые профилировщиками кода для взаимодействия со средой CLR для управления мониторингом событий и сведениями о запросах. . `ICorProfilerInfo4`Интерфейс является расширением других `ICorProfilerInfo` интерфейсов. Он предоставляет новые методы для поддержки повторной компиляции JIT, добавленной в платформа .NET Framework 4,5.  
   
 ## <a name="methods"></a>Методы  
   
@@ -40,7 +41,7 @@ ms.locfileid: "95682839"
 |[Метод RequestReJIT](icorprofilerinfo4-requestrejit-method.md)|Запрашивает перекомпиляцию JIT всех экземпляров указанных функций.|  
 |[Метод RequestRevert](icorprofilerinfo4-requestrevert-method.md)|Восстанавливает исходные версии всех экземпляров указанных функций.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Среда CLR реализует методы интерфейса `ICorProfilerInfo4` с помощью модели свободных потоков. Каждый метод возвращает значение HRESULT, указывающее на успешное выполнение или сбой. Список возможных кодов возврата см. в файле CorError.h.  
   
@@ -52,9 +53,9 @@ ms.locfileid: "95682839"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)
 - [Интерфейс ICorProfilerInfo](icorprofilerinfo-interface.md)

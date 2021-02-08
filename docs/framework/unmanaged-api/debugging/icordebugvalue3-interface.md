@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugValue3'
 title: Интерфейс ICorDebugValue3
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7d5385d3-f4a5-47c4-8478-a3513b5e9406
 topic_type:
 - apiref
-ms.openlocfilehash: 419efc7f21f4ac2e68657b2a4d69a8690a2938d4
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e5868b91d23426a2d8dd8fed87b13ec61fef95ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794654"
 ---
 # <a name="icordebugvalue3-interface"></a>Интерфейс ICorDebugValue3
 
@@ -31,9 +32,9 @@ ms.locfileid: "95722314"
 |------------|-----------------|  
 |[Метод GetSize64](icordebugvalue3-getsize64-method.md)|Возвращает размер данного объекта в байтах `ICorDebugValue3` .|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
- Метод [ICorDebugValue::](icordebugvalue3-getsize64-method.md) GetBytes возвращает размер объекта в диапазоне от 0 до 2 147 483 647 байт. В .NET Framework 4,5 размер массивов может превышать 2 ГБ. `ICorDebugValue3`Интерфейс позволяет определить размер этих массивов.  
+ Метод [ICorDebugValue::](icordebugvalue3-getsize64-method.md) GetBytes возвращает размер объекта в диапазоне от 0 до 2 147 483 647 байт. В платформа .NET Framework 4,5 размер массивов может превышать 2 ГБ. `ICorDebugValue3`Интерфейс позволяет определить размер этих массивов.  
   
 ## <a name="requirements"></a>Требования  
 
@@ -43,9 +44,9 @@ ms.locfileid: "95722314"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

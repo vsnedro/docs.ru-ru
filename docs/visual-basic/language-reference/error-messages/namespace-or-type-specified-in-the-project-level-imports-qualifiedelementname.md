@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC40057: namespace или Type, указанные в Imports на уровне проекта, <qualifiedelementname> не содержат открытых членов или не могут быть найдены'
 title: Пространство имен или тип, указанные в свойстве Imports <qualifiedelementname> для проекта, не содержит никаких общих членов или не может быть найдено
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40057
 ms.assetid: 4ae3506e-2ebe-4ff3-995d-14ac60db5e9f
-ms.openlocfilehash: 54ee046cda998be8bd70e531918d6ab2a67d0494
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 66ae40ca6a2feff78f80bdbc8886387e801f7db2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160123"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795694"
 ---
 # <a name="bc40057-namespace-or-type-specified-in-the-project-level-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>BC40057: пространство имен или тип, указанные в Imports на уровне проекта, \<qualifiedelementname> не содержат открытых членов или не могут быть найдены
 
@@ -38,7 +39,7 @@ ms.locfileid: "92160123"
 
 3. Убедитесь, что содержащий элемент предоставляет по крайней мере один `Public` элемент.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Страница "Ссылки" в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
 - [Управление свойствами проектов и решений](/visualstudio/ide/managing-project-and-solution-properties)

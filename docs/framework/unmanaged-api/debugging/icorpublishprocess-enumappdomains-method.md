@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorPublishProcess:: Енумаппдомаинс'
 title: Метод ICorPublishProcess::EnumAppDomains
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
 topic_type:
 - apiref
-ms.openlocfilehash: 2acf8fb507ab617e066a31c9c2657b1ef0d18e47
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c7834b23967ab467c1589ee31929bf346b4b3b8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794615"
 ---
 # <a name="icorpublishprocessenumappdomains-method"></a>Метод ICorPublishProcess::EnumAppDomains
 
@@ -39,7 +40,7 @@ HRESULT EnumAppDomains (
  `ppEnum`  
  заполняет Указатель на адрес экземпляра [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) , который позволяет выполнять итерацию по коллекции доменов приложений в этом процессе.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Список доменов приложений основан на моментальном снимке доменов приложений, существующих при `EnumAppDomains` вызове метода. Этот метод может быть вызван более одного раза для создания нового списка обновлений. Последующие вызовы этого метода не будут затронуты существующими списками.  
   
@@ -53,8 +54,8 @@ HRESULT EnumAppDomains (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)

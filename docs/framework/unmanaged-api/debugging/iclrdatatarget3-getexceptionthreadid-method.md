@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrdatatarget3:: GetExceptionThreadID'
 title: Метод ICLRDataTarget3::GetExceptionThreadID
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
 topic_type:
 - apiref
-ms.openlocfilehash: 0a8b7a90cd909379f870f6a501a940386d2e1451
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8202b6d83d0c81853111c5da7cfb8deec4d4e222
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723601"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794823"
 ---
 # <a name="iclrdatatarget3getexceptionthreadid-method"></a>Метод ICLRDataTarget3::GetExceptionThreadID
 
@@ -45,7 +46,7 @@ HRESULT GetExceptionThreadID(
 |`S_OK`|Метод успешно выполнен.|  
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|Не удалось найти допустимый идентификатор потока для исключения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод реализуется модулем записи отладчика.  
   
@@ -57,9 +58,9 @@ HRESULT GetExceptionThreadID(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget3](iclrdatatarget3-interface.md)
 - [Метод GetExceptionContextRecord](iclrdatatarget3-getexceptioncontextrecord-method.md)

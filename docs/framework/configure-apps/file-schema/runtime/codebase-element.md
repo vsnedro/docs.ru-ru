@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: <codeBase> element'
 title: Элемент <codeBase>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - container tags, <codeBase> element
 - codeBase element
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-ms.openlocfilehash: 475b7df55ed509157c1da0aeb8f979de238c72b5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 714392444d3ee3db9126e9fe67832cb5f0bf5e3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70971891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795122"
 ---
 # <a name="codebase-element"></a>Элемент \<codeBase>
 
@@ -49,7 +50,7 @@ ms.locfileid: "70971891"
 
 |Значение|Описание|
 |-----------|-----------------|
-|Допустимые значения для каждой части номера версии — от 0 до 65535.|Неприменимо.|
+|Допустимые значения для каждой части номера версии — от 0 до 65535.|Не применяется|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
@@ -64,7 +65,7 @@ ms.locfileid: "70971891"
 |`configuration`|Корневой элемент в любом файле конфигурации, используемом средой CLR и приложениями .NET Framework.|
 |`System.web`|Задает корневой элемент для раздела конфигурации ASP.NET.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Чтобы среда выполнения использовала **\<codeBase>** параметр в файле конфигурации компьютера или файле политики издателя, файл должен также перенаправлять версию сборки. Файлы конфигурации приложения могут иметь параметр базы кода без перенаправления версии сборки. После определения используемой версии сборки среда выполнения применяет параметр базы кода из файла, определяющего версию. Если база кода не указана, среда выполнения проверяет наличие сборки обычным способом.
 

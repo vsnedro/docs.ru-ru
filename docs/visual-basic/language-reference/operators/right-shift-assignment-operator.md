@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о:  >>= operator (Visual Basic)'
 title: '>>Оператор ='
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - compound assignment statements [Visual Basic]
 - '>>= operator [Visual Basic]'
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
-ms.openlocfilehash: a1c2331791644155504183d3cf5767470a3bf17b
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 80f614042403ad9179de0025b289bd83c71008b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90873360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795317"
 ---
 # <a name="-operator-visual-basic"></a>Оператор >>= (Visual Basic)
 
@@ -45,7 +46,7 @@ variableorproperty >>= amount
   
 ## <a name="overloading"></a>Перегрузка  
 
- [Оператор>> ](right-shift-operator.md) может быть *перегружен*, что означает, что класс или структура может переопределить свое поведение, если операнд имеет тип этого класса или структуры. Перегрузка `>>` оператора влияет на поведение `>>=` оператора. Если ваш код использует `>>=` класс или структуру, перегрузки `>>` , убедитесь, что вы понимаете его переопределенное поведение. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
+ [Оператор>>](right-shift-operator.md) может быть *перегружен*, что означает, что класс или структура может переопределить свое поведение, если операнд имеет тип этого класса или структуры. Перегрузка `>>` оператора влияет на поведение `>>=` оператора. Если ваш код использует `>>=` класс или структуру, перегрузки `>>` , убедитесь, что вы понимаете его переопределенное поведение. Для получения дополнительной информации см. [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## <a name="example"></a>Пример  
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorPublishProcess:: DisplayName'
 title: Метод ICorPublishProcess::GetDisplayName
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
 topic_type:
 - apiref
-ms.openlocfilehash: 5a037695892252042d7827165595f7bad0feba56
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 7aef55a40c24953766377f21e8291bceb1594480
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95693168"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794589"
 ---
 # <a name="icorpublishprocessgetdisplayname-method"></a>Метод ICorPublishProcess::GetDisplayName
 
@@ -56,8 +57,8 @@ HRESULT GetDisplayName (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)

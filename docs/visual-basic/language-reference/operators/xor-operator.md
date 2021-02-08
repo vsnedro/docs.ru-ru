@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе XOR (Visual Basic)
 title: Оператор Xor
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - Xor keyword [Visual Basic]
 - bitwise comparison [Visual Basic]
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-ms.openlocfilehash: ce7592c73f387d6ddbfd328abce8555cb7dcd303
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 313ff30ace91b1832c0d35df13294e570a8e410d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90875288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795226"
 ---
 # <a name="xor-operator-visual-basic"></a>Оператор Xor (Visual Basic)
 

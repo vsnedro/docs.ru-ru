@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugObjectValue'
 title: Интерфейс ICorDebugObjectValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 937de6a0-6fbf-4ddc-80ea-a6217b73e62b
 topic_type:
 - apiref
-ms.openlocfilehash: 2a5a618491bf2c624669728d97a690cca315bff8
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: a2af438bbb4c2f56eb1a72151e339b6b0a978eec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794778"
 ---
 # <a name="icordebugobjectvalue-interface"></a>Интерфейс ICorDebugObjectValue
 
@@ -37,7 +38,7 @@ ms.locfileid: "95724680"
 |[Метод IsValueClass](icordebugobjectvalue-isvalueclass-method.md)|Возвращает значение, указывающее, является ли объект, на который ссылается это, `ICorDebugObjectValue` типом значения.|  
 |[Метод SetFromManagedCopy](icordebugobjectvalue-setfrommanagedcopy-method.md)|Является устаревшей. Этот метод не следует вызывать.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorDebugObjectValue`Остается действительным до тех пор, пока отлаживаемый процесс не будет продолжен.  
   
@@ -52,8 +53,8 @@ ms.locfileid: "95724680"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

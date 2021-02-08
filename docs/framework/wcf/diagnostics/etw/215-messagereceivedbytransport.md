@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 215-Мессажерецеиведбитранспорт'
 title: 215 - MessageReceivedByTransport
 ms.date: 03/30/2017
 ms.assetid: bb32aa60-5207-4711-9f08-110e8ac327e5
-ms.openlocfilehash: 2f247e751a0690f13d059eff29d633c6d047775d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e9645cfc8c4013f8891cb645db7df35477a57412
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96279081"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794368"
 ---
 # <a name="215---messagereceivedbytransport"></a>215 - MessageReceivedByTransport
 
@@ -17,7 +18,7 @@ ms.locfileid: "96279081"
 |-|-|  
 |ID|215|  
 |Keywords|Troubleshooting, ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

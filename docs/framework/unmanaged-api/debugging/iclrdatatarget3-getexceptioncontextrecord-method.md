@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод iclrdatatarget3:: Жетексцептионконтекстрекорд'
 title: Метод ICLRDataTarget3::GetExceptionContextRecord
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: 66076ed5-f05c-4114-9788-94cb143abb8a
 topic_type:
 - apiref
-ms.openlocfilehash: 87065b83e0b28eafdf5099f99fd188e2e21e7a12
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c722eaaf0f9935bc7adaa69a1792f934f631a728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794836"
 ---
 # <a name="iclrdatatarget3getexceptioncontextrecord-method"></a>Метод ICLRDataTarget3::GetExceptionContextRecord
 
@@ -54,7 +55,7 @@ HRESULT GetExceptionContextRecord(
 |`HRESULT_FROM_WIN32(ERROR_NOT_FOUND)`|Нет записей контекста, связанных с целевым объектом.|  
 |`HRESULT_FROM_WIN32(ERROR_BAD_LENGTH)`|Размер входного буфера недостаточен для сохранения записи контекста.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  [Контекст](/windows/win32/api/winnt/ns-winnt-arm64_nt_context) — это зависящая от платформы структура, определенная в заголовках, предоставляемых Windows SDK.  
   
@@ -68,9 +69,9 @@ HRESULT GetExceptionContextRecord(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget3](iclrdatatarget3-interface.md)
 - [Метод GetExceptionRecord](iclrdatatarget3-getexceptionrecord-method.md)

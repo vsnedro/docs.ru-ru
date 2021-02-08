@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC42017: разрешение с поздним связыванием; могут возникнуть ошибки времени выполнения'
 title: Разрешение позднего связывания; возможно возникновение ошибок времени выполнения
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42017
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
-ms.openlocfilehash: ef0fa295cadaaa0550be4809ec97c6da13b5e2db
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: 2c783a7aff46df8ab033463f49c45f4c797220ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795928"
 ---
 # <a name="bc42017-late-bound-resolution-runtime-errors-could-occur"></a>BC42017: разрешение с поздним связыванием; могут возникнуть ошибки времени выполнения
 

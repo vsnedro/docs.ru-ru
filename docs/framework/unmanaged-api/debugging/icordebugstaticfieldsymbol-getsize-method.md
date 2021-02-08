@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугстатикфиелдсимбол:: resize'
 title: Метод ICorDebugStaticFieldSymbol::GetSize
 ms.date: 03/30/2017
 ms.assetid: 72389860-7e37-4656-ba46-b6aeee1860f8
-ms.openlocfilehash: 34567247935588363d96b141717d7ec07bb76546
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f6fd2fe60d7cb8a77dcff5ca259d05ae1ef195ed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794693"
 ---
 # <a name="icordebugstaticfieldsymbolgetsize-method"></a>Метод ICorDebugStaticFieldSymbol::GetSize
 
@@ -26,7 +27,7 @@ HRESULT GetSize(
  `pcbSize`  
  [out] Указатель на длину этого поля.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -39,9 +40,9 @@ HRESULT GetSize(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

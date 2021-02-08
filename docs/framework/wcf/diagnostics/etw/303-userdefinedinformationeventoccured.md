@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 303-Усердефинединформатионевентоккуред'
 title: 303 - UserDefinedInformationEventOccured
 ms.date: 03/30/2017
 ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
-ms.openlocfilehash: 8597d84184caea9fc5dc7778cfc6d05e7dc592db
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 51c4acd5d10a2d563dd7fbcebf90b75c64ff20ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96243434"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794238"
 ---
 # <a name="303---userdefinedinformationeventoccured"></a>303 - UserDefinedInformationEventOccured
 
@@ -17,7 +18,7 @@ ms.locfileid: "96243434"
 |-|-|  
 |ID|303|  
 |Keywords|Troubleshooting, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  
@@ -32,6 +33,6 @@ ms.locfileid: "96243434"
   
 |Имя элемента данных|Тип элемента данных|Описание|  
 |--------------------|--------------------|-----------------|  
-|name|`xs:string`|Определенное пользователем имя события.|  
+|Имя|`xs:string`|Определенное пользователем имя события.|  
 |HostReference|`xs:string`|Для служб, размещенных на веб-узле, это поле служит уникальным идентификатором службы в веб-иерархии. Его формат определяется как "имя веб-сайта виртуальный путь к приложению&#124;виртуальный путь службы&#124;ServiceName". Пример: "Default Web site/Калкулатораппликатион&#124;/Калкулаторсервице.СВК&#124;CalculatorService".|  
 |Payload|`xs:string`|Определенные пользователем полезные данные события.|

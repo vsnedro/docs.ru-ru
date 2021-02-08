@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICLRDataTarget2'
 title: Интерфейс ICLRDataTarget2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 94249397-861b-4294-a538-cf01466a66d3
 topic_type:
 - apiref
-ms.openlocfilehash: dee5108439610b67c3397cebcd8ee5f84d4eacea
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9ba6d11ea043d3b6ba85544b47e063f585854af8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794849"
 ---
 # <a name="iclrdatatarget2-interface"></a>Интерфейс ICLRDataTarget2
 
@@ -32,7 +33,7 @@ ms.locfileid: "95723640"
 |[Метод AllocVirtual](iclrdatatarget2-allocvirtual-method.md)|Выделяет память в адресном пространстве целевого процесса.|  
 |[Метод FreeVirtual](iclrdatatarget2-freevirtual-method.md)|Освобождает память, которая была ранее выделена в адресном пространстве целевого процесса.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Клиент API (то есть отладчик) должен реализовывать этот интерфейс для определенного целевого процесса по мере необходимости. Например, реализация активного процесса будет отличаться от реализации дампа памяти. Целевой объект может не поддерживать изменение областей его памяти.  
   
@@ -44,9 +45,9 @@ ms.locfileid: "95723640"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

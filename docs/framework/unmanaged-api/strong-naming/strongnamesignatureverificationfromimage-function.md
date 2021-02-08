@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции StrongNameSignatureVerificationFromImage
 title: Функция StrongNameSignatureVerificationFromImage
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
 topic_type:
 - apiref
-ms.openlocfilehash: b90cc6fe99cf592f1b3fd117888462a957e4ce35
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9dca8d0b221dfe8959be2de9b8347b95d3802a0e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95708430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794498"
 ---
 # <a name="strongnamesignatureverificationfromimage-function"></a>Функция StrongNameSignatureVerificationFromImage
 
@@ -70,7 +71,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
 
  `true` При успешном завершении; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если `StrongNameSignatureVerificationFromImage` функция не завершается успешно, вызовите функцию [стронгнамирроринфо](strongnameerrorinfo-function.md) , чтобы получить последнюю созданную ошибку.  
   
@@ -82,9 +83,9 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
   
  **Библиотека:** Включается в качестве ресурса в mscoree.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Метод StrongNameSignatureVerificationFromImage](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md)
 - [Интерфейс ICLRStrongName](../hosting/iclrstrongname-interface.md)

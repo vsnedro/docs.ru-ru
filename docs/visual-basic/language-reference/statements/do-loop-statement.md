@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Do... Оператор Loop (Visual Basic)'
 title: Оператор Do…Loop
 ms.date: 07/20/2015
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - loops, exiting
 - Loop keyword [Visual Basic], Do...Loop statement
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
-ms.openlocfilehash: 86a702aefeea1e5e359a579a3f29e9c06f1c619c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: d170074c44d1692517f6b51abd4a6b3d005941c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90865927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795187"
 ---
 # <a name="doloop-statement-visual-basic"></a>Оператор Do...Loop (Visual Basic)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC40056: namespace или Type, указанные в Imports " <qualifiedelementname> ", не содержат открытых членов или не могут быть найдены'
 title: Пространство имен или тип, указанный в Imports <qualifiedelementname>, не содержит общих членов или не найден
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC40056
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
-ms.openlocfilehash: 284a8c71fee8835f78ca5435932819fded1b1f30
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e98ba70660823196e763300cd33ec1ba9a9db3b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92160136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795707"
 ---
 # <a name="bc40056-namespace-or-type-specified-in-the-imports-qualifiedelementname-doesnt-contain-any-public-member-or-cannot-be-found"></a>BC40056: пространство имен или тип, указанные в Imports " \<qualifiedelementname> ", не содержат открытых членов или не могут быть найдены
 

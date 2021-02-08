@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: 214-Оператионкомплетед'
 title: 214 - OperationCompleted
 ms.date: 03/30/2017
 ms.assetid: a6287eef-023f-4816-813c-1802c82366df
-ms.openlocfilehash: 6147c70448efb122cb43a2b42a1e9b59980fab29
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: aad1ac49667a2ebbf172b5132507584e05d0f03e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96278951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794394"
 ---
 # <a name="214---operationcompleted"></a>214 - OperationCompleted
 
@@ -17,7 +18,7 @@ ms.locfileid: "96278951"
 |-|-|  
 |ID|214|  
 |Keywords|HealthMonitoring, EndToEndMonitoring, Troubleshooting, ServiceModel|  
-|Level|Сведения|  
+|Уровень|Сведения|  
 |Канал|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## <a name="description"></a>Описание  

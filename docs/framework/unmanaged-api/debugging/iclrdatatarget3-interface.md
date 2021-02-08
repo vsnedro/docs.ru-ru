@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс метод iclrdatatarget3'
 title: Интерфейс ICLRDataTarget3
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: d2711bdf-64b3-404c-a0c3-01ba4907f703
 topic_type:
 - apiref
-ms.openlocfilehash: 7297bfa5297878dde6867a99029ac88754a05290
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: deea609298563e60897f9bedab9fb1e175dc7b73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794793"
 ---
 # <a name="iclrdatatarget3-interface"></a>Интерфейс ICLRDataTarget3
 
@@ -29,7 +30,7 @@ ms.locfileid: "95723588"
 |[Метод GetExceptionContextRecord](iclrdatatarget3-getexceptioncontextrecord-method.md)|Вызывается службами доступа к данным среды CLR для извлечения записи контекста, связанной с целевым процессом.|  
 |[Метод GetExceptionThreadID](iclrdatatarget3-getexceptionthreadid-method.md)|Вызывается службами доступа к данным среды CLR для получения идентификатора потока, вызвавшего исключение.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Клиент API (то есть отладчик) должен реализовывать этот интерфейс для определенного целевого процесса по мере необходимости. Например, реализация активного процесса будет отличаться от реализации дампа памяти. Целевой объект может не поддерживать изменение областей его памяти.  
   
@@ -41,9 +42,9 @@ ms.locfileid: "95723588"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)
 - [Интерфейс ICLRDataTarget2](iclrdatatarget2-interface.md)

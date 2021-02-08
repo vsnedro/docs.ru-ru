@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: свойствах (Visual Basic)'
 title: Свойства
 ms.date: 07/20/2015
 helpviewer_keywords:
 - properties [Visual Basic]
 ms.assetid: c995caf9-8d0e-4fb8-ae02-e9e6087d7651
-ms.openlocfilehash: 1e56be71c1841c202f08b64716e62b003bda4d97
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 86b7949c2b4693221ebc43781bc31e4b512cb4d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795213"
 ---
 # <a name="properties-visual-basic"></a>Свойства (Visual Basic)
 
@@ -30,6 +31,6 @@ ms.locfileid: "84406305"
 |<xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>|Возвращает или задает `String` значение, представляющее текущее время дня в соответствии с вашей системой.|  
 |<xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|Возвращает или задает значение `Date`, содержащее текущую системную дату.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Справочник по языку Visual Basic](index.md)

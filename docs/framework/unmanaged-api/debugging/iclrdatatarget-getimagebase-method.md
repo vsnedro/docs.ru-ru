@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDataTarget:: GetImageBase'
 title: Метод ICLRDataTarget::GetImageBase
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 091c5f32-c160-49e3-a75f-4692e084c8e4
 topic_type:
 - apiref
-ms.openlocfilehash: f1b9f55a383f1deb867c6b3e2fa385a82158d1e9
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 34e8341b219aaa184b4894c631f854e0a31921d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794875"
 ---
 # <a name="iclrdatatargetgetimagebase-method"></a>Метод ICLRDataTarget::GetImageBase
 
@@ -43,7 +44,7 @@ HRESULT GetImageBase (
  `baseAddress`  
  заполняет Указатель на CLRDATA_ADDRESS, в котором хранится базовый адрес изображения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Имя файла изображения может содержать или не иметь пути. Если указан путь, сопоставление выполняется по всему пути; в противном случае сопоставление выполняется только с именем файла.  
   
@@ -55,8 +56,8 @@ HRESULT GetImageBase (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRDataTarget](iclrdatatarget-interface.md)

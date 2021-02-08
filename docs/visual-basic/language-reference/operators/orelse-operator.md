@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор OrElse (Visual Basic)'
 title: Оператор OrElse
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - short-circuit evaluation
 - OrElse operator [Visual Basic]
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-ms.openlocfilehash: edac3eeaef5d0127f10a0d570ca27c8158806ff3
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: 48ccbda1e0cb4f655b28e902b22fbfe0c3e66ac8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866717"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795330"
 ---
 # <a name="orelse-operator-visual-basic"></a>Оператор OrElse (Visual Basic)
 
