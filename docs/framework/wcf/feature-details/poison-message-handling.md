@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: обработка подозрительных сообщений'
 title: Обработка подозрительных сообщений
 ms.date: 03/30/2017
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
-ms.openlocfilehash: 9aeb404cea18a7dd6a9c416c0728d9905c0d782d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 1d6c8027d44da4d79562e4e427654a3d85df3e88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96244825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793627"
 ---
 # <a name="poison-message-handling"></a>Обработка подозрительных сообщений
 
@@ -54,7 +55,7 @@ ms.locfileid: "96244825"
   
  WCF предоставляет две стандартные привязки в очереди:  
   
-- <xref:System.ServiceModel.NetMsmqBinding>. Привязка .NET Framework, подходящая для выполнения связи на основе очередей с другими конечными точками WCF.  
+- <xref:System.ServiceModel.NetMsmqBinding>. Привязка платформа .NET Framework, подходящая для выполнения связи на основе очередей с другими конечными точками WCF.  
   
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. Привязка, подходящая для взаимодействия с существующими приложениями MSMQ.  
   

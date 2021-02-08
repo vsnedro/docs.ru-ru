@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о сериализуемых типах
 title: Сериализуемые типы
 ms.date: 03/30/2017
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
-ms.openlocfilehash: 4ba5fb80b3a7f4149eb49aa838826f2792147dd1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0316946a2d373f6fec4df388e5ed50bd4dc2b1c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793575"
 ---
 # <a name="serializable-types"></a>Сериализуемые типы
 
@@ -39,7 +40,7 @@ ms.locfileid: "96253964"
   
 ## <a name="inheritance"></a>Наследование  
 
- Неотмеченные типы (типы без атрибута <xref:System.Runtime.Serialization.DataContractAttribute>) могут наследоваться от типов, имеющих этот атрибут. В то же время обратное невозможно: типы с атрибутом от неотмеченных типов наследоваться не могут. Это правило применяется в первую очередь для обеспечения обратной совместимости с кодом, написанным в более ранних версиях .NET Framework.  
+ Неотмеченные типы (типы без атрибута <xref:System.Runtime.Serialization.DataContractAttribute>) могут наследоваться от типов, имеющих этот атрибут. В то же время обратное невозможно: типы с атрибутом от неотмеченных типов наследоваться не могут. Это правило применяется в первую очередь для обеспечения обратной совместимости с кодом, написанным в более ранних версиях платформа .NET Framework.  
   
 ## <a name="see-also"></a>См. также
 

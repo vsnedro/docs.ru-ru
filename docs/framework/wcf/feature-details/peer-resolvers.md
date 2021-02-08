@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: одноранговые арбитры конфликтов'
 title: Одноранговые распознаватели
 ms.date: 03/30/2017
 ms.assetid: d86d12a1-7358-450f-9727-b6afb95adb9c
-ms.openlocfilehash: c9fcfbd416fb530898b2bd963dd0df1e5c1bfd62
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: e35da7ddae2b18924b04800c698452bf7d7eeeff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96272115"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793666"
 ---
 # <a name="peer-resolvers"></a>Одноранговые распознаватели
 
@@ -38,7 +39,7 @@ ms.locfileid: "96272115"
   
  Демонстрация реализации пользовательского сопоставителя см. в [статье сопоставитель пользовательского однорангового канала](/previous-versions/dotnet/netframework-3.5/ms751466(v=vs.90)).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Подробная информация о CustomPeerResolverService: регистрация клиентов](inside-the-custompeerresolverservice-client-registrations.md)  
   

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье сериализация в JSON с помощью программирования на уровне сообщений.
 title: Сериализация в Json с помощью программирования на уровне сообщений
 ms.date: 03/30/2017
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa
-ms.openlocfilehash: 8343f7a8aa3c01557aae7df420351fa318cbb4b5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 715e44b0e2137197f5883e2327288555513f29cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253938"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793549"
 ---
 # <a name="serializing-in-json-with-message-level-programming"></a>Сериализация в Json с помощью программирования на уровне сообщений
 
