@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: <appDomainManagerType> element'
 title: Элемент <appDomainManagerType>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - appDomainManagerType element
 - <appDomainManagerType> element
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-ms.openlocfilehash: e21384de6ca07c637a79ee54207d1e3ddfbf20e6
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 633dcce2e370bda96efc61447611519d0ed04a3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91170315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787140"
 ---
 # <a name="appdomainmanagertype-element"></a>Элемент \<appDomainManagerType>
 
@@ -60,7 +61,7 @@ ms.locfileid: "91170315"
   
  Формат типа и пространства имен совпадает с форматом, используемым для <xref:System.Type.FullName%2A?displayProperty=nameWithType> Свойства.  
   
- Этот элемент конфигурации доступен только в .NET Framework 4 и более поздних версиях.  
+ Этот элемент конфигурации доступен только в платформа .NET Framework 4 и более поздних версиях.  
   
 ## <a name="example"></a>Пример  
 

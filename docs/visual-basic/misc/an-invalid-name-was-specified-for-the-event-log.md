@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: для журнала событий указано недопустимое имя'
 title: Указано недопустимое имя для журнала событий
 ms.date: 07/20/2015
 ms.assetid: b1b158bd-f13f-4371-a8af-31c0e86ae6be
-ms.openlocfilehash: 36e2bc91a671a22e808d0e30e292471729b1e50b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4786483fe0b1ae32a16b67bfb4f406587719011b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083882"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787374"
 ---
 # <a name="an-invalid-name-was-specified-for-the-event-log"></a>Указано недопустимое имя для журнала событий
 

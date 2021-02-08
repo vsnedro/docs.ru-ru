@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения <address>  является недопустимым адресом удаленного файла
 title: <address>  является недопустимым адресом удаленного файла
 ms.date: 07/20/2015
 ms.assetid: 2c312242-6c42-4754-a1f5-7e801a542604
-ms.openlocfilehash: c651169d783533d933b92d509015eb3b6f219c79
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c0d3c0366da025a70e1e676be138a9c26c7f2cb1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787400"
 ---
 # <a name="address-is-not-a-valid-remote-file-address"></a>\<address> является недопустимым адресом удаленного файла
 
