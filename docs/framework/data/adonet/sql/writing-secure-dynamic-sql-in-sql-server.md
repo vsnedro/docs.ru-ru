@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: создание безопасного динамического SQL в SQL Server'
 title: Написание безопасного динамического кода SQL в SQL Server
 ms.date: 03/30/2017
 ms.assetid: df5512b0-c249-40d2-82f9-f9a2ce6665bc
-ms.openlocfilehash: c598427a17ceb289f75fab481a55016f0efe5624
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 35db22358bae1150a80daa72cf4a86ef8fba9620
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147454"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766950"
 ---
 # <a name="writing-secure-dynamic-sql-in-sql-server"></a>Написание безопасного динамического кода SQL в SQL Server
 
@@ -73,7 +74,7 @@ ms.locfileid: "91147454"
 |--------------|-----------------|  
 |[Хранимые процедуры](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) и [Атака путем внедрения кода SQL](/sql/relational-databases/security/sql-injection) в электронной документации на SQL Server|В этих разделах описывается, как создавать хранимые процедуры и как работает внедрение кода SQL.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Защита приложений ADO.NET](../securing-ado-net-applications.md)
 - [Общие сведения о безопасности SQL Server](overview-of-sql-server-security.md)

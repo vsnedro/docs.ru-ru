@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: SQL Server интеграции среды CLR'
 title: Интеграция среды CLR и SQL Server
 ms.date: 03/30/2017
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
-ms.openlocfilehash: d9fe0f03c88584607c6bc38fcbcff3f9424fd40c
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 096bba0d183526ec8e5d272c5ea6a77ad0778e5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91183030"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767405"
 ---
 # <a name="sql-server-common-language-runtime-integration"></a>Интеграция среды CLR и SQL Server
 
@@ -21,7 +22,7 @@ ms.locfileid: "91183030"
   
 1. [Основные понятия о программировании интеграции со средой CLR](/sql/relational-databases/clr-integration/common-language-runtime-clr-integration-programming-concepts)  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Знакомство с интеграцией CLR в SQL Server](introduction-to-sql-server-clr-integration.md)  
  Предоставляет вводные сведения об интеграции SQL Server со средой CLR. Приводятся ссылки на дополнительные разделы.  
@@ -29,7 +30,7 @@ ms.locfileid: "91183030"
  [Определяемые пользователем функции среды CLR](clr-user-defined-functions.md)  
  Описывает реализацию и использование различных типов функций CLR: возвращающих табличное значение, скалярных и определяемых пользователем агрегатных функций.  
   
- [Определяемые пользователем типы CLR](clr-user-defined-types.md)  
+ [Пользовательские типы CLR](clr-user-defined-types.md)  
  Показывает, как реализовать и использовать определяемые пользователем типы данных CLR. Приводятся ссылки на дополнительные разделы.  
   
  [Хранимые процедуры CLR](clr-stored-procedures.md)  
@@ -44,7 +45,7 @@ ms.locfileid: "91183030"
  [Внутрипроцессное поведение ADO.NET в SQL Server](sql-server-in-process-specific-behavior-of-adonet.md)  
  Описывает внутрипроцессные модули SQL Server, предназначенные для поддержки технологии ADO.NET, и контекстное соединение. Приводятся ссылки на дополнительные разделы.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [SQL Server и ADO.NET](index.md)
 - [Общие сведения об ADO.NET](../ado-net-overview.md)

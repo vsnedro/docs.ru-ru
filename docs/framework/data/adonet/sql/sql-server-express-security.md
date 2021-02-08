@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: SQL Server Express безопасность'
 title: Безопасность SQL Server, экспресс-выпуск
 ms.date: 03/30/2017
 ms.assetid: cf9cf6d9-4b05-43e9-ac7b-6cefbfcd6d4e
-ms.openlocfilehash: b34e0aff4b460be2dd33b1a5e73d001c79f48f1f
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 1e23c418c28fb2b463e54f9d645c2851b9896452
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91203453"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767287"
 ---
 # <a name="sql-server-express-security"></a>Безопасность SQL Server, экспресс-выпуск
 
@@ -39,7 +40,7 @@ ms.locfileid: "91203453"
 |[Пользовательские экземпляры для тех, кто не обладает правами администратора](/previous-versions/sql/sql-server-2008/ms143684(v=sql.100)) в электронной документации на SQL Server.|Описание создания и развертывания пользовательских экземпляров.|  
 |[SQL Server Express пользовательские экземпляры](sql-server-express-user-instances.md)|Описание возможностей пользовательского экземпляра в приложении ADO.NET. Содержит сведения о том, как включить пользовательский экземпляр, подключиться к нему с помощью <xref:System.Data.SqlClient.SqlConnection>, а также информацию о времени существования пользовательского экземпляра и сценариях его использования.|  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность SQL Server](sql-server-security.md)
 - [SQL Server Express пользовательские экземпляры](sql-server-express-user-instances.md)

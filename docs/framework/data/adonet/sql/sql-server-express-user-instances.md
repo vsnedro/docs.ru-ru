@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: SQL Server Express пользовательских экземпляров'
 title: Пользовательские экземпляры SQL Server, экспресс-выпуск
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00c12376-cb26-4317-86ad-e6e9c089be57
-ms.openlocfilehash: 401b62f56918e8ac406a5ee2dda2252d328592bc
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 8579dee5c31a2b63156db72df6cc109beb843f08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91147584"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767277"
 ---
 # <a name="sql-server-express-user-instances"></a>Пользовательские экземпляры SQL Server, экспресс-выпуск
 
@@ -45,7 +46,7 @@ sp_configure 'user instances enabled','0'
   
 - Ключевое слово `Data Source` относится к родительскому экземпляру SQL Server Express, создающему пользовательский экземпляр. Экземпляр по умолчанию — .\sqlexpress.  
   
-- Параметру `Integrated Security` задается значение `true`. Для подключения к пользовательскому экземпляру требуется проверка подлинности Windows. Учетные данные SQL Server не поддерживаются.  
+- `Integrated Security` задан как `true`. Для подключения к пользовательскому экземпляру требуется проверка подлинности Windows. Учетные данные SQL Server не поддерживаются.  
   
 - `User Instance` имеет значение `true`. В этом случае вызывается пользовательский экземпляр. (Значение по умолчанию — `false`.)  
   
@@ -119,7 +120,7 @@ private static void OpenSqlConnection()
 ```  
   
 > [!NOTE]
-> Пользовательские экземпляры не поддерживаются в коде среды CLR, который выполняется в SQL Server. Если для объекта <xref:System.InvalidOperationException>, в котором в строке подключения указано значение `Open`, вызывается <xref:System.Data.SqlClient.SqlConnection>, выдается исключение `User Instance=true`.  
+> Пользовательские экземпляры не поддерживаются в коде среды CLR, который выполняется в SQL Server. Если для объекта <xref:System.Data.SqlClient.SqlConnection>, в котором в строке подключения указано значение `User Instance=true`, вызывается `Open`, выдается исключение <xref:System.InvalidOperationException>.  
   
 ## <a name="lifetime-of-a-user-instance-connection"></a>Время существования соединения пользовательского экземпляра  
 
@@ -152,11 +153,11 @@ private static void OpenSqlConnection()
   
 - Любое приложение с одним пользователем, в котором не требуется совместное использование данных.  
   
-- Развертывание ClickOnce. Если на целевом компьютере уже установлены .NET Framework 2,0 (или более поздней версии) и SQL Server Express, то пакет установки, скачанный в результате действия ClickOnce, может быть установлен и использован пользователями, не являющимися администраторами. Обратите внимание, что администратор должен установить SQL Server Express, если он является частью процесса установки. Дополнительные сведения см. в статье [ClickOnce Deployment for Windows Forms](/dotnet/desktop/winforms/clickonce-deployment-for-windows-forms) (Развертывание ClickOnce для Windows Forms).
+- Развертывание ClickOnce. Если на целевом компьютере уже установлены платформа .NET Framework 2,0 (или более поздней версии) и SQL Server Express, то пакет установки, скачанный в результате действия ClickOnce, может быть установлен и использован пользователями, не являющимися администраторами. Обратите внимание, что администратор должен установить SQL Server Express, если он является частью процесса установки. Дополнительные сведения см. в статье [ClickOnce Deployment for Windows Forms](/dotnet/desktop/winforms/clickonce-deployment-for-windows-forms) (Развертывание ClickOnce для Windows Forms).
   
 - Выделенное размещение ASP.NET с использованием проверки подлинности Windows. В интрасети может размещаться один экземпляр SQL Server Express. Приложение подключается с помощью учетной записи ASP.NET Windows, а не с использованием олицетворения. Пользовательские экземпляры не следует использовать для сценариев сторонних разработчиков или совместного размещения, где все приложения совместно используют один пользовательский экземпляр и больше не изолированы друг от друга.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [SQL Server и ADO.NET](index.md)
 - [Строки подключения](../connection-strings.md)

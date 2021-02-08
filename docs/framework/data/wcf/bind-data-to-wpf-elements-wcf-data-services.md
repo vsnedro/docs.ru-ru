@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как привязать данные к элементам Windows Presentation Foundation (службы данных WCF)
 title: Практическое руководство. Привязка данных к элементам Windows Presentation Foundation (службы данных WCF)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,18 +9,20 @@ helpviewer_keywords:
 - data binding, WCF Data Services
 - WCF Data Services, data binding
 ms.assetid: d6538ab0-0abe-426a-b9d9-e6f3a5ca2016
-ms.openlocfilehash: d6f50fb849d958ae1109324f1055b84451bde5a9
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 57ad03770681fbedf9b0d5afae82a0a2590f0bc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766534"
 ---
 # <a name="how-to-bind-data-to-windows-presentation-foundation-elements-wcf-data-services"></a>Практическое руководство. Привязка данных к элементам Windows Presentation Foundation (службы данных WCF)
 
-С помощью WCF Data Services можно привязать Windows Presentation Foundation (WPF) элементы (например, <xref:System.Windows.Controls.ListBox> или) <xref:System.Windows.Controls.ComboBox> к экземпляру <xref:System.Data.Services.Client.DataServiceCollection%601> , который обрабатывает события, создаваемые элементами управления, чтобы <xref:System.Data.Services.Client.DataServiceContext> синхронизироваться с изменениями, внесенными в данные в элементах управления. Дополнительные сведения см. [в разделе Привязка данных к элементам управления](binding-data-to-controls-wcf-data-services.md).  
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+С помощью службы данных WCF можно привязать Windows Presentation Foundation (WPF) элементы (например, <xref:System.Windows.Controls.ListBox> или) <xref:System.Windows.Controls.ComboBox> к экземпляру <xref:System.Data.Services.Client.DataServiceCollection%601> , который обрабатывает события, создаваемые элементами управления, чтобы <xref:System.Data.Services.Client.DataServiceContext> синхронизироваться с изменениями, внесенными в данные в элементах управления. Дополнительные сведения см. [в разделе Привязка данных к элементам управления](binding-data-to-controls-wcf-data-services.md).  
   
- Пример в этом разделе использует образец службы данных Northwind и автоматически сформированные клиентские классы службы данных. Эта служба и классы данных клиента создаются при завершении [краткого руководства по WCF Data Services](quickstart-wcf-data-services.md).  
+ Пример в этом разделе использует образец службы данных Northwind и автоматически сформированные клиентские классы службы данных. Эта служба и классы данных клиента создаются при завершении [краткого руководства по службы данных WCF](quickstart-wcf-data-services.md).  
   
 ## <a name="example"></a>Пример  
 

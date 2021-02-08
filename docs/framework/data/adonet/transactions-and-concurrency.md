@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: транзакции и параллелизм'
 title: Транзакции и параллельность
 ms.date: 03/30/2017
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
-ms.openlocfilehash: 049e402345e1abbb46739e48c89101207a43bb27
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: c77b9abc72ae662eec76fc40a9856ad73f000c27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91191675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766768"
 ---
 # <a name="transactions-and-concurrency"></a>Транзакции и параллельность
 
@@ -20,9 +21,9 @@ ms.locfileid: "91191675"
   
  В том случае, если в транзакции участвует несколько таблиц одной базы данных или одного сервера, явные транзакции в хранимых процедурах часто выполняются лучше. Транзакции можно создавать в хранимых процедурах SQL Server с использованием инструкций Transact-SQL `BEGIN TRANSACTION`, `COMMIT TRANSACTION` и `ROLLBACK TRANSACTION`. Дополнительные сведения см. в электронной документации по SQL Server.  
   
- Для транзакций, включающих различные диспетчеры ресурсов, например транзакцию между SQL Server и Oracle, требуется распределенная транзакция.  
+ Если для выполнения транзакций требуются различные диспетчеры ресурсов, например для транзакций между SQL Server и Oracle, необходимо использовать распределенную транзакцию.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Локальные транзакции](local-transactions.md)  
  Демонстрирует выполнение транзакций на базе данных.  
@@ -30,13 +31,13 @@ ms.locfileid: "91191675"
  [Распределенные транзакции](distributed-transactions.md)  
  Описывает выполнение распределенных транзакций в ADO.NET.  
   
- [Интеграция System.Transactions с SQL Server](system-transactions-integration-with-sql-server.md)  
- Описывает <xref:System.Transactions> интеграцию с SQL Server для работы с распределенными транзакциями.  
+ [Интеграция System. Transactions с SQL Server](system-transactions-integration-with-sql-server.md)  
+ Описывает интеграцию <xref:System.Transactions> с SQL Server для работы с распределенными транзакциями.  
   
- [Оптимистическая блокировка](optimistic-concurrency.md)  
+ [Оптимистичный параллелизм](optimistic-concurrency.md)  
  Описывается оптимистичный и пессимистичный параллелизм и проверка на выявление нарушений параллелизма.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Основные сведения о транзакциях](../transactions/transaction-fundamentals.md)
 - [Подключение к источнику данных](connecting-to-a-data-source.md)

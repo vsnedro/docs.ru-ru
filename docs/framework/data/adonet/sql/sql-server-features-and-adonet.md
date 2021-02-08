@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: SQL Server Features and ADO.NET'
 title: Возможности SQL Server и ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
-ms.openlocfilehash: 121381114fadd8b20978d2e932bf3ec8bdcdb193
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 19440a74e5561f730ece0c4f96de69f4e4baba2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91177323"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767236"
 ---
 # <a name="sql-server-features-and-adonet"></a>Возможности SQL Server и ADO.NET
 
@@ -20,7 +21,7 @@ ms.locfileid: "91177323"
   
 1. [Разработка (компонент Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Перечисление экземпляров SQL Server (ADO.NET)](enumerating-instances-of-sql-server.md)  
  Описание перечисления активных экземпляров SQL Server.  
@@ -49,7 +50,7 @@ ms.locfileid: "91177323"
  [Поддержка SqlClient для LocalDB](sqlclient-support-for-localdb.md)  
  Сведения о поддержке в SqlClient баз данных LocalDB  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [SQL Serverные операции с данными в ADO.NET](sql-server-data-operations.md)
 - [Извлечение и изменение данных в ADO.NET](../retrieving-and-modifying-data.md)
