@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: метод icordebugmodule3:: CreateReaderForInMemorySymbols'
 title: Метод ICorDebugModule3::CreateReaderForInMemorySymbols
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
 topic_type:
 - apiref
-ms.openlocfilehash: 44f4c59f95c28f9982d67875584e2f9803c0ed3b
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: af037cc891e83f53fd94bad290f40286ed665e6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790780"
 ---
 # <a name="icordebugmodule3createreaderforinmemorysymbols-method"></a>Метод ICorDebugModule3::CreateReaderForInMemorySymbols
 
@@ -56,7 +57,7 @@ HRESULT CreateReaderForInMemorySymbols (
  E_FAIL (или другие коды возврата E_)  
  Не удалось создать модуль чтения.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод можно также использовать для создания объекта средства чтения символов для модулей, не являющихся динамическими, но только после того, как символы будут первыми доступны (обозначены обратным вызовом [метода UpdateModuleSymbols](icordebugmanagedcallback-updatemodulesymbols-method.md) ).  
   
@@ -72,9 +73,9 @@ HRESULT CreateReaderForInMemorySymbols (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 4,5, 4, 3,5 SP1  
+ **Платформа .NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

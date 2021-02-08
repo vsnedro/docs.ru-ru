@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugInstanceFieldSymbol:: Name'
 title: Метод ICorDebugInstanceFieldSymbol::GetName
 ms.date: 03/30/2017
 ms.assetid: d9c12b1f-9c1d-4943-8e9e-93b55faf085f
-ms.openlocfilehash: e466a62761cc6dd1f1fc0a54f05d54f85c190d07
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 9cc2106d1527aa0b4d9e5c52115b703ffe55037f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724940"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791196"
 ---
 # <a name="icordebuginstancefieldsymbolgetname-method"></a>Метод ICorDebugInstanceFieldSymbol::GetName
 
@@ -34,7 +35,7 @@ HRESULT GetName(
  `szName`  
  [out] Массив символов, в котором хранится возвращаемое имя.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -47,9 +48,9 @@ HRESULT GetName(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugInstanceFieldSymbol](icordebuginstancefieldsymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

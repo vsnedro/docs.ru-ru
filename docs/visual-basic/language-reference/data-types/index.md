@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сводка по типам данных (Visual Basic)'
 title: Сводка по типам данных
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - storage order, controlling in Visual Basic
 - data types [Visual Basic], memory requirements
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
-ms.openlocfilehash: 5eb52ef937a677c0b7498d058b5a39a375351ddc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ac5b8e438210c2d1407e0d6a12d560f29523620c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415625"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792197"
 ---
 # <a name="data-type-summary-visual-basic"></a>Сводка типов данных (Visual Basic)
 
@@ -50,19 +51,19 @@ ms.locfileid: "84415625"
   
 |Тип Visual Basic|Структура типа среды CLR|Номинальное выделение памяти|Диапазон значений|  
 |-----------------------|--------------------------------------------|--------------------------------|-----------------|  
-|[Boolean](boolean-data-type.md)|<xref:System.Boolean>|Зависит от реализации платформы|`True` или `False`|  
+|[Логический](boolean-data-type.md)|<xref:System.Boolean>|Зависит от реализации платформы|`True` либо `False`|  
 |[Byte](byte-data-type.md)|<xref:System.Byte>|1 байт|от 0 до 255 (без знака)|  
 |[Char](char-data-type.md) (одиночный символ)|<xref:System.Char>|2 байта|от 0 до 65535 (без знака)|  
 |[Дата](date-data-type.md)|<xref:System.DateTime>|8 байт|0:00:00 (полночь) 1 января 0001 г. по 11:59:59 – 31 декабря 9999|  
-|[Decimal](decimal-data-type.md)|<xref:System.Decimal>|16 байт|от 0 до +/-79,228,162,514,264,337,593,543,950,335 (+/-7.9...E + 28) <sup>†</sup> без десятичной запятой; от 0 до +/-7.9228162514264337593543950335 с 28 разрядами справа от десятичного разделителя;<br /><br /> наименьшее ненулевое число — +/-0,0000000000000000000000000001 (+/-1E-28) <sup>†</sup>|  
+|[Десятичное число](decimal-data-type.md)|<xref:System.Decimal>|16 байт|от 0 до +/-79,228,162,514,264,337,593,543,950,335 (+/-7.9...E + 28) <sup>†</sup> без десятичной запятой; от 0 до +/-7.9228162514264337593543950335 с 28 разрядами справа от десятичного разделителя;<br /><br /> наименьшее ненулевое число — +/-0,0000000000000000000000000001 (+/-1E-28) <sup>†</sup>|  
 |[Double](double-data-type.md) (число с плавающей запятой двойной точности)|<xref:System.Double>|8 байт|-1.79769313486231570 e + 308 до-4.94065645841246544 E-324 <sup>†</sup> для отрицательных значений;<br /><br /> 4.94065645841246544 e-324 до 1.79769313486231570 E + 308 <sup>†</sup> для положительных значений|  
-|[Целое число](integer-data-type.md)|<xref:System.Int32>|4 байта|от-2 147 483 648 до 2 147 483 647 (подписано)|  
+|[Integer](integer-data-type.md)|<xref:System.Int32>|4 байта|от-2 147 483 648 до 2 147 483 647 (подписано)|  
 |[Long](long-data-type.md) (длинное целое)|<xref:System.Int64>|8 байт|от-9223372036854775808 до 9 223 372 036 854 775 807 (от а до 18 <sup>†</sup>) (подписано)|  
-|[Объект](object-data-type.md)|<xref:System.Object>см|4 байта на 32-разрядной платформе<br /><br /> 8 байт на 64-разрядной платформе|Любой тип может храниться в переменной типа`Object`|  
+|[Объект](object-data-type.md)|<xref:System.Object> см|4 байта на 32-разрядной платформе<br /><br /> 8 байт на 64-разрядной платформе|Любой тип может храниться в переменной типа `Object`|  
 |[SByte](sbyte-data-type.md)|<xref:System.SByte>|1 байт|от-128 до 127 (подписано)|  
 |[Short](short-data-type.md) (короткое целое)|<xref:System.Int16>|2 байта|от-32 768 до 32 767 (подписано)|  
 |[Single](single-data-type.md) (с плавающей запятой одиночной точности)|<xref:System.Single>|4 байта|-4028235E e + 38 – 1.401298 E-45 <sup>†</sup> для отрицательных значений;<br /><br /> 1.401298 e-45 до 4028235E E + 38 <sup>†</sup> для положительных значений|  
-|[Строка](string-data-type.md) (переменная длина)|<xref:System.String>см|Зависит от реализации платформы|от 0 до приблизительно 2 000 000 000 символов Юникода|  
+|[Строка](string-data-type.md) (переменная длина)|<xref:System.String> см|Зависит от реализации платформы|от 0 до приблизительно 2 000 000 000 символов Юникода|  
 |[UInteger](uinteger-data-type.md)|<xref:System.UInt32>|4 байта|от 0 до 4 294 967 295 (без знака)|  
 |[ULong](ulong-data-type.md)|<xref:System.UInt64>|8 байт|от 0 до 18446744073709551615 (1.8... E + 19 <sup>†</sup>) (без знака)|  
 |[Определяемый пользователем](user-defined-data-type.md) (структура)|(наследует от <xref:System.ValueType> )|Зависит от реализации платформы|Каждый элемент структуры имеет диапазон, определяемый типом данных и не зависящий от диапазонов других элементов.|  
@@ -95,7 +96,7 @@ ms.locfileid: "84415625"
 
  При `Object` ссылке на любой простой или составной тип данных в дополнение к данным, содержащимся в типе данных, используется 4 байта.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Strings.StrConv%2A>
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>

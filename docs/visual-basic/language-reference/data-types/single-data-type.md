@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: один тип данных (Visual Basic)'
 title: Тип данных Single
 ms.date: 07/20/2015
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - zeros, trailing
 - numbers [Visual Basic], floating point
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
-ms.openlocfilehash: ecb0f5f6416a2dd4ddd6888cb80ed3ac11ee58df
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f30e21d3b2d2960a040609a9422ec71cc029f5be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415535"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792132"
 ---
 # <a name="single-data-type-visual-basic"></a>Тип данных Single (Visual Basic)
 
 Содержит подписанные 32-разрядные (4-байтовые) числа с плавающей запятой с одиночной точностью в диапазоне от-4028235E E + 38 до-1.401298 E-45 для отрицательных значений и от 1.401298 E-45 до 4028235E E + 38 для положительных значений. Числа с одиночной точностью хранят приближение вещественного числа.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Используйте `Single` тип данных для хранения значений с плавающей запятой, не требующих полной ширины данных `Double` . В некоторых случаях среда CLR может `Single` объединять переменные и экономить потребление памяти.  
   
@@ -49,7 +50,7 @@ ms.locfileid: "84415535"
   
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.Single?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Single?displayProperty=nameWithType>
 - [Типы данных](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugVariableSymbol:: GetSlotIndex'
 title: Метод ICorDebugVariableSymbol::GetSlotIndex
 ms.date: 03/30/2017
 ms.assetid: 09c19f5f-afc4-4e0c-bffe-cd7147bc7a43
-ms.openlocfilehash: fc42517cb95dfc14c472b5bb9111ebd70639cee7
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b5cba06a5e80ffa323d2e6521e9ec4666f6f5f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790559"
 ---
 # <a name="icordebugvariablesymbolgetslotindex-method"></a>Метод ICorDebugVariableSymbol::GetSlotIndex
 
@@ -30,7 +31,7 @@ HRESULT GetSlotIndex(
 
  `S_OK` в случае успешного выполнения. `E_FAIL`, если переменная является аргументом функции.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Управляемый индекс слота можно использовать для получения информации о метаданных переменной.  
   
@@ -45,9 +46,9 @@ HRESULT GetSlotIndex(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

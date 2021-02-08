@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorPublishProcess:: Manage'
 title: Метод ICorPublishProcess::IsManaged
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 06b1f7cc-acdf-47a6-9d53-d9dec2424152
 topic_type:
 - apiref
-ms.openlocfilehash: dfe247bda75c3695c7c09b85729b4e057c13c62d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 55f620a896efd87c2f154ac68ef2db1a1b0a1ebc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790507"
 ---
 # <a name="icorpublishprocessismanaged-method"></a>Метод ICorPublishProcess::IsManaged
 
@@ -39,7 +40,7 @@ HRESULT IsManaged (
  `pbManaged`  
  заполняет Указатель на логическое значение, указывающее, имеет ли процесс управляемый код. Значение равно `true` , если процесс имеет управляемый код; в противном случае — `false` .  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Поскольку текущая версия `ICorPublishProcess` разрешает доступ только к процессам, имеющим управляемый код, `IsManaged` всегда возвращает `true` .  
   
@@ -51,8 +52,8 @@ HRESULT IsManaged (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorPublishProcess](icorpublishprocess-interface.md)

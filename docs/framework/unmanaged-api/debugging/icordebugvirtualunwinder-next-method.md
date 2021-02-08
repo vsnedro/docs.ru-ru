@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugVirtualUnwinder:: Next'
 title: Метод ICorDebugVirtualUnwinder::Next
 ms.date: 03/30/2017
 ms.assetid: 790e0426-e5cd-49fd-a792-f8c8635d72fe
-ms.openlocfilehash: bfc827a1503b0367a442e3f3ca0915bd2aaeb01e
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: b509e8e4fb24c66764999e67ba7e36299ce7f570
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725954"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790520"
 ---
 # <a name="icordebugvirtualunwindernext-method"></a>Метод ICorDebugVirtualUnwinder::Next
 
@@ -29,7 +30,7 @@ HRESULT Next();
   
  Если возвращается значение HRESULT, указывающее на ошибку, API ICorDebug будут возвращать `CORDBG_E_DATA_TARGET_ERROR`.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Обходчик стека должен проверять, что он продвигается вперед, поэтому в конечном итоге вызов `Next` вернет значение HRESULT, указывающее на ошибку, или значение `CORDBG_S_AT_END_OF_STACK`. Неопределенный возврат `S_OK` может привести к бесконечному циклу.  
   
@@ -44,9 +45,9 @@ HRESULT Next();
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

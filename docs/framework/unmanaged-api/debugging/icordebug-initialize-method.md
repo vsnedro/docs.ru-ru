@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе ICorDebug:: Initialize'
 title: Метод ICorDebug::Initialize
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6fae3b23-5c9f-47c0-85d8-6bb75e050786
 topic_type:
 - apiref
-ms.openlocfilehash: 5cdd89ebdbb5abb9b001c1489a54bfb867808c5c
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 6b6ddd8c1c21470477420909bcf75906b5731ee6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95723432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791599"
 ---
 # <a name="icordebuginitialize-method"></a>Метод ICorDebug::Initialize
 
@@ -44,8 +45,8 @@ HRESULT Initialize ();
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebug](icordebug-interface.md)

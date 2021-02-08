@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugAssemblyEnum'
 title: Интерфейс ICorDebugAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 891ceb43-5161-421e-a0bf-299962fd7efd
 topic_type:
 - apiref
-ms.openlocfilehash: dea5c0fd5d4ed1f830d9e75097d49c544dac2e57
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: e9dab7560da10efcb33fc48f5718f26b960cdaa3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95719253"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791495"
 ---
 # <a name="icordebugassemblyenum-interface"></a>Интерфейс ICorDebugAssemblyEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95719253"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icordebugassemblyenum-next-method.md)|Возвращает указанное количество `ICorDebugAssembly` экземпляров в перечислении, начиная с текущего положения.|  
+|[Следующий метод](icordebugassemblyenum-next-method.md)|Возвращает указанное количество `ICorDebugAssembly` экземпляров в перечислении, начиная с текущего положения.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот интерфейс не поддерживает удаленные вызовы между компьютерами или между процессами.  
@@ -44,8 +45,8 @@ ms.locfileid: "95719253"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)

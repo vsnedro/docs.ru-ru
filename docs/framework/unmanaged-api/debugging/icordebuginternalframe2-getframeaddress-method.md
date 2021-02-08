@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugInternalFrame2:: Жетфрамеаддресс'
 title: Метод ICorDebugInternalFrame2::GetFrameAddress
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4ee8d058-ffc8-4967-9133-a5adfef4e518
 topic_type:
 - apiref
-ms.openlocfilehash: 05a9ab58acb3bf5829fd231ae6d8bcc96ae06da6
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: bb745424680c5b9a5277badfbe2d96db46e2e3d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791118"
 ---
 # <a name="icordebuginternalframe2getframeaddress-method"></a>Метод ICorDebugInternalFrame2::GetFrameAddress
 
@@ -45,9 +46,9 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
 |-------------|-----------------|  
 |S_OK|Адрес внутреннего кадра успешно возвращен.|  
 |E_FAIL|Не удалось вернуть адрес внутреннего кадра.|  
-|E_INVALIDARG|`pAddress` имеет значение `null`.|  
+|E_INVALIDARG|Параметр `pAddress` равен `null`.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Значение, возвращаемое в, `pAddress` можно использовать для определения расположения внутреннего кадра относительно других кадров в стеке. Даже на компьютерах на базе IA-64 внутренний кадр находится только в стеке и не имеет соответствующего указателя на резервное хранилище.  
   
@@ -59,9 +60,9 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugInternalFrame2](icordebuginternalframe2-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

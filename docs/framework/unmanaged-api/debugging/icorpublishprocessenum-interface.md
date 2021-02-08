@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorPublishProcessEnum'
 title: Интерфейс ICorPublishProcessEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: aac8fcf9-ac09-437c-bd5c-2fda14ae1007
 topic_type:
 - apiref
-ms.openlocfilehash: ebf484524b32d8e917d88c21425fab314dfc41be
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 87d80d066995dbeca67f461e01652dd3deb3bf1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790494"
 ---
 # <a name="icorpublishprocessenum-interface"></a>Интерфейс ICorPublishProcessEnum
 
@@ -29,9 +30,9 @@ ms.locfileid: "95692622"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод Next](icorpublishprocessenum-next-method.md)|Возвращает указанное количество `ICorPublishProcess` экземпляров из коллекции, начиная с текущей позиции.|  
+|[Следующий метод](icorpublishprocessenum-next-method.md)|Возвращает указанное количество `ICorPublishProcess` экземпляров из коллекции, начиная с текущей позиции.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `ICorPublishProcessEnum`Интерфейс реализует методы абстрактного интерфейса [ICorPublishEnum](icorpublishenum-interface.md).  
   
@@ -45,9 +46,9 @@ ms.locfileid: "95692622"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Кокласс CorpubPublish](corpubpublish-coclass.md)

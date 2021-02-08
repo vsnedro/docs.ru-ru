@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс метод icordebugremote'
 title: Интерфейс ICorDebugRemote
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa
 topic_type:
 - apiref
-ms.openlocfilehash: 276d36c511105087190cb7e9dfeaa6932efc67ff
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c9d92800c68155216a077180ea0b613c67423dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95712109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790676"
 ---
 # <a name="icordebugremote-interface"></a>Интерфейс ICorDebugRemote
 
@@ -64,7 +65,7 @@ interface ICorDebugRemote : IUnknown
 |[Метод ICorDebugRemote::CreateProcessEx](icordebugremote-createprocessex-method.md)|Создает процесс на удаленном компьютере для управляемой отладки.|  
 |[Метод ICorDebugRemote::DebugActiveProcessEx](icordebugremote-debugactiveprocessex-method.md)|Запускает процесс на удаленном компьютере в отладчике.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  В настоящее время эта функция поддерживается только для отладки целевого объекта приложения на основе Silverlight, который выполняется на удаленном компьютере Macintosh.  
   
@@ -76,9 +77,9 @@ interface ICorDebugRemote : IUnknown
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:** 4,5, 4, 3,5 SP1  
+ **Платформа .NET Framework версии:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Интерфейс ICorDebug](icordebug-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении ILCodeKind
 title: Перечисление ILCodeKind
 ms.date: 03/30/2017
 dev_langs:
@@ -12,12 +13,12 @@ api_type:
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type:
 - apiref
-ms.openlocfilehash: 7e9cf760ec609786804a05177349ee2eacd79eaf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2d3163b2c601c6f53d9a532fa877c014a67b3e18
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95692245"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790468"
 ---
 # <a name="ilcodekind-enumeration"></a>Перечисление ILCodeKind
 
@@ -41,7 +42,7 @@ typedef enum ILCodeKind {
 |`ILCODE_ORIGINAL_IL`|Отладчик не имеет доступа к информации из инструментария ReJIT.|  
 |`ILCODE_REJIT_IL`|Отладчик имеет доступ к информации из инструментария ReJIT.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Член `ILCodeKind` перечисления может быть передан методам [EnumerateLocalVariablesEx](icordebugilframe4-enumeratelocalvariablesex-method.md) и [GetLocalVariableEx](icordebugilframe4-getlocalvariableex-method.md) , чтобы определить, может ли отладчик получить доступ к переменным, добавленным в инструментарий профилировщика ReJIT, а также к методу [GetCodeEx](icordebugilframe4-getcodeex-method.md) , чтобы определить, может ли отладчик получить доступ к инструментированному IL.  
   
@@ -53,9 +54,9 @@ typedef enum ILCodeKind {
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления отладки](debugging-enumerations.md)
 - [Интерфейс ICorDebugILFrame4](icordebugilframe4-interface.md)

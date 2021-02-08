@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: тип данных Object'
 title: Object Data Type
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - Object data type
 - Object data type [Visual Basic], reference
 ms.assetid: 61ea4a7c-3b3d-48d4-adc4-eacfa91779b2
-ms.openlocfilehash: 14770e74a0169dba3a45a04845dd32323e6201e3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b1f169e4e590335a0879f5ecd9b68507a3fa2ccb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415587"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792158"
 ---
 # <a name="object-data-type"></a>Object Data Type
 
 Содержит адреса, которые ссылаются на объекты. В переменную можно назначить любой ссылочный тип (строка, массив, класс или интерфейс) `Object` . `Object`Переменная также может ссылаться на данные любого типа значения (числовой,,,, `Boolean` `Char` `Date` Структура или перечисление).
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 `Object`Тип данных может указывать на данные любого типа данных, включая любой экземпляр объекта, распознаваемый приложением. Используйте `Object` , если во время компиляции неизвестно, на какой тип данных может указывать переменная.
 
@@ -46,7 +47,7 @@ datTyp = Type.GetTypeCode(myObject.GetType())
 
 ## <a name="programming-tips"></a>Советы по программированию
 
-- **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для .NET Framework, например автоматизации или COM-объекты, помните, что типы указателей в других средах несовместимы с `Object` типом Visual Basic.
+- **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для платформа .NET Framework, например автоматизации или COM-объекты, помните, что типы указателей в других средах несовместимы с `Object` типом Visual Basic.
 
 - **Производительность.** Переменная, объявляемая с `Object` типом, достаточно гибка, чтобы содержать ссылку на любой объект. Однако при вызове метода или свойства для такой переменной всегда вызывается *позднее связывание* (во время выполнения). Чтобы принудительно выполнить *раннее связывание* (во время компиляции) и повысить производительность, объявите переменную с конкретным именем класса или приведите ее к конкретному типу данных.
 
@@ -56,9 +57,9 @@ datTyp = Type.GetTypeCode(myObject.GetType())
 
   Однако при преобразовании между типами значений и `Object` Visual Basic выполняет операции, называемые *упаковкой* и *распаковкой*, что делает выполнение более медленным.
 
-- **Символы типа.** `Object`не имеет символа типа литерала или символа типа идентификатора.
+- **Символы типа.** `Object` не имеет символа типа литерала или символа типа идентификатора.
 
-- **Тип Framework.** Соответствующий тип в .NET Framework — это <xref:System.Object?displayProperty=nameWithType> класс.
+- **Тип Framework.** Соответствующий тип в платформа .NET Framework — это <xref:System.Object?displayProperty=nameWithType> класс.
 
 ## <a name="example"></a>Пример
 
@@ -71,7 +72,7 @@ Dim myCollection As New Collection()
 objDb = myCollection.Item(1)
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Object>
 - [Типы данных](index.md)

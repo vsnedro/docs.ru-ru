@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugVariableSymbol:: GetValue'
 title: Метод ICorDebugVariableSymbol::GetValue
 ms.date: 03/30/2017
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-ms.openlocfilehash: 0a57b1a31e1ef4b0db317012b25bc65ecbbaf011
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: ccd7eae5cc4740e83d0210a903ba0e7778aa8896
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95725967"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790572"
 ---
 # <a name="icordebugvariablesymbolgetvalue-method"></a>Метод ICorDebugVariableSymbol::GetValue
 
@@ -46,7 +47,7 @@ HRESULT GetValue(
  `pValue`  
  [out] Массив байтов, содержащий значение переменной.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -59,9 +60,9 @@ HRESULT GetValue(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugManagedCallback::D Ебугжереррор'
 title: Метод ICorDebugManagedCallback::DebuggerError
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9e983d11-eaf3-4741-b936-29ec456384a3
 topic_type:
 - apiref
-ms.openlocfilehash: eb95bf779e54742cd2cc4b688c24a49e6d85a40d
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 2f73e07711f7d2ce865aab8f90862563e767fd16
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731908"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791010"
 ---
 # <a name="icordebugmanagedcallbackdebuggererror-method"></a>Метод ICorDebugManagedCallback::DebuggerError
 
@@ -47,7 +48,7 @@ HRESULT DebuggerError (
  `errorCode`  
  окне Целое число, указывающее ошибку CLR.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Процесс может быть помещен в сквозной режим в зависимости от характера ошибки.  
   
@@ -61,8 +62,8 @@ HRESULT DebuggerError (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

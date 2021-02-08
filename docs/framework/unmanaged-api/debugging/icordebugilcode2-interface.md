@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugILCode2'
 title: Интерфейс ICorDebugILCode2
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: f9dc2afd-df8a-464d-bdbf-5af0a1d4bf85
 topic_type:
 - apiref
-ms.openlocfilehash: b9289b5afc88c926ce585a4e620364cf2dc979d5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 52e47b8cbf8f9926797e193944fd7e97b2e4dbcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95703334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791417"
 ---
 # <a name="icordebugilcode2-interface"></a>Интерфейс ICorDebugILCode2
 
@@ -38,9 +39,9 @@ ms.locfileid: "95703334"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugILCode](icordebugilcode-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

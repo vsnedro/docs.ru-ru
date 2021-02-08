@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: короткий тип данных (Visual Basic)'
 title: Тип данных Short
 ms.date: 01/31/2018
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - Short data type
 - literal type characters [Visual Basic], S
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
-ms.openlocfilehash: 176d27c86127dac1d9c9c0231790f7a5c2a2fefc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8c6bee45355548b3a32d74d059159918b4009fbb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792145"
 ---
 # <a name="short-data-type-visual-basic"></a>Короткий тип данных (Visual Basic)
 
 Содержит 16-битные (2-байтные) целые числа со знаком в диапазоне от-32 768 до 32 767.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Используйте `Short` тип данных для хранения целочисленных значений, не требующих полной ширины данных `Integer` . В некоторых случаях среда CLR может `Short` объединять переменные и экономить потребление памяти.  
   
@@ -66,11 +67,11 @@ Dim number = &H_3264S
 
 - **Расширяющие.** `Short`Тип данных расширяется до `Integer` ,, `Long` , `Decimal` `Single` или `Double` . Это означает, что тип `Short` можно преобразовать в любой из этих типов без возникновения ошибки <xref:System.OverflowException?displayProperty=nameWithType>.  
   
-- **Символы типа.** При добавлении к литералу символа типа литерала `S` производится принудительное приведение литерала к типу данных `Short`. `Short`не имеет символа типа идентификатора.  
+- **Символы типа.** При добавлении к литералу символа типа литерала `S` производится принудительное приведение литерала к типу данных `Short`. `Short` не имеет символа типа идентификатора.  
   
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.Int16?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Int16?displayProperty=nameWithType>
 - [Типы данных](index.md)

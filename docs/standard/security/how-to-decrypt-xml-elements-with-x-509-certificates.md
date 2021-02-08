@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как расшифровывать XML-элементы с помощью сертификатов X. 509.
 title: Практическое руководство. Дешифровка XML-элементов с помощью сертификатов X.509
 ms.date: 07/14/2020
 dev_langs:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - X.509 certificates
 - certificates, X.509 certificates
 ms.assetid: bd015722-d88d-408d-8ca8-e4e475c441ed
-ms.openlocfilehash: 02a4a4ada6dcc242a96d630699797f2ea76987e3
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 40006ca1d3e76dbbc0899c0c22090b27c2cfb0de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792379"
 ---
 # <a name="how-to-decrypt-xml-elements-with-x509-certificates"></a>Практическое руководство. Дешифровка XML-элементов с помощью сертификатов X.509
 
@@ -69,7 +70,7 @@ ms.locfileid: "94820284"
   
 ## <a name="compiling-the-code"></a>Компиляция кода  
   
-- В проекте, предназначенном для .NET Framework, включите ссылку на `System.Security.dll` .
+- В проекте, предназначенном для платформа .NET Framework, включите ссылку на `System.Security.dll` .
 
 - В проекте, ориентированном на .NET Core или .NET 5, установите пакет NuGet [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
 
@@ -79,7 +80,7 @@ ms.locfileid: "94820284"
 
 Используемый в этом примере сертификат X.509 предназначен исключительно для тестирования.  Приложения должны использовать сертификат X. 509, созданный доверенным центром сертификации.  
   
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Модель криптографии](cryptography-model.md)
 - [службы шифрования](cryptographic-services.md)

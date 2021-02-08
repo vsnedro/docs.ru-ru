@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugVariableSymbol:: resize'
 title: Метод ICorDebugVariableSymbol::GetSize
 ms.date: 03/30/2017
 ms.assetid: add0cd9d-9a29-49b1-ae07-d9d3786b4ccd
-ms.openlocfilehash: 1079351e75ec9c48a9657f514ee56e2e6a4b0920
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f4098bf5e053ab66dd7966d4b665cfad4dee01d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731375"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790585"
 ---
 # <a name="icordebugvariablesymbolgetsize-method"></a>Метод ICorDebugVariableSymbol::GetSize
 
@@ -26,7 +27,7 @@ HRESULT GetSize(
  `pcbValue`  
  Указатель на 32-разрядное целое число без знака, содержащее размер переменной.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
 > Этот метод доступен только в машинном коде .NET.  
@@ -39,9 +40,9 @@ HRESULT GetSize(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

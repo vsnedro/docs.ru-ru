@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugManagedCallback:: CreateProcess'
 title: Метод ICorDebugManagedCallback::CreateProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8e89d5ee-e4e3-4738-8302-0b7d1cf4846e
 topic_type:
 - apiref
-ms.openlocfilehash: cd24e672c65769586dc618c21503dbb344566974
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 564c9862dd90431f0626204fdfe49e59b85a124d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731817"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791053"
 ---
 # <a name="icordebugmanagedcallbackcreateprocess-method"></a>Метод ICorDebugManagedCallback::CreateProcess
 
@@ -39,7 +40,7 @@ HRESULT CreateProcess (
  `pProcess`  
  окне Указатель на объект ICorDebugProcess, представляющий процесс, который был присоединен или запущен.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод не вызывается до тех пор, пока не будет инициализирована среда CLR. Большая часть методов [ICorDebug](icordebug-interface.md) возвратит CORDBG_E_NOTREADY перед `CreateProcess` обратным вызовом.  
   
@@ -51,8 +52,8 @@ HRESULT CreateProcess (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о методе: Икордебугмодуледебужевент:: module'
 title: Метод ICorDebugModuleDebugEvent::GetModule
 ms.date: 03/30/2017
 ms.assetid: b1141c35-4253-4e34-b3e4-ed406a9dea4f
-ms.openlocfilehash: ec23cda02ff689a3365fe96fb5280054a9795caa
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: c6d7171da231576ff90f54aaefe4b473af0afd40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95709509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790741"
 ---
 # <a name="icordebugmoduledebugeventgetmodule-method"></a>Метод ICorDebugModuleDebugEvent::GetModule
 
@@ -26,7 +27,7 @@ HRESULT GetModule(
  `ppModule`  
  [out] Указатель на адрес объекта ICorDebugModule, представляющего объединенный модуль, который был только что загружен или выгружен.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Можно вызвать метод [GetEventKind](icordebugdebugevent-geteventkind-method.md) , чтобы определить, был ли модуль загружен или выгружен.  
   
@@ -41,9 +42,9 @@ HRESULT GetModule(
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugModuleDebugEvent](icordebugmoduledebugevent-interface.md)
 - [Интерфейсы отладки](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о типе данных Integer (Visual Basic)
 title: Тип данных Integer
 ms.date: 01/31/2018
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - I literal type character [Visual Basic]
 - Integer data type
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-ms.openlocfilehash: aa7b64162308d6af2763b29034c5a7276c973876
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8c60bf19ecd44ca7c9972cbfeb4ee2197bcb137c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792210"
 ---
 # <a name="integer-data-type-visual-basic"></a>Тип данных Integer (Visual Basic)
 
 Содержит 32-разрядные (4-байтовые) целые числа со знаком в диапазоне от -2 147 483 648 до 2 147 483 647.  
   
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
  Тип данных `Integer` обеспечивает оптимальную производительность на 32-разрядных процессорах. Другие целочисленные типы загружаются в память и сохраняются в памяти с более низкой скоростью.  
   
@@ -69,7 +70,7 @@ Dim number = &H_035826I
 
 ## <a name="programming-tips"></a>Советы по программированию
 
-- **Вопросы взаимодействия.** При взаимоработе с компонентами, которые не записываются для .NET Framework, таких как автоматизация или COM-объекты, помните, что `Integer` в других средах ширина данных (16 бит) отличается. При передаче 16-разрядного аргумента такому компоненту в новом коде Visual Basic следует объявить его как `Short`, а не как `Integer`.  
+- **Вопросы взаимодействия.** При взаимоработе с компонентами, которые не записываются для платформа .NET Framework, таких как автоматизация или COM-объекты, помните, что `Integer` в других средах ширина данных (16 бит) отличается. При передаче 16-разрядного аргумента такому компоненту в новом коде Visual Basic следует объявить его как `Short`, а не как `Integer`.  
   
 - **Расширяющие.** Тип данных `Integer` можно расширить до `Long`, `Decimal`, `Single` или `Double`. Это означает, что тип `Integer` можно преобразовать в любой из этих типов без возникновения ошибки <xref:System.OverflowException?displayProperty=nameWithType>.  
   
@@ -95,7 +96,7 @@ k = 4.5
 k = 5.5  
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Int32?displayProperty=nameWithType>
 - [Типы данных](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICorDebugILFrame4'
 title: Интерфейс ICorDebugILFrame4
 ms.date: 03/30/2017
 api_name:
@@ -10,12 +11,12 @@ api_type:
 ms.assetid: 1e739183-3e05-49e5-846f-4075256e41de
 topic_type:
 - apiref
-ms.openlocfilehash: 7d0f3661c7941c5f2f85fa5b0b67af213de75f05
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: f2d29229f039509ed7799399f0d4d701e8cafba7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95724953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791209"
 ---
 # <a name="icordebugilframe4-interface"></a>Интерфейс ICorDebugILFrame4
 
@@ -31,7 +32,7 @@ ms.locfileid: "95724953"
 |[Метод GetCodeEx](icordebugilframe4-getcodeex-method.md)|Возвращает код, который выполняется этим кадром стека.|  
 |[Метод GetLocalVariableEx](icordebugilframe4-getlocalvariableex-method.md)|Возвращает значение локальной переменной в кадре промежуточного языка.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Эти методы предоставляют функциональные возможности в дополнение к [возможностям,](icordebugframe-getcode-method.md)предоставляемым методами [енумерателокалвариаблес](icordebugilframe-enumeratelocalvariables-method.md), [жетлокалвариабле](icordebugilframe-getlocalvariable-method.md) и. Каждый метод включает параметр `flags`, определяющий видимость дополнительных локальных переменных или кода, определенных ReJIT-запросом профилировщика.  
   
@@ -43,9 +44,9 @@ ms.locfileid: "95724953"
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы отладки](debugging-interfaces.md)
 - [Отладка](index.md)

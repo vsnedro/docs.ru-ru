@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о типе данных Long (Visual Basic)
 title: Тип данных Long
 ms.date: 01/31/2018
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - data types [Visual Basic], assigning
 - Long data type
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
-ms.openlocfilehash: 7c076cd2198c85560f7c63c69e051697966c9524
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cb4a22fa3b9d1440f755c8a3412aa3a918b7f261
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792184"
 ---
 # <a name="long-data-type-visual-basic"></a>Тип данных Long (Visual Basic)
 
 Содержит 64-битные (8-байтные) целые числа со знаком в диапазоне от-9223372036854775808 до 9 223 372 036 854 775 807 (1 – 7... E + 18).
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Используйте `Long` тип данных для хранения целочисленных чисел, которые слишком велики, чтобы вместить их в `Integer` тип данных.
 
@@ -68,7 +69,7 @@ Dim number = &H_0FAC_0326_1489_D68CL
 
 ## <a name="programming-tips"></a>Советы по программированию
 
-- **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для .NET Framework, например автоматизации или COM-объекты, помните, что `Long` в других средах используется другая ширина данных (32 бит). При передаче аргумента 32-bit в такой компонент объявите его как `Integer` вместо `Long` в новом коде Visual Basic.
+- **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для платформа .NET Framework, например автоматизации или COM-объекты, помните, что `Long` в других средах используется другая ширина данных (32 бит). При передаче аргумента 32-bit в такой компонент объявите его как `Integer` вместо `Long` в новом коде Visual Basic.
 
 - **Расширяющие.** `Long`Тип данных расширяется до `Decimal` , `Single` или `Double` . Это означает, что тип `Long` можно преобразовать в любой из этих типов без возникновения ошибки <xref:System.OverflowException?displayProperty=nameWithType>.
 
@@ -76,7 +77,7 @@ Dim number = &H_0FAC_0326_1489_D68CL
 
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.Int64?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Int64>
 - [Типы данных](index.md)

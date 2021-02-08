@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICorDebugManagedCallback:: ExitThread'
 title: Метод ICorDebugManagedCallback::ExitThread
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 62db708b-6cf0-45c5-b897-4b5c75bd2505
 topic_type:
 - apiref
-ms.openlocfilehash: 2ccb06b974cb17dff987ba42b647224cdc4c4ff2
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 4c9472d6377246833c7c30f072549da9c44f05d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95688951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790949"
 ---
 # <a name="icordebugmanagedcallbackexitthread-method"></a>Метод ICorDebugManagedCallback::ExitThread
 
@@ -43,7 +44,7 @@ HRESULT ExitThread (
  `thread`  
  окне Указатель на объект ICorDebugThread, представляющий управляемый поток.  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  После `ExitThread` запуска обратного вызова поток больше не будет отображаться в перечислениях потоков.  
   
@@ -55,8 +56,8 @@ HRESULT ExitThread (
   
  **Библиотека:** CorGuids.lib  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)
