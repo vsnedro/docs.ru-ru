@@ -8,12 +8,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.openlocfilehash: ada336ee5fce317315bb5f3974e0366f7bca3985
-ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
+ms.openlocfilehash: 111430bf32debfcb80ea12aa9eb89c52f695d3cb
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94557107"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585693"
 ---
 # <a name="whats-new-for-visual-basic"></a>Новые возможности Visual Basic
 
@@ -21,12 +21,15 @@ ms.locfileid: "94557107"
 
 ## <a name="current-version"></a>Текущая версия
 
-Visual Basic 16.0/Visual Studio 2019 версии 16.0\
-Описание новых функций см. в статье о [Visual Basic 16.0](#visual-basic-160).
+Visual Basic 16.9 / Visual Studio 2019 версии 16.9\
+Описание новых функций см. в статье о [Visual Basic 16.9](#visual-basic-169).
 
 Вы можете скачать последний пакет SDK для .NET на странице [скачиваемых файлов .NET](https://dotnet.microsoft.com/download).
 
 ## <a name="previous-versions"></a>Предыдущие версии
+
+Visual Basic 16.0/Visual Studio 2019 версии 16.0\
+Описание новых функций см. в статье о [Visual Basic 16.0](#visual-basic-160).
 
 Visual Basic 15.8/Visual Studio 2017 версии 15.8\
 Описание новых функций см. в статье о [Visual Basic 15.8](#visual-basic-158).
@@ -63,6 +66,10 @@ Visual Basic/Visual Studio .NET 2003\
 
 Visual Basic/Visual Studio .NET 2002\
 Первый выпуск Visual Basic .NET
+
+## <a name="visual-basic-169"></a>Visual Basic 16.9
+
+Visual Basic 16.9 позволяет использовать свойства только для инициализации.
 
 ## <a name="visual-basic-160"></a>Visual Basic 16.0
 

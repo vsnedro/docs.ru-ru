@@ -1,16 +1,17 @@
 ---
+description: 'Узнайте подробнее о: Начало работы с Visual Basic'
 title: Начало работы
 ms.date: 09/10/2018
 helpviewer_keywords:
 - get started, Visual Basic
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-ms.openlocfilehash: a56532a33bc0ef0aae73de7f80e533038212c5ec
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 0a7a2e5c859d6c72459b34a62571a2ce8b3b0c3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495490"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675264"
 ---
 # <a name="get-started-with-visual-basic"></a>Начало работы с Visual Basic
 
