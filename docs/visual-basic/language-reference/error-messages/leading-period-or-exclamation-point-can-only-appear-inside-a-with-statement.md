@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: BC30157: ведущие "." или "!" могут использоваться только в операторе "with"'
 title: Символ "." или "!", стоящий в начале оператора, может использоваться только внутри оператора "With"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30157
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
-ms.openlocfilehash: 4ff273d5930fe58a5bccf0f4f4c10e971d777d01
-ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
+ms.openlocfilehash: e0325ac3c54046718d71df37edaac1edaf12f43e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92162509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795902"
 ---
 # <a name="bc30157-leading--or--can-only-appear-inside-a-with-statement"></a>BC30157: ведущие "." или "!" могут использоваться только в операторе "with"
 

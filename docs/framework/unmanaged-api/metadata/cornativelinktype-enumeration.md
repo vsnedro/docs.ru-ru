@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении Корнативелинктипе
 title: Перечисление CorNativeLinkType
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f86ff37-2dab-4e64-819a-76b3bfe828ff
 topic_type:
 - apiref
-ms.openlocfilehash: c155373f7da47e904c94a44efa2fba42309d4218
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40efc75a793da8b024eff3d7c2c620123eca08b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95671360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784344"
 ---
 # <a name="cornativelinktype-enumeration"></a>Перечисление CorNativeLinkType
 
@@ -58,8 +59,8 @@ typedef enum
   
  **Библиотека:** Включается в качестве ресурса в MsCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения о свойствах хранилища экземпляров рабочих процессов SQL
 title: Свойства хранилища экземпляров рабочего процесса SQL
 ms.date: 03/30/2017
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
-ms.openlocfilehash: 2a21f5f858c5242ad88d65a583964fb95589948d
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: be4ebdc9a91c78e56a254bf3c1e868e12a2d7925
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96245995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777636"
 ---
 # <a name="properties-of-sql-workflow-instance-store"></a>Свойства хранилища экземпляров рабочего процесса SQL
 
 В этом подразделе приводятся подробные сведения о свойствах хранилища экземпляров рабочих процессов SQL.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
   
 - [Параметр кодировки экземпляров](instance-encoding-option.md)  
   

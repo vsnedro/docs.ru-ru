@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorLinkerOptions
 title: Перечисление CorLinkerOptions
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a656aad6-cc7e-4994-8251-004a6a45e18f
 topic_type:
 - apiref
-ms.openlocfilehash: 188301d31b2fcfaf7b1c6139111e8f1296ccf7e5
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 40f8ba6382fc937a072e01f9b3f6f89056f628db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95677249"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784435"
 ---
 # <a name="corlinkeroptions-enumeration"></a>Перечисление CorLinkerOptions
 
@@ -47,8 +48,8 @@ typedef enum CorLinkerOptions {
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

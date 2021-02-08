@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перечислении CorPinvokeMap
 title: Перечисление CorPinvokeMap
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: da3ee54b1c3361149c11a9cfad8bdb07a5007ecf
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 8285632725096b4e6afc85fe54a89f12fc899dd1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95706142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784266"
 ---
 # <a name="corpinvokemap-enumeration"></a>Перечисление CorPinvokeMap
 
@@ -79,9 +80,9 @@ typedef enum  CorPinvokeMap {
 |`pmThrowOnUnmappableCharUseAssem`|Зарезервировано.|  
 |`pmThrowOnUnmappableCharEnabled`|Создавать исключение, когда модуль маршалинга взаимодействия встречает несопоставимый символ.|  
 |`pmThrowOnUnmappableCharDisabled`|Не вызывайте исключение, если модуль маршалинга взаимодействия встречает несопоставимый символ.|  
-|`pmThrowOnUnmappableCharMask`|Зарезервированное|  
+|`pmThrowOnUnmappableCharMask`|Зарезервировано|  
 |`pmSupportsLastError`|Разрешить вызываемому `SetLastError` методу вызывать функцию Win32 перед возвратом из метода с атрибутом.|  
-|`pmCallConvMask`|Зарезервированное|  
+|`pmCallConvMask`|Зарезервировано|  
 |`pmCallConvWinapi`|Используйте соглашение о вызовах платформы по умолчанию. Например, в Windows значение по умолчанию — `StdCall` и на Windows CE .NET — `Cdecl` .|  
 |`pmCallConvCdecl`|Используйте `Cdecl` соглашение о вызовах. В этом случае вызывающий объект очищает стек. Это позволяет вызывать функции с `varargs` (то есть функциями, принимающими переменное количество параметров).|  
 |`pmCallConvStdcall`|Используйте `StdCall` соглашение о вызовах. В этом случае вызываемый объект очищает стек. Это соглашение, используемое по умолчанию для вызова неуправляемых функций с вызовом неуправляемого кода.|  
@@ -95,8 +96,8 @@ typedef enum  CorPinvokeMap {
   
  **Заголовок:** Корхдр. h  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Перечисления метаданных](metadata-enumerations.md)

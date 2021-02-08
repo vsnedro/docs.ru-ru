@@ -1,4 +1,5 @@
 ---
+description: 'См. Дополнительные сведения о методе ICLRRuntimeInfo:: Overloads'
 title: Метод ICLRRuntimeInfo::IsLoadable
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 205ca53b-e78e-49b2-9a46-2a7823e96b8c
 topic_type:
 - apiref
-ms.openlocfilehash: 2236e815211168d8e7105375b75f30128f7f209a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: cf63212350bfbd18e2a312add72818b163c32d0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95714977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789792"
 ---
 # <a name="iclrruntimeinfoisloadable-method"></a>Метод ICLRRuntimeInfo::IsLoadable
 
@@ -47,7 +48,7 @@ HRESULT IsLoadable(
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|Параметр `pbLoadable` имеет значение null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Если в процесс уже загружена другая среда выполнения, и среда выполнения, связанная с этим интерфейсом, может быть загружена для внутрипроцессного параллельного выполнения, `pbLoadable` возвращает `true` . Если две среды выполнения не могут выполняться параллельно, `pbLoadable` возвращает `false` . Например, общеязыковая среда выполнения (CLR) версии 4 может работать параллельно в том же процессе с CLR версии 2,0 или CLR версии 1,1. Однако среда CLR версии 1,1 и CLR версии 2,0 не могут выполняться параллельно в процессе.  
   
@@ -61,9 +62,9 @@ HRESULT IsLoadable(
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRRuntimeInfo](iclrruntimeinfo-interface.md)
 - [Интерфейсы размещения](hosting-interfaces.md)

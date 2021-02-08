@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иклрдомаинманажер'
 title: Интерфейс ICLRDomainManager
 ms.date: 03/30/2017
 api_name:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICLRDomainManager interface [.NET Framework hosting]
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
-ms.openlocfilehash: a5abb601fe795a0c615403eec69f68ad9f66f00f
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: d719e89d81e8c7abb1f238ce50b4e236de17ac72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95681175"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790013"
 ---
 # <a name="iclrdomainmanager-interface"></a>Интерфейс ICLRDomainManager
 
@@ -30,7 +31,7 @@ ms.locfileid: "95681175"
 |[Метод SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md)|Задает тип, производный от <xref:System.AppDomainManager?displayProperty=nameWithType> класса диспетчера домена приложения, который будет использоваться для инициализации домена приложения по умолчанию.|  
 |[Метод SetPropertiesForDefaultAppDomain](iclrdomainmanager-setpropertiesfordefaultappdomain-method.md)|Задает свойства, которые будут использоваться для инициализации домена приложения по умолчанию.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Чтобы получить экземпляр этого интерфейса, вызовите метод [ICLRControl:: GetCLRManager](iclrcontrol-getclrmanager-method.md) с типом менеджера IID `IID_ICLRDomainManager` .  
   
@@ -42,9 +43,9 @@ ms.locfileid: "95681175"
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейсы размещения](hosting-interfaces.md)
 - [Размещение](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Метод IMetaDataEmit:: Жеттокенфромсиг'
 title: Метод IMetaDataEmit::GetTokenFromSig
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 50a58a83-6287-40a4-b315-47823cea0a5c
 topic_type:
 - apiref
-ms.openlocfilehash: b41891227d94b66bf59128d620eba9da117fe92a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 3b9b38389a2bf78a65baa2cf96e3a422c54d0bcb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95722054"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783928"
 ---
 # <a name="imetadataemitgettokenfromsig-method"></a>Метод IMetaDataEmit::GetTokenFromSig
 
@@ -55,9 +56,9 @@ HRESULT GetTokenFromSig (
   
  **Библиотека:** Используется в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс IMetaDataEmit](imetadataemit-interface.md)
 - [Интерфейс IMetaDataEmit2](imetadataemit2-interface.md)

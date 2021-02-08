@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRMetaHost:: Енумерателоадедрунтимес'
 title: Метод ICLRMetaHost::EnumerateLoadedRuntimes
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22fc0a3f-dce4-4766-9a3c-9fab15f4b4ca
 topic_type:
 - apiref
-ms.openlocfilehash: 98184dd6ea16df066905039b028acd689ff3f290
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 508c4daca7e34366e0da35591f4e7a780301e823
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95730439"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789870"
 ---
 # <a name="iclrmetahostenumerateloadedruntimes-method"></a>Метод ICLRMetaHost::EnumerateLoadedRuntimes
 
@@ -52,7 +53,7 @@ HRESULT EnumerateLoadedRuntimes (
 |S_OK|Метод завершился успешно.|  
 |E_POINTER|Параметр `ppEnumerator` имеет значение null.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  Этот метод перечисляет все загруженные среды выполнения, даже если они были загружены с устаревшими функциями, такими как [CorBindToRuntime](corbindtoruntime-function.md).  
   
@@ -64,9 +65,9 @@ HRESULT EnumerateLoadedRuntimes (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRMetaHost](iclrmetahost-interface.md)
 - [Размещение](index.md)

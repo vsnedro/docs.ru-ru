@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: объявления обнаружения и клиент объявлений'
 title: Объявления обнаружения и клиент объявления
 ms.date: 03/30/2017
 ms.assetid: 426c6437-f8d2-4968-b23a-18afd671aa4b
-ms.openlocfilehash: 4ad0b3ea5c257fa3117c426391bd59ad7b560d4f
-ms.sourcegitcommit: 581ab03291e91983459e56e40ea8d97b5189227e
+ms.openlocfilehash: 2076b4dbdc57bd3de47fccdb4a51ef9e6fc48366
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70040179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802974"
 ---
 # <a name="discovery-announcements-and-announcement-client"></a>Объявления обнаружения и клиент объявления
 
@@ -18,7 +19,7 @@ ms.locfileid: "70040179"
 Когда служба, настроенная для объявлений, подключается к сети и становится доступной для обнаружения, она отправляет сообщение Hello, которое объявляет прослушивающим клиентам о ее доступности. Сообщение содержит сведения, связанные с обнаружением службы, например контракт, адрес конечной точки и соответствующие области. В классе <xref:System.ServiceModel.Discovery.AnnouncementEndpoint> можно указать, куда отправляется сообщение с объявлением. Если конечной точкой объявления является <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>, то сообщения Hello и Bye одновременно передаются нескольким абонентам. Если же конечная точка объявления является одноадресной рассылкой, то сообщения передаются непосредственно указанной конечной точке.
 
 > [!NOTE]
-> Объявления отправляются при открытии и закрытии узла службы. При неправильном завершении этих вызовов сообщения могут не отправляться. Например, при возникновении ошибки службы сообщение с объявлением Bye не отправляется.
+> Объявления отправляются при открытии и закрытии узла службы. Если эти вызовы не завершаются должным образом, сообщение с объявлением, возможно, не будет отправлено. Например, если происходит сбой службы, то сообщение с объявлением Bye не отправляется.
 
 > [!TIP]
 > Функцию объявлений можно настроить на отправку объявлений в заданных ситуациях.
@@ -62,7 +63,7 @@ serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
 
 ### <a name="announcements-on-the-client"></a>Объявления на клиенте
 
-В клиентском приложение должна быть размещена служба объявлений, которая занимается обработкой сообщений Hello и Bye и подписана на события <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> и <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived>. Следующий пример показывает, как это сделать.
+В клиентском приложение должна быть размещена служба объявлений, которая занимается обработкой сообщений Hello и Bye и подписана на события <xref:System.ServiceModel.Discovery.AnnouncementService.OnlineAnnouncementReceived> и <xref:System.ServiceModel.Discovery.AnnouncementService.OfflineAnnouncementReceived>. В приведенном ниже примере показано, как это сделать.
 
 ```csharp
 // Create an AnnouncementService instance
