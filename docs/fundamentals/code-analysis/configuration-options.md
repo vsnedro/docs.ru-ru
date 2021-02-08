@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 0687bcb16cae6a0a2dde6c7864a1af1d0027e122
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216464"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787725"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Параметры конфигурации для анализа кода
 
@@ -60,7 +60,7 @@ generated_code = true
 
 В следующей таблице показаны различные уровни серьезности правил, которые можно настроить для всех правил анализатора, включая правила [качества кода](quality-rules/index.md) и [стиля кода](style-rules/index.md) .
 
-| Уровень серьезности | Реакция на событие во время сборки |
+| Severity | Реакция на событие во время сборки |
 |-|-|
 | `error` | Нарушения отображаются как *ошибки* сборки и вызывают сбой сборок.|
 | `warning` | Нарушения отображаются как *предупреждения* сборки, но не вызывают сбои сборок (если только у вас не установлен параметр, чтобы обрабатывать предупреждения как ошибки). |
@@ -80,7 +80,7 @@ generated_code = true
 dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-Чтобы задать серьезность правила по умолчанию для категории правил анализатора, используйте следующий синтаксис. Категория для каждого правила предоставляется на страницах ссылок на отдельные правила, например [CA1000](quality-rules/ca1000.md).
+Чтобы задать серьезность правила по умолчанию для [категории правил](categories.md), используйте следующий синтаксис. Категория для каждого правила предоставляется на страницах ссылок на отдельные правила, например [CA1000](quality-rules/ca1000.md).
 
 ```ini
 dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

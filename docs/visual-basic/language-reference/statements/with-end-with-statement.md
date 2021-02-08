@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: с помощью... End With, оператор (Visual Basic)'
 title: Оператор With…End With
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - With block
 - End keyword [Visual Basic], With...End With statements
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
-ms.openlocfilehash: 50f3bd0c6e96254274b429794901e2e4ac719ad0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 86393d5dee7a03b2b8396b34b31326d1b0ea3c28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787569"
 ---
 # <a name="withend-with-statement-visual-basic"></a>Оператор With... End With (Visual Basic)
 
@@ -40,9 +41,9 @@ End With
 |---|---|
 |`objectExpression`|Обязательный. Выражение, результатом которого является объект. Выражение может быть произвольно сложным и вычисляется только один раз. Результатом выражения могут быть данные любого типа, включая простейшие типы.|
 |`statements`|Необязательный элемент. Один или несколько операторов между `With` и `End With`, которые могут ссылаться на члены объекта, создаваемого при вычислении выражения `objectExpression`.|
-|`End With`|Обязательный. Завершает определение блока `With`.|
+|`End With`|Обязательный элемент. Завершает определение блока `With`.|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 С помощью `With...End With` можно выполнять последовательность операторов с указанным объектом без необходимости многократного указания имени объекта. В блоке операторов `With` члены объекта можно указывать начиная с точки, как если бы перед ней стоял объект оператора `With`.
 
@@ -83,7 +84,7 @@ End With
 
 [!code-vb[VbVbalrWithStatement#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Collections.Generic.List%601>
 - [Вложенные структуры управления](../../programming-guide/language-features/control-flow/nested-control-structures.md)

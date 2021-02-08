@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операторе yield (Visual Basic)
 title: Оператор Yield
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - iterators [Visual Basic]
 - Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
-ms.openlocfilehash: 783785f2a078b6ad8f975846c44ee4e716a12773
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: cd07c271722a715beeddfddf660cec3e05127db8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90866500"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787556"
 ---
 # <a name="yield-statement-visual-basic"></a>Оператор Yield (Visual Basic)
 

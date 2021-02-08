@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: while... Оператор End While (Visual Basic)'
 title: Оператор While…End While
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: e3ab95f43e101a9ad8abe6fa61b94ae7542e409c
-ms.sourcegitcommit: d2db216e46323f73b32ae312c9e4135258e5d68e
+ms.openlocfilehash: ab452e2d9446c9c44b952c6ebf026f7a6f9080cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90869480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787582"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>Оператор While... End While (Visual Basic)
 
