@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: System. ServiceModel. Activation. Мессажекуеуерегистерфаилед'
 title: System.ServiceModel.Activation.MessageQueueRegisterFailed
 ms.date: 03/30/2017
 ms.assetid: d985edf0-e648-439f-8f03-910eb386dad7
-ms.openlocfilehash: c666fc81647a49e7e37a14d11d607e756fea2e97
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 86e3fa80f4843ae03154815b0add68d368574fe1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96253756"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770317"
 ---
 # <a name="systemservicemodelactivationmessagequeueregisterfailed"></a>System.ServiceModel.Activation.MessageQueueRegisterFailed
 

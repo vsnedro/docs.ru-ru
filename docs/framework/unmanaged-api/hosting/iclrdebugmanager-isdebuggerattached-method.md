@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о методе: ICLRDebugManager:: IsDebuggerAttached'
 title: Метод ICLRDebugManager::IsDebuggerAttached
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2f105fe0-f52d-49c5-bda5-583fb27e3aa6
 topic_type:
 - apiref
-ms.openlocfilehash: 71e11d7db3bd679e7972fb2f6ce098edc3399885
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 74305989797bcb553feb727a133e24bd308ac715
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95731024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772137"
 ---
 # <a name="iclrdebugmanagerisdebuggerattached-method"></a>Метод ICLRDebugManager::IsDebuggerAttached
 
@@ -50,7 +51,7 @@ HRESULT IsDebuggerAttached (
 |HOST_E_ABANDONED|Событие было отменено, пока заблокированный поток или волокно ожидают его.|  
 |E_FAIL|Произошла неизвестная фатальная ошибка. После того как метод возвращает E_FAIL, среда CLR больше не может использоваться в процессе. Последующие вызовы методов размещения возвращают HOST_E_CLRNOTAVAILABLE.|  
   
-## <a name="remarks"></a>Комментарии  
+## <a name="remarks"></a>Remarks  
 
  `IsDebuggerAttached` позволяет основному приложению запрашивать среду CLR, чтобы определить, присоединен ли отладчик к процессу.  
   
@@ -62,9 +63,9 @@ HRESULT IsDebuggerAttached (
   
  **Библиотека:** Включается в качестве ресурса в MSCorEE.dll  
   
- **.NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **Платформа .NET Framework версии:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Интерфейс ICLRControl](iclrcontrol-interface.md)
 - [Интерфейс ICLRDebugManager](iclrdebugmanager-interface.md)

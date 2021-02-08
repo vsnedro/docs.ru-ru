@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье вопросы безопасности при ведении журнала сообщений.
 title: Проблемы безопасности при ведении журналов сообщений
 ms.date: 03/30/2017
 ms.assetid: 21f513f2-815b-47f3-85a6-03c008510038
-ms.openlocfilehash: 8594329fb27aa1d77a2baffee2a7e37ea0d009c4
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 88adc4eb772ad8c39ace23f2771ee68fa2288c3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96283774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771019"
 ---
 # <a name="security-concerns-for-message-logging"></a>Проблемы безопасности при ведении журналов сообщений
 
@@ -109,7 +110,7 @@ ms.locfileid: "96283774"
   
 - Регистрация известных PII отключена: это событие создается при включении регистрации известных персональных данных. Это происходит, когда `enableLoggingKnownPii` атрибут в `machineSettings` элементе файла Machine.config имеет значение `true` , а `logKnownPii` атрибут `source` элемента в файле App.config или Web.config имеет значение `true` .  
   
-- Регистрация известных PII запрещена: это событие создается, когда Регистрация известных персональных данных не разрешена. Это происходит, когда `logKnownPii` атрибут `source` элемента в файле App.config или Web.config имеет значение `true` , но `enableLoggingKnownPii` атрибут в `machineSettings` элементе Machine.config файла имеет значение `false` . Исключение не возникает.  
+- Регистрация известных PII запрещена: это событие создается, когда Регистрация известных персональных данных не разрешена. Это происходит, когда `logKnownPii` атрибут `source` элемента в файле App.config или Web.config имеет значение `true` , но `enableLoggingKnownPii` атрибут в `machineSettings` элементе Machine.config файла имеет значение `false` . Исключение не выдается.  
   
  Эти события можно просмотреть с помощью средства просмотра событий, входящего в состав Windows. Дополнительные сведения об этом см. в разделе [ведение журнала событий](./event-logging/index.md).  
   
