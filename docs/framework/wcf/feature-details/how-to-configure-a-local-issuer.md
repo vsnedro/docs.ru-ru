@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Настройка локального издателя.
 title: Практическое руководство. Настройка локального издателя
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 15263371-514e-4ea6-90fb-14b4939154cd
-ms.openlocfilehash: 7da3cd34d0840eea48c9ef0bb89fb6580b87623b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1c950c2bbbb55954fc65e35632523ea14ee3ac00
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780171"
 ---
 # <a name="how-to-configure-a-local-issuer"></a>Практическое руководство. Настройка локального издателя
 
@@ -76,7 +77,7 @@ Windows Communication Foundation (WCF) использует локального
 
 Обратите внимание, что если для данной привязки указаны адрес издателя и привязка, локальный издатель не применяется в конечных точках, использующих эту привязку. Клиенты, которые предполагают всегда использовать локальный издатель, должны убедиться, что они не используют такую привязку или что привязка изменена таким образом, что адрес издателя имеет значение `null`.
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Настройка учетных данных службы федерации](how-to-configure-credentials-on-a-federation-service.md)
 - [Практическое руководство. Создание федеративного клиента](how-to-create-a-federated-client.md)

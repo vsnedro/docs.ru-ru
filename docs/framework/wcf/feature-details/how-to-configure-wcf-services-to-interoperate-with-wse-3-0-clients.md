@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения см. в статье Настройка служб WCF для взаимодействия с клиентами WSE 3,0.
 title: Практическое руководство. Настройка служб WCF для взаимодействия с клиентами WSE 3.0
 ms.date: 03/30/2017
 ms.assetid: 0f38c4a0-49a6-437c-bdde-ad1d138d3c4a
-ms.openlocfilehash: 600b9c28d92f9e2b6e4d586b052cc5762d591521
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d48b24ac7787a9863744ee9b6a4a984cb6b371e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779937"
 ---
 # <a name="how-to-configure-wcf-services-to-interoperate-with-wse-30-clients"></a>Практическое руководство. Настройка служб WCF для взаимодействия с клиентами WSE 3.0
 
-Службы Windows Communication Foundation (WCF) являются совместимыми с расширениями веб-служб 3,0 для клиентов Microsoft .NET (WSE), если службы WCF настроены для использования версии WS-Addressing в августе 2004.
+Службы Windows Communication Foundation (WCF) являются совместимыми с расширениями веб-служб 3,0 для клиентов Microsoft .NET (WSE), если службы WCF настроены для использования версии спецификации WS-Addressing, Август 2004.
 
 ### <a name="to-enable-a-wcf-service-to-interoperate-with-wse-30-clients"></a>Включение службы WCF для взаимодействия с клиентами WSE 3.0
 
@@ -36,11 +37,11 @@ ms.locfileid: "84599065"
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameOverTransport>|`usernameOverTransportSecurity`|
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameForCertificate>|`usernameForCertificateSecurity`|
 
-        \*Одно из основных различий между `mutualCertificate10Security` `mutualCertificate11Security` утвержденными утверждениями безопасности и является версией спецификации WS-Security, которую WSE использует для защиты сообщений SOAP. Для `mutualCertificate10Security` используется версия WS-Security 1.0, а для `mutualCertificate11Security` - версия WS-Security 1.1. Для WCF версия спецификации WS-Security указывается в `messageSecurityVersion` атрибуте [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) .
+        \* Одним из основных различий между `mutualCertificate10Security` `mutualCertificate11Security` утверждениями безопасности и готовностью является версия спецификации WS-Security, которую WSE использует для защиты сообщений SOAP. Для `mutualCertificate10Security` используется версия WS-Security 1.0, а для `mutualCertificate11Security` - версия WS-Security 1.1. Для WCF версия спецификации WS-Security указана в `messageSecurityVersion` атрибуте [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) .
 
-        Чтобы задать версию спецификации WS-Security, используемую для защиты сообщений SOAP, установите `messageSecurityVersion` атрибут [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) . Для взаимодействия с WSE 3.0 установите для атрибута `messageSecurityVersion` значение <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A>.
+        Чтобы задать версию спецификации WS-Security, которая используется для защиты сообщений SOAP, установите `messageSecurityVersion` атрибут [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) . Для взаимодействия с WSE 3.0 установите для атрибута `messageSecurityVersion` значение <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A>.
 
-    4. Укажите, что в WCF используется версия спецификации WS-Addressing 2004 августа, добавив [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) и присвойте свойству `messageVersion` значение <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> .
+    4. Укажите, что в WCF используется версия спецификации WS-Addressing в августе 2004, добавив [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) и присвойте свойству `messageVersion` значение <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> .
 
         > [!NOTE]
         > При использовании протокола SOAP 1.2 задайте для атрибута `messageVersion` значение <xref:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004%2A>.
@@ -92,6 +93,6 @@ ms.locfileid: "84599065"
 </configuration>
 ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Изменение привязки, предоставляемой системой](../extending/how-to-customize-a-system-provided-binding.md)

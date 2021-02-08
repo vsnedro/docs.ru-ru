@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: рекомендации и рекомендации'
 title: Правила и рекомендации
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - WCF, best practices
 - Windows Communication Foundation, guidelines
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
-ms.openlocfilehash: eeca4ee47db2aef139567e37cba60cab863e6d53
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 0a09eea7d0eef10f015f80baf64df860d5ff1dd7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96238136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779430"
 ---
 # <a name="guidelines-and-best-practices"></a>Правила и рекомендации
 
 В этом разделе содержатся разделы, содержащие рекомендации по созданию приложений Windows Communication Foundation (WCF).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Рекомендации. Управление версиями контракта данных](best-practices-data-contract-versioning.md)  
  Рассматривается, как и когда создавать контракты данных, которые не будут нарушены при создании новых версий.  

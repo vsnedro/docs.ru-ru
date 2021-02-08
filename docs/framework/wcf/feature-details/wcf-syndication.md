@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: синдикации WCF'
 title: Синдикация WCF
 ms.date: 03/30/2017
 helpviewer_keywords:
 - syndication [WCF]
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
-ms.openlocfilehash: 825990c6c1690281af65d53c76dcca0f3e2ffb67
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 4bf4dcd40c1b764fd937c03244460c726be94a49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96239046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779508"
 ---
 # <a name="wcf-syndication"></a>Синдикация WCF
 
 Windows Communication Foundation (WCF) предоставляет поддержку для упрощения работы с каналами синдикации в Atom, RSS или других пользовательских форматах, что позволяет читать и создавать их, а также предоставлять их в конечной точке службы. В подразделах этого раздела подробно описывается модель программирования синдикации.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Общие сведения о синдикации WCF](wcf-syndication-overview.md)  
  Содержит общие сведения о поддержке синдикации, предоставляемой WCF.  

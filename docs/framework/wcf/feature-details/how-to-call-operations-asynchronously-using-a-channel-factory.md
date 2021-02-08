@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о том, как вызывать операции асинхронно с помощью фабрики каналов.
 title: Практическое руководство. Асинхронный вызов операций с использованием фабрики каналов
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cc17dd47-b9ad-451c-a362-e36e0aac7ba0
-ms.openlocfilehash: c288df6059cfe1cd1f4ff35cebffafd3fddb38d1
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 081211d0202550e93e3aabb5c8b5b5b5adbcdcde
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96257539"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780197"
 ---
 # <a name="how-to-call-operations-asynchronously-using-a-channel-factory"></a>Практическое руководство. Асинхронный вызов операций с использованием фабрики каналов
 
@@ -44,7 +45,7 @@ ms.locfileid: "96257539"
   
 ## <a name="example"></a>Пример  
 
- Служба, используемая с клиентским кодом, который применяется в предыдущей процедуре, реализует интерфейс `ICalculator`, как показано в следующем коде. На стороне службы `Add` операции и в `Subtract` контракте вызываются синхронно с помощью Windows Communication Foundation (WCF) времени выполнения, хотя предыдущие этапы клиента вызываются на клиенте асинхронно. Операции `Multiply` и `Divide` используются для асинхронного вызова службы на стороне службы, даже если клиент вызывает их синхронно. В этом примере свойству <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> присваивается значение `true`. Этот параметр свойства в сочетании с реализацией асинхронного шаблона .NET Framework сообщает времени выполнения о необходимости асинхронного вызова операции.  
+ Служба, используемая с клиентским кодом, который применяется в предыдущей процедуре, реализует интерфейс `ICalculator`, как показано в следующем коде. На стороне службы `Add` операции и в `Subtract` контракте вызываются синхронно с помощью Windows Communication Foundation (WCF) времени выполнения, хотя предыдущие этапы клиента вызываются на клиенте асинхронно. Операции `Multiply` и `Divide` используются для асинхронного вызова службы на стороне службы, даже если клиент вызывает их синхронно. В этом примере свойству <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> присваивается значение `true`. Этот параметр свойства в сочетании с реализацией асинхронного шаблона платформа .NET Framework сообщает времени выполнения о необходимости асинхронного вызова операции.  
   
  [!code-csharp[C_How_To_CF_Async#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_how_to_cf_async/cs/service.cs#4)]
  [!code-vb[C_How_To_CF_Async#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_how_to_cf_async/vb/service.vb#4)]  

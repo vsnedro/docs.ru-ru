@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о клиенте ASMX со службой WCF
 title: Клиент ASMX со службой WCF
 ms.date: 03/30/2017
 ms.assetid: 3ea381ee-ac7d-4d62-8c6c-12dc3650879f
-ms.openlocfilehash: fd13d4907f1be09440387a36e14ecdc4926ba7e7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b9f561f6651c591556f821478c4c4bfd7d7da23d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778923"
 ---
 # <a name="asmx-client-with-a-wcf-service"></a>Клиент ASMX со службой WCF
 
@@ -35,7 +36,7 @@ public interface ICalculator
 }
 ```
 
-Объекты <xref:System.Runtime.Serialization.DataContractSerializer> и <xref:System.Xml.Serialization.XmlSerializer> сопоставляют типы среды CLR с XML-представлением. <xref:System.Runtime.Serialization.DataContractSerializer> интерпретирует некоторые XML-представления не так, как XmlSerializer. Генераторы прокси, отличные от WCF, такие как WSDL. exe, создают более подходящий интерфейс при использовании XmlSerializer. Объект <xref:System.ServiceModel.XmlSerializerFormatAttribute> применяется к `ICalculator` интерфейсу, чтобы убедиться, что XmlSerializer используется для СОПОСТАВЛЕНИЯ типов CLR с XML. Реализация службы выполняет вычисления и возвращает соответствующий результат.
+Объекты <xref:System.Runtime.Serialization.DataContractSerializer> и <xref:System.Xml.Serialization.XmlSerializer> сопоставляют типы среды CLR с XML-представлением. <xref:System.Runtime.Serialization.DataContractSerializer> интерпретирует некоторые XML-представления не так, как XmlSerializer. Генераторы прокси, отличные от WCF, такие как Wsdl.exe, создают более подходящий интерфейс при использовании XmlSerializer. Объект <xref:System.ServiceModel.XmlSerializerFormatAttribute> применяется к `ICalculator` интерфейсу, чтобы убедиться, что XmlSerializer используется для СОПОСТАВЛЕНИЯ типов CLR с XML. Реализация службы выполняет вычисления и возвращает соответствующий результат.
 
 Служба предоставляет одну конечную точку для взаимодействия с ней; конечная точка определяется в файле конфигурации (Web.config). Конечная точка состоит из адреса, привязки и контракта. Служба предоставляет конечную точку по базовому адресу, предоставляемую узлом IIS. Для атрибута `binding` задается значение basicHttpBinding, что обеспечивает взаимодействие по протоколу HTTP с использованием протокола SOAP 1.1, который совместим со спецификацией WS-I BasicProfile 1.1, как показано в следующем образце конфигурации.
 
@@ -51,7 +52,7 @@ public interface ICalculator
 </services>
 ```
 
-Клиент ASMX взаимодействует со службой WCF с помощью типизированного прокси-сервера, созданного служебной программой языка описания веб-служб (WSDL. exe). Типизированный прокси содержится в файле generatedClient.cs. Специальная программа WSDL извлекает метаданные для заданной службы и создает типизированный прокси, который будет использоваться клиентом для взаимодействия. По умолчанию платформа не предоставляет никаких метаданных. Чтобы предоставить метаданные, необходимые для создания прокси-сервера, необходимо добавить [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) и задать `httpGetEnabled` для атрибута значение, `True` как показано в следующей конфигурации.
+Клиент ASMX взаимодействует со службой WCF, используя типизированный прокси-сервер, созданный служебной программой языка описания веб-служб (WSDL) (Wsdl.exe). Типизированный прокси содержится в файле generatedClient.cs. Специальная программа WSDL извлекает метаданные для заданной службы и создает типизированный прокси, который будет использоваться клиентом для взаимодействия. По умолчанию платформа не предоставляет никаких метаданных. Чтобы предоставить метаданные, необходимые для создания прокси-сервера, необходимо добавить [\<serviceMetadata>](../../configure-apps/file-schema/wcf/servicemetadata.md) и задать `httpGetEnabled` для атрибута значение, `True` как показано в следующей конфигурации.
 
 ```xml
 <behaviors>
@@ -146,6 +147,6 @@ Press <ENTER> to terminate client.
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\ASMX`

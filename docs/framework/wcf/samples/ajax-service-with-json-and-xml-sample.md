@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: служба AJAX с примером JSON и XML'
 title: Пример службы AJAX с JSON и XML
 ms.date: 03/30/2017
 ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
-ms.openlocfilehash: 8f70b6aa2e61d01a075a6edb3fe490ef593e73b0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e47f6cbd7e4659488325e158e5594ca94322c520
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575957"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779066"
 ---
 # <a name="ajax-service-with-json-and-xml-sample"></a>Пример службы AJAX с JSON и XML
 
@@ -59,7 +60,7 @@ MathResult DoMathJson(double n1, double n2);
 
 Обратите внимание, что в обоих случаях операции возвращают сложный тип, `MathResult` который является стандартным типом контракта данных WCF.
 
-Клиентская веб-страница Ксмлажаксклиентпаже. htm содержит код JavaScript, который вызывает одну из двух предыдущих операций, когда пользователь щелкает на странице команду **выполнить вычисление (вернуть JSON)** или **выполнить вычисление (возврат XML)** . Код, вызывающий службу, создает тело JSON и отправляет его с помощью HTTP POST. Запрос создается вручную в JavaScript, в отличие от примера [базовой службы AJAX](basic-ajax-service.md) и других примеров, использующих ASP.NET AJAX.
+Веб-страница клиента XmlAjaxClientPage.htm содержит код JavaScript, который вызывает одну из двух предыдущих операций, когда пользователь нажимает на странице кнопку **выполнить вычисление (вернуть JSON)** или **выполнить вычисление (возврат XML)** . Код, вызывающий службу, создает тело JSON и отправляет его с помощью HTTP POST. Запрос создается вручную в JavaScript, в отличие от примера [базовой службы AJAX](basic-ajax-service.md) и других примеров, использующих ASP.NET AJAX.
 
 ```csharp
 // Create HTTP request
@@ -98,7 +99,7 @@ xmlHttp.onreadystatechange=function(){
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
+> Если этот каталог не существует, перейдите к [примерам Windows Communication Foundation (WCF) и Windows Workflow Foundation (WF) для платформа .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) , чтобы скачать все Windows Communication Foundation (WCF) и [!INCLUDE[wf1](../../../../includes/wf1-md.md)] примеры. Этот образец расположен в следующем каталоге.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\AJAX\XmlAjaxService`
 
@@ -108,8 +109,8 @@ xmlHttp.onreadystatechange=function(){
 
 2. Создайте решение Ксмлажакссервице. sln, как описано в разделе [Создание примеров Windows Communication Foundation](building-the-samples.md).
 
-3. Перейдите к `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` разделу (не открывайте ксмлажаксклиентпаже. htm в браузере из каталога проекта).
+3. Перейдите к `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` разделу (не открывайте XmlAjaxClientPage.htm в браузере из каталога проекта).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 - [Служба AJAX с использованием HTTP POST](ajax-service-using-http-post.md)
