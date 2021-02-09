@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Анализ путей к файлам в Visual Basic'
 title: Практическое руководство. Анализ путей к файлам
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file names [Visual Basic], parsing [Visual Basic]
 - parsing, file paths [Visual Basic]
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
-ms.openlocfilehash: eb7714a8594c0bce344eb2e48ebc5053dc3bfbb4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dff423679324974d64c613a292c253d99d668c7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359946"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797501"
 ---
 # <a name="how-to-parse-file-paths-in-visual-basic"></a>Практическое руководство. Анализ путей к файлам в Visual Basic
 
