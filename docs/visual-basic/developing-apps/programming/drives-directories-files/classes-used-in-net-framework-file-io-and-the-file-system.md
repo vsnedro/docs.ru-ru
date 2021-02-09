@@ -1,15 +1,16 @@
 ---
-title: Классы, используемые при файловом вводе-выводе в .NET Framework, и файловая система
+description: 'Узнайте подробнее о: Классы, используемые при файловом вводе-выводе в .NET Framework, и файловая система (Visual Basic)'
+title: Классы, используемые при вводе-выводе файлов в .NET Framework, и файловая система
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file I/O classes
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-ms.openlocfilehash: 2c696d5b8c83ae55caf61e4710630ad1e34c088d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a8cbe476044df92fcdbdd0421b91f3c7c098e063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666333"
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>Классы, используемые при файловом вводе-выводе в .NET Framework, и файловая система (Visual Basic)
 
@@ -21,7 +22,7 @@ ms.locfileid: "84401775"
 
  В приведенной ниже таблице перечислены и описаны основные классы, используемые для файлового ввода-вывода.  
   
-|Класс|Описание:|  
+|Class|Описание|  
 |-----------|-----------------|  
 |<xref:System.IO.Directory?displayProperty=nameWithType>|Предоставляет статические методы для создания, перемещения и перечисления в каталогах и подкаталогах.|  
 |<xref:System.IO.DirectoryInfo?displayProperty=nameWithType>|Предоставляет методы экземпляра для создания, перемещения и перечисления в каталогах и подкаталогах.|  
@@ -39,7 +40,7 @@ ms.locfileid: "84401775"
 
  В приведенной ниже таблице перечислены и описаны основные классы, используемые для создания потоков.  
   
-|Класс|Описание:|  
+|Class|Описание|  
 |-----------|-----------------|  
 |<xref:System.IO.BufferedStream?displayProperty=nameWithType>|Добавляет уровень буферизации в операциях чтения и записи в другие потоки.|  
 |<xref:System.IO.FileStream?displayProperty=nameWithType>|Поддерживает произвольный доступ к файлам с помощью метода <xref:System.IO.FileStream.Seek%2A>. <xref:System.IO.FileStream> по умолчанию открывает файлы синхронно, но поддерживает и асинхронные операции.|  

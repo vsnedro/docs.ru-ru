@@ -1,13 +1,14 @@
 ---
+description: 'Узнайте подробнее о: Изменения пространства имен System.Uri в версии 2.0'
 title: Изменения пространства имен System.Uri в версии 2.0
 ms.date: 03/30/2017
 ms.assetid: 35883fe9-2d09-4d8b-80ca-cf23a941e459
-ms.openlocfilehash: 987010b8367069e8089df3f809d23f258bb68f2b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b5e2f2b3b59fba96e20e40a4df18273a2f6034f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "61642767"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791625"
 ---
 # <a name="changes-to-the-systemuri-namespace-in-version-20"></a>Изменения пространства имен System.Uri в версии 2.0
 

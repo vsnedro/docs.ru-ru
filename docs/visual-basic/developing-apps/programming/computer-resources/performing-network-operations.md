@@ -1,24 +1,25 @@
 ---
+description: 'Узнайте подробнее о: Выполнение сетевых операций (Visual Basic)'
 title: Выполнение сетевых операций
 ms.date: 07/20/2015
 helpviewer_keywords:
 - network operations, performing
 - My.Computer.Network object, tasks
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
-ms.openlocfilehash: 67cfc1363c840c98f1df6529498fce1a82a0a5bf
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c4d2d867d9cec85562c93fb40fb688ba07fa6599
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792327"
 ---
 # <a name="performing-network-operations-visual-basic"></a>Выполнение сетевых операций (Visual Basic)
 
 В следующих таблицах перечислены задачи, связанные с объектом `My.Computer.Network`.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
- [Практическое руководство. Передача файла](how-to-upload-a-file.md)  
+ [Практическое руководство. Отправка файла](how-to-upload-a-file.md)  
  Демонстрация отправки файла и сохранения его в удаленном расположении с помощью `My.Computer.Network`.  
   
  [Практическое руководство. Скачивание файла](how-to-download-a-file.md)  
@@ -27,7 +28,7 @@ ms.locfileid: "84360154"
  [Практическое руководство. Проверка состояния подключения](how-to-check-connection-status.md)  
  Демонстрация проверки наличия рабочего сетевого подключения на компьютере.  
   
-## <a name="reference"></a>Справочник  
+## <a name="reference"></a>Справочные сведения  
 
  <xref:Microsoft.VisualBasic.Devices.Network>  
  Список методов, свойств и событий для работы с сетью.  

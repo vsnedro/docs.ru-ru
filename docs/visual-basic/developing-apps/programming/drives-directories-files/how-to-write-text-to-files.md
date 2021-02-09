@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Запись текста в файлы в Visual Basic'
 title: Практическое руководство. Запись текста в файлы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic]
 - examples [Visual Basic], text files
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
-ms.openlocfilehash: f95a0c4df4a2eab0069a6dab0d4c3fa338d1d8ef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3f94999c1d20002074ecf57577d3402c350248ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797345"
 ---
 # <a name="how-to-write-text-to-files-in-visual-basic"></a>Практическое руководство. Запись текста в файлы в Visual Basic
 
@@ -54,7 +55,7 @@ ms.locfileid: "84411542"
   
 - Диск заполнен, и вызов `WriteAllText` завершается сбоем (<xref:System.IO.IOException>).  
   
- Если код выполняется в контексте частичного доверия, исключение может возникнуть из-за недостатка прав доступа. Дополнительные сведения см. в разделе [Основы управления доступом для кода](../../../../framework/misc/code-access-security-basics.md).  
+ Если код выполняется в контексте частичного доверия, исключение может возникнуть из-за недостатка прав доступа. Дополнительные сведения см. в разделе [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
 ## <a name="see-also"></a>См. также раздел
 

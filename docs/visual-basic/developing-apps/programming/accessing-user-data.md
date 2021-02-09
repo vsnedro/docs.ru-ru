@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Доступ к пользователя (Visual Basic)'
 title: Доступ к данным пользователя
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - login names [Visual Basic]
 - examples [Visual Basic], accessing user data
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
-ms.openlocfilehash: 463d3bc77237482d4cd568b9558bb72cd19e7216
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f7f7a8cb121b74a2680f29c0aa14491f6e38434
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74349214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797878"
 ---
 # <a name="accessing-user-data-visual-basic"></a>Доступ к пользователя (Visual Basic)
 
@@ -24,9 +25,9 @@ ms.locfileid: "74349214"
   
  Объект `My.User` предоставляет доступ к сведениям о вошедшем в систему пользователе, возвращая объект, реализующий интерфейс <xref:System.Security.Principal.IPrincipal>.  
   
-## <a name="tasks"></a>Задания  
+## <a name="tasks"></a>Задачи  
   
-|Чтобы|См.|  
+|Кому|См.|  
 |--------|---------|  
 |Получение имени входа пользователя|<xref:Microsoft.VisualBasic.ApplicationServices.User.Name%2A>|  
 |Получение имени домена пользователя, если приложение использует проверку подлинности Windows|<xref:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal>|  

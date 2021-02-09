@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Чтение параметров приложения в Visual Basic'
 title: Практическое руководство. Чтение параметров приложения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,14 @@ helpviewer_keywords:
 - My.Settings object [Visual Basic], reading application settings
 - application settings [Visual Basic], reading
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
-ms.openlocfilehash: 9b326341c54d652479776e3ab93a2b140f4531e0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 30b5a3b0cdf3565fc8c1f0dfa19e7717a714c350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797826"
 ---
-# <a name="how-to-read-application-settings-in-visual-basic"></a>Практическое руководство. Чтение параметров приложения в Visual Basic
+# <a name="how-to-read-application-settings-in-visual-basic"></a>Практическое руководство. Чтение параметров приложения в Visual Basic
 
 Пользовательский параметр можно прочитать с помощью свойства объекта `My.Settings`.  
   
@@ -27,7 +28,7 @@ ms.locfileid: "84410144"
   
  Для надлежащего выполнения этого примера приложение должно иметь параметр `Nickname` типа `String`. Дополнительные сведения см. в разделе [Управление параметрами приложения (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объект My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Практическое руководство. Изменение пользовательских параметров в Visual Basic](how-to-change-user-settings.md)

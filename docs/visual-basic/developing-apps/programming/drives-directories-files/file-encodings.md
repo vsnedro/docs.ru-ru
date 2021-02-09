@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Кодировки файлов (Visual Basic)'
 title: Кодировки файлов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Unicode, file encoding
 - file encoding
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
-ms.openlocfilehash: f906b2f2d747a7950c70a24549bbf5423e5b87b4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f573b5d8f83c27cbf4ddacb9fd40474d7d1be1ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675368"
 ---
 # <a name="file-encodings-visual-basic"></a>Кодировки файлов (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "84401749"
 
 Класс <xref:System.Text.Encoding> представляет кодировку символов. В этой таблице перечислены типы доступных кодировок и дано их описание.
 
-|Имя|Описание:|
+|Имя|Описание|
 |---|---|
 |<xref:System.Text.ASCIIEncoding>|Представляет кодировку ASCII символов Юникода.|
 |<xref:System.Text.UnicodeEncoding>|Представляет кодировку символов Юникода в формате UTF-16.|

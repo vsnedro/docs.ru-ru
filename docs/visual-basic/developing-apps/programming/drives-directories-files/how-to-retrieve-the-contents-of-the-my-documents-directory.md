@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Извлечение содержимого каталога "Мои документы" в Visual Basic'
 title: Практическое руководство. Извлечение содержимого каталога "Мои документы"
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My Documents directory
 ms.assetid: 26560d01-7dda-4457-8e95-21db23d71aea
-ms.openlocfilehash: cf4470020507c581999b9d72602ddb6e3e76ed74
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e9e6ffc202332bd8d1849ef886fd4e7d6cc46a54
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74334533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797397"
 ---
 # <a name="how-to-retrieve-the-contents-of-the-my-documents-directory-in-visual-basic"></a>Практическое руководство. Извлечение содержимого каталога "Мои документы" в Visual Basic
 

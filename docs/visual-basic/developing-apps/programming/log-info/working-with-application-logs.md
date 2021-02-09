@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Работа с журналами приложения в Visual Basic'
 title: Работа с журналами приложения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - application event logs, Visual Basic
 - application event logs
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
-ms.openlocfilehash: e33efac8f65832c87d5c9271eba25c2ca1d1803b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0c05bd63cfbae668c58a87aa39651b6c3ef166ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792275"
 ---
 # <a name="working-with-application-logs-in-visual-basic"></a>Работа с журналами приложения в Visual Basic
 
@@ -33,7 +34,7 @@ ms.locfileid: "84387599"
 
 Если сборка не имеет файла конфигурации, объекты `My.Application.Log` и `My.Log` записывают сообщения в вывод отладки приложения (с использованием класса <xref:System.Diagnostics.DefaultTraceListener> ). Кроме того, объект `My.Application.Log` записывает данные в файл журнала сборки (с использованием класса <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>), а объект `My.Log` записывает сообщения в вывод веб-страницы ASP.NET (с использованием класса <xref:System.Web.WebPageTraceListener>).
 
-При работе с приложением в режиме отладки вывод отладки можно просматривать в окне Visual Studio **Вывод**. Чтобы открыть окно **Вывод** , выберите пункт меню **Отладка** , наведите указатель на пункт **Окна**и выберите пункт **Вывод**. В окне **Вывод** выберите значение **Отладка** в поле **Показать выходные данные из** .
+При работе с приложением в режиме отладки вывод отладки можно просматривать в окне Visual Studio **Вывод**. Чтобы открыть окно **Вывод** , выберите пункт меню **Отладка** , наведите указатель на пункт **Окна** и выберите пункт **Вывод**. В окне **Вывод** выберите значение **Отладка** в поле **Показать выходные данные из** .
 
 По умолчанию объект `My.Application.Log` записывает сообщения в файл журнала, расположенный по пути данных приложения пользователя. Путь можно получить из свойства <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.FullLogFileName%2A> объекта <xref:Microsoft.VisualBasic.Logging.Log.DefaultFileLogWriter%2A> . Путь имеет следующий формат:
 
@@ -45,11 +46,11 @@ C:\Documents and Settings\\`username`\Application Data
 
 Значения параметров `CompanyName`, `ProductName`и `ProductVersion` берутся из сведений о сборке приложения. Имя файла журнала имеет следующий формат: *AssemblyName*.log, где *AssemblyName* — имя файла сборки без расширения. Если требуется несколько файлов журнала, например, когда исходный журнал недоступен при попытке записи в журнал, имя файла журнала имеет следующий формат: *AssemblyName*-*iteration*.log, где `iteration` — положительное целое число типа `Integer`.
 
-Поведение по умолчанию можно переопределить путем добавления или изменения файлов конфигурации компьютера и приложения. Дополнительные сведения см. в разделе [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md).
+Поведение по умолчанию можно переопределить путем добавления или изменения файлов конфигурации компьютера и приложения. Для получения дополнительной информации см. [Walkthrough: Changing Where My.Application.Log Writes Information](walkthrough-changing-where-my-application-log-writes-information.md).
 
 ## <a name="configuring-log-settings"></a>Настройка параметров журнала
 
-Реализация объекта `Log` по умолчанию работает без файла конфигурации приложения app.config. Чтобы изменить значения по умолчанию, необходимо добавить файл конфигурации с новыми значениями параметров. Дополнительные сведения см. в разделе [Пошаговое руководство: Фильтрация выходных данных My.Application.Log](walkthrough-filtering-my-application-log-output.md).
+Реализация объекта `Log` по умолчанию работает без файла конфигурации приложения app.config. Чтобы изменить значения по умолчанию, необходимо добавить файл конфигурации с новыми значениями параметров. Дополнительные сведения см. в разделе [Walkthrough: Filtering My.Application.Log Output](walkthrough-filtering-my-application-log-output.md).
 
 Разделы конфигурации журнала находятся в узле `<system.diagnostics>` в основном узле `<configuration>` файла app.config. Сведения журнала определены в нескольких узлах.
 
@@ -94,7 +95,7 @@ C:\Documents and Settings\\`username`\Application Data
 
 В развернутом приложении активация кода трассировки выполняется путем повторной настройки объектов переключателей до запуска приложения. Обычно это подразумевает включение и отключение объектов переключателей или изменение уровней трассировки, а затем перезапуск приложения.
 
-## <a name="security-considerations"></a>Вопросы безопасности
+## <a name="security-considerations"></a>Соображения безопасности
 
 При записи данных в журнал необходимо учитывать указанные ниже моменты.
 
@@ -106,7 +107,7 @@ C:\Documents and Settings\\`username`\Application Data
 
 - **Не допускайте отказа в обслуживании** . Если приложение записывает в журнал слишком много сведений, это может привести к переполнению журнала или усложнить поиск важной информации.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - [Запись сведений в журнал из приложения](index.md)

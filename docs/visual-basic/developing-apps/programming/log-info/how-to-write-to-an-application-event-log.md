@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Запись в журнал событий приложения (Visual Basic)'
 title: Практическое руководство. Запись в журнал событий приложения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - My.Computer.EventLog element
 - event logs, writing to
 ms.assetid: cadbc8c1-87af-4746-934e-55b79a4f6e2b
-ms.openlocfilehash: 298d6d85f8b21176b72db8e676617577eb03fada
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ea53ff84f1fcf175912e35eb7433ece26886cf44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797293"
 ---
 # <a name="how-to-write-to-an-application-event-log-visual-basic"></a>Практическое руководство. Запись в журнал событий приложения (Visual Basic)
 
@@ -20,7 +21,7 @@ ms.locfileid: "84410040"
 
 Запись в журнал безопасности невозможна. Для записи в системный журнал необходимо быть членом учетной записи LocalSystem или "Администратор".
 
-Для просмотра журнала событий можно использовать **обозреватель сервера** или **средство просмотра событий Windows**. Для получения дополнительной информации см. [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md).
+Для просмотра журнала событий можно использовать **обозреватель сервера** или **средство просмотра событий Windows**. Дополнительные сведения см. в разделе [События трассировки событий Windows в .NET Framework](../../../../framework/performance/etw-events.md).
 
 ## <a name="to-add-and-configure-the-event-log-listener"></a>Добавление и настройка прослушивателя журнала событий
 
@@ -67,11 +68,11 @@ ms.locfileid: "84410040"
 
 После настройки прослушивателя журнала событий для сборки он получает все сообщения, которые записываются объектом `My.Application.Log` из этой сборки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>
 - [Работа с журналами приложения](working-with-application-logs.md)
-- [Практическое руководство. Запись в журнал сведений об исключениях](how-to-log-exceptions.md)
-- [Пошаговое руководство. Определение места записи сведений для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md)
+- [Практическое руководство. Исплючения журналов](how-to-log-exceptions.md)
+- [Пошаговое руководство: Определение места записи сведений для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md)

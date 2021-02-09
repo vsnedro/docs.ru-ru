@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Копирование каталога в другой каталог в Visual Basic'
 title: Практическое руководство. Копирование каталога в другой каталог
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - folders [Visual Basic], copying
 - directories [Visual Basic], copying
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
-ms.openlocfilehash: e28f50f6a812188ac7af801cea691818488bd6cd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 37eb63449ce355382c5ed058fda6c1142b7d3e3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401723"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797657"
 ---
 # <a name="how-to-copy-a-directory-to-another-directory-in-visual-basic"></a>Практическое руководство. Копирование каталога в другой каталог в Visual Basic
 
@@ -65,5 +66,5 @@ ms.locfileid: "84401723"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A>
-- [Практическое руководство. Поиск подкаталогов по шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)
+- [Практическое руководство. Поиск подкаталогов по заданному шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)
 - [Практическое руководство. Получение коллекции содержащихся в каталоге файлов](how-to-get-the-collection-of-files-in-a-directory.md)

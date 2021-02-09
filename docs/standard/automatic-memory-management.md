@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Automatic Memory Management'
 title: Automatic Memory Management
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - managed heap
 - runtime, automatic memory management
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-ms.openlocfilehash: a38a95073759fa95d19a2baf4add191103f9264a
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+ms.openlocfilehash: 1897167faecb112ffa4aa7b0dd0c8bb55b8d9459
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95682020"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629972"
 ---
 # <a name="automatic-memory-management"></a>Automatic Memory Management
 
@@ -54,7 +55,7 @@ ms.locfileid: "95682020"
 
  Для большинства объектов, созданных приложением, сборщик мусора автоматически выполнит необходимые задачи по управлению памятью. Однако для неуправляемых ресурсов требуется явная очистка. Основным типом неуправляемых ресурсов являются объекты, образующие упаковку для ресурсов операционной системы, такие как дескриптор файлов, дескриптор окна или сетевое подключение. Хотя сборщик мусора может отслеживать время жизни управляемого объекта, инкапсулирующего неуправляемые ресурсы, он не имеет определенных сведений о том, как освобождать эти ресурсы. При создании объекта, который инкапсулирует неуправляемый ресурс, рекомендуется включить код для очистки неуправляемого ресурса в общий метод **Dispose**. Метод **Dispose** позволяет явно освобождать память при завершении работы с объектом. При использовании объекта, который инкапсулирует неуправляемый ресурс, следует помнить о методе **Dispose** и при необходимости вызывать его. Дополнительные сведения об освобождении неуправляемых ресурсов и пример шаблона для реализации метода **Dispose** см. в разделе [Сборка мусора](garbage-collection/index.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.GC>
 - [Сборка мусора](garbage-collection/index.md)

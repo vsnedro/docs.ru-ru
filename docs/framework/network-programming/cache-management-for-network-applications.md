@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Управление кэшем для сетевых приложений'
 title: Управление кэшем для сетевых приложений
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - network resources, caching
 - Internet, caching
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
-ms.openlocfilehash: 81f0eaa33b185c6bfbc8758e73a68a6bfc248872
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 6383403b41440f26b29fbb5a22c5b25ee6aab465
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96287570"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791677"
 ---
 # <a name="cache-management-for-network-applications"></a>Управление кэшем для сетевых приложений
 
@@ -23,7 +24,7 @@ ms.locfileid: "96287570"
   
  По соображениям безопасности кэширование **не** рекомендуется использовать в сценариях среднего уровня.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Политика кэша](cache-policy.md)  
  Описывается, что такое политика кэша и как ее определить.  
@@ -37,7 +38,7 @@ ms.locfileid: "96287570"
  [Настройка кэширования в сетевых приложениях](configuring-caching-in-network-applications.md)  
  Описываются программные способы создания политик кэша и запросов, для которых применяется кэширование.  
   
-## <a name="reference"></a>Справочник  
+## <a name="reference"></a>Справочные сведения  
 
  <xref:System.Net.Cache>  
  Определение типов и перечислений, используемых для определения политик кэширования ресурсов, получаемых с помощью классов <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest> и <xref:System.Net.FtpWebRequest>.

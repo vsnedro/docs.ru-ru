@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Создание таблицы свойств для пользовательских параметров в Visual Basic'
 title: Практическое руководство. Создание таблицы свойств для пользовательских параметров
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - property grids [Visual Basic], creating for user settings
 - property grids
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
-ms.openlocfilehash: e93c62ad138be260422319e28a3ed85dd1871a1b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 19523f712207cac225ccf68e02e338a9e76fe358
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797852"
 ---
-# <a name="how-to-create-property-grids-for-user-settings-in-visual-basic"></a>Практическое руководство. Создание таблицы свойств для пользовательских параметров в Visual Basic
+# <a name="how-to-create-property-grids-for-user-settings-in-visual-basic"></a>Практическое руководство. Создание таблицы свойств для пользовательских параметров в Visual Basic
 
 Вы можете создать таблицу свойств для параметров пользователя, заполнив элемент управления <xref:System.Windows.Forms.PropertyGrid> свойствами параметров пользователей для объекта `My.Settings`.  
   
@@ -51,7 +52,7 @@ ms.locfileid: "84410170"
 
  Приложение сохраняет пользовательские параметры при завершении работы. Чтобы сохранить параметры немедленно, вызовите метод `My.Settings.Save`. Дополнительные сведения см. в разделе [Практическое руководство. Сохранение пользовательских параметров в Visual Basic](how-to-persist-user-settings.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объект My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Практическое руководство. Чтение параметров приложения в Visual Basic](how-to-read-application-settings.md)

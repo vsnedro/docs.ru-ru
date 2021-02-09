@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Быстрая разработка приложений с использованием My.Resources и My.Settings (Visual Basic)'
 title: Быстрая разработка приложений с использованием My.Resources и My.Settings
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rapid application development (RAD), My.Settings
 - My.Resources object [Visual Basic], developing applications
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
-ms.openlocfilehash: fd1ec25582e919b84235502f5921edfbc6e1dade
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 38846b3a6ac273306f588ad8b043d7f35f7230a0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797930"
 ---
 # <a name="rapid-application-development-with-myresources-and-mysettings-visual-basic"></a>Быстрая разработка приложений с использованием My.Resources и My.Settings (Visual Basic)
 

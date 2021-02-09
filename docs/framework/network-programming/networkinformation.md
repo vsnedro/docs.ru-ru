@@ -1,15 +1,16 @@
 ---
+description: 'Узнайте подробнее о: NetworkInformation'
 title: NetworkInformation
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Network
 ms.assetid: 31b44dd3-b903-4a48-8419-40419a3e4038
-ms.openlocfilehash: 550555be7cc95cafebabfd3ac230ced024a9202c
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 9092fd0593d9046f419018b882c08066a6bc654c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96261622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785709"
 ---
 # <a name="networkinformation"></a>NetworkInformation
 
@@ -27,7 +28,7 @@ ms.locfileid: "96261622"
 
  С помощью класса <xref:System.Net.NetworkInformation.Ping> можно определить, работает ли удаленный узел, находится ли он в сети и возможен ли доступ к нему. Дополнительные сведения см. в статье [Практическое руководство. Проверка связи с узлом](how-to-ping-a-host.md).  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Примеры сетевого программирования](network-programming-samples.md)
 

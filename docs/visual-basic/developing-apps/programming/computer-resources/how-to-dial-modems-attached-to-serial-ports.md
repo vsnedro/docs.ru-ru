@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Дозвон при помощи модема, подключенного к последовательному порту компьютера, в Visual Basic'
 title: Практическое руководство. Дозвон при помощи модема, подключенного к последовательному порту компьютера
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - serial ports [Visual Basic], dialing
 - My.Computer.Ports object
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
-ms.openlocfilehash: e55ce6399dae435fbd5b2f730d4d0848c98d8955
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 016a3f768020c551c4f4ca7f5a097f4f1f9d07d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797709"
 ---
 # <a name="how-to-dial-modems-attached-to-serial-ports-in-visual-basic"></a>Практическое руководство. Дозвон при помощи модема, подключенного к последовательному порту компьютера, в Visual Basic
 
@@ -23,7 +24,7 @@ ms.locfileid: "84363271"
   
 1. Определите, к какому последовательному порту подключен модем. В этом примере предполагается, что модем подключен к порту COM1.  
   
-2. Воспользуйтесь методом `My.Computer.Ports.OpenSerialPort`, чтобы получить ссылку на порт. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
+2. Воспользуйтесь методом `My.Computer.Ports.OpenSerialPort`, чтобы получить ссылку на порт. Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
   
      Блок `Using` позволяет приложению закрыть последовательный порт даже в том случае, если он создает исключение. В блоке `Try...Catch...Finally` должен отображаться весь код, управляющий последовательным портом.  
   

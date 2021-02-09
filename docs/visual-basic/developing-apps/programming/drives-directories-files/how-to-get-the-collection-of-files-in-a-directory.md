@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Получение коллекции содержащихся в каталоге файлов в Visual Basic'
 title: Практическое руководство. Получение коллекции содержащихся в каталоге файлов
 ms.date: 07/20/2015
 helpviewer_keywords:
 - folders, working with
 - files [Visual Basic], accessing
 ms.assetid: 6c8ba7e8-dd37-4853-92bf-762b67c98160
-ms.openlocfilehash: 055151d4b3e3aba6be9b9b03ac9abffc6eb7b734
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bd799390c0ad0868f51387ba12e8612fe8948297
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797540"
 ---
 # <a name="how-to-get-the-collection-of-files-in-a-directory-in-visual-basic"></a>Практическое руководство. Получение коллекции содержащихся в каталоге файлов в Visual Basic
 
@@ -52,4 +53,4 @@ ms.locfileid: "84401619"
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2A>
 - [Практическое руководство. Поиск файлов по конкретному шаблону](how-to-find-files-with-a-specific-pattern.md)
-- [Практическое руководство. Поиск подкаталогов по шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)
+- [Практическое руководство. Поиск подкаталогов по заданному шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)

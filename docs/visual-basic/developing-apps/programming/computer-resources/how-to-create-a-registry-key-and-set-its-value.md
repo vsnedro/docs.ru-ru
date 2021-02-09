@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Создание раздела реестра и задание его значения в Visual Basic'
 title: Практическое руководство. Создание раздела реестра и задание его значения
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - registry keys [Visual Basic], setting values
 - examples [Visual Basic], registry
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
-ms.openlocfilehash: b51a14e5e9c69078330f5b2161f74cff8e4da332
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 73a6f5b2a092bb05df704fe6b9954ccbe13b5d90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797735"
 ---
 # <a name="how-to-create-a-registry-key-and-set-its-value-in-visual-basic"></a>Практическое руководство. Создание раздела реестра и задание его значения в Visual Basic
 
@@ -60,11 +61,11 @@ ms.locfileid: "84363452"
 
 При следующих условиях возможно возникновение исключения:
 
-- Имя ключа имеет значение `Nothing` (<xref:System.ArgumentNullException>).
+- Имя раздела — `Nothing` (<xref:System.ArgumentNullException>).
 
 - У пользователя нет разрешения на создание разделов реестра (<xref:System.Security.SecurityException>).
 
-- Имя ключа превышает ограничение в 255 символов (<xref:System.ArgumentException>).
+- Имя раздела превышает ограничение в 255 символов (<xref:System.ArgumentException>).
 
 - Раздел является закрытым (<xref:System.IO.IOException>).
 
@@ -72,7 +73,7 @@ ms.locfileid: "84363452"
 
 ## <a name="net-framework-security"></a>Безопасность .NET Framework
 
-Для запуска этого процесса сборке нужен уровень привилегий, предоставляемый классом <xref:System.Security.Permissions.RegistryPermission>. Если процесс выполняется в контексте с частичным доверием, он может сгенерировать исключение из-за недостатка привилегий. Аналогичным образом пользователь должен иметь правильные ACL для создания и записи параметров. Например, локальное приложение, имеющее разрешение на доступ к коду, может не иметь разрешения операционной системы. Дополнительные сведения см. в разделе [Основы управления доступом для кода](../../../../framework/misc/code-access-security-basics.md).
+Для запуска этого процесса сборке нужен уровень привилегий, предоставляемый классом <xref:System.Security.Permissions.RegistryPermission>. Если процесс выполняется в контексте с частичным доверием, он может сгенерировать исключение из-за недостатка привилегий. Аналогичным образом пользователь должен иметь правильные ACL для создания и записи параметров. Например, локальное приложение, имеющее разрешение на доступ к коду, может не иметь разрешения операционной системы. Дополнительные сведения см. в разделе [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).
 
 ## <a name="see-also"></a>См. также раздел
 

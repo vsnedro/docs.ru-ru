@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Чтение из текстовых файлов в Visual Basic'
 title: Практическое руководство. Чтение из текстовых файлов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - examples [Visual Basic], reading text files
 - text files [Visual Basic], reading
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
-ms.openlocfilehash: 0d99209ed123686355e8d49c82ba23f94084f895
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 76f8bbbb7a0064818d324fc6dd9f1f37f7271401
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797436"
 ---
 # <a name="how-to-read-from-text-files-in-visual-basic"></a>Практическое руководство. Чтение из текстовых файлов в Visual Basic
 
@@ -60,7 +61,7 @@ ms.locfileid: "84411620"
 
 Следует проверять все входные данные перед использованием их в приложении. Содержимое файла может отличаться от ожидаемого, поэтому может не удаться прочесть файл с помощью методов чтения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>
@@ -68,6 +69,6 @@ ms.locfileid: "84411620"
 - [Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми](how-to-read-from-comma-delimited-text-files.md)
 - [Практическое руководство. Чтение из текстовых файлов с полями фиксированного размера](how-to-read-from-fixed-width-text-files.md)
 - [Практическое руководство. Чтение из текстовых файлов различных форматов](how-to-read-from-text-files-with-multiple-formats.md)
-- [Устранение неполадок. Чтение из текстовых файлов и запись в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Устранение неполадок: Чтение из текстовых файлов и запись в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)
 - [Пошаговое руководство: Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)
 - [Кодировки файлов](file-encodings.md)

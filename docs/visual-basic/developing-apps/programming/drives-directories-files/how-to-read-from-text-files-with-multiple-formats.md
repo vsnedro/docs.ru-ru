@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Чтение текстовых файлов различных форматов в Visual Basic'
 title: Практическое руководство. Чтение из текстовых файлов различных форматов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - I/O [Visual Basic], reading text files
 - text files [Visual Basic], reading
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
-ms.openlocfilehash: b36c781d5f8333749d346bb8f19540f0d1bd1692
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 90d981ad051fb395d57604434cf9ba6b74603e7d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74334568"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797449"
 ---
 # <a name="how-to-read-from-fext-files-with-multiple-formats-in-visual-basic"></a>Практическое руководство. Чтение текстовых файлов различных форматов в Visual Basic
 
@@ -67,7 +68,7 @@ ms.locfileid: "74334568"
 - Слишком длинный путь (<xref:System.IO.PathTooLongException>).
 - У пользователя нет необходимых разрешений для доступа к файлу (<xref:System.UnauthorizedAccessException>).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars%2A>

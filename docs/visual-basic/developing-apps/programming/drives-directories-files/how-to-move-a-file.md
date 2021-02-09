@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Перемещение файла в Visual Basic'
 title: Практическое руководство. Перемещение файла
 ms.date: 07/20/2015
 helpviewer_keywords:
 - files [Visual Basic], moving
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
-ms.openlocfilehash: 2dafeb3b5f8b8c3a8976b25c1a57f405aebb32b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 31049d2b7f0516c056fc1f1620a3ad8c1f0a2e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797527"
 ---
 # <a name="how-to-move-a-file-in-visual-basic"></a>Практическое руководство. Перемещение файла в Visual Basic
 

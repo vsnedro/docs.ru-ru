@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Изменение пользовательских параметров в Visual Basic'
 title: Практическое руководство. Изменение пользовательских параметров
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - My.Settings object [Visual Basic], changing user settings
 - examples [Visual Basic], changing user settings
 ms.assetid: 41250181-c594-4854-9988-8183b9eb03cf
-ms.openlocfilehash: c9b89459f9b443c3a447edce90fee3437bbf1b6a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3877c9fadbf1b5b79470dc9ad41fbaf8123e6770
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797865"
 ---
-# <a name="how-to-change-user-settings-in-visual-basic"></a>Практическое руководство. Изменение пользовательских параметров в Visual Basic
+# <a name="how-to-change-user-settings-in-visual-basic"></a>Практическое руководство. Изменение пользовательских параметров в Visual Basic
 
 Пользовательские параметры можно изменять, присваивая новое значение свойству объекта параметров `My.Settings`.  
   
@@ -33,7 +34,7 @@ ms.locfileid: "84410183"
   
  Приложение сохраняет пользовательские параметры при завершении работы. Чтобы сохранить параметры немедленно, вызовите метод `My.Settings.Save`. Дополнительные сведения см. в разделе [Практическое руководство. Сохранение пользовательских параметров в Visual Basic](how-to-persist-user-settings.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объект My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Практическое руководство. Чтение параметров приложения в Visual Basic](how-to-read-application-settings.md)

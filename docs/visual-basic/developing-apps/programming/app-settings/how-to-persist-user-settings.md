@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Сохранение пользовательских параметров в Visual Basic'
 title: Практическое руководство. Сохранение пользовательских параметров
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - persistence [Visual Basic], persisting user settings [Visual Basic]
 - user settings [Visual Basic], persisting
 ms.assetid: 0e5e6415-b6e2-4602-9be0-a65fa167d007
-ms.openlocfilehash: 817111060259bdfbbb26d9f8eafeae439e1f651f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 43ca82442678356afacb8e05149a35d485603059
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410157"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797839"
 ---
 # <a name="how-to-persist-user-settings-in-visual-basic"></a>Практическое руководство. Сохранение пользовательских параметров в Visual Basic
 
@@ -32,7 +33,7 @@ ms.locfileid: "84410157"
   
  Для надлежащего выполнения этого примера приложение должно иметь пользовательский параметр `LastChanged` типа `Date`. Дополнительные сведения см. в разделе [Управление параметрами приложения (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объект My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Практическое руководство. Чтение параметров приложения в Visual Basic](how-to-read-application-settings.md)

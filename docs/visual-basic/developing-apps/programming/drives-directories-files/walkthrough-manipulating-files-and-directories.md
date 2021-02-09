@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Операции с файлами и каталогами в Visual Basic'
 title: Операции с файлами и каталогами
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - writing to files [Visual Basic], walkthroughs
 - I/O [Visual Basic], reading text from files
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
-ms.openlocfilehash: 4b77618e5cd525cf3ad012405f402681aa5bb52c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 315635ee43ee4d4956fc35b7f9bc635b374646f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775387"
 ---
 # <a name="walkthrough-manipulating-files-and-directories-in-visual-basic"></a>Пошаговое руководство. Операции с файлами и каталогами в Visual Basic
 
 В этом пошаговом руководстве приводятся основные сведения о файловом вводе-выводе в Visual Basic. В нем описывается создание небольшого приложения, перечисляющего текстовые файлы в каталоге и анализирующего их. Для каждого выбранного текстового файла приложение предоставляет атрибуты файла и первую строку содержимого. Кроме того, предоставляется возможность записать информацию в файл журнала.  
   
- В этом пошаговом руководстве используются члены `My.Computer.FileSystem Object`, доступные в Visual Basic. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.FileIO.FileSystem>. В конце пошагового руководства приводится эквивалентный пример, в котором используются классы пространства имен <xref:System.IO>.  
+ В этом пошаговом руководстве используются члены `My.Computer.FileSystem Object`, доступные в Visual Basic. Подробнее см. в разделе <xref:Microsoft.VisualBasic.FileIO.FileSystem>. В конце пошагового руководства приводится эквивалентный пример, в котором используются классы пространства имен <xref:System.IO>.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -34,7 +35,7 @@ ms.locfileid: "84406668"
   
 1. В меню **Файл** выберите пункт **Создать проект**.  
   
-     Откроется диалоговое окно **Новый проект** .  
+     Откроется диалоговое окно **Создание проекта** .  
   
 2. В области **Установленные шаблоны** разверните узел **Visual Basic** и выберите элемент **Windows**. В середине области **Шаблоны** щелкните **Приложение Windows Forms**.  
   
@@ -44,13 +45,13 @@ ms.locfileid: "84406668"
   
 4. Добавьте в форму элементы управления из приведенной ниже таблицы и установите для их свойств соответствующие значения.  
   
-    |Элемент управления|Свойство|Значение|  
+    |Control|Property (Свойство)|Значение|  
     |-------------|--------------|-----------|  
-    |**ListBox**|**Название**|`filesListBox`|  
-    |**Кнопка**|**Название**<br /><br /> **Текст**|`browseButton`<br /><br /> **Обзор**|  
-    |**Кнопка**|**Название**<br /><br /> **Текст**|`examineButton`<br /><br /> **Исследовать**|  
-    |**CheckBox**|**Название**<br /><br /> **Текст**|`saveCheckBox`<br /><br /> **Сохранить результаты**|  
-    |**FolderBrowserDialog**|**Название**|`FolderBrowserDialog1`|  
+    |**ListBox**|**Имя**|`filesListBox`|  
+    |**Button**|**Имя**<br /><br /> **Text**|`browseButton`<br /><br /> **Обзор**|  
+    |**Button**|**Имя**<br /><br /> **Text**|`examineButton`<br /><br /> **Исследовать**|  
+    |**CheckBox**|**Имя**<br /><br /> **Text**|`saveCheckBox`<br /><br /> **Сохранить результаты**|  
+    |**FolderBrowserDialog**|**Имя**|`FolderBrowserDialog1`|  
   
 ### <a name="to-select-a-folder-and-list-files-in-a-folder"></a>Выбор папки и перечисление файлов в ней  
   
@@ -72,7 +73,7 @@ ms.locfileid: "84406668"
   
      Строки, возвращаемые методом `GetFiles`, затем добавляются в элемент управления **ListBox**.  
   
-4. Запустите приложение. Нажмите кнопку **Обзор**. В диалоговом окне **Выбор папки** перейдите в папку, содержащую TXT-файлы, выберите папку и нажмите кнопку **ОК**.  
+4. Запустите приложение. Нажмите кнопку **Обзор** . В диалоговом окне **Выбор папки** перейдите в папку, содержащую TXT-файлы, выберите папку и нажмите кнопку **ОК**.  
   
      Элемент `ListBox` содержит список TXT-файлов в выбранной папке.  
   
@@ -98,7 +99,7 @@ ms.locfileid: "84406668"
   
      Метод <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A> считывает содержимое файла в <xref:System.IO.StreamReader>. Первая строка содержимого файла извлекается из `StreamReader` и добавляется в `StringBuilder`.  
   
-4. Запустите приложение. Нажмите кнопку **Обзор** и перейдите в папку с TXT-файлами. Нажмите кнопку **ОК**.  
+4. Запустите приложение. Нажмите кнопку **Обзор** и перейдите в папку с TXT-файлами. Нажмите кнопку **OK**.  
   
      Выберите файл в элементе `ListBox` и щелкните **Исследовать**. В окне `MessageBox` будет выведена информация о файле.  
   
@@ -167,4 +168,4 @@ ms.locfileid: "84406668"
 - <xref:System.IO>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory%2A>
-- [Пошаговое руководство. Управление файлами с помощью методов .NET Framework](walkthrough-manipulating-files-by-using-net-framework-methods.md)
+- [Пошаговое руководство: Управление файлами с помощью методов .NET Framework](walkthrough-manipulating-files-by-using-net-framework-methods.md)

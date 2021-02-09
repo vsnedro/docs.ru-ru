@@ -1,12 +1,13 @@
 ---
+description: 'Узнайте подробнее о: Устранение рисков, связанных с новыми возможностями .NET Framework 4.6 и последующих версий'
 title: Устранение рисков, связанных с новыми возможностями .NET Framework
 ms.date: 04/21/2020
-ms.openlocfilehash: bd0843ea21a0ff68c6f02b1351f66544dbb200bf
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: 3b29441a017c5105925604f8ac64991c46155f1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82103516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748054"
 ---
 # <a name="mitigate-new-behaviors-in-net-framework-46-and-later"></a>Устранение рисков, связанных с новыми возможностями .NET Framework 4.6 и последующих версий
 

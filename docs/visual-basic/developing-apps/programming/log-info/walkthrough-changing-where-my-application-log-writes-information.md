@@ -1,24 +1,25 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Изменение места записи информации для My.Application.Log (Visual Basic)'
 title: Изменение места записи сведений для My.Application.Log
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application.Log object, walkthroughs
 - event logs, changing output location
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
-ms.openlocfilehash: f9e45cdf4507840f62e32678f4c0a7be2c0be054
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aa4e1b8ce33e2afd8dd51c68340feb3e85eb8966
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731426"
 ---
 # <a name="walkthrough-changing-where-myapplicationlog-writes-information-visual-basic"></a>Пошаговое руководство. Изменение места записи информации для My.Application.Log (Visual Basic)
 
 Объекты `My.Application.Log` и `My.Log` можно использовать для записи в журнал информации о событиях, происходящих в приложении. В этом пошаговом руководстве показано, как переопределить параметры по умолчанию и настроить объект `Log` на запись в другие прослушиватели журналов.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Предварительные требования
 
-Объект `Log` может записывать информацию в несколько прослушивателей журналов. Перед изменением конфигурации необходимо определить текущую конфигурацию прослушивателей журналов. Для получения дополнительной информации см. [Walkthrough: Determining Where My.Application.Log Writes Information](walkthrough-determining-where-my-application-log-writes-information.md).
+Объект `Log` может записывать информацию в несколько прослушивателей журналов. Перед изменением конфигурации необходимо определить текущую конфигурацию прослушивателей журналов. Дополнительные сведения см. в разделе [Пошаговое руководство. Определение места записи информации для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md).
 
 Также см. разделы [Практическое руководство. Запись сведений о событиях в текстовый файл](how-to-write-event-information-to-a-text-file.md) и [Практическое руководство. Запись в журнал событий приложения](how-to-write-to-an-application-event-log.md).
 

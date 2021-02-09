@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Поиск файлов по конкретному шаблону в Visual Basic'
 title: Практическое руководство. Поиск файлов по конкретному шаблону
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - pattern matching
 - patterns, matching
 ms.assetid: 25e3b71d-b844-4293-9e4e-f06c5836b5cc
-ms.openlocfilehash: 71073672ed14cb2d5df5b5365266b718c59cb18f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 42266ad354e1ac8e3920663447e4d39fe7ad1b8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797566"
 ---
 # <a name="how-to-find-files-with-a-specific-pattern-in-visual-basic"></a>Практическое руководство. Поиск файлов по конкретному шаблону в Visual Basic
 
@@ -51,6 +52,6 @@ ms.locfileid: "84401645"
 ## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A>
-- [Практическое руководство. Поиск подкаталогов по шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)
-- [Исправление неполадок, связанных с чтением из текстовых файлов и записью в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Практическое руководство. Поиск подкаталогов по заданному шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)
+- [Устранение неполадок: Чтение из текстовых файлов и запись в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)
 - [Практическое руководство. Получение коллекции содержащихся в каталоге файлов](how-to-get-the-collection-of-files-in-a-directory.md)

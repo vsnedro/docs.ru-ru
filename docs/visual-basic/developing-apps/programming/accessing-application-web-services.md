@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Доступ к веб-службам приложения (Visual Basic)'
 title: Доступ к веб-службам приложения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.WebServices object
 - applications [Visual Basic], Web services
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
-ms.openlocfilehash: cf9a0c9840b9228b59af9959cf3a4efb9a1d1ea0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4efd35ed7c8f4251a749b85a45242af299a51e6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797891"
 ---
 # <a name="accessing-application-web-services-visual-basic"></a>Доступ к веб-службам приложения (Visual Basic)
 
@@ -21,7 +22,7 @@ ms.locfileid: "84410196"
 
 В следующей таблице перечислены возможные способы доступа к веб-службам, на которые ссылается приложение.
 
-|Чтобы|См.|
+|Кому|См.|
 |---|---|
 |Вызов веб-службы|[Объект My.WebServices](../../language-reference/objects/my-webservices-object.md)|
 |Вызов веб-службы в асинхронном режиме и обработка события при его завершении|[Практическое руководство. Асинхронный вызов веб-службы](how-to-call-a-web-service-asynchronously.md)|

@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Переименование файла в Visual Basic'
 title: Практическое руководство. Переименование файла
 ms.date: 07/20/2015
 helpviewer_keywords:
 - I/O [Visual Basic], renaming files
 - files [Visual Basic], renaming
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
-ms.openlocfilehash: 3de41ee6627315f0e26964b75f564ff98fe472ec
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cf182fa94befdfdcb1568052a0193d483670cf49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797410"
 ---
 # <a name="how-to-rename-a-file-in-visual-basic"></a>Практическое руководство. Переименование файла в Visual Basic
 

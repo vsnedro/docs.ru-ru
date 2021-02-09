@@ -1,15 +1,16 @@
 ---
+description: 'Узнайте подробнее о: Операции с портами в .NET Framework в Visual Basic'
 title: Операции с портами в .NET Framework
 ms.date: 07/20/2015
 helpviewer_keywords:
 - ports, Visual Basic
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
-ms.openlocfilehash: 0ef0b8a7aec40603185d227d972cea655fd238c1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 072baac53589f8a5d6405eb786b4e692cbaf6181
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360141"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641529"
 ---
 # <a name="port-operations-in-the-net-framework-with-visual-basic"></a>Операции с портами в .NET Framework в Visual Basic
 
@@ -24,7 +25,7 @@ ms.locfileid: "84360141"
 
 В этой таблице указаны и описаны основные перечисления, которые используются для доступа к последовательному порту:
 
-|Перечисление|Описание:|
+|Перечисление|Описание|
 |---|---|
 |<xref:System.IO.Ports.Handshake>|Определяет протокол управления, который организует связь с последовательным портом для объекта <xref:System.IO.Ports.SerialPort>.|
 |<xref:System.IO.Ports.Parity>|Задает бит четности для объекта <xref:System.IO.Ports.SerialPort>.|

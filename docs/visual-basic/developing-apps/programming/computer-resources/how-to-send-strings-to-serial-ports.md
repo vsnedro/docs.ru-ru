@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Отправка строк в последовательный порт
+description: 'Подробнее о следующем: Практическое руководство. Отправка строк в последовательный порт в Visual Basic'
+title: Практическое руководство. Отправка строк в последовательные порты
 ms.date: 07/20/2015
 helpviewer_keywords:
 - ports, sending strings to
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - My.Computer.Ports object
 - serial ports, sending strings to
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
-ms.openlocfilehash: f78df9cf1bd75432ea645c4dcc06498915ceee49
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 66dedaab05090af2659701e57b37b4813447b8ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666489"
 ---
 # <a name="how-to-send-strings-to-serial-ports-in-visual-basic"></a>Практическое руководство. Отправка строк в последовательный порт в Visual Basic
 
@@ -22,7 +23,7 @@ ms.locfileid: "84360297"
 
  Этот пример кода отправляет строку в последовательный порт COM1. Возможно, на вашем компьютере потребуется использовать другой последовательный порт.  
   
- Воспользуйтесь методом `My.Computer.Ports.OpenSerialPort`, чтобы получить ссылку на порт. Дополнительные сведения см. в разделе <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
+ Воспользуйтесь методом `My.Computer.Ports.OpenSerialPort`, чтобы получить ссылку на порт. Для получения дополнительной информации см. <xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A>.  
   
  Блок `Using` позволяет приложению закрыть последовательный порт даже в том случае, если он создает исключение. В блоке `Try...Catch...Finally` должен отображаться весь код, управляющий последовательным портом.  
   

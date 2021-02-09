@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Группирование подключений'
 title: Группирование подключений
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - network resources, connections
 - connection pooling
 ms.assetid: 2ec502e8-4ba0-4c22-9410-f28eaf4eee63
-ms.openlocfilehash: 8bd4412a4c13dd490fce3118f59b5bb1f0d3ea85
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 08e917b555da918ad4386a77938aeb57bc4e4ced
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96250571"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791573"
 ---
 # <a name="connection-grouping"></a>Группирование подключений
 

@@ -1,5 +1,6 @@
 ---
-title: Создание, удаление и перемещение файлов и папок
+description: 'Узнайте подробнее о: Создание, удаление и перемещение файлов и папок в Visual Basic'
+title: Создание, удаление и перемещение файлов и каталогов
 ms.date: 07/20/2015
 helpviewer_keywords:
 - examples [Visual Basic], moving files and directories
@@ -22,20 +23,20 @@ helpviewer_keywords:
 - I/O [Visual Basic], renaming folders
 - I/O [Visual Basic], moving files
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
-ms.openlocfilehash: 12f5e8d29ea92750884e45bf1d9ef05bbfe672b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3f0a718a5222fc9840152b3379ce3d56af25f9c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666307"
 ---
 # <a name="creating-deleting-and-moving-files-and-directories-in-visual-basic"></a>Создание, удаление и перемещение файлов и папок в Visual Basic
 
 В этом разделе перечислены задачи, связанные с созданием, удалением, перемещением и переименованием файлов и каталогов в Visual Basic.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
- [Практическое руководство. Копирование файлов по заданному шаблону в каталог](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)  
+ [Практическое руководство. Копирование файлов с определенным шаблоном в каталог](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)  
  Демонстрация копирования файлов с определенным шаблоном имени файла, например только файлов с расширением TXT, в заданный каталог.  
   
  [Практическое руководство. Создание копии файла в том же каталоге](how-to-create-a-copy-of-a-file-in-the-same-directory.md)  
@@ -65,7 +66,7 @@ ms.locfileid: "84401762"
  [Практическое руководство. Создание каталога](how-to-create-a-directory.md)  
  Демонстрация создания каталога.  
   
- [Практическое руководство. Поиск подкаталогов по шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)  
+ [Практическое руководство. Поиск подкаталогов по заданному шаблону](how-to-find-subdirectories-with-a-specific-pattern.md)  
  Демонстрация получения списка каталогов с именами, удовлетворяющими конкретному шаблону.  
   
  [Практическое руководство. Получение коллекции содержащихся в каталоге файлов](how-to-get-the-collection-of-files-in-a-directory.md)  
@@ -77,7 +78,7 @@ ms.locfileid: "84401762"
  [Практическое руководство. Анализ путей к файлам](how-to-parse-file-paths.md)  
  Демонстрация использования методов объекта `My` для объединения путей к файлам.  
   
-## <a name="reference"></a>Справочник  
+## <a name="reference"></a>Справочные сведения  
 
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  Описание объекта `My.Computer.FileSystem` и его членов.  

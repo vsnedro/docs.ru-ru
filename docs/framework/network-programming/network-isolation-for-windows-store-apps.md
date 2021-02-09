@@ -1,13 +1,14 @@
 ---
+description: 'Узнайте подробнее о: Сетевая изоляция для приложений Магазина Windows'
 title: Сетевая изоляция для приложений Магазина Windows
 ms.date: 03/30/2017
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
-ms.openlocfilehash: 0f9288b53b969838cac64c24d3c9861a0f841aca
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: cc805cb5d5d761bb79b6a307caef6c809aabed16
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90558463"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785723"
 ---
 # <a name="network-isolation-for-windows-store-apps"></a>Сетевая изоляция для приложений Магазина Windows
 
@@ -29,9 +30,9 @@ ms.locfileid: "90558463"
   
 ## <a name="see-also"></a>См. также раздел
 
-- [Соединение с веб-службой](/previous-versions/windows/apps/hh761504(v=win.10))
-- [Рекомендации и контрольный список для настройки сетевой изоляции](/previous-versions/windows/apps/hh770532(v=win.10))
+- [Connecting to a web service (Соединение с веб-службой)](/previous-versions/windows/apps/hh761504(v=win.10))
+- [Как настроить возможности сети (HTML)](/previous-versions/windows/apps/hh770532(v=win.10))
 - [Краткое руководство. Подключение с помощью HttpClient](/previous-versions/windows/apps/hh781239(v=win.10))
-- [Как использовать обработчики HttpClient](/previous-versions/windows/apps/hh781241(v=win.10))
-- [Как защитить подключения HttpClient](/previous-versions/windows/apps/hh781240(v=win.10))
+- [How to use HttpClient handlers (Как использовать обработчики HttpClient)](/previous-versions/windows/apps/hh781241(v=win.10))
+- [How to secure HttpClient connections (Как защитить подключения HttpClient)](/previous-versions/windows/apps/hh781240(v=win.10))
 - [Пример HttpClient](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664)

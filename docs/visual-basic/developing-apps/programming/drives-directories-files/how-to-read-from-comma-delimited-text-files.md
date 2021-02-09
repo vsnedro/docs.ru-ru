@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми в Visual Basic'
 title: Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - reading text files [Visual Basic], comma-delimited
 - text files [Visual Basic], reading
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
-ms.openlocfilehash: ba62a0226a1a83326cbc7ab393d135763a7c7cb2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dc4d4d5a7639ab7b5aa342aa8646b02985e40797
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797488"
 ---
 # <a name="how-to-read-from-comma-delimited-text-files-in-visual-basic"></a>Практическое руководство. Чтение из текстовых файлов с разделителями-запятыми в Visual Basic
 
@@ -54,7 +55,7 @@ ms.locfileid: "84411646"
   
 - Слишком длинный путь (<xref:System.IO.PathTooLongException>).  
   
-- Пользователь не имеет необходимых разрешений для доступа к файлу (<xref:System.UnauthorizedAccessException>).  
+- У пользователя нет необходимых разрешений для доступа к файлу (<xref:System.UnauthorizedAccessException>).  
   
 ## <a name="see-also"></a>См. также раздел
 
@@ -62,5 +63,5 @@ ms.locfileid: "84411646"
 - [Практическое руководство. Чтение из текстовых файлов с полями фиксированного размера](how-to-read-from-fixed-width-text-files.md)
 - [Практическое руководство. Чтение из текстовых файлов различных форматов](how-to-read-from-text-files-with-multiple-formats.md)
 - [Анализ текстовых файлов с помощью объекта TextFieldParser](parsing-text-files-with-the-textfieldparser-object.md)
-- [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)
-- [Исправление неполадок, связанных с чтением из текстовых файлов и записью в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)
+- [Пошаговое руководство: Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)
+- [Устранение неполадок: Чтение из текстовых файлов и запись в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)

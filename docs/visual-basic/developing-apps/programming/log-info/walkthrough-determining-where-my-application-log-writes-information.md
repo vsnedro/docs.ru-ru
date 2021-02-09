@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Определение места записи информации для My.Application.Log (Visual Basic)'
 title: Определение места записи сведений для My.Application.Log
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - application event logs, output location
 - applications [Visual Basic], output location
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
-ms.openlocfilehash: 00b543dbe96ca99446f6797a13b66ee62c422b93
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4ddb5777bcbdde07069efd2fd3a66f0c220ee135
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398283"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792288"
 ---
 # <a name="walkthrough-determining-where-myapplicationlog-writes-information-visual-basic"></a>Пошаговое руководство. Определение места записи информации для My.Application.Log (Visual Basic)
 
@@ -55,7 +56,7 @@ ms.locfileid: "84398283"
 
     - Прослушиватель <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=nameWithType> записывает данные в журнал файлов, как описано во введении.
 
-    - Прослушиватель <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> записывает данные в журнал событий компьютера, определяемый параметром `initializeData` . Для просмотра журнала событий можно использовать **обозреватель сервера** или **средство просмотра событий Windows**. Для получения дополнительной информации см. [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md).
+    - Прослушиватель <xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType> записывает данные в журнал событий компьютера, определяемый параметром `initializeData` . Для просмотра журнала событий можно использовать **обозреватель сервера** или **средство просмотра событий Windows**. Дополнительные сведения см. в разделе [События трассировки событий Windows в .NET Framework](../../../../framework/performance/etw-events.md).
 
     - Прослушиватели <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=nameWithType> и <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> записывают данные в файл, указанный в параметре `initializeData` .
 
@@ -63,7 +64,7 @@ ms.locfileid: "84398283"
 
     - Сведения о том, куда записывают информацию другие типы прослушивателей журналов, приведены в документации по этим типам.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:System.Diagnostics.DefaultTraceListener>
@@ -73,8 +74,8 @@ ms.locfileid: "84398283"
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics>
 - [Работа с журналами приложения](working-with-application-logs.md)
-- [Практическое руководство. Запись в журнал сведений об исключениях](how-to-log-exceptions.md)
+- [Практическое руководство. Исплючения журналов](how-to-log-exceptions.md)
 - [Практическое руководство. Запись сообщений в журнал](how-to-write-log-messages.md)
-- [Пошаговое руководство. Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)
-- [События трассировки событий Windows в .NET Framework](../../../../framework/performance/etw-events.md)
-- [Устранение неполадок, связанных с прослушивателями журнала](troubleshooting-log-listeners.md)
+- [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)
+- [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md)
+- [Устранение неполадок. Прослушиватели журнала](troubleshooting-log-listeners.md)

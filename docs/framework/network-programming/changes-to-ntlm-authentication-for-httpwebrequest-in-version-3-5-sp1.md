@@ -1,13 +1,14 @@
 ---
+description: 'Узнайте подробнее о: Изменения в аутентификации NTLM для HttpWebRequest в версии 3.5 с пакетом обновления 1 (SP1)'
 title: Изменения в аутентификации NTLM для HttpWebRequest в версии 3.5 с пакетом обновления 1 (SP1)
 ms.date: 03/30/2017
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-ms.openlocfilehash: 388e6dc648e1fd68e24a852cb08de107f09f9c9f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cdb17317dbafc167cce7a9b2785be68a35d3bd5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "64754875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791638"
 ---
 # <a name="changes-to-ntlm-authentication-for-httpwebrequest-in-version-35-sp1"></a>Изменения в аутентификации NTLM для HttpWebRequest в версии 3.5 с пакетом обновления 1 (SP1)
 
@@ -43,7 +44,7 @@ ms.locfileid: "64754875"
 
 3. Щелкните раздел MSV1_0 правой кнопкой мыши, наведите указатель на пункт "Создать" и выберите пункт "Мультистроковый параметр".
 
-4. Введите `BackConnectionHostNames` и нажмите клавишу ВВОД.
+4. Введите `BackConnectionHostNames` и нажмите ВВОД.
 
 5. Щелкните параметр `BackConnectionHostNames` правой кнопкой мыши и выберите пункт "Изменить".
 

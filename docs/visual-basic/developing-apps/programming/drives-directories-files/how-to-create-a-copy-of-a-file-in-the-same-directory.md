@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Создание копии файла в том же каталоге в Visual Basic'
 title: Практическое руководство. Создание копии файла в том же каталоге
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - CopyFile method [Visual Basic], copying files in Visual Basic
 - I/O [Visual Basic], copying files
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
-ms.openlocfilehash: 741f0c80ba268369ebdd598460e9d5fa13d09571
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 27fecc22a9317dd45e663aa37884c6c1f1e36349
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797618"
 ---
 # <a name="how-to-create-a-copy-of-a-file-in-the-same-directory-in-visual-basic"></a>Практическое руководство. Создание копии файла в том же каталоге в Visual Basic
 
@@ -48,7 +49,7 @@ ms.locfileid: "84401684"
   
 - Конечный файл существует, а параметр `overwrite` имеет значение `False` (<xref:System.IO.IOException>).  
   
-- Пользователь не имеет необходимых разрешений для доступа к файлу (<xref:System.IO.IOException>).  
+- У пользователя нет необходимых разрешений для доступа к файлу (<xref:System.IO.IOException>).  
   
 - Файл в папке назначения с тем же именем уже используется (<xref:System.IO.IOException>).  
   
@@ -69,7 +70,7 @@ ms.locfileid: "84401684"
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>
-- [Практическое руководство. Копирование файлов по заданному шаблону в каталог](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
+- [Практическое руководство. Копирование файлов с определенным шаблоном в каталог](how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
 - [Практическое руководство. Создание копии файла в другом каталоге](how-to-create-a-copy-of-a-file-in-a-different-directory.md)
 - [Практическое руководство. Копирование каталога в другой каталог](how-to-copy-a-directory-to-another-directory.md)
 - [Практическое руководство. Переименование файла](how-to-rename-a-file.md)

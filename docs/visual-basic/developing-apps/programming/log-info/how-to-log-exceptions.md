@@ -1,16 +1,17 @@
 ---
-title: Практическое руководство. Запись в журнал сведений об исключениях
+description: 'Подробнее о следующем: Практическое руководство. Запись в журнал сведений об исключениях в Visual Basic'
+title: Практическое руководство. Запись исключений в журнал
 ms.date: 07/20/2015
 helpviewer_keywords:
 - exceptions, logging
 - exceptions, tracking
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
-ms.openlocfilehash: 59ed7b836126a38f32b7c6f479570a566d236e6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a4155de4e73c632edf071256976161cfdbffba77
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775218"
 ---
 # <a name="how-to-log-exceptions-in-visual-basic"></a>Практическое руководство. Запись в журнал сведений об исключениях в Visual Basic
 
@@ -66,7 +67,7 @@ ms.locfileid: "84410118"
   
      [!code-vb[VbVbalrMyApplicationLog#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#5)]  
   
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>
@@ -74,4 +75,4 @@ ms.locfileid: "84410118"
 - [Работа с журналами приложения](working-with-application-logs.md)
 - [Практическое руководство. Запись сообщений в журнал](how-to-write-log-messages.md)
 - [Пошаговое руководство. Определение места записи сведений для My.Application.Log](walkthrough-determining-where-my-application-log-writes-information.md)
-- [Пошаговое руководство. Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)
+- [Пошаговое руководство: Изменение места записи сведений для My.Application.Log](walkthrough-changing-where-my-application-log-writes-information.md)

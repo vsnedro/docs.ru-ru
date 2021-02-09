@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Запись данных в буфер обмена и чтение их оттуда (Visual Basic)'
 title: Запись данных в буфер обмена и чтение их оттуда
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - data [Visual Basic], Clipboard
 - reading data, from Clipboard
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
-ms.openlocfilehash: 243fb237f3f9ba53f8b29079df08531c102c78dd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 18cb66f6d8093757ce34ddb20659824787460920
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74349730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666346"
 ---
 # <a name="storing-data-to-and-reading-from-the-clipboard-visual-basic"></a>Запись данных в буфер обмена и чтение их оттуда (Visual Basic)
 
@@ -73,7 +74,7 @@ ms.locfileid: "74349730"
 > [!IMPORTANT]
 > Поскольку к буферу обмена могут обращаться другие пользователи, не храните в нем конфиденциальные данные, включая пароли.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>
 - <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>

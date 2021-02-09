@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Чтение значения из раздела реестра в Visual Basic'
 title: Практическое руководство. Чтение значения из раздела реестра
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - registry keys [Visual Basic], reading from
 - registry [Visual Basic], reading
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
-ms.openlocfilehash: 74069b111f4316eb81c74f5e62c1fbff6ab8f4b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e062e40fe1c8876864e633079fc22e2c83cfb5d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797683"
 ---
 # <a name="how-to-read-a-value-from-a-registry-key-in-visual-basic"></a>Практическое руководство. Чтение значения из раздела реестра в Visual Basic
 
@@ -45,15 +46,15 @@ ms.locfileid: "84401853"
   
  При следующих условиях возможно возникновение исключения:  
   
-- Имя ключа имеет значение `Nothing` (<xref:System.ArgumentNullException>).  
+- Имя раздела — `Nothing` (<xref:System.ArgumentNullException>).  
   
 - У пользователя нет разрешений на создание разделов реестра (<xref:System.Security.SecurityException>).  
   
-- Имя ключа превышает ограничение в 255 символов (<xref:System.ArgumentException>).  
+- Имя раздела превышает ограничение в 255 символов (<xref:System.ArgumentException>).  
   
 ## <a name="net-framework-security"></a>Безопасность .NET Framework  
 
- Для запуска этого процесса сборке нужен уровень привилегий, предоставляемый классом <xref:System.Security.Permissions.RegistryPermission>. Если процесс выполняется в контексте с частичным доверием, он может сгенерировать исключение из-за недостатка привилегий. Аналогичным образом пользователь должен иметь правильные ACL для создания и записи параметров. Например, локальное приложение, имеющее разрешение на доступ к коду, может не иметь разрешения операционной системы. Дополнительные сведения см. в разделе [Основы управления доступом для кода](../../../../framework/misc/code-access-security-basics.md).  
+ Для запуска этого процесса сборке нужен уровень привилегий, предоставляемый классом <xref:System.Security.Permissions.RegistryPermission>. Если процесс выполняется в контексте с частичным доверием, он может сгенерировать исключение из-за недостатка привилегий. Аналогичным образом пользователь должен иметь правильные ACL для создания и записи параметров. Например, локальное приложение, имеющее разрешение на доступ к коду, может не иметь разрешения операционной системы. Дополнительные сведения см. в разделе [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
 ## <a name="see-also"></a>См. также раздел
 

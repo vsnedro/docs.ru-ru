@@ -1,4 +1,5 @@
 ---
+description: 'Узнайте подробнее о: Доступ к файлам с помощью Visual Basic'
 title: Доступ к файлам
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - I/O [Visual Basic]
 - sequential access
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
-ms.openlocfilehash: 3b2042862ae81a52d62374e35a456766ed47edc9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b3ea742185e7219ce7fdfb8eee987fd9c17e3a88
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666320"
 ---
 # <a name="file-access-with-visual-basic"></a>Доступ к файлам с помощью Visual Basic
 
 Объект `My.Computer.FileSystem` предоставляет средства для работы с файлами и папками. Его свойства, методы и события позволяют создавать, копировать, перемещать, исследовать и удалять файлы и папки. `My.Computer.FileSystem` обеспечивает более высокую производительность, чем устаревшие функции (`FileOpen`, `FileClose`, `Input`, `InputString`, `LineInput` и т. д.), предоставляемые Visual Basic для поддержки обратной совместимости.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Чтение из файлов](reading-from-files.md)  
  Список разделов, посвященных использованию объекта `My.Computer.FileSystem` для чтения из файлов.  
@@ -42,8 +43,8 @@ ms.locfileid: "84401736"
  [Кодировки файлов](file-encodings.md)  
  Описание кодировок файлов и их применения.  
   
- [Пошаговое руководство. Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)  
+ [Пошаговое руководство: Операции с файлами и каталогами в Visual Basic](walkthrough-manipulating-files-and-directories.md)  
  Демонстрация создания служебной программы, сообщающей сведения о файлах и папках.  
   
- [Исправление неполадок, связанных с чтением из текстовых файлов и записью в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)  
+ [Устранение неполадок: Чтение из текстовых файлов и запись в такие файлы](troubleshooting-reading-from-and-writing-to-text-files.md)  
  Список распространенных проблем, возникающих при чтении и записи в текстовые файлы, и предлагаемые способы их устранения.

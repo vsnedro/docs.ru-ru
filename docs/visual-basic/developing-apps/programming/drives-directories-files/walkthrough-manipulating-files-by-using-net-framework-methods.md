@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Управление файлами с помощью методов .NET Framework (Visual Basic)'
 title: Управление файлами с помощью методов .NET Framework
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - text files [Visual Basic], reading
 - I/O [Visual Basic], reading text from files
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
-ms.openlocfilehash: 9abb87f3f6cdefefef29eb37c2c2d4d15155e93d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e59dca15660a981c487688234c864a818398af65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775374"
 ---
 # <a name="walkthrough-manipulating-files-by-using-net-framework-methods-visual-basic"></a>Пошаговое руководство. Управление файлами с помощью методов .NET Framework (Visual Basic)
 
@@ -34,7 +35,7 @@ ms.locfileid: "84406655"
 
 ### <a name="to-create-the-project"></a>Создание проекта
 
-1. В меню **Файл** выберите **Создать проект**.
+1. В меню **Файл** выберите пункт **Создать проект**.
 
 2. В области **Новый проект** щелкните **Приложения Windows**.
 
@@ -44,11 +45,11 @@ ms.locfileid: "84406655"
 
 4. Добавьте в форму элементы управления из следующей таблицы и установите для их свойств соответствующие значения.
 
-|**Объект**|**Свойства**|**Value**|
+|**Объект**|**Свойства**|**Значение**|
 |---|---|---|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**|`Submit`<br /><br /> **Сохранить запись**|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**|`Clear`<br /><br /> **Очистить запись**|
-|<xref:System.Windows.Forms.TextBox>|**Название**<br /><br /> **Текст**<br /><br /> **Multiline**|`Entry`<br /><br /> **Введите произвольный текст.**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**|`Submit`<br /><br /> **Сохранить запись**|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**|`Clear`<br /><br /> **Очистить запись**|
+|<xref:System.Windows.Forms.TextBox>|**Имя**<br /><br /> **Text**<br /><br /> **Multiline**|`Entry`<br /><br /> **Введите произвольный текст.**<br /><br /> `False`|
 
 ## <a name="writing-to-the-file"></a>Запись в файл
 
@@ -93,12 +94,12 @@ ms.locfileid: "84406655"
 
 Для реализации следующей части пошагового руководства необходимо добавить в форму элементы управления из следующей таблицы и присвоить соответствующие значения их свойствам.
 
-|Элемент управления|Свойства|Значения|
+|Control|Свойства|Значения|
 |-------------|----------------|------------|
-|<xref:System.Windows.Forms.TextBox>|**Название**<br /><br /> **Visible**<br /><br /> **Размер**<br /><br /> **Multiline**|`DisplayEntry`<br /><br /> `False`<br /><br /> `120,60`<br /><br /> `True`|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**|`Display`<br /><br /> **Отображение**|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**|`GetEntries`<br /><br /> **Показать записи**|
-|<xref:System.Windows.Forms.ComboBox>|**Название**<br /><br /> **Текст**<br /><br /> **Включено**|`PickEntries`<br /><br /> **Выберите запись**<br /><br /> `False`|
+|<xref:System.Windows.Forms.TextBox>|**имя**;<br /><br /> **Visible**<br /><br /> **Size**<br /><br /> **Multiline**|`DisplayEntry`<br /><br /> `False`<br /><br /> `120,60`<br /><br /> `True`|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**|`Display`<br /><br /> **Дисплей**|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**|`GetEntries`<br /><br /> **Получение записей**|
+|<xref:System.Windows.Forms.ComboBox>|**Имя**<br /><br /> **Text**<br /><br /> **Enabled**|`PickEntries`<br /><br /> **Выбор записи**<br /><br /> `False`|
 
 ### <a name="to-populate-the-combo-box"></a>Заполнение элемента управления ComboBox
 
@@ -122,11 +123,11 @@ ms.locfileid: "84406655"
 
 Добавьте в форму элементы управления из следующей таблицы и установите для их свойств соответствующие значения.
 
-|Элемент управления|Свойства|Значения|
+|Control|Свойства|Значения|
 |-------------|----------------|------------|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**<br /><br /> **Включено**|`DeleteEntry`<br /><br /> **Удалить запись**<br /><br /> `False`|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**<br /><br /> **Включено**|`EditEntry`<br /><br /> **Изменить запись**<br /><br /> `False`|
-|<xref:System.Windows.Forms.Button>|**Название**<br /><br /> **Текст**<br /><br /> **Включено**|`SubmitEdit`<br /><br /> **Сохранить изменения**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**имя**;<br /><br /> **Text**<br /><br /> **Enabled**|`DeleteEntry`<br /><br /> **Удаление записи**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**<br /><br /> **Enabled**|`EditEntry`<br /><br /> **Изменить запись**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Имя**<br /><br /> **Text**<br /><br /> **Enabled**|`SubmitEdit`<br /><br /> **Отправка изменений**<br /><br /> `False`|
 
 ### <a name="to-enable-deletion-and-modification-of-entries"></a>Включение возможности удаления и изменения записей
 
