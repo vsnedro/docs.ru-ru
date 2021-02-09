@@ -5,12 +5,12 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 05/18/2020
 zone_pivot_groups: unit-testing-framework-set-one
-ms.openlocfilehash: eb426b790e0623b0cf233a763e93d2bd501b8034
-ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
+ms.openlocfilehash: a7b6b66e4cc865d4ec6b7cfc31ac79767935df2f
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100825"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506387"
 ---
 # <a name="order-unit-tests"></a>Порядок модульных тестов
 
@@ -30,7 +30,7 @@ ms.locfileid: "86100825"
 > [!NOTE]
 > Тест с именем `Test14` всегда будет выполняться раньше `Test2`, хотя числовое значение `2` меньше `14`. Это связано с тем, что для упорядочения используются текстовые значения имен тестов.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/MSTest.Project/ByAlphabeticalOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/MSTest.Project/ByAlphabeticalOrder.cs":::
 
 :::zone-end
 :::zone pivot="xunit"
@@ -41,35 +41,35 @@ ms.locfileid: "86100825"
 
 Чтобы упорядочить тестовые случаи по имени метода, следует реализовать `ITestCaseOrderer` и предоставить механизм упорядочения.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/AlphabeticalOrderer.cs":::
 
 Затем задайте порядок тестовых случаев в тестовом классе с помощью `TestCaseOrdererAttribute`.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByAlphabeticalOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByAlphabeticalOrder.cs":::
 
 ## <a name="order-by-collection-alphabetically"></a>Упорядочение коллекций по алфавиту
 
 Чтобы упорядочить коллекции по отображаемому имени, следует реализовать `ITestCollectionOrderer` и предоставить механизм упорядочения.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/DisplayNameOrderer.cs":::
 
 Так как коллекции тестов могут выполняться параллельно, явным образом отключите параллелизацию тестов для коллекций с помощью `CollectionBehaviorAttribute`. Затем укажите реализацию в `TestCollectionOrdererAttribute`.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByDisplayName.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByDisplayName.cs":::
 
 ## <a name="order-by-custom-attribute"></a>Упорядочение по настраиваемому атрибуту
 
 Чтобы упорядочить тесты xUnit по пользовательским атрибутам, прежде всего нужно создать для этого атрибут. Определите `TestPriorityAttribute` следующим образом:
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Attributes/TestPriorityAttribute.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Attributes/TestPriorityAttribute.cs":::
 
 Далее мы рассмотрим реализацию `PriorityOrderer` интерфейса `ITestCaseOrderer`.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/Orderers/PriorityOrderer.cs":::
 
 Затем задайте порядок тестовых случаев в тестовом классе с помощью `TestCaseOrdererAttribute` для `PriorityOrderer`.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/XUnit.TestProject/ByPriorityOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/XUnit.TestProject/ByPriorityOrder.cs":::
 
 :::zone-end
 :::zone pivot="nunit"
@@ -78,7 +78,7 @@ ms.locfileid: "86100825"
 
 Чтобы явным образом упорядочить тесты, в NUnit можно использовать [`OrderAttribute`](https://github.com/nunit/docs/wiki/Order-Attribute). Тесты с этим атрибутом всегда выполняются раньше, чем остальные. Для определения порядка выполнения модульных тестов используется значение order.
 
-:::code language="csharp" source="~/dotnet-samples/csharp/unit-testing/NUnit.TestProject/ByOrder.cs":::
+:::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 
 :::zone-end
 
