@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. реализация IEnumerable (Of T) в Visual Basic
 title: Реализация IEnumerable
 ms.date: 07/31/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - loop structures [Visual Basic], optimizing performance
 - control flow [Visual Basic]
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-ms.openlocfilehash: f1f0036c38299f2392f8c8705e67b7bb6b7db068
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 87905e4f110d3a9d95b1cad642296ea8105f32f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058642"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428146"
 ---
 # <a name="walkthrough-implementing-ienumerableof-t-in-visual-basic"></a>Пошаговое руководство. Реализация IEnumerable(Of T) в Visual Basic
 
@@ -34,9 +35,9 @@ ms.locfileid: "91058642"
 
 1. Убедитесь, что в диалоговом окне **Создание проекта** в области **Типы проектов** выбран пункт **Windows**. Выберите **Библиотеки классов** в области **Шаблоны**. В поле **Имя** введите `StreamReaderEnumerable` и нажмите кнопку **ОК**. Отобразится новый проект.
 
-1. В **Обозреватель решений**щелкните правой кнопкой мыши файл Class1. vb и выберите команду **Переименовать**. Измените имя файла на `StreamReaderEnumerable.vb` и нажмите клавишу ВВОД. При переименовании файла класс также будет переименован в `StreamReaderEnumerable`. Этот класс реализует интерфейс `IEnumerable(Of String)`.
+1. В **Обозреватель решений** щелкните правой кнопкой мыши файл Class1. vb и выберите команду **Переименовать**. Измените имя файла на `StreamReaderEnumerable.vb` и нажмите клавишу ВВОД. При переименовании файла класс также будет переименован в `StreamReaderEnumerable`. Этот класс реализует интерфейс `IEnumerable(Of String)`.
 
-1. Щелкните правой кнопкой мыши проект Стреамреадеренумерабле, наведите указатель на пункт **Добавить**и выберите пункт **новый элемент**. Выберите шаблон **класса** . В поле **Имя** введите `StreamReaderEnumerator.vb`, а затем нажмите кнопку **ОК**.
+1. Щелкните правой кнопкой мыши проект Стреамреадеренумерабле, наведите указатель на пункт **Добавить** и выберите пункт **новый элемент**. Выберите шаблон **класса** . В поле **имя** введите `StreamReaderEnumerator.vb` и нажмите кнопку **ОК**.
 
  Первый класс в этом проекте является классом Enumerable и будет реализовывать `IEnumerable(Of String)` интерфейс. Этот универсальный интерфейс реализует <xref:System.Collections.IEnumerable> интерфейс и гарантирует, что потребители этого класса могут обращаться к значениям, введенным как `String` .  
   
@@ -76,11 +77,11 @@ ms.locfileid: "91058642"
 
      [!code-vb[VbVbalrIteratorWalkthrough#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/StreamReaderIterator.vb#6)]
 
-5. `MoveNext`Метод `IEnumerator` интерфейса переходит к следующему элементу в текстовом файле и обновляет значение, возвращаемое `Current` свойством. Если больше нет элементов для чтения, `MoveNext` метод возвращает значение `False` ; в противном случае `MoveNext` метод возвращает значение `True` . Добавьте следующий код в метод `MoveNext` .
+5. `MoveNext`Метод `IEnumerator` интерфейса переходит к следующему элементу в текстовом файле и обновляет значение, возвращаемое `Current` свойством. Если больше нет элементов для чтения, `MoveNext` метод возвращает значение `False` ; в противном случае `MoveNext` метод возвращает значение `True` . Добавьте в метод `MoveNext` следующий код.
 
      [!code-vb[VbVbalrIteratorWalkthrough#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/StreamReaderIterator.vb#7)]
 
-6. `Reset`Метод `IEnumerator` интерфейса направляет итератор, указывающий на начало текстового файла, и очищает значение текущего элемента. Добавьте следующий код в метод `Reset` .
+6. `Reset`Метод `IEnumerator` интерфейса направляет итератор, указывающий на начало текстового файла, и очищает значение текущего элемента. Добавьте в метод `Reset` следующий код.
 
      [!code-vb[VbVbalrIteratorWalkthrough#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/StreamReaderIterator.vb#8)]
 
@@ -94,7 +95,7 @@ ms.locfileid: "91058642"
   
  [!code-vb[VbVbalrIteratorWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/Module1.vb#10)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Поток управления](index.md)

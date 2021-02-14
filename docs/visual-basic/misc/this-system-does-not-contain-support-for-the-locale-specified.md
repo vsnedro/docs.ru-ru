@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Эта система не содержит поддержку указанного языкового стандарта.'
 title: Эта система не предусматривает поддержки для указанного языкового стандарта.
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_LocalNotSupported
 ms.assetid: 59bfa215-556b-4bfa-8f25-b090ea83298d
-ms.openlocfilehash: b53ff9c2c1deb1cdadfba3114f65785ead199e36
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 744408cb4bbd088c9ffeceee9937e58a2d96a37e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060424"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427951"
 ---
 # <a name="this-system-does-not-contain-support-for-the-locale-specified"></a>Эта система не предусматривает поддержки для указанного языкового стандарта.
 
@@ -19,7 +20,7 @@ ms.locfileid: "91060424"
   
 1. Обновите систему для поддержки этого языкового стандарта или запустите приложение на компьютере, который поддерживает его.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Globalization>
 

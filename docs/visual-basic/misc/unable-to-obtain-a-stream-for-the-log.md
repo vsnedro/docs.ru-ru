@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: не удается получить поток для журнала'
 title: Невозможно получить поток для журнала
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_ExhaustedPossibleStreamNames
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
-ms.openlocfilehash: 887356fac3abe5c9d28751f7c4d3b1908ed35acb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6eda12eb4dc2b3cf303e543a66e1f2f7d739eb6b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078389"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455279"
 ---
 # <a name="unable-to-obtain-a-stream-for-the-log"></a>Невозможно получить поток для журнала
 
@@ -25,7 +26,7 @@ ms.locfileid: "91078389"
   
 2. Архивируйте существующие журналы и удалите их с компьютера, чтобы разрешить объекту <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> создавать новые журналы.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>

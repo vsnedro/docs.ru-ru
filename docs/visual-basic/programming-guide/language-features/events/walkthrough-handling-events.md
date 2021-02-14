@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Обработка событий (Visual Basic)
 title: Обработка событий
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - WithEvents keyword [Visual Basic], walkthroughs
 - event handlers [Visual Basic], walkthroughs
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
-ms.openlocfilehash: 4489f75e50a783a9b1acfb9c30568fdec6614488
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5101bd2287c81e03efb69b398d6cc961d3e6d9dc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057914"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436180"
 ---
 # <a name="walkthrough-handling-events-visual-basic"></a>Пошаговое руководство. Обработка событий (Visual Basic)
 
@@ -36,7 +37,7 @@ ms.locfileid: "91057914"
   
 ## <a name="writing-code-to-handle-an-event"></a>Написание кода для обработчика события  
 
- Как только вы объявили переменную с помощью `WithEvents` , имя переменной отображается в левом раскрывающемся списке **редактора кода**класса. При выборе в `mWidget` правом раскрывающемся `Widget` списке отображаются события класса. При выборе события отображается соответствующая процедура события с префиксом `mWidget` и символом подчеркивания. Всем процедурам события, связанным с `WithEvents` переменной, присваивается имя переменной в виде префикса.  
+ Как только вы объявили переменную с помощью `WithEvents` , имя переменной отображается в левом раскрывающемся списке **редактора кода** класса. При выборе в `mWidget` правом раскрывающемся `Widget` списке отображаются события класса. При выборе события отображается соответствующая процедура события с префиксом `mWidget` и символом подчеркивания. Всем процедурам события, связанным с `WithEvents` переменной, присваивается имя переменной в виде префикса.  
   
 #### <a name="to-handle-an-event"></a>Чтобы обработать событие  
   
@@ -119,7 +120,7 @@ ms.locfileid: "91057914"
 > [!NOTE]
 > Можно объявить столько `WithEvents` переменных, сколько требуется, но массивы `WithEvents` переменных не поддерживаются.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Объявление и вызов событий](walkthrough-declaring-and-raising-events.md)
 - [События](index.md)

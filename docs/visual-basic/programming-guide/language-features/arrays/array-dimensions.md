@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об измерениях массива см. в Visual Basic
 title: Измерения массива
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - rectangular arrays
 - ranking, arrays
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
-ms.openlocfilehash: f971f0c3693177adbcb8869d487e3ad41d49ddc2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 055a3efc1410bf80daf3804453adc2c20266733c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413108"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486554"
 ---
 # <a name="array-dimensions-in-visual-basic"></a>Array Dimensions in Visual Basic
 
@@ -93,7 +94,7 @@ Dim salesAmounts(4, 11, 30) As Double
 > [!NOTE]
 > Массив можно создать без использования `Dim` оператора или `New` предложения. Например, можно вызвать <xref:System.Array.CreateInstance%2A> метод, или другой компонент может передать ваш код массиву, созданному таким образом. Такой массив может иметь нижнюю границу, отличную от 0. Вы всегда можете проверить нижнюю границу измерения с помощью <xref:System.Array.GetLowerBound%2A> метода или `LBound` функции.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Массивы](index.md)
 - [Устранение неполадок, связанных с массивами](troubleshooting-arrays.md)

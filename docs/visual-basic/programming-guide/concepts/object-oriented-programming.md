@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: объектно-ориентированное программирование (Visual Basic)'
 title: Объектно-ориентированное программирование
 ms.date: 07/20/2015
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
-ms.openlocfilehash: f7e222cde8ce80d4c52cc8b4b111c576eb4041b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: af2fbac16bfefc90876bf22bb8c67de162ee6459
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413197"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486801"
 ---
 # <a name="object-oriented-programming-visual-basic"></a>Объектно-ориентированное программирование (Visual Basic)
 
@@ -59,7 +60,7 @@ Structure SampleStructure
 End Structure
 ```
 
-Дополнительные сведения см. в разделе:
+Дополнительные сведения можно найти в разделе
 
 - [Оператор Class](../../language-reference/statements/class-statement.md)
 - [Оператор Structure](../../language-reference/statements/structure-statement.md)
@@ -117,7 +118,7 @@ End Class
 - [Property Statement](../../language-reference/statements/property-statement.md)
 - [Оператор Get](../../language-reference/statements/get-statement.md)
 - [Инструкция SET](../../language-reference/statements/set-statement.md)
-- [Доступно](../../language-reference/modifiers/readonly.md)
+- [ReadOnly](../../language-reference/modifiers/readonly.md)
 - [WriteOnly](../../language-reference/modifiers/writeonly.md)
 
 #### <a name="methods"></a>Методы
@@ -219,10 +220,10 @@ Dim nestedInstance As Container.Nested = New Container.Nested()
 
 |Модификатор Visual Basic|Определение|
 |---------------------------|----------------|
-|[Открытый](../../language-reference/modifiers/public.md)|Доступ к типу или члену возможен из любого другого кода в той же сборке или другой сборке, ссылающейся на него.|
-|[Частное](../../language-reference/modifiers/private.md)|Доступ к типу или члену можно получить только из кода в том же классе.|
+|[Общедоступная](../../language-reference/modifiers/public.md)|Доступ к типу или члену возможен из любого другого кода в той же сборке или другой сборке, ссылающейся на него.|
+|[Частная](../../language-reference/modifiers/private.md)|Доступ к типу или члену можно получить только из кода в том же классе.|
 |[От](../../language-reference/modifiers/protected.md)|Доступ к типу или члену можно получить только из кода в том же классе или в производном классе.|
-|[Объявление](../../language-reference/modifiers/friend.md)|Доступ к типу или члену возможен из любого кода в той же сборке, но не из другой сборки.|
+|[Friend](../../language-reference/modifiers/friend.md)|Доступ к типу или члену возможен из любого кода в той же сборке, но не из другой сборки.|
 |`Protected Friend`|Доступ к типу или члену возможен из любого кода в той же сборке, или из производного класса в другой сборке.|
 
 Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../language-features/declared-elements/access-levels.md).
@@ -251,9 +252,9 @@ Dim sampleObject = New SampleClass With
     {.FirstProperty = "A", .SecondProperty = "B"}
 ```
 
-Дополнительные сведения см. в разделе:
+Дополнительные сведения можно найти в разделе
 
-- [Оператор New](../../language-reference/operators/new-operator.md)
+- [Создание оператора](../../language-reference/operators/new-operator.md)
 - [Инициализаторы объектов: именованные и анонимные типы](../language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 
 ### <a name="shared-classes-and-members"></a>Общие классы и члены
@@ -326,7 +327,7 @@ MustInherit Class BaseClass
 End Class
 ```
 
-Дополнительные сведения см. в разделе:
+Дополнительные сведения можно найти в разделе
 
 - [Inherits Statement](../../language-reference/statements/inherits-statement.md)
 - [NotInheritable](../../language-reference/modifiers/notinheritable.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: логические и побитовые операторы в Visual Basic'
 title: Логические и побитовые операторы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - OrElse operator [Visual Basic]
 - logical operators [Visual Basic], unary
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
-ms.openlocfilehash: c15b9337f262563941699c0ff8fe5219ca6a5c93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 55d9567813a9114573e1e3f70fe181cb8621b350
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086001"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472726"
 ---
 # <a name="logical-and-bitwise-operators-in-visual-basic"></a>Логические и побитовые операторы в Visual Basic
 
@@ -50,13 +51,13 @@ ms.locfileid: "91086001"
   
  [!code-vb[VbVbalrOperators#78](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#78)]  
   
-## <a name="short-circuiting-logical-operations"></a>Сокращенное вычисление логических операций  
+## <a name="short-circuiting-logical-operations"></a>Short-Circuiting логических операций  
 
  [Оператор AndAlso](../../../language-reference/operators/andalso-operator.md) очень похож на `And` оператор, в котором он также выполняет логическое умножение двух `Boolean` выражений. Основное различие между ними состоит в том, что приводит к `AndAlso` *сокращению* поведения. Если первое выражение в `AndAlso` выражении имеет значение `False` , второе выражение не вычисляется, так как не может изменить окончательный результат и `AndAlso` возвращает `False` .  
   
  Аналогично [оператор OrElse](../../../language-reference/operators/orelse-operator.md) выполняет сокращенное вычисление логического сложения двух `Boolean` выражений. Если первое выражение в `OrElse` выражении имеет значение `True` , второе выражение не вычисляется, так как не может изменить окончательный результат и `OrElse` возвращает `True` .  
   
-### <a name="short-circuiting-trade-offs"></a>Сокращенное вычисление компромиссов  
+### <a name="short-circuiting-trade-offs"></a>Short-Circuiting Trade-Offs  
 
  Сокращенное вычисление может повысить производительность, не вычисляя выражение, которое не может изменить результат логической операции. Однако если это выражение выполняет дополнительные действия, сокращенное вычисление пропускает эти действия. Например, если выражение содержит вызов `Function` процедуры, эта процедура не вызывается, если выражение сокращено, а любой дополнительный код, содержащийся в, `Function` не выполняется. Таким образом, функция может выполняться только иногда и может быть некорректно проверена. Или логика программы может зависеть от кода в `Function` .  
   
@@ -101,7 +102,7 @@ ms.locfileid: "91086001"
 > [!NOTE]
 > Битовые операции могут выполняться только с целыми типами. Перед выполнением побитовой операции значения с плавающей запятой необходимо преобразовать в целочисленные типы.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Логические (побитовые) операторы (Visual Basic)](../../../language-reference/operators/logical-bitwise-operators.md)
 - [Логические выражения](boolean-expressions.md)

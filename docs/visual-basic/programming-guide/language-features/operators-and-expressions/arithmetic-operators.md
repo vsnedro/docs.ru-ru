@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: арифметические операторы в Visual Basic'
 title: Арифметические операторы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - Visual Basic code, operators
 - arithmetic operators [Visual Basic], about arithmetic operators
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
-ms.openlocfilehash: 023e479736285aa2d04509e05f49fe930cb4721d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3a7005b0a44f9b0358e393d8580a2a19a9a19881
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090083"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465331"
 ---
 # <a name="arithmetic-operators-in-visual-basic"></a>Арифметические операторы в Visual Basic
 
@@ -54,7 +55,7 @@ ms.locfileid: "91090083"
   
 ### <a name="attempted-division-by-zero"></a>Попыток деления на ноль  
 
- Деление на ноль приводит к различным результатам в зависимости от используемых типов данных. В целочисленных подразделениях ( `SByte` , `Byte` , `Short` ,,,, `UShort` `Integer` `UInteger` `Long` , `ULong` ) .NET Framework создает <xref:System.DivideByZeroException> исключение. В операциях деления для `Decimal` `Single` типа данных или .NET Framework также вызывает <xref:System.DivideByZeroException> исключение.  
+ Деление на ноль приводит к различным результатам в зависимости от используемых типов данных. В целочисленных подразделениях ( `SByte` , `Byte` , `Short` ,,,, `UShort` `Integer` `UInteger` `Long` , `ULong` ) платформа .NET Framework создает <xref:System.DivideByZeroException> исключение. В операциях деления для `Decimal` `Single` типа данных или платформа .NET Framework также вызывает <xref:System.DivideByZeroException> исключение.  
   
  В подразделениях с плавающей запятой, включающих `Double` тип данных, исключение не создается, а результатом является член класса <xref:System.Double.NaN> , представляющий, <xref:System.Double.PositiveInfinity> или <xref:System.Double.NegativeInfinity> , в зависимости от делимого. В следующей таблице перечислены различные результаты попытки деления `Double` значения на ноль.  
   
@@ -66,7 +67,7 @@ ms.locfileid: "91090083"
   
  При перехвате <xref:System.DivideByZeroException> исключения можно использовать его члены, чтобы помочь в его обработке. Например, <xref:System.Exception.Message%2A> свойство содержит текст сообщения для исключения. Дополнительные сведения см. в разделе [Оператор Try...Catch...Finally](../../../language-reference/statements/try-catch-finally-statement.md).  
   
-## <a name="bit-shift-operations"></a>Операции сдвига битов  
+## <a name="bit-shift-operations"></a>Bit-Shift операции  
 
  Операция сдвига в битах выполняет арифметический сдвиг для битового шаблона. Шаблон содержится в операнде слева, а операнд справа указывает количество позиций для сдвига шаблона. Можно сдвинуть шаблон вправо с помощью [ оператора>> ](../../../language-reference/operators/right-shift-operator.md) или слева с помощью [ оператора<< ](../../../language-reference/operators/left-shift-operator.md).  
   
@@ -100,7 +101,7 @@ ms.locfileid: "91090083"
   
  Однако если задать `Option Strict Off` , то Visual Basic допускает неявные сужающие преобразования, хотя они могут привести к непредвиденной утрате данных или точности. По этой причине рекомендуется использовать `Option Strict On` при написании рабочего кода. Для получения дополнительной информации см. [Widening and Narrowing Conversions](../data-types/widening-and-narrowing-conversions.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Арифметические операторы](../../../language-reference/operators/arithmetic-operators.md)
 - [Операторы сдвига битов](../../../language-reference/operators/bit-shift-operators.md)
