@@ -1,5 +1,5 @@
 ---
-description: 'Дополнительные сведения о: BC30920: First в операторе "подnew" должен быть явный вызов MyBase. New или MyClass. New, поскольку " <constructorname> " в базовом классе "" <baseclassname> из " <derivedclassname> " помечен как устаревший: "<errormessage>'
+description: 'Дополнительные сведения о: BC30920: First в этом операторе "New" должен быть явный вызов MyBase. New или MyClass. New, поскольку " <constructorname> " в базовом классе "" <baseclassname> из "" <derivedclassname> помечен как устаревший: " <errormessage> "'
 title: 'Первым оператором в этой процедуре Sub New должен быть явный вызов MyBase.New или MyClass.New, так как <constructorname> в базовом классе <baseclassname> класса <derivedclassname> отмечен как устаревший: <errormessage>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30920
 ms.assetid: e47dc755-4294-4368-b813-2177b7677957
-ms.openlocfilehash: 777543b7f29fb17dd5eb6a6196035ef0f18bb907
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9a61ed67a7d65c49c06d6848acf7d9fc40173af7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796240"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100426599"
 ---
 # <a name="bc30920-first-statement-of-this-sub-new-must-be-an-explicit-call-to-mybasenew-or-myclassnew-because-the-constructorname-in-the-base-class-baseclassname-of-derivedclassname-is-marked-obsolete-errormessage"></a>BC30920: первый оператор этого "New" должен быть явным вызовом "MyBase. New" или "MyClass. New", так как " \<constructorname> " в базовом классе " \<baseclassname> " из "" \<derivedclassname> помечен как устаревший: " \<errormessage> "
 
@@ -31,6 +31,6 @@ ms.locfileid: "99796240"
 
 2. Включите вызов `MyBase.New()` или `MyClass.New()` в качестве первого оператора `Sub New` в производном классе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор атрибутов](../../programming-guide/concepts/attributes/index.md)

@@ -2,12 +2,12 @@
 title: Операторы верхнего уровня — учебник по C#
 description: В этом учебнике показано, как использовать инструкции верхнего уровня для проведения экспериментов и подтверждения концепций при анализе идей.
 ms.date: 10/28/2020
-ms.openlocfilehash: 5e5dc6cec382baa69ac8cb4625684315bb2cd5e0
-ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
+ms.openlocfilehash: c56a40e7a9715ff0265a897c494b457a32e52df2
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282262"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585628"
 ---
 # <a name="tutorial-explore-ideas-using-top-level-statements-to-build-code-as-you-learn"></a>Учебник. Анализ идей с использованием операторов верхнего уровня для создания кода по мере обучения
 
@@ -84,7 +84,7 @@ System.String[]
 
 Чтобы записать вопрос в консоль, необходимо перечислить аргументы через пробел. Замените вызов `WriteLine` следующим кодом.
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="EchoInput":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="EchoInput":::
 
 Теперь при запуске программы она будет правильно выводить вопрос в виде строки аргументов.
 
@@ -92,11 +92,11 @@ System.String[]
 
 После вывода вопроса можно добавить код для выбора случайного ответа. Сначала добавьте массив возможных ответов.
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="Answers":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
 Этот массив содержит двенадцать утвердительных ответов: шесть неопределенных и шесть отрицательных. Далее добавьте следующий код для выбора случайного ответа из массива и его вывода.
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="GenerateAnswer":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 
 Вы можете снова запустить приложение, чтобы увидеть результаты. Выходные данные должны быть примерно следующими.
 
@@ -212,7 +212,11 @@ static async Task ShowConsoleAnimation()
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
-Теперь у вас есть законченное приложение и вы выполнили рефакторинг частей, пригодных для многократного использования.
+Теперь у вас есть законченное приложение и вы выполнили рефакторинг частей, пригодных для многократного использования. Вы можете вызвать новый служебный метод с помощью инструкций верхнего уровня, как показано ниже в готовой версии основной программы:
+
+:::code language="csharp" source="snippets/top-level-statements/Program.cs":::
+
+Таким образом, будет добавлен вызов `Utilities.ShowConsoleAnimation` и дополнительная инструкция `using`.
 
 ## <a name="summary"></a>Сводка
 

@@ -4,12 +4,12 @@ description: Узнайте, как создавать библиотеки дл
 author: cartermp
 ms.topic: how-to
 ms.date: 12/14/2020
-ms.openlocfilehash: 6f4c1feac7630a6a0250e4b0b39ef01152f5a400
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 76d08007e191fe9090f3f14c906a40e84e37bd19
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633680"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548413"
 ---
 # <a name="develop-libraries-with-the-net-cli"></a>Разработка библиотек с помощью .NET CLI
 
@@ -17,11 +17,11 @@ ms.locfileid: "97633680"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-На компьютере должны быть установлены [пакет SDK и интерфейс CLI для .NET](https://dotnet.microsoft.com/download).
+На компьютере должен быть установлен [пакет SDK для .NET](https://dotnet.microsoft.com/download).
 
-При работе с разделами, в которых используются различные версии .NET Framework, на компьютере с ОС Windows должна быть установлена платформа [.NET Framework](https://dotnet.microsoft.com).
+При работе с разделами, в которых используются различные версии .NET Framework, на компьютере с ОС Windows должна быть установлена платформа [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).
 
-Кроме того, если необходимо поддерживать целевые платформы .NET Framework предыдущих версий, требуется установить целевые пакеты или пакеты разработчиков со [страницы с доступными для скачивания архивами для .NET](https://dotnet.microsoft.com/download/archives) См. таблицу ниже.
+Кроме того, если необходимо поддерживать целевые платформы .NET Framework предыдущих версий, требуется установить целевые пакеты или пакеты разработчиков со [страницы с доступными для скачивания файлами для .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) См. таблицу ниже.
 
 | Версия платформы .NET Framework | Скачиваемые компоненты                                       |
 | ---------------------- | ------------------------------------------------------ |

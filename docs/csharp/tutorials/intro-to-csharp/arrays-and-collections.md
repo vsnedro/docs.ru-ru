@@ -3,18 +3,20 @@ title: Работа с коллекциями. Вводное руководст
 description: Это руководство по C# предоставляет для изучения примере коллекции списков.
 ms.date: 10/13/2017
 ms.custom: mvc
-ms.openlocfilehash: e2282df21420630634911e07f4fb3b94f34a792b
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 4ecd2cfebddf460d3766d708d2f6740bd1c6e29a
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414687"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585667"
 ---
 # <a name="learn-to-manage-data-collections-using-the-generic-list-type"></a>Научитесь управлять коллекциями данных с использованием универсального типа списка
 
 Это вводное руководство содержит общие сведения о языке C# и классе <xref:System.Collections.Generic.List%601>.
 
-Для работы с этим руководством вам потребуется компьютер, который можно использовать для разработки. В руководстве .NET по созданию программы [Hello World за 10 минут](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) содержатся инструкции по настройке локальной среды разработки в macOS, Windows или Linux. Краткий обзор команд, которые будут здесь использоваться, и ссылки на дополнительные сведения представлены в статье [Become familiar with the .NET development tools](local-environment.md) (Знакомство со средствами разработки для .NET).
+## <a name="prerequisites"></a>Предварительные требования
+
+Для работы с руководством вам потребуется компьютер, настроенный для разработки в локальной среде. В Windows, Linux или macOS для создания, сборки и запуска приложений можно использовать .NET CLI. В Windows можно использовать Visual Studio 2019. Инструкции по настройке см. в статье [Настройка локальной среды](local-environment.md).
 
 ## <a name="a-basic-list-example"></a>Пример простого списка
 

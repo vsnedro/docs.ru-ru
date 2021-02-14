@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: работа с динамическими объектами (Visual Basic)'
 title: Работа с динамическими объектами
 ms.date: 07/20/2015
 helpviewer_keywords:
 - dynamic objects [Visual Basic]
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97
-ms.openlocfilehash: 45f8b5c327d40f93b59c2115c75b3b7d385f5a8d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4991ae3deca908fc0b96760f50c85514df92714f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057927"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434398"
 ---
 # <a name="working-with-dynamic-objects-visual-basic"></a>Работа с динамическими объектами (Visual Basic)
 
@@ -19,7 +20,7 @@ ms.locfileid: "91057927"
   
  Если вызов с поздним связыванием выполняется с объектом, реализующим `IDynamicMetaObjectProvider` интерфейс, Visual Basic привязывается к динамическому объекту с помощью этого интерфейса. Если вызов с поздним связыванием выполняется с объектом, который не реализует `IDynamicMetaObjectProvider` интерфейс, или при `IDynamicMetaObjectProvider` сбое вызова интерфейса, Visual Basic привязывается к объекту с помощью возможностей позднего связывания среды выполнения Visual Basic.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Dynamic.DynamicObject>
 - <xref:System.Dynamic.ExpandoObject>
