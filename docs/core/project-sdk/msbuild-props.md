@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: 21bbe46cf60540c01344cc8fcb82c62ff0fbbee5
-ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
+ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98692713"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802675"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -344,7 +344,12 @@ ms.locfileid: "98692713"
 
 ### <a name="analysislevel"></a>AnalysisLevel
 
-Свойство `AnalysisLevel` позволяет указать уровень анализа кода. Например, если требуется доступ к анализаторам кода предварительной версии, задайте для параметра `AnalysisLevel` значение `preview`. Значение по умолчанию — `latest`.
+Свойство `AnalysisLevel` позволяет указать уровень анализа кода. Например, если требуется доступ к анализаторам кода предварительной версии, задайте для параметра `AnalysisLevel` значение `preview`.
+
+Значение по умолчанию:
+
+- Если проект предназначен для .NET 5.0 или более поздней версии или если вы добавили свойство [AnalysisMode](#analysismode), значением по умолчанию будет `latest`.
+- В противном случае это свойство не будет учитываться, если оно явно не добавлено в файл проекта.
 
 ```xml
 <PropertyGroup>
@@ -398,9 +403,6 @@ ms.locfileid: "98692713"
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> Другой способ включить анализ кода .NET для проектов, предназначенных для версий .NET до .NET 5.0, — задать для свойства [AnalysisLevel](#analysislevel) значение `latest`.
 
 ### <a name="enforcecodestyleinbuild"></a>EnforceCodeStyleInBuild
 

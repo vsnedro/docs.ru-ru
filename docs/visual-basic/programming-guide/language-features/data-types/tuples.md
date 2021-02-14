@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения о кортежах (Visual Basic)
 title: Кортежи
 ms.date: 04/23/2017
 helpviewer_keywords:
 - tuples [Visual Basic]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-ms.openlocfilehash: b169a1c13b3f20d7b5e2a1386cfb28a9cc093dcd
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: f598facb446b7d50864c0cf9151195cfcde158bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559093"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454460"
 ---
 # <a name="tuples-visual-basic"></a>Кортежи (Visual Basic)
 
 Начиная с Visual Basic 2017, язык Visual Basic предлагает встроенную поддержку кортежей, которые упрощают создание кортежей и доступ к элементам кортежей. Кортеж — это упрощенная структура данных, которая имеет определенное число и последовательность значений. При создании экземпляра кортежа вы определяете число и тип данных каждого значения (или элемента). Например, 2 кортежа (или пара) имеет два элемента. Первый может быть `Boolean` значением, а вторым — `String` . Поскольку кортежи упрощают хранение нескольких значений в одном объекте, они часто используются в качестве упрощенного способа возврата нескольких значений из метода.
 
 > [!IMPORTANT]
-> Для поддержки кортежей требуется <xref:System.ValueTuple> тип. Если .NET Framework 4,7 не установлен, необходимо добавить пакет NuGet `System.ValueTuple` , доступный в коллекции NuGet. Без этого пакета может возникнуть ошибка компиляции, аналогичная "предопределенный тип ValueTuple (Of,,,)" не определен или не импортирован ".
+> Для поддержки кортежей требуется <xref:System.ValueTuple> тип. Если платформа .NET Framework 4,7 не установлен, необходимо добавить пакет NuGet `System.ValueTuple` , доступный в коллекции NuGet. Без этого пакета может возникнуть ошибка компиляции, аналогичная "предопределенный тип ValueTuple (Of,,,)" не определен или не импортирован ".
 
 ## <a name="instantiating-and-using-a-tuple"></a>Создание экземпляров и использование кортежа
 
@@ -153,9 +154,9 @@ named = differentShape
 
 [!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)]
 
-## <a name="visual-basic-tuples-and-tuples-in-the-net-framework"></a>Visual Basic кортежи и кортежи в .NET Framework
+## <a name="visual-basic-tuples-and-tuples-in-the-net-framework"></a>Visual Basic кортежи и кортежи в платформа .NET Framework
 
-Visual Basic кортеж — это экземпляр одного из универсальных типов **System. ValueTuple** , которые появились в .NET Framework 4,7. .NET Framework также включает набор универсальных классов **System. Tuple** . Однако эти классы отличаются от Visual Basic кортежей и универсальных типов **System. ValueTuple** несколькими способами:
+Visual Basic кортеж — это экземпляр одного из универсальных типов **System. ValueTuple** , которые появились в платформа .NET Framework 4,7. Платформа .NET Framework также включает набор универсальных классов **System. Tuple** . Однако эти классы отличаются от Visual Basic кортежей и универсальных типов **System. ValueTuple** несколькими способами:
 
 - Элементы классов **кортежей** — это свойства с именами `Item1` , `Item2` и т. д. В Visual Basic кортежах и типах **ValueTuple** элементы кортежа являются полями.
 

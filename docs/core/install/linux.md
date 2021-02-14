@@ -4,12 +4,12 @@ description: Сведения о том, какие дистрибутивы Lin
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 3834bd7d977bb13e9543d511bee7170161a755ac
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: 27be7151d95810d8cc607564d5c0ce8dfe5b9ed8
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970737"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506283"
 ---
 # <a name="install-net-on-linux"></a>Установка .NET в Linux
 
@@ -34,6 +34,16 @@ ms.locfileid: "97970737"
 - 2.0
 
 Такие неподдерживаемые версии не описаны в приведенных ниже разделах. Поэтому, если вы попытаетесь установить их, полученные вами результаты могут отличаться от указанных.
+
+## <a name="manual-installation"></a>Установка вручную
+
+Если вы не хотите использовать диспетчер пакетов для установки .NET в Linux, можно установить .NET одним из следующих способов:
+
+- [Пакет Snap](linux-snap.md)
+- [Установка с помощью скрипта _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Ручное извлечение двоичных файлов](linux-scripted-manual.md#manual-install)
+
+На странице, посвященной дистрибутиву, обязательно просмотрите дополнительные сведения о необходимых зависимостях, которые могут отсутствовать при установке вручную.
 
 ## <a name="alpine"></a>Alpine
 

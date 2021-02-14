@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как подсчитывать, суммировать или усреднить данные с помощью LINQ (Visual Basic).
 title: Практическое руководство. Выполнение над данными функций Count, Sum и Average с помощью LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - query samples [Visual Basic]
 - count operator [LINQ in Visual Basic]
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
-ms.openlocfilehash: 617c6959e2d3add6d36266b0827ef7281b0c77a9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1759a2f990c2e61a862d032f2a09f29f65a05103
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059253"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422805"
 ---
 # <a name="how-to-count-sum-or-average-data-by-using-linq-visual-basic"></a>Практическое руководство. Выполнение над данными функций Count, Sum и Average с помощью LINQ (Visual Basic)
 
-LINQ позволяет легко получить доступ к сведениям о базе данных и выполнить запросы.  
+Language-Integrated query (LINQ) упрощает доступ к сведениям о базе данных и выполнение запросов.  
   
  В следующем примере показано, как создать новое приложение, которое выполняет запросы к базе данных SQL Server. Пример подсчитывает, суммирует и усредняет результаты с помощью `Aggregate` `Group By` предложений и. Дополнительные сведения см. в разделе [предложение Aggregate](../../../language-reference/queries/aggregate-clause.md) и [предложение GROUP BY](../../../language-reference/queries/group-by-clause.md).  
   
@@ -34,7 +35,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ### <a name="to-create-a-connection-to-a-database"></a>Создание соединения с базой данных  
   
-1. В Visual Studio откройте **Обозреватель сервера** / **Обозреватель базы данных** , выбрав в **Server Explorer** / меню **вид** пункт Обозреватель сервера**Обозреватель базы данных** .  
+1. В Visual Studio откройте **Обозреватель сервера** / **Обозреватель базы данных** , выбрав в  / меню **вид** пункт Обозреватель сервера **Обозреватель базы данных** .  
   
 2. Щелкните правой кнопкой мыши элемент **подключения к данным** в **Обозреватель сервера** / **Обозреватель базы данных** а затем выберите команду **Добавить подключение**.  
   
@@ -50,7 +51,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ### <a name="to-add-tables-to-query-to-the-or-designer"></a>Добавление таблиц в запрос в реляционный конструктор O/R  
   
-1. В **Обозреватель сервера** / **Обозреватель базы данных**разверните подключение к базе данных Northwind. Разверните папку **Таблицы**.  
+1. В **Обозреватель сервера** / **Обозреватель базы данных** разверните подключение к базе данных Northwind. Разверните папку **Таблицы**.  
   
      Если вы закрыли конструктор O/R, его можно открыть повторно, дважды щелкнув файл Northwind. dbml, который вы добавили ранее.  
   
@@ -64,7 +65,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ### <a name="to-add-code-to-query-the-database-and-display-the-results"></a>Добавление кода для запроса к базе данных и вывода результатов  
   
-1. Перетащите элемент управления из **области элементов**в <xref:System.Windows.Forms.DataGridView> форму Windows по умолчанию для проекта, Form1.  
+1. Перетащите элемент управления из **области элементов** в <xref:System.Windows.Forms.DataGridView> форму Windows по умолчанию для проекта, Form1.  
   
 2. Дважды щелкните Form1, чтобы добавить код в `Load` событие в форме.  
   
@@ -78,11 +79,11 @@ LINQ позволяет легко получить доступ к сведен
   
 4. Нажмите клавишу F5, чтобы запустить проект и просмотреть результаты.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ](index.md)
 - [Запросы](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [Методы DataContext (реляционный конструктор объектов)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
 - [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md)
-- [Предложение Group By](../../../language-reference/queries/group-by-clause.md)
+- [Предложение GROUP BY](../../../language-reference/queries/group-by-clause.md)

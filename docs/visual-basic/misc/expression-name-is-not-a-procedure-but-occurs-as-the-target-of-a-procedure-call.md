@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье выражение " <name> " не является процедурой, но происходит в качестве целевого объекта для вызова процедуры.
 title: Выражение "<name>" не является процедурой, но используется как объект вызова процедуры
 ms.date: 07/20/2015
 f1_keywords:
 - vbrExpressionNotProcedure
 ms.assetid: 59169d44-a279-4aca-8f14-fba8d69d8959
-ms.openlocfilehash: 3f0b9c70fbf5c3b4a0ae5f912b23b7e62ee57a94
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 11ffc1a785eec215dbc00dcd04f47812178b090d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100468"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100459101"
 ---
 # <a name="expression-name-is-not-a-procedure-but-occurs-as-the-target-of-a-procedure-call"></a>Выражение "\<name>" не является процедурой, но используется как объект вызова процедуры
 
@@ -21,6 +22,6 @@ ms.locfileid: "91100468"
   
 2. Укажите процедуру, которая <`name` вызовов>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](../programming-guide/language-features/procedures/index.md)

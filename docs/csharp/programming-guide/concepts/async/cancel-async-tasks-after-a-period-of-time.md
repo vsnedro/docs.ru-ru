@@ -1,15 +1,15 @@
 ---
 title: Отмена асинхронных задач после определенного периода времени (C#)
 description: Узнайте, как запланировать отмену всех связанных задач, которые не были завершены в течение определенного периода времени.
-ms.date: 08/19/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
-ms.openlocfilehash: ad9064f8f45a737982ffc35ab4ea2395ddae9016
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 98c42a2df6153d668b99b6dec49ffe380293b205
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811422"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585381"
 ---
 # <a name="cancel-async-tasks-after-a-period-of-time-c"></a>Отмена асинхронных задач после определенного периода времени (C#)
 
@@ -52,12 +52,16 @@ static async Task Main()
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
+    finally
+    {
+        s_cts.Dispose();
+    }
 
     Console.WriteLine("Application ending.");
 }
 ```
 
-Обновленный метод `Main` записывает в консоль несколько инструкций. [Попробуйте перехватить](../../../language-reference/keywords/try-catch.md), вызвав <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType>, чтобы запланировать отмену. Эта операция будет сообщать об отмене по истечении определенного периода времени.
+Обновленный метод `Main` записывает в консоль несколько инструкций. В операторе [try-catch](../../../language-reference/keywords/try-catch.md) вызов <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> позволяет запланировать отмену. Эта операция будет сообщать об отмене по истечении определенного периода времени.
 
 Затем ожидается метод `SumPageSizesAsync`. Если обработка всех URL-адресов выполняется быстрее запланированной отмены, приложение завершается. Однако если запланированная отмена запускается до обработки всех URL-адресов, создается <xref:System.Threading.Tasks.TaskCanceledException>.
 

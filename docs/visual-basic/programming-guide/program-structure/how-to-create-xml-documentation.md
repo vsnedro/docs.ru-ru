@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье Создание документации по XML в Visual Basic
 title: Практическое руководство. Создание XML-документации
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML comments
 - XML documentation [Visual Basic], creating
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
-ms.openlocfilehash: 1421cc85beba42b3cf3656c34b1d02347fbaf164
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d54c79d820a170b246e5c85d7562487fbe66f39c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403243"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475959"
 ---
 # <a name="how-to-create-xml-documentation-in-visual-basic"></a>Практическое руководство. Создание XML-документации в Visual Basic
 
@@ -20,11 +21,11 @@ ms.locfileid: "84403243"
 
 ## <a name="to-create-xml-documentation-for-a-type-or-member"></a>Создание XML-документации для типа или члена
 
-1. В **редакторе кода**поместите курсор в строку над типом или членом, для которого требуется создать документацию.
+1. В **редакторе кода** поместите курсор в строку над типом или членом, для которого требуется создать документацию.
 
 2. Тип `'''` (три одинарные кавычки).
 
-    В **редакторе кода**ДОБАВЛЯЕТСЯ XML-схема для типа или члена.
+    В **редакторе кода** ДОБАВЛЯЕТСЯ XML-схема для типа или члена.
 
 3. Добавьте описательные сведения между соответствующими тегами.
 

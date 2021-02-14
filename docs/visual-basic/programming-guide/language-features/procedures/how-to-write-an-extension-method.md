@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как написать метод расширения (Visual Basic).
 title: Практическое руководство. Написание метода расширения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - writing extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
-ms.openlocfilehash: 697508f86ff4ff0a89150b65782121395d0fed12
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 4c5d88976e55288ccb350ab82d459db0a23f468e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346019"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476193"
 ---
 # <a name="how-to-write-an-extension-method-visual-basic"></a>Практическое руководство. Написание метода расширения (Visual Basic)
 
@@ -27,13 +28,13 @@ ms.locfileid: "74346019"
     Imports System.Runtime.CompilerServices
     ```
 
-3. В модуле в новом или существующем приложении приступите к определению метода с помощью атрибута [`<Extension>`](xref:System.Runtime.CompilerServices.ExtensionAttribute) :
+3. В модуле в новом или существующем приложении приступите к определению метода с помощью [`<Extension>`](xref:System.Runtime.CompilerServices.ExtensionAttribute) атрибута:
 
     ```vb
     <Extension()>
     ```
 
-    Обратите внимание, что атрибут `Extension` можно применить только к методу (`Sub` или процедуре `Function`) в [модуле](../../../language-reference/statements/module-statement.md)Visual Basic. Если применить его к методу в `Class` или `Structure`, компилятор Visual Basic создает ошибку [BC36551](../../../misc/bc36551.md), "методы расширения могут быть определены только в модулях".
+    Обратите внимание, что `Extension` атрибут может применяться только к методу ( `Sub` или `Function` процедуре) в [модуле](../../../language-reference/statements/module-statement.md)Visual Basic. Если применить его к методу в `Class` или `Structure` , Visual Basic компилятор создает ошибку [BC36551](../../../misc/bc36551.md), "методы расширения могут быть определены только в модулях".
 
 4. Объявите метод обычным способом, за исключением того, что тип первого параметра должен быть типом данных, который требуется расширить.
 
@@ -46,7 +47,7 @@ ms.locfileid: "74346019"
 
 ## <a name="example"></a>Пример
 
-В следующем примере объявляется метод расширения в модуле `StringExtensions`. Второй модуль, `Module1`, импортирует `StringExtensions` и вызывает метод. Метод расширения должен находиться в области видимости при его вызове. Метод расширения `PrintAndPunctuate` расширяет класс <xref:System.String> с помощью метода, который отображает экземпляр строки, за которым следует строка символов пунктуации, отправленная в качестве параметра.
+В следующем примере объявляется метод расширения в модуле `StringExtensions` . Второй модуль, `Module1` , импортирует `StringExtensions` и вызывает метод. Метод расширения должен находиться в области видимости при его вызове. Метод расширения `PrintAndPunctuate` расширяет <xref:System.String> класс с помощью метода, который отображает экземпляр строки, за которым следует строка символов пунктуации, отправленная в в качестве параметра.
 
 ```vb
 ' Declarations will typically be in a separate module.
@@ -78,17 +79,17 @@ Module Module1
 End Module
 ```
 
-Обратите внимание, что метод определен с двумя параметрами и вызывается только с одним. Первый параметр, `aString`, в определении метода привязан к `example`, экземпляр `String`, который вызывает метод. Выходные данные примера могут быть следующими:
+Обратите внимание, что метод определен с двумя параметрами и вызывается только с одним. Первый параметр, `aString` , в определении метода, привязан к `example` экземпляру `String` , который вызывает метод. Выходные данные примера могут быть следующими:
 
 ```console
 Hello?
 Hello!!!!
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Runtime.CompilerServices.ExtensionAttribute>
 - [Методы расширения](extension-methods.md)
 - [Оператор Module](../../../language-reference/statements/module-statement.md)
 - [Параметры и аргументы процедуры](procedure-parameters-and-arguments.md)
-- [Область в Visual Basic](../declared-elements/scope.md)
+- [Область видимости в Visual Basic](../declared-elements/scope.md)

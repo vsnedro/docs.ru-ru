@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как объединить данные с помощью LINQ с использованием соединений (Visual Basic).
 title: Практическое руководство. Объединение данных с помощью LINQ с использованием соединений
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - joining [LINQ in Visual Basic]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.openlocfilehash: ebda8d3b7fa2e712c337ed2c1fadc580bed7fe61
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 69cf0bcfb8d9241afdd0616621f35d7ca93bbb9e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075074"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422748"
 ---
 # <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>Практическое руководство. Объединение данных с помощью LINQ с использованием соединений (Visual Basic)
 
@@ -83,13 +84,13 @@ Visual Basic предоставляет `Join` предложения запро
   
 2. Нажмите клавишу F5, чтобы выполнить примеры.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ](index.md)
 - [Introduction to LINQ in Visual Basic](introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Предложение Join](../../../language-reference/queries/join-clause.md)
 - [Предложение Group Join](../../../language-reference/queries/group-join-clause.md)
-- [Предложение FROM](../../../language-reference/queries/from-clause.md)
+- [Предложение From](../../../language-reference/queries/from-clause.md)
 - [Предложение WHERE](../../../language-reference/queries/where-clause.md)
 - [Запросы](../../../language-reference/queries/index.md)
 - [Преобразования данных с помощью LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)
