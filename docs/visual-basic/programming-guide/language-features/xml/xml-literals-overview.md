@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Общие сведения о литералах XML (Visual Basic)'
 title: Общие сведения об XML-литералах
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], XML literals
 - literals [Visual Basic], XML
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.openlocfilehash: c65cac4f6e8f5f314587f20d5c373c92ea0c51e5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5544c0238b117ed5b9b2f9cdab312127736e97d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085390"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423853"
 ---
 # <a name="xml-literals-overview-visual-basic"></a>Общие сведения об XML-литералах (Visual Basic)
 
 *XML-литерал* позволяет внедрять XML непосредственно в код Visual Basic. Синтаксис XML-литерала представляет [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объекты, и он аналогичен синтаксису xml 1,0. Это упрощает создание XML-элементов и документов программным способом, так как код имеет ту же структуру, что и окончательный XML.  
   
- Visual Basic компилирует XML-литералы в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объекты. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] предоставляет простую объектную модель для создания XML-кода и управления им, и эта модель хорошо интегрируется с запросом, интегрированным с языком (LINQ). Для получения дополнительной информации см. <xref:System.Xml.Linq.XElement>.  
+ Visual Basic компилирует XML-литералы в [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объекты. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] предоставляет простую объектную модель для создания XML-кода и управления им, и эта модель хорошо интегрируется с Language-Integratedным запросом (LINQ). Для получения дополнительной информации см. <xref:System.Xml.Linq.XElement>.  
   
  Выражение Visual Basic можно внедрить в XML-литерал. Во время выполнения приложение создает [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] объект для каждого литерала, включая значения внедренных выражений. Это позволяет указать динамическое содержимое в XML-литерале. Дополнительные сведения см. [в разделе внедренные выражения в XML](embedded-expressions-in-xml.md).  
   
@@ -59,7 +60,7 @@ ms.locfileid: "91085390"
   
  [!code-vb[VbXMLSamples#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples2.vb#6)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.Linq.XElement>
 - [Создание XML в Visual Basic](creating-xml.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: инструкции: определение оператора (Visual Basic)'
 title: Практическое руководство. Определение оператора
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-ms.openlocfilehash: 5acbd0439ddbb956b80d56e23d11cd5e152f37ff
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ead96a302426c6f5b1667bb030aab56afe3284c8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087405"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462715"
 ---
 # <a name="how-to-define-an-operator-visual-basic"></a>Практическое руководство. Определение оператора (Visual Basic)
 
@@ -38,7 +39,7 @@ ms.locfileid: "91087405"
   
  [!code-vb[VbVbcnProcedures#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#26)]  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора преобразования](./how-to-define-a-conversion-operator.md)

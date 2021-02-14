@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: кодировка не может принимать значение Nothing'
 title: Параметру Encoding нельзя присвоить значение Nothing
 ms.date: 07/20/2015
 ms.assetid: 59f7c731-8291-4a85-bf51-c225e48cdc84
-ms.openlocfilehash: 0356098ca3fb41804ea396b0ff792cf2990b3340
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4fa9cbd9488501b5295da8d8ace41ef06a706c12
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077544"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462999"
 ---
 # <a name="encoding-cannot-be-set-to-nothing"></a>Параметру Encoding нельзя присвоить значение Nothing
 
@@ -19,7 +20,7 @@ ms.locfileid: "91077544"
   
 - Предоставьте допустимое значение для параметра `encoding` .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Кодировки файлов](../developing-apps/programming/drives-directories-files/file-encodings.md)
 - [Чтение из файлов](../developing-apps/programming/drives-directories-files/reading-from-files.md)

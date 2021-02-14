@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: типы ошибок (Visual Basic)'
 title: Типы ошибок
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], types of errors
 - syntax errors [Visual Basic], Visual Basic
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
-ms.openlocfilehash: caeaab9a358e3e3a995c1df7274d16daaff7a667
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cc4fce5e0ce77a4e402ba832fd6f4e36e6feed07
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083999"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423775"
 ---
 # <a name="error-types-visual-basic"></a>Типы ошибок (Visual Basic)
 
@@ -28,7 +29,7 @@ ms.locfileid: "91083999"
 > [!NOTE]
 > `Option Explicit`Оператор является одним из способов предотвращения синтаксических ошибок. Он заставляет заранее объявить все переменные, которые будут использоваться в приложении. Таким образом, если эти переменные используются в коде, любые типографские ошибки сразу же перехватываются и могут быть исправлены.
 
-## <a name="run-time-errors"></a>Ошибки во время выполнения
+## <a name="run-time-errors"></a>Ошибки Run-Time
 
  *Ошибки времени выполнения* — это те, которые отображаются только после компиляции и выполнения кода. В их число входит код, который может показаться правильным в том, что он не содержит синтаксических ошибок, но не будет выполняться. Например, вы можете правильно написать строку кода, чтобы открыть файл. Но если файл не существует, приложение не сможет открыть файл и выдаст исключение. Большинство ошибок во время выполнения можно устранить путем перезаписи неисправного кода или с помощью [обработки исключений](../../language-reference/statements/try-catch-finally-statement.md), а затем перекомпиляции и повторного запуска.
   
@@ -36,7 +37,7 @@ ms.locfileid: "91083999"
 
  *Логические ошибки* — это те, которые появляются после использования приложения. Чаще всего они ошибочно допущены разработчиком, или нежелательные или непредвиденные результаты в ответ на действия пользователя. Например, неверно типизированный ключ может предоставить методу неверную информацию или предположить, что в случае, если это не так, может быть предоставлено допустимое значение для метода. Несмотря на то, что логические ошибки могут обрабатываться с помощью [обработки исключений](../../language-reference/statements/try-catch-finally-statement.md) (например, путем проверки того, что аргумент является `Nothing` и создает исключение <xref:System.ArgumentNullException> ), чаще всего они должны быть устранены путем исправления ошибки в логике и повторной компиляции приложения.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-- [Оператор Try…Catch…Finally](../../language-reference/statements/try-catch-finally-statement.md)
+- [Оператор Try...Catch...Finally](../../language-reference/statements/try-catch-finally-statement.md)
 - [Основы отладки](/visualstudio/debugger/debugger-feature-tour)

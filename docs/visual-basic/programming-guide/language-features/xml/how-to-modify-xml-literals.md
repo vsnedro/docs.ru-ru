@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как изменить литералы XML (Visual Basic)
 title: Практическое руководство. Изменение XML-литералов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - XML literals [Visual Basic]
 - XML literals [Visual Basic], modifying
 ms.assetid: 4e864522-a37a-43a2-8236-af80277c5482
-ms.openlocfilehash: a2ac2e9802d4c8ab522bb430d15cce5616430437
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 23b900c3da5864ac7a91e6c7a43f44a0d4ab1a21
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374905"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483616"
 ---
 # <a name="how-to-modify-xml-literals-visual-basic"></a>Практическое руководство. Изменение XML-литералов (Visual Basic)
 

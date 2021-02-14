@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: доступ к XML в Visual Basic'
 title: Доступ к XML
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - XML [Visual Basic], axis properties
 - XML [Visual Basic], accessing
 ms.assetid: c47f88b2-3cbc-4bb1-b4b9-be60f71ffc6a
-ms.openlocfilehash: 8ffe6d5ed368aee6d6984ec6ab28c8832921a3f8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2d77b2aa5f4136095ce5684976fe3ba03be7c28c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080183"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462663"
 ---
 # <a name="accessing-xml-in-visual-basic"></a>Доступ к XML в Visual Basic
 
@@ -31,7 +32,7 @@ Visual Basic предоставляет свойства осей XML для д�
 |*индексатор расширения*|`contacts...<name>(0)`|Возвращает первый `name` элемент из последовательности.|  
 |*value*|`contacts...<name>.Value`|Возвращает строковое представление первого объекта в последовательности или `Nothing` значение, если последовательность пуста.|  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Доступ к элементам-потомкам XML](how-to-access-xml-descendant-elements.md)  
  Показывает, как использовать свойство оси потомков для доступа ко всем XML-элементам с указанным именем и содержащимся в указанном XML-элементе.  
