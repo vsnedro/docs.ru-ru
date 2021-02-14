@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как проверить строки, представляющие дату или время (Visual Basic).
 title: Практическое руководство. Проверка строк, представляющих дату или время
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], validating
 - String data type [Visual Basic], validation
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
-ms.openlocfilehash: f3654894e274404410179dab04422e20f6040440
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4e9255717d1711d8e9839c218a78b359549d9eef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072604"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424259"
 ---
 # <a name="how-to-validate-strings-that-represent-dates-or-times-visual-basic"></a>Практическое руководство. Проверка строк, представляющих дату или время (Visual Basic)
 
@@ -28,7 +29,7 @@ ms.locfileid: "91072604"
 
  Используйте этот метод для проверки строки перед попыткой преобразования в `String` `DateTime` переменную. При проверке даты или времени сначала можно избежать создания исключения во время выполнения.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Information.IsDate%2A>
 - <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>

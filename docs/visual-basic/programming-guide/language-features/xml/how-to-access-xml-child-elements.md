@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: как получить доступ к дочерним элементам XML (Visual Basic)'
 title: Практическое руководство. Доступ к дочерним XML-элементам
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - XML child axis property [Visual Basic]
 - XML [Visual Basic], accessing
 ms.assetid: 6689eb36-c471-469f-a82d-099ab8197b25
-ms.openlocfilehash: 9c33bec9b9ea865d570bab08f27227129867cce9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: fad4d45853006762bc319b0ff8f9143ef13058da
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058304"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433243"
 ---
 # <a name="how-to-access-xml-child-elements-visual-basic"></a>Практическое руководство. Доступ к дочерним XML-элементам (Visual Basic)
 
@@ -28,7 +29,7 @@ ms.locfileid: "91058304"
   
 - ссылка на пространство имен <xref:System.Xml.Linq>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
 - [XML Child Axis Property](../../../language-reference/xml-axis/xml-child-axis-property.md)

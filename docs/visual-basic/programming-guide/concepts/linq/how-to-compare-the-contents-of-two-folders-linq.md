@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как сравнить содержимое двух папок (LINQ) (Visual Basic)
 title: Практическое руководство. Сравнение содержимого двух папок (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
-ms.openlocfilehash: 63a062c562e2c79ea81ac270651aa16776801b99
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8891617b7b95bf4543603ca40e7b85abb914da34
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410764"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424493"
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-visual-basic"></a>Практические руководства. Сравнение содержимого двух папок (LINQ) (Visual Basic)
 

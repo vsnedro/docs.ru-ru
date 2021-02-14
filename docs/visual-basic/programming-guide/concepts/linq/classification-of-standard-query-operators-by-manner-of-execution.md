@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: классификация стандартных операторов запросов по способу выполнения (Visual Basic)'
 title: Классификация стандартных операторов запросов по способу выполнения
 ms.date: 07/20/2015
 ms.assetid: 7f55b0be-9f6e-44f8-865c-6afbea50cc54
-ms.openlocfilehash: 0628565fc0406c88aac814a05275cccdc61c44fe
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 286520f7697d7d88de903bd1965864942c1728e1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078363"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424571"
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-visual-basic"></a>Классификация стандартных операторов запросов по способу выполнения (Visual Basic)
 

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о том, как сочетать запросы LINQ с помощью регулярных выражений (Visual Basic).
 title: Практическое руководство. Объединение запросов LINQ с регулярными выражениями
 ms.date: 07/20/2015
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
-ms.openlocfilehash: a091418be1f7cc30d42a98f80ebae2d36d29b5d8
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: a2fd06f76c5c278ad1a67f3822151e5f73a2630e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75337549"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424518"
 ---
 # <a name="how-to-combine-linq-queries-with-regular-expressions-visual-basic"></a>Как сочетать запросы LINQ с помощью регулярных выражений (Visual Basic)
 
@@ -88,7 +89,7 @@ End Class
 
 Создайте Visual Basic проект консольного приложения, скопируйте и вставьте пример кода и измените значение объекта Startup в свойствах проекта.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (Visual Basic)](linq-and-strings.md)
 - [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

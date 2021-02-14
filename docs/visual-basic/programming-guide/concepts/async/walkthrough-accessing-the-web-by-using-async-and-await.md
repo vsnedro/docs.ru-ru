@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. доступ к Интернету с помощью Async и await (Visual Basic)
 title: Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
-ms.openlocfilehash: 41ededd4d4335b78b8d7a33e8fe387c7d632cbee
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 08488d4909e4fbc40cc11213eb293c2693fdec71
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400749"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474165"
 ---
 # <a name="walkthrough-accessing-the-web-by-using-async-and-await-visual-basic"></a>Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (Visual Basic)
 
@@ -33,7 +34,7 @@ ms.locfileid: "84400749"
 > - [Преобразование SumPageSizes в асинхронный метод](#convert-sumpagesizes-to-an-asynchronous-method)
 > - [Преобразование startButton_Click в асинхронный метод](#convert-startbutton_click-to-an-asynchronous-method)
 > - [Тестирование асинхронного решения](#test-the-asynchronous-solution)
-> - [Замените метод GetURLContentsAsync методом .NET Framework](#replace-the-geturlcontentsasync-method-with-a-net-framework-method)
+> - [Замените метод GetURLContentsAsync методом платформа .NET Framework](#replace-the-geturlcontentsasync-method-with-a-net-framework-method)
 
 Полный пример асинхронной работы см. в разделе " [Пример](#example) ".
 
@@ -59,7 +60,7 @@ ms.locfileid: "84400749"
 
 1. В редакторе кода Visual Studio перейдите на вкладку **MainWindow.xaml** .
 
-2. Если окно **Панель элементов** не отображается, в меню **Вид** выберите пункт **Панель элементов**.
+2. Если окно **панель элементов** не отображается, откройте меню **вид** и выберите пункт **панель элементов**.
 
 3. Добавьте элементы управления **Button** и **TextBox** в окно **MainWindow**.
 
@@ -101,7 +102,7 @@ ms.locfileid: "84400749"
 
 ## <a name="add-necessary-imports-statements"></a>Добавление необходимых операторов Imports
 
-1. В **Обозреватель решений**откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
+1. В **Обозреватель решений** откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
 
 2. Добавьте следующие `Imports` инструкции в начало файла кода, если они еще не установлены.
 
@@ -213,7 +214,7 @@ ms.locfileid: "84400749"
 
 ## <a name="test-the-synchronous-solution"></a>Тестирование синхронного решения
 
-1. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**.
+1. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Start** .
 
     Программа должна выдать результаты, похожие на следующий список:
 
@@ -251,7 +252,7 @@ ms.locfileid: "84400749"
     Using response As WebResponse = webReq.GetResponseAsync()
     ```
 
-2. `GetResponseAsync` возвращает значение типа <xref:System.Threading.Tasks.Task%601>. В этом случае переменная, *возвращаемая задачей*, `TResult` имеет тип <xref:System.Net.WebResponse> . Задача является обещанием создать фактический объект `WebResponse` после загрузки запрошенных данных и выполнения задачи до завершения.
+2. `GetResponseAsync` возвращает значение типа <xref:System.Threading.Tasks.Task%601>. В этом случае *переменная, возвращаемая задачей*, `TResult`, имеет тип <xref:System.Net.WebResponse>. Задача является обещанием создать фактический объект `WebResponse` после загрузки запрошенных данных и выполнения задачи до завершения.
 
     Чтобы получить `WebResponse` значение из задачи, примените оператор [await](../../../language-reference/operators/await-operator.md) к вызову `GetResponseAsync` , как показано в следующем коде.
 
@@ -403,7 +404,7 @@ ms.locfileid: "84400749"
 
 ## <a name="test-the-asynchronous-solution"></a>Тестирование асинхронного решения
 
-1. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**.
+1. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Start** .
 
 2. Появившиеся результаты должны напоминать результаты синхронного решения. Однако имеются следующие различия.
 
@@ -411,9 +412,9 @@ ms.locfileid: "84400749"
 
     - И что самое главное, поток пользовательского интерфейса не блокируется во время загрузки. Можно перемещать окно или изменять его размер во время загрузки, подсчета и отображения веб-ресурсов. Если один из веб-сайтов работает медленно или не отвечает, можно отменить операцию, нажав кнопку **Закрыть** (красный крестик в правом верхнем углу окна).
 
-## <a name="replace-the-geturlcontentsasync-method-with-a-net-framework-method"></a>Замените метод GetURLContentsAsync методом .NET Framework
+## <a name="replace-the-geturlcontentsasync-method-with-a-net-framework-method"></a>Замените метод GetURLContentsAsync методом платформа .NET Framework
 
-1. .NET Framework предоставляет множество асинхронных методов, которые можно использовать. Один из них, <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29?displayProperty=nameWithType> метод, делает то, что нужно для этого пошагового руководства. Его можно использовать вместо метода `GetURLContentsAsync`, созданного в предыдущей процедуре.
+1. Платформа .NET Framework предоставляет множество асинхронных методов, которые можно использовать. Один из них, <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29?displayProperty=nameWithType> метод, делает то, что нужно для этого пошагового руководства. Его можно использовать вместо метода `GetURLContentsAsync`, созданного в предыдущей процедуре.
 
     Первым шагом является создание <xref:System.Net.Http.HttpClient> объекта в `SumPageSizesAsync` методе. Добавьте следующее объявление в начале метода.
 
@@ -432,7 +433,7 @@ ms.locfileid: "84400749"
 
 3. Удалите или прокомментируйте метод `GetURLContentsAsync`, который вы написали.
 
-4. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**.
+4. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Start** .
 
     Поведение этой версии проекта должно соответствовать поведению, которое описывается в процедуре "Тестирование асинхронного решения"; при этом с вашей стороны требуется даже меньше усилий.
 
@@ -658,10 +659,10 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Пример асинхронности. Пошаговое руководство "Доступ к сети" (C# и Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
-- [Оператор await](../../../language-reference/operators/await-operator.md)
+- [Пример использования Async. Пошаговое руководство. Обращение к веб-сайтам (C# и Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
+- [Оператор Await](../../../language-reference/operators/await-operator.md)
 - [Асинхронный режим](../../../language-reference/modifiers/async.md)
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)
 - [Async Return Types (Visual Basic)](async-return-types.md) (Типы возвращаемых значений Async (Visual Basic))

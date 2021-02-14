@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: имена объявленных XML-элементов и атрибутов (Visual Basic)'
 title: Имена объявленных элементов и атрибутов XML
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - attribute names [XML in Visual Basic]
 - XML literals [Visual Basic], element names
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
-ms.openlocfilehash: 2142674c3de4c5ac9e806c1328daa3efb697beb9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 0c5d049a7d877a23562b91c5d7b3306d8e68ea3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085624"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422735"
 ---
 # <a name="names-of-declared-xml-elements-and-attributes-visual-basic"></a>Имена объявляемых элементов и атрибутов XML (Visual Basic)
 
@@ -49,7 +50,7 @@ ms.locfileid: "91085624"
 
  При создании литерала XML-элемента можно указать префикс пространства имен XML для имени элемента. Дополнительные сведения см. в разделе [литерал XML-элемента](../../../language-reference/xml-literals/xml-element-literal.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание XML в Visual Basic](creating-xml.md)
 - [XML-литерал элемента](../../../language-reference/xml-literals/xml-element-literal.md)

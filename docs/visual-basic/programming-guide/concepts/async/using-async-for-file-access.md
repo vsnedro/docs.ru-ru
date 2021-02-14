@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: использование Async для доступа к файлам (Visual Basic)'
 title: Использование метода Async для доступа к файлам
 ms.date: 07/20/2015
 ms.assetid: c989305f-08e3-4687-95c3-948465cda202
-ms.openlocfilehash: 2e7fa4a78363a08f2ff25e6a961868e85994e200
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f065ef8d8672569921e1652e62d24c10a506f828
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077362"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474217"
 ---
 # <a name="using-async-for-file-access-visual-basic"></a>Использование метода Async для доступа к файлам (Visual Basic)
 
@@ -166,7 +167,7 @@ End Sub
   
  При использовании методов <xref:System.IO.Stream.WriteAsync%2A> и <xref:System.IO.Stream.ReadAsync%2A> можно указать <xref:System.Threading.CancellationToken>, который позволяет отменить операцию в середине потока. Дополнительные сведения см. в разделе [Точная настройка асинхронного приложения (Visual Basic)](fine-tuning-your-async-application.md) и [Отмена в управляемых потоках](../../../../standard/threading/cancellation-in-managed-threads.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)
 - [Async Return Types (Visual Basic)](async-return-types.md) (Типы возвращаемых значений Async (Visual Basic))

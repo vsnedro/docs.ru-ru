@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о строковых принципах см. в Visual Basic
 title: Основы работы со строками
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 44736f4db9977d9f69a0571cc80fa327dcf96581
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 25d76ee177e5b3eaaa8aa6b2b1b1787dc29095a1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072513"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424363"
 ---
 # <a name="string-basics-in-visual-basic"></a>Основы работы со строками в Visual Basic
 
@@ -53,7 +54,7 @@ World]]></xml>.Value
   
 ## <a name="characters-in-strings"></a>Символы в строках  
 
- Строку можно представить как последовательность значений `Char`. При этом тип `String` имеет встроенные функции, которые позволяют работать со строками, как с массивами. Как и в .NET Framework, это массивы, начинающиеся с нуля. К определенному символу в строке можно обратиться с помощью свойства `Chars`, которое предоставляет механизм доступа к символу по позиции, в которой он отображается в строке. Пример:  
+ Строку можно представить как последовательность значений `Char`. При этом тип `String` имеет встроенные функции, которые позволяют работать со строками, как с массивами. Как и в платформа .NET Framework, это массивы, начинающиеся с нуля. К определенному символу в строке можно обратиться с помощью свойства `Chars`, которое предоставляет механизм доступа к символу по позиции, в которой он отображается в строке. Пример:  
   
  [!code-vb[VbVbalrStrings#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#67)]  
   
@@ -75,7 +76,7 @@ World]]></xml>.Value
   
  В отличие от других встроенных типов данных `String` — это ссылочный тип. Если переменная ссылочного типа передается в качестве аргумента функции или подпрограмме, вместо фактического значения строки передается ссылка на адрес в памяти, где хранятся данные. Поэтому в предыдущем примере имя переменной остается таким же, но оно указывает на другой экземпляр класса `String`, который содержит новое значение.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Знакомство со строками в Visual Basic](introduction-to-strings.md)
 - [Тип данных String](../../../language-reference/data-types/string-data-type.md)

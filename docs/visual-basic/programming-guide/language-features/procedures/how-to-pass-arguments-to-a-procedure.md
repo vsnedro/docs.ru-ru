@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе как передавать аргументы в процедуру (Visual Basic).
 title: Практическое руководство. Передача аргументов в процедуру
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - argument passing [Visual Basic], procedures
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
-ms.openlocfilehash: 816d6388a0dbb7ae346074d258ff651c793c5e0e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e4dcdac19699c4b4b1f88327034a9e9d4364f040
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071512"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434333"
 ---
 # <a name="how-to-pass-arguments-to-a-procedure-visual-basic"></a>Практическое руководство. Передача аргументов в процедуру (Visual Basic)
 
@@ -46,7 +47,7 @@ ms.locfileid: "91071512"
   
      Вторая запятая в списке аргументов отмечает место пропущенного второго аргумента, а последняя строка передается необязательному третьему параметру `MsgBox` , который является текстом, отображаемым в заголовке окна.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Подпрограммы](./sub-procedures.md)
 - [Процедуры функций](./function-procedures.md)

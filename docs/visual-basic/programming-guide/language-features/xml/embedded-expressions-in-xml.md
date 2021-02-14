@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: внедренные выражения в XML (Visual Basic)'
 title: Встроенные выражения в XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - LINQ to XML [Visual Basic], embedded expressions
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
-ms.openlocfilehash: 44a6c3408b57fa7f89e2834aa677fe8801ef21f3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 52cf8341cb0a55abad230543bbc6367aea071142
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058317"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433191"
 ---
 # <a name="embedded-expressions-in-xml-visual-basic"></a>Встроенные выражения в XML (Visual Basic)
 
@@ -83,7 +84,7 @@ ms.locfileid: "91058317"
 > [!NOTE]
 > При объявлении префикса пространства имен XML с помощью `xmlns` атрибута Namespace значение атрибута должно быть строковой константой. В этом отношении использование `xmlns` атрибута аналогично использованию `Imports` оператора для объявления пространства имен XML. Нельзя использовать внедренное выражение для указания значения пространства имен XML.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Создание XML в Visual Basic](creating-xml.md)
 - [XML-литерал документа](../../../language-reference/xml-literals/xml-document-literal.md)
