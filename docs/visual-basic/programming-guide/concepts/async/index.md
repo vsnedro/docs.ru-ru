@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Асинхронное программирование с использованием Async и await (Visual Basic)'
 title: Асинхронное программирование с использованием ключевых слов Async и Await
 ms.date: 07/20/2015
 ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
-ms.openlocfilehash: b4f35b482b4ee3fc7e08c296cf3815fb2bdd6874
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: e0723490a5f3863dc05acd49d6e3e91133413420
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90555384"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474360"
 ---
 # <a name="asynchronous-programming-with-async-and-await-visual-basic"></a>Асинхронное программирование с использованием Async и await (Visual Basic)
 
@@ -138,9 +139,9 @@ Dim urlContents As String = Await client.GetStringAsync()
 
 ## <a name="api-async-methods"></a><a name="BKMK_APIAsyncMethods"></a> Асинхронные методы API
 
-Где же найти методы для асинхронного программирования (такие как `GetStringAsync`)? .NET Framework 4,5 или более поздней версии содержит множество элементов, которые работают с `Async` и `Await` . Эти члены можно распознать с помощью суффикса Async, который прикрепляется к имени члена и типу возвращаемого значения <xref:System.Threading.Tasks.Task> или [Task (из TResult)](xref:System.Threading.Tasks.Task%601). Например, класс `System.IO.Stream` имеет такие методы, как <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A> и <xref:System.IO.Stream.WriteAsync%2A>, наряду с синхронными методами <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A> и <xref:System.IO.Stream.Write%2A>.
+Где же найти методы для асинхронного программирования (такие как `GetStringAsync`)? Платформа .NET Framework 4,5 или более поздней версии содержит множество элементов, которые работают с `Async` и `Await` . Эти члены можно распознать с помощью суффикса Async, который прикрепляется к имени члена и типу возвращаемого значения <xref:System.Threading.Tasks.Task> или [Task (из TResult)](xref:System.Threading.Tasks.Task%601). Например, класс `System.IO.Stream` имеет такие методы, как <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A> и <xref:System.IO.Stream.WriteAsync%2A>, наряду с синхронными методами <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A> и <xref:System.IO.Stream.Write%2A>.
 
-Среда выполнения Windows также содержит множество методов, которые можно использовать в сочетании с `Async` и `Await` в приложениях Windows. Дополнительные сведения и примеры методов см. [в разделе Вызов асинхронных API в C# или Visual Basic](/windows/uwp/threading-async/call-asynchronous-apis-in-csharp-or-visual-basic), [Асинхронное программирование (среда выполнения Windowsные приложения)](/previous-versions/windows/apps/hh464924(v=win.10))и [WhenAny: мост между .NET Framework и среда выполнения Windows](/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120)).
+Среда выполнения Windows также содержит множество методов, которые можно использовать в сочетании с `Async` и `Await` в приложениях Windows. Дополнительные сведения и примеры методов см. [в разделе Вызов асинхронных API в C# или Visual Basic](/windows/uwp/threading-async/call-asynchronous-apis-in-csharp-or-visual-basic), [Асинхронное программирование (среда выполнения Windowsные приложения)](/previous-versions/windows/apps/hh464924(v=win.10))и [WhenAny: мост между платформа .NET Framework и среда выполнения Windows](/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120)).
 
 ## <a name="threads"></a><a name="BKMK_Threads"></a> Потоки
 
@@ -165,11 +166,11 @@ Dim urlContents As String = Await client.GetStringAsync()
 `Async` и `Await` являются контекстными ключевыми словами. Дополнительные сведения и примеры см. в следующих разделах:
 
 - [Асинхронный режим](../../../language-reference/modifiers/async.md)
-- [Оператор await](../../../language-reference/operators/await-operator.md)
+- [Оператор Await](../../../language-reference/operators/await-operator.md)
 
 ## <a name="return-types-and-parameters"></a><a name="BKMK_ReturnTypesandParameters"></a> Типы и параметры возвращаемого значения
 
-В .NET Framework программировании асинхронный метод обычно возвращает <xref:System.Threading.Tasks.Task> или [задачу (из TResult)](xref:System.Threading.Tasks.Task%601). Внутри асинхронного метода оператор `Await` применяется к задаче, возвращаемой из вызова другого асинхронного метода.
+В платформа .NET Framework программировании асинхронный метод обычно возвращает <xref:System.Threading.Tasks.Task> или [задачу (из TResult)](xref:System.Threading.Tasks.Task%601). Внутри асинхронного метода оператор `Await` применяется к задаче, возвращаемой из вызова другого асинхронного метода.
 
 Вы указываете [задачу (из TResult)](xref:System.Threading.Tasks.Task%601) в качестве возвращаемого типа, если метод содержит оператор [return](../../../language-reference/statements/return-statement.md) , указывающий операнд типа `TResult` .
 
@@ -257,5 +258,5 @@ Await Task_MethodAsync()
 
 ## <a name="see-also"></a>См. также
 
-- [Оператор await](../../../language-reference/operators/await-operator.md)
+- [Оператор Await](../../../language-reference/operators/await-operator.md)
 - [Асинхронный режим](../../../language-reference/modifiers/async.md)

@@ -5,16 +5,16 @@ ms.date: 02/05/2021
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, categories
-ms.openlocfilehash: 3eaff57a7ea175fbe0895fb7bb8d8d0d8df1365d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: fdb4662f52a13906a2d9bcb3fd9a90860e394e72
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99804194"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467333"
 ---
 # <a name="rule-categories"></a>Категории правил
 
-Каждое правило анализа кода принадлежит к категории правил. Например, правила проектирования поддерживают соответствие рекомендациям по проектированию .NET, а правила безопасности помогают предотвратить недостатки безопасности. Можно [отключить или включить всю категорию](configuration-options.md#scope) правил. Можно также [настроить дополнительные параметры](code-quality-rule-options.md#category-of-rules) для отдельных категорий.
+Каждое правило анализа кода принадлежит к категории правил. Например, правила проектирования поддерживают соответствие рекомендациям по проектированию .NET, а правила безопасности помогают предотвратить недостатки безопасности. [Уровень серьезности можно настроить](configuration-options.md#scope) для всей категории правил. Можно также [настроить дополнительные параметры](code-quality-rule-options.md#category-of-rules) для отдельных категорий.
 
 В следующей таблице показаны различные категории правил анализа кода и ссылки на правила в каждой категории.
 
