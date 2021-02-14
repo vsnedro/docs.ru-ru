@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как присвоить один массив другому массиву (Visual Basic).
 title: Практическое руководство. Присвоение одного массива другому
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], assigning
 - arrays [Visual Basic], covariance
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
-ms.openlocfilehash: c38def1ba9f3720bc760d6f6e4264510c884c930
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dc86225c1f25c207e793e33a048d948646ac77b6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413083"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434736"
 ---
 # <a name="how-to-assign-one-array-to-another-array-visual-basic"></a>Практическое руководство. Присвоение одного массива другому (Visual Basic)
 
@@ -43,7 +44,7 @@ ms.locfileid: "84413083"
 
 Компилятор сообщает об ошибке, если приведенные выше правила нарушаются, например, если типы данных несовместимы или ранги не равны. В код можно добавить обработку ошибок, чтобы убедиться, что массивы совместимы, прежде чем пытаться выполнить назначение. Можно также использовать ключевое слово [оператора TryCast](../../../language-reference/operators/trycast-operator.md) , если необходимо избежать возникновения исключения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Массивы](index.md)
 - [Устранение неполадок, связанных с массивами](troubleshooting-arrays.md)

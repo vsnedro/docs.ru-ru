@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: вызов свойства или метода с помощью имени строки (Visual Basic)'
 title: Вызов свойства или метода с помощью строкового имени
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - properties [Visual Basic], setting at run time
 - CallByName function
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.openlocfilehash: 9f28548c27545d94dde38cef3e9c56f98a69b259
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ad14f66ef4e3e06b969cb39a0203442cb0a4f1bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086092"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434424"
 ---
 # <a name="calling-a-property-or-method-using-a-string-name-visual-basic"></a>Вызов свойства или метода с помощью строкового имени (Visual Basic)
 
@@ -29,11 +30,11 @@ ms.locfileid: "91086092"
   
  `CallByName`Функция позволяет использовать строку для указания свойства или метода во время выполнения. Сигнатура для `CallByName` функции выглядит следующим образом:  
   
- *Result*  =  Результат `CallByName` (*Object*, *ProcedureName*, *каллтипе*, *arguments*())  
+   =  Результат `CallByName` (*Object*, *ProcedureName*, *каллтипе*, *arguments*())  
   
  Первый аргумент, *объект*, принимает имя объекта, с которым вы хотите работать. Аргумент *ProcedureName* принимает строку, содержащую имя метода или процедуры свойства, которые необходимо вызвать. Аргумент *каллтипе* принимает константу, представляющую тип вызываемой процедуры: метод ( `Microsoft.VisualBasic.CallType.Method` ), свойство Read ( `Microsoft.VisualBasic.CallType.Get` ) или набор свойств ( `Microsoft.VisualBasic.CallType.Set` ). Аргумент *arguments* , который является необязательным, принимает массив типа `Object` , который содержит любые аргументы для процедуры.  
   
- `CallByName`В текущем решении можно использовать с классами, но чаще всего они используются для доступа к COM-объектам или объектам из .NET Framework сборок.  
+ `CallByName`В текущем решении можно использовать с классами, но чаще всего они используются для доступа к COM-объектам или объектам из платформа .NET Framework сборок.  
   
  Предположим, что вы добавили ссылку на сборку, содержащую класс с именем `MathClass` , который содержит новую функцию с именем `SquareRoot` , как показано в следующем коде:  
   
@@ -48,7 +49,7 @@ ms.locfileid: "91086092"
 > [!NOTE]
 > Хотя `CallByName` функция может быть полезной в некоторых случаях, необходимо взвесить ее полезность относительно влияния на производительность `CallByName` . использование для вызова процедуры немного медленнее, чем вызов с поздним связыванием. При вызове функции, которая вызывается многократно, например внутри цикла, `CallByName` может серьезно повлиять на производительность.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
 - [Определение типа объекта](determining-object-type.md)

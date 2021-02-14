@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о затенении в Visual Basic
 title: Удаленное управление
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,16 +19,16 @@ helpviewer_keywords:
 - objects [Visual Basic], names
 - names [Visual Basic], shadowing
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
-ms.openlocfilehash: 81e54875a3c1a4bbc5f5631e7ebac649a2e5afaf
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 468ad72808d689016cacb8d2be56fa9f9fcd1eec
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085897"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434827"
 ---
 # <a name="shadowing-in-visual-basic"></a>Сокрытие в Visual Basic
 
-Если два программных элемента имеют одно и то же имя, один из них может скрыть или *затенить*другой. В такой ситуации затененный элемент недоступен для справки; Вместо этого, если в коде используется имя элемента, компилятор Visual Basic разрешает его в элемент с тенью.  
+Если два программных элемента имеют одно и то же имя, один из них может скрыть или *затенить* другой. В такой ситуации затененный элемент недоступен для справки; Вместо этого, если в коде используется имя элемента, компилятор Visual Basic разрешает его в элемент с тенью.  
   
 ## <a name="purpose"></a>Назначение  
 
@@ -147,7 +148,7 @@ End Class
   
  В предыдущем примере переменная `basObj` объявлена как базовый класс. Присвоение `dervCls` объекту объекта образует расширяющее преобразование и, следовательно, является допустимым. Однако базовый класс не может получить доступ к версии теневого копирования переменной `z` в производном классе, поэтому компилятор разрешается `basObj.z` в исходное значение базового класса.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [References to Declared Elements](references-to-declared-elements.md)
 - [Область видимости в Visual Basic](scope.md)

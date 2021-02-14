@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: AttributeUsage (Visual Basic)'
 title: AttributeUsage
 ms.date: 07/20/2015
 ms.assetid: 48757216-c21d-4051-86d5-8a3e03c39d2c
-ms.openlocfilehash: 677d49aba38801f2adf42cc745983af30b3eddc5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: afb043c1b16da3e134888a38ec73f0b6f4ec5f58
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400736"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437817"
 ---
 # <a name="attributeusage-visual-basic"></a>AttributeUsage (Visual Basic)
 
@@ -77,7 +78,7 @@ End Class
 
 В этом случае `Attr1` не применяется к `DClass` путем наследования.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Атрибут `AttributeUsage` можно использовать только один раз — его нельзя повторно применять к одному и тому же классу. `AttributeUsage` является псевдонимом для <xref:System.AttributeUsageAttribute>.
 

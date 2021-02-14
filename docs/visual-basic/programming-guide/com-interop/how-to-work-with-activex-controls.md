@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как работать с элементами управления ActiveX (Visual Basic)
 title: Практическое руководство. Работа с элементами управления ActiveX
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Toolbox, adding controls
 - ActiveX controls, adding to Toolbox
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
-ms.openlocfilehash: d1346d362bf030e794212d74040f1ff0845eb704
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3c38a38bf573ecee8425a837ce472cee60fb031f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083258"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438987"
 ---
 # <a name="how-to-work-with-activex-controls-visual-basic"></a>Практическое руководство. Работа с элементами ActiveX (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "91083258"
     > [!NOTE]
     > Служебную программу Aximp можно использовать для создания сборки взаимодействия для элементов управления ActiveX вручную. Дополнительные сведения см. в разделе [Aximp.exe (Windows Forms средства импорта элементов ActiveX)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [COM-взаимодействие](index.md)
 - [Практическое руководство. Добавление элементов управления ActiveX в формы Windows Forms.](/dotnet/desktop/winforms/controls/how-to-add-activex-controls-to-windows-forms)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о массивах см. в Visual Basic
 title: Массивы
 ms.date: 12/06/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - arrays [Visual Basic]
 - Visual Basic, arrays
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
-ms.openlocfilehash: 5093f28f05c5b72294dce9a4e69723acafb31a9f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b6e8349fe02e77f12fb827618f84d44288914b62
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413095"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454603"
 ---
 # <a name="arrays-in-visual-basic"></a>Массивы в Visual Basic
 
@@ -136,7 +137,7 @@ Dim sales()() As Double = New Double(11)() {}
 
 [!code-vb[iterate-one-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate1d.vb)]
 
-В следующем примере выполняется перебор многомерного массива с помощью [`For...Next`](../../../language-reference/statements/for-next-statement.md) инструкции. Метод <xref:System.Array.GetUpperBound%2A> имеет параметр, который определяет измерение. `GetUpperBound(0)`Возвращает самый верхний индекс первого измерения и `GetUpperBound(1)` возвращает наибольший индекс второго измерения.
+В следующем примере выполняется перебор многомерного массива с помощью [`For...Next`](../../../language-reference/statements/for-next-statement.md) инструкции. Метод <xref:System.Array.GetUpperBound%2A> имеет параметр, который определяет измерение. `GetUpperBound(0)` Возвращает самый верхний индекс первого измерения и `GetUpperBound(1)` возвращает наибольший индекс второго измерения.
 
 [!code-vb[iterate-two-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate2d.vb)]
 
@@ -294,7 +295,7 @@ Dim arrZ(-1) As String
 
 Более подробную информацию о коллекциях см. в статье [Коллекции](../../concepts/collections.md).
 
-## <a name="related-topics"></a>Связанные темы
+## <a name="related-topics"></a>Связанные разделы
 
 |Термин|Определение|
 |----------|----------------|

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: символы типа (Visual Basic)'
 title: Символы типов
 ms.date: 01/31/2018
 helpviewer_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - UL literal type characters [Visual Basic]
 - literal types [Visual Basic], default
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
-ms.openlocfilehash: a48260694c1dfcbbb8f804f220fe89b1663c7319
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d1afccb821d2ffb4dfabe3c38e0db4a7f902c164
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393082"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454551"
 ---
 # <a name="type-characters-visual-basic"></a>Символы типов (Visual Basic)
 
@@ -79,7 +80,7 @@ Visual Basic предоставляет набор *символов типа и
 |Текстовая форма литерала|Тип данных по умолчанию|Пример|  
 |-----------------------------|-----------------------|-------------|  
 |Numeric, без дробной части|`Integer`|`2147483647`|  
-|Numeric, без дробной части, слишком большой для`Integer`|`Long`|`2147483648`|  
+|Numeric, без дробной части, слишком большой для `Integer`|`Long`|`2147483648`|  
 |Числовая, дробная часть|`Double`|`1.2`|  
 |Заключено в двойные кавычки|`String`|`"A"`|  
 |Заключено в знаки решетки|`Date`|`#5/17/1993 9:32 AM#`|  

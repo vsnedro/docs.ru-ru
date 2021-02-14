@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: повышение типа (Visual Basic)'
 title: Повышение типа
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - type promotion
 - declared elements [Visual Basic], visibility
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
-ms.openlocfilehash: 6c28ca22e96616ff09e147400bfdb2adb922ff0e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: fd8a30fb7e442d82222ae55daabf70bd8e532138
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085806"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434723"
 ---
 # <a name="type-promotion-visual-basic"></a>Повышение типа (Visual Basic)
 
@@ -63,7 +64,7 @@ ms.locfileid: "91085806"
   
 - **Полное уточнение.** При работе с модулями и другими элементами в одном пространстве имен наиболее надежный подход заключается в том, чтобы всегда использовать полную квалификацию для всех программных элементов. Если повышение типа для члена модуля не используется и вы не полностью уточняете этот член, вы можете случайно получить доступ к другому программному элементу.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Оператор Module](../../../language-reference/statements/module-statement.md)
 - [Оператор Namespace](../../../language-reference/statements/namespace-statement.md)

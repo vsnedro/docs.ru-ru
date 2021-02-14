@@ -5,12 +5,12 @@ ms.date: 08/09/2019
 author: sdmaclea
 ms.author: stmaclea
 ms.topic: overview
-ms.openlocfilehash: 34deb802183f20cc92449c21eb7e149cc002850f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2eaa01fad3913272dc90891592d0e35cd89ad2ab
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284226"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506322"
 ---
 # <a name="dependency-loading-in-net-core"></a>Загрузка зависимостей в .NET Core
 
@@ -40,3 +40,7 @@ API <xref:System.Runtime.Loader.AssemblyLoadContext> является важне
 ## <a name="how-to-use-and-debug-assembly-unloadability-in-net-core"></a>Использование и отладка сборок с возможностью выгрузки в .NET Core
 
 Пошаговые инструкции см. в статье [Использование и отладка сборок с возможностью выгрузки в .NET Core](../../standard/assembly/unloadability.md). В ней показано, как загрузить приложение .NET Core, выполнить и выгрузить его. Также в этой статье есть рекомендации по отладке.
+
+## <a name="collect-detailed-assembly-loading-information"></a>Сбор подробных сведений о загрузке сборок
+
+В статье [Сбор подробных сведений о загрузке сборок](collect-details.md) объясняется, как получить подробные сведения о загрузке управляемой сборки в среде выполнения. В рамках той же статьи используется средство [dotnet-trace](../diagnostics/dotnet-trace.md) для записи событий загрузчика сборки в трассировку выполняемого процесса.

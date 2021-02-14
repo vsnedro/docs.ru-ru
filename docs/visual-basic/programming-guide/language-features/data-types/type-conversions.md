@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: преобразования типов в Visual Basic'
 title: Преобразования типов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - changing data types [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
-ms.openlocfilehash: ee8700ea757cee9c20e2598de029f54ae33a7114
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1f40951856710eb6f2892a7f7a4e04173ee3ee44
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090161"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454486"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Преобразование типов в Visual Basic
 
-Процесс изменения значения из одного типа данных на другой тип называется *преобразованием*. Преобразования могут *расширяться* или *уменьшаться*в зависимости от объема данных используемых типов. Они также являются *неявно* или *explicit*явными в зависимости от синтаксиса в исходном коде.  
+Процесс изменения значения из одного типа данных на другой тип называется *преобразованием*. Преобразования могут *расширяться* или *уменьшаться* в зависимости от объема данных используемых типов. Они также являются *неявно* или явными в зависимости от синтаксиса в исходном коде.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Widening and Narrowing Conversions](widening-and-narrowing-conversions.md)  
  Описывает преобразования, классифицированные, если целевой тип может содержать данные.  

@@ -1,13 +1,13 @@
 ---
 title: Команда dotnet publish
 description: Команда dotnet publish публикует решение или проект .NET в каталоге.
-ms.date: 11/11/2020
-ms.openlocfilehash: 3918c0708e207157ac33dd1a8fdefb993a1d6741
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.date: 02/03/2021
+ms.openlocfilehash: 5391e56a88f782294c3a71c523d0fc27a09e0dd8
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98190069"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585680"
 ---
 # <a name="dotnet-publish"></a>dotnet publish
 
@@ -146,6 +146,8 @@ dotnet publish -p:PublishProfile=FolderProfile
 - **`-p:PublishReadyToRun=true`**
 
   Компилирует сборки приложений в формате ReadyToRun (R2R). R2R является разновидностью компиляции AOT. Дополнительные сведения см. в разделе [Образы ReadyToRun](../deploying/ready-to-run.md). Доступно, начиная с пакета SDK для .NET Core 3.0.
+
+  Чтобы просмотреть предупреждения о недостающих зависимостях, из-за которых могут возникать сбои в среде выполнения, используйте `-p:PublishReadyToRunShowWarnings=true`.
 
   Рекомендуется указывать этот параметр в профиле публикации, а не в командной строке. Дополнительные сведения см. в разделе [MSBuild](#msbuild).
 

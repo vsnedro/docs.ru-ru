@@ -1,17 +1,17 @@
 ---
 title: Руководство по программированию на C#. Объекты
 description: Для определения типов объектов в C# используется определение класса или структуры. В объектно-ориентированном языке, таком как C#, программа состоит из динамически взаимодействующих объектов.
-ms.date: 07/20/2015
+ms.date: 02/03/2021
 helpviewer_keywords:
 - objects [C#], about objects
 - variables [C#]
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
-ms.openlocfilehash: 61d79f5647fa05edade9aef90653544b08c20c83
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: df549b76c5bd49fa91424915928527ec14d7689c
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91181834"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585718"
 ---
 # <a name="objects-c-programming-guide"></a>Объекты (Руководство по программированию на C#)
 
@@ -24,7 +24,7 @@ ms.locfileid: "91181834"
 
  Так как классы являются ссылочными типами, в переменной объекта класса хранится ссылка на адрес объекта в управляемой куче. Если первому объекту назначен второй объект того же типа, обе переменные ссылаются на объект, расположенный по данному адресу. Эта особенность обсуждается более подробно далее в этом разделе.  
   
- Экземпляры классов создаются с помощью [оператора new](../../language-reference/operators/new-operator.md). В приведенном ниже примере `Person` является типом, а `person1` и `person 2` — экземплярами или объектами этого типа.  
+ Экземпляры классов создаются с помощью [оператора new](../../language-reference/operators/new-operator.md). В приведенном ниже примере `Person` является типом, а `person1` и `person2` — экземплярами или объектами этого типа.  
   
  [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
@@ -47,8 +47,8 @@ ms.locfileid: "91181834"
   
  [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
- В реализации <xref:System.ValueType?displayProperty=nameWithType>`Equals` используется отражение, так как необходимо определить поля, имеющиеся в любой структуре. При создании собственных структур переопределите метод `Equals` для предоставления эффективного алгоритма равенства, соответствующего вашему типу.  
-  
+ В некоторых случаях `Equals` в реализации <xref:System.ValueType?displayProperty=nameWithType> использует упаковку-преобразование и отражение. Сведения о том, как обеспечить эффективный алгоритм равенства, соответствующий вашему типу, см. в статье [Руководство по программированию на C#. Как определить равенства значений для типа](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md).
+
 - Чтобы определить, равны ли значения полей в двух экземплярах класса, можно воспользоваться методом <xref:System.Object.Equals%2A> или [оператором ==](../../language-reference/operators/equality-operators.md#equality-operator-). Однако их следует использовать, только если они переопределены или перегружены классом с целью предоставления пользовательского определение равенства для объектов этого типа. Класс может также реализовывать интерфейс <xref:System.IEquatable%601> или интерфейс <xref:System.Collections.Generic.IEqualityComparer%601>. Оба интерфейса предоставляют методы, которые можно использовать для проверки равенства значений. При создании собственных классов, переопределяющих `Equals`, обязательно выполните инструкции из руководства по [определению равенства значений для типа ](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md) и <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.
   
 ## <a name="related-sections"></a>Связанные разделы  

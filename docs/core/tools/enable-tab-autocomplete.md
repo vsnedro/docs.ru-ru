@@ -1,22 +1,22 @@
 ---
 title: Включение автодополнения клавишей TAB
-description: В этой статье объясняется, как включить заполнение клавишей TAB для .NET CLI в средах PowerShell, Bash и zsh.
+description: В этой статье объясняется, как включить автодополнение клавишей TAB для .NET CLI в средах PowerShell, Bash, zsh и fish.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 11/03/2019
-ms.openlocfilehash: 31bf5e74644680fc30ca5b79972fbed6367363e1
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: b5b63166faa1762d9fa82a93aa70aebb33167630
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634016"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585563"
 ---
 # <a name="how-to-enable-tab-completion-for-the-net-cli"></a>Включение заполнения клавишей TAB для .NET CLI
 
 **Эта статья относится к следующему.** ✔️ SDK для .NET Core 2.1 и более поздних версий
 
-В этой статье описывается, как включить автодополнение нажатием клавиши TAB для трех оболочек: PowerShell, Bash и zsh. Сведения о том, как настроить заполнение нажатием клавиши TAB в других оболочках, см. в соответствующей документации.
+В этой статье описывается, как включить автодополнение клавишей TAB для четырех оболочек: PowerShell, Bash, zsh и fish. Сведения о том, как настроить заполнение нажатием клавиши TAB в других оболочках, см. в соответствующей документации.
 
 После настройки автодополнение можно активировать нажатием клавиши TAB для .NET CLI, введя в командной строке `dotnet` и нажав клавишу TAB. Текущая командная строка будет передана команде `dotnet complete`, а оболочка обработает результаты. Вы можете проверить результаты без активации автодополнения клавишей TAB, передав что-либо непосредственно команде `dotnet complete`. Пример:
 
@@ -97,4 +97,12 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+```
+
+## <a name="fish"></a>fish
+
+Чтобы добавить автодополнение клавишей TAB для .NET CLI в **fish**, добавьте в свой файл `config.fish` следующий код:
+
+```fish
+complete -f -c dotnet -a "(dotnet complete)"
 ```

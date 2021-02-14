@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: Определение анонимного типа (Visual Basic)'
 title: Определение анонимного типа
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [Visual Basic], type definition
 ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
-ms.openlocfilehash: 952eb295cc71eab5d0ad6e18f2b697a9b701b434
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2e3f847f5f844e3ed6e036c26efc330a237d193f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404905"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436920"
 ---
 # <a name="anonymous-type-definition-visual-basic"></a>Определение анонимного типа (Visual Basic)
 
 В ответ на объявление экземпляра анонимного типа компилятор создает новое определение класса, которое содержит указанные свойства для типа.
 
-## <a name="compiler-generated-code"></a>Код, созданный компилятором
+## <a name="compiler-generated-code"></a>Код Compiler-Generated
 
 Для следующего определения `product` компилятор создает новое определение класса, которое содержит свойства `Name` , `Price` и `OnHand` .
 
@@ -56,7 +57,7 @@ End Class
 
 Если объявление анонимного типа содержит по крайней мере одно ключевое свойство, определение типа переопределяет три члена, наследуемые от <xref:System.Object> : <xref:System.Object.Equals%2A> , <xref:System.Object.GetHashCode%2A> и <xref:System.Object.ToString%2A> . Если ключевые свойства не объявлены, <xref:System.Object.ToString%2A> то переопределяется только. Переопределения предоставляют следующие функциональные возможности:
 
-- `Equals`Возвращает `True` значение, если два экземпляра анонимных типов являются одним и тем же экземпляром, или если они отвечают следующим условиям:
+- `Equals` Возвращает `True` значение, если два экземпляра анонимных типов являются одним и тем же экземпляром, или если они отвечают следующим условиям:
 
   - Они имеют одинаковое число свойств.
 
@@ -70,9 +71,9 @@ End Class
 
     [!code-vb[VbVbalrAnonymousTypes#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#24)]
 
-- `GetHashcode`предоставляет соответствующим образом уникальный алгоритм GetHashCode. Алгоритм использует только ключевые свойства для вычисления хэш-кода.
+- `GetHashcode` предоставляет соответствующим образом уникальный алгоритм GetHashCode. Алгоритм использует только ключевые свойства для вычисления хэш-кода.
 
-- `ToString`Возвращает строку сцепленных значений свойств, как показано в следующем примере. Включены ключевые и неключевые свойства.
+- `ToString` Возвращает строку сцепленных значений свойств, как показано в следующем примере. Включены ключевые и неключевые свойства.
 
   [!code-vb[VbVbalrAnonymousTypes#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#29)]
 

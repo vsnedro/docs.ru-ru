@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Введение в LINQ в Visual Basic
 title: Введение в LINQ
 ms.date: 08/28/2018
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - deferred execution
 - iteration variables [Visual Basic]
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
-ms.openlocfilehash: 00022fc7790548dbc0ed8018f202e136bdbcc033
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6dc260f7c7305dc3380cbd7c7c9f2402e000b986
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075256"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438805"
 ---
 # <a name="introduction-to-linq-in-visual-basic"></a>Знакомство с LINQ в Visual Basic
 
-Языковой интегрированный запрос (LINQ) добавляет возможности запросов в Visual Basic и предоставляет простые и эффективные возможности при работе со всеми типами данных. Вместо отправки запроса в базу данных для обработки или работы с другим синтаксисом запросов для каждого типа искомых данных LINQ вводит запросы в составе языка Visual Basic. Синтаксис запросов не зависит от типа данных.  
+Language-Integrated query (LINQ) добавляет возможности запросов в Visual Basic и предоставляет простые и эффективные возможности при работе со всеми типами данных. Вместо отправки запроса в базу данных для обработки или работы с другим синтаксисом запросов для каждого типа искомых данных LINQ вводит запросы в составе языка Visual Basic. Синтаксис запросов не зависит от типа данных.  
   
  LINQ позволяет запрашивать данные из SQL Server базы данных, XML, массивов в памяти и коллекций, ADO.NET DataSets или любого другого удаленного или локального источника данных, поддерживающего LINQ. Все это можно сделать с помощью стандартных элементов языка Visual Basic. Так как запросы написаны на языке Visual Basic, результаты запроса возвращаются в виде строго типизированных объектов. Эти объекты поддерживают технологию IntelliSense, что позволяет писать код быстрее и перехватывать ошибки в запросах при компиляции, а не при выполнении. Запросы LINQ можно использовать как источник дополнительных запросов для уточнения результатов, а также связывать с элементами управления, позволяя пользователям легко просматривать и изменять результаты запросов.  
   
@@ -254,7 +255,7 @@ ms.locfileid: "91075256"
 
  [Глава 17. LINQ](/previous-versions/visualstudio/visual-studio-2008/ff652502(v=orm.10)) в [программировании Visual Basic 2008](/previous-versions/visualstudio/visual-studio-2008/ff652504(v=orm.10))  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Встроенный язык запросов LINQ](../../concepts/linq/index.md)
 - [Overview of LINQ to XML in Visual Basic](../xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)

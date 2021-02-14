@@ -1,5 +1,5 @@
 ---
-description: 'Дополнительные сведения о: BC42026: Expression рекурсивно вызывает содержащееся свойство "<propertyname>'
+description: 'Дополнительные сведения о: BC42026: Expression рекурсивно вызывает содержащееся свойство " <propertyname> "'
 title: Выражение рекурсивно вызывает содержащее свойство <propertyname>
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42026
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
-ms.openlocfilehash: 4b6abcbab62ae0c4c5b18b0e6946bcfb21857112
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: e9e8a39458fe930eb77c548866e62c1c32b4ed16
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796344"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437674"
 ---
 # <a name="bc42026-expression-recursively-calls-the-containing-property-propertyname"></a>BC42026: выражение рекурсивно вызывает содержащееся свойство " \<propertyname> "
 
@@ -65,7 +65,7 @@ End Class
 
 - Перепишите определение свойства, чтобы использовать рекомендуемый подход, как показано в предыдущем примере.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры свойств](../../programming-guide/language-features/procedures/property-procedures.md)
 - [Property Statement](../statements/property-statement.md)

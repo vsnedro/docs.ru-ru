@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: отмена оставшихся асинхронных задач после завершения одной операции (Visual Basic)'
 title: Отмена оставшихся асинхронных задач после завершения одной из них
 ms.date: 07/20/2015
 ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
-ms.openlocfilehash: a0a04c62378ddf70ab3dee9a522e490b0a73b83e
-ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
+ms.openlocfilehash: 6f7fc8af707c6c0d69fcf88e511b84b31ba75a82
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615962"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438896"
 ---
 # <a name="cancel-remaining-async-tasks-after-one-is-complete-visual-basic"></a>Cancel Remaining Async Tasks after One Is Complete (Visual Basic) (Отмена оставшихся асинхронных задач после завершения одной из них в Visual Basic)
 
@@ -47,7 +48,7 @@ ms.locfileid: "98615962"
 В файле MainWindow. XAML проекта **CancelAListOfTasks** запустите переход, переместив шаги обработки для каждого веб-сайта из цикла в `AccessTheWebAsync` следующий асинхронный метод.
 
 ```vb
-' **_Bundle the processing steps for a website into one async method.
+' ***Bundle the processing steps for a website into one async method.
 Async Function ProcessURLAsync(url As String, client As HttpClient, ct As CancellationToken) As Task(Of Integer)
 
     ' GetAsync returns a Task(Of HttpResponseMessage).
@@ -69,7 +70,7 @@ End Function
 2. Создайте запрос, который во время выполнения создает коллекцию общих заданий. Каждый вызов `ProcessURLAsync` возвращает <xref:System.Threading.Tasks.Task%601>, где `TResult` — это целое число.
 
     ```vb
-    ' _*_Create a query that, when executed, returns a collection of tasks.
+    ' ***Create a query that, when executed, returns a collection of tasks.
     Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
         From url In urlList Select ProcessURLAsync(url, client, ct)
     ```
@@ -77,14 +78,14 @@ End Function
 3. Вызовите `ToArray` для выполнения запроса и запуска задач. Применение метода `WhenAny` в следующем шаге будет выполнять запрос и запускать задачи без использования `ToArray`, однако этот режим может быть недоступен для других методов. Наиболее безопасным способом является явное принудительное выполнения запроса.
 
     ```vb
-    ' _*_Use ToArray to execute the query and start the download tasks.
+    ' ***Use ToArray to execute the query and start the download tasks.
     Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()
     ```
 
 4. Вызовите `WhenAny` для коллекции задач. `WhenAny` возвращает `Task(Of Task(Of Integer))` или `Task<Task<int>>`.  То есть `WhenAny` возвращает задачу, которая вычисляется как одна задача `Task(Of Integer)` или `Task<int>`, если она ожидается. Одна задача — это первая завершившаяся задача в коллекции. Задача, которая завершается первой, назначается `finishedTask`. `finishedTask` имеет тип <xref:System.Threading.Tasks.Task%601>, где `TResult` является целым числом, поскольку это возвращаемый тип `ProcessURLAsync`.
 
     ```vb
-    ' _*_Call WhenAny and then await the result. The task that finishes
+    ' ***Call WhenAny and then await the result. The task that finishes
     ' first is assigned to finishedTask.
     Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
     ```
@@ -92,7 +93,7 @@ End Function
 5. В этом примере нас интересует только та задача, которая завершается первой. Таким образом, используйте <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> для отмены оставшихся задач.
 
     ```vb
-    ' _*_Cancel the rest of the downloads. You just want the first one.
+    ' ***Cancel the rest of the downloads. You just want the first one.
     cts.Cancel()
     ```
 
@@ -178,28 +179,28 @@ Class MainWindow
         ''        vbCrLf & $"Length of the downloaded string: {urlContents.Length}." & vbCrLf
         ''Next
 
-        ' _*_Create a query that, when executed, returns a collection of tasks.
+        ' ***Create a query that, when executed, returns a collection of tasks.
         Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =
             From url In urlList Select ProcessURLAsync(url, client, ct)
 
-        ' _*_Use ToArray to execute the query and start the download tasks.
+        ' ***Use ToArray to execute the query and start the download tasks.
         Dim downloadTasks As Task(Of Integer)() = downloadTasksQuery.ToArray()
 
-        ' _*_Call WhenAny and then await the result. The task that finishes
+        ' ***Call WhenAny and then await the result. The task that finishes
         ' first is assigned to finishedTask.
         Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)
 
-        ' _*_Cancel the rest of the downloads. You just want the first one.
+        ' ***Cancel the rest of the downloads. You just want the first one.
         cts.Cancel()
 
-        ' _*_Await the first completed task and display the results
+        ' ***Await the first completed task and display the results
         ' Run the program several times to demonstrate that different
         ' websites can finish first.
         Dim length = Await finishedTask
         resultsTextBox.Text &= vbCrLf & $"Length of the downloaded website:  {length}" & vbCrLf
     End Function
 
-    ' _**Bundle the processing steps for a website into one async method.
+    ' ***Bundle the processing steps for a website into one async method.
     Async Function ProcessURLAsync(url As String, client As HttpClient, ct As CancellationToken) As Task(Of Integer)
 
         ' GetAsync returns a Task(Of HttpResponseMessage).
