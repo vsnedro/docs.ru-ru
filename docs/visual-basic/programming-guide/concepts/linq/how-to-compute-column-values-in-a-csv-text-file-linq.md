@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как вычислить значения столбцов в текстовом файле CSV (LINQ) (Visual Basic)
 title: Практическое руководство. Вычисление значений столбцов в текстовом CSV-файле (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
-ms.openlocfilehash: 679d53787b1392181696c05e0327ca1b1b910015
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f2bed49cf69d812659aae0cee398a735b3b42dbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357508"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484188"
 ---
 # <a name="how-to-compute-column-values-in-a-csv-text-file-linq-visual-basic"></a>Руководство. Вычисление значений столбцов в текстовом файле CSV (LINQ) (Visual Basic)
 
@@ -147,7 +148,7 @@ End Class
 
 Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [LINQ и строки (Visual Basic)](linq-and-strings.md)
 - [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

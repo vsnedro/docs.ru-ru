@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о процедурах см. в статье Visual Basic
 title: Процедуры
 ms.date: 04/28/2017
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structured code [Visual Basic], procedures
 - procedures
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
-ms.openlocfilehash: 926d2dcc7f29102457d5ed9632e7455f8f0c7b96
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: faff01163511d71f6dc5c6fd540b292e1dea72fb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071330"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475153"
 ---
 # <a name="procedures-in-visual-basic"></a>Процедуры в Visual Basic
 
@@ -67,7 +68,7 @@ ms.locfileid: "91071330"
   
 - После разработки процедур для использования в одной программе их можно использовать в других программах без изменений или с небольшими изменениями. Это помогает избежать дублирования кода.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание процедуры](./how-to-create-a-procedure.md)
 - [Подпрограммы](./sub-procedures.md)

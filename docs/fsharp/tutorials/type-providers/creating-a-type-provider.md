@@ -2,12 +2,12 @@
 title: Учебник. Создание поставщика типов
 description: 'Узнайте, как создавать собственные поставщики типов F # в F # 3,0, изучив несколько поставщиков простых типов, чтобы продемонстрировать основные понятия.'
 ms.date: 11/04/2019
-ms.openlocfilehash: 65cb9616f66b5850135dbfcdd9b9a9dad30421de
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 803b6ea141ed4404daf5daccd1a53212d8b42234
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739702"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468308"
 ---
 # <a name="tutorial-create-a-type-provider"></a>Учебник. Создание поставщика типов
 
@@ -15,13 +15,13 @@ ms.locfileid: "96739702"
 
 Экосистема F # содержит ряд поставщиков типов для часто используемых служб Интернет-и корпоративных данных. Пример:
 
-- [FSharp. Data](https://fsharp.github.io/FSharp.Data/) включает поставщики типов для форматов документов JSON, XML, CSV и HTML.
+- FSharp. Data включает поставщики типов для форматов документов JSON, XML, CSV и HTML.
 
 - [Дескриптора SqlProvider](https://fsprojects.github.io/SQLProvider/) предоставляет строго типизированный доступ к базам данных SQL с помощью сопоставления объектов и запросов LINQ F # к этим источникам данных.
 
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) имеет набор поставщиков типов для проверки внедрения T-SQL во время компиляции в F#.
 
-- [FSharp. Data. TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) — это старый набор поставщиков типов для использования только с .NET Frameworkным программированием для доступа к службам данных SQL, Entity Framework, ODATA и WSDL.
+- [FSharp. Data. TypeProviders](https://fsprojects.github.io/FSharp.Data.TypeProviders/) — это старый набор поставщиков типов для использования только с платформа .NET Frameworkным программированием для доступа к службам данных SQL, Entity Framework, ODATA и WSDL.
 
 При необходимости можно создавать пользовательские поставщики типов или ссылаться на поставщики типов, созданные другими пользователями. Например, в Организации может быть служба данных, предоставляющая большое и увеличивающееся количество именованных наборов данных, каждый из которых имеет собственную стабильную схему данных. Можно создать поставщик типов, который считывает схемы и представляет текущие наборы данных программисту строго типизированным способом.
 
@@ -1136,7 +1136,7 @@ devenv /debugexe fsc.exe script.fsx
 
   Можно использовать ведение журнала печати в stdout.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поставщики типов](index.md)
 - [Пакет SDK поставщика типов](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

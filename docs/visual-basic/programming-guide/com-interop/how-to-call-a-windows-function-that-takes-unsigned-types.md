@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вызвать функцию Windows, которая принимает неподписанные типы (Visual Basic)
 title: Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - data types [Visual Basic], numeric
 - unsigned types [Visual Basic], using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.openlocfilehash: 5b78c808de4a16060d37844ad0f17e89fa6f6d84
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 45851e22db88b9d35e5315398fb4cdbc2a7b920c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90548082"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475647"
 ---
 # <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>Практическое руководство. Вызов функции Windows, принимающей значение беззнакового типа (Visual Basic)
 
@@ -70,7 +71,7 @@ ms.locfileid: "90548082"
     ```
 
     > [!CAUTION]
-    > `UInteger` `ULong` `UShort` Типы данных,, и `SByte` не являются частью [независимость от языка и независимых от языка компонентов](../../../standard/language-independence-and-language-independent-components.md) (CLS), поэтому CLS-совместимый код не может использовать компонент, который их использует.
+    > `UInteger` `ULong` `UShort` Типы данных,, и `SByte` не являются частью [независимость от языка и Language-Independent компонентов](../../../standard/language-independence-and-language-independent-components.md) (CLS), поэтому CLS-совместимый код не может использовать компонент, который их использует.
 
     > [!IMPORTANT]
     > Вызов неуправляемого кода, например программного интерфейса Windows (API), предоставляет ваш код потенциальным угрозам безопасности.
@@ -78,7 +79,7 @@ ms.locfileid: "90548082"
     > [!IMPORTANT]
     > Для вызова API Windows требуется разрешение неуправляемого кода, которое может повлиять на его выполнение в ситуациях частичного доверия. Дополнительные сведения см. в разделе <xref:System.Security.Permissions.SecurityPermission> и [разрешения на доступ к коду](/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](../../language-reference/data-types/index.md)
 - [Тип данных Integer](../../language-reference/data-types/integer-data-type.md)

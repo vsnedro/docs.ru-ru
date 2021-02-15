@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о главной процедуре см. в Visual Basic
 title: Основная процедура
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - Main method [Visual Basic]
 - main function
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-ms.openlocfilehash: d6708ee13963aaae43a73b159032f64f0fffac10
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b25190ef216fe4219923a27d6bbe0acff4536685
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072214"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432810"
 ---
 # <a name="main-procedure-in-visual-basic"></a>Процедура Main в Visual Basic
 
-Каждое приложение Visual Basic должно содержать процедуру с именем `Main` . Эта процедура выступает в качестве начальной точки и общего управления для приложения. .NET Framework вызывает процедуру, `Main` когда она загрузила приложение и готова передать ему управление. Если вы не создаете Windows Forms приложение, необходимо написать `Main` процедуру для приложений, выполняемых самостоятельно.
+Каждое приложение Visual Basic должно содержать процедуру с именем `Main` . Эта процедура выступает в качестве начальной точки и общего управления для приложения. Платформа .NET Framework вызывает процедуру, `Main` когда она загрузила приложение и готова передать ему управление. Если вы не создаете Windows Forms приложение, необходимо написать `Main` процедуру для приложений, выполняемых самостоятельно.
 
  `Main` содержит код, который выполняется в первую очередь. В `Main` можно определить, какая форма должна загружаться первым при запуске программы, определить, выполняется ли в системе копия приложения, установить набор переменных для приложения или открыть базу данных, требуемую для приложения.
 
@@ -111,7 +112,7 @@ ms.locfileid: "91072214"
     End Module
     ```
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
 - <xref:System.Array.Length%2A>

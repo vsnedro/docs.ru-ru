@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: исходная папка не существует'
 title: Исходная папка не существует
 ms.date: 07/20/2015
 ms.assetid: c891d006-b721-4d93-b57d-ce51d91fca00
-ms.openlocfilehash: 8dc4fa80c4328cbeea5c63eb110c62b988da91c4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: afae118614fca4b80ad34bf339187d64b3c680e1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086560"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430746"
 ---
 # <a name="the-source-folder-does-not-exist"></a>Исходная папка не существует
 
@@ -17,7 +18,7 @@ ms.locfileid: "91086560"
   
 - Убедитесь, что вы используете правильный путь, особенно если применяются относительные пути.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Анализ путей к файлам](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
 - [Чтение из файлов](../developing-apps/programming/drives-directories-files/reading-from-files.md)

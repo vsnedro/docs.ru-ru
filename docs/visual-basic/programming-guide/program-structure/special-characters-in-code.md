@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: специальные символы в коде (Visual Basic)'
 title: Специальные символы в коде
 ms.date: 07/20/2015
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - exclamation point operator (!)
 - Visual Basic code, special characters
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
-ms.openlocfilehash: 60f815f0d30fa785f4a2166db5a041d3851aa954
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4afadc13cea6cc41480cb1674b7ff6f31629b569
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097830"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468256"
 ---
 # <a name="special-characters-in-code-visual-basic"></a>Специальные символы в коде (Visual Basic)
 
@@ -61,7 +62,7 @@ ms.locfileid: "91097830"
   
 ## <a name="concatenation"></a>Объединение  
 
- Используйте `&` оператор для *объединения*или связывания строк. Не путайте его с `+` оператором, который добавляет вместе числовые значения. При использовании `+` оператора для сцепления с числовыми значениями можно получить неверные результаты. В следующем примере это показано.  
+ Используйте `&` оператор для *объединения* или связывания строк. Не путайте его с `+` оператором, который добавляет вместе числовые значения. При использовании `+` оператора для сцепления с числовыми значениями можно получить неверные результаты. В следующем примере это показано.  
   
  [!code-vb[VbVbcnConventions#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#13)]  
   
@@ -94,7 +95,7 @@ ms.locfileid: "91097830"
   
  `!`Символ также используется в качестве `Single` символа типа.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Соглашения о структуре программы и коде](program-structure-and-code-conventions.md)
 - [Символы типов](../language-features/data-types/type-characters.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о типах данных в Visual Basic
 title: Типы данных
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Visual Basic code, data types
 - data types [Visual Basic], improving speed with
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
-ms.openlocfilehash: 8cb9642c1d7e6876030efe17f5c09e4888700a24
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f431b501b40d2fafd4422b1f3fa1ea3a2ebf56fb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095594"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483941"
 ---
 # <a name="data-types-in-visual-basic"></a>Типы данных в Visual Basic
 
@@ -36,7 +37,7 @@ ms.locfileid: "91095594"
   
  См. список [типов данных](../../../language-reference/data-types/index.md) Visual Basic  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Символы типов](type-characters.md)
 - [Простые типы данных](elementary-data-types.md)
