@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: TextFieldParser не поддерживает разделители, содержащие endLine символы'
 title: TextFieldParser не поддерживает разделители, содержащие символы конца строки
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_EndCharsInDelimiter
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
-ms.openlocfilehash: 9282d061e2c93d408855557e3b260935310a7c52
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c1b18875f3003cb6b1a7252f71098faa416b80cb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078493"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431006"
 ---
 # <a name="textfieldparser-does-not-support-delimiters-that-contain-endline-characters"></a>TextFieldParser не поддерживает разделители, содержащие символы конца строки
 
@@ -19,7 +20,7 @@ ms.locfileid: "91078493"
   
 - Укажите правильный разделитель.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Свойство TextFieldParser.Delimiters](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A)
 - [Метод TextFieldParser.SetDelimiters](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A)

@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: Условная компиляция в Visual Basic'
 title: Условная компиляция
 ms.date: 07/20/2015
 helpviewer_keywords:
 - conditional compilation [Visual Basic], about conditional compilation
 - compilation [Visual Basic], conditional
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
-ms.openlocfilehash: e59296882edc018259816c73b6ae861b3b296783
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e9cb8a5af4dfbf2ffadef8edd8f6583614188391
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098973"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476141"
 ---
 # <a name="conditional-compilation-in-visual-basic"></a>Условная компиляция в Visual Basic
 
-В *условной компиляции*определенные блоки кода в программе компилируются выборочно, а другие игнорируются.  
+В *условной компиляции* определенные блоки кода в программе компилируются выборочно, а другие игнорируются.  
   
  Например, может потребоваться написать инструкции отладки, которые сравнивают скорость различных подходов к одной задаче программирования, или вы можете локализовать приложение для нескольких языков. Операторы условной компиляции предназначены для запуска во время компиляции, а не во время выполнения.  
   

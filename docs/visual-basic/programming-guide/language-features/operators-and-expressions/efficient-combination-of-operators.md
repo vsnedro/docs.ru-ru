@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: эффективная комбинация операторов (Visual Basic)'
 title: Эффективное сочетание операторов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - parentheses [Visual Basic], complex expressions
 - numeric expressions
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
-ms.openlocfilehash: 9ba6be8e1dd03c0589f712b0e9b39258953cd223
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a4d2d0c1caeea95dd8d34b2033a398d26bcf63ef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077089"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476271"
 ---
 # <a name="efficient-combination-of-operators-visual-basic"></a>Эффективное сочетание операторов (Visual Basic)
 
@@ -48,7 +49,7 @@ ms.locfileid: "91077089"
   
  В предыдущем примере `z + 2` вычисляется первым, а затем другими выражениями в скобках. Возведение в степень, которое обычно имеет более высокий приоритет, чем сложение или умножение, в этом примере вычисляется последним, так как другие выражения заключаются в круглые скобки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Арифметические операторы в Visual Basic](arithmetic-operators.md)
 - [Comparison Operators in Visual Basic](comparison-operators.md)

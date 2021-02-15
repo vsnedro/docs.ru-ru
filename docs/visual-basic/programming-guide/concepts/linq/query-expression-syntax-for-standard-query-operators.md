@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)
 title: Синтаксис выражений запроса для стандартных операторов запроса
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
-ms.openlocfilehash: 57a08f6540cbf3e091ee1b2e202e0e181487e3be
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c891482506f45278d9ecbe037a516b3de3fe97b7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090252"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477493"
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-visual-basic"></a>Синтаксис выражений запросов для стандартных операторов запросов (Visual Basic)
 
@@ -44,7 +45,7 @@ ms.locfileid: "91090252"
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`Order By …, … Descending`<br /><br /> (Дополнительные сведения см. в разделе [предложение ORDER BY](../../../language-reference/queries/order-by-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (Дополнительные сведения см. в разделе [предложение WHERE](../../../language-reference/queries/where-clause.md).)|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>

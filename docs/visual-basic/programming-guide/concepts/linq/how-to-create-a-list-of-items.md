@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о том, как создать список элементов.
 title: Практическое руководство. Создание списка элементов
 ms.date: 07/20/2015
 helpviewer_keywords:
 - list [LINQ in Visual Basic]
 - objects [Visual Basic], list of items
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
-ms.openlocfilehash: 6b1adea2aa8b51a8cb5d863fd1eb2d5adb0274c5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 88eba45ed2f70c940de41fc33ccdd38d97286bf2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100234"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483707"
 ---
 # <a name="how-to-create-a-list-of-items"></a>Практическое руководство. Создание списка элементов
 
@@ -22,7 +23,7 @@ ms.locfileid: "91100234"
   
  [!code-vb[VbLINQHowToCreateList#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowToCreateList/VB/Class1.vb#1)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Пошаговое руководство. Написание запросов в Visual Basic](walkthrough-writing-queries.md)
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как вызвать обработчик событий в Visual Basic
 title: Вызов обработчика событий
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 no-loc:
 - WithEvents
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
-ms.openlocfilehash: 3762c79dd3d883ae2ccfe76b335cf98ac87d4246
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 7e65b36d392211be533bb4881658b1cdb8057d5d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89464965"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476258"
 ---
 # <a name="how-to-call-an-event-handler-in-visual-basic"></a>Вызов обработчика событий в Visual Basic
 
@@ -27,7 +28,7 @@ ms.locfileid: "89464965"
 
 Можно связать более одного обработчика событий с одним и тем же событием. В некоторых случаях можно отменить связь обработчика с событием. Дополнительные сведения см. в статье [Events (Visual Basic)](../events/index.md) (События в Visual Basic).
 
-## <a name="call-an-event-handler-using-no-loc-texthandles-and-no-locwithevents"></a>Вызовите обработчик событий с помощью :::no-loc text="Handles"::: и WithEvents
+## <a name="call-an-event-handler-using-no-loc-texthandles-and-withevents"></a>Вызовите обработчик событий с помощью :::no-loc text="Handles"::: и WithEvents
 
 1. Убедитесь, что событие объявлено с помощью [оператора Event](../../../language-reference/statements/event-statement.md).
 
@@ -55,7 +56,7 @@ ms.locfileid: "89464965"
 
     Можно отменить связь между обработчиком событий и событием, выполнив [оператор RemoveHandler](../../../language-reference/statements/removehandler-statement.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](index.md)
 - [Подпрограммы](sub-procedures.md)

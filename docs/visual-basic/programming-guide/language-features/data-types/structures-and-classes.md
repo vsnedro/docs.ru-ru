@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о структурах и классах (Visual Basic)
 title: Структуры и классы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - structures [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-ms.openlocfilehash: e7ca5b9d55611eafad88517e71f9807fe2aa4416
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 129948bd9a16309ffea5b1e4c690d8883c450b74
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086222"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430629"
 ---
 # <a name="structures-and-classes-visual-basic"></a>Структуры и классы (Visual Basic)
 
@@ -90,7 +91,7 @@ Visual Basic объединяет синтаксис структур и кла�
   
 - **Проверке.** Проверка на равенство двух структур должна выполняться с помощью тестового элемента. С помощью метода можно сравнивать две переменные объекта <xref:System.Object.Equals%2A> . <xref:System.Object.Equals%2A> Указывает, указывают ли две переменные на один и тот же экземпляр.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Составные типы данных](composite-data-types.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как определить класс, который может предоставлять одинаковые функциональные возможности для разных типов данных (Visual Basic)
 title: Практическое руководство. Определение класса, реализующего одинаковую функциональность для разных типов данных
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
-ms.openlocfilehash: 268daf333dc5463e5436304cec188a9e6d477166
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 14be6c748ccb311c6a2974e8947b01a1c55a90b6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077128"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469751"
 ---
 # <a name="how-to-define-a-class-that-can-provide-identical-functionality-on-different-data-types-visual-basic"></a>Практическое руководство. Определение класса, реализующего одинаковую функциональность для различных типов данных (Visual Basic)
 
@@ -75,7 +76,7 @@ ms.locfileid: "91077128"
   
      [!code-vb[VbVbalrDataTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#8)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Generic Types in Visual Basic](generic-types.md)

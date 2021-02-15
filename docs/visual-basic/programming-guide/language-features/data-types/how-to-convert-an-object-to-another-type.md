@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье как преобразовать объект в другой тип в Visual Basic
 title: Практическое руководство. Преобразование объекта в другой тип
 ms.date: 07/20/2015
 helpviewer_keywords:
 - objects [Visual Basic], converting
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
-ms.openlocfilehash: b89e996324d9ec22fc243b59502f3d36fefdee60
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d6840cfd440483720f8ca9a0fa0140c3727a8688
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090226"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484032"
 ---
 # <a name="how-to-convert-an-object-to-another-type-in-visual-basic"></a>Практическое руководство. Преобразование объекта к другому типу в Visual Basic
 
@@ -36,7 +37,7 @@ End Sub
   
 - ссылка на пространство имен <xref:System?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Object>
 - [Преобразование типов в Visual Basic](type-conversions.md)

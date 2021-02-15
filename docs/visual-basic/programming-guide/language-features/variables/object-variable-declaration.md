@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объявление переменной объекта (Visual Basic)'
 title: Объявление объектной переменной
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - declaring classes [Visual Basic]
 - late binding [Visual Basic]
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
-ms.openlocfilehash: 74b1401df3dbb2d744de74734d10cbcd92e9689e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 853f9e775976022e52121c164884fd91ef0a831c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077050"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463719"
 ---
 # <a name="object-variable-declaration-visual-basic"></a>Объявление переменных объектов (Visual Basic)
 
@@ -131,13 +132,13 @@ Dim anyForm As System.Windows.Forms.Form
   
  Все члены базового класса доступны для производных классов, но дополнительные члены производного класса недоступны для базового класса.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объектные переменные](object-variables.md)
 - [Присваивание объектных переменных](object-variable-assignment.md)
 - [Значения объектных переменных](object-variable-values.md)
 - [Практическое руководство. Объявление объектной переменной в Visual Basic и присвоение ей объекта](how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
 - [Практическое руководство. Доступ к членам объекта](how-to-access-members-of-an-object.md)
-- [Оператор New](../../../language-reference/operators/new-operator.md)
+- [Создание оператора](../../../language-reference/operators/new-operator.md)
 - [Оператор Option Strict](../../../language-reference/statements/option-strict-statement.md)
 - [Вывод локального типа](local-type-inference.md)

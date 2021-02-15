@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как определить имена и типы свойств в объявлениях анонимного типа (Visual Basic)
 title: Практическое руководство. Выведение имен свойств и типов в объявлениях анонимных типов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic], inferring property names and types
 - inferring property types [Visual Basic]
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
-ms.openlocfilehash: 9ebbbe9d2e6d36f5ab2bc7f7c916d18c9240a06d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e4bff8cd8dd879b97618a3bc69e1eaf1c7c269b7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404892"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483902"
 ---
 # <a name="how-to-infer-property-names-and-types-in-anonymous-type-declarations-visual-basic"></a>Практическое руководство. Выведение имен свойств и типов в объявлениях анонимных типов (Visual Basic)
 
@@ -131,4 +132,4 @@ ms.locfileid: "84404892"
 - [Инициализаторы объектов: именованные и анонимные типы](object-initializers-named-and-anonymous-types.md)
 - [Вывод локального типа](../variables/local-type-inference.md)
 - [Анонимные типы](anonymous-types.md)
-- [Клавиша](../../../language-reference/modifiers/key.md)
+- [Ключ](../../../language-reference/modifiers/key.md)
