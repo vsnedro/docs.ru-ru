@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: общие задачи, выполняемые с помощью операторов Visual Basic'
 title: Общие задачи, выполняемые с помощью операторов Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - operators [Visual Basic], comparison
 - operators [Visual Basic], short-circuiting logical
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.openlocfilehash: a8a8d7898e52077fef47b91172e34ad50d7f54e7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5103241c7c92ffe7264178e9abb6a56ba03d4b52
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075217"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465266"
 ---
 # <a name="common-tasks-performed-with-visual-basic-operators"></a>Общие задачи, выполняемые с помощью операторов Visual Basic
 
@@ -83,7 +84,7 @@ ms.locfileid: "91075217"
 |Выполнение побитового исключающего логического сложения для двух целочисленных значений|[Оператор Xor](../../../language-reference/operators/xor-operator.md)|  
 |Выполнение побитового логического отрицания в целочисленном значении|[Оператор Not](../../../language-reference/operators/not-operator.md)|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Операторы и выражения](index.md)
 - [Список операторов, сгруппированных по функциональному назначению](../../../language-reference/operators/operators-listed-by-functionality.md)

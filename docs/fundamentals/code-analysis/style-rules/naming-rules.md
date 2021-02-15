@@ -16,22 +16,24 @@ helpviewer_keywords:
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
-ms.openlocfilehash: 1fce275204b729b4d23729ca432e06a5a249620d
-ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
+ms.openlocfilehash: df2cbc8299d853b5730bc39eb25c6f97b6575655
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99065139"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429212"
 ---
 # <a name="naming-rules"></a>Правила именования
 
-В `.editorconfig` файле можно определить **правила именования** , определяющие, каким образом элементы кода языка программирования .NET &mdash; , такие как классы, свойства и методы, &mdash; должны называться. Например, можно указать, что открытые члены должны иметь прописные буквы или что закрытые поля должны начинаться с `_` .
+В `.editorconfig` файле можно определить **правила именования** , указывающие и принудительно определяющие, каким образом элементы кода языка программирования .NET &mdash; , такие как классы, свойства и методы, &mdash; должны называться. Например, можно указать, что открытые члены должны иметь прописные буквы или что закрытые поля должны начинаться с `_` .
 
 Правило именования имеет три компонента:
 
-* **Группа символов** группа &mdash; символов, к которой применяется правило.
-* **Стиль именования** , связываемый с правилом.
+* **Группа символов** , к которой применяется правило, например открытые члены или закрытые поля.
+* **Стиль именования** , связываемый с правилом, например, имя должно быть прописным или начинаться с символа подчеркивания.
 * Уровень серьезности для применения соглашения.
+
+Во-первых, необходимо указать группу символов и стиль именования и присвоить каждому из них заголовок. Затем необходимо указать правило именования, которое связывает все вместе.
 
 ## <a name="general-syntax"></a>Общий синтаксис
 
@@ -90,8 +92,8 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 | Свойство | Описание | Допустимые значения | Обязательно |
 | -- | -- | -- | -- |
 | `applicable_kinds` | Виды символов в группе <sup>1</sup> | `*` (используйте это значение, чтобы указать все символы)<br/>`namespace`<br/>`class`<br/>`struct`<br/>`interface`<br/>`enum`<br/>`property`<br/>`method`<br/>`field`<br/>`event`<br/>`delegate`<br/>`parameter`<br/>`type_parameter`<br/>`local`<br/>`local_function` | Да |
-| `applicable_accessibilities` | Уровни доступности символов в группе | `*` (используйте это значение, чтобы указать все уровни доступа)<br/>`public`<br/>`internal` или `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` или `protected_friend`<br/>`private_protected`<br/>`local` (для символов, определенных в методе) | Да |
-| `required_modifiers` | Сопоставлять только символы со _всеми_ указанными модификаторами <sup>2</sup> | `abstract` или `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` или `shared` <sup>3</sup> | Нет |
+| `applicable_accessibilities` | Уровни доступности символов в группе | `*` (используйте это значение, чтобы указать все уровни доступа)<br/>`public`<br/>`internal` либо `friend`<br/>`private`<br/>`protected`<br/>`protected_internal` или `protected_friend`<br/>`private_protected`<br/>`local` (для символов, определенных в методе) | Да |
+| `required_modifiers` | Сопоставлять только символы со _всеми_ указанными модификаторами <sup>2</sup> | `abstract` либо `must_inherit`<br/>`async`<br/>`const`<br/>`readonly`<br/>`static` или `shared` <sup>3</sup> | Нет |
 
 **Примечания.**
 
@@ -101,7 +103,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 ## <a name="naming-style-properties"></a>Именование свойств стиля
 
-Стиль именования определяет соглашения, которые необходимо применить к правилу. Например:
+Стиль именования определяет соглашения, которые необходимо применить к правилу. Пример:
 
 * С прописной буквы `PascalCase`
 * Начинается с `m_`

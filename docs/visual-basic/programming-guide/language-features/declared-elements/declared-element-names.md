@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объявленные имена элементов (Visual Basic)'
 title: Declared Element Names
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - identifiers [Visual Basic], elements
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-ms.openlocfilehash: 327a18644c1dc1d8dae59016b8e30600357d2ca9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ba0a6d6b236c0c4e9ce81c37a1cca4e709cc5588
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086183"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425689"
 ---
 # <a name="declared-element-names-visual-basic"></a>Имена объявленных типов (Visual Basic)
 
@@ -65,7 +66,7 @@ ms.locfileid: "91086183"
  `xyz$wv`  
   
 > [!CAUTION]
-> Имена элементов, начинающиеся с символа подчеркивания ( `_` ), не являются частью [независимость от языка и независимых от языка компонентов](../../../../standard/language-independence-and-language-independent-components.md) (CLS), поэтому CLS-совместимый код не может использовать компонент, определяющий такие имена. Однако символ подчеркивания в любой другой должности в имени элемента является CLS-совместимым.  
+> Имена элементов, начинающиеся с символа подчеркивания ( `_` ), не являются частью [языковой независимости и Language-Independent компонентов](../../../../standard/language-independence-and-language-independent-components.md) (CLS), поэтому CLS-совместимый код не может использовать компонент, определяющий такие имена. Однако символ подчеркивания в любой другой должности в имени элемента является CLS-совместимым.  
   
 ### <a name="name-length-guidelines"></a>Рекомендации по длине имени  
 
@@ -95,7 +96,7 @@ ms.locfileid: "91086183"
 
  Сравнение имен не зависит от языкового стандарта. Если два имени совпадают в одном языковом стандарте, они гарантированно будут соответствовать всем языкам.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объявленные элементы](index.md)
 - [Характеристики объявленных элементов](declared-element-characteristics.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вызвать процедуру оператора (Visual Basic).
 title: Практическое руководство. Вызов процедуры оператора
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: 0e88ff7b36535a709671a1f9b838f2b4488d1d37
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f58d12ac5e4c9071646073184f7824946c00b39b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075191"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472609"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>Практическое руководство. Вызов процедуры оператора (Visual Basic)
 
@@ -56,7 +57,7 @@ ms.locfileid: "91075191"
 
  Убедитесь, что используемый класс или структура определяет оператор, который вы хотите использовать.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора](./how-to-define-an-operator.md)

@@ -1,21 +1,22 @@
 ---
+description: Дополнительные сведения см. в статье как добавить пользовательские методы для запросов LINQ (Visual Basic).
 title: Как добавить пользовательские методы для запросов LINQ
 ms.date: 08/28/2020
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
-ms.openlocfilehash: 7d38a45263135fa10dc53dc0d09b8129838e78e6
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 62acf22a8be9986388233ee34121a97d65a87f43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89117783"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424532"
 ---
 # <a name="how-to-add-custom-methods-for-linq-queries-visual-basic"></a>Как добавить пользовательские методы для запросов LINQ (Visual Basic)
 
-Вы расширяете набор методов, используемых для запросов LINQ, добавляя методы расширения в <xref:System.Collections.Generic.IEnumerable%601> интерфейс. Например, в дополнение к стандартным операциям среднего или максимума для вычисления одного значения из последовательности значений создается настраиваемый агрегатный метод. Также создается метод, который работает как пользовательский фильтр или определенное преобразование данных для последовательности значений и возвращает новую последовательность. Примерами таких методов являются <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A> и <xref:System.Linq.Enumerable.Reverse%2A>.
+Вы можете расширить набор методов, которые можно использовать для запросов LINQ, путем добавления методов расширения в интерфейс <xref:System.Collections.Generic.IEnumerable%601>. Например, помимо стандартных операций вычисления среднего или максимального значения, можно создать настраиваемый метод агрегирования для вычисления одного значения на основе последовательности значений. Также можно создать метод, который работает как настраиваемый фильтр или особое преобразование данных для последовательности значений и возвращает новую последовательность. Примерами таких методов являются <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A> и <xref:System.Linq.Enumerable.Reverse%2A>.
 
 При расширении интерфейса <xref:System.Collections.Generic.IEnumerable%601> настраиваемые методы можно применять к любой перечислимой коллекции. Дополнительные сведения см. в разделе [Методы расширения](../../language-features/procedures/extension-methods.md).
 
-## <a name="adding-an-aggregate-method"></a>Добавление агрегатного метода
+## <a name="adding-an-aggregate-method"></a>Добавление метода агрегирования
 
 Метод агрегирования вычисляет одно значение на основе набора значений. LINQ реализует несколько методов агрегирования, включая <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Min%2A> и <xref:System.Linq.Enumerable.Max%2A>. Вы можете создать собственный метод агрегирования, добавив метод расширения в интерфейс <xref:System.Collections.Generic.IEnumerable%601>.
 
