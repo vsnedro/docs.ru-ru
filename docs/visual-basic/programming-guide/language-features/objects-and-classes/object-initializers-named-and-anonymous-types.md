@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: инициализаторы объектов: именованные и анонимные типы (Visual Basic)'
 title: 'Инициализаторы объектов: именованные и анонимные типы'
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - initializers [Visual Basic]
 - named types [Visual Basic]
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
-ms.openlocfilehash: 724407fed5bf90ed6e3e470cbabc9e42856cb99a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 47182653e74b16b9911f4b727eb1595bf3eceba6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087483"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455253"
 ---
 # <a name="object-initializers-named-and-anonymous-types-visual-basic"></a>Инициализаторы объектов: именованные и анонимные типы (Visual Basic)
 
@@ -132,11 +133,11 @@ ms.locfileid: "91087483"
   
      Дополнительные сведения о параметрах определения свойств в анонимных типах см. [в разделе как вывести имена и типы свойств в объявлениях анонимного типа](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Вывод локального типа](../variables/local-type-inference.md)
 - [Анонимные типы](anonymous-types.md)
 - [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Практическое руководство. Выведение имен свойств и типов в объявлениях анонимных типов](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
-- [Key](../../../language-reference/modifiers/key.md)
+- [Ключ](../../../language-reference/modifiers/key.md)
 - [Практическое руководство. Объявление объекта с помощью инициализатора объектов](how-to-declare-an-object-by-using-an-object-initializer.md)

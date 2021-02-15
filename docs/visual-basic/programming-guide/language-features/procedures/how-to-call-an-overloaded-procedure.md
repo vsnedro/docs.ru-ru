@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вызвать перегруженную процедуру (Visual Basic).
 title: Практическое руководство. Вызов перегруженной процедуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure calls [Visual Basic], overloaded
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
-ms.openlocfilehash: 68b8a9898cba846b63ed8ce9d8329516f12e90cb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6a67a598bd4a42964fd8fc01bc22b1b919f5e2a9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075178"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472596"
 ---
 # <a name="how-to-call-an-overloaded-procedure-visual-basic"></a>Практическое руководство. Вызов перегруженной процедуры (Visual Basic)
 
@@ -33,7 +34,7 @@ ms.locfileid: "91075178"
   
      [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: необязательные параметры (Visual Basic)'
 title: Необязательные параметры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], optional
 - optional arguments [Visual Basic], and named arguments
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
-ms.openlocfilehash: 73a51ab65a8ea4c38b6fd6737279fb19fb1cfe73
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 048f940f25fc05a66245e267ff23dc9845fcafdd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071863"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436140"
 ---
 # <a name="optional-parameters-visual-basic"></a>Необязательные параметры (Visual Basic)
 
@@ -63,7 +64,7 @@ Sub name(argument 1, , , argument 4)
 
  Другой способ определения процедуры с необязательными параметрами состоит в использовании перегрузки. Если имеется один необязательный параметр, то можно определить две перегруженные версии процедуры, одна принимает параметр, а другая — нет. Такой подход становится более сложным с увеличением числа необязательных параметров. Однако, его преимущество заключается в том, что он позволяет точно знать, все ли необязательные аргументы заданы в вызывающей программе.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)

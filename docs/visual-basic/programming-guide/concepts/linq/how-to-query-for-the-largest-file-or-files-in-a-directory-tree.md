@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как запросить самый крупный файл или файлы в дереве каталогов (LINQ) (Visual Basic)
 title: Практическое руководство. Запрос самого большого файла или файлов в дереве папок (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
-ms.openlocfilehash: 9ae4a1442a0ecbb11d37b56302bec6a387c662aa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5ceebd94ed74f9df05ad8f610d1cc79d6eb45b83
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078272"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435074"
 ---
 # <a name="how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq-visual-basic"></a>Практическое руководство. Запрос самого большого файла или файлов в дереве папок (LINQ) (Visual Basic)
 
@@ -123,7 +124,7 @@ End Module
 
 Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)
 - [LINQ и каталоги файлов (Visual Basic)](linq-and-file-directories.md)

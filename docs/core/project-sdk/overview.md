@@ -4,12 +4,12 @@ titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: 2adb0713fabda142d071425a2affe66cc9d4c172
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189672"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506400"
 ---
 # <a name="net-project-sdks"></a>Пакеты SDK для проектов .NET
 
@@ -131,6 +131,30 @@ ms.locfileid: "98189672"
   ```
 
   Если вы отключите только стандартные маски `Compile`, обозреватель решений в Visual Studio будет по-прежнему отображать элементы \*.cs в составе проекта, включая их в виде элементов `None`. Чтобы отключить неявную стандартную маску `None`, задайте свойству `EnableDefaultNoneItems` значение `false`.
+
+## <a name="implicit-package-references"></a>Неявные ссылки на пакет
+
+При использовании .NET Core 1.0–2.2 или .NET Standard 1.0–2.0 пакет SDK для .NET добавляет неявные ссылки на определенные *метапакеты*. Метапакет — это пакет на основе платформы, который состоит только из зависимостей от других пакетов. Теперь неявные ссылки на метапакеты указываются в зависимости от целевой платформы, указанной в свойстве [TargetFramework](msbuild-props.md#targetframework) или [TargetFrameworks](msbuild-props.md#targetframeworks) файла проекта.
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp2.1</TargetFramework>
+</PropertyGroup>
+```
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+При необходимости можно отключить неявные ссылки на пакеты с помощью свойства [DisableImplicitFrameworkReferences](msbuild-props.md#disableimplicitframeworkreferences) и добавить явные ссылки только на необходимые платформы или пакеты.
+
+Рекомендации
+
+- При использовании .NET Framework, .NET Core 1.0–2.2 или .NET Standard 1.0–2.0 не добавляйте явную ссылку на метапакеты `Microsoft.NETCore.App` или `NETStandard.Library` через элемент `<PackageReference>` в файле проекта. Для проектов .NET Core 1.0–2.2 и .NET Standard 1.0–2.0 ссылка на эти метапакеты неявно присутствует. Если при использовании проектов .NET Framework и пакета NuGet на основе .NET Standard требуется любая версия `NETStandard.Library`, NuGet автоматически устанавливает ее.
+- Если при использовании .NET Core 1.0–2.2 нужна определенная версия среды выполнения, вместо ссылки на метапакет следует использовать свойство `<RuntimeFrameworkVersion>` в проекте (например, `1.0.4`). Например, может потребоваться специальная версия LTS среды выполнения 1.0.0, если вы используете [автономные развертывания](../deploying/index.md#publish-self-contained).
+- Если при использовании .NET Standard 1.0–2.0 вам нужна конкретная версия метапакета `NETStandard.Library`, можно использовать свойство `<NetStandardImplicitPackageVersion>` и установить требуемую версию.
 
 ## <a name="build-events"></a>События сборки
 

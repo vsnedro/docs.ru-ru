@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: создание настраиваемых атрибутов (Visual Basic)'
 title: Создание настраиваемых атрибутов
 ms.date: 07/20/2015
 ms.assetid: 5c9ef584-6c7c-496b-92a9-6e42f8d9ca28
-ms.openlocfilehash: 84b400c2fa1b2d4019eec32092f954d680e64978
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e989a4ce219609aafcec90d12f9d460681e98be9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400698"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437778"
 ---
 # <a name="creating-custom-attributes-visual-basic"></a>Creating Custom Attributes (Visual Basic) (Создание настраиваемых атрибутов (Visual Basic))
 

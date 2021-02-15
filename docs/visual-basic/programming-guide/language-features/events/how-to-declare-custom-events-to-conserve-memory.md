@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как объявить пользовательские события для экономии памяти (Visual Basic)
 title: Практическое руководство. Объявление пользовательских событий для экономии памяти
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - events [Visual Basic], custom
 - custom events [Visual Basic]
 ms.assetid: 87ebee87-260c-462f-979c-407874debd19
-ms.openlocfilehash: 78934e3e5ae7d5a3f5867c99a9f1db760c65ecbf
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7371ec3df41ad0efd4598e0902f6937881d1e1a2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075126"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460089"
 ---
 # <a name="how-to-declare-custom-events-to-conserve-memory-visual-basic"></a>Практическое руководство. Объявление пользовательских событий для экономии памяти (Visual Basic)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: рекомендации по перегрузке процедур (Visual Basic)'
 title: Вопросы, связанные с перегрузкой процедур
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - restrictions [Visual Basic], overloading procedures
 - procedures [Visual Basic], parameter lists
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
-ms.openlocfilehash: 6197fa4041a22944542b2657e35bc293a6e5c244
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ee6dc0ce23f0706f52ac58673d37d1b72936d2bc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075061"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472622"
 ---
 # <a name="considerations-in-overloading-procedures-visual-basic"></a>Вопросы, связанные с перегрузкой процедур (Visual Basic)
 
@@ -132,7 +133,7 @@ ms.locfileid: "91075061"
   
 - Компилятор не может сообщить об ошибке, если вызывающий код передает тип данных, который не поддерживает процедура.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)

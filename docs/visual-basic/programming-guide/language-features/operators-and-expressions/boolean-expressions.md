@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: логические выражения (Visual Basic)'
 title: Логические выражения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - operators [Visual Basic], Boolean
 - Visual Basic code, expressions
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
-ms.openlocfilehash: 51340bf95795d837c055df796424f3cad912adc7
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3b752e2146755e1272b261f32931e3022e8ef354
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085754"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465318"
 ---
 # <a name="boolean-expressions-visual-basic"></a>Логические выражения (Visual Basic)
 
@@ -51,7 +52,7 @@ ms.locfileid: "91085754"
   
  В предыдущем примере значение общего выражения зависит от значений выражений на каждой стороне `And` оператора. Если оба выражения имеют значение `True` , то общее выражение принимает значение `True` . Если любое из выражений имеет значение `False` , результатом вычисления всего выражения будет значение `False` .  
   
-## <a name="short-circuiting-operators"></a>Операторы сокращенного вычисления  
+## <a name="short-circuiting-operators"></a>Операторы Short-Circuiting  
 
  Логические операторы `AndAlso` и `OrElse` демонстрируют поведение, называемое *сокращенным вычислением*. Оператор сокращенного вычисления сначала вычисляет левый операнд. Если левый операнд определяет значение всего выражения, выполнение программы продолжается без вычисления правого выражения. Это показано в следующем примере.  
   
@@ -73,7 +74,7 @@ ms.locfileid: "91085754"
 
  Можно использовать круглые скобки для управления порядком вычисления логических выражений. Выражения, заключенные в круглые скобки, сначала оцениваются. Для нескольких уровней вложенности приоритет предоставляется самым глубоким вложенным выражениям. В круглых скобках вычисление продолжается в соответствии с правилами приоритета операторов. Дополнительные сведения см. [в разделе приоритет операторов в Visual Basic](../../../language-reference/operators/operator-precedence.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Логические и побитовые операторы в Visual Basic](logical-and-bitwise-operators.md)
 - [Сравнения значений](value-comparisons.md)
