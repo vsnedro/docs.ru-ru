@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Определение классов (Visual Basic)
 title: Определение классов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Terminate event [Visual Basic]
 - execution [Visual Basic], stopping
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
-ms.openlocfilehash: 646c6ce307131f3edba194af19920eade9c1753c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a97e04b92db3387966afa410d5697a05b482ae09
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84389118"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438792"
 ---
 # <a name="walkthrough-defining-classes-visual-basic"></a>Пошаговое руководство. Определение классов (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "84389118"
   
 ## <a name="to-define-a-class"></a>Определение класса
   
-1. Создайте проект, щелкнув **создать проект** в меню **файл** . Откроется диалоговое окно **Создание проекта** .  
+1. Создайте проект, щелкнув **создать проект** в меню **файл** . Откроется диалоговое окно **Новый проект** .  
   
 2. Выберите приложение Windows в списке шаблонов проектов Visual Basic, чтобы отобразить новый проект.  
   

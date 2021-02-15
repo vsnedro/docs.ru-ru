@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Общие сведения об атрибутах (Visual Basic)'
 title: Обзор атрибутов
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
-ms.openlocfilehash: a0a080d44796289cc3562803c84ec915dcedd314
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f25e69452f0af1c89af667619e673f8906704d1f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400710"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437726"
 ---
 # <a name="attributes-overview-visual-basic"></a>Общие сведения об атрибутах (Visual Basic)
 
@@ -112,7 +113,7 @@ Module: CLSCompliant(True)>
 
 В следующем списке перечислены несколько распространенных применений для атрибутов.
 
-- Указание для методов в веб-службах атрибута `WebMethod`, который обозначает, что метод должен вызываться по протоколу SOAP. Дополнительные сведения см. в разделе <xref:System.Web.Services.WebMethodAttribute>.
+- Указание для методов в веб-службах атрибута `WebMethod`, который обозначает, что метод должен вызываться по протоколу SOAP. Для получения дополнительной информации см. <xref:System.Web.Services.WebMethodAttribute>.
 
 - Описание способов упаковки параметров методов при взаимодействии с машинным кодом. Для получения дополнительной информации см. <xref:System.Runtime.InteropServices.MarshalAsAttribute>.
 
