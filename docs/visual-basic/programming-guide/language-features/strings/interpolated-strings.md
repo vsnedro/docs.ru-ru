@@ -1,12 +1,13 @@
 ---
+description: 'Дополнительные сведения: интерполяция строк (Visual Basic Reference)'
 title: Интерполированные строки
 ms.date: 10/31/2017
-ms.openlocfilehash: c427b48ce58a59ff3878f24f1989db6ac8c8239a
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c054401070079bdf85181619ef43c246feea5e18
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805282"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429666"
 ---
 # <a name="interpolated-strings-visual-basic-reference"></a>Строки с интерполяцией (Visual Basic ссылка)
 
@@ -30,7 +31,7 @@ Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours)
 $"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text> ..."
 ```
 
-Где:
+где:
 
 - *field-width* — это целое число со знаком, указывающее количество символов в поле. Если оно является положительным, поле выравнивается по правому краю, если оно отрицательное — по левому краю.
 

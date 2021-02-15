@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Инициализаторы коллекций (Visual Basic)
 title: Инициализаторы коллекций
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
-ms.openlocfilehash: 1d2d5adc7266faaa1636e568d6433429761eeaab
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: afae9278092934ead4572f16fb1ec4a29d631803
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414547"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475465"
 ---
 # <a name="collection-initializers-visual-basic"></a>Инициализаторы коллекций (Visual Basic)
 
@@ -85,7 +86,7 @@ ms.locfileid: "84414547"
 - [Коллекции](../../concepts/collections.md)
 - [Массивы](../arrays/index.md)
 - [Инициализаторы объектов: именованные и анонимные типы](../objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Оператор New](../../../language-reference/operators/new-operator.md)
+- [Создание оператора](../../../language-reference/operators/new-operator.md)
 - [Автоматически реализуемые свойства](../procedures/auto-implemented-properties.md)
 - [How to: Initialize an Array Variable in Visual Basic](../arrays/how-to-initialize-an-array-variable.md) (Практическое руководство. Инициализация переменной массива в Visual Basic)
 - [Вывод локального типа](../variables/local-type-inference.md)

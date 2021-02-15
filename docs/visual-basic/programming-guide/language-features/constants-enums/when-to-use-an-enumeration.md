@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: когда следует использовать перечисление (Visual Basic)'
 title: Когда следует использовать перечисление
 ms.date: 07/20/2015
 helpviewer_keywords:
 - enumerations [Visual Basic]
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
-ms.openlocfilehash: 7b1b269a5d28d89cd491bac88fbefd4547fdc3c3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a29d0e3bb8ac99baf5d43827a8b58701eddcfbdd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095633"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480743"
 ---
 # <a name="when-to-use-an-enumeration-visual-basic"></a>Когда следует использовать перечисление (Visual Basic)
 
@@ -39,7 +40,7 @@ ms.locfileid: "91095633"
 
  Visual Basic предоставляет ряд предопределенных перечислений, таких как `FirstDayOfWeek` и `MsgBoxResult` , для упрощения кода. Список этих элементов см. в разделе [константы и перечисления](../../../language-reference/constants-and-enumerations.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Объявление перечисления](how-to-declare-enumerations.md)
 - [Практическое руководство. Ссылка на элемент перечисления](how-to-refer-to-an-enumeration-member.md)

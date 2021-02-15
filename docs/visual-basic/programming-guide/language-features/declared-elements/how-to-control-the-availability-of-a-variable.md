@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как управлять доступностью переменной (Visual Basic).
 title: Практическое руководство. Управление доступностью переменной
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], access level
 - Protected keyword [Visual Basic], accessing variables
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
-ms.openlocfilehash: e6173a0eaa0bf84abb1979711c6df932533c5ce9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3fa21a804008f31da9003aa847752f749154d602
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086118"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429888"
 ---
 # <a name="how-to-control-the-availability-of-a-variable-visual-basic"></a>Практическое руководство. Управление доступностью переменной (Visual Basic)
 
@@ -90,11 +91,11 @@ Private numberForMeOnly As Integer
 
  Чем более ограниченный уровень доступа переменной, тем меньше вероятность того, что вредоносный код может неправильно использовать его.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Уровни доступа в Visual Basic](access-levels.md)
 - [Оператор Dim](../../../language-reference/statements/dim-statement.md)
-- [Открытый](../../../language-reference/modifiers/public.md)
-- [От](../../../language-reference/modifiers/protected.md)
+- [Общедоступная](../../../language-reference/modifiers/public.md)
+- [Защищенный](../../../language-reference/modifiers/protected.md)
 - [Friend](../../../language-reference/modifiers/friend.md)
 - [Частная](../../../language-reference/modifiers/private.md)

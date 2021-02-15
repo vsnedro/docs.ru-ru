@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: значения объектных переменных (Visual Basic)'
 title: Значения объектных переменных
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - data types [Visual Basic], object variable
 - variables [Visual Basic], object
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
-ms.openlocfilehash: 800b9754ce27cc6a494dd781d06f4bdca8a10e87
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3259a0b04ed629feea89c1a3e9dba69ed7d226f6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080235"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481679"
 ---
 # <a name="object-variable-values-visual-basic"></a>Значения объектных переменных (Visual Basic)
 
@@ -22,7 +23,7 @@ ms.locfileid: "91080235"
 
  Visual Basic предоставляет функции, возвращающие сведения о том `Object` , на что ссылается переменная, как показано в следующей таблице.  
   
-|Функция|Возвращает значение true, если объектная переменная ссылается на|  
+|Компонент|Возвращает значение true, если объектная переменная ссылается на|  
 |--------------|---------------------------------------------------|  
 |<xref:Microsoft.VisualBasic.Information.IsArray%2A>|Массив значений, а не одно значение|  
 |<xref:Microsoft.VisualBasic.Information.IsDate%2A>|Значение [типа данных Date](../../../language-reference/data-types/date-data-type.md) или строка, которая может быть интерпретирована как значение даты и времени|  
@@ -70,7 +71,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
 
  Можно объявить и использовать массив `Object` переменных. Это полезно, когда необходимо управлять множеством типов данных и классов объектов. Все элементы в массиве должны иметь один и тот же объявленный тип данных. Объявление этого типа данных как `Object` позволяет хранить объекты и экземпляры классов вместе с другими типами данных в массиве.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объектные переменные](object-variables.md)
 - [Объявление объектной переменной](object-variable-declaration.md)

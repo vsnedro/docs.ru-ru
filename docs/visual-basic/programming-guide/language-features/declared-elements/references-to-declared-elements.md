@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье ссылки на объявленные элементы (Visual Basic).
 title: References to Declared Elements
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - references [Visual Basic], declared elements
 - qualified names [Visual Basic]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
-ms.openlocfilehash: af5be47335b6d48bd6c0bccc30b8db15c9912807
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 75cc05381f01af00ac75995739647810fb7ff1d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085884"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471439"
 ---
 # <a name="references-to-declared-elements-visual-basic"></a>Ссылки на объявленные элементы (Visual Basic)
 
@@ -156,7 +157,7 @@ End Module
 
  Чтобы использовать [открытые](../../../language-reference/modifiers/public.md) элементы, определенные в другом проекте, необходимо сначала задать *ссылку* на сборку или библиотеку типов этого проекта. Чтобы задать ссылку, щелкните **Добавить ссылку** в меню **проект** или используйте параметр компилятора командной строки [-Reference (Visual Basic)](../../../reference/command-line-compiler/reference.md) .  
   
- Например, можно использовать объектную модель XML .NET Framework. Если задана ссылка на <xref:System.Xml> пространство имен, можно объявить и использовать любой из его классов, например <xref:System.Xml.XmlDocument> . В следующем примере используется функция <xref:System.Xml.XmlDocument>.  
+ Например, можно использовать объектную модель XML платформа .NET Framework. Если задана ссылка на <xref:System.Xml> пространство имен, можно объявить и использовать любой из его классов, например <xref:System.Xml.XmlDocument> . В следующем примере используется функция <xref:System.Xml.XmlDocument>.  
   
 ```vb  
 ' Assume this project has a reference to System.Xml  
@@ -198,14 +199,14 @@ Dim xDoc As xD.XmlDocument
   
 ## <a name="shadowing"></a>Удаленное управление  
 
- Если два программных элемента имеют одно и то же имя, один из них может скрыть или *затенить*другой. Затененный элемент недоступен для справки; Вместо этого, если в коде используется имя затененного элемента, компилятор Visual Basic разрешает его в элемент с тенью. Более подробное объяснение с примерами см. [в разделе теневая поддержка в Visual Basic](shadowing.md).  
+ Если два программных элемента имеют одно и то же имя, один из них может скрыть или *затенить* другой. Затененный элемент недоступен для справки; Вместо этого, если в коде используется имя затененного элемента, компилятор Visual Basic разрешает его в элемент с тенью. Более подробное объяснение с примерами см. [в разделе теневая поддержка в Visual Basic](shadowing.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Declared Element Names](declared-element-names.md)
 - [Характеристики объявленных элементов](declared-element-characteristics.md)
 - [Управление свойствами проектов и решений](/visualstudio/ide/managing-project-and-solution-properties)
 - [Переменные](../variables/index.md)
 - [Оператор Imports (пространство имен .NET и тип)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Оператор New](../../../language-reference/operators/new-operator.md)
-- [Открытый](../../../language-reference/modifiers/public.md)
+- [Создание оператора](../../../language-reference/operators/new-operator.md)
+- [Общедоступная](../../../language-reference/modifiers/public.md)

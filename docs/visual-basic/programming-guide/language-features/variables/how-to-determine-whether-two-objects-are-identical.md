@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как определить идентичность двух объектов (Visual Basic)
 title: Практическое руководство. Определение идентичности двух объектов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - objects [Visual Basic], comparing
 - object variables [Visual Basic], determining identity
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
-ms.openlocfilehash: 1bbc8083fcfb6f5ff0f4328c32b83a2e7218ecd6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 91f431b5a7e4cf51135c060ca0aebf1b3b968b25
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072279"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481900"
 ---
 # <a name="how-to-determine-whether-two-objects-are-identical-visual-basic"></a>Практическое руководство. Определение идентичности двух объектов (Visual Basic)
 
@@ -53,7 +54,7 @@ ms.locfileid: "91072279"
   
  `objA identical to objC? True`  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Object Data Type](../../../language-reference/data-types/object-data-type.md)
 - [Объектные переменные](object-variables.md)

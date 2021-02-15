@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. шифрование и расшифровка строк в Visual Basic
 title: Шифрование и расшифровка строк
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - decryption [Visual Basic], strings
 - strings [Visual Basic], decrypting
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
-ms.openlocfilehash: e0e3fc332bf9430b1fa56dbb7630f849d3a29c2e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: afc1eeaec85b2e430aead7f16401289b6e2e9e49
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072409"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471088"
 ---
 # <a name="walkthrough-encrypting-and-decrypting-strings-in-visual-basic"></a>Пошаговое руководство. Шифрование и расшифровка строк в Visual Basic
 
@@ -75,7 +76,7 @@ ms.locfileid: "91072409"
   
      При тестировании приложения Обратите внимание, что оно не будет расшифровывать данные, если указать неправильный пароль.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Security.Cryptography>
 - <xref:System.Security.Cryptography.DESCryptoServiceProvider>

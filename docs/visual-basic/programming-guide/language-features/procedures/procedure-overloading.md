@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о перегрузке процедур (Visual Basic)
 title: Перегрузка процедур
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - procedure overloading
 - procedures [Visual Basic], parameter lists
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
-ms.openlocfilehash: f8accc74fbdd9b1d8cf9bc3d8f6ddd26f73452b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 27e79e12153bc7ac6a9e3b3b5997a50c1c354195
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363880"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466644"
 ---
 # <a name="procedure-overloading-visual-basic"></a>Перегрузка процедур (Visual Basic)
 
@@ -50,13 +51,13 @@ ms.locfileid: "84363880"
 
 - **Элементы не являются частью сигнатуры**. Нельзя перегружать процедуру без изменения сигнатуры. В частности, невозможно перегрузить процедуру, изменив только один или несколько из следующих элементов:
 
-  - Ключевые слова модификаторов процедур, такие как `Public` , `Shared` и`Static`
+  - Ключевые слова модификаторов процедур, такие как `Public` , `Shared` и `Static`
 
   - Имя параметра или параметра типа
 
   - Ограничения параметров типа (для универсальной процедуры)
 
-  - Ключевые слова модификаторов параметров, такие как `ByRef` и`Optional`
+  - Ключевые слова модификаторов параметров, такие как `ByRef` и `Optional`
 
   - Возвращает ли оно значение
 
@@ -64,7 +65,7 @@ ms.locfileid: "84363880"
 
   Элементы в приведенном выше списке не являются частью сигнатуры. Хотя их нельзя использовать для различения перегруженных версий, их можно изменять в разных перегруженных версиях, которые должны различаться в соответствии с сигнатурами.
 
-- **Аргументы с поздним**связыванием. Если предполагается передать переменную объекта с поздней привязкой в перегруженную версию, необходимо объявить соответствующий параметр как <xref:System.Object> .
+- **Аргументы с поздним** связыванием. Если предполагается передать переменную объекта с поздней привязкой в перегруженную версию, необходимо объявить соответствующий параметр как <xref:System.Object> .
 
 ## <a name="multiple-versions-of-a-procedure"></a>Несколько версий процедуры
 
@@ -98,6 +99,6 @@ ms.locfileid: "84363880"
 - [Практическое руководство. Перегрузка процедуры, которая принимает необязательные параметры](./how-to-overload-a-procedure-that-takes-optional-parameters.md)
 - [Практическое руководство. Перегрузка процедуры, принимающей неопределенное число параметров](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
 - [Вопросы, связанные с перегрузкой процедур](./considerations-in-overloading-procedures.md)
-- [Разрешение перегрузки](./overload-resolution.md)
+- [Overload Resolution](./overload-resolution.md)
 - [Перегрузки](../../../language-reference/modifiers/overloads.md)
 - [Generic Types in Visual Basic](../data-types/generic-types.md)

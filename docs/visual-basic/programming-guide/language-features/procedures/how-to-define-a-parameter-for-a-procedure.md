@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе как определить параметр для процедуры (Visual Basic).
 title: Практическое руководство. Определение параметра для процедуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedure parameters [Visual Basic], defining
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
-ms.openlocfilehash: 73b53dcf7cd732af1a4f1d23cd0d3b9ef5b5529b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e9405e01c81f50c361c8e7ff9736e2ac0cde144d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087444"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476232"
 ---
 # <a name="how-to-define-a-parameter-for-a-procedure-visual-basic"></a>Практическое руководство. Объявление параметра для процедуры (Visual Basic)
 
@@ -53,7 +54,7 @@ ms.locfileid: "91087444"
   
     - Это приводит к ускорению выполнения кода. Одна из причин этого заключается в том, что если не указать тип данных для программного элемента, компилятор Visual Basic присваивает ему `Object` тип. Скомпилированному коду может потребоваться выполнить преобразование между `Object` и другими типами данных, что снижает производительность.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Подпрограммы](./sub-procedures.md)

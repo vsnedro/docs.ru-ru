@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вернуть значение из процедуры (Visual Basic).
 title: Практическое руководство. Возврат значения из процедуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], returning from
 - procedures [Visual Basic], returning a value
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
-ms.openlocfilehash: cbc785a07aa8a7b299508a093e08d5d0510b838a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c158f15b1e6acb7334d78037d84145981822e177
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071382"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476180"
 ---
 # <a name="how-to-return-a-value-from-a-procedure-visual-basic"></a>Практическое руководство. Возврат значения из процедуры (Visual Basic)
 
@@ -45,7 +46,7 @@ ms.locfileid: "91071382"
   
      Дополнительные сведения и пример см. в разделе "возвращаемое значение" в [операторе Function](../../../language-reference/statements/function-statement.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Подпрограммы](./sub-procedures.md)

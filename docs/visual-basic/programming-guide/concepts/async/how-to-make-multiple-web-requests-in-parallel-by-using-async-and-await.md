@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как выполнять несколько веб-запросов параллельно с помощью Async и await (Visual Basic)
 title: Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
-ms.openlocfilehash: 40bab392af94ba941c2562e885a8d2e08aeea5b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e1137424911b77ba94a760a4b4b034e45ef83462
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396588"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474347"
 ---
 # <a name="how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await-visual-basic"></a>How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic) (Практическое руководство. Параллельное выполнение нескольких веб-запросов с использованием Async и Await (Visual Basic))
 
@@ -205,7 +206,7 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)

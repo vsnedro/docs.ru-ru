@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: My. Application. log не может определить объем свободного места на диске'
 title: My.Application.Log не может определить объем свободного места на диске
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_FreeSpaceError
 ms.assetid: 7f0ce827-6afc-4d59-ac58-6729e1c01c4c
-ms.openlocfilehash: e7cc56e96423b6bb426cfa36f2b91bd75ddb2973
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 01fe33785b43c288ca4c57a92717badc2c53a1e5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91076088"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430031"
 ---
 # <a name="myapplicationlog-cannot-determine-the-amount-of-free-disk-space"></a>My.Application.Log не может определить объем свободного места на диске
 
@@ -19,6 +20,6 @@ ms.locfileid: "91076088"
   
 - Запомните, при каких условиях произошла ошибка, и обратитесь в службу технической поддержки Майкрософт.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>

@@ -2,12 +2,12 @@
 title: Поставщики типов
 description: Узнайте о поставщике типов F# — компоненте, предоставляющем типы, свойства и методы для использования в программах.
 ms.date: 04/02/2018
-ms.openlocfilehash: eae64d2e318ee93f0b8d5b91f0c6da6c91743527
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: f01e207407b2282005d5722bed798df1d49d3ef6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202111"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468230"
 ---
 # <a name="type-providers"></a>Поставщики типов
 
@@ -29,7 +29,7 @@ ms.locfileid: "84202111"
 
 Следующие широко используемые библиотеки содержат поставщики типов для различных целей:
 
-- [FSharp.Data](https://fsharp.github.io/FSharp.Data/) включает поставщики типов для форматов и ресурсов JSON, XML, CSV и HTML-документов.
+- FSharp.Data включает поставщики типов для форматов и ресурсов JSON, XML, CSV и HTML-документов.
 - [SQLProvider](https://fsprojects.github.io/SQLProvider/) предоставляет строго типизированный доступ к реляционным базам данных посредством сопоставления объектов и запросов F# LINQ к этим источникам данных.
 - [FSharp.Data.SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) имеет набор поставщиков типов для проверки внедрения T-SQL во время компиляции в F#.
 - [Поставщик типов службы хранилища Azure](https://fsprojects.github.io/AzureStorageTypeProvider/) предоставляет типы для больших двоичных объектов, таблиц и очередей Azure, что позволяет получать доступ к этим ресурсам без необходимости указывать имена ресурсов в качестве строк во всей программе.
