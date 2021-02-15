@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: процедуры оператора (Visual Basic)'
 title: Процедуры операторов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operator overloading
 - operator procedures
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
-ms.openlocfilehash: a1dd183570c8aa50efff85bdaebef90bd3b0120f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 836eeb2e705a96c49b5fa53e277ccf025d1915b2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84364322"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479963"
 ---
 # <a name="operator-procedures-visual-basic"></a>Процедуры операторов (Visual Basic)
 

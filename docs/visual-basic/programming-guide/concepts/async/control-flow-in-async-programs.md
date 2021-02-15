@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье поток управления в асинхронных программах (Visual Basic)
 title: Поток управления в асинхронных программах
 ms.date: 07/20/2015
 ms.assetid: b0443af7-c586-4cb0-b476-742ae4098a96
-ms.openlocfilehash: 0c479b9dd2a691b1b353fac54ee3320a895b1c7f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bf0ca6a083971cb02cfb6dff2dfcaaabd5405b36
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396666"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428250"
 ---
 # <a name="control-flow-in-async-programs-visual-basic"></a>Control Flow in Async Programs (Visual Basic) (Поток управления в асинхронных программах (Visual Basic))
 
@@ -97,7 +98,7 @@ Length of the downloaded string: 33946.
 Можно загрузить используемый в этом разделе код из MSDN, или же можно создать его самостоятельно.
 
 > [!NOTE]
-> Для выполнения этого примера на компьютере должен быть установлен Visual Studio 2012 или более поздней версии, а также .NET Framework 4,5 или более поздней версии.
+> Для выполнения этого примера на компьютере должен быть установлен Visual Studio 2012 или более поздней версии, а также платформа .NET Framework 4,5 или более поздней версии.
 
 ### <a name="download-the-program"></a>Скачайте программу
 
@@ -151,7 +152,7 @@ Length of the downloaded string: 33946.
 
 7. Добавьте ссылку для <xref:System.Net.Http>.
 
-8. В **Обозреватель решений**откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
+8. В **Обозреватель решений** откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
 
 9. В файле MainWindow. XAML. vb замените код следующим кодом.
 
@@ -218,7 +219,7 @@ Length of the downloaded string: 33946.
     End Class
     ```
 
-10. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**.
+10. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Start** .
 
     Должны отобразиться следующие выходные данные:
 
@@ -256,7 +257,7 @@ Length of the downloaded string: 33946.
 
 В первых двух строках прослеживается путь по мере того, как метод `startButton_Click` вызывает `AccessTheWebAsync`, а `AccessTheWebAsync` вызывает асинхронный метод <xref:System.Net.Http.HttpClient><xref:System.Net.Http.HttpClient.GetStringAsync%28System.String%29>. Ниже показаны вызовы из метода в метод.
 
-![Шаги ОДИН и ДВА](../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png ") Asynctrace — ОНЕТВО")
+![Шаги ОДИН и ДВА](../../../../csharp/programming-guide/concepts/async/media/asynctrace-onetwo.png "AsyncTrace-ONETWO")
 
 Типом возвращаемого значения и для `AccessTheWebAsync`, и для `client.GetStringAsync` является <xref:System.Threading.Tasks.Task%601>. Для `AccessTheWebAsync` значение TResult является целым числом. Для `GetStringAsync` значение TResult является строкой. Дополнительные сведения о типах возвращаемых асинхронных методов см. в разделе [асинхронные типы возвращаемых данных (Visual Basic)](async-return-types.md).
 
@@ -288,7 +289,7 @@ Dim urlContents As String = Await getStringTask
 
 На следующем рисунке показан поток управления путем `client.GetStringAsync` к назначению `getStringTask` и из создания `getStringTask` в приложение оператора await.
 
-![Шаг 3](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png ") Asynctrace-три")
+![Шаг ТРИ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "AsyncTrace-Three")
 
 Выражение await приостанавливает `AccessTheWebAsync` до возвращения результатов `client.GetStringAsync`. На это время управление возвращается вызывающему объекту метода `AccessTheWebAsync`, `startButton_Click`.
 
@@ -323,7 +324,7 @@ Dim contentLength As Integer = Await getLengthTask
 
 На следующем рисунке стрелками показан поток управления из выражения await в `AccessTheWebAsync` к назначению значения `getLengthTask`, за которым следует обычная обработка в методе `startButton_Click` до ожидания `getLengthTask`.
 
-![Шаг 4](../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png ") Asynctrace — четыре")
+![Шаг ЧЕТЫРЕ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-four.png "AsyncTrace-FOUR")
 
 ### <a name="step-five"></a>Шаг ПЯТЬ
 
@@ -340,7 +341,7 @@ FIVE:  Back in AccessTheWebAsync.
 
 На следующем рисунке показана передача управления после завершения `client.GetStringAsync` (и `getStringTask`).
 
-![Шаг ПЯТЬ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-five.png ") Asynctrace-5")
+![Шаг ПЯТЬ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-five.png "AsyncTrace-FIVE")
 
 `AccessTheWebAsync` выполняется до завершения, и управление возвращается к `startButton_Click`, который ожидает завершения.
 
@@ -365,11 +366,11 @@ Dim contentLength As Integer = Await getLengthTask
 
 На следующем рисунке показано возвращение управления от `AccessTheWebAsync` к `startButton_Click`.
 
-![Шаг ШЕСТЬ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png ") Asynctrace-шесть")
+![Шаг ШЕСТЬ](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-SIX")
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)
 - [Async Return Types (Visual Basic)](async-return-types.md) (Типы возвращаемых значений Async (Visual Basic))
 - [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [Пример асинхронности. Поток управления в асинхронных программах (C# и Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)
+- [Пример использования Async. Поток управления в асинхронных программах (C# и Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)

@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения о типах методов обработки строк в Visual Basic
 title: Типы методов для работы со строками
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], manipulating [Visual Basic]
 - string manipulation
 ms.assetid: 905055cd-7f50-48fb-9eed-b0995af1dc1f
-ms.openlocfilehash: c44f02880858b8a9fc1f0e70c3226623d05baa3a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 02b127d5cd023a8bd73a3042a8bcec340ce63ed8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072474"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429758"
 ---
 # <a name="types-of-string-manipulation-methods-in-visual-basic"></a>Типы методов для работы со строками в Visual Basic
 
 Существует несколько различных способов анализа строк и управления ими. Некоторые методы являются частью языка Visual Basic, а другие — в `String` классе.  
   
-## <a name="visual-basic-language-and-the-net-framework"></a>Язык Visual Basic и .NET Framework  
+## <a name="visual-basic-language-and-the-net-framework"></a>Язык Visual Basic и платформа .NET Framework  
 
  Visual Basic методы используются в качестве встроенных функций языка. Они могут использоваться без уточнения в коде. В следующем примере показано типичное использование Visual Basic команды обработки строк:  
   
@@ -48,6 +49,6 @@ ms.locfileid: "91072474"
   
  Дополнительные сведения см. в документации по <xref:System.String> классу.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Знакомство со строками в Visual Basic](introduction-to-strings.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: проекция операций (Visual Basic)'
 title: Операции проецирования
 ms.date: 07/20/2015
 ms.assetid: b8d38e6d-21cf-4619-8dbb-94476f4badc7
-ms.openlocfilehash: 4795bdaba53949b34fe380ea9c51025ce43c40db
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5531bec915f3a9ee521e0d67941b8f1d49e90524
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396341"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466462"
 ---
 # <a name="projection-operations-visual-basic"></a>Операции проекции (Visual Basic)
 
@@ -17,14 +18,14 @@ ms.locfileid: "84396341"
 
 ## <a name="methods"></a>Методы
 
-|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
+|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
-|Выберите|Проецирует значения, основанные на функции преобразования.|`Select`|<xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType>|
+|Выбрать|Проецирует значения, основанные на функции преобразования.|`Select`|<xref:System.Linq.Enumerable.Select%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Select%2A?displayProperty=nameWithType>|
 |SelectMany|Проецирует последовательности значений, основанных на функции преобразования, а затем выравнивает их в одну последовательность.|Использование нескольких предложений `From`|<xref:System.Linq.Enumerable.SelectMany%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SelectMany%2A?displayProperty=nameWithType>|
 
 ## <a name="query-expression-syntax-examples"></a>Примеры синтаксиса выражений запросов
 
-### <a name="select"></a>Выберите
+### <a name="select"></a>Выбрать
 
 В приведенном ниже примере предложение `Select` используется для проецирования первой буквы из каждой строки в списке строк.
 
@@ -175,7 +176,7 @@ Sub SelectVsSelectMany()
 End Sub
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)

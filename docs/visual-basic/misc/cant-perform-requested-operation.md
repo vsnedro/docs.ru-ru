@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: не удается выполнить запрошенную операцию (Visual Basic)'
 title: Не удается выполнить запрошенную операцию
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID17
 ms.assetid: eeab237c-4110-4abd-b601-bbb025c5d204
-ms.openlocfilehash: 37e881d9376d290d3cb52e1125196a4c3c6e2afb
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 15aa30939e9b2e81b8697f16225660f1af3c1c86
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91076296"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100473012"
 ---
 # <a name="cant-perform-requested-operation-visual-basic"></a>Не удается выполнить запрошенную операцию (Visual Basic)
 
@@ -19,6 +20,6 @@ ms.locfileid: "91076296"
   
 - Остановите выполнение кода, внесите необходимые изменения и затем повторите операцию.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы ошибок](../programming-guide/language-features/error-types.md)

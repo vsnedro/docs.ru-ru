@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: невозможно вычислить частоту с помощью указанных аргументов'
 title: Не удается вычислить коэффициент, используя предоставленные аргументы.
 ms.date: 07/20/2015
 f1_keywords:
 - vbrFinancial_CannotCalculateRate
 ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
-ms.openlocfilehash: 82974ac7ffbf842c142a12ecdf6f55577d1a119c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 51cd34c13f0873d28cd5d07831a98c223660b348
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059825"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465370"
 ---
 # <a name="cannot-calculate-rate-using-the-arguments-provided"></a>Не удается вычислить коэффициент, используя предоставленные аргументы.
 
@@ -21,6 +22,6 @@ ms.locfileid: "91059825"
   
 2. Проверьте предыдущие операции с переменными в выражении, в особенности те, которые передавались в процедуру как аргументы из других процедур.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сводка по финансовым функциям](../language-reference/keywords/financial-summary.md)

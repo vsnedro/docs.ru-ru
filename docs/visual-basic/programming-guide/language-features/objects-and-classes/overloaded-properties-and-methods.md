@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перегруженные свойства и методы (Visual Basic)'
 title: Перегруженные свойства и методы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - method overloading
 - Overloads keyword [Visual Basic], overloaded members
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
-ms.openlocfilehash: 1672f12773ece012c580253b6dafbf9d0ac8f07c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fb46876d346ad5f391241aee0b07175df290e656
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84389156"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438779"
 ---
 # <a name="overloaded-properties-and-methods-visual-basic"></a>Перегруженные свойства и методы (Visual Basic)
 
@@ -77,7 +78,7 @@ ms.locfileid: "84389156"
 
 5. Запустите проект и нажмите кнопку в форме, чтобы проверить перегруженную `ShowTax` процедуру.
 
-Во время выполнения компилятор выбирает подходящую перегруженную функцию, которая соответствует используемым параметрам. При нажатии кнопки перегруженный метод вызывается первым с `Price` параметром, который является строкой, и сообщением «Price — это строка. Налог — $5,12 ". `TaxAmount`вызывается со `Decimal` значением второй раз и сообщением "Price является десятичным числом. Налог — $5,12 ".
+Во время выполнения компилятор выбирает подходящую перегруженную функцию, которая соответствует используемым параметрам. При нажатии кнопки перегруженный метод вызывается первым с `Price` параметром, который является строкой, и сообщением «Price — это строка. Налог — $5,12 ". `TaxAmount` вызывается со `Decimal` значением второй раз и сообщением "Price является десятичным числом. Налог — $5,12 ".
 
 ## <a name="see-also"></a>См. также раздел
 
