@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: имя источника, указанное в EventLogSource, зарегистрировано в журнале, отличном от указанного в EventLogName'
 title: Имя источника, указанное в EventLogSource, зарегистрировано в журнале, отличном от указанного в EventLogName
 ms.date: 07/20/2015
 ms.assetid: 7317e100-098b-408d-86e5-7c74cf8558c7
-ms.openlocfilehash: 1b577e3b0613001b6241dcfdc59c8c84029197d2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d6b9c1265276f94369d37e6ac55604b761fb9bcc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058934"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455461"
 ---
 # <a name="source-name-specified-in-eventlogsource-is-registered-to-a-log-other-than-that-specified-in-eventlogname"></a>Имя источника, указанное в EventLogSource, зарегистрировано в журнале, отличном от указанного в EventLogName
 
@@ -19,7 +20,7 @@ ms.locfileid: "91058934"
   
 - Убедитесь в том, что источник зарегистрирован в соответствующем журнале. Для этого используйте метод <xref:System.Diagnostics.EventLog.CreateEventSource%2A> или одну из его перегрузок, чтобы указать строку, однозначно идентифицирующую компонент в журнале событий.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Администрирование журналов событий](/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
 - [Ссылки на журнал событий](/previous-versions/visualstudio/visual-studio-2008/k43k9z2a(v=vs.90))

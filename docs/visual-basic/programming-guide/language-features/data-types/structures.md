@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о структурах: структуры (Visual Basic)'
 title: Структуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - user-defined data types [Visual Basic], about user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
-ms.openlocfilehash: 04ccb5d39ea7c76a1e75dbeafd9230f2cb604d7c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c79ba7b4ea8e80aced6c2a280c4896ed9f8c9916
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090239"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427626"
 ---
 # <a name="structures-visual-basic"></a>Структуры (Visual Basic)
 
@@ -24,7 +25,7 @@ ms.locfileid: "91090239"
   
  Структуры полезны, если требуется, чтобы одна переменная содержала несколько связанных частей информации. Например, может потребоваться одновременное отслеживание имени сотрудника, телефонного расширения и оклада. Для этой информации можно использовать несколько переменных или определить структуру и использовать ее для одной переменной сотрудника. Преимущество структуры станет очевидным, если у вас много сотрудников и, следовательно, много экземпляров переменной.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Практическое руководство. Объявление структуры](how-to-declare-a-structure.md)  
  Показывает, как объявить структуру и ее элементы.  

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как объявить структуру (Visual Basic)
 title: Практическое руководство. Объявление структуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: bffdc5974eff6b71e0abc4780a61aa300769eed6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7560f22db70fd5804ca309720d32477bcb9a3782
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058551"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436933"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>Практическое руководство. Объявление структуры (Visual Basic)
 
@@ -54,9 +55,9 @@ ms.locfileid: "91058551"
   
      `salary`Поле в предыдущем примере имеет значение `Private` , которое означает, что оно недоступно за пределами структуры, даже из содержащего класса. Однако `giveRaise` процедура является `Public` , поэтому ее можно вызывать извне структуры. Аналогичным образом можно вызвать `salaryReviewTime` событие за пределами структуры.  
   
-     Помимо переменных, процедур и `Sub` событий, в структуре можно также определять константы, `Function` процедуры и свойства. Можно назначить не более одного свойства в качестве *свойства по умолчанию*при условии, что оно принимает по крайней мере один аргумент. Можно выполнить обработку события с помощью [общей](../../../language-reference/modifiers/shared.md) `Sub` процедуры. Дополнительные сведения см. в разделе [инструкции. объявление и вызов свойства по умолчанию в Visual Basic](../procedures/how-to-declare-and-call-a-default-property.md).  
+     Помимо переменных, процедур и `Sub` событий, в структуре можно также определять константы, `Function` процедуры и свойства. Можно назначить не более одного свойства в качестве *свойства по умолчанию* при условии, что оно принимает по крайней мере один аргумент. Можно выполнить обработку события с помощью [общей](../../../language-reference/modifiers/shared.md) `Sub` процедуры. Дополнительные сведения см. в разделе [инструкции. объявление и вызов свойства по умолчанию в Visual Basic](../procedures/how-to-declare-and-call-a-default-property.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Простые типы данных](elementary-data-types.md)

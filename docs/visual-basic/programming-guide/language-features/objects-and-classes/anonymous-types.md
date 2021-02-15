@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: анонимные типы (Visual Basic)'
 title: Анонимные типы
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic]
 - types [Visual Basic], anonymous
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.openlocfilehash: 5ab3cf8c3c02ff35890f71ad6c7f314b51b87133
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 447ca914726d4b426ad4ba2ec370a4bbe9589b81
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075243"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425624"
 ---
 # <a name="anonymous-types-visual-basic"></a>Анонимные типы (Visual Basic)
 
@@ -82,7 +83,7 @@ Visual Basic поддерживает анонимные типы, которы�
   
  [!code-vb[VbVbalrAnonymousTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#7)]  
   
-### <a name="read-only-values"></a>Значения только для чтения  
+### <a name="read-only-values"></a>Значения Read-Only  
 
  Значения ключевых свойств нельзя изменить. Например, в `prod8` в предыдущем примере `Name` `Price` поля и имеют значение `read-only` , но `OnHand` могут быть изменены.  
   
@@ -134,11 +135,11 @@ Visual Basic поддерживает анонимные типы, которы�
   
  Дополнительные сведения о коде, созданном компилятором, и функциональных возможностях переопределенных методов см. в разделе [Определение анонимного типа](anonymous-type-definition.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инициализаторы объектов: именованные и анонимные типы](object-initializers-named-and-anonymous-types.md)
 - [Вывод локального типа](../variables/local-type-inference.md)
 - [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)
 - [Практическое руководство. Выведение имен свойств и типов в объявлениях анонимных типов](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)
 - [Определение анонимного типа](anonymous-type-definition.md)
-- [Key](../../../language-reference/modifiers/key.md)
+- [Ключ](../../../language-reference/modifiers/key.md)

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о Visual Studio IDE и средствах поддержки LINQ (Visual Basic)
 title: Среда разработки Visual Studio и поддержка средств для LINQ
 ms.date: 07/20/2015
 ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
-ms.openlocfilehash: 9b1fa503b3c51cf50872e82d9a60206874c8e642
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 96d1cd54e8b4cc507aa697a2228d341b29f94f8f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077297"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428107"
 ---
 # <a name="visual-studio-ide-and-tools-support-for-linq-visual-basic"></a>Инструменты для поддержки LINQ в IDE Visual Studio (Visual Basic)
 

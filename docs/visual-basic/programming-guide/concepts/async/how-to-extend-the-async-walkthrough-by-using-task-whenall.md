@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: Практическое руководство. расширение асинхронного пошагового руководства с помощью Task. WhenAll (Visual Basic)'
 title: Практическое руководство. Оптимизация производительности асинхронных процедур с использованием метода Task.WhenAll
 ms.date: 07/20/2015
 ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258
-ms.openlocfilehash: fb323852c83b1edf51396a0b800c2d54a833d0c0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fc303d6b2ed64cb2003c06724fcd21000d0b3abf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396627"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474386"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-visual-basic"></a>How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic) (Практическое руководство. Расширение пошагового руководства по асинхронным процедурам с использованием метода Task.WhenAll (Visual Basic))
 
@@ -26,7 +27,7 @@ ms.locfileid: "84396627"
 
 1. Добавьте `ProcessURLAsync` метод в первое приложение, разработанное в [пошаговом руководстве: доступ к Интернету с помощью Async и Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md).
 
-    - Если вы скачали код из [примеров кода разработчика](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), откройте проект асинквалксраугх, а затем добавьте `ProcessURLAsync` в файл MainWindow. XAML. vb.
+    - Если вы скачали код из  [примеров кода разработчика](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), откройте проект асинквалксраугх, а затем добавьте `ProcessURLAsync` в файл MainWindow. XAML. vb.
 
     - Если вы разработали код, выполнив пошаговое руководство, добавьте `ProcessURLAsync` в приложение, которое включает метод `GetURLContentsAsync`. Файл MainWindow. XAML. vb для этого приложения является первым примером в разделе «полные примеры кода из пошагового руководства».
 
@@ -422,7 +423,7 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
 - [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)

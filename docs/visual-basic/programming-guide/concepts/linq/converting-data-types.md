@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: преобразование типов данных (Visual Basic)'
 title: Преобразование типов данных
 ms.date: 07/20/2015
 ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
-ms.openlocfilehash: 1394f53923ba850ae11fbc326a25c279589c3be1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7650f5d5d6f727b7815b9dd2de8a565e27fa18d9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410855"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428718"
 ---
 # <a name="converting-data-types-visual-basic"></a>Преобразование типов данных (Visual Basic)
 
@@ -29,14 +30,14 @@ ms.locfileid: "84410855"
 
 |Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
-|AsEnumerable|Возвращает входное значение, типизированное как <xref:System.Collections.Generic.IEnumerable%601>.|Неприменимо.|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType>|
-|AsQueryable|Преобразует <xref:System.Collections.IEnumerable> (универсальный шаблон) в <xref:System.Linq.IQueryable> (универсальный шаблон).|Неприменимо.|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=nameWithType>|
+|AsEnumerable|Возвращает входное значение, типизированное как <xref:System.Collections.Generic.IEnumerable%601>.|Не применяется|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType>|
+|AsQueryable|Преобразует <xref:System.Collections.IEnumerable> (универсальный шаблон) в <xref:System.Linq.IQueryable> (универсальный шаблон).|Не применяется|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=nameWithType>|
 |Cast|Приводит элементы коллекции к указанному типу.|`From … As …`|<xref:System.Linq.Enumerable.Cast%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Cast%2A?displayProperty=nameWithType>|
-|OfType|Фильтрует значения в зависимости от возможности их приведения к указанному типу.|Неприменимо.|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
-|ToArray|Преобразует коллекцию в массив. Этот метод принудительно выполняет запрос.|Неприменимо.|<xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>|
-|ToDictionary|Помещает элементы в <xref:System.Collections.Generic.Dictionary%602> в зависимости от функции выбора ключа. Этот метод принудительно выполняет запрос.|Неприменимо.|<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>|
-|ToList|Преобразует коллекцию в <xref:System.Collections.Generic.List%601>. Этот метод принудительно выполняет запрос.|Неприменимо.|<xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>|
-|ToLookup|Помещает элементы в <xref:System.Linq.Lookup%602> (словарь "один ко многим") в зависимости от функции выбора ключа. Этот метод принудительно выполняет запрос.|Неприменимо.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
+|OfType|Фильтрует значения в зависимости от возможности их приведения к указанному типу.|Не применяется|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
+|ToArray|Преобразует коллекцию в массив. Этот метод принудительно выполняет запрос.|Не применяется|<xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>|
+|ToDictionary|Помещает элементы в <xref:System.Collections.Generic.Dictionary%602> в зависимости от функции выбора ключа. Этот метод принудительно выполняет запрос.|Не применяется|<xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>|
+|ToList|Преобразует коллекцию в <xref:System.Collections.Generic.List%601>. Этот метод принудительно выполняет запрос.|Не применяется|<xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType>|
+|ToLookup|Помещает элементы в <xref:System.Linq.Lookup%602> (словарь "один ко многим") в зависимости от функции выбора ключа. Этот метод принудительно выполняет запрос.|Не применяется|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
 
 ## <a name="query-expression-syntax-example"></a>Пример синтаксиса выражения запроса
 
@@ -84,5 +85,5 @@ End Sub
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
-- [Предложение FROM](../../../language-reference/queries/from-clause.md)
+- [Предложение From](../../../language-reference/queries/from-clause.md)
 - [Как выполнить запрос к ArrayList с помощью LINQ (Visual Basic)](how-to-query-an-arraylist-with-linq.md)

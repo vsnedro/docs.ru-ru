@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: составные типы данных (Visual Basic)'
 title: Составные типы данных
 ms.date: 04/25/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - classes [Visual Basic], composite types
 - types [Visual Basic], composite
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
-ms.openlocfilehash: 842b74aa7cc99c8196fdfb1eb6c976d9e72a4fa4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 981ee36c416f2524be155b1238f5b306c98aa92b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077167"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456436"
 ---
 # <a name="composite-data-types-visual-basic"></a>Составные типы данных (Visual Basic)
 
@@ -66,7 +67,7 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
   
  Дополнительные сведения о классах см. в разделе [объекты и классы](../objects-and-classes/index.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Простые типы данных](elementary-data-types.md)
