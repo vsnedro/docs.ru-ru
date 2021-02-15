@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: SCOPE в Visual Basic'
 title: Область
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - scope [Visual Basic], Visual Basic
 - procedure scope [Visual Basic]
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
-ms.openlocfilehash: 1bee904996257474b7457b2aefb1f17d250933cb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5b5412f5743162bb91fc3651d08f5c7ff9ba8abd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410738"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480210"
 ---
 # <a name="scope-in-visual-basic"></a>Область видимости в Visual Basic
 
@@ -57,7 +58,7 @@ ms.locfileid: "84410738"
 
 - `Do` и `Loop`
 
-- `For`[ `Each` ] и`Next`
+- `For` [ `Each` ] и `Next`
 
 - `If` и `End If`
 
@@ -126,7 +127,7 @@ Public strMsg As String
 
 Область пространства имен включает вложенные пространства имен. Элемент, доступный из пространства имен, также доступен из любого пространства имен, вложенного в это пространство имен.
 
-Если проект не содержит [операторов пространства имен](../../../language-reference/statements/namespace-statement.md), все в проекте находится в том же пространстве имен. В этом случае область пространства имен может рассматриваться как область проекта. `Public`элементы в модуле, классе или структуре также доступны для любого проекта, который ссылается на свой проект.
+Если проект не содержит [операторов пространства имен](../../../language-reference/statements/namespace-statement.md), все в проекте находится в том же пространстве имен. В этом случае область пространства имен может рассматриваться как область проекта. `Public` элементы в модуле, классе или структуре также доступны для любого проекта, который ссылается на свой проект.
 
 ## <a name="choice-of-scope"></a>Выбора области
 

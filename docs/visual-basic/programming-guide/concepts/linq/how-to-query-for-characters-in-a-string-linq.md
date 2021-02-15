@@ -1,13 +1,14 @@
 ---
-title: Практическое руководство. Запрос знаков в строке (LINQ)
+description: Дополнительные сведения см. в статье как запросить символы в строке (LINQ) (Visual Basic)
+title: Практическое руководство. Запрос символов в строке (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 499ebbe0-746c-4235-9dba-ce722c12b50e
-ms.openlocfilehash: 2f306a488610aaa5775210eba3d7312b092545a7
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: bd8fabc06e88c83ae4e89079378ad67efb13c446
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75345528"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425754"
 ---
 # <a name="how-to-query-for-characters-in-a-string-linq-visual-basic"></a>Как запросить символы в строке (LINQ) (Visual Basic)
 
@@ -58,9 +59,9 @@ End Class
 
 ## <a name="compile-the-code"></a>Компиляция кода
 
-Создайте Visual Basic проект консольного приложения, используя инструкцию `Imports` для пространства имен System. LINQ.
+Создайте проект консольного приложения Visual Basic с `Imports` инструкцией для пространства имен System. LINQ.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ и строки (Visual Basic)](linq-and-strings.md)
 - [Как сочетать запросы LINQ с помощью регулярных выражений (Visual Basic)](how-to-combine-linq-queries-with-regular-expressions.md)

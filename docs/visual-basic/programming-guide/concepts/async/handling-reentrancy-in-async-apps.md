@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье обработка повторного входа в асинхронных приложениях (Visual Basic).
 title: Обработка повторного входа в асинхронных приложениях
 ms.date: 07/20/2015
 ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
-ms.openlocfilehash: 2d1af14016f82b5de875d3638b132e14c7d2280d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aca917c1b22655547f155009c5877140d9ca5e43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396640"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425806"
 ---
 # <a name="handling-reentrancy-in-async-apps-visual-basic"></a>Handling Reentrancy in Async Apps (Visual Basic) (Обработка повторного входа в асинхронных приложениях Visual Basic)
 
@@ -596,7 +597,7 @@ End Function
 
      Добавьте ссылку на <xref:System.Net.Http>, если она еще не выбрана.
 
-9. В **Обозреватель решений**откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
+9. В **Обозреватель решений** откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
 
 10. В файле MainWindow. XAML. vb замените код следующим кодом.
 

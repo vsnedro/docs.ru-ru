@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о объявлении переменных см. в Visual Basic
 title: Объявление переменной
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - local variables [Visual Basic], declarations
 - scope [Visual Basic], variables
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
-ms.openlocfilehash: 8d78509e1604fee4a151608f6166de6fc8ccfdaa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ef0e7bc7a99f320bd40788ef019b05c7ebf4ce46
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080157"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462702"
 ---
 # <a name="variable-declaration-in-visual-basic"></a>Объявление переменной в Visual Basic
 
@@ -52,7 +53,7 @@ ms.locfileid: "91080157"
   
 - Тип объекта или класс, определенный либо в приложении, либо в другом приложении  
   
-- Класс .NET Framework, например <xref:System.Windows.Forms.Label> или <xref:System.Windows.Forms.TextBox>  
+- Класс платформа .NET Framework, например <xref:System.Windows.Forms.Label> или <xref:System.Windows.Forms.TextBox>  
   
 - Тип интерфейса, например <xref:System.IComparable> или <xref:System.IDisposable>  
   
@@ -83,14 +84,14 @@ Dim l, m As Long, x, y As Single
   
  *Уровень доступа* переменной — это область кода, имеющая разрешение на доступ к нему. Это определяется модификатором доступа (например, [открытым](../../../language-reference/modifiers/public.md) или [закрытым](../../../language-reference/modifiers/private.md)), который используется в `Dim` инструкции. Дополнительные сведения см. [в разделе уровни доступа в Visual Basic](../declared-elements/access-levels.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Практическое руководство. Создание новой переменной](how-to-create-a-new-variable.md)
 - [Практическое руководство. Запись данных в переменную и их извлечение из переменной](how-to-move-data-into-and-out-of-a-variable.md)
 - [Типы данных](../../../language-reference/data-types/index.md)
-- [От](../../../language-reference/modifiers/protected.md)
+- [Защищенный](../../../language-reference/modifiers/protected.md)
 - [Friend](../../../language-reference/modifiers/friend.md)
-- [Статическое](../../../language-reference/modifiers/static.md)
+- [статически.](../../../language-reference/modifiers/static.md)
 - [Характеристики объявленных элементов](../declared-elements/declared-element-characteristics.md)
 - [Вывод локального типа](local-type-inference.md)
 - [Оператор Option Infer](../../../language-reference/statements/option-infer-statement.md)

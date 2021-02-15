@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: LINQ in Visual Basic'
 title: LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
 - what's new [Visual Basic]
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
-ms.openlocfilehash: 25e118f7c2e08420326783b788df480373ba4270
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e4413a5d6103aefc4bcf303326dcadc7dfc28cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085767"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430551"
 ---
 # <a name="linq-in-visual-basic"></a>LINQ в Visual Basic
 
-В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут вам понять и использовать Visual Basic и LINQ.  
+В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут понять и использовать Visual Basic и Language-Integrated query (LINQ).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Introduction to LINQ in Visual Basic](introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)  
  Содержит вводные сведения о поставщиках LINQ, операторах, структуре запросов и функциях языка.  
@@ -47,7 +48,7 @@ ms.locfileid: "91085767"
  [Практическое руководство. Возвращение результата запроса LINQ в виде определенного типа](how-to-return-a-linq-query-result-as-a-specific-type.md)  
  Предлагает пример, в котором результаты запроса LINQ возвращаются с определенным типом, а не как анонимный тип.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Встроенный язык запросов LINQ](../../concepts/linq/index.md)
 - [Overview of LINQ to XML in Visual Basic](../xml/overview-of-linq-to-xml.md) (Общие сведения о LINQ to XML в Visual Basic)

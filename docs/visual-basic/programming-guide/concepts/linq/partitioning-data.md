@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: секционирование данных (Visual Basic)'
 title: Секционирование данных
 ms.date: 07/20/2015
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
-ms.openlocfilehash: 07e33c4ce0d062a0f083d8970c0ad01f98923a52
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 264a81d1217c7f5034058761033171b9c232fae2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075321"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465617"
 ---
 # <a name="partitioning-data-visual-basic"></a>Секционирование данных (Visual Basic)
 
@@ -54,7 +55,7 @@ ms.locfileid: "91075321"
   
  [!code-vb[CsLINQPartitioning#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQPartitioning/VB/Partitioning.vb#4)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)

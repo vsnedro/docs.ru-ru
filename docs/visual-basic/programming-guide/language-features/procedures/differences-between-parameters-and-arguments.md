@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье различия между параметрами и аргументами (Visual Basic)
 title: Различия между параметрами и аргументами
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - procedure parameters
 - parameters [Visual Basic], definition
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
-ms.openlocfilehash: 0ad9104f347205cebc6e078aac246a413c0d9b78
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 01efc7dc3f451d6aae20cfd091355f531af4431c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057849"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438766"
 ---
 # <a name="differences-between-parameters-and-arguments-visual-basic"></a>Различия между параметрами и аргументами (Visual Basic)
 
@@ -40,7 +41,7 @@ ms.locfileid: "91057849"
   
  В отличие от определения параметра, аргументы не имеют имен. Каждый аргумент является выражением, которое может содержать ноль или более переменных, констант и литералов. Тип данных вычисляемого выражения обычно должен соответствовать типу данных, определенному для соответствующего параметра, и в любом случае он должен быть преобразован в тип параметра.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры](./index.md)
 - [Подпрограммы](./sub-procedures.md)

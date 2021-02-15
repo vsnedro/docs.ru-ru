@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: операции агрегирования (Visual Basic)'
 title: Операции агрегирования
 ms.date: 07/20/2015
 ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
-ms.openlocfilehash: 1cf82d8acfdb1f8b0fc33c324064574b0dd01f4a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2ef41faf03100814e062ec98afb8fe17b1ef64bc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078402"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462169"
 ---
 # <a name="aggregation-operations-visual-basic"></a>Операции агрегирования (Visual Basic)
 
@@ -51,7 +52,7 @@ ms.locfileid: "91078402"
   
  [!code-vb[CsLINQAggregating#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAggregating/VB/Aggregating.vb#3)]  
   
-### <a name="max"></a>Макс.  
+### <a name="max"></a>Max  
 
  В следующем примере кода предложение используется `Aggregate Into Max` для вычисления максимальной температуры в массиве чисел, представляющих температуру.  
   
@@ -69,7 +70,7 @@ ms.locfileid: "91078402"
   
  [!code-vb[CsLINQAggregating#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAggregating/VB/Aggregating.vb#6)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)

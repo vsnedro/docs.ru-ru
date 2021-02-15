@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Написание запросов в Visual Basic
 title: Написание запросов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - LINQ [Visual Basic], writing queries
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-ms.openlocfilehash: c2abca183f1241cff314a4367c7bd9f1b9f239ea
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 55a1b3382d587b7982b79448334c4688895fa6e6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554597"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466813"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>Пошаговое руководство. Написание запросов в Visual Basic
 
-В этом пошаговом руководстве показано, как можно использовать функции языка Visual Basic для написания выражений запросов LINQ. В этом пошаговом руководстве показано, как создавать запросы к списку объектов Student, выполнять запросы и изменять их. Запросы включают в себя несколько функций, включая инициализаторы объектов, определение локального типа и анонимные типы.
+В этом пошаговом руководстве показано, как можно использовать функции языка Visual Basic для написания выражений запросов Language-Integrated запросов (LINQ). В этом пошаговом руководстве показано, как создавать запросы к списку объектов Student, выполнять запросы и изменять их. Запросы включают в себя несколько функций, включая инициализаторы объектов, определение локального типа и анонимные типы.
 
 После завершения этого пошагового руководства вы будете готовы перейти к образцам и документации для конкретного интересующего поставщика LINQ. Поставщики LINQ включают [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] , LINQ to DataSet и [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] .
 
@@ -36,7 +37,7 @@ ms.locfileid: "90554597"
 
 5. На [странице Компиляция в конструкторе проектов (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)убедитесь, что **параметр Infer** имеет значение **On**.
 
-## <a name="add-an-in-memory-data-source"></a>Добавление источника данных в памяти
+## <a name="add-an-in-memory-data-source"></a>Добавление источника данных In-Memory
 
 Источником данных для запросов в этом пошаговом руководстве является список `Student` объектов. Каждый `Student` объект содержит имя, фамилию, класс year и академический рейтинг в тексте учащегося.
 
@@ -149,7 +150,7 @@ ms.locfileid: "90554597"
 
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ (Visual Basic)](index.md)
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)
