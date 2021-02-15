@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье как создать коллекцию, используемую инициализатором коллекции (Visual Basic)
 title: Практическое руководство. Создание коллекции с помощью инициализатора набора
 ms.date: 07/20/2015
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: c858db10-424d-47e0-92cd-e08087cc5ebc
-ms.openlocfilehash: b332ffb44ebc20ce8431e586fc380b8c6a29967d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 09928cb0fbeb0346fd0e1148ffcd6ddce54279c0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086378"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460024"
 ---
 # <a name="how-to-create-a-collection-used-by-a-collection-initializer-visual-basic"></a>Практическое руководство. Создание коллекции, используемой инициализатором набора (Visual Basic)
 
@@ -27,7 +28,7 @@ ms.locfileid: "91086378"
   
  [!code-vb[VbVbalrCollectionInitializersHowTo2#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionInitializersHowTo2/VB/Module1.vb#3)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Инициализаторы коллекций](index.md)
 - [Практическое руководство. Создание метода добавления расширения, используемого инициализатором коллекции](how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)

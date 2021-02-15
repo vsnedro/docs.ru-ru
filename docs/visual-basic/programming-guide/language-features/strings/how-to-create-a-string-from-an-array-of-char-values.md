@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как создать строку из массива значений типа char (Visual Basic)
 title: Практическое руководство. Создание строки из значений массива символьного типа
 ms.date: 07/20/2015
 helpviewer_keywords:
 - examples [Visual Basic], arrays
 - examples [Visual Basic], Char data type
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
-ms.openlocfilehash: 08ad2f1c9455853e92533a7f00726c73b6adb87e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 67b675f5f02c92b785e374b99f49248d43d12fb4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071161"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429836"
 ---
 # <a name="how-to-create-a-string-from-an-array-of-char-values-visual-basic"></a>Практическое руководство. Создание строки из значений массива символьного типа (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "91071161"
 
  Символы NULL (эквивалентны `Chr(0)` ) в строке ведут к непредвиденным результатам при использовании строки. Символ null будет включаться в строку, но символы, следующие за символом NULL, не будут отображаться в некоторых ситуациях.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.String>
 - [Тип данных Char](../../../language-reference/data-types/char-data-type.md)

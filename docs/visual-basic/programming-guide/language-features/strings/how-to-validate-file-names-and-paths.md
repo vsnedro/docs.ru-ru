@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Проверка имен файлов и путей в Visual Basic
 title: Практическое руководство. Проверка имен файлов и путей
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Boolean values [Visual Basic]
 - paths [Visual Basic], validating
 ms.assetid: f673462d-57b7-4120-b13a-6a7592f7ab2c
-ms.openlocfilehash: b722222ea8b8088a6b326eef27147c08f8419272
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 02a48ea7cbf3291cb2fe1c64c4e636a273842546
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072656"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429744"
 ---
 # <a name="how-to-validate-file-names-and-paths-in-visual-basic"></a>Практическое руководство. Проверка имен файлов и путей в Visual Basic
 
@@ -24,7 +25,7 @@ ms.locfileid: "91072656"
   
  В этом примере не проверяется, неправильно ли в имени размещены двоеточия или каталоги без имени, или значение, если длина имени превышает максимальную длину, определенную системой. Он также не проверяет, имеет ли приложение разрешение на доступ к ресурсу файловой системы с указанным именем.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.IO.Path.GetInvalidPathChars%2A>
 - [Проверка строк в Visual Basic](validating-strings.md)
