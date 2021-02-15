@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: LINQ и строки (Visual Basic)'
 title: LINQ и строки
 ms.date: 07/20/2015
 ms.assetid: 75ddb201-d97a-4f98-8cdf-4ad51714529a
-ms.openlocfilehash: 28c11dcc3c788ea85516e8b3fbafe2677b6d9b54
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 16e1a2c3d8cee30643743400ad21dfc4ff15c14d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075347"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469790"
 ---
 # <a name="linq-and-strings-visual-basic"></a>LINQ и строки (Visual Basic)
 

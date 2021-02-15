@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: типы значений и ссылочные типы'
 title: Value Types and Reference Types
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data types [Visual Basic], value types
 - data types [Visual Basic], reference types
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
-ms.openlocfilehash: 72cb1455300e1ff00d9d558aa5a9df95f32aa7b0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 22cce68260955545e810f6fefe645b5ad6a37ca5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090122"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462143"
 ---
 # <a name="value-types-and-reference-types"></a>Value Types and Reference Types
 
@@ -33,7 +34,7 @@ ms.locfileid: "91090122"
   
 - Перечисления, так как их базовый тип всегда,,,,,, `SByte` `Short` `Integer` `Long` `Byte` `UShort` `UInteger` или `ULong`  
   
- Каждая структура является типом значения, даже если она содержит члены ссылочного типа. По этой причине типы значений, такие как `Char` и `Integer` , реализуются с помощью структур .NET Framework.  
+ Каждая структура является типом значения, даже если она содержит члены ссылочного типа. По этой причине типы значений, такие как `Char` и `Integer` , реализуются с помощью структур платформа .NET Framework.  
   
  Тип значения можно объявить с помощью зарезервированного ключевого слова, например `Decimal` . `New`Для инициализации типа значения также можно использовать ключевое слово. Это особенно полезно, если тип имеет конструктор, принимающий параметры. Примером этого является <xref:System.Decimal.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Byte%29> конструктор, который создает новое `Decimal` значение из предоставляемых частей.  
   
@@ -51,7 +52,7 @@ ms.locfileid: "91090122"
   
  Класс является *ссылочным типом*. Обратите внимание, что каждый массив является ссылочным типом, даже если его члены являются типами значений.  
   
- Поскольку каждый ссылочный тип представляет базовый класс .NET Framework, при его инициализации необходимо использовать ключевое слово [New operator](../../../language-reference/operators/new-operator.md) . Следующая инструкция инициализирует массив.  
+ Поскольку каждый ссылочный тип представляет базовый класс платформа .NET Framework, при его инициализации необходимо использовать ключевое слово [New operator](../../../language-reference/operators/new-operator.md) . Следующая инструкция инициализирует массив.  
   
 ```vb  
 Dim totals() As Single = New Single(8) {}  
@@ -77,7 +78,7 @@ Dim totals() As Single = New Single(8) {}
   
  Определить, выступает ли переменная в `Object` качестве ссылочного типа или типа значения, можно, передав ее <xref:Microsoft.VisualBasic.Information.IsReference%2A> методу в <xref:Microsoft.VisualBasic.Information> классе <xref:Microsoft.VisualBasic?displayProperty=nameWithType> пространства имен. <xref:Microsoft.VisualBasic.Information.IsReference%2A?displayProperty=nameWithType> Возвращает, `True` Если содержимое `Object` переменной представляет ссылочный тип.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы значений, допускающие значение NULL](nullable-value-types.md)
 - [Преобразование типов в Visual Basic](type-conversions.md)

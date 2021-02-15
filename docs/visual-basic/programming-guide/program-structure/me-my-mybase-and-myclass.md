@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Me, My, MyBase и MyClass в Visual Basic'
 title: Me, My, MyBase и MyClass
 ms.date: 07/20/2015
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - current instance [Visual Basic], Me keyword
 - MyBase keyword [Visual Basic], relationship to similar programming elements
 ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
-ms.openlocfilehash: cc96f39d9dc37b7f1a5d8205e145869fb1b5ecef
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 04be6cc7063101a59838bf809731a66c27007283
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072240"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432797"
 ---
 # <a name="me-my-mybase-and-myclass-in-visual-basic"></a>Me, My, MyBase и MyClass в Visual Basic
 
@@ -53,7 +54,7 @@ ChangeFormColor(Me)
   
 ## <a name="my"></a>My  
 
- Эта `My` функция обеспечивает простой и интуитивно понятный доступ к ряду .NET Framework классов, позволяя пользователю Visual Basic взаимодействовать с компьютером, приложением, параметрами, ресурсами и т. д.  
+ Эта `My` функция обеспечивает простой и интуитивно понятный доступ к ряду платформа .NET Framework классов, позволяя пользователю Visual Basic взаимодействовать с компьютером, приложением, параметрами, ресурсами и т. д.  
   
 ## <a name="mybase"></a>MyBase  
 
@@ -63,6 +64,6 @@ ChangeFormColor(Me)
 
  `MyClass`Ключевое слово ведет себя как объектная переменная, ссылающаяся на текущий экземпляр класса как изначально реализованный. `MyClass` аналогичен `Me` , но все вызовы методов в нем обрабатываются так, как если бы метод был `NotOverridable` .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Основы наследования](../language-features/objects-and-classes/inheritance-basics.md)

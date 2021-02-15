@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о ключевых словах в виде имен элементов в коде (Visual Basic)
 title: Ключевые слова как имена элементов в коде
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - name conflicts [Visual Basic]
 - element names [Visual Basic], in code
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
-ms.openlocfilehash: e895db180dbb44cd4cfe4053d4be429f13324fe8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4782c0f3ea065e3e140d449575c187cf2254cd08
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065753"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433217"
 ---
 # <a name="keywords-as-element-names-in-code-visual-basic"></a>Ключевые слова как имена элементов в коде (Visual Basic)
 
@@ -31,7 +32,7 @@ ms.locfileid: "91065753"
 > [!NOTE]
 > Программа также может включать имена элементов, предоставляемых другими ссылочными сборками. Если эти имена конфликтуют с ограниченными ключевыми словами, то при заключении в квадратные скобки они приводят к тому, что Visual Basic интерпретирует их как определенные элементы.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Соглашения об именах Visual Basic](naming-conventions.md)
 - [Соглашения о структуре программы и коде](program-structure-and-code-conventions.md)

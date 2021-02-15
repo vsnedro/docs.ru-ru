@@ -1,5 +1,6 @@
 ---
-title: Как сортировать массив
+description: Дополнительные сведения см. в статье как сортировать массив в Visual Basic
+title: Практическое руководство. Сортировка массива
 ms.date: 07/20/2015
 f1_keywords:
 - Array.Sort
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], sorting
 - examples [Visual Basic], arrays
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
-ms.openlocfilehash: 3fb9af8de0fc86075fdccd64506c855c1c720660
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: ea030b63dbbb5f5ea1d6160757afe2e9b58f7c21
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74351855"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462767"
 ---
 # <a name="how-to-sort-an-array-in-visual-basic"></a>Как сортировать массив в Visual Basic
 
@@ -20,7 +21,7 @@ ms.locfileid: "74351855"
 
 ## <a name="example"></a>Пример
 
-В этом примере объявляется массив объектов `String` с именем `zooAnimals`, заполняется, а затем сортируется по алфавиту:
+В этом примере объявляется массив `String` объектов с именем `zooAnimals` , заполняется, а затем сортируется по алфавиту:
   
 ```vb
 Private Sub SortAnimals()
@@ -36,9 +37,9 @@ End Sub
 
 При следующих условиях возможно возникновение исключения:
 
-- Массив пуст (<xref:System.ArgumentNullException> класс).
-- Массив является многомерным (<xref:System.RankException> классом).
-- Один или несколько элементов массива не реализуют интерфейс <xref:System.IComparable> (класс<xref:System.InvalidOperationException>).
+- Массив пуст ( <xref:System.ArgumentNullException> класс).
+- Массив является многомерным ( <xref:System.RankException> классом).
+- Один или несколько элементов массива не реализуют <xref:System.IComparable> интерфейс ( <xref:System.InvalidOperationException> класс).
 
 ## <a name="see-also"></a>См. также
 
@@ -46,4 +47,4 @@ End Sub
 - [Массивы](index.md)
 - [Устранение неполадок, связанных с массивами](troubleshooting-arrays.md)
 - [Коллекции](../../concepts/collections.md)
-- [Оператор For Each...Next](../../../language-reference/statements/for-each-next-statement.md)
+- [Оператор For Each…Next](../../../language-reference/statements/for-each-next-statement.md)

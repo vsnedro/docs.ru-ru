@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: начало работы с помощью LINQ в Visual Basic'
 title: Начало работы с LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - LINQ [Visual Basic]
 - LINQ, Visual Basic
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.openlocfilehash: 2097eb9caccd65a7983244cd06cbc18759677be1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 264ee4cef26cd2ee965771e50aeaafbeb71d91f9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090317"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469816"
 ---
 # <a name="getting-started-with-linq-in-visual-basic"></a>Приступая к работе с LINQ в Visual Basic
 
-В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут вам понять и использовать Visual Basic и LINQ.  
+В этом разделе содержатся обзоры, примеры и общие сведения, которые помогут понять и использовать Visual Basic и Language-Integrated query (LINQ).  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Написание первого запроса LINQ](writing-your-first-linq-query.md)  
  Описывает три этапа написания простого запроса LINQ: получение источника данных, запись запроса и выполнение запроса.  
