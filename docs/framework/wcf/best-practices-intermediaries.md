@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: рекомендации: посредники'
 title: Рекомендации. Посредники
 ms.date: 03/30/2017
 ms.assetid: 2d41b337-8132-4ac2-bea2-6e9ae2f00f8d
-ms.openlocfilehash: 57be78681147dfc5bc37701a76c1347040f5da1f
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: 54fd367c9dd7a3b40f585d095d51042acd8b5722
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96277898"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430499"
 ---
 # <a name="best-practices-intermediaries"></a>Рекомендации. Посредники
 
@@ -33,7 +34,7 @@ catch (Exception e)
 }  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обработка ошибок WCF](wcf-error-handling.md)
 - [Задание и обработка сбоев в контрактах и службах](specifying-and-handling-faults-in-contracts-and-services.md)

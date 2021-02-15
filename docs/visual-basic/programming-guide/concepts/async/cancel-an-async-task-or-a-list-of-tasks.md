@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: Отмена асинхронной задачи или списка задач (Visual Basic)'
 title: Отмена асинхронной задачи или списка задач
 ms.date: 07/20/2015
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-ms.openlocfilehash: 932bf46f1e3aee220d0412f1688e961faaef3459
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d61db65db62c62e93abf0a5036533dd2967fe917
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396705"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467086"
 ---
 # <a name="cancel-an-async-task-or-a-list-of-tasks-visual-basic"></a>Cancel an Async Task or a List of Tasks (Visual Basic) (Отмена асинхронной задачи или списка задач в Visual Basic)
 
@@ -18,13 +19,13 @@ ms.locfileid: "84396705"
 > [!NOTE]
 > Для выполнения примеров необходимо, чтобы на компьютере были установлены Visual Studio 2012 или более поздняя версия и .NET Framework 4.5 или более поздняя версия.
 
-## <a name="cancel-a-task"></a><a name="BKMK_CancelaTask"></a>Отмена задачи
+## <a name="cancel-a-task"></a><a name="BKMK_CancelaTask"></a> Отмена задачи
 
 Код в первом примере связывает кнопку **Отмена** с отдельной задачей загрузки. Если нажать эту кнопку, когда приложение загружает содержимое, загрузка будет отменена.
 
 ### <a name="downloading-the-example"></a>Загрузка примера
 
-Вы можете скачать весь проект Windows Presentation Foundation (WPF) со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea), а затем выполнить необходимые действия.
+Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea). Затем выполните следующие шаги.
 
 1. Распакуйте загруженный файл, а затем запустите Visual Studio.
 
@@ -138,13 +139,13 @@ ms.locfileid: "84396705"
     Download canceled.
     ```
 
-## <a name="cancel-a-list-of-tasks"></a><a name="BKMK_CancelaListofTasks"></a>Отмена списка задач
+## <a name="cancel-a-list-of-tasks"></a><a name="BKMK_CancelaListofTasks"></a> Отмена списка задач
 
 Вы можете расширить предыдущий пример до отмены сразу нескольких задач, связав с каждой из них один и тот же экземпляр `CancellationTokenSource`. В этом случае кнопка **Отмена** отменяет сразу все незавершенные задачи.
 
 ### <a name="downloading-the-example"></a>Загрузка примера
 
-Вы можете скачать весь проект Windows Presentation Foundation (WPF) со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea), а затем выполнить необходимые действия.
+Скачать полный проект Windows Presentation Foundation (WPF) можно со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea). Затем выполните следующие шаги.
 
 1. Распакуйте загруженный файл, а затем запустите Visual Studio.
 
@@ -253,11 +254,11 @@ ms.locfileid: "84396705"
     Downloads canceled.
     ```
 
-## <a name="complete-examples"></a><a name="BKMK_CompleteExamples"></a>Полные примеры
+## <a name="complete-examples"></a><a name="BKMK_CompleteExamples"></a> Полные примеры
 
 Следующие разделы содержат код каждого из приведенных выше примеров. Обратите внимание на то, что необходимо добавить ссылку для <xref:System.Net.Http>.
 
-Проекты можно загрузить со страницы [Пример асинхронности. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
+Вы можете скачать проект из статьи c [примером использования async. Тонкая настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
 
 ### <a name="cancel-a-task-example"></a>Пример отмены задачи
 
@@ -469,4 +470,4 @@ End Class
 - <xref:System.Threading.CancellationToken>
 - [Асинхронное программирование с использованием ключевых слов Async и Await (Visual Basic)](index.md)
 - [Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md) (Настройка асинхронного приложения (Visual Basic))
-- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) (Пример использования Async. Тонкая настройка асинхронного приложения)
+- [Пример использования Async. Настройка приложения](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

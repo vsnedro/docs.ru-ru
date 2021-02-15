@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как использовать универсальный класс (Visual Basic).
 title: Практическое руководство. Использование универсального класса
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
-ms.openlocfilehash: 87ba5132afe9f5a7cd6fb33d716c670f4812c7e2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b21f29223c6a7f611fd4064a0df28ed72f599361
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077115"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483967"
 ---
 # <a name="how-to-use-a-generic-class-visual-basic"></a>Практическое руководство. Использование универсального класса (Visual Basic)
 
@@ -34,7 +35,7 @@ ms.locfileid: "91077115"
   
  Помимо классов, можно определять и использовать универсальные структуры, интерфейсы, процедуры и делегаты.  
   
- Следующая процедура принимает универсальный класс, определенный в .NET Framework, и создает из него экземпляр.  
+ Следующая процедура принимает универсальный класс, определенный в платформа .NET Framework, и создает из него экземпляр.  
   
 ### <a name="to-use-a-class-that-takes-a-type-parameter"></a>Использование класса, который принимает параметр типа  
   
@@ -46,7 +47,7 @@ ms.locfileid: "91077115"
   
      [!code-vb[VbVbalrDataTypes#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#9)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Generic Types in Visual Basic](generic-types.md)

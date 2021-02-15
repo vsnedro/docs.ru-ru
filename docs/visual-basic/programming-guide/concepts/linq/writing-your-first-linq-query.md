@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание первого запроса LINQ (Visual Basic)'
 title: Написание первого запроса LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: c7d0595b991bdad6ef05b567f95ead8c7fccdbc2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cb57ae3c22b7e2ee2c3b66a8f033eda6fd72e16a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077284"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477519"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>Написание первого запроса LINQ (Visual Basic)
 
 *Запрос* представляет собой выражение, извлекающее данные из источника данных. Запросы выражаются на языке выделенных запросов. Со временем разрабатываются разные языки для различных типов источников данных, например SQL для реляционных баз данных и XQuery для XML. Это позволяет разработчику приложения изучать новый язык запросов для каждого поддерживаемого типа источника данных или формата данных.  
   
- LINQ упрощает ситуацию, предлагая согласованную модель для работы с данными в различных видах источников данных и форматов. В запросе LINQ вы всегда работаете с объектами. Одни и те же базовые шаблоны кодирования используются для запроса и преобразования данных в XML-документах, базах данных SQL, ADO.NETх наборов данных и сущностях, .NET Framework коллекциях, а также в любом другом источнике или формате, для которого доступен поставщик LINQ. В этом документе описаны три фазы создания и использования базовых запросов LINQ.  
+ Language-Integrated query (LINQ) упрощает ситуацию, предлагая согласованную модель для работы с данными в различных видах источников данных и форматов. В запросе LINQ вы всегда работаете с объектами. Одни и те же базовые шаблоны кодирования используются для запроса и преобразования данных в XML-документах, базах данных SQL, ADO.NETх наборов данных и сущностях, платформа .NET Framework коллекциях, а также в любом другом источнике или формате, для которого доступен поставщик LINQ. В этом документе описаны три фазы создания и использования базовых запросов LINQ.  
   
 ## <a name="three-stages-of-a-query-operation"></a>Три этапа операции запроса  
 
@@ -46,7 +47,7 @@ ms.locfileid: "91077284"
 
  Поскольку источник данных в предыдущем примере является массивом, он неявно поддерживает универсальный <xref:System.Collections.Generic.IEnumerable%601> интерфейс. Это тот факт, что позволяет использовать массив в качестве источника данных для запроса LINQ. Типы, которые поддерживают <xref:System.Collections.Generic.IEnumerable%601> или производный интерфейс, например универсальный интерфейс <xref:System.Linq.IQueryable%601>, называются *запрашиваемыми типами*.  
   
- В качестве неявного запрашиваемого типа массив не требует изменения или специальной обработки, чтобы служить источником данных LINQ. Это справедливо и для любого типа коллекции, который поддерживает <xref:System.Collections.Generic.IEnumerable%601> , включая универсальный <xref:System.Collections.Generic.List%601> класс, <xref:System.Collections.Generic.Dictionary%602> и другие классы в библиотеке классов .NET Framework.  
+ В качестве неявного запрашиваемого типа массив не требует изменения или специальной обработки, чтобы служить источником данных LINQ. Это справедливо и для любого типа коллекции, который поддерживает <xref:System.Collections.Generic.IEnumerable%601> , включая универсальный <xref:System.Collections.Generic.List%601> класс, <xref:System.Collections.Generic.Dictionary%602> и другие классы в библиотеке классов платформа .NET Framework.  
   
  Если исходные данные еще не реализованы <xref:System.Collections.Generic.IEnumerable%601> , поставщик LINQ необходим для реализации функциональности *стандартных операторов запросов* для этого источника данных. Например, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] обрабатывает работу по загрузке XML-документа в запрашиваемый <xref:System.Xml.Linq.XElement> тип, как показано в следующем примере. Дополнительные сведения о стандартных операторах запросов см. в разделе [Общие сведения о стандартных операторах запросов (Visual Basic)](standard-query-operators-overview.md).  
   
@@ -125,7 +126,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  Можно также вызвать выполнение запроса с помощью `IEnumerable` метода, такого как <xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A> метод.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)
 - [Вывод локального типа](../../language-features/variables/local-type-inference.md)
