@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об операторах и выражениях в Visual Basic
 title: Операторы и выражения
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - operands
 - expressions [Visual Basic]
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
-ms.openlocfilehash: 01e3a53e998774caee8863675b9151a140606852
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 526051e16da29cd139abf587e1393ad331fdcdaa
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071681"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471400"
 ---
 # <a name="operators-and-expressions-in-visual-basic"></a>Операторы и выражения в Visual Basic
 
@@ -65,7 +66,7 @@ ms.locfileid: "91071681"
   
  В предыдущем примере Visual Basic выполняет операции в выражении с правой стороны оператора присваивания ( `=` ), а затем присваивает результирующее значение переменной `x` слева. С практической точки зрения в выражение можно объединять сколько угодно операторов, но следует учитывать [приоритет операторов в Visual Basic](../../../language-reference/operators/operator-precedence.md) для получения желаемых результатов.  
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Операторы](../../../language-reference/operators/index.md)
 - [Эффективное сочетание операторов](efficient-combination-of-operators.md)

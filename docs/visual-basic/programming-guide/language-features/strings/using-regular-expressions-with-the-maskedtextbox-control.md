@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: использование регулярных выражений с элементом управления MaskedTextBox в Visual Basic'
 title: Использование регулярных выражений в элементе управления MaskedTextBox
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: 493da7b8583b5cc73a9832afa81b7b1d84742f2d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 68ffca6761d8f0634634ea2755786d3c0c02a6e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072435"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471140"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>Использование регулярных выражений в элементе управления MaskedTextBox в Visual Basic
 
@@ -58,7 +59,7 @@ ms.locfileid: "91072435"
 |`(\(\d{3}\)-)?\d{3}-d{4}`|`(999)-000-0000`|США номер телефона, код города (необязательно). Если пользователь не хочет вводить необязательные символы, он может ввести пробелы или поместить указатель мыши непосредственно в позицию маски, представленной первым 0.|  
 |`$\d{6}.00`|`$999,999.00`|Значение валюты в диапазоне от 0 до 999999. Во время выполнения символы валюты, доли секунды и десятичные знаки будут заменены на их эквиваленты, зависящие от языка и региональных параметров.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
 - <xref:System.Windows.Forms.MaskedTextBox>

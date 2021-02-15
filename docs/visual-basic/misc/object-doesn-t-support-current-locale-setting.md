@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: объект не поддерживает текущую национальную настройку языкового стандарта (Visual Basic)'
 title: Объект не поддерживает текущую настройку языкового стандарта
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID447
 ms.assetid: 580a26bc-479a-4569-9246-10dcf0251bcb
-ms.openlocfilehash: 11ad0246b157c05695eadd6fb1e2704a27b55f73
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2562101e9d986b67f3b644bf693dfb49d4fe0cb5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077492"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100478962"
 ---
 # <a name="object-doesnt-support-current-locale-setting-visual-basic"></a>Объект не поддерживает текущий параметр языкового стандарта (Visual Basic)
 
@@ -19,6 +20,6 @@ ms.locfileid: "91077492"
   
 - Проверьте, какие параметры языковых стандартов поддерживаются этим объектом.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы ошибок](../programming-guide/language-features/error-types.md)

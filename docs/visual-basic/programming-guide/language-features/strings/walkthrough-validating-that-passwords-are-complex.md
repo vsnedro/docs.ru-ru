@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Проверка сложности паролей (Visual Basic)
 title: Сложность проверки паролей
 ms.date: 07/20/2015
 helpviewer_keywords:
 - String data type [Visual Basic], validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.openlocfilehash: 9597d7a9d6b68b8c91f32d97da3532f181585cf6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 608d9c7708058ca99196f2a06fd4ddd018aa0363
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072357"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471015"
 ---
 # <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>Пошаговое руководство. Проверка паролей на сложность (Visual Basic)
 
@@ -47,7 +48,7 @@ ms.locfileid: "91072357"
   
 - Не разрешайте пароли, в которых все символы введены из верхней строки клавиатуры.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Text.RegularExpressions.Regex>
 - [Безопасность веб-приложений ASP.NET](/previous-versions/aspnet/330a99hc(v=vs.100))

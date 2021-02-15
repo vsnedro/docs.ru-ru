@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вызвать процедуру, возвращающую значение (Visual Basic).
 title: Практическое руководство. Вызов процедуры, возвращающей значение
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - procedures [Visual Basic], returning a value
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-ms.openlocfilehash: 53589f84c6675d1e7ae2a593341e5dac747132a9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 74c7b6c9340537088ac631fc47f9ebf7b1a203cb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91083981"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466748"
 ---
 # <a name="how-to-call-a-procedure-that-returns-a-value-visual-basic"></a>Практическое руководство. Вызов процедуры, возвращающей значение (Visual Basic)
 
@@ -46,7 +47,7 @@ ms.locfileid: "91083981"
   
  [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры функций](./function-procedures.md)
 - [Параметры и аргументы процедуры](./procedure-parameters-and-arguments.md)

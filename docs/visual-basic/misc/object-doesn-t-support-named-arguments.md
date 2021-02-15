@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: объект не поддерживает именованные аргументы'
 title: Объект не поддерживает именованные аргументы
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID446
 ms.assetid: f4812db8-e85d-4d5b-b7c9-d54a1f850034
-ms.openlocfilehash: fd3077f67f2c13999cd23c63ba09cbb0bcc6946c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b4a90124d339d549358adf850a9f9b95c2f134c7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090564"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100478923"
 ---
 # <a name="object-doesnt-support-named-arguments"></a>Объект не поддерживает именованные аргументы
 
@@ -19,6 +20,6 @@ ms.locfileid: "91090564"
   
 - Указывайте аргументы позиционно при доступе к методам этого объекта. Дополнительные сведения о позициях и типах аргументов см. в документации по объекту.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы ошибок](../programming-guide/language-features/error-types.md)

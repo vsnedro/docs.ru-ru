@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Visual Basic языковых возможностей'
 title: Возможности языка
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic code, elements of
 - Visual Basic code
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
-ms.openlocfilehash: ae226520ecd7dff09023bcc88e610ff400c4019d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9d02d6e17c0f2bea852130c5e975a1ed315a0aba
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91057862"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468477"
 ---
 # <a name="visual-basic-language-features"></a>Возможности и элементы языка Visual Basic
 
@@ -20,7 +21,7 @@ ms.locfileid: "91057862"
   
  Если вы пока новичок в программировании, материал этой статьи поможет вам понять основные принципы создания кода. Поняв основные принципы, можно создавать мощные приложения с помощью Visual Basic.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Массивы](arrays/index.md)  
  Описывает возможность сделать код более компактным и мощным, объявляя и используя массивы с несколькими связанными значениями.  
@@ -56,7 +57,7 @@ ms.locfileid: "91057862"
  Описывает, что такое интерфейсы и как их можно использовать в приложениях.  
   
  [LINQ](linq/index.md)  
- Содержит ссылки на разделы, в которых представлены функции и программирование LINQ.  
+ Содержит ссылки на разделы, в которых описываются функции и программирование запросов (LINQ) Language-Integrated.  
   
  [Объекты и классы](objects-and-classes/index.md)  
  Описывает объекты и классы, методы их использования и взаимоотношения, а также предоставляемые ими свойства, методы и события.  

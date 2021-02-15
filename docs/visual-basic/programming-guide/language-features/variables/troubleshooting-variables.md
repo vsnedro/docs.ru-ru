@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье Устранение неполадок с переменными в Visual Basic
 title: Устранение неполадок, связанных с переменными
 ms.date: 07/20/2015
 helpviewer_keywords:
 - troubleshooting [Visual Basic], variables
 - variables [Visual Basic], troubleshooting
 ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
-ms.openlocfilehash: e2bcf0b779d98ea4b109ea6d33b69a15110d423c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6348ee8eb13ccd19d83c2809d1684396b94be67
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080170"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481640"
 ---
 # <a name="troubleshooting-variables-in-visual-basic"></a>Устранение неполадок, связанных с переменными, в Visual Basic
 
@@ -54,7 +55,7 @@ ms.locfileid: "91080170"
 
  Избегайте использования переменных с одинаковыми именами, но разными областями действия. При работе с другими сборками или проектами избегайте использования любых имен, определенных в их внешних компонентах, насколько это возможно. При наличии нескольких переменных с одним и тем же именем необходимо уточнить каждую ссылку на такую переменную. Для получения дополнительной информации см. [References to Declared Elements](../declared-elements/references-to-declared-elements.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Переменные](index.md)
 - [Объявление переменной](variable-declaration.md)

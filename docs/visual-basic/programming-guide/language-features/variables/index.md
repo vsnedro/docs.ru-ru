@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о переменных в Visual Basic
 title: Переменные
 ms.date: 07/20/2015
 helpviewer_keywords:
 - variables [Visual Basic]
 - values [Visual Basic], storing
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
-ms.openlocfilehash: bd6417033a6c2626d17ad003de6c637dd1e8adaa
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d00907e451fa09c6e9b6be990a24a4d39b386622
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080222"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481718"
 ---
 # <a name="variables-in-visual-basic"></a>Переменные в Visual Basic
 
@@ -37,7 +38,7 @@ ms.locfileid: "91080222"
 
  Как и переменная, *свойство* соответствует значению, к которому можно получить доступ. Но оно является более сложным, чем переменная. Свойство использует блоки кода, определяющие способ задания и получения его значения. Подробнее см. в разделе [Различия между свойствами и переменными в Visual Basic](../procedures/differences-between-properties-and-variables.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объявление переменной](variable-declaration.md)
 - [Объектные переменные](object-variables.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: назначение переменных объектов (Visual Basic)'
 title: Присваивание объектных переменных
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - assignment statements [Visual Basic], object variable assignment
 - Me keyword [Visual Basic], as object variable
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
-ms.openlocfilehash: 9ae1a307e8c886166d516140b7f100a411cedcfa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ac5e534a03d651a23e651e1049477b2bd0769b82
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410378"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481653"
 ---
 # <a name="object-variable-assignment-visual-basic"></a>Присваивание объектных переменных (Visual Basic)
 
@@ -32,7 +33,7 @@ thisObject = Form1
 thisObject = Nothing
 ```
 
-`Nothing`означает, что для переменной в настоящий момент не назначен объект.
+`Nothing` означает, что для переменной в настоящий момент не назначен объект.
 
 ## <a name="initialization"></a>Инициализация
 
@@ -73,7 +74,7 @@ Sub addStandardText(XmlDoc As System.Xml.XmlDocument)
 End Sub
 ```
 
-Каждый объект XML-документа может затем вызвать процедуру и передать его текущий экземпляр в качестве аргумента. Это продемонстрировано в следующем примере.
+Каждый объект XML-документа может затем вызвать процедуру и передать его текущий экземпляр в качестве аргумента. В следующем примере это показано.
 
 ```vb
 addStandardText(Me)
