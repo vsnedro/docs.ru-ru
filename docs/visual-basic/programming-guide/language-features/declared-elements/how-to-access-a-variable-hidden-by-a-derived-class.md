@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как получить доступ к переменной, скрытой производным классом (Visual Basic)
 title: Практическое руководство. Доступ к переменной, скрытой производным классом
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], referencing
 - variables [Visual Basic], accessing hidden
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
-ms.openlocfilehash: c5ff802a0f6e081acd00d7cdfab4a8296b4daad9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5ac1dd8afc8c32c91b748c8316d035d69468d887
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392861"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430057"
 ---
 # <a name="how-to-access-a-variable-hidden-by-a-derived-class-visual-basic"></a>Практическое руководство. Доступ к переменной, скрытой производным классом (Visual Basic)
 
@@ -45,7 +46,7 @@ ms.locfileid: "84392861"
     End Class
     ```
 
-    В предыдущем примере переменная объявляется `shadowString` в базовом классе и переобъявляется в производном классе. Процедура `showStrings` в производном классе отображает версию строки с тенью, если ее имя `shadowString` не является полным. После этого она отображает затененную версию, если `shadowString` дополнена `MyBase` ключевым словом.
+    В предыдущем примере переменная объявляется `shadowString` в базовом классе и переобъявляется в производном классе. Процедура `showStrings` в производном классе отображает версию строки с тенью, если ее имя `shadowString` не является полным. После этого она отображает затененную версию, если `shadowString` дополнена `MyBase`  ключевым словом.
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 

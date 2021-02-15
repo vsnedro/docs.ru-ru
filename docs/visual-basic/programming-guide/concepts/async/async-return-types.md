@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Асинхронные типы возвращаемых значения (Visual Basic)'
 title: Асинхронные типы возвращаемых значений
 ms.date: 07/20/2015
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
-ms.openlocfilehash: 5d19fc9831580412da24333be0885fce55384658
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 12a7f577a89ff8f8037de879f9e37d6fdb917aa8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396718"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438922"
 ---
 # <a name="async-return-types-visual-basic"></a>Async Return Types (Visual Basic) (Типы возвращаемых значений Async (Visual Basic))
 
@@ -81,7 +82,7 @@ textBox1.Text &= $"Value of result2 variable:   {result2}" & vbCrLf
 textBox1.Text &= $"Value of resultTask.Result:  {integerTask.Result}" & vbCrLf
 ```
 
-## <a name="task-return-type"></a><a name="BKMK_TaskReturnType"></a>Тип возвращаемого значения задачи
+## <a name="task-return-type"></a><a name="BKMK_TaskReturnType"></a> Тип возвращаемого значения задачи
 
 Асинхронные методы, не содержащие оператор return или содержащие оператор return, который не возвращает операнд, обычно имеют тип возврата <xref:System.Threading.Tasks.Task>. Такие методы будут [подпрограммными](../../language-features/procedures/sub-procedures.md) процедурами, если они были написаны для синхронного выполнения. Если для асинхронного метода вы используете тип возвращаемого значения `Task`, вызывающий метод может использовать оператор `Await` для приостановки выполнения вызывающего объекта до завершения вызванного асинхронного метода.
 
@@ -124,7 +125,7 @@ textBox1.Text &= vbCrLf & "Application can continue working while the Task runs.
 Await simpleTask
 ```
 
-## <a name="void-return-type"></a><a name="BKMK_VoidReturnType"></a>Тип возвращаемого значения void
+## <a name="void-return-type"></a><a name="BKMK_VoidReturnType"></a> Тип возвращаемого значения void
 
 Процедуры в основном используются `Sub` в обработчиках событий, где нет возвращаемого типа (называемого типом возвращаемого значения void в других языках). Тип возврата void также можно использовать для переопределения методов, возвращающих void, или для методов, выполняющих действия, которые можно классифицировать как "запустить и забыть". Тем не менее вы должны возвращать `Task` везде, где это возможно, поскольку нельзя ожидать асинхронный метод, возвращающий void. Любой вызывающий объект такого метода должен иметь возможность завершить свою работу, не дожидаясь завершения вызванного асинхронного метода, и он не должен зависеть ни от каких значений и исключений, создаваемых асинхронным методом.
 
@@ -149,7 +150,7 @@ Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.
 End Sub
 ```
 
-## <a name="complete-example"></a><a name="BKMK_Example"></a>Полный пример
+## <a name="complete-example"></a><a name="BKMK_Example"></a> Полный пример
 
 Следующий проект Windows Presentation Foundation (WPF) содержит примеры кода из этого раздела.
 
@@ -188,7 +189,7 @@ End Sub
 
      Простое окно, содержащее текстовое поле и кнопку, отобразится в окне **конструктора** для MainWindow.xaml.
 
-7. В **Обозреватель решений**откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
+7. В **Обозреватель решений** откройте контекстное меню файла MainWindow. XAML. vb и выберите пункт **Просмотреть код**.
 
 8. Замените код в MainWindow.xaml.vb на приведенный далее.
 
@@ -277,7 +278,7 @@ End Sub
     End Class
     ```
 
-9. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Запуск**.
+9. Нажмите клавишу F5, чтобы запустить программу, а затем нажмите кнопку **Start** .
 
      Должны отобразиться следующие выходные данные:
 
@@ -297,10 +298,10 @@ End Sub
     All done, exiting button-click event handler.
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Threading.Tasks.Task.FromResult%2A>
 - [Пошаговое руководство. Получение доступа к Интернету с помощью модификатора Async и оператора Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md) (Поток управления в асинхронных программах (Visual Basic))
 - [Асинхронный режим](../../../language-reference/modifiers/async.md)
-- [Оператор await](../../../language-reference/operators/await-operator.md)
+- [Оператор Await](../../../language-reference/operators/await-operator.md)

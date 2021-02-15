@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: не удается выполнить запись в файл журнала, так как запись в него приведет к превышению значения MaximumSize'
 title: Невозможно произвести запись в файл журнала, так как это приведет к превышению значения MaximumSize.
 ms.date: 07/20/2015
 f1_keywords:
 - vbrApplicationLog_FileExceedsMaximumSize
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
-ms.openlocfilehash: 95a7b9036e7c1494cd44c250b0580bab5144417b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 5c305c550f7a63183a0ac529adc788fa79b5794f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059461"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456943"
 ---
 # <a name="unable-to-write-to-log-file-because-writing-to-it-would-cause-it-to-exceed-maximumsize-value"></a>Невозможно произвести запись в файл журнала, так как это приведет к превышению значения MaximumSize.
 
@@ -29,7 +30,7 @@ ms.locfileid: "91059461"
   
 3. Задайте для свойства <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> значение <xref:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.DiscardMessages> , чтобы отменить сообщения без предупреждения, если журнал окажется слишком большим.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A>
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структуры принятия решений (Visual Basic)'
 title: Структуры решений
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - decision structures [Visual Basic]
 - conditional statements [Visual Basic], decision structures
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
-ms.openlocfilehash: 79c4949cd4d5b07d1b1d666b21467bf8db41ab3d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 76b63d2cdc238ec5590d11a6a802f55866990a3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095620"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480691"
 ---
 # <a name="decision-structures-visual-basic"></a>Структуры решений (Visual Basic)
 
@@ -49,7 +50,7 @@ Visual Basic позволяет тестировать условия и вып�
 > [!NOTE]
 > Для многих структур управления при щелчке ключевого слова все ключевые слова в структуре выделяются. Например, если щелкнуть `If` `If...Then...Else` конструкцию, `If` будут выделены все экземпляры,,, `Then` `ElseIf` `Else` и `End If` в конструкции. Чтобы перейти к следующему или предыдущему выделенному ключевому слову, нажмите клавиши CTRL + SHIFT + стрелка вниз или CTRL + SHIFT + стрелка вверх.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поток управления](index.md)
 - [Циклические структуры](loop-structures.md)

@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9c09fc381a161a9deea012d98d06ab57f2f7345e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99787725"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480548"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Параметры конфигурации для анализа кода
 
@@ -60,14 +60,14 @@ generated_code = true
 
 В следующей таблице показаны различные уровни серьезности правил, которые можно настроить для всех правил анализатора, включая правила [качества кода](quality-rules/index.md) и [стиля кода](style-rules/index.md) .
 
-| Severity | Реакция на событие во время сборки |
+| Значение конфигурации серьезности | Реакция на событие во время сборки |
 |-|-|
 | `error` | Нарушения отображаются как *ошибки* сборки и вызывают сбой сборок.|
 | `warning` | Нарушения отображаются как *предупреждения* сборки, но не вызывают сбои сборок (если только у вас не установлен параметр, чтобы обрабатывать предупреждения как ошибки). |
 | `suggestion` | Нарушения отображаются как *сообщения* сборки и как предложения в интегрированной среде разработки Visual Studio. |
 | `silent` | Нарушения не видны пользователю. |
 | `none` | Правило подавляется полностью. |
-| `default` | По умолчанию используется серьезность правила. |
+| `default` | По умолчанию используется серьезность правила. Уровни серьезности по умолчанию для каждого выпуска .NET перечислены в [репозитории Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). В этой таблице "Disabled" соответствует `none` , "Hidden" соответствует `silent` , а "info" соответствует `suggestion` . |
 
 > [!TIP]
 > Сведения о том, как на уровне серьезности правил в Visual Studio, см. в разделе [уровни серьезности](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
@@ -91,6 +91,12 @@ dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
 ```ini
 dotnet_analyzer_diagnostic.severity = <severity value>
 ```
+
+> [!IMPORTANT]
+> При настройке уровня серьезности для нескольких правил с одной записью либо для *категории* правил, либо для *всех* правил, уровень серьезности применяется только к правилам, [включенным по умолчанию](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). Чтобы включить правила, отключенные по умолчанию, необходимо выполнить одно из следующих действий.
+>
+> - Добавьте явную `dotnet_diagnostic.<rule ID>.severity = <severity>` запись конфигурации для каждого правила.
+> - Включите *все* правила, задав [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) для значение `AllEnabledByDefault` .
 
 #### <a name="precedence"></a>Приоритет
 

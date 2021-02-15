@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как управлять областью действия переменной (Visual Basic)
 title: Практическое руководство. Управление областью действия переменной
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - declared elements [Visual Basic], visibility
 - visibility [Visual Basic], variables
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
-ms.openlocfilehash: 2ce7c1700eec54542719e6e0880466ca136e86f6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6da599f76883cba545efbdf9570aa05770602a2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095437"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429875"
 ---
 # <a name="how-to-control-the-scope-of-a-variable-visual-basic"></a>Практическое руководство. Управление областью действия переменной (Visual Basic)
 
-Как правило, переменная находится в *области видимости*или видима для справки по всему региону, в котором она объявлена. В некоторых случаях *уровень доступа* переменной может повлиять на ее область.  
+Как правило, переменная находится в *области видимости* или видима для справки по всему региону, в котором она объявлена. В некоторых случаях *уровень доступа* переменной может повлиять на ее область.  
   
  Для получения дополнительной информации см. [Scope in Visual Basic](scope.md).  
   
@@ -91,7 +92,7 @@ Public strMsg As String
 
  Чем короче область переменной, тем меньше вероятность того, что вредоносный код может неправильно использовать его.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Область видимости в Visual Basic](scope.md)
 - [Время существования в Visual Basic](lifetime.md)
