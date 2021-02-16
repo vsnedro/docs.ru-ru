@@ -2,12 +2,12 @@
 title: Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 description: Узнайте, как использовать интерфейс IHttpClientFactory, доступный в .NET Core, начиная с версии 2.1, для создания экземпляров `HttpClient`, чтобы облегчить их применение в ваших приложениях.
 ms.date: 01/13/2021
-ms.openlocfilehash: 056a8982fe4331e7e680b33cf1f43785b48da7d6
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: fc5da088b1ed7573532dff101aff03d39a02a6f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189002"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429316"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Использование IHttpClientFactory для реализации устойчивых HTTP-запросов
 
@@ -27,7 +27,7 @@ ms.locfileid: "98189002"
 
 Чтобы решить указанные выше проблемы и обеспечить возможность управления экземплярами `HttpClient`, в .NET Core 2.1 был представлен интерфейс <xref:System.Net.Http.IHttpClientFactory>, который можно использовать для настройки и создания экземпляров `HttpClient` в приложении путем внедрения зависимостей. Также этот интерфейс предоставляет расширения для ПО промежуточного слоя на основе Polly, что позволяет использовать преимущества делегирования обработчиков в HttpClient.
 
-[Polly](http://www.thepollyproject.org/) — это библиотека для обеспечения обработки временных сбоев, которая позволяет разработчикам повысить устойчивость своих приложений, используя некоторые стандартные политики более эффективным и потокобезопасным способом.
+[Polly](https://thepollyproject.azurewebsites.net/) — это библиотека для обеспечения обработки временных сбоев, которая позволяет разработчикам повысить устойчивость своих приложений, используя некоторые стандартные политики более эффективным и потокобезопасным способом.
 
 ## <a name="benefits-of-using-ihttpclientfactory"></a>Преимущества использования IHttpClientFactory
 
@@ -197,7 +197,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
   <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
 
 - **Polly (библиотека для обеспечения отказоустойчивости .NET и обработки временных сбоев)**  
-  <http://www.thepollyproject.org/>
+  <https://thepollyproject.azurewebsites.net/>
   
 - **Использование IHttpClientFactory без внедрения зависимостей (проблема GitHub)**  
   <https://github.com/dotnet/extensions/issues/1345>

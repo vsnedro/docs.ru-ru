@@ -1,5 +1,5 @@
 ---
-description: 'Дополнительные сведения о: BC30439: константное выражение недоступно для представления в типе "<typename>'
+description: 'Дополнительные сведения о: BC30439: константное выражение недоступно для представления в типе " <typename> "'
 title: Константное выражение не может быть представлено как имеющее тип <typename>
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30439
 ms.assetid: 0a842906-3bc5-4946-8a37-3e3da883ef63
-ms.openlocfilehash: 763ed8a414d8dda3e950ae85a4b1152a459518a5
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 034278523fc25cea2e8bb6c749d4c6d412620372
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796747"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471374"
 ---
 # <a name="bc30439-constant-expression-not-representable-in-type-typename"></a>BC30439: константное выражение недоступно для представления в типе " \<typename> "
 
@@ -25,7 +25,7 @@ ms.locfileid: "99796747"
 
 1. Измените тип целевого объекта на другой, который может справиться с константой.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о константах](../../programming-guide/language-features/constants-enums/constants-overview.md)
 - [Константы и перечисления](../constants-and-enumerations.md)

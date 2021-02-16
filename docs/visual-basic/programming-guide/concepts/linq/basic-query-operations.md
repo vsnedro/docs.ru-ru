@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: основные операции запросов (Visual Basic)'
 title: Основные операции запроса
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - grouping data [LINQ in Visual Basic]
 - Select clause [LINQ in Visual Basic]
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
-ms.openlocfilehash: 6f4c58b15c33d8d2007069df88b2984e692df0a8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 1f8fbda83c21fe9032415d96ff2d7e184083a839
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078376"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428692"
 ---
 # <a name="basic-query-operations-visual-basic"></a>Основные операции запроса (Visual Basic)
 
-В этом разделе приведены краткие сведения о выражениях LINQ в Visual Basic и некоторых типичных операциях, выполняемых в запросе. Дополнительные сведения см. в следующих разделах:  
+В этом разделе приведены краткие сведения о выражениях Language-Integrated запросов (LINQ) в Visual Basic и некоторых типичных операциях, выполняемых в запросе. Дополнительные сведения см. в следующих разделах:  
   
  [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md) (Знакомство с LINQ в Visual Basic)  
   
@@ -159,7 +160,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  Дополнительные сведения о см `Group By` . в разделе [предложение GROUP BY](../../../language-reference/queries/group-by-clause.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [Приступая к работе с LINQ в Visual Basic](getting-started-with-linq.md)

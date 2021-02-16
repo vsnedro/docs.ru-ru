@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Фильтрация данных (Visual Basic)'
 title: Фильтрация данных
 ms.date: 07/20/2015
 ms.assetid: 7749519a-7edc-49fe-aef9-6a353864af6c
-ms.openlocfilehash: f7a1aa76dc93cc03952e55f5f8fc3f75176a3f9f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2e259209df35a89eb4730f79ffccfee7cb64b9e9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84383421"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428601"
 ---
 # <a name="filtering-data-visual-basic"></a>Фильтрация данных (Visual Basic)
 
@@ -21,7 +22,7 @@ ms.locfileid: "84383421"
 
 ## <a name="methods"></a>Методы
 
-|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
+|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
 |OfType|Выбирает значения в зависимости от возможности приведения их к указанному типу.|Не применяется|<xref:System.Linq.Enumerable.OfType%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OfType%2A?displayProperty=nameWithType>|
 |Where|Выбирает значения, основанные на функции предиката.|`Where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|

@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения о строках см. в Visual Basic
 title: Строки
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic code, strings
 - strings [Visual Basic], Visual Basic
 ms.assetid: 7e4c777c-ad69-46e2-8b9e-9be4033b1c96
-ms.openlocfilehash: 60755b7aa8911f9c13eba80080b388a812f29475
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 11e2268dfb6e4f772615655a3c691910f6858fab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072591"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429656"
 ---
 # <a name="strings-in-visual-basic"></a>Строки в Visual Basic
 
 В этом разделе описаны основные принципы использования строк в Visual Basic.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
 
  [Знакомство со строками в Visual Basic](introduction-to-strings.md)  
  Содержит список разделов, описывающих основные принципы использования строк в Visual Basic.  
