@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Использование вариативности для универсальных делегатов Func и Action (Visual Basic)
 title: Использование вариативности в универсальных методах-делегатах Func и Action
 ms.date: 07/20/2015
 ms.assetid: 36c3012f-b39c-493b-b90f-079b5912ac1b
-ms.openlocfilehash: f824d2422d67f1395d21a0863ca8c95d9f108989
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4a445d9ad1cf1bd6ca6e13bdd2e40545c6b28fe8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375762"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485241"
 ---
 # <a name="using-variance-for-func-and-action-generic-delegates-visual-basic"></a>Использование вариативности в универсальных методах-делегатах Func и Action (Visual Basic)
 
@@ -92,7 +93,7 @@ Class AddressBook
 End Class
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Ковариация и контрвариантность (Visual Basic)](index.md)
 - [Универсальные шаблоны](../../../../standard/generics/index.md)

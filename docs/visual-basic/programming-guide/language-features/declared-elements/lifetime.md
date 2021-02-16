@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: время существования в Visual Basic'
 title: Время существования
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - lifetime [Visual Basic], Visual Basic
 - lifetime [Visual Basic]
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
-ms.openlocfilehash: 67fe63eecd2aa0c134682708cdeddb21ba06db12
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7c95358209c61b42862f4e995d02a97dfb6e8487
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087496"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471465"
 ---
 # <a name="lifetime-in-visual-basic"></a>Время существования в Visual Basic
 
@@ -83,7 +84,7 @@ ms.locfileid: "91087496"
 
  В предыдущем примере можно создать то же время существования, объявляя `applesSold` на уровне модуля. Однако если изменить область переменной таким образом, процедура больше не будет иметь монопольный доступ к ней. Поскольку другие процедуры могут получить доступ к `applesSold` своему значению и изменить его значение, промежуточное Итого может быть ненадежным, а код может быть труднее поддерживать.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общий](../../../language-reference/modifiers/shared.md)
 - [Nothing](../../../language-reference/nothing.md)
@@ -94,4 +95,4 @@ ms.locfileid: "91087496"
 - [Переменные](../variables/index.md)
 - [Объявление переменной](../variables/variable-declaration.md)
 - [Устранение неполадок, связанных с типами данных](../data-types/troubleshooting-data-types.md)
-- [Статическое](../../../language-reference/modifiers/static.md)
+- [статически.](../../../language-reference/modifiers/static.md)

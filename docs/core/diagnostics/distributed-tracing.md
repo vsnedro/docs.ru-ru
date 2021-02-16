@@ -2,12 +2,12 @@
 title: Распределенная трассировка — .NET
 description: Общие сведения о распределенной трассировке .NET.
 ms.date: 02/02/2021
-ms.openlocfilehash: d21d2a978cfe58d89db689dec07107f089363912
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: d29c803dfec00474562abdc61ce65ea3f3faa133
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99640125"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431442"
 ---
 # <a name="net-distributed-tracing"></a>Распределенная трассировка .NET
 
@@ -79,7 +79,7 @@ ms.locfileid: "99640125"
 Первый шаг при публикации данных трассировки — создание экземпляра класса ActivitySource. ActivitySource — это класс, предоставляющий API для создания и запуска объектов Activity, а также для регистрации объектов ActivityListener для прослушивания событий Activity.
 
 ```csharp
-    internal static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
+    private static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
 ```
 
 #### <a name="best-practices"></a>Рекомендации

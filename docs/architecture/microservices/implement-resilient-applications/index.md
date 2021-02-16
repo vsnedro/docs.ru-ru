@@ -2,12 +2,12 @@
 title: Реализация устойчивых приложений
 description: Сведения об устойчивости — основном понятии в архитектуре микрослужб. Вам необходимо знать, как правильно обрабатывать возникающие временные сбои.
 ms.date: 01/30/2020
-ms.openlocfilehash: 46276a6b9b36a494bfae657275692ca9d5554d86
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3ed4474eaa1225e80f05db86965e4ba53b5d2301
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78847236"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429329"
 ---
 # <a name="implement-resilient-applications"></a>Реализация устойчивых приложений
 
@@ -20,7 +20,7 @@ ms.locfileid: "78847236"
 Многие отдельные компоненты приложения также должны включать функции мониторинга работоспособности. Следуя рекомендациям этой главы, можно создать приложение, которое будет продолжать работать, несмотря на временные простои или небольшие неисправности, возникающие в сложных и облачных развертываниях.
 
 >[!IMPORTANT]
-> Для реализации устойчивости с помощью [типизированных клиентов](./use-httpclientfactory-to-implement-resilient-http-requests.md) в приложении eShopOnContainer использовалась [библиотека Polly](http://www.thepollyproject.org/) вплоть до выпуска 3.0.0.
+> Для реализации устойчивости с помощью [типизированных клиентов](./use-httpclientfactory-to-implement-resilient-http-requests.md) в приложении eShopOnContainer использовалась [библиотека Polly](https://thepollyproject.azurewebsites.net/) вплоть до выпуска 3.0.0.
 >
 > Начиная с выпуска 3.0.0, устойчивость вызовов HTTP реализуется с помощью [сетки Linkerd](https://linkerd.io/), которая обеспечивает прозрачную и настраиваемую обработку повторных попыток в кластере Kubernetes, что избавляет от необходимости обрабатывать эти события в коде.
 >

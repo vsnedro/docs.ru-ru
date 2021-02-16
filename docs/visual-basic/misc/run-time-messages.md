@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Visual Basic Run-Time сообщения'
 title: Сообщения во время выполнения
 ms.date: 07/20/2015
 helpviewer_keywords:
 - errors [Visual Basic], run-time
 - run-time errors [Visual Basic], Visual Basic
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
-ms.openlocfilehash: 88c9d341064f5c8d85d4c27b7d9bc79114642610
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6e6367c8094d5a1d3eb3554cbc56e09cc5c8034a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91060708"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485813"
 ---
 # <a name="visual-basic-run-time-messages"></a>Сообщения времени выполнения в Visual Basic
 
@@ -554,6 +555,6 @@ ms.locfileid: "91060708"
   
  [Необходимо указать путь, который находится в текущей папке или в одной из ее вложенных папок](you-must-specify-path-that-is-under-the-current-folder-or-one-of-sub-folders.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Сообщения об ошибках](../language-reference/error-messages/index.md)

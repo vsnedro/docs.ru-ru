@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: User-Defined константы (Visual Basic)'
 title: Константы, определенные пользователем
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - constants [Visual Basic], user-defined
 - circular references between constants [Visual Basic]
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
-ms.openlocfilehash: 351bdb6963e278341c13e53ef19aea0876010aa9
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 290d4122249315ae3c6dc5e18ca4faefecb72044
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095646"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485228"
 ---
 # <a name="user-defined-constants-visual-basic"></a>Константы, определенные пользователем (Visual Basic)
 
@@ -36,7 +37,7 @@ ms.locfileid: "91095646"
   
  [!code-vb[VbEnumsTask#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#15)]  
   
-## <a name="scope-of-user-defined-constants"></a>Область определяемых пользователем констант  
+## <a name="scope-of-user-defined-constants"></a>Область действия констант User-Defined  
 
  `Const`Область действия инструкции аналогична области видимости переменной, объявленной в том же расположении. Указать область можно одним из следующих способов.  
   
@@ -52,14 +53,14 @@ ms.locfileid: "91095646"
   
 ### <a name="avoiding-circular-references"></a>Предотвращение циклических ссылок  
 
- Поскольку константы могут быть определены с точки зрения других констант, можно случайно создать *цикл*или циклическую ссылку между двумя или более константами. Цикл происходит при наличии двух или более открытых констант, каждая из которых определена в терминах другого, как показано в следующем примере:  
+ Поскольку константы могут быть определены с точки зрения других констант, можно случайно создать *цикл* или циклическую ссылку между двумя или более константами. Цикл происходит при наличии двух или более открытых констант, каждая из которых определена в терминах другого, как показано в следующем примере:  
   
  [!code-vb[VbEnumsTask#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#16)]  
 [!code-vb[VbEnumsTask#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#17)]  
   
  При возникновении цикла Visual Basic выдает ошибку компилятора.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Оператор Const](../../../language-reference/statements/const-statement.md)
 - [Типы данных констант и литералов](constant-and-literal-data-types.md)
