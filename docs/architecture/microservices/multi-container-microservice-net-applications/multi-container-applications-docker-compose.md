@@ -2,12 +2,12 @@
 title: Определение многоконтейнерного приложения с помощью docker-compose.yml
 description: Как указать композицию микрослужб для многоконтейнерного приложения с помощью docker-compose.yml.
 ms.date: 01/13/2021
-ms.openlocfilehash: 224b06c6a10834b42218746964f05b055d947235
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: fa8a5736905f6bae7fec8da35638048707bb6fa1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188794"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430564"
 ---
 # <a name="defining-your-multi-container-application-with-docker-composeyml"></a>Определение многоконтейнерного приложения с помощью docker-compose.yml
 
@@ -410,7 +410,7 @@ IdentityUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5105
 
 Переменные среды создаются и инициализируются разными способами в зависимости от среды узла (Linux, Windows, кластер Cloud и т. п.). Однако рекомендуется использовать ENV-файл. Файлы docker-compose поддерживает объявление переменных среды по умолчанию в ENV-файле. Эти значения для переменных среды являются значениями по умолчанию. Однако они могут быть переопределены значениями, которые, возможно, заданы в каждой из сред (ОС узла или переменные среды из кластера). Этот ENV-файл следует поместить в ту папку, из которой выполняется команда docker-compose.
 
-В следующем примере показан ENV-файл, аналогичный [ENV](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env)-файлу для приложения eShopOnContainers.
+В следующем примере показан ENV-файл, аналогичный [ENV](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/.env)-файлу для приложения eShopOnContainers.
 
 ```sh
 # .env file

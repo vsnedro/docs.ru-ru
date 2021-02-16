@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о циклических структурах (Visual Basic)
 title: Циклические структуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Do statement [Visual Basic], Do loops
 - conditional statements [Visual Basic], loop structures
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
-ms.openlocfilehash: 5019eaf219ad70f9c667356636d05ab69fc5a187
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 82ff36d8f5c05501fcff0f1d564e2613c9b78953
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077219"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480652"
 ---
 # <a name="loop-structures-visual-basic"></a>Циклические структуры (Visual Basic)
 
@@ -41,7 +42,7 @@ ms.locfileid: "91077219"
 
  `For Each`Конструкция... `Next` выполняет набор инструкций один раз для каждого элемента в коллекции. Вы указываете управляющую переменную цикла, но не нужно определять начальные или конечные значения для нее. Дополнительные сведения см. в разделе [For Each... Следующий оператор](../../../language-reference/statements/for-each-next-statement.md).  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Поток управления](index.md)
 - [Структуры решений](decision-structures.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе как ссылаться на текущий экземпляр объекта (Visual Basic).
 title: Практическое руководство. Ссылка на текущий экземпляр объекта
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - current instance
 - object variables [Visual Basic]
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
-ms.openlocfilehash: 64d21fe4aaf6fd34bf880373a7ab3067fb67820e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 84a52c9d0a8b1f588630b31d022490f37595850d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077063"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481744"
 ---
 # <a name="how-to-refer-to-the-current-instance-of-an-object-visual-basic"></a>Практическое руководство. Ссылка на текущий экземпляр объекта (Visual Basic)
 
@@ -32,7 +33,7 @@ ms.locfileid: "91077063"
   
      Несмотря `Me` на то, что ведет себя как объектная переменная, вы не можете объявить ее или присвоить ей что-либо. `Me` всегда ссылается на текущий экземпляр.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объектные переменные](object-variables.md)
 - [Присваивание объектных переменных](object-variable-assignment.md)

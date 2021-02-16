@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как выполнять запросы к базе данных с помощью LINQ (Visual Basic).
 title: Практическое руководство. Выполнение запросов к базе данных с помощью LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], how-to topics
 - query samples [Visual Basic]
 ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
-ms.openlocfilehash: 60dbe3b4e164e266202cac4abaea009869d08cc4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 9a5577b52fc9bb313717386ce921421a34928a4c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075269"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430603"
 ---
 # <a name="how-to-query-a-database-by-using-linq-visual-basic"></a>Практическое руководство. Выполнение запросов к базе данных с помощью LINQ (Visual Basic)
 
-LINQ позволяет легко получить доступ к сведениям о базе данных и выполнить запросы.  
+Language-Integrated query (LINQ) упрощает доступ к сведениям о базе данных и выполнение запросов.  
   
  В следующем примере показано, как создать новое приложение, которое выполняет запросы к базе данных SQL Server.  
   
@@ -28,7 +29,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ## <a name="to-create-a-connection-to-a-database"></a>Создание соединения с базой данных  
   
-1. В Visual Studio откройте **Обозреватель сервера** / **Обозреватель базы данных** , выбрав в **Server Explorer** / меню **вид** пункт Обозреватель сервера**Обозреватель базы данных** .  
+1. В Visual Studio откройте **Обозреватель сервера** / **Обозреватель базы данных** , выбрав в  / меню **вид** пункт Обозреватель сервера **Обозреватель базы данных** .  
   
 2. Щелкните правой кнопкой мыши элемент **подключения к данным** в **Обозреватель сервера** / **Обозреватель базы данных** а затем выберите команду **Добавить подключение**.  
   
@@ -44,7 +45,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ## <a name="to-add-tables-to-query-to-the-or-designer"></a>Добавление таблиц в запрос в реляционный конструктор O/R  
   
-1. В **Обозреватель сервера** / **Обозреватель базы данных**разверните подключение к базе данных Northwind. Разверните папку **Таблицы**.  
+1. В **Обозреватель сервера** / **Обозреватель базы данных** разверните подключение к базе данных Northwind. Разверните папку **Таблицы**.  
   
      Если вы закрыли конструктор O/R, его можно открыть повторно, дважды щелкнув файл Northwind. dbml, который вы добавили ранее.  
   
@@ -58,7 +59,7 @@ LINQ позволяет легко получить доступ к сведен
   
 ## <a name="to-add-code-to-query-the-database-and-display-the-results"></a>Добавление кода для запроса к базе данных и вывода результатов  
   
-1. Перетащите элемент управления из **области элементов**в <xref:System.Windows.Forms.DataGridView> форму Windows по умолчанию для проекта, Form1.  
+1. Перетащите элемент управления из **области элементов** в <xref:System.Windows.Forms.DataGridView> форму Windows по умолчанию для проекта, Form1.  
   
 2. Дважды щелкните Form1, чтобы добавить код в `Load` событие в форме.  
   
@@ -77,7 +78,7 @@ LINQ позволяет легко получить доступ к сведен
      [!code-vb[VbLINQToSQLHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#4)]  
     [!code-vb[VbLINQToSQLHowTos#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQtoSQLHowTos/VB/Form2.vb#5)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ](index.md)
 - [Запросы](../../../language-reference/queries/index.md)

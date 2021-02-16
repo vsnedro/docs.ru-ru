@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о структурах и других элементах программирования (Visual Basic)
 title: Структуры и другие элементы программирования
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], structure elements
 - nested structures [Visual Basic]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
-ms.openlocfilehash: 26c98adda7305783b0220141db35b08285b21554
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 62052389b617849566a3cd0c475a2eb5da9e61ca
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084090"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430590"
 ---
 # <a name="structures-and-other-programming-elements-visual-basic"></a>Структуры и другие элементы программирования (Visual Basic)
 
@@ -127,7 +128,7 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
  Структуры могут содержать другие структуры для произвольной глубины.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Простые типы данных](elementary-data-types.md)

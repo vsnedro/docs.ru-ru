@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как найти разность множеств между двумя списками (LINQ) (Visual Basic)
 title: Практическое руководство. Нахождение разности множеств между двумя списками (LINQ)
 ms.date: 07/20/2015
 ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
-ms.openlocfilehash: 1671cd32c0c0b8a3ff7fa6be87bd43dde9750776
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c877be03c3ff82d4be4814035a6401385d907e60
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100221"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483694"
 ---
 # <a name="how-to-find-the-set-difference-between-two-lists-linq-visual-basic"></a>Как найти разность множеств между двумя списками (LINQ) (Visual Basic)
 
