@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: отсутствует колесо мыши'
 title: Не обнаружено колесо мыши
 ms.date: 07/20/2015
 f1_keywords:
 - vbrMouse_NoWheelIsPresent
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
-ms.openlocfilehash: a9b468d876945a177f3e326a7dc37e6c8a80285d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c712903f41aa9f7c37c0cf1e3ffdc76edfd85b7f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078844"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100479105"
 ---
 # <a name="no-mouse-wheel-is-present"></a>Не обнаружено колесо мыши
 
@@ -23,7 +24,7 @@ ms.locfileid: "91078844"
   
 - Установите на компьютере мышь с колесом прокрутки.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [My. Computer. Mouse. WheelScrollLines](xref:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines)
 - [My. Computer. Mouse. WheelExists](xref:Microsoft.VisualBasic.Devices.Mouse.WheelExists)

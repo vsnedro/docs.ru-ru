@@ -1,5 +1,6 @@
 ---
-title: Вкл.
+description: 'Дополнительные сведения о: On (Visual Basic)'
+title: С
 ms.date: 07/20/2015
 f1_keywords:
 - vb.on
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - On keyword [Visual Basic]
 ms.assetid: 8619c328-1637-4f41-b466-cbe693f4fe73
-ms.openlocfilehash: fa854c4197f792b8cfd3d3d95b6e824c7a0aba1f
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b33ef07e9f7b7e3150b120fa2de547578e1619ea
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084337"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100478884"
 ---
 # <a name="on-visual-basic"></a>On (Visual Basic)
 
@@ -36,6 +37,6 @@ ms.locfileid: "91084337"
   
  [Оператор Option Strict](../language-reference/statements/option-strict-statement.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Ключевые слова](../language-reference/keywords/index.md)

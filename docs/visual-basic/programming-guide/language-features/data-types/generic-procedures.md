@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об общих процедурах см. в Visual Basic
 title: Универсальные процедуры
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - generics [Visual Basic], procedures
 - generic procedures [Visual Basic], type inference
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
-ms.openlocfilehash: 558601f038fccdcb9b94acb7c796e2b49fb6e6f4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c8f26d66f7b657e00382ea94ed0d6093211a3e96
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059201"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434710"
 ---
 # <a name="generic-procedures-in-visual-basic"></a>Generic Procedures in Visual Basic
 
@@ -69,7 +70,7 @@ End Sub
   
  Предыдущие вызовы для `MsgBox` отображают "0", "1" и "-1" соответственно.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Generic Types in Visual Basic](generic-types.md)
 - [Практическое руководство. Определение класса, реализующего одинаковую функциональность для разных типов данных](how-to-define-a-class-that-can-provide-identical-functionality.md)

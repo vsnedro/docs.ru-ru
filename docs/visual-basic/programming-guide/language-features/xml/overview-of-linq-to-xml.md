@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения см. в статье Общие сведения о LINQ to XML в Visual Basic
 title: Общие сведения о LINQ to XML
 ms.date: 07/20/2015
 helpviewer_keywords:
 - LINQ to XML [Visual Basic], about LINQ to XML
 - LINQ [Visual Basic], LINQ to XML
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
-ms.openlocfilehash: 4ec1c96bdca96a6e9b68b240c147b70536514d85
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e70998706f62076a2528ac646df29e0c7081cb3d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91099194"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480223"
 ---
 # <a name="overview-of-linq-to-xml-in-visual-basic"></a>Общие сведения о LINQ to XML в Visual Basic
 
 Visual Basic обеспечивает поддержку [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] через литералы XML и свойства осей XML. Это позволяет использовать знакомый, удобный синтаксис для работы с XML в коде Visual Basic. *XML-литералы* позволяют включать XML непосредственно в код. *Свойства оси XML* позволяют получать доступ к дочерним узлам, узлам-потомкам и атрибутам XML. Дополнительные сведения см. в статьях [Общие сведения о XML-литералах](xml-literals-overview.md) и [доступ к XML в Visual Basic](accessing-xml.md).  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] — это API-интерфейс программирования XML в памяти, предназначенный специально для использования преимуществ языковых запросов LINQ. Хотя интерфейсы API LINQ можно вызывать напрямую, только Visual Basic позволяет объявлять литералы XML и напрямую обращаться к свойствам осей XML.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] — API программирования XML в памяти, предназначенный специально для использования преимуществ Language-Integrated query (LINQ). Хотя интерфейсы API LINQ можно вызывать напрямую, только Visual Basic позволяет объявлять литералы XML и напрямую обращаться к свойствам осей XML.  
   
 > [!NOTE]
 > XML-литералы и свойства осей XML не поддерживаются в декларативном коде на странице ASP.NET. Чтобы использовать функции Visual Basic XML, разместите код на странице кода программной части в приложении ASP.NET.  
@@ -67,7 +68,7 @@ Visual Basic обеспечивает поддержку [!INCLUDE[sqltecxlinq](
   
  [!code-vb[VbXMLSamples#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples1.vb#4)]  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [XML](index.md)
 - [Создание XML в Visual Basic](creating-xml.md)
