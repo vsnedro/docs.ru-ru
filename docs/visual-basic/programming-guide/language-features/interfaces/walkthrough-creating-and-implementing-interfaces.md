@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Создание и реализация интерфейсов (Visual Basic)
 title: Создание и реализация интерфейсов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interface implementation [Visual Basic], walkthrough
 - interfaces [Visual Basic], creating
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-ms.openlocfilehash: 89e8f91a04b25b84bc783d5c4f4b91cf12426f72
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 058011d311fdecba626a59228816f9bced319c97
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405071"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468425"
 ---
 # <a name="walkthrough-creating-and-implementing-interfaces-visual-basic"></a>Пошаговое руководство. Создание и реализация интерфейсов (Visual Basic)
 
@@ -83,7 +84,7 @@ ms.locfileid: "84405071"
   
 ### <a name="to-test-the-implementation-of-the-interface"></a>Тестирование реализации интерфейса
   
-1. Щелкните правой кнопкой мыши форму запуска проекта в **Обозреватель решений**и выберите пункт **Просмотреть код**. Редактор отображает класс для начальной формы. По умолчанию вызывается форма запуска `Form1` .  
+1. Щелкните правой кнопкой мыши форму запуска проекта в **Обозреватель решений** и выберите пункт **Просмотреть код**. Редактор отображает класс для начальной формы. По умолчанию вызывается форма запуска `Form1` .  
   
 2. Добавьте в `testInstance` класс следующее поле `Form1` :  
   

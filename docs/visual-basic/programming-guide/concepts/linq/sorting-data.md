@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Сортировка данных (Visual Basic)'
 title: Сортировка данных
 ms.date: 07/20/2015
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
-ms.openlocfilehash: a5ccff745995ed7f41731cf98fb7c49d3247d994
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83e05b2af1b3421d004a87630cd5df43f2a21ae4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406798"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468555"
 ---
 # <a name="sorting-data-visual-basic"></a>Сортировка данных (Visual Basic)
 
@@ -21,7 +22,7 @@ ms.locfileid: "84406798"
 
 ## <a name="methods"></a>Методы
 
-|Имя метода|Описание:|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
+|Имя метода|Описание|Синтаксис выражения запроса Visual Basic|Дополнительные сведения|
 |-----------------|-----------------|------------------------------------------|----------------------|
 |OrderBy|Сортировка значений в возрастающем порядке.|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|
 |OrderByDescending|Сортировка значений в убывающем порядке.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|
@@ -147,10 +148,10 @@ MsgBox(sb.ToString())
 ' brown
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - <xref:System.Linq>
 - [Общие сведения о стандартных операторах запроса (Visual Basic)](standard-query-operators-overview.md)
-- [Предложение Order By](../../../language-reference/queries/order-by-clause.md)
+- [Предложение ORDER BY](../../../language-reference/queries/order-by-clause.md)
 - [How to: Sort Query Results](../../language-features/linq/how-to-sort-query-results-by-using-linq.md) (Практическое руководство. Сортировка результатов запроса)
 - [Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ) (Visual Basic)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

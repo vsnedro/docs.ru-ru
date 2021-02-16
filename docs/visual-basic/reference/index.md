@@ -1,16 +1,17 @@
 ---
+description: 'Узнайте подробнее о: Справочник по Visual Basic'
 title: Справочник
 ms.date: 07/20/2015
 helpviewer_keywords:
 - language reference
 - Visual Basic code, language reference
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
-ms.openlocfilehash: 7f4b375c350dca58aa1002402806113ec0f91b55
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d95a802a8bb4b53d71a4e8428aa1d6b2c0b5b65d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098765"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433475"
 ---
 # <a name="reference-visual-basic"></a>Справочник по Visual Basic
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Передача аргументов по положению и по имени (Visual Basic)'
 title: Передача аргументов по позиции и по имени
 ms.date: 02/01/2018
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - argument passing [Visual Basic], by position
 - arguments [Visual Basic], listing by name
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
-ms.openlocfilehash: 686b64977f086c8128e56298a0ed8c5aa0c51efa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2938638bbdeb411bec53f338371d4215140dc4a0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84364036"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466696"
 ---
 # <a name="passing-arguments-by-position-and-by-name-visual-basic"></a>Передача аргументов по позиции и по имени (Visual Basic)
 

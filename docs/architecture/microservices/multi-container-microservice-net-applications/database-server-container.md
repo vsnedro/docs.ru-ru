@@ -2,12 +2,12 @@
 title: Использование сервера баз данных, работающего в качестве контейнера
 description: Изучите важность использования сервера базы данных, работающего в качестве контейнера, только для разработки. Не для рабочей среды.
 ms.date: 01/13/2021
-ms.openlocfilehash: 1292bf37e3baaeb6284f6fba15b4bc7c9c17b4a7
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: f24e9561c2d3d950fd017403ff91d961e134d11f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188742"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424311"
 ---
 # <a name="use-a-database-server-running-as-a-container"></a>Использование сервера баз данных, работающего в качестве контейнера
 
@@ -15,7 +15,7 @@ ms.locfileid: "98188742"
 
 ## <a name="sql-server-running-as-a-container-with-a-microservice-related-database"></a>SQL Server, запущенный в качестве контейнера с базой данных для микрослужб
 
-В eShopOnContainers существует контейнер с именем `sqldata`, определенный в файле [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml), который запускает SQL Server для экземпляра Linux со всеми базами данных на SQL Server, необходимыми для микрослужб.
+В eShopOnContainers существует контейнер с именем `sqldata`, определенный в файле [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/docker-compose.yml), который запускает SQL Server для экземпляра Linux со всеми базами данных на SQL Server, необходимыми для микрослужб.
 
 Ключевой точкой микрослужб является то, что каждая микрослужба владеет связанными данными, поэтому она должна иметь собственную базу данных. Однако базы данных могут находиться где угодно. В этом случае все они находятся в одном контейнере, чтобы не усложнять требования к памяти Docker. Помните, что это решение является хорошим для разработки и, возможно, тестирования, но не для рабочей среды.
 

@@ -2,12 +2,12 @@
 title: Базовые типы
 description: 'Изучите основные основные типы, используемые в языке F #.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 659ac8424c62985affcca1741e1b2a74c9c3ee8d
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 2bfc9ba9370cb8ba1fcc1d42369c2551cbb57623
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557702"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456917"
 ---
 # <a name="basic-types"></a>Базовые типы
 
@@ -34,7 +34,7 @@ ms.locfileid: "88557702"
 |`unit`|Неприменимо|Указывает на отсутствие фактического значения. Тип имеет только одно формальное значение, которое обозначается `()` . Значение единицы, `()` , часто используется в качестве заполнителя, где требуется значение, но реальное значение недоступно или имеет смысл.|`()`|
 
 > [!NOTE]
-> С помощью типа [bigint](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-bigint.html) можно выполнять вычисления с целыми числами слишком большими для 64-разрядного целочисленного типа. `bigint` не считается базовым типом; это аббревиатура для `System.Numerics.BigInteger` .
+> С помощью типа можно выполнять вычисления с целыми числами слишком большими для 64-разрядного целочисленного типа `bigint` . `bigint` не считается базовым типом; это аббревиатура для `System.Numerics.BigInteger` .
 
 ## <a name="see-also"></a>См. также
 

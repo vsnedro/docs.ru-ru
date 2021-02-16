@@ -3,12 +3,12 @@ title: Пустые переменные — руководство по язы
 description: В этой статье приведены сведения о поддержке в C# пустых переменных (переменных, которым не присваиваются значения) и описаны способы их использования.
 ms.technology: csharp-fundamentals
 ms.date: 09/22/2020
-ms.openlocfilehash: 7562da880ff3136dfc04ce4061bafa8ed55f5a23
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 3c18fbb0bbb80c2c29c9f5d8334a5dd711b68cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99426922"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432638"
 ---
 # <a name="discards---c-guide"></a>Пустые переменные — руководство по языку C#
 
@@ -40,7 +40,7 @@ ms.locfileid: "99426922"
 
 Подробнее о деконструкции пользовательских типов с помощью пустых переменных: [Деконструкция кортежей и других типов](deconstruct.md#deconstructing-a-user-defined-type-with-discards).
 
-## <a name="pattern-matching-with-switch"></a>Сопоставление шаблонов с помощью switch
+## <a name="pattern-matching-with-switch"></a>Сопоставление шаблонов с `switch`
 
 *Шаблон пустой переменной* можно использовать при сопоставлении шаблонов с ключевым словом [switch](language-reference/keywords/switch.md). Каждое выражение всегда соответствует шаблону пустой переменной. (Его можно использовать с выражениями [is](language-reference/keywords/is.md). Но это случается редко, так как пустую переменную можно удалить без изменения ее значения.)
 

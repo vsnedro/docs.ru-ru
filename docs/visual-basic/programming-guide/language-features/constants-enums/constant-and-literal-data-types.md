@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константные и литеральные типы данных (Visual Basic)'
 title: Типы данных констант и литералов
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - literals [Visual Basic], coercing data type
 - declarations [Visual Basic], data types
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
-ms.openlocfilehash: 03d693653cd166bbf1096031f1a864b492e2e896
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e750b1e5746f935c7878e186d064060d0fa055dc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086300"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475439"
 ---
 # <a name="constant-and-literal-data-types-visual-basic"></a>Типы данных констант и литералов (Visual Basic)
 
@@ -63,7 +64,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`Single`|(нет)|F или!|  
 |`String`|"|(нет)|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Константы, определенные пользователем](user-defined-constants.md)
 - [Практическое руководство. Объявление константы](how-to-declare-a-constant.md)
