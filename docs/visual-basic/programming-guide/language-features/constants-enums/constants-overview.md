@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье Общие сведения о константах (Visual Basic)
 title: Общие сведения о константах
 ms.date: 07/20/2015
 helpviewer_keywords:
 - constants [Visual Basic]
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
-ms.openlocfilehash: 7f2a2dc140352588246d80a7feb46ce1f609b358
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: af5a64339c04306538fe1b9dc195a044aa89ab9f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086287"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475452"
 ---
 # <a name="constants-overview-visual-basic"></a>Общие сведения о константах (Visual Basic)
 
@@ -30,7 +31,7 @@ ms.locfileid: "91086287"
 
  Константа времени компиляции вычисляются во время компиляции кода, а константа времени выполнения может вычисляться только во время выполнения приложения. Константа времени компиляции будет иметь одинаковое значение при каждом запуске приложения, а константа времени выполнения может измениться каждый раз. Константы времени компиляции необходимы для таких случаев, как границы массива, выражения CASE или инициализаторы перечислителя.  
   
-## <a name="in-this-section"></a>в этом разделе  
+## <a name="in-this-section"></a>В этом разделе  
   
 |Определение|Термин|  
 |---|---|  
@@ -47,7 +48,7 @@ ms.locfileid: "91086287"
 |[Оператор Const](../../../language-reference/statements/const-statement.md)|Описывает `Const` инструкцию и ее использование.|  
 |[Оператор Option Strict](../../../language-reference/statements/option-strict-statement.md)|Описывает `Option Strict` инструкцию и ее использование.|  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Общие сведения о перечислениях](enumerations-overview.md)
 - [How to: Initialize an Array Variable in Visual Basic](../arrays/how-to-initialize-an-array-variable.md) (Практическое руководство. Инициализация переменной массива в Visual Basic)

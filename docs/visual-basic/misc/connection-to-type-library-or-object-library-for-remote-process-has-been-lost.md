@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: подключение к библиотеке типов или библиотеке объектов для удаленного процесса потеряно'
 title: Соединение с библиотекой типов или библиотекой объектов для вынесенного процесса потеряно
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID442
 ms.assetid: 9e3544e2-cfc9-463a-8c0c-ed82e5e6462f
-ms.openlocfilehash: 5d94c20688e6fc2efda6b0febc3d89d0039214c0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 371638a531b8dc47d05dc52bb1aaafc40b90885c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91084493"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463602"
 ---
 # <a name="connection-to-type-library-or-object-library-for-remote-process-has-been-lost"></a>Соединение с библиотекой типов или библиотекой объектов для вынесенного процесса потеряно
 
@@ -25,6 +26,6 @@ ms.locfileid: "91084493"
   
 4. В диалоговом окне **Ссылки** установите флажок рядом с объектом `Application` .  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы ошибок](../programming-guide/language-features/error-types.md)

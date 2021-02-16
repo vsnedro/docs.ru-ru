@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье Введение в LINQ (Visual Basic).
 title: Введение в LINQ
 ms.date: 07/20/2015
 ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
-ms.openlocfilehash: e99da74eb69511b92ddccfb42f8002adc7be83d1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b6be93bbf9b458ca19068961617ee08f67601edc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098285"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100426794"
 ---
 # <a name="introduction-to-linq-visual-basic"></a>Знакомство с LINQ (Visual Basic)
 
@@ -35,6 +36,6 @@ LINQ (Language-Integrated Query) — это новая возможность, 
   
 - Коллекции .NET, файлы, строки и т. д. [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [LINQ (Visual Basic)](index.md)

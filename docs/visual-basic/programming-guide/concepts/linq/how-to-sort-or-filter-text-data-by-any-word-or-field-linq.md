@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье как сортировать или фильтровать текстовые данные по любому слову или полю (LINQ) (Visual Basic)
 title: Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ)
 ms.date: 07/20/2015
 ms.assetid: 9df137fe-335b-46e0-aecf-ea8a9eddd4e3
-ms.openlocfilehash: 798f30d39b4f805001c8c28b9ad6212061550775
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 49fff8df58b41acf7c8a63b94e8d1c85eefec8ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397730"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434931"
 ---
 # <a name="how-to-sort-or-filter-text-data-by-any-word-or-field-linq-visual-basic"></a>Практическое руководство. Сортировка или фильтрация текстовых данных по любому слову или полю (LINQ) (Visual Basic)
 
@@ -15,7 +16,7 @@ ms.locfileid: "84397730"
 
 ### <a name="to-create-a-file-that-contains-data"></a>Создание файла с данными
 
-Скопируйте данные scores. CSV из раздела [как объединить содержимое из файлов разных форматов (LINQ) (Visual Basic)](how-to-join-content-from-dissimilar-files-linq.md) и сохранить его в папке решения.
+Скопируйте scores.csv данные из раздела [как присоединиться к содержимому из разных файлов (LINQ) (Visual Basic)](how-to-join-content-from-dissimilar-files-linq.md) и сохранить его в папке решения.
 
 ## <a name="example"></a>Пример
 

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: объекты и классы в Visual Basic'
 title: Объекты и классы
 ms.date: 05/26/2020
 helpviewer_keywords:
 - classes [Visual Basic]
 - objects [Visual Basic]
 ms.assetid: c68c5752-1006-46e1-975a-6717b62a42fc
-ms.openlocfilehash: 9e3cf262ef617a1ae5ee92bcc3d6fd5c691602f9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9cefcc117c9dd4ac42940f342dbf75d8ddb4f41d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600416"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462728"
 ---
 # <a name="objects-and-classes-in-visual-basic"></a>Объекты и классы Visual Basic
 
@@ -30,7 +31,7 @@ ms.locfileid: "84600416"
 
 ### <a name="create-an-object-from-a-class"></a>Создание объекта из класса
 
-1. Определите, из какого класса нужно создать объект, или определите собственный класс. Пример.
+1. Определите, из какого класса нужно создать объект, или определите собственный класс. Пример:
 
    ```vb
    Public Class Customer
@@ -256,7 +257,7 @@ End Sub
 
 В качестве примера объектов-контейнеров можно привести *коллекции*. Коллекции представляют собой группы однотипных перечисляемых объектов. Visual Basic поддерживает конкретный синтаксис в области [For Each... Оператор Next](../../../language-reference/statements/for-each-next-statement.md) , позволяющий выполнять итерацию по элементам коллекции. Кроме того, коллекции часто позволяют использовать свойство <xref:Microsoft.VisualBasic.Collection.Item%2A> для обращения к элементам по индексу или по уникальной строке. Коллекции иногда проще в использовании, чем массивы, поскольку они позволяют добавлять или удалять элементы без использования индексов. Благодаря простоте использования коллекции часто применяются для хранения форм и элементов управления.
 
-## <a name="related-topics"></a>Связанные темы
+## <a name="related-topics"></a>Связанные разделы
 
 [Пошаговое руководство. Определение классов](walkthrough-defining-classes.md)\
 Пошаговые инструкции по созданию класса.

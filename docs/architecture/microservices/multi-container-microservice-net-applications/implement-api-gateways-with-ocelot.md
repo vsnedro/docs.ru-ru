@@ -2,12 +2,12 @@
 title: Реализация шлюзов API с помощью Ocelot
 description: Узнайте, как реализовывать шлюзы API с помощью Ocelot и как использовать Ocelot в среде на базе контейнеров.
 ms.date: 03/02/2020
-ms.openlocfilehash: 5da8533eff394b587d123970742727484a7236ad
-ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
+ms.openlocfilehash: 3f8fcaac162d2bffd221f07b2e5061455d73e1bd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97678125"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429303"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>Реализация шлюзов API с помощью Ocelot
 
@@ -196,7 +196,7 @@ namespace OcelotApiGw
 
 Существует два раздела конфигурации: Массив объектов ReRoute и глобальная конфигурация GlobalConfiguration ReRoute — это объекты, которые указывают Ocelot, как обрабатывать вышестоящий запрос. Глобальная конфигурация может переопределять конкретные параметры объектов ReRoute. Это полезно, если вы не хотите управлять большим числом параметров ReRoute.
 
-Ниже приведен упрощенный пример [файла конфигурации ReRoute](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/ApiGateways/Web.Bff.Shopping/apigw/configuration.json) из одного из шлюзов API в eShopOnContainers.
+Ниже приведен упрощенный пример [файла конфигурации ReRoute](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/ApiGateways/Mobile.Bff.Shopping/apigw/configuration.json) из одного из шлюзов API в eShopOnContainers.
 
 ```json
 {

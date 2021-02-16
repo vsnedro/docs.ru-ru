@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: расширяющие и сужающие преобразования (Visual Basic)'
 title: Widening and Narrowing Conversions
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - data type conversion [Visual Basic], exceptions during conversion
 - conversions [Visual Basic], widening
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
-ms.openlocfilehash: c0e10f5593ce5c81002233516444e415571541f3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2ccd7d51b811aaf0f3e29dc0dc1730dffad2106b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058538"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468438"
 ---
 # <a name="widening-and-narrowing-conversions-visual-basic"></a>Расширяющие и сужающие преобразования (Visual Basic)
 
@@ -44,11 +45,11 @@ ms.locfileid: "91058538"
 |[Byte](../../../language-reference/data-types/byte-data-type.md)|`Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
 |[Short](../../../language-reference/data-types/short-data-type.md)|`Short`, `Integer`, `Long`, `Decimal`, `Single`, `Double`|  
 |[UShort](../../../language-reference/data-types/ushort-data-type.md)|`UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, `Double`|  
-|[Целое число](../../../language-reference/data-types/integer-data-type.md)|`Integer`,,, `Long` `Decimal` `Single` , `Double` <sup>2</sup>|  
+|[Integer](../../../language-reference/data-types/integer-data-type.md)|`Integer`,,, `Long` `Decimal` `Single` , `Double` <sup>2</sup>|  
 |[UInteger](../../../language-reference/data-types/uinteger-data-type.md)|`UInteger`, `Long` , `ULong` , `Decimal` , `Single` , `Double` <sup>2</sup>|  
 |[Long](../../../language-reference/data-types/long-data-type.md)|`Long`, `Decimal` , `Single` , `Double` <sup>2</sup>|  
 |[ULong](../../../language-reference/data-types/ulong-data-type.md)|`ULong`, `Decimal` , `Single` , `Double` <sup>2</sup>|  
-|[Decimal](../../../language-reference/data-types/decimal-data-type.md)|`Decimal`, `Single` , `Double` <sup>2</sup>|  
+|[Десятичное число](../../../language-reference/data-types/decimal-data-type.md)|`Decimal`, `Single` , `Double` <sup>2</sup>|  
 |[Single](../../../language-reference/data-types/single-data-type.md)|`Single`, `Double`|  
 |[Double](../../../language-reference/data-types/double-data-type.md)|`Double`|  
 |Любой перечислимый тип ([enum](../../../language-reference/statements/enum-statement.md))|Его базовый целочисленный тип и любой тип, к которому расширяется базовый тип.|  
@@ -98,7 +99,7 @@ ms.locfileid: "91058538"
   
 - <xref:System.OverflowException> — (только целочисленные типы), если преобразованное значение слишком велико для целевого типа  
   
- Если класс или структура определяет [функцию CType](../../../language-reference/functions/ctype-function.md) , которая будет служить оператором преобразования в этот класс или структуру или из этого класса или структуры, это `CType` может вызвать любое исключение, которое оно считается соответствующим. Кроме того, это `CType` может вызывать функции Visual Basic или методы .NET Framework, которые, в свою очередь, могут вызывать различные исключения.  
+ Если класс или структура определяет [функцию CType](../../../language-reference/functions/ctype-function.md) , которая будет служить оператором преобразования в этот класс или структуру или из этого класса или структуры, это `CType` может вызвать любое исключение, которое оно считается соответствующим. Кроме того, это `CType` может вызывать функции Visual Basic или методы платформа .NET Framework, которые, в свою очередь, могут вызывать различные исключения.  
   
 ## <a name="changes-during-reference-type-conversions"></a>Изменения во время преобразования ссылочного типа  
 
@@ -113,7 +114,7 @@ Dim square As cSquare = New cSquare
 shape = square  
 ```  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Типы данных](index.md)
 - [Преобразование типов в Visual Basic](type-conversions.md)

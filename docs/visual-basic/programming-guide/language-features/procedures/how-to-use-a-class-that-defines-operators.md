@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как использовать класс, определяющий операторы (Visual Basic)
 title: Практическое руководство. Использование класса, в котором определяются операторы
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
-ms.openlocfilehash: 083916a420bf4ad182536363ea46448f6b4c1da5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4bf5321fbf1868ad0214d0f4781df30dc8f92ac9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071356"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455747"
 ---
 # <a name="how-to-use-a-class-that-defines-operators-visual-basic"></a>Практическое руководство. Использование класса, в котором определяются операторы (Visual Basic)
 
@@ -42,7 +43,7 @@ ms.locfileid: "91071356"
   
  Проект должен содержать ссылки на System. Data и System.XML.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Процедуры операторов](./operator-procedures.md)
 - [Практическое руководство. Определение оператора](./how-to-define-an-operator.md)

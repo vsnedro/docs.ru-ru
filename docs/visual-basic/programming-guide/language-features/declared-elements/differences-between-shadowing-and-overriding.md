@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: различия между затенением и переопределением (Visual Basic)'
 title: Различия между удаленным управлением и переопределением
 ms.date: 07/20/2015
 helpviewer_keywords:
 - shadowing, vs. overriding
 - overriding, vs. shadowing
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
-ms.openlocfilehash: 98c073f8fa403416b2425431ff4334b990726f44
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 94e661c83b95448e7a78931b81c87b6e974059ed
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095451"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100485202"
 ---
 # <a name="differences-between-shadowing-and-overriding-visual-basic"></a>Различия между сокрытием и переопределением (Visual Basic)
 
@@ -54,7 +55,7 @@ ms.locfileid: "91095451"
   
 - Требуется свобода изменения типа элемента или последовательности вызовов.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [References to Declared Elements](references-to-declared-elements.md)
 - [Сокрытие в Visual Basic](shadowing.md)

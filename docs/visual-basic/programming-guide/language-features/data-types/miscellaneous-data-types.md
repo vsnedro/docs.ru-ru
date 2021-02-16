@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о различных типах данных (Visual Basic)
 title: Прочие типы данных
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Object data type [Visual Basic], data types
 - data types [Visual Basic], choosing
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
-ms.openlocfilehash: 45b44abc24b968f19b456cbe0be0f25efc8f0ce8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3875a3fc3027d573013470cb96c9482a0be6cbbf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095464"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462000"
 ---
 # <a name="miscellaneous-data-types-visual-basic"></a>Прочие типы данных (Visual Basic)
 
@@ -34,7 +35,7 @@ Visual Basic предоставляет несколько типов данны
   
  Преимущество `Object` типа данных заключается в том, что его можно использовать для хранения данных любого типа данных. Недостаток заключается в том, что вы получаете дополнительные операции, которые требуют больше времени на выполнение и делают приложение более медленным. При использовании `Object` переменной для типов значений требуется *Упаковка* и *распаковка*. При использовании его для ссылочных типов требуется *позднее связывание*.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Символы типов](type-characters.md)
 - [Простые типы данных](elementary-data-types.md)
