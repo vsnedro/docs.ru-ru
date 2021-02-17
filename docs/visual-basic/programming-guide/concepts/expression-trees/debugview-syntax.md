@@ -3,27 +3,27 @@ title: Синтаксис, используемый свойством DebugView
 description: В этой статье описывается специальный синтаксис, используемый свойством DebugView для получения строкового представления деревьев выражений.
 author: zspitz
 ms.author: wiwagn
-ms.date: 05/22/2019
+ms.date: 14/02/2021
 ms.topic: reference
 helpviewer_keywords:
 - expression trees
 - debugview
-ms.openlocfilehash: 98ceba37aa226fab68ae1c1028e2a1139b3b8e7e
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 8a4feac72c2cd79485f5733b16d65b52cc50ee6c
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74346869"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100584888"
 ---
-# <a name="debugview-syntax"></a>Синтаксис `DebugView`
+# <a name="debugview-syntax"></a>Синтаксис **DebugView**
 
-Свойство `DebugView` (доступно только при отладке) предоставляет строковое представление деревьев выражений. Большая часть синтаксиса достаточно проста для понимания; особые случаи описаны в разделах ниже.
+Свойство **DebugView** (доступно только при отладке) обеспечивает отрисовку строк деревьев выражений. Большая часть синтаксиса достаточно проста для понимания; особые случаи описаны в разделах ниже.
 
-За каждым примером следует блок комментариев, содержащий `DebugView`.
+За каждым примером следует блок комментариев, содержащий **DebugView**.
 
 ## <a name="parameterexpression"></a>ParameterExpression
 
-В начале имен переменных <xref:System.Linq.Expressions.ParameterExpression?displayProperty=nameWithType> отображается символ "$".
+В начале имен переменных <xref:System.Linq.Expressions.ParameterExpression> отображается символ "$".
 
 Если параметр не имеет имени, оно назначается автоматически, например `$var1` или `$var2`.
 
@@ -43,18 +43,18 @@ Dim numParam As ParameterExpression = Expression.Parameter(GetType(Integer))
 
 ## <a name="constantexpressions"></a>ConstantExpressions
 
-Для объектов <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType>, представляющих целочисленные значения, строки и `null`, отображается значение константы.
+Для объектов <xref:System.Linq.Expressions.ConstantExpression>, представляющих целочисленные значения, строки и `null`, отображается значение константы.
 
 Для некоторых числовых типов суффикс добавляется к значению:
 
-| Тип | Ключевое слово | Суффикс |
+| Type | Ключевое слово | Суффикс |
 |--|--|--|
-| <xref:System.UInt32> | [UInteger](../../../language-reference/data-types/uinteger-data-type.md) | U |
-| <xref:System.Int64> | [Long](../../../language-reference/data-types/long-data-type.md) | L |
-| <xref:System.UInt64> | [ULong](../../../language-reference/data-types/ulong-data-type.md) | UL |
-| <xref:System.Double> | [Double](../../../language-reference/data-types/double-data-type.md) | D |
-| <xref:System.Single> | [Single](../../../language-reference/data-types/single-data-type.md) | F |
-| <xref:System.Decimal> | [Decimal](../../../language-reference/data-types/decimal-data-type.md) | M |
+| <xref:System.UInt32?displayProperty=nameWithType> | [UInteger](../../../language-reference/data-types/uinteger-data-type.md) | U |
+| <xref:System.Int64?displayProperty=nameWithType> | [Long](../../../language-reference/data-types/long-data-type.md) | L |
+| <xref:System.UInt64?displayProperty=nameWithType> | [ULong](../../../language-reference/data-types/ulong-data-type.md) | UL |
+| <xref:System.Double?displayProperty=nameWithType> | [Double](../../../language-reference/data-types/double-data-type.md) | D |
+| <xref:System.Single?displayProperty=nameWithType> | [Single](../../../language-reference/data-types/single-data-type.md) | F |
+| <xref:System.Decimal?displayProperty=nameWithType> | [Десятичное число](../../../language-reference/data-types/decimal-data-type.md) | M |
 
 ### <a name="examples"></a>Примеры
 
@@ -74,7 +74,7 @@ Dim expr As ConstantExpression = Expression.Constant(num)
 
 ## <a name="blockexpression"></a>BlockExpression
 
-Если тип объекта <xref:System.Linq.Expressions.BlockExpression?displayProperty=nameWithType> отличается от типа последнего выражения в блоке, то тип отображается в угловых скобках (`<` и `>`). В противном случае тип объекта <xref:System.Linq.Expressions.BlockExpression> не отображается.
+Если тип объекта <xref:System.Linq.Expressions.BlockExpression> отличается от типа последнего выражения в блоке, то тип отображается в угловых скобках (`<` и `>`). В противном случае тип объекта <xref:System.Linq.Expressions.BlockExpression> не отображается.
 
 ### <a name="examples"></a>Примеры
 
@@ -99,7 +99,7 @@ Dim block As BlockExpression = Expression.Block(
 
 ## <a name="lambdaexpression"></a>LambdaExpression
 
-Объекты <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> отображаются вместе со своими типами делегатов.
+Объекты <xref:System.Linq.Expressions.LambdaExpression> отображаются вместе со своими типами делегатов.
 
 Если лямбда-выражение не имеет имени, оно назначается автоматически, например `#Lambda1` или `#Lambda2`.
 
@@ -129,7 +129,7 @@ Dim lambda As LambdaExpression = Expression.Lambda(Of Func(Of Integer))(
 
 ## <a name="labelexpression"></a>LabelExpression
 
-Если указать значение по умолчанию для объекта <xref:System.Linq.Expressions.LabelExpression?displayProperty=nameWithType>, оно будет отображаться перед объектом <xref:System.Linq.Expressions.LabelTarget?displayProperty=nameWithType>.
+Если указать значение по умолчанию для объекта <xref:System.Linq.Expressions.LabelExpression>, оно будет отображаться перед объектом <xref:System.Linq.Expressions.LabelTarget>.
 
 Маркер `.Label` указывает начало метки. Маркер `.LabelTarget` задает конечную цель перехода для целевого объекта.
 
