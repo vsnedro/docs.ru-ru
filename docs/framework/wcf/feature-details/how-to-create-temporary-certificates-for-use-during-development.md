@@ -6,12 +6,12 @@ helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: a249f0de00c45b1588762ffa0f826e890f961334
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 45df7b2c4dad1aa84ad39ca38fba8d2ec16c8fb3
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91607776"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100585346"
 ---
 # <a name="how-to-create-temporary-certificates-for-use-during-development"></a>Практическое руководство. Создание временных сертификатов для использования во время разработки
 
@@ -29,15 +29,15 @@ ms.locfileid: "91607776"
 Следующая команда создает самозаверяющий сертификат с именем субъекта "RootCA" в личном хранилище пользователя.
 
 ```powershell
-$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
+$rootCert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
 ```
 
 Необходимо экспортировать сертификат в PFX-файл, чтобы его можно было импортировать в нужное место на более позднем этапе. При экспорте сертификата с закрытым ключом требуется пароль для его защиты. Мы сохраняем пароль в и с `SecureString` помощью командлета [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) Экспортируйте сертификат с соответствующим закрытым ключом в PFX-файл. Мы также сохраняем только открытый сертификат в файле CRT с помощью командлета [Export-Certificate](/powershell/module/pkiclient/export-certificate) .
 
 ```powershell
-[System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
-[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
-Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
+[System.Security.SecureString]$rootCertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
+[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootCert.Thumbprint)"
+Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootCertPassword
 Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 ```
 
@@ -53,7 +53,7 @@ $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -
 
 ```powershell
 [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
-Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
+Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootCertPassword
 Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 ```
 
@@ -113,7 +113,7 @@ Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 
 Не забудьте удалить любые временные сертификаты корневого центра из папки **Доверенные корневые центры сертификации** и папки **Личное** , щелкнув правой кнопкой мыши сертификат и выбрав **Удалить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Работа с сертификатами](working-with-certificates.md)
 - [Практическое руководство. Просмотр сертификатов с помощью оснастки консоли MMC](how-to-view-certificates-with-the-mmc-snap-in.md)
