@@ -4,12 +4,12 @@ description: Справочник по свойствам и элементам 
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9cd387a4a8ad7f5b31a797d4d019a53799d926ff
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99802675"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432706"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Справочник по MSBuild для проектов пакета SDK для .NET
 
@@ -344,7 +344,7 @@ ms.locfileid: "99802675"
 
 ### <a name="analysislevel"></a>AnalysisLevel
 
-Свойство `AnalysisLevel` позволяет указать уровень анализа кода. Например, если требуется доступ к анализаторам кода предварительной версии, задайте для параметра `AnalysisLevel` значение `preview`.
+Свойство `AnalysisLevel` позволяет указать уровень анализа кода. Например, если требуется доступ к анализаторам кода предварительной версии, задайте для параметра `AnalysisLevel` значение `preview`.
 
 Значение по умолчанию:
 
@@ -366,6 +366,9 @@ ms.locfileid: "99802675"
 | `5.0` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
 | `5` | Используется набор правил, включенных для выпуска .NET 5.0, даже если доступны новые правила. |
 
+> [!NOTE]
+> Это свойство не влияет на анализ кода в проектах, которые не ссылаются на [пакет SDK проекта](overview.md), например, проекты на устаревших платформах .NET Framework, которые ссылаются на пакет NuGet Microsoft.CodeAnalysis.NetAnalyzers.
+
 ### <a name="analysismode"></a>AnalysisMode
 
 Начиная с .NET 5.0 пакет SDK для .NET поставляется со всеми [правилами качества кода "CA"](../../fundamentals/code-analysis/quality-rules/index.md). По умолчанию в качестве предупреждений сборки включены только [некоторые правила](../../fundamentals/code-analysis/overview.md#enabled-rules). Свойство `AnalysisMode` позволяет настроить набор правил, включенных по умолчанию. Можно либо переключиться на более агрессивный (неявный) режим анализа, либо более консервативный (явный) режим анализа. Например, если вы хотите включить все правила по умолчанию как предупреждения сборки, установите значение `AllEnabledByDefault`.
@@ -384,6 +387,9 @@ ms.locfileid: "99802675"
 | `AllEnabledByDefault` | Агрессивный или неявный режим означает, что все правила по умолчанию включены как предупреждения сборки. Вы можете выборочно [отказаться](../../fundamentals/code-analysis/configuration-options.md) от отдельных правил, чтобы отключить их. |
 | `AllDisabledByDefault` | Консервативный или явный режим означает, что все правила по умолчанию отключены. Можно выборочно [принять](../../fundamentals/code-analysis/configuration-options.md) отдельные правила, чтобы включить их. |
 
+> [!NOTE]
+> Это свойство не влияет на анализ кода в проектах, которые не ссылаются на [пакет SDK проекта](overview.md), например, проекты на устаревших платформах .NET Framework, которые ссылаются на пакет NuGet Microsoft.CodeAnalysis.NetAnalyzers.
+
 ### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
 
 Свойство `CodeAnalysisTreatWarningsAsErrors` позволяет настроить, следует ли обрабатывать предупреждения анализа качества кода (CAxxxx) как предупреждения и прекращать сборку. Если при построении проектов используется флаг `-warnaserror`, предупреждения [анализа качества кода .NET](../../fundamentals/code-analysis/overview.md#code-quality-analysis) также обрабатываются как ошибки. Если вы не хотите, чтобы предупреждения качества кода обрабатывались как ошибки, можно задать для свойства MSBuild `CodeAnalysisTreatWarningsAsErrors` значение `false` в файле проекта.
@@ -396,7 +402,7 @@ ms.locfileid: "99802675"
 
 ### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
 
-Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ качества кода .NET](../../fundamentals/code-analysis/overview.md#code-quality-analysis). Вы можете включить анализ кода .NET для проектов, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение `true`. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
+Для проектов, предназначенных для .NET 5.0 или более поздней версии, по умолчанию включен [анализ качества кода .NET](../../fundamentals/code-analysis/overview.md#code-quality-analysis). Вы можете включить анализ кода .NET для проектов в стиле пакета SDK, предназначенных для более ранних версий .NET, установив для свойства `EnableNETAnalyzers` значение `true`. Чтобы отключить анализ кода в любом проекте, присвойте этому свойству значение `false`.
 
 ```xml
 <PropertyGroup>

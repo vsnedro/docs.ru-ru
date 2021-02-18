@@ -3,18 +3,20 @@ title: Учебник по выполнению отладки утечки па
 description: Узнайте, как выполнить отладку утечки памяти в .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: 7fa87a411606e81ffe91348c3cbce5f258a6e4e2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 6764663eedc28cd75f9f68927a12ae5b2255d11b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538596"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431455"
 ---
 # <a name="debug-a-memory-leak-in-net-core"></a>Отладка утечки памяти в .NET Core
 
 **Эта статья относится к:** ✔️ пакету SDK для .NET Core 3.1 и более поздних версий
 
-В этом учебнике демонстрируются инструменты, позволяющие проанализировать утечку памяти в .NET Core.
+Когда приложение ссылается на объекты, которым больше не требуется выполнять нужную задачу, может произойти утечка памяти. При ссылке на такие объекты сборщик мусора не сможет освободить используемую память, что часто приводит к снижению производительности и может привести к возникновению <xref:System.OutOfMemoryException>.
+
+В этом учебнике демонстрируются средства для анализа утечки памяти в приложении .NET Core с помощью средств CLI для диагностики .NET. Если вы используете Windows, для отладки утечек памяти можно [использовать средства диагностики памяти Visual Studio](/visualstudio/profiling/memory-usage).
 
 Здесь используется пример приложения, в котором намеренно происходит утечка памяти. Пример предоставляется для выполнения упражнения. Вы можете проанализировать приложение, в котором также непреднамеренно происходит утечка памяти.
 
@@ -238,6 +240,7 @@ Found 2 roots.
 - [dotnet-counters](dotnet-counters.md) для проверки использования управляемой памяти
 - [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа
 - [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [Отладка утечек памяти с помощью Visual Studio](/visualstudio/profiling/memory-usage)
 
 ## <a name="next-steps"></a>Следующие шаги
 

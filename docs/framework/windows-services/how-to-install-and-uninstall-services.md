@@ -12,28 +12,28 @@ helpviewer_keywords:
 - uninstalling Windows services
 - installutil.exe tool
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
-ms.openlocfilehash: 6b7cfd8b241df4fe01c9c2a08888c88a1c749d13
-ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
+ms.openlocfilehash: 0803d9908a9b92df0d17537ee4db2d798a2a07cc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91609685"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433425"
 ---
 # <a name="how-to-install-and-uninstall-windows-services"></a>Практическое руководство. Установка и удаление служб Windows
 
-Если вы разрабатываете службу Windows с помощью .NET Framework, вы можете быстро установить приложение службы с помощью служебной программы командной строки [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) или [PowerShell](/powershell/scripting/overview). Если вы являетесь разработчиком и хотите создать службу Windows, которую пользователи могут устанавливать и удалять, можно использовать [набор инструментов WiX](https://wixtoolset.org/) или коммерческие средства, такие как [Advanced Installer](https://www.advancedinstaller.com/), [InstallShield](https://www.revenera.com/install/products/installshield.html) или другие. См. сведения о [создании пакета установщика (классическое приложение Windows)](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
+Если вы разрабатываете службу Windows с помощью .NET Framework, вы можете быстро установить приложение службы с помощью служебной программы командной строки [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) или [PowerShell](/powershell/scripting/overview). Если вы являетесь разработчиком и хотите создать службу Windows, которую пользователи могут устанавливать и удалять, можно использовать [набор инструментов WiX](https://wixtoolset.org/) или коммерческие средства, такие как [Advanced Installer](https://www.advancedinstaller.com/), [InstallShield](https://www.revenera.com/install/products/installshield.html) или другие. См. сведения о [создании пакета установщика (классическое приложение Windows)](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
 
 > [!WARNING]
-> Если вы хотите удалить службу на своем компьютере, не выполняйте процедуру, описанную в этой статье. Вместо этого определите, какая программа (или программный пакет) установила эту службу, а затем выберите **Приложения** в параметрах, чтобы удалить эту программу. Следует отметить, что многие службы являются составной частью ОС Windows. Если их удалить, это может привести к нестабильной работе системы.
+> Если вы хотите удалить службу на своем компьютере, не выполняйте процедуру, описанную в этой статье. Вместо этого определите, какая программа (или программный пакет) установила эту службу, а затем выберите **Приложения** в параметрах, чтобы удалить эту программу. Следует отметить, что многие службы являются составной частью ОС Windows. Если их удалить, это может привести к нестабильной работе системы.
 
 Чтобы использовать процедуру, описанную в этой статье, сначала необходимо добавить установщик службы в свою службу Windows. Дополнительные сведения см. в разделе [Пошаговое руководство: создание диспетчера служб Windows](walkthrough-creating-a-windows-service-application-in-the-component-designer.md).
 
 Проекты служб Windows нельзя запускать непосредственно из среды разработки Visual Studio путем нажатия клавиши F5. Перед запуском проекта необходимо установить службу в проекте.
 
 > [!TIP]
-> Запустите **обозреватель сервера** и убедитесь, что служба установлена или удалена. Дополнительные сведения см. в разделе [Практическое руководство. Использование обозревателя сервера в Visual Studio](https://support.microsoft.com/help/316649/how-to-use-the-server-explorer-in-visual-studio-net-and-visual-studio).
+> Запустите **обозреватель сервера** и убедитесь, что служба установлена или удалена.
 
-### <a name="install-your-service-manually-using-installutilexe-utility"></a>Установка службы вручную с помощью служебной программы InstallUtil.exe
+## <a name="install-using-installutilexe-utility"></a>Установка с помощью программы InstallUtil.exe
 
 1. В меню **Пуск** выберите каталог **Visual Studio \<*version*>** и затем **Командная строка разработчика для VS \<*version*>** .
 
@@ -53,7 +53,7 @@ ms.locfileid: "91609685"
      - Для 32-разрядной версии .NET Framework 4 или 4.5 и более поздних версий: если каталог установки Windows — *C:\Windows*, по умолчанию используется путь *C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe*.
      - Для 64-разрядной версии .NET Framework 4 или 4.5 и более поздних версий: по умолчанию используется путь *C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe*.
 
-### <a name="uninstall-your-service-manually-using-installutilexe-utility"></a>Удаление службы вручную с помощью служебной программы InstallUtil.exe
+## <a name="uninstall-using-installutilexe-utility"></a>Удаление с помощью служебной программы InstallUtil.exe
 
 1. В меню **Пуск** выберите каталог **Visual Studio \<*version*>** и затем **Командная строка разработчика для VS \<*version*>** .
 
@@ -67,7 +67,7 @@ ms.locfileid: "91609685"
 
 3. После удаления исполняемого файла для службы сама служба может по-прежнему присутствовать в реестре. В этом случае удалить запись службы из реестра можно с помощью команды [sc delete](/windows-server/administration/windows-commands/sc-delete).
 
-### <a name="install-your-service-manually-using-powershell"></a>Установка службы вручную с помощью PowerShell
+## <a name="install-using-powershell"></a>Установка с помощью PowerShell
 
 1. В меню **Пуск** выберите **Каталог Windows PowerShell** и **Windows PowerShell**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "91609685"
     New-Service -Name "YourServiceName" -BinaryPathName <yourproject>.exe
     ```
 
-### <a name="uninstall-your-service-manually-using-powershell"></a>Удаление службы вручную с помощью PowerShell
+## <a name="uninstall-using-powershell"></a>Удаление с помощью PowerShell
 
 1. В меню **Пуск** выберите **Каталог Windows PowerShell** и **Windows PowerShell**.
 

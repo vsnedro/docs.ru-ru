@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: -debug (Visual Basic)'
 title: -debug
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -debug compiler option [Visual Basic]
 - debug compiler option [Visual Basic]
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
-ms.openlocfilehash: 60c6e512a648f093bb9c70b5af86d5719e544adc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 44f1c1d233ff8ed38b6e96ef316bc118c269316b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408729"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467034"
 ---
 # <a name="-debug-visual-basic"></a>-debug (Visual Basic)
 

@@ -1,15 +1,19 @@
 ---
-title: 'Критическое изменение. Blazor: Обновлен список поддерживаемых веб-браузеров'
+title: 'Критическое изменение: Blazor. Обновлен список поддерживаемых веб-браузеров'
 description: Сведения о критическом изменении в ASP.NET Core 5.0 — Blazor. Обновлен список поддерживаемых веб-браузеров
 author: scottaddie
 ms.author: scaddie
 ms.date: 10/01/2020
-ms.openlocfilehash: 63b35aa8cb73bfb82c565007704375bac3737299
-ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
+no-loc:
+- Blazor
+- Blazor WebAssembly
+- Blazor Server
+ms.openlocfilehash: a14ab8d1afd4b662f61e30136d23e28ffbe2d496
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95759988"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431481"
 ---
 # <a name="blazor-updated-browser-support"></a>Blazor: Обновлен список поддерживаемых веб-браузеров
 
@@ -23,11 +27,11 @@ ms.locfileid: "95759988"
 
 ## <a name="old-behavior"></a>Старое поведение
 
-Blazor Server поддерживает Microsoft Internet Explorer 11 с достаточным количеством заполнений. Blazor Server и Blazor WebAssembly также работают в [устаревшей версии Microsoft Edge](https://support.microsoft.com/help/4533505/what-is-microsoft-edge-legacy).
+Blazor Server поддерживает Microsoft Internet Explorer 11 с достаточным количеством заполнений. Blazor Server и Blazor WebAssembly также работают в [Microsoft Edge прежних версий](https://support.microsoft.com/help/4533505/what-is-microsoft-edge-legacy).
 
 ## <a name="new-behavior"></a>Новое поведение
 
-Blazor Server в ASP.NET Core 5.0 не поддерживается в Microsoft Internet Explorer 11. Blazor Server и Blazor WebAssembly работают с ограниченной функциональностью в устаревшей версии Microsoft Edge.
+Blazor Server в ASP.NET Core 5.0 не поддерживается в Microsoft Internet Explorer 11. Blazor Server и Blazor WebAssembly не полностью работают в Microsoft Edge прежних версий.
 
 ## <a name="reason-for-change"></a>Причина изменения
 

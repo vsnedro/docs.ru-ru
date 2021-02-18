@@ -4,12 +4,16 @@ titleSuffix: ''
 description: Сведения о пакетах SDK для проектов .NET.
 ms.date: 09/17/2020
 ms.topic: conceptual
-ms.openlocfilehash: d0eb4291f4def9263f37d2d09f09ef43d40dfbac
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+no-loc:
+- EmbeddedResource
+- Compile
+- None
+ms.openlocfilehash: e5a6d0a1c988818e507936b567fa0188675cedc3
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99506400"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432651"
 ---
 # <a name="net-project-sdks"></a>Пакеты SDK для проектов .NET
 
@@ -25,7 +29,7 @@ ms.locfileid: "99506400"
 | `Microsoft.NET.Sdk.Web` | [Веб-пакет SDK](/aspnet/core/razor-pages/web-sdk) для .NET | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | [Пакет SDK Razor](/aspnet/core/razor-pages/sdk) для .NET |
 | `Microsoft.NET.Sdk.Worker` | Пакет SDK для службы рабочей роли в .NET |
-| `Microsoft.NET.Sdk.WindowsDesktop` | Пакет SDK для WinForms и WPF\* | <https://github.com/dotnet/winforms> и <https://github.com/dotnet/wpf> |
+| `Microsoft.NET.Sdk.WindowsDesktop` | [Пакет SDK для настольных систем](msbuild-props-desktop.md) в .NET, который включает Windows Forms (WinForms) и Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> и <https://github.com/dotnet/wpf> |
 
 Пакет SDK для .NET является базовым пакетом SDK для .NET. Другие пакеты SDK ссылаются на пакет SDK для .NET, а проекты, связанные с другими пакетами SDK, имеют все доступные им свойства пакета SDK для .NET. Например, веб-пакет SDK зависит от пакета SDK для .NET и пакета SDK для Razor.
 
@@ -91,20 +95,22 @@ ms.locfileid: "99506400"
 
 | Элемент           | Стандартная маска включения                              | Стандартная маска исключения                                                  | Стандартная маска удаления              |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
-| Компилятор           | \*\*/\*.cs (или другие расширения языка) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | Н/Д                      |
-| ВнедренныйРесурс  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | Н/Д                      |
-| Отсутствуют              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
+| Compile           | \*\*/\*.cs (или другие расширения языка) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | Н/Д                      |
+| EmbeddedResource  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | Н/Д                      |
+| None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
 > Папки `./bin` и `./obj`, которые представлены свойствами MSBuild `$(BaseOutputPath)` и `$(BaseIntermediateOutputPath)`, исключаются из стандартных масок исключения по умолчанию. Исключения представлены свойством [DefaultItemExcludes](msbuild-props.md#defaultitemexcludes).
+
+Пакет SDK для настольных систем в .NET имеет больше включений и исключений для WPF. Дополнительные сведения см. в разделе [Включения и исключения для WPF](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
 
 ### <a name="build-errors"></a>Ошибки сборки
 
 Если вы явным образом определите любой из этих элементов в файле проекта, скорее всего, произойдет ошибка сборки NETSDK1022 с примерно таким сообщением:
 
-  > "Duplicate 'Compile' items were included. The .NET SDK includes Compile items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. (Включены повторяющиеся элементы Compile. По умолчанию пакет SDK для .NET включает элементы Compile из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства "EnableDefaultCompileItems" значение "false", чтобы явно включить их в файл проекта.)
+> Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file. (Включены повторяющиеся элементы Compile. По умолчанию пакет SDK для .NET включает элементы Compile из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства EnableDefaultCompileItems значение false, чтобы явно включить их в файл проекта).
 
-  > "Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file" (Включены повторяющиеся элементы EmbeddedResource. По умолчанию пакет SDK для .NET включает элементы EmbeddedResource из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства EnableDefaultEmbeddedResourceItems значение false, чтобы явно включить их в файл проекта).
+> Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file. (Включены повторяющиеся элементы Compile. По умолчанию пакет SDK для .NET включает элементы Compile из каталога проекта. Можно удалить эти элементы из файла проекта или задать для свойства EnableDefaultCompileItems значение false, чтобы явно включить их в файл проекта).
 
 Чтобы устранить такую проблему, выполните любое из следующих действий:
 
