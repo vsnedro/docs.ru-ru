@@ -2,12 +2,12 @@
 title: Атрибуты (C#)
 description: Узнайте, как использовать атрибуты для связывания метаданных или декларативных сведений с кодом в C#. Атрибут можно запрашивать во время выполнения с помощью отражения.
 ms.date: 04/26/2018
-ms.openlocfilehash: 5c57838b649531d8e8fe89919771adf8830e7f54
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: f468b01d3f7832ed8c127f34e6d4e3c1bcf7901a
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924989"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100583672"
 ---
 # <a name="attributes-c"></a>Атрибуты (C#)
 
