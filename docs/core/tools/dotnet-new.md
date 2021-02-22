@@ -5,12 +5,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 09/04/2020
-ms.openlocfilehash: 3ee644f05ea5929ffc7b11054ef1d974b811f418
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: acaaf025555c46f720452b8c9d4f875b8656125a
+ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634459"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101096811"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
@@ -58,43 +58,43 @@ dotnet new -h|--help
 
   В следующей таблице представлены шаблоны, которые устанавливаются вместе с пакетом SDK для .NET. Язык по умолчанию для шаблона указан внутри квадратных скобок. Нажмите на ссылку с коротким названием, чтобы увидеть конкретные параметры шаблона.
 
-| Шаблоны                                    | короткое имя;                      | Язык     | Tags                                  | Введенный |
-|----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
-| Консольное приложение                          | [Консоль](#console)             | [C#], F#, VB | Общее/консоль                        | 1.0        |
-| Библиотека классов                                | [classlib](#classlib)           | [C#], F#, VB | Общее/библиотека                        | 1.0        |
-| Приложение WPF                              | [wpf](#wpf)                     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
-| Библиотека классов WPF                            | [wpflib](#wpf)                  | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
-| Библиотека настраиваемых элементов управления WPF                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
-| Библиотека пользовательских элементов управления WPF                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
-| Приложение Windows Forms (WinForms)         | [winforms](#winforms)           | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
-| Библиотека классов для Windows Forms (WinForms)       | [winformslib](#winforms)        | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
-| Служба Worker Service                               | [рабочая роль](#web-others)           | [C#]         | Общее/Рабочая роль/Веб                     | 3.0        |
-| Проект модульного теста                            | [mstest](#test)                 | [C#], F#, VB | Тест/MSTest                           | 1.0        |
-| Тестовый проект NUnit 3                         | [nunit](#nunit)                 | [C#], F#, VB | Тест/NUnit                            | 2.1.400    |
-| Элемент теста NUnit 3                            | `nunit-test`                    | [C#], F#, VB | Тест/NUnit                            | 2.2        |
-| Тестовый проект xUnit                           | [xunit](#test)                  | [C#], F#, VB | Тест/xUnit                            | 1.0        |
-| Компонент Razor                              | `razorcomponent`                | [C#]         | Веб/ASP.NET                           | 3.0        |
-| Страница Razor                                   | [page](#page)                   | [C#]         | Веб/ASP.NET                           | 2.0        |
-| MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Веб/ASP.NET                           | 2.0        |
-| MVC ViewStart                                | `viewstart`                     | [C#]         | Веб/ASP.NET                           | 2.0        |
-| Серверное приложение Blazor                            | [blazorserver](#blazorserver)   | [C#]         | Веб/Blazor                            | 3.0        |
-| Приложение WebAssembly Blazor                       | [blazorwasm](#blazorwasm)       | [C#]         | Веб/Blazor/WebAssembly                | 3.1.300    |
-| Пустой ASP.NET Core                           | [web](#web)                     | [C#], F#     | Веб/пусто                             | 1.0        |
-| Веб-приложение ASP.NET Core (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Веб/MVC                               | 1.0        |
-| Веб-приложение ASP.NET Core                         | [webapp, razor](#web-options)   | [C#]         | Веб/MVC и Razor Pages                   | 2.2, 2.0   |
-| ASP.NET Core с Angular                    | [angular](#spa)                 | [C#]         | MVC/Веб/SPA                           | 2.0        |
-| ASP.NET Core с React.js                   | [react](#spa)                   | [C#]         | MVC/Веб/SPA                           | 2.0        |
-| ASP.NET Core с React.js и Redux         | [reactredux](#reactredux)       | [C#]         | MVC/Веб/SPA                           | 2.0        |
-| Библиотека классов Razor                          | [razorclasslib](#razorclasslib) | [C#]         | Веб/Razor/Библиотека/Библиотека классов Razor | 2.1        |
-| Веб-API ASP.NET Core                         | [webapi](#webapi)               | [C#], F#     | Веб/веб-API                            | 1.0        |
-| Служба ASP.NET Core gRPC                    | [grpc](#web-others)             | [C#]         | Веб/gRPC                              | 3.0        |
-| Файл dotnet gitignore                        | `gitignore`                     |              | Config                                | 3.0        |
-| Файл global.json                             | [globaljson](#globaljson)       |              | Config                                | 2.0        |
-| Конфигурация NuGet                                 | `nugetconfig`                   |              | Config                                | 1.0        |
-| Локальное средство файла манифеста dotnet              | `tool-manifest`                 |              | Config                                | 3.0        |
-| Файл веб-конфигурации                                   | `webconfig`                     |              | Config                                | 1.0        |
-| Файл решения                                | `sln`                           |              | Решение                              | 1.0        |
-| Файл буфера протокола                         | [proto](#namespace)             |              | Веб/gRPC                              | 3.0        |
+| Шаблоны                                    | короткое имя;                        | Язык     | Tags                                  | Введенный |
+|----------------------------------------------|-----------------------------------|--------------|---------------------------------------|------------|
+| Консольное приложение                          | [`console`](#console)             | [C#], F#, VB | Общее/консоль                        | 1.0        |
+| Библиотека классов                                | [`classlib`](#classlib)           | [C#], F#, VB | Общее/библиотека                        | 1.0        |
+| Приложение WPF                              | [`wpf`](#wpf)                     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека классов WPF                            | [`wpflib`](#wpf)                  | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека настраиваемых элементов управления WPF                   | [`wpfcustomcontrollib`](#wpf)     | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Библиотека пользовательских элементов управления WPF                     | [`wpfusercontrollib`](#wpf)       | [C#], VB     | Общее/WPF                            | 3.0 (5.0 для VB)|
+| Приложение Windows Forms (WinForms)         | [`winforms`](#winforms)           | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
+| Библиотека классов для Windows Forms (WinForms)       | [`winformslib`](#winforms)        | [C#], VB     | Общее (WinForms)                       | 3.0 (5.0 для VB)|
+| Служба Worker Service                               | [`worker`](#web-others)           | [C#]         | Общее/Рабочая роль/Веб                     | 3.0        |
+| Проект модульного теста                            | [`mstest`](#test)                 | [C#], F#, VB | Тест/MSTest                           | 1.0        |
+| Тестовый проект NUnit 3                         | [`nunit`](#nunit)                 | [C#], F#, VB | Тест/NUnit                            | 2.1.400    |
+| Элемент теста NUnit 3                            | `nunit-test`                      | [C#], F#, VB | Тест/NUnit                            | 2.2        |
+| Тестовый проект xUnit                           | [`xunit`](#test)                  | [C#], F#, VB | Тест/xUnit                            | 1.0        |
+| Компонент Razor                              | `razorcomponent`                  | [C#]         | Веб/ASP.NET                           | 3.0        |
+| Страница Razor                                   | [`page`](#page)                   | [C#]         | Веб/ASP.NET                           | 2.0        |
+| MVC ViewImports                              | [`viewimports`](#namespace)       | [C#]         | Веб/ASP.NET                           | 2.0        |
+| MVC ViewStart                                | `viewstart`                       | [C#]         | Веб/ASP.NET                           | 2.0        |
+| Серверное приложение Blazor                            | [`blazorserver`](#blazorserver)   | [C#]         | Веб/Blazor                            | 3.0        |
+| Приложение WebAssembly Blazor                       | [`blazorwasm`](#blazorwasm)       | [C#]         | Веб/Blazor/WebAssembly                | 3.1.300    |
+| Пустой ASP.NET Core                           | [`web`](#web)                     | [C#], F#     | Веб/пусто                             | 1.0        |
+| Веб-приложение ASP.NET Core (Model-View-Controller) | [`mvc`](#web-options)             | [C#], F#     | Веб/MVC                               | 1.0        |
+| Веб-приложение ASP.NET Core                         | [`webapp, razor`](#web-options)   | [C#]         | Веб/MVC и Razor Pages                   | 2.2, 2.0   |
+| ASP.NET Core с Angular                    | [`angular`](#spa)                 | [C#]         | MVC/Веб/SPA                           | 2.0        |
+| ASP.NET Core с React.js                   | [`react`](#spa)                   | [C#]         | MVC/Веб/SPA                           | 2.0        |
+| ASP.NET Core с React.js и Redux         | [`reactredux`](#reactredux)       | [C#]         | MVC/Веб/SPA                           | 2.0        |
+| Библиотека классов Razor                          | [`razorclasslib`](#razorclasslib) | [C#]         | Веб/Razor/Библиотека/Библиотека классов Razor | 2.1        |
+| Веб-API ASP.NET Core                         | [`webapi`](#webapi)               | [C#], F#     | Веб/веб-API                            | 1.0        |
+| Служба ASP.NET Core gRPC                    | [`grpc`](#web-others)             | [C#]         | Веб/gRPC                              | 3.0        |
+| Файл dotnet gitignore                        | `gitignore`                       |              | Config                                | 3.0        |
+| Файл global.json                             | [`globaljson`](#globaljson)       |              | Config                                | 2.0        |
+| Конфигурация NuGet                                 | `nugetconfig`                     |              | Config                                | 1.0        |
+| Локальное средство файла манифеста dotnet              | `tool-manifest`                   |              | Config                                | 3.0        |
+| Файл веб-конфигурации                                   | `webconfig`                       |              | Config                                | 1.0        |
+| Файл решения                                | `sln`                             |              | Решение                              | 1.0        |
+| Файл буфера протокола                         | [`proto`](#namespace)             |              | Веб/gRPC                              | 3.0        |
 
 ## <a name="options"></a>Параметры
 
@@ -167,7 +167,7 @@ dotnet new -h|--help
 
 Каждый шаблон проекта может содержать дополнительные доступные параметры. Основные шаблоны имеют следующие дополнительные параметры:
 
-### <a name="console"></a>console
+### `console`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -191,11 +191,11 @@ dotnet new -h|--help
 
   Если указано — во время создания проекта не выполняется неявное восстановление. Доступно начиная с пакета SDK для .NET Core 2.2.
 
-**_
+***
 
-### <a name="classlib"></a>classlib
+### `classlib`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значения: `net5.0` или `netcoreapp<version>` для создания библиотеки классов .NET Core или `netstandard<version>` для создания стандартной библиотеки классов .NET. Значение по умолчанию для пакета SDK для .NET 5.0 — `net5.0`.
 
@@ -209,11 +209,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib
+### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> `wpf`, `wpflib`, `wpfcustomcontrollib`, `wpfusercontrollib`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значение по умолчанию — `net5.0`. Доступно, начиная с пакета SDK для .NET Core 3.1.
 
@@ -227,11 +227,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="winforms-winformslib"></a><a name="winforms"></a> winforms, winformslib
+### <a name="winforms-winformslib"></a><a name="winforms"></a> `winforms`, `winformslib`
 
-- _ *`--langVersion <VERSION_NUMBER>`**
+- **`--langVersion <VERSION_NUMBER>`**
 
   Задает свойство `LangVersion` в созданном файле проекта. Например, вам требуется `--langVersion 7.3`, чтобы использовать C# 7.3.
 
@@ -241,11 +241,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="worker-grpc"></a><a name="web-others"></a> worker, grpc
+### <a name="worker-grpc"></a><a name="web-others"></a> `worker`, `grpc`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Значение по умолчанию — `netcoreapp3.1`. Доступно, начиная с пакета SDK для .NET Core 3.1.
 
@@ -257,11 +257,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="mstest-xunit"></a><a name="test"></a>тmstest, xunit
+### <a name="mstest-xunit"></a><a name="test"></a> `mstest`, `xunit`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md). Параметр доступен, начиная с пакета SDK для .NET Core 3.0.
 
@@ -281,11 +281,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="nunit"></a>nunit
+### `nunit`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md).
 
@@ -307,11 +307,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="page"></a>страница
+### `page`
 
-- _ *`-na|--namespace <NAMESPACE_NAME>`**
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
   Пространство имен для сформированного кода. Значение по умолчанию — `MyApp.Namespace`.
 
@@ -319,19 +319,19 @@ dotnet new -h|--help
 
   Создает страницу без PageModel.
 
-**_
+***
 
-### <a name="viewimports-proto"></a><a name="namespace"></a> viewimports, proto
+### <a name="viewimports-proto"></a><a name="namespace"></a> `viewimports`, `proto`
 
-- _ *`-na|--namespace <NAMESPACE_NAME>`**
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
   Пространство имен для сформированного кода. Значение по умолчанию — `MyApp.Namespace`.
 
-**_
+***
 
-### <a name="blazorserver"></a>blazorserver
+### `blazorserver`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -398,11 +398,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="blazorwasm"></a>blazorwasm
+### `blazorwasm`
 
-- _ *`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   Указывает целевую [платформу](../../standard/frameworks.md).
 
@@ -502,11 +502,11 @@ dotnet new -h|--help
 
   Области для запроса вызова API из веб-приложения. Применяется только при проверке подлинности `SingleOrg` или `IndividualB2C` без указания узла ASP.NET Core. Значение по умолчанию — `user.read`.
 
-**_
+***
 
-### <a name="web"></a>web
+### `web`
 
-- _ *`--exclude-launch-settings`**
+- **`--exclude-launch-settings`**
 
   Исключает файл *launchSettings.json* из создаваемого шаблона.
 
@@ -531,11 +531,11 @@ dotnet new -h|--help
 
   Отключает протокол HTTPS.
 
-**_
+***
 
-### <a name="mvc-webapp"></a><a name="web-options"></a> mvc, webapp
+### <a name="mvc-webapp"></a><a name="web-options"></a> `mvc`, `webapp`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -622,11 +622,11 @@ dotnet new -h|--help
 
   Определяет, настроен ли проект для использования [компиляции среды выполнения Razor](/aspnet/core/mvc/views/view-compilation#runtime-compilation) в отладочных сборках. Параметр доступен начиная с пакета SDK для .NET Core 3.1.201.
 
-**_
+***
 
-### <a name="angular-react"></a><a name="spa"></a> angular, react
+### <a name="angular-react"></a><a name="spa"></a> `angular`, `react`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Доступно, начиная с пакета SDK для .NET Core 3.0.
   
@@ -664,11 +664,11 @@ dotnet new -h|--help
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
 
-**_
+***
 
-### <a name="reactredux"></a>reactredux
+### `reactredux`
 
-- _ *`--exclude-launch-settings`**
+- **`--exclude-launch-settings`**
 
   Исключает файл *launchSettings.json* из создаваемого шаблона.
 
@@ -693,11 +693,11 @@ dotnet new -h|--help
 
   Отключает протокол HTTPS.
 
-**_
+***
 
-### <a name="razorclasslib"></a>razorclasslib
+### `razorclasslib`
 
-- _ *`--no-restore`**
+- **`--no-restore`**
 
   Во время создания проекта не выполняется неявное восстановление.
 
@@ -705,11 +705,11 @@ dotnet new -h|--help
 
   Поддерживает добавление традиционных страниц Razor и представлений в дополнение к компонентам этой библиотеки. Доступно, начиная с пакета SDK для .NET Core 3.0.
 
-**_
+***
   
-### <a name="webapi"></a>webapi
+### `webapi`
 
-- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
   Тип проверки подлинности. Допустимые значения:
 
@@ -775,11 +775,11 @@ dotnet new -h|--help
 
   Во время создания проекта не выполняется неявное восстановление.
 
-**_
+***
 
-### <a name="globaljson"></a>globaljson
+### `globaljson`
 
-- _ *`--sdk-version <VERSION_NUMBER>`**
+- **`--sdk-version <VERSION_NUMBER>`**
 
   Задает версию пакета SDK для .NET, используемую в файле *global.json*.
 
