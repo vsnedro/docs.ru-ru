@@ -3,27 +3,27 @@ title: Синтаксис, используемый свойством DebugView
 description: В этой статье описывается специальный синтаксис, используемый свойством DebugView для получения строкового представления деревьев выражений.
 author: zspitz
 ms.author: wiwagn
-ms.date: 05/22/2019
+ms.date: 02/14/2021
 ms.topic: reference
 helpviewer_keywords:
 - expression trees
 - debugview
-ms.openlocfilehash: ba695fc808108c49a4eee3c70a305b24c91769d8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 278fc66f9f8cf7671b956126cec10c4464a5b81c
+ms.sourcegitcommit: 456b3cd82a87b453fa737b4661295070d1b6d684
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "67661716"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100639393"
 ---
-# <a name="debugview-syntax"></a>Синтаксис `DebugView`
+# <a name="debugview-syntax"></a>Синтаксис **DebugView**
 
-Свойство `DebugView` (доступно только при отладке) предоставляет строковое представление деревьев выражений. Большая часть синтаксиса достаточно проста для понимания; особые случаи описаны в разделах ниже.
+Свойство **DebugView** (доступно только при отладке) предоставляет строковое представление деревьев выражений. Большая часть синтаксиса достаточно проста для понимания; особые случаи описаны в разделах ниже.
 
-Каждый пример сопровождается комментарием с `DebugView`.
+Каждый пример сопровождается комментарием с **DebugView**.
 
 ## <a name="parameterexpression"></a>ParameterExpression
 
-В начале имен переменных <xref:System.Linq.Expressions.ParameterExpression?displayProperty=nameWithType> отображается символ `$`.
+В начале имен переменных <xref:System.Linq.Expressions.ParameterExpression> отображается символ `$`.
 
 Если параметр не имеет имени, оно назначается автоматически, например `$var1` или `$var2`.
 
@@ -43,11 +43,11 @@ ParameterExpression numParam =  Expression.Parameter(typeof(int));
 
 ## <a name="constantexpression"></a>ConstantExpression
 
-Для объектов <xref:System.Linq.Expressions.ConstantExpression?displayProperty=nameWithType>, представляющих целочисленные значения, строки и `null`, отображается значение константы.
+Для объектов <xref:System.Linq.Expressions.ConstantExpression>, представляющих целочисленные значения, строки и `null`, отображается значение константы.
 
 Для числовых типов, имеющих стандартные суффиксы, такие как литералы C#, суффикс добавляется к значению. В следующей таблице показаны суффиксы для различных числовых типов.
 
-| Type | Ключевое слово | Суффикс |
+| Тип | Ключевое слово | Суффикс |
 |--|--|--|
 | <xref:System.UInt32?displayProperty=nameWithType> | [uint](../../../language-reference/builtin-types/integral-numeric-types.md) | U |
 | <xref:System.Int64?displayProperty=nameWithType> | [long](../../../language-reference/builtin-types/integral-numeric-types.md) | L |
@@ -74,7 +74,7 @@ ConstantExpression expr = Expression.Constant(num);
 
 ## <a name="blockexpression"></a>BlockExpression
 
-Если тип объекта <xref:System.Linq.Expressions.BlockExpression?displayProperty=nameWithType> отличается от типа последнего выражения в блоке, то тип отображается в угловых скобках (`<` и `>`). В противном случае тип объекта <xref:System.Linq.Expressions.BlockExpression> не отображается.
+Если тип объекта <xref:System.Linq.Expressions.BlockExpression> отличается от типа последнего выражения в блоке, то тип отображается в угловых скобках (`<` и `>`). В противном случае тип объекта <xref:System.Linq.Expressions.BlockExpression> не отображается.
 
 ### <a name="examples"></a>Примеры
 
@@ -96,7 +96,7 @@ BlockExpression block =  Expression.Block(typeof(Object), Expression.Constant("t
 
 ## <a name="lambdaexpression"></a>LambdaExpression
 
-Объекты <xref:System.Linq.Expressions.LambdaExpression?displayProperty=nameWithType> отображаются вместе со своими типами делегатов.
+Объекты <xref:System.Linq.Expressions.LambdaExpression> отображаются вместе со своими типами делегатов.
 
 Если лямбда-выражение не имеет имени, оно назначается автоматически, например `#Lambda1` или `#Lambda2`.
 
@@ -120,7 +120,7 @@ LambdaExpression lambda =  Expression.Lambda<Func<int>>(Expression.Constant(1), 
 
 ## <a name="labelexpression"></a>LabelExpression
 
-Если указать значение по умолчанию для объекта <xref:System.Linq.Expressions.LabelExpression?displayProperty=nameWithType>, оно будет отображаться перед объектом <xref:System.Linq.Expressions.LabelTarget?displayProperty=nameWithType>.
+Если указать значение по умолчанию для объекта <xref:System.Linq.Expressions.LabelExpression>, оно будет отображаться перед объектом <xref:System.Linq.Expressions.LabelTarget>.
 
 Маркер `.Label` указывает начало метки. Маркер `.LabelTarget` задает конечную цель перехода для целевого объекта.
 

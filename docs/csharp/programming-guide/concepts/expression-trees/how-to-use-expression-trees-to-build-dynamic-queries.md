@@ -3,12 +3,12 @@ title: Выполнение запросов на основе состояни�
 description: Описание различных методов, которые код может использовать для динамического запроса в зависимости от состояния среды выполнения, путем изменения либо вызовов методов LINQ, либо деревьев выражений, переданных в эти методы.
 ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
-ms.openlocfilehash: 0dcf1696ca323ac4823c80c7993fef7873fd8ed5
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 5e015bbc69b61b783abd7eba9cfcf13c29d5c3be
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100433787"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100581946"
 ---
 # <a name="querying-based-on-runtime-state-c"></a>Выполнение запросов на основе состояния среды выполнения (C#)
 
@@ -35,7 +35,7 @@ ms.locfileid: "100433787"
 - Вызов дополнительных методов LINQ
 - Изменение дерева выражения, переданного в методы LINQ
 - Создайте выражение дерево выражения [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) с помощью фабричных методов в <xref:System.Linq.Expressions.Expression>
-- Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>
+- Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>.
 - Создание строк и использование [динамической библиотеки LINQ](https://dynamic-linq.net/)
 
 ## <a name="use-runtime-state-from-within-the-expression-tree"></a>Использование состояния среды выполнения из дерева выражений
@@ -53,7 +53,7 @@ ms.locfileid: "100433787"
 * Заключение текущего дерево выражения в оболочку в <xref:System.Linq.Expressions.MethodCallExpression>, который представляет вызов метода.
 * Передача инкапсулированного дерева выражения в поставщик, чтобы вернуть значение через метод <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> поставщика, либо чтобы вернуть объект переведенного запроса с помощью метода <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType>.
 
-Чтобы получить новый запрос, можно заменить исходный запрос на результат метода, возвращающего [IQueryable\<T>](xref:System.Linq.IQueryable%601). Это можно сделать на основе состояния среды выполнения, как показано в следующем примере:
+Чтобы получить новый запрос, можно заменить исходный запрос на результат метода, возвращающего [IQueryable\<T>](xref:System.Linq.IQueryable%601). Это можно сделать по условию на основе состояния среды выполнения, как показано в следующем примере:
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Added_method_calls":::
 
@@ -69,7 +69,7 @@ ms.locfileid: "100433787"
 
 ## <a name="construct-expression-trees-and-queries-using-factory-methods"></a>Создание деревьев выражений и запросов с помощью фабричных методов
 
-Во всех примерах нам известен тип элемента во время компиляции,&mdash;`string`&mdash;а соответственно и тип запроса&mdash;`IQueryable<string>`. Может потребоваться добавить компоненты в запрос любого типа элемента. Может потребоваться добавить различные компоненты в зависимости от типа элемента. Можно создавать деревья выражений с нуля, используя фабричные методы в <xref:System.Linq.Expressions.Expression?displayProperty=fullName>и таким образом адаптировать выражение к определенному типу элемента.
+Во всех примерах нам известен тип элемента во время компиляции,&mdash;`string`&mdash;а соответственно и тип запроса&mdash;`IQueryable<string>`. Может потребоваться добавить компоненты в запрос любого типа элемента или добавить различные компоненты в зависимости от типа элемента. Можно создавать деревья выражений с нуля, используя фабричные методы в <xref:System.Linq.Expressions.Expression?displayProperty=fullName> и таким образом адаптировать выражение в среде выполнения к определенному типу элемента.
 
 ### <a name="constructing-an-expressiontdelegate"></a>Создание [выражения\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -77,9 +77,7 @@ ms.locfileid: "100433787"
 
 [Выражение\<TDelegate>](xref:System.Linq.Expressions.Expression%601) наследуется от <xref:System.Linq.Expressions.LambdaExpression>, которое представляет собой полное лямбда-выражение следующего вида:
 
-```csharp
-Expression<Func<string, bool>> expr = x => x.StartsWith("a");
-```
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Compiler_generated_expression_tree":::
 
 <xref:System.Linq.Expressions.LambdaExpression> имеет два компонента:
 
@@ -90,25 +88,15 @@ Expression<Func<string, bool>> expr = x => x.StartsWith("a");
 
 * Определите объекты <xref:System.Linq.Expressions.ParameterExpression> для каждого из параметров (если таковые имеются) в лямбда-выражении с помощью фабричного метода <xref:System.Linq.Expressions.Expression.Parameter%2A>.
 
-    ```csharp
-    ParameterExpression x = Parameter(typeof(string), "x");
-    ```
+    :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_method_expression_tree_parameter":::
 
-* Создайте текст <xref:System.Linq.Expressions.LambdaExpression>, используя определенное <xref:System.Linq.Expressions.ParameterExpression>. Например, выражение, представляющее `x.StartsWith("a")`, может быть построено следующим образом:
+* Создайте текст <xref:System.Linq.Expressions.LambdaExpression>, используя заданные вами выражения <xref:System.Linq.Expressions.ParameterExpression> и фабричные методы в <xref:System.Linq.Expressions.Expression>. Например, выражение, представляющее `x.StartsWith("a")`, может быть построено следующим образом:
 
-    ```csharp
-    Expression body = Call(
-        x,
-        typeof(string).GetMethod("StartsWith", new [] {typeof(string)}),
-        Constant("a")
-    );
-    ```
+    :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_method_expression_tree_body":::
 
 * Заключите параметры и текст в [выражение\<TDelegate>](xref:System.Linq.Expressions.Expression%601) с типов времени компиляции, используя соответствующую перегрузку фабричного метода <xref:System.Linq.Expressions.Expression.Lambda%2A>:
 
-    ```csharp
-    Expression<Func<string, bool>> expr = Lambda<Func<string, bool>>(body, prm);
-    ```
+    :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_method_expression_tree_lambda":::
 
 В следующих разделах описывается сценарий, в котором может потребоваться создать [выражение\<TDelegate>](xref:System.Linq.Expressions.Expression%601) для передачи в метод LINQ, а также представлен полный пример того, как это сделать с помощью фабричных методов.
 
@@ -116,10 +104,7 @@ Expression<Func<string, bool>> expr = x => x.StartsWith("a");
 
 Допустим, у вас есть несколько типов сущностей:
 
-```csharp
-record Person(string LastName, string FirstName, DateTime DateOfBirth);
-record Car(string Model, int Year);
-```
+:::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Entities":::
 
 Для любого из этих типов сущностей необходимо отфильтровать и возвратить только те сущности, которые имеют заданный текст в одном из полей `string`. Для `Person` необходимо найти свойства `FirstName` и `LastName`:
 
@@ -149,7 +134,7 @@ var carsQry = new List<Car>()
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_expression_of_tdelegate_usage":::
 
-## <a name="adding-method-call-nodes-to-the-xrefsystemlinqiqueryables-expression-tree"></a>Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>
+## <a name="add-method-call-nodes-to-the-xrefsystemlinqiqueryables-expression-tree"></a>Добавление узлов вызова метода в дерево выражения <xref:System.Linq.IQueryable>
 
 При наличии <xref:System.Linq.IQueryable> вместо [IQueryable\<T>](xref:System.Linq.IQueryable%601) нельзя напрямую вызывать универсальные методы LINQ. В качестве альтернативы можно создать внутреннее дерево выражения, как показано выше, и использовать отражение для вызова соответствующего метода LINQ при передаче в дерево выражения.
 

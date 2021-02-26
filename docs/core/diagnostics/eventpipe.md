@@ -3,12 +3,12 @@ title: Общие сведения об EventPipe
 description: Узнайте об EventPipe и о том, как использовать его для трассировки приложений .NET для диагностики проблем с производительностью.
 ms.date: 11/09/2020
 ms.topic: overview
-ms.openlocfilehash: 00378c4f409b307afa9183e40de6078cdafd3ae7
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: f315beafabbd99bf78647b3f714fd76d93fcac28
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94820622"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582979"
 ---
 # <a name="eventpipe"></a>Каналы событий
 
@@ -94,3 +94,5 @@ EventPipe можно использовать для трассировки пр
   - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
   - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
   - `Microsoft-DotNETCore-SampleProfiler:0:5`
+
+  Дополнительные сведения о некоторых известных поставщиках в .NET см. в статье [Стандартные поставщики событий в .NET](./well-known-event-providers.md).

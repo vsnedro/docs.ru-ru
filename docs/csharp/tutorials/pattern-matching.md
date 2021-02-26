@@ -4,14 +4,14 @@ description: Этом руководстве показано, как испол
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
 ms.custom: contperf-fy21q1
-ms.openlocfilehash: be1c330973859df62cd4706e5f6f9ca4326fb221
-ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
+ms.openlocfilehash: b0ee4ee905c130876cf201cb3a1a441d54226c52
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98794824"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100582781"
 ---
-# <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>Учебник. Использование сопоставления шаблонов для создания управляемых типами и управляемых данными алгоритмов
+# <a name="tutorial-use-pattern-matching-to-build-type-driven-and-data-driven-algorithms"></a>Руководство. Использование сопоставления шаблонов для создания управляемых типами и управляемых данными алгоритмов
 
 В C# 7 появились базовые функции сопоставления шаблонов. Эти функции были расширены в C# 8 и C# 9 за счет новых выражений и шаблонов. Вы можете написать функции, которые работают так, будто вы расширили типы, которые могут быть в других библиотеках. Еще один вариант использования шаблонов — создать функции, которые требуются для приложения и не являются фундаментальными функциями для расширяемого типа.
 

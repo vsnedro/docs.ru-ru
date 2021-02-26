@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-trace — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-trace для получения трассировки .NET для запущенного процесса без собственного профилировщика с помощью .NET EventPipe.
 ms.date: 11/17/2020
-ms.openlocfilehash: 93698882e94f58eda84abebc277e1eacfe22a3da
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: abf98df6e31747ea3e8013fc77b246613a3402ad
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98189708"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100583003"
 ---
 # <a name="dotnet-trace-performance-analysis-utility"></a>Программа анализа производительности dotnet-trace
 
@@ -180,6 +180,8 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - `Provider` имеет формат `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`;
   - `KeyValueArgs` имеет формат `[key1=value1][;key2=value2]`.
 
+  Дополнительные сведения о некоторых известных поставщиках в .NET см. в статье [Стандартные поставщики событий в .NET](./well-known-event-providers.md).
+
 - **`-- <command>` (только для целевых приложений, использующих .NET 5.0)**
 
   После параметров конфигурации коллекции пользователь может добавить `--`, а затем команду для запуска приложения .NET с помощью среды выполнения версии не ниже 5.0. Это может быть полезно при диагностике проблем, происходящих на ранних этапах процесса, таких как проблема с производительностью при запуске или ошибки загрузчика и модуля привязки.
@@ -195,6 +197,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > Чтобы получить трассировку с помощью `dotnet-trace`, ее необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя. В противном случае средство не сможет установить соединение с целевым процессом.
+
+> [!NOTE]
+> Если появится сообщение об ошибке, подобное сообщению `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, вы пытаетесь использовать средство `dotnet-trace`, разрядность которого не соответствует требуемой целевым процессом. Скачайте средство с соответствующей разрядностью по ссылке, приведенной в разделе [Установка](#install).
 
 ## <a name="dotnet-trace-convert"></a>dotnet-trace convert
 

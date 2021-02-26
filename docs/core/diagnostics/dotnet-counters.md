@@ -2,12 +2,12 @@
 title: Средство диагностики dotnet-counters — .NET CLI
 description: Узнайте, как установить и использовать средство CLI dotnet-counter для нерегламентированного мониторинга работоспособности и анализа производительности первого уровня.
 ms.date: 11/17/2020
-ms.openlocfilehash: 1842b1fb9cde0e0b7a570456766cbfdeb64c5896
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 1c802e33602c2d8f18600b9771a1f68e722d8fdf
+ms.sourcegitcommit: f0fc5db7bcbf212e46933e9cf2d555bb82666141
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188586"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100583309"
 ---
 # <a name="investigate-performance-counters-dotnet-counters"></a>Исследование счетчиков производительности (dotnet-counter)
 
@@ -236,6 +236,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 > [!NOTE]
 > Для мониторинга метрик с помощью `dotnet-counters` переменную необходимо запустить от имени пользователя, запустившего целевой процесс, или от имени привилегированного пользователя.
+
+> [!NOTE]
+> Если появится сообщение об ошибке, подобное сообщению `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, вы пытаетесь использовать средство `dotnet-counters`, разрядность которого не соответствует требуемой целевым процессом. Скачайте средство с соответствующей разрядностью по ссылке, приведенной в разделе [Установка](#install).
 
 ### <a name="examples"></a>Примеры
 
