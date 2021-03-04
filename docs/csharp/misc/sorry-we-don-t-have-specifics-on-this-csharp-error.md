@@ -737,12 +737,12 @@ f1_keywords:
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: c16698fbbf42e0967978a3502243793835f541c5
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 21d74d5a4f8eb406c3a0e48f56e4df479f222183
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216906"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103339"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-c-error"></a>К сожалению, конкретные сведения об этой ошибке C# отсутствуют.
 
@@ -758,5 +758,5 @@ ms.locfileid: "99216906"
 
 - [Руководство по программированию на C#](../programming-guide/index.md)
 - [Справочник по C#](../language-reference/index.md)
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)
 - [Дополнительные ресурсы для программистов Visual C#](../tour-of-csharp/index.md)

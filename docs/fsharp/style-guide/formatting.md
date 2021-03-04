@@ -2,12 +2,12 @@
 title: Рекомендации по форматированию кода F#
 description: 'Ознакомьтесь с рекомендациями по форматированию кода F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: b4b70d86b36f2ba50318cb50e54d65cc6abff450
-ms.sourcegitcommit: f8cd3ef517ee177c99feed944824c27d208cc0d1
+ms.openlocfilehash: 6f1cf8decbaf02aa7d5e202010d4c240c24bdcf9
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98570233"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103677"
 ---
 # <a name="f-code-formatting-guidelines"></a>Рекомендации по форматированию кода F#
 
@@ -501,13 +501,23 @@ type Volume =
 
 ## <a name="formatting-discriminated-unions"></a>Форматирование размеченных объединений
 
+Использование пробела перед параметрами, заключенными в круглые скобки/кортежи, в случаи размеченного объединения:
+
+```fsharp
+// OK
+let opt = Some ("A", 1)
+
+// Not OK
+let opt = Some("A", 1)
+```
+
 Экземпляры с различенными объединениями, разделенными по нескольким строкам, должны предоставлять новой области с отступами следующие данные.
 
 ```fsharp
 let tree1 =
     BinaryNode
-        (BinaryNode(BinaryValue 1, BinaryValue 2),
-         BinaryNode(BinaryValue 3, BinaryValue 4))
+        (BinaryNode (BinaryValue 1, BinaryValue 2),
+         BinaryNode (BinaryValue 3, BinaryValue 4))
 ```
 
 Закрывающая круглая скобка также может находиться на новой строке:
@@ -515,8 +525,8 @@ let tree1 =
 ```fsharp
 let tree1 =
     BinaryNode(
-        BinaryNode(BinaryValue 1, BinaryValue 2),
-        BinaryNode(BinaryValue 3, BinaryValue 4)
+        BinaryNode (BinaryValue 1, BinaryValue 2),
+        BinaryNode (BinaryValue 3, BinaryValue 4)
     )
 ```
 

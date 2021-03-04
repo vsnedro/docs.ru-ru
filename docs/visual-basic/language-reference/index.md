@@ -11,18 +11,18 @@ helpviewer_keywords:
 - language reference, Visual Basic
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-ms.openlocfilehash: 47a299437b5f3ceab1cb24b8a09666366c546a64
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 01a696d5faf4f33efd0f54aee7ba62a8d9f29467
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99731036"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103859"
 ---
 # <a name="visual-basic-language-reference"></a>Справочник по языку Visual Basic
 
 В этом разделе содержатся справочные сведения о различных аспектах языка Visual Basic.  
   
-## <a name="in-this-section"></a>В этом разделе  
+## <a name="in-this-section"></a>в этом разделе  
 
  [Условные обозначения и соглашения о коде](typographic-and-code-conventions.md)  
  Суммирует сведения о том, как ключевые слова, заполнители и другие элементы языка форматируются в документации по Visual Basic.  
@@ -42,7 +42,7 @@ ms.locfileid: "99731036"
  [Типы данных](data-types/index.md)  
  Документирует типы данных, доступные в Visual Basic.  
   
- [Директивы](directives/index.md)  
+ [Директивы](./directives/disable-enable.md)  
  Документирует директивы компилятора, доступные в Visual Basic.  
   
  [Функции](functions/index.md)  
@@ -81,10 +81,10 @@ ms.locfileid: "99731036"
  [XML-литералы](xml-literals/index.md)  
  Приводит ссылки на сведения об использовании XML-литералов для включения XML непосредственно в код.  
   
- [Сообщения об ошибках](error-messages/index.md)  
+ [сообщения об ошибках](error-messages/index.md)  
  Содержит список Visual Basic компилятора и сообщений об ошибках во время выполнения, а также справку по их обработке.  
   
-## <a name="related-sections"></a>См. также  
+## <a name="related-sections"></a>Связанные разделы  
 
  [Компилятор Visual Basic с интерфейсом командной строки](../reference/command-line-compiler/index.md)  
  Описывает использование компилятора командной строки в качестве альтернативы компиляции программ из интегрированной среды разработки (IDE) Visual Studio.

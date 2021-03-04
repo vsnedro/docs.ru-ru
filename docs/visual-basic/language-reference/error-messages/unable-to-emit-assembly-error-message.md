@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30145
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
-ms.openlocfilehash: 015ab6e1d186495d72bddd65678ab15088c0f1b2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 393571f5b1fab518f379bbd6f4e6f1cb62a74b26
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99674887"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104787"
 ---
 # <a name="bc30145-unable-to-emit-assembly-error-message"></a>BC30145: не удалось выпустить сборку: \<error message>
 
@@ -39,8 +39,6 @@ ms.locfileid: "99674887"
 
 3. Откройте [Командная строка разработчика для Visual Studio](../../../framework/tools/developer-command-prompt-for-vs.md).
 
-   В Windows 10 введите **командную строку разработчика** в поле поиска на панели задач. Затем выберите **Командная строка разработчика для VS 2017** в списке результатов.
-
 4. Измените каталог на каталог, в который нужно поместить обертку сборки.
 
 5. Введите следующую команду:
@@ -60,9 +58,9 @@ ms.locfileid: "99674887"
 
 6. В Visual Studio добавьте ссылку на сборку .NET в только что созданный файл.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Sn.exe (средство строгих имен)](../../../framework/tools/sn-exe-strong-name-tool.md)
 - [Практическое руководство. Создание пары открытого и закрытого ключей](../../../standard/assembly/create-public-private-key-pair.md)
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)

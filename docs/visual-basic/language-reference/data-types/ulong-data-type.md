@@ -17,18 +17,18 @@ helpviewer_keywords:
 - ULong data type
 - UL literal type characters [Visual Basic]
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.openlocfilehash: 9082fc9444f0754c60a6aa3f9b58db1d833349b8
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 5e47fc49e8e0a6df4d1fcc70174a8519752fd3e1
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792093"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104826"
 ---
 # <a name="ulong-data-type-visual-basic"></a>Тип данных ULong (Visual Basic)
 
 Содержит 64-разрядные (8-байтные) целые числа без знака в диапазоне от 0 до 18446744073709551615 (более 1,84 раза больше 10 ^ 19).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используйте `ULong` тип данных для хранения двоичных данных, которые слишком велики для `UInteger` , или наибольшего возможного целого числа без знака.
 
@@ -67,7 +67,7 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 
 - **Отрицательные числа.** Так как `ULong` является неподписанным типом, он не может представлять отрицательное число. При использовании оператора унарного минуса ( `-` ) в выражении, результатом которого является тип `ULong` , Visual Basic преобразует выражение в `Decimal` First.
 
-- **Соответствие CLS.** `ULong`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications/standards/Ecma-335.htm) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
+- **Соответствие CLS.** `ULong`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
 
 - **Вопросы взаимодействия.** Если вы взаимодействуете с компонентами, которые не написаны для платформа .NET Framework, например автоматизации или COM-объекты, помните, что такие типы, как, `ulong` могут иметь разную ширину данных (32 бит) в других средах. При передаче аргумента 32-bit в такой компонент объявите его как `UInteger` вместо `ULong` в управляемом коде Visual Basic.
 
@@ -79,7 +79,7 @@ Dim number = &H_00_00_0A_96_2F_AC_14_D7ul
 
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.UInt64?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.UInt64>
 - [Типы данных](index.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC42033
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed
-ms.openlocfilehash: 8af1ca5e3f733278054300c2a79134817c56cf5c
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 051ee0e8ec8b87be4d5feeac8298c0e7a71baea7
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99797111"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103885"
 ---
 # <a name="bc42033-bad-checksum-value-non-hex-digits-or-odd-number-of-hex-digits"></a>BC42033: неправильное значение контрольной суммы, нешестнадцатеричные цифры или нечетное число шестнадцатеричных цифр
 
@@ -33,7 +33,7 @@ ms.locfileid: "99797111"
 
 3. Если предупреждение не пропадает или вы не используете ASP.NET, соберите сведения об условиях ее возникновения и уведомите службу технической поддержки Майкрософт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Обзор ASP.NET](/aspnet/overview)
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)

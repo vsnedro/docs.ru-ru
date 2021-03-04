@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30655
 ms.assetid: 756db378-e758-48a9-88ff-496bc55bc0b6
-ms.openlocfilehash: aea1a80c0dbab60a57f8255837fbeba442b3623a
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 21d979789b5b04a0c2ef11753202124994ffa46e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100455214"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103898"
 ---
 # <a name="bc30655-unable-to-find-required-file-filename"></a>BC30655: не удается найти требуемый файл " \<filename> "
 
@@ -25,6 +25,6 @@ ms.locfileid: "100455214"
 
 - Переустановите Visual Studio.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)
