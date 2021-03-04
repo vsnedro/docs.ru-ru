@@ -15,18 +15,18 @@ helpviewer_keywords:
 - data types [Visual Basic], integral
 - SByte data type
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-ms.openlocfilehash: e6e314a34469083433289c0fff9b404d4549824d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: a6a63ec742cf4a93080c9cc2f9906c5c6c21f0a8
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99792171"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102102897"
 ---
 # <a name="sbyte-data-type-visual-basic"></a>Тип данных SByte (Visual Basic)
 
 Содержит 8-битные (1-байтные) целые числа со знаком в диапазоне от-128 до 127.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используйте `SByte` тип данных для хранения целочисленных значений, не требующих полной ширины данных `Integer` или даже половины ширины данных `Short` . В некоторых случаях среда CLR может `SByte` одновременно упаковать переменные и сэкономить потребление памяти.
 
@@ -65,7 +65,7 @@ Dim number As SByte = &H_F9
 
 ## <a name="programming-tips"></a>Советы по программированию
 
-- **Соответствие CLS.** `SByte`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications/standards/Ecma-335.htm) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
+- **Соответствие CLS.** `SByte`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
 
 - **Расширяющие.** `SByte`Тип данных расширяется до `Short` , `Integer` ,,, `Long` `Decimal` `Single` и `Double` . Это означает, что можно преобразовать `SByte` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.
 
@@ -73,7 +73,7 @@ Dim number As SByte = &H_F9
 
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.SByte?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.SByte?displayProperty=nameWithType>
 - [Типы данных](index.md)
