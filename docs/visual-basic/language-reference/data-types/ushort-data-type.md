@@ -17,18 +17,18 @@ helpviewer_keywords:
 - UShort data type
 - US literal type characters [Visual Basic]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-ms.openlocfilehash: 9c709e2110aef4281c348f697408044a191314c6
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 43c18bad3e24e14c28d2ca3d5d88170d584e55a8
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99774984"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106648"
 ---
 # <a name="ushort-data-type-visual-basic"></a>Тип данных UShort (Visual Basic)
 
 Содержит 16-разрядные (2-байтные) целые числа без знака в диапазоне от 0 до 65 535.  
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
  Используйте `UShort` тип данных для хранения двоичных данных, размер которых слишком велик `Byte` .  
   
@@ -67,7 +67,7 @@ Dim number = &H_5826us
   
 - **Отрицательные числа.** Так как `UShort` является неподписанным типом, он не может представлять отрицательное число. При использовании оператора унарного минуса ( `-` ) в выражении, результатом которого является тип `UShort` , Visual Basic преобразует выражение в `Integer` First.  
   
-- **Соответствие CLS.** `UShort`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications/standards/Ecma-335.htm) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
+- **Соответствие CLS.** `UShort`Тип данных не является частью [спецификации](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) CLS, поэтому CLS-совместимый код не может использовать компонент, который его использует.
   
 - **Расширяющие.** `UShort`Тип данных расширяется до `Integer` ,,,,, `UInteger` `Long` `ULong` `Decimal` `Single` и `Double` . Это означает, что можно преобразовать `UShort` в любой из этих типов без возникновения <xref:System.OverflowException?displayProperty=nameWithType> ошибки.  
   
@@ -75,7 +75,7 @@ Dim number = &H_5826us
   
 - **Тип Framework.** В .NET Framework данный тип соответствует структуре <xref:System.UInt16?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - <xref:System.UInt16>
 - [Типы данных](index.md)

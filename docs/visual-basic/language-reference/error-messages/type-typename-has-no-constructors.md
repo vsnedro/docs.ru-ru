@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30251
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
-ms.openlocfilehash: 32ae854e9f1b037a17d9c378ce7ee4a3f9b43ad2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 3961ba557ad2afd9c94f071b6615573419d7325b
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99641178"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106583"
 ---
 # <a name="bc30251-type-typename-has-no-constructors"></a>BC30251: тип " \<typename> " не имеет конструкторов
 
@@ -31,7 +31,7 @@ ms.locfileid: "99641178"
 
 4. Если ошибка не устранена, соберите сведения об условиях ее возникновения и уведомите службу технической поддержки Майкрософт.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Объекты и классы](../../programming-guide/language-features/objects-and-classes/index.md)
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)

@@ -12,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: da3434926b36408adfdee2171d56f23ba764f0eb
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 925a61bf2521950cad7fb0dce8f1484198f3f806
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99753267"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106518"
 ---
 # <a name="icorprofilerinfo10requestrejitwithinliners-method"></a>Метод ICorProfilerInfo10:: Рекуестрежитвисинлинерс
 
@@ -50,7 +50,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
   \[в] задает `methodId` часть `module` пар (, `methodDef` ), определяющих функции для повторной компиляции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 [Рекуестрежит](icorprofilerinfo4-requestrejit-method.md) не выполняет отслеживание встроенных методов. Профилировщик ожидал блокировать встраивание или отслеживание встраивания, а также вызов `RequestReJIT` всех строк, чтобы гарантировать, что каждый экземпляр встроенного метода был режиттед. Это создает проблему с ReJIT при присоединении, так как профилировщик отсутствует для мониторинга встраивания. Этот метод может быть вызван, чтобы гарантировать, что полный набор Режиттед также будет недоступен.
 
@@ -62,8 +62,8 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 **Библиотека:** CorGuids.lib
 
-**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Интерфейс ICorProfilerInfo10](icorprofilerinfo10-interface.md)

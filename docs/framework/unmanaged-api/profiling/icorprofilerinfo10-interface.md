@@ -4,12 +4,12 @@ title: Интерфейс ICorProfilerInfo10
 ms.date: 08/06/2019
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: fd24491cb1ca55ad48137522c63e78e6387d33e6
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: f2fa0115f6894ac737696b63c1f0f00a0cb028ec
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99753293"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106908"
 ---
 # <a name="icorprofilerinfo10-interface"></a>Интерфейс ICorProfilerInfo10
 
@@ -30,8 +30,8 @@ ms.locfileid: "99753293"
 
 **Платформы:** См. раздел [Поддерживаемые операционные системы .NET Core](../../../core/install/windows.md?pivots=os-windows).  
 **Заголовок:** CorProf.idl, CorProf.h  
-**Версии .NET:**[!INCLUDE[net_core_22](../../../../includes/net-core-30-md.md)]
+**Версии .NET:**[!INCLUDE[net_core_30](../../../../includes/net-core-30-md.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Профилирующие интерфейсы](profiling-interfaces.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC30698
 ms.assetid: 3b77b7e3-8b17-40de-b4e1-05e4b9b325ad
-ms.openlocfilehash: 0f2f2791db82bcf72fa65f113fc7e3ba8eb559a2
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: f8d77e6c407f94f906cbb8c0600296b8bad6f676
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99674822"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106804"
 ---
 # <a name="bc30698-unable-to-write-temporary-file-because-temporary-path-is-not-available"></a>BC30698: не удалось записать временный файл, так как временный путь недоступен
 
@@ -29,4 +29,4 @@ Visual Basic не удалось определить путь, по котор�
 
 ## <a name="see-also"></a>См. также
 
-- [Обращайтесь к нам](/visualstudio/ide/feedback-options)
+- [Параметры обратной связи Visual Studio](/visualstudio/ide/feedback-options)

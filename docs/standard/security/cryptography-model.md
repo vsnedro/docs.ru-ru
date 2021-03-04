@@ -1,7 +1,7 @@
 ---
 title: Модель шифрования .NET
 description: Ознакомьтесь с реализациями обычных криптографических алгоритмов в .NET. Изучение расширяемой криптографической модели наследования объектов, проектирования потоков & конфигурации.
-ms.date: 07/14/2020
+ms.date: 02/26/2021
 dev_langs:
 - csharp
 - vb
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cryptography [.NET], model
 - encryption [.NET], model
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
-ms.openlocfilehash: f9ec08992cb8db8f81f11de661612e1b7d15131c
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 2208e36ac4521f43cfd2960d92588c8349a119ca
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94831121"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106934"
 ---
 # <a name="net-cryptography-model"></a>Модель шифрования .NET
 
@@ -38,7 +38,7 @@ ms.locfileid: "94831121"
 
 <xref:System.Security.Cryptography.Aes> наследуется <xref:System.Security.Cryptography.AesCryptoServiceProvider> , <xref:System.Security.Cryptography.AesCng> и <xref:System.Security.Cryptography.AesManaged> .
 
-В .NET Framework в Windows:
+В платформа .NET Framework в Windows:
 
 * `*CryptoServiceProvider` классы алгоритмов, такие как <xref:System.Security.Cryptography.AesCryptoServiceProvider> , являются оболочками для реализации алгоритма с помощью API шифрования Windows (CAPI).
 * `*Cng` классы алгоритмов, такие как <xref:System.Security.Cryptography.ECDiffieHellmanCng> , являются оболочками для реализации Windows криптографии следующего поколения (CNG).
@@ -48,14 +48,14 @@ ms.locfileid: "94831121"
 
 В большинстве случаев нет необходимости напрямую ссылаться на класс реализации алгоритма, например `AesCryptoServiceProvider` . Обычно нужные методы и свойства находятся в классе базового алгоритма, например `Aes` . Создайте экземпляр класса реализации по умолчанию, используя фабричный метод в классе базового алгоритма и обратитесь к классу базового алгоритма. Например, см. выделенную строку кода в следующем примере:
 
-:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="16":::
-:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="12":::
+:::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs" highlight="20":::
+:::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb" highlight="17":::
 
-## <a name="cryptographic-configuration"></a>Криптографическая конфигурация
+## <a name="cryptographic-configuration"></a>Конфигурация шифрования
 
 Конфигурация криптографии позволяет разрешать определенную реализацию алгоритма в имя алгоритма, обеспечивая расширяемость классов шифрования .NET. Вы можете добавить свою собственную аппаратную или программную реализацию алгоритма и сопоставить ее с необходимым именем алгоритма. Если алгоритм не задан в файле конфигурации, используются параметры по умолчанию.
 
-## <a name="choosing-an-algorithm"></a>Выбор алгоритма
+## <a name="choose-an-algorithm"></a>Выбор алгоритма
 
 Алгоритм можно выбирать, исходя из различных причин, например для обеспечения целостности данных, для обеспечения конфиденциальности данных или для создания ключа. Симметричные и хэш-алгоритмы предназначены для защиты данных от нарушения целостности (защита от изменения) или конфиденциальности (защита от просмотра). Хэш-алгоритмы используются в основном для обеспечения целостности данных.
 
@@ -77,7 +77,7 @@ ms.locfileid: "94831121"
 - Формирование ключа из пароля:
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [службы шифрования](cryptographic-services.md)
 - [Кросс-платформенная криптография](cross-platform-cryptography.md)

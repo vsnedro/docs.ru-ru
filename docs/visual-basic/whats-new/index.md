@@ -9,12 +9,12 @@ helpviewer_keywords:
 - what's new [Visual Basic]
 - Visual Basic, what's new
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.openlocfilehash: 56aa88f9e4ca3c50e7fc3704685ae4ac535db12c
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 222c92413bd12e1769376c0f6eef7e34d7d5182e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100455240"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106570"
 ---
 # <a name="whats-new-for-visual-basic"></a>Новые возможности Visual Basic
 
@@ -252,7 +252,7 @@ Dim number As Integer = &H_C305_F860
 
 Для удобства чтения кода `TypeOf` теперь можно использовать с `IsNot`.
 
-[#Disable Warning \<ID> и #Enable Warning \<ID>](../language-reference/directives/index.md)
+[#Disable Warning \<ID> и #Enable Warning \<ID>](../language-reference/directives/disable-enable.md)
 
 Можно отключить и включить конкретные предупреждения для областей в исходном файле.
 
