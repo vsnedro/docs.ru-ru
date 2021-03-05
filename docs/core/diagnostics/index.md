@@ -3,12 +3,12 @@ title: Общие сведения о средствах диагностики 
 description: Общие сведения о средствах и методах диагностики приложений .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: ee79057e45700e17fdd37cc36288b790d64d7a09
-ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
+ms.openlocfilehash: 9836ea11e7f17d6ed6e04bcba8bc0ed851bb368f
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98188482"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105288"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Общие сведения о средствах диагностики в .NET Core
 
@@ -38,7 +38,7 @@ ms.locfileid: "98188482"
 
 ## <a name="symbols"></a>Символы
 
-Символы обязательно используются при отладке и в других диагностических средствах. Файлы символов будут иметь разное содержимое в зависимости от языка, компилятора и платформы. Если рассматривать их на высоком уровне, символы представляют собой сопоставление между исходным кодом и двоичным кодом, который создается компилятором. Эти сопоставления позволяют узнавать номер строки, имена локальных переменных и другие сведения в средствах диагностики, например в [Visual Studio](/visualstudio/debugger/what-is-debugging) и [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  По [этой ссылке](/windows/win32/dxtecharts/debugging-with-symbols) приводится подробное объяснение символов в Windows, причем многие понятия относятся и к другим платформам. [Переносимые символы .NET](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) имеют расширение файла PDB, аналогичное PDB в Windows, однако они несовместимы с этим форматом.
+[Символы](./symbols.md) представляют собой сопоставление между исходным кодом и двоичным кодом, который создается компилятором. Они обычно используются отладчиками .NET для разрешения исходных номеров строк, имен локальных переменных и других типов диагностических данных.
 
 ## <a name="collect-diagnostics-in-containers"></a>Сбор диагностики в контейнерах
 
