@@ -2,12 +2,12 @@
 title: Установка локализованных файлов IntelliSense
 description: Узнайте, как настроить на компьютере разработки использование локализованных файлов IntelliSense для проектов .NET 5+ (включая .NET Core) в Visual Studio.
 ms.date: 11/06/2020
-ms.openlocfilehash: 45eeae12ca79179cacb3d48fca28118de70e0a4f
-ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
+ms.openlocfilehash: febd748429dd3a2e13460354eb7402d25515f934
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94506770"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105210"
 ---
 # <a name="how-to-install-localized-intellisense-files-for-net"></a>Установка локализованных файлов IntelliSense для .NET
 
@@ -18,7 +18,7 @@ ms.locfileid: "94506770"
 
 ## <a name="prerequisites"></a>Prerequisites
 
-- [Пакет SDK для .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии, например [пакет SDK для .NET 5](https://dotnet.microsoft.com/download/dotnet/5.0).
+- [Пакет SDK для .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet) или более поздней версии, например [пакет SDK для .NET 5](https://dotnet.microsoft.com/download/dotnet/5.0).
 - [Visual Studio 2019 версии 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или более поздней версии.
 
 ## <a name="download-and-install-the-localized-intellisense-files"></a>Скачивание и установка локализованных файлов IntelliSense
@@ -37,7 +37,7 @@ ms.locfileid: "94506770"
    1. Перейдите в папку установки .NET. Ее расположение по умолчанию: *%ProgramFiles%\dotnet\packs*.
    1. Выберите пакет SDK, для которого необходимо установить IntelliSense, и перейдите по соответствующему пути. Можно выбрать один из следующих параметров.
 
-      | Тип пакета SDK              | путь                               |
+      | Тип пакета SDK              | Путь                               |
       |-----------------------|------------------------------------|
       | .NET версии 5 или выше и .NET Core | *Microsoft.NETCore.App.Ref*        |
       | Классические приложения       | *Microsoft.WindowsDesktop.App.Ref* |
@@ -64,7 +64,7 @@ ms.locfileid: "94506770"
    | Русский               | *ru*        |
    | Испанский               | *es*        |
 
-1. Скопируйте в эту новую папку файлы *.xml* , извлеченные на шаге 3. Файлы *.xml* распределяются по папкам пакетов SDK, поэтому скопируйте их в соответствующий SDK, выбранный на шаге 4.
+1. Скопируйте в эту новую папку файлы *.xml*, извлеченные на шаге 3. Файлы *.xml* распределяются по папкам пакетов SDK, поэтому скопируйте их в соответствующий SDK, выбранный на шаге 4.
 
 ## <a name="modify-visual-studio-language"></a>Изменение языка Visual Studio
 
@@ -79,7 +79,7 @@ ms.locfileid: "94506770"
 
 1. Найдите установщик Visual Studio на своем компьютере.
 
-   Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V** , где расположен пункт **Visual Studio Installer**.
+   Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
    ![Открытие Visual Studio Installer в Windows](./media/localized-intellisense/vs-installer-windows-start.png)
 
@@ -95,7 +95,7 @@ ms.locfileid: "94506770"
    ![Обновление или изменение Visual Studio](./media/localized-intellisense/vs-installer-modify.png)
 
    > [!IMPORTANT]
-   > Если кнопка **Изменить** отсутствует, но доступна кнопка **Обновить** , необходимо обновить Visual Studio и лишь затем изменить установку.
+   > Если кнопка **Изменить** отсутствует, но доступна кнопка **Обновить**, необходимо обновить Visual Studio и лишь затем изменить установку.
    > После завершения обновления должна появиться кнопка **Изменить**.
 
 1. На вкладке **Языковые пакеты** выберите языки, которые нужно установить, или отмените выбор тех, которые нужно удалить.

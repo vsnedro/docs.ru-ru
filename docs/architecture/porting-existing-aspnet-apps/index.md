@@ -3,12 +3,12 @@ title: Перенос существующих приложений ASP.NET в .
 description: Бесплатное руководство по преобразованию приложений MVC ASP.NET и приложений веб-API ASP.NET в приложения ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 36c0cdbe03fb97ae82336d53e15be2108e9c6367
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 848f0e9533a65b59055853f1d502307abb69118c
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100488168"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105949"
 ---
 # <a name="porting-existing-aspnet-apps-to-net-core"></a>Перенос существующих приложений ASP.NET в .NET Core
 
@@ -62,7 +62,7 @@ Mac и macOS являются товарными знаками Apple Inc.
 
 ## <a name="who-should-use-this-guide"></a>Кому необходимо это руководство
 
-Это руководство предназначено для разработчиков, руководителей разработки и архитекторов, которые хотят перенести существующие приложения, написанные для MVC ASP.NET и веб-API ASP.NET (.NET Framework 4.x), в .NET Core. Это руководство будет полезно для разработчиков, использующих ASP.NET Web Forms, но им также нужно ознакомиться с электронной книгой [Blazor для разработчиков ASP.NET Web Forms](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/).
+Это руководство предназначено для разработчиков, руководителей разработки и архитекторов, которые хотят перенести существующие приложения, написанные для MVC ASP.NET и веб-API ASP.NET (.NET Framework 4.x), в .NET Core. Это руководство будет полезно для разработчиков, использующих ASP.NET Web Forms, но им также нужно ознакомиться с электронной книгой [Blazor для разработчиков ASP.NET Web Forms](../blazor-for-web-forms-developers/index.md).
 
 Вторичной аудиторией являются лица, ответственные за принятие технических решений, которые планируют перенести свои приложения в .NET Core.
 
