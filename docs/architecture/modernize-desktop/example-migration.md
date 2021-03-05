@@ -2,12 +2,12 @@
 title: Пример миграции на .NET 5
 description: Показано, как перенести примеры приложений, предназначенных для платформа .NET Framework в .NET 5.
 ms.date: 01/19/2021
-ms.openlocfilehash: 39ecdfa639f4d68a4a8821da839f014c8de42ab0
-ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
+ms.openlocfilehash: 5b3743c68ee0426efffda6f999dffea788f493e9
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99216269"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206546"
 ---
 # <a name="example-of-migrating-to-net"></a>Пример перехода на .NET
 
@@ -72,6 +72,9 @@ try-convert -p "<path to your project file>"
 ```dotnetcli
 try-convert -w "<path to your solution>"
 ```
+
+> [!NOTE]
+> Средство try-Convert запускается автоматически в рамках средства "помощник по [обновлению .NET](https://aka.ms/dotnet-upgrade-assistant)". Рассмотрите возможность запуска помощника по полному обновлению, а не просто Convert.
 
 После того как средство предпримет попытку преобразования, перезагрузите файлы в Visual Studio для выполнения и тестирования. Существует вероятность, что попытка преобразования не сможет выполнить преобразование из-за особенностей проекта. В этом случае вы можете ознакомиться с приведенными ниже шагами.
 
