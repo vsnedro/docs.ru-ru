@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: 7cf25f181997ed66639842727be57e7824ef5466
-ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
+ms.openlocfilehash: 509616e3423fbb83b74bfbb8ecec1a7df49f0a20
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96739991"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259748"
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # <a name="read-values-from-an-analog-to-digital-converter"></a>Считывание значений с аналогово-цифрового преобразователя
@@ -23,7 +23,7 @@ ms.locfileid: "96739991"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) <span class="docon docon-navigate-external x-hidden-focus"></span> аналоговый для цифрового преобразователя
+- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) аналогово-цифровой преобразователь
 - 3-контактный потентиометер
 - монтажная плата;
 - оптоволоконные кабеля с разъемами на обоих концах;
@@ -104,7 +104,7 @@ MCP3008 использует для взаимодействия интерфе�
 
 ## <a name="get-the-source-code"></a>Получение исходного кода
 
-Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

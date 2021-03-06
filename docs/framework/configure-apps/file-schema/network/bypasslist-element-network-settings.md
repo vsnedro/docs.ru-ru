@@ -1,6 +1,6 @@
 ---
 title: Элемент <bypasslist> (параметры сети)
-description: <bypasslist>Элемент Network Settings предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер в .NET Framework.
+description: <bypasslist>Элемент Network Settings предоставляет набор регулярных выражений, описывающих адреса, которые не используют прокси-сервер в платформа .NET Framework.
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#bypasslist
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - bypasslist element
 - <bypasslist> element
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-ms.openlocfilehash: 58cdcf046b2a5a292493c5704739b22aa4ec4f17
-ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
+ms.openlocfilehash: 0a03b391c839b7255fdd423a305d474d0e48ad39
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91178415"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259360"
 ---
 # <a name="bypasslist-element-network-settings"></a>Элемент \<bypasslist> (параметры сети)
 
@@ -54,13 +54,13 @@ ms.locfileid: "91178415"
 |-----------------|---------------------|  
 |[defaultProxy](defaultproxy-element-network-settings.md)|Настраивает прокси-сервер протокола передачи гипертекста (HTTP).|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Комментарии  
 
  Список обхода содержит регулярные выражения, описывающие URI, которые <xref:System.Net.WebRequest> обращаются к экземплярам напрямую, а не через прокси-сервер.  
   
- При указании регулярного выражения для этого элемента следует соблюдать осторожность. Регулярное выражение "[a-z] + \\ . contoso \\ . com" соответствует любому узлу в домене contoso.com, но также соответствует любому узлу в домене contoso.com.cpandl.com. Чтобы сопоставить только узел в домене contoso.com, используйте привязку ("$"): "[a-z] + \\ . contoso \\ . com $".  
+ При указании регулярного выражения для этого элемента следует соблюдать осторожность. Регулярное выражение `[a-z]+\\.contoso\\.com` соответствует любому узлу в домене contoso.com, но оно также соответствует любому узлу в домене contoso.com.cpandl.com. Чтобы сопоставить только узел в домене contoso.com, используйте привязку ( `$` ): `[a-z]+\\.contoso\\.com$` .
   
- Дополнительные сведения о регулярных выражениях см. в разделе. [.NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).  
+ Дополнительные сведения о регулярных выражениях см. в разделе. [Платформа .NET Framework регулярных выражений](../../../../standard/base-types/regular-expressions.md).  
   
 ## <a name="configuration-files"></a>Файлы конфигурации  
 

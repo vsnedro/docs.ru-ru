@@ -3,12 +3,12 @@ title: Развертывание службы WCF, размещенной в II
 description: Сведения о задачах, необходимых для разработки и развертывания службы WCF, размещенной в службах IIS, начиная с проверки установки компонента.
 ms.date: 03/30/2017
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
-ms.openlocfilehash: 5d9a0b80cc75baec2325b778cee7daa68531f2d5
-ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.openlocfilehash: ae01533efbeddba75efd159d187a896e2d97ec1a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2020
-ms.locfileid: "90557571"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259893"
 ---
 # <a name="deploying-an-internet-information-services-hosted-wcf-service"></a>Развертывание службы WCF, размещенной в IIS
 
@@ -28,17 +28,17 @@ ms.locfileid: "90557571"
 
 ## <a name="ensure-that-iis-aspnet-and-wcf-are-correctly-installed-and-registered"></a>Проверка правильности установки и регистрации IIS, ASP.NET и WCF
 
-Для правильной работы служб WCF, размещенных в IIS, необходимо установить WCF, IIS и ASP.NET. Процедуры установки WCF (в составе .NET Framework), ASP.NET и IIS зависят от операционной системы. Дополнительные сведения об установке WCF и .NET Framework см. в [статье установка .NET Framework для разработчиков](../../install/guide-for-developers.md). Чтобы установить службы IIS в Windows 10, откройте " **программы и компоненты** " на **панели управления** , а затем выберите **включить или отключить компоненты Windows**. В окне **компоненты Windows** выберите **службы IIS** и нажмите кнопку **ОК**.
+Для правильной работы служб WCF, размещенных в IIS, необходимо установить WCF, IIS и ASP.NET. Процедуры установки WCF (в составе платформа .NET Framework), ASP.NET и IIS зависят от операционной системы. Дополнительные сведения об установке WCF и платформа .NET Framework см. в [статье установка платформа .NET Framework для разработчиков](../../install/guide-for-developers.md). Чтобы установить службы IIS в Windows 10, откройте " **программы и компоненты** " на **панели управления** , а затем выберите **включить или отключить компоненты Windows**. В окне **компоненты Windows** выберите **службы IIS** и нажмите кнопку **ОК**.
 
 ![Компоненты Windows с выделенными службами IIS](./media/windows-features-iis.png)
 
 Инструкции по установке служб IIS в других операционных системах можно найти в [статье Установка IIS в Windows Vista и Windows 7](/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7) и [Установка IIS 8,5 на Windows Server 2012 R2](/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2).
 
-Процесс установки .NET Framework автоматически регистрирует WCF в службах IIS, если службы IIS уже имеются на компьютере. Если службы IIS установлены после .NET Framework, для регистрации WCF в IIS и ASP.NET требуется дополнительный шаг. Это можно выполнить указанным ниже способом в зависимости от операционной системы.
+Процесс установки платформа .NET Framework автоматически регистрирует WCF в службах IIS, если службы IIS уже имеются на компьютере. Если службы IIS установлены после платформа .NET Framework, для регистрации WCF в IIS и ASP.NET требуется дополнительный шаг. Это можно выполнить указанным ниже способом в зависимости от операционной системы.
 
-- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите **ServiceModelReg.exe/i/x** в [Командная строка разработчика для Visual Studio](../../tools/developer-command-prompt-for-vs.md).
+- Windows 7 и Windows Server 2003. Используйте средство [регистрации ServiceModel (ServiceModelReg.exe)](../servicemodelreg-exe.md) для регистрации WCF в службах IIS. Чтобы использовать это средство, введите `ServiceModelReg.exe /i /x` [оболочку командной строки разработчика](/visualstudio/ide/reference/command-prompt-powershell).
 
-- Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
+- Windows 7. Наконец, необходимо убедиться, что ASP.NET настроен для использования платформа .NET Framework версии 4 или более поздней. Это можно сделать, запустив средство ASPNET_Regiis с `–i` параметром. Дополнительные сведения см. в разделе [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## <a name="create-a-new-iis-application-or-reuse-an-existing-aspnet-application"></a>Создание нового приложения служб IIS или повторное использование существующего приложения ASP.NET
 

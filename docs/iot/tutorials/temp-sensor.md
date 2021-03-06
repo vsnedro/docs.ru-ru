@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/14/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: 1270e7629e9afc12b1d76d260d4b8b51428f1040
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: bc5c2b9f0876603c152da859547c58b83826969c
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96594152"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102259841"
 ---
 # <a name="read-environmental-conditions-from-a-sensor"></a>Считывание с датчика условий окружающей среды
 
@@ -22,7 +22,7 @@ ms.locfileid: "96594152"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) <span class="docon docon-navigate-external x-hidden-focus"></span> влажность/barometric pressure с нажимом и датчиком температуры
+- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) влажности/barometric pressure/нагрузка датчика температуры
 - оптоволоконные кабеля с разъемами на обоих концах;
 - Монтажная плата (необязательно)
 - Плата за Raspberry Pi GPIO (необязательно)
@@ -65,7 +65,7 @@ ms.locfileid: "96594152"
 
     :::code language="csharp" source="~/iot-samples/tutorials/SensorTutorial/Program.cs" :::
 
-    В предыдущем коде:
+    В приведенном выше коде:
 
     - `i2cSettings` параметру присваивается новый экземпляр `I2cConnectionSettings` . Конструктор задает `busId` для параметра значение 1, а `deviceAddress` параметр — значение `Bme280.DefaultI2cAddress` .
 
@@ -102,7 +102,7 @@ ms.locfileid: "96594152"
 
 ## <a name="get-the-source-code"></a>Получение исходного кода
 
-Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
