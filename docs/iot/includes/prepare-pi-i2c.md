@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 47533b40a0835294077f73cc2e3ab55c987cf199
-ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
+ms.openlocfilehash: ffa0ea13432581fc3d2e277806412bf68c725db4
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "96593885"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255550"
 ---
 ## <a name="prepare-the-raspberry-pi"></a>Подготовка Raspberry Pi
 
@@ -13,4 +13,4 @@ ms.locfileid: "96593885"
 - SSH
 - I2C
 
-Дополнительные сведения о `raspi-config` см. в документации по [Raspberry Pi](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+Дополнительные сведения о `raspi-config` см. в документации по [Raspberry Pi](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).

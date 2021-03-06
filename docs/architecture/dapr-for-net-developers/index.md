@@ -3,12 +3,12 @@ title: Dapr для разработчиков .NET
 description: Руководство для разработчиков .NET, в котором приводятся общие сведения о среде Microsoft Distributed Apps Runtime с открытым кодом и рекомендации по ее эффективному использованию.
 author: robvet
 ms.date: 02/07/2021
-ms.openlocfilehash: 53d5356c8e010f0c4e168a2186d48dd9af369ff6
-ms.sourcegitcommit: b924ade6426cf61a4604c4e2ee54cb3592c29317
+ms.openlocfilehash: fc38dd1a98570cc4d2b367d272a107e3ad67ead9
+ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101096732"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102206572"
 ---
 # <a name="dapr-for-net-developers"></a>Dapr для разработчиков .NET
 
@@ -65,7 +65,7 @@ Mac и macOS являются товарными знаками Apple Inc.
 Редакторы:
 
 > **Дэвид Пайн** (David Pine), старший разработчик содержимого, команда .NET, корпорация Майкрософт
-
+>
 > **Майра Вензел (Maira Wenzel)** , старший руководитель программ, команда .NET, корпорация Майкрософт
 
 ## <a name="version"></a>Версия

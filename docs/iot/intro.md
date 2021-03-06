@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: overview
 ms.prod: dotnet
-ms.openlocfilehash: c3d05ec5b05780f91404c3c27e91bcd602b0faeb
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 13460fdafbfd7ef4e047cb7537e832ae4039c614
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "96594029"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255435"
 ---
 # <a name="develop-apps-for-iot-devices-with-the-net-iot-libraries"></a>Разработка приложений для устройств IoT с помощью библиотек .NET IoT
 
@@ -26,12 +26,12 @@ ms.locfileid: "96594029"
 
 Библиотеки .NET IoT состоят из двух пакетов NuGet:
 
-- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/) <span class="docon docon-navigate-external x-hidden-focus"></span>
+- [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/)
+- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/)
 
 ### <a name="systemdevicegpio"></a>System.Device.Gpio
 
-`System.Device.Gpio` поддерживает различные протоколы для взаимодействия с аппаратными креплениями низкого уровня для управления устройствами. приведенные ниже.
+`System.Device.Gpio` поддерживает различные протоколы для взаимодействия с аппаратными креплениями низкого уровня для управления устройствами. Сюда входит следующее.
 
 - Универсальный ввод-вывод (GPIO)
 - Канал Inter-Integrated (I2C)
@@ -43,23 +43,23 @@ ms.locfileid: "96594029"
 
 `Iot.Device.Bindings`Пакет:
 
-* Содержит [привязки устройств](https://github.com/dotnet/iot/blob/master/src/devices/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> для упрощения разработки приложений с помощью оболочки System. Device. GPIO.
+* Содержит [привязки устройств](https://github.com/dotnet/iot/blob/master/src/devices/README.md) для упрощения разработки приложений с помощью оболочки System. Device. GPIO.
 * Поддерживается сообществом, а дополнительные привязки постоянно добавляются.
 
 К часто используемым привязкам устройств относятся:
 
-- [Чарактерлкд — отображение символов LCD](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [SN74HC595-8-разрядный сдвиг регистра](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Драйвер матрицы Max7219-LED](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)<span class="docon docon-navigate-external x-hidden-focus"></span>
-- [Ргбледматрикс-матрица индикаторов RGB](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [Чарактерлкд — отображение символов LCD](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)
+- [SN74HC595-8-разрядный сдвиг регистра](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)
+- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)
+- [Драйвер матрицы Max7219-LED](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)
+- [Ргбледматрикс-матрица ИНДИКАТОРов RGB](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)
 
 ## <a name="supported-operating-systems"></a>Поддерживаемые операционные системы
 
 `System.Device.Gpio` поддерживается в большинстве версий Linux, поддерживающих ARM/ARM64 и Windows 10 IoT Core.
 
 > [!TIP]
-> Для Raspberry Pi рекомендуется [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> (прежнее название — Raspbian).  
+> Для Raspberry Pi рекомендуется [Raspberry Pi OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  (прежнее название — Raspbian).
 
 ## <a name="supported-hardware-platforms"></a>Поддерживаемые аппаратные платформы
 
@@ -72,4 +72,4 @@ ms.locfileid: "96594029"
 
 ## <a name="resources"></a>Ресурсы
 
-- [Библиотеки .NET IOT на GitHub](https://github.com/dotnet/iot)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [Библиотеки .NET IoT на GitHub](https://github.com/dotnet/iot)

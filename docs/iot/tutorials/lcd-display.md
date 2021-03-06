@@ -6,12 +6,12 @@ ms.author: casoper
 ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
-ms.openlocfilehash: d4c3e373207e23877903491871f4d09e11000c1a
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 005b40a7d9f46b84fcd90541248f5f4fd243e612
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96594134"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102255551"
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # <a name="display-text-on-an-lcd"></a>Отображение текста на ЖК-дисплее
@@ -25,14 +25,14 @@ ms.locfileid: "96594134"
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
-- [Отображение символов ЖК-дисплея 20x4 с помощью интерфейса I2C](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)<span class="docon docon-navigate-external x-hidden-focus"></span>
+- [Отображение символов ЖК-дисплея 20x4 с помощью интерфейса I2C](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
 - оптоволоконные кабеля с разъемами на обоих концах;
 - Монтажная плата (необязательно/рекомендуется)
 - Raspberry Pi GPIO (необязательно/рекомендуется)
 - [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 > [!NOTE]
-> Отображается множество производителей символов ЖК. Большинство структур идентичны, и изготовитель не должен делать никаких отличий от функциональности. Для справки Этот учебник был разработан с [LCD2004](https://www.sunfounder.com/lcd2004-module.html) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+> Отображается множество производителей символов ЖК. Большинство структур идентичны, и изготовитель не должен делать никаких отличий от функциональности. Для справки Этот учебник был разработан с [LCD2004](https://www.sunfounder.com/lcd2004-module.html).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -49,7 +49,7 @@ ms.locfileid: "96594134"
 
 | Интерфейс I2C (задняя часть экрана) | Raspberry Pi GPIO |
 |---------------------------------|-------------------|
-| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="Изображение обратной стороны отображения символов, показывающее расширитель I2C GPIO." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="Схема, показывающая схему контактов заголовка Raspberry Pi GPIO. Образ с Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Образ с Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="Изображение обратной стороны отображения символов, показывающее расширитель I2C GPIO." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="Схема, показывающая схему контактов заголовка Raspberry Pi GPIO. Образ с Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Образ с Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "96594134"
 
     :::code language="csharp" source="~/iot-samples/tutorials/LcdTutorial/Program.cs" :::
 
-    В предыдущем коде:
+    В приведенном выше коде:
 
     - [Объявление using](../../csharp/whats-new/csharp-8.md#using-declarations) создает экземпляр `I2cDevice` , вызывая метод `I2cDevice.Create` и передавая новый `I2cConnectionSettings` с `busId` `deviceAddress` параметрами и. Это `I2cDevice` представляет ШИНУ I2C. `using`Объявление гарантирует, что объект удален и аппаратные ресурсы освобождаются должным образом.
 
@@ -104,7 +104,7 @@ ms.locfileid: "96594134"
 
 ## <a name="get-the-source-code"></a>Получение исходного кода
 
-Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+Источник этого руководства [доступен на сайте GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -7,12 +7,12 @@ ms.date: 11/13/2020
 ms.topic: how-to
 ms.prod: dotnet
 zone_pivot_groups: ide-set-one
-ms.openlocfilehash: 7b9872304ee53071452772e3da02081a7def4d80
-ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
+ms.openlocfilehash: 58858384c49a296e0b33d663f3ef930caf9cace6
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "96594017"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258069"
 ---
 # <a name="debug-net-apps-on-raspberry-pi"></a>Отладка приложений .NET на Raspberry Pi
 
@@ -26,7 +26,7 @@ ms.locfileid: "96594017"
 
 ### <a name="enable-ssh-on-the-raspberry-pi"></a>Включение SSH в Raspberry Pi
 
-Для удаленной отладки требуется SSH. Сведения о включении SSH см. в [разделе *Включение SSH* в документации по Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+Для удаленной отладки требуется SSH. Сведения о включении SSH см. в [разделе *Включение SSH* в документации по Raspberry Pi](https://www.raspberrypi.org/documentation/remote-access/ssh/).
 
 ### <a name="install-the-visual-studio-remote-debugger-on-the-raspberry-pi"></a>Установка Удаленный отладчик Visual Studio на устройстве Raspberry Pi
 
@@ -46,7 +46,7 @@ ms.locfileid: "96594017"
 
 1. Visual Studio Code использует протокол SSH для удаленной отладки. В целях безопасности `root` не разрешается входить по протоколу SSH по умолчанию. Чтобы включить `root` Вход через SSH, выполните следующие действия.
 
-    1. Выполните следующую команду, чтобы открыть *каталог/etc/ssh/sshd_config* в [Nano](https://www.nano-editor.org/docs.php) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+    1. Выполните следующую команду, чтобы открыть *каталог/etc/ssh/sshd_config* в [Nano](https://www.nano-editor.org/docs.php).
 
         ```bash
         sudo nano /etc/ssh/sshd_config
@@ -110,7 +110,7 @@ ms.locfileid: "96594017"
 - `pipeArgs` параметры, передаваемые клиенту SSH. Обязательно укажите параметр Password, а также `root` пользователя в формате `<user>@<hostname>` .
 
 > [!IMPORTANT]
-> В приведенном выше примере используется *Плинк*, компонент клиента [PuTTY](https://www.ssh.com/ssh/putty/) вышеуказанного <span class="docon docon-navigate-external x-hidden-focus"></span> SSH. [OpenSSH](https://www.openssh.com/) <span class="docon docon-navigate-external x-hidden-focus"></span> Вместо этого можно использовать OpenSSH, который входит в последние версии Windows и Linux. Однако OpenSSH не поддерживает отправку паролей в качестве параметра командной строки. Чтобы использовать OpenSSH, [Настройте Raspberry Pi для доступа SSH, не имеющего пароля](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md) <span class="docon docon-navigate-external x-hidden-focus"></span> .
+> В приведенном выше примере используется *Плинк*, компонент клиента [](https://www.ssh.com/ssh/putty/) вышеуказанного <span class="docon docon-navigate-external x-hidden-focus"></span> SSH. [](https://www.openssh.com/) <span class="docon docon-navigate-external x-hidden-focus"></span> Вместо этого можно использовать OpenSSH, который входит в последние версии Windows и Linux. Однако OpenSSH не поддерживает отправку паролей в качестве параметра командной строки. Чтобы использовать OpenSSH, [Настройте Raspberry Pi для доступа SSH, не имеющего пароля](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
 ### <a name="deploy-the-app"></a>Развертывание приложения
 
@@ -122,7 +122,7 @@ ms.locfileid: "96594017"
 
 ## <a name="references"></a>Ссылки
 
-[Удаленная отладка с VS Code в Windows до Raspberry Pi с помощью .NET Core на ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)<span class="docon docon-navigate-external x-hidden-focus"></span>
+[Удаленная отладка с VS Code в Windows до Raspberry Pi с помощью .NET Core на ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)
 
 ::: zone-end
 
