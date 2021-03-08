@@ -3,12 +3,12 @@ title: Учебник. Установка и использование лока
 description: Узнайте, как устанавливать и использовать средство .NET в качестве локального.
 ms.topic: tutorial
 ms.date: 12/11/2020
-ms.openlocfilehash: f32a5c4091ff63c7c50cf339dddd89b78e543c4c
-ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
+ms.openlocfilehash: 29c561d27aad99c0383fc8e0bb5a4543ae65705a
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97512467"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104132"
 ---
 # <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>Учебник. Установка и использование локального средства .NET с помощью интерфейса командной строки .NET
 
@@ -21,7 +21,7 @@ ms.locfileid: "97512467"
 * Выполните действия из [первого руководства этой серии](global-tools-how-to-create.md).
 * Установите среду выполнения .NET Core 2.1.
 
-  В данном учебнике вы установите и используете средство, нацеленное на .NET Core 2.1, поэтому вам необходимо установить эту среду выполнения на ваш компьютер. Чтобы установить среду выполнения 2.1, перейдите на [страницу загрузки .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1) и найдите ссылку на установку среды выполнения в колонке **Run apps — Runtime** (Запуск приложений — среда выполнения).
+  В данном учебнике вы установите и используете средство, нацеленное на .NET Core 2.1, поэтому вам необходимо установить эту среду выполнения на ваш компьютер. Чтобы установить среду выполнения 2.1, перейдите на [страницу загрузки .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet/2.1) и найдите ссылку на установку среды выполнения в колонке **Run apps — Runtime** (Запуск приложений — среда выполнения).
 
 ## <a name="create-a-manifest-file"></a>Создание файла манифеста
 

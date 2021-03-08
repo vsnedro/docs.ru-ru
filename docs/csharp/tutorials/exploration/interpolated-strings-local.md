@@ -2,12 +2,12 @@
 title: Интерполяция строк. Руководство по C#
 description: В этом руководстве показано, как использовать функцию интерполяции строк в C# для включения форматированных результатов выражений в строку.
 ms.date: 10/23/2018
-ms.openlocfilehash: d1b78670361e8b333499d12b68c0364ad9e40a85
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: a80f6d6b118a9dfc4e9ada2122dfc374a137fb4e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82796058"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103209"
 ---
 # <a name="use-string-interpolation-to-construct-formatted-strings"></a>Создание форматированных строк с помощью интерполяции
 
@@ -103,7 +103,7 @@ public class Program
 Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}.");
 ```
 
-Задайте строку формата, указав ее после интерполированного выражения через точку с запятой. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier), представляющая число в виде денежной единицы с точностью два знака после запятой.
+Задайте строку формата, указав ее после интерполированного выражения через двоеточие. "d" — это [стандартная строка формата для даты и времени](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier), представляющая краткий формат. "C2" — это [стандартная строка числового формата](../../../standard/base-types/standard-numeric-format-strings.md#currency-format-specifier-c), представляющая число в виде денежной единицы с точностью два знака после запятой.
 
 Некоторые типы в библиотеках .NET поддерживают предопределенный набор строк формата. К ним относятся все числовые типы, а также типы даты и времени. Полный список типов, поддерживающих строки формата, см. в разделе [Строки формата и типы библиотек классов .NET](../../../standard/base-types/formatting-types.md#format-strings-and-net-types) статьи [Типы форматирования в .NET](../../../standard/base-types/formatting-types.md).
 

@@ -3,12 +3,12 @@ title: Измерение производительности с помощью
 description: В этом руководстве вы узнаете, как измерять производительность с помощью EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: 2ed7f234b685dab91ab275105d26b474e3bd1a87
-ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
+ms.openlocfilehash: bde54ce1996b2f4e2a703c23384eadece06e66cb
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97700747"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105314"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>Учебник. Измерение производительности с помощью EventCounters в .NET Core
 
@@ -27,7 +27,7 @@ ms.locfileid: "97700747"
 
 В этом учебнике используется:
 
-- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии.
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet) или более поздней версии.
 - [dotnet-counters](dotnet-counters.md) для мониторинга счетчиков событий.
 - [Пример целевого приложения отладки](/samples/dotnet/samples/diagnostic-scenarios) для диагностики.
 

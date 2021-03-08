@@ -5,12 +5,12 @@ ms.date: 10/07/2020
 ms.topic: overview
 ms.author: tdykstra
 author: tdykstra
-ms.openlocfilehash: 896b88cbf1f7f31d2d26d69ec7d219da6b27ceff
-ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
+ms.openlocfilehash: 65c13239f32a0166681d7a731de84a973a627f29
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "97866397"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104188"
 ---
 # <a name="releases-and-support-for-net-core-and-net-5"></a>Выпуски и поддержка .NET Core и .NET 5
 
@@ -93,7 +93,7 @@ ms.locfileid: "97866397"
 
 Необходимо регулярно устанавливать сервисные обновления, чтобы гарантировать, что ваши приложения защищены и находятся в поддерживаемом состоянии. Например, если последним сервисным обновлением для .NET Core 3.1 является 3.1.8, а мы поставляем 3.1.9, то 3.1.8 больше не является последним выпуском. Поддерживаемый уровень обслуживания для 3.1 будет 3.1.9.
 
-Сведения об актуальных сервисных обновлениях для каждой основной и дополнительной версий см. на [странице загрузки .NET](https://dotnet.microsoft.com/download/dotnet-core).
+Сведения об актуальных сервисных обновлениях для каждой основной и дополнительной версий см. на [странице загрузки .NET](https://dotnet.microsoft.com/download/dotnet).
 
 ## <a name="end-of-support"></a>Дата окончания поддержки
 

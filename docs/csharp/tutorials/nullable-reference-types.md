@@ -4,12 +4,12 @@ description: В этом расширенном руководстве соде�
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc
-ms.openlocfilehash: bd575b226a2ff61e938719b064ff5ede0cf66013
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: 9d332e5331e8c9c7c54078460ec7c31957d7e38d
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805184"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103690"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>Учебник. Четкое выражение проектного замысла с помощью ссылочных типов, допускающих и не допускающих значение null
 
@@ -26,7 +26,7 @@ ms.locfileid: "91805184"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-Вам нужно настроить свой компьютер для выполнения .NET Core, включая компилятор C# 8.0. Компилятор C# 8.0 доступен в [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+Вам нужно настроить свой компьютер для выполнения .NET Core, включая компилятор C# 8.0. Компилятор C# 8.0 доступен в [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) или [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet/3.0).
 
 В этом руководстве предполагается, что вы знакомы с C# и .NET, включая Visual Studio или .NET Core CLI.
 

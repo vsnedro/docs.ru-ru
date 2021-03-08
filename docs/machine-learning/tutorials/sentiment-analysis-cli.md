@@ -6,12 +6,12 @@ ms.author: cesardl
 ms.date: 06/03/2020
 ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
-ms.openlocfilehash: 89fc5169eee539aa857a9be03c82bf084fe4b60d
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 47c38bb0b66a6fc08dd319583847dd83baedcd1e
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90554440"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103703"
 ---
 # <a name="analyze-sentiment-using-the-mlnet-cli"></a>Анализ тональности с помощью интерфейса командной строки ML.NET
 
@@ -35,7 +35,7 @@ ML.NET CLI входит в состав ML.NET, и его основной це�
 
 ## <a name="pre-requisites"></a>Предварительные требования
 
-- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) или более поздней версии
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) или более поздней версии
 - (Необязательно.) [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
 - [ML.NET CLI](../how-to-guides/install-ml-net-cli.md)
 

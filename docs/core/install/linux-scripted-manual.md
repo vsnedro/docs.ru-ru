@@ -4,12 +4,12 @@ description: В этом разделе описывается установк�
 author: adegeo
 ms.author: adegeo
 ms.date: 01/06/2021
-ms.openlocfilehash: 14789587a58c7b9d5ef2c9251ed599ce18a48f24
-ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.openlocfilehash: 414246e472c3d58a6768311bd7a4635100f3b618
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99505580"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105184"
 ---
 # <a name="install-the-net-sdk-or-the-net-runtime-manually"></a>Установка пакета SDK для .NET или среды выполнения .NET вручную
 
@@ -111,9 +111,9 @@ ms.locfileid: "99505580"
 При установке пакета SDK для .NET не нужно устанавливать соответствующую среду выполнения. Сначала скачайте **двоичный** выпуск пакета SDK или среды выполнения с одного из следующих сайтов:
 
 - ✔️ [Скачиваемые файлы для .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [Скачиваемые файлы .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [Скачиваемые файлы .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-- [Все скачиваемые файлы для .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
+- ✔️ [Скачиваемые файлы .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1)
+- ✔️ [Скачиваемые файлы .NET Core 2.1](https://dotnet.microsoft.com/download/dotnet/2.1)
+- [Все скачиваемые файлы для .NET Core](https://dotnet.microsoft.com/download/dotnet)
 
 Извлеките скачанный файл и используйте команду `export`, чтобы задать переменные, используемые .NET, а затем проверьте включение .NET в переменную PATH.
 

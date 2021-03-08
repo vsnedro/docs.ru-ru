@@ -17,12 +17,12 @@ helpviewer_keywords:
 - code, runtime functionality
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
 ms.custom: updateeachrelease
-ms.openlocfilehash: 917649475271c288516f9eb0913a0959601427af
-ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
+ms.openlocfilehash: 89aa77f7704a1d8caba12369cb82fff131a8aab0
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94823879"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102103651"
 ---
 # <a name="common-language-runtime-clr-overview"></a>Обзор среды CLR
 
@@ -63,7 +63,7 @@ ms.locfileid: "94823879"
 
 ## <a name="clr-versions"></a>Версии CLR
 
-Выпуски .NET Core и .NET 5 или более поздней версии имеют одну версию продукта, т. е. не существует отдельной версии среды CLR. Список версий .NET Core см. в разделе [Загрузка .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+Выпуски .NET Core и .NET 5 или более поздней версии имеют одну версию продукта, т. е. не существует отдельной версии среды CLR. Список версий .NET Core см. в разделе [Загрузка .NET Core](https://dotnet.microsoft.com/download/dotnet).
 
 Однако номер версии платформы .NET Framework не всегда соответствует номеру версии среды CLR, которую он содержит. Список версий .NET Framework и соответствующих версий среды CLR см. в разделе [Версии и зависимости платформы .NET Framework](../framework/migration-guide/versions-and-dependencies.md).
 
