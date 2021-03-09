@@ -2,12 +2,12 @@
 title: Статьи с практическими руководствами (руководств по языку C#)
 description: Коллекция советов и кратких конкретных примеров кода
 ms.date: 12/20/2017
-ms.openlocfilehash: 26d3931ff3b4ecfcc052c3ace25a09801f84c505
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: dae10bf0019c283f568c4850d3bfa0abad6df85a
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90537409"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258199"
 ---
 # <a name="how-to-c"></a>Практическое руководство (C#)
 
@@ -24,9 +24,9 @@ ms.locfileid: "90537409"
 - Даже программистам на C# может потребоваться [использовать пространство имен `My` из Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Создание метода для типа `enum` с помощью методов расширения](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
-### <a name="class-and-struct-members"></a>Члены класса и структуры
+### <a name="class-record-and-struct-members"></a>Элементы "класс", "запись" и "структура"
 
-Классы и структуры создаются для реализации программы. При написании классов или структур часто используются перечисленные ниже методы.
+Классы, записи и структуры создаются для реализации программы. При написании классов, записей или структур часто используются перечисленные ниже методы.
 
 - [Объявление автоматически реализуемых свойств](../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 - [Объявление и использование свойств чтения и записи](../programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md).
