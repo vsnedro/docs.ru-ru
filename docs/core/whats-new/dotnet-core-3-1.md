@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
-ms.openlocfilehash: 9caecdcc3516db2bd71420184fbd21f7837552a7
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: 8d086c5c595197894e01a347f82b2c6341263fc5
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437923"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104969"
 ---
 # <a name="whats-new-in-net-core-31"></a>Новые возможности .NET Core 3.1
 
@@ -23,7 +23,7 @@ Visual Studio для Mac также поддерживает и содержи�
 
 Дополнительные сведения см. в [объявлении о выпуске .NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
-- [Скачайте .NET Core 3.1 и начните работу](https://dotnet.microsoft.com/download/dotnet-core/3.1) в Windows, macOS или Linux.
+- [Скачайте .NET Core 3.1 и начните работу](https://dotnet.microsoft.com/download/dotnet/3.1) в Windows, macOS или Linux.
 
 ## <a name="long-term-support"></a>Долгосрочная поддержка
 

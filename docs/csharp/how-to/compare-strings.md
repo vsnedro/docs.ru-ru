@@ -5,12 +5,12 @@ ms.date: 10/03/2018
 helpviewer_keywords:
 - strings [C#], comparison
 - comparing strings [C#]
-ms.openlocfilehash: d1ea0fc3573714347580a2aaded2d0f3118681a8
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 5c417ccbdd763de5bbb67ae6a17ac1a5ff165065
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324181"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104982"
 ---
 # <a name="how-to-compare-strings-in-c"></a>Сравнение строк в C\#
 
@@ -31,7 +31,6 @@ ms.locfileid: "85324181"
 
 Ниже представлены самые распространенные операции по умолчанию:
 
-- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
 - <xref:System.String.Equals%2A?displayProperty=nameWithType>
 - <xref:System.String.op_Equality%2A?displayProperty=nameWithType> и <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, т. е. операторы [равенства `==` и `!=`](../language-reference/operators/equality-operators.md#string-equality) соответственно
 

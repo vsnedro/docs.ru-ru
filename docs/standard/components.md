@@ -3,12 +3,12 @@ title: Архитектурные компоненты .NET
 description: Описание ключевых компонентов архитектуры .NET, таких как .NET Standard, реализации .NET, среды выполнения .NET и инструменты.
 author: cartermp
 ms.date: 10/05/2020
-ms.openlocfilehash: c5f174034ce0cd0e1cf0b799c7b3f4bff99447a2
-ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
+ms.openlocfilehash: 884deb61ab5cda5054fb54134c3338b4d05599ca
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100423139"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102106401"
 ---
 # <a name="net-architectural-components"></a>Архитектурные компоненты .NET
 
@@ -99,21 +99,21 @@ UWP представляет собой реализацию .NET, котора�
 
 Спецификации языка C# и Common Language Infrastructure (CLI) стандартизированы в [ECMA&reg;](https://www.ecma-international.org/). Первые выпуски этих стандартов были опубликованы в Ecma в декабре 2001 г.
 
-Последующие редакции стандартов были разработаны группами задач TC49-TG2 (C#) и TC49-TG3 (CLI) в рамках технического комитета по языкам программирования ([TC49](https://www.ecma-international.org/memento/tc49.htm)) и приняты в Генеральной ассамблее Ecma и затем в ISO/IEC JTC 1 в рамках процесса ISO Fast-Track.
+Последующие редакции стандартов были разработаны группами задач TC49-TG2 (C#) и TC49-TG3 (CLI) в рамках технического комитета по языкам программирования ([TC49](https://www.ecma-international.org/technical-committees/tc49/)) и приняты в Генеральной ассамблее Ecma и затем в ISO/IEC JTC 1 в рамках процесса ISO Fast-Track.
 
 ### <a name="latest-standards"></a>Новейшие стандарты
 
-Следующие официальные документы Ecma доступны для [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) и [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)):
+Следующие официальные документы Ecma доступны для [C#](https://www.ecma-international.org/publications-and-standards/standards/ecma-334/) и [CLI](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) ([TR-84](https://www.ecma-international.org/publications-and-standards/technical-reports/ecma-tr-84/)):
 
-- **Стандарт языка C# (версия 5.0)** : [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **Common Language Infrastructure**: [ECMA-335.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf).
+- **Стандарт языка C# (версия 5.0)** : [ECMA-334.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf)
+- **Common Language Infrastructure**: [ECMA-335.pdf](hhttps://www.ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf).
 - **Сведения, полученные из файла XML раздела IV**: Формат [ECMA-084.pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf).
 
 Официальные документы ISO/IEC доступны на странице [общедоступных стандартов](https://standards.iso.org/ittf/PubliclyAvailableStandards/) ISO/IEC. Эти ссылки указываются непосредственно на этой странице:
 
 - **Информационные технологии — языки программирования — C#** : [ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
 - **Информационные технологии — Common Language Infrastructure (CLI), разделы I–VI**: [ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)
-- **Информационные технологии — Common Language Infrastructure (CLI) — технический отчет о данных, полученных из файла XML раздела IV**: [ISO/IEC TR 23272:2011](https://standards.iso.org/ittf/PubliclyAvailableStandards/c057955_ISO_IEC_TR_23272_2011.zip)
+- **Информационные технологии — Common Language Infrastructure (CLI) — технический отчет о данных, полученных из файла XML раздела IV**: [ISO/IEC TR 23272:2011](https://www.ecma-international.org/wp-content/uploads/ECMA_TR-84_6th_edition_june_2012.pdf)
 
 ## <a name="see-also"></a>См. также
 

@@ -4,12 +4,12 @@ description: Узнайте, как разместить среду выполн
 author: mjrousos
 ms.topic: how-to
 ms.date: 12/21/2018
-ms.openlocfilehash: 358cbff1ded3bd4ee9a3f78965eac1e1b1883ede
-ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
+ms.openlocfilehash: 4b6b0d9765d78aac5f267dfac4a907f920230feb
+ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97633855"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102258225"
 ---
 # <a name="write-a-custom-net-core-host-to-control-the-net-runtime-from-your-native-code"></a>Написание пользовательского хост-приложения NET Core для управления средой выполнения .NET из машинного кода
 
@@ -40,11 +40,11 @@ ms.locfileid: "97633855"
 
 ## <a name="create-a-host-using-nethosth-and-hostfxrh"></a>Создание узла с помощью `nethost.h` и `hostfxr.h`
 
-Следующая процедура описывает применение библиотек `nethost` и `hostfxr` для запуска среды выполнения .NET Core в собственном приложении и вызова управляемого статического метода. В этом [примере](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithHostFxr) используются заголовок `nethost` и библиотеки, установленные в составе пакета SDK для .NET, чтобы скопировать файлы [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/master/src/installer/corehost/cli/coreclr_delegates.h) и [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/installer/corehost/cli/hostfxr.h) из репозитория [dotnet/runtime](https://github.com/dotnet/runtime).
+Следующая процедура описывает применение библиотек `nethost` и `hostfxr` для запуска среды выполнения .NET Core в собственном приложении и вызова управляемого статического метода. В этом [примере](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithHostFxr) используются заголовок `nethost` и библиотеки, установленные в составе пакета SDK для .NET, чтобы скопировать файлы [`coreclr_delegates.h`](https://github.com/dotnet/runtime/blob/master/src/installer/corehost/cli/coreclr_delegates.h) и [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/native/corehost/hostfxr.h) из репозитория [dotnet/runtime](https://github.com/dotnet/runtime).
 
 ### <a name="step-1---load-hostfxr-and-get-exported-hosting-functions"></a>Шаг 1. Загрузка `hostfxr` и получение экспортированных функций размещения
 
-Библиотека `nethost` предоставляет функцию `get_hostfxr_path` для поиска библиотеки `hostfxr`. Библиотека `hostfxr` предоставляет функции для размещения среды выполнения .NET Core. Полный список этих функций можно найти в статье [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/installer/corehost/cli/hostfxr.h) и в [документации по проектированию стандартного размещения](https://github.com/dotnet/runtime/blob/master/docs/design/features/native-hosting.md). В этом примере и руководстве в целом применяются следующие элементы.
+Библиотека `nethost` предоставляет функцию `get_hostfxr_path` для поиска библиотеки `hostfxr`. Библиотека `hostfxr` предоставляет функции для размещения среды выполнения .NET Core. Полный список этих функций можно найти в статье [`hostfxr.h`](https://github.com/dotnet/runtime/blob/master/src/native/corehost/hostfxr.h) и в [документации по проектированию стандартного размещения](https://github.com/dotnet/runtime/blob/master/docs/design/features/native-hosting.md). В этом примере и руководстве в целом применяются следующие элементы.
 
 * `hostfxr_initialize_for_runtime_config`. инициализирует контекст узла и подготавливает среду выполнения .NET Core к инициализации, используя указанную конфигурацию среды выполнения.
 * `hostfxr_get_runtime_delegate`. получает делегат для функций среды выполнения.

@@ -3,12 +3,12 @@ title: Отладка взаимоблокировки в .NET Core
 description: Руководство по отладке проблемы блокировки в .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: d9a9328b376de5886d22ca7315f6d7d9d73fd2c2
-ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
+ms.openlocfilehash: 0f5862c9acc4c1ae892caf29cea2ca484116cabf
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90538700"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102105588"
 ---
 # <a name="debug-a-deadlock-in-net-core"></a>Отладка взаимоблокировки в .NET Core
 
@@ -30,7 +30,7 @@ ms.locfileid: "90538700"
 
 В этом учебнике используется:
 
-- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core) или более поздней версии
+- [Пакет SDK для .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet) или более поздней версии
 - [Пример целевого объекта отладки — веб-приложение](/samples/dotnet/samples/diagnostic-scenarios) для активации сценария
 - [dotnet-trace](dotnet-trace.md) для отображения списка процессов
 - [dotnet-dump](dotnet-dump.md) для сбора и анализа файла дампа

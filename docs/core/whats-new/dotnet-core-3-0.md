@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: 1e48f2f83b65ef934c7c460d42f05e2f8de04cbd
-ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
+ms.openlocfilehash: bab14ec385ca6e4d71919ddaebd6d49ee8d002e0
+ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96437901"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102104995"
 ---
 # <a name="whats-new-in-net-core-30"></a>Новые возможности .NET Core 3.0
 
@@ -263,7 +263,7 @@ dotnet publish -r <rid> -c Release
 
 Локальные средства используют имя файла манифеста `dotnet-tools.json` в текущем каталоге. Этот файл манифеста определяет, какие средства доступны в этой папке и далее. Файл манифеста можно распространять вместе с кодом, чтобы те же средства мог восстановить и использовать любой, кто работает с вашим кодом.
 
-Для глобальных и локальных средств требуется совместимая версия среды выполнения. Сейчас на сайте NuGet.org многие средства предназначены для среды выполнения .NET Core 2.1. Чтобы установить эти средства глобально или локально, нужно, как и раньше, установить [среду выполнения NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1).
+Для глобальных и локальных средств требуется совместимая версия среды выполнения. Сейчас на сайте NuGet.org многие средства предназначены для среды выполнения .NET Core 2.1. Чтобы установить эти средства глобально или локально, нужно, как и раньше, установить [среду выполнения NET Core 2.1](https://dotnet.microsoft.com/download/dotnet/2.1).
 
 ### <a name="new-globaljson-options"></a>Новые параметры global.json
 
