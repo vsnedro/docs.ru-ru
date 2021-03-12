@@ -3,12 +3,12 @@ title: Стандартный блок ДАПР Publishing & Subscribe
 description: Описание ДАПР Publishing & Subscribe, а также способы его применения
 author: edwinvw
 ms.date: 02/07/2021
-ms.openlocfilehash: 3d00c5a3171dd5a7287d07675f5a3742697e784b
-ms.sourcegitcommit: 9c589b25b005b9a7f87327646020eb85c3b6306f
+ms.openlocfilehash: 4cb249bafc8241eb54153be2605c33d0a3adb619
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102401919"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604688"
 ---
 # <a name="the-dapr-publish--subscribe-building-block"></a>Стандартный блок ДАПР Publishing & Subscribe
 
@@ -293,7 +293,7 @@ scopes:
 
 ## <a name="reference-application-eshopondapr"></a>Эталонное приложение: Ешопондапр
 
-Сопутствующее приложение [ешопондапр](https://github.com/dotnet-architecture/eShopOnDapr) предоставляет комплексную эталонную архитектуру для создания приложения микрослужб, реализующего ДАПР. Ешопондапр — это эволюция широко популярного [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainer) приложения, созданного несколько лет назад. В обеих версиях используется шаблон публикации и поддела для обмена [событиями интеграции](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events) между микрослужбами. К событиям интеграции относятся:
+Сопутствующее приложение [ешопондапр](https://github.com/dotnet-architecture/eShopOnDapr) предоставляет комплексную эталонную архитектуру для создания приложения микрослужб, реализующего ДАПР. Ешопондапр — это эволюция широко популярного [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) приложения, созданного несколько лет назад. В обеих версиях используется шаблон публикации и поддела для обмена [событиями интеграции](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events) между микрослужбами. К событиям интеграции относятся:
 
 - Когда пользователь извлекает корзину покупок.
 - При успешном платеже заказа.

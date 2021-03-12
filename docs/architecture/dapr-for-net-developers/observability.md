@@ -4,12 +4,12 @@ description: Описание стандартного блока наблюда
 author: edwinvw
 ms.date: 02/07/2021
 ms.reviewer: robvet
-ms.openlocfilehash: c7c941625f5867ad58eee602bfc42183bee87183
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 6add36b2030c3061ee522604b2e07f05875b98a9
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401871"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604714"
 ---
 # <a name="the-dapr-observability-building-block"></a>Стандартный блок наблюдаемых ДАПР
 
@@ -40,7 +40,7 @@ ms.locfileid: "102401871"
 
 [Архитектура расширения](dapr-at-20000-feet.md#sidecar-architecture) ДАПР обеспечивает встроенные функции наблюдения. При взаимодействии служб ДАПР сидекарс перехватывает трафик и извлекает данные трассировки, метрики и ведения журнала. Данные телеметрии публикуются в формате Open Standard. По умолчанию ДАПР поддерживает [опентелеметри](https://opentelemetry.io/) и [зипкин](https://zipkin.io/).
 
-ДАПР предоставляет средства сбора данных, которые могут публиковать [данные](https://docs.dapr.io/operations/monitoring/open-telemetry-collector/) телеметрии для различных средств мониторинга серверной части. Эти средства представляют данные телеметрии ДАПР для анализа и запросов. На рис. 9-1 показана архитектура наблюдаемых ДАПР:
+ДАПР предоставляет средства сбора данных, которые могут публиковать [данные](https://docs.dapr.io/operations/monitoring/tracing/open-telemetry-collector/) телеметрии для различных средств мониторинга серверной части. Эти средства представляют данные телеметрии ДАПР для анализа и запросов. На рис. 9-1 показана архитектура наблюдаемых ДАПР:
 
 ![Архитектура наблюдаемых ДАПР](media/observability/observability-architecture.png)
 
@@ -285,7 +285,7 @@ apiVersion: dapr.io/v1alpha1
 | dapr_http_server_request_count     | Параметры выполнения | Количество HTTP-запросов, запущенных на HTTP-сервере.           |
 | dapr_http/клиент/sent_bytes        | Параметры выполнения | Общее число байтов, отправленных в тексте запроса (не включая заголовки) HTTP-клиентом. |
 
-Дополнительные сведения о доступных метриках см. в [документации по метрикам ДАПР](https://docs.dapr.io/developing-applications/building-blocks/observability/metrics).
+Дополнительные сведения о доступных метриках см. в [документации по метрикам ДАПР](https://docs.dapr.io/operations/monitoring/metrics/).
 
 #### <a name="configure-dapr-metrics"></a>Настройка метрик ДАПР
 
@@ -312,7 +312,7 @@ spec:
 
 ![Панель мониторинга Grafana, отображающая метрики системных служб ДАПР](media/observability/grafana-sample.png)
 
-Документация по ДАПР содержит [руководство по установке Prometheus и Grafana](https://docs.dapr.io/operations/monitoring/grafana/).
+Документация по ДАПР содержит [руководство по установке Prometheus и Grafana](https://docs.dapr.io/operations/monitoring/metrics/grafana/).
 
 ### <a name="logging"></a>Ведение журнала
 
@@ -326,7 +326,7 @@ spec:
 | -------- | ---------------------------------------------------- | ----------------------------------- |
 | time     | Отформатированная метка времени ISO8601                          | `2021-01-10T14:19:31.000Z`          |
 | уровень    | Уровень записи ( `debug` \| `info` \| `warn` \| `error` )   | `info`                              |
-| type     | Тип журнала                                             | `log`                               |
+| тип     | Тип журнала                                             | `log`                               |
 | msg      | Сообщение журнала                                          | `metrics server started on :62408/` |
 | область    | Область ведения журнала                                        | `dapr.runtime`                      |
 | экземпляр | Имя узла, где выполняется ДАПР                             | TSTSRV01                            |
@@ -381,7 +381,7 @@ helm install dapr dapr/dapr --namespace dapr-system --set global.logAsJson=true
 
 #### <a name="collect-logs"></a>Сбор журналов
 
-Журналы, созданные ДАПР, можно поставлять в серверную части мониторинга для анализа. Сборщик данных журнала — это компонент, собирающий журналы из системы и отправляющий их в серверную части мониторинга. Широко распространенный сборщик журналов [.](https://www.fluentd.org/) Ознакомьтесь с [инструкциями по настройке, эластичным поиском и Kibana в Kubernetes](https://docs.dapr.io/operations/monitoring/fluentd/) в документации по ДАПР. Эта статья содержит инструкции по настройке в качестве сборщика журналов и [стека Elk](https://www.elastic.co/elastic-stack) (эластичный Поиск и Kibana) в качестве серверной части мониторинга.
+Журналы, созданные ДАПР, можно поставлять в серверную части мониторинга для анализа. Сборщик данных журнала — это компонент, собирающий журналы из системы и отправляющий их в серверную части мониторинга. Широко распространенный сборщик журналов [.](https://www.fluentd.org/) Ознакомьтесь с [инструкциями по настройке, эластичным поиском и Kibana в Kubernetes](https://docs.dapr.io/operations/monitoring/logging/fluentd/) в документации по ДАПР. Эта статья содержит инструкции по настройке в качестве сборщика журналов и [стека Elk](https://www.elastic.co/elastic-stack) (эластичный Поиск и Kibana) в качестве серверной части мониторинга.
 
 ### <a name="health-status"></a>Состояние работоспособности
 

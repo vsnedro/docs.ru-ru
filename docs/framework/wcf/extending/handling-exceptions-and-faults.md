@@ -3,12 +3,12 @@ description: 'Дополнительные сведения: обработка 
 title: Обработка исключений и сбоев
 ms.date: 03/30/2017
 ms.assetid: a64d01c6-f221-4f58-93e5-da4e87a5682e
-ms.openlocfilehash: 9851d63705ba8b28819b11e3893bcd6b019d565d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 16ae72d54177b664bc41be6e639d0a44867df569
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99735079"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605065"
 ---
 # <a name="handling-exceptions-and-faults"></a>Обработка исключений и сбоев
 
@@ -49,8 +49,8 @@ ms.locfileid: "99735079"
 
  Протоколы SOAP 1.1 и SOAP 1.2 определяют конкретную структуру для ошибок. Между двумя спецификациями существуют определенные отличия, но для создания и использования ошибок обычно применяются типы Message и MessageFault.  
   
- ![Обработка исключений и ошибок](./media/wcfc-soap1-1andsoap1-2faultcomparisonc.gif "wcfc_SOAP1-1AndSOAP1-2FaultComparisonc")  
-Ошибка SOAP 1.2 (слева) и ошибка SOAP 1.1 (справа). Обратите внимание, что только в SOAP 1.1 элемент с ошибкой перечислен в пространстве имен.  
+ ![Ошибки SOAP 1,2 и ошибка SOAP 1,1](./media/wcfc-soap1-1andsoap1-2faultcomparisonc.gif)  
+Ошибка SOAP 1.2 (слева) и ошибка SOAP 1.1 (справа). В SOAP 1,1 только элемент Fault является полным пространством имен.  
   
  Протокол SOAP определяет сообщение об ошибке, как сообщение, содержащее элемент с ошибкой (элемент с именем `<env:Fault>`), в качестве дочернего элемента `<env:Body>`. Содержимое элемента с ошибкой немного отличается в протоколах SOAP 1.1 и SOAP 1.2, как показано на рисунке 1. Однако класс <xref:System.ServiceModel.Channels.MessageFault?displayProperty=nameWithType> нормализует эти различия в одной модели объекта:  
   
@@ -324,7 +324,7 @@ public class MessageFault
   
 - Помимо основных компонентов можно использовать [средство Service Trace Viewer (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) для просмотра трассировок WCF и поиска по ним. Это средство предназначено специально для файлов трассировки, создаваемых WCF, и записывается с помощью <xref:System.Diagnostics.XmlWriterTraceListener> . На следующем рисунке показаны различные компоненты, задействованные с трассировке.  
   
- ![Обработка исключений и ошибок](./media/wcfc-tracinginchannelsc.gif "wcfc_TracingInChannelsc")  
+ ![Компоненты трассировки](./media/wcfc-tracinginchannelsc.gif)  
   
 ### <a name="tracing-from-a-custom-channel"></a>Трассировка из пользовательского канала  
 

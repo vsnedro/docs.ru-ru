@@ -2,12 +2,12 @@
 title: Ошибки и предупреждения, касающиеся компилятора
 description: Описания и решения для ошибок и предупреждений, выдаваемых компилятором F#.
 ms.date: 12/21/2019
-ms.openlocfilehash: 58430297abe807027afdc52841d67d1233401ff1
-ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
+ms.openlocfilehash: 9769ddee989f0774cfae8842e60dbd3fd2065f9c
+ms.sourcegitcommit: e3cf8227573e13b8e1f4e3dc007404881cdafe47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/03/2021
-ms.locfileid: "97856124"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103190181"
 ---
 # <a name="f-compiler-messages"></a>Сообщения компилятора F#
 
@@ -20,7 +20,7 @@ ms.locfileid: "97856124"
 Если какое-то предупреждение или ошибка в этом разделе еще не записаны, сделайте что-то из следующего:
 
 - Перейдите в конец страницы и отправьте отзыв, включив в него номер или текст ошибки.
-- Добавьте их сами, выполнив инструкции из [create-new-fsharp-compiler-message.fsx](https://github.com/dotnet/docs/blob/master/docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx) и открыв запрос на вытягивание для данного репозитория.
+- Добавьте их сами, выполнив инструкции из [create-new-fsharp-compiler-message.fsx](https://github.com/dotnet/docs/blob/main/docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx) и открыв запрос на вытягивание для данного репозитория.
 
 ## <a name="see-also"></a>См. также раздел
 

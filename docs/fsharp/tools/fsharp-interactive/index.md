@@ -4,12 +4,12 @@ description: Узнайте, как F# Interactive (dotnet fsi) использ�
 ms.date: 11/29/2020
 f1_keywords:
 - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
-ms.openlocfilehash: fe48d4d7de92eea800a489b12342e3ae181e8cb1
-ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
+ms.openlocfilehash: 200caf6be5977e4a4d11bda8ba57f276cb4f5ff6
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99426984"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605130"
 ---
 # <a name="interactive-programming-with-f"></a>Интерактивное программирование с помощью F\#
 
@@ -137,7 +137,7 @@ printfn $"{f (dsharp.tensor 1.2)}"
 > [!NOTE]
 > В настоящее время существует ограничение для скриптов, использующих ссылки на платформы (например, `Microsoft.NET.Sdk.Web` или `Microsoft.NET.Sdk.WindowsDesktop`). Такие пакеты, как Saturn, Giraffe, WinForms, недоступны. Для решения создана соответствующая проблема [9417](https://github.com/dotnet/fsharp/issues/9417).
 
-Дополнительные сведения см. на странице, посвященной [расширяемости управления пакетами и другим расширениям](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+Дополнительные сведения см. на странице, посвященной [расширяемости управления пакетами и другим расширениям](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
 
 ## <a name="referencing-assemblies-on-disk-with-f-interactive"></a>Создание ссылок на сборки на диске в F# Interactive
 

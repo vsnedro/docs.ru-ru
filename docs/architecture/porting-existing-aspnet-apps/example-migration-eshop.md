@@ -3,12 +3,12 @@ title: Пример миграции Ешоп в ASP.NET Core
 description: Пошаговое руководство по переносу существующего приложения ASP.NET MVC в ASP.NET Core с помощью примера приложения Интернет-магазина в качестве ссылки.
 author: ardalis
 ms.date: 11/13/2020
-ms.openlocfilehash: 83110909632e4eb433e1fabaedf3490ce594e12e
-ms.sourcegitcommit: 42d436ebc2a7ee02fc1848c7742bc7d80e13fc2f
+ms.openlocfilehash: 498eb3b11c44381ff6d261b37caed15a2698b166
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102401775"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102605260"
 ---
 # <a name="example-migration-of-eshop-to-aspnet-core"></a>Пример миграции Ешоп в ASP.NET Core
 
@@ -26,7 +26,7 @@ ms.locfileid: "102401775"
 
 ## <a name="run-apiport-to-identify-problematic-apis"></a>Запуск *ApiPort* для обнаружения проблемных API
 
-Первым шагом в подготовке к миграции является запуск средства *ApiPort* . Это средство определяет, сколько платформа .NET Framework интерфейсов API вызывается приложением и сколько из них имеет .NET Standard или эквиваленты .NET Core. Сосредоточьтесь в основном на логике вашего приложения, а не на зависимостях сторонних производителей и обратите внимание на `System.Web` зависимости, которые потребуется перенести. Средство ApiPort было представлено в последней главе, посвященной [пониманию и обновлению зависимостей](/understand-update-dependencies.md).
+Первым шагом в подготовке к миграции является запуск средства *ApiPort* . Это средство определяет, сколько платформа .NET Framework интерфейсов API вызывается приложением и сколько из них имеет .NET Standard или эквиваленты .NET Core. Сосредоточьтесь в основном на логике вашего приложения, а не на зависимостях сторонних производителей и обратите внимание на `System.Web` зависимости, которые потребуется перенести. Средство ApiPort было представлено в последней главе, посвященной [пониманию и обновлению зависимостей](understand-update-dependencies.md).
 
 После [установки и настройки средства *ApiPort*](../../standard/analyzers/portability-analyzer.md)запустите анализ в Visual Studio, как показано на рис. 4-2.
 

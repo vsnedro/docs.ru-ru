@@ -3,12 +3,12 @@ title: 'Dapr: общее представление'
 description: Общий обзор того, что такое ДАПР, что он делает и как он работает.
 author: robvet
 ms.date: 02/07/2021
-ms.openlocfilehash: c6157d29274df73f6ea1fef44b8e5cd5d0239471
-ms.sourcegitcommit: bdbf6472de867a0a11aaa5b9384a2506c24f27d2
+ms.openlocfilehash: f0efb4652aaa35961d59979cb561941e5280a575
+ms.sourcegitcommit: 46cfed35d79d70e08c313b9c664c7e76babab39e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102401901"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102604753"
 ---
 # <a name="dapr-at-20000-feet"></a>Dapr: общее представление
 
@@ -155,7 +155,6 @@ ms.locfileid: "102401901"
 | [Привязки](https://github.com/dapr/components-contrib/tree/master/bindings) | Предоставляет универсальный интерфейс для активации событий приложения из внешних систем и вызова внешних систем с дополнительными полезными данными. |
 | [ПО промежуточного слоя](https://github.com/dapr/components-contrib/tree/master/middleware) | Позволяет пользовательскому по промежуточного слоя подключаться к конвейеру обработки запросов и вызывать дополнительные действия с запросом или ответом. |
 | [Секретные хранилища](https://github.com/dapr/components-contrib/tree/master/secretstores) | Предоставляет единый интерфейс для взаимодействия с внешними хранилищами секретов, включая облачные, граничные и коммерческие службы с открытым исходным кодом. |
-| [Трассировочные программы экспорта](https://github.com/dapr/components-contrib/tree/master/exporters) | Предоставляет универсальный интерфейс для открытия оболочек телеметрии. |
 
 По мере того, как модуль Jet завершает свое переключение на ДАПР, вы сможете взглянуть еще раз и увидеть, как он соединяется вместе.
 
